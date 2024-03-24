@@ -19,7 +19,6 @@ environment:
 dependencies:
   archive: ^3.4.5
   collection: ^1.18.0
-
   fhir_primitives:
     path: ../fhir_primitives
   fhir_yaml:
