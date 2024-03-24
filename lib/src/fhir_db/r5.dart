@@ -105,7 +105,7 @@ class FhirDb {
 
             /// Save it in the temporary box as we're changing over to the new password, so
             /// in case something goes wrong, we don't lose the data
-            await tempBox.put(resource.fhirId, newValue);
+            await tempBox.put(resource.id, newValue);
           }
 
           /// after we have saved all of the resources in the temporary box, we can
@@ -127,7 +127,7 @@ class FhirDb {
             final Resource resource = Resource.fromJson(newValue);
 
             /// Save it to the new box with the new password
-            await newBox.put(resource.fhirId, newValue);
+            await newBox.put(resource.id, newValue);
           }
 
           /// clear everything from the tempBox so we can use it again
@@ -214,11 +214,11 @@ class FhirDb {
   }) async {
     if (resource != null) {
       if (resource.resourceType != null) {
-        return resource.fhirId == null
+        return resource.id == null
             ? await _insert(resource, pw)
             : await exists(
                 resourceType: resource.resourceType!,
-                id: resource.fhirId!.value!,
+                id: resource.id!.value!,
                 pw: pw,
               )
                 ? await _update(resource, pw)
@@ -276,10 +276,10 @@ class FhirDb {
     String? pw,
   ) async {
     if (resource.resourceTypeString != null) {
-      if (resource.fhirId != null) {
+      if (resource.id != null) {
         final Resource? oldResource = await get(
           resourceType: resource.resourceType!,
-          id: resource.fhirId!.value!,
+          id: resource.id!.value!,
           pw: pw,
         );
         if (oldResource != null) {
@@ -439,10 +439,10 @@ class FhirDb {
     /// if we're just trying to match a resource
     if (resource != null &&
         resource.resourceType != null &&
-        (resource.fhirId != null || id != null)) {
+        (resource.id != null || id != null)) {
       final Resource? result = await get(
         resourceType: resource.resourceType!,
-        id: resource.fhirId!.value!,
+        id: resource.id!.value!,
         pw: pw,
       );
       return result == null ? <Resource>[] : <Resource>[result];
@@ -526,10 +526,10 @@ class FhirDb {
   }) async {
     if (resource != null &&
         resource.resourceType != null &&
-        resource.fhirId != null) {
+        resource.id != null) {
       return _deleteById(
         resourceType: resource.resourceType!,
-        id: resource.fhirId!.value!,
+        id: resource.id!.value!,
         pw: pw,
       );
     } else if (resourceType != null && id != null) {

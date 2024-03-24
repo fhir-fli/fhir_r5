@@ -17,9 +17,19 @@ _$BackboneTypeImpl _$$BackboneTypeImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$BackboneTypeImplToJson(_$BackboneTypeImpl instance) =>
-    <String, dynamic>{
-      'id': instance.fhirId,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-    };
+Map<String, dynamic> _$$BackboneTypeImplToJson(_$BackboneTypeImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.fhirId);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  return val;
+}

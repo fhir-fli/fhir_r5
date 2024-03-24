@@ -34,17 +34,28 @@ _$PopulationImpl _$$PopulationImplFromJson(Map<String, dynamic> json) =>
               json['physiologicalCondition'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$PopulationImplToJson(_$PopulationImpl instance) =>
-    <String, dynamic>{
-      'id': instance.fhirId,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'ageRange': instance.ageRange,
-      'ageCodeableConcept': instance.ageCodeableConcept,
-      'gender': instance.gender,
-      'race': instance.race,
-      'physiologicalCondition': instance.physiologicalCondition,
-    };
+Map<String, dynamic> _$$PopulationImplToJson(_$PopulationImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.fhirId);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('ageRange', instance.ageRange?.toJson());
+  writeNotNull('ageCodeableConcept', instance.ageCodeableConcept?.toJson());
+  writeNotNull('gender', instance.gender?.toJson());
+  writeNotNull('race', instance.race?.toJson());
+  writeNotNull(
+      'physiologicalCondition', instance.physiologicalCondition?.toJson());
+  return val;
+}
 
 _$ProductShelfLifeImpl _$$ProductShelfLifeImplFromJson(
         Map<String, dynamic> json) =>
@@ -74,17 +85,28 @@ _$ProductShelfLifeImpl _$$ProductShelfLifeImplFromJson(
     );
 
 Map<String, dynamic> _$$ProductShelfLifeImplToJson(
-        _$ProductShelfLifeImpl instance) =>
-    <String, dynamic>{
-      'id': instance.fhirId,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'type': instance.type,
-      'periodDuration': instance.periodDuration,
-      'periodString': instance.periodString,
-      '_periodString': instance.periodStringElement,
-      'specialPrecautionsForStorage': instance.specialPrecautionsForStorage,
-    };
+    _$ProductShelfLifeImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.fhirId);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('periodDuration', instance.periodDuration?.toJson());
+  writeNotNull('periodString', instance.periodString);
+  writeNotNull('_periodString', instance.periodStringElement?.toJson());
+  writeNotNull('specialPrecautionsForStorage',
+      instance.specialPrecautionsForStorage?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$MarketingStatusImpl _$$MarketingStatusImplFromJson(
         Map<String, dynamic> json) =>
@@ -116,15 +138,25 @@ _$MarketingStatusImpl _$$MarketingStatusImplFromJson(
     );
 
 Map<String, dynamic> _$$MarketingStatusImplToJson(
-        _$MarketingStatusImpl instance) =>
-    <String, dynamic>{
-      'id': instance.fhirId,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'country': instance.country,
-      'jurisdiction': instance.jurisdiction,
-      'status': instance.status,
-      'dateRange': instance.dateRange,
-      'restoreDate': instance.restoreDate,
-      '_restoreDate': instance.restoreDateElement,
-    };
+    _$MarketingStatusImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.fhirId);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('jurisdiction', instance.jurisdiction?.toJson());
+  val['status'] = instance.status.toJson();
+  writeNotNull('dateRange', instance.dateRange?.toJson());
+  writeNotNull('restoreDate', instance.restoreDate?.toJson());
+  writeNotNull('_restoreDate', instance.restoreDateElement?.toJson());
+  return val;
+}

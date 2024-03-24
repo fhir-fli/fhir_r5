@@ -4,7 +4,7 @@ import '../../../fhir_r5.dart';
 /// A more advanced way to change an enum to a string, mostly used for
 /// Resource types, but also for some enum specifically defined for requests
 String? enumToString<T>(T enumValue) {
-  switch (enumValue.runtimeType) {
+  switch (enumValue) {
     case Compartment _:
       return CompartmentEnumMap[enumValue];
     case Summary _:

@@ -101,8 +101,6 @@ abstract mixin class Resource {
   /// Produces a Yaml formatted String version of the object
   String toYaml() => json2yaml(toJson());
 
-  FhirId? get fhirId => id;
-
   /// produce a string of the [resourceType]
   String? get resourceTypeString => resourceTypeToStringMap[resourceType];
 

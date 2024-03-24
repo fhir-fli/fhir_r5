@@ -24,7 +24,7 @@ class FhirRequest with _$FhirRequest {
   /// READ constructor
   /// [base] - the base URI for the FHIR server
   /// [type] - the type of resource you're looking for
-  /// [fhirId] - the id for the resource
+  /// [id] - the id for the resource
   /// [pretty] - pretty print the json formatting in the response
   /// [summary] - do you want the result to be a summary
   /// [format] - currently requests json, but could consider requesting
@@ -42,8 +42,8 @@ class FhirRequest with _$FhirRequest {
     /// [type] - the type of resource you're looking for
     required R5ResourceType type,
 
-    /// [fhirId] - the id for the resource
-    required String fhirId,
+    /// [id] - the id for the resource
+    required String id,
 
     /// [pretty] - pretty print the json formatting in the response
     bool? pretty,
@@ -82,7 +82,7 @@ class FhirRequest with _$FhirRequest {
   ///  VREAD constructor
   /// [base] - the base URI for the FHIR server
   /// [type] - the type of resource you're looking for
-  /// [fhirId] - the id for the resource
+  /// [id] - the id for the resource
   /// [vid] - the version id of the resource
   /// [pretty] - pretty print the json formatting in the response
   /// [summary] - do you want the result to be a summary
@@ -101,8 +101,8 @@ class FhirRequest with _$FhirRequest {
     /// [type] - the type of resource you're looking for
     required R5ResourceType type,
 
-    /// [fhirId] - the id for the resource
-    required String fhirId,
+    /// [id] - the id for the resource
+    required String id,
     required FhirId vid,
 
     /// [pretty] - pretty print the json formatting in the response
@@ -244,7 +244,7 @@ class FhirRequest with _$FhirRequest {
   ///  DELETE constructor
   /// [base] - the base URI for the FHIR server
   /// [type] - the type of resource you're looking for
-  /// [fhirId] - the id for the resource
+  /// [id] - the id for the resource
   /// [pretty] - pretty print the json formatting in the response
   /// [summary] - do you want the result to be a summary
   /// [format] - currently requests json, but could consider requesting
@@ -262,8 +262,8 @@ class FhirRequest with _$FhirRequest {
     /// [type] - the type of resource you're looking for
     required R5ResourceType type,
 
-    /// [fhirId] - the id for the resource
-    required String fhirId,
+    /// [id] - the id for the resource
+    required String id,
 
     /// [pretty] - pretty print the json formatting in the response
     bool? pretty,
@@ -626,7 +626,7 @@ class FhirRequest with _$FhirRequest {
   ///  HISTORY constructor
   /// [base] - the base URI for the FHIR server
   /// [type] - the type of resource you're looking for
-  /// [fhirId] - the id for the resource
+  /// [id] - the id for the resource
   /// [pretty] - pretty print the json formatting in the response
   /// [summary] - do you want the result to be a summary
   /// [format] - currently requests json, but could consider requesting
@@ -653,8 +653,8 @@ class FhirRequest with _$FhirRequest {
     /// [type] - the type of resource you're looking for
     required R5ResourceType type,
 
-    /// [fhirId] - the id for the resource
-    required String fhirId,
+    /// [id] - the id for the resource
+    required String id,
 
     /// [pretty] - pretty print the json formatting in the response
     bool? pretty,
@@ -866,7 +866,7 @@ class FhirRequest with _$FhirRequest {
   ///  OPERATION constructor
   /// [base] - the base URI for the FHIR server
   /// [type] - the type of resource you're looking for
-  /// [fhirId] - the id for the resource
+  /// [id] - the id for the resource
   /// [pretty] - pretty print the json formatting in the response
   /// [summary] - do you want the result to be a summary
   /// [format] - currently requests json, but could consider requesting
@@ -883,7 +883,7 @@ class FhirRequest with _$FhirRequest {
     /// [base] - the base URI for the FHIR server
     required Uri base,
     R5ResourceType? type,
-    String? fhirId,
+    String? id,
 
     /// [pretty] - pretty print the json formatting in the response
     bool? pretty,
@@ -1609,23 +1609,23 @@ class FhirRequest with _$FhirRequest {
   String _url() => map(
         /// READ
         read: (FhirReadRequest request) =>
-            '${request.base}/${enumToString(request.type)}/${request.fhirId}',
+            '${request.base}/${enumToString(request.type)}/${request.id}',
 
         /// VREAD
         vRead: (FhirVReadRequest request) =>
-            '${request.base}/${enumToString(request.type)}/${request.fhirId}/_history/${request.vid}',
+            '${request.base}/${enumToString(request.type)}/${request.id}/_history/${request.vid}',
 
         /// UPDATE
         update: (FhirUpdateRequest request) =>
-            '${request.base}/${request.resource.resourceTypeString}/${request.resource.fhirId}',
+            '${request.base}/${request.resource.resourceTypeString}/${request.resource.id}',
 
         /// PATCH
         patch: (FhirPatchRequest request) =>
-            '${request.base}/${request.resource.resourceTypeString}/${request.resource.fhirId}',
+            '${request.base}/${request.resource.resourceTypeString}/${request.resource.id}',
 
         /// DELETE
         delete: (FhirDeleteRequest request) =>
-            '${request.base}/${enumToString(request.type)}/${request.fhirId}',
+            '${request.base}/${enumToString(request.type)}/${request.id}',
 
         /// CREATE
         create: (FhirCreateRequest request) =>
@@ -1649,7 +1649,7 @@ class FhirRequest with _$FhirRequest {
 
         /// HISTORY
         history: (FhirHistoryRequest request) =>
-            '${request.base}/${enumToString(request.type)}/${request.fhirId}/_history',
+            '${request.base}/${enumToString(request.type)}/${request.id}/_history',
 
         /// HISTORY-TYPE
         historyType: (FhirHistoryTypeRequest request) =>
@@ -1662,7 +1662,7 @@ class FhirRequest with _$FhirRequest {
         /// OPERATION
         operation: (FhirOperationRequest request) => '${request.base}/'
             '${request.type != null ? "${enumToString(request.type)}/" : ''}'
-            '${request.type != null && request.fhirId != null ? "${enumToString(request.fhirId)}/" : ''}'
+            '${request.type != null && request.id != null ? "${enumToString(request.id)}/" : ''}'
             '\$${request.operation}',
       );
 

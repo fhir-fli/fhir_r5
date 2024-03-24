@@ -16,10 +16,19 @@ _$ElementImpl _$$ElementImplFromJson(Map<String, dynamic> json) =>
       col: json['col'] as int?,
     );
 
-Map<String, dynamic> _$$ElementImplToJson(_$ElementImpl instance) =>
-    <String, dynamic>{
-      'id': instance.fhirId,
-      'extension': instance.extension_,
-      'line': instance.line,
-      'col': instance.col,
-    };
+Map<String, dynamic> _$$ElementImplToJson(_$ElementImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.fhirId);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('line', instance.line);
+  writeNotNull('col', instance.col);
+  return val;
+}
