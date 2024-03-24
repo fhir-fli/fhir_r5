@@ -1,6 +1,4 @@
 // Package imports:
-import 'dart:convert';
-
 import 'package:fhir_primitives/fhir_primitives.dart';
 import 'package:fhir_r5/fhir_r5.dart';
 import 'package:test/test.dart';
@@ -120,9 +118,6 @@ Future<void> fhirUriTest() async {
         pretty: false,
         vid: FhirId('6789'),
       );
-      request.toJson().forEach((String key, dynamic value) {
-        print('$key: $value (${value.runtimeType})');
-      });
       expect(request, FhirRequest.fromJson(request.toJson()));
       expect(request.runtimeType,
           FhirRequest.fromJson(request.toJson()).runtimeType);

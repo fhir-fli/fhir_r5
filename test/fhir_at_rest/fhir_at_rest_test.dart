@@ -2,8 +2,8 @@ import 'fhir_uri_test.dart';
 import 'http_request_tests.dart';
 import 'requests_test.dart';
 
-void main() {
+Future<void> main() async {
   fhirUriTest();
   httpRequestTests();
-  requestsTest();
+  await requestsTest();
 }

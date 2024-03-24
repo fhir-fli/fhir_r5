@@ -2,6 +2,7 @@
 
 // Dart imports:
 import 'dart:convert';
+import 'dart:io';
 
 // Package imports:
 import 'package:fhir_primitives/fhir_primitives.dart';
@@ -10,7 +11,6 @@ import 'package:http/http.dart';
 
 // Project imports:
 import '../../fhir_r5.dart';
-import 'globals.dart' as globals;
 
 part 'fhir_request.freezed.dart';
 part 'fhir_request.g.dart';
@@ -1689,7 +1689,7 @@ class FhirRequest with _$FhirRequest {
     Response result;
     client ??= Client();
 
-    if (globals.kTestMode) {
+    if (Platform.environment.containsKey('FLUTTER_TEST')) {
       return _operationOutcome(thisRequest);
     }
 
