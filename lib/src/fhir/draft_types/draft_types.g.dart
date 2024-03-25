@@ -8,7 +8,7 @@ part of 'draft_types.dart';
 
 _$PopulationImpl _$$PopulationImplFromJson(Map<String, dynamic> json) =>
     _$PopulationImpl(
-      fhirId: json['id'] as String?,
+      id: json['id'] as String?,
       extension_: (json['extension'] as List<dynamic>?)
           ?.map((e) => FhirExtension.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -43,7 +43,7 @@ Map<String, dynamic> _$$PopulationImplToJson(_$PopulationImpl instance) {
     }
   }
 
-  writeNotNull('id', instance.fhirId);
+  writeNotNull('id', instance.id);
   writeNotNull(
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
   writeNotNull('modifierExtension',
@@ -60,7 +60,7 @@ Map<String, dynamic> _$$PopulationImplToJson(_$PopulationImpl instance) {
 _$ProductShelfLifeImpl _$$ProductShelfLifeImplFromJson(
         Map<String, dynamic> json) =>
     _$ProductShelfLifeImpl(
-      fhirId: json['id'] as String?,
+      id: json['id'] as String?,
       extension_: (json['extension'] as List<dynamic>?)
           ?.map((e) => FhirExtension.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -94,7 +94,7 @@ Map<String, dynamic> _$$ProductShelfLifeImplToJson(
     }
   }
 
-  writeNotNull('id', instance.fhirId);
+  writeNotNull('id', instance.id);
   writeNotNull(
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
   writeNotNull('modifierExtension',
@@ -111,7 +111,7 @@ Map<String, dynamic> _$$ProductShelfLifeImplToJson(
 _$MarketingStatusImpl _$$MarketingStatusImplFromJson(
         Map<String, dynamic> json) =>
     _$MarketingStatusImpl(
-      fhirId: json['id'] as String?,
+      id: json['id'] as String?,
       extension_: (json['extension'] as List<dynamic>?)
           ?.map((e) => FhirExtension.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -147,7 +147,7 @@ Map<String, dynamic> _$$MarketingStatusImplToJson(
     }
   }
 
-  writeNotNull('id', instance.fhirId);
+  writeNotNull('id', instance.id);
   writeNotNull(
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
   writeNotNull('modifierExtension',

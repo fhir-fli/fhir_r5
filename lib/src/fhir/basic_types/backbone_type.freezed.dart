@@ -23,8 +23,7 @@ mixin _$BackboneType {
   /// [id] Unique id for the element within a resource (for internal
   ///  references).
   /// This may be any string value that does not contain spaces.;
-  @JsonKey(name: 'id')
-  String? get fhirId => throw _privateConstructorUsedError;
+  String? get id => throw _privateConstructorUsedError;
 
   /// [extension_] May be used to represent additional information that is not
   /// part of the basic definition of the element. To make the use of
@@ -66,7 +65,7 @@ abstract class $BackboneTypeCopyWith<$Res> {
       _$BackboneTypeCopyWithImpl<$Res, BackboneType>;
   @useResult
   $Res call(
-      {@JsonKey(name: 'id') String? fhirId,
+      {String? id,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension});
 }
@@ -84,14 +83,14 @@ class _$BackboneTypeCopyWithImpl<$Res, $Val extends BackboneType>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? fhirId = freezed,
+    Object? id = freezed,
     Object? extension_ = freezed,
     Object? modifierExtension = freezed,
   }) {
     return _then(_value.copyWith(
-      fhirId: freezed == fhirId
-          ? _value.fhirId
-          : fhirId // ignore: cast_nullable_to_non_nullable
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
               as String?,
       extension_: freezed == extension_
           ? _value.extension_
@@ -114,7 +113,7 @@ abstract class _$$BackboneTypeImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {@JsonKey(name: 'id') String? fhirId,
+      {String? id,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension});
 }
@@ -130,14 +129,14 @@ class __$$BackboneTypeImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? fhirId = freezed,
+    Object? id = freezed,
     Object? extension_ = freezed,
     Object? modifierExtension = freezed,
   }) {
     return _then(_$BackboneTypeImpl(
-      fhirId: freezed == fhirId
-          ? _value.fhirId
-          : fhirId // ignore: cast_nullable_to_non_nullable
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
               as String?,
       extension_: freezed == extension_
           ? _value._extension_
@@ -155,7 +154,7 @@ class __$$BackboneTypeImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$BackboneTypeImpl extends _BackboneType {
   const _$BackboneTypeImpl(
-      {@JsonKey(name: 'id') this.fhirId,
+      {this.id,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension})
       : _extension_ = extension_,
@@ -169,8 +168,7 @@ class _$BackboneTypeImpl extends _BackboneType {
   ///  references).
   /// This may be any string value that does not contain spaces.;
   @override
-  @JsonKey(name: 'id')
-  final String? fhirId;
+  final String? id;
 
   /// [extension_] May be used to represent additional information that is not
   /// part of the basic definition of the element. To make the use of
@@ -240,7 +238,7 @@ class _$BackboneTypeImpl extends _BackboneType {
 
   @override
   String toString() {
-    return 'BackboneType(fhirId: $fhirId, extension_: $extension_, modifierExtension: $modifierExtension)';
+    return 'BackboneType(id: $id, extension_: $extension_, modifierExtension: $modifierExtension)';
   }
 
   @override
@@ -248,7 +246,7 @@ class _$BackboneTypeImpl extends _BackboneType {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$BackboneTypeImpl &&
-            (identical(other.fhirId, fhirId) || other.fhirId == fhirId) &&
+            (identical(other.id, id) || other.id == id) &&
             const DeepCollectionEquality()
                 .equals(other._extension_, _extension_) &&
             const DeepCollectionEquality()
@@ -259,7 +257,7 @@ class _$BackboneTypeImpl extends _BackboneType {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      fhirId,
+      id,
       const DeepCollectionEquality().hash(_extension_),
       const DeepCollectionEquality().hash(_modifierExtension));
 
@@ -279,7 +277,7 @@ class _$BackboneTypeImpl extends _BackboneType {
 
 abstract class _BackboneType extends BackboneType {
   const factory _BackboneType(
-      {@JsonKey(name: 'id') final String? fhirId,
+      {final String? id,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension}) = _$BackboneTypeImpl;
   const _BackboneType._() : super._();
@@ -292,8 +290,7 @@ abstract class _BackboneType extends BackboneType {
   /// [id] Unique id for the element within a resource (for internal
   ///  references).
   /// This may be any string value that does not contain spaces.;
-  @JsonKey(name: 'id')
-  String? get fhirId;
+  String? get id;
   @override
 
   /// [extension_] May be used to represent additional information that is not
