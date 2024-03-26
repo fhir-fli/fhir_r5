@@ -125,6 +125,7 @@ class BulkRequest with _$BulkRequest {
     int retryAfter = 1;
     Response responseLinks = Response('{}', 422);
     while (retryAfter > 0) {
+      print('retryAfter: $retryAfter');
       if (currentLocation == null) {
         throw Exception('"content-location" was null for bulk request');
       } else {

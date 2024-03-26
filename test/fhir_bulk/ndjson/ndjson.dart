@@ -1,4 +1,3 @@
 export 'Account.dart';
+export 'AccountMedRequest.dart';
 export 'MedicationRequest.dart';
-export 'accountMedRequest.dart';
-export 'medRequestAccount.dart';
