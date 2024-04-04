@@ -6,7 +6,6 @@ import 'dart:io';
 import 'package:collection/collection.dart';
 import 'package:fhir_primitives/fhir_primitives.dart';
 import 'package:fhir_r5/fhir_r5.dart';
-import 'package:fhir_r5/src/fhir_db/r5.dart';
 import 'package:hive/hive.dart';
 import 'package:test/test.dart';
 

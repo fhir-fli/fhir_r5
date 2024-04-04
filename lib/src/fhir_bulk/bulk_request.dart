@@ -2,6 +2,7 @@
 
 // Dart imports:
 import 'dart:convert';
+import 'dart:developer';
 
 // Package imports:
 import 'package:fhir_primitives/fhir_primitives.dart';
@@ -125,7 +126,6 @@ class BulkRequest with _$BulkRequest {
     int retryAfter = 1;
     Response responseLinks = Response('{}', 422);
     while (retryAfter > 0) {
-      print('retryAfter: $retryAfter');
       if (currentLocation == null) {
         throw Exception('"content-location" was null for bulk request');
       } else {
@@ -159,7 +159,19 @@ class BulkRequest with _$BulkRequest {
         try {
           final Response ndjsonList =
               await client.get(newLink, headers: headers);
-          returnList.addAll(FhirBulk.fromNdJson(ndjsonList.body));
+          try {
+            final Resource resource = Resource.fromJsonString(ndjsonList.body);
+            if (resource is Binary) {
+              if (resource.data?.value != null) {
+                returnList.addAll(FhirBulk.fromNdJson(
+                    utf8.fuse(base64).decode(resource.data!.value!)));
+              }
+            } else {
+              returnList.addAll(FhirBulk.fromNdJson(ndjsonList.body));
+            }
+          } catch (e) {
+            log('Error: $e');
+          }
         } catch (e) {
           return _operationOutcome('Failed to download from ${link['url']}',
               diagnostics: 'Exception: $e');
