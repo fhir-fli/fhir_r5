@@ -60,7 +60,7 @@ Future<void> main() async {
           Patient(id: FhirId(id), name: <HumanName>[humanName]);
       final Resource saved = await fhirDb.save(resource: patient);
 
-      expect(saved.id, id);
+      expect(saved.id, FhirId(id));
       expect((saved as Patient).name?[0], humanName);
     });
 
@@ -69,7 +69,7 @@ Future<void> main() async {
           Organization(id: FhirId(id), name: 'FhirFli');
       final Resource saved = await fhirDb.save(resource: organization);
 
-      expect(saved.id, id);
+      expect(saved.id, FhirId(id));
 
       expect((saved as Organization).name, 'FhirFli');
     });
@@ -82,7 +82,7 @@ Future<void> main() async {
       );
       final Resource saved = await fhirDb.save(resource: observation1);
 
-      expect(saved.id, 'obs1');
+      expect(saved.id, FhirId('obs1'));
 
       expect((saved as Observation).code.text, 'Observation #1');
     });
@@ -93,7 +93,7 @@ Future<void> main() async {
           code: const CodeableConcept(text: 'Observation #1 - Updated'));
       final Resource saved = await fhirDb.save(resource: observation1);
 
-      expect(saved.id, 'obs1');
+      expect(saved.id, FhirId('obs1'));
 
       expect((saved as Observation).code.text, 'Observation #1 - Updated');
 
@@ -108,7 +108,7 @@ Future<void> main() async {
       );
       final Resource saved = await fhirDb.save(resource: observation2);
 
-      expect(saved.id, 'obs2');
+      expect(saved.id, FhirId('obs2'));
 
       expect((saved as Observation).code.text, 'Observation #2');
     });
@@ -121,7 +121,7 @@ Future<void> main() async {
       );
       final Resource saved = await fhirDb.save(resource: observation3);
 
-      expect(saved.id, 'obs3');
+      expect(saved.id, FhirId('obs3'));
 
       expect((saved as Observation).code.text, 'Observation #3');
     });
@@ -145,7 +145,7 @@ Future<void> main() async {
 
       expect(search.length, 1);
 
-      expect(search[0].id, 'obs3');
+      expect(search[0].id, FhirId('obs3'));
 
       expect((search[0] as Observation).code.text, 'Observation #3');
     });
@@ -252,7 +252,7 @@ Future<void> main() async {
       final Resource saved =
           await fhirDb.save(resource: patient, pw: password2);
 
-      expect(saved.id, id);
+      expect(saved.id, FhirId(id));
 
       expect((saved as Patient).name?[0], humanName);
     });
@@ -263,7 +263,7 @@ Future<void> main() async {
       final Resource saved =
           await fhirDb.save(resource: organization, pw: password2);
 
-      expect(saved.id, id);
+      expect(saved.id, FhirId(id));
 
       expect((saved as Organization).name, 'FhirFli');
     });
@@ -277,7 +277,7 @@ Future<void> main() async {
       final Resource saved =
           await fhirDb.save(resource: observation1, pw: password2);
 
-      expect(saved.id, 'obs1');
+      expect(saved.id, FhirId('obs1'));
 
       expect((saved as Observation).code.text, 'Observation #1');
     });
@@ -289,7 +289,7 @@ Future<void> main() async {
       final Resource saved =
           await fhirDb.save(resource: observation1, pw: password2);
 
-      expect(saved.id, 'obs1');
+      expect(saved.id, FhirId('obs1'));
 
       expect((saved as Observation).code.text, 'Observation #1 - Updated');
 
@@ -305,7 +305,7 @@ Future<void> main() async {
       final Resource saved =
           await fhirDb.save(resource: observation2, pw: password2);
 
-      expect(saved.id, 'obs2');
+      expect(saved.id, FhirId('obs2'));
 
       expect((saved as Observation).code.text, 'Observation #2');
     });
@@ -319,7 +319,7 @@ Future<void> main() async {
       final Resource saved =
           await fhirDb.save(resource: observation3, pw: password2);
 
-      expect(saved.id, 'obs3');
+      expect(saved.id, FhirId('obs3'));
 
       expect((saved as Observation).code.text, 'Observation #3');
     });
@@ -343,7 +343,7 @@ Future<void> main() async {
 
       expect(search.length, 1);
 
-      expect(search[0].id, 'obs3');
+      expect(search[0].id, FhirId('obs3'));
 
       expect((search[0] as Observation).code.text, 'Observation #3');
     });
@@ -452,7 +452,7 @@ Future<void> main() async {
           fhirDb.listen(resourceType: R5ResourceType.Observation).listen(
         (Resource? resource) {
           // This block is where you handle each emitted item
-          print('Received resource: ${resource?.path}');
+          // print('Received resource: ${resource?.path}');
         },
         onError: (dynamic error) {
           // Handle any errors
@@ -529,7 +529,7 @@ Future<bool> compareTwoResources(
   final Resource? dbResource = await fhirDb.get(
       pw: pw,
       resourceType: originalResource.resourceType!,
-      id: originalResource.id!.toString());
+      id: originalResource.id!.value!);
   final Map<String, dynamic> resource1Json = originalResource.toJson();
   final Map<String, dynamic>? resource2json = dbResource?.toJson();
   resource1Json.remove('meta');

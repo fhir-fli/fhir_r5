@@ -11,6 +11,14 @@ final testCondition1 = Condition.fromJson({
     "source": "#KHY7300qppJKNt2a",
     "profile": ["http://fhir.mimic.mit.edu/StructureDefinition/mimic-condition"]
   },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active"
+      }
+    ]
+  },
   "identifier": [
     {
       "system": "http://fhir.mimic.mit.edu/identifier/condition",
