@@ -83,7 +83,7 @@ _$PaymentNoticeImpl _$$PaymentNoticeImplFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$PaymentNoticeImplToJson(_$PaymentNoticeImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -210,7 +210,7 @@ const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Invoice: 'Invoice',
   R5ResourceType.Library: 'Library',
   R5ResourceType.Linkage: 'Linkage',
-  R5ResourceType.List: 'List',
+  R5ResourceType.FhirList: 'List',
   R5ResourceType.Location: 'Location',
   R5ResourceType.ManufacturedItemDefinition: 'ManufacturedItemDefinition',
   R5ResourceType.Measure: 'Measure',
@@ -431,7 +431,7 @@ _$PaymentReconciliationImpl _$$PaymentReconciliationImplFromJson(
 Map<String, dynamic> _$$PaymentReconciliationImplToJson(
     _$PaymentReconciliationImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {

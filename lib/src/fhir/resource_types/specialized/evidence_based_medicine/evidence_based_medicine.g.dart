@@ -118,7 +118,7 @@ _$ArtifactAssessmentImpl _$$ArtifactAssessmentImplFromJson(
 Map<String, dynamic> _$$ArtifactAssessmentImplToJson(
     _$ArtifactAssessmentImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -255,7 +255,7 @@ const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Invoice: 'Invoice',
   R5ResourceType.Library: 'Library',
   R5ResourceType.Linkage: 'Linkage',
-  R5ResourceType.List: 'List',
+  R5ResourceType.FhirList: 'List',
   R5ResourceType.Location: 'Location',
   R5ResourceType.ManufacturedItemDefinition: 'ManufacturedItemDefinition',
   R5ResourceType.Measure: 'Measure',
@@ -589,7 +589,7 @@ _$CitationImpl _$$CitationImplFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$CitationImplToJson(_$CitationImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -1855,7 +1855,7 @@ _$EvidenceImpl _$$EvidenceImplFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$EvidenceImplToJson(_$EvidenceImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -2564,7 +2564,7 @@ _$EvidenceReportImpl _$$EvidenceReportImplFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$$EvidenceReportImplToJson(
     _$EvidenceReportImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -3111,7 +3111,7 @@ _$EvidenceVariableImpl _$$EvidenceVariableImplFromJson(
 Map<String, dynamic> _$$EvidenceVariableImplToJson(
     _$EvidenceVariableImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {

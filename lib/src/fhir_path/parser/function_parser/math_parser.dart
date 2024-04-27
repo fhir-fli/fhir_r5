@@ -6,7 +6,7 @@ import 'dart:math';
 // Project imports:
 import 'package:ucum/ucum.dart';
 
-import '../../r5.dart';
+import '../../../../fhir_r5.dart';
 
 class AbsParser extends FhirPathParser {
   AbsParser();

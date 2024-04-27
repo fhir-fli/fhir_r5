@@ -73,7 +73,7 @@ _$BodyStructureImpl _$$BodyStructureImplFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$BodyStructureImplToJson(_$BodyStructureImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -197,7 +197,7 @@ const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Invoice: 'Invoice',
   R5ResourceType.Library: 'Library',
   R5ResourceType.Linkage: 'Linkage',
-  R5ResourceType.List: 'List',
+  R5ResourceType.FhirList: 'List',
   R5ResourceType.Location: 'Location',
   R5ResourceType.ManufacturedItemDefinition: 'ManufacturedItemDefinition',
   R5ResourceType.Measure: 'Measure',
@@ -538,7 +538,7 @@ _$DiagnosticReportImpl _$$DiagnosticReportImplFromJson(
 Map<String, dynamic> _$$DiagnosticReportImplToJson(
     _$DiagnosticReportImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -769,7 +769,7 @@ _$GenomicStudyImpl _$$GenomicStudyImplFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$GenomicStudyImplToJson(_$GenomicStudyImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -1208,7 +1208,7 @@ _$ImagingSelectionImpl _$$ImagingSelectionImplFromJson(
 Map<String, dynamic> _$$ImagingSelectionImplToJson(
     _$ImagingSelectionImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -1569,7 +1569,7 @@ _$ImagingStudyImpl _$$ImagingStudyImplFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$ImagingStudyImplToJson(_$ImagingStudyImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -1879,7 +1879,7 @@ _$MolecularSequenceImpl _$$MolecularSequenceImplFromJson(
 Map<String, dynamic> _$$MolecularSequenceImplToJson(
     _$MolecularSequenceImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -2318,7 +2318,7 @@ _$ObservationImpl _$$ObservationImplFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$ObservationImplToJson(_$ObservationImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -2721,7 +2721,7 @@ _$QuestionnaireResponseImpl _$$QuestionnaireResponseImplFromJson(
 Map<String, dynamic> _$$QuestionnaireResponseImplToJson(
     _$QuestionnaireResponseImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -3027,7 +3027,7 @@ _$SpecimenImpl _$$SpecimenImplFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$SpecimenImplToJson(_$SpecimenImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {

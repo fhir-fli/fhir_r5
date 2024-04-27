@@ -122,7 +122,7 @@ _$CommunicationImpl _$$CommunicationImplFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$CommunicationImplToJson(_$CommunicationImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -266,7 +266,7 @@ const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Invoice: 'Invoice',
   R5ResourceType.Library: 'Library',
   R5ResourceType.Linkage: 'Linkage',
-  R5ResourceType.List: 'List',
+  R5ResourceType.FhirList: 'List',
   R5ResourceType.Location: 'Location',
   R5ResourceType.ManufacturedItemDefinition: 'ManufacturedItemDefinition',
   R5ResourceType.Measure: 'Measure',
@@ -514,7 +514,7 @@ _$CommunicationRequestImpl _$$CommunicationRequestImplFromJson(
 Map<String, dynamic> _$$CommunicationRequestImplToJson(
     _$CommunicationRequestImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -681,7 +681,7 @@ _$DeviceAssociationImpl _$$DeviceAssociationImplFromJson(
 Map<String, dynamic> _$$DeviceAssociationImplToJson(
     _$DeviceAssociationImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -868,7 +868,7 @@ _$DeviceDispenseImpl _$$DeviceDispenseImplFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$$DeviceDispenseImplToJson(
     _$DeviceDispenseImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -1102,7 +1102,7 @@ _$DeviceRequestImpl _$$DeviceRequestImplFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$DeviceRequestImplToJson(_$DeviceRequestImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -1330,7 +1330,7 @@ _$DeviceUsageImpl _$$DeviceUsageImplFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$DeviceUsageImplToJson(_$DeviceUsageImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -1518,7 +1518,7 @@ _$GuidanceResponseImpl _$$GuidanceResponseImplFromJson(
 Map<String, dynamic> _$$GuidanceResponseImplToJson(
     _$GuidanceResponseImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -1654,7 +1654,7 @@ _$InventoryItemImpl _$$InventoryItemImplFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$InventoryItemImplToJson(_$InventoryItemImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -2106,7 +2106,7 @@ _$InventoryReportImpl _$$InventoryReportImplFromJson(
 Map<String, dynamic> _$$InventoryReportImplToJson(
     _$InventoryReportImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -2320,7 +2320,7 @@ _$SupplyDeliveryImpl _$$SupplyDeliveryImplFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$$SupplyDeliveryImplToJson(
     _$SupplyDeliveryImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -2504,7 +2504,7 @@ _$SupplyRequestImpl _$$SupplyRequestImplFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$SupplyRequestImplToJson(_$SupplyRequestImpl instance) {
   final val = <String, dynamic>{
-    'resourceType': _$R5ResourceTypeEnumMap[instance.resourceType]!,
+    'resourceType': instance.resourceType.toJson(),
   };
 
   void writeNotNull(String key, dynamic value) {

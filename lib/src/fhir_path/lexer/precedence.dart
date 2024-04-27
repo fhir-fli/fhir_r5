@@ -1,5 +1,5 @@
 // Project imports:
-import '../r5.dart';
+import '../../../fhir_r5.dart';
 
 /// Trying to enforce Operator Order Precedence
 const Map<Type, int> operatorOrderMap = <Type, int>{

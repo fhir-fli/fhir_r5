@@ -4,7 +4,7 @@
 import 'package:collection/collection.dart';
 
 // Project imports:
-import '../../r5.dart';
+import '../../../../fhir_r5.dart';
 
 class SingleParser extends FhirPathParser {
   SingleParser();

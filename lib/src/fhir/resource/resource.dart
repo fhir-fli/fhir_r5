@@ -1,25 +1,21 @@
-//ignore_for_file: always_specify_types
-
-// ignore_for_file: invalid_annotation_target, sort_unnamed_constructors_first, sort_constructors_first, prefer_mixin
+// ignore_for_file: always_specify_types, invalid_annotation_target, prefer_mixin
+// ignore_for_file: sort_unnamed_constructors_first, sort_constructors_first
 
 // Dart imports:
 import 'dart:convert';
 
 // Package imports:
-import 'package:fhir_primitives/fhir_primitives.dart';
-import 'package:fhir_yaml/fhir_yaml.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:yaml/yaml.dart';
 
 // Project imports:
-import '../r5.dart';
+import '../../../fhir_r5.dart';
 
 part 'fhir_field_map.dart';
 part 'resource_from_json.dart';
 part 'resource_new_id.dart';
 part 'resource_new_version.dart';
 part 'resource_types_enum.dart';
-part 'resource_utils.dart';
 
 /// This class ends up functioning mostly like an abstract superclass. Some of
 /// the fields in other classes contain a generic resource, so in order for
@@ -102,7 +98,7 @@ abstract mixin class Resource {
   String toYaml() => json2yaml(toJson());
 
   /// produce a string of the [resourceType]
-  String? get resourceTypeString => resourceTypeToStringMap[resourceType];
+  String? get resourceTypeString => resourceType.toString();
 
   /// Convenience method to return a [Reference] referring to that [Resource]
   Reference get thisReference => Reference(
@@ -125,8 +121,7 @@ abstract mixin class Resource {
       _updateMeta(this, meta: oldMeta);
 
   static R5ResourceType? resourceTypeFromString(String type) =>
-      resourceTypeFromStringMap[type];
+      R5ResourceType.fromString(type);
 
-  static String resourceTypeToString(R5ResourceType type) =>
-      resourceTypeToStringMap[type]!;
+  static String resourceTypeToString(R5ResourceType type) => type.toString();
 }

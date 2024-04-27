@@ -5,7 +5,6 @@ import 'dart:convert';
 import 'dart:developer';
 
 // Package imports:
-import 'package:fhir_primitives/fhir_primitives.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:http/http.dart';
 
@@ -89,7 +88,7 @@ class BulkRequest with _$BulkRequest {
         if (type.resourceType != null) {
           typeString += typeString.length == 1 ? '_type=' : ',';
           typeString +=
-              '${resourceTypeToStringMap[type.resourceType]}${type.id != null ? "/${type.id}" : ""}';
+              '${type.resourceType}${type.id != null ? "/${type.id}" : ""}';
         }
       }
     }

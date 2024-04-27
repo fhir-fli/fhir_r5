@@ -2,7 +2,7 @@
 import 'package:petitparser/petitparser.dart';
 
 // Project imports:
-import '../r5.dart';
+import '../../../fhir_r5.dart';
 
 /// These lexers help identify parts of an expression that are no longer
 /// supported. When the expression is applied to an object, it will throw

@@ -1,5 +1,4 @@
 // Package imports:
-import 'package:fhir_primitives/fhir_primitives.dart';
 import 'package:fhir_r5/fhir_r5.dart';
 import 'package:test/test.dart';
 
