@@ -20,7 +20,71 @@ enum BundleType {
   @JsonValue('collection')
   collection,
   @JsonValue('subscription-notification')
-  subscriptionnotification,
+  subscriptionnotification;
+
+  static BundleType? fromString(String string) {
+    switch (string) {
+      case 'document':
+        return BundleType.document;
+      case 'message':
+        return BundleType.message;
+      case 'transaction':
+        return BundleType.transaction;
+      case 'transaction-response':
+        return BundleType.transactionresponse;
+      case 'batch':
+        return BundleType.batch;
+      case 'batch-response':
+        return BundleType.batchresponse;
+      case 'history':
+        return BundleType.history;
+      case 'searchset':
+        return BundleType.searchset;
+      case 'collection':
+        return BundleType.collection;
+      case 'subscription-notification':
+        return BundleType.subscriptionnotification;
+
+      default:
+        return null;
+    }
+  }
+
+  static BundleType? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case BundleType.document:
+        return 'document';
+      case BundleType.message:
+        return 'message';
+      case BundleType.transaction:
+        return 'transaction';
+      case BundleType.transactionresponse:
+        return 'transaction-response';
+      case BundleType.batch:
+        return 'batch';
+      case BundleType.batchresponse:
+        return 'batch-response';
+      case BundleType.history:
+        return 'history';
+      case BundleType.searchset:
+        return 'searchset';
+      case BundleType.collection:
+        return 'collection';
+      case BundleType.subscriptionnotification:
+        return 'subscription-notification';
+
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum SearchEntryMode {
@@ -29,7 +93,43 @@ enum SearchEntryMode {
   @JsonValue('include')
   include,
   @JsonValue('outcome')
-  outcome,
+  outcome;
+
+  static SearchEntryMode? fromString(String string) {
+    switch (string) {
+      case 'match':
+        return SearchEntryMode.match;
+      case 'include':
+        return SearchEntryMode.include;
+      case 'outcome':
+        return SearchEntryMode.outcome;
+
+      default:
+        return null;
+    }
+  }
+
+  static SearchEntryMode? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case SearchEntryMode.match:
+        return 'match';
+      case SearchEntryMode.include:
+        return 'include';
+      case SearchEntryMode.outcome:
+        return 'outcome';
+
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum HttpVerb {
@@ -44,7 +144,55 @@ enum HttpVerb {
   @JsonValue('DELETE')
   delete,
   @JsonValue('PATCH')
-  patch,
+  patch;
+
+  static HttpVerb? fromString(String string) {
+    switch (string) {
+      case 'GET':
+        return HttpVerb.get;
+      case 'HEAD':
+        return HttpVerb.head;
+      case 'POST':
+        return HttpVerb.post;
+      case 'PUT':
+        return HttpVerb.put;
+      case 'DELETE':
+        return HttpVerb.delete;
+      case 'PATCH':
+        return HttpVerb.patch;
+
+      default:
+        return null;
+    }
+  }
+
+  static HttpVerb? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case HttpVerb.get:
+        return 'GET';
+      case HttpVerb.head:
+        return 'HEAD';
+      case HttpVerb.post:
+        return 'POST';
+      case HttpVerb.put:
+        return 'PUT';
+      case HttpVerb.delete:
+        return 'DELETE';
+      case HttpVerb.patch:
+        return 'PATCH';
+
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum LinkageType {
@@ -53,7 +201,43 @@ enum LinkageType {
   @JsonValue('alternate')
   alternate,
   @JsonValue('historical')
-  historical,
+  historical;
+
+  static LinkageType? fromString(String string) {
+    switch (string) {
+      case 'source':
+        return LinkageType.source;
+      case 'alternate':
+        return LinkageType.alternate;
+      case 'historical':
+        return LinkageType.historical;
+
+      default:
+        return null;
+    }
+  }
+
+  static LinkageType? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case LinkageType.source:
+        return 'source';
+      case LinkageType.alternate:
+        return 'alternate';
+      case LinkageType.historical:
+        return 'historical';
+
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ResponseCode {
@@ -62,7 +246,43 @@ enum ResponseCode {
   @JsonValue('transient-error')
   transienterror,
   @JsonValue('fatal-error')
-  fatalerror,
+  fatalerror;
+
+  static ResponseCode? fromString(String string) {
+    switch (string) {
+      case 'ok':
+        return ResponseCode.ok;
+      case 'transient-error':
+        return ResponseCode.transienterror;
+      case 'fatal-error':
+        return ResponseCode.fatalerror;
+
+      default:
+        return null;
+    }
+  }
+
+  static ResponseCode? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ResponseCode.ok:
+        return 'ok';
+      case ResponseCode.transienterror:
+        return 'transient-error';
+      case ResponseCode.fatalerror:
+        return 'fatal-error';
+
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum IssueSeverity {
@@ -75,7 +295,51 @@ enum IssueSeverity {
   @JsonValue('information')
   information,
   @JsonValue('success')
-  success,
+  success;
+
+  static IssueSeverity? fromString(String string) {
+    switch (string) {
+      case 'fatal':
+        return IssueSeverity.fatal;
+      case 'error':
+        return IssueSeverity.error;
+      case 'warning':
+        return IssueSeverity.warning;
+      case 'information':
+        return IssueSeverity.information;
+      case 'success':
+        return IssueSeverity.success;
+
+      default:
+        return null;
+    }
+  }
+
+  static IssueSeverity? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case IssueSeverity.fatal:
+        return 'fatal';
+      case IssueSeverity.error:
+        return 'error';
+      case IssueSeverity.warning:
+        return 'warning';
+      case IssueSeverity.information:
+        return 'information';
+      case IssueSeverity.success:
+        return 'success';
+
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum IssueType {
@@ -90,7 +354,55 @@ enum IssueType {
   @JsonValue('informational')
   informational,
   @JsonValue('success')
-  success,
+  success;
+
+  static IssueType? fromString(String string) {
+    switch (string) {
+      case 'invalid':
+        return IssueType.invalid;
+      case 'security':
+        return IssueType.security;
+      case 'processing':
+        return IssueType.processing;
+      case 'transient':
+        return IssueType.transient;
+      case 'informational':
+        return IssueType.informational;
+      case 'success':
+        return IssueType.success;
+
+      default:
+        return null;
+    }
+  }
+
+  static IssueType? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case IssueType.invalid:
+        return 'invalid';
+      case IssueType.security:
+        return 'security';
+      case IssueType.processing:
+        return 'processing';
+      case IssueType.transient:
+        return 'transient';
+      case IssueType.informational:
+        return 'informational';
+      case IssueType.success:
+        return 'success';
+
+    }
+  }
+
+  String toJson() => toString();
 }
 
 // enum OperationOutcome {
@@ -217,7 +529,43 @@ enum SubscriptionPayloadContent {
   @JsonValue('id-only')
   idonly,
   @JsonValue('full-resource')
-  fullresource,
+  fullresource;
+
+  static SubscriptionPayloadContent? fromString(String string) {
+    switch (string) {
+      case 'empty':
+        return SubscriptionPayloadContent.empty;
+      case 'id-only':
+        return SubscriptionPayloadContent.idonly;
+      case 'full-resource':
+        return SubscriptionPayloadContent.fullresource;
+
+      default:
+        return null;
+    }
+  }
+
+  static SubscriptionPayloadContent? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case SubscriptionPayloadContent.empty:
+        return 'empty';
+      case SubscriptionPayloadContent.idonly:
+        return 'id-only';
+      case SubscriptionPayloadContent.fullresource:
+        return 'full-resource';
+
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum SubscriptionNotificationType {
@@ -230,12 +578,88 @@ enum SubscriptionNotificationType {
   @JsonValue('query-status')
   querystatus,
   @JsonValue('query-event')
-  queryevent,
+  queryevent;
+
+  static SubscriptionNotificationType? fromString(String string) {
+    switch (string) {
+      case 'handshake':
+        return SubscriptionNotificationType.handshake;
+      case 'heartbeat':
+        return SubscriptionNotificationType.heartbeat;
+      case 'event-notification':
+        return SubscriptionNotificationType.eventnotification;
+      case 'query-status':
+        return SubscriptionNotificationType.querystatus;
+      case 'query-event':
+        return SubscriptionNotificationType.queryevent;
+
+      default:
+        return null;
+    }
+  }
+
+  static SubscriptionNotificationType? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case SubscriptionNotificationType.handshake:
+        return 'handshake';
+      case SubscriptionNotificationType.heartbeat:
+        return 'heartbeat';
+      case SubscriptionNotificationType.eventnotification:
+        return 'event-notification';
+      case SubscriptionNotificationType.querystatus:
+        return 'query-status';
+      case SubscriptionNotificationType.queryevent:
+        return 'query-event';
+
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum SubscriptiontopicCrBehavior {
   @JsonValue('test-passes')
   testpasses,
   @JsonValue('test-fails')
-  testfails,
+  testfails;
+
+  static SubscriptiontopicCrBehavior? fromString(String string) {
+    switch (string) {
+      case 'test-passes':
+        return SubscriptiontopicCrBehavior.testpasses;
+      case 'test-fails':
+        return SubscriptiontopicCrBehavior.testfails;
+
+      default:
+        return null;
+    }
+  }
+
+  static SubscriptiontopicCrBehavior? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case SubscriptiontopicCrBehavior.testpasses:
+        return 'test-passes';
+      case SubscriptiontopicCrBehavior.testfails:
+        return 'test-fails';
+
+    }
+  }
+
+  String toJson() => toString();
 }

@@ -222,7 +222,466 @@ enum MimeType {
   @JsonValue('video/x-avi')
   video_x_avi,
   @JsonValue('video/x-ms-wmv')
-  video_x_ms_wmv,
+  video_x_ms_wmv;
+
+  static MimeType? fromString(String string) {
+    switch (string) {
+      case 'audio/aac':
+        return MimeType.audio_aac;
+      case 'application/x-abiword':
+        return MimeType.application_x_abiword;
+      case 'application/x-freearc':
+        return MimeType.application_x_freearc;
+      case 'image/avif':
+        return MimeType.image_avif;
+      case 'video/x-msvideo':
+        return MimeType.video_x_msvideo;
+      case 'application/vnd.amazon.ebook':
+        return MimeType.application_vnd_amazon_ebook;
+      case 'application/octet-stream':
+        return MimeType.application_octet_stream;
+      case 'image/bmp':
+        return MimeType.image_bmp;
+      case 'application/x-bzip':
+        return MimeType.application_x_bzip;
+      case 'application/x-bzip2':
+        return MimeType.application_x_bzip2;
+      case 'application/x-cdf':
+        return MimeType.application_x_cdf;
+      case 'application/x-csh':
+        return MimeType.application_x_csh;
+      case 'text/css':
+        return MimeType.text_css;
+      case 'text/csv':
+        return MimeType.text_csv;
+      case 'application/msword':
+        return MimeType.application_msword;
+      case 'application/vnd.ms-fontobject':
+        return MimeType
+            .application_vnd_openxmlformats_officedocument_wordprocessingml_document;
+      case 'application/epub+zip':
+        return MimeType.application_vnd_ms_fontobject;
+      case 'application/gzip':
+        return MimeType.application_epub_zip;
+      case 'image/gif':
+        return MimeType.application_gzip;
+      case 'text/html':
+        return MimeType.image_gif;
+      case 'image/vnd.microsoft.icon':
+        return MimeType.text_html;
+      case 'text/calendar':
+        return MimeType.image_vnd_microsoft_icon;
+      case 'application/java-archive':
+        return MimeType.text_calendar;
+      case 'image/jpeg':
+        return MimeType.application_java_archive;
+      case 'text/javascript':
+        return MimeType.image_jpeg;
+      case 'application/json':
+        return MimeType.text_javascript;
+      case 'application/ld+json':
+        return MimeType.application_json;
+      case 'audio/midi':
+        return MimeType.application_ld_json;
+      case 'audio/x-midi':
+        return MimeType.audio_midi;
+      case 'audio/mpeg':
+        return MimeType.audio_x_midi;
+      case 'video/mp4':
+        return MimeType.audio_mpeg;
+      case 'video/mpeg':
+        return MimeType.video_mp4;
+      case 'application/vnd.apple.installer+xml':
+        return MimeType.video_mpeg;
+      case 'application/vnd.oasis.opendocument.presentation':
+        return MimeType.application_vnd_apple_installer_xml;
+      case 'application/vnd.oasis.opendocument.spreadsheet':
+        return MimeType.application_vnd_oasis_opendocument_presentation;
+      case 'application/vnd.oasis.opendocument.text':
+        return MimeType.application_vnd_oasis_opendocument_spreadsheet;
+      case 'audio/ogg':
+        return MimeType.application_vnd_oasis_opendocument_text;
+      case 'video/ogg':
+        return MimeType.audio_ogg;
+      case 'application/ogg':
+        return MimeType.video_ogg;
+      case 'audio/opus':
+        return MimeType.application_ogg;
+      case 'font/otf':
+        return MimeType.audio_opus;
+      case 'image/png':
+        return MimeType.font_otf;
+      case 'application/pdf':
+        return MimeType.image_png;
+      case 'application/x-httpd-php':
+        return MimeType.application_pdf;
+      case 'application/vnd.ms-powerpoint':
+        return MimeType.application_x_httpd_php;
+      case 'application/vnd.rar':
+        return MimeType.application_vnd_ms_powerpoint;
+      case 'application/rtf':
+        return MimeType
+            .application_vnd_openxmlformats_officedocument_presentationml_presentation;
+      case 'application/x-sh':
+        return MimeType.application_vnd_rar;
+      case 'image/svg+xml':
+        return MimeType.application_rtf;
+      case 'application/x-tar':
+        return MimeType.application_x_sh;
+      case 'image/tiff':
+        return MimeType.image_svg_xml;
+      case 'video/mp2t':
+        return MimeType.application_x_tar;
+      case 'font/ttf':
+        return MimeType.image_tiff;
+      case 'text/plain':
+        return MimeType.video_mp2t;
+      case 'application/vnd.visio':
+        return MimeType.font_ttf;
+      case 'audio/wav':
+        return MimeType.text_plain;
+      case 'audio/webm':
+        return MimeType.application_vnd_visio;
+      case 'video/webm':
+        return MimeType.audio_wav;
+      case 'image/webp':
+        return MimeType.audio_webm;
+      case 'font/woff':
+        return MimeType.video_webm;
+      case 'font/woff2':
+        return MimeType.image_webp;
+      case 'application/xhtml+xml':
+        return MimeType.font_woff;
+      case 'application/vnd.ms-excel':
+        return MimeType.font_woff2;
+      case 'application/xml':
+        return MimeType.application_xhtml_xml;
+      case 'text/xml':
+        return MimeType.application_vnd_ms_excel;
+      case 'application/atom+xml':
+        return MimeType
+            .application_vnd_openxmlformats_officedocument_spreadsheetml_sheet;
+      case 'application/vnd.mozilla.xul+xml':
+        return MimeType.application_xml;
+      case 'application/zip':
+        return MimeType.text_xml;
+      case 'video/3gpp':
+        return MimeType.application_atom_xml;
+      case 'audio/3gpp':
+        return MimeType.application_vnd_mozilla_xul_xml;
+      case 'video/3gpp2':
+        return MimeType.application_zip;
+      case 'audio/3gpp2':
+        return MimeType.video_3gpp;
+      case 'application/x-7z-compressed':
+        return MimeType.audio_3gpp;
+      case 'text/hl7v2':
+        return MimeType.video_3gpp2;
+      case 'x-application/hl7-v2+er7':
+        return MimeType.audio_3gpp2;
+      case 'text/rtf':
+        return MimeType.application_x_7z_compressed;
+      case 'application/cda+xml':
+        return MimeType.text_hl7v2;
+      case 'application/fhir+json':
+        return MimeType.x_application_hl7_v2_er7;
+      case 'application/fhir+xml':
+        return MimeType.text_rtf;
+      case 'application/fhir+ndjson':
+        return MimeType.application_cda_xml;
+      case 'application/json+fhir':
+        return MimeType.application_fhir_json;
+      case 'application/dicom':
+        return MimeType.application_fhir_xml;
+      case 'application/dicom; variant=DICOM WADO-RS':
+        return MimeType.application_fhir_ndjson;
+      case 'application/dicom; variant=DICOM STOW-RS':
+        return MimeType.application_json_fhir;
+      case 'application/dicom; variant=DICOM QIDO-RS':
+        return MimeType.application_dicom;
+      case 'application/dicom; variant=DICOM UPS-RS':
+        return MimeType.application_dicom_variant_dicom_wado_rs;
+      case 'application/dicom; variant=DICOM WADO-URI':
+        return MimeType.application_dicom_variant_dicom_stow_rs;
+      case 'application':
+        return MimeType.application_dicom_variant_dicom_qido_rs;
+      case 'audio':
+        return MimeType.application_dicom_variant_dicom_ups_rs;
+      case 'audio/basic':
+        return MimeType.application_dicom_variant_dicom_wado_uri;
+      case 'audio/k32adpcm':
+        return MimeType.application;
+      case 'image':
+        return MimeType.audio;
+      case 'image/g3fax':
+        return MimeType.audio_basic;
+      case 'model':
+        return MimeType.audio_k32adpcm;
+      case 'model/vrml':
+        return MimeType.image;
+      case 'multipart':
+        return MimeType.image_g3fax;
+      case 'multipart/x-hl7-cda-level-one':
+        return MimeType.model;
+      case 'multipart/x-hl7-cda-level1':
+        return MimeType.model_vrml;
+      case 'text':
+        return MimeType.multipart;
+      case 'text/sgml':
+        return MimeType.multipart_x_hl7_cda_level_one;
+      case 'text/x-hl7-ft':
+        return MimeType.multipart_x_hl7_cda_level1;
+      case 'text/x-hl7-text+xml':
+        return MimeType.text;
+      case 'video':
+        return MimeType.text_sgml;
+      case 'video/quicktime':
+        return MimeType.text_x_hl7_ft;
+      case 'video/x-avi':
+        return MimeType.text_x_hl7_text_xml;
+      case 'video/x-ms-wmv':
+        return MimeType.video;
+
+      default:
+        return null;
+    }
+  }
+
+  static MimeType? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case MimeType.audio_aac:
+        return 'audio/aac';
+      case MimeType.application_x_abiword:
+        return 'application/x-abiword';
+      case MimeType.application_x_freearc:
+        return 'application/x-freearc';
+      case MimeType.image_avif:
+        return 'image/avif';
+      case MimeType.video_x_msvideo:
+        return 'video/x-msvideo';
+      case MimeType.application_vnd_amazon_ebook:
+        return 'application/vnd.amazon.ebook';
+      case MimeType.application_octet_stream:
+        return 'application/octet-stream';
+      case MimeType.image_bmp:
+        return 'image/bmp';
+      case MimeType.application_x_bzip:
+        return 'application/x-bzip';
+      case MimeType.application_x_bzip2:
+        return 'application/x-bzip2';
+      case MimeType.application_x_cdf:
+        return 'application/x-cdf';
+      case MimeType.application_x_csh:
+        return 'application/x-csh';
+      case MimeType.text_css:
+        return 'text/css';
+      case MimeType.text_csv:
+        return 'text/csv';
+      case MimeType.application_msword:
+        return 'application/msword';
+      case MimeType
+            .application_vnd_openxmlformats_officedocument_wordprocessingml_document:
+        return 'application/vnd.ms-fontobject';
+      case MimeType.application_vnd_ms_fontobject:
+        return 'application/epub+zip';
+      case MimeType.application_epub_zip:
+        return 'application/gzip';
+      case MimeType.application_gzip:
+        return 'image/gif';
+      case MimeType.image_gif:
+        return 'text/html';
+      case MimeType.text_html:
+        return 'image/vnd.microsoft.icon';
+      case MimeType.image_vnd_microsoft_icon:
+        return 'text/calendar';
+      case MimeType.text_calendar:
+        return 'application/java-archive';
+      case MimeType.application_java_archive:
+        return 'image/jpeg';
+      case MimeType.image_jpeg:
+        return 'text/javascript';
+      case MimeType.text_javascript:
+        return 'application/json';
+      case MimeType.application_json:
+        return 'application/ld+json';
+      case MimeType.application_ld_json:
+        return 'audio/midi';
+      case MimeType.audio_midi:
+        return 'audio/x-midi';
+      case MimeType.audio_x_midi:
+        return 'audio/mpeg';
+      case MimeType.audio_mpeg:
+        return 'video/mp4';
+      case MimeType.video_mp4:
+        return 'video/mpeg';
+      case MimeType.video_mpeg:
+        return 'application/vnd.apple.installer+xml';
+      case MimeType.application_vnd_apple_installer_xml:
+        return 'application/vnd.oasis.opendocument.presentation';
+      case MimeType.application_vnd_oasis_opendocument_presentation:
+        return 'application/vnd.oasis.opendocument.spreadsheet';
+      case MimeType.application_vnd_oasis_opendocument_spreadsheet:
+        return 'application/vnd.oasis.opendocument.text';
+      case MimeType.application_vnd_oasis_opendocument_text:
+        return 'audio/ogg';
+      case MimeType.audio_ogg:
+        return 'video/ogg';
+      case MimeType.video_ogg:
+        return 'application/ogg';
+      case MimeType.application_ogg:
+        return 'audio/opus';
+      case MimeType.audio_opus:
+        return 'font/otf';
+      case MimeType.font_otf:
+        return 'image/png';
+      case MimeType.image_png:
+        return 'application/pdf';
+      case MimeType.application_pdf:
+        return 'application/x-httpd-php';
+      case MimeType.application_x_httpd_php:
+        return 'application/vnd.ms-powerpoint';
+      case MimeType.application_vnd_ms_powerpoint:
+        return 'application/vnd.rar';
+      case MimeType
+            .application_vnd_openxmlformats_officedocument_presentationml_presentation:
+        return 'application/rtf';
+      case MimeType.application_vnd_rar:
+        return 'application/x-sh';
+      case MimeType.application_rtf:
+        return 'image/svg+xml';
+      case MimeType.application_x_sh:
+        return 'application/x-tar';
+      case MimeType.image_svg_xml:
+        return 'image/tiff';
+      case MimeType.application_x_tar:
+        return 'video/mp2t';
+      case MimeType.image_tiff:
+        return 'font/ttf';
+      case MimeType.video_mp2t:
+        return 'text/plain';
+      case MimeType.font_ttf:
+        return 'application/vnd.visio';
+      case MimeType.text_plain:
+        return 'audio/wav';
+      case MimeType.application_vnd_visio:
+        return 'audio/webm';
+      case MimeType.audio_wav:
+        return 'video/webm';
+      case MimeType.audio_webm:
+        return 'image/webp';
+      case MimeType.video_webm:
+        return 'font/woff';
+      case MimeType.image_webp:
+        return 'font/woff2';
+      case MimeType.font_woff:
+        return 'application/xhtml+xml';
+      case MimeType.font_woff2:
+        return 'application/vnd.ms-excel';
+      case MimeType.application_xhtml_xml:
+        return 'application/xml';
+      case MimeType.application_vnd_ms_excel:
+        return 'text/xml';
+      case MimeType
+            .application_vnd_openxmlformats_officedocument_spreadsheetml_sheet:
+        return 'application/atom+xml';
+      case MimeType.application_xml:
+        return 'application/vnd.mozilla.xul+xml';
+      case MimeType.text_xml:
+        return 'application/zip';
+      case MimeType.application_atom_xml:
+        return 'video/3gpp';
+      case MimeType.application_vnd_mozilla_xul_xml:
+        return 'audio/3gpp';
+      case MimeType.application_zip:
+        return 'video/3gpp2';
+      case MimeType.video_3gpp:
+        return 'audio/3gpp2';
+      case MimeType.audio_3gpp:
+        return 'application/x-7z-compressed';
+      case MimeType.video_3gpp2:
+        return 'text/hl7v2';
+      case MimeType.audio_3gpp2:
+        return 'x-application/hl7-v2+er7';
+      case MimeType.application_x_7z_compressed:
+        return 'text/rtf';
+      case MimeType.text_hl7v2:
+        return 'application/cda+xml';
+      case MimeType.x_application_hl7_v2_er7:
+        return 'application/fhir+json';
+      case MimeType.text_rtf:
+        return 'application/fhir+xml';
+      case MimeType.application_cda_xml:
+        return 'application/fhir+ndjson';
+      case MimeType.application_fhir_json:
+        return 'application/json+fhir';
+      case MimeType.application_fhir_xml:
+        return 'application/dicom';
+      case MimeType.application_fhir_ndjson:
+        return 'application/dicom; variant=DICOM WADO-RS';
+      case MimeType.application_json_fhir:
+        return 'application/dicom; variant=DICOM STOW-RS';
+      case MimeType.application_dicom:
+        return 'application/dicom; variant=DICOM QIDO-RS';
+      case MimeType.application_dicom_variant_dicom_wado_rs:
+        return 'application/dicom; variant=DICOM UPS-RS';
+      case MimeType.application_dicom_variant_dicom_stow_rs:
+        return 'application/dicom; variant=DICOM WADO-URI';
+      case MimeType.application_dicom_variant_dicom_qido_rs:
+        return 'application';
+      case MimeType.application_dicom_variant_dicom_ups_rs:
+        return 'audio';
+      case MimeType.application_dicom_variant_dicom_wado_uri:
+        return 'audio/basic';
+      case MimeType.application:
+        return 'audio/k32adpcm';
+      case MimeType.audio:
+        return 'image';
+      case MimeType.audio_basic:
+        return 'image/g3fax';
+      case MimeType.audio_k32adpcm:
+        return 'model';
+      case MimeType.image:
+        return 'model/vrml';
+      case MimeType.image_g3fax:
+        return 'multipart';
+      case MimeType.model:
+        return 'multipart/x-hl7-cda-level-one';
+      case MimeType.model_vrml:
+        return 'multipart/x-hl7-cda-level1';
+      case MimeType.multipart:
+        return 'text';
+      case MimeType.multipart_x_hl7_cda_level_one:
+        return 'text/sgml';
+      case MimeType.multipart_x_hl7_cda_level1:
+        return 'text/x-hl7-ft';
+      case MimeType.text:
+        return 'text/x-hl7-text+xml';
+      case MimeType.text_sgml:
+        return 'video';
+      case MimeType.text_x_hl7_ft:
+        return 'video/quicktime';
+      case MimeType.text_x_hl7_text_xml:
+        return 'video/x-avi';
+      case MimeType.video:
+        return 'video/x-ms-wmv';
+      case MimeType.video_quicktime:
+        return 'video/quicktime';
+      case MimeType.video_x_avi:
+        return 'video/x-avi';
+      case MimeType.video_x_ms_wmv:
+        return 'video/x-ms-wmv';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ServiceMode {
@@ -233,7 +692,46 @@ enum ServiceMode {
   @JsonValue('videoconference')
   videoconference,
   @JsonValue('chat')
-  chat,
+  chat;
+
+  static ServiceMode? fromString(String string) {
+    switch (string) {
+      case 'in-person':
+        return ServiceMode.inperson;
+      case 'telephone':
+        return ServiceMode.telephone;
+      case 'videoconference':
+        return ServiceMode.videoconference;
+      case 'chat':
+        return ServiceMode.chat;
+
+      default:
+        return null;
+    }
+  }
+
+  static ServiceMode? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ServiceMode.inperson:
+        return 'in-person';
+      case ServiceMode.telephone:
+        return 'telephone';
+      case ServiceMode.videoconference:
+        return 'videoconference';
+      case ServiceMode.chat:
+        return 'chat';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ObservationStatus {
@@ -250,7 +748,58 @@ enum ObservationStatus {
   @JsonValue('entered-in-error')
   enteredinerror,
   @JsonValue('unknown')
-  unknown,
+  unknown;
+
+  static ObservationStatus? fromString(String string) {
+    switch (string) {
+      case 'registered':
+        return ObservationStatus.registered;
+      case 'preliminary':
+        return ObservationStatus.preliminary;
+      case 'final':
+        return ObservationStatus.final_;
+      case 'amended':
+        return ObservationStatus.amended;
+      case 'cancelled':
+        return ObservationStatus.cancelled;
+      case 'entered-in-error':
+        return ObservationStatus.enteredinerror;
+      case 'unknown':
+        return ObservationStatus.unknown;
+
+      default:
+        return null;
+    }
+  }
+
+  static ObservationStatus? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ObservationStatus.registered:
+        return 'registered';
+      case ObservationStatus.preliminary:
+        return 'preliminary';
+      case ObservationStatus.final_:
+        return 'final';
+      case ObservationStatus.amended:
+        return 'amended';
+      case ObservationStatus.cancelled:
+        return 'cancelled';
+      case ObservationStatus.enteredinerror:
+        return 'entered-in-error';
+      case ObservationStatus.unknown:
+        return 'unknown';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum RequestPriority {
@@ -261,7 +810,46 @@ enum RequestPriority {
   @JsonValue('asap')
   asap,
   @JsonValue('stat')
-  stat,
+  stat;
+
+  static RequestPriority? fromString(String string) {
+    switch (string) {
+      case 'routine':
+        return RequestPriority.routine;
+      case 'urgent':
+        return RequestPriority.urgent;
+      case 'asap':
+        return RequestPriority.asap;
+      case 'stat':
+        return RequestPriority.stat;
+
+      default:
+        return null;
+    }
+  }
+
+  static RequestPriority? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case RequestPriority.routine:
+        return 'routine';
+      case RequestPriority.urgent:
+        return 'urgent';
+      case RequestPriority.asap:
+        return 'asap';
+      case RequestPriority.stat:
+        return 'stat';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ClaimUse {
@@ -270,7 +858,42 @@ enum ClaimUse {
   @JsonValue('preauthorization')
   preauthorization,
   @JsonValue('predetermination')
-  predetermination,
+  predetermination;
+
+  static ClaimUse? fromString(String string) {
+    switch (string) {
+      case 'claim':
+        return ClaimUse.claim;
+      case 'preauthorization':
+        return ClaimUse.preauthorization;
+      case 'predetermination':
+        return ClaimUse.predetermination;
+
+      default:
+        return null;
+    }
+  }
+
+  static ClaimUse? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ClaimUse.claim:
+        return 'claim';
+      case ClaimUse.preauthorization:
+        return 'preauthorization';
+      case ClaimUse.predetermination:
+        return 'predetermination';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum FmStatus {
@@ -281,7 +904,46 @@ enum FmStatus {
   @JsonValue('draft')
   draft,
   @JsonValue('entered-in-error')
-  enteredinerror,
+  enteredinerror;
+
+  static FmStatus? fromString(String string) {
+    switch (string) {
+      case 'active':
+        return FmStatus.active;
+      case 'cancelled':
+        return FmStatus.cancelled;
+      case 'draft':
+        return FmStatus.draft;
+      case 'entered-in-error':
+        return FmStatus.enteredinerror;
+
+      default:
+        return null;
+    }
+  }
+
+  static FmStatus? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case FmStatus.active:
+        return 'active';
+      case FmStatus.cancelled:
+        return 'cancelled';
+      case FmStatus.draft:
+        return 'draft';
+      case FmStatus.enteredinerror:
+        return 'entered-in-error';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum EventStatus {
@@ -300,7 +962,62 @@ enum EventStatus {
   @JsonValue('entered-in-error')
   enteredinerror,
   @JsonValue('unknown')
-  unknown,
+  unknown;
+
+  static EventStatus? fromString(String string) {
+    switch (string) {
+      case 'preparation':
+        return EventStatus.preparation;
+      case 'in-progress':
+        return EventStatus.inprogress;
+      case 'not-done':
+        return EventStatus.notdone;
+      case 'on-hold':
+        return EventStatus.onhold;
+      case 'stopped':
+        return EventStatus.stopped;
+      case 'completed':
+        return EventStatus.completed;
+      case 'entered-in-error':
+        return EventStatus.enteredinerror;
+      case 'unknown':
+        return EventStatus.unknown;
+
+      default:
+        return null;
+    }
+  }
+
+  static EventStatus? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case EventStatus.preparation:
+        return 'preparation';
+      case EventStatus.inprogress:
+        return 'in-progress';
+      case EventStatus.notdone:
+        return 'not-done';
+      case EventStatus.onhold:
+        return 'on-hold';
+      case EventStatus.stopped:
+        return 'stopped';
+      case EventStatus.completed:
+        return 'completed';
+      case EventStatus.enteredinerror:
+        return 'entered-in-error';
+      case EventStatus.unknown:
+        return 'unknown';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum RequestStatus {
@@ -317,7 +1034,58 @@ enum RequestStatus {
   @JsonValue('entered-in-error')
   enteredinerror,
   @JsonValue('unknown')
-  unknown,
+  unknown;
+
+  static RequestStatus? fromString(String string) {
+    switch (string) {
+      case 'draft':
+        return RequestStatus.draft;
+      case 'active':
+        return RequestStatus.active;
+      case 'on-hold':
+        return RequestStatus.onhold;
+      case 'revoked':
+        return RequestStatus.revoked;
+      case 'completed':
+        return RequestStatus.completed;
+      case 'entered-in-error':
+        return RequestStatus.enteredinerror;
+      case 'unknown':
+        return RequestStatus.unknown;
+
+      default:
+        return null;
+    }
+  }
+
+  static RequestStatus? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case RequestStatus.draft:
+        return 'draft';
+      case RequestStatus.active:
+        return 'active';
+      case RequestStatus.onhold:
+        return 'on-hold';
+      case RequestStatus.revoked:
+        return 'revoked';
+      case RequestStatus.completed:
+        return 'completed';
+      case RequestStatus.enteredinerror:
+        return 'entered-in-error';
+      case RequestStatus.unknown:
+        return 'unknown';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum RequestIntent {
@@ -330,7 +1098,50 @@ enum RequestIntent {
   @JsonValue('order')
   order,
   @JsonValue('option')
-  option,
+  option;
+
+  static RequestIntent? fromString(String string) {
+    switch (string) {
+      case 'proposal':
+        return RequestIntent.proposal;
+      case 'plan':
+        return RequestIntent.plan;
+      case 'directive':
+        return RequestIntent.directive;
+      case 'order':
+        return RequestIntent.order;
+      case 'option':
+        return RequestIntent.option;
+
+      default:
+        return null;
+    }
+  }
+
+  static RequestIntent? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case RequestIntent.proposal:
+        return 'proposal';
+      case RequestIntent.plan:
+        return 'plan';
+      case RequestIntent.directive:
+        return 'directive';
+      case RequestIntent.order:
+        return 'order';
+      case RequestIntent.option:
+        return 'option';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum Datestype {
@@ -339,7 +1150,42 @@ enum Datestype {
   @JsonValue('claim-received')
   claimreceived,
   @JsonValue('service-expected')
-  serviceexpected,
+  serviceexpected;
+
+  static Datestype? fromString(String string) {
+    switch (string) {
+      case 'card-issued':
+        return Datestype.cardissued;
+      case 'claim-received':
+        return Datestype.claimreceived;
+      case 'service-expected':
+        return Datestype.serviceexpected;
+
+      default:
+        return null;
+    }
+  }
+
+  static Datestype? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case Datestype.cardissued:
+        return 'card-issued';
+      case Datestype.claimreceived:
+        return 'claim-received';
+      case Datestype.serviceexpected:
+        return 'service-expected';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum NoteType {
@@ -348,7 +1194,42 @@ enum NoteType {
   @JsonValue('print')
   print,
   @JsonValue('printoper')
-  printoper,
+  printoper;
+
+  static NoteType? fromString(String string) {
+    switch (string) {
+      case 'display':
+        return NoteType.display;
+      case 'print':
+        return NoteType.print;
+      case 'printoper':
+        return NoteType.printoper;
+
+      default:
+        return null;
+    }
+  }
+
+  static NoteType? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case NoteType.display:
+        return 'display';
+      case NoteType.print:
+        return 'print';
+      case NoteType.printoper:
+        return 'printoper';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ClaimOutcome {
@@ -359,7 +1240,46 @@ enum ClaimOutcome {
   @JsonValue('error')
   error,
   @JsonValue('partial')
-  partial,
+  partial;
+
+  static ClaimOutcome? fromString(String string) {
+    switch (string) {
+      case 'queued':
+        return ClaimOutcome.queued;
+      case 'complete':
+        return ClaimOutcome.complete;
+      case 'error':
+        return ClaimOutcome.error;
+      case 'partial':
+        return ClaimOutcome.partial;
+
+      default:
+        return null;
+    }
+  }
+
+  static ClaimOutcome? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ClaimOutcome.queued:
+        return 'queued';
+      case ClaimOutcome.complete:
+        return 'complete';
+      case ClaimOutcome.error:
+        return 'error';
+      case ClaimOutcome.partial:
+        return 'partial';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ClaimDecision {
@@ -370,7 +1290,46 @@ enum ClaimDecision {
   @JsonValue('partial')
   partial,
   @JsonValue('pending')
-  pending,
+  pending;
+
+  static ClaimDecision? fromString(String string) {
+    switch (string) {
+      case 'denied':
+        return ClaimDecision.denied;
+      case 'approved':
+        return ClaimDecision.approved;
+      case 'partial':
+        return ClaimDecision.partial;
+      case 'pending':
+        return ClaimDecision.pending;
+
+      default:
+        return null;
+    }
+  }
+
+  static ClaimDecision? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ClaimDecision.denied:
+        return 'denied';
+      case ClaimDecision.approved:
+        return 'approved';
+      case ClaimDecision.partial:
+        return 'partial';
+      case ClaimDecision.pending:
+        return 'pending';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ClaimDecisionReason {
@@ -383,7 +1342,50 @@ enum ClaimDecisionReason {
   @JsonValue('0004')
   four,
   @JsonValue('0005')
-  five,
+  five;
+
+  static ClaimDecisionReason? fromString(String string) {
+    switch (string) {
+      case '0001':
+        return ClaimDecisionReason.one;
+      case '0002':
+        return ClaimDecisionReason.two;
+      case '0003':
+        return ClaimDecisionReason.three;
+      case '0004':
+        return ClaimDecisionReason.four;
+      case '0005':
+        return ClaimDecisionReason.five;
+
+      default:
+        return null;
+    }
+  }
+
+  static ClaimDecisionReason? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ClaimDecisionReason.one:
+        return '0001';
+      case ClaimDecisionReason.two:
+        return '0002';
+      case ClaimDecisionReason.three:
+        return '0003';
+      case ClaimDecisionReason.four:
+        return '0004';
+      case ClaimDecisionReason.five:
+        return '0005';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum SearchComparator {
@@ -404,7 +1406,66 @@ enum SearchComparator {
   @JsonValue('eb')
   eb,
   @JsonValue('ap')
-  ap,
+  ap;
+
+  static SearchComparator? fromString(String string) {
+    switch (string) {
+      case 'eq':
+        return SearchComparator.eq;
+      case 'ne':
+        return SearchComparator.ne;
+      case 'gt':
+        return SearchComparator.gt;
+      case 'lt':
+        return SearchComparator.lt;
+      case 'ge':
+        return SearchComparator.ge;
+      case 'le':
+        return SearchComparator.le;
+      case 'sa':
+        return SearchComparator.sa;
+      case 'eb':
+        return SearchComparator.eb;
+      case 'ap':
+        return SearchComparator.ap;
+
+      default:
+        return null;
+    }
+  }
+
+  static SearchComparator? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case SearchComparator.eq:
+        return 'eq';
+      case SearchComparator.ne:
+        return 'ne';
+      case SearchComparator.gt:
+        return 'gt';
+      case SearchComparator.lt:
+        return 'lt';
+      case SearchComparator.ge:
+        return 'ge';
+      case SearchComparator.le:
+        return 'le';
+      case SearchComparator.sa:
+        return 'sa';
+      case SearchComparator.eb:
+        return 'eb';
+      case SearchComparator.ap:
+        return 'ap';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum SearchModifierCode {
@@ -437,7 +1498,90 @@ enum SearchModifierCode {
   @JsonValue('text-advanced')
   textadvanced,
   @JsonValue('iterate')
-  iterate,
+  iterate;
+
+  static SearchModifierCode? fromString(String string) {
+    switch (string) {
+      case 'missing':
+        return SearchModifierCode.missing;
+      case 'exact':
+        return SearchModifierCode.exact;
+      case 'contains':
+        return SearchModifierCode.contains;
+      case 'not':
+        return SearchModifierCode.not;
+      case 'text':
+        return SearchModifierCode.text;
+      case 'in':
+        return SearchModifierCode.in_;
+      case 'not-in':
+        return SearchModifierCode.notin;
+      case 'below':
+        return SearchModifierCode.below;
+      case 'above':
+        return SearchModifierCode.above;
+      case 'type':
+        return SearchModifierCode.type;
+      case 'identifier':
+        return SearchModifierCode.identifier;
+      case 'of-type':
+        return SearchModifierCode.oftype;
+      case 'code-text':
+        return SearchModifierCode.codetext;
+      case 'text-advanced':
+        return SearchModifierCode.textadvanced;
+      case 'iterate':
+        return SearchModifierCode.iterate;
+
+      default:
+        return null;
+    }
+  }
+
+  static SearchModifierCode? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case SearchModifierCode.missing:
+        return 'missing';
+      case SearchModifierCode.exact:
+        return 'exact';
+      case SearchModifierCode.contains:
+        return 'contains';
+      case SearchModifierCode.not:
+        return 'not';
+      case SearchModifierCode.text:
+        return 'text';
+      case SearchModifierCode.in_:
+        return 'in';
+      case SearchModifierCode.notin:
+        return 'not-in';
+      case SearchModifierCode.below:
+        return 'below';
+      case SearchModifierCode.above:
+        return 'above';
+      case SearchModifierCode.type:
+        return 'type';
+      case SearchModifierCode.identifier:
+        return 'identifier';
+      case SearchModifierCode.oftype:
+        return 'of-type';
+      case SearchModifierCode.codetext:
+        return 'code-text';
+      case SearchModifierCode.textadvanced:
+        return 'text-advanced';
+      case SearchModifierCode.iterate:
+        return 'iterate';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum PublicationStatus {
@@ -448,7 +1592,46 @@ enum PublicationStatus {
   @JsonValue('retired')
   retired,
   @JsonValue('unknown')
-  unknown,
+  unknown;
+
+  static PublicationStatus? fromString(String string) {
+    switch (string) {
+      case 'draft':
+        return PublicationStatus.draft;
+      case 'active':
+        return PublicationStatus.active;
+      case 'retired':
+        return PublicationStatus.retired;
+      case 'unknown':
+        return PublicationStatus.unknown;
+
+      default:
+        return null;
+    }
+  }
+
+  static PublicationStatus? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case PublicationStatus.draft:
+        return 'draft';
+      case PublicationStatus.active:
+        return 'active';
+      case PublicationStatus.retired:
+        return 'retired';
+      case PublicationStatus.unknown:
+        return 'unknown';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum CapabilityStatementKind {
@@ -457,7 +1640,42 @@ enum CapabilityStatementKind {
   @JsonValue('capability')
   capability,
   @JsonValue('requirements')
-  requirements,
+  requirements;
+
+  static CapabilityStatementKind? fromString(String string) {
+    switch (string) {
+      case 'instance':
+        return CapabilityStatementKind.instance;
+      case 'capability':
+        return CapabilityStatementKind.capability;
+      case 'requirements':
+        return CapabilityStatementKind.requirements;
+
+      default:
+        return null;
+    }
+  }
+
+  static CapabilityStatementKind? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case CapabilityStatementKind.instance:
+        return 'instance';
+      case CapabilityStatementKind.capability:
+        return 'capability';
+      case CapabilityStatementKind.requirements:
+        return 'requirements';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum VersionAlgorithm {
@@ -470,7 +1688,50 @@ enum VersionAlgorithm {
   @JsonValue('date')
   date,
   @JsonValue('natural')
-  natural,
+  natural;
+
+  static VersionAlgorithm? fromString(String string) {
+    switch (string) {
+      case 'semver':
+        return VersionAlgorithm.semver;
+      case 'integer':
+        return VersionAlgorithm.integer;
+      case 'alpha':
+        return VersionAlgorithm.alpha;
+      case 'date':
+        return VersionAlgorithm.date;
+      case 'natural':
+        return VersionAlgorithm.natural;
+
+      default:
+        return null;
+    }
+  }
+
+  static VersionAlgorithm? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case VersionAlgorithm.semver:
+        return 'semver';
+      case VersionAlgorithm.integer:
+        return 'integer';
+      case VersionAlgorithm.alpha:
+        return 'alpha';
+      case VersionAlgorithm.date:
+        return 'date';
+      case VersionAlgorithm.natural:
+        return 'natural';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum TitleType {
@@ -499,7 +1760,82 @@ enum TitleType {
   @JsonValue('machine-use')
   machineuse,
   @JsonValue('duplicate-uid')
-  duplicateuid,
+  duplicateuid;
+
+  static TitleType? fromString(String string) {
+    switch (string) {
+      case 'primary':
+        return TitleType.primary;
+      case 'official':
+        return TitleType.official;
+      case 'scientific':
+        return TitleType.scientific;
+      case 'plain-language':
+        return TitleType.plainlanguage;
+      case 'subtitle':
+        return TitleType.subtitle;
+      case 'short-title':
+        return TitleType.shorttitle;
+      case 'acronym':
+        return TitleType.acronym;
+      case 'earlier-title':
+        return TitleType.earliertitle;
+      case 'language':
+        return TitleType.language;
+      case 'autotranslated':
+        return TitleType.autotranslated;
+      case 'human-use':
+        return TitleType.humanuse;
+      case 'machine-use':
+        return TitleType.machineuse;
+      case 'duplicate-uid':
+        return TitleType.duplicateuid;
+
+      default:
+        return null;
+    }
+  }
+
+  static TitleType? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case TitleType.primary:
+        return 'primary';
+      case TitleType.official:
+        return 'official';
+      case TitleType.scientific:
+        return 'scientific';
+      case TitleType.plainlanguage:
+        return 'plain-language';
+      case TitleType.subtitle:
+        return 'subtitle';
+      case TitleType.shorttitle:
+        return 'short-title';
+      case TitleType.acronym:
+        return 'acronym';
+      case TitleType.earliertitle:
+        return 'earlier-title';
+      case TitleType.language:
+        return 'language';
+      case TitleType.autotranslated:
+        return 'autotranslated';
+      case TitleType.humanuse:
+        return 'human-use';
+      case TitleType.machineuse:
+        return 'machine-use';
+      case TitleType.duplicateuid:
+        return 'duplicate-uid';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum StudyDesign {
@@ -552,7 +1888,130 @@ enum StudyDesign {
   @JsonValue('SEVCO:01085')
   sevco_01085,
   @JsonValue('SEVCO:01089')
-  sevco_01089,
+  sevco_01089;
+
+  static StudyDesign? fromString(String string) {
+    switch (string) {
+      case 'SEVCO:01001':
+        return StudyDesign.sevco_01001;
+      case 'SEVCO:01002':
+        return StudyDesign.sevco_01002;
+      case 'SEVCO:01010':
+        return StudyDesign.sevco_01010;
+      case 'SEVCO:01023':
+        return StudyDesign.sevco_01023;
+      case 'SEVCO:01022':
+        return StudyDesign.sevco_01022;
+      case 'SEVCO:01027':
+        return StudyDesign.sevco_01027;
+      case 'SEVCO:01028':
+        return StudyDesign.sevco_01028;
+      case 'SEVCO:01045':
+        return StudyDesign.sevco_01045;
+      case 'SEVCO:01026':
+        return StudyDesign.sevco_01026;
+      case 'SEVCO:01049':
+        return StudyDesign.sevco_01049;
+      case 'SEVCO:01042':
+        return StudyDesign.sevco_01042;
+      case 'SEVCO:01051':
+        return StudyDesign.sevco_01051;
+      case 'SEVCO:01086':
+        return StudyDesign.sevco_01086;
+      case 'SEVCO:01087':
+        return StudyDesign.sevco_01087;
+      case 'SEVCO:01060':
+        return StudyDesign.sevco_01060;
+      case 'SEVCO:01061':
+        return StudyDesign.sevco_01061;
+      case 'SEVCO:01062':
+        return StudyDesign.sevco_01062;
+      case 'SEVCO:01063':
+        return StudyDesign.sevco_01063;
+      case 'SEVCO:01064':
+        return StudyDesign.sevco_01064;
+      case 'SEVCO:01043':
+        return StudyDesign.sevco_01043;
+      case 'SEVCO:01052':
+        return StudyDesign.sevco_01052;
+      case 'SEVCO:01053':
+        return StudyDesign.sevco_01053;
+      case 'SEVCO:01054':
+        return StudyDesign.sevco_01054;
+      case 'SEVCO:01085':
+        return StudyDesign.sevco_01085;
+      case 'SEVCO:01089':
+        return StudyDesign.sevco_01089;
+
+      default:
+        return null;
+    }
+  }
+
+  static StudyDesign? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case StudyDesign.sevco_01001:
+        return 'SEVCO:01001';
+      case StudyDesign.sevco_01002:
+        return 'SEVCO:01002';
+      case StudyDesign.sevco_01010:
+        return 'SEVCO:01010';
+      case StudyDesign.sevco_01023:
+        return 'SEVCO:01023';
+      case StudyDesign.sevco_01022:
+        return 'SEVCO:01022';
+      case StudyDesign.sevco_01027:
+        return 'SEVCO:01027';
+      case StudyDesign.sevco_01028:
+        return 'SEVCO:01028';
+      case StudyDesign.sevco_01045:
+        return 'SEVCO:01045';
+      case StudyDesign.sevco_01026:
+        return 'SEVCO:01026';
+      case StudyDesign.sevco_01049:
+        return 'SEVCO:01049';
+      case StudyDesign.sevco_01042:
+        return 'SEVCO:01042';
+      case StudyDesign.sevco_01051:
+        return 'SEVCO:01051';
+      case StudyDesign.sevco_01086:
+        return 'SEVCO:01086';
+      case StudyDesign.sevco_01087:
+        return 'SEVCO:01087';
+      case StudyDesign.sevco_01060:
+        return 'SEVCO:01060';
+      case StudyDesign.sevco_01061:
+        return 'SEVCO:01061';
+      case StudyDesign.sevco_01062:
+        return 'SEVCO:01062';
+      case StudyDesign.sevco_01063:
+        return 'SEVCO:01063';
+      case StudyDesign.sevco_01064:
+        return 'SEVCO:01064';
+      case StudyDesign.sevco_01043:
+        return 'SEVCO:01043';
+      case StudyDesign.sevco_01052:
+        return 'SEVCO:01052';
+      case StudyDesign.sevco_01053:
+        return 'SEVCO:01053';
+      case StudyDesign.sevco_01054:
+        return 'SEVCO:01054';
+      case StudyDesign.sevco_01085:
+        return 'SEVCO:01085';
+      case StudyDesign.sevco_01089:
+        return 'SEVCO:01089';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum AdministrativeGender {
@@ -608,7 +2067,38 @@ enum EncounterDiagnosisUse {
   @JsonValue('working')
   working,
   @JsonValue('final')
-  final_,
+  final_;
+
+  static EncounterDiagnosisUse? fromString(String string) {
+    switch (string) {
+      case 'working':
+        return EncounterDiagnosisUse.working;
+      case 'final':
+        return EncounterDiagnosisUse.final_;
+
+      default:
+        return null;
+    }
+  }
+
+  static EncounterDiagnosisUse? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case EncounterDiagnosisUse.working:
+        return 'working';
+      case EncounterDiagnosisUse.final_:
+        return 'final';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ActionParticipantType {
@@ -631,7 +2121,70 @@ enum ActionParticipantType {
   @JsonValue('practitionerrole')
   practitionerrole,
   @JsonValue('relatedperson')
-  relatedperson,
+  relatedperson;
+
+  static ActionParticipantType? fromString(String string) {
+    switch (string) {
+      case 'careteam':
+        return ActionParticipantType.careteam;
+      case 'device':
+        return ActionParticipantType.device;
+      case 'group':
+        return ActionParticipantType.group;
+      case 'healthcareservice':
+        return ActionParticipantType.healthcareservice;
+      case 'location':
+        return ActionParticipantType.location;
+      case 'organization':
+        return ActionParticipantType.organization;
+      case 'patient':
+        return ActionParticipantType.patient;
+      case 'practitioner':
+        return ActionParticipantType.practitioner;
+      case 'practitionerrole':
+        return ActionParticipantType.practitionerrole;
+      case 'relatedperson':
+        return ActionParticipantType.relatedperson;
+
+      default:
+        return null;
+    }
+  }
+
+  static ActionParticipantType? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ActionParticipantType.careteam:
+        return 'careteam';
+      case ActionParticipantType.device:
+        return 'device';
+      case ActionParticipantType.group:
+        return 'group';
+      case ActionParticipantType.healthcareservice:
+        return 'healthcareservice';
+      case ActionParticipantType.location:
+        return 'location';
+      case ActionParticipantType.organization:
+        return 'organization';
+      case ActionParticipantType.patient:
+        return 'patient';
+      case ActionParticipantType.practitioner:
+        return 'practitioner';
+      case ActionParticipantType.practitionerrole:
+        return 'practitionerrole';
+      case ActionParticipantType.relatedperson:
+        return 'relatedperson';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ActionParticipantFunction {
@@ -642,7 +2195,46 @@ enum ActionParticipantFunction {
   @JsonValue('reviewer')
   reviewer,
   @JsonValue('witness')
-  witness,
+  witness;
+
+  static ActionParticipantFunction? fromString(String string) {
+    switch (string) {
+      case 'performer':
+        return ActionParticipantFunction.performer;
+      case 'author':
+        return ActionParticipantFunction.author;
+      case 'reviewer':
+        return ActionParticipantFunction.reviewer;
+      case 'witness':
+        return ActionParticipantFunction.witness;
+
+      default:
+        return null;
+    }
+  }
+
+  static ActionParticipantFunction? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ActionParticipantFunction.performer:
+        return 'performer';
+      case ActionParticipantFunction.author:
+        return 'author';
+      case ActionParticipantFunction.reviewer:
+        return 'reviewer';
+      case ActionParticipantFunction.witness:
+        return 'witness';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum DeviceNameType {
@@ -651,7 +2243,42 @@ enum DeviceNameType {
   @JsonValue('user-friendly-name')
   userfriendlyname,
   @JsonValue('patient-reported-name')
-  patientreportedname,
+  patientreportedname;
+
+  static DeviceNameType? fromString(String string) {
+    switch (string) {
+      case 'registered-name':
+        return DeviceNameType.registeredname;
+      case 'user-friendly-name':
+        return DeviceNameType.userfriendlyname;
+      case 'patient-reported-name':
+        return DeviceNameType.patientreportedname;
+
+      default:
+        return null;
+    }
+  }
+
+  static DeviceNameType? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case DeviceNameType.registeredname:
+        return 'registered-name';
+      case DeviceNameType.userfriendlyname:
+        return 'user-friendly-name';
+      case DeviceNameType.patientreportedname:
+        return 'patient-reported-name';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum DeviceSpecificationCategory {
@@ -668,7 +2295,58 @@ enum DeviceSpecificationCategory {
   @JsonValue('material')
   material,
   @JsonValue('exchange')
-  exchange,
+  exchange;
+
+  static DeviceSpecificationCategory? fromString(String string) {
+    switch (string) {
+      case 'communication':
+        return DeviceSpecificationCategory.communication;
+      case 'performance':
+        return DeviceSpecificationCategory.performance;
+      case 'measurement':
+        return DeviceSpecificationCategory.measurement;
+      case 'risk-class':
+        return DeviceSpecificationCategory.riskclass;
+      case 'electrical':
+        return DeviceSpecificationCategory.electrical;
+      case 'material':
+        return DeviceSpecificationCategory.material;
+      case 'exchange':
+        return DeviceSpecificationCategory.exchange;
+
+      default:
+        return null;
+    }
+  }
+
+  static DeviceSpecificationCategory? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case DeviceSpecificationCategory.communication:
+        return 'communication';
+      case DeviceSpecificationCategory.performance:
+        return 'performance';
+      case DeviceSpecificationCategory.measurement:
+        return 'measurement';
+      case DeviceSpecificationCategory.riskclass:
+        return 'risk-class';
+      case DeviceSpecificationCategory.electrical:
+        return 'electrical';
+      case DeviceSpecificationCategory.material:
+        return 'material';
+      case DeviceSpecificationCategory.exchange:
+        return 'exchange';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ActionCode {
@@ -689,7 +2367,66 @@ enum ActionCode {
   @JsonValue('record-inference')
   recordinference,
   @JsonValue('report-flag')
-  reportflag,
+  reportflag;
+
+  static ActionCode? fromString(String string) {
+    switch (string) {
+      case 'send-message':
+        return ActionCode.sendmessage;
+      case 'collect-information':
+        return ActionCode.collectinformation;
+      case 'prescribe-medication':
+        return ActionCode.prescribemedication;
+      case 'recommend-immunization':
+        return ActionCode.recommendimmunization;
+      case 'order-service':
+        return ActionCode.orderservice;
+      case 'propose-diagnosis':
+        return ActionCode.proposediagnosis;
+      case 'record-detected-issue':
+        return ActionCode.recorddetectedissue;
+      case 'record-inference':
+        return ActionCode.recordinference;
+      case 'report-flag':
+        return ActionCode.reportflag;
+
+      default:
+        return null;
+    }
+  }
+
+  static ActionCode? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ActionCode.sendmessage:
+        return 'send-message';
+      case ActionCode.collectinformation:
+        return 'collect-information';
+      case ActionCode.prescribemedication:
+        return 'prescribe-medication';
+      case ActionCode.recommendimmunization:
+        return 'recommend-immunization';
+      case ActionCode.orderservice:
+        return 'order-service';
+      case ActionCode.proposediagnosis:
+        return 'propose-diagnosis';
+      case ActionCode.recorddetectedissue:
+        return 'record-detected-issue';
+      case ActionCode.recordinference:
+        return 'record-inference';
+      case ActionCode.reportflag:
+        return 'report-flag';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ActionReasonCode {
@@ -702,7 +2439,50 @@ enum ActionReasonCode {
   @JsonValue('drug-drug-interaction')
   drugdruginteraction,
   @JsonValue('quality-measure')
-  qualitymeasure,
+  qualitymeasure;
+
+  static ActionReasonCode? fromString(String string) {
+    switch (string) {
+      case 'off-pathway':
+        return ActionReasonCode.offpathway;
+      case 'risk-assessment':
+        return ActionReasonCode.riskassessment;
+      case 'care-gap':
+        return ActionReasonCode.caregap;
+      case 'drug-drug-interaction':
+        return ActionReasonCode.drugdruginteraction;
+      case 'quality-measure':
+        return ActionReasonCode.qualitymeasure;
+
+      default:
+        return null;
+    }
+  }
+
+  static ActionReasonCode? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ActionReasonCode.offpathway:
+        return 'off-pathway';
+      case ActionReasonCode.riskassessment:
+        return 'risk-assessment';
+      case ActionReasonCode.caregap:
+        return 'care-gap';
+      case ActionReasonCode.drugdruginteraction:
+        return 'drug-drug-interaction';
+      case ActionReasonCode.qualitymeasure:
+        return 'quality-measure';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ActionConditionKind {
@@ -711,7 +2491,42 @@ enum ActionConditionKind {
   @JsonValue('start')
   start,
   @JsonValue('stop')
-  stop,
+  stop;
+
+  static ActionConditionKind? fromString(String string) {
+    switch (string) {
+      case 'applicability':
+        return ActionConditionKind.applicability;
+      case 'start':
+        return ActionConditionKind.start;
+      case 'stop':
+        return ActionConditionKind.stop;
+
+      default:
+        return null;
+    }
+  }
+
+  static ActionConditionKind? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ActionConditionKind.applicability:
+        return 'applicability';
+      case ActionConditionKind.start:
+        return 'start';
+      case ActionConditionKind.stop:
+        return 'stop';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ActionRelationshipType {
@@ -720,7 +2535,42 @@ enum ActionRelationshipType {
   @JsonValue('concurrent')
   concurrent,
   @JsonValue('after')
-  after,
+  after;
+
+  static ActionRelationshipType? fromString(String string) {
+    switch (string) {
+      case 'before':
+        return ActionRelationshipType.before;
+      case 'concurrent':
+        return ActionRelationshipType.concurrent;
+      case 'after':
+        return ActionRelationshipType.after;
+
+      default:
+        return null;
+    }
+  }
+
+  static ActionRelationshipType? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ActionRelationshipType.before:
+        return 'before';
+      case ActionRelationshipType.concurrent:
+        return 'concurrent';
+      case ActionRelationshipType.after:
+        return 'after';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ActionGroupingBehavior {
@@ -729,7 +2579,42 @@ enum ActionGroupingBehavior {
   @JsonValue('logical-group')
   logicalgroup,
   @JsonValue('sentence-group')
-  sentencegroup,
+  sentencegroup;
+
+  static ActionGroupingBehavior? fromString(String string) {
+    switch (string) {
+      case 'visual-group':
+        return ActionGroupingBehavior.visualgroup;
+      case 'logical-group':
+        return ActionGroupingBehavior.logicalgroup;
+      case 'sentence-group':
+        return ActionGroupingBehavior.sentencegroup;
+
+      default:
+        return null;
+    }
+  }
+
+  static ActionGroupingBehavior? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ActionGroupingBehavior.visualgroup:
+        return 'visual-group';
+      case ActionGroupingBehavior.logicalgroup:
+        return 'logical-group';
+      case ActionGroupingBehavior.sentencegroup:
+        return 'sentence-group';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ActionSelectionBehavior {
@@ -744,7 +2629,54 @@ enum ActionSelectionBehavior {
   @JsonValue('at-most-one')
   atmostone,
   @JsonValue('one-or-more')
-  oneormore,
+  oneormore;
+
+  static ActionSelectionBehavior? fromString(String string) {
+    switch (string) {
+      case 'any':
+        return ActionSelectionBehavior.any;
+      case 'all':
+        return ActionSelectionBehavior.all;
+      case 'all-or-none':
+        return ActionSelectionBehavior.allornone;
+      case 'exactly-one':
+        return ActionSelectionBehavior.exactlyone;
+      case 'at-most-one':
+        return ActionSelectionBehavior.atmostone;
+      case 'one-or-more':
+        return ActionSelectionBehavior.oneormore;
+
+      default:
+        return null;
+    }
+  }
+
+  static ActionSelectionBehavior? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ActionSelectionBehavior.any:
+        return 'any';
+      case ActionSelectionBehavior.all:
+        return 'all';
+      case ActionSelectionBehavior.allornone:
+        return 'all-or-none';
+      case ActionSelectionBehavior.exactlyone:
+        return 'exactly-one';
+      case ActionSelectionBehavior.atmostone:
+        return 'at-most-one';
+      case ActionSelectionBehavior.oneormore:
+        return 'one-or-more';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ActionRequiredBehavior {
@@ -753,21 +2685,118 @@ enum ActionRequiredBehavior {
   @JsonValue('could')
   could,
   @JsonValue('must-unless-documented')
-  mustunlessdocumented,
+  mustunlessdocumented;
+
+  static ActionRequiredBehavior? fromString(String string) {
+    switch (string) {
+      case 'must':
+        return ActionRequiredBehavior.must;
+      case 'could':
+        return ActionRequiredBehavior.could;
+      case 'must-unless-documented':
+        return ActionRequiredBehavior.mustunlessdocumented;
+
+      default:
+        return null;
+    }
+  }
+
+  static ActionRequiredBehavior? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ActionRequiredBehavior.must:
+        return 'must';
+      case ActionRequiredBehavior.could:
+        return 'could';
+      case ActionRequiredBehavior.mustunlessdocumented:
+        return 'must-unless-documented';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ActionPrecheckBehavior {
   @JsonValue('yes')
   yes,
   @JsonValue('no')
-  no,
+  no;
+
+  static ActionPrecheckBehavior? fromString(String string) {
+    switch (string) {
+      case 'yes':
+        return ActionPrecheckBehavior.yes;
+      case 'no':
+        return ActionPrecheckBehavior.no;
+
+      default:
+        return null;
+    }
+  }
+
+  static ActionPrecheckBehavior? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ActionPrecheckBehavior.yes:
+        return 'yes';
+      case ActionPrecheckBehavior.no:
+        return 'no';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ActionCardinalityBehavior {
   @JsonValue('single')
   single,
   @JsonValue('multiple')
-  multiple,
+  multiple;
+
+  static ActionCardinalityBehavior? fromString(String string) {
+    switch (string) {
+      case 'single':
+        return ActionCardinalityBehavior.single;
+      case 'multiple':
+        return ActionCardinalityBehavior.multiple;
+
+      default:
+        return null;
+    }
+  }
+
+  static ActionCardinalityBehavior? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ActionCardinalityBehavior.single:
+        return 'single';
+      case ActionCardinalityBehavior.multiple:
+        return 'multiple';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ListMode {
@@ -776,12 +2805,74 @@ enum ListMode {
   @JsonValue('snapshot')
   snapshot,
   @JsonValue('changes')
-  changes,
+  changes;
+
+  static ListMode? fromString(String string) {
+    switch (string) {
+      case 'working':
+        return ListMode.working;
+      case 'snapshot':
+        return ListMode.snapshot;
+      case 'changes':
+        return ListMode.changes;
+
+      default:
+        return null;
+    }
+  }
+
+  static ListMode? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ListMode.working:
+        return 'working';
+      case ListMode.snapshot:
+        return 'snapshot';
+      case ListMode.changes:
+        return 'changes';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum FhirTypes {
   @JsonValue('Base')
-  base,
+  base;
+
+  static FhirTypes? fromString(String string) {
+    switch (string) {
+      case 'Base':
+        return FhirTypes.base;
+
+      default:
+        return null;
+    }
+  }
+
+  static FhirTypes? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case FhirTypes.base:
+        return 'Base';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum ProductStatus {
@@ -790,5 +2881,40 @@ enum ProductStatus {
   @JsonValue('inactive')
   inactive,
   @JsonValue('entered-in-error')
-  enteredinerror,
+  enteredinerror;
+
+  static ProductStatus? fromString(String string) {
+    switch (string) {
+      case 'active':
+        return ProductStatus.active;
+      case 'inactive':
+        return ProductStatus.inactive;
+      case 'entered-in-error':
+        return ProductStatus.enteredinerror;
+
+      default:
+        return null;
+    }
+  }
+
+  static ProductStatus? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case ProductStatus.active:
+        return 'active';
+      case ProductStatus.inactive:
+        return 'inactive';
+      case ProductStatus.enteredinerror:
+        return 'entered-in-error';
+    }
+  }
+
+  String toJson() => toString();
 }
