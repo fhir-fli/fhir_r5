@@ -563,7 +563,45 @@ enum AdministrativeGender {
   @JsonValue('other')
   other,
   @JsonValue('unknown')
-  unknown,
+  unknown;
+
+  static AdministrativeGender? fromString(String string) {
+    switch (string) {
+      case 'male':
+        return AdministrativeGender.male;
+      case 'female':
+        return AdministrativeGender.female;
+      case 'other':
+        return AdministrativeGender.other;
+      case 'unknown':
+        return AdministrativeGender.unknown;
+      default:
+        return null;
+    }
+  }
+
+  static AdministrativeGender? fromJson(dynamic json) {
+    if (json is String) {
+      return fromString(json);
+    }
+    return null;
+  }
+
+  @override
+  String toString() {
+    switch (this) {
+      case AdministrativeGender.male:
+        return 'male';
+      case AdministrativeGender.female:
+        return 'female';
+      case AdministrativeGender.other:
+        return 'other';
+      case AdministrativeGender.unknown:
+        return 'unknown';
+    }
+  }
+
+  String toJson() => toString();
 }
 
 enum EncounterDiagnosisUse {
