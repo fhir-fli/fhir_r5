@@ -21,24 +21,27 @@ String transformEnums(String content) {
   List<String> jsonValues = <String>[];
 
   for (int i = 0; i < lines.length; i++) {
-    if (lines[i].contains('enum ')) {
+    if (lines[i].contains('enum ') && !lines[i].trim().startsWith('//')) {
       enumName = lines[i].split(' ')[1].trim().replaceAll('{', '');
       enumValues = <String>[];
       jsonValues = <String>[];
     }
-    if (lines[i].contains("'")) {
+    if (lines[i].contains("'") && !lines[i].trim().startsWith('//')) {
       final RegExpMatch? match = regExp.firstMatch(lines[i]);
       if (match != null) {
         jsonValues.add(match.group(1)!);
       }
     }
-    if (lines[i].contains(',') && !lines[i].contains("'")) {
+    if (lines[i].contains(',') &&
+        !lines[i].contains("'") &&
+        !lines[i].trim().startsWith('//')) {
       enumValues.add(lines[i].split(',')[0].trim());
     }
     if (lines[i].contains('}') &&
         enumName != null &&
         enumValues.isNotEmpty &&
-        jsonValues.isNotEmpty) {
+        jsonValues.isNotEmpty &&
+        !lines[i].trim().startsWith('//')) {
       // Build methods
       String fromStringCases = '';
       String toStringCases = '';
