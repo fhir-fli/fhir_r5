@@ -485,7 +485,7 @@ Map<String, dynamic> _$$CareTeamImplToJson(_$CareTeamImpl instance) {
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   writeNotNull(
       'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$CareTeamStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
   writeNotNull('name', instance.name);
@@ -3339,7 +3339,7 @@ Map<String, dynamic> _$$VisionPrescriptionLensSpecificationImplToJson(
   writeNotNull('modifierExtension',
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   val['product'] = instance.product.toJson();
-  writeNotNull('eye', _$VisionEyeCodesEnumMap[instance.eye]);
+  writeNotNull('eye', instance.eye?.toJson());
   writeNotNull('_eye', instance.eyeElement?.toJson());
   writeNotNull('sphere', instance.sphere?.toJson());
   writeNotNull('_sphere', instance.sphereElement?.toJson());
@@ -3408,7 +3408,7 @@ Map<String, dynamic> _$$VisionPrescriptionPrismImplToJson(
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   writeNotNull('amount', instance.amount?.toJson());
   writeNotNull('_amount', instance.amountElement?.toJson());
-  writeNotNull('base', _$VisionBaseCodesEnumMap[instance.base]);
+  writeNotNull('base', instance.base?.toJson());
   writeNotNull('_base', instance.baseElement?.toJson());
   return val;
 }

@@ -383,7 +383,7 @@ Map<String, dynamic> _$$ContributorImplToJson(_$ContributorImpl instance) {
   writeNotNull('id', instance.id);
   writeNotNull(
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('type', _$ContributorTypeEnumMap[instance.type]);
+  writeNotNull('type', instance.type?.toJson());
   writeNotNull('_type', instance.typeElement?.toJson());
   writeNotNull('name', instance.name);
   writeNotNull('_name', instance.nameElement?.toJson());
@@ -697,8 +697,7 @@ Map<String, dynamic> _$$DataRequirementSortImplToJson(
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   writeNotNull('path', instance.path);
   writeNotNull('_path', instance.pathElement?.toJson());
-  writeNotNull(
-      'direction', _$DataRequirementSortDirectionEnumMap[instance.direction]);
+  writeNotNull('direction', instance.direction?.toJson());
   writeNotNull('_direction', instance.directionElement?.toJson());
   return val;
 }
@@ -839,7 +838,7 @@ Map<String, dynamic> _$$RelatedArtifactImplToJson(
   writeNotNull('id', instance.id);
   writeNotNull(
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('type', _$RelatedArtifactTypeEnumMap[instance.type]);
+  writeNotNull('type', instance.type?.toJson());
   writeNotNull('_type', instance.typeElement?.toJson());
   writeNotNull(
       'classifier', instance.classifier?.map((e) => e.toJson()).toList());
@@ -955,7 +954,7 @@ Map<String, dynamic> _$$TriggerDefinitionImplToJson(
   writeNotNull('id', instance.id);
   writeNotNull(
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('type', _$TriggerDefinitionTypeEnumMap[instance.type]);
+  writeNotNull('type', instance.type?.toJson());
   writeNotNull('_type', instance.typeElement?.toJson());
   writeNotNull('name', instance.name);
   writeNotNull('_name', instance.nameElement?.toJson());

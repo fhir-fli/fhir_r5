@@ -563,7 +563,7 @@ Map<String, dynamic> _$$DiagnosticReportImplToJson(
   writeNotNull(
       'identifier', instance.identifier?.map((e) => e.toJson()).toList());
   writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$DiagnosticReportStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
   val['code'] = instance.code.toJson();
@@ -1232,7 +1232,7 @@ Map<String, dynamic> _$$ImagingSelectionImplToJson(
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   writeNotNull(
       'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$ImagingSelectionStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('subject', instance.subject?.toJson());
   writeNotNull('issued', instance.issued?.toJson());
@@ -2447,7 +2447,7 @@ Map<String, dynamic> _$$ObservationTriggeredByImplToJson(
   writeNotNull('modifierExtension',
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   val['observation'] = instance.observation.toJson();
-  writeNotNull('type', _$ObservationTriggeredByTypeEnumMap[instance.type]);
+  writeNotNull('type', instance.type?.toJson());
   writeNotNull('_type', instance.typeElement?.toJson());
   writeNotNull('reason', instance.reason);
   writeNotNull('_reason', instance.reasonElement?.toJson());
@@ -3052,7 +3052,7 @@ Map<String, dynamic> _$$SpecimenImplToJson(_$SpecimenImpl instance) {
   writeNotNull(
       'identifier', instance.identifier?.map((e) => e.toJson()).toList());
   writeNotNull('accessionIdentifier', instance.accessionIdentifier?.toJson());
-  writeNotNull('status', _$SpecimenStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('type', instance.type?.toJson());
   writeNotNull('subject', instance.subject?.toJson());
@@ -3060,7 +3060,7 @@ Map<String, dynamic> _$$SpecimenImplToJson(_$SpecimenImpl instance) {
   writeNotNull('_receivedTime', instance.receivedTimeElement?.toJson());
   writeNotNull('parent', instance.parent?.map((e) => e.toJson()).toList());
   writeNotNull('request', instance.request?.map((e) => e.toJson()).toList());
-  writeNotNull('combined', _$SpecimenCombinedEnumMap[instance.combined]);
+  writeNotNull('combined', instance.combined?.toJson());
   writeNotNull('_combined', instance.combinedElement?.toJson());
   writeNotNull('role', instance.role?.map((e) => e.toJson()).toList());
   writeNotNull('feature', instance.feature?.map((e) => e.toJson()).toList());

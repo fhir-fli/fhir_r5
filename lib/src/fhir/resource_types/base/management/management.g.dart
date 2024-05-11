@@ -160,7 +160,7 @@ Map<String, dynamic> _$$EncounterImplToJson(_$EncounterImpl instance) {
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   writeNotNull(
       'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$EncounterStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('class', instance.class_?.map((e) => e.toJson()).toList());
   writeNotNull('priority', instance.priority?.toJson());
@@ -595,7 +595,7 @@ Map<String, dynamic> _$$EncounterLocationImplToJson(
   writeNotNull('modifierExtension',
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   val['location'] = instance.location.toJson();
-  writeNotNull('status', _$EncounterLocationStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('form', instance.form?.toJson());
   writeNotNull('period', instance.period?.toJson());
@@ -719,7 +719,7 @@ Map<String, dynamic> _$$EncounterHistoryImplToJson(
   writeNotNull('encounter', instance.encounter?.toJson());
   writeNotNull(
       'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$EncounterStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   val['class'] = instance.class_.toJson();
   writeNotNull('type', instance.type?.map((e) => e.toJson()).toList());
@@ -875,7 +875,7 @@ Map<String, dynamic> _$$EpisodeOfCareImplToJson(_$EpisodeOfCareImpl instance) {
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   writeNotNull(
       'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$EpisodeOfCareStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull(
       'statusHistory', instance.statusHistory?.map((e) => e.toJson()).toList());
@@ -936,7 +936,7 @@ Map<String, dynamic> _$$EpisodeOfCareStatusHistoryImplToJson(
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
   writeNotNull('modifierExtension',
       instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$EpisodeOfCareStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   val['period'] = instance.period.toJson();
   return val;
@@ -1100,7 +1100,7 @@ Map<String, dynamic> _$$FlagImplToJson(_$FlagImpl instance) {
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   writeNotNull(
       'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$FlagStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
   val['code'] = instance.code.toJson();
@@ -1330,7 +1330,7 @@ Map<String, dynamic> _$$LibraryImplToJson(_$LibraryImpl instance) {
   writeNotNull('_name', instance.nameElement?.toJson());
   writeNotNull('title', instance.title);
   writeNotNull('_title', instance.titleElement?.toJson());
-  writeNotNull('status', _$PublicationStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('experimental', instance.experimental?.toJson());
   writeNotNull('_experimental', instance.experimentalElement?.toJson());
@@ -1493,9 +1493,9 @@ Map<String, dynamic> _$$FhirListImplToJson(_$FhirListImpl instance) {
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   writeNotNull(
       'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$ListStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('mode', _$ListModeEnumMap[instance.mode]);
+  writeNotNull('mode', instance.mode?.toJson());
   writeNotNull('_mode', instance.modeElement?.toJson());
   writeNotNull('title', instance.title);
   writeNotNull('_title', instance.titleElement?.toJson());

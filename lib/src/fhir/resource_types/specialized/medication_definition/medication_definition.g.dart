@@ -116,7 +116,7 @@ Map<String, dynamic> _$$AdministrableProductDefinitionImplToJson(
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   writeNotNull(
       'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$PublicationStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('formOf', instance.formOf?.map((e) => e.toJson()).toList());
   writeNotNull(

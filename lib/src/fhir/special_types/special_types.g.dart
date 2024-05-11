@@ -31,7 +31,7 @@ Map<String, dynamic> _$$NarrativeImplToJson(_$NarrativeImpl instance) {
   writeNotNull('id', instance.id);
   writeNotNull(
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$NarrativeStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   val['div'] = instance.div.toJson();
   return val;
@@ -1374,11 +1374,8 @@ Map<String, dynamic> _$$ElementDefinitionImplToJson(
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   writeNotNull('path', instance.path);
   writeNotNull('_path', instance.pathElement?.toJson());
-  writeNotNull(
-      'representation',
-      instance.representation
-          ?.map((e) => _$ElementDefinitionRepresentationEnumMap[e]!)
-          .toList());
+  writeNotNull('representation',
+      instance.representation?.map((e) => e.toJson()).toList());
   writeNotNull('_representation',
       instance.representationElement?.map((e) => e.toJson()).toList());
   writeNotNull('sliceName', instance.sliceName);
@@ -1818,7 +1815,7 @@ Map<String, dynamic> _$$ElementDefinitionSlicingImplToJson(
   writeNotNull('_description', instance.descriptionElement?.toJson());
   writeNotNull('ordered', instance.ordered?.toJson());
   writeNotNull('_ordered', instance.orderedElement?.toJson());
-  writeNotNull('rules', _$ElementDefinitionSlicingRulesEnumMap[instance.rules]);
+  writeNotNull('rules', instance.rules?.toJson());
   writeNotNull('_rules', instance.rulesElement?.toJson());
   return val;
 }
@@ -1865,8 +1862,7 @@ Map<String, dynamic> _$$ElementDefinitionDiscriminatorImplToJson(
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
   writeNotNull('modifierExtension',
       instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'type', _$ElementDefinitionDiscriminatorTypeEnumMap[instance.type]);
+  writeNotNull('type', instance.type?.toJson());
   writeNotNull('_type', instance.typeElement?.toJson());
   writeNotNull('path', instance.path);
   writeNotNull('_path', instance.pathElement?.toJson());
@@ -1986,12 +1982,10 @@ Map<String, dynamic> _$$ElementDefinitionTypeImplToJson(
       '_profile', instance.profileElement?.map((e) => e.toJson()).toList());
   writeNotNull(
       'targetProfile', instance.targetProfile?.map((e) => e.toJson()).toList());
-  writeNotNull('aggregation',
-      _$ElementDefinitionTypeAggregationEnumMap[instance.aggregation]);
+  writeNotNull('aggregation', instance.aggregation?.toJson());
   writeNotNull('_aggregation',
       instance.aggregationElement?.map((e) => e.toJson()).toList());
-  writeNotNull('versioning',
-      _$ElementDefinitionTypeVersioningEnumMap[instance.versioning]);
+  writeNotNull('versioning', instance.versioning?.toJson());
   writeNotNull('_versioning', instance.versioningElement?.toJson());
   return val;
 }
@@ -2420,8 +2414,7 @@ Map<String, dynamic> _$$ElementDefinitionConstraintImplToJson(
   writeNotNull('_key', instance.keyElement?.toJson());
   writeNotNull('requirements', instance.requirements?.toJson());
   writeNotNull('_requirements', instance.requirementsElement?.toJson());
-  writeNotNull('severity',
-      _$ElementDefinitionConstraintSeverityEnumMap[instance.severity]);
+  writeNotNull('severity', instance.severity?.toJson());
   writeNotNull('_severity', instance.severityElement?.toJson());
   writeNotNull('suppress', instance.suppress?.toJson());
   writeNotNull('_suppress', instance.suppressElement?.toJson());
@@ -2483,8 +2476,7 @@ Map<String, dynamic> _$$ElementDefinitionBindingImplToJson(
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
   writeNotNull('modifierExtension',
       instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'strength', _$ElementDefinitionBindingStrengthEnumMap[instance.strength]);
+  writeNotNull('strength', instance.strength?.toJson());
   writeNotNull('_strength', instance.strengthElement?.toJson());
   writeNotNull('description', instance.description?.toJson());
   writeNotNull('_description', instance.descriptionElement?.toJson());

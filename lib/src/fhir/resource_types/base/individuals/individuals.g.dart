@@ -114,10 +114,9 @@ Map<String, dynamic> _$$FhirGroupImplToJson(_$FhirGroupImpl instance) {
       'identifier', instance.identifier?.map((e) => e.toJson()).toList());
   writeNotNull('active', instance.active?.toJson());
   writeNotNull('_active', instance.activeElement?.toJson());
-  writeNotNull('type', _$GroupTypeEnumMap[instance.type]);
+  writeNotNull('type', instance.type?.toJson());
   writeNotNull('_type', instance.typeElement?.toJson());
-  writeNotNull(
-      'membership', _$GroupMembershipBasisEnumMap[instance.membership]);
+  writeNotNull('membership', instance.membership?.toJson());
   writeNotNull('_membership', instance.membershipElement?.toJson());
   writeNotNull('code', instance.code?.toJson());
   writeNotNull('name', instance.name);
@@ -567,7 +566,7 @@ Map<String, dynamic> _$$PatientImplToJson(_$PatientImpl instance) {
   writeNotNull('_active', instance.activeElement?.toJson());
   writeNotNull('name', instance.name?.map((e) => e.toJson()).toList());
   writeNotNull('telecom', instance.telecom?.map((e) => e.toJson()).toList());
-  writeNotNull('gender', _$AdministrativeGenderEnumMap[instance.gender]);
+  writeNotNull('gender', instance.gender?.toJson());
   writeNotNull('_gender', instance.genderElement?.toJson());
   writeNotNull('birthDate', instance.birthDate?.toJson());
   writeNotNull('_birthDate', instance.birthDateElement?.toJson());
@@ -655,7 +654,7 @@ Map<String, dynamic> _$$PatientContactImplToJson(
   writeNotNull('name', instance.name?.toJson());
   writeNotNull('telecom', instance.telecom?.map((e) => e.toJson()).toList());
   writeNotNull('address', instance.address?.toJson());
-  writeNotNull('gender', _$AdministrativeGenderEnumMap[instance.gender]);
+  writeNotNull('gender', instance.gender?.toJson());
   writeNotNull('_gender', instance.genderElement?.toJson());
   writeNotNull('organization', instance.organization?.toJson());
   writeNotNull('period', instance.period?.toJson());
@@ -734,7 +733,7 @@ Map<String, dynamic> _$$PatientLinkImplToJson(_$PatientLinkImpl instance) {
   writeNotNull('modifierExtension',
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   val['other'] = instance.other.toJson();
-  writeNotNull('type', _$LinkTypeEnumMap[instance.type]);
+  writeNotNull('type', instance.type?.toJson());
   writeNotNull('_type', instance.typeElement?.toJson());
   return val;
 }
@@ -867,7 +866,7 @@ Map<String, dynamic> _$$PersonImplToJson(_$PersonImpl instance) {
   writeNotNull('_active', instance.activeElement?.toJson());
   writeNotNull('name', instance.name?.map((e) => e.toJson()).toList());
   writeNotNull('telecom', instance.telecom?.map((e) => e.toJson()).toList());
-  writeNotNull('gender', _$AdministrativeGenderEnumMap[instance.gender]);
+  writeNotNull('gender', instance.gender?.toJson());
   writeNotNull('_gender', instance.genderElement?.toJson());
   writeNotNull('birthDate', instance.birthDate?.toJson());
   writeNotNull('_birthDate', instance.birthDateElement?.toJson());
@@ -958,8 +957,7 @@ Map<String, dynamic> _$$PersonLinkImplToJson(_$PersonLinkImpl instance) {
   writeNotNull('modifierExtension',
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   val['target'] = instance.target.toJson();
-  writeNotNull(
-      'assurance', _$IdentityAssuranceLevelEnumMap[instance.assurance]);
+  writeNotNull('assurance', instance.assurance?.toJson());
   writeNotNull('_assurance', instance.assuranceElement?.toJson());
   return val;
 }
@@ -1087,7 +1085,7 @@ Map<String, dynamic> _$$PractitionerImplToJson(_$PractitionerImpl instance) {
   writeNotNull('_active', instance.activeElement?.toJson());
   writeNotNull('name', instance.name?.map((e) => e.toJson()).toList());
   writeNotNull('telecom', instance.telecom?.map((e) => e.toJson()).toList());
-  writeNotNull('gender', _$AdministrativeGenderEnumMap[instance.gender]);
+  writeNotNull('gender', instance.gender?.toJson());
   writeNotNull('_gender', instance.genderElement?.toJson());
   writeNotNull('birthDate', instance.birthDate?.toJson());
   writeNotNull('_birthDate', instance.birthDateElement?.toJson());
@@ -1430,7 +1428,7 @@ Map<String, dynamic> _$$RelatedPersonImplToJson(_$RelatedPersonImpl instance) {
       'relationship', instance.relationship?.map((e) => e.toJson()).toList());
   writeNotNull('name', instance.name?.map((e) => e.toJson()).toList());
   writeNotNull('telecom', instance.telecom?.map((e) => e.toJson()).toList());
-  writeNotNull('gender', _$AdministrativeGenderEnumMap[instance.gender]);
+  writeNotNull('gender', instance.gender?.toJson());
   writeNotNull('_gender', instance.genderElement?.toJson());
   writeNotNull('birthDate', instance.birthDate?.toJson());
   writeNotNull('_birthDate', instance.birthDateElement?.toJson());

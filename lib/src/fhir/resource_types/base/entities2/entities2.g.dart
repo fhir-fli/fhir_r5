@@ -564,8 +564,7 @@ Map<String, dynamic> _$$BiologicallyDerivedProductDispenseImplToJson(
       'identifier', instance.identifier?.map((e) => e.toJson()).toList());
   writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
   writeNotNull('partOf', instance.partOf?.map((e) => e.toJson()).toList());
-  writeNotNull('status',
-      _$BiologicallyDerivedProductDispenseStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull(
       'originRelationshipType', instance.originRelationshipType?.toJson());
@@ -814,7 +813,7 @@ Map<String, dynamic> _$$DeviceImplToJson(_$DeviceImpl instance) {
   writeNotNull('definition', instance.definition?.toJson());
   writeNotNull(
       'udiCarrier', instance.udiCarrier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$DeviceStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('availabilityStatus', instance.availabilityStatus?.toJson());
   writeNotNull(
@@ -927,7 +926,7 @@ Map<String, dynamic> _$$DeviceUdiCarrierImplToJson(
   writeNotNull('_carrierAIDC', instance.carrierAIDCElement?.toJson());
   writeNotNull('carrierHRF', instance.carrierHRF);
   writeNotNull('_carrierHRF', instance.carrierHRFElement?.toJson());
-  writeNotNull('entryType', _$UdiEntryTypeEnumMap[instance.entryType]);
+  writeNotNull('entryType', instance.entryType?.toJson());
   writeNotNull('_entryType', instance.entryTypeElement?.toJson());
   return val;
 }
@@ -983,7 +982,7 @@ Map<String, dynamic> _$$DeviceNameImplToJson(_$DeviceNameImpl instance) {
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   writeNotNull('value', instance.value);
   writeNotNull('_value', instance.valueElement?.toJson());
-  writeNotNull('type', _$DeviceNameTypeEnumMap[instance.type]);
+  writeNotNull('type', instance.type?.toJson());
   writeNotNull('_type', instance.typeElement?.toJson());
   writeNotNull('display', instance.display?.toJson());
   writeNotNull('_display', instance.displayElement?.toJson());
@@ -1255,13 +1254,12 @@ Map<String, dynamic> _$$DeviceMetricImplToJson(_$DeviceMetricImpl instance) {
   val['type'] = instance.type.toJson();
   writeNotNull('unit', instance.unit?.toJson());
   val['device'] = instance.device.toJson();
-  writeNotNull('operationalStatus',
-      _$DeviceMetricOperationalStatusEnumMap[instance.operationalStatus]);
+  writeNotNull('operationalStatus', instance.operationalStatus?.toJson());
   writeNotNull(
       '_operationalStatus', instance.operationalStatusElement?.toJson());
   writeNotNull('color', instance.color?.toJson());
   writeNotNull('_color', instance.colorElement?.toJson());
-  writeNotNull('category', _$DeviceMetricCategoryEnumMap[instance.category]);
+  writeNotNull('category', instance.category?.toJson());
   writeNotNull('_category', instance.categoryElement?.toJson());
   writeNotNull('measurementFrequency', instance.measurementFrequency?.toJson());
   writeNotNull(
@@ -1326,9 +1324,9 @@ Map<String, dynamic> _$$DeviceMetricCalibrationImplToJson(
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
   writeNotNull('modifierExtension',
       instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('type', _$DeviceMetricCalibrationTypeEnumMap[instance.type]);
+  writeNotNull('type', instance.type?.toJson());
   writeNotNull('_type', instance.typeElement?.toJson());
-  writeNotNull('state', _$DeviceMetricCalibrationStateEnumMap[instance.state]);
+  writeNotNull('state', instance.state?.toJson());
   writeNotNull('_state', instance.stateElement?.toJson());
   writeNotNull('time', instance.time?.toJson());
   writeNotNull('_time', instance.timeElement?.toJson());
@@ -1447,7 +1445,7 @@ Map<String, dynamic> _$$NutritionProductImplToJson(
   writeNotNull('modifierExtension',
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   writeNotNull('code', instance.code?.toJson());
-  writeNotNull('status', _$NutritionProductStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
   writeNotNull(
@@ -1786,7 +1784,7 @@ Map<String, dynamic> _$$SubstanceImplToJson(_$SubstanceImpl instance) {
       'identifier', instance.identifier?.map((e) => e.toJson()).toList());
   writeNotNull('instance', instance.instance?.toJson());
   writeNotNull('_instance', instance.instanceElement?.toJson());
-  writeNotNull('status', _$ProductStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
   val['code'] = instance.code.toJson();

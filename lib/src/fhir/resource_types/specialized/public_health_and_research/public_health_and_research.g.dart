@@ -848,7 +848,7 @@ Map<String, dynamic> _$$ResearchSubjectImplToJson(
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   writeNotNull(
       'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$PublicationStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('progress', instance.progress?.map((e) => e.toJson()).toList());
   writeNotNull('period', instance.period?.toJson());

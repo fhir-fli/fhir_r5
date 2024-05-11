@@ -111,7 +111,7 @@ Map<String, dynamic> _$$FhirEndpointImplToJson(_$FhirEndpointImpl instance) {
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   writeNotNull(
       'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$EndpointStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   val['connectionType'] =
       instance.connectionType.map((e) => e.toJson()).toList();
@@ -341,8 +341,7 @@ Map<String, dynamic> _$$EndpointPayloadImplToJson(
   writeNotNull('modifierExtension',
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   writeNotNull('type', instance.type?.map((e) => e.toJson()).toList());
-  writeNotNull('mimeType',
-      instance.mimeType?.map((e) => _$MimeTypeEnumMap[e]!).toList());
+  writeNotNull('mimeType', instance.mimeType?.map((e) => e.toJson()).toList());
   writeNotNull(
       '_mimeType', instance.mimeTypeElement?.map((e) => e.toJson()).toList());
   return val;
@@ -826,7 +825,7 @@ Map<String, dynamic> _$$LocationImplToJson(_$LocationImpl instance) {
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   writeNotNull(
       'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$LocationStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('operationalStatus', instance.operationalStatus?.toJson());
   writeNotNull('name', instance.name);
@@ -836,7 +835,7 @@ Map<String, dynamic> _$$LocationImplToJson(_$LocationImpl instance) {
       '_alias', instance.aliasElement?.map((e) => e.toJson()).toList());
   writeNotNull('description', instance.description?.toJson());
   writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('mode', _$LocationModeEnumMap[instance.mode]);
+  writeNotNull('mode', instance.mode?.toJson());
   writeNotNull('_mode', instance.modeElement?.toJson());
   writeNotNull('type', instance.type?.map((e) => e.toJson()).toList());
   writeNotNull('contact', instance.contact?.map((e) => e.toJson()).toList());

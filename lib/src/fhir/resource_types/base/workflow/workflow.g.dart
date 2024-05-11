@@ -193,7 +193,7 @@ Map<String, dynamic> _$$AppointmentImplToJson(_$AppointmentImpl instance) {
       instance.modifierExtension?.map((e) => e.toJson()).toList());
   writeNotNull(
       'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$AppointmentStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('cancellationReason', instance.cancellationReason?.toJson());
   writeNotNull('class', instance.class_?.map((e) => e.toJson()).toList());
@@ -473,7 +473,7 @@ Map<String, dynamic> _$$AppointmentParticipantImplToJson(
   writeNotNull('actor', instance.actor?.toJson());
   writeNotNull('required', instance.required_?.toJson());
   writeNotNull('_required', instance.requiredElement?.toJson());
-  writeNotNull('status', _$ParticipationStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   return val;
 }
@@ -904,8 +904,7 @@ Map<String, dynamic> _$$AppointmentResponseImplToJson(
   writeNotNull('participantType',
       instance.participantType?.map((e) => e.toJson()).toList());
   writeNotNull('actor', instance.actor?.toJson());
-  writeNotNull('participantStatus',
-      _$AppointmentResponseStatusEnumMap[instance.participantStatus]);
+  writeNotNull('participantStatus', instance.participantStatus?.toJson());
   writeNotNull(
       '_participantStatus', instance.participantStatusElement?.toJson());
   writeNotNull('comment', instance.comment?.toJson());
@@ -1149,7 +1148,7 @@ Map<String, dynamic> _$$SlotImplToJson(_$SlotImpl instance) {
   writeNotNull('appointmentType',
       instance.appointmentType?.map((e) => e.toJson()).toList());
   val['schedule'] = instance.schedule.toJson();
-  writeNotNull('status', _$SlotStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('start', instance.start?.toJson());
   writeNotNull('_start', instance.startElement?.toJson());
@@ -1356,13 +1355,13 @@ Map<String, dynamic> _$$TaskImplToJson(_$TaskImpl instance) {
   writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
   writeNotNull('groupIdentifier', instance.groupIdentifier?.toJson());
   writeNotNull('partOf', instance.partOf?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$TaskStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('statusReason', instance.statusReason?.toJson());
   writeNotNull('businessStatus', instance.businessStatus?.toJson());
-  writeNotNull('intent', _$TaskIntentEnumMap[instance.intent]);
+  writeNotNull('intent', instance.intent?.toJson());
   writeNotNull('_intent', instance.intentElement?.toJson());
-  writeNotNull('priority', _$RequestPriorityEnumMap[instance.priority]);
+  writeNotNull('priority', instance.priority?.toJson());
   writeNotNull('_priority', instance.priorityElement?.toJson());
   writeNotNull('doNotPerform', instance.doNotPerform?.toJson());
   writeNotNull('_doNotPerform', instance.doNotPerformElement?.toJson());
@@ -2379,12 +2378,12 @@ Map<String, dynamic> _$$TransportImplToJson(_$TransportImpl instance) {
   writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
   writeNotNull('groupIdentifier', instance.groupIdentifier?.toJson());
   writeNotNull('partOf', instance.partOf?.map((e) => e.toJson()).toList());
-  writeNotNull('status', _$TransportStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('statusReason', instance.statusReason?.toJson());
-  writeNotNull('intent', _$TransportIntentEnumMap[instance.intent]);
+  writeNotNull('intent', instance.intent?.toJson());
   writeNotNull('_intent', instance.intentElement?.toJson());
-  writeNotNull('priority', _$RequestPriorityEnumMap[instance.priority]);
+  writeNotNull('priority', instance.priority?.toJson());
   writeNotNull('_priority', instance.priorityElement?.toJson());
   writeNotNull('code', instance.code?.toJson());
   writeNotNull('description', instance.description);
@@ -3302,7 +3301,7 @@ Map<String, dynamic> _$$VerificationResultImplToJson(
   writeNotNull('_targetLocation',
       instance.targetLocationElement?.map((e) => e.toJson()).toList());
   writeNotNull('need', instance.need?.toJson());
-  writeNotNull('status', _$VerificationResultStatusEnumMap[instance.status]);
+  writeNotNull('status', instance.status?.toJson());
   writeNotNull('_status', instance.statusElement?.toJson());
   writeNotNull('statusDate', instance.statusDate?.toJson());
   writeNotNull('_statusDate', instance.statusDateElement?.toJson());

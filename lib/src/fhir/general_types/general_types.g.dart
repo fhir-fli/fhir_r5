@@ -212,7 +212,7 @@ Map<String, dynamic> _$$IdentifierImplToJson(_$IdentifierImpl instance) {
   writeNotNull('id', instance.id);
   writeNotNull(
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('use', _$IdentifierUseEnumMap[instance.use]);
+  writeNotNull('use', instance.use?.toJson());
   writeNotNull('_use', instance.useElement?.toJson());
   writeNotNull('type', instance.type?.toJson());
   writeNotNull('system', instance.system?.toJson());
@@ -364,7 +364,7 @@ Map<String, dynamic> _$$QuantityImplToJson(_$QuantityImpl instance) {
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
   writeNotNull('value', instance.value?.toJson());
   writeNotNull('_value', instance.valueElement?.toJson());
-  writeNotNull('comparator', _$QuantityComparatorEnumMap[instance.comparator]);
+  writeNotNull('comparator', instance.comparator?.toJson());
   writeNotNull('_comparator', instance.comparatorElement?.toJson());
   writeNotNull('unit', instance.unit);
   writeNotNull('_unit', instance.unitElement?.toJson());
@@ -426,7 +426,7 @@ Map<String, dynamic> _$$FhirDurationImplToJson(_$FhirDurationImpl instance) {
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
   writeNotNull('value', instance.value?.toJson());
   writeNotNull('_value', instance.valueElement?.toJson());
-  writeNotNull('comparator', _$DurationComparatorEnumMap[instance.comparator]);
+  writeNotNull('comparator', instance.comparator?.toJson());
   writeNotNull('_comparator', instance.comparatorElement?.toJson());
   writeNotNull('unit', instance.unit);
   writeNotNull('_unit', instance.unitElement?.toJson());
@@ -488,7 +488,7 @@ Map<String, dynamic> _$$DistanceImplToJson(_$DistanceImpl instance) {
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
   writeNotNull('value', instance.value?.toJson());
   writeNotNull('_value', instance.valueElement?.toJson());
-  writeNotNull('comparator', _$DistanceComparatorEnumMap[instance.comparator]);
+  writeNotNull('comparator', instance.comparator?.toJson());
   writeNotNull('_comparator', instance.comparatorElement?.toJson());
   writeNotNull('unit', instance.unit);
   writeNotNull('_unit', instance.unitElement?.toJson());
@@ -549,7 +549,7 @@ Map<String, dynamic> _$$CountImplToJson(_$CountImpl instance) {
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
   writeNotNull('value', instance.value?.toJson());
   writeNotNull('_value', instance.valueElement?.toJson());
-  writeNotNull('comparator', _$CountComparatorEnumMap[instance.comparator]);
+  writeNotNull('comparator', instance.comparator?.toJson());
   writeNotNull('_comparator', instance.comparatorElement?.toJson());
   writeNotNull('unit', instance.unit);
   writeNotNull('_unit', instance.unitElement?.toJson());
@@ -645,7 +645,7 @@ Map<String, dynamic> _$$AgeImplToJson(_$AgeImpl instance) {
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
   writeNotNull('value', instance.value?.toJson());
   writeNotNull('_value', instance.valueElement?.toJson());
-  writeNotNull('comparator', _$AgeComparatorEnumMap[instance.comparator]);
+  writeNotNull('comparator', instance.comparator?.toJson());
   writeNotNull('_comparator', instance.comparatorElement?.toJson());
   writeNotNull('unit', instance.unit);
   writeNotNull('_unit', instance.unitElement?.toJson());
@@ -1001,7 +1001,7 @@ Map<String, dynamic> _$$HumanNameImplToJson(_$HumanNameImpl instance) {
   writeNotNull('id', instance.id);
   writeNotNull(
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('use', _$HumanNameUseEnumMap[instance.use]);
+  writeNotNull('use', instance.use?.toJson());
   writeNotNull('_use', instance.useElement?.toJson());
   writeNotNull('text', instance.text);
   writeNotNull('_text', instance.textElement?.toJson());
@@ -1089,9 +1089,9 @@ Map<String, dynamic> _$$AddressImplToJson(_$AddressImpl instance) {
   writeNotNull('id', instance.id);
   writeNotNull(
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('use', _$AddressUseEnumMap[instance.use]);
+  writeNotNull('use', instance.use?.toJson());
   writeNotNull('_use', instance.useElement?.toJson());
-  writeNotNull('type', _$AddressTypeEnumMap[instance.type]);
+  writeNotNull('type', instance.type?.toJson());
   writeNotNull('_type', instance.typeElement?.toJson());
   writeNotNull('text', instance.text);
   writeNotNull('_text', instance.textElement?.toJson());
@@ -1165,11 +1165,11 @@ Map<String, dynamic> _$$ContactPointImplToJson(_$ContactPointImpl instance) {
   writeNotNull('id', instance.id);
   writeNotNull(
       'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('system', _$ContactPointSystemEnumMap[instance.system]);
+  writeNotNull('system', instance.system?.toJson());
   writeNotNull('_system', instance.systemElement?.toJson());
   writeNotNull('value', instance.value);
   writeNotNull('_value', instance.valueElement?.toJson());
-  writeNotNull('use', _$ContactPointUseEnumMap[instance.use]);
+  writeNotNull('use', instance.use?.toJson());
   writeNotNull('_use', instance.useElement?.toJson());
   writeNotNull('rank', instance.rank?.toJson());
   writeNotNull('_rank', instance.rankElement?.toJson());
@@ -1365,7 +1365,7 @@ Map<String, dynamic> _$$TimingRepeatImplToJson(_$TimingRepeatImpl instance) {
   writeNotNull('_duration', instance.durationElement?.toJson());
   writeNotNull('durationMax', instance.durationMax?.toJson());
   writeNotNull('_durationMax', instance.durationMaxElement?.toJson());
-  writeNotNull('durationUnit', _$UnitsOfTimeEnumMap[instance.durationUnit]);
+  writeNotNull('durationUnit', instance.durationUnit?.toJson());
   writeNotNull('_durationUnit', instance.durationUnitElement?.toJson());
   writeNotNull('frequency', instance.frequency?.toJson());
   writeNotNull('_frequency', instance.frequencyElement?.toJson());
@@ -1375,18 +1375,17 @@ Map<String, dynamic> _$$TimingRepeatImplToJson(_$TimingRepeatImpl instance) {
   writeNotNull('_period', instance.periodElement?.toJson());
   writeNotNull('periodMax', instance.periodMax?.toJson());
   writeNotNull('_periodMax', instance.periodMaxElement?.toJson());
-  writeNotNull('periodUnit', _$UnitsOfTimeEnumMap[instance.periodUnit]);
+  writeNotNull('periodUnit', instance.periodUnit?.toJson());
   writeNotNull('_periodUnit', instance.periodUnitElement?.toJson());
-  writeNotNull('dayOfWeek',
-      instance.dayOfWeek?.map((e) => _$DaysOfWeekEnumMap[e]!).toList());
+  writeNotNull(
+      'dayOfWeek', instance.dayOfWeek?.map((e) => e.toJson()).toList());
   writeNotNull(
       '_dayOfWeek', instance.dayOfWeekElement?.map((e) => e.toJson()).toList());
   writeNotNull(
       'timeOfDay', instance.timeOfDay?.map((e) => e.toJson()).toList());
   writeNotNull(
       '_timeOfDay', instance.timeOfDayElement?.map((e) => e.toJson()).toList());
-  writeNotNull('when',
-      instance.when?.map((e) => _$TimingRepeatWhenEnumMap[e]!).toList());
+  writeNotNull('when', instance.when?.map((e) => e.toJson()).toList());
   writeNotNull('_when', instance.whenElement?.map((e) => e.toJson()).toList());
   writeNotNull('offset', instance.offset?.toJson());
   writeNotNull('_offset', instance.offsetElement?.toJson());
