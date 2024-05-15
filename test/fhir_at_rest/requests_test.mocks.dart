@@ -128,21 +128,6 @@ class MockFhirRequest extends _i1.Mock implements _i2.FhirRequest {
       ) as _i2.$FhirRequestCopyWith<_i2.FhirRequest>);
 
   @override
-  String toJsonString() => (super.noSuchMethod(
-        Invocation.method(
-          #toJsonString,
-          [],
-        ),
-        returnValue: _i3.dummyValue<String>(
-          this,
-          Invocation.method(
-            #toJsonString,
-            [],
-          ),
-        ),
-      ) as String);
-
-  @override
   _i4.Future<_i2.Resource> request({Map<String, String>? headers}) =>
       (super.noSuchMethod(
         Invocation.method(

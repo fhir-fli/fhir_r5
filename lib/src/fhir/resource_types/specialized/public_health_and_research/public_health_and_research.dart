@@ -444,6 +444,9 @@ class ResearchStudy with Resource, _$ResearchStudy {
     List<Reference>? result,
   }) = _ResearchStudy;
 
+  @override
+  String get fhirType => 'ResearchStudy';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -488,7 +491,7 @@ class ResearchStudy with Resource, _$ResearchStudy {
 ///  certain outcomes and certain groups of people by looking at data collected
 ///  in the past or future.
 @freezed
-class ResearchStudyLabel with _$ResearchStudyLabel {
+class ResearchStudyLabel with BackboneType, _$ResearchStudyLabel {
   /// [ResearchStudyLabel] A scientific study of nature that sometimes includes
   ///  processes involved in health and disease. For example, clinical trials are
   ///  research studies that involve people. These studies may be related to new
@@ -570,8 +573,8 @@ class ResearchStudyLabel with _$ResearchStudyLabel {
     @JsonKey(name: '_value') Element? valueElement,
   }) = _ResearchStudyLabel;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ResearchStudyLabel';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ResearchStudyLabel.fromYaml(dynamic yaml) => yaml is String
@@ -599,10 +602,6 @@ class ResearchStudyLabel with _$ResearchStudyLabel {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ResearchStudyAssociatedParty] A scientific study of nature that sometimes
@@ -612,7 +611,8 @@ class ResearchStudyLabel with _$ResearchStudyLabel {
 ///  may also study certain outcomes and certain groups of people by looking at
 ///  data collected in the past or future.
 @freezed
-class ResearchStudyAssociatedParty with _$ResearchStudyAssociatedParty {
+class ResearchStudyAssociatedParty
+    with BackboneType, _$ResearchStudyAssociatedParty {
   /// [ResearchStudyAssociatedParty] A scientific study of nature that sometimes
   ///  includes processes involved in health and disease. For example, clinical
   ///  trials are research studies that involve people. These studies may be
@@ -713,8 +713,8 @@ class ResearchStudyAssociatedParty with _$ResearchStudyAssociatedParty {
     Reference? party,
   }) = _ResearchStudyAssociatedParty;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ResearchStudyAssociatedParty';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ResearchStudyAssociatedParty.fromYaml(dynamic yaml) => yaml is String
@@ -743,10 +743,6 @@ class ResearchStudyAssociatedParty with _$ResearchStudyAssociatedParty {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ResearchStudyProgressStatus] A scientific study of nature that sometimes
@@ -756,7 +752,8 @@ class ResearchStudyAssociatedParty with _$ResearchStudyAssociatedParty {
 ///  may also study certain outcomes and certain groups of people by looking at
 ///  data collected in the past or future.
 @freezed
-class ResearchStudyProgressStatus with _$ResearchStudyProgressStatus {
+class ResearchStudyProgressStatus
+    with BackboneType, _$ResearchStudyProgressStatus {
   /// [ResearchStudyProgressStatus] A scientific study of nature that sometimes
   ///  includes processes involved in health and disease. For example, clinical
   ///  trials are research studies that involve people. These studies may be
@@ -847,8 +844,8 @@ class ResearchStudyProgressStatus with _$ResearchStudyProgressStatus {
     Period? period,
   }) = _ResearchStudyProgressStatus;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ResearchStudyProgressStatus';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ResearchStudyProgressStatus.fromYaml(dynamic yaml) => yaml is String
@@ -877,10 +874,6 @@ class ResearchStudyProgressStatus with _$ResearchStudyProgressStatus {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ResearchStudyRecruitment] A scientific study of nature that sometimes
@@ -890,7 +883,7 @@ class ResearchStudyProgressStatus with _$ResearchStudyProgressStatus {
 ///  may also study certain outcomes and certain groups of people by looking at
 ///  data collected in the past or future.
 @freezed
-class ResearchStudyRecruitment with _$ResearchStudyRecruitment {
+class ResearchStudyRecruitment with BackboneType, _$ResearchStudyRecruitment {
   /// [ResearchStudyRecruitment] A scientific study of nature that sometimes
   ///  includes processes involved in health and disease. For example, clinical
   ///  trials are research studies that involve people. These studies may be
@@ -987,8 +980,8 @@ class ResearchStudyRecruitment with _$ResearchStudyRecruitment {
     Reference? actualGroup,
   }) = _ResearchStudyRecruitment;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ResearchStudyRecruitment';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ResearchStudyRecruitment.fromYaml(dynamic yaml) => yaml is String
@@ -1016,10 +1009,6 @@ class ResearchStudyRecruitment with _$ResearchStudyRecruitment {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ResearchStudyComparisonGroup] A scientific study of nature that sometimes
@@ -1029,7 +1018,8 @@ class ResearchStudyRecruitment with _$ResearchStudyRecruitment {
 ///  may also study certain outcomes and certain groups of people by looking at
 ///  data collected in the past or future.
 @freezed
-class ResearchStudyComparisonGroup with _$ResearchStudyComparisonGroup {
+class ResearchStudyComparisonGroup
+    with BackboneType, _$ResearchStudyComparisonGroup {
   /// [ResearchStudyComparisonGroup] A scientific study of nature that sometimes
   ///  includes processes involved in health and disease. For example, clinical
   ///  trials are research studies that involve people. These studies may be
@@ -1151,8 +1141,8 @@ class ResearchStudyComparisonGroup with _$ResearchStudyComparisonGroup {
     Reference? observedGroup,
   }) = _ResearchStudyComparisonGroup;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ResearchStudyComparisonGroup';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ResearchStudyComparisonGroup.fromYaml(dynamic yaml) => yaml is String
@@ -1181,10 +1171,6 @@ class ResearchStudyComparisonGroup with _$ResearchStudyComparisonGroup {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ResearchStudyObjective] A scientific study of nature that sometimes
@@ -1194,7 +1180,7 @@ class ResearchStudyComparisonGroup with _$ResearchStudyComparisonGroup {
 ///  may also study certain outcomes and certain groups of people by looking at
 ///  data collected in the past or future.
 @freezed
-class ResearchStudyObjective with _$ResearchStudyObjective {
+class ResearchStudyObjective with BackboneType, _$ResearchStudyObjective {
   /// [ResearchStudyObjective] A scientific study of nature that sometimes
   ///  includes processes involved in health and disease. For example, clinical
   ///  trials are research studies that involve people. These studies may be
@@ -1290,8 +1276,8 @@ class ResearchStudyObjective with _$ResearchStudyObjective {
     @JsonKey(name: '_description') Element? descriptionElement,
   }) = _ResearchStudyObjective;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ResearchStudyObjective';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ResearchStudyObjective.fromYaml(dynamic yaml) => yaml is String
@@ -1319,10 +1305,6 @@ class ResearchStudyObjective with _$ResearchStudyObjective {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ResearchStudyOutcomeMeasure] A scientific study of nature that sometimes
@@ -1332,7 +1314,8 @@ class ResearchStudyObjective with _$ResearchStudyObjective {
 ///  may also study certain outcomes and certain groups of people by looking at
 ///  data collected in the past or future.
 @freezed
-class ResearchStudyOutcomeMeasure with _$ResearchStudyOutcomeMeasure {
+class ResearchStudyOutcomeMeasure
+    with BackboneType, _$ResearchStudyOutcomeMeasure {
   /// [ResearchStudyOutcomeMeasure] A scientific study of nature that sometimes
   ///  includes processes involved in health and disease. For example, clinical
   ///  trials are research studies that involve people. These studies may be
@@ -1431,8 +1414,8 @@ class ResearchStudyOutcomeMeasure with _$ResearchStudyOutcomeMeasure {
     Reference? reference,
   }) = _ResearchStudyOutcomeMeasure;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ResearchStudyOutcomeMeasure';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ResearchStudyOutcomeMeasure.fromYaml(dynamic yaml) => yaml is String
@@ -1461,10 +1444,6 @@ class ResearchStudyOutcomeMeasure with _$ResearchStudyOutcomeMeasure {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ResearchSubject] A ResearchSubject is a participant or object which is the
@@ -1677,6 +1656,9 @@ class ResearchSubject with Resource, _$ResearchSubject {
     List<Reference>? consent,
   }) = _ResearchSubject;
 
+  @override
+  String get fhirType => 'ResearchSubject';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -1717,7 +1699,7 @@ class ResearchSubject with Resource, _$ResearchSubject {
 /// [ResearchSubjectProgress] A ResearchSubject is a participant or object
 ///  which is the recipient of investigative activities in a research study.
 @freezed
-class ResearchSubjectProgress with _$ResearchSubjectProgress {
+class ResearchSubjectProgress with BackboneType, _$ResearchSubjectProgress {
   /// [ResearchSubjectProgress] A ResearchSubject is a participant or object
   ///  which is the recipient of investigative activities in a research study.
   const ResearchSubjectProgress._();
@@ -1820,8 +1802,8 @@ class ResearchSubjectProgress with _$ResearchSubjectProgress {
     @JsonKey(name: '_endDate') Element? endDateElement,
   }) = _ResearchSubjectProgress;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ResearchSubjectProgress';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ResearchSubjectProgress.fromYaml(dynamic yaml) => yaml is String
@@ -1849,8 +1831,4 @@ class ResearchSubjectProgress with _$ResearchSubjectProgress {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }

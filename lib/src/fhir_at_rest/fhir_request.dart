@@ -943,10 +943,6 @@ class FhirRequest with _$FhirRequest {
     }
   }
 
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
-
   /// REQUEST
   /// after creating a request with the above constructors, they can be called
   /// to interact with the server by using this method. If necessary,
@@ -2007,10 +2003,6 @@ class FhirHttpRequest with _$FhirHttpRequest {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 
   /// Make the request
   Future<Response> request() async {
