@@ -24,8 +24,9 @@ part 'resource_types_enum.dart';
 /// class also has it's own fromJson() function as well. The fromJson function
 /// in this class is only used if the resourceType is not previously known
 @JsonSerializable()
-abstract mixin class Resource {
+abstract mixin class Resource implements Element {
   R5ResourceType? get resourceType;
+  @override
   FhirId? get id;
   FhirMeta? get meta;
   FhirUri? get implicitRules;
@@ -34,7 +35,6 @@ abstract mixin class Resource {
   Element? get languageElement;
   Narrative? get text;
   List<Resource>? get contained;
-  List<FhirExtension>? get extension_;
   List<FhirExtension>? get modifierExtension;
 
   /// Acts like a constructor, returns a [Resource], accepts a
@@ -54,10 +54,6 @@ abstract mixin class Resource {
     }
   }
 
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
-
   /// Returns a Resource, accepts a [String] in YAML format as an argument
   static Resource fromYaml(dynamic yaml) => yaml is String
       ? Resource.fromJson(
@@ -70,6 +66,7 @@ abstract mixin class Resource {
               ' it is neither a yaml string nor a yaml map.');
 
   /// Returns a [Map<String, dynamic>] of the [Resource]
+  @override
   Map<String, dynamic> toJson() {
     final val = <String, dynamic>{};
 
@@ -93,9 +90,6 @@ abstract mixin class Resource {
         modifierExtension?.map((e) => e.toJson()).toList());
     return val;
   }
-
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
 
   /// produce a string of the [resourceType]
   String get resourceTypeString => resourceType.toString();

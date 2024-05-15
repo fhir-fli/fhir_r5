@@ -275,6 +275,9 @@ class FhirGroup with Resource, _$FhirGroup {
     List<GroupMember>? member,
   }) = _FhirGroup;
 
+  @override
+  String get fhirType => 'FhirGroup';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -317,7 +320,7 @@ class FhirGroup with Resource, _$FhirGroup {
 ///  collectively, and are not formally or legally recognized; i.e. a
 ///  collection of entities that isn't an Organization.
 @freezed
-class GroupCharacteristic with _$GroupCharacteristic {
+class GroupCharacteristic with BackboneType, _$GroupCharacteristic {
   /// [GroupCharacteristic] Represents a defined collection of entities that may
   ///  be discussed or acted upon collectively but which are not expected to act
   ///  collectively, and are not formally or legally recognized; i.e. a
@@ -444,8 +447,8 @@ class GroupCharacteristic with _$GroupCharacteristic {
     Period? period,
   }) = _GroupCharacteristic;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'GroupCharacteristic';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory GroupCharacteristic.fromYaml(dynamic yaml) => yaml is String
@@ -473,10 +476,6 @@ class GroupCharacteristic with _$GroupCharacteristic {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [GroupMember] Represents a defined collection of entities that may be
@@ -484,7 +483,7 @@ class GroupCharacteristic with _$GroupCharacteristic {
 ///  collectively, and are not formally or legally recognized; i.e. a
 ///  collection of entities that isn't an Organization.
 @freezed
-class GroupMember with _$GroupMember {
+class GroupMember with BackboneType, _$GroupMember {
   /// [GroupMember] Represents a defined collection of entities that may be
   ///  discussed or acted upon collectively but which are not expected to act
   ///  collectively, and are not formally or legally recognized; i.e. a
@@ -573,8 +572,8 @@ class GroupMember with _$GroupMember {
     @JsonKey(name: '_inactive') Element? inactiveElement,
   }) = _GroupMember;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'GroupMember';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory GroupMember.fromYaml(dynamic yaml) => yaml is String
@@ -602,10 +601,6 @@ class GroupMember with _$GroupMember {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [Patient] Demographics and other administrative information about an
@@ -899,6 +894,9 @@ class Patient with Resource, _$Patient {
     List<PatientLink>? link,
   }) = _Patient;
 
+  @override
+  String get fhirType => 'Patient';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -939,7 +937,7 @@ class Patient with Resource, _$Patient {
 /// [PatientContact] Demographics and other administrative information about an
 ///  individual or animal receiving care or other health-related services.
 @freezed
-class PatientContact with _$PatientContact {
+class PatientContact with BackboneType, _$PatientContact {
   /// [PatientContact] Demographics and other administrative information about an
   ///  individual or animal receiving care or other health-related services.
   const PatientContact._();
@@ -1048,8 +1046,8 @@ class PatientContact with _$PatientContact {
     Period? period,
   }) = _PatientContact;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'PatientContact';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory PatientContact.fromYaml(dynamic yaml) => yaml is String
@@ -1077,17 +1075,13 @@ class PatientContact with _$PatientContact {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [PatientCommunication] Demographics and other administrative information
 ///  about an individual or animal receiving care or other health-related
 ///  services.
 @freezed
-class PatientCommunication with _$PatientCommunication {
+class PatientCommunication with BackboneType, _$PatientCommunication {
   /// [PatientCommunication] Demographics and other administrative information
   ///  about an individual or animal receiving care or other health-related
   ///  services.
@@ -1171,8 +1165,8 @@ class PatientCommunication with _$PatientCommunication {
     @JsonKey(name: '_preferred') Element? preferredElement,
   }) = _PatientCommunication;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'PatientCommunication';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory PatientCommunication.fromYaml(dynamic yaml) => yaml is String
@@ -1200,16 +1194,12 @@ class PatientCommunication with _$PatientCommunication {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [PatientLink] Demographics and other administrative information about an
 ///  individual or animal receiving care or other health-related services.
 @freezed
-class PatientLink with _$PatientLink {
+class PatientLink with BackboneType, _$PatientLink {
   /// [PatientLink] Demographics and other administrative information about an
   ///  individual or animal receiving care or other health-related services.
   const PatientLink._();
@@ -1287,8 +1277,8 @@ class PatientLink with _$PatientLink {
     @JsonKey(name: '_type') Element? typeElement,
   }) = _PatientLink;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'PatientLink';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory PatientLink.fromYaml(dynamic yaml) => yaml is String
@@ -1316,10 +1306,6 @@ class PatientLink with _$PatientLink {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [Person] Demographics and administrative information about a person
@@ -1561,6 +1547,9 @@ class Person with Resource, _$Person {
     List<PersonLink>? link,
   }) = _Person;
 
+  @override
+  String get fhirType => 'Person';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -1600,7 +1589,7 @@ class Person with Resource, _$Person {
 /// [PersonCommunication] Demographics and administrative information about a
 ///  person independent of a specific health-related context.
 @freezed
-class PersonCommunication with _$PersonCommunication {
+class PersonCommunication with BackboneType, _$PersonCommunication {
   /// [PersonCommunication] Demographics and administrative information about a
   ///  person independent of a specific health-related context.
   const PersonCommunication._();
@@ -1682,8 +1671,8 @@ class PersonCommunication with _$PersonCommunication {
     @JsonKey(name: '_preferred') Element? preferredElement,
   }) = _PersonCommunication;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'PersonCommunication';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory PersonCommunication.fromYaml(dynamic yaml) => yaml is String
@@ -1711,16 +1700,12 @@ class PersonCommunication with _$PersonCommunication {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [PersonLink] Demographics and administrative information about a person
 ///  independent of a specific health-related context.
 @freezed
-class PersonLink with _$PersonLink {
+class PersonLink with BackboneType, _$PersonLink {
   /// [PersonLink] Demographics and administrative information about a person
   ///  independent of a specific health-related context.
   const PersonLink._();
@@ -1796,8 +1781,8 @@ class PersonLink with _$PersonLink {
     @JsonKey(name: '_assurance') Element? assuranceElement,
   }) = _PersonLink;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'PersonLink';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory PersonLink.fromYaml(dynamic yaml) => yaml is String
@@ -1825,10 +1810,6 @@ class PersonLink with _$PersonLink {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [Practitioner] A person who is directly or indirectly involved in the
@@ -2075,6 +2056,9 @@ class Practitioner with Resource, _$Practitioner {
     List<PractitionerCommunication>? communication,
   }) = _Practitioner;
 
+  @override
+  String get fhirType => 'Practitioner';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -2115,7 +2099,7 @@ class Practitioner with Resource, _$Practitioner {
 /// [PractitionerQualification] A person who is directly or indirectly involved
 ///  in the provisioning of healthcare or related services.
 @freezed
-class PractitionerQualification with _$PractitionerQualification {
+class PractitionerQualification with BackboneType, _$PractitionerQualification {
   /// [PractitionerQualification] A person who is directly or indirectly involved
   ///  in the provisioning of healthcare or related services.
   const PractitionerQualification._();
@@ -2194,8 +2178,8 @@ class PractitionerQualification with _$PractitionerQualification {
     Reference? issuer,
   }) = _PractitionerQualification;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'PractitionerQualification';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory PractitionerQualification.fromYaml(dynamic yaml) => yaml is String
@@ -2223,16 +2207,12 @@ class PractitionerQualification with _$PractitionerQualification {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [PractitionerCommunication] A person who is directly or indirectly involved
 ///  in the provisioning of healthcare or related services.
 @freezed
-class PractitionerCommunication with _$PractitionerCommunication {
+class PractitionerCommunication with BackboneType, _$PractitionerCommunication {
   /// [PractitionerCommunication] A person who is directly or indirectly involved
   ///  in the provisioning of healthcare or related services.
   const PractitionerCommunication._();
@@ -2314,8 +2294,8 @@ class PractitionerCommunication with _$PractitionerCommunication {
     @JsonKey(name: '_preferred') Element? preferredElement,
   }) = _PractitionerCommunication;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'PractitionerCommunication';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory PractitionerCommunication.fromYaml(dynamic yaml) => yaml is String
@@ -2343,10 +2323,6 @@ class PractitionerCommunication with _$PractitionerCommunication {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [PractitionerRole] A specific set of Roles/Locations/specialties/services
@@ -2586,6 +2562,9 @@ class PractitionerRole with Resource, _$PractitionerRole {
     ///  services, or identifying where to send referrals electronically.
     List<Reference>? endpoint,
   }) = _PractitionerRole;
+
+  @override
+  String get fhirType => 'PractitionerRole';
 
   /// Produces a Yaml formatted String version of the object
   @override
@@ -2843,6 +2822,9 @@ class RelatedPerson with Resource, _$RelatedPerson {
     List<RelatedPersonCommunication>? communication,
   }) = _RelatedPerson;
 
+  @override
+  String get fhirType => 'RelatedPerson';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -2884,7 +2866,8 @@ class RelatedPerson with Resource, _$RelatedPerson {
 ///  a patient's health or the care for a patient, but who is not the target of
 ///  healthcare, nor has a formal responsibility in the care process.
 @freezed
-class RelatedPersonCommunication with _$RelatedPersonCommunication {
+class RelatedPersonCommunication
+    with BackboneType, _$RelatedPersonCommunication {
   /// [RelatedPersonCommunication] Information about a person that is involved in
   ///  a patient's health or the care for a patient, but who is not the target of
   ///  healthcare, nor has a formal responsibility in the care process.
@@ -2968,8 +2951,8 @@ class RelatedPersonCommunication with _$RelatedPersonCommunication {
     @JsonKey(name: '_preferred') Element? preferredElement,
   }) = _RelatedPersonCommunication;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'RelatedPersonCommunication';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory RelatedPersonCommunication.fromYaml(dynamic yaml) => yaml is String
@@ -2997,8 +2980,4 @@ class RelatedPersonCommunication with _$RelatedPersonCommunication {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }

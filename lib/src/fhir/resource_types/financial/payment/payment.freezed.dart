@@ -181,16 +181,11 @@ abstract class $PaymentNoticeCopyWith<$Res> {
       CodeableConcept? paymentStatus});
 
   $FhirMetaCopyWith<$Res>? get meta;
-  $ElementCopyWith<$Res>? get implicitRulesElement;
-  $ElementCopyWith<$Res>? get languageElement;
   $NarrativeCopyWith<$Res>? get text;
-  $ElementCopyWith<$Res>? get statusElement;
   $ReferenceCopyWith<$Res>? get request;
   $ReferenceCopyWith<$Res>? get response;
-  $ElementCopyWith<$Res>? get createdElement;
   $ReferenceCopyWith<$Res>? get reporter;
   $ReferenceCopyWith<$Res>? get payment;
-  $ElementCopyWith<$Res>? get paymentDateElement;
   $ReferenceCopyWith<$Res>? get payee;
   $ReferenceCopyWith<$Res> get recipient;
   $MoneyCopyWith<$Res> get amount;
@@ -359,30 +354,6 @@ class _$PaymentNoticeCopyWithImpl<$Res, $Val extends PaymentNotice>
 
   @override
   @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get implicitRulesElement {
-    if (_value.implicitRulesElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.implicitRulesElement!, (value) {
-      return _then(_value.copyWith(implicitRulesElement: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get languageElement {
-    if (_value.languageElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.languageElement!, (value) {
-      return _then(_value.copyWith(languageElement: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
     if (_value.text == null) {
       return null;
@@ -390,18 +361,6 @@ class _$PaymentNoticeCopyWithImpl<$Res, $Val extends PaymentNotice>
 
     return $NarrativeCopyWith<$Res>(_value.text!, (value) {
       return _then(_value.copyWith(text: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get statusElement {
-    if (_value.statusElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.statusElement!, (value) {
-      return _then(_value.copyWith(statusElement: value) as $Val);
     });
   }
 
@@ -431,18 +390,6 @@ class _$PaymentNoticeCopyWithImpl<$Res, $Val extends PaymentNotice>
 
   @override
   @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get createdElement {
-    if (_value.createdElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.createdElement!, (value) {
-      return _then(_value.copyWith(createdElement: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get reporter {
     if (_value.reporter == null) {
       return null;
@@ -462,18 +409,6 @@ class _$PaymentNoticeCopyWithImpl<$Res, $Val extends PaymentNotice>
 
     return $ReferenceCopyWith<$Res>(_value.payment!, (value) {
       return _then(_value.copyWith(payment: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get paymentDateElement {
-    if (_value.paymentDateElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.paymentDateElement!, (value) {
-      return _then(_value.copyWith(paymentDateElement: value) as $Val);
     });
   }
 
@@ -558,25 +493,15 @@ abstract class _$$PaymentNoticeImplCopyWith<$Res>
   @override
   $FhirMetaCopyWith<$Res>? get meta;
   @override
-  $ElementCopyWith<$Res>? get implicitRulesElement;
-  @override
-  $ElementCopyWith<$Res>? get languageElement;
-  @override
   $NarrativeCopyWith<$Res>? get text;
-  @override
-  $ElementCopyWith<$Res>? get statusElement;
   @override
   $ReferenceCopyWith<$Res>? get request;
   @override
   $ReferenceCopyWith<$Res>? get response;
   @override
-  $ElementCopyWith<$Res>? get createdElement;
-  @override
   $ReferenceCopyWith<$Res>? get reporter;
   @override
   $ReferenceCopyWith<$Res>? get payment;
-  @override
-  $ElementCopyWith<$Res>? get paymentDateElement;
   @override
   $ReferenceCopyWith<$Res>? get payee;
   @override
@@ -1552,30 +1477,17 @@ abstract class $PaymentReconciliationCopyWith<$Res> {
       List<PaymentReconciliationProcessNote>? processNote});
 
   $FhirMetaCopyWith<$Res>? get meta;
-  $ElementCopyWith<$Res>? get implicitRulesElement;
-  $ElementCopyWith<$Res>? get languageElement;
   $NarrativeCopyWith<$Res>? get text;
   $CodeableConceptCopyWith<$Res> get type;
-  $ElementCopyWith<$Res>? get statusElement;
   $CodeableConceptCopyWith<$Res>? get kind;
   $PeriodCopyWith<$Res>? get period;
-  $ElementCopyWith<$Res>? get createdElement;
   $ReferenceCopyWith<$Res>? get enterer;
   $CodeableConceptCopyWith<$Res>? get issuerType;
   $ReferenceCopyWith<$Res>? get paymentIssuer;
   $ReferenceCopyWith<$Res>? get request;
   $ReferenceCopyWith<$Res>? get requestor;
-  $ElementCopyWith<$Res>? get outcomeElement;
-  $ElementCopyWith<$Res>? get dispositionElement;
-  $ElementCopyWith<$Res>? get dateElement;
   $ReferenceCopyWith<$Res>? get location;
   $CodeableConceptCopyWith<$Res>? get method;
-  $ElementCopyWith<$Res>? get cardBrandElement;
-  $ElementCopyWith<$Res>? get accountNumberElement;
-  $ElementCopyWith<$Res>? get expirationDateElement;
-  $ElementCopyWith<$Res>? get processorElement;
-  $ElementCopyWith<$Res>? get referenceNumberElement;
-  $ElementCopyWith<$Res>? get authorizationElement;
   $MoneyCopyWith<$Res>? get tenderedAmount;
   $MoneyCopyWith<$Res>? get returnedAmount;
   $MoneyCopyWith<$Res> get amount;
@@ -1871,30 +1783,6 @@ class _$PaymentReconciliationCopyWithImpl<$Res,
 
   @override
   @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get implicitRulesElement {
-    if (_value.implicitRulesElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.implicitRulesElement!, (value) {
-      return _then(_value.copyWith(implicitRulesElement: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get languageElement {
-    if (_value.languageElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.languageElement!, (value) {
-      return _then(_value.copyWith(languageElement: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
     if (_value.text == null) {
       return null;
@@ -1910,18 +1798,6 @@ class _$PaymentReconciliationCopyWithImpl<$Res,
   $CodeableConceptCopyWith<$Res> get type {
     return $CodeableConceptCopyWith<$Res>(_value.type, (value) {
       return _then(_value.copyWith(type: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get statusElement {
-    if (_value.statusElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.statusElement!, (value) {
-      return _then(_value.copyWith(statusElement: value) as $Val);
     });
   }
 
@@ -1946,18 +1822,6 @@ class _$PaymentReconciliationCopyWithImpl<$Res,
 
     return $PeriodCopyWith<$Res>(_value.period!, (value) {
       return _then(_value.copyWith(period: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get createdElement {
-    if (_value.createdElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.createdElement!, (value) {
-      return _then(_value.copyWith(createdElement: value) as $Val);
     });
   }
 
@@ -2023,42 +1887,6 @@ class _$PaymentReconciliationCopyWithImpl<$Res,
 
   @override
   @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get outcomeElement {
-    if (_value.outcomeElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.outcomeElement!, (value) {
-      return _then(_value.copyWith(outcomeElement: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get dispositionElement {
-    if (_value.dispositionElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.dispositionElement!, (value) {
-      return _then(_value.copyWith(dispositionElement: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get dateElement {
-    if (_value.dateElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.dateElement!, (value) {
-      return _then(_value.copyWith(dateElement: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get location {
     if (_value.location == null) {
       return null;
@@ -2078,78 +1906,6 @@ class _$PaymentReconciliationCopyWithImpl<$Res,
 
     return $CodeableConceptCopyWith<$Res>(_value.method!, (value) {
       return _then(_value.copyWith(method: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get cardBrandElement {
-    if (_value.cardBrandElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.cardBrandElement!, (value) {
-      return _then(_value.copyWith(cardBrandElement: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get accountNumberElement {
-    if (_value.accountNumberElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.accountNumberElement!, (value) {
-      return _then(_value.copyWith(accountNumberElement: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get expirationDateElement {
-    if (_value.expirationDateElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.expirationDateElement!, (value) {
-      return _then(_value.copyWith(expirationDateElement: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get processorElement {
-    if (_value.processorElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.processorElement!, (value) {
-      return _then(_value.copyWith(processorElement: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get referenceNumberElement {
-    if (_value.referenceNumberElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.referenceNumberElement!, (value) {
-      return _then(_value.copyWith(referenceNumberElement: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get authorizationElement {
-    if (_value.authorizationElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.authorizationElement!, (value) {
-      return _then(_value.copyWith(authorizationElement: value) as $Val);
     });
   }
 
@@ -2276,21 +2032,13 @@ abstract class _$$PaymentReconciliationImplCopyWith<$Res>
   @override
   $FhirMetaCopyWith<$Res>? get meta;
   @override
-  $ElementCopyWith<$Res>? get implicitRulesElement;
-  @override
-  $ElementCopyWith<$Res>? get languageElement;
-  @override
   $NarrativeCopyWith<$Res>? get text;
   @override
   $CodeableConceptCopyWith<$Res> get type;
   @override
-  $ElementCopyWith<$Res>? get statusElement;
-  @override
   $CodeableConceptCopyWith<$Res>? get kind;
   @override
   $PeriodCopyWith<$Res>? get period;
-  @override
-  $ElementCopyWith<$Res>? get createdElement;
   @override
   $ReferenceCopyWith<$Res>? get enterer;
   @override
@@ -2302,27 +2050,9 @@ abstract class _$$PaymentReconciliationImplCopyWith<$Res>
   @override
   $ReferenceCopyWith<$Res>? get requestor;
   @override
-  $ElementCopyWith<$Res>? get outcomeElement;
-  @override
-  $ElementCopyWith<$Res>? get dispositionElement;
-  @override
-  $ElementCopyWith<$Res>? get dateElement;
-  @override
   $ReferenceCopyWith<$Res>? get location;
   @override
   $CodeableConceptCopyWith<$Res>? get method;
-  @override
-  $ElementCopyWith<$Res>? get cardBrandElement;
-  @override
-  $ElementCopyWith<$Res>? get accountNumberElement;
-  @override
-  $ElementCopyWith<$Res>? get expirationDateElement;
-  @override
-  $ElementCopyWith<$Res>? get processorElement;
-  @override
-  $ElementCopyWith<$Res>? get referenceNumberElement;
-  @override
-  $ElementCopyWith<$Res>? get authorizationElement;
   @override
   $MoneyCopyWith<$Res>? get tenderedAmount;
   @override
@@ -3672,15 +3402,12 @@ abstract class $PaymentReconciliationAllocationCopyWith<$Res> {
   $IdentifierCopyWith<$Res>? get identifier;
   $IdentifierCopyWith<$Res>? get predecessor;
   $ReferenceCopyWith<$Res>? get target;
-  $ElementCopyWith<$Res>? get targetItemStringElement;
   $IdentifierCopyWith<$Res>? get targetItemIdentifier;
-  $ElementCopyWith<$Res>? get targetItemPositiveIntElement;
   $ReferenceCopyWith<$Res>? get encounter;
   $ReferenceCopyWith<$Res>? get account;
   $CodeableConceptCopyWith<$Res>? get type;
   $ReferenceCopyWith<$Res>? get submitter;
   $ReferenceCopyWith<$Res>? get response;
-  $ElementCopyWith<$Res>? get dateElement;
   $ReferenceCopyWith<$Res>? get responsible;
   $ReferenceCopyWith<$Res>? get payee;
   $MoneyCopyWith<$Res>? get amount;
@@ -3848,18 +3575,6 @@ class _$PaymentReconciliationAllocationCopyWithImpl<$Res,
 
   @override
   @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get targetItemStringElement {
-    if (_value.targetItemStringElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.targetItemStringElement!, (value) {
-      return _then(_value.copyWith(targetItemStringElement: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get targetItemIdentifier {
     if (_value.targetItemIdentifier == null) {
       return null;
@@ -3867,20 +3582,6 @@ class _$PaymentReconciliationAllocationCopyWithImpl<$Res,
 
     return $IdentifierCopyWith<$Res>(_value.targetItemIdentifier!, (value) {
       return _then(_value.copyWith(targetItemIdentifier: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get targetItemPositiveIntElement {
-    if (_value.targetItemPositiveIntElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.targetItemPositiveIntElement!,
-        (value) {
-      return _then(
-          _value.copyWith(targetItemPositiveIntElement: value) as $Val);
     });
   }
 
@@ -3941,18 +3642,6 @@ class _$PaymentReconciliationAllocationCopyWithImpl<$Res,
 
     return $ReferenceCopyWith<$Res>(_value.response!, (value) {
       return _then(_value.copyWith(response: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get dateElement {
-    if (_value.dateElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.dateElement!, (value) {
-      return _then(_value.copyWith(dateElement: value) as $Val);
     });
   }
 
@@ -4033,11 +3722,7 @@ abstract class _$$PaymentReconciliationAllocationImplCopyWith<$Res>
   @override
   $ReferenceCopyWith<$Res>? get target;
   @override
-  $ElementCopyWith<$Res>? get targetItemStringElement;
-  @override
   $IdentifierCopyWith<$Res>? get targetItemIdentifier;
-  @override
-  $ElementCopyWith<$Res>? get targetItemPositiveIntElement;
   @override
   $ReferenceCopyWith<$Res>? get encounter;
   @override
@@ -4048,8 +3733,6 @@ abstract class _$$PaymentReconciliationAllocationImplCopyWith<$Res>
   $ReferenceCopyWith<$Res>? get submitter;
   @override
   $ReferenceCopyWith<$Res>? get response;
-  @override
-  $ElementCopyWith<$Res>? get dateElement;
   @override
   $ReferenceCopyWith<$Res>? get responsible;
   @override
@@ -4694,9 +4377,6 @@ abstract class $PaymentReconciliationProcessNoteCopyWith<$Res> {
       @JsonKey(name: '_type') Element? typeElement,
       String? text,
       @JsonKey(name: '_text') Element? textElement});
-
-  $ElementCopyWith<$Res>? get typeElement;
-  $ElementCopyWith<$Res>? get textElement;
 }
 
 /// @nodoc
@@ -4752,30 +4432,6 @@ class _$PaymentReconciliationProcessNoteCopyWithImpl<$Res,
               as Element?,
     ) as $Val);
   }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get typeElement {
-    if (_value.typeElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.typeElement!, (value) {
-      return _then(_value.copyWith(typeElement: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $ElementCopyWith<$Res>? get textElement {
-    if (_value.textElement == null) {
-      return null;
-    }
-
-    return $ElementCopyWith<$Res>(_value.textElement!, (value) {
-      return _then(_value.copyWith(textElement: value) as $Val);
-    });
-  }
 }
 
 /// @nodoc
@@ -4795,11 +4451,6 @@ abstract class _$$PaymentReconciliationProcessNoteImplCopyWith<$Res>
       @JsonKey(name: '_type') Element? typeElement,
       String? text,
       @JsonKey(name: '_text') Element? textElement});
-
-  @override
-  $ElementCopyWith<$Res>? get typeElement;
-  @override
-  $ElementCopyWith<$Res>? get textElement;
 }
 
 /// @nodoc

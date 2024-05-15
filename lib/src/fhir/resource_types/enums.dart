@@ -256,192 +256,197 @@ enum MimeType {
         return MimeType.text_csv;
       case 'application/msword':
         return MimeType.application_msword;
-      case 'application/vnd.ms-fontobject':
+      case 'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
         return MimeType
             .application_vnd_openxmlformats_officedocument_wordprocessingml_document;
-      case 'application/epub+zip':
+      case 'application/vnd.ms-fontobject':
         return MimeType.application_vnd_ms_fontobject;
-      case 'application/gzip':
+      case 'application/epub+zip':
         return MimeType.application_epub_zip;
-      case 'image/gif':
+      case 'application/gzip':
         return MimeType.application_gzip;
-      case 'text/html':
+      case 'image/gif':
         return MimeType.image_gif;
-      case 'image/vnd.microsoft.icon':
+      case 'text/html':
         return MimeType.text_html;
-      case 'text/calendar':
+      case 'image/vnd.microsoft.icon':
         return MimeType.image_vnd_microsoft_icon;
-      case 'application/java-archive':
+      case 'text/calendar':
         return MimeType.text_calendar;
-      case 'image/jpeg':
+      case 'application/java-archive':
         return MimeType.application_java_archive;
-      case 'text/javascript':
+      case 'image/jpeg':
         return MimeType.image_jpeg;
-      case 'application/json':
+      case 'text/javascript':
         return MimeType.text_javascript;
-      case 'application/ld+json':
+      case 'application/json':
         return MimeType.application_json;
-      case 'audio/midi':
+      case 'application/ld+json':
         return MimeType.application_ld_json;
-      case 'audio/x-midi':
+      case 'audio/midi':
         return MimeType.audio_midi;
-      case 'audio/mpeg':
+      case 'audio/x-midi':
         return MimeType.audio_x_midi;
-      case 'video/mp4':
+      case 'audio/mpeg':
         return MimeType.audio_mpeg;
-      case 'video/mpeg':
+      case 'video/mp4':
         return MimeType.video_mp4;
-      case 'application/vnd.apple.installer+xml':
+      case 'video/mpeg':
         return MimeType.video_mpeg;
-      case 'application/vnd.oasis.opendocument.presentation':
+      case 'application/vnd.apple.installer+xml':
         return MimeType.application_vnd_apple_installer_xml;
-      case 'application/vnd.oasis.opendocument.spreadsheet':
+      case 'application/vnd.oasis.opendocument.presentation':
         return MimeType.application_vnd_oasis_opendocument_presentation;
-      case 'application/vnd.oasis.opendocument.text':
+      case 'application/vnd.oasis.opendocument.spreadsheet':
         return MimeType.application_vnd_oasis_opendocument_spreadsheet;
-      case 'audio/ogg':
+      case 'application/vnd.oasis.opendocument.text':
         return MimeType.application_vnd_oasis_opendocument_text;
-      case 'video/ogg':
+      case 'audio/ogg':
         return MimeType.audio_ogg;
-      case 'application/ogg':
+      case 'video/ogg':
         return MimeType.video_ogg;
-      case 'audio/opus':
+      case 'application/ogg':
         return MimeType.application_ogg;
-      case 'font/otf':
+      case 'audio/opus':
         return MimeType.audio_opus;
-      case 'image/png':
+      case 'font/otf':
         return MimeType.font_otf;
-      case 'application/pdf':
+      case 'image/png':
         return MimeType.image_png;
-      case 'application/x-httpd-php':
+      case 'application/pdf':
         return MimeType.application_pdf;
-      case 'application/vnd.ms-powerpoint':
+      case 'application/x-httpd-php':
         return MimeType.application_x_httpd_php;
-      case 'application/vnd.rar':
+      case 'application/vnd.ms-powerpoint':
         return MimeType.application_vnd_ms_powerpoint;
-      case 'application/rtf':
+      case 'application/vnd.openxmlformats-officedocument.presentationml.presentation':
         return MimeType
             .application_vnd_openxmlformats_officedocument_presentationml_presentation;
-      case 'application/x-sh':
+      case 'application/vnd.rar':
         return MimeType.application_vnd_rar;
-      case 'image/svg+xml':
+      case 'application/rtf':
         return MimeType.application_rtf;
-      case 'application/x-tar':
+      case 'application/x-sh':
         return MimeType.application_x_sh;
-      case 'image/tiff':
+      case 'image/svg+xml':
         return MimeType.image_svg_xml;
-      case 'video/mp2t':
+      case 'application/x-tar':
         return MimeType.application_x_tar;
-      case 'font/ttf':
+      case 'image/tiff':
         return MimeType.image_tiff;
-      case 'text/plain':
+      case 'video/mp2t':
         return MimeType.video_mp2t;
-      case 'application/vnd.visio':
+      case 'font/ttf':
         return MimeType.font_ttf;
-      case 'audio/wav':
+      case 'text/plain':
         return MimeType.text_plain;
-      case 'audio/webm':
+      case 'application/vnd.visio':
         return MimeType.application_vnd_visio;
-      case 'video/webm':
+      case 'audio/wav':
         return MimeType.audio_wav;
-      case 'image/webp':
+      case 'audio/webm':
         return MimeType.audio_webm;
-      case 'font/woff':
+      case 'video/webm':
         return MimeType.video_webm;
-      case 'font/woff2':
+      case 'image/webp':
         return MimeType.image_webp;
-      case 'application/xhtml+xml':
+      case 'font/woff':
         return MimeType.font_woff;
-      case 'application/vnd.ms-excel':
+      case 'font/woff2':
         return MimeType.font_woff2;
-      case 'application/xml':
+      case 'application/xhtml+xml':
         return MimeType.application_xhtml_xml;
-      case 'text/xml':
+      case 'application/vnd.ms-excel':
         return MimeType.application_vnd_ms_excel;
-      case 'application/atom+xml':
+      case 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
         return MimeType
             .application_vnd_openxmlformats_officedocument_spreadsheetml_sheet;
-      case 'application/vnd.mozilla.xul+xml':
+      case 'application/xml':
         return MimeType.application_xml;
-      case 'application/zip':
+      case 'text/xml':
         return MimeType.text_xml;
-      case 'video/3gpp':
+      case 'application/atom+xml':
         return MimeType.application_atom_xml;
-      case 'audio/3gpp':
+      case 'application/vnd.mozilla.xul+xml':
         return MimeType.application_vnd_mozilla_xul_xml;
-      case 'video/3gpp2':
+      case 'application/zip':
         return MimeType.application_zip;
-      case 'audio/3gpp2':
+      case 'video/3gpp':
         return MimeType.video_3gpp;
-      case 'application/x-7z-compressed':
+      case 'audio/3gpp':
         return MimeType.audio_3gpp;
-      case 'text/hl7v2':
+      case 'video/3gpp2':
         return MimeType.video_3gpp2;
-      case 'x-application/hl7-v2+er7':
+      case 'audio/3gpp2':
         return MimeType.audio_3gpp2;
-      case 'text/rtf':
+      case 'application/x-7z-compressed':
         return MimeType.application_x_7z_compressed;
-      case 'application/cda+xml':
+      case 'text/hl7v2':
         return MimeType.text_hl7v2;
-      case 'application/fhir+json':
+      case 'x-application/hl7-v2+er7':
         return MimeType.x_application_hl7_v2_er7;
-      case 'application/fhir+xml':
+      case 'text/rtf':
         return MimeType.text_rtf;
-      case 'application/fhir+ndjson':
+      case 'application/cda+xml':
         return MimeType.application_cda_xml;
-      case 'application/json+fhir':
+      case 'application/fhir+json':
         return MimeType.application_fhir_json;
-      case 'application/dicom':
+      case 'application/fhir+xml':
         return MimeType.application_fhir_xml;
-      case 'application/dicom; variant=DICOM WADO-RS':
+      case 'application/fhir+ndjson':
         return MimeType.application_fhir_ndjson;
-      case 'application/dicom; variant=DICOM STOW-RS':
+      case 'application/json+fhir':
         return MimeType.application_json_fhir;
-      case 'application/dicom; variant=DICOM QIDO-RS':
+      case 'application/dicom':
         return MimeType.application_dicom;
-      case 'application/dicom; variant=DICOM UPS-RS':
+      case 'application/dicom; variant=DICOM WADO-RS':
         return MimeType.application_dicom_variant_dicom_wado_rs;
-      case 'application/dicom; variant=DICOM WADO-URI':
+      case 'application/dicom; variant=DICOM STOW-RS':
         return MimeType.application_dicom_variant_dicom_stow_rs;
-      case 'application':
+      case 'application/dicom; variant=DICOM QIDO-RS':
         return MimeType.application_dicom_variant_dicom_qido_rs;
-      case 'audio':
+      case 'application/dicom; variant=DICOM UPS-RS':
         return MimeType.application_dicom_variant_dicom_ups_rs;
-      case 'audio/basic':
+      case 'application/dicom; variant=DICOM WADO-URI':
         return MimeType.application_dicom_variant_dicom_wado_uri;
-      case 'audio/k32adpcm':
+      case 'application':
         return MimeType.application;
-      case 'image':
+      case 'audio':
         return MimeType.audio;
-      case 'image/g3fax':
+      case 'audio/basic':
         return MimeType.audio_basic;
-      case 'model':
+      case 'audio/k32adpcm':
         return MimeType.audio_k32adpcm;
-      case 'model/vrml':
+      case 'image':
         return MimeType.image;
-      case 'multipart':
+      case 'image/g3fax':
         return MimeType.image_g3fax;
-      case 'multipart/x-hl7-cda-level-one':
+      case 'model':
         return MimeType.model;
-      case 'multipart/x-hl7-cda-level1':
+      case 'model/vrml':
         return MimeType.model_vrml;
-      case 'text':
+      case 'multipart':
         return MimeType.multipart;
-      case 'text/sgml':
+      case 'multipart/x-hl7-cda-level-one':
         return MimeType.multipart_x_hl7_cda_level_one;
-      case 'text/x-hl7-ft':
+      case 'multipart/x-hl7-cda-level1':
         return MimeType.multipart_x_hl7_cda_level1;
-      case 'text/x-hl7-text+xml':
+      case 'text':
         return MimeType.text;
-      case 'video':
+      case 'text/sgml':
         return MimeType.text_sgml;
-      case 'video/quicktime':
+      case 'text/x-hl7-ft':
         return MimeType.text_x_hl7_ft;
-      case 'video/x-avi':
+      case 'text/x-hl7-text+xml':
         return MimeType.text_x_hl7_text_xml;
-      case 'video/x-ms-wmv':
+      case 'video':
         return MimeType.video;
-
+      case 'video/quicktime':
+        return MimeType.video_quicktime;
+      case 'video/x-avi':
+        return MimeType.video_x_avi;
+      case 'video/x-ms-wmv':
+        return MimeType.video_x_ms_wmv;
       default:
         return null;
     }
@@ -489,189 +494,189 @@ enum MimeType {
         return 'application/msword';
       case MimeType
             .application_vnd_openxmlformats_officedocument_wordprocessingml_document:
-        return 'application/vnd.ms-fontobject';
+        return 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
       case MimeType.application_vnd_ms_fontobject:
-        return 'application/epub+zip';
+        return 'application/vnd.ms-fontobject';
       case MimeType.application_epub_zip:
-        return 'application/gzip';
+        return 'application/epub+zip';
       case MimeType.application_gzip:
-        return 'image/gif';
+        return 'application/gzip';
       case MimeType.image_gif:
-        return 'text/html';
+        return 'image/gif';
       case MimeType.text_html:
-        return 'image/vnd.microsoft.icon';
+        return 'text/html';
       case MimeType.image_vnd_microsoft_icon:
-        return 'text/calendar';
+        return 'image/vnd.microsoft.icon';
       case MimeType.text_calendar:
-        return 'application/java-archive';
+        return 'text/calendar';
       case MimeType.application_java_archive:
-        return 'image/jpeg';
+        return 'application/java-archive';
       case MimeType.image_jpeg:
-        return 'text/javascript';
+        return 'image/jpeg';
       case MimeType.text_javascript:
-        return 'application/json';
+        return 'text/javascript';
       case MimeType.application_json:
-        return 'application/ld+json';
+        return 'application/json';
       case MimeType.application_ld_json:
-        return 'audio/midi';
+        return 'application/ld+json';
       case MimeType.audio_midi:
-        return 'audio/x-midi';
+        return 'audio/midi';
       case MimeType.audio_x_midi:
-        return 'audio/mpeg';
+        return 'audio/x-midi';
       case MimeType.audio_mpeg:
-        return 'video/mp4';
+        return 'audio/mpeg';
       case MimeType.video_mp4:
-        return 'video/mpeg';
+        return 'video/mp4';
       case MimeType.video_mpeg:
-        return 'application/vnd.apple.installer+xml';
+        return 'video/mpeg';
       case MimeType.application_vnd_apple_installer_xml:
-        return 'application/vnd.oasis.opendocument.presentation';
+        return 'application/vnd.apple.installer+xml';
       case MimeType.application_vnd_oasis_opendocument_presentation:
-        return 'application/vnd.oasis.opendocument.spreadsheet';
+        return 'application/vnd.oasis.opendocument.presentation';
       case MimeType.application_vnd_oasis_opendocument_spreadsheet:
-        return 'application/vnd.oasis.opendocument.text';
+        return 'application/vnd.oasis.opendocument.spreadsheet';
       case MimeType.application_vnd_oasis_opendocument_text:
-        return 'audio/ogg';
+        return 'application/vnd.oasis.opendocument.text';
       case MimeType.audio_ogg:
-        return 'video/ogg';
+        return 'audio/ogg';
       case MimeType.video_ogg:
-        return 'application/ogg';
+        return 'video/ogg';
       case MimeType.application_ogg:
-        return 'audio/opus';
+        return 'application/ogg';
       case MimeType.audio_opus:
-        return 'font/otf';
+        return 'audio/opus';
       case MimeType.font_otf:
-        return 'image/png';
+        return 'font/otf';
       case MimeType.image_png:
-        return 'application/pdf';
+        return 'image/png';
       case MimeType.application_pdf:
-        return 'application/x-httpd-php';
+        return 'application/pdf';
       case MimeType.application_x_httpd_php:
-        return 'application/vnd.ms-powerpoint';
+        return 'application/x-httpd-php';
       case MimeType.application_vnd_ms_powerpoint:
-        return 'application/vnd.rar';
+        return 'application/vnd.ms-powerpoint';
       case MimeType
             .application_vnd_openxmlformats_officedocument_presentationml_presentation:
-        return 'application/rtf';
+        return 'application/vnd.openxmlformats-officedocument.presentationml.presentation';
       case MimeType.application_vnd_rar:
-        return 'application/x-sh';
+        return 'application/vnd.rar';
       case MimeType.application_rtf:
-        return 'image/svg+xml';
+        return 'application/rtf';
       case MimeType.application_x_sh:
-        return 'application/x-tar';
+        return 'application/x-sh';
       case MimeType.image_svg_xml:
-        return 'image/tiff';
+        return 'image/svg+xml';
       case MimeType.application_x_tar:
-        return 'video/mp2t';
+        return 'application/x-tar';
       case MimeType.image_tiff:
-        return 'font/ttf';
+        return 'image/tiff';
       case MimeType.video_mp2t:
-        return 'text/plain';
+        return 'video/mp2t';
       case MimeType.font_ttf:
-        return 'application/vnd.visio';
+        return 'font/ttf';
       case MimeType.text_plain:
-        return 'audio/wav';
+        return 'text/plain';
       case MimeType.application_vnd_visio:
-        return 'audio/webm';
+        return 'application/vnd.visio';
       case MimeType.audio_wav:
-        return 'video/webm';
+        return 'audio/wav';
       case MimeType.audio_webm:
-        return 'image/webp';
+        return 'audio/webm';
       case MimeType.video_webm:
-        return 'font/woff';
+        return 'video/webm';
       case MimeType.image_webp:
-        return 'font/woff2';
+        return 'image/webp';
       case MimeType.font_woff:
-        return 'application/xhtml+xml';
+        return 'font/woff';
       case MimeType.font_woff2:
-        return 'application/vnd.ms-excel';
+        return 'font/woff2';
       case MimeType.application_xhtml_xml:
-        return 'application/xml';
+        return 'application/xhtml+xml';
       case MimeType.application_vnd_ms_excel:
-        return 'text/xml';
+        return 'application/vnd.ms-excel';
       case MimeType
             .application_vnd_openxmlformats_officedocument_spreadsheetml_sheet:
-        return 'application/atom+xml';
+        return 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
       case MimeType.application_xml:
-        return 'application/vnd.mozilla.xul+xml';
+        return 'application/xml';
       case MimeType.text_xml:
-        return 'application/zip';
+        return 'text/xml';
       case MimeType.application_atom_xml:
-        return 'video/3gpp';
+        return 'application/atom+xml';
       case MimeType.application_vnd_mozilla_xul_xml:
-        return 'audio/3gpp';
+        return 'application/vnd.mozilla.xul+xml';
       case MimeType.application_zip:
-        return 'video/3gpp2';
+        return 'application/zip';
       case MimeType.video_3gpp:
-        return 'audio/3gpp2';
+        return 'video/3gpp';
       case MimeType.audio_3gpp:
-        return 'application/x-7z-compressed';
+        return 'audio/3gpp';
       case MimeType.video_3gpp2:
-        return 'text/hl7v2';
+        return 'video/3gpp2';
       case MimeType.audio_3gpp2:
-        return 'x-application/hl7-v2+er7';
+        return 'audio/3gpp2';
       case MimeType.application_x_7z_compressed:
-        return 'text/rtf';
+        return 'application/x-7z-compressed';
       case MimeType.text_hl7v2:
-        return 'application/cda+xml';
+        return 'text/hl7v2';
       case MimeType.x_application_hl7_v2_er7:
-        return 'application/fhir+json';
+        return 'x-application/hl7-v2+er7';
       case MimeType.text_rtf:
-        return 'application/fhir+xml';
+        return 'text/rtf';
       case MimeType.application_cda_xml:
-        return 'application/fhir+ndjson';
+        return 'application/cda+xml';
       case MimeType.application_fhir_json:
-        return 'application/json+fhir';
+        return 'application/fhir+json';
       case MimeType.application_fhir_xml:
-        return 'application/dicom';
+        return 'application/fhir+xml';
       case MimeType.application_fhir_ndjson:
-        return 'application/dicom; variant=DICOM WADO-RS';
+        return 'application/fhir+ndjson';
       case MimeType.application_json_fhir:
-        return 'application/dicom; variant=DICOM STOW-RS';
+        return 'application/json+fhir';
       case MimeType.application_dicom:
-        return 'application/dicom; variant=DICOM QIDO-RS';
+        return 'application/dicom';
       case MimeType.application_dicom_variant_dicom_wado_rs:
-        return 'application/dicom; variant=DICOM UPS-RS';
+        return 'application/dicom; variant=DICOM WADO-RS';
       case MimeType.application_dicom_variant_dicom_stow_rs:
-        return 'application/dicom; variant=DICOM WADO-URI';
+        return 'application/dicom; variant=DICOM STOW-RS';
       case MimeType.application_dicom_variant_dicom_qido_rs:
-        return 'application';
+        return 'application/dicom; variant=DICOM QIDO-RS';
       case MimeType.application_dicom_variant_dicom_ups_rs:
-        return 'audio';
+        return 'application/dicom; variant=DICOM UPS-RS';
       case MimeType.application_dicom_variant_dicom_wado_uri:
-        return 'audio/basic';
+        return 'application/dicom; variant=DICOM WADO-URI';
       case MimeType.application:
-        return 'audio/k32adpcm';
+        return 'application';
       case MimeType.audio:
-        return 'image';
+        return 'audio';
       case MimeType.audio_basic:
-        return 'image/g3fax';
+        return 'audio/basic';
       case MimeType.audio_k32adpcm:
-        return 'model';
+        return 'audio/k32adpcm';
       case MimeType.image:
-        return 'model/vrml';
+        return 'image';
       case MimeType.image_g3fax:
-        return 'multipart';
+        return 'image/g3fax';
       case MimeType.model:
-        return 'multipart/x-hl7-cda-level-one';
+        return 'model';
       case MimeType.model_vrml:
-        return 'multipart/x-hl7-cda-level1';
+        return 'model/vrml';
       case MimeType.multipart:
-        return 'text';
+        return 'multipart';
       case MimeType.multipart_x_hl7_cda_level_one:
-        return 'text/sgml';
+        return 'multipart/x-hl7-cda-level-one';
       case MimeType.multipart_x_hl7_cda_level1:
-        return 'text/x-hl7-ft';
+        return 'multipart/x-hl7-cda-level1';
       case MimeType.text:
-        return 'text/x-hl7-text+xml';
+        return 'text';
       case MimeType.text_sgml:
-        return 'video';
+        return 'text/sgml';
       case MimeType.text_x_hl7_ft:
-        return 'video/quicktime';
+        return 'text/x-hl7-ft';
       case MimeType.text_x_hl7_text_xml:
-        return 'video/x-avi';
+        return 'text/x-hl7-text+xml';
       case MimeType.video:
-        return 'video/x-ms-wmv';
+        return 'video';
       case MimeType.video_quicktime:
         return 'video/quicktime';
       case MimeType.video_x_avi:

@@ -185,6 +185,9 @@ class Basic with Resource, _$Basic {
     Reference? author,
   }) = _Basic;
 
+  @override
+  String get fhirType => 'Basic';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -366,6 +369,9 @@ class Binary with Resource, _$Binary {
     /// [dataElement] ("_data") Extensions for data
     @JsonKey(name: '_data') Element? dataElement,
   }) = _Binary;
+
+  @override
+  String get fhirType => 'Binary';
 
   /// Produces a Yaml formatted String version of the object
   @override
@@ -568,6 +574,9 @@ class Bundle with Resource, _$Bundle {
     Resource? issues,
   }) = _Bundle;
 
+  @override
+  String get fhirType => 'Bundle';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -606,7 +615,7 @@ class Bundle with Resource, _$Bundle {
 
 /// [BundleLink] A container for a collection of resources.
 @freezed
-class BundleLink with _$BundleLink {
+class BundleLink with BackboneType, _$BundleLink {
   /// [BundleLink] A container for a collection of resources.
   const BundleLink._();
 
@@ -687,8 +696,8 @@ class BundleLink with _$BundleLink {
     @JsonKey(name: '_url') Element? urlElement,
   }) = _BundleLink;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'BundleLink';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory BundleLink.fromYaml(dynamic yaml) => yaml is String
@@ -716,15 +725,11 @@ class BundleLink with _$BundleLink {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [BundleEntry] A container for a collection of resources.
 @freezed
-class BundleEntry with _$BundleEntry {
+class BundleEntry with BackboneType, _$BundleEntry {
   /// [BundleEntry] A container for a collection of resources.
   const BundleEntry._();
 
@@ -856,8 +861,8 @@ class BundleEntry with _$BundleEntry {
     BundleResponse? response,
   }) = _BundleEntry;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'BundleEntry';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory BundleEntry.fromYaml(dynamic yaml) => yaml is String
@@ -885,15 +890,11 @@ class BundleEntry with _$BundleEntry {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [BundleSearch] A container for a collection of resources.
 @freezed
-class BundleSearch with _$BundleSearch {
+class BundleSearch with BackboneType, _$BundleSearch {
   /// [BundleSearch] A container for a collection of resources.
   const BundleSearch._();
 
@@ -974,8 +975,8 @@ class BundleSearch with _$BundleSearch {
     @JsonKey(name: '_score') Element? scoreElement,
   }) = _BundleSearch;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'BundleSearch';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory BundleSearch.fromYaml(dynamic yaml) => yaml is String
@@ -1003,15 +1004,11 @@ class BundleSearch with _$BundleSearch {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [BundleRequest] A container for a collection of resources.
 @freezed
-class BundleRequest with _$BundleRequest {
+class BundleRequest with BackboneType, _$BundleRequest {
   /// [BundleRequest] A container for a collection of resources.
   const BundleRequest._();
 
@@ -1152,8 +1149,8 @@ class BundleRequest with _$BundleRequest {
     @JsonKey(name: '_ifNoneExist') Element? ifNoneExistElement,
   }) = _BundleRequest;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'BundleRequest';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory BundleRequest.fromYaml(dynamic yaml) => yaml is String
@@ -1181,15 +1178,11 @@ class BundleRequest with _$BundleRequest {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [BundleResponse] A container for a collection of resources.
 @freezed
-class BundleResponse with _$BundleResponse {
+class BundleResponse with BackboneType, _$BundleResponse {
   /// [BundleResponse] A container for a collection of resources.
   const BundleResponse._();
 
@@ -1305,8 +1298,8 @@ class BundleResponse with _$BundleResponse {
     Resource? outcome,
   }) = _BundleResponse;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'BundleResponse';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory BundleResponse.fromYaml(dynamic yaml) => yaml is String
@@ -1334,10 +1327,6 @@ class BundleResponse with _$BundleResponse {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [Linkage] Identifies two or more records (resource instances) that refer to
@@ -1502,6 +1491,9 @@ class Linkage with Resource, _$Linkage {
     required List<LinkageItem> item,
   }) = _Linkage;
 
+  @override
+  String get fhirType => 'Linkage';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -1542,7 +1534,7 @@ class Linkage with Resource, _$Linkage {
 /// [LinkageItem] Identifies two or more records (resource instances) that
 ///  refer to the same real-world "occurrence".
 @freezed
-class LinkageItem with _$LinkageItem {
+class LinkageItem with BackboneType, _$LinkageItem {
   /// [LinkageItem] Identifies two or more records (resource instances) that
   ///  refer to the same real-world "occurrence".
   const LinkageItem._();
@@ -1618,8 +1610,8 @@ class LinkageItem with _$LinkageItem {
     required Reference resource,
   }) = _LinkageItem;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'LinkageItem';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory LinkageItem.fromYaml(dynamic yaml) => yaml is String
@@ -1647,10 +1639,6 @@ class LinkageItem with _$LinkageItem {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [MessageHeader] The header for a message exchange that is either requesting
@@ -1884,6 +1872,9 @@ class MessageHeader with Resource, _$MessageHeader {
     FhirCanonical? definition,
   }) = _MessageHeader;
 
+  @override
+  String get fhirType => 'MessageHeader';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -1927,7 +1918,7 @@ class MessageHeader with Resource, _$MessageHeader {
 ///  are typically transmitted in a bundle in which the MessageHeader resource
 ///  instance is the first resource in the bundle.
 @freezed
-class MessageHeaderDestination with _$MessageHeaderDestination {
+class MessageHeaderDestination with BackboneType, _$MessageHeaderDestination {
   /// [MessageHeaderDestination] The header for a message exchange that is either
   ///  requesting or responding to an action.  The reference(s) that are the
   ///  subject of the action as well as other information related to the action
@@ -2033,8 +2024,8 @@ class MessageHeaderDestination with _$MessageHeaderDestination {
     Reference? receiver,
   }) = _MessageHeaderDestination;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'MessageHeaderDestination';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory MessageHeaderDestination.fromYaml(dynamic yaml) => yaml is String
@@ -2062,10 +2053,6 @@ class MessageHeaderDestination with _$MessageHeaderDestination {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [MessageHeaderSource] The header for a message exchange that is either
@@ -2074,7 +2061,7 @@ class MessageHeaderDestination with _$MessageHeaderDestination {
 ///  are typically transmitted in a bundle in which the MessageHeader resource
 ///  instance is the first resource in the bundle.
 @freezed
-class MessageHeaderSource with _$MessageHeaderSource {
+class MessageHeaderSource with BackboneType, _$MessageHeaderSource {
   /// [MessageHeaderSource] The header for a message exchange that is either
   ///  requesting or responding to an action.  The reference(s) that are the
   ///  subject of the action as well as other information related to the action
@@ -2197,8 +2184,8 @@ class MessageHeaderSource with _$MessageHeaderSource {
     ContactPoint? contact,
   }) = _MessageHeaderSource;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'MessageHeaderSource';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory MessageHeaderSource.fromYaml(dynamic yaml) => yaml is String
@@ -2226,10 +2213,6 @@ class MessageHeaderSource with _$MessageHeaderSource {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [MessageHeaderResponse] The header for a message exchange that is either
@@ -2238,7 +2221,7 @@ class MessageHeaderSource with _$MessageHeaderSource {
 ///  are typically transmitted in a bundle in which the MessageHeader resource
 ///  instance is the first resource in the bundle.
 @freezed
-class MessageHeaderResponse with _$MessageHeaderResponse {
+class MessageHeaderResponse with BackboneType, _$MessageHeaderResponse {
   /// [MessageHeaderResponse] The header for a message exchange that is either
   ///  requesting or responding to an action.  The reference(s) that are the
   ///  subject of the action as well as other information related to the action
@@ -2327,8 +2310,8 @@ class MessageHeaderResponse with _$MessageHeaderResponse {
     Reference? details,
   }) = _MessageHeaderResponse;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'MessageHeaderResponse';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory MessageHeaderResponse.fromYaml(dynamic yaml) => yaml is String
@@ -2356,10 +2339,6 @@ class MessageHeaderResponse with _$MessageHeaderResponse {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [OperationOutcome] A collection of error, warning, or information messages
@@ -2501,6 +2480,9 @@ class OperationOutcome with Resource, _$OperationOutcome {
     required List<OperationOutcomeIssue> issue,
   }) = _OperationOutcome;
 
+  @override
+  String get fhirType => 'OperationOutcome';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -2541,7 +2523,7 @@ class OperationOutcome with Resource, _$OperationOutcome {
 /// [OperationOutcomeIssue] A collection of error, warning, or information
 ///  messages that result from a system action.
 @freezed
-class OperationOutcomeIssue with _$OperationOutcomeIssue {
+class OperationOutcomeIssue with BackboneType, _$OperationOutcomeIssue {
   /// [OperationOutcomeIssue] A collection of error, warning, or information
   ///  messages that result from a system action.
   const OperationOutcomeIssue._();
@@ -2681,8 +2663,8 @@ class OperationOutcomeIssue with _$OperationOutcomeIssue {
     @JsonKey(name: '_expression') List<Element>? expressionElement,
   }) = _OperationOutcomeIssue;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'OperationOutcomeIssue';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory OperationOutcomeIssue.fromYaml(dynamic yaml) => yaml is String
@@ -2710,10 +2692,6 @@ class OperationOutcomeIssue with _$OperationOutcomeIssue {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [Parameters] This resource is used to pass information into and back from
@@ -2826,6 +2804,9 @@ class Parameters with Resource, _$Parameters {
     List<ParametersParameter>? parameter,
   }) = _Parameters;
 
+  @override
+  String get fhirType => 'Parameters';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -2868,7 +2849,7 @@ class Parameters with Resource, _$Parameters {
 ///  messaging environment).  It is not persisted or allowed to be referenced
 ///  by other resources.
 @freezed
-class ParametersParameter with _$ParametersParameter {
+class ParametersParameter with BackboneType, _$ParametersParameter {
   /// [ParametersParameter] This resource is used to pass information into and
   ///  back from an operation (whether invoked directly from REST or within a
   ///  messaging environment).  It is not persisted or allowed to be referenced
@@ -3335,8 +3316,8 @@ class ParametersParameter with _$ParametersParameter {
     @JsonKey(name: 'part') List<ParametersParameter>? part_,
   }) = _ParametersParameter;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ParametersParameter';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ParametersParameter.fromYaml(dynamic yaml) => yaml is String
@@ -3364,10 +3345,6 @@ class ParametersParameter with _$ParametersParameter {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [Subscription] The subscription resource describes a particular client's
@@ -3687,6 +3664,9 @@ class Subscription with Resource, _$Subscription {
     @JsonKey(name: '_maxCount') Element? maxCountElement,
   }) = _Subscription;
 
+  @override
+  String get fhirType => 'Subscription';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -3727,7 +3707,7 @@ class Subscription with Resource, _$Subscription {
 /// [SubscriptionFilterBy] The subscription resource describes a particular
 ///  client's request to be notified about a SubscriptionTopic.
 @freezed
-class SubscriptionFilterBy with _$SubscriptionFilterBy {
+class SubscriptionFilterBy with BackboneType, _$SubscriptionFilterBy {
   /// [SubscriptionFilterBy] The subscription resource describes a particular
   ///  client's request to be notified about a SubscriptionTopic.
   const SubscriptionFilterBy._();
@@ -3846,8 +3826,8 @@ class SubscriptionFilterBy with _$SubscriptionFilterBy {
     @JsonKey(name: '_value') Element? valueElement,
   }) = _SubscriptionFilterBy;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'SubscriptionFilterBy';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory SubscriptionFilterBy.fromYaml(dynamic yaml) => yaml is String
@@ -3875,16 +3855,12 @@ class SubscriptionFilterBy with _$SubscriptionFilterBy {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [SubscriptionParameter] The subscription resource describes a particular
 ///  client's request to be notified about a SubscriptionTopic.
 @freezed
-class SubscriptionParameter with _$SubscriptionParameter {
+class SubscriptionParameter with BackboneType, _$SubscriptionParameter {
   /// [SubscriptionParameter] The subscription resource describes a particular
   ///  client's request to be notified about a SubscriptionTopic.
   const SubscriptionParameter._();
@@ -3971,8 +3947,8 @@ class SubscriptionParameter with _$SubscriptionParameter {
     @JsonKey(name: '_value') Element? valueElement,
   }) = _SubscriptionParameter;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'SubscriptionParameter';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory SubscriptionParameter.fromYaml(dynamic yaml) => yaml is String
@@ -4000,10 +3976,6 @@ class SubscriptionParameter with _$SubscriptionParameter {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [SubscriptionStatus] The SubscriptionStatus resource describes the state of
@@ -4209,6 +4181,9 @@ class SubscriptionStatus with Resource, _$SubscriptionStatus {
     List<CodeableConcept>? error,
   }) = _SubscriptionStatus;
 
+  @override
+  String get fhirType => 'SubscriptionStatus';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -4250,7 +4225,7 @@ class SubscriptionStatus with Resource, _$SubscriptionStatus {
 ///  describes the state of a Subscription during notifications.
 @freezed
 class SubscriptionStatusNotificationEvent
-    with _$SubscriptionStatusNotificationEvent {
+    with BackboneType, _$SubscriptionStatusNotificationEvent {
   /// [SubscriptionStatusNotificationEvent] The SubscriptionStatus resource
   ///  describes the state of a Subscription during notifications.
   const SubscriptionStatusNotificationEvent._();
@@ -4351,8 +4326,8 @@ class SubscriptionStatusNotificationEvent
     List<Reference>? additionalContext,
   }) = _SubscriptionStatusNotificationEvent;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'SubscriptionStatusNotificationEvent';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory SubscriptionStatusNotificationEvent.fromYaml(dynamic yaml) => yaml
@@ -4383,10 +4358,6 @@ class SubscriptionStatusNotificationEvent
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [SubscriptionTopic] Describes a stream of resource state changes or events
@@ -4831,6 +4802,9 @@ class SubscriptionTopic with Resource, _$SubscriptionTopic {
     List<SubscriptionTopicNotificationShape>? notificationShape,
   }) = _SubscriptionTopic;
 
+  @override
+  String get fhirType => 'SubscriptionTopic';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -4872,7 +4846,8 @@ class SubscriptionTopic with Resource, _$SubscriptionTopic {
 ///  changes or events and annotated with labels useful to filter projections
 ///  from this topic.
 @freezed
-class SubscriptionTopicResourceTrigger with _$SubscriptionTopicResourceTrigger {
+class SubscriptionTopicResourceTrigger
+    with BackboneType, _$SubscriptionTopicResourceTrigger {
   /// [SubscriptionTopicResourceTrigger] Describes a stream of resource state
   ///  changes or events and annotated with labels useful to filter projections
   ///  from this topic.
@@ -5011,8 +4986,8 @@ class SubscriptionTopicResourceTrigger with _$SubscriptionTopicResourceTrigger {
     @JsonKey(name: '_fhirPathCriteria') Element? fhirPathCriteriaElement,
   }) = _SubscriptionTopicResourceTrigger;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'SubscriptionTopicResourceTrigger';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory SubscriptionTopicResourceTrigger.fromYaml(dynamic yaml) => yaml
@@ -5043,17 +5018,14 @@ class SubscriptionTopicResourceTrigger with _$SubscriptionTopicResourceTrigger {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [SubscriptionTopicQueryCriteria] Describes a stream of resource state
 ///  changes or events and annotated with labels useful to filter projections
 ///  from this topic.
 @freezed
-class SubscriptionTopicQueryCriteria with _$SubscriptionTopicQueryCriteria {
+class SubscriptionTopicQueryCriteria
+    with BackboneType, _$SubscriptionTopicQueryCriteria {
   /// [SubscriptionTopicQueryCriteria] Describes a stream of resource state
   ///  changes or events and annotated with labels useful to filter projections
   ///  from this topic.
@@ -5186,8 +5158,8 @@ class SubscriptionTopicQueryCriteria with _$SubscriptionTopicQueryCriteria {
     @JsonKey(name: '_requireBoth') Element? requireBothElement,
   }) = _SubscriptionTopicQueryCriteria;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'SubscriptionTopicQueryCriteria';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory SubscriptionTopicQueryCriteria.fromYaml(dynamic yaml) => yaml
@@ -5217,17 +5189,14 @@ class SubscriptionTopicQueryCriteria with _$SubscriptionTopicQueryCriteria {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [SubscriptionTopicEventTrigger] Describes a stream of resource state
 ///  changes or events and annotated with labels useful to filter projections
 ///  from this topic.
 @freezed
-class SubscriptionTopicEventTrigger with _$SubscriptionTopicEventTrigger {
+class SubscriptionTopicEventTrigger
+    with BackboneType, _$SubscriptionTopicEventTrigger {
   /// [SubscriptionTopicEventTrigger] Describes a stream of resource state
   ///  changes or events and annotated with labels useful to filter projections
   ///  from this topic.
@@ -5335,8 +5304,8 @@ class SubscriptionTopicEventTrigger with _$SubscriptionTopicEventTrigger {
     @JsonKey(name: '_resource') Element? resourceElement,
   }) = _SubscriptionTopicEventTrigger;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'SubscriptionTopicEventTrigger';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory SubscriptionTopicEventTrigger.fromYaml(dynamic yaml) => yaml is String
@@ -5365,17 +5334,14 @@ class SubscriptionTopicEventTrigger with _$SubscriptionTopicEventTrigger {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [SubscriptionTopicCanFilterBy] Describes a stream of resource state changes
 ///  or events and annotated with labels useful to filter projections from this
 ///  topic.
 @freezed
-class SubscriptionTopicCanFilterBy with _$SubscriptionTopicCanFilterBy {
+class SubscriptionTopicCanFilterBy
+    with BackboneType, _$SubscriptionTopicCanFilterBy {
   /// [SubscriptionTopicCanFilterBy] Describes a stream of resource state changes
   ///  or events and annotated with labels useful to filter projections from this
   ///  topic.
@@ -5518,8 +5484,8 @@ class SubscriptionTopicCanFilterBy with _$SubscriptionTopicCanFilterBy {
     @JsonKey(name: '_modifier') List<Element>? modifierElement,
   }) = _SubscriptionTopicCanFilterBy;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'SubscriptionTopicCanFilterBy';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory SubscriptionTopicCanFilterBy.fromYaml(dynamic yaml) => yaml is String
@@ -5548,10 +5514,6 @@ class SubscriptionTopicCanFilterBy with _$SubscriptionTopicCanFilterBy {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [SubscriptionTopicNotificationShape] Describes a stream of resource state
@@ -5559,7 +5521,7 @@ class SubscriptionTopicCanFilterBy with _$SubscriptionTopicCanFilterBy {
 ///  from this topic.
 @freezed
 class SubscriptionTopicNotificationShape
-    with _$SubscriptionTopicNotificationShape {
+    with BackboneType, _$SubscriptionTopicNotificationShape {
   /// [SubscriptionTopicNotificationShape] Describes a stream of resource state
   ///  changes or events and annotated with labels useful to filter projections
   ///  from this topic.
@@ -5674,8 +5636,8 @@ class SubscriptionTopicNotificationShape
     @JsonKey(name: '_revInclude') List<Element>? revIncludeElement,
   }) = _SubscriptionTopicNotificationShape;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'SubscriptionTopicNotificationShape';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory SubscriptionTopicNotificationShape.fromYaml(dynamic yaml) => yaml
@@ -5706,8 +5668,4 @@ class SubscriptionTopicNotificationShape
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }

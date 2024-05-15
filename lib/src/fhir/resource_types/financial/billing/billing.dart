@@ -406,6 +406,9 @@ class Claim with Resource, _$Claim {
     Money? total,
   }) = _Claim;
 
+  @override
+  String get fhirType => 'Claim';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -445,7 +448,7 @@ class Claim with Resource, _$Claim {
 ///  which have been provided, or are to be provided, to a patient which is
 ///  sent to an insurer for reimbursement.
 @freezed
-class ClaimRelated with _$ClaimRelated {
+class ClaimRelated with BackboneType, _$ClaimRelated {
   /// [ClaimRelated] A provider issued list of professional services and products
   ///  which have been provided, or are to be provided, to a patient which is
   ///  sent to an insurer for reimbursement.
@@ -523,8 +526,8 @@ class ClaimRelated with _$ClaimRelated {
     Identifier? reference,
   }) = _ClaimRelated;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimRelated';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimRelated.fromYaml(dynamic yaml) => yaml is String
@@ -552,17 +555,13 @@ class ClaimRelated with _$ClaimRelated {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimPayee] A provider issued list of professional services and products
 ///  which have been provided, or are to be provided, to a patient which is
 ///  sent to an insurer for reimbursement.
 @freezed
-class ClaimPayee with _$ClaimPayee {
+class ClaimPayee with BackboneType, _$ClaimPayee {
   /// [ClaimPayee] A provider issued list of professional services and products
   ///  which have been provided, or are to be provided, to a patient which is
   ///  sent to an insurer for reimbursement.
@@ -635,8 +634,8 @@ class ClaimPayee with _$ClaimPayee {
     Reference? party,
   }) = _ClaimPayee;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimPayee';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimPayee.fromYaml(dynamic yaml) => yaml is String
@@ -664,17 +663,13 @@ class ClaimPayee with _$ClaimPayee {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimEvent] A provider issued list of professional services and products
 ///  which have been provided, or are to be provided, to a patient which is
 ///  sent to an insurer for reimbursement.
 @freezed
-class ClaimEvent with _$ClaimEvent {
+class ClaimEvent with BackboneType, _$ClaimEvent {
   /// [ClaimEvent] A provider issued list of professional services and products
   ///  which have been provided, or are to be provided, to a patient which is
   ///  sent to an insurer for reimbursement.
@@ -759,8 +754,8 @@ class ClaimEvent with _$ClaimEvent {
     Period? whenPeriod,
   }) = _ClaimEvent;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimEvent';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimEvent.fromYaml(dynamic yaml) => yaml is String
@@ -788,17 +783,13 @@ class ClaimEvent with _$ClaimEvent {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimCareTeam] A provider issued list of professional services and
 ///  products which have been provided, or are to be provided, to a patient
 ///  which is sent to an insurer for reimbursement.
 @freezed
-class ClaimCareTeam with _$ClaimCareTeam {
+class ClaimCareTeam with BackboneType, _$ClaimCareTeam {
   /// [ClaimCareTeam] A provider issued list of professional services and
   ///  products which have been provided, or are to be provided, to a patient
   ///  which is sent to an insurer for reimbursement.
@@ -900,8 +891,8 @@ class ClaimCareTeam with _$ClaimCareTeam {
     CodeableConcept? specialty,
   }) = _ClaimCareTeam;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimCareTeam';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimCareTeam.fromYaml(dynamic yaml) => yaml is String
@@ -929,17 +920,13 @@ class ClaimCareTeam with _$ClaimCareTeam {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimSupportingInfo] A provider issued list of professional services and
 ///  products which have been provided, or are to be provided, to a patient
 ///  which is sent to an insurer for reimbursement.
 @freezed
-class ClaimSupportingInfo with _$ClaimSupportingInfo {
+class ClaimSupportingInfo with BackboneType, _$ClaimSupportingInfo {
   /// [ClaimSupportingInfo] A provider issued list of professional services and
   ///  products which have been provided, or are to be provided, to a patient
   ///  which is sent to an insurer for reimbursement.
@@ -1112,8 +1099,8 @@ class ClaimSupportingInfo with _$ClaimSupportingInfo {
     CodeableConcept? reason,
   }) = _ClaimSupportingInfo;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimSupportingInfo';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimSupportingInfo.fromYaml(dynamic yaml) => yaml is String
@@ -1141,17 +1128,13 @@ class ClaimSupportingInfo with _$ClaimSupportingInfo {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimDiagnosis] A provider issued list of professional services and
 ///  products which have been provided, or are to be provided, to a patient
 ///  which is sent to an insurer for reimbursement.
 @freezed
-class ClaimDiagnosis with _$ClaimDiagnosis {
+class ClaimDiagnosis with BackboneType, _$ClaimDiagnosis {
   /// [ClaimDiagnosis] A provider issued list of professional services and
   ///  products which have been provided, or are to be provided, to a patient
   ///  which is sent to an insurer for reimbursement.
@@ -1248,8 +1231,8 @@ class ClaimDiagnosis with _$ClaimDiagnosis {
     CodeableConcept? onAdmission,
   }) = _ClaimDiagnosis;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimDiagnosis';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimDiagnosis.fromYaml(dynamic yaml) => yaml is String
@@ -1277,17 +1260,13 @@ class ClaimDiagnosis with _$ClaimDiagnosis {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimProcedure] A provider issued list of professional services and
 ///  products which have been provided, or are to be provided, to a patient
 ///  which is sent to an insurer for reimbursement.
 @freezed
-class ClaimProcedure with _$ClaimProcedure {
+class ClaimProcedure with BackboneType, _$ClaimProcedure {
   /// [ClaimProcedure] A provider issued list of professional services and
   ///  products which have been provided, or are to be provided, to a patient
   ///  which is sent to an insurer for reimbursement.
@@ -1392,8 +1371,8 @@ class ClaimProcedure with _$ClaimProcedure {
     List<Reference>? udi,
   }) = _ClaimProcedure;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimProcedure';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimProcedure.fromYaml(dynamic yaml) => yaml is String
@@ -1421,17 +1400,13 @@ class ClaimProcedure with _$ClaimProcedure {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimInsurance] A provider issued list of professional services and
 ///  products which have been provided, or are to be provided, to a patient
 ///  which is sent to an insurer for reimbursement.
 @freezed
-class ClaimInsurance with _$ClaimInsurance {
+class ClaimInsurance with BackboneType, _$ClaimInsurance {
   /// [ClaimInsurance] A provider issued list of professional services and
   ///  products which have been provided, or are to be provided, to a patient
   ///  which is sent to an insurer for reimbursement.
@@ -1569,8 +1544,8 @@ class ClaimInsurance with _$ClaimInsurance {
     Reference? claimResponse,
   }) = _ClaimInsurance;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimInsurance';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimInsurance.fromYaml(dynamic yaml) => yaml is String
@@ -1598,17 +1573,13 @@ class ClaimInsurance with _$ClaimInsurance {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimAccident] A provider issued list of professional services and
 ///  products which have been provided, or are to be provided, to a patient
 ///  which is sent to an insurer for reimbursement.
 @freezed
-class ClaimAccident with _$ClaimAccident {
+class ClaimAccident with BackboneType, _$ClaimAccident {
   /// [ClaimAccident] A provider issued list of professional services and
   ///  products which have been provided, or are to be provided, to a patient
   ///  which is sent to an insurer for reimbursement.
@@ -1700,8 +1671,8 @@ class ClaimAccident with _$ClaimAccident {
     Reference? locationReference,
   }) = _ClaimAccident;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimAccident';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimAccident.fromYaml(dynamic yaml) => yaml is String
@@ -1729,17 +1700,13 @@ class ClaimAccident with _$ClaimAccident {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimItem] A provider issued list of professional services and products
 ///  which have been provided, or are to be provided, to a patient which is
 ///  sent to an insurer for reimbursement.
 @freezed
-class ClaimItem with _$ClaimItem {
+class ClaimItem with BackboneType, _$ClaimItem {
   /// [ClaimItem] A provider issued list of professional services and products
   ///  which have been provided, or are to be provided, to a patient which is
   ///  sent to an insurer for reimbursement.
@@ -2038,8 +2005,8 @@ class ClaimItem with _$ClaimItem {
     List<ClaimDetail>? detail,
   }) = _ClaimItem;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimItem';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimItem.fromYaml(dynamic yaml) => yaml is String
@@ -2067,17 +2034,13 @@ class ClaimItem with _$ClaimItem {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimBodySite] A provider issued list of professional services and
 ///  products which have been provided, or are to be provided, to a patient
 ///  which is sent to an insurer for reimbursement.
 @freezed
-class ClaimBodySite with _$ClaimBodySite {
+class ClaimBodySite with BackboneType, _$ClaimBodySite {
   /// [ClaimBodySite] A provider issued list of professional services and
   ///  products which have been provided, or are to be provided, to a patient
   ///  which is sent to an insurer for reimbursement.
@@ -2150,8 +2113,8 @@ class ClaimBodySite with _$ClaimBodySite {
     List<CodeableConcept>? subSite,
   }) = _ClaimBodySite;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimBodySite';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimBodySite.fromYaml(dynamic yaml) => yaml is String
@@ -2179,17 +2142,13 @@ class ClaimBodySite with _$ClaimBodySite {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimDetail] A provider issued list of professional services and products
 ///  which have been provided, or are to be provided, to a patient which is
 ///  sent to an insurer for reimbursement.
 @freezed
-class ClaimDetail with _$ClaimDetail {
+class ClaimDetail with BackboneType, _$ClaimDetail {
   /// [ClaimDetail] A provider issued list of professional services and products
   ///  which have been provided, or are to be provided, to a patient which is
   ///  sent to an insurer for reimbursement.
@@ -2386,8 +2345,8 @@ class ClaimDetail with _$ClaimDetail {
     List<ClaimSubDetail>? subDetail,
   }) = _ClaimDetail;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimDetail';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimDetail.fromYaml(dynamic yaml) => yaml is String
@@ -2415,17 +2374,13 @@ class ClaimDetail with _$ClaimDetail {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimSubDetail] A provider issued list of professional services and
 ///  products which have been provided, or are to be provided, to a patient
 ///  which is sent to an insurer for reimbursement.
 @freezed
-class ClaimSubDetail with _$ClaimSubDetail {
+class ClaimSubDetail with BackboneType, _$ClaimSubDetail {
   /// [ClaimSubDetail] A provider issued list of professional services and
   ///  products which have been provided, or are to be provided, to a patient
   ///  which is sent to an insurer for reimbursement.
@@ -2615,8 +2570,8 @@ class ClaimSubDetail with _$ClaimSubDetail {
     List<Reference>? udi,
   }) = _ClaimSubDetail;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimSubDetail';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimSubDetail.fromYaml(dynamic yaml) => yaml is String
@@ -2644,10 +2599,6 @@ class ClaimSubDetail with _$ClaimSubDetail {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimResponse] This resource provides the adjudication details from the
@@ -3040,6 +2991,9 @@ class ClaimResponse with Resource, _$ClaimResponse {
     List<ClaimResponseError>? error,
   }) = _ClaimResponse;
 
+  @override
+  String get fhirType => 'ClaimResponse';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -3080,7 +3034,7 @@ class ClaimResponse with Resource, _$ClaimResponse {
 /// [ClaimResponseEvent] This resource provides the adjudication details from
 ///  the processing of a Claim resource.
 @freezed
-class ClaimResponseEvent with _$ClaimResponseEvent {
+class ClaimResponseEvent with BackboneType, _$ClaimResponseEvent {
   /// [ClaimResponseEvent] This resource provides the adjudication details from
   ///  the processing of a Claim resource.
   const ClaimResponseEvent._();
@@ -3163,8 +3117,8 @@ class ClaimResponseEvent with _$ClaimResponseEvent {
     Period? whenPeriod,
   }) = _ClaimResponseEvent;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimResponseEvent';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimResponseEvent.fromYaml(dynamic yaml) => yaml is String
@@ -3192,16 +3146,12 @@ class ClaimResponseEvent with _$ClaimResponseEvent {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimResponseItem] This resource provides the adjudication details from
 ///  the processing of a Claim resource.
 @freezed
-class ClaimResponseItem with _$ClaimResponseItem {
+class ClaimResponseItem with BackboneType, _$ClaimResponseItem {
   /// [ClaimResponseItem] This resource provides the adjudication details from
   ///  the processing of a Claim resource.
   const ClaimResponseItem._();
@@ -3312,8 +3262,8 @@ class ClaimResponseItem with _$ClaimResponseItem {
     List<ClaimResponseDetail>? detail,
   }) = _ClaimResponseItem;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimResponseItem';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimResponseItem.fromYaml(dynamic yaml) => yaml is String
@@ -3341,16 +3291,13 @@ class ClaimResponseItem with _$ClaimResponseItem {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimResponseReviewOutcome] This resource provides the adjudication
 ///  details from the processing of a Claim resource.
 @freezed
-class ClaimResponseReviewOutcome with _$ClaimResponseReviewOutcome {
+class ClaimResponseReviewOutcome
+    with BackboneType, _$ClaimResponseReviewOutcome {
   /// [ClaimResponseReviewOutcome] This resource provides the adjudication
   ///  details from the processing of a Claim resource.
   const ClaimResponseReviewOutcome._();
@@ -3440,8 +3387,8 @@ class ClaimResponseReviewOutcome with _$ClaimResponseReviewOutcome {
     Period? preAuthPeriod,
   }) = _ClaimResponseReviewOutcome;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimResponseReviewOutcome';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimResponseReviewOutcome.fromYaml(dynamic yaml) => yaml is String
@@ -3469,16 +3416,12 @@ class ClaimResponseReviewOutcome with _$ClaimResponseReviewOutcome {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimResponseAdjudication] This resource provides the adjudication details
 ///  from the processing of a Claim resource.
 @freezed
-class ClaimResponseAdjudication with _$ClaimResponseAdjudication {
+class ClaimResponseAdjudication with BackboneType, _$ClaimResponseAdjudication {
   /// [ClaimResponseAdjudication] This resource provides the adjudication details
   ///  from the processing of a Claim resource.
   const ClaimResponseAdjudication._();
@@ -3569,8 +3512,8 @@ class ClaimResponseAdjudication with _$ClaimResponseAdjudication {
     Quantity? quantity,
   }) = _ClaimResponseAdjudication;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimResponseAdjudication';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimResponseAdjudication.fromYaml(dynamic yaml) => yaml is String
@@ -3598,16 +3541,12 @@ class ClaimResponseAdjudication with _$ClaimResponseAdjudication {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimResponseDetail] This resource provides the adjudication details from
 ///  the processing of a Claim resource.
 @freezed
-class ClaimResponseDetail with _$ClaimResponseDetail {
+class ClaimResponseDetail with BackboneType, _$ClaimResponseDetail {
   /// [ClaimResponseDetail] This resource provides the adjudication details from
   ///  the processing of a Claim resource.
   const ClaimResponseDetail._();
@@ -3712,8 +3651,8 @@ class ClaimResponseDetail with _$ClaimResponseDetail {
     List<ClaimResponseSubDetail>? subDetail,
   }) = _ClaimResponseDetail;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimResponseDetail';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimResponseDetail.fromYaml(dynamic yaml) => yaml is String
@@ -3741,16 +3680,12 @@ class ClaimResponseDetail with _$ClaimResponseDetail {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimResponseSubDetail] This resource provides the adjudication details
 ///  from the processing of a Claim resource.
 @freezed
-class ClaimResponseSubDetail with _$ClaimResponseSubDetail {
+class ClaimResponseSubDetail with BackboneType, _$ClaimResponseSubDetail {
   /// [ClaimResponseSubDetail] This resource provides the adjudication details
   ///  from the processing of a Claim resource.
   const ClaimResponseSubDetail._();
@@ -3854,8 +3789,8 @@ class ClaimResponseSubDetail with _$ClaimResponseSubDetail {
     List<ClaimResponseAdjudication>? adjudication,
   }) = _ClaimResponseSubDetail;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimResponseSubDetail';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimResponseSubDetail.fromYaml(dynamic yaml) => yaml is String
@@ -3883,16 +3818,12 @@ class ClaimResponseSubDetail with _$ClaimResponseSubDetail {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimResponseAddItem] This resource provides the adjudication details from
 ///  the processing of a Claim resource.
 @freezed
-class ClaimResponseAddItem with _$ClaimResponseAddItem {
+class ClaimResponseAddItem with BackboneType, _$ClaimResponseAddItem {
   /// [ClaimResponseAddItem] This resource provides the adjudication details from
   ///  the processing of a Claim resource.
   const ClaimResponseAddItem._();
@@ -4166,8 +4097,8 @@ class ClaimResponseAddItem with _$ClaimResponseAddItem {
     List<ClaimResponseDetail1>? detail,
   }) = _ClaimResponseAddItem;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimResponseAddItem';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimResponseAddItem.fromYaml(dynamic yaml) => yaml is String
@@ -4195,16 +4126,12 @@ class ClaimResponseAddItem with _$ClaimResponseAddItem {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimResponseBodySite] This resource provides the adjudication details
 ///  from the processing of a Claim resource.
 @freezed
-class ClaimResponseBodySite with _$ClaimResponseBodySite {
+class ClaimResponseBodySite with BackboneType, _$ClaimResponseBodySite {
   /// [ClaimResponseBodySite] This resource provides the adjudication details
   ///  from the processing of a Claim resource.
   const ClaimResponseBodySite._();
@@ -4275,8 +4202,8 @@ class ClaimResponseBodySite with _$ClaimResponseBodySite {
     List<CodeableConcept>? subSite,
   }) = _ClaimResponseBodySite;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimResponseBodySite';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimResponseBodySite.fromYaml(dynamic yaml) => yaml is String
@@ -4304,16 +4231,12 @@ class ClaimResponseBodySite with _$ClaimResponseBodySite {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimResponseDetail1] This resource provides the adjudication details from
 ///  the processing of a Claim resource.
 @freezed
-class ClaimResponseDetail1 with _$ClaimResponseDetail1 {
+class ClaimResponseDetail1 with BackboneType, _$ClaimResponseDetail1 {
   /// [ClaimResponseDetail1] This resource provides the adjudication details from
   ///  the processing of a Claim resource.
   const ClaimResponseDetail1._();
@@ -4494,8 +4417,8 @@ class ClaimResponseDetail1 with _$ClaimResponseDetail1 {
     List<ClaimResponseSubDetail1>? subDetail,
   }) = _ClaimResponseDetail1;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimResponseDetail1';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimResponseDetail1.fromYaml(dynamic yaml) => yaml is String
@@ -4523,16 +4446,12 @@ class ClaimResponseDetail1 with _$ClaimResponseDetail1 {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimResponseSubDetail1] This resource provides the adjudication details
 ///  from the processing of a Claim resource.
 @freezed
-class ClaimResponseSubDetail1 with _$ClaimResponseSubDetail1 {
+class ClaimResponseSubDetail1 with BackboneType, _$ClaimResponseSubDetail1 {
   /// [ClaimResponseSubDetail1] This resource provides the adjudication details
   ///  from the processing of a Claim resource.
   const ClaimResponseSubDetail1._();
@@ -4708,8 +4627,8 @@ class ClaimResponseSubDetail1 with _$ClaimResponseSubDetail1 {
     List<ClaimResponseAdjudication>? adjudication,
   }) = _ClaimResponseSubDetail1;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimResponseSubDetail1';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimResponseSubDetail1.fromYaml(dynamic yaml) => yaml is String
@@ -4737,16 +4656,12 @@ class ClaimResponseSubDetail1 with _$ClaimResponseSubDetail1 {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimResponseTotal] This resource provides the adjudication details from
 ///  the processing of a Claim resource.
 @freezed
-class ClaimResponseTotal with _$ClaimResponseTotal {
+class ClaimResponseTotal with BackboneType, _$ClaimResponseTotal {
   /// [ClaimResponseTotal] This resource provides the adjudication details from
   ///  the processing of a Claim resource.
   const ClaimResponseTotal._();
@@ -4823,8 +4738,8 @@ class ClaimResponseTotal with _$ClaimResponseTotal {
     required Money amount,
   }) = _ClaimResponseTotal;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimResponseTotal';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimResponseTotal.fromYaml(dynamic yaml) => yaml is String
@@ -4852,16 +4767,12 @@ class ClaimResponseTotal with _$ClaimResponseTotal {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimResponsePayment] This resource provides the adjudication details from
 ///  the processing of a Claim resource.
 @freezed
-class ClaimResponsePayment with _$ClaimResponsePayment {
+class ClaimResponsePayment with BackboneType, _$ClaimResponsePayment {
   /// [ClaimResponsePayment] This resource provides the adjudication details from
   ///  the processing of a Claim resource.
   const ClaimResponsePayment._();
@@ -4961,8 +4872,8 @@ class ClaimResponsePayment with _$ClaimResponsePayment {
     Identifier? identifier,
   }) = _ClaimResponsePayment;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimResponsePayment';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimResponsePayment.fromYaml(dynamic yaml) => yaml is String
@@ -4990,16 +4901,12 @@ class ClaimResponsePayment with _$ClaimResponsePayment {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimResponseProcessNote] This resource provides the adjudication details
 ///  from the processing of a Claim resource.
 @freezed
-class ClaimResponseProcessNote with _$ClaimResponseProcessNote {
+class ClaimResponseProcessNote with BackboneType, _$ClaimResponseProcessNote {
   /// [ClaimResponseProcessNote] This resource provides the adjudication details
   ///  from the processing of a Claim resource.
   const ClaimResponseProcessNote._();
@@ -5088,8 +4995,8 @@ class ClaimResponseProcessNote with _$ClaimResponseProcessNote {
     CodeableConcept? language,
   }) = _ClaimResponseProcessNote;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimResponseProcessNote';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimResponseProcessNote.fromYaml(dynamic yaml) => yaml is String
@@ -5117,16 +5024,12 @@ class ClaimResponseProcessNote with _$ClaimResponseProcessNote {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimResponseInsurance] This resource provides the adjudication details
 ///  from the processing of a Claim resource.
 @freezed
-class ClaimResponseInsurance with _$ClaimResponseInsurance {
+class ClaimResponseInsurance with BackboneType, _$ClaimResponseInsurance {
   /// [ClaimResponseInsurance] This resource provides the adjudication details
   ///  from the processing of a Claim resource.
   const ClaimResponseInsurance._();
@@ -5241,8 +5144,8 @@ class ClaimResponseInsurance with _$ClaimResponseInsurance {
     Reference? claimResponse,
   }) = _ClaimResponseInsurance;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimResponseInsurance';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimResponseInsurance.fromYaml(dynamic yaml) => yaml is String
@@ -5270,16 +5173,12 @@ class ClaimResponseInsurance with _$ClaimResponseInsurance {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [ClaimResponseError] This resource provides the adjudication details from
 ///  the processing of a Claim resource.
 @freezed
-class ClaimResponseError with _$ClaimResponseError {
+class ClaimResponseError with BackboneType, _$ClaimResponseError {
   /// [ClaimResponseError] This resource provides the adjudication details from
   ///  the processing of a Claim resource.
   const ClaimResponseError._();
@@ -5405,8 +5304,8 @@ class ClaimResponseError with _$ClaimResponseError {
     @JsonKey(name: '_expression') List<Element>? expressionElement,
   }) = _ClaimResponseError;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'ClaimResponseError';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory ClaimResponseError.fromYaml(dynamic yaml) => yaml is String
@@ -5434,10 +5333,6 @@ class ClaimResponseError with _$ClaimResponseError {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [Invoice] Invoice containing collected ChargeItems from an Account with
@@ -5723,6 +5618,9 @@ class Invoice with Resource, _$Invoice {
     List<Annotation>? note,
   }) = _Invoice;
 
+  @override
+  String get fhirType => 'Invoice';
+
   /// Produces a Yaml formatted String version of the object
   @override
   String toYaml() => json2yaml(toJson());
@@ -5763,7 +5661,7 @@ class Invoice with Resource, _$Invoice {
 /// [InvoiceParticipant] Invoice containing collected ChargeItems from an
 ///  Account with calculated individual and total price for Billing purpose.
 @freezed
-class InvoiceParticipant with _$InvoiceParticipant {
+class InvoiceParticipant with BackboneType, _$InvoiceParticipant {
   /// [InvoiceParticipant] Invoice containing collected ChargeItems from an
   ///  Account with calculated individual and total price for Billing purpose.
   const InvoiceParticipant._();
@@ -5838,8 +5736,8 @@ class InvoiceParticipant with _$InvoiceParticipant {
     required Reference actor,
   }) = _InvoiceParticipant;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'InvoiceParticipant';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory InvoiceParticipant.fromYaml(dynamic yaml) => yaml is String
@@ -5867,16 +5765,12 @@ class InvoiceParticipant with _$InvoiceParticipant {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
 
 /// [InvoiceLineItem] Invoice containing collected ChargeItems from an Account
 ///  with calculated individual and total price for Billing purpose.
 @freezed
-class InvoiceLineItem with _$InvoiceLineItem {
+class InvoiceLineItem with BackboneType, _$InvoiceLineItem {
   /// [InvoiceLineItem] Invoice containing collected ChargeItems from an Account
   ///  with calculated individual and total price for Billing purpose.
   const InvoiceLineItem._();
@@ -6001,8 +5895,8 @@ class InvoiceLineItem with _$InvoiceLineItem {
     List<MonetaryComponent>? priceComponent,
   }) = _InvoiceLineItem;
 
-  /// Produces a Yaml formatted String version of the object
-  String toYaml() => json2yaml(toJson());
+  @override
+  String get fhirType => 'InvoiceLineItem';
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
   factory InvoiceLineItem.fromYaml(dynamic yaml) => yaml is String
@@ -6030,8 +5924,4 @@ class InvoiceLineItem with _$InvoiceLineItem {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-
-  /// Another convenience method because more and more I'm transmitting FHIR
-  /// data as a String and not a Map
-  String toJsonString() => jsonEncode(toJson());
 }
