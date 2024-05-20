@@ -60,7 +60,7 @@ import '../../fhir_r5.dart';
 /// The lazy-loading mechanism is currently only supported through the
 /// [environment] map, not for explicitly passed-in parameters.
 List<dynamic> walkFhirPath({
-  required Map<String, dynamic>? context,
+  required dynamic context,
   required String pathExpression,
   Map<String, dynamic>? resource,
   Map<String, dynamic>? rootResource,
@@ -129,7 +129,7 @@ ParserList parseFhirPath(String pathExpression) {
 /// All parameters have the same meaning as for [walkFhirPath].
 List<dynamic> executeFhirPath({
   ///
-  required Map<String, dynamic>? context,
+  required dynamic context,
   required ParserList parsedFhirPath,
   required String pathExpression,
   Map<String, dynamic>? resource,
@@ -161,7 +161,9 @@ List<dynamic> executeFhirPath({
     if (parsedFhirPath.isEmpty) {
       return <dynamic>[];
     } else {
-      return parsedFhirPath.execute(<dynamic>[context], passedEnvironment);
+      return parsedFhirPath.execute(
+          context is List ? <dynamic>[...context] : <dynamic>[context],
+          passedEnvironment);
     }
   } catch (error) {
     if (error is FhirPathException) {
@@ -178,27 +180,13 @@ List<dynamic> executeFhirPath({
   }
 }
 
-List<dynamic> dstu2WalkFhirPath(
-  Resource? resource,
-  String pathExpression, [
-  Map<String, dynamic>? environment,
-]) {
-  final Map<String, dynamic>? resourceJson = resource?.toJson();
-  return walkFhirPath(
-    context: resourceJson,
-    pathExpression: pathExpression,
-    environment: environment,
-  );
-}
-
 extension FhirPathResourceExtension on Map<String, dynamic> {
   static const String contextKey = '%context';
   static const String resourceKey = '%resource';
   static const String rootResourceKey = '%rootResource';
 
-  Map<String, dynamic>? get context =>
-      this[contextKey] as Map<String, dynamic>?;
-  set context(Map<String, dynamic>? context) => this[contextKey] = context;
+  dynamic get context => this[contextKey];
+  set context(dynamic context) => this[contextKey] = context;
   bool get hasNoContext => context == null;
 
   set resource(Map<String, dynamic>? resource) {
