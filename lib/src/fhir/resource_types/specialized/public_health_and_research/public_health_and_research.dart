@@ -21,7 +21,7 @@ part 'public_health_and_research.enums.dart';
 ///  certain outcomes and certain groups of people by looking at data collected
 ///  in the past or future.
 @freezed
-class ResearchStudy with Resource, _$ResearchStudy {
+class ResearchStudy with _$ResearchStudy implements DomainResource {
   /// [ResearchStudy] A scientific study of nature that sometimes includes
   ///  processes involved in health and disease. For example, clinical trials are
   ///  research studies that involve people. These studies may be related to new
@@ -235,13 +235,13 @@ class ResearchStudy with Resource, _$ResearchStudy {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -285,7 +285,7 @@ class ResearchStudy with Resource, _$ResearchStudy {
     FhirUri? url,
 
     /// [urlElement] ("_url") Extensions for url
-    @JsonKey(name: '_url') Element? urlElement,
+    @JsonKey(name: '_url') PrimitiveElement? urlElement,
 
     /// [identifier] Identifiers assigned to this research study by the sponsor or
     ///  other systems.
@@ -295,19 +295,19 @@ class ResearchStudy with Resource, _$ResearchStudy {
     String? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') Element? versionElement,
+    @JsonKey(name: '_version') PrimitiveElement? versionElement,
 
     /// [name] Name for this study (computer friendly).
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [title] The human readable name of the research study.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [label] Additional names for the study.
     List<ResearchStudyLabel>? label,
@@ -335,13 +335,13 @@ class ResearchStudy with Resource, _$ResearchStudy {
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [status] The publication state of the resource (not of the study).
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [primaryPurposeType] The type of study based upon the intent of the study
     ///  activities. A classification of the intent of the study.
@@ -379,14 +379,15 @@ class ResearchStudy with Resource, _$ResearchStudy {
 
     /// [descriptionSummaryElement] ("_descriptionSummary") Extensions for
     ///  descriptionSummary
-    @JsonKey(name: '_descriptionSummary') Element? descriptionSummaryElement,
+    @JsonKey(name: '_descriptionSummary')
+    PrimitiveElement? descriptionSummaryElement,
 
     /// [description] A detailed and human-readable narrative of the study. E.g.,
     ///  study abstract.
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [period] Identifies the start date and the expected (or actual, depending
     ///  on status) end date for the study.
@@ -491,7 +492,7 @@ class ResearchStudy with Resource, _$ResearchStudy {
 ///  certain outcomes and certain groups of people by looking at data collected
 ///  in the past or future.
 @freezed
-class ResearchStudyLabel with BackboneType, _$ResearchStudyLabel {
+class ResearchStudyLabel with _$ResearchStudyLabel implements BackboneType {
   /// [ResearchStudyLabel] A scientific study of nature that sometimes includes
   ///  processes involved in health and disease. For example, clinical trials are
   ///  research studies that involve people. These studies may be related to new
@@ -570,7 +571,7 @@ class ResearchStudyLabel with BackboneType, _$ResearchStudyLabel {
     String? value,
 
     /// [valueElement] ("_value") Extensions for value
-    @JsonKey(name: '_value') Element? valueElement,
+    @JsonKey(name: '_value') PrimitiveElement? valueElement,
   }) = _ResearchStudyLabel;
 
   @override
@@ -696,7 +697,7 @@ class ResearchStudyAssociatedParty
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [role] Type of association.
     required CodeableConcept role,
@@ -838,7 +839,7 @@ class ResearchStudyProgressStatus
     FhirBoolean? actual,
 
     /// [actualElement] ("_actual") Extensions for actual
-    @JsonKey(name: '_actual') Element? actualElement,
+    @JsonKey(name: '_actual') PrimitiveElement? actualElement,
 
     /// [period] Date range.
     Period? period,
@@ -883,7 +884,9 @@ class ResearchStudyProgressStatus
 ///  may also study certain outcomes and certain groups of people by looking at
 ///  data collected in the past or future.
 @freezed
-class ResearchStudyRecruitment with BackboneType, _$ResearchStudyRecruitment {
+class ResearchStudyRecruitment
+    with _$ResearchStudyRecruitment
+    implements BackboneType {
   /// [ResearchStudyRecruitment] A scientific study of nature that sometimes
   ///  includes processes involved in health and disease. For example, clinical
   ///  trials are research studies that involve people. These studies may be
@@ -965,13 +968,13 @@ class ResearchStudyRecruitment with BackboneType, _$ResearchStudyRecruitment {
     FhirUnsignedInt? targetNumber,
 
     /// [targetNumberElement] ("_targetNumber") Extensions for targetNumber
-    @JsonKey(name: '_targetNumber') Element? targetNumberElement,
+    @JsonKey(name: '_targetNumber') PrimitiveElement? targetNumberElement,
 
     /// [actualNumber] Actual total number of participants enrolled in study.
     FhirUnsignedInt? actualNumber,
 
     /// [actualNumberElement] ("_actualNumber") Extensions for actualNumber
-    @JsonKey(name: '_actualNumber') Element? actualNumberElement,
+    @JsonKey(name: '_actualNumber') PrimitiveElement? actualNumberElement,
 
     /// [eligibility] Inclusion and exclusion criteria.
     Reference? eligibility,
@@ -1113,13 +1116,13 @@ class ResearchStudyComparisonGroup
     FhirId? linkId,
 
     /// [linkIdElement] ("_linkId") Extensions for linkId
-    @JsonKey(name: '_linkId') Element? linkIdElement,
+    @JsonKey(name: '_linkId') PrimitiveElement? linkIdElement,
 
     /// [name] Unique, human-readable label for this comparisonGroup of the study.
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [type] Categorization of study comparisonGroup, e.g. experimental, active
     ///  comparator, placebo comparater.
@@ -1130,7 +1133,7 @@ class ResearchStudyComparisonGroup
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [intendedExposure] Interventions or exposures in this comparisonGroup or
     ///  cohort.
@@ -1180,7 +1183,9 @@ class ResearchStudyComparisonGroup
 ///  may also study certain outcomes and certain groups of people by looking at
 ///  data collected in the past or future.
 @freezed
-class ResearchStudyObjective with BackboneType, _$ResearchStudyObjective {
+class ResearchStudyObjective
+    with _$ResearchStudyObjective
+    implements BackboneType {
   /// [ResearchStudyObjective] A scientific study of nature that sometimes
   ///  includes processes involved in health and disease. For example, clinical
   ///  trials are research studies that involve people. These studies may be
@@ -1262,7 +1267,7 @@ class ResearchStudyObjective with BackboneType, _$ResearchStudyObjective {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [type] The kind of study objective.
     CodeableConcept? type,
@@ -1273,7 +1278,7 @@ class ResearchStudyObjective with BackboneType, _$ResearchStudyObjective {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
   }) = _ResearchStudyObjective;
 
   @override
@@ -1398,7 +1403,7 @@ class ResearchStudyOutcomeMeasure
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [type] The parameter or characteristic being assessed as one of the values
     ///  by which the study is assessed.
@@ -1408,7 +1413,7 @@ class ResearchStudyOutcomeMeasure
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [reference] Structured outcome definition.
     Reference? reference,
@@ -1449,7 +1454,7 @@ class ResearchStudyOutcomeMeasure
 /// [ResearchSubject] A ResearchSubject is a participant or object which is the
 ///  recipient of investigative activities in a research study.
 @freezed
-class ResearchSubject with Resource, _$ResearchSubject {
+class ResearchSubject with _$ResearchSubject implements DomainResource {
   /// [ResearchSubject] A ResearchSubject is a participant or object which is the
   ///  recipient of investigative activities in a research study.
   const ResearchSubject._();
@@ -1564,13 +1569,13 @@ class ResearchSubject with Resource, _$ResearchSubject {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1616,7 +1621,7 @@ class ResearchSubject with Resource, _$ResearchSubject {
     PublicationStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [progress] The current state (status) of the subject and resons for status
     ///  change where appropriate.
@@ -1640,7 +1645,7 @@ class ResearchSubject with Resource, _$ResearchSubject {
     /// [assignedComparisonGroupElement] ("_assignedComparisonGroup") Extensions
     ///  for assignedComparisonGroup
     @JsonKey(name: '_assignedComparisonGroup')
-    Element? assignedComparisonGroupElement,
+    PrimitiveElement? assignedComparisonGroupElement,
 
     /// [actualComparisonGroup] The name of the arm in the study the subject
     ///  actually followed as part of this study.
@@ -1649,7 +1654,7 @@ class ResearchSubject with Resource, _$ResearchSubject {
     /// [actualComparisonGroupElement] ("_actualComparisonGroup") Extensions for
     ///  actualComparisonGroup
     @JsonKey(name: '_actualComparisonGroup')
-    Element? actualComparisonGroupElement,
+    PrimitiveElement? actualComparisonGroupElement,
 
     /// [consent] A record of the patient's informed agreement to participate in
     ///  the study.
@@ -1699,7 +1704,9 @@ class ResearchSubject with Resource, _$ResearchSubject {
 /// [ResearchSubjectProgress] A ResearchSubject is a participant or object
 ///  which is the recipient of investigative activities in a research study.
 @freezed
-class ResearchSubjectProgress with BackboneType, _$ResearchSubjectProgress {
+class ResearchSubjectProgress
+    with _$ResearchSubjectProgress
+    implements BackboneType {
   /// [ResearchSubjectProgress] A ResearchSubject is a participant or object
   ///  which is the recipient of investigative activities in a research study.
   const ResearchSubjectProgress._();
@@ -1793,13 +1800,13 @@ class ResearchSubjectProgress with BackboneType, _$ResearchSubjectProgress {
     FhirDateTime? startDate,
 
     /// [startDateElement] ("_startDate") Extensions for startDate
-    @JsonKey(name: '_startDate') Element? startDateElement,
+    @JsonKey(name: '_startDate') PrimitiveElement? startDateElement,
 
     /// [endDate] The date when the state ended.
     FhirDateTime? endDate,
 
     /// [endDateElement] ("_endDate") Extensions for endDate
-    @JsonKey(name: '_endDate') Element? endDateElement,
+    @JsonKey(name: '_endDate') PrimitiveElement? endDateElement,
   }) = _ResearchSubjectProgress;
 
   @override

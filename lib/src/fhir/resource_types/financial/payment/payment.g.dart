@@ -21,12 +21,14 @@ _$PaymentNoticeImpl _$$PaymentNoticeImplFromJson(Map<String, dynamic> json) =>
           : FhirUri.fromJson(json['implicitRules']),
       implicitRulesElement: json['_implicitRules'] == null
           ? null
-          : Element.fromJson(json['_implicitRules'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_implicitRules'] as Map<String, dynamic>),
       language:
           json['language'] == null ? null : FhirCode.fromJson(json['language']),
       languageElement: json['_language'] == null
           ? null
-          : Element.fromJson(json['_language'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_language'] as Map<String, dynamic>),
       text: json['text'] == null
           ? null
           : Narrative.fromJson(json['text'] as Map<String, dynamic>),
@@ -45,7 +47,7 @@ _$PaymentNoticeImpl _$$PaymentNoticeImplFromJson(Map<String, dynamic> json) =>
       status: json['status'] == null ? null : FhirCode.fromJson(json['status']),
       statusElement: json['_status'] == null
           ? null
-          : Element.fromJson(json['_status'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_status'] as Map<String, dynamic>),
       request: json['request'] == null
           ? null
           : Reference.fromJson(json['request'] as Map<String, dynamic>),
@@ -57,7 +59,7 @@ _$PaymentNoticeImpl _$$PaymentNoticeImplFromJson(Map<String, dynamic> json) =>
           : FhirDateTime.fromJson(json['created'] as String),
       createdElement: json['_created'] == null
           ? null
-          : Element.fromJson(json['_created'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_created'] as Map<String, dynamic>),
       reporter: json['reporter'] == null
           ? null
           : Reference.fromJson(json['reporter'] as Map<String, dynamic>),
@@ -69,7 +71,8 @@ _$PaymentNoticeImpl _$$PaymentNoticeImplFromJson(Map<String, dynamic> json) =>
           : FhirDate.fromJson(json['paymentDate'] as String),
       paymentDateElement: json['_paymentDate'] == null
           ? null
-          : Element.fromJson(json['_paymentDate'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_paymentDate'] as Map<String, dynamic>),
       payee: json['payee'] == null
           ? null
           : Reference.fromJson(json['payee'] as Map<String, dynamic>),
@@ -303,12 +306,14 @@ _$PaymentReconciliationImpl _$$PaymentReconciliationImplFromJson(
           : FhirUri.fromJson(json['implicitRules']),
       implicitRulesElement: json['_implicitRules'] == null
           ? null
-          : Element.fromJson(json['_implicitRules'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_implicitRules'] as Map<String, dynamic>),
       language:
           json['language'] == null ? null : FhirCode.fromJson(json['language']),
       languageElement: json['_language'] == null
           ? null
-          : Element.fromJson(json['_language'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_language'] as Map<String, dynamic>),
       text: json['text'] == null
           ? null
           : Narrative.fromJson(json['text'] as Map<String, dynamic>),
@@ -328,7 +333,7 @@ _$PaymentReconciliationImpl _$$PaymentReconciliationImplFromJson(
       status: json['status'] == null ? null : FhirCode.fromJson(json['status']),
       statusElement: json['_status'] == null
           ? null
-          : Element.fromJson(json['_status'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_status'] as Map<String, dynamic>),
       kind: json['kind'] == null
           ? null
           : CodeableConcept.fromJson(json['kind'] as Map<String, dynamic>),
@@ -340,7 +345,7 @@ _$PaymentReconciliationImpl _$$PaymentReconciliationImplFromJson(
           : FhirDateTime.fromJson(json['created'] as String),
       createdElement: json['_created'] == null
           ? null
-          : Element.fromJson(json['_created'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_created'] as Map<String, dynamic>),
       enterer: json['enterer'] == null
           ? null
           : Reference.fromJson(json['enterer'] as Map<String, dynamic>),
@@ -361,17 +366,18 @@ _$PaymentReconciliationImpl _$$PaymentReconciliationImplFromJson(
           json['outcome'] == null ? null : FhirCode.fromJson(json['outcome']),
       outcomeElement: json['_outcome'] == null
           ? null
-          : Element.fromJson(json['_outcome'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_outcome'] as Map<String, dynamic>),
       disposition: json['disposition'] as String?,
       dispositionElement: json['_disposition'] == null
           ? null
-          : Element.fromJson(json['_disposition'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_disposition'] as Map<String, dynamic>),
       date: json['date'] == null
           ? null
           : FhirDate.fromJson(json['date'] as String),
       dateElement: json['_date'] == null
           ? null
-          : Element.fromJson(json['_date'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_date'] as Map<String, dynamic>),
       location: json['location'] == null
           ? null
           : Reference.fromJson(json['location'] as Map<String, dynamic>),
@@ -381,29 +387,35 @@ _$PaymentReconciliationImpl _$$PaymentReconciliationImplFromJson(
       cardBrand: json['cardBrand'] as String?,
       cardBrandElement: json['_cardBrand'] == null
           ? null
-          : Element.fromJson(json['_cardBrand'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_cardBrand'] as Map<String, dynamic>),
       accountNumber: json['accountNumber'] as String?,
       accountNumberElement: json['_accountNumber'] == null
           ? null
-          : Element.fromJson(json['_accountNumber'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_accountNumber'] as Map<String, dynamic>),
       expirationDate: json['expirationDate'] == null
           ? null
           : FhirDate.fromJson(json['expirationDate'] as String),
       expirationDateElement: json['_expirationDate'] == null
           ? null
-          : Element.fromJson(json['_expirationDate'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_expirationDate'] as Map<String, dynamic>),
       processor: json['processor'] as String?,
       processorElement: json['_processor'] == null
           ? null
-          : Element.fromJson(json['_processor'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_processor'] as Map<String, dynamic>),
       referenceNumber: json['referenceNumber'] as String?,
       referenceNumberElement: json['_referenceNumber'] == null
           ? null
-          : Element.fromJson(json['_referenceNumber'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_referenceNumber'] as Map<String, dynamic>),
       authorization: json['authorization'] as String?,
       authorizationElement: json['_authorization'] == null
           ? null
-          : Element.fromJson(json['_authorization'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_authorization'] as Map<String, dynamic>),
       tenderedAmount: json['tenderedAmount'] == null
           ? null
           : Money.fromJson(json['tenderedAmount'] as Map<String, dynamic>),
@@ -522,7 +534,7 @@ _$PaymentReconciliationAllocationImpl
           targetItemString: json['targetItemString'] as String?,
           targetItemStringElement: json['_targetItemString'] == null
               ? null
-              : Element.fromJson(
+              : PrimitiveElement.fromJson(
                   json['_targetItemString'] as Map<String, dynamic>),
           targetItemIdentifier: json['targetItemIdentifier'] == null
               ? null
@@ -533,7 +545,7 @@ _$PaymentReconciliationAllocationImpl
               : FhirPositiveInt.fromJson(json['targetItemPositiveInt']),
           targetItemPositiveIntElement: json['_targetItemPositiveInt'] == null
               ? null
-              : Element.fromJson(
+              : PrimitiveElement.fromJson(
                   json['_targetItemPositiveInt'] as Map<String, dynamic>),
           encounter: json['encounter'] == null
               ? null
@@ -555,7 +567,8 @@ _$PaymentReconciliationAllocationImpl
               : FhirDate.fromJson(json['date'] as String),
           dateElement: json['_date'] == null
               ? null
-              : Element.fromJson(json['_date'] as Map<String, dynamic>),
+              : PrimitiveElement.fromJson(
+                  json['_date'] as Map<String, dynamic>),
           responsible: json['responsible'] == null
               ? null
               : Reference.fromJson(json['responsible'] as Map<String, dynamic>),
@@ -619,11 +632,13 @@ _$PaymentReconciliationProcessNoteImpl
           type: json['type'] == null ? null : FhirCode.fromJson(json['type']),
           typeElement: json['_type'] == null
               ? null
-              : Element.fromJson(json['_type'] as Map<String, dynamic>),
+              : PrimitiveElement.fromJson(
+                  json['_type'] as Map<String, dynamic>),
           text: json['text'] as String?,
           textElement: json['_text'] == null
               ? null
-              : Element.fromJson(json['_text'] as Map<String, dynamic>),
+              : PrimitiveElement.fromJson(
+                  json['_text'] as Map<String, dynamic>),
         );
 
 Map<String, dynamic> _$$PaymentReconciliationProcessNoteImplToJson(

@@ -19,7 +19,7 @@ part 'request_and_response.enums.dart';
 ///  provider, a public health agency communication to a provider/reporter in
 ///  response to a case report for a reportable condition.
 @freezed
-class Communication with Resource, _$Communication {
+class Communication with _$Communication implements DomainResource {
   /// [Communication] A clinical or business level record of information being
   ///  transmitted or shared; e.g. an alert that was sent to a responsible
   ///  provider, a public health agency communication to a provider/reporter in
@@ -180,13 +180,13 @@ class Communication with Resource, _$Communication {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -259,7 +259,7 @@ class Communication with Resource, _$Communication {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [statusReason] Captures the reason for the current state of the
     ///  Communication.
@@ -275,7 +275,7 @@ class Communication with Resource, _$Communication {
     FhirCode? priority,
 
     /// [priorityElement] ("_priority") Extensions for priority
-    @JsonKey(name: '_priority') Element? priorityElement,
+    @JsonKey(name: '_priority') PrimitiveElement? priorityElement,
 
     /// [medium] A channel that was used for this communication (e.g. email, fax).
     List<CodeableConcept>? medium,
@@ -299,13 +299,13 @@ class Communication with Resource, _$Communication {
     FhirDateTime? sent,
 
     /// [sentElement] ("_sent") Extensions for sent
-    @JsonKey(name: '_sent') Element? sentElement,
+    @JsonKey(name: '_sent') PrimitiveElement? sentElement,
 
     /// [received] The time when this communication arrived at the destination.
     FhirDateTime? received,
 
     /// [receivedElement] ("_received") Extensions for received
-    @JsonKey(name: '_received') Element? receivedElement,
+    @JsonKey(name: '_received') PrimitiveElement? receivedElement,
 
     /// [recipient] The entity (e.g. person, organization, clinical information
     ///  system, care team or device) which is the target of the communication.
@@ -372,7 +372,7 @@ class Communication with Resource, _$Communication {
 ///  provider, a public health agency communication to a provider/reporter in
 ///  response to a case report for a reportable condition.
 @freezed
-class CommunicationPayload with BackboneType, _$CommunicationPayload {
+class CommunicationPayload with _$CommunicationPayload implements BackboneType {
   /// [CommunicationPayload] A clinical or business level record of information
   ///  being transmitted or shared; e.g. an alert that was sent to a responsible
   ///  provider, a public health agency communication to a provider/reporter in
@@ -492,7 +492,9 @@ class CommunicationPayload with BackboneType, _$CommunicationPayload {
 ///  proposes that the public health agency be notified about a reportable
 ///  condition.
 @freezed
-class CommunicationRequest with Resource, _$CommunicationRequest {
+class CommunicationRequest
+    with _$CommunicationRequest
+    implements DomainResource {
   /// [CommunicationRequest] A request to convey information; e.g. the CDS system
   ///  proposes that an alert be sent to a responsible provider, the CDS system
   ///  proposes that the public health agency be notified about a reportable
@@ -665,13 +667,13 @@ class CommunicationRequest with Resource, _$CommunicationRequest {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -736,7 +738,7 @@ class CommunicationRequest with Resource, _$CommunicationRequest {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [statusReason] Captures the reason for the current state of the
     ///  CommunicationRequest.
@@ -748,7 +750,7 @@ class CommunicationRequest with Resource, _$CommunicationRequest {
     FhirCode? intent,
 
     /// [intentElement] ("_intent") Extensions for intent
-    @JsonKey(name: '_intent') Element? intentElement,
+    @JsonKey(name: '_intent') PrimitiveElement? intentElement,
 
     /// [category] The type of message to be sent such as alert, notification,
     ///  reminder, instruction, etc.
@@ -759,14 +761,14 @@ class CommunicationRequest with Resource, _$CommunicationRequest {
     FhirCode? priority,
 
     /// [priorityElement] ("_priority") Extensions for priority
-    @JsonKey(name: '_priority') Element? priorityElement,
+    @JsonKey(name: '_priority') PrimitiveElement? priorityElement,
 
     /// [doNotPerform] If true indicates that the CommunicationRequest is asking
     ///  for the specified action to *not* occur.
     FhirBoolean? doNotPerform,
 
     /// [doNotPerformElement] ("_doNotPerform") Extensions for doNotPerform
-    @JsonKey(name: '_doNotPerform') Element? doNotPerformElement,
+    @JsonKey(name: '_doNotPerform') PrimitiveElement? doNotPerformElement,
 
     /// [medium] A channel that was used for this communication (e.g. email, fax).
     List<CodeableConcept>? medium,
@@ -792,7 +794,8 @@ class CommunicationRequest with Resource, _$CommunicationRequest {
 
     /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
     ///  occurrenceDateTime
-    @JsonKey(name: '_occurrenceDateTime') Element? occurrenceDateTimeElement,
+    @JsonKey(name: '_occurrenceDateTime')
+    PrimitiveElement? occurrenceDateTimeElement,
 
     /// [occurrencePeriod] The time when this communication is to occur.
     Period? occurrencePeriod,
@@ -802,7 +805,7 @@ class CommunicationRequest with Resource, _$CommunicationRequest {
     FhirDateTime? authoredOn,
 
     /// [authoredOnElement] ("_authoredOn") Extensions for authoredOn
-    @JsonKey(name: '_authoredOn') Element? authoredOnElement,
+    @JsonKey(name: '_authoredOn') PrimitiveElement? authoredOnElement,
 
     /// [requester] The device, individual, or organization who asks for the
     ///  information to be shared.
@@ -991,7 +994,7 @@ class CommunicationRequestPayload
 /// [DeviceAssociation] A record of association or dissociation of a device
 ///  with a patient.
 @freezed
-class DeviceAssociation with Resource, _$DeviceAssociation {
+class DeviceAssociation with _$DeviceAssociation implements DomainResource {
   /// [DeviceAssociation] A record of association or dissociation of a device
   ///  with a patient.
   const DeviceAssociation._();
@@ -1094,13 +1097,13 @@ class DeviceAssociation with Resource, _$DeviceAssociation {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1323,7 +1326,7 @@ class DeviceAssociationOperation
 /// [DeviceDispense] A record of dispensation of a device - i.e., assigning a
 ///  device to a patient, or to a professional for their use.
 @freezed
-class DeviceDispense with Resource, _$DeviceDispense {
+class DeviceDispense with _$DeviceDispense implements DomainResource {
   /// [DeviceDispense] A record of dispensation of a device - i.e., assigning a
   ///  device to a patient, or to a professional for their use.
   const DeviceDispense._();
@@ -1469,13 +1472,13 @@ class DeviceDispense with Resource, _$DeviceDispense {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1527,7 +1530,7 @@ class DeviceDispense with Resource, _$DeviceDispense {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [statusReason] Indicates the reason why a dispense was or was not performed.
     CodeableReference? statusReason,
@@ -1574,14 +1577,14 @@ class DeviceDispense with Resource, _$DeviceDispense {
     FhirDateTime? preparedDate,
 
     /// [preparedDateElement] ("_preparedDate") Extensions for preparedDate
-    @JsonKey(name: '_preparedDate') Element? preparedDateElement,
+    @JsonKey(name: '_preparedDate') PrimitiveElement? preparedDateElement,
 
     /// [whenHandedOver] The time the dispensed product was made available to the
     ///  patient or their representative.
     FhirDateTime? whenHandedOver,
 
     /// [whenHandedOverElement] ("_whenHandedOver") Extensions for whenHandedOver
-    @JsonKey(name: '_whenHandedOver') Element? whenHandedOverElement,
+    @JsonKey(name: '_whenHandedOver') PrimitiveElement? whenHandedOverElement,
 
     /// [destination] Identification of the facility/location where the device was
     ///  /should be shipped to, as part of the dispense process.
@@ -1596,7 +1599,8 @@ class DeviceDispense with Resource, _$DeviceDispense {
 
     /// [usageInstructionElement] ("_usageInstruction") Extensions for
     ///  usageInstruction
-    @JsonKey(name: '_usageInstruction') Element? usageInstructionElement,
+    @JsonKey(name: '_usageInstruction')
+    PrimitiveElement? usageInstructionElement,
 
     /// [eventHistory] A summary of the events of interest that have occurred, such
     ///  as when the dispense was verified.
@@ -1646,7 +1650,9 @@ class DeviceDispense with Resource, _$DeviceDispense {
 /// [DeviceDispensePerformer] A record of dispensation of a device - i.e.,
 ///  assigning a device to a patient, or to a professional for their use.
 @freezed
-class DeviceDispensePerformer with BackboneType, _$DeviceDispensePerformer {
+class DeviceDispensePerformer
+    with _$DeviceDispensePerformer
+    implements BackboneType {
   /// [DeviceDispensePerformer] A record of dispensation of a device - i.e.,
   ///  assigning a device to a patient, or to a professional for their use.
   const DeviceDispensePerformer._();
@@ -1754,7 +1760,7 @@ class DeviceDispensePerformer with BackboneType, _$DeviceDispensePerformer {
 ///  device. The device may be an implantable device, or an external assistive
 ///  device, such as a walker.
 @freezed
-class DeviceRequest with Resource, _$DeviceRequest {
+class DeviceRequest with _$DeviceRequest implements DomainResource {
   /// [DeviceRequest] Represents a request for a patient to employ a medical
   ///  device. The device may be an implantable device, or an external assistive
   ///  device, such as a walker.
@@ -1952,13 +1958,13 @@ class DeviceRequest with Resource, _$DeviceRequest {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -2034,21 +2040,21 @@ class DeviceRequest with Resource, _$DeviceRequest {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [intent] Whether the request is a proposal, plan, an original order or a
     ///  reflex order.
     FhirCode? intent,
 
     /// [intentElement] ("_intent") Extensions for intent
-    @JsonKey(name: '_intent') Element? intentElement,
+    @JsonKey(name: '_intent') PrimitiveElement? intentElement,
 
     /// [priority] Indicates how quickly the request should be addressed with
     ///  respect to other requests.
     FhirCode? priority,
 
     /// [priorityElement] ("_priority") Extensions for priority
-    @JsonKey(name: '_priority') Element? priorityElement,
+    @JsonKey(name: '_priority') PrimitiveElement? priorityElement,
 
     /// [doNotPerform] If true, indicates that the provider is asking for the
     ///  patient to either stop using or to not start using the specified device or
@@ -2057,7 +2063,7 @@ class DeviceRequest with Resource, _$DeviceRequest {
     FhirBoolean? doNotPerform,
 
     /// [doNotPerformElement] ("_doNotPerform") Extensions for doNotPerform
-    @JsonKey(name: '_doNotPerform') Element? doNotPerformElement,
+    @JsonKey(name: '_doNotPerform') PrimitiveElement? doNotPerformElement,
 
     /// [code] The details of the device to be used.
     required CodeableReference code,
@@ -2066,7 +2072,7 @@ class DeviceRequest with Resource, _$DeviceRequest {
     FhirInteger? quantity,
 
     /// [quantityElement] ("_quantity") Extensions for quantity
-    @JsonKey(name: '_quantity') Element? quantityElement,
+    @JsonKey(name: '_quantity') PrimitiveElement? quantityElement,
 
     /// [parameter] Specific parameters for the ordered item.  For example, the
     ///  prism value for lenses.
@@ -2087,7 +2093,8 @@ class DeviceRequest with Resource, _$DeviceRequest {
 
     /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
     ///  occurrenceDateTime
-    @JsonKey(name: '_occurrenceDateTime') Element? occurrenceDateTimeElement,
+    @JsonKey(name: '_occurrenceDateTime')
+    PrimitiveElement? occurrenceDateTimeElement,
 
     /// [occurrencePeriod] The timing schedule for the use of the device. The
     ///  Schedule data type allows many different expressions, for example. "Every
@@ -2105,7 +2112,7 @@ class DeviceRequest with Resource, _$DeviceRequest {
     FhirDateTime? authoredOn,
 
     /// [authoredOnElement] ("_authoredOn") Extensions for authoredOn
-    @JsonKey(name: '_authoredOn') Element? authoredOnElement,
+    @JsonKey(name: '_authoredOn') PrimitiveElement? authoredOnElement,
 
     /// [requester] The individual or entity who initiated the request and has
     ///  responsibility for its activation.
@@ -2123,7 +2130,7 @@ class DeviceRequest with Resource, _$DeviceRequest {
     FhirBoolean? asNeeded,
 
     /// [asNeededElement] ("_asNeeded") Extensions for asNeeded
-    @JsonKey(name: '_asNeeded') Element? asNeededElement,
+    @JsonKey(name: '_asNeeded') PrimitiveElement? asNeededElement,
 
     /// [asNeededFor] The reason for using the device.
     CodeableConcept? asNeededFor,
@@ -2192,7 +2199,9 @@ class DeviceRequest with Resource, _$DeviceRequest {
 ///  medical device. The device may be an implantable device, or an external
 ///  assistive device, such as a walker.
 @freezed
-class DeviceRequestParameter with BackboneType, _$DeviceRequestParameter {
+class DeviceRequestParameter
+    with _$DeviceRequestParameter
+    implements BackboneType {
   /// [DeviceRequestParameter] Represents a request for a patient to employ a
   ///  medical device. The device may be an implantable device, or an external
   ///  assistive device, such as a walker.
@@ -2280,7 +2289,7 @@ class DeviceRequestParameter with BackboneType, _$DeviceRequestParameter {
     FhirBoolean? valueBoolean,
 
     /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
   }) = _DeviceRequestParameter;
 
   @override
@@ -2317,7 +2326,7 @@ class DeviceRequestParameter with BackboneType, _$DeviceRequestParameter {
 /// [DeviceUsage] A record of a device being used by a patient where the record
 ///  is the result of a report from the patient or a clinician.
 @freezed
-class DeviceUsage with Resource, _$DeviceUsage {
+class DeviceUsage with _$DeviceUsage implements DomainResource {
   /// [DeviceUsage] A record of a device being used by a patient where the record
   ///  is the result of a report from the patient or a clinician.
   const DeviceUsage._();
@@ -2459,13 +2468,13 @@ class DeviceUsage with Resource, _$DeviceUsage {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -2517,7 +2526,7 @@ class DeviceUsage with Resource, _$DeviceUsage {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [category] This attribute indicates a category for the statement - The
     ///  device statement may be made in an inpatient or outpatient settting
@@ -2545,14 +2554,14 @@ class DeviceUsage with Resource, _$DeviceUsage {
     FhirDateTime? timingDateTime,
 
     /// [timingDateTimeElement] ("_timingDateTime") Extensions for timingDateTime
-    @JsonKey(name: '_timingDateTime') Element? timingDateTimeElement,
+    @JsonKey(name: '_timingDateTime') PrimitiveElement? timingDateTimeElement,
 
     /// [dateAsserted] The time at which the statement was recorded by
     ///  informationSource.
     FhirDateTime? dateAsserted,
 
     /// [dateAssertedElement] ("_dateAsserted") Extensions for dateAsserted
-    @JsonKey(name: '_dateAsserted') Element? dateAssertedElement,
+    @JsonKey(name: '_dateAsserted') PrimitiveElement? dateAssertedElement,
 
     /// [usageStatus] The status of the device usage, for example always,
     ///  sometimes, never. This is not the same as the status of the statement.
@@ -2629,7 +2638,7 @@ class DeviceUsage with Resource, _$DeviceUsage {
 /// [DeviceUsageAdherence] A record of a device being used by a patient where
 ///  the record is the result of a report from the patient or a clinician.
 @freezed
-class DeviceUsageAdherence with BackboneType, _$DeviceUsageAdherence {
+class DeviceUsageAdherence with _$DeviceUsageAdherence implements BackboneType {
   /// [DeviceUsageAdherence] A record of a device being used by a patient where
   ///  the record is the result of a report from the patient or a clinician.
   const DeviceUsageAdherence._();
@@ -2733,7 +2742,7 @@ class DeviceUsageAdherence with BackboneType, _$DeviceUsageAdherence {
 ///  request, including any output parameters returned by the evaluation, as
 ///  well as the description of any proposed actions to be taken.
 @freezed
-class GuidanceResponse with Resource, _$GuidanceResponse {
+class GuidanceResponse with _$GuidanceResponse implements DomainResource {
   /// [GuidanceResponse] A guidance response is the formal response to a guidance
   ///  request, including any output parameters returned by the evaluation, as
   ///  well as the description of any proposed actions to be taken.
@@ -2892,13 +2901,13 @@ class GuidanceResponse with Resource, _$GuidanceResponse {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -2952,14 +2961,14 @@ class GuidanceResponse with Resource, _$GuidanceResponse {
     FhirUri? moduleUri,
 
     /// [moduleUriElement] ("_moduleUri") Extensions for moduleUri
-    @JsonKey(name: '_moduleUri') Element? moduleUriElement,
+    @JsonKey(name: '_moduleUri') PrimitiveElement? moduleUriElement,
 
     /// [moduleCanonical] An identifier, CodeableConcept or canonical reference to
     ///  the guidance that was requested.
     FhirCanonical? moduleCanonical,
 
     /// [moduleCanonicalElement] ("_moduleCanonical") Extensions for moduleCanonical
-    @JsonKey(name: '_moduleCanonical') Element? moduleCanonicalElement,
+    @JsonKey(name: '_moduleCanonical') PrimitiveElement? moduleCanonicalElement,
 
     /// [moduleCodeableConcept] An identifier, CodeableConcept or canonical
     ///  reference to the guidance that was requested.
@@ -2977,7 +2986,7 @@ class GuidanceResponse with Resource, _$GuidanceResponse {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [subject] The patient for which the request was processed.
     Reference? subject,
@@ -2991,7 +3000,8 @@ class GuidanceResponse with Resource, _$GuidanceResponse {
 
     /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
     ///  occurrenceDateTime
-    @JsonKey(name: '_occurrenceDateTime') Element? occurrenceDateTimeElement,
+    @JsonKey(name: '_occurrenceDateTime')
+    PrimitiveElement? occurrenceDateTimeElement,
 
     /// [performer] Provides a reference to the device that performed the guidance.
     Reference? performer,
@@ -3075,7 +3085,7 @@ class GuidanceResponse with Resource, _$GuidanceResponse {
 /// [InventoryItem] A functional description of an inventory item used in
 ///  inventory and supply-related workflows.
 @freezed
-class InventoryItem with Resource, _$InventoryItem {
+class InventoryItem with _$InventoryItem implements DomainResource {
   /// [InventoryItem] A functional description of an inventory item used in
   ///  inventory and supply-related workflows.
   const InventoryItem._();
@@ -3192,13 +3202,13 @@ class InventoryItem with Resource, _$InventoryItem {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -3244,7 +3254,7 @@ class InventoryItem with Resource, _$InventoryItem {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [category] Category or class of the item.
     List<CodeableConcept>? category,
@@ -3330,7 +3340,7 @@ class InventoryItem with Resource, _$InventoryItem {
 /// [InventoryItemName] A functional description of an inventory item used in
 ///  inventory and supply-related workflows.
 @freezed
-class InventoryItemName with BackboneType, _$InventoryItemName {
+class InventoryItemName with _$InventoryItemName implements BackboneType {
   /// [InventoryItemName] A functional description of an inventory item used in
   ///  inventory and supply-related workflows.
   const InventoryItemName._();
@@ -3407,13 +3417,13 @@ class InventoryItemName with BackboneType, _$InventoryItemName {
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [name] The name or designation that the item is given.
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
   }) = _InventoryItemName;
 
   @override
@@ -3559,7 +3569,9 @@ class InventoryItemResponsibleOrganization
 /// [InventoryItemDescription] A functional description of an inventory item
 ///  used in inventory and supply-related workflows.
 @freezed
-class InventoryItemDescription with BackboneType, _$InventoryItemDescription {
+class InventoryItemDescription
+    with _$InventoryItemDescription
+    implements BackboneType {
   /// [InventoryItemDescription] A functional description of an inventory item
   ///  used in inventory and supply-related workflows.
   const InventoryItemDescription._();
@@ -3633,13 +3645,13 @@ class InventoryItemDescription with BackboneType, _$InventoryItemDescription {
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [description] Textual description of the item.
     String? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
   }) = _InventoryItemDescription;
 
   @override
@@ -3676,7 +3688,9 @@ class InventoryItemDescription with BackboneType, _$InventoryItemDescription {
 /// [InventoryItemAssociation] A functional description of an inventory item
 ///  used in inventory and supply-related workflows.
 @freezed
-class InventoryItemAssociation with BackboneType, _$InventoryItemAssociation {
+class InventoryItemAssociation
+    with _$InventoryItemAssociation
+    implements BackboneType {
   /// [InventoryItemAssociation] A functional description of an inventory item
   ///  used in inventory and supply-related workflows.
   const InventoryItemAssociation._();
@@ -3904,37 +3918,37 @@ class InventoryItemCharacteristic
     String? valueString,
 
     /// [valueStringElement] ("_valueString") Extensions for valueString
-    @JsonKey(name: '_valueString') Element? valueStringElement,
+    @JsonKey(name: '_valueString') PrimitiveElement? valueStringElement,
 
     /// [valueInteger] The value of the attribute.
     FhirInteger? valueInteger,
 
     /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
-    @JsonKey(name: '_valueInteger') Element? valueIntegerElement,
+    @JsonKey(name: '_valueInteger') PrimitiveElement? valueIntegerElement,
 
     /// [valueDecimal] The value of the attribute.
     FhirDecimal? valueDecimal,
 
     /// [valueDecimalElement] ("_valueDecimal") Extensions for valueDecimal
-    @JsonKey(name: '_valueDecimal') Element? valueDecimalElement,
+    @JsonKey(name: '_valueDecimal') PrimitiveElement? valueDecimalElement,
 
     /// [valueBoolean] The value of the attribute.
     FhirBoolean? valueBoolean,
 
     /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
 
     /// [valueUrl] The value of the attribute.
     FhirUrl? valueUrl,
 
     /// [valueUrlElement] ("_valueUrl") Extensions for valueUrl
-    @JsonKey(name: '_valueUrl') Element? valueUrlElement,
+    @JsonKey(name: '_valueUrl') PrimitiveElement? valueUrlElement,
 
     /// [valueDateTime] The value of the attribute.
     FhirDateTime? valueDateTime,
 
     /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
-    @JsonKey(name: '_valueDateTime') Element? valueDateTimeElement,
+    @JsonKey(name: '_valueDateTime') PrimitiveElement? valueDateTimeElement,
 
     /// [valueQuantity] The value of the attribute.
     Quantity? valueQuantity,
@@ -3993,7 +4007,9 @@ class InventoryItemCharacteristic
 /// [InventoryItemInstance] A functional description of an inventory item used
 ///  in inventory and supply-related workflows.
 @freezed
-class InventoryItemInstance with BackboneType, _$InventoryItemInstance {
+class InventoryItemInstance
+    with _$InventoryItemInstance
+    implements BackboneType {
   /// [InventoryItemInstance] A functional description of an inventory item used
   ///  in inventory and supply-related workflows.
   const InventoryItemInstance._();
@@ -4074,13 +4090,13 @@ class InventoryItemInstance with BackboneType, _$InventoryItemInstance {
     String? lotNumber,
 
     /// [lotNumberElement] ("_lotNumber") Extensions for lotNumber
-    @JsonKey(name: '_lotNumber') Element? lotNumberElement,
+    @JsonKey(name: '_lotNumber') PrimitiveElement? lotNumberElement,
 
     /// [expiry] The expiry date or date and time for the product.
     FhirDateTime? expiry,
 
     /// [expiryElement] ("_expiry") Extensions for expiry
-    @JsonKey(name: '_expiry') Element? expiryElement,
+    @JsonKey(name: '_expiry') PrimitiveElement? expiryElement,
 
     /// [subject] The subject that the item is associated with.
     Reference? subject,
@@ -4122,7 +4138,7 @@ class InventoryItemInstance with BackboneType, _$InventoryItemInstance {
 
 /// [InventoryReport] A report of inventory or stock items.
 @freezed
-class InventoryReport with Resource, _$InventoryReport {
+class InventoryReport with _$InventoryReport implements DomainResource {
   /// [InventoryReport] A report of inventory or stock items.
   const InventoryReport._();
 
@@ -4235,13 +4251,13 @@ class InventoryReport with Resource, _$InventoryReport {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -4288,14 +4304,14 @@ class InventoryReport with Resource, _$InventoryReport {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [countType] Whether the report is about the current inventory count
     ///  (snapshot) or a differential change in inventory (change).
     FhirCode? countType,
 
     /// [countTypeElement] ("_countType") Extensions for countType
-    @JsonKey(name: '_countType') Element? countTypeElement,
+    @JsonKey(name: '_countType') PrimitiveElement? countTypeElement,
 
     /// [operationType] What type of operation is being performed - addition or
     ///  subtraction.
@@ -4310,7 +4326,8 @@ class InventoryReport with Resource, _$InventoryReport {
 
     /// [reportedDateTimeElement] ("_reportedDateTime") Extensions for
     ///  reportedDateTime
-    @JsonKey(name: '_reportedDateTime') Element? reportedDateTimeElement,
+    @JsonKey(name: '_reportedDateTime')
+    PrimitiveElement? reportedDateTimeElement,
 
     /// [reporter] Who submits the report.
     Reference? reporter,
@@ -4447,7 +4464,8 @@ class InventoryReportInventoryListing
 
     /// [countingDateTimeElement] ("_countingDateTime") Extensions for
     ///  countingDateTime
-    @JsonKey(name: '_countingDateTime') Element? countingDateTimeElement,
+    @JsonKey(name: '_countingDateTime')
+    PrimitiveElement? countingDateTimeElement,
 
     /// [item] The item or items in this listing.
     List<InventoryReportItem>? item,
@@ -4488,7 +4506,7 @@ class InventoryReportInventoryListing
 
 /// [InventoryReportItem] A report of inventory or stock items.
 @freezed
-class InventoryReportItem with BackboneType, _$InventoryReportItem {
+class InventoryReportItem with _$InventoryReportItem implements BackboneType {
   /// [InventoryReportItem] A report of inventory or stock items.
   const InventoryReportItem._();
 
@@ -4597,7 +4615,7 @@ class InventoryReportItem with BackboneType, _$InventoryReportItem {
 
 /// [SupplyDelivery] Record of delivery of what is supplied.
 @freezed
-class SupplyDelivery with Resource, _$SupplyDelivery {
+class SupplyDelivery with _$SupplyDelivery implements DomainResource {
   /// [SupplyDelivery] Record of delivery of what is supplied.
   const SupplyDelivery._();
 
@@ -4717,13 +4735,13 @@ class SupplyDelivery with Resource, _$SupplyDelivery {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -4778,7 +4796,7 @@ class SupplyDelivery with Resource, _$SupplyDelivery {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [patient] A link to a resource representing the person whom the delivered
     ///  item is for.
@@ -4796,7 +4814,8 @@ class SupplyDelivery with Resource, _$SupplyDelivery {
 
     /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
     ///  occurrenceDateTime
-    @JsonKey(name: '_occurrenceDateTime') Element? occurrenceDateTimeElement,
+    @JsonKey(name: '_occurrenceDateTime')
+    PrimitiveElement? occurrenceDateTimeElement,
 
     /// [occurrencePeriod] The date or time(s) the activity occurred.
     Period? occurrencePeriod,
@@ -4981,7 +5000,7 @@ class SupplyDeliverySuppliedItem
 ///  device used in the healthcare setting to a particular destination for a
 ///  particular person or organization.
 @freezed
-class SupplyRequest with Resource, _$SupplyRequest {
+class SupplyRequest with _$SupplyRequest implements DomainResource {
   /// [SupplyRequest] A record of a request to deliver a medication, substance or
   ///  device used in the healthcare setting to a particular destination for a
   ///  particular person or organization.
@@ -5119,13 +5138,13 @@ class SupplyRequest with Resource, _$SupplyRequest {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -5173,7 +5192,7 @@ class SupplyRequest with Resource, _$SupplyRequest {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [basedOn] Plan/proposal/order fulfilled by this request.
     List<Reference>? basedOn,
@@ -5187,7 +5206,7 @@ class SupplyRequest with Resource, _$SupplyRequest {
     FhirCode? priority,
 
     /// [priorityElement] ("_priority") Extensions for priority
-    @JsonKey(name: '_priority') Element? priorityElement,
+    @JsonKey(name: '_priority') PrimitiveElement? priorityElement,
 
     /// [deliverFor] The patient to whom the supply will be given or for whom they
     ///  will be used.
@@ -5210,7 +5229,8 @@ class SupplyRequest with Resource, _$SupplyRequest {
 
     /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
     ///  occurrenceDateTime
-    @JsonKey(name: '_occurrenceDateTime') Element? occurrenceDateTimeElement,
+    @JsonKey(name: '_occurrenceDateTime')
+    PrimitiveElement? occurrenceDateTimeElement,
 
     /// [occurrencePeriod] When the request should be fulfilled.
     Period? occurrencePeriod,
@@ -5222,7 +5242,7 @@ class SupplyRequest with Resource, _$SupplyRequest {
     FhirDateTime? authoredOn,
 
     /// [authoredOnElement] ("_authoredOn") Extensions for authoredOn
-    @JsonKey(name: '_authoredOn') Element? authoredOnElement,
+    @JsonKey(name: '_authoredOn') PrimitiveElement? authoredOnElement,
 
     /// [requester] The device, practitioner, etc. who initiated the request.
     Reference? requester,
@@ -5284,7 +5304,9 @@ class SupplyRequest with Resource, _$SupplyRequest {
 ///  substance or device used in the healthcare setting to a particular
 ///  destination for a particular person or organization.
 @freezed
-class SupplyRequestParameter with BackboneType, _$SupplyRequestParameter {
+class SupplyRequestParameter
+    with _$SupplyRequestParameter
+    implements BackboneType {
   /// [SupplyRequestParameter] A record of a request to deliver a medication,
   ///  substance or device used in the healthcare setting to a particular
   ///  destination for a particular person or organization.
@@ -5372,7 +5394,7 @@ class SupplyRequestParameter with BackboneType, _$SupplyRequestParameter {
     FhirBoolean? valueBoolean,
 
     /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
   }) = _SupplyRequestParameter;
 
   @override

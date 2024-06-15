@@ -19,7 +19,9 @@ part 'entities2.enums.dart';
 ///  biological entity intended to be transplanted or infused into another
 ///  (possibly the same) biological entity.
 @freezed
-class BiologicallyDerivedProduct with Resource, _$BiologicallyDerivedProduct {
+class BiologicallyDerivedProduct
+    with _$BiologicallyDerivedProduct
+    implements DomainResource {
   /// [BiologicallyDerivedProduct] This resource reflects an instance of a
   ///  biologically derived product. A material substance originating from a
   ///  biological entity intended to be transplanted or infused into another
@@ -147,13 +149,13 @@ class BiologicallyDerivedProduct with Resource, _$BiologicallyDerivedProduct {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -226,7 +228,7 @@ class BiologicallyDerivedProduct with Resource, _$BiologicallyDerivedProduct {
     String? division,
 
     /// [divisionElement] ("_division") Extensions for division
-    @JsonKey(name: '_division') Element? divisionElement,
+    @JsonKey(name: '_division') PrimitiveElement? divisionElement,
 
     /// [productStatus] Whether the product is currently available.
     Coding? productStatus,
@@ -235,7 +237,7 @@ class BiologicallyDerivedProduct with Resource, _$BiologicallyDerivedProduct {
     FhirDateTime? expirationDate,
 
     /// [expirationDateElement] ("_expirationDate") Extensions for expirationDate
-    @JsonKey(name: '_expirationDate') Element? expirationDateElement,
+    @JsonKey(name: '_expirationDate') PrimitiveElement? expirationDateElement,
 
     /// [collection] How this product was collected.
     BiologicallyDerivedProductCollection? collection,
@@ -381,7 +383,8 @@ class BiologicallyDerivedProductCollection
 
     /// [collectedDateTimeElement] ("_collectedDateTime") Extensions for
     ///  collectedDateTime
-    @JsonKey(name: '_collectedDateTime') Element? collectedDateTimeElement,
+    @JsonKey(name: '_collectedDateTime')
+    PrimitiveElement? collectedDateTimeElement,
 
     /// [collectedPeriod] Time of product collection.
     Period? collectedPeriod,
@@ -524,13 +527,13 @@ class BiologicallyDerivedProductProperty
     FhirBoolean? valueBoolean,
 
     /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
 
     /// [valueInteger] Property values.
     FhirInteger? valueInteger,
 
     /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
-    @JsonKey(name: '_valueInteger') Element? valueIntegerElement,
+    @JsonKey(name: '_valueInteger') PrimitiveElement? valueIntegerElement,
 
     /// [valueCodeableConcept] Property values.
     CodeableConcept? valueCodeableConcept,
@@ -551,7 +554,7 @@ class BiologicallyDerivedProductProperty
     String? valueString,
 
     /// [valueStringElement] ("_valueString") Extensions for valueString
-    @JsonKey(name: '_valueString') Element? valueStringElement,
+    @JsonKey(name: '_valueString') PrimitiveElement? valueStringElement,
 
     /// [valueAttachment] Property values.
     Attachment? valueAttachment,
@@ -738,13 +741,13 @@ class BiologicallyDerivedProductDispense
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -799,7 +802,7 @@ class BiologicallyDerivedProductDispense
     BiologicallyDerivedProductDispenseStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [originRelationshipType] Indicates the relationship between the donor of
     ///  the biologically derived product and the intended recipient.
@@ -831,13 +834,13 @@ class BiologicallyDerivedProductDispense
     FhirDateTime? preparedDate,
 
     /// [preparedDateElement] ("_preparedDate") Extensions for preparedDate
-    @JsonKey(name: '_preparedDate') Element? preparedDateElement,
+    @JsonKey(name: '_preparedDate') PrimitiveElement? preparedDateElement,
 
     /// [whenHandedOver] When the product was dispatched for clinical use.
     FhirDateTime? whenHandedOver,
 
     /// [whenHandedOverElement] ("_whenHandedOver") Extensions for whenHandedOver
-    @JsonKey(name: '_whenHandedOver') Element? whenHandedOverElement,
+    @JsonKey(name: '_whenHandedOver') PrimitiveElement? whenHandedOverElement,
 
     /// [destination] Link to a resource identifying the physical location that the
     ///  product was dispatched to.
@@ -851,7 +854,8 @@ class BiologicallyDerivedProductDispense
 
     /// [usageInstructionElement] ("_usageInstruction") Extensions for
     ///  usageInstruction
-    @JsonKey(name: '_usageInstruction') Element? usageInstructionElement,
+    @JsonKey(name: '_usageInstruction')
+    PrimitiveElement? usageInstructionElement,
   }) = _BiologicallyDerivedProductDispense;
 
   @override
@@ -1020,7 +1024,7 @@ class BiologicallyDerivedProductDispensePerformer
 ///  healthcare without being substantially changed through that activity. The
 ///  device may be a medical or non-medical device.
 @freezed
-class Device with Resource, _$Device {
+class Device with _$Device implements DomainResource {
   /// [Device] A type of a manufactured item that is used in the provision of
   ///  healthcare without being substantially changed through that activity. The
   ///  device may be a medical or non-medical device.
@@ -1223,13 +1227,13 @@ class Device with Resource, _$Device {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1278,7 +1282,7 @@ class Device with Resource, _$Device {
     String? displayName,
 
     /// [displayNameElement] ("_displayName") Extensions for displayName
-    @JsonKey(name: '_displayName') Element? displayNameElement,
+    @JsonKey(name: '_displayName') PrimitiveElement? displayNameElement,
 
     /// [definition] The reference to the definition for the device.
     CodeableReference? definition,
@@ -1294,7 +1298,7 @@ class Device with Resource, _$Device {
     DeviceStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [availabilityStatus] The availability of the device.
     CodeableConcept? availabilityStatus,
@@ -1309,33 +1313,33 @@ class Device with Resource, _$Device {
     String? manufacturer,
 
     /// [manufacturerElement] ("_manufacturer") Extensions for manufacturer
-    @JsonKey(name: '_manufacturer') Element? manufacturerElement,
+    @JsonKey(name: '_manufacturer') PrimitiveElement? manufacturerElement,
 
     /// [manufactureDate] The date and time when the device was manufactured.
     FhirDateTime? manufactureDate,
 
     /// [manufactureDateElement] ("_manufactureDate") Extensions for manufactureDate
-    @JsonKey(name: '_manufactureDate') Element? manufactureDateElement,
+    @JsonKey(name: '_manufactureDate') PrimitiveElement? manufactureDateElement,
 
     /// [expirationDate] The date and time beyond which this device is no longer
     ///  valid or should not be used (if applicable).
     FhirDateTime? expirationDate,
 
     /// [expirationDateElement] ("_expirationDate") Extensions for expirationDate
-    @JsonKey(name: '_expirationDate') Element? expirationDateElement,
+    @JsonKey(name: '_expirationDate') PrimitiveElement? expirationDateElement,
 
     /// [lotNumber] Lot number assigned by the manufacturer.
     String? lotNumber,
 
     /// [lotNumberElement] ("_lotNumber") Extensions for lotNumber
-    @JsonKey(name: '_lotNumber') Element? lotNumberElement,
+    @JsonKey(name: '_lotNumber') PrimitiveElement? lotNumberElement,
 
     /// [serialNumber] The serial number assigned by the organization when the
     ///  device was manufactured.
     String? serialNumber,
 
     /// [serialNumberElement] ("_serialNumber") Extensions for serialNumber
-    @JsonKey(name: '_serialNumber') Element? serialNumberElement,
+    @JsonKey(name: '_serialNumber') PrimitiveElement? serialNumberElement,
 
     /// [name] This represents the manufacturer's name of the device as provided by
     ///  the device, from a UDI label, or by a person describing the Device.  This
@@ -1347,13 +1351,13 @@ class Device with Resource, _$Device {
     String? modelNumber,
 
     /// [modelNumberElement] ("_modelNumber") Extensions for modelNumber
-    @JsonKey(name: '_modelNumber') Element? modelNumberElement,
+    @JsonKey(name: '_modelNumber') PrimitiveElement? modelNumberElement,
 
     /// [partNumber] The part number or catalog number of the device.
     String? partNumber,
 
     /// [partNumberElement] ("_partNumber") Extensions for partNumber
-    @JsonKey(name: '_partNumber') Element? partNumberElement,
+    @JsonKey(name: '_partNumber') PrimitiveElement? partNumberElement,
 
     /// [category] Devices may be associated with one or more categories.
     List<CodeableConcept>? category,
@@ -1405,7 +1409,7 @@ class Device with Resource, _$Device {
     FhirUri? url,
 
     /// [urlElement] ("_url") Extensions for url
-    @JsonKey(name: '_url') Element? urlElement,
+    @JsonKey(name: '_url') PrimitiveElement? urlElement,
 
     /// [endpoint] Technical endpoints providing access to services provided by the
     ///  device defined at this resource.
@@ -1472,7 +1476,7 @@ class Device with Resource, _$Device {
 ///  provision of healthcare without being substantially changed through that
 ///  activity. The device may be a medical or non-medical device.
 @freezed
-class DeviceUdiCarrier with BackboneType, _$DeviceUdiCarrier {
+class DeviceUdiCarrier with _$DeviceUdiCarrier implements BackboneType {
   /// [DeviceUdiCarrier] A type of a manufactured item that is used in the
   ///  provision of healthcare without being substantially changed through that
   ///  activity. The device may be a medical or non-medical device.
@@ -1586,7 +1590,8 @@ class DeviceUdiCarrier with BackboneType, _$DeviceUdiCarrier {
 
     /// [deviceIdentifierElement] ("_deviceIdentifier") Extensions for
     ///  deviceIdentifier
-    @JsonKey(name: '_deviceIdentifier') Element? deviceIdentifierElement,
+    @JsonKey(name: '_deviceIdentifier')
+    PrimitiveElement? deviceIdentifierElement,
 
     /// [issuer] Organization that is charged with issuing UDIs for devices. For
     ///  example, the US FDA issuers include:
@@ -1601,7 +1606,7 @@ class DeviceUdiCarrier with BackboneType, _$DeviceUdiCarrier {
     FhirUri? issuer,
 
     /// [issuerElement] ("_issuer") Extensions for issuer
-    @JsonKey(name: '_issuer') Element? issuerElement,
+    @JsonKey(name: '_issuer') PrimitiveElement? issuerElement,
 
     /// [jurisdiction] The identity of the authoritative source for UDI generation
     ///  within a jurisdiction. All UDIs are globally unique within a single
@@ -1612,7 +1617,7 @@ class DeviceUdiCarrier with BackboneType, _$DeviceUdiCarrier {
     FhirUri? jurisdiction,
 
     /// [jurisdictionElement] ("_jurisdiction") Extensions for jurisdiction
-    @JsonKey(name: '_jurisdiction') Element? jurisdictionElement,
+    @JsonKey(name: '_jurisdiction') PrimitiveElement? jurisdictionElement,
 
     /// [carrierAIDC] The full UDI carrier of the Automatic Identification and Data
     ///  Capture (AIDC) technology representation of the barcode string as printed
@@ -1622,7 +1627,7 @@ class DeviceUdiCarrier with BackboneType, _$DeviceUdiCarrier {
     FhirBase64Binary? carrierAIDC,
 
     /// [carrierAIDCElement] ("_carrierAIDC") Extensions for carrierAIDC
-    @JsonKey(name: '_carrierAIDC') Element? carrierAIDCElement,
+    @JsonKey(name: '_carrierAIDC') PrimitiveElement? carrierAIDCElement,
 
     /// [carrierHRF] The full UDI carrier as the human readable form (HRF)
     ///  representation of the barcode string as printed on the packaging of the
@@ -1630,13 +1635,13 @@ class DeviceUdiCarrier with BackboneType, _$DeviceUdiCarrier {
     String? carrierHRF,
 
     /// [carrierHRFElement] ("_carrierHRF") Extensions for carrierHRF
-    @JsonKey(name: '_carrierHRF') Element? carrierHRFElement,
+    @JsonKey(name: '_carrierHRF') PrimitiveElement? carrierHRFElement,
 
     /// [entryType] A coded entry to indicate how the data was entered.
     UdiEntryType? entryType,
 
     /// [entryTypeElement] ("_entryType") Extensions for entryType
-    @JsonKey(name: '_entryType') Element? entryTypeElement,
+    @JsonKey(name: '_entryType') PrimitiveElement? entryTypeElement,
   }) = _DeviceUdiCarrier;
 
   @override
@@ -1674,7 +1679,7 @@ class DeviceUdiCarrier with BackboneType, _$DeviceUdiCarrier {
 ///  healthcare without being substantially changed through that activity. The
 ///  device may be a medical or non-medical device.
 @freezed
-class DeviceName with BackboneType, _$DeviceName {
+class DeviceName with _$DeviceName implements BackboneType {
   /// [DeviceName] A type of a manufactured item that is used in the provision of
   ///  healthcare without being substantially changed through that activity. The
   ///  device may be a medical or non-medical device.
@@ -1751,20 +1756,20 @@ class DeviceName with BackboneType, _$DeviceName {
     String? value,
 
     /// [valueElement] ("_value") Extensions for value
-    @JsonKey(name: '_value') Element? valueElement,
+    @JsonKey(name: '_value') PrimitiveElement? valueElement,
 
     /// [type] Indicates the kind of name. RegisteredName | UserFriendlyName |
     ///  PatientReportedName.
     DeviceNameType? type,
 
     /// [typeElement] ("_type") Extensions for type
-    @JsonKey(name: '_type') Element? typeElement,
+    @JsonKey(name: '_type') PrimitiveElement? typeElement,
 
     /// [display] Indicates the default or preferred name to be displayed.
     FhirBoolean? display,
 
     /// [displayElement] ("_display") Extensions for display
-    @JsonKey(name: '_display') Element? displayElement,
+    @JsonKey(name: '_display') PrimitiveElement? displayElement,
   }) = _DeviceName;
 
   @override
@@ -1802,7 +1807,7 @@ class DeviceName with BackboneType, _$DeviceName {
 ///  of healthcare without being substantially changed through that activity.
 ///  The device may be a medical or non-medical device.
 @freezed
-class DeviceVersion with BackboneType, _$DeviceVersion {
+class DeviceVersion with _$DeviceVersion implements BackboneType {
   /// [DeviceVersion] A type of a manufactured item that is used in the provision
   ///  of healthcare without being substantially changed through that activity.
   ///  The device may be a medical or non-medical device.
@@ -1888,13 +1893,13 @@ class DeviceVersion with BackboneType, _$DeviceVersion {
     FhirDateTime? installDate,
 
     /// [installDateElement] ("_installDate") Extensions for installDate
-    @JsonKey(name: '_installDate') Element? installDateElement,
+    @JsonKey(name: '_installDate') PrimitiveElement? installDateElement,
 
     /// [value] The version text.
     String? value,
 
     /// [valueElement] ("_value") Extensions for value
-    @JsonKey(name: '_value') Element? valueElement,
+    @JsonKey(name: '_value') PrimitiveElement? valueElement,
   }) = _DeviceVersion;
 
   @override
@@ -1932,7 +1937,7 @@ class DeviceVersion with BackboneType, _$DeviceVersion {
 ///  provision of healthcare without being substantially changed through that
 ///  activity. The device may be a medical or non-medical device.
 @freezed
-class DeviceConformsTo with BackboneType, _$DeviceConformsTo {
+class DeviceConformsTo with _$DeviceConformsTo implements BackboneType {
   /// [DeviceConformsTo] A type of a manufactured item that is used in the
   ///  provision of healthcare without being substantially changed through that
   ///  activity. The device may be a medical or non-medical device.
@@ -2020,7 +2025,7 @@ class DeviceConformsTo with BackboneType, _$DeviceConformsTo {
     String? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') Element? versionElement,
+    @JsonKey(name: '_version') PrimitiveElement? versionElement,
   }) = _DeviceConformsTo;
 
   @override
@@ -2058,7 +2063,7 @@ class DeviceConformsTo with BackboneType, _$DeviceConformsTo {
 ///  provision of healthcare without being substantially changed through that
 ///  activity. The device may be a medical or non-medical device.
 @freezed
-class DeviceProperty with BackboneType, _$DeviceProperty {
+class DeviceProperty with _$DeviceProperty implements BackboneType {
   /// [DeviceProperty] A type of a manufactured item that is used in the
   ///  provision of healthcare without being substantially changed through that
   ///  activity. The device may be a medical or non-medical device.
@@ -2165,21 +2170,21 @@ class DeviceProperty with BackboneType, _$DeviceProperty {
     String? valueString,
 
     /// [valueStringElement] ("_valueString") Extensions for valueString
-    @JsonKey(name: '_valueString') Element? valueStringElement,
+    @JsonKey(name: '_valueString') PrimitiveElement? valueStringElement,
 
     /// [valueBoolean] The value of the property specified by the associated
     ///  property.type code.
     FhirBoolean? valueBoolean,
 
     /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
 
     /// [valueInteger] The value of the property specified by the associated
     ///  property.type code.
     FhirInteger? valueInteger,
 
     /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
-    @JsonKey(name: '_valueInteger') Element? valueIntegerElement,
+    @JsonKey(name: '_valueInteger') PrimitiveElement? valueIntegerElement,
 
     /// [valueRange] The value of the property specified by the associated
     ///  property.type code.
@@ -2224,7 +2229,7 @@ class DeviceProperty with BackboneType, _$DeviceProperty {
 /// [DeviceMetric] Describes a measurement, calculation or setting capability
 ///  of a device.
 @freezed
-class DeviceMetric with Resource, _$DeviceMetric {
+class DeviceMetric with _$DeviceMetric implements DomainResource {
   /// [DeviceMetric] Describes a measurement, calculation or setting capability
   ///  of a device.
   const DeviceMetric._();
@@ -2351,13 +2356,13 @@ class DeviceMetric with Resource, _$DeviceMetric {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -2419,7 +2424,8 @@ class DeviceMetric with Resource, _$DeviceMetric {
 
     /// [operationalStatusElement] ("_operationalStatus") Extensions for
     ///  operationalStatus
-    @JsonKey(name: '_operationalStatus') Element? operationalStatusElement,
+    @JsonKey(name: '_operationalStatus')
+    PrimitiveElement? operationalStatusElement,
 
     /// [color] The preferred color associated with the metric (e.g., display
     ///  color). This is often used to aid clinicians to track and identify
@@ -2429,14 +2435,14 @@ class DeviceMetric with Resource, _$DeviceMetric {
     FhirCode? color,
 
     /// [colorElement] ("_color") Extensions for color
-    @JsonKey(name: '_color') Element? colorElement,
+    @JsonKey(name: '_color') PrimitiveElement? colorElement,
 
     /// [category] Indicates the category of the observation generation process. A
     ///  DeviceMetric can be for example a setting, measurement, or calculation.
     DeviceMetricCategory? category,
 
     /// [categoryElement] ("_category") Extensions for category
-    @JsonKey(name: '_category') Element? categoryElement,
+    @JsonKey(name: '_category') PrimitiveElement? categoryElement,
 
     /// [measurementFrequency] The frequency at which the metric is taken or
     ///  recorded. Devices measure metrics at a wide range of frequencies; for
@@ -2496,7 +2502,9 @@ class DeviceMetric with Resource, _$DeviceMetric {
 /// [DeviceMetricCalibration] Describes a measurement, calculation or setting
 ///  capability of a device.
 @freezed
-class DeviceMetricCalibration with BackboneType, _$DeviceMetricCalibration {
+class DeviceMetricCalibration
+    with _$DeviceMetricCalibration
+    implements BackboneType {
   /// [DeviceMetricCalibration] Describes a measurement, calculation or setting
   ///  capability of a device.
   const DeviceMetricCalibration._();
@@ -2570,19 +2578,19 @@ class DeviceMetricCalibration with BackboneType, _$DeviceMetricCalibration {
     DeviceMetricCalibrationType? type,
 
     /// [typeElement] ("_type") Extensions for type
-    @JsonKey(name: '_type') Element? typeElement,
+    @JsonKey(name: '_type') PrimitiveElement? typeElement,
 
     /// [state] Describes the state of the calibration.
     DeviceMetricCalibrationState? state,
 
     /// [stateElement] ("_state") Extensions for state
-    @JsonKey(name: '_state') Element? stateElement,
+    @JsonKey(name: '_state') PrimitiveElement? stateElement,
 
     /// [time] Describes the time last calibration has been performed.
     FhirInstant? time,
 
     /// [timeElement] ("_time") Extensions for time
-    @JsonKey(name: '_time') Element? timeElement,
+    @JsonKey(name: '_time') PrimitiveElement? timeElement,
   }) = _DeviceMetricCalibration;
 
   @override
@@ -2618,7 +2626,7 @@ class DeviceMetricCalibration with BackboneType, _$DeviceMetricCalibration {
 
 /// [NutritionProduct] A food or supplement that is consumed by patients.
 @freezed
-class NutritionProduct with Resource, _$NutritionProduct {
+class NutritionProduct with _$NutritionProduct implements DomainResource {
   /// [NutritionProduct] A food or supplement that is consumed by patients.
   const NutritionProduct._();
 
@@ -2726,13 +2734,13 @@ class NutritionProduct with Resource, _$NutritionProduct {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -2779,7 +2787,7 @@ class NutritionProduct with Resource, _$NutritionProduct {
     NutritionProductStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [category] Nutrition products can have different classifications -
     ///  according to its nutritional properties, preparation methods, etc.
@@ -2853,7 +2861,9 @@ class NutritionProduct with Resource, _$NutritionProduct {
 /// [NutritionProductNutrient] A food or supplement that is consumed by
 ///  patients.
 @freezed
-class NutritionProductNutrient with BackboneType, _$NutritionProductNutrient {
+class NutritionProductNutrient
+    with _$NutritionProductNutrient
+    implements BackboneType {
   /// [NutritionProductNutrient] A food or supplement that is consumed by
   ///  patients.
   const NutritionProductNutrient._();
@@ -3157,7 +3167,7 @@ class NutritionProductCharacteristic
     String? valueString,
 
     /// [valueStringElement] ("_valueString") Extensions for valueString
-    @JsonKey(name: '_valueString') Element? valueStringElement,
+    @JsonKey(name: '_valueString') PrimitiveElement? valueStringElement,
 
     /// [valueQuantity] The actual characteristic value corresponding to the type.
     Quantity? valueQuantity,
@@ -3168,7 +3178,8 @@ class NutritionProductCharacteristic
 
     /// [valueBase64BinaryElement] ("_valueBase64Binary") Extensions for
     ///  valueBase64Binary
-    @JsonKey(name: '_valueBase64Binary') Element? valueBase64BinaryElement,
+    @JsonKey(name: '_valueBase64Binary')
+    PrimitiveElement? valueBase64BinaryElement,
 
     /// [valueAttachment] The actual characteristic value corresponding to the type.
     Attachment? valueAttachment,
@@ -3177,7 +3188,7 @@ class NutritionProductCharacteristic
     FhirBoolean? valueBoolean,
 
     /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
   }) = _NutritionProductCharacteristic;
 
   @override
@@ -3216,7 +3227,9 @@ class NutritionProductCharacteristic
 /// [NutritionProductInstance] A food or supplement that is consumed by
 ///  patients.
 @freezed
-class NutritionProductInstance with BackboneType, _$NutritionProductInstance {
+class NutritionProductInstance
+    with _$NutritionProductInstance
+    implements BackboneType {
   /// [NutritionProductInstance] A food or supplement that is consumed by
   ///  patients.
   const NutritionProductInstance._();
@@ -3314,27 +3327,27 @@ class NutritionProductInstance with BackboneType, _$NutritionProductInstance {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [lotNumber] The identification of the batch or lot of the product.
     String? lotNumber,
 
     /// [lotNumberElement] ("_lotNumber") Extensions for lotNumber
-    @JsonKey(name: '_lotNumber') Element? lotNumberElement,
+    @JsonKey(name: '_lotNumber') PrimitiveElement? lotNumberElement,
 
     /// [expiry] The time after which the product is no longer expected to be in
     ///  proper condition, or its use is not advised or not allowed.
     FhirDateTime? expiry,
 
     /// [expiryElement] ("_expiry") Extensions for expiry
-    @JsonKey(name: '_expiry') Element? expiryElement,
+    @JsonKey(name: '_expiry') PrimitiveElement? expiryElement,
 
     /// [useBy] The time after which the product is no longer expected to be in
     ///  proper condition, or its use is not advised or not allowed.
     FhirDateTime? useBy,
 
     /// [useByElement] ("_useBy") Extensions for useBy
-    @JsonKey(name: '_useBy') Element? useByElement,
+    @JsonKey(name: '_useBy') PrimitiveElement? useByElement,
 
     /// [biologicalSourceEvent] An identifier that supports traceability to the
     ///  event during which material in this product from one or more biological
@@ -3375,7 +3388,7 @@ class NutritionProductInstance with BackboneType, _$NutritionProductInstance {
 
 /// [Substance] A homogeneous material with a definite composition.
 @freezed
-class Substance with Resource, _$Substance {
+class Substance with _$Substance implements DomainResource {
   /// [Substance] A homogeneous material with a definite composition.
   const Substance._();
 
@@ -3488,13 +3501,13 @@ class Substance with Resource, _$Substance {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -3543,13 +3556,13 @@ class Substance with Resource, _$Substance {
     FhirBoolean? instance,
 
     /// [instanceElement] ("_instance") Extensions for instance
-    @JsonKey(name: '_instance') Element? instanceElement,
+    @JsonKey(name: '_instance') PrimitiveElement? instanceElement,
 
     /// [status] A code to indicate if the substance is actively used.
     ProductStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [category] A code that classifies the general type of substance.  This is
     ///  used  for searching, sorting and display purposes.
@@ -3563,14 +3576,14 @@ class Substance with Resource, _$Substance {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [expiry] When the substance is no longer valid to use. For some substances,
     ///  a single arbitrary date is used for expiry.
     FhirDateTime? expiry,
 
     /// [expiryElement] ("_expiry") Extensions for expiry
-    @JsonKey(name: '_expiry') Element? expiryElement,
+    @JsonKey(name: '_expiry') PrimitiveElement? expiryElement,
 
     /// [quantity] The amount of the substance.
     Quantity? quantity,
@@ -3621,7 +3634,7 @@ class Substance with Resource, _$Substance {
 
 /// [SubstanceIngredient] A homogeneous material with a definite composition.
 @freezed
-class SubstanceIngredient with BackboneType, _$SubstanceIngredient {
+class SubstanceIngredient with _$SubstanceIngredient implements BackboneType {
   /// [SubstanceIngredient] A homogeneous material with a definite composition.
   const SubstanceIngredient._();
 

@@ -18,7 +18,7 @@ part 'definitional_artifacts.enums.dart';
 ///  activity to be performed, independent of a particular patient,
 ///  practitioner, or other performance context.
 @freezed
-class ActivityDefinition with Resource, _$ActivityDefinition {
+class ActivityDefinition with _$ActivityDefinition implements DomainResource {
   /// [ActivityDefinition] This resource allows for the definition of some
   ///  activity to be performed, independent of a particular patient,
   ///  practitioner, or other performance context.
@@ -375,13 +375,13 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -430,7 +430,7 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     FhirUri? url,
 
     /// [urlElement] ("_url") Extensions for url
-    @JsonKey(name: '_url') Element? urlElement,
+    @JsonKey(name: '_url') PrimitiveElement? urlElement,
 
     /// [identifier] A formal identifier that is used to identify this activity
     ///  definition when it is represented in other formats, or referenced in a
@@ -451,7 +451,7 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     String? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') Element? versionElement,
+    @JsonKey(name: '_version') PrimitiveElement? versionElement,
 
     /// [versionAlgorithmString] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -460,7 +460,7 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
     ///  versionAlgorithmString
     @JsonKey(name: '_versionAlgorithmString')
-    Element? versionAlgorithmStringElement,
+    PrimitiveElement? versionAlgorithmStringElement,
 
     /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -472,21 +472,21 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [title] A short, descriptive, user-friendly title for the activity
     ///  definition.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [status] The status of this activity definition. Enables tracking the
     ///  life-cycle of the content.
     PublicationStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [experimental] A Boolean value to indicate that this activity definition is
     ///  authored for testing purposes (or education/evaluation/marketing) and is
@@ -494,7 +494,7 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     FhirBoolean? experimental,
 
     /// [experimentalElement] ("_experimental") Extensions for experimental
-    @JsonKey(name: '_experimental') Element? experimentalElement,
+    @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
 
     /// [date] The date  (and optionally time) when the activity definition was
     ///  last significantly changed. The date must change when the business version
@@ -504,14 +504,14 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [publisher] The name of the organization or individual responsible for the
     ///  release and ongoing maintenance of the activity definition.
     String? publisher,
 
     /// [publisherElement] ("_publisher") Extensions for publisher
-    @JsonKey(name: '_publisher') Element? publisherElement,
+    @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
 
     /// [contact] Contact details to assist a user in finding and communicating
     ///  with the publisher.
@@ -522,7 +522,7 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [useContext] The content was developed with a focus and intent of
     ///  supporting the contexts that are listed. These contexts may be general
@@ -540,7 +540,7 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     FhirMarkdown? purpose,
 
     /// [purposeElement] ("_purpose") Extensions for purpose
-    @JsonKey(name: '_purpose') Element? purposeElement,
+    @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
 
     /// [copyright] A copyright statement relating to the activity definition
     ///  and/or its contents. Copyright statements are generally legal restrictions
@@ -548,7 +548,7 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     FhirMarkdown? copyright,
 
     /// [copyrightElement] ("_copyright") Extensions for copyright
-    @JsonKey(name: '_copyright') Element? copyrightElement,
+    @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
 
     /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
     ///  a page footer that identifies the copyright holder, effective period, and
@@ -557,7 +557,7 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     String? copyrightLabel,
 
     /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-    @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+    @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
 
     /// [approvalDate] The date on which the resource content was approved by the
     ///  publisher. Approval happens once when the content is officially approved
@@ -565,7 +565,7 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     FhirDate? approvalDate,
 
     /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
-    @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+    @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
 
     /// [lastReviewDate] The date on which the resource content was last reviewed.
     ///  Review happens periodically after approval but does not change the
@@ -573,7 +573,7 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     FhirDate? lastReviewDate,
 
     /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
-    @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+    @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
 
     /// [effectivePeriod] The period during which the activity definition content
     ///  was or is planned to be in active use.
@@ -609,7 +609,7 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     String? subtitle,
 
     /// [subtitleElement] ("_subtitle") Extensions for subtitle
-    @JsonKey(name: '_subtitle') Element? subtitleElement,
+    @JsonKey(name: '_subtitle') PrimitiveElement? subtitleElement,
 
     /// [subjectCodeableConcept] A code, group definition, or canonical reference
     ///  that describes  or identifies the intended subject of the activity being
@@ -640,14 +640,15 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
 
     /// [subjectCanonicalElement] ("_subjectCanonical") Extensions for
     ///  subjectCanonical
-    @JsonKey(name: '_subjectCanonical') Element? subjectCanonicalElement,
+    @JsonKey(name: '_subjectCanonical')
+    PrimitiveElement? subjectCanonicalElement,
 
     /// [usage] A detailed description of how the activity definition is used from
     ///  a clinical perspective.
     FhirMarkdown? usage,
 
     /// [usageElement] ("_usage") Extensions for usage
-    @JsonKey(name: '_usage') Element? usageElement,
+    @JsonKey(name: '_usage') PrimitiveElement? usageElement,
 
     /// [library_] ("library") A reference to a Library resource containing any
     ///  formal logic used by the activity definition.
@@ -659,7 +660,7 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     FhirCode? kind,
 
     /// [kindElement] ("_kind") Extensions for kind
-    @JsonKey(name: '_kind') Element? kindElement,
+    @JsonKey(name: '_kind') PrimitiveElement? kindElement,
 
     /// [profile] A profile to which the target of the activity definition is
     ///  expected to conform.
@@ -674,14 +675,14 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     FhirCode? intent,
 
     /// [intentElement] ("_intent") Extensions for intent
-    @JsonKey(name: '_intent') Element? intentElement,
+    @JsonKey(name: '_intent') PrimitiveElement? intentElement,
 
     /// [priority] Indicates how quickly the activity  should be addressed with
     ///  respect to other requests.
     FhirCode? priority,
 
     /// [priorityElement] ("_priority") Extensions for priority
-    @JsonKey(name: '_priority') Element? priorityElement,
+    @JsonKey(name: '_priority') PrimitiveElement? priorityElement,
 
     /// [doNotPerform] Set this to true if the definition is to indicate that a
     ///  particular activity should NOT be performed. If true, this element should
@@ -690,7 +691,7 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     FhirBoolean? doNotPerform,
 
     /// [doNotPerformElement] ("_doNotPerform") Extensions for doNotPerform
-    @JsonKey(name: '_doNotPerform') Element? doNotPerformElement,
+    @JsonKey(name: '_doNotPerform') PrimitiveElement? doNotPerformElement,
 
     /// [timingTiming] The timing or frequency upon which the described activity is
     ///  to occur.
@@ -714,7 +715,7 @@ class ActivityDefinition with Resource, _$ActivityDefinition {
     FhirBoolean? asNeededBoolean,
 
     /// [asNeededBooleanElement] ("_asNeededBoolean") Extensions for asNeededBoolean
-    @JsonKey(name: '_asNeededBoolean') Element? asNeededBooleanElement,
+    @JsonKey(name: '_asNeededBoolean') PrimitiveElement? asNeededBooleanElement,
 
     /// [asNeededCodeableConcept] If a CodeableConcept is present, it indicates the
     ///  pre-condition for performing the service.  For example "pain", "on
@@ -897,7 +898,7 @@ class ActivityDefinitionParticipant
     FhirCode? type,
 
     /// [typeElement] ("_type") Extensions for type
-    @JsonKey(name: '_type') Element? typeElement,
+    @JsonKey(name: '_type') PrimitiveElement? typeElement,
 
     /// [typeCanonical] The type of participant in the action.
     FhirCanonical? typeCanonical,
@@ -1035,7 +1036,7 @@ class ActivityDefinitionDynamicValue
     String? path,
 
     /// [pathElement] ("_path") Extensions for path
-    @JsonKey(name: '_path') Element? pathElement,
+    @JsonKey(name: '_path') PrimitiveElement? pathElement,
 
     /// [expression] An expression specifying the value of the customized element.
     required FhirExpression expression,
@@ -1078,7 +1079,7 @@ class ActivityDefinitionDynamicValue
 ///  a role in data exchange, and that may have obligations associated with the
 ///  role the actor plays.
 @freezed
-class ActorDefinition with Resource, _$ActorDefinition {
+class ActorDefinition with _$ActorDefinition implements DomainResource {
   /// [ActorDefinition] Describes an actor - a human or an application that plays
   ///  a role in data exchange, and that may have obligations associated with the
   ///  role the actor plays.
@@ -1283,13 +1284,13 @@ class ActorDefinition with Resource, _$ActorDefinition {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1338,7 +1339,7 @@ class ActorDefinition with Resource, _$ActorDefinition {
     FhirUri? url,
 
     /// [urlElement] ("_url") Extensions for url
-    @JsonKey(name: '_url') Element? urlElement,
+    @JsonKey(name: '_url') PrimitiveElement? urlElement,
 
     /// [identifier] A formal identifier that is used to identify this actor
     ///  definition when it is represented in other formats, or referenced in a
@@ -1355,7 +1356,7 @@ class ActorDefinition with Resource, _$ActorDefinition {
     String? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') Element? versionElement,
+    @JsonKey(name: '_version') PrimitiveElement? versionElement,
 
     /// [versionAlgorithmString] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -1364,7 +1365,7 @@ class ActorDefinition with Resource, _$ActorDefinition {
     /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
     ///  versionAlgorithmString
     @JsonKey(name: '_versionAlgorithmString')
-    Element? versionAlgorithmStringElement,
+    PrimitiveElement? versionAlgorithmStringElement,
 
     /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -1376,20 +1377,20 @@ class ActorDefinition with Resource, _$ActorDefinition {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [title] A short, descriptive, user-friendly title for the actor definition.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [status] The status of this actor definition. Enables tracking the
     ///  life-cycle of the content.
     PublicationStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [experimental] A Boolean value to indicate that this actor definition is
     ///  authored for testing purposes (or education/evaluation/marketing) and is
@@ -1397,7 +1398,7 @@ class ActorDefinition with Resource, _$ActorDefinition {
     FhirBoolean? experimental,
 
     /// [experimentalElement] ("_experimental") Extensions for experimental
-    @JsonKey(name: '_experimental') Element? experimentalElement,
+    @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
 
     /// [date] The date  (and optionally time) when the actor definition was last
     ///  significantly changed. The date must change when the business version
@@ -1406,14 +1407,14 @@ class ActorDefinition with Resource, _$ActorDefinition {
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [publisher] The name of the organization or individual responsible for the
     ///  release and ongoing maintenance of the actor definition.
     String? publisher,
 
     /// [publisherElement] ("_publisher") Extensions for publisher
-    @JsonKey(name: '_publisher') Element? publisherElement,
+    @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
 
     /// [contact] Contact details to assist a user in finding and communicating
     ///  with the publisher.
@@ -1423,7 +1424,7 @@ class ActorDefinition with Resource, _$ActorDefinition {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [useContext] The content was developed with a focus and intent of
     ///  supporting the contexts that are listed. These contexts may be general
@@ -1441,7 +1442,7 @@ class ActorDefinition with Resource, _$ActorDefinition {
     FhirMarkdown? purpose,
 
     /// [purposeElement] ("_purpose") Extensions for purpose
-    @JsonKey(name: '_purpose') Element? purposeElement,
+    @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
 
     /// [copyright] A copyright statement relating to the actor definition and/or
     ///  its contents. Copyright statements are generally legal restrictions on the
@@ -1449,7 +1450,7 @@ class ActorDefinition with Resource, _$ActorDefinition {
     FhirMarkdown? copyright,
 
     /// [copyrightElement] ("_copyright") Extensions for copyright
-    @JsonKey(name: '_copyright') Element? copyrightElement,
+    @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
 
     /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
     ///  a page footer that identifies the copyright holder, effective period, and
@@ -1458,19 +1459,19 @@ class ActorDefinition with Resource, _$ActorDefinition {
     String? copyrightLabel,
 
     /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-    @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+    @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
 
     /// [type] Whether the actor represents a human or an appliction.
     FhirCode? type,
 
     /// [typeElement] ("_type") Extensions for type
-    @JsonKey(name: '_type') Element? typeElement,
+    @JsonKey(name: '_type') PrimitiveElement? typeElement,
 
     /// [documentation] Documentation about the functionality of the actor.
     FhirMarkdown? documentation,
 
     /// [documentationElement] ("_documentation") Extensions for documentation
-    @JsonKey(name: '_documentation') Element? documentationElement,
+    @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
 
     /// [reference] A reference to additional documentation about the actor, but
     ///  description and documentation.
@@ -1532,7 +1533,7 @@ class ActorDefinition with Resource, _$ActorDefinition {
 /// [ConditionDefinition] A definition of a condition and information relevant
 ///  to managing it.
 @freezed
-class ConditionDefinition with Resource, _$ConditionDefinition {
+class ConditionDefinition with _$ConditionDefinition implements DomainResource {
   /// [ConditionDefinition] A definition of a condition and information relevant
   ///  to managing it.
   const ConditionDefinition._();
@@ -1797,13 +1798,13 @@ class ConditionDefinition with Resource, _$ConditionDefinition {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1852,7 +1853,7 @@ class ConditionDefinition with Resource, _$ConditionDefinition {
     FhirUri? url,
 
     /// [urlElement] ("_url") Extensions for url
-    @JsonKey(name: '_url') Element? urlElement,
+    @JsonKey(name: '_url') PrimitiveElement? urlElement,
 
     /// [identifier] A formal identifier that is used to identify this condition
     ///  definition when it is represented in other formats, or referenced in a
@@ -1869,7 +1870,7 @@ class ConditionDefinition with Resource, _$ConditionDefinition {
     String? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') Element? versionElement,
+    @JsonKey(name: '_version') PrimitiveElement? versionElement,
 
     /// [versionAlgorithmString] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -1878,7 +1879,7 @@ class ConditionDefinition with Resource, _$ConditionDefinition {
     /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
     ///  versionAlgorithmString
     @JsonKey(name: '_versionAlgorithmString')
-    Element? versionAlgorithmStringElement,
+    PrimitiveElement? versionAlgorithmStringElement,
 
     /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -1890,21 +1891,21 @@ class ConditionDefinition with Resource, _$ConditionDefinition {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [title] A short, descriptive, user-friendly title for the condition
     ///  definition.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [status] The status of this condition definition. Enables tracking the
     ///  life-cycle of the content.
     PublicationStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [experimental] A Boolean value to indicate that this condition definition
     ///  is authored for testing purposes (or education/evaluation/marketing) and
@@ -1912,7 +1913,7 @@ class ConditionDefinition with Resource, _$ConditionDefinition {
     FhirBoolean? experimental,
 
     /// [experimentalElement] ("_experimental") Extensions for experimental
-    @JsonKey(name: '_experimental') Element? experimentalElement,
+    @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
 
     /// [date] The date  (and optionally time) when the condition definition was
     ///  last significantly changed. The date must change when the business version
@@ -1922,14 +1923,14 @@ class ConditionDefinition with Resource, _$ConditionDefinition {
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [publisher] The name of the organization or individual responsible for the
     ///  release and ongoing maintenance of the condition definition.
     String? publisher,
 
     /// [publisherElement] ("_publisher") Extensions for publisher
-    @JsonKey(name: '_publisher') Element? publisherElement,
+    @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
 
     /// [contact] Contact details to assist a user in finding and communicating
     ///  with the publisher.
@@ -1940,7 +1941,7 @@ class ConditionDefinition with Resource, _$ConditionDefinition {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [useContext] The content was developed with a focus and intent of
     ///  supporting the contexts that are listed. These contexts may be general
@@ -1958,7 +1959,7 @@ class ConditionDefinition with Resource, _$ConditionDefinition {
     FhirMarkdown? purpose,
 
     /// [purposeElement] ("_purpose") Extensions for purpose
-    @JsonKey(name: '_purpose') Element? purposeElement,
+    @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
 
     /// [copyright] A copyright statement relating to the {{title}} and/or its
     ///  contents. Copyright statements are generally legal restrictions on the use
@@ -1966,7 +1967,7 @@ class ConditionDefinition with Resource, _$ConditionDefinition {
     FhirMarkdown? copyright,
 
     /// [copyrightElement] ("_copyright") Extensions for copyright
-    @JsonKey(name: '_copyright') Element? copyrightElement,
+    @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
 
     /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
     ///  a page footer that identifies the copyright holder, effective period, and
@@ -1975,7 +1976,7 @@ class ConditionDefinition with Resource, _$ConditionDefinition {
     String? copyrightLabel,
 
     /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-    @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+    @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
 
     /// [approvalDate] The date on which the resource content was approved by the
     ///  publisher. Approval happens once when the content is officially approved
@@ -1983,7 +1984,7 @@ class ConditionDefinition with Resource, _$ConditionDefinition {
     FhirDate? approvalDate,
 
     /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
-    @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+    @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
 
     /// [lastReviewDate] The date on which the resource content was last reviewed.
     ///  Review happens periodically after approval but does not change the
@@ -1991,7 +1992,7 @@ class ConditionDefinition with Resource, _$ConditionDefinition {
     FhirDate? lastReviewDate,
 
     /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
-    @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+    @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
 
     /// [effectivePeriod] The period during which the {{title}} content was or is
     ///  planned to be in active use.
@@ -2028,7 +2029,7 @@ class ConditionDefinition with Resource, _$ConditionDefinition {
     String? subtitle,
 
     /// [subtitleElement] ("_subtitle") Extensions for subtitle
-    @JsonKey(name: '_subtitle') Element? subtitleElement,
+    @JsonKey(name: '_subtitle') PrimitiveElement? subtitleElement,
 
     /// [code] Identification of the condition, problem or diagnosis.
     required CodeableConcept code,
@@ -2048,19 +2049,19 @@ class ConditionDefinition with Resource, _$ConditionDefinition {
     FhirBoolean? hasSeverity,
 
     /// [hasSeverityElement] ("_hasSeverity") Extensions for hasSeverity
-    @JsonKey(name: '_hasSeverity') Element? hasSeverityElement,
+    @JsonKey(name: '_hasSeverity') PrimitiveElement? hasSeverityElement,
 
     /// [hasBodySite] Whether bodySite is appropriate to collect for this condition.
     FhirBoolean? hasBodySite,
 
     /// [hasBodySiteElement] ("_hasBodySite") Extensions for hasBodySite
-    @JsonKey(name: '_hasBodySite') Element? hasBodySiteElement,
+    @JsonKey(name: '_hasBodySite') PrimitiveElement? hasBodySiteElement,
 
     /// [hasStage] Whether stage is appropriate to collect for this condition.
     FhirBoolean? hasStage,
 
     /// [hasStageElement] ("_hasStage") Extensions for hasStage
-    @JsonKey(name: '_hasStage') Element? hasStageElement,
+    @JsonKey(name: '_hasStage') PrimitiveElement? hasStageElement,
 
     /// [definition] Formal definitions of the condition. These may be references
     ///  to ontologies, published clinical protocols or research papers.
@@ -2415,7 +2416,7 @@ class ConditionDefinitionPrecondition
     FhirCode? type,
 
     /// [typeElement] ("_type") Extensions for type
-    @JsonKey(name: '_type') Element? typeElement,
+    @JsonKey(name: '_type') PrimitiveElement? typeElement,
 
     /// [code] Code for relevant Observation.
     required CodeableConcept code,
@@ -2532,7 +2533,7 @@ class ConditionDefinitionQuestionnaire
     FhirCode? purpose,
 
     /// [purposeElement] ("_purpose") Extensions for purpose
-    @JsonKey(name: '_purpose') Element? purposeElement,
+    @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
 
     /// [reference] Specific Questionnaire.
     required Reference reference,
@@ -2575,7 +2576,9 @@ class ConditionDefinitionQuestionnaire
 /// [ConditionDefinitionPlan] A definition of a condition and information
 ///  relevant to managing it.
 @freezed
-class ConditionDefinitionPlan with BackboneType, _$ConditionDefinitionPlan {
+class ConditionDefinitionPlan
+    with _$ConditionDefinitionPlan
+    implements BackboneType {
   /// [ConditionDefinitionPlan] A definition of a condition and information
   ///  relevant to managing it.
   const ConditionDefinitionPlan._();
@@ -2678,7 +2681,7 @@ class ConditionDefinitionPlan with BackboneType, _$ConditionDefinitionPlan {
 /// [DeviceDefinition] The characteristics, operational status and capabilities
 ///  of a medical-related component of a medical device.
 @freezed
-class DeviceDefinition with Resource, _$DeviceDefinition {
+class DeviceDefinition with _$DeviceDefinition implements DomainResource {
   /// [DeviceDefinition] The characteristics, operational status and capabilities
   ///  of a medical-related component of a medical device.
   const DeviceDefinition._();
@@ -2853,13 +2856,13 @@ class DeviceDefinition with Resource, _$DeviceDefinition {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -2902,7 +2905,7 @@ class DeviceDefinition with Resource, _$DeviceDefinition {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [identifier] Unique instance identifiers assigned to a device by the
     ///  software, manufacturers, other organizations or owners. For example:
@@ -2929,7 +2932,7 @@ class DeviceDefinition with Resource, _$DeviceDefinition {
     String? partNumber,
 
     /// [partNumberElement] ("_partNumber") Extensions for partNumber
-    @JsonKey(name: '_partNumber') Element? partNumberElement,
+    @JsonKey(name: '_partNumber') PrimitiveElement? partNumberElement,
 
     /// [manufacturer] A name of the manufacturer  or legal representative e.g.
     ///  labeler. Whether this is the actual manufacturer or the labeler or
@@ -2944,7 +2947,7 @@ class DeviceDefinition with Resource, _$DeviceDefinition {
     String? modelNumber,
 
     /// [modelNumberElement] ("_modelNumber") Extensions for modelNumber
-    @JsonKey(name: '_modelNumber') Element? modelNumberElement,
+    @JsonKey(name: '_modelNumber') PrimitiveElement? modelNumberElement,
 
     /// [classification] What kind of device or device system this is.
     List<DeviceDefinitionClassification>? classification,
@@ -3149,19 +3152,20 @@ class DeviceDefinitionUdiDeviceIdentifier
 
     /// [deviceIdentifierElement] ("_deviceIdentifier") Extensions for
     ///  deviceIdentifier
-    @JsonKey(name: '_deviceIdentifier') Element? deviceIdentifierElement,
+    @JsonKey(name: '_deviceIdentifier')
+    PrimitiveElement? deviceIdentifierElement,
 
     /// [issuer] The organization that assigns the identifier algorithm.
     FhirUri? issuer,
 
     /// [issuerElement] ("_issuer") Extensions for issuer
-    @JsonKey(name: '_issuer') Element? issuerElement,
+    @JsonKey(name: '_issuer') PrimitiveElement? issuerElement,
 
     /// [jurisdiction] The jurisdiction to which the deviceIdentifier applies.
     FhirUri? jurisdiction,
 
     /// [jurisdictionElement] ("_jurisdiction") Extensions for jurisdiction
-    @JsonKey(name: '_jurisdiction') Element? jurisdictionElement,
+    @JsonKey(name: '_jurisdiction') PrimitiveElement? jurisdictionElement,
 
     /// [marketDistribution] Indicates where and when the device is available on
     ///  the market.
@@ -3281,7 +3285,7 @@ class DeviceDefinitionMarketDistribution
     FhirUri? subJurisdiction,
 
     /// [subJurisdictionElement] ("_subJurisdiction") Extensions for subJurisdiction
-    @JsonKey(name: '_subJurisdiction') Element? subJurisdictionElement,
+    @JsonKey(name: '_subJurisdiction') PrimitiveElement? subJurisdictionElement,
   }) = _DeviceDefinitionMarketDistribution;
 
   @override
@@ -3401,26 +3405,27 @@ class DeviceDefinitionRegulatoryIdentifier
     FhirCode? type,
 
     /// [typeElement] ("_type") Extensions for type
-    @JsonKey(name: '_type') Element? typeElement,
+    @JsonKey(name: '_type') PrimitiveElement? typeElement,
 
     /// [deviceIdentifier] The identifier itself.
     String? deviceIdentifier,
 
     /// [deviceIdentifierElement] ("_deviceIdentifier") Extensions for
     ///  deviceIdentifier
-    @JsonKey(name: '_deviceIdentifier') Element? deviceIdentifierElement,
+    @JsonKey(name: '_deviceIdentifier')
+    PrimitiveElement? deviceIdentifierElement,
 
     /// [issuer] The organization that issued this identifier.
     FhirUri? issuer,
 
     /// [issuerElement] ("_issuer") Extensions for issuer
-    @JsonKey(name: '_issuer') Element? issuerElement,
+    @JsonKey(name: '_issuer') PrimitiveElement? issuerElement,
 
     /// [jurisdiction] The jurisdiction to which the deviceIdentifier applies.
     FhirUri? jurisdiction,
 
     /// [jurisdictionElement] ("_jurisdiction") Extensions for jurisdiction
-    @JsonKey(name: '_jurisdiction') Element? jurisdictionElement,
+    @JsonKey(name: '_jurisdiction') PrimitiveElement? jurisdictionElement,
   }) = _DeviceDefinitionRegulatoryIdentifier;
 
   @override
@@ -3536,14 +3541,14 @@ class DeviceDefinitionDeviceName
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [type] The type of deviceName. RegisteredName | UserFriendlyName |
     ///  PatientReportedName.
     FhirCode? type,
 
     /// [typeElement] ("_type") Extensions for type
-    @JsonKey(name: '_type') Element? typeElement,
+    @JsonKey(name: '_type') PrimitiveElement? typeElement,
   }) = _DeviceDefinitionDeviceName;
 
   @override
@@ -3819,7 +3824,9 @@ class DeviceDefinitionConformsTo
 /// [DeviceDefinitionHasPart] The characteristics, operational status and
 ///  capabilities of a medical-related component of a medical device.
 @freezed
-class DeviceDefinitionHasPart with BackboneType, _$DeviceDefinitionHasPart {
+class DeviceDefinitionHasPart
+    with _$DeviceDefinitionHasPart
+    implements BackboneType {
   /// [DeviceDefinitionHasPart] The characteristics, operational status and
   ///  capabilities of a medical-related component of a medical device.
   const DeviceDefinitionHasPart._();
@@ -3890,7 +3897,7 @@ class DeviceDefinitionHasPart with BackboneType, _$DeviceDefinitionHasPart {
     FhirInteger? count,
 
     /// [countElement] ("_count") Extensions for count
-    @JsonKey(name: '_count') Element? countElement,
+    @JsonKey(name: '_count') PrimitiveElement? countElement,
   }) = _DeviceDefinitionHasPart;
 
   @override
@@ -3927,7 +3934,9 @@ class DeviceDefinitionHasPart with BackboneType, _$DeviceDefinitionHasPart {
 /// [DeviceDefinitionPackaging] The characteristics, operational status and
 ///  capabilities of a medical-related component of a medical device.
 @freezed
-class DeviceDefinitionPackaging with BackboneType, _$DeviceDefinitionPackaging {
+class DeviceDefinitionPackaging
+    with _$DeviceDefinitionPackaging
+    implements BackboneType {
   /// [DeviceDefinitionPackaging] The characteristics, operational status and
   ///  capabilities of a medical-related component of a medical device.
   const DeviceDefinitionPackaging._();
@@ -4012,7 +4021,7 @@ class DeviceDefinitionPackaging with BackboneType, _$DeviceDefinitionPackaging {
     FhirInteger? count,
 
     /// [countElement] ("_count") Extensions for count
-    @JsonKey(name: '_count') Element? countElement,
+    @JsonKey(name: '_count') PrimitiveElement? countElement,
 
     /// [distributor] An organization that distributes the packaged device.
     List<DeviceDefinitionDistributor>? distributor,
@@ -4128,7 +4137,7 @@ class DeviceDefinitionDistributor
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [organizationReference] Distributor as an Organization resource.
     List<Reference>? organizationReference,
@@ -4169,7 +4178,9 @@ class DeviceDefinitionDistributor
 /// [DeviceDefinitionVersion] The characteristics, operational status and
 ///  capabilities of a medical-related component of a medical device.
 @freezed
-class DeviceDefinitionVersion with BackboneType, _$DeviceDefinitionVersion {
+class DeviceDefinitionVersion
+    with _$DeviceDefinitionVersion
+    implements BackboneType {
   /// [DeviceDefinitionVersion] The characteristics, operational status and
   ///  capabilities of a medical-related component of a medical device.
   const DeviceDefinitionVersion._();
@@ -4249,7 +4260,7 @@ class DeviceDefinitionVersion with BackboneType, _$DeviceDefinitionVersion {
     String? value,
 
     /// [valueElement] ("_value") Extensions for value
-    @JsonKey(name: '_value') Element? valueElement,
+    @JsonKey(name: '_value') PrimitiveElement? valueElement,
   }) = _DeviceDefinitionVersion;
 
   @override
@@ -4286,7 +4297,9 @@ class DeviceDefinitionVersion with BackboneType, _$DeviceDefinitionVersion {
 /// [DeviceDefinitionProperty] The characteristics, operational status and
 ///  capabilities of a medical-related component of a medical device.
 @freezed
-class DeviceDefinitionProperty with BackboneType, _$DeviceDefinitionProperty {
+class DeviceDefinitionProperty
+    with _$DeviceDefinitionProperty
+    implements BackboneType {
   /// [DeviceDefinitionProperty] The characteristics, operational status and
   ///  capabilities of a medical-related component of a medical device.
   const DeviceDefinitionProperty._();
@@ -4391,21 +4404,21 @@ class DeviceDefinitionProperty with BackboneType, _$DeviceDefinitionProperty {
     String? valueString,
 
     /// [valueStringElement] ("_valueString") Extensions for valueString
-    @JsonKey(name: '_valueString') Element? valueStringElement,
+    @JsonKey(name: '_valueString') PrimitiveElement? valueStringElement,
 
     /// [valueBoolean] The value of the property specified by the associated
     ///  property.type code.
     FhirBoolean? valueBoolean,
 
     /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
 
     /// [valueInteger] The value of the property specified by the associated
     ///  property.type code.
     FhirInteger? valueInteger,
 
     /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
-    @JsonKey(name: '_valueInteger') Element? valueIntegerElement,
+    @JsonKey(name: '_valueInteger') PrimitiveElement? valueIntegerElement,
 
     /// [valueRange] The value of the property specified by the associated
     ///  property.type code.
@@ -4450,7 +4463,7 @@ class DeviceDefinitionProperty with BackboneType, _$DeviceDefinitionProperty {
 /// [DeviceDefinitionLink] The characteristics, operational status and
 ///  capabilities of a medical-related component of a medical device.
 @freezed
-class DeviceDefinitionLink with BackboneType, _$DeviceDefinitionLink {
+class DeviceDefinitionLink with _$DeviceDefinitionLink implements BackboneType {
   /// [DeviceDefinitionLink] The characteristics, operational status and
   ///  capabilities of a medical-related component of a medical device.
   const DeviceDefinitionLink._();
@@ -4555,7 +4568,9 @@ class DeviceDefinitionLink with BackboneType, _$DeviceDefinitionLink {
 /// [DeviceDefinitionMaterial] The characteristics, operational status and
 ///  capabilities of a medical-related component of a medical device.
 @freezed
-class DeviceDefinitionMaterial with BackboneType, _$DeviceDefinitionMaterial {
+class DeviceDefinitionMaterial
+    with _$DeviceDefinitionMaterial
+    implements BackboneType {
   /// [DeviceDefinitionMaterial] The characteristics, operational status and
   ///  capabilities of a medical-related component of a medical device.
   const DeviceDefinitionMaterial._();
@@ -4638,7 +4653,7 @@ class DeviceDefinitionMaterial with BackboneType, _$DeviceDefinitionMaterial {
     FhirBoolean? alternate,
 
     /// [alternateElement] ("_alternate") Extensions for alternate
-    @JsonKey(name: '_alternate') Element? alternateElement,
+    @JsonKey(name: '_alternate') PrimitiveElement? alternateElement,
 
     /// [allergenicIndicator] Whether the substance is a known or suspected
     ///  allergen.
@@ -4646,7 +4661,8 @@ class DeviceDefinitionMaterial with BackboneType, _$DeviceDefinitionMaterial {
 
     /// [allergenicIndicatorElement] ("_allergenicIndicator") Extensions for
     ///  allergenicIndicator
-    @JsonKey(name: '_allergenicIndicator') Element? allergenicIndicatorElement,
+    @JsonKey(name: '_allergenicIndicator')
+    PrimitiveElement? allergenicIndicatorElement,
   }) = _DeviceDefinitionMaterial;
 
   @override
@@ -4683,7 +4699,9 @@ class DeviceDefinitionMaterial with BackboneType, _$DeviceDefinitionMaterial {
 /// [DeviceDefinitionGuideline] The characteristics, operational status and
 ///  capabilities of a medical-related component of a medical device.
 @freezed
-class DeviceDefinitionGuideline with BackboneType, _$DeviceDefinitionGuideline {
+class DeviceDefinitionGuideline
+    with _$DeviceDefinitionGuideline
+    implements BackboneType {
   /// [DeviceDefinitionGuideline] The characteristics, operational status and
   ///  capabilities of a medical-related component of a medical device.
   const DeviceDefinitionGuideline._();
@@ -4774,7 +4792,8 @@ class DeviceDefinitionGuideline with BackboneType, _$DeviceDefinitionGuideline {
 
     /// [usageInstructionElement] ("_usageInstruction") Extensions for
     ///  usageInstruction
-    @JsonKey(name: '_usageInstruction') Element? usageInstructionElement,
+    @JsonKey(name: '_usageInstruction')
+    PrimitiveElement? usageInstructionElement,
 
     /// [relatedArtifact] A source of information or reference for this guideline.
     List<RelatedArtifact>? relatedArtifact,
@@ -4796,7 +4815,7 @@ class DeviceDefinitionGuideline with BackboneType, _$DeviceDefinitionGuideline {
     String? intendedUse,
 
     /// [intendedUseElement] ("_intendedUse") Extensions for intendedUse
-    @JsonKey(name: '_intendedUse') Element? intendedUseElement,
+    @JsonKey(name: '_intendedUse') PrimitiveElement? intendedUseElement,
   }) = _DeviceDefinitionGuideline;
 
   @override
@@ -4911,7 +4930,7 @@ class DeviceDefinitionCorrectiveAction
     FhirBoolean? recall,
 
     /// [recallElement] ("_recall") Extensions for recall
-    @JsonKey(name: '_recall') Element? recallElement,
+    @JsonKey(name: '_recall') PrimitiveElement? recallElement,
 
     /// [scope] The scope of the corrective action - whether the action targeted
     ///  all units of a given device model, or only a specific set of batches
@@ -4920,7 +4939,7 @@ class DeviceDefinitionCorrectiveAction
     FhirCode? scope,
 
     /// [scopeElement] ("_scope") Extensions for scope
-    @JsonKey(name: '_scope') Element? scopeElement,
+    @JsonKey(name: '_scope') PrimitiveElement? scopeElement,
 
     /// [period] Start and end dates of the  corrective action.
     required Period period,
@@ -5077,7 +5096,7 @@ class DeviceDefinitionChargeItem
 /// [EventDefinition] The EventDefinition resource provides a reusable
 ///  description of when a particular event can occur.
 @freezed
-class EventDefinition with Resource, _$EventDefinition {
+class EventDefinition with _$EventDefinition implements DomainResource {
   /// [EventDefinition] The EventDefinition resource provides a reusable
   ///  description of when a particular event can occur.
   const EventDefinition._();
@@ -5315,13 +5334,13 @@ class EventDefinition with Resource, _$EventDefinition {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -5370,7 +5389,7 @@ class EventDefinition with Resource, _$EventDefinition {
     FhirUri? url,
 
     /// [urlElement] ("_url") Extensions for url
-    @JsonKey(name: '_url') Element? urlElement,
+    @JsonKey(name: '_url') PrimitiveElement? urlElement,
 
     /// [identifier] A formal identifier that is used to identify this event
     ///  definition when it is represented in other formats, or referenced in a
@@ -5387,7 +5406,7 @@ class EventDefinition with Resource, _$EventDefinition {
     String? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') Element? versionElement,
+    @JsonKey(name: '_version') PrimitiveElement? versionElement,
 
     /// [versionAlgorithmString] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -5396,7 +5415,7 @@ class EventDefinition with Resource, _$EventDefinition {
     /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
     ///  versionAlgorithmString
     @JsonKey(name: '_versionAlgorithmString')
-    Element? versionAlgorithmStringElement,
+    PrimitiveElement? versionAlgorithmStringElement,
 
     /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -5408,20 +5427,20 @@ class EventDefinition with Resource, _$EventDefinition {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [title] A short, descriptive, user-friendly title for the event definition.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [status] The status of this event definition. Enables tracking the
     ///  life-cycle of the content.
     PublicationStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [experimental] A Boolean value to indicate that this event definition is
     ///  authored for testing purposes (or education/evaluation/marketing) and is
@@ -5429,7 +5448,7 @@ class EventDefinition with Resource, _$EventDefinition {
     FhirBoolean? experimental,
 
     /// [experimentalElement] ("_experimental") Extensions for experimental
-    @JsonKey(name: '_experimental') Element? experimentalElement,
+    @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
 
     /// [date] The date  (and optionally time) when the event definition was last
     ///  significantly changed. The date must change when the business version
@@ -5438,14 +5457,14 @@ class EventDefinition with Resource, _$EventDefinition {
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [publisher] The name of the organization or individual responsible for the
     ///  release and ongoing maintenance of the event definition.
     String? publisher,
 
     /// [publisherElement] ("_publisher") Extensions for publisher
-    @JsonKey(name: '_publisher') Element? publisherElement,
+    @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
 
     /// [contact] Contact details to assist a user in finding and communicating
     ///  with the publisher.
@@ -5456,7 +5475,7 @@ class EventDefinition with Resource, _$EventDefinition {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [useContext] The content was developed with a focus and intent of
     ///  supporting the contexts that are listed. These contexts may be general
@@ -5474,7 +5493,7 @@ class EventDefinition with Resource, _$EventDefinition {
     FhirMarkdown? purpose,
 
     /// [purposeElement] ("_purpose") Extensions for purpose
-    @JsonKey(name: '_purpose') Element? purposeElement,
+    @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
 
     /// [copyright] A copyright statement relating to the event definition and/or
     ///  its contents. Copyright statements are generally legal restrictions on the
@@ -5482,7 +5501,7 @@ class EventDefinition with Resource, _$EventDefinition {
     FhirMarkdown? copyright,
 
     /// [copyrightElement] ("_copyright") Extensions for copyright
-    @JsonKey(name: '_copyright') Element? copyrightElement,
+    @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
 
     /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
     ///  a page footer that identifies the copyright holder, effective period, and
@@ -5491,7 +5510,7 @@ class EventDefinition with Resource, _$EventDefinition {
     String? copyrightLabel,
 
     /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-    @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+    @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
 
     /// [approvalDate] The date on which the resource content was approved by the
     ///  publisher. Approval happens once when the content is officially approved
@@ -5499,7 +5518,7 @@ class EventDefinition with Resource, _$EventDefinition {
     FhirDate? approvalDate,
 
     /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
-    @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+    @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
 
     /// [lastReviewDate] The date on which the resource content was last reviewed.
     ///  Review happens periodically after approval but does not change the
@@ -5507,7 +5526,7 @@ class EventDefinition with Resource, _$EventDefinition {
     FhirDate? lastReviewDate,
 
     /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
-    @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+    @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
 
     /// [effectivePeriod] The period during which the event definition content was
     ///  or is planned to be in active use.
@@ -5543,7 +5562,7 @@ class EventDefinition with Resource, _$EventDefinition {
     String? subtitle,
 
     /// [subtitleElement] ("_subtitle") Extensions for subtitle
-    @JsonKey(name: '_subtitle') Element? subtitleElement,
+    @JsonKey(name: '_subtitle') PrimitiveElement? subtitleElement,
 
     /// [subjectCodeableConcept] A code or group definition that describes the
     ///  intended subject of the event definition.
@@ -5558,7 +5577,7 @@ class EventDefinition with Resource, _$EventDefinition {
     FhirMarkdown? usage,
 
     /// [usageElement] ("_usage") Extensions for usage
-    @JsonKey(name: '_usage') Element? usageElement,
+    @JsonKey(name: '_usage') PrimitiveElement? usageElement,
 
     /// [trigger] The trigger element defines when the event occurs. If more than
     ///  one trigger condition is specified, the event fires whenever any one of
@@ -5608,7 +5627,7 @@ class EventDefinition with Resource, _$EventDefinition {
 
 /// [ExampleScenario] Example of workflow instance.
 @freezed
-class ExampleScenario with Resource, _$ExampleScenario {
+class ExampleScenario with _$ExampleScenario implements DomainResource {
   /// [ExampleScenario] Example of workflow instance.
   const ExampleScenario._();
 
@@ -5798,13 +5817,13 @@ class ExampleScenario with Resource, _$ExampleScenario {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -5853,7 +5872,7 @@ class ExampleScenario with Resource, _$ExampleScenario {
     FhirUri? url,
 
     /// [urlElement] ("_url") Extensions for url
-    @JsonKey(name: '_url') Element? urlElement,
+    @JsonKey(name: '_url') PrimitiveElement? urlElement,
 
     /// [identifier] A formal identifier that is used to identify this example
     ///  scenario when it is represented in other formats, or referenced in a
@@ -5870,7 +5889,7 @@ class ExampleScenario with Resource, _$ExampleScenario {
     String? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') Element? versionElement,
+    @JsonKey(name: '_version') PrimitiveElement? versionElement,
 
     /// [versionAlgorithmString] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -5879,7 +5898,7 @@ class ExampleScenario with Resource, _$ExampleScenario {
     /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
     ///  versionAlgorithmString
     @JsonKey(name: '_versionAlgorithmString')
-    Element? versionAlgorithmStringElement,
+    PrimitiveElement? versionAlgorithmStringElement,
 
     /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -5889,20 +5908,20 @@ class ExampleScenario with Resource, _$ExampleScenario {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [title] A short, descriptive, user-friendly title for the ExampleScenario.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [status] The status of this example scenario. Enables tracking the
     ///  life-cycle of the content.
     PublicationStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [experimental] A Boolean value to indicate that this example scenario is
     ///  authored for testing purposes (or education/evaluation/marketing) and is
@@ -5910,7 +5929,7 @@ class ExampleScenario with Resource, _$ExampleScenario {
     FhirBoolean? experimental,
 
     /// [experimentalElement] ("_experimental") Extensions for experimental
-    @JsonKey(name: '_experimental') Element? experimentalElement,
+    @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
 
     /// [date] The date  (and optionally time) when the example scenario was last
     ///  significantly changed. The date must change when the business version
@@ -5920,14 +5939,14 @@ class ExampleScenario with Resource, _$ExampleScenario {
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [publisher] The name of the organization or individual responsible for the
     ///  release and ongoing maintenance of the example scenario.
     String? publisher,
 
     /// [publisherElement] ("_publisher") Extensions for publisher
-    @JsonKey(name: '_publisher') Element? publisherElement,
+    @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
 
     /// [contact] Contact details to assist a user in finding and communicating
     ///  with the publisher.
@@ -5938,7 +5957,7 @@ class ExampleScenario with Resource, _$ExampleScenario {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [useContext] The content was developed with a focus and intent of
     ///  supporting the contexts that are listed. These contexts may be general
@@ -5957,7 +5976,7 @@ class ExampleScenario with Resource, _$ExampleScenario {
     FhirMarkdown? purpose,
 
     /// [purposeElement] ("_purpose") Extensions for purpose
-    @JsonKey(name: '_purpose') Element? purposeElement,
+    @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
 
     /// [copyright] A copyright statement relating to the example scenario and/or
     ///  its contents. Copyright statements are generally legal restrictions on the
@@ -5965,7 +5984,7 @@ class ExampleScenario with Resource, _$ExampleScenario {
     FhirMarkdown? copyright,
 
     /// [copyrightElement] ("_copyright") Extensions for copyright
-    @JsonKey(name: '_copyright') Element? copyrightElement,
+    @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
 
     /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
     ///  a page footer that identifies the copyright holder, effective period, and
@@ -5974,7 +5993,7 @@ class ExampleScenario with Resource, _$ExampleScenario {
     String? copyrightLabel,
 
     /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-    @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+    @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
 
     /// [actor] A system or person who shares or receives an instance within the
     ///  scenario.
@@ -6030,7 +6049,7 @@ class ExampleScenario with Resource, _$ExampleScenario {
 
 /// [ExampleScenarioActor] Example of workflow instance.
 @freezed
-class ExampleScenarioActor with BackboneType, _$ExampleScenarioActor {
+class ExampleScenarioActor with _$ExampleScenarioActor implements BackboneType {
   /// [ExampleScenarioActor] Example of workflow instance.
   const ExampleScenarioActor._();
 
@@ -6110,27 +6129,27 @@ class ExampleScenarioActor with BackboneType, _$ExampleScenarioActor {
     String? key,
 
     /// [keyElement] ("_key") Extensions for key
-    @JsonKey(name: '_key') Element? keyElement,
+    @JsonKey(name: '_key') PrimitiveElement? keyElement,
 
     /// [type] The category of actor - person or system.
     FhirCode? type,
 
     /// [typeElement] ("_type") Extensions for type
-    @JsonKey(name: '_type') Element? typeElement,
+    @JsonKey(name: '_type') PrimitiveElement? typeElement,
 
     /// [title] The human-readable name for the actor used when rendering the
     ///  scenario.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [description] An explanation of who/what the actor is and its role in the
     ///  scenario.
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
   }) = _ExampleScenarioActor;
 
   @override
@@ -6166,7 +6185,9 @@ class ExampleScenarioActor with BackboneType, _$ExampleScenarioActor {
 
 /// [ExampleScenarioInstance] Example of workflow instance.
 @freezed
-class ExampleScenarioInstance with BackboneType, _$ExampleScenarioInstance {
+class ExampleScenarioInstance
+    with _$ExampleScenarioInstance
+    implements BackboneType {
   /// [ExampleScenarioInstance] Example of workflow instance.
   const ExampleScenarioInstance._();
 
@@ -6271,7 +6292,7 @@ class ExampleScenarioInstance with BackboneType, _$ExampleScenarioInstance {
     String? key,
 
     /// [keyElement] ("_key") Extensions for key
-    @JsonKey(name: '_key') Element? keyElement,
+    @JsonKey(name: '_key') PrimitiveElement? keyElement,
 
     /// [structureType] A code indicating the kind of data structure (FHIR resource
     ///  or some other standard) this is an instance of.
@@ -6283,7 +6304,8 @@ class ExampleScenarioInstance with BackboneType, _$ExampleScenarioInstance {
 
     /// [structureVersionElement] ("_structureVersion") Extensions for
     ///  structureVersion
-    @JsonKey(name: '_structureVersion') Element? structureVersionElement,
+    @JsonKey(name: '_structureVersion')
+    PrimitiveElement? structureVersionElement,
 
     /// [structureProfileCanonical] Refers to a profile, template or other ruleset
     ///  the instance adheres to.
@@ -6292,7 +6314,7 @@ class ExampleScenarioInstance with BackboneType, _$ExampleScenarioInstance {
     /// [structureProfileCanonicalElement] ("_structureProfileCanonical")
     ///  Extensions for structureProfileCanonical
     @JsonKey(name: '_structureProfileCanonical')
-    Element? structureProfileCanonicalElement,
+    PrimitiveElement? structureProfileCanonicalElement,
 
     /// [structureProfileUri] Refers to a profile, template or other ruleset the
     ///  instance adheres to.
@@ -6300,21 +6322,22 @@ class ExampleScenarioInstance with BackboneType, _$ExampleScenarioInstance {
 
     /// [structureProfileUriElement] ("_structureProfileUri") Extensions for
     ///  structureProfileUri
-    @JsonKey(name: '_structureProfileUri') Element? structureProfileUriElement,
+    @JsonKey(name: '_structureProfileUri')
+    PrimitiveElement? structureProfileUriElement,
 
     /// [title] A short descriptive label the instance to be used in tables or
     ///  diagrams.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [description] An explanation of what the instance contains and what it's
     ///  for.
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [content] Points to an instance (typically an example) that shows the data
     ///  that would corespond to this instance.
@@ -6361,7 +6384,9 @@ class ExampleScenarioInstance with BackboneType, _$ExampleScenarioInstance {
 
 /// [ExampleScenarioVersion] Example of workflow instance.
 @freezed
-class ExampleScenarioVersion with BackboneType, _$ExampleScenarioVersion {
+class ExampleScenarioVersion
+    with _$ExampleScenarioVersion
+    implements BackboneType {
   /// [ExampleScenarioVersion] Example of workflow instance.
   const ExampleScenarioVersion._();
 
@@ -6440,21 +6465,21 @@ class ExampleScenarioVersion with BackboneType, _$ExampleScenarioVersion {
     String? key,
 
     /// [keyElement] ("_key") Extensions for key
-    @JsonKey(name: '_key') Element? keyElement,
+    @JsonKey(name: '_key') PrimitiveElement? keyElement,
 
     /// [title] A short descriptive label the version to be used in tables or
     ///  diagrams.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [description] An explanation of what this specific version of the instance
     ///  contains and represents.
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [content] Points to an instance (typically an example) that shows the data
     ///  that would flow at this point in the scenario.
@@ -6569,7 +6594,8 @@ class ExampleScenarioContainedInstance
 
     /// [instanceReferenceElement] ("_instanceReference") Extensions for
     ///  instanceReference
-    @JsonKey(name: '_instanceReference') Element? instanceReferenceElement,
+    @JsonKey(name: '_instanceReference')
+    PrimitiveElement? instanceReferenceElement,
 
     /// [versionReference] A reference to the key of a specific version of an
     ///  instance in this instance.
@@ -6577,7 +6603,8 @@ class ExampleScenarioContainedInstance
 
     /// [versionReferenceElement] ("_versionReference") Extensions for
     ///  versionReference
-    @JsonKey(name: '_versionReference') Element? versionReferenceElement,
+    @JsonKey(name: '_versionReference')
+    PrimitiveElement? versionReferenceElement,
   }) = _ExampleScenarioContainedInstance;
 
   @override
@@ -6616,7 +6643,9 @@ class ExampleScenarioContainedInstance
 
 /// [ExampleScenarioProcess] Example of workflow instance.
 @freezed
-class ExampleScenarioProcess with BackboneType, _$ExampleScenarioProcess {
+class ExampleScenarioProcess
+    with _$ExampleScenarioProcess
+    implements BackboneType {
   /// [ExampleScenarioProcess] Example of workflow instance.
   const ExampleScenarioProcess._();
 
@@ -6699,28 +6728,28 @@ class ExampleScenarioProcess with BackboneType, _$ExampleScenarioProcess {
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [description] An explanation of what the process represents and what it
     ///  does.
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [preConditions] Description of the initial state of the actors, environment
     ///  and data before the process starts.
     FhirMarkdown? preConditions,
 
     /// [preConditionsElement] ("_preConditions") Extensions for preConditions
-    @JsonKey(name: '_preConditions') Element? preConditionsElement,
+    @JsonKey(name: '_preConditions') PrimitiveElement? preConditionsElement,
 
     /// [postConditions] Description of the final state of the actors, environment
     ///  and data after the process has been successfully completed.
     FhirMarkdown? postConditions,
 
     /// [postConditionsElement] ("_postConditions") Extensions for postConditions
-    @JsonKey(name: '_postConditions') Element? postConditionsElement,
+    @JsonKey(name: '_postConditions') PrimitiveElement? postConditionsElement,
 
     /// [step] A significant action that occurs as part of the process.
     List<ExampleScenarioStep>? step,
@@ -6759,7 +6788,7 @@ class ExampleScenarioProcess with BackboneType, _$ExampleScenarioProcess {
 
 /// [ExampleScenarioStep] Example of workflow instance.
 @freezed
-class ExampleScenarioStep with BackboneType, _$ExampleScenarioStep {
+class ExampleScenarioStep with _$ExampleScenarioStep implements BackboneType {
   /// [ExampleScenarioStep] Example of workflow instance.
   const ExampleScenarioStep._();
 
@@ -6842,7 +6871,7 @@ class ExampleScenarioStep with BackboneType, _$ExampleScenarioStep {
     String? number,
 
     /// [numberElement] ("_number") Extensions for number
-    @JsonKey(name: '_number') Element? numberElement,
+    @JsonKey(name: '_number') PrimitiveElement? numberElement,
 
     /// [process] Indicates that the step is a complex sub-process with its own
     ///  steps.
@@ -6867,7 +6896,7 @@ class ExampleScenarioStep with BackboneType, _$ExampleScenarioStep {
     FhirBoolean? pause,
 
     /// [pauseElement] ("_pause") Extensions for pause
-    @JsonKey(name: '_pause') Element? pauseElement,
+    @JsonKey(name: '_pause') PrimitiveElement? pauseElement,
   }) = _ExampleScenarioStep;
 
   @override
@@ -6903,7 +6932,9 @@ class ExampleScenarioStep with BackboneType, _$ExampleScenarioStep {
 
 /// [ExampleScenarioOperation] Example of workflow instance.
 @freezed
-class ExampleScenarioOperation with BackboneType, _$ExampleScenarioOperation {
+class ExampleScenarioOperation
+    with _$ExampleScenarioOperation
+    implements BackboneType {
   /// [ExampleScenarioOperation] Example of workflow instance.
   const ExampleScenarioOperation._();
 
@@ -7001,40 +7032,40 @@ class ExampleScenarioOperation with BackboneType, _$ExampleScenarioOperation {
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [initiator] The system that invokes the action/transmits the data.
     String? initiator,
 
     /// [initiatorElement] ("_initiator") Extensions for initiator
-    @JsonKey(name: '_initiator') Element? initiatorElement,
+    @JsonKey(name: '_initiator') PrimitiveElement? initiatorElement,
 
     /// [receiver] The system on which the action is invoked/receives the data.
     String? receiver,
 
     /// [receiverElement] ("_receiver") Extensions for receiver
-    @JsonKey(name: '_receiver') Element? receiverElement,
+    @JsonKey(name: '_receiver') PrimitiveElement? receiverElement,
 
     /// [description] An explanation of what the operation represents and what it
     ///  does.
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [initiatorActive] If false, the initiator is deactivated right after the
     ///  operation.
     FhirBoolean? initiatorActive,
 
     /// [initiatorActiveElement] ("_initiatorActive") Extensions for initiatorActive
-    @JsonKey(name: '_initiatorActive') Element? initiatorActiveElement,
+    @JsonKey(name: '_initiatorActive') PrimitiveElement? initiatorActiveElement,
 
     /// [receiverActive] If false, the receiver is deactivated right after the
     ///  operation.
     FhirBoolean? receiverActive,
 
     /// [receiverActiveElement] ("_receiverActive") Extensions for receiverActive
-    @JsonKey(name: '_receiverActive') Element? receiverActiveElement,
+    @JsonKey(name: '_receiverActive') PrimitiveElement? receiverActiveElement,
 
     /// [request] A reference to the instance that is transmitted from requester to
     ///  receiver as part of the invocation of the operation.
@@ -7153,14 +7184,14 @@ class ExampleScenarioAlternative
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [description] A human-readable description of the alternative explaining
     ///  when the alternative should occur rather than the base step.
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [step] Indicates the operation, sub-process or scenario that happens if the
     ///  alternative option is selected.
@@ -7202,7 +7233,9 @@ class ExampleScenarioAlternative
 ///  observation or measurement produced or consumed by an orderable health
 ///  care service.
 @freezed
-class ObservationDefinition with Resource, _$ObservationDefinition {
+class ObservationDefinition
+    with _$ObservationDefinition
+    implements DomainResource {
   /// [ObservationDefinition] Set of definitional characteristics for a kind of
   ///  observation or measurement produced or consumed by an orderable health
   ///  care service.
@@ -7486,13 +7519,13 @@ class ObservationDefinition with Resource, _$ObservationDefinition {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -7540,7 +7573,7 @@ class ObservationDefinition with Resource, _$ObservationDefinition {
     FhirUri? url,
 
     /// [urlElement] ("_url") Extensions for url
-    @JsonKey(name: '_url') Element? urlElement,
+    @JsonKey(name: '_url') PrimitiveElement? urlElement,
 
     /// [identifier] Business identifiers assigned to this ObservationDefinition.
     ///  by the performer and/or other systems. These identifiers remain constant
@@ -7556,7 +7589,7 @@ class ObservationDefinition with Resource, _$ObservationDefinition {
     String? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') Element? versionElement,
+    @JsonKey(name: '_version') PrimitiveElement? versionElement,
 
     /// [versionAlgorithmString] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -7565,7 +7598,7 @@ class ObservationDefinition with Resource, _$ObservationDefinition {
     /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
     ///  versionAlgorithmString
     @JsonKey(name: '_versionAlgorithmString')
-    Element? versionAlgorithmStringElement,
+    PrimitiveElement? versionAlgorithmStringElement,
 
     /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -7577,20 +7610,20 @@ class ObservationDefinition with Resource, _$ObservationDefinition {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [title] A short, descriptive, user-friendly title for the
     ///  ObservationDefinition.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [status] The current state of the ObservationDefinition.
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [experimental] A flag to indicate that this ObservationDefinition is
     ///  authored for testing purposes (or education/evaluation/marketing), and is
@@ -7598,7 +7631,7 @@ class ObservationDefinition with Resource, _$ObservationDefinition {
     FhirBoolean? experimental,
 
     /// [experimentalElement] ("_experimental") Extensions for experimental
-    @JsonKey(name: '_experimental') Element? experimentalElement,
+    @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
 
     /// [date] The date (and optionally time) when the ObservationDefinition was
     ///  last significantly changed. The date must change when the business version
@@ -7608,14 +7641,14 @@ class ObservationDefinition with Resource, _$ObservationDefinition {
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [publisher] Helps establish the "authority/credibility" of the
     ///  ObservationDefinition. May also allow for contact.
     String? publisher,
 
     /// [publisherElement] ("_publisher") Extensions for publisher
-    @JsonKey(name: '_publisher') Element? publisherElement,
+    @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
 
     /// [contact] Contact details to assist a user in finding and communicating
     ///  with the publisher.
@@ -7626,7 +7659,7 @@ class ObservationDefinition with Resource, _$ObservationDefinition {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [useContext] The content was developed with a focus and intent of
     ///  supporting the contexts that are listed. These contexts may be general
@@ -7644,7 +7677,7 @@ class ObservationDefinition with Resource, _$ObservationDefinition {
     FhirMarkdown? purpose,
 
     /// [purposeElement] ("_purpose") Extensions for purpose
-    @JsonKey(name: '_purpose') Element? purposeElement,
+    @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
 
     /// [copyright] Copyright statement relating to the ObservationDefinition
     ///  and/or its contents. Copyright statements are generally legal restrictions
@@ -7652,7 +7685,7 @@ class ObservationDefinition with Resource, _$ObservationDefinition {
     FhirMarkdown? copyright,
 
     /// [copyrightElement] ("_copyright") Extensions for copyright
-    @JsonKey(name: '_copyright') Element? copyrightElement,
+    @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
 
     /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
     ///  a page footer that identifies the copyright holder, effective period, and
@@ -7661,7 +7694,7 @@ class ObservationDefinition with Resource, _$ObservationDefinition {
     String? copyrightLabel,
 
     /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-    @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+    @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
 
     /// [approvalDate] The date on which the asset content was approved by the
     ///  publisher. Approval happens once when the content is officially approved
@@ -7669,7 +7702,7 @@ class ObservationDefinition with Resource, _$ObservationDefinition {
     FhirDate? approvalDate,
 
     /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
-    @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+    @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
 
     /// [lastReviewDate] The date on which the asset content was last reviewed.
     ///  Review happens periodically after that, but doesn't change the original
@@ -7677,7 +7710,7 @@ class ObservationDefinition with Resource, _$ObservationDefinition {
     FhirDate? lastReviewDate,
 
     /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
-    @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+    @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
 
     /// [effectivePeriod] The period during which the ObservationDefinition content
     ///  was or is planned to be effective.
@@ -7753,7 +7786,7 @@ class ObservationDefinition with Resource, _$ObservationDefinition {
     /// [multipleResultsAllowedElement] ("_multipleResultsAllowed") Extensions for
     ///  multipleResultsAllowed
     @JsonKey(name: '_multipleResultsAllowed')
-    Element? multipleResultsAllowedElement,
+    PrimitiveElement? multipleResultsAllowedElement,
 
     /// [bodySite] The site on the subject's body where the  observation is to be
     ///  made.
@@ -7776,7 +7809,8 @@ class ObservationDefinition with Resource, _$ObservationDefinition {
 
     /// [preferredReportNameElement] ("_preferredReportName") Extensions for
     ///  preferredReportName
-    @JsonKey(name: '_preferredReportName') Element? preferredReportNameElement,
+    @JsonKey(name: '_preferredReportName')
+    PrimitiveElement? preferredReportNameElement,
 
     /// [permittedUnit] Units allowed for the valueQuantity element in the instance
     ///  observations conforming to this ObservationDefinition.
@@ -7950,7 +7984,7 @@ class ObservationDefinitionQualifiedValue
     FhirCode? gender,
 
     /// [genderElement] ("_gender") Extensions for gender
-    @JsonKey(name: '_gender') Element? genderElement,
+    @JsonKey(name: '_gender') PrimitiveElement? genderElement,
 
     /// [age] The age range this  set of qualified values applies to.
     Range? age,
@@ -7964,14 +7998,14 @@ class ObservationDefinitionQualifiedValue
     String? condition,
 
     /// [conditionElement] ("_condition") Extensions for condition
-    @JsonKey(name: '_condition') Element? conditionElement,
+    @JsonKey(name: '_condition') PrimitiveElement? conditionElement,
 
     /// [rangeCategory] The category of range of values for continuous or ordinal
     ///  observations that match the criteria of this set of qualified values.
     FhirCode? rangeCategory,
 
     /// [rangeCategoryElement] ("_rangeCategory") Extensions for rangeCategory
-    @JsonKey(name: '_rangeCategory') Element? rangeCategoryElement,
+    @JsonKey(name: '_rangeCategory') PrimitiveElement? rangeCategoryElement,
 
     /// [range] The range of values defined for continuous or ordinal observations
     ///  that match the criteria of this set of qualified values.
@@ -8169,7 +8203,7 @@ class ObservationDefinitionComponent
 ///  and non-clinical artifacts such as clinical decision support rules, order
 ///  sets, protocols, and drug quality specifications.
 @freezed
-class PlanDefinition with Resource, _$PlanDefinition {
+class PlanDefinition with _$PlanDefinition implements DomainResource {
   /// [PlanDefinition] This resource allows for the definition of various types
   ///  of plans as a sharable, consumable, and executable artifact. The resource
   ///  is general enough to support the description of a broad range of clinical
@@ -8465,13 +8499,13 @@ class PlanDefinition with Resource, _$PlanDefinition {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -8520,7 +8554,7 @@ class PlanDefinition with Resource, _$PlanDefinition {
     FhirUri? url,
 
     /// [urlElement] ("_url") Extensions for url
-    @JsonKey(name: '_url') Element? urlElement,
+    @JsonKey(name: '_url') PrimitiveElement? urlElement,
 
     /// [identifier] A formal identifier that is used to identify this plan
     ///  definition when it is represented in other formats, or referenced in a
@@ -8541,7 +8575,7 @@ class PlanDefinition with Resource, _$PlanDefinition {
     String? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') Element? versionElement,
+    @JsonKey(name: '_version') PrimitiveElement? versionElement,
 
     /// [versionAlgorithmString] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -8550,7 +8584,7 @@ class PlanDefinition with Resource, _$PlanDefinition {
     /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
     ///  versionAlgorithmString
     @JsonKey(name: '_versionAlgorithmString')
-    Element? versionAlgorithmStringElement,
+    PrimitiveElement? versionAlgorithmStringElement,
 
     /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -8562,20 +8596,20 @@ class PlanDefinition with Resource, _$PlanDefinition {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [title] A short, descriptive, user-friendly title for the plan definition.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [status] The status of this plan definition. Enables tracking the
     ///  life-cycle of the content.
     PublicationStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [experimental] A Boolean value to indicate that this plan definition is
     ///  authored for testing purposes (or education/evaluation/marketing) and is
@@ -8583,7 +8617,7 @@ class PlanDefinition with Resource, _$PlanDefinition {
     FhirBoolean? experimental,
 
     /// [experimentalElement] ("_experimental") Extensions for experimental
-    @JsonKey(name: '_experimental') Element? experimentalElement,
+    @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
 
     /// [date] The date  (and optionally time) when the plan definition was last
     ///  significantly changed. The date must change when the business version
@@ -8592,14 +8626,14 @@ class PlanDefinition with Resource, _$PlanDefinition {
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [publisher] The name of the organization or individual responsible for the
     ///  release and ongoing maintenance of the plan definition.
     String? publisher,
 
     /// [publisherElement] ("_publisher") Extensions for publisher
-    @JsonKey(name: '_publisher') Element? publisherElement,
+    @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
 
     /// [contact] Contact details to assist a user in finding and communicating
     ///  with the publisher.
@@ -8610,7 +8644,7 @@ class PlanDefinition with Resource, _$PlanDefinition {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [useContext] The content was developed with a focus and intent of
     ///  supporting the contexts that are listed. These contexts may be general
@@ -8628,7 +8662,7 @@ class PlanDefinition with Resource, _$PlanDefinition {
     FhirMarkdown? purpose,
 
     /// [purposeElement] ("_purpose") Extensions for purpose
-    @JsonKey(name: '_purpose') Element? purposeElement,
+    @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
 
     /// [copyright] A copyright statement relating to the plan definition and/or
     ///  its contents. Copyright statements are generally legal restrictions on the
@@ -8636,7 +8670,7 @@ class PlanDefinition with Resource, _$PlanDefinition {
     FhirMarkdown? copyright,
 
     /// [copyrightElement] ("_copyright") Extensions for copyright
-    @JsonKey(name: '_copyright') Element? copyrightElement,
+    @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
 
     /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
     ///  a page footer that identifies the copyright holder, effective period, and
@@ -8645,7 +8679,7 @@ class PlanDefinition with Resource, _$PlanDefinition {
     String? copyrightLabel,
 
     /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-    @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+    @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
 
     /// [approvalDate] The date on which the resource content was approved by the
     ///  publisher. Approval happens once when the content is officially approved
@@ -8653,7 +8687,7 @@ class PlanDefinition with Resource, _$PlanDefinition {
     FhirDate? approvalDate,
 
     /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
-    @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+    @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
 
     /// [lastReviewDate] The date on which the resource content was last reviewed.
     ///  Review happens periodically after approval but does not change the
@@ -8661,7 +8695,7 @@ class PlanDefinition with Resource, _$PlanDefinition {
     FhirDate? lastReviewDate,
 
     /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
-    @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+    @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
 
     /// [effectivePeriod] The period during which the plan definition content was
     ///  or is planned to be in active use.
@@ -8697,7 +8731,7 @@ class PlanDefinition with Resource, _$PlanDefinition {
     String? subtitle,
 
     /// [subtitleElement] ("_subtitle") Extensions for subtitle
-    @JsonKey(name: '_subtitle') Element? subtitleElement,
+    @JsonKey(name: '_subtitle') PrimitiveElement? subtitleElement,
 
     /// [type] A high-level category for the plan definition that distinguishes the
     ///  kinds of systems that would be interested in the plan definition.
@@ -8732,14 +8766,15 @@ class PlanDefinition with Resource, _$PlanDefinition {
 
     /// [subjectCanonicalElement] ("_subjectCanonical") Extensions for
     ///  subjectCanonical
-    @JsonKey(name: '_subjectCanonical') Element? subjectCanonicalElement,
+    @JsonKey(name: '_subjectCanonical')
+    PrimitiveElement? subjectCanonicalElement,
 
     /// [usage] A detailed description of how the plan definition is used from a
     ///  clinical perspective.
     FhirMarkdown? usage,
 
     /// [usageElement] ("_usage") Extensions for usage
-    @JsonKey(name: '_usage') Element? usageElement,
+    @JsonKey(name: '_usage') PrimitiveElement? usageElement,
 
     /// [library_] ("library") A reference to a Library resource containing any
     ///  formal logic used by the plan definition.
@@ -8769,7 +8804,7 @@ class PlanDefinition with Resource, _$PlanDefinition {
     FhirBoolean? asNeededBoolean,
 
     /// [asNeededBooleanElement] ("_asNeededBoolean") Extensions for asNeededBoolean
-    @JsonKey(name: '_asNeededBoolean') Element? asNeededBooleanElement,
+    @JsonKey(name: '_asNeededBoolean') PrimitiveElement? asNeededBooleanElement,
 
     /// [asNeededCodeableConcept] If a CodeableConcept is present, it indicates the
     ///  pre-condition for performing the service.  For example "pain", "on
@@ -8823,7 +8858,7 @@ class PlanDefinition with Resource, _$PlanDefinition {
 ///  clinical and non-clinical artifacts such as clinical decision support
 ///  rules, order sets, protocols, and drug quality specifications.
 @freezed
-class PlanDefinitionGoal with BackboneType, _$PlanDefinitionGoal {
+class PlanDefinitionGoal with _$PlanDefinitionGoal implements BackboneType {
   /// [PlanDefinitionGoal] This resource allows for the definition of various
   ///  types of plans as a sharable, consumable, and executable artifact. The
   ///  resource is general enough to support the description of a broad range of
@@ -8974,7 +9009,7 @@ class PlanDefinitionGoal with BackboneType, _$PlanDefinitionGoal {
 ///  clinical and non-clinical artifacts such as clinical decision support
 ///  rules, order sets, protocols, and drug quality specifications.
 @freezed
-class PlanDefinitionTarget with BackboneType, _$PlanDefinitionTarget {
+class PlanDefinitionTarget with _$PlanDefinitionTarget implements BackboneType {
   /// [PlanDefinitionTarget] This resource allows for the definition of various
   ///  types of plans as a sharable, consumable, and executable artifact. The
   ///  resource is general enough to support the description of a broad range of
@@ -9147,7 +9182,7 @@ class PlanDefinitionTarget with BackboneType, _$PlanDefinitionTarget {
     String? detailString,
 
     /// [detailStringElement] ("_detailString") Extensions for detailString
-    @JsonKey(name: '_detailString') Element? detailStringElement,
+    @JsonKey(name: '_detailString') PrimitiveElement? detailStringElement,
 
     /// [detailBoolean] The target value of the measure to be achieved to signify
     ///  fulfillment of the goal, e.g. 150 pounds or 7.0%, or in the case of
@@ -9159,7 +9194,7 @@ class PlanDefinitionTarget with BackboneType, _$PlanDefinitionTarget {
     FhirBoolean? detailBoolean,
 
     /// [detailBooleanElement] ("_detailBoolean") Extensions for detailBoolean
-    @JsonKey(name: '_detailBoolean') Element? detailBooleanElement,
+    @JsonKey(name: '_detailBoolean') PrimitiveElement? detailBooleanElement,
 
     /// [detailInteger] The target value of the measure to be achieved to signify
     ///  fulfillment of the goal, e.g. 150 pounds or 7.0%, or in the case of
@@ -9171,7 +9206,7 @@ class PlanDefinitionTarget with BackboneType, _$PlanDefinitionTarget {
     FhirInteger? detailInteger,
 
     /// [detailIntegerElement] ("_detailInteger") Extensions for detailInteger
-    @JsonKey(name: '_detailInteger') Element? detailIntegerElement,
+    @JsonKey(name: '_detailInteger') PrimitiveElement? detailIntegerElement,
 
     /// [detailRatio] The target value of the measure to be achieved to signify
     ///  fulfillment of the goal, e.g. 150 pounds or 7.0%, or in the case of
@@ -9224,7 +9259,7 @@ class PlanDefinitionTarget with BackboneType, _$PlanDefinitionTarget {
 ///  clinical and non-clinical artifacts such as clinical decision support
 ///  rules, order sets, protocols, and drug quality specifications.
 @freezed
-class PlanDefinitionActor with BackboneType, _$PlanDefinitionActor {
+class PlanDefinitionActor with _$PlanDefinitionActor implements BackboneType {
   /// [PlanDefinitionActor] This resource allows for the definition of various
   ///  types of plans as a sharable, consumable, and executable artifact. The
   ///  resource is general enough to support the description of a broad range of
@@ -9304,14 +9339,14 @@ class PlanDefinitionActor with BackboneType, _$PlanDefinitionActor {
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [description] A description of how the actor fits into the overall actions
     ///  of the plan definition.
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [option] The characteristics of the candidates that could serve as the
     ///  actor.
@@ -9355,7 +9390,7 @@ class PlanDefinitionActor with BackboneType, _$PlanDefinitionActor {
 ///  clinical and non-clinical artifacts such as clinical decision support
 ///  rules, order sets, protocols, and drug quality specifications.
 @freezed
-class PlanDefinitionOption with BackboneType, _$PlanDefinitionOption {
+class PlanDefinitionOption with _$PlanDefinitionOption implements BackboneType {
   /// [PlanDefinitionOption] This resource allows for the definition of various
   ///  types of plans as a sharable, consumable, and executable artifact. The
   ///  resource is general enough to support the description of a broad range of
@@ -9434,7 +9469,7 @@ class PlanDefinitionOption with BackboneType, _$PlanDefinitionOption {
     FhirCode? type,
 
     /// [typeElement] ("_type") Extensions for type
-    @JsonKey(name: '_type') Element? typeElement,
+    @JsonKey(name: '_type') PrimitiveElement? typeElement,
 
     /// [typeCanonical] The type of participant in the action.
     FhirCanonical? typeCanonical,
@@ -9484,7 +9519,7 @@ class PlanDefinitionOption with BackboneType, _$PlanDefinitionOption {
 ///  clinical and non-clinical artifacts such as clinical decision support
 ///  rules, order sets, protocols, and drug quality specifications.
 @freezed
-class PlanDefinitionAction with BackboneType, _$PlanDefinitionAction {
+class PlanDefinitionAction with _$PlanDefinitionAction implements BackboneType {
   /// [PlanDefinitionAction] This resource allows for the definition of various
   ///  types of plans as a sharable, consumable, and executable artifact. The
   ///  resource is general enough to support the description of a broad range of
@@ -9728,14 +9763,14 @@ class PlanDefinitionAction with BackboneType, _$PlanDefinitionAction {
     String? linkId,
 
     /// [linkIdElement] ("_linkId") Extensions for linkId
-    @JsonKey(name: '_linkId') Element? linkIdElement,
+    @JsonKey(name: '_linkId') PrimitiveElement? linkIdElement,
 
     /// [prefix] A user-visible prefix for the action. For example a section or
     ///  item numbering such as 1. or A.
     String? prefix,
 
     /// [prefixElement] ("_prefix") Extensions for prefix
-    @JsonKey(name: '_prefix') Element? prefixElement,
+    @JsonKey(name: '_prefix') PrimitiveElement? prefixElement,
 
     /// [title] The textual description of the action displayed to a user. For
     ///  example, when the action is a test to be performed, the title would be the
@@ -9743,14 +9778,14 @@ class PlanDefinitionAction with BackboneType, _$PlanDefinitionAction {
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [description] A brief description of the action used to provide a summary
     ///  to display to the user.
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [textEquivalent] A text equivalent of the action to be performed. This
     ///  provides a human-interpretable description of the action when the
@@ -9759,14 +9794,14 @@ class PlanDefinitionAction with BackboneType, _$PlanDefinitionAction {
     FhirMarkdown? textEquivalent,
 
     /// [textEquivalentElement] ("_textEquivalent") Extensions for textEquivalent
-    @JsonKey(name: '_textEquivalent') Element? textEquivalentElement,
+    @JsonKey(name: '_textEquivalent') PrimitiveElement? textEquivalentElement,
 
     /// [priority] Indicates how quickly the action should be addressed with
     ///  respect to other actions.
     FhirCode? priority,
 
     /// [priorityElement] ("_priority") Extensions for priority
-    @JsonKey(name: '_priority') Element? priorityElement,
+    @JsonKey(name: '_priority') PrimitiveElement? priorityElement,
 
     /// [code] A code that provides a meaning, grouping, or classification for the
     ///  action or action group. For example, a section may have a LOINC code for
@@ -9821,7 +9856,8 @@ class PlanDefinitionAction with BackboneType, _$PlanDefinitionAction {
 
     /// [subjectCanonicalElement] ("_subjectCanonical") Extensions for
     ///  subjectCanonical
-    @JsonKey(name: '_subjectCanonical') Element? subjectCanonicalElement,
+    @JsonKey(name: '_subjectCanonical')
+    PrimitiveElement? subjectCanonicalElement,
 
     /// [trigger] A description of when the action should be triggered. When
     ///  multiple triggers are specified on an action, any triggering event invokes
@@ -9875,7 +9911,8 @@ class PlanDefinitionAction with BackboneType, _$PlanDefinitionAction {
 
     /// [groupingBehaviorElement] ("_groupingBehavior") Extensions for
     ///  groupingBehavior
-    @JsonKey(name: '_groupingBehavior') Element? groupingBehaviorElement,
+    @JsonKey(name: '_groupingBehavior')
+    PrimitiveElement? groupingBehaviorElement,
 
     /// [selectionBehavior] Defines the selection behavior for the action and its
     ///  children.
@@ -9883,21 +9920,24 @@ class PlanDefinitionAction with BackboneType, _$PlanDefinitionAction {
 
     /// [selectionBehaviorElement] ("_selectionBehavior") Extensions for
     ///  selectionBehavior
-    @JsonKey(name: '_selectionBehavior') Element? selectionBehaviorElement,
+    @JsonKey(name: '_selectionBehavior')
+    PrimitiveElement? selectionBehaviorElement,
 
     /// [requiredBehavior] Defines the required behavior for the action.
     FhirCode? requiredBehavior,
 
     /// [requiredBehaviorElement] ("_requiredBehavior") Extensions for
     ///  requiredBehavior
-    @JsonKey(name: '_requiredBehavior') Element? requiredBehaviorElement,
+    @JsonKey(name: '_requiredBehavior')
+    PrimitiveElement? requiredBehaviorElement,
 
     /// [precheckBehavior] Defines whether the action should usually be preselected.
     FhirCode? precheckBehavior,
 
     /// [precheckBehaviorElement] ("_precheckBehavior") Extensions for
     ///  precheckBehavior
-    @JsonKey(name: '_precheckBehavior') Element? precheckBehaviorElement,
+    @JsonKey(name: '_precheckBehavior')
+    PrimitiveElement? precheckBehaviorElement,
 
     /// [cardinalityBehavior] Defines whether the action can be selected multiple
     ///  times.
@@ -9905,7 +9945,8 @@ class PlanDefinitionAction with BackboneType, _$PlanDefinitionAction {
 
     /// [cardinalityBehaviorElement] ("_cardinalityBehavior") Extensions for
     ///  cardinalityBehavior
-    @JsonKey(name: '_cardinalityBehavior') Element? cardinalityBehaviorElement,
+    @JsonKey(name: '_cardinalityBehavior')
+    PrimitiveElement? cardinalityBehaviorElement,
 
     /// [definitionCanonical] A reference to an ActivityDefinition that describes
     ///  the action to be taken in detail, a MessageDefinition describing a message
@@ -9917,7 +9958,8 @@ class PlanDefinitionAction with BackboneType, _$PlanDefinitionAction {
 
     /// [definitionCanonicalElement] ("_definitionCanonical") Extensions for
     ///  definitionCanonical
-    @JsonKey(name: '_definitionCanonical') Element? definitionCanonicalElement,
+    @JsonKey(name: '_definitionCanonical')
+    PrimitiveElement? definitionCanonicalElement,
 
     /// [definitionUri] A reference to an ActivityDefinition that describes the
     ///  action to be taken in detail, a MessageDefinition describing a message to
@@ -9928,7 +9970,7 @@ class PlanDefinitionAction with BackboneType, _$PlanDefinitionAction {
     FhirUri? definitionUri,
 
     /// [definitionUriElement] ("_definitionUri") Extensions for definitionUri
-    @JsonKey(name: '_definitionUri') Element? definitionUriElement,
+    @JsonKey(name: '_definitionUri') PrimitiveElement? definitionUriElement,
 
     /// [transform] A reference to a StructureMap resource that defines a transform
     ///  that can be executed to produce the intent resource using the
@@ -9986,7 +10028,9 @@ class PlanDefinitionAction with BackboneType, _$PlanDefinitionAction {
 ///  of clinical and non-clinical artifacts such as clinical decision support
 ///  rules, order sets, protocols, and drug quality specifications.
 @freezed
-class PlanDefinitionCondition with BackboneType, _$PlanDefinitionCondition {
+class PlanDefinitionCondition
+    with _$PlanDefinitionCondition
+    implements BackboneType {
   /// [PlanDefinitionCondition] This resource allows for the definition of
   ///  various types of plans as a sharable, consumable, and executable artifact.
   ///  The resource is general enough to support the description of a broad range
@@ -10061,7 +10105,7 @@ class PlanDefinitionCondition with BackboneType, _$PlanDefinitionCondition {
     FhirCode? kind,
 
     /// [kindElement] ("_kind") Extensions for kind
-    @JsonKey(name: '_kind') Element? kindElement,
+    @JsonKey(name: '_kind') PrimitiveElement? kindElement,
 
     /// [expression] An expression that returns true or false, indicating whether
     ///  the condition is satisfied.
@@ -10105,7 +10149,7 @@ class PlanDefinitionCondition with BackboneType, _$PlanDefinitionCondition {
 ///  clinical and non-clinical artifacts such as clinical decision support
 ///  rules, order sets, protocols, and drug quality specifications.
 @freezed
-class PlanDefinitionInput with BackboneType, _$PlanDefinitionInput {
+class PlanDefinitionInput with _$PlanDefinitionInput implements BackboneType {
   /// [PlanDefinitionInput] This resource allows for the definition of various
   ///  types of plans as a sharable, consumable, and executable artifact. The
   ///  resource is general enough to support the description of a broad range of
@@ -10191,7 +10235,7 @@ class PlanDefinitionInput with BackboneType, _$PlanDefinitionInput {
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [requirement] Defines the data that is to be provided as input to the
     ///  action.
@@ -10202,7 +10246,7 @@ class PlanDefinitionInput with BackboneType, _$PlanDefinitionInput {
     FhirId? relatedData,
 
     /// [relatedDataElement] ("_relatedData") Extensions for relatedData
-    @JsonKey(name: '_relatedData') Element? relatedDataElement,
+    @JsonKey(name: '_relatedData') PrimitiveElement? relatedDataElement,
   }) = _PlanDefinitionInput;
 
   @override
@@ -10242,7 +10286,7 @@ class PlanDefinitionInput with BackboneType, _$PlanDefinitionInput {
 ///  clinical and non-clinical artifacts such as clinical decision support
 ///  rules, order sets, protocols, and drug quality specifications.
 @freezed
-class PlanDefinitionOutput with BackboneType, _$PlanDefinitionOutput {
+class PlanDefinitionOutput with _$PlanDefinitionOutput implements BackboneType {
   /// [PlanDefinitionOutput] This resource allows for the definition of various
   ///  types of plans as a sharable, consumable, and executable artifact. The
   ///  resource is general enough to support the description of a broad range of
@@ -10327,7 +10371,7 @@ class PlanDefinitionOutput with BackboneType, _$PlanDefinitionOutput {
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [requirement] Defines the data that results as output from the action.
     DataRequirement? requirement,
@@ -10337,7 +10381,7 @@ class PlanDefinitionOutput with BackboneType, _$PlanDefinitionOutput {
     String? relatedData,
 
     /// [relatedDataElement] ("_relatedData") Extensions for relatedData
-    @JsonKey(name: '_relatedData') Element? relatedDataElement,
+    @JsonKey(name: '_relatedData') PrimitiveElement? relatedDataElement,
   }) = _PlanDefinitionOutput;
 
   @override
@@ -10466,21 +10510,21 @@ class PlanDefinitionRelatedAction
     FhirId? targetId,
 
     /// [targetIdElement] ("_targetId") Extensions for targetId
-    @JsonKey(name: '_targetId') Element? targetIdElement,
+    @JsonKey(name: '_targetId') PrimitiveElement? targetIdElement,
 
     /// [relationship] The relationship of the start of this action to the related
     ///  action.
     FhirCode? relationship,
 
     /// [relationshipElement] ("_relationship") Extensions for relationship
-    @JsonKey(name: '_relationship') Element? relationshipElement,
+    @JsonKey(name: '_relationship') PrimitiveElement? relationshipElement,
 
     /// [endRelationship] The relationship of the end of this action to the related
     ///  action.
     FhirCode? endRelationship,
 
     /// [endRelationshipElement] ("_endRelationship") Extensions for endRelationship
-    @JsonKey(name: '_endRelationship') Element? endRelationshipElement,
+    @JsonKey(name: '_endRelationship') PrimitiveElement? endRelationshipElement,
 
     /// [offsetDuration] A duration or range of durations to apply to the
     ///  relationship. For example, 30-60 minutes before.
@@ -10529,7 +10573,9 @@ class PlanDefinitionRelatedAction
 ///  of clinical and non-clinical artifacts such as clinical decision support
 ///  rules, order sets, protocols, and drug quality specifications.
 @freezed
-class PlanDefinitionParticipant with BackboneType, _$PlanDefinitionParticipant {
+class PlanDefinitionParticipant
+    with _$PlanDefinitionParticipant
+    implements BackboneType {
   /// [PlanDefinitionParticipant] This resource allows for the definition of
   ///  various types of plans as a sharable, consumable, and executable artifact.
   ///  The resource is general enough to support the description of a broad range
@@ -10617,13 +10663,13 @@ class PlanDefinitionParticipant with BackboneType, _$PlanDefinitionParticipant {
     String? actorId,
 
     /// [actorIdElement] ("_actorId") Extensions for actorId
-    @JsonKey(name: '_actorId') Element? actorIdElement,
+    @JsonKey(name: '_actorId') PrimitiveElement? actorIdElement,
 
     /// [type] The type of participant in the action.
     FhirCode? type,
 
     /// [typeElement] ("_type") Extensions for type
-    @JsonKey(name: '_type') Element? typeElement,
+    @JsonKey(name: '_type') PrimitiveElement? typeElement,
 
     /// [typeCanonical] The type of participant in the action.
     FhirCanonical? typeCanonical,
@@ -10766,7 +10812,7 @@ class PlanDefinitionDynamicValue
     String? path,
 
     /// [pathElement] ("_path") Extensions for path
-    @JsonKey(name: '_path') Element? pathElement,
+    @JsonKey(name: '_path') PrimitiveElement? pathElement,
 
     /// [expression] An expression specifying the value of the customized element.
     FhirExpression? expression,
@@ -10808,7 +10854,7 @@ class PlanDefinitionDynamicValue
 ///  control over order, presentation, phraseology and grouping to allow
 ///  coherent, consistent data collection.
 @freezed
-class Questionnaire with Resource, _$Questionnaire {
+class Questionnaire with _$Questionnaire implements DomainResource {
   /// [Questionnaire] A structured set of questions intended to guide the
   ///  collection of answers from end-users. Questionnaires provide detailed
   ///  control over order, presentation, phraseology and grouping to allow
@@ -11044,13 +11090,13 @@ class Questionnaire with Resource, _$Questionnaire {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -11099,7 +11145,7 @@ class Questionnaire with Resource, _$Questionnaire {
     FhirUri? url,
 
     /// [urlElement] ("_url") Extensions for url
-    @JsonKey(name: '_url') Element? urlElement,
+    @JsonKey(name: '_url') PrimitiveElement? urlElement,
 
     /// [identifier] A formal identifier that is used to identify this
     ///  questionnaire when it is represented in other formats, or referenced in a
@@ -11116,7 +11162,7 @@ class Questionnaire with Resource, _$Questionnaire {
     String? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') Element? versionElement,
+    @JsonKey(name: '_version') PrimitiveElement? versionElement,
 
     /// [versionAlgorithmString] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -11125,7 +11171,7 @@ class Questionnaire with Resource, _$Questionnaire {
     /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
     ///  versionAlgorithmString
     @JsonKey(name: '_versionAlgorithmString')
-    Element? versionAlgorithmStringElement,
+    PrimitiveElement? versionAlgorithmStringElement,
 
     /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -11137,19 +11183,19 @@ class Questionnaire with Resource, _$Questionnaire {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [title] A short, descriptive, user-friendly title for the questionnaire.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [status] The current state of this questionnaire.
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [experimental] A Boolean value to indicate that this questionnaire is
     ///  authored for testing purposes (or education/evaluation/marketing) and is
@@ -11157,7 +11203,7 @@ class Questionnaire with Resource, _$Questionnaire {
     FhirBoolean? experimental,
 
     /// [experimentalElement] ("_experimental") Extensions for experimental
-    @JsonKey(name: '_experimental') Element? experimentalElement,
+    @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
 
     /// [date] The date  (and optionally time) when the questionnaire was last
     ///  significantly changed. The date must change when the business version
@@ -11166,14 +11212,14 @@ class Questionnaire with Resource, _$Questionnaire {
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [publisher] The name of the organization or individual responsible for the
     ///  release and ongoing maintenance of the questionnaire.
     String? publisher,
 
     /// [publisherElement] ("_publisher") Extensions for publisher
-    @JsonKey(name: '_publisher') Element? publisherElement,
+    @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
 
     /// [contact] Contact details to assist a user in finding and communicating
     ///  with the publisher.
@@ -11184,7 +11230,7 @@ class Questionnaire with Resource, _$Questionnaire {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [useContext] The content was developed with a focus and intent of
     ///  supporting the contexts that are listed. These contexts may be general
@@ -11202,7 +11248,7 @@ class Questionnaire with Resource, _$Questionnaire {
     FhirMarkdown? purpose,
 
     /// [purposeElement] ("_purpose") Extensions for purpose
-    @JsonKey(name: '_purpose') Element? purposeElement,
+    @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
 
     /// [copyright] A copyright statement relating to the questionnaire and/or its
     ///  contents. Copyright statements are generally legal restrictions on the use
@@ -11210,7 +11256,7 @@ class Questionnaire with Resource, _$Questionnaire {
     FhirMarkdown? copyright,
 
     /// [copyrightElement] ("_copyright") Extensions for copyright
-    @JsonKey(name: '_copyright') Element? copyrightElement,
+    @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
 
     /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
     ///  a page footer that identifies the copyright holder, effective period, and
@@ -11219,7 +11265,7 @@ class Questionnaire with Resource, _$Questionnaire {
     String? copyrightLabel,
 
     /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-    @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+    @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
 
     /// [approvalDate] The date on which the resource content was approved by the
     ///  publisher. Approval happens once when the content is officially approved
@@ -11227,7 +11273,7 @@ class Questionnaire with Resource, _$Questionnaire {
     FhirDate? approvalDate,
 
     /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
-    @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+    @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
 
     /// [lastReviewDate] The date on which the resource content was last reviewed.
     ///  Review happens periodically after approval but does not change the
@@ -11235,7 +11281,7 @@ class Questionnaire with Resource, _$Questionnaire {
     FhirDate? lastReviewDate,
 
     /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
-    @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+    @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
 
     /// [effectivePeriod] The period during which the questionnaire content was or
     ///  is planned to be in active use.
@@ -11332,7 +11378,7 @@ class Questionnaire with Resource, _$Questionnaire {
 ///  control over order, presentation, phraseology and grouping to allow
 ///  coherent, consistent data collection.
 @freezed
-class QuestionnaireItem with BackboneType, _$QuestionnaireItem {
+class QuestionnaireItem with _$QuestionnaireItem implements BackboneType {
   /// [QuestionnaireItem] A structured set of questions intended to guide the
   ///  collection of answers from end-users. Questionnaires provide detailed
   ///  control over order, presentation, phraseology and grouping to allow
@@ -11489,7 +11535,7 @@ class QuestionnaireItem with BackboneType, _$QuestionnaireItem {
     String? linkId,
 
     /// [linkIdElement] ("_linkId") Extensions for linkId
-    @JsonKey(name: '_linkId') Element? linkIdElement,
+    @JsonKey(name: '_linkId') PrimitiveElement? linkIdElement,
 
     /// [definition] This element is a URI that refers to an
     ///  [ElementDefinition](elementdefinition.html) or to an
@@ -11501,7 +11547,7 @@ class QuestionnaireItem with BackboneType, _$QuestionnaireItem {
     FhirUri? definition,
 
     /// [definitionElement] ("_definition") Extensions for definition
-    @JsonKey(name: '_definition') Element? definitionElement,
+    @JsonKey(name: '_definition') PrimitiveElement? definitionElement,
 
     /// [code] A terminology code that corresponds to this group or question (e.g.
     ///  a code from LOINC, which defines many questions and answers).
@@ -11513,14 +11559,14 @@ class QuestionnaireItem with BackboneType, _$QuestionnaireItem {
     String? prefix,
 
     /// [prefixElement] ("_prefix") Extensions for prefix
-    @JsonKey(name: '_prefix') Element? prefixElement,
+    @JsonKey(name: '_prefix') PrimitiveElement? prefixElement,
 
     /// [text] The name of a section, the text of a question or text content for a
     ///  display item.
     String? text,
 
     /// [textElement] ("_text") Extensions for text
-    @JsonKey(name: '_text') Element? textElement,
+    @JsonKey(name: '_text') PrimitiveElement? textElement,
 
     /// [type] The type of questionnaire item this is - whether text for display, a
     ///  grouping of other items or a particular type of data to be captured
@@ -11528,7 +11574,7 @@ class QuestionnaireItem with BackboneType, _$QuestionnaireItem {
     FhirCode? type,
 
     /// [typeElement] ("_type") Extensions for type
-    @JsonKey(name: '_type') Element? typeElement,
+    @JsonKey(name: '_type') PrimitiveElement? typeElement,
 
     /// [enableWhen] A constraint indicating that this item should only be enabled
     ///  (displayed/allow answers to be captured) when the specified condition is
@@ -11540,14 +11586,14 @@ class QuestionnaireItem with BackboneType, _$QuestionnaireItem {
     FhirCode? enableBehavior,
 
     /// [enableBehaviorElement] ("_enableBehavior") Extensions for enableBehavior
-    @JsonKey(name: '_enableBehavior') Element? enableBehaviorElement,
+    @JsonKey(name: '_enableBehavior') PrimitiveElement? enableBehaviorElement,
 
     /// [disabledDisplay] Indicates if and how items that are disabled (because
     ///  enableWhen evaluates to 'false') should be displayed.
     FhirCode? disabledDisplay,
 
     /// [disabledDisplayElement] ("_disabledDisplay") Extensions for disabledDisplay
-    @JsonKey(name: '_disabledDisplay') Element? disabledDisplayElement,
+    @JsonKey(name: '_disabledDisplay') PrimitiveElement? disabledDisplayElement,
 
     /// [required_] ("required") An indication, if true, that the item must be
     ///  present in a "completed" QuestionnaireResponse.  If false, the item may be
@@ -11555,7 +11601,7 @@ class QuestionnaireItem with BackboneType, _$QuestionnaireItem {
     @JsonKey(name: 'required') FhirBoolean? required_,
 
     /// [requiredElement] ("_required") Extensions for required
-    @JsonKey(name: '_required') Element? requiredElement,
+    @JsonKey(name: '_required') PrimitiveElement? requiredElement,
 
     /// [repeats] An indication, if true, that a QuestionnaireResponse for this
     ///  item may include multiple answers associated with a single instance of
@@ -11564,21 +11610,21 @@ class QuestionnaireItem with BackboneType, _$QuestionnaireItem {
     FhirBoolean? repeats,
 
     /// [repeatsElement] ("_repeats") Extensions for repeats
-    @JsonKey(name: '_repeats') Element? repeatsElement,
+    @JsonKey(name: '_repeats') PrimitiveElement? repeatsElement,
 
     /// [readOnly] An indication, when true, that the value cannot be changed by a
     ///  human respondent to the Questionnaire.
     FhirBoolean? readOnly,
 
     /// [readOnlyElement] ("_readOnly") Extensions for readOnly
-    @JsonKey(name: '_readOnly') Element? readOnlyElement,
+    @JsonKey(name: '_readOnly') PrimitiveElement? readOnlyElement,
 
     /// [maxLength] The maximum number of characters that are permitted in the
     ///  answer to be considered a "valid" QuestionnaireResponse.
     FhirInteger? maxLength,
 
     /// [maxLengthElement] ("_maxLength") Extensions for maxLength
-    @JsonKey(name: '_maxLength') Element? maxLengthElement,
+    @JsonKey(name: '_maxLength') PrimitiveElement? maxLengthElement,
 
     /// [answerConstraint] For items that have a defined set of allowed answers
     ///  (via answerOption or answerValueSet), indicates whether values *other*
@@ -11587,7 +11633,8 @@ class QuestionnaireItem with BackboneType, _$QuestionnaireItem {
 
     /// [answerConstraintElement] ("_answerConstraint") Extensions for
     ///  answerConstraint
-    @JsonKey(name: '_answerConstraint') Element? answerConstraintElement,
+    @JsonKey(name: '_answerConstraint')
+    PrimitiveElement? answerConstraintElement,
 
     /// [answerValueSet] A reference to a value set containing a list of values
     ///  representing permitted answers for a question.
@@ -11641,7 +11688,9 @@ class QuestionnaireItem with BackboneType, _$QuestionnaireItem {
 ///  control over order, presentation, phraseology and grouping to allow
 ///  coherent, consistent data collection.
 @freezed
-class QuestionnaireEnableWhen with BackboneType, _$QuestionnaireEnableWhen {
+class QuestionnaireEnableWhen
+    with _$QuestionnaireEnableWhen
+    implements BackboneType {
   /// [QuestionnaireEnableWhen] A structured set of questions intended to guide
   ///  the collection of answers from end-users. Questionnaires provide detailed
   ///  control over order, presentation, phraseology and grouping to allow
@@ -11792,14 +11841,14 @@ class QuestionnaireEnableWhen with BackboneType, _$QuestionnaireEnableWhen {
     String? question,
 
     /// [questionElement] ("_question") Extensions for question
-    @JsonKey(name: '_question') Element? questionElement,
+    @JsonKey(name: '_question') PrimitiveElement? questionElement,
 
     /// [operator_] ("operator") Specifies the criteria by which the question is
     ///  enabled.
     @JsonKey(name: 'operator') FhirCode? operator_,
 
     /// [operatorElement] ("_operator") Extensions for operator
-    @JsonKey(name: '_operator') Element? operatorElement,
+    @JsonKey(name: '_operator') PrimitiveElement? operatorElement,
 
     /// [answerBoolean] A value that the referenced question is tested using the
     ///  specified operator in order for the item to be enabled.  If there are
@@ -11809,7 +11858,7 @@ class QuestionnaireEnableWhen with BackboneType, _$QuestionnaireEnableWhen {
     FhirBoolean? answerBoolean,
 
     /// [answerBooleanElement] ("_answerBoolean") Extensions for answerBoolean
-    @JsonKey(name: '_answerBoolean') Element? answerBooleanElement,
+    @JsonKey(name: '_answerBoolean') PrimitiveElement? answerBooleanElement,
 
     /// [answerDecimal] A value that the referenced question is tested using the
     ///  specified operator in order for the item to be enabled.  If there are
@@ -11819,7 +11868,7 @@ class QuestionnaireEnableWhen with BackboneType, _$QuestionnaireEnableWhen {
     FhirDecimal? answerDecimal,
 
     /// [answerDecimalElement] ("_answerDecimal") Extensions for answerDecimal
-    @JsonKey(name: '_answerDecimal') Element? answerDecimalElement,
+    @JsonKey(name: '_answerDecimal') PrimitiveElement? answerDecimalElement,
 
     /// [answerInteger] A value that the referenced question is tested using the
     ///  specified operator in order for the item to be enabled.  If there are
@@ -11829,7 +11878,7 @@ class QuestionnaireEnableWhen with BackboneType, _$QuestionnaireEnableWhen {
     FhirInteger? answerInteger,
 
     /// [answerIntegerElement] ("_answerInteger") Extensions for answerInteger
-    @JsonKey(name: '_answerInteger') Element? answerIntegerElement,
+    @JsonKey(name: '_answerInteger') PrimitiveElement? answerIntegerElement,
 
     /// [answerDate] A value that the referenced question is tested using the
     ///  specified operator in order for the item to be enabled.  If there are
@@ -11839,7 +11888,7 @@ class QuestionnaireEnableWhen with BackboneType, _$QuestionnaireEnableWhen {
     FhirDate? answerDate,
 
     /// [answerDateElement] ("_answerDate") Extensions for answerDate
-    @JsonKey(name: '_answerDate') Element? answerDateElement,
+    @JsonKey(name: '_answerDate') PrimitiveElement? answerDateElement,
 
     /// [answerDateTime] A value that the referenced question is tested using the
     ///  specified operator in order for the item to be enabled.  If there are
@@ -11849,7 +11898,7 @@ class QuestionnaireEnableWhen with BackboneType, _$QuestionnaireEnableWhen {
     FhirDateTime? answerDateTime,
 
     /// [answerDateTimeElement] ("_answerDateTime") Extensions for answerDateTime
-    @JsonKey(name: '_answerDateTime') Element? answerDateTimeElement,
+    @JsonKey(name: '_answerDateTime') PrimitiveElement? answerDateTimeElement,
 
     /// [answerTime] A value that the referenced question is tested using the
     ///  specified operator in order for the item to be enabled.  If there are
@@ -11859,7 +11908,7 @@ class QuestionnaireEnableWhen with BackboneType, _$QuestionnaireEnableWhen {
     FhirTime? answerTime,
 
     /// [answerTimeElement] ("_answerTime") Extensions for answerTime
-    @JsonKey(name: '_answerTime') Element? answerTimeElement,
+    @JsonKey(name: '_answerTime') PrimitiveElement? answerTimeElement,
 
     /// [answerString] A value that the referenced question is tested using the
     ///  specified operator in order for the item to be enabled.  If there are
@@ -11869,7 +11918,7 @@ class QuestionnaireEnableWhen with BackboneType, _$QuestionnaireEnableWhen {
     String? answerString,
 
     /// [answerStringElement] ("_answerString") Extensions for answerString
-    @JsonKey(name: '_answerString') Element? answerStringElement,
+    @JsonKey(name: '_answerString') PrimitiveElement? answerStringElement,
 
     /// [answerCoding] A value that the referenced question is tested using the
     ///  specified operator in order for the item to be enabled.  If there are
@@ -11929,7 +11978,9 @@ class QuestionnaireEnableWhen with BackboneType, _$QuestionnaireEnableWhen {
 ///  control over order, presentation, phraseology and grouping to allow
 ///  coherent, consistent data collection.
 @freezed
-class QuestionnaireAnswerOption with BackboneType, _$QuestionnaireAnswerOption {
+class QuestionnaireAnswerOption
+    with _$QuestionnaireAnswerOption
+    implements BackboneType {
   /// [QuestionnaireAnswerOption] A structured set of questions intended to guide
   ///  the collection of answers from end-users. Questionnaires provide detailed
   ///  control over order, presentation, phraseology and grouping to allow
@@ -12027,28 +12078,28 @@ class QuestionnaireAnswerOption with BackboneType, _$QuestionnaireAnswerOption {
     FhirInteger? valueInteger,
 
     /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
-    @JsonKey(name: '_valueInteger') Element? valueIntegerElement,
+    @JsonKey(name: '_valueInteger') PrimitiveElement? valueIntegerElement,
 
     /// [valueDate] A potential answer that's allowed as the answer to this
     ///  question.
     FhirDate? valueDate,
 
     /// [valueDateElement] ("_valueDate") Extensions for valueDate
-    @JsonKey(name: '_valueDate') Element? valueDateElement,
+    @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
 
     /// [valueTime] A potential answer that's allowed as the answer to this
     ///  question.
     FhirTime? valueTime,
 
     /// [valueTimeElement] ("_valueTime") Extensions for valueTime
-    @JsonKey(name: '_valueTime') Element? valueTimeElement,
+    @JsonKey(name: '_valueTime') PrimitiveElement? valueTimeElement,
 
     /// [valueString] A potential answer that's allowed as the answer to this
     ///  question.
     String? valueString,
 
     /// [valueStringElement] ("_valueString") Extensions for valueString
-    @JsonKey(name: '_valueString') Element? valueStringElement,
+    @JsonKey(name: '_valueString') PrimitiveElement? valueStringElement,
 
     /// [valueCoding] A potential answer that's allowed as the answer to this
     ///  question.
@@ -12063,7 +12114,7 @@ class QuestionnaireAnswerOption with BackboneType, _$QuestionnaireAnswerOption {
     FhirBoolean? initialSelected,
 
     /// [initialSelectedElement] ("_initialSelected") Extensions for initialSelected
-    @JsonKey(name: '_initialSelected') Element? initialSelectedElement,
+    @JsonKey(name: '_initialSelected') PrimitiveElement? initialSelectedElement,
   }) = _QuestionnaireAnswerOption;
 
   @override
@@ -12102,7 +12153,7 @@ class QuestionnaireAnswerOption with BackboneType, _$QuestionnaireAnswerOption {
 ///  control over order, presentation, phraseology and grouping to allow
 ///  coherent, consistent data collection.
 @freezed
-class QuestionnaireInitial with BackboneType, _$QuestionnaireInitial {
+class QuestionnaireInitial with _$QuestionnaireInitial implements BackboneType {
   /// [QuestionnaireInitial] A structured set of questions intended to guide the
   ///  collection of answers from end-users. Questionnaires provide detailed
   ///  control over order, presentation, phraseology and grouping to allow
@@ -12208,49 +12259,49 @@ class QuestionnaireInitial with BackboneType, _$QuestionnaireInitial {
     FhirBoolean? valueBoolean,
 
     /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
 
     /// [valueDecimal] The actual value to for an initial answer.
     FhirDecimal? valueDecimal,
 
     /// [valueDecimalElement] ("_valueDecimal") Extensions for valueDecimal
-    @JsonKey(name: '_valueDecimal') Element? valueDecimalElement,
+    @JsonKey(name: '_valueDecimal') PrimitiveElement? valueDecimalElement,
 
     /// [valueInteger] The actual value to for an initial answer.
     FhirInteger? valueInteger,
 
     /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
-    @JsonKey(name: '_valueInteger') Element? valueIntegerElement,
+    @JsonKey(name: '_valueInteger') PrimitiveElement? valueIntegerElement,
 
     /// [valueDate] The actual value to for an initial answer.
     FhirDate? valueDate,
 
     /// [valueDateElement] ("_valueDate") Extensions for valueDate
-    @JsonKey(name: '_valueDate') Element? valueDateElement,
+    @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
 
     /// [valueDateTime] The actual value to for an initial answer.
     FhirDateTime? valueDateTime,
 
     /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
-    @JsonKey(name: '_valueDateTime') Element? valueDateTimeElement,
+    @JsonKey(name: '_valueDateTime') PrimitiveElement? valueDateTimeElement,
 
     /// [valueTime] The actual value to for an initial answer.
     FhirTime? valueTime,
 
     /// [valueTimeElement] ("_valueTime") Extensions for valueTime
-    @JsonKey(name: '_valueTime') Element? valueTimeElement,
+    @JsonKey(name: '_valueTime') PrimitiveElement? valueTimeElement,
 
     /// [valueString] The actual value to for an initial answer.
     String? valueString,
 
     /// [valueStringElement] ("_valueString") Extensions for valueString
-    @JsonKey(name: '_valueString') Element? valueStringElement,
+    @JsonKey(name: '_valueString') PrimitiveElement? valueStringElement,
 
     /// [valueUri] The actual value to for an initial answer.
     FhirUri? valueUri,
 
     /// [valueUriElement] ("_valueUri") Extensions for valueUri
-    @JsonKey(name: '_valueUri') Element? valueUriElement,
+    @JsonKey(name: '_valueUri') PrimitiveElement? valueUriElement,
 
     /// [valueAttachment] The actual value to for an initial answer.
     Attachment? valueAttachment,
@@ -12300,7 +12351,7 @@ class QuestionnaireInitial with BackboneType, _$QuestionnaireInitial {
 ///  designed systems that are necessary to achieve organizational or
 ///  regulatory goals.
 @freezed
-class Requirements with Resource, _$Requirements {
+class Requirements with _$Requirements implements DomainResource {
   /// [Requirements] A set of requirements - a list of features or behaviors of
   ///  designed systems that are necessary to achieve organizational or
   ///  regulatory goals.
@@ -12498,13 +12549,13 @@ class Requirements with Resource, _$Requirements {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -12553,7 +12604,7 @@ class Requirements with Resource, _$Requirements {
     FhirUri? url,
 
     /// [urlElement] ("_url") Extensions for url
-    @JsonKey(name: '_url') Element? urlElement,
+    @JsonKey(name: '_url') PrimitiveElement? urlElement,
 
     /// [identifier] A formal identifier that is used to identify this Requirements
     ///  when it is represented in other formats, or referenced in a specification,
@@ -12570,7 +12621,7 @@ class Requirements with Resource, _$Requirements {
     String? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') Element? versionElement,
+    @JsonKey(name: '_version') PrimitiveElement? versionElement,
 
     /// [versionAlgorithmString] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -12579,7 +12630,7 @@ class Requirements with Resource, _$Requirements {
     /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
     ///  versionAlgorithmString
     @JsonKey(name: '_versionAlgorithmString')
-    Element? versionAlgorithmStringElement,
+    PrimitiveElement? versionAlgorithmStringElement,
 
     /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -12591,20 +12642,20 @@ class Requirements with Resource, _$Requirements {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [title] A short, descriptive, user-friendly title for the Requirements.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [status] The status of this Requirements. Enables tracking the life-cycle
     ///  of the content.
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [experimental] A Boolean value to indicate that this Requirements is
     ///  authored for testing purposes (or education/evaluation/marketing) and is
@@ -12612,7 +12663,7 @@ class Requirements with Resource, _$Requirements {
     FhirBoolean? experimental,
 
     /// [experimentalElement] ("_experimental") Extensions for experimental
-    @JsonKey(name: '_experimental') Element? experimentalElement,
+    @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
 
     /// [date] The date  (and optionally time) when the Requirements was published.
     ///  The date must change when the business version changes and it must change
@@ -12621,14 +12672,14 @@ class Requirements with Resource, _$Requirements {
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [publisher] The name of the organization or individual responsible for the
     ///  release and ongoing maintenance of the Requirements.
     String? publisher,
 
     /// [publisherElement] ("_publisher") Extensions for publisher
-    @JsonKey(name: '_publisher') Element? publisherElement,
+    @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
 
     /// [contact] Contact details to assist a user in finding and communicating
     ///  with the publisher.
@@ -12638,7 +12689,7 @@ class Requirements with Resource, _$Requirements {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [useContext] The content was developed with a focus and intent of
     ///  supporting the contexts that are listed. These contexts may be general
@@ -12656,7 +12707,7 @@ class Requirements with Resource, _$Requirements {
     FhirMarkdown? purpose,
 
     /// [purposeElement] ("_purpose") Extensions for purpose
-    @JsonKey(name: '_purpose') Element? purposeElement,
+    @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
 
     /// [copyright] A copyright statement relating to the Requirements and/or its
     ///  contents. Copyright statements are generally legal restrictions on the use
@@ -12664,7 +12715,7 @@ class Requirements with Resource, _$Requirements {
     FhirMarkdown? copyright,
 
     /// [copyrightElement] ("_copyright") Extensions for copyright
-    @JsonKey(name: '_copyright') Element? copyrightElement,
+    @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
 
     /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
     ///  a page footer that identifies the copyright holder, effective period, and
@@ -12673,7 +12724,7 @@ class Requirements with Resource, _$Requirements {
     String? copyrightLabel,
 
     /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-    @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+    @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
 
     /// [derivedFrom] Another set of Requirements that this set of Requirements
     ///  builds on and updates.
@@ -12738,7 +12789,9 @@ class Requirements with Resource, _$Requirements {
 ///  behaviors of designed systems that are necessary to achieve organizational
 ///  or regulatory goals.
 @freezed
-class RequirementsStatement with BackboneType, _$RequirementsStatement {
+class RequirementsStatement
+    with _$RequirementsStatement
+    implements BackboneType {
   /// [RequirementsStatement] A set of requirements - a list of features or
   ///  behaviors of designed systems that are necessary to achieve organizational
   ///  or regulatory goals.
@@ -12851,13 +12904,13 @@ class RequirementsStatement with BackboneType, _$RequirementsStatement {
     FhirId? key,
 
     /// [keyElement] ("_key") Extensions for key
-    @JsonKey(name: '_key') Element? keyElement,
+    @JsonKey(name: '_key') PrimitiveElement? keyElement,
 
     /// [label] A short human usable label for this statement.
     String? label,
 
     /// [labelElement] ("_label") Extensions for label
-    @JsonKey(name: '_label') Element? labelElement,
+    @JsonKey(name: '_label') PrimitiveElement? labelElement,
 
     /// [conformance] A short human usable label for this statement.
     List<FhirCode>? conformance,
@@ -12872,27 +12925,27 @@ class RequirementsStatement with BackboneType, _$RequirementsStatement {
     FhirBoolean? conditionality,
 
     /// [conditionalityElement] ("_conditionality") Extensions for conditionality
-    @JsonKey(name: '_conditionality') Element? conditionalityElement,
+    @JsonKey(name: '_conditionality') PrimitiveElement? conditionalityElement,
 
     /// [requirement] The actual requirement for human consumption.
     FhirMarkdown? requirement,
 
     /// [requirementElement] ("_requirement") Extensions for requirement
-    @JsonKey(name: '_requirement') Element? requirementElement,
+    @JsonKey(name: '_requirement') PrimitiveElement? requirementElement,
 
     /// [derivedFrom] Another statement on one of the requirements that this
     ///  requirement clarifies or restricts.
     String? derivedFrom,
 
     /// [derivedFromElement] ("_derivedFrom") Extensions for derivedFrom
-    @JsonKey(name: '_derivedFrom') Element? derivedFromElement,
+    @JsonKey(name: '_derivedFrom') PrimitiveElement? derivedFromElement,
 
     /// [parent] A larger requirement that this requirement helps to refine and
     ///  enable.
     String? parent,
 
     /// [parentElement] ("_parent") Extensions for parent
-    @JsonKey(name: '_parent') Element? parentElement,
+    @JsonKey(name: '_parent') PrimitiveElement? parentElement,
 
     /// [satisfiedBy] A reference to another artifact that satisfies this
     ///  requirement. This could be a Profile, extension, or an element in one of
@@ -12949,7 +13002,7 @@ class RequirementsStatement with BackboneType, _$RequirementsStatement {
 
 /// [SpecimenDefinition] A kind of specimen with associated set of requirements.
 @freezed
-class SpecimenDefinition with Resource, _$SpecimenDefinition {
+class SpecimenDefinition with _$SpecimenDefinition implements DomainResource {
   /// [SpecimenDefinition] A kind of specimen with associated set of requirements.
   const SpecimenDefinition._();
 
@@ -13185,13 +13238,13 @@ class SpecimenDefinition with Resource, _$SpecimenDefinition {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -13239,7 +13292,7 @@ class SpecimenDefinition with Resource, _$SpecimenDefinition {
     FhirUri? url,
 
     /// [urlElement] ("_url") Extensions for url
-    @JsonKey(name: '_url') Element? urlElement,
+    @JsonKey(name: '_url') PrimitiveElement? urlElement,
 
     /// [identifier] A business identifier assigned to this SpecimenDefinition.
     Identifier? identifier,
@@ -13251,7 +13304,7 @@ class SpecimenDefinition with Resource, _$SpecimenDefinition {
     String? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') Element? versionElement,
+    @JsonKey(name: '_version') PrimitiveElement? versionElement,
 
     /// [versionAlgorithmString] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -13260,7 +13313,7 @@ class SpecimenDefinition with Resource, _$SpecimenDefinition {
     /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
     ///  versionAlgorithmString
     @JsonKey(name: '_versionAlgorithmString')
-    Element? versionAlgorithmStringElement,
+    PrimitiveElement? versionAlgorithmStringElement,
 
     /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -13272,27 +13325,27 @@ class SpecimenDefinition with Resource, _$SpecimenDefinition {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [title] A short, descriptive, user-friendly title for the
     ///  SpecimenDefinition.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [status] The current state of theSpecimenDefinition.
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [experimental] A flag to indicate that this SpecimenDefinition is not
     ///  authored for  genuine usage.
     FhirBoolean? experimental,
 
     /// [experimentalElement] ("_experimental") Extensions for experimental
-    @JsonKey(name: '_experimental') Element? experimentalElement,
+    @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
 
     /// [date] For draft definitions, indicates the date of initial creation. For
     ///  active definitions, represents the date of activation. For withdrawn
@@ -13300,14 +13353,14 @@ class SpecimenDefinition with Resource, _$SpecimenDefinition {
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [publisher] Helps establish the "authority/credibility" of the
     ///  SpecimenDefinition. May also allow for contact.
     String? publisher,
 
     /// [publisherElement] ("_publisher") Extensions for publisher
-    @JsonKey(name: '_publisher') Element? publisherElement,
+    @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
 
     /// [contact] Contact details to assist a user in finding and communicating
     ///  with the publisher.
@@ -13318,7 +13371,7 @@ class SpecimenDefinition with Resource, _$SpecimenDefinition {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [useContext] The content was developed with a focus and intent of
     ///  supporting the contexts that are listed. These terms may be used to assist
@@ -13334,7 +13387,7 @@ class SpecimenDefinition with Resource, _$SpecimenDefinition {
     FhirMarkdown? purpose,
 
     /// [purposeElement] ("_purpose") Extensions for purpose
-    @JsonKey(name: '_purpose') Element? purposeElement,
+    @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
 
     /// [copyright] Copyright statement relating to the SpecimenDefinition and/or
     ///  its contents. Copyright statements are generally legal restrictions on the
@@ -13342,7 +13395,7 @@ class SpecimenDefinition with Resource, _$SpecimenDefinition {
     FhirMarkdown? copyright,
 
     /// [copyrightElement] ("_copyright") Extensions for copyright
-    @JsonKey(name: '_copyright') Element? copyrightElement,
+    @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
 
     /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
     ///  a page footer that identifies the copyright holder, effective period, and
@@ -13351,7 +13404,7 @@ class SpecimenDefinition with Resource, _$SpecimenDefinition {
     String? copyrightLabel,
 
     /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-    @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+    @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
 
     /// [approvalDate] The date on which the asset content was approved by the
     ///  publisher. Approval happens once when the content is officially approved
@@ -13359,7 +13412,7 @@ class SpecimenDefinition with Resource, _$SpecimenDefinition {
     FhirDate? approvalDate,
 
     /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
-    @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+    @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
 
     /// [lastReviewDate] The date on which the asset content was last reviewed.
     ///  Review happens periodically after that, but doesn't change the original
@@ -13367,7 +13420,7 @@ class SpecimenDefinition with Resource, _$SpecimenDefinition {
     FhirDate? lastReviewDate,
 
     /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
-    @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+    @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
 
     /// [effectivePeriod] The period during which the SpecimenDefinition content
     ///  was or is planned to be effective.
@@ -13430,7 +13483,7 @@ class SpecimenDefinition with Resource, _$SpecimenDefinition {
     String? timeAspect,
 
     /// [timeAspectElement] ("_timeAspect") Extensions for timeAspect
-    @JsonKey(name: '_timeAspect') Element? timeAspectElement,
+    @JsonKey(name: '_timeAspect') PrimitiveElement? timeAspectElement,
 
     /// [collection] The action to be performed for collecting the specimen.
     List<CodeableConcept>? collection,
@@ -13581,7 +13634,7 @@ class SpecimenDefinitionTypeTested
     FhirBoolean? isDerived,
 
     /// [isDerivedElement] ("_isDerived") Extensions for isDerived
-    @JsonKey(name: '_isDerived') Element? isDerivedElement,
+    @JsonKey(name: '_isDerived') PrimitiveElement? isDerivedElement,
 
     /// [type] The kind of specimen conditioned for testing expected by lab.
     CodeableConcept? type,
@@ -13590,7 +13643,7 @@ class SpecimenDefinitionTypeTested
     FhirCode? preference,
 
     /// [preferenceElement] ("_preference") Extensions for preference
-    @JsonKey(name: '_preference') Element? preferenceElement,
+    @JsonKey(name: '_preference') PrimitiveElement? preferenceElement,
 
     /// [container] The specimen's container.
     SpecimenDefinitionContainer? container,
@@ -13600,7 +13653,7 @@ class SpecimenDefinitionTypeTested
     FhirMarkdown? requirement,
 
     /// [requirementElement] ("_requirement") Extensions for requirement
-    @JsonKey(name: '_requirement') Element? requirementElement,
+    @JsonKey(name: '_requirement') PrimitiveElement? requirementElement,
 
     /// [retentionTime] The usual time that a specimen of this kind is retained
     ///  after the ordered tests are completed, for the purpose of additional
@@ -13612,7 +13665,7 @@ class SpecimenDefinitionTypeTested
     FhirBoolean? singleUse,
 
     /// [singleUseElement] ("_singleUse") Extensions for singleUse
-    @JsonKey(name: '_singleUse') Element? singleUseElement,
+    @JsonKey(name: '_singleUse') PrimitiveElement? singleUseElement,
 
     /// [rejectionCriterion] Criterion for rejection of the specimen in its
     ///  container by the laboratory.
@@ -13762,7 +13815,7 @@ class SpecimenDefinitionContainer
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [capacity] The capacity (volume or other measure) of this kind of container.
     Quantity? capacity,
@@ -13776,7 +13829,8 @@ class SpecimenDefinitionContainer
 
     /// [minimumVolumeStringElement] ("_minimumVolumeString") Extensions for
     ///  minimumVolumeString
-    @JsonKey(name: '_minimumVolumeString') Element? minimumVolumeStringElement,
+    @JsonKey(name: '_minimumVolumeString')
+    PrimitiveElement? minimumVolumeStringElement,
 
     /// [additive] Substance introduced in the kind of container to preserve,
     ///  maintain or enhance the specimen. Examples: Formalin, Citrate, EDTA.
@@ -13787,7 +13841,7 @@ class SpecimenDefinitionContainer
     FhirMarkdown? preparation,
 
     /// [preparationElement] ("_preparation") Extensions for preparation
-    @JsonKey(name: '_preparation') Element? preparationElement,
+    @JsonKey(name: '_preparation') PrimitiveElement? preparationElement,
   }) = _SpecimenDefinitionContainer;
 
   @override
@@ -14029,7 +14083,7 @@ class SpecimenDefinitionHandling
     FhirMarkdown? instruction,
 
     /// [instructionElement] ("_instruction") Extensions for instruction
-    @JsonKey(name: '_instruction') Element? instructionElement,
+    @JsonKey(name: '_instruction') PrimitiveElement? instructionElement,
   }) = _SpecimenDefinitionHandling;
 
   @override

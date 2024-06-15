@@ -168,13 +168,13 @@ class AdministrableProductDefinition
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -221,7 +221,7 @@ class AdministrableProductDefinition
     PublicationStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [formOf] References a product from which one or more of the constituent
     ///  parts of that product can be prepared and used as described by this
@@ -278,7 +278,7 @@ class AdministrableProductDefinition
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [property] Characteristics e.g. a product's onset of action.
     List<AdministrableProductDefinitionProperty>? property,
@@ -436,19 +436,19 @@ class AdministrableProductDefinitionProperty
     FhirDate? valueDate,
 
     /// [valueDateElement] ("_valueDate") Extensions for valueDate
-    @JsonKey(name: '_valueDate') Element? valueDateElement,
+    @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
 
     /// [valueBoolean] A value for the characteristic.
     FhirBoolean? valueBoolean,
 
     /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
 
     /// [valueMarkdown] A value for the characteristic.
     FhirMarkdown? valueMarkdown,
 
     /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
-    @JsonKey(name: '_valueMarkdown') Element? valueMarkdownElement,
+    @JsonKey(name: '_valueMarkdown') PrimitiveElement? valueMarkdownElement,
 
     /// [valueAttachment] A value for the characteristic.
     Attachment? valueAttachment,
@@ -843,7 +843,7 @@ class AdministrableProductDefinitionWithdrawalPeriod
     /// [supportingInformationElement] ("_supportingInformation") Extensions for
     ///  supportingInformation
     @JsonKey(name: '_supportingInformation')
-    Element? supportingInformationElement,
+    PrimitiveElement? supportingInformationElement,
   }) = _AdministrableProductDefinitionWithdrawalPeriod;
 
   @override
@@ -886,7 +886,9 @@ class AdministrableProductDefinitionWithdrawalPeriod
 ///  contraindication, interaction or an undesirable effect for a medicinal
 ///  product, medication, device or procedure.
 @freezed
-class ClinicalUseDefinition with Resource, _$ClinicalUseDefinition {
+class ClinicalUseDefinition
+    with _$ClinicalUseDefinition
+    implements DomainResource {
   /// [ClinicalUseDefinition] A single issue - either an indication,
   ///  contraindication, interaction or an undesirable effect for a medicinal
   ///  product, medication, device or procedure.
@@ -1005,13 +1007,13 @@ class ClinicalUseDefinition with Resource, _$ClinicalUseDefinition {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1058,7 +1060,7 @@ class ClinicalUseDefinition with Resource, _$ClinicalUseDefinition {
     FhirCode? type,
 
     /// [typeElement] ("_type") Extensions for type
-    @JsonKey(name: '_type') Element? typeElement,
+    @JsonKey(name: '_type') PrimitiveElement? typeElement,
 
     /// [category] A categorisation of the issue, primarily for dividing warnings
     ///  into subject heading areas such as "Pregnancy and Lactation", "Overdose",
@@ -1521,7 +1523,7 @@ class ClinicalUseDefinitionIndication
     String? durationString,
 
     /// [durationStringElement] ("_durationString") Extensions for durationString
-    @JsonKey(name: '_durationString') Element? durationStringElement,
+    @JsonKey(name: '_durationString') PrimitiveElement? durationStringElement,
 
     /// [undesirableEffect] An unwanted side effect or negative outcome that may
     ///  happen if you use the drug (or other subject of this resource) for this
@@ -2008,7 +2010,7 @@ class ClinicalUseDefinitionWarning
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [code] A coded or unformatted textual definition of this warning.
     CodeableConcept? code,
@@ -2048,7 +2050,7 @@ class ClinicalUseDefinitionWarning
 
 /// [Ingredient] An ingredient of a manufactured item or pharmaceutical product.
 @freezed
-class Ingredient with Resource, _$Ingredient {
+class Ingredient with _$Ingredient implements DomainResource {
   /// [Ingredient] An ingredient of a manufactured item or pharmaceutical product.
   const Ingredient._();
 
@@ -2173,13 +2175,13 @@ class Ingredient with Resource, _$Ingredient {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -2228,7 +2230,7 @@ class Ingredient with Resource, _$Ingredient {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [for_] ("for") The product which this ingredient is a constituent part of.
     @JsonKey(name: 'for') List<Reference>? for_,
@@ -2255,14 +2257,15 @@ class Ingredient with Resource, _$Ingredient {
 
     /// [allergenicIndicatorElement] ("_allergenicIndicator") Extensions for
     ///  allergenicIndicator
-    @JsonKey(name: '_allergenicIndicator') Element? allergenicIndicatorElement,
+    @JsonKey(name: '_allergenicIndicator')
+    PrimitiveElement? allergenicIndicatorElement,
 
     /// [comment] A place for providing any notes that are relevant to the
     ///  component, e.g. removed during process, adjusted for loss on drying.
     FhirMarkdown? comment,
 
     /// [commentElement] ("_comment") Extensions for comment
-    @JsonKey(name: '_comment') Element? commentElement,
+    @JsonKey(name: '_comment') PrimitiveElement? commentElement,
 
     /// [manufacturer] The organization(s) that manufacture this ingredient. Can be
     ///  used to indicate:         1) Organizations we are aware of that
@@ -2319,7 +2322,9 @@ class Ingredient with Resource, _$Ingredient {
 /// [IngredientManufacturer] An ingredient of a manufactured item or
 ///  pharmaceutical product.
 @freezed
-class IngredientManufacturer with BackboneType, _$IngredientManufacturer {
+class IngredientManufacturer
+    with _$IngredientManufacturer
+    implements BackboneType {
   /// [IngredientManufacturer] An ingredient of a manufactured item or
   ///  pharmaceutical product.
   const IngredientManufacturer._();
@@ -2393,7 +2398,7 @@ class IngredientManufacturer with BackboneType, _$IngredientManufacturer {
     FhirCode? role,
 
     /// [roleElement] ("_role") Extensions for role
-    @JsonKey(name: '_role') Element? roleElement,
+    @JsonKey(name: '_role') PrimitiveElement? roleElement,
 
     /// [manufacturer] An organization that manufactures this ingredient.
     required Reference manufacturer,
@@ -2433,7 +2438,7 @@ class IngredientManufacturer with BackboneType, _$IngredientManufacturer {
 /// [IngredientSubstance] An ingredient of a manufactured item or
 ///  pharmaceutical product.
 @freezed
-class IngredientSubstance with BackboneType, _$IngredientSubstance {
+class IngredientSubstance with _$IngredientSubstance implements BackboneType {
   /// [IngredientSubstance] An ingredient of a manufactured item or
   ///  pharmaceutical product.
   const IngredientSubstance._();
@@ -2544,7 +2549,7 @@ class IngredientSubstance with BackboneType, _$IngredientSubstance {
 /// [IngredientStrength] An ingredient of a manufactured item or pharmaceutical
 ///  product.
 @freezed
-class IngredientStrength with BackboneType, _$IngredientStrength {
+class IngredientStrength with _$IngredientStrength implements BackboneType {
   /// [IngredientStrength] An ingredient of a manufactured item or pharmaceutical
   ///  product.
   const IngredientStrength._();
@@ -2713,7 +2718,8 @@ class IngredientStrength with BackboneType, _$IngredientStrength {
 
     /// [textPresentationElement] ("_textPresentation") Extensions for
     ///  textPresentation
-    @JsonKey(name: '_textPresentation') Element? textPresentationElement,
+    @JsonKey(name: '_textPresentation')
+    PrimitiveElement? textPresentationElement,
 
     /// [concentrationRatio] The strength per unitary volume (or mass).
     Ratio? concentrationRatio,
@@ -2734,7 +2740,8 @@ class IngredientStrength with BackboneType, _$IngredientStrength {
 
     /// [textConcentrationElement] ("_textConcentration") Extensions for
     ///  textConcentration
-    @JsonKey(name: '_textConcentration') Element? textConcentrationElement,
+    @JsonKey(name: '_textConcentration')
+    PrimitiveElement? textConcentrationElement,
 
     /// [basis] A code that indicates if the strength is, for example, based on the
     ///  ingredient substance as stated or on the substance base (when the
@@ -2749,7 +2756,8 @@ class IngredientStrength with BackboneType, _$IngredientStrength {
 
     /// [measurementPointElement] ("_measurementPoint") Extensions for
     ///  measurementPoint
-    @JsonKey(name: '_measurementPoint') Element? measurementPointElement,
+    @JsonKey(name: '_measurementPoint')
+    PrimitiveElement? measurementPointElement,
 
     /// [country] The country or countries for which the strength range applies.
     List<CodeableConcept>? country,
@@ -2891,7 +2899,8 @@ class IngredientReferenceStrength
 
     /// [measurementPointElement] ("_measurementPoint") Extensions for
     ///  measurementPoint
-    @JsonKey(name: '_measurementPoint') Element? measurementPointElement,
+    @JsonKey(name: '_measurementPoint')
+    PrimitiveElement? measurementPointElement,
 
     /// [country] The country or countries for which the strength range applies.
     List<CodeableConcept>? country,
@@ -2933,7 +2942,9 @@ class IngredientReferenceStrength
 ///  medicinal manufactured item, such as a tablet or capsule, as contained in
 ///  a packaged medicinal product.
 @freezed
-class ManufacturedItemDefinition with Resource, _$ManufacturedItemDefinition {
+class ManufacturedItemDefinition
+    with _$ManufacturedItemDefinition
+    implements DomainResource {
   /// [ManufacturedItemDefinition] The definition and characteristics of a
   ///  medicinal manufactured item, such as a tablet or capsule, as contained in
   ///  a packaged medicinal product.
@@ -3050,13 +3061,13 @@ class ManufacturedItemDefinition with Resource, _$ManufacturedItemDefinition {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -3103,13 +3114,13 @@ class ManufacturedItemDefinition with Resource, _$ManufacturedItemDefinition {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [name] A descriptive name applied to this item.
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [manufacturedDoseForm] Dose form as manufactured and before any
     ///  transformation into the pharmaceutical product.
@@ -3280,19 +3291,19 @@ class ManufacturedItemDefinitionProperty
     FhirDate? valueDate,
 
     /// [valueDateElement] ("_valueDate") Extensions for valueDate
-    @JsonKey(name: '_valueDate') Element? valueDateElement,
+    @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
 
     /// [valueBoolean] A value for the characteristic.
     FhirBoolean? valueBoolean,
 
     /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
 
     /// [valueMarkdown] A value for the characteristic.
     FhirMarkdown? valueMarkdown,
 
     /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
-    @JsonKey(name: '_valueMarkdown') Element? valueMarkdownElement,
+    @JsonKey(name: '_valueMarkdown') PrimitiveElement? valueMarkdownElement,
 
     /// [valueAttachment] A value for the characteristic.
     Attachment? valueAttachment,
@@ -3615,7 +3626,9 @@ class ManufacturedItemDefinitionConstituent
 ///  properties, for uses other than direct patient care (e.g. regulatory use,
 ///  or drug catalogs).
 @freezed
-class MedicinalProductDefinition with Resource, _$MedicinalProductDefinition {
+class MedicinalProductDefinition
+    with _$MedicinalProductDefinition
+    implements DomainResource {
   /// [MedicinalProductDefinition] A medicinal product, being a substance or
   ///  combination of substances that is intended to treat, prevent or diagnose a
   ///  disease, or to restore, correct or modify physiological functions by
@@ -3831,13 +3844,13 @@ class MedicinalProductDefinition with Resource, _$MedicinalProductDefinition {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -3894,7 +3907,7 @@ class MedicinalProductDefinition with Resource, _$MedicinalProductDefinition {
     String? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') Element? versionElement,
+    @JsonKey(name: '_version') PrimitiveElement? versionElement,
 
     /// [status] The status within the lifecycle of this product record. A
     ///  high-level status, this is not intended to duplicate details carried
@@ -3905,13 +3918,13 @@ class MedicinalProductDefinition with Resource, _$MedicinalProductDefinition {
     FhirDateTime? statusDate,
 
     /// [statusDateElement] ("_statusDate") Extensions for statusDate
-    @JsonKey(name: '_statusDate') Element? statusDateElement,
+    @JsonKey(name: '_statusDate') PrimitiveElement? statusDateElement,
 
     /// [description] General description of this product.
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [combinedPharmaceuticalDoseForm] The dose form for a single part product,
     ///  or combined form of a multiple part product. This is one concept that
@@ -3936,7 +3949,7 @@ class MedicinalProductDefinition with Resource, _$MedicinalProductDefinition {
     FhirMarkdown? indication,
 
     /// [indicationElement] ("_indication") Extensions for indication
-    @JsonKey(name: '_indication') Element? indicationElement,
+    @JsonKey(name: '_indication') PrimitiveElement? indicationElement,
 
     /// [legalStatusOfSupply] The legal status of supply of the medicinal product
     ///  as classified by the regulator.
@@ -4292,7 +4305,7 @@ class MedicinalProductDefinitionName
     String? productName,
 
     /// [productNameElement] ("_productName") Extensions for productName
-    @JsonKey(name: '_productName') Element? productNameElement,
+    @JsonKey(name: '_productName') PrimitiveElement? productNameElement,
 
     /// [type] Type of product name, such as rINN, BAN, Proprietary,
     ///  Non-Proprietary.
@@ -4426,7 +4439,7 @@ class MedicinalProductDefinitionPart
     @JsonKey(name: 'part') String? part_,
 
     /// [partElement] ("_part") Extensions for part
-    @JsonKey(name: '_part') Element? partElement,
+    @JsonKey(name: '_part') PrimitiveElement? partElement,
 
     /// [type] Identifying type for this part of the name (e.g. strength part).
     required CodeableConcept type,
@@ -4977,7 +4990,7 @@ class MedicinalProductDefinitionCharacteristic
     FhirMarkdown? valueMarkdown,
 
     /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
-    @JsonKey(name: '_valueMarkdown') Element? valueMarkdownElement,
+    @JsonKey(name: '_valueMarkdown') PrimitiveElement? valueMarkdownElement,
 
     /// [valueQuantity] A value for the characteristic.text.
     Quantity? valueQuantity,
@@ -4986,19 +4999,19 @@ class MedicinalProductDefinitionCharacteristic
     FhirInteger? valueInteger,
 
     /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
-    @JsonKey(name: '_valueInteger') Element? valueIntegerElement,
+    @JsonKey(name: '_valueInteger') PrimitiveElement? valueIntegerElement,
 
     /// [valueDate] A value for the characteristic.text.
     FhirDate? valueDate,
 
     /// [valueDateElement] ("_valueDate") Extensions for valueDate
-    @JsonKey(name: '_valueDate') Element? valueDateElement,
+    @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
 
     /// [valueBoolean] A value for the characteristic.text.
     FhirBoolean? valueBoolean,
 
     /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
 
     /// [valueAttachment] A value for the characteristic.text.
     Attachment? valueAttachment,
@@ -5042,7 +5055,9 @@ class MedicinalProductDefinitionCharacteristic
 /// [PackagedProductDefinition] A medically related item or items, in a
 ///  container or package.
 @freezed
-class PackagedProductDefinition with Resource, _$PackagedProductDefinition {
+class PackagedProductDefinition
+    with _$PackagedProductDefinition
+    implements DomainResource {
   /// [PackagedProductDefinition] A medically related item or items, in a
   ///  container or package.
   const PackagedProductDefinition._();
@@ -5195,13 +5210,13 @@ class PackagedProductDefinition with Resource, _$PackagedProductDefinition {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -5251,7 +5266,7 @@ class PackagedProductDefinition with Resource, _$PackagedProductDefinition {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [type] A high level category e.g. medicinal product, raw material,
     ///  shipping/transport container, etc.
@@ -5270,7 +5285,7 @@ class PackagedProductDefinition with Resource, _$PackagedProductDefinition {
     FhirDateTime? statusDate,
 
     /// [statusDateElement] ("_statusDate") Extensions for statusDate
-    @JsonKey(name: '_statusDate') Element? statusDateElement,
+    @JsonKey(name: '_statusDate') PrimitiveElement? statusDateElement,
 
     /// [containedItemQuantity] A total of the complete count of contained items of
     ///  a particular type/form, independent of sub-packaging or organization. This
@@ -5293,7 +5308,7 @@ class PackagedProductDefinition with Resource, _$PackagedProductDefinition {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [legalStatusOfSupply] The legal status of supply of the packaged item as
     ///  classified by the regulator.
@@ -5310,7 +5325,8 @@ class PackagedProductDefinition with Resource, _$PackagedProductDefinition {
 
     /// [copackagedIndicatorElement] ("_copackagedIndicator") Extensions for
     ///  copackagedIndicator
-    @JsonKey(name: '_copackagedIndicator') Element? copackagedIndicatorElement,
+    @JsonKey(name: '_copackagedIndicator')
+    PrimitiveElement? copackagedIndicatorElement,
 
     /// [manufacturer] Manufacturer of this package type. When there are multiple
     ///  it means these are all possible manufacturers.
@@ -5598,7 +5614,7 @@ class PackagedProductDefinitionPackaging
     FhirBoolean? componentPart,
 
     /// [componentPartElement] ("_componentPart") Extensions for componentPart
-    @JsonKey(name: '_componentPart') Element? componentPartElement,
+    @JsonKey(name: '_componentPart') PrimitiveElement? componentPartElement,
 
     /// [quantity] The quantity of packaging items contained at this layer of the
     ///  package. This does not relate to the number of contained items but relates
@@ -5608,7 +5624,7 @@ class PackagedProductDefinitionPackaging
     FhirInteger? quantity,
 
     /// [quantityElement] ("_quantity") Extensions for quantity
-    @JsonKey(name: '_quantity') Element? quantityElement,
+    @JsonKey(name: '_quantity') PrimitiveElement? quantityElement,
 
     /// [material] Material type of the package item.
     List<CodeableConcept>? material,
@@ -5763,13 +5779,13 @@ class PackagedProductDefinitionProperty
     FhirDate? valueDate,
 
     /// [valueDateElement] ("_valueDate") Extensions for valueDate
-    @JsonKey(name: '_valueDate') Element? valueDateElement,
+    @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
 
     /// [valueBoolean] A value for the characteristic.
     FhirBoolean? valueBoolean,
 
     /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
 
     /// [valueAttachment] A value for the characteristic.
     Attachment? valueAttachment,
@@ -5941,7 +5957,9 @@ class PackagedProductDefinitionContainedItem
 ///  cited in a guidance, regulation, rule or legislative act. An example is
 ///  Market Authorization relating to a Medicinal Product.
 @freezed
-class RegulatedAuthorization with Resource, _$RegulatedAuthorization {
+class RegulatedAuthorization
+    with _$RegulatedAuthorization
+    implements DomainResource {
   /// [RegulatedAuthorization] Regulatory approval, clearance or licencing
   ///  related to a regulated product, treatment, facility or activity that is
   ///  cited in a guidance, regulation, rule or legislative act. An example is
@@ -6081,13 +6099,13 @@ class RegulatedAuthorization with Resource, _$RegulatedAuthorization {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -6142,7 +6160,7 @@ class RegulatedAuthorization with Resource, _$RegulatedAuthorization {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [region] The territory (e.g., country, jurisdiction etc.) in which the
     ///  authorization has been granted.
@@ -6156,7 +6174,7 @@ class RegulatedAuthorization with Resource, _$RegulatedAuthorization {
     FhirDateTime? statusDate,
 
     /// [statusDateElement] ("_statusDate") Extensions for statusDate
-    @JsonKey(name: '_statusDate') Element? statusDateElement,
+    @JsonKey(name: '_statusDate') PrimitiveElement? statusDateElement,
 
     /// [validityPeriod] The time period in which the regulatory approval,
     ///  clearance or licencing is in effect. As an example, a Marketing
@@ -6339,7 +6357,7 @@ class RegulatedAuthorizationCase
     FhirDateTime? dateDateTime,
 
     /// [dateDateTimeElement] ("_dateDateTime") Extensions for dateDateTime
-    @JsonKey(name: '_dateDateTime') Element? dateDateTimeElement,
+    @JsonKey(name: '_dateDateTime') PrimitiveElement? dateDateTimeElement,
 
     /// [application] A regulatory submission from an organization to a regulator,
     ///  as part of an assessing case. Multiple applications may occur over time,
@@ -6383,7 +6401,7 @@ class RegulatedAuthorizationCase
 /// [SubstanceDefinition] The detailed description of a substance, typically at
 ///  a level beyond what is used for prescribing.
 @freezed
-class SubstanceDefinition with Resource, _$SubstanceDefinition {
+class SubstanceDefinition with _$SubstanceDefinition implements DomainResource {
   /// [SubstanceDefinition] The detailed description of a substance, typically at
   ///  a level beyond what is used for prescribing.
   const SubstanceDefinition._();
@@ -6528,13 +6546,13 @@ class SubstanceDefinition with Resource, _$SubstanceDefinition {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -6580,7 +6598,7 @@ class SubstanceDefinition with Resource, _$SubstanceDefinition {
     String? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') Element? versionElement,
+    @JsonKey(name: '_version') PrimitiveElement? versionElement,
 
     /// [status] Status of substance within the catalogue e.g. active, retired.
     CodeableConcept? status,
@@ -6602,7 +6620,7 @@ class SubstanceDefinition with Resource, _$SubstanceDefinition {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [informationSource] Supporting literature.
     List<Reference>? informationSource,
@@ -6705,7 +6723,9 @@ class SubstanceDefinition with Resource, _$SubstanceDefinition {
 /// [SubstanceDefinitionMoiety] The detailed description of a substance,
 ///  typically at a level beyond what is used for prescribing.
 @freezed
-class SubstanceDefinitionMoiety with BackboneType, _$SubstanceDefinitionMoiety {
+class SubstanceDefinitionMoiety
+    with _$SubstanceDefinitionMoiety
+    implements BackboneType {
   /// [SubstanceDefinitionMoiety] The detailed description of a substance,
   ///  typically at a level beyond what is used for prescribing.
   const SubstanceDefinitionMoiety._();
@@ -6802,7 +6822,7 @@ class SubstanceDefinitionMoiety with BackboneType, _$SubstanceDefinitionMoiety {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [stereochemistry] Stereochemistry type.
     CodeableConcept? stereochemistry,
@@ -6816,7 +6836,8 @@ class SubstanceDefinitionMoiety with BackboneType, _$SubstanceDefinitionMoiety {
 
     /// [molecularFormulaElement] ("_molecularFormula") Extensions for
     ///  molecularFormula
-    @JsonKey(name: '_molecularFormula') Element? molecularFormulaElement,
+    @JsonKey(name: '_molecularFormula')
+    PrimitiveElement? molecularFormulaElement,
 
     /// [amountQuantity] Quantitative value for this moiety.
     Quantity? amountQuantity,
@@ -6825,7 +6846,7 @@ class SubstanceDefinitionMoiety with BackboneType, _$SubstanceDefinitionMoiety {
     String? amountString,
 
     /// [amountStringElement] ("_amountString") Extensions for amountString
-    @JsonKey(name: '_amountString') Element? amountStringElement,
+    @JsonKey(name: '_amountString') PrimitiveElement? amountStringElement,
 
     /// [measurementType] The measurement type of the quantitative value. In
     ///  capturing the actual relative amounts of substances or molecular fragments
@@ -6955,7 +6976,7 @@ class SubstanceDefinitionCharacterization
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [file] The data produced by the analytical instrument or a pictorial
     ///  representation of that data. Examples: a JCAMP, JDX, or ADX file, or a
@@ -7088,13 +7109,13 @@ class SubstanceDefinitionProperty
     FhirDate? valueDate,
 
     /// [valueDateElement] ("_valueDate") Extensions for valueDate
-    @JsonKey(name: '_valueDate') Element? valueDateElement,
+    @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
 
     /// [valueBoolean] A value for the property.
     FhirBoolean? valueBoolean,
 
     /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
 
     /// [valueAttachment] A value for the property.
     Attachment? valueAttachment,
@@ -7353,7 +7374,8 @@ class SubstanceDefinitionStructure
 
     /// [molecularFormulaElement] ("_molecularFormula") Extensions for
     ///  molecularFormula
-    @JsonKey(name: '_molecularFormula') Element? molecularFormulaElement,
+    @JsonKey(name: '_molecularFormula')
+    PrimitiveElement? molecularFormulaElement,
 
     /// [molecularFormulaByMoiety] Specified per moiety according to the Hill
     ///  system, i.e. first C, then H, then alphabetical, each moiety separated by
@@ -7363,7 +7385,7 @@ class SubstanceDefinitionStructure
     /// [molecularFormulaByMoietyElement] ("_molecularFormulaByMoiety") Extensions
     ///  for molecularFormulaByMoiety
     @JsonKey(name: '_molecularFormulaByMoiety')
-    Element? molecularFormulaByMoietyElement,
+    PrimitiveElement? molecularFormulaByMoietyElement,
 
     /// [molecularWeight] The molecular weight or weight range (for proteins,
     ///  polymers or nucleic acids).
@@ -7496,7 +7518,7 @@ class SubstanceDefinitionRepresentation
     String? representation,
 
     /// [representationElement] ("_representation") Extensions for representation
-    @JsonKey(name: '_representation') Element? representationElement,
+    @JsonKey(name: '_representation') PrimitiveElement? representationElement,
 
     /// [format] The format of the representation e.g. InChI, SMILES, MOLFILE, CDX,
     ///  SDF, PDB, mmCIF. The logical content type rather than the physical file
@@ -7545,7 +7567,9 @@ class SubstanceDefinitionRepresentation
 /// [SubstanceDefinitionCode] The detailed description of a substance,
 ///  typically at a level beyond what is used for prescribing.
 @freezed
-class SubstanceDefinitionCode with BackboneType, _$SubstanceDefinitionCode {
+class SubstanceDefinitionCode
+    with _$SubstanceDefinitionCode
+    implements BackboneType {
   /// [SubstanceDefinitionCode] The detailed description of a substance,
   ///  typically at a level beyond what is used for prescribing.
   const SubstanceDefinitionCode._();
@@ -7629,7 +7653,7 @@ class SubstanceDefinitionCode with BackboneType, _$SubstanceDefinitionCode {
     FhirDateTime? statusDate,
 
     /// [statusDateElement] ("_statusDate") Extensions for statusDate
-    @JsonKey(name: '_statusDate') Element? statusDateElement,
+    @JsonKey(name: '_statusDate') PrimitiveElement? statusDateElement,
 
     /// [note] Any comment can be provided in this field, if necessary.
     List<Annotation>? note,
@@ -7672,7 +7696,9 @@ class SubstanceDefinitionCode with BackboneType, _$SubstanceDefinitionCode {
 /// [SubstanceDefinitionName] The detailed description of a substance,
 ///  typically at a level beyond what is used for prescribing.
 @freezed
-class SubstanceDefinitionName with BackboneType, _$SubstanceDefinitionName {
+class SubstanceDefinitionName
+    with _$SubstanceDefinitionName
+    implements BackboneType {
   /// [SubstanceDefinitionName] The detailed description of a substance,
   ///  typically at a level beyond what is used for prescribing.
   const SubstanceDefinitionName._();
@@ -7762,7 +7788,7 @@ class SubstanceDefinitionName with BackboneType, _$SubstanceDefinitionName {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [type] Name type, for example 'systematic',  'scientific, 'brand'.
     CodeableConcept? type,
@@ -7774,7 +7800,7 @@ class SubstanceDefinitionName with BackboneType, _$SubstanceDefinitionName {
     FhirBoolean? preferred,
 
     /// [preferredElement] ("_preferred") Extensions for preferred
-    @JsonKey(name: '_preferred') Element? preferredElement,
+    @JsonKey(name: '_preferred') PrimitiveElement? preferredElement,
 
     /// [language] Human language that the name is written in.
     List<CodeableConcept>? language,
@@ -7913,7 +7939,7 @@ class SubstanceDefinitionOfficial
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
   }) = _SubstanceDefinitionOfficial;
 
   @override
@@ -8064,7 +8090,7 @@ class SubstanceDefinitionRelationship
     FhirBoolean? isDefining,
 
     /// [isDefiningElement] ("_isDefining") Extensions for isDefining
-    @JsonKey(name: '_isDefining') Element? isDefiningElement,
+    @JsonKey(name: '_isDefining') PrimitiveElement? isDefiningElement,
 
     /// [amountQuantity] A numeric factor for the relationship, for instance to
     ///  express that the salt of a substance has some percentage of the active
@@ -8082,7 +8108,7 @@ class SubstanceDefinitionRelationship
     String? amountString,
 
     /// [amountStringElement] ("_amountString") Extensions for amountString
-    @JsonKey(name: '_amountString') Element? amountStringElement,
+    @JsonKey(name: '_amountString') PrimitiveElement? amountStringElement,
 
     /// [ratioHighLimitAmount] For use when the numeric has an uncertain range.
     Ratio? ratioHighLimitAmount,
@@ -8263,7 +8289,9 @@ class SubstanceDefinitionSourceMaterial
 ///  will be created for each of these elements. The nucleotide sequence will
 ///  be always entered in the 5’-3’ direction.
 @freezed
-class SubstanceNucleicAcid with Resource, _$SubstanceNucleicAcid {
+class SubstanceNucleicAcid
+    with _$SubstanceNucleicAcid
+    implements DomainResource {
   /// [SubstanceNucleicAcid] Nucleic acids are defined by three distinct
   ///  elements: the base, sugar and linkage. Individual substance/moiety IDs
   ///  will be created for each of these elements. The nucleotide sequence will
@@ -8377,13 +8405,13 @@ class SubstanceNucleicAcid with Resource, _$SubstanceNucleicAcid {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -8435,7 +8463,8 @@ class SubstanceNucleicAcid with Resource, _$SubstanceNucleicAcid {
 
     /// [numberOfSubunitsElement] ("_numberOfSubunits") Extensions for
     ///  numberOfSubunits
-    @JsonKey(name: '_numberOfSubunits') Element? numberOfSubunitsElement,
+    @JsonKey(name: '_numberOfSubunits')
+    PrimitiveElement? numberOfSubunitsElement,
 
     /// [areaOfHybridisation] The area of hybridisation shall be described if
     ///  applicable for double stranded RNA or DNA. The number associated with the
@@ -8446,7 +8475,8 @@ class SubstanceNucleicAcid with Resource, _$SubstanceNucleicAcid {
 
     /// [areaOfHybridisationElement] ("_areaOfHybridisation") Extensions for
     ///  areaOfHybridisation
-    @JsonKey(name: '_areaOfHybridisation') Element? areaOfHybridisationElement,
+    @JsonKey(name: '_areaOfHybridisation')
+    PrimitiveElement? areaOfHybridisationElement,
 
     /// [oligoNucleotideType] (TBC).
     CodeableConcept? oligoNucleotideType,
@@ -8605,7 +8635,7 @@ class SubstanceNucleicAcidSubunit
     FhirInteger? subunit,
 
     /// [subunitElement] ("_subunit") Extensions for subunit
-    @JsonKey(name: '_subunit') Element? subunitElement,
+    @JsonKey(name: '_subunit') PrimitiveElement? subunitElement,
 
     /// [sequence] Actual nucleotide sequence notation from 5' to 3' end using
     ///  standard single letter codes. In addition to the base sequence, sugar and
@@ -8613,13 +8643,13 @@ class SubstanceNucleicAcidSubunit
     String? sequence,
 
     /// [sequenceElement] ("_sequence") Extensions for sequence
-    @JsonKey(name: '_sequence') Element? sequenceElement,
+    @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
 
     /// [length] The length of the sequence shall be captured.
     FhirInteger? length,
 
     /// [lengthElement] ("_length") Extensions for length
-    @JsonKey(name: '_length') Element? lengthElement,
+    @JsonKey(name: '_length') PrimitiveElement? lengthElement,
 
     /// [sequenceAttachment] (TBC).
     Attachment? sequenceAttachment,
@@ -8772,7 +8802,7 @@ class SubstanceNucleicAcidLinkage
     String? connectivity,
 
     /// [connectivityElement] ("_connectivity") Extensions for connectivity
-    @JsonKey(name: '_connectivity') Element? connectivityElement,
+    @JsonKey(name: '_connectivity') PrimitiveElement? connectivityElement,
 
     /// [identifier] Each linkage will be registered as a fragment and have an ID.
     Identifier? identifier,
@@ -8782,13 +8812,13 @@ class SubstanceNucleicAcidLinkage
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [residueSite] Residues shall be captured as described in 5.3.6.8.3.
     String? residueSite,
 
     /// [residueSiteElement] ("_residueSite") Extensions for residueSite
-    @JsonKey(name: '_residueSite') Element? residueSiteElement,
+    @JsonKey(name: '_residueSite') PrimitiveElement? residueSiteElement,
   }) = _SubstanceNucleicAcidLinkage;
 
   @override
@@ -8828,7 +8858,9 @@ class SubstanceNucleicAcidLinkage
 ///  will be created for each of these elements. The nucleotide sequence will
 ///  be always entered in the 5’-3’ direction.
 @freezed
-class SubstanceNucleicAcidSugar with BackboneType, _$SubstanceNucleicAcidSugar {
+class SubstanceNucleicAcidSugar
+    with _$SubstanceNucleicAcidSugar
+    implements BackboneType {
   /// [SubstanceNucleicAcidSugar] Nucleic acids are defined by three distinct
   ///  elements: the base, sugar and linkage. Individual substance/moiety IDs
   ///  will be created for each of these elements. The nucleotide sequence will
@@ -8913,7 +8945,7 @@ class SubstanceNucleicAcidSugar with BackboneType, _$SubstanceNucleicAcidSugar {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [residueSite] The residues that contain a given sugar will be captured. The
     ///  order of given residues will be captured in the 5‘-3‘direction consistent
@@ -8921,7 +8953,7 @@ class SubstanceNucleicAcidSugar with BackboneType, _$SubstanceNucleicAcidSugar {
     String? residueSite,
 
     /// [residueSiteElement] ("_residueSite") Extensions for residueSite
-    @JsonKey(name: '_residueSite') Element? residueSiteElement,
+    @JsonKey(name: '_residueSite') PrimitiveElement? residueSiteElement,
   }) = _SubstanceNucleicAcidSugar;
 
   @override
@@ -8957,7 +8989,7 @@ class SubstanceNucleicAcidSugar with BackboneType, _$SubstanceNucleicAcidSugar {
 
 /// [SubstancePolymer] Properties of a substance specific to it being a polymer.
 @freezed
-class SubstancePolymer with Resource, _$SubstancePolymer {
+class SubstancePolymer with _$SubstancePolymer implements DomainResource {
   /// [SubstancePolymer] Properties of a substance specific to it being a polymer.
   const SubstancePolymer._();
 
@@ -9060,13 +9092,13 @@ class SubstancePolymer with Resource, _$SubstancePolymer {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -9126,7 +9158,7 @@ class SubstancePolymer with Resource, _$SubstancePolymer {
     String? modification,
 
     /// [modificationElement] ("_modification") Extensions for modification
-    @JsonKey(name: '_modification') Element? modificationElement,
+    @JsonKey(name: '_modification') PrimitiveElement? modificationElement,
 
     /// [monomerSet] FhirTodo.
     List<SubstancePolymerMonomerSet>? monomerSet,
@@ -9368,7 +9400,7 @@ class SubstancePolymerStartingMaterial
     FhirBoolean? isDefining,
 
     /// [isDefiningElement] ("_isDefining") Extensions for isDefining
-    @JsonKey(name: '_isDefining') Element? isDefiningElement,
+    @JsonKey(name: '_isDefining') PrimitiveElement? isDefiningElement,
 
     /// [amount] A percentage.
     Quantity? amount,
@@ -9411,7 +9443,9 @@ class SubstancePolymerStartingMaterial
 /// [SubstancePolymerRepeat] Properties of a substance specific to it being a
 ///  polymer.
 @freezed
-class SubstancePolymerRepeat with BackboneType, _$SubstancePolymerRepeat {
+class SubstancePolymerRepeat
+    with _$SubstancePolymerRepeat
+    implements BackboneType {
   /// [SubstancePolymerRepeat] Properties of a substance specific to it being a
   ///  polymer.
   const SubstancePolymerRepeat._();
@@ -9487,7 +9521,7 @@ class SubstancePolymerRepeat with BackboneType, _$SubstancePolymerRepeat {
     /// [averageMolecularFormulaElement] ("_averageMolecularFormula") Extensions
     ///  for averageMolecularFormula
     @JsonKey(name: '_averageMolecularFormula')
-    Element? averageMolecularFormulaElement,
+    PrimitiveElement? averageMolecularFormulaElement,
 
     /// [repeatUnitAmountType] How the quantitative amount of Structural Repeat
     ///  Units is captured (e.g. Exact, Numeric, Average).
@@ -9610,7 +9644,7 @@ class SubstancePolymerRepeatUnit
     String? unit,
 
     /// [unitElement] ("_unit") Extensions for unit
-    @JsonKey(name: '_unit') Element? unitElement,
+    @JsonKey(name: '_unit') PrimitiveElement? unitElement,
 
     /// [orientation] The orientation of the polymerisation, e.g. head-tail,
     ///  head-head, random.
@@ -9620,7 +9654,7 @@ class SubstancePolymerRepeatUnit
     FhirInteger? amount,
 
     /// [amountElement] ("_amount") Extensions for amount
-    @JsonKey(name: '_amount') Element? amountElement,
+    @JsonKey(name: '_amount') PrimitiveElement? amountElement,
 
     /// [degreeOfPolymerisation] Applies to homopolymer and block co-polymers where
     ///  the degree of polymerisation within a block can be described.
@@ -9746,19 +9780,19 @@ class SubstancePolymerDegreeOfPolymerisation
     FhirInteger? average,
 
     /// [averageElement] ("_average") Extensions for average
-    @JsonKey(name: '_average') Element? averageElement,
+    @JsonKey(name: '_average') PrimitiveElement? averageElement,
 
     /// [low] A low expected limit of the amount.
     FhirInteger? low,
 
     /// [lowElement] ("_low") Extensions for low
-    @JsonKey(name: '_low') Element? lowElement,
+    @JsonKey(name: '_low') PrimitiveElement? lowElement,
 
     /// [high] A high expected limit of the amount.
     FhirInteger? high,
 
     /// [highElement] ("_high") Extensions for high
-    @JsonKey(name: '_high') Element? highElement,
+    @JsonKey(name: '_high') PrimitiveElement? highElement,
   }) = _SubstancePolymerDegreeOfPolymerisation;
 
   @override
@@ -9877,7 +9911,7 @@ class SubstancePolymerStructuralRepresentation
     String? representation,
 
     /// [representationElement] ("_representation") Extensions for representation
-    @JsonKey(name: '_representation') Element? representationElement,
+    @JsonKey(name: '_representation') PrimitiveElement? representationElement,
 
     /// [format] The format of the representation e.g. InChI, SMILES, MOLFILE, CDX,
     ///  SDF, PDB, mmCIF.
@@ -9931,7 +9965,7 @@ class SubstancePolymerStructuralRepresentation
 ///  cytokines, growth factors, peptide/SubstanceProtein hormones, enzymes,
 ///  toxins, toxoids, recombinant vaccines, and immunomodulators.
 @freezed
-class SubstanceProtein with Resource, _$SubstanceProtein {
+class SubstanceProtein with _$SubstanceProtein implements DomainResource {
   /// [SubstanceProtein] A SubstanceProtein is defined as a single unit of a
   ///  linear amino acid sequence, or a combination of subunits that are either
   ///  covalently linked or have a defined invariant stoichiometric relationship.
@@ -10058,13 +10092,13 @@ class SubstanceProtein with Resource, _$SubstanceProtein {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -10116,7 +10150,8 @@ class SubstanceProtein with Resource, _$SubstanceProtein {
 
     /// [numberOfSubunitsElement] ("_numberOfSubunits") Extensions for
     ///  numberOfSubunits
-    @JsonKey(name: '_numberOfSubunits') Element? numberOfSubunitsElement,
+    @JsonKey(name: '_numberOfSubunits')
+    PrimitiveElement? numberOfSubunitsElement,
 
     /// [disulfideLinkage] The disulphide bond between two cysteine residues either
     ///  on the same subunit or on two different subunits shall be described. The
@@ -10191,7 +10226,9 @@ class SubstanceProtein with Resource, _$SubstanceProtein {
 ///  cytokines, growth factors, peptide/SubstanceProtein hormones, enzymes,
 ///  toxins, toxoids, recombinant vaccines, and immunomodulators.
 @freezed
-class SubstanceProteinSubunit with BackboneType, _$SubstanceProteinSubunit {
+class SubstanceProteinSubunit
+    with _$SubstanceProteinSubunit
+    implements BackboneType {
   /// [SubstanceProteinSubunit] A SubstanceProtein is defined as a single unit of
   ///  a linear amino acid sequence, or a combination of subunits that are either
   ///  covalently linked or have a defined invariant stoichiometric relationship.
@@ -10317,7 +10354,7 @@ class SubstanceProteinSubunit with BackboneType, _$SubstanceProteinSubunit {
     FhirInteger? subunit,
 
     /// [subunitElement] ("_subunit") Extensions for subunit
-    @JsonKey(name: '_subunit') Element? subunitElement,
+    @JsonKey(name: '_subunit') PrimitiveElement? subunitElement,
 
     /// [sequence] The sequence information shall be provided enumerating the amino
     ///  acids from N- to C-terminal end using standard single-letter amino acid
@@ -10330,13 +10367,13 @@ class SubstanceProteinSubunit with BackboneType, _$SubstanceProteinSubunit {
     String? sequence,
 
     /// [sequenceElement] ("_sequence") Extensions for sequence
-    @JsonKey(name: '_sequence') Element? sequenceElement,
+    @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
 
     /// [length] Length of linear sequences of amino acids contained in the subunit.
     FhirInteger? length,
 
     /// [lengthElement] ("_length") Extensions for length
-    @JsonKey(name: '_length') Element? lengthElement,
+    @JsonKey(name: '_length') PrimitiveElement? lengthElement,
 
     /// [sequenceAttachment] The sequence information shall be provided enumerating
     ///  the amino acids from N- to C-terminal end using standard single-letter
@@ -10359,7 +10396,7 @@ class SubstanceProteinSubunit with BackboneType, _$SubstanceProteinSubunit {
     /// [nTerminalModificationElement] ("_nTerminalModification") Extensions for
     ///  nTerminalModification
     @JsonKey(name: '_nTerminalModification')
-    Element? nTerminalModificationElement,
+    PrimitiveElement? nTerminalModificationElement,
 
     /// [cTerminalModificationId] Unique identifier for molecular fragment
     ///  modification based on the ISO 11238 Substance ID.
@@ -10372,7 +10409,7 @@ class SubstanceProteinSubunit with BackboneType, _$SubstanceProteinSubunit {
     /// [cTerminalModificationElement] ("_cTerminalModification") Extensions for
     ///  cTerminalModification
     @JsonKey(name: '_cTerminalModification')
-    Element? cTerminalModificationElement,
+    PrimitiveElement? cTerminalModificationElement,
   }) = _SubstanceProteinSubunit;
 
   @override
@@ -10500,13 +10537,13 @@ class SubstanceReferenceInformation
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -10549,7 +10586,7 @@ class SubstanceReferenceInformation
     String? comment,
 
     /// [commentElement] ("_comment") Extensions for comment
-    @JsonKey(name: '_comment') Element? commentElement,
+    @JsonKey(name: '_comment') PrimitiveElement? commentElement,
 
     /// [gene] FhirTodo.
     List<SubstanceReferenceInformationGene>? gene,
@@ -10927,7 +10964,7 @@ class SubstanceReferenceInformationTarget
     String? amountString,
 
     /// [amountStringElement] ("_amountString") Extensions for amountString
-    @JsonKey(name: '_amountString') Element? amountStringElement,
+    @JsonKey(name: '_amountString') PrimitiveElement? amountStringElement,
 
     /// [amountType] FhirTodo.
     CodeableConcept? amountType,
@@ -10985,7 +11022,9 @@ class SubstanceReferenceInformationTarget
 ///  Specified Substance Group 1 information level. See for further explanation
 ///  the Substance Class: Structurally Diverse and the herbal annex.
 @freezed
-class SubstanceSourceMaterial with Resource, _$SubstanceSourceMaterial {
+class SubstanceSourceMaterial
+    with _$SubstanceSourceMaterial
+    implements DomainResource {
   /// [SubstanceSourceMaterial] Source material shall capture information on the
   ///  taxonomic and anatomical origins as well as the fraction of a material
   ///  that can result in or can be modified to form a substance. This set of
@@ -11152,13 +11191,13 @@ class SubstanceSourceMaterial with Resource, _$SubstanceSourceMaterial {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -11218,7 +11257,7 @@ class SubstanceSourceMaterial with Resource, _$SubstanceSourceMaterial {
     String? organismName,
 
     /// [organismNameElement] ("_organismName") Extensions for organismName
-    @JsonKey(name: '_organismName') Element? organismNameElement,
+    @JsonKey(name: '_organismName') PrimitiveElement? organismNameElement,
 
     /// [parentSubstanceId] The parent of the herbal drug Ginkgo biloba, Leaf is
     ///  the substance ID of the substance (fresh) of Ginkgo biloba L. or Ginkgo
@@ -11431,7 +11470,7 @@ class SubstanceSourceMaterialFractionDescription
     String? fraction,
 
     /// [fractionElement] ("_fraction") Extensions for fraction
-    @JsonKey(name: '_fraction') Element? fractionElement,
+    @JsonKey(name: '_fraction') PrimitiveElement? fractionElement,
 
     /// [materialType] The specific type of the material constituting the
     ///  component. For Herbal preparations the particulars of the extracts
@@ -11628,7 +11667,7 @@ class SubstanceSourceMaterialOrganism
     /// [intraspecificDescriptionElement] ("_intraspecificDescription") Extensions
     ///  for intraspecificDescription
     @JsonKey(name: '_intraspecificDescription')
-    Element? intraspecificDescriptionElement,
+    PrimitiveElement? intraspecificDescriptionElement,
 
     /// [author] 4.9.13.6.1 Author type (Conditional).
     List<SubstanceSourceMaterialAuthor>? author,
@@ -11803,7 +11842,8 @@ class SubstanceSourceMaterialAuthor
 
     /// [authorDescriptionElement] ("_authorDescription") Extensions for
     ///  authorDescription
-    @JsonKey(name: '_authorDescription') Element? authorDescriptionElement,
+    @JsonKey(name: '_authorDescription')
+    PrimitiveElement? authorDescriptionElement,
   }) = _SubstanceSourceMaterialAuthor;
 
   @override
@@ -11977,7 +12017,8 @@ class SubstanceSourceMaterialHybrid
 
     /// [maternalOrganismIdElement] ("_maternalOrganismId") Extensions for
     ///  maternalOrganismId
-    @JsonKey(name: '_maternalOrganismId') Element? maternalOrganismIdElement,
+    @JsonKey(name: '_maternalOrganismId')
+    PrimitiveElement? maternalOrganismIdElement,
 
     /// [maternalOrganismName] The name of the maternal species constituting the
     ///  hybrid organism shall be specified. For plants, the parents aren’t always
@@ -11988,7 +12029,7 @@ class SubstanceSourceMaterialHybrid
     /// [maternalOrganismNameElement] ("_maternalOrganismName") Extensions for
     ///  maternalOrganismName
     @JsonKey(name: '_maternalOrganismName')
-    Element? maternalOrganismNameElement,
+    PrimitiveElement? maternalOrganismNameElement,
 
     /// [paternalOrganismId] The identifier of the paternal species constituting
     ///  the hybrid organism shall be specified based on a controlled vocabulary.
@@ -11996,7 +12037,8 @@ class SubstanceSourceMaterialHybrid
 
     /// [paternalOrganismIdElement] ("_paternalOrganismId") Extensions for
     ///  paternalOrganismId
-    @JsonKey(name: '_paternalOrganismId') Element? paternalOrganismIdElement,
+    @JsonKey(name: '_paternalOrganismId')
+    PrimitiveElement? paternalOrganismIdElement,
 
     /// [paternalOrganismName] The name of the paternal species constituting the
     ///  hybrid organism shall be specified.
@@ -12005,7 +12047,7 @@ class SubstanceSourceMaterialHybrid
     /// [paternalOrganismNameElement] ("_paternalOrganismName") Extensions for
     ///  paternalOrganismName
     @JsonKey(name: '_paternalOrganismName')
-    Element? paternalOrganismNameElement,
+    PrimitiveElement? paternalOrganismNameElement,
 
     /// [hybridType] The hybrid type of an organism shall be specified.
     CodeableConcept? hybridType,

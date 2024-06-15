@@ -29,7 +29,7 @@ part 'summary.enums.dart';
 ///  implementation guides include specific extensions, value sets and
 ///  constraints.
 @freezed
-class AdverseEvent with Resource, _$AdverseEvent {
+class AdverseEvent with _$AdverseEvent implements DomainResource {
   /// [AdverseEvent] An event (i.e. any change to current patient status) that
   ///  may be related to unintended effects on a patient or research participant.
   ///  The unintended effects may require additional monitoring, treatment,
@@ -228,13 +228,13 @@ class AdverseEvent with Resource, _$AdverseEvent {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -282,7 +282,7 @@ class AdverseEvent with Resource, _$AdverseEvent {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [actuality] Whether the event actually happened or was a near miss. Note
     ///  that this is independent of whether anyone was affected or harmed or how
@@ -290,7 +290,7 @@ class AdverseEvent with Resource, _$AdverseEvent {
     FhirCode? actuality,
 
     /// [actualityElement] ("_actuality") Extensions for actuality
-    @JsonKey(name: '_actuality') Element? actualityElement,
+    @JsonKey(name: '_actuality') PrimitiveElement? actualityElement,
 
     /// [category] The overall type of event, intended for search and filtering
     ///  purposes.
@@ -312,7 +312,8 @@ class AdverseEvent with Resource, _$AdverseEvent {
 
     /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
     ///  occurrenceDateTime
-    @JsonKey(name: '_occurrenceDateTime') Element? occurrenceDateTimeElement,
+    @JsonKey(name: '_occurrenceDateTime')
+    PrimitiveElement? occurrenceDateTimeElement,
 
     /// [occurrencePeriod] The date (and perhaps time) when the adverse event
     ///  occurred.
@@ -327,14 +328,14 @@ class AdverseEvent with Resource, _$AdverseEvent {
     FhirDateTime? detected,
 
     /// [detectedElement] ("_detected") Extensions for detected
-    @JsonKey(name: '_detected') Element? detectedElement,
+    @JsonKey(name: '_detected') PrimitiveElement? detectedElement,
 
     /// [recordedDate] The date on which the existence of the AdverseEvent was
     ///  first recorded.
     FhirDateTime? recordedDate,
 
     /// [recordedDateElement] ("_recordedDate") Extensions for recordedDate
-    @JsonKey(name: '_recordedDate') Element? recordedDateElement,
+    @JsonKey(name: '_recordedDate') PrimitiveElement? recordedDateElement,
 
     /// [resultingEffect] Information about the condition that occurred as a result
     ///  of the adverse event, such as hives due to the exposure to a substance
@@ -373,7 +374,7 @@ class AdverseEvent with Resource, _$AdverseEvent {
     /// [expectedInResearchStudyElement] ("_expectedInResearchStudy") Extensions
     ///  for expectedInResearchStudy
     @JsonKey(name: '_expectedInResearchStudy')
-    Element? expectedInResearchStudyElement,
+    PrimitiveElement? expectedInResearchStudyElement,
 
     /// [suspectEntity] Describes the entity that is suspected to have caused the
     ///  adverse event.
@@ -454,7 +455,9 @@ class AdverseEvent with Resource, _$AdverseEvent {
 ///  Resource. The implementation guides include specific extensions, value
 ///  sets and constraints.
 @freezed
-class AdverseEventParticipant with BackboneType, _$AdverseEventParticipant {
+class AdverseEventParticipant
+    with _$AdverseEventParticipant
+    implements BackboneType {
   /// [AdverseEventParticipant] An event (i.e. any change to current patient
   ///  status) that may be related to unintended effects on a patient or research
   ///  participant. The unintended effects may require additional monitoring,
@@ -595,7 +598,9 @@ class AdverseEventParticipant with BackboneType, _$AdverseEventParticipant {
 ///  Resource. The implementation guides include specific extensions, value
 ///  sets and constraints.
 @freezed
-class AdverseEventSuspectEntity with BackboneType, _$AdverseEventSuspectEntity {
+class AdverseEventSuspectEntity
+    with _$AdverseEventSuspectEntity
+    implements BackboneType {
   /// [AdverseEventSuspectEntity] An event (i.e. any change to current patient
   ///  status) that may be related to unintended effects on a patient or research
   ///  participant. The unintended effects may require additional monitoring,
@@ -747,7 +752,9 @@ class AdverseEventSuspectEntity with BackboneType, _$AdverseEventSuspectEntity {
 ///  Resource. The implementation guides include specific extensions, value
 ///  sets and constraints.
 @freezed
-class AdverseEventCausality with BackboneType, _$AdverseEventCausality {
+class AdverseEventCausality
+    with _$AdverseEventCausality
+    implements BackboneType {
   /// [AdverseEventCausality] An event (i.e. any change to current patient
   ///  status) that may be related to unintended effects on a patient or research
   ///  participant. The unintended effects may require additional monitoring,
@@ -1494,7 +1501,7 @@ class AdverseEventSupportingInfo
 ///  which is specific to an individual and associated with exposure to a
 ///  substance.
 @freezed
-class AllergyIntolerance with Resource, _$AllergyIntolerance {
+class AllergyIntolerance with _$AllergyIntolerance implements DomainResource {
   /// [AllergyIntolerance] Risk of harmful or undesirable physiological response
   ///  which is specific to an individual and associated with exposure to a
   ///  substance.
@@ -1663,13 +1670,13 @@ class AllergyIntolerance with Resource, _$AllergyIntolerance {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1738,7 +1745,7 @@ class AllergyIntolerance with Resource, _$AllergyIntolerance {
     FhirCode? criticality,
 
     /// [criticalityElement] ("_criticality") Extensions for criticality
-    @JsonKey(name: '_criticality') Element? criticalityElement,
+    @JsonKey(name: '_criticality') PrimitiveElement? criticalityElement,
 
     /// [code] Code for an allergy or intolerance statement (either a positive or a
     ///  negated/excluded statement).  This may be a code for a substance or
@@ -1769,7 +1776,7 @@ class AllergyIntolerance with Resource, _$AllergyIntolerance {
     FhirDateTime? onsetDateTime,
 
     /// [onsetDateTimeElement] ("_onsetDateTime") Extensions for onsetDateTime
-    @JsonKey(name: '_onsetDateTime') Element? onsetDateTimeElement,
+    @JsonKey(name: '_onsetDateTime') PrimitiveElement? onsetDateTimeElement,
 
     /// [onsetAge] Estimated or actual date,  date-time, or age when allergy or
     ///  intolerance was identified.
@@ -1788,7 +1795,7 @@ class AllergyIntolerance with Resource, _$AllergyIntolerance {
     String? onsetString,
 
     /// [onsetStringElement] ("_onsetString") Extensions for onsetString
-    @JsonKey(name: '_onsetString') Element? onsetStringElement,
+    @JsonKey(name: '_onsetString') PrimitiveElement? onsetStringElement,
 
     /// [recordedDate] The recordedDate represents when this particular
     ///  AllergyIntolerance record was created in the system, which is often a
@@ -1796,7 +1803,7 @@ class AllergyIntolerance with Resource, _$AllergyIntolerance {
     FhirDateTime? recordedDate,
 
     /// [recordedDateElement] ("_recordedDate") Extensions for recordedDate
-    @JsonKey(name: '_recordedDate') Element? recordedDateElement,
+    @JsonKey(name: '_recordedDate') PrimitiveElement? recordedDateElement,
 
     /// [participant] Indicates who or what participated in the activities related
     ///  to the allergy or intolerance and how they were involved.
@@ -1807,7 +1814,7 @@ class AllergyIntolerance with Resource, _$AllergyIntolerance {
     FhirDateTime? lastOccurrence,
 
     /// [lastOccurrenceElement] ("_lastOccurrence") Extensions for lastOccurrence
-    @JsonKey(name: '_lastOccurrence') Element? lastOccurrenceElement,
+    @JsonKey(name: '_lastOccurrence') PrimitiveElement? lastOccurrenceElement,
 
     /// [note] Additional narrative about the propensity for the Adverse Reaction,
     ///  not captured in other fields.
@@ -2092,20 +2099,20 @@ class AllergyIntoleranceReaction
     String? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [onset] Record of the date and/or time of the onset of the Reaction.
     FhirDateTime? onset,
 
     /// [onsetElement] ("_onset") Extensions for onset
-    @JsonKey(name: '_onset') Element? onsetElement,
+    @JsonKey(name: '_onset') PrimitiveElement? onsetElement,
 
     /// [severity] Clinical assessment of the severity of the reaction event as a
     ///  whole, potentially considering multiple different manifestations.
     FhirCode? severity,
 
     /// [severityElement] ("_severity") Extensions for severity
-    @JsonKey(name: '_severity') Element? severityElement,
+    @JsonKey(name: '_severity') PrimitiveElement? severityElement,
 
     /// [exposureRoute] Identification of the route by which the subject was
     ///  exposed to the substance.
@@ -2156,7 +2163,7 @@ class AllergyIntoleranceReaction
 ///  "ClinicalAssessment" to avoid confusion with the recording of assessment
 ///  tools such as Apgar score.
 @freezed
-class ClinicalImpression with Resource, _$ClinicalImpression {
+class ClinicalImpression with _$ClinicalImpression implements DomainResource {
   /// [ClinicalImpression] A record of a clinical assessment performed to
   ///  determine what problem(s) may affect the patient and before planning the
   ///  treatments or management strategies that are best to manage a patient's
@@ -2323,13 +2330,13 @@ class ClinicalImpression with Resource, _$ClinicalImpression {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -2377,7 +2384,7 @@ class ClinicalImpression with Resource, _$ClinicalImpression {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [statusReason] Captures the reason for the current state of the
     ///  ClinicalImpression.
@@ -2388,7 +2395,7 @@ class ClinicalImpression with Resource, _$ClinicalImpression {
     String? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [subject] The patient or group of individuals assessed as part of this
     ///  record.
@@ -2404,7 +2411,8 @@ class ClinicalImpression with Resource, _$ClinicalImpression {
 
     /// [effectiveDateTimeElement] ("_effectiveDateTime") Extensions for
     ///  effectiveDateTime
-    @JsonKey(name: '_effectiveDateTime') Element? effectiveDateTimeElement,
+    @JsonKey(name: '_effectiveDateTime')
+    PrimitiveElement? effectiveDateTimeElement,
 
     /// [effectivePeriod] The point in time or period over which the subject was
     ///  assessed.
@@ -2414,7 +2422,7 @@ class ClinicalImpression with Resource, _$ClinicalImpression {
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [performer] The clinician performing the assessment.
     Reference? performer,
@@ -2445,7 +2453,7 @@ class ClinicalImpression with Resource, _$ClinicalImpression {
     String? summary,
 
     /// [summaryElement] ("_summary") Extensions for summary
-    @JsonKey(name: '_summary') Element? summaryElement,
+    @JsonKey(name: '_summary') PrimitiveElement? summaryElement,
 
     /// [finding] Specific findings or diagnoses that were considered likely or
     ///  relevant to ongoing treatment.
@@ -2516,7 +2524,9 @@ class ClinicalImpression with Resource, _$ClinicalImpression {
 ///  "ClinicalAssessment" to avoid confusion with the recording of assessment
 ///  tools such as Apgar score.
 @freezed
-class ClinicalImpressionFinding with BackboneType, _$ClinicalImpressionFinding {
+class ClinicalImpressionFinding
+    with _$ClinicalImpressionFinding
+    implements BackboneType {
   /// [ClinicalImpressionFinding] A record of a clinical assessment performed to
   ///  determine what problem(s) may affect the patient and before planning the
   ///  treatments or management strategies that are best to manage a patient's
@@ -2601,7 +2611,7 @@ class ClinicalImpressionFinding with BackboneType, _$ClinicalImpressionFinding {
     String? basis,
 
     /// [basisElement] ("_basis") Extensions for basis
-    @JsonKey(name: '_basis') Element? basisElement,
+    @JsonKey(name: '_basis') PrimitiveElement? basisElement,
   }) = _ClinicalImpressionFinding;
 
   @override
@@ -2638,7 +2648,7 @@ class ClinicalImpressionFinding with BackboneType, _$ClinicalImpressionFinding {
 /// [Condition] A clinical condition, problem, diagnosis, or other event,
 ///  situation, issue, or clinical concept that has risen to a level of concern.
 @freezed
-class Condition with Resource, _$Condition {
+class Condition with _$Condition implements DomainResource {
   /// [Condition] A clinical condition, problem, diagnosis, or other event,
   ///  situation, issue, or clinical concept that has risen to a level of concern.
   const Condition._();
@@ -2821,13 +2831,13 @@ class Condition with Resource, _$Condition {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -2905,7 +2915,7 @@ class Condition with Resource, _$Condition {
     FhirDateTime? onsetDateTime,
 
     /// [onsetDateTimeElement] ("_onsetDateTime") Extensions for onsetDateTime
-    @JsonKey(name: '_onsetDateTime') Element? onsetDateTimeElement,
+    @JsonKey(name: '_onsetDateTime') PrimitiveElement? onsetDateTimeElement,
 
     /// [onsetAge] Estimated or actual date or date-time  the condition began, in
     ///  the opinion of the clinician.
@@ -2924,7 +2934,7 @@ class Condition with Resource, _$Condition {
     String? onsetString,
 
     /// [onsetStringElement] ("_onsetString") Extensions for onsetString
-    @JsonKey(name: '_onsetString') Element? onsetStringElement,
+    @JsonKey(name: '_onsetString') PrimitiveElement? onsetStringElement,
 
     /// [abatementDateTime] The date or estimated date that the condition resolved
     ///  or went into remission. This is called "abatement" because of the many
@@ -2935,7 +2945,8 @@ class Condition with Resource, _$Condition {
 
     /// [abatementDateTimeElement] ("_abatementDateTime") Extensions for
     ///  abatementDateTime
-    @JsonKey(name: '_abatementDateTime') Element? abatementDateTimeElement,
+    @JsonKey(name: '_abatementDateTime')
+    PrimitiveElement? abatementDateTimeElement,
 
     /// [abatementAge] The date or estimated date that the condition resolved or
     ///  went into remission. This is called "abatement" because of the many
@@ -2966,14 +2977,14 @@ class Condition with Resource, _$Condition {
     String? abatementString,
 
     /// [abatementStringElement] ("_abatementString") Extensions for abatementString
-    @JsonKey(name: '_abatementString') Element? abatementStringElement,
+    @JsonKey(name: '_abatementString') PrimitiveElement? abatementStringElement,
 
     /// [recordedDate] The recordedDate represents when this particular Condition
     ///  record was created in the system, which is often a system-generated date.
     FhirDateTime? recordedDate,
 
     /// [recordedDateElement] ("_recordedDate") Extensions for recordedDate
-    @JsonKey(name: '_recordedDate') Element? recordedDateElement,
+    @JsonKey(name: '_recordedDate') PrimitiveElement? recordedDateElement,
 
     /// [participant] Indicates who or what participated in the activities related
     ///  to the condition and how they were involved.
@@ -3040,7 +3051,7 @@ class Condition with Resource, _$Condition {
 ///  event, situation, issue, or clinical concept that has risen to a level of
 ///  concern.
 @freezed
-class ConditionParticipant with BackboneType, _$ConditionParticipant {
+class ConditionParticipant with _$ConditionParticipant implements BackboneType {
   /// [ConditionParticipant] A clinical condition, problem, diagnosis, or other
   ///  event, situation, issue, or clinical concept that has risen to a level of
   ///  concern.
@@ -3149,7 +3160,7 @@ class ConditionParticipant with BackboneType, _$ConditionParticipant {
 /// [ConditionStage] A clinical condition, problem, diagnosis, or other event,
 ///  situation, issue, or clinical concept that has risen to a level of concern.
 @freezed
-class ConditionStage with BackboneType, _$ConditionStage {
+class ConditionStage with _$ConditionStage implements BackboneType {
   /// [ConditionStage] A clinical condition, problem, diagnosis, or other event,
   ///  situation, issue, or clinical concept that has risen to a level of concern.
   const ConditionStage._();
@@ -3267,7 +3278,7 @@ class ConditionStage with BackboneType, _$ConditionStage {
 ///  e.g. Drug-drug interaction, Ineffective treatment frequency,
 ///  Procedure-condition conflict, gaps in care, etc.
 @freezed
-class DetectedIssue with Resource, _$DetectedIssue {
+class DetectedIssue with _$DetectedIssue implements DomainResource {
   /// [DetectedIssue] Indicates an actual or potential clinical issue with or
   ///  between one or more active or proposed clinical actions for a patient;
   ///  e.g. Drug-drug interaction, Ineffective treatment frequency,
@@ -3407,13 +3418,13 @@ class DetectedIssue with Resource, _$DetectedIssue {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -3459,7 +3470,7 @@ class DetectedIssue with Resource, _$DetectedIssue {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [category] A code that classifies the general type of detected issue.
     List<CodeableConcept>? category,
@@ -3472,7 +3483,7 @@ class DetectedIssue with Resource, _$DetectedIssue {
     FhirCode? severity,
 
     /// [severityElement] ("_severity") Extensions for severity
-    @JsonKey(name: '_severity') Element? severityElement,
+    @JsonKey(name: '_severity') PrimitiveElement? severityElement,
 
     /// [subject] Indicates the subject whose record the detected issue is
     ///  associated with.
@@ -3487,7 +3498,8 @@ class DetectedIssue with Resource, _$DetectedIssue {
 
     /// [identifiedDateTimeElement] ("_identifiedDateTime") Extensions for
     ///  identifiedDateTime
-    @JsonKey(name: '_identifiedDateTime') Element? identifiedDateTimeElement,
+    @JsonKey(name: '_identifiedDateTime')
+    PrimitiveElement? identifiedDateTimeElement,
 
     /// [identifiedPeriod] The date or period when the detected issue was initially
     ///  identified.
@@ -3510,14 +3522,14 @@ class DetectedIssue with Resource, _$DetectedIssue {
     FhirMarkdown? detail,
 
     /// [detailElement] ("_detail") Extensions for detail
-    @JsonKey(name: '_detail') Element? detailElement,
+    @JsonKey(name: '_detail') PrimitiveElement? detailElement,
 
     /// [reference] The literature, knowledge-base or similar reference that
     ///  describes the propensity for the detected issue identified.
     FhirUri? reference,
 
     /// [referenceElement] ("_reference") Extensions for reference
-    @JsonKey(name: '_reference') Element? referenceElement,
+    @JsonKey(name: '_reference') PrimitiveElement? referenceElement,
 
     /// [mitigation] Indicates an action that has been taken or is committed to
     ///  reduce or eliminate the likelihood of the risk identified by the detected
@@ -3571,7 +3583,9 @@ class DetectedIssue with Resource, _$DetectedIssue {
 ///  patient; e.g. Drug-drug interaction, Ineffective treatment frequency,
 ///  Procedure-condition conflict, gaps in care, etc.
 @freezed
-class DetectedIssueEvidence with BackboneType, _$DetectedIssueEvidence {
+class DetectedIssueEvidence
+    with _$DetectedIssueEvidence
+    implements BackboneType {
   /// [DetectedIssueEvidence] Indicates an actual or potential clinical issue
   ///  with or between one or more active or proposed clinical actions for a
   ///  patient; e.g. Drug-drug interaction, Ineffective treatment frequency,
@@ -3682,7 +3696,9 @@ class DetectedIssueEvidence with BackboneType, _$DetectedIssueEvidence {
 ///  patient; e.g. Drug-drug interaction, Ineffective treatment frequency,
 ///  Procedure-condition conflict, gaps in care, etc.
 @freezed
-class DetectedIssueMitigation with BackboneType, _$DetectedIssueMitigation {
+class DetectedIssueMitigation
+    with _$DetectedIssueMitigation
+    implements BackboneType {
   /// [DetectedIssueMitigation] Indicates an actual or potential clinical issue
   ///  with or between one or more active or proposed clinical actions for a
   ///  patient; e.g. Drug-drug interaction, Ineffective treatment frequency,
@@ -3767,7 +3783,7 @@ class DetectedIssueMitigation with BackboneType, _$DetectedIssueMitigation {
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [author] Identifies the practitioner who determined the mitigation and
     ///  takes responsibility for the mitigation step occurring.
@@ -3814,7 +3830,7 @@ class DetectedIssueMitigation with BackboneType, _$DetectedIssueMitigation {
 /// [FamilyMemberHistory] Significant health conditions for a person related to
 ///  the patient relevant in the context of care for the patient.
 @freezed
-class FamilyMemberHistory with Resource, _$FamilyMemberHistory {
+class FamilyMemberHistory with _$FamilyMemberHistory implements DomainResource {
   /// [FamilyMemberHistory] Significant health conditions for a person related to
   ///  the patient relevant in the context of care for the patient.
   const FamilyMemberHistory._();
@@ -4004,13 +4020,13 @@ class FamilyMemberHistory with Resource, _$FamilyMemberHistory {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -4072,7 +4088,7 @@ class FamilyMemberHistory with Resource, _$FamilyMemberHistory {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [dataAbsentReason] Describes why the family member's history is not
     ///  available.
@@ -4086,7 +4102,7 @@ class FamilyMemberHistory with Resource, _$FamilyMemberHistory {
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [participant] Indicates who or what participated in the activities related
     ///  to the family member history and how they were involved.
@@ -4097,7 +4113,7 @@ class FamilyMemberHistory with Resource, _$FamilyMemberHistory {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [relationship] The type of relationship this person has to the patient
     ///  (father, mother, brother etc.).
@@ -4113,13 +4129,13 @@ class FamilyMemberHistory with Resource, _$FamilyMemberHistory {
     FhirDate? bornDate,
 
     /// [bornDateElement] ("_bornDate") Extensions for bornDate
-    @JsonKey(name: '_bornDate') Element? bornDateElement,
+    @JsonKey(name: '_bornDate') PrimitiveElement? bornDateElement,
 
     /// [bornString] The actual or approximate date of birth of the relative.
     String? bornString,
 
     /// [bornStringElement] ("_bornString") Extensions for bornString
-    @JsonKey(name: '_bornString') Element? bornStringElement,
+    @JsonKey(name: '_bornString') PrimitiveElement? bornStringElement,
 
     /// [ageAge] The age of the relative at the time the family member history is
     ///  recorded.
@@ -4134,21 +4150,21 @@ class FamilyMemberHistory with Resource, _$FamilyMemberHistory {
     String? ageString,
 
     /// [ageStringElement] ("_ageString") Extensions for ageString
-    @JsonKey(name: '_ageString') Element? ageStringElement,
+    @JsonKey(name: '_ageString') PrimitiveElement? ageStringElement,
 
     /// [estimatedAge] If true, indicates that the age value specified is an
     ///  estimated value.
     FhirBoolean? estimatedAge,
 
     /// [estimatedAgeElement] ("_estimatedAge") Extensions for estimatedAge
-    @JsonKey(name: '_estimatedAge') Element? estimatedAgeElement,
+    @JsonKey(name: '_estimatedAge') PrimitiveElement? estimatedAgeElement,
 
     /// [deceasedBoolean] Deceased flag or the actual or approximate age of the
     ///  relative at the time of death for the family member history record.
     FhirBoolean? deceasedBoolean,
 
     /// [deceasedBooleanElement] ("_deceasedBoolean") Extensions for deceasedBoolean
-    @JsonKey(name: '_deceasedBoolean') Element? deceasedBooleanElement,
+    @JsonKey(name: '_deceasedBoolean') PrimitiveElement? deceasedBooleanElement,
 
     /// [deceasedAge] Deceased flag or the actual or approximate age of the
     ///  relative at the time of death for the family member history record.
@@ -4163,14 +4179,14 @@ class FamilyMemberHistory with Resource, _$FamilyMemberHistory {
     FhirDate? deceasedDate,
 
     /// [deceasedDateElement] ("_deceasedDate") Extensions for deceasedDate
-    @JsonKey(name: '_deceasedDate') Element? deceasedDateElement,
+    @JsonKey(name: '_deceasedDate') PrimitiveElement? deceasedDateElement,
 
     /// [deceasedString] Deceased flag or the actual or approximate age of the
     ///  relative at the time of death for the family member history record.
     String? deceasedString,
 
     /// [deceasedStringElement] ("_deceasedString") Extensions for deceasedString
-    @JsonKey(name: '_deceasedString') Element? deceasedStringElement,
+    @JsonKey(name: '_deceasedString') PrimitiveElement? deceasedStringElement,
 
     /// [reason] Describes why the family member history occurred in coded or
     ///  textual form, or Indicates a Condition, Observation, AllergyIntolerance,
@@ -4458,7 +4474,8 @@ class FamilyMemberHistoryCondition
 
     /// [contributedToDeathElement] ("_contributedToDeath") Extensions for
     ///  contributedToDeath
-    @JsonKey(name: '_contributedToDeath') Element? contributedToDeathElement,
+    @JsonKey(name: '_contributedToDeath')
+    PrimitiveElement? contributedToDeathElement,
 
     /// [onsetAge] Either the age of onset, range of approximate age or descriptive
     ///  string can be recorded.  For conditions with multiple occurrences, this
@@ -4481,7 +4498,7 @@ class FamilyMemberHistoryCondition
     String? onsetString,
 
     /// [onsetStringElement] ("_onsetString") Extensions for onsetString
-    @JsonKey(name: '_onsetString') Element? onsetStringElement,
+    @JsonKey(name: '_onsetString') PrimitiveElement? onsetStringElement,
 
     /// [note] An area where general notes can be placed about this specific
     ///  condition.
@@ -4645,7 +4662,8 @@ class FamilyMemberHistoryProcedure
 
     /// [contributedToDeathElement] ("_contributedToDeath") Extensions for
     ///  contributedToDeath
-    @JsonKey(name: '_contributedToDeath') Element? contributedToDeathElement,
+    @JsonKey(name: '_contributedToDeath')
+    PrimitiveElement? contributedToDeathElement,
 
     /// [performedAge] Estimated or actual date, date-time, period, or age when the
     ///  procedure was performed. Allows a period to support complex procedures
@@ -4672,7 +4690,7 @@ class FamilyMemberHistoryProcedure
     String? performedString,
 
     /// [performedStringElement] ("_performedString") Extensions for performedString
-    @JsonKey(name: '_performedString') Element? performedStringElement,
+    @JsonKey(name: '_performedString') PrimitiveElement? performedStringElement,
 
     /// [performedDateTime] Estimated or actual date, date-time, period, or age
     ///  when the procedure was performed. Allows a period to support complex
@@ -4682,7 +4700,8 @@ class FamilyMemberHistoryProcedure
 
     /// [performedDateTimeElement] ("_performedDateTime") Extensions for
     ///  performedDateTime
-    @JsonKey(name: '_performedDateTime') Element? performedDateTimeElement,
+    @JsonKey(name: '_performedDateTime')
+    PrimitiveElement? performedDateTimeElement,
 
     /// [note] An area where general notes can be placed about this specific
     ///  procedure.
@@ -4728,7 +4747,7 @@ class FamilyMemberHistoryProcedure
 ///  quality or safety inspection for a location, organization, or device.
 ///  This can be an accreditation procedure on a practitioner for licensing.
 @freezed
-class Procedure with Resource, _$Procedure {
+class Procedure with _$Procedure implements DomainResource {
   /// [Procedure] An action that is or was performed on or for a patient,
   ///  practitioner, device, organization, or location. For example, this can be
   ///  a physical intervention on a patient like an operation, or less invasive
@@ -4972,13 +4991,13 @@ class Procedure with Resource, _$Procedure {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -5048,7 +5067,7 @@ class Procedure with Resource, _$Procedure {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [statusReason] Captures the reason for the current state of the procedure.
     CodeableConcept? statusReason,
@@ -5093,7 +5112,8 @@ class Procedure with Resource, _$Procedure {
 
     /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
     ///  occurrenceDateTime
-    @JsonKey(name: '_occurrenceDateTime') Element? occurrenceDateTimeElement,
+    @JsonKey(name: '_occurrenceDateTime')
+    PrimitiveElement? occurrenceDateTimeElement,
 
     /// [occurrencePeriod] Estimated or actual date, date-time, period, or age when
     ///  the procedure did occur or is occurring.  Allows a period to support
@@ -5109,7 +5129,8 @@ class Procedure with Resource, _$Procedure {
 
     /// [occurrenceStringElement] ("_occurrenceString") Extensions for
     ///  occurrenceString
-    @JsonKey(name: '_occurrenceString') Element? occurrenceStringElement,
+    @JsonKey(name: '_occurrenceString')
+    PrimitiveElement? occurrenceStringElement,
 
     /// [occurrenceAge] Estimated or actual date, date-time, period, or age when
     ///  the procedure did occur or is occurring.  Allows a period to support
@@ -5135,7 +5156,7 @@ class Procedure with Resource, _$Procedure {
     FhirDateTime? recorded,
 
     /// [recordedElement] ("_recorded") Extensions for recorded
-    @JsonKey(name: '_recorded') Element? recordedElement,
+    @JsonKey(name: '_recorded') PrimitiveElement? recordedElement,
 
     /// [recorder] Individual who recorded the record and takes responsibility for
     ///  its content.
@@ -5147,7 +5168,7 @@ class Procedure with Resource, _$Procedure {
     FhirBoolean? reportedBoolean,
 
     /// [reportedBooleanElement] ("_reportedBoolean") Extensions for reportedBoolean
-    @JsonKey(name: '_reportedBoolean') Element? reportedBooleanElement,
+    @JsonKey(name: '_reportedBoolean') PrimitiveElement? reportedBooleanElement,
 
     /// [reportedReference] Indicates if this record was captured as a secondary
     ///  'reported' record rather than as an original primary source-of-truth
@@ -5259,7 +5280,7 @@ class Procedure with Resource, _$Procedure {
 ///  device.  This can be an accreditation procedure on a practitioner for
 ///  licensing.
 @freezed
-class ProcedurePerformer with BackboneType, _$ProcedurePerformer {
+class ProcedurePerformer with _$ProcedurePerformer implements BackboneType {
   /// [ProcedurePerformer] An action that is or was performed on or for a
   ///  patient, practitioner, device, organization, or location. For example,
   ///  this can be a physical intervention on a patient like an operation, or
@@ -5393,7 +5414,7 @@ class ProcedurePerformer with BackboneType, _$ProcedurePerformer {
 ///  device.  This can be an accreditation procedure on a practitioner for
 ///  licensing.
 @freezed
-class ProcedureFocalDevice with BackboneType, _$ProcedureFocalDevice {
+class ProcedureFocalDevice with _$ProcedureFocalDevice implements BackboneType {
   /// [ProcedureFocalDevice] An action that is or was performed on or for a
   ///  patient, practitioner, device, organization, or location. For example,
   ///  this can be a physical intervention on a patient like an operation, or

@@ -20,7 +20,7 @@ part 'management.enums.dart';
 ///  about the actual activities that occurred, where Appointment is used to
 ///  record planned activities.
 @freezed
-class Encounter with Resource, _$Encounter {
+class Encounter with _$Encounter implements DomainResource {
   /// [Encounter] An interaction between a patient and healthcare provider(s) for
   ///  the purpose of providing healthcare service(s) or assessing the health
   ///  status of a patient.  Encounter is primarily used to record information
@@ -209,13 +209,13 @@ class Encounter with Resource, _$Encounter {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -262,7 +262,7 @@ class Encounter with Resource, _$Encounter {
     EncounterStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [class_] ("class") Concepts representing classification of patient
     ///  encounter such as ambulatory (outpatient), inpatient, emergency, home
@@ -340,14 +340,15 @@ class Encounter with Resource, _$Encounter {
 
     /// [plannedStartDateElement] ("_plannedStartDate") Extensions for
     ///  plannedStartDate
-    @JsonKey(name: '_plannedStartDate') Element? plannedStartDateElement,
+    @JsonKey(name: '_plannedStartDate')
+    PrimitiveElement? plannedStartDateElement,
 
     /// [plannedEndDate] The planned end date/time (or discharge date) of the
     ///  encounter.
     FhirDateTime? plannedEndDate,
 
     /// [plannedEndDateElement] ("_plannedEndDate") Extensions for plannedEndDate
-    @JsonKey(name: '_plannedEndDate') Element? plannedEndDateElement,
+    @JsonKey(name: '_plannedEndDate') PrimitiveElement? plannedEndDateElement,
 
     /// [length] Actual quantity of time the encounter lasted. This excludes the
     ///  time during leaves of absence. When missing it is the time in between the
@@ -433,7 +434,7 @@ class Encounter with Resource, _$Encounter {
 ///  record information about the actual activities that occurred, where
 ///  Appointment is used to record planned activities.
 @freezed
-class EncounterParticipant with BackboneType, _$EncounterParticipant {
+class EncounterParticipant with _$EncounterParticipant implements BackboneType {
   /// [EncounterParticipant] An interaction between a patient and healthcare
   ///  provider(s) for the purpose of providing healthcare service(s) or
   ///  assessing the health status of a patient.  Encounter is primarily used to
@@ -560,7 +561,7 @@ class EncounterParticipant with BackboneType, _$EncounterParticipant {
 ///  record information about the actual activities that occurred, where
 ///  Appointment is used to record planned activities.
 @freezed
-class EncounterReason with BackboneType, _$EncounterReason {
+class EncounterReason with _$EncounterReason implements BackboneType {
   /// [EncounterReason] An interaction between a patient and healthcare
   ///  provider(s) for the purpose of providing healthcare service(s) or
   ///  assessing the health status of a patient.  Encounter is primarily used to
@@ -678,7 +679,7 @@ class EncounterReason with BackboneType, _$EncounterReason {
 ///  record information about the actual activities that occurred, where
 ///  Appointment is used to record planned activities.
 @freezed
-class EncounterDiagnosis with BackboneType, _$EncounterDiagnosis {
+class EncounterDiagnosis with _$EncounterDiagnosis implements BackboneType {
   /// [EncounterDiagnosis] An interaction between a patient and healthcare
   ///  provider(s) for the purpose of providing healthcare service(s) or
   ///  assessing the health status of a patient.  Encounter is primarily used to
@@ -796,7 +797,7 @@ class EncounterDiagnosis with BackboneType, _$EncounterDiagnosis {
 ///  record information about the actual activities that occurred, where
 ///  Appointment is used to record planned activities.
 @freezed
-class EncounterAdmission with BackboneType, _$EncounterAdmission {
+class EncounterAdmission with _$EncounterAdmission implements BackboneType {
   /// [EncounterAdmission] An interaction between a patient and healthcare
   ///  provider(s) for the purpose of providing healthcare service(s) or
   ///  assessing the health status of a patient.  Encounter is primarily used to
@@ -936,7 +937,7 @@ class EncounterAdmission with BackboneType, _$EncounterAdmission {
 ///  record information about the actual activities that occurred, where
 ///  Appointment is used to record planned activities.
 @freezed
-class EncounterLocation with BackboneType, _$EncounterLocation {
+class EncounterLocation with _$EncounterLocation implements BackboneType {
   /// [EncounterLocation] An interaction between a patient and healthcare
   ///  provider(s) for the purpose of providing healthcare service(s) or
   ///  assessing the health status of a patient.  Encounter is primarily used to
@@ -1023,7 +1024,7 @@ class EncounterLocation with BackboneType, _$EncounterLocation {
     EncounterLocationStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [form] This will be used to specify the required levels
     ///  (bed/ward/room/etc.) desired to be recorded to simplify either messaging
@@ -1069,7 +1070,7 @@ class EncounterLocation with BackboneType, _$EncounterLocation {
 ///  throughout the history of an Encounter, often tracked for specific
 ///  purposes such as billing.
 @freezed
-class EncounterHistory with Resource, _$EncounterHistory {
+class EncounterHistory with _$EncounterHistory implements DomainResource {
   /// [EncounterHistory] A record of significant events/milestones key data
   ///  throughout the history of an Encounter, often tracked for specific
   ///  purposes such as billing.
@@ -1202,13 +1203,13 @@ class EncounterHistory with Resource, _$EncounterHistory {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1258,7 +1259,7 @@ class EncounterHistory with Resource, _$EncounterHistory {
     EncounterStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [class_] ("class") Concepts representing classification of patient
     ///  encounter such as ambulatory (outpatient), inpatient, emergency, home
@@ -1294,14 +1295,15 @@ class EncounterHistory with Resource, _$EncounterHistory {
 
     /// [plannedStartDateElement] ("_plannedStartDate") Extensions for
     ///  plannedStartDate
-    @JsonKey(name: '_plannedStartDate') Element? plannedStartDateElement,
+    @JsonKey(name: '_plannedStartDate')
+    PrimitiveElement? plannedStartDateElement,
 
     /// [plannedEndDate] The planned end date/time (or discharge date) of the
     ///  encounter.
     FhirDateTime? plannedEndDate,
 
     /// [plannedEndDateElement] ("_plannedEndDate") Extensions for plannedEndDate
-    @JsonKey(name: '_plannedEndDate') Element? plannedEndDateElement,
+    @JsonKey(name: '_plannedEndDate') PrimitiveElement? plannedEndDateElement,
 
     /// [length] Actual quantity of time the encounter lasted. This excludes the
     ///  time during leaves of absence. When missing it is the time in between the
@@ -1358,7 +1360,9 @@ class EncounterHistory with Resource, _$EncounterHistory {
 ///  data throughout the history of an Encounter, often tracked for specific
 ///  purposes such as billing.
 @freezed
-class EncounterHistoryLocation with BackboneType, _$EncounterHistoryLocation {
+class EncounterHistoryLocation
+    with _$EncounterHistoryLocation
+    implements BackboneType {
   /// [EncounterHistoryLocation] A record of significant events/milestones key
   ///  data throughout the history of an Encounter, often tracked for specific
   ///  purposes such as billing.
@@ -1469,7 +1473,7 @@ class EncounterHistoryLocation with BackboneType, _$EncounterHistoryLocation {
 ///  managing organization assumes a level of responsibility for the patient
 ///  during this time.
 @freezed
-class EpisodeOfCare with Resource, _$EpisodeOfCare {
+class EpisodeOfCare with _$EpisodeOfCare implements DomainResource {
   /// [EpisodeOfCare] An association between a patient and an organization /
   ///  healthcare provider(s) during which time encounters may occur. The
   ///  managing organization assumes a level of responsibility for the patient
@@ -1595,13 +1599,13 @@ class EpisodeOfCare with Resource, _$EpisodeOfCare {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1649,7 +1653,7 @@ class EpisodeOfCare with Resource, _$EpisodeOfCare {
     EpisodeOfCareStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [statusHistory] The history of statuses that the EpisodeOfCare has been
     ///  through (without requiring processing the history of the resource).
@@ -1815,7 +1819,7 @@ class EpisodeOfCareStatusHistory
     EpisodeOfCareStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [period] The period during this EpisodeOfCare that the specific status
     ///  applied.
@@ -1858,7 +1862,7 @@ class EpisodeOfCareStatusHistory
 ///  managing organization assumes a level of responsibility for the patient
 ///  during this time.
 @freezed
-class EpisodeOfCareReason with BackboneType, _$EpisodeOfCareReason {
+class EpisodeOfCareReason with _$EpisodeOfCareReason implements BackboneType {
   /// [EpisodeOfCareReason] An association between a patient and an organization
   ///  / healthcare provider(s) during which time encounters may occur. The
   ///  managing organization assumes a level of responsibility for the patient
@@ -1973,7 +1977,9 @@ class EpisodeOfCareReason with BackboneType, _$EpisodeOfCareReason {
 ///  occur. The managing organization assumes a level of responsibility for the
 ///  patient during this time.
 @freezed
-class EpisodeOfCareDiagnosis with BackboneType, _$EpisodeOfCareDiagnosis {
+class EpisodeOfCareDiagnosis
+    with _$EpisodeOfCareDiagnosis
+    implements BackboneType {
   /// [EpisodeOfCareDiagnosis] An association between a patient and an
   ///  organization / healthcare provider(s) during which time encounters may
   ///  occur. The managing organization assumes a level of responsibility for the
@@ -2084,7 +2090,7 @@ class EpisodeOfCareDiagnosis with BackboneType, _$EpisodeOfCareDiagnosis {
 /// [Flag] Prospective warnings of potential issues when providing care to the
 ///  patient.
 @freezed
-class Flag with Resource, _$Flag {
+class Flag with _$Flag implements DomainResource {
   /// [Flag] Prospective warnings of potential issues when providing care to the
   ///  patient.
   const Flag._();
@@ -2191,13 +2197,13 @@ class Flag with Resource, _$Flag {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -2245,7 +2251,7 @@ class Flag with Resource, _$Flag {
     FlagStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [category] Allows a flag to be divided into different categories like
     ///  clinical, administrative etc. Intended to be used as a means of filtering
@@ -2315,7 +2321,7 @@ class Flag with Resource, _$Flag {
 ///  knowledge assets such as logic libraries and information model
 ///  descriptions, as well as to describe a collection of knowledge assets.
 @freezed
-class Library with Resource, _$Library {
+class Library with _$Library implements DomainResource {
   /// [Library] The Library resource is a general-purpose container for knowledge
   ///  asset definitions. It can be used to describe and expose existing
   ///  knowledge assets such as logic libraries and information model
@@ -2569,13 +2575,13 @@ class Library with Resource, _$Library {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -2623,7 +2629,7 @@ class Library with Resource, _$Library {
     FhirUri? url,
 
     /// [urlElement] ("_url") Extensions for url
-    @JsonKey(name: '_url') Element? urlElement,
+    @JsonKey(name: '_url') PrimitiveElement? urlElement,
 
     /// [identifier] A formal identifier that is used to identify this library when
     ///  it is represented in other formats, or referenced in a specification,
@@ -2646,7 +2652,7 @@ class Library with Resource, _$Library {
     String? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') Element? versionElement,
+    @JsonKey(name: '_version') PrimitiveElement? versionElement,
 
     /// [versionAlgorithmString] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -2655,7 +2661,7 @@ class Library with Resource, _$Library {
     /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
     ///  versionAlgorithmString
     @JsonKey(name: '_versionAlgorithmString')
-    Element? versionAlgorithmStringElement,
+    PrimitiveElement? versionAlgorithmStringElement,
 
     /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -2667,20 +2673,20 @@ class Library with Resource, _$Library {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [title] A short, descriptive, user-friendly title for the library.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [status] The status of this library. Enables tracking the life-cycle of the
     ///  content.
     PublicationStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [experimental] A Boolean value to indicate that this library is authored
     ///  for testing purposes (or education/evaluation/marketing) and is not
@@ -2688,7 +2694,7 @@ class Library with Resource, _$Library {
     FhirBoolean? experimental,
 
     /// [experimentalElement] ("_experimental") Extensions for experimental
-    @JsonKey(name: '_experimental') Element? experimentalElement,
+    @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
 
     /// [date] The date  (and optionally time) when the library was last
     ///  significantly changed. The date must change when the business version
@@ -2697,14 +2703,14 @@ class Library with Resource, _$Library {
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [publisher] The name of the organization or individual responsible for the
     ///  release and ongoing maintenance of the library.
     String? publisher,
 
     /// [publisherElement] ("_publisher") Extensions for publisher
-    @JsonKey(name: '_publisher') Element? publisherElement,
+    @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
 
     /// [contact] Contact details to assist a user in finding and communicating
     ///  with the publisher.
@@ -2715,7 +2721,7 @@ class Library with Resource, _$Library {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [useContext] The content was developed with a focus and intent of
     ///  supporting the contexts that are listed. These contexts may be general
@@ -2733,7 +2739,7 @@ class Library with Resource, _$Library {
     FhirMarkdown? purpose,
 
     /// [purposeElement] ("_purpose") Extensions for purpose
-    @JsonKey(name: '_purpose') Element? purposeElement,
+    @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
 
     /// [copyright] A copyright statement relating to the library and/or its
     ///  contents. Copyright statements are generally legal restrictions on the use
@@ -2741,7 +2747,7 @@ class Library with Resource, _$Library {
     FhirMarkdown? copyright,
 
     /// [copyrightElement] ("_copyright") Extensions for copyright
-    @JsonKey(name: '_copyright') Element? copyrightElement,
+    @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
 
     /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
     ///  a page footer that identifies the copyright holder, effective period, and
@@ -2750,7 +2756,7 @@ class Library with Resource, _$Library {
     String? copyrightLabel,
 
     /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-    @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+    @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
 
     /// [approvalDate] The date on which the resource content was approved by the
     ///  publisher. Approval happens once when the content is officially approved
@@ -2758,7 +2764,7 @@ class Library with Resource, _$Library {
     FhirDate? approvalDate,
 
     /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
-    @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+    @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
 
     /// [lastReviewDate] The date on which the resource content was last reviewed.
     ///  Review happens periodically after approval but does not change the
@@ -2766,7 +2772,7 @@ class Library with Resource, _$Library {
     FhirDate? lastReviewDate,
 
     /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
-    @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+    @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
 
     /// [effectivePeriod] The period during which the library content was or is
     ///  planned to be in active use.
@@ -2802,7 +2808,7 @@ class Library with Resource, _$Library {
     String? subtitle,
 
     /// [subtitleElement] ("_subtitle") Extensions for subtitle
-    @JsonKey(name: '_subtitle') Element? subtitleElement,
+    @JsonKey(name: '_subtitle') PrimitiveElement? subtitleElement,
 
     /// [type] Identifies the type of library such as a Logic Library, Model
     ///  Definition, Asset Collection, or Module Definition.
@@ -2821,7 +2827,7 @@ class Library with Resource, _$Library {
     FhirMarkdown? usage,
 
     /// [usageElement] ("_usage") Extensions for usage
-    @JsonKey(name: '_usage') Element? usageElement,
+    @JsonKey(name: '_usage') PrimitiveElement? usageElement,
 
     /// [parameter] The parameter element defines parameters used by the library.
     List<ParameterDefinition>? parameter,
@@ -2880,7 +2886,7 @@ class Library with Resource, _$Library {
 /// [FhirList] A List is a curated collection of resources, for things such as
 ///  problem lists, allergy lists, facility list, organization list, etc.
 @freezed
-class FhirList with Resource, _$FhirList {
+class FhirList with _$FhirList implements DomainResource {
   /// [FhirList] A List is a curated collection of resources, for things such as
   ///  problem lists, allergy lists, facility list, organization list, etc.
   const FhirList._();
@@ -3003,13 +3009,13 @@ class FhirList with Resource, _$FhirList {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -3056,7 +3062,7 @@ class FhirList with Resource, _$FhirList {
     ListStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [mode] How this list was prepared - whether it is a working list that is
     ///  suitable for being maintained on an ongoing basis, or if it represents a
@@ -3065,13 +3071,13 @@ class FhirList with Resource, _$FhirList {
     ListMode? mode,
 
     /// [modeElement] ("_mode") Extensions for mode
-    @JsonKey(name: '_mode') Element? modeElement,
+    @JsonKey(name: '_mode') PrimitiveElement? modeElement,
 
     /// [title] A label for the list assigned by the author.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [code] This code defines the purpose of the list - why it was created.
     CodeableConcept? code,
@@ -3088,7 +3094,7 @@ class FhirList with Resource, _$FhirList {
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [source] The entity responsible for deciding what the contents of the list
     ///  were. Where the list was created by a human, this is the same as the
@@ -3151,7 +3157,7 @@ class FhirList with Resource, _$FhirList {
 /// [ListEntry] A List is a curated collection of resources, for things such as
 ///  problem lists, allergy lists, facility list, organization list, etc.
 @freezed
-class ListEntry with BackboneType, _$ListEntry {
+class ListEntry with _$ListEntry implements BackboneType {
   /// [ListEntry] A List is a curated collection of resources, for things such as
   ///  problem lists, allergy lists, facility list, organization list, etc.
   const ListEntry._();
@@ -3230,13 +3236,13 @@ class ListEntry with BackboneType, _$ListEntry {
     FhirBoolean? deleted,
 
     /// [deletedElement] ("_deleted") Extensions for deleted
-    @JsonKey(name: '_deleted') Element? deletedElement,
+    @JsonKey(name: '_deleted') PrimitiveElement? deletedElement,
 
     /// [date] When this item was added to the list.
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [item] A reference to the actual resource from which data was derived.
     required Reference item,

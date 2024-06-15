@@ -19,7 +19,7 @@ part 'entities1.enums.dart';
 ///  endpoint for another FHIR server, or a s/Mime email address. This may
 ///  include any security context information.
 @freezed
-class FhirEndpoint with Resource, _$FhirEndpoint {
+class FhirEndpoint with _$FhirEndpoint implements DomainResource {
   /// [FhirEndpoint] The technical details of an endpoint that can be used for
   ///  electronic services, such as for web services providing XDS.b, a REST
   ///  endpoint for another FHIR server, or a s/Mime email address. This may
@@ -152,13 +152,13 @@ class FhirEndpoint with Resource, _$FhirEndpoint {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -206,7 +206,7 @@ class FhirEndpoint with Resource, _$FhirEndpoint {
     EndpointStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [connectionType] A coded value that represents the technical details of the
     ///  usage of this endpoint, such as what WSDLs should be used in what way.
@@ -217,7 +217,7 @@ class FhirEndpoint with Resource, _$FhirEndpoint {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [description] The description of the endpoint and what it is for (typically
     ///  used as supplemental information in an endpoint directory describing its
@@ -225,7 +225,7 @@ class FhirEndpoint with Resource, _$FhirEndpoint {
     String? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [environmentType] The type of environment(s) exposed at this endpoint (dev,
     ///  prod, test, etc.).
@@ -251,7 +251,7 @@ class FhirEndpoint with Resource, _$FhirEndpoint {
     FhirUrl? address,
 
     /// [addressElement] ("_address") Extensions for address
-    @JsonKey(name: '_address') Element? addressElement,
+    @JsonKey(name: '_address') PrimitiveElement? addressElement,
 
     /// [header] Additional headers / information to send as part of the
     ///  notification.
@@ -306,7 +306,7 @@ class FhirEndpoint with Resource, _$FhirEndpoint {
 ///  endpoint for another FHIR server, or a s/Mime email address. This may
 ///  include any security context information.
 @freezed
-class EndpointPayload with BackboneType, _$EndpointPayload {
+class EndpointPayload with _$EndpointPayload implements BackboneType {
   /// [EndpointPayload] The technical details of an endpoint that can be used for
   ///  electronic services, such as for web services providing XDS.b, a REST
   ///  endpoint for another FHIR server, or a s/Mime email address. This may
@@ -426,7 +426,7 @@ class EndpointPayload with BackboneType, _$EndpointPayload {
 /// [HealthcareService] The details of a healthcare service available at a
 ///  location.
 @freezed
-class HealthcareService with Resource, _$HealthcareService {
+class HealthcareService with _$HealthcareService implements DomainResource {
   /// [HealthcareService] The details of a healthcare service available at a
   ///  location.
   const HealthcareService._();
@@ -592,13 +592,13 @@ class HealthcareService with Resource, _$HealthcareService {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -646,7 +646,7 @@ class HealthcareService with Resource, _$HealthcareService {
     FhirBoolean? active,
 
     /// [activeElement] ("_active") Extensions for active
-    @JsonKey(name: '_active') Element? activeElement,
+    @JsonKey(name: '_active') PrimitiveElement? activeElement,
 
     /// [providedBy] The organization that provides this healthcare service.
     Reference? providedBy,
@@ -675,7 +675,7 @@ class HealthcareService with Resource, _$HealthcareService {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [comment] Any additional description of the service and/or any specific
     ///  issues not covered by the other attributes, which can be displayed as
@@ -683,14 +683,14 @@ class HealthcareService with Resource, _$HealthcareService {
     FhirMarkdown? comment,
 
     /// [commentElement] ("_comment") Extensions for comment
-    @JsonKey(name: '_comment') Element? commentElement,
+    @JsonKey(name: '_comment') PrimitiveElement? commentElement,
 
     /// [extraDetails] Extra details about the service that can't be placed in the
     ///  other fields.
     FhirMarkdown? extraDetails,
 
     /// [extraDetailsElement] ("_extraDetails") Extensions for extraDetails
-    @JsonKey(name: '_extraDetails') Element? extraDetailsElement,
+    @JsonKey(name: '_extraDetails') PrimitiveElement? extraDetailsElement,
 
     /// [photo] If there is a photo/symbol associated with this HealthcareService,
     ///  it may be included here to facilitate quick identification of the service
@@ -738,7 +738,8 @@ class HealthcareService with Resource, _$HealthcareService {
 
     /// [appointmentRequiredElement] ("_appointmentRequired") Extensions for
     ///  appointmentRequired
-    @JsonKey(name: '_appointmentRequired') Element? appointmentRequiredElement,
+    @JsonKey(name: '_appointmentRequired')
+    PrimitiveElement? appointmentRequiredElement,
 
     /// [availability] A collection of times that the healthcare service is
     ///  available.
@@ -864,7 +865,7 @@ class HealthcareServiceEligibility
     FhirMarkdown? comment,
 
     /// [commentElement] ("_comment") Extensions for comment
-    @JsonKey(name: '_comment') Element? commentElement,
+    @JsonKey(name: '_comment') PrimitiveElement? commentElement,
   }) = _HealthcareServiceEligibility;
 
   @override
@@ -903,7 +904,7 @@ class HealthcareServiceEligibility
 ///  provided and resources and participants may be stored, found, contained,
 ///  or accommodated.
 @freezed
-class Location with Resource, _$Location {
+class Location with _$Location implements DomainResource {
   /// [Location] Details and position information for a place where services are
   ///  provided and resources and participants may be stored, found, contained,
   ///  or accommodated.
@@ -1051,13 +1052,13 @@ class Location with Resource, _$Location {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1106,7 +1107,7 @@ class Location with Resource, _$Location {
     LocationStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [operationalStatus] The operational status covers operation values most
     ///  relevant to beds (but can also apply to rooms/units/chairs/etc. such as an
@@ -1118,7 +1119,7 @@ class Location with Resource, _$Location {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [alias] A list of alternate names that the location is known as, or was
     ///  known as, in the past.
@@ -1132,14 +1133,14 @@ class Location with Resource, _$Location {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [mode] Indicates whether a resource instance represents a specific location
     ///  or a class of locations.
     LocationMode? mode,
 
     /// [modeElement] ("_mode") Extensions for mode
-    @JsonKey(name: '_mode') Element? modeElement,
+    @JsonKey(name: '_mode') PrimitiveElement? modeElement,
 
     /// [type] Indicates the type of function performed at the location.
     List<CodeableConcept>? type,
@@ -1227,7 +1228,7 @@ class Location with Resource, _$Location {
 ///  services are provided and resources and participants may be stored, found,
 ///  contained, or accommodated.
 @freezed
-class LocationPosition with BackboneType, _$LocationPosition {
+class LocationPosition with _$LocationPosition implements BackboneType {
   /// [LocationPosition] Details and position information for a place where
   ///  services are provided and resources and participants may be stored, found,
   ///  contained, or accommodated.
@@ -1311,7 +1312,7 @@ class LocationPosition with BackboneType, _$LocationPosition {
     FhirDecimal? longitude,
 
     /// [longitudeElement] ("_longitude") Extensions for longitude
-    @JsonKey(name: '_longitude') Element? longitudeElement,
+    @JsonKey(name: '_longitude') PrimitiveElement? longitudeElement,
 
     /// [latitude] Latitude. The value domain and the interpretation are the same
     ///  as for the text of the latitude element in KML (see notes on Location main
@@ -1319,7 +1320,7 @@ class LocationPosition with BackboneType, _$LocationPosition {
     FhirDecimal? latitude,
 
     /// [latitudeElement] ("_latitude") Extensions for latitude
-    @JsonKey(name: '_latitude') Element? latitudeElement,
+    @JsonKey(name: '_latitude') PrimitiveElement? latitudeElement,
 
     /// [altitude] Altitude. The value domain and the interpretation are the same
     ///  as for the text of the altitude element in KML (see notes on Location main
@@ -1327,7 +1328,7 @@ class LocationPosition with BackboneType, _$LocationPosition {
     FhirDecimal? altitude,
 
     /// [altitudeElement] ("_altitude") Extensions for altitude
-    @JsonKey(name: '_altitude') Element? altitudeElement,
+    @JsonKey(name: '_altitude') PrimitiveElement? altitudeElement,
   }) = _LocationPosition;
 
   @override
@@ -1366,7 +1367,7 @@ class LocationPosition with BackboneType, _$LocationPosition {
 ///  action.  Includes companies, institutions, corporations, departments,
 ///  community groups, healthcare practice groups, payer/insurer, etc.
 @freezed
-class Organization with Resource, _$Organization {
+class Organization with _$Organization implements DomainResource {
   /// [Organization] A formally or informally recognized grouping of people or
   ///  organizations formed for the purpose of achieving some form of collective
   ///  action.  Includes companies, institutions, corporations, departments,
@@ -1492,13 +1493,13 @@ class Organization with Resource, _$Organization {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1545,7 +1546,7 @@ class Organization with Resource, _$Organization {
     FhirBoolean? active,
 
     /// [activeElement] ("_active") Extensions for active
-    @JsonKey(name: '_active') Element? activeElement,
+    @JsonKey(name: '_active') PrimitiveElement? activeElement,
 
     /// [type] The kind(s) of organization that this is.
     List<CodeableConcept>? type,
@@ -1554,7 +1555,7 @@ class Organization with Resource, _$Organization {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [alias] A list of alternate names that the organization is known as, or was
     ///  known as in the past.
@@ -1569,7 +1570,7 @@ class Organization with Resource, _$Organization {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [contact] The contact details of communication devices available relevant
     ///  to the specific Organization. This can include addresses, phone numbers,
@@ -1637,7 +1638,9 @@ class Organization with Resource, _$Organization {
 ///  departments, community groups, healthcare practice groups, payer/insurer,
 ///  etc.
 @freezed
-class OrganizationQualification with BackboneType, _$OrganizationQualification {
+class OrganizationQualification
+    with _$OrganizationQualification
+    implements BackboneType {
   /// [OrganizationQualification] A formally or informally recognized grouping of
   ///  people or organizations formed for the purpose of achieving some form of
   ///  collective action.  Includes companies, institutions, corporations,
@@ -1759,7 +1762,9 @@ class OrganizationQualification with BackboneType, _$OrganizationQualification {
 ///  between 2 distinct organizations, that is not a part-of
 ///  relationship/sub-division relationship.
 @freezed
-class OrganizationAffiliation with Resource, _$OrganizationAffiliation {
+class OrganizationAffiliation
+    with _$OrganizationAffiliation
+    implements DomainResource {
   /// [OrganizationAffiliation] Defines an affiliation/association/relationship
   ///  between 2 distinct organizations, that is not a part-of
   ///  relationship/sub-division relationship.
@@ -1879,13 +1884,13 @@ class OrganizationAffiliation with Resource, _$OrganizationAffiliation {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1931,7 +1936,7 @@ class OrganizationAffiliation with Resource, _$OrganizationAffiliation {
     FhirBoolean? active,
 
     /// [activeElement] ("_active") Extensions for active
-    @JsonKey(name: '_active') Element? activeElement,
+    @JsonKey(name: '_active') PrimitiveElement? activeElement,
 
     /// [period] The period during which the participatingOrganization is
     ///  affiliated with the primary organization.

@@ -41,14 +41,15 @@ mixin _$CapabilityStatement {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -100,7 +101,7 @@ mixin _$CapabilityStatement {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   /// [identifier] A formal identifier that is used to identify this
   ///  CapabilityStatement when it is represented in other formats, or referenced
@@ -118,7 +119,7 @@ mixin _$CapabilityStatement {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -127,7 +128,7 @@ mixin _$CapabilityStatement {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement =>
+  PrimitiveElement? get versionAlgorithmStringElement =>
       throw _privateConstructorUsedError;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -141,7 +142,7 @@ mixin _$CapabilityStatement {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [title] A short, descriptive, user-friendly title for the capability
   ///  statement.
@@ -149,7 +150,7 @@ mixin _$CapabilityStatement {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [status] The status of this capability statement. Enables tracking the
   ///  life-cycle of the content.
@@ -157,7 +158,7 @@ mixin _$CapabilityStatement {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [experimental] A Boolean value to indicate that this capability statement
   ///  is authored for testing purposes (or education/evaluation/marketing) and
@@ -166,7 +167,8 @@ mixin _$CapabilityStatement {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get experimentalElement =>
+      throw _privateConstructorUsedError;
 
   /// [date] The date  (and optionally time) when the capability statement was
   ///  last significantly changed. The date must change when the business version
@@ -177,7 +179,7 @@ mixin _$CapabilityStatement {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the capability statement.
@@ -185,7 +187,7 @@ mixin _$CapabilityStatement {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get publisherElement => throw _privateConstructorUsedError;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -199,7 +201,8 @@ mixin _$CapabilityStatement {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -218,7 +221,7 @@ mixin _$CapabilityStatement {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get purposeElement => throw _privateConstructorUsedError;
 
   /// [copyright] A copyright statement relating to the capability statement
   ///  and/or its contents. Copyright statements are generally legal restrictions
@@ -227,7 +230,7 @@ mixin _$CapabilityStatement {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -237,7 +240,8 @@ mixin _$CapabilityStatement {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightLabelElement =>
+      throw _privateConstructorUsedError;
 
   /// [kind] The way that this statement is intended to be used, to describe an
   ///  actual running instance of software, a particular product (kind, not
@@ -247,7 +251,7 @@ mixin _$CapabilityStatement {
 
   /// [kindElement] ("_kind") Extensions for kind
   @JsonKey(name: '_kind')
-  Element? get kindElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get kindElement => throw _privateConstructorUsedError;
 
   /// [instantiates] Reference to a canonical URL of another CapabilityStatement
   ///  that this software implements. This capability statement is a published
@@ -283,7 +287,8 @@ mixin _$CapabilityStatement {
 
   /// [fhirVersionElement] ("_fhirVersion") Extensions for fhirVersion
   @JsonKey(name: '_fhirVersion')
-  Element? get fhirVersionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get fhirVersionElement =>
+      throw _privateConstructorUsedError;
 
   /// [format] A list of the formats supported by this implementation using their
   ///  content types.
@@ -344,53 +349,53 @@ abstract class $CapabilityStatementCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirCode? kind,
-      @JsonKey(name: '_kind') Element? kindElement,
+      @JsonKey(name: '_kind') PrimitiveElement? kindElement,
       List<FhirCanonical>? instantiates,
       List<FhirCanonical>? imports,
       CapabilityStatementSoftware? software,
       CapabilityStatementImplementation? implementation,
       FhirCode? fhirVersion,
-      @JsonKey(name: '_fhirVersion') Element? fhirVersionElement,
+      @JsonKey(name: '_fhirVersion') PrimitiveElement? fhirVersionElement,
       List<FhirCode>? format,
       @JsonKey(name: '_format') List<Element>? formatElement,
       List<FhirCode>? patchFormat,
@@ -503,7 +508,7 @@ class _$CapabilityStatementCopyWithImpl<$Res, $Val extends CapabilityStatement>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -511,7 +516,7 @@ class _$CapabilityStatementCopyWithImpl<$Res, $Val extends CapabilityStatement>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -535,7 +540,7 @@ class _$CapabilityStatementCopyWithImpl<$Res, $Val extends CapabilityStatement>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -547,7 +552,7 @@ class _$CapabilityStatementCopyWithImpl<$Res, $Val extends CapabilityStatement>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -555,7 +560,7 @@ class _$CapabilityStatementCopyWithImpl<$Res, $Val extends CapabilityStatement>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -567,7 +572,7 @@ class _$CapabilityStatementCopyWithImpl<$Res, $Val extends CapabilityStatement>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -575,7 +580,7 @@ class _$CapabilityStatementCopyWithImpl<$Res, $Val extends CapabilityStatement>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -583,7 +588,7 @@ class _$CapabilityStatementCopyWithImpl<$Res, $Val extends CapabilityStatement>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -591,7 +596,7 @@ class _$CapabilityStatementCopyWithImpl<$Res, $Val extends CapabilityStatement>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -599,7 +604,7 @@ class _$CapabilityStatementCopyWithImpl<$Res, $Val extends CapabilityStatement>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -607,7 +612,7 @@ class _$CapabilityStatementCopyWithImpl<$Res, $Val extends CapabilityStatement>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value.contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -619,7 +624,7 @@ class _$CapabilityStatementCopyWithImpl<$Res, $Val extends CapabilityStatement>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value.useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -635,7 +640,7 @@ class _$CapabilityStatementCopyWithImpl<$Res, $Val extends CapabilityStatement>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -643,7 +648,7 @@ class _$CapabilityStatementCopyWithImpl<$Res, $Val extends CapabilityStatement>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -651,7 +656,7 @@ class _$CapabilityStatementCopyWithImpl<$Res, $Val extends CapabilityStatement>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       kind: freezed == kind
           ? _value.kind
           : kind // ignore: cast_nullable_to_non_nullable
@@ -659,7 +664,7 @@ class _$CapabilityStatementCopyWithImpl<$Res, $Val extends CapabilityStatement>
       kindElement: freezed == kindElement
           ? _value.kindElement
           : kindElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       instantiates: freezed == instantiates
           ? _value.instantiates
           : instantiates // ignore: cast_nullable_to_non_nullable
@@ -683,7 +688,7 @@ class _$CapabilityStatementCopyWithImpl<$Res, $Val extends CapabilityStatement>
       fhirVersionElement: freezed == fhirVersionElement
           ? _value.fhirVersionElement
           : fhirVersionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       format: freezed == format
           ? _value.format
           : format // ignore: cast_nullable_to_non_nullable
@@ -804,53 +809,53 @@ abstract class _$$CapabilityStatementImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirCode? kind,
-      @JsonKey(name: '_kind') Element? kindElement,
+      @JsonKey(name: '_kind') PrimitiveElement? kindElement,
       List<FhirCanonical>? instantiates,
       List<FhirCanonical>? imports,
       CapabilityStatementSoftware? software,
       CapabilityStatementImplementation? implementation,
       FhirCode? fhirVersion,
-      @JsonKey(name: '_fhirVersion') Element? fhirVersionElement,
+      @JsonKey(name: '_fhirVersion') PrimitiveElement? fhirVersionElement,
       List<FhirCode>? format,
       @JsonKey(name: '_format') List<Element>? formatElement,
       List<FhirCode>? patchFormat,
@@ -966,7 +971,7 @@ class __$$CapabilityStatementImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -974,7 +979,7 @@ class __$$CapabilityStatementImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -998,7 +1003,7 @@ class __$$CapabilityStatementImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value._identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -1010,7 +1015,7 @@ class __$$CapabilityStatementImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -1018,7 +1023,7 @@ class __$$CapabilityStatementImplCopyWithImpl<$Res>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -1030,7 +1035,7 @@ class __$$CapabilityStatementImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -1038,7 +1043,7 @@ class __$$CapabilityStatementImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -1046,7 +1051,7 @@ class __$$CapabilityStatementImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -1054,7 +1059,7 @@ class __$$CapabilityStatementImplCopyWithImpl<$Res>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -1062,7 +1067,7 @@ class __$$CapabilityStatementImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -1070,7 +1075,7 @@ class __$$CapabilityStatementImplCopyWithImpl<$Res>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value._contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -1082,7 +1087,7 @@ class __$$CapabilityStatementImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value._useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -1098,7 +1103,7 @@ class __$$CapabilityStatementImplCopyWithImpl<$Res>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -1106,7 +1111,7 @@ class __$$CapabilityStatementImplCopyWithImpl<$Res>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -1114,7 +1119,7 @@ class __$$CapabilityStatementImplCopyWithImpl<$Res>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       kind: freezed == kind
           ? _value.kind
           : kind // ignore: cast_nullable_to_non_nullable
@@ -1122,7 +1127,7 @@ class __$$CapabilityStatementImplCopyWithImpl<$Res>
       kindElement: freezed == kindElement
           ? _value.kindElement
           : kindElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       instantiates: freezed == instantiates
           ? _value._instantiates
           : instantiates // ignore: cast_nullable_to_non_nullable
@@ -1146,7 +1151,7 @@ class __$$CapabilityStatementImplCopyWithImpl<$Res>
       fhirVersionElement: freezed == fhirVersionElement
           ? _value.fhirVersionElement
           : fhirVersionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       format: freezed == format
           ? _value._format
           : format // ignore: cast_nullable_to_non_nullable
@@ -1308,7 +1313,7 @@ class _$CapabilityStatementImpl extends _CapabilityStatement {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -1317,7 +1322,7 @@ class _$CapabilityStatementImpl extends _CapabilityStatement {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1422,7 +1427,7 @@ class _$CapabilityStatementImpl extends _CapabilityStatement {
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   /// [identifier] A formal identifier that is used to identify this
   ///  CapabilityStatement when it is represented in other formats, or referenced
@@ -1454,7 +1459,7 @@ class _$CapabilityStatementImpl extends _CapabilityStatement {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -1465,7 +1470,7 @@ class _$CapabilityStatementImpl extends _CapabilityStatement {
   ///  versionAlgorithmString
   @override
   @JsonKey(name: '_versionAlgorithmString')
-  final Element? versionAlgorithmStringElement;
+  final PrimitiveElement? versionAlgorithmStringElement;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -1481,7 +1486,7 @@ class _$CapabilityStatementImpl extends _CapabilityStatement {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [title] A short, descriptive, user-friendly title for the capability
   ///  statement.
@@ -1491,7 +1496,7 @@ class _$CapabilityStatementImpl extends _CapabilityStatement {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [status] The status of this capability statement. Enables tracking the
   ///  life-cycle of the content.
@@ -1501,7 +1506,7 @@ class _$CapabilityStatementImpl extends _CapabilityStatement {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [experimental] A Boolean value to indicate that this capability statement
   ///  is authored for testing purposes (or education/evaluation/marketing) and
@@ -1512,7 +1517,7 @@ class _$CapabilityStatementImpl extends _CapabilityStatement {
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @override
   @JsonKey(name: '_experimental')
-  final Element? experimentalElement;
+  final PrimitiveElement? experimentalElement;
 
   /// [date] The date  (and optionally time) when the capability statement was
   ///  last significantly changed. The date must change when the business version
@@ -1525,7 +1530,7 @@ class _$CapabilityStatementImpl extends _CapabilityStatement {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the capability statement.
@@ -1535,7 +1540,7 @@ class _$CapabilityStatementImpl extends _CapabilityStatement {
   /// [publisherElement] ("_publisher") Extensions for publisher
   @override
   @JsonKey(name: '_publisher')
-  final Element? publisherElement;
+  final PrimitiveElement? publisherElement;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -1562,7 +1567,7 @@ class _$CapabilityStatementImpl extends _CapabilityStatement {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -1608,7 +1613,7 @@ class _$CapabilityStatementImpl extends _CapabilityStatement {
   /// [purposeElement] ("_purpose") Extensions for purpose
   @override
   @JsonKey(name: '_purpose')
-  final Element? purposeElement;
+  final PrimitiveElement? purposeElement;
 
   /// [copyright] A copyright statement relating to the capability statement
   ///  and/or its contents. Copyright statements are generally legal restrictions
@@ -1619,7 +1624,7 @@ class _$CapabilityStatementImpl extends _CapabilityStatement {
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @override
   @JsonKey(name: '_copyright')
-  final Element? copyrightElement;
+  final PrimitiveElement? copyrightElement;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -1631,7 +1636,7 @@ class _$CapabilityStatementImpl extends _CapabilityStatement {
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @override
   @JsonKey(name: '_copyrightLabel')
-  final Element? copyrightLabelElement;
+  final PrimitiveElement? copyrightLabelElement;
 
   /// [kind] The way that this statement is intended to be used, to describe an
   ///  actual running instance of software, a particular product (kind, not
@@ -1643,7 +1648,7 @@ class _$CapabilityStatementImpl extends _CapabilityStatement {
   /// [kindElement] ("_kind") Extensions for kind
   @override
   @JsonKey(name: '_kind')
-  final Element? kindElement;
+  final PrimitiveElement? kindElement;
 
   /// [instantiates] Reference to a canonical URL of another CapabilityStatement
   ///  that this software implements. This capability statement is a published
@@ -1710,7 +1715,7 @@ class _$CapabilityStatementImpl extends _CapabilityStatement {
   /// [fhirVersionElement] ("_fhirVersion") Extensions for fhirVersion
   @override
   @JsonKey(name: '_fhirVersion')
-  final Element? fhirVersionElement;
+  final PrimitiveElement? fhirVersionElement;
 
   /// [format] A list of the formats supported by this implementation using their
   ///  content types.
@@ -2053,53 +2058,56 @@ abstract class _CapabilityStatement extends CapabilityStatement {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUri? url,
-      @JsonKey(name: '_url') final Element? urlElement,
+      @JsonKey(name: '_url') final PrimitiveElement? urlElement,
       final List<Identifier>? identifier,
       final String? version,
-      @JsonKey(name: '_version') final Element? versionElement,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
       final String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      final Element? versionAlgorithmStringElement,
+      final PrimitiveElement? versionAlgorithmStringElement,
       final Coding? versionAlgorithmCoding,
       final String? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final PublicationStatus? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') final Element? experimentalElement,
+      @JsonKey(name: '_experimental')
+      final PrimitiveElement? experimentalElement,
       final FhirDateTime? date,
-      @JsonKey(name: '_date') final Element? dateElement,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
       final String? publisher,
-      @JsonKey(name: '_publisher') final Element? publisherElement,
+      @JsonKey(name: '_publisher') final PrimitiveElement? publisherElement,
       final List<ContactDetail>? contact,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<UsageContext>? useContext,
       final List<CodeableConcept>? jurisdiction,
       final FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') final Element? purposeElement,
+      @JsonKey(name: '_purpose') final PrimitiveElement? purposeElement,
       final FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') final Element? copyrightElement,
+      @JsonKey(name: '_copyright') final PrimitiveElement? copyrightElement,
       final String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') final Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel')
+      final PrimitiveElement? copyrightLabelElement,
       final FhirCode? kind,
-      @JsonKey(name: '_kind') final Element? kindElement,
+      @JsonKey(name: '_kind') final PrimitiveElement? kindElement,
       final List<FhirCanonical>? instantiates,
       final List<FhirCanonical>? imports,
       final CapabilityStatementSoftware? software,
       final CapabilityStatementImplementation? implementation,
       final FhirCode? fhirVersion,
-      @JsonKey(name: '_fhirVersion') final Element? fhirVersionElement,
+      @JsonKey(name: '_fhirVersion') final PrimitiveElement? fhirVersionElement,
       final List<FhirCode>? format,
       @JsonKey(name: '_format') final List<Element>? formatElement,
       final List<FhirCode>? patchFormat,
@@ -2144,7 +2152,7 @@ abstract class _CapabilityStatement extends CapabilityStatement {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -2153,7 +2161,7 @@ abstract class _CapabilityStatement extends CapabilityStatement {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -2210,7 +2218,7 @@ abstract class _CapabilityStatement extends CapabilityStatement {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
 
   /// [identifier] A formal identifier that is used to identify this
@@ -2231,7 +2239,7 @@ abstract class _CapabilityStatement extends CapabilityStatement {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
@@ -2242,7 +2250,7 @@ abstract class _CapabilityStatement extends CapabilityStatement {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement;
+  PrimitiveElement? get versionAlgorithmStringElement;
   @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -2258,7 +2266,7 @@ abstract class _CapabilityStatement extends CapabilityStatement {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [title] A short, descriptive, user-friendly title for the capability
@@ -2268,7 +2276,7 @@ abstract class _CapabilityStatement extends CapabilityStatement {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [status] The status of this capability statement. Enables tracking the
@@ -2278,7 +2286,7 @@ abstract class _CapabilityStatement extends CapabilityStatement {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [experimental] A Boolean value to indicate that this capability statement
@@ -2289,7 +2297,7 @@ abstract class _CapabilityStatement extends CapabilityStatement {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement;
+  PrimitiveElement? get experimentalElement;
   @override
 
   /// [date] The date  (and optionally time) when the capability statement was
@@ -2302,7 +2310,7 @@ abstract class _CapabilityStatement extends CapabilityStatement {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [publisher] The name of the organization or individual responsible for the
@@ -2312,7 +2320,7 @@ abstract class _CapabilityStatement extends CapabilityStatement {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement;
+  PrimitiveElement? get publisherElement;
   @override
 
   /// [contact] Contact details to assist a user in finding and communicating
@@ -2329,7 +2337,7 @@ abstract class _CapabilityStatement extends CapabilityStatement {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [useContext] The content was developed with a focus and intent of
@@ -2352,7 +2360,7 @@ abstract class _CapabilityStatement extends CapabilityStatement {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement;
+  PrimitiveElement? get purposeElement;
   @override
 
   /// [copyright] A copyright statement relating to the capability statement
@@ -2363,7 +2371,7 @@ abstract class _CapabilityStatement extends CapabilityStatement {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement;
+  PrimitiveElement? get copyrightElement;
   @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
@@ -2375,7 +2383,7 @@ abstract class _CapabilityStatement extends CapabilityStatement {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement;
+  PrimitiveElement? get copyrightLabelElement;
   @override
 
   /// [kind] The way that this statement is intended to be used, to describe an
@@ -2387,7 +2395,7 @@ abstract class _CapabilityStatement extends CapabilityStatement {
 
   /// [kindElement] ("_kind") Extensions for kind
   @JsonKey(name: '_kind')
-  Element? get kindElement;
+  PrimitiveElement? get kindElement;
   @override
 
   /// [instantiates] Reference to a canonical URL of another CapabilityStatement
@@ -2427,7 +2435,7 @@ abstract class _CapabilityStatement extends CapabilityStatement {
 
   /// [fhirVersionElement] ("_fhirVersion") Extensions for fhirVersion
   @JsonKey(name: '_fhirVersion')
-  Element? get fhirVersionElement;
+  PrimitiveElement? get fhirVersionElement;
   @override
 
   /// [format] A list of the formats supported by this implementation using their
@@ -2521,21 +2529,22 @@ mixin _$CapabilityStatementSoftware {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [version] The version identifier for the software covered by this statement.
   String? get version => throw _privateConstructorUsedError;
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [releaseDate] Date this version of the software was released.
   FhirDateTime? get releaseDate => throw _privateConstructorUsedError;
 
   /// [releaseDateElement] ("_releaseDate") Extensions for releaseDate
   @JsonKey(name: '_releaseDate')
-  Element? get releaseDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get releaseDateElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -2556,11 +2565,11 @@ abstract class $CapabilityStatementSoftwareCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       FhirDateTime? releaseDate,
-      @JsonKey(name: '_releaseDate') Element? releaseDateElement});
+      @JsonKey(name: '_releaseDate') PrimitiveElement? releaseDateElement});
 }
 
 /// @nodoc
@@ -2607,7 +2616,7 @@ class _$CapabilityStatementSoftwareCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       version: freezed == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
@@ -2615,7 +2624,7 @@ class _$CapabilityStatementSoftwareCopyWithImpl<$Res,
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       releaseDate: freezed == releaseDate
           ? _value.releaseDate
           : releaseDate // ignore: cast_nullable_to_non_nullable
@@ -2623,7 +2632,7 @@ class _$CapabilityStatementSoftwareCopyWithImpl<$Res,
       releaseDateElement: freezed == releaseDateElement
           ? _value.releaseDateElement
           : releaseDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -2642,11 +2651,11 @@ abstract class _$$CapabilityStatementSoftwareImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       FhirDateTime? releaseDate,
-      @JsonKey(name: '_releaseDate') Element? releaseDateElement});
+      @JsonKey(name: '_releaseDate') PrimitiveElement? releaseDateElement});
 }
 
 /// @nodoc
@@ -2692,7 +2701,7 @@ class __$$CapabilityStatementSoftwareImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       version: freezed == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
@@ -2700,7 +2709,7 @@ class __$$CapabilityStatementSoftwareImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       releaseDate: freezed == releaseDate
           ? _value.releaseDate
           : releaseDate // ignore: cast_nullable_to_non_nullable
@@ -2708,7 +2717,7 @@ class __$$CapabilityStatementSoftwareImplCopyWithImpl<$Res>
       releaseDateElement: freezed == releaseDateElement
           ? _value.releaseDateElement
           : releaseDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -2806,7 +2815,7 @@ class _$CapabilityStatementSoftwareImpl extends _CapabilityStatementSoftware {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [version] The version identifier for the software covered by this statement.
   @override
@@ -2815,7 +2824,7 @@ class _$CapabilityStatementSoftwareImpl extends _CapabilityStatementSoftware {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [releaseDate] Date this version of the software was released.
   @override
@@ -2824,7 +2833,7 @@ class _$CapabilityStatementSoftwareImpl extends _CapabilityStatementSoftware {
   /// [releaseDateElement] ("_releaseDate") Extensions for releaseDate
   @override
   @JsonKey(name: '_releaseDate')
-  final Element? releaseDateElement;
+  final PrimitiveElement? releaseDateElement;
 
   @override
   String toString() {
@@ -2889,11 +2898,12 @@ abstract class _CapabilityStatementSoftware
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final String? name,
-          @JsonKey(name: '_name') final Element? nameElement,
+          @JsonKey(name: '_name') final PrimitiveElement? nameElement,
           final String? version,
-          @JsonKey(name: '_version') final Element? versionElement,
+          @JsonKey(name: '_version') final PrimitiveElement? versionElement,
           final FhirDateTime? releaseDate,
-          @JsonKey(name: '_releaseDate') final Element? releaseDateElement}) =
+          @JsonKey(name: '_releaseDate')
+          final PrimitiveElement? releaseDateElement}) =
       _$CapabilityStatementSoftwareImpl;
   const _CapabilityStatementSoftware._() : super._();
 
@@ -2938,7 +2948,7 @@ abstract class _CapabilityStatementSoftware
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [version] The version identifier for the software covered by this statement.
@@ -2947,7 +2957,7 @@ abstract class _CapabilityStatementSoftware
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [releaseDate] Date this version of the software was released.
@@ -2956,7 +2966,7 @@ abstract class _CapabilityStatementSoftware
 
   /// [releaseDateElement] ("_releaseDate") Extensions for releaseDate
   @JsonKey(name: '_releaseDate')
-  Element? get releaseDateElement;
+  PrimitiveElement? get releaseDateElement;
   @override
   @JsonKey(ignore: true)
   _$$CapabilityStatementSoftwareImplCopyWith<_$CapabilityStatementSoftwareImpl>
@@ -3004,7 +3014,8 @@ mixin _$CapabilityStatementImplementation {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [url] An absolute base URL for the implementation.  This forms the base for
   ///  REST interfaces as well as the mailbox and document interfaces.
@@ -3012,7 +3023,7 @@ mixin _$CapabilityStatementImplementation {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   /// [custodian] The organization responsible for the management of the instance
   ///  and oversight of the data on the server at the specified URL.
@@ -3037,9 +3048,9 @@ abstract class $CapabilityStatementImplementationCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       FhirUrl? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       Reference? custodian});
 
   $ReferenceCopyWith<$Res>? get custodian;
@@ -3088,7 +3099,7 @@ class _$CapabilityStatementImplementationCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
@@ -3096,7 +3107,7 @@ class _$CapabilityStatementImplementationCopyWithImpl<$Res,
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       custodian: freezed == custodian
           ? _value.custodian
           : custodian // ignore: cast_nullable_to_non_nullable
@@ -3131,9 +3142,9 @@ abstract class _$$CapabilityStatementImplementationImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       FhirUrl? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       Reference? custodian});
 
   @override
@@ -3182,7 +3193,7 @@ class __$$CapabilityStatementImplementationImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       url: freezed == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
@@ -3190,7 +3201,7 @@ class __$$CapabilityStatementImplementationImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       custodian: freezed == custodian
           ? _value.custodian
           : custodian // ignore: cast_nullable_to_non_nullable
@@ -3293,7 +3304,7 @@ class _$CapabilityStatementImplementationImpl
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [url] An absolute base URL for the implementation.  This forms the base for
   ///  REST interfaces as well as the mailbox and document interfaces.
@@ -3303,7 +3314,7 @@ class _$CapabilityStatementImplementationImpl
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   /// [custodian] The organization responsible for the management of the instance
   ///  and oversight of the data on the server at the specified URL.
@@ -3372,9 +3383,9 @@ abstract class _CapabilityStatementImplementation
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final FhirUrl? url,
-      @JsonKey(name: '_url') final Element? urlElement,
+      @JsonKey(name: '_url') final PrimitiveElement? urlElement,
       final Reference? custodian}) = _$CapabilityStatementImplementationImpl;
   const _CapabilityStatementImplementation._() : super._();
 
@@ -3421,7 +3432,7 @@ abstract class _CapabilityStatementImplementation
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [url] An absolute base URL for the implementation.  This forms the base for
@@ -3431,7 +3442,7 @@ abstract class _CapabilityStatementImplementation
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
 
   /// [custodian] The organization responsible for the management of the instance
@@ -3485,7 +3496,7 @@ mixin _$CapabilityStatementRest {
 
   /// [modeElement] ("_mode") Extensions for mode
   @JsonKey(name: '_mode')
-  Element? get modeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get modeElement => throw _privateConstructorUsedError;
 
   /// [documentation] Information about the system's restful capabilities that
   ///  apply across all applications, such as security.
@@ -3493,7 +3504,8 @@ mixin _$CapabilityStatementRest {
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get documentationElement =>
+      throw _privateConstructorUsedError;
 
   /// [security] Information about security implementation from an interface
   ///  perspective - what a client needs to know.
@@ -3544,9 +3556,9 @@ abstract class $CapabilityStatementRestCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? mode,
-      @JsonKey(name: '_mode') Element? modeElement,
+      @JsonKey(name: '_mode') PrimitiveElement? modeElement,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement,
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       CapabilityStatementSecurity? security,
       List<CapabilityStatementResource>? resource,
       List<CapabilityStatementInteraction1>? interaction,
@@ -3605,7 +3617,7 @@ class _$CapabilityStatementRestCopyWithImpl<$Res,
       modeElement: freezed == modeElement
           ? _value.modeElement
           : modeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -3613,7 +3625,7 @@ class _$CapabilityStatementRestCopyWithImpl<$Res,
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       security: freezed == security
           ? _value.security
           : security // ignore: cast_nullable_to_non_nullable
@@ -3669,9 +3681,9 @@ abstract class _$$CapabilityStatementRestImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? mode,
-      @JsonKey(name: '_mode') Element? modeElement,
+      @JsonKey(name: '_mode') PrimitiveElement? modeElement,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement,
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       CapabilityStatementSecurity? security,
       List<CapabilityStatementResource>? resource,
       List<CapabilityStatementInteraction1>? interaction,
@@ -3730,7 +3742,7 @@ class __$$CapabilityStatementRestImplCopyWithImpl<$Res>
       modeElement: freezed == modeElement
           ? _value.modeElement
           : modeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -3738,7 +3750,7 @@ class __$$CapabilityStatementRestImplCopyWithImpl<$Res>
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       security: freezed == security
           ? _value.security
           : security // ignore: cast_nullable_to_non_nullable
@@ -3869,7 +3881,7 @@ class _$CapabilityStatementRestImpl extends _CapabilityStatementRest {
   /// [modeElement] ("_mode") Extensions for mode
   @override
   @JsonKey(name: '_mode')
-  final Element? modeElement;
+  final PrimitiveElement? modeElement;
 
   /// [documentation] Information about the system's restful capabilities that
   ///  apply across all applications, such as security.
@@ -3879,7 +3891,7 @@ class _$CapabilityStatementRestImpl extends _CapabilityStatementRest {
   /// [documentationElement] ("_documentation") Extensions for documentation
   @override
   @JsonKey(name: '_documentation')
-  final Element? documentationElement;
+  final PrimitiveElement? documentationElement;
 
   /// [security] Information about security implementation from an interface
   ///  perspective - what a client needs to know.
@@ -4041,9 +4053,10 @@ abstract class _CapabilityStatementRest extends CapabilityStatementRest {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirCode? mode,
-      @JsonKey(name: '_mode') final Element? modeElement,
+      @JsonKey(name: '_mode') final PrimitiveElement? modeElement,
       final FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') final Element? documentationElement,
+      @JsonKey(name: '_documentation')
+      final PrimitiveElement? documentationElement,
       final CapabilityStatementSecurity? security,
       final List<CapabilityStatementResource>? resource,
       final List<CapabilityStatementInteraction1>? interaction,
@@ -4094,7 +4107,7 @@ abstract class _CapabilityStatementRest extends CapabilityStatementRest {
 
   /// [modeElement] ("_mode") Extensions for mode
   @JsonKey(name: '_mode')
-  Element? get modeElement;
+  PrimitiveElement? get modeElement;
   @override
 
   /// [documentation] Information about the system's restful capabilities that
@@ -4104,7 +4117,7 @@ abstract class _CapabilityStatementRest extends CapabilityStatementRest {
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement;
+  PrimitiveElement? get documentationElement;
   @override
 
   /// [security] Information about security implementation from an interface
@@ -4185,7 +4198,7 @@ mixin _$CapabilityStatementSecurity {
 
   /// [corsElement] ("_cors") Extensions for cors
   @JsonKey(name: '_cors')
-  Element? get corsElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get corsElement => throw _privateConstructorUsedError;
 
   /// [service] Types of security services that are supported/required by the
   ///  system.
@@ -4196,7 +4209,8 @@ mixin _$CapabilityStatementSecurity {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -4217,10 +4231,10 @@ abstract class $CapabilityStatementSecurityCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirBoolean? cors,
-      @JsonKey(name: '_cors') Element? corsElement,
+      @JsonKey(name: '_cors') PrimitiveElement? corsElement,
       List<CodeableConcept>? service,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement});
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement});
 }
 
 /// @nodoc
@@ -4266,7 +4280,7 @@ class _$CapabilityStatementSecurityCopyWithImpl<$Res,
       corsElement: freezed == corsElement
           ? _value.corsElement
           : corsElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       service: freezed == service
           ? _value.service
           : service // ignore: cast_nullable_to_non_nullable
@@ -4278,7 +4292,7 @@ class _$CapabilityStatementSecurityCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -4297,10 +4311,10 @@ abstract class _$$CapabilityStatementSecurityImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirBoolean? cors,
-      @JsonKey(name: '_cors') Element? corsElement,
+      @JsonKey(name: '_cors') PrimitiveElement? corsElement,
       List<CodeableConcept>? service,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement});
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement});
 }
 
 /// @nodoc
@@ -4345,7 +4359,7 @@ class __$$CapabilityStatementSecurityImplCopyWithImpl<$Res>
       corsElement: freezed == corsElement
           ? _value.corsElement
           : corsElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       service: freezed == service
           ? _value._service
           : service // ignore: cast_nullable_to_non_nullable
@@ -4357,7 +4371,7 @@ class __$$CapabilityStatementSecurityImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -4456,7 +4470,7 @@ class _$CapabilityStatementSecurityImpl extends _CapabilityStatementSecurity {
   /// [corsElement] ("_cors") Extensions for cors
   @override
   @JsonKey(name: '_cors')
-  final Element? corsElement;
+  final PrimitiveElement? corsElement;
 
   /// [service] Types of security services that are supported/required by the
   ///  system.
@@ -4480,7 +4494,7 @@ class _$CapabilityStatementSecurityImpl extends _CapabilityStatementSecurity {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   @override
   String toString() {
@@ -4542,10 +4556,11 @@ abstract class _CapabilityStatementSecurity
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final FhirBoolean? cors,
-          @JsonKey(name: '_cors') final Element? corsElement,
+          @JsonKey(name: '_cors') final PrimitiveElement? corsElement,
           final List<CodeableConcept>? service,
           final FhirMarkdown? description,
-          @JsonKey(name: '_description') final Element? descriptionElement}) =
+          @JsonKey(name: '_description')
+          final PrimitiveElement? descriptionElement}) =
       _$CapabilityStatementSecurityImpl;
   const _CapabilityStatementSecurity._() : super._();
 
@@ -4591,7 +4606,7 @@ abstract class _CapabilityStatementSecurity
 
   /// [corsElement] ("_cors") Extensions for cors
   @JsonKey(name: '_cors')
-  Element? get corsElement;
+  PrimitiveElement? get corsElement;
   @override
 
   /// [service] Types of security services that are supported/required by the
@@ -4605,7 +4620,7 @@ abstract class _CapabilityStatementSecurity
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
   @JsonKey(ignore: true)
   _$$CapabilityStatementSecurityImplCopyWith<_$CapabilityStatementSecurityImpl>
@@ -4652,7 +4667,7 @@ mixin _$CapabilityStatementResource {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get typeElement => throw _privateConstructorUsedError;
 
   /// [profile] A system-wide profile that is applied across *all* instances of
   ///  the resource supported by the system. For example, if declared on
@@ -4678,7 +4693,8 @@ mixin _$CapabilityStatementResource {
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get documentationElement =>
+      throw _privateConstructorUsedError;
 
   /// [interaction] Identifies a restful operation supported by the solution.
   List<CapabilityStatementInteraction>? get interaction =>
@@ -4694,7 +4710,7 @@ mixin _$CapabilityStatementResource {
 
   /// [versioningElement] ("_versioning") Extensions for versioning
   @JsonKey(name: '_versioning')
-  Element? get versioningElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versioningElement => throw _privateConstructorUsedError;
 
   /// [readHistory] A flag for whether the server is able to return past versions
   ///  as part of the vRead operation.
@@ -4702,7 +4718,8 @@ mixin _$CapabilityStatementResource {
 
   /// [readHistoryElement] ("_readHistory") Extensions for readHistory
   @JsonKey(name: '_readHistory')
-  Element? get readHistoryElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get readHistoryElement =>
+      throw _privateConstructorUsedError;
 
   /// [updateCreate] A flag to indicate that the server allows or needs to allow
   ///  the client to create new identities on the server (that is, the client
@@ -4713,7 +4730,8 @@ mixin _$CapabilityStatementResource {
 
   /// [updateCreateElement] ("_updateCreate") Extensions for updateCreate
   @JsonKey(name: '_updateCreate')
-  Element? get updateCreateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get updateCreateElement =>
+      throw _privateConstructorUsedError;
 
   /// [conditionalCreate] A flag that indicates that the server supports
   ///  conditional create.
@@ -4722,7 +4740,8 @@ mixin _$CapabilityStatementResource {
   /// [conditionalCreateElement] ("_conditionalCreate") Extensions for
   ///  conditionalCreate
   @JsonKey(name: '_conditionalCreate')
-  Element? get conditionalCreateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get conditionalCreateElement =>
+      throw _privateConstructorUsedError;
 
   /// [conditionalRead] A code that indicates how the server supports conditional
   ///  read.
@@ -4730,7 +4749,8 @@ mixin _$CapabilityStatementResource {
 
   /// [conditionalReadElement] ("_conditionalRead") Extensions for conditionalRead
   @JsonKey(name: '_conditionalRead')
-  Element? get conditionalReadElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get conditionalReadElement =>
+      throw _privateConstructorUsedError;
 
   /// [conditionalUpdate] A flag that indicates that the server supports
   ///  conditional update.
@@ -4739,7 +4759,8 @@ mixin _$CapabilityStatementResource {
   /// [conditionalUpdateElement] ("_conditionalUpdate") Extensions for
   ///  conditionalUpdate
   @JsonKey(name: '_conditionalUpdate')
-  Element? get conditionalUpdateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get conditionalUpdateElement =>
+      throw _privateConstructorUsedError;
 
   /// [conditionalPatch] A flag that indicates that the server supports
   ///  conditional patch.
@@ -4748,7 +4769,8 @@ mixin _$CapabilityStatementResource {
   /// [conditionalPatchElement] ("_conditionalPatch") Extensions for
   ///  conditionalPatch
   @JsonKey(name: '_conditionalPatch')
-  Element? get conditionalPatchElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get conditionalPatchElement =>
+      throw _privateConstructorUsedError;
 
   /// [conditionalDelete] A code that indicates how the server supports
   ///  conditional delete.
@@ -4757,7 +4779,8 @@ mixin _$CapabilityStatementResource {
   /// [conditionalDeleteElement] ("_conditionalDelete") Extensions for
   ///  conditionalDelete
   @JsonKey(name: '_conditionalDelete')
-  Element? get conditionalDeleteElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get conditionalDeleteElement =>
+      throw _privateConstructorUsedError;
 
   /// [referencePolicy] A set of flags that defines how references are supported.
   List<FhirCode>? get referencePolicy => throw _privateConstructorUsedError;
@@ -4816,28 +4839,33 @@ abstract class $CapabilityStatementResourceCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       FhirCanonical? profile,
       List<FhirCanonical>? supportedProfile,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement,
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       List<CapabilityStatementInteraction>? interaction,
       FhirCode? versioning,
-      @JsonKey(name: '_versioning') Element? versioningElement,
+      @JsonKey(name: '_versioning') PrimitiveElement? versioningElement,
       FhirBoolean? readHistory,
-      @JsonKey(name: '_readHistory') Element? readHistoryElement,
+      @JsonKey(name: '_readHistory') PrimitiveElement? readHistoryElement,
       FhirBoolean? updateCreate,
-      @JsonKey(name: '_updateCreate') Element? updateCreateElement,
+      @JsonKey(name: '_updateCreate') PrimitiveElement? updateCreateElement,
       FhirBoolean? conditionalCreate,
-      @JsonKey(name: '_conditionalCreate') Element? conditionalCreateElement,
+      @JsonKey(name: '_conditionalCreate')
+      PrimitiveElement? conditionalCreateElement,
       FhirCode? conditionalRead,
-      @JsonKey(name: '_conditionalRead') Element? conditionalReadElement,
+      @JsonKey(name: '_conditionalRead')
+      PrimitiveElement? conditionalReadElement,
       FhirBoolean? conditionalUpdate,
-      @JsonKey(name: '_conditionalUpdate') Element? conditionalUpdateElement,
+      @JsonKey(name: '_conditionalUpdate')
+      PrimitiveElement? conditionalUpdateElement,
       FhirBoolean? conditionalPatch,
-      @JsonKey(name: '_conditionalPatch') Element? conditionalPatchElement,
+      @JsonKey(name: '_conditionalPatch')
+      PrimitiveElement? conditionalPatchElement,
       FhirCode? conditionalDelete,
-      @JsonKey(name: '_conditionalDelete') Element? conditionalDeleteElement,
+      @JsonKey(name: '_conditionalDelete')
+      PrimitiveElement? conditionalDeleteElement,
       List<FhirCode>? referencePolicy,
       @JsonKey(name: '_referencePolicy') List<Element>? referencePolicyElement,
       List<String>? searchInclude,
@@ -4918,7 +4946,7 @@ class _$CapabilityStatementResourceCopyWithImpl<$Res,
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       profile: freezed == profile
           ? _value.profile
           : profile // ignore: cast_nullable_to_non_nullable
@@ -4934,7 +4962,7 @@ class _$CapabilityStatementResourceCopyWithImpl<$Res,
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       interaction: freezed == interaction
           ? _value.interaction
           : interaction // ignore: cast_nullable_to_non_nullable
@@ -4946,7 +4974,7 @@ class _$CapabilityStatementResourceCopyWithImpl<$Res,
       versioningElement: freezed == versioningElement
           ? _value.versioningElement
           : versioningElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       readHistory: freezed == readHistory
           ? _value.readHistory
           : readHistory // ignore: cast_nullable_to_non_nullable
@@ -4954,7 +4982,7 @@ class _$CapabilityStatementResourceCopyWithImpl<$Res,
       readHistoryElement: freezed == readHistoryElement
           ? _value.readHistoryElement
           : readHistoryElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       updateCreate: freezed == updateCreate
           ? _value.updateCreate
           : updateCreate // ignore: cast_nullable_to_non_nullable
@@ -4962,7 +4990,7 @@ class _$CapabilityStatementResourceCopyWithImpl<$Res,
       updateCreateElement: freezed == updateCreateElement
           ? _value.updateCreateElement
           : updateCreateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       conditionalCreate: freezed == conditionalCreate
           ? _value.conditionalCreate
           : conditionalCreate // ignore: cast_nullable_to_non_nullable
@@ -4970,7 +4998,7 @@ class _$CapabilityStatementResourceCopyWithImpl<$Res,
       conditionalCreateElement: freezed == conditionalCreateElement
           ? _value.conditionalCreateElement
           : conditionalCreateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       conditionalRead: freezed == conditionalRead
           ? _value.conditionalRead
           : conditionalRead // ignore: cast_nullable_to_non_nullable
@@ -4978,7 +5006,7 @@ class _$CapabilityStatementResourceCopyWithImpl<$Res,
       conditionalReadElement: freezed == conditionalReadElement
           ? _value.conditionalReadElement
           : conditionalReadElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       conditionalUpdate: freezed == conditionalUpdate
           ? _value.conditionalUpdate
           : conditionalUpdate // ignore: cast_nullable_to_non_nullable
@@ -4986,7 +5014,7 @@ class _$CapabilityStatementResourceCopyWithImpl<$Res,
       conditionalUpdateElement: freezed == conditionalUpdateElement
           ? _value.conditionalUpdateElement
           : conditionalUpdateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       conditionalPatch: freezed == conditionalPatch
           ? _value.conditionalPatch
           : conditionalPatch // ignore: cast_nullable_to_non_nullable
@@ -4994,7 +5022,7 @@ class _$CapabilityStatementResourceCopyWithImpl<$Res,
       conditionalPatchElement: freezed == conditionalPatchElement
           ? _value.conditionalPatchElement
           : conditionalPatchElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       conditionalDelete: freezed == conditionalDelete
           ? _value.conditionalDelete
           : conditionalDelete // ignore: cast_nullable_to_non_nullable
@@ -5002,7 +5030,7 @@ class _$CapabilityStatementResourceCopyWithImpl<$Res,
       conditionalDeleteElement: freezed == conditionalDeleteElement
           ? _value.conditionalDeleteElement
           : conditionalDeleteElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       referencePolicy: freezed == referencePolicy
           ? _value.referencePolicy
           : referencePolicy // ignore: cast_nullable_to_non_nullable
@@ -5053,28 +5081,33 @@ abstract class _$$CapabilityStatementResourceImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       FhirCanonical? profile,
       List<FhirCanonical>? supportedProfile,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement,
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       List<CapabilityStatementInteraction>? interaction,
       FhirCode? versioning,
-      @JsonKey(name: '_versioning') Element? versioningElement,
+      @JsonKey(name: '_versioning') PrimitiveElement? versioningElement,
       FhirBoolean? readHistory,
-      @JsonKey(name: '_readHistory') Element? readHistoryElement,
+      @JsonKey(name: '_readHistory') PrimitiveElement? readHistoryElement,
       FhirBoolean? updateCreate,
-      @JsonKey(name: '_updateCreate') Element? updateCreateElement,
+      @JsonKey(name: '_updateCreate') PrimitiveElement? updateCreateElement,
       FhirBoolean? conditionalCreate,
-      @JsonKey(name: '_conditionalCreate') Element? conditionalCreateElement,
+      @JsonKey(name: '_conditionalCreate')
+      PrimitiveElement? conditionalCreateElement,
       FhirCode? conditionalRead,
-      @JsonKey(name: '_conditionalRead') Element? conditionalReadElement,
+      @JsonKey(name: '_conditionalRead')
+      PrimitiveElement? conditionalReadElement,
       FhirBoolean? conditionalUpdate,
-      @JsonKey(name: '_conditionalUpdate') Element? conditionalUpdateElement,
+      @JsonKey(name: '_conditionalUpdate')
+      PrimitiveElement? conditionalUpdateElement,
       FhirBoolean? conditionalPatch,
-      @JsonKey(name: '_conditionalPatch') Element? conditionalPatchElement,
+      @JsonKey(name: '_conditionalPatch')
+      PrimitiveElement? conditionalPatchElement,
       FhirCode? conditionalDelete,
-      @JsonKey(name: '_conditionalDelete') Element? conditionalDeleteElement,
+      @JsonKey(name: '_conditionalDelete')
+      PrimitiveElement? conditionalDeleteElement,
       List<FhirCode>? referencePolicy,
       @JsonKey(name: '_referencePolicy') List<Element>? referencePolicyElement,
       List<String>? searchInclude,
@@ -5154,7 +5187,7 @@ class __$$CapabilityStatementResourceImplCopyWithImpl<$Res>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       profile: freezed == profile
           ? _value.profile
           : profile // ignore: cast_nullable_to_non_nullable
@@ -5170,7 +5203,7 @@ class __$$CapabilityStatementResourceImplCopyWithImpl<$Res>
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       interaction: freezed == interaction
           ? _value._interaction
           : interaction // ignore: cast_nullable_to_non_nullable
@@ -5182,7 +5215,7 @@ class __$$CapabilityStatementResourceImplCopyWithImpl<$Res>
       versioningElement: freezed == versioningElement
           ? _value.versioningElement
           : versioningElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       readHistory: freezed == readHistory
           ? _value.readHistory
           : readHistory // ignore: cast_nullable_to_non_nullable
@@ -5190,7 +5223,7 @@ class __$$CapabilityStatementResourceImplCopyWithImpl<$Res>
       readHistoryElement: freezed == readHistoryElement
           ? _value.readHistoryElement
           : readHistoryElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       updateCreate: freezed == updateCreate
           ? _value.updateCreate
           : updateCreate // ignore: cast_nullable_to_non_nullable
@@ -5198,7 +5231,7 @@ class __$$CapabilityStatementResourceImplCopyWithImpl<$Res>
       updateCreateElement: freezed == updateCreateElement
           ? _value.updateCreateElement
           : updateCreateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       conditionalCreate: freezed == conditionalCreate
           ? _value.conditionalCreate
           : conditionalCreate // ignore: cast_nullable_to_non_nullable
@@ -5206,7 +5239,7 @@ class __$$CapabilityStatementResourceImplCopyWithImpl<$Res>
       conditionalCreateElement: freezed == conditionalCreateElement
           ? _value.conditionalCreateElement
           : conditionalCreateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       conditionalRead: freezed == conditionalRead
           ? _value.conditionalRead
           : conditionalRead // ignore: cast_nullable_to_non_nullable
@@ -5214,7 +5247,7 @@ class __$$CapabilityStatementResourceImplCopyWithImpl<$Res>
       conditionalReadElement: freezed == conditionalReadElement
           ? _value.conditionalReadElement
           : conditionalReadElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       conditionalUpdate: freezed == conditionalUpdate
           ? _value.conditionalUpdate
           : conditionalUpdate // ignore: cast_nullable_to_non_nullable
@@ -5222,7 +5255,7 @@ class __$$CapabilityStatementResourceImplCopyWithImpl<$Res>
       conditionalUpdateElement: freezed == conditionalUpdateElement
           ? _value.conditionalUpdateElement
           : conditionalUpdateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       conditionalPatch: freezed == conditionalPatch
           ? _value.conditionalPatch
           : conditionalPatch // ignore: cast_nullable_to_non_nullable
@@ -5230,7 +5263,7 @@ class __$$CapabilityStatementResourceImplCopyWithImpl<$Res>
       conditionalPatchElement: freezed == conditionalPatchElement
           ? _value.conditionalPatchElement
           : conditionalPatchElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       conditionalDelete: freezed == conditionalDelete
           ? _value.conditionalDelete
           : conditionalDelete // ignore: cast_nullable_to_non_nullable
@@ -5238,7 +5271,7 @@ class __$$CapabilityStatementResourceImplCopyWithImpl<$Res>
       conditionalDeleteElement: freezed == conditionalDeleteElement
           ? _value.conditionalDeleteElement
           : conditionalDeleteElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       referencePolicy: freezed == referencePolicy
           ? _value._referencePolicy
           : referencePolicy // ignore: cast_nullable_to_non_nullable
@@ -5406,7 +5439,7 @@ class _$CapabilityStatementResourceImpl extends _CapabilityStatementResource {
   /// [typeElement] ("_type") Extensions for type
   @override
   @JsonKey(name: '_type')
-  final Element? typeElement;
+  final PrimitiveElement? typeElement;
 
   /// [profile] A system-wide profile that is applied across *all* instances of
   ///  the resource supported by the system. For example, if declared on
@@ -5452,7 +5485,7 @@ class _$CapabilityStatementResourceImpl extends _CapabilityStatementResource {
   /// [documentationElement] ("_documentation") Extensions for documentation
   @override
   @JsonKey(name: '_documentation')
-  final Element? documentationElement;
+  final PrimitiveElement? documentationElement;
 
   /// [interaction] Identifies a restful operation supported by the solution.
   final List<CapabilityStatementInteraction>? _interaction;
@@ -5479,7 +5512,7 @@ class _$CapabilityStatementResourceImpl extends _CapabilityStatementResource {
   /// [versioningElement] ("_versioning") Extensions for versioning
   @override
   @JsonKey(name: '_versioning')
-  final Element? versioningElement;
+  final PrimitiveElement? versioningElement;
 
   /// [readHistory] A flag for whether the server is able to return past versions
   ///  as part of the vRead operation.
@@ -5489,7 +5522,7 @@ class _$CapabilityStatementResourceImpl extends _CapabilityStatementResource {
   /// [readHistoryElement] ("_readHistory") Extensions for readHistory
   @override
   @JsonKey(name: '_readHistory')
-  final Element? readHistoryElement;
+  final PrimitiveElement? readHistoryElement;
 
   /// [updateCreate] A flag to indicate that the server allows or needs to allow
   ///  the client to create new identities on the server (that is, the client
@@ -5502,7 +5535,7 @@ class _$CapabilityStatementResourceImpl extends _CapabilityStatementResource {
   /// [updateCreateElement] ("_updateCreate") Extensions for updateCreate
   @override
   @JsonKey(name: '_updateCreate')
-  final Element? updateCreateElement;
+  final PrimitiveElement? updateCreateElement;
 
   /// [conditionalCreate] A flag that indicates that the server supports
   ///  conditional create.
@@ -5513,7 +5546,7 @@ class _$CapabilityStatementResourceImpl extends _CapabilityStatementResource {
   ///  conditionalCreate
   @override
   @JsonKey(name: '_conditionalCreate')
-  final Element? conditionalCreateElement;
+  final PrimitiveElement? conditionalCreateElement;
 
   /// [conditionalRead] A code that indicates how the server supports conditional
   ///  read.
@@ -5523,7 +5556,7 @@ class _$CapabilityStatementResourceImpl extends _CapabilityStatementResource {
   /// [conditionalReadElement] ("_conditionalRead") Extensions for conditionalRead
   @override
   @JsonKey(name: '_conditionalRead')
-  final Element? conditionalReadElement;
+  final PrimitiveElement? conditionalReadElement;
 
   /// [conditionalUpdate] A flag that indicates that the server supports
   ///  conditional update.
@@ -5534,7 +5567,7 @@ class _$CapabilityStatementResourceImpl extends _CapabilityStatementResource {
   ///  conditionalUpdate
   @override
   @JsonKey(name: '_conditionalUpdate')
-  final Element? conditionalUpdateElement;
+  final PrimitiveElement? conditionalUpdateElement;
 
   /// [conditionalPatch] A flag that indicates that the server supports
   ///  conditional patch.
@@ -5545,7 +5578,7 @@ class _$CapabilityStatementResourceImpl extends _CapabilityStatementResource {
   ///  conditionalPatch
   @override
   @JsonKey(name: '_conditionalPatch')
-  final Element? conditionalPatchElement;
+  final PrimitiveElement? conditionalPatchElement;
 
   /// [conditionalDelete] A code that indicates how the server supports
   ///  conditional delete.
@@ -5556,7 +5589,7 @@ class _$CapabilityStatementResourceImpl extends _CapabilityStatementResource {
   ///  conditionalDelete
   @override
   @JsonKey(name: '_conditionalDelete')
-  final Element? conditionalDeleteElement;
+  final PrimitiveElement? conditionalDeleteElement;
 
   /// [referencePolicy] A set of flags that defines how references are supported.
   final List<FhirCode>? _referencePolicy;
@@ -5822,32 +5855,35 @@ abstract class _CapabilityStatementResource
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirCode? type,
-      @JsonKey(name: '_type') final Element? typeElement,
+      @JsonKey(name: '_type') final PrimitiveElement? typeElement,
       final FhirCanonical? profile,
       final List<FhirCanonical>? supportedProfile,
       final FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') final Element? documentationElement,
+      @JsonKey(name: '_documentation')
+      final PrimitiveElement? documentationElement,
       final List<CapabilityStatementInteraction>? interaction,
       final FhirCode? versioning,
-      @JsonKey(name: '_versioning') final Element? versioningElement,
+      @JsonKey(name: '_versioning') final PrimitiveElement? versioningElement,
       final FhirBoolean? readHistory,
-      @JsonKey(name: '_readHistory') final Element? readHistoryElement,
+      @JsonKey(name: '_readHistory') final PrimitiveElement? readHistoryElement,
       final FhirBoolean? updateCreate,
-      @JsonKey(name: '_updateCreate') final Element? updateCreateElement,
+      @JsonKey(name: '_updateCreate')
+      final PrimitiveElement? updateCreateElement,
       final FhirBoolean? conditionalCreate,
       @JsonKey(name: '_conditionalCreate')
-      final Element? conditionalCreateElement,
+      final PrimitiveElement? conditionalCreateElement,
       final FhirCode? conditionalRead,
-      @JsonKey(name: '_conditionalRead') final Element? conditionalReadElement,
+      @JsonKey(name: '_conditionalRead')
+      final PrimitiveElement? conditionalReadElement,
       final FhirBoolean? conditionalUpdate,
       @JsonKey(name: '_conditionalUpdate')
-      final Element? conditionalUpdateElement,
+      final PrimitiveElement? conditionalUpdateElement,
       final FhirBoolean? conditionalPatch,
       @JsonKey(name: '_conditionalPatch')
-      final Element? conditionalPatchElement,
+      final PrimitiveElement? conditionalPatchElement,
       final FhirCode? conditionalDelete,
       @JsonKey(name: '_conditionalDelete')
-      final Element? conditionalDeleteElement,
+      final PrimitiveElement? conditionalDeleteElement,
       final List<FhirCode>? referencePolicy,
       @JsonKey(name: '_referencePolicy')
       final List<Element>? referencePolicyElement,
@@ -5903,7 +5939,7 @@ abstract class _CapabilityStatementResource
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement;
+  PrimitiveElement? get typeElement;
   @override
 
   /// [profile] A system-wide profile that is applied across *all* instances of
@@ -5932,7 +5968,7 @@ abstract class _CapabilityStatementResource
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement;
+  PrimitiveElement? get documentationElement;
   @override
 
   /// [interaction] Identifies a restful operation supported by the solution.
@@ -5950,7 +5986,7 @@ abstract class _CapabilityStatementResource
 
   /// [versioningElement] ("_versioning") Extensions for versioning
   @JsonKey(name: '_versioning')
-  Element? get versioningElement;
+  PrimitiveElement? get versioningElement;
   @override
 
   /// [readHistory] A flag for whether the server is able to return past versions
@@ -5960,7 +5996,7 @@ abstract class _CapabilityStatementResource
 
   /// [readHistoryElement] ("_readHistory") Extensions for readHistory
   @JsonKey(name: '_readHistory')
-  Element? get readHistoryElement;
+  PrimitiveElement? get readHistoryElement;
   @override
 
   /// [updateCreate] A flag to indicate that the server allows or needs to allow
@@ -5973,7 +6009,7 @@ abstract class _CapabilityStatementResource
 
   /// [updateCreateElement] ("_updateCreate") Extensions for updateCreate
   @JsonKey(name: '_updateCreate')
-  Element? get updateCreateElement;
+  PrimitiveElement? get updateCreateElement;
   @override
 
   /// [conditionalCreate] A flag that indicates that the server supports
@@ -5984,7 +6020,7 @@ abstract class _CapabilityStatementResource
   /// [conditionalCreateElement] ("_conditionalCreate") Extensions for
   ///  conditionalCreate
   @JsonKey(name: '_conditionalCreate')
-  Element? get conditionalCreateElement;
+  PrimitiveElement? get conditionalCreateElement;
   @override
 
   /// [conditionalRead] A code that indicates how the server supports conditional
@@ -5994,7 +6030,7 @@ abstract class _CapabilityStatementResource
 
   /// [conditionalReadElement] ("_conditionalRead") Extensions for conditionalRead
   @JsonKey(name: '_conditionalRead')
-  Element? get conditionalReadElement;
+  PrimitiveElement? get conditionalReadElement;
   @override
 
   /// [conditionalUpdate] A flag that indicates that the server supports
@@ -6005,7 +6041,7 @@ abstract class _CapabilityStatementResource
   /// [conditionalUpdateElement] ("_conditionalUpdate") Extensions for
   ///  conditionalUpdate
   @JsonKey(name: '_conditionalUpdate')
-  Element? get conditionalUpdateElement;
+  PrimitiveElement? get conditionalUpdateElement;
   @override
 
   /// [conditionalPatch] A flag that indicates that the server supports
@@ -6016,7 +6052,7 @@ abstract class _CapabilityStatementResource
   /// [conditionalPatchElement] ("_conditionalPatch") Extensions for
   ///  conditionalPatch
   @JsonKey(name: '_conditionalPatch')
-  Element? get conditionalPatchElement;
+  PrimitiveElement? get conditionalPatchElement;
   @override
 
   /// [conditionalDelete] A code that indicates how the server supports
@@ -6027,7 +6063,7 @@ abstract class _CapabilityStatementResource
   /// [conditionalDeleteElement] ("_conditionalDelete") Extensions for
   ///  conditionalDelete
   @JsonKey(name: '_conditionalDelete')
-  Element? get conditionalDeleteElement;
+  PrimitiveElement? get conditionalDeleteElement;
   @override
 
   /// [referencePolicy] A set of flags that defines how references are supported.
@@ -6116,7 +6152,7 @@ mixin _$CapabilityStatementInteraction {
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get codeElement => throw _privateConstructorUsedError;
 
   /// [documentation] Guidance specific to the implementation of this operation,
   ///  such as 'delete is a logical delete' or 'updates are only allowed with
@@ -6125,7 +6161,8 @@ mixin _$CapabilityStatementInteraction {
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get documentationElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -6146,9 +6183,9 @@ abstract class $CapabilityStatementInteractionCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement});
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement});
 }
 
 /// @nodoc
@@ -6193,7 +6230,7 @@ class _$CapabilityStatementInteractionCopyWithImpl<$Res,
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -6201,7 +6238,7 @@ class _$CapabilityStatementInteractionCopyWithImpl<$Res,
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -6220,9 +6257,9 @@ abstract class _$$CapabilityStatementInteractionImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement});
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement});
 }
 
 /// @nodoc
@@ -6266,7 +6303,7 @@ class __$$CapabilityStatementInteractionImplCopyWithImpl<$Res>
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -6274,7 +6311,7 @@ class __$$CapabilityStatementInteractionImplCopyWithImpl<$Res>
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -6371,7 +6408,7 @@ class _$CapabilityStatementInteractionImpl
   /// [codeElement] ("_code") Extensions for code
   @override
   @JsonKey(name: '_code')
-  final Element? codeElement;
+  final PrimitiveElement? codeElement;
 
   /// [documentation] Guidance specific to the implementation of this operation,
   ///  such as 'delete is a logical delete' or 'updates are only allowed with
@@ -6382,7 +6419,7 @@ class _$CapabilityStatementInteractionImpl
   /// [documentationElement] ("_documentation") Extensions for documentation
   @override
   @JsonKey(name: '_documentation')
-  final Element? documentationElement;
+  final PrimitiveElement? documentationElement;
 
   @override
   String toString() {
@@ -6443,10 +6480,10 @@ abstract class _CapabilityStatementInteraction
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final FhirCode? code,
-          @JsonKey(name: '_code') final Element? codeElement,
+          @JsonKey(name: '_code') final PrimitiveElement? codeElement,
           final FhirMarkdown? documentation,
           @JsonKey(name: '_documentation')
-          final Element? documentationElement}) =
+          final PrimitiveElement? documentationElement}) =
       _$CapabilityStatementInteractionImpl;
   const _CapabilityStatementInteraction._() : super._();
 
@@ -6491,7 +6528,7 @@ abstract class _CapabilityStatementInteraction
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement;
+  PrimitiveElement? get codeElement;
   @override
 
   /// [documentation] Guidance specific to the implementation of this operation,
@@ -6502,7 +6539,7 @@ abstract class _CapabilityStatementInteraction
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement;
+  PrimitiveElement? get documentationElement;
   @override
   @JsonKey(ignore: true)
   _$$CapabilityStatementInteractionImplCopyWith<
@@ -6555,7 +6592,7 @@ mixin _$CapabilityStatementSearchParam {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [definition] An absolute URI that is a formal reference to where this
   ///  parameter was first defined, so that a client can be confident of the
@@ -6570,7 +6607,7 @@ mixin _$CapabilityStatementSearchParam {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get typeElement => throw _privateConstructorUsedError;
 
   /// [documentation] This allows documentation of any distinct behaviors about
   ///  how the search parameter is used.  For example, text matching algorithms.
@@ -6578,7 +6615,8 @@ mixin _$CapabilityStatementSearchParam {
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get documentationElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -6599,12 +6637,12 @@ abstract class $CapabilityStatementSearchParamCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       FhirCanonical? definition,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement});
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement});
 }
 
 /// @nodoc
@@ -6652,7 +6690,7 @@ class _$CapabilityStatementSearchParamCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       definition: freezed == definition
           ? _value.definition
           : definition // ignore: cast_nullable_to_non_nullable
@@ -6664,7 +6702,7 @@ class _$CapabilityStatementSearchParamCopyWithImpl<$Res,
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -6672,7 +6710,7 @@ class _$CapabilityStatementSearchParamCopyWithImpl<$Res,
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -6691,12 +6729,12 @@ abstract class _$$CapabilityStatementSearchParamImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       FhirCanonical? definition,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement});
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement});
 }
 
 /// @nodoc
@@ -6743,7 +6781,7 @@ class __$$CapabilityStatementSearchParamImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       definition: freezed == definition
           ? _value.definition
           : definition // ignore: cast_nullable_to_non_nullable
@@ -6755,7 +6793,7 @@ class __$$CapabilityStatementSearchParamImplCopyWithImpl<$Res>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -6763,7 +6801,7 @@ class __$$CapabilityStatementSearchParamImplCopyWithImpl<$Res>
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -6868,7 +6906,7 @@ class _$CapabilityStatementSearchParamImpl
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [definition] An absolute URI that is a formal reference to where this
   ///  parameter was first defined, so that a client can be confident of the
@@ -6886,7 +6924,7 @@ class _$CapabilityStatementSearchParamImpl
   /// [typeElement] ("_type") Extensions for type
   @override
   @JsonKey(name: '_type')
-  final Element? typeElement;
+  final PrimitiveElement? typeElement;
 
   /// [documentation] This allows documentation of any distinct behaviors about
   ///  how the search parameter is used.  For example, text matching algorithms.
@@ -6896,7 +6934,7 @@ class _$CapabilityStatementSearchParamImpl
   /// [documentationElement] ("_documentation") Extensions for documentation
   @override
   @JsonKey(name: '_documentation')
-  final Element? documentationElement;
+  final PrimitiveElement? documentationElement;
 
   @override
   String toString() {
@@ -6965,13 +7003,13 @@ abstract class _CapabilityStatementSearchParam
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final String? name,
-          @JsonKey(name: '_name') final Element? nameElement,
+          @JsonKey(name: '_name') final PrimitiveElement? nameElement,
           final FhirCanonical? definition,
           final FhirCode? type,
-          @JsonKey(name: '_type') final Element? typeElement,
+          @JsonKey(name: '_type') final PrimitiveElement? typeElement,
           final FhirMarkdown? documentation,
           @JsonKey(name: '_documentation')
-          final Element? documentationElement}) =
+          final PrimitiveElement? documentationElement}) =
       _$CapabilityStatementSearchParamImpl;
   const _CapabilityStatementSearchParam._() : super._();
 
@@ -7021,7 +7059,7 @@ abstract class _CapabilityStatementSearchParam
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [definition] An absolute URI that is a formal reference to where this
@@ -7039,7 +7077,7 @@ abstract class _CapabilityStatementSearchParam
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement;
+  PrimitiveElement? get typeElement;
   @override
 
   /// [documentation] This allows documentation of any distinct behaviors about
@@ -7049,7 +7087,7 @@ abstract class _CapabilityStatementSearchParam
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement;
+  PrimitiveElement? get documentationElement;
   @override
   @JsonKey(ignore: true)
   _$$CapabilityStatementSearchParamImplCopyWith<
@@ -7103,7 +7141,7 @@ mixin _$CapabilityStatementOperation {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [definition] Where the formal definition can be found. If a server
   ///  references the base definition of an Operation (i.e. from the
@@ -7123,7 +7161,8 @@ mixin _$CapabilityStatementOperation {
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get documentationElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -7144,10 +7183,10 @@ abstract class $CapabilityStatementOperationCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       FhirCanonical definition,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement});
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement});
 }
 
 /// @nodoc
@@ -7193,7 +7232,7 @@ class _$CapabilityStatementOperationCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       definition: null == definition
           ? _value.definition
           : definition // ignore: cast_nullable_to_non_nullable
@@ -7205,7 +7244,7 @@ class _$CapabilityStatementOperationCopyWithImpl<$Res,
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -7224,10 +7263,10 @@ abstract class _$$CapabilityStatementOperationImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       FhirCanonical definition,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement});
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement});
 }
 
 /// @nodoc
@@ -7272,7 +7311,7 @@ class __$$CapabilityStatementOperationImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       definition: null == definition
           ? _value.definition
           : definition // ignore: cast_nullable_to_non_nullable
@@ -7284,7 +7323,7 @@ class __$$CapabilityStatementOperationImplCopyWithImpl<$Res>
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -7387,7 +7426,7 @@ class _$CapabilityStatementOperationImpl extends _CapabilityStatementOperation {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [definition] Where the formal definition can be found. If a server
   ///  references the base definition of an Operation (i.e. from the
@@ -7410,7 +7449,7 @@ class _$CapabilityStatementOperationImpl extends _CapabilityStatementOperation {
   /// [documentationElement] ("_documentation") Extensions for documentation
   @override
   @JsonKey(name: '_documentation')
-  final Element? documentationElement;
+  final PrimitiveElement? documentationElement;
 
   @override
   String toString() {
@@ -7474,11 +7513,11 @@ abstract class _CapabilityStatementOperation
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final String? name,
-          @JsonKey(name: '_name') final Element? nameElement,
+          @JsonKey(name: '_name') final PrimitiveElement? nameElement,
           required final FhirCanonical definition,
           final FhirMarkdown? documentation,
           @JsonKey(name: '_documentation')
-          final Element? documentationElement}) =
+          final PrimitiveElement? documentationElement}) =
       _$CapabilityStatementOperationImpl;
   const _CapabilityStatementOperation._() : super._();
 
@@ -7529,7 +7568,7 @@ abstract class _CapabilityStatementOperation
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [definition] Where the formal definition can be found. If a server
@@ -7552,7 +7591,7 @@ abstract class _CapabilityStatementOperation
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement;
+  PrimitiveElement? get documentationElement;
   @override
   @JsonKey(ignore: true)
   _$$CapabilityStatementOperationImplCopyWith<
@@ -7600,7 +7639,7 @@ mixin _$CapabilityStatementInteraction1 {
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get codeElement => throw _privateConstructorUsedError;
 
   /// [documentation] Guidance specific to the implementation of this operation,
   ///  such as limitations on the kind of transactions allowed, or information
@@ -7609,7 +7648,8 @@ mixin _$CapabilityStatementInteraction1 {
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get documentationElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -7630,9 +7670,9 @@ abstract class $CapabilityStatementInteraction1CopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement});
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement});
 }
 
 /// @nodoc
@@ -7677,7 +7717,7 @@ class _$CapabilityStatementInteraction1CopyWithImpl<$Res,
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -7685,7 +7725,7 @@ class _$CapabilityStatementInteraction1CopyWithImpl<$Res,
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -7704,9 +7744,9 @@ abstract class _$$CapabilityStatementInteraction1ImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement});
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement});
 }
 
 /// @nodoc
@@ -7750,7 +7790,7 @@ class __$$CapabilityStatementInteraction1ImplCopyWithImpl<$Res>
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -7758,7 +7798,7 @@ class __$$CapabilityStatementInteraction1ImplCopyWithImpl<$Res>
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -7855,7 +7895,7 @@ class _$CapabilityStatementInteraction1Impl
   /// [codeElement] ("_code") Extensions for code
   @override
   @JsonKey(name: '_code')
-  final Element? codeElement;
+  final PrimitiveElement? codeElement;
 
   /// [documentation] Guidance specific to the implementation of this operation,
   ///  such as limitations on the kind of transactions allowed, or information
@@ -7866,7 +7906,7 @@ class _$CapabilityStatementInteraction1Impl
   /// [documentationElement] ("_documentation") Extensions for documentation
   @override
   @JsonKey(name: '_documentation')
-  final Element? documentationElement;
+  final PrimitiveElement? documentationElement;
 
   @override
   String toString() {
@@ -7927,10 +7967,10 @@ abstract class _CapabilityStatementInteraction1
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final FhirCode? code,
-          @JsonKey(name: '_code') final Element? codeElement,
+          @JsonKey(name: '_code') final PrimitiveElement? codeElement,
           final FhirMarkdown? documentation,
           @JsonKey(name: '_documentation')
-          final Element? documentationElement}) =
+          final PrimitiveElement? documentationElement}) =
       _$CapabilityStatementInteraction1Impl;
   const _CapabilityStatementInteraction1._() : super._();
 
@@ -7975,7 +8015,7 @@ abstract class _CapabilityStatementInteraction1
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement;
+  PrimitiveElement? get codeElement;
   @override
 
   /// [documentation] Guidance specific to the implementation of this operation,
@@ -7986,7 +8026,7 @@ abstract class _CapabilityStatementInteraction1
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement;
+  PrimitiveElement? get documentationElement;
   @override
   @JsonKey(ignore: true)
   _$$CapabilityStatementInteraction1ImplCopyWith<
@@ -8041,7 +8081,8 @@ mixin _$CapabilityStatementMessaging {
 
   /// [reliableCacheElement] ("_reliableCache") Extensions for reliableCache
   @JsonKey(name: '_reliableCache')
-  Element? get reliableCacheElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get reliableCacheElement =>
+      throw _privateConstructorUsedError;
 
   /// [documentation] Documentation about the system's messaging capabilities for
   ///  this endpoint not otherwise documented by the capability statement.  For
@@ -8050,7 +8091,8 @@ mixin _$CapabilityStatementMessaging {
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get documentationElement =>
+      throw _privateConstructorUsedError;
 
   /// [supportedMessage] References to message definitions for messages this
   ///  system can send or receive.
@@ -8077,9 +8119,9 @@ abstract class $CapabilityStatementMessagingCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       List<CapabilityStatementEndpoint>? endpoint,
       FhirUnsignedInt? reliableCache,
-      @JsonKey(name: '_reliableCache') Element? reliableCacheElement,
+      @JsonKey(name: '_reliableCache') PrimitiveElement? reliableCacheElement,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement,
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       List<CapabilityStatementSupportedMessage>? supportedMessage});
 }
 
@@ -8131,7 +8173,7 @@ class _$CapabilityStatementMessagingCopyWithImpl<$Res,
       reliableCacheElement: freezed == reliableCacheElement
           ? _value.reliableCacheElement
           : reliableCacheElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -8139,7 +8181,7 @@ class _$CapabilityStatementMessagingCopyWithImpl<$Res,
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       supportedMessage: freezed == supportedMessage
           ? _value.supportedMessage
           : supportedMessage // ignore: cast_nullable_to_non_nullable
@@ -8163,9 +8205,9 @@ abstract class _$$CapabilityStatementMessagingImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       List<CapabilityStatementEndpoint>? endpoint,
       FhirUnsignedInt? reliableCache,
-      @JsonKey(name: '_reliableCache') Element? reliableCacheElement,
+      @JsonKey(name: '_reliableCache') PrimitiveElement? reliableCacheElement,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement,
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       List<CapabilityStatementSupportedMessage>? supportedMessage});
 }
 
@@ -8216,7 +8258,7 @@ class __$$CapabilityStatementMessagingImplCopyWithImpl<$Res>
       reliableCacheElement: freezed == reliableCacheElement
           ? _value.reliableCacheElement
           : reliableCacheElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -8224,7 +8266,7 @@ class __$$CapabilityStatementMessagingImplCopyWithImpl<$Res>
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       supportedMessage: freezed == supportedMessage
           ? _value._supportedMessage
           : supportedMessage // ignore: cast_nullable_to_non_nullable
@@ -8345,7 +8387,7 @@ class _$CapabilityStatementMessagingImpl extends _CapabilityStatementMessaging {
   /// [reliableCacheElement] ("_reliableCache") Extensions for reliableCache
   @override
   @JsonKey(name: '_reliableCache')
-  final Element? reliableCacheElement;
+  final PrimitiveElement? reliableCacheElement;
 
   /// [documentation] Documentation about the system's messaging capabilities for
   ///  this endpoint not otherwise documented by the capability statement.  For
@@ -8356,7 +8398,7 @@ class _$CapabilityStatementMessagingImpl extends _CapabilityStatementMessaging {
   /// [documentationElement] ("_documentation") Extensions for documentation
   @override
   @JsonKey(name: '_documentation')
-  final Element? documentationElement;
+  final PrimitiveElement? documentationElement;
 
   /// [supportedMessage] References to message definitions for messages this
   ///  system can send or receive.
@@ -8440,9 +8482,11 @@ abstract class _CapabilityStatementMessaging
           final List<FhirExtension>? modifierExtension,
           final List<CapabilityStatementEndpoint>? endpoint,
           final FhirUnsignedInt? reliableCache,
-          @JsonKey(name: '_reliableCache') final Element? reliableCacheElement,
+          @JsonKey(name: '_reliableCache')
+          final PrimitiveElement? reliableCacheElement,
           final FhirMarkdown? documentation,
-          @JsonKey(name: '_documentation') final Element? documentationElement,
+          @JsonKey(name: '_documentation')
+          final PrimitiveElement? documentationElement,
           final List<CapabilityStatementSupportedMessage>? supportedMessage}) =
       _$CapabilityStatementMessagingImpl;
   const _CapabilityStatementMessaging._() : super._();
@@ -8495,7 +8539,7 @@ abstract class _CapabilityStatementMessaging
 
   /// [reliableCacheElement] ("_reliableCache") Extensions for reliableCache
   @JsonKey(name: '_reliableCache')
-  Element? get reliableCacheElement;
+  PrimitiveElement? get reliableCacheElement;
   @override
 
   /// [documentation] Documentation about the system's messaging capabilities for
@@ -8506,7 +8550,7 @@ abstract class _CapabilityStatementMessaging
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement;
+  PrimitiveElement? get documentationElement;
   @override
 
   /// [supportedMessage] References to message definitions for messages this
@@ -8564,7 +8608,7 @@ mixin _$CapabilityStatementEndpoint {
 
   /// [addressElement] ("_address") Extensions for address
   @JsonKey(name: '_address')
-  Element? get addressElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get addressElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -8586,7 +8630,7 @@ abstract class $CapabilityStatementEndpointCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       Coding protocol,
       FhirUrl? address,
-      @JsonKey(name: '_address') Element? addressElement});
+      @JsonKey(name: '_address') PrimitiveElement? addressElement});
 
   $CodingCopyWith<$Res> get protocol;
 }
@@ -8636,7 +8680,7 @@ class _$CapabilityStatementEndpointCopyWithImpl<$Res,
       addressElement: freezed == addressElement
           ? _value.addressElement
           : addressElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -8664,7 +8708,7 @@ abstract class _$$CapabilityStatementEndpointImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       Coding protocol,
       FhirUrl? address,
-      @JsonKey(name: '_address') Element? addressElement});
+      @JsonKey(name: '_address') PrimitiveElement? addressElement});
 
   @override
   $CodingCopyWith<$Res> get protocol;
@@ -8714,7 +8758,7 @@ class __$$CapabilityStatementEndpointImplCopyWithImpl<$Res>
       addressElement: freezed == addressElement
           ? _value.addressElement
           : addressElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -8815,7 +8859,7 @@ class _$CapabilityStatementEndpointImpl extends _CapabilityStatementEndpoint {
   /// [addressElement] ("_address") Extensions for address
   @override
   @JsonKey(name: '_address')
-  final Element? addressElement;
+  final PrimitiveElement? addressElement;
 
   @override
   String toString() {
@@ -8873,7 +8917,7 @@ abstract class _CapabilityStatementEndpoint
           final List<FhirExtension>? modifierExtension,
           required final Coding protocol,
           final FhirUrl? address,
-          @JsonKey(name: '_address') final Element? addressElement}) =
+          @JsonKey(name: '_address') final PrimitiveElement? addressElement}) =
       _$CapabilityStatementEndpointImpl;
   const _CapabilityStatementEndpoint._() : super._();
 
@@ -8924,7 +8968,7 @@ abstract class _CapabilityStatementEndpoint
 
   /// [addressElement] ("_address") Extensions for address
   @JsonKey(name: '_address')
-  Element? get addressElement;
+  PrimitiveElement? get addressElement;
   @override
   @JsonKey(ignore: true)
   _$$CapabilityStatementEndpointImplCopyWith<_$CapabilityStatementEndpointImpl>
@@ -8972,7 +9016,7 @@ mixin _$CapabilityStatementSupportedMessage {
 
   /// [modeElement] ("_mode") Extensions for mode
   @JsonKey(name: '_mode')
-  Element? get modeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get modeElement => throw _privateConstructorUsedError;
 
   /// [definition] Points to a message definition that identifies the messaging
   ///  event, message structure, allowed responses, etc.
@@ -8998,7 +9042,7 @@ abstract class $CapabilityStatementSupportedMessageCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? mode,
-      @JsonKey(name: '_mode') Element? modeElement,
+      @JsonKey(name: '_mode') PrimitiveElement? modeElement,
       FhirCanonical definition});
 }
 
@@ -9043,7 +9087,7 @@ class _$CapabilityStatementSupportedMessageCopyWithImpl<$Res,
       modeElement: freezed == modeElement
           ? _value.modeElement
           : modeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       definition: null == definition
           ? _value.definition
           : definition // ignore: cast_nullable_to_non_nullable
@@ -9066,7 +9110,7 @@ abstract class _$$CapabilityStatementSupportedMessageImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? mode,
-      @JsonKey(name: '_mode') Element? modeElement,
+      @JsonKey(name: '_mode') PrimitiveElement? modeElement,
       FhirCanonical definition});
 }
 
@@ -9110,7 +9154,7 @@ class __$$CapabilityStatementSupportedMessageImplCopyWithImpl<$Res>
       modeElement: freezed == modeElement
           ? _value.modeElement
           : modeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       definition: null == definition
           ? _value.definition
           : definition // ignore: cast_nullable_to_non_nullable
@@ -9211,7 +9255,7 @@ class _$CapabilityStatementSupportedMessageImpl
   /// [modeElement] ("_mode") Extensions for mode
   @override
   @JsonKey(name: '_mode')
-  final Element? modeElement;
+  final PrimitiveElement? modeElement;
 
   /// [definition] Points to a message definition that identifies the messaging
   ///  event, message structure, allowed responses, etc.
@@ -9274,7 +9318,7 @@ abstract class _CapabilityStatementSupportedMessage
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final FhirCode? mode,
-          @JsonKey(name: '_mode') final Element? modeElement,
+          @JsonKey(name: '_mode') final PrimitiveElement? modeElement,
           required final FhirCanonical definition}) =
       _$CapabilityStatementSupportedMessageImpl;
   const _CapabilityStatementSupportedMessage._() : super._();
@@ -9322,7 +9366,7 @@ abstract class _CapabilityStatementSupportedMessage
 
   /// [modeElement] ("_mode") Extensions for mode
   @JsonKey(name: '_mode')
-  Element? get modeElement;
+  PrimitiveElement? get modeElement;
   @override
 
   /// [definition] Points to a message definition that identifies the messaging
@@ -9376,7 +9420,7 @@ mixin _$CapabilityStatementDocument {
 
   /// [modeElement] ("_mode") Extensions for mode
   @JsonKey(name: '_mode')
-  Element? get modeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get modeElement => throw _privateConstructorUsedError;
 
   /// [documentation] A description of how the application supports or uses the
   ///  specified document profile.  For example, when documents are created, what
@@ -9385,7 +9429,8 @@ mixin _$CapabilityStatementDocument {
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get documentationElement =>
+      throw _privateConstructorUsedError;
 
   /// [profile] A profile on the document Bundle that constrains which resources
   ///  are present, and their contents.
@@ -9410,9 +9455,9 @@ abstract class $CapabilityStatementDocumentCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? mode,
-      @JsonKey(name: '_mode') Element? modeElement,
+      @JsonKey(name: '_mode') PrimitiveElement? modeElement,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement,
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       FhirCanonical profile});
 }
 
@@ -9459,7 +9504,7 @@ class _$CapabilityStatementDocumentCopyWithImpl<$Res,
       modeElement: freezed == modeElement
           ? _value.modeElement
           : modeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -9467,7 +9512,7 @@ class _$CapabilityStatementDocumentCopyWithImpl<$Res,
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       profile: null == profile
           ? _value.profile
           : profile // ignore: cast_nullable_to_non_nullable
@@ -9490,9 +9535,9 @@ abstract class _$$CapabilityStatementDocumentImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? mode,
-      @JsonKey(name: '_mode') Element? modeElement,
+      @JsonKey(name: '_mode') PrimitiveElement? modeElement,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement,
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       FhirCanonical profile});
 }
 
@@ -9538,7 +9583,7 @@ class __$$CapabilityStatementDocumentImplCopyWithImpl<$Res>
       modeElement: freezed == modeElement
           ? _value.modeElement
           : modeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -9546,7 +9591,7 @@ class __$$CapabilityStatementDocumentImplCopyWithImpl<$Res>
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       profile: null == profile
           ? _value.profile
           : profile // ignore: cast_nullable_to_non_nullable
@@ -9648,7 +9693,7 @@ class _$CapabilityStatementDocumentImpl extends _CapabilityStatementDocument {
   /// [modeElement] ("_mode") Extensions for mode
   @override
   @JsonKey(name: '_mode')
-  final Element? modeElement;
+  final PrimitiveElement? modeElement;
 
   /// [documentation] A description of how the application supports or uses the
   ///  specified document profile.  For example, when documents are created, what
@@ -9659,7 +9704,7 @@ class _$CapabilityStatementDocumentImpl extends _CapabilityStatementDocument {
   /// [documentationElement] ("_documentation") Extensions for documentation
   @override
   @JsonKey(name: '_documentation')
-  final Element? documentationElement;
+  final PrimitiveElement? documentationElement;
 
   /// [profile] A profile on the document Bundle that constrains which resources
   ///  are present, and their contents.
@@ -9726,9 +9771,10 @@ abstract class _CapabilityStatementDocument
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final FhirCode? mode,
-          @JsonKey(name: '_mode') final Element? modeElement,
+          @JsonKey(name: '_mode') final PrimitiveElement? modeElement,
           final FhirMarkdown? documentation,
-          @JsonKey(name: '_documentation') final Element? documentationElement,
+          @JsonKey(name: '_documentation')
+          final PrimitiveElement? documentationElement,
           required final FhirCanonical profile}) =
       _$CapabilityStatementDocumentImpl;
   const _CapabilityStatementDocument._() : super._();
@@ -9775,7 +9821,7 @@ abstract class _CapabilityStatementDocument
 
   /// [modeElement] ("_mode") Extensions for mode
   @JsonKey(name: '_mode')
-  Element? get modeElement;
+  PrimitiveElement? get modeElement;
   @override
 
   /// [documentation] A description of how the application supports or uses the
@@ -9786,7 +9832,7 @@ abstract class _CapabilityStatementDocument
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement;
+  PrimitiveElement? get documentationElement;
   @override
 
   /// [profile] A profile on the document Bundle that constrains which resources
@@ -9826,14 +9872,15 @@ mixin _$CompartmentDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -9885,7 +9932,7 @@ mixin _$CompartmentDefinition {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   /// [identifier] A formal identifier that is used to identify this {{title}}
   ///  when it is represented in other formats, or referenced in a specification,
@@ -9903,7 +9950,7 @@ mixin _$CompartmentDefinition {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -9912,7 +9959,7 @@ mixin _$CompartmentDefinition {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement =>
+  PrimitiveElement? get versionAlgorithmStringElement =>
       throw _privateConstructorUsedError;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -9926,7 +9973,7 @@ mixin _$CompartmentDefinition {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [title] A short, descriptive, user-friendly title for the capability
   ///  statement.
@@ -9934,7 +9981,7 @@ mixin _$CompartmentDefinition {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [status] The status of this compartment definition. Enables tracking the
   ///  life-cycle of the content.
@@ -9942,7 +9989,7 @@ mixin _$CompartmentDefinition {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [experimental] A Boolean value to indicate that this compartment definition
   ///  is authored for testing purposes (or education/evaluation/marketing) and
@@ -9951,7 +9998,8 @@ mixin _$CompartmentDefinition {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get experimentalElement =>
+      throw _privateConstructorUsedError;
 
   /// [date] The date  (and optionally time) when the compartment definition was
   ///  last significantly changed. The date must change when the business version
@@ -9962,7 +10010,7 @@ mixin _$CompartmentDefinition {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the compartment definition.
@@ -9970,7 +10018,7 @@ mixin _$CompartmentDefinition {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get publisherElement => throw _privateConstructorUsedError;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -9982,7 +10030,8 @@ mixin _$CompartmentDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -10001,7 +10050,7 @@ mixin _$CompartmentDefinition {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get purposeElement => throw _privateConstructorUsedError;
 
   /// [copyright] A copyright statement relating to the {{title}} and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
@@ -10010,7 +10059,7 @@ mixin _$CompartmentDefinition {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -10020,21 +10069,22 @@ mixin _$CompartmentDefinition {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightLabelElement =>
+      throw _privateConstructorUsedError;
 
   /// [code] Which compartment this definition describes.
   FhirCode? get code => throw _privateConstructorUsedError;
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get codeElement => throw _privateConstructorUsedError;
 
   /// [search] Whether the search syntax is supported,.
   FhirBoolean? get search => throw _privateConstructorUsedError;
 
   /// [searchElement] ("_search") Extensions for search
   @JsonKey(name: '_search')
-  Element? get searchElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get searchElement => throw _privateConstructorUsedError;
 
   /// [resource] Information about how a resource is related to the compartment.
   List<CompartmentDefinitionResource>? get resource =>
@@ -10058,49 +10108,49 @@ abstract class $CompartmentDefinitionCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       FhirBoolean? search,
-      @JsonKey(name: '_search') Element? searchElement,
+      @JsonKey(name: '_search') PrimitiveElement? searchElement,
       List<CompartmentDefinitionResource>? resource});
 
   $FhirMetaCopyWith<$Res>? get meta;
@@ -10190,7 +10240,7 @@ class _$CompartmentDefinitionCopyWithImpl<$Res,
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -10198,7 +10248,7 @@ class _$CompartmentDefinitionCopyWithImpl<$Res,
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -10222,7 +10272,7 @@ class _$CompartmentDefinitionCopyWithImpl<$Res,
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -10234,7 +10284,7 @@ class _$CompartmentDefinitionCopyWithImpl<$Res,
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -10242,7 +10292,7 @@ class _$CompartmentDefinitionCopyWithImpl<$Res,
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -10254,7 +10304,7 @@ class _$CompartmentDefinitionCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -10262,7 +10312,7 @@ class _$CompartmentDefinitionCopyWithImpl<$Res,
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -10270,7 +10320,7 @@ class _$CompartmentDefinitionCopyWithImpl<$Res,
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -10278,7 +10328,7 @@ class _$CompartmentDefinitionCopyWithImpl<$Res,
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -10286,7 +10336,7 @@ class _$CompartmentDefinitionCopyWithImpl<$Res,
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -10294,7 +10344,7 @@ class _$CompartmentDefinitionCopyWithImpl<$Res,
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value.contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -10306,7 +10356,7 @@ class _$CompartmentDefinitionCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value.useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -10322,7 +10372,7 @@ class _$CompartmentDefinitionCopyWithImpl<$Res,
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -10330,7 +10380,7 @@ class _$CompartmentDefinitionCopyWithImpl<$Res,
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -10338,7 +10388,7 @@ class _$CompartmentDefinitionCopyWithImpl<$Res,
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       code: freezed == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -10346,7 +10396,7 @@ class _$CompartmentDefinitionCopyWithImpl<$Res,
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       search: freezed == search
           ? _value.search
           : search // ignore: cast_nullable_to_non_nullable
@@ -10354,7 +10404,7 @@ class _$CompartmentDefinitionCopyWithImpl<$Res,
       searchElement: freezed == searchElement
           ? _value.searchElement
           : searchElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       resource: freezed == resource
           ? _value.resource
           : resource // ignore: cast_nullable_to_non_nullable
@@ -10414,49 +10464,49 @@ abstract class _$$CompartmentDefinitionImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       FhirBoolean? search,
-      @JsonKey(name: '_search') Element? searchElement,
+      @JsonKey(name: '_search') PrimitiveElement? searchElement,
       List<CompartmentDefinitionResource>? resource});
 
   @override
@@ -10547,7 +10597,7 @@ class __$$CompartmentDefinitionImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -10555,7 +10605,7 @@ class __$$CompartmentDefinitionImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -10579,7 +10629,7 @@ class __$$CompartmentDefinitionImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value._identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -10591,7 +10641,7 @@ class __$$CompartmentDefinitionImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -10599,7 +10649,7 @@ class __$$CompartmentDefinitionImplCopyWithImpl<$Res>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -10611,7 +10661,7 @@ class __$$CompartmentDefinitionImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -10619,7 +10669,7 @@ class __$$CompartmentDefinitionImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -10627,7 +10677,7 @@ class __$$CompartmentDefinitionImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -10635,7 +10685,7 @@ class __$$CompartmentDefinitionImplCopyWithImpl<$Res>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -10643,7 +10693,7 @@ class __$$CompartmentDefinitionImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -10651,7 +10701,7 @@ class __$$CompartmentDefinitionImplCopyWithImpl<$Res>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value._contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -10663,7 +10713,7 @@ class __$$CompartmentDefinitionImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value._useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -10679,7 +10729,7 @@ class __$$CompartmentDefinitionImplCopyWithImpl<$Res>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -10687,7 +10737,7 @@ class __$$CompartmentDefinitionImplCopyWithImpl<$Res>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -10695,7 +10745,7 @@ class __$$CompartmentDefinitionImplCopyWithImpl<$Res>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       code: freezed == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -10703,7 +10753,7 @@ class __$$CompartmentDefinitionImplCopyWithImpl<$Res>
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       search: freezed == search
           ? _value.search
           : search // ignore: cast_nullable_to_non_nullable
@@ -10711,7 +10761,7 @@ class __$$CompartmentDefinitionImplCopyWithImpl<$Res>
       searchElement: freezed == searchElement
           ? _value.searchElement
           : searchElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       resource: freezed == resource
           ? _value._resource
           : resource // ignore: cast_nullable_to_non_nullable
@@ -10812,7 +10862,7 @@ class _$CompartmentDefinitionImpl extends _CompartmentDefinition {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -10821,7 +10871,7 @@ class _$CompartmentDefinitionImpl extends _CompartmentDefinition {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -10926,7 +10976,7 @@ class _$CompartmentDefinitionImpl extends _CompartmentDefinition {
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   /// [identifier] A formal identifier that is used to identify this {{title}}
   ///  when it is represented in other formats, or referenced in a specification,
@@ -10958,7 +11008,7 @@ class _$CompartmentDefinitionImpl extends _CompartmentDefinition {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -10969,7 +11019,7 @@ class _$CompartmentDefinitionImpl extends _CompartmentDefinition {
   ///  versionAlgorithmString
   @override
   @JsonKey(name: '_versionAlgorithmString')
-  final Element? versionAlgorithmStringElement;
+  final PrimitiveElement? versionAlgorithmStringElement;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -10985,7 +11035,7 @@ class _$CompartmentDefinitionImpl extends _CompartmentDefinition {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [title] A short, descriptive, user-friendly title for the capability
   ///  statement.
@@ -10995,7 +11045,7 @@ class _$CompartmentDefinitionImpl extends _CompartmentDefinition {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [status] The status of this compartment definition. Enables tracking the
   ///  life-cycle of the content.
@@ -11005,7 +11055,7 @@ class _$CompartmentDefinitionImpl extends _CompartmentDefinition {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [experimental] A Boolean value to indicate that this compartment definition
   ///  is authored for testing purposes (or education/evaluation/marketing) and
@@ -11016,7 +11066,7 @@ class _$CompartmentDefinitionImpl extends _CompartmentDefinition {
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @override
   @JsonKey(name: '_experimental')
-  final Element? experimentalElement;
+  final PrimitiveElement? experimentalElement;
 
   /// [date] The date  (and optionally time) when the compartment definition was
   ///  last significantly changed. The date must change when the business version
@@ -11029,7 +11079,7 @@ class _$CompartmentDefinitionImpl extends _CompartmentDefinition {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the compartment definition.
@@ -11039,7 +11089,7 @@ class _$CompartmentDefinitionImpl extends _CompartmentDefinition {
   /// [publisherElement] ("_publisher") Extensions for publisher
   @override
   @JsonKey(name: '_publisher')
-  final Element? publisherElement;
+  final PrimitiveElement? publisherElement;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -11064,7 +11114,7 @@ class _$CompartmentDefinitionImpl extends _CompartmentDefinition {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -11110,7 +11160,7 @@ class _$CompartmentDefinitionImpl extends _CompartmentDefinition {
   /// [purposeElement] ("_purpose") Extensions for purpose
   @override
   @JsonKey(name: '_purpose')
-  final Element? purposeElement;
+  final PrimitiveElement? purposeElement;
 
   /// [copyright] A copyright statement relating to the {{title}} and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
@@ -11121,7 +11171,7 @@ class _$CompartmentDefinitionImpl extends _CompartmentDefinition {
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @override
   @JsonKey(name: '_copyright')
-  final Element? copyrightElement;
+  final PrimitiveElement? copyrightElement;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -11133,7 +11183,7 @@ class _$CompartmentDefinitionImpl extends _CompartmentDefinition {
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @override
   @JsonKey(name: '_copyrightLabel')
-  final Element? copyrightLabelElement;
+  final PrimitiveElement? copyrightLabelElement;
 
   /// [code] Which compartment this definition describes.
   @override
@@ -11142,7 +11192,7 @@ class _$CompartmentDefinitionImpl extends _CompartmentDefinition {
   /// [codeElement] ("_code") Extensions for code
   @override
   @JsonKey(name: '_code')
-  final Element? codeElement;
+  final PrimitiveElement? codeElement;
 
   /// [search] Whether the search syntax is supported,.
   @override
@@ -11151,7 +11201,7 @@ class _$CompartmentDefinitionImpl extends _CompartmentDefinition {
   /// [searchElement] ("_search") Extensions for search
   @override
   @JsonKey(name: '_search')
-  final Element? searchElement;
+  final PrimitiveElement? searchElement;
 
   /// [resource] Information about how a resource is related to the compartment.
   final List<CompartmentDefinitionResource>? _resource;
@@ -11335,49 +11385,52 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUri? url,
-      @JsonKey(name: '_url') final Element? urlElement,
+      @JsonKey(name: '_url') final PrimitiveElement? urlElement,
       final List<Identifier>? identifier,
       final String? version,
-      @JsonKey(name: '_version') final Element? versionElement,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
       final String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      final Element? versionAlgorithmStringElement,
+      final PrimitiveElement? versionAlgorithmStringElement,
       final Coding? versionAlgorithmCoding,
       final String? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final PublicationStatus? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') final Element? experimentalElement,
+      @JsonKey(name: '_experimental')
+      final PrimitiveElement? experimentalElement,
       final FhirDateTime? date,
-      @JsonKey(name: '_date') final Element? dateElement,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
       final String? publisher,
-      @JsonKey(name: '_publisher') final Element? publisherElement,
+      @JsonKey(name: '_publisher') final PrimitiveElement? publisherElement,
       final List<ContactDetail>? contact,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<UsageContext>? useContext,
       final List<CodeableConcept>? jurisdiction,
       final FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') final Element? purposeElement,
+      @JsonKey(name: '_purpose') final PrimitiveElement? purposeElement,
       final FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') final Element? copyrightElement,
+      @JsonKey(name: '_copyright') final PrimitiveElement? copyrightElement,
       final String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') final Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel')
+      final PrimitiveElement? copyrightLabelElement,
       final FhirCode? code,
-      @JsonKey(name: '_code') final Element? codeElement,
+      @JsonKey(name: '_code') final PrimitiveElement? codeElement,
       final FhirBoolean? search,
-      @JsonKey(name: '_search') final Element? searchElement,
+      @JsonKey(name: '_search') final PrimitiveElement? searchElement,
       final List<CompartmentDefinitionResource>?
           resource}) = _$CompartmentDefinitionImpl;
   const _CompartmentDefinition._() : super._();
@@ -11412,7 +11465,7 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -11421,7 +11474,7 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -11478,7 +11531,7 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
 
   /// [identifier] A formal identifier that is used to identify this {{title}}
@@ -11499,7 +11552,7 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
@@ -11510,7 +11563,7 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement;
+  PrimitiveElement? get versionAlgorithmStringElement;
   @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -11526,7 +11579,7 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [title] A short, descriptive, user-friendly title for the capability
@@ -11536,7 +11589,7 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [status] The status of this compartment definition. Enables tracking the
@@ -11546,7 +11599,7 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [experimental] A Boolean value to indicate that this compartment definition
@@ -11557,7 +11610,7 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement;
+  PrimitiveElement? get experimentalElement;
   @override
 
   /// [date] The date  (and optionally time) when the compartment definition was
@@ -11570,7 +11623,7 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [publisher] The name of the organization or individual responsible for the
@@ -11580,7 +11633,7 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement;
+  PrimitiveElement? get publisherElement;
   @override
 
   /// [contact] Contact details to assist a user in finding and communicating
@@ -11595,7 +11648,7 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [useContext] The content was developed with a focus and intent of
@@ -11618,7 +11671,7 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement;
+  PrimitiveElement? get purposeElement;
   @override
 
   /// [copyright] A copyright statement relating to the {{title}} and/or its
@@ -11629,7 +11682,7 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement;
+  PrimitiveElement? get copyrightElement;
   @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
@@ -11641,7 +11694,7 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement;
+  PrimitiveElement? get copyrightLabelElement;
   @override
 
   /// [code] Which compartment this definition describes.
@@ -11650,7 +11703,7 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement;
+  PrimitiveElement? get codeElement;
   @override
 
   /// [search] Whether the search syntax is supported,.
@@ -11659,7 +11712,7 @@ abstract class _CompartmentDefinition extends CompartmentDefinition {
 
   /// [searchElement] ("_search") Extensions for search
   @JsonKey(name: '_search')
-  Element? get searchElement;
+  PrimitiveElement? get searchElement;
   @override
 
   /// [resource] Information about how a resource is related to the compartment.
@@ -11710,7 +11763,7 @@ mixin _$CompartmentDefinitionResource {
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get codeElement => throw _privateConstructorUsedError;
 
   /// [param] The name of a search parameter that represents the link to the
   ///  compartment. More than one may be listed because a resource may be linked
@@ -11726,7 +11779,8 @@ mixin _$CompartmentDefinitionResource {
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get documentationElement =>
+      throw _privateConstructorUsedError;
 
   /// [startParam] Search Parameter for mapping requests made with
   ///  $everything.start (e.g. on
@@ -11735,7 +11789,7 @@ mixin _$CompartmentDefinitionResource {
 
   /// [startParamElement] ("_startParam") Extensions for startParam
   @JsonKey(name: '_startParam')
-  Element? get startParamElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get startParamElement => throw _privateConstructorUsedError;
 
   /// [endParam] Search Parameter for mapping requests made with $everything.end
   ///  (e.g. on [Patient.$everything](patient-operation-everything.html)).
@@ -11743,7 +11797,7 @@ mixin _$CompartmentDefinitionResource {
 
   /// [endParamElement] ("_endParam") Extensions for endParam
   @JsonKey(name: '_endParam')
-  Element? get endParamElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get endParamElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -11764,15 +11818,15 @@ abstract class $CompartmentDefinitionResourceCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       List<String>? param,
       @JsonKey(name: '_param') List<Element>? paramElement,
       String? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement,
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       FhirUri? startParam,
-      @JsonKey(name: '_startParam') Element? startParamElement,
+      @JsonKey(name: '_startParam') PrimitiveElement? startParamElement,
       FhirUri? endParam,
-      @JsonKey(name: '_endParam') Element? endParamElement});
+      @JsonKey(name: '_endParam') PrimitiveElement? endParamElement});
 }
 
 /// @nodoc
@@ -11823,7 +11877,7 @@ class _$CompartmentDefinitionResourceCopyWithImpl<$Res,
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       param: freezed == param
           ? _value.param
           : param // ignore: cast_nullable_to_non_nullable
@@ -11839,7 +11893,7 @@ class _$CompartmentDefinitionResourceCopyWithImpl<$Res,
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       startParam: freezed == startParam
           ? _value.startParam
           : startParam // ignore: cast_nullable_to_non_nullable
@@ -11847,7 +11901,7 @@ class _$CompartmentDefinitionResourceCopyWithImpl<$Res,
       startParamElement: freezed == startParamElement
           ? _value.startParamElement
           : startParamElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       endParam: freezed == endParam
           ? _value.endParam
           : endParam // ignore: cast_nullable_to_non_nullable
@@ -11855,7 +11909,7 @@ class _$CompartmentDefinitionResourceCopyWithImpl<$Res,
       endParamElement: freezed == endParamElement
           ? _value.endParamElement
           : endParamElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -11874,15 +11928,15 @@ abstract class _$$CompartmentDefinitionResourceImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       List<String>? param,
       @JsonKey(name: '_param') List<Element>? paramElement,
       String? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement,
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       FhirUri? startParam,
-      @JsonKey(name: '_startParam') Element? startParamElement,
+      @JsonKey(name: '_startParam') PrimitiveElement? startParamElement,
       FhirUri? endParam,
-      @JsonKey(name: '_endParam') Element? endParamElement});
+      @JsonKey(name: '_endParam') PrimitiveElement? endParamElement});
 }
 
 /// @nodoc
@@ -11932,7 +11986,7 @@ class __$$CompartmentDefinitionResourceImplCopyWithImpl<$Res>
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       param: freezed == param
           ? _value._param
           : param // ignore: cast_nullable_to_non_nullable
@@ -11948,7 +12002,7 @@ class __$$CompartmentDefinitionResourceImplCopyWithImpl<$Res>
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       startParam: freezed == startParam
           ? _value.startParam
           : startParam // ignore: cast_nullable_to_non_nullable
@@ -11956,7 +12010,7 @@ class __$$CompartmentDefinitionResourceImplCopyWithImpl<$Res>
       startParamElement: freezed == startParamElement
           ? _value.startParamElement
           : startParamElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       endParam: freezed == endParam
           ? _value.endParam
           : endParam // ignore: cast_nullable_to_non_nullable
@@ -11964,7 +12018,7 @@ class __$$CompartmentDefinitionResourceImplCopyWithImpl<$Res>
       endParamElement: freezed == endParamElement
           ? _value.endParamElement
           : endParamElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -12069,7 +12123,7 @@ class _$CompartmentDefinitionResourceImpl
   /// [codeElement] ("_code") Extensions for code
   @override
   @JsonKey(name: '_code')
-  final Element? codeElement;
+  final PrimitiveElement? codeElement;
 
   /// [param] The name of a search parameter that represents the link to the
   ///  compartment. More than one may be listed because a resource may be linked
@@ -12109,7 +12163,7 @@ class _$CompartmentDefinitionResourceImpl
   /// [documentationElement] ("_documentation") Extensions for documentation
   @override
   @JsonKey(name: '_documentation')
-  final Element? documentationElement;
+  final PrimitiveElement? documentationElement;
 
   /// [startParam] Search Parameter for mapping requests made with
   ///  $everything.start (e.g. on
@@ -12120,7 +12174,7 @@ class _$CompartmentDefinitionResourceImpl
   /// [startParamElement] ("_startParam") Extensions for startParam
   @override
   @JsonKey(name: '_startParam')
-  final Element? startParamElement;
+  final PrimitiveElement? startParamElement;
 
   /// [endParam] Search Parameter for mapping requests made with $everything.end
   ///  (e.g. on [Patient.$everything](patient-operation-everything.html)).
@@ -12130,7 +12184,7 @@ class _$CompartmentDefinitionResourceImpl
   /// [endParamElement] ("_endParam") Extensions for endParam
   @override
   @JsonKey(name: '_endParam')
-  final Element? endParamElement;
+  final PrimitiveElement? endParamElement;
 
   @override
   String toString() {
@@ -12204,20 +12258,22 @@ class _$CompartmentDefinitionResourceImpl
 abstract class _CompartmentDefinitionResource
     extends CompartmentDefinitionResource {
   const factory _CompartmentDefinitionResource(
-          {final String? id,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final FhirCode? code,
-          @JsonKey(name: '_code') final Element? codeElement,
-          final List<String>? param,
-          @JsonKey(name: '_param') final List<Element>? paramElement,
-          final String? documentation,
-          @JsonKey(name: '_documentation') final Element? documentationElement,
-          final FhirUri? startParam,
-          @JsonKey(name: '_startParam') final Element? startParamElement,
-          final FhirUri? endParam,
-          @JsonKey(name: '_endParam') final Element? endParamElement}) =
-      _$CompartmentDefinitionResourceImpl;
+      {final String? id,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final FhirCode? code,
+      @JsonKey(name: '_code') final PrimitiveElement? codeElement,
+      final List<String>? param,
+      @JsonKey(name: '_param') final List<Element>? paramElement,
+      final String? documentation,
+      @JsonKey(name: '_documentation')
+      final PrimitiveElement? documentationElement,
+      final FhirUri? startParam,
+      @JsonKey(name: '_startParam') final PrimitiveElement? startParamElement,
+      final FhirUri? endParam,
+      @JsonKey(name: '_endParam')
+      final PrimitiveElement?
+          endParamElement}) = _$CompartmentDefinitionResourceImpl;
   const _CompartmentDefinitionResource._() : super._();
 
   factory _CompartmentDefinitionResource.fromJson(Map<String, dynamic> json) =
@@ -12261,7 +12317,7 @@ abstract class _CompartmentDefinitionResource
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement;
+  PrimitiveElement? get codeElement;
   @override
 
   /// [param] The name of a search parameter that represents the link to the
@@ -12281,7 +12337,7 @@ abstract class _CompartmentDefinitionResource
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement;
+  PrimitiveElement? get documentationElement;
   @override
 
   /// [startParam] Search Parameter for mapping requests made with
@@ -12292,7 +12348,7 @@ abstract class _CompartmentDefinitionResource
 
   /// [startParamElement] ("_startParam") Extensions for startParam
   @JsonKey(name: '_startParam')
-  Element? get startParamElement;
+  PrimitiveElement? get startParamElement;
   @override
 
   /// [endParam] Search Parameter for mapping requests made with $everything.end
@@ -12302,7 +12358,7 @@ abstract class _CompartmentDefinitionResource
 
   /// [endParamElement] ("_endParam") Extensions for endParam
   @JsonKey(name: '_endParam')
-  Element? get endParamElement;
+  PrimitiveElement? get endParamElement;
   @override
   @JsonKey(ignore: true)
   _$$CompartmentDefinitionResourceImplCopyWith<
@@ -12337,14 +12393,15 @@ mixin _$GraphDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -12396,7 +12453,7 @@ mixin _$GraphDefinition {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   /// [identifier] A formal identifier that is used to identify this
   ///  GraphDefinition when it is represented in other formats, or referenced in
@@ -12414,7 +12471,7 @@ mixin _$GraphDefinition {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -12423,7 +12480,7 @@ mixin _$GraphDefinition {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement =>
+  PrimitiveElement? get versionAlgorithmStringElement =>
       throw _privateConstructorUsedError;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -12437,7 +12494,7 @@ mixin _$GraphDefinition {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [title] A short, descriptive, user-friendly title for the capability
   ///  statement.
@@ -12445,7 +12502,7 @@ mixin _$GraphDefinition {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [status] The status of this graph definition. Enables tracking the
   ///  life-cycle of the content.
@@ -12453,7 +12510,7 @@ mixin _$GraphDefinition {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [experimental] A Boolean value to indicate that this graph definition is
   ///  authored for testing purposes (or education/evaluation/marketing) and is
@@ -12462,7 +12519,8 @@ mixin _$GraphDefinition {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get experimentalElement =>
+      throw _privateConstructorUsedError;
 
   /// [date] The date  (and optionally time) when the graph definition was last
   ///  significantly changed. The date must change when the business version
@@ -12472,7 +12530,7 @@ mixin _$GraphDefinition {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the graph definition.
@@ -12480,7 +12538,7 @@ mixin _$GraphDefinition {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get publisherElement => throw _privateConstructorUsedError;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -12492,7 +12550,8 @@ mixin _$GraphDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -12511,7 +12570,7 @@ mixin _$GraphDefinition {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get purposeElement => throw _privateConstructorUsedError;
 
   /// [copyright] A copyright statement relating to the graph definition and/or
   ///  its contents. Copyright statements are generally legal restrictions on the
@@ -12520,7 +12579,7 @@ mixin _$GraphDefinition {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -12530,7 +12589,8 @@ mixin _$GraphDefinition {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightLabelElement =>
+      throw _privateConstructorUsedError;
 
   /// [start] The Node at which instances of this graph start. If there is no
   ///  nominated start, the graph can start at any of the nodes.
@@ -12538,7 +12598,7 @@ mixin _$GraphDefinition {
 
   /// [startElement] ("_start") Extensions for start
   @JsonKey(name: '_start')
-  Element? get startElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get startElement => throw _privateConstructorUsedError;
 
   /// [node] Potential target for the link.
   List<GraphDefinitionNode>? get node => throw _privateConstructorUsedError;
@@ -12564,47 +12624,47 @@ abstract class $GraphDefinitionCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirId? start,
-      @JsonKey(name: '_start') Element? startElement,
+      @JsonKey(name: '_start') PrimitiveElement? startElement,
       List<GraphDefinitionNode>? node,
       List<GraphDefinitionLink>? link});
 
@@ -12693,7 +12753,7 @@ class _$GraphDefinitionCopyWithImpl<$Res, $Val extends GraphDefinition>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -12701,7 +12761,7 @@ class _$GraphDefinitionCopyWithImpl<$Res, $Val extends GraphDefinition>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -12725,7 +12785,7 @@ class _$GraphDefinitionCopyWithImpl<$Res, $Val extends GraphDefinition>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -12737,7 +12797,7 @@ class _$GraphDefinitionCopyWithImpl<$Res, $Val extends GraphDefinition>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -12745,7 +12805,7 @@ class _$GraphDefinitionCopyWithImpl<$Res, $Val extends GraphDefinition>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -12757,7 +12817,7 @@ class _$GraphDefinitionCopyWithImpl<$Res, $Val extends GraphDefinition>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -12765,7 +12825,7 @@ class _$GraphDefinitionCopyWithImpl<$Res, $Val extends GraphDefinition>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -12773,7 +12833,7 @@ class _$GraphDefinitionCopyWithImpl<$Res, $Val extends GraphDefinition>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -12781,7 +12841,7 @@ class _$GraphDefinitionCopyWithImpl<$Res, $Val extends GraphDefinition>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -12789,7 +12849,7 @@ class _$GraphDefinitionCopyWithImpl<$Res, $Val extends GraphDefinition>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -12797,7 +12857,7 @@ class _$GraphDefinitionCopyWithImpl<$Res, $Val extends GraphDefinition>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value.contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -12809,7 +12869,7 @@ class _$GraphDefinitionCopyWithImpl<$Res, $Val extends GraphDefinition>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value.useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -12825,7 +12885,7 @@ class _$GraphDefinitionCopyWithImpl<$Res, $Val extends GraphDefinition>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -12833,7 +12893,7 @@ class _$GraphDefinitionCopyWithImpl<$Res, $Val extends GraphDefinition>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -12841,7 +12901,7 @@ class _$GraphDefinitionCopyWithImpl<$Res, $Val extends GraphDefinition>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       start: freezed == start
           ? _value.start
           : start // ignore: cast_nullable_to_non_nullable
@@ -12849,7 +12909,7 @@ class _$GraphDefinitionCopyWithImpl<$Res, $Val extends GraphDefinition>
       startElement: freezed == startElement
           ? _value.startElement
           : startElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       node: freezed == node
           ? _value.node
           : node // ignore: cast_nullable_to_non_nullable
@@ -12912,47 +12972,47 @@ abstract class _$$GraphDefinitionImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirId? start,
-      @JsonKey(name: '_start') Element? startElement,
+      @JsonKey(name: '_start') PrimitiveElement? startElement,
       List<GraphDefinitionNode>? node,
       List<GraphDefinitionLink>? link});
 
@@ -13042,7 +13102,7 @@ class __$$GraphDefinitionImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -13050,7 +13110,7 @@ class __$$GraphDefinitionImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -13074,7 +13134,7 @@ class __$$GraphDefinitionImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value._identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -13086,7 +13146,7 @@ class __$$GraphDefinitionImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -13094,7 +13154,7 @@ class __$$GraphDefinitionImplCopyWithImpl<$Res>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -13106,7 +13166,7 @@ class __$$GraphDefinitionImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -13114,7 +13174,7 @@ class __$$GraphDefinitionImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -13122,7 +13182,7 @@ class __$$GraphDefinitionImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -13130,7 +13190,7 @@ class __$$GraphDefinitionImplCopyWithImpl<$Res>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -13138,7 +13198,7 @@ class __$$GraphDefinitionImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -13146,7 +13206,7 @@ class __$$GraphDefinitionImplCopyWithImpl<$Res>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value._contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -13158,7 +13218,7 @@ class __$$GraphDefinitionImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value._useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -13174,7 +13234,7 @@ class __$$GraphDefinitionImplCopyWithImpl<$Res>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -13182,7 +13242,7 @@ class __$$GraphDefinitionImplCopyWithImpl<$Res>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -13190,7 +13250,7 @@ class __$$GraphDefinitionImplCopyWithImpl<$Res>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       start: freezed == start
           ? _value.start
           : start // ignore: cast_nullable_to_non_nullable
@@ -13198,7 +13258,7 @@ class __$$GraphDefinitionImplCopyWithImpl<$Res>
       startElement: freezed == startElement
           ? _value.startElement
           : startElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       node: freezed == node
           ? _value._node
           : node // ignore: cast_nullable_to_non_nullable
@@ -13303,7 +13363,7 @@ class _$GraphDefinitionImpl extends _GraphDefinition {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -13312,7 +13372,7 @@ class _$GraphDefinitionImpl extends _GraphDefinition {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -13417,7 +13477,7 @@ class _$GraphDefinitionImpl extends _GraphDefinition {
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   /// [identifier] A formal identifier that is used to identify this
   ///  GraphDefinition when it is represented in other formats, or referenced in
@@ -13449,7 +13509,7 @@ class _$GraphDefinitionImpl extends _GraphDefinition {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -13460,7 +13520,7 @@ class _$GraphDefinitionImpl extends _GraphDefinition {
   ///  versionAlgorithmString
   @override
   @JsonKey(name: '_versionAlgorithmString')
-  final Element? versionAlgorithmStringElement;
+  final PrimitiveElement? versionAlgorithmStringElement;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -13476,7 +13536,7 @@ class _$GraphDefinitionImpl extends _GraphDefinition {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [title] A short, descriptive, user-friendly title for the capability
   ///  statement.
@@ -13486,7 +13546,7 @@ class _$GraphDefinitionImpl extends _GraphDefinition {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [status] The status of this graph definition. Enables tracking the
   ///  life-cycle of the content.
@@ -13496,7 +13556,7 @@ class _$GraphDefinitionImpl extends _GraphDefinition {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [experimental] A Boolean value to indicate that this graph definition is
   ///  authored for testing purposes (or education/evaluation/marketing) and is
@@ -13507,7 +13567,7 @@ class _$GraphDefinitionImpl extends _GraphDefinition {
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @override
   @JsonKey(name: '_experimental')
-  final Element? experimentalElement;
+  final PrimitiveElement? experimentalElement;
 
   /// [date] The date  (and optionally time) when the graph definition was last
   ///  significantly changed. The date must change when the business version
@@ -13519,7 +13579,7 @@ class _$GraphDefinitionImpl extends _GraphDefinition {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the graph definition.
@@ -13529,7 +13589,7 @@ class _$GraphDefinitionImpl extends _GraphDefinition {
   /// [publisherElement] ("_publisher") Extensions for publisher
   @override
   @JsonKey(name: '_publisher')
-  final Element? publisherElement;
+  final PrimitiveElement? publisherElement;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -13554,7 +13614,7 @@ class _$GraphDefinitionImpl extends _GraphDefinition {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -13600,7 +13660,7 @@ class _$GraphDefinitionImpl extends _GraphDefinition {
   /// [purposeElement] ("_purpose") Extensions for purpose
   @override
   @JsonKey(name: '_purpose')
-  final Element? purposeElement;
+  final PrimitiveElement? purposeElement;
 
   /// [copyright] A copyright statement relating to the graph definition and/or
   ///  its contents. Copyright statements are generally legal restrictions on the
@@ -13611,7 +13671,7 @@ class _$GraphDefinitionImpl extends _GraphDefinition {
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @override
   @JsonKey(name: '_copyright')
-  final Element? copyrightElement;
+  final PrimitiveElement? copyrightElement;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -13623,7 +13683,7 @@ class _$GraphDefinitionImpl extends _GraphDefinition {
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @override
   @JsonKey(name: '_copyrightLabel')
-  final Element? copyrightLabelElement;
+  final PrimitiveElement? copyrightLabelElement;
 
   /// [start] The Node at which instances of this graph start. If there is no
   ///  nominated start, the graph can start at any of the nodes.
@@ -13633,7 +13693,7 @@ class _$GraphDefinitionImpl extends _GraphDefinition {
   /// [startElement] ("_start") Extensions for start
   @override
   @JsonKey(name: '_start')
-  final Element? startElement;
+  final PrimitiveElement? startElement;
 
   /// [node] Potential target for the link.
   final List<GraphDefinitionNode>? _node;
@@ -13827,47 +13887,50 @@ abstract class _GraphDefinition extends GraphDefinition {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUri? url,
-      @JsonKey(name: '_url') final Element? urlElement,
+      @JsonKey(name: '_url') final PrimitiveElement? urlElement,
       final List<Identifier>? identifier,
       final String? version,
-      @JsonKey(name: '_version') final Element? versionElement,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
       final String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      final Element? versionAlgorithmStringElement,
+      final PrimitiveElement? versionAlgorithmStringElement,
       final Coding? versionAlgorithmCoding,
       final String? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final PublicationStatus? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') final Element? experimentalElement,
+      @JsonKey(name: '_experimental')
+      final PrimitiveElement? experimentalElement,
       final FhirDateTime? date,
-      @JsonKey(name: '_date') final Element? dateElement,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
       final String? publisher,
-      @JsonKey(name: '_publisher') final Element? publisherElement,
+      @JsonKey(name: '_publisher') final PrimitiveElement? publisherElement,
       final List<ContactDetail>? contact,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<UsageContext>? useContext,
       final List<CodeableConcept>? jurisdiction,
       final FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') final Element? purposeElement,
+      @JsonKey(name: '_purpose') final PrimitiveElement? purposeElement,
       final FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') final Element? copyrightElement,
+      @JsonKey(name: '_copyright') final PrimitiveElement? copyrightElement,
       final String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') final Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel')
+      final PrimitiveElement? copyrightLabelElement,
       final FhirId? start,
-      @JsonKey(name: '_start') final Element? startElement,
+      @JsonKey(name: '_start') final PrimitiveElement? startElement,
       final List<GraphDefinitionNode>? node,
       final List<GraphDefinitionLink>? link}) = _$GraphDefinitionImpl;
   const _GraphDefinition._() : super._();
@@ -13902,7 +13965,7 @@ abstract class _GraphDefinition extends GraphDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -13911,7 +13974,7 @@ abstract class _GraphDefinition extends GraphDefinition {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -13968,7 +14031,7 @@ abstract class _GraphDefinition extends GraphDefinition {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
 
   /// [identifier] A formal identifier that is used to identify this
@@ -13989,7 +14052,7 @@ abstract class _GraphDefinition extends GraphDefinition {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
@@ -14000,7 +14063,7 @@ abstract class _GraphDefinition extends GraphDefinition {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement;
+  PrimitiveElement? get versionAlgorithmStringElement;
   @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -14016,7 +14079,7 @@ abstract class _GraphDefinition extends GraphDefinition {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [title] A short, descriptive, user-friendly title for the capability
@@ -14026,7 +14089,7 @@ abstract class _GraphDefinition extends GraphDefinition {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [status] The status of this graph definition. Enables tracking the
@@ -14036,7 +14099,7 @@ abstract class _GraphDefinition extends GraphDefinition {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [experimental] A Boolean value to indicate that this graph definition is
@@ -14047,7 +14110,7 @@ abstract class _GraphDefinition extends GraphDefinition {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement;
+  PrimitiveElement? get experimentalElement;
   @override
 
   /// [date] The date  (and optionally time) when the graph definition was last
@@ -14059,7 +14122,7 @@ abstract class _GraphDefinition extends GraphDefinition {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [publisher] The name of the organization or individual responsible for the
@@ -14069,7 +14132,7 @@ abstract class _GraphDefinition extends GraphDefinition {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement;
+  PrimitiveElement? get publisherElement;
   @override
 
   /// [contact] Contact details to assist a user in finding and communicating
@@ -14084,7 +14147,7 @@ abstract class _GraphDefinition extends GraphDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [useContext] The content was developed with a focus and intent of
@@ -14107,7 +14170,7 @@ abstract class _GraphDefinition extends GraphDefinition {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement;
+  PrimitiveElement? get purposeElement;
   @override
 
   /// [copyright] A copyright statement relating to the graph definition and/or
@@ -14118,7 +14181,7 @@ abstract class _GraphDefinition extends GraphDefinition {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement;
+  PrimitiveElement? get copyrightElement;
   @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
@@ -14130,7 +14193,7 @@ abstract class _GraphDefinition extends GraphDefinition {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement;
+  PrimitiveElement? get copyrightLabelElement;
   @override
 
   /// [start] The Node at which instances of this graph start. If there is no
@@ -14140,7 +14203,7 @@ abstract class _GraphDefinition extends GraphDefinition {
 
   /// [startElement] ("_start") Extensions for start
   @JsonKey(name: '_start')
-  Element? get startElement;
+  PrimitiveElement? get startElement;
   @override
 
   /// [node] Potential target for the link.
@@ -14194,7 +14257,7 @@ mixin _$GraphDefinitionNode {
 
   /// [nodeIdElement] ("_nodeId") Extensions for nodeId
   @JsonKey(name: '_nodeId')
-  Element? get nodeIdElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nodeIdElement => throw _privateConstructorUsedError;
 
   /// [description] Information about why this node is of interest in this graph
   ///  definition.
@@ -14202,14 +14265,15 @@ mixin _$GraphDefinitionNode {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [type] Type of resource this link refers to.
   FhirCode? get type => throw _privateConstructorUsedError;
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get typeElement => throw _privateConstructorUsedError;
 
   /// [profile] Profile for the target resource.
   FhirCanonical? get profile => throw _privateConstructorUsedError;
@@ -14231,11 +14295,11 @@ abstract class $GraphDefinitionNodeCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? nodeId,
-      @JsonKey(name: '_nodeId') Element? nodeIdElement,
+      @JsonKey(name: '_nodeId') PrimitiveElement? nodeIdElement,
       String? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       FhirCanonical? profile});
 }
 
@@ -14283,7 +14347,7 @@ class _$GraphDefinitionNodeCopyWithImpl<$Res, $Val extends GraphDefinitionNode>
       nodeIdElement: freezed == nodeIdElement
           ? _value.nodeIdElement
           : nodeIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -14291,7 +14355,7 @@ class _$GraphDefinitionNodeCopyWithImpl<$Res, $Val extends GraphDefinitionNode>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -14299,7 +14363,7 @@ class _$GraphDefinitionNodeCopyWithImpl<$Res, $Val extends GraphDefinitionNode>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       profile: freezed == profile
           ? _value.profile
           : profile // ignore: cast_nullable_to_non_nullable
@@ -14321,11 +14385,11 @@ abstract class _$$GraphDefinitionNodeImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? nodeId,
-      @JsonKey(name: '_nodeId') Element? nodeIdElement,
+      @JsonKey(name: '_nodeId') PrimitiveElement? nodeIdElement,
       String? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       FhirCanonical? profile});
 }
 
@@ -14371,7 +14435,7 @@ class __$$GraphDefinitionNodeImplCopyWithImpl<$Res>
       nodeIdElement: freezed == nodeIdElement
           ? _value.nodeIdElement
           : nodeIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -14379,7 +14443,7 @@ class __$$GraphDefinitionNodeImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -14387,7 +14451,7 @@ class __$$GraphDefinitionNodeImplCopyWithImpl<$Res>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       profile: freezed == profile
           ? _value.profile
           : profile // ignore: cast_nullable_to_non_nullable
@@ -14489,7 +14553,7 @@ class _$GraphDefinitionNodeImpl extends _GraphDefinitionNode {
   /// [nodeIdElement] ("_nodeId") Extensions for nodeId
   @override
   @JsonKey(name: '_nodeId')
-  final Element? nodeIdElement;
+  final PrimitiveElement? nodeIdElement;
 
   /// [description] Information about why this node is of interest in this graph
   ///  definition.
@@ -14499,7 +14563,7 @@ class _$GraphDefinitionNodeImpl extends _GraphDefinitionNode {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [type] Type of resource this link refers to.
   @override
@@ -14508,7 +14572,7 @@ class _$GraphDefinitionNodeImpl extends _GraphDefinitionNode {
   /// [typeElement] ("_type") Extensions for type
   @override
   @JsonKey(name: '_type')
-  final Element? typeElement;
+  final PrimitiveElement? typeElement;
 
   /// [profile] Profile for the target resource.
   @override
@@ -14578,11 +14642,11 @@ abstract class _GraphDefinitionNode extends GraphDefinitionNode {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirId? nodeId,
-      @JsonKey(name: '_nodeId') final Element? nodeIdElement,
+      @JsonKey(name: '_nodeId') final PrimitiveElement? nodeIdElement,
       final String? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final FhirCode? type,
-      @JsonKey(name: '_type') final Element? typeElement,
+      @JsonKey(name: '_type') final PrimitiveElement? typeElement,
       final FhirCanonical? profile}) = _$GraphDefinitionNodeImpl;
   const _GraphDefinitionNode._() : super._();
 
@@ -14627,7 +14691,7 @@ abstract class _GraphDefinitionNode extends GraphDefinitionNode {
 
   /// [nodeIdElement] ("_nodeId") Extensions for nodeId
   @JsonKey(name: '_nodeId')
-  Element? get nodeIdElement;
+  PrimitiveElement? get nodeIdElement;
   @override
 
   /// [description] Information about why this node is of interest in this graph
@@ -14637,7 +14701,7 @@ abstract class _GraphDefinitionNode extends GraphDefinitionNode {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [type] Type of resource this link refers to.
@@ -14646,7 +14710,7 @@ abstract class _GraphDefinitionNode extends GraphDefinitionNode {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement;
+  PrimitiveElement? get typeElement;
   @override
 
   /// [profile] Profile for the target resource.
@@ -14697,28 +14761,29 @@ mixin _$GraphDefinitionLink {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [min] Minimum occurrences for this link.
   FhirInteger? get min => throw _privateConstructorUsedError;
 
   /// [minElement] ("_min") Extensions for min
   @JsonKey(name: '_min')
-  Element? get minElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get minElement => throw _privateConstructorUsedError;
 
   /// [max] Maximum occurrences for this link.
   String? get max => throw _privateConstructorUsedError;
 
   /// [maxElement] ("_max") Extensions for max
   @JsonKey(name: '_max')
-  Element? get maxElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get maxElement => throw _privateConstructorUsedError;
 
   /// [sourceId] The source node for this link.
   FhirId? get sourceId => throw _privateConstructorUsedError;
 
   /// [sourceIdElement] ("_sourceId") Extensions for sourceId
   @JsonKey(name: '_sourceId')
-  Element? get sourceIdElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get sourceIdElement => throw _privateConstructorUsedError;
 
   /// [path] A FHIRPath expression that identifies one of FHIR References to
   ///  other resources.
@@ -14726,28 +14791,28 @@ mixin _$GraphDefinitionLink {
 
   /// [pathElement] ("_path") Extensions for path
   @JsonKey(name: '_path')
-  Element? get pathElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get pathElement => throw _privateConstructorUsedError;
 
   /// [sliceName] Which slice (if profiled).
   String? get sliceName => throw _privateConstructorUsedError;
 
   /// [sliceNameElement] ("_sliceName") Extensions for sliceName
   @JsonKey(name: '_sliceName')
-  Element? get sliceNameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get sliceNameElement => throw _privateConstructorUsedError;
 
   /// [targetId] The target node for this link.
   FhirId? get targetId => throw _privateConstructorUsedError;
 
   /// [targetIdElement] ("_targetId") Extensions for targetId
   @JsonKey(name: '_targetId')
-  Element? get targetIdElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get targetIdElement => throw _privateConstructorUsedError;
 
   /// [params] A set of parameters to look up.
   String? get params => throw _privateConstructorUsedError;
 
   /// [paramsElement] ("_params") Extensions for params
   @JsonKey(name: '_params')
-  Element? get paramsElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get paramsElement => throw _privateConstructorUsedError;
 
   /// [compartment] Compartment Consistency Rules.
   List<GraphDefinitionCompartment>? get compartment =>
@@ -14770,21 +14835,21 @@ abstract class $GraphDefinitionLinkCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       FhirInteger? min,
-      @JsonKey(name: '_min') Element? minElement,
+      @JsonKey(name: '_min') PrimitiveElement? minElement,
       String? max,
-      @JsonKey(name: '_max') Element? maxElement,
+      @JsonKey(name: '_max') PrimitiveElement? maxElement,
       FhirId? sourceId,
-      @JsonKey(name: '_sourceId') Element? sourceIdElement,
+      @JsonKey(name: '_sourceId') PrimitiveElement? sourceIdElement,
       String? path,
-      @JsonKey(name: '_path') Element? pathElement,
+      @JsonKey(name: '_path') PrimitiveElement? pathElement,
       String? sliceName,
-      @JsonKey(name: '_sliceName') Element? sliceNameElement,
+      @JsonKey(name: '_sliceName') PrimitiveElement? sliceNameElement,
       FhirId? targetId,
-      @JsonKey(name: '_targetId') Element? targetIdElement,
+      @JsonKey(name: '_targetId') PrimitiveElement? targetIdElement,
       String? params,
-      @JsonKey(name: '_params') Element? paramsElement,
+      @JsonKey(name: '_params') PrimitiveElement? paramsElement,
       List<GraphDefinitionCompartment>? compartment});
 }
 
@@ -14842,7 +14907,7 @@ class _$GraphDefinitionLinkCopyWithImpl<$Res, $Val extends GraphDefinitionLink>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       min: freezed == min
           ? _value.min
           : min // ignore: cast_nullable_to_non_nullable
@@ -14850,7 +14915,7 @@ class _$GraphDefinitionLinkCopyWithImpl<$Res, $Val extends GraphDefinitionLink>
       minElement: freezed == minElement
           ? _value.minElement
           : minElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       max: freezed == max
           ? _value.max
           : max // ignore: cast_nullable_to_non_nullable
@@ -14858,7 +14923,7 @@ class _$GraphDefinitionLinkCopyWithImpl<$Res, $Val extends GraphDefinitionLink>
       maxElement: freezed == maxElement
           ? _value.maxElement
           : maxElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sourceId: freezed == sourceId
           ? _value.sourceId
           : sourceId // ignore: cast_nullable_to_non_nullable
@@ -14866,7 +14931,7 @@ class _$GraphDefinitionLinkCopyWithImpl<$Res, $Val extends GraphDefinitionLink>
       sourceIdElement: freezed == sourceIdElement
           ? _value.sourceIdElement
           : sourceIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       path: freezed == path
           ? _value.path
           : path // ignore: cast_nullable_to_non_nullable
@@ -14874,7 +14939,7 @@ class _$GraphDefinitionLinkCopyWithImpl<$Res, $Val extends GraphDefinitionLink>
       pathElement: freezed == pathElement
           ? _value.pathElement
           : pathElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sliceName: freezed == sliceName
           ? _value.sliceName
           : sliceName // ignore: cast_nullable_to_non_nullable
@@ -14882,7 +14947,7 @@ class _$GraphDefinitionLinkCopyWithImpl<$Res, $Val extends GraphDefinitionLink>
       sliceNameElement: freezed == sliceNameElement
           ? _value.sliceNameElement
           : sliceNameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       targetId: freezed == targetId
           ? _value.targetId
           : targetId // ignore: cast_nullable_to_non_nullable
@@ -14890,7 +14955,7 @@ class _$GraphDefinitionLinkCopyWithImpl<$Res, $Val extends GraphDefinitionLink>
       targetIdElement: freezed == targetIdElement
           ? _value.targetIdElement
           : targetIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       params: freezed == params
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
@@ -14898,7 +14963,7 @@ class _$GraphDefinitionLinkCopyWithImpl<$Res, $Val extends GraphDefinitionLink>
       paramsElement: freezed == paramsElement
           ? _value.paramsElement
           : paramsElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       compartment: freezed == compartment
           ? _value.compartment
           : compartment // ignore: cast_nullable_to_non_nullable
@@ -14920,21 +14985,21 @@ abstract class _$$GraphDefinitionLinkImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       FhirInteger? min,
-      @JsonKey(name: '_min') Element? minElement,
+      @JsonKey(name: '_min') PrimitiveElement? minElement,
       String? max,
-      @JsonKey(name: '_max') Element? maxElement,
+      @JsonKey(name: '_max') PrimitiveElement? maxElement,
       FhirId? sourceId,
-      @JsonKey(name: '_sourceId') Element? sourceIdElement,
+      @JsonKey(name: '_sourceId') PrimitiveElement? sourceIdElement,
       String? path,
-      @JsonKey(name: '_path') Element? pathElement,
+      @JsonKey(name: '_path') PrimitiveElement? pathElement,
       String? sliceName,
-      @JsonKey(name: '_sliceName') Element? sliceNameElement,
+      @JsonKey(name: '_sliceName') PrimitiveElement? sliceNameElement,
       FhirId? targetId,
-      @JsonKey(name: '_targetId') Element? targetIdElement,
+      @JsonKey(name: '_targetId') PrimitiveElement? targetIdElement,
       String? params,
-      @JsonKey(name: '_params') Element? paramsElement,
+      @JsonKey(name: '_params') PrimitiveElement? paramsElement,
       List<GraphDefinitionCompartment>? compartment});
 }
 
@@ -14990,7 +15055,7 @@ class __$$GraphDefinitionLinkImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       min: freezed == min
           ? _value.min
           : min // ignore: cast_nullable_to_non_nullable
@@ -14998,7 +15063,7 @@ class __$$GraphDefinitionLinkImplCopyWithImpl<$Res>
       minElement: freezed == minElement
           ? _value.minElement
           : minElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       max: freezed == max
           ? _value.max
           : max // ignore: cast_nullable_to_non_nullable
@@ -15006,7 +15071,7 @@ class __$$GraphDefinitionLinkImplCopyWithImpl<$Res>
       maxElement: freezed == maxElement
           ? _value.maxElement
           : maxElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sourceId: freezed == sourceId
           ? _value.sourceId
           : sourceId // ignore: cast_nullable_to_non_nullable
@@ -15014,7 +15079,7 @@ class __$$GraphDefinitionLinkImplCopyWithImpl<$Res>
       sourceIdElement: freezed == sourceIdElement
           ? _value.sourceIdElement
           : sourceIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       path: freezed == path
           ? _value.path
           : path // ignore: cast_nullable_to_non_nullable
@@ -15022,7 +15087,7 @@ class __$$GraphDefinitionLinkImplCopyWithImpl<$Res>
       pathElement: freezed == pathElement
           ? _value.pathElement
           : pathElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sliceName: freezed == sliceName
           ? _value.sliceName
           : sliceName // ignore: cast_nullable_to_non_nullable
@@ -15030,7 +15095,7 @@ class __$$GraphDefinitionLinkImplCopyWithImpl<$Res>
       sliceNameElement: freezed == sliceNameElement
           ? _value.sliceNameElement
           : sliceNameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       targetId: freezed == targetId
           ? _value.targetId
           : targetId // ignore: cast_nullable_to_non_nullable
@@ -15038,7 +15103,7 @@ class __$$GraphDefinitionLinkImplCopyWithImpl<$Res>
       targetIdElement: freezed == targetIdElement
           ? _value.targetIdElement
           : targetIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       params: freezed == params
           ? _value.params
           : params // ignore: cast_nullable_to_non_nullable
@@ -15046,7 +15111,7 @@ class __$$GraphDefinitionLinkImplCopyWithImpl<$Res>
       paramsElement: freezed == paramsElement
           ? _value.paramsElement
           : paramsElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       compartment: freezed == compartment
           ? _value._compartment
           : compartment // ignore: cast_nullable_to_non_nullable
@@ -15160,7 +15225,7 @@ class _$GraphDefinitionLinkImpl extends _GraphDefinitionLink {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [min] Minimum occurrences for this link.
   @override
@@ -15169,7 +15234,7 @@ class _$GraphDefinitionLinkImpl extends _GraphDefinitionLink {
   /// [minElement] ("_min") Extensions for min
   @override
   @JsonKey(name: '_min')
-  final Element? minElement;
+  final PrimitiveElement? minElement;
 
   /// [max] Maximum occurrences for this link.
   @override
@@ -15178,7 +15243,7 @@ class _$GraphDefinitionLinkImpl extends _GraphDefinitionLink {
   /// [maxElement] ("_max") Extensions for max
   @override
   @JsonKey(name: '_max')
-  final Element? maxElement;
+  final PrimitiveElement? maxElement;
 
   /// [sourceId] The source node for this link.
   @override
@@ -15187,7 +15252,7 @@ class _$GraphDefinitionLinkImpl extends _GraphDefinitionLink {
   /// [sourceIdElement] ("_sourceId") Extensions for sourceId
   @override
   @JsonKey(name: '_sourceId')
-  final Element? sourceIdElement;
+  final PrimitiveElement? sourceIdElement;
 
   /// [path] A FHIRPath expression that identifies one of FHIR References to
   ///  other resources.
@@ -15197,7 +15262,7 @@ class _$GraphDefinitionLinkImpl extends _GraphDefinitionLink {
   /// [pathElement] ("_path") Extensions for path
   @override
   @JsonKey(name: '_path')
-  final Element? pathElement;
+  final PrimitiveElement? pathElement;
 
   /// [sliceName] Which slice (if profiled).
   @override
@@ -15206,7 +15271,7 @@ class _$GraphDefinitionLinkImpl extends _GraphDefinitionLink {
   /// [sliceNameElement] ("_sliceName") Extensions for sliceName
   @override
   @JsonKey(name: '_sliceName')
-  final Element? sliceNameElement;
+  final PrimitiveElement? sliceNameElement;
 
   /// [targetId] The target node for this link.
   @override
@@ -15215,7 +15280,7 @@ class _$GraphDefinitionLinkImpl extends _GraphDefinitionLink {
   /// [targetIdElement] ("_targetId") Extensions for targetId
   @override
   @JsonKey(name: '_targetId')
-  final Element? targetIdElement;
+  final PrimitiveElement? targetIdElement;
 
   /// [params] A set of parameters to look up.
   @override
@@ -15224,7 +15289,7 @@ class _$GraphDefinitionLinkImpl extends _GraphDefinitionLink {
   /// [paramsElement] ("_params") Extensions for params
   @override
   @JsonKey(name: '_params')
-  final Element? paramsElement;
+  final PrimitiveElement? paramsElement;
 
   /// [compartment] Compartment Consistency Rules.
   final List<GraphDefinitionCompartment>? _compartment;
@@ -15329,27 +15394,27 @@ class _$GraphDefinitionLinkImpl extends _GraphDefinitionLink {
 
 abstract class _GraphDefinitionLink extends GraphDefinitionLink {
   const factory _GraphDefinitionLink(
-          {final String? id,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final String? description,
-          @JsonKey(name: '_description') final Element? descriptionElement,
-          final FhirInteger? min,
-          @JsonKey(name: '_min') final Element? minElement,
-          final String? max,
-          @JsonKey(name: '_max') final Element? maxElement,
-          final FhirId? sourceId,
-          @JsonKey(name: '_sourceId') final Element? sourceIdElement,
-          final String? path,
-          @JsonKey(name: '_path') final Element? pathElement,
-          final String? sliceName,
-          @JsonKey(name: '_sliceName') final Element? sliceNameElement,
-          final FhirId? targetId,
-          @JsonKey(name: '_targetId') final Element? targetIdElement,
-          final String? params,
-          @JsonKey(name: '_params') final Element? paramsElement,
-          final List<GraphDefinitionCompartment>? compartment}) =
-      _$GraphDefinitionLinkImpl;
+      {final String? id,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final String? description,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
+      final FhirInteger? min,
+      @JsonKey(name: '_min') final PrimitiveElement? minElement,
+      final String? max,
+      @JsonKey(name: '_max') final PrimitiveElement? maxElement,
+      final FhirId? sourceId,
+      @JsonKey(name: '_sourceId') final PrimitiveElement? sourceIdElement,
+      final String? path,
+      @JsonKey(name: '_path') final PrimitiveElement? pathElement,
+      final String? sliceName,
+      @JsonKey(name: '_sliceName') final PrimitiveElement? sliceNameElement,
+      final FhirId? targetId,
+      @JsonKey(name: '_targetId') final PrimitiveElement? targetIdElement,
+      final String? params,
+      @JsonKey(name: '_params') final PrimitiveElement? paramsElement,
+      final List<GraphDefinitionCompartment>?
+          compartment}) = _$GraphDefinitionLinkImpl;
   const _GraphDefinitionLink._() : super._();
 
   factory _GraphDefinitionLink.fromJson(Map<String, dynamic> json) =
@@ -15394,7 +15459,7 @@ abstract class _GraphDefinitionLink extends GraphDefinitionLink {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [min] Minimum occurrences for this link.
@@ -15403,7 +15468,7 @@ abstract class _GraphDefinitionLink extends GraphDefinitionLink {
 
   /// [minElement] ("_min") Extensions for min
   @JsonKey(name: '_min')
-  Element? get minElement;
+  PrimitiveElement? get minElement;
   @override
 
   /// [max] Maximum occurrences for this link.
@@ -15412,7 +15477,7 @@ abstract class _GraphDefinitionLink extends GraphDefinitionLink {
 
   /// [maxElement] ("_max") Extensions for max
   @JsonKey(name: '_max')
-  Element? get maxElement;
+  PrimitiveElement? get maxElement;
   @override
 
   /// [sourceId] The source node for this link.
@@ -15421,7 +15486,7 @@ abstract class _GraphDefinitionLink extends GraphDefinitionLink {
 
   /// [sourceIdElement] ("_sourceId") Extensions for sourceId
   @JsonKey(name: '_sourceId')
-  Element? get sourceIdElement;
+  PrimitiveElement? get sourceIdElement;
   @override
 
   /// [path] A FHIRPath expression that identifies one of FHIR References to
@@ -15431,7 +15496,7 @@ abstract class _GraphDefinitionLink extends GraphDefinitionLink {
 
   /// [pathElement] ("_path") Extensions for path
   @JsonKey(name: '_path')
-  Element? get pathElement;
+  PrimitiveElement? get pathElement;
   @override
 
   /// [sliceName] Which slice (if profiled).
@@ -15440,7 +15505,7 @@ abstract class _GraphDefinitionLink extends GraphDefinitionLink {
 
   /// [sliceNameElement] ("_sliceName") Extensions for sliceName
   @JsonKey(name: '_sliceName')
-  Element? get sliceNameElement;
+  PrimitiveElement? get sliceNameElement;
   @override
 
   /// [targetId] The target node for this link.
@@ -15449,7 +15514,7 @@ abstract class _GraphDefinitionLink extends GraphDefinitionLink {
 
   /// [targetIdElement] ("_targetId") Extensions for targetId
   @JsonKey(name: '_targetId')
-  Element? get targetIdElement;
+  PrimitiveElement? get targetIdElement;
   @override
 
   /// [params] A set of parameters to look up.
@@ -15458,7 +15523,7 @@ abstract class _GraphDefinitionLink extends GraphDefinitionLink {
 
   /// [paramsElement] ("_params") Extensions for params
   @JsonKey(name: '_params')
-  Element? get paramsElement;
+  PrimitiveElement? get paramsElement;
   @override
 
   /// [compartment] Compartment Consistency Rules.
@@ -15511,35 +15576,36 @@ mixin _$GraphDefinitionCompartment {
 
   /// [useElement] ("_use") Extensions for use
   @JsonKey(name: '_use')
-  Element? get useElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get useElement => throw _privateConstructorUsedError;
 
   /// [rule] identical | matching | different | no-rule | custom.
   FhirCode? get rule => throw _privateConstructorUsedError;
 
   /// [ruleElement] ("_rule") Extensions for rule
   @JsonKey(name: '_rule')
-  Element? get ruleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get ruleElement => throw _privateConstructorUsedError;
 
   /// [code] Identifies the compartment.
   FhirCode? get code => throw _privateConstructorUsedError;
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get codeElement => throw _privateConstructorUsedError;
 
   /// [expression] Custom rule, as a FHIRPath expression.
   String? get expression => throw _privateConstructorUsedError;
 
   /// [expressionElement] ("_expression") Extensions for expression
   @JsonKey(name: '_expression')
-  Element? get expressionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get expressionElement => throw _privateConstructorUsedError;
 
   /// [description] Documentation for FHIRPath expression.
   String? get description => throw _privateConstructorUsedError;
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -15559,15 +15625,15 @@ abstract class $GraphDefinitionCompartmentCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? use,
-      @JsonKey(name: '_use') Element? useElement,
+      @JsonKey(name: '_use') PrimitiveElement? useElement,
       FhirCode? rule,
-      @JsonKey(name: '_rule') Element? ruleElement,
+      @JsonKey(name: '_rule') PrimitiveElement? ruleElement,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       String? expression,
-      @JsonKey(name: '_expression') Element? expressionElement,
+      @JsonKey(name: '_expression') PrimitiveElement? expressionElement,
       String? description,
-      @JsonKey(name: '_description') Element? descriptionElement});
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement});
 }
 
 /// @nodoc
@@ -15618,7 +15684,7 @@ class _$GraphDefinitionCompartmentCopyWithImpl<$Res,
       useElement: freezed == useElement
           ? _value.useElement
           : useElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       rule: freezed == rule
           ? _value.rule
           : rule // ignore: cast_nullable_to_non_nullable
@@ -15626,7 +15692,7 @@ class _$GraphDefinitionCompartmentCopyWithImpl<$Res,
       ruleElement: freezed == ruleElement
           ? _value.ruleElement
           : ruleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       code: freezed == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -15634,7 +15700,7 @@ class _$GraphDefinitionCompartmentCopyWithImpl<$Res,
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       expression: freezed == expression
           ? _value.expression
           : expression // ignore: cast_nullable_to_non_nullable
@@ -15642,7 +15708,7 @@ class _$GraphDefinitionCompartmentCopyWithImpl<$Res,
       expressionElement: freezed == expressionElement
           ? _value.expressionElement
           : expressionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -15650,7 +15716,7 @@ class _$GraphDefinitionCompartmentCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -15669,15 +15735,15 @@ abstract class _$$GraphDefinitionCompartmentImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? use,
-      @JsonKey(name: '_use') Element? useElement,
+      @JsonKey(name: '_use') PrimitiveElement? useElement,
       FhirCode? rule,
-      @JsonKey(name: '_rule') Element? ruleElement,
+      @JsonKey(name: '_rule') PrimitiveElement? ruleElement,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       String? expression,
-      @JsonKey(name: '_expression') Element? expressionElement,
+      @JsonKey(name: '_expression') PrimitiveElement? expressionElement,
       String? description,
-      @JsonKey(name: '_description') Element? descriptionElement});
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement});
 }
 
 /// @nodoc
@@ -15727,7 +15793,7 @@ class __$$GraphDefinitionCompartmentImplCopyWithImpl<$Res>
       useElement: freezed == useElement
           ? _value.useElement
           : useElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       rule: freezed == rule
           ? _value.rule
           : rule // ignore: cast_nullable_to_non_nullable
@@ -15735,7 +15801,7 @@ class __$$GraphDefinitionCompartmentImplCopyWithImpl<$Res>
       ruleElement: freezed == ruleElement
           ? _value.ruleElement
           : ruleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       code: freezed == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -15743,7 +15809,7 @@ class __$$GraphDefinitionCompartmentImplCopyWithImpl<$Res>
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       expression: freezed == expression
           ? _value.expression
           : expression // ignore: cast_nullable_to_non_nullable
@@ -15751,7 +15817,7 @@ class __$$GraphDefinitionCompartmentImplCopyWithImpl<$Res>
       expressionElement: freezed == expressionElement
           ? _value.expressionElement
           : expressionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -15759,7 +15825,7 @@ class __$$GraphDefinitionCompartmentImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -15863,7 +15929,7 @@ class _$GraphDefinitionCompartmentImpl extends _GraphDefinitionCompartment {
   /// [useElement] ("_use") Extensions for use
   @override
   @JsonKey(name: '_use')
-  final Element? useElement;
+  final PrimitiveElement? useElement;
 
   /// [rule] identical | matching | different | no-rule | custom.
   @override
@@ -15872,7 +15938,7 @@ class _$GraphDefinitionCompartmentImpl extends _GraphDefinitionCompartment {
   /// [ruleElement] ("_rule") Extensions for rule
   @override
   @JsonKey(name: '_rule')
-  final Element? ruleElement;
+  final PrimitiveElement? ruleElement;
 
   /// [code] Identifies the compartment.
   @override
@@ -15881,7 +15947,7 @@ class _$GraphDefinitionCompartmentImpl extends _GraphDefinitionCompartment {
   /// [codeElement] ("_code") Extensions for code
   @override
   @JsonKey(name: '_code')
-  final Element? codeElement;
+  final PrimitiveElement? codeElement;
 
   /// [expression] Custom rule, as a FHIRPath expression.
   @override
@@ -15890,7 +15956,7 @@ class _$GraphDefinitionCompartmentImpl extends _GraphDefinitionCompartment {
   /// [expressionElement] ("_expression") Extensions for expression
   @override
   @JsonKey(name: '_expression')
-  final Element? expressionElement;
+  final PrimitiveElement? expressionElement;
 
   /// [description] Documentation for FHIRPath expression.
   @override
@@ -15899,7 +15965,7 @@ class _$GraphDefinitionCompartmentImpl extends _GraphDefinitionCompartment {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   @override
   String toString() {
@@ -15970,20 +16036,21 @@ class _$GraphDefinitionCompartmentImpl extends _GraphDefinitionCompartment {
 
 abstract class _GraphDefinitionCompartment extends GraphDefinitionCompartment {
   const factory _GraphDefinitionCompartment(
-          {final String? id,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final FhirCode? use,
-          @JsonKey(name: '_use') final Element? useElement,
-          final FhirCode? rule,
-          @JsonKey(name: '_rule') final Element? ruleElement,
-          final FhirCode? code,
-          @JsonKey(name: '_code') final Element? codeElement,
-          final String? expression,
-          @JsonKey(name: '_expression') final Element? expressionElement,
-          final String? description,
-          @JsonKey(name: '_description') final Element? descriptionElement}) =
-      _$GraphDefinitionCompartmentImpl;
+      {final String? id,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final FhirCode? use,
+      @JsonKey(name: '_use') final PrimitiveElement? useElement,
+      final FhirCode? rule,
+      @JsonKey(name: '_rule') final PrimitiveElement? ruleElement,
+      final FhirCode? code,
+      @JsonKey(name: '_code') final PrimitiveElement? codeElement,
+      final String? expression,
+      @JsonKey(name: '_expression') final PrimitiveElement? expressionElement,
+      final String? description,
+      @JsonKey(name: '_description')
+      final PrimitiveElement?
+          descriptionElement}) = _$GraphDefinitionCompartmentImpl;
   const _GraphDefinitionCompartment._() : super._();
 
   factory _GraphDefinitionCompartment.fromJson(Map<String, dynamic> json) =
@@ -16029,7 +16096,7 @@ abstract class _GraphDefinitionCompartment extends GraphDefinitionCompartment {
 
   /// [useElement] ("_use") Extensions for use
   @JsonKey(name: '_use')
-  Element? get useElement;
+  PrimitiveElement? get useElement;
   @override
 
   /// [rule] identical | matching | different | no-rule | custom.
@@ -16038,7 +16105,7 @@ abstract class _GraphDefinitionCompartment extends GraphDefinitionCompartment {
 
   /// [ruleElement] ("_rule") Extensions for rule
   @JsonKey(name: '_rule')
-  Element? get ruleElement;
+  PrimitiveElement? get ruleElement;
   @override
 
   /// [code] Identifies the compartment.
@@ -16047,7 +16114,7 @@ abstract class _GraphDefinitionCompartment extends GraphDefinitionCompartment {
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement;
+  PrimitiveElement? get codeElement;
   @override
 
   /// [expression] Custom rule, as a FHIRPath expression.
@@ -16056,7 +16123,7 @@ abstract class _GraphDefinitionCompartment extends GraphDefinitionCompartment {
 
   /// [expressionElement] ("_expression") Extensions for expression
   @JsonKey(name: '_expression')
-  Element? get expressionElement;
+  PrimitiveElement? get expressionElement;
   @override
 
   /// [description] Documentation for FHIRPath expression.
@@ -16065,7 +16132,7 @@ abstract class _GraphDefinitionCompartment extends GraphDefinitionCompartment {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
   @JsonKey(ignore: true)
   _$$GraphDefinitionCompartmentImplCopyWith<_$GraphDefinitionCompartmentImpl>
@@ -16099,14 +16166,15 @@ mixin _$ImplementationGuide {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -16158,7 +16226,7 @@ mixin _$ImplementationGuide {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   /// [identifier] A formal identifier that is used to identify this
   ///  implementation guide when it is represented in other formats, or
@@ -16176,7 +16244,7 @@ mixin _$ImplementationGuide {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -16185,7 +16253,7 @@ mixin _$ImplementationGuide {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement =>
+  PrimitiveElement? get versionAlgorithmStringElement =>
       throw _privateConstructorUsedError;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -16199,7 +16267,7 @@ mixin _$ImplementationGuide {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [title] A short, descriptive, user-friendly title for the implementation
   ///  guide.
@@ -16207,7 +16275,7 @@ mixin _$ImplementationGuide {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [status] The status of this implementation guide. Enables tracking the
   ///  life-cycle of the content.
@@ -16215,7 +16283,7 @@ mixin _$ImplementationGuide {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [experimental] A Boolean value to indicate that this implementation guide
   ///  is authored for testing purposes (or education/evaluation/marketing) and
@@ -16224,7 +16292,8 @@ mixin _$ImplementationGuide {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get experimentalElement =>
+      throw _privateConstructorUsedError;
 
   /// [date] The date  (and optionally time) when the implementation guide was
   ///  last significantly changed. The date must change when the business version
@@ -16235,7 +16304,7 @@ mixin _$ImplementationGuide {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the implementation guide.
@@ -16243,7 +16312,7 @@ mixin _$ImplementationGuide {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get publisherElement => throw _privateConstructorUsedError;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -16255,7 +16324,8 @@ mixin _$ImplementationGuide {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -16274,7 +16344,7 @@ mixin _$ImplementationGuide {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get purposeElement => throw _privateConstructorUsedError;
 
   /// [copyright] A copyright statement relating to the implementation guide
   ///  and/or its contents. Copyright statements are generally legal restrictions
@@ -16283,7 +16353,7 @@ mixin _$ImplementationGuide {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -16293,7 +16363,8 @@ mixin _$ImplementationGuide {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightLabelElement =>
+      throw _privateConstructorUsedError;
 
   /// [packageId] The NPM package name for this Implementation Guide, used in the
   ///  NPM package distribution, which is the primary mechanism by which FHIR
@@ -16303,7 +16374,7 @@ mixin _$ImplementationGuide {
 
   /// [packageIdElement] ("_packageId") Extensions for packageId
   @JsonKey(name: '_packageId')
-  Element? get packageIdElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get packageIdElement => throw _privateConstructorUsedError;
 
   /// [license] The license that applies to this Implementation Guide, using an
   ///  SPDX license code, or 'not-open-source'.
@@ -16311,7 +16382,7 @@ mixin _$ImplementationGuide {
 
   /// [licenseElement] ("_license") Extensions for license
   @JsonKey(name: '_license')
-  Element? get licenseElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get licenseElement => throw _privateConstructorUsedError;
 
   /// [fhirVersion] The version(s) of the FHIR specification that this
   ///  ImplementationGuide targets - e.g. describes how to use. The value of this
@@ -16363,49 +16434,49 @@ abstract class $ImplementationGuideCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirId? packageId,
-      @JsonKey(name: '_packageId') Element? packageIdElement,
+      @JsonKey(name: '_packageId') PrimitiveElement? packageIdElement,
       FhirCode? license,
-      @JsonKey(name: '_license') Element? licenseElement,
+      @JsonKey(name: '_license') PrimitiveElement? licenseElement,
       List<FhirCode>? fhirVersion,
       @JsonKey(name: '_fhirVersion') List<Element>? fhirVersionElement,
       List<ImplementationGuideDependsOn>? dependsOn,
@@ -16506,7 +16577,7 @@ class _$ImplementationGuideCopyWithImpl<$Res, $Val extends ImplementationGuide>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -16514,7 +16585,7 @@ class _$ImplementationGuideCopyWithImpl<$Res, $Val extends ImplementationGuide>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -16538,7 +16609,7 @@ class _$ImplementationGuideCopyWithImpl<$Res, $Val extends ImplementationGuide>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -16550,7 +16621,7 @@ class _$ImplementationGuideCopyWithImpl<$Res, $Val extends ImplementationGuide>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -16558,7 +16629,7 @@ class _$ImplementationGuideCopyWithImpl<$Res, $Val extends ImplementationGuide>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -16570,7 +16641,7 @@ class _$ImplementationGuideCopyWithImpl<$Res, $Val extends ImplementationGuide>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -16578,7 +16649,7 @@ class _$ImplementationGuideCopyWithImpl<$Res, $Val extends ImplementationGuide>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -16586,7 +16657,7 @@ class _$ImplementationGuideCopyWithImpl<$Res, $Val extends ImplementationGuide>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -16594,7 +16665,7 @@ class _$ImplementationGuideCopyWithImpl<$Res, $Val extends ImplementationGuide>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -16602,7 +16673,7 @@ class _$ImplementationGuideCopyWithImpl<$Res, $Val extends ImplementationGuide>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -16610,7 +16681,7 @@ class _$ImplementationGuideCopyWithImpl<$Res, $Val extends ImplementationGuide>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value.contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -16622,7 +16693,7 @@ class _$ImplementationGuideCopyWithImpl<$Res, $Val extends ImplementationGuide>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value.useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -16638,7 +16709,7 @@ class _$ImplementationGuideCopyWithImpl<$Res, $Val extends ImplementationGuide>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -16646,7 +16717,7 @@ class _$ImplementationGuideCopyWithImpl<$Res, $Val extends ImplementationGuide>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -16654,7 +16725,7 @@ class _$ImplementationGuideCopyWithImpl<$Res, $Val extends ImplementationGuide>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       packageId: freezed == packageId
           ? _value.packageId
           : packageId // ignore: cast_nullable_to_non_nullable
@@ -16662,7 +16733,7 @@ class _$ImplementationGuideCopyWithImpl<$Res, $Val extends ImplementationGuide>
       packageIdElement: freezed == packageIdElement
           ? _value.packageIdElement
           : packageIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       license: freezed == license
           ? _value.license
           : license // ignore: cast_nullable_to_non_nullable
@@ -16670,7 +16741,7 @@ class _$ImplementationGuideCopyWithImpl<$Res, $Val extends ImplementationGuide>
       licenseElement: freezed == licenseElement
           ? _value.licenseElement
           : licenseElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       fhirVersion: freezed == fhirVersion
           ? _value.fhirVersion
           : fhirVersion // ignore: cast_nullable_to_non_nullable
@@ -16775,49 +16846,49 @@ abstract class _$$ImplementationGuideImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirId? packageId,
-      @JsonKey(name: '_packageId') Element? packageIdElement,
+      @JsonKey(name: '_packageId') PrimitiveElement? packageIdElement,
       FhirCode? license,
-      @JsonKey(name: '_license') Element? licenseElement,
+      @JsonKey(name: '_license') PrimitiveElement? licenseElement,
       List<FhirCode>? fhirVersion,
       @JsonKey(name: '_fhirVersion') List<Element>? fhirVersionElement,
       List<ImplementationGuideDependsOn>? dependsOn,
@@ -16921,7 +16992,7 @@ class __$$ImplementationGuideImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -16929,7 +17000,7 @@ class __$$ImplementationGuideImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -16953,7 +17024,7 @@ class __$$ImplementationGuideImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value._identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -16965,7 +17036,7 @@ class __$$ImplementationGuideImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -16973,7 +17044,7 @@ class __$$ImplementationGuideImplCopyWithImpl<$Res>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -16985,7 +17056,7 @@ class __$$ImplementationGuideImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -16993,7 +17064,7 @@ class __$$ImplementationGuideImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -17001,7 +17072,7 @@ class __$$ImplementationGuideImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -17009,7 +17080,7 @@ class __$$ImplementationGuideImplCopyWithImpl<$Res>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -17017,7 +17088,7 @@ class __$$ImplementationGuideImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -17025,7 +17096,7 @@ class __$$ImplementationGuideImplCopyWithImpl<$Res>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value._contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -17037,7 +17108,7 @@ class __$$ImplementationGuideImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value._useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -17053,7 +17124,7 @@ class __$$ImplementationGuideImplCopyWithImpl<$Res>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -17061,7 +17132,7 @@ class __$$ImplementationGuideImplCopyWithImpl<$Res>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -17069,7 +17140,7 @@ class __$$ImplementationGuideImplCopyWithImpl<$Res>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       packageId: freezed == packageId
           ? _value.packageId
           : packageId // ignore: cast_nullable_to_non_nullable
@@ -17077,7 +17148,7 @@ class __$$ImplementationGuideImplCopyWithImpl<$Res>
       packageIdElement: freezed == packageIdElement
           ? _value.packageIdElement
           : packageIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       license: freezed == license
           ? _value.license
           : license // ignore: cast_nullable_to_non_nullable
@@ -17085,7 +17156,7 @@ class __$$ImplementationGuideImplCopyWithImpl<$Res>
       licenseElement: freezed == licenseElement
           ? _value.licenseElement
           : licenseElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       fhirVersion: freezed == fhirVersion
           ? _value._fhirVersion
           : fhirVersion // ignore: cast_nullable_to_non_nullable
@@ -17214,7 +17285,7 @@ class _$ImplementationGuideImpl extends _ImplementationGuide {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -17223,7 +17294,7 @@ class _$ImplementationGuideImpl extends _ImplementationGuide {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -17328,7 +17399,7 @@ class _$ImplementationGuideImpl extends _ImplementationGuide {
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   /// [identifier] A formal identifier that is used to identify this
   ///  implementation guide when it is represented in other formats, or
@@ -17360,7 +17431,7 @@ class _$ImplementationGuideImpl extends _ImplementationGuide {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -17371,7 +17442,7 @@ class _$ImplementationGuideImpl extends _ImplementationGuide {
   ///  versionAlgorithmString
   @override
   @JsonKey(name: '_versionAlgorithmString')
-  final Element? versionAlgorithmStringElement;
+  final PrimitiveElement? versionAlgorithmStringElement;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -17387,7 +17458,7 @@ class _$ImplementationGuideImpl extends _ImplementationGuide {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [title] A short, descriptive, user-friendly title for the implementation
   ///  guide.
@@ -17397,7 +17468,7 @@ class _$ImplementationGuideImpl extends _ImplementationGuide {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [status] The status of this implementation guide. Enables tracking the
   ///  life-cycle of the content.
@@ -17407,7 +17478,7 @@ class _$ImplementationGuideImpl extends _ImplementationGuide {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [experimental] A Boolean value to indicate that this implementation guide
   ///  is authored for testing purposes (or education/evaluation/marketing) and
@@ -17418,7 +17489,7 @@ class _$ImplementationGuideImpl extends _ImplementationGuide {
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @override
   @JsonKey(name: '_experimental')
-  final Element? experimentalElement;
+  final PrimitiveElement? experimentalElement;
 
   /// [date] The date  (and optionally time) when the implementation guide was
   ///  last significantly changed. The date must change when the business version
@@ -17431,7 +17502,7 @@ class _$ImplementationGuideImpl extends _ImplementationGuide {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the implementation guide.
@@ -17441,7 +17512,7 @@ class _$ImplementationGuideImpl extends _ImplementationGuide {
   /// [publisherElement] ("_publisher") Extensions for publisher
   @override
   @JsonKey(name: '_publisher')
-  final Element? publisherElement;
+  final PrimitiveElement? publisherElement;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -17466,7 +17537,7 @@ class _$ImplementationGuideImpl extends _ImplementationGuide {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -17512,7 +17583,7 @@ class _$ImplementationGuideImpl extends _ImplementationGuide {
   /// [purposeElement] ("_purpose") Extensions for purpose
   @override
   @JsonKey(name: '_purpose')
-  final Element? purposeElement;
+  final PrimitiveElement? purposeElement;
 
   /// [copyright] A copyright statement relating to the implementation guide
   ///  and/or its contents. Copyright statements are generally legal restrictions
@@ -17523,7 +17594,7 @@ class _$ImplementationGuideImpl extends _ImplementationGuide {
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @override
   @JsonKey(name: '_copyright')
-  final Element? copyrightElement;
+  final PrimitiveElement? copyrightElement;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -17535,7 +17606,7 @@ class _$ImplementationGuideImpl extends _ImplementationGuide {
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @override
   @JsonKey(name: '_copyrightLabel')
-  final Element? copyrightLabelElement;
+  final PrimitiveElement? copyrightLabelElement;
 
   /// [packageId] The NPM package name for this Implementation Guide, used in the
   ///  NPM package distribution, which is the primary mechanism by which FHIR
@@ -17547,7 +17618,7 @@ class _$ImplementationGuideImpl extends _ImplementationGuide {
   /// [packageIdElement] ("_packageId") Extensions for packageId
   @override
   @JsonKey(name: '_packageId')
-  final Element? packageIdElement;
+  final PrimitiveElement? packageIdElement;
 
   /// [license] The license that applies to this Implementation Guide, using an
   ///  SPDX license code, or 'not-open-source'.
@@ -17557,7 +17628,7 @@ class _$ImplementationGuideImpl extends _ImplementationGuide {
   /// [licenseElement] ("_license") Extensions for license
   @override
   @JsonKey(name: '_license')
-  final Element? licenseElement;
+  final PrimitiveElement? licenseElement;
 
   /// [fhirVersion] The version(s) of the FHIR specification that this
   ///  ImplementationGuide targets - e.g. describes how to use. The value of this
@@ -17818,49 +17889,52 @@ abstract class _ImplementationGuide extends ImplementationGuide {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUri? url,
-      @JsonKey(name: '_url') final Element? urlElement,
+      @JsonKey(name: '_url') final PrimitiveElement? urlElement,
       final List<Identifier>? identifier,
       final String? version,
-      @JsonKey(name: '_version') final Element? versionElement,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
       final String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      final Element? versionAlgorithmStringElement,
+      final PrimitiveElement? versionAlgorithmStringElement,
       final Coding? versionAlgorithmCoding,
       final String? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final PublicationStatus? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') final Element? experimentalElement,
+      @JsonKey(name: '_experimental')
+      final PrimitiveElement? experimentalElement,
       final FhirDateTime? date,
-      @JsonKey(name: '_date') final Element? dateElement,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
       final String? publisher,
-      @JsonKey(name: '_publisher') final Element? publisherElement,
+      @JsonKey(name: '_publisher') final PrimitiveElement? publisherElement,
       final List<ContactDetail>? contact,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<UsageContext>? useContext,
       final List<CodeableConcept>? jurisdiction,
       final FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') final Element? purposeElement,
+      @JsonKey(name: '_purpose') final PrimitiveElement? purposeElement,
       final FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') final Element? copyrightElement,
+      @JsonKey(name: '_copyright') final PrimitiveElement? copyrightElement,
       final String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') final Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel')
+      final PrimitiveElement? copyrightLabelElement,
       final FhirId? packageId,
-      @JsonKey(name: '_packageId') final Element? packageIdElement,
+      @JsonKey(name: '_packageId') final PrimitiveElement? packageIdElement,
       final FhirCode? license,
-      @JsonKey(name: '_license') final Element? licenseElement,
+      @JsonKey(name: '_license') final PrimitiveElement? licenseElement,
       final List<FhirCode>? fhirVersion,
       @JsonKey(name: '_fhirVersion') final List<Element>? fhirVersionElement,
       final List<ImplementationGuideDependsOn>? dependsOn,
@@ -17899,7 +17973,7 @@ abstract class _ImplementationGuide extends ImplementationGuide {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -17908,7 +17982,7 @@ abstract class _ImplementationGuide extends ImplementationGuide {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -17965,7 +18039,7 @@ abstract class _ImplementationGuide extends ImplementationGuide {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
 
   /// [identifier] A formal identifier that is used to identify this
@@ -17986,7 +18060,7 @@ abstract class _ImplementationGuide extends ImplementationGuide {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
@@ -17997,7 +18071,7 @@ abstract class _ImplementationGuide extends ImplementationGuide {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement;
+  PrimitiveElement? get versionAlgorithmStringElement;
   @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -18013,7 +18087,7 @@ abstract class _ImplementationGuide extends ImplementationGuide {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [title] A short, descriptive, user-friendly title for the implementation
@@ -18023,7 +18097,7 @@ abstract class _ImplementationGuide extends ImplementationGuide {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [status] The status of this implementation guide. Enables tracking the
@@ -18033,7 +18107,7 @@ abstract class _ImplementationGuide extends ImplementationGuide {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [experimental] A Boolean value to indicate that this implementation guide
@@ -18044,7 +18118,7 @@ abstract class _ImplementationGuide extends ImplementationGuide {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement;
+  PrimitiveElement? get experimentalElement;
   @override
 
   /// [date] The date  (and optionally time) when the implementation guide was
@@ -18057,7 +18131,7 @@ abstract class _ImplementationGuide extends ImplementationGuide {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [publisher] The name of the organization or individual responsible for the
@@ -18067,7 +18141,7 @@ abstract class _ImplementationGuide extends ImplementationGuide {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement;
+  PrimitiveElement? get publisherElement;
   @override
 
   /// [contact] Contact details to assist a user in finding and communicating
@@ -18082,7 +18156,7 @@ abstract class _ImplementationGuide extends ImplementationGuide {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [useContext] The content was developed with a focus and intent of
@@ -18105,7 +18179,7 @@ abstract class _ImplementationGuide extends ImplementationGuide {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement;
+  PrimitiveElement? get purposeElement;
   @override
 
   /// [copyright] A copyright statement relating to the implementation guide
@@ -18116,7 +18190,7 @@ abstract class _ImplementationGuide extends ImplementationGuide {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement;
+  PrimitiveElement? get copyrightElement;
   @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
@@ -18128,7 +18202,7 @@ abstract class _ImplementationGuide extends ImplementationGuide {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement;
+  PrimitiveElement? get copyrightLabelElement;
   @override
 
   /// [packageId] The NPM package name for this Implementation Guide, used in the
@@ -18140,7 +18214,7 @@ abstract class _ImplementationGuide extends ImplementationGuide {
 
   /// [packageIdElement] ("_packageId") Extensions for packageId
   @JsonKey(name: '_packageId')
-  Element? get packageIdElement;
+  PrimitiveElement? get packageIdElement;
   @override
 
   /// [license] The license that applies to this Implementation Guide, using an
@@ -18150,7 +18224,7 @@ abstract class _ImplementationGuide extends ImplementationGuide {
 
   /// [licenseElement] ("_license") Extensions for license
   @JsonKey(name: '_license')
-  Element? get licenseElement;
+  PrimitiveElement? get licenseElement;
   @override
 
   /// [fhirVersion] The version(s) of the FHIR specification that this
@@ -18235,7 +18309,7 @@ mixin _$ImplementationGuideDependsOn {
 
   /// [packageIdElement] ("_packageId") Extensions for packageId
   @JsonKey(name: '_packageId')
-  Element? get packageIdElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get packageIdElement => throw _privateConstructorUsedError;
 
   /// [version] The version of the IG that is depended on, when the correct
   ///  version is required to understand the IG correctly.
@@ -18243,7 +18317,7 @@ mixin _$ImplementationGuideDependsOn {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [reason] A description explaining the nature of the dependency on the
   ///  listed IG.
@@ -18251,7 +18325,7 @@ mixin _$ImplementationGuideDependsOn {
 
   /// [reasonElement] ("_reason") Extensions for reason
   @JsonKey(name: '_reason')
-  Element? get reasonElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get reasonElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -18273,11 +18347,11 @@ abstract class $ImplementationGuideDependsOnCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       FhirCanonical uri,
       FhirId? packageId,
-      @JsonKey(name: '_packageId') Element? packageIdElement,
+      @JsonKey(name: '_packageId') PrimitiveElement? packageIdElement,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       FhirMarkdown? reason,
-      @JsonKey(name: '_reason') Element? reasonElement});
+      @JsonKey(name: '_reason') PrimitiveElement? reasonElement});
 }
 
 /// @nodoc
@@ -18329,7 +18403,7 @@ class _$ImplementationGuideDependsOnCopyWithImpl<$Res,
       packageIdElement: freezed == packageIdElement
           ? _value.packageIdElement
           : packageIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       version: freezed == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
@@ -18337,7 +18411,7 @@ class _$ImplementationGuideDependsOnCopyWithImpl<$Res,
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       reason: freezed == reason
           ? _value.reason
           : reason // ignore: cast_nullable_to_non_nullable
@@ -18345,7 +18419,7 @@ class _$ImplementationGuideDependsOnCopyWithImpl<$Res,
       reasonElement: freezed == reasonElement
           ? _value.reasonElement
           : reasonElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -18365,11 +18439,11 @@ abstract class _$$ImplementationGuideDependsOnImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       FhirCanonical uri,
       FhirId? packageId,
-      @JsonKey(name: '_packageId') Element? packageIdElement,
+      @JsonKey(name: '_packageId') PrimitiveElement? packageIdElement,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       FhirMarkdown? reason,
-      @JsonKey(name: '_reason') Element? reasonElement});
+      @JsonKey(name: '_reason') PrimitiveElement? reasonElement});
 }
 
 /// @nodoc
@@ -18420,7 +18494,7 @@ class __$$ImplementationGuideDependsOnImplCopyWithImpl<$Res>
       packageIdElement: freezed == packageIdElement
           ? _value.packageIdElement
           : packageIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       version: freezed == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
@@ -18428,7 +18502,7 @@ class __$$ImplementationGuideDependsOnImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       reason: freezed == reason
           ? _value.reason
           : reason // ignore: cast_nullable_to_non_nullable
@@ -18436,7 +18510,7 @@ class __$$ImplementationGuideDependsOnImplCopyWithImpl<$Res>
       reasonElement: freezed == reasonElement
           ? _value.reasonElement
           : reasonElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -18540,7 +18614,7 @@ class _$ImplementationGuideDependsOnImpl extends _ImplementationGuideDependsOn {
   /// [packageIdElement] ("_packageId") Extensions for packageId
   @override
   @JsonKey(name: '_packageId')
-  final Element? packageIdElement;
+  final PrimitiveElement? packageIdElement;
 
   /// [version] The version of the IG that is depended on, when the correct
   ///  version is required to understand the IG correctly.
@@ -18550,7 +18624,7 @@ class _$ImplementationGuideDependsOnImpl extends _ImplementationGuideDependsOn {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [reason] A description explaining the nature of the dependency on the
   ///  listed IG.
@@ -18560,7 +18634,7 @@ class _$ImplementationGuideDependsOnImpl extends _ImplementationGuideDependsOn {
   /// [reasonElement] ("_reason") Extensions for reason
   @override
   @JsonKey(name: '_reason')
-  final Element? reasonElement;
+  final PrimitiveElement? reasonElement;
 
   @override
   String toString() {
@@ -18629,11 +18703,11 @@ abstract class _ImplementationGuideDependsOn
           final List<FhirExtension>? modifierExtension,
           required final FhirCanonical uri,
           final FhirId? packageId,
-          @JsonKey(name: '_packageId') final Element? packageIdElement,
+          @JsonKey(name: '_packageId') final PrimitiveElement? packageIdElement,
           final String? version,
-          @JsonKey(name: '_version') final Element? versionElement,
+          @JsonKey(name: '_version') final PrimitiveElement? versionElement,
           final FhirMarkdown? reason,
-          @JsonKey(name: '_reason') final Element? reasonElement}) =
+          @JsonKey(name: '_reason') final PrimitiveElement? reasonElement}) =
       _$ImplementationGuideDependsOnImpl;
   const _ImplementationGuideDependsOn._() : super._();
 
@@ -18683,7 +18757,7 @@ abstract class _ImplementationGuideDependsOn
 
   /// [packageIdElement] ("_packageId") Extensions for packageId
   @JsonKey(name: '_packageId')
-  Element? get packageIdElement;
+  PrimitiveElement? get packageIdElement;
   @override
 
   /// [version] The version of the IG that is depended on, when the correct
@@ -18693,7 +18767,7 @@ abstract class _ImplementationGuideDependsOn
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [reason] A description explaining the nature of the dependency on the
@@ -18703,7 +18777,7 @@ abstract class _ImplementationGuideDependsOn
 
   /// [reasonElement] ("_reason") Extensions for reason
   @JsonKey(name: '_reason')
-  Element? get reasonElement;
+  PrimitiveElement? get reasonElement;
   @override
   @JsonKey(ignore: true)
   _$$ImplementationGuideDependsOnImplCopyWith<
@@ -18751,7 +18825,7 @@ mixin _$ImplementationGuideGlobal {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get typeElement => throw _privateConstructorUsedError;
 
   /// [profile] A reference to the profile that all instances must conform to.
   FhirCanonical get profile => throw _privateConstructorUsedError;
@@ -18773,7 +18847,7 @@ abstract class $ImplementationGuideGlobalCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       FhirCanonical profile});
 }
 
@@ -18818,7 +18892,7 @@ class _$ImplementationGuideGlobalCopyWithImpl<$Res,
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       profile: null == profile
           ? _value.profile
           : profile // ignore: cast_nullable_to_non_nullable
@@ -18841,7 +18915,7 @@ abstract class _$$ImplementationGuideGlobalImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       FhirCanonical profile});
 }
 
@@ -18885,7 +18959,7 @@ class __$$ImplementationGuideGlobalImplCopyWithImpl<$Res>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       profile: null == profile
           ? _value.profile
           : profile // ignore: cast_nullable_to_non_nullable
@@ -18983,7 +19057,7 @@ class _$ImplementationGuideGlobalImpl extends _ImplementationGuideGlobal {
   /// [typeElement] ("_type") Extensions for type
   @override
   @JsonKey(name: '_type')
-  final Element? typeElement;
+  final PrimitiveElement? typeElement;
 
   /// [profile] A reference to the profile that all instances must conform to.
   @override
@@ -19042,7 +19116,7 @@ abstract class _ImplementationGuideGlobal extends ImplementationGuideGlobal {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirCode? type,
-      @JsonKey(name: '_type') final Element? typeElement,
+      @JsonKey(name: '_type') final PrimitiveElement? typeElement,
       required final FhirCanonical profile}) = _$ImplementationGuideGlobalImpl;
   const _ImplementationGuideGlobal._() : super._();
 
@@ -19087,7 +19161,7 @@ abstract class _ImplementationGuideGlobal extends ImplementationGuideGlobal {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement;
+  PrimitiveElement? get typeElement;
   @override
 
   /// [profile] A reference to the profile that all instances must conform to.
@@ -19673,14 +19747,15 @@ mixin _$ImplementationGuideGrouping {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [description] Human readable text describing the package.
   FhirMarkdown? get description => throw _privateConstructorUsedError;
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -19701,9 +19776,9 @@ abstract class $ImplementationGuideGroupingCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement});
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement});
 }
 
 /// @nodoc
@@ -19748,7 +19823,7 @@ class _$ImplementationGuideGroupingCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -19756,7 +19831,7 @@ class _$ImplementationGuideGroupingCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -19775,9 +19850,9 @@ abstract class _$$ImplementationGuideGroupingImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement});
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement});
 }
 
 /// @nodoc
@@ -19821,7 +19896,7 @@ class __$$ImplementationGuideGroupingImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -19829,7 +19904,7 @@ class __$$ImplementationGuideGroupingImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -19926,7 +20001,7 @@ class _$ImplementationGuideGroupingImpl extends _ImplementationGuideGrouping {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [description] Human readable text describing the package.
   @override
@@ -19935,7 +20010,7 @@ class _$ImplementationGuideGroupingImpl extends _ImplementationGuideGrouping {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   @override
   String toString() {
@@ -19995,9 +20070,10 @@ abstract class _ImplementationGuideGrouping
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final String? name,
-          @JsonKey(name: '_name') final Element? nameElement,
+          @JsonKey(name: '_name') final PrimitiveElement? nameElement,
           final FhirMarkdown? description,
-          @JsonKey(name: '_description') final Element? descriptionElement}) =
+          @JsonKey(name: '_description')
+          final PrimitiveElement? descriptionElement}) =
       _$ImplementationGuideGroupingImpl;
   const _ImplementationGuideGrouping._() : super._();
 
@@ -20043,7 +20119,7 @@ abstract class _ImplementationGuideGrouping
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [description] Human readable text describing the package.
@@ -20052,7 +20128,7 @@ abstract class _ImplementationGuideGrouping
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
   @JsonKey(ignore: true)
   _$$ImplementationGuideGroupingImplCopyWith<_$ImplementationGuideGroupingImpl>
@@ -20112,7 +20188,7 @@ mixin _$ImplementationGuideResource {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [description] A description of the reason that a resource has been included
   ///  in the implementation guide.
@@ -20120,14 +20196,15 @@ mixin _$ImplementationGuideResource {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [isExample] If true, indicates the resource is an example instance.
   FhirBoolean? get isExample => throw _privateConstructorUsedError;
 
   /// [isExampleElement] ("_isExample") Extensions for isExample
   @JsonKey(name: '_isExample')
-  Element? get isExampleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get isExampleElement => throw _privateConstructorUsedError;
 
   /// [profile] If present, indicates profile(s) the instance is valid against.
   List<FhirCanonical>? get profile => throw _privateConstructorUsedError;
@@ -20137,7 +20214,7 @@ mixin _$ImplementationGuideResource {
 
   /// [groupingIdElement] ("_groupingId") Extensions for groupingId
   @JsonKey(name: '_groupingId')
-  Element? get groupingIdElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get groupingIdElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -20161,14 +20238,14 @@ abstract class $ImplementationGuideResourceCopyWith<$Res> {
       List<FhirCode>? fhirVersion,
       @JsonKey(name: '_fhirVersion') List<Element>? fhirVersionElement,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       FhirBoolean? isExample,
-      @JsonKey(name: '_isExample') Element? isExampleElement,
+      @JsonKey(name: '_isExample') PrimitiveElement? isExampleElement,
       List<FhirCanonical>? profile,
       FhirId? groupingId,
-      @JsonKey(name: '_groupingId') Element? groupingIdElement});
+      @JsonKey(name: '_groupingId') PrimitiveElement? groupingIdElement});
 
   $ReferenceCopyWith<$Res> get reference;
 }
@@ -20235,7 +20312,7 @@ class _$ImplementationGuideResourceCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -20243,7 +20320,7 @@ class _$ImplementationGuideResourceCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       isExample: freezed == isExample
           ? _value.isExample
           : isExample // ignore: cast_nullable_to_non_nullable
@@ -20251,7 +20328,7 @@ class _$ImplementationGuideResourceCopyWithImpl<$Res,
       isExampleElement: freezed == isExampleElement
           ? _value.isExampleElement
           : isExampleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       profile: freezed == profile
           ? _value.profile
           : profile // ignore: cast_nullable_to_non_nullable
@@ -20263,7 +20340,7 @@ class _$ImplementationGuideResourceCopyWithImpl<$Res,
       groupingIdElement: freezed == groupingIdElement
           ? _value.groupingIdElement
           : groupingIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -20293,14 +20370,14 @@ abstract class _$$ImplementationGuideResourceImplCopyWith<$Res>
       List<FhirCode>? fhirVersion,
       @JsonKey(name: '_fhirVersion') List<Element>? fhirVersionElement,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       FhirBoolean? isExample,
-      @JsonKey(name: '_isExample') Element? isExampleElement,
+      @JsonKey(name: '_isExample') PrimitiveElement? isExampleElement,
       List<FhirCanonical>? profile,
       FhirId? groupingId,
-      @JsonKey(name: '_groupingId') Element? groupingIdElement});
+      @JsonKey(name: '_groupingId') PrimitiveElement? groupingIdElement});
 
   @override
   $ReferenceCopyWith<$Res> get reference;
@@ -20367,7 +20444,7 @@ class __$$ImplementationGuideResourceImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -20375,7 +20452,7 @@ class __$$ImplementationGuideResourceImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       isExample: freezed == isExample
           ? _value.isExample
           : isExample // ignore: cast_nullable_to_non_nullable
@@ -20383,7 +20460,7 @@ class __$$ImplementationGuideResourceImplCopyWithImpl<$Res>
       isExampleElement: freezed == isExampleElement
           ? _value.isExampleElement
           : isExampleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       profile: freezed == profile
           ? _value._profile
           : profile // ignore: cast_nullable_to_non_nullable
@@ -20395,7 +20472,7 @@ class __$$ImplementationGuideResourceImplCopyWithImpl<$Res>
       groupingIdElement: freezed == groupingIdElement
           ? _value.groupingIdElement
           : groupingIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -20539,7 +20616,7 @@ class _$ImplementationGuideResourceImpl extends _ImplementationGuideResource {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [description] A description of the reason that a resource has been included
   ///  in the implementation guide.
@@ -20549,7 +20626,7 @@ class _$ImplementationGuideResourceImpl extends _ImplementationGuideResource {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [isExample] If true, indicates the resource is an example instance.
   @override
@@ -20558,7 +20635,7 @@ class _$ImplementationGuideResourceImpl extends _ImplementationGuideResource {
   /// [isExampleElement] ("_isExample") Extensions for isExample
   @override
   @JsonKey(name: '_isExample')
-  final Element? isExampleElement;
+  final PrimitiveElement? isExampleElement;
 
   /// [profile] If present, indicates profile(s) the instance is valid against.
   final List<FhirCanonical>? _profile;
@@ -20580,7 +20657,7 @@ class _$ImplementationGuideResourceImpl extends _ImplementationGuideResource {
   /// [groupingIdElement] ("_groupingId") Extensions for groupingId
   @override
   @JsonKey(name: '_groupingId')
-  final Element? groupingIdElement;
+  final PrimitiveElement? groupingIdElement;
 
   @override
   String toString() {
@@ -20666,15 +20743,16 @@ abstract class _ImplementationGuideResource
       final List<FhirCode>? fhirVersion,
       @JsonKey(name: '_fhirVersion') final List<Element>? fhirVersionElement,
       final String? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final FhirBoolean? isExample,
-      @JsonKey(name: '_isExample') final Element? isExampleElement,
+      @JsonKey(name: '_isExample') final PrimitiveElement? isExampleElement,
       final List<FhirCanonical>? profile,
       final FhirId? groupingId,
       @JsonKey(name: '_groupingId')
-      final Element? groupingIdElement}) = _$ImplementationGuideResourceImpl;
+      final PrimitiveElement?
+          groupingIdElement}) = _$ImplementationGuideResourceImpl;
   const _ImplementationGuideResource._() : super._();
 
   factory _ImplementationGuideResource.fromJson(Map<String, dynamic> json) =
@@ -20734,7 +20812,7 @@ abstract class _ImplementationGuideResource
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [description] A description of the reason that a resource has been included
@@ -20744,7 +20822,7 @@ abstract class _ImplementationGuideResource
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [isExample] If true, indicates the resource is an example instance.
@@ -20753,7 +20831,7 @@ abstract class _ImplementationGuideResource
 
   /// [isExampleElement] ("_isExample") Extensions for isExample
   @JsonKey(name: '_isExample')
-  Element? get isExampleElement;
+  PrimitiveElement? get isExampleElement;
   @override
 
   /// [profile] If present, indicates profile(s) the instance is valid against.
@@ -20766,7 +20844,7 @@ abstract class _ImplementationGuideResource
 
   /// [groupingIdElement] ("_groupingId") Extensions for groupingId
   @JsonKey(name: '_groupingId')
-  Element? get groupingIdElement;
+  PrimitiveElement? get groupingIdElement;
   @override
   @JsonKey(ignore: true)
   _$$ImplementationGuideResourceImplCopyWith<_$ImplementationGuideResourceImpl>
@@ -20813,7 +20891,7 @@ mixin _$ImplementationGuidePage {
 
   /// [sourceUrlElement] ("_sourceUrl") Extensions for sourceUrl
   @JsonKey(name: '_sourceUrl')
-  Element? get sourceUrlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get sourceUrlElement => throw _privateConstructorUsedError;
 
   /// [sourceString] Indicates the URL or the actual content to provide for the
   ///  page.
@@ -20821,7 +20899,8 @@ mixin _$ImplementationGuidePage {
 
   /// [sourceStringElement] ("_sourceString") Extensions for sourceString
   @JsonKey(name: '_sourceString')
-  Element? get sourceStringElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get sourceStringElement =>
+      throw _privateConstructorUsedError;
 
   /// [sourceMarkdown] Indicates the URL or the actual content to provide for the
   ///  page.
@@ -20829,14 +20908,15 @@ mixin _$ImplementationGuidePage {
 
   /// [sourceMarkdownElement] ("_sourceMarkdown") Extensions for sourceMarkdown
   @JsonKey(name: '_sourceMarkdown')
-  Element? get sourceMarkdownElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get sourceMarkdownElement =>
+      throw _privateConstructorUsedError;
 
   /// [name] The url by which the page should be known when published.
   FhirUrl? get name => throw _privateConstructorUsedError;
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [title] A short title used to represent this page in navigational
   ///  structures such as table of contents, bread crumbs, etc.
@@ -20844,14 +20924,14 @@ mixin _$ImplementationGuidePage {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [generation] A code that indicates how the page is generated.
   FhirCode? get generation => throw _privateConstructorUsedError;
 
   /// [generationElement] ("_generation") Extensions for generation
   @JsonKey(name: '_generation')
-  Element? get generationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get generationElement => throw _privateConstructorUsedError;
 
   /// [page] Nested Pages/Sections under this page.
   List<ImplementationGuidePage>? get page => throw _privateConstructorUsedError;
@@ -20873,17 +20953,17 @@ abstract class $ImplementationGuidePageCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUrl? sourceUrl,
-      @JsonKey(name: '_sourceUrl') Element? sourceUrlElement,
+      @JsonKey(name: '_sourceUrl') PrimitiveElement? sourceUrlElement,
       String? sourceString,
-      @JsonKey(name: '_sourceString') Element? sourceStringElement,
+      @JsonKey(name: '_sourceString') PrimitiveElement? sourceStringElement,
       FhirMarkdown? sourceMarkdown,
-      @JsonKey(name: '_sourceMarkdown') Element? sourceMarkdownElement,
+      @JsonKey(name: '_sourceMarkdown') PrimitiveElement? sourceMarkdownElement,
       FhirUrl? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       FhirCode? generation,
-      @JsonKey(name: '_generation') Element? generationElement,
+      @JsonKey(name: '_generation') PrimitiveElement? generationElement,
       List<ImplementationGuidePage>? page});
 }
 
@@ -20938,7 +21018,7 @@ class _$ImplementationGuidePageCopyWithImpl<$Res,
       sourceUrlElement: freezed == sourceUrlElement
           ? _value.sourceUrlElement
           : sourceUrlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sourceString: freezed == sourceString
           ? _value.sourceString
           : sourceString // ignore: cast_nullable_to_non_nullable
@@ -20946,7 +21026,7 @@ class _$ImplementationGuidePageCopyWithImpl<$Res,
       sourceStringElement: freezed == sourceStringElement
           ? _value.sourceStringElement
           : sourceStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sourceMarkdown: freezed == sourceMarkdown
           ? _value.sourceMarkdown
           : sourceMarkdown // ignore: cast_nullable_to_non_nullable
@@ -20954,7 +21034,7 @@ class _$ImplementationGuidePageCopyWithImpl<$Res,
       sourceMarkdownElement: freezed == sourceMarkdownElement
           ? _value.sourceMarkdownElement
           : sourceMarkdownElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -20962,7 +21042,7 @@ class _$ImplementationGuidePageCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -20970,7 +21050,7 @@ class _$ImplementationGuidePageCopyWithImpl<$Res,
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       generation: freezed == generation
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
@@ -20978,7 +21058,7 @@ class _$ImplementationGuidePageCopyWithImpl<$Res,
       generationElement: freezed == generationElement
           ? _value.generationElement
           : generationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       page: freezed == page
           ? _value.page
           : page // ignore: cast_nullable_to_non_nullable
@@ -21001,17 +21081,17 @@ abstract class _$$ImplementationGuidePageImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUrl? sourceUrl,
-      @JsonKey(name: '_sourceUrl') Element? sourceUrlElement,
+      @JsonKey(name: '_sourceUrl') PrimitiveElement? sourceUrlElement,
       String? sourceString,
-      @JsonKey(name: '_sourceString') Element? sourceStringElement,
+      @JsonKey(name: '_sourceString') PrimitiveElement? sourceStringElement,
       FhirMarkdown? sourceMarkdown,
-      @JsonKey(name: '_sourceMarkdown') Element? sourceMarkdownElement,
+      @JsonKey(name: '_sourceMarkdown') PrimitiveElement? sourceMarkdownElement,
       FhirUrl? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       FhirCode? generation,
-      @JsonKey(name: '_generation') Element? generationElement,
+      @JsonKey(name: '_generation') PrimitiveElement? generationElement,
       List<ImplementationGuidePage>? page});
 }
 
@@ -21065,7 +21145,7 @@ class __$$ImplementationGuidePageImplCopyWithImpl<$Res>
       sourceUrlElement: freezed == sourceUrlElement
           ? _value.sourceUrlElement
           : sourceUrlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sourceString: freezed == sourceString
           ? _value.sourceString
           : sourceString // ignore: cast_nullable_to_non_nullable
@@ -21073,7 +21153,7 @@ class __$$ImplementationGuidePageImplCopyWithImpl<$Res>
       sourceStringElement: freezed == sourceStringElement
           ? _value.sourceStringElement
           : sourceStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sourceMarkdown: freezed == sourceMarkdown
           ? _value.sourceMarkdown
           : sourceMarkdown // ignore: cast_nullable_to_non_nullable
@@ -21081,7 +21161,7 @@ class __$$ImplementationGuidePageImplCopyWithImpl<$Res>
       sourceMarkdownElement: freezed == sourceMarkdownElement
           ? _value.sourceMarkdownElement
           : sourceMarkdownElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -21089,7 +21169,7 @@ class __$$ImplementationGuidePageImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -21097,7 +21177,7 @@ class __$$ImplementationGuidePageImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       generation: freezed == generation
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
@@ -21105,7 +21185,7 @@ class __$$ImplementationGuidePageImplCopyWithImpl<$Res>
       generationElement: freezed == generationElement
           ? _value.generationElement
           : generationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       page: freezed == page
           ? _value._page
           : page // ignore: cast_nullable_to_non_nullable
@@ -21214,7 +21294,7 @@ class _$ImplementationGuidePageImpl extends _ImplementationGuidePage {
   /// [sourceUrlElement] ("_sourceUrl") Extensions for sourceUrl
   @override
   @JsonKey(name: '_sourceUrl')
-  final Element? sourceUrlElement;
+  final PrimitiveElement? sourceUrlElement;
 
   /// [sourceString] Indicates the URL or the actual content to provide for the
   ///  page.
@@ -21224,7 +21304,7 @@ class _$ImplementationGuidePageImpl extends _ImplementationGuidePage {
   /// [sourceStringElement] ("_sourceString") Extensions for sourceString
   @override
   @JsonKey(name: '_sourceString')
-  final Element? sourceStringElement;
+  final PrimitiveElement? sourceStringElement;
 
   /// [sourceMarkdown] Indicates the URL or the actual content to provide for the
   ///  page.
@@ -21234,7 +21314,7 @@ class _$ImplementationGuidePageImpl extends _ImplementationGuidePage {
   /// [sourceMarkdownElement] ("_sourceMarkdown") Extensions for sourceMarkdown
   @override
   @JsonKey(name: '_sourceMarkdown')
-  final Element? sourceMarkdownElement;
+  final PrimitiveElement? sourceMarkdownElement;
 
   /// [name] The url by which the page should be known when published.
   @override
@@ -21243,7 +21323,7 @@ class _$ImplementationGuidePageImpl extends _ImplementationGuidePage {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [title] A short title used to represent this page in navigational
   ///  structures such as table of contents, bread crumbs, etc.
@@ -21253,7 +21333,7 @@ class _$ImplementationGuidePageImpl extends _ImplementationGuidePage {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [generation] A code that indicates how the page is generated.
   @override
@@ -21262,7 +21342,7 @@ class _$ImplementationGuidePageImpl extends _ImplementationGuidePage {
   /// [generationElement] ("_generation") Extensions for generation
   @override
   @JsonKey(name: '_generation')
-  final Element? generationElement;
+  final PrimitiveElement? generationElement;
 
   /// [page] Nested Pages/Sections under this page.
   final List<ImplementationGuidePage>? _page;
@@ -21359,17 +21439,19 @@ abstract class _ImplementationGuidePage extends ImplementationGuidePage {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUrl? sourceUrl,
-      @JsonKey(name: '_sourceUrl') final Element? sourceUrlElement,
+      @JsonKey(name: '_sourceUrl') final PrimitiveElement? sourceUrlElement,
       final String? sourceString,
-      @JsonKey(name: '_sourceString') final Element? sourceStringElement,
+      @JsonKey(name: '_sourceString')
+      final PrimitiveElement? sourceStringElement,
       final FhirMarkdown? sourceMarkdown,
-      @JsonKey(name: '_sourceMarkdown') final Element? sourceMarkdownElement,
+      @JsonKey(name: '_sourceMarkdown')
+      final PrimitiveElement? sourceMarkdownElement,
       final FhirUrl? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final FhirCode? generation,
-      @JsonKey(name: '_generation') final Element? generationElement,
+      @JsonKey(name: '_generation') final PrimitiveElement? generationElement,
       final List<ImplementationGuidePage>?
           page}) = _$ImplementationGuidePageImpl;
   const _ImplementationGuidePage._() : super._();
@@ -21415,7 +21497,7 @@ abstract class _ImplementationGuidePage extends ImplementationGuidePage {
 
   /// [sourceUrlElement] ("_sourceUrl") Extensions for sourceUrl
   @JsonKey(name: '_sourceUrl')
-  Element? get sourceUrlElement;
+  PrimitiveElement? get sourceUrlElement;
   @override
 
   /// [sourceString] Indicates the URL or the actual content to provide for the
@@ -21425,7 +21507,7 @@ abstract class _ImplementationGuidePage extends ImplementationGuidePage {
 
   /// [sourceStringElement] ("_sourceString") Extensions for sourceString
   @JsonKey(name: '_sourceString')
-  Element? get sourceStringElement;
+  PrimitiveElement? get sourceStringElement;
   @override
 
   /// [sourceMarkdown] Indicates the URL or the actual content to provide for the
@@ -21435,7 +21517,7 @@ abstract class _ImplementationGuidePage extends ImplementationGuidePage {
 
   /// [sourceMarkdownElement] ("_sourceMarkdown") Extensions for sourceMarkdown
   @JsonKey(name: '_sourceMarkdown')
-  Element? get sourceMarkdownElement;
+  PrimitiveElement? get sourceMarkdownElement;
   @override
 
   /// [name] The url by which the page should be known when published.
@@ -21444,7 +21526,7 @@ abstract class _ImplementationGuidePage extends ImplementationGuidePage {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [title] A short title used to represent this page in navigational
@@ -21454,7 +21536,7 @@ abstract class _ImplementationGuidePage extends ImplementationGuidePage {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [generation] A code that indicates how the page is generated.
@@ -21463,7 +21545,7 @@ abstract class _ImplementationGuidePage extends ImplementationGuidePage {
 
   /// [generationElement] ("_generation") Extensions for generation
   @JsonKey(name: '_generation')
-  Element? get generationElement;
+  PrimitiveElement? get generationElement;
   @override
 
   /// [page] Nested Pages/Sections under this page.
@@ -21517,7 +21599,7 @@ mixin _$ImplementationGuideParameter {
 
   /// [valueElement] ("_value") Extensions for value
   @JsonKey(name: '_value')
-  Element? get valueElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -21539,7 +21621,7 @@ abstract class $ImplementationGuideParameterCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       Coding code,
       String? value,
-      @JsonKey(name: '_value') Element? valueElement});
+      @JsonKey(name: '_value') PrimitiveElement? valueElement});
 
   $CodingCopyWith<$Res> get code;
 }
@@ -21589,7 +21671,7 @@ class _$ImplementationGuideParameterCopyWithImpl<$Res,
       valueElement: freezed == valueElement
           ? _value.valueElement
           : valueElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -21617,7 +21699,7 @@ abstract class _$$ImplementationGuideParameterImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       Coding code,
       String? value,
-      @JsonKey(name: '_value') Element? valueElement});
+      @JsonKey(name: '_value') PrimitiveElement? valueElement});
 
   @override
   $CodingCopyWith<$Res> get code;
@@ -21667,7 +21749,7 @@ class __$$ImplementationGuideParameterImplCopyWithImpl<$Res>
       valueElement: freezed == valueElement
           ? _value.valueElement
           : valueElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -21766,7 +21848,7 @@ class _$ImplementationGuideParameterImpl extends _ImplementationGuideParameter {
   /// [valueElement] ("_value") Extensions for value
   @override
   @JsonKey(name: '_value')
-  final Element? valueElement;
+  final PrimitiveElement? valueElement;
 
   @override
   String toString() {
@@ -21824,7 +21906,7 @@ abstract class _ImplementationGuideParameter
           final List<FhirExtension>? modifierExtension,
           required final Coding code,
           final String? value,
-          @JsonKey(name: '_value') final Element? valueElement}) =
+          @JsonKey(name: '_value') final PrimitiveElement? valueElement}) =
       _$ImplementationGuideParameterImpl;
   const _ImplementationGuideParameter._() : super._();
 
@@ -21873,7 +21955,7 @@ abstract class _ImplementationGuideParameter
 
   /// [valueElement] ("_value") Extensions for value
   @JsonKey(name: '_value')
-  Element? get valueElement;
+  PrimitiveElement? get valueElement;
   @override
   @JsonKey(ignore: true)
   _$$ImplementationGuideParameterImplCopyWith<
@@ -21921,21 +22003,21 @@ mixin _$ImplementationGuideTemplate {
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get codeElement => throw _privateConstructorUsedError;
 
   /// [source] The source location for the template.
   String? get source => throw _privateConstructorUsedError;
 
   /// [sourceElement] ("_source") Extensions for source
   @JsonKey(name: '_source')
-  Element? get sourceElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get sourceElement => throw _privateConstructorUsedError;
 
   /// [scope] The scope in which the template applies.
   String? get scope => throw _privateConstructorUsedError;
 
   /// [scopeElement] ("_scope") Extensions for scope
   @JsonKey(name: '_scope')
-  Element? get scopeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get scopeElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -21956,11 +22038,11 @@ abstract class $ImplementationGuideTemplateCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       String? source,
-      @JsonKey(name: '_source') Element? sourceElement,
+      @JsonKey(name: '_source') PrimitiveElement? sourceElement,
       String? scope,
-      @JsonKey(name: '_scope') Element? scopeElement});
+      @JsonKey(name: '_scope') PrimitiveElement? scopeElement});
 }
 
 /// @nodoc
@@ -22007,7 +22089,7 @@ class _$ImplementationGuideTemplateCopyWithImpl<$Res,
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       source: freezed == source
           ? _value.source
           : source // ignore: cast_nullable_to_non_nullable
@@ -22015,7 +22097,7 @@ class _$ImplementationGuideTemplateCopyWithImpl<$Res,
       sourceElement: freezed == sourceElement
           ? _value.sourceElement
           : sourceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       scope: freezed == scope
           ? _value.scope
           : scope // ignore: cast_nullable_to_non_nullable
@@ -22023,7 +22105,7 @@ class _$ImplementationGuideTemplateCopyWithImpl<$Res,
       scopeElement: freezed == scopeElement
           ? _value.scopeElement
           : scopeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -22042,11 +22124,11 @@ abstract class _$$ImplementationGuideTemplateImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       String? source,
-      @JsonKey(name: '_source') Element? sourceElement,
+      @JsonKey(name: '_source') PrimitiveElement? sourceElement,
       String? scope,
-      @JsonKey(name: '_scope') Element? scopeElement});
+      @JsonKey(name: '_scope') PrimitiveElement? scopeElement});
 }
 
 /// @nodoc
@@ -22092,7 +22174,7 @@ class __$$ImplementationGuideTemplateImplCopyWithImpl<$Res>
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       source: freezed == source
           ? _value.source
           : source // ignore: cast_nullable_to_non_nullable
@@ -22100,7 +22182,7 @@ class __$$ImplementationGuideTemplateImplCopyWithImpl<$Res>
       sourceElement: freezed == sourceElement
           ? _value.sourceElement
           : sourceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       scope: freezed == scope
           ? _value.scope
           : scope // ignore: cast_nullable_to_non_nullable
@@ -22108,7 +22190,7 @@ class __$$ImplementationGuideTemplateImplCopyWithImpl<$Res>
       scopeElement: freezed == scopeElement
           ? _value.scopeElement
           : scopeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -22206,7 +22288,7 @@ class _$ImplementationGuideTemplateImpl extends _ImplementationGuideTemplate {
   /// [codeElement] ("_code") Extensions for code
   @override
   @JsonKey(name: '_code')
-  final Element? codeElement;
+  final PrimitiveElement? codeElement;
 
   /// [source] The source location for the template.
   @override
@@ -22215,7 +22297,7 @@ class _$ImplementationGuideTemplateImpl extends _ImplementationGuideTemplate {
   /// [sourceElement] ("_source") Extensions for source
   @override
   @JsonKey(name: '_source')
-  final Element? sourceElement;
+  final PrimitiveElement? sourceElement;
 
   /// [scope] The scope in which the template applies.
   @override
@@ -22224,7 +22306,7 @@ class _$ImplementationGuideTemplateImpl extends _ImplementationGuideTemplate {
   /// [scopeElement] ("_scope") Extensions for scope
   @override
   @JsonKey(name: '_scope')
-  final Element? scopeElement;
+  final PrimitiveElement? scopeElement;
 
   @override
   String toString() {
@@ -22288,11 +22370,11 @@ abstract class _ImplementationGuideTemplate
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final FhirCode? code,
-          @JsonKey(name: '_code') final Element? codeElement,
+          @JsonKey(name: '_code') final PrimitiveElement? codeElement,
           final String? source,
-          @JsonKey(name: '_source') final Element? sourceElement,
+          @JsonKey(name: '_source') final PrimitiveElement? sourceElement,
           final String? scope,
-          @JsonKey(name: '_scope') final Element? scopeElement}) =
+          @JsonKey(name: '_scope') final PrimitiveElement? scopeElement}) =
       _$ImplementationGuideTemplateImpl;
   const _ImplementationGuideTemplate._() : super._();
 
@@ -22337,7 +22419,7 @@ abstract class _ImplementationGuideTemplate
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement;
+  PrimitiveElement? get codeElement;
   @override
 
   /// [source] The source location for the template.
@@ -22346,7 +22428,7 @@ abstract class _ImplementationGuideTemplate
 
   /// [sourceElement] ("_source") Extensions for source
   @JsonKey(name: '_source')
-  Element? get sourceElement;
+  PrimitiveElement? get sourceElement;
   @override
 
   /// [scope] The scope in which the template applies.
@@ -22355,7 +22437,7 @@ abstract class _ImplementationGuideTemplate
 
   /// [scopeElement] ("_scope") Extensions for scope
   @JsonKey(name: '_scope')
-  Element? get scopeElement;
+  PrimitiveElement? get scopeElement;
   @override
   @JsonKey(ignore: true)
   _$$ImplementationGuideTemplateImplCopyWith<_$ImplementationGuideTemplateImpl>
@@ -22403,7 +22485,7 @@ mixin _$ImplementationGuideManifest {
 
   /// [renderingElement] ("_rendering") Extensions for rendering
   @JsonKey(name: '_rendering')
-  Element? get renderingElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get renderingElement => throw _privateConstructorUsedError;
 
   /// [resource] A resource that is part of the implementation guide. Conformance
   ///  resources (value set, structure definition, capability statements etc.)
@@ -22451,7 +22533,7 @@ abstract class $ImplementationGuideManifestCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUrl? rendering,
-      @JsonKey(name: '_rendering') Element? renderingElement,
+      @JsonKey(name: '_rendering') PrimitiveElement? renderingElement,
       List<ImplementationGuideResource1> resource,
       List<ImplementationGuidePage1>? page,
       List<String>? image,
@@ -22506,7 +22588,7 @@ class _$ImplementationGuideManifestCopyWithImpl<$Res,
       renderingElement: freezed == renderingElement
           ? _value.renderingElement
           : renderingElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       resource: null == resource
           ? _value.resource
           : resource // ignore: cast_nullable_to_non_nullable
@@ -22549,7 +22631,7 @@ abstract class _$$ImplementationGuideManifestImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUrl? rendering,
-      @JsonKey(name: '_rendering') Element? renderingElement,
+      @JsonKey(name: '_rendering') PrimitiveElement? renderingElement,
       List<ImplementationGuideResource1> resource,
       List<ImplementationGuidePage1>? page,
       List<String>? image,
@@ -22603,7 +22685,7 @@ class __$$ImplementationGuideManifestImplCopyWithImpl<$Res>
       renderingElement: freezed == renderingElement
           ? _value.renderingElement
           : renderingElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       resource: null == resource
           ? _value._resource
           : resource // ignore: cast_nullable_to_non_nullable
@@ -22734,7 +22816,7 @@ class _$ImplementationGuideManifestImpl extends _ImplementationGuideManifest {
   /// [renderingElement] ("_rendering") Extensions for rendering
   @override
   @JsonKey(name: '_rendering')
-  final Element? renderingElement;
+  final PrimitiveElement? renderingElement;
 
   /// [resource] A resource that is part of the implementation guide. Conformance
   ///  resources (value set, structure definition, capability statements etc.)
@@ -22891,7 +22973,7 @@ abstract class _ImplementationGuideManifest
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final FhirUrl? rendering,
-          @JsonKey(name: '_rendering') final Element? renderingElement,
+          @JsonKey(name: '_rendering') final PrimitiveElement? renderingElement,
           required final List<ImplementationGuideResource1> resource,
           final List<ImplementationGuidePage1>? page,
           final List<String>? image,
@@ -22943,7 +23025,7 @@ abstract class _ImplementationGuideManifest
 
   /// [renderingElement] ("_rendering") Extensions for rendering
   @JsonKey(name: '_rendering')
-  Element? get renderingElement;
+  PrimitiveElement? get renderingElement;
   @override
 
   /// [resource] A resource that is part of the implementation guide. Conformance
@@ -23024,7 +23106,7 @@ mixin _$ImplementationGuideResource1 {
 
   /// [isExampleElement] ("_isExample") Extensions for isExample
   @JsonKey(name: '_isExample')
-  Element? get isExampleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get isExampleElement => throw _privateConstructorUsedError;
 
   /// [profile] If present, indicates profile(s) the instance is valid against.
   List<FhirCanonical>? get profile => throw _privateConstructorUsedError;
@@ -23035,7 +23117,8 @@ mixin _$ImplementationGuideResource1 {
 
   /// [relativePathElement] ("_relativePath") Extensions for relativePath
   @JsonKey(name: '_relativePath')
-  Element? get relativePathElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get relativePathElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -23057,10 +23140,10 @@ abstract class $ImplementationGuideResource1CopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       Reference reference,
       FhirBoolean? isExample,
-      @JsonKey(name: '_isExample') Element? isExampleElement,
+      @JsonKey(name: '_isExample') PrimitiveElement? isExampleElement,
       List<FhirCanonical>? profile,
       FhirUrl? relativePath,
-      @JsonKey(name: '_relativePath') Element? relativePathElement});
+      @JsonKey(name: '_relativePath') PrimitiveElement? relativePathElement});
 
   $ReferenceCopyWith<$Res> get reference;
 }
@@ -23113,7 +23196,7 @@ class _$ImplementationGuideResource1CopyWithImpl<$Res,
       isExampleElement: freezed == isExampleElement
           ? _value.isExampleElement
           : isExampleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       profile: freezed == profile
           ? _value.profile
           : profile // ignore: cast_nullable_to_non_nullable
@@ -23125,7 +23208,7 @@ class _$ImplementationGuideResource1CopyWithImpl<$Res,
       relativePathElement: freezed == relativePathElement
           ? _value.relativePathElement
           : relativePathElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -23153,10 +23236,10 @@ abstract class _$$ImplementationGuideResource1ImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       Reference reference,
       FhirBoolean? isExample,
-      @JsonKey(name: '_isExample') Element? isExampleElement,
+      @JsonKey(name: '_isExample') PrimitiveElement? isExampleElement,
       List<FhirCanonical>? profile,
       FhirUrl? relativePath,
-      @JsonKey(name: '_relativePath') Element? relativePathElement});
+      @JsonKey(name: '_relativePath') PrimitiveElement? relativePathElement});
 
   @override
   $ReferenceCopyWith<$Res> get reference;
@@ -23209,7 +23292,7 @@ class __$$ImplementationGuideResource1ImplCopyWithImpl<$Res>
       isExampleElement: freezed == isExampleElement
           ? _value.isExampleElement
           : isExampleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       profile: freezed == profile
           ? _value._profile
           : profile // ignore: cast_nullable_to_non_nullable
@@ -23221,7 +23304,7 @@ class __$$ImplementationGuideResource1ImplCopyWithImpl<$Res>
       relativePathElement: freezed == relativePathElement
           ? _value.relativePathElement
           : relativePathElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -23324,7 +23407,7 @@ class _$ImplementationGuideResource1Impl extends _ImplementationGuideResource1 {
   /// [isExampleElement] ("_isExample") Extensions for isExample
   @override
   @JsonKey(name: '_isExample')
-  final Element? isExampleElement;
+  final PrimitiveElement? isExampleElement;
 
   /// [profile] If present, indicates profile(s) the instance is valid against.
   final List<FhirCanonical>? _profile;
@@ -23347,7 +23430,7 @@ class _$ImplementationGuideResource1Impl extends _ImplementationGuideResource1 {
   /// [relativePathElement] ("_relativePath") Extensions for relativePath
   @override
   @JsonKey(name: '_relativePath')
-  final Element? relativePathElement;
+  final PrimitiveElement? relativePathElement;
 
   @override
   String toString() {
@@ -23415,10 +23498,11 @@ abstract class _ImplementationGuideResource1
           final List<FhirExtension>? modifierExtension,
           required final Reference reference,
           final FhirBoolean? isExample,
-          @JsonKey(name: '_isExample') final Element? isExampleElement,
+          @JsonKey(name: '_isExample') final PrimitiveElement? isExampleElement,
           final List<FhirCanonical>? profile,
           final FhirUrl? relativePath,
-          @JsonKey(name: '_relativePath') final Element? relativePathElement}) =
+          @JsonKey(name: '_relativePath')
+          final PrimitiveElement? relativePathElement}) =
       _$ImplementationGuideResource1Impl;
   const _ImplementationGuideResource1._() : super._();
 
@@ -23467,7 +23551,7 @@ abstract class _ImplementationGuideResource1
 
   /// [isExampleElement] ("_isExample") Extensions for isExample
   @JsonKey(name: '_isExample')
-  Element? get isExampleElement;
+  PrimitiveElement? get isExampleElement;
   @override
 
   /// [profile] If present, indicates profile(s) the instance is valid against.
@@ -23481,7 +23565,7 @@ abstract class _ImplementationGuideResource1
 
   /// [relativePathElement] ("_relativePath") Extensions for relativePath
   @JsonKey(name: '_relativePath')
-  Element? get relativePathElement;
+  PrimitiveElement? get relativePathElement;
   @override
   @JsonKey(ignore: true)
   _$$ImplementationGuideResource1ImplCopyWith<
@@ -23529,14 +23613,14 @@ mixin _$ImplementationGuidePage1 {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [title] Label for the page intended for human display.
   String? get title => throw _privateConstructorUsedError;
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [anchor] The name of an anchor available on the page.
   List<String>? get anchor => throw _privateConstructorUsedError;
@@ -23562,9 +23646,9 @@ abstract class $ImplementationGuidePage1CopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       List<String>? anchor,
       @JsonKey(name: '_anchor') List<Element>? anchorElement});
 }
@@ -23613,7 +23697,7 @@ class _$ImplementationGuidePage1CopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -23621,7 +23705,7 @@ class _$ImplementationGuidePage1CopyWithImpl<$Res,
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       anchor: freezed == anchor
           ? _value.anchor
           : anchor // ignore: cast_nullable_to_non_nullable
@@ -23648,9 +23732,9 @@ abstract class _$$ImplementationGuidePage1ImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       List<String>? anchor,
       @JsonKey(name: '_anchor') List<Element>? anchorElement});
 }
@@ -23698,7 +23782,7 @@ class __$$ImplementationGuidePage1ImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -23706,7 +23790,7 @@ class __$$ImplementationGuidePage1ImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       anchor: freezed == anchor
           ? _value._anchor
           : anchor // ignore: cast_nullable_to_non_nullable
@@ -23813,7 +23897,7 @@ class _$ImplementationGuidePage1Impl extends _ImplementationGuidePage1 {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [title] Label for the page intended for human display.
   @override
@@ -23822,7 +23906,7 @@ class _$ImplementationGuidePage1Impl extends _ImplementationGuidePage1 {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [anchor] The name of an anchor available on the page.
   final List<String>? _anchor;
@@ -23912,9 +23996,9 @@ abstract class _ImplementationGuidePage1 extends ImplementationGuidePage1 {
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final String? name,
-          @JsonKey(name: '_name') final Element? nameElement,
+          @JsonKey(name: '_name') final PrimitiveElement? nameElement,
           final String? title,
-          @JsonKey(name: '_title') final Element? titleElement,
+          @JsonKey(name: '_title') final PrimitiveElement? titleElement,
           final List<String>? anchor,
           @JsonKey(name: '_anchor') final List<Element>? anchorElement}) =
       _$ImplementationGuidePage1Impl;
@@ -23961,7 +24045,7 @@ abstract class _ImplementationGuidePage1 extends ImplementationGuidePage1 {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [title] Label for the page intended for human display.
@@ -23970,7 +24054,7 @@ abstract class _ImplementationGuidePage1 extends ImplementationGuidePage1 {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [anchor] The name of an anchor available on the page.
@@ -24013,14 +24097,15 @@ mixin _$MessageDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -24067,7 +24152,7 @@ mixin _$MessageDefinition {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   /// [identifier] A formal identifier that is used to identify this message
   ///  definition when it is represented in other formats, or referenced in a
@@ -24085,7 +24170,7 @@ mixin _$MessageDefinition {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -24094,7 +24179,7 @@ mixin _$MessageDefinition {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement =>
+  PrimitiveElement? get versionAlgorithmStringElement =>
       throw _privateConstructorUsedError;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -24108,7 +24193,7 @@ mixin _$MessageDefinition {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [title] A short, descriptive, user-friendly title for the message
   ///  definition.
@@ -24116,7 +24201,7 @@ mixin _$MessageDefinition {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [status] The status of this message definition. Enables tracking the
   ///  life-cycle of the content.
@@ -24124,7 +24209,7 @@ mixin _$MessageDefinition {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [experimental] A Boolean value to indicate that this message definition is
   ///  authored for testing purposes (or education/evaluation/marketing) and is
@@ -24133,7 +24218,8 @@ mixin _$MessageDefinition {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get experimentalElement =>
+      throw _privateConstructorUsedError;
 
   /// [date] The date  (and optionally time) when the message definition was last
   ///  significantly changed. The date must change when the business version
@@ -24144,7 +24230,7 @@ mixin _$MessageDefinition {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the message definition.
@@ -24152,7 +24238,7 @@ mixin _$MessageDefinition {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get publisherElement => throw _privateConstructorUsedError;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -24164,7 +24250,8 @@ mixin _$MessageDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -24183,7 +24270,7 @@ mixin _$MessageDefinition {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get purposeElement => throw _privateConstructorUsedError;
 
   /// [copyright] A copyright statement relating to the message definition and/or
   ///  its contents. Copyright statements are generally legal restrictions on the
@@ -24192,7 +24279,7 @@ mixin _$MessageDefinition {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -24202,7 +24289,8 @@ mixin _$MessageDefinition {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightLabelElement =>
+      throw _privateConstructorUsedError;
 
   /// [replaces] A MessageDefinition that is superseded by this definition.
   List<FhirCanonical>? get replaces => throw _privateConstructorUsedError;
@@ -24223,14 +24311,14 @@ mixin _$MessageDefinition {
 
   /// [eventUriElement] ("_eventUri") Extensions for eventUri
   @JsonKey(name: '_eventUri')
-  Element? get eventUriElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get eventUriElement => throw _privateConstructorUsedError;
 
   /// [category] The impact of the content of the message.
   FhirCode? get category => throw _privateConstructorUsedError;
 
   /// [categoryElement] ("_category") Extensions for category
   @JsonKey(name: '_category')
-  Element? get categoryElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get categoryElement => throw _privateConstructorUsedError;
 
   /// [focus] Identifies the resource (or resources) that are being addressed by
   ///  the event.  For example, the Encounter for an admit message or two Account
@@ -24244,7 +24332,8 @@ mixin _$MessageDefinition {
   /// [responseRequiredElement] ("_responseRequired") Extensions for
   ///  responseRequired
   @JsonKey(name: '_responseRequired')
-  Element? get responseRequiredElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get responseRequiredElement =>
+      throw _privateConstructorUsedError;
 
   /// [allowedResponse] Indicates what types of messages may be sent as an
   ///  application-level response to this message.
@@ -24276,56 +24365,57 @@ abstract class $MessageDefinitionCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       List<FhirCanonical>? replaces,
       FhirCanonical? base,
       List<FhirCanonical>? parent,
       Coding? eventCoding,
       FhirUri? eventUri,
-      @JsonKey(name: '_eventUri') Element? eventUriElement,
+      @JsonKey(name: '_eventUri') PrimitiveElement? eventUriElement,
       FhirCode? category,
-      @JsonKey(name: '_category') Element? categoryElement,
+      @JsonKey(name: '_category') PrimitiveElement? categoryElement,
       List<MessageDefinitionFocus>? focus,
       FhirCode? responseRequired,
-      @JsonKey(name: '_responseRequired') Element? responseRequiredElement,
+      @JsonKey(name: '_responseRequired')
+      PrimitiveElement? responseRequiredElement,
       List<MessageDefinitionAllowedResponse>? allowedResponse,
       FhirCanonical? graph});
 
@@ -24424,7 +24514,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -24432,7 +24522,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -24456,7 +24546,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -24468,7 +24558,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -24476,7 +24566,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -24488,7 +24578,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -24496,7 +24586,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -24504,7 +24594,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -24512,7 +24602,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -24520,7 +24610,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -24528,7 +24618,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value.contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -24540,7 +24630,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value.useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -24556,7 +24646,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -24564,7 +24654,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -24572,7 +24662,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       replaces: freezed == replaces
           ? _value.replaces
           : replaces // ignore: cast_nullable_to_non_nullable
@@ -24596,7 +24686,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       eventUriElement: freezed == eventUriElement
           ? _value.eventUriElement
           : eventUriElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       category: freezed == category
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
@@ -24604,7 +24694,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       categoryElement: freezed == categoryElement
           ? _value.categoryElement
           : categoryElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       focus: freezed == focus
           ? _value.focus
           : focus // ignore: cast_nullable_to_non_nullable
@@ -24616,7 +24706,7 @@ class _$MessageDefinitionCopyWithImpl<$Res, $Val extends MessageDefinition>
       responseRequiredElement: freezed == responseRequiredElement
           ? _value.responseRequiredElement
           : responseRequiredElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       allowedResponse: freezed == allowedResponse
           ? _value.allowedResponse
           : allowedResponse // ignore: cast_nullable_to_non_nullable
@@ -24691,56 +24781,57 @@ abstract class _$$MessageDefinitionImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       List<FhirCanonical>? replaces,
       FhirCanonical? base,
       List<FhirCanonical>? parent,
       Coding? eventCoding,
       FhirUri? eventUri,
-      @JsonKey(name: '_eventUri') Element? eventUriElement,
+      @JsonKey(name: '_eventUri') PrimitiveElement? eventUriElement,
       FhirCode? category,
-      @JsonKey(name: '_category') Element? categoryElement,
+      @JsonKey(name: '_category') PrimitiveElement? categoryElement,
       List<MessageDefinitionFocus>? focus,
       FhirCode? responseRequired,
-      @JsonKey(name: '_responseRequired') Element? responseRequiredElement,
+      @JsonKey(name: '_responseRequired')
+      PrimitiveElement? responseRequiredElement,
       List<MessageDefinitionAllowedResponse>? allowedResponse,
       FhirCanonical? graph});
 
@@ -24841,7 +24932,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -24849,7 +24940,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -24873,7 +24964,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value._identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -24885,7 +24976,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -24893,7 +24984,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -24905,7 +24996,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -24913,7 +25004,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -24921,7 +25012,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -24929,7 +25020,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -24937,7 +25028,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -24945,7 +25036,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value._contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -24957,7 +25048,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value._useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -24973,7 +25064,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -24981,7 +25072,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -24989,7 +25080,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       replaces: freezed == replaces
           ? _value._replaces
           : replaces // ignore: cast_nullable_to_non_nullable
@@ -25013,7 +25104,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       eventUriElement: freezed == eventUriElement
           ? _value.eventUriElement
           : eventUriElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       category: freezed == category
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
@@ -25021,7 +25112,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       categoryElement: freezed == categoryElement
           ? _value.categoryElement
           : categoryElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       focus: freezed == focus
           ? _value._focus
           : focus // ignore: cast_nullable_to_non_nullable
@@ -25033,7 +25124,7 @@ class __$$MessageDefinitionImplCopyWithImpl<$Res>
       responseRequiredElement: freezed == responseRequiredElement
           ? _value.responseRequiredElement
           : responseRequiredElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       allowedResponse: freezed == allowedResponse
           ? _value._allowedResponse
           : allowedResponse // ignore: cast_nullable_to_non_nullable
@@ -25149,7 +25240,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -25158,7 +25249,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -25258,7 +25349,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   /// [identifier] A formal identifier that is used to identify this message
   ///  definition when it is represented in other formats, or referenced in a
@@ -25290,7 +25381,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -25301,7 +25392,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   ///  versionAlgorithmString
   @override
   @JsonKey(name: '_versionAlgorithmString')
-  final Element? versionAlgorithmStringElement;
+  final PrimitiveElement? versionAlgorithmStringElement;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -25317,7 +25408,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [title] A short, descriptive, user-friendly title for the message
   ///  definition.
@@ -25327,7 +25418,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [status] The status of this message definition. Enables tracking the
   ///  life-cycle of the content.
@@ -25337,7 +25428,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [experimental] A Boolean value to indicate that this message definition is
   ///  authored for testing purposes (or education/evaluation/marketing) and is
@@ -25348,7 +25439,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @override
   @JsonKey(name: '_experimental')
-  final Element? experimentalElement;
+  final PrimitiveElement? experimentalElement;
 
   /// [date] The date  (and optionally time) when the message definition was last
   ///  significantly changed. The date must change when the business version
@@ -25361,7 +25452,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the message definition.
@@ -25371,7 +25462,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   /// [publisherElement] ("_publisher") Extensions for publisher
   @override
   @JsonKey(name: '_publisher')
-  final Element? publisherElement;
+  final PrimitiveElement? publisherElement;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -25396,7 +25487,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -25442,7 +25533,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   /// [purposeElement] ("_purpose") Extensions for purpose
   @override
   @JsonKey(name: '_purpose')
-  final Element? purposeElement;
+  final PrimitiveElement? purposeElement;
 
   /// [copyright] A copyright statement relating to the message definition and/or
   ///  its contents. Copyright statements are generally legal restrictions on the
@@ -25453,7 +25544,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @override
   @JsonKey(name: '_copyright')
-  final Element? copyrightElement;
+  final PrimitiveElement? copyrightElement;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -25465,7 +25556,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @override
   @JsonKey(name: '_copyrightLabel')
-  final Element? copyrightLabelElement;
+  final PrimitiveElement? copyrightLabelElement;
 
   /// [replaces] A MessageDefinition that is superseded by this definition.
   final List<FhirCanonical>? _replaces;
@@ -25511,7 +25602,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   /// [eventUriElement] ("_eventUri") Extensions for eventUri
   @override
   @JsonKey(name: '_eventUri')
-  final Element? eventUriElement;
+  final PrimitiveElement? eventUriElement;
 
   /// [category] The impact of the content of the message.
   @override
@@ -25520,7 +25611,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   /// [categoryElement] ("_category") Extensions for category
   @override
   @JsonKey(name: '_category')
-  final Element? categoryElement;
+  final PrimitiveElement? categoryElement;
 
   /// [focus] Identifies the resource (or resources) that are being addressed by
   ///  the event.  For example, the Encounter for an admit message or two Account
@@ -25548,7 +25639,7 @@ class _$MessageDefinitionImpl extends _MessageDefinition {
   ///  responseRequired
   @override
   @JsonKey(name: '_responseRequired')
-  final Element? responseRequiredElement;
+  final PrimitiveElement? responseRequiredElement;
 
   /// [allowedResponse] Indicates what types of messages may be sent as an
   ///  application-level response to this message.
@@ -25760,57 +25851,60 @@ abstract class _MessageDefinition extends MessageDefinition {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUri? url,
-      @JsonKey(name: '_url') final Element? urlElement,
+      @JsonKey(name: '_url') final PrimitiveElement? urlElement,
       final List<Identifier>? identifier,
       final String? version,
-      @JsonKey(name: '_version') final Element? versionElement,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
       final String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      final Element? versionAlgorithmStringElement,
+      final PrimitiveElement? versionAlgorithmStringElement,
       final Coding? versionAlgorithmCoding,
       final String? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final PublicationStatus? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') final Element? experimentalElement,
+      @JsonKey(name: '_experimental')
+      final PrimitiveElement? experimentalElement,
       final FhirDateTime? date,
-      @JsonKey(name: '_date') final Element? dateElement,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
       final String? publisher,
-      @JsonKey(name: '_publisher') final Element? publisherElement,
+      @JsonKey(name: '_publisher') final PrimitiveElement? publisherElement,
       final List<ContactDetail>? contact,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<UsageContext>? useContext,
       final List<CodeableConcept>? jurisdiction,
       final FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') final Element? purposeElement,
+      @JsonKey(name: '_purpose') final PrimitiveElement? purposeElement,
       final FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') final Element? copyrightElement,
+      @JsonKey(name: '_copyright') final PrimitiveElement? copyrightElement,
       final String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') final Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel')
+      final PrimitiveElement? copyrightLabelElement,
       final List<FhirCanonical>? replaces,
       final FhirCanonical? base,
       final List<FhirCanonical>? parent,
       final Coding? eventCoding,
       final FhirUri? eventUri,
-      @JsonKey(name: '_eventUri') final Element? eventUriElement,
+      @JsonKey(name: '_eventUri') final PrimitiveElement? eventUriElement,
       final FhirCode? category,
-      @JsonKey(name: '_category') final Element? categoryElement,
+      @JsonKey(name: '_category') final PrimitiveElement? categoryElement,
       final List<MessageDefinitionFocus>? focus,
       final FhirCode? responseRequired,
       @JsonKey(name: '_responseRequired')
-      final Element? responseRequiredElement,
+      final PrimitiveElement? responseRequiredElement,
       final List<MessageDefinitionAllowedResponse>? allowedResponse,
       final FhirCanonical? graph}) = _$MessageDefinitionImpl;
   const _MessageDefinition._() : super._();
@@ -25845,7 +25939,7 @@ abstract class _MessageDefinition extends MessageDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -25854,7 +25948,7 @@ abstract class _MessageDefinition extends MessageDefinition {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -25906,7 +26000,7 @@ abstract class _MessageDefinition extends MessageDefinition {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
 
   /// [identifier] A formal identifier that is used to identify this message
@@ -25927,7 +26021,7 @@ abstract class _MessageDefinition extends MessageDefinition {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
@@ -25938,7 +26032,7 @@ abstract class _MessageDefinition extends MessageDefinition {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement;
+  PrimitiveElement? get versionAlgorithmStringElement;
   @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -25954,7 +26048,7 @@ abstract class _MessageDefinition extends MessageDefinition {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [title] A short, descriptive, user-friendly title for the message
@@ -25964,7 +26058,7 @@ abstract class _MessageDefinition extends MessageDefinition {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [status] The status of this message definition. Enables tracking the
@@ -25974,7 +26068,7 @@ abstract class _MessageDefinition extends MessageDefinition {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [experimental] A Boolean value to indicate that this message definition is
@@ -25985,7 +26079,7 @@ abstract class _MessageDefinition extends MessageDefinition {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement;
+  PrimitiveElement? get experimentalElement;
   @override
 
   /// [date] The date  (and optionally time) when the message definition was last
@@ -25998,7 +26092,7 @@ abstract class _MessageDefinition extends MessageDefinition {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [publisher] The name of the organization or individual responsible for the
@@ -26008,7 +26102,7 @@ abstract class _MessageDefinition extends MessageDefinition {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement;
+  PrimitiveElement? get publisherElement;
   @override
 
   /// [contact] Contact details to assist a user in finding and communicating
@@ -26023,7 +26117,7 @@ abstract class _MessageDefinition extends MessageDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [useContext] The content was developed with a focus and intent of
@@ -26046,7 +26140,7 @@ abstract class _MessageDefinition extends MessageDefinition {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement;
+  PrimitiveElement? get purposeElement;
   @override
 
   /// [copyright] A copyright statement relating to the message definition and/or
@@ -26057,7 +26151,7 @@ abstract class _MessageDefinition extends MessageDefinition {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement;
+  PrimitiveElement? get copyrightElement;
   @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
@@ -26069,7 +26163,7 @@ abstract class _MessageDefinition extends MessageDefinition {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement;
+  PrimitiveElement? get copyrightLabelElement;
   @override
 
   /// [replaces] A MessageDefinition that is superseded by this definition.
@@ -26096,7 +26190,7 @@ abstract class _MessageDefinition extends MessageDefinition {
 
   /// [eventUriElement] ("_eventUri") Extensions for eventUri
   @JsonKey(name: '_eventUri')
-  Element? get eventUriElement;
+  PrimitiveElement? get eventUriElement;
   @override
 
   /// [category] The impact of the content of the message.
@@ -26105,7 +26199,7 @@ abstract class _MessageDefinition extends MessageDefinition {
 
   /// [categoryElement] ("_category") Extensions for category
   @JsonKey(name: '_category')
-  Element? get categoryElement;
+  PrimitiveElement? get categoryElement;
   @override
 
   /// [focus] Identifies the resource (or resources) that are being addressed by
@@ -26122,7 +26216,7 @@ abstract class _MessageDefinition extends MessageDefinition {
   /// [responseRequiredElement] ("_responseRequired") Extensions for
   ///  responseRequired
   @JsonKey(name: '_responseRequired')
-  Element? get responseRequiredElement;
+  PrimitiveElement? get responseRequiredElement;
   @override
 
   /// [allowedResponse] Indicates what types of messages may be sent as an
@@ -26182,7 +26276,7 @@ mixin _$MessageDefinitionFocus {
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get codeElement => throw _privateConstructorUsedError;
 
   /// [profile] A profile that reflects constraints for the focal resource (and
   ///  potentially for related resources).
@@ -26195,7 +26289,7 @@ mixin _$MessageDefinitionFocus {
 
   /// [minElement] ("_min") Extensions for min
   @JsonKey(name: '_min')
-  Element? get minElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get minElement => throw _privateConstructorUsedError;
 
   /// [max] Identifies the maximum number of resources of this type that must be
   ///  pointed to by a message in order for it to be valid against this
@@ -26204,7 +26298,7 @@ mixin _$MessageDefinitionFocus {
 
   /// [maxElement] ("_max") Extensions for max
   @JsonKey(name: '_max')
-  Element? get maxElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get maxElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -26223,12 +26317,12 @@ abstract class $MessageDefinitionFocusCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       FhirCanonical? profile,
       FhirUnsignedInt? min,
-      @JsonKey(name: '_min') Element? minElement,
+      @JsonKey(name: '_min') PrimitiveElement? minElement,
       String? max,
-      @JsonKey(name: '_max') Element? maxElement});
+      @JsonKey(name: '_max') PrimitiveElement? maxElement});
 }
 
 /// @nodoc
@@ -26276,7 +26370,7 @@ class _$MessageDefinitionFocusCopyWithImpl<$Res,
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       profile: freezed == profile
           ? _value.profile
           : profile // ignore: cast_nullable_to_non_nullable
@@ -26288,7 +26382,7 @@ class _$MessageDefinitionFocusCopyWithImpl<$Res,
       minElement: freezed == minElement
           ? _value.minElement
           : minElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       max: freezed == max
           ? _value.max
           : max // ignore: cast_nullable_to_non_nullable
@@ -26296,7 +26390,7 @@ class _$MessageDefinitionFocusCopyWithImpl<$Res,
       maxElement: freezed == maxElement
           ? _value.maxElement
           : maxElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -26315,12 +26409,12 @@ abstract class _$$MessageDefinitionFocusImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       FhirCanonical? profile,
       FhirUnsignedInt? min,
-      @JsonKey(name: '_min') Element? minElement,
+      @JsonKey(name: '_min') PrimitiveElement? minElement,
       String? max,
-      @JsonKey(name: '_max') Element? maxElement});
+      @JsonKey(name: '_max') PrimitiveElement? maxElement});
 }
 
 /// @nodoc
@@ -26367,7 +26461,7 @@ class __$$MessageDefinitionFocusImplCopyWithImpl<$Res>
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       profile: freezed == profile
           ? _value.profile
           : profile // ignore: cast_nullable_to_non_nullable
@@ -26379,7 +26473,7 @@ class __$$MessageDefinitionFocusImplCopyWithImpl<$Res>
       minElement: freezed == minElement
           ? _value.minElement
           : minElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       max: freezed == max
           ? _value.max
           : max // ignore: cast_nullable_to_non_nullable
@@ -26387,7 +26481,7 @@ class __$$MessageDefinitionFocusImplCopyWithImpl<$Res>
       maxElement: freezed == maxElement
           ? _value.maxElement
           : maxElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -26485,7 +26579,7 @@ class _$MessageDefinitionFocusImpl extends _MessageDefinitionFocus {
   /// [codeElement] ("_code") Extensions for code
   @override
   @JsonKey(name: '_code')
-  final Element? codeElement;
+  final PrimitiveElement? codeElement;
 
   /// [profile] A profile that reflects constraints for the focal resource (and
   ///  potentially for related resources).
@@ -26501,7 +26595,7 @@ class _$MessageDefinitionFocusImpl extends _MessageDefinitionFocus {
   /// [minElement] ("_min") Extensions for min
   @override
   @JsonKey(name: '_min')
-  final Element? minElement;
+  final PrimitiveElement? minElement;
 
   /// [max] Identifies the maximum number of resources of this type that must be
   ///  pointed to by a message in order for it to be valid against this
@@ -26512,7 +26606,7 @@ class _$MessageDefinitionFocusImpl extends _MessageDefinitionFocus {
   /// [maxElement] ("_max") Extensions for max
   @override
   @JsonKey(name: '_max')
-  final Element? maxElement;
+  final PrimitiveElement? maxElement;
 
   @override
   String toString() {
@@ -26577,12 +26671,12 @@ abstract class _MessageDefinitionFocus extends MessageDefinitionFocus {
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final FhirCode? code,
-          @JsonKey(name: '_code') final Element? codeElement,
+          @JsonKey(name: '_code') final PrimitiveElement? codeElement,
           final FhirCanonical? profile,
           final FhirUnsignedInt? min,
-          @JsonKey(name: '_min') final Element? minElement,
+          @JsonKey(name: '_min') final PrimitiveElement? minElement,
           final String? max,
-          @JsonKey(name: '_max') final Element? maxElement}) =
+          @JsonKey(name: '_max') final PrimitiveElement? maxElement}) =
       _$MessageDefinitionFocusImpl;
   const _MessageDefinitionFocus._() : super._();
 
@@ -26627,7 +26721,7 @@ abstract class _MessageDefinitionFocus extends MessageDefinitionFocus {
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement;
+  PrimitiveElement? get codeElement;
   @override
 
   /// [profile] A profile that reflects constraints for the focal resource (and
@@ -26643,7 +26737,7 @@ abstract class _MessageDefinitionFocus extends MessageDefinitionFocus {
 
   /// [minElement] ("_min") Extensions for min
   @JsonKey(name: '_min')
-  Element? get minElement;
+  PrimitiveElement? get minElement;
   @override
 
   /// [max] Identifies the maximum number of resources of this type that must be
@@ -26654,7 +26748,7 @@ abstract class _MessageDefinitionFocus extends MessageDefinitionFocus {
 
   /// [maxElement] ("_max") Extensions for max
   @JsonKey(name: '_max')
-  Element? get maxElement;
+  PrimitiveElement? get maxElement;
   @override
   @JsonKey(ignore: true)
   _$$MessageDefinitionFocusImplCopyWith<_$MessageDefinitionFocusImpl>
@@ -26706,7 +26800,7 @@ mixin _$MessageDefinitionAllowedResponse {
 
   /// [situationElement] ("_situation") Extensions for situation
   @JsonKey(name: '_situation')
-  Element? get situationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get situationElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -26728,7 +26822,7 @@ abstract class $MessageDefinitionAllowedResponseCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       FhirCanonical message,
       FhirMarkdown? situation,
-      @JsonKey(name: '_situation') Element? situationElement});
+      @JsonKey(name: '_situation') PrimitiveElement? situationElement});
 }
 
 /// @nodoc
@@ -26776,7 +26870,7 @@ class _$MessageDefinitionAllowedResponseCopyWithImpl<$Res,
       situationElement: freezed == situationElement
           ? _value.situationElement
           : situationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -26796,7 +26890,7 @@ abstract class _$$MessageDefinitionAllowedResponseImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       FhirCanonical message,
       FhirMarkdown? situation,
-      @JsonKey(name: '_situation') Element? situationElement});
+      @JsonKey(name: '_situation') PrimitiveElement? situationElement});
 }
 
 /// @nodoc
@@ -26843,7 +26937,7 @@ class __$$MessageDefinitionAllowedResponseImplCopyWithImpl<$Res>
       situationElement: freezed == situationElement
           ? _value.situationElement
           : situationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -26945,7 +27039,7 @@ class _$MessageDefinitionAllowedResponseImpl
   /// [situationElement] ("_situation") Extensions for situation
   @override
   @JsonKey(name: '_situation')
-  final Element? situationElement;
+  final PrimitiveElement? situationElement;
 
   @override
   String toString() {
@@ -27004,7 +27098,8 @@ abstract class _MessageDefinitionAllowedResponse
           final List<FhirExtension>? modifierExtension,
           required final FhirCanonical message,
           final FhirMarkdown? situation,
-          @JsonKey(name: '_situation') final Element? situationElement}) =
+          @JsonKey(name: '_situation')
+          final PrimitiveElement? situationElement}) =
       _$MessageDefinitionAllowedResponseImpl;
   const _MessageDefinitionAllowedResponse._() : super._();
 
@@ -27056,7 +27151,7 @@ abstract class _MessageDefinitionAllowedResponse
 
   /// [situationElement] ("_situation") Extensions for situation
   @JsonKey(name: '_situation')
-  Element? get situationElement;
+  PrimitiveElement? get situationElement;
   @override
   @JsonKey(ignore: true)
   _$$MessageDefinitionAllowedResponseImplCopyWith<
@@ -27091,14 +27186,15 @@ mixin _$OperationDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -27150,7 +27246,7 @@ mixin _$OperationDefinition {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   /// [identifier] A formal identifier that is used to identify this
   ///  implementation guide when it is represented in other formats, or
@@ -27168,7 +27264,7 @@ mixin _$OperationDefinition {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -27177,7 +27273,7 @@ mixin _$OperationDefinition {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement =>
+  PrimitiveElement? get versionAlgorithmStringElement =>
       throw _privateConstructorUsedError;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -27191,7 +27287,7 @@ mixin _$OperationDefinition {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [title] A short, descriptive, user-friendly title for the operation
   ///  definition.
@@ -27199,14 +27295,14 @@ mixin _$OperationDefinition {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [status] The current state of this operation definition.
   FhirCode? get status => throw _privateConstructorUsedError;
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [experimental] A Boolean value to indicate that this operation definition
   ///  is authored for testing purposes (or education/evaluation/marketing) and
@@ -27215,7 +27311,8 @@ mixin _$OperationDefinition {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get experimentalElement =>
+      throw _privateConstructorUsedError;
 
   /// [date] The date  (and optionally time) when the operation definition was
   ///  last significantly changed. The date must change when the business version
@@ -27226,7 +27323,7 @@ mixin _$OperationDefinition {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the operation definition.
@@ -27234,7 +27331,7 @@ mixin _$OperationDefinition {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get publisherElement => throw _privateConstructorUsedError;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -27246,7 +27343,8 @@ mixin _$OperationDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -27265,7 +27363,7 @@ mixin _$OperationDefinition {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get purposeElement => throw _privateConstructorUsedError;
 
   /// [copyright] A copyright statement relating to the operation definition
   ///  and/or its contents. Copyright statements are generally legal restrictions
@@ -27274,7 +27372,7 @@ mixin _$OperationDefinition {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -27284,14 +27382,15 @@ mixin _$OperationDefinition {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightLabelElement =>
+      throw _privateConstructorUsedError;
 
   /// [kind] Whether this is an operation or a named query.
   FhirCode? get kind => throw _privateConstructorUsedError;
 
   /// [kindElement] ("_kind") Extensions for kind
   @JsonKey(name: '_kind')
-  Element? get kindElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get kindElement => throw _privateConstructorUsedError;
 
   /// [affectsState] Whether the operation affects state. Side effects such as
   ///  producing audit trail entries do not count as 'affecting  state'.
@@ -27299,7 +27398,8 @@ mixin _$OperationDefinition {
 
   /// [affectsStateElement] ("_affectsState") Extensions for affectsState
   @JsonKey(name: '_affectsState')
-  Element? get affectsStateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get affectsStateElement =>
+      throw _privateConstructorUsedError;
 
   /// [code] The label that is recommended to be used in the URL for this
   ///  operation. In some cases, servers may need to use a different
@@ -27309,7 +27409,7 @@ mixin _$OperationDefinition {
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get codeElement => throw _privateConstructorUsedError;
 
   /// [comment] Additional information about how to use this operation or named
   ///  query.
@@ -27317,7 +27417,7 @@ mixin _$OperationDefinition {
 
   /// [commentElement] ("_comment") Extensions for comment
   @JsonKey(name: '_comment')
-  Element? get commentElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get commentElement => throw _privateConstructorUsedError;
 
   /// [base] Indicates that this operation definition is a constraining profile
   ///  on the base.
@@ -27337,7 +27437,7 @@ mixin _$OperationDefinition {
 
   /// [systemElement] ("_system") Extensions for system
   @JsonKey(name: '_system')
-  Element? get systemElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get systemElement => throw _privateConstructorUsedError;
 
   /// [type] Indicates whether this operation or named query can be invoked at
   ///  the resource type level for any given resource type level (e.g. without
@@ -27346,7 +27446,7 @@ mixin _$OperationDefinition {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get typeElement => throw _privateConstructorUsedError;
 
   /// [instance] Indicates whether this operation can be invoked on a particular
   ///  instance of one of the given types.
@@ -27354,7 +27454,7 @@ mixin _$OperationDefinition {
 
   /// [instanceElement] ("_instance") Extensions for instance
   @JsonKey(name: '_instance')
-  Element? get instanceElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get instanceElement => throw _privateConstructorUsedError;
 
   /// [inputProfile] Additional validation information for the in parameters - a
   ///  single profile that covers all the parameters. The profile is a constraint
@@ -27394,62 +27494,62 @@ abstract class $OperationDefinitionCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirCode? kind,
-      @JsonKey(name: '_kind') Element? kindElement,
+      @JsonKey(name: '_kind') PrimitiveElement? kindElement,
       FhirBoolean? affectsState,
-      @JsonKey(name: '_affectsState') Element? affectsStateElement,
+      @JsonKey(name: '_affectsState') PrimitiveElement? affectsStateElement,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       FhirMarkdown? comment,
-      @JsonKey(name: '_comment') Element? commentElement,
+      @JsonKey(name: '_comment') PrimitiveElement? commentElement,
       FhirCanonical? base,
       List<FhirCode>? resource,
       @JsonKey(name: '_resource') List<Element>? resourceElement,
       FhirBoolean? system,
-      @JsonKey(name: '_system') Element? systemElement,
+      @JsonKey(name: '_system') PrimitiveElement? systemElement,
       FhirBoolean? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       FhirBoolean? instance,
-      @JsonKey(name: '_instance') Element? instanceElement,
+      @JsonKey(name: '_instance') PrimitiveElement? instanceElement,
       FhirCanonical? inputProfile,
       FhirCanonical? outputProfile,
       List<OperationDefinitionParameter>? parameter,
@@ -27557,7 +27657,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -27565,7 +27665,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -27589,7 +27689,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -27601,7 +27701,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -27609,7 +27709,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -27621,7 +27721,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -27629,7 +27729,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -27637,7 +27737,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -27645,7 +27745,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -27653,7 +27753,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -27661,7 +27761,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value.contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -27673,7 +27773,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value.useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -27689,7 +27789,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -27697,7 +27797,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -27705,7 +27805,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       kind: freezed == kind
           ? _value.kind
           : kind // ignore: cast_nullable_to_non_nullable
@@ -27713,7 +27813,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       kindElement: freezed == kindElement
           ? _value.kindElement
           : kindElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       affectsState: freezed == affectsState
           ? _value.affectsState
           : affectsState // ignore: cast_nullable_to_non_nullable
@@ -27721,7 +27821,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       affectsStateElement: freezed == affectsStateElement
           ? _value.affectsStateElement
           : affectsStateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       code: freezed == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -27729,7 +27829,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       comment: freezed == comment
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
@@ -27737,7 +27837,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       commentElement: freezed == commentElement
           ? _value.commentElement
           : commentElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       base: freezed == base
           ? _value.base
           : base // ignore: cast_nullable_to_non_nullable
@@ -27757,7 +27857,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       systemElement: freezed == systemElement
           ? _value.systemElement
           : systemElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -27765,7 +27865,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       instance: freezed == instance
           ? _value.instance
           : instance // ignore: cast_nullable_to_non_nullable
@@ -27773,7 +27873,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       instanceElement: freezed == instanceElement
           ? _value.instanceElement
           : instanceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       inputProfile: freezed == inputProfile
           ? _value.inputProfile
           : inputProfile // ignore: cast_nullable_to_non_nullable
@@ -27844,62 +27944,62 @@ abstract class _$$OperationDefinitionImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirCode? kind,
-      @JsonKey(name: '_kind') Element? kindElement,
+      @JsonKey(name: '_kind') PrimitiveElement? kindElement,
       FhirBoolean? affectsState,
-      @JsonKey(name: '_affectsState') Element? affectsStateElement,
+      @JsonKey(name: '_affectsState') PrimitiveElement? affectsStateElement,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       FhirMarkdown? comment,
-      @JsonKey(name: '_comment') Element? commentElement,
+      @JsonKey(name: '_comment') PrimitiveElement? commentElement,
       FhirCanonical? base,
       List<FhirCode>? resource,
       @JsonKey(name: '_resource') List<Element>? resourceElement,
       FhirBoolean? system,
-      @JsonKey(name: '_system') Element? systemElement,
+      @JsonKey(name: '_system') PrimitiveElement? systemElement,
       FhirBoolean? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       FhirBoolean? instance,
-      @JsonKey(name: '_instance') Element? instanceElement,
+      @JsonKey(name: '_instance') PrimitiveElement? instanceElement,
       FhirCanonical? inputProfile,
       FhirCanonical? outputProfile,
       List<OperationDefinitionParameter>? parameter,
@@ -28008,7 +28108,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -28016,7 +28116,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -28040,7 +28140,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value._identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -28052,7 +28152,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -28060,7 +28160,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -28072,7 +28172,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -28080,7 +28180,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -28088,7 +28188,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -28096,7 +28196,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -28104,7 +28204,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -28112,7 +28212,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value._contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -28124,7 +28224,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value._useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -28140,7 +28240,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -28148,7 +28248,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -28156,7 +28256,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       kind: freezed == kind
           ? _value.kind
           : kind // ignore: cast_nullable_to_non_nullable
@@ -28164,7 +28264,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       kindElement: freezed == kindElement
           ? _value.kindElement
           : kindElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       affectsState: freezed == affectsState
           ? _value.affectsState
           : affectsState // ignore: cast_nullable_to_non_nullable
@@ -28172,7 +28272,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       affectsStateElement: freezed == affectsStateElement
           ? _value.affectsStateElement
           : affectsStateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       code: freezed == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -28180,7 +28280,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       comment: freezed == comment
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
@@ -28188,7 +28288,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       commentElement: freezed == commentElement
           ? _value.commentElement
           : commentElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       base: freezed == base
           ? _value.base
           : base // ignore: cast_nullable_to_non_nullable
@@ -28208,7 +28308,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       systemElement: freezed == systemElement
           ? _value.systemElement
           : systemElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -28216,7 +28316,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       instance: freezed == instance
           ? _value.instance
           : instance // ignore: cast_nullable_to_non_nullable
@@ -28224,7 +28324,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       instanceElement: freezed == instanceElement
           ? _value.instanceElement
           : instanceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       inputProfile: freezed == inputProfile
           ? _value.inputProfile
           : inputProfile // ignore: cast_nullable_to_non_nullable
@@ -28356,7 +28456,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -28365,7 +28465,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -28470,7 +28570,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   /// [identifier] A formal identifier that is used to identify this
   ///  implementation guide when it is represented in other formats, or
@@ -28502,7 +28602,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -28513,7 +28613,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   ///  versionAlgorithmString
   @override
   @JsonKey(name: '_versionAlgorithmString')
-  final Element? versionAlgorithmStringElement;
+  final PrimitiveElement? versionAlgorithmStringElement;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -28529,7 +28629,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [title] A short, descriptive, user-friendly title for the operation
   ///  definition.
@@ -28539,7 +28639,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [status] The current state of this operation definition.
   @override
@@ -28548,7 +28648,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [experimental] A Boolean value to indicate that this operation definition
   ///  is authored for testing purposes (or education/evaluation/marketing) and
@@ -28559,7 +28659,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @override
   @JsonKey(name: '_experimental')
-  final Element? experimentalElement;
+  final PrimitiveElement? experimentalElement;
 
   /// [date] The date  (and optionally time) when the operation definition was
   ///  last significantly changed. The date must change when the business version
@@ -28572,7 +28672,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the operation definition.
@@ -28582,7 +28682,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [publisherElement] ("_publisher") Extensions for publisher
   @override
   @JsonKey(name: '_publisher')
-  final Element? publisherElement;
+  final PrimitiveElement? publisherElement;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -28607,7 +28707,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -28653,7 +28753,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [purposeElement] ("_purpose") Extensions for purpose
   @override
   @JsonKey(name: '_purpose')
-  final Element? purposeElement;
+  final PrimitiveElement? purposeElement;
 
   /// [copyright] A copyright statement relating to the operation definition
   ///  and/or its contents. Copyright statements are generally legal restrictions
@@ -28664,7 +28764,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @override
   @JsonKey(name: '_copyright')
-  final Element? copyrightElement;
+  final PrimitiveElement? copyrightElement;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -28676,7 +28776,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @override
   @JsonKey(name: '_copyrightLabel')
-  final Element? copyrightLabelElement;
+  final PrimitiveElement? copyrightLabelElement;
 
   /// [kind] Whether this is an operation or a named query.
   @override
@@ -28685,7 +28785,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [kindElement] ("_kind") Extensions for kind
   @override
   @JsonKey(name: '_kind')
-  final Element? kindElement;
+  final PrimitiveElement? kindElement;
 
   /// [affectsState] Whether the operation affects state. Side effects such as
   ///  producing audit trail entries do not count as 'affecting  state'.
@@ -28695,7 +28795,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [affectsStateElement] ("_affectsState") Extensions for affectsState
   @override
   @JsonKey(name: '_affectsState')
-  final Element? affectsStateElement;
+  final PrimitiveElement? affectsStateElement;
 
   /// [code] The label that is recommended to be used in the URL for this
   ///  operation. In some cases, servers may need to use a different
@@ -28707,7 +28807,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [codeElement] ("_code") Extensions for code
   @override
   @JsonKey(name: '_code')
-  final Element? codeElement;
+  final PrimitiveElement? codeElement;
 
   /// [comment] Additional information about how to use this operation or named
   ///  query.
@@ -28717,7 +28817,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [commentElement] ("_comment") Extensions for comment
   @override
   @JsonKey(name: '_comment')
-  final Element? commentElement;
+  final PrimitiveElement? commentElement;
 
   /// [base] Indicates that this operation definition is a constraining profile
   ///  on the base.
@@ -28760,7 +28860,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [systemElement] ("_system") Extensions for system
   @override
   @JsonKey(name: '_system')
-  final Element? systemElement;
+  final PrimitiveElement? systemElement;
 
   /// [type] Indicates whether this operation or named query can be invoked at
   ///  the resource type level for any given resource type level (e.g. without
@@ -28771,7 +28871,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [typeElement] ("_type") Extensions for type
   @override
   @JsonKey(name: '_type')
-  final Element? typeElement;
+  final PrimitiveElement? typeElement;
 
   /// [instance] Indicates whether this operation can be invoked on a particular
   ///  instance of one of the given types.
@@ -28781,7 +28881,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   /// [instanceElement] ("_instance") Extensions for instance
   @override
   @JsonKey(name: '_instance')
-  final Element? instanceElement;
+  final PrimitiveElement? instanceElement;
 
   /// [inputProfile] Additional validation information for the in parameters - a
   ///  single profile that covers all the parameters. The profile is a constraint
@@ -29028,62 +29128,66 @@ abstract class _OperationDefinition extends OperationDefinition {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUri? url,
-      @JsonKey(name: '_url') final Element? urlElement,
+      @JsonKey(name: '_url') final PrimitiveElement? urlElement,
       final List<Identifier>? identifier,
       final String? version,
-      @JsonKey(name: '_version') final Element? versionElement,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
       final String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      final Element? versionAlgorithmStringElement,
+      final PrimitiveElement? versionAlgorithmStringElement,
       final Coding? versionAlgorithmCoding,
       final String? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final FhirCode? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') final Element? experimentalElement,
+      @JsonKey(name: '_experimental')
+      final PrimitiveElement? experimentalElement,
       final FhirDateTime? date,
-      @JsonKey(name: '_date') final Element? dateElement,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
       final String? publisher,
-      @JsonKey(name: '_publisher') final Element? publisherElement,
+      @JsonKey(name: '_publisher') final PrimitiveElement? publisherElement,
       final List<ContactDetail>? contact,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<UsageContext>? useContext,
       final List<CodeableConcept>? jurisdiction,
       final FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') final Element? purposeElement,
+      @JsonKey(name: '_purpose') final PrimitiveElement? purposeElement,
       final FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') final Element? copyrightElement,
+      @JsonKey(name: '_copyright') final PrimitiveElement? copyrightElement,
       final String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') final Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel')
+      final PrimitiveElement? copyrightLabelElement,
       final FhirCode? kind,
-      @JsonKey(name: '_kind') final Element? kindElement,
+      @JsonKey(name: '_kind') final PrimitiveElement? kindElement,
       final FhirBoolean? affectsState,
-      @JsonKey(name: '_affectsState') final Element? affectsStateElement,
+      @JsonKey(name: '_affectsState')
+      final PrimitiveElement? affectsStateElement,
       final FhirCode? code,
-      @JsonKey(name: '_code') final Element? codeElement,
+      @JsonKey(name: '_code') final PrimitiveElement? codeElement,
       final FhirMarkdown? comment,
-      @JsonKey(name: '_comment') final Element? commentElement,
+      @JsonKey(name: '_comment') final PrimitiveElement? commentElement,
       final FhirCanonical? base,
       final List<FhirCode>? resource,
       @JsonKey(name: '_resource') final List<Element>? resourceElement,
       final FhirBoolean? system,
-      @JsonKey(name: '_system') final Element? systemElement,
+      @JsonKey(name: '_system') final PrimitiveElement? systemElement,
       final FhirBoolean? type,
-      @JsonKey(name: '_type') final Element? typeElement,
+      @JsonKey(name: '_type') final PrimitiveElement? typeElement,
       final FhirBoolean? instance,
-      @JsonKey(name: '_instance') final Element? instanceElement,
+      @JsonKey(name: '_instance') final PrimitiveElement? instanceElement,
       final FhirCanonical? inputProfile,
       final FhirCanonical? outputProfile,
       final List<OperationDefinitionParameter>? parameter,
@@ -29121,7 +29225,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -29130,7 +29234,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -29187,7 +29291,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
 
   /// [identifier] A formal identifier that is used to identify this
@@ -29208,7 +29312,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
@@ -29219,7 +29323,7 @@ abstract class _OperationDefinition extends OperationDefinition {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement;
+  PrimitiveElement? get versionAlgorithmStringElement;
   @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -29235,7 +29339,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [title] A short, descriptive, user-friendly title for the operation
@@ -29245,7 +29349,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [status] The current state of this operation definition.
@@ -29254,7 +29358,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [experimental] A Boolean value to indicate that this operation definition
@@ -29265,7 +29369,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement;
+  PrimitiveElement? get experimentalElement;
   @override
 
   /// [date] The date  (and optionally time) when the operation definition was
@@ -29278,7 +29382,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [publisher] The name of the organization or individual responsible for the
@@ -29288,7 +29392,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement;
+  PrimitiveElement? get publisherElement;
   @override
 
   /// [contact] Contact details to assist a user in finding and communicating
@@ -29303,7 +29407,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [useContext] The content was developed with a focus and intent of
@@ -29326,7 +29430,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement;
+  PrimitiveElement? get purposeElement;
   @override
 
   /// [copyright] A copyright statement relating to the operation definition
@@ -29337,7 +29441,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement;
+  PrimitiveElement? get copyrightElement;
   @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
@@ -29349,7 +29453,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement;
+  PrimitiveElement? get copyrightLabelElement;
   @override
 
   /// [kind] Whether this is an operation or a named query.
@@ -29358,7 +29462,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [kindElement] ("_kind") Extensions for kind
   @JsonKey(name: '_kind')
-  Element? get kindElement;
+  PrimitiveElement? get kindElement;
   @override
 
   /// [affectsState] Whether the operation affects state. Side effects such as
@@ -29368,7 +29472,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [affectsStateElement] ("_affectsState") Extensions for affectsState
   @JsonKey(name: '_affectsState')
-  Element? get affectsStateElement;
+  PrimitiveElement? get affectsStateElement;
   @override
 
   /// [code] The label that is recommended to be used in the URL for this
@@ -29380,7 +29484,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement;
+  PrimitiveElement? get codeElement;
   @override
 
   /// [comment] Additional information about how to use this operation or named
@@ -29390,7 +29494,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [commentElement] ("_comment") Extensions for comment
   @JsonKey(name: '_comment')
-  Element? get commentElement;
+  PrimitiveElement? get commentElement;
   @override
 
   /// [base] Indicates that this operation definition is a constraining profile
@@ -29415,7 +29519,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [systemElement] ("_system") Extensions for system
   @JsonKey(name: '_system')
-  Element? get systemElement;
+  PrimitiveElement? get systemElement;
   @override
 
   /// [type] Indicates whether this operation or named query can be invoked at
@@ -29426,7 +29530,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement;
+  PrimitiveElement? get typeElement;
   @override
 
   /// [instance] Indicates whether this operation can be invoked on a particular
@@ -29436,7 +29540,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [instanceElement] ("_instance") Extensions for instance
   @JsonKey(name: '_instance')
-  Element? get instanceElement;
+  PrimitiveElement? get instanceElement;
   @override
 
   /// [inputProfile] Additional validation information for the in parameters - a
@@ -29505,14 +29609,14 @@ mixin _$OperationDefinitionParameter {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [use] Whether this is an input or an output parameter.
   FhirCode? get use => throw _privateConstructorUsedError;
 
   /// [useElement] ("_use") Extensions for use
   @JsonKey(name: '_use')
-  Element? get useElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get useElement => throw _privateConstructorUsedError;
 
   /// [scope] If present, indicates that the parameter applies when the operation
   ///  is being invoked at the specified level.
@@ -29528,7 +29632,7 @@ mixin _$OperationDefinitionParameter {
 
   /// [minElement] ("_min") Extensions for min
   @JsonKey(name: '_min')
-  Element? get minElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get minElement => throw _privateConstructorUsedError;
 
   /// [max] The maximum number of times this element is permitted to appear in
   ///  the request or response.
@@ -29536,21 +29640,22 @@ mixin _$OperationDefinitionParameter {
 
   /// [maxElement] ("_max") Extensions for max
   @JsonKey(name: '_max')
-  Element? get maxElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get maxElement => throw _privateConstructorUsedError;
 
   /// [documentation] Describes the meaning or use of this parameter.
   FhirMarkdown? get documentation => throw _privateConstructorUsedError;
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get documentationElement =>
+      throw _privateConstructorUsedError;
 
   /// [type] The type for this parameter.
   FhirCode? get type => throw _privateConstructorUsedError;
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get typeElement => throw _privateConstructorUsedError;
 
   /// [allowedType] Support for polymorphic types. If the parameter type is
   ///  abstract, this element lists allowed sub-types for the parameter.
@@ -29577,7 +29682,7 @@ mixin _$OperationDefinitionParameter {
 
   /// [searchTypeElement] ("_searchType") Extensions for searchType
   @JsonKey(name: '_searchType')
-  Element? get searchTypeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get searchTypeElement => throw _privateConstructorUsedError;
 
   /// [binding] Binds to a value set if this parameter is coded (code, Coding,
   ///  CodeableConcept).
@@ -29612,24 +29717,24 @@ abstract class $OperationDefinitionParameterCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       FhirCode? use,
-      @JsonKey(name: '_use') Element? useElement,
+      @JsonKey(name: '_use') PrimitiveElement? useElement,
       List<FhirCode>? scope,
       @JsonKey(name: '_scope') List<Element>? scopeElement,
       FhirInteger? min,
-      @JsonKey(name: '_min') Element? minElement,
+      @JsonKey(name: '_min') PrimitiveElement? minElement,
       String? max,
-      @JsonKey(name: '_max') Element? maxElement,
+      @JsonKey(name: '_max') PrimitiveElement? maxElement,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement,
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       List<FhirCode>? allowedType,
       @JsonKey(name: '_allowedType') List<Element>? allowedTypeElement,
       List<FhirCanonical>? targetProfile,
       FhirCode? searchType,
-      @JsonKey(name: '_searchType') Element? searchTypeElement,
+      @JsonKey(name: '_searchType') PrimitiveElement? searchTypeElement,
       OperationDefinitionBinding? binding,
       List<OperationDefinitionReferencedFrom>? referencedFrom,
       @JsonKey(name: 'part') List<OperationDefinitionParameter>? part_});
@@ -29697,7 +29802,7 @@ class _$OperationDefinitionParameterCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       use: freezed == use
           ? _value.use
           : use // ignore: cast_nullable_to_non_nullable
@@ -29705,7 +29810,7 @@ class _$OperationDefinitionParameterCopyWithImpl<$Res,
       useElement: freezed == useElement
           ? _value.useElement
           : useElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       scope: freezed == scope
           ? _value.scope
           : scope // ignore: cast_nullable_to_non_nullable
@@ -29721,7 +29826,7 @@ class _$OperationDefinitionParameterCopyWithImpl<$Res,
       minElement: freezed == minElement
           ? _value.minElement
           : minElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       max: freezed == max
           ? _value.max
           : max // ignore: cast_nullable_to_non_nullable
@@ -29729,7 +29834,7 @@ class _$OperationDefinitionParameterCopyWithImpl<$Res,
       maxElement: freezed == maxElement
           ? _value.maxElement
           : maxElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -29737,7 +29842,7 @@ class _$OperationDefinitionParameterCopyWithImpl<$Res,
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -29745,7 +29850,7 @@ class _$OperationDefinitionParameterCopyWithImpl<$Res,
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       allowedType: freezed == allowedType
           ? _value.allowedType
           : allowedType // ignore: cast_nullable_to_non_nullable
@@ -29765,7 +29870,7 @@ class _$OperationDefinitionParameterCopyWithImpl<$Res,
       searchTypeElement: freezed == searchTypeElement
           ? _value.searchTypeElement
           : searchTypeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       binding: freezed == binding
           ? _value.binding
           : binding // ignore: cast_nullable_to_non_nullable
@@ -29808,24 +29913,24 @@ abstract class _$$OperationDefinitionParameterImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       FhirCode? use,
-      @JsonKey(name: '_use') Element? useElement,
+      @JsonKey(name: '_use') PrimitiveElement? useElement,
       List<FhirCode>? scope,
       @JsonKey(name: '_scope') List<Element>? scopeElement,
       FhirInteger? min,
-      @JsonKey(name: '_min') Element? minElement,
+      @JsonKey(name: '_min') PrimitiveElement? minElement,
       String? max,
-      @JsonKey(name: '_max') Element? maxElement,
+      @JsonKey(name: '_max') PrimitiveElement? maxElement,
       FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement,
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       List<FhirCode>? allowedType,
       @JsonKey(name: '_allowedType') List<Element>? allowedTypeElement,
       List<FhirCanonical>? targetProfile,
       FhirCode? searchType,
-      @JsonKey(name: '_searchType') Element? searchTypeElement,
+      @JsonKey(name: '_searchType') PrimitiveElement? searchTypeElement,
       OperationDefinitionBinding? binding,
       List<OperationDefinitionReferencedFrom>? referencedFrom,
       @JsonKey(name: 'part') List<OperationDefinitionParameter>? part_});
@@ -29893,7 +29998,7 @@ class __$$OperationDefinitionParameterImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       use: freezed == use
           ? _value.use
           : use // ignore: cast_nullable_to_non_nullable
@@ -29901,7 +30006,7 @@ class __$$OperationDefinitionParameterImplCopyWithImpl<$Res>
       useElement: freezed == useElement
           ? _value.useElement
           : useElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       scope: freezed == scope
           ? _value._scope
           : scope // ignore: cast_nullable_to_non_nullable
@@ -29917,7 +30022,7 @@ class __$$OperationDefinitionParameterImplCopyWithImpl<$Res>
       minElement: freezed == minElement
           ? _value.minElement
           : minElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       max: freezed == max
           ? _value.max
           : max // ignore: cast_nullable_to_non_nullable
@@ -29925,7 +30030,7 @@ class __$$OperationDefinitionParameterImplCopyWithImpl<$Res>
       maxElement: freezed == maxElement
           ? _value.maxElement
           : maxElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -29933,7 +30038,7 @@ class __$$OperationDefinitionParameterImplCopyWithImpl<$Res>
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -29941,7 +30046,7 @@ class __$$OperationDefinitionParameterImplCopyWithImpl<$Res>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       allowedType: freezed == allowedType
           ? _value._allowedType
           : allowedType // ignore: cast_nullable_to_non_nullable
@@ -29961,7 +30066,7 @@ class __$$OperationDefinitionParameterImplCopyWithImpl<$Res>
       searchTypeElement: freezed == searchTypeElement
           ? _value.searchTypeElement
           : searchTypeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       binding: freezed == binding
           ? _value.binding
           : binding // ignore: cast_nullable_to_non_nullable
@@ -30094,7 +30199,7 @@ class _$OperationDefinitionParameterImpl extends _OperationDefinitionParameter {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [use] Whether this is an input or an output parameter.
   @override
@@ -30103,7 +30208,7 @@ class _$OperationDefinitionParameterImpl extends _OperationDefinitionParameter {
   /// [useElement] ("_use") Extensions for use
   @override
   @JsonKey(name: '_use')
-  final Element? useElement;
+  final PrimitiveElement? useElement;
 
   /// [scope] If present, indicates that the parameter applies when the operation
   ///  is being invoked at the specified level.
@@ -30142,7 +30247,7 @@ class _$OperationDefinitionParameterImpl extends _OperationDefinitionParameter {
   /// [minElement] ("_min") Extensions for min
   @override
   @JsonKey(name: '_min')
-  final Element? minElement;
+  final PrimitiveElement? minElement;
 
   /// [max] The maximum number of times this element is permitted to appear in
   ///  the request or response.
@@ -30152,7 +30257,7 @@ class _$OperationDefinitionParameterImpl extends _OperationDefinitionParameter {
   /// [maxElement] ("_max") Extensions for max
   @override
   @JsonKey(name: '_max')
-  final Element? maxElement;
+  final PrimitiveElement? maxElement;
 
   /// [documentation] Describes the meaning or use of this parameter.
   @override
@@ -30161,7 +30266,7 @@ class _$OperationDefinitionParameterImpl extends _OperationDefinitionParameter {
   /// [documentationElement] ("_documentation") Extensions for documentation
   @override
   @JsonKey(name: '_documentation')
-  final Element? documentationElement;
+  final PrimitiveElement? documentationElement;
 
   /// [type] The type for this parameter.
   @override
@@ -30170,7 +30275,7 @@ class _$OperationDefinitionParameterImpl extends _OperationDefinitionParameter {
   /// [typeElement] ("_type") Extensions for type
   @override
   @JsonKey(name: '_type')
-  final Element? typeElement;
+  final PrimitiveElement? typeElement;
 
   /// [allowedType] Support for polymorphic types. If the parameter type is
   ///  abstract, this element lists allowed sub-types for the parameter.
@@ -30239,7 +30344,7 @@ class _$OperationDefinitionParameterImpl extends _OperationDefinitionParameter {
   /// [searchTypeElement] ("_searchType") Extensions for searchType
   @override
   @JsonKey(name: '_searchType')
-  final Element? searchTypeElement;
+  final PrimitiveElement? searchTypeElement;
 
   /// [binding] Binds to a value set if this parameter is coded (code, Coding,
   ///  CodeableConcept).
@@ -30382,24 +30487,25 @@ abstract class _OperationDefinitionParameter
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirCode? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final FhirCode? use,
-      @JsonKey(name: '_use') final Element? useElement,
+      @JsonKey(name: '_use') final PrimitiveElement? useElement,
       final List<FhirCode>? scope,
       @JsonKey(name: '_scope') final List<Element>? scopeElement,
       final FhirInteger? min,
-      @JsonKey(name: '_min') final Element? minElement,
+      @JsonKey(name: '_min') final PrimitiveElement? minElement,
       final String? max,
-      @JsonKey(name: '_max') final Element? maxElement,
+      @JsonKey(name: '_max') final PrimitiveElement? maxElement,
       final FhirMarkdown? documentation,
-      @JsonKey(name: '_documentation') final Element? documentationElement,
+      @JsonKey(name: '_documentation')
+      final PrimitiveElement? documentationElement,
       final FhirCode? type,
-      @JsonKey(name: '_type') final Element? typeElement,
+      @JsonKey(name: '_type') final PrimitiveElement? typeElement,
       final List<FhirCode>? allowedType,
       @JsonKey(name: '_allowedType') final List<Element>? allowedTypeElement,
       final List<FhirCanonical>? targetProfile,
       final FhirCode? searchType,
-      @JsonKey(name: '_searchType') final Element? searchTypeElement,
+      @JsonKey(name: '_searchType') final PrimitiveElement? searchTypeElement,
       final OperationDefinitionBinding? binding,
       final List<OperationDefinitionReferencedFrom>? referencedFrom,
       @JsonKey(name: 'part')
@@ -30448,7 +30554,7 @@ abstract class _OperationDefinitionParameter
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [use] Whether this is an input or an output parameter.
@@ -30457,7 +30563,7 @@ abstract class _OperationDefinitionParameter
 
   /// [useElement] ("_use") Extensions for use
   @JsonKey(name: '_use')
-  Element? get useElement;
+  PrimitiveElement? get useElement;
   @override
 
   /// [scope] If present, indicates that the parameter applies when the operation
@@ -30477,7 +30583,7 @@ abstract class _OperationDefinitionParameter
 
   /// [minElement] ("_min") Extensions for min
   @JsonKey(name: '_min')
-  Element? get minElement;
+  PrimitiveElement? get minElement;
   @override
 
   /// [max] The maximum number of times this element is permitted to appear in
@@ -30487,7 +30593,7 @@ abstract class _OperationDefinitionParameter
 
   /// [maxElement] ("_max") Extensions for max
   @JsonKey(name: '_max')
-  Element? get maxElement;
+  PrimitiveElement? get maxElement;
   @override
 
   /// [documentation] Describes the meaning or use of this parameter.
@@ -30496,7 +30602,7 @@ abstract class _OperationDefinitionParameter
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement;
+  PrimitiveElement? get documentationElement;
   @override
 
   /// [type] The type for this parameter.
@@ -30505,7 +30611,7 @@ abstract class _OperationDefinitionParameter
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement;
+  PrimitiveElement? get typeElement;
   @override
 
   /// [allowedType] Support for polymorphic types. If the parameter type is
@@ -30537,7 +30643,7 @@ abstract class _OperationDefinitionParameter
 
   /// [searchTypeElement] ("_searchType") Extensions for searchType
   @JsonKey(name: '_searchType')
-  Element? get searchTypeElement;
+  PrimitiveElement? get searchTypeElement;
   @override
 
   /// [binding] Binds to a value set if this parameter is coded (code, Coding,
@@ -30602,7 +30708,7 @@ mixin _$OperationDefinitionBinding {
 
   /// [strengthElement] ("_strength") Extensions for strength
   @JsonKey(name: '_strength')
-  Element? get strengthElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get strengthElement => throw _privateConstructorUsedError;
 
   /// [valueSet] Points to the value set or external definition (e.g. implicit
   ///  value set) that identifies the set of codes to be used.
@@ -30626,7 +30732,7 @@ abstract class $OperationDefinitionBindingCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? strength,
-      @JsonKey(name: '_strength') Element? strengthElement,
+      @JsonKey(name: '_strength') PrimitiveElement? strengthElement,
       FhirCanonical valueSet});
 }
 
@@ -30671,7 +30777,7 @@ class _$OperationDefinitionBindingCopyWithImpl<$Res,
       strengthElement: freezed == strengthElement
           ? _value.strengthElement
           : strengthElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueSet: null == valueSet
           ? _value.valueSet
           : valueSet // ignore: cast_nullable_to_non_nullable
@@ -30694,7 +30800,7 @@ abstract class _$$OperationDefinitionBindingImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? strength,
-      @JsonKey(name: '_strength') Element? strengthElement,
+      @JsonKey(name: '_strength') PrimitiveElement? strengthElement,
       FhirCanonical valueSet});
 }
 
@@ -30738,7 +30844,7 @@ class __$$OperationDefinitionBindingImplCopyWithImpl<$Res>
       strengthElement: freezed == strengthElement
           ? _value.strengthElement
           : strengthElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueSet: null == valueSet
           ? _value.valueSet
           : valueSet // ignore: cast_nullable_to_non_nullable
@@ -30839,7 +30945,7 @@ class _$OperationDefinitionBindingImpl extends _OperationDefinitionBinding {
   /// [strengthElement] ("_strength") Extensions for strength
   @override
   @JsonKey(name: '_strength')
-  final Element? strengthElement;
+  final PrimitiveElement? strengthElement;
 
   /// [valueSet] Points to the value set or external definition (e.g. implicit
   ///  value set) that identifies the set of codes to be used.
@@ -30901,7 +31007,7 @@ abstract class _OperationDefinitionBinding extends OperationDefinitionBinding {
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final FhirCode? strength,
-          @JsonKey(name: '_strength') final Element? strengthElement,
+          @JsonKey(name: '_strength') final PrimitiveElement? strengthElement,
           required final FhirCanonical valueSet}) =
       _$OperationDefinitionBindingImpl;
   const _OperationDefinitionBinding._() : super._();
@@ -30949,7 +31055,7 @@ abstract class _OperationDefinitionBinding extends OperationDefinitionBinding {
 
   /// [strengthElement] ("_strength") Extensions for strength
   @JsonKey(name: '_strength')
-  Element? get strengthElement;
+  PrimitiveElement? get strengthElement;
   @override
 
   /// [valueSet] Points to the value set or external definition (e.g. implicit
@@ -31003,7 +31109,7 @@ mixin _$OperationDefinitionReferencedFrom {
 
   /// [sourceElement] ("_source") Extensions for source
   @JsonKey(name: '_source')
-  Element? get sourceElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get sourceElement => throw _privateConstructorUsedError;
 
   /// [sourceId] The id of the element in the referencing resource that is
   ///  expected to resolve to this resource.
@@ -31011,7 +31117,7 @@ mixin _$OperationDefinitionReferencedFrom {
 
   /// [sourceIdElement] ("_sourceId") Extensions for sourceId
   @JsonKey(name: '_sourceId')
-  Element? get sourceIdElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get sourceIdElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -31032,9 +31138,9 @@ abstract class $OperationDefinitionReferencedFromCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? source,
-      @JsonKey(name: '_source') Element? sourceElement,
+      @JsonKey(name: '_source') PrimitiveElement? sourceElement,
       String? sourceId,
-      @JsonKey(name: '_sourceId') Element? sourceIdElement});
+      @JsonKey(name: '_sourceId') PrimitiveElement? sourceIdElement});
 }
 
 /// @nodoc
@@ -31079,7 +31185,7 @@ class _$OperationDefinitionReferencedFromCopyWithImpl<$Res,
       sourceElement: freezed == sourceElement
           ? _value.sourceElement
           : sourceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sourceId: freezed == sourceId
           ? _value.sourceId
           : sourceId // ignore: cast_nullable_to_non_nullable
@@ -31087,7 +31193,7 @@ class _$OperationDefinitionReferencedFromCopyWithImpl<$Res,
       sourceIdElement: freezed == sourceIdElement
           ? _value.sourceIdElement
           : sourceIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -31106,9 +31212,9 @@ abstract class _$$OperationDefinitionReferencedFromImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? source,
-      @JsonKey(name: '_source') Element? sourceElement,
+      @JsonKey(name: '_source') PrimitiveElement? sourceElement,
       String? sourceId,
-      @JsonKey(name: '_sourceId') Element? sourceIdElement});
+      @JsonKey(name: '_sourceId') PrimitiveElement? sourceIdElement});
 }
 
 /// @nodoc
@@ -31152,7 +31258,7 @@ class __$$OperationDefinitionReferencedFromImplCopyWithImpl<$Res>
       sourceElement: freezed == sourceElement
           ? _value.sourceElement
           : sourceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sourceId: freezed == sourceId
           ? _value.sourceId
           : sourceId // ignore: cast_nullable_to_non_nullable
@@ -31160,7 +31266,7 @@ class __$$OperationDefinitionReferencedFromImplCopyWithImpl<$Res>
       sourceIdElement: freezed == sourceIdElement
           ? _value.sourceIdElement
           : sourceIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -31259,7 +31365,7 @@ class _$OperationDefinitionReferencedFromImpl
   /// [sourceElement] ("_source") Extensions for source
   @override
   @JsonKey(name: '_source')
-  final Element? sourceElement;
+  final PrimitiveElement? sourceElement;
 
   /// [sourceId] The id of the element in the referencing resource that is
   ///  expected to resolve to this resource.
@@ -31269,7 +31375,7 @@ class _$OperationDefinitionReferencedFromImpl
   /// [sourceIdElement] ("_sourceId") Extensions for sourceId
   @override
   @JsonKey(name: '_sourceId')
-  final Element? sourceIdElement;
+  final PrimitiveElement? sourceIdElement;
 
   @override
   String toString() {
@@ -31330,9 +31436,10 @@ abstract class _OperationDefinitionReferencedFrom
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final String? source,
-          @JsonKey(name: '_source') final Element? sourceElement,
+          @JsonKey(name: '_source') final PrimitiveElement? sourceElement,
           final String? sourceId,
-          @JsonKey(name: '_sourceId') final Element? sourceIdElement}) =
+          @JsonKey(name: '_sourceId')
+          final PrimitiveElement? sourceIdElement}) =
       _$OperationDefinitionReferencedFromImpl;
   const _OperationDefinitionReferencedFrom._() : super._();
 
@@ -31380,7 +31487,7 @@ abstract class _OperationDefinitionReferencedFrom
 
   /// [sourceElement] ("_source") Extensions for source
   @JsonKey(name: '_source')
-  Element? get sourceElement;
+  PrimitiveElement? get sourceElement;
   @override
 
   /// [sourceId] The id of the element in the referencing resource that is
@@ -31390,7 +31497,7 @@ abstract class _OperationDefinitionReferencedFrom
 
   /// [sourceIdElement] ("_sourceId") Extensions for sourceId
   @JsonKey(name: '_sourceId')
-  Element? get sourceIdElement;
+  PrimitiveElement? get sourceIdElement;
   @override
   @JsonKey(ignore: true)
   _$$OperationDefinitionReferencedFromImplCopyWith<
@@ -31445,7 +31552,7 @@ mixin _$OperationDefinitionOverload {
 
   /// [commentElement] ("_comment") Extensions for comment
   @JsonKey(name: '_comment')
-  Element? get commentElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get commentElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -31468,7 +31575,7 @@ abstract class $OperationDefinitionOverloadCopyWith<$Res> {
       List<String>? parameterName,
       @JsonKey(name: '_parameterName') List<Element>? parameterNameElement,
       String? comment,
-      @JsonKey(name: '_comment') Element? commentElement});
+      @JsonKey(name: '_comment') PrimitiveElement? commentElement});
 }
 
 /// @nodoc
@@ -31521,7 +31628,7 @@ class _$OperationDefinitionOverloadCopyWithImpl<$Res,
       commentElement: freezed == commentElement
           ? _value.commentElement
           : commentElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -31542,7 +31649,7 @@ abstract class _$$OperationDefinitionOverloadImplCopyWith<$Res>
       List<String>? parameterName,
       @JsonKey(name: '_parameterName') List<Element>? parameterNameElement,
       String? comment,
-      @JsonKey(name: '_comment') Element? commentElement});
+      @JsonKey(name: '_comment') PrimitiveElement? commentElement});
 }
 
 /// @nodoc
@@ -31594,7 +31701,7 @@ class __$$OperationDefinitionOverloadImplCopyWithImpl<$Res>
       commentElement: freezed == commentElement
           ? _value.commentElement
           : commentElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -31721,7 +31828,7 @@ class _$OperationDefinitionOverloadImpl extends _OperationDefinitionOverload {
   /// [commentElement] ("_comment") Extensions for comment
   @override
   @JsonKey(name: '_comment')
-  final Element? commentElement;
+  final PrimitiveElement? commentElement;
 
   @override
   String toString() {
@@ -31784,7 +31891,7 @@ abstract class _OperationDefinitionOverload
           @JsonKey(name: '_parameterName')
           final List<Element>? parameterNameElement,
           final String? comment,
-          @JsonKey(name: '_comment') final Element? commentElement}) =
+          @JsonKey(name: '_comment') final PrimitiveElement? commentElement}) =
       _$OperationDefinitionOverloadImpl;
   const _OperationDefinitionOverload._() : super._();
 
@@ -31838,7 +31945,7 @@ abstract class _OperationDefinitionOverload
 
   /// [commentElement] ("_comment") Extensions for comment
   @JsonKey(name: '_comment')
-  Element? get commentElement;
+  PrimitiveElement? get commentElement;
   @override
   @JsonKey(ignore: true)
   _$$OperationDefinitionOverloadImplCopyWith<_$OperationDefinitionOverloadImpl>
@@ -31872,14 +31979,15 @@ mixin _$SearchParameter {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -31931,7 +32039,7 @@ mixin _$SearchParameter {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   /// [identifier] A formal identifier that is used to identify this search
   ///  parameter when it is represented in other formats, or referenced in a
@@ -31949,7 +32057,7 @@ mixin _$SearchParameter {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -31958,7 +32066,7 @@ mixin _$SearchParameter {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement =>
+  PrimitiveElement? get versionAlgorithmStringElement =>
       throw _privateConstructorUsedError;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -31972,14 +32080,14 @@ mixin _$SearchParameter {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [title] A short, descriptive, user-friendly title for the search parameter.
   String? get title => throw _privateConstructorUsedError;
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [status] The status of this search parameter. Enables tracking the
   ///  life-cycle of the content.
@@ -31987,7 +32095,7 @@ mixin _$SearchParameter {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [experimental] A Boolean value to indicate that this search parameter is
   ///  authored for testing purposes (or education/evaluation/marketing) and is
@@ -31996,7 +32104,8 @@ mixin _$SearchParameter {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get experimentalElement =>
+      throw _privateConstructorUsedError;
 
   /// [date] The date  (and optionally time) when the search parameter was last
   ///  significantly changed. The date must change when the business version
@@ -32006,7 +32115,7 @@ mixin _$SearchParameter {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [publisher] The name of the organization or individual tresponsible for the
   ///  release and ongoing maintenance of the search parameter.
@@ -32014,7 +32123,7 @@ mixin _$SearchParameter {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get publisherElement => throw _privateConstructorUsedError;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -32025,7 +32134,8 @@ mixin _$SearchParameter {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -32044,7 +32154,7 @@ mixin _$SearchParameter {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get purposeElement => throw _privateConstructorUsedError;
 
   /// [copyright] A copyright statement relating to the search parameter and/or
   ///  its contents. Copyright statements are generally legal restrictions on the
@@ -32053,7 +32163,7 @@ mixin _$SearchParameter {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -32063,7 +32173,8 @@ mixin _$SearchParameter {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightLabelElement =>
+      throw _privateConstructorUsedError;
 
   /// [derivedFrom] Where this search parameter is originally defined. If a
   ///  derivedFrom is provided, then the details in the search parameter must be
@@ -32081,7 +32192,7 @@ mixin _$SearchParameter {
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get codeElement => throw _privateConstructorUsedError;
 
   /// [base] The base resource type(s) that this search parameter can be used
   ///  against.
@@ -32097,7 +32208,7 @@ mixin _$SearchParameter {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get typeElement => throw _privateConstructorUsedError;
 
   /// [expression] A FHIRPath expression that returns a set of elements for the
   ///  search parameter.
@@ -32105,7 +32216,7 @@ mixin _$SearchParameter {
 
   /// [expressionElement] ("_expression") Extensions for expression
   @JsonKey(name: '_expression')
-  Element? get expressionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get expressionElement => throw _privateConstructorUsedError;
 
   /// [processingMode] How the search parameter relates to the set of elements
   ///  returned by evaluating the expression query.
@@ -32113,7 +32224,8 @@ mixin _$SearchParameter {
 
   /// [processingModeElement] ("_processingMode") Extensions for processingMode
   @JsonKey(name: '_processingMode')
-  Element? get processingModeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get processingModeElement =>
+      throw _privateConstructorUsedError;
 
   /// [constraint] FHIRPath expression that defines/sets a complex constraint for
   ///  when this SearchParameter is applicable.
@@ -32121,7 +32233,7 @@ mixin _$SearchParameter {
 
   /// [constraintElement] ("_constraint") Extensions for constraint
   @JsonKey(name: '_constraint')
-  Element? get constraintElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get constraintElement => throw _privateConstructorUsedError;
 
   /// [target] Types of resource (if a resource is referenced).
   List<FhirCode>? get target => throw _privateConstructorUsedError;
@@ -32137,7 +32249,7 @@ mixin _$SearchParameter {
 
   /// [multipleOrElement] ("_multipleOr") Extensions for multipleOr
   @JsonKey(name: '_multipleOr')
-  Element? get multipleOrElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get multipleOrElement => throw _privateConstructorUsedError;
 
   /// [multipleAnd] Whether multiple parameters are allowed - e.g. more than one
   ///  parameter with the same name. The search matches if all the parameters
@@ -32146,7 +32258,8 @@ mixin _$SearchParameter {
 
   /// [multipleAndElement] ("_multipleAnd") Extensions for multipleAnd
   @JsonKey(name: '_multipleAnd')
-  Element? get multipleAndElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get multipleAndElement =>
+      throw _privateConstructorUsedError;
 
   /// [comparator] Comparators supported for the search parameter.
   List<FhirCode>? get comparator => throw _privateConstructorUsedError;
@@ -32196,64 +32309,64 @@ abstract class $SearchParameterCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirCanonical? derivedFrom,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       List<FhirCode>? base,
       @JsonKey(name: '_base') List<Element>? baseElement,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       String? expression,
-      @JsonKey(name: '_expression') Element? expressionElement,
+      @JsonKey(name: '_expression') PrimitiveElement? expressionElement,
       FhirCode? processingMode,
-      @JsonKey(name: '_processingMode') Element? processingModeElement,
+      @JsonKey(name: '_processingMode') PrimitiveElement? processingModeElement,
       String? constraint,
-      @JsonKey(name: '_constraint') Element? constraintElement,
+      @JsonKey(name: '_constraint') PrimitiveElement? constraintElement,
       List<FhirCode>? target,
       @JsonKey(name: '_target') List<Element>? targetElement,
       FhirBoolean? multipleOr,
-      @JsonKey(name: '_multipleOr') Element? multipleOrElement,
+      @JsonKey(name: '_multipleOr') PrimitiveElement? multipleOrElement,
       FhirBoolean? multipleAnd,
-      @JsonKey(name: '_multipleAnd') Element? multipleAndElement,
+      @JsonKey(name: '_multipleAnd') PrimitiveElement? multipleAndElement,
       List<FhirCode>? comparator,
       @JsonKey(name: '_comparator') List<Element>? comparatorElement,
       List<FhirCode>? modifier,
@@ -32369,7 +32482,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -32377,7 +32490,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -32401,7 +32514,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -32413,7 +32526,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -32421,7 +32534,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -32433,7 +32546,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -32441,7 +32554,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -32449,7 +32562,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -32457,7 +32570,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -32465,7 +32578,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -32473,7 +32586,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value.contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -32485,7 +32598,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value.useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -32501,7 +32614,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -32509,7 +32622,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -32517,7 +32630,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       derivedFrom: freezed == derivedFrom
           ? _value.derivedFrom
           : derivedFrom // ignore: cast_nullable_to_non_nullable
@@ -32529,7 +32642,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       base: freezed == base
           ? _value.base
           : base // ignore: cast_nullable_to_non_nullable
@@ -32545,7 +32658,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       expression: freezed == expression
           ? _value.expression
           : expression // ignore: cast_nullable_to_non_nullable
@@ -32553,7 +32666,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       expressionElement: freezed == expressionElement
           ? _value.expressionElement
           : expressionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       processingMode: freezed == processingMode
           ? _value.processingMode
           : processingMode // ignore: cast_nullable_to_non_nullable
@@ -32561,7 +32674,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       processingModeElement: freezed == processingModeElement
           ? _value.processingModeElement
           : processingModeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       constraint: freezed == constraint
           ? _value.constraint
           : constraint // ignore: cast_nullable_to_non_nullable
@@ -32569,7 +32682,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       constraintElement: freezed == constraintElement
           ? _value.constraintElement
           : constraintElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       target: freezed == target
           ? _value.target
           : target // ignore: cast_nullable_to_non_nullable
@@ -32585,7 +32698,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       multipleOrElement: freezed == multipleOrElement
           ? _value.multipleOrElement
           : multipleOrElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       multipleAnd: freezed == multipleAnd
           ? _value.multipleAnd
           : multipleAnd // ignore: cast_nullable_to_non_nullable
@@ -32593,7 +32706,7 @@ class _$SearchParameterCopyWithImpl<$Res, $Val extends SearchParameter>
       multipleAndElement: freezed == multipleAndElement
           ? _value.multipleAndElement
           : multipleAndElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       comparator: freezed == comparator
           ? _value.comparator
           : comparator // ignore: cast_nullable_to_non_nullable
@@ -32676,64 +32789,64 @@ abstract class _$$SearchParameterImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirCanonical? derivedFrom,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       List<FhirCode>? base,
       @JsonKey(name: '_base') List<Element>? baseElement,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       String? expression,
-      @JsonKey(name: '_expression') Element? expressionElement,
+      @JsonKey(name: '_expression') PrimitiveElement? expressionElement,
       FhirCode? processingMode,
-      @JsonKey(name: '_processingMode') Element? processingModeElement,
+      @JsonKey(name: '_processingMode') PrimitiveElement? processingModeElement,
       String? constraint,
-      @JsonKey(name: '_constraint') Element? constraintElement,
+      @JsonKey(name: '_constraint') PrimitiveElement? constraintElement,
       List<FhirCode>? target,
       @JsonKey(name: '_target') List<Element>? targetElement,
       FhirBoolean? multipleOr,
-      @JsonKey(name: '_multipleOr') Element? multipleOrElement,
+      @JsonKey(name: '_multipleOr') PrimitiveElement? multipleOrElement,
       FhirBoolean? multipleAnd,
-      @JsonKey(name: '_multipleAnd') Element? multipleAndElement,
+      @JsonKey(name: '_multipleAnd') PrimitiveElement? multipleAndElement,
       List<FhirCode>? comparator,
       @JsonKey(name: '_comparator') List<Element>? comparatorElement,
       List<FhirCode>? modifier,
@@ -32850,7 +32963,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -32858,7 +32971,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -32882,7 +32995,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value._identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -32894,7 +33007,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -32902,7 +33015,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -32914,7 +33027,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -32922,7 +33035,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -32930,7 +33043,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -32938,7 +33051,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -32946,7 +33059,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -32954,7 +33067,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value._contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -32966,7 +33079,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value._useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -32982,7 +33095,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -32990,7 +33103,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -32998,7 +33111,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       derivedFrom: freezed == derivedFrom
           ? _value.derivedFrom
           : derivedFrom // ignore: cast_nullable_to_non_nullable
@@ -33010,7 +33123,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       base: freezed == base
           ? _value._base
           : base // ignore: cast_nullable_to_non_nullable
@@ -33026,7 +33139,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       expression: freezed == expression
           ? _value.expression
           : expression // ignore: cast_nullable_to_non_nullable
@@ -33034,7 +33147,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       expressionElement: freezed == expressionElement
           ? _value.expressionElement
           : expressionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       processingMode: freezed == processingMode
           ? _value.processingMode
           : processingMode // ignore: cast_nullable_to_non_nullable
@@ -33042,7 +33155,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       processingModeElement: freezed == processingModeElement
           ? _value.processingModeElement
           : processingModeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       constraint: freezed == constraint
           ? _value.constraint
           : constraint // ignore: cast_nullable_to_non_nullable
@@ -33050,7 +33163,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       constraintElement: freezed == constraintElement
           ? _value.constraintElement
           : constraintElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       target: freezed == target
           ? _value._target
           : target // ignore: cast_nullable_to_non_nullable
@@ -33066,7 +33179,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       multipleOrElement: freezed == multipleOrElement
           ? _value.multipleOrElement
           : multipleOrElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       multipleAnd: freezed == multipleAnd
           ? _value.multipleAnd
           : multipleAnd // ignore: cast_nullable_to_non_nullable
@@ -33074,7 +33187,7 @@ class __$$SearchParameterImplCopyWithImpl<$Res>
       multipleAndElement: freezed == multipleAndElement
           ? _value.multipleAndElement
           : multipleAndElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       comparator: freezed == comparator
           ? _value._comparator
           : comparator // ignore: cast_nullable_to_non_nullable
@@ -33230,7 +33343,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -33239,7 +33352,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -33344,7 +33457,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   /// [identifier] A formal identifier that is used to identify this search
   ///  parameter when it is represented in other formats, or referenced in a
@@ -33376,7 +33489,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -33387,7 +33500,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   ///  versionAlgorithmString
   @override
   @JsonKey(name: '_versionAlgorithmString')
-  final Element? versionAlgorithmStringElement;
+  final PrimitiveElement? versionAlgorithmStringElement;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -33403,7 +33516,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [title] A short, descriptive, user-friendly title for the search parameter.
   @override
@@ -33412,7 +33525,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [status] The status of this search parameter. Enables tracking the
   ///  life-cycle of the content.
@@ -33422,7 +33535,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [experimental] A Boolean value to indicate that this search parameter is
   ///  authored for testing purposes (or education/evaluation/marketing) and is
@@ -33433,7 +33546,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @override
   @JsonKey(name: '_experimental')
-  final Element? experimentalElement;
+  final PrimitiveElement? experimentalElement;
 
   /// [date] The date  (and optionally time) when the search parameter was last
   ///  significantly changed. The date must change when the business version
@@ -33445,7 +33558,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [publisher] The name of the organization or individual tresponsible for the
   ///  release and ongoing maintenance of the search parameter.
@@ -33455,7 +33568,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [publisherElement] ("_publisher") Extensions for publisher
   @override
   @JsonKey(name: '_publisher')
-  final Element? publisherElement;
+  final PrimitiveElement? publisherElement;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -33479,7 +33592,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -33525,7 +33638,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [purposeElement] ("_purpose") Extensions for purpose
   @override
   @JsonKey(name: '_purpose')
-  final Element? purposeElement;
+  final PrimitiveElement? purposeElement;
 
   /// [copyright] A copyright statement relating to the search parameter and/or
   ///  its contents. Copyright statements are generally legal restrictions on the
@@ -33536,7 +33649,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @override
   @JsonKey(name: '_copyright')
-  final Element? copyrightElement;
+  final PrimitiveElement? copyrightElement;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -33548,7 +33661,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @override
   @JsonKey(name: '_copyrightLabel')
-  final Element? copyrightLabelElement;
+  final PrimitiveElement? copyrightLabelElement;
 
   /// [derivedFrom] Where this search parameter is originally defined. If a
   ///  derivedFrom is provided, then the details in the search parameter must be
@@ -33569,7 +33682,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [codeElement] ("_code") Extensions for code
   @override
   @JsonKey(name: '_code')
-  final Element? codeElement;
+  final PrimitiveElement? codeElement;
 
   /// [base] The base resource type(s) that this search parameter can be used
   ///  against.
@@ -33608,7 +33721,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [typeElement] ("_type") Extensions for type
   @override
   @JsonKey(name: '_type')
-  final Element? typeElement;
+  final PrimitiveElement? typeElement;
 
   /// [expression] A FHIRPath expression that returns a set of elements for the
   ///  search parameter.
@@ -33618,7 +33731,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [expressionElement] ("_expression") Extensions for expression
   @override
   @JsonKey(name: '_expression')
-  final Element? expressionElement;
+  final PrimitiveElement? expressionElement;
 
   /// [processingMode] How the search parameter relates to the set of elements
   ///  returned by evaluating the expression query.
@@ -33628,7 +33741,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [processingModeElement] ("_processingMode") Extensions for processingMode
   @override
   @JsonKey(name: '_processingMode')
-  final Element? processingModeElement;
+  final PrimitiveElement? processingModeElement;
 
   /// [constraint] FHIRPath expression that defines/sets a complex constraint for
   ///  when this SearchParameter is applicable.
@@ -33638,7 +33751,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [constraintElement] ("_constraint") Extensions for constraint
   @override
   @JsonKey(name: '_constraint')
-  final Element? constraintElement;
+  final PrimitiveElement? constraintElement;
 
   /// [target] Types of resource (if a resource is referenced).
   final List<FhirCode>? _target;
@@ -33676,7 +33789,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [multipleOrElement] ("_multipleOr") Extensions for multipleOr
   @override
   @JsonKey(name: '_multipleOr')
-  final Element? multipleOrElement;
+  final PrimitiveElement? multipleOrElement;
 
   /// [multipleAnd] Whether multiple parameters are allowed - e.g. more than one
   ///  parameter with the same name. The search matches if all the parameters
@@ -33687,7 +33800,7 @@ class _$SearchParameterImpl extends _SearchParameter {
   /// [multipleAndElement] ("_multipleAnd") Extensions for multipleAnd
   @override
   @JsonKey(name: '_multipleAnd')
-  final Element? multipleAndElement;
+  final PrimitiveElement? multipleAndElement;
 
   /// [comparator] Comparators supported for the search parameter.
   final List<FhirCode>? _comparator;
@@ -34007,64 +34120,68 @@ abstract class _SearchParameter extends SearchParameter {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUri? url,
-      @JsonKey(name: '_url') final Element? urlElement,
+      @JsonKey(name: '_url') final PrimitiveElement? urlElement,
       final List<Identifier>? identifier,
       final String? version,
-      @JsonKey(name: '_version') final Element? versionElement,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
       final String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      final Element? versionAlgorithmStringElement,
+      final PrimitiveElement? versionAlgorithmStringElement,
       final Coding? versionAlgorithmCoding,
       final String? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final PublicationStatus? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') final Element? experimentalElement,
+      @JsonKey(name: '_experimental')
+      final PrimitiveElement? experimentalElement,
       final FhirDateTime? date,
-      @JsonKey(name: '_date') final Element? dateElement,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
       final String? publisher,
-      @JsonKey(name: '_publisher') final Element? publisherElement,
+      @JsonKey(name: '_publisher') final PrimitiveElement? publisherElement,
       final List<ContactDetail>? contact,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<UsageContext>? useContext,
       final List<CodeableConcept>? jurisdiction,
       final FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') final Element? purposeElement,
+      @JsonKey(name: '_purpose') final PrimitiveElement? purposeElement,
       final FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') final Element? copyrightElement,
+      @JsonKey(name: '_copyright') final PrimitiveElement? copyrightElement,
       final String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') final Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel')
+      final PrimitiveElement? copyrightLabelElement,
       final FhirCanonical? derivedFrom,
       final FhirCode? code,
-      @JsonKey(name: '_code') final Element? codeElement,
+      @JsonKey(name: '_code') final PrimitiveElement? codeElement,
       final List<FhirCode>? base,
       @JsonKey(name: '_base') final List<Element>? baseElement,
       final FhirCode? type,
-      @JsonKey(name: '_type') final Element? typeElement,
+      @JsonKey(name: '_type') final PrimitiveElement? typeElement,
       final String? expression,
-      @JsonKey(name: '_expression') final Element? expressionElement,
+      @JsonKey(name: '_expression') final PrimitiveElement? expressionElement,
       final FhirCode? processingMode,
-      @JsonKey(name: '_processingMode') final Element? processingModeElement,
+      @JsonKey(name: '_processingMode')
+      final PrimitiveElement? processingModeElement,
       final String? constraint,
-      @JsonKey(name: '_constraint') final Element? constraintElement,
+      @JsonKey(name: '_constraint') final PrimitiveElement? constraintElement,
       final List<FhirCode>? target,
       @JsonKey(name: '_target') final List<Element>? targetElement,
       final FhirBoolean? multipleOr,
-      @JsonKey(name: '_multipleOr') final Element? multipleOrElement,
+      @JsonKey(name: '_multipleOr') final PrimitiveElement? multipleOrElement,
       final FhirBoolean? multipleAnd,
-      @JsonKey(name: '_multipleAnd') final Element? multipleAndElement,
+      @JsonKey(name: '_multipleAnd') final PrimitiveElement? multipleAndElement,
       final List<FhirCode>? comparator,
       @JsonKey(name: '_comparator') final List<Element>? comparatorElement,
       final List<FhirCode>? modifier,
@@ -34104,7 +34221,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -34113,7 +34230,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -34170,7 +34287,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
 
   /// [identifier] A formal identifier that is used to identify this search
@@ -34191,7 +34308,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
@@ -34202,7 +34319,7 @@ abstract class _SearchParameter extends SearchParameter {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement;
+  PrimitiveElement? get versionAlgorithmStringElement;
   @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -34218,7 +34335,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [title] A short, descriptive, user-friendly title for the search parameter.
@@ -34227,7 +34344,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [status] The status of this search parameter. Enables tracking the
@@ -34237,7 +34354,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [experimental] A Boolean value to indicate that this search parameter is
@@ -34248,7 +34365,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement;
+  PrimitiveElement? get experimentalElement;
   @override
 
   /// [date] The date  (and optionally time) when the search parameter was last
@@ -34260,7 +34377,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [publisher] The name of the organization or individual tresponsible for the
@@ -34270,7 +34387,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement;
+  PrimitiveElement? get publisherElement;
   @override
 
   /// [contact] Contact details to assist a user in finding and communicating
@@ -34284,7 +34401,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [useContext] The content was developed with a focus and intent of
@@ -34307,7 +34424,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement;
+  PrimitiveElement? get purposeElement;
   @override
 
   /// [copyright] A copyright statement relating to the search parameter and/or
@@ -34318,7 +34435,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement;
+  PrimitiveElement? get copyrightElement;
   @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
@@ -34330,7 +34447,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement;
+  PrimitiveElement? get copyrightLabelElement;
   @override
 
   /// [derivedFrom] Where this search parameter is originally defined. If a
@@ -34351,7 +34468,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement;
+  PrimitiveElement? get codeElement;
   @override
 
   /// [base] The base resource type(s) that this search parameter can be used
@@ -34371,7 +34488,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement;
+  PrimitiveElement? get typeElement;
   @override
 
   /// [expression] A FHIRPath expression that returns a set of elements for the
@@ -34381,7 +34498,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [expressionElement] ("_expression") Extensions for expression
   @JsonKey(name: '_expression')
-  Element? get expressionElement;
+  PrimitiveElement? get expressionElement;
   @override
 
   /// [processingMode] How the search parameter relates to the set of elements
@@ -34391,7 +34508,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [processingModeElement] ("_processingMode") Extensions for processingMode
   @JsonKey(name: '_processingMode')
-  Element? get processingModeElement;
+  PrimitiveElement? get processingModeElement;
   @override
 
   /// [constraint] FHIRPath expression that defines/sets a complex constraint for
@@ -34401,7 +34518,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [constraintElement] ("_constraint") Extensions for constraint
   @JsonKey(name: '_constraint')
-  Element? get constraintElement;
+  PrimitiveElement? get constraintElement;
   @override
 
   /// [target] Types of resource (if a resource is referenced).
@@ -34421,7 +34538,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [multipleOrElement] ("_multipleOr") Extensions for multipleOr
   @JsonKey(name: '_multipleOr')
-  Element? get multipleOrElement;
+  PrimitiveElement? get multipleOrElement;
   @override
 
   /// [multipleAnd] Whether multiple parameters are allowed - e.g. more than one
@@ -34432,7 +34549,7 @@ abstract class _SearchParameter extends SearchParameter {
 
   /// [multipleAndElement] ("_multipleAnd") Extensions for multipleAnd
   @JsonKey(name: '_multipleAnd')
-  Element? get multipleAndElement;
+  PrimitiveElement? get multipleAndElement;
   @override
 
   /// [comparator] Comparators supported for the search parameter.
@@ -34520,7 +34637,7 @@ mixin _$SearchParameterComponent {
 
   /// [expressionElement] ("_expression") Extensions for expression
   @JsonKey(name: '_expression')
-  Element? get expressionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get expressionElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -34540,7 +34657,7 @@ abstract class $SearchParameterComponentCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       FhirCanonical definition,
       String? expression,
-      @JsonKey(name: '_expression') Element? expressionElement});
+      @JsonKey(name: '_expression') PrimitiveElement? expressionElement});
 }
 
 /// @nodoc
@@ -34588,7 +34705,7 @@ class _$SearchParameterComponentCopyWithImpl<$Res,
       expressionElement: freezed == expressionElement
           ? _value.expressionElement
           : expressionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -34608,7 +34725,7 @@ abstract class _$$SearchParameterComponentImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       FhirCanonical definition,
       String? expression,
-      @JsonKey(name: '_expression') Element? expressionElement});
+      @JsonKey(name: '_expression') PrimitiveElement? expressionElement});
 }
 
 /// @nodoc
@@ -34655,7 +34772,7 @@ class __$$SearchParameterComponentImplCopyWithImpl<$Res>
       expressionElement: freezed == expressionElement
           ? _value.expressionElement
           : expressionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -34755,7 +34872,7 @@ class _$SearchParameterComponentImpl extends _SearchParameterComponent {
   /// [expressionElement] ("_expression") Extensions for expression
   @override
   @JsonKey(name: '_expression')
-  final Element? expressionElement;
+  final PrimitiveElement? expressionElement;
 
   @override
   String toString() {
@@ -34813,7 +34930,8 @@ abstract class _SearchParameterComponent extends SearchParameterComponent {
           final List<FhirExtension>? modifierExtension,
           required final FhirCanonical definition,
           final String? expression,
-          @JsonKey(name: '_expression') final Element? expressionElement}) =
+          @JsonKey(name: '_expression')
+          final PrimitiveElement? expressionElement}) =
       _$SearchParameterComponentImpl;
   const _SearchParameterComponent._() : super._();
 
@@ -34864,7 +34982,7 @@ abstract class _SearchParameterComponent extends SearchParameterComponent {
 
   /// [expressionElement] ("_expression") Extensions for expression
   @JsonKey(name: '_expression')
-  Element? get expressionElement;
+  PrimitiveElement? get expressionElement;
   @override
   @JsonKey(ignore: true)
   _$$SearchParameterComponentImplCopyWith<_$SearchParameterComponentImpl>
@@ -34898,14 +35016,15 @@ mixin _$StructureDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -34957,7 +35076,7 @@ mixin _$StructureDefinition {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   /// [identifier] A formal identifier that is used to identify this structure
   ///  definition when it is represented in other formats, or referenced in a
@@ -34977,7 +35096,7 @@ mixin _$StructureDefinition {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -34986,7 +35105,7 @@ mixin _$StructureDefinition {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement =>
+  PrimitiveElement? get versionAlgorithmStringElement =>
       throw _privateConstructorUsedError;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -35000,7 +35119,7 @@ mixin _$StructureDefinition {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [title] A short, descriptive, user-friendly title for the structure
   ///  definition.
@@ -35008,7 +35127,7 @@ mixin _$StructureDefinition {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [status] The status of this structure definition. Enables tracking the
   ///  life-cycle of the content.
@@ -35016,7 +35135,7 @@ mixin _$StructureDefinition {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [experimental] A Boolean value to indicate that this structure definition
   ///  is authored for testing purposes (or education/evaluation/marketing) and
@@ -35025,7 +35144,8 @@ mixin _$StructureDefinition {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get experimentalElement =>
+      throw _privateConstructorUsedError;
 
   /// [date] The date  (and optionally time) when the structure definition was
   ///  last significantly changed. The date must change when the business version
@@ -35036,7 +35156,7 @@ mixin _$StructureDefinition {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the structure definition.
@@ -35044,7 +35164,7 @@ mixin _$StructureDefinition {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get publisherElement => throw _privateConstructorUsedError;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -35056,7 +35176,8 @@ mixin _$StructureDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -35075,7 +35196,7 @@ mixin _$StructureDefinition {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get purposeElement => throw _privateConstructorUsedError;
 
   /// [copyright] A copyright statement relating to the structure definition
   ///  and/or its contents. Copyright statements are generally legal restrictions
@@ -35086,7 +35207,7 @@ mixin _$StructureDefinition {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -35096,7 +35217,8 @@ mixin _$StructureDefinition {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightLabelElement =>
+      throw _privateConstructorUsedError;
 
   /// [keyword] (DEPRECATED) A set of key words or terms from external
   ///  terminologies that may be used to assist with indexing and searching of
@@ -35112,7 +35234,8 @@ mixin _$StructureDefinition {
 
   /// [fhirVersionElement] ("_fhirVersion") Extensions for fhirVersion
   @JsonKey(name: '_fhirVersion')
-  Element? get fhirVersionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get fhirVersionElement =>
+      throw _privateConstructorUsedError;
 
   /// [mapping] An external specification that the content is mapped to.
   List<StructureDefinitionMapping>? get mapping =>
@@ -35123,7 +35246,7 @@ mixin _$StructureDefinition {
 
   /// [kindElement] ("_kind") Extensions for kind
   @JsonKey(name: '_kind')
-  Element? get kindElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get kindElement => throw _privateConstructorUsedError;
 
   /// [abstract_] ("abstract") Whether structure this definition describes is
   ///  abstract or not  - that is, whether the structure is not intended to be
@@ -35134,7 +35257,7 @@ mixin _$StructureDefinition {
 
   /// [abstractElement] ("_abstract") Extensions for abstract
   @JsonKey(name: '_abstract')
-  Element? get abstractElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get abstractElement => throw _privateConstructorUsedError;
 
   /// [context] Identifies the types of resource or data type elements to which
   ///  the extension can be applied. For more guidance on using the 'context'
@@ -35167,7 +35290,7 @@ mixin _$StructureDefinition {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get typeElement => throw _privateConstructorUsedError;
 
   /// [baseDefinition] An absolute URI that is the base structure from which this
   ///  type is derived, either by specialization or constraint.
@@ -35178,7 +35301,7 @@ mixin _$StructureDefinition {
 
   /// [derivationElement] ("_derivation") Extensions for derivation
   @JsonKey(name: '_derivation')
-  Element? get derivationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get derivationElement => throw _privateConstructorUsedError;
 
   /// [snapshot] A snapshot view is expressed in a standalone form that can be
   ///  used and interpreted without considering the base StructureDefinition.
@@ -35208,62 +35331,62 @@ abstract class $StructureDefinitionCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       List<Coding>? keyword,
       FhirCode? fhirVersion,
-      @JsonKey(name: '_fhirVersion') Element? fhirVersionElement,
+      @JsonKey(name: '_fhirVersion') PrimitiveElement? fhirVersionElement,
       List<StructureDefinitionMapping>? mapping,
       FhirCode? kind,
-      @JsonKey(name: '_kind') Element? kindElement,
+      @JsonKey(name: '_kind') PrimitiveElement? kindElement,
       @JsonKey(name: 'abstract') FhirBoolean? abstract_,
-      @JsonKey(name: '_abstract') Element? abstractElement,
+      @JsonKey(name: '_abstract') PrimitiveElement? abstractElement,
       List<StructureDefinitionContext>? context,
       List<String>? contextInvariant,
       @JsonKey(name: '_contextInvariant')
       List<Element>? contextInvariantElement,
       FhirUri? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       FhirCanonical? baseDefinition,
       FhirCode? derivation,
-      @JsonKey(name: '_derivation') Element? derivationElement,
+      @JsonKey(name: '_derivation') PrimitiveElement? derivationElement,
       StructureDefinitionSnapshot? snapshot,
       StructureDefinitionDifferential? differential});
 
@@ -35368,7 +35491,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -35376,7 +35499,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -35400,7 +35523,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -35412,7 +35535,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -35420,7 +35543,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -35432,7 +35555,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -35440,7 +35563,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -35448,7 +35571,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -35456,7 +35579,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -35464,7 +35587,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -35472,7 +35595,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value.contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -35484,7 +35607,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value.useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -35500,7 +35623,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -35508,7 +35631,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -35516,7 +35639,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       keyword: freezed == keyword
           ? _value.keyword
           : keyword // ignore: cast_nullable_to_non_nullable
@@ -35528,7 +35651,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       fhirVersionElement: freezed == fhirVersionElement
           ? _value.fhirVersionElement
           : fhirVersionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       mapping: freezed == mapping
           ? _value.mapping
           : mapping // ignore: cast_nullable_to_non_nullable
@@ -35540,7 +35663,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       kindElement: freezed == kindElement
           ? _value.kindElement
           : kindElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       abstract_: freezed == abstract_
           ? _value.abstract_
           : abstract_ // ignore: cast_nullable_to_non_nullable
@@ -35548,7 +35671,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       abstractElement: freezed == abstractElement
           ? _value.abstractElement
           : abstractElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       context: freezed == context
           ? _value.context
           : context // ignore: cast_nullable_to_non_nullable
@@ -35568,7 +35691,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       baseDefinition: freezed == baseDefinition
           ? _value.baseDefinition
           : baseDefinition // ignore: cast_nullable_to_non_nullable
@@ -35580,7 +35703,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       derivationElement: freezed == derivationElement
           ? _value.derivationElement
           : derivationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       snapshot: freezed == snapshot
           ? _value.snapshot
           : snapshot // ignore: cast_nullable_to_non_nullable
@@ -35669,62 +35792,62 @@ abstract class _$$StructureDefinitionImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       List<Coding>? keyword,
       FhirCode? fhirVersion,
-      @JsonKey(name: '_fhirVersion') Element? fhirVersionElement,
+      @JsonKey(name: '_fhirVersion') PrimitiveElement? fhirVersionElement,
       List<StructureDefinitionMapping>? mapping,
       FhirCode? kind,
-      @JsonKey(name: '_kind') Element? kindElement,
+      @JsonKey(name: '_kind') PrimitiveElement? kindElement,
       @JsonKey(name: 'abstract') FhirBoolean? abstract_,
-      @JsonKey(name: '_abstract') Element? abstractElement,
+      @JsonKey(name: '_abstract') PrimitiveElement? abstractElement,
       List<StructureDefinitionContext>? context,
       List<String>? contextInvariant,
       @JsonKey(name: '_contextInvariant')
       List<Element>? contextInvariantElement,
       FhirUri? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       FhirCanonical? baseDefinition,
       FhirCode? derivation,
-      @JsonKey(name: '_derivation') Element? derivationElement,
+      @JsonKey(name: '_derivation') PrimitiveElement? derivationElement,
       StructureDefinitionSnapshot? snapshot,
       StructureDefinitionDifferential? differential});
 
@@ -35832,7 +35955,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -35840,7 +35963,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -35864,7 +35987,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value._identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -35876,7 +35999,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -35884,7 +36007,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -35896,7 +36019,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -35904,7 +36027,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -35912,7 +36035,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -35920,7 +36043,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -35928,7 +36051,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -35936,7 +36059,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value._contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -35948,7 +36071,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value._useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -35964,7 +36087,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -35972,7 +36095,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -35980,7 +36103,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       keyword: freezed == keyword
           ? _value._keyword
           : keyword // ignore: cast_nullable_to_non_nullable
@@ -35992,7 +36115,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       fhirVersionElement: freezed == fhirVersionElement
           ? _value.fhirVersionElement
           : fhirVersionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       mapping: freezed == mapping
           ? _value._mapping
           : mapping // ignore: cast_nullable_to_non_nullable
@@ -36004,7 +36127,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       kindElement: freezed == kindElement
           ? _value.kindElement
           : kindElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       abstract_: freezed == abstract_
           ? _value.abstract_
           : abstract_ // ignore: cast_nullable_to_non_nullable
@@ -36012,7 +36135,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       abstractElement: freezed == abstractElement
           ? _value.abstractElement
           : abstractElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       context: freezed == context
           ? _value._context
           : context // ignore: cast_nullable_to_non_nullable
@@ -36032,7 +36155,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       baseDefinition: freezed == baseDefinition
           ? _value.baseDefinition
           : baseDefinition // ignore: cast_nullable_to_non_nullable
@@ -36044,7 +36167,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       derivationElement: freezed == derivationElement
           ? _value.derivationElement
           : derivationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       snapshot: freezed == snapshot
           ? _value.snapshot
           : snapshot // ignore: cast_nullable_to_non_nullable
@@ -36167,7 +36290,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -36176,7 +36299,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -36281,7 +36404,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   /// [identifier] A formal identifier that is used to identify this structure
   ///  definition when it is represented in other formats, or referenced in a
@@ -36315,7 +36438,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -36326,7 +36449,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   ///  versionAlgorithmString
   @override
   @JsonKey(name: '_versionAlgorithmString')
-  final Element? versionAlgorithmStringElement;
+  final PrimitiveElement? versionAlgorithmStringElement;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -36342,7 +36465,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [title] A short, descriptive, user-friendly title for the structure
   ///  definition.
@@ -36352,7 +36475,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [status] The status of this structure definition. Enables tracking the
   ///  life-cycle of the content.
@@ -36362,7 +36485,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [experimental] A Boolean value to indicate that this structure definition
   ///  is authored for testing purposes (or education/evaluation/marketing) and
@@ -36373,7 +36496,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @override
   @JsonKey(name: '_experimental')
-  final Element? experimentalElement;
+  final PrimitiveElement? experimentalElement;
 
   /// [date] The date  (and optionally time) when the structure definition was
   ///  last significantly changed. The date must change when the business version
@@ -36386,7 +36509,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the structure definition.
@@ -36396,7 +36519,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [publisherElement] ("_publisher") Extensions for publisher
   @override
   @JsonKey(name: '_publisher')
-  final Element? publisherElement;
+  final PrimitiveElement? publisherElement;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -36421,7 +36544,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -36467,7 +36590,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [purposeElement] ("_purpose") Extensions for purpose
   @override
   @JsonKey(name: '_purpose')
-  final Element? purposeElement;
+  final PrimitiveElement? purposeElement;
 
   /// [copyright] A copyright statement relating to the structure definition
   ///  and/or its contents. Copyright statements are generally legal restrictions
@@ -36480,7 +36603,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @override
   @JsonKey(name: '_copyright')
-  final Element? copyrightElement;
+  final PrimitiveElement? copyrightElement;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -36492,7 +36615,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @override
   @JsonKey(name: '_copyrightLabel')
-  final Element? copyrightLabelElement;
+  final PrimitiveElement? copyrightLabelElement;
 
   /// [keyword] (DEPRECATED) A set of key words or terms from external
   ///  terminologies that may be used to assist with indexing and searching of
@@ -36523,7 +36646,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [fhirVersionElement] ("_fhirVersion") Extensions for fhirVersion
   @override
   @JsonKey(name: '_fhirVersion')
-  final Element? fhirVersionElement;
+  final PrimitiveElement? fhirVersionElement;
 
   /// [mapping] An external specification that the content is mapped to.
   final List<StructureDefinitionMapping>? _mapping;
@@ -36545,7 +36668,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [kindElement] ("_kind") Extensions for kind
   @override
   @JsonKey(name: '_kind')
-  final Element? kindElement;
+  final PrimitiveElement? kindElement;
 
   /// [abstract_] ("abstract") Whether structure this definition describes is
   ///  abstract or not  - that is, whether the structure is not intended to be
@@ -36558,7 +36681,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [abstractElement] ("_abstract") Extensions for abstract
   @override
   @JsonKey(name: '_abstract')
-  final Element? abstractElement;
+  final PrimitiveElement? abstractElement;
 
   /// [context] Identifies the types of resource or data type elements to which
   ///  the extension can be applied. For more guidance on using the 'context'
@@ -36629,7 +36752,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [typeElement] ("_type") Extensions for type
   @override
   @JsonKey(name: '_type')
-  final Element? typeElement;
+  final PrimitiveElement? typeElement;
 
   /// [baseDefinition] An absolute URI that is the base structure from which this
   ///  type is derived, either by specialization or constraint.
@@ -36643,7 +36766,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
   /// [derivationElement] ("_derivation") Extensions for derivation
   @override
   @JsonKey(name: '_derivation')
-  final Element? derivationElement;
+  final PrimitiveElement? derivationElement;
 
   /// [snapshot] A snapshot view is expressed in a standalone form that can be
   ///  used and interpreted without considering the base StructureDefinition.
@@ -36852,62 +36975,65 @@ abstract class _StructureDefinition extends StructureDefinition {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUri? url,
-      @JsonKey(name: '_url') final Element? urlElement,
+      @JsonKey(name: '_url') final PrimitiveElement? urlElement,
       final List<Identifier>? identifier,
       final String? version,
-      @JsonKey(name: '_version') final Element? versionElement,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
       final String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      final Element? versionAlgorithmStringElement,
+      final PrimitiveElement? versionAlgorithmStringElement,
       final Coding? versionAlgorithmCoding,
       final String? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final PublicationStatus? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') final Element? experimentalElement,
+      @JsonKey(name: '_experimental')
+      final PrimitiveElement? experimentalElement,
       final FhirDateTime? date,
-      @JsonKey(name: '_date') final Element? dateElement,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
       final String? publisher,
-      @JsonKey(name: '_publisher') final Element? publisherElement,
+      @JsonKey(name: '_publisher') final PrimitiveElement? publisherElement,
       final List<ContactDetail>? contact,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<UsageContext>? useContext,
       final List<CodeableConcept>? jurisdiction,
       final FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') final Element? purposeElement,
+      @JsonKey(name: '_purpose') final PrimitiveElement? purposeElement,
       final FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') final Element? copyrightElement,
+      @JsonKey(name: '_copyright') final PrimitiveElement? copyrightElement,
       final String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') final Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel')
+      final PrimitiveElement? copyrightLabelElement,
       final List<Coding>? keyword,
       final FhirCode? fhirVersion,
-      @JsonKey(name: '_fhirVersion') final Element? fhirVersionElement,
+      @JsonKey(name: '_fhirVersion') final PrimitiveElement? fhirVersionElement,
       final List<StructureDefinitionMapping>? mapping,
       final FhirCode? kind,
-      @JsonKey(name: '_kind') final Element? kindElement,
+      @JsonKey(name: '_kind') final PrimitiveElement? kindElement,
       @JsonKey(name: 'abstract') final FhirBoolean? abstract_,
-      @JsonKey(name: '_abstract') final Element? abstractElement,
+      @JsonKey(name: '_abstract') final PrimitiveElement? abstractElement,
       final List<StructureDefinitionContext>? context,
       final List<String>? contextInvariant,
       @JsonKey(name: '_contextInvariant')
       final List<Element>? contextInvariantElement,
       final FhirUri? type,
-      @JsonKey(name: '_type') final Element? typeElement,
+      @JsonKey(name: '_type') final PrimitiveElement? typeElement,
       final FhirCanonical? baseDefinition,
       final FhirCode? derivation,
-      @JsonKey(name: '_derivation') final Element? derivationElement,
+      @JsonKey(name: '_derivation') final PrimitiveElement? derivationElement,
       final StructureDefinitionSnapshot? snapshot,
       final StructureDefinitionDifferential?
           differential}) = _$StructureDefinitionImpl;
@@ -36943,7 +37069,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -36952,7 +37078,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -37009,7 +37135,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
 
   /// [identifier] A formal identifier that is used to identify this structure
@@ -37032,7 +37158,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
@@ -37043,7 +37169,7 @@ abstract class _StructureDefinition extends StructureDefinition {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement;
+  PrimitiveElement? get versionAlgorithmStringElement;
   @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -37059,7 +37185,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [title] A short, descriptive, user-friendly title for the structure
@@ -37069,7 +37195,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [status] The status of this structure definition. Enables tracking the
@@ -37079,7 +37205,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [experimental] A Boolean value to indicate that this structure definition
@@ -37090,7 +37216,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement;
+  PrimitiveElement? get experimentalElement;
   @override
 
   /// [date] The date  (and optionally time) when the structure definition was
@@ -37103,7 +37229,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [publisher] The name of the organization or individual responsible for the
@@ -37113,7 +37239,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement;
+  PrimitiveElement? get publisherElement;
   @override
 
   /// [contact] Contact details to assist a user in finding and communicating
@@ -37128,7 +37254,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [useContext] The content was developed with a focus and intent of
@@ -37151,7 +37277,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement;
+  PrimitiveElement? get purposeElement;
   @override
 
   /// [copyright] A copyright statement relating to the structure definition
@@ -37164,7 +37290,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement;
+  PrimitiveElement? get copyrightElement;
   @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
@@ -37176,7 +37302,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement;
+  PrimitiveElement? get copyrightLabelElement;
   @override
 
   /// [keyword] (DEPRECATED) A set of key words or terms from external
@@ -37195,7 +37321,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [fhirVersionElement] ("_fhirVersion") Extensions for fhirVersion
   @JsonKey(name: '_fhirVersion')
-  Element? get fhirVersionElement;
+  PrimitiveElement? get fhirVersionElement;
   @override
 
   /// [mapping] An external specification that the content is mapped to.
@@ -37208,7 +37334,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [kindElement] ("_kind") Extensions for kind
   @JsonKey(name: '_kind')
-  Element? get kindElement;
+  PrimitiveElement? get kindElement;
   @override
 
   /// [abstract_] ("abstract") Whether structure this definition describes is
@@ -37221,7 +37347,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [abstractElement] ("_abstract") Extensions for abstract
   @JsonKey(name: '_abstract')
-  Element? get abstractElement;
+  PrimitiveElement? get abstractElement;
   @override
 
   /// [context] Identifies the types of resource or data type elements to which
@@ -37257,7 +37383,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement;
+  PrimitiveElement? get typeElement;
   @override
 
   /// [baseDefinition] An absolute URI that is the base structure from which this
@@ -37271,7 +37397,7 @@ abstract class _StructureDefinition extends StructureDefinition {
 
   /// [derivationElement] ("_derivation") Extensions for derivation
   @JsonKey(name: '_derivation')
-  Element? get derivationElement;
+  PrimitiveElement? get derivationElement;
   @override
 
   /// [snapshot] A snapshot view is expressed in a standalone form that can be
@@ -37329,7 +37455,7 @@ mixin _$StructureDefinitionMapping {
 
   /// [identityElement] ("_identity") Extensions for identity
   @JsonKey(name: '_identity')
-  Element? get identityElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get identityElement => throw _privateConstructorUsedError;
 
   /// [uri] An absolute URI that identifies the specification that this mapping
   ///  is expressed to.
@@ -37337,14 +37463,14 @@ mixin _$StructureDefinitionMapping {
 
   /// [uriElement] ("_uri") Extensions for uri
   @JsonKey(name: '_uri')
-  Element? get uriElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get uriElement => throw _privateConstructorUsedError;
 
   /// [name] A name for the specification that is being mapped to.
   String? get name => throw _privateConstructorUsedError;
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [comment] Comments about this mapping, including version notes, issues,
   ///  scope limitations, and other important notes for usage.
@@ -37352,7 +37478,7 @@ mixin _$StructureDefinitionMapping {
 
   /// [commentElement] ("_comment") Extensions for comment
   @JsonKey(name: '_comment')
-  Element? get commentElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get commentElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -37372,13 +37498,13 @@ abstract class $StructureDefinitionMappingCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? identity,
-      @JsonKey(name: '_identity') Element? identityElement,
+      @JsonKey(name: '_identity') PrimitiveElement? identityElement,
       FhirUri? uri,
-      @JsonKey(name: '_uri') Element? uriElement,
+      @JsonKey(name: '_uri') PrimitiveElement? uriElement,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? comment,
-      @JsonKey(name: '_comment') Element? commentElement});
+      @JsonKey(name: '_comment') PrimitiveElement? commentElement});
 }
 
 /// @nodoc
@@ -37427,7 +37553,7 @@ class _$StructureDefinitionMappingCopyWithImpl<$Res,
       identityElement: freezed == identityElement
           ? _value.identityElement
           : identityElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       uri: freezed == uri
           ? _value.uri
           : uri // ignore: cast_nullable_to_non_nullable
@@ -37435,7 +37561,7 @@ class _$StructureDefinitionMappingCopyWithImpl<$Res,
       uriElement: freezed == uriElement
           ? _value.uriElement
           : uriElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -37443,7 +37569,7 @@ class _$StructureDefinitionMappingCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       comment: freezed == comment
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
@@ -37451,7 +37577,7 @@ class _$StructureDefinitionMappingCopyWithImpl<$Res,
       commentElement: freezed == commentElement
           ? _value.commentElement
           : commentElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -37470,13 +37596,13 @@ abstract class _$$StructureDefinitionMappingImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? identity,
-      @JsonKey(name: '_identity') Element? identityElement,
+      @JsonKey(name: '_identity') PrimitiveElement? identityElement,
       FhirUri? uri,
-      @JsonKey(name: '_uri') Element? uriElement,
+      @JsonKey(name: '_uri') PrimitiveElement? uriElement,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? comment,
-      @JsonKey(name: '_comment') Element? commentElement});
+      @JsonKey(name: '_comment') PrimitiveElement? commentElement});
 }
 
 /// @nodoc
@@ -37524,7 +37650,7 @@ class __$$StructureDefinitionMappingImplCopyWithImpl<$Res>
       identityElement: freezed == identityElement
           ? _value.identityElement
           : identityElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       uri: freezed == uri
           ? _value.uri
           : uri // ignore: cast_nullable_to_non_nullable
@@ -37532,7 +37658,7 @@ class __$$StructureDefinitionMappingImplCopyWithImpl<$Res>
       uriElement: freezed == uriElement
           ? _value.uriElement
           : uriElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -37540,7 +37666,7 @@ class __$$StructureDefinitionMappingImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       comment: freezed == comment
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
@@ -37548,7 +37674,7 @@ class __$$StructureDefinitionMappingImplCopyWithImpl<$Res>
       commentElement: freezed == commentElement
           ? _value.commentElement
           : commentElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -37649,7 +37775,7 @@ class _$StructureDefinitionMappingImpl extends _StructureDefinitionMapping {
   /// [identityElement] ("_identity") Extensions for identity
   @override
   @JsonKey(name: '_identity')
-  final Element? identityElement;
+  final PrimitiveElement? identityElement;
 
   /// [uri] An absolute URI that identifies the specification that this mapping
   ///  is expressed to.
@@ -37659,7 +37785,7 @@ class _$StructureDefinitionMappingImpl extends _StructureDefinitionMapping {
   /// [uriElement] ("_uri") Extensions for uri
   @override
   @JsonKey(name: '_uri')
-  final Element? uriElement;
+  final PrimitiveElement? uriElement;
 
   /// [name] A name for the specification that is being mapped to.
   @override
@@ -37668,7 +37794,7 @@ class _$StructureDefinitionMappingImpl extends _StructureDefinitionMapping {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [comment] Comments about this mapping, including version notes, issues,
   ///  scope limitations, and other important notes for usage.
@@ -37678,7 +37804,7 @@ class _$StructureDefinitionMappingImpl extends _StructureDefinitionMapping {
   /// [commentElement] ("_comment") Extensions for comment
   @override
   @JsonKey(name: '_comment')
-  final Element? commentElement;
+  final PrimitiveElement? commentElement;
 
   @override
   String toString() {
@@ -37747,13 +37873,13 @@ abstract class _StructureDefinitionMapping extends StructureDefinitionMapping {
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final FhirId? identity,
-          @JsonKey(name: '_identity') final Element? identityElement,
+          @JsonKey(name: '_identity') final PrimitiveElement? identityElement,
           final FhirUri? uri,
-          @JsonKey(name: '_uri') final Element? uriElement,
+          @JsonKey(name: '_uri') final PrimitiveElement? uriElement,
           final String? name,
-          @JsonKey(name: '_name') final Element? nameElement,
+          @JsonKey(name: '_name') final PrimitiveElement? nameElement,
           final String? comment,
-          @JsonKey(name: '_comment') final Element? commentElement}) =
+          @JsonKey(name: '_comment') final PrimitiveElement? commentElement}) =
       _$StructureDefinitionMappingImpl;
   const _StructureDefinitionMapping._() : super._();
 
@@ -37799,7 +37925,7 @@ abstract class _StructureDefinitionMapping extends StructureDefinitionMapping {
 
   /// [identityElement] ("_identity") Extensions for identity
   @JsonKey(name: '_identity')
-  Element? get identityElement;
+  PrimitiveElement? get identityElement;
   @override
 
   /// [uri] An absolute URI that identifies the specification that this mapping
@@ -37809,7 +37935,7 @@ abstract class _StructureDefinitionMapping extends StructureDefinitionMapping {
 
   /// [uriElement] ("_uri") Extensions for uri
   @JsonKey(name: '_uri')
-  Element? get uriElement;
+  PrimitiveElement? get uriElement;
   @override
 
   /// [name] A name for the specification that is being mapped to.
@@ -37818,7 +37944,7 @@ abstract class _StructureDefinitionMapping extends StructureDefinitionMapping {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [comment] Comments about this mapping, including version notes, issues,
@@ -37828,7 +37954,7 @@ abstract class _StructureDefinitionMapping extends StructureDefinitionMapping {
 
   /// [commentElement] ("_comment") Extensions for comment
   @JsonKey(name: '_comment')
-  Element? get commentElement;
+  PrimitiveElement? get commentElement;
   @override
   @JsonKey(ignore: true)
   _$$StructureDefinitionMappingImplCopyWith<_$StructureDefinitionMappingImpl>
@@ -37876,7 +38002,7 @@ mixin _$StructureDefinitionContext {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get typeElement => throw _privateConstructorUsedError;
 
   /// [expression] An expression that defines where an extension can be used in
   ///  resources.
@@ -37884,7 +38010,7 @@ mixin _$StructureDefinitionContext {
 
   /// [expressionElement] ("_expression") Extensions for expression
   @JsonKey(name: '_expression')
-  Element? get expressionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get expressionElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -37904,9 +38030,9 @@ abstract class $StructureDefinitionContextCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       String? expression,
-      @JsonKey(name: '_expression') Element? expressionElement});
+      @JsonKey(name: '_expression') PrimitiveElement? expressionElement});
 }
 
 /// @nodoc
@@ -37951,7 +38077,7 @@ class _$StructureDefinitionContextCopyWithImpl<$Res,
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       expression: freezed == expression
           ? _value.expression
           : expression // ignore: cast_nullable_to_non_nullable
@@ -37959,7 +38085,7 @@ class _$StructureDefinitionContextCopyWithImpl<$Res,
       expressionElement: freezed == expressionElement
           ? _value.expressionElement
           : expressionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -37978,9 +38104,9 @@ abstract class _$$StructureDefinitionContextImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       String? expression,
-      @JsonKey(name: '_expression') Element? expressionElement});
+      @JsonKey(name: '_expression') PrimitiveElement? expressionElement});
 }
 
 /// @nodoc
@@ -38024,7 +38150,7 @@ class __$$StructureDefinitionContextImplCopyWithImpl<$Res>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       expression: freezed == expression
           ? _value.expression
           : expression // ignore: cast_nullable_to_non_nullable
@@ -38032,7 +38158,7 @@ class __$$StructureDefinitionContextImplCopyWithImpl<$Res>
       expressionElement: freezed == expressionElement
           ? _value.expressionElement
           : expressionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -38129,7 +38255,7 @@ class _$StructureDefinitionContextImpl extends _StructureDefinitionContext {
   /// [typeElement] ("_type") Extensions for type
   @override
   @JsonKey(name: '_type')
-  final Element? typeElement;
+  final PrimitiveElement? typeElement;
 
   /// [expression] An expression that defines where an extension can be used in
   ///  resources.
@@ -38139,7 +38265,7 @@ class _$StructureDefinitionContextImpl extends _StructureDefinitionContext {
   /// [expressionElement] ("_expression") Extensions for expression
   @override
   @JsonKey(name: '_expression')
-  final Element? expressionElement;
+  final PrimitiveElement? expressionElement;
 
   @override
   String toString() {
@@ -38198,9 +38324,10 @@ abstract class _StructureDefinitionContext extends StructureDefinitionContext {
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final FhirCode? type,
-          @JsonKey(name: '_type') final Element? typeElement,
+          @JsonKey(name: '_type') final PrimitiveElement? typeElement,
           final String? expression,
-          @JsonKey(name: '_expression') final Element? expressionElement}) =
+          @JsonKey(name: '_expression')
+          final PrimitiveElement? expressionElement}) =
       _$StructureDefinitionContextImpl;
   const _StructureDefinitionContext._() : super._();
 
@@ -38246,7 +38373,7 @@ abstract class _StructureDefinitionContext extends StructureDefinitionContext {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement;
+  PrimitiveElement? get typeElement;
   @override
 
   /// [expression] An expression that defines where an extension can be used in
@@ -38256,7 +38383,7 @@ abstract class _StructureDefinitionContext extends StructureDefinitionContext {
 
   /// [expressionElement] ("_expression") Extensions for expression
   @JsonKey(name: '_expression')
-  Element? get expressionElement;
+  PrimitiveElement? get expressionElement;
   @override
   @JsonKey(ignore: true)
   _$$StructureDefinitionContextImplCopyWith<_$StructureDefinitionContextImpl>
@@ -38977,14 +39104,15 @@ mixin _$StructureMap {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -39036,7 +39164,7 @@ mixin _$StructureMap {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   /// [identifier] A formal identifier that is used to identify this structure
   ///  map when it is represented in other formats, or referenced in a
@@ -39054,7 +39182,7 @@ mixin _$StructureMap {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -39063,7 +39191,7 @@ mixin _$StructureMap {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement =>
+  PrimitiveElement? get versionAlgorithmStringElement =>
       throw _privateConstructorUsedError;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -39077,14 +39205,14 @@ mixin _$StructureMap {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [title] A short, descriptive, user-friendly title for the structure map.
   String? get title => throw _privateConstructorUsedError;
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [status] The status of this structure map. Enables tracking the life-cycle
   ///  of the content.
@@ -39092,7 +39220,7 @@ mixin _$StructureMap {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [experimental] A Boolean value to indicate that this structure map is
   ///  authored for testing purposes (or education/evaluation/marketing) and is
@@ -39101,7 +39229,8 @@ mixin _$StructureMap {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get experimentalElement =>
+      throw _privateConstructorUsedError;
 
   /// [date] The date  (and optionally time) when the structure map was last
   ///  significantly changed. The date must change when the business version
@@ -39111,7 +39240,7 @@ mixin _$StructureMap {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the structure map.
@@ -39119,7 +39248,7 @@ mixin _$StructureMap {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get publisherElement => throw _privateConstructorUsedError;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -39131,7 +39260,8 @@ mixin _$StructureMap {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -39150,7 +39280,7 @@ mixin _$StructureMap {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get purposeElement => throw _privateConstructorUsedError;
 
   /// [copyright] A copyright statement relating to the structure map and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
@@ -39159,7 +39289,7 @@ mixin _$StructureMap {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -39169,7 +39299,8 @@ mixin _$StructureMap {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightLabelElement =>
+      throw _privateConstructorUsedError;
 
   /// [structure] A structure definition used by this map. The structure
   ///  definition may describe instances that are converted, or the instances
@@ -39207,45 +39338,45 @@ abstract class $StructureMapCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       List<StructureMapStructure>? structure,
       @JsonKey(name: 'import') List<FhirCanonical>? import_,
       @JsonKey(name: 'const') List<StructureMapConst>? const_,
@@ -39336,7 +39467,7 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -39344,7 +39475,7 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -39368,7 +39499,7 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -39380,7 +39511,7 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -39388,7 +39519,7 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -39400,7 +39531,7 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -39408,7 +39539,7 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -39416,7 +39547,7 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -39424,7 +39555,7 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -39432,7 +39563,7 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -39440,7 +39571,7 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value.contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -39452,7 +39583,7 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value.useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -39468,7 +39599,7 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -39476,7 +39607,7 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -39484,7 +39615,7 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       structure: freezed == structure
           ? _value.structure
           : structure // ignore: cast_nullable_to_non_nullable
@@ -39555,45 +39686,45 @@ abstract class _$$StructureMapImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       List<StructureMapStructure>? structure,
       @JsonKey(name: 'import') List<FhirCanonical>? import_,
       @JsonKey(name: 'const') List<StructureMapConst>? const_,
@@ -39685,7 +39816,7 @@ class __$$StructureMapImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -39693,7 +39824,7 @@ class __$$StructureMapImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -39717,7 +39848,7 @@ class __$$StructureMapImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value._identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -39729,7 +39860,7 @@ class __$$StructureMapImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -39737,7 +39868,7 @@ class __$$StructureMapImplCopyWithImpl<$Res>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -39749,7 +39880,7 @@ class __$$StructureMapImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -39757,7 +39888,7 @@ class __$$StructureMapImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -39765,7 +39896,7 @@ class __$$StructureMapImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -39773,7 +39904,7 @@ class __$$StructureMapImplCopyWithImpl<$Res>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -39781,7 +39912,7 @@ class __$$StructureMapImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -39789,7 +39920,7 @@ class __$$StructureMapImplCopyWithImpl<$Res>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value._contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -39801,7 +39932,7 @@ class __$$StructureMapImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value._useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -39817,7 +39948,7 @@ class __$$StructureMapImplCopyWithImpl<$Res>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -39825,7 +39956,7 @@ class __$$StructureMapImplCopyWithImpl<$Res>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -39833,7 +39964,7 @@ class __$$StructureMapImplCopyWithImpl<$Res>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       structure: freezed == structure
           ? _value._structure
           : structure // ignore: cast_nullable_to_non_nullable
@@ -39948,7 +40079,7 @@ class _$StructureMapImpl extends _StructureMap {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -39957,7 +40088,7 @@ class _$StructureMapImpl extends _StructureMap {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -40062,7 +40193,7 @@ class _$StructureMapImpl extends _StructureMap {
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   /// [identifier] A formal identifier that is used to identify this structure
   ///  map when it is represented in other formats, or referenced in a
@@ -40094,7 +40225,7 @@ class _$StructureMapImpl extends _StructureMap {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -40105,7 +40236,7 @@ class _$StructureMapImpl extends _StructureMap {
   ///  versionAlgorithmString
   @override
   @JsonKey(name: '_versionAlgorithmString')
-  final Element? versionAlgorithmStringElement;
+  final PrimitiveElement? versionAlgorithmStringElement;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -40121,7 +40252,7 @@ class _$StructureMapImpl extends _StructureMap {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [title] A short, descriptive, user-friendly title for the structure map.
   @override
@@ -40130,7 +40261,7 @@ class _$StructureMapImpl extends _StructureMap {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [status] The status of this structure map. Enables tracking the life-cycle
   ///  of the content.
@@ -40140,7 +40271,7 @@ class _$StructureMapImpl extends _StructureMap {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [experimental] A Boolean value to indicate that this structure map is
   ///  authored for testing purposes (or education/evaluation/marketing) and is
@@ -40151,7 +40282,7 @@ class _$StructureMapImpl extends _StructureMap {
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @override
   @JsonKey(name: '_experimental')
-  final Element? experimentalElement;
+  final PrimitiveElement? experimentalElement;
 
   /// [date] The date  (and optionally time) when the structure map was last
   ///  significantly changed. The date must change when the business version
@@ -40163,7 +40294,7 @@ class _$StructureMapImpl extends _StructureMap {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the structure map.
@@ -40173,7 +40304,7 @@ class _$StructureMapImpl extends _StructureMap {
   /// [publisherElement] ("_publisher") Extensions for publisher
   @override
   @JsonKey(name: '_publisher')
-  final Element? publisherElement;
+  final PrimitiveElement? publisherElement;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -40198,7 +40329,7 @@ class _$StructureMapImpl extends _StructureMap {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -40244,7 +40375,7 @@ class _$StructureMapImpl extends _StructureMap {
   /// [purposeElement] ("_purpose") Extensions for purpose
   @override
   @JsonKey(name: '_purpose')
-  final Element? purposeElement;
+  final PrimitiveElement? purposeElement;
 
   /// [copyright] A copyright statement relating to the structure map and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
@@ -40255,7 +40386,7 @@ class _$StructureMapImpl extends _StructureMap {
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @override
   @JsonKey(name: '_copyright')
-  final Element? copyrightElement;
+  final PrimitiveElement? copyrightElement;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -40267,7 +40398,7 @@ class _$StructureMapImpl extends _StructureMap {
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @override
   @JsonKey(name: '_copyrightLabel')
-  final Element? copyrightLabelElement;
+  final PrimitiveElement? copyrightLabelElement;
 
   /// [structure] A structure definition used by this map. The structure
   ///  definition may describe instances that are converted, or the instances
@@ -40492,45 +40623,48 @@ abstract class _StructureMap extends StructureMap {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUri? url,
-      @JsonKey(name: '_url') final Element? urlElement,
+      @JsonKey(name: '_url') final PrimitiveElement? urlElement,
       final List<Identifier>? identifier,
       final String? version,
-      @JsonKey(name: '_version') final Element? versionElement,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
       final String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      final Element? versionAlgorithmStringElement,
+      final PrimitiveElement? versionAlgorithmStringElement,
       final Coding? versionAlgorithmCoding,
       final String? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final FhirCode? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') final Element? experimentalElement,
+      @JsonKey(name: '_experimental')
+      final PrimitiveElement? experimentalElement,
       final FhirDateTime? date,
-      @JsonKey(name: '_date') final Element? dateElement,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
       final String? publisher,
-      @JsonKey(name: '_publisher') final Element? publisherElement,
+      @JsonKey(name: '_publisher') final PrimitiveElement? publisherElement,
       final List<ContactDetail>? contact,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<UsageContext>? useContext,
       final List<CodeableConcept>? jurisdiction,
       final FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') final Element? purposeElement,
+      @JsonKey(name: '_purpose') final PrimitiveElement? purposeElement,
       final FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') final Element? copyrightElement,
+      @JsonKey(name: '_copyright') final PrimitiveElement? copyrightElement,
       final String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') final Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel')
+      final PrimitiveElement? copyrightLabelElement,
       final List<StructureMapStructure>? structure,
       @JsonKey(name: 'import') final List<FhirCanonical>? import_,
       @JsonKey(name: 'const') final List<StructureMapConst>? const_,
@@ -40567,7 +40701,7 @@ abstract class _StructureMap extends StructureMap {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -40576,7 +40710,7 @@ abstract class _StructureMap extends StructureMap {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -40633,7 +40767,7 @@ abstract class _StructureMap extends StructureMap {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
 
   /// [identifier] A formal identifier that is used to identify this structure
@@ -40654,7 +40788,7 @@ abstract class _StructureMap extends StructureMap {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
@@ -40665,7 +40799,7 @@ abstract class _StructureMap extends StructureMap {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement;
+  PrimitiveElement? get versionAlgorithmStringElement;
   @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -40681,7 +40815,7 @@ abstract class _StructureMap extends StructureMap {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [title] A short, descriptive, user-friendly title for the structure map.
@@ -40690,7 +40824,7 @@ abstract class _StructureMap extends StructureMap {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [status] The status of this structure map. Enables tracking the life-cycle
@@ -40700,7 +40834,7 @@ abstract class _StructureMap extends StructureMap {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [experimental] A Boolean value to indicate that this structure map is
@@ -40711,7 +40845,7 @@ abstract class _StructureMap extends StructureMap {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement;
+  PrimitiveElement? get experimentalElement;
   @override
 
   /// [date] The date  (and optionally time) when the structure map was last
@@ -40723,7 +40857,7 @@ abstract class _StructureMap extends StructureMap {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [publisher] The name of the organization or individual responsible for the
@@ -40733,7 +40867,7 @@ abstract class _StructureMap extends StructureMap {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement;
+  PrimitiveElement? get publisherElement;
   @override
 
   /// [contact] Contact details to assist a user in finding and communicating
@@ -40748,7 +40882,7 @@ abstract class _StructureMap extends StructureMap {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [useContext] The content was developed with a focus and intent of
@@ -40771,7 +40905,7 @@ abstract class _StructureMap extends StructureMap {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement;
+  PrimitiveElement? get purposeElement;
   @override
 
   /// [copyright] A copyright statement relating to the structure map and/or its
@@ -40782,7 +40916,7 @@ abstract class _StructureMap extends StructureMap {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement;
+  PrimitiveElement? get copyrightElement;
   @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
@@ -40794,7 +40928,7 @@ abstract class _StructureMap extends StructureMap {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement;
+  PrimitiveElement? get copyrightLabelElement;
   @override
 
   /// [structure] A structure definition used by this map. The structure
@@ -40865,14 +40999,14 @@ mixin _$StructureMapStructure {
 
   /// [modeElement] ("_mode") Extensions for mode
   @JsonKey(name: '_mode')
-  Element? get modeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get modeElement => throw _privateConstructorUsedError;
 
   /// [alias] The name used for this type in the map.
   String? get alias => throw _privateConstructorUsedError;
 
   /// [aliasElement] ("_alias") Extensions for alias
   @JsonKey(name: '_alias')
-  Element? get aliasElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get aliasElement => throw _privateConstructorUsedError;
 
   /// [documentation] Documentation that describes how the structure is used in
   ///  the mapping.
@@ -40880,7 +41014,8 @@ mixin _$StructureMapStructure {
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get documentationElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -40900,11 +41035,11 @@ abstract class $StructureMapStructureCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       FhirCanonical url,
       FhirCode? mode,
-      @JsonKey(name: '_mode') Element? modeElement,
+      @JsonKey(name: '_mode') PrimitiveElement? modeElement,
       String? alias,
-      @JsonKey(name: '_alias') Element? aliasElement,
+      @JsonKey(name: '_alias') PrimitiveElement? aliasElement,
       String? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement});
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement});
 }
 
 /// @nodoc
@@ -40956,7 +41091,7 @@ class _$StructureMapStructureCopyWithImpl<$Res,
       modeElement: freezed == modeElement
           ? _value.modeElement
           : modeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       alias: freezed == alias
           ? _value.alias
           : alias // ignore: cast_nullable_to_non_nullable
@@ -40964,7 +41099,7 @@ class _$StructureMapStructureCopyWithImpl<$Res,
       aliasElement: freezed == aliasElement
           ? _value.aliasElement
           : aliasElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -40972,7 +41107,7 @@ class _$StructureMapStructureCopyWithImpl<$Res,
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -40992,11 +41127,11 @@ abstract class _$$StructureMapStructureImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       FhirCanonical url,
       FhirCode? mode,
-      @JsonKey(name: '_mode') Element? modeElement,
+      @JsonKey(name: '_mode') PrimitiveElement? modeElement,
       String? alias,
-      @JsonKey(name: '_alias') Element? aliasElement,
+      @JsonKey(name: '_alias') PrimitiveElement? aliasElement,
       String? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement});
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement});
 }
 
 /// @nodoc
@@ -41046,7 +41181,7 @@ class __$$StructureMapStructureImplCopyWithImpl<$Res>
       modeElement: freezed == modeElement
           ? _value.modeElement
           : modeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       alias: freezed == alias
           ? _value.alias
           : alias // ignore: cast_nullable_to_non_nullable
@@ -41054,7 +41189,7 @@ class __$$StructureMapStructureImplCopyWithImpl<$Res>
       aliasElement: freezed == aliasElement
           ? _value.aliasElement
           : aliasElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -41062,7 +41197,7 @@ class __$$StructureMapStructureImplCopyWithImpl<$Res>
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -41164,7 +41299,7 @@ class _$StructureMapStructureImpl extends _StructureMapStructure {
   /// [modeElement] ("_mode") Extensions for mode
   @override
   @JsonKey(name: '_mode')
-  final Element? modeElement;
+  final PrimitiveElement? modeElement;
 
   /// [alias] The name used for this type in the map.
   @override
@@ -41173,7 +41308,7 @@ class _$StructureMapStructureImpl extends _StructureMapStructure {
   /// [aliasElement] ("_alias") Extensions for alias
   @override
   @JsonKey(name: '_alias')
-  final Element? aliasElement;
+  final PrimitiveElement? aliasElement;
 
   /// [documentation] Documentation that describes how the structure is used in
   ///  the mapping.
@@ -41183,7 +41318,7 @@ class _$StructureMapStructureImpl extends _StructureMapStructure {
   /// [documentationElement] ("_documentation") Extensions for documentation
   @override
   @JsonKey(name: '_documentation')
-  final Element? documentationElement;
+  final PrimitiveElement? documentationElement;
 
   @override
   String toString() {
@@ -41245,17 +41380,18 @@ class _$StructureMapStructureImpl extends _StructureMapStructure {
 
 abstract class _StructureMapStructure extends StructureMapStructure {
   const factory _StructureMapStructure(
-      {final String? id,
-      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-      final List<FhirExtension>? modifierExtension,
-      required final FhirCanonical url,
-      final FhirCode? mode,
-      @JsonKey(name: '_mode') final Element? modeElement,
-      final String? alias,
-      @JsonKey(name: '_alias') final Element? aliasElement,
-      final String? documentation,
-      @JsonKey(name: '_documentation')
-      final Element? documentationElement}) = _$StructureMapStructureImpl;
+          {final String? id,
+          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+          final List<FhirExtension>? modifierExtension,
+          required final FhirCanonical url,
+          final FhirCode? mode,
+          @JsonKey(name: '_mode') final PrimitiveElement? modeElement,
+          final String? alias,
+          @JsonKey(name: '_alias') final PrimitiveElement? aliasElement,
+          final String? documentation,
+          @JsonKey(name: '_documentation')
+          final PrimitiveElement? documentationElement}) =
+      _$StructureMapStructureImpl;
   const _StructureMapStructure._() : super._();
 
   factory _StructureMapStructure.fromJson(Map<String, dynamic> json) =
@@ -41303,7 +41439,7 @@ abstract class _StructureMapStructure extends StructureMapStructure {
 
   /// [modeElement] ("_mode") Extensions for mode
   @JsonKey(name: '_mode')
-  Element? get modeElement;
+  PrimitiveElement? get modeElement;
   @override
 
   /// [alias] The name used for this type in the map.
@@ -41312,7 +41448,7 @@ abstract class _StructureMapStructure extends StructureMapStructure {
 
   /// [aliasElement] ("_alias") Extensions for alias
   @JsonKey(name: '_alias')
-  Element? get aliasElement;
+  PrimitiveElement? get aliasElement;
   @override
 
   /// [documentation] Documentation that describes how the structure is used in
@@ -41322,7 +41458,7 @@ abstract class _StructureMapStructure extends StructureMapStructure {
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement;
+  PrimitiveElement? get documentationElement;
   @override
   @JsonKey(ignore: true)
   _$$StructureMapStructureImplCopyWith<_$StructureMapStructureImpl>
@@ -41368,14 +41504,14 @@ mixin _$StructureMapConst {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [value] A FHIRPath expression that is the value of this variable.
   String? get value => throw _privateConstructorUsedError;
 
   /// [valueElement] ("_value") Extensions for value
   @JsonKey(name: '_value')
-  Element? get valueElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -41394,9 +41530,9 @@ abstract class $StructureMapConstCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? value,
-      @JsonKey(name: '_value') Element? valueElement});
+      @JsonKey(name: '_value') PrimitiveElement? valueElement});
 }
 
 /// @nodoc
@@ -41440,7 +41576,7 @@ class _$StructureMapConstCopyWithImpl<$Res, $Val extends StructureMapConst>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       value: freezed == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -41448,7 +41584,7 @@ class _$StructureMapConstCopyWithImpl<$Res, $Val extends StructureMapConst>
       valueElement: freezed == valueElement
           ? _value.valueElement
           : valueElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -41466,9 +41602,9 @@ abstract class _$$StructureMapConstImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? value,
-      @JsonKey(name: '_value') Element? valueElement});
+      @JsonKey(name: '_value') PrimitiveElement? valueElement});
 }
 
 /// @nodoc
@@ -41510,7 +41646,7 @@ class __$$StructureMapConstImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       value: freezed == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -41518,7 +41654,7 @@ class __$$StructureMapConstImplCopyWithImpl<$Res>
       valueElement: freezed == valueElement
           ? _value.valueElement
           : valueElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -41613,7 +41749,7 @@ class _$StructureMapConstImpl extends _StructureMapConst {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [value] A FHIRPath expression that is the value of this variable.
   @override
@@ -41622,7 +41758,7 @@ class _$StructureMapConstImpl extends _StructureMapConst {
   /// [valueElement] ("_value") Extensions for value
   @override
   @JsonKey(name: '_value')
-  final Element? valueElement;
+  final PrimitiveElement? valueElement;
 
   @override
   String toString() {
@@ -41680,9 +41816,9 @@ abstract class _StructureMapConst extends StructureMapConst {
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final FhirId? name,
-          @JsonKey(name: '_name') final Element? nameElement,
+          @JsonKey(name: '_name') final PrimitiveElement? nameElement,
           final String? value,
-          @JsonKey(name: '_value') final Element? valueElement}) =
+          @JsonKey(name: '_value') final PrimitiveElement? valueElement}) =
       _$StructureMapConstImpl;
   const _StructureMapConst._() : super._();
 
@@ -41727,7 +41863,7 @@ abstract class _StructureMapConst extends StructureMapConst {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [value] A FHIRPath expression that is the value of this variable.
@@ -41736,7 +41872,7 @@ abstract class _StructureMapConst extends StructureMapConst {
 
   /// [valueElement] ("_value") Extensions for value
   @JsonKey(name: '_value')
-  Element? get valueElement;
+  PrimitiveElement? get valueElement;
   @override
   @JsonKey(ignore: true)
   _$$StructureMapConstImplCopyWith<_$StructureMapConstImpl> get copyWith =>
@@ -41782,7 +41918,7 @@ mixin _$StructureMapGroup {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [extends_] ("extends") Another group that this group adds rules to.
   @JsonKey(name: 'extends')
@@ -41790,7 +41926,7 @@ mixin _$StructureMapGroup {
 
   /// [extendsElement] ("_extends") Extensions for extends
   @JsonKey(name: '_extends')
-  Element? get extendsElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get extendsElement => throw _privateConstructorUsedError;
 
   /// [typeMode] If this is the default rule set to apply for the source type or
   ///  this combination of types.
@@ -41798,7 +41934,7 @@ mixin _$StructureMapGroup {
 
   /// [typeModeElement] ("_typeMode") Extensions for typeMode
   @JsonKey(name: '_typeMode')
-  Element? get typeModeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get typeModeElement => throw _privateConstructorUsedError;
 
   /// [documentation] Additional supporting documentation that explains the
   ///  purpose of the group and the types of mappings within it.
@@ -41806,7 +41942,8 @@ mixin _$StructureMapGroup {
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get documentationElement =>
+      throw _privateConstructorUsedError;
 
   /// [input] A name assigned to an instance of data. The instance must be
   ///  provided when the mapping is invoked.
@@ -41832,13 +41969,13 @@ abstract class $StructureMapGroupCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       @JsonKey(name: 'extends') FhirId? extends_,
-      @JsonKey(name: '_extends') Element? extendsElement,
+      @JsonKey(name: '_extends') PrimitiveElement? extendsElement,
       FhirCode? typeMode,
-      @JsonKey(name: '_typeMode') Element? typeModeElement,
+      @JsonKey(name: '_typeMode') PrimitiveElement? typeModeElement,
       String? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement,
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       List<StructureMapInput> input,
       List<StructureMapRule>? rule});
 }
@@ -41890,7 +42027,7 @@ class _$StructureMapGroupCopyWithImpl<$Res, $Val extends StructureMapGroup>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       extends_: freezed == extends_
           ? _value.extends_
           : extends_ // ignore: cast_nullable_to_non_nullable
@@ -41898,7 +42035,7 @@ class _$StructureMapGroupCopyWithImpl<$Res, $Val extends StructureMapGroup>
       extendsElement: freezed == extendsElement
           ? _value.extendsElement
           : extendsElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       typeMode: freezed == typeMode
           ? _value.typeMode
           : typeMode // ignore: cast_nullable_to_non_nullable
@@ -41906,7 +42043,7 @@ class _$StructureMapGroupCopyWithImpl<$Res, $Val extends StructureMapGroup>
       typeModeElement: freezed == typeModeElement
           ? _value.typeModeElement
           : typeModeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -41914,7 +42051,7 @@ class _$StructureMapGroupCopyWithImpl<$Res, $Val extends StructureMapGroup>
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       input: null == input
           ? _value.input
           : input // ignore: cast_nullable_to_non_nullable
@@ -41940,13 +42077,13 @@ abstract class _$$StructureMapGroupImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       @JsonKey(name: 'extends') FhirId? extends_,
-      @JsonKey(name: '_extends') Element? extendsElement,
+      @JsonKey(name: '_extends') PrimitiveElement? extendsElement,
       FhirCode? typeMode,
-      @JsonKey(name: '_typeMode') Element? typeModeElement,
+      @JsonKey(name: '_typeMode') PrimitiveElement? typeModeElement,
       String? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement,
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       List<StructureMapInput> input,
       List<StructureMapRule>? rule});
 }
@@ -41996,7 +42133,7 @@ class __$$StructureMapGroupImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       extends_: freezed == extends_
           ? _value.extends_
           : extends_ // ignore: cast_nullable_to_non_nullable
@@ -42004,7 +42141,7 @@ class __$$StructureMapGroupImplCopyWithImpl<$Res>
       extendsElement: freezed == extendsElement
           ? _value.extendsElement
           : extendsElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       typeMode: freezed == typeMode
           ? _value.typeMode
           : typeMode // ignore: cast_nullable_to_non_nullable
@@ -42012,7 +42149,7 @@ class __$$StructureMapGroupImplCopyWithImpl<$Res>
       typeModeElement: freezed == typeModeElement
           ? _value.typeModeElement
           : typeModeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -42020,7 +42157,7 @@ class __$$StructureMapGroupImplCopyWithImpl<$Res>
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       input: null == input
           ? _value._input
           : input // ignore: cast_nullable_to_non_nullable
@@ -42131,7 +42268,7 @@ class _$StructureMapGroupImpl extends _StructureMapGroup {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [extends_] ("extends") Another group that this group adds rules to.
   @override
@@ -42141,7 +42278,7 @@ class _$StructureMapGroupImpl extends _StructureMapGroup {
   /// [extendsElement] ("_extends") Extensions for extends
   @override
   @JsonKey(name: '_extends')
-  final Element? extendsElement;
+  final PrimitiveElement? extendsElement;
 
   /// [typeMode] If this is the default rule set to apply for the source type or
   ///  this combination of types.
@@ -42151,7 +42288,7 @@ class _$StructureMapGroupImpl extends _StructureMapGroup {
   /// [typeModeElement] ("_typeMode") Extensions for typeMode
   @override
   @JsonKey(name: '_typeMode')
-  final Element? typeModeElement;
+  final PrimitiveElement? typeModeElement;
 
   /// [documentation] Additional supporting documentation that explains the
   ///  purpose of the group and the types of mappings within it.
@@ -42161,7 +42298,7 @@ class _$StructureMapGroupImpl extends _StructureMapGroup {
   /// [documentationElement] ("_documentation") Extensions for documentation
   @override
   @JsonKey(name: '_documentation')
-  final Element? documentationElement;
+  final PrimitiveElement? documentationElement;
 
   /// [input] A name assigned to an instance of data. The instance must be
   ///  provided when the mapping is invoked.
@@ -42262,13 +42399,14 @@ abstract class _StructureMapGroup extends StructureMapGroup {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirId? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       @JsonKey(name: 'extends') final FhirId? extends_,
-      @JsonKey(name: '_extends') final Element? extendsElement,
+      @JsonKey(name: '_extends') final PrimitiveElement? extendsElement,
       final FhirCode? typeMode,
-      @JsonKey(name: '_typeMode') final Element? typeModeElement,
+      @JsonKey(name: '_typeMode') final PrimitiveElement? typeModeElement,
       final String? documentation,
-      @JsonKey(name: '_documentation') final Element? documentationElement,
+      @JsonKey(name: '_documentation')
+      final PrimitiveElement? documentationElement,
       required final List<StructureMapInput> input,
       final List<StructureMapRule>? rule}) = _$StructureMapGroupImpl;
   const _StructureMapGroup._() : super._();
@@ -42314,7 +42452,7 @@ abstract class _StructureMapGroup extends StructureMapGroup {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [extends_] ("extends") Another group that this group adds rules to.
@@ -42324,7 +42462,7 @@ abstract class _StructureMapGroup extends StructureMapGroup {
 
   /// [extendsElement] ("_extends") Extensions for extends
   @JsonKey(name: '_extends')
-  Element? get extendsElement;
+  PrimitiveElement? get extendsElement;
   @override
 
   /// [typeMode] If this is the default rule set to apply for the source type or
@@ -42334,7 +42472,7 @@ abstract class _StructureMapGroup extends StructureMapGroup {
 
   /// [typeModeElement] ("_typeMode") Extensions for typeMode
   @JsonKey(name: '_typeMode')
-  Element? get typeModeElement;
+  PrimitiveElement? get typeModeElement;
   @override
 
   /// [documentation] Additional supporting documentation that explains the
@@ -42344,7 +42482,7 @@ abstract class _StructureMapGroup extends StructureMapGroup {
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement;
+  PrimitiveElement? get documentationElement;
   @override
 
   /// [input] A name assigned to an instance of data. The instance must be
@@ -42399,28 +42537,29 @@ mixin _$StructureMapInput {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [type] Type for this instance of data.
   String? get type => throw _privateConstructorUsedError;
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get typeElement => throw _privateConstructorUsedError;
 
   /// [mode] Mode for this instance of data.
   FhirCode? get mode => throw _privateConstructorUsedError;
 
   /// [modeElement] ("_mode") Extensions for mode
   @JsonKey(name: '_mode')
-  Element? get modeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get modeElement => throw _privateConstructorUsedError;
 
   /// [documentation] Documentation for this instance of data.
   String? get documentation => throw _privateConstructorUsedError;
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get documentationElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -42439,13 +42578,13 @@ abstract class $StructureMapInputCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       FhirCode? mode,
-      @JsonKey(name: '_mode') Element? modeElement,
+      @JsonKey(name: '_mode') PrimitiveElement? modeElement,
       String? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement});
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement});
 }
 
 /// @nodoc
@@ -42493,7 +42632,7 @@ class _$StructureMapInputCopyWithImpl<$Res, $Val extends StructureMapInput>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -42501,7 +42640,7 @@ class _$StructureMapInputCopyWithImpl<$Res, $Val extends StructureMapInput>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       mode: freezed == mode
           ? _value.mode
           : mode // ignore: cast_nullable_to_non_nullable
@@ -42509,7 +42648,7 @@ class _$StructureMapInputCopyWithImpl<$Res, $Val extends StructureMapInput>
       modeElement: freezed == modeElement
           ? _value.modeElement
           : modeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -42517,7 +42656,7 @@ class _$StructureMapInputCopyWithImpl<$Res, $Val extends StructureMapInput>
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -42535,13 +42674,13 @@ abstract class _$$StructureMapInputImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       FhirCode? mode,
-      @JsonKey(name: '_mode') Element? modeElement,
+      @JsonKey(name: '_mode') PrimitiveElement? modeElement,
       String? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement});
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement});
 }
 
 /// @nodoc
@@ -42587,7 +42726,7 @@ class __$$StructureMapInputImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -42595,7 +42734,7 @@ class __$$StructureMapInputImplCopyWithImpl<$Res>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       mode: freezed == mode
           ? _value.mode
           : mode // ignore: cast_nullable_to_non_nullable
@@ -42603,7 +42742,7 @@ class __$$StructureMapInputImplCopyWithImpl<$Res>
       modeElement: freezed == modeElement
           ? _value.modeElement
           : modeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -42611,7 +42750,7 @@ class __$$StructureMapInputImplCopyWithImpl<$Res>
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -42710,7 +42849,7 @@ class _$StructureMapInputImpl extends _StructureMapInput {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [type] Type for this instance of data.
   @override
@@ -42719,7 +42858,7 @@ class _$StructureMapInputImpl extends _StructureMapInput {
   /// [typeElement] ("_type") Extensions for type
   @override
   @JsonKey(name: '_type')
-  final Element? typeElement;
+  final PrimitiveElement? typeElement;
 
   /// [mode] Mode for this instance of data.
   @override
@@ -42728,7 +42867,7 @@ class _$StructureMapInputImpl extends _StructureMapInput {
   /// [modeElement] ("_mode") Extensions for mode
   @override
   @JsonKey(name: '_mode')
-  final Element? modeElement;
+  final PrimitiveElement? modeElement;
 
   /// [documentation] Documentation for this instance of data.
   @override
@@ -42737,7 +42876,7 @@ class _$StructureMapInputImpl extends _StructureMapInput {
   /// [documentationElement] ("_documentation") Extensions for documentation
   @override
   @JsonKey(name: '_documentation')
-  final Element? documentationElement;
+  final PrimitiveElement? documentationElement;
 
   @override
   String toString() {
@@ -42806,14 +42945,14 @@ abstract class _StructureMapInput extends StructureMapInput {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirId? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final String? type,
-      @JsonKey(name: '_type') final Element? typeElement,
+      @JsonKey(name: '_type') final PrimitiveElement? typeElement,
       final FhirCode? mode,
-      @JsonKey(name: '_mode') final Element? modeElement,
+      @JsonKey(name: '_mode') final PrimitiveElement? modeElement,
       final String? documentation,
       @JsonKey(name: '_documentation')
-      final Element? documentationElement}) = _$StructureMapInputImpl;
+      final PrimitiveElement? documentationElement}) = _$StructureMapInputImpl;
   const _StructureMapInput._() : super._();
 
   factory _StructureMapInput.fromJson(Map<String, dynamic> json) =
@@ -42857,7 +42996,7 @@ abstract class _StructureMapInput extends StructureMapInput {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [type] Type for this instance of data.
@@ -42866,7 +43005,7 @@ abstract class _StructureMapInput extends StructureMapInput {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement;
+  PrimitiveElement? get typeElement;
   @override
 
   /// [mode] Mode for this instance of data.
@@ -42875,7 +43014,7 @@ abstract class _StructureMapInput extends StructureMapInput {
 
   /// [modeElement] ("_mode") Extensions for mode
   @JsonKey(name: '_mode')
-  Element? get modeElement;
+  PrimitiveElement? get modeElement;
   @override
 
   /// [documentation] Documentation for this instance of data.
@@ -42884,7 +43023,7 @@ abstract class _StructureMapInput extends StructureMapInput {
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement;
+  PrimitiveElement? get documentationElement;
   @override
   @JsonKey(ignore: true)
   _$$StructureMapInputImplCopyWith<_$StructureMapInputImpl> get copyWith =>
@@ -42930,7 +43069,7 @@ mixin _$StructureMapRule {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [source] Source inputs to the mapping.
   List<StructureMapSource> get source => throw _privateConstructorUsedError;
@@ -42950,7 +43089,8 @@ mixin _$StructureMapRule {
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get documentationElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -42969,13 +43109,13 @@ abstract class $StructureMapRuleCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       List<StructureMapSource> source,
       List<StructureMapTarget>? target,
       List<StructureMapRule>? rule,
       List<StructureMapDependent>? dependent,
       String? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement});
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement});
 }
 
 /// @nodoc
@@ -43023,7 +43163,7 @@ class _$StructureMapRuleCopyWithImpl<$Res, $Val extends StructureMapRule>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       source: null == source
           ? _value.source
           : source // ignore: cast_nullable_to_non_nullable
@@ -43047,7 +43187,7 @@ class _$StructureMapRuleCopyWithImpl<$Res, $Val extends StructureMapRule>
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -43065,13 +43205,13 @@ abstract class _$$StructureMapRuleImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       List<StructureMapSource> source,
       List<StructureMapTarget>? target,
       List<StructureMapRule>? rule,
       List<StructureMapDependent>? dependent,
       String? documentation,
-      @JsonKey(name: '_documentation') Element? documentationElement});
+      @JsonKey(name: '_documentation') PrimitiveElement? documentationElement});
 }
 
 /// @nodoc
@@ -43117,7 +43257,7 @@ class __$$StructureMapRuleImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       source: null == source
           ? _value._source
           : source // ignore: cast_nullable_to_non_nullable
@@ -43141,7 +43281,7 @@ class __$$StructureMapRuleImplCopyWithImpl<$Res>
       documentationElement: freezed == documentationElement
           ? _value.documentationElement
           : documentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -43244,7 +43384,7 @@ class _$StructureMapRuleImpl extends _StructureMapRule {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [source] Source inputs to the mapping.
   final List<StructureMapSource> _source;
@@ -43303,7 +43443,7 @@ class _$StructureMapRuleImpl extends _StructureMapRule {
   /// [documentationElement] ("_documentation") Extensions for documentation
   @override
   @JsonKey(name: '_documentation')
-  final Element? documentationElement;
+  final PrimitiveElement? documentationElement;
 
   @override
   String toString() {
@@ -43371,14 +43511,14 @@ abstract class _StructureMapRule extends StructureMapRule {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirId? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       required final List<StructureMapSource> source,
       final List<StructureMapTarget>? target,
       final List<StructureMapRule>? rule,
       final List<StructureMapDependent>? dependent,
       final String? documentation,
       @JsonKey(name: '_documentation')
-      final Element? documentationElement}) = _$StructureMapRuleImpl;
+      final PrimitiveElement? documentationElement}) = _$StructureMapRuleImpl;
   const _StructureMapRule._() : super._();
 
   factory _StructureMapRule.fromJson(Map<String, dynamic> json) =
@@ -43422,7 +43562,7 @@ abstract class _StructureMapRule extends StructureMapRule {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [source] Source inputs to the mapping.
@@ -43447,7 +43587,7 @@ abstract class _StructureMapRule extends StructureMapRule {
 
   /// [documentationElement] ("_documentation") Extensions for documentation
   @JsonKey(name: '_documentation')
-  Element? get documentationElement;
+  PrimitiveElement? get documentationElement;
   @override
   @JsonKey(ignore: true)
   _$$StructureMapRuleImplCopyWith<_$StructureMapRuleImpl> get copyWith =>
@@ -43493,7 +43633,7 @@ mixin _$StructureMapSource {
 
   /// [contextElement] ("_context") Extensions for context
   @JsonKey(name: '_context')
-  Element? get contextElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get contextElement => throw _privateConstructorUsedError;
 
   /// [min] Specified minimum cardinality for the element. This is optional; if
   ///  present, it acts an implicit check on the input content.
@@ -43501,7 +43641,7 @@ mixin _$StructureMapSource {
 
   /// [minElement] ("_min") Extensions for min
   @JsonKey(name: '_min')
-  Element? get minElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get minElement => throw _privateConstructorUsedError;
 
   /// [max] Specified maximum cardinality for the element - a number or a "*".
   ///  This is optional; if present, it acts an implicit check on the input
@@ -43510,7 +43650,7 @@ mixin _$StructureMapSource {
 
   /// [maxElement] ("_max") Extensions for max
   @JsonKey(name: '_max')
-  Element? get maxElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get maxElement => throw _privateConstructorUsedError;
 
   /// [type] Specified type for the element. This works as a condition on the
   ///  mapping - use for polymorphic elements.
@@ -43518,7 +43658,7 @@ mixin _$StructureMapSource {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get typeElement => throw _privateConstructorUsedError;
 
   /// [defaultValue] A value to use if there is no existing value in the source
   ///  object.
@@ -43526,35 +43666,36 @@ mixin _$StructureMapSource {
 
   /// [defaultValueElement] ("_defaultValue") Extensions for defaultValue
   @JsonKey(name: '_defaultValue')
-  Element? get defaultValueElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get defaultValueElement =>
+      throw _privateConstructorUsedError;
 
   /// [element] Optional field for this source.
   String? get element => throw _privateConstructorUsedError;
 
   /// [elementElement] ("_element") Extensions for element
   @JsonKey(name: '_element')
-  Element? get elementElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get elementElement => throw _privateConstructorUsedError;
 
   /// [listMode] How to handle the list mode for this element.
   FhirCode? get listMode => throw _privateConstructorUsedError;
 
   /// [listModeElement] ("_listMode") Extensions for listMode
   @JsonKey(name: '_listMode')
-  Element? get listModeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get listModeElement => throw _privateConstructorUsedError;
 
   /// [variable] Named context for field, if a field is specified.
   FhirId? get variable => throw _privateConstructorUsedError;
 
   /// [variableElement] ("_variable") Extensions for variable
   @JsonKey(name: '_variable')
-  Element? get variableElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get variableElement => throw _privateConstructorUsedError;
 
   /// [condition] FHIRPath expression  - must be true or the rule does not apply.
   String? get condition => throw _privateConstructorUsedError;
 
   /// [conditionElement] ("_condition") Extensions for condition
   @JsonKey(name: '_condition')
-  Element? get conditionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get conditionElement => throw _privateConstructorUsedError;
 
   /// [check] FHIRPath expression  - must be true or the mapping engine throws an
   ///  error instead of completing.
@@ -43562,7 +43703,7 @@ mixin _$StructureMapSource {
 
   /// [checkElement] ("_check") Extensions for check
   @JsonKey(name: '_check')
-  Element? get checkElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get checkElement => throw _privateConstructorUsedError;
 
   /// [logMessage] A FHIRPath expression which specifies a message to put in the
   ///  transform log when content matching the source rule is found.
@@ -43570,7 +43711,7 @@ mixin _$StructureMapSource {
 
   /// [logMessageElement] ("_logMessage") Extensions for logMessage
   @JsonKey(name: '_logMessage')
-  Element? get logMessageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get logMessageElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -43589,27 +43730,27 @@ abstract class $StructureMapSourceCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? context,
-      @JsonKey(name: '_context') Element? contextElement,
+      @JsonKey(name: '_context') PrimitiveElement? contextElement,
       FhirInteger? min,
-      @JsonKey(name: '_min') Element? minElement,
+      @JsonKey(name: '_min') PrimitiveElement? minElement,
       String? max,
-      @JsonKey(name: '_max') Element? maxElement,
+      @JsonKey(name: '_max') PrimitiveElement? maxElement,
       String? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       String? defaultValue,
-      @JsonKey(name: '_defaultValue') Element? defaultValueElement,
+      @JsonKey(name: '_defaultValue') PrimitiveElement? defaultValueElement,
       String? element,
-      @JsonKey(name: '_element') Element? elementElement,
+      @JsonKey(name: '_element') PrimitiveElement? elementElement,
       FhirCode? listMode,
-      @JsonKey(name: '_listMode') Element? listModeElement,
+      @JsonKey(name: '_listMode') PrimitiveElement? listModeElement,
       FhirId? variable,
-      @JsonKey(name: '_variable') Element? variableElement,
+      @JsonKey(name: '_variable') PrimitiveElement? variableElement,
       String? condition,
-      @JsonKey(name: '_condition') Element? conditionElement,
+      @JsonKey(name: '_condition') PrimitiveElement? conditionElement,
       String? check,
-      @JsonKey(name: '_check') Element? checkElement,
+      @JsonKey(name: '_check') PrimitiveElement? checkElement,
       String? logMessage,
-      @JsonKey(name: '_logMessage') Element? logMessageElement});
+      @JsonKey(name: '_logMessage') PrimitiveElement? logMessageElement});
 }
 
 /// @nodoc
@@ -43671,7 +43812,7 @@ class _$StructureMapSourceCopyWithImpl<$Res, $Val extends StructureMapSource>
       contextElement: freezed == contextElement
           ? _value.contextElement
           : contextElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       min: freezed == min
           ? _value.min
           : min // ignore: cast_nullable_to_non_nullable
@@ -43679,7 +43820,7 @@ class _$StructureMapSourceCopyWithImpl<$Res, $Val extends StructureMapSource>
       minElement: freezed == minElement
           ? _value.minElement
           : minElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       max: freezed == max
           ? _value.max
           : max // ignore: cast_nullable_to_non_nullable
@@ -43687,7 +43828,7 @@ class _$StructureMapSourceCopyWithImpl<$Res, $Val extends StructureMapSource>
       maxElement: freezed == maxElement
           ? _value.maxElement
           : maxElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -43695,7 +43836,7 @@ class _$StructureMapSourceCopyWithImpl<$Res, $Val extends StructureMapSource>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       defaultValue: freezed == defaultValue
           ? _value.defaultValue
           : defaultValue // ignore: cast_nullable_to_non_nullable
@@ -43703,7 +43844,7 @@ class _$StructureMapSourceCopyWithImpl<$Res, $Val extends StructureMapSource>
       defaultValueElement: freezed == defaultValueElement
           ? _value.defaultValueElement
           : defaultValueElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       element: freezed == element
           ? _value.element
           : element // ignore: cast_nullable_to_non_nullable
@@ -43711,7 +43852,7 @@ class _$StructureMapSourceCopyWithImpl<$Res, $Val extends StructureMapSource>
       elementElement: freezed == elementElement
           ? _value.elementElement
           : elementElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       listMode: freezed == listMode
           ? _value.listMode
           : listMode // ignore: cast_nullable_to_non_nullable
@@ -43719,7 +43860,7 @@ class _$StructureMapSourceCopyWithImpl<$Res, $Val extends StructureMapSource>
       listModeElement: freezed == listModeElement
           ? _value.listModeElement
           : listModeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       variable: freezed == variable
           ? _value.variable
           : variable // ignore: cast_nullable_to_non_nullable
@@ -43727,7 +43868,7 @@ class _$StructureMapSourceCopyWithImpl<$Res, $Val extends StructureMapSource>
       variableElement: freezed == variableElement
           ? _value.variableElement
           : variableElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       condition: freezed == condition
           ? _value.condition
           : condition // ignore: cast_nullable_to_non_nullable
@@ -43735,7 +43876,7 @@ class _$StructureMapSourceCopyWithImpl<$Res, $Val extends StructureMapSource>
       conditionElement: freezed == conditionElement
           ? _value.conditionElement
           : conditionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       check: freezed == check
           ? _value.check
           : check // ignore: cast_nullable_to_non_nullable
@@ -43743,7 +43884,7 @@ class _$StructureMapSourceCopyWithImpl<$Res, $Val extends StructureMapSource>
       checkElement: freezed == checkElement
           ? _value.checkElement
           : checkElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       logMessage: freezed == logMessage
           ? _value.logMessage
           : logMessage // ignore: cast_nullable_to_non_nullable
@@ -43751,7 +43892,7 @@ class _$StructureMapSourceCopyWithImpl<$Res, $Val extends StructureMapSource>
       logMessageElement: freezed == logMessageElement
           ? _value.logMessageElement
           : logMessageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -43769,27 +43910,27 @@ abstract class _$$StructureMapSourceImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? context,
-      @JsonKey(name: '_context') Element? contextElement,
+      @JsonKey(name: '_context') PrimitiveElement? contextElement,
       FhirInteger? min,
-      @JsonKey(name: '_min') Element? minElement,
+      @JsonKey(name: '_min') PrimitiveElement? minElement,
       String? max,
-      @JsonKey(name: '_max') Element? maxElement,
+      @JsonKey(name: '_max') PrimitiveElement? maxElement,
       String? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       String? defaultValue,
-      @JsonKey(name: '_defaultValue') Element? defaultValueElement,
+      @JsonKey(name: '_defaultValue') PrimitiveElement? defaultValueElement,
       String? element,
-      @JsonKey(name: '_element') Element? elementElement,
+      @JsonKey(name: '_element') PrimitiveElement? elementElement,
       FhirCode? listMode,
-      @JsonKey(name: '_listMode') Element? listModeElement,
+      @JsonKey(name: '_listMode') PrimitiveElement? listModeElement,
       FhirId? variable,
-      @JsonKey(name: '_variable') Element? variableElement,
+      @JsonKey(name: '_variable') PrimitiveElement? variableElement,
       String? condition,
-      @JsonKey(name: '_condition') Element? conditionElement,
+      @JsonKey(name: '_condition') PrimitiveElement? conditionElement,
       String? check,
-      @JsonKey(name: '_check') Element? checkElement,
+      @JsonKey(name: '_check') PrimitiveElement? checkElement,
       String? logMessage,
-      @JsonKey(name: '_logMessage') Element? logMessageElement});
+      @JsonKey(name: '_logMessage') PrimitiveElement? logMessageElement});
 }
 
 /// @nodoc
@@ -43849,7 +43990,7 @@ class __$$StructureMapSourceImplCopyWithImpl<$Res>
       contextElement: freezed == contextElement
           ? _value.contextElement
           : contextElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       min: freezed == min
           ? _value.min
           : min // ignore: cast_nullable_to_non_nullable
@@ -43857,7 +43998,7 @@ class __$$StructureMapSourceImplCopyWithImpl<$Res>
       minElement: freezed == minElement
           ? _value.minElement
           : minElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       max: freezed == max
           ? _value.max
           : max // ignore: cast_nullable_to_non_nullable
@@ -43865,7 +44006,7 @@ class __$$StructureMapSourceImplCopyWithImpl<$Res>
       maxElement: freezed == maxElement
           ? _value.maxElement
           : maxElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -43873,7 +44014,7 @@ class __$$StructureMapSourceImplCopyWithImpl<$Res>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       defaultValue: freezed == defaultValue
           ? _value.defaultValue
           : defaultValue // ignore: cast_nullable_to_non_nullable
@@ -43881,7 +44022,7 @@ class __$$StructureMapSourceImplCopyWithImpl<$Res>
       defaultValueElement: freezed == defaultValueElement
           ? _value.defaultValueElement
           : defaultValueElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       element: freezed == element
           ? _value.element
           : element // ignore: cast_nullable_to_non_nullable
@@ -43889,7 +44030,7 @@ class __$$StructureMapSourceImplCopyWithImpl<$Res>
       elementElement: freezed == elementElement
           ? _value.elementElement
           : elementElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       listMode: freezed == listMode
           ? _value.listMode
           : listMode // ignore: cast_nullable_to_non_nullable
@@ -43897,7 +44038,7 @@ class __$$StructureMapSourceImplCopyWithImpl<$Res>
       listModeElement: freezed == listModeElement
           ? _value.listModeElement
           : listModeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       variable: freezed == variable
           ? _value.variable
           : variable // ignore: cast_nullable_to_non_nullable
@@ -43905,7 +44046,7 @@ class __$$StructureMapSourceImplCopyWithImpl<$Res>
       variableElement: freezed == variableElement
           ? _value.variableElement
           : variableElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       condition: freezed == condition
           ? _value.condition
           : condition // ignore: cast_nullable_to_non_nullable
@@ -43913,7 +44054,7 @@ class __$$StructureMapSourceImplCopyWithImpl<$Res>
       conditionElement: freezed == conditionElement
           ? _value.conditionElement
           : conditionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       check: freezed == check
           ? _value.check
           : check // ignore: cast_nullable_to_non_nullable
@@ -43921,7 +44062,7 @@ class __$$StructureMapSourceImplCopyWithImpl<$Res>
       checkElement: freezed == checkElement
           ? _value.checkElement
           : checkElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       logMessage: freezed == logMessage
           ? _value.logMessage
           : logMessage // ignore: cast_nullable_to_non_nullable
@@ -43929,7 +44070,7 @@ class __$$StructureMapSourceImplCopyWithImpl<$Res>
       logMessageElement: freezed == logMessageElement
           ? _value.logMessageElement
           : logMessageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -44042,7 +44183,7 @@ class _$StructureMapSourceImpl extends _StructureMapSource {
   /// [contextElement] ("_context") Extensions for context
   @override
   @JsonKey(name: '_context')
-  final Element? contextElement;
+  final PrimitiveElement? contextElement;
 
   /// [min] Specified minimum cardinality for the element. This is optional; if
   ///  present, it acts an implicit check on the input content.
@@ -44052,7 +44193,7 @@ class _$StructureMapSourceImpl extends _StructureMapSource {
   /// [minElement] ("_min") Extensions for min
   @override
   @JsonKey(name: '_min')
-  final Element? minElement;
+  final PrimitiveElement? minElement;
 
   /// [max] Specified maximum cardinality for the element - a number or a "*".
   ///  This is optional; if present, it acts an implicit check on the input
@@ -44063,7 +44204,7 @@ class _$StructureMapSourceImpl extends _StructureMapSource {
   /// [maxElement] ("_max") Extensions for max
   @override
   @JsonKey(name: '_max')
-  final Element? maxElement;
+  final PrimitiveElement? maxElement;
 
   /// [type] Specified type for the element. This works as a condition on the
   ///  mapping - use for polymorphic elements.
@@ -44073,7 +44214,7 @@ class _$StructureMapSourceImpl extends _StructureMapSource {
   /// [typeElement] ("_type") Extensions for type
   @override
   @JsonKey(name: '_type')
-  final Element? typeElement;
+  final PrimitiveElement? typeElement;
 
   /// [defaultValue] A value to use if there is no existing value in the source
   ///  object.
@@ -44083,7 +44224,7 @@ class _$StructureMapSourceImpl extends _StructureMapSource {
   /// [defaultValueElement] ("_defaultValue") Extensions for defaultValue
   @override
   @JsonKey(name: '_defaultValue')
-  final Element? defaultValueElement;
+  final PrimitiveElement? defaultValueElement;
 
   /// [element] Optional field for this source.
   @override
@@ -44092,7 +44233,7 @@ class _$StructureMapSourceImpl extends _StructureMapSource {
   /// [elementElement] ("_element") Extensions for element
   @override
   @JsonKey(name: '_element')
-  final Element? elementElement;
+  final PrimitiveElement? elementElement;
 
   /// [listMode] How to handle the list mode for this element.
   @override
@@ -44101,7 +44242,7 @@ class _$StructureMapSourceImpl extends _StructureMapSource {
   /// [listModeElement] ("_listMode") Extensions for listMode
   @override
   @JsonKey(name: '_listMode')
-  final Element? listModeElement;
+  final PrimitiveElement? listModeElement;
 
   /// [variable] Named context for field, if a field is specified.
   @override
@@ -44110,7 +44251,7 @@ class _$StructureMapSourceImpl extends _StructureMapSource {
   /// [variableElement] ("_variable") Extensions for variable
   @override
   @JsonKey(name: '_variable')
-  final Element? variableElement;
+  final PrimitiveElement? variableElement;
 
   /// [condition] FHIRPath expression  - must be true or the rule does not apply.
   @override
@@ -44119,7 +44260,7 @@ class _$StructureMapSourceImpl extends _StructureMapSource {
   /// [conditionElement] ("_condition") Extensions for condition
   @override
   @JsonKey(name: '_condition')
-  final Element? conditionElement;
+  final PrimitiveElement? conditionElement;
 
   /// [check] FHIRPath expression  - must be true or the mapping engine throws an
   ///  error instead of completing.
@@ -44129,7 +44270,7 @@ class _$StructureMapSourceImpl extends _StructureMapSource {
   /// [checkElement] ("_check") Extensions for check
   @override
   @JsonKey(name: '_check')
-  final Element? checkElement;
+  final PrimitiveElement? checkElement;
 
   /// [logMessage] A FHIRPath expression which specifies a message to put in the
   ///  transform log when content matching the source rule is found.
@@ -44139,7 +44280,7 @@ class _$StructureMapSourceImpl extends _StructureMapSource {
   /// [logMessageElement] ("_logMessage") Extensions for logMessage
   @override
   @JsonKey(name: '_logMessage')
-  final Element? logMessageElement;
+  final PrimitiveElement? logMessageElement;
 
   @override
   String toString() {
@@ -44244,32 +44385,33 @@ class _$StructureMapSourceImpl extends _StructureMapSource {
 
 abstract class _StructureMapSource extends StructureMapSource {
   const factory _StructureMapSource(
-          {final String? id,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final FhirId? context,
-          @JsonKey(name: '_context') final Element? contextElement,
-          final FhirInteger? min,
-          @JsonKey(name: '_min') final Element? minElement,
-          final String? max,
-          @JsonKey(name: '_max') final Element? maxElement,
-          final String? type,
-          @JsonKey(name: '_type') final Element? typeElement,
-          final String? defaultValue,
-          @JsonKey(name: '_defaultValue') final Element? defaultValueElement,
-          final String? element,
-          @JsonKey(name: '_element') final Element? elementElement,
-          final FhirCode? listMode,
-          @JsonKey(name: '_listMode') final Element? listModeElement,
-          final FhirId? variable,
-          @JsonKey(name: '_variable') final Element? variableElement,
-          final String? condition,
-          @JsonKey(name: '_condition') final Element? conditionElement,
-          final String? check,
-          @JsonKey(name: '_check') final Element? checkElement,
-          final String? logMessage,
-          @JsonKey(name: '_logMessage') final Element? logMessageElement}) =
-      _$StructureMapSourceImpl;
+      {final String? id,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final FhirId? context,
+      @JsonKey(name: '_context') final PrimitiveElement? contextElement,
+      final FhirInteger? min,
+      @JsonKey(name: '_min') final PrimitiveElement? minElement,
+      final String? max,
+      @JsonKey(name: '_max') final PrimitiveElement? maxElement,
+      final String? type,
+      @JsonKey(name: '_type') final PrimitiveElement? typeElement,
+      final String? defaultValue,
+      @JsonKey(name: '_defaultValue')
+      final PrimitiveElement? defaultValueElement,
+      final String? element,
+      @JsonKey(name: '_element') final PrimitiveElement? elementElement,
+      final FhirCode? listMode,
+      @JsonKey(name: '_listMode') final PrimitiveElement? listModeElement,
+      final FhirId? variable,
+      @JsonKey(name: '_variable') final PrimitiveElement? variableElement,
+      final String? condition,
+      @JsonKey(name: '_condition') final PrimitiveElement? conditionElement,
+      final String? check,
+      @JsonKey(name: '_check') final PrimitiveElement? checkElement,
+      final String? logMessage,
+      @JsonKey(name: '_logMessage')
+      final PrimitiveElement? logMessageElement}) = _$StructureMapSourceImpl;
   const _StructureMapSource._() : super._();
 
   factory _StructureMapSource.fromJson(Map<String, dynamic> json) =
@@ -44313,7 +44455,7 @@ abstract class _StructureMapSource extends StructureMapSource {
 
   /// [contextElement] ("_context") Extensions for context
   @JsonKey(name: '_context')
-  Element? get contextElement;
+  PrimitiveElement? get contextElement;
   @override
 
   /// [min] Specified minimum cardinality for the element. This is optional; if
@@ -44323,7 +44465,7 @@ abstract class _StructureMapSource extends StructureMapSource {
 
   /// [minElement] ("_min") Extensions for min
   @JsonKey(name: '_min')
-  Element? get minElement;
+  PrimitiveElement? get minElement;
   @override
 
   /// [max] Specified maximum cardinality for the element - a number or a "*".
@@ -44334,7 +44476,7 @@ abstract class _StructureMapSource extends StructureMapSource {
 
   /// [maxElement] ("_max") Extensions for max
   @JsonKey(name: '_max')
-  Element? get maxElement;
+  PrimitiveElement? get maxElement;
   @override
 
   /// [type] Specified type for the element. This works as a condition on the
@@ -44344,7 +44486,7 @@ abstract class _StructureMapSource extends StructureMapSource {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement;
+  PrimitiveElement? get typeElement;
   @override
 
   /// [defaultValue] A value to use if there is no existing value in the source
@@ -44354,7 +44496,7 @@ abstract class _StructureMapSource extends StructureMapSource {
 
   /// [defaultValueElement] ("_defaultValue") Extensions for defaultValue
   @JsonKey(name: '_defaultValue')
-  Element? get defaultValueElement;
+  PrimitiveElement? get defaultValueElement;
   @override
 
   /// [element] Optional field for this source.
@@ -44363,7 +44505,7 @@ abstract class _StructureMapSource extends StructureMapSource {
 
   /// [elementElement] ("_element") Extensions for element
   @JsonKey(name: '_element')
-  Element? get elementElement;
+  PrimitiveElement? get elementElement;
   @override
 
   /// [listMode] How to handle the list mode for this element.
@@ -44372,7 +44514,7 @@ abstract class _StructureMapSource extends StructureMapSource {
 
   /// [listModeElement] ("_listMode") Extensions for listMode
   @JsonKey(name: '_listMode')
-  Element? get listModeElement;
+  PrimitiveElement? get listModeElement;
   @override
 
   /// [variable] Named context for field, if a field is specified.
@@ -44381,7 +44523,7 @@ abstract class _StructureMapSource extends StructureMapSource {
 
   /// [variableElement] ("_variable") Extensions for variable
   @JsonKey(name: '_variable')
-  Element? get variableElement;
+  PrimitiveElement? get variableElement;
   @override
 
   /// [condition] FHIRPath expression  - must be true or the rule does not apply.
@@ -44390,7 +44532,7 @@ abstract class _StructureMapSource extends StructureMapSource {
 
   /// [conditionElement] ("_condition") Extensions for condition
   @JsonKey(name: '_condition')
-  Element? get conditionElement;
+  PrimitiveElement? get conditionElement;
   @override
 
   /// [check] FHIRPath expression  - must be true or the mapping engine throws an
@@ -44400,7 +44542,7 @@ abstract class _StructureMapSource extends StructureMapSource {
 
   /// [checkElement] ("_check") Extensions for check
   @JsonKey(name: '_check')
-  Element? get checkElement;
+  PrimitiveElement? get checkElement;
   @override
 
   /// [logMessage] A FHIRPath expression which specifies a message to put in the
@@ -44410,7 +44552,7 @@ abstract class _StructureMapSource extends StructureMapSource {
 
   /// [logMessageElement] ("_logMessage") Extensions for logMessage
   @JsonKey(name: '_logMessage')
-  Element? get logMessageElement;
+  PrimitiveElement? get logMessageElement;
   @override
   @JsonKey(ignore: true)
   _$$StructureMapSourceImplCopyWith<_$StructureMapSourceImpl> get copyWith =>
@@ -44456,21 +44598,21 @@ mixin _$StructureMapTarget {
 
   /// [contextElement] ("_context") Extensions for context
   @JsonKey(name: '_context')
-  Element? get contextElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get contextElement => throw _privateConstructorUsedError;
 
   /// [element] Field to create in the context.
   String? get element => throw _privateConstructorUsedError;
 
   /// [elementElement] ("_element") Extensions for element
   @JsonKey(name: '_element')
-  Element? get elementElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get elementElement => throw _privateConstructorUsedError;
 
   /// [variable] Named context for field, if desired, and a field is specified.
   FhirId? get variable => throw _privateConstructorUsedError;
 
   /// [variableElement] ("_variable") Extensions for variable
   @JsonKey(name: '_variable')
-  Element? get variableElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get variableElement => throw _privateConstructorUsedError;
 
   /// [listMode] If field is a list, how to manage the list.
   List<FhirCode>? get listMode => throw _privateConstructorUsedError;
@@ -44484,14 +44626,14 @@ mixin _$StructureMapTarget {
 
   /// [listRuleIdElement] ("_listRuleId") Extensions for listRuleId
   @JsonKey(name: '_listRuleId')
-  Element? get listRuleIdElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get listRuleIdElement => throw _privateConstructorUsedError;
 
   /// [transform] How the data is copied / created.
   FhirCode? get transform => throw _privateConstructorUsedError;
 
   /// [transformElement] ("_transform") Extensions for transform
   @JsonKey(name: '_transform')
-  Element? get transformElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get transformElement => throw _privateConstructorUsedError;
 
   /// [parameter] Parameters to the transform.
   List<StructureMapParameter>? get parameter =>
@@ -44514,17 +44656,17 @@ abstract class $StructureMapTargetCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? context,
-      @JsonKey(name: '_context') Element? contextElement,
+      @JsonKey(name: '_context') PrimitiveElement? contextElement,
       String? element,
-      @JsonKey(name: '_element') Element? elementElement,
+      @JsonKey(name: '_element') PrimitiveElement? elementElement,
       FhirId? variable,
-      @JsonKey(name: '_variable') Element? variableElement,
+      @JsonKey(name: '_variable') PrimitiveElement? variableElement,
       List<FhirCode>? listMode,
       @JsonKey(name: '_listMode') List<Element>? listModeElement,
       FhirId? listRuleId,
-      @JsonKey(name: '_listRuleId') Element? listRuleIdElement,
+      @JsonKey(name: '_listRuleId') PrimitiveElement? listRuleIdElement,
       FhirCode? transform,
-      @JsonKey(name: '_transform') Element? transformElement,
+      @JsonKey(name: '_transform') PrimitiveElement? transformElement,
       List<StructureMapParameter>? parameter});
 }
 
@@ -44578,7 +44720,7 @@ class _$StructureMapTargetCopyWithImpl<$Res, $Val extends StructureMapTarget>
       contextElement: freezed == contextElement
           ? _value.contextElement
           : contextElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       element: freezed == element
           ? _value.element
           : element // ignore: cast_nullable_to_non_nullable
@@ -44586,7 +44728,7 @@ class _$StructureMapTargetCopyWithImpl<$Res, $Val extends StructureMapTarget>
       elementElement: freezed == elementElement
           ? _value.elementElement
           : elementElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       variable: freezed == variable
           ? _value.variable
           : variable // ignore: cast_nullable_to_non_nullable
@@ -44594,7 +44736,7 @@ class _$StructureMapTargetCopyWithImpl<$Res, $Val extends StructureMapTarget>
       variableElement: freezed == variableElement
           ? _value.variableElement
           : variableElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       listMode: freezed == listMode
           ? _value.listMode
           : listMode // ignore: cast_nullable_to_non_nullable
@@ -44610,7 +44752,7 @@ class _$StructureMapTargetCopyWithImpl<$Res, $Val extends StructureMapTarget>
       listRuleIdElement: freezed == listRuleIdElement
           ? _value.listRuleIdElement
           : listRuleIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       transform: freezed == transform
           ? _value.transform
           : transform // ignore: cast_nullable_to_non_nullable
@@ -44618,7 +44760,7 @@ class _$StructureMapTargetCopyWithImpl<$Res, $Val extends StructureMapTarget>
       transformElement: freezed == transformElement
           ? _value.transformElement
           : transformElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       parameter: freezed == parameter
           ? _value.parameter
           : parameter // ignore: cast_nullable_to_non_nullable
@@ -44640,17 +44782,17 @@ abstract class _$$StructureMapTargetImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? context,
-      @JsonKey(name: '_context') Element? contextElement,
+      @JsonKey(name: '_context') PrimitiveElement? contextElement,
       String? element,
-      @JsonKey(name: '_element') Element? elementElement,
+      @JsonKey(name: '_element') PrimitiveElement? elementElement,
       FhirId? variable,
-      @JsonKey(name: '_variable') Element? variableElement,
+      @JsonKey(name: '_variable') PrimitiveElement? variableElement,
       List<FhirCode>? listMode,
       @JsonKey(name: '_listMode') List<Element>? listModeElement,
       FhirId? listRuleId,
-      @JsonKey(name: '_listRuleId') Element? listRuleIdElement,
+      @JsonKey(name: '_listRuleId') PrimitiveElement? listRuleIdElement,
       FhirCode? transform,
-      @JsonKey(name: '_transform') Element? transformElement,
+      @JsonKey(name: '_transform') PrimitiveElement? transformElement,
       List<StructureMapParameter>? parameter});
 }
 
@@ -44702,7 +44844,7 @@ class __$$StructureMapTargetImplCopyWithImpl<$Res>
       contextElement: freezed == contextElement
           ? _value.contextElement
           : contextElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       element: freezed == element
           ? _value.element
           : element // ignore: cast_nullable_to_non_nullable
@@ -44710,7 +44852,7 @@ class __$$StructureMapTargetImplCopyWithImpl<$Res>
       elementElement: freezed == elementElement
           ? _value.elementElement
           : elementElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       variable: freezed == variable
           ? _value.variable
           : variable // ignore: cast_nullable_to_non_nullable
@@ -44718,7 +44860,7 @@ class __$$StructureMapTargetImplCopyWithImpl<$Res>
       variableElement: freezed == variableElement
           ? _value.variableElement
           : variableElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       listMode: freezed == listMode
           ? _value._listMode
           : listMode // ignore: cast_nullable_to_non_nullable
@@ -44734,7 +44876,7 @@ class __$$StructureMapTargetImplCopyWithImpl<$Res>
       listRuleIdElement: freezed == listRuleIdElement
           ? _value.listRuleIdElement
           : listRuleIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       transform: freezed == transform
           ? _value.transform
           : transform // ignore: cast_nullable_to_non_nullable
@@ -44742,7 +44884,7 @@ class __$$StructureMapTargetImplCopyWithImpl<$Res>
       transformElement: freezed == transformElement
           ? _value.transformElement
           : transformElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       parameter: freezed == parameter
           ? _value._parameter
           : parameter // ignore: cast_nullable_to_non_nullable
@@ -44853,7 +44995,7 @@ class _$StructureMapTargetImpl extends _StructureMapTarget {
   /// [contextElement] ("_context") Extensions for context
   @override
   @JsonKey(name: '_context')
-  final Element? contextElement;
+  final PrimitiveElement? contextElement;
 
   /// [element] Field to create in the context.
   @override
@@ -44862,7 +45004,7 @@ class _$StructureMapTargetImpl extends _StructureMapTarget {
   /// [elementElement] ("_element") Extensions for element
   @override
   @JsonKey(name: '_element')
-  final Element? elementElement;
+  final PrimitiveElement? elementElement;
 
   /// [variable] Named context for field, if desired, and a field is specified.
   @override
@@ -44871,7 +45013,7 @@ class _$StructureMapTargetImpl extends _StructureMapTarget {
   /// [variableElement] ("_variable") Extensions for variable
   @override
   @JsonKey(name: '_variable')
-  final Element? variableElement;
+  final PrimitiveElement? variableElement;
 
   /// [listMode] If field is a list, how to manage the list.
   final List<FhirCode>? _listMode;
@@ -44907,7 +45049,7 @@ class _$StructureMapTargetImpl extends _StructureMapTarget {
   /// [listRuleIdElement] ("_listRuleId") Extensions for listRuleId
   @override
   @JsonKey(name: '_listRuleId')
-  final Element? listRuleIdElement;
+  final PrimitiveElement? listRuleIdElement;
 
   /// [transform] How the data is copied / created.
   @override
@@ -44916,7 +45058,7 @@ class _$StructureMapTargetImpl extends _StructureMapTarget {
   /// [transformElement] ("_transform") Extensions for transform
   @override
   @JsonKey(name: '_transform')
-  final Element? transformElement;
+  final PrimitiveElement? transformElement;
 
   /// [parameter] Parameters to the transform.
   final List<StructureMapParameter>? _parameter;
@@ -45013,17 +45155,17 @@ abstract class _StructureMapTarget extends StructureMapTarget {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final String? context,
-      @JsonKey(name: '_context') final Element? contextElement,
+      @JsonKey(name: '_context') final PrimitiveElement? contextElement,
       final String? element,
-      @JsonKey(name: '_element') final Element? elementElement,
+      @JsonKey(name: '_element') final PrimitiveElement? elementElement,
       final FhirId? variable,
-      @JsonKey(name: '_variable') final Element? variableElement,
+      @JsonKey(name: '_variable') final PrimitiveElement? variableElement,
       final List<FhirCode>? listMode,
       @JsonKey(name: '_listMode') final List<Element>? listModeElement,
       final FhirId? listRuleId,
-      @JsonKey(name: '_listRuleId') final Element? listRuleIdElement,
+      @JsonKey(name: '_listRuleId') final PrimitiveElement? listRuleIdElement,
       final FhirCode? transform,
-      @JsonKey(name: '_transform') final Element? transformElement,
+      @JsonKey(name: '_transform') final PrimitiveElement? transformElement,
       final List<StructureMapParameter>? parameter}) = _$StructureMapTargetImpl;
   const _StructureMapTarget._() : super._();
 
@@ -45068,7 +45210,7 @@ abstract class _StructureMapTarget extends StructureMapTarget {
 
   /// [contextElement] ("_context") Extensions for context
   @JsonKey(name: '_context')
-  Element? get contextElement;
+  PrimitiveElement? get contextElement;
   @override
 
   /// [element] Field to create in the context.
@@ -45077,7 +45219,7 @@ abstract class _StructureMapTarget extends StructureMapTarget {
 
   /// [elementElement] ("_element") Extensions for element
   @JsonKey(name: '_element')
-  Element? get elementElement;
+  PrimitiveElement? get elementElement;
   @override
 
   /// [variable] Named context for field, if desired, and a field is specified.
@@ -45086,7 +45228,7 @@ abstract class _StructureMapTarget extends StructureMapTarget {
 
   /// [variableElement] ("_variable") Extensions for variable
   @JsonKey(name: '_variable')
-  Element? get variableElement;
+  PrimitiveElement? get variableElement;
   @override
 
   /// [listMode] If field is a list, how to manage the list.
@@ -45104,7 +45246,7 @@ abstract class _StructureMapTarget extends StructureMapTarget {
 
   /// [listRuleIdElement] ("_listRuleId") Extensions for listRuleId
   @JsonKey(name: '_listRuleId')
-  Element? get listRuleIdElement;
+  PrimitiveElement? get listRuleIdElement;
   @override
 
   /// [transform] How the data is copied / created.
@@ -45113,7 +45255,7 @@ abstract class _StructureMapTarget extends StructureMapTarget {
 
   /// [transformElement] ("_transform") Extensions for transform
   @JsonKey(name: '_transform')
-  Element? get transformElement;
+  PrimitiveElement? get transformElement;
   @override
 
   /// [parameter] Parameters to the transform.
@@ -45164,56 +45306,61 @@ mixin _$StructureMapParameter {
 
   /// [valueIdElement] ("_valueId") Extensions for valueId
   @JsonKey(name: '_valueId')
-  Element? get valueIdElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueIdElement => throw _privateConstructorUsedError;
 
   /// [valueString] Parameter value - variable or literal.
   String? get valueString => throw _privateConstructorUsedError;
 
   /// [valueStringElement] ("_valueString") Extensions for valueString
   @JsonKey(name: '_valueString')
-  Element? get valueStringElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueStringElement =>
+      throw _privateConstructorUsedError;
 
   /// [valueBoolean] Parameter value - variable or literal.
   FhirBoolean? get valueBoolean => throw _privateConstructorUsedError;
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @JsonKey(name: '_valueBoolean')
-  Element? get valueBooleanElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueBooleanElement =>
+      throw _privateConstructorUsedError;
 
   /// [valueInteger] Parameter value - variable or literal.
   FhirInteger? get valueInteger => throw _privateConstructorUsedError;
 
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
   @JsonKey(name: '_valueInteger')
-  Element? get valueIntegerElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueIntegerElement =>
+      throw _privateConstructorUsedError;
 
   /// [valueDecimal] Parameter value - variable or literal.
   FhirDecimal? get valueDecimal => throw _privateConstructorUsedError;
 
   /// [valueDecimalElement] ("_valueDecimal") Extensions for valueDecimal
   @JsonKey(name: '_valueDecimal')
-  Element? get valueDecimalElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueDecimalElement =>
+      throw _privateConstructorUsedError;
 
   /// [valueDate] Parameter value - variable or literal.
   FhirDate? get valueDate => throw _privateConstructorUsedError;
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @JsonKey(name: '_valueDate')
-  Element? get valueDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueDateElement => throw _privateConstructorUsedError;
 
   /// [valueTime] Parameter value - variable or literal.
   FhirTime? get valueTime => throw _privateConstructorUsedError;
 
   /// [valueTimeElement] ("_valueTime") Extensions for valueTime
   @JsonKey(name: '_valueTime')
-  Element? get valueTimeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueTimeElement => throw _privateConstructorUsedError;
 
   /// [valueDateTime] Parameter value - variable or literal.
   FhirDateTime? get valueDateTime => throw _privateConstructorUsedError;
 
   /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
   @JsonKey(name: '_valueDateTime')
-  Element? get valueDateTimeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueDateTimeElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -45232,21 +45379,21 @@ abstract class $StructureMapParameterCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? valueId,
-      @JsonKey(name: '_valueId') Element? valueIdElement,
+      @JsonKey(name: '_valueId') PrimitiveElement? valueIdElement,
       String? valueString,
-      @JsonKey(name: '_valueString') Element? valueStringElement,
+      @JsonKey(name: '_valueString') PrimitiveElement? valueStringElement,
       FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
       FhirInteger? valueInteger,
-      @JsonKey(name: '_valueInteger') Element? valueIntegerElement,
+      @JsonKey(name: '_valueInteger') PrimitiveElement? valueIntegerElement,
       FhirDecimal? valueDecimal,
-      @JsonKey(name: '_valueDecimal') Element? valueDecimalElement,
+      @JsonKey(name: '_valueDecimal') PrimitiveElement? valueDecimalElement,
       FhirDate? valueDate,
-      @JsonKey(name: '_valueDate') Element? valueDateElement,
+      @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
       FhirTime? valueTime,
-      @JsonKey(name: '_valueTime') Element? valueTimeElement,
+      @JsonKey(name: '_valueTime') PrimitiveElement? valueTimeElement,
       FhirDateTime? valueDateTime,
-      @JsonKey(name: '_valueDateTime') Element? valueDateTimeElement});
+      @JsonKey(name: '_valueDateTime') PrimitiveElement? valueDateTimeElement});
 }
 
 /// @nodoc
@@ -45303,7 +45450,7 @@ class _$StructureMapParameterCopyWithImpl<$Res,
       valueIdElement: freezed == valueIdElement
           ? _value.valueIdElement
           : valueIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueString: freezed == valueString
           ? _value.valueString
           : valueString // ignore: cast_nullable_to_non_nullable
@@ -45311,7 +45458,7 @@ class _$StructureMapParameterCopyWithImpl<$Res,
       valueStringElement: freezed == valueStringElement
           ? _value.valueStringElement
           : valueStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueBoolean: freezed == valueBoolean
           ? _value.valueBoolean
           : valueBoolean // ignore: cast_nullable_to_non_nullable
@@ -45319,7 +45466,7 @@ class _$StructureMapParameterCopyWithImpl<$Res,
       valueBooleanElement: freezed == valueBooleanElement
           ? _value.valueBooleanElement
           : valueBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueInteger: freezed == valueInteger
           ? _value.valueInteger
           : valueInteger // ignore: cast_nullable_to_non_nullable
@@ -45327,7 +45474,7 @@ class _$StructureMapParameterCopyWithImpl<$Res,
       valueIntegerElement: freezed == valueIntegerElement
           ? _value.valueIntegerElement
           : valueIntegerElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueDecimal: freezed == valueDecimal
           ? _value.valueDecimal
           : valueDecimal // ignore: cast_nullable_to_non_nullable
@@ -45335,7 +45482,7 @@ class _$StructureMapParameterCopyWithImpl<$Res,
       valueDecimalElement: freezed == valueDecimalElement
           ? _value.valueDecimalElement
           : valueDecimalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueDate: freezed == valueDate
           ? _value.valueDate
           : valueDate // ignore: cast_nullable_to_non_nullable
@@ -45343,7 +45490,7 @@ class _$StructureMapParameterCopyWithImpl<$Res,
       valueDateElement: freezed == valueDateElement
           ? _value.valueDateElement
           : valueDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueTime: freezed == valueTime
           ? _value.valueTime
           : valueTime // ignore: cast_nullable_to_non_nullable
@@ -45351,7 +45498,7 @@ class _$StructureMapParameterCopyWithImpl<$Res,
       valueTimeElement: freezed == valueTimeElement
           ? _value.valueTimeElement
           : valueTimeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueDateTime: freezed == valueDateTime
           ? _value.valueDateTime
           : valueDateTime // ignore: cast_nullable_to_non_nullable
@@ -45359,7 +45506,7 @@ class _$StructureMapParameterCopyWithImpl<$Res,
       valueDateTimeElement: freezed == valueDateTimeElement
           ? _value.valueDateTimeElement
           : valueDateTimeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -45378,21 +45525,21 @@ abstract class _$$StructureMapParameterImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? valueId,
-      @JsonKey(name: '_valueId') Element? valueIdElement,
+      @JsonKey(name: '_valueId') PrimitiveElement? valueIdElement,
       String? valueString,
-      @JsonKey(name: '_valueString') Element? valueStringElement,
+      @JsonKey(name: '_valueString') PrimitiveElement? valueStringElement,
       FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
       FhirInteger? valueInteger,
-      @JsonKey(name: '_valueInteger') Element? valueIntegerElement,
+      @JsonKey(name: '_valueInteger') PrimitiveElement? valueIntegerElement,
       FhirDecimal? valueDecimal,
-      @JsonKey(name: '_valueDecimal') Element? valueDecimalElement,
+      @JsonKey(name: '_valueDecimal') PrimitiveElement? valueDecimalElement,
       FhirDate? valueDate,
-      @JsonKey(name: '_valueDate') Element? valueDateElement,
+      @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
       FhirTime? valueTime,
-      @JsonKey(name: '_valueTime') Element? valueTimeElement,
+      @JsonKey(name: '_valueTime') PrimitiveElement? valueTimeElement,
       FhirDateTime? valueDateTime,
-      @JsonKey(name: '_valueDateTime') Element? valueDateTimeElement});
+      @JsonKey(name: '_valueDateTime') PrimitiveElement? valueDateTimeElement});
 }
 
 /// @nodoc
@@ -45447,7 +45594,7 @@ class __$$StructureMapParameterImplCopyWithImpl<$Res>
       valueIdElement: freezed == valueIdElement
           ? _value.valueIdElement
           : valueIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueString: freezed == valueString
           ? _value.valueString
           : valueString // ignore: cast_nullable_to_non_nullable
@@ -45455,7 +45602,7 @@ class __$$StructureMapParameterImplCopyWithImpl<$Res>
       valueStringElement: freezed == valueStringElement
           ? _value.valueStringElement
           : valueStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueBoolean: freezed == valueBoolean
           ? _value.valueBoolean
           : valueBoolean // ignore: cast_nullable_to_non_nullable
@@ -45463,7 +45610,7 @@ class __$$StructureMapParameterImplCopyWithImpl<$Res>
       valueBooleanElement: freezed == valueBooleanElement
           ? _value.valueBooleanElement
           : valueBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueInteger: freezed == valueInteger
           ? _value.valueInteger
           : valueInteger // ignore: cast_nullable_to_non_nullable
@@ -45471,7 +45618,7 @@ class __$$StructureMapParameterImplCopyWithImpl<$Res>
       valueIntegerElement: freezed == valueIntegerElement
           ? _value.valueIntegerElement
           : valueIntegerElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueDecimal: freezed == valueDecimal
           ? _value.valueDecimal
           : valueDecimal // ignore: cast_nullable_to_non_nullable
@@ -45479,7 +45626,7 @@ class __$$StructureMapParameterImplCopyWithImpl<$Res>
       valueDecimalElement: freezed == valueDecimalElement
           ? _value.valueDecimalElement
           : valueDecimalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueDate: freezed == valueDate
           ? _value.valueDate
           : valueDate // ignore: cast_nullable_to_non_nullable
@@ -45487,7 +45634,7 @@ class __$$StructureMapParameterImplCopyWithImpl<$Res>
       valueDateElement: freezed == valueDateElement
           ? _value.valueDateElement
           : valueDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueTime: freezed == valueTime
           ? _value.valueTime
           : valueTime // ignore: cast_nullable_to_non_nullable
@@ -45495,7 +45642,7 @@ class __$$StructureMapParameterImplCopyWithImpl<$Res>
       valueTimeElement: freezed == valueTimeElement
           ? _value.valueTimeElement
           : valueTimeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueDateTime: freezed == valueDateTime
           ? _value.valueDateTime
           : valueDateTime // ignore: cast_nullable_to_non_nullable
@@ -45503,7 +45650,7 @@ class __$$StructureMapParameterImplCopyWithImpl<$Res>
       valueDateTimeElement: freezed == valueDateTimeElement
           ? _value.valueDateTimeElement
           : valueDateTimeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -45610,7 +45757,7 @@ class _$StructureMapParameterImpl extends _StructureMapParameter {
   /// [valueIdElement] ("_valueId") Extensions for valueId
   @override
   @JsonKey(name: '_valueId')
-  final Element? valueIdElement;
+  final PrimitiveElement? valueIdElement;
 
   /// [valueString] Parameter value - variable or literal.
   @override
@@ -45619,7 +45766,7 @@ class _$StructureMapParameterImpl extends _StructureMapParameter {
   /// [valueStringElement] ("_valueString") Extensions for valueString
   @override
   @JsonKey(name: '_valueString')
-  final Element? valueStringElement;
+  final PrimitiveElement? valueStringElement;
 
   /// [valueBoolean] Parameter value - variable or literal.
   @override
@@ -45628,7 +45775,7 @@ class _$StructureMapParameterImpl extends _StructureMapParameter {
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @override
   @JsonKey(name: '_valueBoolean')
-  final Element? valueBooleanElement;
+  final PrimitiveElement? valueBooleanElement;
 
   /// [valueInteger] Parameter value - variable or literal.
   @override
@@ -45637,7 +45784,7 @@ class _$StructureMapParameterImpl extends _StructureMapParameter {
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
   @override
   @JsonKey(name: '_valueInteger')
-  final Element? valueIntegerElement;
+  final PrimitiveElement? valueIntegerElement;
 
   /// [valueDecimal] Parameter value - variable or literal.
   @override
@@ -45646,7 +45793,7 @@ class _$StructureMapParameterImpl extends _StructureMapParameter {
   /// [valueDecimalElement] ("_valueDecimal") Extensions for valueDecimal
   @override
   @JsonKey(name: '_valueDecimal')
-  final Element? valueDecimalElement;
+  final PrimitiveElement? valueDecimalElement;
 
   /// [valueDate] Parameter value - variable or literal.
   @override
@@ -45655,7 +45802,7 @@ class _$StructureMapParameterImpl extends _StructureMapParameter {
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @override
   @JsonKey(name: '_valueDate')
-  final Element? valueDateElement;
+  final PrimitiveElement? valueDateElement;
 
   /// [valueTime] Parameter value - variable or literal.
   @override
@@ -45664,7 +45811,7 @@ class _$StructureMapParameterImpl extends _StructureMapParameter {
   /// [valueTimeElement] ("_valueTime") Extensions for valueTime
   @override
   @JsonKey(name: '_valueTime')
-  final Element? valueTimeElement;
+  final PrimitiveElement? valueTimeElement;
 
   /// [valueDateTime] Parameter value - variable or literal.
   @override
@@ -45673,7 +45820,7 @@ class _$StructureMapParameterImpl extends _StructureMapParameter {
   /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
   @override
   @JsonKey(name: '_valueDateTime')
-  final Element? valueDateTimeElement;
+  final PrimitiveElement? valueDateTimeElement;
 
   @override
   String toString() {
@@ -45769,22 +45916,26 @@ abstract class _StructureMapParameter extends StructureMapParameter {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirId? valueId,
-      @JsonKey(name: '_valueId') final Element? valueIdElement,
+      @JsonKey(name: '_valueId') final PrimitiveElement? valueIdElement,
       final String? valueString,
-      @JsonKey(name: '_valueString') final Element? valueStringElement,
+      @JsonKey(name: '_valueString') final PrimitiveElement? valueStringElement,
       final FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') final Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean')
+      final PrimitiveElement? valueBooleanElement,
       final FhirInteger? valueInteger,
-      @JsonKey(name: '_valueInteger') final Element? valueIntegerElement,
+      @JsonKey(name: '_valueInteger')
+      final PrimitiveElement? valueIntegerElement,
       final FhirDecimal? valueDecimal,
-      @JsonKey(name: '_valueDecimal') final Element? valueDecimalElement,
+      @JsonKey(name: '_valueDecimal')
+      final PrimitiveElement? valueDecimalElement,
       final FhirDate? valueDate,
-      @JsonKey(name: '_valueDate') final Element? valueDateElement,
+      @JsonKey(name: '_valueDate') final PrimitiveElement? valueDateElement,
       final FhirTime? valueTime,
-      @JsonKey(name: '_valueTime') final Element? valueTimeElement,
+      @JsonKey(name: '_valueTime') final PrimitiveElement? valueTimeElement,
       final FhirDateTime? valueDateTime,
       @JsonKey(name: '_valueDateTime')
-      final Element? valueDateTimeElement}) = _$StructureMapParameterImpl;
+      final PrimitiveElement?
+          valueDateTimeElement}) = _$StructureMapParameterImpl;
   const _StructureMapParameter._() : super._();
 
   factory _StructureMapParameter.fromJson(Map<String, dynamic> json) =
@@ -45828,7 +45979,7 @@ abstract class _StructureMapParameter extends StructureMapParameter {
 
   /// [valueIdElement] ("_valueId") Extensions for valueId
   @JsonKey(name: '_valueId')
-  Element? get valueIdElement;
+  PrimitiveElement? get valueIdElement;
   @override
 
   /// [valueString] Parameter value - variable or literal.
@@ -45837,7 +45988,7 @@ abstract class _StructureMapParameter extends StructureMapParameter {
 
   /// [valueStringElement] ("_valueString") Extensions for valueString
   @JsonKey(name: '_valueString')
-  Element? get valueStringElement;
+  PrimitiveElement? get valueStringElement;
   @override
 
   /// [valueBoolean] Parameter value - variable or literal.
@@ -45846,7 +45997,7 @@ abstract class _StructureMapParameter extends StructureMapParameter {
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @JsonKey(name: '_valueBoolean')
-  Element? get valueBooleanElement;
+  PrimitiveElement? get valueBooleanElement;
   @override
 
   /// [valueInteger] Parameter value - variable or literal.
@@ -45855,7 +46006,7 @@ abstract class _StructureMapParameter extends StructureMapParameter {
 
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
   @JsonKey(name: '_valueInteger')
-  Element? get valueIntegerElement;
+  PrimitiveElement? get valueIntegerElement;
   @override
 
   /// [valueDecimal] Parameter value - variable or literal.
@@ -45864,7 +46015,7 @@ abstract class _StructureMapParameter extends StructureMapParameter {
 
   /// [valueDecimalElement] ("_valueDecimal") Extensions for valueDecimal
   @JsonKey(name: '_valueDecimal')
-  Element? get valueDecimalElement;
+  PrimitiveElement? get valueDecimalElement;
   @override
 
   /// [valueDate] Parameter value - variable or literal.
@@ -45873,7 +46024,7 @@ abstract class _StructureMapParameter extends StructureMapParameter {
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @JsonKey(name: '_valueDate')
-  Element? get valueDateElement;
+  PrimitiveElement? get valueDateElement;
   @override
 
   /// [valueTime] Parameter value - variable or literal.
@@ -45882,7 +46033,7 @@ abstract class _StructureMapParameter extends StructureMapParameter {
 
   /// [valueTimeElement] ("_valueTime") Extensions for valueTime
   @JsonKey(name: '_valueTime')
-  Element? get valueTimeElement;
+  PrimitiveElement? get valueTimeElement;
   @override
 
   /// [valueDateTime] Parameter value - variable or literal.
@@ -45891,7 +46042,7 @@ abstract class _StructureMapParameter extends StructureMapParameter {
 
   /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
   @JsonKey(name: '_valueDateTime')
-  Element? get valueDateTimeElement;
+  PrimitiveElement? get valueDateTimeElement;
   @override
   @JsonKey(ignore: true)
   _$$StructureMapParameterImplCopyWith<_$StructureMapParameterImpl>
@@ -45938,7 +46089,7 @@ mixin _$StructureMapDependent {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [parameter] Parameter to pass to the rule or group.
   List<StructureMapParameter> get parameter =>
@@ -45961,7 +46112,7 @@ abstract class $StructureMapDependentCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       List<StructureMapParameter> parameter});
 }
 
@@ -46006,7 +46157,7 @@ class _$StructureMapDependentCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       parameter: null == parameter
           ? _value.parameter
           : parameter // ignore: cast_nullable_to_non_nullable
@@ -46029,7 +46180,7 @@ abstract class _$$StructureMapDependentImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       List<StructureMapParameter> parameter});
 }
 
@@ -46072,7 +46223,7 @@ class __$$StructureMapDependentImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       parameter: null == parameter
           ? _value._parameter
           : parameter // ignore: cast_nullable_to_non_nullable
@@ -46171,7 +46322,7 @@ class _$StructureMapDependentImpl extends _StructureMapDependent {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [parameter] Parameter to pass to the rule or group.
   final List<StructureMapParameter> _parameter;
@@ -46238,7 +46389,7 @@ abstract class _StructureMapDependent extends StructureMapDependent {
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final FhirId? name,
-          @JsonKey(name: '_name') final Element? nameElement,
+          @JsonKey(name: '_name') final PrimitiveElement? nameElement,
           required final List<StructureMapParameter> parameter}) =
       _$StructureMapDependentImpl;
   const _StructureMapDependent._() : super._();
@@ -46284,7 +46435,7 @@ abstract class _StructureMapDependent extends StructureMapDependent {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [parameter] Parameter to pass to the rule or group.

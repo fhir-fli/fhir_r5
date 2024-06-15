@@ -18,7 +18,7 @@ part 'support.enums.dart';
 ///  health care products and services. Includes both insurance and
 ///  self-payment.
 @freezed
-class Coverage with Resource, _$Coverage {
+class Coverage with _$Coverage implements DomainResource {
   /// [Coverage] Financial instrument which may be used to reimburse or pay for
   ///  health care products and services. Includes both insurance and
   ///  self-payment.
@@ -179,13 +179,13 @@ class Coverage with Resource, _$Coverage {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -231,14 +231,14 @@ class Coverage with Resource, _$Coverage {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [kind] The nature of the coverage be it insurance, or cash payment such as
     ///  self-pay.
     FhirCode? kind,
 
     /// [kindElement] ("_kind") Extensions for kind
-    @JsonKey(name: '_kind') Element? kindElement,
+    @JsonKey(name: '_kind') PrimitiveElement? kindElement,
 
     /// [paymentBy] Link to the paying party and optionally what specifically they
     ///  will be responsible to pay.
@@ -268,7 +268,7 @@ class Coverage with Resource, _$Coverage {
     String? dependent,
 
     /// [dependentElement] ("_dependent") Extensions for dependent
-    @JsonKey(name: '_dependent') Element? dependentElement,
+    @JsonKey(name: '_dependent') PrimitiveElement? dependentElement,
 
     /// [relationship] The relationship of beneficiary (patient) to the subscriber.
     CodeableConcept? relationship,
@@ -295,7 +295,7 @@ class Coverage with Resource, _$Coverage {
     FhirPositiveInt? order,
 
     /// [orderElement] ("_order") Extensions for order
-    @JsonKey(name: '_order') Element? orderElement,
+    @JsonKey(name: '_order') PrimitiveElement? orderElement,
 
     /// [network] The insurer-specific identifier for the insurer-defined network
     ///  of providers to which the beneficiary may seek treatment which will be
@@ -304,7 +304,7 @@ class Coverage with Resource, _$Coverage {
     String? network,
 
     /// [networkElement] ("_network") Extensions for network
-    @JsonKey(name: '_network') Element? networkElement,
+    @JsonKey(name: '_network') PrimitiveElement? networkElement,
 
     /// [costToBeneficiary] A suite of codes indicating the cost category and
     ///  associated amount which have been detailed in the policy and may have been
@@ -317,7 +317,7 @@ class Coverage with Resource, _$Coverage {
     FhirBoolean? subrogation,
 
     /// [subrogationElement] ("_subrogation") Extensions for subrogation
-    @JsonKey(name: '_subrogation') Element? subrogationElement,
+    @JsonKey(name: '_subrogation') PrimitiveElement? subrogationElement,
 
     /// [contract] The policy(s) which constitute this insurance coverage.
     List<Reference>? contract,
@@ -371,7 +371,7 @@ class Coverage with Resource, _$Coverage {
 ///  pay for health care products and services. Includes both insurance and
 ///  self-payment.
 @freezed
-class CoveragePaymentBy with BackboneType, _$CoveragePaymentBy {
+class CoveragePaymentBy with _$CoveragePaymentBy implements BackboneType {
   /// [CoveragePaymentBy] Financial instrument which may be used to reimburse or
   ///  pay for health care products and services. Includes both insurance and
   ///  self-payment.
@@ -446,7 +446,7 @@ class CoveragePaymentBy with BackboneType, _$CoveragePaymentBy {
     String? responsibility,
 
     /// [responsibilityElement] ("_responsibility") Extensions for responsibility
-    @JsonKey(name: '_responsibility') Element? responsibilityElement,
+    @JsonKey(name: '_responsibility') PrimitiveElement? responsibilityElement,
   }) = _CoveragePaymentBy;
 
   @override
@@ -484,7 +484,7 @@ class CoveragePaymentBy with BackboneType, _$CoveragePaymentBy {
 ///  for health care products and services. Includes both insurance and
 ///  self-payment.
 @freezed
-class CoverageClass with BackboneType, _$CoverageClass {
+class CoverageClass with _$CoverageClass implements BackboneType {
   /// [CoverageClass] Financial instrument which may be used to reimburse or pay
   ///  for health care products and services. Includes both insurance and
   ///  self-payment.
@@ -568,7 +568,7 @@ class CoverageClass with BackboneType, _$CoverageClass {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
   }) = _CoverageClass;
 
   @override
@@ -606,7 +606,9 @@ class CoverageClass with BackboneType, _$CoverageClass {
 ///  reimburse or pay for health care products and services. Includes both
 ///  insurance and self-payment.
 @freezed
-class CoverageCostToBeneficiary with BackboneType, _$CoverageCostToBeneficiary {
+class CoverageCostToBeneficiary
+    with _$CoverageCostToBeneficiary
+    implements BackboneType {
   /// [CoverageCostToBeneficiary] Financial instrument which may be used to
   ///  reimburse or pay for health care products and services. Includes both
   ///  insurance and self-payment.
@@ -750,7 +752,7 @@ class CoverageCostToBeneficiary with BackboneType, _$CoverageCostToBeneficiary {
 ///  pay for health care products and services. Includes both insurance and
 ///  self-payment.
 @freezed
-class CoverageException with BackboneType, _$CoverageException {
+class CoverageException with _$CoverageException implements BackboneType {
   /// [CoverageException] Financial instrument which may be used to reimburse or
   ///  pay for health care products and services. Includes both insurance and
   ///  self-payment.
@@ -858,7 +860,9 @@ class CoverageException with BackboneType, _$CoverageException {
 ///  regarding whether the stated coverage is valid and in-force and optionally
 ///  to provide the insurance details of the policy.
 @freezed
-class CoverageEligibilityRequest with Resource, _$CoverageEligibilityRequest {
+class CoverageEligibilityRequest
+    with _$CoverageEligibilityRequest
+    implements DomainResource {
   /// [CoverageEligibilityRequest] The CoverageEligibilityRequest provides
   ///  patient and insurance coverage information to an insurer for them to
   ///  respond, in the form of an CoverageEligibilityResponse, with information
@@ -1000,13 +1004,13 @@ class CoverageEligibilityRequest with Resource, _$CoverageEligibilityRequest {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1053,7 +1057,7 @@ class CoverageEligibilityRequest with Resource, _$CoverageEligibilityRequest {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [priority] When the requestor expects the processor to complete processing.
     CodeableConcept? priority,
@@ -1080,7 +1084,7 @@ class CoverageEligibilityRequest with Resource, _$CoverageEligibilityRequest {
     FhirDate? servicedDate,
 
     /// [servicedDateElement] ("_servicedDate") Extensions for servicedDate
-    @JsonKey(name: '_servicedDate') Element? servicedDateElement,
+    @JsonKey(name: '_servicedDate') PrimitiveElement? servicedDateElement,
 
     /// [servicedPeriod] The date or dates when the enclosed suite of services were
     ///  performed or completed.
@@ -1090,7 +1094,7 @@ class CoverageEligibilityRequest with Resource, _$CoverageEligibilityRequest {
     FhirDateTime? created,
 
     /// [createdElement] ("_created") Extensions for created
-    @JsonKey(name: '_created') Element? createdElement,
+    @JsonKey(name: '_created') PrimitiveElement? createdElement,
 
     /// [enterer] Person who created the request.
     Reference? enterer,
@@ -1248,7 +1252,7 @@ class CoverageEligibilityRequestEvent
     FhirDateTime? whenDateTime,
 
     /// [whenDateTimeElement] ("_whenDateTime") Extensions for whenDateTime
-    @JsonKey(name: '_whenDateTime') Element? whenDateTimeElement,
+    @JsonKey(name: '_whenDateTime') PrimitiveElement? whenDateTimeElement,
 
     /// [whenPeriod] A date or period in the past or future indicating when the
     ///  event occurred or is expectd to occur.
@@ -1376,7 +1380,7 @@ class CoverageEligibilityRequestSupportingInfo
     FhirPositiveInt? sequence,
 
     /// [sequenceElement] ("_sequence") Extensions for sequence
-    @JsonKey(name: '_sequence') Element? sequenceElement,
+    @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
 
     /// [information] Additional data or information such as resources, documents,
     ///  images etc. including references to the data or the actual inclusion of
@@ -1388,7 +1392,7 @@ class CoverageEligibilityRequestSupportingInfo
     FhirBoolean? appliesToAll,
 
     /// [appliesToAllElement] ("_appliesToAll") Extensions for appliesToAll
-    @JsonKey(name: '_appliesToAll') Element? appliesToAllElement,
+    @JsonKey(name: '_appliesToAll') PrimitiveElement? appliesToAllElement,
   }) = _CoverageEligibilityRequestSupportingInfo;
 
   @override
@@ -1518,7 +1522,7 @@ class CoverageEligibilityRequestInsurance
     FhirBoolean? focal,
 
     /// [focalElement] ("_focal") Extensions for focal
-    @JsonKey(name: '_focal') Element? focalElement,
+    @JsonKey(name: '_focal') PrimitiveElement? focalElement,
 
     /// [coverage] Reference to the insurance card level information contained in
     ///  the Coverage resource. The coverage issuing insurer will use these details
@@ -1532,7 +1536,8 @@ class CoverageEligibilityRequestInsurance
 
     /// [businessArrangementElement] ("_businessArrangement") Extensions for
     ///  businessArrangement
-    @JsonKey(name: '_businessArrangement') Element? businessArrangementElement,
+    @JsonKey(name: '_businessArrangement')
+    PrimitiveElement? businessArrangementElement,
   }) = _CoverageEligibilityRequestInsurance;
 
   @override
@@ -1867,7 +1872,9 @@ class CoverageEligibilityRequestDiagnosis
 /// [CoverageEligibilityResponse] This resource provides eligibility and plan
 ///  details from the processing of an CoverageEligibilityRequest resource.
 @freezed
-class CoverageEligibilityResponse with Resource, _$CoverageEligibilityResponse {
+class CoverageEligibilityResponse
+    with _$CoverageEligibilityResponse
+    implements DomainResource {
   /// [CoverageEligibilityResponse] This resource provides eligibility and plan
   ///  details from the processing of an CoverageEligibilityRequest resource.
   const CoverageEligibilityResponse._();
@@ -2010,13 +2017,13 @@ class CoverageEligibilityResponse with Resource, _$CoverageEligibilityResponse {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -2063,7 +2070,7 @@ class CoverageEligibilityResponse with Resource, _$CoverageEligibilityResponse {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [purpose] Code to specify whether requesting: prior authorization
     ///  requirements for some service categories or billing codes; benefits for
@@ -2087,7 +2094,7 @@ class CoverageEligibilityResponse with Resource, _$CoverageEligibilityResponse {
     FhirDate? servicedDate,
 
     /// [servicedDateElement] ("_servicedDate") Extensions for servicedDate
-    @JsonKey(name: '_servicedDate') Element? servicedDateElement,
+    @JsonKey(name: '_servicedDate') PrimitiveElement? servicedDateElement,
 
     /// [servicedPeriod] The date or dates when the enclosed suite of services were
     ///  performed or completed.
@@ -2097,7 +2104,7 @@ class CoverageEligibilityResponse with Resource, _$CoverageEligibilityResponse {
     FhirDateTime? created,
 
     /// [createdElement] ("_created") Extensions for created
-    @JsonKey(name: '_created') Element? createdElement,
+    @JsonKey(name: '_created') PrimitiveElement? createdElement,
 
     /// [requestor] The provider which is responsible for the request.
     Reference? requestor,
@@ -2109,14 +2116,14 @@ class CoverageEligibilityResponse with Resource, _$CoverageEligibilityResponse {
     FhirCode? outcome,
 
     /// [outcomeElement] ("_outcome") Extensions for outcome
-    @JsonKey(name: '_outcome') Element? outcomeElement,
+    @JsonKey(name: '_outcome') PrimitiveElement? outcomeElement,
 
     /// [disposition] A human readable description of the status of the
     ///  adjudication.
     String? disposition,
 
     /// [dispositionElement] ("_disposition") Extensions for disposition
-    @JsonKey(name: '_disposition') Element? dispositionElement,
+    @JsonKey(name: '_disposition') PrimitiveElement? dispositionElement,
 
     /// [insurer] The Insurer who issued the coverage in question and is the author
     ///  of the response.
@@ -2131,7 +2138,7 @@ class CoverageEligibilityResponse with Resource, _$CoverageEligibilityResponse {
     String? preAuthRef,
 
     /// [preAuthRefElement] ("_preAuthRef") Extensions for preAuthRef
-    @JsonKey(name: '_preAuthRef') Element? preAuthRefElement,
+    @JsonKey(name: '_preAuthRef') PrimitiveElement? preAuthRefElement,
 
     /// [form] A code for the form to be used for printing the content.
     CodeableConcept? form,
@@ -2261,7 +2268,7 @@ class CoverageEligibilityResponseEvent
     FhirDateTime? whenDateTime,
 
     /// [whenDateTimeElement] ("_whenDateTime") Extensions for whenDateTime
-    @JsonKey(name: '_whenDateTime') Element? whenDateTimeElement,
+    @JsonKey(name: '_whenDateTime') PrimitiveElement? whenDateTimeElement,
 
     /// [whenPeriod] A date or period in the past or future indicating when the
     ///  event occurred or is expectd to occur.
@@ -2395,7 +2402,7 @@ class CoverageEligibilityResponseInsurance
     FhirBoolean? inforce,
 
     /// [inforceElement] ("_inforce") Extensions for inforce
-    @JsonKey(name: '_inforce') Element? inforceElement,
+    @JsonKey(name: '_inforce') PrimitiveElement? inforceElement,
 
     /// [benefitPeriod] The term of the benefits documented in this response.
     Period? benefitPeriod,
@@ -2574,19 +2581,19 @@ class CoverageEligibilityResponseItem
     FhirBoolean? excluded,
 
     /// [excludedElement] ("_excluded") Extensions for excluded
-    @JsonKey(name: '_excluded') Element? excludedElement,
+    @JsonKey(name: '_excluded') PrimitiveElement? excludedElement,
 
     /// [name] A short name or tag for the benefit.
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [description] A richer description of the benefit or services covered.
     String? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [network] Is a flag to indicate whether the benefits refer to in-network
     ///  providers or out-of-network providers.
@@ -2609,7 +2616,7 @@ class CoverageEligibilityResponseItem
     /// [authorizationRequiredElement] ("_authorizationRequired") Extensions for
     ///  authorizationRequired
     @JsonKey(name: '_authorizationRequired')
-    Element? authorizationRequiredElement,
+    PrimitiveElement? authorizationRequiredElement,
 
     /// [authorizationSupporting] Codes or comments regarding information or
     ///  actions associated with the preauthorization.
@@ -2621,7 +2628,8 @@ class CoverageEligibilityResponseItem
 
     /// [authorizationUrlElement] ("_authorizationUrl") Extensions for
     ///  authorizationUrl
-    @JsonKey(name: '_authorizationUrl') Element? authorizationUrlElement,
+    @JsonKey(name: '_authorizationUrl')
+    PrimitiveElement? authorizationUrlElement,
   }) = _CoverageEligibilityResponseItem;
 
   @override
@@ -2755,14 +2763,15 @@ class CoverageEligibilityResponseBenefit
 
     /// [allowedUnsignedIntElement] ("_allowedUnsignedInt") Extensions for
     ///  allowedUnsignedInt
-    @JsonKey(name: '_allowedUnsignedInt') Element? allowedUnsignedIntElement,
+    @JsonKey(name: '_allowedUnsignedInt')
+    PrimitiveElement? allowedUnsignedIntElement,
 
     /// [allowedString] The quantity of the benefit which is permitted under the
     ///  coverage.
     String? allowedString,
 
     /// [allowedStringElement] ("_allowedString") Extensions for allowedString
-    @JsonKey(name: '_allowedString') Element? allowedStringElement,
+    @JsonKey(name: '_allowedString') PrimitiveElement? allowedStringElement,
 
     /// [allowedMoney] The quantity of the benefit which is permitted under the
     ///  coverage.
@@ -2773,13 +2782,13 @@ class CoverageEligibilityResponseBenefit
     FhirUnsignedInt? usedUnsignedInt,
 
     /// [usedUnsignedIntElement] ("_usedUnsignedInt") Extensions for usedUnsignedInt
-    @JsonKey(name: '_usedUnsignedInt') Element? usedUnsignedIntElement,
+    @JsonKey(name: '_usedUnsignedInt') PrimitiveElement? usedUnsignedIntElement,
 
     /// [usedString] The quantity of the benefit which have been consumed to date.
     String? usedString,
 
     /// [usedStringElement] ("_usedString") Extensions for usedString
-    @JsonKey(name: '_usedString') Element? usedStringElement,
+    @JsonKey(name: '_usedString') PrimitiveElement? usedStringElement,
 
     /// [usedMoney] The quantity of the benefit which have been consumed to date.
     Money? usedMoney,
@@ -2942,7 +2951,7 @@ class CoverageEligibilityResponseError
 /// [EnrollmentRequest] This resource provides the insurance enrollment details
 ///  to the insurer regarding a specified coverage.
 @freezed
-class EnrollmentRequest with Resource, _$EnrollmentRequest {
+class EnrollmentRequest with _$EnrollmentRequest implements DomainResource {
   /// [EnrollmentRequest] This resource provides the insurance enrollment details
   ///  to the insurer regarding a specified coverage.
   const EnrollmentRequest._();
@@ -3045,13 +3054,13 @@ class EnrollmentRequest with Resource, _$EnrollmentRequest {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -3097,13 +3106,13 @@ class EnrollmentRequest with Resource, _$EnrollmentRequest {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [created] The date when this resource was created.
     FhirDateTime? created,
 
     /// [createdElement] ("_created") Extensions for created
-    @JsonKey(name: '_created') Element? createdElement,
+    @JsonKey(name: '_created') PrimitiveElement? createdElement,
 
     /// [insurer] The Insurer who is target  of the request.
     Reference? insurer,
@@ -3163,7 +3172,7 @@ class EnrollmentRequest with Resource, _$EnrollmentRequest {
 /// [EnrollmentResponse] This resource provides enrollment and plan details
 ///  from the processing of an EnrollmentRequest resource.
 @freezed
-class EnrollmentResponse with Resource, _$EnrollmentResponse {
+class EnrollmentResponse with _$EnrollmentResponse implements DomainResource {
   /// [EnrollmentResponse] This resource provides enrollment and plan details
   ///  from the processing of an EnrollmentRequest resource.
   const EnrollmentResponse._();
@@ -3272,13 +3281,13 @@ class EnrollmentResponse with Resource, _$EnrollmentResponse {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -3324,7 +3333,7 @@ class EnrollmentResponse with Resource, _$EnrollmentResponse {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [request] Original request resource reference.
     Reference? request,
@@ -3333,20 +3342,20 @@ class EnrollmentResponse with Resource, _$EnrollmentResponse {
     FhirCode? outcome,
 
     /// [outcomeElement] ("_outcome") Extensions for outcome
-    @JsonKey(name: '_outcome') Element? outcomeElement,
+    @JsonKey(name: '_outcome') PrimitiveElement? outcomeElement,
 
     /// [disposition] A description of the status of the adjudication.
     String? disposition,
 
     /// [dispositionElement] ("_disposition") Extensions for disposition
-    @JsonKey(name: '_disposition') Element? dispositionElement,
+    @JsonKey(name: '_disposition') PrimitiveElement? dispositionElement,
 
     /// [created] The date when the enclosed suite of services were performed or
     ///  completed.
     FhirDateTime? created,
 
     /// [createdElement] ("_created") Extensions for created
-    @JsonKey(name: '_created') Element? createdElement,
+    @JsonKey(name: '_created') PrimitiveElement? createdElement,
 
     /// [organization] The Insurer who produced this adjudicated response.
     Reference? organization,

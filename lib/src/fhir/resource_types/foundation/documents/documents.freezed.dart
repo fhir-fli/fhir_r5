@@ -41,14 +41,15 @@ mixin _$Composition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -100,7 +101,7 @@ mixin _$Composition {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   /// [identifier] A version-independent identifier for the Composition. This
   ///  identifier stays constant as the composition is changed over time.
@@ -112,7 +113,7 @@ mixin _$Composition {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [status] The workflow/clinical status of this composition. The status is a
   ///  marker for the clinical standing of the document.
@@ -120,7 +121,7 @@ mixin _$Composition {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [type] Specifies the particular kind of composition (e.g. History and
   ///  Physical, Discharge Summary, Progress Note). This usually equates to the
@@ -148,7 +149,7 @@ mixin _$Composition {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -168,14 +169,14 @@ mixin _$Composition {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [title] Official human-readable label for the composition.
   String? get title => throw _privateConstructorUsedError;
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [note] For any additional notes.
   List<Annotation>? get note => throw _privateConstructorUsedError;
@@ -217,32 +218,32 @@ abstract class $CompositionCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       CodeableConcept type,
       List<CodeableConcept>? category,
       List<Reference>? subject,
       Reference? encounter,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       List<UsageContext>? useContext,
       List<Reference> author,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       List<Annotation>? note,
       List<CompositionAttester>? attester,
       Reference? custodian,
@@ -327,7 +328,7 @@ class _$CompositionCopyWithImpl<$Res, $Val extends Composition>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -335,7 +336,7 @@ class _$CompositionCopyWithImpl<$Res, $Val extends Composition>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -359,7 +360,7 @@ class _$CompositionCopyWithImpl<$Res, $Val extends Composition>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -371,7 +372,7 @@ class _$CompositionCopyWithImpl<$Res, $Val extends Composition>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -379,7 +380,7 @@ class _$CompositionCopyWithImpl<$Res, $Val extends Composition>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -403,7 +404,7 @@ class _$CompositionCopyWithImpl<$Res, $Val extends Composition>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value.useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -419,7 +420,7 @@ class _$CompositionCopyWithImpl<$Res, $Val extends Composition>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -427,7 +428,7 @@ class _$CompositionCopyWithImpl<$Res, $Val extends Composition>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
@@ -526,32 +527,32 @@ abstract class _$$CompositionImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       CodeableConcept type,
       List<CodeableConcept>? category,
       List<Reference>? subject,
       Reference? encounter,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       List<UsageContext>? useContext,
       List<Reference> author,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       List<Annotation>? note,
       List<CompositionAttester>? attester,
       Reference? custodian,
@@ -639,7 +640,7 @@ class __$$CompositionImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -647,7 +648,7 @@ class __$$CompositionImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -671,7 +672,7 @@ class __$$CompositionImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value._identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -683,7 +684,7 @@ class __$$CompositionImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -691,7 +692,7 @@ class __$$CompositionImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -715,7 +716,7 @@ class __$$CompositionImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value._useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -731,7 +732,7 @@ class __$$CompositionImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -739,7 +740,7 @@ class __$$CompositionImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value._note
           : note // ignore: cast_nullable_to_non_nullable
@@ -853,7 +854,7 @@ class _$CompositionImpl extends _Composition {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -862,7 +863,7 @@ class _$CompositionImpl extends _Composition {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -967,7 +968,7 @@ class _$CompositionImpl extends _Composition {
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   /// [identifier] A version-independent identifier for the Composition. This
   ///  identifier stays constant as the composition is changed over time.
@@ -992,7 +993,7 @@ class _$CompositionImpl extends _Composition {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [status] The workflow/clinical status of this composition. The status is a
   ///  marker for the clinical standing of the document.
@@ -1002,7 +1003,7 @@ class _$CompositionImpl extends _Composition {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [type] Specifies the particular kind of composition (e.g. History and
   ///  Physical, Discharge Summary, Progress Note). This usually equates to the
@@ -1059,7 +1060,7 @@ class _$CompositionImpl extends _Composition {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -1104,7 +1105,7 @@ class _$CompositionImpl extends _Composition {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [title] Official human-readable label for the composition.
   @override
@@ -1113,7 +1114,7 @@ class _$CompositionImpl extends _Composition {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [note] For any additional notes.
   final List<Annotation>? _note;
@@ -1321,32 +1322,33 @@ abstract class _Composition extends Composition {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUri? url,
-      @JsonKey(name: '_url') final Element? urlElement,
+      @JsonKey(name: '_url') final PrimitiveElement? urlElement,
       final List<Identifier>? identifier,
       final String? version,
-      @JsonKey(name: '_version') final Element? versionElement,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
       final FhirCode? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       required final CodeableConcept type,
       final List<CodeableConcept>? category,
       final List<Reference>? subject,
       final Reference? encounter,
       final FhirDateTime? date,
-      @JsonKey(name: '_date') final Element? dateElement,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
       final List<UsageContext>? useContext,
       required final List<Reference> author,
       final String? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final List<Annotation>? note,
       final List<CompositionAttester>? attester,
       final Reference? custodian,
@@ -1385,7 +1387,7 @@ abstract class _Composition extends Composition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -1394,7 +1396,7 @@ abstract class _Composition extends Composition {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -1451,7 +1453,7 @@ abstract class _Composition extends Composition {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
 
   /// [identifier] A version-independent identifier for the Composition. This
@@ -1466,7 +1468,7 @@ abstract class _Composition extends Composition {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [status] The workflow/clinical status of this composition. The status is a
@@ -1476,7 +1478,7 @@ abstract class _Composition extends Composition {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [type] Specifies the particular kind of composition (e.g. History and
@@ -1510,7 +1512,7 @@ abstract class _Composition extends Composition {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [useContext] The content was developed with a focus and intent of
@@ -1534,7 +1536,7 @@ abstract class _Composition extends Composition {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [title] Official human-readable label for the composition.
@@ -1543,7 +1545,7 @@ abstract class _Composition extends Composition {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [note] For any additional notes.
@@ -1620,7 +1622,7 @@ mixin _$CompositionAttester {
 
   /// [timeElement] ("_time") Extensions for time
   @JsonKey(name: '_time')
-  Element? get timeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get timeElement => throw _privateConstructorUsedError;
 
   /// [party] Who attested the composition in the specified way.
   Reference? get party => throw _privateConstructorUsedError;
@@ -1643,7 +1645,7 @@ abstract class $CompositionAttesterCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       CodeableConcept mode,
       FhirDateTime? time,
-      @JsonKey(name: '_time') Element? timeElement,
+      @JsonKey(name: '_time') PrimitiveElement? timeElement,
       Reference? party});
 
   $CodeableConceptCopyWith<$Res> get mode;
@@ -1695,7 +1697,7 @@ class _$CompositionAttesterCopyWithImpl<$Res, $Val extends CompositionAttester>
       timeElement: freezed == timeElement
           ? _value.timeElement
           : timeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       party: freezed == party
           ? _value.party
           : party // ignore: cast_nullable_to_non_nullable
@@ -1738,7 +1740,7 @@ abstract class _$$CompositionAttesterImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       CodeableConcept mode,
       FhirDateTime? time,
-      @JsonKey(name: '_time') Element? timeElement,
+      @JsonKey(name: '_time') PrimitiveElement? timeElement,
       Reference? party});
 
   @override
@@ -1790,7 +1792,7 @@ class __$$CompositionAttesterImplCopyWithImpl<$Res>
       timeElement: freezed == timeElement
           ? _value.timeElement
           : timeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       party: freezed == party
           ? _value.party
           : party // ignore: cast_nullable_to_non_nullable
@@ -1893,7 +1895,7 @@ class _$CompositionAttesterImpl extends _CompositionAttester {
   /// [timeElement] ("_time") Extensions for time
   @override
   @JsonKey(name: '_time')
-  final Element? timeElement;
+  final PrimitiveElement? timeElement;
 
   /// [party] Who attested the composition in the specified way.
   @override
@@ -1955,7 +1957,7 @@ abstract class _CompositionAttester extends CompositionAttester {
       final List<FhirExtension>? modifierExtension,
       required final CodeableConcept mode,
       final FhirDateTime? time,
-      @JsonKey(name: '_time') final Element? timeElement,
+      @JsonKey(name: '_time') final PrimitiveElement? timeElement,
       final Reference? party}) = _$CompositionAttesterImpl;
   const _CompositionAttester._() : super._();
 
@@ -2004,7 +2006,7 @@ abstract class _CompositionAttester extends CompositionAttester {
 
   /// [timeElement] ("_time") Extensions for time
   @JsonKey(name: '_time')
-  Element? get timeElement;
+  PrimitiveElement? get timeElement;
   @override
 
   /// [party] Who attested the composition in the specified way.
@@ -2460,7 +2462,7 @@ mixin _$CompositionSection {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [code] A code identifying the kind of content contained within the section.
   ///  This must be consistent with the section title.
@@ -2518,7 +2520,7 @@ abstract class $CompositionSectionCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       CodeableConcept? code,
       List<Reference>? author,
       Reference? focus,
@@ -2582,7 +2584,7 @@ class _$CompositionSectionCopyWithImpl<$Res, $Val extends CompositionSection>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       code: freezed == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -2692,7 +2694,7 @@ abstract class _$$CompositionSectionImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       CodeableConcept? code,
       List<Reference>? author,
       Reference? focus,
@@ -2759,7 +2761,7 @@ class __$$CompositionSectionImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       code: freezed == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -2897,7 +2899,7 @@ class _$CompositionSectionImpl extends _CompositionSection {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [code] A code identifying the kind of content contained within the section.
   ///  This must be consistent with the section title.
@@ -3044,7 +3046,7 @@ abstract class _CompositionSection extends CompositionSection {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final CodeableConcept? code,
       final List<Reference>? author,
       final Reference? focus,
@@ -3098,7 +3100,7 @@ abstract class _CompositionSection extends CompositionSection {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [code] A code identifying the kind of content contained within the section.
@@ -3179,14 +3181,15 @@ mixin _$DocumentReference {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -3237,7 +3240,7 @@ mixin _$DocumentReference {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [basedOn] A procedure that is fulfilled in whole or in part by the creation
   ///  of this media.
@@ -3248,14 +3251,14 @@ mixin _$DocumentReference {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [docStatus] The status of the underlying document.
   FhirCode? get docStatus => throw _privateConstructorUsedError;
 
   /// [docStatusElement] ("_docStatus") Extensions for docStatus
   @JsonKey(name: '_docStatus')
-  Element? get docStatusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get docStatusElement => throw _privateConstructorUsedError;
 
   /// [modality] Imaging modality used. This may include both acquisition and
   ///  non-acquisition modalities.
@@ -3308,7 +3311,7 @@ mixin _$DocumentReference {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [author] Identifies who is responsible for adding the information to the
   ///  document.
@@ -3332,7 +3335,8 @@ mixin _$DocumentReference {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [securityLabel] A set of Security-Tag codes specifying the level of
   ///  privacy/security of the Document found at
@@ -3372,21 +3376,21 @@ abstract class $DocumentReferenceCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       List<Reference>? basedOn,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirCode? docStatus,
-      @JsonKey(name: '_docStatus') Element? docStatusElement,
+      @JsonKey(name: '_docStatus') PrimitiveElement? docStatusElement,
       List<CodeableConcept>? modality,
       CodeableConcept? type,
       List<CodeableConcept>? category,
@@ -3398,13 +3402,13 @@ abstract class $DocumentReferenceCopyWith<$Res> {
       CodeableConcept? practiceSetting,
       Period? period,
       FhirInstant? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       List<Reference>? author,
       List<DocumentReferenceAttester>? attester,
       Reference? custodian,
       List<DocumentReferenceRelatesTo>? relatesTo,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<CodeableConcept>? securityLabel,
       List<DocumentReferenceContent> content});
 
@@ -3491,7 +3495,7 @@ class _$DocumentReferenceCopyWithImpl<$Res, $Val extends DocumentReference>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -3499,7 +3503,7 @@ class _$DocumentReferenceCopyWithImpl<$Res, $Val extends DocumentReference>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -3527,7 +3531,7 @@ class _$DocumentReferenceCopyWithImpl<$Res, $Val extends DocumentReference>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       basedOn: freezed == basedOn
           ? _value.basedOn
           : basedOn // ignore: cast_nullable_to_non_nullable
@@ -3539,7 +3543,7 @@ class _$DocumentReferenceCopyWithImpl<$Res, $Val extends DocumentReference>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       docStatus: freezed == docStatus
           ? _value.docStatus
           : docStatus // ignore: cast_nullable_to_non_nullable
@@ -3547,7 +3551,7 @@ class _$DocumentReferenceCopyWithImpl<$Res, $Val extends DocumentReference>
       docStatusElement: freezed == docStatusElement
           ? _value.docStatusElement
           : docStatusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       modality: freezed == modality
           ? _value.modality
           : modality // ignore: cast_nullable_to_non_nullable
@@ -3595,7 +3599,7 @@ class _$DocumentReferenceCopyWithImpl<$Res, $Val extends DocumentReference>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       author: freezed == author
           ? _value.author
           : author // ignore: cast_nullable_to_non_nullable
@@ -3619,7 +3623,7 @@ class _$DocumentReferenceCopyWithImpl<$Res, $Val extends DocumentReference>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       securityLabel: freezed == securityLabel
           ? _value.securityLabel
           : securityLabel // ignore: cast_nullable_to_non_nullable
@@ -3742,21 +3746,21 @@ abstract class _$$DocumentReferenceImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       List<Reference>? basedOn,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirCode? docStatus,
-      @JsonKey(name: '_docStatus') Element? docStatusElement,
+      @JsonKey(name: '_docStatus') PrimitiveElement? docStatusElement,
       List<CodeableConcept>? modality,
       CodeableConcept? type,
       List<CodeableConcept>? category,
@@ -3768,13 +3772,13 @@ abstract class _$$DocumentReferenceImplCopyWith<$Res>
       CodeableConcept? practiceSetting,
       Period? period,
       FhirInstant? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       List<Reference>? author,
       List<DocumentReferenceAttester>? attester,
       Reference? custodian,
       List<DocumentReferenceRelatesTo>? relatesTo,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<CodeableConcept>? securityLabel,
       List<DocumentReferenceContent> content});
 
@@ -3867,7 +3871,7 @@ class __$$DocumentReferenceImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -3875,7 +3879,7 @@ class __$$DocumentReferenceImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -3903,7 +3907,7 @@ class __$$DocumentReferenceImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       basedOn: freezed == basedOn
           ? _value._basedOn
           : basedOn // ignore: cast_nullable_to_non_nullable
@@ -3915,7 +3919,7 @@ class __$$DocumentReferenceImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       docStatus: freezed == docStatus
           ? _value.docStatus
           : docStatus // ignore: cast_nullable_to_non_nullable
@@ -3923,7 +3927,7 @@ class __$$DocumentReferenceImplCopyWithImpl<$Res>
       docStatusElement: freezed == docStatusElement
           ? _value.docStatusElement
           : docStatusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       modality: freezed == modality
           ? _value._modality
           : modality // ignore: cast_nullable_to_non_nullable
@@ -3971,7 +3975,7 @@ class __$$DocumentReferenceImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       author: freezed == author
           ? _value._author
           : author // ignore: cast_nullable_to_non_nullable
@@ -3995,7 +3999,7 @@ class __$$DocumentReferenceImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       securityLabel: freezed == securityLabel
           ? _value._securityLabel
           : securityLabel // ignore: cast_nullable_to_non_nullable
@@ -4098,7 +4102,7 @@ class _$DocumentReferenceImpl extends _DocumentReference {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -4107,7 +4111,7 @@ class _$DocumentReferenceImpl extends _DocumentReference {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -4222,7 +4226,7 @@ class _$DocumentReferenceImpl extends _DocumentReference {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [basedOn] A procedure that is fulfilled in whole or in part by the creation
   ///  of this media.
@@ -4246,7 +4250,7 @@ class _$DocumentReferenceImpl extends _DocumentReference {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [docStatus] The status of the underlying document.
   @override
@@ -4255,7 +4259,7 @@ class _$DocumentReferenceImpl extends _DocumentReference {
   /// [docStatusElement] ("_docStatus") Extensions for docStatus
   @override
   @JsonKey(name: '_docStatus')
-  final Element? docStatusElement;
+  final PrimitiveElement? docStatusElement;
 
   /// [modality] Imaging modality used. This may include both acquisition and
   ///  non-acquisition modalities.
@@ -4373,7 +4377,7 @@ class _$DocumentReferenceImpl extends _DocumentReference {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [author] Identifies who is responsible for adding the information to the
   ///  document.
@@ -4430,7 +4434,7 @@ class _$DocumentReferenceImpl extends _DocumentReference {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [securityLabel] A set of Security-Tag codes specifying the level of
   ///  privacy/security of the Document found at
@@ -4614,47 +4618,48 @@ class _$DocumentReferenceImpl extends _DocumentReference {
 
 abstract class _DocumentReference extends DocumentReference {
   const factory _DocumentReference(
-          {@JsonKey(unknownEnumValue: R5ResourceType.DocumentReference)
-          final R5ResourceType resourceType,
-          final FhirId? id,
-          final FhirMeta? meta,
-          final FhirUri? implicitRules,
-          @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
-          final FhirCode? language,
-          @JsonKey(name: '_language') final Element? languageElement,
-          final Narrative? text,
-          final List<Resource>? contained,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final List<Identifier>? identifier,
-          final String? version,
-          @JsonKey(name: '_version') final Element? versionElement,
-          final List<Reference>? basedOn,
-          final FhirCode? status,
-          @JsonKey(name: '_status') final Element? statusElement,
-          final FhirCode? docStatus,
-          @JsonKey(name: '_docStatus') final Element? docStatusElement,
-          final List<CodeableConcept>? modality,
-          final CodeableConcept? type,
-          final List<CodeableConcept>? category,
-          final Reference? subject,
-          final List<Reference>? context,
-          final List<CodeableReference>? event,
-          final List<CodeableReference>? bodySite,
-          final CodeableConcept? facilityType,
-          final CodeableConcept? practiceSetting,
-          final Period? period,
-          final FhirInstant? date,
-          @JsonKey(name: '_date') final Element? dateElement,
-          final List<Reference>? author,
-          final List<DocumentReferenceAttester>? attester,
-          final Reference? custodian,
-          final List<DocumentReferenceRelatesTo>? relatesTo,
-          final FhirMarkdown? description,
-          @JsonKey(name: '_description') final Element? descriptionElement,
-          final List<CodeableConcept>? securityLabel,
-          required final List<DocumentReferenceContent> content}) =
-      _$DocumentReferenceImpl;
+      {@JsonKey(unknownEnumValue: R5ResourceType.DocumentReference)
+      final R5ResourceType resourceType,
+      final FhirId? id,
+      final FhirMeta? meta,
+      final FhirUri? implicitRules,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
+      final FhirCode? language,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
+      final Narrative? text,
+      final List<Resource>? contained,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final List<Identifier>? identifier,
+      final String? version,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
+      final List<Reference>? basedOn,
+      final FhirCode? status,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
+      final FhirCode? docStatus,
+      @JsonKey(name: '_docStatus') final PrimitiveElement? docStatusElement,
+      final List<CodeableConcept>? modality,
+      final CodeableConcept? type,
+      final List<CodeableConcept>? category,
+      final Reference? subject,
+      final List<Reference>? context,
+      final List<CodeableReference>? event,
+      final List<CodeableReference>? bodySite,
+      final CodeableConcept? facilityType,
+      final CodeableConcept? practiceSetting,
+      final Period? period,
+      final FhirInstant? date,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
+      final List<Reference>? author,
+      final List<DocumentReferenceAttester>? attester,
+      final Reference? custodian,
+      final List<DocumentReferenceRelatesTo>? relatesTo,
+      final FhirMarkdown? description,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
+      final List<CodeableConcept>? securityLabel,
+      required final List<DocumentReferenceContent>
+          content}) = _$DocumentReferenceImpl;
   const _DocumentReference._() : super._();
 
   factory _DocumentReference.fromJson(Map<String, dynamic> json) =
@@ -4687,7 +4692,7 @@ abstract class _DocumentReference extends DocumentReference {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -4696,7 +4701,7 @@ abstract class _DocumentReference extends DocumentReference {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -4753,7 +4758,7 @@ abstract class _DocumentReference extends DocumentReference {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [basedOn] A procedure that is fulfilled in whole or in part by the creation
@@ -4767,7 +4772,7 @@ abstract class _DocumentReference extends DocumentReference {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [docStatus] The status of the underlying document.
@@ -4776,7 +4781,7 @@ abstract class _DocumentReference extends DocumentReference {
 
   /// [docStatusElement] ("_docStatus") Extensions for docStatus
   @JsonKey(name: '_docStatus')
-  Element? get docStatusElement;
+  PrimitiveElement? get docStatusElement;
   @override
 
   /// [modality] Imaging modality used. This may include both acquisition and
@@ -4841,7 +4846,7 @@ abstract class _DocumentReference extends DocumentReference {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [author] Identifies who is responsible for adding the information to the
@@ -4869,7 +4874,7 @@ abstract class _DocumentReference extends DocumentReference {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [securityLabel] A set of Security-Tag codes specifying the level of
@@ -4939,7 +4944,7 @@ mixin _$DocumentReferenceAttester {
 
   /// [timeElement] ("_time") Extensions for time
   @JsonKey(name: '_time')
-  Element? get timeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get timeElement => throw _privateConstructorUsedError;
 
   /// [party] Who attested the document in the specified way.
   Reference? get party => throw _privateConstructorUsedError;
@@ -4962,7 +4967,7 @@ abstract class $DocumentReferenceAttesterCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       CodeableConcept mode,
       FhirDateTime? time,
-      @JsonKey(name: '_time') Element? timeElement,
+      @JsonKey(name: '_time') PrimitiveElement? timeElement,
       Reference? party});
 
   $CodeableConceptCopyWith<$Res> get mode;
@@ -5015,7 +5020,7 @@ class _$DocumentReferenceAttesterCopyWithImpl<$Res,
       timeElement: freezed == timeElement
           ? _value.timeElement
           : timeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       party: freezed == party
           ? _value.party
           : party // ignore: cast_nullable_to_non_nullable
@@ -5059,7 +5064,7 @@ abstract class _$$DocumentReferenceAttesterImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       CodeableConcept mode,
       FhirDateTime? time,
-      @JsonKey(name: '_time') Element? timeElement,
+      @JsonKey(name: '_time') PrimitiveElement? timeElement,
       Reference? party});
 
   @override
@@ -5113,7 +5118,7 @@ class __$$DocumentReferenceAttesterImplCopyWithImpl<$Res>
       timeElement: freezed == timeElement
           ? _value.timeElement
           : timeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       party: freezed == party
           ? _value.party
           : party // ignore: cast_nullable_to_non_nullable
@@ -5216,7 +5221,7 @@ class _$DocumentReferenceAttesterImpl extends _DocumentReferenceAttester {
   /// [timeElement] ("_time") Extensions for time
   @override
   @JsonKey(name: '_time')
-  final Element? timeElement;
+  final PrimitiveElement? timeElement;
 
   /// [party] Who attested the document in the specified way.
   @override
@@ -5278,7 +5283,7 @@ abstract class _DocumentReferenceAttester extends DocumentReferenceAttester {
       final List<FhirExtension>? modifierExtension,
       required final CodeableConcept mode,
       final FhirDateTime? time,
-      @JsonKey(name: '_time') final Element? timeElement,
+      @JsonKey(name: '_time') final PrimitiveElement? timeElement,
       final Reference? party}) = _$DocumentReferenceAttesterImpl;
   const _DocumentReferenceAttester._() : super._();
 
@@ -5327,7 +5332,7 @@ abstract class _DocumentReferenceAttester extends DocumentReferenceAttester {
 
   /// [timeElement] ("_time") Extensions for time
   @JsonKey(name: '_time')
-  Element? get timeElement;
+  PrimitiveElement? get timeElement;
   @override
 
   /// [party] Who attested the document in the specified way.
@@ -6156,14 +6161,15 @@ mixin _$DocumentReferenceProfile {
 
   /// [valueUriElement] ("_valueUri") Extensions for valueUri
   @JsonKey(name: '_valueUri')
-  Element? get valueUriElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueUriElement => throw _privateConstructorUsedError;
 
   /// [valueCanonical] Code|uri|canonical.
   FhirCanonical? get valueCanonical => throw _privateConstructorUsedError;
 
   /// [valueCanonicalElement] ("_valueCanonical") Extensions for valueCanonical
   @JsonKey(name: '_valueCanonical')
-  Element? get valueCanonicalElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueCanonicalElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -6183,9 +6189,10 @@ abstract class $DocumentReferenceProfileCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       Coding? valueCoding,
       FhirUri? valueUri,
-      @JsonKey(name: '_valueUri') Element? valueUriElement,
+      @JsonKey(name: '_valueUri') PrimitiveElement? valueUriElement,
       FhirCanonical? valueCanonical,
-      @JsonKey(name: '_valueCanonical') Element? valueCanonicalElement});
+      @JsonKey(name: '_valueCanonical')
+      PrimitiveElement? valueCanonicalElement});
 
   $CodingCopyWith<$Res>? get valueCoding;
 }
@@ -6237,7 +6244,7 @@ class _$DocumentReferenceProfileCopyWithImpl<$Res,
       valueUriElement: freezed == valueUriElement
           ? _value.valueUriElement
           : valueUriElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueCanonical: freezed == valueCanonical
           ? _value.valueCanonical
           : valueCanonical // ignore: cast_nullable_to_non_nullable
@@ -6245,7 +6252,7 @@ class _$DocumentReferenceProfileCopyWithImpl<$Res,
       valueCanonicalElement: freezed == valueCanonicalElement
           ? _value.valueCanonicalElement
           : valueCanonicalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -6277,9 +6284,10 @@ abstract class _$$DocumentReferenceProfileImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       Coding? valueCoding,
       FhirUri? valueUri,
-      @JsonKey(name: '_valueUri') Element? valueUriElement,
+      @JsonKey(name: '_valueUri') PrimitiveElement? valueUriElement,
       FhirCanonical? valueCanonical,
-      @JsonKey(name: '_valueCanonical') Element? valueCanonicalElement});
+      @JsonKey(name: '_valueCanonical')
+      PrimitiveElement? valueCanonicalElement});
 
   @override
   $CodingCopyWith<$Res>? get valueCoding;
@@ -6331,7 +6339,7 @@ class __$$DocumentReferenceProfileImplCopyWithImpl<$Res>
       valueUriElement: freezed == valueUriElement
           ? _value.valueUriElement
           : valueUriElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueCanonical: freezed == valueCanonical
           ? _value.valueCanonical
           : valueCanonical // ignore: cast_nullable_to_non_nullable
@@ -6339,7 +6347,7 @@ class __$$DocumentReferenceProfileImplCopyWithImpl<$Res>
       valueCanonicalElement: freezed == valueCanonicalElement
           ? _value.valueCanonicalElement
           : valueCanonicalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -6439,7 +6447,7 @@ class _$DocumentReferenceProfileImpl extends _DocumentReferenceProfile {
   /// [valueUriElement] ("_valueUri") Extensions for valueUri
   @override
   @JsonKey(name: '_valueUri')
-  final Element? valueUriElement;
+  final PrimitiveElement? valueUriElement;
 
   /// [valueCanonical] Code|uri|canonical.
   @override
@@ -6448,7 +6456,7 @@ class _$DocumentReferenceProfileImpl extends _DocumentReferenceProfile {
   /// [valueCanonicalElement] ("_valueCanonical") Extensions for valueCanonical
   @override
   @JsonKey(name: '_valueCanonical')
-  final Element? valueCanonicalElement;
+  final PrimitiveElement? valueCanonicalElement;
 
   @override
   String toString() {
@@ -6507,15 +6515,16 @@ class _$DocumentReferenceProfileImpl extends _DocumentReferenceProfile {
 
 abstract class _DocumentReferenceProfile extends DocumentReferenceProfile {
   const factory _DocumentReferenceProfile(
-      {final String? id,
-      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-      final List<FhirExtension>? modifierExtension,
-      final Coding? valueCoding,
-      final FhirUri? valueUri,
-      @JsonKey(name: '_valueUri') final Element? valueUriElement,
-      final FhirCanonical? valueCanonical,
-      @JsonKey(name: '_valueCanonical')
-      final Element? valueCanonicalElement}) = _$DocumentReferenceProfileImpl;
+          {final String? id,
+          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+          final List<FhirExtension>? modifierExtension,
+          final Coding? valueCoding,
+          final FhirUri? valueUri,
+          @JsonKey(name: '_valueUri') final PrimitiveElement? valueUriElement,
+          final FhirCanonical? valueCanonical,
+          @JsonKey(name: '_valueCanonical')
+          final PrimitiveElement? valueCanonicalElement}) =
+      _$DocumentReferenceProfileImpl;
   const _DocumentReferenceProfile._() : super._();
 
   factory _DocumentReferenceProfile.fromJson(Map<String, dynamic> json) =
@@ -6563,7 +6572,7 @@ abstract class _DocumentReferenceProfile extends DocumentReferenceProfile {
 
   /// [valueUriElement] ("_valueUri") Extensions for valueUri
   @JsonKey(name: '_valueUri')
-  Element? get valueUriElement;
+  PrimitiveElement? get valueUriElement;
   @override
 
   /// [valueCanonical] Code|uri|canonical.
@@ -6572,7 +6581,7 @@ abstract class _DocumentReferenceProfile extends DocumentReferenceProfile {
 
   /// [valueCanonicalElement] ("_valueCanonical") Extensions for valueCanonical
   @JsonKey(name: '_valueCanonical')
-  Element? get valueCanonicalElement;
+  PrimitiveElement? get valueCanonicalElement;
   @override
   @JsonKey(ignore: true)
   _$$DocumentReferenceProfileImplCopyWith<_$DocumentReferenceProfileImpl>

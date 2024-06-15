@@ -18,7 +18,7 @@ part 'general.enums.dart';
 ///  purpose.  In the healthcare field, used to track charges for a patient,
 ///  cost centers, etc.
 @freezed
-class Account with Resource, _$Account {
+class Account with _$Account implements DomainResource {
   /// [Account] A financial tool for tracking value accrued for a particular
   ///  purpose.  In the healthcare field, used to track charges for a patient,
   ///  cost centers, etc.
@@ -164,13 +164,13 @@ class Account with Resource, _$Account {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -217,7 +217,7 @@ class Account with Resource, _$Account {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [billingStatus] The BillingStatus tracks the lifecycle of the account
     ///  through the billing process. It indicates how transactions are treated
@@ -232,7 +232,7 @@ class Account with Resource, _$Account {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [subject] Identifies the entity which incurs the expenses. While the
     ///  immediate recipients of services or goods might be entities related to the
@@ -256,7 +256,7 @@ class Account with Resource, _$Account {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [guarantor] The parties responsible for balancing the account if other
     ///  payment options fall short.
@@ -289,7 +289,7 @@ class Account with Resource, _$Account {
     FhirInstant? calculatedAt,
 
     /// [calculatedAtElement] ("_calculatedAt") Extensions for calculatedAt
-    @JsonKey(name: '_calculatedAt') Element? calculatedAtElement,
+    @JsonKey(name: '_calculatedAt') PrimitiveElement? calculatedAtElement,
   }) = _Account;
 
   @override
@@ -336,7 +336,7 @@ class Account with Resource, _$Account {
 ///  particular purpose.  In the healthcare field, used to track charges for a
 ///  patient, cost centers, etc.
 @freezed
-class AccountCoverage with BackboneType, _$AccountCoverage {
+class AccountCoverage with _$AccountCoverage implements BackboneType {
   /// [AccountCoverage] A financial tool for tracking value accrued for a
   ///  particular purpose.  In the healthcare field, used to track charges for a
   ///  patient, cost centers, etc.
@@ -415,7 +415,7 @@ class AccountCoverage with BackboneType, _$AccountCoverage {
     FhirPositiveInt? priority,
 
     /// [priorityElement] ("_priority") Extensions for priority
-    @JsonKey(name: '_priority') Element? priorityElement,
+    @JsonKey(name: '_priority') PrimitiveElement? priorityElement,
   }) = _AccountCoverage;
 
   @override
@@ -453,7 +453,7 @@ class AccountCoverage with BackboneType, _$AccountCoverage {
 ///  particular purpose.  In the healthcare field, used to track charges for a
 ///  patient, cost centers, etc.
 @freezed
-class AccountGuarantor with BackboneType, _$AccountGuarantor {
+class AccountGuarantor with _$AccountGuarantor implements BackboneType {
   /// [AccountGuarantor] A financial tool for tracking value accrued for a
   ///  particular purpose.  In the healthcare field, used to track charges for a
   ///  patient, cost centers, etc.
@@ -531,7 +531,7 @@ class AccountGuarantor with BackboneType, _$AccountGuarantor {
     FhirBoolean? onHold,
 
     /// [onHoldElement] ("_onHold") Extensions for onHold
-    @JsonKey(name: '_onHold') Element? onHoldElement,
+    @JsonKey(name: '_onHold') PrimitiveElement? onHoldElement,
 
     /// [period] The timeframe during which the guarantor accepts responsibility
     ///  for the account.
@@ -573,7 +573,7 @@ class AccountGuarantor with BackboneType, _$AccountGuarantor {
 ///  particular purpose.  In the healthcare field, used to track charges for a
 ///  patient, cost centers, etc.
 @freezed
-class AccountDiagnosis with BackboneType, _$AccountDiagnosis {
+class AccountDiagnosis with _$AccountDiagnosis implements BackboneType {
   /// [AccountDiagnosis] A financial tool for tracking value accrued for a
   ///  particular purpose.  In the healthcare field, used to track charges for a
   ///  patient, cost centers, etc.
@@ -658,7 +658,7 @@ class AccountDiagnosis with BackboneType, _$AccountDiagnosis {
     FhirPositiveInt? sequence,
 
     /// [sequenceElement] ("_sequence") Extensions for sequence
-    @JsonKey(name: '_sequence') Element? sequenceElement,
+    @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
 
     /// [condition] The diagnosis relevant to the account.
     required CodeableReference condition,
@@ -667,7 +667,7 @@ class AccountDiagnosis with BackboneType, _$AccountDiagnosis {
     FhirDateTime? dateOfDiagnosis,
 
     /// [dateOfDiagnosisElement] ("_dateOfDiagnosis") Extensions for dateOfDiagnosis
-    @JsonKey(name: '_dateOfDiagnosis') Element? dateOfDiagnosisElement,
+    @JsonKey(name: '_dateOfDiagnosis') PrimitiveElement? dateOfDiagnosisElement,
 
     /// [type] Type that this diagnosis has relevant to the account (e.g.
     ///  admission, billing, discharge …).
@@ -678,7 +678,7 @@ class AccountDiagnosis with BackboneType, _$AccountDiagnosis {
     FhirBoolean? onAdmission,
 
     /// [onAdmissionElement] ("_onAdmission") Extensions for onAdmission
-    @JsonKey(name: '_onAdmission') Element? onAdmissionElement,
+    @JsonKey(name: '_onAdmission') PrimitiveElement? onAdmissionElement,
 
     /// [packageCode] The package code can be used to group diagnoses that may be
     ///  priced or delivered as a single product. Such as DRGs.
@@ -720,7 +720,7 @@ class AccountDiagnosis with BackboneType, _$AccountDiagnosis {
 ///  particular purpose.  In the healthcare field, used to track charges for a
 ///  patient, cost centers, etc.
 @freezed
-class AccountProcedure with BackboneType, _$AccountProcedure {
+class AccountProcedure with _$AccountProcedure implements BackboneType {
   /// [AccountProcedure] A financial tool for tracking value accrued for a
   ///  particular purpose.  In the healthcare field, used to track charges for a
   ///  patient, cost centers, etc.
@@ -804,7 +804,7 @@ class AccountProcedure with BackboneType, _$AccountProcedure {
     FhirPositiveInt? sequence,
 
     /// [sequenceElement] ("_sequence") Extensions for sequence
-    @JsonKey(name: '_sequence') Element? sequenceElement,
+    @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
 
     /// [code] The procedure relevant to the account.
     required CodeableReference code,
@@ -815,7 +815,7 @@ class AccountProcedure with BackboneType, _$AccountProcedure {
     FhirDateTime? dateOfService,
 
     /// [dateOfServiceElement] ("_dateOfService") Extensions for dateOfService
-    @JsonKey(name: '_dateOfService') Element? dateOfServiceElement,
+    @JsonKey(name: '_dateOfService') PrimitiveElement? dateOfServiceElement,
 
     /// [type] How this procedure value should be used in charging the account.
     List<CodeableConcept>? type,
@@ -864,7 +864,9 @@ class AccountProcedure with BackboneType, _$AccountProcedure {
 ///  particular purpose.  In the healthcare field, used to track charges for a
 ///  patient, cost centers, etc.
 @freezed
-class AccountRelatedAccount with BackboneType, _$AccountRelatedAccount {
+class AccountRelatedAccount
+    with _$AccountRelatedAccount
+    implements BackboneType {
   /// [AccountRelatedAccount] A financial tool for tracking value accrued for a
   ///  particular purpose.  In the healthcare field, used to track charges for a
   ///  patient, cost centers, etc.
@@ -970,7 +972,7 @@ class AccountRelatedAccount with BackboneType, _$AccountRelatedAccount {
 ///  particular purpose.  In the healthcare field, used to track charges for a
 ///  patient, cost centers, etc.
 @freezed
-class AccountBalance with BackboneType, _$AccountBalance {
+class AccountBalance with _$AccountBalance implements BackboneType {
   /// [AccountBalance] A financial tool for tracking value accrued for a
   ///  particular purpose.  In the healthcare field, used to track charges for a
   ///  patient, cost centers, etc.
@@ -1057,7 +1059,7 @@ class AccountBalance with BackboneType, _$AccountBalance {
     FhirBoolean? estimate,
 
     /// [estimateElement] ("_estimate") Extensions for estimate
-    @JsonKey(name: '_estimate') Element? estimateElement,
+    @JsonKey(name: '_estimate') PrimitiveElement? estimateElement,
 
     /// [amount] The actual balance value calculated for the age defined in the
     ///  term property.
@@ -1102,7 +1104,7 @@ class AccountBalance with BackboneType, _$AccountBalance {
 ///  Usage of the ChargeItem is to enable the billing process and internal cost
 ///  allocation.
 @freezed
-class ChargeItem with Resource, _$ChargeItem {
+class ChargeItem with _$ChargeItem implements DomainResource {
   /// [ChargeItem] The resource ChargeItem describes the provision of healthcare
   ///  provider products for a certain patient, therefore referring not only to
   ///  the product, but containing in addition details of the provision, like
@@ -1274,13 +1276,13 @@ class ChargeItem with Resource, _$ChargeItem {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1337,7 +1339,7 @@ class ChargeItem with Resource, _$ChargeItem {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [partOf] ChargeItems can be grouped to larger ChargeItems covering the
     ///  whole set.
@@ -1360,7 +1362,8 @@ class ChargeItem with Resource, _$ChargeItem {
 
     /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
     ///  occurrenceDateTime
-    @JsonKey(name: '_occurrenceDateTime') Element? occurrenceDateTimeElement,
+    @JsonKey(name: '_occurrenceDateTime')
+    PrimitiveElement? occurrenceDateTimeElement,
 
     /// [occurrencePeriod] Date/time(s) or duration when the charged service was
     ///  applied.
@@ -1410,7 +1413,7 @@ class ChargeItem with Resource, _$ChargeItem {
     FhirDateTime? enteredDate,
 
     /// [enteredDateElement] ("_enteredDate") Extensions for enteredDate
-    @JsonKey(name: '_enteredDate') Element? enteredDateElement,
+    @JsonKey(name: '_enteredDate') PrimitiveElement? enteredDateElement,
 
     /// [reason] Describes why the event occurred in coded or textual form.
     List<CodeableConcept>? reason,
@@ -1480,7 +1483,7 @@ class ChargeItem with Resource, _$ChargeItem {
 ///  persons. Main Usage of the ChargeItem is to enable the billing process and
 ///  internal cost allocation.
 @freezed
-class ChargeItemPerformer with BackboneType, _$ChargeItemPerformer {
+class ChargeItemPerformer with _$ChargeItemPerformer implements BackboneType {
   /// [ChargeItemPerformer] The resource ChargeItem describes the provision of
   ///  healthcare provider products for a certain patient, therefore referring
   ///  not only to the product, but containing in addition details of the
@@ -1598,7 +1601,9 @@ class ChargeItemPerformer with BackboneType, _$ChargeItemPerformer {
 ///  therefore this resource gives only a rough structure and requires
 ///  profiling for each type of billing code system.
 @freezed
-class ChargeItemDefinition with Resource, _$ChargeItemDefinition {
+class ChargeItemDefinition
+    with _$ChargeItemDefinition
+    implements DomainResource {
   /// [ChargeItemDefinition] The ChargeItemDefinition resource provides the
   ///  properties that apply to the (billing) codes necessary to calculate costs
   ///  and prices. The properties may differ largely depending on type and realm,
@@ -1852,13 +1857,13 @@ class ChargeItemDefinition with Resource, _$ChargeItemDefinition {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1907,7 +1912,7 @@ class ChargeItemDefinition with Resource, _$ChargeItemDefinition {
     FhirUri? url,
 
     /// [urlElement] ("_url") Extensions for url
-    @JsonKey(name: '_url') Element? urlElement,
+    @JsonKey(name: '_url') PrimitiveElement? urlElement,
 
     /// [identifier] A formal identifier that is used to identify this charge item
     ///  definition when it is represented in other formats, or referenced in a
@@ -1928,7 +1933,7 @@ class ChargeItemDefinition with Resource, _$ChargeItemDefinition {
     String? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') Element? versionElement,
+    @JsonKey(name: '_version') PrimitiveElement? versionElement,
 
     /// [versionAlgorithmString] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -1937,7 +1942,7 @@ class ChargeItemDefinition with Resource, _$ChargeItemDefinition {
     /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
     ///  versionAlgorithmString
     @JsonKey(name: '_versionAlgorithmString')
-    Element? versionAlgorithmStringElement,
+    PrimitiveElement? versionAlgorithmStringElement,
 
     /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
     ///  to determine which is more current.
@@ -1949,20 +1954,20 @@ class ChargeItemDefinition with Resource, _$ChargeItemDefinition {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [title] A short, descriptive, user-friendly title for the charge item
     ///  definition.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [status] The current state of the ChargeItemDefinition.
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [experimental] A Boolean value to indicate that this charge item definition
     ///  is authored for testing purposes (or education/evaluation/marketing) and
@@ -1970,7 +1975,7 @@ class ChargeItemDefinition with Resource, _$ChargeItemDefinition {
     FhirBoolean? experimental,
 
     /// [experimentalElement] ("_experimental") Extensions for experimental
-    @JsonKey(name: '_experimental') Element? experimentalElement,
+    @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
 
     /// [date] The date  (and optionally time) when the charge item definition was
     ///  last significantly changed. The date must change when the business version
@@ -1980,14 +1985,14 @@ class ChargeItemDefinition with Resource, _$ChargeItemDefinition {
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [publisher] The name of the organization or individual responsible for the
     ///  release and ongoing maintenance of the charge item definition.
     String? publisher,
 
     /// [publisherElement] ("_publisher") Extensions for publisher
-    @JsonKey(name: '_publisher') Element? publisherElement,
+    @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
 
     /// [contact] Contact details to assist a user in finding and communicating
     ///  with the publisher.
@@ -1998,7 +2003,7 @@ class ChargeItemDefinition with Resource, _$ChargeItemDefinition {
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [useContext] The content was developed with a focus and intent of
     ///  supporting the contexts that are listed. These contexts may be general
@@ -2016,7 +2021,7 @@ class ChargeItemDefinition with Resource, _$ChargeItemDefinition {
     FhirMarkdown? purpose,
 
     /// [purposeElement] ("_purpose") Extensions for purpose
-    @JsonKey(name: '_purpose') Element? purposeElement,
+    @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
 
     /// [copyright] A copyright statement relating to the charge item definition
     ///  and/or its contents. Copyright statements are generally legal restrictions
@@ -2024,7 +2029,7 @@ class ChargeItemDefinition with Resource, _$ChargeItemDefinition {
     FhirMarkdown? copyright,
 
     /// [copyrightElement] ("_copyright") Extensions for copyright
-    @JsonKey(name: '_copyright') Element? copyrightElement,
+    @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
 
     /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
     ///  a page footer that identifies the copyright holder, effective period, and
@@ -2033,7 +2038,7 @@ class ChargeItemDefinition with Resource, _$ChargeItemDefinition {
     String? copyrightLabel,
 
     /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-    @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+    @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
 
     /// [approvalDate] The date on which the resource content was approved by the
     ///  publisher. Approval happens once when the content is officially approved
@@ -2041,7 +2046,7 @@ class ChargeItemDefinition with Resource, _$ChargeItemDefinition {
     FhirDate? approvalDate,
 
     /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
-    @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+    @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
 
     /// [lastReviewDate] The date on which the resource content was last reviewed.
     ///  Review happens periodically after approval but does not change the
@@ -2049,7 +2054,7 @@ class ChargeItemDefinition with Resource, _$ChargeItemDefinition {
     FhirDate? lastReviewDate,
 
     /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
-    @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+    @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
 
     /// [effectivePeriod] The period during which the {{title}} content was or is
     ///  planned to be in active use.
@@ -2416,7 +2421,7 @@ class ChargeItemDefinitionPropertyGroup
 /// [Contract] Legally enforceable, formally recorded unilateral or bilateral
 ///  directive i.e., a policy or agreement.
 @freezed
-class Contract with Resource, _$Contract {
+class Contract with _$Contract implements DomainResource {
   /// [Contract] Legally enforceable, formally recorded unilateral or bilateral
   ///  directive i.e., a policy or agreement.
   const Contract._();
@@ -2649,13 +2654,13 @@ class Contract with Resource, _$Contract {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -2703,20 +2708,20 @@ class Contract with Resource, _$Contract {
     FhirUri? url,
 
     /// [urlElement] ("_url") Extensions for url
-    @JsonKey(name: '_url') Element? urlElement,
+    @JsonKey(name: '_url') PrimitiveElement? urlElement,
 
     /// [version] An edition identifier used for business purposes to label
     ///  business significant variants.
     String? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') Element? versionElement,
+    @JsonKey(name: '_version') PrimitiveElement? versionElement,
 
     /// [status] The status of the resource instance.
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [legalState] Legal states of the formation of a legal instrument, which is
     ///  a formally executed written document that can be formally attributed to
@@ -2734,7 +2739,7 @@ class Contract with Resource, _$Contract {
     FhirUri? instantiatesUri,
 
     /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
-    @JsonKey(name: '_instantiatesUri') Element? instantiatesUriElement,
+    @JsonKey(name: '_instantiatesUri') PrimitiveElement? instantiatesUriElement,
 
     /// [contentDerivative] The minimal content derived from the basal information
     ///  source at a specific stage in its lifecycle.
@@ -2744,7 +2749,7 @@ class Contract with Resource, _$Contract {
     FhirDateTime? issued,
 
     /// [issuedElement] ("_issued") Extensions for issued
-    @JsonKey(name: '_issued') Element? issuedElement,
+    @JsonKey(name: '_issued') PrimitiveElement? issuedElement,
 
     /// [applies] Relevant time or time-period when this Contract is applicable.
     Period? applies,
@@ -2780,14 +2785,14 @@ class Contract with Resource, _$Contract {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [title] A short, descriptive, user-friendly title for this Contract
     ///  definition, derivative, or instance in any legal state.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [subtitle] A more detailed or qualifying explanatory or alternate
     ///  user-friendly title for this Contract definition, derivative, or instance
@@ -2795,7 +2800,7 @@ class Contract with Resource, _$Contract {
     String? subtitle,
 
     /// [subtitleElement] ("_subtitle") Extensions for subtitle
-    @JsonKey(name: '_subtitle') Element? subtitleElement,
+    @JsonKey(name: '_subtitle') PrimitiveElement? subtitleElement,
 
     /// [alias] Alternative representation of the title for this Contract
     ///  definition, derivative, or instance in any legal state., e.g., a domain
@@ -2932,7 +2937,9 @@ class Contract with Resource, _$Contract {
 /// [ContractContentDefinition] Legally enforceable, formally recorded
 ///  unilateral or bilateral directive i.e., a policy or agreement.
 @freezed
-class ContractContentDefinition with BackboneType, _$ContractContentDefinition {
+class ContractContentDefinition
+    with _$ContractContentDefinition
+    implements BackboneType {
   /// [ContractContentDefinition] Legally enforceable, formally recorded
   ///  unilateral or bilateral directive i.e., a policy or agreement.
   const ContractContentDefinition._();
@@ -3037,7 +3044,7 @@ class ContractContentDefinition with BackboneType, _$ContractContentDefinition {
     FhirDateTime? publicationDate,
 
     /// [publicationDateElement] ("_publicationDate") Extensions for publicationDate
-    @JsonKey(name: '_publicationDate') Element? publicationDateElement,
+    @JsonKey(name: '_publicationDate') PrimitiveElement? publicationDateElement,
 
     /// [publicationStatus] amended | appended | cancelled | disputed |
     ///  entered-in-error | executable +.
@@ -3045,7 +3052,8 @@ class ContractContentDefinition with BackboneType, _$ContractContentDefinition {
 
     /// [publicationStatusElement] ("_publicationStatus") Extensions for
     ///  publicationStatus
-    @JsonKey(name: '_publicationStatus') Element? publicationStatusElement,
+    @JsonKey(name: '_publicationStatus')
+    PrimitiveElement? publicationStatusElement,
 
     /// [copyright] A copyright statement relating to Contract precursor content.
     ///  Copyright statements are generally legal restrictions on the use and
@@ -3053,7 +3061,7 @@ class ContractContentDefinition with BackboneType, _$ContractContentDefinition {
     FhirMarkdown? copyright,
 
     /// [copyrightElement] ("_copyright") Extensions for copyright
-    @JsonKey(name: '_copyright') Element? copyrightElement,
+    @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
   }) = _ContractContentDefinition;
 
   @override
@@ -3090,7 +3098,7 @@ class ContractContentDefinition with BackboneType, _$ContractContentDefinition {
 /// [ContractTerm] Legally enforceable, formally recorded unilateral or
 ///  bilateral directive i.e., a policy or agreement.
 @freezed
-class ContractTerm with BackboneType, _$ContractTerm {
+class ContractTerm with _$ContractTerm implements BackboneType {
   /// [ContractTerm] Legally enforceable, formally recorded unilateral or
   ///  bilateral directive i.e., a policy or agreement.
   const ContractTerm._();
@@ -3193,7 +3201,7 @@ class ContractTerm with BackboneType, _$ContractTerm {
     FhirDateTime? issued,
 
     /// [issuedElement] ("_issued") Extensions for issued
-    @JsonKey(name: '_issued') Element? issuedElement,
+    @JsonKey(name: '_issued') PrimitiveElement? issuedElement,
 
     /// [applies] Relevant time or time-period when this Contract Provision is
     ///  applicable.
@@ -3219,7 +3227,7 @@ class ContractTerm with BackboneType, _$ContractTerm {
     String? text,
 
     /// [textElement] ("_text") Extensions for text
-    @JsonKey(name: '_text') Element? textElement,
+    @JsonKey(name: '_text') PrimitiveElement? textElement,
 
     /// [securityLabel] Security labels that protect the handling of information
     ///  about the term and its elements, which may be specifically identified.
@@ -3274,7 +3282,9 @@ class ContractTerm with BackboneType, _$ContractTerm {
 /// [ContractSecurityLabel] Legally enforceable, formally recorded unilateral
 ///  or bilateral directive i.e., a policy or agreement.
 @freezed
-class ContractSecurityLabel with BackboneType, _$ContractSecurityLabel {
+class ContractSecurityLabel
+    with _$ContractSecurityLabel
+    implements BackboneType {
   /// [ContractSecurityLabel] Legally enforceable, formally recorded unilateral
   ///  or bilateral directive i.e., a policy or agreement.
   const ContractSecurityLabel._();
@@ -3400,7 +3410,7 @@ class ContractSecurityLabel with BackboneType, _$ContractSecurityLabel {
 /// [ContractOffer] Legally enforceable, formally recorded unilateral or
 ///  bilateral directive i.e., a policy or agreement.
 @freezed
-class ContractOffer with BackboneType, _$ContractOffer {
+class ContractOffer with _$ContractOffer implements BackboneType {
   /// [ContractOffer] Legally enforceable, formally recorded unilateral or
   ///  bilateral directive i.e., a policy or agreement.
   const ContractOffer._();
@@ -3519,7 +3529,7 @@ class ContractOffer with BackboneType, _$ContractOffer {
     String? text,
 
     /// [textElement] ("_text") Extensions for text
-    @JsonKey(name: '_text') Element? textElement,
+    @JsonKey(name: '_text') PrimitiveElement? textElement,
 
     /// [linkId] The id of the clause or question text of the offer in the
     ///  referenced questionnaire/response.
@@ -3571,7 +3581,7 @@ class ContractOffer with BackboneType, _$ContractOffer {
 /// [ContractParty] Legally enforceable, formally recorded unilateral or
 ///  bilateral directive i.e., a policy or agreement.
 @freezed
-class ContractParty with BackboneType, _$ContractParty {
+class ContractParty with _$ContractParty implements BackboneType {
   /// [ContractParty] Legally enforceable, formally recorded unilateral or
   ///  bilateral directive i.e., a policy or agreement.
   const ContractParty._();
@@ -3674,7 +3684,7 @@ class ContractParty with BackboneType, _$ContractParty {
 /// [ContractAnswer] Legally enforceable, formally recorded unilateral or
 ///  bilateral directive i.e., a policy or agreement.
 @freezed
-class ContractAnswer with BackboneType, _$ContractAnswer {
+class ContractAnswer with _$ContractAnswer implements BackboneType {
   /// [ContractAnswer] Legally enforceable, formally recorded unilateral or
   ///  bilateral directive i.e., a policy or agreement.
   const ContractAnswer._();
@@ -3815,7 +3825,7 @@ class ContractAnswer with BackboneType, _$ContractAnswer {
     FhirBoolean? valueBoolean,
 
     /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
 
     /// [valueDecimal] Response to an offer clause or question text,  which enables
     ///  selection of values to be agreed to, e.g., the period of participation,
@@ -3824,7 +3834,7 @@ class ContractAnswer with BackboneType, _$ContractAnswer {
     FhirDecimal? valueDecimal,
 
     /// [valueDecimalElement] ("_valueDecimal") Extensions for valueDecimal
-    @JsonKey(name: '_valueDecimal') Element? valueDecimalElement,
+    @JsonKey(name: '_valueDecimal') PrimitiveElement? valueDecimalElement,
 
     /// [valueInteger] Response to an offer clause or question text,  which enables
     ///  selection of values to be agreed to, e.g., the period of participation,
@@ -3833,7 +3843,7 @@ class ContractAnswer with BackboneType, _$ContractAnswer {
     FhirInteger? valueInteger,
 
     /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
-    @JsonKey(name: '_valueInteger') Element? valueIntegerElement,
+    @JsonKey(name: '_valueInteger') PrimitiveElement? valueIntegerElement,
 
     /// [valueDate] Response to an offer clause or question text,  which enables
     ///  selection of values to be agreed to, e.g., the period of participation,
@@ -3842,7 +3852,7 @@ class ContractAnswer with BackboneType, _$ContractAnswer {
     FhirDate? valueDate,
 
     /// [valueDateElement] ("_valueDate") Extensions for valueDate
-    @JsonKey(name: '_valueDate') Element? valueDateElement,
+    @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
 
     /// [valueDateTime] Response to an offer clause or question text,  which
     ///  enables selection of values to be agreed to, e.g., the period of
@@ -3851,7 +3861,7 @@ class ContractAnswer with BackboneType, _$ContractAnswer {
     FhirDateTime? valueDateTime,
 
     /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
-    @JsonKey(name: '_valueDateTime') Element? valueDateTimeElement,
+    @JsonKey(name: '_valueDateTime') PrimitiveElement? valueDateTimeElement,
 
     /// [valueTime] Response to an offer clause or question text,  which enables
     ///  selection of values to be agreed to, e.g., the period of participation,
@@ -3860,7 +3870,7 @@ class ContractAnswer with BackboneType, _$ContractAnswer {
     FhirTime? valueTime,
 
     /// [valueTimeElement] ("_valueTime") Extensions for valueTime
-    @JsonKey(name: '_valueTime') Element? valueTimeElement,
+    @JsonKey(name: '_valueTime') PrimitiveElement? valueTimeElement,
 
     /// [valueString] Response to an offer clause or question text,  which enables
     ///  selection of values to be agreed to, e.g., the period of participation,
@@ -3869,7 +3879,7 @@ class ContractAnswer with BackboneType, _$ContractAnswer {
     String? valueString,
 
     /// [valueStringElement] ("_valueString") Extensions for valueString
-    @JsonKey(name: '_valueString') Element? valueStringElement,
+    @JsonKey(name: '_valueString') PrimitiveElement? valueStringElement,
 
     /// [valueUri] Response to an offer clause or question text,  which enables
     ///  selection of values to be agreed to, e.g., the period of participation,
@@ -3878,7 +3888,7 @@ class ContractAnswer with BackboneType, _$ContractAnswer {
     FhirUri? valueUri,
 
     /// [valueUriElement] ("_valueUri") Extensions for valueUri
-    @JsonKey(name: '_valueUri') Element? valueUriElement,
+    @JsonKey(name: '_valueUri') PrimitiveElement? valueUriElement,
 
     /// [valueAttachment] Response to an offer clause or question text,  which
     ///  enables selection of values to be agreed to, e.g., the period of
@@ -3939,7 +3949,7 @@ class ContractAnswer with BackboneType, _$ContractAnswer {
 /// [ContractAsset] Legally enforceable, formally recorded unilateral or
 ///  bilateral directive i.e., a policy or agreement.
 @freezed
-class ContractAsset with BackboneType, _$ContractAsset {
+class ContractAsset with _$ContractAsset implements BackboneType {
   /// [ContractAsset] Legally enforceable, formally recorded unilateral or
   ///  bilateral directive i.e., a policy or agreement.
   const ContractAsset._();
@@ -4067,7 +4077,7 @@ class ContractAsset with BackboneType, _$ContractAsset {
     String? condition,
 
     /// [conditionElement] ("_condition") Extensions for condition
-    @JsonKey(name: '_condition') Element? conditionElement,
+    @JsonKey(name: '_condition') PrimitiveElement? conditionElement,
 
     /// [periodType] Type of Asset availability for use or ownership.
     List<CodeableConcept>? periodType,
@@ -4084,7 +4094,7 @@ class ContractAsset with BackboneType, _$ContractAsset {
     String? text,
 
     /// [textElement] ("_text") Extensions for text
-    @JsonKey(name: '_text') Element? textElement,
+    @JsonKey(name: '_text') PrimitiveElement? textElement,
 
     /// [linkId] Id [identifier??] of the clause or question text about the asset
     ///  in the referenced form or QuestionnaireResponse.
@@ -4142,7 +4152,7 @@ class ContractAsset with BackboneType, _$ContractAsset {
 /// [ContractContext] Legally enforceable, formally recorded unilateral or
 ///  bilateral directive i.e., a policy or agreement.
 @freezed
-class ContractContext with BackboneType, _$ContractContext {
+class ContractContext with _$ContractContext implements BackboneType {
   /// [ContractContext] Legally enforceable, formally recorded unilateral or
   ///  bilateral directive i.e., a policy or agreement.
   const ContractContext._();
@@ -4224,7 +4234,7 @@ class ContractContext with BackboneType, _$ContractContext {
     String? text,
 
     /// [textElement] ("_text") Extensions for text
-    @JsonKey(name: '_text') Element? textElement,
+    @JsonKey(name: '_text') PrimitiveElement? textElement,
   }) = _ContractContext;
 
   @override
@@ -4261,7 +4271,7 @@ class ContractContext with BackboneType, _$ContractContext {
 /// [ContractValuedItem] Legally enforceable, formally recorded unilateral or
 ///  bilateral directive i.e., a policy or agreement.
 @freezed
-class ContractValuedItem with BackboneType, _$ContractValuedItem {
+class ContractValuedItem with _$ContractValuedItem implements BackboneType {
   /// [ContractValuedItem] Legally enforceable, formally recorded unilateral or
   ///  bilateral directive i.e., a policy or agreement.
   const ContractValuedItem._();
@@ -4395,7 +4405,7 @@ class ContractValuedItem with BackboneType, _$ContractValuedItem {
     FhirDateTime? effectiveTime,
 
     /// [effectiveTimeElement] ("_effectiveTime") Extensions for effectiveTime
-    @JsonKey(name: '_effectiveTime') Element? effectiveTimeElement,
+    @JsonKey(name: '_effectiveTime') PrimitiveElement? effectiveTimeElement,
 
     /// [quantity] Specifies the units by which the Contract Valued Item is
     ///  measured or counted, and quantifies the countable or measurable Contract
@@ -4412,7 +4422,7 @@ class ContractValuedItem with BackboneType, _$ContractValuedItem {
     FhirDecimal? factor,
 
     /// [factorElement] ("_factor") Extensions for factor
-    @JsonKey(name: '_factor') Element? factorElement,
+    @JsonKey(name: '_factor') PrimitiveElement? factorElement,
 
     /// [points] An amount that expresses the weighting (based on difficulty, cost
     ///  and/or resource intensiveness) associated with the Contract Valued Item
@@ -4422,7 +4432,7 @@ class ContractValuedItem with BackboneType, _$ContractValuedItem {
     FhirDecimal? points,
 
     /// [pointsElement] ("_points") Extensions for points
-    @JsonKey(name: '_points') Element? pointsElement,
+    @JsonKey(name: '_points') PrimitiveElement? pointsElement,
 
     /// [net] Expresses the product of the Contract Valued Item unitQuantity and
     ///  the unitPriceAmt. For example, the formula: unit Quantity * unit Price
@@ -4434,13 +4444,13 @@ class ContractValuedItem with BackboneType, _$ContractValuedItem {
     String? payment,
 
     /// [paymentElement] ("_payment") Extensions for payment
-    @JsonKey(name: '_payment') Element? paymentElement,
+    @JsonKey(name: '_payment') PrimitiveElement? paymentElement,
 
     /// [paymentDate] When payment is due.
     FhirDateTime? paymentDate,
 
     /// [paymentDateElement] ("_paymentDate") Extensions for paymentDate
-    @JsonKey(name: '_paymentDate') Element? paymentDateElement,
+    @JsonKey(name: '_paymentDate') PrimitiveElement? paymentDateElement,
 
     /// [responsible] Who will make payment.
     Reference? responsible,
@@ -4499,7 +4509,7 @@ class ContractValuedItem with BackboneType, _$ContractValuedItem {
 /// [ContractAction] Legally enforceable, formally recorded unilateral or
 ///  bilateral directive i.e., a policy or agreement.
 @freezed
-class ContractAction with BackboneType, _$ContractAction {
+class ContractAction with _$ContractAction implements BackboneType {
   /// [ContractAction] Legally enforceable, formally recorded unilateral or
   ///  bilateral directive i.e., a policy or agreement.
   const ContractAction._();
@@ -4641,7 +4651,7 @@ class ContractAction with BackboneType, _$ContractAction {
     FhirBoolean? doNotPerform,
 
     /// [doNotPerformElement] ("_doNotPerform") Extensions for doNotPerform
-    @JsonKey(name: '_doNotPerform') Element? doNotPerformElement,
+    @JsonKey(name: '_doNotPerform') PrimitiveElement? doNotPerformElement,
 
     /// [type] Activity or service obligation to be done or not done, performed or
     ///  not performed, effectuated or not by this Contract term.
@@ -4681,7 +4691,8 @@ class ContractAction with BackboneType, _$ContractAction {
 
     /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
     ///  occurrenceDateTime
-    @JsonKey(name: '_occurrenceDateTime') Element? occurrenceDateTimeElement,
+    @JsonKey(name: '_occurrenceDateTime')
+    PrimitiveElement? occurrenceDateTimeElement,
 
     /// [occurrencePeriod] When action happens.
     Period? occurrencePeriod,
@@ -4782,7 +4793,7 @@ class ContractAction with BackboneType, _$ContractAction {
 /// [ContractSubject] Legally enforceable, formally recorded unilateral or
 ///  bilateral directive i.e., a policy or agreement.
 @freezed
-class ContractSubject with BackboneType, _$ContractSubject {
+class ContractSubject with _$ContractSubject implements BackboneType {
   /// [ContractSubject] Legally enforceable, formally recorded unilateral or
   ///  bilateral directive i.e., a policy or agreement.
   const ContractSubject._();
@@ -4885,7 +4896,7 @@ class ContractSubject with BackboneType, _$ContractSubject {
 /// [ContractSigner] Legally enforceable, formally recorded unilateral or
 ///  bilateral directive i.e., a policy or agreement.
 @freezed
-class ContractSigner with BackboneType, _$ContractSigner {
+class ContractSigner with _$ContractSigner implements BackboneType {
   /// [ContractSigner] Legally enforceable, formally recorded unilateral or
   ///  bilateral directive i.e., a policy or agreement.
   const ContractSigner._();
@@ -4993,7 +5004,7 @@ class ContractSigner with BackboneType, _$ContractSigner {
 /// [ContractFriendly] Legally enforceable, formally recorded unilateral or
 ///  bilateral directive i.e., a policy or agreement.
 @freezed
-class ContractFriendly with BackboneType, _$ContractFriendly {
+class ContractFriendly with _$ContractFriendly implements BackboneType {
   /// [ContractFriendly] Legally enforceable, formally recorded unilateral or
   ///  bilateral directive i.e., a policy or agreement.
   const ContractFriendly._();
@@ -5104,7 +5115,7 @@ class ContractFriendly with BackboneType, _$ContractFriendly {
 /// [ContractLegal] Legally enforceable, formally recorded unilateral or
 ///  bilateral directive i.e., a policy or agreement.
 @freezed
-class ContractLegal with BackboneType, _$ContractLegal {
+class ContractLegal with _$ContractLegal implements BackboneType {
   /// [ContractLegal] Legally enforceable, formally recorded unilateral or
   ///  bilateral directive i.e., a policy or agreement.
   const ContractLegal._();
@@ -5207,7 +5218,7 @@ class ContractLegal with BackboneType, _$ContractLegal {
 /// [ContractRule] Legally enforceable, formally recorded unilateral or
 ///  bilateral directive i.e., a policy or agreement.
 @freezed
-class ContractRule with BackboneType, _$ContractRule {
+class ContractRule with _$ContractRule implements BackboneType {
   /// [ContractRule] Legally enforceable, formally recorded unilateral or
   ///  bilateral directive i.e., a policy or agreement.
   const ContractRule._();
@@ -5316,7 +5327,9 @@ class ContractRule with BackboneType, _$ContractRule {
 ///  account balance information, for informing the subscriber of the benefits
 ///  provided.
 @freezed
-class ExplanationOfBenefit with Resource, _$ExplanationOfBenefit {
+class ExplanationOfBenefit
+    with _$ExplanationOfBenefit
+    implements DomainResource {
   /// [ExplanationOfBenefit] This resource provides: the claim details;
   ///  adjudication details from the processing of a Claim; and optionally
   ///  account balance information, for informing the subscriber of the benefits
@@ -5571,13 +5584,13 @@ class ExplanationOfBenefit with Resource, _$ExplanationOfBenefit {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -5627,7 +5640,7 @@ class ExplanationOfBenefit with Resource, _$ExplanationOfBenefit {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [type] The category of claim, e.g. oral, pharmacy, vision, institutional,
     ///  professional.
@@ -5653,7 +5666,7 @@ class ExplanationOfBenefit with Resource, _$ExplanationOfBenefit {
     FhirCode? use,
 
     /// [useElement] ("_use") Extensions for use
-    @JsonKey(name: '_use') Element? useElement,
+    @JsonKey(name: '_use') PrimitiveElement? useElement,
 
     /// [patient] The party to whom the professional services and/or products have
     ///  been supplied or are being considered and for whom actual for forecast
@@ -5667,7 +5680,7 @@ class ExplanationOfBenefit with Resource, _$ExplanationOfBenefit {
     FhirDateTime? created,
 
     /// [createdElement] ("_created") Extensions for created
-    @JsonKey(name: '_created') Element? createdElement,
+    @JsonKey(name: '_created') PrimitiveElement? createdElement,
 
     /// [enterer] Individual who created the claim, predetermination or
     ///  preauthorization.
@@ -5742,7 +5755,7 @@ class ExplanationOfBenefit with Resource, _$ExplanationOfBenefit {
     FhirCode? outcome,
 
     /// [outcomeElement] ("_outcome") Extensions for outcome
-    @JsonKey(name: '_outcome') Element? outcomeElement,
+    @JsonKey(name: '_outcome') PrimitiveElement? outcomeElement,
 
     /// [decision] The result of the claim, predetermination, or preauthorization
     ///  adjudication.
@@ -5753,7 +5766,7 @@ class ExplanationOfBenefit with Resource, _$ExplanationOfBenefit {
     String? disposition,
 
     /// [dispositionElement] ("_disposition") Extensions for disposition
-    @JsonKey(name: '_disposition') Element? dispositionElement,
+    @JsonKey(name: '_disposition') PrimitiveElement? dispositionElement,
 
     /// [preAuthRef] Reference from the Insurer which is used in later
     ///  communications which refers to this adjudication.
@@ -5790,7 +5803,7 @@ class ExplanationOfBenefit with Resource, _$ExplanationOfBenefit {
     FhirPositiveInt? precedence,
 
     /// [precedenceElement] ("_precedence") Extensions for precedence
-    @JsonKey(name: '_precedence') Element? precedenceElement,
+    @JsonKey(name: '_precedence') PrimitiveElement? precedenceElement,
 
     /// [insurance] Financial instruments for reimbursement for the health care
     ///  products and services specified on the claim.
@@ -6004,7 +6017,9 @@ class ExplanationOfBenefitRelated
 ///  account balance information, for informing the subscriber of the benefits
 ///  provided.
 @freezed
-class ExplanationOfBenefitEvent with BackboneType, _$ExplanationOfBenefitEvent {
+class ExplanationOfBenefitEvent
+    with _$ExplanationOfBenefitEvent
+    implements BackboneType {
   /// [ExplanationOfBenefitEvent] This resource provides: the claim details;
   ///  adjudication details from the processing of a Claim; and optionally
   ///  account balance information, for informing the subscriber of the benefits
@@ -6084,7 +6099,7 @@ class ExplanationOfBenefitEvent with BackboneType, _$ExplanationOfBenefitEvent {
     FhirDateTime? whenDateTime,
 
     /// [whenDateTimeElement] ("_whenDateTime") Extensions for whenDateTime
-    @JsonKey(name: '_whenDateTime') Element? whenDateTimeElement,
+    @JsonKey(name: '_whenDateTime') PrimitiveElement? whenDateTimeElement,
 
     /// [whenPeriod] A date or period in the past or future indicating when the
     ///  event occurred or is expectd to occur.
@@ -6127,7 +6142,9 @@ class ExplanationOfBenefitEvent with BackboneType, _$ExplanationOfBenefitEvent {
 ///  account balance information, for informing the subscriber of the benefits
 ///  provided.
 @freezed
-class ExplanationOfBenefitPayee with BackboneType, _$ExplanationOfBenefitPayee {
+class ExplanationOfBenefitPayee
+    with _$ExplanationOfBenefitPayee
+    implements BackboneType {
   /// [ExplanationOfBenefitPayee] This resource provides: the claim details;
   ///  adjudication details from the processing of a Claim; and optionally
   ///  account balance information, for informing the subscriber of the benefits
@@ -6322,7 +6339,7 @@ class ExplanationOfBenefitCareTeam
     FhirPositiveInt? sequence,
 
     /// [sequenceElement] ("_sequence") Extensions for sequence
-    @JsonKey(name: '_sequence') Element? sequenceElement,
+    @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
 
     /// [provider] Member of the team who provided the product or service.
     required Reference provider,
@@ -6332,7 +6349,7 @@ class ExplanationOfBenefitCareTeam
     FhirBoolean? responsible,
 
     /// [responsibleElement] ("_responsible") Extensions for responsible
-    @JsonKey(name: '_responsible') Element? responsibleElement,
+    @JsonKey(name: '_responsible') PrimitiveElement? responsibleElement,
 
     /// [role] The lead, assisting or supervising practitioner and their discipline
     ///  if a multidisciplinary team.
@@ -6495,7 +6512,7 @@ class ExplanationOfBenefitSupportingInfo
     FhirPositiveInt? sequence,
 
     /// [sequenceElement] ("_sequence") Extensions for sequence
-    @JsonKey(name: '_sequence') Element? sequenceElement,
+    @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
 
     /// [category] The general class of the information supplied: information;
     ///  exception; accident, employment; onset, etc.
@@ -6510,7 +6527,7 @@ class ExplanationOfBenefitSupportingInfo
     FhirDate? timingDate,
 
     /// [timingDateElement] ("_timingDate") Extensions for timingDate
-    @JsonKey(name: '_timingDate') Element? timingDateElement,
+    @JsonKey(name: '_timingDate') PrimitiveElement? timingDateElement,
 
     /// [timingPeriod] The date when or period to which this information refers.
     Period? timingPeriod,
@@ -6521,7 +6538,7 @@ class ExplanationOfBenefitSupportingInfo
     FhirBoolean? valueBoolean,
 
     /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
 
     /// [valueString] Additional data or information such as resources, documents,
     ///  images etc. including references to the data or the actual inclusion of
@@ -6529,7 +6546,7 @@ class ExplanationOfBenefitSupportingInfo
     String? valueString,
 
     /// [valueStringElement] ("_valueString") Extensions for valueString
-    @JsonKey(name: '_valueString') Element? valueStringElement,
+    @JsonKey(name: '_valueString') PrimitiveElement? valueStringElement,
 
     /// [valueQuantity] Additional data or information such as resources,
     ///  documents, images etc. including references to the data or the actual
@@ -6677,7 +6694,7 @@ class ExplanationOfBenefitDiagnosis
     FhirPositiveInt? sequence,
 
     /// [sequenceElement] ("_sequence") Extensions for sequence
-    @JsonKey(name: '_sequence') Element? sequenceElement,
+    @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
 
     /// [diagnosisCodeableConcept] The nature of illness or problem in a coded form
     ///  or as a reference to an external defined Condition.
@@ -6817,7 +6834,7 @@ class ExplanationOfBenefitProcedure
     FhirPositiveInt? sequence,
 
     /// [sequenceElement] ("_sequence") Extensions for sequence
-    @JsonKey(name: '_sequence') Element? sequenceElement,
+    @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
 
     /// [type] When the condition was observed or the relative ranking.
     List<CodeableConcept>? type,
@@ -6826,7 +6843,7 @@ class ExplanationOfBenefitProcedure
     FhirDateTime? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [procedureCodeableConcept] The code or reference to a Procedure resource
     ///  which identifies the clinical intervention performed.
@@ -6961,7 +6978,7 @@ class ExplanationOfBenefitInsurance
     FhirBoolean? focal,
 
     /// [focalElement] ("_focal") Extensions for focal
-    @JsonKey(name: '_focal') Element? focalElement,
+    @JsonKey(name: '_focal') PrimitiveElement? focalElement,
 
     /// [coverage] Reference to the insurance card level information contained in
     ///  the Coverage resource. The coverage issuing insurer will use these details
@@ -7096,7 +7113,7 @@ class ExplanationOfBenefitAccident
     FhirDate? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [type] The type or context of the accident event for the purposes of
     ///  selection of potential insurance coverages and determination of
@@ -7147,7 +7164,9 @@ class ExplanationOfBenefitAccident
 ///  account balance information, for informing the subscriber of the benefits
 ///  provided.
 @freezed
-class ExplanationOfBenefitItem with BackboneType, _$ExplanationOfBenefitItem {
+class ExplanationOfBenefitItem
+    with _$ExplanationOfBenefitItem
+    implements BackboneType {
   /// [ExplanationOfBenefitItem] This resource provides: the claim details;
   ///  adjudication details from the processing of a Claim; and optionally
   ///  account balance information, for informing the subscriber of the benefits
@@ -7324,7 +7343,7 @@ class ExplanationOfBenefitItem with BackboneType, _$ExplanationOfBenefitItem {
     FhirPositiveInt? sequence,
 
     /// [sequenceElement] ("_sequence") Extensions for sequence
-    @JsonKey(name: '_sequence') Element? sequenceElement,
+    @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
 
     /// [careTeamSequence] Care team members related to this service or product.
     List<FhirPositiveInt>? careTeamSequence,
@@ -7401,7 +7420,7 @@ class ExplanationOfBenefitItem with BackboneType, _$ExplanationOfBenefitItem {
     FhirDate? servicedDate,
 
     /// [servicedDateElement] ("_servicedDate") Extensions for servicedDate
-    @JsonKey(name: '_servicedDate') Element? servicedDateElement,
+    @JsonKey(name: '_servicedDate') PrimitiveElement? servicedDateElement,
 
     /// [servicedPeriod] The date or dates when the service or product was
     ///  supplied, performed or completed.
@@ -7436,7 +7455,7 @@ class ExplanationOfBenefitItem with BackboneType, _$ExplanationOfBenefitItem {
     FhirDecimal? factor,
 
     /// [factorElement] ("_factor") Extensions for factor
-    @JsonKey(name: '_factor') Element? factorElement,
+    @JsonKey(name: '_factor') PrimitiveElement? factorElement,
 
     /// [tax] The total of taxes applicable for this product or service.
     Money? tax,
@@ -7712,7 +7731,7 @@ class ExplanationOfBenefitReviewOutcome
     String? preAuthRef,
 
     /// [preAuthRefElement] ("_preAuthRef") Extensions for preAuthRef
-    @JsonKey(name: '_preAuthRef') Element? preAuthRefElement,
+    @JsonKey(name: '_preAuthRef') PrimitiveElement? preAuthRefElement,
 
     /// [preAuthPeriod] The time frame during which this authorization is effective.
     Period? preAuthPeriod,
@@ -8029,7 +8048,7 @@ class ExplanationOfBenefitDetail
     FhirPositiveInt? sequence,
 
     /// [sequenceElement] ("_sequence") Extensions for sequence
-    @JsonKey(name: '_sequence') Element? sequenceElement,
+    @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
 
     /// [traceNumber] Trace number for tracking purposes. May be defined at the
     ///  jurisdiction level or between trading partners.
@@ -8086,7 +8105,7 @@ class ExplanationOfBenefitDetail
     FhirDecimal? factor,
 
     /// [factorElement] ("_factor") Extensions for factor
-    @JsonKey(name: '_factor') Element? factorElement,
+    @JsonKey(name: '_factor') PrimitiveElement? factorElement,
 
     /// [tax] The total of taxes applicable for this product or service.
     Money? tax,
@@ -8287,7 +8306,7 @@ class ExplanationOfBenefitSubDetail
     FhirPositiveInt? sequence,
 
     /// [sequenceElement] ("_sequence") Extensions for sequence
-    @JsonKey(name: '_sequence') Element? sequenceElement,
+    @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
 
     /// [traceNumber] Trace number for tracking purposes. May be defined at the
     ///  jurisdiction level or between trading partners.
@@ -8344,7 +8363,7 @@ class ExplanationOfBenefitSubDetail
     FhirDecimal? factor,
 
     /// [factorElement] ("_factor") Extensions for factor
-    @JsonKey(name: '_factor') Element? factorElement,
+    @JsonKey(name: '_factor') PrimitiveElement? factorElement,
 
     /// [tax] The total of taxes applicable for this product or service.
     Money? tax,
@@ -8631,7 +8650,7 @@ class ExplanationOfBenefitAddItem
     FhirDate? servicedDate,
 
     /// [servicedDateElement] ("_servicedDate") Extensions for servicedDate
-    @JsonKey(name: '_servicedDate') Element? servicedDateElement,
+    @JsonKey(name: '_servicedDate') PrimitiveElement? servicedDateElement,
 
     /// [servicedPeriod] The date or dates when the service or product was
     ///  supplied, performed or completed.
@@ -8666,7 +8685,7 @@ class ExplanationOfBenefitAddItem
     FhirDecimal? factor,
 
     /// [factorElement] ("_factor") Extensions for factor
-    @JsonKey(name: '_factor') Element? factorElement,
+    @JsonKey(name: '_factor') PrimitiveElement? factorElement,
 
     /// [tax] The total of taxes applicable for this product or service.
     Money? tax,
@@ -9014,7 +9033,7 @@ class ExplanationOfBenefitDetail1
     FhirDecimal? factor,
 
     /// [factorElement] ("_factor") Extensions for factor
-    @JsonKey(name: '_factor') Element? factorElement,
+    @JsonKey(name: '_factor') PrimitiveElement? factorElement,
 
     /// [tax] The total of taxes applicable for this product or service.
     Money? tax,
@@ -9244,7 +9263,7 @@ class ExplanationOfBenefitSubDetail1
     FhirDecimal? factor,
 
     /// [factorElement] ("_factor") Extensions for factor
-    @JsonKey(name: '_factor') Element? factorElement,
+    @JsonKey(name: '_factor') PrimitiveElement? factorElement,
 
     /// [tax] The total of taxes applicable for this product or service.
     Money? tax,
@@ -9306,7 +9325,9 @@ class ExplanationOfBenefitSubDetail1
 ///  account balance information, for informing the subscriber of the benefits
 ///  provided.
 @freezed
-class ExplanationOfBenefitTotal with BackboneType, _$ExplanationOfBenefitTotal {
+class ExplanationOfBenefitTotal
+    with _$ExplanationOfBenefitTotal
+    implements BackboneType {
   /// [ExplanationOfBenefitTotal] This resource provides: the claim details;
   ///  adjudication details from the processing of a Claim; and optionally
   ///  account balance information, for informing the subscriber of the benefits
@@ -9519,7 +9540,7 @@ class ExplanationOfBenefitPayment
     FhirDate? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') Element? dateElement,
+    @JsonKey(name: '_date') PrimitiveElement? dateElement,
 
     /// [amount] Benefits payable less any payment adjustment.
     Money? amount,
@@ -9644,7 +9665,7 @@ class ExplanationOfBenefitProcessNote
     FhirPositiveInt? number,
 
     /// [numberElement] ("_number") Extensions for number
-    @JsonKey(name: '_number') Element? numberElement,
+    @JsonKey(name: '_number') PrimitiveElement? numberElement,
 
     /// [type] The business purpose of the note text.
     CodeableConcept? type,
@@ -9653,7 +9674,7 @@ class ExplanationOfBenefitProcessNote
     String? text,
 
     /// [textElement] ("_text") Extensions for text
-    @JsonKey(name: '_text') Element? textElement,
+    @JsonKey(name: '_text') PrimitiveElement? textElement,
 
     /// [language] A code to define the language used in the text of the note.
     CodeableConcept? language,
@@ -9797,19 +9818,19 @@ class ExplanationOfBenefitBenefitBalance
     FhirBoolean? excluded,
 
     /// [excludedElement] ("_excluded") Extensions for excluded
-    @JsonKey(name: '_excluded') Element? excludedElement,
+    @JsonKey(name: '_excluded') PrimitiveElement? excludedElement,
 
     /// [name] A short name or tag for the benefit.
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [description] A richer description of the benefit or services covered.
     String? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [network] Is a flag to indicate whether the benefits refer to in-network
     ///  providers or out-of-network providers.
@@ -9960,14 +9981,15 @@ class ExplanationOfBenefitFinancial
 
     /// [allowedUnsignedIntElement] ("_allowedUnsignedInt") Extensions for
     ///  allowedUnsignedInt
-    @JsonKey(name: '_allowedUnsignedInt') Element? allowedUnsignedIntElement,
+    @JsonKey(name: '_allowedUnsignedInt')
+    PrimitiveElement? allowedUnsignedIntElement,
 
     /// [allowedString] The quantity of the benefit which is permitted under the
     ///  coverage.
     String? allowedString,
 
     /// [allowedStringElement] ("_allowedString") Extensions for allowedString
-    @JsonKey(name: '_allowedString') Element? allowedStringElement,
+    @JsonKey(name: '_allowedString') PrimitiveElement? allowedStringElement,
 
     /// [allowedMoney] The quantity of the benefit which is permitted under the
     ///  coverage.
@@ -9978,7 +10000,7 @@ class ExplanationOfBenefitFinancial
     FhirUnsignedInt? usedUnsignedInt,
 
     /// [usedUnsignedIntElement] ("_usedUnsignedInt") Extensions for usedUnsignedInt
-    @JsonKey(name: '_usedUnsignedInt') Element? usedUnsignedIntElement,
+    @JsonKey(name: '_usedUnsignedInt') PrimitiveElement? usedUnsignedIntElement,
 
     /// [usedMoney] The quantity of the benefit which have been consumed to date.
     Money? usedMoney,
@@ -10019,7 +10041,7 @@ class ExplanationOfBenefitFinancial
 /// [InsurancePlan] Details of a Health Insurance product/plan provided by an
 ///  organization.
 @freezed
-class InsurancePlan with Resource, _$InsurancePlan {
+class InsurancePlan with _$InsurancePlan implements DomainResource {
   /// [InsurancePlan] Details of a Health Insurance product/plan provided by an
   ///  organization.
   const InsurancePlan._();
@@ -10149,13 +10171,13 @@ class InsurancePlan with Resource, _$InsurancePlan {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -10203,7 +10225,7 @@ class InsurancePlan with Resource, _$InsurancePlan {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [type] The kind of health insurance product.
     List<CodeableConcept>? type,
@@ -10213,7 +10235,7 @@ class InsurancePlan with Resource, _$InsurancePlan {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [alias] A list of alternate names that the product is known as, or was
     ///  known as in the past.
@@ -10302,7 +10324,9 @@ class InsurancePlan with Resource, _$InsurancePlan {
 /// [InsurancePlanCoverage] Details of a Health Insurance product/plan provided
 ///  by an organization.
 @freezed
-class InsurancePlanCoverage with BackboneType, _$InsurancePlanCoverage {
+class InsurancePlanCoverage
+    with _$InsurancePlanCoverage
+    implements BackboneType {
   /// [InsurancePlanCoverage] Details of a Health Insurance product/plan provided
   ///  by an organization.
   const InsurancePlanCoverage._();
@@ -10412,7 +10436,7 @@ class InsurancePlanCoverage with BackboneType, _$InsurancePlanCoverage {
 /// [InsurancePlanBenefit] Details of a Health Insurance product/plan provided
 ///  by an organization.
 @freezed
-class InsurancePlanBenefit with BackboneType, _$InsurancePlanBenefit {
+class InsurancePlanBenefit with _$InsurancePlanBenefit implements BackboneType {
   /// [InsurancePlanBenefit] Details of a Health Insurance product/plan provided
   ///  by an organization.
   const InsurancePlanBenefit._();
@@ -10489,7 +10513,7 @@ class InsurancePlanBenefit with BackboneType, _$InsurancePlanBenefit {
     String? requirement,
 
     /// [requirementElement] ("_requirement") Extensions for requirement
-    @JsonKey(name: '_requirement') Element? requirementElement,
+    @JsonKey(name: '_requirement') PrimitiveElement? requirementElement,
 
     /// [limit] The specific limits on the benefit.
     List<InsurancePlanLimit>? limit,
@@ -10529,7 +10553,7 @@ class InsurancePlanBenefit with BackboneType, _$InsurancePlanBenefit {
 /// [InsurancePlanLimit] Details of a Health Insurance product/plan provided by
 ///  an organization.
 @freezed
-class InsurancePlanLimit with BackboneType, _$InsurancePlanLimit {
+class InsurancePlanLimit with _$InsurancePlanLimit implements BackboneType {
   /// [InsurancePlanLimit] Details of a Health Insurance product/plan provided by
   ///  an organization.
   const InsurancePlanLimit._();
@@ -10634,7 +10658,7 @@ class InsurancePlanLimit with BackboneType, _$InsurancePlanLimit {
 /// [InsurancePlanPlan] Details of a Health Insurance product/plan provided by
 ///  an organization.
 @freezed
-class InsurancePlanPlan with BackboneType, _$InsurancePlanPlan {
+class InsurancePlanPlan with _$InsurancePlanPlan implements BackboneType {
   /// [InsurancePlanPlan] Details of a Health Insurance product/plan provided by
   ///  an organization.
   const InsurancePlanPlan._();
@@ -10763,7 +10787,9 @@ class InsurancePlanPlan with BackboneType, _$InsurancePlanPlan {
 /// [InsurancePlanGeneralCost] Details of a Health Insurance product/plan
 ///  provided by an organization.
 @freezed
-class InsurancePlanGeneralCost with BackboneType, _$InsurancePlanGeneralCost {
+class InsurancePlanGeneralCost
+    with _$InsurancePlanGeneralCost
+    implements BackboneType {
   /// [InsurancePlanGeneralCost] Details of a Health Insurance product/plan
   ///  provided by an organization.
   const InsurancePlanGeneralCost._();
@@ -10841,7 +10867,7 @@ class InsurancePlanGeneralCost with BackboneType, _$InsurancePlanGeneralCost {
     FhirPositiveInt? groupSize,
 
     /// [groupSizeElement] ("_groupSize") Extensions for groupSize
-    @JsonKey(name: '_groupSize') Element? groupSizeElement,
+    @JsonKey(name: '_groupSize') PrimitiveElement? groupSizeElement,
 
     /// [cost] Value of the cost.
     Money? cost,
@@ -10851,7 +10877,7 @@ class InsurancePlanGeneralCost with BackboneType, _$InsurancePlanGeneralCost {
     String? comment,
 
     /// [commentElement] ("_comment") Extensions for comment
-    @JsonKey(name: '_comment') Element? commentElement,
+    @JsonKey(name: '_comment') PrimitiveElement? commentElement,
   }) = _InsurancePlanGeneralCost;
 
   @override
@@ -10888,7 +10914,9 @@ class InsurancePlanGeneralCost with BackboneType, _$InsurancePlanGeneralCost {
 /// [InsurancePlanSpecificCost] Details of a Health Insurance product/plan
 ///  provided by an organization.
 @freezed
-class InsurancePlanSpecificCost with BackboneType, _$InsurancePlanSpecificCost {
+class InsurancePlanSpecificCost
+    with _$InsurancePlanSpecificCost
+    implements BackboneType {
   /// [InsurancePlanSpecificCost] Details of a Health Insurance product/plan
   ///  provided by an organization.
   const InsurancePlanSpecificCost._();
@@ -10993,7 +11021,9 @@ class InsurancePlanSpecificCost with BackboneType, _$InsurancePlanSpecificCost {
 /// [InsurancePlanBenefit1] Details of a Health Insurance product/plan provided
 ///  by an organization.
 @freezed
-class InsurancePlanBenefit1 with BackboneType, _$InsurancePlanBenefit1 {
+class InsurancePlanBenefit1
+    with _$InsurancePlanBenefit1
+    implements BackboneType {
   /// [InsurancePlanBenefit1] Details of a Health Insurance product/plan provided
   ///  by an organization.
   const InsurancePlanBenefit1._();
@@ -11098,7 +11128,7 @@ class InsurancePlanBenefit1 with BackboneType, _$InsurancePlanBenefit1 {
 /// [InsurancePlanCost] Details of a Health Insurance product/plan provided by
 ///  an organization.
 @freezed
-class InsurancePlanCost with BackboneType, _$InsurancePlanCost {
+class InsurancePlanCost with _$InsurancePlanCost implements BackboneType {
   /// [InsurancePlanCost] Details of a Health Insurance product/plan provided by
   ///  an organization.
   const InsurancePlanCost._();

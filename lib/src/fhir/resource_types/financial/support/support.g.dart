@@ -21,12 +21,14 @@ _$CoverageImpl _$$CoverageImplFromJson(Map<String, dynamic> json) =>
           : FhirUri.fromJson(json['implicitRules']),
       implicitRulesElement: json['_implicitRules'] == null
           ? null
-          : Element.fromJson(json['_implicitRules'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_implicitRules'] as Map<String, dynamic>),
       language:
           json['language'] == null ? null : FhirCode.fromJson(json['language']),
       languageElement: json['_language'] == null
           ? null
-          : Element.fromJson(json['_language'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_language'] as Map<String, dynamic>),
       text: json['text'] == null
           ? null
           : Narrative.fromJson(json['text'] as Map<String, dynamic>),
@@ -45,11 +47,11 @@ _$CoverageImpl _$$CoverageImplFromJson(Map<String, dynamic> json) =>
       status: json['status'] == null ? null : FhirCode.fromJson(json['status']),
       statusElement: json['_status'] == null
           ? null
-          : Element.fromJson(json['_status'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_status'] as Map<String, dynamic>),
       kind: json['kind'] == null ? null : FhirCode.fromJson(json['kind']),
       kindElement: json['_kind'] == null
           ? null
-          : Element.fromJson(json['_kind'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_kind'] as Map<String, dynamic>),
       paymentBy: (json['paymentBy'] as List<dynamic>?)
           ?.map((e) => CoveragePaymentBy.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -70,7 +72,8 @@ _$CoverageImpl _$$CoverageImplFromJson(Map<String, dynamic> json) =>
       dependent: json['dependent'] as String?,
       dependentElement: json['_dependent'] == null
           ? null
-          : Element.fromJson(json['_dependent'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_dependent'] as Map<String, dynamic>),
       relationship: json['relationship'] == null
           ? null
           : CodeableConcept.fromJson(
@@ -89,11 +92,11 @@ _$CoverageImpl _$$CoverageImplFromJson(Map<String, dynamic> json) =>
           : FhirPositiveInt.fromJson(json['order']),
       orderElement: json['_order'] == null
           ? null
-          : Element.fromJson(json['_order'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_order'] as Map<String, dynamic>),
       network: json['network'] as String?,
       networkElement: json['_network'] == null
           ? null
-          : Element.fromJson(json['_network'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_network'] as Map<String, dynamic>),
       costToBeneficiary: (json['costToBeneficiary'] as List<dynamic>?)
           ?.map((e) =>
               CoverageCostToBeneficiary.fromJson(e as Map<String, dynamic>))
@@ -103,7 +106,8 @@ _$CoverageImpl _$$CoverageImplFromJson(Map<String, dynamic> json) =>
           : FhirBoolean.fromJson(json['subrogation']),
       subrogationElement: json['_subrogation'] == null
           ? null
-          : Element.fromJson(json['_subrogation'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_subrogation'] as Map<String, dynamic>),
       contract: (json['contract'] as List<dynamic>?)
           ?.map((e) => Reference.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -346,7 +350,8 @@ _$CoveragePaymentByImpl _$$CoveragePaymentByImplFromJson(
       responsibility: json['responsibility'] as String?,
       responsibilityElement: json['_responsibility'] == null
           ? null
-          : Element.fromJson(json['_responsibility'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_responsibility'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$CoveragePaymentByImplToJson(
@@ -384,7 +389,7 @@ _$CoverageClassImpl _$$CoverageClassImplFromJson(Map<String, dynamic> json) =>
       name: json['name'] as String?,
       nameElement: json['_name'] == null
           ? null
-          : Element.fromJson(json['_name'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_name'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$CoverageClassImplToJson(_$CoverageClassImpl instance) {
@@ -523,12 +528,14 @@ _$CoverageEligibilityRequestImpl _$$CoverageEligibilityRequestImplFromJson(
           : FhirUri.fromJson(json['implicitRules']),
       implicitRulesElement: json['_implicitRules'] == null
           ? null
-          : Element.fromJson(json['_implicitRules'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_implicitRules'] as Map<String, dynamic>),
       language:
           json['language'] == null ? null : FhirCode.fromJson(json['language']),
       languageElement: json['_language'] == null
           ? null
-          : Element.fromJson(json['_language'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_language'] as Map<String, dynamic>),
       text: json['text'] == null
           ? null
           : Narrative.fromJson(json['text'] as Map<String, dynamic>),
@@ -547,7 +554,7 @@ _$CoverageEligibilityRequestImpl _$$CoverageEligibilityRequestImplFromJson(
       status: json['status'] == null ? null : FhirCode.fromJson(json['status']),
       statusElement: json['_status'] == null
           ? null
-          : Element.fromJson(json['_status'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_status'] as Map<String, dynamic>),
       priority: json['priority'] == null
           ? null
           : CodeableConcept.fromJson(json['priority'] as Map<String, dynamic>),
@@ -566,7 +573,8 @@ _$CoverageEligibilityRequestImpl _$$CoverageEligibilityRequestImplFromJson(
           : FhirDate.fromJson(json['servicedDate'] as String),
       servicedDateElement: json['_servicedDate'] == null
           ? null
-          : Element.fromJson(json['_servicedDate'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_servicedDate'] as Map<String, dynamic>),
       servicedPeriod: json['servicedPeriod'] == null
           ? null
           : Period.fromJson(json['servicedPeriod'] as Map<String, dynamic>),
@@ -575,7 +583,7 @@ _$CoverageEligibilityRequestImpl _$$CoverageEligibilityRequestImplFromJson(
           : FhirDateTime.fromJson(json['created'] as String),
       createdElement: json['_created'] == null
           ? null
-          : Element.fromJson(json['_created'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_created'] as Map<String, dynamic>),
       enterer: json['enterer'] == null
           ? null
           : Reference.fromJson(json['enterer'] as Map<String, dynamic>),
@@ -668,7 +676,8 @@ _$CoverageEligibilityRequestEventImpl
               : FhirDateTime.fromJson(json['whenDateTime'] as String),
           whenDateTimeElement: json['_whenDateTime'] == null
               ? null
-              : Element.fromJson(json['_whenDateTime'] as Map<String, dynamic>),
+              : PrimitiveElement.fromJson(
+                  json['_whenDateTime'] as Map<String, dynamic>),
           whenPeriod: json['whenPeriod'] == null
               ? null
               : Period.fromJson(json['whenPeriod'] as Map<String, dynamic>),
@@ -712,7 +721,8 @@ _$CoverageEligibilityRequestSupportingInfoImpl
               : FhirPositiveInt.fromJson(json['sequence']),
           sequenceElement: json['_sequence'] == null
               ? null
-              : Element.fromJson(json['_sequence'] as Map<String, dynamic>),
+              : PrimitiveElement.fromJson(
+                  json['_sequence'] as Map<String, dynamic>),
           information:
               Reference.fromJson(json['information'] as Map<String, dynamic>),
           appliesToAll: json['appliesToAll'] == null
@@ -720,7 +730,8 @@ _$CoverageEligibilityRequestSupportingInfoImpl
               : FhirBoolean.fromJson(json['appliesToAll']),
           appliesToAllElement: json['_appliesToAll'] == null
               ? null
-              : Element.fromJson(json['_appliesToAll'] as Map<String, dynamic>),
+              : PrimitiveElement.fromJson(
+                  json['_appliesToAll'] as Map<String, dynamic>),
         );
 
 Map<String, dynamic> _$$CoverageEligibilityRequestSupportingInfoImplToJson(
@@ -762,13 +773,14 @@ _$CoverageEligibilityRequestInsuranceImpl
               : FhirBoolean.fromJson(json['focal']),
           focalElement: json['_focal'] == null
               ? null
-              : Element.fromJson(json['_focal'] as Map<String, dynamic>),
+              : PrimitiveElement.fromJson(
+                  json['_focal'] as Map<String, dynamic>),
           coverage:
               Reference.fromJson(json['coverage'] as Map<String, dynamic>),
           businessArrangement: json['businessArrangement'] as String?,
           businessArrangementElement: json['_businessArrangement'] == null
               ? null
-              : Element.fromJson(
+              : PrimitiveElement.fromJson(
                   json['_businessArrangement'] as Map<String, dynamic>),
         );
 
@@ -936,12 +948,14 @@ _$CoverageEligibilityResponseImpl _$$CoverageEligibilityResponseImplFromJson(
           : FhirUri.fromJson(json['implicitRules']),
       implicitRulesElement: json['_implicitRules'] == null
           ? null
-          : Element.fromJson(json['_implicitRules'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_implicitRules'] as Map<String, dynamic>),
       language:
           json['language'] == null ? null : FhirCode.fromJson(json['language']),
       languageElement: json['_language'] == null
           ? null
-          : Element.fromJson(json['_language'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_language'] as Map<String, dynamic>),
       text: json['text'] == null
           ? null
           : Narrative.fromJson(json['text'] as Map<String, dynamic>),
@@ -960,7 +974,7 @@ _$CoverageEligibilityResponseImpl _$$CoverageEligibilityResponseImplFromJson(
       status: json['status'] == null ? null : FhirCode.fromJson(json['status']),
       statusElement: json['_status'] == null
           ? null
-          : Element.fromJson(json['_status'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_status'] as Map<String, dynamic>),
       purpose:
           (json['purpose'] as List<dynamic>?)?.map(FhirCode.fromJson).toList(),
       purposeElement: (json['_purpose'] as List<dynamic>?)
@@ -976,7 +990,8 @@ _$CoverageEligibilityResponseImpl _$$CoverageEligibilityResponseImplFromJson(
           : FhirDate.fromJson(json['servicedDate'] as String),
       servicedDateElement: json['_servicedDate'] == null
           ? null
-          : Element.fromJson(json['_servicedDate'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_servicedDate'] as Map<String, dynamic>),
       servicedPeriod: json['servicedPeriod'] == null
           ? null
           : Period.fromJson(json['servicedPeriod'] as Map<String, dynamic>),
@@ -985,7 +1000,7 @@ _$CoverageEligibilityResponseImpl _$$CoverageEligibilityResponseImplFromJson(
           : FhirDateTime.fromJson(json['created'] as String),
       createdElement: json['_created'] == null
           ? null
-          : Element.fromJson(json['_created'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_created'] as Map<String, dynamic>),
       requestor: json['requestor'] == null
           ? null
           : Reference.fromJson(json['requestor'] as Map<String, dynamic>),
@@ -994,11 +1009,12 @@ _$CoverageEligibilityResponseImpl _$$CoverageEligibilityResponseImplFromJson(
           json['outcome'] == null ? null : FhirCode.fromJson(json['outcome']),
       outcomeElement: json['_outcome'] == null
           ? null
-          : Element.fromJson(json['_outcome'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_outcome'] as Map<String, dynamic>),
       disposition: json['disposition'] as String?,
       dispositionElement: json['_disposition'] == null
           ? null
-          : Element.fromJson(json['_disposition'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_disposition'] as Map<String, dynamic>),
       insurer: Reference.fromJson(json['insurer'] as Map<String, dynamic>),
       insurance: (json['insurance'] as List<dynamic>?)
           ?.map((e) => CoverageEligibilityResponseInsurance.fromJson(
@@ -1007,7 +1023,8 @@ _$CoverageEligibilityResponseImpl _$$CoverageEligibilityResponseImplFromJson(
       preAuthRef: json['preAuthRef'] as String?,
       preAuthRefElement: json['_preAuthRef'] == null
           ? null
-          : Element.fromJson(json['_preAuthRef'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_preAuthRef'] as Map<String, dynamic>),
       form: json['form'] == null
           ? null
           : CodeableConcept.fromJson(json['form'] as Map<String, dynamic>),
@@ -1089,7 +1106,8 @@ _$CoverageEligibilityResponseEventImpl
               : FhirDateTime.fromJson(json['whenDateTime'] as String),
           whenDateTimeElement: json['_whenDateTime'] == null
               ? null
-              : Element.fromJson(json['_whenDateTime'] as Map<String, dynamic>),
+              : PrimitiveElement.fromJson(
+                  json['_whenDateTime'] as Map<String, dynamic>),
           whenPeriod: json['whenPeriod'] == null
               ? null
               : Period.fromJson(json['whenPeriod'] as Map<String, dynamic>),
@@ -1135,7 +1153,8 @@ _$CoverageEligibilityResponseInsuranceImpl
               : FhirBoolean.fromJson(json['inforce']),
           inforceElement: json['_inforce'] == null
               ? null
-              : Element.fromJson(json['_inforce'] as Map<String, dynamic>),
+              : PrimitiveElement.fromJson(
+                  json['_inforce'] as Map<String, dynamic>),
           benefitPeriod: json['benefitPeriod'] == null
               ? null
               : Period.fromJson(json['benefitPeriod'] as Map<String, dynamic>),
@@ -1197,15 +1216,18 @@ _$CoverageEligibilityResponseItemImpl
               : FhirBoolean.fromJson(json['excluded']),
           excludedElement: json['_excluded'] == null
               ? null
-              : Element.fromJson(json['_excluded'] as Map<String, dynamic>),
+              : PrimitiveElement.fromJson(
+                  json['_excluded'] as Map<String, dynamic>),
           name: json['name'] as String?,
           nameElement: json['_name'] == null
               ? null
-              : Element.fromJson(json['_name'] as Map<String, dynamic>),
+              : PrimitiveElement.fromJson(
+                  json['_name'] as Map<String, dynamic>),
           description: json['description'] as String?,
           descriptionElement: json['_description'] == null
               ? null
-              : Element.fromJson(json['_description'] as Map<String, dynamic>),
+              : PrimitiveElement.fromJson(
+                  json['_description'] as Map<String, dynamic>),
           network: json['network'] == null
               ? null
               : CodeableConcept.fromJson(
@@ -1225,7 +1247,7 @@ _$CoverageEligibilityResponseItemImpl
               : FhirBoolean.fromJson(json['authorizationRequired']),
           authorizationRequiredElement: json['_authorizationRequired'] == null
               ? null
-              : Element.fromJson(
+              : PrimitiveElement.fromJson(
                   json['_authorizationRequired'] as Map<String, dynamic>),
           authorizationSupporting: (json['authorizationSupporting']
                   as List<dynamic>?)
@@ -1236,7 +1258,7 @@ _$CoverageEligibilityResponseItemImpl
               : FhirUri.fromJson(json['authorizationUrl']),
           authorizationUrlElement: json['_authorizationUrl'] == null
               ? null
-              : Element.fromJson(
+              : PrimitiveElement.fromJson(
                   json['_authorizationUrl'] as Map<String, dynamic>),
         );
 
@@ -1297,12 +1319,12 @@ _$CoverageEligibilityResponseBenefitImpl
               : FhirUnsignedInt.fromJson(json['allowedUnsignedInt']),
           allowedUnsignedIntElement: json['_allowedUnsignedInt'] == null
               ? null
-              : Element.fromJson(
+              : PrimitiveElement.fromJson(
                   json['_allowedUnsignedInt'] as Map<String, dynamic>),
           allowedString: json['allowedString'] as String?,
           allowedStringElement: json['_allowedString'] == null
               ? null
-              : Element.fromJson(
+              : PrimitiveElement.fromJson(
                   json['_allowedString'] as Map<String, dynamic>),
           allowedMoney: json['allowedMoney'] == null
               ? null
@@ -1312,12 +1334,13 @@ _$CoverageEligibilityResponseBenefitImpl
               : FhirUnsignedInt.fromJson(json['usedUnsignedInt']),
           usedUnsignedIntElement: json['_usedUnsignedInt'] == null
               ? null
-              : Element.fromJson(
+              : PrimitiveElement.fromJson(
                   json['_usedUnsignedInt'] as Map<String, dynamic>),
           usedString: json['usedString'] as String?,
           usedStringElement: json['_usedString'] == null
               ? null
-              : Element.fromJson(json['_usedString'] as Map<String, dynamic>),
+              : PrimitiveElement.fromJson(
+                  json['_usedString'] as Map<String, dynamic>),
           usedMoney: json['usedMoney'] == null
               ? null
               : Money.fromJson(json['usedMoney'] as Map<String, dynamic>),
@@ -1411,12 +1434,14 @@ _$EnrollmentRequestImpl _$$EnrollmentRequestImplFromJson(
           : FhirUri.fromJson(json['implicitRules']),
       implicitRulesElement: json['_implicitRules'] == null
           ? null
-          : Element.fromJson(json['_implicitRules'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_implicitRules'] as Map<String, dynamic>),
       language:
           json['language'] == null ? null : FhirCode.fromJson(json['language']),
       languageElement: json['_language'] == null
           ? null
-          : Element.fromJson(json['_language'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_language'] as Map<String, dynamic>),
       text: json['text'] == null
           ? null
           : Narrative.fromJson(json['text'] as Map<String, dynamic>),
@@ -1435,13 +1460,13 @@ _$EnrollmentRequestImpl _$$EnrollmentRequestImplFromJson(
       status: json['status'] == null ? null : FhirCode.fromJson(json['status']),
       statusElement: json['_status'] == null
           ? null
-          : Element.fromJson(json['_status'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_status'] as Map<String, dynamic>),
       created: json['created'] == null
           ? null
           : FhirDateTime.fromJson(json['created'] as String),
       createdElement: json['_created'] == null
           ? null
-          : Element.fromJson(json['_created'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_created'] as Map<String, dynamic>),
       insurer: json['insurer'] == null
           ? null
           : Reference.fromJson(json['insurer'] as Map<String, dynamic>),
@@ -1510,12 +1535,14 @@ _$EnrollmentResponseImpl _$$EnrollmentResponseImplFromJson(
           : FhirUri.fromJson(json['implicitRules']),
       implicitRulesElement: json['_implicitRules'] == null
           ? null
-          : Element.fromJson(json['_implicitRules'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_implicitRules'] as Map<String, dynamic>),
       language:
           json['language'] == null ? null : FhirCode.fromJson(json['language']),
       languageElement: json['_language'] == null
           ? null
-          : Element.fromJson(json['_language'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_language'] as Map<String, dynamic>),
       text: json['text'] == null
           ? null
           : Narrative.fromJson(json['text'] as Map<String, dynamic>),
@@ -1534,7 +1561,7 @@ _$EnrollmentResponseImpl _$$EnrollmentResponseImplFromJson(
       status: json['status'] == null ? null : FhirCode.fromJson(json['status']),
       statusElement: json['_status'] == null
           ? null
-          : Element.fromJson(json['_status'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_status'] as Map<String, dynamic>),
       request: json['request'] == null
           ? null
           : Reference.fromJson(json['request'] as Map<String, dynamic>),
@@ -1542,17 +1569,18 @@ _$EnrollmentResponseImpl _$$EnrollmentResponseImplFromJson(
           json['outcome'] == null ? null : FhirCode.fromJson(json['outcome']),
       outcomeElement: json['_outcome'] == null
           ? null
-          : Element.fromJson(json['_outcome'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_outcome'] as Map<String, dynamic>),
       disposition: json['disposition'] as String?,
       dispositionElement: json['_disposition'] == null
           ? null
-          : Element.fromJson(json['_disposition'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(
+              json['_disposition'] as Map<String, dynamic>),
       created: json['created'] == null
           ? null
           : FhirDateTime.fromJson(json['created'] as String),
       createdElement: json['_created'] == null
           ? null
-          : Element.fromJson(json['_created'] as Map<String, dynamic>),
+          : PrimitiveElement.fromJson(json['_created'] as Map<String, dynamic>),
       organization: json['organization'] == null
           ? null
           : Reference.fromJson(json['organization'] as Map<String, dynamic>),

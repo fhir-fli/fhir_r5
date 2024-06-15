@@ -41,14 +41,15 @@ mixin _$FormularyItem {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -102,7 +103,7 @@ mixin _$FormularyItem {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -122,9 +123,9 @@ abstract class $FormularyItemCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -132,7 +133,7 @@ abstract class $FormularyItemCopyWith<$Res> {
       List<Identifier>? identifier,
       CodeableConcept? code,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement});
+      @JsonKey(name: '_status') PrimitiveElement? statusElement});
 
   $FhirMetaCopyWith<$Res>? get meta;
   $NarrativeCopyWith<$Res>? get text;
@@ -188,7 +189,7 @@ class _$FormularyItemCopyWithImpl<$Res, $Val extends FormularyItem>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -196,7 +197,7 @@ class _$FormularyItemCopyWithImpl<$Res, $Val extends FormularyItem>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -228,7 +229,7 @@ class _$FormularyItemCopyWithImpl<$Res, $Val extends FormularyItem>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -283,9 +284,9 @@ abstract class _$$FormularyItemImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -293,7 +294,7 @@ abstract class _$$FormularyItemImplCopyWith<$Res>
       List<Identifier>? identifier,
       CodeableConcept? code,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement});
+      @JsonKey(name: '_status') PrimitiveElement? statusElement});
 
   @override
   $FhirMetaCopyWith<$Res>? get meta;
@@ -350,7 +351,7 @@ class __$$FormularyItemImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -358,7 +359,7 @@ class __$$FormularyItemImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -390,7 +391,7 @@ class __$$FormularyItemImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -450,7 +451,7 @@ class _$FormularyItemImpl extends _FormularyItem {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -459,7 +460,7 @@ class _$FormularyItemImpl extends _FormularyItem {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -577,7 +578,7 @@ class _$FormularyItemImpl extends _FormularyItem {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   @override
   String toString() {
@@ -657,9 +658,10 @@ abstract class _FormularyItem extends FormularyItem {
           final FhirId? id,
           final FhirMeta? meta,
           final FhirUri? implicitRules,
-          @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+          @JsonKey(name: '_implicitRules')
+          final PrimitiveElement? implicitRulesElement,
           final FhirCode? language,
-          @JsonKey(name: '_language') final Element? languageElement,
+          @JsonKey(name: '_language') final PrimitiveElement? languageElement,
           final Narrative? text,
           final List<Resource>? contained,
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
@@ -667,7 +669,7 @@ abstract class _FormularyItem extends FormularyItem {
           final List<Identifier>? identifier,
           final CodeableConcept? code,
           final FhirCode? status,
-          @JsonKey(name: '_status') final Element? statusElement}) =
+          @JsonKey(name: '_status') final PrimitiveElement? statusElement}) =
       _$FormularyItemImpl;
   const _FormularyItem._() : super._();
 
@@ -701,7 +703,7 @@ abstract class _FormularyItem extends FormularyItem {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -710,7 +712,7 @@ abstract class _FormularyItem extends FormularyItem {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -771,7 +773,7 @@ abstract class _FormularyItem extends FormularyItem {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
   @JsonKey(ignore: true)
   _$$FormularyItemImplCopyWith<_$FormularyItemImpl> get copyWith =>
@@ -805,14 +807,15 @@ mixin _$Immunization {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -865,7 +868,7 @@ mixin _$Immunization {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [statusReason] Indicates the reason the immunization event was not
   ///  performed.
@@ -890,14 +893,15 @@ mixin _$Immunization {
 
   /// [lotNumberElement] ("_lotNumber") Extensions for lotNumber
   @JsonKey(name: '_lotNumber')
-  Element? get lotNumberElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get lotNumberElement => throw _privateConstructorUsedError;
 
   /// [expirationDate] Date vaccine batch expires.
   FhirDate? get expirationDate => throw _privateConstructorUsedError;
 
   /// [expirationDateElement] ("_expirationDate") Extensions for expirationDate
   @JsonKey(name: '_expirationDate')
-  Element? get expirationDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get expirationDateElement =>
+      throw _privateConstructorUsedError;
 
   /// [patient] The patient who either received or did not receive the
   ///  immunization.
@@ -923,7 +927,8 @@ mixin _$Immunization {
   /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
   ///  occurrenceDateTime
   @JsonKey(name: '_occurrenceDateTime')
-  Element? get occurrenceDateTimeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get occurrenceDateTimeElement =>
+      throw _privateConstructorUsedError;
 
   /// [occurrenceString] Date vaccine administered or was to be administered.
   String? get occurrenceString => throw _privateConstructorUsedError;
@@ -931,7 +936,8 @@ mixin _$Immunization {
   /// [occurrenceStringElement] ("_occurrenceString") Extensions for
   ///  occurrenceString
   @JsonKey(name: '_occurrenceString')
-  Element? get occurrenceStringElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get occurrenceStringElement =>
+      throw _privateConstructorUsedError;
 
   /// [primarySource] Indicates whether the data contained in the resource was
   ///  captured by the individual/organization which was responsible for the
@@ -943,7 +949,8 @@ mixin _$Immunization {
 
   /// [primarySourceElement] ("_primarySource") Extensions for primarySource
   @JsonKey(name: '_primarySource')
-  Element? get primarySourceElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get primarySourceElement =>
+      throw _privateConstructorUsedError;
 
   /// [informationSource] Typically the source of the data when the report of the
   ///  immunization event is not based on information from the person who
@@ -983,7 +990,8 @@ mixin _$Immunization {
 
   /// [isSubpotentElement] ("_isSubpotent") Extensions for isSubpotent
   @JsonKey(name: '_isSubpotent')
-  Element? get isSubpotentElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get isSubpotentElement =>
+      throw _privateConstructorUsedError;
 
   /// [subpotentReason] Reason why a dose is considered to be subpotent.
   List<CodeableConcept>? get subpotentReason =>
@@ -1028,9 +1036,9 @@ abstract class $ImmunizationCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -1038,24 +1046,26 @@ abstract class $ImmunizationCopyWith<$Res> {
       List<Identifier>? identifier,
       List<Reference>? basedOn,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       CodeableConcept? statusReason,
       CodeableConcept vaccineCode,
       CodeableReference? administeredProduct,
       CodeableReference? manufacturer,
       String? lotNumber,
-      @JsonKey(name: '_lotNumber') Element? lotNumberElement,
+      @JsonKey(name: '_lotNumber') PrimitiveElement? lotNumberElement,
       FhirDate? expirationDate,
-      @JsonKey(name: '_expirationDate') Element? expirationDateElement,
+      @JsonKey(name: '_expirationDate') PrimitiveElement? expirationDateElement,
       Reference patient,
       Reference? encounter,
       List<Reference>? supportingInformation,
       FhirDateTime? occurrenceDateTime,
-      @JsonKey(name: '_occurrenceDateTime') Element? occurrenceDateTimeElement,
+      @JsonKey(name: '_occurrenceDateTime')
+      PrimitiveElement? occurrenceDateTimeElement,
       String? occurrenceString,
-      @JsonKey(name: '_occurrenceString') Element? occurrenceStringElement,
+      @JsonKey(name: '_occurrenceString')
+      PrimitiveElement? occurrenceStringElement,
       FhirBoolean? primarySource,
-      @JsonKey(name: '_primarySource') Element? primarySourceElement,
+      @JsonKey(name: '_primarySource') PrimitiveElement? primarySourceElement,
       CodeableReference? informationSource,
       Reference? location,
       CodeableConcept? site,
@@ -1065,7 +1075,7 @@ abstract class $ImmunizationCopyWith<$Res> {
       List<Annotation>? note,
       List<CodeableReference>? reason,
       FhirBoolean? isSubpotent,
-      @JsonKey(name: '_isSubpotent') Element? isSubpotentElement,
+      @JsonKey(name: '_isSubpotent') PrimitiveElement? isSubpotentElement,
       List<CodeableConcept>? subpotentReason,
       List<ImmunizationProgramEligibility>? programEligibility,
       CodeableConcept? fundingSource,
@@ -1169,7 +1179,7 @@ class _$ImmunizationCopyWithImpl<$Res, $Val extends Immunization>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -1177,7 +1187,7 @@ class _$ImmunizationCopyWithImpl<$Res, $Val extends Immunization>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -1209,7 +1219,7 @@ class _$ImmunizationCopyWithImpl<$Res, $Val extends Immunization>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       statusReason: freezed == statusReason
           ? _value.statusReason
           : statusReason // ignore: cast_nullable_to_non_nullable
@@ -1233,7 +1243,7 @@ class _$ImmunizationCopyWithImpl<$Res, $Val extends Immunization>
       lotNumberElement: freezed == lotNumberElement
           ? _value.lotNumberElement
           : lotNumberElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       expirationDate: freezed == expirationDate
           ? _value.expirationDate
           : expirationDate // ignore: cast_nullable_to_non_nullable
@@ -1241,7 +1251,7 @@ class _$ImmunizationCopyWithImpl<$Res, $Val extends Immunization>
       expirationDateElement: freezed == expirationDateElement
           ? _value.expirationDateElement
           : expirationDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       patient: null == patient
           ? _value.patient
           : patient // ignore: cast_nullable_to_non_nullable
@@ -1261,7 +1271,7 @@ class _$ImmunizationCopyWithImpl<$Res, $Val extends Immunization>
       occurrenceDateTimeElement: freezed == occurrenceDateTimeElement
           ? _value.occurrenceDateTimeElement
           : occurrenceDateTimeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       occurrenceString: freezed == occurrenceString
           ? _value.occurrenceString
           : occurrenceString // ignore: cast_nullable_to_non_nullable
@@ -1269,7 +1279,7 @@ class _$ImmunizationCopyWithImpl<$Res, $Val extends Immunization>
       occurrenceStringElement: freezed == occurrenceStringElement
           ? _value.occurrenceStringElement
           : occurrenceStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       primarySource: freezed == primarySource
           ? _value.primarySource
           : primarySource // ignore: cast_nullable_to_non_nullable
@@ -1277,7 +1287,7 @@ class _$ImmunizationCopyWithImpl<$Res, $Val extends Immunization>
       primarySourceElement: freezed == primarySourceElement
           ? _value.primarySourceElement
           : primarySourceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       informationSource: freezed == informationSource
           ? _value.informationSource
           : informationSource // ignore: cast_nullable_to_non_nullable
@@ -1317,7 +1327,7 @@ class _$ImmunizationCopyWithImpl<$Res, $Val extends Immunization>
       isSubpotentElement: freezed == isSubpotentElement
           ? _value.isSubpotentElement
           : isSubpotentElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       subpotentReason: freezed == subpotentReason
           ? _value.subpotentReason
           : subpotentReason // ignore: cast_nullable_to_non_nullable
@@ -1517,9 +1527,9 @@ abstract class _$$ImmunizationImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -1527,24 +1537,26 @@ abstract class _$$ImmunizationImplCopyWith<$Res>
       List<Identifier>? identifier,
       List<Reference>? basedOn,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       CodeableConcept? statusReason,
       CodeableConcept vaccineCode,
       CodeableReference? administeredProduct,
       CodeableReference? manufacturer,
       String? lotNumber,
-      @JsonKey(name: '_lotNumber') Element? lotNumberElement,
+      @JsonKey(name: '_lotNumber') PrimitiveElement? lotNumberElement,
       FhirDate? expirationDate,
-      @JsonKey(name: '_expirationDate') Element? expirationDateElement,
+      @JsonKey(name: '_expirationDate') PrimitiveElement? expirationDateElement,
       Reference patient,
       Reference? encounter,
       List<Reference>? supportingInformation,
       FhirDateTime? occurrenceDateTime,
-      @JsonKey(name: '_occurrenceDateTime') Element? occurrenceDateTimeElement,
+      @JsonKey(name: '_occurrenceDateTime')
+      PrimitiveElement? occurrenceDateTimeElement,
       String? occurrenceString,
-      @JsonKey(name: '_occurrenceString') Element? occurrenceStringElement,
+      @JsonKey(name: '_occurrenceString')
+      PrimitiveElement? occurrenceStringElement,
       FhirBoolean? primarySource,
-      @JsonKey(name: '_primarySource') Element? primarySourceElement,
+      @JsonKey(name: '_primarySource') PrimitiveElement? primarySourceElement,
       CodeableReference? informationSource,
       Reference? location,
       CodeableConcept? site,
@@ -1554,7 +1566,7 @@ abstract class _$$ImmunizationImplCopyWith<$Res>
       List<Annotation>? note,
       List<CodeableReference>? reason,
       FhirBoolean? isSubpotent,
-      @JsonKey(name: '_isSubpotent') Element? isSubpotentElement,
+      @JsonKey(name: '_isSubpotent') PrimitiveElement? isSubpotentElement,
       List<CodeableConcept>? subpotentReason,
       List<ImmunizationProgramEligibility>? programEligibility,
       CodeableConcept? fundingSource,
@@ -1670,7 +1682,7 @@ class __$$ImmunizationImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -1678,7 +1690,7 @@ class __$$ImmunizationImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -1710,7 +1722,7 @@ class __$$ImmunizationImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       statusReason: freezed == statusReason
           ? _value.statusReason
           : statusReason // ignore: cast_nullable_to_non_nullable
@@ -1734,7 +1746,7 @@ class __$$ImmunizationImplCopyWithImpl<$Res>
       lotNumberElement: freezed == lotNumberElement
           ? _value.lotNumberElement
           : lotNumberElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       expirationDate: freezed == expirationDate
           ? _value.expirationDate
           : expirationDate // ignore: cast_nullable_to_non_nullable
@@ -1742,7 +1754,7 @@ class __$$ImmunizationImplCopyWithImpl<$Res>
       expirationDateElement: freezed == expirationDateElement
           ? _value.expirationDateElement
           : expirationDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       patient: null == patient
           ? _value.patient
           : patient // ignore: cast_nullable_to_non_nullable
@@ -1762,7 +1774,7 @@ class __$$ImmunizationImplCopyWithImpl<$Res>
       occurrenceDateTimeElement: freezed == occurrenceDateTimeElement
           ? _value.occurrenceDateTimeElement
           : occurrenceDateTimeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       occurrenceString: freezed == occurrenceString
           ? _value.occurrenceString
           : occurrenceString // ignore: cast_nullable_to_non_nullable
@@ -1770,7 +1782,7 @@ class __$$ImmunizationImplCopyWithImpl<$Res>
       occurrenceStringElement: freezed == occurrenceStringElement
           ? _value.occurrenceStringElement
           : occurrenceStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       primarySource: freezed == primarySource
           ? _value.primarySource
           : primarySource // ignore: cast_nullable_to_non_nullable
@@ -1778,7 +1790,7 @@ class __$$ImmunizationImplCopyWithImpl<$Res>
       primarySourceElement: freezed == primarySourceElement
           ? _value.primarySourceElement
           : primarySourceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       informationSource: freezed == informationSource
           ? _value.informationSource
           : informationSource // ignore: cast_nullable_to_non_nullable
@@ -1818,7 +1830,7 @@ class __$$ImmunizationImplCopyWithImpl<$Res>
       isSubpotentElement: freezed == isSubpotentElement
           ? _value.isSubpotentElement
           : isSubpotentElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       subpotentReason: freezed == subpotentReason
           ? _value._subpotentReason
           : subpotentReason // ignore: cast_nullable_to_non_nullable
@@ -1939,7 +1951,7 @@ class _$ImmunizationImpl extends _Immunization {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -1948,7 +1960,7 @@ class _$ImmunizationImpl extends _Immunization {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -2075,7 +2087,7 @@ class _$ImmunizationImpl extends _Immunization {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [statusReason] Indicates the reason the immunization event was not
   ///  performed.
@@ -2105,7 +2117,7 @@ class _$ImmunizationImpl extends _Immunization {
   /// [lotNumberElement] ("_lotNumber") Extensions for lotNumber
   @override
   @JsonKey(name: '_lotNumber')
-  final Element? lotNumberElement;
+  final PrimitiveElement? lotNumberElement;
 
   /// [expirationDate] Date vaccine batch expires.
   @override
@@ -2114,7 +2126,7 @@ class _$ImmunizationImpl extends _Immunization {
   /// [expirationDateElement] ("_expirationDate") Extensions for expirationDate
   @override
   @JsonKey(name: '_expirationDate')
-  final Element? expirationDateElement;
+  final PrimitiveElement? expirationDateElement;
 
   /// [patient] The patient who either received or did not receive the
   ///  immunization.
@@ -2160,7 +2172,7 @@ class _$ImmunizationImpl extends _Immunization {
   ///  occurrenceDateTime
   @override
   @JsonKey(name: '_occurrenceDateTime')
-  final Element? occurrenceDateTimeElement;
+  final PrimitiveElement? occurrenceDateTimeElement;
 
   /// [occurrenceString] Date vaccine administered or was to be administered.
   @override
@@ -2170,7 +2182,7 @@ class _$ImmunizationImpl extends _Immunization {
   ///  occurrenceString
   @override
   @JsonKey(name: '_occurrenceString')
-  final Element? occurrenceStringElement;
+  final PrimitiveElement? occurrenceStringElement;
 
   /// [primarySource] Indicates whether the data contained in the resource was
   ///  captured by the individual/organization which was responsible for the
@@ -2184,7 +2196,7 @@ class _$ImmunizationImpl extends _Immunization {
   /// [primarySourceElement] ("_primarySource") Extensions for primarySource
   @override
   @JsonKey(name: '_primarySource')
-  final Element? primarySourceElement;
+  final PrimitiveElement? primarySourceElement;
 
   /// [informationSource] Typically the source of the data when the report of the
   ///  immunization event is not based on information from the person who
@@ -2262,7 +2274,7 @@ class _$ImmunizationImpl extends _Immunization {
   /// [isSubpotentElement] ("_isSubpotent") Extensions for isSubpotent
   @override
   @JsonKey(name: '_isSubpotent')
-  final Element? isSubpotentElement;
+  final PrimitiveElement? isSubpotentElement;
 
   /// [subpotentReason] Reason why a dose is considered to be subpotent.
   final List<CodeableConcept>? _subpotentReason;
@@ -2500,9 +2512,10 @@ abstract class _Immunization extends Immunization {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
@@ -2510,26 +2523,28 @@ abstract class _Immunization extends Immunization {
       final List<Identifier>? identifier,
       final List<Reference>? basedOn,
       final FhirCode? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final CodeableConcept? statusReason,
       required final CodeableConcept vaccineCode,
       final CodeableReference? administeredProduct,
       final CodeableReference? manufacturer,
       final String? lotNumber,
-      @JsonKey(name: '_lotNumber') final Element? lotNumberElement,
+      @JsonKey(name: '_lotNumber') final PrimitiveElement? lotNumberElement,
       final FhirDate? expirationDate,
-      @JsonKey(name: '_expirationDate') final Element? expirationDateElement,
+      @JsonKey(name: '_expirationDate')
+      final PrimitiveElement? expirationDateElement,
       required final Reference patient,
       final Reference? encounter,
       final List<Reference>? supportingInformation,
       final FhirDateTime? occurrenceDateTime,
       @JsonKey(name: '_occurrenceDateTime')
-      final Element? occurrenceDateTimeElement,
+      final PrimitiveElement? occurrenceDateTimeElement,
       final String? occurrenceString,
       @JsonKey(name: '_occurrenceString')
-      final Element? occurrenceStringElement,
+      final PrimitiveElement? occurrenceStringElement,
       final FhirBoolean? primarySource,
-      @JsonKey(name: '_primarySource') final Element? primarySourceElement,
+      @JsonKey(name: '_primarySource')
+      final PrimitiveElement? primarySourceElement,
       final CodeableReference? informationSource,
       final Reference? location,
       final CodeableConcept? site,
@@ -2539,7 +2554,7 @@ abstract class _Immunization extends Immunization {
       final List<Annotation>? note,
       final List<CodeableReference>? reason,
       final FhirBoolean? isSubpotent,
-      @JsonKey(name: '_isSubpotent') final Element? isSubpotentElement,
+      @JsonKey(name: '_isSubpotent') final PrimitiveElement? isSubpotentElement,
       final List<CodeableConcept>? subpotentReason,
       final List<ImmunizationProgramEligibility>? programEligibility,
       final CodeableConcept? fundingSource,
@@ -2578,7 +2593,7 @@ abstract class _Immunization extends Immunization {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -2587,7 +2602,7 @@ abstract class _Immunization extends Immunization {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -2647,7 +2662,7 @@ abstract class _Immunization extends Immunization {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [statusReason] Indicates the reason the immunization event was not
@@ -2677,7 +2692,7 @@ abstract class _Immunization extends Immunization {
 
   /// [lotNumberElement] ("_lotNumber") Extensions for lotNumber
   @JsonKey(name: '_lotNumber')
-  Element? get lotNumberElement;
+  PrimitiveElement? get lotNumberElement;
   @override
 
   /// [expirationDate] Date vaccine batch expires.
@@ -2686,7 +2701,7 @@ abstract class _Immunization extends Immunization {
 
   /// [expirationDateElement] ("_expirationDate") Extensions for expirationDate
   @JsonKey(name: '_expirationDate')
-  Element? get expirationDateElement;
+  PrimitiveElement? get expirationDateElement;
   @override
 
   /// [patient] The patient who either received or did not receive the
@@ -2716,7 +2731,7 @@ abstract class _Immunization extends Immunization {
   /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
   ///  occurrenceDateTime
   @JsonKey(name: '_occurrenceDateTime')
-  Element? get occurrenceDateTimeElement;
+  PrimitiveElement? get occurrenceDateTimeElement;
   @override
 
   /// [occurrenceString] Date vaccine administered or was to be administered.
@@ -2726,7 +2741,7 @@ abstract class _Immunization extends Immunization {
   /// [occurrenceStringElement] ("_occurrenceString") Extensions for
   ///  occurrenceString
   @JsonKey(name: '_occurrenceString')
-  Element? get occurrenceStringElement;
+  PrimitiveElement? get occurrenceStringElement;
   @override
 
   /// [primarySource] Indicates whether the data contained in the resource was
@@ -2740,7 +2755,7 @@ abstract class _Immunization extends Immunization {
 
   /// [primarySourceElement] ("_primarySource") Extensions for primarySource
   @JsonKey(name: '_primarySource')
-  Element? get primarySourceElement;
+  PrimitiveElement? get primarySourceElement;
   @override
 
   /// [informationSource] Typically the source of the data when the report of the
@@ -2788,7 +2803,7 @@ abstract class _Immunization extends Immunization {
 
   /// [isSubpotentElement] ("_isSubpotent") Extensions for isSubpotent
   @JsonKey(name: '_isSubpotent')
-  Element? get isSubpotentElement;
+  PrimitiveElement? get isSubpotentElement;
   @override
 
   /// [subpotentReason] Reason why a dose is considered to be subpotent.
@@ -3645,7 +3660,7 @@ mixin _$ImmunizationReaction {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [manifestation] Details of the reaction.
   CodeableReference? get manifestation => throw _privateConstructorUsedError;
@@ -3655,7 +3670,7 @@ mixin _$ImmunizationReaction {
 
   /// [reportedElement] ("_reported") Extensions for reported
   @JsonKey(name: '_reported')
-  Element? get reportedElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get reportedElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -3674,10 +3689,10 @@ abstract class $ImmunizationReactionCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       CodeableReference? manifestation,
       FhirBoolean? reported,
-      @JsonKey(name: '_reported') Element? reportedElement});
+      @JsonKey(name: '_reported') PrimitiveElement? reportedElement});
 
   $CodeableReferenceCopyWith<$Res>? get manifestation;
 }
@@ -3725,7 +3740,7 @@ class _$ImmunizationReactionCopyWithImpl<$Res,
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       manifestation: freezed == manifestation
           ? _value.manifestation
           : manifestation // ignore: cast_nullable_to_non_nullable
@@ -3737,7 +3752,7 @@ class _$ImmunizationReactionCopyWithImpl<$Res,
       reportedElement: freezed == reportedElement
           ? _value.reportedElement
           : reportedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -3767,10 +3782,10 @@ abstract class _$$ImmunizationReactionImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       CodeableReference? manifestation,
       FhirBoolean? reported,
-      @JsonKey(name: '_reported') Element? reportedElement});
+      @JsonKey(name: '_reported') PrimitiveElement? reportedElement});
 
   @override
   $CodeableReferenceCopyWith<$Res>? get manifestation;
@@ -3816,7 +3831,7 @@ class __$$ImmunizationReactionImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       manifestation: freezed == manifestation
           ? _value.manifestation
           : manifestation // ignore: cast_nullable_to_non_nullable
@@ -3828,7 +3843,7 @@ class __$$ImmunizationReactionImplCopyWithImpl<$Res>
       reportedElement: freezed == reportedElement
           ? _value.reportedElement
           : reportedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -3924,7 +3939,7 @@ class _$ImmunizationReactionImpl extends _ImmunizationReaction {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [manifestation] Details of the reaction.
   @override
@@ -3937,7 +3952,7 @@ class _$ImmunizationReactionImpl extends _ImmunizationReaction {
   /// [reportedElement] ("_reported") Extensions for reported
   @override
   @JsonKey(name: '_reported')
-  final Element? reportedElement;
+  final PrimitiveElement? reportedElement;
 
   @override
   String toString() {
@@ -3996,15 +4011,15 @@ class _$ImmunizationReactionImpl extends _ImmunizationReaction {
 
 abstract class _ImmunizationReaction extends ImmunizationReaction {
   const factory _ImmunizationReaction(
-          {final String? id,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final FhirDateTime? date,
-          @JsonKey(name: '_date') final Element? dateElement,
-          final CodeableReference? manifestation,
-          final FhirBoolean? reported,
-          @JsonKey(name: '_reported') final Element? reportedElement}) =
-      _$ImmunizationReactionImpl;
+      {final String? id,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final FhirDateTime? date,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
+      final CodeableReference? manifestation,
+      final FhirBoolean? reported,
+      @JsonKey(name: '_reported')
+      final PrimitiveElement? reportedElement}) = _$ImmunizationReactionImpl;
   const _ImmunizationReaction._() : super._();
 
   factory _ImmunizationReaction.fromJson(Map<String, dynamic> json) =
@@ -4048,7 +4063,7 @@ abstract class _ImmunizationReaction extends ImmunizationReaction {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [manifestation] Details of the reaction.
@@ -4061,7 +4076,7 @@ abstract class _ImmunizationReaction extends ImmunizationReaction {
 
   /// [reportedElement] ("_reported") Extensions for reported
   @JsonKey(name: '_reported')
-  Element? get reportedElement;
+  PrimitiveElement? get reportedElement;
   @override
   @JsonKey(ignore: true)
   _$$ImmunizationReactionImplCopyWith<_$ImmunizationReactionImpl>
@@ -4109,7 +4124,7 @@ mixin _$ImmunizationProtocolApplied {
 
   /// [seriesElement] ("_series") Extensions for series
   @JsonKey(name: '_series')
-  Element? get seriesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get seriesElement => throw _privateConstructorUsedError;
 
   /// [authority] Indicates the authority who published the protocol (e.g. ACIP)
   ///  that is being followed.
@@ -4126,7 +4141,7 @@ mixin _$ImmunizationProtocolApplied {
 
   /// [doseNumberElement] ("_doseNumber") Extensions for doseNumber
   @JsonKey(name: '_doseNumber')
-  Element? get doseNumberElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get doseNumberElement => throw _privateConstructorUsedError;
 
   /// [seriesDoses] The recommended number of doses to achieve immunity as
   ///  intended by the practitioner administering the dose.
@@ -4134,7 +4149,8 @@ mixin _$ImmunizationProtocolApplied {
 
   /// [seriesDosesElement] ("_seriesDoses") Extensions for seriesDoses
   @JsonKey(name: '_seriesDoses')
-  Element? get seriesDosesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get seriesDosesElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -4155,13 +4171,13 @@ abstract class $ImmunizationProtocolAppliedCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? series,
-      @JsonKey(name: '_series') Element? seriesElement,
+      @JsonKey(name: '_series') PrimitiveElement? seriesElement,
       Reference? authority,
       List<CodeableConcept>? targetDisease,
       String? doseNumber,
-      @JsonKey(name: '_doseNumber') Element? doseNumberElement,
+      @JsonKey(name: '_doseNumber') PrimitiveElement? doseNumberElement,
       String? seriesDoses,
-      @JsonKey(name: '_seriesDoses') Element? seriesDosesElement});
+      @JsonKey(name: '_seriesDoses') PrimitiveElement? seriesDosesElement});
 
   $ReferenceCopyWith<$Res>? get authority;
 }
@@ -4212,7 +4228,7 @@ class _$ImmunizationProtocolAppliedCopyWithImpl<$Res,
       seriesElement: freezed == seriesElement
           ? _value.seriesElement
           : seriesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       authority: freezed == authority
           ? _value.authority
           : authority // ignore: cast_nullable_to_non_nullable
@@ -4228,7 +4244,7 @@ class _$ImmunizationProtocolAppliedCopyWithImpl<$Res,
       doseNumberElement: freezed == doseNumberElement
           ? _value.doseNumberElement
           : doseNumberElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       seriesDoses: freezed == seriesDoses
           ? _value.seriesDoses
           : seriesDoses // ignore: cast_nullable_to_non_nullable
@@ -4236,7 +4252,7 @@ class _$ImmunizationProtocolAppliedCopyWithImpl<$Res,
       seriesDosesElement: freezed == seriesDosesElement
           ? _value.seriesDosesElement
           : seriesDosesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -4267,13 +4283,13 @@ abstract class _$$ImmunizationProtocolAppliedImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? series,
-      @JsonKey(name: '_series') Element? seriesElement,
+      @JsonKey(name: '_series') PrimitiveElement? seriesElement,
       Reference? authority,
       List<CodeableConcept>? targetDisease,
       String? doseNumber,
-      @JsonKey(name: '_doseNumber') Element? doseNumberElement,
+      @JsonKey(name: '_doseNumber') PrimitiveElement? doseNumberElement,
       String? seriesDoses,
-      @JsonKey(name: '_seriesDoses') Element? seriesDosesElement});
+      @JsonKey(name: '_seriesDoses') PrimitiveElement? seriesDosesElement});
 
   @override
   $ReferenceCopyWith<$Res>? get authority;
@@ -4324,7 +4340,7 @@ class __$$ImmunizationProtocolAppliedImplCopyWithImpl<$Res>
       seriesElement: freezed == seriesElement
           ? _value.seriesElement
           : seriesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       authority: freezed == authority
           ? _value.authority
           : authority // ignore: cast_nullable_to_non_nullable
@@ -4340,7 +4356,7 @@ class __$$ImmunizationProtocolAppliedImplCopyWithImpl<$Res>
       doseNumberElement: freezed == doseNumberElement
           ? _value.doseNumberElement
           : doseNumberElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       seriesDoses: freezed == seriesDoses
           ? _value.seriesDoses
           : seriesDoses // ignore: cast_nullable_to_non_nullable
@@ -4348,7 +4364,7 @@ class __$$ImmunizationProtocolAppliedImplCopyWithImpl<$Res>
       seriesDosesElement: freezed == seriesDosesElement
           ? _value.seriesDosesElement
           : seriesDosesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -4450,7 +4466,7 @@ class _$ImmunizationProtocolAppliedImpl extends _ImmunizationProtocolApplied {
   /// [seriesElement] ("_series") Extensions for series
   @override
   @JsonKey(name: '_series')
-  final Element? seriesElement;
+  final PrimitiveElement? seriesElement;
 
   /// [authority] Indicates the authority who published the protocol (e.g. ACIP)
   ///  that is being followed.
@@ -4480,7 +4496,7 @@ class _$ImmunizationProtocolAppliedImpl extends _ImmunizationProtocolApplied {
   /// [doseNumberElement] ("_doseNumber") Extensions for doseNumber
   @override
   @JsonKey(name: '_doseNumber')
-  final Element? doseNumberElement;
+  final PrimitiveElement? doseNumberElement;
 
   /// [seriesDoses] The recommended number of doses to achieve immunity as
   ///  intended by the practitioner administering the dose.
@@ -4490,7 +4506,7 @@ class _$ImmunizationProtocolAppliedImpl extends _ImmunizationProtocolApplied {
   /// [seriesDosesElement] ("_seriesDoses") Extensions for seriesDoses
   @override
   @JsonKey(name: '_seriesDoses')
-  final Element? seriesDosesElement;
+  final PrimitiveElement? seriesDosesElement;
 
   @override
   String toString() {
@@ -4558,18 +4574,19 @@ class _$ImmunizationProtocolAppliedImpl extends _ImmunizationProtocolApplied {
 abstract class _ImmunizationProtocolApplied
     extends ImmunizationProtocolApplied {
   const factory _ImmunizationProtocolApplied(
-          {final String? id,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final String? series,
-          @JsonKey(name: '_series') final Element? seriesElement,
-          final Reference? authority,
-          final List<CodeableConcept>? targetDisease,
-          final String? doseNumber,
-          @JsonKey(name: '_doseNumber') final Element? doseNumberElement,
-          final String? seriesDoses,
-          @JsonKey(name: '_seriesDoses') final Element? seriesDosesElement}) =
-      _$ImmunizationProtocolAppliedImpl;
+      {final String? id,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final String? series,
+      @JsonKey(name: '_series') final PrimitiveElement? seriesElement,
+      final Reference? authority,
+      final List<CodeableConcept>? targetDisease,
+      final String? doseNumber,
+      @JsonKey(name: '_doseNumber') final PrimitiveElement? doseNumberElement,
+      final String? seriesDoses,
+      @JsonKey(name: '_seriesDoses')
+      final PrimitiveElement?
+          seriesDosesElement}) = _$ImmunizationProtocolAppliedImpl;
   const _ImmunizationProtocolApplied._() : super._();
 
   factory _ImmunizationProtocolApplied.fromJson(Map<String, dynamic> json) =
@@ -4614,7 +4631,7 @@ abstract class _ImmunizationProtocolApplied
 
   /// [seriesElement] ("_series") Extensions for series
   @JsonKey(name: '_series')
-  Element? get seriesElement;
+  PrimitiveElement? get seriesElement;
   @override
 
   /// [authority] Indicates the authority who published the protocol (e.g. ACIP)
@@ -4634,7 +4651,7 @@ abstract class _ImmunizationProtocolApplied
 
   /// [doseNumberElement] ("_doseNumber") Extensions for doseNumber
   @JsonKey(name: '_doseNumber')
-  Element? get doseNumberElement;
+  PrimitiveElement? get doseNumberElement;
   @override
 
   /// [seriesDoses] The recommended number of doses to achieve immunity as
@@ -4644,7 +4661,7 @@ abstract class _ImmunizationProtocolApplied
 
   /// [seriesDosesElement] ("_seriesDoses") Extensions for seriesDoses
   @JsonKey(name: '_seriesDoses')
-  Element? get seriesDosesElement;
+  PrimitiveElement? get seriesDosesElement;
   @override
   @JsonKey(ignore: true)
   _$$ImmunizationProtocolAppliedImplCopyWith<_$ImmunizationProtocolAppliedImpl>
@@ -4679,14 +4696,15 @@ mixin _$ImmunizationEvaluation {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -4737,7 +4755,7 @@ mixin _$ImmunizationEvaluation {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [patient] The individual for whom the evaluation is being done.
   Reference get patient => throw _privateConstructorUsedError;
@@ -4748,7 +4766,7 @@ mixin _$ImmunizationEvaluation {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [authority] Indicates the authority who published the protocol (e.g. ACIP).
   Reference? get authority => throw _privateConstructorUsedError;
@@ -4775,7 +4793,8 @@ mixin _$ImmunizationEvaluation {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [series] One possible path to achieve presumed immunity against a disease -
   ///  within the context of an authority.
@@ -4783,7 +4802,7 @@ mixin _$ImmunizationEvaluation {
 
   /// [seriesElement] ("_series") Extensions for series
   @JsonKey(name: '_series')
-  Element? get seriesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get seriesElement => throw _privateConstructorUsedError;
 
   /// [doseNumber] Nominal position in a series as determined by the outcome of
   ///  the evaluation process.
@@ -4791,7 +4810,7 @@ mixin _$ImmunizationEvaluation {
 
   /// [doseNumberElement] ("_doseNumber") Extensions for doseNumber
   @JsonKey(name: '_doseNumber')
-  Element? get doseNumberElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get doseNumberElement => throw _privateConstructorUsedError;
 
   /// [seriesDoses] The recommended number of doses to achieve immunity as
   ///  determined by the outcome of the evaluation process.
@@ -4799,7 +4818,8 @@ mixin _$ImmunizationEvaluation {
 
   /// [seriesDosesElement] ("_seriesDoses") Extensions for seriesDoses
   @JsonKey(name: '_seriesDoses')
-  Element? get seriesDosesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get seriesDosesElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -4819,32 +4839,32 @@ abstract class $ImmunizationEvaluationCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<Identifier>? identifier,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       Reference patient,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       Reference? authority,
       CodeableConcept targetDisease,
       Reference immunizationEvent,
       CodeableConcept doseStatus,
       List<CodeableConcept>? doseStatusReason,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       String? series,
-      @JsonKey(name: '_series') Element? seriesElement,
+      @JsonKey(name: '_series') PrimitiveElement? seriesElement,
       String? doseNumber,
-      @JsonKey(name: '_doseNumber') Element? doseNumberElement,
+      @JsonKey(name: '_doseNumber') PrimitiveElement? doseNumberElement,
       String? seriesDoses,
-      @JsonKey(name: '_seriesDoses') Element? seriesDosesElement});
+      @JsonKey(name: '_seriesDoses') PrimitiveElement? seriesDosesElement});
 
   $FhirMetaCopyWith<$Res>? get meta;
   $NarrativeCopyWith<$Res>? get text;
@@ -4920,7 +4940,7 @@ class _$ImmunizationEvaluationCopyWithImpl<$Res,
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -4928,7 +4948,7 @@ class _$ImmunizationEvaluationCopyWithImpl<$Res,
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -4956,7 +4976,7 @@ class _$ImmunizationEvaluationCopyWithImpl<$Res,
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       patient: null == patient
           ? _value.patient
           : patient // ignore: cast_nullable_to_non_nullable
@@ -4968,7 +4988,7 @@ class _$ImmunizationEvaluationCopyWithImpl<$Res,
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       authority: freezed == authority
           ? _value.authority
           : authority // ignore: cast_nullable_to_non_nullable
@@ -4996,7 +5016,7 @@ class _$ImmunizationEvaluationCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       series: freezed == series
           ? _value.series
           : series // ignore: cast_nullable_to_non_nullable
@@ -5004,7 +5024,7 @@ class _$ImmunizationEvaluationCopyWithImpl<$Res,
       seriesElement: freezed == seriesElement
           ? _value.seriesElement
           : seriesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       doseNumber: freezed == doseNumber
           ? _value.doseNumber
           : doseNumber // ignore: cast_nullable_to_non_nullable
@@ -5012,7 +5032,7 @@ class _$ImmunizationEvaluationCopyWithImpl<$Res,
       doseNumberElement: freezed == doseNumberElement
           ? _value.doseNumberElement
           : doseNumberElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       seriesDoses: freezed == seriesDoses
           ? _value.seriesDoses
           : seriesDoses // ignore: cast_nullable_to_non_nullable
@@ -5020,7 +5040,7 @@ class _$ImmunizationEvaluationCopyWithImpl<$Res,
       seriesDosesElement: freezed == seriesDosesElement
           ? _value.seriesDosesElement
           : seriesDosesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -5108,32 +5128,32 @@ abstract class _$$ImmunizationEvaluationImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<Identifier>? identifier,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       Reference patient,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       Reference? authority,
       CodeableConcept targetDisease,
       Reference immunizationEvent,
       CodeableConcept doseStatus,
       List<CodeableConcept>? doseStatusReason,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       String? series,
-      @JsonKey(name: '_series') Element? seriesElement,
+      @JsonKey(name: '_series') PrimitiveElement? seriesElement,
       String? doseNumber,
-      @JsonKey(name: '_doseNumber') Element? doseNumberElement,
+      @JsonKey(name: '_doseNumber') PrimitiveElement? doseNumberElement,
       String? seriesDoses,
-      @JsonKey(name: '_seriesDoses') Element? seriesDosesElement});
+      @JsonKey(name: '_seriesDoses') PrimitiveElement? seriesDosesElement});
 
   @override
   $FhirMetaCopyWith<$Res>? get meta;
@@ -5215,7 +5235,7 @@ class __$$ImmunizationEvaluationImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -5223,7 +5243,7 @@ class __$$ImmunizationEvaluationImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -5251,7 +5271,7 @@ class __$$ImmunizationEvaluationImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       patient: null == patient
           ? _value.patient
           : patient // ignore: cast_nullable_to_non_nullable
@@ -5263,7 +5283,7 @@ class __$$ImmunizationEvaluationImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       authority: freezed == authority
           ? _value.authority
           : authority // ignore: cast_nullable_to_non_nullable
@@ -5291,7 +5311,7 @@ class __$$ImmunizationEvaluationImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       series: freezed == series
           ? _value.series
           : series // ignore: cast_nullable_to_non_nullable
@@ -5299,7 +5319,7 @@ class __$$ImmunizationEvaluationImplCopyWithImpl<$Res>
       seriesElement: freezed == seriesElement
           ? _value.seriesElement
           : seriesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       doseNumber: freezed == doseNumber
           ? _value.doseNumber
           : doseNumber // ignore: cast_nullable_to_non_nullable
@@ -5307,7 +5327,7 @@ class __$$ImmunizationEvaluationImplCopyWithImpl<$Res>
       doseNumberElement: freezed == doseNumberElement
           ? _value.doseNumberElement
           : doseNumberElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       seriesDoses: freezed == seriesDoses
           ? _value.seriesDoses
           : seriesDoses // ignore: cast_nullable_to_non_nullable
@@ -5315,7 +5335,7 @@ class __$$ImmunizationEvaluationImplCopyWithImpl<$Res>
       seriesDosesElement: freezed == seriesDosesElement
           ? _value.seriesDosesElement
           : seriesDosesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -5391,7 +5411,7 @@ class _$ImmunizationEvaluationImpl extends _ImmunizationEvaluation {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -5400,7 +5420,7 @@ class _$ImmunizationEvaluationImpl extends _ImmunizationEvaluation {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -5515,7 +5535,7 @@ class _$ImmunizationEvaluationImpl extends _ImmunizationEvaluation {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [patient] The individual for whom the evaluation is being done.
   @override
@@ -5529,7 +5549,7 @@ class _$ImmunizationEvaluationImpl extends _ImmunizationEvaluation {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [authority] Indicates the authority who published the protocol (e.g. ACIP).
   @override
@@ -5574,7 +5594,7 @@ class _$ImmunizationEvaluationImpl extends _ImmunizationEvaluation {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [series] One possible path to achieve presumed immunity against a disease -
   ///  within the context of an authority.
@@ -5584,7 +5604,7 @@ class _$ImmunizationEvaluationImpl extends _ImmunizationEvaluation {
   /// [seriesElement] ("_series") Extensions for series
   @override
   @JsonKey(name: '_series')
-  final Element? seriesElement;
+  final PrimitiveElement? seriesElement;
 
   /// [doseNumber] Nominal position in a series as determined by the outcome of
   ///  the evaluation process.
@@ -5594,7 +5614,7 @@ class _$ImmunizationEvaluationImpl extends _ImmunizationEvaluation {
   /// [doseNumberElement] ("_doseNumber") Extensions for doseNumber
   @override
   @JsonKey(name: '_doseNumber')
-  final Element? doseNumberElement;
+  final PrimitiveElement? doseNumberElement;
 
   /// [seriesDoses] The recommended number of doses to achieve immunity as
   ///  determined by the outcome of the evaluation process.
@@ -5604,7 +5624,7 @@ class _$ImmunizationEvaluationImpl extends _ImmunizationEvaluation {
   /// [seriesDosesElement] ("_seriesDoses") Extensions for seriesDoses
   @override
   @JsonKey(name: '_seriesDoses')
-  final Element? seriesDosesElement;
+  final PrimitiveElement? seriesDosesElement;
 
   @override
   String toString() {
@@ -5724,38 +5744,40 @@ class _$ImmunizationEvaluationImpl extends _ImmunizationEvaluation {
 
 abstract class _ImmunizationEvaluation extends ImmunizationEvaluation {
   const factory _ImmunizationEvaluation(
-          {@JsonKey(unknownEnumValue: R5ResourceType.ImmunizationEvaluation)
-          final R5ResourceType resourceType,
-          final FhirId? id,
-          final FhirMeta? meta,
-          final FhirUri? implicitRules,
-          @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
-          final FhirCode? language,
-          @JsonKey(name: '_language') final Element? languageElement,
-          final Narrative? text,
-          final List<Resource>? contained,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final List<Identifier>? identifier,
-          final FhirCode? status,
-          @JsonKey(name: '_status') final Element? statusElement,
-          required final Reference patient,
-          final FhirDateTime? date,
-          @JsonKey(name: '_date') final Element? dateElement,
-          final Reference? authority,
-          required final CodeableConcept targetDisease,
-          required final Reference immunizationEvent,
-          required final CodeableConcept doseStatus,
-          final List<CodeableConcept>? doseStatusReason,
-          final FhirMarkdown? description,
-          @JsonKey(name: '_description') final Element? descriptionElement,
-          final String? series,
-          @JsonKey(name: '_series') final Element? seriesElement,
-          final String? doseNumber,
-          @JsonKey(name: '_doseNumber') final Element? doseNumberElement,
-          final String? seriesDoses,
-          @JsonKey(name: '_seriesDoses') final Element? seriesDosesElement}) =
-      _$ImmunizationEvaluationImpl;
+      {@JsonKey(unknownEnumValue: R5ResourceType.ImmunizationEvaluation)
+      final R5ResourceType resourceType,
+      final FhirId? id,
+      final FhirMeta? meta,
+      final FhirUri? implicitRules,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
+      final FhirCode? language,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
+      final Narrative? text,
+      final List<Resource>? contained,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final List<Identifier>? identifier,
+      final FhirCode? status,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
+      required final Reference patient,
+      final FhirDateTime? date,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
+      final Reference? authority,
+      required final CodeableConcept targetDisease,
+      required final Reference immunizationEvent,
+      required final CodeableConcept doseStatus,
+      final List<CodeableConcept>? doseStatusReason,
+      final FhirMarkdown? description,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
+      final String? series,
+      @JsonKey(name: '_series') final PrimitiveElement? seriesElement,
+      final String? doseNumber,
+      @JsonKey(name: '_doseNumber') final PrimitiveElement? doseNumberElement,
+      final String? seriesDoses,
+      @JsonKey(name: '_seriesDoses')
+      final PrimitiveElement?
+          seriesDosesElement}) = _$ImmunizationEvaluationImpl;
   const _ImmunizationEvaluation._() : super._();
 
   factory _ImmunizationEvaluation.fromJson(Map<String, dynamic> json) =
@@ -5788,7 +5810,7 @@ abstract class _ImmunizationEvaluation extends ImmunizationEvaluation {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -5797,7 +5819,7 @@ abstract class _ImmunizationEvaluation extends ImmunizationEvaluation {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -5854,7 +5876,7 @@ abstract class _ImmunizationEvaluation extends ImmunizationEvaluation {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [patient] The individual for whom the evaluation is being done.
@@ -5868,7 +5890,7 @@ abstract class _ImmunizationEvaluation extends ImmunizationEvaluation {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [authority] Indicates the authority who published the protocol (e.g. ACIP).
@@ -5901,7 +5923,7 @@ abstract class _ImmunizationEvaluation extends ImmunizationEvaluation {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [series] One possible path to achieve presumed immunity against a disease -
@@ -5911,7 +5933,7 @@ abstract class _ImmunizationEvaluation extends ImmunizationEvaluation {
 
   /// [seriesElement] ("_series") Extensions for series
   @JsonKey(name: '_series')
-  Element? get seriesElement;
+  PrimitiveElement? get seriesElement;
   @override
 
   /// [doseNumber] Nominal position in a series as determined by the outcome of
@@ -5921,7 +5943,7 @@ abstract class _ImmunizationEvaluation extends ImmunizationEvaluation {
 
   /// [doseNumberElement] ("_doseNumber") Extensions for doseNumber
   @JsonKey(name: '_doseNumber')
-  Element? get doseNumberElement;
+  PrimitiveElement? get doseNumberElement;
   @override
 
   /// [seriesDoses] The recommended number of doses to achieve immunity as
@@ -5931,7 +5953,7 @@ abstract class _ImmunizationEvaluation extends ImmunizationEvaluation {
 
   /// [seriesDosesElement] ("_seriesDoses") Extensions for seriesDoses
   @JsonKey(name: '_seriesDoses')
-  Element? get seriesDosesElement;
+  PrimitiveElement? get seriesDosesElement;
   @override
   @JsonKey(ignore: true)
   _$$ImmunizationEvaluationImplCopyWith<_$ImmunizationEvaluationImpl>
@@ -5966,14 +5988,15 @@ mixin _$ImmunizationRecommendation {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -6026,7 +6049,7 @@ mixin _$ImmunizationRecommendation {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [authority] Indicates the authority who published the protocol (e.g. ACIP).
   Reference? get authority => throw _privateConstructorUsedError;
@@ -6054,9 +6077,9 @@ abstract class $ImmunizationRecommendationCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -6064,7 +6087,7 @@ abstract class $ImmunizationRecommendationCopyWith<$Res> {
       List<Identifier>? identifier,
       Reference patient,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       Reference? authority,
       List<ImmunizationRecommendationRecommendation> recommendation});
 
@@ -6126,7 +6149,7 @@ class _$ImmunizationRecommendationCopyWithImpl<$Res,
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -6134,7 +6157,7 @@ class _$ImmunizationRecommendationCopyWithImpl<$Res,
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -6166,7 +6189,7 @@ class _$ImmunizationRecommendationCopyWithImpl<$Res,
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       authority: freezed == authority
           ? _value.authority
           : authority // ignore: cast_nullable_to_non_nullable
@@ -6238,9 +6261,9 @@ abstract class _$$ImmunizationRecommendationImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -6248,7 +6271,7 @@ abstract class _$$ImmunizationRecommendationImplCopyWith<$Res>
       List<Identifier>? identifier,
       Reference patient,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       Reference? authority,
       List<ImmunizationRecommendationRecommendation> recommendation});
 
@@ -6313,7 +6336,7 @@ class __$$ImmunizationRecommendationImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -6321,7 +6344,7 @@ class __$$ImmunizationRecommendationImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -6353,7 +6376,7 @@ class __$$ImmunizationRecommendationImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       authority: freezed == authority
           ? _value.authority
           : authority // ignore: cast_nullable_to_non_nullable
@@ -6426,7 +6449,7 @@ class _$ImmunizationRecommendationImpl extends _ImmunizationRecommendation {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -6435,7 +6458,7 @@ class _$ImmunizationRecommendationImpl extends _ImmunizationRecommendation {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -6553,7 +6576,7 @@ class _$ImmunizationRecommendationImpl extends _ImmunizationRecommendation {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [authority] Indicates the authority who published the protocol (e.g. ACIP).
   @override
@@ -6655,9 +6678,10 @@ abstract class _ImmunizationRecommendation extends ImmunizationRecommendation {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
@@ -6665,7 +6689,7 @@ abstract class _ImmunizationRecommendation extends ImmunizationRecommendation {
       final List<Identifier>? identifier,
       required final Reference patient,
       final FhirDateTime? date,
-      @JsonKey(name: '_date') final Element? dateElement,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
       final Reference? authority,
       required final List<ImmunizationRecommendationRecommendation>
           recommendation}) = _$ImmunizationRecommendationImpl;
@@ -6701,7 +6725,7 @@ abstract class _ImmunizationRecommendation extends ImmunizationRecommendation {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -6710,7 +6734,7 @@ abstract class _ImmunizationRecommendation extends ImmunizationRecommendation {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -6770,7 +6794,7 @@ abstract class _ImmunizationRecommendation extends ImmunizationRecommendation {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [authority] Indicates the authority who published the protocol (e.g. ACIP).
@@ -6853,7 +6877,8 @@ mixin _$ImmunizationRecommendationRecommendation {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [series] One possible path to achieve presumed immunity against a disease -
   ///  within the context of an authority.
@@ -6861,7 +6886,7 @@ mixin _$ImmunizationRecommendationRecommendation {
 
   /// [seriesElement] ("_series") Extensions for series
   @JsonKey(name: '_series')
-  Element? get seriesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get seriesElement => throw _privateConstructorUsedError;
 
   /// [doseNumber] Nominal position of the recommended dose in a series as
   ///  determined by the evaluation and forecasting process (e.g. dose 2 is the
@@ -6870,7 +6895,7 @@ mixin _$ImmunizationRecommendationRecommendation {
 
   /// [doseNumberElement] ("_doseNumber") Extensions for doseNumber
   @JsonKey(name: '_doseNumber')
-  Element? get doseNumberElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get doseNumberElement => throw _privateConstructorUsedError;
 
   /// [seriesDoses] The recommended number of doses to achieve immunity as
   ///  determined by the evaluation and forecasting process.
@@ -6878,7 +6903,8 @@ mixin _$ImmunizationRecommendationRecommendation {
 
   /// [seriesDosesElement] ("_seriesDoses") Extensions for seriesDoses
   @JsonKey(name: '_seriesDoses')
-  Element? get seriesDosesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get seriesDosesElement =>
+      throw _privateConstructorUsedError;
 
   /// [supportingImmunization] Immunization event history and/or evaluation that
   ///  supports the status and recommendation.
@@ -6917,13 +6943,13 @@ abstract class $ImmunizationRecommendationRecommendationCopyWith<$Res> {
       List<CodeableConcept>? forecastReason,
       List<ImmunizationRecommendationDateCriterion>? dateCriterion,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       String? series,
-      @JsonKey(name: '_series') Element? seriesElement,
+      @JsonKey(name: '_series') PrimitiveElement? seriesElement,
       String? doseNumber,
-      @JsonKey(name: '_doseNumber') Element? doseNumberElement,
+      @JsonKey(name: '_doseNumber') PrimitiveElement? doseNumberElement,
       String? seriesDoses,
-      @JsonKey(name: '_seriesDoses') Element? seriesDosesElement,
+      @JsonKey(name: '_seriesDoses') PrimitiveElement? seriesDosesElement,
       List<Reference>? supportingImmunization,
       List<Reference>? supportingPatientInformation});
 
@@ -7009,7 +7035,7 @@ class _$ImmunizationRecommendationRecommendationCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       series: freezed == series
           ? _value.series
           : series // ignore: cast_nullable_to_non_nullable
@@ -7017,7 +7043,7 @@ class _$ImmunizationRecommendationRecommendationCopyWithImpl<$Res,
       seriesElement: freezed == seriesElement
           ? _value.seriesElement
           : seriesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       doseNumber: freezed == doseNumber
           ? _value.doseNumber
           : doseNumber // ignore: cast_nullable_to_non_nullable
@@ -7025,7 +7051,7 @@ class _$ImmunizationRecommendationRecommendationCopyWithImpl<$Res,
       doseNumberElement: freezed == doseNumberElement
           ? _value.doseNumberElement
           : doseNumberElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       seriesDoses: freezed == seriesDoses
           ? _value.seriesDoses
           : seriesDoses // ignore: cast_nullable_to_non_nullable
@@ -7033,7 +7059,7 @@ class _$ImmunizationRecommendationRecommendationCopyWithImpl<$Res,
       seriesDosesElement: freezed == seriesDosesElement
           ? _value.seriesDosesElement
           : seriesDosesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       supportingImmunization: freezed == supportingImmunization
           ? _value.supportingImmunization
           : supportingImmunization // ignore: cast_nullable_to_non_nullable
@@ -7074,13 +7100,13 @@ abstract class _$$ImmunizationRecommendationRecommendationImplCopyWith<$Res>
       List<CodeableConcept>? forecastReason,
       List<ImmunizationRecommendationDateCriterion>? dateCriterion,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       String? series,
-      @JsonKey(name: '_series') Element? seriesElement,
+      @JsonKey(name: '_series') PrimitiveElement? seriesElement,
       String? doseNumber,
-      @JsonKey(name: '_doseNumber') Element? doseNumberElement,
+      @JsonKey(name: '_doseNumber') PrimitiveElement? doseNumberElement,
       String? seriesDoses,
-      @JsonKey(name: '_seriesDoses') Element? seriesDosesElement,
+      @JsonKey(name: '_seriesDoses') PrimitiveElement? seriesDosesElement,
       List<Reference>? supportingImmunization,
       List<Reference>? supportingPatientInformation});
 
@@ -7165,7 +7191,7 @@ class __$$ImmunizationRecommendationRecommendationImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       series: freezed == series
           ? _value.series
           : series // ignore: cast_nullable_to_non_nullable
@@ -7173,7 +7199,7 @@ class __$$ImmunizationRecommendationRecommendationImplCopyWithImpl<$Res>
       seriesElement: freezed == seriesElement
           ? _value.seriesElement
           : seriesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       doseNumber: freezed == doseNumber
           ? _value.doseNumber
           : doseNumber // ignore: cast_nullable_to_non_nullable
@@ -7181,7 +7207,7 @@ class __$$ImmunizationRecommendationRecommendationImplCopyWithImpl<$Res>
       doseNumberElement: freezed == doseNumberElement
           ? _value.doseNumberElement
           : doseNumberElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       seriesDoses: freezed == seriesDoses
           ? _value.seriesDoses
           : seriesDoses // ignore: cast_nullable_to_non_nullable
@@ -7189,7 +7215,7 @@ class __$$ImmunizationRecommendationRecommendationImplCopyWithImpl<$Res>
       seriesDosesElement: freezed == seriesDosesElement
           ? _value.seriesDosesElement
           : seriesDosesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       supportingImmunization: freezed == supportingImmunization
           ? _value._supportingImmunization
           : supportingImmunization // ignore: cast_nullable_to_non_nullable
@@ -7391,7 +7417,7 @@ class _$ImmunizationRecommendationRecommendationImpl
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [series] One possible path to achieve presumed immunity against a disease -
   ///  within the context of an authority.
@@ -7401,7 +7427,7 @@ class _$ImmunizationRecommendationRecommendationImpl
   /// [seriesElement] ("_series") Extensions for series
   @override
   @JsonKey(name: '_series')
-  final Element? seriesElement;
+  final PrimitiveElement? seriesElement;
 
   /// [doseNumber] Nominal position of the recommended dose in a series as
   ///  determined by the evaluation and forecasting process (e.g. dose 2 is the
@@ -7412,7 +7438,7 @@ class _$ImmunizationRecommendationRecommendationImpl
   /// [doseNumberElement] ("_doseNumber") Extensions for doseNumber
   @override
   @JsonKey(name: '_doseNumber')
-  final Element? doseNumberElement;
+  final PrimitiveElement? doseNumberElement;
 
   /// [seriesDoses] The recommended number of doses to achieve immunity as
   ///  determined by the evaluation and forecasting process.
@@ -7422,7 +7448,7 @@ class _$ImmunizationRecommendationRecommendationImpl
   /// [seriesDosesElement] ("_seriesDoses") Extensions for seriesDoses
   @override
   @JsonKey(name: '_seriesDoses')
-  final Element? seriesDosesElement;
+  final PrimitiveElement? seriesDosesElement;
 
   /// [supportingImmunization] Immunization event history and/or evaluation that
   ///  supports the status and recommendation.
@@ -7563,13 +7589,13 @@ abstract class _ImmunizationRecommendationRecommendation
           final List<CodeableConcept>? forecastReason,
           final List<ImmunizationRecommendationDateCriterion>? dateCriterion,
           final FhirMarkdown? description,
-          @JsonKey(name: '_description') final Element? descriptionElement,
+          @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
           final String? series,
-          @JsonKey(name: '_series') final Element? seriesElement,
+          @JsonKey(name: '_series') final PrimitiveElement? seriesElement,
           final String? doseNumber,
-          @JsonKey(name: '_doseNumber') final Element? doseNumberElement,
+          @JsonKey(name: '_doseNumber') final PrimitiveElement? doseNumberElement,
           final String? seriesDoses,
-          @JsonKey(name: '_seriesDoses') final Element? seriesDosesElement,
+          @JsonKey(name: '_seriesDoses') final PrimitiveElement? seriesDosesElement,
           final List<Reference>? supportingImmunization,
           final List<Reference>? supportingPatientInformation}) =
       _$ImmunizationRecommendationRecommendationImpl;
@@ -7646,7 +7672,7 @@ abstract class _ImmunizationRecommendationRecommendation
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [series] One possible path to achieve presumed immunity against a disease -
@@ -7656,7 +7682,7 @@ abstract class _ImmunizationRecommendationRecommendation
 
   /// [seriesElement] ("_series") Extensions for series
   @JsonKey(name: '_series')
-  Element? get seriesElement;
+  PrimitiveElement? get seriesElement;
   @override
 
   /// [doseNumber] Nominal position of the recommended dose in a series as
@@ -7667,7 +7693,7 @@ abstract class _ImmunizationRecommendationRecommendation
 
   /// [doseNumberElement] ("_doseNumber") Extensions for doseNumber
   @JsonKey(name: '_doseNumber')
-  Element? get doseNumberElement;
+  PrimitiveElement? get doseNumberElement;
   @override
 
   /// [seriesDoses] The recommended number of doses to achieve immunity as
@@ -7677,7 +7703,7 @@ abstract class _ImmunizationRecommendationRecommendation
 
   /// [seriesDosesElement] ("_seriesDoses") Extensions for seriesDoses
   @JsonKey(name: '_seriesDoses')
-  Element? get seriesDosesElement;
+  PrimitiveElement? get seriesDosesElement;
   @override
 
   /// [supportingImmunization] Immunization event history and/or evaluation that
@@ -7741,7 +7767,7 @@ mixin _$ImmunizationRecommendationDateCriterion {
 
   /// [valueElement] ("_value") Extensions for value
   @JsonKey(name: '_value')
-  Element? get valueElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -7764,7 +7790,7 @@ abstract class $ImmunizationRecommendationDateCriterionCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       CodeableConcept code,
       FhirDateTime? value,
-      @JsonKey(name: '_value') Element? valueElement});
+      @JsonKey(name: '_value') PrimitiveElement? valueElement});
 
   $CodeableConceptCopyWith<$Res> get code;
 }
@@ -7815,7 +7841,7 @@ class _$ImmunizationRecommendationDateCriterionCopyWithImpl<$Res,
       valueElement: freezed == valueElement
           ? _value.valueElement
           : valueElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -7843,7 +7869,7 @@ abstract class _$$ImmunizationRecommendationDateCriterionImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       CodeableConcept code,
       FhirDateTime? value,
-      @JsonKey(name: '_value') Element? valueElement});
+      @JsonKey(name: '_value') PrimitiveElement? valueElement});
 
   @override
   $CodeableConceptCopyWith<$Res> get code;
@@ -7893,7 +7919,7 @@ class __$$ImmunizationRecommendationDateCriterionImplCopyWithImpl<$Res>
       valueElement: freezed == valueElement
           ? _value.valueElement
           : valueElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -7994,7 +8020,7 @@ class _$ImmunizationRecommendationDateCriterionImpl
   /// [valueElement] ("_value") Extensions for value
   @override
   @JsonKey(name: '_value')
-  final Element? valueElement;
+  final PrimitiveElement? valueElement;
 
   @override
   String toString() {
@@ -8053,7 +8079,7 @@ abstract class _ImmunizationRecommendationDateCriterion
           final List<FhirExtension>? modifierExtension,
           required final CodeableConcept code,
           final FhirDateTime? value,
-          @JsonKey(name: '_value') final Element? valueElement}) =
+          @JsonKey(name: '_value') final PrimitiveElement? valueElement}) =
       _$ImmunizationRecommendationDateCriterionImpl;
   const _ImmunizationRecommendationDateCriterion._() : super._();
 
@@ -8104,7 +8130,7 @@ abstract class _ImmunizationRecommendationDateCriterion
 
   /// [valueElement] ("_value") Extensions for value
   @JsonKey(name: '_value')
-  Element? get valueElement;
+  PrimitiveElement? get valueElement;
   @override
   @JsonKey(ignore: true)
   _$$ImmunizationRecommendationDateCriterionImplCopyWith<
@@ -8139,14 +8165,15 @@ mixin _$Medication {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -8202,7 +8229,7 @@ mixin _$Medication {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [marketingAuthorizationHolder] The company or other legal entity that has
   ///  authorization, from the appropriate drug regulatory authority,  to market
@@ -8252,9 +8279,9 @@ abstract class $MedicationCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -8262,7 +8289,7 @@ abstract class $MedicationCopyWith<$Res> {
       List<Identifier>? identifier,
       CodeableConcept? code,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       Reference? marketingAuthorizationHolder,
       CodeableConcept? doseForm,
       Quantity? totalVolume,
@@ -8335,7 +8362,7 @@ class _$MedicationCopyWithImpl<$Res, $Val extends Medication>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -8343,7 +8370,7 @@ class _$MedicationCopyWithImpl<$Res, $Val extends Medication>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -8375,7 +8402,7 @@ class _$MedicationCopyWithImpl<$Res, $Val extends Medication>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       marketingAuthorizationHolder: freezed == marketingAuthorizationHolder
           ? _value.marketingAuthorizationHolder
           : marketingAuthorizationHolder // ignore: cast_nullable_to_non_nullable
@@ -8516,9 +8543,9 @@ abstract class _$$MedicationImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -8526,7 +8553,7 @@ abstract class _$$MedicationImplCopyWith<$Res>
       List<Identifier>? identifier,
       CodeableConcept? code,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       Reference? marketingAuthorizationHolder,
       CodeableConcept? doseForm,
       Quantity? totalVolume,
@@ -8605,7 +8632,7 @@ class __$$MedicationImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -8613,7 +8640,7 @@ class __$$MedicationImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -8645,7 +8672,7 @@ class __$$MedicationImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       marketingAuthorizationHolder: freezed == marketingAuthorizationHolder
           ? _value.marketingAuthorizationHolder
           : marketingAuthorizationHolder // ignore: cast_nullable_to_non_nullable
@@ -8736,7 +8763,7 @@ class _$MedicationImpl extends _Medication {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -8745,7 +8772,7 @@ class _$MedicationImpl extends _Medication {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -8865,7 +8892,7 @@ class _$MedicationImpl extends _Medication {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [marketingAuthorizationHolder] The company or other legal entity that has
   ///  authorization, from the appropriate drug regulatory authority,  to market
@@ -9008,9 +9035,10 @@ abstract class _Medication extends Medication {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
@@ -9018,7 +9046,7 @@ abstract class _Medication extends Medication {
       final List<Identifier>? identifier,
       final CodeableConcept? code,
       final FhirCode? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final Reference? marketingAuthorizationHolder,
       final CodeableConcept? doseForm,
       final Quantity? totalVolume,
@@ -9057,7 +9085,7 @@ abstract class _Medication extends Medication {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -9066,7 +9094,7 @@ abstract class _Medication extends Medication {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -9129,7 +9157,7 @@ abstract class _Medication extends Medication {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [marketingAuthorizationHolder] The company or other legal entity that has
@@ -9215,7 +9243,7 @@ mixin _$MedicationIngredient {
 
   /// [isActiveElement] ("_isActive") Extensions for isActive
   @JsonKey(name: '_isActive')
-  Element? get isActiveElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get isActiveElement => throw _privateConstructorUsedError;
 
   /// [strengthRatio] Specifies how many (or how much) of the items there are in
   ///  this Medication.  For example, 250 mg per tablet.  This is expressed as a
@@ -9257,7 +9285,7 @@ abstract class $MedicationIngredientCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       CodeableReference item,
       FhirBoolean? isActive,
-      @JsonKey(name: '_isActive') Element? isActiveElement,
+      @JsonKey(name: '_isActive') PrimitiveElement? isActiveElement,
       Ratio? strengthRatio,
       CodeableConcept? strengthCodeableConcept,
       Quantity? strengthQuantity});
@@ -9316,7 +9344,7 @@ class _$MedicationIngredientCopyWithImpl<$Res,
       isActiveElement: freezed == isActiveElement
           ? _value.isActiveElement
           : isActiveElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       strengthRatio: freezed == strengthRatio
           ? _value.strengthRatio
           : strengthRatio // ignore: cast_nullable_to_non_nullable
@@ -9392,7 +9420,7 @@ abstract class _$$MedicationIngredientImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       CodeableReference item,
       FhirBoolean? isActive,
-      @JsonKey(name: '_isActive') Element? isActiveElement,
+      @JsonKey(name: '_isActive') PrimitiveElement? isActiveElement,
       Ratio? strengthRatio,
       CodeableConcept? strengthCodeableConcept,
       Quantity? strengthQuantity});
@@ -9452,7 +9480,7 @@ class __$$MedicationIngredientImplCopyWithImpl<$Res>
       isActiveElement: freezed == isActiveElement
           ? _value.isActiveElement
           : isActiveElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       strengthRatio: freezed == strengthRatio
           ? _value.strengthRatio
           : strengthRatio // ignore: cast_nullable_to_non_nullable
@@ -9568,7 +9596,7 @@ class _$MedicationIngredientImpl extends _MedicationIngredient {
   /// [isActiveElement] ("_isActive") Extensions for isActive
   @override
   @JsonKey(name: '_isActive')
-  final Element? isActiveElement;
+  final PrimitiveElement? isActiveElement;
 
   /// [strengthRatio] Specifies how many (or how much) of the items there are in
   ///  this Medication.  For example, 250 mg per tablet.  This is expressed as a
@@ -9660,7 +9688,7 @@ abstract class _MedicationIngredient extends MedicationIngredient {
       final List<FhirExtension>? modifierExtension,
       required final CodeableReference item,
       final FhirBoolean? isActive,
-      @JsonKey(name: '_isActive') final Element? isActiveElement,
+      @JsonKey(name: '_isActive') final PrimitiveElement? isActiveElement,
       final Ratio? strengthRatio,
       final CodeableConcept? strengthCodeableConcept,
       final Quantity? strengthQuantity}) = _$MedicationIngredientImpl;
@@ -9714,7 +9742,7 @@ abstract class _MedicationIngredient extends MedicationIngredient {
 
   /// [isActiveElement] ("_isActive") Extensions for isActive
   @JsonKey(name: '_isActive')
-  Element? get isActiveElement;
+  PrimitiveElement? get isActiveElement;
   @override
 
   /// [strengthRatio] Specifies how many (or how much) of the items there are in
@@ -9784,14 +9812,15 @@ mixin _$MedicationBatch {
 
   /// [lotNumberElement] ("_lotNumber") Extensions for lotNumber
   @JsonKey(name: '_lotNumber')
-  Element? get lotNumberElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get lotNumberElement => throw _privateConstructorUsedError;
 
   /// [expirationDate] When this specific batch of product will expire.
   FhirDateTime? get expirationDate => throw _privateConstructorUsedError;
 
   /// [expirationDateElement] ("_expirationDate") Extensions for expirationDate
   @JsonKey(name: '_expirationDate')
-  Element? get expirationDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get expirationDateElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -9810,9 +9839,10 @@ abstract class $MedicationBatchCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? lotNumber,
-      @JsonKey(name: '_lotNumber') Element? lotNumberElement,
+      @JsonKey(name: '_lotNumber') PrimitiveElement? lotNumberElement,
       FhirDateTime? expirationDate,
-      @JsonKey(name: '_expirationDate') Element? expirationDateElement});
+      @JsonKey(name: '_expirationDate')
+      PrimitiveElement? expirationDateElement});
 }
 
 /// @nodoc
@@ -9856,7 +9886,7 @@ class _$MedicationBatchCopyWithImpl<$Res, $Val extends MedicationBatch>
       lotNumberElement: freezed == lotNumberElement
           ? _value.lotNumberElement
           : lotNumberElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       expirationDate: freezed == expirationDate
           ? _value.expirationDate
           : expirationDate // ignore: cast_nullable_to_non_nullable
@@ -9864,7 +9894,7 @@ class _$MedicationBatchCopyWithImpl<$Res, $Val extends MedicationBatch>
       expirationDateElement: freezed == expirationDateElement
           ? _value.expirationDateElement
           : expirationDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -9882,9 +9912,10 @@ abstract class _$$MedicationBatchImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? lotNumber,
-      @JsonKey(name: '_lotNumber') Element? lotNumberElement,
+      @JsonKey(name: '_lotNumber') PrimitiveElement? lotNumberElement,
       FhirDateTime? expirationDate,
-      @JsonKey(name: '_expirationDate') Element? expirationDateElement});
+      @JsonKey(name: '_expirationDate')
+      PrimitiveElement? expirationDateElement});
 }
 
 /// @nodoc
@@ -9926,7 +9957,7 @@ class __$$MedicationBatchImplCopyWithImpl<$Res>
       lotNumberElement: freezed == lotNumberElement
           ? _value.lotNumberElement
           : lotNumberElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       expirationDate: freezed == expirationDate
           ? _value.expirationDate
           : expirationDate // ignore: cast_nullable_to_non_nullable
@@ -9934,7 +9965,7 @@ class __$$MedicationBatchImplCopyWithImpl<$Res>
       expirationDateElement: freezed == expirationDateElement
           ? _value.expirationDateElement
           : expirationDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -10029,7 +10060,7 @@ class _$MedicationBatchImpl extends _MedicationBatch {
   /// [lotNumberElement] ("_lotNumber") Extensions for lotNumber
   @override
   @JsonKey(name: '_lotNumber')
-  final Element? lotNumberElement;
+  final PrimitiveElement? lotNumberElement;
 
   /// [expirationDate] When this specific batch of product will expire.
   @override
@@ -10038,7 +10069,7 @@ class _$MedicationBatchImpl extends _MedicationBatch {
   /// [expirationDateElement] ("_expirationDate") Extensions for expirationDate
   @override
   @JsonKey(name: '_expirationDate')
-  final Element? expirationDateElement;
+  final PrimitiveElement? expirationDateElement;
 
   @override
   String toString() {
@@ -10098,10 +10129,10 @@ abstract class _MedicationBatch extends MedicationBatch {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final String? lotNumber,
-      @JsonKey(name: '_lotNumber') final Element? lotNumberElement,
+      @JsonKey(name: '_lotNumber') final PrimitiveElement? lotNumberElement,
       final FhirDateTime? expirationDate,
       @JsonKey(name: '_expirationDate')
-      final Element? expirationDateElement}) = _$MedicationBatchImpl;
+      final PrimitiveElement? expirationDateElement}) = _$MedicationBatchImpl;
   const _MedicationBatch._() : super._();
 
   factory _MedicationBatch.fromJson(Map<String, dynamic> json) =
@@ -10145,7 +10176,7 @@ abstract class _MedicationBatch extends MedicationBatch {
 
   /// [lotNumberElement] ("_lotNumber") Extensions for lotNumber
   @JsonKey(name: '_lotNumber')
-  Element? get lotNumberElement;
+  PrimitiveElement? get lotNumberElement;
   @override
 
   /// [expirationDate] When this specific batch of product will expire.
@@ -10154,7 +10185,7 @@ abstract class _MedicationBatch extends MedicationBatch {
 
   /// [expirationDateElement] ("_expirationDate") Extensions for expirationDate
   @JsonKey(name: '_expirationDate')
-  Element? get expirationDateElement;
+  PrimitiveElement? get expirationDateElement;
   @override
   @JsonKey(ignore: true)
   _$$MedicationBatchImplCopyWith<_$MedicationBatchImpl> get copyWith =>
@@ -10189,14 +10220,15 @@ mixin _$MedicationAdministration {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -10261,7 +10293,7 @@ mixin _$MedicationAdministration {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [statusReason] A code indicating why the administration was not performed.
   List<CodeableConcept>? get statusReason => throw _privateConstructorUsedError;
@@ -10303,7 +10335,8 @@ mixin _$MedicationAdministration {
   /// [occurenceDateTimeElement] ("_occurenceDateTime") Extensions for
   ///  occurenceDateTime
   @JsonKey(name: '_occurenceDateTime')
-  Element? get occurenceDateTimeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get occurenceDateTimeElement =>
+      throw _privateConstructorUsedError;
 
   /// [occurencePeriod] A specific date/time or interval of time during which the
   ///  administration took place (or did not take place). For many
@@ -10324,14 +10357,15 @@ mixin _$MedicationAdministration {
 
   /// [recordedElement] ("_recorded") Extensions for recorded
   @JsonKey(name: '_recorded')
-  Element? get recordedElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get recordedElement => throw _privateConstructorUsedError;
 
   /// [isSubPotent] An indication that the full dose was not administered.
   FhirBoolean? get isSubPotent => throw _privateConstructorUsedError;
 
   /// [isSubPotentElement] ("_isSubPotent") Extensions for isSubPotent
   @JsonKey(name: '_isSubPotent')
-  Element? get isSubPotentElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get isSubPotentElement =>
+      throw _privateConstructorUsedError;
 
   /// [subPotentReason] The reason or reasons why the full dose was not
   ///  administered.
@@ -10389,9 +10423,9 @@ abstract class $MedicationAdministrationCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -10400,7 +10434,7 @@ abstract class $MedicationAdministrationCopyWith<$Res> {
       List<Reference>? basedOn,
       List<Reference>? partOf,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       List<CodeableConcept>? statusReason,
       List<CodeableConcept>? category,
       CodeableReference medication,
@@ -10408,13 +10442,14 @@ abstract class $MedicationAdministrationCopyWith<$Res> {
       Reference? encounter,
       List<Reference>? supportingInformation,
       FhirDateTime? occurenceDateTime,
-      @JsonKey(name: '_occurenceDateTime') Element? occurenceDateTimeElement,
+      @JsonKey(name: '_occurenceDateTime')
+      PrimitiveElement? occurenceDateTimeElement,
       Period? occurencePeriod,
       Timing? occurenceTiming,
       FhirDateTime? recorded,
-      @JsonKey(name: '_recorded') Element? recordedElement,
+      @JsonKey(name: '_recorded') PrimitiveElement? recordedElement,
       FhirBoolean? isSubPotent,
-      @JsonKey(name: '_isSubPotent') Element? isSubPotentElement,
+      @JsonKey(name: '_isSubPotent') PrimitiveElement? isSubPotentElement,
       List<CodeableConcept>? subPotentReason,
       List<MedicationAdministrationPerformer>? performer,
       List<CodeableReference>? reason,
@@ -10508,7 +10543,7 @@ class _$MedicationAdministrationCopyWithImpl<$Res,
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -10516,7 +10551,7 @@ class _$MedicationAdministrationCopyWithImpl<$Res,
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -10552,7 +10587,7 @@ class _$MedicationAdministrationCopyWithImpl<$Res,
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       statusReason: freezed == statusReason
           ? _value.statusReason
           : statusReason // ignore: cast_nullable_to_non_nullable
@@ -10584,7 +10619,7 @@ class _$MedicationAdministrationCopyWithImpl<$Res,
       occurenceDateTimeElement: freezed == occurenceDateTimeElement
           ? _value.occurenceDateTimeElement
           : occurenceDateTimeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       occurencePeriod: freezed == occurencePeriod
           ? _value.occurencePeriod
           : occurencePeriod // ignore: cast_nullable_to_non_nullable
@@ -10600,7 +10635,7 @@ class _$MedicationAdministrationCopyWithImpl<$Res,
       recordedElement: freezed == recordedElement
           ? _value.recordedElement
           : recordedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       isSubPotent: freezed == isSubPotent
           ? _value.isSubPotent
           : isSubPotent // ignore: cast_nullable_to_non_nullable
@@ -10608,7 +10643,7 @@ class _$MedicationAdministrationCopyWithImpl<$Res,
       isSubPotentElement: freezed == isSubPotentElement
           ? _value.isSubPotentElement
           : isSubPotentElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       subPotentReason: freezed == subPotentReason
           ? _value.subPotentReason
           : subPotentReason // ignore: cast_nullable_to_non_nullable
@@ -10761,9 +10796,9 @@ abstract class _$$MedicationAdministrationImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -10772,7 +10807,7 @@ abstract class _$$MedicationAdministrationImplCopyWith<$Res>
       List<Reference>? basedOn,
       List<Reference>? partOf,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       List<CodeableConcept>? statusReason,
       List<CodeableConcept>? category,
       CodeableReference medication,
@@ -10780,13 +10815,14 @@ abstract class _$$MedicationAdministrationImplCopyWith<$Res>
       Reference? encounter,
       List<Reference>? supportingInformation,
       FhirDateTime? occurenceDateTime,
-      @JsonKey(name: '_occurenceDateTime') Element? occurenceDateTimeElement,
+      @JsonKey(name: '_occurenceDateTime')
+      PrimitiveElement? occurenceDateTimeElement,
       Period? occurencePeriod,
       Timing? occurenceTiming,
       FhirDateTime? recorded,
-      @JsonKey(name: '_recorded') Element? recordedElement,
+      @JsonKey(name: '_recorded') PrimitiveElement? recordedElement,
       FhirBoolean? isSubPotent,
-      @JsonKey(name: '_isSubPotent') Element? isSubPotentElement,
+      @JsonKey(name: '_isSubPotent') PrimitiveElement? isSubPotentElement,
       List<CodeableConcept>? subPotentReason,
       List<MedicationAdministrationPerformer>? performer,
       List<CodeableReference>? reason,
@@ -10888,7 +10924,7 @@ class __$$MedicationAdministrationImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -10896,7 +10932,7 @@ class __$$MedicationAdministrationImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -10932,7 +10968,7 @@ class __$$MedicationAdministrationImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       statusReason: freezed == statusReason
           ? _value._statusReason
           : statusReason // ignore: cast_nullable_to_non_nullable
@@ -10964,7 +11000,7 @@ class __$$MedicationAdministrationImplCopyWithImpl<$Res>
       occurenceDateTimeElement: freezed == occurenceDateTimeElement
           ? _value.occurenceDateTimeElement
           : occurenceDateTimeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       occurencePeriod: freezed == occurencePeriod
           ? _value.occurencePeriod
           : occurencePeriod // ignore: cast_nullable_to_non_nullable
@@ -10980,7 +11016,7 @@ class __$$MedicationAdministrationImplCopyWithImpl<$Res>
       recordedElement: freezed == recordedElement
           ? _value.recordedElement
           : recordedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       isSubPotent: freezed == isSubPotent
           ? _value.isSubPotent
           : isSubPotent // ignore: cast_nullable_to_non_nullable
@@ -10988,7 +11024,7 @@ class __$$MedicationAdministrationImplCopyWithImpl<$Res>
       isSubPotentElement: freezed == isSubPotentElement
           ? _value.isSubPotentElement
           : isSubPotentElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       subPotentReason: freezed == subPotentReason
           ? _value._subPotentReason
           : subPotentReason // ignore: cast_nullable_to_non_nullable
@@ -11114,7 +11150,7 @@ class _$MedicationAdministrationImpl extends _MedicationAdministration {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -11123,7 +11159,7 @@ class _$MedicationAdministrationImpl extends _MedicationAdministration {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -11278,7 +11314,7 @@ class _$MedicationAdministrationImpl extends _MedicationAdministration {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [statusReason] A code indicating why the administration was not performed.
   final List<CodeableConcept>? _statusReason;
@@ -11362,7 +11398,7 @@ class _$MedicationAdministrationImpl extends _MedicationAdministration {
   ///  occurenceDateTime
   @override
   @JsonKey(name: '_occurenceDateTime')
-  final Element? occurenceDateTimeElement;
+  final PrimitiveElement? occurenceDateTimeElement;
 
   /// [occurencePeriod] A specific date/time or interval of time during which the
   ///  administration took place (or did not take place). For many
@@ -11387,7 +11423,7 @@ class _$MedicationAdministrationImpl extends _MedicationAdministration {
   /// [recordedElement] ("_recorded") Extensions for recorded
   @override
   @JsonKey(name: '_recorded')
-  final Element? recordedElement;
+  final PrimitiveElement? recordedElement;
 
   /// [isSubPotent] An indication that the full dose was not administered.
   @override
@@ -11396,7 +11432,7 @@ class _$MedicationAdministrationImpl extends _MedicationAdministration {
   /// [isSubPotentElement] ("_isSubPotent") Extensions for isSubPotent
   @override
   @JsonKey(name: '_isSubPotent')
-  final Element? isSubPotentElement;
+  final PrimitiveElement? isSubPotentElement;
 
   /// [subPotentReason] The reason or reasons why the full dose was not
   ///  administered.
@@ -11646,9 +11682,10 @@ abstract class _MedicationAdministration extends MedicationAdministration {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
@@ -11657,7 +11694,7 @@ abstract class _MedicationAdministration extends MedicationAdministration {
       final List<Reference>? basedOn,
       final List<Reference>? partOf,
       final FhirCode? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final List<CodeableConcept>? statusReason,
       final List<CodeableConcept>? category,
       required final CodeableReference medication,
@@ -11666,13 +11703,13 @@ abstract class _MedicationAdministration extends MedicationAdministration {
       final List<Reference>? supportingInformation,
       final FhirDateTime? occurenceDateTime,
       @JsonKey(name: '_occurenceDateTime')
-      final Element? occurenceDateTimeElement,
+      final PrimitiveElement? occurenceDateTimeElement,
       final Period? occurencePeriod,
       final Timing? occurenceTiming,
       final FhirDateTime? recorded,
-      @JsonKey(name: '_recorded') final Element? recordedElement,
+      @JsonKey(name: '_recorded') final PrimitiveElement? recordedElement,
       final FhirBoolean? isSubPotent,
-      @JsonKey(name: '_isSubPotent') final Element? isSubPotentElement,
+      @JsonKey(name: '_isSubPotent') final PrimitiveElement? isSubPotentElement,
       final List<CodeableConcept>? subPotentReason,
       final List<MedicationAdministrationPerformer>? performer,
       final List<CodeableReference>? reason,
@@ -11713,7 +11750,7 @@ abstract class _MedicationAdministration extends MedicationAdministration {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -11722,7 +11759,7 @@ abstract class _MedicationAdministration extends MedicationAdministration {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -11795,7 +11832,7 @@ abstract class _MedicationAdministration extends MedicationAdministration {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [statusReason] A code indicating why the administration was not performed.
@@ -11844,7 +11881,7 @@ abstract class _MedicationAdministration extends MedicationAdministration {
   /// [occurenceDateTimeElement] ("_occurenceDateTime") Extensions for
   ///  occurenceDateTime
   @JsonKey(name: '_occurenceDateTime')
-  Element? get occurenceDateTimeElement;
+  PrimitiveElement? get occurenceDateTimeElement;
   @override
 
   /// [occurencePeriod] A specific date/time or interval of time during which the
@@ -11869,7 +11906,7 @@ abstract class _MedicationAdministration extends MedicationAdministration {
 
   /// [recordedElement] ("_recorded") Extensions for recorded
   @JsonKey(name: '_recorded')
-  Element? get recordedElement;
+  PrimitiveElement? get recordedElement;
   @override
 
   /// [isSubPotent] An indication that the full dose was not administered.
@@ -11878,7 +11915,7 @@ abstract class _MedicationAdministration extends MedicationAdministration {
 
   /// [isSubPotentElement] ("_isSubPotent") Extensions for isSubPotent
   @JsonKey(name: '_isSubPotent')
-  Element? get isSubPotentElement;
+  PrimitiveElement? get isSubPotentElement;
   @override
 
   /// [subPotentReason] The reason or reasons why the full dose was not
@@ -12371,7 +12408,7 @@ mixin _$MedicationAdministrationDosage {
 
   /// [textElement] ("_text") Extensions for text
   @JsonKey(name: '_text')
-  Element? get textElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get textElement => throw _privateConstructorUsedError;
 
   /// [site] A coded specification of the anatomic site where the medication
   ///  first entered the body.  For example, "left arm".
@@ -12426,7 +12463,7 @@ abstract class $MedicationAdministrationDosageCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? text,
-      @JsonKey(name: '_text') Element? textElement,
+      @JsonKey(name: '_text') PrimitiveElement? textElement,
       CodeableConcept? site,
       CodeableConcept? route,
       CodeableConcept? method,
@@ -12488,7 +12525,7 @@ class _$MedicationAdministrationDosageCopyWithImpl<$Res,
       textElement: freezed == textElement
           ? _value.textElement
           : textElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       site: freezed == site
           ? _value.site
           : site // ignore: cast_nullable_to_non_nullable
@@ -12603,7 +12640,7 @@ abstract class _$$MedicationAdministrationDosageImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? text,
-      @JsonKey(name: '_text') Element? textElement,
+      @JsonKey(name: '_text') PrimitiveElement? textElement,
       CodeableConcept? site,
       CodeableConcept? route,
       CodeableConcept? method,
@@ -12670,7 +12707,7 @@ class __$$MedicationAdministrationDosageImplCopyWithImpl<$Res>
       textElement: freezed == textElement
           ? _value.textElement
           : textElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       site: freezed == site
           ? _value.site
           : site // ignore: cast_nullable_to_non_nullable
@@ -12798,7 +12835,7 @@ class _$MedicationAdministrationDosageImpl
   /// [textElement] ("_text") Extensions for text
   @override
   @JsonKey(name: '_text')
-  final Element? textElement;
+  final PrimitiveElement? textElement;
 
   /// [site] A coded specification of the anatomic site where the medication
   ///  first entered the body.  For example, "left arm".
@@ -12907,7 +12944,7 @@ abstract class _MedicationAdministrationDosage
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final String? text,
-      @JsonKey(name: '_text') final Element? textElement,
+      @JsonKey(name: '_text') final PrimitiveElement? textElement,
       final CodeableConcept? site,
       final CodeableConcept? route,
       final CodeableConcept? method,
@@ -12960,7 +12997,7 @@ abstract class _MedicationAdministrationDosage
 
   /// [textElement] ("_text") Extensions for text
   @JsonKey(name: '_text')
-  Element? get textElement;
+  PrimitiveElement? get textElement;
   @override
 
   /// [site] A coded specification of the anatomic site where the medication
@@ -13035,14 +13072,15 @@ mixin _$MedicationDispense {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -13104,7 +13142,7 @@ mixin _$MedicationDispense {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [notPerformedReason] Indicates the reason why a dispense was not performed.
   CodeableReference? get notPerformedReason =>
@@ -13116,7 +13154,8 @@ mixin _$MedicationDispense {
 
   /// [statusChangedElement] ("_statusChanged") Extensions for statusChanged
   @JsonKey(name: '_statusChanged')
-  Element? get statusChangedElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusChangedElement =>
+      throw _privateConstructorUsedError;
 
   /// [category] Indicates the type of medication dispense (for example, drug
   ///  classification like ATC, where meds would be administered, legal category
@@ -13173,7 +13212,7 @@ mixin _$MedicationDispense {
 
   /// [recordedElement] ("_recorded") Extensions for recorded
   @JsonKey(name: '_recorded')
-  Element? get recordedElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get recordedElement => throw _privateConstructorUsedError;
 
   /// [whenPrepared] The time when the dispensed product was packaged and
   ///  reviewed.
@@ -13181,7 +13220,8 @@ mixin _$MedicationDispense {
 
   /// [whenPreparedElement] ("_whenPrepared") Extensions for whenPrepared
   @JsonKey(name: '_whenPrepared')
-  Element? get whenPreparedElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get whenPreparedElement =>
+      throw _privateConstructorUsedError;
 
   /// [whenHandedOver] The time the dispensed product was provided to the patient
   ///  or their representative.
@@ -13189,7 +13229,8 @@ mixin _$MedicationDispense {
 
   /// [whenHandedOverElement] ("_whenHandedOver") Extensions for whenHandedOver
   @JsonKey(name: '_whenHandedOver')
-  Element? get whenHandedOverElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get whenHandedOverElement =>
+      throw _privateConstructorUsedError;
 
   /// [destination] Identification of the facility/location where the medication
   ///  was/will be shipped to, as part of the dispense event.
@@ -13215,7 +13256,7 @@ mixin _$MedicationDispense {
   /// [renderedDosageInstructionElement] ("_renderedDosageInstruction")
   ///  Extensions for renderedDosageInstruction
   @JsonKey(name: '_renderedDosageInstruction')
-  Element? get renderedDosageInstructionElement =>
+  PrimitiveElement? get renderedDosageInstructionElement =>
       throw _privateConstructorUsedError;
 
   /// [dosageInstruction] Indicates how the medication is to be used by the
@@ -13252,9 +13293,9 @@ abstract class $MedicationDispenseCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -13263,10 +13304,10 @@ abstract class $MedicationDispenseCopyWith<$Res> {
       List<Reference>? basedOn,
       List<Reference>? partOf,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       CodeableReference? notPerformedReason,
       FhirDateTime? statusChanged,
-      @JsonKey(name: '_statusChanged') Element? statusChangedElement,
+      @JsonKey(name: '_statusChanged') PrimitiveElement? statusChangedElement,
       List<CodeableConcept>? category,
       CodeableReference medication,
       Reference subject,
@@ -13279,17 +13320,17 @@ abstract class $MedicationDispenseCopyWith<$Res> {
       Quantity? quantity,
       Quantity? daysSupply,
       FhirDateTime? recorded,
-      @JsonKey(name: '_recorded') Element? recordedElement,
+      @JsonKey(name: '_recorded') PrimitiveElement? recordedElement,
       FhirDateTime? whenPrepared,
-      @JsonKey(name: '_whenPrepared') Element? whenPreparedElement,
+      @JsonKey(name: '_whenPrepared') PrimitiveElement? whenPreparedElement,
       FhirDateTime? whenHandedOver,
-      @JsonKey(name: '_whenHandedOver') Element? whenHandedOverElement,
+      @JsonKey(name: '_whenHandedOver') PrimitiveElement? whenHandedOverElement,
       Reference? destination,
       List<Reference>? receiver,
       List<Annotation>? note,
       FhirMarkdown? renderedDosageInstruction,
       @JsonKey(name: '_renderedDosageInstruction')
-      Element? renderedDosageInstructionElement,
+      PrimitiveElement? renderedDosageInstructionElement,
       List<Dosage>? dosageInstruction,
       MedicationDispenseSubstitution? substitution,
       List<Reference>? eventHistory});
@@ -13386,7 +13427,7 @@ class _$MedicationDispenseCopyWithImpl<$Res, $Val extends MedicationDispense>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -13394,7 +13435,7 @@ class _$MedicationDispenseCopyWithImpl<$Res, $Val extends MedicationDispense>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -13430,7 +13471,7 @@ class _$MedicationDispenseCopyWithImpl<$Res, $Val extends MedicationDispense>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       notPerformedReason: freezed == notPerformedReason
           ? _value.notPerformedReason
           : notPerformedReason // ignore: cast_nullable_to_non_nullable
@@ -13442,7 +13483,7 @@ class _$MedicationDispenseCopyWithImpl<$Res, $Val extends MedicationDispense>
       statusChangedElement: freezed == statusChangedElement
           ? _value.statusChangedElement
           : statusChangedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       category: freezed == category
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
@@ -13494,7 +13535,7 @@ class _$MedicationDispenseCopyWithImpl<$Res, $Val extends MedicationDispense>
       recordedElement: freezed == recordedElement
           ? _value.recordedElement
           : recordedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       whenPrepared: freezed == whenPrepared
           ? _value.whenPrepared
           : whenPrepared // ignore: cast_nullable_to_non_nullable
@@ -13502,7 +13543,7 @@ class _$MedicationDispenseCopyWithImpl<$Res, $Val extends MedicationDispense>
       whenPreparedElement: freezed == whenPreparedElement
           ? _value.whenPreparedElement
           : whenPreparedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       whenHandedOver: freezed == whenHandedOver
           ? _value.whenHandedOver
           : whenHandedOver // ignore: cast_nullable_to_non_nullable
@@ -13510,7 +13551,7 @@ class _$MedicationDispenseCopyWithImpl<$Res, $Val extends MedicationDispense>
       whenHandedOverElement: freezed == whenHandedOverElement
           ? _value.whenHandedOverElement
           : whenHandedOverElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       destination: freezed == destination
           ? _value.destination
           : destination // ignore: cast_nullable_to_non_nullable
@@ -13531,7 +13572,7 @@ class _$MedicationDispenseCopyWithImpl<$Res, $Val extends MedicationDispense>
               renderedDosageInstructionElement
           ? _value.renderedDosageInstructionElement
           : renderedDosageInstructionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       dosageInstruction: freezed == dosageInstruction
           ? _value.dosageInstruction
           : dosageInstruction // ignore: cast_nullable_to_non_nullable
@@ -13700,9 +13741,9 @@ abstract class _$$MedicationDispenseImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -13711,10 +13752,10 @@ abstract class _$$MedicationDispenseImplCopyWith<$Res>
       List<Reference>? basedOn,
       List<Reference>? partOf,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       CodeableReference? notPerformedReason,
       FhirDateTime? statusChanged,
-      @JsonKey(name: '_statusChanged') Element? statusChangedElement,
+      @JsonKey(name: '_statusChanged') PrimitiveElement? statusChangedElement,
       List<CodeableConcept>? category,
       CodeableReference medication,
       Reference subject,
@@ -13727,17 +13768,17 @@ abstract class _$$MedicationDispenseImplCopyWith<$Res>
       Quantity? quantity,
       Quantity? daysSupply,
       FhirDateTime? recorded,
-      @JsonKey(name: '_recorded') Element? recordedElement,
+      @JsonKey(name: '_recorded') PrimitiveElement? recordedElement,
       FhirDateTime? whenPrepared,
-      @JsonKey(name: '_whenPrepared') Element? whenPreparedElement,
+      @JsonKey(name: '_whenPrepared') PrimitiveElement? whenPreparedElement,
       FhirDateTime? whenHandedOver,
-      @JsonKey(name: '_whenHandedOver') Element? whenHandedOverElement,
+      @JsonKey(name: '_whenHandedOver') PrimitiveElement? whenHandedOverElement,
       Reference? destination,
       List<Reference>? receiver,
       List<Annotation>? note,
       FhirMarkdown? renderedDosageInstruction,
       @JsonKey(name: '_renderedDosageInstruction')
-      Element? renderedDosageInstructionElement,
+      PrimitiveElement? renderedDosageInstructionElement,
       List<Dosage>? dosageInstruction,
       MedicationDispenseSubstitution? substitution,
       List<Reference>? eventHistory});
@@ -13844,7 +13885,7 @@ class __$$MedicationDispenseImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -13852,7 +13893,7 @@ class __$$MedicationDispenseImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -13888,7 +13929,7 @@ class __$$MedicationDispenseImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       notPerformedReason: freezed == notPerformedReason
           ? _value.notPerformedReason
           : notPerformedReason // ignore: cast_nullable_to_non_nullable
@@ -13900,7 +13941,7 @@ class __$$MedicationDispenseImplCopyWithImpl<$Res>
       statusChangedElement: freezed == statusChangedElement
           ? _value.statusChangedElement
           : statusChangedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       category: freezed == category
           ? _value._category
           : category // ignore: cast_nullable_to_non_nullable
@@ -13952,7 +13993,7 @@ class __$$MedicationDispenseImplCopyWithImpl<$Res>
       recordedElement: freezed == recordedElement
           ? _value.recordedElement
           : recordedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       whenPrepared: freezed == whenPrepared
           ? _value.whenPrepared
           : whenPrepared // ignore: cast_nullable_to_non_nullable
@@ -13960,7 +14001,7 @@ class __$$MedicationDispenseImplCopyWithImpl<$Res>
       whenPreparedElement: freezed == whenPreparedElement
           ? _value.whenPreparedElement
           : whenPreparedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       whenHandedOver: freezed == whenHandedOver
           ? _value.whenHandedOver
           : whenHandedOver // ignore: cast_nullable_to_non_nullable
@@ -13968,7 +14009,7 @@ class __$$MedicationDispenseImplCopyWithImpl<$Res>
       whenHandedOverElement: freezed == whenHandedOverElement
           ? _value.whenHandedOverElement
           : whenHandedOverElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       destination: freezed == destination
           ? _value.destination
           : destination // ignore: cast_nullable_to_non_nullable
@@ -13989,7 +14030,7 @@ class __$$MedicationDispenseImplCopyWithImpl<$Res>
               renderedDosageInstructionElement
           ? _value.renderedDosageInstructionElement
           : renderedDosageInstructionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       dosageInstruction: freezed == dosageInstruction
           ? _value._dosageInstruction
           : dosageInstruction // ignore: cast_nullable_to_non_nullable
@@ -14101,7 +14142,7 @@ class _$MedicationDispenseImpl extends _MedicationDispense {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -14110,7 +14151,7 @@ class _$MedicationDispenseImpl extends _MedicationDispense {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -14262,7 +14303,7 @@ class _$MedicationDispenseImpl extends _MedicationDispense {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [notPerformedReason] Indicates the reason why a dispense was not performed.
   @override
@@ -14276,7 +14317,7 @@ class _$MedicationDispenseImpl extends _MedicationDispense {
   /// [statusChangedElement] ("_statusChanged") Extensions for statusChanged
   @override
   @JsonKey(name: '_statusChanged')
-  final Element? statusChangedElement;
+  final PrimitiveElement? statusChangedElement;
 
   /// [category] Indicates the type of medication dispense (for example, drug
   ///  classification like ATC, where meds would be administered, legal category
@@ -14387,7 +14428,7 @@ class _$MedicationDispenseImpl extends _MedicationDispense {
   /// [recordedElement] ("_recorded") Extensions for recorded
   @override
   @JsonKey(name: '_recorded')
-  final Element? recordedElement;
+  final PrimitiveElement? recordedElement;
 
   /// [whenPrepared] The time when the dispensed product was packaged and
   ///  reviewed.
@@ -14397,7 +14438,7 @@ class _$MedicationDispenseImpl extends _MedicationDispense {
   /// [whenPreparedElement] ("_whenPrepared") Extensions for whenPrepared
   @override
   @JsonKey(name: '_whenPrepared')
-  final Element? whenPreparedElement;
+  final PrimitiveElement? whenPreparedElement;
 
   /// [whenHandedOver] The time the dispensed product was provided to the patient
   ///  or their representative.
@@ -14407,7 +14448,7 @@ class _$MedicationDispenseImpl extends _MedicationDispense {
   /// [whenHandedOverElement] ("_whenHandedOver") Extensions for whenHandedOver
   @override
   @JsonKey(name: '_whenHandedOver')
-  final Element? whenHandedOverElement;
+  final PrimitiveElement? whenHandedOverElement;
 
   /// [destination] Identification of the facility/location where the medication
   ///  was/will be shipped to, as part of the dispense event.
@@ -14459,7 +14500,7 @@ class _$MedicationDispenseImpl extends _MedicationDispense {
   ///  Extensions for renderedDosageInstruction
   @override
   @JsonKey(name: '_renderedDosageInstruction')
-  final Element? renderedDosageInstructionElement;
+  final PrimitiveElement? renderedDosageInstructionElement;
 
   /// [dosageInstruction] Indicates how the medication is to be used by the
   ///  patient.
@@ -14664,9 +14705,10 @@ abstract class _MedicationDispense extends MedicationDispense {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
@@ -14675,10 +14717,11 @@ abstract class _MedicationDispense extends MedicationDispense {
       final List<Reference>? basedOn,
       final List<Reference>? partOf,
       final FhirCode? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final CodeableReference? notPerformedReason,
       final FhirDateTime? statusChanged,
-      @JsonKey(name: '_statusChanged') final Element? statusChangedElement,
+      @JsonKey(name: '_statusChanged')
+      final PrimitiveElement? statusChangedElement,
       final List<CodeableConcept>? category,
       required final CodeableReference medication,
       required final Reference subject,
@@ -14691,17 +14734,19 @@ abstract class _MedicationDispense extends MedicationDispense {
       final Quantity? quantity,
       final Quantity? daysSupply,
       final FhirDateTime? recorded,
-      @JsonKey(name: '_recorded') final Element? recordedElement,
+      @JsonKey(name: '_recorded') final PrimitiveElement? recordedElement,
       final FhirDateTime? whenPrepared,
-      @JsonKey(name: '_whenPrepared') final Element? whenPreparedElement,
+      @JsonKey(name: '_whenPrepared')
+      final PrimitiveElement? whenPreparedElement,
       final FhirDateTime? whenHandedOver,
-      @JsonKey(name: '_whenHandedOver') final Element? whenHandedOverElement,
+      @JsonKey(name: '_whenHandedOver')
+      final PrimitiveElement? whenHandedOverElement,
       final Reference? destination,
       final List<Reference>? receiver,
       final List<Annotation>? note,
       final FhirMarkdown? renderedDosageInstruction,
       @JsonKey(name: '_renderedDosageInstruction')
-      final Element? renderedDosageInstructionElement,
+      final PrimitiveElement? renderedDosageInstructionElement,
       final List<Dosage>? dosageInstruction,
       final MedicationDispenseSubstitution? substitution,
       final List<Reference>? eventHistory}) = _$MedicationDispenseImpl;
@@ -14737,7 +14782,7 @@ abstract class _MedicationDispense extends MedicationDispense {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -14746,7 +14791,7 @@ abstract class _MedicationDispense extends MedicationDispense {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -14816,7 +14861,7 @@ abstract class _MedicationDispense extends MedicationDispense {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [notPerformedReason] Indicates the reason why a dispense was not performed.
@@ -14830,7 +14875,7 @@ abstract class _MedicationDispense extends MedicationDispense {
 
   /// [statusChangedElement] ("_statusChanged") Extensions for statusChanged
   @JsonKey(name: '_statusChanged')
-  Element? get statusChangedElement;
+  PrimitiveElement? get statusChangedElement;
   @override
 
   /// [category] Indicates the type of medication dispense (for example, drug
@@ -14897,7 +14942,7 @@ abstract class _MedicationDispense extends MedicationDispense {
 
   /// [recordedElement] ("_recorded") Extensions for recorded
   @JsonKey(name: '_recorded')
-  Element? get recordedElement;
+  PrimitiveElement? get recordedElement;
   @override
 
   /// [whenPrepared] The time when the dispensed product was packaged and
@@ -14907,7 +14952,7 @@ abstract class _MedicationDispense extends MedicationDispense {
 
   /// [whenPreparedElement] ("_whenPrepared") Extensions for whenPrepared
   @JsonKey(name: '_whenPrepared')
-  Element? get whenPreparedElement;
+  PrimitiveElement? get whenPreparedElement;
   @override
 
   /// [whenHandedOver] The time the dispensed product was provided to the patient
@@ -14917,7 +14962,7 @@ abstract class _MedicationDispense extends MedicationDispense {
 
   /// [whenHandedOverElement] ("_whenHandedOver") Extensions for whenHandedOver
   @JsonKey(name: '_whenHandedOver')
-  Element? get whenHandedOverElement;
+  PrimitiveElement? get whenHandedOverElement;
   @override
 
   /// [destination] Identification of the facility/location where the medication
@@ -14947,7 +14992,7 @@ abstract class _MedicationDispense extends MedicationDispense {
   /// [renderedDosageInstructionElement] ("_renderedDosageInstruction")
   ///  Extensions for renderedDosageInstruction
   @JsonKey(name: '_renderedDosageInstruction')
-  Element? get renderedDosageInstructionElement;
+  PrimitiveElement? get renderedDosageInstructionElement;
   @override
 
   /// [dosageInstruction] Indicates how the medication is to be used by the
@@ -15411,7 +15456,8 @@ mixin _$MedicationDispenseSubstitution {
 
   /// [wasSubstitutedElement] ("_wasSubstituted") Extensions for wasSubstituted
   @JsonKey(name: '_wasSubstituted')
-  Element? get wasSubstitutedElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get wasSubstitutedElement =>
+      throw _privateConstructorUsedError;
 
   /// [type] A code signifying whether a different drug was dispensed from what
   ///  was prescribed.
@@ -15444,7 +15490,7 @@ abstract class $MedicationDispenseSubstitutionCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirBoolean? wasSubstituted,
-      @JsonKey(name: '_wasSubstituted') Element? wasSubstitutedElement,
+      @JsonKey(name: '_wasSubstituted') PrimitiveElement? wasSubstitutedElement,
       CodeableConcept? type,
       List<CodeableConcept>? reason,
       Reference? responsibleParty});
@@ -15496,7 +15542,7 @@ class _$MedicationDispenseSubstitutionCopyWithImpl<$Res,
       wasSubstitutedElement: freezed == wasSubstitutedElement
           ? _value.wasSubstitutedElement
           : wasSubstitutedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -15551,7 +15597,7 @@ abstract class _$$MedicationDispenseSubstitutionImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirBoolean? wasSubstituted,
-      @JsonKey(name: '_wasSubstituted') Element? wasSubstitutedElement,
+      @JsonKey(name: '_wasSubstituted') PrimitiveElement? wasSubstitutedElement,
       CodeableConcept? type,
       List<CodeableConcept>? reason,
       Reference? responsibleParty});
@@ -15604,7 +15650,7 @@ class __$$MedicationDispenseSubstitutionImplCopyWithImpl<$Res>
       wasSubstitutedElement: freezed == wasSubstitutedElement
           ? _value.wasSubstitutedElement
           : wasSubstitutedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -15716,7 +15762,7 @@ class _$MedicationDispenseSubstitutionImpl
   /// [wasSubstitutedElement] ("_wasSubstituted") Extensions for wasSubstituted
   @override
   @JsonKey(name: '_wasSubstituted')
-  final Element? wasSubstitutedElement;
+  final PrimitiveElement? wasSubstitutedElement;
 
   /// [type] A code signifying whether a different drug was dispensed from what
   ///  was prescribed.
@@ -15800,15 +15846,16 @@ class _$MedicationDispenseSubstitutionImpl
 abstract class _MedicationDispenseSubstitution
     extends MedicationDispenseSubstitution {
   const factory _MedicationDispenseSubstitution(
-      {final String? id,
-      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-      final List<FhirExtension>? modifierExtension,
-      final FhirBoolean? wasSubstituted,
-      @JsonKey(name: '_wasSubstituted') final Element? wasSubstitutedElement,
-      final CodeableConcept? type,
-      final List<CodeableConcept>? reason,
-      final Reference?
-          responsibleParty}) = _$MedicationDispenseSubstitutionImpl;
+          {final String? id,
+          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+          final List<FhirExtension>? modifierExtension,
+          final FhirBoolean? wasSubstituted,
+          @JsonKey(name: '_wasSubstituted')
+          final PrimitiveElement? wasSubstitutedElement,
+          final CodeableConcept? type,
+          final List<CodeableConcept>? reason,
+          final Reference? responsibleParty}) =
+      _$MedicationDispenseSubstitutionImpl;
   const _MedicationDispenseSubstitution._() : super._();
 
   factory _MedicationDispenseSubstitution.fromJson(Map<String, dynamic> json) =
@@ -15853,7 +15900,7 @@ abstract class _MedicationDispenseSubstitution
 
   /// [wasSubstitutedElement] ("_wasSubstituted") Extensions for wasSubstituted
   @JsonKey(name: '_wasSubstituted')
-  Element? get wasSubstitutedElement;
+  PrimitiveElement? get wasSubstitutedElement;
   @override
 
   /// [type] A code signifying whether a different drug was dispensed from what
@@ -15903,14 +15950,15 @@ mixin _$MedicationKnowledge {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -15962,7 +16010,7 @@ mixin _$MedicationKnowledge {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   /// [identifier] Business identifier for this medication.
   List<Identifier>? get identifier => throw _privateConstructorUsedError;
@@ -15978,7 +16026,7 @@ mixin _$MedicationKnowledge {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -15987,7 +16035,7 @@ mixin _$MedicationKnowledge {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement =>
+  PrimitiveElement? get versionAlgorithmStringElement =>
       throw _privateConstructorUsedError;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -16008,7 +16056,7 @@ mixin _$MedicationKnowledge {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [status] A code to indicate if the medication referred to by this
   ///  MedicationKnowledge is in active use within the drug database or inventory
@@ -16018,7 +16066,7 @@ mixin _$MedicationKnowledge {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [experimental] A Boolean value to indicate that this {{title}} is authored
   ///  for testing purposes (or education/evaluation/marketing) and is not
@@ -16027,7 +16075,8 @@ mixin _$MedicationKnowledge {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get experimentalElement =>
+      throw _privateConstructorUsedError;
 
   /// [date] The date (and optionally time) when the {{title}} was last
   ///  significantly changed. The date must change when the business version
@@ -16037,7 +16086,7 @@ mixin _$MedicationKnowledge {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the {{title}}.
@@ -16045,7 +16094,7 @@ mixin _$MedicationKnowledge {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get publisherElement => throw _privateConstructorUsedError;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -16057,7 +16106,8 @@ mixin _$MedicationKnowledge {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -16076,7 +16126,7 @@ mixin _$MedicationKnowledge {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get purposeElement => throw _privateConstructorUsedError;
 
   /// [copyright] A copyright statement relating to the {{title}} and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
@@ -16085,7 +16135,7 @@ mixin _$MedicationKnowledge {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -16095,7 +16145,8 @@ mixin _$MedicationKnowledge {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightLabelElement =>
+      throw _privateConstructorUsedError;
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
@@ -16104,7 +16155,8 @@ mixin _$MedicationKnowledge {
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @JsonKey(name: '_approvalDate')
-  Element? get approvalDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get approvalDateElement =>
+      throw _privateConstructorUsedError;
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
@@ -16113,7 +16165,8 @@ mixin _$MedicationKnowledge {
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @JsonKey(name: '_lastReviewDate')
-  Element? get lastReviewDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get lastReviewDateElement =>
+      throw _privateConstructorUsedError;
 
   /// [effectivePeriod] The period during which the {{title}} content was or is
   ///  planned to be in active use.
@@ -16186,7 +16239,7 @@ mixin _$MedicationKnowledge {
   /// [preparationInstructionElement] ("_preparationInstruction") Extensions for
   ///  preparationInstruction
   @JsonKey(name: '_preparationInstruction')
-  Element? get preparationInstructionElement =>
+  PrimitiveElement? get preparationInstructionElement =>
       throw _privateConstructorUsedError;
 
   /// [cost] The price of the medication.
@@ -16249,49 +16302,49 @@ abstract class $MedicationKnowledgeCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       List<String>? name,
       @JsonKey(name: '_name') List<Element>? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
       FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
       Period? effectivePeriod,
       List<CodeableConcept>? topic,
       Reference? author,
@@ -16308,7 +16361,7 @@ abstract class $MedicationKnowledgeCopyWith<$Res> {
       List<MedicationKnowledgeMonograph>? monograph,
       FhirMarkdown? preparationInstruction,
       @JsonKey(name: '_preparationInstruction')
-      Element? preparationInstructionElement,
+      PrimitiveElement? preparationInstructionElement,
       List<MedicationKnowledgeCost>? cost,
       List<MedicationKnowledgeMonitoringProgram>? monitoringProgram,
       List<MedicationKnowledgeIndicationGuideline>? indicationGuideline,
@@ -16432,7 +16485,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -16440,7 +16493,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -16464,7 +16517,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -16476,7 +16529,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -16484,7 +16537,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -16504,7 +16557,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -16512,7 +16565,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -16520,7 +16573,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -16528,7 +16581,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -16536,7 +16589,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value.contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -16548,7 +16601,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value.useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -16564,7 +16617,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -16572,7 +16625,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -16580,7 +16633,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       approvalDate: freezed == approvalDate
           ? _value.approvalDate
           : approvalDate // ignore: cast_nullable_to_non_nullable
@@ -16588,7 +16641,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       approvalDateElement: freezed == approvalDateElement
           ? _value.approvalDateElement
           : approvalDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       lastReviewDate: freezed == lastReviewDate
           ? _value.lastReviewDate
           : lastReviewDate // ignore: cast_nullable_to_non_nullable
@@ -16596,7 +16649,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       lastReviewDateElement: freezed == lastReviewDateElement
           ? _value.lastReviewDateElement
           : lastReviewDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       effectivePeriod: freezed == effectivePeriod
           ? _value.effectivePeriod
           : effectivePeriod // ignore: cast_nullable_to_non_nullable
@@ -16656,7 +16709,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       preparationInstructionElement: freezed == preparationInstructionElement
           ? _value.preparationInstructionElement
           : preparationInstructionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       cost: freezed == cost
           ? _value.cost
           : cost // ignore: cast_nullable_to_non_nullable
@@ -16796,49 +16849,49 @@ abstract class _$$MedicationKnowledgeImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       List<String>? name,
       @JsonKey(name: '_name') List<Element>? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
       FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
       Period? effectivePeriod,
       List<CodeableConcept>? topic,
       Reference? author,
@@ -16855,7 +16908,7 @@ abstract class _$$MedicationKnowledgeImplCopyWith<$Res>
       List<MedicationKnowledgeMonograph>? monograph,
       FhirMarkdown? preparationInstruction,
       @JsonKey(name: '_preparationInstruction')
-      Element? preparationInstructionElement,
+      PrimitiveElement? preparationInstructionElement,
       List<MedicationKnowledgeCost>? cost,
       List<MedicationKnowledgeMonitoringProgram>? monitoringProgram,
       List<MedicationKnowledgeIndicationGuideline>? indicationGuideline,
@@ -16984,7 +17037,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -16992,7 +17045,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -17016,7 +17069,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value._identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -17028,7 +17081,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -17036,7 +17089,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -17056,7 +17109,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -17064,7 +17117,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -17072,7 +17125,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -17080,7 +17133,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -17088,7 +17141,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value._contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -17100,7 +17153,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value._useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -17116,7 +17169,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -17124,7 +17177,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -17132,7 +17185,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       approvalDate: freezed == approvalDate
           ? _value.approvalDate
           : approvalDate // ignore: cast_nullable_to_non_nullable
@@ -17140,7 +17193,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       approvalDateElement: freezed == approvalDateElement
           ? _value.approvalDateElement
           : approvalDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       lastReviewDate: freezed == lastReviewDate
           ? _value.lastReviewDate
           : lastReviewDate // ignore: cast_nullable_to_non_nullable
@@ -17148,7 +17201,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       lastReviewDateElement: freezed == lastReviewDateElement
           ? _value.lastReviewDateElement
           : lastReviewDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       effectivePeriod: freezed == effectivePeriod
           ? _value.effectivePeriod
           : effectivePeriod // ignore: cast_nullable_to_non_nullable
@@ -17208,7 +17261,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       preparationInstructionElement: freezed == preparationInstructionElement
           ? _value.preparationInstructionElement
           : preparationInstructionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       cost: freezed == cost
           ? _value._cost
           : cost // ignore: cast_nullable_to_non_nullable
@@ -17386,7 +17439,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -17395,7 +17448,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -17500,7 +17553,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   /// [identifier] Business identifier for this medication.
   final List<Identifier>? _identifier;
@@ -17528,7 +17581,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -17539,7 +17592,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   ///  versionAlgorithmString
   @override
   @JsonKey(name: '_versionAlgorithmString')
-  final Element? versionAlgorithmStringElement;
+  final PrimitiveElement? versionAlgorithmStringElement;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -17584,7 +17637,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [status] A code to indicate if the medication referred to by this
   ///  MedicationKnowledge is in active use within the drug database or inventory
@@ -17596,7 +17649,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [experimental] A Boolean value to indicate that this {{title}} is authored
   ///  for testing purposes (or education/evaluation/marketing) and is not
@@ -17607,7 +17660,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @override
   @JsonKey(name: '_experimental')
-  final Element? experimentalElement;
+  final PrimitiveElement? experimentalElement;
 
   /// [date] The date (and optionally time) when the {{title}} was last
   ///  significantly changed. The date must change when the business version
@@ -17619,7 +17672,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the {{title}}.
@@ -17629,7 +17682,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   /// [publisherElement] ("_publisher") Extensions for publisher
   @override
   @JsonKey(name: '_publisher')
-  final Element? publisherElement;
+  final PrimitiveElement? publisherElement;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -17654,7 +17707,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -17700,7 +17753,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   /// [purposeElement] ("_purpose") Extensions for purpose
   @override
   @JsonKey(name: '_purpose')
-  final Element? purposeElement;
+  final PrimitiveElement? purposeElement;
 
   /// [copyright] A copyright statement relating to the {{title}} and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
@@ -17711,7 +17764,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @override
   @JsonKey(name: '_copyright')
-  final Element? copyrightElement;
+  final PrimitiveElement? copyrightElement;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -17723,7 +17776,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @override
   @JsonKey(name: '_copyrightLabel')
-  final Element? copyrightLabelElement;
+  final PrimitiveElement? copyrightLabelElement;
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
@@ -17734,7 +17787,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @override
   @JsonKey(name: '_approvalDate')
-  final Element? approvalDateElement;
+  final PrimitiveElement? approvalDateElement;
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
@@ -17745,7 +17798,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @override
   @JsonKey(name: '_lastReviewDate')
-  final Element? lastReviewDateElement;
+  final PrimitiveElement? lastReviewDateElement;
 
   /// [effectivePeriod] The period during which the {{title}} content was or is
   ///  planned to be in active use.
@@ -17936,7 +17989,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   ///  preparationInstruction
   @override
   @JsonKey(name: '_preparationInstruction')
-  final Element? preparationInstructionElement;
+  final PrimitiveElement? preparationInstructionElement;
 
   /// [cost] The price of the medication.
   final List<MedicationKnowledgeCost>? _cost;
@@ -18283,49 +18336,54 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUri? url,
-      @JsonKey(name: '_url') final Element? urlElement,
+      @JsonKey(name: '_url') final PrimitiveElement? urlElement,
       final List<Identifier>? identifier,
       final String? version,
-      @JsonKey(name: '_version') final Element? versionElement,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
       final String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      final Element? versionAlgorithmStringElement,
+      final PrimitiveElement? versionAlgorithmStringElement,
       final Coding? versionAlgorithmCoding,
       final List<String>? name,
       @JsonKey(name: '_name') final List<Element>? nameElement,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final FhirCode? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') final Element? experimentalElement,
+      @JsonKey(name: '_experimental')
+      final PrimitiveElement? experimentalElement,
       final FhirDateTime? date,
-      @JsonKey(name: '_date') final Element? dateElement,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
       final String? publisher,
-      @JsonKey(name: '_publisher') final Element? publisherElement,
+      @JsonKey(name: '_publisher') final PrimitiveElement? publisherElement,
       final List<ContactDetail>? contact,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<UsageContext>? useContext,
       final List<CodeableConcept>? jurisdiction,
       final FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') final Element? purposeElement,
+      @JsonKey(name: '_purpose') final PrimitiveElement? purposeElement,
       final FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') final Element? copyrightElement,
+      @JsonKey(name: '_copyright') final PrimitiveElement? copyrightElement,
       final String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') final Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel')
+      final PrimitiveElement? copyrightLabelElement,
       final FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') final Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate')
+      final PrimitiveElement? approvalDateElement,
       final FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') final Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate')
+      final PrimitiveElement? lastReviewDateElement,
       final Period? effectivePeriod,
       final List<CodeableConcept>? topic,
       final Reference? author,
@@ -18342,7 +18400,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
       final List<MedicationKnowledgeMonograph>? monograph,
       final FhirMarkdown? preparationInstruction,
       @JsonKey(name: '_preparationInstruction')
-      final Element? preparationInstructionElement,
+      final PrimitiveElement? preparationInstructionElement,
       final List<MedicationKnowledgeCost>? cost,
       final List<MedicationKnowledgeMonitoringProgram>? monitoringProgram,
       final List<MedicationKnowledgeIndicationGuideline>? indicationGuideline,
@@ -18386,7 +18444,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -18395,7 +18453,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -18452,7 +18510,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
 
   /// [identifier] Business identifier for this medication.
@@ -18471,7 +18529,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
@@ -18482,7 +18540,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement;
+  PrimitiveElement? get versionAlgorithmStringElement;
   @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -18507,7 +18565,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [status] A code to indicate if the medication referred to by this
@@ -18519,7 +18577,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [experimental] A Boolean value to indicate that this {{title}} is authored
@@ -18530,7 +18588,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement;
+  PrimitiveElement? get experimentalElement;
   @override
 
   /// [date] The date (and optionally time) when the {{title}} was last
@@ -18542,7 +18600,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [publisher] The name of the organization or individual responsible for the
@@ -18552,7 +18610,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement;
+  PrimitiveElement? get publisherElement;
   @override
 
   /// [contact] Contact details to assist a user in finding and communicating
@@ -18567,7 +18625,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [useContext] The content was developed with a focus and intent of
@@ -18590,7 +18648,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement;
+  PrimitiveElement? get purposeElement;
   @override
 
   /// [copyright] A copyright statement relating to the {{title}} and/or its
@@ -18601,7 +18659,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement;
+  PrimitiveElement? get copyrightElement;
   @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
@@ -18613,7 +18671,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement;
+  PrimitiveElement? get copyrightLabelElement;
   @override
 
   /// [approvalDate] The date on which the resource content was approved by the
@@ -18624,7 +18682,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @JsonKey(name: '_approvalDate')
-  Element? get approvalDateElement;
+  PrimitiveElement? get approvalDateElement;
   @override
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
@@ -18635,7 +18693,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @JsonKey(name: '_lastReviewDate')
-  Element? get lastReviewDateElement;
+  PrimitiveElement? get lastReviewDateElement;
   @override
 
   /// [effectivePeriod] The period during which the {{title}} content was or is
@@ -18718,7 +18776,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
   /// [preparationInstructionElement] ("_preparationInstruction") Extensions for
   ///  preparationInstruction
   @JsonKey(name: '_preparationInstruction')
-  Element? get preparationInstructionElement;
+  PrimitiveElement? get preparationInstructionElement;
   @override
 
   /// [cost] The price of the medication.
@@ -19613,7 +19671,7 @@ mixin _$MedicationKnowledgeCost {
 
   /// [sourceElement] ("_source") Extensions for source
   @JsonKey(name: '_source')
-  Element? get sourceElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get sourceElement => throw _privateConstructorUsedError;
 
   /// [costMoney] The price or representation of the cost (for example, Band A,
   ///  Band B or $, $$) of the medication.
@@ -19643,7 +19701,7 @@ abstract class $MedicationKnowledgeCostCopyWith<$Res> {
       List<Period>? effectiveDate,
       CodeableConcept type,
       String? source,
-      @JsonKey(name: '_source') Element? sourceElement,
+      @JsonKey(name: '_source') PrimitiveElement? sourceElement,
       Money? costMoney,
       CodeableConcept? costCodeableConcept});
 
@@ -19704,7 +19762,7 @@ class _$MedicationKnowledgeCostCopyWithImpl<$Res,
       sourceElement: freezed == sourceElement
           ? _value.sourceElement
           : sourceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       costMoney: freezed == costMoney
           ? _value.costMoney
           : costMoney // ignore: cast_nullable_to_non_nullable
@@ -19765,7 +19823,7 @@ abstract class _$$MedicationKnowledgeCostImplCopyWith<$Res>
       List<Period>? effectiveDate,
       CodeableConcept type,
       String? source,
-      @JsonKey(name: '_source') Element? sourceElement,
+      @JsonKey(name: '_source') PrimitiveElement? sourceElement,
       Money? costMoney,
       CodeableConcept? costCodeableConcept});
 
@@ -19828,7 +19886,7 @@ class __$$MedicationKnowledgeCostImplCopyWithImpl<$Res>
       sourceElement: freezed == sourceElement
           ? _value.sourceElement
           : sourceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       costMoney: freezed == costMoney
           ? _value.costMoney
           : costMoney // ignore: cast_nullable_to_non_nullable
@@ -19954,7 +20012,7 @@ class _$MedicationKnowledgeCostImpl extends _MedicationKnowledgeCost {
   /// [sourceElement] ("_source") Extensions for source
   @override
   @JsonKey(name: '_source')
-  final Element? sourceElement;
+  final PrimitiveElement? sourceElement;
 
   /// [costMoney] The price or representation of the cost (for example, Band A,
   ///  Band B or $, $$) of the medication.
@@ -20030,7 +20088,7 @@ abstract class _MedicationKnowledgeCost extends MedicationKnowledgeCost {
           final List<Period>? effectiveDate,
           required final CodeableConcept type,
           final String? source,
-          @JsonKey(name: '_source') final Element? sourceElement,
+          @JsonKey(name: '_source') final PrimitiveElement? sourceElement,
           final Money? costMoney,
           final CodeableConcept? costCodeableConcept}) =
       _$MedicationKnowledgeCostImpl;
@@ -20087,7 +20145,7 @@ abstract class _MedicationKnowledgeCost extends MedicationKnowledgeCost {
 
   /// [sourceElement] ("_source") Extensions for source
   @JsonKey(name: '_source')
-  Element? get sourceElement;
+  PrimitiveElement? get sourceElement;
   @override
 
   /// [costMoney] The price or representation of the cost (for example, Band A,
@@ -20147,7 +20205,7 @@ mixin _$MedicationKnowledgeMonitoringProgram {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -20170,7 +20228,7 @@ abstract class $MedicationKnowledgeMonitoringProgramCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       CodeableConcept? type,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement});
+      @JsonKey(name: '_name') PrimitiveElement? nameElement});
 
   $CodeableConceptCopyWith<$Res>? get type;
 }
@@ -20220,7 +20278,7 @@ class _$MedicationKnowledgeMonitoringProgramCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -20252,7 +20310,7 @@ abstract class _$$MedicationKnowledgeMonitoringProgramImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       CodeableConcept? type,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement});
+      @JsonKey(name: '_name') PrimitiveElement? nameElement});
 
   @override
   $CodeableConceptCopyWith<$Res>? get type;
@@ -20302,7 +20360,7 @@ class __$$MedicationKnowledgeMonitoringProgramImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -20402,7 +20460,7 @@ class _$MedicationKnowledgeMonitoringProgramImpl
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   @override
   String toString() {
@@ -20460,7 +20518,7 @@ abstract class _MedicationKnowledgeMonitoringProgram
           final List<FhirExtension>? modifierExtension,
           final CodeableConcept? type,
           final String? name,
-          @JsonKey(name: '_name') final Element? nameElement}) =
+          @JsonKey(name: '_name') final PrimitiveElement? nameElement}) =
       _$MedicationKnowledgeMonitoringProgramImpl;
   const _MedicationKnowledgeMonitoringProgram._() : super._();
 
@@ -20510,7 +20568,7 @@ abstract class _MedicationKnowledgeMonitoringProgram
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
   @JsonKey(ignore: true)
   _$$MedicationKnowledgeMonitoringProgramImplCopyWith<
@@ -22333,7 +22391,8 @@ mixin _$MedicationKnowledgeMedicineClassification {
 
   /// [sourceStringElement] ("_sourceString") Extensions for sourceString
   @JsonKey(name: '_sourceString')
-  Element? get sourceStringElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get sourceStringElement =>
+      throw _privateConstructorUsedError;
 
   /// [sourceUri] Either a textual source of the classification or a reference to
   ///  an online source.
@@ -22341,7 +22400,7 @@ mixin _$MedicationKnowledgeMedicineClassification {
 
   /// [sourceUriElement] ("_sourceUri") Extensions for sourceUri
   @JsonKey(name: '_sourceUri')
-  Element? get sourceUriElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get sourceUriElement => throw _privateConstructorUsedError;
 
   /// [classification] Specific category assigned to the medication (e.g.
   ///  anti-infective, anti-hypertensive, antibiotic, etc.).
@@ -22369,9 +22428,9 @@ abstract class $MedicationKnowledgeMedicineClassificationCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       CodeableConcept type,
       String? sourceString,
-      @JsonKey(name: '_sourceString') Element? sourceStringElement,
+      @JsonKey(name: '_sourceString') PrimitiveElement? sourceStringElement,
       FhirUri? sourceUri,
-      @JsonKey(name: '_sourceUri') Element? sourceUriElement,
+      @JsonKey(name: '_sourceUri') PrimitiveElement? sourceUriElement,
       List<CodeableConcept>? classification});
 
   $CodeableConceptCopyWith<$Res> get type;
@@ -22426,7 +22485,7 @@ class _$MedicationKnowledgeMedicineClassificationCopyWithImpl<$Res,
       sourceStringElement: freezed == sourceStringElement
           ? _value.sourceStringElement
           : sourceStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sourceUri: freezed == sourceUri
           ? _value.sourceUri
           : sourceUri // ignore: cast_nullable_to_non_nullable
@@ -22434,7 +22493,7 @@ class _$MedicationKnowledgeMedicineClassificationCopyWithImpl<$Res,
       sourceUriElement: freezed == sourceUriElement
           ? _value.sourceUriElement
           : sourceUriElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       classification: freezed == classification
           ? _value.classification
           : classification // ignore: cast_nullable_to_non_nullable
@@ -22466,9 +22525,9 @@ abstract class _$$MedicationKnowledgeMedicineClassificationImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       CodeableConcept type,
       String? sourceString,
-      @JsonKey(name: '_sourceString') Element? sourceStringElement,
+      @JsonKey(name: '_sourceString') PrimitiveElement? sourceStringElement,
       FhirUri? sourceUri,
-      @JsonKey(name: '_sourceUri') Element? sourceUriElement,
+      @JsonKey(name: '_sourceUri') PrimitiveElement? sourceUriElement,
       List<CodeableConcept>? classification});
 
   @override
@@ -22522,7 +22581,7 @@ class __$$MedicationKnowledgeMedicineClassificationImplCopyWithImpl<$Res>
       sourceStringElement: freezed == sourceStringElement
           ? _value.sourceStringElement
           : sourceStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sourceUri: freezed == sourceUri
           ? _value.sourceUri
           : sourceUri // ignore: cast_nullable_to_non_nullable
@@ -22530,7 +22589,7 @@ class __$$MedicationKnowledgeMedicineClassificationImplCopyWithImpl<$Res>
       sourceUriElement: freezed == sourceUriElement
           ? _value.sourceUriElement
           : sourceUriElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       classification: freezed == classification
           ? _value._classification
           : classification // ignore: cast_nullable_to_non_nullable
@@ -22640,7 +22699,7 @@ class _$MedicationKnowledgeMedicineClassificationImpl
   /// [sourceStringElement] ("_sourceString") Extensions for sourceString
   @override
   @JsonKey(name: '_sourceString')
-  final Element? sourceStringElement;
+  final PrimitiveElement? sourceStringElement;
 
   /// [sourceUri] Either a textual source of the classification or a reference to
   ///  an online source.
@@ -22650,7 +22709,7 @@ class _$MedicationKnowledgeMedicineClassificationImpl
   /// [sourceUriElement] ("_sourceUri") Extensions for sourceUri
   @override
   @JsonKey(name: '_sourceUri')
-  final Element? sourceUriElement;
+  final PrimitiveElement? sourceUriElement;
 
   /// [classification] Specific category assigned to the medication (e.g.
   ///  anti-infective, anti-hypertensive, antibiotic, etc.).
@@ -22735,9 +22794,10 @@ abstract class _MedicationKnowledgeMedicineClassification
           final List<FhirExtension>? modifierExtension,
           required final CodeableConcept type,
           final String? sourceString,
-          @JsonKey(name: '_sourceString') final Element? sourceStringElement,
+          @JsonKey(name: '_sourceString')
+          final PrimitiveElement? sourceStringElement,
           final FhirUri? sourceUri,
-          @JsonKey(name: '_sourceUri') final Element? sourceUriElement,
+          @JsonKey(name: '_sourceUri') final PrimitiveElement? sourceUriElement,
           final List<CodeableConcept>? classification}) =
       _$MedicationKnowledgeMedicineClassificationImpl;
   const _MedicationKnowledgeMedicineClassification._() : super._();
@@ -22790,7 +22850,7 @@ abstract class _MedicationKnowledgeMedicineClassification
 
   /// [sourceStringElement] ("_sourceString") Extensions for sourceString
   @JsonKey(name: '_sourceString')
-  Element? get sourceStringElement;
+  PrimitiveElement? get sourceStringElement;
   @override
 
   /// [sourceUri] Either a textual source of the classification or a reference to
@@ -22800,7 +22860,7 @@ abstract class _MedicationKnowledgeMedicineClassification
 
   /// [sourceUriElement] ("_sourceUri") Extensions for sourceUri
   @JsonKey(name: '_sourceUri')
-  Element? get sourceUriElement;
+  PrimitiveElement? get sourceUriElement;
   @override
 
   /// [classification] Specific category assigned to the medication (e.g.
@@ -23247,7 +23307,7 @@ mixin _$MedicationKnowledgeStorageGuideline {
 
   /// [referenceElement] ("_reference") Extensions for reference
   @JsonKey(name: '_reference')
-  Element? get referenceElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get referenceElement => throw _privateConstructorUsedError;
 
   /// [note] Additional notes about the storage.
   List<Annotation>? get note => throw _privateConstructorUsedError;
@@ -23282,7 +23342,7 @@ abstract class $MedicationKnowledgeStorageGuidelineCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? reference,
-      @JsonKey(name: '_reference') Element? referenceElement,
+      @JsonKey(name: '_reference') PrimitiveElement? referenceElement,
       List<Annotation>? note,
       FhirDuration? stabilityDuration,
       List<MedicationKnowledgeEnvironmentalSetting>? environmentalSetting});
@@ -23333,7 +23393,7 @@ class _$MedicationKnowledgeStorageGuidelineCopyWithImpl<$Res,
       referenceElement: freezed == referenceElement
           ? _value.referenceElement
           : referenceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
@@ -23376,7 +23436,7 @@ abstract class _$$MedicationKnowledgeStorageGuidelineImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? reference,
-      @JsonKey(name: '_reference') Element? referenceElement,
+      @JsonKey(name: '_reference') PrimitiveElement? referenceElement,
       List<Annotation>? note,
       FhirDuration? stabilityDuration,
       List<MedicationKnowledgeEnvironmentalSetting>? environmentalSetting});
@@ -23427,7 +23487,7 @@ class __$$MedicationKnowledgeStorageGuidelineImplCopyWithImpl<$Res>
       referenceElement: freezed == referenceElement
           ? _value.referenceElement
           : referenceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value._note
           : note // ignore: cast_nullable_to_non_nullable
@@ -23541,7 +23601,7 @@ class _$MedicationKnowledgeStorageGuidelineImpl
   /// [referenceElement] ("_reference") Extensions for reference
   @override
   @JsonKey(name: '_reference')
-  final Element? referenceElement;
+  final PrimitiveElement? referenceElement;
 
   /// [note] Additional notes about the storage.
   final List<Annotation>? _note;
@@ -23641,7 +23701,7 @@ abstract class _MedicationKnowledgeStorageGuideline
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUri? reference,
-      @JsonKey(name: '_reference') final Element? referenceElement,
+      @JsonKey(name: '_reference') final PrimitiveElement? referenceElement,
       final List<Annotation>? note,
       final FhirDuration? stabilityDuration,
       final List<MedicationKnowledgeEnvironmentalSetting>?
@@ -23691,7 +23751,7 @@ abstract class _MedicationKnowledgeStorageGuideline
 
   /// [referenceElement] ("_reference") Extensions for reference
   @JsonKey(name: '_reference')
-  Element? get referenceElement;
+  PrimitiveElement? get referenceElement;
   @override
 
   /// [note] Additional notes about the storage.
@@ -24735,7 +24795,7 @@ mixin _$MedicationKnowledgeSubstitution {
 
   /// [allowedElement] ("_allowed") Extensions for allowed
   @JsonKey(name: '_allowed')
-  Element? get allowedElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get allowedElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -24757,7 +24817,7 @@ abstract class $MedicationKnowledgeSubstitutionCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       CodeableConcept type,
       FhirBoolean? allowed,
-      @JsonKey(name: '_allowed') Element? allowedElement});
+      @JsonKey(name: '_allowed') PrimitiveElement? allowedElement});
 
   $CodeableConceptCopyWith<$Res> get type;
 }
@@ -24807,7 +24867,7 @@ class _$MedicationKnowledgeSubstitutionCopyWithImpl<$Res,
       allowedElement: freezed == allowedElement
           ? _value.allowedElement
           : allowedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -24835,7 +24895,7 @@ abstract class _$$MedicationKnowledgeSubstitutionImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       CodeableConcept type,
       FhirBoolean? allowed,
-      @JsonKey(name: '_allowed') Element? allowedElement});
+      @JsonKey(name: '_allowed') PrimitiveElement? allowedElement});
 
   @override
   $CodeableConceptCopyWith<$Res> get type;
@@ -24885,7 +24945,7 @@ class __$$MedicationKnowledgeSubstitutionImplCopyWithImpl<$Res>
       allowedElement: freezed == allowedElement
           ? _value.allowedElement
           : allowedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -24986,7 +25046,7 @@ class _$MedicationKnowledgeSubstitutionImpl
   /// [allowedElement] ("_allowed") Extensions for allowed
   @override
   @JsonKey(name: '_allowed')
-  final Element? allowedElement;
+  final PrimitiveElement? allowedElement;
 
   @override
   String toString() {
@@ -25044,7 +25104,7 @@ abstract class _MedicationKnowledgeSubstitution
           final List<FhirExtension>? modifierExtension,
           required final CodeableConcept type,
           final FhirBoolean? allowed,
-          @JsonKey(name: '_allowed') final Element? allowedElement}) =
+          @JsonKey(name: '_allowed') final PrimitiveElement? allowedElement}) =
       _$MedicationKnowledgeSubstitutionImpl;
   const _MedicationKnowledgeSubstitution._() : super._();
 
@@ -25094,7 +25154,7 @@ abstract class _MedicationKnowledgeSubstitution
 
   /// [allowedElement] ("_allowed") Extensions for allowed
   @JsonKey(name: '_allowed')
-  Element? get allowedElement;
+  PrimitiveElement? get allowedElement;
   @override
   @JsonKey(ignore: true)
   _$$MedicationKnowledgeSubstitutionImplCopyWith<
@@ -26625,7 +26685,8 @@ mixin _$MedicationKnowledgeDrugCharacteristic {
 
   /// [valueStringElement] ("_valueString") Extensions for valueString
   @JsonKey(name: '_valueString')
-  Element? get valueStringElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueStringElement =>
+      throw _privateConstructorUsedError;
 
   /// [valueQuantity] Description of the characteristic.
   Quantity? get valueQuantity => throw _privateConstructorUsedError;
@@ -26636,7 +26697,8 @@ mixin _$MedicationKnowledgeDrugCharacteristic {
   /// [valueBase64BinaryElement] ("_valueBase64Binary") Extensions for
   ///  valueBase64Binary
   @JsonKey(name: '_valueBase64Binary')
-  Element? get valueBase64BinaryElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueBase64BinaryElement =>
+      throw _privateConstructorUsedError;
 
   /// [valueAttachment] Description of the characteristic.
   Attachment? get valueAttachment => throw _privateConstructorUsedError;
@@ -26663,10 +26725,11 @@ abstract class $MedicationKnowledgeDrugCharacteristicCopyWith<$Res> {
       CodeableConcept? type,
       CodeableConcept? valueCodeableConcept,
       String? valueString,
-      @JsonKey(name: '_valueString') Element? valueStringElement,
+      @JsonKey(name: '_valueString') PrimitiveElement? valueStringElement,
       Quantity? valueQuantity,
       FhirBase64Binary? valueBase64Binary,
-      @JsonKey(name: '_valueBase64Binary') Element? valueBase64BinaryElement,
+      @JsonKey(name: '_valueBase64Binary')
+      PrimitiveElement? valueBase64BinaryElement,
       Attachment? valueAttachment});
 
   $CodeableConceptCopyWith<$Res>? get type;
@@ -26729,7 +26792,7 @@ class _$MedicationKnowledgeDrugCharacteristicCopyWithImpl<$Res,
       valueStringElement: freezed == valueStringElement
           ? _value.valueStringElement
           : valueStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueQuantity: freezed == valueQuantity
           ? _value.valueQuantity
           : valueQuantity // ignore: cast_nullable_to_non_nullable
@@ -26741,7 +26804,7 @@ class _$MedicationKnowledgeDrugCharacteristicCopyWithImpl<$Res,
       valueBase64BinaryElement: freezed == valueBase64BinaryElement
           ? _value.valueBase64BinaryElement
           : valueBase64BinaryElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueAttachment: freezed == valueAttachment
           ? _value.valueAttachment
           : valueAttachment // ignore: cast_nullable_to_non_nullable
@@ -26815,10 +26878,11 @@ abstract class _$$MedicationKnowledgeDrugCharacteristicImplCopyWith<$Res>
       CodeableConcept? type,
       CodeableConcept? valueCodeableConcept,
       String? valueString,
-      @JsonKey(name: '_valueString') Element? valueStringElement,
+      @JsonKey(name: '_valueString') PrimitiveElement? valueStringElement,
       Quantity? valueQuantity,
       FhirBase64Binary? valueBase64Binary,
-      @JsonKey(name: '_valueBase64Binary') Element? valueBase64BinaryElement,
+      @JsonKey(name: '_valueBase64Binary')
+      PrimitiveElement? valueBase64BinaryElement,
       Attachment? valueAttachment});
 
   @override
@@ -26884,7 +26948,7 @@ class __$$MedicationKnowledgeDrugCharacteristicImplCopyWithImpl<$Res>
       valueStringElement: freezed == valueStringElement
           ? _value.valueStringElement
           : valueStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueQuantity: freezed == valueQuantity
           ? _value.valueQuantity
           : valueQuantity // ignore: cast_nullable_to_non_nullable
@@ -26896,7 +26960,7 @@ class __$$MedicationKnowledgeDrugCharacteristicImplCopyWithImpl<$Res>
       valueBase64BinaryElement: freezed == valueBase64BinaryElement
           ? _value.valueBase64BinaryElement
           : valueBase64BinaryElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueAttachment: freezed == valueAttachment
           ? _value.valueAttachment
           : valueAttachment // ignore: cast_nullable_to_non_nullable
@@ -27010,7 +27074,7 @@ class _$MedicationKnowledgeDrugCharacteristicImpl
   /// [valueStringElement] ("_valueString") Extensions for valueString
   @override
   @JsonKey(name: '_valueString')
-  final Element? valueStringElement;
+  final PrimitiveElement? valueStringElement;
 
   /// [valueQuantity] Description of the characteristic.
   @override
@@ -27024,7 +27088,7 @@ class _$MedicationKnowledgeDrugCharacteristicImpl
   ///  valueBase64Binary
   @override
   @JsonKey(name: '_valueBase64Binary')
-  final Element? valueBase64BinaryElement;
+  final PrimitiveElement? valueBase64BinaryElement;
 
   /// [valueAttachment] Description of the characteristic.
   @override
@@ -27098,19 +27162,19 @@ class _$MedicationKnowledgeDrugCharacteristicImpl
 abstract class _MedicationKnowledgeDrugCharacteristic
     extends MedicationKnowledgeDrugCharacteristic {
   const factory _MedicationKnowledgeDrugCharacteristic(
-          {final String? id,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final CodeableConcept? type,
-          final CodeableConcept? valueCodeableConcept,
-          final String? valueString,
-          @JsonKey(name: '_valueString') final Element? valueStringElement,
-          final Quantity? valueQuantity,
-          final FhirBase64Binary? valueBase64Binary,
-          @JsonKey(name: '_valueBase64Binary')
-          final Element? valueBase64BinaryElement,
-          final Attachment? valueAttachment}) =
-      _$MedicationKnowledgeDrugCharacteristicImpl;
+      {final String? id,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final CodeableConcept? type,
+      final CodeableConcept? valueCodeableConcept,
+      final String? valueString,
+      @JsonKey(name: '_valueString') final PrimitiveElement? valueStringElement,
+      final Quantity? valueQuantity,
+      final FhirBase64Binary? valueBase64Binary,
+      @JsonKey(name: '_valueBase64Binary')
+      final PrimitiveElement? valueBase64BinaryElement,
+      final Attachment?
+          valueAttachment}) = _$MedicationKnowledgeDrugCharacteristicImpl;
   const _MedicationKnowledgeDrugCharacteristic._() : super._();
 
   factory _MedicationKnowledgeDrugCharacteristic.fromJson(
@@ -27164,7 +27228,7 @@ abstract class _MedicationKnowledgeDrugCharacteristic
 
   /// [valueStringElement] ("_valueString") Extensions for valueString
   @JsonKey(name: '_valueString')
-  Element? get valueStringElement;
+  PrimitiveElement? get valueStringElement;
   @override
 
   /// [valueQuantity] Description of the characteristic.
@@ -27178,7 +27242,7 @@ abstract class _MedicationKnowledgeDrugCharacteristic
   /// [valueBase64BinaryElement] ("_valueBase64Binary") Extensions for
   ///  valueBase64Binary
   @JsonKey(name: '_valueBase64Binary')
-  Element? get valueBase64BinaryElement;
+  PrimitiveElement? get valueBase64BinaryElement;
   @override
 
   /// [valueAttachment] Description of the characteristic.
@@ -27217,14 +27281,15 @@ mixin _$MedicationRequest {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -27296,7 +27361,7 @@ mixin _$MedicationRequest {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [statusReason] Captures the reason for the current state of the
   ///  MedicationRequest.
@@ -27307,14 +27372,15 @@ mixin _$MedicationRequest {
 
   /// [statusChangedElement] ("_statusChanged") Extensions for statusChanged
   @JsonKey(name: '_statusChanged')
-  Element? get statusChangedElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusChangedElement =>
+      throw _privateConstructorUsedError;
 
   /// [intent] Whether the request is a proposal, plan, or an original order.
   FhirCode? get intent => throw _privateConstructorUsedError;
 
   /// [intentElement] ("_intent") Extensions for intent
   @JsonKey(name: '_intent')
-  Element? get intentElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get intentElement => throw _privateConstructorUsedError;
 
   /// [category] An arbitrary categorization or grouping of the medication
   ///  request.  It could be used for indicating where meds are intended to be
@@ -27328,7 +27394,7 @@ mixin _$MedicationRequest {
 
   /// [priorityElement] ("_priority") Extensions for priority
   @JsonKey(name: '_priority')
-  Element? get priorityElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get priorityElement => throw _privateConstructorUsedError;
 
   /// [doNotPerform] If true, indicates that the provider is asking for the
   ///  patient to either stop taking or to not start taking the specified
@@ -27340,7 +27406,8 @@ mixin _$MedicationRequest {
 
   /// [doNotPerformElement] ("_doNotPerform") Extensions for doNotPerform
   @JsonKey(name: '_doNotPerform')
-  Element? get doNotPerformElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get doNotPerformElement =>
+      throw _privateConstructorUsedError;
 
   /// [medication] Identifies the medication being requested. This is a link to a
   ///  resource that represents the medication which may be the details of the
@@ -27374,7 +27441,7 @@ mixin _$MedicationRequest {
 
   /// [authoredOnElement] ("_authoredOn") Extensions for authoredOn
   @JsonKey(name: '_authoredOn')
-  Element? get authoredOnElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get authoredOnElement => throw _privateConstructorUsedError;
 
   /// [requester] The individual, organization, or device that initiated the
   ///  request and has responsibility for its activation.
@@ -27387,7 +27454,7 @@ mixin _$MedicationRequest {
 
   /// [reportedElement] ("_reported") Extensions for reported
   @JsonKey(name: '_reported')
-  Element? get reportedElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get reportedElement => throw _privateConstructorUsedError;
 
   /// [performerType] Indicates the type of performer of the administration of
   ///  the medication.
@@ -27437,7 +27504,7 @@ mixin _$MedicationRequest {
   /// [renderedDosageInstructionElement] ("_renderedDosageInstruction")
   ///  Extensions for renderedDosageInstruction
   @JsonKey(name: '_renderedDosageInstruction')
-  Element? get renderedDosageInstructionElement =>
+  PrimitiveElement? get renderedDosageInstructionElement =>
       throw _privateConstructorUsedError;
 
   /// [effectiveDosePeriod] The period over which the medication is to be taken.
@@ -27490,9 +27557,9 @@ abstract class $MedicationRequestCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -27502,27 +27569,27 @@ abstract class $MedicationRequestCopyWith<$Res> {
       Reference? priorPrescription,
       Identifier? groupIdentifier,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       CodeableConcept? statusReason,
       FhirDateTime? statusChanged,
-      @JsonKey(name: '_statusChanged') Element? statusChangedElement,
+      @JsonKey(name: '_statusChanged') PrimitiveElement? statusChangedElement,
       FhirCode? intent,
-      @JsonKey(name: '_intent') Element? intentElement,
+      @JsonKey(name: '_intent') PrimitiveElement? intentElement,
       List<CodeableConcept>? category,
       FhirCode? priority,
-      @JsonKey(name: '_priority') Element? priorityElement,
+      @JsonKey(name: '_priority') PrimitiveElement? priorityElement,
       FhirBoolean? doNotPerform,
-      @JsonKey(name: '_doNotPerform') Element? doNotPerformElement,
+      @JsonKey(name: '_doNotPerform') PrimitiveElement? doNotPerformElement,
       CodeableReference medication,
       Reference subject,
       List<Reference>? informationSource,
       Reference? encounter,
       List<Reference>? supportingInformation,
       FhirDateTime? authoredOn,
-      @JsonKey(name: '_authoredOn') Element? authoredOnElement,
+      @JsonKey(name: '_authoredOn') PrimitiveElement? authoredOnElement,
       Reference? requester,
       FhirBoolean? reported,
-      @JsonKey(name: '_reported') Element? reportedElement,
+      @JsonKey(name: '_reported') PrimitiveElement? reportedElement,
       CodeableConcept? performerType,
       List<Reference>? performer,
       List<CodeableReference>? device,
@@ -27533,7 +27600,7 @@ abstract class $MedicationRequestCopyWith<$Res> {
       List<Annotation>? note,
       FhirMarkdown? renderedDosageInstruction,
       @JsonKey(name: '_renderedDosageInstruction')
-      Element? renderedDosageInstructionElement,
+      PrimitiveElement? renderedDosageInstructionElement,
       Period? effectiveDosePeriod,
       List<Dosage>? dosageInstruction,
       MedicationRequestDispenseRequest? dispenseRequest,
@@ -27643,7 +27710,7 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -27651,7 +27718,7 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -27691,7 +27758,7 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       statusReason: freezed == statusReason
           ? _value.statusReason
           : statusReason // ignore: cast_nullable_to_non_nullable
@@ -27703,7 +27770,7 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
       statusChangedElement: freezed == statusChangedElement
           ? _value.statusChangedElement
           : statusChangedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       intent: freezed == intent
           ? _value.intent
           : intent // ignore: cast_nullable_to_non_nullable
@@ -27711,7 +27778,7 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
       intentElement: freezed == intentElement
           ? _value.intentElement
           : intentElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       category: freezed == category
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
@@ -27723,7 +27790,7 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
       priorityElement: freezed == priorityElement
           ? _value.priorityElement
           : priorityElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       doNotPerform: freezed == doNotPerform
           ? _value.doNotPerform
           : doNotPerform // ignore: cast_nullable_to_non_nullable
@@ -27731,7 +27798,7 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
       doNotPerformElement: freezed == doNotPerformElement
           ? _value.doNotPerformElement
           : doNotPerformElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       medication: null == medication
           ? _value.medication
           : medication // ignore: cast_nullable_to_non_nullable
@@ -27759,7 +27826,7 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
       authoredOnElement: freezed == authoredOnElement
           ? _value.authoredOnElement
           : authoredOnElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       requester: freezed == requester
           ? _value.requester
           : requester // ignore: cast_nullable_to_non_nullable
@@ -27771,7 +27838,7 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
       reportedElement: freezed == reportedElement
           ? _value.reportedElement
           : reportedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       performerType: freezed == performerType
           ? _value.performerType
           : performerType // ignore: cast_nullable_to_non_nullable
@@ -27812,7 +27879,7 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
               renderedDosageInstructionElement
           ? _value.renderedDosageInstructionElement
           : renderedDosageInstructionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       effectiveDosePeriod: freezed == effectiveDosePeriod
           ? _value.effectiveDosePeriod
           : effectiveDosePeriod // ignore: cast_nullable_to_non_nullable
@@ -28025,9 +28092,9 @@ abstract class _$$MedicationRequestImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -28037,27 +28104,27 @@ abstract class _$$MedicationRequestImplCopyWith<$Res>
       Reference? priorPrescription,
       Identifier? groupIdentifier,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       CodeableConcept? statusReason,
       FhirDateTime? statusChanged,
-      @JsonKey(name: '_statusChanged') Element? statusChangedElement,
+      @JsonKey(name: '_statusChanged') PrimitiveElement? statusChangedElement,
       FhirCode? intent,
-      @JsonKey(name: '_intent') Element? intentElement,
+      @JsonKey(name: '_intent') PrimitiveElement? intentElement,
       List<CodeableConcept>? category,
       FhirCode? priority,
-      @JsonKey(name: '_priority') Element? priorityElement,
+      @JsonKey(name: '_priority') PrimitiveElement? priorityElement,
       FhirBoolean? doNotPerform,
-      @JsonKey(name: '_doNotPerform') Element? doNotPerformElement,
+      @JsonKey(name: '_doNotPerform') PrimitiveElement? doNotPerformElement,
       CodeableReference medication,
       Reference subject,
       List<Reference>? informationSource,
       Reference? encounter,
       List<Reference>? supportingInformation,
       FhirDateTime? authoredOn,
-      @JsonKey(name: '_authoredOn') Element? authoredOnElement,
+      @JsonKey(name: '_authoredOn') PrimitiveElement? authoredOnElement,
       Reference? requester,
       FhirBoolean? reported,
-      @JsonKey(name: '_reported') Element? reportedElement,
+      @JsonKey(name: '_reported') PrimitiveElement? reportedElement,
       CodeableConcept? performerType,
       List<Reference>? performer,
       List<CodeableReference>? device,
@@ -28068,7 +28135,7 @@ abstract class _$$MedicationRequestImplCopyWith<$Res>
       List<Annotation>? note,
       FhirMarkdown? renderedDosageInstruction,
       @JsonKey(name: '_renderedDosageInstruction')
-      Element? renderedDosageInstructionElement,
+      PrimitiveElement? renderedDosageInstructionElement,
       Period? effectiveDosePeriod,
       List<Dosage>? dosageInstruction,
       MedicationRequestDispenseRequest? dispenseRequest,
@@ -28191,7 +28258,7 @@ class __$$MedicationRequestImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -28199,7 +28266,7 @@ class __$$MedicationRequestImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -28239,7 +28306,7 @@ class __$$MedicationRequestImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       statusReason: freezed == statusReason
           ? _value.statusReason
           : statusReason // ignore: cast_nullable_to_non_nullable
@@ -28251,7 +28318,7 @@ class __$$MedicationRequestImplCopyWithImpl<$Res>
       statusChangedElement: freezed == statusChangedElement
           ? _value.statusChangedElement
           : statusChangedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       intent: freezed == intent
           ? _value.intent
           : intent // ignore: cast_nullable_to_non_nullable
@@ -28259,7 +28326,7 @@ class __$$MedicationRequestImplCopyWithImpl<$Res>
       intentElement: freezed == intentElement
           ? _value.intentElement
           : intentElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       category: freezed == category
           ? _value._category
           : category // ignore: cast_nullable_to_non_nullable
@@ -28271,7 +28338,7 @@ class __$$MedicationRequestImplCopyWithImpl<$Res>
       priorityElement: freezed == priorityElement
           ? _value.priorityElement
           : priorityElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       doNotPerform: freezed == doNotPerform
           ? _value.doNotPerform
           : doNotPerform // ignore: cast_nullable_to_non_nullable
@@ -28279,7 +28346,7 @@ class __$$MedicationRequestImplCopyWithImpl<$Res>
       doNotPerformElement: freezed == doNotPerformElement
           ? _value.doNotPerformElement
           : doNotPerformElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       medication: null == medication
           ? _value.medication
           : medication // ignore: cast_nullable_to_non_nullable
@@ -28307,7 +28374,7 @@ class __$$MedicationRequestImplCopyWithImpl<$Res>
       authoredOnElement: freezed == authoredOnElement
           ? _value.authoredOnElement
           : authoredOnElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       requester: freezed == requester
           ? _value.requester
           : requester // ignore: cast_nullable_to_non_nullable
@@ -28319,7 +28386,7 @@ class __$$MedicationRequestImplCopyWithImpl<$Res>
       reportedElement: freezed == reportedElement
           ? _value.reportedElement
           : reportedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       performerType: freezed == performerType
           ? _value.performerType
           : performerType // ignore: cast_nullable_to_non_nullable
@@ -28360,7 +28427,7 @@ class __$$MedicationRequestImplCopyWithImpl<$Res>
               renderedDosageInstructionElement
           ? _value.renderedDosageInstructionElement
           : renderedDosageInstructionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       effectiveDosePeriod: freezed == effectiveDosePeriod
           ? _value.effectiveDosePeriod
           : effectiveDosePeriod // ignore: cast_nullable_to_non_nullable
@@ -28489,7 +28556,7 @@ class _$MedicationRequestImpl extends _MedicationRequest {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -28498,7 +28565,7 @@ class _$MedicationRequestImpl extends _MedicationRequest {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -28651,7 +28718,7 @@ class _$MedicationRequestImpl extends _MedicationRequest {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [statusReason] Captures the reason for the current state of the
   ///  MedicationRequest.
@@ -28665,7 +28732,7 @@ class _$MedicationRequestImpl extends _MedicationRequest {
   /// [statusChangedElement] ("_statusChanged") Extensions for statusChanged
   @override
   @JsonKey(name: '_statusChanged')
-  final Element? statusChangedElement;
+  final PrimitiveElement? statusChangedElement;
 
   /// [intent] Whether the request is a proposal, plan, or an original order.
   @override
@@ -28674,7 +28741,7 @@ class _$MedicationRequestImpl extends _MedicationRequest {
   /// [intentElement] ("_intent") Extensions for intent
   @override
   @JsonKey(name: '_intent')
-  final Element? intentElement;
+  final PrimitiveElement? intentElement;
 
   /// [category] An arbitrary categorization or grouping of the medication
   ///  request.  It could be used for indicating where meds are intended to be
@@ -28703,7 +28770,7 @@ class _$MedicationRequestImpl extends _MedicationRequest {
   /// [priorityElement] ("_priority") Extensions for priority
   @override
   @JsonKey(name: '_priority')
-  final Element? priorityElement;
+  final PrimitiveElement? priorityElement;
 
   /// [doNotPerform] If true, indicates that the provider is asking for the
   ///  patient to either stop taking or to not start taking the specified
@@ -28717,7 +28784,7 @@ class _$MedicationRequestImpl extends _MedicationRequest {
   /// [doNotPerformElement] ("_doNotPerform") Extensions for doNotPerform
   @override
   @JsonKey(name: '_doNotPerform')
-  final Element? doNotPerformElement;
+  final PrimitiveElement? doNotPerformElement;
 
   /// [medication] Identifies the medication being requested. This is a link to a
   ///  resource that represents the medication which may be the details of the
@@ -28782,7 +28849,7 @@ class _$MedicationRequestImpl extends _MedicationRequest {
   /// [authoredOnElement] ("_authoredOn") Extensions for authoredOn
   @override
   @JsonKey(name: '_authoredOn')
-  final Element? authoredOnElement;
+  final PrimitiveElement? authoredOnElement;
 
   /// [requester] The individual, organization, or device that initiated the
   ///  request and has responsibility for its activation.
@@ -28798,7 +28865,7 @@ class _$MedicationRequestImpl extends _MedicationRequest {
   /// [reportedElement] ("_reported") Extensions for reported
   @override
   @JsonKey(name: '_reported')
-  final Element? reportedElement;
+  final PrimitiveElement? reportedElement;
 
   /// [performerType] Indicates the type of performer of the administration of
   ///  the medication.
@@ -28911,7 +28978,7 @@ class _$MedicationRequestImpl extends _MedicationRequest {
   ///  Extensions for renderedDosageInstruction
   @override
   @JsonKey(name: '_renderedDosageInstruction')
-  final Element? renderedDosageInstructionElement;
+  final PrimitiveElement? renderedDosageInstructionElement;
 
   /// [effectiveDosePeriod] The period over which the medication is to be taken.
   ///  Where there are multiple dosageInstruction lines (for example, tapering
@@ -29157,9 +29224,10 @@ abstract class _MedicationRequest extends MedicationRequest {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
@@ -29169,27 +29237,29 @@ abstract class _MedicationRequest extends MedicationRequest {
       final Reference? priorPrescription,
       final Identifier? groupIdentifier,
       final FhirCode? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final CodeableConcept? statusReason,
       final FhirDateTime? statusChanged,
-      @JsonKey(name: '_statusChanged') final Element? statusChangedElement,
+      @JsonKey(name: '_statusChanged')
+      final PrimitiveElement? statusChangedElement,
       final FhirCode? intent,
-      @JsonKey(name: '_intent') final Element? intentElement,
+      @JsonKey(name: '_intent') final PrimitiveElement? intentElement,
       final List<CodeableConcept>? category,
       final FhirCode? priority,
-      @JsonKey(name: '_priority') final Element? priorityElement,
+      @JsonKey(name: '_priority') final PrimitiveElement? priorityElement,
       final FhirBoolean? doNotPerform,
-      @JsonKey(name: '_doNotPerform') final Element? doNotPerformElement,
+      @JsonKey(name: '_doNotPerform')
+      final PrimitiveElement? doNotPerformElement,
       required final CodeableReference medication,
       required final Reference subject,
       final List<Reference>? informationSource,
       final Reference? encounter,
       final List<Reference>? supportingInformation,
       final FhirDateTime? authoredOn,
-      @JsonKey(name: '_authoredOn') final Element? authoredOnElement,
+      @JsonKey(name: '_authoredOn') final PrimitiveElement? authoredOnElement,
       final Reference? requester,
       final FhirBoolean? reported,
-      @JsonKey(name: '_reported') final Element? reportedElement,
+      @JsonKey(name: '_reported') final PrimitiveElement? reportedElement,
       final CodeableConcept? performerType,
       final List<Reference>? performer,
       final List<CodeableReference>? device,
@@ -29200,7 +29270,7 @@ abstract class _MedicationRequest extends MedicationRequest {
       final List<Annotation>? note,
       final FhirMarkdown? renderedDosageInstruction,
       @JsonKey(name: '_renderedDosageInstruction')
-      final Element? renderedDosageInstructionElement,
+      final PrimitiveElement? renderedDosageInstructionElement,
       final Period? effectiveDosePeriod,
       final List<Dosage>? dosageInstruction,
       final MedicationRequestDispenseRequest? dispenseRequest,
@@ -29238,7 +29308,7 @@ abstract class _MedicationRequest extends MedicationRequest {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -29247,7 +29317,7 @@ abstract class _MedicationRequest extends MedicationRequest {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -29328,7 +29398,7 @@ abstract class _MedicationRequest extends MedicationRequest {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [statusReason] Captures the reason for the current state of the
@@ -29342,7 +29412,7 @@ abstract class _MedicationRequest extends MedicationRequest {
 
   /// [statusChangedElement] ("_statusChanged") Extensions for statusChanged
   @JsonKey(name: '_statusChanged')
-  Element? get statusChangedElement;
+  PrimitiveElement? get statusChangedElement;
   @override
 
   /// [intent] Whether the request is a proposal, plan, or an original order.
@@ -29351,7 +29421,7 @@ abstract class _MedicationRequest extends MedicationRequest {
 
   /// [intentElement] ("_intent") Extensions for intent
   @JsonKey(name: '_intent')
-  Element? get intentElement;
+  PrimitiveElement? get intentElement;
   @override
 
   /// [category] An arbitrary categorization or grouping of the medication
@@ -29368,7 +29438,7 @@ abstract class _MedicationRequest extends MedicationRequest {
 
   /// [priorityElement] ("_priority") Extensions for priority
   @JsonKey(name: '_priority')
-  Element? get priorityElement;
+  PrimitiveElement? get priorityElement;
   @override
 
   /// [doNotPerform] If true, indicates that the provider is asking for the
@@ -29382,7 +29452,7 @@ abstract class _MedicationRequest extends MedicationRequest {
 
   /// [doNotPerformElement] ("_doNotPerform") Extensions for doNotPerform
   @JsonKey(name: '_doNotPerform')
-  Element? get doNotPerformElement;
+  PrimitiveElement? get doNotPerformElement;
   @override
 
   /// [medication] Identifies the medication being requested. This is a link to a
@@ -29422,7 +29492,7 @@ abstract class _MedicationRequest extends MedicationRequest {
 
   /// [authoredOnElement] ("_authoredOn") Extensions for authoredOn
   @JsonKey(name: '_authoredOn')
-  Element? get authoredOnElement;
+  PrimitiveElement? get authoredOnElement;
   @override
 
   /// [requester] The individual, organization, or device that initiated the
@@ -29438,7 +29508,7 @@ abstract class _MedicationRequest extends MedicationRequest {
 
   /// [reportedElement] ("_reported") Extensions for reported
   @JsonKey(name: '_reported')
-  Element? get reportedElement;
+  PrimitiveElement? get reportedElement;
   @override
 
   /// [performerType] Indicates the type of performer of the administration of
@@ -29496,7 +29566,7 @@ abstract class _MedicationRequest extends MedicationRequest {
   /// [renderedDosageInstructionElement] ("_renderedDosageInstruction")
   ///  Extensions for renderedDosageInstruction
   @JsonKey(name: '_renderedDosageInstruction')
-  Element? get renderedDosageInstructionElement;
+  PrimitiveElement? get renderedDosageInstructionElement;
   @override
 
   /// [effectiveDosePeriod] The period over which the medication is to be taken.
@@ -29600,7 +29670,7 @@ mixin _$MedicationRequestDispenseRequest {
   /// [numberOfRepeatsAllowedElement] ("_numberOfRepeatsAllowed") Extensions for
   ///  numberOfRepeatsAllowed
   @JsonKey(name: '_numberOfRepeatsAllowed')
-  Element? get numberOfRepeatsAllowedElement =>
+  PrimitiveElement? get numberOfRepeatsAllowedElement =>
       throw _privateConstructorUsedError;
 
   /// [quantity] The amount that is to be dispensed for one fill.
@@ -29649,7 +29719,7 @@ abstract class $MedicationRequestDispenseRequestCopyWith<$Res> {
       Period? validityPeriod,
       FhirUnsignedInt? numberOfRepeatsAllowed,
       @JsonKey(name: '_numberOfRepeatsAllowed')
-      Element? numberOfRepeatsAllowedElement,
+      PrimitiveElement? numberOfRepeatsAllowedElement,
       Quantity? quantity,
       FhirDuration? expectedSupplyDuration,
       Reference? dispenser,
@@ -29725,7 +29795,7 @@ class _$MedicationRequestDispenseRequestCopyWithImpl<$Res,
       numberOfRepeatsAllowedElement: freezed == numberOfRepeatsAllowedElement
           ? _value.numberOfRepeatsAllowedElement
           : numberOfRepeatsAllowedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       quantity: freezed == quantity
           ? _value.quantity
           : quantity // ignore: cast_nullable_to_non_nullable
@@ -29854,7 +29924,7 @@ abstract class _$$MedicationRequestDispenseRequestImplCopyWith<$Res>
       Period? validityPeriod,
       FhirUnsignedInt? numberOfRepeatsAllowed,
       @JsonKey(name: '_numberOfRepeatsAllowed')
-      Element? numberOfRepeatsAllowedElement,
+      PrimitiveElement? numberOfRepeatsAllowedElement,
       Quantity? quantity,
       FhirDuration? expectedSupplyDuration,
       Reference? dispenser,
@@ -29936,7 +30006,7 @@ class __$$MedicationRequestDispenseRequestImplCopyWithImpl<$Res>
       numberOfRepeatsAllowedElement: freezed == numberOfRepeatsAllowedElement
           ? _value.numberOfRepeatsAllowedElement
           : numberOfRepeatsAllowedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       quantity: freezed == quantity
           ? _value.quantity
           : quantity // ignore: cast_nullable_to_non_nullable
@@ -30084,7 +30154,7 @@ class _$MedicationRequestDispenseRequestImpl
   ///  numberOfRepeatsAllowed
   @override
   @JsonKey(name: '_numberOfRepeatsAllowed')
-  final Element? numberOfRepeatsAllowedElement;
+  final PrimitiveElement? numberOfRepeatsAllowedElement;
 
   /// [quantity] The amount that is to be dispensed for one fill.
   @override
@@ -30206,7 +30276,7 @@ abstract class _MedicationRequestDispenseRequest
           final Period? validityPeriod,
           final FhirUnsignedInt? numberOfRepeatsAllowed,
           @JsonKey(name: '_numberOfRepeatsAllowed')
-          final Element? numberOfRepeatsAllowedElement,
+          final PrimitiveElement? numberOfRepeatsAllowedElement,
           final Quantity? quantity,
           final FhirDuration? expectedSupplyDuration,
           final Reference? dispenser,
@@ -30280,7 +30350,7 @@ abstract class _MedicationRequestDispenseRequest
   /// [numberOfRepeatsAllowedElement] ("_numberOfRepeatsAllowed") Extensions for
   ///  numberOfRepeatsAllowed
   @JsonKey(name: '_numberOfRepeatsAllowed')
-  Element? get numberOfRepeatsAllowedElement;
+  PrimitiveElement? get numberOfRepeatsAllowedElement;
   @override
 
   /// [quantity] The amount that is to be dispensed for one fill.
@@ -30750,7 +30820,8 @@ mixin _$MedicationRequestSubstitution {
 
   /// [allowedBooleanElement] ("_allowedBoolean") Extensions for allowedBoolean
   @JsonKey(name: '_allowedBoolean')
-  Element? get allowedBooleanElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get allowedBooleanElement =>
+      throw _privateConstructorUsedError;
 
   /// [allowedCodeableConcept] True if the prescriber allows a different drug to
   ///  be dispensed from what was prescribed.
@@ -30780,7 +30851,7 @@ abstract class $MedicationRequestSubstitutionCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirBoolean? allowedBoolean,
-      @JsonKey(name: '_allowedBoolean') Element? allowedBooleanElement,
+      @JsonKey(name: '_allowedBoolean') PrimitiveElement? allowedBooleanElement,
       CodeableConcept? allowedCodeableConcept,
       CodeableConcept? reason});
 
@@ -30830,7 +30901,7 @@ class _$MedicationRequestSubstitutionCopyWithImpl<$Res,
       allowedBooleanElement: freezed == allowedBooleanElement
           ? _value.allowedBooleanElement
           : allowedBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       allowedCodeableConcept: freezed == allowedCodeableConcept
           ? _value.allowedCodeableConcept
           : allowedCodeableConcept // ignore: cast_nullable_to_non_nullable
@@ -30882,7 +30953,7 @@ abstract class _$$MedicationRequestSubstitutionImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirBoolean? allowedBoolean,
-      @JsonKey(name: '_allowedBoolean') Element? allowedBooleanElement,
+      @JsonKey(name: '_allowedBoolean') PrimitiveElement? allowedBooleanElement,
       CodeableConcept? allowedCodeableConcept,
       CodeableConcept? reason});
 
@@ -30933,7 +31004,7 @@ class __$$MedicationRequestSubstitutionImplCopyWithImpl<$Res>
       allowedBooleanElement: freezed == allowedBooleanElement
           ? _value.allowedBooleanElement
           : allowedBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       allowedCodeableConcept: freezed == allowedCodeableConcept
           ? _value.allowedCodeableConcept
           : allowedCodeableConcept // ignore: cast_nullable_to_non_nullable
@@ -31039,7 +31110,7 @@ class _$MedicationRequestSubstitutionImpl
   /// [allowedBooleanElement] ("_allowedBoolean") Extensions for allowedBoolean
   @override
   @JsonKey(name: '_allowedBoolean')
-  final Element? allowedBooleanElement;
+  final PrimitiveElement? allowedBooleanElement;
 
   /// [allowedCodeableConcept] True if the prescriber allows a different drug to
   ///  be dispensed from what was prescribed.
@@ -31110,7 +31181,8 @@ abstract class _MedicationRequestSubstitution
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirBoolean? allowedBoolean,
-      @JsonKey(name: '_allowedBoolean') final Element? allowedBooleanElement,
+      @JsonKey(name: '_allowedBoolean')
+      final PrimitiveElement? allowedBooleanElement,
       final CodeableConcept? allowedCodeableConcept,
       final CodeableConcept? reason}) = _$MedicationRequestSubstitutionImpl;
   const _MedicationRequestSubstitution._() : super._();
@@ -31157,7 +31229,7 @@ abstract class _MedicationRequestSubstitution
 
   /// [allowedBooleanElement] ("_allowedBoolean") Extensions for allowedBoolean
   @JsonKey(name: '_allowedBoolean')
-  Element? get allowedBooleanElement;
+  PrimitiveElement? get allowedBooleanElement;
   @override
 
   /// [allowedCodeableConcept] True if the prescriber allows a different drug to
@@ -31202,14 +31274,15 @@ mixin _$MedicationStatement {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -31268,7 +31341,7 @@ mixin _$MedicationStatement {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [category] Type of medication statement (for example, drug classification
   ///  like ATC, where meds would be administered, legal category of the
@@ -31296,7 +31369,8 @@ mixin _$MedicationStatement {
   /// [effectiveDateTimeElement] ("_effectiveDateTime") Extensions for
   ///  effectiveDateTime
   @JsonKey(name: '_effectiveDateTime')
-  Element? get effectiveDateTimeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get effectiveDateTimeElement =>
+      throw _privateConstructorUsedError;
 
   /// [effectivePeriod] The interval of time during which it is being asserted
   ///  that the patient is/was/will be taking the medication (or was not taking,
@@ -31314,7 +31388,8 @@ mixin _$MedicationStatement {
 
   /// [dateAssertedElement] ("_dateAsserted") Extensions for dateAsserted
   @JsonKey(name: '_dateAsserted')
-  Element? get dateAssertedElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateAssertedElement =>
+      throw _privateConstructorUsedError;
 
   /// [informationSource] The person or organization that provided the
   ///  information about the taking of this medication. Note: Use derivedFrom
@@ -31350,7 +31425,7 @@ mixin _$MedicationStatement {
   /// [renderedDosageInstructionElement] ("_renderedDosageInstruction")
   ///  Extensions for renderedDosageInstruction
   @JsonKey(name: '_renderedDosageInstruction')
-  Element? get renderedDosageInstructionElement =>
+  PrimitiveElement? get renderedDosageInstructionElement =>
       throw _privateConstructorUsedError;
 
   /// [dosage] Indicates how the medication is/was or should be taken by the
@@ -31380,9 +31455,9 @@ abstract class $MedicationStatementCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -31390,17 +31465,18 @@ abstract class $MedicationStatementCopyWith<$Res> {
       List<Identifier>? identifier,
       List<Reference>? partOf,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       List<CodeableConcept>? category,
       CodeableReference medication,
       Reference subject,
       Reference? encounter,
       FhirDateTime? effectiveDateTime,
-      @JsonKey(name: '_effectiveDateTime') Element? effectiveDateTimeElement,
+      @JsonKey(name: '_effectiveDateTime')
+      PrimitiveElement? effectiveDateTimeElement,
       Period? effectivePeriod,
       Timing? effectiveTiming,
       FhirDateTime? dateAsserted,
-      @JsonKey(name: '_dateAsserted') Element? dateAssertedElement,
+      @JsonKey(name: '_dateAsserted') PrimitiveElement? dateAssertedElement,
       List<Reference>? informationSource,
       List<Reference>? derivedFrom,
       List<CodeableReference>? reason,
@@ -31408,7 +31484,7 @@ abstract class $MedicationStatementCopyWith<$Res> {
       List<Reference>? relatedClinicalInformation,
       FhirMarkdown? renderedDosageInstruction,
       @JsonKey(name: '_renderedDosageInstruction')
-      Element? renderedDosageInstructionElement,
+      PrimitiveElement? renderedDosageInstructionElement,
       List<Dosage>? dosage,
       MedicationStatementAdherence? adherence});
 
@@ -31490,7 +31566,7 @@ class _$MedicationStatementCopyWithImpl<$Res, $Val extends MedicationStatement>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -31498,7 +31574,7 @@ class _$MedicationStatementCopyWithImpl<$Res, $Val extends MedicationStatement>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -31530,7 +31606,7 @@ class _$MedicationStatementCopyWithImpl<$Res, $Val extends MedicationStatement>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       category: freezed == category
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
@@ -31554,7 +31630,7 @@ class _$MedicationStatementCopyWithImpl<$Res, $Val extends MedicationStatement>
       effectiveDateTimeElement: freezed == effectiveDateTimeElement
           ? _value.effectiveDateTimeElement
           : effectiveDateTimeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       effectivePeriod: freezed == effectivePeriod
           ? _value.effectivePeriod
           : effectivePeriod // ignore: cast_nullable_to_non_nullable
@@ -31570,7 +31646,7 @@ class _$MedicationStatementCopyWithImpl<$Res, $Val extends MedicationStatement>
       dateAssertedElement: freezed == dateAssertedElement
           ? _value.dateAssertedElement
           : dateAssertedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       informationSource: freezed == informationSource
           ? _value.informationSource
           : informationSource // ignore: cast_nullable_to_non_nullable
@@ -31599,7 +31675,7 @@ class _$MedicationStatementCopyWithImpl<$Res, $Val extends MedicationStatement>
               renderedDosageInstructionElement
           ? _value.renderedDosageInstructionElement
           : renderedDosageInstructionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       dosage: freezed == dosage
           ? _value.dosage
           : dosage // ignore: cast_nullable_to_non_nullable
@@ -31715,9 +31791,9 @@ abstract class _$$MedicationStatementImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -31725,17 +31801,18 @@ abstract class _$$MedicationStatementImplCopyWith<$Res>
       List<Identifier>? identifier,
       List<Reference>? partOf,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       List<CodeableConcept>? category,
       CodeableReference medication,
       Reference subject,
       Reference? encounter,
       FhirDateTime? effectiveDateTime,
-      @JsonKey(name: '_effectiveDateTime') Element? effectiveDateTimeElement,
+      @JsonKey(name: '_effectiveDateTime')
+      PrimitiveElement? effectiveDateTimeElement,
       Period? effectivePeriod,
       Timing? effectiveTiming,
       FhirDateTime? dateAsserted,
-      @JsonKey(name: '_dateAsserted') Element? dateAssertedElement,
+      @JsonKey(name: '_dateAsserted') PrimitiveElement? dateAssertedElement,
       List<Reference>? informationSource,
       List<Reference>? derivedFrom,
       List<CodeableReference>? reason,
@@ -31743,7 +31820,7 @@ abstract class _$$MedicationStatementImplCopyWith<$Res>
       List<Reference>? relatedClinicalInformation,
       FhirMarkdown? renderedDosageInstruction,
       @JsonKey(name: '_renderedDosageInstruction')
-      Element? renderedDosageInstructionElement,
+      PrimitiveElement? renderedDosageInstructionElement,
       List<Dosage>? dosage,
       MedicationStatementAdherence? adherence});
 
@@ -31831,7 +31908,7 @@ class __$$MedicationStatementImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -31839,7 +31916,7 @@ class __$$MedicationStatementImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -31871,7 +31948,7 @@ class __$$MedicationStatementImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       category: freezed == category
           ? _value._category
           : category // ignore: cast_nullable_to_non_nullable
@@ -31895,7 +31972,7 @@ class __$$MedicationStatementImplCopyWithImpl<$Res>
       effectiveDateTimeElement: freezed == effectiveDateTimeElement
           ? _value.effectiveDateTimeElement
           : effectiveDateTimeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       effectivePeriod: freezed == effectivePeriod
           ? _value.effectivePeriod
           : effectivePeriod // ignore: cast_nullable_to_non_nullable
@@ -31911,7 +31988,7 @@ class __$$MedicationStatementImplCopyWithImpl<$Res>
       dateAssertedElement: freezed == dateAssertedElement
           ? _value.dateAssertedElement
           : dateAssertedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       informationSource: freezed == informationSource
           ? _value._informationSource
           : informationSource // ignore: cast_nullable_to_non_nullable
@@ -31940,7 +32017,7 @@ class __$$MedicationStatementImplCopyWithImpl<$Res>
               renderedDosageInstructionElement
           ? _value.renderedDosageInstructionElement
           : renderedDosageInstructionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       dosage: freezed == dosage
           ? _value._dosage
           : dosage // ignore: cast_nullable_to_non_nullable
@@ -32036,7 +32113,7 @@ class _$MedicationStatementImpl extends _MedicationStatement {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -32045,7 +32122,7 @@ class _$MedicationStatementImpl extends _MedicationStatement {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -32183,7 +32260,7 @@ class _$MedicationStatementImpl extends _MedicationStatement {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [category] Type of medication statement (for example, drug classification
   ///  like ATC, where meds would be administered, legal category of the
@@ -32228,7 +32305,7 @@ class _$MedicationStatementImpl extends _MedicationStatement {
   ///  effectiveDateTime
   @override
   @JsonKey(name: '_effectiveDateTime')
-  final Element? effectiveDateTimeElement;
+  final PrimitiveElement? effectiveDateTimeElement;
 
   /// [effectivePeriod] The interval of time during which it is being asserted
   ///  that the patient is/was/will be taking the medication (or was not taking,
@@ -32250,7 +32327,7 @@ class _$MedicationStatementImpl extends _MedicationStatement {
   /// [dateAssertedElement] ("_dateAsserted") Extensions for dateAsserted
   @override
   @JsonKey(name: '_dateAsserted')
-  final Element? dateAssertedElement;
+  final PrimitiveElement? dateAssertedElement;
 
   /// [informationSource] The person or organization that provided the
   ///  information about the taking of this medication. Note: Use derivedFrom
@@ -32346,7 +32423,7 @@ class _$MedicationStatementImpl extends _MedicationStatement {
   ///  Extensions for renderedDosageInstruction
   @override
   @JsonKey(name: '_renderedDosageInstruction')
-  final Element? renderedDosageInstructionElement;
+  final PrimitiveElement? renderedDosageInstructionElement;
 
   /// [dosage] Indicates how the medication is/was or should be taken by the
   ///  patient.
@@ -32505,9 +32582,10 @@ abstract class _MedicationStatement extends MedicationStatement {
           final FhirId? id,
           final FhirMeta? meta,
           final FhirUri? implicitRules,
-          @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+          @JsonKey(name: '_implicitRules')
+          final PrimitiveElement? implicitRulesElement,
           final FhirCode? language,
-          @JsonKey(name: '_language') final Element? languageElement,
+          @JsonKey(name: '_language') final PrimitiveElement? languageElement,
           final Narrative? text,
           final List<Resource>? contained,
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
@@ -32515,18 +32593,19 @@ abstract class _MedicationStatement extends MedicationStatement {
           final List<Identifier>? identifier,
           final List<Reference>? partOf,
           final FhirCode? status,
-          @JsonKey(name: '_status') final Element? statusElement,
+          @JsonKey(name: '_status') final PrimitiveElement? statusElement,
           final List<CodeableConcept>? category,
           required final CodeableReference medication,
           required final Reference subject,
           final Reference? encounter,
           final FhirDateTime? effectiveDateTime,
           @JsonKey(name: '_effectiveDateTime')
-          final Element? effectiveDateTimeElement,
+          final PrimitiveElement? effectiveDateTimeElement,
           final Period? effectivePeriod,
           final Timing? effectiveTiming,
           final FhirDateTime? dateAsserted,
-          @JsonKey(name: '_dateAsserted') final Element? dateAssertedElement,
+          @JsonKey(name: '_dateAsserted')
+          final PrimitiveElement? dateAssertedElement,
           final List<Reference>? informationSource,
           final List<Reference>? derivedFrom,
           final List<CodeableReference>? reason,
@@ -32534,7 +32613,7 @@ abstract class _MedicationStatement extends MedicationStatement {
           final List<Reference>? relatedClinicalInformation,
           final FhirMarkdown? renderedDosageInstruction,
           @JsonKey(name: '_renderedDosageInstruction')
-          final Element? renderedDosageInstructionElement,
+          final PrimitiveElement? renderedDosageInstructionElement,
           final List<Dosage>? dosage,
           final MedicationStatementAdherence? adherence}) =
       _$MedicationStatementImpl;
@@ -32570,7 +32649,7 @@ abstract class _MedicationStatement extends MedicationStatement {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -32579,7 +32658,7 @@ abstract class _MedicationStatement extends MedicationStatement {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -32645,7 +32724,7 @@ abstract class _MedicationStatement extends MedicationStatement {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [category] Type of medication statement (for example, drug classification
@@ -32679,7 +32758,7 @@ abstract class _MedicationStatement extends MedicationStatement {
   /// [effectiveDateTimeElement] ("_effectiveDateTime") Extensions for
   ///  effectiveDateTime
   @JsonKey(name: '_effectiveDateTime')
-  Element? get effectiveDateTimeElement;
+  PrimitiveElement? get effectiveDateTimeElement;
   @override
 
   /// [effectivePeriod] The interval of time during which it is being asserted
@@ -32701,7 +32780,7 @@ abstract class _MedicationStatement extends MedicationStatement {
 
   /// [dateAssertedElement] ("_dateAsserted") Extensions for dateAsserted
   @JsonKey(name: '_dateAsserted')
-  Element? get dateAssertedElement;
+  PrimitiveElement? get dateAssertedElement;
   @override
 
   /// [informationSource] The person or organization that provided the
@@ -32742,7 +32821,7 @@ abstract class _MedicationStatement extends MedicationStatement {
   /// [renderedDosageInstructionElement] ("_renderedDosageInstruction")
   ///  Extensions for renderedDosageInstruction
   @JsonKey(name: '_renderedDosageInstruction')
-  Element? get renderedDosageInstructionElement;
+  PrimitiveElement? get renderedDosageInstructionElement;
   @override
 
   /// [dosage] Indicates how the medication is/was or should be taken by the

@@ -41,14 +41,15 @@ mixin _$ArtifactAssessment {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -100,7 +101,7 @@ mixin _$ArtifactAssessment {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [citeAsReference] Display of or reference to the bibliographic citation of
   ///  the comment, classifier, or rating.
@@ -112,7 +113,8 @@ mixin _$ArtifactAssessment {
 
   /// [citeAsMarkdownElement] ("_citeAsMarkdown") Extensions for citeAsMarkdown
   @JsonKey(name: '_citeAsMarkdown')
-  Element? get citeAsMarkdownElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get citeAsMarkdownElement =>
+      throw _privateConstructorUsedError;
 
   /// [date] The date  (and optionally time) when the artifact assessment was
   ///  published. The date must change when the disposition changes and it must
@@ -122,7 +124,7 @@ mixin _$ArtifactAssessment {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [copyright] A copyright statement relating to the artifact assessment
   ///  and/or its contents. Copyright statements are generally legal restrictions
@@ -131,7 +133,7 @@ mixin _$ArtifactAssessment {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
@@ -140,7 +142,8 @@ mixin _$ArtifactAssessment {
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @JsonKey(name: '_approvalDate')
-  Element? get approvalDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get approvalDateElement =>
+      throw _privateConstructorUsedError;
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
@@ -149,7 +152,8 @@ mixin _$ArtifactAssessment {
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @JsonKey(name: '_lastReviewDate')
-  Element? get lastReviewDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get lastReviewDateElement =>
+      throw _privateConstructorUsedError;
 
   /// [artifactReference] A reference to a resource, canonical resource, or
   ///  non-FHIR resource which the comment or assessment is about.
@@ -162,7 +166,8 @@ mixin _$ArtifactAssessment {
   /// [artifactCanonicalElement] ("_artifactCanonical") Extensions for
   ///  artifactCanonical
   @JsonKey(name: '_artifactCanonical')
-  Element? get artifactCanonicalElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get artifactCanonicalElement =>
+      throw _privateConstructorUsedError;
 
   /// [artifactUri] A reference to a resource, canonical resource, or non-FHIR
   ///  resource which the comment or assessment is about.
@@ -170,7 +175,8 @@ mixin _$ArtifactAssessment {
 
   /// [artifactUriElement] ("_artifactUri") Extensions for artifactUri
   @JsonKey(name: '_artifactUri')
-  Element? get artifactUriElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get artifactUriElement =>
+      throw _privateConstructorUsedError;
 
   /// [content] A component comment, classifier, or rating of the artifact.
   List<ArtifactAssessmentContent>? get content =>
@@ -182,7 +188,8 @@ mixin _$ArtifactAssessment {
 
   /// [workflowStatusElement] ("_workflowStatus") Extensions for workflowStatus
   @JsonKey(name: '_workflowStatus')
-  Element? get workflowStatusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get workflowStatusElement =>
+      throw _privateConstructorUsedError;
 
   /// [disposition] Indicates the disposition of the responsible party to the
   ///  comment or change request.
@@ -190,7 +197,8 @@ mixin _$ArtifactAssessment {
 
   /// [dispositionElement] ("_disposition") Extensions for disposition
   @JsonKey(name: '_disposition')
-  Element? get dispositionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dispositionElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -210,37 +218,38 @@ abstract class $ArtifactAssessmentCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<Identifier>? identifier,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       Reference? citeAsReference,
       FhirMarkdown? citeAsMarkdown,
-      @JsonKey(name: '_citeAsMarkdown') Element? citeAsMarkdownElement,
+      @JsonKey(name: '_citeAsMarkdown') PrimitiveElement? citeAsMarkdownElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
       FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
       Reference? artifactReference,
       FhirCanonical? artifactCanonical,
-      @JsonKey(name: '_artifactCanonical') Element? artifactCanonicalElement,
+      @JsonKey(name: '_artifactCanonical')
+      PrimitiveElement? artifactCanonicalElement,
       FhirUri? artifactUri,
-      @JsonKey(name: '_artifactUri') Element? artifactUriElement,
+      @JsonKey(name: '_artifactUri') PrimitiveElement? artifactUriElement,
       List<ArtifactAssessmentContent>? content,
       FhirCode? workflowStatus,
-      @JsonKey(name: '_workflowStatus') Element? workflowStatusElement,
+      @JsonKey(name: '_workflowStatus') PrimitiveElement? workflowStatusElement,
       FhirCode? disposition,
-      @JsonKey(name: '_disposition') Element? dispositionElement});
+      @JsonKey(name: '_disposition') PrimitiveElement? dispositionElement});
 
   $FhirMetaCopyWith<$Res>? get meta;
   $NarrativeCopyWith<$Res>? get text;
@@ -317,7 +326,7 @@ class _$ArtifactAssessmentCopyWithImpl<$Res, $Val extends ArtifactAssessment>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -325,7 +334,7 @@ class _$ArtifactAssessmentCopyWithImpl<$Res, $Val extends ArtifactAssessment>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -353,7 +362,7 @@ class _$ArtifactAssessmentCopyWithImpl<$Res, $Val extends ArtifactAssessment>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       citeAsReference: freezed == citeAsReference
           ? _value.citeAsReference
           : citeAsReference // ignore: cast_nullable_to_non_nullable
@@ -365,7 +374,7 @@ class _$ArtifactAssessmentCopyWithImpl<$Res, $Val extends ArtifactAssessment>
       citeAsMarkdownElement: freezed == citeAsMarkdownElement
           ? _value.citeAsMarkdownElement
           : citeAsMarkdownElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -373,7 +382,7 @@ class _$ArtifactAssessmentCopyWithImpl<$Res, $Val extends ArtifactAssessment>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -381,7 +390,7 @@ class _$ArtifactAssessmentCopyWithImpl<$Res, $Val extends ArtifactAssessment>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       approvalDate: freezed == approvalDate
           ? _value.approvalDate
           : approvalDate // ignore: cast_nullable_to_non_nullable
@@ -389,7 +398,7 @@ class _$ArtifactAssessmentCopyWithImpl<$Res, $Val extends ArtifactAssessment>
       approvalDateElement: freezed == approvalDateElement
           ? _value.approvalDateElement
           : approvalDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       lastReviewDate: freezed == lastReviewDate
           ? _value.lastReviewDate
           : lastReviewDate // ignore: cast_nullable_to_non_nullable
@@ -397,7 +406,7 @@ class _$ArtifactAssessmentCopyWithImpl<$Res, $Val extends ArtifactAssessment>
       lastReviewDateElement: freezed == lastReviewDateElement
           ? _value.lastReviewDateElement
           : lastReviewDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       artifactReference: freezed == artifactReference
           ? _value.artifactReference
           : artifactReference // ignore: cast_nullable_to_non_nullable
@@ -409,7 +418,7 @@ class _$ArtifactAssessmentCopyWithImpl<$Res, $Val extends ArtifactAssessment>
       artifactCanonicalElement: freezed == artifactCanonicalElement
           ? _value.artifactCanonicalElement
           : artifactCanonicalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       artifactUri: freezed == artifactUri
           ? _value.artifactUri
           : artifactUri // ignore: cast_nullable_to_non_nullable
@@ -417,7 +426,7 @@ class _$ArtifactAssessmentCopyWithImpl<$Res, $Val extends ArtifactAssessment>
       artifactUriElement: freezed == artifactUriElement
           ? _value.artifactUriElement
           : artifactUriElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       content: freezed == content
           ? _value.content
           : content // ignore: cast_nullable_to_non_nullable
@@ -429,7 +438,7 @@ class _$ArtifactAssessmentCopyWithImpl<$Res, $Val extends ArtifactAssessment>
       workflowStatusElement: freezed == workflowStatusElement
           ? _value.workflowStatusElement
           : workflowStatusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       disposition: freezed == disposition
           ? _value.disposition
           : disposition // ignore: cast_nullable_to_non_nullable
@@ -437,7 +446,7 @@ class _$ArtifactAssessmentCopyWithImpl<$Res, $Val extends ArtifactAssessment>
       dispositionElement: freezed == dispositionElement
           ? _value.dispositionElement
           : dispositionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -504,37 +513,38 @@ abstract class _$$ArtifactAssessmentImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<Identifier>? identifier,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       Reference? citeAsReference,
       FhirMarkdown? citeAsMarkdown,
-      @JsonKey(name: '_citeAsMarkdown') Element? citeAsMarkdownElement,
+      @JsonKey(name: '_citeAsMarkdown') PrimitiveElement? citeAsMarkdownElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
       FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
       Reference? artifactReference,
       FhirCanonical? artifactCanonical,
-      @JsonKey(name: '_artifactCanonical') Element? artifactCanonicalElement,
+      @JsonKey(name: '_artifactCanonical')
+      PrimitiveElement? artifactCanonicalElement,
       FhirUri? artifactUri,
-      @JsonKey(name: '_artifactUri') Element? artifactUriElement,
+      @JsonKey(name: '_artifactUri') PrimitiveElement? artifactUriElement,
       List<ArtifactAssessmentContent>? content,
       FhirCode? workflowStatus,
-      @JsonKey(name: '_workflowStatus') Element? workflowStatusElement,
+      @JsonKey(name: '_workflowStatus') PrimitiveElement? workflowStatusElement,
       FhirCode? disposition,
-      @JsonKey(name: '_disposition') Element? dispositionElement});
+      @JsonKey(name: '_disposition') PrimitiveElement? dispositionElement});
 
   @override
   $FhirMetaCopyWith<$Res>? get meta;
@@ -613,7 +623,7 @@ class __$$ArtifactAssessmentImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -621,7 +631,7 @@ class __$$ArtifactAssessmentImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -649,7 +659,7 @@ class __$$ArtifactAssessmentImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       citeAsReference: freezed == citeAsReference
           ? _value.citeAsReference
           : citeAsReference // ignore: cast_nullable_to_non_nullable
@@ -661,7 +671,7 @@ class __$$ArtifactAssessmentImplCopyWithImpl<$Res>
       citeAsMarkdownElement: freezed == citeAsMarkdownElement
           ? _value.citeAsMarkdownElement
           : citeAsMarkdownElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -669,7 +679,7 @@ class __$$ArtifactAssessmentImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -677,7 +687,7 @@ class __$$ArtifactAssessmentImplCopyWithImpl<$Res>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       approvalDate: freezed == approvalDate
           ? _value.approvalDate
           : approvalDate // ignore: cast_nullable_to_non_nullable
@@ -685,7 +695,7 @@ class __$$ArtifactAssessmentImplCopyWithImpl<$Res>
       approvalDateElement: freezed == approvalDateElement
           ? _value.approvalDateElement
           : approvalDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       lastReviewDate: freezed == lastReviewDate
           ? _value.lastReviewDate
           : lastReviewDate // ignore: cast_nullable_to_non_nullable
@@ -693,7 +703,7 @@ class __$$ArtifactAssessmentImplCopyWithImpl<$Res>
       lastReviewDateElement: freezed == lastReviewDateElement
           ? _value.lastReviewDateElement
           : lastReviewDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       artifactReference: freezed == artifactReference
           ? _value.artifactReference
           : artifactReference // ignore: cast_nullable_to_non_nullable
@@ -705,7 +715,7 @@ class __$$ArtifactAssessmentImplCopyWithImpl<$Res>
       artifactCanonicalElement: freezed == artifactCanonicalElement
           ? _value.artifactCanonicalElement
           : artifactCanonicalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       artifactUri: freezed == artifactUri
           ? _value.artifactUri
           : artifactUri // ignore: cast_nullable_to_non_nullable
@@ -713,7 +723,7 @@ class __$$ArtifactAssessmentImplCopyWithImpl<$Res>
       artifactUriElement: freezed == artifactUriElement
           ? _value.artifactUriElement
           : artifactUriElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       content: freezed == content
           ? _value._content
           : content // ignore: cast_nullable_to_non_nullable
@@ -725,7 +735,7 @@ class __$$ArtifactAssessmentImplCopyWithImpl<$Res>
       workflowStatusElement: freezed == workflowStatusElement
           ? _value.workflowStatusElement
           : workflowStatusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       disposition: freezed == disposition
           ? _value.disposition
           : disposition // ignore: cast_nullable_to_non_nullable
@@ -733,7 +743,7 @@ class __$$ArtifactAssessmentImplCopyWithImpl<$Res>
       dispositionElement: freezed == dispositionElement
           ? _value.dispositionElement
           : dispositionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -814,7 +824,7 @@ class _$ArtifactAssessmentImpl extends _ArtifactAssessment {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -823,7 +833,7 @@ class _$ArtifactAssessmentImpl extends _ArtifactAssessment {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -940,7 +950,7 @@ class _$ArtifactAssessmentImpl extends _ArtifactAssessment {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [citeAsReference] Display of or reference to the bibliographic citation of
   ///  the comment, classifier, or rating.
@@ -955,7 +965,7 @@ class _$ArtifactAssessmentImpl extends _ArtifactAssessment {
   /// [citeAsMarkdownElement] ("_citeAsMarkdown") Extensions for citeAsMarkdown
   @override
   @JsonKey(name: '_citeAsMarkdown')
-  final Element? citeAsMarkdownElement;
+  final PrimitiveElement? citeAsMarkdownElement;
 
   /// [date] The date  (and optionally time) when the artifact assessment was
   ///  published. The date must change when the disposition changes and it must
@@ -967,7 +977,7 @@ class _$ArtifactAssessmentImpl extends _ArtifactAssessment {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [copyright] A copyright statement relating to the artifact assessment
   ///  and/or its contents. Copyright statements are generally legal restrictions
@@ -978,7 +988,7 @@ class _$ArtifactAssessmentImpl extends _ArtifactAssessment {
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @override
   @JsonKey(name: '_copyright')
-  final Element? copyrightElement;
+  final PrimitiveElement? copyrightElement;
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
@@ -989,7 +999,7 @@ class _$ArtifactAssessmentImpl extends _ArtifactAssessment {
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @override
   @JsonKey(name: '_approvalDate')
-  final Element? approvalDateElement;
+  final PrimitiveElement? approvalDateElement;
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
@@ -1000,7 +1010,7 @@ class _$ArtifactAssessmentImpl extends _ArtifactAssessment {
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @override
   @JsonKey(name: '_lastReviewDate')
-  final Element? lastReviewDateElement;
+  final PrimitiveElement? lastReviewDateElement;
 
   /// [artifactReference] A reference to a resource, canonical resource, or
   ///  non-FHIR resource which the comment or assessment is about.
@@ -1016,7 +1026,7 @@ class _$ArtifactAssessmentImpl extends _ArtifactAssessment {
   ///  artifactCanonical
   @override
   @JsonKey(name: '_artifactCanonical')
-  final Element? artifactCanonicalElement;
+  final PrimitiveElement? artifactCanonicalElement;
 
   /// [artifactUri] A reference to a resource, canonical resource, or non-FHIR
   ///  resource which the comment or assessment is about.
@@ -1026,7 +1036,7 @@ class _$ArtifactAssessmentImpl extends _ArtifactAssessment {
   /// [artifactUriElement] ("_artifactUri") Extensions for artifactUri
   @override
   @JsonKey(name: '_artifactUri')
-  final Element? artifactUriElement;
+  final PrimitiveElement? artifactUriElement;
 
   /// [content] A component comment, classifier, or rating of the artifact.
   final List<ArtifactAssessmentContent>? _content;
@@ -1049,7 +1059,7 @@ class _$ArtifactAssessmentImpl extends _ArtifactAssessment {
   /// [workflowStatusElement] ("_workflowStatus") Extensions for workflowStatus
   @override
   @JsonKey(name: '_workflowStatus')
-  final Element? workflowStatusElement;
+  final PrimitiveElement? workflowStatusElement;
 
   /// [disposition] Indicates the disposition of the responsible party to the
   ///  comment or change request.
@@ -1059,7 +1069,7 @@ class _$ArtifactAssessmentImpl extends _ArtifactAssessment {
   /// [dispositionElement] ("_disposition") Extensions for disposition
   @override
   @JsonKey(name: '_disposition')
-  final Element? dispositionElement;
+  final PrimitiveElement? dispositionElement;
 
   @override
   String toString() {
@@ -1201,39 +1211,44 @@ abstract class _ArtifactAssessment extends ArtifactAssessment {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final List<Identifier>? identifier,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final Reference? citeAsReference,
       final FhirMarkdown? citeAsMarkdown,
-      @JsonKey(name: '_citeAsMarkdown') final Element? citeAsMarkdownElement,
+      @JsonKey(name: '_citeAsMarkdown')
+      final PrimitiveElement? citeAsMarkdownElement,
       final FhirDateTime? date,
-      @JsonKey(name: '_date') final Element? dateElement,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
       final FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') final Element? copyrightElement,
+      @JsonKey(name: '_copyright') final PrimitiveElement? copyrightElement,
       final FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') final Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate')
+      final PrimitiveElement? approvalDateElement,
       final FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') final Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate')
+      final PrimitiveElement? lastReviewDateElement,
       final Reference? artifactReference,
       final FhirCanonical? artifactCanonical,
       @JsonKey(name: '_artifactCanonical')
-      final Element? artifactCanonicalElement,
+      final PrimitiveElement? artifactCanonicalElement,
       final FhirUri? artifactUri,
-      @JsonKey(name: '_artifactUri') final Element? artifactUriElement,
+      @JsonKey(name: '_artifactUri') final PrimitiveElement? artifactUriElement,
       final List<ArtifactAssessmentContent>? content,
       final FhirCode? workflowStatus,
-      @JsonKey(name: '_workflowStatus') final Element? workflowStatusElement,
+      @JsonKey(name: '_workflowStatus')
+      final PrimitiveElement? workflowStatusElement,
       final FhirCode? disposition,
       @JsonKey(name: '_disposition')
-      final Element? dispositionElement}) = _$ArtifactAssessmentImpl;
+      final PrimitiveElement? dispositionElement}) = _$ArtifactAssessmentImpl;
   const _ArtifactAssessment._() : super._();
 
   factory _ArtifactAssessment.fromJson(Map<String, dynamic> json) =
@@ -1266,7 +1281,7 @@ abstract class _ArtifactAssessment extends ArtifactAssessment {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -1275,7 +1290,7 @@ abstract class _ArtifactAssessment extends ArtifactAssessment {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -1333,7 +1348,7 @@ abstract class _ArtifactAssessment extends ArtifactAssessment {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [citeAsReference] Display of or reference to the bibliographic citation of
@@ -1348,7 +1363,7 @@ abstract class _ArtifactAssessment extends ArtifactAssessment {
 
   /// [citeAsMarkdownElement] ("_citeAsMarkdown") Extensions for citeAsMarkdown
   @JsonKey(name: '_citeAsMarkdown')
-  Element? get citeAsMarkdownElement;
+  PrimitiveElement? get citeAsMarkdownElement;
   @override
 
   /// [date] The date  (and optionally time) when the artifact assessment was
@@ -1360,7 +1375,7 @@ abstract class _ArtifactAssessment extends ArtifactAssessment {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [copyright] A copyright statement relating to the artifact assessment
@@ -1371,7 +1386,7 @@ abstract class _ArtifactAssessment extends ArtifactAssessment {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement;
+  PrimitiveElement? get copyrightElement;
   @override
 
   /// [approvalDate] The date on which the resource content was approved by the
@@ -1382,7 +1397,7 @@ abstract class _ArtifactAssessment extends ArtifactAssessment {
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @JsonKey(name: '_approvalDate')
-  Element? get approvalDateElement;
+  PrimitiveElement? get approvalDateElement;
   @override
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
@@ -1393,7 +1408,7 @@ abstract class _ArtifactAssessment extends ArtifactAssessment {
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @JsonKey(name: '_lastReviewDate')
-  Element? get lastReviewDateElement;
+  PrimitiveElement? get lastReviewDateElement;
   @override
 
   /// [artifactReference] A reference to a resource, canonical resource, or
@@ -1409,7 +1424,7 @@ abstract class _ArtifactAssessment extends ArtifactAssessment {
   /// [artifactCanonicalElement] ("_artifactCanonical") Extensions for
   ///  artifactCanonical
   @JsonKey(name: '_artifactCanonical')
-  Element? get artifactCanonicalElement;
+  PrimitiveElement? get artifactCanonicalElement;
   @override
 
   /// [artifactUri] A reference to a resource, canonical resource, or non-FHIR
@@ -1419,7 +1434,7 @@ abstract class _ArtifactAssessment extends ArtifactAssessment {
 
   /// [artifactUriElement] ("_artifactUri") Extensions for artifactUri
   @JsonKey(name: '_artifactUri')
-  Element? get artifactUriElement;
+  PrimitiveElement? get artifactUriElement;
   @override
 
   /// [content] A component comment, classifier, or rating of the artifact.
@@ -1433,7 +1448,7 @@ abstract class _ArtifactAssessment extends ArtifactAssessment {
 
   /// [workflowStatusElement] ("_workflowStatus") Extensions for workflowStatus
   @JsonKey(name: '_workflowStatus')
-  Element? get workflowStatusElement;
+  PrimitiveElement? get workflowStatusElement;
   @override
 
   /// [disposition] Indicates the disposition of the responsible party to the
@@ -1443,7 +1458,7 @@ abstract class _ArtifactAssessment extends ArtifactAssessment {
 
   /// [dispositionElement] ("_disposition") Extensions for disposition
   @JsonKey(name: '_disposition')
-  Element? get dispositionElement;
+  PrimitiveElement? get dispositionElement;
   @override
   @JsonKey(ignore: true)
   _$$ArtifactAssessmentImplCopyWith<_$ArtifactAssessmentImpl> get copyWith =>
@@ -1491,14 +1506,15 @@ mixin _$ArtifactAssessmentContent {
 
   /// [informationTypeElement] ("_informationType") Extensions for informationType
   @JsonKey(name: '_informationType')
-  Element? get informationTypeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get informationTypeElement =>
+      throw _privateConstructorUsedError;
 
   /// [summary] A brief summary of the content of this component.
   FhirMarkdown? get summary => throw _privateConstructorUsedError;
 
   /// [summaryElement] ("_summary") Extensions for summary
   @JsonKey(name: '_summary')
-  Element? get summaryElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get summaryElement => throw _privateConstructorUsedError;
 
   /// [type] Indicates what type of content this component represents.
   CodeableConcept? get type => throw _privateConstructorUsedError;
@@ -1532,7 +1548,8 @@ mixin _$ArtifactAssessmentContent {
 
   /// [freeToShareElement] ("_freeToShare") Extensions for freeToShare
   @JsonKey(name: '_freeToShare')
-  Element? get freeToShareElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get freeToShareElement =>
+      throw _privateConstructorUsedError;
 
   /// [component] If the informationType is container, the components of the
   ///  content.
@@ -1556,9 +1573,10 @@ abstract class $ArtifactAssessmentContentCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? informationType,
-      @JsonKey(name: '_informationType') Element? informationTypeElement,
+      @JsonKey(name: '_informationType')
+      PrimitiveElement? informationTypeElement,
       FhirMarkdown? summary,
-      @JsonKey(name: '_summary') Element? summaryElement,
+      @JsonKey(name: '_summary') PrimitiveElement? summaryElement,
       CodeableConcept? type,
       List<CodeableConcept>? classifier,
       Quantity? quantity,
@@ -1567,7 +1585,7 @@ abstract class $ArtifactAssessmentContentCopyWith<$Res> {
       @JsonKey(name: '_path') List<Element>? pathElement,
       List<RelatedArtifact>? relatedArtifact,
       FhirBoolean? freeToShare,
-      @JsonKey(name: '_freeToShare') Element? freeToShareElement,
+      @JsonKey(name: '_freeToShare') PrimitiveElement? freeToShareElement,
       List<ArtifactAssessmentContent>? component});
 
   $CodeableConceptCopyWith<$Res>? get type;
@@ -1627,7 +1645,7 @@ class _$ArtifactAssessmentContentCopyWithImpl<$Res,
       informationTypeElement: freezed == informationTypeElement
           ? _value.informationTypeElement
           : informationTypeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       summary: freezed == summary
           ? _value.summary
           : summary // ignore: cast_nullable_to_non_nullable
@@ -1635,7 +1653,7 @@ class _$ArtifactAssessmentContentCopyWithImpl<$Res,
       summaryElement: freezed == summaryElement
           ? _value.summaryElement
           : summaryElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -1671,7 +1689,7 @@ class _$ArtifactAssessmentContentCopyWithImpl<$Res,
       freeToShareElement: freezed == freeToShareElement
           ? _value.freeToShareElement
           : freeToShareElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       component: freezed == component
           ? _value.component
           : component // ignore: cast_nullable_to_non_nullable
@@ -1730,9 +1748,10 @@ abstract class _$$ArtifactAssessmentContentImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? informationType,
-      @JsonKey(name: '_informationType') Element? informationTypeElement,
+      @JsonKey(name: '_informationType')
+      PrimitiveElement? informationTypeElement,
       FhirMarkdown? summary,
-      @JsonKey(name: '_summary') Element? summaryElement,
+      @JsonKey(name: '_summary') PrimitiveElement? summaryElement,
       CodeableConcept? type,
       List<CodeableConcept>? classifier,
       Quantity? quantity,
@@ -1741,7 +1760,7 @@ abstract class _$$ArtifactAssessmentContentImplCopyWith<$Res>
       @JsonKey(name: '_path') List<Element>? pathElement,
       List<RelatedArtifact>? relatedArtifact,
       FhirBoolean? freeToShare,
-      @JsonKey(name: '_freeToShare') Element? freeToShareElement,
+      @JsonKey(name: '_freeToShare') PrimitiveElement? freeToShareElement,
       List<ArtifactAssessmentContent>? component});
 
   @override
@@ -1803,7 +1822,7 @@ class __$$ArtifactAssessmentContentImplCopyWithImpl<$Res>
       informationTypeElement: freezed == informationTypeElement
           ? _value.informationTypeElement
           : informationTypeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       summary: freezed == summary
           ? _value.summary
           : summary // ignore: cast_nullable_to_non_nullable
@@ -1811,7 +1830,7 @@ class __$$ArtifactAssessmentContentImplCopyWithImpl<$Res>
       summaryElement: freezed == summaryElement
           ? _value.summaryElement
           : summaryElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -1847,7 +1866,7 @@ class __$$ArtifactAssessmentContentImplCopyWithImpl<$Res>
       freeToShareElement: freezed == freeToShareElement
           ? _value.freeToShareElement
           : freeToShareElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       component: freezed == component
           ? _value._component
           : component // ignore: cast_nullable_to_non_nullable
@@ -1962,7 +1981,7 @@ class _$ArtifactAssessmentContentImpl extends _ArtifactAssessmentContent {
   /// [informationTypeElement] ("_informationType") Extensions for informationType
   @override
   @JsonKey(name: '_informationType')
-  final Element? informationTypeElement;
+  final PrimitiveElement? informationTypeElement;
 
   /// [summary] A brief summary of the content of this component.
   @override
@@ -1971,7 +1990,7 @@ class _$ArtifactAssessmentContentImpl extends _ArtifactAssessmentContent {
   /// [summaryElement] ("_summary") Extensions for summary
   @override
   @JsonKey(name: '_summary')
-  final Element? summaryElement;
+  final PrimitiveElement? summaryElement;
 
   /// [type] Indicates what type of content this component represents.
   @override
@@ -2052,7 +2071,7 @@ class _$ArtifactAssessmentContentImpl extends _ArtifactAssessmentContent {
   /// [freeToShareElement] ("_freeToShare") Extensions for freeToShare
   @override
   @JsonKey(name: '_freeToShare')
-  final Element? freeToShareElement;
+  final PrimitiveElement? freeToShareElement;
 
   /// [component] If the informationType is container, the components of the
   ///  content.
@@ -2153,9 +2172,10 @@ abstract class _ArtifactAssessmentContent extends ArtifactAssessmentContent {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirCode? informationType,
-      @JsonKey(name: '_informationType') final Element? informationTypeElement,
+      @JsonKey(name: '_informationType')
+      final PrimitiveElement? informationTypeElement,
       final FhirMarkdown? summary,
-      @JsonKey(name: '_summary') final Element? summaryElement,
+      @JsonKey(name: '_summary') final PrimitiveElement? summaryElement,
       final CodeableConcept? type,
       final List<CodeableConcept>? classifier,
       final Quantity? quantity,
@@ -2164,7 +2184,7 @@ abstract class _ArtifactAssessmentContent extends ArtifactAssessmentContent {
       @JsonKey(name: '_path') final List<Element>? pathElement,
       final List<RelatedArtifact>? relatedArtifact,
       final FhirBoolean? freeToShare,
-      @JsonKey(name: '_freeToShare') final Element? freeToShareElement,
+      @JsonKey(name: '_freeToShare') final PrimitiveElement? freeToShareElement,
       final List<ArtifactAssessmentContent>?
           component}) = _$ArtifactAssessmentContentImpl;
   const _ArtifactAssessmentContent._() : super._();
@@ -2211,7 +2231,7 @@ abstract class _ArtifactAssessmentContent extends ArtifactAssessmentContent {
 
   /// [informationTypeElement] ("_informationType") Extensions for informationType
   @JsonKey(name: '_informationType')
-  Element? get informationTypeElement;
+  PrimitiveElement? get informationTypeElement;
   @override
 
   /// [summary] A brief summary of the content of this component.
@@ -2220,7 +2240,7 @@ abstract class _ArtifactAssessmentContent extends ArtifactAssessmentContent {
 
   /// [summaryElement] ("_summary") Extensions for summary
   @JsonKey(name: '_summary')
-  Element? get summaryElement;
+  PrimitiveElement? get summaryElement;
   @override
 
   /// [type] Indicates what type of content this component represents.
@@ -2262,7 +2282,7 @@ abstract class _ArtifactAssessmentContent extends ArtifactAssessmentContent {
 
   /// [freeToShareElement] ("_freeToShare") Extensions for freeToShare
   @JsonKey(name: '_freeToShare')
-  Element? get freeToShareElement;
+  PrimitiveElement? get freeToShareElement;
   @override
 
   /// [component] If the informationType is container, the components of the
@@ -2301,14 +2321,15 @@ mixin _$Citation {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -2360,7 +2381,7 @@ mixin _$Citation {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   /// [identifier] A formal identifier that is used to identify this citation
   ///  record when it is represented in other formats, or referenced in a
@@ -2378,7 +2399,7 @@ mixin _$Citation {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -2387,7 +2408,7 @@ mixin _$Citation {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement =>
+  PrimitiveElement? get versionAlgorithmStringElement =>
       throw _privateConstructorUsedError;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -2401,14 +2422,14 @@ mixin _$Citation {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [title] A short, descriptive, user-friendly title for the citation record.
   String? get title => throw _privateConstructorUsedError;
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [status] The status of this summary. Enables tracking the life-cycle of the
   ///  content.
@@ -2416,7 +2437,7 @@ mixin _$Citation {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [experimental] A Boolean value to indicate that this citation record is
   ///  authored for testing purposes (or education/evaluation/marketing) and is
@@ -2425,7 +2446,8 @@ mixin _$Citation {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get experimentalElement =>
+      throw _privateConstructorUsedError;
 
   /// [date] The date (and optionally time) when the citation record was last
   ///  significantly changed. The date must change when the business version
@@ -2435,7 +2457,7 @@ mixin _$Citation {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [publisher] The name of the organization or individual that published the
   ///  citation record.
@@ -2443,7 +2465,7 @@ mixin _$Citation {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get publisherElement => throw _privateConstructorUsedError;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -2455,7 +2477,8 @@ mixin _$Citation {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -2474,7 +2497,7 @@ mixin _$Citation {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get purposeElement => throw _privateConstructorUsedError;
 
   /// [copyright] Use and/or publishing restrictions for the citation record, not
   ///  for the cited artifact.
@@ -2482,7 +2505,7 @@ mixin _$Citation {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -2492,7 +2515,8 @@ mixin _$Citation {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightLabelElement =>
+      throw _privateConstructorUsedError;
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
@@ -2501,7 +2525,8 @@ mixin _$Citation {
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @JsonKey(name: '_approvalDate')
-  Element? get approvalDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get approvalDateElement =>
+      throw _privateConstructorUsedError;
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
@@ -2510,7 +2535,8 @@ mixin _$Citation {
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @JsonKey(name: '_lastReviewDate')
-  Element? get lastReviewDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get lastReviewDateElement =>
+      throw _privateConstructorUsedError;
 
   /// [effectivePeriod] The period during which the citation record content was
   ///  or is planned to be in active use.
@@ -2577,49 +2603,49 @@ abstract class $CitationCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
       FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
       Period? effectivePeriod,
       List<CodeableConcept>? topic,
       List<ContactDetail>? author,
@@ -2734,7 +2760,7 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -2742,7 +2768,7 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -2766,7 +2792,7 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -2778,7 +2804,7 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -2786,7 +2812,7 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -2798,7 +2824,7 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -2806,7 +2832,7 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -2814,7 +2840,7 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -2822,7 +2848,7 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -2830,7 +2856,7 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -2838,7 +2864,7 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value.contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -2850,7 +2876,7 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value.useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -2866,7 +2892,7 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -2874,7 +2900,7 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -2882,7 +2908,7 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       approvalDate: freezed == approvalDate
           ? _value.approvalDate
           : approvalDate // ignore: cast_nullable_to_non_nullable
@@ -2890,7 +2916,7 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
       approvalDateElement: freezed == approvalDateElement
           ? _value.approvalDateElement
           : approvalDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       lastReviewDate: freezed == lastReviewDate
           ? _value.lastReviewDate
           : lastReviewDate // ignore: cast_nullable_to_non_nullable
@@ -2898,7 +2924,7 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
       lastReviewDateElement: freezed == lastReviewDateElement
           ? _value.lastReviewDateElement
           : lastReviewDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       effectivePeriod: freezed == effectivePeriod
           ? _value.effectivePeriod
           : effectivePeriod // ignore: cast_nullable_to_non_nullable
@@ -3029,49 +3055,49 @@ abstract class _$$CitationImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
       FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
       Period? effectivePeriod,
       List<CodeableConcept>? topic,
       List<ContactDetail>? author,
@@ -3189,7 +3215,7 @@ class __$$CitationImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -3197,7 +3223,7 @@ class __$$CitationImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -3221,7 +3247,7 @@ class __$$CitationImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value._identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -3233,7 +3259,7 @@ class __$$CitationImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -3241,7 +3267,7 @@ class __$$CitationImplCopyWithImpl<$Res>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -3253,7 +3279,7 @@ class __$$CitationImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -3261,7 +3287,7 @@ class __$$CitationImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -3269,7 +3295,7 @@ class __$$CitationImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -3277,7 +3303,7 @@ class __$$CitationImplCopyWithImpl<$Res>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -3285,7 +3311,7 @@ class __$$CitationImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -3293,7 +3319,7 @@ class __$$CitationImplCopyWithImpl<$Res>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value._contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -3305,7 +3331,7 @@ class __$$CitationImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value._useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -3321,7 +3347,7 @@ class __$$CitationImplCopyWithImpl<$Res>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -3329,7 +3355,7 @@ class __$$CitationImplCopyWithImpl<$Res>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -3337,7 +3363,7 @@ class __$$CitationImplCopyWithImpl<$Res>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       approvalDate: freezed == approvalDate
           ? _value.approvalDate
           : approvalDate // ignore: cast_nullable_to_non_nullable
@@ -3345,7 +3371,7 @@ class __$$CitationImplCopyWithImpl<$Res>
       approvalDateElement: freezed == approvalDateElement
           ? _value.approvalDateElement
           : approvalDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       lastReviewDate: freezed == lastReviewDate
           ? _value.lastReviewDate
           : lastReviewDate // ignore: cast_nullable_to_non_nullable
@@ -3353,7 +3379,7 @@ class __$$CitationImplCopyWithImpl<$Res>
       lastReviewDateElement: freezed == lastReviewDateElement
           ? _value.lastReviewDateElement
           : lastReviewDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       effectivePeriod: freezed == effectivePeriod
           ? _value.effectivePeriod
           : effectivePeriod // ignore: cast_nullable_to_non_nullable
@@ -3524,7 +3550,7 @@ class _$CitationImpl extends _Citation {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -3533,7 +3559,7 @@ class _$CitationImpl extends _Citation {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -3638,7 +3664,7 @@ class _$CitationImpl extends _Citation {
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   /// [identifier] A formal identifier that is used to identify this citation
   ///  record when it is represented in other formats, or referenced in a
@@ -3670,7 +3696,7 @@ class _$CitationImpl extends _Citation {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -3681,7 +3707,7 @@ class _$CitationImpl extends _Citation {
   ///  versionAlgorithmString
   @override
   @JsonKey(name: '_versionAlgorithmString')
-  final Element? versionAlgorithmStringElement;
+  final PrimitiveElement? versionAlgorithmStringElement;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -3697,7 +3723,7 @@ class _$CitationImpl extends _Citation {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [title] A short, descriptive, user-friendly title for the citation record.
   @override
@@ -3706,7 +3732,7 @@ class _$CitationImpl extends _Citation {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [status] The status of this summary. Enables tracking the life-cycle of the
   ///  content.
@@ -3716,7 +3742,7 @@ class _$CitationImpl extends _Citation {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [experimental] A Boolean value to indicate that this citation record is
   ///  authored for testing purposes (or education/evaluation/marketing) and is
@@ -3727,7 +3753,7 @@ class _$CitationImpl extends _Citation {
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @override
   @JsonKey(name: '_experimental')
-  final Element? experimentalElement;
+  final PrimitiveElement? experimentalElement;
 
   /// [date] The date (and optionally time) when the citation record was last
   ///  significantly changed. The date must change when the business version
@@ -3739,7 +3765,7 @@ class _$CitationImpl extends _Citation {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [publisher] The name of the organization or individual that published the
   ///  citation record.
@@ -3749,7 +3775,7 @@ class _$CitationImpl extends _Citation {
   /// [publisherElement] ("_publisher") Extensions for publisher
   @override
   @JsonKey(name: '_publisher')
-  final Element? publisherElement;
+  final PrimitiveElement? publisherElement;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -3774,7 +3800,7 @@ class _$CitationImpl extends _Citation {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -3820,7 +3846,7 @@ class _$CitationImpl extends _Citation {
   /// [purposeElement] ("_purpose") Extensions for purpose
   @override
   @JsonKey(name: '_purpose')
-  final Element? purposeElement;
+  final PrimitiveElement? purposeElement;
 
   /// [copyright] Use and/or publishing restrictions for the citation record, not
   ///  for the cited artifact.
@@ -3830,7 +3856,7 @@ class _$CitationImpl extends _Citation {
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @override
   @JsonKey(name: '_copyright')
-  final Element? copyrightElement;
+  final PrimitiveElement? copyrightElement;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -3842,7 +3868,7 @@ class _$CitationImpl extends _Citation {
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @override
   @JsonKey(name: '_copyrightLabel')
-  final Element? copyrightLabelElement;
+  final PrimitiveElement? copyrightLabelElement;
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
@@ -3853,7 +3879,7 @@ class _$CitationImpl extends _Citation {
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @override
   @JsonKey(name: '_approvalDate')
-  final Element? approvalDateElement;
+  final PrimitiveElement? approvalDateElement;
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
@@ -3864,7 +3890,7 @@ class _$CitationImpl extends _Citation {
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @override
   @JsonKey(name: '_lastReviewDate')
-  final Element? lastReviewDateElement;
+  final PrimitiveElement? lastReviewDateElement;
 
   /// [effectivePeriod] The period during which the citation record content was
   ///  or is planned to be in active use.
@@ -4220,49 +4246,54 @@ abstract class _Citation extends Citation {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUri? url,
-      @JsonKey(name: '_url') final Element? urlElement,
+      @JsonKey(name: '_url') final PrimitiveElement? urlElement,
       final List<Identifier>? identifier,
       final String? version,
-      @JsonKey(name: '_version') final Element? versionElement,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
       final String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      final Element? versionAlgorithmStringElement,
+      final PrimitiveElement? versionAlgorithmStringElement,
       final Coding? versionAlgorithmCoding,
       final String? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final FhirCode? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') final Element? experimentalElement,
+      @JsonKey(name: '_experimental')
+      final PrimitiveElement? experimentalElement,
       final FhirDateTime? date,
-      @JsonKey(name: '_date') final Element? dateElement,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
       final String? publisher,
-      @JsonKey(name: '_publisher') final Element? publisherElement,
+      @JsonKey(name: '_publisher') final PrimitiveElement? publisherElement,
       final List<ContactDetail>? contact,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<UsageContext>? useContext,
       final List<CodeableConcept>? jurisdiction,
       final FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') final Element? purposeElement,
+      @JsonKey(name: '_purpose') final PrimitiveElement? purposeElement,
       final FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') final Element? copyrightElement,
+      @JsonKey(name: '_copyright') final PrimitiveElement? copyrightElement,
       final String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') final Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel')
+      final PrimitiveElement? copyrightLabelElement,
       final FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') final Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate')
+      final PrimitiveElement? approvalDateElement,
       final FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') final Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate')
+      final PrimitiveElement? lastReviewDateElement,
       final Period? effectivePeriod,
       final List<CodeableConcept>? topic,
       final List<ContactDetail>? author,
@@ -4308,7 +4339,7 @@ abstract class _Citation extends Citation {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -4317,7 +4348,7 @@ abstract class _Citation extends Citation {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -4374,7 +4405,7 @@ abstract class _Citation extends Citation {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
 
   /// [identifier] A formal identifier that is used to identify this citation
@@ -4395,7 +4426,7 @@ abstract class _Citation extends Citation {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
@@ -4406,7 +4437,7 @@ abstract class _Citation extends Citation {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement;
+  PrimitiveElement? get versionAlgorithmStringElement;
   @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -4422,7 +4453,7 @@ abstract class _Citation extends Citation {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [title] A short, descriptive, user-friendly title for the citation record.
@@ -4431,7 +4462,7 @@ abstract class _Citation extends Citation {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [status] The status of this summary. Enables tracking the life-cycle of the
@@ -4441,7 +4472,7 @@ abstract class _Citation extends Citation {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [experimental] A Boolean value to indicate that this citation record is
@@ -4452,7 +4483,7 @@ abstract class _Citation extends Citation {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement;
+  PrimitiveElement? get experimentalElement;
   @override
 
   /// [date] The date (and optionally time) when the citation record was last
@@ -4464,7 +4495,7 @@ abstract class _Citation extends Citation {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [publisher] The name of the organization or individual that published the
@@ -4474,7 +4505,7 @@ abstract class _Citation extends Citation {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement;
+  PrimitiveElement? get publisherElement;
   @override
 
   /// [contact] Contact details to assist a user in finding and communicating
@@ -4489,7 +4520,7 @@ abstract class _Citation extends Citation {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [useContext] The content was developed with a focus and intent of
@@ -4512,7 +4543,7 @@ abstract class _Citation extends Citation {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement;
+  PrimitiveElement? get purposeElement;
   @override
 
   /// [copyright] Use and/or publishing restrictions for the citation record, not
@@ -4522,7 +4553,7 @@ abstract class _Citation extends Citation {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement;
+  PrimitiveElement? get copyrightElement;
   @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
@@ -4534,7 +4565,7 @@ abstract class _Citation extends Citation {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement;
+  PrimitiveElement? get copyrightLabelElement;
   @override
 
   /// [approvalDate] The date on which the resource content was approved by the
@@ -4545,7 +4576,7 @@ abstract class _Citation extends Citation {
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @JsonKey(name: '_approvalDate')
-  Element? get approvalDateElement;
+  PrimitiveElement? get approvalDateElement;
   @override
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
@@ -4556,7 +4587,7 @@ abstract class _Citation extends Citation {
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @JsonKey(name: '_lastReviewDate')
-  Element? get lastReviewDateElement;
+  PrimitiveElement? get lastReviewDateElement;
   @override
 
   /// [effectivePeriod] The period during which the citation record content was
@@ -4662,7 +4693,7 @@ mixin _$CitationSummary {
 
   /// [textElement] ("_text") Extensions for text
   @JsonKey(name: '_text')
-  Element? get textElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get textElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -4682,7 +4713,7 @@ abstract class $CitationSummaryCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       CodeableConcept? style,
       FhirMarkdown? text,
-      @JsonKey(name: '_text') Element? textElement});
+      @JsonKey(name: '_text') PrimitiveElement? textElement});
 
   $CodeableConceptCopyWith<$Res>? get style;
 }
@@ -4731,7 +4762,7 @@ class _$CitationSummaryCopyWithImpl<$Res, $Val extends CitationSummary>
       textElement: freezed == textElement
           ? _value.textElement
           : textElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -4762,7 +4793,7 @@ abstract class _$$CitationSummaryImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       CodeableConcept? style,
       FhirMarkdown? text,
-      @JsonKey(name: '_text') Element? textElement});
+      @JsonKey(name: '_text') PrimitiveElement? textElement});
 
   @override
   $CodeableConceptCopyWith<$Res>? get style;
@@ -4810,7 +4841,7 @@ class __$$CitationSummaryImplCopyWithImpl<$Res>
       textElement: freezed == textElement
           ? _value.textElement
           : textElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -4908,7 +4939,7 @@ class _$CitationSummaryImpl extends _CitationSummary {
   /// [textElement] ("_text") Extensions for text
   @override
   @JsonKey(name: '_text')
-  final Element? textElement;
+  final PrimitiveElement? textElement;
 
   @override
   String toString() {
@@ -4964,7 +4995,7 @@ abstract class _CitationSummary extends CitationSummary {
           final List<FhirExtension>? modifierExtension,
           final CodeableConcept? style,
           final FhirMarkdown? text,
-          @JsonKey(name: '_text') final Element? textElement}) =
+          @JsonKey(name: '_text') final PrimitiveElement? textElement}) =
       _$CitationSummaryImpl;
   const _CitationSummary._() : super._();
 
@@ -5013,7 +5044,7 @@ abstract class _CitationSummary extends CitationSummary {
 
   /// [textElement] ("_text") Extensions for text
   @JsonKey(name: '_text')
-  Element? get textElement;
+  PrimitiveElement? get textElement;
   @override
   @JsonKey(ignore: true)
   _$$CitationSummaryImplCopyWith<_$CitationSummaryImpl> get copyWith =>
@@ -5448,7 +5479,7 @@ mixin _$CitationStatusDate {
 
   /// [actualElement] ("_actual") Extensions for actual
   @JsonKey(name: '_actual')
-  Element? get actualElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get actualElement => throw _privateConstructorUsedError;
 
   /// [period] When the status started and/or ended.
   Period get period => throw _privateConstructorUsedError;
@@ -5471,7 +5502,7 @@ abstract class $CitationStatusDateCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       CodeableConcept activity,
       FhirBoolean? actual,
-      @JsonKey(name: '_actual') Element? actualElement,
+      @JsonKey(name: '_actual') PrimitiveElement? actualElement,
       Period period});
 
   $CodeableConceptCopyWith<$Res> get activity;
@@ -5523,7 +5554,7 @@ class _$CitationStatusDateCopyWithImpl<$Res, $Val extends CitationStatusDate>
       actualElement: freezed == actualElement
           ? _value.actualElement
           : actualElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       period: null == period
           ? _value.period
           : period // ignore: cast_nullable_to_non_nullable
@@ -5562,7 +5593,7 @@ abstract class _$$CitationStatusDateImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       CodeableConcept activity,
       FhirBoolean? actual,
-      @JsonKey(name: '_actual') Element? actualElement,
+      @JsonKey(name: '_actual') PrimitiveElement? actualElement,
       Period period});
 
   @override
@@ -5614,7 +5645,7 @@ class __$$CitationStatusDateImplCopyWithImpl<$Res>
       actualElement: freezed == actualElement
           ? _value.actualElement
           : actualElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       period: null == period
           ? _value.period
           : period // ignore: cast_nullable_to_non_nullable
@@ -5719,7 +5750,7 @@ class _$CitationStatusDateImpl extends _CitationStatusDate {
   /// [actualElement] ("_actual") Extensions for actual
   @override
   @JsonKey(name: '_actual')
-  final Element? actualElement;
+  final PrimitiveElement? actualElement;
 
   /// [period] When the status started and/or ended.
   @override
@@ -5782,7 +5813,7 @@ abstract class _CitationStatusDate extends CitationStatusDate {
       final List<FhirExtension>? modifierExtension,
       required final CodeableConcept activity,
       final FhirBoolean? actual,
-      @JsonKey(name: '_actual') final Element? actualElement,
+      @JsonKey(name: '_actual') final PrimitiveElement? actualElement,
       required final Period period}) = _$CitationStatusDateImpl;
   const _CitationStatusDate._() : super._();
 
@@ -5833,7 +5864,7 @@ abstract class _CitationStatusDate extends CitationStatusDate {
 
   /// [actualElement] ("_actual") Extensions for actual
   @JsonKey(name: '_actual')
-  Element? get actualElement;
+  PrimitiveElement? get actualElement;
   @override
 
   /// [period] When the status started and/or ended.
@@ -5893,7 +5924,8 @@ mixin _$CitationCitedArtifact {
 
   /// [dateAccessedElement] ("_dateAccessed") Extensions for dateAccessed
   @JsonKey(name: '_dateAccessed')
-  Element? get dateAccessedElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateAccessedElement =>
+      throw _privateConstructorUsedError;
 
   /// [version] The defined version of the cited artifact.
   CitationVersion? get version => throw _privateConstructorUsedError;
@@ -5963,7 +5995,7 @@ abstract class $CitationCitedArtifactCopyWith<$Res> {
       List<Identifier>? identifier,
       List<Identifier>? relatedIdentifier,
       FhirDateTime? dateAccessed,
-      @JsonKey(name: '_dateAccessed') Element? dateAccessedElement,
+      @JsonKey(name: '_dateAccessed') PrimitiveElement? dateAccessedElement,
       CitationVersion? version,
       List<CodeableConcept>? currentState,
       List<CitationStatusDate1>? statusDate,
@@ -6044,7 +6076,7 @@ class _$CitationCitedArtifactCopyWithImpl<$Res,
       dateAccessedElement: freezed == dateAccessedElement
           ? _value.dateAccessedElement
           : dateAccessedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       version: freezed == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
@@ -6150,7 +6182,7 @@ abstract class _$$CitationCitedArtifactImplCopyWith<$Res>
       List<Identifier>? identifier,
       List<Identifier>? relatedIdentifier,
       FhirDateTime? dateAccessed,
-      @JsonKey(name: '_dateAccessed') Element? dateAccessedElement,
+      @JsonKey(name: '_dateAccessed') PrimitiveElement? dateAccessedElement,
       CitationVersion? version,
       List<CodeableConcept>? currentState,
       List<CitationStatusDate1>? statusDate,
@@ -6232,7 +6264,7 @@ class __$$CitationCitedArtifactImplCopyWithImpl<$Res>
       dateAccessedElement: freezed == dateAccessedElement
           ? _value.dateAccessedElement
           : dateAccessedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       version: freezed == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
@@ -6431,7 +6463,7 @@ class _$CitationCitedArtifactImpl extends _CitationCitedArtifact {
   /// [dateAccessedElement] ("_dateAccessed") Extensions for dateAccessed
   @override
   @JsonKey(name: '_dateAccessed')
-  final Element? dateAccessedElement;
+  final PrimitiveElement? dateAccessedElement;
 
   /// [version] The defined version of the cited artifact.
   @override
@@ -6667,7 +6699,8 @@ abstract class _CitationCitedArtifact extends CitationCitedArtifact {
       final List<Identifier>? identifier,
       final List<Identifier>? relatedIdentifier,
       final FhirDateTime? dateAccessed,
-      @JsonKey(name: '_dateAccessed') final Element? dateAccessedElement,
+      @JsonKey(name: '_dateAccessed')
+      final PrimitiveElement? dateAccessedElement,
       final CitationVersion? version,
       final List<CodeableConcept>? currentState,
       final List<CitationStatusDate1>? statusDate,
@@ -6734,7 +6767,7 @@ abstract class _CitationCitedArtifact extends CitationCitedArtifact {
 
   /// [dateAccessedElement] ("_dateAccessed") Extensions for dateAccessed
   @JsonKey(name: '_dateAccessed')
-  Element? get dateAccessedElement;
+  PrimitiveElement? get dateAccessedElement;
   @override
 
   /// [version] The defined version of the cited artifact.
@@ -6836,7 +6869,7 @@ mixin _$CitationVersion {
 
   /// [valueElement] ("_value") Extensions for value
   @JsonKey(name: '_value')
-  Element? get valueElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueElement => throw _privateConstructorUsedError;
 
   /// [baseCitation] Citation for the main version of the cited artifact.
   Reference? get baseCitation => throw _privateConstructorUsedError;
@@ -6858,7 +6891,7 @@ abstract class $CitationVersionCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? value,
-      @JsonKey(name: '_value') Element? valueElement,
+      @JsonKey(name: '_value') PrimitiveElement? valueElement,
       Reference? baseCitation});
 
   $ReferenceCopyWith<$Res>? get baseCitation;
@@ -6904,7 +6937,7 @@ class _$CitationVersionCopyWithImpl<$Res, $Val extends CitationVersion>
       valueElement: freezed == valueElement
           ? _value.valueElement
           : valueElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       baseCitation: freezed == baseCitation
           ? _value.baseCitation
           : baseCitation // ignore: cast_nullable_to_non_nullable
@@ -6938,7 +6971,7 @@ abstract class _$$CitationVersionImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? value,
-      @JsonKey(name: '_value') Element? valueElement,
+      @JsonKey(name: '_value') PrimitiveElement? valueElement,
       Reference? baseCitation});
 
   @override
@@ -6983,7 +7016,7 @@ class __$$CitationVersionImplCopyWithImpl<$Res>
       valueElement: freezed == valueElement
           ? _value.valueElement
           : valueElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       baseCitation: freezed == baseCitation
           ? _value.baseCitation
           : baseCitation // ignore: cast_nullable_to_non_nullable
@@ -7081,7 +7114,7 @@ class _$CitationVersionImpl extends _CitationVersion {
   /// [valueElement] ("_value") Extensions for value
   @override
   @JsonKey(name: '_value')
-  final Element? valueElement;
+  final PrimitiveElement? valueElement;
 
   /// [baseCitation] Citation for the main version of the cited artifact.
   @override
@@ -7141,7 +7174,7 @@ abstract class _CitationVersion extends CitationVersion {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final String? value,
-      @JsonKey(name: '_value') final Element? valueElement,
+      @JsonKey(name: '_value') final PrimitiveElement? valueElement,
       final Reference? baseCitation}) = _$CitationVersionImpl;
   const _CitationVersion._() : super._();
 
@@ -7186,7 +7219,7 @@ abstract class _CitationVersion extends CitationVersion {
 
   /// [valueElement] ("_value") Extensions for value
   @JsonKey(name: '_value')
-  Element? get valueElement;
+  PrimitiveElement? get valueElement;
   @override
 
   /// [baseCitation] Citation for the main version of the cited artifact.
@@ -7239,7 +7272,7 @@ mixin _$CitationStatusDate1 {
 
   /// [actualElement] ("_actual") Extensions for actual
   @JsonKey(name: '_actual')
-  Element? get actualElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get actualElement => throw _privateConstructorUsedError;
 
   /// [period] When the status started and/or ended.
   Period get period => throw _privateConstructorUsedError;
@@ -7262,7 +7295,7 @@ abstract class $CitationStatusDate1CopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       CodeableConcept activity,
       FhirBoolean? actual,
-      @JsonKey(name: '_actual') Element? actualElement,
+      @JsonKey(name: '_actual') PrimitiveElement? actualElement,
       Period period});
 
   $CodeableConceptCopyWith<$Res> get activity;
@@ -7314,7 +7347,7 @@ class _$CitationStatusDate1CopyWithImpl<$Res, $Val extends CitationStatusDate1>
       actualElement: freezed == actualElement
           ? _value.actualElement
           : actualElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       period: null == period
           ? _value.period
           : period // ignore: cast_nullable_to_non_nullable
@@ -7353,7 +7386,7 @@ abstract class _$$CitationStatusDate1ImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       CodeableConcept activity,
       FhirBoolean? actual,
-      @JsonKey(name: '_actual') Element? actualElement,
+      @JsonKey(name: '_actual') PrimitiveElement? actualElement,
       Period period});
 
   @override
@@ -7405,7 +7438,7 @@ class __$$CitationStatusDate1ImplCopyWithImpl<$Res>
       actualElement: freezed == actualElement
           ? _value.actualElement
           : actualElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       period: null == period
           ? _value.period
           : period // ignore: cast_nullable_to_non_nullable
@@ -7508,7 +7541,7 @@ class _$CitationStatusDate1Impl extends _CitationStatusDate1 {
   /// [actualElement] ("_actual") Extensions for actual
   @override
   @JsonKey(name: '_actual')
-  final Element? actualElement;
+  final PrimitiveElement? actualElement;
 
   /// [period] When the status started and/or ended.
   @override
@@ -7571,7 +7604,7 @@ abstract class _CitationStatusDate1 extends CitationStatusDate1 {
       final List<FhirExtension>? modifierExtension,
       required final CodeableConcept activity,
       final FhirBoolean? actual,
-      @JsonKey(name: '_actual') final Element? actualElement,
+      @JsonKey(name: '_actual') final PrimitiveElement? actualElement,
       required final Period period}) = _$CitationStatusDate1Impl;
   const _CitationStatusDate1._() : super._();
 
@@ -7620,7 +7653,7 @@ abstract class _CitationStatusDate1 extends CitationStatusDate1 {
 
   /// [actualElement] ("_actual") Extensions for actual
   @JsonKey(name: '_actual')
-  Element? get actualElement;
+  PrimitiveElement? get actualElement;
   @override
 
   /// [period] When the status started and/or ended.
@@ -7676,7 +7709,7 @@ mixin _$CitationTitle {
 
   /// [textElement] ("_text") Extensions for text
   @JsonKey(name: '_text')
-  Element? get textElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get textElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -7697,7 +7730,7 @@ abstract class $CitationTitleCopyWith<$Res> {
       List<CodeableConcept>? type,
       CodeableConcept? language,
       FhirMarkdown? text,
-      @JsonKey(name: '_text') Element? textElement});
+      @JsonKey(name: '_text') PrimitiveElement? textElement});
 
   $CodeableConceptCopyWith<$Res>? get language;
 }
@@ -7751,7 +7784,7 @@ class _$CitationTitleCopyWithImpl<$Res, $Val extends CitationTitle>
       textElement: freezed == textElement
           ? _value.textElement
           : textElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -7783,7 +7816,7 @@ abstract class _$$CitationTitleImplCopyWith<$Res>
       List<CodeableConcept>? type,
       CodeableConcept? language,
       FhirMarkdown? text,
-      @JsonKey(name: '_text') Element? textElement});
+      @JsonKey(name: '_text') PrimitiveElement? textElement});
 
   @override
   $CodeableConceptCopyWith<$Res>? get language;
@@ -7836,7 +7869,7 @@ class __$$CitationTitleImplCopyWithImpl<$Res>
       textElement: freezed == textElement
           ? _value.textElement
           : textElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -7949,7 +7982,7 @@ class _$CitationTitleImpl extends _CitationTitle {
   /// [textElement] ("_text") Extensions for text
   @override
   @JsonKey(name: '_text')
-  final Element? textElement;
+  final PrimitiveElement? textElement;
 
   @override
   String toString() {
@@ -8008,7 +8041,7 @@ abstract class _CitationTitle extends CitationTitle {
           final List<CodeableConcept>? type,
           final CodeableConcept? language,
           final FhirMarkdown? text,
-          @JsonKey(name: '_text') final Element? textElement}) =
+          @JsonKey(name: '_text') final PrimitiveElement? textElement}) =
       _$CitationTitleImpl;
   const _CitationTitle._() : super._();
 
@@ -8061,7 +8094,7 @@ abstract class _CitationTitle extends CitationTitle {
 
   /// [textElement] ("_text") Extensions for text
   @JsonKey(name: '_text')
-  Element? get textElement;
+  PrimitiveElement? get textElement;
   @override
   @JsonKey(ignore: true)
   _$$CitationTitleImplCopyWith<_$CitationTitleImpl> get copyWith =>
@@ -8113,14 +8146,14 @@ mixin _$CitationAbstract {
 
   /// [textElement] ("_text") Extensions for text
   @JsonKey(name: '_text')
-  Element? get textElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get textElement => throw _privateConstructorUsedError;
 
   /// [copyright] Copyright notice for the abstract.
   FhirMarkdown? get copyright => throw _privateConstructorUsedError;
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -8141,9 +8174,9 @@ abstract class $CitationAbstractCopyWith<$Res> {
       CodeableConcept? type,
       CodeableConcept? language,
       FhirMarkdown? text,
-      @JsonKey(name: '_text') Element? textElement,
+      @JsonKey(name: '_text') PrimitiveElement? textElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement});
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement});
 
   $CodeableConceptCopyWith<$Res>? get type;
   $CodeableConceptCopyWith<$Res>? get language;
@@ -8200,7 +8233,7 @@ class _$CitationAbstractCopyWithImpl<$Res, $Val extends CitationAbstract>
       textElement: freezed == textElement
           ? _value.textElement
           : textElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -8208,7 +8241,7 @@ class _$CitationAbstractCopyWithImpl<$Res, $Val extends CitationAbstract>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -8252,9 +8285,9 @@ abstract class _$$CitationAbstractImplCopyWith<$Res>
       CodeableConcept? type,
       CodeableConcept? language,
       FhirMarkdown? text,
-      @JsonKey(name: '_text') Element? textElement,
+      @JsonKey(name: '_text') PrimitiveElement? textElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement});
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement});
 
   @override
   $CodeableConceptCopyWith<$Res>? get type;
@@ -8311,7 +8344,7 @@ class __$$CitationAbstractImplCopyWithImpl<$Res>
       textElement: freezed == textElement
           ? _value.textElement
           : textElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -8319,7 +8352,7 @@ class __$$CitationAbstractImplCopyWithImpl<$Res>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -8424,7 +8457,7 @@ class _$CitationAbstractImpl extends _CitationAbstract {
   /// [textElement] ("_text") Extensions for text
   @override
   @JsonKey(name: '_text')
-  final Element? textElement;
+  final PrimitiveElement? textElement;
 
   /// [copyright] Copyright notice for the abstract.
   @override
@@ -8433,7 +8466,7 @@ class _$CitationAbstractImpl extends _CitationAbstract {
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @override
   @JsonKey(name: '_copyright')
-  final Element? copyrightElement;
+  final PrimitiveElement? copyrightElement;
 
   @override
   String toString() {
@@ -8493,16 +8526,16 @@ class _$CitationAbstractImpl extends _CitationAbstract {
 
 abstract class _CitationAbstract extends CitationAbstract {
   const factory _CitationAbstract(
-          {final String? id,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final CodeableConcept? type,
-          final CodeableConcept? language,
-          final FhirMarkdown? text,
-          @JsonKey(name: '_text') final Element? textElement,
-          final FhirMarkdown? copyright,
-          @JsonKey(name: '_copyright') final Element? copyrightElement}) =
-      _$CitationAbstractImpl;
+      {final String? id,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final CodeableConcept? type,
+      final CodeableConcept? language,
+      final FhirMarkdown? text,
+      @JsonKey(name: '_text') final PrimitiveElement? textElement,
+      final FhirMarkdown? copyright,
+      @JsonKey(name: '_copyright')
+      final PrimitiveElement? copyrightElement}) = _$CitationAbstractImpl;
   const _CitationAbstract._() : super._();
 
   factory _CitationAbstract.fromJson(Map<String, dynamic> json) =
@@ -8554,7 +8587,7 @@ abstract class _CitationAbstract extends CitationAbstract {
 
   /// [textElement] ("_text") Extensions for text
   @JsonKey(name: '_text')
-  Element? get textElement;
+  PrimitiveElement? get textElement;
   @override
 
   /// [copyright] Copyright notice for the abstract.
@@ -8563,7 +8596,7 @@ abstract class _CitationAbstract extends CitationAbstract {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement;
+  PrimitiveElement? get copyrightElement;
   @override
   @JsonKey(ignore: true)
   _$$CitationAbstractImplCopyWith<_$CitationAbstractImpl> get copyWith =>
@@ -8612,7 +8645,7 @@ mixin _$CitationPart {
 
   /// [valueElement] ("_value") Extensions for value
   @JsonKey(name: '_value')
-  Element? get valueElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueElement => throw _privateConstructorUsedError;
 
   /// [baseCitation] The citation for the full article or artifact.
   Reference? get baseCitation => throw _privateConstructorUsedError;
@@ -8635,7 +8668,7 @@ abstract class $CitationPartCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       CodeableConcept? type,
       String? value,
-      @JsonKey(name: '_value') Element? valueElement,
+      @JsonKey(name: '_value') PrimitiveElement? valueElement,
       Reference? baseCitation});
 
   $CodeableConceptCopyWith<$Res>? get type;
@@ -8687,7 +8720,7 @@ class _$CitationPartCopyWithImpl<$Res, $Val extends CitationPart>
       valueElement: freezed == valueElement
           ? _value.valueElement
           : valueElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       baseCitation: freezed == baseCitation
           ? _value.baseCitation
           : baseCitation // ignore: cast_nullable_to_non_nullable
@@ -8734,7 +8767,7 @@ abstract class _$$CitationPartImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       CodeableConcept? type,
       String? value,
-      @JsonKey(name: '_value') Element? valueElement,
+      @JsonKey(name: '_value') PrimitiveElement? valueElement,
       Reference? baseCitation});
 
   @override
@@ -8786,7 +8819,7 @@ class __$$CitationPartImplCopyWithImpl<$Res>
       valueElement: freezed == valueElement
           ? _value.valueElement
           : valueElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       baseCitation: freezed == baseCitation
           ? _value.baseCitation
           : baseCitation // ignore: cast_nullable_to_non_nullable
@@ -8889,7 +8922,7 @@ class _$CitationPartImpl extends _CitationPart {
   /// [valueElement] ("_value") Extensions for value
   @override
   @JsonKey(name: '_value')
-  final Element? valueElement;
+  final PrimitiveElement? valueElement;
 
   /// [baseCitation] The citation for the full article or artifact.
   @override
@@ -8951,7 +8984,7 @@ abstract class _CitationPart extends CitationPart {
       final List<FhirExtension>? modifierExtension,
       final CodeableConcept? type,
       final String? value,
-      @JsonKey(name: '_value') final Element? valueElement,
+      @JsonKey(name: '_value') final PrimitiveElement? valueElement,
       final Reference? baseCitation}) = _$CitationPartImpl;
   const _CitationPart._() : super._();
 
@@ -9000,7 +9033,7 @@ abstract class _CitationPart extends CitationPart {
 
   /// [valueElement] ("_value") Extensions for value
   @JsonKey(name: '_value')
-  Element? get valueElement;
+  PrimitiveElement? get valueElement;
   @override
 
   /// [baseCitation] The citation for the full article or artifact.
@@ -9050,7 +9083,7 @@ mixin _$CitationRelatesTo {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get typeElement => throw _privateConstructorUsedError;
 
   /// [classifier] Provides additional classifiers of the related artifact.
   List<CodeableConcept>? get classifier => throw _privateConstructorUsedError;
@@ -9061,7 +9094,7 @@ mixin _$CitationRelatesTo {
 
   /// [labelElement] ("_label") Extensions for label
   @JsonKey(name: '_label')
-  Element? get labelElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get labelElement => throw _privateConstructorUsedError;
 
   /// [display] A brief description of the document or knowledge resource being
   ///  referenced, suitable for display to a consumer.
@@ -9069,7 +9102,7 @@ mixin _$CitationRelatesTo {
 
   /// [displayElement] ("_display") Extensions for display
   @JsonKey(name: '_display')
-  Element? get displayElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get displayElement => throw _privateConstructorUsedError;
 
   /// [citation] A bibliographic citation for the related artifact. This text
   ///  SHOULD be formatted according to an accepted citation format.
@@ -9077,7 +9110,7 @@ mixin _$CitationRelatesTo {
 
   /// [citationElement] ("_citation") Extensions for citation
   @JsonKey(name: '_citation')
-  Element? get citationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get citationElement => throw _privateConstructorUsedError;
 
   /// [document] The document being referenced, represented as an attachment. Do
   ///  not use this element if using the resource element to provide the
@@ -9090,7 +9123,7 @@ mixin _$CitationRelatesTo {
 
   /// [resourceElement] ("_resource") Extensions for resource
   @JsonKey(name: '_resource')
-  Element? get resourceElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get resourceElement => throw _privateConstructorUsedError;
 
   /// [resourceReference] The related artifact, if the artifact is not a
   ///  canonical resource, or a resource reference to a canonical resource.
@@ -9113,17 +9146,17 @@ abstract class $CitationRelatesToCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       List<CodeableConcept>? classifier,
       String? label,
-      @JsonKey(name: '_label') Element? labelElement,
+      @JsonKey(name: '_label') PrimitiveElement? labelElement,
       String? display,
-      @JsonKey(name: '_display') Element? displayElement,
+      @JsonKey(name: '_display') PrimitiveElement? displayElement,
       FhirMarkdown? citation,
-      @JsonKey(name: '_citation') Element? citationElement,
+      @JsonKey(name: '_citation') PrimitiveElement? citationElement,
       Attachment? document,
       FhirCanonical? resource,
-      @JsonKey(name: '_resource') Element? resourceElement,
+      @JsonKey(name: '_resource') PrimitiveElement? resourceElement,
       Reference? resourceReference});
 
   $AttachmentCopyWith<$Res>? get document;
@@ -9180,7 +9213,7 @@ class _$CitationRelatesToCopyWithImpl<$Res, $Val extends CitationRelatesTo>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       classifier: freezed == classifier
           ? _value.classifier
           : classifier // ignore: cast_nullable_to_non_nullable
@@ -9192,7 +9225,7 @@ class _$CitationRelatesToCopyWithImpl<$Res, $Val extends CitationRelatesTo>
       labelElement: freezed == labelElement
           ? _value.labelElement
           : labelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       display: freezed == display
           ? _value.display
           : display // ignore: cast_nullable_to_non_nullable
@@ -9200,7 +9233,7 @@ class _$CitationRelatesToCopyWithImpl<$Res, $Val extends CitationRelatesTo>
       displayElement: freezed == displayElement
           ? _value.displayElement
           : displayElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       citation: freezed == citation
           ? _value.citation
           : citation // ignore: cast_nullable_to_non_nullable
@@ -9208,7 +9241,7 @@ class _$CitationRelatesToCopyWithImpl<$Res, $Val extends CitationRelatesTo>
       citationElement: freezed == citationElement
           ? _value.citationElement
           : citationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       document: freezed == document
           ? _value.document
           : document // ignore: cast_nullable_to_non_nullable
@@ -9220,7 +9253,7 @@ class _$CitationRelatesToCopyWithImpl<$Res, $Val extends CitationRelatesTo>
       resourceElement: freezed == resourceElement
           ? _value.resourceElement
           : resourceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       resourceReference: freezed == resourceReference
           ? _value.resourceReference
           : resourceReference // ignore: cast_nullable_to_non_nullable
@@ -9266,17 +9299,17 @@ abstract class _$$CitationRelatesToImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       List<CodeableConcept>? classifier,
       String? label,
-      @JsonKey(name: '_label') Element? labelElement,
+      @JsonKey(name: '_label') PrimitiveElement? labelElement,
       String? display,
-      @JsonKey(name: '_display') Element? displayElement,
+      @JsonKey(name: '_display') PrimitiveElement? displayElement,
       FhirMarkdown? citation,
-      @JsonKey(name: '_citation') Element? citationElement,
+      @JsonKey(name: '_citation') PrimitiveElement? citationElement,
       Attachment? document,
       FhirCanonical? resource,
-      @JsonKey(name: '_resource') Element? resourceElement,
+      @JsonKey(name: '_resource') PrimitiveElement? resourceElement,
       Reference? resourceReference});
 
   @override
@@ -9333,7 +9366,7 @@ class __$$CitationRelatesToImplCopyWithImpl<$Res>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       classifier: freezed == classifier
           ? _value._classifier
           : classifier // ignore: cast_nullable_to_non_nullable
@@ -9345,7 +9378,7 @@ class __$$CitationRelatesToImplCopyWithImpl<$Res>
       labelElement: freezed == labelElement
           ? _value.labelElement
           : labelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       display: freezed == display
           ? _value.display
           : display // ignore: cast_nullable_to_non_nullable
@@ -9353,7 +9386,7 @@ class __$$CitationRelatesToImplCopyWithImpl<$Res>
       displayElement: freezed == displayElement
           ? _value.displayElement
           : displayElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       citation: freezed == citation
           ? _value.citation
           : citation // ignore: cast_nullable_to_non_nullable
@@ -9361,7 +9394,7 @@ class __$$CitationRelatesToImplCopyWithImpl<$Res>
       citationElement: freezed == citationElement
           ? _value.citationElement
           : citationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       document: freezed == document
           ? _value.document
           : document // ignore: cast_nullable_to_non_nullable
@@ -9373,7 +9406,7 @@ class __$$CitationRelatesToImplCopyWithImpl<$Res>
       resourceElement: freezed == resourceElement
           ? _value.resourceElement
           : resourceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       resourceReference: freezed == resourceReference
           ? _value.resourceReference
           : resourceReference // ignore: cast_nullable_to_non_nullable
@@ -9482,7 +9515,7 @@ class _$CitationRelatesToImpl extends _CitationRelatesTo {
   /// [typeElement] ("_type") Extensions for type
   @override
   @JsonKey(name: '_type')
-  final Element? typeElement;
+  final PrimitiveElement? typeElement;
 
   /// [classifier] Provides additional classifiers of the related artifact.
   final List<CodeableConcept>? _classifier;
@@ -9505,7 +9538,7 @@ class _$CitationRelatesToImpl extends _CitationRelatesTo {
   /// [labelElement] ("_label") Extensions for label
   @override
   @JsonKey(name: '_label')
-  final Element? labelElement;
+  final PrimitiveElement? labelElement;
 
   /// [display] A brief description of the document or knowledge resource being
   ///  referenced, suitable for display to a consumer.
@@ -9515,7 +9548,7 @@ class _$CitationRelatesToImpl extends _CitationRelatesTo {
   /// [displayElement] ("_display") Extensions for display
   @override
   @JsonKey(name: '_display')
-  final Element? displayElement;
+  final PrimitiveElement? displayElement;
 
   /// [citation] A bibliographic citation for the related artifact. This text
   ///  SHOULD be formatted according to an accepted citation format.
@@ -9525,7 +9558,7 @@ class _$CitationRelatesToImpl extends _CitationRelatesTo {
   /// [citationElement] ("_citation") Extensions for citation
   @override
   @JsonKey(name: '_citation')
-  final Element? citationElement;
+  final PrimitiveElement? citationElement;
 
   /// [document] The document being referenced, represented as an attachment. Do
   ///  not use this element if using the resource element to provide the
@@ -9541,7 +9574,7 @@ class _$CitationRelatesToImpl extends _CitationRelatesTo {
   /// [resourceElement] ("_resource") Extensions for resource
   @override
   @JsonKey(name: '_resource')
-  final Element? resourceElement;
+  final PrimitiveElement? resourceElement;
 
   /// [resourceReference] The related artifact, if the artifact is not a
   ///  canonical resource, or a resource reference to a canonical resource.
@@ -9630,17 +9663,17 @@ abstract class _CitationRelatesTo extends CitationRelatesTo {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirCode? type,
-      @JsonKey(name: '_type') final Element? typeElement,
+      @JsonKey(name: '_type') final PrimitiveElement? typeElement,
       final List<CodeableConcept>? classifier,
       final String? label,
-      @JsonKey(name: '_label') final Element? labelElement,
+      @JsonKey(name: '_label') final PrimitiveElement? labelElement,
       final String? display,
-      @JsonKey(name: '_display') final Element? displayElement,
+      @JsonKey(name: '_display') final PrimitiveElement? displayElement,
       final FhirMarkdown? citation,
-      @JsonKey(name: '_citation') final Element? citationElement,
+      @JsonKey(name: '_citation') final PrimitiveElement? citationElement,
       final Attachment? document,
       final FhirCanonical? resource,
-      @JsonKey(name: '_resource') final Element? resourceElement,
+      @JsonKey(name: '_resource') final PrimitiveElement? resourceElement,
       final Reference? resourceReference}) = _$CitationRelatesToImpl;
   const _CitationRelatesTo._() : super._();
 
@@ -9685,7 +9718,7 @@ abstract class _CitationRelatesTo extends CitationRelatesTo {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement;
+  PrimitiveElement? get typeElement;
   @override
 
   /// [classifier] Provides additional classifiers of the related artifact.
@@ -9699,7 +9732,7 @@ abstract class _CitationRelatesTo extends CitationRelatesTo {
 
   /// [labelElement] ("_label") Extensions for label
   @JsonKey(name: '_label')
-  Element? get labelElement;
+  PrimitiveElement? get labelElement;
   @override
 
   /// [display] A brief description of the document or knowledge resource being
@@ -9709,7 +9742,7 @@ abstract class _CitationRelatesTo extends CitationRelatesTo {
 
   /// [displayElement] ("_display") Extensions for display
   @JsonKey(name: '_display')
-  Element? get displayElement;
+  PrimitiveElement? get displayElement;
   @override
 
   /// [citation] A bibliographic citation for the related artifact. This text
@@ -9719,7 +9752,7 @@ abstract class _CitationRelatesTo extends CitationRelatesTo {
 
   /// [citationElement] ("_citation") Extensions for citation
   @JsonKey(name: '_citation')
-  Element? get citationElement;
+  PrimitiveElement? get citationElement;
   @override
 
   /// [document] The document being referenced, represented as an attachment. Do
@@ -9735,7 +9768,7 @@ abstract class _CitationRelatesTo extends CitationRelatesTo {
 
   /// [resourceElement] ("_resource") Extensions for resource
   @JsonKey(name: '_resource')
-  Element? get resourceElement;
+  PrimitiveElement? get resourceElement;
   @override
 
   /// [resourceReference] The related artifact, if the artifact is not a
@@ -9803,7 +9836,7 @@ mixin _$CitationPublicationForm {
 
   /// [volumeElement] ("_volume") Extensions for volume
   @JsonKey(name: '_volume')
-  Element? get volumeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get volumeElement => throw _privateConstructorUsedError;
 
   /// [issue] Issue, part or supplement of journal or other collection in which
   ///  the article is published.
@@ -9811,7 +9844,7 @@ mixin _$CitationPublicationForm {
 
   /// [issueElement] ("_issue") Extensions for issue
   @JsonKey(name: '_issue')
-  Element? get issueElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get issueElement => throw _privateConstructorUsedError;
 
   /// [articleDate] The date the article was added to the database, or the date
   ///  the article was released.
@@ -9819,7 +9852,8 @@ mixin _$CitationPublicationForm {
 
   /// [articleDateElement] ("_articleDate") Extensions for articleDate
   @JsonKey(name: '_articleDate')
-  Element? get articleDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get articleDateElement =>
+      throw _privateConstructorUsedError;
 
   /// [publicationDateText] Text representation of the date on which the issue of
   ///  the cited artifact was published.
@@ -9828,7 +9862,8 @@ mixin _$CitationPublicationForm {
   /// [publicationDateTextElement] ("_publicationDateText") Extensions for
   ///  publicationDateText
   @JsonKey(name: '_publicationDateText')
-  Element? get publicationDateTextElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get publicationDateTextElement =>
+      throw _privateConstructorUsedError;
 
   /// [publicationDateSeason] Spring, Summer, Fall/Autumn, Winter.
   String? get publicationDateSeason => throw _privateConstructorUsedError;
@@ -9836,7 +9871,7 @@ mixin _$CitationPublicationForm {
   /// [publicationDateSeasonElement] ("_publicationDateSeason") Extensions for
   ///  publicationDateSeason
   @JsonKey(name: '_publicationDateSeason')
-  Element? get publicationDateSeasonElement =>
+  PrimitiveElement? get publicationDateSeasonElement =>
       throw _privateConstructorUsedError;
 
   /// [lastRevisionDate] The date the article was last revised or updated in the
@@ -9846,7 +9881,8 @@ mixin _$CitationPublicationForm {
   /// [lastRevisionDateElement] ("_lastRevisionDate") Extensions for
   ///  lastRevisionDate
   @JsonKey(name: '_lastRevisionDate')
-  Element? get lastRevisionDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get lastRevisionDateElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The language or languages in which this form of the article is
   ///  published.
@@ -9857,28 +9893,29 @@ mixin _$CitationPublicationForm {
 
   /// [accessionNumberElement] ("_accessionNumber") Extensions for accessionNumber
   @JsonKey(name: '_accessionNumber')
-  Element? get accessionNumberElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get accessionNumberElement =>
+      throw _privateConstructorUsedError;
 
   /// [pageString] Used for full display of pagination.
   String? get pageString => throw _privateConstructorUsedError;
 
   /// [pageStringElement] ("_pageString") Extensions for pageString
   @JsonKey(name: '_pageString')
-  Element? get pageStringElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get pageStringElement => throw _privateConstructorUsedError;
 
   /// [firstPage] Used for isolated representation of first page.
   String? get firstPage => throw _privateConstructorUsedError;
 
   /// [firstPageElement] ("_firstPage") Extensions for firstPage
   @JsonKey(name: '_firstPage')
-  Element? get firstPageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get firstPageElement => throw _privateConstructorUsedError;
 
   /// [lastPage] Used for isolated representation of last page.
   String? get lastPage => throw _privateConstructorUsedError;
 
   /// [lastPageElement] ("_lastPage") Extensions for lastPage
   @JsonKey(name: '_lastPage')
-  Element? get lastPageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get lastPageElement => throw _privateConstructorUsedError;
 
   /// [pageCount] Actual or approximate number of pages or screens. Distinct from
   ///  reporting the page numbers.
@@ -9886,14 +9923,14 @@ mixin _$CitationPublicationForm {
 
   /// [pageCountElement] ("_pageCount") Extensions for pageCount
   @JsonKey(name: '_pageCount')
-  Element? get pageCountElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get pageCountElement => throw _privateConstructorUsedError;
 
   /// [copyright] Copyright notice for the full article or artifact.
   FhirMarkdown? get copyright => throw _privateConstructorUsedError;
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -9914,32 +9951,34 @@ abstract class $CitationPublicationFormCopyWith<$Res> {
       CitationPublishedIn? publishedIn,
       CodeableConcept? citedMedium,
       String? volume,
-      @JsonKey(name: '_volume') Element? volumeElement,
+      @JsonKey(name: '_volume') PrimitiveElement? volumeElement,
       String? issue,
-      @JsonKey(name: '_issue') Element? issueElement,
+      @JsonKey(name: '_issue') PrimitiveElement? issueElement,
       FhirDateTime? articleDate,
-      @JsonKey(name: '_articleDate') Element? articleDateElement,
+      @JsonKey(name: '_articleDate') PrimitiveElement? articleDateElement,
       String? publicationDateText,
       @JsonKey(name: '_publicationDateText')
-      Element? publicationDateTextElement,
+      PrimitiveElement? publicationDateTextElement,
       String? publicationDateSeason,
       @JsonKey(name: '_publicationDateSeason')
-      Element? publicationDateSeasonElement,
+      PrimitiveElement? publicationDateSeasonElement,
       FhirDateTime? lastRevisionDate,
-      @JsonKey(name: '_lastRevisionDate') Element? lastRevisionDateElement,
+      @JsonKey(name: '_lastRevisionDate')
+      PrimitiveElement? lastRevisionDateElement,
       List<CodeableConcept>? language,
       String? accessionNumber,
-      @JsonKey(name: '_accessionNumber') Element? accessionNumberElement,
+      @JsonKey(name: '_accessionNumber')
+      PrimitiveElement? accessionNumberElement,
       String? pageString,
-      @JsonKey(name: '_pageString') Element? pageStringElement,
+      @JsonKey(name: '_pageString') PrimitiveElement? pageStringElement,
       String? firstPage,
-      @JsonKey(name: '_firstPage') Element? firstPageElement,
+      @JsonKey(name: '_firstPage') PrimitiveElement? firstPageElement,
       String? lastPage,
-      @JsonKey(name: '_lastPage') Element? lastPageElement,
+      @JsonKey(name: '_lastPage') PrimitiveElement? lastPageElement,
       String? pageCount,
-      @JsonKey(name: '_pageCount') Element? pageCountElement,
+      @JsonKey(name: '_pageCount') PrimitiveElement? pageCountElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement});
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement});
 
   $CitationPublishedInCopyWith<$Res>? get publishedIn;
   $CodeableConceptCopyWith<$Res>? get citedMedium;
@@ -10018,7 +10057,7 @@ class _$CitationPublicationFormCopyWithImpl<$Res,
       volumeElement: freezed == volumeElement
           ? _value.volumeElement
           : volumeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       issue: freezed == issue
           ? _value.issue
           : issue // ignore: cast_nullable_to_non_nullable
@@ -10026,7 +10065,7 @@ class _$CitationPublicationFormCopyWithImpl<$Res,
       issueElement: freezed == issueElement
           ? _value.issueElement
           : issueElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       articleDate: freezed == articleDate
           ? _value.articleDate
           : articleDate // ignore: cast_nullable_to_non_nullable
@@ -10034,7 +10073,7 @@ class _$CitationPublicationFormCopyWithImpl<$Res,
       articleDateElement: freezed == articleDateElement
           ? _value.articleDateElement
           : articleDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publicationDateText: freezed == publicationDateText
           ? _value.publicationDateText
           : publicationDateText // ignore: cast_nullable_to_non_nullable
@@ -10042,7 +10081,7 @@ class _$CitationPublicationFormCopyWithImpl<$Res,
       publicationDateTextElement: freezed == publicationDateTextElement
           ? _value.publicationDateTextElement
           : publicationDateTextElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publicationDateSeason: freezed == publicationDateSeason
           ? _value.publicationDateSeason
           : publicationDateSeason // ignore: cast_nullable_to_non_nullable
@@ -10050,7 +10089,7 @@ class _$CitationPublicationFormCopyWithImpl<$Res,
       publicationDateSeasonElement: freezed == publicationDateSeasonElement
           ? _value.publicationDateSeasonElement
           : publicationDateSeasonElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       lastRevisionDate: freezed == lastRevisionDate
           ? _value.lastRevisionDate
           : lastRevisionDate // ignore: cast_nullable_to_non_nullable
@@ -10058,7 +10097,7 @@ class _$CitationPublicationFormCopyWithImpl<$Res,
       lastRevisionDateElement: freezed == lastRevisionDateElement
           ? _value.lastRevisionDateElement
           : lastRevisionDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -10070,7 +10109,7 @@ class _$CitationPublicationFormCopyWithImpl<$Res,
       accessionNumberElement: freezed == accessionNumberElement
           ? _value.accessionNumberElement
           : accessionNumberElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       pageString: freezed == pageString
           ? _value.pageString
           : pageString // ignore: cast_nullable_to_non_nullable
@@ -10078,7 +10117,7 @@ class _$CitationPublicationFormCopyWithImpl<$Res,
       pageStringElement: freezed == pageStringElement
           ? _value.pageStringElement
           : pageStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       firstPage: freezed == firstPage
           ? _value.firstPage
           : firstPage // ignore: cast_nullable_to_non_nullable
@@ -10086,7 +10125,7 @@ class _$CitationPublicationFormCopyWithImpl<$Res,
       firstPageElement: freezed == firstPageElement
           ? _value.firstPageElement
           : firstPageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       lastPage: freezed == lastPage
           ? _value.lastPage
           : lastPage // ignore: cast_nullable_to_non_nullable
@@ -10094,7 +10133,7 @@ class _$CitationPublicationFormCopyWithImpl<$Res,
       lastPageElement: freezed == lastPageElement
           ? _value.lastPageElement
           : lastPageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       pageCount: freezed == pageCount
           ? _value.pageCount
           : pageCount // ignore: cast_nullable_to_non_nullable
@@ -10102,7 +10141,7 @@ class _$CitationPublicationFormCopyWithImpl<$Res,
       pageCountElement: freezed == pageCountElement
           ? _value.pageCountElement
           : pageCountElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -10110,7 +10149,7 @@ class _$CitationPublicationFormCopyWithImpl<$Res,
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -10155,32 +10194,34 @@ abstract class _$$CitationPublicationFormImplCopyWith<$Res>
       CitationPublishedIn? publishedIn,
       CodeableConcept? citedMedium,
       String? volume,
-      @JsonKey(name: '_volume') Element? volumeElement,
+      @JsonKey(name: '_volume') PrimitiveElement? volumeElement,
       String? issue,
-      @JsonKey(name: '_issue') Element? issueElement,
+      @JsonKey(name: '_issue') PrimitiveElement? issueElement,
       FhirDateTime? articleDate,
-      @JsonKey(name: '_articleDate') Element? articleDateElement,
+      @JsonKey(name: '_articleDate') PrimitiveElement? articleDateElement,
       String? publicationDateText,
       @JsonKey(name: '_publicationDateText')
-      Element? publicationDateTextElement,
+      PrimitiveElement? publicationDateTextElement,
       String? publicationDateSeason,
       @JsonKey(name: '_publicationDateSeason')
-      Element? publicationDateSeasonElement,
+      PrimitiveElement? publicationDateSeasonElement,
       FhirDateTime? lastRevisionDate,
-      @JsonKey(name: '_lastRevisionDate') Element? lastRevisionDateElement,
+      @JsonKey(name: '_lastRevisionDate')
+      PrimitiveElement? lastRevisionDateElement,
       List<CodeableConcept>? language,
       String? accessionNumber,
-      @JsonKey(name: '_accessionNumber') Element? accessionNumberElement,
+      @JsonKey(name: '_accessionNumber')
+      PrimitiveElement? accessionNumberElement,
       String? pageString,
-      @JsonKey(name: '_pageString') Element? pageStringElement,
+      @JsonKey(name: '_pageString') PrimitiveElement? pageStringElement,
       String? firstPage,
-      @JsonKey(name: '_firstPage') Element? firstPageElement,
+      @JsonKey(name: '_firstPage') PrimitiveElement? firstPageElement,
       String? lastPage,
-      @JsonKey(name: '_lastPage') Element? lastPageElement,
+      @JsonKey(name: '_lastPage') PrimitiveElement? lastPageElement,
       String? pageCount,
-      @JsonKey(name: '_pageCount') Element? pageCountElement,
+      @JsonKey(name: '_pageCount') PrimitiveElement? pageCountElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement});
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement});
 
   @override
   $CitationPublishedInCopyWith<$Res>? get publishedIn;
@@ -10260,7 +10301,7 @@ class __$$CitationPublicationFormImplCopyWithImpl<$Res>
       volumeElement: freezed == volumeElement
           ? _value.volumeElement
           : volumeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       issue: freezed == issue
           ? _value.issue
           : issue // ignore: cast_nullable_to_non_nullable
@@ -10268,7 +10309,7 @@ class __$$CitationPublicationFormImplCopyWithImpl<$Res>
       issueElement: freezed == issueElement
           ? _value.issueElement
           : issueElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       articleDate: freezed == articleDate
           ? _value.articleDate
           : articleDate // ignore: cast_nullable_to_non_nullable
@@ -10276,7 +10317,7 @@ class __$$CitationPublicationFormImplCopyWithImpl<$Res>
       articleDateElement: freezed == articleDateElement
           ? _value.articleDateElement
           : articleDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publicationDateText: freezed == publicationDateText
           ? _value.publicationDateText
           : publicationDateText // ignore: cast_nullable_to_non_nullable
@@ -10284,7 +10325,7 @@ class __$$CitationPublicationFormImplCopyWithImpl<$Res>
       publicationDateTextElement: freezed == publicationDateTextElement
           ? _value.publicationDateTextElement
           : publicationDateTextElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publicationDateSeason: freezed == publicationDateSeason
           ? _value.publicationDateSeason
           : publicationDateSeason // ignore: cast_nullable_to_non_nullable
@@ -10292,7 +10333,7 @@ class __$$CitationPublicationFormImplCopyWithImpl<$Res>
       publicationDateSeasonElement: freezed == publicationDateSeasonElement
           ? _value.publicationDateSeasonElement
           : publicationDateSeasonElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       lastRevisionDate: freezed == lastRevisionDate
           ? _value.lastRevisionDate
           : lastRevisionDate // ignore: cast_nullable_to_non_nullable
@@ -10300,7 +10341,7 @@ class __$$CitationPublicationFormImplCopyWithImpl<$Res>
       lastRevisionDateElement: freezed == lastRevisionDateElement
           ? _value.lastRevisionDateElement
           : lastRevisionDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value._language
           : language // ignore: cast_nullable_to_non_nullable
@@ -10312,7 +10353,7 @@ class __$$CitationPublicationFormImplCopyWithImpl<$Res>
       accessionNumberElement: freezed == accessionNumberElement
           ? _value.accessionNumberElement
           : accessionNumberElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       pageString: freezed == pageString
           ? _value.pageString
           : pageString // ignore: cast_nullable_to_non_nullable
@@ -10320,7 +10361,7 @@ class __$$CitationPublicationFormImplCopyWithImpl<$Res>
       pageStringElement: freezed == pageStringElement
           ? _value.pageStringElement
           : pageStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       firstPage: freezed == firstPage
           ? _value.firstPage
           : firstPage // ignore: cast_nullable_to_non_nullable
@@ -10328,7 +10369,7 @@ class __$$CitationPublicationFormImplCopyWithImpl<$Res>
       firstPageElement: freezed == firstPageElement
           ? _value.firstPageElement
           : firstPageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       lastPage: freezed == lastPage
           ? _value.lastPage
           : lastPage // ignore: cast_nullable_to_non_nullable
@@ -10336,7 +10377,7 @@ class __$$CitationPublicationFormImplCopyWithImpl<$Res>
       lastPageElement: freezed == lastPageElement
           ? _value.lastPageElement
           : lastPageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       pageCount: freezed == pageCount
           ? _value.pageCount
           : pageCount // ignore: cast_nullable_to_non_nullable
@@ -10344,7 +10385,7 @@ class __$$CitationPublicationFormImplCopyWithImpl<$Res>
       pageCountElement: freezed == pageCountElement
           ? _value.pageCountElement
           : pageCountElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -10352,7 +10393,7 @@ class __$$CitationPublicationFormImplCopyWithImpl<$Res>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -10490,7 +10531,7 @@ class _$CitationPublicationFormImpl extends _CitationPublicationForm {
   /// [volumeElement] ("_volume") Extensions for volume
   @override
   @JsonKey(name: '_volume')
-  final Element? volumeElement;
+  final PrimitiveElement? volumeElement;
 
   /// [issue] Issue, part or supplement of journal or other collection in which
   ///  the article is published.
@@ -10500,7 +10541,7 @@ class _$CitationPublicationFormImpl extends _CitationPublicationForm {
   /// [issueElement] ("_issue") Extensions for issue
   @override
   @JsonKey(name: '_issue')
-  final Element? issueElement;
+  final PrimitiveElement? issueElement;
 
   /// [articleDate] The date the article was added to the database, or the date
   ///  the article was released.
@@ -10510,7 +10551,7 @@ class _$CitationPublicationFormImpl extends _CitationPublicationForm {
   /// [articleDateElement] ("_articleDate") Extensions for articleDate
   @override
   @JsonKey(name: '_articleDate')
-  final Element? articleDateElement;
+  final PrimitiveElement? articleDateElement;
 
   /// [publicationDateText] Text representation of the date on which the issue of
   ///  the cited artifact was published.
@@ -10521,7 +10562,7 @@ class _$CitationPublicationFormImpl extends _CitationPublicationForm {
   ///  publicationDateText
   @override
   @JsonKey(name: '_publicationDateText')
-  final Element? publicationDateTextElement;
+  final PrimitiveElement? publicationDateTextElement;
 
   /// [publicationDateSeason] Spring, Summer, Fall/Autumn, Winter.
   @override
@@ -10531,7 +10572,7 @@ class _$CitationPublicationFormImpl extends _CitationPublicationForm {
   ///  publicationDateSeason
   @override
   @JsonKey(name: '_publicationDateSeason')
-  final Element? publicationDateSeasonElement;
+  final PrimitiveElement? publicationDateSeasonElement;
 
   /// [lastRevisionDate] The date the article was last revised or updated in the
   ///  database.
@@ -10542,7 +10583,7 @@ class _$CitationPublicationFormImpl extends _CitationPublicationForm {
   ///  lastRevisionDate
   @override
   @JsonKey(name: '_lastRevisionDate')
-  final Element? lastRevisionDateElement;
+  final PrimitiveElement? lastRevisionDateElement;
 
   /// [language] The language or languages in which this form of the article is
   ///  published.
@@ -10566,7 +10607,7 @@ class _$CitationPublicationFormImpl extends _CitationPublicationForm {
   /// [accessionNumberElement] ("_accessionNumber") Extensions for accessionNumber
   @override
   @JsonKey(name: '_accessionNumber')
-  final Element? accessionNumberElement;
+  final PrimitiveElement? accessionNumberElement;
 
   /// [pageString] Used for full display of pagination.
   @override
@@ -10575,7 +10616,7 @@ class _$CitationPublicationFormImpl extends _CitationPublicationForm {
   /// [pageStringElement] ("_pageString") Extensions for pageString
   @override
   @JsonKey(name: '_pageString')
-  final Element? pageStringElement;
+  final PrimitiveElement? pageStringElement;
 
   /// [firstPage] Used for isolated representation of first page.
   @override
@@ -10584,7 +10625,7 @@ class _$CitationPublicationFormImpl extends _CitationPublicationForm {
   /// [firstPageElement] ("_firstPage") Extensions for firstPage
   @override
   @JsonKey(name: '_firstPage')
-  final Element? firstPageElement;
+  final PrimitiveElement? firstPageElement;
 
   /// [lastPage] Used for isolated representation of last page.
   @override
@@ -10593,7 +10634,7 @@ class _$CitationPublicationFormImpl extends _CitationPublicationForm {
   /// [lastPageElement] ("_lastPage") Extensions for lastPage
   @override
   @JsonKey(name: '_lastPage')
-  final Element? lastPageElement;
+  final PrimitiveElement? lastPageElement;
 
   /// [pageCount] Actual or approximate number of pages or screens. Distinct from
   ///  reporting the page numbers.
@@ -10603,7 +10644,7 @@ class _$CitationPublicationFormImpl extends _CitationPublicationForm {
   /// [pageCountElement] ("_pageCount") Extensions for pageCount
   @override
   @JsonKey(name: '_pageCount')
-  final Element? pageCountElement;
+  final PrimitiveElement? pageCountElement;
 
   /// [copyright] Copyright notice for the full article or artifact.
   @override
@@ -10612,7 +10653,7 @@ class _$CitationPublicationFormImpl extends _CitationPublicationForm {
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @override
   @JsonKey(name: '_copyright')
-  final Element? copyrightElement;
+  final PrimitiveElement? copyrightElement;
 
   @override
   String toString() {
@@ -10744,34 +10785,36 @@ abstract class _CitationPublicationForm extends CitationPublicationForm {
       final CitationPublishedIn? publishedIn,
       final CodeableConcept? citedMedium,
       final String? volume,
-      @JsonKey(name: '_volume') final Element? volumeElement,
+      @JsonKey(name: '_volume') final PrimitiveElement? volumeElement,
       final String? issue,
-      @JsonKey(name: '_issue') final Element? issueElement,
+      @JsonKey(name: '_issue') final PrimitiveElement? issueElement,
       final FhirDateTime? articleDate,
-      @JsonKey(name: '_articleDate') final Element? articleDateElement,
+      @JsonKey(name: '_articleDate') final PrimitiveElement? articleDateElement,
       final String? publicationDateText,
       @JsonKey(name: '_publicationDateText')
-      final Element? publicationDateTextElement,
+      final PrimitiveElement? publicationDateTextElement,
       final String? publicationDateSeason,
       @JsonKey(name: '_publicationDateSeason')
-      final Element? publicationDateSeasonElement,
+      final PrimitiveElement? publicationDateSeasonElement,
       final FhirDateTime? lastRevisionDate,
       @JsonKey(name: '_lastRevisionDate')
-      final Element? lastRevisionDateElement,
+      final PrimitiveElement? lastRevisionDateElement,
       final List<CodeableConcept>? language,
       final String? accessionNumber,
-      @JsonKey(name: '_accessionNumber') final Element? accessionNumberElement,
+      @JsonKey(name: '_accessionNumber')
+      final PrimitiveElement? accessionNumberElement,
       final String? pageString,
-      @JsonKey(name: '_pageString') final Element? pageStringElement,
+      @JsonKey(name: '_pageString') final PrimitiveElement? pageStringElement,
       final String? firstPage,
-      @JsonKey(name: '_firstPage') final Element? firstPageElement,
+      @JsonKey(name: '_firstPage') final PrimitiveElement? firstPageElement,
       final String? lastPage,
-      @JsonKey(name: '_lastPage') final Element? lastPageElement,
+      @JsonKey(name: '_lastPage') final PrimitiveElement? lastPageElement,
       final String? pageCount,
-      @JsonKey(name: '_pageCount') final Element? pageCountElement,
+      @JsonKey(name: '_pageCount') final PrimitiveElement? pageCountElement,
       final FhirMarkdown? copyright,
       @JsonKey(name: '_copyright')
-      final Element? copyrightElement}) = _$CitationPublicationFormImpl;
+      final PrimitiveElement?
+          copyrightElement}) = _$CitationPublicationFormImpl;
   const _CitationPublicationForm._() : super._();
 
   factory _CitationPublicationForm.fromJson(Map<String, dynamic> json) =
@@ -10833,7 +10876,7 @@ abstract class _CitationPublicationForm extends CitationPublicationForm {
 
   /// [volumeElement] ("_volume") Extensions for volume
   @JsonKey(name: '_volume')
-  Element? get volumeElement;
+  PrimitiveElement? get volumeElement;
   @override
 
   /// [issue] Issue, part or supplement of journal or other collection in which
@@ -10843,7 +10886,7 @@ abstract class _CitationPublicationForm extends CitationPublicationForm {
 
   /// [issueElement] ("_issue") Extensions for issue
   @JsonKey(name: '_issue')
-  Element? get issueElement;
+  PrimitiveElement? get issueElement;
   @override
 
   /// [articleDate] The date the article was added to the database, or the date
@@ -10853,7 +10896,7 @@ abstract class _CitationPublicationForm extends CitationPublicationForm {
 
   /// [articleDateElement] ("_articleDate") Extensions for articleDate
   @JsonKey(name: '_articleDate')
-  Element? get articleDateElement;
+  PrimitiveElement? get articleDateElement;
   @override
 
   /// [publicationDateText] Text representation of the date on which the issue of
@@ -10864,7 +10907,7 @@ abstract class _CitationPublicationForm extends CitationPublicationForm {
   /// [publicationDateTextElement] ("_publicationDateText") Extensions for
   ///  publicationDateText
   @JsonKey(name: '_publicationDateText')
-  Element? get publicationDateTextElement;
+  PrimitiveElement? get publicationDateTextElement;
   @override
 
   /// [publicationDateSeason] Spring, Summer, Fall/Autumn, Winter.
@@ -10874,7 +10917,7 @@ abstract class _CitationPublicationForm extends CitationPublicationForm {
   /// [publicationDateSeasonElement] ("_publicationDateSeason") Extensions for
   ///  publicationDateSeason
   @JsonKey(name: '_publicationDateSeason')
-  Element? get publicationDateSeasonElement;
+  PrimitiveElement? get publicationDateSeasonElement;
   @override
 
   /// [lastRevisionDate] The date the article was last revised or updated in the
@@ -10885,7 +10928,7 @@ abstract class _CitationPublicationForm extends CitationPublicationForm {
   /// [lastRevisionDateElement] ("_lastRevisionDate") Extensions for
   ///  lastRevisionDate
   @JsonKey(name: '_lastRevisionDate')
-  Element? get lastRevisionDateElement;
+  PrimitiveElement? get lastRevisionDateElement;
   @override
 
   /// [language] The language or languages in which this form of the article is
@@ -10899,7 +10942,7 @@ abstract class _CitationPublicationForm extends CitationPublicationForm {
 
   /// [accessionNumberElement] ("_accessionNumber") Extensions for accessionNumber
   @JsonKey(name: '_accessionNumber')
-  Element? get accessionNumberElement;
+  PrimitiveElement? get accessionNumberElement;
   @override
 
   /// [pageString] Used for full display of pagination.
@@ -10908,7 +10951,7 @@ abstract class _CitationPublicationForm extends CitationPublicationForm {
 
   /// [pageStringElement] ("_pageString") Extensions for pageString
   @JsonKey(name: '_pageString')
-  Element? get pageStringElement;
+  PrimitiveElement? get pageStringElement;
   @override
 
   /// [firstPage] Used for isolated representation of first page.
@@ -10917,7 +10960,7 @@ abstract class _CitationPublicationForm extends CitationPublicationForm {
 
   /// [firstPageElement] ("_firstPage") Extensions for firstPage
   @JsonKey(name: '_firstPage')
-  Element? get firstPageElement;
+  PrimitiveElement? get firstPageElement;
   @override
 
   /// [lastPage] Used for isolated representation of last page.
@@ -10926,7 +10969,7 @@ abstract class _CitationPublicationForm extends CitationPublicationForm {
 
   /// [lastPageElement] ("_lastPage") Extensions for lastPage
   @JsonKey(name: '_lastPage')
-  Element? get lastPageElement;
+  PrimitiveElement? get lastPageElement;
   @override
 
   /// [pageCount] Actual or approximate number of pages or screens. Distinct from
@@ -10936,7 +10979,7 @@ abstract class _CitationPublicationForm extends CitationPublicationForm {
 
   /// [pageCountElement] ("_pageCount") Extensions for pageCount
   @JsonKey(name: '_pageCount')
-  Element? get pageCountElement;
+  PrimitiveElement? get pageCountElement;
   @override
 
   /// [copyright] Copyright notice for the full article or artifact.
@@ -10945,7 +10988,7 @@ abstract class _CitationPublicationForm extends CitationPublicationForm {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement;
+  PrimitiveElement? get copyrightElement;
   @override
   @JsonKey(ignore: true)
   _$$CitationPublicationFormImplCopyWith<_$CitationPublicationFormImpl>
@@ -10998,7 +11041,7 @@ mixin _$CitationPublishedIn {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [publisher] Name of or resource describing the publisher.
   Reference? get publisher => throw _privateConstructorUsedError;
@@ -11009,7 +11052,8 @@ mixin _$CitationPublishedIn {
   /// [publisherLocationElement] ("_publisherLocation") Extensions for
   ///  publisherLocation
   @JsonKey(name: '_publisherLocation')
-  Element? get publisherLocationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get publisherLocationElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -11030,10 +11074,11 @@ abstract class $CitationPublishedInCopyWith<$Res> {
       CodeableConcept? type,
       List<Identifier>? identifier,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       Reference? publisher,
       String? publisherLocation,
-      @JsonKey(name: '_publisherLocation') Element? publisherLocationElement});
+      @JsonKey(name: '_publisherLocation')
+      PrimitiveElement? publisherLocationElement});
 
   $CodeableConceptCopyWith<$Res>? get type;
   $ReferenceCopyWith<$Res>? get publisher;
@@ -11091,7 +11136,7 @@ class _$CitationPublishedInCopyWithImpl<$Res, $Val extends CitationPublishedIn>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -11103,7 +11148,7 @@ class _$CitationPublishedInCopyWithImpl<$Res, $Val extends CitationPublishedIn>
       publisherLocationElement: freezed == publisherLocationElement
           ? _value.publisherLocationElement
           : publisherLocationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -11147,10 +11192,11 @@ abstract class _$$CitationPublishedInImplCopyWith<$Res>
       CodeableConcept? type,
       List<Identifier>? identifier,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       Reference? publisher,
       String? publisherLocation,
-      @JsonKey(name: '_publisherLocation') Element? publisherLocationElement});
+      @JsonKey(name: '_publisherLocation')
+      PrimitiveElement? publisherLocationElement});
 
   @override
   $CodeableConceptCopyWith<$Res>? get type;
@@ -11208,7 +11254,7 @@ class __$$CitationPublishedInImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -11220,7 +11266,7 @@ class __$$CitationPublishedInImplCopyWithImpl<$Res>
       publisherLocationElement: freezed == publisherLocationElement
           ? _value.publisherLocationElement
           : publisherLocationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -11338,7 +11384,7 @@ class _$CitationPublishedInImpl extends _CitationPublishedIn {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [publisher] Name of or resource describing the publisher.
   @override
@@ -11352,7 +11398,7 @@ class _$CitationPublishedInImpl extends _CitationPublishedIn {
   ///  publisherLocation
   @override
   @JsonKey(name: '_publisherLocation')
-  final Element? publisherLocationElement;
+  final PrimitiveElement? publisherLocationElement;
 
   @override
   String toString() {
@@ -11416,17 +11462,18 @@ class _$CitationPublishedInImpl extends _CitationPublishedIn {
 
 abstract class _CitationPublishedIn extends CitationPublishedIn {
   const factory _CitationPublishedIn(
-      {final String? id,
-      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-      final List<FhirExtension>? modifierExtension,
-      final CodeableConcept? type,
-      final List<Identifier>? identifier,
-      final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
-      final Reference? publisher,
-      final String? publisherLocation,
-      @JsonKey(name: '_publisherLocation')
-      final Element? publisherLocationElement}) = _$CitationPublishedInImpl;
+          {final String? id,
+          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+          final List<FhirExtension>? modifierExtension,
+          final CodeableConcept? type,
+          final List<Identifier>? identifier,
+          final String? title,
+          @JsonKey(name: '_title') final PrimitiveElement? titleElement,
+          final Reference? publisher,
+          final String? publisherLocation,
+          @JsonKey(name: '_publisherLocation')
+          final PrimitiveElement? publisherLocationElement}) =
+      _$CitationPublishedInImpl;
   const _CitationPublishedIn._() : super._();
 
   factory _CitationPublishedIn.fromJson(Map<String, dynamic> json) =
@@ -11479,7 +11526,7 @@ abstract class _CitationPublishedIn extends CitationPublishedIn {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [publisher] Name of or resource describing the publisher.
@@ -11493,7 +11540,7 @@ abstract class _CitationPublishedIn extends CitationPublishedIn {
   /// [publisherLocationElement] ("_publisherLocation") Extensions for
   ///  publisherLocation
   @JsonKey(name: '_publisherLocation')
-  Element? get publisherLocationElement;
+  PrimitiveElement? get publisherLocationElement;
   @override
   @JsonKey(ignore: true)
   _$$CitationPublishedInImplCopyWith<_$CitationPublishedInImpl> get copyWith =>
@@ -11542,7 +11589,7 @@ mixin _$CitationWebLocation {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -11562,7 +11609,7 @@ abstract class $CitationWebLocationCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       List<CodeableConcept>? classifier,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement});
+      @JsonKey(name: '_url') PrimitiveElement? urlElement});
 }
 
 /// @nodoc
@@ -11609,7 +11656,7 @@ class _$CitationWebLocationCopyWithImpl<$Res, $Val extends CitationWebLocation>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -11628,7 +11675,7 @@ abstract class _$$CitationWebLocationImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       List<CodeableConcept>? classifier,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement});
+      @JsonKey(name: '_url') PrimitiveElement? urlElement});
 }
 
 /// @nodoc
@@ -11673,7 +11720,7 @@ class __$$CitationWebLocationImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -11781,7 +11828,7 @@ class _$CitationWebLocationImpl extends _CitationWebLocation {
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   @override
   String toString() {
@@ -11838,7 +11885,7 @@ abstract class _CitationWebLocation extends CitationWebLocation {
           final List<FhirExtension>? modifierExtension,
           final List<CodeableConcept>? classifier,
           final FhirUri? url,
-          @JsonKey(name: '_url') final Element? urlElement}) =
+          @JsonKey(name: '_url') final PrimitiveElement? urlElement}) =
       _$CitationWebLocationImpl;
   const _CitationWebLocation._() : super._();
 
@@ -11887,7 +11934,7 @@ abstract class _CitationWebLocation extends CitationWebLocation {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
   @JsonKey(ignore: true)
   _$$CitationWebLocationImplCopyWith<_$CitationWebLocationImpl> get copyWith =>
@@ -12358,7 +12405,7 @@ mixin _$CitationContributorship {
 
   /// [completeElement] ("_complete") Extensions for complete
   @JsonKey(name: '_complete')
-  Element? get completeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get completeElement => throw _privateConstructorUsedError;
 
   /// [entry] An individual entity named as a contributor, for example in the
   ///  author list or contributor list.
@@ -12385,7 +12432,7 @@ abstract class $CitationContributorshipCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirBoolean? complete,
-      @JsonKey(name: '_complete') Element? completeElement,
+      @JsonKey(name: '_complete') PrimitiveElement? completeElement,
       List<CitationEntry>? entry,
       List<CitationSummary1>? summary});
 }
@@ -12432,7 +12479,7 @@ class _$CitationContributorshipCopyWithImpl<$Res,
       completeElement: freezed == completeElement
           ? _value.completeElement
           : completeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       entry: freezed == entry
           ? _value.entry
           : entry // ignore: cast_nullable_to_non_nullable
@@ -12459,7 +12506,7 @@ abstract class _$$CitationContributorshipImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirBoolean? complete,
-      @JsonKey(name: '_complete') Element? completeElement,
+      @JsonKey(name: '_complete') PrimitiveElement? completeElement,
       List<CitationEntry>? entry,
       List<CitationSummary1>? summary});
 }
@@ -12505,7 +12552,7 @@ class __$$CitationContributorshipImplCopyWithImpl<$Res>
       completeElement: freezed == completeElement
           ? _value.completeElement
           : completeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       entry: freezed == entry
           ? _value._entry
           : entry // ignore: cast_nullable_to_non_nullable
@@ -12610,7 +12657,7 @@ class _$CitationContributorshipImpl extends _CitationContributorship {
   /// [completeElement] ("_complete") Extensions for complete
   @override
   @JsonKey(name: '_complete')
-  final Element? completeElement;
+  final PrimitiveElement? completeElement;
 
   /// [entry] An individual entity named as a contributor, for example in the
   ///  author list or contributor list.
@@ -12698,7 +12745,7 @@ abstract class _CitationContributorship extends CitationContributorship {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirBoolean? complete,
-      @JsonKey(name: '_complete') final Element? completeElement,
+      @JsonKey(name: '_complete') final PrimitiveElement? completeElement,
       final List<CitationEntry>? entry,
       final List<CitationSummary1>? summary}) = _$CitationContributorshipImpl;
   const _CitationContributorship._() : super._();
@@ -12744,7 +12791,7 @@ abstract class _CitationContributorship extends CitationContributorship {
 
   /// [completeElement] ("_complete") Extensions for complete
   @JsonKey(name: '_complete')
-  Element? get completeElement;
+  PrimitiveElement? get completeElement;
   @override
 
   /// [entry] An individual entity named as a contributor, for example in the
@@ -12804,7 +12851,8 @@ mixin _$CitationEntry {
   /// [forenameInitialsElement] ("_forenameInitials") Extensions for
   ///  forenameInitials
   @JsonKey(name: '_forenameInitials')
-  Element? get forenameInitialsElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get forenameInitialsElement =>
+      throw _privateConstructorUsedError;
 
   /// [affiliation] Organization affiliated with the contributor.
   List<Reference>? get affiliation => throw _privateConstructorUsedError;
@@ -12828,7 +12876,7 @@ mixin _$CitationEntry {
   /// [correspondingContactElement] ("_correspondingContact") Extensions for
   ///  correspondingContact
   @JsonKey(name: '_correspondingContact')
-  Element? get correspondingContactElement =>
+  PrimitiveElement? get correspondingContactElement =>
       throw _privateConstructorUsedError;
 
   /// [rankingOrder] Provides a numerical ranking to represent the degree of
@@ -12838,7 +12886,8 @@ mixin _$CitationEntry {
 
   /// [rankingOrderElement] ("_rankingOrder") Extensions for rankingOrder
   @JsonKey(name: '_rankingOrder')
-  Element? get rankingOrderElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get rankingOrderElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -12858,16 +12907,17 @@ abstract class $CitationEntryCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       Reference contributor,
       String? forenameInitials,
-      @JsonKey(name: '_forenameInitials') Element? forenameInitialsElement,
+      @JsonKey(name: '_forenameInitials')
+      PrimitiveElement? forenameInitialsElement,
       List<Reference>? affiliation,
       List<CodeableConcept>? contributionType,
       CodeableConcept? role,
       List<CitationContributionInstance>? contributionInstance,
       FhirBoolean? correspondingContact,
       @JsonKey(name: '_correspondingContact')
-      Element? correspondingContactElement,
+      PrimitiveElement? correspondingContactElement,
       FhirPositiveInt? rankingOrder,
-      @JsonKey(name: '_rankingOrder') Element? rankingOrderElement});
+      @JsonKey(name: '_rankingOrder') PrimitiveElement? rankingOrderElement});
 
   $ReferenceCopyWith<$Res> get contributor;
   $CodeableConceptCopyWith<$Res>? get role;
@@ -12925,7 +12975,7 @@ class _$CitationEntryCopyWithImpl<$Res, $Val extends CitationEntry>
       forenameInitialsElement: freezed == forenameInitialsElement
           ? _value.forenameInitialsElement
           : forenameInitialsElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       affiliation: freezed == affiliation
           ? _value.affiliation
           : affiliation // ignore: cast_nullable_to_non_nullable
@@ -12949,7 +12999,7 @@ class _$CitationEntryCopyWithImpl<$Res, $Val extends CitationEntry>
       correspondingContactElement: freezed == correspondingContactElement
           ? _value.correspondingContactElement
           : correspondingContactElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       rankingOrder: freezed == rankingOrder
           ? _value.rankingOrder
           : rankingOrder // ignore: cast_nullable_to_non_nullable
@@ -12957,7 +13007,7 @@ class _$CitationEntryCopyWithImpl<$Res, $Val extends CitationEntry>
       rankingOrderElement: freezed == rankingOrderElement
           ? _value.rankingOrderElement
           : rankingOrderElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -12996,16 +13046,17 @@ abstract class _$$CitationEntryImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       Reference contributor,
       String? forenameInitials,
-      @JsonKey(name: '_forenameInitials') Element? forenameInitialsElement,
+      @JsonKey(name: '_forenameInitials')
+      PrimitiveElement? forenameInitialsElement,
       List<Reference>? affiliation,
       List<CodeableConcept>? contributionType,
       CodeableConcept? role,
       List<CitationContributionInstance>? contributionInstance,
       FhirBoolean? correspondingContact,
       @JsonKey(name: '_correspondingContact')
-      Element? correspondingContactElement,
+      PrimitiveElement? correspondingContactElement,
       FhirPositiveInt? rankingOrder,
-      @JsonKey(name: '_rankingOrder') Element? rankingOrderElement});
+      @JsonKey(name: '_rankingOrder') PrimitiveElement? rankingOrderElement});
 
   @override
   $ReferenceCopyWith<$Res> get contributor;
@@ -13063,7 +13114,7 @@ class __$$CitationEntryImplCopyWithImpl<$Res>
       forenameInitialsElement: freezed == forenameInitialsElement
           ? _value.forenameInitialsElement
           : forenameInitialsElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       affiliation: freezed == affiliation
           ? _value._affiliation
           : affiliation // ignore: cast_nullable_to_non_nullable
@@ -13087,7 +13138,7 @@ class __$$CitationEntryImplCopyWithImpl<$Res>
       correspondingContactElement: freezed == correspondingContactElement
           ? _value.correspondingContactElement
           : correspondingContactElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       rankingOrder: freezed == rankingOrder
           ? _value.rankingOrder
           : rankingOrder // ignore: cast_nullable_to_non_nullable
@@ -13095,7 +13146,7 @@ class __$$CitationEntryImplCopyWithImpl<$Res>
       rankingOrderElement: freezed == rankingOrderElement
           ? _value.rankingOrderElement
           : rankingOrderElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -13205,7 +13256,7 @@ class _$CitationEntryImpl extends _CitationEntry {
   ///  forenameInitials
   @override
   @JsonKey(name: '_forenameInitials')
-  final Element? forenameInitialsElement;
+  final PrimitiveElement? forenameInitialsElement;
 
   /// [affiliation] Organization affiliated with the contributor.
   final List<Reference>? _affiliation;
@@ -13263,7 +13314,7 @@ class _$CitationEntryImpl extends _CitationEntry {
   ///  correspondingContact
   @override
   @JsonKey(name: '_correspondingContact')
-  final Element? correspondingContactElement;
+  final PrimitiveElement? correspondingContactElement;
 
   /// [rankingOrder] Provides a numerical ranking to represent the degree of
   ///  contributorship relative to other contributors, such as 1 for first author
@@ -13274,7 +13325,7 @@ class _$CitationEntryImpl extends _CitationEntry {
   /// [rankingOrderElement] ("_rankingOrder") Extensions for rankingOrder
   @override
   @JsonKey(name: '_rankingOrder')
-  final Element? rankingOrderElement;
+  final PrimitiveElement? rankingOrderElement;
 
   @override
   String toString() {
@@ -13352,23 +13403,23 @@ class _$CitationEntryImpl extends _CitationEntry {
 
 abstract class _CitationEntry extends CitationEntry {
   const factory _CitationEntry(
-          {final String? id,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          required final Reference contributor,
-          final String? forenameInitials,
-          @JsonKey(name: '_forenameInitials')
-          final Element? forenameInitialsElement,
-          final List<Reference>? affiliation,
-          final List<CodeableConcept>? contributionType,
-          final CodeableConcept? role,
-          final List<CitationContributionInstance>? contributionInstance,
-          final FhirBoolean? correspondingContact,
-          @JsonKey(name: '_correspondingContact')
-          final Element? correspondingContactElement,
-          final FhirPositiveInt? rankingOrder,
-          @JsonKey(name: '_rankingOrder') final Element? rankingOrderElement}) =
-      _$CitationEntryImpl;
+      {final String? id,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      required final Reference contributor,
+      final String? forenameInitials,
+      @JsonKey(name: '_forenameInitials')
+      final PrimitiveElement? forenameInitialsElement,
+      final List<Reference>? affiliation,
+      final List<CodeableConcept>? contributionType,
+      final CodeableConcept? role,
+      final List<CitationContributionInstance>? contributionInstance,
+      final FhirBoolean? correspondingContact,
+      @JsonKey(name: '_correspondingContact')
+      final PrimitiveElement? correspondingContactElement,
+      final FhirPositiveInt? rankingOrder,
+      @JsonKey(name: '_rankingOrder')
+      final PrimitiveElement? rankingOrderElement}) = _$CitationEntryImpl;
   const _CitationEntry._() : super._();
 
   factory _CitationEntry.fromJson(Map<String, dynamic> json) =
@@ -13417,7 +13468,7 @@ abstract class _CitationEntry extends CitationEntry {
   /// [forenameInitialsElement] ("_forenameInitials") Extensions for
   ///  forenameInitials
   @JsonKey(name: '_forenameInitials')
-  Element? get forenameInitialsElement;
+  PrimitiveElement? get forenameInitialsElement;
   @override
 
   /// [affiliation] Organization affiliated with the contributor.
@@ -13445,7 +13496,7 @@ abstract class _CitationEntry extends CitationEntry {
   /// [correspondingContactElement] ("_correspondingContact") Extensions for
   ///  correspondingContact
   @JsonKey(name: '_correspondingContact')
-  Element? get correspondingContactElement;
+  PrimitiveElement? get correspondingContactElement;
   @override
 
   /// [rankingOrder] Provides a numerical ranking to represent the degree of
@@ -13456,7 +13507,7 @@ abstract class _CitationEntry extends CitationEntry {
 
   /// [rankingOrderElement] ("_rankingOrder") Extensions for rankingOrder
   @JsonKey(name: '_rankingOrder')
-  Element? get rankingOrderElement;
+  PrimitiveElement? get rankingOrderElement;
   @override
   @JsonKey(ignore: true)
   _$$CitationEntryImplCopyWith<_$CitationEntryImpl> get copyWith =>
@@ -13506,7 +13557,7 @@ mixin _$CitationContributionInstance {
 
   /// [timeElement] ("_time") Extensions for time
   @JsonKey(name: '_time')
-  Element? get timeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get timeElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -13528,7 +13579,7 @@ abstract class $CitationContributionInstanceCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       CodeableConcept type,
       FhirDateTime? time,
-      @JsonKey(name: '_time') Element? timeElement});
+      @JsonKey(name: '_time') PrimitiveElement? timeElement});
 
   $CodeableConceptCopyWith<$Res> get type;
 }
@@ -13578,7 +13629,7 @@ class _$CitationContributionInstanceCopyWithImpl<$Res,
       timeElement: freezed == timeElement
           ? _value.timeElement
           : timeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -13606,7 +13657,7 @@ abstract class _$$CitationContributionInstanceImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       CodeableConcept type,
       FhirDateTime? time,
-      @JsonKey(name: '_time') Element? timeElement});
+      @JsonKey(name: '_time') PrimitiveElement? timeElement});
 
   @override
   $CodeableConceptCopyWith<$Res> get type;
@@ -13656,7 +13707,7 @@ class __$$CitationContributionInstanceImplCopyWithImpl<$Res>
       timeElement: freezed == timeElement
           ? _value.timeElement
           : timeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -13755,7 +13806,7 @@ class _$CitationContributionInstanceImpl extends _CitationContributionInstance {
   /// [timeElement] ("_time") Extensions for time
   @override
   @JsonKey(name: '_time')
-  final Element? timeElement;
+  final PrimitiveElement? timeElement;
 
   @override
   String toString() {
@@ -13813,7 +13864,7 @@ abstract class _CitationContributionInstance
           final List<FhirExtension>? modifierExtension,
           required final CodeableConcept type,
           final FhirDateTime? time,
-          @JsonKey(name: '_time') final Element? timeElement}) =
+          @JsonKey(name: '_time') final PrimitiveElement? timeElement}) =
       _$CitationContributionInstanceImpl;
   const _CitationContributionInstance._() : super._();
 
@@ -13862,7 +13913,7 @@ abstract class _CitationContributionInstance
 
   /// [timeElement] ("_time") Extensions for time
   @JsonKey(name: '_time')
-  Element? get timeElement;
+  PrimitiveElement? get timeElement;
   @override
   @JsonKey(ignore: true)
   _$$CitationContributionInstanceImplCopyWith<
@@ -13921,7 +13972,7 @@ mixin _$CitationSummary1 {
 
   /// [valueElement] ("_value") Extensions for value
   @JsonKey(name: '_value')
-  Element? get valueElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -13943,7 +13994,7 @@ abstract class $CitationSummary1CopyWith<$Res> {
       CodeableConcept? style,
       CodeableConcept? source,
       FhirMarkdown? value,
-      @JsonKey(name: '_value') Element? valueElement});
+      @JsonKey(name: '_value') PrimitiveElement? valueElement});
 
   $CodeableConceptCopyWith<$Res>? get type;
   $CodeableConceptCopyWith<$Res>? get style;
@@ -14004,7 +14055,7 @@ class _$CitationSummary1CopyWithImpl<$Res, $Val extends CitationSummary1>
       valueElement: freezed == valueElement
           ? _value.valueElement
           : valueElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -14061,7 +14112,7 @@ abstract class _$$CitationSummary1ImplCopyWith<$Res>
       CodeableConcept? style,
       CodeableConcept? source,
       FhirMarkdown? value,
-      @JsonKey(name: '_value') Element? valueElement});
+      @JsonKey(name: '_value') PrimitiveElement? valueElement});
 
   @override
   $CodeableConceptCopyWith<$Res>? get type;
@@ -14123,7 +14174,7 @@ class __$$CitationSummary1ImplCopyWithImpl<$Res>
       valueElement: freezed == valueElement
           ? _value.valueElement
           : valueElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -14234,7 +14285,7 @@ class _$CitationSummary1Impl extends _CitationSummary1 {
   /// [valueElement] ("_value") Extensions for value
   @override
   @JsonKey(name: '_value')
-  final Element? valueElement;
+  final PrimitiveElement? valueElement;
 
   @override
   String toString() {
@@ -14296,7 +14347,7 @@ abstract class _CitationSummary1 extends CitationSummary1 {
           final CodeableConcept? style,
           final CodeableConcept? source,
           final FhirMarkdown? value,
-          @JsonKey(name: '_value') final Element? valueElement}) =
+          @JsonKey(name: '_value') final PrimitiveElement? valueElement}) =
       _$CitationSummary1Impl;
   const _CitationSummary1._() : super._();
 
@@ -14356,7 +14407,7 @@ abstract class _CitationSummary1 extends CitationSummary1 {
 
   /// [valueElement] ("_value") Extensions for value
   @JsonKey(name: '_value')
-  Element? get valueElement;
+  PrimitiveElement? get valueElement;
   @override
   @JsonKey(ignore: true)
   _$$CitationSummary1ImplCopyWith<_$CitationSummary1Impl> get copyWith =>
@@ -14390,14 +14441,15 @@ mixin _$Evidence {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -14448,7 +14500,7 @@ mixin _$Evidence {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   /// [identifier] A formal identifier that is used to identify this summary when
   ///  it is represented in other formats, or referenced in a specification,
@@ -14465,7 +14517,7 @@ mixin _$Evidence {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -14474,7 +14526,7 @@ mixin _$Evidence {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement =>
+  PrimitiveElement? get versionAlgorithmStringElement =>
       throw _privateConstructorUsedError;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -14488,14 +14540,14 @@ mixin _$Evidence {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [title] A short, descriptive, user-friendly title for the summary.
   String? get title => throw _privateConstructorUsedError;
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [status] The status of this summary. Enables tracking the life-cycle of the
   ///  content.
@@ -14503,7 +14555,7 @@ mixin _$Evidence {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [experimental] A Boolean value to indicate that this resource is authored
   ///  for testing purposes (or education/evaluation/marketing) and is not
@@ -14512,7 +14564,8 @@ mixin _$Evidence {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get experimentalElement =>
+      throw _privateConstructorUsedError;
 
   /// [date] The date  (and optionally time) when the summary was last
   ///  significantly changed. The date must change when the business version
@@ -14522,7 +14575,7 @@ mixin _$Evidence {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the evidence.
@@ -14530,7 +14583,7 @@ mixin _$Evidence {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get publisherElement => throw _privateConstructorUsedError;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -14542,7 +14595,8 @@ mixin _$Evidence {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -14561,7 +14615,7 @@ mixin _$Evidence {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get purposeElement => throw _privateConstructorUsedError;
 
   /// [copyright] A copyright statement relating to the Evidence and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
@@ -14570,7 +14624,7 @@ mixin _$Evidence {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -14580,7 +14634,8 @@ mixin _$Evidence {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightLabelElement =>
+      throw _privateConstructorUsedError;
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
@@ -14589,7 +14644,8 @@ mixin _$Evidence {
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @JsonKey(name: '_approvalDate')
-  Element? get approvalDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get approvalDateElement =>
+      throw _privateConstructorUsedError;
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
@@ -14598,7 +14654,8 @@ mixin _$Evidence {
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @JsonKey(name: '_lastReviewDate')
-  Element? get lastReviewDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get lastReviewDateElement =>
+      throw _privateConstructorUsedError;
 
   /// [effectivePeriod] The period during which the {{title}} content was or is
   ///  planned to be in active use.
@@ -14639,14 +14696,15 @@ mixin _$Evidence {
 
   /// [citeAsMarkdownElement] ("_citeAsMarkdown") Extensions for citeAsMarkdown
   @JsonKey(name: '_citeAsMarkdown')
-  Element? get citeAsMarkdownElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get citeAsMarkdownElement =>
+      throw _privateConstructorUsedError;
 
   /// [assertion] Declarative description of the Evidence.
   FhirMarkdown? get assertion => throw _privateConstructorUsedError;
 
   /// [assertionElement] ("_assertion") Extensions for assertion
   @JsonKey(name: '_assertion')
-  Element? get assertionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get assertionElement => throw _privateConstructorUsedError;
 
   /// [note] Footnotes and/or explanatory notes.
   List<Annotation>? get note => throw _privateConstructorUsedError;
@@ -14687,49 +14745,49 @@ abstract class $EvidenceCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
       FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
       Period? effectivePeriod,
       List<CodeableConcept>? topic,
       List<ContactDetail>? author,
@@ -14739,9 +14797,9 @@ abstract class $EvidenceCopyWith<$Res> {
       List<RelatedArtifact>? relatedArtifact,
       Reference? citeAsReference,
       FhirMarkdown? citeAsMarkdown,
-      @JsonKey(name: '_citeAsMarkdown') Element? citeAsMarkdownElement,
+      @JsonKey(name: '_citeAsMarkdown') PrimitiveElement? citeAsMarkdownElement,
       FhirMarkdown? assertion,
-      @JsonKey(name: '_assertion') Element? assertionElement,
+      @JsonKey(name: '_assertion') PrimitiveElement? assertionElement,
       List<Annotation>? note,
       List<EvidenceVariableDefinition> variableDefinition,
       CodeableConcept? synthesisType,
@@ -14855,7 +14913,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -14863,7 +14921,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -14887,7 +14945,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -14899,7 +14957,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -14907,7 +14965,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -14919,7 +14977,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -14927,7 +14985,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -14935,7 +14993,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -14943,7 +15001,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -14951,7 +15009,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -14959,7 +15017,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value.contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -14971,7 +15029,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value.useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -14987,7 +15045,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -14995,7 +15053,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -15003,7 +15061,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       approvalDate: freezed == approvalDate
           ? _value.approvalDate
           : approvalDate // ignore: cast_nullable_to_non_nullable
@@ -15011,7 +15069,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       approvalDateElement: freezed == approvalDateElement
           ? _value.approvalDateElement
           : approvalDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       lastReviewDate: freezed == lastReviewDate
           ? _value.lastReviewDate
           : lastReviewDate // ignore: cast_nullable_to_non_nullable
@@ -15019,7 +15077,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       lastReviewDateElement: freezed == lastReviewDateElement
           ? _value.lastReviewDateElement
           : lastReviewDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       effectivePeriod: freezed == effectivePeriod
           ? _value.effectivePeriod
           : effectivePeriod // ignore: cast_nullable_to_non_nullable
@@ -15059,7 +15117,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       citeAsMarkdownElement: freezed == citeAsMarkdownElement
           ? _value.citeAsMarkdownElement
           : citeAsMarkdownElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       assertion: freezed == assertion
           ? _value.assertion
           : assertion // ignore: cast_nullable_to_non_nullable
@@ -15067,7 +15125,7 @@ class _$EvidenceCopyWithImpl<$Res, $Val extends Evidence>
       assertionElement: freezed == assertionElement
           ? _value.assertionElement
           : assertionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
@@ -15182,49 +15240,49 @@ abstract class _$$EvidenceImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
       FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
       Period? effectivePeriod,
       List<CodeableConcept>? topic,
       List<ContactDetail>? author,
@@ -15234,9 +15292,9 @@ abstract class _$$EvidenceImplCopyWith<$Res>
       List<RelatedArtifact>? relatedArtifact,
       Reference? citeAsReference,
       FhirMarkdown? citeAsMarkdown,
-      @JsonKey(name: '_citeAsMarkdown') Element? citeAsMarkdownElement,
+      @JsonKey(name: '_citeAsMarkdown') PrimitiveElement? citeAsMarkdownElement,
       FhirMarkdown? assertion,
-      @JsonKey(name: '_assertion') Element? assertionElement,
+      @JsonKey(name: '_assertion') PrimitiveElement? assertionElement,
       List<Annotation>? note,
       List<EvidenceVariableDefinition> variableDefinition,
       CodeableConcept? synthesisType,
@@ -15354,7 +15412,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -15362,7 +15420,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -15386,7 +15444,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value._identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -15398,7 +15456,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -15406,7 +15464,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -15418,7 +15476,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -15426,7 +15484,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -15434,7 +15492,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -15442,7 +15500,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -15450,7 +15508,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -15458,7 +15516,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value._contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -15470,7 +15528,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value._useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -15486,7 +15544,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -15494,7 +15552,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -15502,7 +15560,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       approvalDate: freezed == approvalDate
           ? _value.approvalDate
           : approvalDate // ignore: cast_nullable_to_non_nullable
@@ -15510,7 +15568,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       approvalDateElement: freezed == approvalDateElement
           ? _value.approvalDateElement
           : approvalDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       lastReviewDate: freezed == lastReviewDate
           ? _value.lastReviewDate
           : lastReviewDate // ignore: cast_nullable_to_non_nullable
@@ -15518,7 +15576,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       lastReviewDateElement: freezed == lastReviewDateElement
           ? _value.lastReviewDateElement
           : lastReviewDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       effectivePeriod: freezed == effectivePeriod
           ? _value.effectivePeriod
           : effectivePeriod // ignore: cast_nullable_to_non_nullable
@@ -15558,7 +15616,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       citeAsMarkdownElement: freezed == citeAsMarkdownElement
           ? _value.citeAsMarkdownElement
           : citeAsMarkdownElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       assertion: freezed == assertion
           ? _value.assertion
           : assertion // ignore: cast_nullable_to_non_nullable
@@ -15566,7 +15624,7 @@ class __$$EvidenceImplCopyWithImpl<$Res>
       assertionElement: freezed == assertionElement
           ? _value.assertionElement
           : assertionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value._note
           : note // ignore: cast_nullable_to_non_nullable
@@ -15714,7 +15772,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -15723,7 +15781,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -15827,7 +15885,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   /// [identifier] A formal identifier that is used to identify this summary when
   ///  it is represented in other formats, or referenced in a specification,
@@ -15858,7 +15916,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -15869,7 +15927,7 @@ class _$EvidenceImpl extends _Evidence {
   ///  versionAlgorithmString
   @override
   @JsonKey(name: '_versionAlgorithmString')
-  final Element? versionAlgorithmStringElement;
+  final PrimitiveElement? versionAlgorithmStringElement;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -15885,7 +15943,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [title] A short, descriptive, user-friendly title for the summary.
   @override
@@ -15894,7 +15952,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [status] The status of this summary. Enables tracking the life-cycle of the
   ///  content.
@@ -15904,7 +15962,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [experimental] A Boolean value to indicate that this resource is authored
   ///  for testing purposes (or education/evaluation/marketing) and is not
@@ -15915,7 +15973,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @override
   @JsonKey(name: '_experimental')
-  final Element? experimentalElement;
+  final PrimitiveElement? experimentalElement;
 
   /// [date] The date  (and optionally time) when the summary was last
   ///  significantly changed. The date must change when the business version
@@ -15927,7 +15985,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the evidence.
@@ -15937,7 +15995,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [publisherElement] ("_publisher") Extensions for publisher
   @override
   @JsonKey(name: '_publisher')
-  final Element? publisherElement;
+  final PrimitiveElement? publisherElement;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -15962,7 +16020,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -16008,7 +16066,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [purposeElement] ("_purpose") Extensions for purpose
   @override
   @JsonKey(name: '_purpose')
-  final Element? purposeElement;
+  final PrimitiveElement? purposeElement;
 
   /// [copyright] A copyright statement relating to the Evidence and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
@@ -16019,7 +16077,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @override
   @JsonKey(name: '_copyright')
-  final Element? copyrightElement;
+  final PrimitiveElement? copyrightElement;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -16031,7 +16089,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @override
   @JsonKey(name: '_copyrightLabel')
-  final Element? copyrightLabelElement;
+  final PrimitiveElement? copyrightLabelElement;
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
@@ -16042,7 +16100,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @override
   @JsonKey(name: '_approvalDate')
-  final Element? approvalDateElement;
+  final PrimitiveElement? approvalDateElement;
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
@@ -16053,7 +16111,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @override
   @JsonKey(name: '_lastReviewDate')
-  final Element? lastReviewDateElement;
+  final PrimitiveElement? lastReviewDateElement;
 
   /// [effectivePeriod] The period during which the {{title}} content was or is
   ///  planned to be in active use.
@@ -16163,7 +16221,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [citeAsMarkdownElement] ("_citeAsMarkdown") Extensions for citeAsMarkdown
   @override
   @JsonKey(name: '_citeAsMarkdown')
-  final Element? citeAsMarkdownElement;
+  final PrimitiveElement? citeAsMarkdownElement;
 
   /// [assertion] Declarative description of the Evidence.
   @override
@@ -16172,7 +16230,7 @@ class _$EvidenceImpl extends _Evidence {
   /// [assertionElement] ("_assertion") Extensions for assertion
   @override
   @JsonKey(name: '_assertion')
-  final Element? assertionElement;
+  final PrimitiveElement? assertionElement;
 
   /// [note] Footnotes and/or explanatory notes.
   final List<Annotation>? _note;
@@ -16452,49 +16510,54 @@ abstract class _Evidence extends Evidence {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUri? url,
-      @JsonKey(name: '_url') final Element? urlElement,
+      @JsonKey(name: '_url') final PrimitiveElement? urlElement,
       final List<Identifier>? identifier,
       final String? version,
-      @JsonKey(name: '_version') final Element? versionElement,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
       final String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      final Element? versionAlgorithmStringElement,
+      final PrimitiveElement? versionAlgorithmStringElement,
       final Coding? versionAlgorithmCoding,
       final String? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final FhirCode? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') final Element? experimentalElement,
+      @JsonKey(name: '_experimental')
+      final PrimitiveElement? experimentalElement,
       final FhirDateTime? date,
-      @JsonKey(name: '_date') final Element? dateElement,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
       final String? publisher,
-      @JsonKey(name: '_publisher') final Element? publisherElement,
+      @JsonKey(name: '_publisher') final PrimitiveElement? publisherElement,
       final List<ContactDetail>? contact,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<UsageContext>? useContext,
       final List<CodeableConcept>? jurisdiction,
       final FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') final Element? purposeElement,
+      @JsonKey(name: '_purpose') final PrimitiveElement? purposeElement,
       final FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') final Element? copyrightElement,
+      @JsonKey(name: '_copyright') final PrimitiveElement? copyrightElement,
       final String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') final Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel')
+      final PrimitiveElement? copyrightLabelElement,
       final FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') final Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate')
+      final PrimitiveElement? approvalDateElement,
       final FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') final Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate')
+      final PrimitiveElement? lastReviewDateElement,
       final Period? effectivePeriod,
       final List<CodeableConcept>? topic,
       final List<ContactDetail>? author,
@@ -16504,9 +16567,10 @@ abstract class _Evidence extends Evidence {
       final List<RelatedArtifact>? relatedArtifact,
       final Reference? citeAsReference,
       final FhirMarkdown? citeAsMarkdown,
-      @JsonKey(name: '_citeAsMarkdown') final Element? citeAsMarkdownElement,
+      @JsonKey(name: '_citeAsMarkdown')
+      final PrimitiveElement? citeAsMarkdownElement,
       final FhirMarkdown? assertion,
-      @JsonKey(name: '_assertion') final Element? assertionElement,
+      @JsonKey(name: '_assertion') final PrimitiveElement? assertionElement,
       final List<Annotation>? note,
       required final List<EvidenceVariableDefinition> variableDefinition,
       final CodeableConcept? synthesisType,
@@ -16545,7 +16609,7 @@ abstract class _Evidence extends Evidence {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -16554,7 +16618,7 @@ abstract class _Evidence extends Evidence {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -16610,7 +16674,7 @@ abstract class _Evidence extends Evidence {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
 
   /// [identifier] A formal identifier that is used to identify this summary when
@@ -16630,7 +16694,7 @@ abstract class _Evidence extends Evidence {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
@@ -16641,7 +16705,7 @@ abstract class _Evidence extends Evidence {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement;
+  PrimitiveElement? get versionAlgorithmStringElement;
   @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -16657,7 +16721,7 @@ abstract class _Evidence extends Evidence {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [title] A short, descriptive, user-friendly title for the summary.
@@ -16666,7 +16730,7 @@ abstract class _Evidence extends Evidence {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [status] The status of this summary. Enables tracking the life-cycle of the
@@ -16676,7 +16740,7 @@ abstract class _Evidence extends Evidence {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [experimental] A Boolean value to indicate that this resource is authored
@@ -16687,7 +16751,7 @@ abstract class _Evidence extends Evidence {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement;
+  PrimitiveElement? get experimentalElement;
   @override
 
   /// [date] The date  (and optionally time) when the summary was last
@@ -16699,7 +16763,7 @@ abstract class _Evidence extends Evidence {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [publisher] The name of the organization or individual responsible for the
@@ -16709,7 +16773,7 @@ abstract class _Evidence extends Evidence {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement;
+  PrimitiveElement? get publisherElement;
   @override
 
   /// [contact] Contact details to assist a user in finding and communicating
@@ -16724,7 +16788,7 @@ abstract class _Evidence extends Evidence {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [useContext] The content was developed with a focus and intent of
@@ -16747,7 +16811,7 @@ abstract class _Evidence extends Evidence {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement;
+  PrimitiveElement? get purposeElement;
   @override
 
   /// [copyright] A copyright statement relating to the Evidence and/or its
@@ -16758,7 +16822,7 @@ abstract class _Evidence extends Evidence {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement;
+  PrimitiveElement? get copyrightElement;
   @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
@@ -16770,7 +16834,7 @@ abstract class _Evidence extends Evidence {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement;
+  PrimitiveElement? get copyrightLabelElement;
   @override
 
   /// [approvalDate] The date on which the resource content was approved by the
@@ -16781,7 +16845,7 @@ abstract class _Evidence extends Evidence {
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @JsonKey(name: '_approvalDate')
-  Element? get approvalDateElement;
+  PrimitiveElement? get approvalDateElement;
   @override
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
@@ -16792,7 +16856,7 @@ abstract class _Evidence extends Evidence {
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @JsonKey(name: '_lastReviewDate')
-  Element? get lastReviewDateElement;
+  PrimitiveElement? get lastReviewDateElement;
   @override
 
   /// [effectivePeriod] The period during which the {{title}} content was or is
@@ -16842,7 +16906,7 @@ abstract class _Evidence extends Evidence {
 
   /// [citeAsMarkdownElement] ("_citeAsMarkdown") Extensions for citeAsMarkdown
   @JsonKey(name: '_citeAsMarkdown')
-  Element? get citeAsMarkdownElement;
+  PrimitiveElement? get citeAsMarkdownElement;
   @override
 
   /// [assertion] Declarative description of the Evidence.
@@ -16851,7 +16915,7 @@ abstract class _Evidence extends Evidence {
 
   /// [assertionElement] ("_assertion") Extensions for assertion
   @JsonKey(name: '_assertion')
-  Element? get assertionElement;
+  PrimitiveElement? get assertionElement;
   @override
 
   /// [note] Footnotes and/or explanatory notes.
@@ -16925,7 +16989,8 @@ mixin _$EvidenceVariableDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [note] Footnotes and/or explanatory notes.
   List<Annotation>? get note => throw _privateConstructorUsedError;
@@ -16962,7 +17027,7 @@ abstract class $EvidenceVariableDefinitionCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Annotation>? note,
       CodeableConcept variableRole,
       Reference? observed,
@@ -17020,7 +17085,7 @@ class _$EvidenceVariableDefinitionCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
@@ -17103,7 +17168,7 @@ abstract class _$$EvidenceVariableDefinitionImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Annotation>? note,
       CodeableConcept variableRole,
       Reference? observed,
@@ -17164,7 +17229,7 @@ class __$$EvidenceVariableDefinitionImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value._note
           : note // ignore: cast_nullable_to_non_nullable
@@ -17284,7 +17349,7 @@ class _$EvidenceVariableDefinitionImpl extends _EvidenceVariableDefinition {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [note] Footnotes and/or explanatory notes.
   final List<Annotation>? _note;
@@ -17379,17 +17444,17 @@ class _$EvidenceVariableDefinitionImpl extends _EvidenceVariableDefinition {
 
 abstract class _EvidenceVariableDefinition extends EvidenceVariableDefinition {
   const factory _EvidenceVariableDefinition(
-          {final String? id,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final FhirMarkdown? description,
-          @JsonKey(name: '_description') final Element? descriptionElement,
-          final List<Annotation>? note,
-          required final CodeableConcept variableRole,
-          final Reference? observed,
-          final Reference? intended,
-          final CodeableConcept? directnessMatch}) =
-      _$EvidenceVariableDefinitionImpl;
+      {final String? id,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final FhirMarkdown? description,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
+      final List<Annotation>? note,
+      required final CodeableConcept variableRole,
+      final Reference? observed,
+      final Reference? intended,
+      final CodeableConcept?
+          directnessMatch}) = _$EvidenceVariableDefinitionImpl;
   const _EvidenceVariableDefinition._() : super._();
 
   factory _EvidenceVariableDefinition.fromJson(Map<String, dynamic> json) =
@@ -17433,7 +17498,7 @@ abstract class _EvidenceVariableDefinition extends EvidenceVariableDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [note] Footnotes and/or explanatory notes.
@@ -17501,7 +17566,8 @@ mixin _$EvidenceStatistic {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [note] Footnotes and/or explanatory notes.
   List<Annotation>? get note => throw _privateConstructorUsedError;
@@ -17524,7 +17590,8 @@ mixin _$EvidenceStatistic {
 
   /// [numberOfEventsElement] ("_numberOfEvents") Extensions for numberOfEvents
   @JsonKey(name: '_numberOfEvents')
-  Element? get numberOfEventsElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get numberOfEventsElement =>
+      throw _privateConstructorUsedError;
 
   /// [numberAffected] The number of participants affected where the unit of
   ///  analysis is the same as sampleSize.knownDataCount and
@@ -17533,7 +17600,8 @@ mixin _$EvidenceStatistic {
 
   /// [numberAffectedElement] ("_numberAffected") Extensions for numberAffected
   @JsonKey(name: '_numberAffected')
-  Element? get numberAffectedElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get numberAffectedElement =>
+      throw _privateConstructorUsedError;
 
   /// [sampleSize] Number of samples in the statistic.
   EvidenceSampleSize? get sampleSize => throw _privateConstructorUsedError;
@@ -17564,15 +17632,15 @@ abstract class $EvidenceStatisticCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Annotation>? note,
       CodeableConcept? statisticType,
       CodeableConcept? category,
       Quantity? quantity,
       FhirUnsignedInt? numberOfEvents,
-      @JsonKey(name: '_numberOfEvents') Element? numberOfEventsElement,
+      @JsonKey(name: '_numberOfEvents') PrimitiveElement? numberOfEventsElement,
       FhirUnsignedInt? numberAffected,
-      @JsonKey(name: '_numberAffected') Element? numberAffectedElement,
+      @JsonKey(name: '_numberAffected') PrimitiveElement? numberAffectedElement,
       EvidenceSampleSize? sampleSize,
       List<EvidenceAttributeEstimate>? attributeEstimate,
       List<EvidenceModelCharacteristic>? modelCharacteristic});
@@ -17633,7 +17701,7 @@ class _$EvidenceStatisticCopyWithImpl<$Res, $Val extends EvidenceStatistic>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
@@ -17657,7 +17725,7 @@ class _$EvidenceStatisticCopyWithImpl<$Res, $Val extends EvidenceStatistic>
       numberOfEventsElement: freezed == numberOfEventsElement
           ? _value.numberOfEventsElement
           : numberOfEventsElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       numberAffected: freezed == numberAffected
           ? _value.numberAffected
           : numberAffected // ignore: cast_nullable_to_non_nullable
@@ -17665,7 +17733,7 @@ class _$EvidenceStatisticCopyWithImpl<$Res, $Val extends EvidenceStatistic>
       numberAffectedElement: freezed == numberAffectedElement
           ? _value.numberAffectedElement
           : numberAffectedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sampleSize: freezed == sampleSize
           ? _value.sampleSize
           : sampleSize // ignore: cast_nullable_to_non_nullable
@@ -17743,15 +17811,15 @@ abstract class _$$EvidenceStatisticImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Annotation>? note,
       CodeableConcept? statisticType,
       CodeableConcept? category,
       Quantity? quantity,
       FhirUnsignedInt? numberOfEvents,
-      @JsonKey(name: '_numberOfEvents') Element? numberOfEventsElement,
+      @JsonKey(name: '_numberOfEvents') PrimitiveElement? numberOfEventsElement,
       FhirUnsignedInt? numberAffected,
-      @JsonKey(name: '_numberAffected') Element? numberAffectedElement,
+      @JsonKey(name: '_numberAffected') PrimitiveElement? numberAffectedElement,
       EvidenceSampleSize? sampleSize,
       List<EvidenceAttributeEstimate>? attributeEstimate,
       List<EvidenceModelCharacteristic>? modelCharacteristic});
@@ -17814,7 +17882,7 @@ class __$$EvidenceStatisticImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value._note
           : note // ignore: cast_nullable_to_non_nullable
@@ -17838,7 +17906,7 @@ class __$$EvidenceStatisticImplCopyWithImpl<$Res>
       numberOfEventsElement: freezed == numberOfEventsElement
           ? _value.numberOfEventsElement
           : numberOfEventsElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       numberAffected: freezed == numberAffected
           ? _value.numberAffected
           : numberAffected // ignore: cast_nullable_to_non_nullable
@@ -17846,7 +17914,7 @@ class __$$EvidenceStatisticImplCopyWithImpl<$Res>
       numberAffectedElement: freezed == numberAffectedElement
           ? _value.numberAffectedElement
           : numberAffectedElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sampleSize: freezed == sampleSize
           ? _value.sampleSize
           : sampleSize // ignore: cast_nullable_to_non_nullable
@@ -17965,7 +18033,7 @@ class _$EvidenceStatisticImpl extends _EvidenceStatistic {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [note] Footnotes and/or explanatory notes.
   final List<Annotation>? _note;
@@ -18003,7 +18071,7 @@ class _$EvidenceStatisticImpl extends _EvidenceStatistic {
   /// [numberOfEventsElement] ("_numberOfEvents") Extensions for numberOfEvents
   @override
   @JsonKey(name: '_numberOfEvents')
-  final Element? numberOfEventsElement;
+  final PrimitiveElement? numberOfEventsElement;
 
   /// [numberAffected] The number of participants affected where the unit of
   ///  analysis is the same as sampleSize.knownDataCount and
@@ -18014,7 +18082,7 @@ class _$EvidenceStatisticImpl extends _EvidenceStatistic {
   /// [numberAffectedElement] ("_numberAffected") Extensions for numberAffected
   @override
   @JsonKey(name: '_numberAffected')
-  final Element? numberAffectedElement;
+  final PrimitiveElement? numberAffectedElement;
 
   /// [sampleSize] Number of samples in the statistic.
   @override
@@ -18134,15 +18202,17 @@ abstract class _EvidenceStatistic extends EvidenceStatistic {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<Annotation>? note,
       final CodeableConcept? statisticType,
       final CodeableConcept? category,
       final Quantity? quantity,
       final FhirUnsignedInt? numberOfEvents,
-      @JsonKey(name: '_numberOfEvents') final Element? numberOfEventsElement,
+      @JsonKey(name: '_numberOfEvents')
+      final PrimitiveElement? numberOfEventsElement,
       final FhirUnsignedInt? numberAffected,
-      @JsonKey(name: '_numberAffected') final Element? numberAffectedElement,
+      @JsonKey(name: '_numberAffected')
+      final PrimitiveElement? numberAffectedElement,
       final EvidenceSampleSize? sampleSize,
       final List<EvidenceAttributeEstimate>? attributeEstimate,
       final List<EvidenceModelCharacteristic>?
@@ -18190,7 +18260,7 @@ abstract class _EvidenceStatistic extends EvidenceStatistic {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [note] Footnotes and/or explanatory notes.
@@ -18219,7 +18289,7 @@ abstract class _EvidenceStatistic extends EvidenceStatistic {
 
   /// [numberOfEventsElement] ("_numberOfEvents") Extensions for numberOfEvents
   @JsonKey(name: '_numberOfEvents')
-  Element? get numberOfEventsElement;
+  PrimitiveElement? get numberOfEventsElement;
   @override
 
   /// [numberAffected] The number of participants affected where the unit of
@@ -18230,7 +18300,7 @@ abstract class _EvidenceStatistic extends EvidenceStatistic {
 
   /// [numberAffectedElement] ("_numberAffected") Extensions for numberAffected
   @JsonKey(name: '_numberAffected')
-  Element? get numberAffectedElement;
+  PrimitiveElement? get numberAffectedElement;
   @override
 
   /// [sampleSize] Number of samples in the statistic.
@@ -18289,7 +18359,8 @@ mixin _$EvidenceSampleSize {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [note] Footnote or explanatory note about the sample size.
   List<Annotation>? get note => throw _privateConstructorUsedError;
@@ -18299,7 +18370,8 @@ mixin _$EvidenceSampleSize {
 
   /// [numberOfStudiesElement] ("_numberOfStudies") Extensions for numberOfStudies
   @JsonKey(name: '_numberOfStudies')
-  Element? get numberOfStudiesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get numberOfStudiesElement =>
+      throw _privateConstructorUsedError;
 
   /// [numberOfParticipants] A human-readable string to clarify or explain
   ///  concepts about the sample size.
@@ -18309,7 +18381,7 @@ mixin _$EvidenceSampleSize {
   /// [numberOfParticipantsElement] ("_numberOfParticipants") Extensions for
   ///  numberOfParticipants
   @JsonKey(name: '_numberOfParticipants')
-  Element? get numberOfParticipantsElement =>
+  PrimitiveElement? get numberOfParticipantsElement =>
       throw _privateConstructorUsedError;
 
   /// [knownDataCount] Number of participants with known results for measured
@@ -18318,7 +18390,8 @@ mixin _$EvidenceSampleSize {
 
   /// [knownDataCountElement] ("_knownDataCount") Extensions for knownDataCount
   @JsonKey(name: '_knownDataCount')
-  Element? get knownDataCountElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get knownDataCountElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -18337,15 +18410,17 @@ abstract class $EvidenceSampleSizeCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Annotation>? note,
       FhirUnsignedInt? numberOfStudies,
-      @JsonKey(name: '_numberOfStudies') Element? numberOfStudiesElement,
+      @JsonKey(name: '_numberOfStudies')
+      PrimitiveElement? numberOfStudiesElement,
       FhirUnsignedInt? numberOfParticipants,
       @JsonKey(name: '_numberOfParticipants')
-      Element? numberOfParticipantsElement,
+      PrimitiveElement? numberOfParticipantsElement,
       FhirUnsignedInt? knownDataCount,
-      @JsonKey(name: '_knownDataCount') Element? knownDataCountElement});
+      @JsonKey(name: '_knownDataCount')
+      PrimitiveElement? knownDataCountElement});
 }
 
 /// @nodoc
@@ -18394,7 +18469,7 @@ class _$EvidenceSampleSizeCopyWithImpl<$Res, $Val extends EvidenceSampleSize>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
@@ -18406,7 +18481,7 @@ class _$EvidenceSampleSizeCopyWithImpl<$Res, $Val extends EvidenceSampleSize>
       numberOfStudiesElement: freezed == numberOfStudiesElement
           ? _value.numberOfStudiesElement
           : numberOfStudiesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       numberOfParticipants: freezed == numberOfParticipants
           ? _value.numberOfParticipants
           : numberOfParticipants // ignore: cast_nullable_to_non_nullable
@@ -18414,7 +18489,7 @@ class _$EvidenceSampleSizeCopyWithImpl<$Res, $Val extends EvidenceSampleSize>
       numberOfParticipantsElement: freezed == numberOfParticipantsElement
           ? _value.numberOfParticipantsElement
           : numberOfParticipantsElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       knownDataCount: freezed == knownDataCount
           ? _value.knownDataCount
           : knownDataCount // ignore: cast_nullable_to_non_nullable
@@ -18422,7 +18497,7 @@ class _$EvidenceSampleSizeCopyWithImpl<$Res, $Val extends EvidenceSampleSize>
       knownDataCountElement: freezed == knownDataCountElement
           ? _value.knownDataCountElement
           : knownDataCountElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 }
@@ -18440,15 +18515,17 @@ abstract class _$$EvidenceSampleSizeImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Annotation>? note,
       FhirUnsignedInt? numberOfStudies,
-      @JsonKey(name: '_numberOfStudies') Element? numberOfStudiesElement,
+      @JsonKey(name: '_numberOfStudies')
+      PrimitiveElement? numberOfStudiesElement,
       FhirUnsignedInt? numberOfParticipants,
       @JsonKey(name: '_numberOfParticipants')
-      Element? numberOfParticipantsElement,
+      PrimitiveElement? numberOfParticipantsElement,
       FhirUnsignedInt? knownDataCount,
-      @JsonKey(name: '_knownDataCount') Element? knownDataCountElement});
+      @JsonKey(name: '_knownDataCount')
+      PrimitiveElement? knownDataCountElement});
 }
 
 /// @nodoc
@@ -18495,7 +18572,7 @@ class __$$EvidenceSampleSizeImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value._note
           : note // ignore: cast_nullable_to_non_nullable
@@ -18507,7 +18584,7 @@ class __$$EvidenceSampleSizeImplCopyWithImpl<$Res>
       numberOfStudiesElement: freezed == numberOfStudiesElement
           ? _value.numberOfStudiesElement
           : numberOfStudiesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       numberOfParticipants: freezed == numberOfParticipants
           ? _value.numberOfParticipants
           : numberOfParticipants // ignore: cast_nullable_to_non_nullable
@@ -18515,7 +18592,7 @@ class __$$EvidenceSampleSizeImplCopyWithImpl<$Res>
       numberOfParticipantsElement: freezed == numberOfParticipantsElement
           ? _value.numberOfParticipantsElement
           : numberOfParticipantsElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       knownDataCount: freezed == knownDataCount
           ? _value.knownDataCount
           : knownDataCount // ignore: cast_nullable_to_non_nullable
@@ -18523,7 +18600,7 @@ class __$$EvidenceSampleSizeImplCopyWithImpl<$Res>
       knownDataCountElement: freezed == knownDataCountElement
           ? _value.knownDataCountElement
           : knownDataCountElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -18624,7 +18701,7 @@ class _$EvidenceSampleSizeImpl extends _EvidenceSampleSize {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [note] Footnote or explanatory note about the sample size.
   final List<Annotation>? _note;
@@ -18646,7 +18723,7 @@ class _$EvidenceSampleSizeImpl extends _EvidenceSampleSize {
   /// [numberOfStudiesElement] ("_numberOfStudies") Extensions for numberOfStudies
   @override
   @JsonKey(name: '_numberOfStudies')
-  final Element? numberOfStudiesElement;
+  final PrimitiveElement? numberOfStudiesElement;
 
   /// [numberOfParticipants] A human-readable string to clarify or explain
   ///  concepts about the sample size.
@@ -18657,7 +18734,7 @@ class _$EvidenceSampleSizeImpl extends _EvidenceSampleSize {
   ///  numberOfParticipants
   @override
   @JsonKey(name: '_numberOfParticipants')
-  final Element? numberOfParticipantsElement;
+  final PrimitiveElement? numberOfParticipantsElement;
 
   /// [knownDataCount] Number of participants with known results for measured
   ///  variables.
@@ -18667,7 +18744,7 @@ class _$EvidenceSampleSizeImpl extends _EvidenceSampleSize {
   /// [knownDataCountElement] ("_knownDataCount") Extensions for knownDataCount
   @override
   @JsonKey(name: '_knownDataCount')
-  final Element? knownDataCountElement;
+  final PrimitiveElement? knownDataCountElement;
 
   @override
   String toString() {
@@ -18743,16 +18820,18 @@ abstract class _EvidenceSampleSize extends EvidenceSampleSize {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<Annotation>? note,
       final FhirUnsignedInt? numberOfStudies,
-      @JsonKey(name: '_numberOfStudies') final Element? numberOfStudiesElement,
+      @JsonKey(name: '_numberOfStudies')
+      final PrimitiveElement? numberOfStudiesElement,
       final FhirUnsignedInt? numberOfParticipants,
       @JsonKey(name: '_numberOfParticipants')
-      final Element? numberOfParticipantsElement,
+      final PrimitiveElement? numberOfParticipantsElement,
       final FhirUnsignedInt? knownDataCount,
       @JsonKey(name: '_knownDataCount')
-      final Element? knownDataCountElement}) = _$EvidenceSampleSizeImpl;
+      final PrimitiveElement?
+          knownDataCountElement}) = _$EvidenceSampleSizeImpl;
   const _EvidenceSampleSize._() : super._();
 
   factory _EvidenceSampleSize.fromJson(Map<String, dynamic> json) =
@@ -18796,7 +18875,7 @@ abstract class _EvidenceSampleSize extends EvidenceSampleSize {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [note] Footnote or explanatory note about the sample size.
@@ -18809,7 +18888,7 @@ abstract class _EvidenceSampleSize extends EvidenceSampleSize {
 
   /// [numberOfStudiesElement] ("_numberOfStudies") Extensions for numberOfStudies
   @JsonKey(name: '_numberOfStudies')
-  Element? get numberOfStudiesElement;
+  PrimitiveElement? get numberOfStudiesElement;
   @override
 
   /// [numberOfParticipants] A human-readable string to clarify or explain
@@ -18820,7 +18899,7 @@ abstract class _EvidenceSampleSize extends EvidenceSampleSize {
   /// [numberOfParticipantsElement] ("_numberOfParticipants") Extensions for
   ///  numberOfParticipants
   @JsonKey(name: '_numberOfParticipants')
-  Element? get numberOfParticipantsElement;
+  PrimitiveElement? get numberOfParticipantsElement;
   @override
 
   /// [knownDataCount] Number of participants with known results for measured
@@ -18830,7 +18909,7 @@ abstract class _EvidenceSampleSize extends EvidenceSampleSize {
 
   /// [knownDataCountElement] ("_knownDataCount") Extensions for knownDataCount
   @JsonKey(name: '_knownDataCount')
-  Element? get knownDataCountElement;
+  PrimitiveElement? get knownDataCountElement;
   @override
   @JsonKey(ignore: true)
   _$$EvidenceSampleSizeImplCopyWith<_$EvidenceSampleSizeImpl> get copyWith =>
@@ -18877,7 +18956,8 @@ mixin _$EvidenceAttributeEstimate {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [note] Footnote or explanatory note about the estimate.
   List<Annotation>? get note => throw _privateConstructorUsedError;
@@ -18895,7 +18975,7 @@ mixin _$EvidenceAttributeEstimate {
 
   /// [levelElement] ("_level") Extensions for level
   @JsonKey(name: '_level')
-  Element? get levelElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get levelElement => throw _privateConstructorUsedError;
 
   /// [range] Lower bound of confidence interval.
   Range? get range => throw _privateConstructorUsedError;
@@ -18922,12 +19002,12 @@ abstract class $EvidenceAttributeEstimateCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Annotation>? note,
       CodeableConcept? type,
       Quantity? quantity,
       FhirDecimal? level,
-      @JsonKey(name: '_level') Element? levelElement,
+      @JsonKey(name: '_level') PrimitiveElement? levelElement,
       Range? range,
       List<EvidenceAttributeEstimate>? attributeEstimate});
 
@@ -18983,7 +19063,7 @@ class _$EvidenceAttributeEstimateCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
@@ -19003,7 +19083,7 @@ class _$EvidenceAttributeEstimateCopyWithImpl<$Res,
       levelElement: freezed == levelElement
           ? _value.levelElement
           : levelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       range: freezed == range
           ? _value.range
           : range // ignore: cast_nullable_to_non_nullable
@@ -19066,12 +19146,12 @@ abstract class _$$EvidenceAttributeEstimateImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Annotation>? note,
       CodeableConcept? type,
       Quantity? quantity,
       FhirDecimal? level,
-      @JsonKey(name: '_level') Element? levelElement,
+      @JsonKey(name: '_level') PrimitiveElement? levelElement,
       Range? range,
       List<EvidenceAttributeEstimate>? attributeEstimate});
 
@@ -19129,7 +19209,7 @@ class __$$EvidenceAttributeEstimateImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value._note
           : note // ignore: cast_nullable_to_non_nullable
@@ -19149,7 +19229,7 @@ class __$$EvidenceAttributeEstimateImplCopyWithImpl<$Res>
       levelElement: freezed == levelElement
           ? _value.levelElement
           : levelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       range: freezed == range
           ? _value.range
           : range // ignore: cast_nullable_to_non_nullable
@@ -19259,7 +19339,7 @@ class _$EvidenceAttributeEstimateImpl extends _EvidenceAttributeEstimate {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [note] Footnote or explanatory note about the estimate.
   final List<Annotation>? _note;
@@ -19291,7 +19371,7 @@ class _$EvidenceAttributeEstimateImpl extends _EvidenceAttributeEstimate {
   /// [levelElement] ("_level") Extensions for level
   @override
   @JsonKey(name: '_level')
-  final Element? levelElement;
+  final PrimitiveElement? levelElement;
 
   /// [range] Lower bound of confidence interval.
   @override
@@ -19378,19 +19458,19 @@ class _$EvidenceAttributeEstimateImpl extends _EvidenceAttributeEstimate {
 
 abstract class _EvidenceAttributeEstimate extends EvidenceAttributeEstimate {
   const factory _EvidenceAttributeEstimate(
-          {final String? id,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final FhirMarkdown? description,
-          @JsonKey(name: '_description') final Element? descriptionElement,
-          final List<Annotation>? note,
-          final CodeableConcept? type,
-          final Quantity? quantity,
-          final FhirDecimal? level,
-          @JsonKey(name: '_level') final Element? levelElement,
-          final Range? range,
-          final List<EvidenceAttributeEstimate>? attributeEstimate}) =
-      _$EvidenceAttributeEstimateImpl;
+      {final String? id,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final FhirMarkdown? description,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
+      final List<Annotation>? note,
+      final CodeableConcept? type,
+      final Quantity? quantity,
+      final FhirDecimal? level,
+      @JsonKey(name: '_level') final PrimitiveElement? levelElement,
+      final Range? range,
+      final List<EvidenceAttributeEstimate>?
+          attributeEstimate}) = _$EvidenceAttributeEstimateImpl;
   const _EvidenceAttributeEstimate._() : super._();
 
   factory _EvidenceAttributeEstimate.fromJson(Map<String, dynamic> json) =
@@ -19434,7 +19514,7 @@ abstract class _EvidenceAttributeEstimate extends EvidenceAttributeEstimate {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [note] Footnote or explanatory note about the estimate.
@@ -19457,7 +19537,7 @@ abstract class _EvidenceAttributeEstimate extends EvidenceAttributeEstimate {
 
   /// [levelElement] ("_level") Extensions for level
   @JsonKey(name: '_level')
-  Element? get levelElement;
+  PrimitiveElement? get levelElement;
   @override
 
   /// [range] Lower bound of confidence interval.
@@ -19990,7 +20070,7 @@ mixin _$ModelCharacteristicVariable {
 
   /// [handlingElement] ("_handling") Extensions for handling
   @JsonKey(name: '_handling')
-  Element? get handlingElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get handlingElement => throw _privateConstructorUsedError;
 
   /// [valueCategory] Description for grouping of ordinal or polychotomous
   ///  variables.
@@ -20025,7 +20105,7 @@ abstract class $ModelCharacteristicVariableCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       Reference variableDefinition,
       FhirCode? handling,
-      @JsonKey(name: '_handling') Element? handlingElement,
+      @JsonKey(name: '_handling') PrimitiveElement? handlingElement,
       List<CodeableConcept>? valueCategory,
       List<Quantity>? valueQuantity,
       List<Range>? valueRange});
@@ -20081,7 +20161,7 @@ class _$ModelCharacteristicVariableCopyWithImpl<$Res,
       handlingElement: freezed == handlingElement
           ? _value.handlingElement
           : handlingElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueCategory: freezed == valueCategory
           ? _value.valueCategory
           : valueCategory // ignore: cast_nullable_to_non_nullable
@@ -20121,7 +20201,7 @@ abstract class _$$ModelCharacteristicVariableImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       Reference variableDefinition,
       FhirCode? handling,
-      @JsonKey(name: '_handling') Element? handlingElement,
+      @JsonKey(name: '_handling') PrimitiveElement? handlingElement,
       List<CodeableConcept>? valueCategory,
       List<Quantity>? valueQuantity,
       List<Range>? valueRange});
@@ -20177,7 +20257,7 @@ class __$$ModelCharacteristicVariableImplCopyWithImpl<$Res>
       handlingElement: freezed == handlingElement
           ? _value.handlingElement
           : handlingElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueCategory: freezed == valueCategory
           ? _value._valueCategory
           : valueCategory // ignore: cast_nullable_to_non_nullable
@@ -20294,7 +20374,7 @@ class _$ModelCharacteristicVariableImpl extends _ModelCharacteristicVariable {
   /// [handlingElement] ("_handling") Extensions for handling
   @override
   @JsonKey(name: '_handling')
-  final Element? handlingElement;
+  final PrimitiveElement? handlingElement;
 
   /// [valueCategory] Description for grouping of ordinal or polychotomous
   ///  variables.
@@ -20407,7 +20487,7 @@ abstract class _ModelCharacteristicVariable
       final List<FhirExtension>? modifierExtension,
       required final Reference variableDefinition,
       final FhirCode? handling,
-      @JsonKey(name: '_handling') final Element? handlingElement,
+      @JsonKey(name: '_handling') final PrimitiveElement? handlingElement,
       final List<CodeableConcept>? valueCategory,
       final List<Quantity>? valueQuantity,
       final List<Range>? valueRange}) = _$ModelCharacteristicVariableImpl;
@@ -20458,7 +20538,7 @@ abstract class _ModelCharacteristicVariable
 
   /// [handlingElement] ("_handling") Extensions for handling
   @JsonKey(name: '_handling')
-  Element? get handlingElement;
+  PrimitiveElement? get handlingElement;
   @override
 
   /// [valueCategory] Description for grouping of ordinal or polychotomous
@@ -20519,7 +20599,8 @@ mixin _$EvidenceCertainty {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [note] Footnotes and/or explanatory notes.
   List<Annotation>? get note => throw _privateConstructorUsedError;
@@ -20535,7 +20616,7 @@ mixin _$EvidenceCertainty {
 
   /// [raterElement] ("_rater") Extensions for rater
   @JsonKey(name: '_rater')
-  Element? get raterElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get raterElement => throw _privateConstructorUsedError;
 
   /// [subcomponent] A domain or subdomain of certainty.
   List<EvidenceCertainty>? get subcomponent =>
@@ -20558,12 +20639,12 @@ abstract class $EvidenceCertaintyCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Annotation>? note,
       CodeableConcept? type,
       CodeableConcept? rating,
       String? rater,
-      @JsonKey(name: '_rater') Element? raterElement,
+      @JsonKey(name: '_rater') PrimitiveElement? raterElement,
       List<EvidenceCertainty>? subcomponent});
 
   $CodeableConceptCopyWith<$Res>? get type;
@@ -20615,7 +20696,7 @@ class _$EvidenceCertaintyCopyWithImpl<$Res, $Val extends EvidenceCertainty>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
@@ -20635,7 +20716,7 @@ class _$EvidenceCertaintyCopyWithImpl<$Res, $Val extends EvidenceCertainty>
       raterElement: freezed == raterElement
           ? _value.raterElement
           : raterElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       subcomponent: freezed == subcomponent
           ? _value.subcomponent
           : subcomponent // ignore: cast_nullable_to_non_nullable
@@ -20681,12 +20762,12 @@ abstract class _$$EvidenceCertaintyImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Annotation>? note,
       CodeableConcept? type,
       CodeableConcept? rating,
       String? rater,
-      @JsonKey(name: '_rater') Element? raterElement,
+      @JsonKey(name: '_rater') PrimitiveElement? raterElement,
       List<EvidenceCertainty>? subcomponent});
 
   @override
@@ -20738,7 +20819,7 @@ class __$$EvidenceCertaintyImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value._note
           : note // ignore: cast_nullable_to_non_nullable
@@ -20758,7 +20839,7 @@ class __$$EvidenceCertaintyImplCopyWithImpl<$Res>
       raterElement: freezed == raterElement
           ? _value.raterElement
           : raterElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       subcomponent: freezed == subcomponent
           ? _value._subcomponent
           : subcomponent // ignore: cast_nullable_to_non_nullable
@@ -20863,7 +20944,7 @@ class _$EvidenceCertaintyImpl extends _EvidenceCertainty {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [note] Footnotes and/or explanatory notes.
   final List<Annotation>? _note;
@@ -20893,7 +20974,7 @@ class _$EvidenceCertaintyImpl extends _EvidenceCertainty {
   /// [raterElement] ("_rater") Extensions for rater
   @override
   @JsonKey(name: '_rater')
-  final Element? raterElement;
+  final PrimitiveElement? raterElement;
 
   /// [subcomponent] A domain or subdomain of certainty.
   final List<EvidenceCertainty>? _subcomponent;
@@ -20974,12 +21055,12 @@ abstract class _EvidenceCertainty extends EvidenceCertainty {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<Annotation>? note,
       final CodeableConcept? type,
       final CodeableConcept? rating,
       final String? rater,
-      @JsonKey(name: '_rater') final Element? raterElement,
+      @JsonKey(name: '_rater') final PrimitiveElement? raterElement,
       final List<EvidenceCertainty>? subcomponent}) = _$EvidenceCertaintyImpl;
   const _EvidenceCertainty._() : super._();
 
@@ -21024,7 +21105,7 @@ abstract class _EvidenceCertainty extends EvidenceCertainty {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [note] Footnotes and/or explanatory notes.
@@ -21045,7 +21126,7 @@ abstract class _EvidenceCertainty extends EvidenceCertainty {
 
   /// [raterElement] ("_rater") Extensions for rater
   @JsonKey(name: '_rater')
-  Element? get raterElement;
+  PrimitiveElement? get raterElement;
   @override
 
   /// [subcomponent] A domain or subdomain of certainty.
@@ -21083,14 +21164,15 @@ mixin _$EvidenceReport {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -21142,7 +21224,7 @@ mixin _$EvidenceReport {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   /// [identifier] A formal identifier that is used to identify this
   ///  EvidenceReport when it is represented in other formats, or referenced in a
@@ -21160,7 +21242,7 @@ mixin _$EvidenceReport {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -21169,7 +21251,7 @@ mixin _$EvidenceReport {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement =>
+  PrimitiveElement? get versionAlgorithmStringElement =>
       throw _privateConstructorUsedError;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -21183,14 +21265,14 @@ mixin _$EvidenceReport {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [title] A short, descriptive, user-friendly title for the {{title}}.
   String? get title => throw _privateConstructorUsedError;
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [status] The status of this summary. Enables tracking the life-cycle of the
   ///  content.
@@ -21198,7 +21280,7 @@ mixin _$EvidenceReport {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [experimental] A Boolean value to indicate that this {{title}} is authored
   ///  for testing purposes (or education/evaluation/marketing) and is not
@@ -21207,7 +21289,8 @@ mixin _$EvidenceReport {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get experimentalElement =>
+      throw _privateConstructorUsedError;
 
   /// [date] The date (and optionally time) when the {{title}} was last
   ///  significantly changed. The date must change when the business version
@@ -21217,7 +21300,7 @@ mixin _$EvidenceReport {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the evidence report.
@@ -21225,7 +21308,7 @@ mixin _$EvidenceReport {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get publisherElement => throw _privateConstructorUsedError;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -21237,7 +21320,8 @@ mixin _$EvidenceReport {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -21256,7 +21340,7 @@ mixin _$EvidenceReport {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get purposeElement => throw _privateConstructorUsedError;
 
   /// [copyright] A copyright statement relating to the {{title}} and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
@@ -21265,7 +21349,7 @@ mixin _$EvidenceReport {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -21275,7 +21359,8 @@ mixin _$EvidenceReport {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightLabelElement =>
+      throw _privateConstructorUsedError;
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
@@ -21284,7 +21369,8 @@ mixin _$EvidenceReport {
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @JsonKey(name: '_approvalDate')
-  Element? get approvalDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get approvalDateElement =>
+      throw _privateConstructorUsedError;
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
@@ -21293,7 +21379,8 @@ mixin _$EvidenceReport {
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @JsonKey(name: '_lastReviewDate')
-  Element? get lastReviewDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get lastReviewDateElement =>
+      throw _privateConstructorUsedError;
 
   /// [effectivePeriod] The period during which the {{title}} content was or is
   ///  planned to be in active use.
@@ -21339,7 +21426,8 @@ mixin _$EvidenceReport {
 
   /// [citeAsMarkdownElement] ("_citeAsMarkdown") Extensions for citeAsMarkdown
   @JsonKey(name: '_citeAsMarkdown')
-  Element? get citeAsMarkdownElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get citeAsMarkdownElement =>
+      throw _privateConstructorUsedError;
 
   /// [type] Specifies the kind of report, such as grouping of classifiers,
   ///  search results, or human-compiled expression.
@@ -21379,49 +21467,49 @@ abstract class $EvidenceReportCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
       FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
       Period? effectivePeriod,
       List<CodeableConcept>? topic,
       List<ContactDetail>? author,
@@ -21432,7 +21520,7 @@ abstract class $EvidenceReportCopyWith<$Res> {
       List<Identifier>? relatedIdentifier,
       Reference? citeAsReference,
       FhirMarkdown? citeAsMarkdown,
-      @JsonKey(name: '_citeAsMarkdown') Element? citeAsMarkdownElement,
+      @JsonKey(name: '_citeAsMarkdown') PrimitiveElement? citeAsMarkdownElement,
       CodeableConcept? type,
       List<Annotation>? note,
       EvidenceReportSubject subject,
@@ -21544,7 +21632,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -21552,7 +21640,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -21576,7 +21664,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -21588,7 +21676,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -21596,7 +21684,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -21608,7 +21696,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -21616,7 +21704,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -21624,7 +21712,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -21632,7 +21720,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -21640,7 +21728,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -21648,7 +21736,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value.contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -21660,7 +21748,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value.useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -21676,7 +21764,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -21684,7 +21772,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -21692,7 +21780,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       approvalDate: freezed == approvalDate
           ? _value.approvalDate
           : approvalDate // ignore: cast_nullable_to_non_nullable
@@ -21700,7 +21788,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       approvalDateElement: freezed == approvalDateElement
           ? _value.approvalDateElement
           : approvalDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       lastReviewDate: freezed == lastReviewDate
           ? _value.lastReviewDate
           : lastReviewDate // ignore: cast_nullable_to_non_nullable
@@ -21708,7 +21796,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       lastReviewDateElement: freezed == lastReviewDateElement
           ? _value.lastReviewDateElement
           : lastReviewDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       effectivePeriod: freezed == effectivePeriod
           ? _value.effectivePeriod
           : effectivePeriod // ignore: cast_nullable_to_non_nullable
@@ -21752,7 +21840,7 @@ class _$EvidenceReportCopyWithImpl<$Res, $Val extends EvidenceReport>
       citeAsMarkdownElement: freezed == citeAsMarkdownElement
           ? _value.citeAsMarkdownElement
           : citeAsMarkdownElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -21871,49 +21959,49 @@ abstract class _$$EvidenceReportImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
       FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
       Period? effectivePeriod,
       List<CodeableConcept>? topic,
       List<ContactDetail>? author,
@@ -21924,7 +22012,7 @@ abstract class _$$EvidenceReportImplCopyWith<$Res>
       List<Identifier>? relatedIdentifier,
       Reference? citeAsReference,
       FhirMarkdown? citeAsMarkdown,
-      @JsonKey(name: '_citeAsMarkdown') Element? citeAsMarkdownElement,
+      @JsonKey(name: '_citeAsMarkdown') PrimitiveElement? citeAsMarkdownElement,
       CodeableConcept? type,
       List<Annotation>? note,
       EvidenceReportSubject subject,
@@ -22041,7 +22129,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -22049,7 +22137,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -22073,7 +22161,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value._identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -22085,7 +22173,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -22093,7 +22181,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -22105,7 +22193,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -22113,7 +22201,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -22121,7 +22209,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -22129,7 +22217,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -22137,7 +22225,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -22145,7 +22233,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value._contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -22157,7 +22245,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value._useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -22173,7 +22261,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -22181,7 +22269,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -22189,7 +22277,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       approvalDate: freezed == approvalDate
           ? _value.approvalDate
           : approvalDate // ignore: cast_nullable_to_non_nullable
@@ -22197,7 +22285,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       approvalDateElement: freezed == approvalDateElement
           ? _value.approvalDateElement
           : approvalDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       lastReviewDate: freezed == lastReviewDate
           ? _value.lastReviewDate
           : lastReviewDate // ignore: cast_nullable_to_non_nullable
@@ -22205,7 +22293,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       lastReviewDateElement: freezed == lastReviewDateElement
           ? _value.lastReviewDateElement
           : lastReviewDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       effectivePeriod: freezed == effectivePeriod
           ? _value.effectivePeriod
           : effectivePeriod // ignore: cast_nullable_to_non_nullable
@@ -22249,7 +22337,7 @@ class __$$EvidenceReportImplCopyWithImpl<$Res>
       citeAsMarkdownElement: freezed == citeAsMarkdownElement
           ? _value.citeAsMarkdownElement
           : citeAsMarkdownElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -22390,7 +22478,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -22399,7 +22487,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -22504,7 +22592,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   /// [identifier] A formal identifier that is used to identify this
   ///  EvidenceReport when it is represented in other formats, or referenced in a
@@ -22536,7 +22624,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -22547,7 +22635,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   ///  versionAlgorithmString
   @override
   @JsonKey(name: '_versionAlgorithmString')
-  final Element? versionAlgorithmStringElement;
+  final PrimitiveElement? versionAlgorithmStringElement;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -22563,7 +22651,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [title] A short, descriptive, user-friendly title for the {{title}}.
   @override
@@ -22572,7 +22660,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [status] The status of this summary. Enables tracking the life-cycle of the
   ///  content.
@@ -22582,7 +22670,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [experimental] A Boolean value to indicate that this {{title}} is authored
   ///  for testing purposes (or education/evaluation/marketing) and is not
@@ -22593,7 +22681,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @override
   @JsonKey(name: '_experimental')
-  final Element? experimentalElement;
+  final PrimitiveElement? experimentalElement;
 
   /// [date] The date (and optionally time) when the {{title}} was last
   ///  significantly changed. The date must change when the business version
@@ -22605,7 +22693,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the evidence report.
@@ -22615,7 +22703,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   /// [publisherElement] ("_publisher") Extensions for publisher
   @override
   @JsonKey(name: '_publisher')
-  final Element? publisherElement;
+  final PrimitiveElement? publisherElement;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -22640,7 +22728,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -22686,7 +22774,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   /// [purposeElement] ("_purpose") Extensions for purpose
   @override
   @JsonKey(name: '_purpose')
-  final Element? purposeElement;
+  final PrimitiveElement? purposeElement;
 
   /// [copyright] A copyright statement relating to the {{title}} and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
@@ -22697,7 +22785,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @override
   @JsonKey(name: '_copyright')
-  final Element? copyrightElement;
+  final PrimitiveElement? copyrightElement;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -22709,7 +22797,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @override
   @JsonKey(name: '_copyrightLabel')
-  final Element? copyrightLabelElement;
+  final PrimitiveElement? copyrightLabelElement;
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
@@ -22720,7 +22808,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @override
   @JsonKey(name: '_approvalDate')
-  final Element? approvalDateElement;
+  final PrimitiveElement? approvalDateElement;
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
@@ -22731,7 +22819,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @override
   @JsonKey(name: '_lastReviewDate')
-  final Element? lastReviewDateElement;
+  final PrimitiveElement? lastReviewDateElement;
 
   /// [effectivePeriod] The period during which the {{title}} content was or is
   ///  planned to be in active use.
@@ -22859,7 +22947,7 @@ class _$EvidenceReportImpl extends _EvidenceReport {
   /// [citeAsMarkdownElement] ("_citeAsMarkdown") Extensions for citeAsMarkdown
   @override
   @JsonKey(name: '_citeAsMarkdown')
-  final Element? citeAsMarkdownElement;
+  final PrimitiveElement? citeAsMarkdownElement;
 
   /// [type] Specifies the kind of report, such as grouping of classifiers,
   ///  search results, or human-compiled expression.
@@ -23113,49 +23201,54 @@ abstract class _EvidenceReport extends EvidenceReport {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUri? url,
-      @JsonKey(name: '_url') final Element? urlElement,
+      @JsonKey(name: '_url') final PrimitiveElement? urlElement,
       final List<Identifier>? identifier,
       final String? version,
-      @JsonKey(name: '_version') final Element? versionElement,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
       final String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      final Element? versionAlgorithmStringElement,
+      final PrimitiveElement? versionAlgorithmStringElement,
       final Coding? versionAlgorithmCoding,
       final String? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final FhirCode? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') final Element? experimentalElement,
+      @JsonKey(name: '_experimental')
+      final PrimitiveElement? experimentalElement,
       final FhirDateTime? date,
-      @JsonKey(name: '_date') final Element? dateElement,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
       final String? publisher,
-      @JsonKey(name: '_publisher') final Element? publisherElement,
+      @JsonKey(name: '_publisher') final PrimitiveElement? publisherElement,
       final List<ContactDetail>? contact,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<UsageContext>? useContext,
       final List<CodeableConcept>? jurisdiction,
       final FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') final Element? purposeElement,
+      @JsonKey(name: '_purpose') final PrimitiveElement? purposeElement,
       final FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') final Element? copyrightElement,
+      @JsonKey(name: '_copyright') final PrimitiveElement? copyrightElement,
       final String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') final Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel')
+      final PrimitiveElement? copyrightLabelElement,
       final FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') final Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate')
+      final PrimitiveElement? approvalDateElement,
       final FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') final Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate')
+      final PrimitiveElement? lastReviewDateElement,
       final Period? effectivePeriod,
       final List<CodeableConcept>? topic,
       final List<ContactDetail>? author,
@@ -23166,7 +23259,8 @@ abstract class _EvidenceReport extends EvidenceReport {
       final List<Identifier>? relatedIdentifier,
       final Reference? citeAsReference,
       final FhirMarkdown? citeAsMarkdown,
-      @JsonKey(name: '_citeAsMarkdown') final Element? citeAsMarkdownElement,
+      @JsonKey(name: '_citeAsMarkdown')
+      final PrimitiveElement? citeAsMarkdownElement,
       final CodeableConcept? type,
       final List<Annotation>? note,
       required final EvidenceReportSubject subject,
@@ -23204,7 +23298,7 @@ abstract class _EvidenceReport extends EvidenceReport {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -23213,7 +23307,7 @@ abstract class _EvidenceReport extends EvidenceReport {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -23270,7 +23364,7 @@ abstract class _EvidenceReport extends EvidenceReport {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
 
   /// [identifier] A formal identifier that is used to identify this
@@ -23291,7 +23385,7 @@ abstract class _EvidenceReport extends EvidenceReport {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
@@ -23302,7 +23396,7 @@ abstract class _EvidenceReport extends EvidenceReport {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement;
+  PrimitiveElement? get versionAlgorithmStringElement;
   @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -23318,7 +23412,7 @@ abstract class _EvidenceReport extends EvidenceReport {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [title] A short, descriptive, user-friendly title for the {{title}}.
@@ -23327,7 +23421,7 @@ abstract class _EvidenceReport extends EvidenceReport {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [status] The status of this summary. Enables tracking the life-cycle of the
@@ -23337,7 +23431,7 @@ abstract class _EvidenceReport extends EvidenceReport {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [experimental] A Boolean value to indicate that this {{title}} is authored
@@ -23348,7 +23442,7 @@ abstract class _EvidenceReport extends EvidenceReport {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement;
+  PrimitiveElement? get experimentalElement;
   @override
 
   /// [date] The date (and optionally time) when the {{title}} was last
@@ -23360,7 +23454,7 @@ abstract class _EvidenceReport extends EvidenceReport {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [publisher] The name of the organization or individual responsible for the
@@ -23370,7 +23464,7 @@ abstract class _EvidenceReport extends EvidenceReport {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement;
+  PrimitiveElement? get publisherElement;
   @override
 
   /// [contact] Contact details to assist a user in finding and communicating
@@ -23385,7 +23479,7 @@ abstract class _EvidenceReport extends EvidenceReport {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [useContext] The content was developed with a focus and intent of
@@ -23408,7 +23502,7 @@ abstract class _EvidenceReport extends EvidenceReport {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement;
+  PrimitiveElement? get purposeElement;
   @override
 
   /// [copyright] A copyright statement relating to the {{title}} and/or its
@@ -23419,7 +23513,7 @@ abstract class _EvidenceReport extends EvidenceReport {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement;
+  PrimitiveElement? get copyrightElement;
   @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
@@ -23431,7 +23525,7 @@ abstract class _EvidenceReport extends EvidenceReport {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement;
+  PrimitiveElement? get copyrightLabelElement;
   @override
 
   /// [approvalDate] The date on which the resource content was approved by the
@@ -23442,7 +23536,7 @@ abstract class _EvidenceReport extends EvidenceReport {
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @JsonKey(name: '_approvalDate')
-  Element? get approvalDateElement;
+  PrimitiveElement? get approvalDateElement;
   @override
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
@@ -23453,7 +23547,7 @@ abstract class _EvidenceReport extends EvidenceReport {
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @JsonKey(name: '_lastReviewDate')
-  Element? get lastReviewDateElement;
+  PrimitiveElement? get lastReviewDateElement;
   @override
 
   /// [effectivePeriod] The period during which the {{title}} content was or is
@@ -23509,7 +23603,7 @@ abstract class _EvidenceReport extends EvidenceReport {
 
   /// [citeAsMarkdownElement] ("_citeAsMarkdown") Extensions for citeAsMarkdown
   @JsonKey(name: '_citeAsMarkdown')
-  Element? get citeAsMarkdownElement;
+  PrimitiveElement? get citeAsMarkdownElement;
   @override
 
   /// [type] Specifies the kind of report, such as grouping of classifiers,
@@ -23966,7 +24060,8 @@ mixin _$EvidenceReportCharacteristic {
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @JsonKey(name: '_valueBoolean')
-  Element? get valueBooleanElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueBooleanElement =>
+      throw _privateConstructorUsedError;
 
   /// [valueQuantity] Characteristic value.
   Quantity? get valueQuantity => throw _privateConstructorUsedError;
@@ -23979,7 +24074,7 @@ mixin _$EvidenceReportCharacteristic {
 
   /// [excludeElement] ("_exclude") Extensions for exclude
   @JsonKey(name: '_exclude')
-  Element? get excludeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get excludeElement => throw _privateConstructorUsedError;
 
   /// [period] Timeframe for the characteristic.
   Period? get period => throw _privateConstructorUsedError;
@@ -24006,11 +24101,11 @@ abstract class $EvidenceReportCharacteristicCopyWith<$Res> {
       Reference? valueReference,
       CodeableConcept? valueCodeableConcept,
       FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
       Quantity? valueQuantity,
       Range? valueRange,
       FhirBoolean? exclude,
-      @JsonKey(name: '_exclude') Element? excludeElement,
+      @JsonKey(name: '_exclude') PrimitiveElement? excludeElement,
       Period? period});
 
   $CodeableConceptCopyWith<$Res> get code;
@@ -24081,7 +24176,7 @@ class _$EvidenceReportCharacteristicCopyWithImpl<$Res,
       valueBooleanElement: freezed == valueBooleanElement
           ? _value.valueBooleanElement
           : valueBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueQuantity: freezed == valueQuantity
           ? _value.valueQuantity
           : valueQuantity // ignore: cast_nullable_to_non_nullable
@@ -24097,7 +24192,7 @@ class _$EvidenceReportCharacteristicCopyWithImpl<$Res,
       excludeElement: freezed == excludeElement
           ? _value.excludeElement
           : excludeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       period: freezed == period
           ? _value.period
           : period // ignore: cast_nullable_to_non_nullable
@@ -24192,11 +24287,11 @@ abstract class _$$EvidenceReportCharacteristicImplCopyWith<$Res>
       Reference? valueReference,
       CodeableConcept? valueCodeableConcept,
       FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
       Quantity? valueQuantity,
       Range? valueRange,
       FhirBoolean? exclude,
-      @JsonKey(name: '_exclude') Element? excludeElement,
+      @JsonKey(name: '_exclude') PrimitiveElement? excludeElement,
       Period? period});
 
   @override
@@ -24272,7 +24367,7 @@ class __$$EvidenceReportCharacteristicImplCopyWithImpl<$Res>
       valueBooleanElement: freezed == valueBooleanElement
           ? _value.valueBooleanElement
           : valueBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueQuantity: freezed == valueQuantity
           ? _value.valueQuantity
           : valueQuantity // ignore: cast_nullable_to_non_nullable
@@ -24288,7 +24383,7 @@ class __$$EvidenceReportCharacteristicImplCopyWithImpl<$Res>
       excludeElement: freezed == excludeElement
           ? _value.excludeElement
           : excludeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       period: freezed == period
           ? _value.period
           : period // ignore: cast_nullable_to_non_nullable
@@ -24406,7 +24501,7 @@ class _$EvidenceReportCharacteristicImpl extends _EvidenceReportCharacteristic {
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @override
   @JsonKey(name: '_valueBoolean')
-  final Element? valueBooleanElement;
+  final PrimitiveElement? valueBooleanElement;
 
   /// [valueQuantity] Characteristic value.
   @override
@@ -24423,7 +24518,7 @@ class _$EvidenceReportCharacteristicImpl extends _EvidenceReportCharacteristic {
   /// [excludeElement] ("_exclude") Extensions for exclude
   @override
   @JsonKey(name: '_exclude')
-  final Element? excludeElement;
+  final PrimitiveElement? excludeElement;
 
   /// [period] Timeframe for the characteristic.
   @override
@@ -24507,11 +24602,12 @@ abstract class _EvidenceReportCharacteristic
       final Reference? valueReference,
       final CodeableConcept? valueCodeableConcept,
       final FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') final Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean')
+      final PrimitiveElement? valueBooleanElement,
       final Quantity? valueQuantity,
       final Range? valueRange,
       final FhirBoolean? exclude,
-      @JsonKey(name: '_exclude') final Element? excludeElement,
+      @JsonKey(name: '_exclude') final PrimitiveElement? excludeElement,
       final Period? period}) = _$EvidenceReportCharacteristicImpl;
   const _EvidenceReportCharacteristic._() : super._();
 
@@ -24568,7 +24664,7 @@ abstract class _EvidenceReportCharacteristic
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @JsonKey(name: '_valueBoolean')
-  Element? get valueBooleanElement;
+  PrimitiveElement? get valueBooleanElement;
   @override
 
   /// [valueQuantity] Characteristic value.
@@ -24585,7 +24681,7 @@ abstract class _EvidenceReportCharacteristic
 
   /// [excludeElement] ("_exclude") Extensions for exclude
   @JsonKey(name: '_exclude')
-  Element? get excludeElement;
+  PrimitiveElement? get excludeElement;
   @override
 
   /// [period] Timeframe for the characteristic.
@@ -24638,7 +24734,7 @@ mixin _$EvidenceReportRelatesTo {
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get codeElement => throw _privateConstructorUsedError;
 
   /// [target] The target composition/document of this relationship.
   EvidenceReportTarget get target => throw _privateConstructorUsedError;
@@ -24660,7 +24756,7 @@ abstract class $EvidenceReportRelatesToCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       EvidenceReportTarget target});
 
   $EvidenceReportTargetCopyWith<$Res> get target;
@@ -24707,7 +24803,7 @@ class _$EvidenceReportRelatesToCopyWithImpl<$Res,
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       target: null == target
           ? _value.target
           : target // ignore: cast_nullable_to_non_nullable
@@ -24738,7 +24834,7 @@ abstract class _$$EvidenceReportRelatesToImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       EvidenceReportTarget target});
 
   @override
@@ -24785,7 +24881,7 @@ class __$$EvidenceReportRelatesToImplCopyWithImpl<$Res>
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       target: null == target
           ? _value.target
           : target // ignore: cast_nullable_to_non_nullable
@@ -24884,7 +24980,7 @@ class _$EvidenceReportRelatesToImpl extends _EvidenceReportRelatesTo {
   /// [codeElement] ("_code") Extensions for code
   @override
   @JsonKey(name: '_code')
-  final Element? codeElement;
+  final PrimitiveElement? codeElement;
 
   /// [target] The target composition/document of this relationship.
   @override
@@ -24943,7 +25039,7 @@ abstract class _EvidenceReportRelatesTo extends EvidenceReportRelatesTo {
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final FhirCode? code,
-          @JsonKey(name: '_code') final Element? codeElement,
+          @JsonKey(name: '_code') final PrimitiveElement? codeElement,
           required final EvidenceReportTarget target}) =
       _$EvidenceReportRelatesToImpl;
   const _EvidenceReportRelatesTo._() : super._();
@@ -24990,7 +25086,7 @@ abstract class _EvidenceReportRelatesTo extends EvidenceReportRelatesTo {
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement;
+  PrimitiveElement? get codeElement;
   @override
 
   /// [target] The target composition/document of this relationship.
@@ -25040,7 +25136,7 @@ mixin _$EvidenceReportTarget {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   /// [identifier] Target of the relationship Identifier.
   Identifier? get identifier => throw _privateConstructorUsedError;
@@ -25050,7 +25146,7 @@ mixin _$EvidenceReportTarget {
 
   /// [displayElement] ("_display") Extensions for display
   @JsonKey(name: '_display')
-  Element? get displayElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get displayElement => throw _privateConstructorUsedError;
 
   /// [resource] Target of the relationship Resource reference.
   Reference? get resource => throw _privateConstructorUsedError;
@@ -25072,10 +25168,10 @@ abstract class $EvidenceReportTargetCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       Identifier? identifier,
       FhirMarkdown? display,
-      @JsonKey(name: '_display') Element? displayElement,
+      @JsonKey(name: '_display') PrimitiveElement? displayElement,
       Reference? resource});
 
   $IdentifierCopyWith<$Res>? get identifier;
@@ -25126,7 +25222,7 @@ class _$EvidenceReportTargetCopyWithImpl<$Res,
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -25138,7 +25234,7 @@ class _$EvidenceReportTargetCopyWithImpl<$Res,
       displayElement: freezed == displayElement
           ? _value.displayElement
           : displayElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       resource: freezed == resource
           ? _value.resource
           : resource // ignore: cast_nullable_to_non_nullable
@@ -25184,10 +25280,10 @@ abstract class _$$EvidenceReportTargetImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       Identifier? identifier,
       FhirMarkdown? display,
-      @JsonKey(name: '_display') Element? displayElement,
+      @JsonKey(name: '_display') PrimitiveElement? displayElement,
       Reference? resource});
 
   @override
@@ -25237,7 +25333,7 @@ class __$$EvidenceReportTargetImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -25249,7 +25345,7 @@ class __$$EvidenceReportTargetImplCopyWithImpl<$Res>
       displayElement: freezed == displayElement
           ? _value.displayElement
           : displayElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       resource: freezed == resource
           ? _value.resource
           : resource // ignore: cast_nullable_to_non_nullable
@@ -25350,7 +25446,7 @@ class _$EvidenceReportTargetImpl extends _EvidenceReportTarget {
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   /// [identifier] Target of the relationship Identifier.
   @override
@@ -25363,7 +25459,7 @@ class _$EvidenceReportTargetImpl extends _EvidenceReportTarget {
   /// [displayElement] ("_display") Extensions for display
   @override
   @JsonKey(name: '_display')
-  final Element? displayElement;
+  final PrimitiveElement? displayElement;
 
   /// [resource] Target of the relationship Resource reference.
   @override
@@ -25432,10 +25528,10 @@ abstract class _EvidenceReportTarget extends EvidenceReportTarget {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUri? url,
-      @JsonKey(name: '_url') final Element? urlElement,
+      @JsonKey(name: '_url') final PrimitiveElement? urlElement,
       final Identifier? identifier,
       final FhirMarkdown? display,
-      @JsonKey(name: '_display') final Element? displayElement,
+      @JsonKey(name: '_display') final PrimitiveElement? displayElement,
       final Reference? resource}) = _$EvidenceReportTargetImpl;
   const _EvidenceReportTarget._() : super._();
 
@@ -25480,7 +25576,7 @@ abstract class _EvidenceReportTarget extends EvidenceReportTarget {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
 
   /// [identifier] Target of the relationship Identifier.
@@ -25493,7 +25589,7 @@ abstract class _EvidenceReportTarget extends EvidenceReportTarget {
 
   /// [displayElement] ("_display") Extensions for display
   @JsonKey(name: '_display')
-  Element? get displayElement;
+  PrimitiveElement? get displayElement;
   @override
 
   /// [resource] Target of the relationship Resource reference.
@@ -25546,7 +25642,7 @@ mixin _$EvidenceReportSection {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [focus] A code identifying the kind of content contained within the
   ///  section. This should be consistent with the section title.
@@ -25576,7 +25672,7 @@ mixin _$EvidenceReportSection {
 
   /// [modeElement] ("_mode") Extensions for mode
   @JsonKey(name: '_mode')
-  Element? get modeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get modeElement => throw _privateConstructorUsedError;
 
   /// [orderedBy] Specifies the order applied to the items in the section entries.
   CodeableConcept? get orderedBy => throw _privateConstructorUsedError;
@@ -25618,13 +25714,13 @@ abstract class $EvidenceReportSectionCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       CodeableConcept? focus,
       Reference? focusReference,
       List<Reference>? author,
       Narrative? text,
       FhirCode? mode,
-      @JsonKey(name: '_mode') Element? modeElement,
+      @JsonKey(name: '_mode') PrimitiveElement? modeElement,
       CodeableConcept? orderedBy,
       List<CodeableConcept>? entryClassifier,
       List<Reference>? entryReference,
@@ -25691,7 +25787,7 @@ class _$EvidenceReportSectionCopyWithImpl<$Res,
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       focus: freezed == focus
           ? _value.focus
           : focus // ignore: cast_nullable_to_non_nullable
@@ -25715,7 +25811,7 @@ class _$EvidenceReportSectionCopyWithImpl<$Res,
       modeElement: freezed == modeElement
           ? _value.modeElement
           : modeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       orderedBy: freezed == orderedBy
           ? _value.orderedBy
           : orderedBy // ignore: cast_nullable_to_non_nullable
@@ -25818,13 +25914,13 @@ abstract class _$$EvidenceReportSectionImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       CodeableConcept? focus,
       Reference? focusReference,
       List<Reference>? author,
       Narrative? text,
       FhirCode? mode,
-      @JsonKey(name: '_mode') Element? modeElement,
+      @JsonKey(name: '_mode') PrimitiveElement? modeElement,
       CodeableConcept? orderedBy,
       List<CodeableConcept>? entryClassifier,
       List<Reference>? entryReference,
@@ -25894,7 +25990,7 @@ class __$$EvidenceReportSectionImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       focus: freezed == focus
           ? _value.focus
           : focus // ignore: cast_nullable_to_non_nullable
@@ -25918,7 +26014,7 @@ class __$$EvidenceReportSectionImplCopyWithImpl<$Res>
       modeElement: freezed == modeElement
           ? _value.modeElement
           : modeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       orderedBy: freezed == orderedBy
           ? _value.orderedBy
           : orderedBy // ignore: cast_nullable_to_non_nullable
@@ -26054,7 +26150,7 @@ class _$EvidenceReportSectionImpl extends _EvidenceReportSection {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [focus] A code identifying the kind of content contained within the
   ///  section. This should be consistent with the section title.
@@ -26100,7 +26196,7 @@ class _$EvidenceReportSectionImpl extends _EvidenceReportSection {
   /// [modeElement] ("_mode") Extensions for mode
   @override
   @JsonKey(name: '_mode')
-  final Element? modeElement;
+  final PrimitiveElement? modeElement;
 
   /// [orderedBy] Specifies the order applied to the items in the section entries.
   @override
@@ -26249,13 +26345,13 @@ abstract class _EvidenceReportSection extends EvidenceReportSection {
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final String? title,
-          @JsonKey(name: '_title') final Element? titleElement,
+          @JsonKey(name: '_title') final PrimitiveElement? titleElement,
           final CodeableConcept? focus,
           final Reference? focusReference,
           final List<Reference>? author,
           final Narrative? text,
           final FhirCode? mode,
-          @JsonKey(name: '_mode') final Element? modeElement,
+          @JsonKey(name: '_mode') final PrimitiveElement? modeElement,
           final CodeableConcept? orderedBy,
           final List<CodeableConcept>? entryClassifier,
           final List<Reference>? entryReference,
@@ -26308,7 +26404,7 @@ abstract class _EvidenceReportSection extends EvidenceReportSection {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [focus] A code identifying the kind of content contained within the
@@ -26344,7 +26440,7 @@ abstract class _EvidenceReportSection extends EvidenceReportSection {
 
   /// [modeElement] ("_mode") Extensions for mode
   @JsonKey(name: '_mode')
-  Element? get modeElement;
+  PrimitiveElement? get modeElement;
   @override
 
   /// [orderedBy] Specifies the order applied to the items in the section entries.
@@ -26405,14 +26501,15 @@ mixin _$EvidenceVariable {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -26464,7 +26561,7 @@ mixin _$EvidenceVariable {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
   /// [identifier] A formal identifier that is used to identify this evidence
   ///  variable when it is represented in other formats, or referenced in a
@@ -26486,7 +26583,7 @@ mixin _$EvidenceVariable {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -26495,7 +26592,7 @@ mixin _$EvidenceVariable {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement =>
+  PrimitiveElement? get versionAlgorithmStringElement =>
       throw _privateConstructorUsedError;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -26509,14 +26606,14 @@ mixin _$EvidenceVariable {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [title] A short, descriptive, user-friendly title for the evidence variable.
   String? get title => throw _privateConstructorUsedError;
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
   /// [status] The status of this evidence variable. Enables tracking the
   ///  life-cycle of the content.
@@ -26524,7 +26621,7 @@ mixin _$EvidenceVariable {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [experimental] A Boolean value to indicate that this resource is authored
   ///  for testing purposes (or education/evaluation/marketing) and is not
@@ -26533,7 +26630,8 @@ mixin _$EvidenceVariable {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get experimentalElement =>
+      throw _privateConstructorUsedError;
 
   /// [date] The date  (and optionally time) when the evidence variable was last
   ///  significantly changed. The date must change when the business version
@@ -26544,7 +26642,7 @@ mixin _$EvidenceVariable {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the evidence variable.
@@ -26552,7 +26650,7 @@ mixin _$EvidenceVariable {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get publisherElement => throw _privateConstructorUsedError;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -26564,7 +26662,8 @@ mixin _$EvidenceVariable {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -26583,7 +26682,7 @@ mixin _$EvidenceVariable {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get purposeElement => throw _privateConstructorUsedError;
 
   /// [copyright] A copyright statement relating to the resource and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
@@ -26592,7 +26691,7 @@ mixin _$EvidenceVariable {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -26602,7 +26701,8 @@ mixin _$EvidenceVariable {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copyrightLabelElement =>
+      throw _privateConstructorUsedError;
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
@@ -26612,7 +26712,8 @@ mixin _$EvidenceVariable {
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @JsonKey(name: '_approvalDate')
-  Element? get approvalDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get approvalDateElement =>
+      throw _privateConstructorUsedError;
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
@@ -26621,7 +26722,8 @@ mixin _$EvidenceVariable {
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @JsonKey(name: '_lastReviewDate')
-  Element? get lastReviewDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get lastReviewDateElement =>
+      throw _privateConstructorUsedError;
 
   /// [effectivePeriod] The period during which the resource content was or is
   ///  planned to be in active use.
@@ -26660,7 +26762,7 @@ mixin _$EvidenceVariable {
 
   /// [shortTitleElement] ("_shortTitle") Extensions for shortTitle
   @JsonKey(name: '_shortTitle')
-  Element? get shortTitleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get shortTitleElement => throw _privateConstructorUsedError;
 
   /// [note] A human-readable string to clarify or explain concepts about the
   ///  resource.
@@ -26672,7 +26774,7 @@ mixin _$EvidenceVariable {
 
   /// [actualElement] ("_actual") Extensions for actual
   @JsonKey(name: '_actual')
-  Element? get actualElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get actualElement => throw _privateConstructorUsedError;
 
   /// [characteristic] A defining factor of the EvidenceVariable. Multiple
   ///  characteristics are applied with "and" semantics.
@@ -26684,7 +26786,7 @@ mixin _$EvidenceVariable {
 
   /// [handlingElement] ("_handling") Extensions for handling
   @JsonKey(name: '_handling')
-  Element? get handlingElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get handlingElement => throw _privateConstructorUsedError;
 
   /// [category] A grouping for ordinal or polychotomous variables.
   List<EvidenceVariableCategory>? get category =>
@@ -26708,49 +26810,49 @@ abstract class $EvidenceVariableCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
       FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
       Period? effectivePeriod,
       List<CodeableConcept>? topic,
       List<ContactDetail>? author,
@@ -26759,13 +26861,13 @@ abstract class $EvidenceVariableCopyWith<$Res> {
       List<ContactDetail>? endorser,
       List<RelatedArtifact>? relatedArtifact,
       String? shortTitle,
-      @JsonKey(name: '_shortTitle') Element? shortTitleElement,
+      @JsonKey(name: '_shortTitle') PrimitiveElement? shortTitleElement,
       List<Annotation>? note,
       FhirBoolean? actual,
-      @JsonKey(name: '_actual') Element? actualElement,
+      @JsonKey(name: '_actual') PrimitiveElement? actualElement,
       List<EvidenceVariableCharacteristic>? characteristic,
       FhirCode? handling,
-      @JsonKey(name: '_handling') Element? handlingElement,
+      @JsonKey(name: '_handling') PrimitiveElement? handlingElement,
       List<EvidenceVariableCategory>? category});
 
   $FhirMetaCopyWith<$Res>? get meta;
@@ -26870,7 +26972,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -26878,7 +26980,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -26902,7 +27004,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -26914,7 +27016,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -26922,7 +27024,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -26934,7 +27036,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -26942,7 +27044,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -26950,7 +27052,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -26958,7 +27060,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -26966,7 +27068,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -26974,7 +27076,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value.contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -26986,7 +27088,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value.useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -27002,7 +27104,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -27010,7 +27112,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -27018,7 +27120,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       approvalDate: freezed == approvalDate
           ? _value.approvalDate
           : approvalDate // ignore: cast_nullable_to_non_nullable
@@ -27026,7 +27128,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       approvalDateElement: freezed == approvalDateElement
           ? _value.approvalDateElement
           : approvalDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       lastReviewDate: freezed == lastReviewDate
           ? _value.lastReviewDate
           : lastReviewDate // ignore: cast_nullable_to_non_nullable
@@ -27034,7 +27136,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       lastReviewDateElement: freezed == lastReviewDateElement
           ? _value.lastReviewDateElement
           : lastReviewDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       effectivePeriod: freezed == effectivePeriod
           ? _value.effectivePeriod
           : effectivePeriod // ignore: cast_nullable_to_non_nullable
@@ -27070,7 +27172,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       shortTitleElement: freezed == shortTitleElement
           ? _value.shortTitleElement
           : shortTitleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
@@ -27082,7 +27184,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       actualElement: freezed == actualElement
           ? _value.actualElement
           : actualElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       characteristic: freezed == characteristic
           ? _value.characteristic
           : characteristic // ignore: cast_nullable_to_non_nullable
@@ -27094,7 +27196,7 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
       handlingElement: freezed == handlingElement
           ? _value.handlingElement
           : handlingElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       category: freezed == category
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
@@ -27165,49 +27267,49 @@ abstract class _$$EvidenceVariableImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirUri? url,
-      @JsonKey(name: '_url') Element? urlElement,
+      @JsonKey(name: '_url') PrimitiveElement? urlElement,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      Element? versionAlgorithmStringElement,
+      PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? title,
-      @JsonKey(name: '_title') Element? titleElement,
+      @JsonKey(name: '_title') PrimitiveElement? titleElement,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') Element? experimentalElement,
+      @JsonKey(name: '_experimental') PrimitiveElement? experimentalElement,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement,
+      @JsonKey(name: '_date') PrimitiveElement? dateElement,
       String? publisher,
-      @JsonKey(name: '_publisher') Element? publisherElement,
+      @JsonKey(name: '_publisher') PrimitiveElement? publisherElement,
       List<ContactDetail>? contact,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<UsageContext>? useContext,
       List<CodeableConcept>? jurisdiction,
       FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') Element? purposeElement,
+      @JsonKey(name: '_purpose') PrimitiveElement? purposeElement,
       FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') Element? copyrightElement,
+      @JsonKey(name: '_copyright') PrimitiveElement? copyrightElement,
       String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate') PrimitiveElement? approvalDateElement,
       FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate') PrimitiveElement? lastReviewDateElement,
       Period? effectivePeriod,
       List<CodeableConcept>? topic,
       List<ContactDetail>? author,
@@ -27216,13 +27318,13 @@ abstract class _$$EvidenceVariableImplCopyWith<$Res>
       List<ContactDetail>? endorser,
       List<RelatedArtifact>? relatedArtifact,
       String? shortTitle,
-      @JsonKey(name: '_shortTitle') Element? shortTitleElement,
+      @JsonKey(name: '_shortTitle') PrimitiveElement? shortTitleElement,
       List<Annotation>? note,
       FhirBoolean? actual,
-      @JsonKey(name: '_actual') Element? actualElement,
+      @JsonKey(name: '_actual') PrimitiveElement? actualElement,
       List<EvidenceVariableCharacteristic>? characteristic,
       FhirCode? handling,
-      @JsonKey(name: '_handling') Element? handlingElement,
+      @JsonKey(name: '_handling') PrimitiveElement? handlingElement,
       List<EvidenceVariableCategory>? category});
 
   @override
@@ -27329,7 +27431,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -27337,7 +27439,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -27361,7 +27463,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       urlElement: freezed == urlElement
           ? _value.urlElement
           : urlElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value._identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -27373,7 +27475,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmString: freezed == versionAlgorithmString
           ? _value.versionAlgorithmString
           : versionAlgorithmString // ignore: cast_nullable_to_non_nullable
@@ -27381,7 +27483,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       versionAlgorithmStringElement: freezed == versionAlgorithmStringElement
           ? _value.versionAlgorithmStringElement
           : versionAlgorithmStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       versionAlgorithmCoding: freezed == versionAlgorithmCoding
           ? _value.versionAlgorithmCoding
           : versionAlgorithmCoding // ignore: cast_nullable_to_non_nullable
@@ -27393,7 +27495,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -27401,7 +27503,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       titleElement: freezed == titleElement
           ? _value.titleElement
           : titleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -27409,7 +27511,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
@@ -27417,7 +27519,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       experimentalElement: freezed == experimentalElement
           ? _value.experimentalElement
           : experimentalElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -27425,7 +27527,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       publisher: freezed == publisher
           ? _value.publisher
           : publisher // ignore: cast_nullable_to_non_nullable
@@ -27433,7 +27535,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       publisherElement: freezed == publisherElement
           ? _value.publisherElement
           : publisherElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       contact: freezed == contact
           ? _value._contact
           : contact // ignore: cast_nullable_to_non_nullable
@@ -27445,7 +27547,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       useContext: freezed == useContext
           ? _value._useContext
           : useContext // ignore: cast_nullable_to_non_nullable
@@ -27461,7 +27563,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -27469,7 +27571,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       copyrightElement: freezed == copyrightElement
           ? _value.copyrightElement
           : copyrightElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       copyrightLabel: freezed == copyrightLabel
           ? _value.copyrightLabel
           : copyrightLabel // ignore: cast_nullable_to_non_nullable
@@ -27477,7 +27579,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       copyrightLabelElement: freezed == copyrightLabelElement
           ? _value.copyrightLabelElement
           : copyrightLabelElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       approvalDate: freezed == approvalDate
           ? _value.approvalDate
           : approvalDate // ignore: cast_nullable_to_non_nullable
@@ -27485,7 +27587,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       approvalDateElement: freezed == approvalDateElement
           ? _value.approvalDateElement
           : approvalDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       lastReviewDate: freezed == lastReviewDate
           ? _value.lastReviewDate
           : lastReviewDate // ignore: cast_nullable_to_non_nullable
@@ -27493,7 +27595,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       lastReviewDateElement: freezed == lastReviewDateElement
           ? _value.lastReviewDateElement
           : lastReviewDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       effectivePeriod: freezed == effectivePeriod
           ? _value.effectivePeriod
           : effectivePeriod // ignore: cast_nullable_to_non_nullable
@@ -27529,7 +27631,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       shortTitleElement: freezed == shortTitleElement
           ? _value.shortTitleElement
           : shortTitleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value._note
           : note // ignore: cast_nullable_to_non_nullable
@@ -27541,7 +27643,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       actualElement: freezed == actualElement
           ? _value.actualElement
           : actualElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       characteristic: freezed == characteristic
           ? _value._characteristic
           : characteristic // ignore: cast_nullable_to_non_nullable
@@ -27553,7 +27655,7 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       handlingElement: freezed == handlingElement
           ? _value.handlingElement
           : handlingElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       category: freezed == category
           ? _value._category
           : category // ignore: cast_nullable_to_non_nullable
@@ -27677,7 +27779,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -27686,7 +27788,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -27791,7 +27893,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [urlElement] ("_url") Extensions for url
   @override
   @JsonKey(name: '_url')
-  final Element? urlElement;
+  final PrimitiveElement? urlElement;
 
   /// [identifier] A formal identifier that is used to identify this evidence
   ///  variable when it is represented in other formats, or referenced in a
@@ -27827,7 +27929,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -27838,7 +27940,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   ///  versionAlgorithmString
   @override
   @JsonKey(name: '_versionAlgorithmString')
-  final Element? versionAlgorithmStringElement;
+  final PrimitiveElement? versionAlgorithmStringElement;
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
@@ -27854,7 +27956,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [title] A short, descriptive, user-friendly title for the evidence variable.
   @override
@@ -27863,7 +27965,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [titleElement] ("_title") Extensions for title
   @override
   @JsonKey(name: '_title')
-  final Element? titleElement;
+  final PrimitiveElement? titleElement;
 
   /// [status] The status of this evidence variable. Enables tracking the
   ///  life-cycle of the content.
@@ -27873,7 +27975,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [experimental] A Boolean value to indicate that this resource is authored
   ///  for testing purposes (or education/evaluation/marketing) and is not
@@ -27884,7 +27986,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @override
   @JsonKey(name: '_experimental')
-  final Element? experimentalElement;
+  final PrimitiveElement? experimentalElement;
 
   /// [date] The date  (and optionally time) when the evidence variable was last
   ///  significantly changed. The date must change when the business version
@@ -27897,7 +27999,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the evidence variable.
@@ -27907,7 +28009,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [publisherElement] ("_publisher") Extensions for publisher
   @override
   @JsonKey(name: '_publisher')
-  final Element? publisherElement;
+  final PrimitiveElement? publisherElement;
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
@@ -27932,7 +28034,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
@@ -27978,7 +28080,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [purposeElement] ("_purpose") Extensions for purpose
   @override
   @JsonKey(name: '_purpose')
-  final Element? purposeElement;
+  final PrimitiveElement? purposeElement;
 
   /// [copyright] A copyright statement relating to the resource and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
@@ -27989,7 +28091,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @override
   @JsonKey(name: '_copyright')
-  final Element? copyrightElement;
+  final PrimitiveElement? copyrightElement;
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
@@ -28001,7 +28103,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @override
   @JsonKey(name: '_copyrightLabel')
-  final Element? copyrightLabelElement;
+  final PrimitiveElement? copyrightLabelElement;
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
@@ -28013,7 +28115,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @override
   @JsonKey(name: '_approvalDate')
-  final Element? approvalDateElement;
+  final PrimitiveElement? approvalDateElement;
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
@@ -28024,7 +28126,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @override
   @JsonKey(name: '_lastReviewDate')
-  final Element? lastReviewDateElement;
+  final PrimitiveElement? lastReviewDateElement;
 
   /// [effectivePeriod] The period during which the resource content was or is
   ///  planned to be in active use.
@@ -28132,7 +28234,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [shortTitleElement] ("_shortTitle") Extensions for shortTitle
   @override
   @JsonKey(name: '_shortTitle')
-  final Element? shortTitleElement;
+  final PrimitiveElement? shortTitleElement;
 
   /// [note] A human-readable string to clarify or explain concepts about the
   ///  resource.
@@ -28157,7 +28259,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [actualElement] ("_actual") Extensions for actual
   @override
   @JsonKey(name: '_actual')
-  final Element? actualElement;
+  final PrimitiveElement? actualElement;
 
   /// [characteristic] A defining factor of the EvidenceVariable. Multiple
   ///  characteristics are applied with "and" semantics.
@@ -28181,7 +28283,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
   /// [handlingElement] ("_handling") Extensions for handling
   @override
   @JsonKey(name: '_handling')
-  final Element? handlingElement;
+  final PrimitiveElement? handlingElement;
 
   /// [category] A grouping for ordinal or polychotomous variables.
   final List<EvidenceVariableCategory>? _category;
@@ -28397,49 +28499,54 @@ abstract class _EvidenceVariable extends EvidenceVariable {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirUri? url,
-      @JsonKey(name: '_url') final Element? urlElement,
+      @JsonKey(name: '_url') final PrimitiveElement? urlElement,
       final List<Identifier>? identifier,
       final String? version,
-      @JsonKey(name: '_version') final Element? versionElement,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
       final String? versionAlgorithmString,
       @JsonKey(name: '_versionAlgorithmString')
-      final Element? versionAlgorithmStringElement,
+      final PrimitiveElement? versionAlgorithmStringElement,
       final Coding? versionAlgorithmCoding,
       final String? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final String? title,
-      @JsonKey(name: '_title') final Element? titleElement,
+      @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final PublicationStatus? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final FhirBoolean? experimental,
-      @JsonKey(name: '_experimental') final Element? experimentalElement,
+      @JsonKey(name: '_experimental')
+      final PrimitiveElement? experimentalElement,
       final FhirDateTime? date,
-      @JsonKey(name: '_date') final Element? dateElement,
+      @JsonKey(name: '_date') final PrimitiveElement? dateElement,
       final String? publisher,
-      @JsonKey(name: '_publisher') final Element? publisherElement,
+      @JsonKey(name: '_publisher') final PrimitiveElement? publisherElement,
       final List<ContactDetail>? contact,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<UsageContext>? useContext,
       final List<CodeableConcept>? jurisdiction,
       final FhirMarkdown? purpose,
-      @JsonKey(name: '_purpose') final Element? purposeElement,
+      @JsonKey(name: '_purpose') final PrimitiveElement? purposeElement,
       final FhirMarkdown? copyright,
-      @JsonKey(name: '_copyright') final Element? copyrightElement,
+      @JsonKey(name: '_copyright') final PrimitiveElement? copyrightElement,
       final String? copyrightLabel,
-      @JsonKey(name: '_copyrightLabel') final Element? copyrightLabelElement,
+      @JsonKey(name: '_copyrightLabel')
+      final PrimitiveElement? copyrightLabelElement,
       final FhirDate? approvalDate,
-      @JsonKey(name: '_approvalDate') final Element? approvalDateElement,
+      @JsonKey(name: '_approvalDate')
+      final PrimitiveElement? approvalDateElement,
       final FhirDate? lastReviewDate,
-      @JsonKey(name: '_lastReviewDate') final Element? lastReviewDateElement,
+      @JsonKey(name: '_lastReviewDate')
+      final PrimitiveElement? lastReviewDateElement,
       final Period? effectivePeriod,
       final List<CodeableConcept>? topic,
       final List<ContactDetail>? author,
@@ -28448,13 +28555,13 @@ abstract class _EvidenceVariable extends EvidenceVariable {
       final List<ContactDetail>? endorser,
       final List<RelatedArtifact>? relatedArtifact,
       final String? shortTitle,
-      @JsonKey(name: '_shortTitle') final Element? shortTitleElement,
+      @JsonKey(name: '_shortTitle') final PrimitiveElement? shortTitleElement,
       final List<Annotation>? note,
       final FhirBoolean? actual,
-      @JsonKey(name: '_actual') final Element? actualElement,
+      @JsonKey(name: '_actual') final PrimitiveElement? actualElement,
       final List<EvidenceVariableCharacteristic>? characteristic,
       final FhirCode? handling,
-      @JsonKey(name: '_handling') final Element? handlingElement,
+      @JsonKey(name: '_handling') final PrimitiveElement? handlingElement,
       final List<EvidenceVariableCategory>? category}) = _$EvidenceVariableImpl;
   const _EvidenceVariable._() : super._();
 
@@ -28488,7 +28595,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -28497,7 +28604,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -28554,7 +28661,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [urlElement] ("_url") Extensions for url
   @JsonKey(name: '_url')
-  Element? get urlElement;
+  PrimitiveElement? get urlElement;
   @override
 
   /// [identifier] A formal identifier that is used to identify this evidence
@@ -28579,7 +28686,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
@@ -28590,7 +28697,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
   @JsonKey(name: '_versionAlgorithmString')
-  Element? get versionAlgorithmStringElement;
+  PrimitiveElement? get versionAlgorithmStringElement;
   @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
@@ -28606,7 +28713,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [title] A short, descriptive, user-friendly title for the evidence variable.
@@ -28615,7 +28722,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [titleElement] ("_title") Extensions for title
   @JsonKey(name: '_title')
-  Element? get titleElement;
+  PrimitiveElement? get titleElement;
   @override
 
   /// [status] The status of this evidence variable. Enables tracking the
@@ -28625,7 +28732,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [experimental] A Boolean value to indicate that this resource is authored
@@ -28636,7 +28743,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
   @JsonKey(name: '_experimental')
-  Element? get experimentalElement;
+  PrimitiveElement? get experimentalElement;
   @override
 
   /// [date] The date  (and optionally time) when the evidence variable was last
@@ -28649,7 +28756,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
 
   /// [publisher] The name of the organization or individual responsible for the
@@ -28659,7 +28766,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [publisherElement] ("_publisher") Extensions for publisher
   @JsonKey(name: '_publisher')
-  Element? get publisherElement;
+  PrimitiveElement? get publisherElement;
   @override
 
   /// [contact] Contact details to assist a user in finding and communicating
@@ -28674,7 +28781,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [useContext] The content was developed with a focus and intent of
@@ -28697,7 +28804,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  Element? get purposeElement;
+  PrimitiveElement? get purposeElement;
   @override
 
   /// [copyright] A copyright statement relating to the resource and/or its
@@ -28708,7 +28815,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
   @JsonKey(name: '_copyright')
-  Element? get copyrightElement;
+  PrimitiveElement? get copyrightElement;
   @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
@@ -28720,7 +28827,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
   @JsonKey(name: '_copyrightLabel')
-  Element? get copyrightLabelElement;
+  PrimitiveElement? get copyrightLabelElement;
   @override
 
   /// [approvalDate] The date on which the resource content was approved by the
@@ -28732,7 +28839,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
   @JsonKey(name: '_approvalDate')
-  Element? get approvalDateElement;
+  PrimitiveElement? get approvalDateElement;
   @override
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
@@ -28743,7 +28850,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
   @JsonKey(name: '_lastReviewDate')
-  Element? get lastReviewDateElement;
+  PrimitiveElement? get lastReviewDateElement;
   @override
 
   /// [effectivePeriod] The period during which the resource content was or is
@@ -28790,7 +28897,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [shortTitleElement] ("_shortTitle") Extensions for shortTitle
   @JsonKey(name: '_shortTitle')
-  Element? get shortTitleElement;
+  PrimitiveElement? get shortTitleElement;
   @override
 
   /// [note] A human-readable string to clarify or explain concepts about the
@@ -28805,7 +28912,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [actualElement] ("_actual") Extensions for actual
   @JsonKey(name: '_actual')
-  Element? get actualElement;
+  PrimitiveElement? get actualElement;
   @override
 
   /// [characteristic] A defining factor of the EvidenceVariable. Multiple
@@ -28819,7 +28926,7 @@ abstract class _EvidenceVariable extends EvidenceVariable {
 
   /// [handlingElement] ("_handling") Extensions for handling
   @JsonKey(name: '_handling')
-  Element? get handlingElement;
+  PrimitiveElement? get handlingElement;
   @override
 
   /// [category] A grouping for ordinal or polychotomous variables.
@@ -28871,7 +28978,7 @@ mixin _$EvidenceVariableCharacteristic {
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
   @JsonKey(name: '_linkId')
-  Element? get linkIdElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get linkIdElement => throw _privateConstructorUsedError;
 
   /// [description] A short, natural language description of the characteristic
   ///  that could be used to communicate the criteria to an end-user.
@@ -28879,7 +28986,8 @@ mixin _$EvidenceVariableCharacteristic {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [note] A human-readable string to clarify or explain concepts about the
   ///  characteristic.
@@ -28892,7 +29000,7 @@ mixin _$EvidenceVariableCharacteristic {
 
   /// [excludeElement] ("_exclude") Extensions for exclude
   @JsonKey(name: '_exclude')
-  Element? get excludeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get excludeElement => throw _privateConstructorUsedError;
 
   /// [definitionReference] Defines the characteristic using a Reference.
   Reference? get definitionReference => throw _privateConstructorUsedError;
@@ -28914,7 +29022,8 @@ mixin _$EvidenceVariableCharacteristic {
 
   /// [definitionIdElement] ("_definitionId") Extensions for definitionId
   @JsonKey(name: '_definitionId')
-  Element? get definitionIdElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get definitionIdElement =>
+      throw _privateConstructorUsedError;
 
   /// [definitionByTypeAndValue] Defines the characteristic using both a type and
   ///  value[x] elements.
@@ -28961,18 +29070,18 @@ abstract class $EvidenceVariableCharacteristicCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? linkId,
-      @JsonKey(name: '_linkId') Element? linkIdElement,
+      @JsonKey(name: '_linkId') PrimitiveElement? linkIdElement,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Annotation>? note,
       FhirBoolean? exclude,
-      @JsonKey(name: '_exclude') Element? excludeElement,
+      @JsonKey(name: '_exclude') PrimitiveElement? excludeElement,
       Reference? definitionReference,
       FhirCanonical? definitionCanonical,
       CodeableConcept? definitionCodeableConcept,
       FhirExpression? definitionExpression,
       FhirId? definitionId,
-      @JsonKey(name: '_definitionId') Element? definitionIdElement,
+      @JsonKey(name: '_definitionId') PrimitiveElement? definitionIdElement,
       EvidenceVariableDefinitionByTypeAndValue? definitionByTypeAndValue,
       EvidenceVariableDefinitionByCombination? definitionByCombination,
       Quantity? instancesQuantity,
@@ -29052,7 +29161,7 @@ class _$EvidenceVariableCharacteristicCopyWithImpl<$Res,
       linkIdElement: freezed == linkIdElement
           ? _value.linkIdElement
           : linkIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -29060,7 +29169,7 @@ class _$EvidenceVariableCharacteristicCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
@@ -29072,7 +29181,7 @@ class _$EvidenceVariableCharacteristicCopyWithImpl<$Res,
       excludeElement: freezed == excludeElement
           ? _value.excludeElement
           : excludeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       definitionReference: freezed == definitionReference
           ? _value.definitionReference
           : definitionReference // ignore: cast_nullable_to_non_nullable
@@ -29096,7 +29205,7 @@ class _$EvidenceVariableCharacteristicCopyWithImpl<$Res,
       definitionIdElement: freezed == definitionIdElement
           ? _value.definitionIdElement
           : definitionIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       definitionByTypeAndValue: freezed == definitionByTypeAndValue
           ? _value.definitionByTypeAndValue
           : definitionByTypeAndValue // ignore: cast_nullable_to_non_nullable
@@ -29256,18 +29365,18 @@ abstract class _$$EvidenceVariableCharacteristicImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirId? linkId,
-      @JsonKey(name: '_linkId') Element? linkIdElement,
+      @JsonKey(name: '_linkId') PrimitiveElement? linkIdElement,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Annotation>? note,
       FhirBoolean? exclude,
-      @JsonKey(name: '_exclude') Element? excludeElement,
+      @JsonKey(name: '_exclude') PrimitiveElement? excludeElement,
       Reference? definitionReference,
       FhirCanonical? definitionCanonical,
       CodeableConcept? definitionCodeableConcept,
       FhirExpression? definitionExpression,
       FhirId? definitionId,
-      @JsonKey(name: '_definitionId') Element? definitionIdElement,
+      @JsonKey(name: '_definitionId') PrimitiveElement? definitionIdElement,
       EvidenceVariableDefinitionByTypeAndValue? definitionByTypeAndValue,
       EvidenceVariableDefinitionByCombination? definitionByCombination,
       Quantity? instancesQuantity,
@@ -29355,7 +29464,7 @@ class __$$EvidenceVariableCharacteristicImplCopyWithImpl<$Res>
       linkIdElement: freezed == linkIdElement
           ? _value.linkIdElement
           : linkIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -29363,7 +29472,7 @@ class __$$EvidenceVariableCharacteristicImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value._note
           : note // ignore: cast_nullable_to_non_nullable
@@ -29375,7 +29484,7 @@ class __$$EvidenceVariableCharacteristicImplCopyWithImpl<$Res>
       excludeElement: freezed == excludeElement
           ? _value.excludeElement
           : excludeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       definitionReference: freezed == definitionReference
           ? _value.definitionReference
           : definitionReference // ignore: cast_nullable_to_non_nullable
@@ -29399,7 +29508,7 @@ class __$$EvidenceVariableCharacteristicImplCopyWithImpl<$Res>
       definitionIdElement: freezed == definitionIdElement
           ? _value.definitionIdElement
           : definitionIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       definitionByTypeAndValue: freezed == definitionByTypeAndValue
           ? _value.definitionByTypeAndValue
           : definitionByTypeAndValue // ignore: cast_nullable_to_non_nullable
@@ -29543,7 +29652,7 @@ class _$EvidenceVariableCharacteristicImpl
   /// [linkIdElement] ("_linkId") Extensions for linkId
   @override
   @JsonKey(name: '_linkId')
-  final Element? linkIdElement;
+  final PrimitiveElement? linkIdElement;
 
   /// [description] A short, natural language description of the characteristic
   ///  that could be used to communicate the criteria to an end-user.
@@ -29553,7 +29662,7 @@ class _$EvidenceVariableCharacteristicImpl
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [note] A human-readable string to clarify or explain concepts about the
   ///  characteristic.
@@ -29579,7 +29688,7 @@ class _$EvidenceVariableCharacteristicImpl
   /// [excludeElement] ("_exclude") Extensions for exclude
   @override
   @JsonKey(name: '_exclude')
-  final Element? excludeElement;
+  final PrimitiveElement? excludeElement;
 
   /// [definitionReference] Defines the characteristic using a Reference.
   @override
@@ -29605,7 +29714,7 @@ class _$EvidenceVariableCharacteristicImpl
   /// [definitionIdElement] ("_definitionId") Extensions for definitionId
   @override
   @JsonKey(name: '_definitionId')
-  final Element? definitionIdElement;
+  final PrimitiveElement? definitionIdElement;
 
   /// [definitionByTypeAndValue] Defines the characteristic using both a type and
   ///  value[x] elements.
@@ -29755,18 +29864,19 @@ abstract class _EvidenceVariableCharacteristic
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirId? linkId,
-      @JsonKey(name: '_linkId') final Element? linkIdElement,
+      @JsonKey(name: '_linkId') final PrimitiveElement? linkIdElement,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<Annotation>? note,
       final FhirBoolean? exclude,
-      @JsonKey(name: '_exclude') final Element? excludeElement,
+      @JsonKey(name: '_exclude') final PrimitiveElement? excludeElement,
       final Reference? definitionReference,
       final FhirCanonical? definitionCanonical,
       final CodeableConcept? definitionCodeableConcept,
       final FhirExpression? definitionExpression,
       final FhirId? definitionId,
-      @JsonKey(name: '_definitionId') final Element? definitionIdElement,
+      @JsonKey(name: '_definitionId')
+      final PrimitiveElement? definitionIdElement,
       final EvidenceVariableDefinitionByTypeAndValue? definitionByTypeAndValue,
       final EvidenceVariableDefinitionByCombination? definitionByCombination,
       final Quantity? instancesQuantity,
@@ -29819,7 +29929,7 @@ abstract class _EvidenceVariableCharacteristic
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
   @JsonKey(name: '_linkId')
-  Element? get linkIdElement;
+  PrimitiveElement? get linkIdElement;
   @override
 
   /// [description] A short, natural language description of the characteristic
@@ -29829,7 +29939,7 @@ abstract class _EvidenceVariableCharacteristic
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [note] A human-readable string to clarify or explain concepts about the
@@ -29845,7 +29955,7 @@ abstract class _EvidenceVariableCharacteristic
 
   /// [excludeElement] ("_exclude") Extensions for exclude
   @JsonKey(name: '_exclude')
-  Element? get excludeElement;
+  PrimitiveElement? get excludeElement;
   @override
 
   /// [definitionReference] Defines the characteristic using a Reference.
@@ -29871,7 +29981,7 @@ abstract class _EvidenceVariableCharacteristic
 
   /// [definitionIdElement] ("_definitionId") Extensions for definitionId
   @JsonKey(name: '_definitionId')
-  Element? get definitionIdElement;
+  PrimitiveElement? get definitionIdElement;
   @override
 
   /// [definitionByTypeAndValue] Defines the characteristic using both a type and
@@ -29965,7 +30075,8 @@ mixin _$EvidenceVariableDefinitionByTypeAndValue {
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @JsonKey(name: '_valueBoolean')
-  Element? get valueBooleanElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueBooleanElement =>
+      throw _privateConstructorUsedError;
 
   /// [valueQuantity] Defines the characteristic when paired with
   ///  characteristic.type.
@@ -29984,7 +30095,7 @@ mixin _$EvidenceVariableDefinitionByTypeAndValue {
 
   /// [valueIdElement] ("_valueId") Extensions for valueId
   @JsonKey(name: '_valueId')
-  Element? get valueIdElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueIdElement => throw _privateConstructorUsedError;
 
   /// [offset] Defines the reference point for comparison when valueQuantity or
   ///  valueRange is not compared to zero.
@@ -30014,12 +30125,12 @@ abstract class $EvidenceVariableDefinitionByTypeAndValueCopyWith<$Res> {
       Reference? device,
       CodeableConcept? valueCodeableConcept,
       FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
       Quantity? valueQuantity,
       Range? valueRange,
       Reference? valueReference,
       FhirId? valueId,
-      @JsonKey(name: '_valueId') Element? valueIdElement,
+      @JsonKey(name: '_valueId') PrimitiveElement? valueIdElement,
       CodeableConcept? offset});
 
   $CodeableConceptCopyWith<$Res> get type;
@@ -30098,7 +30209,7 @@ class _$EvidenceVariableDefinitionByTypeAndValueCopyWithImpl<$Res,
       valueBooleanElement: freezed == valueBooleanElement
           ? _value.valueBooleanElement
           : valueBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueQuantity: freezed == valueQuantity
           ? _value.valueQuantity
           : valueQuantity // ignore: cast_nullable_to_non_nullable
@@ -30118,7 +30229,7 @@ class _$EvidenceVariableDefinitionByTypeAndValueCopyWithImpl<$Res,
       valueIdElement: freezed == valueIdElement
           ? _value.valueIdElement
           : valueIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       offset: freezed == offset
           ? _value.offset
           : offset // ignore: cast_nullable_to_non_nullable
@@ -30226,12 +30337,12 @@ abstract class _$$EvidenceVariableDefinitionByTypeAndValueImplCopyWith<$Res>
       Reference? device,
       CodeableConcept? valueCodeableConcept,
       FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
       Quantity? valueQuantity,
       Range? valueRange,
       Reference? valueReference,
       FhirId? valueId,
-      @JsonKey(name: '_valueId') Element? valueIdElement,
+      @JsonKey(name: '_valueId') PrimitiveElement? valueIdElement,
       CodeableConcept? offset});
 
   @override
@@ -30315,7 +30426,7 @@ class __$$EvidenceVariableDefinitionByTypeAndValueImplCopyWithImpl<$Res>
       valueBooleanElement: freezed == valueBooleanElement
           ? _value.valueBooleanElement
           : valueBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueQuantity: freezed == valueQuantity
           ? _value.valueQuantity
           : valueQuantity // ignore: cast_nullable_to_non_nullable
@@ -30335,7 +30446,7 @@ class __$$EvidenceVariableDefinitionByTypeAndValueImplCopyWithImpl<$Res>
       valueIdElement: freezed == valueIdElement
           ? _value.valueIdElement
           : valueIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       offset: freezed == offset
           ? _value.offset
           : offset // ignore: cast_nullable_to_non_nullable
@@ -30472,7 +30583,7 @@ class _$EvidenceVariableDefinitionByTypeAndValueImpl
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @override
   @JsonKey(name: '_valueBoolean')
-  final Element? valueBooleanElement;
+  final PrimitiveElement? valueBooleanElement;
 
   /// [valueQuantity] Defines the characteristic when paired with
   ///  characteristic.type.
@@ -30496,7 +30607,7 @@ class _$EvidenceVariableDefinitionByTypeAndValueImpl
   /// [valueIdElement] ("_valueId") Extensions for valueId
   @override
   @JsonKey(name: '_valueId')
-  final Element? valueIdElement;
+  final PrimitiveElement? valueIdElement;
 
   /// [offset] Defines the reference point for comparison when valueQuantity or
   ///  valueRange is not compared to zero.
@@ -30587,12 +30698,13 @@ abstract class _EvidenceVariableDefinitionByTypeAndValue
           final Reference? device,
           final CodeableConcept? valueCodeableConcept,
           final FhirBoolean? valueBoolean,
-          @JsonKey(name: '_valueBoolean') final Element? valueBooleanElement,
+          @JsonKey(name: '_valueBoolean')
+          final PrimitiveElement? valueBooleanElement,
           final Quantity? valueQuantity,
           final Range? valueRange,
           final Reference? valueReference,
           final FhirId? valueId,
-          @JsonKey(name: '_valueId') final Element? valueIdElement,
+          @JsonKey(name: '_valueId') final PrimitiveElement? valueIdElement,
           final CodeableConcept? offset}) =
       _$EvidenceVariableDefinitionByTypeAndValueImpl;
   const _EvidenceVariableDefinitionByTypeAndValue._() : super._();
@@ -30657,7 +30769,7 @@ abstract class _EvidenceVariableDefinitionByTypeAndValue
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @JsonKey(name: '_valueBoolean')
-  Element? get valueBooleanElement;
+  PrimitiveElement? get valueBooleanElement;
   @override
 
   /// [valueQuantity] Defines the characteristic when paired with
@@ -30681,7 +30793,7 @@ abstract class _EvidenceVariableDefinitionByTypeAndValue
 
   /// [valueIdElement] ("_valueId") Extensions for valueId
   @JsonKey(name: '_valueId')
-  Element? get valueIdElement;
+  PrimitiveElement? get valueIdElement;
   @override
 
   /// [offset] Defines the reference point for comparison when valueQuantity or
@@ -30736,7 +30848,7 @@ mixin _$EvidenceVariableDefinitionByCombination {
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get codeElement => throw _privateConstructorUsedError;
 
   /// [threshold] Provides the value of "n" when "at-least" or "at-most" codes
   ///  are used.
@@ -30744,7 +30856,7 @@ mixin _$EvidenceVariableDefinitionByCombination {
 
   /// [thresholdElement] ("_threshold") Extensions for threshold
   @JsonKey(name: '_threshold')
-  Element? get thresholdElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get thresholdElement => throw _privateConstructorUsedError;
 
   /// [characteristic] A defining factor of the characteristic.
   List<EvidenceVariableCharacteristic> get characteristic =>
@@ -30770,9 +30882,9 @@ abstract class $EvidenceVariableDefinitionByCombinationCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       FhirPositiveInt? threshold,
-      @JsonKey(name: '_threshold') Element? thresholdElement,
+      @JsonKey(name: '_threshold') PrimitiveElement? thresholdElement,
       List<EvidenceVariableCharacteristic> characteristic});
 }
 
@@ -30820,7 +30932,7 @@ class _$EvidenceVariableDefinitionByCombinationCopyWithImpl<$Res,
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       threshold: freezed == threshold
           ? _value.threshold
           : threshold // ignore: cast_nullable_to_non_nullable
@@ -30828,7 +30940,7 @@ class _$EvidenceVariableDefinitionByCombinationCopyWithImpl<$Res,
       thresholdElement: freezed == thresholdElement
           ? _value.thresholdElement
           : thresholdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       characteristic: null == characteristic
           ? _value.characteristic
           : characteristic // ignore: cast_nullable_to_non_nullable
@@ -30851,9 +30963,9 @@ abstract class _$$EvidenceVariableDefinitionByCombinationImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? code,
-      @JsonKey(name: '_code') Element? codeElement,
+      @JsonKey(name: '_code') PrimitiveElement? codeElement,
       FhirPositiveInt? threshold,
-      @JsonKey(name: '_threshold') Element? thresholdElement,
+      @JsonKey(name: '_threshold') PrimitiveElement? thresholdElement,
       List<EvidenceVariableCharacteristic> characteristic});
 }
 
@@ -30899,7 +31011,7 @@ class __$$EvidenceVariableDefinitionByCombinationImplCopyWithImpl<$Res>
       codeElement: freezed == codeElement
           ? _value.codeElement
           : codeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       threshold: freezed == threshold
           ? _value.threshold
           : threshold // ignore: cast_nullable_to_non_nullable
@@ -30907,7 +31019,7 @@ class __$$EvidenceVariableDefinitionByCombinationImplCopyWithImpl<$Res>
       thresholdElement: freezed == thresholdElement
           ? _value.thresholdElement
           : thresholdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       characteristic: null == characteristic
           ? _value._characteristic
           : characteristic // ignore: cast_nullable_to_non_nullable
@@ -31011,7 +31123,7 @@ class _$EvidenceVariableDefinitionByCombinationImpl
   /// [codeElement] ("_code") Extensions for code
   @override
   @JsonKey(name: '_code')
-  final Element? codeElement;
+  final PrimitiveElement? codeElement;
 
   /// [threshold] Provides the value of "n" when "at-least" or "at-most" codes
   ///  are used.
@@ -31021,7 +31133,7 @@ class _$EvidenceVariableDefinitionByCombinationImpl
   /// [thresholdElement] ("_threshold") Extensions for threshold
   @override
   @JsonKey(name: '_threshold')
-  final Element? thresholdElement;
+  final PrimitiveElement? thresholdElement;
 
   /// [characteristic] A defining factor of the characteristic.
   final List<EvidenceVariableCharacteristic> _characteristic;
@@ -31097,9 +31209,9 @@ abstract class _EvidenceVariableDefinitionByCombination
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final FhirCode? code,
-          @JsonKey(name: '_code') final Element? codeElement,
+          @JsonKey(name: '_code') final PrimitiveElement? codeElement,
           final FhirPositiveInt? threshold,
-          @JsonKey(name: '_threshold') final Element? thresholdElement,
+          @JsonKey(name: '_threshold') final PrimitiveElement? thresholdElement,
           required final List<EvidenceVariableCharacteristic> characteristic}) =
       _$EvidenceVariableDefinitionByCombinationImpl;
   const _EvidenceVariableDefinitionByCombination._() : super._();
@@ -31147,7 +31259,7 @@ abstract class _EvidenceVariableDefinitionByCombination
 
   /// [codeElement] ("_code") Extensions for code
   @JsonKey(name: '_code')
-  Element? get codeElement;
+  PrimitiveElement? get codeElement;
   @override
 
   /// [threshold] Provides the value of "n" when "at-least" or "at-most" codes
@@ -31157,7 +31269,7 @@ abstract class _EvidenceVariableDefinitionByCombination
 
   /// [thresholdElement] ("_threshold") Extensions for threshold
   @JsonKey(name: '_threshold')
-  Element? get thresholdElement;
+  PrimitiveElement? get thresholdElement;
   @override
 
   /// [characteristic] A defining factor of the characteristic.
@@ -31209,7 +31321,8 @@ mixin _$EvidenceVariableTimeFromEvent {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [note] A human-readable string to clarify or explain concepts about the
   ///  timeFromEvent.
@@ -31228,14 +31341,15 @@ mixin _$EvidenceVariableTimeFromEvent {
 
   /// [eventDateTimeElement] ("_eventDateTime") Extensions for eventDateTime
   @JsonKey(name: '_eventDateTime')
-  Element? get eventDateTimeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get eventDateTimeElement =>
+      throw _privateConstructorUsedError;
 
   /// [eventId] The event used as a base point (reference point) in time.
   FhirId? get eventId => throw _privateConstructorUsedError;
 
   /// [eventIdElement] ("_eventId") Extensions for eventId
   @JsonKey(name: '_eventId')
-  Element? get eventIdElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get eventIdElement => throw _privateConstructorUsedError;
 
   /// [quantity] Used to express the observation at a defined amount of time
   ///  before or after the event.
@@ -31264,14 +31378,14 @@ abstract class $EvidenceVariableTimeFromEventCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Annotation>? note,
       CodeableConcept? eventCodeableConcept,
       Reference? eventReference,
       FhirDateTime? eventDateTime,
-      @JsonKey(name: '_eventDateTime') Element? eventDateTimeElement,
+      @JsonKey(name: '_eventDateTime') PrimitiveElement? eventDateTimeElement,
       FhirId? eventId,
-      @JsonKey(name: '_eventId') Element? eventIdElement,
+      @JsonKey(name: '_eventId') PrimitiveElement? eventIdElement,
       Quantity? quantity,
       Range? range});
 
@@ -31330,7 +31444,7 @@ class _$EvidenceVariableTimeFromEventCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
@@ -31350,7 +31464,7 @@ class _$EvidenceVariableTimeFromEventCopyWithImpl<$Res,
       eventDateTimeElement: freezed == eventDateTimeElement
           ? _value.eventDateTimeElement
           : eventDateTimeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       eventId: freezed == eventId
           ? _value.eventId
           : eventId // ignore: cast_nullable_to_non_nullable
@@ -31358,7 +31472,7 @@ class _$EvidenceVariableTimeFromEventCopyWithImpl<$Res,
       eventIdElement: freezed == eventIdElement
           ? _value.eventIdElement
           : eventIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       quantity: freezed == quantity
           ? _value.quantity
           : quantity // ignore: cast_nullable_to_non_nullable
@@ -31434,14 +31548,14 @@ abstract class _$$EvidenceVariableTimeFromEventImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Annotation>? note,
       CodeableConcept? eventCodeableConcept,
       Reference? eventReference,
       FhirDateTime? eventDateTime,
-      @JsonKey(name: '_eventDateTime') Element? eventDateTimeElement,
+      @JsonKey(name: '_eventDateTime') PrimitiveElement? eventDateTimeElement,
       FhirId? eventId,
-      @JsonKey(name: '_eventId') Element? eventIdElement,
+      @JsonKey(name: '_eventId') PrimitiveElement? eventIdElement,
       Quantity? quantity,
       Range? range});
 
@@ -31503,7 +31617,7 @@ class __$$EvidenceVariableTimeFromEventImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value._note
           : note // ignore: cast_nullable_to_non_nullable
@@ -31523,7 +31637,7 @@ class __$$EvidenceVariableTimeFromEventImplCopyWithImpl<$Res>
       eventDateTimeElement: freezed == eventDateTimeElement
           ? _value.eventDateTimeElement
           : eventDateTimeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       eventId: freezed == eventId
           ? _value.eventId
           : eventId // ignore: cast_nullable_to_non_nullable
@@ -31531,7 +31645,7 @@ class __$$EvidenceVariableTimeFromEventImplCopyWithImpl<$Res>
       eventIdElement: freezed == eventIdElement
           ? _value.eventIdElement
           : eventIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       quantity: freezed == quantity
           ? _value.quantity
           : quantity // ignore: cast_nullable_to_non_nullable
@@ -31644,7 +31758,7 @@ class _$EvidenceVariableTimeFromEventImpl
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [note] A human-readable string to clarify or explain concepts about the
   ///  timeFromEvent.
@@ -31677,7 +31791,7 @@ class _$EvidenceVariableTimeFromEventImpl
   /// [eventDateTimeElement] ("_eventDateTime") Extensions for eventDateTime
   @override
   @JsonKey(name: '_eventDateTime')
-  final Element? eventDateTimeElement;
+  final PrimitiveElement? eventDateTimeElement;
 
   /// [eventId] The event used as a base point (reference point) in time.
   @override
@@ -31686,7 +31800,7 @@ class _$EvidenceVariableTimeFromEventImpl
   /// [eventIdElement] ("_eventId") Extensions for eventId
   @override
   @JsonKey(name: '_eventId')
-  final Element? eventIdElement;
+  final PrimitiveElement? eventIdElement;
 
   /// [quantity] Used to express the observation at a defined amount of time
   ///  before or after the event.
@@ -31776,14 +31890,15 @@ abstract class _EvidenceVariableTimeFromEvent
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<Annotation>? note,
       final CodeableConcept? eventCodeableConcept,
       final Reference? eventReference,
       final FhirDateTime? eventDateTime,
-      @JsonKey(name: '_eventDateTime') final Element? eventDateTimeElement,
+      @JsonKey(name: '_eventDateTime')
+      final PrimitiveElement? eventDateTimeElement,
       final FhirId? eventId,
-      @JsonKey(name: '_eventId') final Element? eventIdElement,
+      @JsonKey(name: '_eventId') final PrimitiveElement? eventIdElement,
       final Quantity? quantity,
       final Range? range}) = _$EvidenceVariableTimeFromEventImpl;
   const _EvidenceVariableTimeFromEvent._() : super._();
@@ -31829,7 +31944,7 @@ abstract class _EvidenceVariableTimeFromEvent
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [note] A human-readable string to clarify or explain concepts about the
@@ -31852,7 +31967,7 @@ abstract class _EvidenceVariableTimeFromEvent
 
   /// [eventDateTimeElement] ("_eventDateTime") Extensions for eventDateTime
   @JsonKey(name: '_eventDateTime')
-  Element? get eventDateTimeElement;
+  PrimitiveElement? get eventDateTimeElement;
   @override
 
   /// [eventId] The event used as a base point (reference point) in time.
@@ -31861,7 +31976,7 @@ abstract class _EvidenceVariableTimeFromEvent
 
   /// [eventIdElement] ("_eventId") Extensions for eventId
   @JsonKey(name: '_eventId')
-  Element? get eventIdElement;
+  PrimitiveElement? get eventIdElement;
   @override
 
   /// [quantity] Used to express the observation at a defined amount of time
@@ -31919,7 +32034,7 @@ mixin _$EvidenceVariableCategory {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [valueCodeableConcept] Definition of the grouping.
   CodeableConcept? get valueCodeableConcept =>
@@ -31948,7 +32063,7 @@ abstract class $EvidenceVariableCategoryCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       CodeableConcept? valueCodeableConcept,
       Quantity? valueQuantity,
       Range? valueRange});
@@ -32001,7 +32116,7 @@ class _$EvidenceVariableCategoryCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueCodeableConcept: freezed == valueCodeableConcept
           ? _value.valueCodeableConcept
           : valueCodeableConcept // ignore: cast_nullable_to_non_nullable
@@ -32069,7 +32184,7 @@ abstract class _$$EvidenceVariableCategoryImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       CodeableConcept? valueCodeableConcept,
       Quantity? valueQuantity,
       Range? valueRange});
@@ -32124,7 +32239,7 @@ class __$$EvidenceVariableCategoryImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueCodeableConcept: freezed == valueCodeableConcept
           ? _value.valueCodeableConcept
           : valueCodeableConcept // ignore: cast_nullable_to_non_nullable
@@ -32232,7 +32347,7 @@ class _$EvidenceVariableCategoryImpl extends _EvidenceVariableCategory {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [valueCodeableConcept] Definition of the grouping.
   @override
@@ -32306,7 +32421,7 @@ abstract class _EvidenceVariableCategory extends EvidenceVariableCategory {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final String? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final CodeableConcept? valueCodeableConcept,
       final Quantity? valueQuantity,
       final Range? valueRange}) = _$EvidenceVariableCategoryImpl;
@@ -32353,7 +32468,7 @@ abstract class _EvidenceVariableCategory extends EvidenceVariableCategory {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [valueCodeableConcept] Definition of the grouping.

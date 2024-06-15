@@ -42,14 +42,15 @@ mixin _$AdministrableProductDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -99,7 +100,7 @@ mixin _$AdministrableProductDefinition {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [formOf] References a product from which one or more of the constituent
   ///  parts of that product can be prepared and used as described by this
@@ -158,7 +159,8 @@ mixin _$AdministrableProductDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [property] Characteristics e.g. a product's onset of action.
   List<AdministrableProductDefinitionProperty>? get property =>
@@ -192,16 +194,16 @@ abstract class $AdministrableProductDefinitionCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<Identifier>? identifier,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       List<Reference>? formOf,
       CodeableConcept? administrableDoseForm,
       CodeableConcept? unitOfPresentation,
@@ -209,7 +211,7 @@ abstract class $AdministrableProductDefinitionCopyWith<$Res> {
       List<CodeableConcept>? ingredient,
       Reference? device,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<AdministrableProductDefinitionProperty>? property,
       List<AdministrableProductDefinitionRouteOfAdministration>
           routeOfAdministration});
@@ -280,7 +282,7 @@ class _$AdministrableProductDefinitionCopyWithImpl<$Res,
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -288,7 +290,7 @@ class _$AdministrableProductDefinitionCopyWithImpl<$Res,
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -316,7 +318,7 @@ class _$AdministrableProductDefinitionCopyWithImpl<$Res,
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       formOf: freezed == formOf
           ? _value.formOf
           : formOf // ignore: cast_nullable_to_non_nullable
@@ -348,7 +350,7 @@ class _$AdministrableProductDefinitionCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       property: freezed == property
           ? _value.property
           : property // ignore: cast_nullable_to_non_nullable
@@ -437,16 +439,16 @@ abstract class _$$AdministrableProductDefinitionImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<Identifier>? identifier,
       PublicationStatus? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       List<Reference>? formOf,
       CodeableConcept? administrableDoseForm,
       CodeableConcept? unitOfPresentation,
@@ -454,7 +456,7 @@ abstract class _$$AdministrableProductDefinitionImplCopyWith<$Res>
       List<CodeableConcept>? ingredient,
       Reference? device,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<AdministrableProductDefinitionProperty>? property,
       List<AdministrableProductDefinitionRouteOfAdministration>
           routeOfAdministration});
@@ -529,7 +531,7 @@ class __$$AdministrableProductDefinitionImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -537,7 +539,7 @@ class __$$AdministrableProductDefinitionImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -565,7 +567,7 @@ class __$$AdministrableProductDefinitionImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       formOf: freezed == formOf
           ? _value._formOf
           : formOf // ignore: cast_nullable_to_non_nullable
@@ -597,7 +599,7 @@ class __$$AdministrableProductDefinitionImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       property: freezed == property
           ? _value._property
           : property // ignore: cast_nullable_to_non_nullable
@@ -682,7 +684,7 @@ class _$AdministrableProductDefinitionImpl
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -691,7 +693,7 @@ class _$AdministrableProductDefinitionImpl
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -804,7 +806,7 @@ class _$AdministrableProductDefinitionImpl
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [formOf] References a product from which one or more of the constituent
   ///  parts of that product can be prepared and used as described by this
@@ -917,7 +919,7 @@ class _$AdministrableProductDefinitionImpl
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [property] Characteristics e.g. a product's onset of action.
   final List<AdministrableProductDefinitionProperty>? _property;
@@ -1061,16 +1063,17 @@ abstract class _AdministrableProductDefinition
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final List<Identifier>? identifier,
       final PublicationStatus? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final List<Reference>? formOf,
       final CodeableConcept? administrableDoseForm,
       final CodeableConcept? unitOfPresentation,
@@ -1078,7 +1081,7 @@ abstract class _AdministrableProductDefinition
       final List<CodeableConcept>? ingredient,
       final Reference? device,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<AdministrableProductDefinitionProperty>? property,
       required final List<AdministrableProductDefinitionRouteOfAdministration>
           routeOfAdministration}) = _$AdministrableProductDefinitionImpl;
@@ -1114,7 +1117,7 @@ abstract class _AdministrableProductDefinition
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -1123,7 +1126,7 @@ abstract class _AdministrableProductDefinition
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -1179,7 +1182,7 @@ abstract class _AdministrableProductDefinition
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [formOf] References a product from which one or more of the constituent
@@ -1245,7 +1248,7 @@ abstract class _AdministrableProductDefinition
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [property] Characteristics e.g. a product's onset of action.
@@ -1317,21 +1320,23 @@ mixin _$AdministrableProductDefinitionProperty {
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @JsonKey(name: '_valueDate')
-  Element? get valueDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueDateElement => throw _privateConstructorUsedError;
 
   /// [valueBoolean] A value for the characteristic.
   FhirBoolean? get valueBoolean => throw _privateConstructorUsedError;
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @JsonKey(name: '_valueBoolean')
-  Element? get valueBooleanElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueBooleanElement =>
+      throw _privateConstructorUsedError;
 
   /// [valueMarkdown] A value for the characteristic.
   FhirMarkdown? get valueMarkdown => throw _privateConstructorUsedError;
 
   /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
   @JsonKey(name: '_valueMarkdown')
-  Element? get valueMarkdownElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueMarkdownElement =>
+      throw _privateConstructorUsedError;
 
   /// [valueAttachment] A value for the characteristic.
   Attachment? get valueAttachment => throw _privateConstructorUsedError;
@@ -1365,11 +1370,11 @@ abstract class $AdministrableProductDefinitionPropertyCopyWith<$Res> {
       CodeableConcept? valueCodeableConcept,
       Quantity? valueQuantity,
       FhirDate? valueDate,
-      @JsonKey(name: '_valueDate') Element? valueDateElement,
+      @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
       FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
       FhirMarkdown? valueMarkdown,
-      @JsonKey(name: '_valueMarkdown') Element? valueMarkdownElement,
+      @JsonKey(name: '_valueMarkdown') PrimitiveElement? valueMarkdownElement,
       Attachment? valueAttachment,
       Reference? valueReference,
       CodeableConcept? status});
@@ -1444,7 +1449,7 @@ class _$AdministrableProductDefinitionPropertyCopyWithImpl<$Res,
       valueDateElement: freezed == valueDateElement
           ? _value.valueDateElement
           : valueDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueBoolean: freezed == valueBoolean
           ? _value.valueBoolean
           : valueBoolean // ignore: cast_nullable_to_non_nullable
@@ -1452,7 +1457,7 @@ class _$AdministrableProductDefinitionPropertyCopyWithImpl<$Res,
       valueBooleanElement: freezed == valueBooleanElement
           ? _value.valueBooleanElement
           : valueBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueMarkdown: freezed == valueMarkdown
           ? _value.valueMarkdown
           : valueMarkdown // ignore: cast_nullable_to_non_nullable
@@ -1460,7 +1465,7 @@ class _$AdministrableProductDefinitionPropertyCopyWithImpl<$Res,
       valueMarkdownElement: freezed == valueMarkdownElement
           ? _value.valueMarkdownElement
           : valueMarkdownElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueAttachment: freezed == valueAttachment
           ? _value.valueAttachment
           : valueAttachment // ignore: cast_nullable_to_non_nullable
@@ -1563,11 +1568,11 @@ abstract class _$$AdministrableProductDefinitionPropertyImplCopyWith<$Res>
       CodeableConcept? valueCodeableConcept,
       Quantity? valueQuantity,
       FhirDate? valueDate,
-      @JsonKey(name: '_valueDate') Element? valueDateElement,
+      @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
       FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
       FhirMarkdown? valueMarkdown,
-      @JsonKey(name: '_valueMarkdown') Element? valueMarkdownElement,
+      @JsonKey(name: '_valueMarkdown') PrimitiveElement? valueMarkdownElement,
       Attachment? valueAttachment,
       Reference? valueReference,
       CodeableConcept? status});
@@ -1647,7 +1652,7 @@ class __$$AdministrableProductDefinitionPropertyImplCopyWithImpl<$Res>
       valueDateElement: freezed == valueDateElement
           ? _value.valueDateElement
           : valueDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueBoolean: freezed == valueBoolean
           ? _value.valueBoolean
           : valueBoolean // ignore: cast_nullable_to_non_nullable
@@ -1655,7 +1660,7 @@ class __$$AdministrableProductDefinitionPropertyImplCopyWithImpl<$Res>
       valueBooleanElement: freezed == valueBooleanElement
           ? _value.valueBooleanElement
           : valueBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueMarkdown: freezed == valueMarkdown
           ? _value.valueMarkdown
           : valueMarkdown // ignore: cast_nullable_to_non_nullable
@@ -1663,7 +1668,7 @@ class __$$AdministrableProductDefinitionPropertyImplCopyWithImpl<$Res>
       valueMarkdownElement: freezed == valueMarkdownElement
           ? _value.valueMarkdownElement
           : valueMarkdownElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueAttachment: freezed == valueAttachment
           ? _value.valueAttachment
           : valueAttachment // ignore: cast_nullable_to_non_nullable
@@ -1792,7 +1797,7 @@ class _$AdministrableProductDefinitionPropertyImpl
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @override
   @JsonKey(name: '_valueDate')
-  final Element? valueDateElement;
+  final PrimitiveElement? valueDateElement;
 
   /// [valueBoolean] A value for the characteristic.
   @override
@@ -1801,7 +1806,7 @@ class _$AdministrableProductDefinitionPropertyImpl
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @override
   @JsonKey(name: '_valueBoolean')
-  final Element? valueBooleanElement;
+  final PrimitiveElement? valueBooleanElement;
 
   /// [valueMarkdown] A value for the characteristic.
   @override
@@ -1810,7 +1815,7 @@ class _$AdministrableProductDefinitionPropertyImpl
   /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
   @override
   @JsonKey(name: '_valueMarkdown')
-  final Element? valueMarkdownElement;
+  final PrimitiveElement? valueMarkdownElement;
 
   /// [valueAttachment] A value for the characteristic.
   @override
@@ -1910,11 +1915,13 @@ abstract class _AdministrableProductDefinitionProperty
           final CodeableConcept? valueCodeableConcept,
           final Quantity? valueQuantity,
           final FhirDate? valueDate,
-          @JsonKey(name: '_valueDate') final Element? valueDateElement,
+          @JsonKey(name: '_valueDate') final PrimitiveElement? valueDateElement,
           final FhirBoolean? valueBoolean,
-          @JsonKey(name: '_valueBoolean') final Element? valueBooleanElement,
+          @JsonKey(name: '_valueBoolean')
+          final PrimitiveElement? valueBooleanElement,
           final FhirMarkdown? valueMarkdown,
-          @JsonKey(name: '_valueMarkdown') final Element? valueMarkdownElement,
+          @JsonKey(name: '_valueMarkdown')
+          final PrimitiveElement? valueMarkdownElement,
           final Attachment? valueAttachment,
           final Reference? valueReference,
           final CodeableConcept? status}) =
@@ -1975,7 +1982,7 @@ abstract class _AdministrableProductDefinitionProperty
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @JsonKey(name: '_valueDate')
-  Element? get valueDateElement;
+  PrimitiveElement? get valueDateElement;
   @override
 
   /// [valueBoolean] A value for the characteristic.
@@ -1984,7 +1991,7 @@ abstract class _AdministrableProductDefinitionProperty
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @JsonKey(name: '_valueBoolean')
-  Element? get valueBooleanElement;
+  PrimitiveElement? get valueBooleanElement;
   @override
 
   /// [valueMarkdown] A value for the characteristic.
@@ -1993,7 +2000,7 @@ abstract class _AdministrableProductDefinitionProperty
 
   /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
   @JsonKey(name: '_valueMarkdown')
-  Element? get valueMarkdownElement;
+  PrimitiveElement? get valueMarkdownElement;
   @override
 
   /// [valueAttachment] A value for the characteristic.
@@ -3106,7 +3113,7 @@ mixin _$AdministrableProductDefinitionWithdrawalPeriod {
   /// [supportingInformationElement] ("_supportingInformation") Extensions for
   ///  supportingInformation
   @JsonKey(name: '_supportingInformation')
-  Element? get supportingInformationElement =>
+  PrimitiveElement? get supportingInformationElement =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -3132,7 +3139,7 @@ abstract class $AdministrableProductDefinitionWithdrawalPeriodCopyWith<$Res> {
       Quantity value,
       String? supportingInformation,
       @JsonKey(name: '_supportingInformation')
-      Element? supportingInformationElement});
+      PrimitiveElement? supportingInformationElement});
 
   $CodeableConceptCopyWith<$Res> get tissue;
   $QuantityCopyWith<$Res> get value;
@@ -3189,7 +3196,7 @@ class _$AdministrableProductDefinitionWithdrawalPeriodCopyWithImpl<$Res,
       supportingInformationElement: freezed == supportingInformationElement
           ? _value.supportingInformationElement
           : supportingInformationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -3229,7 +3236,7 @@ abstract class _$$AdministrableProductDefinitionWithdrawalPeriodImplCopyWith<
       Quantity value,
       String? supportingInformation,
       @JsonKey(name: '_supportingInformation')
-      Element? supportingInformationElement});
+      PrimitiveElement? supportingInformationElement});
 
   @override
   $CodeableConceptCopyWith<$Res> get tissue;
@@ -3287,7 +3294,7 @@ class __$$AdministrableProductDefinitionWithdrawalPeriodImplCopyWithImpl<$Res>
       supportingInformationElement: freezed == supportingInformationElement
           ? _value.supportingInformationElement
           : supportingInformationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -3395,7 +3402,7 @@ class _$AdministrableProductDefinitionWithdrawalPeriodImpl
   ///  supportingInformation
   @override
   @JsonKey(name: '_supportingInformation')
-  final Element? supportingInformationElement;
+  final PrimitiveElement? supportingInformationElement;
 
   @override
   String toString() {
@@ -3462,7 +3469,7 @@ abstract class _AdministrableProductDefinitionWithdrawalPeriod
           required final Quantity value,
           final String? supportingInformation,
           @JsonKey(name: '_supportingInformation')
-          final Element? supportingInformationElement}) =
+          final PrimitiveElement? supportingInformationElement}) =
       _$AdministrableProductDefinitionWithdrawalPeriodImpl;
   const _AdministrableProductDefinitionWithdrawalPeriod._() : super._();
 
@@ -3518,7 +3525,7 @@ abstract class _AdministrableProductDefinitionWithdrawalPeriod
   /// [supportingInformationElement] ("_supportingInformation") Extensions for
   ///  supportingInformation
   @JsonKey(name: '_supportingInformation')
-  Element? get supportingInformationElement;
+  PrimitiveElement? get supportingInformationElement;
   @override
   @JsonKey(ignore: true)
   _$$AdministrableProductDefinitionWithdrawalPeriodImplCopyWith<
@@ -3554,14 +3561,15 @@ mixin _$ClinicalUseDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -3611,7 +3619,7 @@ mixin _$ClinicalUseDefinition {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get typeElement => throw _privateConstructorUsedError;
 
   /// [category] A categorisation of the issue, primarily for dividing warnings
   ///  into subject heading areas such as "Pregnancy and Lactation", "Overdose",
@@ -3674,16 +3682,16 @@ abstract class $ClinicalUseDefinitionCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<Identifier>? identifier,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       List<CodeableConcept>? category,
       List<Reference>? subject,
       CodeableConcept? status,
@@ -3764,7 +3772,7 @@ class _$ClinicalUseDefinitionCopyWithImpl<$Res,
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -3772,7 +3780,7 @@ class _$ClinicalUseDefinitionCopyWithImpl<$Res,
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -3800,7 +3808,7 @@ class _$ClinicalUseDefinitionCopyWithImpl<$Res,
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       category: freezed == category
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
@@ -3961,16 +3969,16 @@ abstract class _$$ClinicalUseDefinitionImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<Identifier>? identifier,
       FhirCode? type,
-      @JsonKey(name: '_type') Element? typeElement,
+      @JsonKey(name: '_type') PrimitiveElement? typeElement,
       List<CodeableConcept>? category,
       List<Reference>? subject,
       CodeableConcept? status,
@@ -4057,7 +4065,7 @@ class __$$ClinicalUseDefinitionImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -4065,7 +4073,7 @@ class __$$ClinicalUseDefinitionImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -4093,7 +4101,7 @@ class __$$ClinicalUseDefinitionImplCopyWithImpl<$Res>
       typeElement: freezed == typeElement
           ? _value.typeElement
           : typeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       category: freezed == category
           ? _value._category
           : category // ignore: cast_nullable_to_non_nullable
@@ -4206,7 +4214,7 @@ class _$ClinicalUseDefinitionImpl extends _ClinicalUseDefinition {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -4215,7 +4223,7 @@ class _$ClinicalUseDefinitionImpl extends _ClinicalUseDefinition {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -4328,7 +4336,7 @@ class _$ClinicalUseDefinitionImpl extends _ClinicalUseDefinition {
   /// [typeElement] ("_type") Extensions for type
   @override
   @JsonKey(name: '_type')
-  final Element? typeElement;
+  final PrimitiveElement? typeElement;
 
   /// [category] A categorisation of the issue, primarily for dividing warnings
   ///  into subject heading areas such as "Pregnancy and Lactation", "Overdose",
@@ -4520,16 +4528,17 @@ abstract class _ClinicalUseDefinition extends ClinicalUseDefinition {
           final FhirId? id,
           final FhirMeta? meta,
           final FhirUri? implicitRules,
-          @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+          @JsonKey(name: '_implicitRules')
+          final PrimitiveElement? implicitRulesElement,
           final FhirCode? language,
-          @JsonKey(name: '_language') final Element? languageElement,
+          @JsonKey(name: '_language') final PrimitiveElement? languageElement,
           final Narrative? text,
           final List<Resource>? contained,
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final List<Identifier>? identifier,
           final FhirCode? type,
-          @JsonKey(name: '_type') final Element? typeElement,
+          @JsonKey(name: '_type') final PrimitiveElement? typeElement,
           final List<CodeableConcept>? category,
           final List<Reference>? subject,
           final CodeableConcept? status,
@@ -4573,7 +4582,7 @@ abstract class _ClinicalUseDefinition extends ClinicalUseDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -4582,7 +4591,7 @@ abstract class _ClinicalUseDefinition extends ClinicalUseDefinition {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -4638,7 +4647,7 @@ abstract class _ClinicalUseDefinition extends ClinicalUseDefinition {
 
   /// [typeElement] ("_type") Extensions for type
   @JsonKey(name: '_type')
-  Element? get typeElement;
+  PrimitiveElement? get typeElement;
   @override
 
   /// [category] A categorisation of the issue, primarily for dividing warnings
@@ -5737,7 +5746,8 @@ mixin _$ClinicalUseDefinitionIndication {
 
   /// [durationStringElement] ("_durationString") Extensions for durationString
   @JsonKey(name: '_durationString')
-  Element? get durationStringElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get durationStringElement =>
+      throw _privateConstructorUsedError;
 
   /// [undesirableEffect] An unwanted side effect or negative outcome that may
   ///  happen if you use the drug (or other subject of this resource) for this
@@ -5778,7 +5788,7 @@ abstract class $ClinicalUseDefinitionIndicationCopyWith<$Res> {
       CodeableReference? intendedEffect,
       Range? durationRange,
       String? durationString,
-      @JsonKey(name: '_durationString') Element? durationStringElement,
+      @JsonKey(name: '_durationString') PrimitiveElement? durationStringElement,
       List<Reference>? undesirableEffect,
       FhirExpression? applicability,
       List<ClinicalUseDefinitionOtherTherapy>? otherTherapy});
@@ -5858,7 +5868,7 @@ class _$ClinicalUseDefinitionIndicationCopyWithImpl<$Res,
       durationStringElement: freezed == durationStringElement
           ? _value.durationStringElement
           : durationStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       undesirableEffect: freezed == undesirableEffect
           ? _value.undesirableEffect
           : undesirableEffect // ignore: cast_nullable_to_non_nullable
@@ -5955,7 +5965,7 @@ abstract class _$$ClinicalUseDefinitionIndicationImplCopyWith<$Res>
       CodeableReference? intendedEffect,
       Range? durationRange,
       String? durationString,
-      @JsonKey(name: '_durationString') Element? durationStringElement,
+      @JsonKey(name: '_durationString') PrimitiveElement? durationStringElement,
       List<Reference>? undesirableEffect,
       FhirExpression? applicability,
       List<ClinicalUseDefinitionOtherTherapy>? otherTherapy});
@@ -6039,7 +6049,7 @@ class __$$ClinicalUseDefinitionIndicationImplCopyWithImpl<$Res>
       durationStringElement: freezed == durationStringElement
           ? _value.durationStringElement
           : durationStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       undesirableEffect: freezed == undesirableEffect
           ? _value._undesirableEffect
           : undesirableEffect // ignore: cast_nullable_to_non_nullable
@@ -6196,7 +6206,7 @@ class _$ClinicalUseDefinitionIndicationImpl
   /// [durationStringElement] ("_durationString") Extensions for durationString
   @override
   @JsonKey(name: '_durationString')
-  final Element? durationStringElement;
+  final PrimitiveElement? durationStringElement;
 
   /// [undesirableEffect] An unwanted side effect or negative outcome that may
   ///  happen if you use the drug (or other subject of this resource) for this
@@ -6312,20 +6322,21 @@ class _$ClinicalUseDefinitionIndicationImpl
 abstract class _ClinicalUseDefinitionIndication
     extends ClinicalUseDefinitionIndication {
   const factory _ClinicalUseDefinitionIndication(
-      {final String? id,
-      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-      final List<FhirExtension>? modifierExtension,
-      final CodeableReference? diseaseSymptomProcedure,
-      final CodeableReference? diseaseStatus,
-      final List<CodeableReference>? comorbidity,
-      final CodeableReference? intendedEffect,
-      final Range? durationRange,
-      final String? durationString,
-      @JsonKey(name: '_durationString') final Element? durationStringElement,
-      final List<Reference>? undesirableEffect,
-      final FhirExpression? applicability,
-      final List<ClinicalUseDefinitionOtherTherapy>?
-          otherTherapy}) = _$ClinicalUseDefinitionIndicationImpl;
+          {final String? id,
+          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+          final List<FhirExtension>? modifierExtension,
+          final CodeableReference? diseaseSymptomProcedure,
+          final CodeableReference? diseaseStatus,
+          final List<CodeableReference>? comorbidity,
+          final CodeableReference? intendedEffect,
+          final Range? durationRange,
+          final String? durationString,
+          @JsonKey(name: '_durationString')
+          final PrimitiveElement? durationStringElement,
+          final List<Reference>? undesirableEffect,
+          final FhirExpression? applicability,
+          final List<ClinicalUseDefinitionOtherTherapy>? otherTherapy}) =
+      _$ClinicalUseDefinitionIndicationImpl;
   const _ClinicalUseDefinitionIndication._() : super._();
 
   factory _ClinicalUseDefinitionIndication.fromJson(Map<String, dynamic> json) =
@@ -6398,7 +6409,7 @@ abstract class _ClinicalUseDefinitionIndication
 
   /// [durationStringElement] ("_durationString") Extensions for durationString
   @JsonKey(name: '_durationString')
-  Element? get durationStringElement;
+  PrimitiveElement? get durationStringElement;
   @override
 
   /// [undesirableEffect] An unwanted side effect or negative outcome that may
@@ -7848,7 +7859,8 @@ mixin _$ClinicalUseDefinitionWarning {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [code] A coded or unformatted textual definition of this warning.
   CodeableConcept? get code => throw _privateConstructorUsedError;
@@ -7872,7 +7884,7 @@ abstract class $ClinicalUseDefinitionWarningCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       CodeableConcept? code});
 
   $CodeableConceptCopyWith<$Res>? get code;
@@ -7919,7 +7931,7 @@ class _$ClinicalUseDefinitionWarningCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       code: freezed == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -7954,7 +7966,7 @@ abstract class _$$ClinicalUseDefinitionWarningImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       CodeableConcept? code});
 
   @override
@@ -8001,7 +8013,7 @@ class __$$ClinicalUseDefinitionWarningImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       code: freezed == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -8100,7 +8112,7 @@ class _$ClinicalUseDefinitionWarningImpl extends _ClinicalUseDefinitionWarning {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [code] A coded or unformatted textual definition of this warning.
   @override
@@ -8162,7 +8174,7 @@ abstract class _ClinicalUseDefinitionWarning
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final CodeableConcept? code}) = _$ClinicalUseDefinitionWarningImpl;
   const _ClinicalUseDefinitionWarning._() : super._();
 
@@ -8207,7 +8219,7 @@ abstract class _ClinicalUseDefinitionWarning
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [code] A coded or unformatted textual definition of this warning.
@@ -8246,14 +8258,15 @@ mixin _$Ingredient {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -8305,7 +8318,7 @@ mixin _$Ingredient {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [for_] ("for") The product which this ingredient is a constituent part of.
   @JsonKey(name: 'for')
@@ -8335,7 +8348,8 @@ mixin _$Ingredient {
   /// [allergenicIndicatorElement] ("_allergenicIndicator") Extensions for
   ///  allergenicIndicator
   @JsonKey(name: '_allergenicIndicator')
-  Element? get allergenicIndicatorElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get allergenicIndicatorElement =>
+      throw _privateConstructorUsedError;
 
   /// [comment] A place for providing any notes that are relevant to the
   ///  component, e.g. removed during process, adjusted for loss on drying.
@@ -8343,7 +8357,7 @@ mixin _$Ingredient {
 
   /// [commentElement] ("_comment") Extensions for comment
   @JsonKey(name: '_comment')
-  Element? get commentElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get commentElement => throw _privateConstructorUsedError;
 
   /// [manufacturer] The organization(s) that manufacture this ingredient. Can be
   ///  used to indicate:         1) Organizations we are aware of that
@@ -8375,25 +8389,25 @@ abstract class $IngredientCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       Identifier? identifier,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       @JsonKey(name: 'for') List<Reference>? for_,
       CodeableConcept role,
       @JsonKey(name: 'function') List<CodeableConcept>? function_,
       CodeableConcept? group,
       FhirBoolean? allergenicIndicator,
       @JsonKey(name: '_allergenicIndicator')
-      Element? allergenicIndicatorElement,
+      PrimitiveElement? allergenicIndicatorElement,
       FhirMarkdown? comment,
-      @JsonKey(name: '_comment') Element? commentElement,
+      @JsonKey(name: '_comment') PrimitiveElement? commentElement,
       List<IngredientManufacturer>? manufacturer,
       IngredientSubstance substance});
 
@@ -8463,7 +8477,7 @@ class _$IngredientCopyWithImpl<$Res, $Val extends Ingredient>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -8471,7 +8485,7 @@ class _$IngredientCopyWithImpl<$Res, $Val extends Ingredient>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -8499,7 +8513,7 @@ class _$IngredientCopyWithImpl<$Res, $Val extends Ingredient>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       for_: freezed == for_
           ? _value.for_
           : for_ // ignore: cast_nullable_to_non_nullable
@@ -8523,7 +8537,7 @@ class _$IngredientCopyWithImpl<$Res, $Val extends Ingredient>
       allergenicIndicatorElement: freezed == allergenicIndicatorElement
           ? _value.allergenicIndicatorElement
           : allergenicIndicatorElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       comment: freezed == comment
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
@@ -8531,7 +8545,7 @@ class _$IngredientCopyWithImpl<$Res, $Val extends Ingredient>
       commentElement: freezed == commentElement
           ? _value.commentElement
           : commentElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       manufacturer: freezed == manufacturer
           ? _value.manufacturer
           : manufacturer // ignore: cast_nullable_to_non_nullable
@@ -8622,25 +8636,25 @@ abstract class _$$IngredientImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       Identifier? identifier,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       @JsonKey(name: 'for') List<Reference>? for_,
       CodeableConcept role,
       @JsonKey(name: 'function') List<CodeableConcept>? function_,
       CodeableConcept? group,
       FhirBoolean? allergenicIndicator,
       @JsonKey(name: '_allergenicIndicator')
-      Element? allergenicIndicatorElement,
+      PrimitiveElement? allergenicIndicatorElement,
       FhirMarkdown? comment,
-      @JsonKey(name: '_comment') Element? commentElement,
+      @JsonKey(name: '_comment') PrimitiveElement? commentElement,
       List<IngredientManufacturer>? manufacturer,
       IngredientSubstance substance});
 
@@ -8714,7 +8728,7 @@ class __$$IngredientImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -8722,7 +8736,7 @@ class __$$IngredientImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -8750,7 +8764,7 @@ class __$$IngredientImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       for_: freezed == for_
           ? _value._for_
           : for_ // ignore: cast_nullable_to_non_nullable
@@ -8774,7 +8788,7 @@ class __$$IngredientImplCopyWithImpl<$Res>
       allergenicIndicatorElement: freezed == allergenicIndicatorElement
           ? _value.allergenicIndicatorElement
           : allergenicIndicatorElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       comment: freezed == comment
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
@@ -8782,7 +8796,7 @@ class __$$IngredientImplCopyWithImpl<$Res>
       commentElement: freezed == commentElement
           ? _value.commentElement
           : commentElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       manufacturer: freezed == manufacturer
           ? _value._manufacturer
           : manufacturer // ignore: cast_nullable_to_non_nullable
@@ -8861,7 +8875,7 @@ class _$IngredientImpl extends _Ingredient {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -8870,7 +8884,7 @@ class _$IngredientImpl extends _Ingredient {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -8976,7 +8990,7 @@ class _$IngredientImpl extends _Ingredient {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [for_] ("for") The product which this ingredient is a constituent part of.
   final List<Reference>? _for_;
@@ -9032,7 +9046,7 @@ class _$IngredientImpl extends _Ingredient {
   ///  allergenicIndicator
   @override
   @JsonKey(name: '_allergenicIndicator')
-  final Element? allergenicIndicatorElement;
+  final PrimitiveElement? allergenicIndicatorElement;
 
   /// [comment] A place for providing any notes that are relevant to the
   ///  component, e.g. removed during process, adjusted for loss on drying.
@@ -9042,7 +9056,7 @@ class _$IngredientImpl extends _Ingredient {
   /// [commentElement] ("_comment") Extensions for comment
   @override
   @JsonKey(name: '_comment')
-  final Element? commentElement;
+  final PrimitiveElement? commentElement;
 
   /// [manufacturer] The organization(s) that manufacture this ingredient. Can be
   ///  used to indicate:         1) Organizations we are aware of that
@@ -9176,25 +9190,26 @@ abstract class _Ingredient extends Ingredient {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final Identifier? identifier,
       final FhirCode? status,
-      @JsonKey(name: '_status') final Element? statusElement,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       @JsonKey(name: 'for') final List<Reference>? for_,
       required final CodeableConcept role,
       @JsonKey(name: 'function') final List<CodeableConcept>? function_,
       final CodeableConcept? group,
       final FhirBoolean? allergenicIndicator,
       @JsonKey(name: '_allergenicIndicator')
-      final Element? allergenicIndicatorElement,
+      final PrimitiveElement? allergenicIndicatorElement,
       final FhirMarkdown? comment,
-      @JsonKey(name: '_comment') final Element? commentElement,
+      @JsonKey(name: '_comment') final PrimitiveElement? commentElement,
       final List<IngredientManufacturer>? manufacturer,
       required final IngredientSubstance substance}) = _$IngredientImpl;
   const _Ingredient._() : super._();
@@ -9229,7 +9244,7 @@ abstract class _Ingredient extends Ingredient {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -9238,7 +9253,7 @@ abstract class _Ingredient extends Ingredient {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -9296,7 +9311,7 @@ abstract class _Ingredient extends Ingredient {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [for_] ("for") The product which this ingredient is a constituent part of.
@@ -9332,7 +9347,7 @@ abstract class _Ingredient extends Ingredient {
   /// [allergenicIndicatorElement] ("_allergenicIndicator") Extensions for
   ///  allergenicIndicator
   @JsonKey(name: '_allergenicIndicator')
-  Element? get allergenicIndicatorElement;
+  PrimitiveElement? get allergenicIndicatorElement;
   @override
 
   /// [comment] A place for providing any notes that are relevant to the
@@ -9342,7 +9357,7 @@ abstract class _Ingredient extends Ingredient {
 
   /// [commentElement] ("_comment") Extensions for comment
   @JsonKey(name: '_comment')
-  Element? get commentElement;
+  PrimitiveElement? get commentElement;
   @override
 
   /// [manufacturer] The organization(s) that manufacture this ingredient. Can be
@@ -9405,7 +9420,7 @@ mixin _$IngredientManufacturer {
 
   /// [roleElement] ("_role") Extensions for role
   @JsonKey(name: '_role')
-  Element? get roleElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get roleElement => throw _privateConstructorUsedError;
 
   /// [manufacturer] An organization that manufactures this ingredient.
   Reference get manufacturer => throw _privateConstructorUsedError;
@@ -9427,7 +9442,7 @@ abstract class $IngredientManufacturerCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? role,
-      @JsonKey(name: '_role') Element? roleElement,
+      @JsonKey(name: '_role') PrimitiveElement? roleElement,
       Reference manufacturer});
 
   $ReferenceCopyWith<$Res> get manufacturer;
@@ -9474,7 +9489,7 @@ class _$IngredientManufacturerCopyWithImpl<$Res,
       roleElement: freezed == roleElement
           ? _value.roleElement
           : roleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       manufacturer: null == manufacturer
           ? _value.manufacturer
           : manufacturer // ignore: cast_nullable_to_non_nullable
@@ -9505,7 +9520,7 @@ abstract class _$$IngredientManufacturerImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirCode? role,
-      @JsonKey(name: '_role') Element? roleElement,
+      @JsonKey(name: '_role') PrimitiveElement? roleElement,
       Reference manufacturer});
 
   @override
@@ -9552,7 +9567,7 @@ class __$$IngredientManufacturerImplCopyWithImpl<$Res>
       roleElement: freezed == roleElement
           ? _value.roleElement
           : roleElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       manufacturer: null == manufacturer
           ? _value.manufacturer
           : manufacturer // ignore: cast_nullable_to_non_nullable
@@ -9653,7 +9668,7 @@ class _$IngredientManufacturerImpl extends _IngredientManufacturer {
   /// [roleElement] ("_role") Extensions for role
   @override
   @JsonKey(name: '_role')
-  final Element? roleElement;
+  final PrimitiveElement? roleElement;
 
   /// [manufacturer] An organization that manufactures this ingredient.
   @override
@@ -9713,7 +9728,7 @@ abstract class _IngredientManufacturer extends IngredientManufacturer {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final FhirCode? role,
-      @JsonKey(name: '_role') final Element? roleElement,
+      @JsonKey(name: '_role') final PrimitiveElement? roleElement,
       required final Reference manufacturer}) = _$IngredientManufacturerImpl;
   const _IngredientManufacturer._() : super._();
 
@@ -9761,7 +9776,7 @@ abstract class _IngredientManufacturer extends IngredientManufacturer {
 
   /// [roleElement] ("_role") Extensions for role
   @JsonKey(name: '_role')
-  Element? get roleElement;
+  PrimitiveElement? get roleElement;
   @override
 
   /// [manufacturer] An organization that manufactures this ingredient.
@@ -10237,7 +10252,8 @@ mixin _$IngredientStrength {
   /// [textPresentationElement] ("_textPresentation") Extensions for
   ///  textPresentation
   @JsonKey(name: '_textPresentation')
-  Element? get textPresentationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get textPresentationElement =>
+      throw _privateConstructorUsedError;
 
   /// [concentrationRatio] The strength per unitary volume (or mass).
   Ratio? get concentrationRatio => throw _privateConstructorUsedError;
@@ -10260,7 +10276,8 @@ mixin _$IngredientStrength {
   /// [textConcentrationElement] ("_textConcentration") Extensions for
   ///  textConcentration
   @JsonKey(name: '_textConcentration')
-  Element? get textConcentrationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get textConcentrationElement =>
+      throw _privateConstructorUsedError;
 
   /// [basis] A code that indicates if the strength is, for example, based on the
   ///  ingredient substance as stated or on the substance base (when the
@@ -10276,7 +10293,8 @@ mixin _$IngredientStrength {
   /// [measurementPointElement] ("_measurementPoint") Extensions for
   ///  measurementPoint
   @JsonKey(name: '_measurementPoint')
-  Element? get measurementPointElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get measurementPointElement =>
+      throw _privateConstructorUsedError;
 
   /// [country] The country or countries for which the strength range applies.
   List<CodeableConcept>? get country => throw _privateConstructorUsedError;
@@ -10312,16 +10330,19 @@ abstract class $IngredientStrengthCopyWith<$Res> {
       CodeableConcept? presentationCodeableConcept,
       Quantity? presentationQuantity,
       String? textPresentation,
-      @JsonKey(name: '_textPresentation') Element? textPresentationElement,
+      @JsonKey(name: '_textPresentation')
+      PrimitiveElement? textPresentationElement,
       Ratio? concentrationRatio,
       RatioRange? concentrationRatioRange,
       CodeableConcept? concentrationCodeableConcept,
       Quantity? concentrationQuantity,
       String? textConcentration,
-      @JsonKey(name: '_textConcentration') Element? textConcentrationElement,
+      @JsonKey(name: '_textConcentration')
+      PrimitiveElement? textConcentrationElement,
       CodeableConcept? basis,
       String? measurementPoint,
-      @JsonKey(name: '_measurementPoint') Element? measurementPointElement,
+      @JsonKey(name: '_measurementPoint')
+      PrimitiveElement? measurementPointElement,
       List<CodeableConcept>? country,
       List<IngredientReferenceStrength>? referenceStrength});
 
@@ -10406,7 +10427,7 @@ class _$IngredientStrengthCopyWithImpl<$Res, $Val extends IngredientStrength>
       textPresentationElement: freezed == textPresentationElement
           ? _value.textPresentationElement
           : textPresentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       concentrationRatio: freezed == concentrationRatio
           ? _value.concentrationRatio
           : concentrationRatio // ignore: cast_nullable_to_non_nullable
@@ -10430,7 +10451,7 @@ class _$IngredientStrengthCopyWithImpl<$Res, $Val extends IngredientStrength>
       textConcentrationElement: freezed == textConcentrationElement
           ? _value.textConcentrationElement
           : textConcentrationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       basis: freezed == basis
           ? _value.basis
           : basis // ignore: cast_nullable_to_non_nullable
@@ -10442,7 +10463,7 @@ class _$IngredientStrengthCopyWithImpl<$Res, $Val extends IngredientStrength>
       measurementPointElement: freezed == measurementPointElement
           ? _value.measurementPointElement
           : measurementPointElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       country: freezed == country
           ? _value.country
           : country // ignore: cast_nullable_to_non_nullable
@@ -10583,16 +10604,19 @@ abstract class _$$IngredientStrengthImplCopyWith<$Res>
       CodeableConcept? presentationCodeableConcept,
       Quantity? presentationQuantity,
       String? textPresentation,
-      @JsonKey(name: '_textPresentation') Element? textPresentationElement,
+      @JsonKey(name: '_textPresentation')
+      PrimitiveElement? textPresentationElement,
       Ratio? concentrationRatio,
       RatioRange? concentrationRatioRange,
       CodeableConcept? concentrationCodeableConcept,
       Quantity? concentrationQuantity,
       String? textConcentration,
-      @JsonKey(name: '_textConcentration') Element? textConcentrationElement,
+      @JsonKey(name: '_textConcentration')
+      PrimitiveElement? textConcentrationElement,
       CodeableConcept? basis,
       String? measurementPoint,
-      @JsonKey(name: '_measurementPoint') Element? measurementPointElement,
+      @JsonKey(name: '_measurementPoint')
+      PrimitiveElement? measurementPointElement,
       List<CodeableConcept>? country,
       List<IngredientReferenceStrength>? referenceStrength});
 
@@ -10684,7 +10708,7 @@ class __$$IngredientStrengthImplCopyWithImpl<$Res>
       textPresentationElement: freezed == textPresentationElement
           ? _value.textPresentationElement
           : textPresentationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       concentrationRatio: freezed == concentrationRatio
           ? _value.concentrationRatio
           : concentrationRatio // ignore: cast_nullable_to_non_nullable
@@ -10708,7 +10732,7 @@ class __$$IngredientStrengthImplCopyWithImpl<$Res>
       textConcentrationElement: freezed == textConcentrationElement
           ? _value.textConcentrationElement
           : textConcentrationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       basis: freezed == basis
           ? _value.basis
           : basis // ignore: cast_nullable_to_non_nullable
@@ -10720,7 +10744,7 @@ class __$$IngredientStrengthImplCopyWithImpl<$Res>
       measurementPointElement: freezed == measurementPointElement
           ? _value.measurementPointElement
           : measurementPointElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       country: freezed == country
           ? _value._country
           : country // ignore: cast_nullable_to_non_nullable
@@ -10877,7 +10901,7 @@ class _$IngredientStrengthImpl extends _IngredientStrength {
   ///  textPresentation
   @override
   @JsonKey(name: '_textPresentation')
-  final Element? textPresentationElement;
+  final PrimitiveElement? textPresentationElement;
 
   /// [concentrationRatio] The strength per unitary volume (or mass).
   @override
@@ -10905,7 +10929,7 @@ class _$IngredientStrengthImpl extends _IngredientStrength {
   ///  textConcentration
   @override
   @JsonKey(name: '_textConcentration')
-  final Element? textConcentrationElement;
+  final PrimitiveElement? textConcentrationElement;
 
   /// [basis] A code that indicates if the strength is, for example, based on the
   ///  ingredient substance as stated or on the substance base (when the
@@ -10924,7 +10948,7 @@ class _$IngredientStrengthImpl extends _IngredientStrength {
   ///  measurementPoint
   @override
   @JsonKey(name: '_measurementPoint')
-  final Element? measurementPointElement;
+  final PrimitiveElement? measurementPointElement;
 
   /// [country] The country or countries for which the strength range applies.
   final List<CodeableConcept>? _country;
@@ -11071,18 +11095,18 @@ abstract class _IngredientStrength extends IngredientStrength {
           final Quantity? presentationQuantity,
           final String? textPresentation,
           @JsonKey(name: '_textPresentation')
-          final Element? textPresentationElement,
+          final PrimitiveElement? textPresentationElement,
           final Ratio? concentrationRatio,
           final RatioRange? concentrationRatioRange,
           final CodeableConcept? concentrationCodeableConcept,
           final Quantity? concentrationQuantity,
           final String? textConcentration,
           @JsonKey(name: '_textConcentration')
-          final Element? textConcentrationElement,
+          final PrimitiveElement? textConcentrationElement,
           final CodeableConcept? basis,
           final String? measurementPoint,
           @JsonKey(name: '_measurementPoint')
-          final Element? measurementPointElement,
+          final PrimitiveElement? measurementPointElement,
           final List<CodeableConcept>? country,
           final List<IngredientReferenceStrength>? referenceStrength}) =
       _$IngredientStrengthImpl;
@@ -11168,7 +11192,7 @@ abstract class _IngredientStrength extends IngredientStrength {
   /// [textPresentationElement] ("_textPresentation") Extensions for
   ///  textPresentation
   @JsonKey(name: '_textPresentation')
-  Element? get textPresentationElement;
+  PrimitiveElement? get textPresentationElement;
   @override
 
   /// [concentrationRatio] The strength per unitary volume (or mass).
@@ -11196,7 +11220,7 @@ abstract class _IngredientStrength extends IngredientStrength {
   /// [textConcentrationElement] ("_textConcentration") Extensions for
   ///  textConcentration
   @JsonKey(name: '_textConcentration')
-  Element? get textConcentrationElement;
+  PrimitiveElement? get textConcentrationElement;
   @override
 
   /// [basis] A code that indicates if the strength is, for example, based on the
@@ -11215,7 +11239,7 @@ abstract class _IngredientStrength extends IngredientStrength {
   /// [measurementPointElement] ("_measurementPoint") Extensions for
   ///  measurementPoint
   @JsonKey(name: '_measurementPoint')
-  Element? get measurementPointElement;
+  PrimitiveElement? get measurementPointElement;
   @override
 
   /// [country] The country or countries for which the strength range applies.
@@ -11290,7 +11314,8 @@ mixin _$IngredientReferenceStrength {
   /// [measurementPointElement] ("_measurementPoint") Extensions for
   ///  measurementPoint
   @JsonKey(name: '_measurementPoint')
-  Element? get measurementPointElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get measurementPointElement =>
+      throw _privateConstructorUsedError;
 
   /// [country] The country or countries for which the strength range applies.
   List<CodeableConcept>? get country => throw _privateConstructorUsedError;
@@ -11318,7 +11343,8 @@ abstract class $IngredientReferenceStrengthCopyWith<$Res> {
       RatioRange? strengthRatioRange,
       Quantity? strengthQuantity,
       String? measurementPoint,
-      @JsonKey(name: '_measurementPoint') Element? measurementPointElement,
+      @JsonKey(name: '_measurementPoint')
+      PrimitiveElement? measurementPointElement,
       List<CodeableConcept>? country});
 
   $CodeableReferenceCopyWith<$Res> get substance;
@@ -11388,7 +11414,7 @@ class _$IngredientReferenceStrengthCopyWithImpl<$Res,
       measurementPointElement: freezed == measurementPointElement
           ? _value.measurementPointElement
           : measurementPointElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       country: freezed == country
           ? _value.country
           : country // ignore: cast_nullable_to_non_nullable
@@ -11459,7 +11485,8 @@ abstract class _$$IngredientReferenceStrengthImplCopyWith<$Res>
       RatioRange? strengthRatioRange,
       Quantity? strengthQuantity,
       String? measurementPoint,
-      @JsonKey(name: '_measurementPoint') Element? measurementPointElement,
+      @JsonKey(name: '_measurementPoint')
+      PrimitiveElement? measurementPointElement,
       List<CodeableConcept>? country});
 
   @override
@@ -11532,7 +11559,7 @@ class __$$IngredientReferenceStrengthImplCopyWithImpl<$Res>
       measurementPointElement: freezed == measurementPointElement
           ? _value.measurementPointElement
           : measurementPointElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       country: freezed == country
           ? _value._country
           : country // ignore: cast_nullable_to_non_nullable
@@ -11654,7 +11681,7 @@ class _$IngredientReferenceStrengthImpl extends _IngredientReferenceStrength {
   ///  measurementPoint
   @override
   @JsonKey(name: '_measurementPoint')
-  final Element? measurementPointElement;
+  final PrimitiveElement? measurementPointElement;
 
   /// [country] The country or countries for which the strength range applies.
   final List<CodeableConcept>? _country;
@@ -11742,7 +11769,7 @@ abstract class _IngredientReferenceStrength
           final Quantity? strengthQuantity,
           final String? measurementPoint,
           @JsonKey(name: '_measurementPoint')
-          final Element? measurementPointElement,
+          final PrimitiveElement? measurementPointElement,
           final List<CodeableConcept>? country}) =
       _$IngredientReferenceStrengthImpl;
   const _IngredientReferenceStrength._() : super._();
@@ -11806,7 +11833,7 @@ abstract class _IngredientReferenceStrength
   /// [measurementPointElement] ("_measurementPoint") Extensions for
   ///  measurementPoint
   @JsonKey(name: '_measurementPoint')
-  Element? get measurementPointElement;
+  PrimitiveElement? get measurementPointElement;
   @override
 
   /// [country] The country or countries for which the strength range applies.
@@ -11845,14 +11872,15 @@ mixin _$ManufacturedItemDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -11902,14 +11930,14 @@ mixin _$ManufacturedItemDefinition {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
   /// [name] A descriptive name applied to this item.
   String? get name => throw _privateConstructorUsedError;
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [manufacturedDoseForm] Dose form as manufactured and before any
   ///  transformation into the pharmaceutical product.
@@ -11962,18 +11990,18 @@ abstract class $ManufacturedItemDefinitionCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<Identifier>? identifier,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       CodeableConcept manufacturedDoseForm,
       CodeableConcept? unitOfPresentation,
       List<Reference>? manufacturer,
@@ -12046,7 +12074,7 @@ class _$ManufacturedItemDefinitionCopyWithImpl<$Res,
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -12054,7 +12082,7 @@ class _$ManufacturedItemDefinitionCopyWithImpl<$Res,
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -12082,7 +12110,7 @@ class _$ManufacturedItemDefinitionCopyWithImpl<$Res,
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -12090,7 +12118,7 @@ class _$ManufacturedItemDefinitionCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       manufacturedDoseForm: null == manufacturedDoseForm
           ? _value.manufacturedDoseForm
           : manufacturedDoseForm // ignore: cast_nullable_to_non_nullable
@@ -12182,18 +12210,18 @@ abstract class _$$ManufacturedItemDefinitionImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<Identifier>? identifier,
       FhirCode? status,
-      @JsonKey(name: '_status') Element? statusElement,
+      @JsonKey(name: '_status') PrimitiveElement? statusElement,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       CodeableConcept manufacturedDoseForm,
       CodeableConcept? unitOfPresentation,
       List<Reference>? manufacturer,
@@ -12269,7 +12297,7 @@ class __$$ManufacturedItemDefinitionImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -12277,7 +12305,7 @@ class __$$ManufacturedItemDefinitionImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -12305,7 +12333,7 @@ class __$$ManufacturedItemDefinitionImplCopyWithImpl<$Res>
       statusElement: freezed == statusElement
           ? _value.statusElement
           : statusElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -12313,7 +12341,7 @@ class __$$ManufacturedItemDefinitionImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       manufacturedDoseForm: null == manufacturedDoseForm
           ? _value.manufacturedDoseForm
           : manufacturedDoseForm // ignore: cast_nullable_to_non_nullable
@@ -12415,7 +12443,7 @@ class _$ManufacturedItemDefinitionImpl extends _ManufacturedItemDefinition {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -12424,7 +12452,7 @@ class _$ManufacturedItemDefinitionImpl extends _ManufacturedItemDefinition {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -12537,7 +12565,7 @@ class _$ManufacturedItemDefinitionImpl extends _ManufacturedItemDefinition {
   /// [statusElement] ("_status") Extensions for status
   @override
   @JsonKey(name: '_status')
-  final Element? statusElement;
+  final PrimitiveElement? statusElement;
 
   /// [name] A descriptive name applied to this item.
   @override
@@ -12546,7 +12574,7 @@ class _$ManufacturedItemDefinitionImpl extends _ManufacturedItemDefinition {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [manufacturedDoseForm] Dose form as manufactured and before any
   ///  transformation into the pharmaceutical product.
@@ -12736,18 +12764,19 @@ abstract class _ManufacturedItemDefinition extends ManufacturedItemDefinition {
           final FhirId? id,
           final FhirMeta? meta,
           final FhirUri? implicitRules,
-          @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+          @JsonKey(name: '_implicitRules')
+          final PrimitiveElement? implicitRulesElement,
           final FhirCode? language,
-          @JsonKey(name: '_language') final Element? languageElement,
+          @JsonKey(name: '_language') final PrimitiveElement? languageElement,
           final Narrative? text,
           final List<Resource>? contained,
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final List<Identifier>? identifier,
           final FhirCode? status,
-          @JsonKey(name: '_status') final Element? statusElement,
+          @JsonKey(name: '_status') final PrimitiveElement? statusElement,
           final String? name,
-          @JsonKey(name: '_name') final Element? nameElement,
+          @JsonKey(name: '_name') final PrimitiveElement? nameElement,
           required final CodeableConcept manufacturedDoseForm,
           final CodeableConcept? unitOfPresentation,
           final List<Reference>? manufacturer,
@@ -12788,7 +12817,7 @@ abstract class _ManufacturedItemDefinition extends ManufacturedItemDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -12797,7 +12826,7 @@ abstract class _ManufacturedItemDefinition extends ManufacturedItemDefinition {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -12853,7 +12882,7 @@ abstract class _ManufacturedItemDefinition extends ManufacturedItemDefinition {
 
   /// [statusElement] ("_status") Extensions for status
   @JsonKey(name: '_status')
-  Element? get statusElement;
+  PrimitiveElement? get statusElement;
   @override
 
   /// [name] A descriptive name applied to this item.
@@ -12862,7 +12891,7 @@ abstract class _ManufacturedItemDefinition extends ManufacturedItemDefinition {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [manufacturedDoseForm] Dose form as manufactured and before any
@@ -12954,21 +12983,23 @@ mixin _$ManufacturedItemDefinitionProperty {
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @JsonKey(name: '_valueDate')
-  Element? get valueDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueDateElement => throw _privateConstructorUsedError;
 
   /// [valueBoolean] A value for the characteristic.
   FhirBoolean? get valueBoolean => throw _privateConstructorUsedError;
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @JsonKey(name: '_valueBoolean')
-  Element? get valueBooleanElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueBooleanElement =>
+      throw _privateConstructorUsedError;
 
   /// [valueMarkdown] A value for the characteristic.
   FhirMarkdown? get valueMarkdown => throw _privateConstructorUsedError;
 
   /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
   @JsonKey(name: '_valueMarkdown')
-  Element? get valueMarkdownElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueMarkdownElement =>
+      throw _privateConstructorUsedError;
 
   /// [valueAttachment] A value for the characteristic.
   Attachment? get valueAttachment => throw _privateConstructorUsedError;
@@ -12999,11 +13030,11 @@ abstract class $ManufacturedItemDefinitionPropertyCopyWith<$Res> {
       CodeableConcept? valueCodeableConcept,
       Quantity? valueQuantity,
       FhirDate? valueDate,
-      @JsonKey(name: '_valueDate') Element? valueDateElement,
+      @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
       FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
       FhirMarkdown? valueMarkdown,
-      @JsonKey(name: '_valueMarkdown') Element? valueMarkdownElement,
+      @JsonKey(name: '_valueMarkdown') PrimitiveElement? valueMarkdownElement,
       Attachment? valueAttachment,
       Reference? valueReference});
 
@@ -13075,7 +13106,7 @@ class _$ManufacturedItemDefinitionPropertyCopyWithImpl<$Res,
       valueDateElement: freezed == valueDateElement
           ? _value.valueDateElement
           : valueDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueBoolean: freezed == valueBoolean
           ? _value.valueBoolean
           : valueBoolean // ignore: cast_nullable_to_non_nullable
@@ -13083,7 +13114,7 @@ class _$ManufacturedItemDefinitionPropertyCopyWithImpl<$Res,
       valueBooleanElement: freezed == valueBooleanElement
           ? _value.valueBooleanElement
           : valueBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueMarkdown: freezed == valueMarkdown
           ? _value.valueMarkdown
           : valueMarkdown // ignore: cast_nullable_to_non_nullable
@@ -13091,7 +13122,7 @@ class _$ManufacturedItemDefinitionPropertyCopyWithImpl<$Res,
       valueMarkdownElement: freezed == valueMarkdownElement
           ? _value.valueMarkdownElement
           : valueMarkdownElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueAttachment: freezed == valueAttachment
           ? _value.valueAttachment
           : valueAttachment // ignore: cast_nullable_to_non_nullable
@@ -13178,11 +13209,11 @@ abstract class _$$ManufacturedItemDefinitionPropertyImplCopyWith<$Res>
       CodeableConcept? valueCodeableConcept,
       Quantity? valueQuantity,
       FhirDate? valueDate,
-      @JsonKey(name: '_valueDate') Element? valueDateElement,
+      @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
       FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
       FhirMarkdown? valueMarkdown,
-      @JsonKey(name: '_valueMarkdown') Element? valueMarkdownElement,
+      @JsonKey(name: '_valueMarkdown') PrimitiveElement? valueMarkdownElement,
       Attachment? valueAttachment,
       Reference? valueReference});
 
@@ -13258,7 +13289,7 @@ class __$$ManufacturedItemDefinitionPropertyImplCopyWithImpl<$Res>
       valueDateElement: freezed == valueDateElement
           ? _value.valueDateElement
           : valueDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueBoolean: freezed == valueBoolean
           ? _value.valueBoolean
           : valueBoolean // ignore: cast_nullable_to_non_nullable
@@ -13266,7 +13297,7 @@ class __$$ManufacturedItemDefinitionPropertyImplCopyWithImpl<$Res>
       valueBooleanElement: freezed == valueBooleanElement
           ? _value.valueBooleanElement
           : valueBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueMarkdown: freezed == valueMarkdown
           ? _value.valueMarkdown
           : valueMarkdown // ignore: cast_nullable_to_non_nullable
@@ -13274,7 +13305,7 @@ class __$$ManufacturedItemDefinitionPropertyImplCopyWithImpl<$Res>
       valueMarkdownElement: freezed == valueMarkdownElement
           ? _value.valueMarkdownElement
           : valueMarkdownElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueAttachment: freezed == valueAttachment
           ? _value.valueAttachment
           : valueAttachment // ignore: cast_nullable_to_non_nullable
@@ -13398,7 +13429,7 @@ class _$ManufacturedItemDefinitionPropertyImpl
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @override
   @JsonKey(name: '_valueDate')
-  final Element? valueDateElement;
+  final PrimitiveElement? valueDateElement;
 
   /// [valueBoolean] A value for the characteristic.
   @override
@@ -13407,7 +13438,7 @@ class _$ManufacturedItemDefinitionPropertyImpl
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @override
   @JsonKey(name: '_valueBoolean')
-  final Element? valueBooleanElement;
+  final PrimitiveElement? valueBooleanElement;
 
   /// [valueMarkdown] A value for the characteristic.
   @override
@@ -13416,7 +13447,7 @@ class _$ManufacturedItemDefinitionPropertyImpl
   /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
   @override
   @JsonKey(name: '_valueMarkdown')
-  final Element? valueMarkdownElement;
+  final PrimitiveElement? valueMarkdownElement;
 
   /// [valueAttachment] A value for the characteristic.
   @override
@@ -13509,11 +13540,13 @@ abstract class _ManufacturedItemDefinitionProperty
           final CodeableConcept? valueCodeableConcept,
           final Quantity? valueQuantity,
           final FhirDate? valueDate,
-          @JsonKey(name: '_valueDate') final Element? valueDateElement,
+          @JsonKey(name: '_valueDate') final PrimitiveElement? valueDateElement,
           final FhirBoolean? valueBoolean,
-          @JsonKey(name: '_valueBoolean') final Element? valueBooleanElement,
+          @JsonKey(name: '_valueBoolean')
+          final PrimitiveElement? valueBooleanElement,
           final FhirMarkdown? valueMarkdown,
-          @JsonKey(name: '_valueMarkdown') final Element? valueMarkdownElement,
+          @JsonKey(name: '_valueMarkdown')
+          final PrimitiveElement? valueMarkdownElement,
           final Attachment? valueAttachment,
           final Reference? valueReference}) =
       _$ManufacturedItemDefinitionPropertyImpl;
@@ -13573,7 +13606,7 @@ abstract class _ManufacturedItemDefinitionProperty
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @JsonKey(name: '_valueDate')
-  Element? get valueDateElement;
+  PrimitiveElement? get valueDateElement;
   @override
 
   /// [valueBoolean] A value for the characteristic.
@@ -13582,7 +13615,7 @@ abstract class _ManufacturedItemDefinitionProperty
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @JsonKey(name: '_valueBoolean')
-  Element? get valueBooleanElement;
+  PrimitiveElement? get valueBooleanElement;
   @override
 
   /// [valueMarkdown] A value for the characteristic.
@@ -13591,7 +13624,7 @@ abstract class _ManufacturedItemDefinitionProperty
 
   /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
   @JsonKey(name: '_valueMarkdown')
-  Element? get valueMarkdownElement;
+  PrimitiveElement? get valueMarkdownElement;
   @override
 
   /// [valueAttachment] A value for the characteristic.
@@ -14691,14 +14724,15 @@ mixin _$MedicinalProductDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -14758,7 +14792,7 @@ mixin _$MedicinalProductDefinition {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [status] The status within the lifecycle of this product record. A
   ///  high-level status, this is not intended to duplicate details carried
@@ -14770,14 +14804,15 @@ mixin _$MedicinalProductDefinition {
 
   /// [statusDateElement] ("_statusDate") Extensions for statusDate
   @JsonKey(name: '_statusDate')
-  Element? get statusDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusDateElement => throw _privateConstructorUsedError;
 
   /// [description] General description of this product.
   FhirMarkdown? get description => throw _privateConstructorUsedError;
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [combinedPharmaceuticalDoseForm] The dose form for a single part product,
   ///  or combined form of a multiple part product. This is one concept that
@@ -14804,7 +14839,7 @@ mixin _$MedicinalProductDefinition {
 
   /// [indicationElement] ("_indication") Extensions for indication
   @JsonKey(name: '_indication')
-  Element? get indicationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get indicationElement => throw _privateConstructorUsedError;
 
   /// [legalStatusOfSupply] The legal status of supply of the medicinal product
   ///  as classified by the regulator.
@@ -14931,9 +14966,9 @@ abstract class $MedicinalProductDefinitionCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -14942,16 +14977,16 @@ abstract class $MedicinalProductDefinitionCopyWith<$Res> {
       CodeableConcept? type,
       CodeableConcept? domain,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       CodeableConcept? status,
       FhirDateTime? statusDate,
-      @JsonKey(name: '_statusDate') Element? statusDateElement,
+      @JsonKey(name: '_statusDate') PrimitiveElement? statusDateElement,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       CodeableConcept? combinedPharmaceuticalDoseForm,
       List<CodeableConcept>? route,
       FhirMarkdown? indication,
-      @JsonKey(name: '_indication') Element? indicationElement,
+      @JsonKey(name: '_indication') PrimitiveElement? indicationElement,
       CodeableConcept? legalStatusOfSupply,
       CodeableConcept? additionalMonitoringIndicator,
       List<CodeableConcept>? specialMeasures,
@@ -15062,7 +15097,7 @@ class _$MedicinalProductDefinitionCopyWithImpl<$Res,
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -15070,7 +15105,7 @@ class _$MedicinalProductDefinitionCopyWithImpl<$Res,
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -15106,7 +15141,7 @@ class _$MedicinalProductDefinitionCopyWithImpl<$Res,
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -15118,7 +15153,7 @@ class _$MedicinalProductDefinitionCopyWithImpl<$Res,
       statusDateElement: freezed == statusDateElement
           ? _value.statusDateElement
           : statusDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -15126,7 +15161,7 @@ class _$MedicinalProductDefinitionCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       combinedPharmaceuticalDoseForm: freezed == combinedPharmaceuticalDoseForm
           ? _value.combinedPharmaceuticalDoseForm
           : combinedPharmaceuticalDoseForm // ignore: cast_nullable_to_non_nullable
@@ -15142,7 +15177,7 @@ class _$MedicinalProductDefinitionCopyWithImpl<$Res,
       indicationElement: freezed == indicationElement
           ? _value.indicationElement
           : indicationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       legalStatusOfSupply: freezed == legalStatusOfSupply
           ? _value.legalStatusOfSupply
           : legalStatusOfSupply // ignore: cast_nullable_to_non_nullable
@@ -15351,9 +15386,9 @@ abstract class _$$MedicinalProductDefinitionImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -15362,16 +15397,16 @@ abstract class _$$MedicinalProductDefinitionImplCopyWith<$Res>
       CodeableConcept? type,
       CodeableConcept? domain,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       CodeableConcept? status,
       FhirDateTime? statusDate,
-      @JsonKey(name: '_statusDate') Element? statusDateElement,
+      @JsonKey(name: '_statusDate') PrimitiveElement? statusDateElement,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       CodeableConcept? combinedPharmaceuticalDoseForm,
       List<CodeableConcept>? route,
       FhirMarkdown? indication,
-      @JsonKey(name: '_indication') Element? indicationElement,
+      @JsonKey(name: '_indication') PrimitiveElement? indicationElement,
       CodeableConcept? legalStatusOfSupply,
       CodeableConcept? additionalMonitoringIndicator,
       List<CodeableConcept>? specialMeasures,
@@ -15490,7 +15525,7 @@ class __$$MedicinalProductDefinitionImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -15498,7 +15533,7 @@ class __$$MedicinalProductDefinitionImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -15534,7 +15569,7 @@ class __$$MedicinalProductDefinitionImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -15546,7 +15581,7 @@ class __$$MedicinalProductDefinitionImplCopyWithImpl<$Res>
       statusDateElement: freezed == statusDateElement
           ? _value.statusDateElement
           : statusDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -15554,7 +15589,7 @@ class __$$MedicinalProductDefinitionImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       combinedPharmaceuticalDoseForm: freezed == combinedPharmaceuticalDoseForm
           ? _value.combinedPharmaceuticalDoseForm
           : combinedPharmaceuticalDoseForm // ignore: cast_nullable_to_non_nullable
@@ -15570,7 +15605,7 @@ class __$$MedicinalProductDefinitionImplCopyWithImpl<$Res>
       indicationElement: freezed == indicationElement
           ? _value.indicationElement
           : indicationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       legalStatusOfSupply: freezed == legalStatusOfSupply
           ? _value.legalStatusOfSupply
           : legalStatusOfSupply // ignore: cast_nullable_to_non_nullable
@@ -15753,7 +15788,7 @@ class _$MedicinalProductDefinitionImpl extends _MedicinalProductDefinition {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -15762,7 +15797,7 @@ class _$MedicinalProductDefinitionImpl extends _MedicinalProductDefinition {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -15891,7 +15926,7 @@ class _$MedicinalProductDefinitionImpl extends _MedicinalProductDefinition {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [status] The status within the lifecycle of this product record. A
   ///  high-level status, this is not intended to duplicate details carried
@@ -15906,7 +15941,7 @@ class _$MedicinalProductDefinitionImpl extends _MedicinalProductDefinition {
   /// [statusDateElement] ("_statusDate") Extensions for statusDate
   @override
   @JsonKey(name: '_statusDate')
-  final Element? statusDateElement;
+  final PrimitiveElement? statusDateElement;
 
   /// [description] General description of this product.
   @override
@@ -15915,7 +15950,7 @@ class _$MedicinalProductDefinitionImpl extends _MedicinalProductDefinition {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [combinedPharmaceuticalDoseForm] The dose form for a single part product,
   ///  or combined form of a multiple part product. This is one concept that
@@ -15959,7 +15994,7 @@ class _$MedicinalProductDefinitionImpl extends _MedicinalProductDefinition {
   /// [indicationElement] ("_indication") Extensions for indication
   @override
   @JsonKey(name: '_indication')
-  final Element? indicationElement;
+  final PrimitiveElement? indicationElement;
 
   /// [legalStatusOfSupply] The legal status of supply of the medicinal product
   ///  as classified by the regulator.
@@ -16412,9 +16447,10 @@ abstract class _MedicinalProductDefinition extends MedicinalProductDefinition {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
@@ -16423,16 +16459,16 @@ abstract class _MedicinalProductDefinition extends MedicinalProductDefinition {
       final CodeableConcept? type,
       final CodeableConcept? domain,
       final String? version,
-      @JsonKey(name: '_version') final Element? versionElement,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
       final CodeableConcept? status,
       final FhirDateTime? statusDate,
-      @JsonKey(name: '_statusDate') final Element? statusDateElement,
+      @JsonKey(name: '_statusDate') final PrimitiveElement? statusDateElement,
       final FhirMarkdown? description,
-      @JsonKey(name: '_description') final Element? descriptionElement,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final CodeableConcept? combinedPharmaceuticalDoseForm,
       final List<CodeableConcept>? route,
       final FhirMarkdown? indication,
-      @JsonKey(name: '_indication') final Element? indicationElement,
+      @JsonKey(name: '_indication') final PrimitiveElement? indicationElement,
       final CodeableConcept? legalStatusOfSupply,
       final CodeableConcept? additionalMonitoringIndicator,
       final List<CodeableConcept>? specialMeasures,
@@ -16485,7 +16521,7 @@ abstract class _MedicinalProductDefinition extends MedicinalProductDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -16494,7 +16530,7 @@ abstract class _MedicinalProductDefinition extends MedicinalProductDefinition {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -16562,7 +16598,7 @@ abstract class _MedicinalProductDefinition extends MedicinalProductDefinition {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [status] The status within the lifecycle of this product record. A
@@ -16577,7 +16613,7 @@ abstract class _MedicinalProductDefinition extends MedicinalProductDefinition {
 
   /// [statusDateElement] ("_statusDate") Extensions for statusDate
   @JsonKey(name: '_statusDate')
-  Element? get statusDateElement;
+  PrimitiveElement? get statusDateElement;
   @override
 
   /// [description] General description of this product.
@@ -16586,7 +16622,7 @@ abstract class _MedicinalProductDefinition extends MedicinalProductDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [combinedPharmaceuticalDoseForm] The dose form for a single part product,
@@ -16616,7 +16652,7 @@ abstract class _MedicinalProductDefinition extends MedicinalProductDefinition {
 
   /// [indicationElement] ("_indication") Extensions for indication
   @JsonKey(name: '_indication')
-  Element? get indicationElement;
+  PrimitiveElement? get indicationElement;
   @override
 
   /// [legalStatusOfSupply] The legal status of supply of the medicinal product
@@ -17175,7 +17211,8 @@ mixin _$MedicinalProductDefinitionName {
 
   /// [productNameElement] ("_productName") Extensions for productName
   @JsonKey(name: '_productName')
-  Element? get productNameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get productNameElement =>
+      throw _privateConstructorUsedError;
 
   /// [type] Type of product name, such as rINN, BAN, Proprietary,
   ///  Non-Proprietary.
@@ -17210,7 +17247,7 @@ abstract class $MedicinalProductDefinitionNameCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? productName,
-      @JsonKey(name: '_productName') Element? productNameElement,
+      @JsonKey(name: '_productName') PrimitiveElement? productNameElement,
       CodeableConcept? type,
       @JsonKey(name: 'part') List<MedicinalProductDefinitionPart>? part_,
       List<MedicinalProductDefinitionUsage>? usage});
@@ -17261,7 +17298,7 @@ class _$MedicinalProductDefinitionNameCopyWithImpl<$Res,
       productNameElement: freezed == productNameElement
           ? _value.productNameElement
           : productNameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -17304,7 +17341,7 @@ abstract class _$$MedicinalProductDefinitionNameImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? productName,
-      @JsonKey(name: '_productName') Element? productNameElement,
+      @JsonKey(name: '_productName') PrimitiveElement? productNameElement,
       CodeableConcept? type,
       @JsonKey(name: 'part') List<MedicinalProductDefinitionPart>? part_,
       List<MedicinalProductDefinitionUsage>? usage});
@@ -17355,7 +17392,7 @@ class __$$MedicinalProductDefinitionNameImplCopyWithImpl<$Res>
       productNameElement: freezed == productNameElement
           ? _value.productNameElement
           : productNameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -17467,7 +17504,7 @@ class _$MedicinalProductDefinitionNameImpl
   /// [productNameElement] ("_productName") Extensions for productName
   @override
   @JsonKey(name: '_productName')
-  final Element? productNameElement;
+  final PrimitiveElement? productNameElement;
 
   /// [type] Type of product name, such as rINN, BAN, Proprietary,
   ///  Non-Proprietary.
@@ -17563,7 +17600,7 @@ abstract class _MedicinalProductDefinitionName
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final String? productName,
-      @JsonKey(name: '_productName') final Element? productNameElement,
+      @JsonKey(name: '_productName') final PrimitiveElement? productNameElement,
       final CodeableConcept? type,
       @JsonKey(name: 'part') final List<MedicinalProductDefinitionPart>? part_,
       final List<MedicinalProductDefinitionUsage>?
@@ -17611,7 +17648,7 @@ abstract class _MedicinalProductDefinitionName
 
   /// [productNameElement] ("_productName") Extensions for productName
   @JsonKey(name: '_productName')
-  Element? get productNameElement;
+  PrimitiveElement? get productNameElement;
   @override
 
   /// [type] Type of product name, such as rINN, BAN, Proprietary,
@@ -17675,7 +17712,7 @@ mixin _$MedicinalProductDefinitionPart {
 
   /// [partElement] ("_part") Extensions for part
   @JsonKey(name: '_part')
-  Element? get partElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get partElement => throw _privateConstructorUsedError;
 
   /// [type] Identifying type for this part of the name (e.g. strength part).
   CodeableConcept get type => throw _privateConstructorUsedError;
@@ -17699,7 +17736,7 @@ abstract class $MedicinalProductDefinitionPartCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       @JsonKey(name: 'part') String? part_,
-      @JsonKey(name: '_part') Element? partElement,
+      @JsonKey(name: '_part') PrimitiveElement? partElement,
       CodeableConcept type});
 
   $CodeableConceptCopyWith<$Res> get type;
@@ -17746,7 +17783,7 @@ class _$MedicinalProductDefinitionPartCopyWithImpl<$Res,
       partElement: freezed == partElement
           ? _value.partElement
           : partElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -17777,7 +17814,7 @@ abstract class _$$MedicinalProductDefinitionPartImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       @JsonKey(name: 'part') String? part_,
-      @JsonKey(name: '_part') Element? partElement,
+      @JsonKey(name: '_part') PrimitiveElement? partElement,
       CodeableConcept type});
 
   @override
@@ -17824,7 +17861,7 @@ class __$$MedicinalProductDefinitionPartImplCopyWithImpl<$Res>
       partElement: freezed == partElement
           ? _value.partElement
           : partElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -17925,7 +17962,7 @@ class _$MedicinalProductDefinitionPartImpl
   /// [partElement] ("_part") Extensions for part
   @override
   @JsonKey(name: '_part')
-  final Element? partElement;
+  final PrimitiveElement? partElement;
 
   /// [type] Identifying type for this part of the name (e.g. strength part).
   @override
@@ -17986,7 +18023,7 @@ abstract class _MedicinalProductDefinitionPart
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           @JsonKey(name: 'part') final String? part_,
-          @JsonKey(name: '_part') final Element? partElement,
+          @JsonKey(name: '_part') final PrimitiveElement? partElement,
           required final CodeableConcept type}) =
       _$MedicinalProductDefinitionPartImpl;
   const _MedicinalProductDefinitionPart._() : super._();
@@ -18033,7 +18070,7 @@ abstract class _MedicinalProductDefinitionPart
 
   /// [partElement] ("_part") Extensions for part
   @JsonKey(name: '_part')
-  Element? get partElement;
+  PrimitiveElement? get partElement;
   @override
 
   /// [type] Identifying type for this part of the name (e.g. strength part).
@@ -19437,7 +19474,8 @@ mixin _$MedicinalProductDefinitionCharacteristic {
 
   /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
   @JsonKey(name: '_valueMarkdown')
-  Element? get valueMarkdownElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueMarkdownElement =>
+      throw _privateConstructorUsedError;
 
   /// [valueQuantity] A value for the characteristic.text.
   Quantity? get valueQuantity => throw _privateConstructorUsedError;
@@ -19447,21 +19485,23 @@ mixin _$MedicinalProductDefinitionCharacteristic {
 
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
   @JsonKey(name: '_valueInteger')
-  Element? get valueIntegerElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueIntegerElement =>
+      throw _privateConstructorUsedError;
 
   /// [valueDate] A value for the characteristic.text.
   FhirDate? get valueDate => throw _privateConstructorUsedError;
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @JsonKey(name: '_valueDate')
-  Element? get valueDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueDateElement => throw _privateConstructorUsedError;
 
   /// [valueBoolean] A value for the characteristic.text.
   FhirBoolean? get valueBoolean => throw _privateConstructorUsedError;
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @JsonKey(name: '_valueBoolean')
-  Element? get valueBooleanElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueBooleanElement =>
+      throw _privateConstructorUsedError;
 
   /// [valueAttachment] A value for the characteristic.text.
   Attachment? get valueAttachment => throw _privateConstructorUsedError;
@@ -19488,14 +19528,14 @@ abstract class $MedicinalProductDefinitionCharacteristicCopyWith<$Res> {
       CodeableConcept type,
       CodeableConcept? valueCodeableConcept,
       FhirMarkdown? valueMarkdown,
-      @JsonKey(name: '_valueMarkdown') Element? valueMarkdownElement,
+      @JsonKey(name: '_valueMarkdown') PrimitiveElement? valueMarkdownElement,
       Quantity? valueQuantity,
       FhirInteger? valueInteger,
-      @JsonKey(name: '_valueInteger') Element? valueIntegerElement,
+      @JsonKey(name: '_valueInteger') PrimitiveElement? valueIntegerElement,
       FhirDate? valueDate,
-      @JsonKey(name: '_valueDate') Element? valueDateElement,
+      @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
       FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
       Attachment? valueAttachment});
 
   $CodeableConceptCopyWith<$Res> get type;
@@ -19563,7 +19603,7 @@ class _$MedicinalProductDefinitionCharacteristicCopyWithImpl<$Res,
       valueMarkdownElement: freezed == valueMarkdownElement
           ? _value.valueMarkdownElement
           : valueMarkdownElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueQuantity: freezed == valueQuantity
           ? _value.valueQuantity
           : valueQuantity // ignore: cast_nullable_to_non_nullable
@@ -19575,7 +19615,7 @@ class _$MedicinalProductDefinitionCharacteristicCopyWithImpl<$Res,
       valueIntegerElement: freezed == valueIntegerElement
           ? _value.valueIntegerElement
           : valueIntegerElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueDate: freezed == valueDate
           ? _value.valueDate
           : valueDate // ignore: cast_nullable_to_non_nullable
@@ -19583,7 +19623,7 @@ class _$MedicinalProductDefinitionCharacteristicCopyWithImpl<$Res,
       valueDateElement: freezed == valueDateElement
           ? _value.valueDateElement
           : valueDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueBoolean: freezed == valueBoolean
           ? _value.valueBoolean
           : valueBoolean // ignore: cast_nullable_to_non_nullable
@@ -19591,7 +19631,7 @@ class _$MedicinalProductDefinitionCharacteristicCopyWithImpl<$Res,
       valueBooleanElement: freezed == valueBooleanElement
           ? _value.valueBooleanElement
           : valueBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueAttachment: freezed == valueAttachment
           ? _value.valueAttachment
           : valueAttachment // ignore: cast_nullable_to_non_nullable
@@ -19661,14 +19701,14 @@ abstract class _$$MedicinalProductDefinitionCharacteristicImplCopyWith<$Res>
       CodeableConcept type,
       CodeableConcept? valueCodeableConcept,
       FhirMarkdown? valueMarkdown,
-      @JsonKey(name: '_valueMarkdown') Element? valueMarkdownElement,
+      @JsonKey(name: '_valueMarkdown') PrimitiveElement? valueMarkdownElement,
       Quantity? valueQuantity,
       FhirInteger? valueInteger,
-      @JsonKey(name: '_valueInteger') Element? valueIntegerElement,
+      @JsonKey(name: '_valueInteger') PrimitiveElement? valueIntegerElement,
       FhirDate? valueDate,
-      @JsonKey(name: '_valueDate') Element? valueDateElement,
+      @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
       FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
       Attachment? valueAttachment});
 
   @override
@@ -19738,7 +19778,7 @@ class __$$MedicinalProductDefinitionCharacteristicImplCopyWithImpl<$Res>
       valueMarkdownElement: freezed == valueMarkdownElement
           ? _value.valueMarkdownElement
           : valueMarkdownElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueQuantity: freezed == valueQuantity
           ? _value.valueQuantity
           : valueQuantity // ignore: cast_nullable_to_non_nullable
@@ -19750,7 +19790,7 @@ class __$$MedicinalProductDefinitionCharacteristicImplCopyWithImpl<$Res>
       valueIntegerElement: freezed == valueIntegerElement
           ? _value.valueIntegerElement
           : valueIntegerElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueDate: freezed == valueDate
           ? _value.valueDate
           : valueDate // ignore: cast_nullable_to_non_nullable
@@ -19758,7 +19798,7 @@ class __$$MedicinalProductDefinitionCharacteristicImplCopyWithImpl<$Res>
       valueDateElement: freezed == valueDateElement
           ? _value.valueDateElement
           : valueDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueBoolean: freezed == valueBoolean
           ? _value.valueBoolean
           : valueBoolean // ignore: cast_nullable_to_non_nullable
@@ -19766,7 +19806,7 @@ class __$$MedicinalProductDefinitionCharacteristicImplCopyWithImpl<$Res>
       valueBooleanElement: freezed == valueBooleanElement
           ? _value.valueBooleanElement
           : valueBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueAttachment: freezed == valueAttachment
           ? _value.valueAttachment
           : valueAttachment // ignore: cast_nullable_to_non_nullable
@@ -19883,7 +19923,7 @@ class _$MedicinalProductDefinitionCharacteristicImpl
   /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
   @override
   @JsonKey(name: '_valueMarkdown')
-  final Element? valueMarkdownElement;
+  final PrimitiveElement? valueMarkdownElement;
 
   /// [valueQuantity] A value for the characteristic.text.
   @override
@@ -19896,7 +19936,7 @@ class _$MedicinalProductDefinitionCharacteristicImpl
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
   @override
   @JsonKey(name: '_valueInteger')
-  final Element? valueIntegerElement;
+  final PrimitiveElement? valueIntegerElement;
 
   /// [valueDate] A value for the characteristic.text.
   @override
@@ -19905,7 +19945,7 @@ class _$MedicinalProductDefinitionCharacteristicImpl
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @override
   @JsonKey(name: '_valueDate')
-  final Element? valueDateElement;
+  final PrimitiveElement? valueDateElement;
 
   /// [valueBoolean] A value for the characteristic.text.
   @override
@@ -19914,7 +19954,7 @@ class _$MedicinalProductDefinitionCharacteristicImpl
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @override
   @JsonKey(name: '_valueBoolean')
-  final Element? valueBooleanElement;
+  final PrimitiveElement? valueBooleanElement;
 
   /// [valueAttachment] A value for the characteristic.text.
   @override
@@ -20006,14 +20046,17 @@ abstract class _MedicinalProductDefinitionCharacteristic
           required final CodeableConcept type,
           final CodeableConcept? valueCodeableConcept,
           final FhirMarkdown? valueMarkdown,
-          @JsonKey(name: '_valueMarkdown') final Element? valueMarkdownElement,
+          @JsonKey(name: '_valueMarkdown')
+          final PrimitiveElement? valueMarkdownElement,
           final Quantity? valueQuantity,
           final FhirInteger? valueInteger,
-          @JsonKey(name: '_valueInteger') final Element? valueIntegerElement,
+          @JsonKey(name: '_valueInteger')
+          final PrimitiveElement? valueIntegerElement,
           final FhirDate? valueDate,
-          @JsonKey(name: '_valueDate') final Element? valueDateElement,
+          @JsonKey(name: '_valueDate') final PrimitiveElement? valueDateElement,
           final FhirBoolean? valueBoolean,
-          @JsonKey(name: '_valueBoolean') final Element? valueBooleanElement,
+          @JsonKey(name: '_valueBoolean')
+          final PrimitiveElement? valueBooleanElement,
           final Attachment? valueAttachment}) =
       _$MedicinalProductDefinitionCharacteristicImpl;
   const _MedicinalProductDefinitionCharacteristic._() : super._();
@@ -20068,7 +20111,7 @@ abstract class _MedicinalProductDefinitionCharacteristic
 
   /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
   @JsonKey(name: '_valueMarkdown')
-  Element? get valueMarkdownElement;
+  PrimitiveElement? get valueMarkdownElement;
   @override
 
   /// [valueQuantity] A value for the characteristic.text.
@@ -20081,7 +20124,7 @@ abstract class _MedicinalProductDefinitionCharacteristic
 
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
   @JsonKey(name: '_valueInteger')
-  Element? get valueIntegerElement;
+  PrimitiveElement? get valueIntegerElement;
   @override
 
   /// [valueDate] A value for the characteristic.text.
@@ -20090,7 +20133,7 @@ abstract class _MedicinalProductDefinitionCharacteristic
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @JsonKey(name: '_valueDate')
-  Element? get valueDateElement;
+  PrimitiveElement? get valueDateElement;
   @override
 
   /// [valueBoolean] A value for the characteristic.text.
@@ -20099,7 +20142,7 @@ abstract class _MedicinalProductDefinitionCharacteristic
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @JsonKey(name: '_valueBoolean')
-  Element? get valueBooleanElement;
+  PrimitiveElement? get valueBooleanElement;
   @override
 
   /// [valueAttachment] A value for the characteristic.text.
@@ -20139,14 +20182,15 @@ mixin _$PackagedProductDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -20199,7 +20243,7 @@ mixin _$PackagedProductDefinition {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [type] A high level category e.g. medicinal product, raw material,
   ///  shipping/transport container, etc.
@@ -20219,7 +20263,7 @@ mixin _$PackagedProductDefinition {
 
   /// [statusDateElement] ("_statusDate") Extensions for statusDate
   @JsonKey(name: '_statusDate')
-  Element? get statusDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusDateElement => throw _privateConstructorUsedError;
 
   /// [containedItemQuantity] A total of the complete count of contained items of
   ///  a particular type/form, independent of sub-packaging or organization. This
@@ -20244,7 +20288,8 @@ mixin _$PackagedProductDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [legalStatusOfSupply] The legal status of supply of the packaged item as
   ///  classified by the regulator.
@@ -20264,7 +20309,8 @@ mixin _$PackagedProductDefinition {
   /// [copackagedIndicatorElement] ("_copackagedIndicator") Extensions for
   ///  copackagedIndicator
   @JsonKey(name: '_copackagedIndicator')
-  Element? get copackagedIndicatorElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get copackagedIndicatorElement =>
+      throw _privateConstructorUsedError;
 
   /// [manufacturer] Manufacturer of this package type. When there are multiple
   ///  it means these are all possible manufacturers.
@@ -20303,29 +20349,29 @@ abstract class $PackagedProductDefinitionCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<Identifier>? identifier,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       CodeableConcept? type,
       List<Reference>? packageFor,
       CodeableConcept? status,
       FhirDateTime? statusDate,
-      @JsonKey(name: '_statusDate') Element? statusDateElement,
+      @JsonKey(name: '_statusDate') PrimitiveElement? statusDateElement,
       List<Quantity>? containedItemQuantity,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<PackagedProductDefinitionLegalStatusOfSupply>? legalStatusOfSupply,
       List<MarketingStatus>? marketingStatus,
       FhirBoolean? copackagedIndicator,
       @JsonKey(name: '_copackagedIndicator')
-      Element? copackagedIndicatorElement,
+      PrimitiveElement? copackagedIndicatorElement,
       List<Reference>? manufacturer,
       List<Reference>? attachedDocument,
       PackagedProductDefinitionPackaging? packaging,
@@ -20403,7 +20449,7 @@ class _$PackagedProductDefinitionCopyWithImpl<$Res,
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -20411,7 +20457,7 @@ class _$PackagedProductDefinitionCopyWithImpl<$Res,
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -20439,7 +20485,7 @@ class _$PackagedProductDefinitionCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -20459,7 +20505,7 @@ class _$PackagedProductDefinitionCopyWithImpl<$Res,
       statusDateElement: freezed == statusDateElement
           ? _value.statusDateElement
           : statusDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       containedItemQuantity: freezed == containedItemQuantity
           ? _value.containedItemQuantity
           : containedItemQuantity // ignore: cast_nullable_to_non_nullable
@@ -20471,7 +20517,7 @@ class _$PackagedProductDefinitionCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       legalStatusOfSupply: freezed == legalStatusOfSupply
           ? _value.legalStatusOfSupply
           : legalStatusOfSupply // ignore: cast_nullable_to_non_nullable
@@ -20487,7 +20533,7 @@ class _$PackagedProductDefinitionCopyWithImpl<$Res,
       copackagedIndicatorElement: freezed == copackagedIndicatorElement
           ? _value.copackagedIndicatorElement
           : copackagedIndicatorElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       manufacturer: freezed == manufacturer
           ? _value.manufacturer
           : manufacturer // ignore: cast_nullable_to_non_nullable
@@ -20584,29 +20630,29 @@ abstract class _$$PackagedProductDefinitionImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<Identifier>? identifier,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       CodeableConcept? type,
       List<Reference>? packageFor,
       CodeableConcept? status,
       FhirDateTime? statusDate,
-      @JsonKey(name: '_statusDate') Element? statusDateElement,
+      @JsonKey(name: '_statusDate') PrimitiveElement? statusDateElement,
       List<Quantity>? containedItemQuantity,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<PackagedProductDefinitionLegalStatusOfSupply>? legalStatusOfSupply,
       List<MarketingStatus>? marketingStatus,
       FhirBoolean? copackagedIndicator,
       @JsonKey(name: '_copackagedIndicator')
-      Element? copackagedIndicatorElement,
+      PrimitiveElement? copackagedIndicatorElement,
       List<Reference>? manufacturer,
       List<Reference>? attachedDocument,
       PackagedProductDefinitionPackaging? packaging,
@@ -20688,7 +20734,7 @@ class __$$PackagedProductDefinitionImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -20696,7 +20742,7 @@ class __$$PackagedProductDefinitionImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -20724,7 +20770,7 @@ class __$$PackagedProductDefinitionImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -20744,7 +20790,7 @@ class __$$PackagedProductDefinitionImplCopyWithImpl<$Res>
       statusDateElement: freezed == statusDateElement
           ? _value.statusDateElement
           : statusDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       containedItemQuantity: freezed == containedItemQuantity
           ? _value._containedItemQuantity
           : containedItemQuantity // ignore: cast_nullable_to_non_nullable
@@ -20756,7 +20802,7 @@ class __$$PackagedProductDefinitionImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       legalStatusOfSupply: freezed == legalStatusOfSupply
           ? _value._legalStatusOfSupply
           : legalStatusOfSupply // ignore: cast_nullable_to_non_nullable
@@ -20772,7 +20818,7 @@ class __$$PackagedProductDefinitionImplCopyWithImpl<$Res>
       copackagedIndicatorElement: freezed == copackagedIndicatorElement
           ? _value.copackagedIndicatorElement
           : copackagedIndicatorElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       manufacturer: freezed == manufacturer
           ? _value._manufacturer
           : manufacturer // ignore: cast_nullable_to_non_nullable
@@ -20871,7 +20917,7 @@ class _$PackagedProductDefinitionImpl extends _PackagedProductDefinition {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -20880,7 +20926,7 @@ class _$PackagedProductDefinitionImpl extends _PackagedProductDefinition {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -20999,7 +21045,7 @@ class _$PackagedProductDefinitionImpl extends _PackagedProductDefinition {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [type] A high level category e.g. medicinal product, raw material,
   ///  shipping/transport container, etc.
@@ -21034,7 +21080,7 @@ class _$PackagedProductDefinitionImpl extends _PackagedProductDefinition {
   /// [statusDateElement] ("_statusDate") Extensions for statusDate
   @override
   @JsonKey(name: '_statusDate')
-  final Element? statusDateElement;
+  final PrimitiveElement? statusDateElement;
 
   /// [containedItemQuantity] A total of the complete count of contained items of
   ///  a particular type/form, independent of sub-packaging or organization. This
@@ -21084,7 +21130,7 @@ class _$PackagedProductDefinitionImpl extends _PackagedProductDefinition {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [legalStatusOfSupply] The legal status of supply of the packaged item as
   ///  classified by the regulator.
@@ -21128,7 +21174,7 @@ class _$PackagedProductDefinitionImpl extends _PackagedProductDefinition {
   ///  copackagedIndicator
   @override
   @JsonKey(name: '_copackagedIndicator')
-  final Element? copackagedIndicatorElement;
+  final PrimitiveElement? copackagedIndicatorElement;
 
   /// [manufacturer] Manufacturer of this package type. When there are multiple
   ///  it means these are all possible manufacturers.
@@ -21303,40 +21349,41 @@ class _$PackagedProductDefinitionImpl extends _PackagedProductDefinition {
 
 abstract class _PackagedProductDefinition extends PackagedProductDefinition {
   const factory _PackagedProductDefinition(
-          {@JsonKey(unknownEnumValue: R5ResourceType.PackagedProductDefinition)
-          final R5ResourceType resourceType,
-          final FhirId? id,
-          final FhirMeta? meta,
-          final FhirUri? implicitRules,
-          @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
-          final FhirCode? language,
-          @JsonKey(name: '_language') final Element? languageElement,
-          final Narrative? text,
-          final List<Resource>? contained,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final List<Identifier>? identifier,
-          final String? name,
-          @JsonKey(name: '_name') final Element? nameElement,
-          final CodeableConcept? type,
-          final List<Reference>? packageFor,
-          final CodeableConcept? status,
-          final FhirDateTime? statusDate,
-          @JsonKey(name: '_statusDate') final Element? statusDateElement,
-          final List<Quantity>? containedItemQuantity,
-          final FhirMarkdown? description,
-          @JsonKey(name: '_description') final Element? descriptionElement,
-          final List<PackagedProductDefinitionLegalStatusOfSupply>?
-              legalStatusOfSupply,
-          final List<MarketingStatus>? marketingStatus,
-          final FhirBoolean? copackagedIndicator,
-          @JsonKey(name: '_copackagedIndicator')
-          final Element? copackagedIndicatorElement,
-          final List<Reference>? manufacturer,
-          final List<Reference>? attachedDocument,
-          final PackagedProductDefinitionPackaging? packaging,
-          final List<PackagedProductDefinitionProperty>? characteristic}) =
-      _$PackagedProductDefinitionImpl;
+      {@JsonKey(unknownEnumValue: R5ResourceType.PackagedProductDefinition)
+      final R5ResourceType resourceType,
+      final FhirId? id,
+      final FhirMeta? meta,
+      final FhirUri? implicitRules,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
+      final FhirCode? language,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
+      final Narrative? text,
+      final List<Resource>? contained,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final List<Identifier>? identifier,
+      final String? name,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
+      final CodeableConcept? type,
+      final List<Reference>? packageFor,
+      final CodeableConcept? status,
+      final FhirDateTime? statusDate,
+      @JsonKey(name: '_statusDate') final PrimitiveElement? statusDateElement,
+      final List<Quantity>? containedItemQuantity,
+      final FhirMarkdown? description,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
+      final List<PackagedProductDefinitionLegalStatusOfSupply>?
+          legalStatusOfSupply,
+      final List<MarketingStatus>? marketingStatus,
+      final FhirBoolean? copackagedIndicator,
+      @JsonKey(name: '_copackagedIndicator')
+      final PrimitiveElement? copackagedIndicatorElement,
+      final List<Reference>? manufacturer,
+      final List<Reference>? attachedDocument,
+      final PackagedProductDefinitionPackaging? packaging,
+      final List<PackagedProductDefinitionProperty>?
+          characteristic}) = _$PackagedProductDefinitionImpl;
   const _PackagedProductDefinition._() : super._();
 
   factory _PackagedProductDefinition.fromJson(Map<String, dynamic> json) =
@@ -21369,7 +21416,7 @@ abstract class _PackagedProductDefinition extends PackagedProductDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -21378,7 +21425,7 @@ abstract class _PackagedProductDefinition extends PackagedProductDefinition {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -21437,7 +21484,7 @@ abstract class _PackagedProductDefinition extends PackagedProductDefinition {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [type] A high level category e.g. medicinal product, raw material,
@@ -21462,7 +21509,7 @@ abstract class _PackagedProductDefinition extends PackagedProductDefinition {
 
   /// [statusDateElement] ("_statusDate") Extensions for statusDate
   @JsonKey(name: '_statusDate')
-  Element? get statusDateElement;
+  PrimitiveElement? get statusDateElement;
   @override
 
   /// [containedItemQuantity] A total of the complete count of contained items of
@@ -21489,7 +21536,7 @@ abstract class _PackagedProductDefinition extends PackagedProductDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [legalStatusOfSupply] The legal status of supply of the packaged item as
@@ -21511,7 +21558,7 @@ abstract class _PackagedProductDefinition extends PackagedProductDefinition {
   /// [copackagedIndicatorElement] ("_copackagedIndicator") Extensions for
   ///  copackagedIndicator
   @JsonKey(name: '_copackagedIndicator')
-  Element? get copackagedIndicatorElement;
+  PrimitiveElement? get copackagedIndicatorElement;
   @override
 
   /// [manufacturer] Manufacturer of this package type. When there are multiple
@@ -22000,7 +22047,8 @@ mixin _$PackagedProductDefinitionPackaging {
 
   /// [componentPartElement] ("_componentPart") Extensions for componentPart
   @JsonKey(name: '_componentPart')
-  Element? get componentPartElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get componentPartElement =>
+      throw _privateConstructorUsedError;
 
   /// [quantity] The quantity of packaging items contained at this layer of the
   ///  package. This does not relate to the number of contained items but relates
@@ -22011,7 +22059,7 @@ mixin _$PackagedProductDefinitionPackaging {
 
   /// [quantityElement] ("_quantity") Extensions for quantity
   @JsonKey(name: '_quantity')
-  Element? get quantityElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get quantityElement => throw _privateConstructorUsedError;
 
   /// [material] Material type of the package item.
   List<CodeableConcept>? get material => throw _privateConstructorUsedError;
@@ -22067,9 +22115,9 @@ abstract class $PackagedProductDefinitionPackagingCopyWith<$Res> {
       List<Identifier>? identifier,
       CodeableConcept? type,
       FhirBoolean? componentPart,
-      @JsonKey(name: '_componentPart') Element? componentPartElement,
+      @JsonKey(name: '_componentPart') PrimitiveElement? componentPartElement,
       FhirInteger? quantity,
-      @JsonKey(name: '_quantity') Element? quantityElement,
+      @JsonKey(name: '_quantity') PrimitiveElement? quantityElement,
       List<CodeableConcept>? material,
       List<CodeableConcept>? alternateMaterial,
       List<ProductShelfLife>? shelfLifeStorage,
@@ -22140,7 +22188,7 @@ class _$PackagedProductDefinitionPackagingCopyWithImpl<$Res,
       componentPartElement: freezed == componentPartElement
           ? _value.componentPartElement
           : componentPartElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       quantity: freezed == quantity
           ? _value.quantity
           : quantity // ignore: cast_nullable_to_non_nullable
@@ -22148,7 +22196,7 @@ class _$PackagedProductDefinitionPackagingCopyWithImpl<$Res,
       quantityElement: freezed == quantityElement
           ? _value.quantityElement
           : quantityElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       material: freezed == material
           ? _value.material
           : material // ignore: cast_nullable_to_non_nullable
@@ -22209,9 +22257,9 @@ abstract class _$$PackagedProductDefinitionPackagingImplCopyWith<$Res>
       List<Identifier>? identifier,
       CodeableConcept? type,
       FhirBoolean? componentPart,
-      @JsonKey(name: '_componentPart') Element? componentPartElement,
+      @JsonKey(name: '_componentPart') PrimitiveElement? componentPartElement,
       FhirInteger? quantity,
-      @JsonKey(name: '_quantity') Element? quantityElement,
+      @JsonKey(name: '_quantity') PrimitiveElement? quantityElement,
       List<CodeableConcept>? material,
       List<CodeableConcept>? alternateMaterial,
       List<ProductShelfLife>? shelfLifeStorage,
@@ -22282,7 +22330,7 @@ class __$$PackagedProductDefinitionPackagingImplCopyWithImpl<$Res>
       componentPartElement: freezed == componentPartElement
           ? _value.componentPartElement
           : componentPartElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       quantity: freezed == quantity
           ? _value.quantity
           : quantity // ignore: cast_nullable_to_non_nullable
@@ -22290,7 +22338,7 @@ class __$$PackagedProductDefinitionPackagingImplCopyWithImpl<$Res>
       quantityElement: freezed == quantityElement
           ? _value.quantityElement
           : quantityElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       material: freezed == material
           ? _value._material
           : material // ignore: cast_nullable_to_non_nullable
@@ -22455,7 +22503,7 @@ class _$PackagedProductDefinitionPackagingImpl
   /// [componentPartElement] ("_componentPart") Extensions for componentPart
   @override
   @JsonKey(name: '_componentPart')
-  final Element? componentPartElement;
+  final PrimitiveElement? componentPartElement;
 
   /// [quantity] The quantity of packaging items contained at this layer of the
   ///  package. This does not relate to the number of contained items but relates
@@ -22468,7 +22516,7 @@ class _$PackagedProductDefinitionPackagingImpl
   /// [quantityElement] ("_quantity") Extensions for quantity
   @override
   @JsonKey(name: '_quantity')
-  final Element? quantityElement;
+  final PrimitiveElement? quantityElement;
 
   /// [material] Material type of the package item.
   final List<CodeableConcept>? _material;
@@ -22661,9 +22709,10 @@ abstract class _PackagedProductDefinitionPackaging
           final List<Identifier>? identifier,
           final CodeableConcept? type,
           final FhirBoolean? componentPart,
-          @JsonKey(name: '_componentPart') final Element? componentPartElement,
+          @JsonKey(name: '_componentPart')
+          final PrimitiveElement? componentPartElement,
           final FhirInteger? quantity,
-          @JsonKey(name: '_quantity') final Element? quantityElement,
+          @JsonKey(name: '_quantity') final PrimitiveElement? quantityElement,
           final List<CodeableConcept>? material,
           final List<CodeableConcept>? alternateMaterial,
           final List<ProductShelfLife>? shelfLifeStorage,
@@ -22728,7 +22777,7 @@ abstract class _PackagedProductDefinitionPackaging
 
   /// [componentPartElement] ("_componentPart") Extensions for componentPart
   @JsonKey(name: '_componentPart')
-  Element? get componentPartElement;
+  PrimitiveElement? get componentPartElement;
   @override
 
   /// [quantity] The quantity of packaging items contained at this layer of the
@@ -22741,7 +22790,7 @@ abstract class _PackagedProductDefinitionPackaging
 
   /// [quantityElement] ("_quantity") Extensions for quantity
   @JsonKey(name: '_quantity')
-  Element? get quantityElement;
+  PrimitiveElement? get quantityElement;
   @override
 
   /// [material] Material type of the package item.
@@ -22833,14 +22882,15 @@ mixin _$PackagedProductDefinitionProperty {
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @JsonKey(name: '_valueDate')
-  Element? get valueDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueDateElement => throw _privateConstructorUsedError;
 
   /// [valueBoolean] A value for the characteristic.
   FhirBoolean? get valueBoolean => throw _privateConstructorUsedError;
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @JsonKey(name: '_valueBoolean')
-  Element? get valueBooleanElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueBooleanElement =>
+      throw _privateConstructorUsedError;
 
   /// [valueAttachment] A value for the characteristic.
   Attachment? get valueAttachment => throw _privateConstructorUsedError;
@@ -22867,9 +22917,9 @@ abstract class $PackagedProductDefinitionPropertyCopyWith<$Res> {
       CodeableConcept? valueCodeableConcept,
       Quantity? valueQuantity,
       FhirDate? valueDate,
-      @JsonKey(name: '_valueDate') Element? valueDateElement,
+      @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
       FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
       Attachment? valueAttachment});
 
   $CodeableConceptCopyWith<$Res> get type;
@@ -22936,7 +22986,7 @@ class _$PackagedProductDefinitionPropertyCopyWithImpl<$Res,
       valueDateElement: freezed == valueDateElement
           ? _value.valueDateElement
           : valueDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueBoolean: freezed == valueBoolean
           ? _value.valueBoolean
           : valueBoolean // ignore: cast_nullable_to_non_nullable
@@ -22944,7 +22994,7 @@ class _$PackagedProductDefinitionPropertyCopyWithImpl<$Res,
       valueBooleanElement: freezed == valueBooleanElement
           ? _value.valueBooleanElement
           : valueBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueAttachment: freezed == valueAttachment
           ? _value.valueAttachment
           : valueAttachment // ignore: cast_nullable_to_non_nullable
@@ -23015,9 +23065,9 @@ abstract class _$$PackagedProductDefinitionPropertyImplCopyWith<$Res>
       CodeableConcept? valueCodeableConcept,
       Quantity? valueQuantity,
       FhirDate? valueDate,
-      @JsonKey(name: '_valueDate') Element? valueDateElement,
+      @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
       FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
       Attachment? valueAttachment});
 
   @override
@@ -23087,7 +23137,7 @@ class __$$PackagedProductDefinitionPropertyImplCopyWithImpl<$Res>
       valueDateElement: freezed == valueDateElement
           ? _value.valueDateElement
           : valueDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueBoolean: freezed == valueBoolean
           ? _value.valueBoolean
           : valueBoolean // ignore: cast_nullable_to_non_nullable
@@ -23095,7 +23145,7 @@ class __$$PackagedProductDefinitionPropertyImplCopyWithImpl<$Res>
       valueBooleanElement: freezed == valueBooleanElement
           ? _value.valueBooleanElement
           : valueBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueAttachment: freezed == valueAttachment
           ? _value.valueAttachment
           : valueAttachment // ignore: cast_nullable_to_non_nullable
@@ -23212,7 +23262,7 @@ class _$PackagedProductDefinitionPropertyImpl
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @override
   @JsonKey(name: '_valueDate')
-  final Element? valueDateElement;
+  final PrimitiveElement? valueDateElement;
 
   /// [valueBoolean] A value for the characteristic.
   @override
@@ -23221,7 +23271,7 @@ class _$PackagedProductDefinitionPropertyImpl
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @override
   @JsonKey(name: '_valueBoolean')
-  final Element? valueBooleanElement;
+  final PrimitiveElement? valueBooleanElement;
 
   /// [valueAttachment] A value for the characteristic.
   @override
@@ -23301,9 +23351,10 @@ abstract class _PackagedProductDefinitionProperty
           final CodeableConcept? valueCodeableConcept,
           final Quantity? valueQuantity,
           final FhirDate? valueDate,
-          @JsonKey(name: '_valueDate') final Element? valueDateElement,
+          @JsonKey(name: '_valueDate') final PrimitiveElement? valueDateElement,
           final FhirBoolean? valueBoolean,
-          @JsonKey(name: '_valueBoolean') final Element? valueBooleanElement,
+          @JsonKey(name: '_valueBoolean')
+          final PrimitiveElement? valueBooleanElement,
           final Attachment? valueAttachment}) =
       _$PackagedProductDefinitionPropertyImpl;
   const _PackagedProductDefinitionProperty._() : super._();
@@ -23362,7 +23413,7 @@ abstract class _PackagedProductDefinitionProperty
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @JsonKey(name: '_valueDate')
-  Element? get valueDateElement;
+  PrimitiveElement? get valueDateElement;
   @override
 
   /// [valueBoolean] A value for the characteristic.
@@ -23371,7 +23422,7 @@ abstract class _PackagedProductDefinitionProperty
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @JsonKey(name: '_valueBoolean')
-  Element? get valueBooleanElement;
+  PrimitiveElement? get valueBooleanElement;
   @override
 
   /// [valueAttachment] A value for the characteristic.
@@ -23836,14 +23887,15 @@ mixin _$RegulatedAuthorization {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -23901,7 +23953,8 @@ mixin _$RegulatedAuthorization {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [region] The territory (e.g., country, jurisdiction etc.) in which the
   ///  authorization has been granted.
@@ -23916,7 +23969,7 @@ mixin _$RegulatedAuthorization {
 
   /// [statusDateElement] ("_statusDate") Extensions for statusDate
   @JsonKey(name: '_statusDate')
-  Element? get statusDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusDateElement => throw _privateConstructorUsedError;
 
   /// [validityPeriod] The time period in which the regulatory approval,
   ///  clearance or licencing is in effect. As an example, a Marketing
@@ -23975,9 +24028,9 @@ abstract class $RegulatedAuthorizationCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -23986,11 +24039,11 @@ abstract class $RegulatedAuthorizationCopyWith<$Res> {
       List<Reference>? subject,
       CodeableConcept? type,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<CodeableConcept>? region,
       CodeableConcept? status,
       FhirDateTime? statusDate,
-      @JsonKey(name: '_statusDate') Element? statusDateElement,
+      @JsonKey(name: '_statusDate') PrimitiveElement? statusDateElement,
       Period? validityPeriod,
       List<CodeableReference>? indication,
       CodeableConcept? intendedUse,
@@ -24074,7 +24127,7 @@ class _$RegulatedAuthorizationCopyWithImpl<$Res,
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -24082,7 +24135,7 @@ class _$RegulatedAuthorizationCopyWithImpl<$Res,
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -24118,7 +24171,7 @@ class _$RegulatedAuthorizationCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       region: freezed == region
           ? _value.region
           : region // ignore: cast_nullable_to_non_nullable
@@ -24134,7 +24187,7 @@ class _$RegulatedAuthorizationCopyWithImpl<$Res,
       statusDateElement: freezed == statusDateElement
           ? _value.statusDateElement
           : statusDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       validityPeriod: freezed == validityPeriod
           ? _value.validityPeriod
           : validityPeriod // ignore: cast_nullable_to_non_nullable
@@ -24294,9 +24347,9 @@ abstract class _$$RegulatedAuthorizationImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -24305,11 +24358,11 @@ abstract class _$$RegulatedAuthorizationImplCopyWith<$Res>
       List<Reference>? subject,
       CodeableConcept? type,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<CodeableConcept>? region,
       CodeableConcept? status,
       FhirDateTime? statusDate,
-      @JsonKey(name: '_statusDate') Element? statusDateElement,
+      @JsonKey(name: '_statusDate') PrimitiveElement? statusDateElement,
       Period? validityPeriod,
       List<CodeableReference>? indication,
       CodeableConcept? intendedUse,
@@ -24401,7 +24454,7 @@ class __$$RegulatedAuthorizationImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -24409,7 +24462,7 @@ class __$$RegulatedAuthorizationImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -24445,7 +24498,7 @@ class __$$RegulatedAuthorizationImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       region: freezed == region
           ? _value._region
           : region // ignore: cast_nullable_to_non_nullable
@@ -24461,7 +24514,7 @@ class __$$RegulatedAuthorizationImplCopyWithImpl<$Res>
       statusDateElement: freezed == statusDateElement
           ? _value.statusDateElement
           : statusDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       validityPeriod: freezed == validityPeriod
           ? _value.validityPeriod
           : validityPeriod // ignore: cast_nullable_to_non_nullable
@@ -24571,7 +24624,7 @@ class _$RegulatedAuthorizationImpl extends _RegulatedAuthorization {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -24580,7 +24633,7 @@ class _$RegulatedAuthorizationImpl extends _RegulatedAuthorization {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -24714,7 +24767,7 @@ class _$RegulatedAuthorizationImpl extends _RegulatedAuthorization {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [region] The territory (e.g., country, jurisdiction etc.) in which the
   ///  authorization has been granted.
@@ -24743,7 +24796,7 @@ class _$RegulatedAuthorizationImpl extends _RegulatedAuthorization {
   /// [statusDateElement] ("_statusDate") Extensions for statusDate
   @override
   @JsonKey(name: '_statusDate')
-  final Element? statusDateElement;
+  final PrimitiveElement? statusDateElement;
 
   /// [validityPeriod] The time period in which the regulatory approval,
   ///  clearance or licencing is in effect. As an example, a Marketing
@@ -24931,36 +24984,37 @@ class _$RegulatedAuthorizationImpl extends _RegulatedAuthorization {
 
 abstract class _RegulatedAuthorization extends RegulatedAuthorization {
   const factory _RegulatedAuthorization(
-          {@JsonKey(unknownEnumValue: R5ResourceType.RegulatedAuthorization)
-          final R5ResourceType resourceType,
-          final FhirId? id,
-          final FhirMeta? meta,
-          final FhirUri? implicitRules,
-          @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
-          final FhirCode? language,
-          @JsonKey(name: '_language') final Element? languageElement,
-          final Narrative? text,
-          final List<Resource>? contained,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final List<Identifier>? identifier,
-          final List<Reference>? subject,
-          final CodeableConcept? type,
-          final FhirMarkdown? description,
-          @JsonKey(name: '_description') final Element? descriptionElement,
-          final List<CodeableConcept>? region,
-          final CodeableConcept? status,
-          final FhirDateTime? statusDate,
-          @JsonKey(name: '_statusDate') final Element? statusDateElement,
-          final Period? validityPeriod,
-          final List<CodeableReference>? indication,
-          final CodeableConcept? intendedUse,
-          final List<CodeableConcept>? basis,
-          final Reference? holder,
-          final Reference? regulator,
-          final List<Reference>? attachedDocument,
-          @JsonKey(name: 'case') final RegulatedAuthorizationCase? case_}) =
-      _$RegulatedAuthorizationImpl;
+      {@JsonKey(unknownEnumValue: R5ResourceType.RegulatedAuthorization)
+      final R5ResourceType resourceType,
+      final FhirId? id,
+      final FhirMeta? meta,
+      final FhirUri? implicitRules,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
+      final FhirCode? language,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
+      final Narrative? text,
+      final List<Resource>? contained,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final List<Identifier>? identifier,
+      final List<Reference>? subject,
+      final CodeableConcept? type,
+      final FhirMarkdown? description,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
+      final List<CodeableConcept>? region,
+      final CodeableConcept? status,
+      final FhirDateTime? statusDate,
+      @JsonKey(name: '_statusDate') final PrimitiveElement? statusDateElement,
+      final Period? validityPeriod,
+      final List<CodeableReference>? indication,
+      final CodeableConcept? intendedUse,
+      final List<CodeableConcept>? basis,
+      final Reference? holder,
+      final Reference? regulator,
+      final List<Reference>? attachedDocument,
+      @JsonKey(name: 'case')
+      final RegulatedAuthorizationCase? case_}) = _$RegulatedAuthorizationImpl;
   const _RegulatedAuthorization._() : super._();
 
   factory _RegulatedAuthorization.fromJson(Map<String, dynamic> json) =
@@ -24993,7 +25047,7 @@ abstract class _RegulatedAuthorization extends RegulatedAuthorization {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -25002,7 +25056,7 @@ abstract class _RegulatedAuthorization extends RegulatedAuthorization {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -25068,7 +25122,7 @@ abstract class _RegulatedAuthorization extends RegulatedAuthorization {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [region] The territory (e.g., country, jurisdiction etc.) in which the
@@ -25087,7 +25141,7 @@ abstract class _RegulatedAuthorization extends RegulatedAuthorization {
 
   /// [statusDateElement] ("_statusDate") Extensions for statusDate
   @JsonKey(name: '_statusDate')
-  Element? get statusDateElement;
+  PrimitiveElement? get statusDateElement;
   @override
 
   /// [validityPeriod] The time period in which the regulatory approval,
@@ -25193,7 +25247,8 @@ mixin _$RegulatedAuthorizationCase {
 
   /// [dateDateTimeElement] ("_dateDateTime") Extensions for dateDateTime
   @JsonKey(name: '_dateDateTime')
-  Element? get dateDateTimeElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateDateTimeElement =>
+      throw _privateConstructorUsedError;
 
   /// [application] A regulatory submission from an organization to a regulator,
   ///  as part of an assessing case. Multiple applications may occur over time,
@@ -25225,7 +25280,7 @@ abstract class $RegulatedAuthorizationCaseCopyWith<$Res> {
       CodeableConcept? status,
       Period? datePeriod,
       FhirDateTime? dateDateTime,
-      @JsonKey(name: '_dateDateTime') Element? dateDateTimeElement,
+      @JsonKey(name: '_dateDateTime') PrimitiveElement? dateDateTimeElement,
       List<RegulatedAuthorizationCase>? application});
 
   $IdentifierCopyWith<$Res>? get identifier;
@@ -25295,7 +25350,7 @@ class _$RegulatedAuthorizationCaseCopyWithImpl<$Res,
       dateDateTimeElement: freezed == dateDateTimeElement
           ? _value.dateDateTimeElement
           : dateDateTimeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       application: freezed == application
           ? _value.application
           : application // ignore: cast_nullable_to_non_nullable
@@ -25370,7 +25425,7 @@ abstract class _$$RegulatedAuthorizationCaseImplCopyWith<$Res>
       CodeableConcept? status,
       Period? datePeriod,
       FhirDateTime? dateDateTime,
-      @JsonKey(name: '_dateDateTime') Element? dateDateTimeElement,
+      @JsonKey(name: '_dateDateTime') PrimitiveElement? dateDateTimeElement,
       List<RegulatedAuthorizationCase>? application});
 
   @override
@@ -25443,7 +25498,7 @@ class __$$RegulatedAuthorizationCaseImplCopyWithImpl<$Res>
       dateDateTimeElement: freezed == dateDateTimeElement
           ? _value.dateDateTimeElement
           : dateDateTimeElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       application: freezed == application
           ? _value._application
           : application // ignore: cast_nullable_to_non_nullable
@@ -25563,7 +25618,7 @@ class _$RegulatedAuthorizationCaseImpl extends _RegulatedAuthorizationCase {
   /// [dateDateTimeElement] ("_dateDateTime") Extensions for dateDateTime
   @override
   @JsonKey(name: '_dateDateTime')
-  final Element? dateDateTimeElement;
+  final PrimitiveElement? dateDateTimeElement;
 
   /// [application] A regulatory submission from an organization to a regulator,
   ///  as part of an assessing case. Multiple applications may occur over time,
@@ -25655,7 +25710,8 @@ abstract class _RegulatedAuthorizationCase extends RegulatedAuthorizationCase {
           final CodeableConcept? status,
           final Period? datePeriod,
           final FhirDateTime? dateDateTime,
-          @JsonKey(name: '_dateDateTime') final Element? dateDateTimeElement,
+          @JsonKey(name: '_dateDateTime')
+          final PrimitiveElement? dateDateTimeElement,
           final List<RegulatedAuthorizationCase>? application}) =
       _$RegulatedAuthorizationCaseImpl;
   const _RegulatedAuthorizationCase._() : super._();
@@ -25717,7 +25773,7 @@ abstract class _RegulatedAuthorizationCase extends RegulatedAuthorizationCase {
 
   /// [dateDateTimeElement] ("_dateDateTime") Extensions for dateDateTime
   @JsonKey(name: '_dateDateTime')
-  Element? get dateDateTimeElement;
+  PrimitiveElement? get dateDateTimeElement;
   @override
 
   /// [application] A regulatory submission from an organization to a regulator,
@@ -25759,14 +25815,15 @@ mixin _$SubstanceDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -25815,7 +25872,7 @@ mixin _$SubstanceDefinition {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
   /// [status] Status of substance within the catalogue e.g. active, retired.
   CodeableConcept? get status => throw _privateConstructorUsedError;
@@ -25839,7 +25896,8 @@ mixin _$SubstanceDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [informationSource] Supporting literature.
   List<Reference>? get informationSource => throw _privateConstructorUsedError;
@@ -25923,22 +25981,22 @@ abstract class $SubstanceDefinitionCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       CodeableConcept? status,
       List<CodeableConcept>? classification,
       CodeableConcept? domain,
       List<CodeableConcept>? grade,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Reference>? informationSource,
       List<Annotation>? note,
       List<Reference>? manufacturer,
@@ -26040,7 +26098,7 @@ class _$SubstanceDefinitionCopyWithImpl<$Res, $Val extends SubstanceDefinition>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -26048,7 +26106,7 @@ class _$SubstanceDefinitionCopyWithImpl<$Res, $Val extends SubstanceDefinition>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -26076,7 +26134,7 @@ class _$SubstanceDefinitionCopyWithImpl<$Res, $Val extends SubstanceDefinition>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -26100,7 +26158,7 @@ class _$SubstanceDefinitionCopyWithImpl<$Res, $Val extends SubstanceDefinition>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       informationSource: freezed == informationSource
           ? _value.informationSource
           : informationSource // ignore: cast_nullable_to_non_nullable
@@ -26309,22 +26367,22 @@ abstract class _$$SubstanceDefinitionImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<Identifier>? identifier,
       String? version,
-      @JsonKey(name: '_version') Element? versionElement,
+      @JsonKey(name: '_version') PrimitiveElement? versionElement,
       CodeableConcept? status,
       List<CodeableConcept>? classification,
       CodeableConcept? domain,
       List<CodeableConcept>? grade,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Reference>? informationSource,
       List<Annotation>? note,
       List<Reference>? manufacturer,
@@ -26434,7 +26492,7 @@ class __$$SubstanceDefinitionImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -26442,7 +26500,7 @@ class __$$SubstanceDefinitionImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -26470,7 +26528,7 @@ class __$$SubstanceDefinitionImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -26494,7 +26552,7 @@ class __$$SubstanceDefinitionImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       informationSource: freezed == informationSource
           ? _value._informationSource
           : informationSource // ignore: cast_nullable_to_non_nullable
@@ -26657,7 +26715,7 @@ class _$SubstanceDefinitionImpl extends _SubstanceDefinition {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -26666,7 +26724,7 @@ class _$SubstanceDefinitionImpl extends _SubstanceDefinition {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -26778,7 +26836,7 @@ class _$SubstanceDefinitionImpl extends _SubstanceDefinition {
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  final Element? versionElement;
+  final PrimitiveElement? versionElement;
 
   /// [status] Status of substance within the catalogue e.g. active, retired.
   @override
@@ -26829,7 +26887,7 @@ class _$SubstanceDefinitionImpl extends _SubstanceDefinition {
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [informationSource] Supporting literature.
   final List<Reference>? _informationSource;
@@ -27143,45 +27201,46 @@ class _$SubstanceDefinitionImpl extends _SubstanceDefinition {
 
 abstract class _SubstanceDefinition extends SubstanceDefinition {
   const factory _SubstanceDefinition(
-          {@JsonKey(unknownEnumValue: R5ResourceType.SubstanceDefinition)
-          final R5ResourceType resourceType,
-          final FhirId? id,
-          final FhirMeta? meta,
-          final FhirUri? implicitRules,
-          @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
-          final FhirCode? language,
-          @JsonKey(name: '_language') final Element? languageElement,
-          final Narrative? text,
-          final List<Resource>? contained,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final List<Identifier>? identifier,
-          final String? version,
-          @JsonKey(name: '_version') final Element? versionElement,
-          final CodeableConcept? status,
-          final List<CodeableConcept>? classification,
-          final CodeableConcept? domain,
-          final List<CodeableConcept>? grade,
-          final FhirMarkdown? description,
-          @JsonKey(name: '_description') final Element? descriptionElement,
-          final List<Reference>? informationSource,
-          final List<Annotation>? note,
-          final List<Reference>? manufacturer,
-          final List<Reference>? supplier,
-          final List<SubstanceDefinitionMoiety>? moiety,
-          final List<SubstanceDefinitionCharacterization>? characterization,
-          final List<SubstanceDefinitionProperty>? property,
-          final Reference? referenceInformation,
-          final List<SubstanceDefinitionMolecularWeight>? molecularWeight,
-          final SubstanceDefinitionStructure? structure,
-          final List<SubstanceDefinitionCode>? code,
-          final List<SubstanceDefinitionName>? name,
-          final List<SubstanceDefinitionRelationship>? relationship,
-          final Reference? nucleicAcid,
-          final Reference? polymer,
-          final Reference? protein,
-          final SubstanceDefinitionSourceMaterial? sourceMaterial}) =
-      _$SubstanceDefinitionImpl;
+      {@JsonKey(unknownEnumValue: R5ResourceType.SubstanceDefinition)
+      final R5ResourceType resourceType,
+      final FhirId? id,
+      final FhirMeta? meta,
+      final FhirUri? implicitRules,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
+      final FhirCode? language,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
+      final Narrative? text,
+      final List<Resource>? contained,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final List<Identifier>? identifier,
+      final String? version,
+      @JsonKey(name: '_version') final PrimitiveElement? versionElement,
+      final CodeableConcept? status,
+      final List<CodeableConcept>? classification,
+      final CodeableConcept? domain,
+      final List<CodeableConcept>? grade,
+      final FhirMarkdown? description,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
+      final List<Reference>? informationSource,
+      final List<Annotation>? note,
+      final List<Reference>? manufacturer,
+      final List<Reference>? supplier,
+      final List<SubstanceDefinitionMoiety>? moiety,
+      final List<SubstanceDefinitionCharacterization>? characterization,
+      final List<SubstanceDefinitionProperty>? property,
+      final Reference? referenceInformation,
+      final List<SubstanceDefinitionMolecularWeight>? molecularWeight,
+      final SubstanceDefinitionStructure? structure,
+      final List<SubstanceDefinitionCode>? code,
+      final List<SubstanceDefinitionName>? name,
+      final List<SubstanceDefinitionRelationship>? relationship,
+      final Reference? nucleicAcid,
+      final Reference? polymer,
+      final Reference? protein,
+      final SubstanceDefinitionSourceMaterial?
+          sourceMaterial}) = _$SubstanceDefinitionImpl;
   const _SubstanceDefinition._() : super._();
 
   factory _SubstanceDefinition.fromJson(Map<String, dynamic> json) =
@@ -27214,7 +27273,7 @@ abstract class _SubstanceDefinition extends SubstanceDefinition {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -27223,7 +27282,7 @@ abstract class _SubstanceDefinition extends SubstanceDefinition {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -27278,7 +27337,7 @@ abstract class _SubstanceDefinition extends SubstanceDefinition {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  Element? get versionElement;
+  PrimitiveElement? get versionElement;
   @override
 
   /// [status] Status of substance within the catalogue e.g. active, retired.
@@ -27307,7 +27366,7 @@ abstract class _SubstanceDefinition extends SubstanceDefinition {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [informationSource] Supporting literature.
@@ -27434,7 +27493,7 @@ mixin _$SubstanceDefinitionMoiety {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [stereochemistry] Stereochemistry type.
   CodeableConcept? get stereochemistry => throw _privateConstructorUsedError;
@@ -27449,7 +27508,8 @@ mixin _$SubstanceDefinitionMoiety {
   /// [molecularFormulaElement] ("_molecularFormula") Extensions for
   ///  molecularFormula
   @JsonKey(name: '_molecularFormula')
-  Element? get molecularFormulaElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get molecularFormulaElement =>
+      throw _privateConstructorUsedError;
 
   /// [amountQuantity] Quantitative value for this moiety.
   Quantity? get amountQuantity => throw _privateConstructorUsedError;
@@ -27459,7 +27519,8 @@ mixin _$SubstanceDefinitionMoiety {
 
   /// [amountStringElement] ("_amountString") Extensions for amountString
   @JsonKey(name: '_amountString')
-  Element? get amountStringElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get amountStringElement =>
+      throw _privateConstructorUsedError;
 
   /// [measurementType] The measurement type of the quantitative value. In
   ///  capturing the actual relative amounts of substances or molecular fragments
@@ -27486,14 +27547,15 @@ abstract class $SubstanceDefinitionMoietyCopyWith<$Res> {
       CodeableConcept? role,
       Identifier? identifier,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       CodeableConcept? stereochemistry,
       CodeableConcept? opticalActivity,
       String? molecularFormula,
-      @JsonKey(name: '_molecularFormula') Element? molecularFormulaElement,
+      @JsonKey(name: '_molecularFormula')
+      PrimitiveElement? molecularFormulaElement,
       Quantity? amountQuantity,
       String? amountString,
-      @JsonKey(name: '_amountString') Element? amountStringElement,
+      @JsonKey(name: '_amountString') PrimitiveElement? amountStringElement,
       CodeableConcept? measurementType});
 
   $CodeableConceptCopyWith<$Res>? get role;
@@ -27562,7 +27624,7 @@ class _$SubstanceDefinitionMoietyCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       stereochemistry: freezed == stereochemistry
           ? _value.stereochemistry
           : stereochemistry // ignore: cast_nullable_to_non_nullable
@@ -27578,7 +27640,7 @@ class _$SubstanceDefinitionMoietyCopyWithImpl<$Res,
       molecularFormulaElement: freezed == molecularFormulaElement
           ? _value.molecularFormulaElement
           : molecularFormulaElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       amountQuantity: freezed == amountQuantity
           ? _value.amountQuantity
           : amountQuantity // ignore: cast_nullable_to_non_nullable
@@ -27590,7 +27652,7 @@ class _$SubstanceDefinitionMoietyCopyWithImpl<$Res,
       amountStringElement: freezed == amountStringElement
           ? _value.amountStringElement
           : amountStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       measurementType: freezed == measurementType
           ? _value.measurementType
           : measurementType // ignore: cast_nullable_to_non_nullable
@@ -27687,14 +27749,15 @@ abstract class _$$SubstanceDefinitionMoietyImplCopyWith<$Res>
       CodeableConcept? role,
       Identifier? identifier,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       CodeableConcept? stereochemistry,
       CodeableConcept? opticalActivity,
       String? molecularFormula,
-      @JsonKey(name: '_molecularFormula') Element? molecularFormulaElement,
+      @JsonKey(name: '_molecularFormula')
+      PrimitiveElement? molecularFormulaElement,
       Quantity? amountQuantity,
       String? amountString,
-      @JsonKey(name: '_amountString') Element? amountStringElement,
+      @JsonKey(name: '_amountString') PrimitiveElement? amountStringElement,
       CodeableConcept? measurementType});
 
   @override
@@ -27768,7 +27831,7 @@ class __$$SubstanceDefinitionMoietyImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       stereochemistry: freezed == stereochemistry
           ? _value.stereochemistry
           : stereochemistry // ignore: cast_nullable_to_non_nullable
@@ -27784,7 +27847,7 @@ class __$$SubstanceDefinitionMoietyImplCopyWithImpl<$Res>
       molecularFormulaElement: freezed == molecularFormulaElement
           ? _value.molecularFormulaElement
           : molecularFormulaElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       amountQuantity: freezed == amountQuantity
           ? _value.amountQuantity
           : amountQuantity // ignore: cast_nullable_to_non_nullable
@@ -27796,7 +27859,7 @@ class __$$SubstanceDefinitionMoietyImplCopyWithImpl<$Res>
       amountStringElement: freezed == amountStringElement
           ? _value.amountStringElement
           : amountStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       measurementType: freezed == measurementType
           ? _value.measurementType
           : measurementType // ignore: cast_nullable_to_non_nullable
@@ -27911,7 +27974,7 @@ class _$SubstanceDefinitionMoietyImpl extends _SubstanceDefinitionMoiety {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [stereochemistry] Stereochemistry type.
   @override
@@ -27930,7 +27993,7 @@ class _$SubstanceDefinitionMoietyImpl extends _SubstanceDefinitionMoiety {
   ///  molecularFormula
   @override
   @JsonKey(name: '_molecularFormula')
-  final Element? molecularFormulaElement;
+  final PrimitiveElement? molecularFormulaElement;
 
   /// [amountQuantity] Quantitative value for this moiety.
   @override
@@ -27943,7 +28006,7 @@ class _$SubstanceDefinitionMoietyImpl extends _SubstanceDefinitionMoiety {
   /// [amountStringElement] ("_amountString") Extensions for amountString
   @override
   @JsonKey(name: '_amountString')
-  final Element? amountStringElement;
+  final PrimitiveElement? amountStringElement;
 
   /// [measurementType] The measurement type of the quantitative value. In
   ///  capturing the actual relative amounts of substances or molecular fragments
@@ -28035,15 +28098,16 @@ abstract class _SubstanceDefinitionMoiety extends SubstanceDefinitionMoiety {
           final CodeableConcept? role,
           final Identifier? identifier,
           final String? name,
-          @JsonKey(name: '_name') final Element? nameElement,
+          @JsonKey(name: '_name') final PrimitiveElement? nameElement,
           final CodeableConcept? stereochemistry,
           final CodeableConcept? opticalActivity,
           final String? molecularFormula,
           @JsonKey(name: '_molecularFormula')
-          final Element? molecularFormulaElement,
+          final PrimitiveElement? molecularFormulaElement,
           final Quantity? amountQuantity,
           final String? amountString,
-          @JsonKey(name: '_amountString') final Element? amountStringElement,
+          @JsonKey(name: '_amountString')
+          final PrimitiveElement? amountStringElement,
           final CodeableConcept? measurementType}) =
       _$SubstanceDefinitionMoietyImpl;
   const _SubstanceDefinitionMoiety._() : super._();
@@ -28097,7 +28161,7 @@ abstract class _SubstanceDefinitionMoiety extends SubstanceDefinitionMoiety {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [stereochemistry] Stereochemistry type.
@@ -28116,7 +28180,7 @@ abstract class _SubstanceDefinitionMoiety extends SubstanceDefinitionMoiety {
   /// [molecularFormulaElement] ("_molecularFormula") Extensions for
   ///  molecularFormula
   @JsonKey(name: '_molecularFormula')
-  Element? get molecularFormulaElement;
+  PrimitiveElement? get molecularFormulaElement;
   @override
 
   /// [amountQuantity] Quantitative value for this moiety.
@@ -28129,7 +28193,7 @@ abstract class _SubstanceDefinitionMoiety extends SubstanceDefinitionMoiety {
 
   /// [amountStringElement] ("_amountString") Extensions for amountString
   @JsonKey(name: '_amountString')
-  Element? get amountStringElement;
+  PrimitiveElement? get amountStringElement;
   @override
 
   /// [measurementType] The measurement type of the quantitative value. In
@@ -28192,7 +28256,8 @@ mixin _$SubstanceDefinitionCharacterization {
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get descriptionElement =>
+      throw _privateConstructorUsedError;
 
   /// [file] The data produced by the analytical instrument or a pictorial
   ///  representation of that data. Examples: a JCAMP, JDX, or ADX file, or a
@@ -28221,7 +28286,7 @@ abstract class $SubstanceDefinitionCharacterizationCopyWith<$Res> {
       CodeableConcept? technique,
       CodeableConcept? form,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Attachment>? file});
 
   $CodeableConceptCopyWith<$Res>? get technique;
@@ -28279,7 +28344,7 @@ class _$SubstanceDefinitionCharacterizationCopyWithImpl<$Res,
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       file: freezed == file
           ? _value.file
           : file // ignore: cast_nullable_to_non_nullable
@@ -28328,7 +28393,7 @@ abstract class _$$SubstanceDefinitionCharacterizationImplCopyWith<$Res>
       CodeableConcept? technique,
       CodeableConcept? form,
       FhirMarkdown? description,
-      @JsonKey(name: '_description') Element? descriptionElement,
+      @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<Attachment>? file});
 
   @override
@@ -28387,7 +28452,7 @@ class __$$SubstanceDefinitionCharacterizationImplCopyWithImpl<$Res>
       descriptionElement: freezed == descriptionElement
           ? _value.descriptionElement
           : descriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       file: freezed == file
           ? _value._file
           : file // ignore: cast_nullable_to_non_nullable
@@ -28501,7 +28566,7 @@ class _$SubstanceDefinitionCharacterizationImpl
   /// [descriptionElement] ("_description") Extensions for description
   @override
   @JsonKey(name: '_description')
-  final Element? descriptionElement;
+  final PrimitiveElement? descriptionElement;
 
   /// [file] The data produced by the analytical instrument or a pictorial
   ///  representation of that data. Examples: a JCAMP, JDX, or ADX file, or a
@@ -28577,15 +28642,15 @@ class _$SubstanceDefinitionCharacterizationImpl
 abstract class _SubstanceDefinitionCharacterization
     extends SubstanceDefinitionCharacterization {
   const factory _SubstanceDefinitionCharacterization(
-          {final String? id,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final CodeableConcept? technique,
-          final CodeableConcept? form,
-          final FhirMarkdown? description,
-          @JsonKey(name: '_description') final Element? descriptionElement,
-          final List<Attachment>? file}) =
-      _$SubstanceDefinitionCharacterizationImpl;
+      {final String? id,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final CodeableConcept? technique,
+      final CodeableConcept? form,
+      final FhirMarkdown? description,
+      @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
+      final List<Attachment>?
+          file}) = _$SubstanceDefinitionCharacterizationImpl;
   const _SubstanceDefinitionCharacterization._() : super._();
 
   factory _SubstanceDefinitionCharacterization.fromJson(
@@ -28641,7 +28706,7 @@ abstract class _SubstanceDefinitionCharacterization
 
   /// [descriptionElement] ("_description") Extensions for description
   @JsonKey(name: '_description')
-  Element? get descriptionElement;
+  PrimitiveElement? get descriptionElement;
   @override
 
   /// [file] The data produced by the analytical instrument or a pictorial
@@ -28705,14 +28770,15 @@ mixin _$SubstanceDefinitionProperty {
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @JsonKey(name: '_valueDate')
-  Element? get valueDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueDateElement => throw _privateConstructorUsedError;
 
   /// [valueBoolean] A value for the property.
   FhirBoolean? get valueBoolean => throw _privateConstructorUsedError;
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @JsonKey(name: '_valueBoolean')
-  Element? get valueBooleanElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get valueBooleanElement =>
+      throw _privateConstructorUsedError;
 
   /// [valueAttachment] A value for the property.
   Attachment? get valueAttachment => throw _privateConstructorUsedError;
@@ -28739,9 +28805,9 @@ abstract class $SubstanceDefinitionPropertyCopyWith<$Res> {
       CodeableConcept? valueCodeableConcept,
       Quantity? valueQuantity,
       FhirDate? valueDate,
-      @JsonKey(name: '_valueDate') Element? valueDateElement,
+      @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
       FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
       Attachment? valueAttachment});
 
   $CodeableConceptCopyWith<$Res> get type;
@@ -28808,7 +28874,7 @@ class _$SubstanceDefinitionPropertyCopyWithImpl<$Res,
       valueDateElement: freezed == valueDateElement
           ? _value.valueDateElement
           : valueDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueBoolean: freezed == valueBoolean
           ? _value.valueBoolean
           : valueBoolean // ignore: cast_nullable_to_non_nullable
@@ -28816,7 +28882,7 @@ class _$SubstanceDefinitionPropertyCopyWithImpl<$Res,
       valueBooleanElement: freezed == valueBooleanElement
           ? _value.valueBooleanElement
           : valueBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueAttachment: freezed == valueAttachment
           ? _value.valueAttachment
           : valueAttachment // ignore: cast_nullable_to_non_nullable
@@ -28887,9 +28953,9 @@ abstract class _$$SubstanceDefinitionPropertyImplCopyWith<$Res>
       CodeableConcept? valueCodeableConcept,
       Quantity? valueQuantity,
       FhirDate? valueDate,
-      @JsonKey(name: '_valueDate') Element? valueDateElement,
+      @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
       FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
       Attachment? valueAttachment});
 
   @override
@@ -28959,7 +29025,7 @@ class __$$SubstanceDefinitionPropertyImplCopyWithImpl<$Res>
       valueDateElement: freezed == valueDateElement
           ? _value.valueDateElement
           : valueDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueBoolean: freezed == valueBoolean
           ? _value.valueBoolean
           : valueBoolean // ignore: cast_nullable_to_non_nullable
@@ -28967,7 +29033,7 @@ class __$$SubstanceDefinitionPropertyImplCopyWithImpl<$Res>
       valueBooleanElement: freezed == valueBooleanElement
           ? _value.valueBooleanElement
           : valueBooleanElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       valueAttachment: freezed == valueAttachment
           ? _value.valueAttachment
           : valueAttachment // ignore: cast_nullable_to_non_nullable
@@ -29083,7 +29149,7 @@ class _$SubstanceDefinitionPropertyImpl extends _SubstanceDefinitionProperty {
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @override
   @JsonKey(name: '_valueDate')
-  final Element? valueDateElement;
+  final PrimitiveElement? valueDateElement;
 
   /// [valueBoolean] A value for the property.
   @override
@@ -29092,7 +29158,7 @@ class _$SubstanceDefinitionPropertyImpl extends _SubstanceDefinitionProperty {
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @override
   @JsonKey(name: '_valueBoolean')
-  final Element? valueBooleanElement;
+  final PrimitiveElement? valueBooleanElement;
 
   /// [valueAttachment] A value for the property.
   @override
@@ -29171,9 +29237,10 @@ abstract class _SubstanceDefinitionProperty
       final CodeableConcept? valueCodeableConcept,
       final Quantity? valueQuantity,
       final FhirDate? valueDate,
-      @JsonKey(name: '_valueDate') final Element? valueDateElement,
+      @JsonKey(name: '_valueDate') final PrimitiveElement? valueDateElement,
       final FhirBoolean? valueBoolean,
-      @JsonKey(name: '_valueBoolean') final Element? valueBooleanElement,
+      @JsonKey(name: '_valueBoolean')
+      final PrimitiveElement? valueBooleanElement,
       final Attachment? valueAttachment}) = _$SubstanceDefinitionPropertyImpl;
   const _SubstanceDefinitionProperty._() : super._();
 
@@ -29230,7 +29297,7 @@ abstract class _SubstanceDefinitionProperty
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
   @JsonKey(name: '_valueDate')
-  Element? get valueDateElement;
+  PrimitiveElement? get valueDateElement;
   @override
 
   /// [valueBoolean] A value for the property.
@@ -29239,7 +29306,7 @@ abstract class _SubstanceDefinitionProperty
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
   @JsonKey(name: '_valueBoolean')
-  Element? get valueBooleanElement;
+  PrimitiveElement? get valueBooleanElement;
   @override
 
   /// [valueAttachment] A value for the property.
@@ -29746,7 +29813,8 @@ mixin _$SubstanceDefinitionStructure {
   /// [molecularFormulaElement] ("_molecularFormula") Extensions for
   ///  molecularFormula
   @JsonKey(name: '_molecularFormula')
-  Element? get molecularFormulaElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get molecularFormulaElement =>
+      throw _privateConstructorUsedError;
 
   /// [molecularFormulaByMoiety] Specified per moiety according to the Hill
   ///  system, i.e. first C, then H, then alphabetical, each moiety separated by
@@ -29756,7 +29824,7 @@ mixin _$SubstanceDefinitionStructure {
   /// [molecularFormulaByMoietyElement] ("_molecularFormulaByMoiety") Extensions
   ///  for molecularFormulaByMoiety
   @JsonKey(name: '_molecularFormulaByMoiety')
-  Element? get molecularFormulaByMoietyElement =>
+  PrimitiveElement? get molecularFormulaByMoietyElement =>
       throw _privateConstructorUsedError;
 
   /// [molecularWeight] The molecular weight or weight range (for proteins,
@@ -29796,10 +29864,11 @@ abstract class $SubstanceDefinitionStructureCopyWith<$Res> {
       CodeableConcept? stereochemistry,
       CodeableConcept? opticalActivity,
       String? molecularFormula,
-      @JsonKey(name: '_molecularFormula') Element? molecularFormulaElement,
+      @JsonKey(name: '_molecularFormula')
+      PrimitiveElement? molecularFormulaElement,
       String? molecularFormulaByMoiety,
       @JsonKey(name: '_molecularFormulaByMoiety')
-      Element? molecularFormulaByMoietyElement,
+      PrimitiveElement? molecularFormulaByMoietyElement,
       SubstanceDefinitionMolecularWeight? molecularWeight,
       List<CodeableConcept>? technique,
       List<Reference>? sourceDocument,
@@ -29866,7 +29935,7 @@ class _$SubstanceDefinitionStructureCopyWithImpl<$Res,
       molecularFormulaElement: freezed == molecularFormulaElement
           ? _value.molecularFormulaElement
           : molecularFormulaElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       molecularFormulaByMoiety: freezed == molecularFormulaByMoiety
           ? _value.molecularFormulaByMoiety
           : molecularFormulaByMoiety // ignore: cast_nullable_to_non_nullable
@@ -29875,7 +29944,7 @@ class _$SubstanceDefinitionStructureCopyWithImpl<$Res,
               molecularFormulaByMoietyElement
           ? _value.molecularFormulaByMoietyElement
           : molecularFormulaByMoietyElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       molecularWeight: freezed == molecularWeight
           ? _value.molecularWeight
           : molecularWeight // ignore: cast_nullable_to_non_nullable
@@ -29949,10 +30018,11 @@ abstract class _$$SubstanceDefinitionStructureImplCopyWith<$Res>
       CodeableConcept? stereochemistry,
       CodeableConcept? opticalActivity,
       String? molecularFormula,
-      @JsonKey(name: '_molecularFormula') Element? molecularFormulaElement,
+      @JsonKey(name: '_molecularFormula')
+      PrimitiveElement? molecularFormulaElement,
       String? molecularFormulaByMoiety,
       @JsonKey(name: '_molecularFormulaByMoiety')
-      Element? molecularFormulaByMoietyElement,
+      PrimitiveElement? molecularFormulaByMoietyElement,
       SubstanceDefinitionMolecularWeight? molecularWeight,
       List<CodeableConcept>? technique,
       List<Reference>? sourceDocument,
@@ -30021,7 +30091,7 @@ class __$$SubstanceDefinitionStructureImplCopyWithImpl<$Res>
       molecularFormulaElement: freezed == molecularFormulaElement
           ? _value.molecularFormulaElement
           : molecularFormulaElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       molecularFormulaByMoiety: freezed == molecularFormulaByMoiety
           ? _value.molecularFormulaByMoiety
           : molecularFormulaByMoiety // ignore: cast_nullable_to_non_nullable
@@ -30030,7 +30100,7 @@ class __$$SubstanceDefinitionStructureImplCopyWithImpl<$Res>
               molecularFormulaByMoietyElement
           ? _value.molecularFormulaByMoietyElement
           : molecularFormulaByMoietyElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       molecularWeight: freezed == molecularWeight
           ? _value.molecularWeight
           : molecularWeight // ignore: cast_nullable_to_non_nullable
@@ -30162,7 +30232,7 @@ class _$SubstanceDefinitionStructureImpl extends _SubstanceDefinitionStructure {
   ///  molecularFormula
   @override
   @JsonKey(name: '_molecularFormula')
-  final Element? molecularFormulaElement;
+  final PrimitiveElement? molecularFormulaElement;
 
   /// [molecularFormulaByMoiety] Specified per moiety according to the Hill
   ///  system, i.e. first C, then H, then alphabetical, each moiety separated by
@@ -30174,7 +30244,7 @@ class _$SubstanceDefinitionStructureImpl extends _SubstanceDefinitionStructure {
   ///  for molecularFormulaByMoiety
   @override
   @JsonKey(name: '_molecularFormulaByMoiety')
-  final Element? molecularFormulaByMoietyElement;
+  final PrimitiveElement? molecularFormulaByMoietyElement;
 
   /// [molecularWeight] The molecular weight or weight range (for proteins,
   ///  polymers or nucleic acids).
@@ -30307,10 +30377,10 @@ abstract class _SubstanceDefinitionStructure
           final CodeableConcept? opticalActivity,
           final String? molecularFormula,
           @JsonKey(name: '_molecularFormula')
-          final Element? molecularFormulaElement,
+          final PrimitiveElement? molecularFormulaElement,
           final String? molecularFormulaByMoiety,
           @JsonKey(name: '_molecularFormulaByMoiety')
-          final Element? molecularFormulaByMoietyElement,
+          final PrimitiveElement? molecularFormulaByMoietyElement,
           final SubstanceDefinitionMolecularWeight? molecularWeight,
           final List<CodeableConcept>? technique,
           final List<Reference>? sourceDocument,
@@ -30369,7 +30439,7 @@ abstract class _SubstanceDefinitionStructure
   /// [molecularFormulaElement] ("_molecularFormula") Extensions for
   ///  molecularFormula
   @JsonKey(name: '_molecularFormula')
-  Element? get molecularFormulaElement;
+  PrimitiveElement? get molecularFormulaElement;
   @override
 
   /// [molecularFormulaByMoiety] Specified per moiety according to the Hill
@@ -30381,7 +30451,7 @@ abstract class _SubstanceDefinitionStructure
   /// [molecularFormulaByMoietyElement] ("_molecularFormulaByMoiety") Extensions
   ///  for molecularFormulaByMoiety
   @JsonKey(name: '_molecularFormulaByMoiety')
-  Element? get molecularFormulaByMoietyElement;
+  PrimitiveElement? get molecularFormulaByMoietyElement;
   @override
 
   /// [molecularWeight] The molecular weight or weight range (for proteins,
@@ -30451,7 +30521,8 @@ mixin _$SubstanceDefinitionRepresentation {
 
   /// [representationElement] ("_representation") Extensions for representation
   @JsonKey(name: '_representation')
-  Element? get representationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get representationElement =>
+      throw _privateConstructorUsedError;
 
   /// [format] The format of the representation e.g. InChI, SMILES, MOLFILE, CDX,
   ///  SDF, PDB, mmCIF. The logical content type rather than the physical file
@@ -30482,7 +30553,7 @@ abstract class $SubstanceDefinitionRepresentationCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       CodeableConcept? type,
       String? representation,
-      @JsonKey(name: '_representation') Element? representationElement,
+      @JsonKey(name: '_representation') PrimitiveElement? representationElement,
       CodeableConcept? format,
       Reference? document});
 
@@ -30538,7 +30609,7 @@ class _$SubstanceDefinitionRepresentationCopyWithImpl<$Res,
       representationElement: freezed == representationElement
           ? _value.representationElement
           : representationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       format: freezed == format
           ? _value.format
           : format // ignore: cast_nullable_to_non_nullable
@@ -30602,7 +30673,7 @@ abstract class _$$SubstanceDefinitionRepresentationImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       CodeableConcept? type,
       String? representation,
-      @JsonKey(name: '_representation') Element? representationElement,
+      @JsonKey(name: '_representation') PrimitiveElement? representationElement,
       CodeableConcept? format,
       Reference? document});
 
@@ -30660,7 +30731,7 @@ class __$$SubstanceDefinitionRepresentationImplCopyWithImpl<$Res>
       representationElement: freezed == representationElement
           ? _value.representationElement
           : representationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       format: freezed == format
           ? _value.format
           : format // ignore: cast_nullable_to_non_nullable
@@ -30771,7 +30842,7 @@ class _$SubstanceDefinitionRepresentationImpl
   /// [representationElement] ("_representation") Extensions for representation
   @override
   @JsonKey(name: '_representation')
-  final Element? representationElement;
+  final PrimitiveElement? representationElement;
 
   /// [format] The format of the representation e.g. InChI, SMILES, MOLFILE, CDX,
   ///  SDF, PDB, mmCIF. The logical content type rather than the physical file
@@ -30846,7 +30917,8 @@ abstract class _SubstanceDefinitionRepresentation
       final List<FhirExtension>? modifierExtension,
       final CodeableConcept? type,
       final String? representation,
-      @JsonKey(name: '_representation') final Element? representationElement,
+      @JsonKey(name: '_representation')
+      final PrimitiveElement? representationElement,
       final CodeableConcept? format,
       final Reference? document}) = _$SubstanceDefinitionRepresentationImpl;
   const _SubstanceDefinitionRepresentation._() : super._();
@@ -30898,7 +30970,7 @@ abstract class _SubstanceDefinitionRepresentation
 
   /// [representationElement] ("_representation") Extensions for representation
   @JsonKey(name: '_representation')
-  Element? get representationElement;
+  PrimitiveElement? get representationElement;
   @override
 
   /// [format] The format of the representation e.g. InChI, SMILES, MOLFILE, CDX,
@@ -30965,7 +31037,7 @@ mixin _$SubstanceDefinitionCode {
 
   /// [statusDateElement] ("_statusDate") Extensions for statusDate
   @JsonKey(name: '_statusDate')
-  Element? get statusDateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get statusDateElement => throw _privateConstructorUsedError;
 
   /// [note] Any comment can be provided in this field, if necessary.
   List<Annotation>? get note => throw _privateConstructorUsedError;
@@ -30992,7 +31064,7 @@ abstract class $SubstanceDefinitionCodeCopyWith<$Res> {
       CodeableConcept? code,
       CodeableConcept? status,
       FhirDateTime? statusDate,
-      @JsonKey(name: '_statusDate') Element? statusDateElement,
+      @JsonKey(name: '_statusDate') PrimitiveElement? statusDateElement,
       List<Annotation>? note,
       List<Reference>? source});
 
@@ -31052,7 +31124,7 @@ class _$SubstanceDefinitionCodeCopyWithImpl<$Res,
       statusDateElement: freezed == statusDateElement
           ? _value.statusDateElement
           : statusDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
@@ -31105,7 +31177,7 @@ abstract class _$$SubstanceDefinitionCodeImplCopyWith<$Res>
       CodeableConcept? code,
       CodeableConcept? status,
       FhirDateTime? statusDate,
-      @JsonKey(name: '_statusDate') Element? statusDateElement,
+      @JsonKey(name: '_statusDate') PrimitiveElement? statusDateElement,
       List<Annotation>? note,
       List<Reference>? source});
 
@@ -31166,7 +31238,7 @@ class __$$SubstanceDefinitionCodeImplCopyWithImpl<$Res>
       statusDateElement: freezed == statusDateElement
           ? _value.statusDateElement
           : statusDateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       note: freezed == note
           ? _value._note
           : note // ignore: cast_nullable_to_non_nullable
@@ -31283,7 +31355,7 @@ class _$SubstanceDefinitionCodeImpl extends _SubstanceDefinitionCode {
   /// [statusDateElement] ("_statusDate") Extensions for statusDate
   @override
   @JsonKey(name: '_statusDate')
-  final Element? statusDateElement;
+  final PrimitiveElement? statusDateElement;
 
   /// [note] Any comment can be provided in this field, if necessary.
   final List<Annotation>? _note;
@@ -31373,7 +31445,7 @@ abstract class _SubstanceDefinitionCode extends SubstanceDefinitionCode {
       final CodeableConcept? code,
       final CodeableConcept? status,
       final FhirDateTime? statusDate,
-      @JsonKey(name: '_statusDate') final Element? statusDateElement,
+      @JsonKey(name: '_statusDate') final PrimitiveElement? statusDateElement,
       final List<Annotation>? note,
       final List<Reference>? source}) = _$SubstanceDefinitionCodeImpl;
   const _SubstanceDefinitionCode._() : super._();
@@ -31429,7 +31501,7 @@ abstract class _SubstanceDefinitionCode extends SubstanceDefinitionCode {
 
   /// [statusDateElement] ("_statusDate") Extensions for statusDate
   @JsonKey(name: '_statusDate')
-  Element? get statusDateElement;
+  PrimitiveElement? get statusDateElement;
   @override
 
   /// [note] Any comment can be provided in this field, if necessary.
@@ -31484,7 +31556,7 @@ mixin _$SubstanceDefinitionName {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [type] Name type, for example 'systematic',  'scientific, 'brand'.
   CodeableConcept? get type => throw _privateConstructorUsedError;
@@ -31497,7 +31569,7 @@ mixin _$SubstanceDefinitionName {
 
   /// [preferredElement] ("_preferred") Extensions for preferred
   @JsonKey(name: '_preferred')
-  Element? get preferredElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get preferredElement => throw _privateConstructorUsedError;
 
   /// [language] Human language that the name is written in.
   List<CodeableConcept>? get language => throw _privateConstructorUsedError;
@@ -31542,11 +31614,11 @@ abstract class $SubstanceDefinitionNameCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       CodeableConcept? type,
       CodeableConcept? status,
       FhirBoolean? preferred,
-      @JsonKey(name: '_preferred') Element? preferredElement,
+      @JsonKey(name: '_preferred') PrimitiveElement? preferredElement,
       List<CodeableConcept>? language,
       List<CodeableConcept>? domain,
       List<CodeableConcept>? jurisdiction,
@@ -31610,7 +31682,7 @@ class _$SubstanceDefinitionNameCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -31626,7 +31698,7 @@ class _$SubstanceDefinitionNameCopyWithImpl<$Res,
       preferredElement: freezed == preferredElement
           ? _value.preferredElement
           : preferredElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -31697,11 +31769,11 @@ abstract class _$$SubstanceDefinitionNameImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       CodeableConcept? type,
       CodeableConcept? status,
       FhirBoolean? preferred,
-      @JsonKey(name: '_preferred') Element? preferredElement,
+      @JsonKey(name: '_preferred') PrimitiveElement? preferredElement,
       List<CodeableConcept>? language,
       List<CodeableConcept>? domain,
       List<CodeableConcept>? jurisdiction,
@@ -31766,7 +31838,7 @@ class __$$SubstanceDefinitionNameImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -31782,7 +31854,7 @@ class __$$SubstanceDefinitionNameImplCopyWithImpl<$Res>
       preferredElement: freezed == preferredElement
           ? _value.preferredElement
           : preferredElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value._language
           : language // ignore: cast_nullable_to_non_nullable
@@ -31921,7 +31993,7 @@ class _$SubstanceDefinitionNameImpl extends _SubstanceDefinitionName {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [type] Name type, for example 'systematic',  'scientific, 'brand'.
   @override
@@ -31938,7 +32010,7 @@ class _$SubstanceDefinitionNameImpl extends _SubstanceDefinitionName {
   /// [preferredElement] ("_preferred") Extensions for preferred
   @override
   @JsonKey(name: '_preferred')
-  final Element? preferredElement;
+  final PrimitiveElement? preferredElement;
 
   /// [language] Human language that the name is written in.
   final List<CodeableConcept>? _language;
@@ -32112,11 +32184,11 @@ abstract class _SubstanceDefinitionName extends SubstanceDefinitionName {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final String? name,
-      @JsonKey(name: '_name') final Element? nameElement,
+      @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final CodeableConcept? type,
       final CodeableConcept? status,
       final FhirBoolean? preferred,
-      @JsonKey(name: '_preferred') final Element? preferredElement,
+      @JsonKey(name: '_preferred') final PrimitiveElement? preferredElement,
       final List<CodeableConcept>? language,
       final List<CodeableConcept>? domain,
       final List<CodeableConcept>? jurisdiction,
@@ -32167,7 +32239,7 @@ abstract class _SubstanceDefinitionName extends SubstanceDefinitionName {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [type] Name type, for example 'systematic',  'scientific, 'brand'.
@@ -32184,7 +32256,7 @@ abstract class _SubstanceDefinitionName extends SubstanceDefinitionName {
 
   /// [preferredElement] ("_preferred") Extensions for preferred
   @JsonKey(name: '_preferred')
-  Element? get preferredElement;
+  PrimitiveElement? get preferredElement;
   @override
 
   /// [language] Human language that the name is written in.
@@ -32268,7 +32340,7 @@ mixin _$SubstanceDefinitionOfficial {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -32291,7 +32363,7 @@ abstract class $SubstanceDefinitionOfficialCopyWith<$Res> {
       CodeableConcept? authority,
       CodeableConcept? status,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement});
+      @JsonKey(name: '_date') PrimitiveElement? dateElement});
 
   $CodeableConceptCopyWith<$Res>? get authority;
   $CodeableConceptCopyWith<$Res>? get status;
@@ -32347,7 +32419,7 @@ class _$SubstanceDefinitionOfficialCopyWithImpl<$Res,
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -32392,7 +32464,7 @@ abstract class _$$SubstanceDefinitionOfficialImplCopyWith<$Res>
       CodeableConcept? authority,
       CodeableConcept? status,
       FhirDateTime? date,
-      @JsonKey(name: '_date') Element? dateElement});
+      @JsonKey(name: '_date') PrimitiveElement? dateElement});
 
   @override
   $CodeableConceptCopyWith<$Res>? get authority;
@@ -32449,7 +32521,7 @@ class __$$SubstanceDefinitionOfficialImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -32554,7 +32626,7 @@ class _$SubstanceDefinitionOfficialImpl extends _SubstanceDefinitionOfficial {
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  final Element? dateElement;
+  final PrimitiveElement? dateElement;
 
   @override
   String toString() {
@@ -32615,7 +32687,7 @@ abstract class _SubstanceDefinitionOfficial
           final CodeableConcept? authority,
           final CodeableConcept? status,
           final FhirDateTime? date,
-          @JsonKey(name: '_date') final Element? dateElement}) =
+          @JsonKey(name: '_date') final PrimitiveElement? dateElement}) =
       _$SubstanceDefinitionOfficialImpl;
   const _SubstanceDefinitionOfficial._() : super._();
 
@@ -32669,7 +32741,7 @@ abstract class _SubstanceDefinitionOfficial
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  Element? get dateElement;
+  PrimitiveElement? get dateElement;
   @override
   @JsonKey(ignore: true)
   _$$SubstanceDefinitionOfficialImplCopyWith<_$SubstanceDefinitionOfficialImpl>
@@ -32732,7 +32804,7 @@ mixin _$SubstanceDefinitionRelationship {
 
   /// [isDefiningElement] ("_isDefining") Extensions for isDefining
   @JsonKey(name: '_isDefining')
-  Element? get isDefiningElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get isDefiningElement => throw _privateConstructorUsedError;
 
   /// [amountQuantity] A numeric factor for the relationship, for instance to
   ///  express that the salt of a substance has some percentage of the active
@@ -32751,7 +32823,8 @@ mixin _$SubstanceDefinitionRelationship {
 
   /// [amountStringElement] ("_amountString") Extensions for amountString
   @JsonKey(name: '_amountString')
-  Element? get amountStringElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get amountStringElement =>
+      throw _privateConstructorUsedError;
 
   /// [ratioHighLimitAmount] For use when the numeric has an uncertain range.
   Ratio? get ratioHighLimitAmount => throw _privateConstructorUsedError;
@@ -32785,11 +32858,11 @@ abstract class $SubstanceDefinitionRelationshipCopyWith<$Res> {
       CodeableConcept? substanceDefinitionCodeableConcept,
       CodeableConcept type,
       FhirBoolean? isDefining,
-      @JsonKey(name: '_isDefining') Element? isDefiningElement,
+      @JsonKey(name: '_isDefining') PrimitiveElement? isDefiningElement,
       Quantity? amountQuantity,
       Ratio? amountRatio,
       String? amountString,
-      @JsonKey(name: '_amountString') Element? amountStringElement,
+      @JsonKey(name: '_amountString') PrimitiveElement? amountStringElement,
       Ratio? ratioHighLimitAmount,
       CodeableConcept? comparator,
       List<Reference>? source});
@@ -32866,7 +32939,7 @@ class _$SubstanceDefinitionRelationshipCopyWithImpl<$Res,
       isDefiningElement: freezed == isDefiningElement
           ? _value.isDefiningElement
           : isDefiningElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       amountQuantity: freezed == amountQuantity
           ? _value.amountQuantity
           : amountQuantity // ignore: cast_nullable_to_non_nullable
@@ -32882,7 +32955,7 @@ class _$SubstanceDefinitionRelationshipCopyWithImpl<$Res,
       amountStringElement: freezed == amountStringElement
           ? _value.amountStringElement
           : amountStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       ratioHighLimitAmount: freezed == ratioHighLimitAmount
           ? _value.ratioHighLimitAmount
           : ratioHighLimitAmount // ignore: cast_nullable_to_non_nullable
@@ -33000,11 +33073,11 @@ abstract class _$$SubstanceDefinitionRelationshipImplCopyWith<$Res>
       CodeableConcept? substanceDefinitionCodeableConcept,
       CodeableConcept type,
       FhirBoolean? isDefining,
-      @JsonKey(name: '_isDefining') Element? isDefiningElement,
+      @JsonKey(name: '_isDefining') PrimitiveElement? isDefiningElement,
       Quantity? amountQuantity,
       Ratio? amountRatio,
       String? amountString,
-      @JsonKey(name: '_amountString') Element? amountStringElement,
+      @JsonKey(name: '_amountString') PrimitiveElement? amountStringElement,
       Ratio? ratioHighLimitAmount,
       CodeableConcept? comparator,
       List<Reference>? source});
@@ -33087,7 +33160,7 @@ class __$$SubstanceDefinitionRelationshipImplCopyWithImpl<$Res>
       isDefiningElement: freezed == isDefiningElement
           ? _value.isDefiningElement
           : isDefiningElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       amountQuantity: freezed == amountQuantity
           ? _value.amountQuantity
           : amountQuantity // ignore: cast_nullable_to_non_nullable
@@ -33103,7 +33176,7 @@ class __$$SubstanceDefinitionRelationshipImplCopyWithImpl<$Res>
       amountStringElement: freezed == amountStringElement
           ? _value.amountStringElement
           : amountStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       ratioHighLimitAmount: freezed == ratioHighLimitAmount
           ? _value.ratioHighLimitAmount
           : ratioHighLimitAmount // ignore: cast_nullable_to_non_nullable
@@ -33238,7 +33311,7 @@ class _$SubstanceDefinitionRelationshipImpl
   /// [isDefiningElement] ("_isDefining") Extensions for isDefining
   @override
   @JsonKey(name: '_isDefining')
-  final Element? isDefiningElement;
+  final PrimitiveElement? isDefiningElement;
 
   /// [amountQuantity] A numeric factor for the relationship, for instance to
   ///  express that the salt of a substance has some percentage of the active
@@ -33261,7 +33334,7 @@ class _$SubstanceDefinitionRelationshipImpl
   /// [amountStringElement] ("_amountString") Extensions for amountString
   @override
   @JsonKey(name: '_amountString')
-  final Element? amountStringElement;
+  final PrimitiveElement? amountStringElement;
 
   /// [ratioHighLimitAmount] For use when the numeric has an uncertain range.
   @override
@@ -33374,11 +33447,12 @@ abstract class _SubstanceDefinitionRelationship
       final CodeableConcept? substanceDefinitionCodeableConcept,
       required final CodeableConcept type,
       final FhirBoolean? isDefining,
-      @JsonKey(name: '_isDefining') final Element? isDefiningElement,
+      @JsonKey(name: '_isDefining') final PrimitiveElement? isDefiningElement,
       final Quantity? amountQuantity,
       final Ratio? amountRatio,
       final String? amountString,
-      @JsonKey(name: '_amountString') final Element? amountStringElement,
+      @JsonKey(name: '_amountString')
+      final PrimitiveElement? amountStringElement,
       final Ratio? ratioHighLimitAmount,
       final CodeableConcept? comparator,
       final List<Reference>? source}) = _$SubstanceDefinitionRelationshipImpl;
@@ -33442,7 +33516,7 @@ abstract class _SubstanceDefinitionRelationship
 
   /// [isDefiningElement] ("_isDefining") Extensions for isDefining
   @JsonKey(name: '_isDefining')
-  Element? get isDefiningElement;
+  PrimitiveElement? get isDefiningElement;
   @override
 
   /// [amountQuantity] A numeric factor for the relationship, for instance to
@@ -33465,7 +33539,7 @@ abstract class _SubstanceDefinitionRelationship
 
   /// [amountStringElement] ("_amountString") Extensions for amountString
   @JsonKey(name: '_amountString')
-  Element? get amountStringElement;
+  PrimitiveElement? get amountStringElement;
   @override
 
   /// [ratioHighLimitAmount] For use when the numeric has an uncertain range.
@@ -34048,14 +34122,15 @@ mixin _$SubstanceNucleicAcid {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -34110,7 +34185,8 @@ mixin _$SubstanceNucleicAcid {
   /// [numberOfSubunitsElement] ("_numberOfSubunits") Extensions for
   ///  numberOfSubunits
   @JsonKey(name: '_numberOfSubunits')
-  Element? get numberOfSubunitsElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get numberOfSubunitsElement =>
+      throw _privateConstructorUsedError;
 
   /// [areaOfHybridisation] The area of hybridisation shall be described if
   ///  applicable for double stranded RNA or DNA. The number associated with the
@@ -34122,7 +34198,8 @@ mixin _$SubstanceNucleicAcid {
   /// [areaOfHybridisationElement] ("_areaOfHybridisation") Extensions for
   ///  areaOfHybridisation
   @JsonKey(name: '_areaOfHybridisation')
-  Element? get areaOfHybridisationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get areaOfHybridisationElement =>
+      throw _privateConstructorUsedError;
 
   /// [oligoNucleotideType] (TBC).
   CodeableConcept? get oligoNucleotideType =>
@@ -34152,19 +34229,20 @@ abstract class $SubstanceNucleicAcidCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       CodeableConcept? sequenceType,
       FhirInteger? numberOfSubunits,
-      @JsonKey(name: '_numberOfSubunits') Element? numberOfSubunitsElement,
+      @JsonKey(name: '_numberOfSubunits')
+      PrimitiveElement? numberOfSubunitsElement,
       String? areaOfHybridisation,
       @JsonKey(name: '_areaOfHybridisation')
-      Element? areaOfHybridisationElement,
+      PrimitiveElement? areaOfHybridisationElement,
       CodeableConcept? oligoNucleotideType,
       List<SubstanceNucleicAcidSubunit>? subunit});
 
@@ -34227,7 +34305,7 @@ class _$SubstanceNucleicAcidCopyWithImpl<$Res,
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -34235,7 +34313,7 @@ class _$SubstanceNucleicAcidCopyWithImpl<$Res,
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -34263,7 +34341,7 @@ class _$SubstanceNucleicAcidCopyWithImpl<$Res,
       numberOfSubunitsElement: freezed == numberOfSubunitsElement
           ? _value.numberOfSubunitsElement
           : numberOfSubunitsElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       areaOfHybridisation: freezed == areaOfHybridisation
           ? _value.areaOfHybridisation
           : areaOfHybridisation // ignore: cast_nullable_to_non_nullable
@@ -34271,7 +34349,7 @@ class _$SubstanceNucleicAcidCopyWithImpl<$Res,
       areaOfHybridisationElement: freezed == areaOfHybridisationElement
           ? _value.areaOfHybridisationElement
           : areaOfHybridisationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       oligoNucleotideType: freezed == oligoNucleotideType
           ? _value.oligoNucleotideType
           : oligoNucleotideType // ignore: cast_nullable_to_non_nullable
@@ -34346,19 +34424,20 @@ abstract class _$$SubstanceNucleicAcidImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       CodeableConcept? sequenceType,
       FhirInteger? numberOfSubunits,
-      @JsonKey(name: '_numberOfSubunits') Element? numberOfSubunitsElement,
+      @JsonKey(name: '_numberOfSubunits')
+      PrimitiveElement? numberOfSubunitsElement,
       String? areaOfHybridisation,
       @JsonKey(name: '_areaOfHybridisation')
-      Element? areaOfHybridisationElement,
+      PrimitiveElement? areaOfHybridisationElement,
       CodeableConcept? oligoNucleotideType,
       List<SubstanceNucleicAcidSubunit>? subunit});
 
@@ -34422,7 +34501,7 @@ class __$$SubstanceNucleicAcidImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -34430,7 +34509,7 @@ class __$$SubstanceNucleicAcidImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -34458,7 +34537,7 @@ class __$$SubstanceNucleicAcidImplCopyWithImpl<$Res>
       numberOfSubunitsElement: freezed == numberOfSubunitsElement
           ? _value.numberOfSubunitsElement
           : numberOfSubunitsElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       areaOfHybridisation: freezed == areaOfHybridisation
           ? _value.areaOfHybridisation
           : areaOfHybridisation // ignore: cast_nullable_to_non_nullable
@@ -34466,7 +34545,7 @@ class __$$SubstanceNucleicAcidImplCopyWithImpl<$Res>
       areaOfHybridisationElement: freezed == areaOfHybridisationElement
           ? _value.areaOfHybridisationElement
           : areaOfHybridisationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       oligoNucleotideType: freezed == oligoNucleotideType
           ? _value.oligoNucleotideType
           : oligoNucleotideType // ignore: cast_nullable_to_non_nullable
@@ -34537,7 +34616,7 @@ class _$SubstanceNucleicAcidImpl extends _SubstanceNucleicAcid {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -34546,7 +34625,7 @@ class _$SubstanceNucleicAcidImpl extends _SubstanceNucleicAcid {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -34655,7 +34734,7 @@ class _$SubstanceNucleicAcidImpl extends _SubstanceNucleicAcid {
   ///  numberOfSubunits
   @override
   @JsonKey(name: '_numberOfSubunits')
-  final Element? numberOfSubunitsElement;
+  final PrimitiveElement? numberOfSubunitsElement;
 
   /// [areaOfHybridisation] The area of hybridisation shall be described if
   ///  applicable for double stranded RNA or DNA. The number associated with the
@@ -34669,7 +34748,7 @@ class _$SubstanceNucleicAcidImpl extends _SubstanceNucleicAcid {
   ///  areaOfHybridisation
   @override
   @JsonKey(name: '_areaOfHybridisation')
-  final Element? areaOfHybridisationElement;
+  final PrimitiveElement? areaOfHybridisationElement;
 
   /// [oligoNucleotideType] (TBC).
   @override
@@ -34785,9 +34864,10 @@ abstract class _SubstanceNucleicAcid extends SubstanceNucleicAcid {
           final FhirId? id,
           final FhirMeta? meta,
           final FhirUri? implicitRules,
-          @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+          @JsonKey(name: '_implicitRules')
+          final PrimitiveElement? implicitRulesElement,
           final FhirCode? language,
-          @JsonKey(name: '_language') final Element? languageElement,
+          @JsonKey(name: '_language') final PrimitiveElement? languageElement,
           final Narrative? text,
           final List<Resource>? contained,
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
@@ -34795,10 +34875,10 @@ abstract class _SubstanceNucleicAcid extends SubstanceNucleicAcid {
           final CodeableConcept? sequenceType,
           final FhirInteger? numberOfSubunits,
           @JsonKey(name: '_numberOfSubunits')
-          final Element? numberOfSubunitsElement,
+          final PrimitiveElement? numberOfSubunitsElement,
           final String? areaOfHybridisation,
           @JsonKey(name: '_areaOfHybridisation')
-          final Element? areaOfHybridisationElement,
+          final PrimitiveElement? areaOfHybridisationElement,
           final CodeableConcept? oligoNucleotideType,
           final List<SubstanceNucleicAcidSubunit>? subunit}) =
       _$SubstanceNucleicAcidImpl;
@@ -34834,7 +34914,7 @@ abstract class _SubstanceNucleicAcid extends SubstanceNucleicAcid {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -34843,7 +34923,7 @@ abstract class _SubstanceNucleicAcid extends SubstanceNucleicAcid {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -34904,7 +34984,7 @@ abstract class _SubstanceNucleicAcid extends SubstanceNucleicAcid {
   /// [numberOfSubunitsElement] ("_numberOfSubunits") Extensions for
   ///  numberOfSubunits
   @JsonKey(name: '_numberOfSubunits')
-  Element? get numberOfSubunitsElement;
+  PrimitiveElement? get numberOfSubunitsElement;
   @override
 
   /// [areaOfHybridisation] The area of hybridisation shall be described if
@@ -34918,7 +34998,7 @@ abstract class _SubstanceNucleicAcid extends SubstanceNucleicAcid {
   /// [areaOfHybridisationElement] ("_areaOfHybridisation") Extensions for
   ///  areaOfHybridisation
   @JsonKey(name: '_areaOfHybridisation')
-  Element? get areaOfHybridisationElement;
+  PrimitiveElement? get areaOfHybridisationElement;
   @override
 
   /// [oligoNucleotideType] (TBC).
@@ -34978,7 +35058,7 @@ mixin _$SubstanceNucleicAcidSubunit {
 
   /// [subunitElement] ("_subunit") Extensions for subunit
   @JsonKey(name: '_subunit')
-  Element? get subunitElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get subunitElement => throw _privateConstructorUsedError;
 
   /// [sequence] Actual nucleotide sequence notation from 5' to 3' end using
   ///  standard single letter codes. In addition to the base sequence, sugar and
@@ -34987,14 +35067,14 @@ mixin _$SubstanceNucleicAcidSubunit {
 
   /// [sequenceElement] ("_sequence") Extensions for sequence
   @JsonKey(name: '_sequence')
-  Element? get sequenceElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get sequenceElement => throw _privateConstructorUsedError;
 
   /// [length] The length of the sequence shall be captured.
   FhirInteger? get length => throw _privateConstructorUsedError;
 
   /// [lengthElement] ("_length") Extensions for length
   @JsonKey(name: '_length')
-  Element? get lengthElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get lengthElement => throw _privateConstructorUsedError;
 
   /// [sequenceAttachment] (TBC).
   Attachment? get sequenceAttachment => throw _privateConstructorUsedError;
@@ -35038,11 +35118,11 @@ abstract class $SubstanceNucleicAcidSubunitCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirInteger? subunit,
-      @JsonKey(name: '_subunit') Element? subunitElement,
+      @JsonKey(name: '_subunit') PrimitiveElement? subunitElement,
       String? sequence,
-      @JsonKey(name: '_sequence') Element? sequenceElement,
+      @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
       FhirInteger? length,
-      @JsonKey(name: '_length') Element? lengthElement,
+      @JsonKey(name: '_length') PrimitiveElement? lengthElement,
       Attachment? sequenceAttachment,
       CodeableConcept? fivePrime,
       CodeableConcept? threePrime,
@@ -35103,7 +35183,7 @@ class _$SubstanceNucleicAcidSubunitCopyWithImpl<$Res,
       subunitElement: freezed == subunitElement
           ? _value.subunitElement
           : subunitElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sequence: freezed == sequence
           ? _value.sequence
           : sequence // ignore: cast_nullable_to_non_nullable
@@ -35111,7 +35191,7 @@ class _$SubstanceNucleicAcidSubunitCopyWithImpl<$Res,
       sequenceElement: freezed == sequenceElement
           ? _value.sequenceElement
           : sequenceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       length: freezed == length
           ? _value.length
           : length // ignore: cast_nullable_to_non_nullable
@@ -35119,7 +35199,7 @@ class _$SubstanceNucleicAcidSubunitCopyWithImpl<$Res,
       lengthElement: freezed == lengthElement
           ? _value.lengthElement
           : lengthElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sequenceAttachment: freezed == sequenceAttachment
           ? _value.sequenceAttachment
           : sequenceAttachment // ignore: cast_nullable_to_non_nullable
@@ -35194,11 +35274,11 @@ abstract class _$$SubstanceNucleicAcidSubunitImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirInteger? subunit,
-      @JsonKey(name: '_subunit') Element? subunitElement,
+      @JsonKey(name: '_subunit') PrimitiveElement? subunitElement,
       String? sequence,
-      @JsonKey(name: '_sequence') Element? sequenceElement,
+      @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
       FhirInteger? length,
-      @JsonKey(name: '_length') Element? lengthElement,
+      @JsonKey(name: '_length') PrimitiveElement? lengthElement,
       Attachment? sequenceAttachment,
       CodeableConcept? fivePrime,
       CodeableConcept? threePrime,
@@ -35261,7 +35341,7 @@ class __$$SubstanceNucleicAcidSubunitImplCopyWithImpl<$Res>
       subunitElement: freezed == subunitElement
           ? _value.subunitElement
           : subunitElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sequence: freezed == sequence
           ? _value.sequence
           : sequence // ignore: cast_nullable_to_non_nullable
@@ -35269,7 +35349,7 @@ class __$$SubstanceNucleicAcidSubunitImplCopyWithImpl<$Res>
       sequenceElement: freezed == sequenceElement
           ? _value.sequenceElement
           : sequenceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       length: freezed == length
           ? _value.length
           : length // ignore: cast_nullable_to_non_nullable
@@ -35277,7 +35357,7 @@ class __$$SubstanceNucleicAcidSubunitImplCopyWithImpl<$Res>
       lengthElement: freezed == lengthElement
           ? _value.lengthElement
           : lengthElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sequenceAttachment: freezed == sequenceAttachment
           ? _value.sequenceAttachment
           : sequenceAttachment // ignore: cast_nullable_to_non_nullable
@@ -35405,7 +35485,7 @@ class _$SubstanceNucleicAcidSubunitImpl extends _SubstanceNucleicAcidSubunit {
   /// [subunitElement] ("_subunit") Extensions for subunit
   @override
   @JsonKey(name: '_subunit')
-  final Element? subunitElement;
+  final PrimitiveElement? subunitElement;
 
   /// [sequence] Actual nucleotide sequence notation from 5' to 3' end using
   ///  standard single letter codes. In addition to the base sequence, sugar and
@@ -35416,7 +35496,7 @@ class _$SubstanceNucleicAcidSubunitImpl extends _SubstanceNucleicAcidSubunit {
   /// [sequenceElement] ("_sequence") Extensions for sequence
   @override
   @JsonKey(name: '_sequence')
-  final Element? sequenceElement;
+  final PrimitiveElement? sequenceElement;
 
   /// [length] The length of the sequence shall be captured.
   @override
@@ -35425,7 +35505,7 @@ class _$SubstanceNucleicAcidSubunitImpl extends _SubstanceNucleicAcidSubunit {
   /// [lengthElement] ("_length") Extensions for length
   @override
   @JsonKey(name: '_length')
-  final Element? lengthElement;
+  final PrimitiveElement? lengthElement;
 
   /// [sequenceAttachment] (TBC).
   @override
@@ -35547,11 +35627,11 @@ abstract class _SubstanceNucleicAcidSubunit
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final FhirInteger? subunit,
-          @JsonKey(name: '_subunit') final Element? subunitElement,
+          @JsonKey(name: '_subunit') final PrimitiveElement? subunitElement,
           final String? sequence,
-          @JsonKey(name: '_sequence') final Element? sequenceElement,
+          @JsonKey(name: '_sequence') final PrimitiveElement? sequenceElement,
           final FhirInteger? length,
-          @JsonKey(name: '_length') final Element? lengthElement,
+          @JsonKey(name: '_length') final PrimitiveElement? lengthElement,
           final Attachment? sequenceAttachment,
           final CodeableConcept? fivePrime,
           final CodeableConcept? threePrime,
@@ -35604,7 +35684,7 @@ abstract class _SubstanceNucleicAcidSubunit
 
   /// [subunitElement] ("_subunit") Extensions for subunit
   @JsonKey(name: '_subunit')
-  Element? get subunitElement;
+  PrimitiveElement? get subunitElement;
   @override
 
   /// [sequence] Actual nucleotide sequence notation from 5' to 3' end using
@@ -35615,7 +35695,7 @@ abstract class _SubstanceNucleicAcidSubunit
 
   /// [sequenceElement] ("_sequence") Extensions for sequence
   @JsonKey(name: '_sequence')
-  Element? get sequenceElement;
+  PrimitiveElement? get sequenceElement;
   @override
 
   /// [length] The length of the sequence shall be captured.
@@ -35624,7 +35704,7 @@ abstract class _SubstanceNucleicAcidSubunit
 
   /// [lengthElement] ("_length") Extensions for length
   @JsonKey(name: '_length')
-  Element? get lengthElement;
+  PrimitiveElement? get lengthElement;
   @override
 
   /// [sequenceAttachment] (TBC).
@@ -35702,7 +35782,8 @@ mixin _$SubstanceNucleicAcidLinkage {
 
   /// [connectivityElement] ("_connectivity") Extensions for connectivity
   @JsonKey(name: '_connectivity')
-  Element? get connectivityElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get connectivityElement =>
+      throw _privateConstructorUsedError;
 
   /// [identifier] Each linkage will be registered as a fragment and have an ID.
   Identifier? get identifier => throw _privateConstructorUsedError;
@@ -35713,14 +35794,15 @@ mixin _$SubstanceNucleicAcidLinkage {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [residueSite] Residues shall be captured as described in 5.3.6.8.3.
   String? get residueSite => throw _privateConstructorUsedError;
 
   /// [residueSiteElement] ("_residueSite") Extensions for residueSite
   @JsonKey(name: '_residueSite')
-  Element? get residueSiteElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get residueSiteElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -35741,12 +35823,12 @@ abstract class $SubstanceNucleicAcidLinkageCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? connectivity,
-      @JsonKey(name: '_connectivity') Element? connectivityElement,
+      @JsonKey(name: '_connectivity') PrimitiveElement? connectivityElement,
       Identifier? identifier,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? residueSite,
-      @JsonKey(name: '_residueSite') Element? residueSiteElement});
+      @JsonKey(name: '_residueSite') PrimitiveElement? residueSiteElement});
 
   $IdentifierCopyWith<$Res>? get identifier;
 }
@@ -35796,7 +35878,7 @@ class _$SubstanceNucleicAcidLinkageCopyWithImpl<$Res,
       connectivityElement: freezed == connectivityElement
           ? _value.connectivityElement
           : connectivityElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -35808,7 +35890,7 @@ class _$SubstanceNucleicAcidLinkageCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       residueSite: freezed == residueSite
           ? _value.residueSite
           : residueSite // ignore: cast_nullable_to_non_nullable
@@ -35816,7 +35898,7 @@ class _$SubstanceNucleicAcidLinkageCopyWithImpl<$Res,
       residueSiteElement: freezed == residueSiteElement
           ? _value.residueSiteElement
           : residueSiteElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -35847,12 +35929,12 @@ abstract class _$$SubstanceNucleicAcidLinkageImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? connectivity,
-      @JsonKey(name: '_connectivity') Element? connectivityElement,
+      @JsonKey(name: '_connectivity') PrimitiveElement? connectivityElement,
       Identifier? identifier,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? residueSite,
-      @JsonKey(name: '_residueSite') Element? residueSiteElement});
+      @JsonKey(name: '_residueSite') PrimitiveElement? residueSiteElement});
 
   @override
   $IdentifierCopyWith<$Res>? get identifier;
@@ -35902,7 +35984,7 @@ class __$$SubstanceNucleicAcidLinkageImplCopyWithImpl<$Res>
       connectivityElement: freezed == connectivityElement
           ? _value.connectivityElement
           : connectivityElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       identifier: freezed == identifier
           ? _value.identifier
           : identifier // ignore: cast_nullable_to_non_nullable
@@ -35914,7 +35996,7 @@ class __$$SubstanceNucleicAcidLinkageImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       residueSite: freezed == residueSite
           ? _value.residueSite
           : residueSite // ignore: cast_nullable_to_non_nullable
@@ -35922,7 +36004,7 @@ class __$$SubstanceNucleicAcidLinkageImplCopyWithImpl<$Res>
       residueSiteElement: freezed == residueSiteElement
           ? _value.residueSiteElement
           : residueSiteElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -36026,7 +36108,7 @@ class _$SubstanceNucleicAcidLinkageImpl extends _SubstanceNucleicAcidLinkage {
   /// [connectivityElement] ("_connectivity") Extensions for connectivity
   @override
   @JsonKey(name: '_connectivity')
-  final Element? connectivityElement;
+  final PrimitiveElement? connectivityElement;
 
   /// [identifier] Each linkage will be registered as a fragment and have an ID.
   @override
@@ -36040,7 +36122,7 @@ class _$SubstanceNucleicAcidLinkageImpl extends _SubstanceNucleicAcidLinkage {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [residueSite] Residues shall be captured as described in 5.3.6.8.3.
   @override
@@ -36049,7 +36131,7 @@ class _$SubstanceNucleicAcidLinkageImpl extends _SubstanceNucleicAcidLinkage {
   /// [residueSiteElement] ("_residueSite") Extensions for residueSite
   @override
   @JsonKey(name: '_residueSite')
-  final Element? residueSiteElement;
+  final PrimitiveElement? residueSiteElement;
 
   @override
   String toString() {
@@ -36118,12 +36200,14 @@ abstract class _SubstanceNucleicAcidLinkage
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final String? connectivity,
-          @JsonKey(name: '_connectivity') final Element? connectivityElement,
+          @JsonKey(name: '_connectivity')
+          final PrimitiveElement? connectivityElement,
           final Identifier? identifier,
           final String? name,
-          @JsonKey(name: '_name') final Element? nameElement,
+          @JsonKey(name: '_name') final PrimitiveElement? nameElement,
           final String? residueSite,
-          @JsonKey(name: '_residueSite') final Element? residueSiteElement}) =
+          @JsonKey(name: '_residueSite')
+          final PrimitiveElement? residueSiteElement}) =
       _$SubstanceNucleicAcidLinkageImpl;
   const _SubstanceNucleicAcidLinkage._() : super._();
 
@@ -36173,7 +36257,7 @@ abstract class _SubstanceNucleicAcidLinkage
 
   /// [connectivityElement] ("_connectivity") Extensions for connectivity
   @JsonKey(name: '_connectivity')
-  Element? get connectivityElement;
+  PrimitiveElement? get connectivityElement;
   @override
 
   /// [identifier] Each linkage will be registered as a fragment and have an ID.
@@ -36187,7 +36271,7 @@ abstract class _SubstanceNucleicAcidLinkage
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [residueSite] Residues shall be captured as described in 5.3.6.8.3.
@@ -36196,7 +36280,7 @@ abstract class _SubstanceNucleicAcidLinkage
 
   /// [residueSiteElement] ("_residueSite") Extensions for residueSite
   @JsonKey(name: '_residueSite')
-  Element? get residueSiteElement;
+  PrimitiveElement? get residueSiteElement;
   @override
   @JsonKey(ignore: true)
   _$$SubstanceNucleicAcidLinkageImplCopyWith<_$SubstanceNucleicAcidLinkageImpl>
@@ -36248,7 +36332,7 @@ mixin _$SubstanceNucleicAcidSugar {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get nameElement => throw _privateConstructorUsedError;
 
   /// [residueSite] The residues that contain a given sugar will be captured. The
   ///  order of given residues will be captured in the 5‘-3‘direction consistent
@@ -36257,7 +36341,8 @@ mixin _$SubstanceNucleicAcidSugar {
 
   /// [residueSiteElement] ("_residueSite") Extensions for residueSite
   @JsonKey(name: '_residueSite')
-  Element? get residueSiteElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get residueSiteElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -36277,9 +36362,9 @@ abstract class $SubstanceNucleicAcidSugarCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       Identifier? identifier,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? residueSite,
-      @JsonKey(name: '_residueSite') Element? residueSiteElement});
+      @JsonKey(name: '_residueSite') PrimitiveElement? residueSiteElement});
 
   $IdentifierCopyWith<$Res>? get identifier;
 }
@@ -36331,7 +36416,7 @@ class _$SubstanceNucleicAcidSugarCopyWithImpl<$Res,
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       residueSite: freezed == residueSite
           ? _value.residueSite
           : residueSite // ignore: cast_nullable_to_non_nullable
@@ -36339,7 +36424,7 @@ class _$SubstanceNucleicAcidSugarCopyWithImpl<$Res,
       residueSiteElement: freezed == residueSiteElement
           ? _value.residueSiteElement
           : residueSiteElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -36371,9 +36456,9 @@ abstract class _$$SubstanceNucleicAcidSugarImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       Identifier? identifier,
       String? name,
-      @JsonKey(name: '_name') Element? nameElement,
+      @JsonKey(name: '_name') PrimitiveElement? nameElement,
       String? residueSite,
-      @JsonKey(name: '_residueSite') Element? residueSiteElement});
+      @JsonKey(name: '_residueSite') PrimitiveElement? residueSiteElement});
 
   @override
   $IdentifierCopyWith<$Res>? get identifier;
@@ -36425,7 +36510,7 @@ class __$$SubstanceNucleicAcidSugarImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       residueSite: freezed == residueSite
           ? _value.residueSite
           : residueSite // ignore: cast_nullable_to_non_nullable
@@ -36433,7 +36518,7 @@ class __$$SubstanceNucleicAcidSugarImplCopyWithImpl<$Res>
       residueSiteElement: freezed == residueSiteElement
           ? _value.residueSiteElement
           : residueSiteElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -36535,7 +36620,7 @@ class _$SubstanceNucleicAcidSugarImpl extends _SubstanceNucleicAcidSugar {
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  final Element? nameElement;
+  final PrimitiveElement? nameElement;
 
   /// [residueSite] The residues that contain a given sugar will be captured. The
   ///  order of given residues will be captured in the 5‘-3‘direction consistent
@@ -36546,7 +36631,7 @@ class _$SubstanceNucleicAcidSugarImpl extends _SubstanceNucleicAcidSugar {
   /// [residueSiteElement] ("_residueSite") Extensions for residueSite
   @override
   @JsonKey(name: '_residueSite')
-  final Element? residueSiteElement;
+  final PrimitiveElement? residueSiteElement;
 
   @override
   String toString() {
@@ -36609,9 +36694,10 @@ abstract class _SubstanceNucleicAcidSugar extends SubstanceNucleicAcidSugar {
           final List<FhirExtension>? modifierExtension,
           final Identifier? identifier,
           final String? name,
-          @JsonKey(name: '_name') final Element? nameElement,
+          @JsonKey(name: '_name') final PrimitiveElement? nameElement,
           final String? residueSite,
-          @JsonKey(name: '_residueSite') final Element? residueSiteElement}) =
+          @JsonKey(name: '_residueSite')
+          final PrimitiveElement? residueSiteElement}) =
       _$SubstanceNucleicAcidSugarImpl;
   const _SubstanceNucleicAcidSugar._() : super._();
 
@@ -36662,7 +36748,7 @@ abstract class _SubstanceNucleicAcidSugar extends SubstanceNucleicAcidSugar {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  Element? get nameElement;
+  PrimitiveElement? get nameElement;
   @override
 
   /// [residueSite] The residues that contain a given sugar will be captured. The
@@ -36673,7 +36759,7 @@ abstract class _SubstanceNucleicAcidSugar extends SubstanceNucleicAcidSugar {
 
   /// [residueSiteElement] ("_residueSite") Extensions for residueSite
   @JsonKey(name: '_residueSite')
-  Element? get residueSiteElement;
+  PrimitiveElement? get residueSiteElement;
   @override
   @JsonKey(ignore: true)
   _$$SubstanceNucleicAcidSugarImplCopyWith<_$SubstanceNucleicAcidSugarImpl>
@@ -36707,14 +36793,15 @@ mixin _$SubstancePolymer {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -36779,7 +36866,8 @@ mixin _$SubstancePolymer {
 
   /// [modificationElement] ("_modification") Extensions for modification
   @JsonKey(name: '_modification')
-  Element? get modificationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get modificationElement =>
+      throw _privateConstructorUsedError;
 
   /// [monomerSet] FhirTodo.
   List<SubstancePolymerMonomerSet>? get monomerSet =>
@@ -36808,9 +36896,9 @@ abstract class $SubstancePolymerCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -36820,7 +36908,7 @@ abstract class $SubstancePolymerCopyWith<$Res> {
       CodeableConcept? geometry,
       List<CodeableConcept>? copolymerConnectivity,
       String? modification,
-      @JsonKey(name: '_modification') Element? modificationElement,
+      @JsonKey(name: '_modification') PrimitiveElement? modificationElement,
       List<SubstancePolymerMonomerSet>? monomerSet,
       List<SubstancePolymerRepeat>? repeat});
 
@@ -36884,7 +36972,7 @@ class _$SubstancePolymerCopyWithImpl<$Res, $Val extends SubstancePolymer>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -36892,7 +36980,7 @@ class _$SubstancePolymerCopyWithImpl<$Res, $Val extends SubstancePolymer>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -36932,7 +37020,7 @@ class _$SubstancePolymerCopyWithImpl<$Res, $Val extends SubstancePolymer>
       modificationElement: freezed == modificationElement
           ? _value.modificationElement
           : modificationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       monomerSet: freezed == monomerSet
           ? _value.monomerSet
           : monomerSet // ignore: cast_nullable_to_non_nullable
@@ -37019,9 +37107,9 @@ abstract class _$$SubstancePolymerImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -37031,7 +37119,7 @@ abstract class _$$SubstancePolymerImplCopyWith<$Res>
       CodeableConcept? geometry,
       List<CodeableConcept>? copolymerConnectivity,
       String? modification,
-      @JsonKey(name: '_modification') Element? modificationElement,
+      @JsonKey(name: '_modification') PrimitiveElement? modificationElement,
       List<SubstancePolymerMonomerSet>? monomerSet,
       List<SubstancePolymerRepeat>? repeat});
 
@@ -37098,7 +37186,7 @@ class __$$SubstancePolymerImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -37106,7 +37194,7 @@ class __$$SubstancePolymerImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -37146,7 +37234,7 @@ class __$$SubstancePolymerImplCopyWithImpl<$Res>
       modificationElement: freezed == modificationElement
           ? _value.modificationElement
           : modificationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       monomerSet: freezed == monomerSet
           ? _value._monomerSet
           : monomerSet // ignore: cast_nullable_to_non_nullable
@@ -37220,7 +37308,7 @@ class _$SubstancePolymerImpl extends _SubstancePolymer {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -37229,7 +37317,7 @@ class _$SubstancePolymerImpl extends _SubstancePolymer {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -37361,7 +37449,7 @@ class _$SubstancePolymerImpl extends _SubstancePolymer {
   /// [modificationElement] ("_modification") Extensions for modification
   @override
   @JsonKey(name: '_modification')
-  final Element? modificationElement;
+  final PrimitiveElement? modificationElement;
 
   /// [monomerSet] FhirTodo.
   final List<SubstancePolymerMonomerSet>? _monomerSet;
@@ -37483,9 +37571,10 @@ abstract class _SubstancePolymer extends SubstancePolymer {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
@@ -37495,7 +37584,8 @@ abstract class _SubstancePolymer extends SubstancePolymer {
       final CodeableConcept? geometry,
       final List<CodeableConcept>? copolymerConnectivity,
       final String? modification,
-      @JsonKey(name: '_modification') final Element? modificationElement,
+      @JsonKey(name: '_modification')
+      final PrimitiveElement? modificationElement,
       final List<SubstancePolymerMonomerSet>? monomerSet,
       final List<SubstancePolymerRepeat>? repeat}) = _$SubstancePolymerImpl;
   const _SubstancePolymer._() : super._();
@@ -37530,7 +37620,7 @@ abstract class _SubstancePolymer extends SubstancePolymer {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -37539,7 +37629,7 @@ abstract class _SubstancePolymer extends SubstancePolymer {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -37612,7 +37702,7 @@ abstract class _SubstancePolymer extends SubstancePolymer {
 
   /// [modificationElement] ("_modification") Extensions for modification
   @JsonKey(name: '_modification')
-  Element? get modificationElement;
+  PrimitiveElement? get modificationElement;
   @override
 
   /// [monomerSet] FhirTodo.
@@ -38072,7 +38162,7 @@ mixin _$SubstancePolymerStartingMaterial {
 
   /// [isDefiningElement] ("_isDefining") Extensions for isDefining
   @JsonKey(name: '_isDefining')
-  Element? get isDefiningElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get isDefiningElement => throw _privateConstructorUsedError;
 
   /// [amount] A percentage.
   Quantity? get amount => throw _privateConstructorUsedError;
@@ -38098,7 +38188,7 @@ abstract class $SubstancePolymerStartingMaterialCopyWith<$Res> {
       CodeableConcept? code,
       CodeableConcept? category,
       FhirBoolean? isDefining,
-      @JsonKey(name: '_isDefining') Element? isDefiningElement,
+      @JsonKey(name: '_isDefining') PrimitiveElement? isDefiningElement,
       Quantity? amount});
 
   $CodeableConceptCopyWith<$Res>? get code;
@@ -38157,7 +38247,7 @@ class _$SubstancePolymerStartingMaterialCopyWithImpl<$Res,
       isDefiningElement: freezed == isDefiningElement
           ? _value.isDefiningElement
           : isDefiningElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       amount: freezed == amount
           ? _value.amount
           : amount // ignore: cast_nullable_to_non_nullable
@@ -38218,7 +38308,7 @@ abstract class _$$SubstancePolymerStartingMaterialImplCopyWith<$Res>
       CodeableConcept? code,
       CodeableConcept? category,
       FhirBoolean? isDefining,
-      @JsonKey(name: '_isDefining') Element? isDefiningElement,
+      @JsonKey(name: '_isDefining') PrimitiveElement? isDefiningElement,
       Quantity? amount});
 
   @override
@@ -38279,7 +38369,7 @@ class __$$SubstancePolymerStartingMaterialImplCopyWithImpl<$Res>
       isDefiningElement: freezed == isDefiningElement
           ? _value.isDefiningElement
           : isDefiningElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       amount: freezed == amount
           ? _value.amount
           : amount // ignore: cast_nullable_to_non_nullable
@@ -38390,7 +38480,7 @@ class _$SubstancePolymerStartingMaterialImpl
   /// [isDefiningElement] ("_isDefining") Extensions for isDefining
   @override
   @JsonKey(name: '_isDefining')
-  final Element? isDefiningElement;
+  final PrimitiveElement? isDefiningElement;
 
   /// [amount] A percentage.
   @override
@@ -38459,7 +38549,7 @@ abstract class _SubstancePolymerStartingMaterial
       final CodeableConcept? code,
       final CodeableConcept? category,
       final FhirBoolean? isDefining,
-      @JsonKey(name: '_isDefining') final Element? isDefiningElement,
+      @JsonKey(name: '_isDefining') final PrimitiveElement? isDefiningElement,
       final Quantity? amount}) = _$SubstancePolymerStartingMaterialImpl;
   const _SubstancePolymerStartingMaterial._() : super._();
 
@@ -38514,7 +38604,7 @@ abstract class _SubstancePolymerStartingMaterial
 
   /// [isDefiningElement] ("_isDefining") Extensions for isDefining
   @JsonKey(name: '_isDefining')
-  Element? get isDefiningElement;
+  PrimitiveElement? get isDefiningElement;
   @override
 
   /// [amount] A percentage.
@@ -38568,7 +38658,7 @@ mixin _$SubstancePolymerRepeat {
   /// [averageMolecularFormulaElement] ("_averageMolecularFormula") Extensions
   ///  for averageMolecularFormula
   @JsonKey(name: '_averageMolecularFormula')
-  Element? get averageMolecularFormulaElement =>
+  PrimitiveElement? get averageMolecularFormulaElement =>
       throw _privateConstructorUsedError;
 
   /// [repeatUnitAmountType] How the quantitative amount of Structural Repeat
@@ -38598,7 +38688,7 @@ abstract class $SubstancePolymerRepeatCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       String? averageMolecularFormula,
       @JsonKey(name: '_averageMolecularFormula')
-      Element? averageMolecularFormulaElement,
+      PrimitiveElement? averageMolecularFormulaElement,
       CodeableConcept? repeatUnitAmountType,
       List<SubstancePolymerRepeatUnit>? repeatUnit});
 
@@ -38647,7 +38737,7 @@ class _$SubstancePolymerRepeatCopyWithImpl<$Res,
       averageMolecularFormulaElement: freezed == averageMolecularFormulaElement
           ? _value.averageMolecularFormulaElement
           : averageMolecularFormulaElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       repeatUnitAmountType: freezed == repeatUnitAmountType
           ? _value.repeatUnitAmountType
           : repeatUnitAmountType // ignore: cast_nullable_to_non_nullable
@@ -38688,7 +38778,7 @@ abstract class _$$SubstancePolymerRepeatImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       String? averageMolecularFormula,
       @JsonKey(name: '_averageMolecularFormula')
-      Element? averageMolecularFormulaElement,
+      PrimitiveElement? averageMolecularFormulaElement,
       CodeableConcept? repeatUnitAmountType,
       List<SubstancePolymerRepeatUnit>? repeatUnit});
 
@@ -38737,7 +38827,7 @@ class __$$SubstancePolymerRepeatImplCopyWithImpl<$Res>
       averageMolecularFormulaElement: freezed == averageMolecularFormulaElement
           ? _value.averageMolecularFormulaElement
           : averageMolecularFormulaElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       repeatUnitAmountType: freezed == repeatUnitAmountType
           ? _value.repeatUnitAmountType
           : repeatUnitAmountType // ignore: cast_nullable_to_non_nullable
@@ -38844,7 +38934,7 @@ class _$SubstancePolymerRepeatImpl extends _SubstancePolymerRepeat {
   ///  for averageMolecularFormula
   @override
   @JsonKey(name: '_averageMolecularFormula')
-  final Element? averageMolecularFormulaElement;
+  final PrimitiveElement? averageMolecularFormulaElement;
 
   /// [repeatUnitAmountType] How the quantitative amount of Structural Repeat
   ///  Units is captured (e.g. Exact, Numeric, Average).
@@ -38926,7 +39016,7 @@ abstract class _SubstancePolymerRepeat extends SubstancePolymerRepeat {
           final List<FhirExtension>? modifierExtension,
           final String? averageMolecularFormula,
           @JsonKey(name: '_averageMolecularFormula')
-          final Element? averageMolecularFormulaElement,
+          final PrimitiveElement? averageMolecularFormulaElement,
           final CodeableConcept? repeatUnitAmountType,
           final List<SubstancePolymerRepeatUnit>? repeatUnit}) =
       _$SubstancePolymerRepeatImpl;
@@ -38975,7 +39065,7 @@ abstract class _SubstancePolymerRepeat extends SubstancePolymerRepeat {
   /// [averageMolecularFormulaElement] ("_averageMolecularFormula") Extensions
   ///  for averageMolecularFormula
   @JsonKey(name: '_averageMolecularFormula')
-  Element? get averageMolecularFormulaElement;
+  PrimitiveElement? get averageMolecularFormulaElement;
   @override
 
   /// [repeatUnitAmountType] How the quantitative amount of Structural Repeat
@@ -39031,7 +39121,7 @@ mixin _$SubstancePolymerRepeatUnit {
 
   /// [unitElement] ("_unit") Extensions for unit
   @JsonKey(name: '_unit')
-  Element? get unitElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get unitElement => throw _privateConstructorUsedError;
 
   /// [orientation] The orientation of the polymerisation, e.g. head-tail,
   ///  head-head, random.
@@ -39042,7 +39132,7 @@ mixin _$SubstancePolymerRepeatUnit {
 
   /// [amountElement] ("_amount") Extensions for amount
   @JsonKey(name: '_amount')
-  Element? get amountElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get amountElement => throw _privateConstructorUsedError;
 
   /// [degreeOfPolymerisation] Applies to homopolymer and block co-polymers where
   ///  the degree of polymerisation within a block can be described.
@@ -39071,10 +39161,10 @@ abstract class $SubstancePolymerRepeatUnitCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? unit,
-      @JsonKey(name: '_unit') Element? unitElement,
+      @JsonKey(name: '_unit') PrimitiveElement? unitElement,
       CodeableConcept? orientation,
       FhirInteger? amount,
-      @JsonKey(name: '_amount') Element? amountElement,
+      @JsonKey(name: '_amount') PrimitiveElement? amountElement,
       List<SubstancePolymerDegreeOfPolymerisation>? degreeOfPolymerisation,
       List<SubstancePolymerStructuralRepresentation>?
           structuralRepresentation});
@@ -39127,7 +39217,7 @@ class _$SubstancePolymerRepeatUnitCopyWithImpl<$Res,
       unitElement: freezed == unitElement
           ? _value.unitElement
           : unitElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       orientation: freezed == orientation
           ? _value.orientation
           : orientation // ignore: cast_nullable_to_non_nullable
@@ -39139,7 +39229,7 @@ class _$SubstancePolymerRepeatUnitCopyWithImpl<$Res,
       amountElement: freezed == amountElement
           ? _value.amountElement
           : amountElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       degreeOfPolymerisation: freezed == degreeOfPolymerisation
           ? _value.degreeOfPolymerisation
           : degreeOfPolymerisation // ignore: cast_nullable_to_non_nullable
@@ -39178,10 +39268,10 @@ abstract class _$$SubstancePolymerRepeatUnitImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? unit,
-      @JsonKey(name: '_unit') Element? unitElement,
+      @JsonKey(name: '_unit') PrimitiveElement? unitElement,
       CodeableConcept? orientation,
       FhirInteger? amount,
-      @JsonKey(name: '_amount') Element? amountElement,
+      @JsonKey(name: '_amount') PrimitiveElement? amountElement,
       List<SubstancePolymerDegreeOfPolymerisation>? degreeOfPolymerisation,
       List<SubstancePolymerStructuralRepresentation>?
           structuralRepresentation});
@@ -39234,7 +39324,7 @@ class __$$SubstancePolymerRepeatUnitImplCopyWithImpl<$Res>
       unitElement: freezed == unitElement
           ? _value.unitElement
           : unitElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       orientation: freezed == orientation
           ? _value.orientation
           : orientation // ignore: cast_nullable_to_non_nullable
@@ -39246,7 +39336,7 @@ class __$$SubstancePolymerRepeatUnitImplCopyWithImpl<$Res>
       amountElement: freezed == amountElement
           ? _value.amountElement
           : amountElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       degreeOfPolymerisation: freezed == degreeOfPolymerisation
           ? _value._degreeOfPolymerisation
           : degreeOfPolymerisation // ignore: cast_nullable_to_non_nullable
@@ -39357,7 +39447,7 @@ class _$SubstancePolymerRepeatUnitImpl extends _SubstancePolymerRepeatUnit {
   /// [unitElement] ("_unit") Extensions for unit
   @override
   @JsonKey(name: '_unit')
-  final Element? unitElement;
+  final PrimitiveElement? unitElement;
 
   /// [orientation] The orientation of the polymerisation, e.g. head-tail,
   ///  head-head, random.
@@ -39371,7 +39461,7 @@ class _$SubstancePolymerRepeatUnitImpl extends _SubstancePolymerRepeatUnit {
   /// [amountElement] ("_amount") Extensions for amount
   @override
   @JsonKey(name: '_amount')
-  final Element? amountElement;
+  final PrimitiveElement? amountElement;
 
   /// [degreeOfPolymerisation] Applies to homopolymer and block co-polymers where
   ///  the degree of polymerisation within a block can be described.
@@ -39469,10 +39559,10 @@ abstract class _SubstancePolymerRepeatUnit extends SubstancePolymerRepeatUnit {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final String? unit,
-      @JsonKey(name: '_unit') final Element? unitElement,
+      @JsonKey(name: '_unit') final PrimitiveElement? unitElement,
       final CodeableConcept? orientation,
       final FhirInteger? amount,
-      @JsonKey(name: '_amount') final Element? amountElement,
+      @JsonKey(name: '_amount') final PrimitiveElement? amountElement,
       final List<SubstancePolymerDegreeOfPolymerisation>?
           degreeOfPolymerisation,
       final List<SubstancePolymerStructuralRepresentation>?
@@ -39520,7 +39610,7 @@ abstract class _SubstancePolymerRepeatUnit extends SubstancePolymerRepeatUnit {
 
   /// [unitElement] ("_unit") Extensions for unit
   @JsonKey(name: '_unit')
-  Element? get unitElement;
+  PrimitiveElement? get unitElement;
   @override
 
   /// [orientation] The orientation of the polymerisation, e.g. head-tail,
@@ -39534,7 +39624,7 @@ abstract class _SubstancePolymerRepeatUnit extends SubstancePolymerRepeatUnit {
 
   /// [amountElement] ("_amount") Extensions for amount
   @JsonKey(name: '_amount')
-  Element? get amountElement;
+  PrimitiveElement? get amountElement;
   @override
 
   /// [degreeOfPolymerisation] Applies to homopolymer and block co-polymers where
@@ -39595,21 +39685,21 @@ mixin _$SubstancePolymerDegreeOfPolymerisation {
 
   /// [averageElement] ("_average") Extensions for average
   @JsonKey(name: '_average')
-  Element? get averageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get averageElement => throw _privateConstructorUsedError;
 
   /// [low] A low expected limit of the amount.
   FhirInteger? get low => throw _privateConstructorUsedError;
 
   /// [lowElement] ("_low") Extensions for low
   @JsonKey(name: '_low')
-  Element? get lowElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get lowElement => throw _privateConstructorUsedError;
 
   /// [high] A high expected limit of the amount.
   FhirInteger? get high => throw _privateConstructorUsedError;
 
   /// [highElement] ("_high") Extensions for high
   @JsonKey(name: '_high')
-  Element? get highElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get highElement => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -39632,11 +39722,11 @@ abstract class $SubstancePolymerDegreeOfPolymerisationCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       CodeableConcept? type,
       FhirInteger? average,
-      @JsonKey(name: '_average') Element? averageElement,
+      @JsonKey(name: '_average') PrimitiveElement? averageElement,
       FhirInteger? low,
-      @JsonKey(name: '_low') Element? lowElement,
+      @JsonKey(name: '_low') PrimitiveElement? lowElement,
       FhirInteger? high,
-      @JsonKey(name: '_high') Element? highElement});
+      @JsonKey(name: '_high') PrimitiveElement? highElement});
 
   $CodeableConceptCopyWith<$Res>? get type;
 }
@@ -39690,7 +39780,7 @@ class _$SubstancePolymerDegreeOfPolymerisationCopyWithImpl<$Res,
       averageElement: freezed == averageElement
           ? _value.averageElement
           : averageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       low: freezed == low
           ? _value.low
           : low // ignore: cast_nullable_to_non_nullable
@@ -39698,7 +39788,7 @@ class _$SubstancePolymerDegreeOfPolymerisationCopyWithImpl<$Res,
       lowElement: freezed == lowElement
           ? _value.lowElement
           : lowElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       high: freezed == high
           ? _value.high
           : high // ignore: cast_nullable_to_non_nullable
@@ -39706,7 +39796,7 @@ class _$SubstancePolymerDegreeOfPolymerisationCopyWithImpl<$Res,
       highElement: freezed == highElement
           ? _value.highElement
           : highElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -39738,11 +39828,11 @@ abstract class _$$SubstancePolymerDegreeOfPolymerisationImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       CodeableConcept? type,
       FhirInteger? average,
-      @JsonKey(name: '_average') Element? averageElement,
+      @JsonKey(name: '_average') PrimitiveElement? averageElement,
       FhirInteger? low,
-      @JsonKey(name: '_low') Element? lowElement,
+      @JsonKey(name: '_low') PrimitiveElement? lowElement,
       FhirInteger? high,
-      @JsonKey(name: '_high') Element? highElement});
+      @JsonKey(name: '_high') PrimitiveElement? highElement});
 
   @override
   $CodeableConceptCopyWith<$Res>? get type;
@@ -39796,7 +39886,7 @@ class __$$SubstancePolymerDegreeOfPolymerisationImplCopyWithImpl<$Res>
       averageElement: freezed == averageElement
           ? _value.averageElement
           : averageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       low: freezed == low
           ? _value.low
           : low // ignore: cast_nullable_to_non_nullable
@@ -39804,7 +39894,7 @@ class __$$SubstancePolymerDegreeOfPolymerisationImplCopyWithImpl<$Res>
       lowElement: freezed == lowElement
           ? _value.lowElement
           : lowElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       high: freezed == high
           ? _value.high
           : high // ignore: cast_nullable_to_non_nullable
@@ -39812,7 +39902,7 @@ class __$$SubstancePolymerDegreeOfPolymerisationImplCopyWithImpl<$Res>
       highElement: freezed == highElement
           ? _value.highElement
           : highElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -39917,7 +40007,7 @@ class _$SubstancePolymerDegreeOfPolymerisationImpl
   /// [averageElement] ("_average") Extensions for average
   @override
   @JsonKey(name: '_average')
-  final Element? averageElement;
+  final PrimitiveElement? averageElement;
 
   /// [low] A low expected limit of the amount.
   @override
@@ -39926,7 +40016,7 @@ class _$SubstancePolymerDegreeOfPolymerisationImpl
   /// [lowElement] ("_low") Extensions for low
   @override
   @JsonKey(name: '_low')
-  final Element? lowElement;
+  final PrimitiveElement? lowElement;
 
   /// [high] A high expected limit of the amount.
   @override
@@ -39935,7 +40025,7 @@ class _$SubstancePolymerDegreeOfPolymerisationImpl
   /// [highElement] ("_high") Extensions for high
   @override
   @JsonKey(name: '_high')
-  final Element? highElement;
+  final PrimitiveElement? highElement;
 
   @override
   String toString() {
@@ -40004,11 +40094,11 @@ abstract class _SubstancePolymerDegreeOfPolymerisation
           final List<FhirExtension>? modifierExtension,
           final CodeableConcept? type,
           final FhirInteger? average,
-          @JsonKey(name: '_average') final Element? averageElement,
+          @JsonKey(name: '_average') final PrimitiveElement? averageElement,
           final FhirInteger? low,
-          @JsonKey(name: '_low') final Element? lowElement,
+          @JsonKey(name: '_low') final PrimitiveElement? lowElement,
           final FhirInteger? high,
-          @JsonKey(name: '_high') final Element? highElement}) =
+          @JsonKey(name: '_high') final PrimitiveElement? highElement}) =
       _$SubstancePolymerDegreeOfPolymerisationImpl;
   const _SubstancePolymerDegreeOfPolymerisation._() : super._();
 
@@ -40059,7 +40149,7 @@ abstract class _SubstancePolymerDegreeOfPolymerisation
 
   /// [averageElement] ("_average") Extensions for average
   @JsonKey(name: '_average')
-  Element? get averageElement;
+  PrimitiveElement? get averageElement;
   @override
 
   /// [low] A low expected limit of the amount.
@@ -40068,7 +40158,7 @@ abstract class _SubstancePolymerDegreeOfPolymerisation
 
   /// [lowElement] ("_low") Extensions for low
   @JsonKey(name: '_low')
-  Element? get lowElement;
+  PrimitiveElement? get lowElement;
   @override
 
   /// [high] A high expected limit of the amount.
@@ -40077,7 +40167,7 @@ abstract class _SubstancePolymerDegreeOfPolymerisation
 
   /// [highElement] ("_high") Extensions for high
   @JsonKey(name: '_high')
-  Element? get highElement;
+  PrimitiveElement? get highElement;
   @override
   @JsonKey(ignore: true)
   _$$SubstancePolymerDegreeOfPolymerisationImplCopyWith<
@@ -40130,7 +40220,8 @@ mixin _$SubstancePolymerStructuralRepresentation {
 
   /// [representationElement] ("_representation") Extensions for representation
   @JsonKey(name: '_representation')
-  Element? get representationElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get representationElement =>
+      throw _privateConstructorUsedError;
 
   /// [format] The format of the representation e.g. InChI, SMILES, MOLFILE, CDX,
   ///  SDF, PDB, mmCIF.
@@ -40160,7 +40251,7 @@ abstract class $SubstancePolymerStructuralRepresentationCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       CodeableConcept? type,
       String? representation,
-      @JsonKey(name: '_representation') Element? representationElement,
+      @JsonKey(name: '_representation') PrimitiveElement? representationElement,
       CodeableConcept? format,
       Attachment? attachment});
 
@@ -40217,7 +40308,7 @@ class _$SubstancePolymerStructuralRepresentationCopyWithImpl<$Res,
       representationElement: freezed == representationElement
           ? _value.representationElement
           : representationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       format: freezed == format
           ? _value.format
           : format // ignore: cast_nullable_to_non_nullable
@@ -40281,7 +40372,7 @@ abstract class _$$SubstancePolymerStructuralRepresentationImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       CodeableConcept? type,
       String? representation,
-      @JsonKey(name: '_representation') Element? representationElement,
+      @JsonKey(name: '_representation') PrimitiveElement? representationElement,
       CodeableConcept? format,
       Attachment? attachment});
 
@@ -40339,7 +40430,7 @@ class __$$SubstancePolymerStructuralRepresentationImplCopyWithImpl<$Res>
       representationElement: freezed == representationElement
           ? _value.representationElement
           : representationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       format: freezed == format
           ? _value.format
           : format // ignore: cast_nullable_to_non_nullable
@@ -40450,7 +40541,7 @@ class _$SubstancePolymerStructuralRepresentationImpl
   /// [representationElement] ("_representation") Extensions for representation
   @override
   @JsonKey(name: '_representation')
-  final Element? representationElement;
+  final PrimitiveElement? representationElement;
 
   /// [format] The format of the representation e.g. InChI, SMILES, MOLFILE, CDX,
   ///  SDF, PDB, mmCIF.
@@ -40519,15 +40610,16 @@ class _$SubstancePolymerStructuralRepresentationImpl
 abstract class _SubstancePolymerStructuralRepresentation
     extends SubstancePolymerStructuralRepresentation {
   const factory _SubstancePolymerStructuralRepresentation(
-      {final String? id,
-      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-      final List<FhirExtension>? modifierExtension,
-      final CodeableConcept? type,
-      final String? representation,
-      @JsonKey(name: '_representation') final Element? representationElement,
-      final CodeableConcept? format,
-      final Attachment?
-          attachment}) = _$SubstancePolymerStructuralRepresentationImpl;
+          {final String? id,
+          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+          final List<FhirExtension>? modifierExtension,
+          final CodeableConcept? type,
+          final String? representation,
+          @JsonKey(name: '_representation')
+          final PrimitiveElement? representationElement,
+          final CodeableConcept? format,
+          final Attachment? attachment}) =
+      _$SubstancePolymerStructuralRepresentationImpl;
   const _SubstancePolymerStructuralRepresentation._() : super._();
 
   factory _SubstancePolymerStructuralRepresentation.fromJson(
@@ -40577,7 +40669,7 @@ abstract class _SubstancePolymerStructuralRepresentation
 
   /// [representationElement] ("_representation") Extensions for representation
   @JsonKey(name: '_representation')
-  Element? get representationElement;
+  PrimitiveElement? get representationElement;
   @override
 
   /// [format] The format of the representation e.g. InChI, SMILES, MOLFILE, CDX,
@@ -40621,14 +40713,15 @@ mixin _$SubstanceProtein {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -40683,7 +40776,8 @@ mixin _$SubstanceProtein {
   /// [numberOfSubunitsElement] ("_numberOfSubunits") Extensions for
   ///  numberOfSubunits
   @JsonKey(name: '_numberOfSubunits')
-  Element? get numberOfSubunitsElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get numberOfSubunitsElement =>
+      throw _privateConstructorUsedError;
 
   /// [disulfideLinkage] The disulphide bond between two cysteine residues either
   ///  on the same subunit or on two different subunits shall be described. The
@@ -40729,16 +40823,17 @@ abstract class $SubstanceProteinCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       CodeableConcept? sequenceType,
       FhirInteger? numberOfSubunits,
-      @JsonKey(name: '_numberOfSubunits') Element? numberOfSubunitsElement,
+      @JsonKey(name: '_numberOfSubunits')
+      PrimitiveElement? numberOfSubunitsElement,
       List<String>? disulfideLinkage,
       @JsonKey(name: '_disulfideLinkage')
       List<Element>? disulfideLinkageElement,
@@ -40800,7 +40895,7 @@ class _$SubstanceProteinCopyWithImpl<$Res, $Val extends SubstanceProtein>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -40808,7 +40903,7 @@ class _$SubstanceProteinCopyWithImpl<$Res, $Val extends SubstanceProtein>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -40836,7 +40931,7 @@ class _$SubstanceProteinCopyWithImpl<$Res, $Val extends SubstanceProtein>
       numberOfSubunitsElement: freezed == numberOfSubunitsElement
           ? _value.numberOfSubunitsElement
           : numberOfSubunitsElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       disulfideLinkage: freezed == disulfideLinkage
           ? _value.disulfideLinkage
           : disulfideLinkage // ignore: cast_nullable_to_non_nullable
@@ -40903,16 +40998,17 @@ abstract class _$$SubstanceProteinImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       CodeableConcept? sequenceType,
       FhirInteger? numberOfSubunits,
-      @JsonKey(name: '_numberOfSubunits') Element? numberOfSubunitsElement,
+      @JsonKey(name: '_numberOfSubunits')
+      PrimitiveElement? numberOfSubunitsElement,
       List<String>? disulfideLinkage,
       @JsonKey(name: '_disulfideLinkage')
       List<Element>? disulfideLinkageElement,
@@ -40975,7 +41071,7 @@ class __$$SubstanceProteinImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -40983,7 +41079,7 @@ class __$$SubstanceProteinImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -41011,7 +41107,7 @@ class __$$SubstanceProteinImplCopyWithImpl<$Res>
       numberOfSubunitsElement: freezed == numberOfSubunitsElement
           ? _value.numberOfSubunitsElement
           : numberOfSubunitsElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       disulfideLinkage: freezed == disulfideLinkage
           ? _value._disulfideLinkage
           : disulfideLinkage // ignore: cast_nullable_to_non_nullable
@@ -41088,7 +41184,7 @@ class _$SubstanceProteinImpl extends _SubstanceProtein {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -41097,7 +41193,7 @@ class _$SubstanceProteinImpl extends _SubstanceProtein {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -41206,7 +41302,7 @@ class _$SubstanceProteinImpl extends _SubstanceProtein {
   ///  numberOfSubunits
   @override
   @JsonKey(name: '_numberOfSubunits')
-  final Element? numberOfSubunitsElement;
+  final PrimitiveElement? numberOfSubunitsElement;
 
   /// [disulfideLinkage] The disulphide bond between two cysteine residues either
   ///  on the same subunit or on two different subunits shall be described. The
@@ -41365,9 +41461,10 @@ abstract class _SubstanceProtein extends SubstanceProtein {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
@@ -41375,7 +41472,7 @@ abstract class _SubstanceProtein extends SubstanceProtein {
       final CodeableConcept? sequenceType,
       final FhirInteger? numberOfSubunits,
       @JsonKey(name: '_numberOfSubunits')
-      final Element? numberOfSubunitsElement,
+      final PrimitiveElement? numberOfSubunitsElement,
       final List<String>? disulfideLinkage,
       @JsonKey(name: '_disulfideLinkage')
       final List<Element>? disulfideLinkageElement,
@@ -41412,7 +41509,7 @@ abstract class _SubstanceProtein extends SubstanceProtein {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -41421,7 +41518,7 @@ abstract class _SubstanceProtein extends SubstanceProtein {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -41482,7 +41579,7 @@ abstract class _SubstanceProtein extends SubstanceProtein {
   /// [numberOfSubunitsElement] ("_numberOfSubunits") Extensions for
   ///  numberOfSubunits
   @JsonKey(name: '_numberOfSubunits')
-  Element? get numberOfSubunitsElement;
+  PrimitiveElement? get numberOfSubunitsElement;
   @override
 
   /// [disulfideLinkage] The disulphide bond between two cysteine residues either
@@ -41559,7 +41656,7 @@ mixin _$SubstanceProteinSubunit {
 
   /// [subunitElement] ("_subunit") Extensions for subunit
   @JsonKey(name: '_subunit')
-  Element? get subunitElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get subunitElement => throw _privateConstructorUsedError;
 
   /// [sequence] The sequence information shall be provided enumerating the amino
   ///  acids from N- to C-terminal end using standard single-letter amino acid
@@ -41573,14 +41670,14 @@ mixin _$SubstanceProteinSubunit {
 
   /// [sequenceElement] ("_sequence") Extensions for sequence
   @JsonKey(name: '_sequence')
-  Element? get sequenceElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get sequenceElement => throw _privateConstructorUsedError;
 
   /// [length] Length of linear sequences of amino acids contained in the subunit.
   FhirInteger? get length => throw _privateConstructorUsedError;
 
   /// [lengthElement] ("_length") Extensions for length
   @JsonKey(name: '_length')
-  Element? get lengthElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get lengthElement => throw _privateConstructorUsedError;
 
   /// [sequenceAttachment] The sequence information shall be provided enumerating
   ///  the amino acids from N- to C-terminal end using standard single-letter
@@ -41603,7 +41700,7 @@ mixin _$SubstanceProteinSubunit {
   /// [nTerminalModificationElement] ("_nTerminalModification") Extensions for
   ///  nTerminalModification
   @JsonKey(name: '_nTerminalModification')
-  Element? get nTerminalModificationElement =>
+  PrimitiveElement? get nTerminalModificationElement =>
       throw _privateConstructorUsedError;
 
   /// [cTerminalModificationId] Unique identifier for molecular fragment
@@ -41617,7 +41714,7 @@ mixin _$SubstanceProteinSubunit {
   /// [cTerminalModificationElement] ("_cTerminalModification") Extensions for
   ///  cTerminalModification
   @JsonKey(name: '_cTerminalModification')
-  Element? get cTerminalModificationElement =>
+  PrimitiveElement? get cTerminalModificationElement =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -41637,20 +41734,20 @@ abstract class $SubstanceProteinSubunitCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirInteger? subunit,
-      @JsonKey(name: '_subunit') Element? subunitElement,
+      @JsonKey(name: '_subunit') PrimitiveElement? subunitElement,
       String? sequence,
-      @JsonKey(name: '_sequence') Element? sequenceElement,
+      @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
       FhirInteger? length,
-      @JsonKey(name: '_length') Element? lengthElement,
+      @JsonKey(name: '_length') PrimitiveElement? lengthElement,
       Attachment? sequenceAttachment,
       Identifier? nTerminalModificationId,
       String? nTerminalModification,
       @JsonKey(name: '_nTerminalModification')
-      Element? nTerminalModificationElement,
+      PrimitiveElement? nTerminalModificationElement,
       Identifier? cTerminalModificationId,
       String? cTerminalModification,
       @JsonKey(name: '_cTerminalModification')
-      Element? cTerminalModificationElement});
+      PrimitiveElement? cTerminalModificationElement});
 
   $AttachmentCopyWith<$Res>? get sequenceAttachment;
   $IdentifierCopyWith<$Res>? get nTerminalModificationId;
@@ -41708,7 +41805,7 @@ class _$SubstanceProteinSubunitCopyWithImpl<$Res,
       subunitElement: freezed == subunitElement
           ? _value.subunitElement
           : subunitElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sequence: freezed == sequence
           ? _value.sequence
           : sequence // ignore: cast_nullable_to_non_nullable
@@ -41716,7 +41813,7 @@ class _$SubstanceProteinSubunitCopyWithImpl<$Res,
       sequenceElement: freezed == sequenceElement
           ? _value.sequenceElement
           : sequenceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       length: freezed == length
           ? _value.length
           : length // ignore: cast_nullable_to_non_nullable
@@ -41724,7 +41821,7 @@ class _$SubstanceProteinSubunitCopyWithImpl<$Res,
       lengthElement: freezed == lengthElement
           ? _value.lengthElement
           : lengthElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sequenceAttachment: freezed == sequenceAttachment
           ? _value.sequenceAttachment
           : sequenceAttachment // ignore: cast_nullable_to_non_nullable
@@ -41740,7 +41837,7 @@ class _$SubstanceProteinSubunitCopyWithImpl<$Res,
       nTerminalModificationElement: freezed == nTerminalModificationElement
           ? _value.nTerminalModificationElement
           : nTerminalModificationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       cTerminalModificationId: freezed == cTerminalModificationId
           ? _value.cTerminalModificationId
           : cTerminalModificationId // ignore: cast_nullable_to_non_nullable
@@ -41752,7 +41849,7 @@ class _$SubstanceProteinSubunitCopyWithImpl<$Res,
       cTerminalModificationElement: freezed == cTerminalModificationElement
           ? _value.cTerminalModificationElement
           : cTerminalModificationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -41807,20 +41904,20 @@ abstract class _$$SubstanceProteinSubunitImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       FhirInteger? subunit,
-      @JsonKey(name: '_subunit') Element? subunitElement,
+      @JsonKey(name: '_subunit') PrimitiveElement? subunitElement,
       String? sequence,
-      @JsonKey(name: '_sequence') Element? sequenceElement,
+      @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
       FhirInteger? length,
-      @JsonKey(name: '_length') Element? lengthElement,
+      @JsonKey(name: '_length') PrimitiveElement? lengthElement,
       Attachment? sequenceAttachment,
       Identifier? nTerminalModificationId,
       String? nTerminalModification,
       @JsonKey(name: '_nTerminalModification')
-      Element? nTerminalModificationElement,
+      PrimitiveElement? nTerminalModificationElement,
       Identifier? cTerminalModificationId,
       String? cTerminalModification,
       @JsonKey(name: '_cTerminalModification')
-      Element? cTerminalModificationElement});
+      PrimitiveElement? cTerminalModificationElement});
 
   @override
   $AttachmentCopyWith<$Res>? get sequenceAttachment;
@@ -41880,7 +41977,7 @@ class __$$SubstanceProteinSubunitImplCopyWithImpl<$Res>
       subunitElement: freezed == subunitElement
           ? _value.subunitElement
           : subunitElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sequence: freezed == sequence
           ? _value.sequence
           : sequence // ignore: cast_nullable_to_non_nullable
@@ -41888,7 +41985,7 @@ class __$$SubstanceProteinSubunitImplCopyWithImpl<$Res>
       sequenceElement: freezed == sequenceElement
           ? _value.sequenceElement
           : sequenceElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       length: freezed == length
           ? _value.length
           : length // ignore: cast_nullable_to_non_nullable
@@ -41896,7 +41993,7 @@ class __$$SubstanceProteinSubunitImplCopyWithImpl<$Res>
       lengthElement: freezed == lengthElement
           ? _value.lengthElement
           : lengthElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       sequenceAttachment: freezed == sequenceAttachment
           ? _value.sequenceAttachment
           : sequenceAttachment // ignore: cast_nullable_to_non_nullable
@@ -41912,7 +42009,7 @@ class __$$SubstanceProteinSubunitImplCopyWithImpl<$Res>
       nTerminalModificationElement: freezed == nTerminalModificationElement
           ? _value.nTerminalModificationElement
           : nTerminalModificationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       cTerminalModificationId: freezed == cTerminalModificationId
           ? _value.cTerminalModificationId
           : cTerminalModificationId // ignore: cast_nullable_to_non_nullable
@@ -41924,7 +42021,7 @@ class __$$SubstanceProteinSubunitImplCopyWithImpl<$Res>
       cTerminalModificationElement: freezed == cTerminalModificationElement
           ? _value.cTerminalModificationElement
           : cTerminalModificationElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -42033,7 +42130,7 @@ class _$SubstanceProteinSubunitImpl extends _SubstanceProteinSubunit {
   /// [subunitElement] ("_subunit") Extensions for subunit
   @override
   @JsonKey(name: '_subunit')
-  final Element? subunitElement;
+  final PrimitiveElement? subunitElement;
 
   /// [sequence] The sequence information shall be provided enumerating the amino
   ///  acids from N- to C-terminal end using standard single-letter amino acid
@@ -42049,7 +42146,7 @@ class _$SubstanceProteinSubunitImpl extends _SubstanceProteinSubunit {
   /// [sequenceElement] ("_sequence") Extensions for sequence
   @override
   @JsonKey(name: '_sequence')
-  final Element? sequenceElement;
+  final PrimitiveElement? sequenceElement;
 
   /// [length] Length of linear sequences of amino acids contained in the subunit.
   @override
@@ -42058,7 +42155,7 @@ class _$SubstanceProteinSubunitImpl extends _SubstanceProteinSubunit {
   /// [lengthElement] ("_length") Extensions for length
   @override
   @JsonKey(name: '_length')
-  final Element? lengthElement;
+  final PrimitiveElement? lengthElement;
 
   /// [sequenceAttachment] The sequence information shall be provided enumerating
   ///  the amino acids from N- to C-terminal end using standard single-letter
@@ -42085,7 +42182,7 @@ class _$SubstanceProteinSubunitImpl extends _SubstanceProteinSubunit {
   ///  nTerminalModification
   @override
   @JsonKey(name: '_nTerminalModification')
-  final Element? nTerminalModificationElement;
+  final PrimitiveElement? nTerminalModificationElement;
 
   /// [cTerminalModificationId] Unique identifier for molecular fragment
   ///  modification based on the ISO 11238 Substance ID.
@@ -42101,7 +42198,7 @@ class _$SubstanceProteinSubunitImpl extends _SubstanceProteinSubunit {
   ///  cTerminalModification
   @override
   @JsonKey(name: '_cTerminalModification')
-  final Element? cTerminalModificationElement;
+  final PrimitiveElement? cTerminalModificationElement;
 
   @override
   String toString() {
@@ -42192,20 +42289,20 @@ abstract class _SubstanceProteinSubunit extends SubstanceProteinSubunit {
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final FhirInteger? subunit,
-          @JsonKey(name: '_subunit') final Element? subunitElement,
+          @JsonKey(name: '_subunit') final PrimitiveElement? subunitElement,
           final String? sequence,
-          @JsonKey(name: '_sequence') final Element? sequenceElement,
+          @JsonKey(name: '_sequence') final PrimitiveElement? sequenceElement,
           final FhirInteger? length,
-          @JsonKey(name: '_length') final Element? lengthElement,
+          @JsonKey(name: '_length') final PrimitiveElement? lengthElement,
           final Attachment? sequenceAttachment,
           final Identifier? nTerminalModificationId,
           final String? nTerminalModification,
           @JsonKey(name: '_nTerminalModification')
-          final Element? nTerminalModificationElement,
+          final PrimitiveElement? nTerminalModificationElement,
           final Identifier? cTerminalModificationId,
           final String? cTerminalModification,
           @JsonKey(name: '_cTerminalModification')
-          final Element? cTerminalModificationElement}) =
+          final PrimitiveElement? cTerminalModificationElement}) =
       _$SubstanceProteinSubunitImpl;
   const _SubstanceProteinSubunit._() : super._();
 
@@ -42253,7 +42350,7 @@ abstract class _SubstanceProteinSubunit extends SubstanceProteinSubunit {
 
   /// [subunitElement] ("_subunit") Extensions for subunit
   @JsonKey(name: '_subunit')
-  Element? get subunitElement;
+  PrimitiveElement? get subunitElement;
   @override
 
   /// [sequence] The sequence information shall be provided enumerating the amino
@@ -42269,7 +42366,7 @@ abstract class _SubstanceProteinSubunit extends SubstanceProteinSubunit {
 
   /// [sequenceElement] ("_sequence") Extensions for sequence
   @JsonKey(name: '_sequence')
-  Element? get sequenceElement;
+  PrimitiveElement? get sequenceElement;
   @override
 
   /// [length] Length of linear sequences of amino acids contained in the subunit.
@@ -42278,7 +42375,7 @@ abstract class _SubstanceProteinSubunit extends SubstanceProteinSubunit {
 
   /// [lengthElement] ("_length") Extensions for length
   @JsonKey(name: '_length')
-  Element? get lengthElement;
+  PrimitiveElement? get lengthElement;
   @override
 
   /// [sequenceAttachment] The sequence information shall be provided enumerating
@@ -42305,7 +42402,7 @@ abstract class _SubstanceProteinSubunit extends SubstanceProteinSubunit {
   /// [nTerminalModificationElement] ("_nTerminalModification") Extensions for
   ///  nTerminalModification
   @JsonKey(name: '_nTerminalModification')
-  Element? get nTerminalModificationElement;
+  PrimitiveElement? get nTerminalModificationElement;
   @override
 
   /// [cTerminalModificationId] Unique identifier for molecular fragment
@@ -42321,7 +42418,7 @@ abstract class _SubstanceProteinSubunit extends SubstanceProteinSubunit {
   /// [cTerminalModificationElement] ("_cTerminalModification") Extensions for
   ///  cTerminalModification
   @JsonKey(name: '_cTerminalModification')
-  Element? get cTerminalModificationElement;
+  PrimitiveElement? get cTerminalModificationElement;
   @override
   @JsonKey(ignore: true)
   _$$SubstanceProteinSubunitImplCopyWith<_$SubstanceProteinSubunitImpl>
@@ -42356,14 +42453,15 @@ mixin _$SubstanceReferenceInformation {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -42409,7 +42507,7 @@ mixin _$SubstanceReferenceInformation {
 
   /// [commentElement] ("_comment") Extensions for comment
   @JsonKey(name: '_comment')
-  Element? get commentElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get commentElement => throw _privateConstructorUsedError;
 
   /// [gene] FhirTodo.
   List<SubstanceReferenceInformationGene>? get gene =>
@@ -42443,15 +42541,15 @@ abstract class $SubstanceReferenceInformationCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? comment,
-      @JsonKey(name: '_comment') Element? commentElement,
+      @JsonKey(name: '_comment') PrimitiveElement? commentElement,
       List<SubstanceReferenceInformationGene>? gene,
       List<SubstanceReferenceInformationGeneElement>? geneElement,
       List<SubstanceReferenceInformationTarget>? target});
@@ -42511,7 +42609,7 @@ class _$SubstanceReferenceInformationCopyWithImpl<$Res,
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -42519,7 +42617,7 @@ class _$SubstanceReferenceInformationCopyWithImpl<$Res,
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -42543,7 +42641,7 @@ class _$SubstanceReferenceInformationCopyWithImpl<$Res,
       commentElement: freezed == commentElement
           ? _value.commentElement
           : commentElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       gene: freezed == gene
           ? _value.gene
           : gene // ignore: cast_nullable_to_non_nullable
@@ -42599,15 +42697,15 @@ abstract class _$$SubstanceReferenceInformationImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? comment,
-      @JsonKey(name: '_comment') Element? commentElement,
+      @JsonKey(name: '_comment') PrimitiveElement? commentElement,
       List<SubstanceReferenceInformationGene>? gene,
       List<SubstanceReferenceInformationGeneElement>? geneElement,
       List<SubstanceReferenceInformationTarget>? target});
@@ -42668,7 +42766,7 @@ class __$$SubstanceReferenceInformationImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -42676,7 +42774,7 @@ class __$$SubstanceReferenceInformationImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -42700,7 +42798,7 @@ class __$$SubstanceReferenceInformationImplCopyWithImpl<$Res>
       commentElement: freezed == commentElement
           ? _value.commentElement
           : commentElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       gene: freezed == gene
           ? _value._gene
           : gene // ignore: cast_nullable_to_non_nullable
@@ -42777,7 +42875,7 @@ class _$SubstanceReferenceInformationImpl
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -42786,7 +42884,7 @@ class _$SubstanceReferenceInformationImpl
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -42885,7 +42983,7 @@ class _$SubstanceReferenceInformationImpl
   /// [commentElement] ("_comment") Extensions for comment
   @override
   @JsonKey(name: '_comment')
-  final Element? commentElement;
+  final PrimitiveElement? commentElement;
 
   /// [gene] FhirTodo.
   final List<SubstanceReferenceInformationGene>? _gene;
@@ -43010,15 +43108,16 @@ abstract class _SubstanceReferenceInformation
           final FhirId? id,
           final FhirMeta? meta,
           final FhirUri? implicitRules,
-          @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+          @JsonKey(name: '_implicitRules')
+          final PrimitiveElement? implicitRulesElement,
           final FhirCode? language,
-          @JsonKey(name: '_language') final Element? languageElement,
+          @JsonKey(name: '_language') final PrimitiveElement? languageElement,
           final Narrative? text,
           final List<Resource>? contained,
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final String? comment,
-          @JsonKey(name: '_comment') final Element? commentElement,
+          @JsonKey(name: '_comment') final PrimitiveElement? commentElement,
           final List<SubstanceReferenceInformationGene>? gene,
           final List<SubstanceReferenceInformationGeneElement>? geneElement,
           final List<SubstanceReferenceInformationTarget>? target}) =
@@ -43055,7 +43154,7 @@ abstract class _SubstanceReferenceInformation
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -43064,7 +43163,7 @@ abstract class _SubstanceReferenceInformation
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -43115,7 +43214,7 @@ abstract class _SubstanceReferenceInformation
 
   /// [commentElement] ("_comment") Extensions for comment
   @JsonKey(name: '_comment')
-  Element? get commentElement;
+  PrimitiveElement? get commentElement;
   @override
 
   /// [gene] FhirTodo.
@@ -44068,7 +44167,8 @@ mixin _$SubstanceReferenceInformationTarget {
 
   /// [amountStringElement] ("_amountString") Extensions for amountString
   @JsonKey(name: '_amountString')
-  Element? get amountStringElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get amountStringElement =>
+      throw _privateConstructorUsedError;
 
   /// [amountType] FhirTodo.
   CodeableConcept? get amountType => throw _privateConstructorUsedError;
@@ -44103,7 +44203,7 @@ abstract class $SubstanceReferenceInformationTargetCopyWith<$Res> {
       Quantity? amountQuantity,
       Range? amountRange,
       String? amountString,
-      @JsonKey(name: '_amountString') Element? amountStringElement,
+      @JsonKey(name: '_amountString') PrimitiveElement? amountStringElement,
       CodeableConcept? amountType,
       List<Reference>? source});
 
@@ -44194,7 +44294,7 @@ class _$SubstanceReferenceInformationTargetCopyWithImpl<$Res,
       amountStringElement: freezed == amountStringElement
           ? _value.amountStringElement
           : amountStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       amountType: freezed == amountType
           ? _value.amountType
           : amountType // ignore: cast_nullable_to_non_nullable
@@ -44324,7 +44424,7 @@ abstract class _$$SubstanceReferenceInformationTargetImplCopyWith<$Res>
       Quantity? amountQuantity,
       Range? amountRange,
       String? amountString,
-      @JsonKey(name: '_amountString') Element? amountStringElement,
+      @JsonKey(name: '_amountString') PrimitiveElement? amountStringElement,
       CodeableConcept? amountType,
       List<Reference>? source});
 
@@ -44422,7 +44522,7 @@ class __$$SubstanceReferenceInformationTargetImplCopyWithImpl<$Res>
       amountStringElement: freezed == amountStringElement
           ? _value.amountStringElement
           : amountStringElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       amountType: freezed == amountType
           ? _value.amountType
           : amountType // ignore: cast_nullable_to_non_nullable
@@ -44563,7 +44663,7 @@ class _$SubstanceReferenceInformationTargetImpl
   /// [amountStringElement] ("_amountString") Extensions for amountString
   @override
   @JsonKey(name: '_amountString')
-  final Element? amountStringElement;
+  final PrimitiveElement? amountStringElement;
 
   /// [amountType] FhirTodo.
   @override
@@ -44667,7 +44767,8 @@ abstract class _SubstanceReferenceInformationTarget
           final Quantity? amountQuantity,
           final Range? amountRange,
           final String? amountString,
-          @JsonKey(name: '_amountString') final Element? amountStringElement,
+          @JsonKey(name: '_amountString')
+          final PrimitiveElement? amountStringElement,
           final CodeableConcept? amountType,
           final List<Reference>? source}) =
       _$SubstanceReferenceInformationTargetImpl;
@@ -44743,7 +44844,7 @@ abstract class _SubstanceReferenceInformationTarget
 
   /// [amountStringElement] ("_amountString") Extensions for amountString
   @JsonKey(name: '_amountString')
-  Element? get amountStringElement;
+  PrimitiveElement? get amountStringElement;
   @override
 
   /// [amountType] FhirTodo.
@@ -44787,14 +44888,15 @@ mixin _$SubstanceSourceMaterial {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get implicitRulesElement =>
+      throw _privateConstructorUsedError;
 
   /// [language] The base language in which the resource is written.
   FhirCode? get language => throw _privateConstructorUsedError;
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get languageElement => throw _privateConstructorUsedError;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -44859,7 +44961,8 @@ mixin _$SubstanceSourceMaterial {
 
   /// [organismNameElement] ("_organismName") Extensions for organismName
   @JsonKey(name: '_organismName')
-  Element? get organismNameElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get organismNameElement =>
+      throw _privateConstructorUsedError;
 
   /// [parentSubstanceId] The parent of the herbal drug Ginkgo biloba, Leaf is
   ///  the substance ID of the substance (fresh) of Ginkgo biloba L. or Ginkgo
@@ -44940,9 +45043,9 @@ abstract class $SubstanceSourceMaterialCopyWith<$Res> {
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -44952,7 +45055,7 @@ abstract class $SubstanceSourceMaterialCopyWith<$Res> {
       CodeableConcept? sourceMaterialState,
       Identifier? organismId,
       String? organismName,
-      @JsonKey(name: '_organismName') Element? organismNameElement,
+      @JsonKey(name: '_organismName') PrimitiveElement? organismNameElement,
       List<Identifier>? parentSubstanceId,
       List<String>? parentSubstanceName,
       @JsonKey(name: '_parentSubstanceName')
@@ -45038,7 +45141,7 @@ class _$SubstanceSourceMaterialCopyWithImpl<$Res,
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -45046,7 +45149,7 @@ class _$SubstanceSourceMaterialCopyWithImpl<$Res,
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -45086,7 +45189,7 @@ class _$SubstanceSourceMaterialCopyWithImpl<$Res,
       organismNameElement: freezed == organismNameElement
           ? _value.organismNameElement
           : organismNameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       parentSubstanceId: freezed == parentSubstanceId
           ? _value.parentSubstanceId
           : parentSubstanceId // ignore: cast_nullable_to_non_nullable
@@ -45243,9 +45346,9 @@ abstract class _$$SubstanceSourceMaterialImplCopyWith<$Res>
       FhirId? id,
       FhirMeta? meta,
       FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
       FhirCode? language,
-      @JsonKey(name: '_language') Element? languageElement,
+      @JsonKey(name: '_language') PrimitiveElement? languageElement,
       Narrative? text,
       List<Resource>? contained,
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
@@ -45255,7 +45358,7 @@ abstract class _$$SubstanceSourceMaterialImplCopyWith<$Res>
       CodeableConcept? sourceMaterialState,
       Identifier? organismId,
       String? organismName,
-      @JsonKey(name: '_organismName') Element? organismNameElement,
+      @JsonKey(name: '_organismName') PrimitiveElement? organismNameElement,
       List<Identifier>? parentSubstanceId,
       List<String>? parentSubstanceName,
       @JsonKey(name: '_parentSubstanceName')
@@ -45348,7 +45451,7 @@ class __$$SubstanceSourceMaterialImplCopyWithImpl<$Res>
       implicitRulesElement: freezed == implicitRulesElement
           ? _value.implicitRulesElement
           : implicitRulesElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       language: freezed == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
@@ -45356,7 +45459,7 @@ class __$$SubstanceSourceMaterialImplCopyWithImpl<$Res>
       languageElement: freezed == languageElement
           ? _value.languageElement
           : languageElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
@@ -45396,7 +45499,7 @@ class __$$SubstanceSourceMaterialImplCopyWithImpl<$Res>
       organismNameElement: freezed == organismNameElement
           ? _value.organismNameElement
           : organismNameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       parentSubstanceId: freezed == parentSubstanceId
           ? _value._parentSubstanceId
           : parentSubstanceId // ignore: cast_nullable_to_non_nullable
@@ -45518,7 +45621,7 @@ class _$SubstanceSourceMaterialImpl extends _SubstanceSourceMaterial {
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
   @JsonKey(name: '_implicitRules')
-  final Element? implicitRulesElement;
+  final PrimitiveElement? implicitRulesElement;
 
   /// [language] The base language in which the resource is written.
   @override
@@ -45527,7 +45630,7 @@ class _$SubstanceSourceMaterialImpl extends _SubstanceSourceMaterial {
   /// [languageElement] ("_language") Extensions for language
   @override
   @JsonKey(name: '_language')
-  final Element? languageElement;
+  final PrimitiveElement? languageElement;
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -45647,7 +45750,7 @@ class _$SubstanceSourceMaterialImpl extends _SubstanceSourceMaterial {
   /// [organismNameElement] ("_organismName") Extensions for organismName
   @override
   @JsonKey(name: '_organismName')
-  final Element? organismNameElement;
+  final PrimitiveElement? organismNameElement;
 
   /// [parentSubstanceId] The parent of the herbal drug Ginkgo biloba, Leaf is
   ///  the substance ID of the substance (fresh) of Ginkgo biloba L. or Ginkgo
@@ -45930,9 +46033,10 @@ abstract class _SubstanceSourceMaterial extends SubstanceSourceMaterial {
       final FhirId? id,
       final FhirMeta? meta,
       final FhirUri? implicitRules,
-      @JsonKey(name: '_implicitRules') final Element? implicitRulesElement,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
       final FhirCode? language,
-      @JsonKey(name: '_language') final Element? languageElement,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
       final Narrative? text,
       final List<Resource>? contained,
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
@@ -45942,7 +46046,8 @@ abstract class _SubstanceSourceMaterial extends SubstanceSourceMaterial {
       final CodeableConcept? sourceMaterialState,
       final Identifier? organismId,
       final String? organismName,
-      @JsonKey(name: '_organismName') final Element? organismNameElement,
+      @JsonKey(name: '_organismName')
+      final PrimitiveElement? organismNameElement,
       final List<Identifier>? parentSubstanceId,
       final List<String>? parentSubstanceName,
       @JsonKey(name: '_parentSubstanceName')
@@ -45989,7 +46094,7 @@ abstract class _SubstanceSourceMaterial extends SubstanceSourceMaterial {
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @JsonKey(name: '_implicitRules')
-  Element? get implicitRulesElement;
+  PrimitiveElement? get implicitRulesElement;
   @override
 
   /// [language] The base language in which the resource is written.
@@ -45998,7 +46103,7 @@ abstract class _SubstanceSourceMaterial extends SubstanceSourceMaterial {
 
   /// [languageElement] ("_language") Extensions for language
   @JsonKey(name: '_language')
-  Element? get languageElement;
+  PrimitiveElement? get languageElement;
   @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -46070,7 +46175,7 @@ abstract class _SubstanceSourceMaterial extends SubstanceSourceMaterial {
 
   /// [organismNameElement] ("_organismName") Extensions for organismName
   @JsonKey(name: '_organismName')
-  Element? get organismNameElement;
+  PrimitiveElement? get organismNameElement;
   @override
 
   /// [parentSubstanceId] The parent of the herbal drug Ginkgo biloba, Leaf is
@@ -46184,7 +46289,7 @@ mixin _$SubstanceSourceMaterialFractionDescription {
 
   /// [fractionElement] ("_fraction") Extensions for fraction
   @JsonKey(name: '_fraction')
-  Element? get fractionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get fractionElement => throw _privateConstructorUsedError;
 
   /// [materialType] The specific type of the material constituting the
   ///  component. For Herbal preparations the particulars of the extracts
@@ -46211,7 +46316,7 @@ abstract class $SubstanceSourceMaterialFractionDescriptionCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? fraction,
-      @JsonKey(name: '_fraction') Element? fractionElement,
+      @JsonKey(name: '_fraction') PrimitiveElement? fractionElement,
       CodeableConcept? materialType});
 
   $CodeableConceptCopyWith<$Res>? get materialType;
@@ -46259,7 +46364,7 @@ class _$SubstanceSourceMaterialFractionDescriptionCopyWithImpl<$Res,
       fractionElement: freezed == fractionElement
           ? _value.fractionElement
           : fractionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       materialType: freezed == materialType
           ? _value.materialType
           : materialType // ignore: cast_nullable_to_non_nullable
@@ -46295,7 +46400,7 @@ abstract class _$$SubstanceSourceMaterialFractionDescriptionImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? fraction,
-      @JsonKey(name: '_fraction') Element? fractionElement,
+      @JsonKey(name: '_fraction') PrimitiveElement? fractionElement,
       CodeableConcept? materialType});
 
   @override
@@ -46342,7 +46447,7 @@ class __$$SubstanceSourceMaterialFractionDescriptionImplCopyWithImpl<$Res>
       fractionElement: freezed == fractionElement
           ? _value.fractionElement
           : fractionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       materialType: freezed == materialType
           ? _value.materialType
           : materialType // ignore: cast_nullable_to_non_nullable
@@ -46443,7 +46548,7 @@ class _$SubstanceSourceMaterialFractionDescriptionImpl
   /// [fractionElement] ("_fraction") Extensions for fraction
   @override
   @JsonKey(name: '_fraction')
-  final Element? fractionElement;
+  final PrimitiveElement? fractionElement;
 
   /// [materialType] The specific type of the material constituting the
   ///  component. For Herbal preparations the particulars of the extracts
@@ -46510,7 +46615,7 @@ abstract class _SubstanceSourceMaterialFractionDescription
           @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
           final List<FhirExtension>? modifierExtension,
           final String? fraction,
-          @JsonKey(name: '_fraction') final Element? fractionElement,
+          @JsonKey(name: '_fraction') final PrimitiveElement? fractionElement,
           final CodeableConcept? materialType}) =
       _$SubstanceSourceMaterialFractionDescriptionImpl;
   const _SubstanceSourceMaterialFractionDescription._() : super._();
@@ -46558,7 +46663,7 @@ abstract class _SubstanceSourceMaterialFractionDescription
 
   /// [fractionElement] ("_fraction") Extensions for fraction
   @JsonKey(name: '_fraction')
-  Element? get fractionElement;
+  PrimitiveElement? get fractionElement;
   @override
 
   /// [materialType] The specific type of the material constituting the
@@ -46633,7 +46738,7 @@ mixin _$SubstanceSourceMaterialOrganism {
   /// [intraspecificDescriptionElement] ("_intraspecificDescription") Extensions
   ///  for intraspecificDescription
   @JsonKey(name: '_intraspecificDescription')
-  Element? get intraspecificDescriptionElement =>
+  PrimitiveElement? get intraspecificDescriptionElement =>
       throw _privateConstructorUsedError;
 
   /// [author] 4.9.13.6.1 Author type (Conditional).
@@ -46672,7 +46777,7 @@ abstract class $SubstanceSourceMaterialOrganismCopyWith<$Res> {
       CodeableConcept? intraspecificType,
       String? intraspecificDescription,
       @JsonKey(name: '_intraspecificDescription')
-      Element? intraspecificDescriptionElement,
+      PrimitiveElement? intraspecificDescriptionElement,
       List<SubstanceSourceMaterialAuthor>? author,
       SubstanceSourceMaterialHybrid? hybrid,
       SubstanceSourceMaterialOrganismGeneral? organismGeneral});
@@ -46749,7 +46854,7 @@ class _$SubstanceSourceMaterialOrganismCopyWithImpl<$Res,
               intraspecificDescriptionElement
           ? _value.intraspecificDescriptionElement
           : intraspecificDescriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       author: freezed == author
           ? _value.author
           : author // ignore: cast_nullable_to_non_nullable
@@ -46859,7 +46964,7 @@ abstract class _$$SubstanceSourceMaterialOrganismImplCopyWith<$Res>
       CodeableConcept? intraspecificType,
       String? intraspecificDescription,
       @JsonKey(name: '_intraspecificDescription')
-      Element? intraspecificDescriptionElement,
+      PrimitiveElement? intraspecificDescriptionElement,
       List<SubstanceSourceMaterialAuthor>? author,
       SubstanceSourceMaterialHybrid? hybrid,
       SubstanceSourceMaterialOrganismGeneral? organismGeneral});
@@ -46941,7 +47046,7 @@ class __$$SubstanceSourceMaterialOrganismImplCopyWithImpl<$Res>
               intraspecificDescriptionElement
           ? _value.intraspecificDescriptionElement
           : intraspecificDescriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       author: freezed == author
           ? _value._author
           : author // ignore: cast_nullable_to_non_nullable
@@ -47082,7 +47187,7 @@ class _$SubstanceSourceMaterialOrganismImpl
   ///  for intraspecificDescription
   @override
   @JsonKey(name: '_intraspecificDescription')
-  final Element? intraspecificDescriptionElement;
+  final PrimitiveElement? intraspecificDescriptionElement;
 
   /// [author] 4.9.13.6.1 Author type (Conditional).
   final List<SubstanceSourceMaterialAuthor>? _author;
@@ -47183,7 +47288,7 @@ abstract class _SubstanceSourceMaterialOrganism
           final CodeableConcept? intraspecificType,
           final String? intraspecificDescription,
           @JsonKey(name: '_intraspecificDescription')
-          final Element? intraspecificDescriptionElement,
+          final PrimitiveElement? intraspecificDescriptionElement,
           final List<SubstanceSourceMaterialAuthor>? author,
           final SubstanceSourceMaterialHybrid? hybrid,
           final SubstanceSourceMaterialOrganismGeneral? organismGeneral}) =
@@ -47256,7 +47361,7 @@ abstract class _SubstanceSourceMaterialOrganism
   /// [intraspecificDescriptionElement] ("_intraspecificDescription") Extensions
   ///  for intraspecificDescription
   @JsonKey(name: '_intraspecificDescription')
-  Element? get intraspecificDescriptionElement;
+  PrimitiveElement? get intraspecificDescriptionElement;
   @override
 
   /// [author] 4.9.13.6.1 Author type (Conditional).
@@ -47327,7 +47432,8 @@ mixin _$SubstanceSourceMaterialAuthor {
   /// [authorDescriptionElement] ("_authorDescription") Extensions for
   ///  authorDescription
   @JsonKey(name: '_authorDescription')
-  Element? get authorDescriptionElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get authorDescriptionElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -47349,7 +47455,8 @@ abstract class $SubstanceSourceMaterialAuthorCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       CodeableConcept? authorType,
       String? authorDescription,
-      @JsonKey(name: '_authorDescription') Element? authorDescriptionElement});
+      @JsonKey(name: '_authorDescription')
+      PrimitiveElement? authorDescriptionElement});
 
   $CodeableConceptCopyWith<$Res>? get authorType;
 }
@@ -47399,7 +47506,7 @@ class _$SubstanceSourceMaterialAuthorCopyWithImpl<$Res,
       authorDescriptionElement: freezed == authorDescriptionElement
           ? _value.authorDescriptionElement
           : authorDescriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ) as $Val);
   }
 
@@ -47431,7 +47538,8 @@ abstract class _$$SubstanceSourceMaterialAuthorImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       CodeableConcept? authorType,
       String? authorDescription,
-      @JsonKey(name: '_authorDescription') Element? authorDescriptionElement});
+      @JsonKey(name: '_authorDescription')
+      PrimitiveElement? authorDescriptionElement});
 
   @override
   $CodeableConceptCopyWith<$Res>? get authorType;
@@ -47481,7 +47589,7 @@ class __$$SubstanceSourceMaterialAuthorImplCopyWithImpl<$Res>
       authorDescriptionElement: freezed == authorDescriptionElement
           ? _value.authorDescriptionElement
           : authorDescriptionElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
     ));
   }
 }
@@ -47589,7 +47697,7 @@ class _$SubstanceSourceMaterialAuthorImpl
   ///  authorDescription
   @override
   @JsonKey(name: '_authorDescription')
-  final Element? authorDescriptionElement;
+  final PrimitiveElement? authorDescriptionElement;
 
   @override
   String toString() {
@@ -47651,7 +47759,7 @@ abstract class _SubstanceSourceMaterialAuthor
           final CodeableConcept? authorType,
           final String? authorDescription,
           @JsonKey(name: '_authorDescription')
-          final Element? authorDescriptionElement}) =
+          final PrimitiveElement? authorDescriptionElement}) =
       _$SubstanceSourceMaterialAuthorImpl;
   const _SubstanceSourceMaterialAuthor._() : super._();
 
@@ -47708,7 +47816,7 @@ abstract class _SubstanceSourceMaterialAuthor
   /// [authorDescriptionElement] ("_authorDescription") Extensions for
   ///  authorDescription
   @JsonKey(name: '_authorDescription')
-  Element? get authorDescriptionElement;
+  PrimitiveElement? get authorDescriptionElement;
   @override
   @JsonKey(ignore: true)
   _$$SubstanceSourceMaterialAuthorImplCopyWith<
@@ -47760,7 +47868,8 @@ mixin _$SubstanceSourceMaterialHybrid {
   /// [maternalOrganismIdElement] ("_maternalOrganismId") Extensions for
   ///  maternalOrganismId
   @JsonKey(name: '_maternalOrganismId')
-  Element? get maternalOrganismIdElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get maternalOrganismIdElement =>
+      throw _privateConstructorUsedError;
 
   /// [maternalOrganismName] The name of the maternal species constituting the
   ///  hybrid organism shall be specified. For plants, the parents aren’t always
@@ -47771,7 +47880,7 @@ mixin _$SubstanceSourceMaterialHybrid {
   /// [maternalOrganismNameElement] ("_maternalOrganismName") Extensions for
   ///  maternalOrganismName
   @JsonKey(name: '_maternalOrganismName')
-  Element? get maternalOrganismNameElement =>
+  PrimitiveElement? get maternalOrganismNameElement =>
       throw _privateConstructorUsedError;
 
   /// [paternalOrganismId] The identifier of the paternal species constituting
@@ -47781,7 +47890,8 @@ mixin _$SubstanceSourceMaterialHybrid {
   /// [paternalOrganismIdElement] ("_paternalOrganismId") Extensions for
   ///  paternalOrganismId
   @JsonKey(name: '_paternalOrganismId')
-  Element? get paternalOrganismIdElement => throw _privateConstructorUsedError;
+  PrimitiveElement? get paternalOrganismIdElement =>
+      throw _privateConstructorUsedError;
 
   /// [paternalOrganismName] The name of the paternal species constituting the
   ///  hybrid organism shall be specified.
@@ -47790,7 +47900,7 @@ mixin _$SubstanceSourceMaterialHybrid {
   /// [paternalOrganismNameElement] ("_paternalOrganismName") Extensions for
   ///  paternalOrganismName
   @JsonKey(name: '_paternalOrganismName')
-  Element? get paternalOrganismNameElement =>
+  PrimitiveElement? get paternalOrganismNameElement =>
       throw _privateConstructorUsedError;
 
   /// [hybridType] The hybrid type of an organism shall be specified.
@@ -47815,15 +47925,17 @@ abstract class $SubstanceSourceMaterialHybridCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? maternalOrganismId,
-      @JsonKey(name: '_maternalOrganismId') Element? maternalOrganismIdElement,
+      @JsonKey(name: '_maternalOrganismId')
+      PrimitiveElement? maternalOrganismIdElement,
       String? maternalOrganismName,
       @JsonKey(name: '_maternalOrganismName')
-      Element? maternalOrganismNameElement,
+      PrimitiveElement? maternalOrganismNameElement,
       String? paternalOrganismId,
-      @JsonKey(name: '_paternalOrganismId') Element? paternalOrganismIdElement,
+      @JsonKey(name: '_paternalOrganismId')
+      PrimitiveElement? paternalOrganismIdElement,
       String? paternalOrganismName,
       @JsonKey(name: '_paternalOrganismName')
-      Element? paternalOrganismNameElement,
+      PrimitiveElement? paternalOrganismNameElement,
       CodeableConcept? hybridType});
 
   $CodeableConceptCopyWith<$Res>? get hybridType;
@@ -47876,7 +47988,7 @@ class _$SubstanceSourceMaterialHybridCopyWithImpl<$Res,
       maternalOrganismIdElement: freezed == maternalOrganismIdElement
           ? _value.maternalOrganismIdElement
           : maternalOrganismIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       maternalOrganismName: freezed == maternalOrganismName
           ? _value.maternalOrganismName
           : maternalOrganismName // ignore: cast_nullable_to_non_nullable
@@ -47884,7 +47996,7 @@ class _$SubstanceSourceMaterialHybridCopyWithImpl<$Res,
       maternalOrganismNameElement: freezed == maternalOrganismNameElement
           ? _value.maternalOrganismNameElement
           : maternalOrganismNameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       paternalOrganismId: freezed == paternalOrganismId
           ? _value.paternalOrganismId
           : paternalOrganismId // ignore: cast_nullable_to_non_nullable
@@ -47892,7 +48004,7 @@ class _$SubstanceSourceMaterialHybridCopyWithImpl<$Res,
       paternalOrganismIdElement: freezed == paternalOrganismIdElement
           ? _value.paternalOrganismIdElement
           : paternalOrganismIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       paternalOrganismName: freezed == paternalOrganismName
           ? _value.paternalOrganismName
           : paternalOrganismName // ignore: cast_nullable_to_non_nullable
@@ -47900,7 +48012,7 @@ class _$SubstanceSourceMaterialHybridCopyWithImpl<$Res,
       paternalOrganismNameElement: freezed == paternalOrganismNameElement
           ? _value.paternalOrganismNameElement
           : paternalOrganismNameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       hybridType: freezed == hybridType
           ? _value.hybridType
           : hybridType // ignore: cast_nullable_to_non_nullable
@@ -47935,15 +48047,17 @@ abstract class _$$SubstanceSourceMaterialHybridImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       String? maternalOrganismId,
-      @JsonKey(name: '_maternalOrganismId') Element? maternalOrganismIdElement,
+      @JsonKey(name: '_maternalOrganismId')
+      PrimitiveElement? maternalOrganismIdElement,
       String? maternalOrganismName,
       @JsonKey(name: '_maternalOrganismName')
-      Element? maternalOrganismNameElement,
+      PrimitiveElement? maternalOrganismNameElement,
       String? paternalOrganismId,
-      @JsonKey(name: '_paternalOrganismId') Element? paternalOrganismIdElement,
+      @JsonKey(name: '_paternalOrganismId')
+      PrimitiveElement? paternalOrganismIdElement,
       String? paternalOrganismName,
       @JsonKey(name: '_paternalOrganismName')
-      Element? paternalOrganismNameElement,
+      PrimitiveElement? paternalOrganismNameElement,
       CodeableConcept? hybridType});
 
   @override
@@ -47996,7 +48110,7 @@ class __$$SubstanceSourceMaterialHybridImplCopyWithImpl<$Res>
       maternalOrganismIdElement: freezed == maternalOrganismIdElement
           ? _value.maternalOrganismIdElement
           : maternalOrganismIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       maternalOrganismName: freezed == maternalOrganismName
           ? _value.maternalOrganismName
           : maternalOrganismName // ignore: cast_nullable_to_non_nullable
@@ -48004,7 +48118,7 @@ class __$$SubstanceSourceMaterialHybridImplCopyWithImpl<$Res>
       maternalOrganismNameElement: freezed == maternalOrganismNameElement
           ? _value.maternalOrganismNameElement
           : maternalOrganismNameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       paternalOrganismId: freezed == paternalOrganismId
           ? _value.paternalOrganismId
           : paternalOrganismId // ignore: cast_nullable_to_non_nullable
@@ -48012,7 +48126,7 @@ class __$$SubstanceSourceMaterialHybridImplCopyWithImpl<$Res>
       paternalOrganismIdElement: freezed == paternalOrganismIdElement
           ? _value.paternalOrganismIdElement
           : paternalOrganismIdElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       paternalOrganismName: freezed == paternalOrganismName
           ? _value.paternalOrganismName
           : paternalOrganismName // ignore: cast_nullable_to_non_nullable
@@ -48020,7 +48134,7 @@ class __$$SubstanceSourceMaterialHybridImplCopyWithImpl<$Res>
       paternalOrganismNameElement: freezed == paternalOrganismNameElement
           ? _value.paternalOrganismNameElement
           : paternalOrganismNameElement // ignore: cast_nullable_to_non_nullable
-              as Element?,
+              as PrimitiveElement?,
       hybridType: freezed == hybridType
           ? _value.hybridType
           : hybridType // ignore: cast_nullable_to_non_nullable
@@ -48130,7 +48244,7 @@ class _$SubstanceSourceMaterialHybridImpl
   ///  maternalOrganismId
   @override
   @JsonKey(name: '_maternalOrganismId')
-  final Element? maternalOrganismIdElement;
+  final PrimitiveElement? maternalOrganismIdElement;
 
   /// [maternalOrganismName] The name of the maternal species constituting the
   ///  hybrid organism shall be specified. For plants, the parents aren’t always
@@ -48143,7 +48257,7 @@ class _$SubstanceSourceMaterialHybridImpl
   ///  maternalOrganismName
   @override
   @JsonKey(name: '_maternalOrganismName')
-  final Element? maternalOrganismNameElement;
+  final PrimitiveElement? maternalOrganismNameElement;
 
   /// [paternalOrganismId] The identifier of the paternal species constituting
   ///  the hybrid organism shall be specified based on a controlled vocabulary.
@@ -48154,7 +48268,7 @@ class _$SubstanceSourceMaterialHybridImpl
   ///  paternalOrganismId
   @override
   @JsonKey(name: '_paternalOrganismId')
-  final Element? paternalOrganismIdElement;
+  final PrimitiveElement? paternalOrganismIdElement;
 
   /// [paternalOrganismName] The name of the paternal species constituting the
   ///  hybrid organism shall be specified.
@@ -48165,7 +48279,7 @@ class _$SubstanceSourceMaterialHybridImpl
   ///  paternalOrganismName
   @override
   @JsonKey(name: '_paternalOrganismName')
-  final Element? paternalOrganismNameElement;
+  final PrimitiveElement? paternalOrganismNameElement;
 
   /// [hybridType] The hybrid type of an organism shall be specified.
   @override
@@ -48253,16 +48367,16 @@ abstract class _SubstanceSourceMaterialHybrid
       final List<FhirExtension>? modifierExtension,
       final String? maternalOrganismId,
       @JsonKey(name: '_maternalOrganismId')
-      final Element? maternalOrganismIdElement,
+      final PrimitiveElement? maternalOrganismIdElement,
       final String? maternalOrganismName,
       @JsonKey(name: '_maternalOrganismName')
-      final Element? maternalOrganismNameElement,
+      final PrimitiveElement? maternalOrganismNameElement,
       final String? paternalOrganismId,
       @JsonKey(name: '_paternalOrganismId')
-      final Element? paternalOrganismIdElement,
+      final PrimitiveElement? paternalOrganismIdElement,
       final String? paternalOrganismName,
       @JsonKey(name: '_paternalOrganismName')
-      final Element? paternalOrganismNameElement,
+      final PrimitiveElement? paternalOrganismNameElement,
       final CodeableConcept? hybridType}) = _$SubstanceSourceMaterialHybridImpl;
   const _SubstanceSourceMaterialHybrid._() : super._();
 
@@ -48311,7 +48425,7 @@ abstract class _SubstanceSourceMaterialHybrid
   /// [maternalOrganismIdElement] ("_maternalOrganismId") Extensions for
   ///  maternalOrganismId
   @JsonKey(name: '_maternalOrganismId')
-  Element? get maternalOrganismIdElement;
+  PrimitiveElement? get maternalOrganismIdElement;
   @override
 
   /// [maternalOrganismName] The name of the maternal species constituting the
@@ -48324,7 +48438,7 @@ abstract class _SubstanceSourceMaterialHybrid
   /// [maternalOrganismNameElement] ("_maternalOrganismName") Extensions for
   ///  maternalOrganismName
   @JsonKey(name: '_maternalOrganismName')
-  Element? get maternalOrganismNameElement;
+  PrimitiveElement? get maternalOrganismNameElement;
   @override
 
   /// [paternalOrganismId] The identifier of the paternal species constituting
@@ -48335,7 +48449,7 @@ abstract class _SubstanceSourceMaterialHybrid
   /// [paternalOrganismIdElement] ("_paternalOrganismId") Extensions for
   ///  paternalOrganismId
   @JsonKey(name: '_paternalOrganismId')
-  Element? get paternalOrganismIdElement;
+  PrimitiveElement? get paternalOrganismIdElement;
   @override
 
   /// [paternalOrganismName] The name of the paternal species constituting the
@@ -48346,7 +48460,7 @@ abstract class _SubstanceSourceMaterialHybrid
   /// [paternalOrganismNameElement] ("_paternalOrganismName") Extensions for
   ///  paternalOrganismName
   @JsonKey(name: '_paternalOrganismName')
-  Element? get paternalOrganismNameElement;
+  PrimitiveElement? get paternalOrganismNameElement;
   @override
 
   /// [hybridType] The hybrid type of an organism shall be specified.

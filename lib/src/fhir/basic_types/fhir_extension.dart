@@ -15,7 +15,7 @@ part 'fhir_extension.g.dart';
 
 /// [extension_] Optional Extension Element - found in all resources.
 @freezed
-class FhirExtension with Element, _$FhirExtension {
+class FhirExtension with _$FhirExtension implements FhirBase {
   const FhirExtension._();
 
   /// [extension_] Optional Extension Element - found in all resources.
@@ -251,314 +251,346 @@ class FhirExtension with Element, _$FhirExtension {
   ///
   const factory FhirExtension({
     /// [id] Unique id for the element within a resource (for internal
-    ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    /// references). This may be any string value that does not contain spaces.
+
+    @JsonKey(name: 'id') String? id,
 
     /// [extension_] May be used to represent additional information that is not
-    /// part of the basic definition of the element. To make the use of
-    ///  extensions
+    /// part of the basic definition of the element. To make the use of fhirExtensions
     /// safe and manageable, there is a strict set of governance  applied to the
-    /// definition and use of extensions. Though any implementer can define an
-    /// extension, there is a set of requirements that SHALL be met as part of
-    ///  the
-    ///  definition of the extension.
+    /// definition and use of fhirExtensions. Though any implementer can define an
+    /// fhirExtension, there is a set of requirements that SHALL be met as part of the
+    /// definition of the fhirExtension.
+
     @JsonKey(name: 'extension') List<FhirExtension>? extension_,
 
-    /// [url] Source of the definition for the extension code - a logical name
-    ///  or
-    ///  a URL.
-    FhirUri? url,
+    /// [url] Source of the definition for the fhirExtension code - a logical name
+    /// or a URL.
 
-    /// [urlElement] Extensions for url
-    @JsonKey(name: '_url') Element? urlElement,
+    @JsonKey(name: 'url') FhirUri? url,
 
-    /// [valueBase64Binary] Value of extension - must be one of a constrained
-    ///  set
-    ///  of the data types (see [Extensibility](extensibility.html) for a list).
-    FhirBase64Binary? valueBase64Binary,
+    /// [_url] Extensions for url
 
-    /// [valueBase64BinaryElement] Extensions for valueBase64Binary
-    @JsonKey(name: '_valueBase64Binary') Element? valueBase64BinaryElement,
+    @JsonKey(name: '_url') PrimitiveElement? urlElement,
 
-    /// [valueBoolean] Value of extension - must be one of a constrained set of
-    ///  the data types (see [Extensibility](extensibility.html) for a list).
-    FhirBoolean? valueBoolean,
+    /// [valueBase64Binary] Value of fhirExtension - must be one of a constrained
+    /// set of the data types (see [Extensibility](extensibility.html) for a list).
 
-    /// [valueBooleanElement] Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: 'valueBase64Binary') FhirBase64Binary? valueBase64Binary,
 
-    /// [valueCanonical] Value of extension - must be one of a constrained set
-    ///  of
-    ///  the data types (see [Extensibility](extensibility.html) for a list).
-    FhirCanonical? valueCanonical,
+    /// [_valueBase64Binary] Extensions for valueBase64Binary
 
-    /// [valueCanonicalElement] Extensions for valueCanonical
-    @JsonKey(name: '_valueCanonical') Element? valueCanonicalElement,
+    @JsonKey(name: '_valueBase64Binary')
+    PrimitiveElement? valueBase64BinaryElement,
 
-    /// [valueCode] Value of extension - must be one of a constrained set of the
-    ///  data types (see [Extensibility](extensibility.html) for a list).
-    FhirCode? valueCode,
+    /// [valueBoolean] Value of fhirExtension - must be one of a constrained set of
+    /// the data types (see [Extensibility](extensibility.html) for a list).
 
-    /// [valueCodeElement] Extensions for valueCode
-    @JsonKey(name: '_valueCode') Element? valueCodeElement,
+    @JsonKey(name: 'valueBoolean') FhirBoolean? valueBoolean,
 
-    /// [valueDate] Value of extension - must be one of a constrained set of the
-    ///  data types (see [Extensibility](extensibility.html) for a list).
-    FhirDate? valueDate,
+    /// [_valueBoolean] Extensions for valueBoolean
 
-    /// [valueDateElement] Extensions for valueDate
-    @JsonKey(name: '_valueDate') Element? valueDateElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
 
-    /// [valueDateTime] Value of extension - must be one of a constrained set of
-    ///  the data types (see [Extensibility](extensibility.html) for a list).
-    FhirDateTime? valueDateTime,
+    /// [valueCanonical] Value of fhirExtension - must be one of a constrained set
+    /// of the data types (see [Extensibility](extensibility.html) for a list).
 
-    /// [valueDateTimeElement] Extensions for valueDateTime
-    @JsonKey(name: '_valueDateTime') Element? valueDateTimeElement,
+    @JsonKey(name: 'valueCanonical') FhirCanonical? valueCanonical,
 
-    /// [valueDecimal] Value of extension - must be one of a constrained set of
-    ///  the data types (see [Extensibility](extensibility.html) for a list).
-    FhirDecimal? valueDecimal,
+    /// [_valueCanonical] Extensions for valueCanonical
 
-    /// [valueDecimalElement] Extensions for valueDecimal
-    @JsonKey(name: '_valueDecimal') Element? valueDecimalElement,
+    @JsonKey(name: '_valueCanonical') PrimitiveElement? valueCanonicalElement,
 
-    /// [valueId] Value of extension - must be one of a constrained set of the
-    ///  data types (see [Extensibility](extensibility.html) for a list).
-    FhirId? valueId,
+    /// [valueCode] Value of fhirExtension - must be one of a constrained set of
+    /// the data types (see [Extensibility](extensibility.html) for a list).
 
-    /// [valueIdElement] Extensions for valueId
-    @JsonKey(name: '_valueId') Element? valueIdElement,
+    @JsonKey(name: 'valueCode') FhirCode? valueCode,
 
-    /// [valueInstant] Value of extension - must be one of a constrained set of
-    ///  the data types (see [Extensibility](extensibility.html) for a list).
-    FhirInstant? valueInstant,
+    /// [_valueCode] Extensions for valueCode
 
-    /// [valueInstantElement] Extensions for valueInstant
-    @JsonKey(name: '_valueInstant') Element? valueInstantElement,
+    @JsonKey(name: '_valueCode') PrimitiveElement? valueCodeElement,
 
-    /// [valueInteger] Value of extension - must be one of a constrained set of
-    ///  the data types (see [Extensibility](extensibility.html) for a list).
-    FhirInteger? valueInteger,
+    /// [valueDate] Value of fhirExtension - must be one of a constrained set of
+    /// the data types (see [Extensibility](extensibility.html) for a list).
 
-    /// [valueIntegerElement] Extensions for valueInteger
-    @JsonKey(name: '_valueInteger') Element? valueIntegerElement,
+    @JsonKey(name: 'valueDate') FhirDate? valueDate,
+
+    /// [_valueDate] Extensions for valueDate
+
+    @JsonKey(name: '_valueDate') PrimitiveElement? valueDateElement,
+
+    /// [valueDateTime] Value of fhirExtension - must be one of a constrained set
+    /// of the data types (see [Extensibility](extensibility.html) for a list).
+
+    @JsonKey(name: 'valueDateTime') FhirDateTime? valueDateTime,
+
+    /// [_valueDateTime] Extensions for valueDateTime
+
+    @JsonKey(name: '_valueDateTime') PrimitiveElement? valueDateTimeElement,
+
+    /// [valueDecimal] Value of fhirExtension - must be one of a constrained set of
+    /// the data types (see [Extensibility](extensibility.html) for a list).
+
+    @JsonKey(name: 'valueDecimal') FhirDecimal? valueDecimal,
+
+    /// [_valueDecimal] Extensions for valueDecimal
+
+    @JsonKey(name: '_valueDecimal') PrimitiveElement? valueDecimalElement,
+
+    /// [valueId] Value of fhirExtension - must be one of a constrained set of the
+    /// data types (see [Extensibility](extensibility.html) for a list).
+
+    @JsonKey(name: 'valueId') FhirId? valueId,
+
+    /// [_valueId] Extensions for valueId
+
+    @JsonKey(name: '_valueId') PrimitiveElement? valueIdElement,
+
+    /// [valueInstant] Value of fhirExtension - must be one of a constrained set of
+    /// the data types (see [Extensibility](extensibility.html) for a list).
+
+    @JsonKey(name: 'valueInstant') FhirInstant? valueInstant,
+
+    /// [_valueInstant] Extensions for valueInstant
+
+    @JsonKey(name: '_valueInstant') PrimitiveElement? valueInstantElement,
+
+    /// [valueInteger] Value of fhirExtension - must be one of a constrained set of
+    /// the data types (see [Extensibility](extensibility.html) for a list).
+
+    @JsonKey(name: 'valueInteger') FhirInteger? valueInteger,
+
+    /// [_valueInteger] Extensions for valueInteger
+
+    @JsonKey(name: '_valueInteger') PrimitiveElement? valueIntegerElement,
 
     /// [valueMarkdown] Value of extension - must be one of a constrained set of
     ///  the data types (see [Extensibility](extensibility.html) for a list).
     FhirInteger64? valueInteger64,
 
     /// [valueMarkdownElement] Extensions for valueMarkdown
-    @JsonKey(name: '_valueInteger64') Element? valueInteger64Element,
-    FhirMarkdown? valueMarkdown,
-    @JsonKey(name: '_valueMarkdown') Element? valueMarkdownElement,
+    @JsonKey(name: '_valueInteger64') PrimitiveElement? valueInteger64Element,
+
+    /// [_valueMarkdown] Extensions for valueMarkdown
+    @JsonKey(name: 'valueMarkdown') FhirMarkdown? valueMarkdown,
+
+    /// [_valueMarkdown] Extensions for valueMarkdown
+    @JsonKey(name: '_valueMarkdown') PrimitiveElement? valueMarkdownElement,
 
     /// [valueOid] Value of extension - must be one of a constrained set of the
     ///  data types (see [Extensibility](extensibility.html) for a list).
     FhirOid? valueOid,
 
     /// [valueOidElement] Extensions for valueOid
-    @JsonKey(name: '_valueOid') Element? valueOidElement,
+    @JsonKey(name: '_valueOid') PrimitiveElement? valueOidElement,
 
     /// [valuePositiveInt] Value of extension - must be one of a constrained set
-    ///  of the data types (see [Extensibility](extensibility.html) for a list).
-    FhirPositiveInt? valuePositiveInt,
+    ///  of the data types (see [Extensibility](extensibility.html) for a list).        @JsonKey(name: 'valuePositiveInt') FhirPositiveInt? valuePositiveInt,
+    @JsonKey(name: 'valuePositiveInt') FhirPositiveInt? valuePositiveInt,
 
     /// [valuePositiveIntElement] Extensions for valuePositiveInt
-    @JsonKey(name: '_valuePositiveInt') Element? valuePositiveIntElement,
+    @JsonKey(name: '_valuePositiveInt')
+    PrimitiveElement? valuePositiveIntElement,
 
     /// [valueString] Value of extension - must be one of a constrained set of
     ///  the data types (see [Extensibility](extensibility.html) for a list).
-    String? valueString,
+    @JsonKey(name: 'valueString') String? valueString,
 
     /// [valueStringElement] Extensions for valueString
-    @JsonKey(name: '_valueString') Element? valueStringElement,
+    @JsonKey(name: '_valueString') PrimitiveElement? valueStringElement,
 
     /// [valueTime] Value of extension - must be one of a constrained set of the
     ///  data types (see [Extensibility](extensibility.html) for a list).
-    FhirTime? valueTime,
+    @JsonKey(name: 'valueTime') FhirTime? valueTime,
 
     /// [valueTimeElement] Extensions for valueTime
-    @JsonKey(name: '_valueTime') Element? valueTimeElement,
+    @JsonKey(name: '_valueTime') PrimitiveElement? valueTimeElement,
 
     /// [valueUnsignedInt] Value of extension - must be one of a constrained set
     ///  of the data types (see [Extensibility](extensibility.html) for a list).
-    FhirUnsignedInt? valueUnsignedInt,
+    @JsonKey(name: 'valueUnsignedInt') FhirUnsignedInt? valueUnsignedInt,
 
     /// [valueUnsignedIntElement] Extensions for valueUnsignedInt
-    @JsonKey(name: '_valueUnsignedInt') Element? valueUnsignedIntElement,
+    @JsonKey(name: '_valueUnsignedInt')
+    PrimitiveElement? valueUnsignedIntElement,
 
     /// [valueUri] Value of extension - must be one of a constrained set of the
     ///  data types (see [Extensibility](extensibility.html) for a list).
-    FhirUri? valueUri,
+    @JsonKey(name: 'valueUri') FhirUri? valueUri,
 
     /// [valueUriElement] Extensions for valueUri
-    @JsonKey(name: '_valueUri') Element? valueUriElement,
+    @JsonKey(name: '_valueUri') PrimitiveElement? valueUriElement,
 
     /// [valueUrl] Value of extension - must be one of a constrained set of the
     ///  data types (see [Extensibility](extensibility.html) for a list).
-    FhirUrl? valueUrl,
+    @JsonKey(name: 'valueUrl') FhirUrl? valueUrl,
 
     /// [valueUrlElement] Extensions for valueUrl
-    @JsonKey(name: '_valueUrl') Element? valueUrlElement,
+    @JsonKey(name: '_valueUrl') PrimitiveElement? valueUrlElement,
 
     /// [valueUuid] Value of extension - must be one of a constrained set of the
     ///  data types (see [Extensibility](extensibility.html) for a list).
-    FhirUuid? valueUuid,
+    @JsonKey(name: 'valueUuid') FhirUuid? valueUuid,
 
     /// [valueUuidElement] Extensions for valueUuid
-    @JsonKey(name: '_valueUuid') Element? valueUuidElement,
+    @JsonKey(name: '_valueUuid') PrimitiveElement? valueUuidElement,
 
     /// [valueAddress] Value of extension - must be one of a constrained set of
     ///  the data types (see [Extensibility](extensibility.html) for a list).
-    Address? valueAddress,
+    @JsonKey(name: 'valueAddress') Address? valueAddress,
 
     /// [valueAge] Value of extension - must be one of a constrained set of the
     ///  data types (see [Extensibility](extensibility.html) for a list).
-    Age? valueAge,
+    @JsonKey(name: 'valueAge') Age? valueAge,
 
     /// [valueAnnotation] Value of extension - must be one of a constrained set
     ///  of the data types (see [Extensibility](extensibility.html) for a list).
-    Annotation? valueAnnotation,
+    @JsonKey(name: 'valueAnnotation') Annotation? valueAnnotation,
 
     /// [valueAttachment] Value of extension - must be one of a constrained set
     ///  of the data types (see [Extensibility](extensibility.html) for a list).
-    Attachment? valueAttachment,
+    @JsonKey(name: 'valueAttachment') Attachment? valueAttachment,
 
     /// [valueAvailability] Value of extension - must be one of a constrained
     ///  set
     ///  of the data types (see [Extensibility](extensibility.html) for a list).
-    Availability? valueAvailability,
+    @JsonKey(name: 'valueAvailability') Availability? valueAvailability,
 
     /// [valueCodeableConcept] Value of extension - must be one of a constrained
     /// set of the data types (see [Extensibility](extensibility.html) for a
     ///  list).
+    @JsonKey(name: 'valueCodeableConcept')
     CodeableConcept? valueCodeableConcept,
 
     /// [valueCodeableReference] A reference to a resource (by instance), or
     /// instead, a reference to a concept defined in a terminology or ontology
     /// (by class)."
+    @JsonKey(name: 'valueCodeableReference')
     CodeableReference? valueCodeableReference,
 
     /// [valueCoding] Value of extension - must be one of a constrained set of
     ///  the data types (see [Extensibility](extensibility.html) for a list).
-    Coding? valueCoding,
+    @JsonKey(name: 'valueCoding') Coding? valueCoding,
 
     /// [valueContactPoint] Value of extension - must be one of a constrained
     ///  set
     ///  of the data types (see [Extensibility](extensibility.html) for a list).
-    ContactPoint? valueContactPoint,
+    @JsonKey(name: 'valueContactPoint') ContactPoint? valueContactPoint,
 
     /// [valueCount] Value of extension - must be one of a constrained set of
     ///  the
     ///  data types (see [Extensibility](extensibility.html) for a list).
-    Count? valueCount,
+    @JsonKey(name: 'valueCount') Count? valueCount,
 
     /// [valueDistance] Value of extension - must be one of a constrained set of
     ///  the data types (see [Extensibility](extensibility.html) for a list).
-    Distance? valueDistance,
+    @JsonKey(name: 'valueDistance') Distance? valueDistance,
 
     /// [valueDuration] Value of extension - must be one of a constrained set of
     ///  the data types (see [Extensibility](extensibility.html) for a list).
-    FhirDuration? valueDuration,
+    @JsonKey(name: 'valueDuration') FhirDuration? valueDuration,
 
     /// [valueHumanName] Value of extension - must be one of a constrained set
     ///  of
     ///  the data types (see [Extensibility](extensibility.html) for a list).
-    HumanName? valueHumanName,
+    @JsonKey(name: 'valueHumanName') HumanName? valueHumanName,
 
     /// [valueIdentifier] Value of extension - must be one of a constrained set
     ///  of the data types (see [Extensibility](extensibility.html) for a list).
-    Identifier? valueIdentifier,
+    @JsonKey(name: 'valueIdentifier') Identifier? valueIdentifier,
 
     /// [valueMoney] Value of extension - must be one of a constrained set of
     ///  the
     ///  data types (see [Extensibility](extensibility.html) for a list).
-    Money? valueMoney,
+    @JsonKey(name: 'valueMoney') Money? valueMoney,
 
     /// [valuePeriod] Value of extension - must be one of a constrained set of
     ///  the data types (see [Extensibility](extensibility.html) for a list).
-    Period? valuePeriod,
+    @JsonKey(name: 'valuePeriod') Period? valuePeriod,
 
     /// [valueQuantity] Value of extension - must be one of a constrained set of
     ///  the data types (see [Extensibility](extensibility.html) for a list).
-    Quantity? valueQuantity,
+    @JsonKey(name: 'valueQuantity') Quantity? valueQuantity,
 
     /// [valueRange] Value of extension - must be one of a constrained set of
     ///  the
     ///  data types (see [Extensibility](extensibility.html) for a list).
-    Range? valueRange,
+    @JsonKey(name: 'valueRange') Range? valueRange,
 
     /// [valueRatio] Value of extension - must be one of a constrained set of
     ///  the
     ///  data types (see [Extensibility](extensibility.html) for a list).
-    Ratio? valueRatio,
+    @JsonKey(name: 'valueRatio') Ratio? valueRatio,
 
     /// [valueReference] Value of extension - must be one of a constrained set
     ///  of
     ///  the data types (see [Extensibility](extensibility.html) for a list).
-    Reference? valueReference,
+    @JsonKey(name: 'valueReference') Reference? valueReference,
 
     /// [valueSampledData] Value of extension - must be one of a constrained set
     ///  of the data types (see [Extensibility](extensibility.html) for a list).
-    SampledData? valueSampledData,
+    @JsonKey(name: 'valueSampledData') SampledData? valueSampledData,
 
     /// [valueSignature] Value of extension - must be one of a constrained set
     ///  of
     ///  the data types (see [Extensibility](extensibility.html) for a list).
-    Signature? valueSignature,
+    @JsonKey(name: 'valueSignature') Signature? valueSignature,
 
     /// [valueTiming] Value of extension - must be one of a constrained set of
     ///  the data types (see [Extensibility](extensibility.html) for a list).
-    Timing? valueTiming,
+    @JsonKey(name: 'valueTiming') Timing? valueTiming,
 
     /// [valueContactDetail] Value of extension - must be one of a constrained
     /// set of the data types (see [Extensibility](extensibility.html) for a
     ///  list).
-    ContactDetail? valueContactDetail,
+    @JsonKey(name: 'valueContactDetail') ContactDetail? valueContactDetail,
 
     /// [valueContributor] Value of extension - must be one of a constrained set
     ///  of the data types (see [Extensibility](extensibility.html) for a list).
-    Contributor? valueContributor,
+    @JsonKey(name: 'valueContributor') Contributor? valueContributor,
 
     /// [valueDataRequirement] Value of extension - must be one of a constrained
     /// set of the data types (see [Extensibility](extensibility.html) for a
     ///  list).
+    @JsonKey(name: 'valueDataRequirement')
     DataRequirement? valueDataRequirement,
 
     /// [valueExpression] Value of extension - must be one of a constrained set
     ///  of the data types (see [Extensibility](extensibility.html) for a list).
-    FhirExpression? valueExpression,
+    @JsonKey(name: 'valueExpression') FhirExpression? valueExpression,
 
     /// [valueParameterDefinition] Value of extension - must be one of a
     /// constrained set of the data types (see
     ///  [Extensibility](extensibility.html)
     ///  for a list).
+    @JsonKey(name: 'valueParameterDefinition')
     ParameterDefinition? valueParameterDefinition,
 
     /// [valueRelatedArtifact] Value of extension - must be one of a constrained
     /// set of the data types (see [Extensibility](extensibility.html) for a
     ///  list).
+    @JsonKey(name: 'valueRelatedArtifact')
     RelatedArtifact? valueRelatedArtifact,
 
     /// [valueTriggerDefinition] Value of extension - must be one of a
     /// constrained set of the data types (see
     ///  [Extensibility](extensibility.html)
     ///  for a list).
+    @JsonKey(name: 'valueTriggerDefinition')
     TriggerDefinition? valueTriggerDefinition,
 
     /// [valueUsageContext] Value of extension - must be one of a constrained
     ///  set
     ///  of the data types (see [Extensibility](extensibility.html) for a list).
-    UsageContext? valueUsageContext,
+    @JsonKey(name: 'valueUsageContext') UsageContext? valueUsageContext,
 
     /// [valueDosage] Value of extension - must be one of a constrained set of
     ///  the data types (see [Extensibility](extensibility.html) for a list).
-    Dosage? valueDosage,
+    @JsonKey(name: 'valueDosage') Dosage? valueDosage,
 
     /// [valueMeta] Value of extension - must be one of a constrained set of the
     ///  data types (see [Extensibility](extensibility.html) for a list).
-    FhirMeta? valueMeta,
+    @JsonKey(name: 'valueMeta') FhirMeta? valueMeta,
   }) = _FhirExtension;
 
   /// Factory constructor that accepts a [String] in YAML format as an argument
@@ -587,5 +619,13 @@ class FhirExtension with Element, _$FhirExtension {
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
-  
+
+  @override
+  String get fhirType => 'Extension';
+
+  @override
+  String toJsonString() => jsonEncode(toJson());
+
+  @override
+  String toYaml() => json2yaml(toJson());
 }

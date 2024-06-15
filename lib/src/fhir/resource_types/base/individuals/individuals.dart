@@ -19,7 +19,7 @@ part 'individuals.enums.dart';
 ///  and are not formally or legally recognized; i.e. a collection of entities
 ///  that isn't an Organization.
 @freezed
-class FhirGroup with Resource, _$FhirGroup {
+class FhirGroup with _$FhirGroup implements DomainResource {
   /// [FhirGroup] Represents a defined collection of entities that may be discussed
   ///  or acted upon collectively but which are not expected to act collectively,
   ///  and are not formally or legally recognized; i.e. a collection of entities
@@ -159,13 +159,13 @@ class FhirGroup with Resource, _$FhirGroup {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -214,14 +214,14 @@ class FhirGroup with Resource, _$FhirGroup {
     FhirBoolean? active,
 
     /// [activeElement] ("_active") Extensions for active
-    @JsonKey(name: '_active') Element? activeElement,
+    @JsonKey(name: '_active') PrimitiveElement? activeElement,
 
     /// [type] Identifies the broad classification of the kind of resources the
     ///  group includes.
     GroupType? type,
 
     /// [typeElement] ("_type") Extensions for type
-    @JsonKey(name: '_type') Element? typeElement,
+    @JsonKey(name: '_type') PrimitiveElement? typeElement,
 
     /// [membership] Basis for membership in the Group:
     /// * 'definitional': The Group.characteristics specified are both necessary
@@ -236,7 +236,7 @@ class FhirGroup with Resource, _$FhirGroup {
     GroupMembershipBasis? membership,
 
     /// [membershipElement] ("_membership") Extensions for membership
-    @JsonKey(name: '_membership') Element? membershipElement,
+    @JsonKey(name: '_membership') PrimitiveElement? membershipElement,
 
     /// [code] Provides a specific type of resource the group includes; e.g. "cow",
     ///  "syringe", etc.
@@ -247,21 +247,21 @@ class FhirGroup with Resource, _$FhirGroup {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [description] Explanation of what the group represents and how it is
     ///  intended to be used.
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [quantity] A count of the number of resource instances that are part of the
     ///  group.
     FhirUnsignedInt? quantity,
 
     /// [quantityElement] ("_quantity") Extensions for quantity
-    @JsonKey(name: '_quantity') Element? quantityElement,
+    @JsonKey(name: '_quantity') PrimitiveElement? quantityElement,
 
     /// [managingEntity] Entity responsible for defining and maintaining Group
     ///  characteristics and/or registered members.
@@ -320,7 +320,7 @@ class FhirGroup with Resource, _$FhirGroup {
 ///  collectively, and are not formally or legally recognized; i.e. a
 ///  collection of entities that isn't an Organization.
 @freezed
-class GroupCharacteristic with BackboneType, _$GroupCharacteristic {
+class GroupCharacteristic with _$GroupCharacteristic implements BackboneType {
   /// [GroupCharacteristic] Represents a defined collection of entities that may
   ///  be discussed or acted upon collectively but which are not expected to act
   ///  collectively, and are not formally or legally recognized; i.e. a
@@ -421,7 +421,7 @@ class GroupCharacteristic with BackboneType, _$GroupCharacteristic {
     FhirBoolean? valueBoolean,
 
     /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
 
     /// [valueQuantity] The value of the trait that holds (or does not hold - see
     ///  'exclude') for members of the group.
@@ -440,7 +440,7 @@ class GroupCharacteristic with BackboneType, _$GroupCharacteristic {
     FhirBoolean? exclude,
 
     /// [excludeElement] ("_exclude") Extensions for exclude
-    @JsonKey(name: '_exclude') Element? excludeElement,
+    @JsonKey(name: '_exclude') PrimitiveElement? excludeElement,
 
     /// [period] The period over which the characteristic is tested; e.g. the
     ///  patient had an operation during the month of June.
@@ -483,7 +483,7 @@ class GroupCharacteristic with BackboneType, _$GroupCharacteristic {
 ///  collectively, and are not formally or legally recognized; i.e. a
 ///  collection of entities that isn't an Organization.
 @freezed
-class GroupMember with BackboneType, _$GroupMember {
+class GroupMember with _$GroupMember implements BackboneType {
   /// [GroupMember] Represents a defined collection of entities that may be
   ///  discussed or acted upon collectively but which are not expected to act
   ///  collectively, and are not formally or legally recognized; i.e. a
@@ -569,7 +569,7 @@ class GroupMember with BackboneType, _$GroupMember {
     FhirBoolean? inactive,
 
     /// [inactiveElement] ("_inactive") Extensions for inactive
-    @JsonKey(name: '_inactive') Element? inactiveElement,
+    @JsonKey(name: '_inactive') PrimitiveElement? inactiveElement,
   }) = _GroupMember;
 
   @override
@@ -606,7 +606,7 @@ class GroupMember with BackboneType, _$GroupMember {
 /// [Patient] Demographics and other administrative information about an
 ///  individual or animal receiving care or other health-related services.
 @freezed
-class Patient with Resource, _$Patient {
+class Patient with _$Patient implements DomainResource {
   /// [Patient] Demographics and other administrative information about an
   ///  individual or animal receiving care or other health-related services.
   const Patient._();
@@ -755,13 +755,13 @@ class Patient with Resource, _$Patient {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -812,7 +812,7 @@ class Patient with Resource, _$Patient {
     FhirBoolean? active,
 
     /// [activeElement] ("_active") Extensions for active
-    @JsonKey(name: '_active') Element? activeElement,
+    @JsonKey(name: '_active') PrimitiveElement? activeElement,
 
     /// [name] A name associated with the individual.
     List<HumanName>? name,
@@ -826,26 +826,27 @@ class Patient with Resource, _$Patient {
     AdministrativeGender? gender,
 
     /// [genderElement] ("_gender") Extensions for gender
-    @JsonKey(name: '_gender') Element? genderElement,
+    @JsonKey(name: '_gender') PrimitiveElement? genderElement,
 
     /// [birthDate] The date of birth for the individual.
     FhirDate? birthDate,
 
     /// [birthDateElement] ("_birthDate") Extensions for birthDate
-    @JsonKey(name: '_birthDate') Element? birthDateElement,
+    @JsonKey(name: '_birthDate') PrimitiveElement? birthDateElement,
 
     /// [deceasedBoolean] Indicates if the individual is deceased or not.
     FhirBoolean? deceasedBoolean,
 
     /// [deceasedBooleanElement] ("_deceasedBoolean") Extensions for deceasedBoolean
-    @JsonKey(name: '_deceasedBoolean') Element? deceasedBooleanElement,
+    @JsonKey(name: '_deceasedBoolean') PrimitiveElement? deceasedBooleanElement,
 
     /// [deceasedDateTime] Indicates if the individual is deceased or not.
     FhirDateTime? deceasedDateTime,
 
     /// [deceasedDateTimeElement] ("_deceasedDateTime") Extensions for
     ///  deceasedDateTime
-    @JsonKey(name: '_deceasedDateTime') Element? deceasedDateTimeElement,
+    @JsonKey(name: '_deceasedDateTime')
+    PrimitiveElement? deceasedDateTimeElement,
 
     /// [address] An address for the individual.
     List<Address>? address,
@@ -861,7 +862,7 @@ class Patient with Resource, _$Patient {
     /// [multipleBirthBooleanElement] ("_multipleBirthBoolean") Extensions for
     ///  multipleBirthBoolean
     @JsonKey(name: '_multipleBirthBoolean')
-    Element? multipleBirthBooleanElement,
+    PrimitiveElement? multipleBirthBooleanElement,
 
     /// [multipleBirthInteger] Indicates whether the patient is part of a multiple
     ///  (boolean) or indicates the actual birth order (integer).
@@ -870,7 +871,7 @@ class Patient with Resource, _$Patient {
     /// [multipleBirthIntegerElement] ("_multipleBirthInteger") Extensions for
     ///  multipleBirthInteger
     @JsonKey(name: '_multipleBirthInteger')
-    Element? multipleBirthIntegerElement,
+    PrimitiveElement? multipleBirthIntegerElement,
 
     /// [photo] Image of the patient.
     List<Attachment>? photo,
@@ -937,7 +938,7 @@ class Patient with Resource, _$Patient {
 /// [PatientContact] Demographics and other administrative information about an
 ///  individual or animal receiving care or other health-related services.
 @freezed
-class PatientContact with BackboneType, _$PatientContact {
+class PatientContact with _$PatientContact implements BackboneType {
   /// [PatientContact] Demographics and other administrative information about an
   ///  individual or animal receiving care or other health-related services.
   const PatientContact._();
@@ -1035,7 +1036,7 @@ class PatientContact with BackboneType, _$PatientContact {
     AdministrativeGender? gender,
 
     /// [genderElement] ("_gender") Extensions for gender
-    @JsonKey(name: '_gender') Element? genderElement,
+    @JsonKey(name: '_gender') PrimitiveElement? genderElement,
 
     /// [organization] Organization on behalf of which the contact is acting or for
     ///  which the contact is working.
@@ -1081,7 +1082,7 @@ class PatientContact with BackboneType, _$PatientContact {
 ///  about an individual or animal receiving care or other health-related
 ///  services.
 @freezed
-class PatientCommunication with BackboneType, _$PatientCommunication {
+class PatientCommunication with _$PatientCommunication implements BackboneType {
   /// [PatientCommunication] Demographics and other administrative information
   ///  about an individual or animal receiving care or other health-related
   ///  services.
@@ -1162,7 +1163,7 @@ class PatientCommunication with BackboneType, _$PatientCommunication {
     FhirBoolean? preferred,
 
     /// [preferredElement] ("_preferred") Extensions for preferred
-    @JsonKey(name: '_preferred') Element? preferredElement,
+    @JsonKey(name: '_preferred') PrimitiveElement? preferredElement,
   }) = _PatientCommunication;
 
   @override
@@ -1199,7 +1200,7 @@ class PatientCommunication with BackboneType, _$PatientCommunication {
 /// [PatientLink] Demographics and other administrative information about an
 ///  individual or animal receiving care or other health-related services.
 @freezed
-class PatientLink with BackboneType, _$PatientLink {
+class PatientLink with _$PatientLink implements BackboneType {
   /// [PatientLink] Demographics and other administrative information about an
   ///  individual or animal receiving care or other health-related services.
   const PatientLink._();
@@ -1274,7 +1275,7 @@ class PatientLink with BackboneType, _$PatientLink {
     LinkType? type,
 
     /// [typeElement] ("_type") Extensions for type
-    @JsonKey(name: '_type') Element? typeElement,
+    @JsonKey(name: '_type') PrimitiveElement? typeElement,
   }) = _PatientLink;
 
   @override
@@ -1311,7 +1312,7 @@ class PatientLink with BackboneType, _$PatientLink {
 /// [Person] Demographics and administrative information about a person
 ///  independent of a specific health-related context.
 @freezed
-class Person with Resource, _$Person {
+class Person with _$Person implements DomainResource {
   /// [Person] Demographics and administrative information about a person
   ///  independent of a specific health-related context.
   const Person._();
@@ -1438,13 +1439,13 @@ class Person with Resource, _$Person {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1490,7 +1491,7 @@ class Person with Resource, _$Person {
     FhirBoolean? active,
 
     /// [activeElement] ("_active") Extensions for active
-    @JsonKey(name: '_active') Element? activeElement,
+    @JsonKey(name: '_active') PrimitiveElement? activeElement,
 
     /// [name] A name associated with the person.
     List<HumanName>? name,
@@ -1503,26 +1504,27 @@ class Person with Resource, _$Person {
     AdministrativeGender? gender,
 
     /// [genderElement] ("_gender") Extensions for gender
-    @JsonKey(name: '_gender') Element? genderElement,
+    @JsonKey(name: '_gender') PrimitiveElement? genderElement,
 
     /// [birthDate] The birth date for the person.
     FhirDate? birthDate,
 
     /// [birthDateElement] ("_birthDate") Extensions for birthDate
-    @JsonKey(name: '_birthDate') Element? birthDateElement,
+    @JsonKey(name: '_birthDate') PrimitiveElement? birthDateElement,
 
     /// [deceasedBoolean] Indicates if the individual is deceased or not.
     FhirBoolean? deceasedBoolean,
 
     /// [deceasedBooleanElement] ("_deceasedBoolean") Extensions for deceasedBoolean
-    @JsonKey(name: '_deceasedBoolean') Element? deceasedBooleanElement,
+    @JsonKey(name: '_deceasedBoolean') PrimitiveElement? deceasedBooleanElement,
 
     /// [deceasedDateTime] Indicates if the individual is deceased or not.
     FhirDateTime? deceasedDateTime,
 
     /// [deceasedDateTimeElement] ("_deceasedDateTime") Extensions for
     ///  deceasedDateTime
-    @JsonKey(name: '_deceasedDateTime') Element? deceasedDateTimeElement,
+    @JsonKey(name: '_deceasedDateTime')
+    PrimitiveElement? deceasedDateTimeElement,
 
     /// [address] One or more addresses for the person.
     List<Address>? address,
@@ -1589,7 +1591,7 @@ class Person with Resource, _$Person {
 /// [PersonCommunication] Demographics and administrative information about a
 ///  person independent of a specific health-related context.
 @freezed
-class PersonCommunication with BackboneType, _$PersonCommunication {
+class PersonCommunication with _$PersonCommunication implements BackboneType {
   /// [PersonCommunication] Demographics and administrative information about a
   ///  person independent of a specific health-related context.
   const PersonCommunication._();
@@ -1668,7 +1670,7 @@ class PersonCommunication with BackboneType, _$PersonCommunication {
     FhirBoolean? preferred,
 
     /// [preferredElement] ("_preferred") Extensions for preferred
-    @JsonKey(name: '_preferred') Element? preferredElement,
+    @JsonKey(name: '_preferred') PrimitiveElement? preferredElement,
   }) = _PersonCommunication;
 
   @override
@@ -1705,7 +1707,7 @@ class PersonCommunication with BackboneType, _$PersonCommunication {
 /// [PersonLink] Demographics and administrative information about a person
 ///  independent of a specific health-related context.
 @freezed
-class PersonLink with BackboneType, _$PersonLink {
+class PersonLink with _$PersonLink implements BackboneType {
   /// [PersonLink] Demographics and administrative information about a person
   ///  independent of a specific health-related context.
   const PersonLink._();
@@ -1778,7 +1780,7 @@ class PersonLink with BackboneType, _$PersonLink {
     IdentityAssuranceLevel? assurance,
 
     /// [assuranceElement] ("_assurance") Extensions for assurance
-    @JsonKey(name: '_assurance') Element? assuranceElement,
+    @JsonKey(name: '_assurance') PrimitiveElement? assuranceElement,
   }) = _PersonLink;
 
   @override
@@ -1815,7 +1817,7 @@ class PersonLink with BackboneType, _$PersonLink {
 /// [Practitioner] A person who is directly or indirectly involved in the
 ///  provisioning of healthcare or related services.
 @freezed
-class Practitioner with Resource, _$Practitioner {
+class Practitioner with _$Practitioner implements DomainResource {
   /// [Practitioner] A person who is directly or indirectly involved in the
   ///  provisioning of healthcare or related services.
   const Practitioner._();
@@ -1945,13 +1947,13 @@ class Practitioner with Resource, _$Practitioner {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1997,7 +1999,7 @@ class Practitioner with Resource, _$Practitioner {
     FhirBoolean? active,
 
     /// [activeElement] ("_active") Extensions for active
-    @JsonKey(name: '_active') Element? activeElement,
+    @JsonKey(name: '_active') PrimitiveElement? activeElement,
 
     /// [name] The name(s) associated with the practitioner.
     List<HumanName>? name,
@@ -2011,26 +2013,27 @@ class Practitioner with Resource, _$Practitioner {
     AdministrativeGender? gender,
 
     /// [genderElement] ("_gender") Extensions for gender
-    @JsonKey(name: '_gender') Element? genderElement,
+    @JsonKey(name: '_gender') PrimitiveElement? genderElement,
 
     /// [birthDate] The date of birth for the practitioner.
     FhirDate? birthDate,
 
     /// [birthDateElement] ("_birthDate") Extensions for birthDate
-    @JsonKey(name: '_birthDate') Element? birthDateElement,
+    @JsonKey(name: '_birthDate') PrimitiveElement? birthDateElement,
 
     /// [deceasedBoolean] Indicates if the practitioner is deceased or not.
     FhirBoolean? deceasedBoolean,
 
     /// [deceasedBooleanElement] ("_deceasedBoolean") Extensions for deceasedBoolean
-    @JsonKey(name: '_deceasedBoolean') Element? deceasedBooleanElement,
+    @JsonKey(name: '_deceasedBoolean') PrimitiveElement? deceasedBooleanElement,
 
     /// [deceasedDateTime] Indicates if the practitioner is deceased or not.
     FhirDateTime? deceasedDateTime,
 
     /// [deceasedDateTimeElement] ("_deceasedDateTime") Extensions for
     ///  deceasedDateTime
-    @JsonKey(name: '_deceasedDateTime') Element? deceasedDateTimeElement,
+    @JsonKey(name: '_deceasedDateTime')
+    PrimitiveElement? deceasedDateTimeElement,
 
     /// [address] Address(es) of the practitioner that are not role specific
     ///  (typically home address). Work addresses are not typically entered in this
@@ -2099,7 +2102,9 @@ class Practitioner with Resource, _$Practitioner {
 /// [PractitionerQualification] A person who is directly or indirectly involved
 ///  in the provisioning of healthcare or related services.
 @freezed
-class PractitionerQualification with BackboneType, _$PractitionerQualification {
+class PractitionerQualification
+    with _$PractitionerQualification
+    implements BackboneType {
   /// [PractitionerQualification] A person who is directly or indirectly involved
   ///  in the provisioning of healthcare or related services.
   const PractitionerQualification._();
@@ -2212,7 +2217,9 @@ class PractitionerQualification with BackboneType, _$PractitionerQualification {
 /// [PractitionerCommunication] A person who is directly or indirectly involved
 ///  in the provisioning of healthcare or related services.
 @freezed
-class PractitionerCommunication with BackboneType, _$PractitionerCommunication {
+class PractitionerCommunication
+    with _$PractitionerCommunication
+    implements BackboneType {
   /// [PractitionerCommunication] A person who is directly or indirectly involved
   ///  in the provisioning of healthcare or related services.
   const PractitionerCommunication._();
@@ -2291,7 +2298,7 @@ class PractitionerCommunication with BackboneType, _$PractitionerCommunication {
     FhirBoolean? preferred,
 
     /// [preferredElement] ("_preferred") Extensions for preferred
-    @JsonKey(name: '_preferred') Element? preferredElement,
+    @JsonKey(name: '_preferred') PrimitiveElement? preferredElement,
   }) = _PractitionerCommunication;
 
   @override
@@ -2328,7 +2335,7 @@ class PractitionerCommunication with BackboneType, _$PractitionerCommunication {
 /// [PractitionerRole] A specific set of Roles/Locations/specialties/services
 ///  that a practitioner may perform at an organization for a period of time.
 @freezed
-class PractitionerRole with Resource, _$PractitionerRole {
+class PractitionerRole with _$PractitionerRole implements DomainResource {
   /// [PractitionerRole] A specific set of Roles/Locations/specialties/services
   ///  that a practitioner may perform at an organization for a period of time.
   const PractitionerRole._();
@@ -2456,13 +2463,15 @@ class PractitionerRole with Resource, _$PractitionerRole {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @override @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @override
+    @JsonKey(name: '_implicitRules')
+    PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @override @JsonKey(name: '_language') Element? languageElement,
+    @override @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -2510,7 +2519,7 @@ class PractitionerRole with Resource, _$PractitionerRole {
     FhirBoolean? active,
 
     /// [activeElement] ("_active") Extensions for active
-    @override @JsonKey(name: '_active') Element? activeElement,
+    @override @JsonKey(name: '_active') PrimitiveElement? activeElement,
 
     /// [period] The period during which the person is authorized to act as a
     ///  practitioner in these role(s) for the organization.
@@ -2607,7 +2616,7 @@ class PractitionerRole with Resource, _$PractitionerRole {
 ///  health or the care for a patient, but who is not the target of healthcare,
 ///  nor has a formal responsibility in the care process.
 @freezed
-class RelatedPerson with Resource, _$RelatedPerson {
+class RelatedPerson with _$RelatedPerson implements DomainResource {
   /// [RelatedPerson] Information about a person that is involved in a patient's
   ///  health or the care for a patient, but who is not the target of healthcare,
   ///  nor has a formal responsibility in the care process.
@@ -2726,13 +2735,15 @@ class RelatedPerson with Resource, _$RelatedPerson {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @override @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @override
+    @JsonKey(name: '_implicitRules')
+    PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @override @JsonKey(name: '_language') Element? languageElement,
+    @override @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -2778,7 +2789,7 @@ class RelatedPerson with Resource, _$RelatedPerson {
     FhirBoolean? active,
 
     /// [activeElement] ("_active") Extensions for active
-    @override @JsonKey(name: '_active') Element? activeElement,
+    @override @JsonKey(name: '_active') PrimitiveElement? activeElement,
 
     /// [patient] The patient this person is related to.
     required Reference patient,
@@ -2799,13 +2810,13 @@ class RelatedPerson with Resource, _$RelatedPerson {
     AdministrativeGender? gender,
 
     /// [genderElement] ("_gender") Extensions for gender
-    @override @JsonKey(name: '_gender') Element? genderElement,
+    @override @JsonKey(name: '_gender') PrimitiveElement? genderElement,
 
     /// [birthDate] The date on which the related person was born.
     FhirDate? birthDate,
 
     /// [birthDateElement] ("_birthDate") Extensions for birthDate
-    @override @JsonKey(name: '_birthDate') Element? birthDateElement,
+    @override @JsonKey(name: '_birthDate') PrimitiveElement? birthDateElement,
 
     /// [address] Address where the related person can be contacted or visited.
     List<Address>? address,
@@ -2948,7 +2959,7 @@ class RelatedPersonCommunication
     FhirBoolean? preferred,
 
     /// [preferredElement] ("_preferred") Extensions for preferred
-    @JsonKey(name: '_preferred') Element? preferredElement,
+    @JsonKey(name: '_preferred') PrimitiveElement? preferredElement,
   }) = _RelatedPersonCommunication;
 
   @override

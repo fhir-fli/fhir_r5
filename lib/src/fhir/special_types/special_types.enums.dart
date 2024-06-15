@@ -1,4 +1,4 @@
-part of 'special_types.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum NarrativeStatus {
   @JsonValue('generated')
@@ -44,7 +44,6 @@ enum NarrativeStatus {
         return 'additional';
       case NarrativeStatus.empty:
         return 'empty';
-
     }
   }
 
@@ -101,7 +100,6 @@ enum ElementDefinitionRepresentation {
         return 'cdaText';
       case ElementDefinitionRepresentation.xhtml:
         return 'xhtml';
-
     }
   }
 
@@ -146,7 +144,6 @@ enum ElementDefinitionSlicingRules {
         return 'open';
       case ElementDefinitionSlicingRules.openatend:
         return 'openAtEnd';
-
     }
   }
 
@@ -203,7 +200,6 @@ enum ElementDefinitionDiscriminatorType {
         return 'type';
       case ElementDefinitionDiscriminatorType.profile:
         return 'profile';
-
     }
   }
 
@@ -248,7 +244,6 @@ enum ElementDefinitionTypeAggregation {
         return 'referenced';
       case ElementDefinitionTypeAggregation.bundled:
         return 'bundled';
-
     }
   }
 
@@ -293,7 +288,6 @@ enum ElementDefinitionTypeVersioning {
         return 'independent';
       case ElementDefinitionTypeVersioning.specific:
         return 'specific';
-
     }
   }
 
@@ -332,7 +326,6 @@ enum ElementDefinitionConstraintSeverity {
         return 'error';
       case ElementDefinitionConstraintSeverity.warning:
         return 'warning';
-
     }
   }
 
@@ -383,7 +376,6 @@ enum ElementDefinitionBindingStrength {
         return 'preferred';
       case ElementDefinitionBindingStrength.example:
         return 'example';
-
     }
   }
 

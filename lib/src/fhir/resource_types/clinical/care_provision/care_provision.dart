@@ -19,7 +19,7 @@ part 'care_provision.enums.dart';
 ///  of time, possibly limited to care for a specific condition or set of
 ///  conditions.
 @freezed
-class CarePlan with Resource, _$CarePlan {
+class CarePlan with _$CarePlan implements DomainResource {
   /// [CarePlan] Describes the intention of how one or more practitioners intend
   ///  to deliver care for a particular patient, group or community for a period
   ///  of time, possibly limited to care for a specific condition or set of
@@ -189,13 +189,13 @@ class CarePlan with Resource, _$CarePlan {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -269,14 +269,14 @@ class CarePlan with Resource, _$CarePlan {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [intent] Indicates the level of authority/intentionality associated with
     ///  the care plan and where the care plan fits into the workflow chain.
     FhirCode? intent,
 
     /// [intentElement] ("_intent") Extensions for intent
-    @JsonKey(name: '_intent') Element? intentElement,
+    @JsonKey(name: '_intent') PrimitiveElement? intentElement,
 
     /// [category] Identifies what "kind" of plan this is to support
     ///  differentiation between multiple co-existing plans; e.g. "Home health",
@@ -287,13 +287,13 @@ class CarePlan with Resource, _$CarePlan {
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [description] A description of the scope and nature of the plan.
     String? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [subject] Identifies the patient or group whose intended care is described
     ///  by the plan.
@@ -312,7 +312,7 @@ class CarePlan with Resource, _$CarePlan {
     FhirDateTime? created,
 
     /// [createdElement] ("_created") Extensions for created
-    @JsonKey(name: '_created') Element? createdElement,
+    @JsonKey(name: '_created') PrimitiveElement? createdElement,
 
     /// [custodian] When populated, the custodian is responsible for the care plan.
     ///  The care plan is attributed to the custodian.
@@ -392,7 +392,7 @@ class CarePlan with Resource, _$CarePlan {
 ///  period of time, possibly limited to care for a specific condition or set
 ///  of conditions.
 @freezed
-class CarePlanActivity with BackboneType, _$CarePlanActivity {
+class CarePlanActivity with _$CarePlanActivity implements BackboneType {
   /// [CarePlanActivity] Describes the intention of how one or more practitioners
   ///  intend to deliver care for a particular patient, group or community for a
   ///  period of time, possibly limited to care for a specific condition or set
@@ -518,7 +518,7 @@ class CarePlanActivity with BackboneType, _$CarePlanActivity {
 /// [CareTeam] The Care Team includes all the people and organizations who plan
 ///  to participate in the coordination and delivery of care.
 @freezed
-class CareTeam with Resource, _$CareTeam {
+class CareTeam with _$CareTeam implements DomainResource {
   /// [CareTeam] The Care Team includes all the people and organizations who plan
   ///  to participate in the coordination and delivery of care.
   const CareTeam._();
@@ -636,13 +636,13 @@ class CareTeam with Resource, _$CareTeam {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -690,7 +690,7 @@ class CareTeam with Resource, _$CareTeam {
     CareTeamStatus? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [category] Identifies what kind of team.  This is to support
     ///  differentiation between multiple co-existing teams, such as care plan
@@ -702,7 +702,7 @@ class CareTeam with Resource, _$CareTeam {
     String? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') Element? nameElement,
+    @JsonKey(name: '_name') PrimitiveElement? nameElement,
 
     /// [subject] Identifies the patient or group whose intended care is handled by
     ///  the team.
@@ -774,7 +774,7 @@ class CareTeam with Resource, _$CareTeam {
 ///  organizations who plan to participate in the coordination and delivery of
 ///  care.
 @freezed
-class CareTeamParticipant with BackboneType, _$CareTeamParticipant {
+class CareTeamParticipant with _$CareTeamParticipant implements BackboneType {
   /// [CareTeamParticipant] The Care Team includes all the people and
   ///  organizations who plan to participate in the coordination and delivery of
   ///  care.
@@ -906,7 +906,7 @@ class CareTeamParticipant with BackboneType, _$CareTeamParticipant {
 ///  daily living, obtaining herd immunity via immunization, meeting a process
 ///  improvement objective, etc.
 @freezed
-class Goal with Resource, _$Goal {
+class Goal with _$Goal implements DomainResource {
   /// [Goal] Describes the intended objective(s) for a patient, group or
   ///  organization care, for example, weight loss, restoring an activity of
   ///  daily living, obtaining herd immunity via immunization, meeting a process
@@ -1051,13 +1051,13 @@ class Goal with Resource, _$Goal {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1105,7 +1105,7 @@ class Goal with Resource, _$Goal {
     FhirCode? lifecycleStatus,
 
     /// [lifecycleStatusElement] ("_lifecycleStatus") Extensions for lifecycleStatus
-    @JsonKey(name: '_lifecycleStatus') Element? lifecycleStatusElement,
+    @JsonKey(name: '_lifecycleStatus') PrimitiveElement? lifecycleStatusElement,
 
     /// [achievementStatus] Describes the progression, or lack thereof, towards the
     ///  goal against the target.
@@ -1119,7 +1119,7 @@ class Goal with Resource, _$Goal {
     FhirBoolean? continuous,
 
     /// [continuousElement] ("_continuous") Extensions for continuous
-    @JsonKey(name: '_continuous') Element? continuousElement,
+    @JsonKey(name: '_continuous') PrimitiveElement? continuousElement,
 
     /// [priority] Identifies the mutually agreed level of importance associated
     ///  with reaching/sustaining the goal.
@@ -1139,7 +1139,7 @@ class Goal with Resource, _$Goal {
     FhirDate? startDate,
 
     /// [startDateElement] ("_startDate") Extensions for startDate
-    @JsonKey(name: '_startDate') Element? startDateElement,
+    @JsonKey(name: '_startDate') PrimitiveElement? startDateElement,
 
     /// [startCodeableConcept] The date or event after which the goal should begin
     ///  being pursued.
@@ -1153,13 +1153,13 @@ class Goal with Resource, _$Goal {
     FhirDate? statusDate,
 
     /// [statusDateElement] ("_statusDate") Extensions for statusDate
-    @JsonKey(name: '_statusDate') Element? statusDateElement,
+    @JsonKey(name: '_statusDate') PrimitiveElement? statusDateElement,
 
     /// [statusReason] Captures the reason for the current status.
     String? statusReason,
 
     /// [statusReasonElement] ("_statusReason") Extensions for statusReason
-    @JsonKey(name: '_statusReason') Element? statusReasonElement,
+    @JsonKey(name: '_statusReason') PrimitiveElement? statusReasonElement,
 
     /// [source] Indicates whose goal this is - patient goal, practitioner goal,
     ///  etc.
@@ -1220,7 +1220,7 @@ class Goal with Resource, _$Goal {
 ///  daily living, obtaining herd immunity via immunization, meeting a process
 ///  improvement objective, etc.
 @freezed
-class GoalTarget with BackboneType, _$GoalTarget {
+class GoalTarget with _$GoalTarget implements BackboneType {
   /// [GoalTarget] Describes the intended objective(s) for a patient, group or
   ///  organization care, for example, weight loss, restoring an activity of
   ///  daily living, obtaining herd immunity via immunization, meeting a process
@@ -1387,7 +1387,7 @@ class GoalTarget with BackboneType, _$GoalTarget {
     String? detailString,
 
     /// [detailStringElement] ("_detailString") Extensions for detailString
-    @JsonKey(name: '_detailString') Element? detailStringElement,
+    @JsonKey(name: '_detailString') PrimitiveElement? detailStringElement,
 
     /// [detailBoolean] The target value of the focus to be achieved to signify the
     ///  fulfillment of the goal, e.g. 150 pounds, 7.0%. Either the high or low or
@@ -1398,7 +1398,7 @@ class GoalTarget with BackboneType, _$GoalTarget {
     FhirBoolean? detailBoolean,
 
     /// [detailBooleanElement] ("_detailBoolean") Extensions for detailBoolean
-    @JsonKey(name: '_detailBoolean') Element? detailBooleanElement,
+    @JsonKey(name: '_detailBoolean') PrimitiveElement? detailBooleanElement,
 
     /// [detailInteger] The target value of the focus to be achieved to signify the
     ///  fulfillment of the goal, e.g. 150 pounds, 7.0%. Either the high or low or
@@ -1409,7 +1409,7 @@ class GoalTarget with BackboneType, _$GoalTarget {
     FhirInteger? detailInteger,
 
     /// [detailIntegerElement] ("_detailInteger") Extensions for detailInteger
-    @JsonKey(name: '_detailInteger') Element? detailIntegerElement,
+    @JsonKey(name: '_detailInteger') PrimitiveElement? detailIntegerElement,
 
     /// [detailRatio] The target value of the focus to be achieved to signify the
     ///  fulfillment of the goal, e.g. 150 pounds, 7.0%. Either the high or low or
@@ -1424,7 +1424,7 @@ class GoalTarget with BackboneType, _$GoalTarget {
     FhirDate? dueDate,
 
     /// [dueDateElement] ("_dueDate") Extensions for dueDate
-    @JsonKey(name: '_dueDate') Element? dueDateElement,
+    @JsonKey(name: '_dueDate') PrimitiveElement? dueDateElement,
 
     /// [dueDuration] Indicates either the date or the duration after start by
     ///  which the goal should be met.
@@ -1473,7 +1473,7 @@ class GoalTarget with BackboneType, _$GoalTarget {
 ///  such as the patient's memory, from a nutrition label,  or from a clinician
 ///  documenting observed intake.
 @freezed
-class NutritionIntake with Resource, _$NutritionIntake {
+class NutritionIntake with _$NutritionIntake implements DomainResource {
   /// [NutritionIntake] A record of food or fluid that is being consumed by a
   ///  patient.   A NutritionIntake may indicate that the patient may be
   ///  consuming the food or fluid now or has consumed the food or fluid in the
@@ -1651,13 +1651,13 @@ class NutritionIntake with Resource, _$NutritionIntake {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -1727,7 +1727,7 @@ class NutritionIntake with Resource, _$NutritionIntake {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [statusReason] Captures the reason for the current state of the
     ///  NutritionIntake.
@@ -1750,7 +1750,8 @@ class NutritionIntake with Resource, _$NutritionIntake {
 
     /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
     ///  occurrenceDateTime
-    @JsonKey(name: '_occurrenceDateTime') Element? occurrenceDateTimeElement,
+    @JsonKey(name: '_occurrenceDateTime')
+    PrimitiveElement? occurrenceDateTimeElement,
 
     /// [occurrencePeriod] The interval of time during which it is being asserted
     ///  that the patient is/was consuming the food or fluid.
@@ -1761,7 +1762,7 @@ class NutritionIntake with Resource, _$NutritionIntake {
     FhirDateTime? recorded,
 
     /// [recordedElement] ("_recorded") Extensions for recorded
-    @JsonKey(name: '_recorded') Element? recordedElement,
+    @JsonKey(name: '_recorded') PrimitiveElement? recordedElement,
 
     /// [reportedBoolean] The person or organization that provided the information
     ///  about the consumption of this food or fluid. Note: Use derivedFrom when a
@@ -1769,7 +1770,7 @@ class NutritionIntake with Resource, _$NutritionIntake {
     FhirBoolean? reportedBoolean,
 
     /// [reportedBooleanElement] ("_reportedBoolean") Extensions for reportedBoolean
-    @JsonKey(name: '_reportedBoolean') Element? reportedBooleanElement,
+    @JsonKey(name: '_reportedBoolean') PrimitiveElement? reportedBooleanElement,
 
     /// [reportedReference] The person or organization that provided the
     ///  information about the consumption of this food or fluid. Note: Use
@@ -1979,7 +1980,7 @@ class NutritionIntakeConsumedItem
     FhirBoolean? notConsumed,
 
     /// [notConsumedElement] ("_notConsumed") Extensions for notConsumed
-    @JsonKey(name: '_notConsumed') Element? notConsumedElement,
+    @JsonKey(name: '_notConsumed') PrimitiveElement? notConsumedElement,
 
     /// [notConsumedReason] Document the reason the food or fluid was not consumed,
     ///  such as refused, held, etc.
@@ -2161,7 +2162,9 @@ class NutritionIntakeIngredientLabel
 ///  such as the patient's memory, from a nutrition label,  or from a clinician
 ///  documenting observed intake.
 @freezed
-class NutritionIntakePerformer with BackboneType, _$NutritionIntakePerformer {
+class NutritionIntakePerformer
+    with _$NutritionIntakePerformer
+    implements BackboneType {
   /// [NutritionIntakePerformer] A record of food or fluid that is being consumed
   ///  by a patient.   A NutritionIntake may indicate that the patient may be
   ///  consuming the food or fluid now or has consumed the food or fluid in the
@@ -2280,7 +2283,7 @@ class NutritionIntakePerformer with BackboneType, _$NutritionIntakePerformer {
 /// [NutritionOrder] A request to supply a diet, formula feeding (enteral) or
 ///  oral nutritional supplement to a patient/resident.
 @freezed
-class NutritionOrder with Resource, _$NutritionOrder {
+class NutritionOrder with _$NutritionOrder implements DomainResource {
   /// [NutritionOrder] A request to supply a diet, formula feeding (enteral) or
   ///  oral nutritional supplement to a patient/resident.
   const NutritionOrder._();
@@ -2461,13 +2464,13 @@ class NutritionOrder with Resource, _$NutritionOrder {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -2543,21 +2546,21 @@ class NutritionOrder with Resource, _$NutritionOrder {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [intent] Indicates the level of authority/intentionality associated with
     ///  the NutrionOrder and where the request fits into the workflow chain.
     FhirCode? intent,
 
     /// [intentElement] ("_intent") Extensions for intent
-    @JsonKey(name: '_intent') Element? intentElement,
+    @JsonKey(name: '_intent') PrimitiveElement? intentElement,
 
     /// [priority] Indicates how quickly the Nutrition Order should be addressed
     ///  with respect to other        requests.
     FhirCode? priority,
 
     /// [priorityElement] ("_priority") Extensions for priority
-    @JsonKey(name: '_priority') Element? priorityElement,
+    @JsonKey(name: '_priority') PrimitiveElement? priorityElement,
 
     /// [subject] The person or set of individuals who needs the nutrition order
     ///  for an oral diet, nutritional supplement and/or enteral or formula feeding.
@@ -2576,7 +2579,7 @@ class NutritionOrder with Resource, _$NutritionOrder {
     FhirDateTime? dateTime,
 
     /// [dateTimeElement] ("_dateTime") Extensions for dateTime
-    @JsonKey(name: '_dateTime') Element? dateTimeElement,
+    @JsonKey(name: '_dateTime') PrimitiveElement? dateTimeElement,
 
     /// [orderer] The practitioner that holds legal responsibility for ordering the
     ///  diet, nutritional supplement, or formula feedings.
@@ -2617,7 +2620,8 @@ class NutritionOrder with Resource, _$NutritionOrder {
 
     /// [outsideFoodAllowedElement] ("_outsideFoodAllowed") Extensions for
     ///  outsideFoodAllowed
-    @JsonKey(name: '_outsideFoodAllowed') Element? outsideFoodAllowedElement,
+    @JsonKey(name: '_outsideFoodAllowed')
+    PrimitiveElement? outsideFoodAllowedElement,
 
     /// [oralDiet] Diet given orally in contrast to enteral (tube) feeding.
     NutritionOrderOralDiet? oralDiet,
@@ -2678,7 +2682,9 @@ class NutritionOrder with Resource, _$NutritionOrder {
 /// [NutritionOrderOralDiet] A request to supply a diet, formula feeding
 ///  (enteral) or oral nutritional supplement to a patient/resident.
 @freezed
-class NutritionOrderOralDiet with BackboneType, _$NutritionOrderOralDiet {
+class NutritionOrderOralDiet
+    with _$NutritionOrderOralDiet
+    implements BackboneType {
   /// [NutritionOrderOralDiet] A request to supply a diet, formula feeding
   ///  (enteral) or oral nutritional supplement to a patient/resident.
   const NutritionOrderOralDiet._();
@@ -2781,7 +2787,7 @@ class NutritionOrderOralDiet with BackboneType, _$NutritionOrderOralDiet {
     String? instruction,
 
     /// [instructionElement] ("_instruction") Extensions for instruction
-    @JsonKey(name: '_instruction') Element? instructionElement,
+    @JsonKey(name: '_instruction') PrimitiveElement? instructionElement,
   }) = _NutritionOrderOralDiet;
 
   @override
@@ -2818,7 +2824,9 @@ class NutritionOrderOralDiet with BackboneType, _$NutritionOrderOralDiet {
 /// [NutritionOrderSchedule] A request to supply a diet, formula feeding
 ///  (enteral) or oral nutritional supplement to a patient/resident.
 @freezed
-class NutritionOrderSchedule with BackboneType, _$NutritionOrderSchedule {
+class NutritionOrderSchedule
+    with _$NutritionOrderSchedule
+    implements BackboneType {
   /// [NutritionOrderSchedule] A request to supply a diet, formula feeding
   ///  (enteral) or oral nutritional supplement to a patient/resident.
   const NutritionOrderSchedule._();
@@ -2898,7 +2906,7 @@ class NutritionOrderSchedule with BackboneType, _$NutritionOrderSchedule {
     FhirBoolean? asNeeded,
 
     /// [asNeededElement] ("_asNeeded") Extensions for asNeeded
-    @JsonKey(name: '_asNeeded') Element? asNeededElement,
+    @JsonKey(name: '_asNeeded') PrimitiveElement? asNeededElement,
 
     /// [asNeededFor] Indicates whether the product is only taken based on a
     ///  precondition for taking the product.
@@ -2939,7 +2947,9 @@ class NutritionOrderSchedule with BackboneType, _$NutritionOrderSchedule {
 /// [NutritionOrderNutrient] A request to supply a diet, formula feeding
 ///  (enteral) or oral nutritional supplement to a patient/resident.
 @freezed
-class NutritionOrderNutrient with BackboneType, _$NutritionOrderNutrient {
+class NutritionOrderNutrient
+    with _$NutritionOrderNutrient
+    implements BackboneType {
   /// [NutritionOrderNutrient] A request to supply a diet, formula feeding
   ///  (enteral) or oral nutritional supplement to a patient/resident.
   const NutritionOrderNutrient._();
@@ -3044,7 +3054,9 @@ class NutritionOrderNutrient with BackboneType, _$NutritionOrderNutrient {
 /// [NutritionOrderTexture] A request to supply a diet, formula feeding
 ///  (enteral) or oral nutritional supplement to a patient/resident.
 @freezed
-class NutritionOrderTexture with BackboneType, _$NutritionOrderTexture {
+class NutritionOrderTexture
+    with _$NutritionOrderTexture
+    implements BackboneType {
   /// [NutritionOrderTexture] A request to supply a diet, formula feeding
   ///  (enteral) or oral nutritional supplement to a patient/resident.
   const NutritionOrderTexture._();
@@ -3151,7 +3163,9 @@ class NutritionOrderTexture with BackboneType, _$NutritionOrderTexture {
 /// [NutritionOrderSupplement] A request to supply a diet, formula feeding
 ///  (enteral) or oral nutritional supplement to a patient/resident.
 @freezed
-class NutritionOrderSupplement with BackboneType, _$NutritionOrderSupplement {
+class NutritionOrderSupplement
+    with _$NutritionOrderSupplement
+    implements BackboneType {
   /// [NutritionOrderSupplement] A request to supply a diet, formula feeding
   ///  (enteral) or oral nutritional supplement to a patient/resident.
   const NutritionOrderSupplement._();
@@ -3235,7 +3249,7 @@ class NutritionOrderSupplement with BackboneType, _$NutritionOrderSupplement {
     String? productName,
 
     /// [productNameElement] ("_productName") Extensions for productName
-    @JsonKey(name: '_productName') Element? productNameElement,
+    @JsonKey(name: '_productName') PrimitiveElement? productNameElement,
 
     /// [schedule] Schedule information for a supplement.
     NutritionOrderSchedule1? schedule,
@@ -3248,7 +3262,7 @@ class NutritionOrderSupplement with BackboneType, _$NutritionOrderSupplement {
     String? instruction,
 
     /// [instructionElement] ("_instruction") Extensions for instruction
-    @JsonKey(name: '_instruction') Element? instructionElement,
+    @JsonKey(name: '_instruction') PrimitiveElement? instructionElement,
   }) = _NutritionOrderSupplement;
 
   @override
@@ -3285,7 +3299,9 @@ class NutritionOrderSupplement with BackboneType, _$NutritionOrderSupplement {
 /// [NutritionOrderSchedule1] A request to supply a diet, formula feeding
 ///  (enteral) or oral nutritional supplement to a patient/resident.
 @freezed
-class NutritionOrderSchedule1 with BackboneType, _$NutritionOrderSchedule1 {
+class NutritionOrderSchedule1
+    with _$NutritionOrderSchedule1
+    implements BackboneType {
   /// [NutritionOrderSchedule1] A request to supply a diet, formula feeding
   ///  (enteral) or oral nutritional supplement to a patient/resident.
   const NutritionOrderSchedule1._();
@@ -3365,7 +3381,7 @@ class NutritionOrderSchedule1 with BackboneType, _$NutritionOrderSchedule1 {
     FhirBoolean? asNeeded,
 
     /// [asNeededElement] ("_asNeeded") Extensions for asNeeded
-    @JsonKey(name: '_asNeeded') Element? asNeededElement,
+    @JsonKey(name: '_asNeeded') PrimitiveElement? asNeededElement,
 
     /// [asNeededFor] Indicates whether the supplement is only taken based on a
     ///  precondition for taking the supplement.
@@ -3516,7 +3532,7 @@ class NutritionOrderEnteralFormula
     /// [baseFormulaProductNameElement] ("_baseFormulaProductName") Extensions for
     ///  baseFormulaProductName
     @JsonKey(name: '_baseFormulaProductName')
-    Element? baseFormulaProductNameElement,
+    PrimitiveElement? baseFormulaProductNameElement,
 
     /// [deliveryDevice] The intended type of device that is to be used for the
     ///  administration of the enteral formula.
@@ -3556,7 +3572,7 @@ class NutritionOrderEnteralFormula
     /// [administrationInstructionElement] ("_administrationInstruction")
     ///  Extensions for administrationInstruction
     @JsonKey(name: '_administrationInstruction')
-    Element? administrationInstructionElement,
+    PrimitiveElement? administrationInstructionElement,
   }) = _NutritionOrderEnteralFormula;
 
   @override
@@ -3594,7 +3610,9 @@ class NutritionOrderEnteralFormula
 /// [NutritionOrderAdditive] A request to supply a diet, formula feeding
 ///  (enteral) or oral nutritional supplement to a patient/resident.
 @freezed
-class NutritionOrderAdditive with BackboneType, _$NutritionOrderAdditive {
+class NutritionOrderAdditive
+    with _$NutritionOrderAdditive
+    implements BackboneType {
   /// [NutritionOrderAdditive] A request to supply a diet, formula feeding
   ///  (enteral) or oral nutritional supplement to a patient/resident.
   const NutritionOrderAdditive._();
@@ -3674,7 +3692,7 @@ class NutritionOrderAdditive with BackboneType, _$NutritionOrderAdditive {
     String? productName,
 
     /// [productNameElement] ("_productName") Extensions for productName
-    @JsonKey(name: '_productName') Element? productNameElement,
+    @JsonKey(name: '_productName') PrimitiveElement? productNameElement,
 
     /// [quantity] The amount of additive to be given in addition or to be mixed in
     ///  with the base formula.
@@ -3836,7 +3854,9 @@ class NutritionOrderAdministration
 /// [NutritionOrderSchedule2] A request to supply a diet, formula feeding
 ///  (enteral) or oral nutritional supplement to a patient/resident.
 @freezed
-class NutritionOrderSchedule2 with BackboneType, _$NutritionOrderSchedule2 {
+class NutritionOrderSchedule2
+    with _$NutritionOrderSchedule2
+    implements BackboneType {
   /// [NutritionOrderSchedule2] A request to supply a diet, formula feeding
   ///  (enteral) or oral nutritional supplement to a patient/resident.
   const NutritionOrderSchedule2._();
@@ -3916,7 +3936,7 @@ class NutritionOrderSchedule2 with BackboneType, _$NutritionOrderSchedule2 {
     FhirBoolean? asNeeded,
 
     /// [asNeededElement] ("_asNeeded") Extensions for asNeeded
-    @JsonKey(name: '_asNeeded') Element? asNeededElement,
+    @JsonKey(name: '_asNeeded') PrimitiveElement? asNeededElement,
 
     /// [asNeededFor] Indicates whether the enteral formula is only taken based on
     ///  a precondition for taking the enteral formula.
@@ -3958,7 +3978,9 @@ class NutritionOrderSchedule2 with BackboneType, _$NutritionOrderSchedule2 {
 ///  capture intended activities that have inter-dependencies such as "give
 ///  this medication after that one".
 @freezed
-class RequestOrchestration with Resource, _$RequestOrchestration {
+class RequestOrchestration
+    with _$RequestOrchestration
+    implements DomainResource {
   /// [RequestOrchestration] A set of related requests that can be used to
   ///  capture intended activities that have inter-dependencies such as "give
   ///  this medication after that one".
@@ -4111,13 +4133,13 @@ class RequestOrchestration with Resource, _$RequestOrchestration {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -4200,21 +4222,21 @@ class RequestOrchestration with Resource, _$RequestOrchestration {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [intent] Indicates the level of authority/intentionality associated with
     ///  the request and where the request fits into the workflow chain.
     FhirCode? intent,
 
     /// [intentElement] ("_intent") Extensions for intent
-    @JsonKey(name: '_intent') Element? intentElement,
+    @JsonKey(name: '_intent') PrimitiveElement? intentElement,
 
     /// [priority] Indicates how quickly the request should be addressed with
     ///  respect to other requests.
     FhirCode? priority,
 
     /// [priorityElement] ("_priority") Extensions for priority
-    @JsonKey(name: '_priority') Element? priorityElement,
+    @JsonKey(name: '_priority') PrimitiveElement? priorityElement,
 
     /// [code] A code that identifies what the overall request orchestration is.
     CodeableConcept? code,
@@ -4229,7 +4251,7 @@ class RequestOrchestration with Resource, _$RequestOrchestration {
     FhirDateTime? authoredOn,
 
     /// [authoredOnElement] ("_authoredOn") Extensions for authoredOn
-    @JsonKey(name: '_authoredOn') Element? authoredOnElement,
+    @JsonKey(name: '_authoredOn') PrimitiveElement? authoredOnElement,
 
     /// [author] Provides a reference to the author of the request orchestration.
     Reference? author,
@@ -4501,27 +4523,27 @@ class RequestOrchestrationAction
     String? linkId,
 
     /// [linkIdElement] ("_linkId") Extensions for linkId
-    @JsonKey(name: '_linkId') Element? linkIdElement,
+    @JsonKey(name: '_linkId') PrimitiveElement? linkIdElement,
 
     /// [prefix] A user-visible prefix for the action. For example a section or
     ///  item numbering such as 1. or A.
     String? prefix,
 
     /// [prefixElement] ("_prefix") Extensions for prefix
-    @JsonKey(name: '_prefix') Element? prefixElement,
+    @JsonKey(name: '_prefix') PrimitiveElement? prefixElement,
 
     /// [title] The title of the action displayed to a user.
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [description] A short description of the action used to provide a summary
     ///  to display to the user.
     FhirMarkdown? description,
 
     /// [descriptionElement] ("_description") Extensions for description
-    @JsonKey(name: '_description') Element? descriptionElement,
+    @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
 
     /// [textEquivalent] A text equivalent of the action to be performed. This
     ///  provides a human-interpretable description of the action when the
@@ -4530,14 +4552,14 @@ class RequestOrchestrationAction
     FhirMarkdown? textEquivalent,
 
     /// [textEquivalentElement] ("_textEquivalent") Extensions for textEquivalent
-    @JsonKey(name: '_textEquivalent') Element? textEquivalentElement,
+    @JsonKey(name: '_textEquivalent') PrimitiveElement? textEquivalentElement,
 
     /// [priority] Indicates how quickly the action should be addressed with
     ///  respect to other actions.
     FhirCode? priority,
 
     /// [priorityElement] ("_priority") Extensions for priority
-    @JsonKey(name: '_priority') Element? priorityElement,
+    @JsonKey(name: '_priority') PrimitiveElement? priorityElement,
 
     /// [code] A code that provides meaning for the action or action group. For
     ///  example, a section may have a LOINC code for a section of a documentation
@@ -4572,7 +4594,7 @@ class RequestOrchestrationAction
     FhirDateTime? timingDateTime,
 
     /// [timingDateTimeElement] ("_timingDateTime") Extensions for timingDateTime
-    @JsonKey(name: '_timingDateTime') Element? timingDateTimeElement,
+    @JsonKey(name: '_timingDateTime') PrimitiveElement? timingDateTimeElement,
 
     /// [timingAge] An optional value describing when the action should be
     ///  performed.
@@ -4611,7 +4633,8 @@ class RequestOrchestrationAction
 
     /// [groupingBehaviorElement] ("_groupingBehavior") Extensions for
     ///  groupingBehavior
-    @JsonKey(name: '_groupingBehavior') Element? groupingBehaviorElement,
+    @JsonKey(name: '_groupingBehavior')
+    PrimitiveElement? groupingBehaviorElement,
 
     /// [selectionBehavior] Defines the selection behavior for the action and its
     ///  children.
@@ -4619,7 +4642,8 @@ class RequestOrchestrationAction
 
     /// [selectionBehaviorElement] ("_selectionBehavior") Extensions for
     ///  selectionBehavior
-    @JsonKey(name: '_selectionBehavior') Element? selectionBehaviorElement,
+    @JsonKey(name: '_selectionBehavior')
+    PrimitiveElement? selectionBehaviorElement,
 
     /// [requiredBehavior] Defines expectations around whether an action is
     ///  required.
@@ -4627,14 +4651,16 @@ class RequestOrchestrationAction
 
     /// [requiredBehaviorElement] ("_requiredBehavior") Extensions for
     ///  requiredBehavior
-    @JsonKey(name: '_requiredBehavior') Element? requiredBehaviorElement,
+    @JsonKey(name: '_requiredBehavior')
+    PrimitiveElement? requiredBehaviorElement,
 
     /// [precheckBehavior] Defines whether the action should usually be preselected.
     FhirCode? precheckBehavior,
 
     /// [precheckBehaviorElement] ("_precheckBehavior") Extensions for
     ///  precheckBehavior
-    @JsonKey(name: '_precheckBehavior') Element? precheckBehaviorElement,
+    @JsonKey(name: '_precheckBehavior')
+    PrimitiveElement? precheckBehaviorElement,
 
     /// [cardinalityBehavior] Defines whether the action can be selected multiple
     ///  times.
@@ -4642,7 +4668,8 @@ class RequestOrchestrationAction
 
     /// [cardinalityBehaviorElement] ("_cardinalityBehavior") Extensions for
     ///  cardinalityBehavior
-    @JsonKey(name: '_cardinalityBehavior') Element? cardinalityBehaviorElement,
+    @JsonKey(name: '_cardinalityBehavior')
+    PrimitiveElement? cardinalityBehaviorElement,
 
     /// [resource] The resource that is the target of the action (e.g.
     ///  CommunicationRequest).
@@ -4657,7 +4684,8 @@ class RequestOrchestrationAction
 
     /// [definitionCanonicalElement] ("_definitionCanonical") Extensions for
     ///  definitionCanonical
-    @JsonKey(name: '_definitionCanonical') Element? definitionCanonicalElement,
+    @JsonKey(name: '_definitionCanonical')
+    PrimitiveElement? definitionCanonicalElement,
 
     /// [definitionUri] A reference to an ActivityDefinition that describes the
     ///  action to be taken in detail, a PlanDefinition that describes a series of
@@ -4667,7 +4695,7 @@ class RequestOrchestrationAction
     FhirUri? definitionUri,
 
     /// [definitionUriElement] ("_definitionUri") Extensions for definitionUri
-    @JsonKey(name: '_definitionUri') Element? definitionUriElement,
+    @JsonKey(name: '_definitionUri') PrimitiveElement? definitionUriElement,
 
     /// [transform] A reference to a StructureMap resource that defines a transform
     ///  that can be executed to produce the intent resource using the
@@ -4792,7 +4820,7 @@ class RequestOrchestrationCondition
     FhirCode? kind,
 
     /// [kindElement] ("_kind") Extensions for kind
-    @JsonKey(name: '_kind') Element? kindElement,
+    @JsonKey(name: '_kind') PrimitiveElement? kindElement,
 
     /// [expression] An expression that returns true or false, indicating whether
     ///  or not the condition is satisfied.
@@ -4835,7 +4863,9 @@ class RequestOrchestrationCondition
 ///  capture intended activities that have inter-dependencies such as "give
 ///  this medication after that one".
 @freezed
-class RequestOrchestrationInput with BackboneType, _$RequestOrchestrationInput {
+class RequestOrchestrationInput
+    with _$RequestOrchestrationInput
+    implements BackboneType {
   /// [RequestOrchestrationInput] A set of related requests that can be used to
   ///  capture intended activities that have inter-dependencies such as "give
   ///  this medication after that one".
@@ -4917,7 +4947,7 @@ class RequestOrchestrationInput with BackboneType, _$RequestOrchestrationInput {
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [requirement] Defines the data that is to be provided as input to the
     ///  action.
@@ -4928,7 +4958,7 @@ class RequestOrchestrationInput with BackboneType, _$RequestOrchestrationInput {
     FhirId? relatedData,
 
     /// [relatedDataElement] ("_relatedData") Extensions for relatedData
-    @JsonKey(name: '_relatedData') Element? relatedDataElement,
+    @JsonKey(name: '_relatedData') PrimitiveElement? relatedDataElement,
   }) = _RequestOrchestrationInput;
 
   @override
@@ -5048,7 +5078,7 @@ class RequestOrchestrationOutput
     String? title,
 
     /// [titleElement] ("_title") Extensions for title
-    @JsonKey(name: '_title') Element? titleElement,
+    @JsonKey(name: '_title') PrimitiveElement? titleElement,
 
     /// [requirement] Defines the data that results as output from the action.
     DataRequirement? requirement,
@@ -5058,7 +5088,7 @@ class RequestOrchestrationOutput
     String? relatedData,
 
     /// [relatedDataElement] ("_relatedData") Extensions for relatedData
-    @JsonKey(name: '_relatedData') Element? relatedDataElement,
+    @JsonKey(name: '_relatedData') PrimitiveElement? relatedDataElement,
   }) = _RequestOrchestrationOutput;
 
   @override
@@ -5180,20 +5210,20 @@ class RequestOrchestrationRelatedAction
     FhirId? targetId,
 
     /// [targetIdElement] ("_targetId") Extensions for targetId
-    @JsonKey(name: '_targetId') Element? targetIdElement,
+    @JsonKey(name: '_targetId') PrimitiveElement? targetIdElement,
 
     /// [relationship] The relationship of this action to the related action.
     FhirCode? relationship,
 
     /// [relationshipElement] ("_relationship") Extensions for relationship
-    @JsonKey(name: '_relationship') Element? relationshipElement,
+    @JsonKey(name: '_relationship') PrimitiveElement? relationshipElement,
 
     /// [endRelationship] The relationship of the end of this action to the related
     ///  action.
     FhirCode? endRelationship,
 
     /// [endRelationshipElement] ("_endRelationship") Extensions for endRelationship
-    @JsonKey(name: '_endRelationship') Element? endRelationshipElement,
+    @JsonKey(name: '_endRelationship') PrimitiveElement? endRelationshipElement,
 
     /// [offsetDuration] A duration or range of durations to apply to the
     ///  relationship. For example, 30-60 minutes before.
@@ -5327,7 +5357,7 @@ class RequestOrchestrationParticipant
     FhirCode? type,
 
     /// [typeElement] ("_type") Extensions for type
-    @JsonKey(name: '_type') Element? typeElement,
+    @JsonKey(name: '_type') PrimitiveElement? typeElement,
 
     /// [typeCanonical] The type of participant in the action.
     FhirCanonical? typeCanonical,
@@ -5347,7 +5377,7 @@ class RequestOrchestrationParticipant
     FhirCanonical? actorCanonical,
 
     /// [actorCanonicalElement] ("_actorCanonical") Extensions for actorCanonical
-    @JsonKey(name: '_actorCanonical') Element? actorCanonicalElement,
+    @JsonKey(name: '_actorCanonical') PrimitiveElement? actorCanonicalElement,
 
     /// [actorReference] A reference to the actual participant.
     Reference? actorReference,
@@ -5475,7 +5505,7 @@ class RequestOrchestrationDynamicValue
     String? path,
 
     /// [pathElement] ("_path") Extensions for path
-    @JsonKey(name: '_path') Element? pathElement,
+    @JsonKey(name: '_path') PrimitiveElement? pathElement,
 
     /// [expression] An expression specifying the value of the customized element.
     FhirExpression? expression,
@@ -5518,7 +5548,7 @@ class RequestOrchestrationDynamicValue
 /// [RiskAssessment] An assessment of the likely outcome(s) for a patient or
 ///  other subject as well as the likelihood of each outcome.
 @freezed
-class RiskAssessment with Resource, _$RiskAssessment {
+class RiskAssessment with _$RiskAssessment implements DomainResource {
   /// [RiskAssessment] An assessment of the likely outcome(s) for a patient or
   ///  other subject as well as the likelihood of each outcome.
   const RiskAssessment._();
@@ -5651,13 +5681,13 @@ class RiskAssessment with Resource, _$RiskAssessment {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -5712,7 +5742,7 @@ class RiskAssessment with Resource, _$RiskAssessment {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [method] The algorithm, process or mechanism used to evaluate the risk.
     CodeableConcept? method,
@@ -5732,7 +5762,8 @@ class RiskAssessment with Resource, _$RiskAssessment {
 
     /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
     ///  occurrenceDateTime
-    @JsonKey(name: '_occurrenceDateTime') Element? occurrenceDateTimeElement,
+    @JsonKey(name: '_occurrenceDateTime')
+    PrimitiveElement? occurrenceDateTimeElement,
 
     /// [occurrencePeriod] The date (and possibly time) the risk assessment was
     ///  performed.
@@ -5761,7 +5792,7 @@ class RiskAssessment with Resource, _$RiskAssessment {
     String? mitigation,
 
     /// [mitigationElement] ("_mitigation") Extensions for mitigation
-    @JsonKey(name: '_mitigation') Element? mitigationElement,
+    @JsonKey(name: '_mitigation') PrimitiveElement? mitigationElement,
 
     /// [note] Additional comments about the risk assessment.
     List<Annotation>? note,
@@ -5810,7 +5841,9 @@ class RiskAssessment with Resource, _$RiskAssessment {
 /// [RiskAssessmentPrediction] An assessment of the likely outcome(s) for a
 ///  patient or other subject as well as the likelihood of each outcome.
 @freezed
-class RiskAssessmentPrediction with BackboneType, _$RiskAssessmentPrediction {
+class RiskAssessmentPrediction
+    with _$RiskAssessmentPrediction
+    implements BackboneType {
   /// [RiskAssessmentPrediction] An assessment of the likely outcome(s) for a
   ///  patient or other subject as well as the likelihood of each outcome.
   const RiskAssessmentPrediction._();
@@ -5910,7 +5943,8 @@ class RiskAssessmentPrediction with BackboneType, _$RiskAssessmentPrediction {
 
     /// [probabilityDecimalElement] ("_probabilityDecimal") Extensions for
     ///  probabilityDecimal
-    @JsonKey(name: '_probabilityDecimal') Element? probabilityDecimalElement,
+    @JsonKey(name: '_probabilityDecimal')
+    PrimitiveElement? probabilityDecimalElement,
 
     /// [probabilityRange] Indicates how likely the outcome is (in the specified
     ///  timeframe).
@@ -5927,7 +5961,7 @@ class RiskAssessmentPrediction with BackboneType, _$RiskAssessmentPrediction {
     FhirDecimal? relativeRisk,
 
     /// [relativeRiskElement] ("_relativeRisk") Extensions for relativeRisk
-    @JsonKey(name: '_relativeRisk') Element? relativeRiskElement,
+    @JsonKey(name: '_relativeRisk') PrimitiveElement? relativeRiskElement,
 
     /// [whenPeriod] Indicates the period of time or age range of the subject to
     ///  which the specified probability applies.
@@ -5941,7 +5975,7 @@ class RiskAssessmentPrediction with BackboneType, _$RiskAssessmentPrediction {
     String? rationale,
 
     /// [rationaleElement] ("_rationale") Extensions for rationale
-    @JsonKey(name: '_rationale') Element? rationaleElement,
+    @JsonKey(name: '_rationale') PrimitiveElement? rationaleElement,
   }) = _RiskAssessmentPrediction;
 
   @override
@@ -5978,7 +6012,7 @@ class RiskAssessmentPrediction with BackboneType, _$RiskAssessmentPrediction {
 /// [ServiceRequest] A record of a request for service such as diagnostic
 ///  investigations, treatments, or operations to be performed.
 @freezed
-class ServiceRequest with Resource, _$ServiceRequest {
+class ServiceRequest with _$ServiceRequest implements DomainResource {
   /// [ServiceRequest] A record of a request for service such as diagnostic
   ///  investigations, treatments, or operations to be performed.
   const ServiceRequest._();
@@ -6211,13 +6245,13 @@ class ServiceRequest with Resource, _$ServiceRequest {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -6289,14 +6323,14 @@ class ServiceRequest with Resource, _$ServiceRequest {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [intent] Whether the request is a proposal, plan, an original order or a
     ///  reflex order.
     FhirCode? intent,
 
     /// [intentElement] ("_intent") Extensions for intent
-    @JsonKey(name: '_intent') Element? intentElement,
+    @JsonKey(name: '_intent') PrimitiveElement? intentElement,
 
     /// [category] A code that classifies the service for searching, sorting and
     ///  display purposes (e.g. "Surgical Procedure").
@@ -6307,14 +6341,14 @@ class ServiceRequest with Resource, _$ServiceRequest {
     FhirCode? priority,
 
     /// [priorityElement] ("_priority") Extensions for priority
-    @JsonKey(name: '_priority') Element? priorityElement,
+    @JsonKey(name: '_priority') PrimitiveElement? priorityElement,
 
     /// [doNotPerform] Set this to true if the record is saying that the
     ///  service/procedure should NOT be performed.
     FhirBoolean? doNotPerform,
 
     /// [doNotPerformElement] ("_doNotPerform") Extensions for doNotPerform
-    @JsonKey(name: '_doNotPerform') Element? doNotPerformElement,
+    @JsonKey(name: '_doNotPerform') PrimitiveElement? doNotPerformElement,
 
     /// [code] A code or reference that identifies a particular service (i.e.,
     ///  procedure, diagnostic investigation, or panel of investigations) that have
@@ -6367,7 +6401,8 @@ class ServiceRequest with Resource, _$ServiceRequest {
 
     /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
     ///  occurrenceDateTime
-    @JsonKey(name: '_occurrenceDateTime') Element? occurrenceDateTimeElement,
+    @JsonKey(name: '_occurrenceDateTime')
+    PrimitiveElement? occurrenceDateTimeElement,
 
     /// [occurrencePeriod] The date/time at which the requested service should
     ///  occur.
@@ -6383,7 +6418,7 @@ class ServiceRequest with Resource, _$ServiceRequest {
     FhirBoolean? asNeededBoolean,
 
     /// [asNeededBooleanElement] ("_asNeededBoolean") Extensions for asNeededBoolean
-    @JsonKey(name: '_asNeededBoolean') Element? asNeededBooleanElement,
+    @JsonKey(name: '_asNeededBoolean') PrimitiveElement? asNeededBooleanElement,
 
     /// [asNeededCodeableConcept] If a CodeableConcept is present, it indicates the
     ///  pre-condition for performing the service.  For example "pain", "on
@@ -6394,7 +6429,7 @@ class ServiceRequest with Resource, _$ServiceRequest {
     FhirDateTime? authoredOn,
 
     /// [authoredOnElement] ("_authoredOn") Extensions for authoredOn
-    @JsonKey(name: '_authoredOn') Element? authoredOnElement,
+    @JsonKey(name: '_authoredOn') PrimitiveElement? authoredOnElement,
 
     /// [requester] The individual who initiated the request and has responsibility
     ///  for its activation.
@@ -6496,7 +6531,9 @@ class ServiceRequest with Resource, _$ServiceRequest {
 /// [ServiceRequestOrderDetail] A record of a request for service such as
 ///  diagnostic investigations, treatments, or operations to be performed.
 @freezed
-class ServiceRequestOrderDetail with BackboneType, _$ServiceRequestOrderDetail {
+class ServiceRequestOrderDetail
+    with _$ServiceRequestOrderDetail
+    implements BackboneType {
   /// [ServiceRequestOrderDetail] A record of a request for service such as
   ///  diagnostic investigations, treatments, or operations to be performed.
   const ServiceRequestOrderDetail._();
@@ -6599,7 +6636,9 @@ class ServiceRequestOrderDetail with BackboneType, _$ServiceRequestOrderDetail {
 /// [ServiceRequestParameter] A record of a request for service such as
 ///  diagnostic investigations, treatments, or operations to be performed.
 @freezed
-class ServiceRequestParameter with BackboneType, _$ServiceRequestParameter {
+class ServiceRequestParameter
+    with _$ServiceRequestParameter
+    implements BackboneType {
   /// [ServiceRequestParameter] A record of a request for service such as
   ///  diagnostic investigations, treatments, or operations to be performed.
   const ServiceRequestParameter._();
@@ -6697,7 +6736,7 @@ class ServiceRequestParameter with BackboneType, _$ServiceRequestParameter {
     FhirBoolean? valueBoolean,
 
     /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-    @JsonKey(name: '_valueBoolean') Element? valueBooleanElement,
+    @JsonKey(name: '_valueBoolean') PrimitiveElement? valueBooleanElement,
 
     /// [valueCodeableConcept] Indicates a value for the order detail.
     CodeableConcept? valueCodeableConcept,
@@ -6706,7 +6745,7 @@ class ServiceRequestParameter with BackboneType, _$ServiceRequestParameter {
     String? valueString,
 
     /// [valueStringElement] ("_valueString") Extensions for valueString
-    @JsonKey(name: '_valueString') Element? valueStringElement,
+    @JsonKey(name: '_valueString') PrimitiveElement? valueStringElement,
 
     /// [valuePeriod] Indicates a value for the order detail.
     Period? valuePeriod,
@@ -6820,7 +6859,8 @@ class ServiceRequestPatientInstruction
 
     /// [instructionMarkdownElement] ("_instructionMarkdown") Extensions for
     ///  instructionMarkdown
-    @JsonKey(name: '_instructionMarkdown') Element? instructionMarkdownElement,
+    @JsonKey(name: '_instructionMarkdown')
+    PrimitiveElement? instructionMarkdownElement,
 
     /// [instructionReference] Instructions in terms that are understood by the
     ///  patient or consumer.
@@ -6864,7 +6904,7 @@ class ServiceRequestPatientInstruction
 /// [VisionPrescription] An authorization for the provision of glasses and/or
 ///  contact lenses to a patient.
 @freezed
-class VisionPrescription with Resource, _$VisionPrescription {
+class VisionPrescription with _$VisionPrescription implements DomainResource {
   /// [VisionPrescription] An authorization for the provision of glasses and/or
   ///  contact lenses to a patient.
   const VisionPrescription._();
@@ -6975,13 +7015,13 @@ class VisionPrescription with Resource, _$VisionPrescription {
     FhirUri? implicitRules,
 
     /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-    @JsonKey(name: '_implicitRules') Element? implicitRulesElement,
+    @JsonKey(name: '_implicitRules') PrimitiveElement? implicitRulesElement,
 
     /// [language] The base language in which the resource is written.
     FhirCode? language,
 
     /// [languageElement] ("_language") Extensions for language
-    @JsonKey(name: '_language') Element? languageElement,
+    @JsonKey(name: '_language') PrimitiveElement? languageElement,
 
     /// [text] A human-readable narrative that contains a summary of the resource
     ///  and can be used to represent the content of the resource to a human. The
@@ -7027,13 +7067,13 @@ class VisionPrescription with Resource, _$VisionPrescription {
     FhirCode? status,
 
     /// [statusElement] ("_status") Extensions for status
-    @JsonKey(name: '_status') Element? statusElement,
+    @JsonKey(name: '_status') PrimitiveElement? statusElement,
 
     /// [created] The date this resource was created.
     FhirDateTime? created,
 
     /// [createdElement] ("_created") Extensions for created
-    @JsonKey(name: '_created') Element? createdElement,
+    @JsonKey(name: '_created') PrimitiveElement? createdElement,
 
     /// [patient] A resource reference to the person to whom the vision
     ///  prescription applies.
@@ -7048,7 +7088,7 @@ class VisionPrescription with Resource, _$VisionPrescription {
     FhirDateTime? dateWritten,
 
     /// [dateWrittenElement] ("_dateWritten") Extensions for dateWritten
-    @JsonKey(name: '_dateWritten') Element? dateWrittenElement,
+    @JsonKey(name: '_dateWritten') PrimitiveElement? dateWrittenElement,
 
     /// [prescriber] The healthcare professional responsible for authorizing the
     ///  prescription.
@@ -7221,26 +7261,26 @@ class VisionPrescriptionLensSpecification
     VisionEyeCodes? eye,
 
     /// [eyeElement] ("_eye") Extensions for eye
-    @JsonKey(name: '_eye') Element? eyeElement,
+    @JsonKey(name: '_eye') PrimitiveElement? eyeElement,
 
     /// [sphere] Lens power measured in dioptres (0.25 units).
     FhirDecimal? sphere,
 
     /// [sphereElement] ("_sphere") Extensions for sphere
-    @JsonKey(name: '_sphere') Element? sphereElement,
+    @JsonKey(name: '_sphere') PrimitiveElement? sphereElement,
 
     /// [cylinder] Power adjustment for astigmatism measured in dioptres (0.25
     ///  units).
     FhirDecimal? cylinder,
 
     /// [cylinderElement] ("_cylinder") Extensions for cylinder
-    @JsonKey(name: '_cylinder') Element? cylinderElement,
+    @JsonKey(name: '_cylinder') PrimitiveElement? cylinderElement,
 
     /// [axis] Adjustment for astigmatism measured in integer degrees.
     FhirInteger? axis,
 
     /// [axisElement] ("_axis") Extensions for axis
-    @JsonKey(name: '_axis') Element? axisElement,
+    @JsonKey(name: '_axis') PrimitiveElement? axisElement,
 
     /// [prism] Allows for adjustment on two axis.
     List<VisionPrescriptionPrism>? prism,
@@ -7250,25 +7290,25 @@ class VisionPrescriptionLensSpecification
     FhirDecimal? add,
 
     /// [addElement] ("_add") Extensions for add
-    @JsonKey(name: '_add') Element? addElement,
+    @JsonKey(name: '_add') PrimitiveElement? addElement,
 
     /// [power] Contact lens power measured in dioptres (0.25 units).
     FhirDecimal? power,
 
     /// [powerElement] ("_power") Extensions for power
-    @JsonKey(name: '_power') Element? powerElement,
+    @JsonKey(name: '_power') PrimitiveElement? powerElement,
 
     /// [backCurve] Back curvature measured in millimetres.
     FhirDecimal? backCurve,
 
     /// [backCurveElement] ("_backCurve") Extensions for backCurve
-    @JsonKey(name: '_backCurve') Element? backCurveElement,
+    @JsonKey(name: '_backCurve') PrimitiveElement? backCurveElement,
 
     /// [diameter] Contact lens diameter measured in millimetres.
     FhirDecimal? diameter,
 
     /// [diameterElement] ("_diameter") Extensions for diameter
-    @JsonKey(name: '_diameter') Element? diameterElement,
+    @JsonKey(name: '_diameter') PrimitiveElement? diameterElement,
 
     /// [duration] The recommended maximum wear period for the lens.
     Quantity? duration,
@@ -7277,13 +7317,13 @@ class VisionPrescriptionLensSpecification
     String? color,
 
     /// [colorElement] ("_color") Extensions for color
-    @JsonKey(name: '_color') Element? colorElement,
+    @JsonKey(name: '_color') PrimitiveElement? colorElement,
 
     /// [brand] Brand recommendations or restrictions.
     String? brand,
 
     /// [brandElement] ("_brand") Extensions for brand
-    @JsonKey(name: '_brand') Element? brandElement,
+    @JsonKey(name: '_brand') PrimitiveElement? brandElement,
 
     /// [note] Notes for special requirements such as coatings and lens materials.
     List<Annotation>? note,
@@ -7326,7 +7366,9 @@ class VisionPrescriptionLensSpecification
 /// [VisionPrescriptionPrism] An authorization for the provision of glasses
 ///  and/or contact lenses to a patient.
 @freezed
-class VisionPrescriptionPrism with BackboneType, _$VisionPrescriptionPrism {
+class VisionPrescriptionPrism
+    with _$VisionPrescriptionPrism
+    implements BackboneType {
   /// [VisionPrescriptionPrism] An authorization for the provision of glasses
   ///  and/or contact lenses to a patient.
   const VisionPrescriptionPrism._();
@@ -7398,13 +7440,13 @@ class VisionPrescriptionPrism with BackboneType, _$VisionPrescriptionPrism {
     FhirDecimal? amount,
 
     /// [amountElement] ("_amount") Extensions for amount
-    @JsonKey(name: '_amount') Element? amountElement,
+    @JsonKey(name: '_amount') PrimitiveElement? amountElement,
 
     /// [base] The relative base, or reference lens edge, for the prism.
     VisionBaseCodes? base,
 
     /// [baseElement] ("_base") Extensions for base
-    @JsonKey(name: '_base') Element? baseElement,
+    @JsonKey(name: '_base') PrimitiveElement? baseElement,
   }) = _VisionPrescriptionPrism;
 
   @override
