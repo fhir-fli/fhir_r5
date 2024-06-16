@@ -2640,7 +2640,8 @@ mixin _$ClaimResponseItem {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get noteNumberElement =>
+      throw _privateConstructorUsedError;
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
   ///  has been performed.
@@ -2677,7 +2678,7 @@ abstract class $ClaimResponseItemCopyWith<$Res> {
       @JsonKey(name: '_itemSequence') PrimitiveElement? itemSequenceElement,
       List<Identifier>? traceNumber,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ClaimResponseReviewOutcome? reviewOutcome,
       List<ClaimResponseAdjudication>? adjudication,
       List<ClaimResponseDetail>? detail});
@@ -2742,7 +2743,7 @@ class _$ClaimResponseItemCopyWithImpl<$Res, $Val extends ClaimResponseItem>
       noteNumberElement: freezed == noteNumberElement
           ? _value.noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -2788,7 +2789,7 @@ abstract class _$$ClaimResponseItemImplCopyWith<$Res>
       @JsonKey(name: '_itemSequence') PrimitiveElement? itemSequenceElement,
       List<Identifier>? traceNumber,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ClaimResponseReviewOutcome? reviewOutcome,
       List<ClaimResponseAdjudication>? adjudication,
       List<ClaimResponseDetail>? detail});
@@ -2852,7 +2853,7 @@ class __$$ClaimResponseItemImplCopyWithImpl<$Res>
       noteNumberElement: freezed == noteNumberElement
           ? _value._noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -2880,7 +2881,8 @@ class _$ClaimResponseItemImpl extends _ClaimResponseItem {
       @JsonKey(name: '_itemSequence') this.itemSequenceElement,
       final List<Identifier>? traceNumber,
       final List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber')
+      final List<PrimitiveElement>? noteNumberElement,
       this.reviewOutcome,
       final List<ClaimResponseAdjudication>? adjudication,
       final List<ClaimResponseDetail>? detail})
@@ -3001,12 +3003,12 @@ class _$ClaimResponseItemImpl extends _ClaimResponseItem {
   }
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-  final List<Element>? _noteNumberElement;
+  final List<PrimitiveElement>? _noteNumberElement;
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @override
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement {
+  List<PrimitiveElement>? get noteNumberElement {
     final value = _noteNumberElement;
     if (value == null) return null;
     if (_noteNumberElement is EqualUnmodifiableListView)
@@ -3125,7 +3127,8 @@ abstract class _ClaimResponseItem extends ClaimResponseItem {
       final PrimitiveElement? itemSequenceElement,
       final List<Identifier>? traceNumber,
       final List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber')
+      final List<PrimitiveElement>? noteNumberElement,
       final ClaimResponseReviewOutcome? reviewOutcome,
       final List<ClaimResponseAdjudication>? adjudication,
       final List<ClaimResponseDetail>? detail}) = _$ClaimResponseItemImpl;
@@ -3187,7 +3190,7 @@ abstract class _ClaimResponseItem extends ClaimResponseItem {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement;
+  List<PrimitiveElement>? get noteNumberElement;
   @override
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
@@ -4248,7 +4251,8 @@ mixin _$ClaimResponseDetail {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get noteNumberElement =>
+      throw _privateConstructorUsedError;
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
   ///  has been performed.
@@ -4283,7 +4287,7 @@ abstract class $ClaimResponseDetailCopyWith<$Res> {
       @JsonKey(name: '_detailSequence') PrimitiveElement? detailSequenceElement,
       List<Identifier>? traceNumber,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ClaimResponseReviewOutcome? reviewOutcome,
       List<ClaimResponseAdjudication>? adjudication,
       List<ClaimResponseSubDetail>? subDetail});
@@ -4348,7 +4352,7 @@ class _$ClaimResponseDetailCopyWithImpl<$Res, $Val extends ClaimResponseDetail>
       noteNumberElement: freezed == noteNumberElement
           ? _value.noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -4394,7 +4398,7 @@ abstract class _$$ClaimResponseDetailImplCopyWith<$Res>
       @JsonKey(name: '_detailSequence') PrimitiveElement? detailSequenceElement,
       List<Identifier>? traceNumber,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ClaimResponseReviewOutcome? reviewOutcome,
       List<ClaimResponseAdjudication>? adjudication,
       List<ClaimResponseSubDetail>? subDetail});
@@ -4458,7 +4462,7 @@ class __$$ClaimResponseDetailImplCopyWithImpl<$Res>
       noteNumberElement: freezed == noteNumberElement
           ? _value._noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -4486,7 +4490,8 @@ class _$ClaimResponseDetailImpl extends _ClaimResponseDetail {
       @JsonKey(name: '_detailSequence') this.detailSequenceElement,
       final List<Identifier>? traceNumber,
       final List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber')
+      final List<PrimitiveElement>? noteNumberElement,
       this.reviewOutcome,
       final List<ClaimResponseAdjudication>? adjudication,
       final List<ClaimResponseSubDetail>? subDetail})
@@ -4607,12 +4612,12 @@ class _$ClaimResponseDetailImpl extends _ClaimResponseDetail {
   }
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-  final List<Element>? _noteNumberElement;
+  final List<PrimitiveElement>? _noteNumberElement;
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @override
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement {
+  List<PrimitiveElement>? get noteNumberElement {
     final value = _noteNumberElement;
     if (value == null) return null;
     if (_noteNumberElement is EqualUnmodifiableListView)
@@ -4726,7 +4731,8 @@ abstract class _ClaimResponseDetail extends ClaimResponseDetail {
           final PrimitiveElement? detailSequenceElement,
           final List<Identifier>? traceNumber,
           final List<FhirPositiveInt>? noteNumber,
-          @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+          @JsonKey(name: '_noteNumber')
+          final List<PrimitiveElement>? noteNumberElement,
           final ClaimResponseReviewOutcome? reviewOutcome,
           final List<ClaimResponseAdjudication>? adjudication,
           final List<ClaimResponseSubDetail>? subDetail}) =
@@ -4789,7 +4795,7 @@ abstract class _ClaimResponseDetail extends ClaimResponseDetail {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement;
+  List<PrimitiveElement>? get noteNumberElement;
   @override
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
@@ -4864,7 +4870,8 @@ mixin _$ClaimResponseSubDetail {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get noteNumberElement =>
+      throw _privateConstructorUsedError;
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
   ///  has been performed.
@@ -4896,7 +4903,7 @@ abstract class $ClaimResponseSubDetailCopyWith<$Res> {
       PrimitiveElement? subDetailSequenceElement,
       List<Identifier>? traceNumber,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ClaimResponseReviewOutcome? reviewOutcome,
       List<ClaimResponseAdjudication>? adjudication});
 
@@ -4960,7 +4967,7 @@ class _$ClaimResponseSubDetailCopyWithImpl<$Res,
       noteNumberElement: freezed == noteNumberElement
           ? _value.noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -5004,7 +5011,7 @@ abstract class _$$ClaimResponseSubDetailImplCopyWith<$Res>
       PrimitiveElement? subDetailSequenceElement,
       List<Identifier>? traceNumber,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ClaimResponseReviewOutcome? reviewOutcome,
       List<ClaimResponseAdjudication>? adjudication});
 
@@ -5068,7 +5075,7 @@ class __$$ClaimResponseSubDetailImplCopyWithImpl<$Res>
       noteNumberElement: freezed == noteNumberElement
           ? _value._noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -5092,7 +5099,8 @@ class _$ClaimResponseSubDetailImpl extends _ClaimResponseSubDetail {
       @JsonKey(name: '_subDetailSequence') this.subDetailSequenceElement,
       final List<Identifier>? traceNumber,
       final List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber')
+      final List<PrimitiveElement>? noteNumberElement,
       this.reviewOutcome,
       final List<ClaimResponseAdjudication>? adjudication})
       : _extension_ = extension_,
@@ -5213,12 +5221,12 @@ class _$ClaimResponseSubDetailImpl extends _ClaimResponseSubDetail {
   }
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-  final List<Element>? _noteNumberElement;
+  final List<PrimitiveElement>? _noteNumberElement;
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @override
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement {
+  List<PrimitiveElement>? get noteNumberElement {
     final value = _noteNumberElement;
     if (value == null) return null;
     if (_noteNumberElement is EqualUnmodifiableListView)
@@ -5317,7 +5325,8 @@ abstract class _ClaimResponseSubDetail extends ClaimResponseSubDetail {
           final PrimitiveElement? subDetailSequenceElement,
           final List<Identifier>? traceNumber,
           final List<FhirPositiveInt>? noteNumber,
-          @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+          @JsonKey(name: '_noteNumber')
+          final List<PrimitiveElement>? noteNumberElement,
           final ClaimResponseReviewOutcome? reviewOutcome,
           final List<ClaimResponseAdjudication>? adjudication}) =
       _$ClaimResponseSubDetailImpl;
@@ -5381,7 +5390,7 @@ abstract class _ClaimResponseSubDetail extends ClaimResponseSubDetail {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement;
+  List<PrimitiveElement>? get noteNumberElement;
   @override
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
@@ -5436,7 +5445,8 @@ mixin _$ClaimResponseAddItem {
 
   /// [itemSequenceElement] ("_itemSequence") Extensions for itemSequence
   @JsonKey(name: '_itemSequence')
-  List<Element>? get itemSequenceElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get itemSequenceElement =>
+      throw _privateConstructorUsedError;
 
   /// [detailSequence] The sequence number of the details within the claim item
   ///  which this line is intended to replace.
@@ -5445,7 +5455,7 @@ mixin _$ClaimResponseAddItem {
 
   /// [detailSequenceElement] ("_detailSequence") Extensions for detailSequence
   @JsonKey(name: '_detailSequence')
-  List<Element>? get detailSequenceElement =>
+  List<PrimitiveElement>? get detailSequenceElement =>
       throw _privateConstructorUsedError;
 
   /// [subdetailSequence] The sequence number of the sub-details within the
@@ -5456,7 +5466,7 @@ mixin _$ClaimResponseAddItem {
   /// [subdetailSequenceElement] ("_subdetailSequence") Extensions for
   ///  subdetailSequence
   @JsonKey(name: '_subdetailSequence')
-  List<Element>? get subdetailSequenceElement =>
+  List<PrimitiveElement>? get subdetailSequenceElement =>
       throw _privateConstructorUsedError;
 
   /// [traceNumber] Trace number for tracking purposes. May be defined at the
@@ -5556,7 +5566,8 @@ mixin _$ClaimResponseAddItem {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get noteNumberElement =>
+      throw _privateConstructorUsedError;
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
   ///  has been performed.
@@ -5587,12 +5598,14 @@ abstract class $ClaimResponseAddItemCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<FhirPositiveInt>? itemSequence,
-      @JsonKey(name: '_itemSequence') List<Element>? itemSequenceElement,
+      @JsonKey(name: '_itemSequence')
+      List<PrimitiveElement>? itemSequenceElement,
       List<FhirPositiveInt>? detailSequence,
-      @JsonKey(name: '_detailSequence') List<Element>? detailSequenceElement,
+      @JsonKey(name: '_detailSequence')
+      List<PrimitiveElement>? detailSequenceElement,
       List<FhirPositiveInt>? subdetailSequence,
       @JsonKey(name: '_subdetailSequence')
-      List<Element>? subdetailSequenceElement,
+      List<PrimitiveElement>? subdetailSequenceElement,
       List<Identifier>? traceNumber,
       List<Reference>? provider,
       CodeableConcept? revenue,
@@ -5615,7 +5628,7 @@ abstract class $ClaimResponseAddItemCopyWith<$Res> {
       Money? net,
       List<ClaimResponseBodySite>? bodySite,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ClaimResponseReviewOutcome? reviewOutcome,
       List<ClaimResponseAdjudication>? adjudication,
       List<ClaimResponseDetail1>? detail});
@@ -5704,7 +5717,7 @@ class _$ClaimResponseAddItemCopyWithImpl<$Res,
       itemSequenceElement: freezed == itemSequenceElement
           ? _value.itemSequenceElement
           : itemSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       detailSequence: freezed == detailSequence
           ? _value.detailSequence
           : detailSequence // ignore: cast_nullable_to_non_nullable
@@ -5712,7 +5725,7 @@ class _$ClaimResponseAddItemCopyWithImpl<$Res,
       detailSequenceElement: freezed == detailSequenceElement
           ? _value.detailSequenceElement
           : detailSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       subdetailSequence: freezed == subdetailSequence
           ? _value.subdetailSequence
           : subdetailSequence // ignore: cast_nullable_to_non_nullable
@@ -5720,7 +5733,7 @@ class _$ClaimResponseAddItemCopyWithImpl<$Res,
       subdetailSequenceElement: freezed == subdetailSequenceElement
           ? _value.subdetailSequenceElement
           : subdetailSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       traceNumber: freezed == traceNumber
           ? _value.traceNumber
           : traceNumber // ignore: cast_nullable_to_non_nullable
@@ -5812,7 +5825,7 @@ class _$ClaimResponseAddItemCopyWithImpl<$Res,
       noteNumberElement: freezed == noteNumberElement
           ? _value.noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -5988,12 +6001,14 @@ abstract class _$$ClaimResponseAddItemImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<FhirPositiveInt>? itemSequence,
-      @JsonKey(name: '_itemSequence') List<Element>? itemSequenceElement,
+      @JsonKey(name: '_itemSequence')
+      List<PrimitiveElement>? itemSequenceElement,
       List<FhirPositiveInt>? detailSequence,
-      @JsonKey(name: '_detailSequence') List<Element>? detailSequenceElement,
+      @JsonKey(name: '_detailSequence')
+      List<PrimitiveElement>? detailSequenceElement,
       List<FhirPositiveInt>? subdetailSequence,
       @JsonKey(name: '_subdetailSequence')
-      List<Element>? subdetailSequenceElement,
+      List<PrimitiveElement>? subdetailSequenceElement,
       List<Identifier>? traceNumber,
       List<Reference>? provider,
       CodeableConcept? revenue,
@@ -6016,7 +6031,7 @@ abstract class _$$ClaimResponseAddItemImplCopyWith<$Res>
       Money? net,
       List<ClaimResponseBodySite>? bodySite,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ClaimResponseReviewOutcome? reviewOutcome,
       List<ClaimResponseAdjudication>? adjudication,
       List<ClaimResponseDetail1>? detail});
@@ -6114,7 +6129,7 @@ class __$$ClaimResponseAddItemImplCopyWithImpl<$Res>
       itemSequenceElement: freezed == itemSequenceElement
           ? _value._itemSequenceElement
           : itemSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       detailSequence: freezed == detailSequence
           ? _value._detailSequence
           : detailSequence // ignore: cast_nullable_to_non_nullable
@@ -6122,7 +6137,7 @@ class __$$ClaimResponseAddItemImplCopyWithImpl<$Res>
       detailSequenceElement: freezed == detailSequenceElement
           ? _value._detailSequenceElement
           : detailSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       subdetailSequence: freezed == subdetailSequence
           ? _value._subdetailSequence
           : subdetailSequence // ignore: cast_nullable_to_non_nullable
@@ -6130,7 +6145,7 @@ class __$$ClaimResponseAddItemImplCopyWithImpl<$Res>
       subdetailSequenceElement: freezed == subdetailSequenceElement
           ? _value._subdetailSequenceElement
           : subdetailSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       traceNumber: freezed == traceNumber
           ? _value._traceNumber
           : traceNumber // ignore: cast_nullable_to_non_nullable
@@ -6222,7 +6237,7 @@ class __$$ClaimResponseAddItemImplCopyWithImpl<$Res>
       noteNumberElement: freezed == noteNumberElement
           ? _value._noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -6247,13 +6262,14 @@ class _$ClaimResponseAddItemImpl extends _ClaimResponseAddItem {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final List<FhirPositiveInt>? itemSequence,
-      @JsonKey(name: '_itemSequence') final List<Element>? itemSequenceElement,
+      @JsonKey(name: '_itemSequence')
+      final List<PrimitiveElement>? itemSequenceElement,
       final List<FhirPositiveInt>? detailSequence,
       @JsonKey(name: '_detailSequence')
-      final List<Element>? detailSequenceElement,
+      final List<PrimitiveElement>? detailSequenceElement,
       final List<FhirPositiveInt>? subdetailSequence,
       @JsonKey(name: '_subdetailSequence')
-      final List<Element>? subdetailSequenceElement,
+      final List<PrimitiveElement>? subdetailSequenceElement,
       final List<Identifier>? traceNumber,
       final List<Reference>? provider,
       this.revenue,
@@ -6276,7 +6292,8 @@ class _$ClaimResponseAddItemImpl extends _ClaimResponseAddItem {
       this.net,
       final List<ClaimResponseBodySite>? bodySite,
       final List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber')
+      final List<PrimitiveElement>? noteNumberElement,
       this.reviewOutcome,
       final List<ClaimResponseAdjudication>? adjudication,
       final List<ClaimResponseDetail1>? detail})
@@ -6382,12 +6399,12 @@ class _$ClaimResponseAddItemImpl extends _ClaimResponseAddItem {
   }
 
   /// [itemSequenceElement] ("_itemSequence") Extensions for itemSequence
-  final List<Element>? _itemSequenceElement;
+  final List<PrimitiveElement>? _itemSequenceElement;
 
   /// [itemSequenceElement] ("_itemSequence") Extensions for itemSequence
   @override
   @JsonKey(name: '_itemSequence')
-  List<Element>? get itemSequenceElement {
+  List<PrimitiveElement>? get itemSequenceElement {
     final value = _itemSequenceElement;
     if (value == null) return null;
     if (_itemSequenceElement is EqualUnmodifiableListView)
@@ -6412,12 +6429,12 @@ class _$ClaimResponseAddItemImpl extends _ClaimResponseAddItem {
   }
 
   /// [detailSequenceElement] ("_detailSequence") Extensions for detailSequence
-  final List<Element>? _detailSequenceElement;
+  final List<PrimitiveElement>? _detailSequenceElement;
 
   /// [detailSequenceElement] ("_detailSequence") Extensions for detailSequence
   @override
   @JsonKey(name: '_detailSequence')
-  List<Element>? get detailSequenceElement {
+  List<PrimitiveElement>? get detailSequenceElement {
     final value = _detailSequenceElement;
     if (value == null) return null;
     if (_detailSequenceElement is EqualUnmodifiableListView)
@@ -6444,13 +6461,13 @@ class _$ClaimResponseAddItemImpl extends _ClaimResponseAddItem {
 
   /// [subdetailSequenceElement] ("_subdetailSequence") Extensions for
   ///  subdetailSequence
-  final List<Element>? _subdetailSequenceElement;
+  final List<PrimitiveElement>? _subdetailSequenceElement;
 
   /// [subdetailSequenceElement] ("_subdetailSequence") Extensions for
   ///  subdetailSequence
   @override
   @JsonKey(name: '_subdetailSequence')
-  List<Element>? get subdetailSequenceElement {
+  List<PrimitiveElement>? get subdetailSequenceElement {
     final value = _subdetailSequenceElement;
     if (value == null) return null;
     if (_subdetailSequenceElement is EqualUnmodifiableListView)
@@ -6640,12 +6657,12 @@ class _$ClaimResponseAddItemImpl extends _ClaimResponseAddItem {
   }
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-  final List<Element>? _noteNumberElement;
+  final List<PrimitiveElement>? _noteNumberElement;
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @override
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement {
+  List<PrimitiveElement>? get noteNumberElement {
     final value = _noteNumberElement;
     if (value == null) return null;
     if (_noteNumberElement is EqualUnmodifiableListView)
@@ -6821,13 +6838,14 @@ abstract class _ClaimResponseAddItem extends ClaimResponseAddItem {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final List<FhirPositiveInt>? itemSequence,
-      @JsonKey(name: '_itemSequence') final List<Element>? itemSequenceElement,
+      @JsonKey(name: '_itemSequence')
+      final List<PrimitiveElement>? itemSequenceElement,
       final List<FhirPositiveInt>? detailSequence,
       @JsonKey(name: '_detailSequence')
-      final List<Element>? detailSequenceElement,
+      final List<PrimitiveElement>? detailSequenceElement,
       final List<FhirPositiveInt>? subdetailSequence,
       @JsonKey(name: '_subdetailSequence')
-      final List<Element>? subdetailSequenceElement,
+      final List<PrimitiveElement>? subdetailSequenceElement,
       final List<Identifier>? traceNumber,
       final List<Reference>? provider,
       final CodeableConcept? revenue,
@@ -6851,7 +6869,8 @@ abstract class _ClaimResponseAddItem extends ClaimResponseAddItem {
       final Money? net,
       final List<ClaimResponseBodySite>? bodySite,
       final List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber')
+      final List<PrimitiveElement>? noteNumberElement,
       final ClaimResponseReviewOutcome? reviewOutcome,
       final List<ClaimResponseAdjudication>? adjudication,
       final List<ClaimResponseDetail1>? detail}) = _$ClaimResponseAddItemImpl;
@@ -6898,7 +6917,7 @@ abstract class _ClaimResponseAddItem extends ClaimResponseAddItem {
 
   /// [itemSequenceElement] ("_itemSequence") Extensions for itemSequence
   @JsonKey(name: '_itemSequence')
-  List<Element>? get itemSequenceElement;
+  List<PrimitiveElement>? get itemSequenceElement;
   @override
 
   /// [detailSequence] The sequence number of the details within the claim item
@@ -6908,7 +6927,7 @@ abstract class _ClaimResponseAddItem extends ClaimResponseAddItem {
 
   /// [detailSequenceElement] ("_detailSequence") Extensions for detailSequence
   @JsonKey(name: '_detailSequence')
-  List<Element>? get detailSequenceElement;
+  List<PrimitiveElement>? get detailSequenceElement;
   @override
 
   /// [subdetailSequence] The sequence number of the sub-details within the
@@ -6919,7 +6938,7 @@ abstract class _ClaimResponseAddItem extends ClaimResponseAddItem {
   /// [subdetailSequenceElement] ("_subdetailSequence") Extensions for
   ///  subdetailSequence
   @JsonKey(name: '_subdetailSequence')
-  List<Element>? get subdetailSequenceElement;
+  List<PrimitiveElement>? get subdetailSequenceElement;
   @override
 
   /// [traceNumber] Trace number for tracking purposes. May be defined at the
@@ -7037,7 +7056,7 @@ abstract class _ClaimResponseAddItem extends ClaimResponseAddItem {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement;
+  List<PrimitiveElement>? get noteNumberElement;
   @override
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
@@ -7528,7 +7547,8 @@ mixin _$ClaimResponseDetail1 {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get noteNumberElement =>
+      throw _privateConstructorUsedError;
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
   ///  has been performed.
@@ -7571,7 +7591,7 @@ abstract class $ClaimResponseDetail1CopyWith<$Res> {
       Money? tax,
       Money? net,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ClaimResponseReviewOutcome? reviewOutcome,
       List<ClaimResponseAdjudication>? adjudication,
       List<ClaimResponseSubDetail1>? subDetail});
@@ -7684,7 +7704,7 @@ class _$ClaimResponseDetail1CopyWithImpl<$Res,
       noteNumberElement: freezed == noteNumberElement
           ? _value.noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -7822,7 +7842,7 @@ abstract class _$$ClaimResponseDetail1ImplCopyWith<$Res>
       Money? tax,
       Money? net,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ClaimResponseReviewOutcome? reviewOutcome,
       List<ClaimResponseAdjudication>? adjudication,
       List<ClaimResponseSubDetail1>? subDetail});
@@ -7940,7 +7960,7 @@ class __$$ClaimResponseDetail1ImplCopyWithImpl<$Res>
       noteNumberElement: freezed == noteNumberElement
           ? _value._noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -7976,7 +7996,8 @@ class _$ClaimResponseDetail1Impl extends _ClaimResponseDetail1 {
       this.tax,
       this.net,
       final List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber')
+      final List<PrimitiveElement>? noteNumberElement,
       this.reviewOutcome,
       final List<ClaimResponseAdjudication>? adjudication,
       final List<ClaimResponseSubDetail1>? subDetail})
@@ -8158,12 +8179,12 @@ class _$ClaimResponseDetail1Impl extends _ClaimResponseDetail1 {
   }
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-  final List<Element>? _noteNumberElement;
+  final List<PrimitiveElement>? _noteNumberElement;
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @override
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement {
+  List<PrimitiveElement>? get noteNumberElement {
     final value = _noteNumberElement;
     if (value == null) return null;
     if (_noteNumberElement is EqualUnmodifiableListView)
@@ -8305,7 +8326,8 @@ abstract class _ClaimResponseDetail1 extends ClaimResponseDetail1 {
           final Money? tax,
           final Money? net,
           final List<FhirPositiveInt>? noteNumber,
-          @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+          @JsonKey(name: '_noteNumber')
+          final List<PrimitiveElement>? noteNumberElement,
           final ClaimResponseReviewOutcome? reviewOutcome,
           final List<ClaimResponseAdjudication>? adjudication,
           final List<ClaimResponseSubDetail1>? subDetail}) =
@@ -8418,7 +8440,7 @@ abstract class _ClaimResponseDetail1 extends ClaimResponseDetail1 {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement;
+  List<PrimitiveElement>? get noteNumberElement;
   @override
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
@@ -8533,7 +8555,8 @@ mixin _$ClaimResponseSubDetail1 {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get noteNumberElement =>
+      throw _privateConstructorUsedError;
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
   ///  has been performed.
@@ -8572,7 +8595,7 @@ abstract class $ClaimResponseSubDetail1CopyWith<$Res> {
       Money? tax,
       Money? net,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ClaimResponseReviewOutcome? reviewOutcome,
       List<ClaimResponseAdjudication>? adjudication});
 
@@ -8683,7 +8706,7 @@ class _$ClaimResponseSubDetail1CopyWithImpl<$Res,
       noteNumberElement: freezed == noteNumberElement
           ? _value.noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -8818,7 +8841,7 @@ abstract class _$$ClaimResponseSubDetail1ImplCopyWith<$Res>
       Money? tax,
       Money? net,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ClaimResponseReviewOutcome? reviewOutcome,
       List<ClaimResponseAdjudication>? adjudication});
 
@@ -8936,7 +8959,7 @@ class __$$ClaimResponseSubDetail1ImplCopyWithImpl<$Res>
       noteNumberElement: freezed == noteNumberElement
           ? _value._noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -8968,7 +8991,8 @@ class _$ClaimResponseSubDetail1Impl extends _ClaimResponseSubDetail1 {
       this.tax,
       this.net,
       final List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber')
+      final List<PrimitiveElement>? noteNumberElement,
       this.reviewOutcome,
       final List<ClaimResponseAdjudication>? adjudication})
       : _extension_ = extension_,
@@ -9148,12 +9172,12 @@ class _$ClaimResponseSubDetail1Impl extends _ClaimResponseSubDetail1 {
   }
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-  final List<Element>? _noteNumberElement;
+  final List<PrimitiveElement>? _noteNumberElement;
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @override
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement {
+  List<PrimitiveElement>? get noteNumberElement {
     final value = _noteNumberElement;
     if (value == null) return null;
     if (_noteNumberElement is EqualUnmodifiableListView)
@@ -9277,7 +9301,8 @@ abstract class _ClaimResponseSubDetail1 extends ClaimResponseSubDetail1 {
           final Money? tax,
           final Money? net,
           final List<FhirPositiveInt>? noteNumber,
-          @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+          @JsonKey(name: '_noteNumber')
+          final List<PrimitiveElement>? noteNumberElement,
           final ClaimResponseReviewOutcome? reviewOutcome,
           final List<ClaimResponseAdjudication>? adjudication}) =
       _$ClaimResponseSubDetail1Impl;
@@ -9389,7 +9414,7 @@ abstract class _ClaimResponseSubDetail1 extends ClaimResponseSubDetail1 {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement;
+  List<PrimitiveElement>? get noteNumberElement;
   @override
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
@@ -11540,7 +11565,8 @@ mixin _$ClaimResponseError {
 
   /// [expressionElement] ("_expression") Extensions for expression
   @JsonKey(name: '_expression')
-  List<Element>? get expressionElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get expressionElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -11567,7 +11593,7 @@ abstract class $ClaimResponseErrorCopyWith<$Res> {
       PrimitiveElement? subDetailSequenceElement,
       CodeableConcept code,
       List<String>? expression,
-      @JsonKey(name: '_expression') List<Element>? expressionElement});
+      @JsonKey(name: '_expression') List<PrimitiveElement>? expressionElement});
 
   $CodeableConceptCopyWith<$Res> get code;
 }
@@ -11646,7 +11672,7 @@ class _$ClaimResponseErrorCopyWithImpl<$Res, $Val extends ClaimResponseError>
       expressionElement: freezed == expressionElement
           ? _value.expressionElement
           : expressionElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ) as $Val);
   }
 
@@ -11680,7 +11706,7 @@ abstract class _$$ClaimResponseErrorImplCopyWith<$Res>
       PrimitiveElement? subDetailSequenceElement,
       CodeableConcept code,
       List<String>? expression,
-      @JsonKey(name: '_expression') List<Element>? expressionElement});
+      @JsonKey(name: '_expression') List<PrimitiveElement>? expressionElement});
 
   @override
   $CodeableConceptCopyWith<$Res> get code;
@@ -11758,7 +11784,7 @@ class __$$ClaimResponseErrorImplCopyWithImpl<$Res>
       expressionElement: freezed == expressionElement
           ? _value._expressionElement
           : expressionElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ));
   }
 }
@@ -11778,7 +11804,8 @@ class _$ClaimResponseErrorImpl extends _ClaimResponseError {
       @JsonKey(name: '_subDetailSequence') this.subDetailSequenceElement,
       required this.code,
       final List<String>? expression,
-      @JsonKey(name: '_expression') final List<Element>? expressionElement})
+      @JsonKey(name: '_expression')
+      final List<PrimitiveElement>? expressionElement})
       : _extension_ = extension_,
         _modifierExtension = modifierExtension,
         _expression = expression,
@@ -11912,12 +11939,12 @@ class _$ClaimResponseErrorImpl extends _ClaimResponseError {
   }
 
   /// [expressionElement] ("_expression") Extensions for expression
-  final List<Element>? _expressionElement;
+  final List<PrimitiveElement>? _expressionElement;
 
   /// [expressionElement] ("_expression") Extensions for expression
   @override
   @JsonKey(name: '_expression')
-  List<Element>? get expressionElement {
+  List<PrimitiveElement>? get expressionElement {
     final value = _expressionElement;
     if (value == null) return null;
     if (_expressionElement is EqualUnmodifiableListView)
@@ -11995,22 +12022,23 @@ class _$ClaimResponseErrorImpl extends _ClaimResponseError {
 
 abstract class _ClaimResponseError extends ClaimResponseError {
   const factory _ClaimResponseError(
-      {final String? id,
-      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-      final List<FhirExtension>? modifierExtension,
-      final FhirPositiveInt? itemSequence,
-      @JsonKey(name: '_itemSequence')
-      final PrimitiveElement? itemSequenceElement,
-      final FhirPositiveInt? detailSequence,
-      @JsonKey(name: '_detailSequence')
-      final PrimitiveElement? detailSequenceElement,
-      final FhirPositiveInt? subDetailSequence,
-      @JsonKey(name: '_subDetailSequence')
-      final PrimitiveElement? subDetailSequenceElement,
-      required final CodeableConcept code,
-      final List<String>? expression,
-      @JsonKey(name: '_expression')
-      final List<Element>? expressionElement}) = _$ClaimResponseErrorImpl;
+          {final String? id,
+          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+          final List<FhirExtension>? modifierExtension,
+          final FhirPositiveInt? itemSequence,
+          @JsonKey(name: '_itemSequence')
+          final PrimitiveElement? itemSequenceElement,
+          final FhirPositiveInt? detailSequence,
+          @JsonKey(name: '_detailSequence')
+          final PrimitiveElement? detailSequenceElement,
+          final FhirPositiveInt? subDetailSequence,
+          @JsonKey(name: '_subDetailSequence')
+          final PrimitiveElement? subDetailSequenceElement,
+          required final CodeableConcept code,
+          final List<String>? expression,
+          @JsonKey(name: '_expression')
+          final List<PrimitiveElement>? expressionElement}) =
+      _$ClaimResponseErrorImpl;
   const _ClaimResponseError._() : super._();
 
   factory _ClaimResponseError.fromJson(Map<String, dynamic> json) =
@@ -12096,7 +12124,7 @@ abstract class _ClaimResponseError extends ClaimResponseError {
 
   /// [expressionElement] ("_expression") Extensions for expression
   @JsonKey(name: '_expression')
-  List<Element>? get expressionElement;
+  List<PrimitiveElement>? get expressionElement;
   @override
   @JsonKey(ignore: true)
   _$$ClaimResponseErrorImplCopyWith<_$ClaimResponseErrorImpl> get copyWith =>

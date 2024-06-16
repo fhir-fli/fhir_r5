@@ -32,7 +32,7 @@ _$DataRequirementImpl _$$DataRequirementImplFromJson(
           ?.map((e) => e as String)
           .toList(),
       mustSupportElement: (json['_mustSupport'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       codeFilter: (json['codeFilter'] as List<dynamic>?)
           ?.map((e) =>

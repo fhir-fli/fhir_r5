@@ -402,7 +402,7 @@ class Requirements with _$Requirements implements DomainResource {
     List<FhirUrl>? reference,
 
     /// [referenceElement] ("_reference") Extensions for reference
-    @JsonKey(name: '_reference') List<Element>? referenceElement,
+    @JsonKey(name: '_reference') List<PrimitiveElement>? referenceElement,
 
     /// [actor] An actor these requirements are in regard to.
     List<FhirCanonical>? actor,
@@ -603,7 +603,7 @@ class RequirementsStatement
     List<FhirCode>? conformance,
 
     /// [conformanceElement] ("_conformance") Extensions for conformance
-    @JsonKey(name: '_conformance') List<Element>? conformanceElement,
+    @JsonKey(name: '_conformance') List<PrimitiveElement>? conformanceElement,
 
     /// [conditionality] This boolean flag is set to true of the text of the
     ///  requirement is conditional on something e.g. it includes lanauage like 'if
@@ -641,7 +641,7 @@ class RequirementsStatement
     List<FhirUrl>? satisfiedBy,
 
     /// [satisfiedByElement] ("_satisfiedBy") Extensions for satisfiedBy
-    @JsonKey(name: '_satisfiedBy') List<Element>? satisfiedByElement,
+    @JsonKey(name: '_satisfiedBy') List<PrimitiveElement>? satisfiedByElement,
 
     /// [reference] A reference to another artifact that created this requirement.
     ///  This could be a Profile, etc., or external regulation, or business
@@ -649,7 +649,7 @@ class RequirementsStatement
     List<FhirUrl>? reference,
 
     /// [referenceElement] ("_reference") Extensions for reference
-    @JsonKey(name: '_reference') List<Element>? referenceElement,
+    @JsonKey(name: '_reference') List<PrimitiveElement>? referenceElement,
 
     /// [source] Who asked for this statement to be a requirement. By default, it's
     ///  assumed that the publisher knows who it is if it matters.

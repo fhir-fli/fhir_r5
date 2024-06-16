@@ -1788,7 +1788,8 @@ mixin _$AuditEventAgent {
 
   /// [policyElement] ("_policy") Extensions for policy
   @JsonKey(name: '_policy')
-  List<Element>? get policyElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get policyElement =>
+      throw _privateConstructorUsedError;
 
   /// [networkReference] When the event utilizes a network there should be an
   ///  agent describing the local system, and an agent describing remote system,
@@ -1842,7 +1843,7 @@ abstract class $AuditEventAgentCopyWith<$Res> {
       @JsonKey(name: '_requestor') PrimitiveElement? requestorElement,
       Reference? location,
       List<FhirUri>? policy,
-      @JsonKey(name: '_policy') List<Element>? policyElement,
+      @JsonKey(name: '_policy') List<PrimitiveElement>? policyElement,
       Reference? networkReference,
       FhirUri? networkUri,
       @JsonKey(name: '_networkUri') PrimitiveElement? networkUriElement,
@@ -1931,7 +1932,7 @@ class _$AuditEventAgentCopyWithImpl<$Res, $Val extends AuditEventAgent>
       policyElement: freezed == policyElement
           ? _value.policyElement
           : policyElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       networkReference: freezed == networkReference
           ? _value.networkReference
           : networkReference // ignore: cast_nullable_to_non_nullable
@@ -2023,7 +2024,7 @@ abstract class _$$AuditEventAgentImplCopyWith<$Res>
       @JsonKey(name: '_requestor') PrimitiveElement? requestorElement,
       Reference? location,
       List<FhirUri>? policy,
-      @JsonKey(name: '_policy') List<Element>? policyElement,
+      @JsonKey(name: '_policy') List<PrimitiveElement>? policyElement,
       Reference? networkReference,
       FhirUri? networkUri,
       @JsonKey(name: '_networkUri') PrimitiveElement? networkUriElement,
@@ -2114,7 +2115,7 @@ class __$$AuditEventAgentImplCopyWithImpl<$Res>
       policyElement: freezed == policyElement
           ? _value._policyElement
           : policyElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       networkReference: freezed == networkReference
           ? _value.networkReference
           : networkReference // ignore: cast_nullable_to_non_nullable
@@ -2157,7 +2158,7 @@ class _$AuditEventAgentImpl extends _AuditEventAgent {
       @JsonKey(name: '_requestor') this.requestorElement,
       this.location,
       final List<FhirUri>? policy,
-      @JsonKey(name: '_policy') final List<Element>? policyElement,
+      @JsonKey(name: '_policy') final List<PrimitiveElement>? policyElement,
       this.networkReference,
       this.networkUri,
       @JsonKey(name: '_networkUri') this.networkUriElement,
@@ -2298,12 +2299,12 @@ class _$AuditEventAgentImpl extends _AuditEventAgent {
   }
 
   /// [policyElement] ("_policy") Extensions for policy
-  final List<Element>? _policyElement;
+  final List<PrimitiveElement>? _policyElement;
 
   /// [policyElement] ("_policy") Extensions for policy
   @override
   @JsonKey(name: '_policy')
-  List<Element>? get policyElement {
+  List<PrimitiveElement>? get policyElement {
     final value = _policyElement;
     if (value == null) return null;
     if (_policyElement is EqualUnmodifiableListView) return _policyElement;
@@ -2444,7 +2445,7 @@ abstract class _AuditEventAgent extends AuditEventAgent {
       @JsonKey(name: '_requestor') final PrimitiveElement? requestorElement,
       final Reference? location,
       final List<FhirUri>? policy,
-      @JsonKey(name: '_policy') final List<Element>? policyElement,
+      @JsonKey(name: '_policy') final List<PrimitiveElement>? policyElement,
       final Reference? networkReference,
       final FhirUri? networkUri,
       @JsonKey(name: '_networkUri') final PrimitiveElement? networkUriElement,
@@ -2526,7 +2527,7 @@ abstract class _AuditEventAgent extends AuditEventAgent {
 
   /// [policyElement] ("_policy") Extensions for policy
   @JsonKey(name: '_policy')
-  List<Element>? get policyElement;
+  List<PrimitiveElement>? get policyElement;
   @override
 
   /// [networkReference] When the event utilizes a network there should be an

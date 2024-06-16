@@ -5370,7 +5370,8 @@ mixin _$PlanDefinitionAction {
 
   /// [goalIdElement] ("_goalId") Extensions for goalId
   @JsonKey(name: '_goalId')
-  List<Element>? get goalIdElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get goalIdElement =>
+      throw _privateConstructorUsedError;
 
   /// [subjectCodeableConcept] A code, group definition, or canonical reference
   ///  that describes the intended subject of the action and its children, if
@@ -5581,7 +5582,7 @@ abstract class $PlanDefinitionActionCopyWith<$Res> {
       List<CodeableConcept>? reason,
       List<RelatedArtifact>? documentation,
       List<FhirId>? goalId,
-      @JsonKey(name: '_goalId') List<Element>? goalIdElement,
+      @JsonKey(name: '_goalId') List<PrimitiveElement>? goalIdElement,
       CodeableConcept? subjectCodeableConcept,
       Reference? subjectReference,
       FhirCanonical? subjectCanonical,
@@ -5782,7 +5783,7 @@ class _$PlanDefinitionActionCopyWithImpl<$Res,
       goalIdElement: freezed == goalIdElement
           ? _value.goalIdElement
           : goalIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       subjectCodeableConcept: freezed == subjectCodeableConcept
           ? _value.subjectCodeableConcept
           : subjectCodeableConcept // ignore: cast_nullable_to_non_nullable
@@ -6056,7 +6057,7 @@ abstract class _$$PlanDefinitionActionImplCopyWith<$Res>
       List<CodeableConcept>? reason,
       List<RelatedArtifact>? documentation,
       List<FhirId>? goalId,
-      @JsonKey(name: '_goalId') List<Element>? goalIdElement,
+      @JsonKey(name: '_goalId') List<PrimitiveElement>? goalIdElement,
       CodeableConcept? subjectCodeableConcept,
       Reference? subjectReference,
       FhirCanonical? subjectCanonical,
@@ -6263,7 +6264,7 @@ class __$$PlanDefinitionActionImplCopyWithImpl<$Res>
       goalIdElement: freezed == goalIdElement
           ? _value._goalIdElement
           : goalIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       subjectCodeableConcept: freezed == subjectCodeableConcept
           ? _value.subjectCodeableConcept
           : subjectCodeableConcept // ignore: cast_nullable_to_non_nullable
@@ -6423,7 +6424,7 @@ class _$PlanDefinitionActionImpl extends _PlanDefinitionAction {
       final List<CodeableConcept>? reason,
       final List<RelatedArtifact>? documentation,
       final List<FhirId>? goalId,
-      @JsonKey(name: '_goalId') final List<Element>? goalIdElement,
+      @JsonKey(name: '_goalId') final List<PrimitiveElement>? goalIdElement,
       this.subjectCodeableConcept,
       this.subjectReference,
       this.subjectCanonical,
@@ -6663,12 +6664,12 @@ class _$PlanDefinitionActionImpl extends _PlanDefinitionAction {
   }
 
   /// [goalIdElement] ("_goalId") Extensions for goalId
-  final List<Element>? _goalIdElement;
+  final List<PrimitiveElement>? _goalIdElement;
 
   /// [goalIdElement] ("_goalId") Extensions for goalId
   @override
   @JsonKey(name: '_goalId')
-  List<Element>? get goalIdElement {
+  List<PrimitiveElement>? get goalIdElement {
     final value = _goalIdElement;
     if (value == null) return null;
     if (_goalIdElement is EqualUnmodifiableListView) return _goalIdElement;
@@ -7156,7 +7157,7 @@ abstract class _PlanDefinitionAction extends PlanDefinitionAction {
       final List<CodeableConcept>? reason,
       final List<RelatedArtifact>? documentation,
       final List<FhirId>? goalId,
-      @JsonKey(name: '_goalId') final List<Element>? goalIdElement,
+      @JsonKey(name: '_goalId') final List<PrimitiveElement>? goalIdElement,
       final CodeableConcept? subjectCodeableConcept,
       final Reference? subjectReference,
       final FhirCanonical? subjectCanonical,
@@ -7325,7 +7326,7 @@ abstract class _PlanDefinitionAction extends PlanDefinitionAction {
 
   /// [goalIdElement] ("_goalId") Extensions for goalId
   @JsonKey(name: '_goalId')
-  List<Element>? get goalIdElement;
+  List<PrimitiveElement>? get goalIdElement;
   @override
 
   /// [subjectCodeableConcept] A code, group definition, or canonical reference

@@ -293,7 +293,7 @@ mixin _$SpecimenDefinition {
 
   /// [derivedFromUriElement] ("_derivedFromUri") Extensions for derivedFromUri
   @JsonKey(name: '_derivedFromUri')
-  List<Element>? get derivedFromUriElement =>
+  List<PrimitiveElement>? get derivedFromUriElement =>
       throw _privateConstructorUsedError;
 
   /// [subjectCodeableConcept] A code or group definition that describes the
@@ -397,7 +397,8 @@ abstract class $SpecimenDefinitionCopyWith<$Res> {
       List<RelatedArtifact>? relatedArtifact,
       List<FhirCanonical>? derivedFromCanonical,
       List<FhirUri>? derivedFromUri,
-      @JsonKey(name: '_derivedFromUri') List<Element>? derivedFromUriElement,
+      @JsonKey(name: '_derivedFromUri')
+      List<PrimitiveElement>? derivedFromUriElement,
       CodeableConcept? subjectCodeableConcept,
       Reference? subjectReference,
       CodeableConcept? typeCollected,
@@ -719,7 +720,7 @@ class _$SpecimenDefinitionCopyWithImpl<$Res, $Val extends SpecimenDefinition>
       derivedFromUriElement: freezed == derivedFromUriElement
           ? _value.derivedFromUriElement
           : derivedFromUriElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       subjectCodeableConcept: freezed == subjectCodeableConcept
           ? _value.subjectCodeableConcept
           : subjectCodeableConcept // ignore: cast_nullable_to_non_nullable
@@ -919,7 +920,8 @@ abstract class _$$SpecimenDefinitionImplCopyWith<$Res>
       List<RelatedArtifact>? relatedArtifact,
       List<FhirCanonical>? derivedFromCanonical,
       List<FhirUri>? derivedFromUri,
-      @JsonKey(name: '_derivedFromUri') List<Element>? derivedFromUriElement,
+      @JsonKey(name: '_derivedFromUri')
+      List<PrimitiveElement>? derivedFromUriElement,
       CodeableConcept? subjectCodeableConcept,
       Reference? subjectReference,
       CodeableConcept? typeCollected,
@@ -1247,7 +1249,7 @@ class __$$SpecimenDefinitionImplCopyWithImpl<$Res>
       derivedFromUriElement: freezed == derivedFromUriElement
           ? _value._derivedFromUriElement
           : derivedFromUriElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       subjectCodeableConcept: freezed == subjectCodeableConcept
           ? _value.subjectCodeableConcept
           : subjectCodeableConcept // ignore: cast_nullable_to_non_nullable
@@ -1346,7 +1348,7 @@ class _$SpecimenDefinitionImpl extends _SpecimenDefinition {
       final List<FhirCanonical>? derivedFromCanonical,
       final List<FhirUri>? derivedFromUri,
       @JsonKey(name: '_derivedFromUri')
-      final List<Element>? derivedFromUriElement,
+      final List<PrimitiveElement>? derivedFromUriElement,
       this.subjectCodeableConcept,
       this.subjectReference,
       this.typeCollected,
@@ -1859,12 +1861,12 @@ class _$SpecimenDefinitionImpl extends _SpecimenDefinition {
   }
 
   /// [derivedFromUriElement] ("_derivedFromUri") Extensions for derivedFromUri
-  final List<Element>? _derivedFromUriElement;
+  final List<PrimitiveElement>? _derivedFromUriElement;
 
   /// [derivedFromUriElement] ("_derivedFromUri") Extensions for derivedFromUri
   @override
   @JsonKey(name: '_derivedFromUri')
-  List<Element>? get derivedFromUriElement {
+  List<PrimitiveElement>? get derivedFromUriElement {
     final value = _derivedFromUriElement;
     if (value == null) return null;
     if (_derivedFromUriElement is EqualUnmodifiableListView)
@@ -2201,7 +2203,7 @@ abstract class _SpecimenDefinition extends SpecimenDefinition {
       final List<FhirCanonical>? derivedFromCanonical,
       final List<FhirUri>? derivedFromUri,
       @JsonKey(name: '_derivedFromUri')
-      final List<Element>? derivedFromUriElement,
+      final List<PrimitiveElement>? derivedFromUriElement,
       final CodeableConcept? subjectCodeableConcept,
       final Reference? subjectReference,
       final CodeableConcept? typeCollected,
@@ -2536,7 +2538,7 @@ abstract class _SpecimenDefinition extends SpecimenDefinition {
 
   /// [derivedFromUriElement] ("_derivedFromUri") Extensions for derivedFromUri
   @JsonKey(name: '_derivedFromUri')
-  List<Element>? get derivedFromUriElement;
+  List<PrimitiveElement>? get derivedFromUriElement;
   @override
 
   /// [subjectCodeableConcept] A code or group definition that describes the

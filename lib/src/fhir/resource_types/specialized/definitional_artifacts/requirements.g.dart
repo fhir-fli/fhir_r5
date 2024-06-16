@@ -131,7 +131,7 @@ _$RequirementsImpl _$$RequirementsImplFromJson(Map<String, dynamic> json) =>
       reference:
           (json['reference'] as List<dynamic>?)?.map(FhirUrl.fromJson).toList(),
       referenceElement: (json['_reference'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       actor: (json['actor'] as List<dynamic>?)
           ?.map(FhirCanonical.fromJson)
@@ -399,7 +399,7 @@ _$RequirementsStatementImpl _$$RequirementsStatementImplFromJson(
           ?.map(FhirCode.fromJson)
           .toList(),
       conformanceElement: (json['_conformance'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       conditionality: json['conditionality'] == null
           ? null
@@ -428,12 +428,12 @@ _$RequirementsStatementImpl _$$RequirementsStatementImplFromJson(
           ?.map(FhirUrl.fromJson)
           .toList(),
       satisfiedByElement: (json['_satisfiedBy'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       reference:
           (json['reference'] as List<dynamic>?)?.map(FhirUrl.fromJson).toList(),
       referenceElement: (json['_reference'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       source: (json['source'] as List<dynamic>?)
           ?.map((e) => Reference.fromJson(e as Map<String, dynamic>))

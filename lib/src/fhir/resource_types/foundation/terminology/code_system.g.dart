@@ -493,7 +493,7 @@ _$CodeSystemFilterImpl _$$CodeSystemFilterImplFromJson(
       operator_:
           (json['operator'] as List<dynamic>?)?.map(FhirCode.fromJson).toList(),
       operatorElement: (json['_operator'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       value: json['value'] as String?,
       valueElement: json['_value'] == null

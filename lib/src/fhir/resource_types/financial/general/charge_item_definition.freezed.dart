@@ -301,7 +301,7 @@ mixin _$ChargeItemDefinition {
 
   /// [derivedFromUriElement] ("_derivedFromUri") Extensions for derivedFromUri
   @JsonKey(name: '_derivedFromUri')
-  List<Element>? get derivedFromUriElement =>
+  List<PrimitiveElement>? get derivedFromUriElement =>
       throw _privateConstructorUsedError;
 
   /// [partOf] A larger definition of which this particular definition is a
@@ -400,7 +400,8 @@ abstract class $ChargeItemDefinitionCopyWith<$Res> {
       List<ContactDetail>? endorser,
       List<RelatedArtifact>? relatedArtifact,
       List<FhirUri>? derivedFromUri,
-      @JsonKey(name: '_derivedFromUri') List<Element>? derivedFromUriElement,
+      @JsonKey(name: '_derivedFromUri')
+      List<PrimitiveElement>? derivedFromUriElement,
       List<FhirCanonical>? partOf,
       List<FhirCanonical>? replaces,
       CodeableConcept? code,
@@ -711,7 +712,7 @@ class _$ChargeItemDefinitionCopyWithImpl<$Res,
       derivedFromUriElement: freezed == derivedFromUriElement
           ? _value.derivedFromUriElement
           : derivedFromUriElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       partOf: freezed == partOf
           ? _value.partOf
           : partOf // ignore: cast_nullable_to_non_nullable
@@ -865,7 +866,8 @@ abstract class _$$ChargeItemDefinitionImplCopyWith<$Res>
       List<ContactDetail>? endorser,
       List<RelatedArtifact>? relatedArtifact,
       List<FhirUri>? derivedFromUri,
-      @JsonKey(name: '_derivedFromUri') List<Element>? derivedFromUriElement,
+      @JsonKey(name: '_derivedFromUri')
+      List<PrimitiveElement>? derivedFromUriElement,
       List<FhirCanonical>? partOf,
       List<FhirCanonical>? replaces,
       CodeableConcept? code,
@@ -1178,7 +1180,7 @@ class __$$ChargeItemDefinitionImplCopyWithImpl<$Res>
       derivedFromUriElement: freezed == derivedFromUriElement
           ? _value._derivedFromUriElement
           : derivedFromUriElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       partOf: freezed == partOf
           ? _value._partOf
           : partOf // ignore: cast_nullable_to_non_nullable
@@ -1268,7 +1270,7 @@ class _$ChargeItemDefinitionImpl extends _ChargeItemDefinition {
       final List<RelatedArtifact>? relatedArtifact,
       final List<FhirUri>? derivedFromUri,
       @JsonKey(name: '_derivedFromUri')
-      final List<Element>? derivedFromUriElement,
+      final List<PrimitiveElement>? derivedFromUriElement,
       final List<FhirCanonical>? partOf,
       final List<FhirCanonical>? replaces,
       this.code,
@@ -1789,12 +1791,12 @@ class _$ChargeItemDefinitionImpl extends _ChargeItemDefinition {
   }
 
   /// [derivedFromUriElement] ("_derivedFromUri") Extensions for derivedFromUri
-  final List<Element>? _derivedFromUriElement;
+  final List<PrimitiveElement>? _derivedFromUriElement;
 
   /// [derivedFromUriElement] ("_derivedFromUri") Extensions for derivedFromUri
   @override
   @JsonKey(name: '_derivedFromUri')
-  List<Element>? get derivedFromUriElement {
+  List<PrimitiveElement>? get derivedFromUriElement {
     final value = _derivedFromUriElement;
     if (value == null) return null;
     if (_derivedFromUriElement is EqualUnmodifiableListView)
@@ -2142,7 +2144,7 @@ abstract class _ChargeItemDefinition extends ChargeItemDefinition {
       final List<RelatedArtifact>? relatedArtifact,
       final List<FhirUri>? derivedFromUri,
       @JsonKey(name: '_derivedFromUri')
-      final List<Element>? derivedFromUriElement,
+      final List<PrimitiveElement>? derivedFromUriElement,
       final List<FhirCanonical>? partOf,
       final List<FhirCanonical>? replaces,
       final CodeableConcept? code,
@@ -2483,7 +2485,7 @@ abstract class _ChargeItemDefinition extends ChargeItemDefinition {
 
   /// [derivedFromUriElement] ("_derivedFromUri") Extensions for derivedFromUri
   @JsonKey(name: '_derivedFromUri')
-  List<Element>? get derivedFromUriElement;
+  List<PrimitiveElement>? get derivedFromUriElement;
   @override
 
   /// [partOf] A larger definition of which this particular definition is a

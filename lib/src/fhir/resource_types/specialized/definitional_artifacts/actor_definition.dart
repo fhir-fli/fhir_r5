@@ -416,7 +416,7 @@ class ActorDefinition with _$ActorDefinition implements DomainResource {
     List<FhirUrl>? reference,
 
     /// [referenceElement] ("_reference") Extensions for reference
-    @JsonKey(name: '_reference') List<Element>? referenceElement,
+    @JsonKey(name: '_reference') List<PrimitiveElement>? referenceElement,
 
     /// [capabilities] The capability statement for the actor (if the concept is
     ///  applicable).

@@ -399,7 +399,7 @@ _$CompartmentDefinitionResourceImpl
               ?.map((e) => e as String)
               .toList(),
           paramElement: (json['_param'] as List<dynamic>?)
-              ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
               .toList(),
           documentation: json['documentation'] as String?,
           documentationElement: json['_documentation'] == null

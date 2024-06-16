@@ -299,7 +299,7 @@ mixin _$StructureDefinition {
   /// [contextInvariantElement] ("_contextInvariant") Extensions for
   ///  contextInvariant
   @JsonKey(name: '_contextInvariant')
-  List<Element>? get contextInvariantElement =>
+  List<PrimitiveElement>? get contextInvariantElement =>
       throw _privateConstructorUsedError;
 
   /// [type] The type this structure describes. If the derivation kind is
@@ -406,7 +406,7 @@ abstract class $StructureDefinitionCopyWith<$Res> {
       List<StructureDefinitionContext>? context,
       List<String>? contextInvariant,
       @JsonKey(name: '_contextInvariant')
-      List<Element>? contextInvariantElement,
+      List<PrimitiveElement>? contextInvariantElement,
       FhirUri? type,
       @JsonKey(name: '_type') PrimitiveElement? typeElement,
       FhirCanonical? baseDefinition,
@@ -708,7 +708,7 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
       contextInvariantElement: freezed == contextInvariantElement
           ? _value.contextInvariantElement
           : contextInvariantElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -867,7 +867,7 @@ abstract class _$$StructureDefinitionImplCopyWith<$Res>
       List<StructureDefinitionContext>? context,
       List<String>? contextInvariant,
       @JsonKey(name: '_contextInvariant')
-      List<Element>? contextInvariantElement,
+      List<PrimitiveElement>? contextInvariantElement,
       FhirUri? type,
       @JsonKey(name: '_type') PrimitiveElement? typeElement,
       FhirCanonical? baseDefinition,
@@ -1172,7 +1172,7 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       contextInvariantElement: freezed == contextInvariantElement
           ? _value._contextInvariantElement
           : contextInvariantElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -1264,7 +1264,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
       final List<StructureDefinitionContext>? context,
       final List<String>? contextInvariant,
       @JsonKey(name: '_contextInvariant')
-      final List<Element>? contextInvariantElement,
+      final List<PrimitiveElement>? contextInvariantElement,
       this.type,
       @JsonKey(name: '_type') this.typeElement,
       this.baseDefinition,
@@ -1747,13 +1747,13 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
 
   /// [contextInvariantElement] ("_contextInvariant") Extensions for
   ///  contextInvariant
-  final List<Element>? _contextInvariantElement;
+  final List<PrimitiveElement>? _contextInvariantElement;
 
   /// [contextInvariantElement] ("_contextInvariant") Extensions for
   ///  contextInvariant
   @override
   @JsonKey(name: '_contextInvariant')
-  List<Element>? get contextInvariantElement {
+  List<PrimitiveElement>? get contextInvariantElement {
     final value = _contextInvariantElement;
     if (value == null) return null;
     if (_contextInvariantElement is EqualUnmodifiableListView)
@@ -2053,7 +2053,7 @@ abstract class _StructureDefinition extends StructureDefinition {
       final List<StructureDefinitionContext>? context,
       final List<String>? contextInvariant,
       @JsonKey(name: '_contextInvariant')
-      final List<Element>? contextInvariantElement,
+      final List<PrimitiveElement>? contextInvariantElement,
       final FhirUri? type,
       @JsonKey(name: '_type') final PrimitiveElement? typeElement,
       final FhirCanonical? baseDefinition,
@@ -2391,7 +2391,7 @@ abstract class _StructureDefinition extends StructureDefinition {
   /// [contextInvariantElement] ("_contextInvariant") Extensions for
   ///  contextInvariant
   @JsonKey(name: '_contextInvariant')
-  List<Element>? get contextInvariantElement;
+  List<PrimitiveElement>? get contextInvariantElement;
   @override
 
   /// [type] The type this structure describes. If the derivation kind is

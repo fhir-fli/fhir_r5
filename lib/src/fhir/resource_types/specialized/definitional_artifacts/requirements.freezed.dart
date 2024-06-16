@@ -249,7 +249,8 @@ mixin _$Requirements {
 
   /// [referenceElement] ("_reference") Extensions for reference
   @JsonKey(name: '_reference')
-  List<Element>? get referenceElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get referenceElement =>
+      throw _privateConstructorUsedError;
 
   /// [actor] An actor these requirements are in regard to.
   List<FhirCanonical>? get actor => throw _privateConstructorUsedError;
@@ -317,7 +318,7 @@ abstract class $RequirementsCopyWith<$Res> {
       @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       List<FhirCanonical>? derivedFrom,
       List<FhirUrl>? reference,
-      @JsonKey(name: '_reference') List<Element>? referenceElement,
+      @JsonKey(name: '_reference') List<PrimitiveElement>? referenceElement,
       List<FhirCanonical>? actor,
       List<RequirementsStatement>? statement});
 
@@ -567,7 +568,7 @@ class _$RequirementsCopyWithImpl<$Res, $Val extends Requirements>
       referenceElement: freezed == referenceElement
           ? _value.referenceElement
           : referenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       actor: freezed == actor
           ? _value.actor
           : actor // ignore: cast_nullable_to_non_nullable
@@ -671,7 +672,7 @@ abstract class _$$RequirementsImplCopyWith<$Res>
       @JsonKey(name: '_copyrightLabel') PrimitiveElement? copyrightLabelElement,
       List<FhirCanonical>? derivedFrom,
       List<FhirUrl>? reference,
-      @JsonKey(name: '_reference') List<Element>? referenceElement,
+      @JsonKey(name: '_reference') List<PrimitiveElement>? referenceElement,
       List<FhirCanonical>? actor,
       List<RequirementsStatement>? statement});
 
@@ -922,7 +923,7 @@ class __$$RequirementsImplCopyWithImpl<$Res>
       referenceElement: freezed == referenceElement
           ? _value._referenceElement
           : referenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       actor: freezed == actor
           ? _value._actor
           : actor // ignore: cast_nullable_to_non_nullable
@@ -985,7 +986,8 @@ class _$RequirementsImpl extends _Requirements {
       @JsonKey(name: '_copyrightLabel') this.copyrightLabelElement,
       final List<FhirCanonical>? derivedFrom,
       final List<FhirUrl>? reference,
-      @JsonKey(name: '_reference') final List<Element>? referenceElement,
+      @JsonKey(name: '_reference')
+      final List<PrimitiveElement>? referenceElement,
       final List<FhirCanonical>? actor,
       final List<RequirementsStatement>? statement})
       : _contained = contained,
@@ -1384,12 +1386,12 @@ class _$RequirementsImpl extends _Requirements {
   }
 
   /// [referenceElement] ("_reference") Extensions for reference
-  final List<Element>? _referenceElement;
+  final List<PrimitiveElement>? _referenceElement;
 
   /// [referenceElement] ("_reference") Extensions for reference
   @override
   @JsonKey(name: '_reference')
-  List<Element>? get referenceElement {
+  List<PrimitiveElement>? get referenceElement {
     final value = _referenceElement;
     if (value == null) return null;
     if (_referenceElement is EqualUnmodifiableListView)
@@ -1637,7 +1639,8 @@ abstract class _Requirements extends Requirements {
       final PrimitiveElement? copyrightLabelElement,
       final List<FhirCanonical>? derivedFrom,
       final List<FhirUrl>? reference,
-      @JsonKey(name: '_reference') final List<Element>? referenceElement,
+      @JsonKey(name: '_reference')
+      final List<PrimitiveElement>? referenceElement,
       final List<FhirCanonical>? actor,
       final List<RequirementsStatement>? statement}) = _$RequirementsImpl;
   const _Requirements._() : super._();
@@ -1914,7 +1917,7 @@ abstract class _Requirements extends Requirements {
 
   /// [referenceElement] ("_reference") Extensions for reference
   @JsonKey(name: '_reference')
-  List<Element>? get referenceElement;
+  List<PrimitiveElement>? get referenceElement;
   @override
 
   /// [actor] An actor these requirements are in regard to.
@@ -1983,7 +1986,8 @@ mixin _$RequirementsStatement {
 
   /// [conformanceElement] ("_conformance") Extensions for conformance
   @JsonKey(name: '_conformance')
-  List<Element>? get conformanceElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get conformanceElement =>
+      throw _privateConstructorUsedError;
 
   /// [conditionality] This boolean flag is set to true of the text of the
   ///  requirement is conditional on something e.g. it includes lanauage like 'if
@@ -2029,7 +2033,8 @@ mixin _$RequirementsStatement {
 
   /// [satisfiedByElement] ("_satisfiedBy") Extensions for satisfiedBy
   @JsonKey(name: '_satisfiedBy')
-  List<Element>? get satisfiedByElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get satisfiedByElement =>
+      throw _privateConstructorUsedError;
 
   /// [reference] A reference to another artifact that created this requirement.
   ///  This could be a Profile, etc., or external regulation, or business
@@ -2038,7 +2043,8 @@ mixin _$RequirementsStatement {
 
   /// [referenceElement] ("_reference") Extensions for reference
   @JsonKey(name: '_reference')
-  List<Element>? get referenceElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get referenceElement =>
+      throw _privateConstructorUsedError;
 
   /// [source] Who asked for this statement to be a requirement. By default, it's
   ///  assumed that the publisher knows who it is if it matters.
@@ -2065,7 +2071,7 @@ abstract class $RequirementsStatementCopyWith<$Res> {
       String? label,
       @JsonKey(name: '_label') PrimitiveElement? labelElement,
       List<FhirCode>? conformance,
-      @JsonKey(name: '_conformance') List<Element>? conformanceElement,
+      @JsonKey(name: '_conformance') List<PrimitiveElement>? conformanceElement,
       FhirBoolean? conditionality,
       @JsonKey(name: '_conditionality') PrimitiveElement? conditionalityElement,
       FhirMarkdown? requirement,
@@ -2075,9 +2081,9 @@ abstract class $RequirementsStatementCopyWith<$Res> {
       String? parent,
       @JsonKey(name: '_parent') PrimitiveElement? parentElement,
       List<FhirUrl>? satisfiedBy,
-      @JsonKey(name: '_satisfiedBy') List<Element>? satisfiedByElement,
+      @JsonKey(name: '_satisfiedBy') List<PrimitiveElement>? satisfiedByElement,
       List<FhirUrl>? reference,
-      @JsonKey(name: '_reference') List<Element>? referenceElement,
+      @JsonKey(name: '_reference') List<PrimitiveElement>? referenceElement,
       List<Reference>? source});
 }
 
@@ -2154,7 +2160,7 @@ class _$RequirementsStatementCopyWithImpl<$Res,
       conformanceElement: freezed == conformanceElement
           ? _value.conformanceElement
           : conformanceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       conditionality: freezed == conditionality
           ? _value.conditionality
           : conditionality // ignore: cast_nullable_to_non_nullable
@@ -2194,7 +2200,7 @@ class _$RequirementsStatementCopyWithImpl<$Res,
       satisfiedByElement: freezed == satisfiedByElement
           ? _value.satisfiedByElement
           : satisfiedByElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reference: freezed == reference
           ? _value.reference
           : reference // ignore: cast_nullable_to_non_nullable
@@ -2202,7 +2208,7 @@ class _$RequirementsStatementCopyWithImpl<$Res,
       referenceElement: freezed == referenceElement
           ? _value.referenceElement
           : referenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       source: freezed == source
           ? _value.source
           : source // ignore: cast_nullable_to_non_nullable
@@ -2229,7 +2235,7 @@ abstract class _$$RequirementsStatementImplCopyWith<$Res>
       String? label,
       @JsonKey(name: '_label') PrimitiveElement? labelElement,
       List<FhirCode>? conformance,
-      @JsonKey(name: '_conformance') List<Element>? conformanceElement,
+      @JsonKey(name: '_conformance') List<PrimitiveElement>? conformanceElement,
       FhirBoolean? conditionality,
       @JsonKey(name: '_conditionality') PrimitiveElement? conditionalityElement,
       FhirMarkdown? requirement,
@@ -2239,9 +2245,9 @@ abstract class _$$RequirementsStatementImplCopyWith<$Res>
       String? parent,
       @JsonKey(name: '_parent') PrimitiveElement? parentElement,
       List<FhirUrl>? satisfiedBy,
-      @JsonKey(name: '_satisfiedBy') List<Element>? satisfiedByElement,
+      @JsonKey(name: '_satisfiedBy') List<PrimitiveElement>? satisfiedByElement,
       List<FhirUrl>? reference,
-      @JsonKey(name: '_reference') List<Element>? referenceElement,
+      @JsonKey(name: '_reference') List<PrimitiveElement>? referenceElement,
       List<Reference>? source});
 }
 
@@ -2316,7 +2322,7 @@ class __$$RequirementsStatementImplCopyWithImpl<$Res>
       conformanceElement: freezed == conformanceElement
           ? _value._conformanceElement
           : conformanceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       conditionality: freezed == conditionality
           ? _value.conditionality
           : conditionality // ignore: cast_nullable_to_non_nullable
@@ -2356,7 +2362,7 @@ class __$$RequirementsStatementImplCopyWithImpl<$Res>
       satisfiedByElement: freezed == satisfiedByElement
           ? _value._satisfiedByElement
           : satisfiedByElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reference: freezed == reference
           ? _value._reference
           : reference // ignore: cast_nullable_to_non_nullable
@@ -2364,7 +2370,7 @@ class __$$RequirementsStatementImplCopyWithImpl<$Res>
       referenceElement: freezed == referenceElement
           ? _value._referenceElement
           : referenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       source: freezed == source
           ? _value._source
           : source // ignore: cast_nullable_to_non_nullable
@@ -2385,7 +2391,8 @@ class _$RequirementsStatementImpl extends _RequirementsStatement {
       this.label,
       @JsonKey(name: '_label') this.labelElement,
       final List<FhirCode>? conformance,
-      @JsonKey(name: '_conformance') final List<Element>? conformanceElement,
+      @JsonKey(name: '_conformance')
+      final List<PrimitiveElement>? conformanceElement,
       this.conditionality,
       @JsonKey(name: '_conditionality') this.conditionalityElement,
       this.requirement,
@@ -2395,9 +2402,11 @@ class _$RequirementsStatementImpl extends _RequirementsStatement {
       this.parent,
       @JsonKey(name: '_parent') this.parentElement,
       final List<FhirUrl>? satisfiedBy,
-      @JsonKey(name: '_satisfiedBy') final List<Element>? satisfiedByElement,
+      @JsonKey(name: '_satisfiedBy')
+      final List<PrimitiveElement>? satisfiedByElement,
       final List<FhirUrl>? reference,
-      @JsonKey(name: '_reference') final List<Element>? referenceElement,
+      @JsonKey(name: '_reference')
+      final List<PrimitiveElement>? referenceElement,
       final List<Reference>? source})
       : _extension_ = extension_,
         _modifierExtension = modifierExtension,
@@ -2510,12 +2519,12 @@ class _$RequirementsStatementImpl extends _RequirementsStatement {
   }
 
   /// [conformanceElement] ("_conformance") Extensions for conformance
-  final List<Element>? _conformanceElement;
+  final List<PrimitiveElement>? _conformanceElement;
 
   /// [conformanceElement] ("_conformance") Extensions for conformance
   @override
   @JsonKey(name: '_conformance')
-  List<Element>? get conformanceElement {
+  List<PrimitiveElement>? get conformanceElement {
     final value = _conformanceElement;
     if (value == null) return null;
     if (_conformanceElement is EqualUnmodifiableListView)
@@ -2585,12 +2594,12 @@ class _$RequirementsStatementImpl extends _RequirementsStatement {
   }
 
   /// [satisfiedByElement] ("_satisfiedBy") Extensions for satisfiedBy
-  final List<Element>? _satisfiedByElement;
+  final List<PrimitiveElement>? _satisfiedByElement;
 
   /// [satisfiedByElement] ("_satisfiedBy") Extensions for satisfiedBy
   @override
   @JsonKey(name: '_satisfiedBy')
-  List<Element>? get satisfiedByElement {
+  List<PrimitiveElement>? get satisfiedByElement {
     final value = _satisfiedByElement;
     if (value == null) return null;
     if (_satisfiedByElement is EqualUnmodifiableListView)
@@ -2617,12 +2626,12 @@ class _$RequirementsStatementImpl extends _RequirementsStatement {
   }
 
   /// [referenceElement] ("_reference") Extensions for reference
-  final List<Element>? _referenceElement;
+  final List<PrimitiveElement>? _referenceElement;
 
   /// [referenceElement] ("_reference") Extensions for reference
   @override
   @JsonKey(name: '_reference')
-  List<Element>? get referenceElement {
+  List<PrimitiveElement>? get referenceElement {
     final value = _referenceElement;
     if (value == null) return null;
     if (_referenceElement is EqualUnmodifiableListView)
@@ -2750,7 +2759,8 @@ abstract class _RequirementsStatement extends RequirementsStatement {
       final String? label,
       @JsonKey(name: '_label') final PrimitiveElement? labelElement,
       final List<FhirCode>? conformance,
-      @JsonKey(name: '_conformance') final List<Element>? conformanceElement,
+      @JsonKey(name: '_conformance')
+      final List<PrimitiveElement>? conformanceElement,
       final FhirBoolean? conditionality,
       @JsonKey(name: '_conditionality')
       final PrimitiveElement? conditionalityElement,
@@ -2761,9 +2771,11 @@ abstract class _RequirementsStatement extends RequirementsStatement {
       final String? parent,
       @JsonKey(name: '_parent') final PrimitiveElement? parentElement,
       final List<FhirUrl>? satisfiedBy,
-      @JsonKey(name: '_satisfiedBy') final List<Element>? satisfiedByElement,
+      @JsonKey(name: '_satisfiedBy')
+      final List<PrimitiveElement>? satisfiedByElement,
       final List<FhirUrl>? reference,
-      @JsonKey(name: '_reference') final List<Element>? referenceElement,
+      @JsonKey(name: '_reference')
+      final List<PrimitiveElement>? referenceElement,
       final List<Reference>? source}) = _$RequirementsStatementImpl;
   const _RequirementsStatement._() : super._();
 
@@ -2826,7 +2838,7 @@ abstract class _RequirementsStatement extends RequirementsStatement {
 
   /// [conformanceElement] ("_conformance") Extensions for conformance
   @JsonKey(name: '_conformance')
-  List<Element>? get conformanceElement;
+  List<PrimitiveElement>? get conformanceElement;
   @override
 
   /// [conditionality] This boolean flag is set to true of the text of the
@@ -2879,7 +2891,7 @@ abstract class _RequirementsStatement extends RequirementsStatement {
 
   /// [satisfiedByElement] ("_satisfiedBy") Extensions for satisfiedBy
   @JsonKey(name: '_satisfiedBy')
-  List<Element>? get satisfiedByElement;
+  List<PrimitiveElement>? get satisfiedByElement;
   @override
 
   /// [reference] A reference to another artifact that created this requirement.
@@ -2890,7 +2902,7 @@ abstract class _RequirementsStatement extends RequirementsStatement {
 
   /// [referenceElement] ("_reference") Extensions for reference
   @JsonKey(name: '_reference')
-  List<Element>? get referenceElement;
+  List<PrimitiveElement>? get referenceElement;
   @override
 
   /// [source] Who asked for this statement to be a requirement. By default, it's

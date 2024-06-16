@@ -395,7 +395,7 @@ _$ConsentVerificationImpl _$$ConsentVerificationImplFromJson(
           ?.map((e) => FhirDateTime.fromJson(e as String))
           .toList(),
       verificationDateElement: (json['_verificationDate'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

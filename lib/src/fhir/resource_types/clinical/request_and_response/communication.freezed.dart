@@ -108,7 +108,7 @@ mixin _$Communication {
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
   @JsonKey(name: '_instantiatesUri')
-  List<Element>? get instantiatesUriElement =>
+  List<PrimitiveElement>? get instantiatesUriElement =>
       throw _privateConstructorUsedError;
 
   /// [basedOn] An order, proposal or plan fulfilled in whole or in part by this
@@ -226,7 +226,8 @@ abstract class $CommunicationCopyWith<$Res> {
       List<Identifier>? identifier,
       List<FhirCanonical>? instantiatesCanonical,
       List<FhirUri>? instantiatesUri,
-      @JsonKey(name: '_instantiatesUri') List<Element>? instantiatesUriElement,
+      @JsonKey(name: '_instantiatesUri')
+      List<PrimitiveElement>? instantiatesUriElement,
       List<Reference>? basedOn,
       List<Reference>? partOf,
       List<Reference>? inResponseTo,
@@ -372,7 +373,7 @@ class _$CommunicationCopyWithImpl<$Res, $Val extends Communication>
       instantiatesUriElement: freezed == instantiatesUriElement
           ? _value.instantiatesUriElement
           : instantiatesUriElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       basedOn: freezed == basedOn
           ? _value.basedOn
           : basedOn // ignore: cast_nullable_to_non_nullable
@@ -577,7 +578,8 @@ abstract class _$$CommunicationImplCopyWith<$Res>
       List<Identifier>? identifier,
       List<FhirCanonical>? instantiatesCanonical,
       List<FhirUri>? instantiatesUri,
-      @JsonKey(name: '_instantiatesUri') List<Element>? instantiatesUriElement,
+      @JsonKey(name: '_instantiatesUri')
+      List<PrimitiveElement>? instantiatesUriElement,
       List<Reference>? basedOn,
       List<Reference>? partOf,
       List<Reference>? inResponseTo,
@@ -728,7 +730,7 @@ class __$$CommunicationImplCopyWithImpl<$Res>
       instantiatesUriElement: freezed == instantiatesUriElement
           ? _value._instantiatesUriElement
           : instantiatesUriElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       basedOn: freezed == basedOn
           ? _value._basedOn
           : basedOn // ignore: cast_nullable_to_non_nullable
@@ -845,7 +847,7 @@ class _$CommunicationImpl extends _Communication {
       final List<FhirCanonical>? instantiatesCanonical,
       final List<FhirUri>? instantiatesUri,
       @JsonKey(name: '_instantiatesUri')
-      final List<Element>? instantiatesUriElement,
+      final List<PrimitiveElement>? instantiatesUriElement,
       final List<Reference>? basedOn,
       final List<Reference>? partOf,
       final List<Reference>? inResponseTo,
@@ -1071,12 +1073,12 @@ class _$CommunicationImpl extends _Communication {
   }
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
-  final List<Element>? _instantiatesUriElement;
+  final List<PrimitiveElement>? _instantiatesUriElement;
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
   @override
   @JsonKey(name: '_instantiatesUri')
-  List<Element>? get instantiatesUriElement {
+  List<PrimitiveElement>? get instantiatesUriElement {
     final value = _instantiatesUriElement;
     if (value == null) return null;
     if (_instantiatesUriElement is EqualUnmodifiableListView)
@@ -1442,7 +1444,7 @@ abstract class _Communication extends Communication {
       final List<FhirCanonical>? instantiatesCanonical,
       final List<FhirUri>? instantiatesUri,
       @JsonKey(name: '_instantiatesUri')
-      final List<Element>? instantiatesUriElement,
+      final List<PrimitiveElement>? instantiatesUriElement,
       final List<Reference>? basedOn,
       final List<Reference>? partOf,
       final List<Reference>? inResponseTo,
@@ -1572,7 +1574,7 @@ abstract class _Communication extends Communication {
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
   @JsonKey(name: '_instantiatesUri')
-  List<Element>? get instantiatesUriElement;
+  List<PrimitiveElement>? get instantiatesUriElement;
   @override
 
   /// [basedOn] An order, proposal or plan fulfilled in whole or in part by this

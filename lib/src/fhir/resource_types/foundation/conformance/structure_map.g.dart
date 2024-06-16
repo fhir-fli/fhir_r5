@@ -777,7 +777,7 @@ _$StructureMapTargetImpl _$$StructureMapTargetImplFromJson(
       listMode:
           (json['listMode'] as List<dynamic>?)?.map(FhirCode.fromJson).toList(),
       listModeElement: (json['_listMode'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       listRuleId: json['listRuleId'] == null
           ? null

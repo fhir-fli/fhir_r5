@@ -591,7 +591,8 @@ class ConsentVerification with _$ConsentVerification implements BackboneType {
 
     /// [verificationDateElement] ("_verificationDate") Extensions for
     ///  verificationDate
-    @JsonKey(name: '_verificationDate') List<Element>? verificationDateElement,
+    @JsonKey(name: '_verificationDate')
+    List<PrimitiveElement>? verificationDateElement,
   }) = _ConsentVerification;
 
   @override

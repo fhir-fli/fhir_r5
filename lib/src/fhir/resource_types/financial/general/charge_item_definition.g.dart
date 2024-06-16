@@ -165,7 +165,7 @@ _$ChargeItemDefinitionImpl _$$ChargeItemDefinitionImplFromJson(
           ?.map(FhirUri.fromJson)
           .toList(),
       derivedFromUriElement: (json['_derivedFromUri'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       partOf: (json['partOf'] as List<dynamic>?)
           ?.map(FhirCanonical.fromJson)

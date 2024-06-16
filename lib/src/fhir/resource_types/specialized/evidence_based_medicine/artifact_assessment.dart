@@ -500,7 +500,7 @@ class ArtifactAssessmentContent
     List<FhirUri>? path,
 
     /// [pathElement] ("_path") Extensions for path
-    @JsonKey(name: '_path') List<Element>? pathElement,
+    @JsonKey(name: '_path') List<PrimitiveElement>? pathElement,
 
     /// [relatedArtifact] Additional related artifacts that provide supporting
     ///  documentation, additional evidence, or further information related to the

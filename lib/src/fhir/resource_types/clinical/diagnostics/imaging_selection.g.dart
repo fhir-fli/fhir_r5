@@ -403,7 +403,7 @@ _$ImagingSelectionInstanceImpl _$$ImagingSelectionInstanceImplFromJson(
       subset:
           (json['subset'] as List<dynamic>?)?.map((e) => e as String).toList(),
       subsetElement: (json['_subset'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       imageRegion2D: (json['imageRegion2D'] as List<dynamic>?)
           ?.map((e) =>
@@ -466,7 +466,7 @@ _$ImagingSelectionImageRegion2DImpl
               ?.map(FhirDecimal.fromJson)
               .toList(),
           coordinateElement: (json['_coordinate'] as List<dynamic>?)
-              ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
               .toList(),
         );
 
@@ -515,7 +515,7 @@ _$ImagingSelectionImageRegion3DImpl
               ?.map(FhirDecimal.fromJson)
               .toList(),
           coordinateElement: (json['_coordinate'] as List<dynamic>?)
-              ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
               .toList(),
         );
 

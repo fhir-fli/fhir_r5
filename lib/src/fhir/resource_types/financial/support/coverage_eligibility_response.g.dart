@@ -52,7 +52,7 @@ _$CoverageEligibilityResponseImpl _$$CoverageEligibilityResponseImplFromJson(
       purpose:
           (json['purpose'] as List<dynamic>?)?.map(FhirCode.fromJson).toList(),
       purposeElement: (json['_purpose'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       patient: Reference.fromJson(json['patient'] as Map<String, dynamic>),
       event: (json['event'] as List<dynamic>?)
@@ -629,7 +629,7 @@ _$CoverageEligibilityResponseErrorImpl
               ?.map((e) => e as String)
               .toList(),
           expressionElement: (json['_expression'] as List<dynamic>?)
-              ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
               .toList(),
         );
 

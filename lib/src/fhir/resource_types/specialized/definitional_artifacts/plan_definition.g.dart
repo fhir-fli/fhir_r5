@@ -767,7 +767,7 @@ _$PlanDefinitionActionImpl _$$PlanDefinitionActionImplFromJson(
           .toList(),
       goalId: (json['goalId'] as List<dynamic>?)?.map(FhirId.fromJson).toList(),
       goalIdElement: (json['_goalId'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       subjectCodeableConcept: json['subjectCodeableConcept'] == null
           ? null

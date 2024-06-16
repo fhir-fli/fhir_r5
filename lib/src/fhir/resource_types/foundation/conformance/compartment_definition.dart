@@ -571,7 +571,7 @@ class CompartmentDefinitionResource
     List<String>? param,
 
     /// [paramElement] ("_param") Extensions for param
-    @JsonKey(name: '_param') List<Element>? paramElement,
+    @JsonKey(name: '_param') List<PrimitiveElement>? paramElement,
 
     /// [documentation] Additional documentation about the resource and compartment.
     String? documentation,

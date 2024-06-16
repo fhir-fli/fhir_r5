@@ -75,7 +75,7 @@ mixin _$VirtualServiceDetail {
 
   /// [additionalInfoElement] ("_additionalInfo") Extensions for additionalInfo
   @JsonKey(name: '_additionalInfo')
-  List<Element>? get additionalInfoElement =>
+  List<PrimitiveElement>? get additionalInfoElement =>
       throw _privateConstructorUsedError;
 
   /// [maxParticipants] Maximum number of participants supported by the virtual
@@ -117,7 +117,8 @@ abstract class $VirtualServiceDetailCopyWith<$Res> {
       ContactPoint? addressContactPoint,
       ExtendedContactDetail? addressExtendedContactDetail,
       List<FhirUrl>? additionalInfo,
-      @JsonKey(name: '_additionalInfo') List<Element>? additionalInfoElement,
+      @JsonKey(name: '_additionalInfo')
+      List<PrimitiveElement>? additionalInfoElement,
       FhirPositiveInt? maxParticipants,
       @JsonKey(name: '_maxParticipants')
       PrimitiveElement? maxParticipantsElement,
@@ -203,7 +204,7 @@ class _$VirtualServiceDetailCopyWithImpl<$Res,
       additionalInfoElement: freezed == additionalInfoElement
           ? _value.additionalInfoElement
           : additionalInfoElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       maxParticipants: freezed == maxParticipants
           ? _value.maxParticipants
           : maxParticipants // ignore: cast_nullable_to_non_nullable
@@ -281,7 +282,8 @@ abstract class _$$VirtualServiceDetailImplCopyWith<$Res>
       ContactPoint? addressContactPoint,
       ExtendedContactDetail? addressExtendedContactDetail,
       List<FhirUrl>? additionalInfo,
-      @JsonKey(name: '_additionalInfo') List<Element>? additionalInfoElement,
+      @JsonKey(name: '_additionalInfo')
+      List<PrimitiveElement>? additionalInfoElement,
       FhirPositiveInt? maxParticipants,
       @JsonKey(name: '_maxParticipants')
       PrimitiveElement? maxParticipantsElement,
@@ -367,7 +369,7 @@ class __$$VirtualServiceDetailImplCopyWithImpl<$Res>
       additionalInfoElement: freezed == additionalInfoElement
           ? _value._additionalInfoElement
           : additionalInfoElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       maxParticipants: freezed == maxParticipants
           ? _value.maxParticipants
           : maxParticipants // ignore: cast_nullable_to_non_nullable
@@ -403,7 +405,7 @@ class _$VirtualServiceDetailImpl extends _VirtualServiceDetail {
       this.addressExtendedContactDetail,
       final List<FhirUrl>? additionalInfo,
       @JsonKey(name: '_additionalInfo')
-      final List<Element>? additionalInfoElement,
+      final List<PrimitiveElement>? additionalInfoElement,
       this.maxParticipants,
       @JsonKey(name: '_maxParticipants') this.maxParticipantsElement,
       this.sessionKey,
@@ -501,12 +503,12 @@ class _$VirtualServiceDetailImpl extends _VirtualServiceDetail {
   }
 
   /// [additionalInfoElement] ("_additionalInfo") Extensions for additionalInfo
-  final List<Element>? _additionalInfoElement;
+  final List<PrimitiveElement>? _additionalInfoElement;
 
   /// [additionalInfoElement] ("_additionalInfo") Extensions for additionalInfo
   @override
   @JsonKey(name: '_additionalInfo')
-  List<Element>? get additionalInfoElement {
+  List<PrimitiveElement>? get additionalInfoElement {
     final value = _additionalInfoElement;
     if (value == null) return null;
     if (_additionalInfoElement is EqualUnmodifiableListView)
@@ -627,7 +629,7 @@ abstract class _VirtualServiceDetail extends VirtualServiceDetail {
       final ExtendedContactDetail? addressExtendedContactDetail,
       final List<FhirUrl>? additionalInfo,
       @JsonKey(name: '_additionalInfo')
-      final List<Element>? additionalInfoElement,
+      final List<PrimitiveElement>? additionalInfoElement,
       final FhirPositiveInt? maxParticipants,
       @JsonKey(name: '_maxParticipants')
       final PrimitiveElement? maxParticipantsElement,
@@ -704,7 +706,7 @@ abstract class _VirtualServiceDetail extends VirtualServiceDetail {
 
   /// [additionalInfoElement] ("_additionalInfo") Extensions for additionalInfo
   @JsonKey(name: '_additionalInfo')
-  List<Element>? get additionalInfoElement;
+  List<PrimitiveElement>? get additionalInfoElement;
   @override
 
   /// [maxParticipants] Maximum number of participants supported by the virtual

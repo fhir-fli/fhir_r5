@@ -108,7 +108,7 @@ mixin _$FamilyMemberHistory {
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
   @JsonKey(name: '_instantiatesUri')
-  List<Element>? get instantiatesUriElement =>
+  List<PrimitiveElement>? get instantiatesUriElement =>
       throw _privateConstructorUsedError;
 
   /// [status] A code specifying the status of the record of the family history
@@ -283,7 +283,8 @@ abstract class $FamilyMemberHistoryCopyWith<$Res> {
       List<Identifier>? identifier,
       List<FhirCanonical>? instantiatesCanonical,
       List<FhirUri>? instantiatesUri,
-      @JsonKey(name: '_instantiatesUri') List<Element>? instantiatesUriElement,
+      @JsonKey(name: '_instantiatesUri')
+      List<PrimitiveElement>? instantiatesUriElement,
       FhirCode? status,
       @JsonKey(name: '_status') PrimitiveElement? statusElement,
       CodeableConcept? dataAbsentReason,
@@ -456,7 +457,7 @@ class _$FamilyMemberHistoryCopyWithImpl<$Res, $Val extends FamilyMemberHistory>
       instantiatesUriElement: freezed == instantiatesUriElement
           ? _value.instantiatesUriElement
           : instantiatesUriElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -745,7 +746,8 @@ abstract class _$$FamilyMemberHistoryImplCopyWith<$Res>
       List<Identifier>? identifier,
       List<FhirCanonical>? instantiatesCanonical,
       List<FhirUri>? instantiatesUri,
-      @JsonKey(name: '_instantiatesUri') List<Element>? instantiatesUriElement,
+      @JsonKey(name: '_instantiatesUri')
+      List<PrimitiveElement>? instantiatesUriElement,
       FhirCode? status,
       @JsonKey(name: '_status') PrimitiveElement? statusElement,
       CodeableConcept? dataAbsentReason,
@@ -927,7 +929,7 @@ class __$$FamilyMemberHistoryImplCopyWithImpl<$Res>
       instantiatesUriElement: freezed == instantiatesUriElement
           ? _value._instantiatesUriElement
           : instantiatesUriElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -1088,7 +1090,7 @@ class _$FamilyMemberHistoryImpl extends _FamilyMemberHistory {
       final List<FhirCanonical>? instantiatesCanonical,
       final List<FhirUri>? instantiatesUri,
       @JsonKey(name: '_instantiatesUri')
-      final List<Element>? instantiatesUriElement,
+      final List<PrimitiveElement>? instantiatesUriElement,
       this.status,
       @JsonKey(name: '_status') this.statusElement,
       this.dataAbsentReason,
@@ -1320,12 +1322,12 @@ class _$FamilyMemberHistoryImpl extends _FamilyMemberHistory {
   }
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
-  final List<Element>? _instantiatesUriElement;
+  final List<PrimitiveElement>? _instantiatesUriElement;
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
   @override
   @JsonKey(name: '_instantiatesUri')
-  List<Element>? get instantiatesUriElement {
+  List<PrimitiveElement>? get instantiatesUriElement {
     final value = _instantiatesUriElement;
     if (value == null) return null;
     if (_instantiatesUriElement is EqualUnmodifiableListView)
@@ -1749,7 +1751,7 @@ abstract class _FamilyMemberHistory extends FamilyMemberHistory {
       final List<FhirCanonical>? instantiatesCanonical,
       final List<FhirUri>? instantiatesUri,
       @JsonKey(name: '_instantiatesUri')
-      final List<Element>? instantiatesUriElement,
+      final List<PrimitiveElement>? instantiatesUriElement,
       final FhirCode? status,
       @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final CodeableConcept? dataAbsentReason,
@@ -1895,7 +1897,7 @@ abstract class _FamilyMemberHistory extends FamilyMemberHistory {
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
   @JsonKey(name: '_instantiatesUri')
-  List<Element>? get instantiatesUriElement;
+  List<PrimitiveElement>? get instantiatesUriElement;
   @override
 
   /// [status] A code specifying the status of the record of the family history

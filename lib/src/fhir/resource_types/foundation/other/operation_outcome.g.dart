@@ -271,13 +271,13 @@ _$OperationOutcomeIssueImpl _$$OperationOutcomeIssueImplFromJson(
           ?.map((e) => e as String)
           .toList(),
       locationElement: (json['_location'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       expression: (json['expression'] as List<dynamic>?)
           ?.map((e) => e as String)
           .toList(),
       expressionElement: (json['_expression'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

@@ -245,7 +245,8 @@ class ChargeItem with _$ChargeItem implements DomainResource {
     List<FhirUri>? definitionUri,
 
     /// [definitionUriElement] ("_definitionUri") Extensions for definitionUri
-    @JsonKey(name: '_definitionUri') List<Element>? definitionUriElement,
+    @JsonKey(name: '_definitionUri')
+    List<PrimitiveElement>? definitionUriElement,
 
     /// [definitionCanonical] References the source of pricing information, rules
     ///  of application for the code this ChargeItem uses.
@@ -386,7 +387,6 @@ class ChargeItem with _$ChargeItem implements DomainResource {
     }
   }
 
-
   /// Another convenience method because more and more I'm transmitting FHIR
   /// data as a String and not a Map
   @override
@@ -410,7 +410,8 @@ class ChargeItem with _$ChargeItem implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));}
+      copyWith(meta: updateFhirMetaVersion(meta));
+}
 
 /// [ChargeItemPerformer] The resource ChargeItem describes the provision of
 ///  healthcare provider products for a certain patient, therefore referring

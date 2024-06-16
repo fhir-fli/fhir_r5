@@ -94,7 +94,7 @@ _$ClinicalImpressionImpl _$$ClinicalImpressionImplFromJson(
       protocol:
           (json['protocol'] as List<dynamic>?)?.map(FhirUri.fromJson).toList(),
       protocolElement: (json['_protocol'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       summary: json['summary'] as String?,
       summaryElement: json['_summary'] == null

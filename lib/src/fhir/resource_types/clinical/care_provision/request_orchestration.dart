@@ -229,7 +229,7 @@ class RequestOrchestration
     /// [instantiatesCanonicalElement] ("_instantiatesCanonical") Extensions for
     ///  instantiatesCanonical
     @JsonKey(name: '_instantiatesCanonical')
-    List<Element>? instantiatesCanonicalElement,
+    List<PrimitiveElement>? instantiatesCanonicalElement,
 
     /// [instantiatesUri] A URL referencing an externally defined protocol,
     ///  guideline, orderset or other definition that is adhered to in whole or in
@@ -237,7 +237,8 @@ class RequestOrchestration
     List<FhirUri>? instantiatesUri,
 
     /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
-    @JsonKey(name: '_instantiatesUri') List<Element>? instantiatesUriElement,
+    @JsonKey(name: '_instantiatesUri')
+    List<PrimitiveElement>? instantiatesUriElement,
 
     /// [basedOn] A plan, proposal or order that is fulfilled in whole or in part
     ///  by this request.

@@ -221,7 +221,8 @@ class SubstanceProtein with _$SubstanceProtein implements DomainResource {
 
     /// [disulfideLinkageElement] ("_disulfideLinkage") Extensions for
     ///  disulfideLinkage
-    @JsonKey(name: '_disulfideLinkage') List<Element>? disulfideLinkageElement,
+    @JsonKey(name: '_disulfideLinkage')
+    List<PrimitiveElement>? disulfideLinkageElement,
 
     /// [subunit] This subclause refers to the description of each subunit
     ///  constituting the SubstanceProtein. A subunit is a linear sequence of amino

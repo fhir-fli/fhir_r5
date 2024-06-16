@@ -119,7 +119,7 @@ mixin _$SubstanceProtein {
   /// [disulfideLinkageElement] ("_disulfideLinkage") Extensions for
   ///  disulfideLinkage
   @JsonKey(name: '_disulfideLinkage')
-  List<Element>? get disulfideLinkageElement =>
+  List<PrimitiveElement>? get disulfideLinkageElement =>
       throw _privateConstructorUsedError;
 
   /// [subunit] This subclause refers to the description of each subunit
@@ -164,7 +164,7 @@ abstract class $SubstanceProteinCopyWith<$Res> {
       PrimitiveElement? numberOfSubunitsElement,
       List<String>? disulfideLinkage,
       @JsonKey(name: '_disulfideLinkage')
-      List<Element>? disulfideLinkageElement,
+      List<PrimitiveElement>? disulfideLinkageElement,
       List<SubstanceProteinSubunit>? subunit});
 
   $FhirMetaCopyWith<$Res>? get meta;
@@ -267,7 +267,7 @@ class _$SubstanceProteinCopyWithImpl<$Res, $Val extends SubstanceProtein>
       disulfideLinkageElement: freezed == disulfideLinkageElement
           ? _value.disulfideLinkageElement
           : disulfideLinkageElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       subunit: freezed == subunit
           ? _value.subunit
           : subunit // ignore: cast_nullable_to_non_nullable
@@ -339,7 +339,7 @@ abstract class _$$SubstanceProteinImplCopyWith<$Res>
       PrimitiveElement? numberOfSubunitsElement,
       List<String>? disulfideLinkage,
       @JsonKey(name: '_disulfideLinkage')
-      List<Element>? disulfideLinkageElement,
+      List<PrimitiveElement>? disulfideLinkageElement,
       List<SubstanceProteinSubunit>? subunit});
 
   @override
@@ -443,7 +443,7 @@ class __$$SubstanceProteinImplCopyWithImpl<$Res>
       disulfideLinkageElement: freezed == disulfideLinkageElement
           ? _value._disulfideLinkageElement
           : disulfideLinkageElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       subunit: freezed == subunit
           ? _value._subunit
           : subunit // ignore: cast_nullable_to_non_nullable
@@ -473,7 +473,7 @@ class _$SubstanceProteinImpl extends _SubstanceProtein {
       @JsonKey(name: '_numberOfSubunits') this.numberOfSubunitsElement,
       final List<String>? disulfideLinkage,
       @JsonKey(name: '_disulfideLinkage')
-      final List<Element>? disulfideLinkageElement,
+      final List<PrimitiveElement>? disulfideLinkageElement,
       final List<SubstanceProteinSubunit>? subunit})
       : _contained = contained,
         _extension_ = extension_,
@@ -660,13 +660,13 @@ class _$SubstanceProteinImpl extends _SubstanceProtein {
 
   /// [disulfideLinkageElement] ("_disulfideLinkage") Extensions for
   ///  disulfideLinkage
-  final List<Element>? _disulfideLinkageElement;
+  final List<PrimitiveElement>? _disulfideLinkageElement;
 
   /// [disulfideLinkageElement] ("_disulfideLinkage") Extensions for
   ///  disulfideLinkage
   @override
   @JsonKey(name: '_disulfideLinkage')
-  List<Element>? get disulfideLinkageElement {
+  List<PrimitiveElement>? get disulfideLinkageElement {
     final value = _disulfideLinkageElement;
     if (value == null) return null;
     if (_disulfideLinkageElement is EqualUnmodifiableListView)
@@ -803,7 +803,7 @@ abstract class _SubstanceProtein extends SubstanceProtein {
       final PrimitiveElement? numberOfSubunitsElement,
       final List<String>? disulfideLinkage,
       @JsonKey(name: '_disulfideLinkage')
-      final List<Element>? disulfideLinkageElement,
+      final List<PrimitiveElement>? disulfideLinkageElement,
       final List<SubstanceProteinSubunit>? subunit}) = _$SubstanceProteinImpl;
   const _SubstanceProtein._() : super._();
 
@@ -923,7 +923,7 @@ abstract class _SubstanceProtein extends SubstanceProtein {
   /// [disulfideLinkageElement] ("_disulfideLinkage") Extensions for
   ///  disulfideLinkage
   @JsonKey(name: '_disulfideLinkage')
-  List<Element>? get disulfideLinkageElement;
+  List<PrimitiveElement>? get disulfideLinkageElement;
   @override
 
   /// [subunit] This subclause refers to the description of each subunit

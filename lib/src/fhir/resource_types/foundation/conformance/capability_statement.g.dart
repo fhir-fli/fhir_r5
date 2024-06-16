@@ -154,19 +154,19 @@ _$CapabilityStatementImpl _$$CapabilityStatementImplFromJson(
       format:
           (json['format'] as List<dynamic>?)?.map(FhirCode.fromJson).toList(),
       formatElement: (json['_format'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       patchFormat: (json['patchFormat'] as List<dynamic>?)
           ?.map(FhirCode.fromJson)
           .toList(),
       patchFormatElement: (json['_patchFormat'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       acceptLanguage: (json['acceptLanguage'] as List<dynamic>?)
           ?.map(FhirCode.fromJson)
           .toList(),
       acceptLanguageElement: (json['_acceptLanguage'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       implementationGuide: (json['implementationGuide'] as List<dynamic>?)
           ?.map(FhirCanonical.fromJson)
@@ -764,19 +764,19 @@ _$CapabilityStatementResourceImpl _$$CapabilityStatementResourceImplFromJson(
           ?.map(FhirCode.fromJson)
           .toList(),
       referencePolicyElement: (json['_referencePolicy'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       searchInclude: (json['searchInclude'] as List<dynamic>?)
           ?.map((e) => e as String)
           .toList(),
       searchIncludeElement: (json['_searchInclude'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       searchRevInclude: (json['searchRevInclude'] as List<dynamic>?)
           ?.map((e) => e as String)
           .toList(),
       searchRevIncludeElement: (json['_searchRevInclude'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       searchParam: (json['searchParam'] as List<dynamic>?)
           ?.map((e) => CapabilityStatementSearchParam.fromJson(

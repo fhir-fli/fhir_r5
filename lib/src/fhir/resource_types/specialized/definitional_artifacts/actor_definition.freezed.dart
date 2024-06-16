@@ -259,7 +259,8 @@ mixin _$ActorDefinition {
 
   /// [referenceElement] ("_reference") Extensions for reference
   @JsonKey(name: '_reference')
-  List<Element>? get referenceElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get referenceElement =>
+      throw _privateConstructorUsedError;
 
   /// [capabilities] The capability statement for the actor (if the concept is
   ///  applicable).
@@ -332,7 +333,7 @@ abstract class $ActorDefinitionCopyWith<$Res> {
       FhirMarkdown? documentation,
       @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       List<FhirUrl>? reference,
-      @JsonKey(name: '_reference') List<Element>? referenceElement,
+      @JsonKey(name: '_reference') List<PrimitiveElement>? referenceElement,
       FhirCanonical? capabilities,
       List<FhirCanonical>? derivedFrom});
 
@@ -597,7 +598,7 @@ class _$ActorDefinitionCopyWithImpl<$Res, $Val extends ActorDefinition>
       referenceElement: freezed == referenceElement
           ? _value.referenceElement
           : referenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       capabilities: freezed == capabilities
           ? _value.capabilities
           : capabilities // ignore: cast_nullable_to_non_nullable
@@ -704,7 +705,7 @@ abstract class _$$ActorDefinitionImplCopyWith<$Res>
       FhirMarkdown? documentation,
       @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       List<FhirUrl>? reference,
-      @JsonKey(name: '_reference') List<Element>? referenceElement,
+      @JsonKey(name: '_reference') List<PrimitiveElement>? referenceElement,
       FhirCanonical? capabilities,
       List<FhirCanonical>? derivedFrom});
 
@@ -970,7 +971,7 @@ class __$$ActorDefinitionImplCopyWithImpl<$Res>
       referenceElement: freezed == referenceElement
           ? _value._referenceElement
           : referenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       capabilities: freezed == capabilities
           ? _value.capabilities
           : capabilities // ignore: cast_nullable_to_non_nullable
@@ -1036,7 +1037,8 @@ class _$ActorDefinitionImpl extends _ActorDefinition {
       this.documentation,
       @JsonKey(name: '_documentation') this.documentationElement,
       final List<FhirUrl>? reference,
-      @JsonKey(name: '_reference') final List<Element>? referenceElement,
+      @JsonKey(name: '_reference')
+      final List<PrimitiveElement>? referenceElement,
       this.capabilities,
       final List<FhirCanonical>? derivedFrom})
       : _contained = contained,
@@ -1434,12 +1436,12 @@ class _$ActorDefinitionImpl extends _ActorDefinition {
   }
 
   /// [referenceElement] ("_reference") Extensions for reference
-  final List<Element>? _referenceElement;
+  final List<PrimitiveElement>? _referenceElement;
 
   /// [referenceElement] ("_reference") Extensions for reference
   @override
   @JsonKey(name: '_reference')
-  List<Element>? get referenceElement {
+  List<PrimitiveElement>? get referenceElement {
     final value = _referenceElement;
     if (value == null) return null;
     if (_referenceElement is EqualUnmodifiableListView)
@@ -1695,7 +1697,8 @@ abstract class _ActorDefinition extends ActorDefinition {
       @JsonKey(name: '_documentation')
       final PrimitiveElement? documentationElement,
       final List<FhirUrl>? reference,
-      @JsonKey(name: '_reference') final List<Element>? referenceElement,
+      @JsonKey(name: '_reference')
+      final List<PrimitiveElement>? referenceElement,
       final FhirCanonical? capabilities,
       final List<FhirCanonical>? derivedFrom}) = _$ActorDefinitionImpl;
   const _ActorDefinition._() : super._();
@@ -1984,7 +1987,7 @@ abstract class _ActorDefinition extends ActorDefinition {
 
   /// [referenceElement] ("_reference") Extensions for reference
   @JsonKey(name: '_reference')
-  List<Element>? get referenceElement;
+  List<PrimitiveElement>? get referenceElement;
   @override
 
   /// [capabilities] The capability statement for the actor (if the concept is

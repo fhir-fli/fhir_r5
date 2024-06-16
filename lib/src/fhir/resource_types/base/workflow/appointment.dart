@@ -795,7 +795,8 @@ class AppointmentRecurrenceTemplate
     List<FhirDate>? occurrenceDate,
 
     /// [occurrenceDateElement] ("_occurrenceDate") Extensions for occurrenceDate
-    @JsonKey(name: '_occurrenceDate') List<Element>? occurrenceDateElement,
+    @JsonKey(name: '_occurrenceDate')
+    List<PrimitiveElement>? occurrenceDateElement,
 
     /// [weeklyTemplate] Information about weekly recurring appointments.
     AppointmentWeeklyTemplate? weeklyTemplate,
@@ -811,7 +812,8 @@ class AppointmentRecurrenceTemplate
     List<FhirDate>? excludingDate,
 
     /// [excludingDateElement] ("_excludingDate") Extensions for excludingDate
-    @JsonKey(name: '_excludingDate') List<Element>? excludingDateElement,
+    @JsonKey(name: '_excludingDate')
+    List<PrimitiveElement>? excludingDateElement,
 
     /// [excludingRecurrenceId] Any dates, such as holidays, that should be
     ///  excluded from the recurrence.
@@ -820,7 +822,7 @@ class AppointmentRecurrenceTemplate
     /// [excludingRecurrenceIdElement] ("_excludingRecurrenceId") Extensions for
     ///  excludingRecurrenceId
     @JsonKey(name: '_excludingRecurrenceId')
-    List<Element>? excludingRecurrenceIdElement,
+    List<PrimitiveElement>? excludingRecurrenceIdElement,
   }) = _AppointmentRecurrenceTemplate;
 
   @override

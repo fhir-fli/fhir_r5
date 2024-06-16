@@ -151,7 +151,7 @@ _$OperationDefinitionImpl _$$OperationDefinitionImplFromJson(
       resource:
           (json['resource'] as List<dynamic>?)?.map(FhirCode.fromJson).toList(),
       resourceElement: (json['_resource'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       system:
           json['system'] == null ? null : FhirBoolean.fromJson(json['system']),
@@ -455,7 +455,7 @@ _$OperationDefinitionParameterImpl _$$OperationDefinitionParameterImplFromJson(
           : PrimitiveElement.fromJson(json['_use'] as Map<String, dynamic>),
       scope: (json['scope'] as List<dynamic>?)?.map(FhirCode.fromJson).toList(),
       scopeElement: (json['_scope'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       min: json['min'] == null ? null : FhirInteger.fromJson(json['min']),
       minElement: json['_min'] == null
@@ -480,7 +480,7 @@ _$OperationDefinitionParameterImpl _$$OperationDefinitionParameterImplFromJson(
           ?.map(FhirCode.fromJson)
           .toList(),
       allowedTypeElement: (json['_allowedType'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       targetProfile: (json['targetProfile'] as List<dynamic>?)
           ?.map(FhirCanonical.fromJson)
@@ -650,7 +650,7 @@ _$OperationDefinitionOverloadImpl _$$OperationDefinitionOverloadImplFromJson(
           ?.map((e) => e as String)
           .toList(),
       parameterNameElement: (json['_parameterName'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       comment: json['comment'] as String?,
       commentElement: json['_comment'] == null

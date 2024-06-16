@@ -140,7 +140,7 @@ mixin _$MedicationKnowledge {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  List<Element>? get nameElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get nameElement => throw _privateConstructorUsedError;
 
   /// [title] A short, descriptive, user-friendly title for the {{title}}.
   String? get title => throw _privateConstructorUsedError;
@@ -410,7 +410,7 @@ abstract class $MedicationKnowledgeCopyWith<$Res> {
       PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       List<String>? name,
-      @JsonKey(name: '_name') List<Element>? nameElement,
+      @JsonKey(name: '_name') List<PrimitiveElement>? nameElement,
       String? title,
       @JsonKey(name: '_title') PrimitiveElement? titleElement,
       FhirCode? status,
@@ -640,7 +640,7 @@ class _$MedicationKnowledgeCopyWithImpl<$Res, $Val extends MedicationKnowledge>
       nameElement: freezed == nameElement
           ? _value.nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -957,7 +957,7 @@ abstract class _$$MedicationKnowledgeImplCopyWith<$Res>
       PrimitiveElement? versionAlgorithmStringElement,
       Coding? versionAlgorithmCoding,
       List<String>? name,
-      @JsonKey(name: '_name') List<Element>? nameElement,
+      @JsonKey(name: '_name') List<PrimitiveElement>? nameElement,
       String? title,
       @JsonKey(name: '_title') PrimitiveElement? titleElement,
       FhirCode? status,
@@ -1192,7 +1192,7 @@ class __$$MedicationKnowledgeImplCopyWithImpl<$Res>
       nameElement: freezed == nameElement
           ? _value._nameElement
           : nameElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -1419,7 +1419,7 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
       this.versionAlgorithmStringElement,
       this.versionAlgorithmCoding,
       final List<String>? name,
-      @JsonKey(name: '_name') final List<Element>? nameElement,
+      @JsonKey(name: '_name') final List<PrimitiveElement>? nameElement,
       this.title,
       @JsonKey(name: '_title') this.titleElement,
       this.status,
@@ -1708,12 +1708,12 @@ class _$MedicationKnowledgeImpl extends _MedicationKnowledge {
   }
 
   /// [nameElement] ("_name") Extensions for name
-  final List<Element>? _nameElement;
+  final List<PrimitiveElement>? _nameElement;
 
   /// [nameElement] ("_name") Extensions for name
   @override
   @JsonKey(name: '_name')
-  List<Element>? get nameElement {
+  List<PrimitiveElement>? get nameElement {
     final value = _nameElement;
     if (value == null) return null;
     if (_nameElement is EqualUnmodifiableListView) return _nameElement;
@@ -2445,7 +2445,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
       final PrimitiveElement? versionAlgorithmStringElement,
       final Coding? versionAlgorithmCoding,
       final List<String>? name,
-      @JsonKey(name: '_name') final List<Element>? nameElement,
+      @JsonKey(name: '_name') final List<PrimitiveElement>? nameElement,
       final String? title,
       @JsonKey(name: '_title') final PrimitiveElement? titleElement,
       final FhirCode? status,
@@ -2647,7 +2647,7 @@ abstract class _MedicationKnowledge extends MedicationKnowledge {
 
   /// [nameElement] ("_name") Extensions for name
   @JsonKey(name: '_name')
-  List<Element>? get nameElement;
+  List<PrimitiveElement>? get nameElement;
   @override
 
   /// [title] A short, descriptive, user-friendly title for the {{title}}.

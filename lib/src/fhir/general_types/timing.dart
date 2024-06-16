@@ -104,7 +104,7 @@ class Timing with _$Timing implements DataType {
     List<FhirDateTime>? event,
 
     /// [eventElement] ("_event") Extensions for event
-    @JsonKey(name: '_event') List<Element>? eventElement,
+    @JsonKey(name: '_event') List<PrimitiveElement>? eventElement,
 
     /// [repeat] A set of rules that describe when the event is scheduled.
     TimingRepeat? repeat,
@@ -418,20 +418,20 @@ class TimingRepeat with _$TimingRepeat implements Element {
     List<DaysOfWeek>? dayOfWeek,
 
     /// [dayOfWeekElement] ("_dayOfWeek") Extensions for dayOfWeek
-    @JsonKey(name: '_dayOfWeek') List<Element>? dayOfWeekElement,
+    @JsonKey(name: '_dayOfWeek') List<PrimitiveElement>? dayOfWeekElement,
 
     /// [timeOfDay] Specified time of day for action to take place.
     List<FhirTime>? timeOfDay,
 
     /// [timeOfDayElement] ("_timeOfDay") Extensions for timeOfDay
-    @JsonKey(name: '_timeOfDay') List<Element>? timeOfDayElement,
+    @JsonKey(name: '_timeOfDay') List<PrimitiveElement>? timeOfDayElement,
 
     /// [when] An approximate time period during the day, potentially linked to an
     ///  event of daily living that indicates when the action should occur.
     List<TimingRepeatWhen>? when,
 
     /// [whenElement] ("_when") Extensions for when
-    @JsonKey(name: '_when') List<Element>? whenElement,
+    @JsonKey(name: '_when') List<PrimitiveElement>? whenElement,
 
     /// [offset] The number of minutes from the event. If the event code does not
     ///  indicate whether the minutes is before or after the event, then the offset

@@ -201,7 +201,7 @@ _$ConditionDefinitionImpl _$$ConditionDefinitionImplFromJson(
           ?.map(FhirUri.fromJson)
           .toList(),
       definitionElement: (json['_definition'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       observation: (json['observation'] as List<dynamic>?)
           ?.map((e) => ConditionDefinitionObservation.fromJson(

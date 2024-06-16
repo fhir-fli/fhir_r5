@@ -685,7 +685,7 @@ class ClaimResponseItem with _$ClaimResponseItem implements BackboneType {
     List<FhirPositiveInt>? noteNumber,
 
     /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-    @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+    @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
 
     /// [reviewOutcome] The high-level results of the adjudication if adjudication
     ///  has been performed.
@@ -1098,7 +1098,7 @@ class ClaimResponseDetail with _$ClaimResponseDetail implements BackboneType {
     List<FhirPositiveInt>? noteNumber,
 
     /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-    @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+    @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
 
     /// [reviewOutcome] The high-level results of the adjudication if adjudication
     ///  has been performed.
@@ -1248,7 +1248,7 @@ class ClaimResponseSubDetail
     List<FhirPositiveInt>? noteNumber,
 
     /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-    @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+    @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
 
     /// [reviewOutcome] The high-level results of the adjudication if adjudication
     ///  has been performed.
@@ -1451,14 +1451,15 @@ class ClaimResponseAddItem with _$ClaimResponseAddItem implements BackboneType {
     List<FhirPositiveInt>? itemSequence,
 
     /// [itemSequenceElement] ("_itemSequence") Extensions for itemSequence
-    @JsonKey(name: '_itemSequence') List<Element>? itemSequenceElement,
+    @JsonKey(name: '_itemSequence') List<PrimitiveElement>? itemSequenceElement,
 
     /// [detailSequence] The sequence number of the details within the claim item
     ///  which this line is intended to replace.
     List<FhirPositiveInt>? detailSequence,
 
     /// [detailSequenceElement] ("_detailSequence") Extensions for detailSequence
-    @JsonKey(name: '_detailSequence') List<Element>? detailSequenceElement,
+    @JsonKey(name: '_detailSequence')
+    List<PrimitiveElement>? detailSequenceElement,
 
     /// [subdetailSequence] The sequence number of the sub-details within the
     ///  details within the claim item which this line is intended to replace.
@@ -1467,7 +1468,7 @@ class ClaimResponseAddItem with _$ClaimResponseAddItem implements BackboneType {
     /// [subdetailSequenceElement] ("_subdetailSequence") Extensions for
     ///  subdetailSequence
     @JsonKey(name: '_subdetailSequence')
-    List<Element>? subdetailSequenceElement,
+    List<PrimitiveElement>? subdetailSequenceElement,
 
     /// [traceNumber] Trace number for tracking purposes. May be defined at the
     ///  jurisdiction level or between trading partners.
@@ -1559,7 +1560,7 @@ class ClaimResponseAddItem with _$ClaimResponseAddItem implements BackboneType {
     List<FhirPositiveInt>? noteNumber,
 
     /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-    @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+    @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
 
     /// [reviewOutcome] The high-level results of the adjudication if adjudication
     ///  has been performed.
@@ -1893,7 +1894,7 @@ class ClaimResponseDetail1 with _$ClaimResponseDetail1 implements BackboneType {
     List<FhirPositiveInt>? noteNumber,
 
     /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-    @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+    @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
 
     /// [reviewOutcome] The high-level results of the adjudication if adjudication
     ///  has been performed.
@@ -2114,7 +2115,7 @@ class ClaimResponseSubDetail1
     List<FhirPositiveInt>? noteNumber,
 
     /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-    @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+    @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
 
     /// [reviewOutcome] The high-level results of the adjudication if adjudication
     ///  has been performed.
@@ -2834,7 +2835,7 @@ class ClaimResponseError with _$ClaimResponseError implements BackboneType {
     List<String>? expression,
 
     /// [expressionElement] ("_expression") Extensions for expression
-    @JsonKey(name: '_expression') List<Element>? expressionElement,
+    @JsonKey(name: '_expression') List<PrimitiveElement>? expressionElement,
   }) = _ClaimResponseError;
 
   @override

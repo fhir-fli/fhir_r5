@@ -645,7 +645,7 @@ class SubscriptionTopicResourceTrigger
     /// [supportedInteractionElement] ("_supportedInteraction") Extensions for
     ///  supportedInteraction
     @JsonKey(name: '_supportedInteraction')
-    List<Element>? supportedInteractionElement,
+    List<PrimitiveElement>? supportedInteractionElement,
 
     /// [queryCriteria] The FHIR query based rules that the server should use to
     ///  determine when to trigger a notification for this subscription topic.
@@ -1169,13 +1169,13 @@ class SubscriptionTopicCanFilterBy
     List<FhirCode>? comparator,
 
     /// [comparatorElement] ("_comparator") Extensions for comparator
-    @JsonKey(name: '_comparator') List<Element>? comparatorElement,
+    @JsonKey(name: '_comparator') List<PrimitiveElement>? comparatorElement,
 
     /// [modifier] Modifiers allowed for the filter parameter.
     List<FhirCode>? modifier,
 
     /// [modifierElement] ("_modifier") Extensions for modifier
-    @JsonKey(name: '_modifier') List<Element>? modifierElement,
+    @JsonKey(name: '_modifier') List<PrimitiveElement>? modifierElement,
   }) = _SubscriptionTopicCanFilterBy;
 
   @override
@@ -1323,7 +1323,7 @@ class SubscriptionTopicNotificationShape
     List<String>? include,
 
     /// [includeElement] ("_include") Extensions for include
-    @JsonKey(name: '_include') List<Element>? includeElement,
+    @JsonKey(name: '_include') List<PrimitiveElement>? includeElement,
 
     /// [revInclude] Search-style _revinclude directives, rooted in the resource
     ///  for this shape. Servers SHOULD include resources listed here, if they
@@ -1333,7 +1333,7 @@ class SubscriptionTopicNotificationShape
     List<String>? revInclude,
 
     /// [revIncludeElement] ("_revInclude") Extensions for revInclude
-    @JsonKey(name: '_revInclude') List<Element>? revIncludeElement,
+    @JsonKey(name: '_revInclude') List<PrimitiveElement>? revIncludeElement,
   }) = _SubscriptionTopicNotificationShape;
 
   @override

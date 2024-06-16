@@ -299,7 +299,8 @@ mixin _$Questionnaire {
 
   /// [subjectTypeElement] ("_subjectType") Extensions for subjectType
   @JsonKey(name: '_subjectType')
-  List<Element>? get subjectTypeElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get subjectTypeElement =>
+      throw _privateConstructorUsedError;
 
   /// [code] An identifier for this collection of questions in a particular
   ///  terminology such as LOINC.
@@ -379,7 +380,7 @@ abstract class $QuestionnaireCopyWith<$Res> {
       List<RelatedArtifact>? relatedArtifact,
       List<FhirCanonical>? derivedFrom,
       List<FhirCode>? subjectType,
-      @JsonKey(name: '_subjectType') List<Element>? subjectTypeElement,
+      @JsonKey(name: '_subjectType') List<PrimitiveElement>? subjectTypeElement,
       List<Coding>? code,
       List<QuestionnaireItem>? item});
 
@@ -685,7 +686,7 @@ class _$QuestionnaireCopyWithImpl<$Res, $Val extends Questionnaire>
       subjectTypeElement: freezed == subjectTypeElement
           ? _value.subjectTypeElement
           : subjectTypeElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       code: freezed == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -812,7 +813,7 @@ abstract class _$$QuestionnaireImplCopyWith<$Res>
       List<RelatedArtifact>? relatedArtifact,
       List<FhirCanonical>? derivedFrom,
       List<FhirCode>? subjectType,
-      @JsonKey(name: '_subjectType') List<Element>? subjectTypeElement,
+      @JsonKey(name: '_subjectType') List<PrimitiveElement>? subjectTypeElement,
       List<Coding>? code,
       List<QuestionnaireItem>? item});
 
@@ -1120,7 +1121,7 @@ class __$$QuestionnaireImplCopyWithImpl<$Res>
       subjectTypeElement: freezed == subjectTypeElement
           ? _value._subjectTypeElement
           : subjectTypeElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       code: freezed == code
           ? _value._code
           : code // ignore: cast_nullable_to_non_nullable
@@ -1194,7 +1195,8 @@ class _$QuestionnaireImpl extends _Questionnaire {
       final List<RelatedArtifact>? relatedArtifact,
       final List<FhirCanonical>? derivedFrom,
       final List<FhirCode>? subjectType,
-      @JsonKey(name: '_subjectType') final List<Element>? subjectTypeElement,
+      @JsonKey(name: '_subjectType')
+      final List<PrimitiveElement>? subjectTypeElement,
       final List<Coding>? code,
       final List<QuestionnaireItem>? item})
       : _contained = contained,
@@ -1718,12 +1720,12 @@ class _$QuestionnaireImpl extends _Questionnaire {
   }
 
   /// [subjectTypeElement] ("_subjectType") Extensions for subjectType
-  final List<Element>? _subjectTypeElement;
+  final List<PrimitiveElement>? _subjectTypeElement;
 
   /// [subjectTypeElement] ("_subjectType") Extensions for subjectType
   @override
   @JsonKey(name: '_subjectType')
-  List<Element>? get subjectTypeElement {
+  List<PrimitiveElement>? get subjectTypeElement {
     final value = _subjectTypeElement;
     if (value == null) return null;
     if (_subjectTypeElement is EqualUnmodifiableListView)
@@ -2011,7 +2013,8 @@ abstract class _Questionnaire extends Questionnaire {
       final List<RelatedArtifact>? relatedArtifact,
       final List<FhirCanonical>? derivedFrom,
       final List<FhirCode>? subjectType,
-      @JsonKey(name: '_subjectType') final List<Element>? subjectTypeElement,
+      @JsonKey(name: '_subjectType')
+      final List<PrimitiveElement>? subjectTypeElement,
       final List<Coding>? code,
       final List<QuestionnaireItem>? item}) = _$QuestionnaireImpl;
   const _Questionnaire._() : super._();
@@ -2346,7 +2349,7 @@ abstract class _Questionnaire extends Questionnaire {
 
   /// [subjectTypeElement] ("_subjectType") Extensions for subjectType
   @JsonKey(name: '_subjectType')
-  List<Element>? get subjectTypeElement;
+  List<PrimitiveElement>? get subjectTypeElement;
   @override
 
   /// [code] An identifier for this collection of questions in a particular

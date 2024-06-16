@@ -254,7 +254,7 @@ class AllergyIntolerance with _$AllergyIntolerance implements DomainResource {
     List<FhirCode>? category,
 
     /// [categoryElement] ("_category") Extensions for category
-    @JsonKey(name: '_category') List<Element>? categoryElement,
+    @JsonKey(name: '_category') List<PrimitiveElement>? categoryElement,
 
     /// [criticality] Estimate of the potential clinical harm, or seriousness, of
     ///  the reaction to the identified substance.

@@ -2898,7 +2898,7 @@ mixin _$AppointmentRecurrenceTemplate {
 
   /// [occurrenceDateElement] ("_occurrenceDate") Extensions for occurrenceDate
   @JsonKey(name: '_occurrenceDate')
-  List<Element>? get occurrenceDateElement =>
+  List<PrimitiveElement>? get occurrenceDateElement =>
       throw _privateConstructorUsedError;
 
   /// [weeklyTemplate] Information about weekly recurring appointments.
@@ -2919,7 +2919,8 @@ mixin _$AppointmentRecurrenceTemplate {
 
   /// [excludingDateElement] ("_excludingDate") Extensions for excludingDate
   @JsonKey(name: '_excludingDate')
-  List<Element>? get excludingDateElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get excludingDateElement =>
+      throw _privateConstructorUsedError;
 
   /// [excludingRecurrenceId] Any dates, such as holidays, that should be
   ///  excluded from the recurrence.
@@ -2929,7 +2930,7 @@ mixin _$AppointmentRecurrenceTemplate {
   /// [excludingRecurrenceIdElement] ("_excludingRecurrenceId") Extensions for
   ///  excludingRecurrenceId
   @JsonKey(name: '_excludingRecurrenceId')
-  List<Element>? get excludingRecurrenceIdElement =>
+  List<PrimitiveElement>? get excludingRecurrenceIdElement =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -2959,15 +2960,17 @@ abstract class $AppointmentRecurrenceTemplateCopyWith<$Res> {
       @JsonKey(name: '_occurrenceCount')
       PrimitiveElement? occurrenceCountElement,
       List<FhirDate>? occurrenceDate,
-      @JsonKey(name: '_occurrenceDate') List<Element>? occurrenceDateElement,
+      @JsonKey(name: '_occurrenceDate')
+      List<PrimitiveElement>? occurrenceDateElement,
       AppointmentWeeklyTemplate? weeklyTemplate,
       AppointmentMonthlyTemplate? monthlyTemplate,
       AppointmentYearlyTemplate? yearlyTemplate,
       List<FhirDate>? excludingDate,
-      @JsonKey(name: '_excludingDate') List<Element>? excludingDateElement,
+      @JsonKey(name: '_excludingDate')
+      List<PrimitiveElement>? excludingDateElement,
       List<FhirPositiveInt>? excludingRecurrenceId,
       @JsonKey(name: '_excludingRecurrenceId')
-      List<Element>? excludingRecurrenceIdElement});
+      List<PrimitiveElement>? excludingRecurrenceIdElement});
 
   $CodeableConceptCopyWith<$Res>? get timezone;
   $CodeableConceptCopyWith<$Res> get recurrenceType;
@@ -3053,7 +3056,7 @@ class _$AppointmentRecurrenceTemplateCopyWithImpl<$Res,
       occurrenceDateElement: freezed == occurrenceDateElement
           ? _value.occurrenceDateElement
           : occurrenceDateElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       weeklyTemplate: freezed == weeklyTemplate
           ? _value.weeklyTemplate
           : weeklyTemplate // ignore: cast_nullable_to_non_nullable
@@ -3073,7 +3076,7 @@ class _$AppointmentRecurrenceTemplateCopyWithImpl<$Res,
       excludingDateElement: freezed == excludingDateElement
           ? _value.excludingDateElement
           : excludingDateElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       excludingRecurrenceId: freezed == excludingRecurrenceId
           ? _value.excludingRecurrenceId
           : excludingRecurrenceId // ignore: cast_nullable_to_non_nullable
@@ -3081,7 +3084,7 @@ class _$AppointmentRecurrenceTemplateCopyWithImpl<$Res,
       excludingRecurrenceIdElement: freezed == excludingRecurrenceIdElement
           ? _value.excludingRecurrenceIdElement
           : excludingRecurrenceIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ) as $Val);
   }
 
@@ -3167,15 +3170,17 @@ abstract class _$$AppointmentRecurrenceTemplateImplCopyWith<$Res>
       @JsonKey(name: '_occurrenceCount')
       PrimitiveElement? occurrenceCountElement,
       List<FhirDate>? occurrenceDate,
-      @JsonKey(name: '_occurrenceDate') List<Element>? occurrenceDateElement,
+      @JsonKey(name: '_occurrenceDate')
+      List<PrimitiveElement>? occurrenceDateElement,
       AppointmentWeeklyTemplate? weeklyTemplate,
       AppointmentMonthlyTemplate? monthlyTemplate,
       AppointmentYearlyTemplate? yearlyTemplate,
       List<FhirDate>? excludingDate,
-      @JsonKey(name: '_excludingDate') List<Element>? excludingDateElement,
+      @JsonKey(name: '_excludingDate')
+      List<PrimitiveElement>? excludingDateElement,
       List<FhirPositiveInt>? excludingRecurrenceId,
       @JsonKey(name: '_excludingRecurrenceId')
-      List<Element>? excludingRecurrenceIdElement});
+      List<PrimitiveElement>? excludingRecurrenceIdElement});
 
   @override
   $CodeableConceptCopyWith<$Res>? get timezone;
@@ -3265,7 +3270,7 @@ class __$$AppointmentRecurrenceTemplateImplCopyWithImpl<$Res>
       occurrenceDateElement: freezed == occurrenceDateElement
           ? _value._occurrenceDateElement
           : occurrenceDateElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       weeklyTemplate: freezed == weeklyTemplate
           ? _value.weeklyTemplate
           : weeklyTemplate // ignore: cast_nullable_to_non_nullable
@@ -3285,7 +3290,7 @@ class __$$AppointmentRecurrenceTemplateImplCopyWithImpl<$Res>
       excludingDateElement: freezed == excludingDateElement
           ? _value._excludingDateElement
           : excludingDateElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       excludingRecurrenceId: freezed == excludingRecurrenceId
           ? _value._excludingRecurrenceId
           : excludingRecurrenceId // ignore: cast_nullable_to_non_nullable
@@ -3293,7 +3298,7 @@ class __$$AppointmentRecurrenceTemplateImplCopyWithImpl<$Res>
       excludingRecurrenceIdElement: freezed == excludingRecurrenceIdElement
           ? _value._excludingRecurrenceIdElement
           : excludingRecurrenceIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ));
   }
 }
@@ -3314,16 +3319,16 @@ class _$AppointmentRecurrenceTemplateImpl
       @JsonKey(name: '_occurrenceCount') this.occurrenceCountElement,
       final List<FhirDate>? occurrenceDate,
       @JsonKey(name: '_occurrenceDate')
-      final List<Element>? occurrenceDateElement,
+      final List<PrimitiveElement>? occurrenceDateElement,
       this.weeklyTemplate,
       this.monthlyTemplate,
       this.yearlyTemplate,
       final List<FhirDate>? excludingDate,
       @JsonKey(name: '_excludingDate')
-      final List<Element>? excludingDateElement,
+      final List<PrimitiveElement>? excludingDateElement,
       final List<FhirPositiveInt>? excludingRecurrenceId,
       @JsonKey(name: '_excludingRecurrenceId')
-      final List<Element>? excludingRecurrenceIdElement})
+      final List<PrimitiveElement>? excludingRecurrenceIdElement})
       : _extension_ = extension_,
         _modifierExtension = modifierExtension,
         _occurrenceDate = occurrenceDate,
@@ -3446,12 +3451,12 @@ class _$AppointmentRecurrenceTemplateImpl
   }
 
   /// [occurrenceDateElement] ("_occurrenceDate") Extensions for occurrenceDate
-  final List<Element>? _occurrenceDateElement;
+  final List<PrimitiveElement>? _occurrenceDateElement;
 
   /// [occurrenceDateElement] ("_occurrenceDate") Extensions for occurrenceDate
   @override
   @JsonKey(name: '_occurrenceDate')
-  List<Element>? get occurrenceDateElement {
+  List<PrimitiveElement>? get occurrenceDateElement {
     final value = _occurrenceDateElement;
     if (value == null) return null;
     if (_occurrenceDateElement is EqualUnmodifiableListView)
@@ -3488,12 +3493,12 @@ class _$AppointmentRecurrenceTemplateImpl
   }
 
   /// [excludingDateElement] ("_excludingDate") Extensions for excludingDate
-  final List<Element>? _excludingDateElement;
+  final List<PrimitiveElement>? _excludingDateElement;
 
   /// [excludingDateElement] ("_excludingDate") Extensions for excludingDate
   @override
   @JsonKey(name: '_excludingDate')
-  List<Element>? get excludingDateElement {
+  List<PrimitiveElement>? get excludingDateElement {
     final value = _excludingDateElement;
     if (value == null) return null;
     if (_excludingDateElement is EqualUnmodifiableListView)
@@ -3520,13 +3525,13 @@ class _$AppointmentRecurrenceTemplateImpl
 
   /// [excludingRecurrenceIdElement] ("_excludingRecurrenceId") Extensions for
   ///  excludingRecurrenceId
-  final List<Element>? _excludingRecurrenceIdElement;
+  final List<PrimitiveElement>? _excludingRecurrenceIdElement;
 
   /// [excludingRecurrenceIdElement] ("_excludingRecurrenceId") Extensions for
   ///  excludingRecurrenceId
   @override
   @JsonKey(name: '_excludingRecurrenceId')
-  List<Element>? get excludingRecurrenceIdElement {
+  List<PrimitiveElement>? get excludingRecurrenceIdElement {
     final value = _excludingRecurrenceIdElement;
     if (value == null) return null;
     if (_excludingRecurrenceIdElement is EqualUnmodifiableListView)
@@ -3639,16 +3644,16 @@ abstract class _AppointmentRecurrenceTemplate
           final PrimitiveElement? occurrenceCountElement,
           final List<FhirDate>? occurrenceDate,
           @JsonKey(name: '_occurrenceDate')
-          final List<Element>? occurrenceDateElement,
+          final List<PrimitiveElement>? occurrenceDateElement,
           final AppointmentWeeklyTemplate? weeklyTemplate,
           final AppointmentMonthlyTemplate? monthlyTemplate,
           final AppointmentYearlyTemplate? yearlyTemplate,
           final List<FhirDate>? excludingDate,
           @JsonKey(name: '_excludingDate')
-          final List<Element>? excludingDateElement,
+          final List<PrimitiveElement>? excludingDateElement,
           final List<FhirPositiveInt>? excludingRecurrenceId,
           @JsonKey(name: '_excludingRecurrenceId')
-          final List<Element>? excludingRecurrenceIdElement}) =
+          final List<PrimitiveElement>? excludingRecurrenceIdElement}) =
       _$AppointmentRecurrenceTemplateImpl;
   const _AppointmentRecurrenceTemplate._() : super._();
 
@@ -3721,7 +3726,7 @@ abstract class _AppointmentRecurrenceTemplate
 
   /// [occurrenceDateElement] ("_occurrenceDate") Extensions for occurrenceDate
   @JsonKey(name: '_occurrenceDate')
-  List<Element>? get occurrenceDateElement;
+  List<PrimitiveElement>? get occurrenceDateElement;
   @override
 
   /// [weeklyTemplate] Information about weekly recurring appointments.
@@ -3743,7 +3748,7 @@ abstract class _AppointmentRecurrenceTemplate
 
   /// [excludingDateElement] ("_excludingDate") Extensions for excludingDate
   @JsonKey(name: '_excludingDate')
-  List<Element>? get excludingDateElement;
+  List<PrimitiveElement>? get excludingDateElement;
   @override
 
   /// [excludingRecurrenceId] Any dates, such as holidays, that should be
@@ -3754,7 +3759,7 @@ abstract class _AppointmentRecurrenceTemplate
   /// [excludingRecurrenceIdElement] ("_excludingRecurrenceId") Extensions for
   ///  excludingRecurrenceId
   @JsonKey(name: '_excludingRecurrenceId')
-  List<Element>? get excludingRecurrenceIdElement;
+  List<PrimitiveElement>? get excludingRecurrenceIdElement;
   @override
   @JsonKey(ignore: true)
   _$$AppointmentRecurrenceTemplateImplCopyWith<

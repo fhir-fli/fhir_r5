@@ -472,7 +472,7 @@ class SearchParameter with _$SearchParameter implements DomainResource {
     List<FhirCode>? base,
 
     /// [baseElement] ("_base") Extensions for base
-    @JsonKey(name: '_base') List<Element>? baseElement,
+    @JsonKey(name: '_base') List<PrimitiveElement>? baseElement,
 
     /// [type] The type of value that a search parameter may contain, and how the
     ///  content is interpreted.
@@ -506,7 +506,7 @@ class SearchParameter with _$SearchParameter implements DomainResource {
     List<FhirCode>? target,
 
     /// [targetElement] ("_target") Extensions for target
-    @JsonKey(name: '_target') List<Element>? targetElement,
+    @JsonKey(name: '_target') List<PrimitiveElement>? targetElement,
 
     /// [multipleOr] Whether multiple values are allowed for each time the
     ///  parameter exists. Values are separated by commas, and the parameter
@@ -528,13 +528,13 @@ class SearchParameter with _$SearchParameter implements DomainResource {
     List<FhirCode>? comparator,
 
     /// [comparatorElement] ("_comparator") Extensions for comparator
-    @JsonKey(name: '_comparator') List<Element>? comparatorElement,
+    @JsonKey(name: '_comparator') List<PrimitiveElement>? comparatorElement,
 
     /// [modifier] A modifier supported for the search parameter.
     List<FhirCode>? modifier,
 
     /// [modifierElement] ("_modifier") Extensions for modifier
-    @JsonKey(name: '_modifier') List<Element>? modifierElement,
+    @JsonKey(name: '_modifier') List<PrimitiveElement>? modifierElement,
 
     /// [chain] Contains the names of any search parameters which may be chained to
     ///  the containing search parameter. Chained parameters may be added to search
@@ -545,7 +545,7 @@ class SearchParameter with _$SearchParameter implements DomainResource {
     List<String>? chain,
 
     /// [chainElement] ("_chain") Extensions for chain
-    @JsonKey(name: '_chain') List<Element>? chainElement,
+    @JsonKey(name: '_chain') List<PrimitiveElement>? chainElement,
 
     /// [component] Used to define the parts of a composite search parameter.
     List<SearchParameterComponent>? component,

@@ -117,7 +117,8 @@ mixin _$Organization {
 
   /// [aliasElement] ("_alias") Extensions for alias
   @JsonKey(name: '_alias')
-  List<Element>? get aliasElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get aliasElement =>
+      throw _privateConstructorUsedError;
 
   /// [description] Description of the organization, which helps provide
   ///  additional general context on the organization to ensure that the correct
@@ -182,7 +183,7 @@ abstract class $OrganizationCopyWith<$Res> {
       String? name,
       @JsonKey(name: '_name') PrimitiveElement? nameElement,
       List<String>? alias,
-      @JsonKey(name: '_alias') List<Element>? aliasElement,
+      @JsonKey(name: '_alias') List<PrimitiveElement>? aliasElement,
       FhirMarkdown? description,
       @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<ExtendedContactDetail>? contact,
@@ -310,7 +311,7 @@ class _$OrganizationCopyWithImpl<$Res, $Val extends Organization>
       aliasElement: freezed == aliasElement
           ? _value.aliasElement
           : aliasElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -403,7 +404,7 @@ abstract class _$$OrganizationImplCopyWith<$Res>
       String? name,
       @JsonKey(name: '_name') PrimitiveElement? nameElement,
       List<String>? alias,
-      @JsonKey(name: '_alias') List<Element>? aliasElement,
+      @JsonKey(name: '_alias') List<PrimitiveElement>? aliasElement,
       FhirMarkdown? description,
       @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       List<ExtendedContactDetail>? contact,
@@ -532,7 +533,7 @@ class __$$OrganizationImplCopyWithImpl<$Res>
       aliasElement: freezed == aliasElement
           ? _value._aliasElement
           : aliasElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -584,7 +585,7 @@ class _$OrganizationImpl extends _Organization {
       this.name,
       @JsonKey(name: '_name') this.nameElement,
       final List<String>? alias,
-      @JsonKey(name: '_alias') final List<Element>? aliasElement,
+      @JsonKey(name: '_alias') final List<PrimitiveElement>? aliasElement,
       this.description,
       @JsonKey(name: '_description') this.descriptionElement,
       final List<ExtendedContactDetail>? contact,
@@ -795,12 +796,12 @@ class _$OrganizationImpl extends _Organization {
   }
 
   /// [aliasElement] ("_alias") Extensions for alias
-  final List<Element>? _aliasElement;
+  final List<PrimitiveElement>? _aliasElement;
 
   /// [aliasElement] ("_alias") Extensions for alias
   @override
   @JsonKey(name: '_alias')
-  List<Element>? get aliasElement {
+  List<PrimitiveElement>? get aliasElement {
     final value = _aliasElement;
     if (value == null) return null;
     if (_aliasElement is EqualUnmodifiableListView) return _aliasElement;
@@ -995,7 +996,7 @@ abstract class _Organization extends Organization {
       final String? name,
       @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final List<String>? alias,
-      @JsonKey(name: '_alias') final List<Element>? aliasElement,
+      @JsonKey(name: '_alias') final List<PrimitiveElement>? aliasElement,
       final FhirMarkdown? description,
       @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final List<ExtendedContactDetail>? contact,
@@ -1123,7 +1124,7 @@ abstract class _Organization extends Organization {
 
   /// [aliasElement] ("_alias") Extensions for alias
   @JsonKey(name: '_alias')
-  List<Element>? get aliasElement;
+  List<PrimitiveElement>? get aliasElement;
   @override
 
   /// [description] Description of the organization, which helps provide

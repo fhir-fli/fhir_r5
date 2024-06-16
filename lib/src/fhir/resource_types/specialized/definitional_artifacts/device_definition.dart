@@ -347,7 +347,7 @@ class DeviceDefinition with _$DeviceDefinition implements DomainResource {
     /// [productionIdentifierInUDIElement] ("_productionIdentifierInUDI")
     ///  Extensions for productionIdentifierInUDI
     @JsonKey(name: '_productionIdentifierInUDI')
-    List<Element>? productionIdentifierInUDIElement,
+    List<PrimitiveElement>? productionIdentifierInUDIElement,
 
     /// [guideline] Information aimed at providing directions for the usage of this
     ///  model of device.
@@ -1175,7 +1175,7 @@ class DeviceDefinitionConformsTo
     List<String>? version,
 
     /// [versionElement] ("_version") Extensions for version
-    @JsonKey(name: '_version') List<Element>? versionElement,
+    @JsonKey(name: '_version') List<PrimitiveElement>? versionElement,
 
     /// [source] Standard, regulation, certification, or guidance website,
     ///  document, or other publication, or similar, supporting the conformance.

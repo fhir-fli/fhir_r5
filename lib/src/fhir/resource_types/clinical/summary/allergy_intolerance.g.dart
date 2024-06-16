@@ -59,7 +59,7 @@ _$AllergyIntoleranceImpl _$$AllergyIntoleranceImplFromJson(
       category:
           (json['category'] as List<dynamic>?)?.map(FhirCode.fromJson).toList(),
       categoryElement: (json['_category'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       criticality: json['criticality'] == null
           ? null

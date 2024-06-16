@@ -105,7 +105,7 @@ mixin _$Permission {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  List<Element>? get dateElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get dateElement => throw _privateConstructorUsedError;
 
   /// [validity] The period in which the permission is active.
   Period? get validity => throw _privateConstructorUsedError;
@@ -154,7 +154,7 @@ abstract class $PermissionCopyWith<$Res> {
       @JsonKey(name: '_status') PrimitiveElement? statusElement,
       Reference? asserter,
       List<FhirDateTime>? date,
-      @JsonKey(name: '_date') List<Element>? dateElement,
+      @JsonKey(name: '_date') List<PrimitiveElement>? dateElement,
       Period? validity,
       PermissionJustification? justification,
       FhirCode? combining,
@@ -267,7 +267,7 @@ class _$PermissionCopyWithImpl<$Res, $Val extends Permission>
       dateElement: freezed == dateElement
           ? _value.dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       validity: freezed == validity
           ? _value.validity
           : validity // ignore: cast_nullable_to_non_nullable
@@ -378,7 +378,7 @@ abstract class _$$PermissionImplCopyWith<$Res>
       @JsonKey(name: '_status') PrimitiveElement? statusElement,
       Reference? asserter,
       List<FhirDateTime>? date,
-      @JsonKey(name: '_date') List<Element>? dateElement,
+      @JsonKey(name: '_date') List<PrimitiveElement>? dateElement,
       Period? validity,
       PermissionJustification? justification,
       FhirCode? combining,
@@ -494,7 +494,7 @@ class __$$PermissionImplCopyWithImpl<$Res>
       dateElement: freezed == dateElement
           ? _value._dateElement
           : dateElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       validity: freezed == validity
           ? _value.validity
           : validity // ignore: cast_nullable_to_non_nullable
@@ -539,7 +539,7 @@ class _$PermissionImpl extends _Permission {
       @JsonKey(name: '_status') this.statusElement,
       this.asserter,
       final List<FhirDateTime>? date,
-      @JsonKey(name: '_date') final List<Element>? dateElement,
+      @JsonKey(name: '_date') final List<PrimitiveElement>? dateElement,
       this.validity,
       this.justification,
       this.combining,
@@ -710,12 +710,12 @@ class _$PermissionImpl extends _Permission {
   }
 
   /// [dateElement] ("_date") Extensions for date
-  final List<Element>? _dateElement;
+  final List<PrimitiveElement>? _dateElement;
 
   /// [dateElement] ("_date") Extensions for date
   @override
   @JsonKey(name: '_date')
-  List<Element>? get dateElement {
+  List<PrimitiveElement>? get dateElement {
     final value = _dateElement;
     if (value == null) return null;
     if (_dateElement is EqualUnmodifiableListView) return _dateElement;
@@ -862,7 +862,7 @@ abstract class _Permission extends Permission {
       @JsonKey(name: '_status') final PrimitiveElement? statusElement,
       final Reference? asserter,
       final List<FhirDateTime>? date,
-      @JsonKey(name: '_date') final List<Element>? dateElement,
+      @JsonKey(name: '_date') final List<PrimitiveElement>? dateElement,
       final Period? validity,
       final PermissionJustification? justification,
       final FhirCode? combining,
@@ -973,7 +973,7 @@ abstract class _Permission extends Permission {
 
   /// [dateElement] ("_date") Extensions for date
   @JsonKey(name: '_date')
-  List<Element>? get dateElement;
+  List<PrimitiveElement>? get dateElement;
   @override
 
   /// [validity] The period in which the permission is active.

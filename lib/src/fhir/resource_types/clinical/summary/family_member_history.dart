@@ -267,7 +267,8 @@ class FamilyMemberHistory with _$FamilyMemberHistory implements DomainResource {
     List<FhirUri>? instantiatesUri,
 
     /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
-    @JsonKey(name: '_instantiatesUri') List<Element>? instantiatesUriElement,
+    @JsonKey(name: '_instantiatesUri')
+    List<PrimitiveElement>? instantiatesUriElement,
 
     /// [status] A code specifying the status of the record of the family history
     ///  of a specific family member.

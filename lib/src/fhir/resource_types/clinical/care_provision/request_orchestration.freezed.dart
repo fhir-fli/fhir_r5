@@ -103,7 +103,7 @@ mixin _$RequestOrchestration {
   /// [instantiatesCanonicalElement] ("_instantiatesCanonical") Extensions for
   ///  instantiatesCanonical
   @JsonKey(name: '_instantiatesCanonical')
-  List<Element>? get instantiatesCanonicalElement =>
+  List<PrimitiveElement>? get instantiatesCanonicalElement =>
       throw _privateConstructorUsedError;
 
   /// [instantiatesUri] A URL referencing an externally defined protocol,
@@ -113,7 +113,7 @@ mixin _$RequestOrchestration {
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
   @JsonKey(name: '_instantiatesUri')
-  List<Element>? get instantiatesUriElement =>
+  List<PrimitiveElement>? get instantiatesUriElement =>
       throw _privateConstructorUsedError;
 
   /// [basedOn] A plan, proposal or order that is fulfilled in whole or in part
@@ -220,9 +220,10 @@ abstract class $RequestOrchestrationCopyWith<$Res> {
       List<Identifier>? identifier,
       List<FhirCanonical>? instantiatesCanonical,
       @JsonKey(name: '_instantiatesCanonical')
-      List<Element>? instantiatesCanonicalElement,
+      List<PrimitiveElement>? instantiatesCanonicalElement,
       List<FhirUri>? instantiatesUri,
-      @JsonKey(name: '_instantiatesUri') List<Element>? instantiatesUriElement,
+      @JsonKey(name: '_instantiatesUri')
+      List<PrimitiveElement>? instantiatesUriElement,
       List<Reference>? basedOn,
       List<Reference>? replaces,
       Identifier? groupIdentifier,
@@ -358,7 +359,7 @@ class _$RequestOrchestrationCopyWithImpl<$Res,
       instantiatesCanonicalElement: freezed == instantiatesCanonicalElement
           ? _value.instantiatesCanonicalElement
           : instantiatesCanonicalElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       instantiatesUri: freezed == instantiatesUri
           ? _value.instantiatesUri
           : instantiatesUri // ignore: cast_nullable_to_non_nullable
@@ -366,7 +367,7 @@ class _$RequestOrchestrationCopyWithImpl<$Res,
       instantiatesUriElement: freezed == instantiatesUriElement
           ? _value.instantiatesUriElement
           : instantiatesUriElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       basedOn: freezed == basedOn
           ? _value.basedOn
           : basedOn // ignore: cast_nullable_to_non_nullable
@@ -555,9 +556,10 @@ abstract class _$$RequestOrchestrationImplCopyWith<$Res>
       List<Identifier>? identifier,
       List<FhirCanonical>? instantiatesCanonical,
       @JsonKey(name: '_instantiatesCanonical')
-      List<Element>? instantiatesCanonicalElement,
+      List<PrimitiveElement>? instantiatesCanonicalElement,
       List<FhirUri>? instantiatesUri,
-      @JsonKey(name: '_instantiatesUri') List<Element>? instantiatesUriElement,
+      @JsonKey(name: '_instantiatesUri')
+      List<PrimitiveElement>? instantiatesUriElement,
       List<Reference>? basedOn,
       List<Reference>? replaces,
       Identifier? groupIdentifier,
@@ -697,7 +699,7 @@ class __$$RequestOrchestrationImplCopyWithImpl<$Res>
       instantiatesCanonicalElement: freezed == instantiatesCanonicalElement
           ? _value._instantiatesCanonicalElement
           : instantiatesCanonicalElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       instantiatesUri: freezed == instantiatesUri
           ? _value._instantiatesUri
           : instantiatesUri // ignore: cast_nullable_to_non_nullable
@@ -705,7 +707,7 @@ class __$$RequestOrchestrationImplCopyWithImpl<$Res>
       instantiatesUriElement: freezed == instantiatesUriElement
           ? _value._instantiatesUriElement
           : instantiatesUriElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       basedOn: freezed == basedOn
           ? _value._basedOn
           : basedOn // ignore: cast_nullable_to_non_nullable
@@ -805,10 +807,10 @@ class _$RequestOrchestrationImpl extends _RequestOrchestration {
       final List<Identifier>? identifier,
       final List<FhirCanonical>? instantiatesCanonical,
       @JsonKey(name: '_instantiatesCanonical')
-      final List<Element>? instantiatesCanonicalElement,
+      final List<PrimitiveElement>? instantiatesCanonicalElement,
       final List<FhirUri>? instantiatesUri,
       @JsonKey(name: '_instantiatesUri')
-      final List<Element>? instantiatesUriElement,
+      final List<PrimitiveElement>? instantiatesUriElement,
       final List<Reference>? basedOn,
       final List<Reference>? replaces,
       this.groupIdentifier,
@@ -1009,13 +1011,13 @@ class _$RequestOrchestrationImpl extends _RequestOrchestration {
 
   /// [instantiatesCanonicalElement] ("_instantiatesCanonical") Extensions for
   ///  instantiatesCanonical
-  final List<Element>? _instantiatesCanonicalElement;
+  final List<PrimitiveElement>? _instantiatesCanonicalElement;
 
   /// [instantiatesCanonicalElement] ("_instantiatesCanonical") Extensions for
   ///  instantiatesCanonical
   @override
   @JsonKey(name: '_instantiatesCanonical')
-  List<Element>? get instantiatesCanonicalElement {
+  List<PrimitiveElement>? get instantiatesCanonicalElement {
     final value = _instantiatesCanonicalElement;
     if (value == null) return null;
     if (_instantiatesCanonicalElement is EqualUnmodifiableListView)
@@ -1042,12 +1044,12 @@ class _$RequestOrchestrationImpl extends _RequestOrchestration {
   }
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
-  final List<Element>? _instantiatesUriElement;
+  final List<PrimitiveElement>? _instantiatesUriElement;
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
   @override
   @JsonKey(name: '_instantiatesUri')
-  List<Element>? get instantiatesUriElement {
+  List<PrimitiveElement>? get instantiatesUriElement {
     final value = _instantiatesUriElement;
     if (value == null) return null;
     if (_instantiatesUriElement is EqualUnmodifiableListView)
@@ -1353,10 +1355,10 @@ abstract class _RequestOrchestration extends RequestOrchestration {
       final List<Identifier>? identifier,
       final List<FhirCanonical>? instantiatesCanonical,
       @JsonKey(name: '_instantiatesCanonical')
-      final List<Element>? instantiatesCanonicalElement,
+      final List<PrimitiveElement>? instantiatesCanonicalElement,
       final List<FhirUri>? instantiatesUri,
       @JsonKey(name: '_instantiatesUri')
-      final List<Element>? instantiatesUriElement,
+      final List<PrimitiveElement>? instantiatesUriElement,
       final List<Reference>? basedOn,
       final List<Reference>? replaces,
       final Identifier? groupIdentifier,
@@ -1477,7 +1479,7 @@ abstract class _RequestOrchestration extends RequestOrchestration {
   /// [instantiatesCanonicalElement] ("_instantiatesCanonical") Extensions for
   ///  instantiatesCanonical
   @JsonKey(name: '_instantiatesCanonical')
-  List<Element>? get instantiatesCanonicalElement;
+  List<PrimitiveElement>? get instantiatesCanonicalElement;
   @override
 
   /// [instantiatesUri] A URL referencing an externally defined protocol,
@@ -1488,7 +1490,7 @@ abstract class _RequestOrchestration extends RequestOrchestration {
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
   @JsonKey(name: '_instantiatesUri')
-  List<Element>? get instantiatesUriElement;
+  List<PrimitiveElement>? get instantiatesUriElement;
   @override
 
   /// [basedOn] A plan, proposal or order that is fulfilled in whole or in part

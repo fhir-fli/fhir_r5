@@ -343,7 +343,8 @@ mixin _$ConditionDefinition {
 
   /// [definitionElement] ("_definition") Extensions for definition
   @JsonKey(name: '_definition')
-  List<Element>? get definitionElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get definitionElement =>
+      throw _privateConstructorUsedError;
 
   /// [observation] Observations particularly relevant to this condition.
   List<ConditionDefinitionObservation>? get observation =>
@@ -448,7 +449,7 @@ abstract class $ConditionDefinitionCopyWith<$Res> {
       FhirBoolean? hasStage,
       @JsonKey(name: '_hasStage') PrimitiveElement? hasStageElement,
       List<FhirUri>? definition,
-      @JsonKey(name: '_definition') List<Element>? definitionElement,
+      @JsonKey(name: '_definition') List<PrimitiveElement>? definitionElement,
       List<ConditionDefinitionObservation>? observation,
       List<ConditionDefinitionMedication>? medication,
       List<ConditionDefinitionPrecondition>? precondition,
@@ -821,7 +822,7 @@ class _$ConditionDefinitionCopyWithImpl<$Res, $Val extends ConditionDefinition>
       definitionElement: freezed == definitionElement
           ? _value.definitionElement
           : definitionElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       observation: freezed == observation
           ? _value.observation
           : observation // ignore: cast_nullable_to_non_nullable
@@ -1019,7 +1020,7 @@ abstract class _$$ConditionDefinitionImplCopyWith<$Res>
       FhirBoolean? hasStage,
       @JsonKey(name: '_hasStage') PrimitiveElement? hasStageElement,
       List<FhirUri>? definition,
-      @JsonKey(name: '_definition') List<Element>? definitionElement,
+      @JsonKey(name: '_definition') List<PrimitiveElement>? definitionElement,
       List<ConditionDefinitionObservation>? observation,
       List<ConditionDefinitionMedication>? medication,
       List<ConditionDefinitionPrecondition>? precondition,
@@ -1398,7 +1399,7 @@ class __$$ConditionDefinitionImplCopyWithImpl<$Res>
       definitionElement: freezed == definitionElement
           ? _value._definitionElement
           : definitionElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       observation: freezed == observation
           ? _value._observation
           : observation // ignore: cast_nullable_to_non_nullable
@@ -1499,7 +1500,8 @@ class _$ConditionDefinitionImpl extends _ConditionDefinition {
       this.hasStage,
       @JsonKey(name: '_hasStage') this.hasStageElement,
       final List<FhirUri>? definition,
-      @JsonKey(name: '_definition') final List<Element>? definitionElement,
+      @JsonKey(name: '_definition')
+      final List<PrimitiveElement>? definitionElement,
       final List<ConditionDefinitionObservation>? observation,
       final List<ConditionDefinitionMedication>? medication,
       final List<ConditionDefinitionPrecondition>? precondition,
@@ -2073,12 +2075,12 @@ class _$ConditionDefinitionImpl extends _ConditionDefinition {
   }
 
   /// [definitionElement] ("_definition") Extensions for definition
-  final List<Element>? _definitionElement;
+  final List<PrimitiveElement>? _definitionElement;
 
   /// [definitionElement] ("_definition") Extensions for definition
   @override
   @JsonKey(name: '_definition')
-  List<Element>? get definitionElement {
+  List<PrimitiveElement>? get definitionElement {
     final value = _definitionElement;
     if (value == null) return null;
     if (_definitionElement is EqualUnmodifiableListView)
@@ -2456,7 +2458,8 @@ abstract class _ConditionDefinition extends ConditionDefinition {
       final FhirBoolean? hasStage,
       @JsonKey(name: '_hasStage') final PrimitiveElement? hasStageElement,
       final List<FhirUri>? definition,
-      @JsonKey(name: '_definition') final List<Element>? definitionElement,
+      @JsonKey(name: '_definition')
+      final List<PrimitiveElement>? definitionElement,
       final List<ConditionDefinitionObservation>? observation,
       final List<ConditionDefinitionMedication>? medication,
       final List<ConditionDefinitionPrecondition>? precondition,
@@ -2848,7 +2851,7 @@ abstract class _ConditionDefinition extends ConditionDefinition {
 
   /// [definitionElement] ("_definition") Extensions for definition
   @JsonKey(name: '_definition')
-  List<Element>? get definitionElement;
+  List<PrimitiveElement>? get definitionElement;
   @override
 
   /// [observation] Observations particularly relevant to this condition.

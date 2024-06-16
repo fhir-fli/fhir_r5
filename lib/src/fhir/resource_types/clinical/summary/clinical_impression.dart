@@ -306,7 +306,7 @@ class ClinicalImpression with _$ClinicalImpression implements DomainResource {
     List<FhirUri>? protocol,
 
     /// [protocolElement] ("_protocol") Extensions for protocol
-    @JsonKey(name: '_protocol') List<Element>? protocolElement,
+    @JsonKey(name: '_protocol') List<PrimitiveElement>? protocolElement,
 
     /// [summary] A text summary of the investigations and the diagnosis.
     String? summary,

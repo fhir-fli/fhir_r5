@@ -218,7 +218,7 @@ mixin _$DeviceDefinition {
   /// [productionIdentifierInUDIElement] ("_productionIdentifierInUDI")
   ///  Extensions for productionIdentifierInUDI
   @JsonKey(name: '_productionIdentifierInUDI')
-  List<Element>? get productionIdentifierInUDIElement =>
+  List<PrimitiveElement>? get productionIdentifierInUDIElement =>
       throw _privateConstructorUsedError;
 
   /// [guideline] Information aimed at providing directions for the usage of this
@@ -286,7 +286,7 @@ abstract class $DeviceDefinitionCopyWith<$Res> {
       List<DeviceDefinitionMaterial>? material,
       List<FhirCode>? productionIdentifierInUDI,
       @JsonKey(name: '_productionIdentifierInUDI')
-      List<Element>? productionIdentifierInUDIElement,
+      List<PrimitiveElement>? productionIdentifierInUDIElement,
       DeviceDefinitionGuideline? guideline,
       DeviceDefinitionCorrectiveAction? correctiveAction,
       List<DeviceDefinitionChargeItem>? chargeItem});
@@ -507,7 +507,7 @@ class _$DeviceDefinitionCopyWithImpl<$Res, $Val extends DeviceDefinition>
               productionIdentifierInUDIElement
           ? _value.productionIdentifierInUDIElement
           : productionIdentifierInUDIElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       guideline: freezed == guideline
           ? _value.guideline
           : guideline // ignore: cast_nullable_to_non_nullable
@@ -645,7 +645,7 @@ abstract class _$$DeviceDefinitionImplCopyWith<$Res>
       List<DeviceDefinitionMaterial>? material,
       List<FhirCode>? productionIdentifierInUDI,
       @JsonKey(name: '_productionIdentifierInUDI')
-      List<Element>? productionIdentifierInUDIElement,
+      List<PrimitiveElement>? productionIdentifierInUDIElement,
       DeviceDefinitionGuideline? guideline,
       DeviceDefinitionCorrectiveAction? correctiveAction,
       List<DeviceDefinitionChargeItem>? chargeItem});
@@ -870,7 +870,7 @@ class __$$DeviceDefinitionImplCopyWithImpl<$Res>
               productionIdentifierInUDIElement
           ? _value._productionIdentifierInUDIElement
           : productionIdentifierInUDIElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       guideline: freezed == guideline
           ? _value.guideline
           : guideline // ignore: cast_nullable_to_non_nullable
@@ -930,7 +930,7 @@ class _$DeviceDefinitionImpl extends _DeviceDefinition {
       final List<DeviceDefinitionMaterial>? material,
       final List<FhirCode>? productionIdentifierInUDI,
       @JsonKey(name: '_productionIdentifierInUDI')
-      final List<Element>? productionIdentifierInUDIElement,
+      final List<PrimitiveElement>? productionIdentifierInUDIElement,
       this.guideline,
       this.correctiveAction,
       final List<DeviceDefinitionChargeItem>? chargeItem})
@@ -1420,13 +1420,13 @@ class _$DeviceDefinitionImpl extends _DeviceDefinition {
 
   /// [productionIdentifierInUDIElement] ("_productionIdentifierInUDI")
   ///  Extensions for productionIdentifierInUDI
-  final List<Element>? _productionIdentifierInUDIElement;
+  final List<PrimitiveElement>? _productionIdentifierInUDIElement;
 
   /// [productionIdentifierInUDIElement] ("_productionIdentifierInUDI")
   ///  Extensions for productionIdentifierInUDI
   @override
   @JsonKey(name: '_productionIdentifierInUDI')
-  List<Element>? get productionIdentifierInUDIElement {
+  List<PrimitiveElement>? get productionIdentifierInUDIElement {
     final value = _productionIdentifierInUDIElement;
     if (value == null) return null;
     if (_productionIdentifierInUDIElement is EqualUnmodifiableListView)
@@ -1644,7 +1644,7 @@ abstract class _DeviceDefinition extends DeviceDefinition {
       final List<DeviceDefinitionMaterial>? material,
       final List<FhirCode>? productionIdentifierInUDI,
       @JsonKey(name: '_productionIdentifierInUDI')
-      final List<Element>? productionIdentifierInUDIElement,
+      final List<PrimitiveElement>? productionIdentifierInUDIElement,
       final DeviceDefinitionGuideline? guideline,
       final DeviceDefinitionCorrectiveAction? correctiveAction,
       final List<DeviceDefinitionChargeItem>?
@@ -1875,7 +1875,7 @@ abstract class _DeviceDefinition extends DeviceDefinition {
   /// [productionIdentifierInUDIElement] ("_productionIdentifierInUDI")
   ///  Extensions for productionIdentifierInUDI
   @JsonKey(name: '_productionIdentifierInUDI')
-  List<Element>? get productionIdentifierInUDIElement;
+  List<PrimitiveElement>? get productionIdentifierInUDIElement;
   @override
 
   /// [guideline] Information aimed at providing directions for the usage of this
@@ -4295,7 +4295,8 @@ mixin _$DeviceDefinitionConformsTo {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  List<Element>? get versionElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get versionElement =>
+      throw _privateConstructorUsedError;
 
   /// [source] Standard, regulation, certification, or guidance website,
   ///  document, or other publication, or similar, supporting the conformance.
@@ -4321,7 +4322,7 @@ abstract class $DeviceDefinitionConformsToCopyWith<$Res> {
       CodeableConcept? category,
       CodeableConcept specification,
       List<String>? version,
-      @JsonKey(name: '_version') List<Element>? versionElement,
+      @JsonKey(name: '_version') List<PrimitiveElement>? versionElement,
       List<RelatedArtifact>? source});
 
   $CodeableConceptCopyWith<$Res>? get category;
@@ -4379,7 +4380,7 @@ class _$DeviceDefinitionConformsToCopyWithImpl<$Res,
       versionElement: freezed == versionElement
           ? _value.versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       source: freezed == source
           ? _value.source
           : source // ignore: cast_nullable_to_non_nullable
@@ -4424,7 +4425,7 @@ abstract class _$$DeviceDefinitionConformsToImplCopyWith<$Res>
       CodeableConcept? category,
       CodeableConcept specification,
       List<String>? version,
-      @JsonKey(name: '_version') List<Element>? versionElement,
+      @JsonKey(name: '_version') List<PrimitiveElement>? versionElement,
       List<RelatedArtifact>? source});
 
   @override
@@ -4483,7 +4484,7 @@ class __$$DeviceDefinitionConformsToImplCopyWithImpl<$Res>
       versionElement: freezed == versionElement
           ? _value._versionElement
           : versionElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       source: freezed == source
           ? _value._source
           : source // ignore: cast_nullable_to_non_nullable
@@ -4502,7 +4503,7 @@ class _$DeviceDefinitionConformsToImpl extends _DeviceDefinitionConformsTo {
       this.category,
       required this.specification,
       final List<String>? version,
-      @JsonKey(name: '_version') final List<Element>? versionElement,
+      @JsonKey(name: '_version') final List<PrimitiveElement>? versionElement,
       final List<RelatedArtifact>? source})
       : _extension_ = extension_,
         _modifierExtension = modifierExtension,
@@ -4609,12 +4610,12 @@ class _$DeviceDefinitionConformsToImpl extends _DeviceDefinitionConformsTo {
   }
 
   /// [versionElement] ("_version") Extensions for version
-  final List<Element>? _versionElement;
+  final List<PrimitiveElement>? _versionElement;
 
   /// [versionElement] ("_version") Extensions for version
   @override
   @JsonKey(name: '_version')
-  List<Element>? get versionElement {
+  List<PrimitiveElement>? get versionElement {
     final value = _versionElement;
     if (value == null) return null;
     if (_versionElement is EqualUnmodifiableListView) return _versionElement;
@@ -4698,7 +4699,7 @@ abstract class _DeviceDefinitionConformsTo extends DeviceDefinitionConformsTo {
       final CodeableConcept? category,
       required final CodeableConcept specification,
       final List<String>? version,
-      @JsonKey(name: '_version') final List<Element>? versionElement,
+      @JsonKey(name: '_version') final List<PrimitiveElement>? versionElement,
       final List<RelatedArtifact>? source}) = _$DeviceDefinitionConformsToImpl;
   const _DeviceDefinitionConformsTo._() : super._();
 
@@ -4756,7 +4757,7 @@ abstract class _DeviceDefinitionConformsTo extends DeviceDefinitionConformsTo {
 
   /// [versionElement] ("_version") Extensions for version
   @JsonKey(name: '_version')
-  List<Element>? get versionElement;
+  List<PrimitiveElement>? get versionElement;
   @override
 
   /// [source] Standard, regulation, certification, or guidance website,

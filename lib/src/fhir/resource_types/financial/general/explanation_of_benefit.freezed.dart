@@ -244,7 +244,8 @@ mixin _$ExplanationOfBenefit {
 
   /// [preAuthRefElement] ("_preAuthRef") Extensions for preAuthRef
   @JsonKey(name: '_preAuthRef')
-  List<Element>? get preAuthRefElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get preAuthRefElement =>
+      throw _privateConstructorUsedError;
 
   /// [preAuthRefPeriod] The timeframe during which the supplied preauthorization
   ///  reference may be quoted on claims to obtain the adjudication as provided.
@@ -398,7 +399,7 @@ abstract class $ExplanationOfBenefitCopyWith<$Res> {
       String? disposition,
       @JsonKey(name: '_disposition') PrimitiveElement? dispositionElement,
       List<String>? preAuthRef,
-      @JsonKey(name: '_preAuthRef') List<Element>? preAuthRefElement,
+      @JsonKey(name: '_preAuthRef') List<PrimitiveElement>? preAuthRefElement,
       List<Period>? preAuthRefPeriod,
       CodeableConcept? diagnosisRelatedGroup,
       List<ExplanationOfBenefitCareTeam>? careTeam,
@@ -716,7 +717,7 @@ class _$ExplanationOfBenefitCopyWithImpl<$Res,
       preAuthRefElement: freezed == preAuthRefElement
           ? _value.preAuthRefElement
           : preAuthRefElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       preAuthRefPeriod: freezed == preAuthRefPeriod
           ? _value.preAuthRefPeriod
           : preAuthRefPeriod // ignore: cast_nullable_to_non_nullable
@@ -1179,7 +1180,7 @@ abstract class _$$ExplanationOfBenefitImplCopyWith<$Res>
       String? disposition,
       @JsonKey(name: '_disposition') PrimitiveElement? dispositionElement,
       List<String>? preAuthRef,
-      @JsonKey(name: '_preAuthRef') List<Element>? preAuthRefElement,
+      @JsonKey(name: '_preAuthRef') List<PrimitiveElement>? preAuthRefElement,
       List<Period>? preAuthRefPeriod,
       CodeableConcept? diagnosisRelatedGroup,
       List<ExplanationOfBenefitCareTeam>? careTeam,
@@ -1521,7 +1522,7 @@ class __$$ExplanationOfBenefitImplCopyWithImpl<$Res>
       preAuthRefElement: freezed == preAuthRefElement
           ? _value._preAuthRefElement
           : preAuthRefElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       preAuthRefPeriod: freezed == preAuthRefPeriod
           ? _value._preAuthRefPeriod
           : preAuthRefPeriod // ignore: cast_nullable_to_non_nullable
@@ -1660,7 +1661,8 @@ class _$ExplanationOfBenefitImpl extends _ExplanationOfBenefit {
       this.disposition,
       @JsonKey(name: '_disposition') this.dispositionElement,
       final List<String>? preAuthRef,
-      @JsonKey(name: '_preAuthRef') final List<Element>? preAuthRefElement,
+      @JsonKey(name: '_preAuthRef')
+      final List<PrimitiveElement>? preAuthRefElement,
       final List<Period>? preAuthRefPeriod,
       this.diagnosisRelatedGroup,
       final List<ExplanationOfBenefitCareTeam>? careTeam,
@@ -2076,12 +2078,12 @@ class _$ExplanationOfBenefitImpl extends _ExplanationOfBenefit {
   }
 
   /// [preAuthRefElement] ("_preAuthRef") Extensions for preAuthRef
-  final List<Element>? _preAuthRefElement;
+  final List<PrimitiveElement>? _preAuthRefElement;
 
   /// [preAuthRefElement] ("_preAuthRef") Extensions for preAuthRef
   @override
   @JsonKey(name: '_preAuthRef')
-  List<Element>? get preAuthRefElement {
+  List<PrimitiveElement>? get preAuthRefElement {
     final value = _preAuthRefElement;
     if (value == null) return null;
     if (_preAuthRefElement is EqualUnmodifiableListView)
@@ -2567,7 +2569,8 @@ abstract class _ExplanationOfBenefit extends ExplanationOfBenefit {
       final String? disposition,
       @JsonKey(name: '_disposition') final PrimitiveElement? dispositionElement,
       final List<String>? preAuthRef,
-      @JsonKey(name: '_preAuthRef') final List<Element>? preAuthRefElement,
+      @JsonKey(name: '_preAuthRef')
+      final List<PrimitiveElement>? preAuthRefElement,
       final List<Period>? preAuthRefPeriod,
       final CodeableConcept? diagnosisRelatedGroup,
       final List<ExplanationOfBenefitCareTeam>? careTeam,
@@ -2860,7 +2863,7 @@ abstract class _ExplanationOfBenefit extends ExplanationOfBenefit {
 
   /// [preAuthRefElement] ("_preAuthRef") Extensions for preAuthRef
   @JsonKey(name: '_preAuthRef')
-  List<Element>? get preAuthRefElement;
+  List<PrimitiveElement>? get preAuthRefElement;
   @override
 
   /// [preAuthRefPeriod] The timeframe during which the supplied preauthorization
@@ -6952,7 +6955,8 @@ mixin _$ExplanationOfBenefitInsurance {
 
   /// [preAuthRefElement] ("_preAuthRef") Extensions for preAuthRef
   @JsonKey(name: '_preAuthRef')
-  List<Element>? get preAuthRefElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get preAuthRefElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -6976,7 +6980,7 @@ abstract class $ExplanationOfBenefitInsuranceCopyWith<$Res> {
       @JsonKey(name: '_focal') PrimitiveElement? focalElement,
       Reference coverage,
       List<String>? preAuthRef,
-      @JsonKey(name: '_preAuthRef') List<Element>? preAuthRefElement});
+      @JsonKey(name: '_preAuthRef') List<PrimitiveElement>? preAuthRefElement});
 
   $ReferenceCopyWith<$Res> get coverage;
 }
@@ -7036,7 +7040,7 @@ class _$ExplanationOfBenefitInsuranceCopyWithImpl<$Res,
       preAuthRefElement: freezed == preAuthRefElement
           ? _value.preAuthRefElement
           : preAuthRefElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ) as $Val);
   }
 
@@ -7066,7 +7070,7 @@ abstract class _$$ExplanationOfBenefitInsuranceImplCopyWith<$Res>
       @JsonKey(name: '_focal') PrimitiveElement? focalElement,
       Reference coverage,
       List<String>? preAuthRef,
-      @JsonKey(name: '_preAuthRef') List<Element>? preAuthRefElement});
+      @JsonKey(name: '_preAuthRef') List<PrimitiveElement>? preAuthRefElement});
 
   @override
   $ReferenceCopyWith<$Res> get coverage;
@@ -7126,7 +7130,7 @@ class __$$ExplanationOfBenefitInsuranceImplCopyWithImpl<$Res>
       preAuthRefElement: freezed == preAuthRefElement
           ? _value._preAuthRefElement
           : preAuthRefElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ));
   }
 }
@@ -7143,7 +7147,8 @@ class _$ExplanationOfBenefitInsuranceImpl
       @JsonKey(name: '_focal') this.focalElement,
       required this.coverage,
       final List<String>? preAuthRef,
-      @JsonKey(name: '_preAuthRef') final List<Element>? preAuthRefElement})
+      @JsonKey(name: '_preAuthRef')
+      final List<PrimitiveElement>? preAuthRefElement})
       : _extension_ = extension_,
         _modifierExtension = modifierExtension,
         _preAuthRef = preAuthRef,
@@ -7254,12 +7259,12 @@ class _$ExplanationOfBenefitInsuranceImpl
   }
 
   /// [preAuthRefElement] ("_preAuthRef") Extensions for preAuthRef
-  final List<Element>? _preAuthRefElement;
+  final List<PrimitiveElement>? _preAuthRefElement;
 
   /// [preAuthRefElement] ("_preAuthRef") Extensions for preAuthRef
   @override
   @JsonKey(name: '_preAuthRef')
-  List<Element>? get preAuthRefElement {
+  List<PrimitiveElement>? get preAuthRefElement {
     final value = _preAuthRefElement;
     if (value == null) return null;
     if (_preAuthRefElement is EqualUnmodifiableListView)
@@ -7334,7 +7339,7 @@ abstract class _ExplanationOfBenefitInsurance
           required final Reference coverage,
           final List<String>? preAuthRef,
           @JsonKey(name: '_preAuthRef')
-          final List<Element>? preAuthRefElement}) =
+          final List<PrimitiveElement>? preAuthRefElement}) =
       _$ExplanationOfBenefitInsuranceImpl;
   const _ExplanationOfBenefitInsurance._() : super._();
 
@@ -7398,7 +7403,7 @@ abstract class _ExplanationOfBenefitInsurance
 
   /// [preAuthRefElement] ("_preAuthRef") Extensions for preAuthRef
   @JsonKey(name: '_preAuthRef')
-  List<Element>? get preAuthRefElement;
+  List<PrimitiveElement>? get preAuthRefElement;
   @override
   @JsonKey(ignore: true)
   _$$ExplanationOfBenefitInsuranceImplCopyWith<
@@ -7960,7 +7965,7 @@ mixin _$ExplanationOfBenefitItem {
   /// [careTeamSequenceElement] ("_careTeamSequence") Extensions for
   ///  careTeamSequence
   @JsonKey(name: '_careTeamSequence')
-  List<Element>? get careTeamSequenceElement =>
+  List<PrimitiveElement>? get careTeamSequenceElement =>
       throw _privateConstructorUsedError;
 
   /// [diagnosisSequence] Diagnoses applicable for this service or product.
@@ -7970,7 +7975,7 @@ mixin _$ExplanationOfBenefitItem {
   /// [diagnosisSequenceElement] ("_diagnosisSequence") Extensions for
   ///  diagnosisSequence
   @JsonKey(name: '_diagnosisSequence')
-  List<Element>? get diagnosisSequenceElement =>
+  List<PrimitiveElement>? get diagnosisSequenceElement =>
       throw _privateConstructorUsedError;
 
   /// [procedureSequence] Procedures applicable for this service or product.
@@ -7980,7 +7985,7 @@ mixin _$ExplanationOfBenefitItem {
   /// [procedureSequenceElement] ("_procedureSequence") Extensions for
   ///  procedureSequence
   @JsonKey(name: '_procedureSequence')
-  List<Element>? get procedureSequenceElement =>
+  List<PrimitiveElement>? get procedureSequenceElement =>
       throw _privateConstructorUsedError;
 
   /// [informationSequence] Exceptions, special conditions and supporting
@@ -7991,7 +7996,7 @@ mixin _$ExplanationOfBenefitItem {
   /// [informationSequenceElement] ("_informationSequence") Extensions for
   ///  informationSequence
   @JsonKey(name: '_informationSequence')
-  List<Element>? get informationSequenceElement =>
+  List<PrimitiveElement>? get informationSequenceElement =>
       throw _privateConstructorUsedError;
 
   /// [traceNumber] Trace number for tracking purposes. May be defined at the
@@ -8102,7 +8107,8 @@ mixin _$ExplanationOfBenefitItem {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get noteNumberElement =>
+      throw _privateConstructorUsedError;
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
   ///  has been performed.
@@ -8139,16 +8145,16 @@ abstract class $ExplanationOfBenefitItemCopyWith<$Res> {
       @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
       List<FhirPositiveInt>? careTeamSequence,
       @JsonKey(name: '_careTeamSequence')
-      List<Element>? careTeamSequenceElement,
+      List<PrimitiveElement>? careTeamSequenceElement,
       List<FhirPositiveInt>? diagnosisSequence,
       @JsonKey(name: '_diagnosisSequence')
-      List<Element>? diagnosisSequenceElement,
+      List<PrimitiveElement>? diagnosisSequenceElement,
       List<FhirPositiveInt>? procedureSequence,
       @JsonKey(name: '_procedureSequence')
-      List<Element>? procedureSequenceElement,
+      List<PrimitiveElement>? procedureSequenceElement,
       List<FhirPositiveInt>? informationSequence,
       @JsonKey(name: '_informationSequence')
-      List<Element>? informationSequenceElement,
+      List<PrimitiveElement>? informationSequenceElement,
       List<Identifier>? traceNumber,
       CodeableConcept? revenue,
       CodeableConcept? category,
@@ -8174,7 +8180,7 @@ abstract class $ExplanationOfBenefitItemCopyWith<$Res> {
       List<ExplanationOfBenefitBodySite>? bodySite,
       List<Reference>? encounter,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ExplanationOfBenefitReviewOutcome? reviewOutcome,
       List<ExplanationOfBenefitAdjudication>? adjudication,
       List<ExplanationOfBenefitDetail>? detail});
@@ -8280,7 +8286,7 @@ class _$ExplanationOfBenefitItemCopyWithImpl<$Res,
       careTeamSequenceElement: freezed == careTeamSequenceElement
           ? _value.careTeamSequenceElement
           : careTeamSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       diagnosisSequence: freezed == diagnosisSequence
           ? _value.diagnosisSequence
           : diagnosisSequence // ignore: cast_nullable_to_non_nullable
@@ -8288,7 +8294,7 @@ class _$ExplanationOfBenefitItemCopyWithImpl<$Res,
       diagnosisSequenceElement: freezed == diagnosisSequenceElement
           ? _value.diagnosisSequenceElement
           : diagnosisSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       procedureSequence: freezed == procedureSequence
           ? _value.procedureSequence
           : procedureSequence // ignore: cast_nullable_to_non_nullable
@@ -8296,7 +8302,7 @@ class _$ExplanationOfBenefitItemCopyWithImpl<$Res,
       procedureSequenceElement: freezed == procedureSequenceElement
           ? _value.procedureSequenceElement
           : procedureSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       informationSequence: freezed == informationSequence
           ? _value.informationSequence
           : informationSequence // ignore: cast_nullable_to_non_nullable
@@ -8304,7 +8310,7 @@ class _$ExplanationOfBenefitItemCopyWithImpl<$Res,
       informationSequenceElement: freezed == informationSequenceElement
           ? _value.informationSequenceElement
           : informationSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       traceNumber: freezed == traceNumber
           ? _value.traceNumber
           : traceNumber // ignore: cast_nullable_to_non_nullable
@@ -8408,7 +8414,7 @@ class _$ExplanationOfBenefitItemCopyWithImpl<$Res,
       noteNumberElement: freezed == noteNumberElement
           ? _value.noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -8612,16 +8618,16 @@ abstract class _$$ExplanationOfBenefitItemImplCopyWith<$Res>
       @JsonKey(name: '_sequence') PrimitiveElement? sequenceElement,
       List<FhirPositiveInt>? careTeamSequence,
       @JsonKey(name: '_careTeamSequence')
-      List<Element>? careTeamSequenceElement,
+      List<PrimitiveElement>? careTeamSequenceElement,
       List<FhirPositiveInt>? diagnosisSequence,
       @JsonKey(name: '_diagnosisSequence')
-      List<Element>? diagnosisSequenceElement,
+      List<PrimitiveElement>? diagnosisSequenceElement,
       List<FhirPositiveInt>? procedureSequence,
       @JsonKey(name: '_procedureSequence')
-      List<Element>? procedureSequenceElement,
+      List<PrimitiveElement>? procedureSequenceElement,
       List<FhirPositiveInt>? informationSequence,
       @JsonKey(name: '_informationSequence')
-      List<Element>? informationSequenceElement,
+      List<PrimitiveElement>? informationSequenceElement,
       List<Identifier>? traceNumber,
       CodeableConcept? revenue,
       CodeableConcept? category,
@@ -8647,7 +8653,7 @@ abstract class _$$ExplanationOfBenefitItemImplCopyWith<$Res>
       List<ExplanationOfBenefitBodySite>? bodySite,
       List<Reference>? encounter,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ExplanationOfBenefitReviewOutcome? reviewOutcome,
       List<ExplanationOfBenefitAdjudication>? adjudication,
       List<ExplanationOfBenefitDetail>? detail});
@@ -8766,7 +8772,7 @@ class __$$ExplanationOfBenefitItemImplCopyWithImpl<$Res>
       careTeamSequenceElement: freezed == careTeamSequenceElement
           ? _value._careTeamSequenceElement
           : careTeamSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       diagnosisSequence: freezed == diagnosisSequence
           ? _value._diagnosisSequence
           : diagnosisSequence // ignore: cast_nullable_to_non_nullable
@@ -8774,7 +8780,7 @@ class __$$ExplanationOfBenefitItemImplCopyWithImpl<$Res>
       diagnosisSequenceElement: freezed == diagnosisSequenceElement
           ? _value._diagnosisSequenceElement
           : diagnosisSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       procedureSequence: freezed == procedureSequence
           ? _value._procedureSequence
           : procedureSequence // ignore: cast_nullable_to_non_nullable
@@ -8782,7 +8788,7 @@ class __$$ExplanationOfBenefitItemImplCopyWithImpl<$Res>
       procedureSequenceElement: freezed == procedureSequenceElement
           ? _value._procedureSequenceElement
           : procedureSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       informationSequence: freezed == informationSequence
           ? _value._informationSequence
           : informationSequence // ignore: cast_nullable_to_non_nullable
@@ -8790,7 +8796,7 @@ class __$$ExplanationOfBenefitItemImplCopyWithImpl<$Res>
       informationSequenceElement: freezed == informationSequenceElement
           ? _value._informationSequenceElement
           : informationSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       traceNumber: freezed == traceNumber
           ? _value._traceNumber
           : traceNumber // ignore: cast_nullable_to_non_nullable
@@ -8894,7 +8900,7 @@ class __$$ExplanationOfBenefitItemImplCopyWithImpl<$Res>
       noteNumberElement: freezed == noteNumberElement
           ? _value._noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -8922,16 +8928,16 @@ class _$ExplanationOfBenefitItemImpl extends _ExplanationOfBenefitItem {
       @JsonKey(name: '_sequence') this.sequenceElement,
       final List<FhirPositiveInt>? careTeamSequence,
       @JsonKey(name: '_careTeamSequence')
-      final List<Element>? careTeamSequenceElement,
+      final List<PrimitiveElement>? careTeamSequenceElement,
       final List<FhirPositiveInt>? diagnosisSequence,
       @JsonKey(name: '_diagnosisSequence')
-      final List<Element>? diagnosisSequenceElement,
+      final List<PrimitiveElement>? diagnosisSequenceElement,
       final List<FhirPositiveInt>? procedureSequence,
       @JsonKey(name: '_procedureSequence')
-      final List<Element>? procedureSequenceElement,
+      final List<PrimitiveElement>? procedureSequenceElement,
       final List<FhirPositiveInt>? informationSequence,
       @JsonKey(name: '_informationSequence')
-      final List<Element>? informationSequenceElement,
+      final List<PrimitiveElement>? informationSequenceElement,
       final List<Identifier>? traceNumber,
       this.revenue,
       this.category,
@@ -8957,7 +8963,8 @@ class _$ExplanationOfBenefitItemImpl extends _ExplanationOfBenefitItem {
       final List<ExplanationOfBenefitBodySite>? bodySite,
       final List<Reference>? encounter,
       final List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber')
+      final List<PrimitiveElement>? noteNumberElement,
       this.reviewOutcome,
       final List<ExplanationOfBenefitAdjudication>? adjudication,
       final List<ExplanationOfBenefitDetail>? detail})
@@ -9077,13 +9084,13 @@ class _$ExplanationOfBenefitItemImpl extends _ExplanationOfBenefitItem {
 
   /// [careTeamSequenceElement] ("_careTeamSequence") Extensions for
   ///  careTeamSequence
-  final List<Element>? _careTeamSequenceElement;
+  final List<PrimitiveElement>? _careTeamSequenceElement;
 
   /// [careTeamSequenceElement] ("_careTeamSequence") Extensions for
   ///  careTeamSequence
   @override
   @JsonKey(name: '_careTeamSequence')
-  List<Element>? get careTeamSequenceElement {
+  List<PrimitiveElement>? get careTeamSequenceElement {
     final value = _careTeamSequenceElement;
     if (value == null) return null;
     if (_careTeamSequenceElement is EqualUnmodifiableListView)
@@ -9108,13 +9115,13 @@ class _$ExplanationOfBenefitItemImpl extends _ExplanationOfBenefitItem {
 
   /// [diagnosisSequenceElement] ("_diagnosisSequence") Extensions for
   ///  diagnosisSequence
-  final List<Element>? _diagnosisSequenceElement;
+  final List<PrimitiveElement>? _diagnosisSequenceElement;
 
   /// [diagnosisSequenceElement] ("_diagnosisSequence") Extensions for
   ///  diagnosisSequence
   @override
   @JsonKey(name: '_diagnosisSequence')
-  List<Element>? get diagnosisSequenceElement {
+  List<PrimitiveElement>? get diagnosisSequenceElement {
     final value = _diagnosisSequenceElement;
     if (value == null) return null;
     if (_diagnosisSequenceElement is EqualUnmodifiableListView)
@@ -9139,13 +9146,13 @@ class _$ExplanationOfBenefitItemImpl extends _ExplanationOfBenefitItem {
 
   /// [procedureSequenceElement] ("_procedureSequence") Extensions for
   ///  procedureSequence
-  final List<Element>? _procedureSequenceElement;
+  final List<PrimitiveElement>? _procedureSequenceElement;
 
   /// [procedureSequenceElement] ("_procedureSequence") Extensions for
   ///  procedureSequence
   @override
   @JsonKey(name: '_procedureSequence')
-  List<Element>? get procedureSequenceElement {
+  List<PrimitiveElement>? get procedureSequenceElement {
     final value = _procedureSequenceElement;
     if (value == null) return null;
     if (_procedureSequenceElement is EqualUnmodifiableListView)
@@ -9172,13 +9179,13 @@ class _$ExplanationOfBenefitItemImpl extends _ExplanationOfBenefitItem {
 
   /// [informationSequenceElement] ("_informationSequence") Extensions for
   ///  informationSequence
-  final List<Element>? _informationSequenceElement;
+  final List<PrimitiveElement>? _informationSequenceElement;
 
   /// [informationSequenceElement] ("_informationSequence") Extensions for
   ///  informationSequence
   @override
   @JsonKey(name: '_informationSequence')
-  List<Element>? get informationSequenceElement {
+  List<PrimitiveElement>? get informationSequenceElement {
     final value = _informationSequenceElement;
     if (value == null) return null;
     if (_informationSequenceElement is EqualUnmodifiableListView)
@@ -9390,12 +9397,12 @@ class _$ExplanationOfBenefitItemImpl extends _ExplanationOfBenefitItem {
   }
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-  final List<Element>? _noteNumberElement;
+  final List<PrimitiveElement>? _noteNumberElement;
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @override
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement {
+  List<PrimitiveElement>? get noteNumberElement {
     final value = _noteNumberElement;
     if (value == null) return null;
     if (_noteNumberElement is EqualUnmodifiableListView)
@@ -9599,16 +9606,16 @@ abstract class _ExplanationOfBenefitItem extends ExplanationOfBenefitItem {
           @JsonKey(name: '_sequence') final PrimitiveElement? sequenceElement,
           final List<FhirPositiveInt>? careTeamSequence,
           @JsonKey(name: '_careTeamSequence')
-          final List<Element>? careTeamSequenceElement,
+          final List<PrimitiveElement>? careTeamSequenceElement,
           final List<FhirPositiveInt>? diagnosisSequence,
           @JsonKey(name: '_diagnosisSequence')
-          final List<Element>? diagnosisSequenceElement,
+          final List<PrimitiveElement>? diagnosisSequenceElement,
           final List<FhirPositiveInt>? procedureSequence,
           @JsonKey(name: '_procedureSequence')
-          final List<Element>? procedureSequenceElement,
+          final List<PrimitiveElement>? procedureSequenceElement,
           final List<FhirPositiveInt>? informationSequence,
           @JsonKey(name: '_informationSequence')
-          final List<Element>? informationSequenceElement,
+          final List<PrimitiveElement>? informationSequenceElement,
           final List<Identifier>? traceNumber,
           final CodeableConcept? revenue,
           final CodeableConcept? category,
@@ -9635,7 +9642,8 @@ abstract class _ExplanationOfBenefitItem extends ExplanationOfBenefitItem {
           final List<ExplanationOfBenefitBodySite>? bodySite,
           final List<Reference>? encounter,
           final List<FhirPositiveInt>? noteNumber,
-          @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+          @JsonKey(name: '_noteNumber')
+          final List<PrimitiveElement>? noteNumberElement,
           final ExplanationOfBenefitReviewOutcome? reviewOutcome,
           final List<ExplanationOfBenefitAdjudication>? adjudication,
           final List<ExplanationOfBenefitDetail>? detail}) =
@@ -9693,7 +9701,7 @@ abstract class _ExplanationOfBenefitItem extends ExplanationOfBenefitItem {
   /// [careTeamSequenceElement] ("_careTeamSequence") Extensions for
   ///  careTeamSequence
   @JsonKey(name: '_careTeamSequence')
-  List<Element>? get careTeamSequenceElement;
+  List<PrimitiveElement>? get careTeamSequenceElement;
   @override
 
   /// [diagnosisSequence] Diagnoses applicable for this service or product.
@@ -9703,7 +9711,7 @@ abstract class _ExplanationOfBenefitItem extends ExplanationOfBenefitItem {
   /// [diagnosisSequenceElement] ("_diagnosisSequence") Extensions for
   ///  diagnosisSequence
   @JsonKey(name: '_diagnosisSequence')
-  List<Element>? get diagnosisSequenceElement;
+  List<PrimitiveElement>? get diagnosisSequenceElement;
   @override
 
   /// [procedureSequence] Procedures applicable for this service or product.
@@ -9713,7 +9721,7 @@ abstract class _ExplanationOfBenefitItem extends ExplanationOfBenefitItem {
   /// [procedureSequenceElement] ("_procedureSequence") Extensions for
   ///  procedureSequence
   @JsonKey(name: '_procedureSequence')
-  List<Element>? get procedureSequenceElement;
+  List<PrimitiveElement>? get procedureSequenceElement;
   @override
 
   /// [informationSequence] Exceptions, special conditions and supporting
@@ -9724,7 +9732,7 @@ abstract class _ExplanationOfBenefitItem extends ExplanationOfBenefitItem {
   /// [informationSequenceElement] ("_informationSequence") Extensions for
   ///  informationSequence
   @JsonKey(name: '_informationSequence')
-  List<Element>? get informationSequenceElement;
+  List<PrimitiveElement>? get informationSequenceElement;
   @override
 
   /// [traceNumber] Trace number for tracking purposes. May be defined at the
@@ -9856,7 +9864,7 @@ abstract class _ExplanationOfBenefitItem extends ExplanationOfBenefitItem {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement;
+  List<PrimitiveElement>? get noteNumberElement;
   @override
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
@@ -11381,7 +11389,8 @@ mixin _$ExplanationOfBenefitDetail {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get noteNumberElement =>
+      throw _privateConstructorUsedError;
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
   ///  has been performed.
@@ -11431,7 +11440,7 @@ abstract class $ExplanationOfBenefitDetailCopyWith<$Res> {
       Money? net,
       List<Reference>? udi,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ExplanationOfBenefitReviewOutcome? reviewOutcome,
       List<ExplanationOfBenefitAdjudication>? adjudication,
       List<ExplanationOfBenefitSubDetail>? subDetail});
@@ -11576,7 +11585,7 @@ class _$ExplanationOfBenefitDetailCopyWithImpl<$Res,
       noteNumberElement: freezed == noteNumberElement
           ? _value.noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -11745,7 +11754,7 @@ abstract class _$$ExplanationOfBenefitDetailImplCopyWith<$Res>
       Money? net,
       List<Reference>? udi,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ExplanationOfBenefitReviewOutcome? reviewOutcome,
       List<ExplanationOfBenefitAdjudication>? adjudication,
       List<ExplanationOfBenefitSubDetail>? subDetail});
@@ -11899,7 +11908,7 @@ class __$$ExplanationOfBenefitDetailImplCopyWithImpl<$Res>
       noteNumberElement: freezed == noteNumberElement
           ? _value._noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -11941,7 +11950,8 @@ class _$ExplanationOfBenefitDetailImpl extends _ExplanationOfBenefitDetail {
       this.net,
       final List<Reference>? udi,
       final List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber')
+      final List<PrimitiveElement>? noteNumberElement,
       this.reviewOutcome,
       final List<ExplanationOfBenefitAdjudication>? adjudication,
       final List<ExplanationOfBenefitSubDetail>? subDetail})
@@ -12173,12 +12183,12 @@ class _$ExplanationOfBenefitDetailImpl extends _ExplanationOfBenefitDetail {
   }
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-  final List<Element>? _noteNumberElement;
+  final List<PrimitiveElement>? _noteNumberElement;
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @override
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement {
+  List<PrimitiveElement>? get noteNumberElement {
     final value = _noteNumberElement;
     if (value == null) return null;
     if (_noteNumberElement is EqualUnmodifiableListView)
@@ -12342,7 +12352,8 @@ abstract class _ExplanationOfBenefitDetail extends ExplanationOfBenefitDetail {
           final Money? net,
           final List<Reference>? udi,
           final List<FhirPositiveInt>? noteNumber,
-          @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+          @JsonKey(name: '_noteNumber')
+          final List<PrimitiveElement>? noteNumberElement,
           final ExplanationOfBenefitReviewOutcome? reviewOutcome,
           final List<ExplanationOfBenefitAdjudication>? adjudication,
           final List<ExplanationOfBenefitSubDetail>? subDetail}) =
@@ -12484,7 +12495,7 @@ abstract class _ExplanationOfBenefitDetail extends ExplanationOfBenefitDetail {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement;
+  List<PrimitiveElement>? get noteNumberElement;
   @override
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
@@ -12622,7 +12633,8 @@ mixin _$ExplanationOfBenefitSubDetail {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get noteNumberElement =>
+      throw _privateConstructorUsedError;
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
   ///  has been performed.
@@ -12669,7 +12681,7 @@ abstract class $ExplanationOfBenefitSubDetailCopyWith<$Res> {
       Money? net,
       List<Reference>? udi,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ExplanationOfBenefitReviewOutcome? reviewOutcome,
       List<ExplanationOfBenefitAdjudication>? adjudication});
 
@@ -12812,7 +12824,7 @@ class _$ExplanationOfBenefitSubDetailCopyWithImpl<$Res,
       noteNumberElement: freezed == noteNumberElement
           ? _value.noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -12977,7 +12989,7 @@ abstract class _$$ExplanationOfBenefitSubDetailImplCopyWith<$Res>
       Money? net,
       List<Reference>? udi,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ExplanationOfBenefitReviewOutcome? reviewOutcome,
       List<ExplanationOfBenefitAdjudication>? adjudication});
 
@@ -13129,7 +13141,7 @@ class __$$ExplanationOfBenefitSubDetailImplCopyWithImpl<$Res>
       noteNumberElement: freezed == noteNumberElement
           ? _value._noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -13168,7 +13180,8 @@ class _$ExplanationOfBenefitSubDetailImpl
       this.net,
       final List<Reference>? udi,
       final List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber')
+      final List<PrimitiveElement>? noteNumberElement,
       this.reviewOutcome,
       final List<ExplanationOfBenefitAdjudication>? adjudication})
       : _extension_ = extension_,
@@ -13398,12 +13411,12 @@ class _$ExplanationOfBenefitSubDetailImpl
   }
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-  final List<Element>? _noteNumberElement;
+  final List<PrimitiveElement>? _noteNumberElement;
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @override
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement {
+  List<PrimitiveElement>? get noteNumberElement {
     final value = _noteNumberElement;
     if (value == null) return null;
     if (_noteNumberElement is EqualUnmodifiableListView)
@@ -13553,7 +13566,8 @@ abstract class _ExplanationOfBenefitSubDetail
           final Money? net,
           final List<Reference>? udi,
           final List<FhirPositiveInt>? noteNumber,
-          @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+          @JsonKey(name: '_noteNumber')
+          final List<PrimitiveElement>? noteNumberElement,
           final ExplanationOfBenefitReviewOutcome? reviewOutcome,
           final List<ExplanationOfBenefitAdjudication>? adjudication}) =
       _$ExplanationOfBenefitSubDetailImpl;
@@ -13694,7 +13708,7 @@ abstract class _ExplanationOfBenefitSubDetail
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement;
+  List<PrimitiveElement>? get noteNumberElement;
   @override
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
@@ -13751,7 +13765,8 @@ mixin _$ExplanationOfBenefitAddItem {
 
   /// [itemSequenceElement] ("_itemSequence") Extensions for itemSequence
   @JsonKey(name: '_itemSequence')
-  List<Element>? get itemSequenceElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get itemSequenceElement =>
+      throw _privateConstructorUsedError;
 
   /// [detailSequence] The sequence number of the details within the claim item
   ///  which this line is intended to replace.
@@ -13760,7 +13775,7 @@ mixin _$ExplanationOfBenefitAddItem {
 
   /// [detailSequenceElement] ("_detailSequence") Extensions for detailSequence
   @JsonKey(name: '_detailSequence')
-  List<Element>? get detailSequenceElement =>
+  List<PrimitiveElement>? get detailSequenceElement =>
       throw _privateConstructorUsedError;
 
   /// [subDetailSequence] The sequence number of the sub-details woithin the
@@ -13771,7 +13786,7 @@ mixin _$ExplanationOfBenefitAddItem {
   /// [subDetailSequenceElement] ("_subDetailSequence") Extensions for
   ///  subDetailSequence
   @JsonKey(name: '_subDetailSequence')
-  List<Element>? get subDetailSequenceElement =>
+  List<PrimitiveElement>? get subDetailSequenceElement =>
       throw _privateConstructorUsedError;
 
   /// [traceNumber] Trace number for tracking purposes. May be defined at the
@@ -13876,7 +13891,8 @@ mixin _$ExplanationOfBenefitAddItem {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get noteNumberElement =>
+      throw _privateConstructorUsedError;
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
   ///  has been performed.
@@ -13910,12 +13926,14 @@ abstract class $ExplanationOfBenefitAddItemCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<FhirPositiveInt>? itemSequence,
-      @JsonKey(name: '_itemSequence') List<Element>? itemSequenceElement,
+      @JsonKey(name: '_itemSequence')
+      List<PrimitiveElement>? itemSequenceElement,
       List<FhirPositiveInt>? detailSequence,
-      @JsonKey(name: '_detailSequence') List<Element>? detailSequenceElement,
+      @JsonKey(name: '_detailSequence')
+      List<PrimitiveElement>? detailSequenceElement,
       List<FhirPositiveInt>? subDetailSequence,
       @JsonKey(name: '_subDetailSequence')
-      List<Element>? subDetailSequenceElement,
+      List<PrimitiveElement>? subDetailSequenceElement,
       List<Identifier>? traceNumber,
       List<Reference>? provider,
       CodeableConcept? revenue,
@@ -13939,7 +13957,7 @@ abstract class $ExplanationOfBenefitAddItemCopyWith<$Res> {
       Money? net,
       List<ExplanationOfBenefitBodySite1>? bodySite,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ExplanationOfBenefitReviewOutcome? reviewOutcome,
       List<ExplanationOfBenefitAdjudication>? adjudication,
       List<ExplanationOfBenefitDetail1>? detail});
@@ -14030,7 +14048,7 @@ class _$ExplanationOfBenefitAddItemCopyWithImpl<$Res,
       itemSequenceElement: freezed == itemSequenceElement
           ? _value.itemSequenceElement
           : itemSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       detailSequence: freezed == detailSequence
           ? _value.detailSequence
           : detailSequence // ignore: cast_nullable_to_non_nullable
@@ -14038,7 +14056,7 @@ class _$ExplanationOfBenefitAddItemCopyWithImpl<$Res,
       detailSequenceElement: freezed == detailSequenceElement
           ? _value.detailSequenceElement
           : detailSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       subDetailSequence: freezed == subDetailSequence
           ? _value.subDetailSequence
           : subDetailSequence // ignore: cast_nullable_to_non_nullable
@@ -14046,7 +14064,7 @@ class _$ExplanationOfBenefitAddItemCopyWithImpl<$Res,
       subDetailSequenceElement: freezed == subDetailSequenceElement
           ? _value.subDetailSequenceElement
           : subDetailSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       traceNumber: freezed == traceNumber
           ? _value.traceNumber
           : traceNumber // ignore: cast_nullable_to_non_nullable
@@ -14142,7 +14160,7 @@ class _$ExplanationOfBenefitAddItemCopyWithImpl<$Res,
       noteNumberElement: freezed == noteNumberElement
           ? _value.noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -14331,12 +14349,14 @@ abstract class _$$ExplanationOfBenefitAddItemImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<FhirPositiveInt>? itemSequence,
-      @JsonKey(name: '_itemSequence') List<Element>? itemSequenceElement,
+      @JsonKey(name: '_itemSequence')
+      List<PrimitiveElement>? itemSequenceElement,
       List<FhirPositiveInt>? detailSequence,
-      @JsonKey(name: '_detailSequence') List<Element>? detailSequenceElement,
+      @JsonKey(name: '_detailSequence')
+      List<PrimitiveElement>? detailSequenceElement,
       List<FhirPositiveInt>? subDetailSequence,
       @JsonKey(name: '_subDetailSequence')
-      List<Element>? subDetailSequenceElement,
+      List<PrimitiveElement>? subDetailSequenceElement,
       List<Identifier>? traceNumber,
       List<Reference>? provider,
       CodeableConcept? revenue,
@@ -14360,7 +14380,7 @@ abstract class _$$ExplanationOfBenefitAddItemImplCopyWith<$Res>
       Money? net,
       List<ExplanationOfBenefitBodySite1>? bodySite,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ExplanationOfBenefitReviewOutcome? reviewOutcome,
       List<ExplanationOfBenefitAdjudication>? adjudication,
       List<ExplanationOfBenefitDetail1>? detail});
@@ -14463,7 +14483,7 @@ class __$$ExplanationOfBenefitAddItemImplCopyWithImpl<$Res>
       itemSequenceElement: freezed == itemSequenceElement
           ? _value._itemSequenceElement
           : itemSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       detailSequence: freezed == detailSequence
           ? _value._detailSequence
           : detailSequence // ignore: cast_nullable_to_non_nullable
@@ -14471,7 +14491,7 @@ class __$$ExplanationOfBenefitAddItemImplCopyWithImpl<$Res>
       detailSequenceElement: freezed == detailSequenceElement
           ? _value._detailSequenceElement
           : detailSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       subDetailSequence: freezed == subDetailSequence
           ? _value._subDetailSequence
           : subDetailSequence // ignore: cast_nullable_to_non_nullable
@@ -14479,7 +14499,7 @@ class __$$ExplanationOfBenefitAddItemImplCopyWithImpl<$Res>
       subDetailSequenceElement: freezed == subDetailSequenceElement
           ? _value._subDetailSequenceElement
           : subDetailSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       traceNumber: freezed == traceNumber
           ? _value._traceNumber
           : traceNumber // ignore: cast_nullable_to_non_nullable
@@ -14575,7 +14595,7 @@ class __$$ExplanationOfBenefitAddItemImplCopyWithImpl<$Res>
       noteNumberElement: freezed == noteNumberElement
           ? _value._noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -14600,13 +14620,14 @@ class _$ExplanationOfBenefitAddItemImpl extends _ExplanationOfBenefitAddItem {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final List<FhirPositiveInt>? itemSequence,
-      @JsonKey(name: '_itemSequence') final List<Element>? itemSequenceElement,
+      @JsonKey(name: '_itemSequence')
+      final List<PrimitiveElement>? itemSequenceElement,
       final List<FhirPositiveInt>? detailSequence,
       @JsonKey(name: '_detailSequence')
-      final List<Element>? detailSequenceElement,
+      final List<PrimitiveElement>? detailSequenceElement,
       final List<FhirPositiveInt>? subDetailSequence,
       @JsonKey(name: '_subDetailSequence')
-      final List<Element>? subDetailSequenceElement,
+      final List<PrimitiveElement>? subDetailSequenceElement,
       final List<Identifier>? traceNumber,
       final List<Reference>? provider,
       this.revenue,
@@ -14630,7 +14651,8 @@ class _$ExplanationOfBenefitAddItemImpl extends _ExplanationOfBenefitAddItem {
       this.net,
       final List<ExplanationOfBenefitBodySite1>? bodySite,
       final List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber')
+      final List<PrimitiveElement>? noteNumberElement,
       this.reviewOutcome,
       final List<ExplanationOfBenefitAdjudication>? adjudication,
       final List<ExplanationOfBenefitDetail1>? detail})
@@ -14737,12 +14759,12 @@ class _$ExplanationOfBenefitAddItemImpl extends _ExplanationOfBenefitAddItem {
   }
 
   /// [itemSequenceElement] ("_itemSequence") Extensions for itemSequence
-  final List<Element>? _itemSequenceElement;
+  final List<PrimitiveElement>? _itemSequenceElement;
 
   /// [itemSequenceElement] ("_itemSequence") Extensions for itemSequence
   @override
   @JsonKey(name: '_itemSequence')
-  List<Element>? get itemSequenceElement {
+  List<PrimitiveElement>? get itemSequenceElement {
     final value = _itemSequenceElement;
     if (value == null) return null;
     if (_itemSequenceElement is EqualUnmodifiableListView)
@@ -14767,12 +14789,12 @@ class _$ExplanationOfBenefitAddItemImpl extends _ExplanationOfBenefitAddItem {
   }
 
   /// [detailSequenceElement] ("_detailSequence") Extensions for detailSequence
-  final List<Element>? _detailSequenceElement;
+  final List<PrimitiveElement>? _detailSequenceElement;
 
   /// [detailSequenceElement] ("_detailSequence") Extensions for detailSequence
   @override
   @JsonKey(name: '_detailSequence')
-  List<Element>? get detailSequenceElement {
+  List<PrimitiveElement>? get detailSequenceElement {
     final value = _detailSequenceElement;
     if (value == null) return null;
     if (_detailSequenceElement is EqualUnmodifiableListView)
@@ -14799,13 +14821,13 @@ class _$ExplanationOfBenefitAddItemImpl extends _ExplanationOfBenefitAddItem {
 
   /// [subDetailSequenceElement] ("_subDetailSequence") Extensions for
   ///  subDetailSequence
-  final List<Element>? _subDetailSequenceElement;
+  final List<PrimitiveElement>? _subDetailSequenceElement;
 
   /// [subDetailSequenceElement] ("_subDetailSequence") Extensions for
   ///  subDetailSequence
   @override
   @JsonKey(name: '_subDetailSequence')
-  List<Element>? get subDetailSequenceElement {
+  List<PrimitiveElement>? get subDetailSequenceElement {
     final value = _subDetailSequenceElement;
     if (value == null) return null;
     if (_subDetailSequenceElement is EqualUnmodifiableListView)
@@ -15001,12 +15023,12 @@ class _$ExplanationOfBenefitAddItemImpl extends _ExplanationOfBenefitAddItem {
   }
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-  final List<Element>? _noteNumberElement;
+  final List<PrimitiveElement>? _noteNumberElement;
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @override
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement {
+  List<PrimitiveElement>? get noteNumberElement {
     final value = _noteNumberElement;
     if (value == null) return null;
     if (_noteNumberElement is EqualUnmodifiableListView)
@@ -15181,46 +15203,48 @@ class _$ExplanationOfBenefitAddItemImpl extends _ExplanationOfBenefitAddItem {
 abstract class _ExplanationOfBenefitAddItem
     extends ExplanationOfBenefitAddItem {
   const factory _ExplanationOfBenefitAddItem(
-      {final String? id,
-      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-      final List<FhirExtension>? modifierExtension,
-      final List<FhirPositiveInt>? itemSequence,
-      @JsonKey(name: '_itemSequence') final List<Element>? itemSequenceElement,
-      final List<FhirPositiveInt>? detailSequence,
-      @JsonKey(name: '_detailSequence')
-      final List<Element>? detailSequenceElement,
-      final List<FhirPositiveInt>? subDetailSequence,
-      @JsonKey(name: '_subDetailSequence')
-      final List<Element>? subDetailSequenceElement,
-      final List<Identifier>? traceNumber,
-      final List<Reference>? provider,
-      final CodeableConcept? revenue,
-      final CodeableConcept? productOrService,
-      final CodeableConcept? productOrServiceEnd,
-      final List<Reference>? request,
-      final List<CodeableConcept>? modifier,
-      final List<CodeableConcept>? programCode,
-      final FhirDate? servicedDate,
-      @JsonKey(name: '_servicedDate')
-      final PrimitiveElement? servicedDateElement,
-      final Period? servicedPeriod,
-      final CodeableConcept? locationCodeableConcept,
-      final Address? locationAddress,
-      final Reference? locationReference,
-      final Money? patientPaid,
-      final Quantity? quantity,
-      final Money? unitPrice,
-      final FhirDecimal? factor,
-      @JsonKey(name: '_factor') final PrimitiveElement? factorElement,
-      final Money? tax,
-      final Money? net,
-      final List<ExplanationOfBenefitBodySite1>? bodySite,
-      final List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
-      final ExplanationOfBenefitReviewOutcome? reviewOutcome,
-      final List<ExplanationOfBenefitAdjudication>? adjudication,
-      final List<ExplanationOfBenefitDetail1>?
-          detail}) = _$ExplanationOfBenefitAddItemImpl;
+          {final String? id,
+          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+          final List<FhirExtension>? modifierExtension,
+          final List<FhirPositiveInt>? itemSequence,
+          @JsonKey(name: '_itemSequence')
+          final List<PrimitiveElement>? itemSequenceElement,
+          final List<FhirPositiveInt>? detailSequence,
+          @JsonKey(name: '_detailSequence')
+          final List<PrimitiveElement>? detailSequenceElement,
+          final List<FhirPositiveInt>? subDetailSequence,
+          @JsonKey(name: '_subDetailSequence')
+          final List<PrimitiveElement>? subDetailSequenceElement,
+          final List<Identifier>? traceNumber,
+          final List<Reference>? provider,
+          final CodeableConcept? revenue,
+          final CodeableConcept? productOrService,
+          final CodeableConcept? productOrServiceEnd,
+          final List<Reference>? request,
+          final List<CodeableConcept>? modifier,
+          final List<CodeableConcept>? programCode,
+          final FhirDate? servicedDate,
+          @JsonKey(name: '_servicedDate')
+          final PrimitiveElement? servicedDateElement,
+          final Period? servicedPeriod,
+          final CodeableConcept? locationCodeableConcept,
+          final Address? locationAddress,
+          final Reference? locationReference,
+          final Money? patientPaid,
+          final Quantity? quantity,
+          final Money? unitPrice,
+          final FhirDecimal? factor,
+          @JsonKey(name: '_factor') final PrimitiveElement? factorElement,
+          final Money? tax,
+          final Money? net,
+          final List<ExplanationOfBenefitBodySite1>? bodySite,
+          final List<FhirPositiveInt>? noteNumber,
+          @JsonKey(name: '_noteNumber')
+          final List<PrimitiveElement>? noteNumberElement,
+          final ExplanationOfBenefitReviewOutcome? reviewOutcome,
+          final List<ExplanationOfBenefitAdjudication>? adjudication,
+          final List<ExplanationOfBenefitDetail1>? detail}) =
+      _$ExplanationOfBenefitAddItemImpl;
   const _ExplanationOfBenefitAddItem._() : super._();
 
   factory _ExplanationOfBenefitAddItem.fromJson(Map<String, dynamic> json) =
@@ -15264,7 +15288,7 @@ abstract class _ExplanationOfBenefitAddItem
 
   /// [itemSequenceElement] ("_itemSequence") Extensions for itemSequence
   @JsonKey(name: '_itemSequence')
-  List<Element>? get itemSequenceElement;
+  List<PrimitiveElement>? get itemSequenceElement;
   @override
 
   /// [detailSequence] The sequence number of the details within the claim item
@@ -15274,7 +15298,7 @@ abstract class _ExplanationOfBenefitAddItem
 
   /// [detailSequenceElement] ("_detailSequence") Extensions for detailSequence
   @JsonKey(name: '_detailSequence')
-  List<Element>? get detailSequenceElement;
+  List<PrimitiveElement>? get detailSequenceElement;
   @override
 
   /// [subDetailSequence] The sequence number of the sub-details woithin the
@@ -15285,7 +15309,7 @@ abstract class _ExplanationOfBenefitAddItem
   /// [subDetailSequenceElement] ("_subDetailSequence") Extensions for
   ///  subDetailSequence
   @JsonKey(name: '_subDetailSequence')
-  List<Element>? get subDetailSequenceElement;
+  List<PrimitiveElement>? get subDetailSequenceElement;
   @override
 
   /// [traceNumber] Trace number for tracking purposes. May be defined at the
@@ -15409,7 +15433,7 @@ abstract class _ExplanationOfBenefitAddItem
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement;
+  List<PrimitiveElement>? get noteNumberElement;
   @override
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
@@ -15915,7 +15939,8 @@ mixin _$ExplanationOfBenefitDetail1 {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get noteNumberElement =>
+      throw _privateConstructorUsedError;
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
   ///  has been performed.
@@ -15961,7 +15986,7 @@ abstract class $ExplanationOfBenefitDetail1CopyWith<$Res> {
       Money? tax,
       Money? net,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ExplanationOfBenefitReviewOutcome? reviewOutcome,
       List<ExplanationOfBenefitAdjudication>? adjudication,
       List<ExplanationOfBenefitSubDetail1>? subDetail});
@@ -16080,7 +16105,7 @@ class _$ExplanationOfBenefitDetail1CopyWithImpl<$Res,
       noteNumberElement: freezed == noteNumberElement
           ? _value.noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -16232,7 +16257,7 @@ abstract class _$$ExplanationOfBenefitDetail1ImplCopyWith<$Res>
       Money? tax,
       Money? net,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ExplanationOfBenefitReviewOutcome? reviewOutcome,
       List<ExplanationOfBenefitAdjudication>? adjudication,
       List<ExplanationOfBenefitSubDetail1>? subDetail});
@@ -16359,7 +16384,7 @@ class __$$ExplanationOfBenefitDetail1ImplCopyWithImpl<$Res>
       noteNumberElement: freezed == noteNumberElement
           ? _value._noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -16396,7 +16421,8 @@ class _$ExplanationOfBenefitDetail1Impl extends _ExplanationOfBenefitDetail1 {
       this.tax,
       this.net,
       final List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber')
+      final List<PrimitiveElement>? noteNumberElement,
       this.reviewOutcome,
       final List<ExplanationOfBenefitAdjudication>? adjudication,
       final List<ExplanationOfBenefitSubDetail1>? subDetail})
@@ -16585,12 +16611,12 @@ class _$ExplanationOfBenefitDetail1Impl extends _ExplanationOfBenefitDetail1 {
   }
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-  final List<Element>? _noteNumberElement;
+  final List<PrimitiveElement>? _noteNumberElement;
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @override
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement {
+  List<PrimitiveElement>? get noteNumberElement {
     final value = _noteNumberElement;
     if (value == null) return null;
     if (_noteNumberElement is EqualUnmodifiableListView)
@@ -16736,7 +16762,8 @@ abstract class _ExplanationOfBenefitDetail1
           final Money? tax,
           final Money? net,
           final List<FhirPositiveInt>? noteNumber,
-          @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+          @JsonKey(name: '_noteNumber')
+          final List<PrimitiveElement>? noteNumberElement,
           final ExplanationOfBenefitReviewOutcome? reviewOutcome,
           final List<ExplanationOfBenefitAdjudication>? adjudication,
           final List<ExplanationOfBenefitSubDetail1>? subDetail}) =
@@ -16855,7 +16882,7 @@ abstract class _ExplanationOfBenefitDetail1
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement;
+  List<PrimitiveElement>? get noteNumberElement;
   @override
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
@@ -16975,7 +17002,8 @@ mixin _$ExplanationOfBenefitSubDetail1 {
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get noteNumberElement =>
+      throw _privateConstructorUsedError;
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication
   ///  has been performed.
@@ -17017,7 +17045,7 @@ abstract class $ExplanationOfBenefitSubDetail1CopyWith<$Res> {
       Money? tax,
       Money? net,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ExplanationOfBenefitReviewOutcome? reviewOutcome,
       List<ExplanationOfBenefitAdjudication>? adjudication});
 
@@ -17134,7 +17162,7 @@ class _$ExplanationOfBenefitSubDetail1CopyWithImpl<$Res,
       noteNumberElement: freezed == noteNumberElement
           ? _value.noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -17282,7 +17310,7 @@ abstract class _$$ExplanationOfBenefitSubDetail1ImplCopyWith<$Res>
       Money? tax,
       Money? net,
       List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber') List<PrimitiveElement>? noteNumberElement,
       ExplanationOfBenefitReviewOutcome? reviewOutcome,
       List<ExplanationOfBenefitAdjudication>? adjudication});
 
@@ -17407,7 +17435,7 @@ class __$$ExplanationOfBenefitSubDetail1ImplCopyWithImpl<$Res>
       noteNumberElement: freezed == noteNumberElement
           ? _value._noteNumberElement
           : noteNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reviewOutcome: freezed == reviewOutcome
           ? _value.reviewOutcome
           : reviewOutcome // ignore: cast_nullable_to_non_nullable
@@ -17441,7 +17469,8 @@ class _$ExplanationOfBenefitSubDetail1Impl
       this.tax,
       this.net,
       final List<FhirPositiveInt>? noteNumber,
-      @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+      @JsonKey(name: '_noteNumber')
+      final List<PrimitiveElement>? noteNumberElement,
       this.reviewOutcome,
       final List<ExplanationOfBenefitAdjudication>? adjudication})
       : _extension_ = extension_,
@@ -17628,12 +17657,12 @@ class _$ExplanationOfBenefitSubDetail1Impl
   }
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
-  final List<Element>? _noteNumberElement;
+  final List<PrimitiveElement>? _noteNumberElement;
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @override
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement {
+  List<PrimitiveElement>? get noteNumberElement {
     final value = _noteNumberElement;
     if (value == null) return null;
     if (_noteNumberElement is EqualUnmodifiableListView)
@@ -17764,7 +17793,8 @@ abstract class _ExplanationOfBenefitSubDetail1
           final Money? tax,
           final Money? net,
           final List<FhirPositiveInt>? noteNumber,
-          @JsonKey(name: '_noteNumber') final List<Element>? noteNumberElement,
+          @JsonKey(name: '_noteNumber')
+          final List<PrimitiveElement>? noteNumberElement,
           final ExplanationOfBenefitReviewOutcome? reviewOutcome,
           final List<ExplanationOfBenefitAdjudication>? adjudication}) =
       _$ExplanationOfBenefitSubDetail1Impl;
@@ -17882,7 +17912,7 @@ abstract class _ExplanationOfBenefitSubDetail1
 
   /// [noteNumberElement] ("_noteNumber") Extensions for noteNumber
   @JsonKey(name: '_noteNumber')
-  List<Element>? get noteNumberElement;
+  List<PrimitiveElement>? get noteNumberElement;
   @override
 
   /// [reviewOutcome] The high-level results of the adjudication if adjudication

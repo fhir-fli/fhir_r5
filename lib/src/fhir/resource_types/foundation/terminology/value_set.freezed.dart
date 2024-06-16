@@ -2445,7 +2445,8 @@ mixin _$ValueSetCompose {
 
   /// [propertyElement] ("_property") Extensions for property
   @JsonKey(name: '_property')
-  List<Element>? get propertyElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get propertyElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -2470,7 +2471,7 @@ abstract class $ValueSetComposeCopyWith<$Res> {
       List<ValueSetInclude> include,
       List<ValueSetInclude>? exclude,
       List<String>? property,
-      @JsonKey(name: '_property') List<Element>? propertyElement});
+      @JsonKey(name: '_property') List<PrimitiveElement>? propertyElement});
 }
 
 /// @nodoc
@@ -2542,7 +2543,7 @@ class _$ValueSetComposeCopyWithImpl<$Res, $Val extends ValueSetCompose>
       propertyElement: freezed == propertyElement
           ? _value.propertyElement
           : propertyElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ) as $Val);
   }
 }
@@ -2566,7 +2567,7 @@ abstract class _$$ValueSetComposeImplCopyWith<$Res>
       List<ValueSetInclude> include,
       List<ValueSetInclude>? exclude,
       List<String>? property,
-      @JsonKey(name: '_property') List<Element>? propertyElement});
+      @JsonKey(name: '_property') List<PrimitiveElement>? propertyElement});
 }
 
 /// @nodoc
@@ -2636,7 +2637,7 @@ class __$$ValueSetComposeImplCopyWithImpl<$Res>
       propertyElement: freezed == propertyElement
           ? _value._propertyElement
           : propertyElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ));
   }
 }
@@ -2655,7 +2656,8 @@ class _$ValueSetComposeImpl extends _ValueSetCompose {
       required final List<ValueSetInclude> include,
       final List<ValueSetInclude>? exclude,
       final List<String>? property,
-      @JsonKey(name: '_property') final List<Element>? propertyElement})
+      @JsonKey(name: '_property')
+      final List<PrimitiveElement>? propertyElement})
       : _extension_ = extension_,
         _modifierExtension = modifierExtension,
         _include = include,
@@ -2806,12 +2808,12 @@ class _$ValueSetComposeImpl extends _ValueSetCompose {
   }
 
   /// [propertyElement] ("_property") Extensions for property
-  final List<Element>? _propertyElement;
+  final List<PrimitiveElement>? _propertyElement;
 
   /// [propertyElement] ("_property") Extensions for property
   @override
   @JsonKey(name: '_property')
-  List<Element>? get propertyElement {
+  List<PrimitiveElement>? get propertyElement {
     final value = _propertyElement;
     if (value == null) return null;
     if (_propertyElement is EqualUnmodifiableListView) return _propertyElement;
@@ -2893,7 +2895,7 @@ abstract class _ValueSetCompose extends ValueSetCompose {
       final List<ValueSetInclude>? exclude,
       final List<String>? property,
       @JsonKey(name: '_property')
-      final List<Element>? propertyElement}) = _$ValueSetComposeImpl;
+      final List<PrimitiveElement>? propertyElement}) = _$ValueSetComposeImpl;
   const _ValueSetCompose._() : super._();
 
   factory _ValueSetCompose.fromJson(Map<String, dynamic> json) =
@@ -2976,7 +2978,7 @@ abstract class _ValueSetCompose extends ValueSetCompose {
 
   /// [propertyElement] ("_property") Extensions for property
   @JsonKey(name: '_property')
-  List<Element>? get propertyElement;
+  List<PrimitiveElement>? get propertyElement;
   @override
   @JsonKey(ignore: true)
   _$$ValueSetComposeImplCopyWith<_$ValueSetComposeImpl> get copyWith =>

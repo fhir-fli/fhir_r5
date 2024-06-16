@@ -120,7 +120,8 @@ class VirtualServiceDetail with _$VirtualServiceDetail implements DataType {
     List<FhirUrl>? additionalInfo,
 
     /// [additionalInfoElement] ("_additionalInfo") Extensions for additionalInfo
-    @JsonKey(name: '_additionalInfo') List<Element>? additionalInfoElement,
+    @JsonKey(name: '_additionalInfo')
+    List<PrimitiveElement>? additionalInfoElement,
 
     /// [maxParticipants] Maximum number of participants supported by the virtual
     ///  service.

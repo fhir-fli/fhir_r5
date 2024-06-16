@@ -751,7 +751,8 @@ mixin _$OperationOutcomeIssue {
 
   /// [locationElement] ("_location") Extensions for location
   @JsonKey(name: '_location')
-  List<Element>? get locationElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get locationElement =>
+      throw _privateConstructorUsedError;
 
   /// [expression] A [simple subset of FHIRPath](fhirpath.html#simple) limited to
   ///  element names, repetition indicators and the default child accessor that
@@ -761,7 +762,8 @@ mixin _$OperationOutcomeIssue {
 
   /// [expressionElement] ("_expression") Extensions for expression
   @JsonKey(name: '_expression')
-  List<Element>? get expressionElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get expressionElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -787,9 +789,9 @@ abstract class $OperationOutcomeIssueCopyWith<$Res> {
       String? diagnostics,
       @JsonKey(name: '_diagnostics') PrimitiveElement? diagnosticsElement,
       List<String>? location,
-      @JsonKey(name: '_location') List<Element>? locationElement,
+      @JsonKey(name: '_location') List<PrimitiveElement>? locationElement,
       List<String>? expression,
-      @JsonKey(name: '_expression') List<Element>? expressionElement});
+      @JsonKey(name: '_expression') List<PrimitiveElement>? expressionElement});
 
   $CodeableConceptCopyWith<$Res>? get details;
 }
@@ -871,7 +873,7 @@ class _$OperationOutcomeIssueCopyWithImpl<$Res,
       locationElement: freezed == locationElement
           ? _value.locationElement
           : locationElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       expression: freezed == expression
           ? _value.expression
           : expression // ignore: cast_nullable_to_non_nullable
@@ -879,7 +881,7 @@ class _$OperationOutcomeIssueCopyWithImpl<$Res,
       expressionElement: freezed == expressionElement
           ? _value.expressionElement
           : expressionElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ) as $Val);
   }
 
@@ -917,9 +919,9 @@ abstract class _$$OperationOutcomeIssueImplCopyWith<$Res>
       String? diagnostics,
       @JsonKey(name: '_diagnostics') PrimitiveElement? diagnosticsElement,
       List<String>? location,
-      @JsonKey(name: '_location') List<Element>? locationElement,
+      @JsonKey(name: '_location') List<PrimitiveElement>? locationElement,
       List<String>? expression,
-      @JsonKey(name: '_expression') List<Element>? expressionElement});
+      @JsonKey(name: '_expression') List<PrimitiveElement>? expressionElement});
 
   @override
   $CodeableConceptCopyWith<$Res>? get details;
@@ -1000,7 +1002,7 @@ class __$$OperationOutcomeIssueImplCopyWithImpl<$Res>
       locationElement: freezed == locationElement
           ? _value._locationElement
           : locationElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       expression: freezed == expression
           ? _value._expression
           : expression // ignore: cast_nullable_to_non_nullable
@@ -1008,7 +1010,7 @@ class __$$OperationOutcomeIssueImplCopyWithImpl<$Res>
       expressionElement: freezed == expressionElement
           ? _value._expressionElement
           : expressionElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ));
   }
 }
@@ -1028,9 +1030,10 @@ class _$OperationOutcomeIssueImpl extends _OperationOutcomeIssue {
       this.diagnostics,
       @JsonKey(name: '_diagnostics') this.diagnosticsElement,
       final List<String>? location,
-      @JsonKey(name: '_location') final List<Element>? locationElement,
+      @JsonKey(name: '_location') final List<PrimitiveElement>? locationElement,
       final List<String>? expression,
-      @JsonKey(name: '_expression') final List<Element>? expressionElement})
+      @JsonKey(name: '_expression')
+      final List<PrimitiveElement>? expressionElement})
       : _extension_ = extension_,
         _modifierExtension = modifierExtension,
         _location = location,
@@ -1167,12 +1170,12 @@ class _$OperationOutcomeIssueImpl extends _OperationOutcomeIssue {
   }
 
   /// [locationElement] ("_location") Extensions for location
-  final List<Element>? _locationElement;
+  final List<PrimitiveElement>? _locationElement;
 
   /// [locationElement] ("_location") Extensions for location
   @override
   @JsonKey(name: '_location')
-  List<Element>? get locationElement {
+  List<PrimitiveElement>? get locationElement {
     final value = _locationElement;
     if (value == null) return null;
     if (_locationElement is EqualUnmodifiableListView) return _locationElement;
@@ -1200,12 +1203,12 @@ class _$OperationOutcomeIssueImpl extends _OperationOutcomeIssue {
   }
 
   /// [expressionElement] ("_expression") Extensions for expression
-  final List<Element>? _expressionElement;
+  final List<PrimitiveElement>? _expressionElement;
 
   /// [expressionElement] ("_expression") Extensions for expression
   @override
   @JsonKey(name: '_expression')
-  List<Element>? get expressionElement {
+  List<PrimitiveElement>? get expressionElement {
     final value = _expressionElement;
     if (value == null) return null;
     if (_expressionElement is EqualUnmodifiableListView)
@@ -1297,10 +1300,11 @@ abstract class _OperationOutcomeIssue extends OperationOutcomeIssue {
       final String? diagnostics,
       @JsonKey(name: '_diagnostics') final PrimitiveElement? diagnosticsElement,
       final List<String>? location,
-      @JsonKey(name: '_location') final List<Element>? locationElement,
+      @JsonKey(name: '_location') final List<PrimitiveElement>? locationElement,
       final List<String>? expression,
       @JsonKey(name: '_expression')
-      final List<Element>? expressionElement}) = _$OperationOutcomeIssueImpl;
+      final List<PrimitiveElement>?
+          expressionElement}) = _$OperationOutcomeIssueImpl;
   const _OperationOutcomeIssue._() : super._();
 
   factory _OperationOutcomeIssue.fromJson(Map<String, dynamic> json) =
@@ -1385,7 +1389,7 @@ abstract class _OperationOutcomeIssue extends OperationOutcomeIssue {
 
   /// [locationElement] ("_location") Extensions for location
   @JsonKey(name: '_location')
-  List<Element>? get locationElement;
+  List<PrimitiveElement>? get locationElement;
   @override
 
   /// [expression] A [simple subset of FHIRPath](fhirpath.html#simple) limited to
@@ -1397,7 +1401,7 @@ abstract class _OperationOutcomeIssue extends OperationOutcomeIssue {
 
   /// [expressionElement] ("_expression") Extensions for expression
   @JsonKey(name: '_expression')
-  List<Element>? get expressionElement;
+  List<PrimitiveElement>? get expressionElement;
   @override
   @JsonKey(ignore: true)
   _$$OperationOutcomeIssueImplCopyWith<_$OperationOutcomeIssueImpl>

@@ -448,7 +448,7 @@ class ImplementationGuide with _$ImplementationGuide implements DomainResource {
     List<FhirCode>? fhirVersion,
 
     /// [fhirVersionElement] ("_fhirVersion") Extensions for fhirVersion
-    @JsonKey(name: '_fhirVersion') List<Element>? fhirVersionElement,
+    @JsonKey(name: '_fhirVersion') List<PrimitiveElement>? fhirVersionElement,
 
     /// [dependsOn] Another implementation guide that this implementation depends
     ///  on. Typically, an implementation guide uses value sets, profiles
@@ -1198,7 +1198,7 @@ class ImplementationGuideResource
     List<FhirCode>? fhirVersion,
 
     /// [fhirVersionElement] ("_fhirVersion") Extensions for fhirVersion
-    @JsonKey(name: '_fhirVersion') List<Element>? fhirVersionElement,
+    @JsonKey(name: '_fhirVersion') List<PrimitiveElement>? fhirVersionElement,
 
     /// [name] A human assigned name for the resource. All resources SHOULD have a
     ///  name, but the name may be extracted from the resource (e.g. ValueSet.name).
@@ -1830,7 +1830,7 @@ class ImplementationGuideManifest
     List<String>? image,
 
     /// [imageElement] ("_image") Extensions for image
-    @JsonKey(name: '_image') List<Element>? imageElement,
+    @JsonKey(name: '_image') List<PrimitiveElement>? imageElement,
 
     /// [other] Indicates the relative path of an additional non-page, non-image
     ///  file that is part of the IG - e.g. zip, jar and similar files that could
@@ -1838,7 +1838,7 @@ class ImplementationGuideManifest
     List<String>? other,
 
     /// [otherElement] ("_other") Extensions for other
-    @JsonKey(name: '_other') List<Element>? otherElement,
+    @JsonKey(name: '_other') List<PrimitiveElement>? otherElement,
   }) = _ImplementationGuideManifest;
 
   @override
@@ -2122,7 +2122,7 @@ class ImplementationGuidePage1
     List<String>? anchor,
 
     /// [anchorElement] ("_anchor") Extensions for anchor
-    @JsonKey(name: '_anchor') List<Element>? anchorElement,
+    @JsonKey(name: '_anchor') List<PrimitiveElement>? anchorElement,
   }) = _ImplementationGuidePage1;
 
   @override

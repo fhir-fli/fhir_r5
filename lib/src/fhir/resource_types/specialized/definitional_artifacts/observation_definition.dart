@@ -537,7 +537,8 @@ class ObservationDefinition
     List<FhirUri>? derivedFromUri,
 
     /// [derivedFromUriElement] ("_derivedFromUri") Extensions for derivedFromUri
-    @JsonKey(name: '_derivedFromUri') List<Element>? derivedFromUriElement,
+    @JsonKey(name: '_derivedFromUri')
+    List<PrimitiveElement>? derivedFromUriElement,
 
     /// [subject] A code that describes the intended kind of subject of Observation
     ///  instances conforming to this ObservationDefinition.
@@ -561,7 +562,7 @@ class ObservationDefinition
     /// [permittedDataTypeElement] ("_permittedDataType") Extensions for
     ///  permittedDataType
     @JsonKey(name: '_permittedDataType')
-    List<Element>? permittedDataTypeElement,
+    List<PrimitiveElement>? permittedDataTypeElement,
 
     /// [multipleResultsAllowed] Multiple results allowed for observations
     ///  conforming to this ObservationDefinition.
@@ -965,7 +966,7 @@ class ObservationDefinitionComponent
     /// [permittedDataTypeElement] ("_permittedDataType") Extensions for
     ///  permittedDataType
     @JsonKey(name: '_permittedDataType')
-    List<Element>? permittedDataTypeElement,
+    List<PrimitiveElement>? permittedDataTypeElement,
 
     /// [permittedUnit] Units allowed for the valueQuantity element in the instance
     ///  observations conforming to this ObservationDefinition.

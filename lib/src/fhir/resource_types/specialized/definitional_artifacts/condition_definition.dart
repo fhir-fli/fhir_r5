@@ -551,7 +551,7 @@ class ConditionDefinition with _$ConditionDefinition implements DomainResource {
     List<FhirUri>? definition,
 
     /// [definitionElement] ("_definition") Extensions for definition
-    @JsonKey(name: '_definition') List<Element>? definitionElement,
+    @JsonKey(name: '_definition') List<PrimitiveElement>? definitionElement,
 
     /// [observation] Observations particularly relevant to this condition.
     List<ConditionDefinitionObservation>? observation,

@@ -119,7 +119,8 @@ mixin _$InsurancePlan {
 
   /// [aliasElement] ("_alias") Extensions for alias
   @JsonKey(name: '_alias')
-  List<Element>? get aliasElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get aliasElement =>
+      throw _privateConstructorUsedError;
 
   /// [period] The period of time that the health insurance product is available.
   Period? get period => throw _privateConstructorUsedError;
@@ -191,7 +192,7 @@ abstract class $InsurancePlanCopyWith<$Res> {
       String? name,
       @JsonKey(name: '_name') PrimitiveElement? nameElement,
       List<String>? alias,
-      @JsonKey(name: '_alias') List<Element>? aliasElement,
+      @JsonKey(name: '_alias') List<PrimitiveElement>? aliasElement,
       Period? period,
       Reference? ownedBy,
       Reference? administeredBy,
@@ -327,7 +328,7 @@ class _$InsurancePlanCopyWithImpl<$Res, $Val extends InsurancePlan>
       aliasElement: freezed == aliasElement
           ? _value.aliasElement
           : aliasElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       period: freezed == period
           ? _value.period
           : period // ignore: cast_nullable_to_non_nullable
@@ -456,7 +457,7 @@ abstract class _$$InsurancePlanImplCopyWith<$Res>
       String? name,
       @JsonKey(name: '_name') PrimitiveElement? nameElement,
       List<String>? alias,
-      @JsonKey(name: '_alias') List<Element>? aliasElement,
+      @JsonKey(name: '_alias') List<PrimitiveElement>? aliasElement,
       Period? period,
       Reference? ownedBy,
       Reference? administeredBy,
@@ -595,7 +596,7 @@ class __$$InsurancePlanImplCopyWithImpl<$Res>
       aliasElement: freezed == aliasElement
           ? _value._aliasElement
           : aliasElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       period: freezed == period
           ? _value.period
           : period // ignore: cast_nullable_to_non_nullable
@@ -659,7 +660,7 @@ class _$InsurancePlanImpl extends _InsurancePlan {
       this.name,
       @JsonKey(name: '_name') this.nameElement,
       final List<String>? alias,
-      @JsonKey(name: '_alias') final List<Element>? aliasElement,
+      @JsonKey(name: '_alias') final List<PrimitiveElement>? aliasElement,
       this.period,
       this.ownedBy,
       this.administeredBy,
@@ -879,12 +880,12 @@ class _$InsurancePlanImpl extends _InsurancePlan {
   }
 
   /// [aliasElement] ("_alias") Extensions for alias
-  final List<Element>? _aliasElement;
+  final List<PrimitiveElement>? _aliasElement;
 
   /// [aliasElement] ("_alias") Extensions for alias
   @override
   @JsonKey(name: '_alias')
-  List<Element>? get aliasElement {
+  List<PrimitiveElement>? get aliasElement {
     final value = _aliasElement;
     if (value == null) return null;
     if (_aliasElement is EqualUnmodifiableListView) return _aliasElement;
@@ -1119,7 +1120,7 @@ abstract class _InsurancePlan extends InsurancePlan {
       final String? name,
       @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final List<String>? alias,
-      @JsonKey(name: '_alias') final List<Element>? aliasElement,
+      @JsonKey(name: '_alias') final List<PrimitiveElement>? aliasElement,
       final Period? period,
       final Reference? ownedBy,
       final Reference? administeredBy,
@@ -1251,7 +1252,7 @@ abstract class _InsurancePlan extends InsurancePlan {
 
   /// [aliasElement] ("_alias") Extensions for alias
   @JsonKey(name: '_alias')
-  List<Element>? get aliasElement;
+  List<PrimitiveElement>? get aliasElement;
   @override
 
   /// [period] The period of time that the health insurance product is available.

@@ -526,7 +526,7 @@ _$AppointmentRecurrenceTemplateImpl
               ?.map((e) => FhirDate.fromJson(e as String))
               .toList(),
           occurrenceDateElement: (json['_occurrenceDate'] as List<dynamic>?)
-              ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
               .toList(),
           weeklyTemplate: json['weeklyTemplate'] == null
               ? null
@@ -544,16 +544,16 @@ _$AppointmentRecurrenceTemplateImpl
               ?.map((e) => FhirDate.fromJson(e as String))
               .toList(),
           excludingDateElement: (json['_excludingDate'] as List<dynamic>?)
-              ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
               .toList(),
           excludingRecurrenceId:
               (json['excludingRecurrenceId'] as List<dynamic>?)
                   ?.map(FhirPositiveInt.fromJson)
                   .toList(),
-          excludingRecurrenceIdElement:
-              (json['_excludingRecurrenceId'] as List<dynamic>?)
-                  ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
-                  .toList(),
+          excludingRecurrenceIdElement: (json['_excludingRecurrenceId']
+                  as List<dynamic>?)
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
+              .toList(),
         );
 
 Map<String, dynamic> _$$AppointmentRecurrenceTemplateImplToJson(

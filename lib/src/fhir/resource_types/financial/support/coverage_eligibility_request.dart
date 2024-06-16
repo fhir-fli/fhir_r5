@@ -229,7 +229,7 @@ class CoverageEligibilityRequest
     List<FhirCode>? purpose,
 
     /// [purposeElement] ("_purpose") Extensions for purpose
-    @JsonKey(name: '_purpose') List<Element>? purposeElement,
+    @JsonKey(name: '_purpose') List<PrimitiveElement>? purposeElement,
 
     /// [patient] The party who is the beneficiary of the supplied coverage and for
     ///  whom eligibility is sought.
@@ -882,7 +882,7 @@ class CoverageEligibilityRequestItem
     /// [supportingInfoSequenceElement] ("_supportingInfoSequence") Extensions for
     ///  supportingInfoSequence
     @JsonKey(name: '_supportingInfoSequence')
-    List<Element>? supportingInfoSequenceElement,
+    List<PrimitiveElement>? supportingInfoSequenceElement,
 
     /// [category] Code to identify the general type of benefits under which
     ///  products and services are provided.

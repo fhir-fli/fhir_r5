@@ -1600,7 +1600,7 @@ class ClaimInsurance with _$ClaimInsurance implements BackboneType {
     List<String>? preAuthRef,
 
     /// [preAuthRefElement] ("_preAuthRef") Extensions for preAuthRef
-    @JsonKey(name: '_preAuthRef') List<Element>? preAuthRefElement,
+    @JsonKey(name: '_preAuthRef') List<PrimitiveElement>? preAuthRefElement,
 
     /// [claimResponse] The result of the adjudication of the line items for the
     ///  Coverage specified in this insurance.
@@ -1956,7 +1956,8 @@ class ClaimItem with _$ClaimItem implements BackboneType {
 
     /// [careTeamSequenceElement] ("_careTeamSequence") Extensions for
     ///  careTeamSequence
-    @JsonKey(name: '_careTeamSequence') List<Element>? careTeamSequenceElement,
+    @JsonKey(name: '_careTeamSequence')
+    List<PrimitiveElement>? careTeamSequenceElement,
 
     /// [diagnosisSequence] Diagnosis applicable for this service or product.
     List<FhirPositiveInt>? diagnosisSequence,
@@ -1964,7 +1965,7 @@ class ClaimItem with _$ClaimItem implements BackboneType {
     /// [diagnosisSequenceElement] ("_diagnosisSequence") Extensions for
     ///  diagnosisSequence
     @JsonKey(name: '_diagnosisSequence')
-    List<Element>? diagnosisSequenceElement,
+    List<PrimitiveElement>? diagnosisSequenceElement,
 
     /// [procedureSequence] Procedures applicable for this service or product.
     List<FhirPositiveInt>? procedureSequence,
@@ -1972,7 +1973,7 @@ class ClaimItem with _$ClaimItem implements BackboneType {
     /// [procedureSequenceElement] ("_procedureSequence") Extensions for
     ///  procedureSequence
     @JsonKey(name: '_procedureSequence')
-    List<Element>? procedureSequenceElement,
+    List<PrimitiveElement>? procedureSequenceElement,
 
     /// [informationSequence] Exceptions, special conditions and supporting
     ///  information applicable for this service or product.
@@ -1981,7 +1982,7 @@ class ClaimItem with _$ClaimItem implements BackboneType {
     /// [informationSequenceElement] ("_informationSequence") Extensions for
     ///  informationSequence
     @JsonKey(name: '_informationSequence')
-    List<Element>? informationSequenceElement,
+    List<PrimitiveElement>? informationSequenceElement,
 
     /// [revenue] The type of revenue or cost center providing the product and/or
     ///  service.

@@ -64,7 +64,7 @@ _$MedicationKnowledgeImpl _$$MedicationKnowledgeImplFromJson(
               json['versionAlgorithmCoding'] as Map<String, dynamic>),
       name: (json['name'] as List<dynamic>?)?.map((e) => e as String).toList(),
       nameElement: (json['_name'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       title: json['title'] as String?,
       titleElement: json['_title'] == null

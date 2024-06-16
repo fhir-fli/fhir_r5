@@ -703,7 +703,7 @@ class ValueSetCompose with _$ValueSetCompose implements BackboneType {
     List<String>? property,
 
     /// [propertyElement] ("_property") Extensions for property
-    @JsonKey(name: '_property') List<Element>? propertyElement,
+    @JsonKey(name: '_property') List<PrimitiveElement>? propertyElement,
   }) = _ValueSetCompose;
 
   @override
@@ -731,7 +731,7 @@ class ValueSetCompose with _$ValueSetCompose implements BackboneType {
     if (json is Map<String, dynamic>) {
       return _$ValueSetComposeFromJson(json);
     } else {
-       throw FormatException('FormatException:\nYou passed $json\n'
+      throw FormatException('FormatException:\nYou passed $json\n'
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
@@ -905,7 +905,7 @@ class ValueSetInclude with _$ValueSetInclude implements BackboneType {
     if (json is Map<String, dynamic>) {
       return _$ValueSetIncludeFromJson(json);
     } else {
-       throw FormatException('FormatException:\nYou passed $json\n'
+      throw FormatException('FormatException:\nYou passed $json\n'
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
@@ -1043,7 +1043,7 @@ class ValueSetConcept with _$ValueSetConcept implements BackboneType {
     if (json is Map<String, dynamic>) {
       return _$ValueSetConceptFromJson(json);
     } else {
-       throw FormatException('FormatException:\nYou passed $json\n'
+      throw FormatException('FormatException:\nYou passed $json\n'
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
@@ -1180,7 +1180,7 @@ class ValueSetDesignation with _$ValueSetDesignation implements BackboneType {
     if (json is Map<String, dynamic>) {
       return _$ValueSetDesignationFromJson(json);
     } else {
-       throw FormatException('FormatException:\nYou passed $json\n'
+      throw FormatException('FormatException:\nYou passed $json\n'
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
@@ -1327,7 +1327,7 @@ class ValueSetFilter with _$ValueSetFilter implements BackboneType {
     if (json is Map<String, dynamic>) {
       return _$ValueSetFilterFromJson(json);
     } else {
-       throw FormatException('FormatException:\nYou passed $json\n'
+      throw FormatException('FormatException:\nYou passed $json\n'
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
@@ -1527,7 +1527,7 @@ class ValueSetExpansion with _$ValueSetExpansion implements BackboneType {
     if (json is Map<String, dynamic>) {
       return _$ValueSetExpansionFromJson(json);
     } else {
-       throw FormatException('FormatException:\nYou passed $json\n'
+      throw FormatException('FormatException:\nYou passed $json\n'
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
@@ -1716,7 +1716,7 @@ class ValueSetParameter with _$ValueSetParameter implements BackboneType {
     if (json is Map<String, dynamic>) {
       return _$ValueSetParameterFromJson(json);
     } else {
-       throw FormatException('FormatException:\nYou passed $json\n'
+      throw FormatException('FormatException:\nYou passed $json\n'
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
@@ -1847,7 +1847,7 @@ class ValueSetProperty with _$ValueSetProperty implements BackboneType {
     if (json is Map<String, dynamic>) {
       return _$ValueSetPropertyFromJson(json);
     } else {
-       throw FormatException('FormatException:\nYou passed $json\n'
+      throw FormatException('FormatException:\nYou passed $json\n'
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
@@ -2061,7 +2061,7 @@ class ValueSetContains with _$ValueSetContains implements BackboneType {
     if (json is Map<String, dynamic>) {
       return _$ValueSetContainsFromJson(json);
     } else {
-       throw FormatException('FormatException:\nYou passed $json\n'
+      throw FormatException('FormatException:\nYou passed $json\n'
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
@@ -2246,7 +2246,7 @@ class ValueSetProperty1 with _$ValueSetProperty1 implements BackboneType {
     if (json is Map<String, dynamic>) {
       return _$ValueSetProperty1FromJson(json);
     } else {
-       throw FormatException('FormatException:\nYou passed $json\n'
+      throw FormatException('FormatException:\nYou passed $json\n'
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
@@ -2426,7 +2426,7 @@ class ValueSetSubProperty with _$ValueSetSubProperty implements BackboneType {
     if (json is Map<String, dynamic>) {
       return _$ValueSetSubPropertyFromJson(json);
     } else {
-       throw FormatException('FormatException:\nYou passed $json\n'
+      throw FormatException('FormatException:\nYou passed $json\n'
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }
@@ -2561,7 +2561,7 @@ class ValueSetScope with _$ValueSetScope implements BackboneType {
     if (json is Map<String, dynamic>) {
       return _$ValueSetScopeFromJson(json);
     } else {
-       throw FormatException('FormatException:\nYou passed $json\n'
+      throw FormatException('FormatException:\nYou passed $json\n'
           'This does not properly decode to a Map<String,dynamic>.');
     }
   }

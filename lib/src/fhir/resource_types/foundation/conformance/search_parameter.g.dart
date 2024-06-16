@@ -135,7 +135,7 @@ _$SearchParameterImpl _$$SearchParameterImplFromJson(
           : PrimitiveElement.fromJson(json['_code'] as Map<String, dynamic>),
       base: (json['base'] as List<dynamic>?)?.map(FhirCode.fromJson).toList(),
       baseElement: (json['_base'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       type: json['type'] == null ? null : FhirCode.fromJson(json['type']),
       typeElement: json['_type'] == null
@@ -161,7 +161,7 @@ _$SearchParameterImpl _$$SearchParameterImplFromJson(
       target:
           (json['target'] as List<dynamic>?)?.map(FhirCode.fromJson).toList(),
       targetElement: (json['_target'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       multipleOr: json['multipleOr'] == null
           ? null
@@ -181,17 +181,17 @@ _$SearchParameterImpl _$$SearchParameterImplFromJson(
           ?.map(FhirCode.fromJson)
           .toList(),
       comparatorElement: (json['_comparator'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       modifier:
           (json['modifier'] as List<dynamic>?)?.map(FhirCode.fromJson).toList(),
       modifierElement: (json['_modifier'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       chain:
           (json['chain'] as List<dynamic>?)?.map((e) => e as String).toList(),
       chainElement: (json['_chain'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       component: (json['component'] as List<dynamic>?)
           ?.map((e) =>

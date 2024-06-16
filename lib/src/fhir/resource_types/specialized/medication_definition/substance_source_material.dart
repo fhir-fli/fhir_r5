@@ -277,7 +277,7 @@ class SubstanceSourceMaterial
     /// [parentSubstanceNameElement] ("_parentSubstanceName") Extensions for
     ///  parentSubstanceName
     @JsonKey(name: '_parentSubstanceName')
-    List<Element>? parentSubstanceNameElement,
+    List<PrimitiveElement>? parentSubstanceNameElement,
 
     /// [countryOfOrigin] The country where the plant material is harvested or the
     ///  countries where the plasma is sourced from as laid down in accordance with
@@ -293,7 +293,7 @@ class SubstanceSourceMaterial
     /// [geographicalLocationElement] ("_geographicalLocation") Extensions for
     ///  geographicalLocation
     @JsonKey(name: '_geographicalLocation')
-    List<Element>? geographicalLocationElement,
+    List<PrimitiveElement>? geographicalLocationElement,
 
     /// [developmentStage] Stage of life for animals, plants, insects and
     ///  microorganisms. This information shall be provided only when the substance

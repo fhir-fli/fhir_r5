@@ -122,7 +122,8 @@ mixin _$Location {
 
   /// [aliasElement] ("_alias") Extensions for alias
   @JsonKey(name: '_alias')
-  List<Element>? get aliasElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get aliasElement =>
+      throw _privateConstructorUsedError;
 
   /// [description] Description of the Location, which helps in finding or
   ///  referencing the place.
@@ -217,7 +218,7 @@ abstract class $LocationCopyWith<$Res> {
       String? name,
       @JsonKey(name: '_name') PrimitiveElement? nameElement,
       List<String>? alias,
-      @JsonKey(name: '_alias') List<Element>? aliasElement,
+      @JsonKey(name: '_alias') List<PrimitiveElement>? aliasElement,
       FhirMarkdown? description,
       @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       LocationMode? mode,
@@ -368,7 +369,7 @@ class _$LocationCopyWithImpl<$Res, $Val extends Location>
       aliasElement: freezed == aliasElement
           ? _value.aliasElement
           : aliasElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -557,7 +558,7 @@ abstract class _$$LocationImplCopyWith<$Res>
       String? name,
       @JsonKey(name: '_name') PrimitiveElement? nameElement,
       List<String>? alias,
-      @JsonKey(name: '_alias') List<Element>? aliasElement,
+      @JsonKey(name: '_alias') List<PrimitiveElement>? aliasElement,
       FhirMarkdown? description,
       @JsonKey(name: '_description') PrimitiveElement? descriptionElement,
       LocationMode? mode,
@@ -714,7 +715,7 @@ class __$$LocationImplCopyWithImpl<$Res>
       aliasElement: freezed == aliasElement
           ? _value._aliasElement
           : aliasElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -802,7 +803,7 @@ class _$LocationImpl extends _Location {
       this.name,
       @JsonKey(name: '_name') this.nameElement,
       final List<String>? alias,
-      @JsonKey(name: '_alias') final List<Element>? aliasElement,
+      @JsonKey(name: '_alias') final List<PrimitiveElement>? aliasElement,
       this.description,
       @JsonKey(name: '_description') this.descriptionElement,
       this.mode,
@@ -1019,12 +1020,12 @@ class _$LocationImpl extends _Location {
   }
 
   /// [aliasElement] ("_alias") Extensions for alias
-  final List<Element>? _aliasElement;
+  final List<PrimitiveElement>? _aliasElement;
 
   /// [aliasElement] ("_alias") Extensions for alias
   @override
   @JsonKey(name: '_alias')
-  List<Element>? get aliasElement {
+  List<PrimitiveElement>? get aliasElement {
     final value = _aliasElement;
     if (value == null) return null;
     if (_aliasElement is EqualUnmodifiableListView) return _aliasElement;
@@ -1307,7 +1308,7 @@ abstract class _Location extends Location {
       final String? name,
       @JsonKey(name: '_name') final PrimitiveElement? nameElement,
       final List<String>? alias,
-      @JsonKey(name: '_alias') final List<Element>? aliasElement,
+      @JsonKey(name: '_alias') final List<PrimitiveElement>? aliasElement,
       final FhirMarkdown? description,
       @JsonKey(name: '_description') final PrimitiveElement? descriptionElement,
       final LocationMode? mode,
@@ -1448,7 +1449,7 @@ abstract class _Location extends Location {
 
   /// [aliasElement] ("_alias") Extensions for alias
   @JsonKey(name: '_alias')
-  List<Element>? get aliasElement;
+  List<PrimitiveElement>? get aliasElement;
   @override
 
   /// [description] Description of the Location, which helps in finding or

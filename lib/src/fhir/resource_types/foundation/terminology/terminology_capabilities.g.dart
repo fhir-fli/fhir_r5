@@ -599,7 +599,7 @@ _$TerminologyCapabilitiesVersionImpl
               ?.map(FhirCode.fromJson)
               .toList(),
           languageElement: (json['_language'] as List<dynamic>?)
-              ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
               .toList(),
           filter: (json['filter'] as List<dynamic>?)
               ?.map((e) => TerminologyCapabilitiesFilter.fromJson(
@@ -609,7 +609,7 @@ _$TerminologyCapabilitiesVersionImpl
               ?.map(FhirCode.fromJson)
               .toList(),
           propertyElement: (json['_property'] as List<dynamic>?)
-              ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
               .toList(),
         );
 
@@ -661,7 +661,7 @@ _$TerminologyCapabilitiesFilterImpl
                   json['_code'] as Map<String, dynamic>),
           op: (json['op'] as List<dynamic>?)?.map(FhirCode.fromJson).toList(),
           opElement: (json['_op'] as List<dynamic>?)
-              ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
               .toList(),
         );
 

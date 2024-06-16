@@ -57,7 +57,7 @@ _$SubstanceProteinImpl _$$SubstanceProteinImplFromJson(
           ?.map((e) => e as String)
           .toList(),
       disulfideLinkageElement: (json['_disulfideLinkage'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       subunit: (json['subunit'] as List<dynamic>?)
           ?.map((e) =>

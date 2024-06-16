@@ -1534,7 +1534,7 @@ mixin _$ArtifactAssessmentContent {
 
   /// [pathElement] ("_path") Extensions for path
   @JsonKey(name: '_path')
-  List<Element>? get pathElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get pathElement => throw _privateConstructorUsedError;
 
   /// [relatedArtifact] Additional related artifacts that provide supporting
   ///  documentation, additional evidence, or further information related to the
@@ -1582,7 +1582,7 @@ abstract class $ArtifactAssessmentContentCopyWith<$Res> {
       Quantity? quantity,
       Reference? author,
       List<FhirUri>? path,
-      @JsonKey(name: '_path') List<Element>? pathElement,
+      @JsonKey(name: '_path') List<PrimitiveElement>? pathElement,
       List<RelatedArtifact>? relatedArtifact,
       FhirBoolean? freeToShare,
       @JsonKey(name: '_freeToShare') PrimitiveElement? freeToShareElement,
@@ -1677,7 +1677,7 @@ class _$ArtifactAssessmentContentCopyWithImpl<$Res,
       pathElement: freezed == pathElement
           ? _value.pathElement
           : pathElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       relatedArtifact: freezed == relatedArtifact
           ? _value.relatedArtifact
           : relatedArtifact // ignore: cast_nullable_to_non_nullable
@@ -1757,7 +1757,7 @@ abstract class _$$ArtifactAssessmentContentImplCopyWith<$Res>
       Quantity? quantity,
       Reference? author,
       List<FhirUri>? path,
-      @JsonKey(name: '_path') List<Element>? pathElement,
+      @JsonKey(name: '_path') List<PrimitiveElement>? pathElement,
       List<RelatedArtifact>? relatedArtifact,
       FhirBoolean? freeToShare,
       @JsonKey(name: '_freeToShare') PrimitiveElement? freeToShareElement,
@@ -1854,7 +1854,7 @@ class __$$ArtifactAssessmentContentImplCopyWithImpl<$Res>
       pathElement: freezed == pathElement
           ? _value._pathElement
           : pathElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       relatedArtifact: freezed == relatedArtifact
           ? _value._relatedArtifact
           : relatedArtifact // ignore: cast_nullable_to_non_nullable
@@ -1891,7 +1891,7 @@ class _$ArtifactAssessmentContentImpl extends _ArtifactAssessmentContent {
       this.quantity,
       this.author,
       final List<FhirUri>? path,
-      @JsonKey(name: '_path') final List<Element>? pathElement,
+      @JsonKey(name: '_path') final List<PrimitiveElement>? pathElement,
       final List<RelatedArtifact>? relatedArtifact,
       this.freeToShare,
       @JsonKey(name: '_freeToShare') this.freeToShareElement,
@@ -2033,12 +2033,12 @@ class _$ArtifactAssessmentContentImpl extends _ArtifactAssessmentContent {
   }
 
   /// [pathElement] ("_path") Extensions for path
-  final List<Element>? _pathElement;
+  final List<PrimitiveElement>? _pathElement;
 
   /// [pathElement] ("_path") Extensions for path
   @override
   @JsonKey(name: '_path')
-  List<Element>? get pathElement {
+  List<PrimitiveElement>? get pathElement {
     final value = _pathElement;
     if (value == null) return null;
     if (_pathElement is EqualUnmodifiableListView) return _pathElement;
@@ -2181,7 +2181,7 @@ abstract class _ArtifactAssessmentContent extends ArtifactAssessmentContent {
       final Quantity? quantity,
       final Reference? author,
       final List<FhirUri>? path,
-      @JsonKey(name: '_path') final List<Element>? pathElement,
+      @JsonKey(name: '_path') final List<PrimitiveElement>? pathElement,
       final List<RelatedArtifact>? relatedArtifact,
       final FhirBoolean? freeToShare,
       @JsonKey(name: '_freeToShare') final PrimitiveElement? freeToShareElement,
@@ -2266,7 +2266,7 @@ abstract class _ArtifactAssessmentContent extends ArtifactAssessmentContent {
 
   /// [pathElement] ("_path") Extensions for path
   @JsonKey(name: '_path')
-  List<Element>? get pathElement;
+  List<PrimitiveElement>? get pathElement;
   @override
 
   /// [relatedArtifact] Additional related artifacts that provide supporting

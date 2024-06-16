@@ -476,7 +476,7 @@ class OperationDefinition with _$OperationDefinition implements DomainResource {
     List<FhirCode>? resource,
 
     /// [resourceElement] ("_resource") Extensions for resource
-    @JsonKey(name: '_resource') List<Element>? resourceElement,
+    @JsonKey(name: '_resource') List<PrimitiveElement>? resourceElement,
 
     /// [system] Indicates whether this operation or named query can be invoked at
     ///  the system level (e.g. without needing to choose a resource type for the
@@ -723,7 +723,7 @@ class OperationDefinitionParameter
     List<FhirCode>? scope,
 
     /// [scopeElement] ("_scope") Extensions for scope
-    @JsonKey(name: '_scope') List<Element>? scopeElement,
+    @JsonKey(name: '_scope') List<PrimitiveElement>? scopeElement,
 
     /// [min] The minimum number of times this parameter SHALL appear in the
     ///  request or response.
@@ -756,7 +756,7 @@ class OperationDefinitionParameter
     List<FhirCode>? allowedType,
 
     /// [allowedTypeElement] ("_allowedType") Extensions for allowedType
-    @JsonKey(name: '_allowedType') List<Element>? allowedTypeElement,
+    @JsonKey(name: '_allowedType') List<PrimitiveElement>? allowedTypeElement,
 
     /// [targetProfile] Used when the type is "Reference" or "canonical", and
     ///  identifies a profile structure or implementation Guide that applies to the
@@ -1159,7 +1159,8 @@ class OperationDefinitionOverload
     List<String>? parameterName,
 
     /// [parameterNameElement] ("_parameterName") Extensions for parameterName
-    @JsonKey(name: '_parameterName') List<Element>? parameterNameElement,
+    @JsonKey(name: '_parameterName')
+    List<PrimitiveElement>? parameterNameElement,
 
     /// [comment] Comments to go on overload.
     String? comment,

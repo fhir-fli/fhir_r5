@@ -141,7 +141,7 @@ _$ImplementationGuideImpl _$$ImplementationGuideImplFromJson(
           ?.map(FhirCode.fromJson)
           .toList(),
       fhirVersionElement: (json['_fhirVersion'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       dependsOn: (json['dependsOn'] as List<dynamic>?)
           ?.map((e) =>
@@ -615,7 +615,7 @@ _$ImplementationGuideResourceImpl _$$ImplementationGuideResourceImplFromJson(
           ?.map(FhirCode.fromJson)
           .toList(),
       fhirVersionElement: (json['_fhirVersion'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       name: json['name'] as String?,
       nameElement: json['_name'] == null
@@ -874,12 +874,12 @@ _$ImplementationGuideManifestImpl _$$ImplementationGuideManifestImplFromJson(
       image:
           (json['image'] as List<dynamic>?)?.map((e) => e as String).toList(),
       imageElement: (json['_image'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       other:
           (json['other'] as List<dynamic>?)?.map((e) => e as String).toList(),
       otherElement: (json['_other'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -986,7 +986,7 @@ _$ImplementationGuidePage1Impl _$$ImplementationGuidePage1ImplFromJson(
       anchor:
           (json['anchor'] as List<dynamic>?)?.map((e) => e as String).toList(),
       anchorElement: (json['_anchor'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

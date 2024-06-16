@@ -121,7 +121,8 @@ mixin _$Provenance {
 
   /// [policyElement] ("_policy") Extensions for policy
   @JsonKey(name: '_policy')
-  List<Element>? get policyElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get policyElement =>
+      throw _privateConstructorUsedError;
 
   /// [location] Where the activity occurred, if relevant.
   Reference? get location => throw _privateConstructorUsedError;
@@ -195,7 +196,7 @@ abstract class $ProvenanceCopyWith<$Res> {
       FhirInstant? recorded,
       @JsonKey(name: '_recorded') PrimitiveElement? recordedElement,
       List<FhirUri>? policy,
-      @JsonKey(name: '_policy') List<Element>? policyElement,
+      @JsonKey(name: '_policy') List<PrimitiveElement>? policyElement,
       Reference? location,
       List<CodeableReference>? authorization,
       CodeableConcept? activity,
@@ -333,7 +334,7 @@ class _$ProvenanceCopyWithImpl<$Res, $Val extends Provenance>
       policyElement: freezed == policyElement
           ? _value.policyElement
           : policyElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       location: freezed == location
           ? _value.location
           : location // ignore: cast_nullable_to_non_nullable
@@ -487,7 +488,7 @@ abstract class _$$ProvenanceImplCopyWith<$Res>
       FhirInstant? recorded,
       @JsonKey(name: '_recorded') PrimitiveElement? recordedElement,
       List<FhirUri>? policy,
-      @JsonKey(name: '_policy') List<Element>? policyElement,
+      @JsonKey(name: '_policy') List<PrimitiveElement>? policyElement,
       Reference? location,
       List<CodeableReference>? authorization,
       CodeableConcept? activity,
@@ -630,7 +631,7 @@ class __$$ProvenanceImplCopyWithImpl<$Res>
       policyElement: freezed == policyElement
           ? _value._policyElement
           : policyElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       location: freezed == location
           ? _value.location
           : location // ignore: cast_nullable_to_non_nullable
@@ -694,7 +695,7 @@ class _$ProvenanceImpl extends _Provenance {
       this.recorded,
       @JsonKey(name: '_recorded') this.recordedElement,
       final List<FhirUri>? policy,
-      @JsonKey(name: '_policy') final List<Element>? policyElement,
+      @JsonKey(name: '_policy') final List<PrimitiveElement>? policyElement,
       this.location,
       final List<CodeableReference>? authorization,
       this.activity,
@@ -903,12 +904,12 @@ class _$ProvenanceImpl extends _Provenance {
   }
 
   /// [policyElement] ("_policy") Extensions for policy
-  final List<Element>? _policyElement;
+  final List<PrimitiveElement>? _policyElement;
 
   /// [policyElement] ("_policy") Extensions for policy
   @override
   @JsonKey(name: '_policy')
-  List<Element>? get policyElement {
+  List<PrimitiveElement>? get policyElement {
     final value = _policyElement;
     if (value == null) return null;
     if (_policyElement is EqualUnmodifiableListView) return _policyElement;
@@ -1141,7 +1142,7 @@ abstract class _Provenance extends Provenance {
       final FhirInstant? recorded,
       @JsonKey(name: '_recorded') final PrimitiveElement? recordedElement,
       final List<FhirUri>? policy,
-      @JsonKey(name: '_policy') final List<Element>? policyElement,
+      @JsonKey(name: '_policy') final List<PrimitiveElement>? policyElement,
       final Reference? location,
       final List<CodeableReference>? authorization,
       final CodeableConcept? activity,
@@ -1274,7 +1275,7 @@ abstract class _Provenance extends Provenance {
 
   /// [policyElement] ("_policy") Extensions for policy
   @JsonKey(name: '_policy')
-  List<Element>? get policyElement;
+  List<PrimitiveElement>? get policyElement;
   @override
 
   /// [location] Where the activity occurred, if relevant.

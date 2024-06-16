@@ -380,7 +380,7 @@ class MedicationKnowledge with _$MedicationKnowledge implements DomainResource {
     List<String>? name,
 
     /// [nameElement] ("_name") Extensions for name
-    @JsonKey(name: '_name') List<Element>? nameElement,
+    @JsonKey(name: '_name') List<PrimitiveElement>? nameElement,
 
     /// [title] A short, descriptive, user-friendly title for the {{title}}.
     String? title,

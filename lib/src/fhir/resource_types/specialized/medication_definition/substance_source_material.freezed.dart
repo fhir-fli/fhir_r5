@@ -130,7 +130,7 @@ mixin _$SubstanceSourceMaterial {
   /// [parentSubstanceNameElement] ("_parentSubstanceName") Extensions for
   ///  parentSubstanceName
   @JsonKey(name: '_parentSubstanceName')
-  List<Element>? get parentSubstanceNameElement =>
+  List<PrimitiveElement>? get parentSubstanceNameElement =>
       throw _privateConstructorUsedError;
 
   /// [countryOfOrigin] The country where the plant material is harvested or the
@@ -148,7 +148,7 @@ mixin _$SubstanceSourceMaterial {
   /// [geographicalLocationElement] ("_geographicalLocation") Extensions for
   ///  geographicalLocation
   @JsonKey(name: '_geographicalLocation')
-  List<Element>? get geographicalLocationElement =>
+  List<PrimitiveElement>? get geographicalLocationElement =>
       throw _privateConstructorUsedError;
 
   /// [developmentStage] Stage of life for animals, plants, insects and
@@ -213,11 +213,11 @@ abstract class $SubstanceSourceMaterialCopyWith<$Res> {
       List<Identifier>? parentSubstanceId,
       List<String>? parentSubstanceName,
       @JsonKey(name: '_parentSubstanceName')
-      List<Element>? parentSubstanceNameElement,
+      List<PrimitiveElement>? parentSubstanceNameElement,
       List<CodeableConcept>? countryOfOrigin,
       List<String>? geographicalLocation,
       @JsonKey(name: '_geographicalLocation')
-      List<Element>? geographicalLocationElement,
+      List<PrimitiveElement>? geographicalLocationElement,
       CodeableConcept? developmentStage,
       List<SubstanceSourceMaterialFractionDescription>? fractionDescription,
       SubstanceSourceMaterialOrganism? organism,
@@ -355,7 +355,7 @@ class _$SubstanceSourceMaterialCopyWithImpl<$Res,
       parentSubstanceNameElement: freezed == parentSubstanceNameElement
           ? _value.parentSubstanceNameElement
           : parentSubstanceNameElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       countryOfOrigin: freezed == countryOfOrigin
           ? _value.countryOfOrigin
           : countryOfOrigin // ignore: cast_nullable_to_non_nullable
@@ -367,7 +367,7 @@ class _$SubstanceSourceMaterialCopyWithImpl<$Res,
       geographicalLocationElement: freezed == geographicalLocationElement
           ? _value.geographicalLocationElement
           : geographicalLocationElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       developmentStage: freezed == developmentStage
           ? _value.developmentStage
           : developmentStage // ignore: cast_nullable_to_non_nullable
@@ -516,11 +516,11 @@ abstract class _$$SubstanceSourceMaterialImplCopyWith<$Res>
       List<Identifier>? parentSubstanceId,
       List<String>? parentSubstanceName,
       @JsonKey(name: '_parentSubstanceName')
-      List<Element>? parentSubstanceNameElement,
+      List<PrimitiveElement>? parentSubstanceNameElement,
       List<CodeableConcept>? countryOfOrigin,
       List<String>? geographicalLocation,
       @JsonKey(name: '_geographicalLocation')
-      List<Element>? geographicalLocationElement,
+      List<PrimitiveElement>? geographicalLocationElement,
       CodeableConcept? developmentStage,
       List<SubstanceSourceMaterialFractionDescription>? fractionDescription,
       SubstanceSourceMaterialOrganism? organism,
@@ -665,7 +665,7 @@ class __$$SubstanceSourceMaterialImplCopyWithImpl<$Res>
       parentSubstanceNameElement: freezed == parentSubstanceNameElement
           ? _value._parentSubstanceNameElement
           : parentSubstanceNameElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       countryOfOrigin: freezed == countryOfOrigin
           ? _value._countryOfOrigin
           : countryOfOrigin // ignore: cast_nullable_to_non_nullable
@@ -677,7 +677,7 @@ class __$$SubstanceSourceMaterialImplCopyWithImpl<$Res>
       geographicalLocationElement: freezed == geographicalLocationElement
           ? _value._geographicalLocationElement
           : geographicalLocationElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       developmentStage: freezed == developmentStage
           ? _value.developmentStage
           : developmentStage // ignore: cast_nullable_to_non_nullable
@@ -723,11 +723,11 @@ class _$SubstanceSourceMaterialImpl extends _SubstanceSourceMaterial {
       final List<Identifier>? parentSubstanceId,
       final List<String>? parentSubstanceName,
       @JsonKey(name: '_parentSubstanceName')
-      final List<Element>? parentSubstanceNameElement,
+      final List<PrimitiveElement>? parentSubstanceNameElement,
       final List<CodeableConcept>? countryOfOrigin,
       final List<String>? geographicalLocation,
       @JsonKey(name: '_geographicalLocation')
-      final List<Element>? geographicalLocationElement,
+      final List<PrimitiveElement>? geographicalLocationElement,
       this.developmentStage,
       final List<SubstanceSourceMaterialFractionDescription>?
           fractionDescription,
@@ -942,13 +942,13 @@ class _$SubstanceSourceMaterialImpl extends _SubstanceSourceMaterial {
 
   /// [parentSubstanceNameElement] ("_parentSubstanceName") Extensions for
   ///  parentSubstanceName
-  final List<Element>? _parentSubstanceNameElement;
+  final List<PrimitiveElement>? _parentSubstanceNameElement;
 
   /// [parentSubstanceNameElement] ("_parentSubstanceName") Extensions for
   ///  parentSubstanceName
   @override
   @JsonKey(name: '_parentSubstanceName')
-  List<Element>? get parentSubstanceNameElement {
+  List<PrimitiveElement>? get parentSubstanceNameElement {
     final value = _parentSubstanceNameElement;
     if (value == null) return null;
     if (_parentSubstanceNameElement is EqualUnmodifiableListView)
@@ -996,13 +996,13 @@ class _$SubstanceSourceMaterialImpl extends _SubstanceSourceMaterial {
 
   /// [geographicalLocationElement] ("_geographicalLocation") Extensions for
   ///  geographicalLocation
-  final List<Element>? _geographicalLocationElement;
+  final List<PrimitiveElement>? _geographicalLocationElement;
 
   /// [geographicalLocationElement] ("_geographicalLocation") Extensions for
   ///  geographicalLocation
   @override
   @JsonKey(name: '_geographicalLocation')
-  List<Element>? get geographicalLocationElement {
+  List<PrimitiveElement>? get geographicalLocationElement {
     final value = _geographicalLocationElement;
     if (value == null) return null;
     if (_geographicalLocationElement is EqualUnmodifiableListView)
@@ -1205,11 +1205,11 @@ abstract class _SubstanceSourceMaterial extends SubstanceSourceMaterial {
       final List<Identifier>? parentSubstanceId,
       final List<String>? parentSubstanceName,
       @JsonKey(name: '_parentSubstanceName')
-      final List<Element>? parentSubstanceNameElement,
+      final List<PrimitiveElement>? parentSubstanceNameElement,
       final List<CodeableConcept>? countryOfOrigin,
       final List<String>? geographicalLocation,
       @JsonKey(name: '_geographicalLocation')
-      final List<Element>? geographicalLocationElement,
+      final List<PrimitiveElement>? geographicalLocationElement,
       final CodeableConcept? developmentStage,
       final List<SubstanceSourceMaterialFractionDescription>?
           fractionDescription,
@@ -1346,7 +1346,7 @@ abstract class _SubstanceSourceMaterial extends SubstanceSourceMaterial {
   /// [parentSubstanceNameElement] ("_parentSubstanceName") Extensions for
   ///  parentSubstanceName
   @JsonKey(name: '_parentSubstanceName')
-  List<Element>? get parentSubstanceNameElement;
+  List<PrimitiveElement>? get parentSubstanceNameElement;
   @override
 
   /// [countryOfOrigin] The country where the plant material is harvested or the
@@ -1365,7 +1365,7 @@ abstract class _SubstanceSourceMaterial extends SubstanceSourceMaterial {
   /// [geographicalLocationElement] ("_geographicalLocation") Extensions for
   ///  geographicalLocation
   @JsonKey(name: '_geographicalLocation')
-  List<Element>? get geographicalLocationElement;
+  List<PrimitiveElement>? get geographicalLocationElement;
   @override
 
   /// [developmentStage] Stage of life for animals, plants, insects and

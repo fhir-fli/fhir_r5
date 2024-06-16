@@ -146,7 +146,7 @@ _$TestScriptImpl _$$TestScriptImplFromJson(Map<String, dynamic> json) =>
           ?.map(FhirCanonical.fromJson)
           .toList(),
       profileElement: (json['_profile'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       variable: (json['variable'] as List<dynamic>?)
           ?.map((e) => TestScriptVariable.fromJson(e as Map<String, dynamic>))
@@ -603,7 +603,7 @@ _$TestScriptCapabilityImpl _$$TestScriptCapabilityImplFromJson(
           ?.map(FhirInteger.fromJson)
           .toList(),
       originElement: (json['_origin'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       destination: json['destination'] == null
           ? null
@@ -614,7 +614,7 @@ _$TestScriptCapabilityImpl _$$TestScriptCapabilityImplFromJson(
               json['_destination'] as Map<String, dynamic>),
       link: (json['link'] as List<dynamic>?)?.map(FhirUri.fromJson).toList(),
       linkElement: (json['_link'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       capabilities: FhirCanonical.fromJson(json['capabilities']),
     );

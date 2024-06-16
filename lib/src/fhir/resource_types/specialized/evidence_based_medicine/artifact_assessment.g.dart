@@ -378,7 +378,7 @@ _$ArtifactAssessmentContentImpl _$$ArtifactAssessmentContentImplFromJson(
           : Reference.fromJson(json['author'] as Map<String, dynamic>),
       path: (json['path'] as List<dynamic>?)?.map(FhirUri.fromJson).toList(),
       pathElement: (json['_path'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       relatedArtifact: (json['relatedArtifact'] as List<dynamic>?)
           ?.map((e) => RelatedArtifact.fromJson(e as Map<String, dynamic>))

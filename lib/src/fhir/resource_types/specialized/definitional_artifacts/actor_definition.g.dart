@@ -140,7 +140,7 @@ _$ActorDefinitionImpl _$$ActorDefinitionImplFromJson(
       reference:
           (json['reference'] as List<dynamic>?)?.map(FhirUrl.fromJson).toList(),
       referenceElement: (json['_reference'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       capabilities: json['capabilities'] == null
           ? null

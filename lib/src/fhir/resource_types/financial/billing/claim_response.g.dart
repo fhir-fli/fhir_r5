@@ -457,7 +457,7 @@ _$ClaimResponseItemImpl _$$ClaimResponseItemImplFromJson(
           ?.map(FhirPositiveInt.fromJson)
           .toList(),
       noteNumberElement: (json['_noteNumber'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       reviewOutcome: json['reviewOutcome'] == null
           ? null
@@ -620,7 +620,7 @@ _$ClaimResponseDetailImpl _$$ClaimResponseDetailImplFromJson(
           ?.map(FhirPositiveInt.fromJson)
           .toList(),
       noteNumberElement: (json['_noteNumber'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       reviewOutcome: json['reviewOutcome'] == null
           ? null
@@ -691,7 +691,7 @@ _$ClaimResponseSubDetailImpl _$$ClaimResponseSubDetailImplFromJson(
           ?.map(FhirPositiveInt.fromJson)
           .toList(),
       noteNumberElement: (json['_noteNumber'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       reviewOutcome: json['reviewOutcome'] == null
           ? null
@@ -747,19 +747,19 @@ _$ClaimResponseAddItemImpl _$$ClaimResponseAddItemImplFromJson(
           ?.map(FhirPositiveInt.fromJson)
           .toList(),
       itemSequenceElement: (json['_itemSequence'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       detailSequence: (json['detailSequence'] as List<dynamic>?)
           ?.map(FhirPositiveInt.fromJson)
           .toList(),
       detailSequenceElement: (json['_detailSequence'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       subdetailSequence: (json['subdetailSequence'] as List<dynamic>?)
           ?.map(FhirPositiveInt.fromJson)
           .toList(),
       subdetailSequenceElement: (json['_subdetailSequence'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       traceNumber: (json['traceNumber'] as List<dynamic>?)
           ?.map((e) => Identifier.fromJson(e as Map<String, dynamic>))
@@ -833,7 +833,7 @@ _$ClaimResponseAddItemImpl _$$ClaimResponseAddItemImplFromJson(
           ?.map(FhirPositiveInt.fromJson)
           .toList(),
       noteNumberElement: (json['_noteNumber'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       reviewOutcome: json['reviewOutcome'] == null
           ? null
@@ -996,7 +996,7 @@ _$ClaimResponseDetail1Impl _$$ClaimResponseDetail1ImplFromJson(
           ?.map(FhirPositiveInt.fromJson)
           .toList(),
       noteNumberElement: (json['_noteNumber'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       reviewOutcome: json['reviewOutcome'] == null
           ? null
@@ -1099,7 +1099,7 @@ _$ClaimResponseSubDetail1Impl _$$ClaimResponseSubDetail1ImplFromJson(
           ?.map(FhirPositiveInt.fromJson)
           .toList(),
       noteNumberElement: (json['_noteNumber'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       reviewOutcome: json['reviewOutcome'] == null
           ? null
@@ -1385,7 +1385,7 @@ _$ClaimResponseErrorImpl _$$ClaimResponseErrorImplFromJson(
           ?.map((e) => e as String)
           .toList(),
       expressionElement: (json['_expression'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

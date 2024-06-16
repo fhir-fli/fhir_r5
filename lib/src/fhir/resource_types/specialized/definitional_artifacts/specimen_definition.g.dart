@@ -168,7 +168,7 @@ _$SpecimenDefinitionImpl _$$SpecimenDefinitionImplFromJson(
           ?.map(FhirUri.fromJson)
           .toList(),
       derivedFromUriElement: (json['_derivedFromUri'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       subjectCodeableConcept: json['subjectCodeableConcept'] == null
           ? null

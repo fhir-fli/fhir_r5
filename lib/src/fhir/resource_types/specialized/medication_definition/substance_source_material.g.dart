@@ -70,7 +70,7 @@ _$SubstanceSourceMaterialImpl _$$SubstanceSourceMaterialImplFromJson(
           .toList(),
       parentSubstanceNameElement:
           (json['_parentSubstanceName'] as List<dynamic>?)
-              ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
               .toList(),
       countryOfOrigin: (json['countryOfOrigin'] as List<dynamic>?)
           ?.map((e) => CodeableConcept.fromJson(e as Map<String, dynamic>))
@@ -80,7 +80,7 @@ _$SubstanceSourceMaterialImpl _$$SubstanceSourceMaterialImplFromJson(
           .toList(),
       geographicalLocationElement:
           (json['_geographicalLocation'] as List<dynamic>?)
-              ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
               .toList(),
       developmentStage: json['developmentStage'] == null
           ? null

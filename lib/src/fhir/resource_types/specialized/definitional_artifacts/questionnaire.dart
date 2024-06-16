@@ -486,7 +486,7 @@ class Questionnaire with _$Questionnaire implements DomainResource {
     List<FhirCode>? subjectType,
 
     /// [subjectTypeElement] ("_subjectType") Extensions for subjectType
-    @JsonKey(name: '_subjectType') List<Element>? subjectTypeElement,
+    @JsonKey(name: '_subjectType') List<PrimitiveElement>? subjectTypeElement,
 
     /// [code] An identifier for this collection of questions in a particular
     ///  terminology such as LOINC.

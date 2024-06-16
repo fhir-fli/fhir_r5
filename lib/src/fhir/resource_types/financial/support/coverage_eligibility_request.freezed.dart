@@ -114,7 +114,8 @@ mixin _$CoverageEligibilityRequest {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  List<Element>? get purposeElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get purposeElement =>
+      throw _privateConstructorUsedError;
 
   /// [patient] The party who is the beneficiary of the supplied coverage and for
   ///  whom eligibility is sought.
@@ -204,7 +205,7 @@ abstract class $CoverageEligibilityRequestCopyWith<$Res> {
       @JsonKey(name: '_status') PrimitiveElement? statusElement,
       CodeableConcept? priority,
       List<FhirCode>? purpose,
-      @JsonKey(name: '_purpose') List<Element>? purposeElement,
+      @JsonKey(name: '_purpose') List<PrimitiveElement>? purposeElement,
       Reference patient,
       List<CoverageEligibilityRequestEvent>? event,
       FhirDate? servicedDate,
@@ -345,7 +346,7 @@ class _$CoverageEligibilityRequestCopyWithImpl<$Res,
       purposeElement: freezed == purposeElement
           ? _value.purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       patient: null == patient
           ? _value.patient
           : patient // ignore: cast_nullable_to_non_nullable
@@ -533,7 +534,7 @@ abstract class _$$CoverageEligibilityRequestImplCopyWith<$Res>
       @JsonKey(name: '_status') PrimitiveElement? statusElement,
       CodeableConcept? priority,
       List<FhirCode>? purpose,
-      @JsonKey(name: '_purpose') List<Element>? purposeElement,
+      @JsonKey(name: '_purpose') List<PrimitiveElement>? purposeElement,
       Reference patient,
       List<CoverageEligibilityRequestEvent>? event,
       FhirDate? servicedDate,
@@ -682,7 +683,7 @@ class __$$CoverageEligibilityRequestImplCopyWithImpl<$Res>
       purposeElement: freezed == purposeElement
           ? _value._purposeElement
           : purposeElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       patient: null == patient
           ? _value.patient
           : patient // ignore: cast_nullable_to_non_nullable
@@ -764,7 +765,7 @@ class _$CoverageEligibilityRequestImpl extends _CoverageEligibilityRequest {
       @JsonKey(name: '_status') this.statusElement,
       this.priority,
       final List<FhirCode>? purpose,
-      @JsonKey(name: '_purpose') final List<Element>? purposeElement,
+      @JsonKey(name: '_purpose') final List<PrimitiveElement>? purposeElement,
       required this.patient,
       final List<CoverageEligibilityRequestEvent>? event,
       this.servicedDate,
@@ -972,12 +973,12 @@ class _$CoverageEligibilityRequestImpl extends _CoverageEligibilityRequest {
   }
 
   /// [purposeElement] ("_purpose") Extensions for purpose
-  final List<Element>? _purposeElement;
+  final List<PrimitiveElement>? _purposeElement;
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @override
   @JsonKey(name: '_purpose')
-  List<Element>? get purposeElement {
+  List<PrimitiveElement>? get purposeElement {
     final value = _purposeElement;
     if (value == null) return null;
     if (_purposeElement is EqualUnmodifiableListView) return _purposeElement;
@@ -1208,41 +1209,41 @@ class _$CoverageEligibilityRequestImpl extends _CoverageEligibilityRequest {
 
 abstract class _CoverageEligibilityRequest extends CoverageEligibilityRequest {
   const factory _CoverageEligibilityRequest(
-          {@JsonKey(unknownEnumValue: R5ResourceType.CoverageEligibilityRequest)
-          final R5ResourceType resourceType,
-          final FhirId? id,
-          final FhirMeta? meta,
-          final FhirUri? implicitRules,
-          @JsonKey(name: '_implicitRules')
-          final PrimitiveElement? implicitRulesElement,
-          final FhirCode? language,
-          @JsonKey(name: '_language') final PrimitiveElement? languageElement,
-          final Narrative? text,
-          final List<Resource>? contained,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final List<Identifier>? identifier,
-          final FhirCode? status,
-          @JsonKey(name: '_status') final PrimitiveElement? statusElement,
-          final CodeableConcept? priority,
-          final List<FhirCode>? purpose,
-          @JsonKey(name: '_purpose') final List<Element>? purposeElement,
-          required final Reference patient,
-          final List<CoverageEligibilityRequestEvent>? event,
-          final FhirDate? servicedDate,
-          @JsonKey(name: '_servicedDate')
-          final PrimitiveElement? servicedDateElement,
-          final Period? servicedPeriod,
-          final FhirDateTime? created,
-          @JsonKey(name: '_created') final PrimitiveElement? createdElement,
-          final Reference? enterer,
-          final Reference? provider,
-          required final Reference insurer,
-          final Reference? facility,
-          final List<CoverageEligibilityRequestSupportingInfo>? supportingInfo,
-          final List<CoverageEligibilityRequestInsurance>? insurance,
-          final List<CoverageEligibilityRequestItem>? item}) =
-      _$CoverageEligibilityRequestImpl;
+      {@JsonKey(unknownEnumValue: R5ResourceType.CoverageEligibilityRequest)
+      final R5ResourceType resourceType,
+      final FhirId? id,
+      final FhirMeta? meta,
+      final FhirUri? implicitRules,
+      @JsonKey(name: '_implicitRules')
+      final PrimitiveElement? implicitRulesElement,
+      final FhirCode? language,
+      @JsonKey(name: '_language') final PrimitiveElement? languageElement,
+      final Narrative? text,
+      final List<Resource>? contained,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final List<Identifier>? identifier,
+      final FhirCode? status,
+      @JsonKey(name: '_status') final PrimitiveElement? statusElement,
+      final CodeableConcept? priority,
+      final List<FhirCode>? purpose,
+      @JsonKey(name: '_purpose') final List<PrimitiveElement>? purposeElement,
+      required final Reference patient,
+      final List<CoverageEligibilityRequestEvent>? event,
+      final FhirDate? servicedDate,
+      @JsonKey(name: '_servicedDate')
+      final PrimitiveElement? servicedDateElement,
+      final Period? servicedPeriod,
+      final FhirDateTime? created,
+      @JsonKey(name: '_created') final PrimitiveElement? createdElement,
+      final Reference? enterer,
+      final Reference? provider,
+      required final Reference insurer,
+      final Reference? facility,
+      final List<CoverageEligibilityRequestSupportingInfo>? supportingInfo,
+      final List<CoverageEligibilityRequestInsurance>? insurance,
+      final List<CoverageEligibilityRequestItem>?
+          item}) = _$CoverageEligibilityRequestImpl;
   const _CoverageEligibilityRequest._() : super._();
 
   factory _CoverageEligibilityRequest.fromJson(Map<String, dynamic> json) =
@@ -1357,7 +1358,7 @@ abstract class _CoverageEligibilityRequest extends CoverageEligibilityRequest {
 
   /// [purposeElement] ("_purpose") Extensions for purpose
   @JsonKey(name: '_purpose')
-  List<Element>? get purposeElement;
+  List<PrimitiveElement>? get purposeElement;
   @override
 
   /// [patient] The party who is the beneficiary of the supplied coverage and for
@@ -2911,7 +2912,7 @@ mixin _$CoverageEligibilityRequestItem {
   /// [supportingInfoSequenceElement] ("_supportingInfoSequence") Extensions for
   ///  supportingInfoSequence
   @JsonKey(name: '_supportingInfoSequence')
-  List<Element>? get supportingInfoSequenceElement =>
+  List<PrimitiveElement>? get supportingInfoSequenceElement =>
       throw _privateConstructorUsedError;
 
   /// [category] Code to identify the general type of benefits under which
@@ -2967,7 +2968,7 @@ abstract class $CoverageEligibilityRequestItemCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       List<FhirPositiveInt>? supportingInfoSequence,
       @JsonKey(name: '_supportingInfoSequence')
-      List<Element>? supportingInfoSequenceElement,
+      List<PrimitiveElement>? supportingInfoSequenceElement,
       CodeableConcept? category,
       CodeableConcept? productOrService,
       List<CodeableConcept>? modifier,
@@ -3035,7 +3036,7 @@ class _$CoverageEligibilityRequestItemCopyWithImpl<$Res,
       supportingInfoSequenceElement: freezed == supportingInfoSequenceElement
           ? _value.supportingInfoSequenceElement
           : supportingInfoSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       category: freezed == category
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
@@ -3163,7 +3164,7 @@ abstract class _$$CoverageEligibilityRequestItemImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       List<FhirPositiveInt>? supportingInfoSequence,
       @JsonKey(name: '_supportingInfoSequence')
-      List<Element>? supportingInfoSequenceElement,
+      List<PrimitiveElement>? supportingInfoSequenceElement,
       CodeableConcept? category,
       CodeableConcept? productOrService,
       List<CodeableConcept>? modifier,
@@ -3236,7 +3237,7 @@ class __$$CoverageEligibilityRequestItemImplCopyWithImpl<$Res>
       supportingInfoSequenceElement: freezed == supportingInfoSequenceElement
           ? _value._supportingInfoSequenceElement
           : supportingInfoSequenceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       category: freezed == category
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
@@ -3287,7 +3288,7 @@ class _$CoverageEligibilityRequestItemImpl
       final List<FhirExtension>? modifierExtension,
       final List<FhirPositiveInt>? supportingInfoSequence,
       @JsonKey(name: '_supportingInfoSequence')
-      final List<Element>? supportingInfoSequenceElement,
+      final List<PrimitiveElement>? supportingInfoSequenceElement,
       this.category,
       this.productOrService,
       final List<CodeableConcept>? modifier,
@@ -3393,13 +3394,13 @@ class _$CoverageEligibilityRequestItemImpl
 
   /// [supportingInfoSequenceElement] ("_supportingInfoSequence") Extensions for
   ///  supportingInfoSequence
-  final List<Element>? _supportingInfoSequenceElement;
+  final List<PrimitiveElement>? _supportingInfoSequenceElement;
 
   /// [supportingInfoSequenceElement] ("_supportingInfoSequence") Extensions for
   ///  supportingInfoSequence
   @override
   @JsonKey(name: '_supportingInfoSequence')
-  List<Element>? get supportingInfoSequenceElement {
+  List<PrimitiveElement>? get supportingInfoSequenceElement {
     final value = _supportingInfoSequenceElement;
     if (value == null) return null;
     if (_supportingInfoSequenceElement is EqualUnmodifiableListView)
@@ -3558,7 +3559,7 @@ abstract class _CoverageEligibilityRequestItem
       final List<FhirExtension>? modifierExtension,
       final List<FhirPositiveInt>? supportingInfoSequence,
       @JsonKey(name: '_supportingInfoSequence')
-      final List<Element>? supportingInfoSequenceElement,
+      final List<PrimitiveElement>? supportingInfoSequenceElement,
       final CodeableConcept? category,
       final CodeableConcept? productOrService,
       final List<CodeableConcept>? modifier,
@@ -3613,7 +3614,7 @@ abstract class _CoverageEligibilityRequestItem
   /// [supportingInfoSequenceElement] ("_supportingInfoSequence") Extensions for
   ///  supportingInfoSequence
   @JsonKey(name: '_supportingInfoSequence')
-  List<Element>? get supportingInfoSequenceElement;
+  List<PrimitiveElement>? get supportingInfoSequenceElement;
   @override
 
   /// [category] Code to identify the general type of benefits under which

@@ -65,7 +65,7 @@ mixin _$Address {
 
   /// [lineElement] ("_line") Extensions for line
   @JsonKey(name: '_line')
-  List<Element>? get lineElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get lineElement => throw _privateConstructorUsedError;
 
   /// [city] The name of the city, town, suburb, village or other community or
   ///  delivery center.
@@ -129,7 +129,7 @@ abstract class $AddressCopyWith<$Res> {
       String? text,
       @JsonKey(name: '_text') PrimitiveElement? textElement,
       List<String>? line,
-      @JsonKey(name: '_line') List<Element>? lineElement,
+      @JsonKey(name: '_line') List<PrimitiveElement>? lineElement,
       String? city,
       @JsonKey(name: '_city') PrimitiveElement? cityElement,
       String? district,
@@ -220,7 +220,7 @@ class _$AddressCopyWithImpl<$Res, $Val extends Address>
       lineElement: freezed == lineElement
           ? _value.lineElement
           : lineElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       city: freezed == city
           ? _value.city
           : city // ignore: cast_nullable_to_non_nullable
@@ -298,7 +298,7 @@ abstract class _$$AddressImplCopyWith<$Res> implements $AddressCopyWith<$Res> {
       String? text,
       @JsonKey(name: '_text') PrimitiveElement? textElement,
       List<String>? line,
-      @JsonKey(name: '_line') List<Element>? lineElement,
+      @JsonKey(name: '_line') List<PrimitiveElement>? lineElement,
       String? city,
       @JsonKey(name: '_city') PrimitiveElement? cityElement,
       String? district,
@@ -388,7 +388,7 @@ class __$$AddressImplCopyWithImpl<$Res>
       lineElement: freezed == lineElement
           ? _value._lineElement
           : lineElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       city: freezed == city
           ? _value.city
           : city // ignore: cast_nullable_to_non_nullable
@@ -450,7 +450,7 @@ class _$AddressImpl extends _Address {
       this.text,
       @JsonKey(name: '_text') this.textElement,
       final List<String>? line,
-      @JsonKey(name: '_line') final List<Element>? lineElement,
+      @JsonKey(name: '_line') final List<PrimitiveElement>? lineElement,
       this.city,
       @JsonKey(name: '_city') this.cityElement,
       this.district,
@@ -548,12 +548,12 @@ class _$AddressImpl extends _Address {
   }
 
   /// [lineElement] ("_line") Extensions for line
-  final List<Element>? _lineElement;
+  final List<PrimitiveElement>? _lineElement;
 
   /// [lineElement] ("_line") Extensions for line
   @override
   @JsonKey(name: '_line')
-  List<Element>? get lineElement {
+  List<PrimitiveElement>? get lineElement {
     final value = _lineElement;
     if (value == null) return null;
     if (_lineElement is EqualUnmodifiableListView) return _lineElement;
@@ -711,7 +711,7 @@ abstract class _Address extends Address {
       final String? text,
       @JsonKey(name: '_text') final PrimitiveElement? textElement,
       final List<String>? line,
-      @JsonKey(name: '_line') final List<Element>? lineElement,
+      @JsonKey(name: '_line') final List<PrimitiveElement>? lineElement,
       final String? city,
       @JsonKey(name: '_city') final PrimitiveElement? cityElement,
       final String? district,
@@ -783,7 +783,7 @@ abstract class _Address extends Address {
 
   /// [lineElement] ("_line") Extensions for line
   @JsonKey(name: '_line')
-  List<Element>? get lineElement;
+  List<PrimitiveElement>? get lineElement;
   @override
 
   /// [city] The name of the city, town, suburb, village or other community or

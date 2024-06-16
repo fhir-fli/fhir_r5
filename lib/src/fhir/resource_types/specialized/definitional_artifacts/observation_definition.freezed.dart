@@ -303,7 +303,7 @@ mixin _$ObservationDefinition {
 
   /// [derivedFromUriElement] ("_derivedFromUri") Extensions for derivedFromUri
   @JsonKey(name: '_derivedFromUri')
-  List<Element>? get derivedFromUriElement =>
+  List<PrimitiveElement>? get derivedFromUriElement =>
       throw _privateConstructorUsedError;
 
   /// [subject] A code that describes the intended kind of subject of Observation
@@ -328,7 +328,7 @@ mixin _$ObservationDefinition {
   /// [permittedDataTypeElement] ("_permittedDataType") Extensions for
   ///  permittedDataType
   @JsonKey(name: '_permittedDataType')
-  List<Element>? get permittedDataTypeElement =>
+  List<PrimitiveElement>? get permittedDataTypeElement =>
       throw _privateConstructorUsedError;
 
   /// [multipleResultsAllowed] Multiple results allowed for observations
@@ -456,14 +456,15 @@ abstract class $ObservationDefinitionCopyWith<$Res> {
       List<RelatedArtifact>? relatedArtifact,
       List<FhirCanonical>? derivedFromCanonical,
       List<FhirUri>? derivedFromUri,
-      @JsonKey(name: '_derivedFromUri') List<Element>? derivedFromUriElement,
+      @JsonKey(name: '_derivedFromUri')
+      List<PrimitiveElement>? derivedFromUriElement,
       List<CodeableConcept>? subject,
       CodeableConcept? performerType,
       List<CodeableConcept>? category,
       CodeableConcept code,
       List<FhirCode>? permittedDataType,
       @JsonKey(name: '_permittedDataType')
-      List<Element>? permittedDataTypeElement,
+      List<PrimitiveElement>? permittedDataTypeElement,
       FhirBoolean? multipleResultsAllowed,
       @JsonKey(name: '_multipleResultsAllowed')
       PrimitiveElement? multipleResultsAllowedElement,
@@ -803,7 +804,7 @@ class _$ObservationDefinitionCopyWithImpl<$Res,
       derivedFromUriElement: freezed == derivedFromUriElement
           ? _value.derivedFromUriElement
           : derivedFromUriElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       subject: freezed == subject
           ? _value.subject
           : subject // ignore: cast_nullable_to_non_nullable
@@ -827,7 +828,7 @@ class _$ObservationDefinitionCopyWithImpl<$Res,
       permittedDataTypeElement: freezed == permittedDataTypeElement
           ? _value.permittedDataTypeElement
           : permittedDataTypeElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       multipleResultsAllowed: freezed == multipleResultsAllowed
           ? _value.multipleResultsAllowed
           : multipleResultsAllowed // ignore: cast_nullable_to_non_nullable
@@ -1051,14 +1052,15 @@ abstract class _$$ObservationDefinitionImplCopyWith<$Res>
       List<RelatedArtifact>? relatedArtifact,
       List<FhirCanonical>? derivedFromCanonical,
       List<FhirUri>? derivedFromUri,
-      @JsonKey(name: '_derivedFromUri') List<Element>? derivedFromUriElement,
+      @JsonKey(name: '_derivedFromUri')
+      List<PrimitiveElement>? derivedFromUriElement,
       List<CodeableConcept>? subject,
       CodeableConcept? performerType,
       List<CodeableConcept>? category,
       CodeableConcept code,
       List<FhirCode>? permittedDataType,
       @JsonKey(name: '_permittedDataType')
-      List<Element>? permittedDataTypeElement,
+      List<PrimitiveElement>? permittedDataTypeElement,
       FhirBoolean? multipleResultsAllowed,
       @JsonKey(name: '_multipleResultsAllowed')
       PrimitiveElement? multipleResultsAllowedElement,
@@ -1405,7 +1407,7 @@ class __$$ObservationDefinitionImplCopyWithImpl<$Res>
       derivedFromUriElement: freezed == derivedFromUriElement
           ? _value._derivedFromUriElement
           : derivedFromUriElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       subject: freezed == subject
           ? _value._subject
           : subject // ignore: cast_nullable_to_non_nullable
@@ -1429,7 +1431,7 @@ class __$$ObservationDefinitionImplCopyWithImpl<$Res>
       permittedDataTypeElement: freezed == permittedDataTypeElement
           ? _value._permittedDataTypeElement
           : permittedDataTypeElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       multipleResultsAllowed: freezed == multipleResultsAllowed
           ? _value.multipleResultsAllowed
           : multipleResultsAllowed // ignore: cast_nullable_to_non_nullable
@@ -1544,14 +1546,14 @@ class _$ObservationDefinitionImpl extends _ObservationDefinition {
       final List<FhirCanonical>? derivedFromCanonical,
       final List<FhirUri>? derivedFromUri,
       @JsonKey(name: '_derivedFromUri')
-      final List<Element>? derivedFromUriElement,
+      final List<PrimitiveElement>? derivedFromUriElement,
       final List<CodeableConcept>? subject,
       this.performerType,
       final List<CodeableConcept>? category,
       required this.code,
       final List<FhirCode>? permittedDataType,
       @JsonKey(name: '_permittedDataType')
-      final List<Element>? permittedDataTypeElement,
+      final List<PrimitiveElement>? permittedDataTypeElement,
       this.multipleResultsAllowed,
       @JsonKey(name: '_multipleResultsAllowed')
       this.multipleResultsAllowedElement,
@@ -2087,12 +2089,12 @@ class _$ObservationDefinitionImpl extends _ObservationDefinition {
   }
 
   /// [derivedFromUriElement] ("_derivedFromUri") Extensions for derivedFromUri
-  final List<Element>? _derivedFromUriElement;
+  final List<PrimitiveElement>? _derivedFromUriElement;
 
   /// [derivedFromUriElement] ("_derivedFromUri") Extensions for derivedFromUri
   @override
   @JsonKey(name: '_derivedFromUri')
-  List<Element>? get derivedFromUriElement {
+  List<PrimitiveElement>? get derivedFromUriElement {
     final value = _derivedFromUriElement;
     if (value == null) return null;
     if (_derivedFromUriElement is EqualUnmodifiableListView)
@@ -2157,13 +2159,13 @@ class _$ObservationDefinitionImpl extends _ObservationDefinition {
 
   /// [permittedDataTypeElement] ("_permittedDataType") Extensions for
   ///  permittedDataType
-  final List<Element>? _permittedDataTypeElement;
+  final List<PrimitiveElement>? _permittedDataTypeElement;
 
   /// [permittedDataTypeElement] ("_permittedDataType") Extensions for
   ///  permittedDataType
   @override
   @JsonKey(name: '_permittedDataType')
-  List<Element>? get permittedDataTypeElement {
+  List<PrimitiveElement>? get permittedDataTypeElement {
     final value = _permittedDataTypeElement;
     if (value == null) return null;
     if (_permittedDataTypeElement is EqualUnmodifiableListView)
@@ -2580,14 +2582,14 @@ abstract class _ObservationDefinition extends ObservationDefinition {
       final List<FhirCanonical>? derivedFromCanonical,
       final List<FhirUri>? derivedFromUri,
       @JsonKey(name: '_derivedFromUri')
-      final List<Element>? derivedFromUriElement,
+      final List<PrimitiveElement>? derivedFromUriElement,
       final List<CodeableConcept>? subject,
       final CodeableConcept? performerType,
       final List<CodeableConcept>? category,
       required final CodeableConcept code,
       final List<FhirCode>? permittedDataType,
       @JsonKey(name: '_permittedDataType')
-      final List<Element>? permittedDataTypeElement,
+      final List<PrimitiveElement>? permittedDataTypeElement,
       final FhirBoolean? multipleResultsAllowed,
       @JsonKey(name: '_multipleResultsAllowed')
       final PrimitiveElement? multipleResultsAllowedElement,
@@ -2937,7 +2939,7 @@ abstract class _ObservationDefinition extends ObservationDefinition {
 
   /// [derivedFromUriElement] ("_derivedFromUri") Extensions for derivedFromUri
   @JsonKey(name: '_derivedFromUri')
-  List<Element>? get derivedFromUriElement;
+  List<PrimitiveElement>? get derivedFromUriElement;
   @override
 
   /// [subject] A code that describes the intended kind of subject of Observation
@@ -2967,7 +2969,7 @@ abstract class _ObservationDefinition extends ObservationDefinition {
   /// [permittedDataTypeElement] ("_permittedDataType") Extensions for
   ///  permittedDataType
   @JsonKey(name: '_permittedDataType')
-  List<Element>? get permittedDataTypeElement;
+  List<PrimitiveElement>? get permittedDataTypeElement;
   @override
 
   /// [multipleResultsAllowed] Multiple results allowed for observations
@@ -3919,7 +3921,7 @@ mixin _$ObservationDefinitionComponent {
   /// [permittedDataTypeElement] ("_permittedDataType") Extensions for
   ///  permittedDataType
   @JsonKey(name: '_permittedDataType')
-  List<Element>? get permittedDataTypeElement =>
+  List<PrimitiveElement>? get permittedDataTypeElement =>
       throw _privateConstructorUsedError;
 
   /// [permittedUnit] Units allowed for the valueQuantity element in the instance
@@ -3953,7 +3955,7 @@ abstract class $ObservationDefinitionComponentCopyWith<$Res> {
       CodeableConcept code,
       List<FhirCode>? permittedDataType,
       @JsonKey(name: '_permittedDataType')
-      List<Element>? permittedDataTypeElement,
+      List<PrimitiveElement>? permittedDataTypeElement,
       List<Coding>? permittedUnit,
       List<ObservationDefinitionQualifiedValue>? qualifiedValue});
 
@@ -4007,7 +4009,7 @@ class _$ObservationDefinitionComponentCopyWithImpl<$Res,
       permittedDataTypeElement: freezed == permittedDataTypeElement
           ? _value.permittedDataTypeElement
           : permittedDataTypeElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       permittedUnit: freezed == permittedUnit
           ? _value.permittedUnit
           : permittedUnit // ignore: cast_nullable_to_non_nullable
@@ -4044,7 +4046,7 @@ abstract class _$$ObservationDefinitionComponentImplCopyWith<$Res>
       CodeableConcept code,
       List<FhirCode>? permittedDataType,
       @JsonKey(name: '_permittedDataType')
-      List<Element>? permittedDataTypeElement,
+      List<PrimitiveElement>? permittedDataTypeElement,
       List<Coding>? permittedUnit,
       List<ObservationDefinitionQualifiedValue>? qualifiedValue});
 
@@ -4098,7 +4100,7 @@ class __$$ObservationDefinitionComponentImplCopyWithImpl<$Res>
       permittedDataTypeElement: freezed == permittedDataTypeElement
           ? _value._permittedDataTypeElement
           : permittedDataTypeElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       permittedUnit: freezed == permittedUnit
           ? _value._permittedUnit
           : permittedUnit // ignore: cast_nullable_to_non_nullable
@@ -4122,7 +4124,7 @@ class _$ObservationDefinitionComponentImpl
       required this.code,
       final List<FhirCode>? permittedDataType,
       @JsonKey(name: '_permittedDataType')
-      final List<Element>? permittedDataTypeElement,
+      final List<PrimitiveElement>? permittedDataTypeElement,
       final List<Coding>? permittedUnit,
       final List<ObservationDefinitionQualifiedValue>? qualifiedValue})
       : _extension_ = extension_,
@@ -4224,13 +4226,13 @@ class _$ObservationDefinitionComponentImpl
 
   /// [permittedDataTypeElement] ("_permittedDataType") Extensions for
   ///  permittedDataType
-  final List<Element>? _permittedDataTypeElement;
+  final List<PrimitiveElement>? _permittedDataTypeElement;
 
   /// [permittedDataTypeElement] ("_permittedDataType") Extensions for
   ///  permittedDataType
   @override
   @JsonKey(name: '_permittedDataType')
-  List<Element>? get permittedDataTypeElement {
+  List<PrimitiveElement>? get permittedDataTypeElement {
     final value = _permittedDataTypeElement;
     if (value == null) return null;
     if (_permittedDataTypeElement is EqualUnmodifiableListView)
@@ -4335,7 +4337,7 @@ abstract class _ObservationDefinitionComponent
           required final CodeableConcept code,
           final List<FhirCode>? permittedDataType,
           @JsonKey(name: '_permittedDataType')
-          final List<Element>? permittedDataTypeElement,
+          final List<PrimitiveElement>? permittedDataTypeElement,
           final List<Coding>? permittedUnit,
           final List<ObservationDefinitionQualifiedValue>? qualifiedValue}) =
       _$ObservationDefinitionComponentImpl;
@@ -4388,7 +4390,7 @@ abstract class _ObservationDefinitionComponent
   /// [permittedDataTypeElement] ("_permittedDataType") Extensions for
   ///  permittedDataType
   @JsonKey(name: '_permittedDataType')
-  List<Element>? get permittedDataTypeElement;
+  List<PrimitiveElement>? get permittedDataTypeElement;
   @override
 
   /// [permittedUnit] Units allowed for the valueQuantity element in the instance

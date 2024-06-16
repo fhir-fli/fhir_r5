@@ -209,7 +209,8 @@ mixin _$Contract {
 
   /// [aliasElement] ("_alias") Extensions for alias
   @JsonKey(name: '_alias')
-  List<Element>? get aliasElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get aliasElement =>
+      throw _privateConstructorUsedError;
 
   /// [author] The individual or organization that authored the Contract
   ///  definition, derivative, or instance in any legal state.
@@ -349,7 +350,7 @@ abstract class $ContractCopyWith<$Res> {
       String? subtitle,
       @JsonKey(name: '_subtitle') PrimitiveElement? subtitleElement,
       List<String>? alias,
-      @JsonKey(name: '_alias') List<Element>? aliasElement,
+      @JsonKey(name: '_alias') List<PrimitiveElement>? aliasElement,
       Reference? author,
       CodeableConcept? scope,
       CodeableConcept? topicCodeableConcept,
@@ -609,7 +610,7 @@ class _$ContractCopyWithImpl<$Res, $Val extends Contract>
       aliasElement: freezed == aliasElement
           ? _value.aliasElement
           : aliasElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       author: freezed == author
           ? _value.author
           : author // ignore: cast_nullable_to_non_nullable
@@ -909,7 +910,7 @@ abstract class _$$ContractImplCopyWith<$Res>
       String? subtitle,
       @JsonKey(name: '_subtitle') PrimitiveElement? subtitleElement,
       List<String>? alias,
-      @JsonKey(name: '_alias') List<Element>? aliasElement,
+      @JsonKey(name: '_alias') List<PrimitiveElement>? aliasElement,
       Reference? author,
       CodeableConcept? scope,
       CodeableConcept? topicCodeableConcept,
@@ -1182,7 +1183,7 @@ class __$$ContractImplCopyWithImpl<$Res>
       aliasElement: freezed == aliasElement
           ? _value._aliasElement
           : aliasElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       author: freezed == author
           ? _value.author
           : author // ignore: cast_nullable_to_non_nullable
@@ -1294,7 +1295,7 @@ class _$ContractImpl extends _Contract {
       this.subtitle,
       @JsonKey(name: '_subtitle') this.subtitleElement,
       final List<String>? alias,
-      @JsonKey(name: '_alias') final List<Element>? aliasElement,
+      @JsonKey(name: '_alias') final List<PrimitiveElement>? aliasElement,
       this.author,
       this.scope,
       this.topicCodeableConcept,
@@ -1670,12 +1671,12 @@ class _$ContractImpl extends _Contract {
   }
 
   /// [aliasElement] ("_alias") Extensions for alias
-  final List<Element>? _aliasElement;
+  final List<PrimitiveElement>? _aliasElement;
 
   /// [aliasElement] ("_alias") Extensions for alias
   @override
   @JsonKey(name: '_alias')
-  List<Element>? get aliasElement {
+  List<PrimitiveElement>? get aliasElement {
     final value = _aliasElement;
     if (value == null) return null;
     if (_aliasElement is EqualUnmodifiableListView) return _aliasElement;
@@ -2092,7 +2093,7 @@ abstract class _Contract extends Contract {
       final String? subtitle,
       @JsonKey(name: '_subtitle') final PrimitiveElement? subtitleElement,
       final List<String>? alias,
-      @JsonKey(name: '_alias') final List<Element>? aliasElement,
+      @JsonKey(name: '_alias') final List<PrimitiveElement>? aliasElement,
       final Reference? author,
       final CodeableConcept? scope,
       final CodeableConcept? topicCodeableConcept,
@@ -2340,7 +2341,7 @@ abstract class _Contract extends Contract {
 
   /// [aliasElement] ("_alias") Extensions for alias
   @JsonKey(name: '_alias')
-  List<Element>? get aliasElement;
+  List<PrimitiveElement>? get aliasElement;
   @override
 
   /// [author] The individual or organization that authored the Contract
@@ -4017,7 +4018,8 @@ mixin _$ContractSecurityLabel {
 
   /// [numberElement] ("_number") Extensions for number
   @JsonKey(name: '_number')
-  List<Element>? get numberElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get numberElement =>
+      throw _privateConstructorUsedError;
 
   /// [classification] Security label privacy tag that specifies the level of
   ///  confidentiality protection required for this term and/or term elements.
@@ -4048,7 +4050,7 @@ abstract class $ContractSecurityLabelCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<FhirUnsignedInt>? number,
-      @JsonKey(name: '_number') List<Element>? numberElement,
+      @JsonKey(name: '_number') List<PrimitiveElement>? numberElement,
       Coding classification,
       List<Coding>? category,
       List<Coding>? control});
@@ -4099,7 +4101,7 @@ class _$ContractSecurityLabelCopyWithImpl<$Res,
       numberElement: freezed == numberElement
           ? _value.numberElement
           : numberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       classification: null == classification
           ? _value.classification
           : classification // ignore: cast_nullable_to_non_nullable
@@ -4138,7 +4140,7 @@ abstract class _$$ContractSecurityLabelImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<FhirUnsignedInt>? number,
-      @JsonKey(name: '_number') List<Element>? numberElement,
+      @JsonKey(name: '_number') List<PrimitiveElement>? numberElement,
       Coding classification,
       List<Coding>? category,
       List<Coding>? control});
@@ -4188,7 +4190,7 @@ class __$$ContractSecurityLabelImplCopyWithImpl<$Res>
       numberElement: freezed == numberElement
           ? _value._numberElement
           : numberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       classification: null == classification
           ? _value.classification
           : classification // ignore: cast_nullable_to_non_nullable
@@ -4213,7 +4215,7 @@ class _$ContractSecurityLabelImpl extends _ContractSecurityLabel {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final List<FhirUnsignedInt>? number,
-      @JsonKey(name: '_number') final List<Element>? numberElement,
+      @JsonKey(name: '_number') final List<PrimitiveElement>? numberElement,
       required this.classification,
       final List<Coding>? category,
       final List<Coding>? control})
@@ -4309,12 +4311,12 @@ class _$ContractSecurityLabelImpl extends _ContractSecurityLabel {
   }
 
   /// [numberElement] ("_number") Extensions for number
-  final List<Element>? _numberElement;
+  final List<PrimitiveElement>? _numberElement;
 
   /// [numberElement] ("_number") Extensions for number
   @override
   @JsonKey(name: '_number')
-  List<Element>? get numberElement {
+  List<PrimitiveElement>? get numberElement {
     final value = _numberElement;
     if (value == null) return null;
     if (_numberElement is EqualUnmodifiableListView) return _numberElement;
@@ -4415,7 +4417,7 @@ abstract class _ContractSecurityLabel extends ContractSecurityLabel {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final List<FhirUnsignedInt>? number,
-      @JsonKey(name: '_number') final List<Element>? numberElement,
+      @JsonKey(name: '_number') final List<PrimitiveElement>? numberElement,
       required final Coding classification,
       final List<Coding>? category,
       final List<Coding>? control}) = _$ContractSecurityLabelImpl;
@@ -4463,7 +4465,7 @@ abstract class _ContractSecurityLabel extends ContractSecurityLabel {
 
   /// [numberElement] ("_number") Extensions for number
   @JsonKey(name: '_number')
-  List<Element>? get numberElement;
+  List<PrimitiveElement>? get numberElement;
   @override
 
   /// [classification] Security label privacy tag that specifies the level of
@@ -4557,7 +4559,8 @@ mixin _$ContractOffer {
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
   @JsonKey(name: '_linkId')
-  List<Element>? get linkIdElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get linkIdElement =>
+      throw _privateConstructorUsedError;
 
   /// [securityLabelNumber] Security labels that protects the offer.
   List<FhirUnsignedInt>? get securityLabelNumber =>
@@ -4566,7 +4569,7 @@ mixin _$ContractOffer {
   /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
   ///  securityLabelNumber
   @JsonKey(name: '_securityLabelNumber')
-  List<Element>? get securityLabelNumberElement =>
+  List<PrimitiveElement>? get securityLabelNumberElement =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -4595,10 +4598,10 @@ abstract class $ContractOfferCopyWith<$Res> {
       String? text,
       @JsonKey(name: '_text') PrimitiveElement? textElement,
       List<String>? linkId,
-      @JsonKey(name: '_linkId') List<Element>? linkIdElement,
+      @JsonKey(name: '_linkId') List<PrimitiveElement>? linkIdElement,
       List<FhirUnsignedInt>? securityLabelNumber,
       @JsonKey(name: '_securityLabelNumber')
-      List<Element>? securityLabelNumberElement});
+      List<PrimitiveElement>? securityLabelNumberElement});
 
   $ReferenceCopyWith<$Res>? get topic;
   $CodeableConceptCopyWith<$Res>? get type;
@@ -4691,7 +4694,7 @@ class _$ContractOfferCopyWithImpl<$Res, $Val extends ContractOffer>
       linkIdElement: freezed == linkIdElement
           ? _value.linkIdElement
           : linkIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       securityLabelNumber: freezed == securityLabelNumber
           ? _value.securityLabelNumber
           : securityLabelNumber // ignore: cast_nullable_to_non_nullable
@@ -4699,7 +4702,7 @@ class _$ContractOfferCopyWithImpl<$Res, $Val extends ContractOffer>
       securityLabelNumberElement: freezed == securityLabelNumberElement
           ? _value.securityLabelNumberElement
           : securityLabelNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ) as $Val);
   }
 
@@ -4762,10 +4765,10 @@ abstract class _$$ContractOfferImplCopyWith<$Res>
       String? text,
       @JsonKey(name: '_text') PrimitiveElement? textElement,
       List<String>? linkId,
-      @JsonKey(name: '_linkId') List<Element>? linkIdElement,
+      @JsonKey(name: '_linkId') List<PrimitiveElement>? linkIdElement,
       List<FhirUnsignedInt>? securityLabelNumber,
       @JsonKey(name: '_securityLabelNumber')
-      List<Element>? securityLabelNumberElement});
+      List<PrimitiveElement>? securityLabelNumberElement});
 
   @override
   $ReferenceCopyWith<$Res>? get topic;
@@ -4859,7 +4862,7 @@ class __$$ContractOfferImplCopyWithImpl<$Res>
       linkIdElement: freezed == linkIdElement
           ? _value._linkIdElement
           : linkIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       securityLabelNumber: freezed == securityLabelNumber
           ? _value._securityLabelNumber
           : securityLabelNumber // ignore: cast_nullable_to_non_nullable
@@ -4867,7 +4870,7 @@ class __$$ContractOfferImplCopyWithImpl<$Res>
       securityLabelNumberElement: freezed == securityLabelNumberElement
           ? _value._securityLabelNumberElement
           : securityLabelNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ));
   }
 }
@@ -4889,10 +4892,10 @@ class _$ContractOfferImpl extends _ContractOffer {
       this.text,
       @JsonKey(name: '_text') this.textElement,
       final List<String>? linkId,
-      @JsonKey(name: '_linkId') final List<Element>? linkIdElement,
+      @JsonKey(name: '_linkId') final List<PrimitiveElement>? linkIdElement,
       final List<FhirUnsignedInt>? securityLabelNumber,
       @JsonKey(name: '_securityLabelNumber')
-      final List<Element>? securityLabelNumberElement})
+      final List<PrimitiveElement>? securityLabelNumberElement})
       : _extension_ = extension_,
         _modifierExtension = modifierExtension,
         _identifier = identifier,
@@ -5066,12 +5069,12 @@ class _$ContractOfferImpl extends _ContractOffer {
   }
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
-  final List<Element>? _linkIdElement;
+  final List<PrimitiveElement>? _linkIdElement;
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
   @override
   @JsonKey(name: '_linkId')
-  List<Element>? get linkIdElement {
+  List<PrimitiveElement>? get linkIdElement {
     final value = _linkIdElement;
     if (value == null) return null;
     if (_linkIdElement is EqualUnmodifiableListView) return _linkIdElement;
@@ -5095,13 +5098,13 @@ class _$ContractOfferImpl extends _ContractOffer {
 
   /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
   ///  securityLabelNumber
-  final List<Element>? _securityLabelNumberElement;
+  final List<PrimitiveElement>? _securityLabelNumberElement;
 
   /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
   ///  securityLabelNumber
   @override
   @JsonKey(name: '_securityLabelNumber')
-  List<Element>? get securityLabelNumberElement {
+  List<PrimitiveElement>? get securityLabelNumberElement {
     final value = _securityLabelNumberElement;
     if (value == null) return null;
     if (_securityLabelNumberElement is EqualUnmodifiableListView)
@@ -5185,23 +5188,24 @@ class _$ContractOfferImpl extends _ContractOffer {
 
 abstract class _ContractOffer extends ContractOffer {
   const factory _ContractOffer(
-      {final String? id,
-      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-      final List<FhirExtension>? modifierExtension,
-      final List<Identifier>? identifier,
-      final List<ContractParty>? party,
-      final Reference? topic,
-      final CodeableConcept? type,
-      final CodeableConcept? decision,
-      final List<CodeableConcept>? decisionMode,
-      final List<ContractAnswer>? answer,
-      final String? text,
-      @JsonKey(name: '_text') final PrimitiveElement? textElement,
-      final List<String>? linkId,
-      @JsonKey(name: '_linkId') final List<Element>? linkIdElement,
-      final List<FhirUnsignedInt>? securityLabelNumber,
-      @JsonKey(name: '_securityLabelNumber')
-      final List<Element>? securityLabelNumberElement}) = _$ContractOfferImpl;
+          {final String? id,
+          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+          final List<FhirExtension>? modifierExtension,
+          final List<Identifier>? identifier,
+          final List<ContractParty>? party,
+          final Reference? topic,
+          final CodeableConcept? type,
+          final CodeableConcept? decision,
+          final List<CodeableConcept>? decisionMode,
+          final List<ContractAnswer>? answer,
+          final String? text,
+          @JsonKey(name: '_text') final PrimitiveElement? textElement,
+          final List<String>? linkId,
+          @JsonKey(name: '_linkId') final List<PrimitiveElement>? linkIdElement,
+          final List<FhirUnsignedInt>? securityLabelNumber,
+          @JsonKey(name: '_securityLabelNumber')
+          final List<PrimitiveElement>? securityLabelNumberElement}) =
+      _$ContractOfferImpl;
   const _ContractOffer._() : super._();
 
   factory _ContractOffer.fromJson(Map<String, dynamic> json) =
@@ -5287,7 +5291,7 @@ abstract class _ContractOffer extends ContractOffer {
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
   @JsonKey(name: '_linkId')
-  List<Element>? get linkIdElement;
+  List<PrimitiveElement>? get linkIdElement;
   @override
 
   /// [securityLabelNumber] Security labels that protects the offer.
@@ -5297,7 +5301,7 @@ abstract class _ContractOffer extends ContractOffer {
   /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
   ///  securityLabelNumber
   @JsonKey(name: '_securityLabelNumber')
-  List<Element>? get securityLabelNumberElement;
+  List<PrimitiveElement>? get securityLabelNumberElement;
   @override
   @JsonKey(ignore: true)
   _$$ContractOfferImplCopyWith<_$ContractOfferImpl> get copyWith =>
@@ -6823,7 +6827,8 @@ mixin _$ContractAsset {
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
   @JsonKey(name: '_linkId')
-  List<Element>? get linkIdElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get linkIdElement =>
+      throw _privateConstructorUsedError;
 
   /// [answer] Response to assets.
   List<ContractAnswer>? get answer => throw _privateConstructorUsedError;
@@ -6835,7 +6840,7 @@ mixin _$ContractAsset {
   /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
   ///  securityLabelNumber
   @JsonKey(name: '_securityLabelNumber')
-  List<Element>? get securityLabelNumberElement =>
+  List<PrimitiveElement>? get securityLabelNumberElement =>
       throw _privateConstructorUsedError;
 
   /// [valuedItem] Contract Valued Item List.
@@ -6872,11 +6877,11 @@ abstract class $ContractAssetCopyWith<$Res> {
       String? text,
       @JsonKey(name: '_text') PrimitiveElement? textElement,
       List<String>? linkId,
-      @JsonKey(name: '_linkId') List<Element>? linkIdElement,
+      @JsonKey(name: '_linkId') List<PrimitiveElement>? linkIdElement,
       List<ContractAnswer>? answer,
       List<FhirUnsignedInt>? securityLabelNumber,
       @JsonKey(name: '_securityLabelNumber')
-      List<Element>? securityLabelNumberElement,
+      List<PrimitiveElement>? securityLabelNumberElement,
       List<ContractValuedItem>? valuedItem});
 
   $CodeableConceptCopyWith<$Res>? get scope;
@@ -6991,7 +6996,7 @@ class _$ContractAssetCopyWithImpl<$Res, $Val extends ContractAsset>
       linkIdElement: freezed == linkIdElement
           ? _value.linkIdElement
           : linkIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       answer: freezed == answer
           ? _value.answer
           : answer // ignore: cast_nullable_to_non_nullable
@@ -7003,7 +7008,7 @@ class _$ContractAssetCopyWithImpl<$Res, $Val extends ContractAsset>
       securityLabelNumberElement: freezed == securityLabelNumberElement
           ? _value.securityLabelNumberElement
           : securityLabelNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       valuedItem: freezed == valuedItem
           ? _value.valuedItem
           : valuedItem // ignore: cast_nullable_to_non_nullable
@@ -7062,11 +7067,11 @@ abstract class _$$ContractAssetImplCopyWith<$Res>
       String? text,
       @JsonKey(name: '_text') PrimitiveElement? textElement,
       List<String>? linkId,
-      @JsonKey(name: '_linkId') List<Element>? linkIdElement,
+      @JsonKey(name: '_linkId') List<PrimitiveElement>? linkIdElement,
       List<ContractAnswer>? answer,
       List<FhirUnsignedInt>? securityLabelNumber,
       @JsonKey(name: '_securityLabelNumber')
-      List<Element>? securityLabelNumberElement,
+      List<PrimitiveElement>? securityLabelNumberElement,
       List<ContractValuedItem>? valuedItem});
 
   @override
@@ -7181,7 +7186,7 @@ class __$$ContractAssetImplCopyWithImpl<$Res>
       linkIdElement: freezed == linkIdElement
           ? _value._linkIdElement
           : linkIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       answer: freezed == answer
           ? _value._answer
           : answer // ignore: cast_nullable_to_non_nullable
@@ -7193,7 +7198,7 @@ class __$$ContractAssetImplCopyWithImpl<$Res>
       securityLabelNumberElement: freezed == securityLabelNumberElement
           ? _value._securityLabelNumberElement
           : securityLabelNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       valuedItem: freezed == valuedItem
           ? _value._valuedItem
           : valuedItem // ignore: cast_nullable_to_non_nullable
@@ -7223,11 +7228,11 @@ class _$ContractAssetImpl extends _ContractAsset {
       this.text,
       @JsonKey(name: '_text') this.textElement,
       final List<String>? linkId,
-      @JsonKey(name: '_linkId') final List<Element>? linkIdElement,
+      @JsonKey(name: '_linkId') final List<PrimitiveElement>? linkIdElement,
       final List<ContractAnswer>? answer,
       final List<FhirUnsignedInt>? securityLabelNumber,
       @JsonKey(name: '_securityLabelNumber')
-      final List<Element>? securityLabelNumberElement,
+      final List<PrimitiveElement>? securityLabelNumberElement,
       final List<ContractValuedItem>? valuedItem})
       : _extension_ = extension_,
         _modifierExtension = modifierExtension,
@@ -7452,12 +7457,12 @@ class _$ContractAssetImpl extends _ContractAsset {
   }
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
-  final List<Element>? _linkIdElement;
+  final List<PrimitiveElement>? _linkIdElement;
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
   @override
   @JsonKey(name: '_linkId')
-  List<Element>? get linkIdElement {
+  List<PrimitiveElement>? get linkIdElement {
     final value = _linkIdElement;
     if (value == null) return null;
     if (_linkIdElement is EqualUnmodifiableListView) return _linkIdElement;
@@ -7494,13 +7499,13 @@ class _$ContractAssetImpl extends _ContractAsset {
 
   /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
   ///  securityLabelNumber
-  final List<Element>? _securityLabelNumberElement;
+  final List<PrimitiveElement>? _securityLabelNumberElement;
 
   /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
   ///  securityLabelNumber
   @override
   @JsonKey(name: '_securityLabelNumber')
-  List<Element>? get securityLabelNumberElement {
+  List<PrimitiveElement>? get securityLabelNumberElement {
     final value = _securityLabelNumberElement;
     if (value == null) return null;
     if (_securityLabelNumberElement is EqualUnmodifiableListView)
@@ -7631,11 +7636,11 @@ abstract class _ContractAsset extends ContractAsset {
       final String? text,
       @JsonKey(name: '_text') final PrimitiveElement? textElement,
       final List<String>? linkId,
-      @JsonKey(name: '_linkId') final List<Element>? linkIdElement,
+      @JsonKey(name: '_linkId') final List<PrimitiveElement>? linkIdElement,
       final List<ContractAnswer>? answer,
       final List<FhirUnsignedInt>? securityLabelNumber,
       @JsonKey(name: '_securityLabelNumber')
-      final List<Element>? securityLabelNumberElement,
+      final List<PrimitiveElement>? securityLabelNumberElement,
       final List<ContractValuedItem>? valuedItem}) = _$ContractAssetImpl;
   const _ContractAsset._() : super._();
 
@@ -7740,7 +7745,7 @@ abstract class _ContractAsset extends ContractAsset {
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
   @JsonKey(name: '_linkId')
-  List<Element>? get linkIdElement;
+  List<PrimitiveElement>? get linkIdElement;
   @override
 
   /// [answer] Response to assets.
@@ -7754,7 +7759,7 @@ abstract class _ContractAsset extends ContractAsset {
   /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
   ///  securityLabelNumber
   @JsonKey(name: '_securityLabelNumber')
-  List<Element>? get securityLabelNumberElement;
+  List<PrimitiveElement>? get securityLabelNumberElement;
   @override
 
   /// [valuedItem] Contract Valued Item List.
@@ -8329,7 +8334,8 @@ mixin _$ContractValuedItem {
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
   @JsonKey(name: '_linkId')
-  List<Element>? get linkIdElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get linkIdElement =>
+      throw _privateConstructorUsedError;
 
   /// [securityLabelNumber] A set of security labels that define which terms are
   ///  controlled by this condition.
@@ -8339,7 +8345,7 @@ mixin _$ContractValuedItem {
   /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
   ///  securityLabelNumber
   @JsonKey(name: '_securityLabelNumber')
-  List<Element>? get securityLabelNumberElement =>
+  List<PrimitiveElement>? get securityLabelNumberElement =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -8377,10 +8383,10 @@ abstract class $ContractValuedItemCopyWith<$Res> {
       Reference? responsible,
       Reference? recipient,
       List<String>? linkId,
-      @JsonKey(name: '_linkId') List<Element>? linkIdElement,
+      @JsonKey(name: '_linkId') List<PrimitiveElement>? linkIdElement,
       List<FhirUnsignedInt>? securityLabelNumber,
       @JsonKey(name: '_securityLabelNumber')
-      List<Element>? securityLabelNumberElement});
+      List<PrimitiveElement>? securityLabelNumberElement});
 
   $CodeableConceptCopyWith<$Res>? get entityCodeableConcept;
   $ReferenceCopyWith<$Res>? get entityReference;
@@ -8523,7 +8529,7 @@ class _$ContractValuedItemCopyWithImpl<$Res, $Val extends ContractValuedItem>
       linkIdElement: freezed == linkIdElement
           ? _value.linkIdElement
           : linkIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       securityLabelNumber: freezed == securityLabelNumber
           ? _value.securityLabelNumber
           : securityLabelNumber // ignore: cast_nullable_to_non_nullable
@@ -8531,7 +8537,7 @@ class _$ContractValuedItemCopyWithImpl<$Res, $Val extends ContractValuedItem>
       securityLabelNumberElement: freezed == securityLabelNumberElement
           ? _value.securityLabelNumberElement
           : securityLabelNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ) as $Val);
   }
 
@@ -8664,10 +8670,10 @@ abstract class _$$ContractValuedItemImplCopyWith<$Res>
       Reference? responsible,
       Reference? recipient,
       List<String>? linkId,
-      @JsonKey(name: '_linkId') List<Element>? linkIdElement,
+      @JsonKey(name: '_linkId') List<PrimitiveElement>? linkIdElement,
       List<FhirUnsignedInt>? securityLabelNumber,
       @JsonKey(name: '_securityLabelNumber')
-      List<Element>? securityLabelNumberElement});
+      List<PrimitiveElement>? securityLabelNumberElement});
 
   @override
   $CodeableConceptCopyWith<$Res>? get entityCodeableConcept;
@@ -8816,7 +8822,7 @@ class __$$ContractValuedItemImplCopyWithImpl<$Res>
       linkIdElement: freezed == linkIdElement
           ? _value._linkIdElement
           : linkIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       securityLabelNumber: freezed == securityLabelNumber
           ? _value._securityLabelNumber
           : securityLabelNumber // ignore: cast_nullable_to_non_nullable
@@ -8824,7 +8830,7 @@ class __$$ContractValuedItemImplCopyWithImpl<$Res>
       securityLabelNumberElement: freezed == securityLabelNumberElement
           ? _value._securityLabelNumberElement
           : securityLabelNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ));
   }
 }
@@ -8855,10 +8861,10 @@ class _$ContractValuedItemImpl extends _ContractValuedItem {
       this.responsible,
       this.recipient,
       final List<String>? linkId,
-      @JsonKey(name: '_linkId') final List<Element>? linkIdElement,
+      @JsonKey(name: '_linkId') final List<PrimitiveElement>? linkIdElement,
       final List<FhirUnsignedInt>? securityLabelNumber,
       @JsonKey(name: '_securityLabelNumber')
-      final List<Element>? securityLabelNumberElement})
+      final List<PrimitiveElement>? securityLabelNumberElement})
       : _extension_ = extension_,
         _modifierExtension = modifierExtension,
         _linkId = linkId,
@@ -9042,12 +9048,12 @@ class _$ContractValuedItemImpl extends _ContractValuedItem {
   }
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
-  final List<Element>? _linkIdElement;
+  final List<PrimitiveElement>? _linkIdElement;
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
   @override
   @JsonKey(name: '_linkId')
-  List<Element>? get linkIdElement {
+  List<PrimitiveElement>? get linkIdElement {
     final value = _linkIdElement;
     if (value == null) return null;
     if (_linkIdElement is EqualUnmodifiableListView) return _linkIdElement;
@@ -9073,13 +9079,13 @@ class _$ContractValuedItemImpl extends _ContractValuedItem {
 
   /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
   ///  securityLabelNumber
-  final List<Element>? _securityLabelNumberElement;
+  final List<PrimitiveElement>? _securityLabelNumberElement;
 
   /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
   ///  securityLabelNumber
   @override
   @JsonKey(name: '_securityLabelNumber')
-  List<Element>? get securityLabelNumberElement {
+  List<PrimitiveElement>? get securityLabelNumberElement {
     final value = _securityLabelNumberElement;
     if (value == null) return null;
     if (_securityLabelNumberElement is EqualUnmodifiableListView)
@@ -9216,10 +9222,10 @@ abstract class _ContractValuedItem extends ContractValuedItem {
       final Reference? responsible,
       final Reference? recipient,
       final List<String>? linkId,
-      @JsonKey(name: '_linkId') final List<Element>? linkIdElement,
+      @JsonKey(name: '_linkId') final List<PrimitiveElement>? linkIdElement,
       final List<FhirUnsignedInt>? securityLabelNumber,
       @JsonKey(name: '_securityLabelNumber')
-      final List<Element>?
+      final List<PrimitiveElement>?
           securityLabelNumberElement}) = _$ContractValuedItemImpl;
   const _ContractValuedItem._() : super._();
 
@@ -9356,7 +9362,7 @@ abstract class _ContractValuedItem extends ContractValuedItem {
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
   @JsonKey(name: '_linkId')
-  List<Element>? get linkIdElement;
+  List<PrimitiveElement>? get linkIdElement;
   @override
 
   /// [securityLabelNumber] A set of security labels that define which terms are
@@ -9367,7 +9373,7 @@ abstract class _ContractValuedItem extends ContractValuedItem {
   /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
   ///  securityLabelNumber
   @JsonKey(name: '_securityLabelNumber')
-  List<Element>? get securityLabelNumberElement;
+  List<PrimitiveElement>? get securityLabelNumberElement;
   @override
   @JsonKey(ignore: true)
   _$$ContractValuedItemImplCopyWith<_$ContractValuedItemImpl> get copyWith =>
@@ -9433,7 +9439,8 @@ mixin _$ContractAction {
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
   @JsonKey(name: '_linkId')
-  List<Element>? get linkIdElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get linkIdElement =>
+      throw _privateConstructorUsedError;
 
   /// [status] Current state of the term action.
   CodeableConcept get status => throw _privateConstructorUsedError;
@@ -9449,7 +9456,8 @@ mixin _$ContractAction {
 
   /// [contextLinkIdElement] ("_contextLinkId") Extensions for contextLinkId
   @JsonKey(name: '_contextLinkId')
-  List<Element>? get contextLinkIdElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get contextLinkIdElement =>
+      throw _privateConstructorUsedError;
 
   /// [occurrenceDateTime] When action happens.
   FhirDateTime? get occurrenceDateTime => throw _privateConstructorUsedError;
@@ -9477,7 +9485,7 @@ mixin _$ContractAction {
 
   /// [requesterLinkIdElement] ("_requesterLinkId") Extensions for requesterLinkId
   @JsonKey(name: '_requesterLinkId')
-  List<Element>? get requesterLinkIdElement =>
+  List<PrimitiveElement>? get requesterLinkIdElement =>
       throw _privateConstructorUsedError;
 
   /// [performerType] The type of individual that is desired or required to
@@ -9500,7 +9508,7 @@ mixin _$ContractAction {
 
   /// [performerLinkIdElement] ("_performerLinkId") Extensions for performerLinkId
   @JsonKey(name: '_performerLinkId')
-  List<Element>? get performerLinkIdElement =>
+  List<PrimitiveElement>? get performerLinkIdElement =>
       throw _privateConstructorUsedError;
 
   /// [reason] Rationale for the action to be performed or not performed.
@@ -9516,7 +9524,8 @@ mixin _$ContractAction {
 
   /// [reasonLinkIdElement] ("_reasonLinkId") Extensions for reasonLinkId
   @JsonKey(name: '_reasonLinkId')
-  List<Element>? get reasonLinkIdElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get reasonLinkIdElement =>
+      throw _privateConstructorUsedError;
 
   /// [note] Comments made about the term action made by the requester,
   ///  performer, subject or other participants.
@@ -9529,7 +9538,7 @@ mixin _$ContractAction {
   /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
   ///  securityLabelNumber
   @JsonKey(name: '_securityLabelNumber')
-  List<Element>? get securityLabelNumberElement =>
+  List<PrimitiveElement>? get securityLabelNumberElement =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -9554,11 +9563,12 @@ abstract class $ContractActionCopyWith<$Res> {
       List<ContractSubject>? subject,
       CodeableConcept intent,
       List<String>? linkId,
-      @JsonKey(name: '_linkId') List<Element>? linkIdElement,
+      @JsonKey(name: '_linkId') List<PrimitiveElement>? linkIdElement,
       CodeableConcept status,
       Reference? context,
       List<String>? contextLinkId,
-      @JsonKey(name: '_contextLinkId') List<Element>? contextLinkIdElement,
+      @JsonKey(name: '_contextLinkId')
+      List<PrimitiveElement>? contextLinkIdElement,
       FhirDateTime? occurrenceDateTime,
       @JsonKey(name: '_occurrenceDateTime')
       PrimitiveElement? occurrenceDateTimeElement,
@@ -9566,19 +9576,22 @@ abstract class $ContractActionCopyWith<$Res> {
       Timing? occurrenceTiming,
       List<Reference>? requester,
       List<String>? requesterLinkId,
-      @JsonKey(name: '_requesterLinkId') List<Element>? requesterLinkIdElement,
+      @JsonKey(name: '_requesterLinkId')
+      List<PrimitiveElement>? requesterLinkIdElement,
       List<CodeableConcept>? performerType,
       CodeableConcept? performerRole,
       Reference? performer,
       List<String>? performerLinkId,
-      @JsonKey(name: '_performerLinkId') List<Element>? performerLinkIdElement,
+      @JsonKey(name: '_performerLinkId')
+      List<PrimitiveElement>? performerLinkIdElement,
       List<CodeableReference>? reason,
       List<String>? reasonLinkId,
-      @JsonKey(name: '_reasonLinkId') List<Element>? reasonLinkIdElement,
+      @JsonKey(name: '_reasonLinkId')
+      List<PrimitiveElement>? reasonLinkIdElement,
       List<Annotation>? note,
       List<FhirUnsignedInt>? securityLabelNumber,
       @JsonKey(name: '_securityLabelNumber')
-      List<Element>? securityLabelNumberElement});
+      List<PrimitiveElement>? securityLabelNumberElement});
 
   $CodeableConceptCopyWith<$Res> get type;
   $CodeableConceptCopyWith<$Res> get intent;
@@ -9676,7 +9689,7 @@ class _$ContractActionCopyWithImpl<$Res, $Val extends ContractAction>
       linkIdElement: freezed == linkIdElement
           ? _value.linkIdElement
           : linkIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -9692,7 +9705,7 @@ class _$ContractActionCopyWithImpl<$Res, $Val extends ContractAction>
       contextLinkIdElement: freezed == contextLinkIdElement
           ? _value.contextLinkIdElement
           : contextLinkIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       occurrenceDateTime: freezed == occurrenceDateTime
           ? _value.occurrenceDateTime
           : occurrenceDateTime // ignore: cast_nullable_to_non_nullable
@@ -9720,7 +9733,7 @@ class _$ContractActionCopyWithImpl<$Res, $Val extends ContractAction>
       requesterLinkIdElement: freezed == requesterLinkIdElement
           ? _value.requesterLinkIdElement
           : requesterLinkIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       performerType: freezed == performerType
           ? _value.performerType
           : performerType // ignore: cast_nullable_to_non_nullable
@@ -9740,7 +9753,7 @@ class _$ContractActionCopyWithImpl<$Res, $Val extends ContractAction>
       performerLinkIdElement: freezed == performerLinkIdElement
           ? _value.performerLinkIdElement
           : performerLinkIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reason: freezed == reason
           ? _value.reason
           : reason // ignore: cast_nullable_to_non_nullable
@@ -9752,7 +9765,7 @@ class _$ContractActionCopyWithImpl<$Res, $Val extends ContractAction>
       reasonLinkIdElement: freezed == reasonLinkIdElement
           ? _value.reasonLinkIdElement
           : reasonLinkIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       note: freezed == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
@@ -9764,7 +9777,7 @@ class _$ContractActionCopyWithImpl<$Res, $Val extends ContractAction>
       securityLabelNumberElement: freezed == securityLabelNumberElement
           ? _value.securityLabelNumberElement
           : securityLabelNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ) as $Val);
   }
 
@@ -9871,11 +9884,12 @@ abstract class _$$ContractActionImplCopyWith<$Res>
       List<ContractSubject>? subject,
       CodeableConcept intent,
       List<String>? linkId,
-      @JsonKey(name: '_linkId') List<Element>? linkIdElement,
+      @JsonKey(name: '_linkId') List<PrimitiveElement>? linkIdElement,
       CodeableConcept status,
       Reference? context,
       List<String>? contextLinkId,
-      @JsonKey(name: '_contextLinkId') List<Element>? contextLinkIdElement,
+      @JsonKey(name: '_contextLinkId')
+      List<PrimitiveElement>? contextLinkIdElement,
       FhirDateTime? occurrenceDateTime,
       @JsonKey(name: '_occurrenceDateTime')
       PrimitiveElement? occurrenceDateTimeElement,
@@ -9883,19 +9897,22 @@ abstract class _$$ContractActionImplCopyWith<$Res>
       Timing? occurrenceTiming,
       List<Reference>? requester,
       List<String>? requesterLinkId,
-      @JsonKey(name: '_requesterLinkId') List<Element>? requesterLinkIdElement,
+      @JsonKey(name: '_requesterLinkId')
+      List<PrimitiveElement>? requesterLinkIdElement,
       List<CodeableConcept>? performerType,
       CodeableConcept? performerRole,
       Reference? performer,
       List<String>? performerLinkId,
-      @JsonKey(name: '_performerLinkId') List<Element>? performerLinkIdElement,
+      @JsonKey(name: '_performerLinkId')
+      List<PrimitiveElement>? performerLinkIdElement,
       List<CodeableReference>? reason,
       List<String>? reasonLinkId,
-      @JsonKey(name: '_reasonLinkId') List<Element>? reasonLinkIdElement,
+      @JsonKey(name: '_reasonLinkId')
+      List<PrimitiveElement>? reasonLinkIdElement,
       List<Annotation>? note,
       List<FhirUnsignedInt>? securityLabelNumber,
       @JsonKey(name: '_securityLabelNumber')
-      List<Element>? securityLabelNumberElement});
+      List<PrimitiveElement>? securityLabelNumberElement});
 
   @override
   $CodeableConceptCopyWith<$Res> get type;
@@ -9999,7 +10016,7 @@ class __$$ContractActionImplCopyWithImpl<$Res>
       linkIdElement: freezed == linkIdElement
           ? _value._linkIdElement
           : linkIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -10015,7 +10032,7 @@ class __$$ContractActionImplCopyWithImpl<$Res>
       contextLinkIdElement: freezed == contextLinkIdElement
           ? _value._contextLinkIdElement
           : contextLinkIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       occurrenceDateTime: freezed == occurrenceDateTime
           ? _value.occurrenceDateTime
           : occurrenceDateTime // ignore: cast_nullable_to_non_nullable
@@ -10043,7 +10060,7 @@ class __$$ContractActionImplCopyWithImpl<$Res>
       requesterLinkIdElement: freezed == requesterLinkIdElement
           ? _value._requesterLinkIdElement
           : requesterLinkIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       performerType: freezed == performerType
           ? _value._performerType
           : performerType // ignore: cast_nullable_to_non_nullable
@@ -10063,7 +10080,7 @@ class __$$ContractActionImplCopyWithImpl<$Res>
       performerLinkIdElement: freezed == performerLinkIdElement
           ? _value._performerLinkIdElement
           : performerLinkIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       reason: freezed == reason
           ? _value._reason
           : reason // ignore: cast_nullable_to_non_nullable
@@ -10075,7 +10092,7 @@ class __$$ContractActionImplCopyWithImpl<$Res>
       reasonLinkIdElement: freezed == reasonLinkIdElement
           ? _value._reasonLinkIdElement
           : reasonLinkIdElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       note: freezed == note
           ? _value._note
           : note // ignore: cast_nullable_to_non_nullable
@@ -10087,7 +10104,7 @@ class __$$ContractActionImplCopyWithImpl<$Res>
       securityLabelNumberElement: freezed == securityLabelNumberElement
           ? _value._securityLabelNumberElement
           : securityLabelNumberElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ));
   }
 }
@@ -10105,12 +10122,12 @@ class _$ContractActionImpl extends _ContractAction {
       final List<ContractSubject>? subject,
       required this.intent,
       final List<String>? linkId,
-      @JsonKey(name: '_linkId') final List<Element>? linkIdElement,
+      @JsonKey(name: '_linkId') final List<PrimitiveElement>? linkIdElement,
       required this.status,
       this.context,
       final List<String>? contextLinkId,
       @JsonKey(name: '_contextLinkId')
-      final List<Element>? contextLinkIdElement,
+      final List<PrimitiveElement>? contextLinkIdElement,
       this.occurrenceDateTime,
       @JsonKey(name: '_occurrenceDateTime') this.occurrenceDateTimeElement,
       this.occurrencePeriod,
@@ -10118,20 +10135,21 @@ class _$ContractActionImpl extends _ContractAction {
       final List<Reference>? requester,
       final List<String>? requesterLinkId,
       @JsonKey(name: '_requesterLinkId')
-      final List<Element>? requesterLinkIdElement,
+      final List<PrimitiveElement>? requesterLinkIdElement,
       final List<CodeableConcept>? performerType,
       this.performerRole,
       this.performer,
       final List<String>? performerLinkId,
       @JsonKey(name: '_performerLinkId')
-      final List<Element>? performerLinkIdElement,
+      final List<PrimitiveElement>? performerLinkIdElement,
       final List<CodeableReference>? reason,
       final List<String>? reasonLinkId,
-      @JsonKey(name: '_reasonLinkId') final List<Element>? reasonLinkIdElement,
+      @JsonKey(name: '_reasonLinkId')
+      final List<PrimitiveElement>? reasonLinkIdElement,
       final List<Annotation>? note,
       final List<FhirUnsignedInt>? securityLabelNumber,
       @JsonKey(name: '_securityLabelNumber')
-      final List<Element>? securityLabelNumberElement})
+      final List<PrimitiveElement>? securityLabelNumberElement})
       : _extension_ = extension_,
         _modifierExtension = modifierExtension,
         _subject = subject,
@@ -10269,12 +10287,12 @@ class _$ContractActionImpl extends _ContractAction {
   }
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
-  final List<Element>? _linkIdElement;
+  final List<PrimitiveElement>? _linkIdElement;
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
   @override
   @JsonKey(name: '_linkId')
-  List<Element>? get linkIdElement {
+  List<PrimitiveElement>? get linkIdElement {
     final value = _linkIdElement;
     if (value == null) return null;
     if (_linkIdElement is EqualUnmodifiableListView) return _linkIdElement;
@@ -10309,12 +10327,12 @@ class _$ContractActionImpl extends _ContractAction {
   }
 
   /// [contextLinkIdElement] ("_contextLinkId") Extensions for contextLinkId
-  final List<Element>? _contextLinkIdElement;
+  final List<PrimitiveElement>? _contextLinkIdElement;
 
   /// [contextLinkIdElement] ("_contextLinkId") Extensions for contextLinkId
   @override
   @JsonKey(name: '_contextLinkId')
-  List<Element>? get contextLinkIdElement {
+  List<PrimitiveElement>? get contextLinkIdElement {
     final value = _contextLinkIdElement;
     if (value == null) return null;
     if (_contextLinkIdElement is EqualUnmodifiableListView)
@@ -10374,12 +10392,12 @@ class _$ContractActionImpl extends _ContractAction {
   }
 
   /// [requesterLinkIdElement] ("_requesterLinkId") Extensions for requesterLinkId
-  final List<Element>? _requesterLinkIdElement;
+  final List<PrimitiveElement>? _requesterLinkIdElement;
 
   /// [requesterLinkIdElement] ("_requesterLinkId") Extensions for requesterLinkId
   @override
   @JsonKey(name: '_requesterLinkId')
-  List<Element>? get requesterLinkIdElement {
+  List<PrimitiveElement>? get requesterLinkIdElement {
     final value = _requesterLinkIdElement;
     if (value == null) return null;
     if (_requesterLinkIdElement is EqualUnmodifiableListView)
@@ -10431,12 +10449,12 @@ class _$ContractActionImpl extends _ContractAction {
   }
 
   /// [performerLinkIdElement] ("_performerLinkId") Extensions for performerLinkId
-  final List<Element>? _performerLinkIdElement;
+  final List<PrimitiveElement>? _performerLinkIdElement;
 
   /// [performerLinkIdElement] ("_performerLinkId") Extensions for performerLinkId
   @override
   @JsonKey(name: '_performerLinkId')
-  List<Element>? get performerLinkIdElement {
+  List<PrimitiveElement>? get performerLinkIdElement {
     final value = _performerLinkIdElement;
     if (value == null) return null;
     if (_performerLinkIdElement is EqualUnmodifiableListView)
@@ -10482,12 +10500,12 @@ class _$ContractActionImpl extends _ContractAction {
   }
 
   /// [reasonLinkIdElement] ("_reasonLinkId") Extensions for reasonLinkId
-  final List<Element>? _reasonLinkIdElement;
+  final List<PrimitiveElement>? _reasonLinkIdElement;
 
   /// [reasonLinkIdElement] ("_reasonLinkId") Extensions for reasonLinkId
   @override
   @JsonKey(name: '_reasonLinkId')
-  List<Element>? get reasonLinkIdElement {
+  List<PrimitiveElement>? get reasonLinkIdElement {
     final value = _reasonLinkIdElement;
     if (value == null) return null;
     if (_reasonLinkIdElement is EqualUnmodifiableListView)
@@ -10527,13 +10545,13 @@ class _$ContractActionImpl extends _ContractAction {
 
   /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
   ///  securityLabelNumber
-  final List<Element>? _securityLabelNumberElement;
+  final List<PrimitiveElement>? _securityLabelNumberElement;
 
   /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
   ///  securityLabelNumber
   @override
   @JsonKey(name: '_securityLabelNumber')
-  List<Element>? get securityLabelNumberElement {
+  List<PrimitiveElement>? get securityLabelNumberElement {
     final value = _securityLabelNumberElement;
     if (value == null) return null;
     if (_securityLabelNumberElement is EqualUnmodifiableListView)
@@ -10666,44 +10684,46 @@ class _$ContractActionImpl extends _ContractAction {
 
 abstract class _ContractAction extends ContractAction {
   const factory _ContractAction(
-      {final String? id,
-      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-      final List<FhirExtension>? modifierExtension,
-      final FhirBoolean? doNotPerform,
-      @JsonKey(name: '_doNotPerform')
-      final PrimitiveElement? doNotPerformElement,
-      required final CodeableConcept type,
-      final List<ContractSubject>? subject,
-      required final CodeableConcept intent,
-      final List<String>? linkId,
-      @JsonKey(name: '_linkId') final List<Element>? linkIdElement,
-      required final CodeableConcept status,
-      final Reference? context,
-      final List<String>? contextLinkId,
-      @JsonKey(name: '_contextLinkId')
-      final List<Element>? contextLinkIdElement,
-      final FhirDateTime? occurrenceDateTime,
-      @JsonKey(name: '_occurrenceDateTime')
-      final PrimitiveElement? occurrenceDateTimeElement,
-      final Period? occurrencePeriod,
-      final Timing? occurrenceTiming,
-      final List<Reference>? requester,
-      final List<String>? requesterLinkId,
-      @JsonKey(name: '_requesterLinkId')
-      final List<Element>? requesterLinkIdElement,
-      final List<CodeableConcept>? performerType,
-      final CodeableConcept? performerRole,
-      final Reference? performer,
-      final List<String>? performerLinkId,
-      @JsonKey(name: '_performerLinkId')
-      final List<Element>? performerLinkIdElement,
-      final List<CodeableReference>? reason,
-      final List<String>? reasonLinkId,
-      @JsonKey(name: '_reasonLinkId') final List<Element>? reasonLinkIdElement,
-      final List<Annotation>? note,
-      final List<FhirUnsignedInt>? securityLabelNumber,
-      @JsonKey(name: '_securityLabelNumber')
-      final List<Element>? securityLabelNumberElement}) = _$ContractActionImpl;
+          {final String? id,
+          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+          final List<FhirExtension>? modifierExtension,
+          final FhirBoolean? doNotPerform,
+          @JsonKey(name: '_doNotPerform')
+          final PrimitiveElement? doNotPerformElement,
+          required final CodeableConcept type,
+          final List<ContractSubject>? subject,
+          required final CodeableConcept intent,
+          final List<String>? linkId,
+          @JsonKey(name: '_linkId') final List<PrimitiveElement>? linkIdElement,
+          required final CodeableConcept status,
+          final Reference? context,
+          final List<String>? contextLinkId,
+          @JsonKey(name: '_contextLinkId')
+          final List<PrimitiveElement>? contextLinkIdElement,
+          final FhirDateTime? occurrenceDateTime,
+          @JsonKey(name: '_occurrenceDateTime')
+          final PrimitiveElement? occurrenceDateTimeElement,
+          final Period? occurrencePeriod,
+          final Timing? occurrenceTiming,
+          final List<Reference>? requester,
+          final List<String>? requesterLinkId,
+          @JsonKey(name: '_requesterLinkId')
+          final List<PrimitiveElement>? requesterLinkIdElement,
+          final List<CodeableConcept>? performerType,
+          final CodeableConcept? performerRole,
+          final Reference? performer,
+          final List<String>? performerLinkId,
+          @JsonKey(name: '_performerLinkId')
+          final List<PrimitiveElement>? performerLinkIdElement,
+          final List<CodeableReference>? reason,
+          final List<String>? reasonLinkId,
+          @JsonKey(name: '_reasonLinkId')
+          final List<PrimitiveElement>? reasonLinkIdElement,
+          final List<Annotation>? note,
+          final List<FhirUnsignedInt>? securityLabelNumber,
+          @JsonKey(name: '_securityLabelNumber')
+          final List<PrimitiveElement>? securityLabelNumberElement}) =
+      _$ContractActionImpl;
   const _ContractAction._() : super._();
 
   factory _ContractAction.fromJson(Map<String, dynamic> json) =
@@ -10771,7 +10791,7 @@ abstract class _ContractAction extends ContractAction {
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
   @JsonKey(name: '_linkId')
-  List<Element>? get linkIdElement;
+  List<PrimitiveElement>? get linkIdElement;
   @override
 
   /// [status] Current state of the term action.
@@ -10791,7 +10811,7 @@ abstract class _ContractAction extends ContractAction {
 
   /// [contextLinkIdElement] ("_contextLinkId") Extensions for contextLinkId
   @JsonKey(name: '_contextLinkId')
-  List<Element>? get contextLinkIdElement;
+  List<PrimitiveElement>? get contextLinkIdElement;
   @override
 
   /// [occurrenceDateTime] When action happens.
@@ -10825,7 +10845,7 @@ abstract class _ContractAction extends ContractAction {
 
   /// [requesterLinkIdElement] ("_requesterLinkId") Extensions for requesterLinkId
   @JsonKey(name: '_requesterLinkId')
-  List<Element>? get requesterLinkIdElement;
+  List<PrimitiveElement>? get requesterLinkIdElement;
   @override
 
   /// [performerType] The type of individual that is desired or required to
@@ -10851,7 +10871,7 @@ abstract class _ContractAction extends ContractAction {
 
   /// [performerLinkIdElement] ("_performerLinkId") Extensions for performerLinkId
   @JsonKey(name: '_performerLinkId')
-  List<Element>? get performerLinkIdElement;
+  List<PrimitiveElement>? get performerLinkIdElement;
   @override
 
   /// [reason] Rationale for the action to be performed or not performed.
@@ -10869,7 +10889,7 @@ abstract class _ContractAction extends ContractAction {
 
   /// [reasonLinkIdElement] ("_reasonLinkId") Extensions for reasonLinkId
   @JsonKey(name: '_reasonLinkId')
-  List<Element>? get reasonLinkIdElement;
+  List<PrimitiveElement>? get reasonLinkIdElement;
   @override
 
   /// [note] Comments made about the term action made by the requester,
@@ -10884,7 +10904,7 @@ abstract class _ContractAction extends ContractAction {
   /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
   ///  securityLabelNumber
   @JsonKey(name: '_securityLabelNumber')
-  List<Element>? get securityLabelNumberElement;
+  List<PrimitiveElement>? get securityLabelNumberElement;
   @override
   @JsonKey(ignore: true)
   _$$ContractActionImplCopyWith<_$ContractActionImpl> get copyWith =>

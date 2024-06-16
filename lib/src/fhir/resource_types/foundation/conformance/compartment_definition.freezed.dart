@@ -1942,7 +1942,8 @@ mixin _$CompartmentDefinitionResource {
 
   /// [paramElement] ("_param") Extensions for param
   @JsonKey(name: '_param')
-  List<Element>? get paramElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get paramElement =>
+      throw _privateConstructorUsedError;
 
   /// [documentation] Additional documentation about the resource and compartment.
   String? get documentation => throw _privateConstructorUsedError;
@@ -1990,7 +1991,7 @@ abstract class $CompartmentDefinitionResourceCopyWith<$Res> {
       FhirCode? code,
       @JsonKey(name: '_code') PrimitiveElement? codeElement,
       List<String>? param,
-      @JsonKey(name: '_param') List<Element>? paramElement,
+      @JsonKey(name: '_param') List<PrimitiveElement>? paramElement,
       String? documentation,
       @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       FhirUri? startParam,
@@ -2055,7 +2056,7 @@ class _$CompartmentDefinitionResourceCopyWithImpl<$Res,
       paramElement: freezed == paramElement
           ? _value.paramElement
           : paramElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -2100,7 +2101,7 @@ abstract class _$$CompartmentDefinitionResourceImplCopyWith<$Res>
       FhirCode? code,
       @JsonKey(name: '_code') PrimitiveElement? codeElement,
       List<String>? param,
-      @JsonKey(name: '_param') List<Element>? paramElement,
+      @JsonKey(name: '_param') List<PrimitiveElement>? paramElement,
       String? documentation,
       @JsonKey(name: '_documentation') PrimitiveElement? documentationElement,
       FhirUri? startParam,
@@ -2164,7 +2165,7 @@ class __$$CompartmentDefinitionResourceImplCopyWithImpl<$Res>
       paramElement: freezed == paramElement
           ? _value._paramElement
           : paramElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       documentation: freezed == documentation
           ? _value.documentation
           : documentation // ignore: cast_nullable_to_non_nullable
@@ -2204,7 +2205,7 @@ class _$CompartmentDefinitionResourceImpl
       this.code,
       @JsonKey(name: '_code') this.codeElement,
       final List<String>? param,
-      @JsonKey(name: '_param') final List<Element>? paramElement,
+      @JsonKey(name: '_param') final List<PrimitiveElement>? paramElement,
       this.documentation,
       @JsonKey(name: '_documentation') this.documentationElement,
       this.startParam,
@@ -2313,12 +2314,12 @@ class _$CompartmentDefinitionResourceImpl
   }
 
   /// [paramElement] ("_param") Extensions for param
-  final List<Element>? _paramElement;
+  final List<PrimitiveElement>? _paramElement;
 
   /// [paramElement] ("_param") Extensions for param
   @override
   @JsonKey(name: '_param')
-  List<Element>? get paramElement {
+  List<PrimitiveElement>? get paramElement {
     final value = _paramElement;
     if (value == null) return null;
     if (_paramElement is EqualUnmodifiableListView) return _paramElement;
@@ -2434,7 +2435,7 @@ abstract class _CompartmentDefinitionResource
       final FhirCode? code,
       @JsonKey(name: '_code') final PrimitiveElement? codeElement,
       final List<String>? param,
-      @JsonKey(name: '_param') final List<Element>? paramElement,
+      @JsonKey(name: '_param') final List<PrimitiveElement>? paramElement,
       final String? documentation,
       @JsonKey(name: '_documentation')
       final PrimitiveElement? documentationElement,
@@ -2498,7 +2499,7 @@ abstract class _CompartmentDefinitionResource
 
   /// [paramElement] ("_param") Extensions for param
   @JsonKey(name: '_param')
-  List<Element>? get paramElement;
+  List<PrimitiveElement>? get paramElement;
   @override
 
   /// [documentation] Additional documentation about the resource and compartment.

@@ -476,7 +476,8 @@ class SpecimenDefinition with _$SpecimenDefinition implements DomainResource {
     List<FhirUri>? derivedFromUri,
 
     /// [derivedFromUriElement] ("_derivedFromUri") Extensions for derivedFromUri
-    @JsonKey(name: '_derivedFromUri') List<Element>? derivedFromUriElement,
+    @JsonKey(name: '_derivedFromUri')
+    List<PrimitiveElement>? derivedFromUriElement,
 
     /// [subjectCodeableConcept] A code or group definition that describes the
     ///  intended subject  from which this kind of specimen is to be collected.

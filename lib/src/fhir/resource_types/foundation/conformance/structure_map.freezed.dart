@@ -5556,7 +5556,8 @@ mixin _$StructureMapTarget {
 
   /// [listModeElement] ("_listMode") Extensions for listMode
   @JsonKey(name: '_listMode')
-  List<Element>? get listModeElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get listModeElement =>
+      throw _privateConstructorUsedError;
 
   /// [listRuleId] Internal rule reference for shared list items.
   FhirId? get listRuleId => throw _privateConstructorUsedError;
@@ -5599,7 +5600,7 @@ abstract class $StructureMapTargetCopyWith<$Res> {
       FhirId? variable,
       @JsonKey(name: '_variable') PrimitiveElement? variableElement,
       List<FhirCode>? listMode,
-      @JsonKey(name: '_listMode') List<Element>? listModeElement,
+      @JsonKey(name: '_listMode') List<PrimitiveElement>? listModeElement,
       FhirId? listRuleId,
       @JsonKey(name: '_listRuleId') PrimitiveElement? listRuleIdElement,
       FhirCode? transform,
@@ -5681,7 +5682,7 @@ class _$StructureMapTargetCopyWithImpl<$Res, $Val extends StructureMapTarget>
       listModeElement: freezed == listModeElement
           ? _value.listModeElement
           : listModeElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       listRuleId: freezed == listRuleId
           ? _value.listRuleId
           : listRuleId // ignore: cast_nullable_to_non_nullable
@@ -5725,7 +5726,7 @@ abstract class _$$StructureMapTargetImplCopyWith<$Res>
       FhirId? variable,
       @JsonKey(name: '_variable') PrimitiveElement? variableElement,
       List<FhirCode>? listMode,
-      @JsonKey(name: '_listMode') List<Element>? listModeElement,
+      @JsonKey(name: '_listMode') List<PrimitiveElement>? listModeElement,
       FhirId? listRuleId,
       @JsonKey(name: '_listRuleId') PrimitiveElement? listRuleIdElement,
       FhirCode? transform,
@@ -5805,7 +5806,7 @@ class __$$StructureMapTargetImplCopyWithImpl<$Res>
       listModeElement: freezed == listModeElement
           ? _value._listModeElement
           : listModeElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       listRuleId: freezed == listRuleId
           ? _value.listRuleId
           : listRuleId // ignore: cast_nullable_to_non_nullable
@@ -5844,7 +5845,7 @@ class _$StructureMapTargetImpl extends _StructureMapTarget {
       this.variable,
       @JsonKey(name: '_variable') this.variableElement,
       final List<FhirCode>? listMode,
-      @JsonKey(name: '_listMode') final List<Element>? listModeElement,
+      @JsonKey(name: '_listMode') final List<PrimitiveElement>? listModeElement,
       this.listRuleId,
       @JsonKey(name: '_listRuleId') this.listRuleIdElement,
       this.transform,
@@ -5966,12 +5967,12 @@ class _$StructureMapTargetImpl extends _StructureMapTarget {
   }
 
   /// [listModeElement] ("_listMode") Extensions for listMode
-  final List<Element>? _listModeElement;
+  final List<PrimitiveElement>? _listModeElement;
 
   /// [listModeElement] ("_listMode") Extensions for listMode
   @override
   @JsonKey(name: '_listMode')
-  List<Element>? get listModeElement {
+  List<PrimitiveElement>? get listModeElement {
     final value = _listModeElement;
     if (value == null) return null;
     if (_listModeElement is EqualUnmodifiableListView) return _listModeElement;
@@ -6098,7 +6099,7 @@ abstract class _StructureMapTarget extends StructureMapTarget {
       final FhirId? variable,
       @JsonKey(name: '_variable') final PrimitiveElement? variableElement,
       final List<FhirCode>? listMode,
-      @JsonKey(name: '_listMode') final List<Element>? listModeElement,
+      @JsonKey(name: '_listMode') final List<PrimitiveElement>? listModeElement,
       final FhirId? listRuleId,
       @JsonKey(name: '_listRuleId') final PrimitiveElement? listRuleIdElement,
       final FhirCode? transform,
@@ -6174,7 +6175,7 @@ abstract class _StructureMapTarget extends StructureMapTarget {
 
   /// [listModeElement] ("_listMode") Extensions for listMode
   @JsonKey(name: '_listMode')
-  List<Element>? get listModeElement;
+  List<PrimitiveElement>? get listModeElement;
   @override
 
   /// [listRuleId] Internal rule reference for shared list items.

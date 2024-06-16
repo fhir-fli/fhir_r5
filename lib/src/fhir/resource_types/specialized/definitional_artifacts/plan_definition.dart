@@ -1686,7 +1686,7 @@ class PlanDefinitionAction with _$PlanDefinitionAction implements BackboneType {
     List<FhirId>? goalId,
 
     /// [goalIdElement] ("_goalId") Extensions for goalId
-    @JsonKey(name: '_goalId') List<Element>? goalIdElement,
+    @JsonKey(name: '_goalId') List<PrimitiveElement>? goalIdElement,
 
     /// [subjectCodeableConcept] A code, group definition, or canonical reference
     ///  that describes the intended subject of the action and its children, if

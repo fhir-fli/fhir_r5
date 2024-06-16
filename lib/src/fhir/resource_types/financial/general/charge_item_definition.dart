@@ -509,7 +509,8 @@ class ChargeItemDefinition
     List<FhirUri>? derivedFromUri,
 
     /// [derivedFromUriElement] ("_derivedFromUri") Extensions for derivedFromUri
-    @JsonKey(name: '_derivedFromUri') List<Element>? derivedFromUriElement,
+    @JsonKey(name: '_derivedFromUri')
+    List<PrimitiveElement>? derivedFromUriElement,
 
     /// [partOf] A larger definition of which this particular definition is a
     ///  component or step.
@@ -571,7 +572,6 @@ class ChargeItemDefinition
     }
   }
 
-
   /// Another convenience method because more and more I'm transmitting FHIR
   /// data as a String and not a Map
   @override
@@ -595,7 +595,8 @@ class ChargeItemDefinition
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));}
+      copyWith(meta: updateFhirMetaVersion(meta));
+}
 
 /// [ChargeItemDefinitionApplicability] The ChargeItemDefinition resource
 ///  provides the properties that apply to the (billing) codes necessary to

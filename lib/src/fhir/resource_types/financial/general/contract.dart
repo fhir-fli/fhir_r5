@@ -403,7 +403,7 @@ class Contract with _$Contract implements DomainResource {
     List<String>? alias,
 
     /// [aliasElement] ("_alias") Extensions for alias
-    @JsonKey(name: '_alias') List<Element>? aliasElement,
+    @JsonKey(name: '_alias') List<PrimitiveElement>? aliasElement,
 
     /// [author] The individual or organization that authored the Contract
     ///  definition, derivative, or instance in any legal state.
@@ -989,7 +989,7 @@ class ContractSecurityLabel
     List<FhirUnsignedInt>? number,
 
     /// [numberElement] ("_number") Extensions for number
-    @JsonKey(name: '_number') List<Element>? numberElement,
+    @JsonKey(name: '_number') List<PrimitiveElement>? numberElement,
 
     /// [classification] Security label privacy tag that specifies the level of
     ///  confidentiality protection required for this term and/or term elements.
@@ -1170,7 +1170,7 @@ class ContractOffer with _$ContractOffer implements BackboneType {
     List<String>? linkId,
 
     /// [linkIdElement] ("_linkId") Extensions for linkId
-    @JsonKey(name: '_linkId') List<Element>? linkIdElement,
+    @JsonKey(name: '_linkId') List<PrimitiveElement>? linkIdElement,
 
     /// [securityLabelNumber] Security labels that protects the offer.
     List<FhirUnsignedInt>? securityLabelNumber,
@@ -1178,7 +1178,7 @@ class ContractOffer with _$ContractOffer implements BackboneType {
     /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
     ///  securityLabelNumber
     @JsonKey(name: '_securityLabelNumber')
-    List<Element>? securityLabelNumberElement,
+    List<PrimitiveElement>? securityLabelNumberElement,
   }) = _ContractOffer;
 
   @override
@@ -1753,7 +1753,7 @@ class ContractAsset with _$ContractAsset implements BackboneType {
     List<String>? linkId,
 
     /// [linkIdElement] ("_linkId") Extensions for linkId
-    @JsonKey(name: '_linkId') List<Element>? linkIdElement,
+    @JsonKey(name: '_linkId') List<PrimitiveElement>? linkIdElement,
 
     /// [answer] Response to assets.
     List<ContractAnswer>? answer,
@@ -1764,7 +1764,7 @@ class ContractAsset with _$ContractAsset implements BackboneType {
     /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
     ///  securityLabelNumber
     @JsonKey(name: '_securityLabelNumber')
-    List<Element>? securityLabelNumberElement,
+    List<PrimitiveElement>? securityLabelNumberElement,
 
     /// [valuedItem] Contract Valued Item List.
     List<ContractValuedItem>? valuedItem,
@@ -2127,7 +2127,7 @@ class ContractValuedItem with _$ContractValuedItem implements BackboneType {
     List<String>? linkId,
 
     /// [linkIdElement] ("_linkId") Extensions for linkId
-    @JsonKey(name: '_linkId') List<Element>? linkIdElement,
+    @JsonKey(name: '_linkId') List<PrimitiveElement>? linkIdElement,
 
     /// [securityLabelNumber] A set of security labels that define which terms are
     ///  controlled by this condition.
@@ -2136,7 +2136,7 @@ class ContractValuedItem with _$ContractValuedItem implements BackboneType {
     /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
     ///  securityLabelNumber
     @JsonKey(name: '_securityLabelNumber')
-    List<Element>? securityLabelNumberElement,
+    List<PrimitiveElement>? securityLabelNumberElement,
   }) = _ContractValuedItem;
 
   @override
@@ -2339,7 +2339,7 @@ class ContractAction with _$ContractAction implements BackboneType {
     List<String>? linkId,
 
     /// [linkIdElement] ("_linkId") Extensions for linkId
-    @JsonKey(name: '_linkId') List<Element>? linkIdElement,
+    @JsonKey(name: '_linkId') List<PrimitiveElement>? linkIdElement,
 
     /// [status] Current state of the term action.
     required CodeableConcept status,
@@ -2354,7 +2354,8 @@ class ContractAction with _$ContractAction implements BackboneType {
     List<String>? contextLinkId,
 
     /// [contextLinkIdElement] ("_contextLinkId") Extensions for contextLinkId
-    @JsonKey(name: '_contextLinkId') List<Element>? contextLinkIdElement,
+    @JsonKey(name: '_contextLinkId')
+    List<PrimitiveElement>? contextLinkIdElement,
 
     /// [occurrenceDateTime] When action happens.
     FhirDateTime? occurrenceDateTime,
@@ -2380,7 +2381,8 @@ class ContractAction with _$ContractAction implements BackboneType {
     List<String>? requesterLinkId,
 
     /// [requesterLinkIdElement] ("_requesterLinkId") Extensions for requesterLinkId
-    @JsonKey(name: '_requesterLinkId') List<Element>? requesterLinkIdElement,
+    @JsonKey(name: '_requesterLinkId')
+    List<PrimitiveElement>? requesterLinkIdElement,
 
     /// [performerType] The type of individual that is desired or required to
     ///  perform or not perform the action.
@@ -2400,7 +2402,8 @@ class ContractAction with _$ContractAction implements BackboneType {
     List<String>? performerLinkId,
 
     /// [performerLinkIdElement] ("_performerLinkId") Extensions for performerLinkId
-    @JsonKey(name: '_performerLinkId') List<Element>? performerLinkIdElement,
+    @JsonKey(name: '_performerLinkId')
+    List<PrimitiveElement>? performerLinkIdElement,
 
     /// [reason] Rationale for the action to be performed or not performed.
     ///  Describes why the action is permitted or prohibited. Either a coded
@@ -2414,7 +2417,7 @@ class ContractAction with _$ContractAction implements BackboneType {
     List<String>? reasonLinkId,
 
     /// [reasonLinkIdElement] ("_reasonLinkId") Extensions for reasonLinkId
-    @JsonKey(name: '_reasonLinkId') List<Element>? reasonLinkIdElement,
+    @JsonKey(name: '_reasonLinkId') List<PrimitiveElement>? reasonLinkIdElement,
 
     /// [note] Comments made about the term action made by the requester,
     ///  performer, subject or other participants.
@@ -2426,7 +2429,7 @@ class ContractAction with _$ContractAction implements BackboneType {
     /// [securityLabelNumberElement] ("_securityLabelNumber") Extensions for
     ///  securityLabelNumber
     @JsonKey(name: '_securityLabelNumber')
-    List<Element>? securityLabelNumberElement,
+    List<PrimitiveElement>? securityLabelNumberElement,
   }) = _ContractAction;
 
   @override

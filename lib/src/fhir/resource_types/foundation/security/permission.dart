@@ -178,7 +178,7 @@ class Permission with _$Permission implements DomainResource {
     List<FhirDateTime>? date,
 
     /// [dateElement] ("_date") Extensions for date
-    @JsonKey(name: '_date') List<Element>? dateElement,
+    @JsonKey(name: '_date') List<PrimitiveElement>? dateElement,
 
     /// [validity] The period in which the permission is active.
     Period? validity,

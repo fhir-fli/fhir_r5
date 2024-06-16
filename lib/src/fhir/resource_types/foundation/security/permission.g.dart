@@ -52,7 +52,7 @@ _$PermissionImpl _$$PermissionImplFromJson(Map<String, dynamic> json) =>
           ?.map((e) => FhirDateTime.fromJson(e as String))
           .toList(),
       dateElement: (json['_date'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       validity: json['validity'] == null
           ? null

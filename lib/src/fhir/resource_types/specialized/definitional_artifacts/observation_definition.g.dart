@@ -168,7 +168,7 @@ _$ObservationDefinitionImpl _$$ObservationDefinitionImplFromJson(
           ?.map(FhirUri.fromJson)
           .toList(),
       derivedFromUriElement: (json['_derivedFromUri'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       subject: (json['subject'] as List<dynamic>?)
           ?.map((e) => CodeableConcept.fromJson(e as Map<String, dynamic>))
@@ -185,7 +185,7 @@ _$ObservationDefinitionImpl _$$ObservationDefinitionImplFromJson(
           ?.map(FhirCode.fromJson)
           .toList(),
       permittedDataTypeElement: (json['_permittedDataType'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       multipleResultsAllowed: json['multipleResultsAllowed'] == null
           ? null
@@ -607,10 +607,10 @@ _$ObservationDefinitionComponentImpl
           permittedDataType: (json['permittedDataType'] as List<dynamic>?)
               ?.map(FhirCode.fromJson)
               .toList(),
-          permittedDataTypeElement:
-              (json['_permittedDataType'] as List<dynamic>?)
-                  ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
-                  .toList(),
+          permittedDataTypeElement: (json['_permittedDataType']
+                  as List<dynamic>?)
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
+              .toList(),
           permittedUnit: (json['permittedUnit'] as List<dynamic>?)
               ?.map((e) => Coding.fromJson(e as Map<String, dynamic>))
               .toList(),

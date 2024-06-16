@@ -239,7 +239,7 @@ class Location with _$Location implements DomainResource {
     List<String>? alias,
 
     /// [aliasElement] ("_alias") Extensions for alias
-    @JsonKey(name: '_alias') List<Element>? aliasElement,
+    @JsonKey(name: '_alias') List<PrimitiveElement>? aliasElement,
 
     /// [description] Description of the Location, which helps in finding or
     ///  referencing the place.

@@ -116,7 +116,7 @@ _$ContractImpl _$$ContractImplFromJson(Map<String, dynamic> json) =>
       alias:
           (json['alias'] as List<dynamic>?)?.map((e) => e as String).toList(),
       aliasElement: (json['_alias'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       author: json['author'] == null
           ? null
@@ -583,7 +583,7 @@ _$ContractSecurityLabelImpl _$$ContractSecurityLabelImplFromJson(
           ?.map(FhirUnsignedInt.fromJson)
           .toList(),
       numberElement: (json['_number'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       classification:
           Coding.fromJson(json['classification'] as Map<String, dynamic>),
@@ -656,14 +656,14 @@ _$ContractOfferImpl _$$ContractOfferImplFromJson(Map<String, dynamic> json) =>
       linkId:
           (json['linkId'] as List<dynamic>?)?.map((e) => e as String).toList(),
       linkIdElement: (json['_linkId'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       securityLabelNumber: (json['securityLabelNumber'] as List<dynamic>?)
           ?.map(FhirUnsignedInt.fromJson)
           .toList(),
       securityLabelNumberElement:
           (json['_securityLabelNumber'] as List<dynamic>?)
-              ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
               .toList(),
     );
 
@@ -899,7 +899,7 @@ _$ContractAssetImpl _$$ContractAssetImplFromJson(Map<String, dynamic> json) =>
       linkId:
           (json['linkId'] as List<dynamic>?)?.map((e) => e as String).toList(),
       linkIdElement: (json['_linkId'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       answer: (json['answer'] as List<dynamic>?)
           ?.map((e) => ContractAnswer.fromJson(e as Map<String, dynamic>))
@@ -909,7 +909,7 @@ _$ContractAssetImpl _$$ContractAssetImplFromJson(Map<String, dynamic> json) =>
           .toList(),
       securityLabelNumberElement:
           (json['_securityLabelNumber'] as List<dynamic>?)
-              ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
               .toList(),
       valuedItem: (json['valuedItem'] as List<dynamic>?)
           ?.map((e) => ContractValuedItem.fromJson(e as Map<String, dynamic>))
@@ -1069,14 +1069,14 @@ _$ContractValuedItemImpl _$$ContractValuedItemImplFromJson(
       linkId:
           (json['linkId'] as List<dynamic>?)?.map((e) => e as String).toList(),
       linkIdElement: (json['_linkId'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       securityLabelNumber: (json['securityLabelNumber'] as List<dynamic>?)
           ?.map(FhirUnsignedInt.fromJson)
           .toList(),
       securityLabelNumberElement:
           (json['_securityLabelNumber'] as List<dynamic>?)
-              ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
               .toList(),
     );
 
@@ -1148,7 +1148,7 @@ _$ContractActionImpl _$$ContractActionImplFromJson(Map<String, dynamic> json) =>
       linkId:
           (json['linkId'] as List<dynamic>?)?.map((e) => e as String).toList(),
       linkIdElement: (json['_linkId'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       status: CodeableConcept.fromJson(json['status'] as Map<String, dynamic>),
       context: json['context'] == null
@@ -1158,7 +1158,7 @@ _$ContractActionImpl _$$ContractActionImplFromJson(Map<String, dynamic> json) =>
           ?.map((e) => e as String)
           .toList(),
       contextLinkIdElement: (json['_contextLinkId'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       occurrenceDateTime: json['occurrenceDateTime'] == null
           ? null
@@ -1180,7 +1180,7 @@ _$ContractActionImpl _$$ContractActionImplFromJson(Map<String, dynamic> json) =>
           ?.map((e) => e as String)
           .toList(),
       requesterLinkIdElement: (json['_requesterLinkId'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       performerType: (json['performerType'] as List<dynamic>?)
           ?.map((e) => CodeableConcept.fromJson(e as Map<String, dynamic>))
@@ -1196,7 +1196,7 @@ _$ContractActionImpl _$$ContractActionImplFromJson(Map<String, dynamic> json) =>
           ?.map((e) => e as String)
           .toList(),
       performerLinkIdElement: (json['_performerLinkId'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       reason: (json['reason'] as List<dynamic>?)
           ?.map((e) => CodeableReference.fromJson(e as Map<String, dynamic>))
@@ -1205,7 +1205,7 @@ _$ContractActionImpl _$$ContractActionImplFromJson(Map<String, dynamic> json) =>
           ?.map((e) => e as String)
           .toList(),
       reasonLinkIdElement: (json['_reasonLinkId'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       note: (json['note'] as List<dynamic>?)
           ?.map((e) => Annotation.fromJson(e as Map<String, dynamic>))
@@ -1215,7 +1215,7 @@ _$ContractActionImpl _$$ContractActionImplFromJson(Map<String, dynamic> json) =>
           .toList(),
       securityLabelNumberElement:
           (json['_securityLabelNumber'] as List<dynamic>?)
-              ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
               .toList(),
     );
 

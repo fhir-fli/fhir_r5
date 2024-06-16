@@ -429,7 +429,7 @@ class TestScript with _$TestScript implements DomainResource {
 
     /// [profile] Reference to the profile to be used for validation.
     List<FhirCanonical>? profile,
-    @JsonKey(name: '_profile') List<Element>? profileElement,
+    @JsonKey(name: '_profile') List<PrimitiveElement>? profileElement,
 
     /// [variable] Variable is set based either on element value in response body
     ///  or on header field value in the response headers.
@@ -1125,7 +1125,7 @@ class TestScriptCapability with _$TestScriptCapability implements BackboneType {
     List<FhirInteger>? origin,
 
     /// [originElement] ("_origin") Extensions for origin
-    @JsonKey(name: '_origin') List<Element>? originElement,
+    @JsonKey(name: '_origin') List<PrimitiveElement>? originElement,
 
     /// [destination] Which server these requirements apply to.
     FhirInteger? destination,
@@ -1138,7 +1138,7 @@ class TestScriptCapability with _$TestScriptCapability implements BackboneType {
     List<FhirUri>? link,
 
     /// [linkElement] ("_link") Extensions for link
-    @JsonKey(name: '_link') List<Element>? linkElement,
+    @JsonKey(name: '_link') List<PrimitiveElement>? linkElement,
 
     /// [capabilities] Minimum capabilities required of server for test script to
     ///  execute successfully.   If server does not meet at a minimum the

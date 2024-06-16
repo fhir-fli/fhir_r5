@@ -567,7 +567,7 @@ class AuditEventAgent with _$AuditEventAgent implements BackboneType {
     List<FhirUri>? policy,
 
     /// [policyElement] ("_policy") Extensions for policy
-    @JsonKey(name: '_policy') List<Element>? policyElement,
+    @JsonKey(name: '_policy') List<PrimitiveElement>? policyElement,
 
     /// [networkReference] When the event utilizes a network there should be an
     ///  agent describing the local system, and an agent describing remote system,

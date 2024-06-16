@@ -159,7 +159,8 @@ mixin _$FhirEndpoint {
 
   /// [headerElement] ("_header") Extensions for header
   @JsonKey(name: '_header')
-  List<Element>? get headerElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get headerElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -202,7 +203,7 @@ abstract class $FhirEndpointCopyWith<$Res> {
       FhirUrl? address,
       @JsonKey(name: '_address') PrimitiveElement? addressElement,
       List<String>? header,
-      @JsonKey(name: '_header') List<Element>? headerElement});
+      @JsonKey(name: '_header') List<PrimitiveElement>? headerElement});
 
   $FhirMetaCopyWith<$Res>? get meta;
   $NarrativeCopyWith<$Res>? get text;
@@ -364,7 +365,7 @@ class _$FhirEndpointCopyWithImpl<$Res, $Val extends FhirEndpoint>
       headerElement: freezed == headerElement
           ? _value.headerElement
           : headerElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ) as $Val);
   }
 
@@ -454,7 +455,7 @@ abstract class _$$FhirEndpointImplCopyWith<$Res>
       FhirUrl? address,
       @JsonKey(name: '_address') PrimitiveElement? addressElement,
       List<String>? header,
-      @JsonKey(name: '_header') List<Element>? headerElement});
+      @JsonKey(name: '_header') List<PrimitiveElement>? headerElement});
 
   @override
   $FhirMetaCopyWith<$Res>? get meta;
@@ -618,7 +619,7 @@ class __$$FhirEndpointImplCopyWithImpl<$Res>
       headerElement: freezed == headerElement
           ? _value._headerElement
           : headerElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ));
   }
 }
@@ -655,7 +656,7 @@ class _$FhirEndpointImpl extends _FhirEndpoint {
       this.address,
       @JsonKey(name: '_address') this.addressElement,
       final List<String>? header,
-      @JsonKey(name: '_header') final List<Element>? headerElement})
+      @JsonKey(name: '_header') final List<PrimitiveElement>? headerElement})
       : _contained = contained,
         _extension_ = extension_,
         _modifierExtension = modifierExtension,
@@ -937,12 +938,12 @@ class _$FhirEndpointImpl extends _FhirEndpoint {
   }
 
   /// [headerElement] ("_header") Extensions for header
-  final List<Element>? _headerElement;
+  final List<PrimitiveElement>? _headerElement;
 
   /// [headerElement] ("_header") Extensions for header
   @override
   @JsonKey(name: '_header')
-  List<Element>? get headerElement {
+  List<PrimitiveElement>? get headerElement {
     final value = _headerElement;
     if (value == null) return null;
     if (_headerElement is EqualUnmodifiableListView) return _headerElement;
@@ -1088,7 +1089,7 @@ abstract class _FhirEndpoint extends FhirEndpoint {
       @JsonKey(name: '_address') final PrimitiveElement? addressElement,
       final List<String>? header,
       @JsonKey(name: '_header')
-      final List<Element>? headerElement}) = _$FhirEndpointImpl;
+      final List<PrimitiveElement>? headerElement}) = _$FhirEndpointImpl;
   const _FhirEndpoint._() : super._();
 
   factory _FhirEndpoint.fromJson(Map<String, dynamic> json) =
@@ -1257,7 +1258,7 @@ abstract class _FhirEndpoint extends FhirEndpoint {
 
   /// [headerElement] ("_header") Extensions for header
   @JsonKey(name: '_header')
-  List<Element>? get headerElement;
+  List<PrimitiveElement>? get headerElement;
   @override
   @JsonKey(ignore: true)
   _$$FhirEndpointImplCopyWith<_$FhirEndpointImpl> get copyWith =>
@@ -1310,7 +1311,8 @@ mixin _$EndpointPayload {
 
   /// [mimeTypeElement] ("_mimeType") Extensions for mimeType
   @JsonKey(name: '_mimeType')
-  List<Element>? get mimeTypeElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get mimeTypeElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1330,7 +1332,7 @@ abstract class $EndpointPayloadCopyWith<$Res> {
       List<FhirExtension>? modifierExtension,
       List<CodeableConcept>? type,
       List<MimeType>? mimeType,
-      @JsonKey(name: '_mimeType') List<Element>? mimeTypeElement});
+      @JsonKey(name: '_mimeType') List<PrimitiveElement>? mimeTypeElement});
 }
 
 /// @nodoc
@@ -1377,7 +1379,7 @@ class _$EndpointPayloadCopyWithImpl<$Res, $Val extends EndpointPayload>
       mimeTypeElement: freezed == mimeTypeElement
           ? _value.mimeTypeElement
           : mimeTypeElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ) as $Val);
   }
 }
@@ -1396,7 +1398,7 @@ abstract class _$$EndpointPayloadImplCopyWith<$Res>
       List<FhirExtension>? modifierExtension,
       List<CodeableConcept>? type,
       List<MimeType>? mimeType,
-      @JsonKey(name: '_mimeType') List<Element>? mimeTypeElement});
+      @JsonKey(name: '_mimeType') List<PrimitiveElement>? mimeTypeElement});
 }
 
 /// @nodoc
@@ -1441,7 +1443,7 @@ class __$$EndpointPayloadImplCopyWithImpl<$Res>
       mimeTypeElement: freezed == mimeTypeElement
           ? _value._mimeTypeElement
           : mimeTypeElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ));
   }
 }
@@ -1455,7 +1457,8 @@ class _$EndpointPayloadImpl extends _EndpointPayload {
       final List<FhirExtension>? modifierExtension,
       final List<CodeableConcept>? type,
       final List<MimeType>? mimeType,
-      @JsonKey(name: '_mimeType') final List<Element>? mimeTypeElement})
+      @JsonKey(name: '_mimeType')
+      final List<PrimitiveElement>? mimeTypeElement})
       : _extension_ = extension_,
         _modifierExtension = modifierExtension,
         _type = type,
@@ -1566,12 +1569,12 @@ class _$EndpointPayloadImpl extends _EndpointPayload {
   }
 
   /// [mimeTypeElement] ("_mimeType") Extensions for mimeType
-  final List<Element>? _mimeTypeElement;
+  final List<PrimitiveElement>? _mimeTypeElement;
 
   /// [mimeTypeElement] ("_mimeType") Extensions for mimeType
   @override
   @JsonKey(name: '_mimeType')
-  List<Element>? get mimeTypeElement {
+  List<PrimitiveElement>? get mimeTypeElement {
     final value = _mimeTypeElement;
     if (value == null) return null;
     if (_mimeTypeElement is EqualUnmodifiableListView) return _mimeTypeElement;
@@ -1628,13 +1631,13 @@ class _$EndpointPayloadImpl extends _EndpointPayload {
 
 abstract class _EndpointPayload extends EndpointPayload {
   const factory _EndpointPayload(
-          {final String? id,
-          @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
-          final List<FhirExtension>? modifierExtension,
-          final List<CodeableConcept>? type,
-          final List<MimeType>? mimeType,
-          @JsonKey(name: '_mimeType') final List<Element>? mimeTypeElement}) =
-      _$EndpointPayloadImpl;
+      {final String? id,
+      @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
+      final List<FhirExtension>? modifierExtension,
+      final List<CodeableConcept>? type,
+      final List<MimeType>? mimeType,
+      @JsonKey(name: '_mimeType')
+      final List<PrimitiveElement>? mimeTypeElement}) = _$EndpointPayloadImpl;
   const _EndpointPayload._() : super._();
 
   factory _EndpointPayload.fromJson(Map<String, dynamic> json) =
@@ -1686,7 +1689,7 @@ abstract class _EndpointPayload extends EndpointPayload {
 
   /// [mimeTypeElement] ("_mimeType") Extensions for mimeType
   @JsonKey(name: '_mimeType')
-  List<Element>? get mimeTypeElement;
+  List<PrimitiveElement>? get mimeTypeElement;
   @override
   @JsonKey(ignore: true)
   _$$EndpointPayloadImplCopyWith<_$EndpointPayloadImpl> get copyWith =>

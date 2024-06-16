@@ -325,7 +325,8 @@ class Procedure with _$Procedure implements DomainResource {
     List<FhirUri>? instantiatesUri,
 
     /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
-    @JsonKey(name: '_instantiatesUri') List<Element>? instantiatesUriElement,
+    @JsonKey(name: '_instantiatesUri')
+    List<PrimitiveElement>? instantiatesUriElement,
 
     /// [basedOn] A reference to a resource that contains details of the request
     ///  for this procedure.

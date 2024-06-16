@@ -27,17 +27,17 @@ _$HumanNameImpl _$$HumanNameImplFromJson(Map<String, dynamic> json) =>
       given:
           (json['given'] as List<dynamic>?)?.map((e) => e as String).toList(),
       givenElement: (json['_given'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       prefix:
           (json['prefix'] as List<dynamic>?)?.map((e) => e as String).toList(),
       prefixElement: (json['_prefix'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       suffix:
           (json['suffix'] as List<dynamic>?)?.map((e) => e as String).toList(),
       suffixElement: (json['_suffix'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       period: json['period'] == null
           ? null

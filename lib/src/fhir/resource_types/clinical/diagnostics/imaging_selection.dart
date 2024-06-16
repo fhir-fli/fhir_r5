@@ -629,7 +629,7 @@ class ImagingSelectionInstance
     List<String>? subset,
 
     /// [subsetElement] ("_subset") Extensions for subset
-    @JsonKey(name: '_subset') List<Element>? subsetElement,
+    @JsonKey(name: '_subset') List<PrimitiveElement>? subsetElement,
 
     /// [imageRegion2D] Each imaging selection instance or frame list might
     ///  includes an image region, specified by a region type and a set of 2D
@@ -782,7 +782,7 @@ class ImagingSelectionImageRegion2D
     List<FhirDecimal>? coordinate,
 
     /// [coordinateElement] ("_coordinate") Extensions for coordinate
-    @JsonKey(name: '_coordinate') List<Element>? coordinateElement,
+    @JsonKey(name: '_coordinate') List<PrimitiveElement>? coordinateElement,
   }) = _ImagingSelectionImageRegion2D;
 
   @override
@@ -919,7 +919,7 @@ class ImagingSelectionImageRegion3D
     List<FhirDecimal>? coordinate,
 
     /// [coordinateElement] ("_coordinate") Extensions for coordinate
-    @JsonKey(name: '_coordinate') List<Element>? coordinateElement,
+    @JsonKey(name: '_coordinate') List<PrimitiveElement>? coordinateElement,
   }) = _ImagingSelectionImageRegion3D;
 
   @override

@@ -1967,7 +1967,8 @@ mixin _$ImagingSelectionInstance {
 
   /// [subsetElement] ("_subset") Extensions for subset
   @JsonKey(name: '_subset')
-  List<Element>? get subsetElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get subsetElement =>
+      throw _privateConstructorUsedError;
 
   /// [imageRegion2D] Each imaging selection instance or frame list might
   ///  includes an image region, specified by a region type and a set of 2D
@@ -2004,7 +2005,7 @@ abstract class $ImagingSelectionInstanceCopyWith<$Res> {
       @JsonKey(name: '_number') PrimitiveElement? numberElement,
       Coding? sopClass,
       List<String>? subset,
-      @JsonKey(name: '_subset') List<Element>? subsetElement,
+      @JsonKey(name: '_subset') List<PrimitiveElement>? subsetElement,
       List<ImagingSelectionImageRegion2D>? imageRegion2D,
       List<ImagingSelectionImageRegion3D>? imageRegion3D});
 
@@ -2078,7 +2079,7 @@ class _$ImagingSelectionInstanceCopyWithImpl<$Res,
       subsetElement: freezed == subsetElement
           ? _value.subsetElement
           : subsetElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       imageRegion2D: freezed == imageRegion2D
           ? _value.imageRegion2D
           : imageRegion2D // ignore: cast_nullable_to_non_nullable
@@ -2122,7 +2123,7 @@ abstract class _$$ImagingSelectionInstanceImplCopyWith<$Res>
       @JsonKey(name: '_number') PrimitiveElement? numberElement,
       Coding? sopClass,
       List<String>? subset,
-      @JsonKey(name: '_subset') List<Element>? subsetElement,
+      @JsonKey(name: '_subset') List<PrimitiveElement>? subsetElement,
       List<ImagingSelectionImageRegion2D>? imageRegion2D,
       List<ImagingSelectionImageRegion3D>? imageRegion3D});
 
@@ -2196,7 +2197,7 @@ class __$$ImagingSelectionInstanceImplCopyWithImpl<$Res>
       subsetElement: freezed == subsetElement
           ? _value._subsetElement
           : subsetElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       imageRegion2D: freezed == imageRegion2D
           ? _value._imageRegion2D
           : imageRegion2D // ignore: cast_nullable_to_non_nullable
@@ -2222,7 +2223,7 @@ class _$ImagingSelectionInstanceImpl extends _ImagingSelectionInstance {
       @JsonKey(name: '_number') this.numberElement,
       this.sopClass,
       final List<String>? subset,
-      @JsonKey(name: '_subset') final List<Element>? subsetElement,
+      @JsonKey(name: '_subset') final List<PrimitiveElement>? subsetElement,
       final List<ImagingSelectionImageRegion2D>? imageRegion2D,
       final List<ImagingSelectionImageRegion3D>? imageRegion3D})
       : _extension_ = extension_,
@@ -2349,12 +2350,12 @@ class _$ImagingSelectionInstanceImpl extends _ImagingSelectionInstance {
   }
 
   /// [subsetElement] ("_subset") Extensions for subset
-  final List<Element>? _subsetElement;
+  final List<PrimitiveElement>? _subsetElement;
 
   /// [subsetElement] ("_subset") Extensions for subset
   @override
   @JsonKey(name: '_subset')
-  List<Element>? get subsetElement {
+  List<PrimitiveElement>? get subsetElement {
     final value = _subsetElement;
     if (value == null) return null;
     if (_subsetElement is EqualUnmodifiableListView) return _subsetElement;
@@ -2473,7 +2474,7 @@ abstract class _ImagingSelectionInstance extends ImagingSelectionInstance {
           @JsonKey(name: '_number') final PrimitiveElement? numberElement,
           final Coding? sopClass,
           final List<String>? subset,
-          @JsonKey(name: '_subset') final List<Element>? subsetElement,
+          @JsonKey(name: '_subset') final List<PrimitiveElement>? subsetElement,
           final List<ImagingSelectionImageRegion2D>? imageRegion2D,
           final List<ImagingSelectionImageRegion3D>? imageRegion3D}) =
       _$ImagingSelectionInstanceImpl;
@@ -2548,7 +2549,7 @@ abstract class _ImagingSelectionInstance extends ImagingSelectionInstance {
 
   /// [subsetElement] ("_subset") Extensions for subset
   @JsonKey(name: '_subset')
-  List<Element>? get subsetElement;
+  List<PrimitiveElement>? get subsetElement;
   @override
 
   /// [imageRegion2D] Each imaging selection instance or frame list might
@@ -2621,7 +2622,8 @@ mixin _$ImagingSelectionImageRegion2D {
 
   /// [coordinateElement] ("_coordinate") Extensions for coordinate
   @JsonKey(name: '_coordinate')
-  List<Element>? get coordinateElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get coordinateElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -2644,7 +2646,7 @@ abstract class $ImagingSelectionImageRegion2DCopyWith<$Res> {
       FhirCode? regionType,
       @JsonKey(name: '_regionType') PrimitiveElement? regionTypeElement,
       List<FhirDecimal>? coordinate,
-      @JsonKey(name: '_coordinate') List<Element>? coordinateElement});
+      @JsonKey(name: '_coordinate') List<PrimitiveElement>? coordinateElement});
 }
 
 /// @nodoc
@@ -2697,7 +2699,7 @@ class _$ImagingSelectionImageRegion2DCopyWithImpl<$Res,
       coordinateElement: freezed == coordinateElement
           ? _value.coordinateElement
           : coordinateElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ) as $Val);
   }
 }
@@ -2718,7 +2720,7 @@ abstract class _$$ImagingSelectionImageRegion2DImplCopyWith<$Res>
       FhirCode? regionType,
       @JsonKey(name: '_regionType') PrimitiveElement? regionTypeElement,
       List<FhirDecimal>? coordinate,
-      @JsonKey(name: '_coordinate') List<Element>? coordinateElement});
+      @JsonKey(name: '_coordinate') List<PrimitiveElement>? coordinateElement});
 }
 
 /// @nodoc
@@ -2770,7 +2772,7 @@ class __$$ImagingSelectionImageRegion2DImplCopyWithImpl<$Res>
       coordinateElement: freezed == coordinateElement
           ? _value._coordinateElement
           : coordinateElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ));
   }
 }
@@ -2786,7 +2788,8 @@ class _$ImagingSelectionImageRegion2DImpl
       this.regionType,
       @JsonKey(name: '_regionType') this.regionTypeElement,
       final List<FhirDecimal>? coordinate,
-      @JsonKey(name: '_coordinate') final List<Element>? coordinateElement})
+      @JsonKey(name: '_coordinate')
+      final List<PrimitiveElement>? coordinateElement})
       : _extension_ = extension_,
         _modifierExtension = modifierExtension,
         _coordinate = coordinate,
@@ -2897,12 +2900,12 @@ class _$ImagingSelectionImageRegion2DImpl
   }
 
   /// [coordinateElement] ("_coordinate") Extensions for coordinate
-  final List<Element>? _coordinateElement;
+  final List<PrimitiveElement>? _coordinateElement;
 
   /// [coordinateElement] ("_coordinate") Extensions for coordinate
   @override
   @JsonKey(name: '_coordinate')
-  List<Element>? get coordinateElement {
+  List<PrimitiveElement>? get coordinateElement {
     final value = _coordinateElement;
     if (value == null) return null;
     if (_coordinateElement is EqualUnmodifiableListView)
@@ -2974,7 +2977,7 @@ abstract class _ImagingSelectionImageRegion2D
       @JsonKey(name: '_regionType') final PrimitiveElement? regionTypeElement,
       final List<FhirDecimal>? coordinate,
       @JsonKey(name: '_coordinate')
-      final List<Element>?
+      final List<PrimitiveElement>?
           coordinateElement}) = _$ImagingSelectionImageRegion2DImpl;
   const _ImagingSelectionImageRegion2D._() : super._();
 
@@ -3034,7 +3037,7 @@ abstract class _ImagingSelectionImageRegion2D
 
   /// [coordinateElement] ("_coordinate") Extensions for coordinate
   @JsonKey(name: '_coordinate')
-  List<Element>? get coordinateElement;
+  List<PrimitiveElement>? get coordinateElement;
   @override
   @JsonKey(ignore: true)
   _$$ImagingSelectionImageRegion2DImplCopyWith<
@@ -3092,7 +3095,8 @@ mixin _$ImagingSelectionImageRegion3D {
 
   /// [coordinateElement] ("_coordinate") Extensions for coordinate
   @JsonKey(name: '_coordinate')
-  List<Element>? get coordinateElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get coordinateElement =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -3115,7 +3119,7 @@ abstract class $ImagingSelectionImageRegion3DCopyWith<$Res> {
       FhirCode? regionType,
       @JsonKey(name: '_regionType') PrimitiveElement? regionTypeElement,
       List<FhirDecimal>? coordinate,
-      @JsonKey(name: '_coordinate') List<Element>? coordinateElement});
+      @JsonKey(name: '_coordinate') List<PrimitiveElement>? coordinateElement});
 }
 
 /// @nodoc
@@ -3168,7 +3172,7 @@ class _$ImagingSelectionImageRegion3DCopyWithImpl<$Res,
       coordinateElement: freezed == coordinateElement
           ? _value.coordinateElement
           : coordinateElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ) as $Val);
   }
 }
@@ -3189,7 +3193,7 @@ abstract class _$$ImagingSelectionImageRegion3DImplCopyWith<$Res>
       FhirCode? regionType,
       @JsonKey(name: '_regionType') PrimitiveElement? regionTypeElement,
       List<FhirDecimal>? coordinate,
-      @JsonKey(name: '_coordinate') List<Element>? coordinateElement});
+      @JsonKey(name: '_coordinate') List<PrimitiveElement>? coordinateElement});
 }
 
 /// @nodoc
@@ -3241,7 +3245,7 @@ class __$$ImagingSelectionImageRegion3DImplCopyWithImpl<$Res>
       coordinateElement: freezed == coordinateElement
           ? _value._coordinateElement
           : coordinateElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ));
   }
 }
@@ -3257,7 +3261,8 @@ class _$ImagingSelectionImageRegion3DImpl
       this.regionType,
       @JsonKey(name: '_regionType') this.regionTypeElement,
       final List<FhirDecimal>? coordinate,
-      @JsonKey(name: '_coordinate') final List<Element>? coordinateElement})
+      @JsonKey(name: '_coordinate')
+      final List<PrimitiveElement>? coordinateElement})
       : _extension_ = extension_,
         _modifierExtension = modifierExtension,
         _coordinate = coordinate,
@@ -3362,12 +3367,12 @@ class _$ImagingSelectionImageRegion3DImpl
   }
 
   /// [coordinateElement] ("_coordinate") Extensions for coordinate
-  final List<Element>? _coordinateElement;
+  final List<PrimitiveElement>? _coordinateElement;
 
   /// [coordinateElement] ("_coordinate") Extensions for coordinate
   @override
   @JsonKey(name: '_coordinate')
-  List<Element>? get coordinateElement {
+  List<PrimitiveElement>? get coordinateElement {
     final value = _coordinateElement;
     if (value == null) return null;
     if (_coordinateElement is EqualUnmodifiableListView)
@@ -3439,7 +3444,7 @@ abstract class _ImagingSelectionImageRegion3D
       @JsonKey(name: '_regionType') final PrimitiveElement? regionTypeElement,
       final List<FhirDecimal>? coordinate,
       @JsonKey(name: '_coordinate')
-      final List<Element>?
+      final List<PrimitiveElement>?
           coordinateElement}) = _$ImagingSelectionImageRegion3DImpl;
   const _ImagingSelectionImageRegion3D._() : super._();
 
@@ -3496,7 +3501,7 @@ abstract class _ImagingSelectionImageRegion3D
 
   /// [coordinateElement] ("_coordinate") Extensions for coordinate
   @JsonKey(name: '_coordinate')
-  List<Element>? get coordinateElement;
+  List<PrimitiveElement>? get coordinateElement;
   @override
   @JsonKey(ignore: true)
   _$$ImagingSelectionImageRegion3DImplCopyWith<

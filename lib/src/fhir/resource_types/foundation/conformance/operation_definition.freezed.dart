@@ -283,7 +283,8 @@ mixin _$OperationDefinition {
 
   /// [resourceElement] ("_resource") Extensions for resource
   @JsonKey(name: '_resource')
-  List<Element>? get resourceElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get resourceElement =>
+      throw _privateConstructorUsedError;
 
   /// [system] Indicates whether this operation or named query can be invoked at
   ///  the system level (e.g. without needing to choose a resource type for the
@@ -398,7 +399,7 @@ abstract class $OperationDefinitionCopyWith<$Res> {
       @JsonKey(name: '_comment') PrimitiveElement? commentElement,
       FhirCanonical? base,
       List<FhirCode>? resource,
-      @JsonKey(name: '_resource') List<Element>? resourceElement,
+      @JsonKey(name: '_resource') List<PrimitiveElement>? resourceElement,
       FhirBoolean? system,
       @JsonKey(name: '_system') PrimitiveElement? systemElement,
       FhirBoolean? type,
@@ -704,7 +705,7 @@ class _$OperationDefinitionCopyWithImpl<$Res, $Val extends OperationDefinition>
       resourceElement: freezed == resourceElement
           ? _value.resourceElement
           : resourceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       system: freezed == system
           ? _value.system
           : system // ignore: cast_nullable_to_non_nullable
@@ -848,7 +849,7 @@ abstract class _$$OperationDefinitionImplCopyWith<$Res>
       @JsonKey(name: '_comment') PrimitiveElement? commentElement,
       FhirCanonical? base,
       List<FhirCode>? resource,
-      @JsonKey(name: '_resource') List<Element>? resourceElement,
+      @JsonKey(name: '_resource') List<PrimitiveElement>? resourceElement,
       FhirBoolean? system,
       @JsonKey(name: '_system') PrimitiveElement? systemElement,
       FhirBoolean? type,
@@ -1155,7 +1156,7 @@ class __$$OperationDefinitionImplCopyWithImpl<$Res>
       resourceElement: freezed == resourceElement
           ? _value._resourceElement
           : resourceElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       system: freezed == system
           ? _value.system
           : system // ignore: cast_nullable_to_non_nullable
@@ -1258,7 +1259,7 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
       @JsonKey(name: '_comment') this.commentElement,
       this.base,
       final List<FhirCode>? resource,
-      @JsonKey(name: '_resource') final List<Element>? resourceElement,
+      @JsonKey(name: '_resource') final List<PrimitiveElement>? resourceElement,
       this.system,
       @JsonKey(name: '_system') this.systemElement,
       this.type,
@@ -1693,12 +1694,12 @@ class _$OperationDefinitionImpl extends _OperationDefinition {
   }
 
   /// [resourceElement] ("_resource") Extensions for resource
-  final List<Element>? _resourceElement;
+  final List<PrimitiveElement>? _resourceElement;
 
   /// [resourceElement] ("_resource") Extensions for resource
   @override
   @JsonKey(name: '_resource')
-  List<Element>? get resourceElement {
+  List<PrimitiveElement>? get resourceElement {
     final value = _resourceElement;
     if (value == null) return null;
     if (_resourceElement is EqualUnmodifiableListView) return _resourceElement;
@@ -2036,7 +2037,7 @@ abstract class _OperationDefinition extends OperationDefinition {
       @JsonKey(name: '_comment') final PrimitiveElement? commentElement,
       final FhirCanonical? base,
       final List<FhirCode>? resource,
-      @JsonKey(name: '_resource') final List<Element>? resourceElement,
+      @JsonKey(name: '_resource') final List<PrimitiveElement>? resourceElement,
       final FhirBoolean? system,
       @JsonKey(name: '_system') final PrimitiveElement? systemElement,
       final FhirBoolean? type,
@@ -2363,7 +2364,7 @@ abstract class _OperationDefinition extends OperationDefinition {
 
   /// [resourceElement] ("_resource") Extensions for resource
   @JsonKey(name: '_resource')
-  List<Element>? get resourceElement;
+  List<PrimitiveElement>? get resourceElement;
   @override
 
   /// [system] Indicates whether this operation or named query can be invoked at
@@ -2479,7 +2480,8 @@ mixin _$OperationDefinitionParameter {
 
   /// [scopeElement] ("_scope") Extensions for scope
   @JsonKey(name: '_scope')
-  List<Element>? get scopeElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get scopeElement =>
+      throw _privateConstructorUsedError;
 
   /// [min] The minimum number of times this parameter SHALL appear in the
   ///  request or response.
@@ -2518,7 +2520,8 @@ mixin _$OperationDefinitionParameter {
 
   /// [allowedTypeElement] ("_allowedType") Extensions for allowedType
   @JsonKey(name: '_allowedType')
-  List<Element>? get allowedTypeElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get allowedTypeElement =>
+      throw _privateConstructorUsedError;
 
   /// [targetProfile] Used when the type is "Reference" or "canonical", and
   ///  identifies a profile structure or implementation Guide that applies to the
@@ -2576,7 +2579,7 @@ abstract class $OperationDefinitionParameterCopyWith<$Res> {
       FhirCode? use,
       @JsonKey(name: '_use') PrimitiveElement? useElement,
       List<FhirCode>? scope,
-      @JsonKey(name: '_scope') List<Element>? scopeElement,
+      @JsonKey(name: '_scope') List<PrimitiveElement>? scopeElement,
       FhirInteger? min,
       @JsonKey(name: '_min') PrimitiveElement? minElement,
       String? max,
@@ -2586,7 +2589,7 @@ abstract class $OperationDefinitionParameterCopyWith<$Res> {
       FhirCode? type,
       @JsonKey(name: '_type') PrimitiveElement? typeElement,
       List<FhirCode>? allowedType,
-      @JsonKey(name: '_allowedType') List<Element>? allowedTypeElement,
+      @JsonKey(name: '_allowedType') List<PrimitiveElement>? allowedTypeElement,
       List<FhirCanonical>? targetProfile,
       FhirCode? searchType,
       @JsonKey(name: '_searchType') PrimitiveElement? searchTypeElement,
@@ -2673,7 +2676,7 @@ class _$OperationDefinitionParameterCopyWithImpl<$Res,
       scopeElement: freezed == scopeElement
           ? _value.scopeElement
           : scopeElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       min: freezed == min
           ? _value.min
           : min // ignore: cast_nullable_to_non_nullable
@@ -2713,7 +2716,7 @@ class _$OperationDefinitionParameterCopyWithImpl<$Res,
       allowedTypeElement: freezed == allowedTypeElement
           ? _value.allowedTypeElement
           : allowedTypeElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       targetProfile: freezed == targetProfile
           ? _value.targetProfile
           : targetProfile // ignore: cast_nullable_to_non_nullable
@@ -2772,7 +2775,7 @@ abstract class _$$OperationDefinitionParameterImplCopyWith<$Res>
       FhirCode? use,
       @JsonKey(name: '_use') PrimitiveElement? useElement,
       List<FhirCode>? scope,
-      @JsonKey(name: '_scope') List<Element>? scopeElement,
+      @JsonKey(name: '_scope') List<PrimitiveElement>? scopeElement,
       FhirInteger? min,
       @JsonKey(name: '_min') PrimitiveElement? minElement,
       String? max,
@@ -2782,7 +2785,7 @@ abstract class _$$OperationDefinitionParameterImplCopyWith<$Res>
       FhirCode? type,
       @JsonKey(name: '_type') PrimitiveElement? typeElement,
       List<FhirCode>? allowedType,
-      @JsonKey(name: '_allowedType') List<Element>? allowedTypeElement,
+      @JsonKey(name: '_allowedType') List<PrimitiveElement>? allowedTypeElement,
       List<FhirCanonical>? targetProfile,
       FhirCode? searchType,
       @JsonKey(name: '_searchType') PrimitiveElement? searchTypeElement,
@@ -2869,7 +2872,7 @@ class __$$OperationDefinitionParameterImplCopyWithImpl<$Res>
       scopeElement: freezed == scopeElement
           ? _value._scopeElement
           : scopeElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       min: freezed == min
           ? _value.min
           : min // ignore: cast_nullable_to_non_nullable
@@ -2909,7 +2912,7 @@ class __$$OperationDefinitionParameterImplCopyWithImpl<$Res>
       allowedTypeElement: freezed == allowedTypeElement
           ? _value._allowedTypeElement
           : allowedTypeElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       targetProfile: freezed == targetProfile
           ? _value._targetProfile
           : targetProfile // ignore: cast_nullable_to_non_nullable
@@ -2950,7 +2953,7 @@ class _$OperationDefinitionParameterImpl extends _OperationDefinitionParameter {
       this.use,
       @JsonKey(name: '_use') this.useElement,
       final List<FhirCode>? scope,
-      @JsonKey(name: '_scope') final List<Element>? scopeElement,
+      @JsonKey(name: '_scope') final List<PrimitiveElement>? scopeElement,
       this.min,
       @JsonKey(name: '_min') this.minElement,
       this.max,
@@ -2960,7 +2963,8 @@ class _$OperationDefinitionParameterImpl extends _OperationDefinitionParameter {
       this.type,
       @JsonKey(name: '_type') this.typeElement,
       final List<FhirCode>? allowedType,
-      @JsonKey(name: '_allowedType') final List<Element>? allowedTypeElement,
+      @JsonKey(name: '_allowedType')
+      final List<PrimitiveElement>? allowedTypeElement,
       final List<FhirCanonical>? targetProfile,
       this.searchType,
       @JsonKey(name: '_searchType') this.searchTypeElement,
@@ -3081,12 +3085,12 @@ class _$OperationDefinitionParameterImpl extends _OperationDefinitionParameter {
   }
 
   /// [scopeElement] ("_scope") Extensions for scope
-  final List<Element>? _scopeElement;
+  final List<PrimitiveElement>? _scopeElement;
 
   /// [scopeElement] ("_scope") Extensions for scope
   @override
   @JsonKey(name: '_scope')
-  List<Element>? get scopeElement {
+  List<PrimitiveElement>? get scopeElement {
     final value = _scopeElement;
     if (value == null) return null;
     if (_scopeElement is EqualUnmodifiableListView) return _scopeElement;
@@ -3148,12 +3152,12 @@ class _$OperationDefinitionParameterImpl extends _OperationDefinitionParameter {
   }
 
   /// [allowedTypeElement] ("_allowedType") Extensions for allowedType
-  final List<Element>? _allowedTypeElement;
+  final List<PrimitiveElement>? _allowedTypeElement;
 
   /// [allowedTypeElement] ("_allowedType") Extensions for allowedType
   @override
   @JsonKey(name: '_allowedType')
-  List<Element>? get allowedTypeElement {
+  List<PrimitiveElement>? get allowedTypeElement {
     final value = _allowedTypeElement;
     if (value == null) return null;
     if (_allowedTypeElement is EqualUnmodifiableListView)
@@ -3346,7 +3350,7 @@ abstract class _OperationDefinitionParameter
       final FhirCode? use,
       @JsonKey(name: '_use') final PrimitiveElement? useElement,
       final List<FhirCode>? scope,
-      @JsonKey(name: '_scope') final List<Element>? scopeElement,
+      @JsonKey(name: '_scope') final List<PrimitiveElement>? scopeElement,
       final FhirInteger? min,
       @JsonKey(name: '_min') final PrimitiveElement? minElement,
       final String? max,
@@ -3357,7 +3361,8 @@ abstract class _OperationDefinitionParameter
       final FhirCode? type,
       @JsonKey(name: '_type') final PrimitiveElement? typeElement,
       final List<FhirCode>? allowedType,
-      @JsonKey(name: '_allowedType') final List<Element>? allowedTypeElement,
+      @JsonKey(name: '_allowedType')
+      final List<PrimitiveElement>? allowedTypeElement,
       final List<FhirCanonical>? targetProfile,
       final FhirCode? searchType,
       @JsonKey(name: '_searchType') final PrimitiveElement? searchTypeElement,
@@ -3428,7 +3433,7 @@ abstract class _OperationDefinitionParameter
 
   /// [scopeElement] ("_scope") Extensions for scope
   @JsonKey(name: '_scope')
-  List<Element>? get scopeElement;
+  List<PrimitiveElement>? get scopeElement;
   @override
 
   /// [min] The minimum number of times this parameter SHALL appear in the
@@ -3476,7 +3481,7 @@ abstract class _OperationDefinitionParameter
 
   /// [allowedTypeElement] ("_allowedType") Extensions for allowedType
   @JsonKey(name: '_allowedType')
-  List<Element>? get allowedTypeElement;
+  List<PrimitiveElement>? get allowedTypeElement;
   @override
 
   /// [targetProfile] Used when the type is "Reference" or "canonical", and
@@ -4400,7 +4405,8 @@ mixin _$OperationDefinitionOverload {
 
   /// [parameterNameElement] ("_parameterName") Extensions for parameterName
   @JsonKey(name: '_parameterName')
-  List<Element>? get parameterNameElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get parameterNameElement =>
+      throw _privateConstructorUsedError;
 
   /// [comment] Comments to go on overload.
   String? get comment => throw _privateConstructorUsedError;
@@ -4428,7 +4434,8 @@ abstract class $OperationDefinitionOverloadCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<String>? parameterName,
-      @JsonKey(name: '_parameterName') List<Element>? parameterNameElement,
+      @JsonKey(name: '_parameterName')
+      List<PrimitiveElement>? parameterNameElement,
       String? comment,
       @JsonKey(name: '_comment') PrimitiveElement? commentElement});
 }
@@ -4475,7 +4482,7 @@ class _$OperationDefinitionOverloadCopyWithImpl<$Res,
       parameterNameElement: freezed == parameterNameElement
           ? _value.parameterNameElement
           : parameterNameElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       comment: freezed == comment
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
@@ -4502,7 +4509,8 @@ abstract class _$$OperationDefinitionOverloadImplCopyWith<$Res>
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<String>? parameterName,
-      @JsonKey(name: '_parameterName') List<Element>? parameterNameElement,
+      @JsonKey(name: '_parameterName')
+      List<PrimitiveElement>? parameterNameElement,
       String? comment,
       @JsonKey(name: '_comment') PrimitiveElement? commentElement});
 }
@@ -4548,7 +4556,7 @@ class __$$OperationDefinitionOverloadImplCopyWithImpl<$Res>
       parameterNameElement: freezed == parameterNameElement
           ? _value._parameterNameElement
           : parameterNameElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       comment: freezed == comment
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
@@ -4570,7 +4578,7 @@ class _$OperationDefinitionOverloadImpl extends _OperationDefinitionOverload {
       final List<FhirExtension>? modifierExtension,
       final List<String>? parameterName,
       @JsonKey(name: '_parameterName')
-      final List<Element>? parameterNameElement,
+      final List<PrimitiveElement>? parameterNameElement,
       this.comment,
       @JsonKey(name: '_comment') this.commentElement})
       : _extension_ = extension_,
@@ -4662,12 +4670,12 @@ class _$OperationDefinitionOverloadImpl extends _OperationDefinitionOverload {
   }
 
   /// [parameterNameElement] ("_parameterName") Extensions for parameterName
-  final List<Element>? _parameterNameElement;
+  final List<PrimitiveElement>? _parameterNameElement;
 
   /// [parameterNameElement] ("_parameterName") Extensions for parameterName
   @override
   @JsonKey(name: '_parameterName')
-  List<Element>? get parameterNameElement {
+  List<PrimitiveElement>? get parameterNameElement {
     final value = _parameterNameElement;
     if (value == null) return null;
     if (_parameterNameElement is EqualUnmodifiableListView)
@@ -4744,7 +4752,7 @@ abstract class _OperationDefinitionOverload
           final List<FhirExtension>? modifierExtension,
           final List<String>? parameterName,
           @JsonKey(name: '_parameterName')
-          final List<Element>? parameterNameElement,
+          final List<PrimitiveElement>? parameterNameElement,
           final String? comment,
           @JsonKey(name: '_comment') final PrimitiveElement? commentElement}) =
       _$OperationDefinitionOverloadImpl;
@@ -4791,7 +4799,7 @@ abstract class _OperationDefinitionOverload
 
   /// [parameterNameElement] ("_parameterName") Extensions for parameterName
   @JsonKey(name: '_parameterName')
-  List<Element>? get parameterNameElement;
+  List<PrimitiveElement>? get parameterNameElement;
   @override
 
   /// [comment] Comments to go on overload.

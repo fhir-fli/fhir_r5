@@ -372,7 +372,7 @@ _$AuditEventAgentImpl _$$AuditEventAgentImplFromJson(
       policy:
           (json['policy'] as List<dynamic>?)?.map(FhirUri.fromJson).toList(),
       policyElement: (json['_policy'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       networkReference: json['networkReference'] == null
           ? null

@@ -249,7 +249,8 @@ class CarePlan with _$CarePlan implements DomainResource {
     List<FhirUri>? instantiatesUri,
 
     /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
-    @JsonKey(name: '_instantiatesUri') List<Element>? instantiatesUriElement,
+    @JsonKey(name: '_instantiatesUri')
+    List<PrimitiveElement>? instantiatesUriElement,
 
     /// [basedOn] A higher-level request resource (i.e. a plan, proposal or order)
     ///  that is fulfilled in whole or in part by this care plan.

@@ -497,21 +497,22 @@ class CapabilityStatement with _$CapabilityStatement implements DomainResource {
     List<FhirCode>? format,
 
     /// [formatElement] ("_format") Extensions for format
-    @JsonKey(name: '_format') List<Element>? formatElement,
+    @JsonKey(name: '_format') List<PrimitiveElement>? formatElement,
 
     /// [patchFormat] A list of the patch formats supported by this implementation
     ///  using their content types.
     List<FhirCode>? patchFormat,
 
     /// [patchFormatElement] ("_patchFormat") Extensions for patchFormat
-    @JsonKey(name: '_patchFormat') List<Element>? patchFormatElement,
+    @JsonKey(name: '_patchFormat') List<PrimitiveElement>? patchFormatElement,
 
     /// [acceptLanguage] A list of the languages supported by this implementation
     ///  that are usefully supported in the ```Accept-Language``` header.
     List<FhirCode>? acceptLanguage,
 
     /// [acceptLanguageElement] ("_acceptLanguage") Extensions for acceptLanguage
-    @JsonKey(name: '_acceptLanguage') List<Element>? acceptLanguageElement,
+    @JsonKey(name: '_acceptLanguage')
+    List<PrimitiveElement>? acceptLanguageElement,
 
     /// [implementationGuide] A list of implementation guides that the server does
     ///  (or should) support in their entirety.
@@ -1460,13 +1461,15 @@ class CapabilityStatementResource
     List<FhirCode>? referencePolicy,
 
     /// [referencePolicyElement] ("_referencePolicy") Extensions for referencePolicy
-    @JsonKey(name: '_referencePolicy') List<Element>? referencePolicyElement,
+    @JsonKey(name: '_referencePolicy')
+    List<PrimitiveElement>? referencePolicyElement,
 
     /// [searchInclude] A list of _include values supported by the server.
     List<String>? searchInclude,
 
     /// [searchIncludeElement] ("_searchInclude") Extensions for searchInclude
-    @JsonKey(name: '_searchInclude') List<Element>? searchIncludeElement,
+    @JsonKey(name: '_searchInclude')
+    List<PrimitiveElement>? searchIncludeElement,
 
     /// [searchRevInclude] A list of _revinclude (reverse include) values supported
     ///  by the server.
@@ -1474,7 +1477,8 @@ class CapabilityStatementResource
 
     /// [searchRevIncludeElement] ("_searchRevInclude") Extensions for
     ///  searchRevInclude
-    @JsonKey(name: '_searchRevInclude') List<Element>? searchRevIncludeElement,
+    @JsonKey(name: '_searchRevInclude')
+    List<PrimitiveElement>? searchRevIncludeElement,
 
     /// [searchParam] Search parameters for implementations to support and/or make
     ///  use of - either references to ones defined in the specification, or

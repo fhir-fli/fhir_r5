@@ -1923,7 +1923,7 @@ mixin _$ConsentVerification {
   /// [verificationDateElement] ("_verificationDate") Extensions for
   ///  verificationDate
   @JsonKey(name: '_verificationDate')
-  List<Element>? get verificationDateElement =>
+  List<PrimitiveElement>? get verificationDateElement =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -1949,7 +1949,7 @@ abstract class $ConsentVerificationCopyWith<$Res> {
       Reference? verifiedWith,
       List<FhirDateTime>? verificationDate,
       @JsonKey(name: '_verificationDate')
-      List<Element>? verificationDateElement});
+      List<PrimitiveElement>? verificationDateElement});
 
   $CodeableConceptCopyWith<$Res>? get verificationType;
   $ReferenceCopyWith<$Res>? get verifiedBy;
@@ -2020,7 +2020,7 @@ class _$ConsentVerificationCopyWithImpl<$Res, $Val extends ConsentVerification>
       verificationDateElement: freezed == verificationDateElement
           ? _value.verificationDateElement
           : verificationDateElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ) as $Val);
   }
 
@@ -2080,7 +2080,7 @@ abstract class _$$ConsentVerificationImplCopyWith<$Res>
       Reference? verifiedWith,
       List<FhirDateTime>? verificationDate,
       @JsonKey(name: '_verificationDate')
-      List<Element>? verificationDateElement});
+      List<PrimitiveElement>? verificationDateElement});
 
   @override
   $CodeableConceptCopyWith<$Res>? get verificationType;
@@ -2152,7 +2152,7 @@ class __$$ConsentVerificationImplCopyWithImpl<$Res>
       verificationDateElement: freezed == verificationDateElement
           ? _value._verificationDateElement
           : verificationDateElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
     ));
   }
 }
@@ -2171,7 +2171,7 @@ class _$ConsentVerificationImpl extends _ConsentVerification {
       this.verifiedWith,
       final List<FhirDateTime>? verificationDate,
       @JsonKey(name: '_verificationDate')
-      final List<Element>? verificationDateElement})
+      final List<PrimitiveElement>? verificationDateElement})
       : _extension_ = extension_,
         _modifierExtension = modifierExtension,
         _verificationDate = verificationDate,
@@ -2286,13 +2286,13 @@ class _$ConsentVerificationImpl extends _ConsentVerification {
 
   /// [verificationDateElement] ("_verificationDate") Extensions for
   ///  verificationDate
-  final List<Element>? _verificationDateElement;
+  final List<PrimitiveElement>? _verificationDateElement;
 
   /// [verificationDateElement] ("_verificationDate") Extensions for
   ///  verificationDate
   @override
   @JsonKey(name: '_verificationDate')
-  List<Element>? get verificationDateElement {
+  List<PrimitiveElement>? get verificationDateElement {
     final value = _verificationDateElement;
     if (value == null) return null;
     if (_verificationDateElement is EqualUnmodifiableListView)
@@ -2374,7 +2374,7 @@ abstract class _ConsentVerification extends ConsentVerification {
           final Reference? verifiedWith,
           final List<FhirDateTime>? verificationDate,
           @JsonKey(name: '_verificationDate')
-          final List<Element>? verificationDateElement}) =
+          final List<PrimitiveElement>? verificationDateElement}) =
       _$ConsentVerificationImpl;
   const _ConsentVerification._() : super._();
 
@@ -2444,7 +2444,7 @@ abstract class _ConsentVerification extends ConsentVerification {
   /// [verificationDateElement] ("_verificationDate") Extensions for
   ///  verificationDate
   @JsonKey(name: '_verificationDate')
-  List<Element>? get verificationDateElement;
+  List<PrimitiveElement>? get verificationDateElement;
   @override
   @JsonKey(ignore: true)
   _$$ConsentVerificationImplCopyWith<_$ConsentVerificationImpl> get copyWith =>

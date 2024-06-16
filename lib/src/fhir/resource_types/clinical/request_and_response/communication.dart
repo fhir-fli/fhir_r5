@@ -240,7 +240,8 @@ class Communication with _$Communication implements DomainResource {
     List<FhirUri>? instantiatesUri,
 
     /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
-    @JsonKey(name: '_instantiatesUri') List<Element>? instantiatesUriElement,
+    @JsonKey(name: '_instantiatesUri')
+    List<PrimitiveElement>? instantiatesUriElement,
 
     /// [basedOn] An order, proposal or plan fulfilled in whole or in part by this
     ///  Communication.
@@ -360,7 +361,6 @@ class Communication with _$Communication implements DomainResource {
     }
   }
 
-
   /// Another convenience method because more and more I'm transmitting FHIR
   /// data as a String and not a Map
   @override
@@ -384,7 +384,8 @@ class Communication with _$Communication implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));}
+      copyWith(meta: updateFhirMetaVersion(meta));
+}
 
 /// [CommunicationPayload] A clinical or business level record of information
 ///  being transmitted or shared; e.g. an alert that was sent to a responsible

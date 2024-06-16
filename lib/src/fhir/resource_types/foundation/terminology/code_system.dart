@@ -742,7 +742,7 @@ class CodeSystemFilter with _$CodeSystemFilter implements BackboneType {
     @JsonKey(name: 'operator') List<FhirCode>? operator_,
 
     /// [operatorElement] ("_operator") Extensions for operator
-    @JsonKey(name: '_operator') List<Element>? operatorElement,
+    @JsonKey(name: '_operator') List<PrimitiveElement>? operatorElement,
 
     /// [value] A description of what the value for the filter should be.
     String? value,

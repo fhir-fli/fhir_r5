@@ -456,7 +456,7 @@ _$ValueSetComposeImpl _$$ValueSetComposeImplFromJson(
           ?.map((e) => e as String)
           .toList(),
       propertyElement: (json['_property'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

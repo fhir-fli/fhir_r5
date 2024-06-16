@@ -132,7 +132,7 @@ _$DeviceDefinitionImpl _$$DeviceDefinitionImplFromJson(
               .toList(),
       productionIdentifierInUDIElement:
           (json['_productionIdentifierInUDI'] as List<dynamic>?)
-              ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
               .toList(),
       guideline: json['guideline'] == null
           ? null
@@ -647,7 +647,7 @@ _$DeviceDefinitionConformsToImpl _$$DeviceDefinitionConformsToImplFromJson(
       version:
           (json['version'] as List<dynamic>?)?.map((e) => e as String).toList(),
       versionElement: (json['_version'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       source: (json['source'] as List<dynamic>?)
           ?.map((e) => RelatedArtifact.fromJson(e as Map<String, dynamic>))

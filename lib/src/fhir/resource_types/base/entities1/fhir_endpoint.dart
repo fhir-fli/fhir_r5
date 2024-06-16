@@ -257,7 +257,7 @@ class FhirEndpoint with _$FhirEndpoint implements DomainResource {
     List<String>? header,
 
     /// [headerElement] ("_header") Extensions for header
-    @JsonKey(name: '_header') List<Element>? headerElement,
+    @JsonKey(name: '_header') List<PrimitiveElement>? headerElement,
   }) = _FhirEndpoint;
 
   @override
@@ -298,7 +298,7 @@ class FhirEndpoint with _$FhirEndpoint implements DomainResource {
   /// data as a String and not a Map
   @override
   String toJsonString() => jsonEncode(toJson());
-  
+
   @override
   Resource newId() => copyWith(id: generateNewUUidFhirId());
 
@@ -408,7 +408,7 @@ class EndpointPayload with _$EndpointPayload implements BackboneType {
     List<MimeType>? mimeType,
 
     /// [mimeTypeElement] ("_mimeType") Extensions for mimeType
-    @JsonKey(name: '_mimeType') List<Element>? mimeTypeElement,
+    @JsonKey(name: '_mimeType') List<PrimitiveElement>? mimeTypeElement,
   }) = _EndpointPayload;
 
   @override
@@ -441,10 +441,9 @@ class EndpointPayload with _$EndpointPayload implements BackboneType {
     }
   }
 
-      @override
+  @override
   String toJsonString() => jsonEncode(toJson());
 
   @override
   String toYaml() => json2yaml(toJson());
-
 }

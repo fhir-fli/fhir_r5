@@ -53,7 +53,8 @@ mixin _$Timing {
 
   /// [eventElement] ("_event") Extensions for event
   @JsonKey(name: '_event')
-  List<Element>? get eventElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get eventElement =>
+      throw _privateConstructorUsedError;
 
   /// [repeat] A set of rules that describe when the event is scheduled.
   TimingRepeat? get repeat => throw _privateConstructorUsedError;
@@ -82,7 +83,7 @@ abstract class $TimingCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<FhirDateTime>? event,
-      @JsonKey(name: '_event') List<Element>? eventElement,
+      @JsonKey(name: '_event') List<PrimitiveElement>? eventElement,
       TimingRepeat? repeat,
       CodeableConcept? code});
 
@@ -131,7 +132,7 @@ class _$TimingCopyWithImpl<$Res, $Val extends Timing>
       eventElement: freezed == eventElement
           ? _value.eventElement
           : eventElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       repeat: freezed == repeat
           ? _value.repeat
           : repeat // ignore: cast_nullable_to_non_nullable
@@ -180,7 +181,7 @@ abstract class _$$TimingImplCopyWith<$Res> implements $TimingCopyWith<$Res> {
       @JsonKey(name: 'extension') List<FhirExtension>? extension_,
       List<FhirExtension>? modifierExtension,
       List<FhirDateTime>? event,
-      @JsonKey(name: '_event') List<Element>? eventElement,
+      @JsonKey(name: '_event') List<PrimitiveElement>? eventElement,
       TimingRepeat? repeat,
       CodeableConcept? code});
 
@@ -229,7 +230,7 @@ class __$$TimingImplCopyWithImpl<$Res>
       eventElement: freezed == eventElement
           ? _value._eventElement
           : eventElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       repeat: freezed == repeat
           ? _value.repeat
           : repeat // ignore: cast_nullable_to_non_nullable
@@ -250,7 +251,7 @@ class _$TimingImpl extends _Timing {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final List<FhirDateTime>? event,
-      @JsonKey(name: '_event') final List<Element>? eventElement,
+      @JsonKey(name: '_event') final List<PrimitiveElement>? eventElement,
       this.repeat,
       this.code})
       : _extension_ = extension_,
@@ -341,12 +342,12 @@ class _$TimingImpl extends _Timing {
   }
 
   /// [eventElement] ("_event") Extensions for event
-  final List<Element>? _eventElement;
+  final List<PrimitiveElement>? _eventElement;
 
   /// [eventElement] ("_event") Extensions for event
   @override
   @JsonKey(name: '_event')
-  List<Element>? get eventElement {
+  List<PrimitiveElement>? get eventElement {
     final value = _eventElement;
     if (value == null) return null;
     if (_eventElement is EqualUnmodifiableListView) return _eventElement;
@@ -422,7 +423,7 @@ abstract class _Timing extends Timing {
       @JsonKey(name: 'extension') final List<FhirExtension>? extension_,
       final List<FhirExtension>? modifierExtension,
       final List<FhirDateTime>? event,
-      @JsonKey(name: '_event') final List<Element>? eventElement,
+      @JsonKey(name: '_event') final List<PrimitiveElement>? eventElement,
       final TimingRepeat? repeat,
       final CodeableConcept? code}) = _$TimingImpl;
   const _Timing._() : super._();
@@ -467,7 +468,7 @@ abstract class _Timing extends Timing {
 
   /// [eventElement] ("_event") Extensions for event
   @JsonKey(name: '_event')
-  List<Element>? get eventElement;
+  List<PrimitiveElement>? get eventElement;
   @override
 
   /// [repeat] A set of rules that describe when the event is scheduled.
@@ -635,14 +636,16 @@ mixin _$TimingRepeat {
 
   /// [dayOfWeekElement] ("_dayOfWeek") Extensions for dayOfWeek
   @JsonKey(name: '_dayOfWeek')
-  List<Element>? get dayOfWeekElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get dayOfWeekElement =>
+      throw _privateConstructorUsedError;
 
   /// [timeOfDay] Specified time of day for action to take place.
   List<FhirTime>? get timeOfDay => throw _privateConstructorUsedError;
 
   /// [timeOfDayElement] ("_timeOfDay") Extensions for timeOfDay
   @JsonKey(name: '_timeOfDay')
-  List<Element>? get timeOfDayElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get timeOfDayElement =>
+      throw _privateConstructorUsedError;
 
   /// [when] An approximate time period during the day, potentially linked to an
   ///  event of daily living that indicates when the action should occur.
@@ -650,7 +653,7 @@ mixin _$TimingRepeat {
 
   /// [whenElement] ("_when") Extensions for when
   @JsonKey(name: '_when')
-  List<Element>? get whenElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get whenElement => throw _privateConstructorUsedError;
 
   /// [offset] The number of minutes from the event. If the event code does not
   ///  indicate whether the minutes is before or after the event, then the offset
@@ -701,11 +704,11 @@ abstract class $TimingRepeatCopyWith<$Res> {
       UnitsOfTime? periodUnit,
       @JsonKey(name: '_periodUnit') PrimitiveElement? periodUnitElement,
       List<DaysOfWeek>? dayOfWeek,
-      @JsonKey(name: '_dayOfWeek') List<Element>? dayOfWeekElement,
+      @JsonKey(name: '_dayOfWeek') List<PrimitiveElement>? dayOfWeekElement,
       List<FhirTime>? timeOfDay,
-      @JsonKey(name: '_timeOfDay') List<Element>? timeOfDayElement,
+      @JsonKey(name: '_timeOfDay') List<PrimitiveElement>? timeOfDayElement,
       List<TimingRepeatWhen>? when,
-      @JsonKey(name: '_when') List<Element>? whenElement,
+      @JsonKey(name: '_when') List<PrimitiveElement>? whenElement,
       FhirUnsignedInt? offset,
       @JsonKey(name: '_offset') PrimitiveElement? offsetElement});
 
@@ -874,7 +877,7 @@ class _$TimingRepeatCopyWithImpl<$Res, $Val extends TimingRepeat>
       dayOfWeekElement: freezed == dayOfWeekElement
           ? _value.dayOfWeekElement
           : dayOfWeekElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       timeOfDay: freezed == timeOfDay
           ? _value.timeOfDay
           : timeOfDay // ignore: cast_nullable_to_non_nullable
@@ -882,7 +885,7 @@ class _$TimingRepeatCopyWithImpl<$Res, $Val extends TimingRepeat>
       timeOfDayElement: freezed == timeOfDayElement
           ? _value.timeOfDayElement
           : timeOfDayElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       when: freezed == when
           ? _value.when
           : when // ignore: cast_nullable_to_non_nullable
@@ -890,7 +893,7 @@ class _$TimingRepeatCopyWithImpl<$Res, $Val extends TimingRepeat>
       whenElement: freezed == whenElement
           ? _value.whenElement
           : whenElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       offset: freezed == offset
           ? _value.offset
           : offset // ignore: cast_nullable_to_non_nullable
@@ -975,11 +978,11 @@ abstract class _$$TimingRepeatImplCopyWith<$Res>
       UnitsOfTime? periodUnit,
       @JsonKey(name: '_periodUnit') PrimitiveElement? periodUnitElement,
       List<DaysOfWeek>? dayOfWeek,
-      @JsonKey(name: '_dayOfWeek') List<Element>? dayOfWeekElement,
+      @JsonKey(name: '_dayOfWeek') List<PrimitiveElement>? dayOfWeekElement,
       List<FhirTime>? timeOfDay,
-      @JsonKey(name: '_timeOfDay') List<Element>? timeOfDayElement,
+      @JsonKey(name: '_timeOfDay') List<PrimitiveElement>? timeOfDayElement,
       List<TimingRepeatWhen>? when,
-      @JsonKey(name: '_when') List<Element>? whenElement,
+      @JsonKey(name: '_when') List<PrimitiveElement>? whenElement,
       FhirUnsignedInt? offset,
       @JsonKey(name: '_offset') PrimitiveElement? offsetElement});
 
@@ -1149,7 +1152,7 @@ class __$$TimingRepeatImplCopyWithImpl<$Res>
       dayOfWeekElement: freezed == dayOfWeekElement
           ? _value._dayOfWeekElement
           : dayOfWeekElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       timeOfDay: freezed == timeOfDay
           ? _value._timeOfDay
           : timeOfDay // ignore: cast_nullable_to_non_nullable
@@ -1157,7 +1160,7 @@ class __$$TimingRepeatImplCopyWithImpl<$Res>
       timeOfDayElement: freezed == timeOfDayElement
           ? _value._timeOfDayElement
           : timeOfDayElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       when: freezed == when
           ? _value._when
           : when // ignore: cast_nullable_to_non_nullable
@@ -1165,7 +1168,7 @@ class __$$TimingRepeatImplCopyWithImpl<$Res>
       whenElement: freezed == whenElement
           ? _value._whenElement
           : whenElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       offset: freezed == offset
           ? _value.offset
           : offset // ignore: cast_nullable_to_non_nullable
@@ -1209,11 +1212,13 @@ class _$TimingRepeatImpl extends _TimingRepeat {
       this.periodUnit,
       @JsonKey(name: '_periodUnit') this.periodUnitElement,
       final List<DaysOfWeek>? dayOfWeek,
-      @JsonKey(name: '_dayOfWeek') final List<Element>? dayOfWeekElement,
+      @JsonKey(name: '_dayOfWeek')
+      final List<PrimitiveElement>? dayOfWeekElement,
       final List<FhirTime>? timeOfDay,
-      @JsonKey(name: '_timeOfDay') final List<Element>? timeOfDayElement,
+      @JsonKey(name: '_timeOfDay')
+      final List<PrimitiveElement>? timeOfDayElement,
       final List<TimingRepeatWhen>? when,
-      @JsonKey(name: '_when') final List<Element>? whenElement,
+      @JsonKey(name: '_when') final List<PrimitiveElement>? whenElement,
       this.offset,
       @JsonKey(name: '_offset') this.offsetElement})
       : _extension_ = extension_,
@@ -1437,12 +1442,12 @@ class _$TimingRepeatImpl extends _TimingRepeat {
   }
 
   /// [dayOfWeekElement] ("_dayOfWeek") Extensions for dayOfWeek
-  final List<Element>? _dayOfWeekElement;
+  final List<PrimitiveElement>? _dayOfWeekElement;
 
   /// [dayOfWeekElement] ("_dayOfWeek") Extensions for dayOfWeek
   @override
   @JsonKey(name: '_dayOfWeek')
-  List<Element>? get dayOfWeekElement {
+  List<PrimitiveElement>? get dayOfWeekElement {
     final value = _dayOfWeekElement;
     if (value == null) return null;
     if (_dayOfWeekElement is EqualUnmodifiableListView)
@@ -1465,12 +1470,12 @@ class _$TimingRepeatImpl extends _TimingRepeat {
   }
 
   /// [timeOfDayElement] ("_timeOfDay") Extensions for timeOfDay
-  final List<Element>? _timeOfDayElement;
+  final List<PrimitiveElement>? _timeOfDayElement;
 
   /// [timeOfDayElement] ("_timeOfDay") Extensions for timeOfDay
   @override
   @JsonKey(name: '_timeOfDay')
-  List<Element>? get timeOfDayElement {
+  List<PrimitiveElement>? get timeOfDayElement {
     final value = _timeOfDayElement;
     if (value == null) return null;
     if (_timeOfDayElement is EqualUnmodifiableListView)
@@ -1495,12 +1500,12 @@ class _$TimingRepeatImpl extends _TimingRepeat {
   }
 
   /// [whenElement] ("_when") Extensions for when
-  final List<Element>? _whenElement;
+  final List<PrimitiveElement>? _whenElement;
 
   /// [whenElement] ("_when") Extensions for when
   @override
   @JsonKey(name: '_when')
-  List<Element>? get whenElement {
+  List<PrimitiveElement>? get whenElement {
     final value = _whenElement;
     if (value == null) return null;
     if (_whenElement is EqualUnmodifiableListView) return _whenElement;
@@ -1679,11 +1684,13 @@ abstract class _TimingRepeat extends TimingRepeat {
       final UnitsOfTime? periodUnit,
       @JsonKey(name: '_periodUnit') final PrimitiveElement? periodUnitElement,
       final List<DaysOfWeek>? dayOfWeek,
-      @JsonKey(name: '_dayOfWeek') final List<Element>? dayOfWeekElement,
+      @JsonKey(name: '_dayOfWeek')
+      final List<PrimitiveElement>? dayOfWeekElement,
       final List<FhirTime>? timeOfDay,
-      @JsonKey(name: '_timeOfDay') final List<Element>? timeOfDayElement,
+      @JsonKey(name: '_timeOfDay')
+      final List<PrimitiveElement>? timeOfDayElement,
       final List<TimingRepeatWhen>? when,
-      @JsonKey(name: '_when') final List<Element>? whenElement,
+      @JsonKey(name: '_when') final List<PrimitiveElement>? whenElement,
       final FhirUnsignedInt? offset,
       @JsonKey(name: '_offset')
       final PrimitiveElement? offsetElement}) = _$TimingRepeatImpl;
@@ -1858,7 +1865,7 @@ abstract class _TimingRepeat extends TimingRepeat {
 
   /// [dayOfWeekElement] ("_dayOfWeek") Extensions for dayOfWeek
   @JsonKey(name: '_dayOfWeek')
-  List<Element>? get dayOfWeekElement;
+  List<PrimitiveElement>? get dayOfWeekElement;
   @override
 
   /// [timeOfDay] Specified time of day for action to take place.
@@ -1867,7 +1874,7 @@ abstract class _TimingRepeat extends TimingRepeat {
 
   /// [timeOfDayElement] ("_timeOfDay") Extensions for timeOfDay
   @JsonKey(name: '_timeOfDay')
-  List<Element>? get timeOfDayElement;
+  List<PrimitiveElement>? get timeOfDayElement;
   @override
 
   /// [when] An approximate time period during the day, potentially linked to an
@@ -1877,7 +1884,7 @@ abstract class _TimingRepeat extends TimingRepeat {
 
   /// [whenElement] ("_when") Extensions for when
   @JsonKey(name: '_when')
-  List<Element>? get whenElement;
+  List<PrimitiveElement>? get whenElement;
   @override
 
   /// [offset] The number of minutes from the event. If the event code does not
