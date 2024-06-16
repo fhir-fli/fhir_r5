@@ -1,4 +1,4 @@
-part of 'documents.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum CompositionStatus {
   @JsonValue('registered')

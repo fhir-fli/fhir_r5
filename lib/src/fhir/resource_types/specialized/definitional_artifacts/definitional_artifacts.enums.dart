@@ -1,4 +1,4 @@
-part of 'definitional_artifacts.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum ConditionPreconditionType {
   @JsonValue('sensitive')

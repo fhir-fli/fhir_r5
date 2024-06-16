@@ -1,4 +1,5 @@
-part of 'support.dart';
+
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum CoverageKind {
   @JsonValue('insurance')

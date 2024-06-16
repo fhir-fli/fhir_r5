@@ -1,4 +1,5 @@
-part of 'management.dart';
+
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum EncounterStatus {
   @JsonValue('planned')

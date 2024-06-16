@@ -1,4 +1,4 @@
-part of 'medication_definition.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum MedicinalProductType {
   @JsonValue('MedicinalProduct')

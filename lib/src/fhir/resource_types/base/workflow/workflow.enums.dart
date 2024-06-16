@@ -1,4 +1,5 @@
-part of 'workflow.dart';
+
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum TaskStatus {
   @JsonValue('draft')

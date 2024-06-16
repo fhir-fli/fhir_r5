@@ -1,4 +1,4 @@
-part of 'summary.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum AllergyIntoleranceType {
   @JsonValue('allergy')
@@ -32,7 +32,6 @@ enum AllergyIntoleranceType {
         return 'allergy';
       case AllergyIntoleranceType.intolerance:
         return 'intolerance';
-
     }
   }
 
@@ -83,7 +82,6 @@ enum AllergyIntoleranceCategory {
         return 'environment';
       case AllergyIntoleranceCategory.biologic:
         return 'biologic';
-
     }
   }
 
@@ -128,7 +126,6 @@ enum AllergyIntoleranceCriticality {
         return 'high';
       case AllergyIntoleranceCriticality.unabletoassess:
         return 'unable-to-assess';
-
     }
   }
 
@@ -173,7 +170,6 @@ enum ReactionEventSeverity {
         return 'moderate';
       case ReactionEventSeverity.severe:
         return 'severe';
-
     }
   }
 
@@ -212,7 +208,6 @@ enum AdverseEventActuality {
         return 'actual';
       case AdverseEventActuality.potential:
         return 'potential';
-
     }
   }
 
@@ -257,7 +252,6 @@ enum DeviceAction {
         return 'explanted';
       case DeviceAction.manipulated:
         return 'manipulated';
-
     }
   }
 
@@ -308,7 +302,6 @@ enum HistoryStatus {
         return 'entered-in-error';
       case HistoryStatus.healthunknown:
         return 'health-unknown';
-
     }
   }
 
@@ -341,7 +334,6 @@ enum DetectedissueStatus {
     switch (this) {
       case DetectedissueStatus.mitigated:
         return 'mitigated';
-
     }
   }
 
@@ -386,7 +378,6 @@ enum DetectedissueSeverity {
         return 'moderate';
       case DetectedissueSeverity.low:
         return 'low';
-
     }
   }
 

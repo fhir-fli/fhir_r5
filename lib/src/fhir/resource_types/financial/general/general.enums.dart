@@ -1,4 +1,5 @@
-part of 'general.dart';
+
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum AccountStatus {
   @JsonValue('active')

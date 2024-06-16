@@ -1,4 +1,4 @@
-part of 'evidence_based_medicine.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum ArtifactassessmentInformationType {
   @JsonValue('comment')
