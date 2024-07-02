@@ -202,7 +202,7 @@ class MockFhirRequest extends _i1.Mock implements _i2.FhirRequest {
     required TResult Function(
       Uri,
       _i2.R5ResourceType,
-      String,
+      _i2.FhirId,
       bool?,
       _i2.Summary,
       String?,
@@ -216,7 +216,7 @@ class MockFhirRequest extends _i1.Mock implements _i2.FhirRequest {
     required TResult Function(
       Uri,
       _i2.R5ResourceType,
-      String,
+      _i2.FhirId,
       _i2.FhirId,
       bool?,
       _i2.Summary,
@@ -257,7 +257,7 @@ class MockFhirRequest extends _i1.Mock implements _i2.FhirRequest {
     required TResult Function(
       Uri,
       _i2.R5ResourceType,
-      String,
+      _i2.FhirId,
       bool?,
       _i2.Summary,
       String?,
@@ -350,7 +350,7 @@ class MockFhirRequest extends _i1.Mock implements _i2.FhirRequest {
     required TResult Function(
       Uri,
       _i2.R5ResourceType,
-      String,
+      _i2.FhirId,
       bool?,
       _i2.Summary,
       String?,
@@ -401,7 +401,7 @@ class MockFhirRequest extends _i1.Mock implements _i2.FhirRequest {
     required TResult Function(
       Uri,
       _i2.R5ResourceType?,
-      String?,
+      _i2.FhirId?,
       bool?,
       _i2.Summary,
       String?,
@@ -470,7 +470,7 @@ class MockFhirRequest extends _i1.Mock implements _i2.FhirRequest {
     TResult Function(
       Uri,
       _i2.R5ResourceType,
-      String,
+      _i2.FhirId,
       bool?,
       _i2.Summary,
       String?,
@@ -484,7 +484,7 @@ class MockFhirRequest extends _i1.Mock implements _i2.FhirRequest {
     TResult Function(
       Uri,
       _i2.R5ResourceType,
-      String,
+      _i2.FhirId,
       _i2.FhirId,
       bool?,
       _i2.Summary,
@@ -525,7 +525,7 @@ class MockFhirRequest extends _i1.Mock implements _i2.FhirRequest {
     TResult Function(
       Uri,
       _i2.R5ResourceType,
-      String,
+      _i2.FhirId,
       bool?,
       _i2.Summary,
       String?,
@@ -618,7 +618,7 @@ class MockFhirRequest extends _i1.Mock implements _i2.FhirRequest {
     TResult Function(
       Uri,
       _i2.R5ResourceType,
-      String,
+      _i2.FhirId,
       bool?,
       _i2.Summary,
       String?,
@@ -669,7 +669,7 @@ class MockFhirRequest extends _i1.Mock implements _i2.FhirRequest {
     TResult Function(
       Uri,
       _i2.R5ResourceType?,
-      String?,
+      _i2.FhirId?,
       bool?,
       _i2.Summary,
       String?,
