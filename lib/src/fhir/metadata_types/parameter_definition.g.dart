@@ -44,30 +44,21 @@ _$ParameterDefinitionImpl _$$ParameterDefinitionImplFromJson(
     );
 
 Map<String, dynamic> _$$ParameterDefinitionImplToJson(
-    _$ParameterDefinitionImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('name', instance.name?.toJson());
-  writeNotNull('_name', instance.nameElement?.toJson());
-  writeNotNull('use', instance.use?.toJson());
-  writeNotNull('_use', instance.useElement?.toJson());
-  writeNotNull('min', instance.min?.toJson());
-  writeNotNull('_min', instance.minElement?.toJson());
-  writeNotNull('max', instance.max);
-  writeNotNull('_max', instance.maxElement?.toJson());
-  writeNotNull('documentation', instance.documentation);
-  writeNotNull('_documentation', instance.documentationElement?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('_type', instance.typeElement?.toJson());
-  writeNotNull('profile', instance.profile?.toJson());
-  return val;
-}
+        _$ParameterDefinitionImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'name': instance.name,
+      '_name': instance.nameElement,
+      'use': instance.use,
+      '_use': instance.useElement,
+      'min': instance.min,
+      '_min': instance.minElement,
+      'max': instance.max,
+      '_max': instance.maxElement,
+      'documentation': instance.documentation,
+      '_documentation': instance.documentationElement,
+      'type': instance.type,
+      '_type': instance.typeElement,
+      'profile': instance.profile,
+    };

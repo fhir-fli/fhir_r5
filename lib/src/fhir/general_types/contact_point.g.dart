@@ -34,29 +34,20 @@ _$ContactPointImpl _$$ContactPointImplFromJson(Map<String, dynamic> json) =>
           : Period.fromJson(json['period'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$ContactPointImplToJson(_$ContactPointImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('system', instance.system?.toJson());
-  writeNotNull('_system', instance.systemElement?.toJson());
-  writeNotNull('value', instance.value);
-  writeNotNull('_value', instance.valueElement?.toJson());
-  writeNotNull('use', instance.use?.toJson());
-  writeNotNull('_use', instance.useElement?.toJson());
-  writeNotNull('rank', instance.rank?.toJson());
-  writeNotNull('_rank', instance.rankElement?.toJson());
-  writeNotNull('period', instance.period?.toJson());
-  return val;
-}
+Map<String, dynamic> _$$ContactPointImplToJson(_$ContactPointImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'system': instance.system,
+      '_system': instance.systemElement,
+      'value': instance.value,
+      '_value': instance.valueElement,
+      'use': instance.use,
+      '_use': instance.useElement,
+      'rank': instance.rank,
+      '_rank': instance.rankElement,
+      'period': instance.period,
+    };
 
 const _$ContactPointSystemEnumMap = {
   ContactPointSystem.phone: 'phone',

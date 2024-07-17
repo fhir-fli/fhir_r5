@@ -457,7 +457,7 @@ class AdverseEvent with _$AdverseEvent implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [AdverseEventParticipant] An event (i.e. any change to current patient

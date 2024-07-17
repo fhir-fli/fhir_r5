@@ -332,8 +332,12 @@ mixin _$EvidenceVariable {
   List<EvidenceVariableCategory>? get category =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this EvidenceVariable to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of EvidenceVariable
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EvidenceVariableCopyWith<EvidenceVariable> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -426,6 +430,8 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EvidenceVariable
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -744,6 +750,8 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
     ) as $Val);
   }
 
+  /// Create a copy of EvidenceVariable
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -756,6 +764,8 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
     });
   }
 
+  /// Create a copy of EvidenceVariable
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -768,6 +778,8 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
     });
   }
 
+  /// Create a copy of EvidenceVariable
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get versionAlgorithmCoding {
@@ -780,6 +792,8 @@ class _$EvidenceVariableCopyWithImpl<$Res, $Val extends EvidenceVariable>
     });
   }
 
+  /// Create a copy of EvidenceVariable
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get effectivePeriod {
@@ -885,6 +899,8 @@ class __$$EvidenceVariableImplCopyWithImpl<$Res>
       $Res Function(_$EvidenceVariableImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EvidenceVariable
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1949,7 +1965,7 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
             const DeepCollectionEquality().equals(other._category, _category));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -2017,7 +2033,9 @@ class _$EvidenceVariableImpl extends _EvidenceVariable {
         const DeepCollectionEquality().hash(_category)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EvidenceVariable
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EvidenceVariableImplCopyWith<_$EvidenceVariableImpl> get copyWith =>
@@ -2108,44 +2126,42 @@ abstract class _EvidenceVariable extends EvidenceVariable {
   factory _EvidenceVariable.fromJson(Map<String, dynamic> json) =
       _$EvidenceVariableImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a EvidenceVariable resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.EvidenceVariable)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -2153,16 +2169,16 @@ abstract class _EvidenceVariable extends EvidenceVariable {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -2170,9 +2186,9 @@ abstract class _EvidenceVariable extends EvidenceVariable {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -2186,8 +2202,8 @@ abstract class _EvidenceVariable extends EvidenceVariable {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [url] An absolute URI that is used to identify this evidence variable when
   ///  it is referenced in a specification, model, design or an instance; also
@@ -2196,19 +2212,19 @@ abstract class _EvidenceVariable extends EvidenceVariable {
   ///  variable is (or will be) published. This URL can be the target of a
   ///  canonical reference. It SHALL remain the same when the evidence variable
   ///  is stored on different servers.
-  FhirUri? get url;
   @override
+  FhirUri? get url;
 
   /// [urlElement] ("_url") Extensions for url
+  @override
   @JsonKey(name: '_url')
   PrimitiveElement? get urlElement;
-  @override
 
   /// [identifier] A formal identifier that is used to identify this evidence
   ///  variable when it is represented in other formats, or referenced in a
   ///  specification, model, design or an instance.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [version] The identifier that is used to identify this version of the
   ///  evidence variable when it is referenced in a specification, model, design
@@ -2221,258 +2237,262 @@ abstract class _EvidenceVariable extends EvidenceVariable {
   ///  For more information on versioning knowledge assets, refer to the Decision
   ///  Support Service specification. Note that a version is required for
   ///  non-experimental active artifacts.
-  String? get version;
   @override
+  String? get version;
 
   /// [versionElement] ("_version") Extensions for version
+  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
-  @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  String? get versionAlgorithmString;
   @override
+  String? get versionAlgorithmString;
 
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
+  @override
   @JsonKey(name: '_versionAlgorithmString')
   PrimitiveElement? get versionAlgorithmStringElement;
-  @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  Coding? get versionAlgorithmCoding;
   @override
+  Coding? get versionAlgorithmCoding;
 
   /// [name] A natural language name identifying the evidence variable. This name
   ///  should be usable as an identifier for the module by machine processing
   ///  applications such as code generation.
-  String? get name;
   @override
+  String? get name;
 
   /// [nameElement] ("_name") Extensions for name
+  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
-  @override
 
   /// [title] A short, descriptive, user-friendly title for the evidence variable.
-  String? get title;
   @override
+  String? get title;
 
   /// [titleElement] ("_title") Extensions for title
+  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
-  @override
 
   /// [status] The status of this evidence variable. Enables tracking the
   ///  life-cycle of the content.
-  PublicationStatus? get status;
   @override
+  PublicationStatus? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [experimental] A Boolean value to indicate that this resource is authored
   ///  for testing purposes (or education/evaluation/marketing) and is not
   ///  intended to be used for genuine usage.
-  FhirBoolean? get experimental;
   @override
+  FhirBoolean? get experimental;
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
+  @override
   @JsonKey(name: '_experimental')
   PrimitiveElement? get experimentalElement;
-  @override
 
   /// [date] The date  (and optionally time) when the evidence variable was last
   ///  significantly changed. The date must change when the business version
   ///  changes and it must change if the status code changes. In addition, it
   ///  should change when the substantive content of the evidence variable
   ///  changes.
-  FhirDateTime? get date;
   @override
+  FhirDateTime? get date;
 
   /// [dateElement] ("_date") Extensions for date
+  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
-  @override
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the evidence variable.
-  String? get publisher;
   @override
+  String? get publisher;
 
   /// [publisherElement] ("_publisher") Extensions for publisher
+  @override
   @JsonKey(name: '_publisher')
   PrimitiveElement? get publisherElement;
-  @override
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
-  List<ContactDetail>? get contact;
   @override
+  List<ContactDetail>? get contact;
 
   /// [description] A free text natural language description of the evidence
   ///  variable from a consumer's perspective.
-  FhirMarkdown? get description;
   @override
+  FhirMarkdown? get description;
 
   /// [descriptionElement] ("_description") Extensions for description
+  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
-  @override
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
   ///  categories (gender, age, ...) or may be references to specific programs
   ///  (insurance plans, studies, ...) and may be used to assist with indexing
   ///  and searching for appropriate evidence variable instances.
-  List<UsageContext>? get useContext;
   @override
+  List<UsageContext>? get useContext;
 
   /// [jurisdiction] A legal or geographic region in which the {{title}} is
   ///  intended to be used.
-  List<CodeableConcept>? get jurisdiction;
   @override
+  List<CodeableConcept>? get jurisdiction;
 
   /// [purpose] Explanation of why this EvidenceVariable is needed and why it has
   ///  been designed as it has.
-  FhirMarkdown? get purpose;
   @override
+  FhirMarkdown? get purpose;
 
   /// [purposeElement] ("_purpose") Extensions for purpose
+  @override
   @JsonKey(name: '_purpose')
   PrimitiveElement? get purposeElement;
-  @override
 
   /// [copyright] A copyright statement relating to the resource and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
   ///  and publishing of the resource.
-  FhirMarkdown? get copyright;
   @override
+  FhirMarkdown? get copyright;
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
+  @override
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement;
-  @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
   ///  optionally whether rights are resctricted. (e.g. 'All rights reserved',
   ///  'Some rights reserved').
-  String? get copyrightLabel;
   @override
+  String? get copyrightLabel;
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
+  @override
   @JsonKey(name: '_copyrightLabel')
   PrimitiveElement? get copyrightLabelElement;
-  @override
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
   ///  for usage. See guidance around (not) making local changes to elements
   /// [here](canonicalresource.html#localization).
-  FhirDate? get approvalDate;
   @override
+  FhirDate? get approvalDate;
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
+  @override
   @JsonKey(name: '_approvalDate')
   PrimitiveElement? get approvalDateElement;
-  @override
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
   ///  original approval date.
-  FhirDate? get lastReviewDate;
   @override
+  FhirDate? get lastReviewDate;
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
+  @override
   @JsonKey(name: '_lastReviewDate')
   PrimitiveElement? get lastReviewDateElement;
-  @override
 
   /// [effectivePeriod] The period during which the resource content was or is
   ///  planned to be in active use.
-  Period? get effectivePeriod;
   @override
+  Period? get effectivePeriod;
 
   /// [topic] Descriptive topics related to the content of the {{title}}. Topics
   ///  provide a high-level categorization as well as keywords for the {{title}}
   ///  that can be useful for filtering and searching.
-  List<CodeableConcept>? get topic;
   @override
+  List<CodeableConcept>? get topic;
 
   /// [author] An individiual or organization primarily involved in the creation
   ///  and maintenance of the content.
-  List<ContactDetail>? get author;
   @override
+  List<ContactDetail>? get author;
 
   /// [editor] An individual or organization primarily responsible for internal
   ///  coherence of the content.
-  List<ContactDetail>? get editor;
   @override
+  List<ContactDetail>? get editor;
 
   /// [reviewer] An individual or organization asserted by the publisher to be
   ///  primarily responsible for review of some aspect of the content.
-  List<ContactDetail>? get reviewer;
   @override
+  List<ContactDetail>? get reviewer;
 
   /// [endorser] An individual or organization asserted by the publisher to be
   ///  responsible for officially endorsing the content for use in some setting.
-  List<ContactDetail>? get endorser;
   @override
+  List<ContactDetail>? get endorser;
 
   /// [relatedArtifact] Related artifacts such as additional documentation,
   ///  justification, or bibliographic references.
-  List<RelatedArtifact>? get relatedArtifact;
   @override
+  List<RelatedArtifact>? get relatedArtifact;
 
   /// [shortTitle] The short title provides an alternate title for use in
   ///  informal descriptive contexts where the full, formal title is not
   ///  necessary.
-  String? get shortTitle;
   @override
+  String? get shortTitle;
 
   /// [shortTitleElement] ("_shortTitle") Extensions for shortTitle
+  @override
   @JsonKey(name: '_shortTitle')
   PrimitiveElement? get shortTitleElement;
-  @override
 
   /// [note] A human-readable string to clarify or explain concepts about the
   ///  resource.
-  List<Annotation>? get note;
   @override
+  List<Annotation>? get note;
 
   /// [actual] True if the actual variable measured, false if a conceptual
   ///  representation of the intended variable.
-  FhirBoolean? get actual;
   @override
+  FhirBoolean? get actual;
 
   /// [actualElement] ("_actual") Extensions for actual
+  @override
   @JsonKey(name: '_actual')
   PrimitiveElement? get actualElement;
-  @override
 
   /// [characteristic] A defining factor of the EvidenceVariable. Multiple
   ///  characteristics are applied with "and" semantics.
-  List<EvidenceVariableCharacteristic>? get characteristic;
   @override
+  List<EvidenceVariableCharacteristic>? get characteristic;
 
   /// [handling] The method of handling in statistical analysis.
-  FhirCode? get handling;
   @override
+  FhirCode? get handling;
 
   /// [handlingElement] ("_handling") Extensions for handling
+  @override
   @JsonKey(name: '_handling')
   PrimitiveElement? get handlingElement;
-  @override
 
   /// [category] A grouping for ordinal or polychotomous variables.
-  List<EvidenceVariableCategory>? get category;
   @override
-  @JsonKey(ignore: true)
+  List<EvidenceVariableCategory>? get category;
+
+  /// Create a copy of EvidenceVariable
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EvidenceVariableImplCopyWith<_$EvidenceVariableImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2591,8 +2611,12 @@ mixin _$EvidenceVariableCharacteristic {
   List<EvidenceVariableTimeFromEvent>? get timeFromEvent =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this EvidenceVariableCharacteristic to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of EvidenceVariableCharacteristic
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EvidenceVariableCharacteristicCopyWith<EvidenceVariableCharacteristic>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2654,6 +2678,8 @@ class _$EvidenceVariableCharacteristicCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EvidenceVariableCharacteristic
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2777,6 +2803,8 @@ class _$EvidenceVariableCharacteristicCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of EvidenceVariableCharacteristic
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get definitionReference {
@@ -2789,6 +2817,8 @@ class _$EvidenceVariableCharacteristicCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableCharacteristic
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get definitionCodeableConcept {
@@ -2802,6 +2832,8 @@ class _$EvidenceVariableCharacteristicCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableCharacteristic
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirExpressionCopyWith<$Res>? get definitionExpression {
@@ -2814,6 +2846,8 @@ class _$EvidenceVariableCharacteristicCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableCharacteristic
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $EvidenceVariableDefinitionByTypeAndValueCopyWith<$Res>?
@@ -2828,6 +2862,8 @@ class _$EvidenceVariableCharacteristicCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableCharacteristic
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $EvidenceVariableDefinitionByCombinationCopyWith<$Res>?
@@ -2842,6 +2878,8 @@ class _$EvidenceVariableCharacteristicCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableCharacteristic
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get instancesQuantity {
@@ -2854,6 +2892,8 @@ class _$EvidenceVariableCharacteristicCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableCharacteristic
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get instancesRange {
@@ -2866,6 +2906,8 @@ class _$EvidenceVariableCharacteristicCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableCharacteristic
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get durationQuantity {
@@ -2878,6 +2920,8 @@ class _$EvidenceVariableCharacteristicCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableCharacteristic
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get durationRange {
@@ -2957,6 +3001,8 @@ class __$$EvidenceVariableCharacteristicImplCopyWithImpl<$Res>
       $Res Function(_$EvidenceVariableCharacteristicImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EvidenceVariableCharacteristic
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3352,7 +3398,7 @@ class _$EvidenceVariableCharacteristicImpl
                 .equals(other._timeFromEvent, _timeFromEvent));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -3381,7 +3427,9 @@ class _$EvidenceVariableCharacteristicImpl
         const DeepCollectionEquality().hash(_timeFromEvent)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EvidenceVariableCharacteristic
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EvidenceVariableCharacteristicImplCopyWith<
@@ -3430,12 +3478,10 @@ abstract class _EvidenceVariableCharacteristic
   factory _EvidenceVariableCharacteristic.fromJson(Map<String, dynamic> json) =
       _$EvidenceVariableCharacteristicImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3443,9 +3489,9 @@ abstract class _EvidenceVariableCharacteristic
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3459,101 +3505,105 @@ abstract class _EvidenceVariableCharacteristic
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [linkId] Label used for when a characteristic refers to another
   ///  characteristic.
-  FhirId? get linkId;
   @override
+  FhirId? get linkId;
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
+  @override
   @JsonKey(name: '_linkId')
   PrimitiveElement? get linkIdElement;
-  @override
 
   /// [description] A short, natural language description of the characteristic
   ///  that could be used to communicate the criteria to an end-user.
-  FhirMarkdown? get description;
   @override
+  FhirMarkdown? get description;
 
   /// [descriptionElement] ("_description") Extensions for description
+  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
-  @override
 
   /// [note] A human-readable string to clarify or explain concepts about the
   ///  characteristic.
-  List<Annotation>? get note;
   @override
+  List<Annotation>? get note;
 
   /// [exclude] When true, this characteristic is an exclusion criterion. In
   ///  other words, not matching this characteristic definition is equivalent to
   ///  meeting this criterion.
-  FhirBoolean? get exclude;
   @override
+  FhirBoolean? get exclude;
 
   /// [excludeElement] ("_exclude") Extensions for exclude
+  @override
   @JsonKey(name: '_exclude')
   PrimitiveElement? get excludeElement;
-  @override
 
   /// [definitionReference] Defines the characteristic using a Reference.
-  Reference? get definitionReference;
   @override
+  Reference? get definitionReference;
 
   /// [definitionCanonical] Defines the characteristic using Canonical.
-  FhirCanonical? get definitionCanonical;
   @override
+  FhirCanonical? get definitionCanonical;
 
   /// [definitionCodeableConcept] Defines the characteristic using
   ///  CodeableConcept.
-  CodeableConcept? get definitionCodeableConcept;
   @override
+  CodeableConcept? get definitionCodeableConcept;
 
   /// [definitionExpression] Defines the characteristic using Expression.
-  FhirExpression? get definitionExpression;
   @override
+  FhirExpression? get definitionExpression;
 
   /// [definitionId] Defines the characteristic using id.
-  FhirId? get definitionId;
   @override
+  FhirId? get definitionId;
 
   /// [definitionIdElement] ("_definitionId") Extensions for definitionId
+  @override
   @JsonKey(name: '_definitionId')
   PrimitiveElement? get definitionIdElement;
-  @override
 
   /// [definitionByTypeAndValue] Defines the characteristic using both a type and
   ///  value[x] elements.
-  EvidenceVariableDefinitionByTypeAndValue? get definitionByTypeAndValue;
   @override
+  EvidenceVariableDefinitionByTypeAndValue? get definitionByTypeAndValue;
 
   /// [definitionByCombination] Defines the characteristic as a combination of
   ///  two or more characteristics.
-  EvidenceVariableDefinitionByCombination? get definitionByCombination;
   @override
+  EvidenceVariableDefinitionByCombination? get definitionByCombination;
 
   /// [instancesQuantity] Number of occurrences meeting the characteristic.
-  Quantity? get instancesQuantity;
   @override
+  Quantity? get instancesQuantity;
 
   /// [instancesRange] Number of occurrences meeting the characteristic.
-  Range? get instancesRange;
   @override
+  Range? get instancesRange;
 
   /// [durationQuantity] Length of time in which the characteristic is met.
-  Quantity? get durationQuantity;
   @override
+  Quantity? get durationQuantity;
 
   /// [durationRange] Length of time in which the characteristic is met.
-  Range? get durationRange;
   @override
+  Range? get durationRange;
 
   /// [timeFromEvent] Timing in which the characteristic is determined.
-  List<EvidenceVariableTimeFromEvent>? get timeFromEvent;
   @override
-  @JsonKey(ignore: true)
+  List<EvidenceVariableTimeFromEvent>? get timeFromEvent;
+
+  /// Create a copy of EvidenceVariableCharacteristic
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EvidenceVariableCharacteristicImplCopyWith<
           _$EvidenceVariableCharacteristicImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3641,8 +3691,12 @@ mixin _$EvidenceVariableDefinitionByTypeAndValue {
   ///  valueRange is not compared to zero.
   CodeableConcept? get offset => throw _privateConstructorUsedError;
 
+  /// Serializes this EvidenceVariableDefinitionByTypeAndValue to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of EvidenceVariableDefinitionByTypeAndValue
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EvidenceVariableDefinitionByTypeAndValueCopyWith<
           EvidenceVariableDefinitionByTypeAndValue>
       get copyWith => throw _privateConstructorUsedError;
@@ -3694,6 +3748,8 @@ class _$EvidenceVariableDefinitionByTypeAndValueCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EvidenceVariableDefinitionByTypeAndValue
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3777,6 +3833,8 @@ class _$EvidenceVariableDefinitionByTypeAndValueCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of EvidenceVariableDefinitionByTypeAndValue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get type {
@@ -3785,6 +3843,8 @@ class _$EvidenceVariableDefinitionByTypeAndValueCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableDefinitionByTypeAndValue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get device {
@@ -3797,6 +3857,8 @@ class _$EvidenceVariableDefinitionByTypeAndValueCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableDefinitionByTypeAndValue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get valueCodeableConcept {
@@ -3810,6 +3872,8 @@ class _$EvidenceVariableDefinitionByTypeAndValueCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableDefinitionByTypeAndValue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get valueQuantity {
@@ -3822,6 +3886,8 @@ class _$EvidenceVariableDefinitionByTypeAndValueCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableDefinitionByTypeAndValue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get valueRange {
@@ -3834,6 +3900,8 @@ class _$EvidenceVariableDefinitionByTypeAndValueCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableDefinitionByTypeAndValue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get valueReference {
@@ -3846,6 +3914,8 @@ class _$EvidenceVariableDefinitionByTypeAndValueCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableDefinitionByTypeAndValue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get offset {
@@ -3911,6 +3981,8 @@ class __$$EvidenceVariableDefinitionByTypeAndValueImplCopyWithImpl<$Res>
       $Res Function(_$EvidenceVariableDefinitionByTypeAndValueImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EvidenceVariableDefinitionByTypeAndValue
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4190,7 +4262,7 @@ class _$EvidenceVariableDefinitionByTypeAndValueImpl
             (identical(other.offset, offset) || other.offset == offset));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4210,7 +4282,9 @@ class _$EvidenceVariableDefinitionByTypeAndValueImpl
       valueIdElement,
       offset);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EvidenceVariableDefinitionByTypeAndValue
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EvidenceVariableDefinitionByTypeAndValueImplCopyWith<
@@ -4253,12 +4327,10 @@ abstract class _EvidenceVariableDefinitionByTypeAndValue
           Map<String, dynamic> json) =
       _$EvidenceVariableDefinitionByTypeAndValueImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4266,9 +4338,9 @@ abstract class _EvidenceVariableDefinitionByTypeAndValue
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4282,65 +4354,69 @@ abstract class _EvidenceVariableDefinitionByTypeAndValue
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] Used to express the type of characteristic.
-  CodeableConcept get type;
   @override
+  CodeableConcept get type;
 
   /// [method] Method for how the characteristic value was determined.
-  List<CodeableConcept>? get method;
   @override
+  List<CodeableConcept>? get method;
 
   /// [device] Device used for determining characteristic.
-  Reference? get device;
   @override
+  Reference? get device;
 
   /// [valueCodeableConcept] Defines the characteristic when paired with
   ///  characteristic.type.
-  CodeableConcept? get valueCodeableConcept;
   @override
+  CodeableConcept? get valueCodeableConcept;
 
   /// [valueBoolean] Defines the characteristic when paired with
   ///  characteristic.type.
-  FhirBoolean? get valueBoolean;
   @override
+  FhirBoolean? get valueBoolean;
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
+  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
-  @override
 
   /// [valueQuantity] Defines the characteristic when paired with
   ///  characteristic.type.
-  Quantity? get valueQuantity;
   @override
+  Quantity? get valueQuantity;
 
   /// [valueRange] Defines the characteristic when paired with
   ///  characteristic.type.
-  Range? get valueRange;
   @override
+  Range? get valueRange;
 
   /// [valueReference] Defines the characteristic when paired with
   ///  characteristic.type.
-  Reference? get valueReference;
   @override
+  Reference? get valueReference;
 
   /// [valueId] Defines the characteristic when paired with characteristic.type.
-  FhirId? get valueId;
   @override
+  FhirId? get valueId;
 
   /// [valueIdElement] ("_valueId") Extensions for valueId
+  @override
   @JsonKey(name: '_valueId')
   PrimitiveElement? get valueIdElement;
-  @override
 
   /// [offset] Defines the reference point for comparison when valueQuantity or
   ///  valueRange is not compared to zero.
-  CodeableConcept? get offset;
   @override
-  @JsonKey(ignore: true)
+  CodeableConcept? get offset;
+
+  /// Create a copy of EvidenceVariableDefinitionByTypeAndValue
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EvidenceVariableDefinitionByTypeAndValueImplCopyWith<
           _$EvidenceVariableDefinitionByTypeAndValueImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4402,8 +4478,12 @@ mixin _$EvidenceVariableDefinitionByCombination {
   List<EvidenceVariableCharacteristic> get characteristic =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this EvidenceVariableDefinitionByCombination to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of EvidenceVariableDefinitionByCombination
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EvidenceVariableDefinitionByCombinationCopyWith<
           EvidenceVariableDefinitionByCombination>
       get copyWith => throw _privateConstructorUsedError;
@@ -4440,6 +4520,8 @@ class _$EvidenceVariableDefinitionByCombinationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EvidenceVariableDefinitionByCombination
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4519,6 +4601,8 @@ class __$$EvidenceVariableDefinitionByCombinationImplCopyWithImpl<$Res>
       $Res Function(_$EvidenceVariableDefinitionByCombinationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EvidenceVariableDefinitionByCombination
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4712,7 +4796,7 @@ class _$EvidenceVariableDefinitionByCombinationImpl
                 .equals(other._characteristic, _characteristic));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4725,7 +4809,9 @@ class _$EvidenceVariableDefinitionByCombinationImpl
       thresholdElement,
       const DeepCollectionEquality().hash(_characteristic));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EvidenceVariableDefinitionByCombination
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EvidenceVariableDefinitionByCombinationImplCopyWith<
@@ -4760,12 +4846,10 @@ abstract class _EvidenceVariableDefinitionByCombination
           Map<String, dynamic> json) =
       _$EvidenceVariableDefinitionByCombinationImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4773,9 +4857,9 @@ abstract class _EvidenceVariableDefinitionByCombination
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4789,33 +4873,37 @@ abstract class _EvidenceVariableDefinitionByCombination
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [code] Used to specify if two or more characteristics are combined with OR
   ///  or AND.
-  FhirCode? get code;
   @override
+  FhirCode? get code;
 
   /// [codeElement] ("_code") Extensions for code
+  @override
   @JsonKey(name: '_code')
   PrimitiveElement? get codeElement;
-  @override
 
   /// [threshold] Provides the value of "n" when "at-least" or "at-most" codes
   ///  are used.
-  FhirPositiveInt? get threshold;
   @override
+  FhirPositiveInt? get threshold;
 
   /// [thresholdElement] ("_threshold") Extensions for threshold
+  @override
   @JsonKey(name: '_threshold')
   PrimitiveElement? get thresholdElement;
-  @override
 
   /// [characteristic] A defining factor of the characteristic.
-  List<EvidenceVariableCharacteristic> get characteristic;
   @override
-  @JsonKey(ignore: true)
+  List<EvidenceVariableCharacteristic> get characteristic;
+
+  /// Create a copy of EvidenceVariableDefinitionByCombination
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EvidenceVariableDefinitionByCombinationImplCopyWith<
           _$EvidenceVariableDefinitionByCombinationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4899,8 +4987,12 @@ mixin _$EvidenceVariableTimeFromEvent {
   ///  the event.
   Range? get range => throw _privateConstructorUsedError;
 
+  /// Serializes this EvidenceVariableTimeFromEvent to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of EvidenceVariableTimeFromEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EvidenceVariableTimeFromEventCopyWith<EvidenceVariableTimeFromEvent>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4946,6 +5038,8 @@ class _$EvidenceVariableTimeFromEventCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EvidenceVariableTimeFromEvent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5024,6 +5118,8 @@ class _$EvidenceVariableTimeFromEventCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of EvidenceVariableTimeFromEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get eventCodeableConcept {
@@ -5037,6 +5133,8 @@ class _$EvidenceVariableTimeFromEventCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableTimeFromEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get eventReference {
@@ -5049,6 +5147,8 @@ class _$EvidenceVariableTimeFromEventCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableTimeFromEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get quantity {
@@ -5061,6 +5161,8 @@ class _$EvidenceVariableTimeFromEventCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableTimeFromEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get range {
@@ -5119,6 +5221,8 @@ class __$$EvidenceVariableTimeFromEventImplCopyWithImpl<$Res>
       $Res Function(_$EvidenceVariableTimeFromEventImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EvidenceVariableTimeFromEvent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5388,7 +5492,7 @@ class _$EvidenceVariableTimeFromEventImpl
             (identical(other.range, range) || other.range == range));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -5407,7 +5511,9 @@ class _$EvidenceVariableTimeFromEventImpl
       quantity,
       range);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EvidenceVariableTimeFromEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EvidenceVariableTimeFromEventImplCopyWith<
@@ -5446,12 +5552,10 @@ abstract class _EvidenceVariableTimeFromEvent
   factory _EvidenceVariableTimeFromEvent.fromJson(Map<String, dynamic> json) =
       _$EvidenceVariableTimeFromEventImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5459,9 +5563,9 @@ abstract class _EvidenceVariableTimeFromEvent
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5475,60 +5579,64 @@ abstract class _EvidenceVariableTimeFromEvent
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [description] Human readable description.
-  FhirMarkdown? get description;
   @override
+  FhirMarkdown? get description;
 
   /// [descriptionElement] ("_description") Extensions for description
+  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
-  @override
 
   /// [note] A human-readable string to clarify or explain concepts about the
   ///  timeFromEvent.
-  List<Annotation>? get note;
   @override
+  List<Annotation>? get note;
 
   /// [eventCodeableConcept] The event used as a base point (reference point) in
   ///  time.
-  CodeableConcept? get eventCodeableConcept;
   @override
+  CodeableConcept? get eventCodeableConcept;
 
   /// [eventReference] The event used as a base point (reference point) in time.
-  Reference? get eventReference;
   @override
+  Reference? get eventReference;
 
   /// [eventDateTime] The event used as a base point (reference point) in time.
-  FhirDateTime? get eventDateTime;
   @override
+  FhirDateTime? get eventDateTime;
 
   /// [eventDateTimeElement] ("_eventDateTime") Extensions for eventDateTime
+  @override
   @JsonKey(name: '_eventDateTime')
   PrimitiveElement? get eventDateTimeElement;
-  @override
 
   /// [eventId] The event used as a base point (reference point) in time.
-  FhirId? get eventId;
   @override
+  FhirId? get eventId;
 
   /// [eventIdElement] ("_eventId") Extensions for eventId
+  @override
   @JsonKey(name: '_eventId')
   PrimitiveElement? get eventIdElement;
-  @override
 
   /// [quantity] Used to express the observation at a defined amount of time
   ///  before or after the event.
-  Quantity? get quantity;
   @override
+  Quantity? get quantity;
 
   /// [range] Used to express the observation within a period before and/or after
   ///  the event.
-  Range? get range;
   @override
-  @JsonKey(ignore: true)
+  Range? get range;
+
+  /// Create a copy of EvidenceVariableTimeFromEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EvidenceVariableTimeFromEventImplCopyWith<
           _$EvidenceVariableTimeFromEventImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -5586,8 +5694,12 @@ mixin _$EvidenceVariableCategory {
   /// [valueRange] Definition of the grouping.
   Range? get valueRange => throw _privateConstructorUsedError;
 
+  /// Serializes this EvidenceVariableCategory to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of EvidenceVariableCategory
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EvidenceVariableCategoryCopyWith<EvidenceVariableCategory> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5624,6 +5736,8 @@ class _$EvidenceVariableCategoryCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EvidenceVariableCategory
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5672,6 +5786,8 @@ class _$EvidenceVariableCategoryCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of EvidenceVariableCategory
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get valueCodeableConcept {
@@ -5685,6 +5801,8 @@ class _$EvidenceVariableCategoryCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableCategory
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get valueQuantity {
@@ -5697,6 +5815,8 @@ class _$EvidenceVariableCategoryCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of EvidenceVariableCategory
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get valueRange {
@@ -5747,6 +5867,8 @@ class __$$EvidenceVariableCategoryImplCopyWithImpl<$Res>
       $Res Function(_$EvidenceVariableCategoryImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EvidenceVariableCategory
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5927,7 +6049,7 @@ class _$EvidenceVariableCategoryImpl extends _EvidenceVariableCategory {
                 other.valueRange == valueRange));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -5940,7 +6062,9 @@ class _$EvidenceVariableCategoryImpl extends _EvidenceVariableCategory {
       valueQuantity,
       valueRange);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EvidenceVariableCategory
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EvidenceVariableCategoryImplCopyWith<_$EvidenceVariableCategoryImpl>
@@ -5970,12 +6094,10 @@ abstract class _EvidenceVariableCategory extends EvidenceVariableCategory {
   factory _EvidenceVariableCategory.fromJson(Map<String, dynamic> json) =
       _$EvidenceVariableCategoryImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5983,9 +6105,9 @@ abstract class _EvidenceVariableCategory extends EvidenceVariableCategory {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5999,30 +6121,34 @@ abstract class _EvidenceVariableCategory extends EvidenceVariableCategory {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [name] Description of the grouping.
-  String? get name;
   @override
+  String? get name;
 
   /// [nameElement] ("_name") Extensions for name
+  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
-  @override
 
   /// [valueCodeableConcept] Definition of the grouping.
-  CodeableConcept? get valueCodeableConcept;
   @override
+  CodeableConcept? get valueCodeableConcept;
 
   /// [valueQuantity] Definition of the grouping.
-  Quantity? get valueQuantity;
   @override
+  Quantity? get valueQuantity;
 
   /// [valueRange] Definition of the grouping.
-  Range? get valueRange;
   @override
-  @JsonKey(ignore: true)
+  Range? get valueRange;
+
+  /// Create a copy of EvidenceVariableCategory
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EvidenceVariableCategoryImplCopyWith<_$EvidenceVariableCategoryImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

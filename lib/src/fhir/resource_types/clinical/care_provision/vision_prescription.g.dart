@@ -75,45 +75,31 @@ _$VisionPrescriptionImpl _$$VisionPrescriptionImplFromJson(
     );
 
 Map<String, dynamic> _$$VisionPrescriptionImplToJson(
-    _$VisionPrescriptionImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('created', instance.created?.toJson());
-  writeNotNull('_created', instance.createdElement?.toJson());
-  val['patient'] = instance.patient.toJson();
-  writeNotNull('encounter', instance.encounter?.toJson());
-  writeNotNull('dateWritten', instance.dateWritten?.toJson());
-  writeNotNull('_dateWritten', instance.dateWrittenElement?.toJson());
-  val['prescriber'] = instance.prescriber.toJson();
-  val['lensSpecification'] =
-      instance.lensSpecification.map((e) => e.toJson()).toList();
-  return val;
-}
+        _$VisionPrescriptionImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'created': instance.created,
+      '_created': instance.createdElement,
+      'patient': instance.patient,
+      'encounter': instance.encounter,
+      'dateWritten': instance.dateWritten,
+      '_dateWritten': instance.dateWrittenElement,
+      'prescriber': instance.prescriber,
+      'lensSpecification': instance.lensSpecification,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -363,46 +349,36 @@ _$VisionPrescriptionLensSpecificationImpl
         );
 
 Map<String, dynamic> _$$VisionPrescriptionLensSpecificationImplToJson(
-    _$VisionPrescriptionLensSpecificationImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['product'] = instance.product.toJson();
-  writeNotNull('eye', instance.eye?.toJson());
-  writeNotNull('_eye', instance.eyeElement?.toJson());
-  writeNotNull('sphere', instance.sphere?.toJson());
-  writeNotNull('_sphere', instance.sphereElement?.toJson());
-  writeNotNull('cylinder', instance.cylinder?.toJson());
-  writeNotNull('_cylinder', instance.cylinderElement?.toJson());
-  writeNotNull('axis', instance.axis?.toJson());
-  writeNotNull('_axis', instance.axisElement?.toJson());
-  writeNotNull('prism', instance.prism?.map((e) => e.toJson()).toList());
-  writeNotNull('add', instance.add?.toJson());
-  writeNotNull('_add', instance.addElement?.toJson());
-  writeNotNull('power', instance.power?.toJson());
-  writeNotNull('_power', instance.powerElement?.toJson());
-  writeNotNull('backCurve', instance.backCurve?.toJson());
-  writeNotNull('_backCurve', instance.backCurveElement?.toJson());
-  writeNotNull('diameter', instance.diameter?.toJson());
-  writeNotNull('_diameter', instance.diameterElement?.toJson());
-  writeNotNull('duration', instance.duration?.toJson());
-  writeNotNull('color', instance.color);
-  writeNotNull('_color', instance.colorElement?.toJson());
-  writeNotNull('brand', instance.brand);
-  writeNotNull('_brand', instance.brandElement?.toJson());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$VisionPrescriptionLensSpecificationImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'product': instance.product,
+      'eye': instance.eye,
+      '_eye': instance.eyeElement,
+      'sphere': instance.sphere,
+      '_sphere': instance.sphereElement,
+      'cylinder': instance.cylinder,
+      '_cylinder': instance.cylinderElement,
+      'axis': instance.axis,
+      '_axis': instance.axisElement,
+      'prism': instance.prism,
+      'add': instance.add,
+      '_add': instance.addElement,
+      'power': instance.power,
+      '_power': instance.powerElement,
+      'backCurve': instance.backCurve,
+      '_backCurve': instance.backCurveElement,
+      'diameter': instance.diameter,
+      '_diameter': instance.diameterElement,
+      'duration': instance.duration,
+      'color': instance.color,
+      '_color': instance.colorElement,
+      'brand': instance.brand,
+      '_brand': instance.brandElement,
+      'note': instance.note,
+    };
 
 const _$VisionEyeCodesEnumMap = {
   VisionEyeCodes.right: 'right',
@@ -431,26 +407,16 @@ _$VisionPrescriptionPrismImpl _$$VisionPrescriptionPrismImplFromJson(
     );
 
 Map<String, dynamic> _$$VisionPrescriptionPrismImplToJson(
-    _$VisionPrescriptionPrismImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('amount', instance.amount?.toJson());
-  writeNotNull('_amount', instance.amountElement?.toJson());
-  writeNotNull('base', instance.base?.toJson());
-  writeNotNull('_base', instance.baseElement?.toJson());
-  return val;
-}
+        _$VisionPrescriptionPrismImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'amount': instance.amount,
+      '_amount': instance.amountElement,
+      'base': instance.base,
+      '_base': instance.baseElement,
+    };
 
 const _$VisionBaseCodesEnumMap = {
   VisionBaseCodes.up: 'up',

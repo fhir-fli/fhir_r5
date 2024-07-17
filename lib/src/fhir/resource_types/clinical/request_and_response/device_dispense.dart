@@ -355,7 +355,7 @@ class DeviceDispense with _$DeviceDispense implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [DeviceDispensePerformer] A record of dispensation of a device - i.e.,

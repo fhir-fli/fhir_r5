@@ -252,7 +252,7 @@ class SubstancePolymer with _$SubstancePolymer implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [SubstancePolymerMonomerSet] Properties of a substance specific to it being

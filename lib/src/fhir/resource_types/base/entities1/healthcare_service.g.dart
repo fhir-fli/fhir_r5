@@ -130,71 +130,48 @@ _$HealthcareServiceImpl _$$HealthcareServiceImplFromJson(
     );
 
 Map<String, dynamic> _$$HealthcareServiceImplToJson(
-    _$HealthcareServiceImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('active', instance.active?.toJson());
-  writeNotNull('_active', instance.activeElement?.toJson());
-  writeNotNull('providedBy', instance.providedBy?.toJson());
-  writeNotNull(
-      'offeredIn', instance.offeredIn?.map((e) => e.toJson()).toList());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  writeNotNull('type', instance.type?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'specialty', instance.specialty?.map((e) => e.toJson()).toList());
-  writeNotNull('location', instance.location?.map((e) => e.toJson()).toList());
-  writeNotNull('name', instance.name);
-  writeNotNull('_name', instance.nameElement?.toJson());
-  writeNotNull('comment', instance.comment?.toJson());
-  writeNotNull('_comment', instance.commentElement?.toJson());
-  writeNotNull('extraDetails', instance.extraDetails?.toJson());
-  writeNotNull('_extraDetails', instance.extraDetailsElement?.toJson());
-  writeNotNull('photo', instance.photo?.toJson());
-  writeNotNull('contact', instance.contact?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'coverageArea', instance.coverageArea?.map((e) => e.toJson()).toList());
-  writeNotNull('serviceProvisionCode',
-      instance.serviceProvisionCode?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'eligibility', instance.eligibility?.map((e) => e.toJson()).toList());
-  writeNotNull('program', instance.program?.map((e) => e.toJson()).toList());
-  writeNotNull('characteristic',
-      instance.characteristic?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'communication', instance.communication?.map((e) => e.toJson()).toList());
-  writeNotNull('referralMethod',
-      instance.referralMethod?.map((e) => e.toJson()).toList());
-  writeNotNull('appointmentRequired', instance.appointmentRequired?.toJson());
-  writeNotNull(
-      '_appointmentRequired', instance.appointmentRequiredElement?.toJson());
-  writeNotNull(
-      'availability', instance.availability?.map((e) => e.toJson()).toList());
-  writeNotNull('endpoint', instance.endpoint?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$HealthcareServiceImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'active': instance.active,
+      '_active': instance.activeElement,
+      'providedBy': instance.providedBy,
+      'offeredIn': instance.offeredIn,
+      'category': instance.category,
+      'type': instance.type,
+      'specialty': instance.specialty,
+      'location': instance.location,
+      'name': instance.name,
+      '_name': instance.nameElement,
+      'comment': instance.comment,
+      '_comment': instance.commentElement,
+      'extraDetails': instance.extraDetails,
+      '_extraDetails': instance.extraDetailsElement,
+      'photo': instance.photo,
+      'contact': instance.contact,
+      'coverageArea': instance.coverageArea,
+      'serviceProvisionCode': instance.serviceProvisionCode,
+      'eligibility': instance.eligibility,
+      'program': instance.program,
+      'characteristic': instance.characteristic,
+      'communication': instance.communication,
+      'referralMethod': instance.referralMethod,
+      'appointmentRequired': instance.appointmentRequired,
+      '_appointmentRequired': instance.appointmentRequiredElement,
+      'availability': instance.availability,
+      'endpoint': instance.endpoint,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -381,22 +358,12 @@ _$HealthcareServiceEligibilityImpl _$$HealthcareServiceEligibilityImplFromJson(
     );
 
 Map<String, dynamic> _$$HealthcareServiceEligibilityImplToJson(
-    _$HealthcareServiceEligibilityImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('code', instance.code?.toJson());
-  writeNotNull('comment', instance.comment?.toJson());
-  writeNotNull('_comment', instance.commentElement?.toJson());
-  return val;
-}
+        _$HealthcareServiceEligibilityImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'code': instance.code,
+      'comment': instance.comment,
+      '_comment': instance.commentElement,
+    };

@@ -177,88 +177,67 @@ _$QuestionnaireImpl _$$QuestionnaireImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$QuestionnaireImplToJson(_$QuestionnaireImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('url', instance.url?.toJson());
-  writeNotNull('_url', instance.urlElement?.toJson());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('version', instance.version);
-  writeNotNull('_version', instance.versionElement?.toJson());
-  writeNotNull('versionAlgorithmString', instance.versionAlgorithmString);
-  writeNotNull('_versionAlgorithmString',
-      instance.versionAlgorithmStringElement?.toJson());
-  writeNotNull(
-      'versionAlgorithmCoding', instance.versionAlgorithmCoding?.toJson());
-  writeNotNull('name', instance.name);
-  writeNotNull('_name', instance.nameElement?.toJson());
-  writeNotNull('title', instance.title);
-  writeNotNull('_title', instance.titleElement?.toJson());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('experimental', instance.experimental?.toJson());
-  writeNotNull('_experimental', instance.experimentalElement?.toJson());
-  writeNotNull('date', instance.date?.toJson());
-  writeNotNull('_date', instance.dateElement?.toJson());
-  writeNotNull('publisher', instance.publisher);
-  writeNotNull('_publisher', instance.publisherElement?.toJson());
-  writeNotNull('contact', instance.contact?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull(
-      'useContext', instance.useContext?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'jurisdiction', instance.jurisdiction?.map((e) => e.toJson()).toList());
-  writeNotNull('purpose', instance.purpose?.toJson());
-  writeNotNull('_purpose', instance.purposeElement?.toJson());
-  writeNotNull('copyright', instance.copyright?.toJson());
-  writeNotNull('_copyright', instance.copyrightElement?.toJson());
-  writeNotNull('copyrightLabel', instance.copyrightLabel);
-  writeNotNull('_copyrightLabel', instance.copyrightLabelElement?.toJson());
-  writeNotNull('approvalDate', instance.approvalDate?.toJson());
-  writeNotNull('_approvalDate', instance.approvalDateElement?.toJson());
-  writeNotNull('lastReviewDate', instance.lastReviewDate?.toJson());
-  writeNotNull('_lastReviewDate', instance.lastReviewDateElement?.toJson());
-  writeNotNull('effectivePeriod', instance.effectivePeriod?.toJson());
-  writeNotNull('topic', instance.topic?.map((e) => e.toJson()).toList());
-  writeNotNull('author', instance.author?.map((e) => e.toJson()).toList());
-  writeNotNull('editor', instance.editor?.map((e) => e.toJson()).toList());
-  writeNotNull('reviewer', instance.reviewer?.map((e) => e.toJson()).toList());
-  writeNotNull('endorser', instance.endorser?.map((e) => e.toJson()).toList());
-  writeNotNull('relatedArtifact',
-      instance.relatedArtifact?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'derivedFrom', instance.derivedFrom?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'subjectType', instance.subjectType?.map((e) => e.toJson()).toList());
-  writeNotNull('_subjectType',
-      instance.subjectTypeElement?.map((e) => e.toJson()).toList());
-  writeNotNull('code', instance.code?.map((e) => e.toJson()).toList());
-  writeNotNull('item', instance.item?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$QuestionnaireImplToJson(_$QuestionnaireImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'url': instance.url,
+      '_url': instance.urlElement,
+      'identifier': instance.identifier,
+      'version': instance.version,
+      '_version': instance.versionElement,
+      'versionAlgorithmString': instance.versionAlgorithmString,
+      '_versionAlgorithmString': instance.versionAlgorithmStringElement,
+      'versionAlgorithmCoding': instance.versionAlgorithmCoding,
+      'name': instance.name,
+      '_name': instance.nameElement,
+      'title': instance.title,
+      '_title': instance.titleElement,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'experimental': instance.experimental,
+      '_experimental': instance.experimentalElement,
+      'date': instance.date,
+      '_date': instance.dateElement,
+      'publisher': instance.publisher,
+      '_publisher': instance.publisherElement,
+      'contact': instance.contact,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'useContext': instance.useContext,
+      'jurisdiction': instance.jurisdiction,
+      'purpose': instance.purpose,
+      '_purpose': instance.purposeElement,
+      'copyright': instance.copyright,
+      '_copyright': instance.copyrightElement,
+      'copyrightLabel': instance.copyrightLabel,
+      '_copyrightLabel': instance.copyrightLabelElement,
+      'approvalDate': instance.approvalDate,
+      '_approvalDate': instance.approvalDateElement,
+      'lastReviewDate': instance.lastReviewDate,
+      '_lastReviewDate': instance.lastReviewDateElement,
+      'effectivePeriod': instance.effectivePeriod,
+      'topic': instance.topic,
+      'author': instance.author,
+      'editor': instance.editor,
+      'reviewer': instance.reviewer,
+      'endorser': instance.endorser,
+      'relatedArtifact': instance.relatedArtifact,
+      'derivedFrom': instance.derivedFrom,
+      'subjectType': instance.subjectType,
+      '_subjectType': instance.subjectTypeElement,
+      'code': instance.code,
+      'item': instance.item,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -527,54 +506,42 @@ _$QuestionnaireItemImpl _$$QuestionnaireItemImplFromJson(
     );
 
 Map<String, dynamic> _$$QuestionnaireItemImplToJson(
-    _$QuestionnaireItemImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('linkId', instance.linkId);
-  writeNotNull('_linkId', instance.linkIdElement?.toJson());
-  writeNotNull('definition', instance.definition?.toJson());
-  writeNotNull('_definition', instance.definitionElement?.toJson());
-  writeNotNull('code', instance.code?.map((e) => e.toJson()).toList());
-  writeNotNull('prefix', instance.prefix);
-  writeNotNull('_prefix', instance.prefixElement?.toJson());
-  writeNotNull('text', instance.text);
-  writeNotNull('_text', instance.textElement?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('_type', instance.typeElement?.toJson());
-  writeNotNull(
-      'enableWhen', instance.enableWhen?.map((e) => e.toJson()).toList());
-  writeNotNull('enableBehavior', instance.enableBehavior?.toJson());
-  writeNotNull('_enableBehavior', instance.enableBehaviorElement?.toJson());
-  writeNotNull('disabledDisplay', instance.disabledDisplay?.toJson());
-  writeNotNull('_disabledDisplay', instance.disabledDisplayElement?.toJson());
-  writeNotNull('required', instance.required_?.toJson());
-  writeNotNull('_required', instance.requiredElement?.toJson());
-  writeNotNull('repeats', instance.repeats?.toJson());
-  writeNotNull('_repeats', instance.repeatsElement?.toJson());
-  writeNotNull('readOnly', instance.readOnly?.toJson());
-  writeNotNull('_readOnly', instance.readOnlyElement?.toJson());
-  writeNotNull('maxLength', instance.maxLength?.toJson());
-  writeNotNull('_maxLength', instance.maxLengthElement?.toJson());
-  writeNotNull('answerConstraint', instance.answerConstraint?.toJson());
-  writeNotNull('_answerConstraint', instance.answerConstraintElement?.toJson());
-  writeNotNull('answerValueSet', instance.answerValueSet?.toJson());
-  writeNotNull(
-      'answerOption', instance.answerOption?.map((e) => e.toJson()).toList());
-  writeNotNull('initial', instance.initial?.map((e) => e.toJson()).toList());
-  writeNotNull('item', instance.item?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$QuestionnaireItemImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'linkId': instance.linkId,
+      '_linkId': instance.linkIdElement,
+      'definition': instance.definition,
+      '_definition': instance.definitionElement,
+      'code': instance.code,
+      'prefix': instance.prefix,
+      '_prefix': instance.prefixElement,
+      'text': instance.text,
+      '_text': instance.textElement,
+      'type': instance.type,
+      '_type': instance.typeElement,
+      'enableWhen': instance.enableWhen,
+      'enableBehavior': instance.enableBehavior,
+      '_enableBehavior': instance.enableBehaviorElement,
+      'disabledDisplay': instance.disabledDisplay,
+      '_disabledDisplay': instance.disabledDisplayElement,
+      'required': instance.required_,
+      '_required': instance.requiredElement,
+      'repeats': instance.repeats,
+      '_repeats': instance.repeatsElement,
+      'readOnly': instance.readOnly,
+      '_readOnly': instance.readOnlyElement,
+      'maxLength': instance.maxLength,
+      '_maxLength': instance.maxLengthElement,
+      'answerConstraint': instance.answerConstraint,
+      '_answerConstraint': instance.answerConstraintElement,
+      'answerValueSet': instance.answerValueSet,
+      'answerOption': instance.answerOption,
+      'initial': instance.initial,
+      'item': instance.item,
+    };
 
 _$QuestionnaireEnableWhenImpl _$$QuestionnaireEnableWhenImplFromJson(
         Map<String, dynamic> json) =>
@@ -656,43 +623,33 @@ _$QuestionnaireEnableWhenImpl _$$QuestionnaireEnableWhenImplFromJson(
     );
 
 Map<String, dynamic> _$$QuestionnaireEnableWhenImplToJson(
-    _$QuestionnaireEnableWhenImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('question', instance.question);
-  writeNotNull('_question', instance.questionElement?.toJson());
-  writeNotNull('operator', instance.operator_?.toJson());
-  writeNotNull('_operator', instance.operatorElement?.toJson());
-  writeNotNull('answerBoolean', instance.answerBoolean?.toJson());
-  writeNotNull('_answerBoolean', instance.answerBooleanElement?.toJson());
-  writeNotNull('answerDecimal', instance.answerDecimal?.toJson());
-  writeNotNull('_answerDecimal', instance.answerDecimalElement?.toJson());
-  writeNotNull('answerInteger', instance.answerInteger?.toJson());
-  writeNotNull('_answerInteger', instance.answerIntegerElement?.toJson());
-  writeNotNull('answerDate', instance.answerDate?.toJson());
-  writeNotNull('_answerDate', instance.answerDateElement?.toJson());
-  writeNotNull('answerDateTime', instance.answerDateTime?.toJson());
-  writeNotNull('_answerDateTime', instance.answerDateTimeElement?.toJson());
-  writeNotNull('answerTime', instance.answerTime?.toJson());
-  writeNotNull('_answerTime', instance.answerTimeElement?.toJson());
-  writeNotNull('answerString', instance.answerString);
-  writeNotNull('_answerString', instance.answerStringElement?.toJson());
-  writeNotNull('answerCoding', instance.answerCoding?.toJson());
-  writeNotNull('answerQuantity', instance.answerQuantity?.toJson());
-  writeNotNull('answerReference', instance.answerReference?.toJson());
-  return val;
-}
+        _$QuestionnaireEnableWhenImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'question': instance.question,
+      '_question': instance.questionElement,
+      'operator': instance.operator_,
+      '_operator': instance.operatorElement,
+      'answerBoolean': instance.answerBoolean,
+      '_answerBoolean': instance.answerBooleanElement,
+      'answerDecimal': instance.answerDecimal,
+      '_answerDecimal': instance.answerDecimalElement,
+      'answerInteger': instance.answerInteger,
+      '_answerInteger': instance.answerIntegerElement,
+      'answerDate': instance.answerDate,
+      '_answerDate': instance.answerDateElement,
+      'answerDateTime': instance.answerDateTime,
+      '_answerDateTime': instance.answerDateTimeElement,
+      'answerTime': instance.answerTime,
+      '_answerTime': instance.answerTimeElement,
+      'answerString': instance.answerString,
+      '_answerString': instance.answerStringElement,
+      'answerCoding': instance.answerCoding,
+      'answerQuantity': instance.answerQuantity,
+      'answerReference': instance.answerReference,
+    };
 
 _$QuestionnaireAnswerOptionImpl _$$QuestionnaireAnswerOptionImplFromJson(
         Map<String, dynamic> json) =>
@@ -746,34 +703,24 @@ _$QuestionnaireAnswerOptionImpl _$$QuestionnaireAnswerOptionImplFromJson(
     );
 
 Map<String, dynamic> _$$QuestionnaireAnswerOptionImplToJson(
-    _$QuestionnaireAnswerOptionImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('valueInteger', instance.valueInteger?.toJson());
-  writeNotNull('_valueInteger', instance.valueIntegerElement?.toJson());
-  writeNotNull('valueDate', instance.valueDate?.toJson());
-  writeNotNull('_valueDate', instance.valueDateElement?.toJson());
-  writeNotNull('valueTime', instance.valueTime?.toJson());
-  writeNotNull('_valueTime', instance.valueTimeElement?.toJson());
-  writeNotNull('valueString', instance.valueString);
-  writeNotNull('_valueString', instance.valueStringElement?.toJson());
-  writeNotNull('valueCoding', instance.valueCoding?.toJson());
-  writeNotNull('valueReference', instance.valueReference?.toJson());
-  writeNotNull('initialSelected', instance.initialSelected?.toJson());
-  writeNotNull('_initialSelected', instance.initialSelectedElement?.toJson());
-  return val;
-}
+        _$QuestionnaireAnswerOptionImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'valueInteger': instance.valueInteger,
+      '_valueInteger': instance.valueIntegerElement,
+      'valueDate': instance.valueDate,
+      '_valueDate': instance.valueDateElement,
+      'valueTime': instance.valueTime,
+      '_valueTime': instance.valueTimeElement,
+      'valueString': instance.valueString,
+      '_valueString': instance.valueStringElement,
+      'valueCoding': instance.valueCoding,
+      'valueReference': instance.valueReference,
+      'initialSelected': instance.initialSelected,
+      '_initialSelected': instance.initialSelectedElement,
+    };
 
 _$QuestionnaireInitialImpl _$$QuestionnaireInitialImplFromJson(
         Map<String, dynamic> json) =>
@@ -854,39 +801,29 @@ _$QuestionnaireInitialImpl _$$QuestionnaireInitialImplFromJson(
     );
 
 Map<String, dynamic> _$$QuestionnaireInitialImplToJson(
-    _$QuestionnaireInitialImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('valueBoolean', instance.valueBoolean?.toJson());
-  writeNotNull('_valueBoolean', instance.valueBooleanElement?.toJson());
-  writeNotNull('valueDecimal', instance.valueDecimal?.toJson());
-  writeNotNull('_valueDecimal', instance.valueDecimalElement?.toJson());
-  writeNotNull('valueInteger', instance.valueInteger?.toJson());
-  writeNotNull('_valueInteger', instance.valueIntegerElement?.toJson());
-  writeNotNull('valueDate', instance.valueDate?.toJson());
-  writeNotNull('_valueDate', instance.valueDateElement?.toJson());
-  writeNotNull('valueDateTime', instance.valueDateTime?.toJson());
-  writeNotNull('_valueDateTime', instance.valueDateTimeElement?.toJson());
-  writeNotNull('valueTime', instance.valueTime?.toJson());
-  writeNotNull('_valueTime', instance.valueTimeElement?.toJson());
-  writeNotNull('valueString', instance.valueString);
-  writeNotNull('_valueString', instance.valueStringElement?.toJson());
-  writeNotNull('valueUri', instance.valueUri?.toJson());
-  writeNotNull('_valueUri', instance.valueUriElement?.toJson());
-  writeNotNull('valueAttachment', instance.valueAttachment?.toJson());
-  writeNotNull('valueCoding', instance.valueCoding?.toJson());
-  writeNotNull('valueQuantity', instance.valueQuantity?.toJson());
-  writeNotNull('valueReference', instance.valueReference?.toJson());
-  return val;
-}
+        _$QuestionnaireInitialImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'valueBoolean': instance.valueBoolean,
+      '_valueBoolean': instance.valueBooleanElement,
+      'valueDecimal': instance.valueDecimal,
+      '_valueDecimal': instance.valueDecimalElement,
+      'valueInteger': instance.valueInteger,
+      '_valueInteger': instance.valueIntegerElement,
+      'valueDate': instance.valueDate,
+      '_valueDate': instance.valueDateElement,
+      'valueDateTime': instance.valueDateTime,
+      '_valueDateTime': instance.valueDateTimeElement,
+      'valueTime': instance.valueTime,
+      '_valueTime': instance.valueTimeElement,
+      'valueString': instance.valueString,
+      '_valueString': instance.valueStringElement,
+      'valueUri': instance.valueUri,
+      '_valueUri': instance.valueUriElement,
+      'valueAttachment': instance.valueAttachment,
+      'valueCoding': instance.valueCoding,
+      'valueQuantity': instance.valueQuantity,
+      'valueReference': instance.valueReference,
+    };

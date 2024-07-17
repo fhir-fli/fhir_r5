@@ -317,7 +317,7 @@ class FhirEndpoint with _$FhirEndpoint implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [EndpointPayload] The technical details of an endpoint that can be used for

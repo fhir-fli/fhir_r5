@@ -191,90 +191,71 @@ _$EvidenceVariableImpl _$$EvidenceVariableImplFromJson(
     );
 
 Map<String, dynamic> _$$EvidenceVariableImplToJson(
-    _$EvidenceVariableImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('url', instance.url?.toJson());
-  writeNotNull('_url', instance.urlElement?.toJson());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('version', instance.version);
-  writeNotNull('_version', instance.versionElement?.toJson());
-  writeNotNull('versionAlgorithmString', instance.versionAlgorithmString);
-  writeNotNull('_versionAlgorithmString',
-      instance.versionAlgorithmStringElement?.toJson());
-  writeNotNull(
-      'versionAlgorithmCoding', instance.versionAlgorithmCoding?.toJson());
-  writeNotNull('name', instance.name);
-  writeNotNull('_name', instance.nameElement?.toJson());
-  writeNotNull('title', instance.title);
-  writeNotNull('_title', instance.titleElement?.toJson());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('experimental', instance.experimental?.toJson());
-  writeNotNull('_experimental', instance.experimentalElement?.toJson());
-  writeNotNull('date', instance.date?.toJson());
-  writeNotNull('_date', instance.dateElement?.toJson());
-  writeNotNull('publisher', instance.publisher);
-  writeNotNull('_publisher', instance.publisherElement?.toJson());
-  writeNotNull('contact', instance.contact?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull(
-      'useContext', instance.useContext?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'jurisdiction', instance.jurisdiction?.map((e) => e.toJson()).toList());
-  writeNotNull('purpose', instance.purpose?.toJson());
-  writeNotNull('_purpose', instance.purposeElement?.toJson());
-  writeNotNull('copyright', instance.copyright?.toJson());
-  writeNotNull('_copyright', instance.copyrightElement?.toJson());
-  writeNotNull('copyrightLabel', instance.copyrightLabel);
-  writeNotNull('_copyrightLabel', instance.copyrightLabelElement?.toJson());
-  writeNotNull('approvalDate', instance.approvalDate?.toJson());
-  writeNotNull('_approvalDate', instance.approvalDateElement?.toJson());
-  writeNotNull('lastReviewDate', instance.lastReviewDate?.toJson());
-  writeNotNull('_lastReviewDate', instance.lastReviewDateElement?.toJson());
-  writeNotNull('effectivePeriod', instance.effectivePeriod?.toJson());
-  writeNotNull('topic', instance.topic?.map((e) => e.toJson()).toList());
-  writeNotNull('author', instance.author?.map((e) => e.toJson()).toList());
-  writeNotNull('editor', instance.editor?.map((e) => e.toJson()).toList());
-  writeNotNull('reviewer', instance.reviewer?.map((e) => e.toJson()).toList());
-  writeNotNull('endorser', instance.endorser?.map((e) => e.toJson()).toList());
-  writeNotNull('relatedArtifact',
-      instance.relatedArtifact?.map((e) => e.toJson()).toList());
-  writeNotNull('shortTitle', instance.shortTitle);
-  writeNotNull('_shortTitle', instance.shortTitleElement?.toJson());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  writeNotNull('actual', instance.actual?.toJson());
-  writeNotNull('_actual', instance.actualElement?.toJson());
-  writeNotNull('characteristic',
-      instance.characteristic?.map((e) => e.toJson()).toList());
-  writeNotNull('handling', instance.handling?.toJson());
-  writeNotNull('_handling', instance.handlingElement?.toJson());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$EvidenceVariableImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'url': instance.url,
+      '_url': instance.urlElement,
+      'identifier': instance.identifier,
+      'version': instance.version,
+      '_version': instance.versionElement,
+      'versionAlgorithmString': instance.versionAlgorithmString,
+      '_versionAlgorithmString': instance.versionAlgorithmStringElement,
+      'versionAlgorithmCoding': instance.versionAlgorithmCoding,
+      'name': instance.name,
+      '_name': instance.nameElement,
+      'title': instance.title,
+      '_title': instance.titleElement,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'experimental': instance.experimental,
+      '_experimental': instance.experimentalElement,
+      'date': instance.date,
+      '_date': instance.dateElement,
+      'publisher': instance.publisher,
+      '_publisher': instance.publisherElement,
+      'contact': instance.contact,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'useContext': instance.useContext,
+      'jurisdiction': instance.jurisdiction,
+      'purpose': instance.purpose,
+      '_purpose': instance.purposeElement,
+      'copyright': instance.copyright,
+      '_copyright': instance.copyrightElement,
+      'copyrightLabel': instance.copyrightLabel,
+      '_copyrightLabel': instance.copyrightLabelElement,
+      'approvalDate': instance.approvalDate,
+      '_approvalDate': instance.approvalDateElement,
+      'lastReviewDate': instance.lastReviewDate,
+      '_lastReviewDate': instance.lastReviewDateElement,
+      'effectivePeriod': instance.effectivePeriod,
+      'topic': instance.topic,
+      'author': instance.author,
+      'editor': instance.editor,
+      'reviewer': instance.reviewer,
+      'endorser': instance.endorser,
+      'relatedArtifact': instance.relatedArtifact,
+      'shortTitle': instance.shortTitle,
+      '_shortTitle': instance.shortTitleElement,
+      'note': instance.note,
+      'actual': instance.actual,
+      '_actual': instance.actualElement,
+      'characteristic': instance.characteristic,
+      'handling': instance.handling,
+      '_handling': instance.handlingElement,
+      'category': instance.category,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -530,46 +511,32 @@ _$EvidenceVariableCharacteristicImpl
         );
 
 Map<String, dynamic> _$$EvidenceVariableCharacteristicImplToJson(
-    _$EvidenceVariableCharacteristicImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('linkId', instance.linkId?.toJson());
-  writeNotNull('_linkId', instance.linkIdElement?.toJson());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  writeNotNull('exclude', instance.exclude?.toJson());
-  writeNotNull('_exclude', instance.excludeElement?.toJson());
-  writeNotNull('definitionReference', instance.definitionReference?.toJson());
-  writeNotNull('definitionCanonical', instance.definitionCanonical?.toJson());
-  writeNotNull('definitionCodeableConcept',
-      instance.definitionCodeableConcept?.toJson());
-  writeNotNull('definitionExpression', instance.definitionExpression?.toJson());
-  writeNotNull('definitionId', instance.definitionId?.toJson());
-  writeNotNull('_definitionId', instance.definitionIdElement?.toJson());
-  writeNotNull(
-      'definitionByTypeAndValue', instance.definitionByTypeAndValue?.toJson());
-  writeNotNull(
-      'definitionByCombination', instance.definitionByCombination?.toJson());
-  writeNotNull('instancesQuantity', instance.instancesQuantity?.toJson());
-  writeNotNull('instancesRange', instance.instancesRange?.toJson());
-  writeNotNull('durationQuantity', instance.durationQuantity?.toJson());
-  writeNotNull('durationRange', instance.durationRange?.toJson());
-  writeNotNull(
-      'timeFromEvent', instance.timeFromEvent?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$EvidenceVariableCharacteristicImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'linkId': instance.linkId,
+      '_linkId': instance.linkIdElement,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'note': instance.note,
+      'exclude': instance.exclude,
+      '_exclude': instance.excludeElement,
+      'definitionReference': instance.definitionReference,
+      'definitionCanonical': instance.definitionCanonical,
+      'definitionCodeableConcept': instance.definitionCodeableConcept,
+      'definitionExpression': instance.definitionExpression,
+      'definitionId': instance.definitionId,
+      '_definitionId': instance.definitionIdElement,
+      'definitionByTypeAndValue': instance.definitionByTypeAndValue,
+      'definitionByCombination': instance.definitionByCombination,
+      'instancesQuantity': instance.instancesQuantity,
+      'instancesRange': instance.instancesRange,
+      'durationQuantity': instance.durationQuantity,
+      'durationRange': instance.durationRange,
+      'timeFromEvent': instance.timeFromEvent,
+    };
 
 _$EvidenceVariableDefinitionByTypeAndValueImpl
     _$$EvidenceVariableDefinitionByTypeAndValueImplFromJson(
@@ -624,34 +591,24 @@ _$EvidenceVariableDefinitionByTypeAndValueImpl
         );
 
 Map<String, dynamic> _$$EvidenceVariableDefinitionByTypeAndValueImplToJson(
-    _$EvidenceVariableDefinitionByTypeAndValueImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['type'] = instance.type.toJson();
-  writeNotNull('method', instance.method?.map((e) => e.toJson()).toList());
-  writeNotNull('device', instance.device?.toJson());
-  writeNotNull('valueCodeableConcept', instance.valueCodeableConcept?.toJson());
-  writeNotNull('valueBoolean', instance.valueBoolean?.toJson());
-  writeNotNull('_valueBoolean', instance.valueBooleanElement?.toJson());
-  writeNotNull('valueQuantity', instance.valueQuantity?.toJson());
-  writeNotNull('valueRange', instance.valueRange?.toJson());
-  writeNotNull('valueReference', instance.valueReference?.toJson());
-  writeNotNull('valueId', instance.valueId?.toJson());
-  writeNotNull('_valueId', instance.valueIdElement?.toJson());
-  writeNotNull('offset', instance.offset?.toJson());
-  return val;
-}
+        _$EvidenceVariableDefinitionByTypeAndValueImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'type': instance.type,
+      'method': instance.method,
+      'device': instance.device,
+      'valueCodeableConcept': instance.valueCodeableConcept,
+      'valueBoolean': instance.valueBoolean,
+      '_valueBoolean': instance.valueBooleanElement,
+      'valueQuantity': instance.valueQuantity,
+      'valueRange': instance.valueRange,
+      'valueReference': instance.valueReference,
+      'valueId': instance.valueId,
+      '_valueId': instance.valueIdElement,
+      'offset': instance.offset,
+    };
 
 _$EvidenceVariableDefinitionByCombinationImpl
     _$$EvidenceVariableDefinitionByCombinationImplFromJson(
@@ -683,28 +640,17 @@ _$EvidenceVariableDefinitionByCombinationImpl
         );
 
 Map<String, dynamic> _$$EvidenceVariableDefinitionByCombinationImplToJson(
-    _$EvidenceVariableDefinitionByCombinationImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('code', instance.code?.toJson());
-  writeNotNull('_code', instance.codeElement?.toJson());
-  writeNotNull('threshold', instance.threshold?.toJson());
-  writeNotNull('_threshold', instance.thresholdElement?.toJson());
-  val['characteristic'] =
-      instance.characteristic.map((e) => e.toJson()).toList();
-  return val;
-}
+        _$EvidenceVariableDefinitionByCombinationImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'code': instance.code,
+      '_code': instance.codeElement,
+      'threshold': instance.threshold,
+      '_threshold': instance.thresholdElement,
+      'characteristic': instance.characteristic,
+    };
 
 _$EvidenceVariableTimeFromEventImpl
     _$$EvidenceVariableTimeFromEventImplFromJson(Map<String, dynamic> json) =>
@@ -756,33 +702,23 @@ _$EvidenceVariableTimeFromEventImpl
         );
 
 Map<String, dynamic> _$$EvidenceVariableTimeFromEventImplToJson(
-    _$EvidenceVariableTimeFromEventImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  writeNotNull('eventCodeableConcept', instance.eventCodeableConcept?.toJson());
-  writeNotNull('eventReference', instance.eventReference?.toJson());
-  writeNotNull('eventDateTime', instance.eventDateTime?.toJson());
-  writeNotNull('_eventDateTime', instance.eventDateTimeElement?.toJson());
-  writeNotNull('eventId', instance.eventId?.toJson());
-  writeNotNull('_eventId', instance.eventIdElement?.toJson());
-  writeNotNull('quantity', instance.quantity?.toJson());
-  writeNotNull('range', instance.range?.toJson());
-  return val;
-}
+        _$EvidenceVariableTimeFromEventImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'note': instance.note,
+      'eventCodeableConcept': instance.eventCodeableConcept,
+      'eventReference': instance.eventReference,
+      'eventDateTime': instance.eventDateTime,
+      '_eventDateTime': instance.eventDateTimeElement,
+      'eventId': instance.eventId,
+      '_eventId': instance.eventIdElement,
+      'quantity': instance.quantity,
+      'range': instance.range,
+    };
 
 _$EvidenceVariableCategoryImpl _$$EvidenceVariableCategoryImplFromJson(
         Map<String, dynamic> json) =>
@@ -811,24 +747,14 @@ _$EvidenceVariableCategoryImpl _$$EvidenceVariableCategoryImplFromJson(
     );
 
 Map<String, dynamic> _$$EvidenceVariableCategoryImplToJson(
-    _$EvidenceVariableCategoryImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('name', instance.name);
-  writeNotNull('_name', instance.nameElement?.toJson());
-  writeNotNull('valueCodeableConcept', instance.valueCodeableConcept?.toJson());
-  writeNotNull('valueQuantity', instance.valueQuantity?.toJson());
-  writeNotNull('valueRange', instance.valueRange?.toJson());
-  return val;
-}
+        _$EvidenceVariableCategoryImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'name': instance.name,
+      '_name': instance.nameElement,
+      'valueCodeableConcept': instance.valueCodeableConcept,
+      'valueQuantity': instance.valueQuantity,
+      'valueRange': instance.valueRange,
+    };

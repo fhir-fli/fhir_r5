@@ -34,23 +34,14 @@ _$ExtendedContactDetailImpl _$$ExtendedContactDetailImplFromJson(
     );
 
 Map<String, dynamic> _$$ExtendedContactDetailImplToJson(
-    _$ExtendedContactDetailImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('purpose', instance.purpose?.toJson());
-  writeNotNull('name', instance.name?.map((e) => e.toJson()).toList());
-  writeNotNull('telecom', instance.telecom?.map((e) => e.toJson()).toList());
-  writeNotNull('address', instance.address?.toJson());
-  writeNotNull('organization', instance.organization?.toJson());
-  writeNotNull('period', instance.period?.toJson());
-  return val;
-}
+        _$ExtendedContactDetailImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'purpose': instance.purpose,
+      'name': instance.name,
+      'telecom': instance.telecom,
+      'address': instance.address,
+      'organization': instance.organization,
+      'period': instance.period,
+    };

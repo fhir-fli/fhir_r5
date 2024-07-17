@@ -79,47 +79,33 @@ _$IngredientImpl _$$IngredientImplFromJson(Map<String, dynamic> json) =>
           json['substance'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$IngredientImplToJson(_$IngredientImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('identifier', instance.identifier?.toJson());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('for', instance.for_?.map((e) => e.toJson()).toList());
-  val['role'] = instance.role.toJson();
-  writeNotNull('function', instance.function_?.map((e) => e.toJson()).toList());
-  writeNotNull('group', instance.group?.toJson());
-  writeNotNull('allergenicIndicator', instance.allergenicIndicator?.toJson());
-  writeNotNull(
-      '_allergenicIndicator', instance.allergenicIndicatorElement?.toJson());
-  writeNotNull('comment', instance.comment?.toJson());
-  writeNotNull('_comment', instance.commentElement?.toJson());
-  writeNotNull(
-      'manufacturer', instance.manufacturer?.map((e) => e.toJson()).toList());
-  val['substance'] = instance.substance.toJson();
-  return val;
-}
+Map<String, dynamic> _$$IngredientImplToJson(_$IngredientImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'for': instance.for_,
+      'role': instance.role,
+      'function': instance.function_,
+      'group': instance.group,
+      'allergenicIndicator': instance.allergenicIndicator,
+      '_allergenicIndicator': instance.allergenicIndicatorElement,
+      'comment': instance.comment,
+      '_comment': instance.commentElement,
+      'manufacturer': instance.manufacturer,
+      'substance': instance.substance,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -303,25 +289,15 @@ _$IngredientManufacturerImpl _$$IngredientManufacturerImplFromJson(
     );
 
 Map<String, dynamic> _$$IngredientManufacturerImplToJson(
-    _$IngredientManufacturerImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('role', instance.role?.toJson());
-  writeNotNull('_role', instance.roleElement?.toJson());
-  val['manufacturer'] = instance.manufacturer.toJson();
-  return val;
-}
+        _$IngredientManufacturerImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'role': instance.role,
+      '_role': instance.roleElement,
+      'manufacturer': instance.manufacturer,
+    };
 
 _$IngredientSubstanceImpl _$$IngredientSubstanceImplFromJson(
         Map<String, dynamic> json) =>
@@ -340,24 +316,14 @@ _$IngredientSubstanceImpl _$$IngredientSubstanceImplFromJson(
     );
 
 Map<String, dynamic> _$$IngredientSubstanceImplToJson(
-    _$IngredientSubstanceImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['code'] = instance.code.toJson();
-  writeNotNull('strength', instance.strength?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$IngredientSubstanceImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'code': instance.code,
+      'strength': instance.strength,
+    };
 
 _$IngredientStrengthImpl _$$IngredientStrengthImplFromJson(
         Map<String, dynamic> json) =>
@@ -427,46 +393,29 @@ _$IngredientStrengthImpl _$$IngredientStrengthImplFromJson(
     );
 
 Map<String, dynamic> _$$IngredientStrengthImplToJson(
-    _$IngredientStrengthImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('presentationRatio', instance.presentationRatio?.toJson());
-  writeNotNull(
-      'presentationRatioRange', instance.presentationRatioRange?.toJson());
-  writeNotNull('presentationCodeableConcept',
-      instance.presentationCodeableConcept?.toJson());
-  writeNotNull('presentationQuantity', instance.presentationQuantity?.toJson());
-  writeNotNull('textPresentation', instance.textPresentation);
-  writeNotNull('_textPresentation', instance.textPresentationElement?.toJson());
-  writeNotNull('concentrationRatio', instance.concentrationRatio?.toJson());
-  writeNotNull(
-      'concentrationRatioRange', instance.concentrationRatioRange?.toJson());
-  writeNotNull('concentrationCodeableConcept',
-      instance.concentrationCodeableConcept?.toJson());
-  writeNotNull(
-      'concentrationQuantity', instance.concentrationQuantity?.toJson());
-  writeNotNull('textConcentration', instance.textConcentration);
-  writeNotNull(
-      '_textConcentration', instance.textConcentrationElement?.toJson());
-  writeNotNull('basis', instance.basis?.toJson());
-  writeNotNull('measurementPoint', instance.measurementPoint);
-  writeNotNull('_measurementPoint', instance.measurementPointElement?.toJson());
-  writeNotNull('country', instance.country?.map((e) => e.toJson()).toList());
-  writeNotNull('referenceStrength',
-      instance.referenceStrength?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$IngredientStrengthImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'presentationRatio': instance.presentationRatio,
+      'presentationRatioRange': instance.presentationRatioRange,
+      'presentationCodeableConcept': instance.presentationCodeableConcept,
+      'presentationQuantity': instance.presentationQuantity,
+      'textPresentation': instance.textPresentation,
+      '_textPresentation': instance.textPresentationElement,
+      'concentrationRatio': instance.concentrationRatio,
+      'concentrationRatioRange': instance.concentrationRatioRange,
+      'concentrationCodeableConcept': instance.concentrationCodeableConcept,
+      'concentrationQuantity': instance.concentrationQuantity,
+      'textConcentration': instance.textConcentration,
+      '_textConcentration': instance.textConcentrationElement,
+      'basis': instance.basis,
+      'measurementPoint': instance.measurementPoint,
+      '_measurementPoint': instance.measurementPointElement,
+      'country': instance.country,
+      'referenceStrength': instance.referenceStrength,
+    };
 
 _$IngredientReferenceStrengthImpl _$$IngredientReferenceStrengthImplFromJson(
         Map<String, dynamic> json) =>
@@ -501,26 +450,16 @@ _$IngredientReferenceStrengthImpl _$$IngredientReferenceStrengthImplFromJson(
     );
 
 Map<String, dynamic> _$$IngredientReferenceStrengthImplToJson(
-    _$IngredientReferenceStrengthImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['substance'] = instance.substance.toJson();
-  writeNotNull('strengthRatio', instance.strengthRatio?.toJson());
-  writeNotNull('strengthRatioRange', instance.strengthRatioRange?.toJson());
-  writeNotNull('strengthQuantity', instance.strengthQuantity?.toJson());
-  writeNotNull('measurementPoint', instance.measurementPoint);
-  writeNotNull('_measurementPoint', instance.measurementPointElement?.toJson());
-  writeNotNull('country', instance.country?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$IngredientReferenceStrengthImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'substance': instance.substance,
+      'strengthRatio': instance.strengthRatio,
+      'strengthRatioRange': instance.strengthRatioRange,
+      'strengthQuantity': instance.strengthQuantity,
+      'measurementPoint': instance.measurementPoint,
+      '_measurementPoint': instance.measurementPointElement,
+      'country': instance.country,
+    };

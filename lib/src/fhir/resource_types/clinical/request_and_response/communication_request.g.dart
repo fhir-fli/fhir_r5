@@ -134,65 +134,49 @@ _$CommunicationRequestImpl _$$CommunicationRequestImplFromJson(
     );
 
 Map<String, dynamic> _$$CommunicationRequestImplToJson(
-    _$CommunicationRequestImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
-  writeNotNull('replaces', instance.replaces?.map((e) => e.toJson()).toList());
-  writeNotNull('groupIdentifier', instance.groupIdentifier?.toJson());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('statusReason', instance.statusReason?.toJson());
-  writeNotNull('intent', instance.intent?.toJson());
-  writeNotNull('_intent', instance.intentElement?.toJson());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  writeNotNull('priority', instance.priority?.toJson());
-  writeNotNull('_priority', instance.priorityElement?.toJson());
-  writeNotNull('doNotPerform', instance.doNotPerform?.toJson());
-  writeNotNull('_doNotPerform', instance.doNotPerformElement?.toJson());
-  writeNotNull('medium', instance.medium?.map((e) => e.toJson()).toList());
-  writeNotNull('subject', instance.subject?.toJson());
-  writeNotNull('about', instance.about?.map((e) => e.toJson()).toList());
-  writeNotNull('encounter', instance.encounter?.toJson());
-  writeNotNull('payload', instance.payload?.map((e) => e.toJson()).toList());
-  writeNotNull('occurrenceDateTime', instance.occurrenceDateTime?.toJson());
-  writeNotNull(
-      '_occurrenceDateTime', instance.occurrenceDateTimeElement?.toJson());
-  writeNotNull('occurrencePeriod', instance.occurrencePeriod?.toJson());
-  writeNotNull('authoredOn', instance.authoredOn?.toJson());
-  writeNotNull('_authoredOn', instance.authoredOnElement?.toJson());
-  writeNotNull('requester', instance.requester?.toJson());
-  writeNotNull(
-      'recipient', instance.recipient?.map((e) => e.toJson()).toList());
-  writeNotNull('informationProvider',
-      instance.informationProvider?.map((e) => e.toJson()).toList());
-  writeNotNull('reason', instance.reason?.map((e) => e.toJson()).toList());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$CommunicationRequestImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'basedOn': instance.basedOn,
+      'replaces': instance.replaces,
+      'groupIdentifier': instance.groupIdentifier,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'statusReason': instance.statusReason,
+      'intent': instance.intent,
+      '_intent': instance.intentElement,
+      'category': instance.category,
+      'priority': instance.priority,
+      '_priority': instance.priorityElement,
+      'doNotPerform': instance.doNotPerform,
+      '_doNotPerform': instance.doNotPerformElement,
+      'medium': instance.medium,
+      'subject': instance.subject,
+      'about': instance.about,
+      'encounter': instance.encounter,
+      'payload': instance.payload,
+      'occurrenceDateTime': instance.occurrenceDateTime,
+      '_occurrenceDateTime': instance.occurrenceDateTimeElement,
+      'occurrencePeriod': instance.occurrencePeriod,
+      'authoredOn': instance.authoredOn,
+      '_authoredOn': instance.authoredOnElement,
+      'requester': instance.requester,
+      'recipient': instance.recipient,
+      'informationProvider': instance.informationProvider,
+      'reason': instance.reason,
+      'note': instance.note,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -382,23 +366,12 @@ _$CommunicationRequestPayloadImpl _$$CommunicationRequestPayloadImplFromJson(
     );
 
 Map<String, dynamic> _$$CommunicationRequestPayloadImplToJson(
-    _$CommunicationRequestPayloadImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('contentAttachment', instance.contentAttachment?.toJson());
-  writeNotNull('contentReference', instance.contentReference?.toJson());
-  writeNotNull(
-      'contentCodeableConcept', instance.contentCodeableConcept?.toJson());
-  return val;
-}
+        _$CommunicationRequestPayloadImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'contentAttachment': instance.contentAttachment,
+      'contentReference': instance.contentReference,
+      'contentCodeableConcept': instance.contentCodeableConcept,
+    };

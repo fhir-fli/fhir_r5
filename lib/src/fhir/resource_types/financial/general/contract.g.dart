@@ -172,84 +172,64 @@ _$ContractImpl _$$ContractImplFromJson(Map<String, dynamic> json) =>
               json['legallyBindingReference'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$ContractImplToJson(_$ContractImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('url', instance.url?.toJson());
-  writeNotNull('_url', instance.urlElement?.toJson());
-  writeNotNull('version', instance.version);
-  writeNotNull('_version', instance.versionElement?.toJson());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('legalState', instance.legalState?.toJson());
-  writeNotNull(
-      'instantiatesCanonical', instance.instantiatesCanonical?.toJson());
-  writeNotNull('instantiatesUri', instance.instantiatesUri?.toJson());
-  writeNotNull('_instantiatesUri', instance.instantiatesUriElement?.toJson());
-  writeNotNull('contentDerivative', instance.contentDerivative?.toJson());
-  writeNotNull('issued', instance.issued?.toJson());
-  writeNotNull('_issued', instance.issuedElement?.toJson());
-  writeNotNull('applies', instance.applies?.toJson());
-  writeNotNull('expirationType', instance.expirationType?.toJson());
-  writeNotNull('subject', instance.subject?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'authority', instance.authority?.map((e) => e.toJson()).toList());
-  writeNotNull('domain', instance.domain?.map((e) => e.toJson()).toList());
-  writeNotNull('site', instance.site?.map((e) => e.toJson()).toList());
-  writeNotNull('name', instance.name);
-  writeNotNull('_name', instance.nameElement?.toJson());
-  writeNotNull('title', instance.title);
-  writeNotNull('_title', instance.titleElement?.toJson());
-  writeNotNull('subtitle', instance.subtitle);
-  writeNotNull('_subtitle', instance.subtitleElement?.toJson());
-  writeNotNull('alias', instance.alias);
-  writeNotNull(
-      '_alias', instance.aliasElement?.map((e) => e.toJson()).toList());
-  writeNotNull('author', instance.author?.toJson());
-  writeNotNull('scope', instance.scope?.toJson());
-  writeNotNull('topicCodeableConcept', instance.topicCodeableConcept?.toJson());
-  writeNotNull('topicReference', instance.topicReference?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('subType', instance.subType?.map((e) => e.toJson()).toList());
-  writeNotNull('contentDefinition', instance.contentDefinition?.toJson());
-  writeNotNull('term', instance.term?.map((e) => e.toJson()).toList());
-  writeNotNull('supportingInfo',
-      instance.supportingInfo?.map((e) => e.toJson()).toList());
-  writeNotNull('relevantHistory',
-      instance.relevantHistory?.map((e) => e.toJson()).toList());
-  writeNotNull('signer', instance.signer?.map((e) => e.toJson()).toList());
-  writeNotNull('friendly', instance.friendly?.map((e) => e.toJson()).toList());
-  writeNotNull('legal', instance.legal?.map((e) => e.toJson()).toList());
-  writeNotNull('rule', instance.rule?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'legallyBindingAttachment', instance.legallyBindingAttachment?.toJson());
-  writeNotNull(
-      'legallyBindingReference', instance.legallyBindingReference?.toJson());
-  return val;
-}
+Map<String, dynamic> _$$ContractImplToJson(_$ContractImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'url': instance.url,
+      '_url': instance.urlElement,
+      'version': instance.version,
+      '_version': instance.versionElement,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'legalState': instance.legalState,
+      'instantiatesCanonical': instance.instantiatesCanonical,
+      'instantiatesUri': instance.instantiatesUri,
+      '_instantiatesUri': instance.instantiatesUriElement,
+      'contentDerivative': instance.contentDerivative,
+      'issued': instance.issued,
+      '_issued': instance.issuedElement,
+      'applies': instance.applies,
+      'expirationType': instance.expirationType,
+      'subject': instance.subject,
+      'authority': instance.authority,
+      'domain': instance.domain,
+      'site': instance.site,
+      'name': instance.name,
+      '_name': instance.nameElement,
+      'title': instance.title,
+      '_title': instance.titleElement,
+      'subtitle': instance.subtitle,
+      '_subtitle': instance.subtitleElement,
+      'alias': instance.alias,
+      '_alias': instance.aliasElement,
+      'author': instance.author,
+      'scope': instance.scope,
+      'topicCodeableConcept': instance.topicCodeableConcept,
+      'topicReference': instance.topicReference,
+      'type': instance.type,
+      'subType': instance.subType,
+      'contentDefinition': instance.contentDefinition,
+      'term': instance.term,
+      'supportingInfo': instance.supportingInfo,
+      'relevantHistory': instance.relevantHistory,
+      'signer': instance.signer,
+      'friendly': instance.friendly,
+      'legal': instance.legal,
+      'rule': instance.rule,
+      'legallyBindingAttachment': instance.legallyBindingAttachment,
+      'legallyBindingReference': instance.legallyBindingReference,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -455,32 +435,21 @@ _$ContractContentDefinitionImpl _$$ContractContentDefinitionImplFromJson(
     );
 
 Map<String, dynamic> _$$ContractContentDefinitionImplToJson(
-    _$ContractContentDefinitionImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['type'] = instance.type.toJson();
-  writeNotNull('subType', instance.subType?.toJson());
-  writeNotNull('publisher', instance.publisher?.toJson());
-  writeNotNull('publicationDate', instance.publicationDate?.toJson());
-  writeNotNull('_publicationDate', instance.publicationDateElement?.toJson());
-  writeNotNull('publicationStatus', instance.publicationStatus?.toJson());
-  writeNotNull(
-      '_publicationStatus', instance.publicationStatusElement?.toJson());
-  writeNotNull('copyright', instance.copyright?.toJson());
-  writeNotNull('_copyright', instance.copyrightElement?.toJson());
-  return val;
-}
+        _$ContractContentDefinitionImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'type': instance.type,
+      'subType': instance.subType,
+      'publisher': instance.publisher,
+      'publicationDate': instance.publicationDate,
+      '_publicationDate': instance.publicationDateElement,
+      'publicationStatus': instance.publicationStatus,
+      '_publicationStatus': instance.publicationStatusElement,
+      'copyright': instance.copyright,
+      '_copyright': instance.copyrightElement,
+    };
 
 _$ContractTermImpl _$$ContractTermImplFromJson(Map<String, dynamic> json) =>
     _$ContractTermImpl(
@@ -536,38 +505,27 @@ _$ContractTermImpl _$$ContractTermImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$ContractTermImplToJson(_$ContractTermImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('identifier', instance.identifier?.toJson());
-  writeNotNull('issued', instance.issued?.toJson());
-  writeNotNull('_issued', instance.issuedElement?.toJson());
-  writeNotNull('applies', instance.applies?.toJson());
-  writeNotNull('topicCodeableConcept', instance.topicCodeableConcept?.toJson());
-  writeNotNull('topicReference', instance.topicReference?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('subType', instance.subType?.toJson());
-  writeNotNull('text', instance.text);
-  writeNotNull('_text', instance.textElement?.toJson());
-  writeNotNull(
-      'securityLabel', instance.securityLabel?.map((e) => e.toJson()).toList());
-  val['offer'] = instance.offer.toJson();
-  writeNotNull('asset', instance.asset?.map((e) => e.toJson()).toList());
-  writeNotNull('action', instance.action?.map((e) => e.toJson()).toList());
-  writeNotNull('group', instance.group?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$ContractTermImplToJson(_$ContractTermImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'issued': instance.issued,
+      '_issued': instance.issuedElement,
+      'applies': instance.applies,
+      'topicCodeableConcept': instance.topicCodeableConcept,
+      'topicReference': instance.topicReference,
+      'type': instance.type,
+      'subType': instance.subType,
+      'text': instance.text,
+      '_text': instance.textElement,
+      'securityLabel': instance.securityLabel,
+      'offer': instance.offer,
+      'asset': instance.asset,
+      'action': instance.action,
+      'group': instance.group,
+    };
 
 _$ContractSecurityLabelImpl _$$ContractSecurityLabelImplFromJson(
         Map<String, dynamic> json) =>
@@ -596,28 +554,17 @@ _$ContractSecurityLabelImpl _$$ContractSecurityLabelImplFromJson(
     );
 
 Map<String, dynamic> _$$ContractSecurityLabelImplToJson(
-    _$ContractSecurityLabelImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('number', instance.number?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      '_number', instance.numberElement?.map((e) => e.toJson()).toList());
-  val['classification'] = instance.classification.toJson();
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  writeNotNull('control', instance.control?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$ContractSecurityLabelImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'number': instance.number,
+      '_number': instance.numberElement,
+      'classification': instance.classification,
+      'category': instance.category,
+      'control': instance.control,
+    };
 
 _$ContractOfferImpl _$$ContractOfferImplFromJson(Map<String, dynamic> json) =>
     _$ContractOfferImpl(
@@ -667,40 +614,25 @@ _$ContractOfferImpl _$$ContractOfferImplFromJson(Map<String, dynamic> json) =>
               .toList(),
     );
 
-Map<String, dynamic> _$$ContractOfferImplToJson(_$ContractOfferImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('party', instance.party?.map((e) => e.toJson()).toList());
-  writeNotNull('topic', instance.topic?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('decision', instance.decision?.toJson());
-  writeNotNull(
-      'decisionMode', instance.decisionMode?.map((e) => e.toJson()).toList());
-  writeNotNull('answer', instance.answer?.map((e) => e.toJson()).toList());
-  writeNotNull('text', instance.text);
-  writeNotNull('_text', instance.textElement?.toJson());
-  writeNotNull('linkId', instance.linkId);
-  writeNotNull(
-      '_linkId', instance.linkIdElement?.map((e) => e.toJson()).toList());
-  writeNotNull('securityLabelNumber',
-      instance.securityLabelNumber?.map((e) => e.toJson()).toList());
-  writeNotNull('_securityLabelNumber',
-      instance.securityLabelNumberElement?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$ContractOfferImplToJson(_$ContractOfferImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'party': instance.party,
+      'topic': instance.topic,
+      'type': instance.type,
+      'decision': instance.decision,
+      'decisionMode': instance.decisionMode,
+      'answer': instance.answer,
+      'text': instance.text,
+      '_text': instance.textElement,
+      'linkId': instance.linkId,
+      '_linkId': instance.linkIdElement,
+      'securityLabelNumber': instance.securityLabelNumber,
+      '_securityLabelNumber': instance.securityLabelNumberElement,
+    };
 
 _$ContractPartyImpl _$$ContractPartyImplFromJson(Map<String, dynamic> json) =>
     _$ContractPartyImpl(
@@ -717,24 +649,14 @@ _$ContractPartyImpl _$$ContractPartyImplFromJson(Map<String, dynamic> json) =>
       role: CodeableConcept.fromJson(json['role'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$ContractPartyImplToJson(_$ContractPartyImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['reference'] = instance.reference.map((e) => e.toJson()).toList();
-  val['role'] = instance.role.toJson();
-  return val;
-}
+Map<String, dynamic> _$$ContractPartyImplToJson(_$ContractPartyImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'reference': instance.reference,
+      'role': instance.role,
+    };
 
 _$ContractAnswerImpl _$$ContractAnswerImplFromJson(Map<String, dynamic> json) =>
     _$ContractAnswerImpl(
@@ -814,42 +736,32 @@ _$ContractAnswerImpl _$$ContractAnswerImplFromJson(Map<String, dynamic> json) =>
     );
 
 Map<String, dynamic> _$$ContractAnswerImplToJson(
-    _$ContractAnswerImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('valueBoolean', instance.valueBoolean?.toJson());
-  writeNotNull('_valueBoolean', instance.valueBooleanElement?.toJson());
-  writeNotNull('valueDecimal', instance.valueDecimal?.toJson());
-  writeNotNull('_valueDecimal', instance.valueDecimalElement?.toJson());
-  writeNotNull('valueInteger', instance.valueInteger?.toJson());
-  writeNotNull('_valueInteger', instance.valueIntegerElement?.toJson());
-  writeNotNull('valueDate', instance.valueDate?.toJson());
-  writeNotNull('_valueDate', instance.valueDateElement?.toJson());
-  writeNotNull('valueDateTime', instance.valueDateTime?.toJson());
-  writeNotNull('_valueDateTime', instance.valueDateTimeElement?.toJson());
-  writeNotNull('valueTime', instance.valueTime?.toJson());
-  writeNotNull('_valueTime', instance.valueTimeElement?.toJson());
-  writeNotNull('valueString', instance.valueString);
-  writeNotNull('_valueString', instance.valueStringElement?.toJson());
-  writeNotNull('valueUri', instance.valueUri?.toJson());
-  writeNotNull('_valueUri', instance.valueUriElement?.toJson());
-  writeNotNull('valueAttachment', instance.valueAttachment?.toJson());
-  writeNotNull('valueCoding', instance.valueCoding?.toJson());
-  writeNotNull('valueQuantity', instance.valueQuantity?.toJson());
-  writeNotNull('valueReference', instance.valueReference?.toJson());
-  return val;
-}
+        _$ContractAnswerImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'valueBoolean': instance.valueBoolean,
+      '_valueBoolean': instance.valueBooleanElement,
+      'valueDecimal': instance.valueDecimal,
+      '_valueDecimal': instance.valueDecimalElement,
+      'valueInteger': instance.valueInteger,
+      '_valueInteger': instance.valueIntegerElement,
+      'valueDate': instance.valueDate,
+      '_valueDate': instance.valueDateElement,
+      'valueDateTime': instance.valueDateTime,
+      '_valueDateTime': instance.valueDateTimeElement,
+      'valueTime': instance.valueTime,
+      '_valueTime': instance.valueTimeElement,
+      'valueString': instance.valueString,
+      '_valueString': instance.valueStringElement,
+      'valueUri': instance.valueUri,
+      '_valueUri': instance.valueUriElement,
+      'valueAttachment': instance.valueAttachment,
+      'valueCoding': instance.valueCoding,
+      'valueQuantity': instance.valueQuantity,
+      'valueReference': instance.valueReference,
+    };
 
 _$ContractAssetImpl _$$ContractAssetImplFromJson(Map<String, dynamic> json) =>
     _$ContractAssetImpl(
@@ -916,48 +828,31 @@ _$ContractAssetImpl _$$ContractAssetImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$ContractAssetImplToJson(_$ContractAssetImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('scope', instance.scope?.toJson());
-  writeNotNull('type', instance.type?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'typeReference', instance.typeReference?.map((e) => e.toJson()).toList());
-  writeNotNull('subtype', instance.subtype?.map((e) => e.toJson()).toList());
-  writeNotNull('relationship', instance.relationship?.toJson());
-  writeNotNull('context', instance.context?.map((e) => e.toJson()).toList());
-  writeNotNull('condition', instance.condition);
-  writeNotNull('_condition', instance.conditionElement?.toJson());
-  writeNotNull(
-      'periodType', instance.periodType?.map((e) => e.toJson()).toList());
-  writeNotNull('period', instance.period?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'usePeriod', instance.usePeriod?.map((e) => e.toJson()).toList());
-  writeNotNull('text', instance.text);
-  writeNotNull('_text', instance.textElement?.toJson());
-  writeNotNull('linkId', instance.linkId);
-  writeNotNull(
-      '_linkId', instance.linkIdElement?.map((e) => e.toJson()).toList());
-  writeNotNull('answer', instance.answer?.map((e) => e.toJson()).toList());
-  writeNotNull('securityLabelNumber',
-      instance.securityLabelNumber?.map((e) => e.toJson()).toList());
-  writeNotNull('_securityLabelNumber',
-      instance.securityLabelNumberElement?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'valuedItem', instance.valuedItem?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$ContractAssetImplToJson(_$ContractAssetImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'scope': instance.scope,
+      'type': instance.type,
+      'typeReference': instance.typeReference,
+      'subtype': instance.subtype,
+      'relationship': instance.relationship,
+      'context': instance.context,
+      'condition': instance.condition,
+      '_condition': instance.conditionElement,
+      'periodType': instance.periodType,
+      'period': instance.period,
+      'usePeriod': instance.usePeriod,
+      'text': instance.text,
+      '_text': instance.textElement,
+      'linkId': instance.linkId,
+      '_linkId': instance.linkIdElement,
+      'answer': instance.answer,
+      'securityLabelNumber': instance.securityLabelNumber,
+      '_securityLabelNumber': instance.securityLabelNumberElement,
+      'valuedItem': instance.valuedItem,
+    };
 
 _$ContractContextImpl _$$ContractContextImplFromJson(
         Map<String, dynamic> json) =>
@@ -982,26 +877,16 @@ _$ContractContextImpl _$$ContractContextImplFromJson(
     );
 
 Map<String, dynamic> _$$ContractContextImplToJson(
-    _$ContractContextImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('reference', instance.reference?.toJson());
-  writeNotNull('code', instance.code?.map((e) => e.toJson()).toList());
-  writeNotNull('text', instance.text);
-  writeNotNull('_text', instance.textElement?.toJson());
-  return val;
-}
+        _$ContractContextImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'reference': instance.reference,
+      'code': instance.code,
+      'text': instance.text,
+      '_text': instance.textElement,
+    };
 
 _$ContractValuedItemImpl _$$ContractValuedItemImplFromJson(
         Map<String, dynamic> json) =>
@@ -1081,48 +966,34 @@ _$ContractValuedItemImpl _$$ContractValuedItemImplFromJson(
     );
 
 Map<String, dynamic> _$$ContractValuedItemImplToJson(
-    _$ContractValuedItemImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'entityCodeableConcept', instance.entityCodeableConcept?.toJson());
-  writeNotNull('entityReference', instance.entityReference?.toJson());
-  writeNotNull('identifier', instance.identifier?.toJson());
-  writeNotNull('effectiveTime', instance.effectiveTime?.toJson());
-  writeNotNull('_effectiveTime', instance.effectiveTimeElement?.toJson());
-  writeNotNull('quantity', instance.quantity?.toJson());
-  writeNotNull('unitPrice', instance.unitPrice?.toJson());
-  writeNotNull('factor', instance.factor?.toJson());
-  writeNotNull('_factor', instance.factorElement?.toJson());
-  writeNotNull('points', instance.points?.toJson());
-  writeNotNull('_points', instance.pointsElement?.toJson());
-  writeNotNull('net', instance.net?.toJson());
-  writeNotNull('payment', instance.payment);
-  writeNotNull('_payment', instance.paymentElement?.toJson());
-  writeNotNull('paymentDate', instance.paymentDate?.toJson());
-  writeNotNull('_paymentDate', instance.paymentDateElement?.toJson());
-  writeNotNull('responsible', instance.responsible?.toJson());
-  writeNotNull('recipient', instance.recipient?.toJson());
-  writeNotNull('linkId', instance.linkId);
-  writeNotNull(
-      '_linkId', instance.linkIdElement?.map((e) => e.toJson()).toList());
-  writeNotNull('securityLabelNumber',
-      instance.securityLabelNumber?.map((e) => e.toJson()).toList());
-  writeNotNull('_securityLabelNumber',
-      instance.securityLabelNumberElement?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$ContractValuedItemImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'entityCodeableConcept': instance.entityCodeableConcept,
+      'entityReference': instance.entityReference,
+      'identifier': instance.identifier,
+      'effectiveTime': instance.effectiveTime,
+      '_effectiveTime': instance.effectiveTimeElement,
+      'quantity': instance.quantity,
+      'unitPrice': instance.unitPrice,
+      'factor': instance.factor,
+      '_factor': instance.factorElement,
+      'points': instance.points,
+      '_points': instance.pointsElement,
+      'net': instance.net,
+      'payment': instance.payment,
+      '_payment': instance.paymentElement,
+      'paymentDate': instance.paymentDate,
+      '_paymentDate': instance.paymentDateElement,
+      'responsible': instance.responsible,
+      'recipient': instance.recipient,
+      'linkId': instance.linkId,
+      '_linkId': instance.linkIdElement,
+      'securityLabelNumber': instance.securityLabelNumber,
+      '_securityLabelNumber': instance.securityLabelNumberElement,
+    };
 
 _$ContractActionImpl _$$ContractActionImplFromJson(Map<String, dynamic> json) =>
     _$ContractActionImpl(
@@ -1220,61 +1091,41 @@ _$ContractActionImpl _$$ContractActionImplFromJson(Map<String, dynamic> json) =>
     );
 
 Map<String, dynamic> _$$ContractActionImplToJson(
-    _$ContractActionImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('doNotPerform', instance.doNotPerform?.toJson());
-  writeNotNull('_doNotPerform', instance.doNotPerformElement?.toJson());
-  val['type'] = instance.type.toJson();
-  writeNotNull('subject', instance.subject?.map((e) => e.toJson()).toList());
-  val['intent'] = instance.intent.toJson();
-  writeNotNull('linkId', instance.linkId);
-  writeNotNull(
-      '_linkId', instance.linkIdElement?.map((e) => e.toJson()).toList());
-  val['status'] = instance.status.toJson();
-  writeNotNull('context', instance.context?.toJson());
-  writeNotNull('contextLinkId', instance.contextLinkId);
-  writeNotNull('_contextLinkId',
-      instance.contextLinkIdElement?.map((e) => e.toJson()).toList());
-  writeNotNull('occurrenceDateTime', instance.occurrenceDateTime?.toJson());
-  writeNotNull(
-      '_occurrenceDateTime', instance.occurrenceDateTimeElement?.toJson());
-  writeNotNull('occurrencePeriod', instance.occurrencePeriod?.toJson());
-  writeNotNull('occurrenceTiming', instance.occurrenceTiming?.toJson());
-  writeNotNull(
-      'requester', instance.requester?.map((e) => e.toJson()).toList());
-  writeNotNull('requesterLinkId', instance.requesterLinkId);
-  writeNotNull('_requesterLinkId',
-      instance.requesterLinkIdElement?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'performerType', instance.performerType?.map((e) => e.toJson()).toList());
-  writeNotNull('performerRole', instance.performerRole?.toJson());
-  writeNotNull('performer', instance.performer?.toJson());
-  writeNotNull('performerLinkId', instance.performerLinkId);
-  writeNotNull('_performerLinkId',
-      instance.performerLinkIdElement?.map((e) => e.toJson()).toList());
-  writeNotNull('reason', instance.reason?.map((e) => e.toJson()).toList());
-  writeNotNull('reasonLinkId', instance.reasonLinkId);
-  writeNotNull('_reasonLinkId',
-      instance.reasonLinkIdElement?.map((e) => e.toJson()).toList());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  writeNotNull('securityLabelNumber',
-      instance.securityLabelNumber?.map((e) => e.toJson()).toList());
-  writeNotNull('_securityLabelNumber',
-      instance.securityLabelNumberElement?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$ContractActionImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'doNotPerform': instance.doNotPerform,
+      '_doNotPerform': instance.doNotPerformElement,
+      'type': instance.type,
+      'subject': instance.subject,
+      'intent': instance.intent,
+      'linkId': instance.linkId,
+      '_linkId': instance.linkIdElement,
+      'status': instance.status,
+      'context': instance.context,
+      'contextLinkId': instance.contextLinkId,
+      '_contextLinkId': instance.contextLinkIdElement,
+      'occurrenceDateTime': instance.occurrenceDateTime,
+      '_occurrenceDateTime': instance.occurrenceDateTimeElement,
+      'occurrencePeriod': instance.occurrencePeriod,
+      'occurrenceTiming': instance.occurrenceTiming,
+      'requester': instance.requester,
+      'requesterLinkId': instance.requesterLinkId,
+      '_requesterLinkId': instance.requesterLinkIdElement,
+      'performerType': instance.performerType,
+      'performerRole': instance.performerRole,
+      'performer': instance.performer,
+      'performerLinkId': instance.performerLinkId,
+      '_performerLinkId': instance.performerLinkIdElement,
+      'reason': instance.reason,
+      'reasonLinkId': instance.reasonLinkId,
+      '_reasonLinkId': instance.reasonLinkIdElement,
+      'note': instance.note,
+      'securityLabelNumber': instance.securityLabelNumber,
+      '_securityLabelNumber': instance.securityLabelNumberElement,
+    };
 
 _$ContractSubjectImpl _$$ContractSubjectImplFromJson(
         Map<String, dynamic> json) =>
@@ -1295,24 +1146,14 @@ _$ContractSubjectImpl _$$ContractSubjectImplFromJson(
     );
 
 Map<String, dynamic> _$$ContractSubjectImplToJson(
-    _$ContractSubjectImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['reference'] = instance.reference.map((e) => e.toJson()).toList();
-  writeNotNull('role', instance.role?.toJson());
-  return val;
-}
+        _$ContractSubjectImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'reference': instance.reference,
+      'role': instance.role,
+    };
 
 _$ContractSignerImpl _$$ContractSignerImplFromJson(Map<String, dynamic> json) =>
     _$ContractSignerImpl(
@@ -1331,25 +1172,15 @@ _$ContractSignerImpl _$$ContractSignerImplFromJson(Map<String, dynamic> json) =>
     );
 
 Map<String, dynamic> _$$ContractSignerImplToJson(
-    _$ContractSignerImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['type'] = instance.type.toJson();
-  val['party'] = instance.party.toJson();
-  val['signature'] = instance.signature.map((e) => e.toJson()).toList();
-  return val;
-}
+        _$ContractSignerImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'type': instance.type,
+      'party': instance.party,
+      'signature': instance.signature,
+    };
 
 _$ContractFriendlyImpl _$$ContractFriendlyImplFromJson(
         Map<String, dynamic> json) =>
@@ -1372,24 +1203,14 @@ _$ContractFriendlyImpl _$$ContractFriendlyImplFromJson(
     );
 
 Map<String, dynamic> _$$ContractFriendlyImplToJson(
-    _$ContractFriendlyImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('contentAttachment', instance.contentAttachment?.toJson());
-  writeNotNull('contentReference', instance.contentReference?.toJson());
-  return val;
-}
+        _$ContractFriendlyImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'contentAttachment': instance.contentAttachment,
+      'contentReference': instance.contentReference,
+    };
 
 _$ContractLegalImpl _$$ContractLegalImplFromJson(Map<String, dynamic> json) =>
     _$ContractLegalImpl(
@@ -1410,24 +1231,14 @@ _$ContractLegalImpl _$$ContractLegalImplFromJson(Map<String, dynamic> json) =>
               json['contentReference'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$ContractLegalImplToJson(_$ContractLegalImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('contentAttachment', instance.contentAttachment?.toJson());
-  writeNotNull('contentReference', instance.contentReference?.toJson());
-  return val;
-}
+Map<String, dynamic> _$$ContractLegalImplToJson(_$ContractLegalImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'contentAttachment': instance.contentAttachment,
+      'contentReference': instance.contentReference,
+    };
 
 _$ContractRuleImpl _$$ContractRuleImplFromJson(Map<String, dynamic> json) =>
     _$ContractRuleImpl(
@@ -1448,21 +1259,11 @@ _$ContractRuleImpl _$$ContractRuleImplFromJson(Map<String, dynamic> json) =>
               json['contentReference'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$ContractRuleImplToJson(_$ContractRuleImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('contentAttachment', instance.contentAttachment?.toJson());
-  writeNotNull('contentReference', instance.contentReference?.toJson());
-  return val;
-}
+Map<String, dynamic> _$$ContractRuleImplToJson(_$ContractRuleImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'contentAttachment': instance.contentAttachment,
+      'contentReference': instance.contentReference,
+    };

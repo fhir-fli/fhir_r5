@@ -181,7 +181,7 @@ class Parameters with _$Parameters implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [ParametersParameter] This resource is used to pass information into and
@@ -689,7 +689,7 @@ class ParametersParameter with _$ParametersParameter implements BackboneType {
     }
   }
 
-    @override
+  @override
   String toJsonString() => jsonEncode(toJson());
 
   @override

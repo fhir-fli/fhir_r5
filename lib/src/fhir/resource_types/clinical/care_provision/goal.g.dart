@@ -110,56 +110,42 @@ _$GoalImpl _$$GoalImplFromJson(Map<String, dynamic> json) => _$GoalImpl(
           .toList(),
     );
 
-Map<String, dynamic> _$$GoalImplToJson(_$GoalImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('lifecycleStatus', instance.lifecycleStatus?.toJson());
-  writeNotNull('_lifecycleStatus', instance.lifecycleStatusElement?.toJson());
-  writeNotNull('achievementStatus', instance.achievementStatus?.toJson());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  writeNotNull('continuous', instance.continuous?.toJson());
-  writeNotNull('_continuous', instance.continuousElement?.toJson());
-  writeNotNull('priority', instance.priority?.toJson());
-  val['description'] = instance.description.toJson();
-  val['subject'] = instance.subject.toJson();
-  writeNotNull('startDate', instance.startDate?.toJson());
-  writeNotNull('_startDate', instance.startDateElement?.toJson());
-  writeNotNull('startCodeableConcept', instance.startCodeableConcept?.toJson());
-  writeNotNull('target', instance.target?.map((e) => e.toJson()).toList());
-  writeNotNull('statusDate', instance.statusDate?.toJson());
-  writeNotNull('_statusDate', instance.statusDateElement?.toJson());
-  writeNotNull('statusReason', instance.statusReason);
-  writeNotNull('_statusReason', instance.statusReasonElement?.toJson());
-  writeNotNull('source', instance.source?.toJson());
-  writeNotNull(
-      'addresses', instance.addresses?.map((e) => e.toJson()).toList());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  writeNotNull('outcome', instance.outcome?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$GoalImplToJson(_$GoalImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'lifecycleStatus': instance.lifecycleStatus,
+      '_lifecycleStatus': instance.lifecycleStatusElement,
+      'achievementStatus': instance.achievementStatus,
+      'category': instance.category,
+      'continuous': instance.continuous,
+      '_continuous': instance.continuousElement,
+      'priority': instance.priority,
+      'description': instance.description,
+      'subject': instance.subject,
+      'startDate': instance.startDate,
+      '_startDate': instance.startDateElement,
+      'startCodeableConcept': instance.startCodeableConcept,
+      'target': instance.target,
+      'statusDate': instance.statusDate,
+      '_statusDate': instance.statusDateElement,
+      'statusReason': instance.statusReason,
+      '_statusReason': instance.statusReasonElement,
+      'source': instance.source,
+      'addresses': instance.addresses,
+      'note': instance.note,
+      'outcome': instance.outcome,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -379,34 +365,23 @@ _$GoalTargetImpl _$$GoalTargetImplFromJson(Map<String, dynamic> json) =>
           : FhirDuration.fromJson(json['dueDuration'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$GoalTargetImplToJson(_$GoalTargetImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('measure', instance.measure?.toJson());
-  writeNotNull('detailQuantity', instance.detailQuantity?.toJson());
-  writeNotNull('detailRange', instance.detailRange?.toJson());
-  writeNotNull(
-      'detailCodeableConcept', instance.detailCodeableConcept?.toJson());
-  writeNotNull('detailString', instance.detailString);
-  writeNotNull('_detailString', instance.detailStringElement?.toJson());
-  writeNotNull('detailBoolean', instance.detailBoolean?.toJson());
-  writeNotNull('_detailBoolean', instance.detailBooleanElement?.toJson());
-  writeNotNull('detailInteger', instance.detailInteger?.toJson());
-  writeNotNull('_detailInteger', instance.detailIntegerElement?.toJson());
-  writeNotNull('detailRatio', instance.detailRatio?.toJson());
-  writeNotNull('dueDate', instance.dueDate?.toJson());
-  writeNotNull('_dueDate', instance.dueDateElement?.toJson());
-  writeNotNull('dueDuration', instance.dueDuration?.toJson());
-  return val;
-}
+Map<String, dynamic> _$$GoalTargetImplToJson(_$GoalTargetImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'measure': instance.measure,
+      'detailQuantity': instance.detailQuantity,
+      'detailRange': instance.detailRange,
+      'detailCodeableConcept': instance.detailCodeableConcept,
+      'detailString': instance.detailString,
+      '_detailString': instance.detailStringElement,
+      'detailBoolean': instance.detailBoolean,
+      '_detailBoolean': instance.detailBooleanElement,
+      'detailInteger': instance.detailInteger,
+      '_detailInteger': instance.detailIntegerElement,
+      'detailRatio': instance.detailRatio,
+      'dueDate': instance.dueDate,
+      '_dueDate': instance.dueDateElement,
+      'dueDuration': instance.dueDuration,
+    };

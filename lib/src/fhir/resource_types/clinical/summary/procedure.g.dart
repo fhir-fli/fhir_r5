@@ -163,81 +163,60 @@ _$ProcedureImpl _$$ProcedureImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$ProcedureImplToJson(_$ProcedureImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('instantiatesCanonical',
-      instance.instantiatesCanonical?.map((e) => e.toJson()).toList());
-  writeNotNull('instantiatesUri',
-      instance.instantiatesUri?.map((e) => e.toJson()).toList());
-  writeNotNull('_instantiatesUri',
-      instance.instantiatesUriElement?.map((e) => e.toJson()).toList());
-  writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
-  writeNotNull('partOf', instance.partOf?.map((e) => e.toJson()).toList());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('statusReason', instance.statusReason?.toJson());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  writeNotNull('code', instance.code?.toJson());
-  val['subject'] = instance.subject.toJson();
-  writeNotNull('focus', instance.focus?.toJson());
-  writeNotNull('encounter', instance.encounter?.toJson());
-  writeNotNull('occurrenceDateTime', instance.occurrenceDateTime?.toJson());
-  writeNotNull(
-      '_occurrenceDateTime', instance.occurrenceDateTimeElement?.toJson());
-  writeNotNull('occurrencePeriod', instance.occurrencePeriod?.toJson());
-  writeNotNull('occurrenceString', instance.occurrenceString);
-  writeNotNull('_occurrenceString', instance.occurrenceStringElement?.toJson());
-  writeNotNull('occurrenceAge', instance.occurrenceAge?.toJson());
-  writeNotNull('occurrenceRange', instance.occurrenceRange?.toJson());
-  writeNotNull('occurrenceTiming', instance.occurrenceTiming?.toJson());
-  writeNotNull('recorded', instance.recorded?.toJson());
-  writeNotNull('_recorded', instance.recordedElement?.toJson());
-  writeNotNull('recorder', instance.recorder?.toJson());
-  writeNotNull('reportedBoolean', instance.reportedBoolean?.toJson());
-  writeNotNull('_reportedBoolean', instance.reportedBooleanElement?.toJson());
-  writeNotNull('reportedReference', instance.reportedReference?.toJson());
-  writeNotNull(
-      'performer', instance.performer?.map((e) => e.toJson()).toList());
-  writeNotNull('location', instance.location?.toJson());
-  writeNotNull('reason', instance.reason?.map((e) => e.toJson()).toList());
-  writeNotNull('bodySite', instance.bodySite?.map((e) => e.toJson()).toList());
-  writeNotNull('outcome', instance.outcome?.toJson());
-  writeNotNull('report', instance.report?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'complication', instance.complication?.map((e) => e.toJson()).toList());
-  writeNotNull('followUp', instance.followUp?.map((e) => e.toJson()).toList());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'focalDevice', instance.focalDevice?.map((e) => e.toJson()).toList());
-  writeNotNull('used', instance.used?.map((e) => e.toJson()).toList());
-  writeNotNull('supportingInfo',
-      instance.supportingInfo?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$ProcedureImplToJson(_$ProcedureImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'instantiatesCanonical': instance.instantiatesCanonical,
+      'instantiatesUri': instance.instantiatesUri,
+      '_instantiatesUri': instance.instantiatesUriElement,
+      'basedOn': instance.basedOn,
+      'partOf': instance.partOf,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'statusReason': instance.statusReason,
+      'category': instance.category,
+      'code': instance.code,
+      'subject': instance.subject,
+      'focus': instance.focus,
+      'encounter': instance.encounter,
+      'occurrenceDateTime': instance.occurrenceDateTime,
+      '_occurrenceDateTime': instance.occurrenceDateTimeElement,
+      'occurrencePeriod': instance.occurrencePeriod,
+      'occurrenceString': instance.occurrenceString,
+      '_occurrenceString': instance.occurrenceStringElement,
+      'occurrenceAge': instance.occurrenceAge,
+      'occurrenceRange': instance.occurrenceRange,
+      'occurrenceTiming': instance.occurrenceTiming,
+      'recorded': instance.recorded,
+      '_recorded': instance.recordedElement,
+      'recorder': instance.recorder,
+      'reportedBoolean': instance.reportedBoolean,
+      '_reportedBoolean': instance.reportedBooleanElement,
+      'reportedReference': instance.reportedReference,
+      'performer': instance.performer,
+      'location': instance.location,
+      'reason': instance.reason,
+      'bodySite': instance.bodySite,
+      'outcome': instance.outcome,
+      'report': instance.report,
+      'complication': instance.complication,
+      'followUp': instance.followUp,
+      'note': instance.note,
+      'focalDevice': instance.focalDevice,
+      'used': instance.used,
+      'supportingInfo': instance.supportingInfo,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -425,26 +404,16 @@ _$ProcedurePerformerImpl _$$ProcedurePerformerImplFromJson(
     );
 
 Map<String, dynamic> _$$ProcedurePerformerImplToJson(
-    _$ProcedurePerformerImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('function', instance.function_?.toJson());
-  val['actor'] = instance.actor.toJson();
-  writeNotNull('onBehalfOf', instance.onBehalfOf?.toJson());
-  writeNotNull('period', instance.period?.toJson());
-  return val;
-}
+        _$ProcedurePerformerImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'function': instance.function_,
+      'actor': instance.actor,
+      'onBehalfOf': instance.onBehalfOf,
+      'period': instance.period,
+    };
 
 _$ProcedureFocalDeviceImpl _$$ProcedureFocalDeviceImplFromJson(
         Map<String, dynamic> json) =>
@@ -464,21 +433,11 @@ _$ProcedureFocalDeviceImpl _$$ProcedureFocalDeviceImplFromJson(
     );
 
 Map<String, dynamic> _$$ProcedureFocalDeviceImplToJson(
-    _$ProcedureFocalDeviceImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('action', instance.action?.toJson());
-  val['manipulated'] = instance.manipulated.toJson();
-  return val;
-}
+        _$ProcedureFocalDeviceImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'action': instance.action,
+      'manipulated': instance.manipulated,
+    };

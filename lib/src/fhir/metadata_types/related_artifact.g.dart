@@ -62,38 +62,27 @@ _$RelatedArtifactImpl _$$RelatedArtifactImplFromJson(
     );
 
 Map<String, dynamic> _$$RelatedArtifactImplToJson(
-    _$RelatedArtifactImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('_type', instance.typeElement?.toJson());
-  writeNotNull(
-      'classifier', instance.classifier?.map((e) => e.toJson()).toList());
-  writeNotNull('label', instance.label);
-  writeNotNull('_label', instance.labelElement?.toJson());
-  writeNotNull('display', instance.display);
-  writeNotNull('_display', instance.displayElement?.toJson());
-  writeNotNull('citation', instance.citation?.toJson());
-  writeNotNull('_citation', instance.citationElement?.toJson());
-  writeNotNull('document', instance.document?.toJson());
-  writeNotNull('resource', instance.resource?.toJson());
-  writeNotNull('resourceReference', instance.resourceReference?.toJson());
-  writeNotNull('publicationStatus', instance.publicationStatus?.toJson());
-  writeNotNull(
-      '_publicationStatus', instance.publicationStatusElement?.toJson());
-  writeNotNull('publicationDate', instance.publicationDate?.toJson());
-  writeNotNull('_publicationDate', instance.publicationDateElement?.toJson());
-  return val;
-}
+        _$RelatedArtifactImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'type': instance.type,
+      '_type': instance.typeElement,
+      'classifier': instance.classifier,
+      'label': instance.label,
+      '_label': instance.labelElement,
+      'display': instance.display,
+      '_display': instance.displayElement,
+      'citation': instance.citation,
+      '_citation': instance.citationElement,
+      'document': instance.document,
+      'resource': instance.resource,
+      'resourceReference': instance.resourceReference,
+      'publicationStatus': instance.publicationStatus,
+      '_publicationStatus': instance.publicationStatusElement,
+      'publicationDate': instance.publicationDate,
+      '_publicationDate': instance.publicationDateElement,
+    };
 
 const _$RelatedArtifactTypeEnumMap = {
   RelatedArtifactType.documentation: 'documentation',

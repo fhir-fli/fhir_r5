@@ -117,61 +117,47 @@ _$SubscriptionImpl _$$SubscriptionImplFromJson(Map<String, dynamic> json) =>
               json['_maxCount'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$SubscriptionImplToJson(_$SubscriptionImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('name', instance.name);
-  writeNotNull('_name', instance.nameElement?.toJson());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  val['topic'] = instance.topic.toJson();
-  writeNotNull('contact', instance.contact?.map((e) => e.toJson()).toList());
-  writeNotNull('end', instance.end?.toJson());
-  writeNotNull('_end', instance.endElement?.toJson());
-  writeNotNull('managingEntity', instance.managingEntity?.toJson());
-  writeNotNull('reason', instance.reason);
-  writeNotNull('_reason', instance.reasonElement?.toJson());
-  writeNotNull('filterBy', instance.filterBy?.map((e) => e.toJson()).toList());
-  val['channelType'] = instance.channelType.toJson();
-  writeNotNull('endpoint', instance.endpoint?.toJson());
-  writeNotNull('_endpoint', instance.endpointElement?.toJson());
-  writeNotNull(
-      'parameter', instance.parameter?.map((e) => e.toJson()).toList());
-  writeNotNull('heartbeatPeriod', instance.heartbeatPeriod?.toJson());
-  writeNotNull('_heartbeatPeriod', instance.heartbeatPeriodElement?.toJson());
-  writeNotNull('timeout', instance.timeout?.toJson());
-  writeNotNull('_timeout', instance.timeoutElement?.toJson());
-  writeNotNull('contentType', instance.contentType?.toJson());
-  writeNotNull('_contentType', instance.contentTypeElement?.toJson());
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('_content', instance.contentElement?.toJson());
-  writeNotNull('maxCount', instance.maxCount?.toJson());
-  writeNotNull('_maxCount', instance.maxCountElement?.toJson());
-  return val;
-}
+Map<String, dynamic> _$$SubscriptionImplToJson(_$SubscriptionImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'name': instance.name,
+      '_name': instance.nameElement,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'topic': instance.topic,
+      'contact': instance.contact,
+      'end': instance.end,
+      '_end': instance.endElement,
+      'managingEntity': instance.managingEntity,
+      'reason': instance.reason,
+      '_reason': instance.reasonElement,
+      'filterBy': instance.filterBy,
+      'channelType': instance.channelType,
+      'endpoint': instance.endpoint,
+      '_endpoint': instance.endpointElement,
+      'parameter': instance.parameter,
+      'heartbeatPeriod': instance.heartbeatPeriod,
+      '_heartbeatPeriod': instance.heartbeatPeriodElement,
+      'timeout': instance.timeout,
+      '_timeout': instance.timeoutElement,
+      'contentType': instance.contentType,
+      '_contentType': instance.contentTypeElement,
+      'content': instance.content,
+      '_content': instance.contentElement,
+      'maxCount': instance.maxCount,
+      '_maxCount': instance.maxCountElement,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -378,32 +364,22 @@ _$SubscriptionFilterByImpl _$$SubscriptionFilterByImplFromJson(
     );
 
 Map<String, dynamic> _$$SubscriptionFilterByImplToJson(
-    _$SubscriptionFilterByImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('resourceType', instance.resourceType?.toJson());
-  writeNotNull('_resourceType', instance.resourceTypeElement?.toJson());
-  writeNotNull('filterParameter', instance.filterParameter);
-  writeNotNull('_filterParameter', instance.filterParameterElement?.toJson());
-  writeNotNull('comparator', instance.comparator?.toJson());
-  writeNotNull('_comparator', instance.comparatorElement?.toJson());
-  writeNotNull('modifier', instance.modifier?.toJson());
-  writeNotNull('_modifier', instance.modifierElement?.toJson());
-  writeNotNull('value', instance.value);
-  writeNotNull('_value', instance.valueElement?.toJson());
-  return val;
-}
+        _$SubscriptionFilterByImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'resourceType': instance.resourceType,
+      '_resourceType': instance.resourceTypeElement,
+      'filterParameter': instance.filterParameter,
+      '_filterParameter': instance.filterParameterElement,
+      'comparator': instance.comparator,
+      '_comparator': instance.comparatorElement,
+      'modifier': instance.modifier,
+      '_modifier': instance.modifierElement,
+      'value': instance.value,
+      '_value': instance.valueElement,
+    };
 
 _$SubscriptionParameterImpl _$$SubscriptionParameterImplFromJson(
         Map<String, dynamic> json) =>
@@ -426,23 +402,13 @@ _$SubscriptionParameterImpl _$$SubscriptionParameterImplFromJson(
     );
 
 Map<String, dynamic> _$$SubscriptionParameterImplToJson(
-    _$SubscriptionParameterImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('name', instance.name);
-  writeNotNull('_name', instance.nameElement?.toJson());
-  writeNotNull('value', instance.value);
-  writeNotNull('_value', instance.valueElement?.toJson());
-  return val;
-}
+        _$SubscriptionParameterImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'name': instance.name,
+      '_name': instance.nameElement,
+      'value': instance.value,
+      '_value': instance.valueElement,
+    };

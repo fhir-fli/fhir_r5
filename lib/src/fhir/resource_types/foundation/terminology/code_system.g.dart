@@ -216,97 +216,79 @@ _$CodeSystemImpl _$$CodeSystemImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$CodeSystemImplToJson(_$CodeSystemImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('url', instance.url?.toJson());
-  writeNotNull('_url', instance.urlElement?.toJson());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('version', instance.version);
-  writeNotNull('_version', instance.versionElement?.toJson());
-  writeNotNull('versionAlgorithmString', instance.versionAlgorithmString);
-  writeNotNull('_versionAlgorithmString',
-      instance.versionAlgorithmStringElement?.toJson());
-  writeNotNull(
-      'versionAlgorithmCoding', instance.versionAlgorithmCoding?.toJson());
-  writeNotNull('name', instance.name);
-  writeNotNull('_name', instance.nameElement?.toJson());
-  writeNotNull('title', instance.title);
-  writeNotNull('_title', instance.titleElement?.toJson());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('experimental', instance.experimental?.toJson());
-  writeNotNull('_experimental', instance.experimentalElement?.toJson());
-  writeNotNull('date', instance.date?.toJson());
-  writeNotNull('_date', instance.dateElement?.toJson());
-  writeNotNull('publisher', instance.publisher);
-  writeNotNull('_publisher', instance.publisherElement?.toJson());
-  writeNotNull('contact', instance.contact?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull(
-      'useContext', instance.useContext?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'jurisdiction', instance.jurisdiction?.map((e) => e.toJson()).toList());
-  writeNotNull('purpose', instance.purpose?.toJson());
-  writeNotNull('_purpose', instance.purposeElement?.toJson());
-  writeNotNull('copyright', instance.copyright?.toJson());
-  writeNotNull('_copyright', instance.copyrightElement?.toJson());
-  writeNotNull('copyrightLabel', instance.copyrightLabel);
-  writeNotNull('_copyrightLabel', instance.copyrightLabelElement?.toJson());
-  writeNotNull('approvalDate', instance.approvalDate?.toJson());
-  writeNotNull('_approvalDate', instance.approvalDateElement?.toJson());
-  writeNotNull('lastReviewDate', instance.lastReviewDate?.toJson());
-  writeNotNull('_lastReviewDate', instance.lastReviewDateElement?.toJson());
-  writeNotNull('effectivePeriod', instance.effectivePeriod?.toJson());
-  writeNotNull('topic', instance.topic?.map((e) => e.toJson()).toList());
-  writeNotNull('author', instance.author?.map((e) => e.toJson()).toList());
-  writeNotNull('editor', instance.editor?.map((e) => e.toJson()).toList());
-  writeNotNull('reviewer', instance.reviewer?.map((e) => e.toJson()).toList());
-  writeNotNull('endorser', instance.endorser?.map((e) => e.toJson()).toList());
-  writeNotNull('relatedArtifact',
-      instance.relatedArtifact?.map((e) => e.toJson()).toList());
-  writeNotNull('caseSensitive', instance.caseSensitive?.toJson());
-  writeNotNull('_caseSensitive', instance.caseSensitiveElement?.toJson());
-  writeNotNull('valueSet', instance.valueSet?.toJson());
-  writeNotNull('hierarchyMeaning', instance.hierarchyMeaning?.toJson());
-  writeNotNull('_hierarchyMeaning', instance.hierarchyMeaningElement?.toJson());
-  writeNotNull('compositional', instance.compositional?.toJson());
-  writeNotNull('_compositional', instance.compositionalElement?.toJson());
-  writeNotNull('versionNeeded', instance.versionNeeded?.toJson());
-  writeNotNull('_versionNeeded', instance.versionNeededElement?.toJson());
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('_content', instance.contentElement?.toJson());
-  writeNotNull('supplements', instance.supplements?.toJson());
-  writeNotNull('count', instance.count?.toJson());
-  writeNotNull('_count', instance.countElement?.toJson());
-  writeNotNull('filter', instance.filter?.map((e) => e.toJson()).toList());
-  writeNotNull('property', instance.property?.map((e) => e.toJson()).toList());
-  writeNotNull('concept', instance.concept?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$CodeSystemImplToJson(_$CodeSystemImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'url': instance.url,
+      '_url': instance.urlElement,
+      'identifier': instance.identifier,
+      'version': instance.version,
+      '_version': instance.versionElement,
+      'versionAlgorithmString': instance.versionAlgorithmString,
+      '_versionAlgorithmString': instance.versionAlgorithmStringElement,
+      'versionAlgorithmCoding': instance.versionAlgorithmCoding,
+      'name': instance.name,
+      '_name': instance.nameElement,
+      'title': instance.title,
+      '_title': instance.titleElement,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'experimental': instance.experimental,
+      '_experimental': instance.experimentalElement,
+      'date': instance.date,
+      '_date': instance.dateElement,
+      'publisher': instance.publisher,
+      '_publisher': instance.publisherElement,
+      'contact': instance.contact,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'useContext': instance.useContext,
+      'jurisdiction': instance.jurisdiction,
+      'purpose': instance.purpose,
+      '_purpose': instance.purposeElement,
+      'copyright': instance.copyright,
+      '_copyright': instance.copyrightElement,
+      'copyrightLabel': instance.copyrightLabel,
+      '_copyrightLabel': instance.copyrightLabelElement,
+      'approvalDate': instance.approvalDate,
+      '_approvalDate': instance.approvalDateElement,
+      'lastReviewDate': instance.lastReviewDate,
+      '_lastReviewDate': instance.lastReviewDateElement,
+      'effectivePeriod': instance.effectivePeriod,
+      'topic': instance.topic,
+      'author': instance.author,
+      'editor': instance.editor,
+      'reviewer': instance.reviewer,
+      'endorser': instance.endorser,
+      'relatedArtifact': instance.relatedArtifact,
+      'caseSensitive': instance.caseSensitive,
+      '_caseSensitive': instance.caseSensitiveElement,
+      'valueSet': instance.valueSet,
+      'hierarchyMeaning': instance.hierarchyMeaning,
+      '_hierarchyMeaning': instance.hierarchyMeaningElement,
+      'compositional': instance.compositional,
+      '_compositional': instance.compositionalElement,
+      'versionNeeded': instance.versionNeeded,
+      '_versionNeeded': instance.versionNeededElement,
+      'content': instance.content,
+      '_content': instance.contentElement,
+      'supplements': instance.supplements,
+      'count': instance.count,
+      '_count': instance.countElement,
+      'filter': instance.filter,
+      'property': instance.property,
+      'concept': instance.concept,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -502,31 +484,20 @@ _$CodeSystemFilterImpl _$$CodeSystemFilterImplFromJson(
     );
 
 Map<String, dynamic> _$$CodeSystemFilterImplToJson(
-    _$CodeSystemFilterImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('code', instance.code?.toJson());
-  writeNotNull('_code', instance.codeElement?.toJson());
-  writeNotNull('description', instance.description);
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('operator', instance.operator_?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      '_operator', instance.operatorElement?.map((e) => e.toJson()).toList());
-  writeNotNull('value', instance.value);
-  writeNotNull('_value', instance.valueElement?.toJson());
-  return val;
-}
+        _$CodeSystemFilterImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'code': instance.code,
+      '_code': instance.codeElement,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'operator': instance.operator_,
+      '_operator': instance.operatorElement,
+      'value': instance.value,
+      '_value': instance.valueElement,
+    };
 
 _$CodeSystemPropertyImpl _$$CodeSystemPropertyImplFromJson(
         Map<String, dynamic> json) =>
@@ -558,30 +529,20 @@ _$CodeSystemPropertyImpl _$$CodeSystemPropertyImplFromJson(
     );
 
 Map<String, dynamic> _$$CodeSystemPropertyImplToJson(
-    _$CodeSystemPropertyImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('code', instance.code?.toJson());
-  writeNotNull('_code', instance.codeElement?.toJson());
-  writeNotNull('uri', instance.uri?.toJson());
-  writeNotNull('_uri', instance.uriElement?.toJson());
-  writeNotNull('description', instance.description);
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('_type', instance.typeElement?.toJson());
-  return val;
-}
+        _$CodeSystemPropertyImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'code': instance.code,
+      '_code': instance.codeElement,
+      'uri': instance.uri,
+      '_uri': instance.uriElement,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'type': instance.type,
+      '_type': instance.typeElement,
+    };
 
 _$CodeSystemConceptImpl _$$CodeSystemConceptImplFromJson(
         Map<String, dynamic> json) =>
@@ -619,32 +580,21 @@ _$CodeSystemConceptImpl _$$CodeSystemConceptImplFromJson(
     );
 
 Map<String, dynamic> _$$CodeSystemConceptImplToJson(
-    _$CodeSystemConceptImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('code', instance.code?.toJson());
-  writeNotNull('_code', instance.codeElement?.toJson());
-  writeNotNull('display', instance.display);
-  writeNotNull('_display', instance.displayElement?.toJson());
-  writeNotNull('definition', instance.definition);
-  writeNotNull('_definition', instance.definitionElement?.toJson());
-  writeNotNull(
-      'designation', instance.designation?.map((e) => e.toJson()).toList());
-  writeNotNull('property', instance.property?.map((e) => e.toJson()).toList());
-  writeNotNull('concept', instance.concept?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$CodeSystemConceptImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'code': instance.code,
+      '_code': instance.codeElement,
+      'display': instance.display,
+      '_display': instance.displayElement,
+      'definition': instance.definition,
+      '_definition': instance.definitionElement,
+      'designation': instance.designation,
+      'property': instance.property,
+      'concept': instance.concept,
+    };
 
 _$CodeSystemDesignationImpl _$$CodeSystemDesignationImplFromJson(
         Map<String, dynamic> json) =>
@@ -675,29 +625,18 @@ _$CodeSystemDesignationImpl _$$CodeSystemDesignationImplFromJson(
     );
 
 Map<String, dynamic> _$$CodeSystemDesignationImplToJson(
-    _$CodeSystemDesignationImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('use', instance.use?.toJson());
-  writeNotNull(
-      'additionalUse', instance.additionalUse?.map((e) => e.toJson()).toList());
-  writeNotNull('value', instance.value);
-  writeNotNull('_value', instance.valueElement?.toJson());
-  return val;
-}
+        _$CodeSystemDesignationImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'use': instance.use,
+      'additionalUse': instance.additionalUse,
+      'value': instance.value,
+      '_value': instance.valueElement,
+    };
 
 _$CodeSystemProperty1Impl _$$CodeSystemProperty1ImplFromJson(
         Map<String, dynamic> json) =>
@@ -759,34 +698,24 @@ _$CodeSystemProperty1Impl _$$CodeSystemProperty1ImplFromJson(
     );
 
 Map<String, dynamic> _$$CodeSystemProperty1ImplToJson(
-    _$CodeSystemProperty1Impl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('code', instance.code?.toJson());
-  writeNotNull('_code', instance.codeElement?.toJson());
-  writeNotNull('valueCode', instance.valueCode?.toJson());
-  writeNotNull('_valueCode', instance.valueCodeElement?.toJson());
-  writeNotNull('valueCoding', instance.valueCoding?.toJson());
-  writeNotNull('valueString', instance.valueString);
-  writeNotNull('_valueString', instance.valueStringElement?.toJson());
-  writeNotNull('valueInteger', instance.valueInteger?.toJson());
-  writeNotNull('_valueInteger', instance.valueIntegerElement?.toJson());
-  writeNotNull('valueBoolean', instance.valueBoolean?.toJson());
-  writeNotNull('_valueBoolean', instance.valueBooleanElement?.toJson());
-  writeNotNull('valueDateTime', instance.valueDateTime?.toJson());
-  writeNotNull('_valueDateTime', instance.valueDateTimeElement?.toJson());
-  writeNotNull('valueDecimal', instance.valueDecimal?.toJson());
-  writeNotNull('_valueDecimal', instance.valueDecimalElement?.toJson());
-  return val;
-}
+        _$CodeSystemProperty1Impl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'code': instance.code,
+      '_code': instance.codeElement,
+      'valueCode': instance.valueCode,
+      '_valueCode': instance.valueCodeElement,
+      'valueCoding': instance.valueCoding,
+      'valueString': instance.valueString,
+      '_valueString': instance.valueStringElement,
+      'valueInteger': instance.valueInteger,
+      '_valueInteger': instance.valueIntegerElement,
+      'valueBoolean': instance.valueBoolean,
+      '_valueBoolean': instance.valueBooleanElement,
+      'valueDateTime': instance.valueDateTime,
+      '_valueDateTime': instance.valueDateTimeElement,
+      'valueDecimal': instance.valueDecimal,
+      '_valueDecimal': instance.valueDecimalElement,
+    };

@@ -452,7 +452,7 @@ class MedicationStatement with _$MedicationStatement implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [MedicationStatementAdherence] A record of a medication that is being

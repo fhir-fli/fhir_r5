@@ -132,63 +132,48 @@ _$DocumentReferenceImpl _$$DocumentReferenceImplFromJson(
     );
 
 Map<String, dynamic> _$$DocumentReferenceImplToJson(
-    _$DocumentReferenceImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('version', instance.version);
-  writeNotNull('_version', instance.versionElement?.toJson());
-  writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('docStatus', instance.docStatus?.toJson());
-  writeNotNull('_docStatus', instance.docStatusElement?.toJson());
-  writeNotNull('modality', instance.modality?.map((e) => e.toJson()).toList());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  writeNotNull('subject', instance.subject?.toJson());
-  writeNotNull('context', instance.context?.map((e) => e.toJson()).toList());
-  writeNotNull('event', instance.event?.map((e) => e.toJson()).toList());
-  writeNotNull('bodySite', instance.bodySite?.map((e) => e.toJson()).toList());
-  writeNotNull('facilityType', instance.facilityType?.toJson());
-  writeNotNull('practiceSetting', instance.practiceSetting?.toJson());
-  writeNotNull('period', instance.period?.toJson());
-  writeNotNull('date', instance.date?.toJson());
-  writeNotNull('_date', instance.dateElement?.toJson());
-  writeNotNull('author', instance.author?.map((e) => e.toJson()).toList());
-  writeNotNull('attester', instance.attester?.map((e) => e.toJson()).toList());
-  writeNotNull('custodian', instance.custodian?.toJson());
-  writeNotNull(
-      'relatesTo', instance.relatesTo?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull(
-      'securityLabel', instance.securityLabel?.map((e) => e.toJson()).toList());
-  val['content'] = instance.content.map((e) => e.toJson()).toList();
-  return val;
-}
+        _$DocumentReferenceImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'version': instance.version,
+      '_version': instance.versionElement,
+      'basedOn': instance.basedOn,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'docStatus': instance.docStatus,
+      '_docStatus': instance.docStatusElement,
+      'modality': instance.modality,
+      'type': instance.type,
+      'category': instance.category,
+      'subject': instance.subject,
+      'context': instance.context,
+      'event': instance.event,
+      'bodySite': instance.bodySite,
+      'facilityType': instance.facilityType,
+      'practiceSetting': instance.practiceSetting,
+      'period': instance.period,
+      'date': instance.date,
+      '_date': instance.dateElement,
+      'author': instance.author,
+      'attester': instance.attester,
+      'custodian': instance.custodian,
+      'relatesTo': instance.relatesTo,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'securityLabel': instance.securityLabel,
+      'content': instance.content,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -376,26 +361,16 @@ _$DocumentReferenceAttesterImpl _$$DocumentReferenceAttesterImplFromJson(
     );
 
 Map<String, dynamic> _$$DocumentReferenceAttesterImplToJson(
-    _$DocumentReferenceAttesterImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['mode'] = instance.mode.toJson();
-  writeNotNull('time', instance.time?.toJson());
-  writeNotNull('_time', instance.timeElement?.toJson());
-  writeNotNull('party', instance.party?.toJson());
-  return val;
-}
+        _$DocumentReferenceAttesterImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'mode': instance.mode,
+      'time': instance.time,
+      '_time': instance.timeElement,
+      'party': instance.party,
+    };
 
 _$DocumentReferenceRelatesToImpl _$$DocumentReferenceRelatesToImplFromJson(
         Map<String, dynamic> json) =>
@@ -412,24 +387,14 @@ _$DocumentReferenceRelatesToImpl _$$DocumentReferenceRelatesToImplFromJson(
     );
 
 Map<String, dynamic> _$$DocumentReferenceRelatesToImplToJson(
-    _$DocumentReferenceRelatesToImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['code'] = instance.code.toJson();
-  val['target'] = instance.target.toJson();
-  return val;
-}
+        _$DocumentReferenceRelatesToImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'code': instance.code,
+      'target': instance.target,
+    };
 
 _$DocumentReferenceContentImpl _$$DocumentReferenceContentImplFromJson(
         Map<String, dynamic> json) =>
@@ -450,24 +415,14 @@ _$DocumentReferenceContentImpl _$$DocumentReferenceContentImplFromJson(
     );
 
 Map<String, dynamic> _$$DocumentReferenceContentImplToJson(
-    _$DocumentReferenceContentImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['attachment'] = instance.attachment.toJson();
-  writeNotNull('profile', instance.profile?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$DocumentReferenceContentImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'attachment': instance.attachment,
+      'profile': instance.profile,
+    };
 
 _$DocumentReferenceProfileImpl _$$DocumentReferenceProfileImplFromJson(
         Map<String, dynamic> json) =>
@@ -498,24 +453,14 @@ _$DocumentReferenceProfileImpl _$$DocumentReferenceProfileImplFromJson(
     );
 
 Map<String, dynamic> _$$DocumentReferenceProfileImplToJson(
-    _$DocumentReferenceProfileImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('valueCoding', instance.valueCoding?.toJson());
-  writeNotNull('valueUri', instance.valueUri?.toJson());
-  writeNotNull('_valueUri', instance.valueUriElement?.toJson());
-  writeNotNull('valueCanonical', instance.valueCanonical?.toJson());
-  writeNotNull('_valueCanonical', instance.valueCanonicalElement?.toJson());
-  return val;
-}
+        _$DocumentReferenceProfileImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'valueCoding': instance.valueCoding,
+      'valueUri': instance.valueUri,
+      '_valueUri': instance.valueUriElement,
+      'valueCanonical': instance.valueCanonical,
+      '_valueCanonical': instance.valueCanonicalElement,
+    };

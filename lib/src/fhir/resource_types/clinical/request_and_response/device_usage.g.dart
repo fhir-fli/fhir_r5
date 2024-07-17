@@ -110,57 +110,42 @@ _$DeviceUsageImpl _$$DeviceUsageImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$DeviceUsageImplToJson(_$DeviceUsageImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  val['patient'] = instance.patient.toJson();
-  writeNotNull(
-      'derivedFrom', instance.derivedFrom?.map((e) => e.toJson()).toList());
-  writeNotNull('context', instance.context?.toJson());
-  writeNotNull('timingTiming', instance.timingTiming?.toJson());
-  writeNotNull('timingPeriod', instance.timingPeriod?.toJson());
-  writeNotNull('timingDateTime', instance.timingDateTime?.toJson());
-  writeNotNull('_timingDateTime', instance.timingDateTimeElement?.toJson());
-  writeNotNull('dateAsserted', instance.dateAsserted?.toJson());
-  writeNotNull('_dateAsserted', instance.dateAssertedElement?.toJson());
-  writeNotNull('usageStatus', instance.usageStatus?.toJson());
-  writeNotNull(
-      'usageReason', instance.usageReason?.map((e) => e.toJson()).toList());
-  writeNotNull('adherence', instance.adherence?.toJson());
-  writeNotNull('informationSource', instance.informationSource?.toJson());
-  val['device'] = instance.device.toJson();
-  writeNotNull('reason', instance.reason?.map((e) => e.toJson()).toList());
-  writeNotNull('bodySite', instance.bodySite?.toJson());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$DeviceUsageImplToJson(_$DeviceUsageImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'basedOn': instance.basedOn,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'category': instance.category,
+      'patient': instance.patient,
+      'derivedFrom': instance.derivedFrom,
+      'context': instance.context,
+      'timingTiming': instance.timingTiming,
+      'timingPeriod': instance.timingPeriod,
+      'timingDateTime': instance.timingDateTime,
+      '_timingDateTime': instance.timingDateTimeElement,
+      'dateAsserted': instance.dateAsserted,
+      '_dateAsserted': instance.dateAssertedElement,
+      'usageStatus': instance.usageStatus,
+      'usageReason': instance.usageReason,
+      'adherence': instance.adherence,
+      'informationSource': instance.informationSource,
+      'device': instance.device,
+      'reason': instance.reason,
+      'bodySite': instance.bodySite,
+      'note': instance.note,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -342,21 +327,11 @@ _$DeviceUsageAdherenceImpl _$$DeviceUsageAdherenceImplFromJson(
     );
 
 Map<String, dynamic> _$$DeviceUsageAdherenceImplToJson(
-    _$DeviceUsageAdherenceImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['code'] = instance.code.toJson();
-  val['reason'] = instance.reason.map((e) => e.toJson()).toList();
-  return val;
-}
+        _$DeviceUsageAdherenceImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'code': instance.code,
+      'reason': instance.reason,
+    };

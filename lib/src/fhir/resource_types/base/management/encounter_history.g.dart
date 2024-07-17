@@ -93,50 +93,36 @@ _$EncounterHistoryImpl _$$EncounterHistoryImplFromJson(
     );
 
 Map<String, dynamic> _$$EncounterHistoryImplToJson(
-    _$EncounterHistoryImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('encounter', instance.encounter?.toJson());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  val['class'] = instance.class_.toJson();
-  writeNotNull('type', instance.type?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'serviceType', instance.serviceType?.map((e) => e.toJson()).toList());
-  writeNotNull('subject', instance.subject?.toJson());
-  writeNotNull('subjectStatus', instance.subjectStatus?.toJson());
-  writeNotNull('actualPeriod', instance.actualPeriod?.toJson());
-  writeNotNull('plannedStartDate', instance.plannedStartDate?.toJson());
-  writeNotNull('_plannedStartDate', instance.plannedStartDateElement?.toJson());
-  writeNotNull('plannedEndDate', instance.plannedEndDate?.toJson());
-  writeNotNull('_plannedEndDate', instance.plannedEndDateElement?.toJson());
-  writeNotNull('length', instance.length?.toJson());
-  writeNotNull('location', instance.location?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$EncounterHistoryImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'encounter': instance.encounter,
+      'identifier': instance.identifier,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'class': instance.class_,
+      'type': instance.type,
+      'serviceType': instance.serviceType,
+      'subject': instance.subject,
+      'subjectStatus': instance.subjectStatus,
+      'actualPeriod': instance.actualPeriod,
+      'plannedStartDate': instance.plannedStartDate,
+      '_plannedStartDate': instance.plannedStartDateElement,
+      'plannedEndDate': instance.plannedEndDate,
+      '_plannedEndDate': instance.plannedEndDateElement,
+      'length': instance.length,
+      'location': instance.location,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -330,21 +316,11 @@ _$EncounterHistoryLocationImpl _$$EncounterHistoryLocationImplFromJson(
     );
 
 Map<String, dynamic> _$$EncounterHistoryLocationImplToJson(
-    _$EncounterHistoryLocationImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['location'] = instance.location.toJson();
-  writeNotNull('form', instance.form?.toJson());
-  return val;
-}
+        _$EncounterHistoryLocationImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'location': instance.location,
+      'form': instance.form,
+    };

@@ -22,24 +22,13 @@ _$AvailabilityImpl _$$AvailabilityImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$AvailabilityImplToJson(_$AvailabilityImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'availableTime', instance.availableTime?.map((e) => e.toJson()).toList());
-  writeNotNull('notAvailableTime',
-      instance.notAvailableTime?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$AvailabilityImplToJson(_$AvailabilityImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'availableTime': instance.availableTime,
+      'notAvailableTime': instance.notAvailableTime,
+    };
 
 _$AvailabilityAvailableTimeImpl _$$AvailabilityAvailableTimeImplFromJson(
         Map<String, dynamic> json) =>
@@ -79,33 +68,20 @@ _$AvailabilityAvailableTimeImpl _$$AvailabilityAvailableTimeImplFromJson(
     );
 
 Map<String, dynamic> _$$AvailabilityAvailableTimeImplToJson(
-    _$AvailabilityAvailableTimeImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'daysOfWeek', instance.daysOfWeek?.map((e) => e.toJson()).toList());
-  writeNotNull('_daysOfWeek',
-      instance.daysOfWeekElement?.map((e) => e.toJson()).toList());
-  writeNotNull('allDay', instance.allDay?.toJson());
-  writeNotNull('_allDay', instance.allDayElement?.toJson());
-  writeNotNull('availableStartTime', instance.availableStartTime?.toJson());
-  writeNotNull(
-      '_availableStartTime', instance.availableStartTimeElement?.toJson());
-  writeNotNull('availableEndTime', instance.availableEndTime?.toJson());
-  writeNotNull('_availableEndTime', instance.availableEndTimeElement?.toJson());
-  return val;
-}
+        _$AvailabilityAvailableTimeImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'daysOfWeek': instance.daysOfWeek,
+      '_daysOfWeek': instance.daysOfWeekElement,
+      'allDay': instance.allDay,
+      '_allDay': instance.allDayElement,
+      'availableStartTime': instance.availableStartTime,
+      '_availableStartTime': instance.availableStartTimeElement,
+      'availableEndTime': instance.availableEndTime,
+      '_availableEndTime': instance.availableEndTimeElement,
+    };
 
 _$AvailabilityNotAvailableTimeImpl _$$AvailabilityNotAvailableTimeImplFromJson(
         Map<String, dynamic> json) =>
@@ -128,22 +104,12 @@ _$AvailabilityNotAvailableTimeImpl _$$AvailabilityNotAvailableTimeImplFromJson(
     );
 
 Map<String, dynamic> _$$AvailabilityNotAvailableTimeImplToJson(
-    _$AvailabilityNotAvailableTimeImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description);
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('during', instance.during?.toJson());
-  return val;
-}
+        _$AvailabilityNotAvailableTimeImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'during': instance.during,
+    };

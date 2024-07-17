@@ -293,7 +293,7 @@ class SubstanceProtein with _$SubstanceProtein implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [SubstanceProteinSubunit] A SubstanceProtein is defined as a single unit of

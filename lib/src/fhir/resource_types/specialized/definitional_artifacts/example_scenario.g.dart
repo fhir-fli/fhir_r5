@@ -140,71 +140,54 @@ _$ExampleScenarioImpl _$$ExampleScenarioImplFromJson(
     );
 
 Map<String, dynamic> _$$ExampleScenarioImplToJson(
-    _$ExampleScenarioImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('url', instance.url?.toJson());
-  writeNotNull('_url', instance.urlElement?.toJson());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('version', instance.version);
-  writeNotNull('_version', instance.versionElement?.toJson());
-  writeNotNull('versionAlgorithmString', instance.versionAlgorithmString);
-  writeNotNull('_versionAlgorithmString',
-      instance.versionAlgorithmStringElement?.toJson());
-  writeNotNull(
-      'versionAlgorithmCoding', instance.versionAlgorithmCoding?.toJson());
-  writeNotNull('name', instance.name);
-  writeNotNull('_name', instance.nameElement?.toJson());
-  writeNotNull('title', instance.title);
-  writeNotNull('_title', instance.titleElement?.toJson());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('experimental', instance.experimental?.toJson());
-  writeNotNull('_experimental', instance.experimentalElement?.toJson());
-  writeNotNull('date', instance.date?.toJson());
-  writeNotNull('_date', instance.dateElement?.toJson());
-  writeNotNull('publisher', instance.publisher);
-  writeNotNull('_publisher', instance.publisherElement?.toJson());
-  writeNotNull('contact', instance.contact?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull(
-      'useContext', instance.useContext?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'jurisdiction', instance.jurisdiction?.map((e) => e.toJson()).toList());
-  writeNotNull('purpose', instance.purpose?.toJson());
-  writeNotNull('_purpose', instance.purposeElement?.toJson());
-  writeNotNull('copyright', instance.copyright?.toJson());
-  writeNotNull('_copyright', instance.copyrightElement?.toJson());
-  writeNotNull('copyrightLabel', instance.copyrightLabel);
-  writeNotNull('_copyrightLabel', instance.copyrightLabelElement?.toJson());
-  writeNotNull('actor', instance.actor?.map((e) => e.toJson()).toList());
-  writeNotNull('instance', instance.instance?.map((e) => e.toJson()).toList());
-  writeNotNull('process', instance.process?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$ExampleScenarioImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'url': instance.url,
+      '_url': instance.urlElement,
+      'identifier': instance.identifier,
+      'version': instance.version,
+      '_version': instance.versionElement,
+      'versionAlgorithmString': instance.versionAlgorithmString,
+      '_versionAlgorithmString': instance.versionAlgorithmStringElement,
+      'versionAlgorithmCoding': instance.versionAlgorithmCoding,
+      'name': instance.name,
+      '_name': instance.nameElement,
+      'title': instance.title,
+      '_title': instance.titleElement,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'experimental': instance.experimental,
+      '_experimental': instance.experimentalElement,
+      'date': instance.date,
+      '_date': instance.dateElement,
+      'publisher': instance.publisher,
+      '_publisher': instance.publisherElement,
+      'contact': instance.contact,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'useContext': instance.useContext,
+      'jurisdiction': instance.jurisdiction,
+      'purpose': instance.purpose,
+      '_purpose': instance.purposeElement,
+      'copyright': instance.copyright,
+      '_copyright': instance.copyrightElement,
+      'copyrightLabel': instance.copyrightLabel,
+      '_copyrightLabel': instance.copyrightLabelElement,
+      'actor': instance.actor,
+      'instance': instance.instance,
+      'process': instance.process,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -408,30 +391,20 @@ _$ExampleScenarioActorImpl _$$ExampleScenarioActorImplFromJson(
     );
 
 Map<String, dynamic> _$$ExampleScenarioActorImplToJson(
-    _$ExampleScenarioActorImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('key', instance.key);
-  writeNotNull('_key', instance.keyElement?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('_type', instance.typeElement?.toJson());
-  writeNotNull('title', instance.title);
-  writeNotNull('_title', instance.titleElement?.toJson());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  return val;
-}
+        _$ExampleScenarioActorImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'key': instance.key,
+      '_key': instance.keyElement,
+      'type': instance.type,
+      '_type': instance.typeElement,
+      'title': instance.title,
+      '_title': instance.titleElement,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+    };
 
 _$ExampleScenarioInstanceImpl _$$ExampleScenarioInstanceImplFromJson(
         Map<String, dynamic> json) =>
@@ -494,42 +467,28 @@ _$ExampleScenarioInstanceImpl _$$ExampleScenarioInstanceImplFromJson(
     );
 
 Map<String, dynamic> _$$ExampleScenarioInstanceImplToJson(
-    _$ExampleScenarioInstanceImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('key', instance.key);
-  writeNotNull('_key', instance.keyElement?.toJson());
-  val['structureType'] = instance.structureType.toJson();
-  writeNotNull('structureVersion', instance.structureVersion);
-  writeNotNull('_structureVersion', instance.structureVersionElement?.toJson());
-  writeNotNull('structureProfileCanonical',
-      instance.structureProfileCanonical?.toJson());
-  writeNotNull('_structureProfileCanonical',
-      instance.structureProfileCanonicalElement?.toJson());
-  writeNotNull('structureProfileUri', instance.structureProfileUri?.toJson());
-  writeNotNull(
-      '_structureProfileUri', instance.structureProfileUriElement?.toJson());
-  writeNotNull('title', instance.title);
-  writeNotNull('_title', instance.titleElement?.toJson());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('version', instance.version?.map((e) => e.toJson()).toList());
-  writeNotNull('containedInstance',
-      instance.containedInstance?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$ExampleScenarioInstanceImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'key': instance.key,
+      '_key': instance.keyElement,
+      'structureType': instance.structureType,
+      'structureVersion': instance.structureVersion,
+      '_structureVersion': instance.structureVersionElement,
+      'structureProfileCanonical': instance.structureProfileCanonical,
+      '_structureProfileCanonical': instance.structureProfileCanonicalElement,
+      'structureProfileUri': instance.structureProfileUri,
+      '_structureProfileUri': instance.structureProfileUriElement,
+      'title': instance.title,
+      '_title': instance.titleElement,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'content': instance.content,
+      'version': instance.version,
+      'containedInstance': instance.containedInstance,
+    };
 
 _$ExampleScenarioVersionImpl _$$ExampleScenarioVersionImplFromJson(
         Map<String, dynamic> json) =>
@@ -562,29 +521,19 @@ _$ExampleScenarioVersionImpl _$$ExampleScenarioVersionImplFromJson(
     );
 
 Map<String, dynamic> _$$ExampleScenarioVersionImplToJson(
-    _$ExampleScenarioVersionImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('key', instance.key);
-  writeNotNull('_key', instance.keyElement?.toJson());
-  writeNotNull('title', instance.title);
-  writeNotNull('_title', instance.titleElement?.toJson());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('content', instance.content?.toJson());
-  return val;
-}
+        _$ExampleScenarioVersionImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'key': instance.key,
+      '_key': instance.keyElement,
+      'title': instance.title,
+      '_title': instance.titleElement,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'content': instance.content,
+    };
 
 _$ExampleScenarioContainedInstanceImpl
     _$$ExampleScenarioContainedInstanceImplFromJson(
@@ -610,27 +559,16 @@ _$ExampleScenarioContainedInstanceImpl
         );
 
 Map<String, dynamic> _$$ExampleScenarioContainedInstanceImplToJson(
-    _$ExampleScenarioContainedInstanceImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('instanceReference', instance.instanceReference);
-  writeNotNull(
-      '_instanceReference', instance.instanceReferenceElement?.toJson());
-  writeNotNull('versionReference', instance.versionReference);
-  writeNotNull('_versionReference', instance.versionReferenceElement?.toJson());
-  return val;
-}
+        _$ExampleScenarioContainedInstanceImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'instanceReference': instance.instanceReference,
+      '_instanceReference': instance.instanceReferenceElement,
+      'versionReference': instance.versionReference,
+      '_versionReference': instance.versionReferenceElement,
+    };
 
 _$ExampleScenarioProcessImpl _$$ExampleScenarioProcessImplFromJson(
         Map<String, dynamic> json) =>
@@ -673,31 +611,21 @@ _$ExampleScenarioProcessImpl _$$ExampleScenarioProcessImplFromJson(
     );
 
 Map<String, dynamic> _$$ExampleScenarioProcessImplToJson(
-    _$ExampleScenarioProcessImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('title', instance.title);
-  writeNotNull('_title', instance.titleElement?.toJson());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('preConditions', instance.preConditions?.toJson());
-  writeNotNull('_preConditions', instance.preConditionsElement?.toJson());
-  writeNotNull('postConditions', instance.postConditions?.toJson());
-  writeNotNull('_postConditions', instance.postConditionsElement?.toJson());
-  writeNotNull('step', instance.step?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$ExampleScenarioProcessImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'title': instance.title,
+      '_title': instance.titleElement,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'preConditions': instance.preConditions,
+      '_preConditions': instance.preConditionsElement,
+      'postConditions': instance.postConditions,
+      '_postConditions': instance.postConditionsElement,
+      'step': instance.step,
+    };
 
 _$ExampleScenarioStepImpl _$$ExampleScenarioStepImplFromJson(
         Map<String, dynamic> json) =>
@@ -735,31 +663,20 @@ _$ExampleScenarioStepImpl _$$ExampleScenarioStepImplFromJson(
     );
 
 Map<String, dynamic> _$$ExampleScenarioStepImplToJson(
-    _$ExampleScenarioStepImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('number', instance.number);
-  writeNotNull('_number', instance.numberElement?.toJson());
-  writeNotNull('process', instance.process?.toJson());
-  writeNotNull('workflow', instance.workflow?.toJson());
-  writeNotNull('operation', instance.operation?.toJson());
-  writeNotNull(
-      'alternative', instance.alternative?.map((e) => e.toJson()).toList());
-  writeNotNull('pause', instance.pause?.toJson());
-  writeNotNull('_pause', instance.pauseElement?.toJson());
-  return val;
-}
+        _$ExampleScenarioStepImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'number': instance.number,
+      '_number': instance.numberElement,
+      'process': instance.process,
+      'workflow': instance.workflow,
+      'operation': instance.operation,
+      'alternative': instance.alternative,
+      'pause': instance.pause,
+      '_pause': instance.pauseElement,
+    };
 
 _$ExampleScenarioOperationImpl _$$ExampleScenarioOperationImplFromJson(
         Map<String, dynamic> json) =>
@@ -820,37 +737,27 @@ _$ExampleScenarioOperationImpl _$$ExampleScenarioOperationImplFromJson(
     );
 
 Map<String, dynamic> _$$ExampleScenarioOperationImplToJson(
-    _$ExampleScenarioOperationImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('title', instance.title);
-  writeNotNull('_title', instance.titleElement?.toJson());
-  writeNotNull('initiator', instance.initiator);
-  writeNotNull('_initiator', instance.initiatorElement?.toJson());
-  writeNotNull('receiver', instance.receiver);
-  writeNotNull('_receiver', instance.receiverElement?.toJson());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('initiatorActive', instance.initiatorActive?.toJson());
-  writeNotNull('_initiatorActive', instance.initiatorActiveElement?.toJson());
-  writeNotNull('receiverActive', instance.receiverActive?.toJson());
-  writeNotNull('_receiverActive', instance.receiverActiveElement?.toJson());
-  writeNotNull('request', instance.request?.toJson());
-  writeNotNull('response', instance.response?.toJson());
-  return val;
-}
+        _$ExampleScenarioOperationImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'type': instance.type,
+      'title': instance.title,
+      '_title': instance.titleElement,
+      'initiator': instance.initiator,
+      '_initiator': instance.initiatorElement,
+      'receiver': instance.receiver,
+      '_receiver': instance.receiverElement,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'initiatorActive': instance.initiatorActive,
+      '_initiatorActive': instance.initiatorActiveElement,
+      'receiverActive': instance.receiverActive,
+      '_receiverActive': instance.receiverActiveElement,
+      'request': instance.request,
+      'response': instance.response,
+    };
 
 _$ExampleScenarioAlternativeImpl _$$ExampleScenarioAlternativeImplFromJson(
         Map<String, dynamic> json) =>
@@ -879,24 +786,14 @@ _$ExampleScenarioAlternativeImpl _$$ExampleScenarioAlternativeImplFromJson(
     );
 
 Map<String, dynamic> _$$ExampleScenarioAlternativeImplToJson(
-    _$ExampleScenarioAlternativeImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('title', instance.title);
-  writeNotNull('_title', instance.titleElement?.toJson());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('step', instance.step?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$ExampleScenarioAlternativeImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'title': instance.title,
+      '_title': instance.titleElement,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'step': instance.step,
+    };

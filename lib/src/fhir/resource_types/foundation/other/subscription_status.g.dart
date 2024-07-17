@@ -72,45 +72,31 @@ _$SubscriptionStatusImpl _$$SubscriptionStatusImplFromJson(
     );
 
 Map<String, dynamic> _$$SubscriptionStatusImplToJson(
-    _$SubscriptionStatusImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('_type', instance.typeElement?.toJson());
-  writeNotNull('eventsSinceSubscriptionStart',
-      instance.eventsSinceSubscriptionStart?.toJson());
-  writeNotNull('_eventsSinceSubscriptionStart',
-      instance.eventsSinceSubscriptionStartElement?.toJson());
-  writeNotNull('notificationEvent',
-      instance.notificationEvent?.map((e) => e.toJson()).toList());
-  val['subscription'] = instance.subscription.toJson();
-  writeNotNull('topic', instance.topic?.toJson());
-  writeNotNull('error', instance.error?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$SubscriptionStatusImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'type': instance.type,
+      '_type': instance.typeElement,
+      'eventsSinceSubscriptionStart': instance.eventsSinceSubscriptionStart,
+      '_eventsSinceSubscriptionStart':
+          instance.eventsSinceSubscriptionStartElement,
+      'notificationEvent': instance.notificationEvent,
+      'subscription': instance.subscription,
+      'topic': instance.topic,
+      'error': instance.error,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -309,26 +295,15 @@ _$SubscriptionStatusNotificationEventImpl
         );
 
 Map<String, dynamic> _$$SubscriptionStatusNotificationEventImplToJson(
-    _$SubscriptionStatusNotificationEventImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('eventNumber', instance.eventNumber?.toJson());
-  writeNotNull('_eventNumber', instance.eventNumberElement?.toJson());
-  writeNotNull('timestamp', instance.timestamp?.toJson());
-  writeNotNull('_timestamp', instance.timestampElement?.toJson());
-  writeNotNull('focus', instance.focus?.toJson());
-  writeNotNull('additionalContext',
-      instance.additionalContext?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$SubscriptionStatusNotificationEventImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'eventNumber': instance.eventNumber,
+      '_eventNumber': instance.eventNumberElement,
+      'timestamp': instance.timestamp,
+      '_timestamp': instance.timestampElement,
+      'focus': instance.focus,
+      'additionalContext': instance.additionalContext,
+    };

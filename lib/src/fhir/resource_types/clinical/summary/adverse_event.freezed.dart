@@ -230,8 +230,12 @@ mixin _$AdverseEvent {
   ///  other participants.
   List<Annotation>? get note => throw _privateConstructorUsedError;
 
+  /// Serializes this AdverseEvent to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AdverseEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AdverseEventCopyWith<AdverseEvent> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -312,6 +316,8 @@ class _$AdverseEventCopyWithImpl<$Res, $Val extends AdverseEvent>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AdverseEvent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -535,6 +541,8 @@ class _$AdverseEventCopyWithImpl<$Res, $Val extends AdverseEvent>
     ) as $Val);
   }
 
+  /// Create a copy of AdverseEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -547,6 +555,8 @@ class _$AdverseEventCopyWithImpl<$Res, $Val extends AdverseEvent>
     });
   }
 
+  /// Create a copy of AdverseEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -559,6 +569,8 @@ class _$AdverseEventCopyWithImpl<$Res, $Val extends AdverseEvent>
     });
   }
 
+  /// Create a copy of AdverseEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -571,6 +583,8 @@ class _$AdverseEventCopyWithImpl<$Res, $Val extends AdverseEvent>
     });
   }
 
+  /// Create a copy of AdverseEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get subject {
@@ -579,6 +593,8 @@ class _$AdverseEventCopyWithImpl<$Res, $Val extends AdverseEvent>
     });
   }
 
+  /// Create a copy of AdverseEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get encounter {
@@ -591,6 +607,8 @@ class _$AdverseEventCopyWithImpl<$Res, $Val extends AdverseEvent>
     });
   }
 
+  /// Create a copy of AdverseEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get occurrencePeriod {
@@ -603,6 +621,8 @@ class _$AdverseEventCopyWithImpl<$Res, $Val extends AdverseEvent>
     });
   }
 
+  /// Create a copy of AdverseEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get occurrenceTiming {
@@ -615,6 +635,8 @@ class _$AdverseEventCopyWithImpl<$Res, $Val extends AdverseEvent>
     });
   }
 
+  /// Create a copy of AdverseEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get location {
@@ -627,6 +649,8 @@ class _$AdverseEventCopyWithImpl<$Res, $Val extends AdverseEvent>
     });
   }
 
+  /// Create a copy of AdverseEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get seriousness {
@@ -639,6 +663,8 @@ class _$AdverseEventCopyWithImpl<$Res, $Val extends AdverseEvent>
     });
   }
 
+  /// Create a copy of AdverseEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get recorder {
@@ -738,6 +764,8 @@ class __$$AdverseEventImplCopyWithImpl<$Res>
       _$AdverseEventImpl _value, $Res Function(_$AdverseEventImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AdverseEvent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1534,7 +1562,7 @@ class _$AdverseEventImpl extends _AdverseEvent {
             const DeepCollectionEquality().equals(other._note, _note));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1583,7 +1611,9 @@ class _$AdverseEventImpl extends _AdverseEvent {
         const DeepCollectionEquality().hash(_note)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AdverseEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AdverseEventImplCopyWith<_$AdverseEventImpl> get copyWith =>
@@ -1652,44 +1682,42 @@ abstract class _AdverseEvent extends AdverseEvent {
   factory _AdverseEvent.fromJson(Map<String, dynamic> json) =
       _$AdverseEventImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a AdverseEvent resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.AdverseEvent)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1697,16 +1725,16 @@ abstract class _AdverseEvent extends AdverseEvent {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1714,9 +1742,9 @@ abstract class _AdverseEvent extends AdverseEvent {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1730,171 +1758,175 @@ abstract class _AdverseEvent extends AdverseEvent {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] Business identifiers assigned to this adverse event by the
   ///  performer or other systems which remain constant as the resource is
   ///  updated and propagates from server to server.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [status] The current state of the adverse event or potential adverse event.
-  FhirCode? get status;
   @override
+  FhirCode? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [actuality] Whether the event actually happened or was a near miss. Note
   ///  that this is independent of whether anyone was affected or harmed or how
   ///  severely.
-  FhirCode? get actuality;
   @override
+  FhirCode? get actuality;
 
   /// [actualityElement] ("_actuality") Extensions for actuality
+  @override
   @JsonKey(name: '_actuality')
   PrimitiveElement? get actualityElement;
-  @override
 
   /// [category] The overall type of event, intended for search and filtering
   ///  purposes.
-  List<CodeableConcept>? get category;
   @override
+  List<CodeableConcept>? get category;
 
   /// [code] Specific event that occurred or that was averted, such as patient
   ///  fall, wrong organ removed, or wrong blood transfused.
-  CodeableConcept? get code;
   @override
+  CodeableConcept? get code;
 
   /// [subject] This subject or group impacted by the event.
-  Reference get subject;
   @override
+  Reference get subject;
 
   /// [encounter] The Encounter associated with the start of the AdverseEvent.
-  Reference? get encounter;
   @override
+  Reference? get encounter;
 
   /// [occurrenceDateTime] The date (and perhaps time) when the adverse event
   ///  occurred.
-  FhirDateTime? get occurrenceDateTime;
   @override
+  FhirDateTime? get occurrenceDateTime;
 
   /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
   ///  occurrenceDateTime
+  @override
   @JsonKey(name: '_occurrenceDateTime')
   PrimitiveElement? get occurrenceDateTimeElement;
-  @override
 
   /// [occurrencePeriod] The date (and perhaps time) when the adverse event
   ///  occurred.
-  Period? get occurrencePeriod;
   @override
+  Period? get occurrencePeriod;
 
   /// [occurrenceTiming] The date (and perhaps time) when the adverse event
   ///  occurred.
-  Timing? get occurrenceTiming;
   @override
+  Timing? get occurrenceTiming;
 
   /// [detected] Estimated or actual date the AdverseEvent began, in the opinion
   ///  of the reporter.
-  FhirDateTime? get detected;
   @override
+  FhirDateTime? get detected;
 
   /// [detectedElement] ("_detected") Extensions for detected
+  @override
   @JsonKey(name: '_detected')
   PrimitiveElement? get detectedElement;
-  @override
 
   /// [recordedDate] The date on which the existence of the AdverseEvent was
   ///  first recorded.
-  FhirDateTime? get recordedDate;
   @override
+  FhirDateTime? get recordedDate;
 
   /// [recordedDateElement] ("_recordedDate") Extensions for recordedDate
+  @override
   @JsonKey(name: '_recordedDate')
   PrimitiveElement? get recordedDateElement;
-  @override
 
   /// [resultingEffect] Information about the condition that occurred as a result
   ///  of the adverse event, such as hives due to the exposure to a substance
   ///  (for example, a drug or a chemical) or a broken leg as a result of the
   ///  fall.
-  List<Reference>? get resultingEffect;
   @override
+  List<Reference>? get resultingEffect;
 
   /// [location] The information about where the adverse event occurred.
-  Reference? get location;
   @override
+  Reference? get location;
 
   /// [seriousness] Assessment whether this event, or averted event, was of
   ///  clinical importance.
-  CodeableConcept? get seriousness;
   @override
+  CodeableConcept? get seriousness;
 
   /// [outcome] Describes the type of outcome from the adverse event, such as
   ///  resolved, recovering, ongoing, resolved-with-sequelae, or fatal.
-  List<CodeableConcept>? get outcome;
   @override
+  List<CodeableConcept>? get outcome;
 
   /// [recorder] Information on who recorded the adverse event.  May be the
   ///  patient or a practitioner.
-  Reference? get recorder;
   @override
+  Reference? get recorder;
 
   /// [participant] Indicates who or what participated in the adverse event and
   ///  how they were involved.
-  List<AdverseEventParticipant>? get participant;
   @override
+  List<AdverseEventParticipant>? get participant;
 
   /// [study] The research study that the subject is enrolled in.
-  List<Reference>? get study;
   @override
+  List<Reference>? get study;
 
   /// [expectedInResearchStudy] Considered likely or probable or anticipated in
   ///  the research study.  Whether the reported event matches any of the
   ///  outcomes for the patient that are considered by the study as known or
   ///  likely.
-  FhirBoolean? get expectedInResearchStudy;
   @override
+  FhirBoolean? get expectedInResearchStudy;
 
   /// [expectedInResearchStudyElement] ("_expectedInResearchStudy") Extensions
   ///  for expectedInResearchStudy
+  @override
   @JsonKey(name: '_expectedInResearchStudy')
   PrimitiveElement? get expectedInResearchStudyElement;
-  @override
 
   /// [suspectEntity] Describes the entity that is suspected to have caused the
   ///  adverse event.
-  List<AdverseEventSuspectEntity>? get suspectEntity;
   @override
+  List<AdverseEventSuspectEntity>? get suspectEntity;
 
   /// [contributingFactor] The contributing factors suspected to have increased
   ///  the probability or severity of the adverse event.
-  List<AdverseEventContributingFactor>? get contributingFactor;
   @override
+  List<AdverseEventContributingFactor>? get contributingFactor;
 
   /// [preventiveAction] Preventive actions that contributed to avoiding the
   ///  adverse event.
-  List<AdverseEventPreventiveAction>? get preventiveAction;
   @override
+  List<AdverseEventPreventiveAction>? get preventiveAction;
 
   /// [mitigatingAction] The ameliorating action taken after the adverse event
   ///  occured in order to reduce the extent of harm.
-  List<AdverseEventMitigatingAction>? get mitigatingAction;
   @override
+  List<AdverseEventMitigatingAction>? get mitigatingAction;
 
   /// [supportingInfo] Supporting information relevant to the event.
-  List<AdverseEventSupportingInfo>? get supportingInfo;
   @override
+  List<AdverseEventSupportingInfo>? get supportingInfo;
 
   /// [note] Comments made about the adverse event by the performer, subject or
   ///  other participants.
-  List<Annotation>? get note;
   @override
-  @JsonKey(ignore: true)
+  List<Annotation>? get note;
+
+  /// Create a copy of AdverseEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AdverseEventImplCopyWith<_$AdverseEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1942,8 +1974,12 @@ mixin _$AdverseEventParticipant {
   /// [actor] Indicates who or what participated in the event.
   Reference get actor => throw _privateConstructorUsedError;
 
+  /// Serializes this AdverseEventParticipant to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AdverseEventParticipant
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AdverseEventParticipantCopyWith<AdverseEventParticipant> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1976,6 +2012,8 @@ class _$AdverseEventParticipantCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AdverseEventParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2009,6 +2047,8 @@ class _$AdverseEventParticipantCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AdverseEventParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get function_ {
@@ -2021,6 +2061,8 @@ class _$AdverseEventParticipantCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdverseEventParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get actor {
@@ -2062,6 +2104,8 @@ class __$$AdverseEventParticipantImplCopyWithImpl<$Res>
       $Res Function(_$AdverseEventParticipantImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AdverseEventParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2207,7 +2251,7 @@ class _$AdverseEventParticipantImpl extends _AdverseEventParticipant {
             (identical(other.actor, actor) || other.actor == actor));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2217,7 +2261,9 @@ class _$AdverseEventParticipantImpl extends _AdverseEventParticipant {
       function_,
       actor);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AdverseEventParticipant
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AdverseEventParticipantImplCopyWith<_$AdverseEventParticipantImpl>
@@ -2244,12 +2290,10 @@ abstract class _AdverseEventParticipant extends AdverseEventParticipant {
   factory _AdverseEventParticipant.fromJson(Map<String, dynamic> json) =
       _$AdverseEventParticipantImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2257,9 +2301,9 @@ abstract class _AdverseEventParticipant extends AdverseEventParticipant {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2273,19 +2317,23 @@ abstract class _AdverseEventParticipant extends AdverseEventParticipant {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [function_] ("function") Distinguishes the type of involvement of the actor
   ///  in the adverse event, such as contributor or informant.
+  @override
   @JsonKey(name: 'function')
   CodeableConcept? get function_;
-  @override
 
   /// [actor] Indicates who or what participated in the event.
-  Reference get actor;
   @override
-  @JsonKey(ignore: true)
+  Reference get actor;
+
+  /// Create a copy of AdverseEventParticipant
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AdverseEventParticipantImplCopyWith<_$AdverseEventParticipantImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2339,8 +2387,12 @@ mixin _$AdverseEventSuspectEntity {
   /// [causality] Information on the possible cause of the event.
   AdverseEventCausality? get causality => throw _privateConstructorUsedError;
 
+  /// Serializes this AdverseEventSuspectEntity to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AdverseEventSuspectEntity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AdverseEventSuspectEntityCopyWith<AdverseEventSuspectEntity> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2375,6 +2427,8 @@ class _$AdverseEventSuspectEntityCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AdverseEventSuspectEntity
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2413,6 +2467,8 @@ class _$AdverseEventSuspectEntityCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AdverseEventSuspectEntity
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get instanceCodeableConcept {
@@ -2426,6 +2482,8 @@ class _$AdverseEventSuspectEntityCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdverseEventSuspectEntity
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get instanceReference {
@@ -2438,6 +2496,8 @@ class _$AdverseEventSuspectEntityCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdverseEventSuspectEntity
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AdverseEventCausalityCopyWith<$Res>? get causality {
@@ -2486,6 +2546,8 @@ class __$$AdverseEventSuspectEntityImplCopyWithImpl<$Res>
       $Res Function(_$AdverseEventSuspectEntityImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AdverseEventSuspectEntity
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2647,7 +2709,7 @@ class _$AdverseEventSuspectEntityImpl extends _AdverseEventSuspectEntity {
                 other.causality == causality));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2658,7 +2720,9 @@ class _$AdverseEventSuspectEntityImpl extends _AdverseEventSuspectEntity {
       instanceReference,
       causality);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AdverseEventSuspectEntity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AdverseEventSuspectEntityImplCopyWith<_$AdverseEventSuspectEntityImpl>
@@ -2687,12 +2751,10 @@ abstract class _AdverseEventSuspectEntity extends AdverseEventSuspectEntity {
   factory _AdverseEventSuspectEntity.fromJson(Map<String, dynamic> json) =
       _$AdverseEventSuspectEntityImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2700,9 +2762,9 @@ abstract class _AdverseEventSuspectEntity extends AdverseEventSuspectEntity {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2716,25 +2778,29 @@ abstract class _AdverseEventSuspectEntity extends AdverseEventSuspectEntity {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [instanceCodeableConcept] Identifies the actual instance of what caused the
   ///  adverse event.  May be a substance, medication, medication administration,
   ///  medication statement or a device.
-  CodeableConcept? get instanceCodeableConcept;
   @override
+  CodeableConcept? get instanceCodeableConcept;
 
   /// [instanceReference] Identifies the actual instance of what caused the
   ///  adverse event.  May be a substance, medication, medication administration,
   ///  medication statement or a device.
-  Reference? get instanceReference;
   @override
+  Reference? get instanceReference;
 
   /// [causality] Information on the possible cause of the event.
-  AdverseEventCausality? get causality;
   @override
-  @JsonKey(ignore: true)
+  AdverseEventCausality? get causality;
+
+  /// Create a copy of AdverseEventSuspectEntity
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AdverseEventSuspectEntityImplCopyWith<_$AdverseEventSuspectEntityImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2785,8 +2851,12 @@ mixin _$AdverseEventCausality {
   /// [author] The author of the information on the possible cause of the event.
   Reference? get author => throw _privateConstructorUsedError;
 
+  /// Serializes this AdverseEventCausality to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AdverseEventCausality
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AdverseEventCausalityCopyWith<AdverseEventCausality> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2821,6 +2891,8 @@ class _$AdverseEventCausalityCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AdverseEventCausality
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2859,6 +2931,8 @@ class _$AdverseEventCausalityCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AdverseEventCausality
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get assessmentMethod {
@@ -2871,6 +2945,8 @@ class _$AdverseEventCausalityCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdverseEventCausality
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get entityRelatedness {
@@ -2883,6 +2959,8 @@ class _$AdverseEventCausalityCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdverseEventCausality
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get author {
@@ -2930,6 +3008,8 @@ class __$$AdverseEventCausalityImplCopyWithImpl<$Res>
       $Res Function(_$AdverseEventCausalityImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AdverseEventCausality
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3087,7 +3167,7 @@ class _$AdverseEventCausalityImpl extends _AdverseEventCausality {
             (identical(other.author, author) || other.author == author));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3098,7 +3178,9 @@ class _$AdverseEventCausalityImpl extends _AdverseEventCausality {
       entityRelatedness,
       author);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AdverseEventCausality
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AdverseEventCausalityImplCopyWith<_$AdverseEventCausalityImpl>
@@ -3126,12 +3208,10 @@ abstract class _AdverseEventCausality extends AdverseEventCausality {
   factory _AdverseEventCausality.fromJson(Map<String, dynamic> json) =
       _$AdverseEventCausalityImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3139,9 +3219,9 @@ abstract class _AdverseEventCausality extends AdverseEventCausality {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3155,23 +3235,27 @@ abstract class _AdverseEventCausality extends AdverseEventCausality {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [assessmentMethod] The method of evaluating the relatedness of the
   ///  suspected entity to the event.
-  CodeableConcept? get assessmentMethod;
   @override
+  CodeableConcept? get assessmentMethod;
 
   /// [entityRelatedness] The result of the assessment regarding the relatedness
   ///  of the suspected entity to the event.
-  CodeableConcept? get entityRelatedness;
   @override
+  CodeableConcept? get entityRelatedness;
 
   /// [author] The author of the information on the possible cause of the event.
-  Reference? get author;
   @override
-  @JsonKey(ignore: true)
+  Reference? get author;
+
+  /// Create a copy of AdverseEventCausality
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AdverseEventCausalityImplCopyWith<_$AdverseEventCausalityImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3220,8 +3304,12 @@ mixin _$AdverseEventContributingFactor {
   CodeableConcept? get itemCodeableConcept =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this AdverseEventContributingFactor to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AdverseEventContributingFactor
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AdverseEventContributingFactorCopyWith<AdverseEventContributingFactor>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3256,6 +3344,8 @@ class _$AdverseEventContributingFactorCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AdverseEventContributingFactor
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3289,6 +3379,8 @@ class _$AdverseEventContributingFactorCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AdverseEventContributingFactor
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get itemReference {
@@ -3301,6 +3393,8 @@ class _$AdverseEventContributingFactorCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdverseEventContributingFactor
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get itemCodeableConcept {
@@ -3346,6 +3440,8 @@ class __$$AdverseEventContributingFactorImplCopyWithImpl<$Res>
       $Res Function(_$AdverseEventContributingFactorImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AdverseEventContributingFactor
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3494,7 +3590,7 @@ class _$AdverseEventContributingFactorImpl
                 other.itemCodeableConcept == itemCodeableConcept));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3504,7 +3600,9 @@ class _$AdverseEventContributingFactorImpl
       itemReference,
       itemCodeableConcept);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AdverseEventContributingFactor
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AdverseEventContributingFactorImplCopyWith<
@@ -3534,12 +3632,10 @@ abstract class _AdverseEventContributingFactor
   factory _AdverseEventContributingFactor.fromJson(Map<String, dynamic> json) =
       _$AdverseEventContributingFactorImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3547,9 +3643,9 @@ abstract class _AdverseEventContributingFactor
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3563,19 +3659,23 @@ abstract class _AdverseEventContributingFactor
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [itemReference] The item that is suspected to have increased the
   ///  probability or severity of the adverse event.
-  Reference? get itemReference;
   @override
+  Reference? get itemReference;
 
   /// [itemCodeableConcept] The item that is suspected to have increased the
   ///  probability or severity of the adverse event.
-  CodeableConcept? get itemCodeableConcept;
   @override
-  @JsonKey(ignore: true)
+  CodeableConcept? get itemCodeableConcept;
+
+  /// Create a copy of AdverseEventContributingFactor
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AdverseEventContributingFactorImplCopyWith<
           _$AdverseEventContributingFactorImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3624,8 +3724,12 @@ mixin _$AdverseEventPreventiveAction {
   CodeableConcept? get itemCodeableConcept =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this AdverseEventPreventiveAction to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AdverseEventPreventiveAction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AdverseEventPreventiveActionCopyWith<AdverseEventPreventiveAction>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3660,6 +3764,8 @@ class _$AdverseEventPreventiveActionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AdverseEventPreventiveAction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3693,6 +3799,8 @@ class _$AdverseEventPreventiveActionCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AdverseEventPreventiveAction
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get itemReference {
@@ -3705,6 +3813,8 @@ class _$AdverseEventPreventiveActionCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdverseEventPreventiveAction
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get itemCodeableConcept {
@@ -3750,6 +3860,8 @@ class __$$AdverseEventPreventiveActionImplCopyWithImpl<$Res>
       $Res Function(_$AdverseEventPreventiveActionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AdverseEventPreventiveAction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3896,7 +4008,7 @@ class _$AdverseEventPreventiveActionImpl extends _AdverseEventPreventiveAction {
                 other.itemCodeableConcept == itemCodeableConcept));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3906,7 +4018,9 @@ class _$AdverseEventPreventiveActionImpl extends _AdverseEventPreventiveAction {
       itemReference,
       itemCodeableConcept);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AdverseEventPreventiveAction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AdverseEventPreventiveActionImplCopyWith<
@@ -3936,12 +4050,10 @@ abstract class _AdverseEventPreventiveAction
   factory _AdverseEventPreventiveAction.fromJson(Map<String, dynamic> json) =
       _$AdverseEventPreventiveActionImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3949,9 +4061,9 @@ abstract class _AdverseEventPreventiveAction
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3965,18 +4077,22 @@ abstract class _AdverseEventPreventiveAction
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [itemReference] The action that contributed to avoiding the adverse event.
-  Reference? get itemReference;
   @override
+  Reference? get itemReference;
 
   /// [itemCodeableConcept] The action that contributed to avoiding the adverse
   ///  event.
-  CodeableConcept? get itemCodeableConcept;
   @override
-  @JsonKey(ignore: true)
+  CodeableConcept? get itemCodeableConcept;
+
+  /// Create a copy of AdverseEventPreventiveAction
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AdverseEventPreventiveActionImplCopyWith<
           _$AdverseEventPreventiveActionImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4026,8 +4142,12 @@ mixin _$AdverseEventMitigatingAction {
   CodeableConcept? get itemCodeableConcept =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this AdverseEventMitigatingAction to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AdverseEventMitigatingAction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AdverseEventMitigatingActionCopyWith<AdverseEventMitigatingAction>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4062,6 +4182,8 @@ class _$AdverseEventMitigatingActionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AdverseEventMitigatingAction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4095,6 +4217,8 @@ class _$AdverseEventMitigatingActionCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AdverseEventMitigatingAction
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get itemReference {
@@ -4107,6 +4231,8 @@ class _$AdverseEventMitigatingActionCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdverseEventMitigatingAction
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get itemCodeableConcept {
@@ -4152,6 +4278,8 @@ class __$$AdverseEventMitigatingActionImplCopyWithImpl<$Res>
       $Res Function(_$AdverseEventMitigatingActionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AdverseEventMitigatingAction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4299,7 +4427,7 @@ class _$AdverseEventMitigatingActionImpl extends _AdverseEventMitigatingAction {
                 other.itemCodeableConcept == itemCodeableConcept));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4309,7 +4437,9 @@ class _$AdverseEventMitigatingActionImpl extends _AdverseEventMitigatingAction {
       itemReference,
       itemCodeableConcept);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AdverseEventMitigatingAction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AdverseEventMitigatingActionImplCopyWith<
@@ -4339,12 +4469,10 @@ abstract class _AdverseEventMitigatingAction
   factory _AdverseEventMitigatingAction.fromJson(Map<String, dynamic> json) =
       _$AdverseEventMitigatingActionImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4352,9 +4480,9 @@ abstract class _AdverseEventMitigatingAction
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4368,19 +4496,23 @@ abstract class _AdverseEventMitigatingAction
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [itemReference] The ameliorating action taken after the adverse event
   ///  occured in order to reduce the extent of harm.
-  Reference? get itemReference;
   @override
+  Reference? get itemReference;
 
   /// [itemCodeableConcept] The ameliorating action taken after the adverse event
   ///  occured in order to reduce the extent of harm.
-  CodeableConcept? get itemCodeableConcept;
   @override
-  @JsonKey(ignore: true)
+  CodeableConcept? get itemCodeableConcept;
+
+  /// Create a copy of AdverseEventMitigatingAction
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AdverseEventMitigatingActionImplCopyWith<
           _$AdverseEventMitigatingActionImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4446,8 +4578,12 @@ mixin _$AdverseEventSupportingInfo {
   CodeableConcept? get itemCodeableConcept =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this AdverseEventSupportingInfo to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AdverseEventSupportingInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AdverseEventSupportingInfoCopyWith<AdverseEventSupportingInfo>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4481,6 +4617,8 @@ class _$AdverseEventSupportingInfoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AdverseEventSupportingInfo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4514,6 +4652,8 @@ class _$AdverseEventSupportingInfoCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AdverseEventSupportingInfo
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get itemReference {
@@ -4526,6 +4666,8 @@ class _$AdverseEventSupportingInfoCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdverseEventSupportingInfo
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get itemCodeableConcept {
@@ -4571,6 +4713,8 @@ class __$$AdverseEventSupportingInfoImplCopyWithImpl<$Res>
       $Res Function(_$AdverseEventSupportingInfoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AdverseEventSupportingInfo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4734,7 +4878,7 @@ class _$AdverseEventSupportingInfoImpl extends _AdverseEventSupportingInfo {
                 other.itemCodeableConcept == itemCodeableConcept));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4744,7 +4888,9 @@ class _$AdverseEventSupportingInfoImpl extends _AdverseEventSupportingInfo {
       itemReference,
       itemCodeableConcept);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AdverseEventSupportingInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AdverseEventSupportingInfoImplCopyWith<_$AdverseEventSupportingInfoImpl>
@@ -4772,12 +4918,10 @@ abstract class _AdverseEventSupportingInfo extends AdverseEventSupportingInfo {
   factory _AdverseEventSupportingInfo.fromJson(Map<String, dynamic> json) =
       _$AdverseEventSupportingInfoImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4785,9 +4929,9 @@ abstract class _AdverseEventSupportingInfo extends AdverseEventSupportingInfo {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4801,8 +4945,8 @@ abstract class _AdverseEventSupportingInfo extends AdverseEventSupportingInfo {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [itemReference] Relevant past history for the subject. In a clinical care
   ///  context, an example being a patient had an adverse event following a
@@ -4814,8 +4958,8 @@ abstract class _AdverseEventSupportingInfo extends AdverseEventSupportingInfo {
   ///  clinical note, staff list, or material safety data sheet (MSDS).
   ///  Supporting information is not a contributing factor, preventive action, or
   ///  mitigating action.
-  Reference? get itemReference;
   @override
+  Reference? get itemReference;
 
   /// [itemCodeableConcept] Relevant past history for the subject. In a clinical
   ///  care context, an example being a patient had an adverse event following a
@@ -4827,9 +4971,13 @@ abstract class _AdverseEventSupportingInfo extends AdverseEventSupportingInfo {
   ///  clinical note, staff list, or material safety data sheet (MSDS).
   ///  Supporting information is not a contributing factor, preventive action, or
   ///  mitigating action.
-  CodeableConcept? get itemCodeableConcept;
   @override
-  @JsonKey(ignore: true)
+  CodeableConcept? get itemCodeableConcept;
+
+  /// Create a copy of AdverseEventSupportingInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AdverseEventSupportingInfoImplCopyWith<_$AdverseEventSupportingInfoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

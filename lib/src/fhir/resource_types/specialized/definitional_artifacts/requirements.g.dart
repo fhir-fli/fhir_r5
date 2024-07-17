@@ -142,77 +142,56 @@ _$RequirementsImpl _$$RequirementsImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$RequirementsImplToJson(_$RequirementsImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('url', instance.url?.toJson());
-  writeNotNull('_url', instance.urlElement?.toJson());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('version', instance.version);
-  writeNotNull('_version', instance.versionElement?.toJson());
-  writeNotNull('versionAlgorithmString', instance.versionAlgorithmString);
-  writeNotNull('_versionAlgorithmString',
-      instance.versionAlgorithmStringElement?.toJson());
-  writeNotNull(
-      'versionAlgorithmCoding', instance.versionAlgorithmCoding?.toJson());
-  writeNotNull('name', instance.name);
-  writeNotNull('_name', instance.nameElement?.toJson());
-  writeNotNull('title', instance.title);
-  writeNotNull('_title', instance.titleElement?.toJson());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('experimental', instance.experimental?.toJson());
-  writeNotNull('_experimental', instance.experimentalElement?.toJson());
-  writeNotNull('date', instance.date?.toJson());
-  writeNotNull('_date', instance.dateElement?.toJson());
-  writeNotNull('publisher', instance.publisher);
-  writeNotNull('_publisher', instance.publisherElement?.toJson());
-  writeNotNull('contact', instance.contact?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull(
-      'useContext', instance.useContext?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'jurisdiction', instance.jurisdiction?.map((e) => e.toJson()).toList());
-  writeNotNull('purpose', instance.purpose?.toJson());
-  writeNotNull('_purpose', instance.purposeElement?.toJson());
-  writeNotNull('copyright', instance.copyright?.toJson());
-  writeNotNull('_copyright', instance.copyrightElement?.toJson());
-  writeNotNull('copyrightLabel', instance.copyrightLabel);
-  writeNotNull('_copyrightLabel', instance.copyrightLabelElement?.toJson());
-  writeNotNull(
-      'derivedFrom', instance.derivedFrom?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'reference', instance.reference?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      '_reference', instance.referenceElement?.map((e) => e.toJson()).toList());
-  writeNotNull('actor', instance.actor?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'statement', instance.statement?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$RequirementsImplToJson(_$RequirementsImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'url': instance.url,
+      '_url': instance.urlElement,
+      'identifier': instance.identifier,
+      'version': instance.version,
+      '_version': instance.versionElement,
+      'versionAlgorithmString': instance.versionAlgorithmString,
+      '_versionAlgorithmString': instance.versionAlgorithmStringElement,
+      'versionAlgorithmCoding': instance.versionAlgorithmCoding,
+      'name': instance.name,
+      '_name': instance.nameElement,
+      'title': instance.title,
+      '_title': instance.titleElement,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'experimental': instance.experimental,
+      '_experimental': instance.experimentalElement,
+      'date': instance.date,
+      '_date': instance.dateElement,
+      'publisher': instance.publisher,
+      '_publisher': instance.publisherElement,
+      'contact': instance.contact,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'useContext': instance.useContext,
+      'jurisdiction': instance.jurisdiction,
+      'purpose': instance.purpose,
+      '_purpose': instance.purposeElement,
+      'copyright': instance.copyright,
+      '_copyright': instance.copyrightElement,
+      'copyrightLabel': instance.copyrightLabel,
+      '_copyrightLabel': instance.copyrightLabelElement,
+      'derivedFrom': instance.derivedFrom,
+      'reference': instance.reference,
+      '_reference': instance.referenceElement,
+      'actor': instance.actor,
+      'statement': instance.statement,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -441,44 +420,28 @@ _$RequirementsStatementImpl _$$RequirementsStatementImplFromJson(
     );
 
 Map<String, dynamic> _$$RequirementsStatementImplToJson(
-    _$RequirementsStatementImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('key', instance.key?.toJson());
-  writeNotNull('_key', instance.keyElement?.toJson());
-  writeNotNull('label', instance.label);
-  writeNotNull('_label', instance.labelElement?.toJson());
-  writeNotNull(
-      'conformance', instance.conformance?.map((e) => e.toJson()).toList());
-  writeNotNull('_conformance',
-      instance.conformanceElement?.map((e) => e.toJson()).toList());
-  writeNotNull('conditionality', instance.conditionality?.toJson());
-  writeNotNull('_conditionality', instance.conditionalityElement?.toJson());
-  writeNotNull('requirement', instance.requirement?.toJson());
-  writeNotNull('_requirement', instance.requirementElement?.toJson());
-  writeNotNull('derivedFrom', instance.derivedFrom);
-  writeNotNull('_derivedFrom', instance.derivedFromElement?.toJson());
-  writeNotNull('parent', instance.parent);
-  writeNotNull('_parent', instance.parentElement?.toJson());
-  writeNotNull(
-      'satisfiedBy', instance.satisfiedBy?.map((e) => e.toJson()).toList());
-  writeNotNull('_satisfiedBy',
-      instance.satisfiedByElement?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'reference', instance.reference?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      '_reference', instance.referenceElement?.map((e) => e.toJson()).toList());
-  writeNotNull('source', instance.source?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$RequirementsStatementImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'key': instance.key,
+      '_key': instance.keyElement,
+      'label': instance.label,
+      '_label': instance.labelElement,
+      'conformance': instance.conformance,
+      '_conformance': instance.conformanceElement,
+      'conditionality': instance.conditionality,
+      '_conditionality': instance.conditionalityElement,
+      'requirement': instance.requirement,
+      '_requirement': instance.requirementElement,
+      'derivedFrom': instance.derivedFrom,
+      '_derivedFrom': instance.derivedFromElement,
+      'parent': instance.parent,
+      '_parent': instance.parentElement,
+      'satisfiedBy': instance.satisfiedBy,
+      '_satisfiedBy': instance.satisfiedByElement,
+      'reference': instance.reference,
+      '_reference': instance.referenceElement,
+      'source': instance.source,
+    };

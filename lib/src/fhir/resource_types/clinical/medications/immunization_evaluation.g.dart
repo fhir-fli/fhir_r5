@@ -92,53 +92,39 @@ _$ImmunizationEvaluationImpl _$$ImmunizationEvaluationImplFromJson(
     );
 
 Map<String, dynamic> _$$ImmunizationEvaluationImplToJson(
-    _$ImmunizationEvaluationImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  val['patient'] = instance.patient.toJson();
-  writeNotNull('date', instance.date?.toJson());
-  writeNotNull('_date', instance.dateElement?.toJson());
-  writeNotNull('authority', instance.authority?.toJson());
-  val['targetDisease'] = instance.targetDisease.toJson();
-  val['immunizationEvent'] = instance.immunizationEvent.toJson();
-  val['doseStatus'] = instance.doseStatus.toJson();
-  writeNotNull('doseStatusReason',
-      instance.doseStatusReason?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('series', instance.series);
-  writeNotNull('_series', instance.seriesElement?.toJson());
-  writeNotNull('doseNumber', instance.doseNumber);
-  writeNotNull('_doseNumber', instance.doseNumberElement?.toJson());
-  writeNotNull('seriesDoses', instance.seriesDoses);
-  writeNotNull('_seriesDoses', instance.seriesDosesElement?.toJson());
-  return val;
-}
+        _$ImmunizationEvaluationImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'patient': instance.patient,
+      'date': instance.date,
+      '_date': instance.dateElement,
+      'authority': instance.authority,
+      'targetDisease': instance.targetDisease,
+      'immunizationEvent': instance.immunizationEvent,
+      'doseStatus': instance.doseStatus,
+      'doseStatusReason': instance.doseStatusReason,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'series': instance.series,
+      '_series': instance.seriesElement,
+      'doseNumber': instance.doseNumber,
+      '_doseNumber': instance.doseNumberElement,
+      'seriesDoses': instance.seriesDoses,
+      '_seriesDoses': instance.seriesDosesElement,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',

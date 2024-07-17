@@ -316,7 +316,7 @@ class Practitioner with _$Practitioner implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [PractitionerQualification] A person who is directly or indirectly involved

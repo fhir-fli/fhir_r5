@@ -468,7 +468,7 @@ class CompartmentDefinition
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [CompartmentDefinitionResource] A compartment definition that defines how

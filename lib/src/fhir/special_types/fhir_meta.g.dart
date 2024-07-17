@@ -40,26 +40,17 @@ _$FhirMetaImpl _$$FhirMetaImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$FhirMetaImplToJson(_$FhirMetaImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('versionId', instance.versionId?.toJson());
-  writeNotNull('_versionId', instance.versionIdElement?.toJson());
-  writeNotNull('lastUpdated', instance.lastUpdated?.toJson());
-  writeNotNull('_lastUpdated', instance.lastUpdatedElement?.toJson());
-  writeNotNull('source', instance.source?.toJson());
-  writeNotNull('_source', instance.sourceElement?.toJson());
-  writeNotNull('profile', instance.profile?.map((e) => e.toJson()).toList());
-  writeNotNull('security', instance.security?.map((e) => e.toJson()).toList());
-  writeNotNull('tag', instance.tag?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$FhirMetaImplToJson(_$FhirMetaImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'versionId': instance.versionId,
+      '_versionId': instance.versionIdElement,
+      'lastUpdated': instance.lastUpdated,
+      '_lastUpdated': instance.lastUpdatedElement,
+      'source': instance.source,
+      '_source': instance.sourceElement,
+      'profile': instance.profile,
+      'security': instance.security,
+      'tag': instance.tag,
+    };

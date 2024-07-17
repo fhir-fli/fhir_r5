@@ -179,8 +179,12 @@ mixin _$SubstanceSourceMaterial {
   List<SubstanceSourceMaterialPartDescription>? get partDescription =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this SubstanceSourceMaterial to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SubstanceSourceMaterial
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SubstanceSourceMaterialCopyWith<SubstanceSourceMaterial> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -244,6 +248,8 @@ class _$SubstanceSourceMaterialCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubstanceSourceMaterial
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -387,6 +393,8 @@ class _$SubstanceSourceMaterialCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of SubstanceSourceMaterial
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -399,6 +407,8 @@ class _$SubstanceSourceMaterialCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceSourceMaterial
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -411,6 +421,8 @@ class _$SubstanceSourceMaterialCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceSourceMaterial
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get sourceMaterialClass {
@@ -423,6 +435,8 @@ class _$SubstanceSourceMaterialCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceSourceMaterial
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get sourceMaterialType {
@@ -435,6 +449,8 @@ class _$SubstanceSourceMaterialCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceSourceMaterial
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get sourceMaterialState {
@@ -447,6 +463,8 @@ class _$SubstanceSourceMaterialCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceSourceMaterial
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get organismId {
@@ -459,6 +477,8 @@ class _$SubstanceSourceMaterialCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceSourceMaterial
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get developmentStage {
@@ -471,6 +491,8 @@ class _$SubstanceSourceMaterialCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceSourceMaterial
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SubstanceSourceMaterialOrganismCopyWith<$Res>? get organism {
@@ -554,6 +576,8 @@ class __$$SubstanceSourceMaterialImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceSourceMaterialImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubstanceSourceMaterial
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1132,7 +1156,7 @@ class _$SubstanceSourceMaterialImpl extends _SubstanceSourceMaterial {
                 .equals(other._partDescription, _partDescription));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1165,7 +1189,9 @@ class _$SubstanceSourceMaterialImpl extends _SubstanceSourceMaterial {
         const DeepCollectionEquality().hash(_partDescription)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SubstanceSourceMaterial
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceSourceMaterialImplCopyWith<_$SubstanceSourceMaterialImpl>
@@ -1221,44 +1247,42 @@ abstract class _SubstanceSourceMaterial extends SubstanceSourceMaterial {
   factory _SubstanceSourceMaterial.fromJson(Map<String, dynamic> json) =
       _$SubstanceSourceMaterialImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a SubstanceSourceMaterial resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.SubstanceSourceMaterial)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1266,16 +1290,16 @@ abstract class _SubstanceSourceMaterial extends SubstanceSourceMaterial {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1283,9 +1307,9 @@ abstract class _SubstanceSourceMaterial extends SubstanceSourceMaterial {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1299,80 +1323,80 @@ abstract class _SubstanceSourceMaterial extends SubstanceSourceMaterial {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [sourceMaterialClass] General high level classification of the source
   ///  material specific to the origin of the material.
-  CodeableConcept? get sourceMaterialClass;
   @override
+  CodeableConcept? get sourceMaterialClass;
 
   /// [sourceMaterialType] The type of the source material shall be specified
   ///  based on a controlled vocabulary. For vaccines, this subclause refers to
   ///  the class of infectious agent.
-  CodeableConcept? get sourceMaterialType;
   @override
+  CodeableConcept? get sourceMaterialType;
 
   /// [sourceMaterialState] The state of the source material when extracted.
-  CodeableConcept? get sourceMaterialState;
   @override
+  CodeableConcept? get sourceMaterialState;
 
   /// [organismId] The unique identifier associated with the source material
   ///  parent organism shall be specified.
-  Identifier? get organismId;
   @override
+  Identifier? get organismId;
 
   /// [organismName] The organism accepted Scientific name shall be provided
   ///  based on the organism taxonomy.
-  String? get organismName;
   @override
+  String? get organismName;
 
   /// [organismNameElement] ("_organismName") Extensions for organismName
+  @override
   @JsonKey(name: '_organismName')
   PrimitiveElement? get organismNameElement;
-  @override
 
   /// [parentSubstanceId] The parent of the herbal drug Ginkgo biloba, Leaf is
   ///  the substance ID of the substance (fresh) of Ginkgo biloba L. or Ginkgo
   ///  biloba L. (Whole plant).
-  List<Identifier>? get parentSubstanceId;
   @override
+  List<Identifier>? get parentSubstanceId;
 
   /// [parentSubstanceName] The parent substance of the Herbal Drug, or Herbal
   ///  preparation.
-  List<String>? get parentSubstanceName;
   @override
+  List<String>? get parentSubstanceName;
 
   /// [parentSubstanceNameElement] ("_parentSubstanceName") Extensions for
   ///  parentSubstanceName
+  @override
   @JsonKey(name: '_parentSubstanceName')
   List<PrimitiveElement>? get parentSubstanceNameElement;
-  @override
 
   /// [countryOfOrigin] The country where the plant material is harvested or the
   ///  countries where the plasma is sourced from as laid down in accordance with
   ///  the Plasma Master File. For “Plasma-derived substances” the attribute
   ///  country of origin provides information about the countries used for the
   ///  manufacturing of the Cryopoor plama or Crioprecipitate.
-  List<CodeableConcept>? get countryOfOrigin;
   @override
+  List<CodeableConcept>? get countryOfOrigin;
 
   /// [geographicalLocation] The place/region where the plant is harvested or the
   ///  places/regions where the animal source material has its habitat.
-  List<String>? get geographicalLocation;
   @override
+  List<String>? get geographicalLocation;
 
   /// [geographicalLocationElement] ("_geographicalLocation") Extensions for
   ///  geographicalLocation
+  @override
   @JsonKey(name: '_geographicalLocation')
   List<PrimitiveElement>? get geographicalLocationElement;
-  @override
 
   /// [developmentStage] Stage of life for animals, plants, insects and
   ///  microorganisms. This information shall be provided only when the substance
   ///  is significantly different in these stages (e.g. foetal bovine serum).
-  CodeableConcept? get developmentStage;
   @override
+  CodeableConcept? get developmentStage;
 
   /// [fractionDescription] Many complex materials are fractions of parts of
   ///  plants, animals, or minerals. Fraction elements are often necessary to
@@ -1383,20 +1407,24 @@ abstract class _SubstanceSourceMaterial extends SubstanceSourceMaterial {
   ///  captured at the Specified Substance Group 1 information level. For
   ///  plasma-derived products fraction information will be captured at the
   ///  Substance and the Specified Substance Group 1 levels.
-  List<SubstanceSourceMaterialFractionDescription>? get fractionDescription;
   @override
+  List<SubstanceSourceMaterialFractionDescription>? get fractionDescription;
 
   /// [organism] This subclause describes the organism which the substance is
   ///  derived from. For vaccines, the parent organism shall be specified based
   ///  on these subclause elements. As an example, full taxonomy will be
   ///  described for the Substance Name: ., Leaf.
-  SubstanceSourceMaterialOrganism? get organism;
   @override
+  SubstanceSourceMaterialOrganism? get organism;
 
   /// [partDescription] To do.
-  List<SubstanceSourceMaterialPartDescription>? get partDescription;
   @override
-  @JsonKey(ignore: true)
+  List<SubstanceSourceMaterialPartDescription>? get partDescription;
+
+  /// Create a copy of SubstanceSourceMaterial
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SubstanceSourceMaterialImplCopyWith<_$SubstanceSourceMaterialImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1450,8 +1478,12 @@ mixin _$SubstanceSourceMaterialFractionDescription {
   ///  (liquid/dry) is described in Specified Substance Group 1.
   CodeableConcept? get materialType => throw _privateConstructorUsedError;
 
+  /// Serializes this SubstanceSourceMaterialFractionDescription to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SubstanceSourceMaterialFractionDescription
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SubstanceSourceMaterialFractionDescriptionCopyWith<
           SubstanceSourceMaterialFractionDescription>
       get copyWith => throw _privateConstructorUsedError;
@@ -1488,6 +1520,8 @@ class _$SubstanceSourceMaterialFractionDescriptionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubstanceSourceMaterialFractionDescription
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1526,6 +1560,8 @@ class _$SubstanceSourceMaterialFractionDescriptionCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of SubstanceSourceMaterialFractionDescription
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get materialType {
@@ -1571,6 +1607,8 @@ class __$$SubstanceSourceMaterialFractionDescriptionImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceSourceMaterialFractionDescriptionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubstanceSourceMaterialFractionDescription
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1733,7 +1771,7 @@ class _$SubstanceSourceMaterialFractionDescriptionImpl
                 other.materialType == materialType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1744,7 +1782,9 @@ class _$SubstanceSourceMaterialFractionDescriptionImpl
       fractionElement,
       materialType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SubstanceSourceMaterialFractionDescription
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceSourceMaterialFractionDescriptionImplCopyWith<
@@ -1778,12 +1818,10 @@ abstract class _SubstanceSourceMaterialFractionDescription
           Map<String, dynamic> json) =
       _$SubstanceSourceMaterialFractionDescriptionImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1791,9 +1829,9 @@ abstract class _SubstanceSourceMaterialFractionDescription
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1807,25 +1845,29 @@ abstract class _SubstanceSourceMaterialFractionDescription
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [fraction] This element is capturing information about the fraction of a
   ///  plant part, or human plasma for fractionation.
-  String? get fraction;
   @override
+  String? get fraction;
 
   /// [fractionElement] ("_fraction") Extensions for fraction
+  @override
   @JsonKey(name: '_fraction')
   PrimitiveElement? get fractionElement;
-  @override
 
   /// [materialType] The specific type of the material constituting the
   ///  component. For Herbal preparations the particulars of the extracts
   ///  (liquid/dry) is described in Specified Substance Group 1.
-  CodeableConcept? get materialType;
   @override
-  @JsonKey(ignore: true)
+  CodeableConcept? get materialType;
+
+  /// Create a copy of SubstanceSourceMaterialFractionDescription
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SubstanceSourceMaterialFractionDescriptionImplCopyWith<
           _$SubstanceSourceMaterialFractionDescriptionImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1907,8 +1949,12 @@ mixin _$SubstanceSourceMaterialOrganism {
   SubstanceSourceMaterialOrganismGeneral? get organismGeneral =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this SubstanceSourceMaterialOrganism to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SubstanceSourceMaterialOrganism
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SubstanceSourceMaterialOrganismCopyWith<SubstanceSourceMaterialOrganism>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1955,6 +2001,8 @@ class _$SubstanceSourceMaterialOrganismCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubstanceSourceMaterialOrganism
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2024,6 +2072,8 @@ class _$SubstanceSourceMaterialOrganismCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of SubstanceSourceMaterialOrganism
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get family {
@@ -2036,6 +2086,8 @@ class _$SubstanceSourceMaterialOrganismCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceSourceMaterialOrganism
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get genus {
@@ -2048,6 +2100,8 @@ class _$SubstanceSourceMaterialOrganismCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceSourceMaterialOrganism
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get species {
@@ -2060,6 +2114,8 @@ class _$SubstanceSourceMaterialOrganismCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceSourceMaterialOrganism
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get intraspecificType {
@@ -2072,6 +2128,8 @@ class _$SubstanceSourceMaterialOrganismCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceSourceMaterialOrganism
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SubstanceSourceMaterialHybridCopyWith<$Res>? get hybrid {
@@ -2085,6 +2143,8 @@ class _$SubstanceSourceMaterialOrganismCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceSourceMaterialOrganism
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SubstanceSourceMaterialOrganismGeneralCopyWith<$Res>? get organismGeneral {
@@ -2147,6 +2207,8 @@ class __$$SubstanceSourceMaterialOrganismImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceSourceMaterialOrganismImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubstanceSourceMaterialOrganism
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2397,7 +2459,7 @@ class _$SubstanceSourceMaterialOrganismImpl
                 other.organismGeneral == organismGeneral));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2414,7 +2476,9 @@ class _$SubstanceSourceMaterialOrganismImpl
       hybrid,
       organismGeneral);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SubstanceSourceMaterialOrganism
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceSourceMaterialOrganismImplCopyWith<
@@ -2452,12 +2516,10 @@ abstract class _SubstanceSourceMaterialOrganism
   factory _SubstanceSourceMaterialOrganism.fromJson(Map<String, dynamic> json) =
       _$SubstanceSourceMaterialOrganismImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2465,9 +2527,9 @@ abstract class _SubstanceSourceMaterialOrganism
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2481,55 +2543,59 @@ abstract class _SubstanceSourceMaterialOrganism
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [family] The family of an organism shall be specified.
-  CodeableConcept? get family;
   @override
+  CodeableConcept? get family;
 
   /// [genus] The genus of an organism shall be specified; refers to the Latin
   ///  epithet of the genus element of the plant/animal scientific name; it is
   ///  present in names for genera, species and infraspecies.
-  CodeableConcept? get genus;
   @override
+  CodeableConcept? get genus;
 
   /// [species] The species of an organism shall be specified; refers to the
   ///  Latin epithet of the species of the plant/animal; it is present in names
   ///  for species and infraspecies.
-  CodeableConcept? get species;
   @override
+  CodeableConcept? get species;
 
   /// [intraspecificType] The Intraspecific type of an organism shall be
   ///  specified.
-  CodeableConcept? get intraspecificType;
   @override
+  CodeableConcept? get intraspecificType;
 
   /// [intraspecificDescription] The intraspecific description of an organism
   ///  shall be specified based on a controlled vocabulary. For Influenza
   ///  Vaccine, the intraspecific description shall contain the syntax of the
   ///  antigen in line with the WHO convention.
-  String? get intraspecificDescription;
   @override
+  String? get intraspecificDescription;
 
   /// [intraspecificDescriptionElement] ("_intraspecificDescription") Extensions
   ///  for intraspecificDescription
+  @override
   @JsonKey(name: '_intraspecificDescription')
   PrimitiveElement? get intraspecificDescriptionElement;
-  @override
 
   /// [author] 4.9.13.6.1 Author type (Conditional).
-  List<SubstanceSourceMaterialAuthor>? get author;
   @override
+  List<SubstanceSourceMaterialAuthor>? get author;
 
   /// [hybrid] 4.9.13.8.1 Hybrid species maternal organism ID (Optional).
-  SubstanceSourceMaterialHybrid? get hybrid;
   @override
+  SubstanceSourceMaterialHybrid? get hybrid;
 
   /// [organismGeneral] 4.9.13.7.1 Kingdom (Conditional).
-  SubstanceSourceMaterialOrganismGeneral? get organismGeneral;
   @override
-  @JsonKey(ignore: true)
+  SubstanceSourceMaterialOrganismGeneral? get organismGeneral;
+
+  /// Create a copy of SubstanceSourceMaterialOrganism
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SubstanceSourceMaterialOrganismImplCopyWith<
           _$SubstanceSourceMaterialOrganismImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2589,8 +2655,12 @@ mixin _$SubstanceSourceMaterialAuthor {
   PrimitiveElement? get authorDescriptionElement =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this SubstanceSourceMaterialAuthor to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SubstanceSourceMaterialAuthor
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SubstanceSourceMaterialAuthorCopyWith<SubstanceSourceMaterialAuthor>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2626,6 +2696,8 @@ class _$SubstanceSourceMaterialAuthorCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubstanceSourceMaterialAuthor
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2664,6 +2736,8 @@ class _$SubstanceSourceMaterialAuthorCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of SubstanceSourceMaterialAuthor
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get authorType {
@@ -2709,6 +2783,8 @@ class __$$SubstanceSourceMaterialAuthorImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceSourceMaterialAuthorImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubstanceSourceMaterialAuthor
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2877,7 +2953,7 @@ class _$SubstanceSourceMaterialAuthorImpl
                 other.authorDescriptionElement == authorDescriptionElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2888,7 +2964,9 @@ class _$SubstanceSourceMaterialAuthorImpl
       authorDescription,
       authorDescriptionElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SubstanceSourceMaterialAuthor
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceSourceMaterialAuthorImplCopyWith<
@@ -2920,12 +2998,10 @@ abstract class _SubstanceSourceMaterialAuthor
   factory _SubstanceSourceMaterialAuthor.fromJson(Map<String, dynamic> json) =
       _$SubstanceSourceMaterialAuthorImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2933,9 +3009,9 @@ abstract class _SubstanceSourceMaterialAuthor
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2949,30 +3025,34 @@ abstract class _SubstanceSourceMaterialAuthor
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [authorType] The type of author of an organism species shall be specified.
   ///  The parenthetical author of an organism species refers to the first author
   ///  who published the plant/animal name (of any rank). The primary author of
   ///  an organism species refers to the first author(s), who validly published
   ///  the plant/animal name.
-  CodeableConcept? get authorType;
   @override
+  CodeableConcept? get authorType;
 
   /// [authorDescription] The author of an organism species shall be specified.
   ///  The author year of an organism shall also be specified when applicable;
   ///  refers to the year in which the first author(s) published the
   ///  infraspecific plant/animal name (of any rank).
-  String? get authorDescription;
   @override
+  String? get authorDescription;
 
   /// [authorDescriptionElement] ("_authorDescription") Extensions for
   ///  authorDescription
+  @override
   @JsonKey(name: '_authorDescription')
   PrimitiveElement? get authorDescriptionElement;
+
+  /// Create a copy of SubstanceSourceMaterialAuthor
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SubstanceSourceMaterialAuthorImplCopyWith<
           _$SubstanceSourceMaterialAuthorImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3060,8 +3140,12 @@ mixin _$SubstanceSourceMaterialHybrid {
   /// [hybridType] The hybrid type of an organism shall be specified.
   CodeableConcept? get hybridType => throw _privateConstructorUsedError;
 
+  /// Serializes this SubstanceSourceMaterialHybrid to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SubstanceSourceMaterialHybrid
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SubstanceSourceMaterialHybridCopyWith<SubstanceSourceMaterialHybrid>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3106,6 +3190,8 @@ class _$SubstanceSourceMaterialHybridCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubstanceSourceMaterialHybrid
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3174,6 +3260,8 @@ class _$SubstanceSourceMaterialHybridCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of SubstanceSourceMaterialHybrid
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get hybridType {
@@ -3228,6 +3316,8 @@ class __$$SubstanceSourceMaterialHybridImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceSourceMaterialHybridImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubstanceSourceMaterialHybrid
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3480,7 +3570,7 @@ class _$SubstanceSourceMaterialHybridImpl
                 other.hybridType == hybridType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3497,7 +3587,9 @@ class _$SubstanceSourceMaterialHybridImpl
       paternalOrganismNameElement,
       hybridType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SubstanceSourceMaterialHybrid
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceSourceMaterialHybridImplCopyWith<
@@ -3537,12 +3629,10 @@ abstract class _SubstanceSourceMaterialHybrid
   factory _SubstanceSourceMaterialHybrid.fromJson(Map<String, dynamic> json) =
       _$SubstanceSourceMaterialHybridImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3550,9 +3640,9 @@ abstract class _SubstanceSourceMaterialHybrid
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3566,61 +3656,65 @@ abstract class _SubstanceSourceMaterialHybrid
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [maternalOrganismId] The identifier of the maternal species constituting
   ///  the hybrid organism shall be specified based on a controlled vocabulary.
   ///  For plants, the parents aren’t always known, and it is unlikely that it
   ///  will be known which is maternal and which is paternal.
-  String? get maternalOrganismId;
   @override
+  String? get maternalOrganismId;
 
   /// [maternalOrganismIdElement] ("_maternalOrganismId") Extensions for
   ///  maternalOrganismId
+  @override
   @JsonKey(name: '_maternalOrganismId')
   PrimitiveElement? get maternalOrganismIdElement;
-  @override
 
   /// [maternalOrganismName] The name of the maternal species constituting the
   ///  hybrid organism shall be specified. For plants, the parents aren’t always
   ///  known, and it is unlikely that it will be known which is maternal and
   ///  which is paternal.
-  String? get maternalOrganismName;
   @override
+  String? get maternalOrganismName;
 
   /// [maternalOrganismNameElement] ("_maternalOrganismName") Extensions for
   ///  maternalOrganismName
+  @override
   @JsonKey(name: '_maternalOrganismName')
   PrimitiveElement? get maternalOrganismNameElement;
-  @override
 
   /// [paternalOrganismId] The identifier of the paternal species constituting
   ///  the hybrid organism shall be specified based on a controlled vocabulary.
-  String? get paternalOrganismId;
   @override
+  String? get paternalOrganismId;
 
   /// [paternalOrganismIdElement] ("_paternalOrganismId") Extensions for
   ///  paternalOrganismId
+  @override
   @JsonKey(name: '_paternalOrganismId')
   PrimitiveElement? get paternalOrganismIdElement;
-  @override
 
   /// [paternalOrganismName] The name of the paternal species constituting the
   ///  hybrid organism shall be specified.
-  String? get paternalOrganismName;
   @override
+  String? get paternalOrganismName;
 
   /// [paternalOrganismNameElement] ("_paternalOrganismName") Extensions for
   ///  paternalOrganismName
+  @override
   @JsonKey(name: '_paternalOrganismName')
   PrimitiveElement? get paternalOrganismNameElement;
-  @override
 
   /// [hybridType] The hybrid type of an organism shall be specified.
-  CodeableConcept? get hybridType;
   @override
-  @JsonKey(ignore: true)
+  CodeableConcept? get hybridType;
+
+  /// Create a copy of SubstanceSourceMaterialHybrid
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SubstanceSourceMaterialHybridImplCopyWith<
           _$SubstanceSourceMaterialHybridImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3675,8 +3769,12 @@ mixin _$SubstanceSourceMaterialOrganismGeneral {
   /// [order] The order of an organism shall be specified,.
   CodeableConcept? get order => throw _privateConstructorUsedError;
 
+  /// Serializes this SubstanceSourceMaterialOrganismGeneral to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SubstanceSourceMaterialOrganismGeneral
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SubstanceSourceMaterialOrganismGeneralCopyWith<
           SubstanceSourceMaterialOrganismGeneral>
       get copyWith => throw _privateConstructorUsedError;
@@ -3716,6 +3814,8 @@ class _$SubstanceSourceMaterialOrganismGeneralCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubstanceSourceMaterialOrganismGeneral
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3759,6 +3859,8 @@ class _$SubstanceSourceMaterialOrganismGeneralCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of SubstanceSourceMaterialOrganismGeneral
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get kingdom {
@@ -3771,6 +3873,8 @@ class _$SubstanceSourceMaterialOrganismGeneralCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceSourceMaterialOrganismGeneral
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get phylum {
@@ -3783,6 +3887,8 @@ class _$SubstanceSourceMaterialOrganismGeneralCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceSourceMaterialOrganismGeneral
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get class_ {
@@ -3795,6 +3901,8 @@ class _$SubstanceSourceMaterialOrganismGeneralCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceSourceMaterialOrganismGeneral
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get order {
@@ -3846,6 +3954,8 @@ class __$$SubstanceSourceMaterialOrganismGeneralImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceSourceMaterialOrganismGeneralImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubstanceSourceMaterialOrganismGeneral
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4013,7 +4123,7 @@ class _$SubstanceSourceMaterialOrganismGeneralImpl
             (identical(other.order, order) || other.order == order));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4025,7 +4135,9 @@ class _$SubstanceSourceMaterialOrganismGeneralImpl
       class_,
       order);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SubstanceSourceMaterialOrganismGeneral
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceSourceMaterialOrganismGeneralImplCopyWith<
@@ -4059,12 +4171,10 @@ abstract class _SubstanceSourceMaterialOrganismGeneral
           Map<String, dynamic> json) =
       _$SubstanceSourceMaterialOrganismGeneralImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4072,9 +4182,9 @@ abstract class _SubstanceSourceMaterialOrganismGeneral
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4088,26 +4198,30 @@ abstract class _SubstanceSourceMaterialOrganismGeneral
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [kingdom] The kingdom of an organism shall be specified.
-  CodeableConcept? get kingdom;
   @override
+  CodeableConcept? get kingdom;
 
   /// [phylum] The phylum of an organism shall be specified.
-  CodeableConcept? get phylum;
   @override
+  CodeableConcept? get phylum;
 
   /// [class_] ("class") The class of an organism shall be specified.
+  @override
   @JsonKey(name: 'class')
   CodeableConcept? get class_;
-  @override
 
   /// [order] The order of an organism shall be specified,.
-  CodeableConcept? get order;
   @override
-  @JsonKey(ignore: true)
+  CodeableConcept? get order;
+
+  /// Create a copy of SubstanceSourceMaterialOrganismGeneral
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SubstanceSourceMaterialOrganismGeneralImplCopyWith<
           _$SubstanceSourceMaterialOrganismGeneralImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4159,8 +4273,12 @@ mixin _$SubstanceSourceMaterialPartDescription {
   ///  alternative locations may apply.
   CodeableConcept? get partLocation => throw _privateConstructorUsedError;
 
+  /// Serializes this SubstanceSourceMaterialPartDescription to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SubstanceSourceMaterialPartDescription
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SubstanceSourceMaterialPartDescriptionCopyWith<
           SubstanceSourceMaterialPartDescription>
       get copyWith => throw _privateConstructorUsedError;
@@ -4196,6 +4314,8 @@ class _$SubstanceSourceMaterialPartDescriptionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubstanceSourceMaterialPartDescription
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4229,6 +4349,8 @@ class _$SubstanceSourceMaterialPartDescriptionCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of SubstanceSourceMaterialPartDescription
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get part_ {
@@ -4241,6 +4363,8 @@ class _$SubstanceSourceMaterialPartDescriptionCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceSourceMaterialPartDescription
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get partLocation {
@@ -4286,6 +4410,8 @@ class __$$SubstanceSourceMaterialPartDescriptionImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceSourceMaterialPartDescriptionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubstanceSourceMaterialPartDescription
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4435,7 +4561,7 @@ class _$SubstanceSourceMaterialPartDescriptionImpl
                 other.partLocation == partLocation));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4445,7 +4571,9 @@ class _$SubstanceSourceMaterialPartDescriptionImpl
       part_,
       partLocation);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SubstanceSourceMaterialPartDescription
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceSourceMaterialPartDescriptionImplCopyWith<
@@ -4477,12 +4605,10 @@ abstract class _SubstanceSourceMaterialPartDescription
           Map<String, dynamic> json) =
       _$SubstanceSourceMaterialPartDescriptionImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4490,9 +4616,9 @@ abstract class _SubstanceSourceMaterialPartDescription
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4506,21 +4632,25 @@ abstract class _SubstanceSourceMaterialPartDescription
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [part_] ("part") Entity of anatomical origin of source material within an
   ///  organism.
+  @override
   @JsonKey(name: 'part')
   CodeableConcept? get part_;
-  @override
 
   /// [partLocation] The detailed anatomic location when the part can be
   ///  extracted from different anatomical locations of the organism. Multiple
   ///  alternative locations may apply.
-  CodeableConcept? get partLocation;
   @override
-  @JsonKey(ignore: true)
+  CodeableConcept? get partLocation;
+
+  /// Create a copy of SubstanceSourceMaterialPartDescription
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SubstanceSourceMaterialPartDescriptionImplCopyWith<
           _$SubstanceSourceMaterialPartDescriptionImpl>
       get copyWith => throw _privateConstructorUsedError;

@@ -339,7 +339,7 @@ class BiologicallyDerivedProductDispense
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [BiologicallyDerivedProductDispensePerformer] This resource reflects an

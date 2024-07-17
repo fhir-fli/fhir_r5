@@ -16,7 +16,8 @@ part 'substance_reference_information.g.dart';
 /// [SubstanceReferenceInformation] FhirTodo.
 @freezed
 class SubstanceReferenceInformation
-    with _$SubstanceReferenceInformation implements DomainResource {
+    with _$SubstanceReferenceInformation
+    implements DomainResource {
   /// [SubstanceReferenceInformation] FhirTodo.
   const SubstanceReferenceInformation._();
 
@@ -227,7 +228,7 @@ class SubstanceReferenceInformation
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [SubstanceReferenceInformationGene] FhirTodo.

@@ -292,7 +292,7 @@ class RelatedPerson with _$RelatedPerson implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [RelatedPersonCommunication] Information about a person that is involved in

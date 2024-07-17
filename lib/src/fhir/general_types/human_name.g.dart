@@ -44,36 +44,24 @@ _$HumanNameImpl _$$HumanNameImplFromJson(Map<String, dynamic> json) =>
           : Period.fromJson(json['period'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$HumanNameImplToJson(_$HumanNameImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('use', instance.use?.toJson());
-  writeNotNull('_use', instance.useElement?.toJson());
-  writeNotNull('text', instance.text);
-  writeNotNull('_text', instance.textElement?.toJson());
-  writeNotNull('family', instance.family);
-  writeNotNull('_family', instance.familyElement?.toJson());
-  writeNotNull('given', instance.given);
-  writeNotNull(
-      '_given', instance.givenElement?.map((e) => e.toJson()).toList());
-  writeNotNull('prefix', instance.prefix);
-  writeNotNull(
-      '_prefix', instance.prefixElement?.map((e) => e.toJson()).toList());
-  writeNotNull('suffix', instance.suffix);
-  writeNotNull(
-      '_suffix', instance.suffixElement?.map((e) => e.toJson()).toList());
-  writeNotNull('period', instance.period?.toJson());
-  return val;
-}
+Map<String, dynamic> _$$HumanNameImplToJson(_$HumanNameImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'use': instance.use,
+      '_use': instance.useElement,
+      'text': instance.text,
+      '_text': instance.textElement,
+      'family': instance.family,
+      '_family': instance.familyElement,
+      'given': instance.given,
+      '_given': instance.givenElement,
+      'prefix': instance.prefix,
+      '_prefix': instance.prefixElement,
+      'suffix': instance.suffix,
+      '_suffix': instance.suffixElement,
+      'period': instance.period,
+    };
 
 const _$HumanNameUseEnumMap = {
   HumanNameUse.usual: 'usual',

@@ -329,7 +329,7 @@ class Specimen with _$Specimen implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [SpecimenFeature] A sample to be used for analysis.

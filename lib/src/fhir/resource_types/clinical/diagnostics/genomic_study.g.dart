@@ -99,54 +99,39 @@ _$GenomicStudyImpl _$$GenomicStudyImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$GenomicStudyImplToJson(_$GenomicStudyImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('type', instance.type?.map((e) => e.toJson()).toList());
-  val['subject'] = instance.subject.toJson();
-  writeNotNull('encounter', instance.encounter?.toJson());
-  writeNotNull('startDate', instance.startDate?.toJson());
-  writeNotNull('_startDate', instance.startDateElement?.toJson());
-  writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
-  writeNotNull('referrer', instance.referrer?.toJson());
-  writeNotNull(
-      'interpreter', instance.interpreter?.map((e) => e.toJson()).toList());
-  writeNotNull('reason', instance.reason?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'instantiatesCanonical', instance.instantiatesCanonical?.toJson());
-  writeNotNull('instantiatesUri', instance.instantiatesUri?.toJson());
-  writeNotNull('_instantiatesUri', instance.instantiatesUriElement?.toJson());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('analysis', instance.analysis?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$GenomicStudyImplToJson(_$GenomicStudyImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'type': instance.type,
+      'subject': instance.subject,
+      'encounter': instance.encounter,
+      'startDate': instance.startDate,
+      '_startDate': instance.startDateElement,
+      'basedOn': instance.basedOn,
+      'referrer': instance.referrer,
+      'interpreter': instance.interpreter,
+      'reason': instance.reason,
+      'instantiatesCanonical': instance.instantiatesCanonical,
+      'instantiatesUri': instance.instantiatesUri,
+      '_instantiatesUri': instance.instantiatesUriElement,
+      'note': instance.note,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'analysis': instance.analysis,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -389,50 +374,33 @@ _$GenomicStudyAnalysisImpl _$$GenomicStudyAnalysisImplFromJson(
     );
 
 Map<String, dynamic> _$$GenomicStudyAnalysisImplToJson(
-    _$GenomicStudyAnalysisImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'methodType', instance.methodType?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'changeType', instance.changeType?.map((e) => e.toJson()).toList());
-  writeNotNull('genomeBuild', instance.genomeBuild?.toJson());
-  writeNotNull(
-      'instantiatesCanonical', instance.instantiatesCanonical?.toJson());
-  writeNotNull('instantiatesUri', instance.instantiatesUri?.toJson());
-  writeNotNull('_instantiatesUri', instance.instantiatesUriElement?.toJson());
-  writeNotNull('title', instance.title);
-  writeNotNull('_title', instance.titleElement?.toJson());
-  writeNotNull('focus', instance.focus?.map((e) => e.toJson()).toList());
-  writeNotNull('specimen', instance.specimen?.map((e) => e.toJson()).toList());
-  writeNotNull('date', instance.date?.toJson());
-  writeNotNull('_date', instance.dateElement?.toJson());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  writeNotNull('protocolPerformed', instance.protocolPerformed?.toJson());
-  writeNotNull('regionsStudied',
-      instance.regionsStudied?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'regionsCalled', instance.regionsCalled?.map((e) => e.toJson()).toList());
-  writeNotNull('input', instance.input?.map((e) => e.toJson()).toList());
-  writeNotNull('output', instance.output?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'performer', instance.performer?.map((e) => e.toJson()).toList());
-  writeNotNull('device', instance.device?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$GenomicStudyAnalysisImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'methodType': instance.methodType,
+      'changeType': instance.changeType,
+      'genomeBuild': instance.genomeBuild,
+      'instantiatesCanonical': instance.instantiatesCanonical,
+      'instantiatesUri': instance.instantiatesUri,
+      '_instantiatesUri': instance.instantiatesUriElement,
+      'title': instance.title,
+      '_title': instance.titleElement,
+      'focus': instance.focus,
+      'specimen': instance.specimen,
+      'date': instance.date,
+      '_date': instance.dateElement,
+      'note': instance.note,
+      'protocolPerformed': instance.protocolPerformed,
+      'regionsStudied': instance.regionsStudied,
+      'regionsCalled': instance.regionsCalled,
+      'input': instance.input,
+      'output': instance.output,
+      'performer': instance.performer,
+      'device': instance.device,
+    };
 
 _$GenomicStudyInputImpl _$$GenomicStudyInputImplFromJson(
         Map<String, dynamic> json) =>
@@ -461,27 +429,16 @@ _$GenomicStudyInputImpl _$$GenomicStudyInputImplFromJson(
     );
 
 Map<String, dynamic> _$$GenomicStudyInputImplToJson(
-    _$GenomicStudyInputImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('file', instance.file?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull(
-      'generatedByIdentifier', instance.generatedByIdentifier?.toJson());
-  writeNotNull('generatedByReference', instance.generatedByReference?.toJson());
-  return val;
-}
+        _$GenomicStudyInputImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'file': instance.file,
+      'type': instance.type,
+      'generatedByIdentifier': instance.generatedByIdentifier,
+      'generatedByReference': instance.generatedByReference,
+    };
 
 _$GenomicStudyOutputImpl _$$GenomicStudyOutputImplFromJson(
         Map<String, dynamic> json) =>
@@ -502,24 +459,14 @@ _$GenomicStudyOutputImpl _$$GenomicStudyOutputImplFromJson(
     );
 
 Map<String, dynamic> _$$GenomicStudyOutputImplToJson(
-    _$GenomicStudyOutputImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('file', instance.file?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+        _$GenomicStudyOutputImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'file': instance.file,
+      'type': instance.type,
+    };
 
 _$GenomicStudyPerformerImpl _$$GenomicStudyPerformerImplFromJson(
         Map<String, dynamic> json) =>
@@ -540,24 +487,14 @@ _$GenomicStudyPerformerImpl _$$GenomicStudyPerformerImplFromJson(
     );
 
 Map<String, dynamic> _$$GenomicStudyPerformerImplToJson(
-    _$GenomicStudyPerformerImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('actor', instance.actor?.toJson());
-  writeNotNull('role', instance.role?.toJson());
-  return val;
-}
+        _$GenomicStudyPerformerImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'actor': instance.actor,
+      'role': instance.role,
+    };
 
 _$GenomicStudyDeviceImpl _$$GenomicStudyDeviceImplFromJson(
         Map<String, dynamic> json) =>
@@ -578,21 +515,11 @@ _$GenomicStudyDeviceImpl _$$GenomicStudyDeviceImplFromJson(
     );
 
 Map<String, dynamic> _$$GenomicStudyDeviceImplToJson(
-    _$GenomicStudyDeviceImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('device', instance.device?.toJson());
-  writeNotNull('function', instance.function_?.toJson());
-  return val;
-}
+        _$GenomicStudyDeviceImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'device': instance.device,
+      'function': instance.function_,
+    };

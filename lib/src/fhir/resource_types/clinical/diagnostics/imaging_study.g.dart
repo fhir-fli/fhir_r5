@@ -109,58 +109,43 @@ _$ImagingStudyImpl _$$ImagingStudyImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$ImagingStudyImplToJson(_$ImagingStudyImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('modality', instance.modality?.map((e) => e.toJson()).toList());
-  val['subject'] = instance.subject.toJson();
-  writeNotNull('encounter', instance.encounter?.toJson());
-  writeNotNull('started', instance.started?.toJson());
-  writeNotNull('_started', instance.startedElement?.toJson());
-  writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
-  writeNotNull('partOf', instance.partOf?.map((e) => e.toJson()).toList());
-  writeNotNull('referrer', instance.referrer?.toJson());
-  writeNotNull('endpoint', instance.endpoint?.map((e) => e.toJson()).toList());
-  writeNotNull('numberOfSeries', instance.numberOfSeries?.toJson());
-  writeNotNull('_numberOfSeries', instance.numberOfSeriesElement?.toJson());
-  writeNotNull('numberOfInstances', instance.numberOfInstances?.toJson());
-  writeNotNull(
-      '_numberOfInstances', instance.numberOfInstancesElement?.toJson());
-  writeNotNull(
-      'procedure', instance.procedure?.map((e) => e.toJson()).toList());
-  writeNotNull('location', instance.location?.toJson());
-  writeNotNull('reason', instance.reason?.map((e) => e.toJson()).toList());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description);
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('series', instance.series?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$ImagingStudyImplToJson(_$ImagingStudyImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'modality': instance.modality,
+      'subject': instance.subject,
+      'encounter': instance.encounter,
+      'started': instance.started,
+      '_started': instance.startedElement,
+      'basedOn': instance.basedOn,
+      'partOf': instance.partOf,
+      'referrer': instance.referrer,
+      'endpoint': instance.endpoint,
+      'numberOfSeries': instance.numberOfSeries,
+      '_numberOfSeries': instance.numberOfSeriesElement,
+      'numberOfInstances': instance.numberOfInstances,
+      '_numberOfInstances': instance.numberOfInstancesElement,
+      'procedure': instance.procedure,
+      'location': instance.location,
+      'reason': instance.reason,
+      'note': instance.note,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'series': instance.series,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -389,41 +374,29 @@ _$ImagingStudySeriesImpl _$$ImagingStudySeriesImplFromJson(
     );
 
 Map<String, dynamic> _$$ImagingStudySeriesImplToJson(
-    _$ImagingStudySeriesImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('uid', instance.uid?.toJson());
-  writeNotNull('_uid', instance.uidElement?.toJson());
-  writeNotNull('number', instance.number?.toJson());
-  writeNotNull('_number', instance.numberElement?.toJson());
-  val['modality'] = instance.modality.toJson();
-  writeNotNull('description', instance.description);
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('numberOfInstances', instance.numberOfInstances?.toJson());
-  writeNotNull(
-      '_numberOfInstances', instance.numberOfInstancesElement?.toJson());
-  writeNotNull('endpoint', instance.endpoint?.map((e) => e.toJson()).toList());
-  writeNotNull('bodySite', instance.bodySite?.toJson());
-  writeNotNull('laterality', instance.laterality?.toJson());
-  writeNotNull('specimen', instance.specimen?.map((e) => e.toJson()).toList());
-  writeNotNull('started', instance.started?.toJson());
-  writeNotNull('_started', instance.startedElement?.toJson());
-  writeNotNull(
-      'performer', instance.performer?.map((e) => e.toJson()).toList());
-  writeNotNull('instance', instance.instance?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$ImagingStudySeriesImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'uid': instance.uid,
+      '_uid': instance.uidElement,
+      'number': instance.number,
+      '_number': instance.numberElement,
+      'modality': instance.modality,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'numberOfInstances': instance.numberOfInstances,
+      '_numberOfInstances': instance.numberOfInstancesElement,
+      'endpoint': instance.endpoint,
+      'bodySite': instance.bodySite,
+      'laterality': instance.laterality,
+      'specimen': instance.specimen,
+      'started': instance.started,
+      '_started': instance.startedElement,
+      'performer': instance.performer,
+      'instance': instance.instance,
+    };
 
 _$ImagingStudyPerformerImpl _$$ImagingStudyPerformerImplFromJson(
         Map<String, dynamic> json) =>
@@ -442,24 +415,14 @@ _$ImagingStudyPerformerImpl _$$ImagingStudyPerformerImplFromJson(
     );
 
 Map<String, dynamic> _$$ImagingStudyPerformerImplToJson(
-    _$ImagingStudyPerformerImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('function', instance.function_?.toJson());
-  val['actor'] = instance.actor.toJson();
-  return val;
-}
+        _$ImagingStudyPerformerImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'function': instance.function_,
+      'actor': instance.actor,
+    };
 
 _$ImagingStudyInstanceImpl _$$ImagingStudyInstanceImplFromJson(
         Map<String, dynamic> json) =>
@@ -489,26 +452,16 @@ _$ImagingStudyInstanceImpl _$$ImagingStudyInstanceImplFromJson(
     );
 
 Map<String, dynamic> _$$ImagingStudyInstanceImplToJson(
-    _$ImagingStudyInstanceImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('uid', instance.uid?.toJson());
-  writeNotNull('_uid', instance.uidElement?.toJson());
-  val['sopClass'] = instance.sopClass.toJson();
-  writeNotNull('number', instance.number?.toJson());
-  writeNotNull('_number', instance.numberElement?.toJson());
-  writeNotNull('title', instance.title);
-  writeNotNull('_title', instance.titleElement?.toJson());
-  return val;
-}
+        _$ImagingStudyInstanceImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'uid': instance.uid,
+      '_uid': instance.uidElement,
+      'sopClass': instance.sopClass,
+      'number': instance.number,
+      '_number': instance.numberElement,
+      'title': instance.title,
+      '_title': instance.titleElement,
+    };

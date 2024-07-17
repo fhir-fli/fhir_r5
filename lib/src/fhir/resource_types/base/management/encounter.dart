@@ -445,7 +445,7 @@ class Encounter with _$Encounter implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [EncounterParticipant] An interaction between a patient and healthcare

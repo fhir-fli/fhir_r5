@@ -124,60 +124,45 @@ _$AllergyIntoleranceImpl _$$AllergyIntoleranceImplFromJson(
     );
 
 Map<String, dynamic> _$$AllergyIntoleranceImplToJson(
-    _$AllergyIntoleranceImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('clinicalStatus', instance.clinicalStatus?.toJson());
-  writeNotNull('verificationStatus', instance.verificationStatus?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      '_category', instance.categoryElement?.map((e) => e.toJson()).toList());
-  writeNotNull('criticality', instance.criticality?.toJson());
-  writeNotNull('_criticality', instance.criticalityElement?.toJson());
-  writeNotNull('code', instance.code?.toJson());
-  val['patient'] = instance.patient.toJson();
-  writeNotNull('encounter', instance.encounter?.toJson());
-  writeNotNull('onsetDateTime', instance.onsetDateTime?.toJson());
-  writeNotNull('_onsetDateTime', instance.onsetDateTimeElement?.toJson());
-  writeNotNull('onsetAge', instance.onsetAge?.toJson());
-  writeNotNull('onsetPeriod', instance.onsetPeriod?.toJson());
-  writeNotNull('onsetRange', instance.onsetRange?.toJson());
-  writeNotNull('onsetString', instance.onsetString);
-  writeNotNull('_onsetString', instance.onsetStringElement?.toJson());
-  writeNotNull('recordedDate', instance.recordedDate?.toJson());
-  writeNotNull('_recordedDate', instance.recordedDateElement?.toJson());
-  writeNotNull(
-      'participant', instance.participant?.map((e) => e.toJson()).toList());
-  writeNotNull('lastOccurrence', instance.lastOccurrence?.toJson());
-  writeNotNull('_lastOccurrence', instance.lastOccurrenceElement?.toJson());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  writeNotNull('reaction', instance.reaction?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$AllergyIntoleranceImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'clinicalStatus': instance.clinicalStatus,
+      'verificationStatus': instance.verificationStatus,
+      'type': instance.type,
+      'category': instance.category,
+      '_category': instance.categoryElement,
+      'criticality': instance.criticality,
+      '_criticality': instance.criticalityElement,
+      'code': instance.code,
+      'patient': instance.patient,
+      'encounter': instance.encounter,
+      'onsetDateTime': instance.onsetDateTime,
+      '_onsetDateTime': instance.onsetDateTimeElement,
+      'onsetAge': instance.onsetAge,
+      'onsetPeriod': instance.onsetPeriod,
+      'onsetRange': instance.onsetRange,
+      'onsetString': instance.onsetString,
+      '_onsetString': instance.onsetStringElement,
+      'recordedDate': instance.recordedDate,
+      '_recordedDate': instance.recordedDateElement,
+      'participant': instance.participant,
+      'lastOccurrence': instance.lastOccurrence,
+      '_lastOccurrence': instance.lastOccurrenceElement,
+      'note': instance.note,
+      'reaction': instance.reaction,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -360,24 +345,14 @@ _$AllergyIntoleranceParticipantImpl
         );
 
 Map<String, dynamic> _$$AllergyIntoleranceParticipantImplToJson(
-    _$AllergyIntoleranceParticipantImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('function', instance.function_?.toJson());
-  val['actor'] = instance.actor.toJson();
-  return val;
-}
+        _$AllergyIntoleranceParticipantImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'function': instance.function_,
+      'actor': instance.actor,
+    };
 
 _$AllergyIntoleranceReactionImpl _$$AllergyIntoleranceReactionImplFromJson(
         Map<String, dynamic> json) =>
@@ -422,29 +397,19 @@ _$AllergyIntoleranceReactionImpl _$$AllergyIntoleranceReactionImplFromJson(
     );
 
 Map<String, dynamic> _$$AllergyIntoleranceReactionImplToJson(
-    _$AllergyIntoleranceReactionImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('substance', instance.substance?.toJson());
-  val['manifestation'] = instance.manifestation.map((e) => e.toJson()).toList();
-  writeNotNull('description', instance.description);
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('onset', instance.onset?.toJson());
-  writeNotNull('_onset', instance.onsetElement?.toJson());
-  writeNotNull('severity', instance.severity?.toJson());
-  writeNotNull('_severity', instance.severityElement?.toJson());
-  writeNotNull('exposureRoute', instance.exposureRoute?.toJson());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$AllergyIntoleranceReactionImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'substance': instance.substance,
+      'manifestation': instance.manifestation,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'onset': instance.onset,
+      '_onset': instance.onsetElement,
+      'severity': instance.severity,
+      '_severity': instance.severityElement,
+      'exposureRoute': instance.exposureRoute,
+      'note': instance.note,
+    };

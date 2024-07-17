@@ -173,84 +173,61 @@ _$AppointmentImpl _$$AppointmentImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$AppointmentImplToJson(_$AppointmentImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('cancellationReason', instance.cancellationReason?.toJson());
-  writeNotNull('class', instance.class_?.map((e) => e.toJson()).toList());
-  writeNotNull('serviceCategory',
-      instance.serviceCategory?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'serviceType', instance.serviceType?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'specialty', instance.specialty?.map((e) => e.toJson()).toList());
-  writeNotNull('appointmentType', instance.appointmentType?.toJson());
-  writeNotNull('reason', instance.reason?.map((e) => e.toJson()).toList());
-  writeNotNull('priority', instance.priority?.toJson());
-  writeNotNull('description', instance.description);
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('replaces', instance.replaces?.map((e) => e.toJson()).toList());
-  writeNotNull('virtualService',
-      instance.virtualService?.map((e) => e.toJson()).toList());
-  writeNotNull('supportingInformation',
-      instance.supportingInformation?.map((e) => e.toJson()).toList());
-  writeNotNull('previousAppointment', instance.previousAppointment?.toJson());
-  writeNotNull(
-      'originatingAppointment', instance.originatingAppointment?.toJson());
-  writeNotNull('start', instance.start?.toJson());
-  writeNotNull('_start', instance.startElement?.toJson());
-  writeNotNull('end', instance.end?.toJson());
-  writeNotNull('_end', instance.endElement?.toJson());
-  writeNotNull('minutesDuration', instance.minutesDuration?.toJson());
-  writeNotNull('_minutesDuration', instance.minutesDurationElement?.toJson());
-  writeNotNull('requestedPeriod',
-      instance.requestedPeriod?.map((e) => e.toJson()).toList());
-  writeNotNull('slot', instance.slot?.map((e) => e.toJson()).toList());
-  writeNotNull('account', instance.account?.map((e) => e.toJson()).toList());
-  writeNotNull('created', instance.created?.toJson());
-  writeNotNull('_created', instance.createdElement?.toJson());
-  writeNotNull('cancellationDate', instance.cancellationDate?.toJson());
-  writeNotNull('_cancellationDate', instance.cancellationDateElement?.toJson());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  writeNotNull('patientInstruction',
-      instance.patientInstruction?.map((e) => e.toJson()).toList());
-  writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
-  writeNotNull('subject', instance.subject?.toJson());
-  val['participant'] = instance.participant.map((e) => e.toJson()).toList();
-  writeNotNull('recurrenceId', instance.recurrenceId?.toJson());
-  writeNotNull('_recurrenceId', instance.recurrenceIdElement?.toJson());
-  writeNotNull('occurrenceChanged', instance.occurrenceChanged?.toJson());
-  writeNotNull(
-      '_occurrenceChanged', instance.occurrenceChangedElement?.toJson());
-  writeNotNull('recurrenceTemplate',
-      instance.recurrenceTemplate?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$AppointmentImplToJson(_$AppointmentImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'cancellationReason': instance.cancellationReason,
+      'class': instance.class_,
+      'serviceCategory': instance.serviceCategory,
+      'serviceType': instance.serviceType,
+      'specialty': instance.specialty,
+      'appointmentType': instance.appointmentType,
+      'reason': instance.reason,
+      'priority': instance.priority,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'replaces': instance.replaces,
+      'virtualService': instance.virtualService,
+      'supportingInformation': instance.supportingInformation,
+      'previousAppointment': instance.previousAppointment,
+      'originatingAppointment': instance.originatingAppointment,
+      'start': instance.start,
+      '_start': instance.startElement,
+      'end': instance.end,
+      '_end': instance.endElement,
+      'minutesDuration': instance.minutesDuration,
+      '_minutesDuration': instance.minutesDurationElement,
+      'requestedPeriod': instance.requestedPeriod,
+      'slot': instance.slot,
+      'account': instance.account,
+      'created': instance.created,
+      '_created': instance.createdElement,
+      'cancellationDate': instance.cancellationDate,
+      '_cancellationDate': instance.cancellationDateElement,
+      'note': instance.note,
+      'patientInstruction': instance.patientInstruction,
+      'basedOn': instance.basedOn,
+      'subject': instance.subject,
+      'participant': instance.participant,
+      'recurrenceId': instance.recurrenceId,
+      '_recurrenceId': instance.recurrenceIdElement,
+      'occurrenceChanged': instance.occurrenceChanged,
+      '_occurrenceChanged': instance.occurrenceChangedElement,
+      'recurrenceTemplate': instance.recurrenceTemplate,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -461,29 +438,19 @@ _$AppointmentParticipantImpl _$$AppointmentParticipantImplFromJson(
     );
 
 Map<String, dynamic> _$$AppointmentParticipantImplToJson(
-    _$AppointmentParticipantImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('type', instance.type?.map((e) => e.toJson()).toList());
-  writeNotNull('period', instance.period?.toJson());
-  writeNotNull('actor', instance.actor?.toJson());
-  writeNotNull('required', instance.required_?.toJson());
-  writeNotNull('_required', instance.requiredElement?.toJson());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  return val;
-}
+        _$AppointmentParticipantImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'type': instance.type,
+      'period': instance.period,
+      'actor': instance.actor,
+      'required': instance.required_,
+      '_required': instance.requiredElement,
+      'status': instance.status,
+      '_status': instance.statusElement,
+    };
 
 const _$ParticipationStatusEnumMap = {
   ParticipationStatus.accepted: 'accepted',
@@ -557,44 +524,27 @@ _$AppointmentRecurrenceTemplateImpl
         );
 
 Map<String, dynamic> _$$AppointmentRecurrenceTemplateImplToJson(
-    _$AppointmentRecurrenceTemplateImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('timezone', instance.timezone?.toJson());
-  val['recurrenceType'] = instance.recurrenceType.toJson();
-  writeNotNull('lastOccurrenceDate', instance.lastOccurrenceDate?.toJson());
-  writeNotNull(
-      '_lastOccurrenceDate', instance.lastOccurrenceDateElement?.toJson());
-  writeNotNull('occurrenceCount', instance.occurrenceCount?.toJson());
-  writeNotNull('_occurrenceCount', instance.occurrenceCountElement?.toJson());
-  writeNotNull('occurrenceDate',
-      instance.occurrenceDate?.map((e) => e.toJson()).toList());
-  writeNotNull('_occurrenceDate',
-      instance.occurrenceDateElement?.map((e) => e.toJson()).toList());
-  writeNotNull('weeklyTemplate', instance.weeklyTemplate?.toJson());
-  writeNotNull('monthlyTemplate', instance.monthlyTemplate?.toJson());
-  writeNotNull('yearlyTemplate', instance.yearlyTemplate?.toJson());
-  writeNotNull(
-      'excludingDate', instance.excludingDate?.map((e) => e.toJson()).toList());
-  writeNotNull('_excludingDate',
-      instance.excludingDateElement?.map((e) => e.toJson()).toList());
-  writeNotNull('excludingRecurrenceId',
-      instance.excludingRecurrenceId?.map((e) => e.toJson()).toList());
-  writeNotNull('_excludingRecurrenceId',
-      instance.excludingRecurrenceIdElement?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$AppointmentRecurrenceTemplateImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'timezone': instance.timezone,
+      'recurrenceType': instance.recurrenceType,
+      'lastOccurrenceDate': instance.lastOccurrenceDate,
+      '_lastOccurrenceDate': instance.lastOccurrenceDateElement,
+      'occurrenceCount': instance.occurrenceCount,
+      '_occurrenceCount': instance.occurrenceCountElement,
+      'occurrenceDate': instance.occurrenceDate,
+      '_occurrenceDate': instance.occurrenceDateElement,
+      'weeklyTemplate': instance.weeklyTemplate,
+      'monthlyTemplate': instance.monthlyTemplate,
+      'yearlyTemplate': instance.yearlyTemplate,
+      'excludingDate': instance.excludingDate,
+      '_excludingDate': instance.excludingDateElement,
+      'excludingRecurrenceId': instance.excludingRecurrenceId,
+      '_excludingRecurrenceId': instance.excludingRecurrenceIdElement,
+    };
 
 _$AppointmentWeeklyTemplateImpl _$$AppointmentWeeklyTemplateImplFromJson(
         Map<String, dynamic> json) =>
@@ -658,38 +608,28 @@ _$AppointmentWeeklyTemplateImpl _$$AppointmentWeeklyTemplateImplFromJson(
     );
 
 Map<String, dynamic> _$$AppointmentWeeklyTemplateImplToJson(
-    _$AppointmentWeeklyTemplateImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('monday', instance.monday?.toJson());
-  writeNotNull('_monday', instance.mondayElement?.toJson());
-  writeNotNull('tuesday', instance.tuesday?.toJson());
-  writeNotNull('_tuesday', instance.tuesdayElement?.toJson());
-  writeNotNull('wednesday', instance.wednesday?.toJson());
-  writeNotNull('_wednesday', instance.wednesdayElement?.toJson());
-  writeNotNull('thursday', instance.thursday?.toJson());
-  writeNotNull('_thursday', instance.thursdayElement?.toJson());
-  writeNotNull('friday', instance.friday?.toJson());
-  writeNotNull('_friday', instance.fridayElement?.toJson());
-  writeNotNull('saturday', instance.saturday?.toJson());
-  writeNotNull('_saturday', instance.saturdayElement?.toJson());
-  writeNotNull('sunday', instance.sunday?.toJson());
-  writeNotNull('_sunday', instance.sundayElement?.toJson());
-  writeNotNull('weekInterval', instance.weekInterval?.toJson());
-  writeNotNull('_weekInterval', instance.weekIntervalElement?.toJson());
-  return val;
-}
+        _$AppointmentWeeklyTemplateImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'monday': instance.monday,
+      '_monday': instance.mondayElement,
+      'tuesday': instance.tuesday,
+      '_tuesday': instance.tuesdayElement,
+      'wednesday': instance.wednesday,
+      '_wednesday': instance.wednesdayElement,
+      'thursday': instance.thursday,
+      '_thursday': instance.thursdayElement,
+      'friday': instance.friday,
+      '_friday': instance.fridayElement,
+      'saturday': instance.saturday,
+      '_saturday': instance.saturdayElement,
+      'sunday': instance.sunday,
+      '_sunday': instance.sundayElement,
+      'weekInterval': instance.weekInterval,
+      '_weekInterval': instance.weekIntervalElement,
+    };
 
 _$AppointmentMonthlyTemplateImpl _$$AppointmentMonthlyTemplateImplFromJson(
         Map<String, dynamic> json) =>
@@ -724,28 +664,18 @@ _$AppointmentMonthlyTemplateImpl _$$AppointmentMonthlyTemplateImplFromJson(
     );
 
 Map<String, dynamic> _$$AppointmentMonthlyTemplateImplToJson(
-    _$AppointmentMonthlyTemplateImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('dayOfMonth', instance.dayOfMonth?.toJson());
-  writeNotNull('_dayOfMonth', instance.dayOfMonthElement?.toJson());
-  writeNotNull('nthWeekOfMonth', instance.nthWeekOfMonth?.toJson());
-  writeNotNull('dayOfWeek', instance.dayOfWeek?.toJson());
-  writeNotNull('monthInterval', instance.monthInterval?.toJson());
-  writeNotNull('_monthInterval', instance.monthIntervalElement?.toJson());
-  return val;
-}
+        _$AppointmentMonthlyTemplateImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'dayOfMonth': instance.dayOfMonth,
+      '_dayOfMonth': instance.dayOfMonthElement,
+      'nthWeekOfMonth': instance.nthWeekOfMonth,
+      'dayOfWeek': instance.dayOfWeek,
+      'monthInterval': instance.monthInterval,
+      '_monthInterval': instance.monthIntervalElement,
+    };
 
 _$AppointmentYearlyTemplateImpl _$$AppointmentYearlyTemplateImplFromJson(
         Map<String, dynamic> json) =>
@@ -767,21 +697,11 @@ _$AppointmentYearlyTemplateImpl _$$AppointmentYearlyTemplateImplFromJson(
     );
 
 Map<String, dynamic> _$$AppointmentYearlyTemplateImplToJson(
-    _$AppointmentYearlyTemplateImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('yearInterval', instance.yearInterval?.toJson());
-  writeNotNull('_yearInterval', instance.yearIntervalElement?.toJson());
-  return val;
-}
+        _$AppointmentYearlyTemplateImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'yearInterval': instance.yearInterval,
+      '_yearInterval': instance.yearIntervalElement,
+    };

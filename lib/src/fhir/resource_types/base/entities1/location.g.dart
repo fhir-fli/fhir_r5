@@ -108,60 +108,43 @@ _$LocationImpl _$$LocationImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$LocationImplToJson(_$LocationImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('operationalStatus', instance.operationalStatus?.toJson());
-  writeNotNull('name', instance.name);
-  writeNotNull('_name', instance.nameElement?.toJson());
-  writeNotNull('alias', instance.alias);
-  writeNotNull(
-      '_alias', instance.aliasElement?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('mode', instance.mode?.toJson());
-  writeNotNull('_mode', instance.modeElement?.toJson());
-  writeNotNull('type', instance.type?.map((e) => e.toJson()).toList());
-  writeNotNull('contact', instance.contact?.map((e) => e.toJson()).toList());
-  writeNotNull('address', instance.address?.toJson());
-  writeNotNull('form', instance.form?.toJson());
-  writeNotNull('position', instance.position?.toJson());
-  writeNotNull('managingOrganization', instance.managingOrganization?.toJson());
-  writeNotNull('partOf', instance.partOf?.toJson());
-  writeNotNull('characteristic',
-      instance.characteristic?.map((e) => e.toJson()).toList());
-  writeNotNull('hoursOfOperation',
-      instance.hoursOfOperation?.map((e) => e.toJson()).toList());
-  writeNotNull('virtualService',
-      instance.virtualService?.map((e) => e.toJson()).toList());
-  writeNotNull('endpoint', instance.endpoint?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$LocationImplToJson(_$LocationImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'operationalStatus': instance.operationalStatus,
+      'name': instance.name,
+      '_name': instance.nameElement,
+      'alias': instance.alias,
+      '_alias': instance.aliasElement,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'mode': instance.mode,
+      '_mode': instance.modeElement,
+      'type': instance.type,
+      'contact': instance.contact,
+      'address': instance.address,
+      'form': instance.form,
+      'position': instance.position,
+      'managingOrganization': instance.managingOrganization,
+      'partOf': instance.partOf,
+      'characteristic': instance.characteristic,
+      'hoursOfOperation': instance.hoursOfOperation,
+      'virtualService': instance.virtualService,
+      'endpoint': instance.endpoint,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -371,25 +354,15 @@ _$LocationPositionImpl _$$LocationPositionImplFromJson(
     );
 
 Map<String, dynamic> _$$LocationPositionImplToJson(
-    _$LocationPositionImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('longitude', instance.longitude?.toJson());
-  writeNotNull('_longitude', instance.longitudeElement?.toJson());
-  writeNotNull('latitude', instance.latitude?.toJson());
-  writeNotNull('_latitude', instance.latitudeElement?.toJson());
-  writeNotNull('altitude', instance.altitude?.toJson());
-  writeNotNull('_altitude', instance.altitudeElement?.toJson());
-  return val;
-}
+        _$LocationPositionImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'longitude': instance.longitude,
+      '_longitude': instance.longitudeElement,
+      'latitude': instance.latitude,
+      '_latitude': instance.latitudeElement,
+      'altitude': instance.altitude,
+      '_altitude': instance.altitudeElement,
+    };

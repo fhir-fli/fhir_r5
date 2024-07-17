@@ -106,60 +106,39 @@ _$PackagedProductDefinitionImpl _$$PackagedProductDefinitionImplFromJson(
     );
 
 Map<String, dynamic> _$$PackagedProductDefinitionImplToJson(
-    _$PackagedProductDefinitionImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('name', instance.name);
-  writeNotNull('_name', instance.nameElement?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull(
-      'packageFor', instance.packageFor?.map((e) => e.toJson()).toList());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('statusDate', instance.statusDate?.toJson());
-  writeNotNull('_statusDate', instance.statusDateElement?.toJson());
-  writeNotNull('containedItemQuantity',
-      instance.containedItemQuantity?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('legalStatusOfSupply',
-      instance.legalStatusOfSupply?.map((e) => e.toJson()).toList());
-  writeNotNull('marketingStatus',
-      instance.marketingStatus?.map((e) => e.toJson()).toList());
-  writeNotNull('copackagedIndicator', instance.copackagedIndicator?.toJson());
-  writeNotNull(
-      '_copackagedIndicator', instance.copackagedIndicatorElement?.toJson());
-  writeNotNull(
-      'manufacturer', instance.manufacturer?.map((e) => e.toJson()).toList());
-  writeNotNull('attachedDocument',
-      instance.attachedDocument?.map((e) => e.toJson()).toList());
-  writeNotNull('packaging', instance.packaging?.toJson());
-  writeNotNull('characteristic',
-      instance.characteristic?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$PackagedProductDefinitionImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'name': instance.name,
+      '_name': instance.nameElement,
+      'type': instance.type,
+      'packageFor': instance.packageFor,
+      'status': instance.status,
+      'statusDate': instance.statusDate,
+      '_statusDate': instance.statusDateElement,
+      'containedItemQuantity': instance.containedItemQuantity,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'legalStatusOfSupply': instance.legalStatusOfSupply,
+      'marketingStatus': instance.marketingStatus,
+      'copackagedIndicator': instance.copackagedIndicator,
+      '_copackagedIndicator': instance.copackagedIndicatorElement,
+      'manufacturer': instance.manufacturer,
+      'attachedDocument': instance.attachedDocument,
+      'packaging': instance.packaging,
+      'characteristic': instance.characteristic,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -345,24 +324,14 @@ _$PackagedProductDefinitionLegalStatusOfSupplyImpl
         );
 
 Map<String, dynamic> _$$PackagedProductDefinitionLegalStatusOfSupplyImplToJson(
-    _$PackagedProductDefinitionLegalStatusOfSupplyImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('code', instance.code?.toJson());
-  writeNotNull('jurisdiction', instance.jurisdiction?.toJson());
-  return val;
-}
+        _$PackagedProductDefinitionLegalStatusOfSupplyImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'code': instance.code,
+      'jurisdiction': instance.jurisdiction,
+    };
 
 _$PackagedProductDefinitionPackagingImpl
     _$$PackagedProductDefinitionPackagingImplFromJson(
@@ -422,41 +391,25 @@ _$PackagedProductDefinitionPackagingImpl
         );
 
 Map<String, dynamic> _$$PackagedProductDefinitionPackagingImplToJson(
-    _$PackagedProductDefinitionPackagingImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('componentPart', instance.componentPart?.toJson());
-  writeNotNull('_componentPart', instance.componentPartElement?.toJson());
-  writeNotNull('quantity', instance.quantity?.toJson());
-  writeNotNull('_quantity', instance.quantityElement?.toJson());
-  writeNotNull('material', instance.material?.map((e) => e.toJson()).toList());
-  writeNotNull('alternateMaterial',
-      instance.alternateMaterial?.map((e) => e.toJson()).toList());
-  writeNotNull('shelfLifeStorage',
-      instance.shelfLifeStorage?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'manufacturer', instance.manufacturer?.map((e) => e.toJson()).toList());
-  writeNotNull('property', instance.property?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'containedItem', instance.containedItem?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'packaging', instance.packaging?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$PackagedProductDefinitionPackagingImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'type': instance.type,
+      'componentPart': instance.componentPart,
+      '_componentPart': instance.componentPartElement,
+      'quantity': instance.quantity,
+      '_quantity': instance.quantityElement,
+      'material': instance.material,
+      'alternateMaterial': instance.alternateMaterial,
+      'shelfLifeStorage': instance.shelfLifeStorage,
+      'manufacturer': instance.manufacturer,
+      'property': instance.property,
+      'containedItem': instance.containedItem,
+      'packaging': instance.packaging,
+    };
 
 _$PackagedProductDefinitionPropertyImpl
     _$$PackagedProductDefinitionPropertyImplFromJson(
@@ -499,30 +452,20 @@ _$PackagedProductDefinitionPropertyImpl
         );
 
 Map<String, dynamic> _$$PackagedProductDefinitionPropertyImplToJson(
-    _$PackagedProductDefinitionPropertyImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['type'] = instance.type.toJson();
-  writeNotNull('valueCodeableConcept', instance.valueCodeableConcept?.toJson());
-  writeNotNull('valueQuantity', instance.valueQuantity?.toJson());
-  writeNotNull('valueDate', instance.valueDate?.toJson());
-  writeNotNull('_valueDate', instance.valueDateElement?.toJson());
-  writeNotNull('valueBoolean', instance.valueBoolean?.toJson());
-  writeNotNull('_valueBoolean', instance.valueBooleanElement?.toJson());
-  writeNotNull('valueAttachment', instance.valueAttachment?.toJson());
-  return val;
-}
+        _$PackagedProductDefinitionPropertyImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'type': instance.type,
+      'valueCodeableConcept': instance.valueCodeableConcept,
+      'valueQuantity': instance.valueQuantity,
+      'valueDate': instance.valueDate,
+      '_valueDate': instance.valueDateElement,
+      'valueBoolean': instance.valueBoolean,
+      '_valueBoolean': instance.valueBooleanElement,
+      'valueAttachment': instance.valueAttachment,
+    };
 
 _$PackagedProductDefinitionContainedItemImpl
     _$$PackagedProductDefinitionContainedItemImplFromJson(
@@ -543,21 +486,11 @@ _$PackagedProductDefinitionContainedItemImpl
         );
 
 Map<String, dynamic> _$$PackagedProductDefinitionContainedItemImplToJson(
-    _$PackagedProductDefinitionContainedItemImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['item'] = instance.item.toJson();
-  writeNotNull('amount', instance.amount?.toJson());
-  return val;
-}
+        _$PackagedProductDefinitionContainedItemImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'item': instance.item,
+      'amount': instance.amount,
+    };

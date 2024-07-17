@@ -22,19 +22,10 @@ _$CodeableReferenceImpl _$$CodeableReferenceImplFromJson(
     );
 
 Map<String, dynamic> _$$CodeableReferenceImplToJson(
-    _$CodeableReferenceImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('concept', instance.concept?.toJson());
-  writeNotNull('reference', instance.reference?.toJson());
-  return val;
-}
+        _$CodeableReferenceImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'concept': instance.concept,
+      'reference': instance.reference,
+    };

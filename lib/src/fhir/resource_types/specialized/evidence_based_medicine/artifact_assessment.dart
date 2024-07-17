@@ -367,7 +367,7 @@ class ArtifactAssessment with _$ArtifactAssessment implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [ArtifactAssessmentContent] This Resource provides one or more comments,

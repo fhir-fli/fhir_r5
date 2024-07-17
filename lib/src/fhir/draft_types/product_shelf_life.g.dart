@@ -35,25 +35,14 @@ _$ProductShelfLifeImpl _$$ProductShelfLifeImplFromJson(
     );
 
 Map<String, dynamic> _$$ProductShelfLifeImplToJson(
-    _$ProductShelfLifeImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('periodDuration', instance.periodDuration?.toJson());
-  writeNotNull('periodString', instance.periodString);
-  writeNotNull('_periodString', instance.periodStringElement?.toJson());
-  writeNotNull('specialPrecautionsForStorage',
-      instance.specialPrecautionsForStorage?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$ProductShelfLifeImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'type': instance.type,
+      'periodDuration': instance.periodDuration,
+      'periodString': instance.periodString,
+      '_periodString': instance.periodStringElement,
+      'specialPrecautionsForStorage': instance.specialPrecautionsForStorage,
+    };

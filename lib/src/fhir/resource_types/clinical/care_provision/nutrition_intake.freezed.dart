@@ -208,8 +208,12 @@ mixin _$NutritionIntake {
   ///  conveyed by the other attributes.
   List<Annotation>? get note => throw _privateConstructorUsedError;
 
+  /// Serializes this NutritionIntake to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of NutritionIntake
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $NutritionIntakeCopyWith<NutritionIntake> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -284,6 +288,8 @@ class _$NutritionIntakeCopyWithImpl<$Res, $Val extends NutritionIntake>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of NutritionIntake
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -482,6 +488,8 @@ class _$NutritionIntakeCopyWithImpl<$Res, $Val extends NutritionIntake>
     ) as $Val);
   }
 
+  /// Create a copy of NutritionIntake
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -494,6 +502,8 @@ class _$NutritionIntakeCopyWithImpl<$Res, $Val extends NutritionIntake>
     });
   }
 
+  /// Create a copy of NutritionIntake
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -506,6 +516,8 @@ class _$NutritionIntakeCopyWithImpl<$Res, $Val extends NutritionIntake>
     });
   }
 
+  /// Create a copy of NutritionIntake
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -518,6 +530,8 @@ class _$NutritionIntakeCopyWithImpl<$Res, $Val extends NutritionIntake>
     });
   }
 
+  /// Create a copy of NutritionIntake
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get subject {
@@ -526,6 +540,8 @@ class _$NutritionIntakeCopyWithImpl<$Res, $Val extends NutritionIntake>
     });
   }
 
+  /// Create a copy of NutritionIntake
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get encounter {
@@ -538,6 +554,8 @@ class _$NutritionIntakeCopyWithImpl<$Res, $Val extends NutritionIntake>
     });
   }
 
+  /// Create a copy of NutritionIntake
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get occurrencePeriod {
@@ -550,6 +568,8 @@ class _$NutritionIntakeCopyWithImpl<$Res, $Val extends NutritionIntake>
     });
   }
 
+  /// Create a copy of NutritionIntake
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get reportedReference {
@@ -562,6 +582,8 @@ class _$NutritionIntakeCopyWithImpl<$Res, $Val extends NutritionIntake>
     });
   }
 
+  /// Create a copy of NutritionIntake
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get location {
@@ -653,6 +675,8 @@ class __$$NutritionIntakeImplCopyWithImpl<$Res>
       _$NutritionIntakeImpl _value, $Res Function(_$NutritionIntakeImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of NutritionIntake
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1391,7 +1415,7 @@ class _$NutritionIntakeImpl extends _NutritionIntake {
             const DeepCollectionEquality().equals(other._note, _note));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1435,7 +1459,9 @@ class _$NutritionIntakeImpl extends _NutritionIntake {
         const DeepCollectionEquality().hash(_note)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of NutritionIntake
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$NutritionIntakeImplCopyWith<_$NutritionIntakeImpl> get copyWith =>
@@ -1500,44 +1526,42 @@ abstract class _NutritionIntake extends NutritionIntake {
   factory _NutritionIntake.fromJson(Map<String, dynamic> json) =
       _$NutritionIntakeImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a NutritionIntake resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.NutritionIntake)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1545,16 +1569,16 @@ abstract class _NutritionIntake extends NutritionIntake {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1562,9 +1586,9 @@ abstract class _NutritionIntake extends NutritionIntake {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1578,8 +1602,8 @@ abstract class _NutritionIntake extends NutritionIntake {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] Identifiers associated with this Nutrition Intake that are
   ///  defined by business processes and/or used to refer to it when a direct URL
@@ -1587,138 +1611,142 @@ abstract class _NutritionIntake extends NutritionIntake {
   ///  identifiers assigned to this resource by the performer or other systems
   ///  and remain constant as the resource is updated and propagates from server
   ///  to server.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [instantiatesCanonical] Instantiates FHIR protocol or definition.
-  List<FhirCanonical>? get instantiatesCanonical;
   @override
+  List<FhirCanonical>? get instantiatesCanonical;
 
   /// [instantiatesUri] Instantiates external protocol or definition.
-  List<FhirUri>? get instantiatesUri;
   @override
+  List<FhirUri>? get instantiatesUri;
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
+  @override
   @JsonKey(name: '_instantiatesUri')
   List<PrimitiveElement>? get instantiatesUriElement;
-  @override
 
   /// [basedOn] A plan, proposal or order that is fulfilled in whole or in part
   ///  by this event.
-  List<Reference>? get basedOn;
   @override
+  List<Reference>? get basedOn;
 
   /// [partOf] A larger event of which this particular event is a component or
   ///  step.
-  List<Reference>? get partOf;
   @override
+  List<Reference>? get partOf;
 
   /// [status] A code representing the patient or other source's judgment about
   ///  the state of the intake that this assertion is about.  Generally, this
   ///  will be active or completed.
-  FhirCode? get status;
   @override
+  FhirCode? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [statusReason] Captures the reason for the current state of the
   ///  NutritionIntake.
-  List<CodeableConcept>? get statusReason;
   @override
+  List<CodeableConcept>? get statusReason;
 
   /// [code] Overall type of nutrition intake.
-  CodeableConcept? get code;
   @override
+  CodeableConcept? get code;
 
   /// [subject] The person, animal or group who is/was consuming the food or
   ///  fluid.
-  Reference get subject;
   @override
+  Reference get subject;
 
   /// [encounter] The encounter that establishes the context for this
   ///  NutritionIntake.
-  Reference? get encounter;
   @override
+  Reference? get encounter;
 
   /// [occurrenceDateTime] The interval of time during which it is being asserted
   ///  that the patient is/was consuming the food or fluid.
-  FhirDateTime? get occurrenceDateTime;
   @override
+  FhirDateTime? get occurrenceDateTime;
 
   /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
   ///  occurrenceDateTime
+  @override
   @JsonKey(name: '_occurrenceDateTime')
   PrimitiveElement? get occurrenceDateTimeElement;
-  @override
 
   /// [occurrencePeriod] The interval of time during which it is being asserted
   ///  that the patient is/was consuming the food or fluid.
-  Period? get occurrencePeriod;
   @override
+  Period? get occurrencePeriod;
 
   /// [recorded] The date when the Nutrition Intake was asserted by the
   ///  information source.
-  FhirDateTime? get recorded;
   @override
+  FhirDateTime? get recorded;
 
   /// [recordedElement] ("_recorded") Extensions for recorded
+  @override
   @JsonKey(name: '_recorded')
   PrimitiveElement? get recordedElement;
-  @override
 
   /// [reportedBoolean] The person or organization that provided the information
   ///  about the consumption of this food or fluid. Note: Use derivedFrom when a
   ///  NutritionIntake is derived from other resources.
-  FhirBoolean? get reportedBoolean;
   @override
+  FhirBoolean? get reportedBoolean;
 
   /// [reportedBooleanElement] ("_reportedBoolean") Extensions for reportedBoolean
+  @override
   @JsonKey(name: '_reportedBoolean')
   PrimitiveElement? get reportedBooleanElement;
-  @override
 
   /// [reportedReference] The person or organization that provided the
   ///  information about the consumption of this food or fluid. Note: Use
   ///  derivedFrom when a NutritionIntake is derived from other resources.
-  Reference? get reportedReference;
   @override
+  Reference? get reportedReference;
 
   /// [consumedItem] What food or fluid product or item was consumed.
-  List<NutritionIntakeConsumedItem> get consumedItem;
   @override
+  List<NutritionIntakeConsumedItem> get consumedItem;
 
   /// [ingredientLabel] Total nutrient amounts for the whole meal, product,
   ///  serving, etc.
-  List<NutritionIntakeIngredientLabel>? get ingredientLabel;
   @override
+  List<NutritionIntakeIngredientLabel>? get ingredientLabel;
 
   /// [performer] Who performed the intake and how they were involved.
-  List<NutritionIntakePerformer>? get performer;
   @override
+  List<NutritionIntakePerformer>? get performer;
 
   /// [location] Where the intake occurred.
-  Reference? get location;
   @override
+  Reference? get location;
 
   /// [derivedFrom] Allows linking the NutritionIntake to the underlying
   ///  NutritionOrder, or to other information, such as AllergyIntolerance, that
   ///  supports or is used to derive the NutritionIntake.
-  List<Reference>? get derivedFrom;
   @override
+  List<Reference>? get derivedFrom;
 
   /// [reason] A reason, Condition or observation for why the food or fluid is
   ///  /was consumed.
-  List<CodeableReference>? get reason;
   @override
+  List<CodeableReference>? get reason;
 
   /// [note] Provides extra information about the Nutrition Intake that is not
   ///  conveyed by the other attributes.
-  List<Annotation>? get note;
   @override
-  @JsonKey(ignore: true)
+  List<Annotation>? get note;
+
+  /// Create a copy of NutritionIntake
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$NutritionIntakeImplCopyWith<_$NutritionIntakeImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1792,8 +1820,12 @@ mixin _$NutritionIntakeConsumedItem {
   ///  such as refused, held, etc.
   CodeableConcept? get notConsumedReason => throw _privateConstructorUsedError;
 
+  /// Serializes this NutritionIntakeConsumedItem to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of NutritionIntakeConsumedItem
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $NutritionIntakeConsumedItemCopyWith<NutritionIntakeConsumedItem>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1838,6 +1870,8 @@ class _$NutritionIntakeConsumedItemCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of NutritionIntakeConsumedItem
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1901,6 +1935,8 @@ class _$NutritionIntakeConsumedItemCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of NutritionIntakeConsumedItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get type {
@@ -1909,6 +1945,8 @@ class _$NutritionIntakeConsumedItemCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of NutritionIntakeConsumedItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res> get nutritionProduct {
@@ -1917,6 +1955,8 @@ class _$NutritionIntakeConsumedItemCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of NutritionIntakeConsumedItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get schedule {
@@ -1929,6 +1969,8 @@ class _$NutritionIntakeConsumedItemCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of NutritionIntakeConsumedItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get amount {
@@ -1941,6 +1983,8 @@ class _$NutritionIntakeConsumedItemCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of NutritionIntakeConsumedItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get rate {
@@ -1953,6 +1997,8 @@ class _$NutritionIntakeConsumedItemCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of NutritionIntakeConsumedItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get notConsumedReason {
@@ -2012,6 +2058,8 @@ class __$$NutritionIntakeConsumedItemImplCopyWithImpl<$Res>
       $Res Function(_$NutritionIntakeConsumedItemImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of NutritionIntakeConsumedItem
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2235,7 +2283,7 @@ class _$NutritionIntakeConsumedItemImpl extends _NutritionIntakeConsumedItem {
                 other.notConsumedReason == notConsumedReason));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2251,7 +2299,9 @@ class _$NutritionIntakeConsumedItemImpl extends _NutritionIntakeConsumedItem {
       notConsumedElement,
       notConsumedReason);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of NutritionIntakeConsumedItem
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$NutritionIntakeConsumedItemImplCopyWith<_$NutritionIntakeConsumedItemImpl>
@@ -2286,12 +2336,10 @@ abstract class _NutritionIntakeConsumedItem
   factory _NutritionIntakeConsumedItem.fromJson(Map<String, dynamic> json) =
       _$NutritionIntakeConsumedItemImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2299,9 +2347,9 @@ abstract class _NutritionIntakeConsumedItem
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2315,50 +2363,54 @@ abstract class _NutritionIntakeConsumedItem
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] Indicates what a category of item that was consumed: e.g., food,
   ///  fluid, enteral, etc.
-  CodeableConcept get type;
   @override
+  CodeableConcept get type;
 
   /// [nutritionProduct] Identifies the food or fluid product that was consumed.
   ///  This is potentially a link to a resource representing the details of the
   ///  food product (TBD) or a simple attribute carrying a code that identifies
   ///  the food from a known list of foods.
-  CodeableReference get nutritionProduct;
   @override
+  CodeableReference get nutritionProduct;
 
   /// [schedule] Scheduled frequency of consumption.
-  Timing? get schedule;
   @override
+  Timing? get schedule;
 
   /// [amount] Quantity of the specified food.
-  Quantity? get amount;
   @override
+  Quantity? get amount;
 
   /// [rate] Rate at which enteral feeding was administered.
-  Quantity? get rate;
   @override
+  Quantity? get rate;
 
   /// [notConsumed] Indicator when a patient is in a setting where it is helpful
   ///  to know if food was not consumed, such as it was refused, held (as in tube
   ///  feedings), or otherwise not provided. If a consumption is being recorded
   ///  from an app, such as MyFitnessPal, this indicator will likely not be used.
-  FhirBoolean? get notConsumed;
   @override
+  FhirBoolean? get notConsumed;
 
   /// [notConsumedElement] ("_notConsumed") Extensions for notConsumed
+  @override
   @JsonKey(name: '_notConsumed')
   PrimitiveElement? get notConsumedElement;
-  @override
 
   /// [notConsumedReason] Document the reason the food or fluid was not consumed,
   ///  such as refused, held, etc.
-  CodeableConcept? get notConsumedReason;
   @override
-  @JsonKey(ignore: true)
+  CodeableConcept? get notConsumedReason;
+
+  /// Create a copy of NutritionIntakeConsumedItem
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$NutritionIntakeConsumedItemImplCopyWith<_$NutritionIntakeConsumedItemImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2405,8 +2457,12 @@ mixin _$NutritionIntakeIngredientLabel {
   /// [amount] Total amount of nutrient consumed.
   Quantity get amount => throw _privateConstructorUsedError;
 
+  /// Serializes this NutritionIntakeIngredientLabel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of NutritionIntakeIngredientLabel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $NutritionIntakeIngredientLabelCopyWith<NutritionIntakeIngredientLabel>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2441,6 +2497,8 @@ class _$NutritionIntakeIngredientLabelCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of NutritionIntakeIngredientLabel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2474,6 +2532,8 @@ class _$NutritionIntakeIngredientLabelCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of NutritionIntakeIngredientLabel
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res> get nutrient {
@@ -2482,6 +2542,8 @@ class _$NutritionIntakeIngredientLabelCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of NutritionIntakeIngredientLabel
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res> get amount {
@@ -2523,6 +2585,8 @@ class __$$NutritionIntakeIngredientLabelImplCopyWithImpl<$Res>
       $Res Function(_$NutritionIntakeIngredientLabelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of NutritionIntakeIngredientLabel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2669,7 +2733,7 @@ class _$NutritionIntakeIngredientLabelImpl
             (identical(other.amount, amount) || other.amount == amount));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2679,7 +2743,9 @@ class _$NutritionIntakeIngredientLabelImpl
       nutrient,
       amount);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of NutritionIntakeIngredientLabel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$NutritionIntakeIngredientLabelImplCopyWith<
@@ -2708,12 +2774,10 @@ abstract class _NutritionIntakeIngredientLabel
   factory _NutritionIntakeIngredientLabel.fromJson(Map<String, dynamic> json) =
       _$NutritionIntakeIngredientLabelImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2721,9 +2785,9 @@ abstract class _NutritionIntakeIngredientLabel
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2737,18 +2801,22 @@ abstract class _NutritionIntakeIngredientLabel
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [nutrient] Total nutrient consumed. This could be a macronutrient (protein,
   ///  fat, carbohydrate), or a vitamin and mineral.
-  CodeableReference get nutrient;
   @override
+  CodeableReference get nutrient;
 
   /// [amount] Total amount of nutrient consumed.
-  Quantity get amount;
   @override
-  @JsonKey(ignore: true)
+  Quantity get amount;
+
+  /// Create a copy of NutritionIntakeIngredientLabel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$NutritionIntakeIngredientLabelImplCopyWith<
           _$NutritionIntakeIngredientLabelImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2796,8 +2864,12 @@ mixin _$NutritionIntakePerformer {
   /// [actor] Who performed the intake.
   Reference get actor => throw _privateConstructorUsedError;
 
+  /// Serializes this NutritionIntakePerformer to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of NutritionIntakePerformer
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $NutritionIntakePerformerCopyWith<NutritionIntakePerformer> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2830,6 +2902,8 @@ class _$NutritionIntakePerformerCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of NutritionIntakePerformer
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2863,6 +2937,8 @@ class _$NutritionIntakePerformerCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of NutritionIntakePerformer
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get function_ {
@@ -2875,6 +2951,8 @@ class _$NutritionIntakePerformerCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of NutritionIntakePerformer
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get actor {
@@ -2916,6 +2994,8 @@ class __$$NutritionIntakePerformerImplCopyWithImpl<$Res>
       $Res Function(_$NutritionIntakePerformerImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of NutritionIntakePerformer
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3060,7 +3140,7 @@ class _$NutritionIntakePerformerImpl extends _NutritionIntakePerformer {
             (identical(other.actor, actor) || other.actor == actor));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3070,7 +3150,9 @@ class _$NutritionIntakePerformerImpl extends _NutritionIntakePerformer {
       function_,
       actor);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of NutritionIntakePerformer
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$NutritionIntakePerformerImplCopyWith<_$NutritionIntakePerformerImpl>
@@ -3097,12 +3179,10 @@ abstract class _NutritionIntakePerformer extends NutritionIntakePerformer {
   factory _NutritionIntakePerformer.fromJson(Map<String, dynamic> json) =
       _$NutritionIntakePerformerImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3110,9 +3190,9 @@ abstract class _NutritionIntakePerformer extends NutritionIntakePerformer {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3126,18 +3206,22 @@ abstract class _NutritionIntakePerformer extends NutritionIntakePerformer {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [function_] ("function") Type of performer.
+  @override
   @JsonKey(name: 'function')
   CodeableConcept? get function_;
-  @override
 
   /// [actor] Who performed the intake.
-  Reference get actor;
   @override
-  @JsonKey(ignore: true)
+  Reference get actor;
+
+  /// Create a copy of NutritionIntakePerformer
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$NutritionIntakePerformerImplCopyWith<_$NutritionIntakePerformerImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

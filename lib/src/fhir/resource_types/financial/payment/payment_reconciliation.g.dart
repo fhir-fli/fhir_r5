@@ -157,75 +157,60 @@ _$PaymentReconciliationImpl _$$PaymentReconciliationImplFromJson(
     );
 
 Map<String, dynamic> _$$PaymentReconciliationImplToJson(
-    _$PaymentReconciliationImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  val['type'] = instance.type.toJson();
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('kind', instance.kind?.toJson());
-  writeNotNull('period', instance.period?.toJson());
-  writeNotNull('created', instance.created?.toJson());
-  writeNotNull('_created', instance.createdElement?.toJson());
-  writeNotNull('enterer', instance.enterer?.toJson());
-  writeNotNull('issuerType', instance.issuerType?.toJson());
-  writeNotNull('paymentIssuer', instance.paymentIssuer?.toJson());
-  writeNotNull('request', instance.request?.toJson());
-  writeNotNull('requestor', instance.requestor?.toJson());
-  writeNotNull('outcome', instance.outcome?.toJson());
-  writeNotNull('_outcome', instance.outcomeElement?.toJson());
-  writeNotNull('disposition', instance.disposition);
-  writeNotNull('_disposition', instance.dispositionElement?.toJson());
-  writeNotNull('date', instance.date?.toJson());
-  writeNotNull('_date', instance.dateElement?.toJson());
-  writeNotNull('location', instance.location?.toJson());
-  writeNotNull('method', instance.method?.toJson());
-  writeNotNull('cardBrand', instance.cardBrand);
-  writeNotNull('_cardBrand', instance.cardBrandElement?.toJson());
-  writeNotNull('accountNumber', instance.accountNumber);
-  writeNotNull('_accountNumber', instance.accountNumberElement?.toJson());
-  writeNotNull('expirationDate', instance.expirationDate?.toJson());
-  writeNotNull('_expirationDate', instance.expirationDateElement?.toJson());
-  writeNotNull('processor', instance.processor);
-  writeNotNull('_processor', instance.processorElement?.toJson());
-  writeNotNull('referenceNumber', instance.referenceNumber);
-  writeNotNull('_referenceNumber', instance.referenceNumberElement?.toJson());
-  writeNotNull('authorization', instance.authorization);
-  writeNotNull('_authorization', instance.authorizationElement?.toJson());
-  writeNotNull('tenderedAmount', instance.tenderedAmount?.toJson());
-  writeNotNull('returnedAmount', instance.returnedAmount?.toJson());
-  val['amount'] = instance.amount.toJson();
-  writeNotNull('paymentIdentifier', instance.paymentIdentifier?.toJson());
-  writeNotNull(
-      'allocation', instance.allocation?.map((e) => e.toJson()).toList());
-  writeNotNull('formCode', instance.formCode?.toJson());
-  writeNotNull(
-      'processNote', instance.processNote?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$PaymentReconciliationImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'type': instance.type,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'kind': instance.kind,
+      'period': instance.period,
+      'created': instance.created,
+      '_created': instance.createdElement,
+      'enterer': instance.enterer,
+      'issuerType': instance.issuerType,
+      'paymentIssuer': instance.paymentIssuer,
+      'request': instance.request,
+      'requestor': instance.requestor,
+      'outcome': instance.outcome,
+      '_outcome': instance.outcomeElement,
+      'disposition': instance.disposition,
+      '_disposition': instance.dispositionElement,
+      'date': instance.date,
+      '_date': instance.dateElement,
+      'location': instance.location,
+      'method': instance.method,
+      'cardBrand': instance.cardBrand,
+      '_cardBrand': instance.cardBrandElement,
+      'accountNumber': instance.accountNumber,
+      '_accountNumber': instance.accountNumberElement,
+      'expirationDate': instance.expirationDate,
+      '_expirationDate': instance.expirationDateElement,
+      'processor': instance.processor,
+      '_processor': instance.processorElement,
+      'referenceNumber': instance.referenceNumber,
+      '_referenceNumber': instance.referenceNumberElement,
+      'authorization': instance.authorization,
+      '_authorization': instance.authorizationElement,
+      'tenderedAmount': instance.tenderedAmount,
+      'returnedAmount': instance.returnedAmount,
+      'amount': instance.amount,
+      'paymentIdentifier': instance.paymentIdentifier,
+      'allocation': instance.allocation,
+      'formCode': instance.formCode,
+      'processNote': instance.processNote,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -460,42 +445,30 @@ _$PaymentReconciliationAllocationImpl
         );
 
 Map<String, dynamic> _$$PaymentReconciliationAllocationImplToJson(
-    _$PaymentReconciliationAllocationImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('identifier', instance.identifier?.toJson());
-  writeNotNull('predecessor', instance.predecessor?.toJson());
-  writeNotNull('target', instance.target?.toJson());
-  writeNotNull('targetItemString', instance.targetItemString);
-  writeNotNull('_targetItemString', instance.targetItemStringElement?.toJson());
-  writeNotNull('targetItemIdentifier', instance.targetItemIdentifier?.toJson());
-  writeNotNull(
-      'targetItemPositiveInt', instance.targetItemPositiveInt?.toJson());
-  writeNotNull('_targetItemPositiveInt',
-      instance.targetItemPositiveIntElement?.toJson());
-  writeNotNull('encounter', instance.encounter?.toJson());
-  writeNotNull('account', instance.account?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('submitter', instance.submitter?.toJson());
-  writeNotNull('response', instance.response?.toJson());
-  writeNotNull('date', instance.date?.toJson());
-  writeNotNull('_date', instance.dateElement?.toJson());
-  writeNotNull('responsible', instance.responsible?.toJson());
-  writeNotNull('payee', instance.payee?.toJson());
-  writeNotNull('amount', instance.amount?.toJson());
-  return val;
-}
+        _$PaymentReconciliationAllocationImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'predecessor': instance.predecessor,
+      'target': instance.target,
+      'targetItemString': instance.targetItemString,
+      '_targetItemString': instance.targetItemStringElement,
+      'targetItemIdentifier': instance.targetItemIdentifier,
+      'targetItemPositiveInt': instance.targetItemPositiveInt,
+      '_targetItemPositiveInt': instance.targetItemPositiveIntElement,
+      'encounter': instance.encounter,
+      'account': instance.account,
+      'type': instance.type,
+      'submitter': instance.submitter,
+      'response': instance.response,
+      'date': instance.date,
+      '_date': instance.dateElement,
+      'responsible': instance.responsible,
+      'payee': instance.payee,
+      'amount': instance.amount,
+    };
 
 _$PaymentReconciliationProcessNoteImpl
     _$$PaymentReconciliationProcessNoteImplFromJson(
@@ -521,23 +494,13 @@ _$PaymentReconciliationProcessNoteImpl
         );
 
 Map<String, dynamic> _$$PaymentReconciliationProcessNoteImplToJson(
-    _$PaymentReconciliationProcessNoteImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('_type', instance.typeElement?.toJson());
-  writeNotNull('text', instance.text);
-  writeNotNull('_text', instance.textElement?.toJson());
-  return val;
-}
+        _$PaymentReconciliationProcessNoteImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'type': instance.type,
+      '_type': instance.typeElement,
+      'text': instance.text,
+      '_text': instance.textElement,
+    };

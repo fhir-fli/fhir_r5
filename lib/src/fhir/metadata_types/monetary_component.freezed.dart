@@ -54,8 +54,12 @@ mixin _$MonetaryComponent {
   /// [amount] Explicit value amount to be used.
   Money? get amount => throw _privateConstructorUsedError;
 
+  /// Serializes this MonetaryComponent to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of MonetaryComponent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MonetaryComponentCopyWith<MonetaryComponent> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -90,6 +94,8 @@ class _$MonetaryComponentCopyWithImpl<$Res, $Val extends MonetaryComponent>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MonetaryComponent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -138,6 +144,8 @@ class _$MonetaryComponentCopyWithImpl<$Res, $Val extends MonetaryComponent>
     ) as $Val);
   }
 
+  /// Create a copy of MonetaryComponent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -150,6 +158,8 @@ class _$MonetaryComponentCopyWithImpl<$Res, $Val extends MonetaryComponent>
     });
   }
 
+  /// Create a copy of MonetaryComponent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MoneyCopyWith<$Res>? get amount {
@@ -195,6 +205,8 @@ class __$$MonetaryComponentImplCopyWithImpl<$Res>
       $Res Function(_$MonetaryComponentImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MonetaryComponent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -341,7 +353,7 @@ class _$MonetaryComponentImpl extends _MonetaryComponent {
             (identical(other.amount, amount) || other.amount == amount));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -354,7 +366,9 @@ class _$MonetaryComponentImpl extends _MonetaryComponent {
       factorElement,
       amount);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MonetaryComponent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MonetaryComponentImplCopyWith<_$MonetaryComponentImpl> get copyWith =>
@@ -384,12 +398,10 @@ abstract class _MonetaryComponent extends MonetaryComponent {
   factory _MonetaryComponent.fromJson(Map<String, dynamic> json) =
       _$MonetaryComponentImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -397,37 +409,41 @@ abstract class _MonetaryComponent extends MonetaryComponent {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [type] base | surcharge | deduction | discount | tax | informational.
-  FhirCode? get type;
   @override
+  FhirCode? get type;
 
   /// [typeElement] ("_type") Extensions for type
+  @override
   @JsonKey(name: '_type')
   PrimitiveElement? get typeElement;
-  @override
 
   /// [code] Codes may be used to differentiate between kinds of taxes,
   ///  surcharges, discounts etc.
-  CodeableConcept? get code;
   @override
+  CodeableConcept? get code;
 
   /// [factor] Factor used for calculating this component.
-  FhirDecimal? get factor;
   @override
+  FhirDecimal? get factor;
 
   /// [factorElement] ("_factor") Extensions for factor
+  @override
   @JsonKey(name: '_factor')
   PrimitiveElement? get factorElement;
-  @override
 
   /// [amount] Explicit value amount to be used.
-  Money? get amount;
   @override
-  @JsonKey(ignore: true)
+  Money? get amount;
+
+  /// Create a copy of MonetaryComponent
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MonetaryComponentImplCopyWith<_$MonetaryComponentImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -286,7 +286,7 @@ class InventoryItem with _$InventoryItem implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [InventoryItemName] A functional description of an inventory item used in

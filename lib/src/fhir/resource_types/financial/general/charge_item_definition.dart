@@ -595,7 +595,7 @@ class ChargeItemDefinition
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [ChargeItemDefinitionApplicability] The ChargeItemDefinition resource

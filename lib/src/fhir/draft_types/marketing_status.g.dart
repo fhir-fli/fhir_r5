@@ -37,25 +37,15 @@ _$MarketingStatusImpl _$$MarketingStatusImplFromJson(
     );
 
 Map<String, dynamic> _$$MarketingStatusImplToJson(
-    _$MarketingStatusImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('country', instance.country?.toJson());
-  writeNotNull('jurisdiction', instance.jurisdiction?.toJson());
-  val['status'] = instance.status.toJson();
-  writeNotNull('dateRange', instance.dateRange?.toJson());
-  writeNotNull('restoreDate', instance.restoreDate?.toJson());
-  writeNotNull('_restoreDate', instance.restoreDateElement?.toJson());
-  return val;
-}
+        _$MarketingStatusImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'country': instance.country,
+      'jurisdiction': instance.jurisdiction,
+      'status': instance.status,
+      'dateRange': instance.dateRange,
+      'restoreDate': instance.restoreDate,
+      '_restoreDate': instance.restoreDateElement,
+    };

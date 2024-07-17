@@ -101,55 +101,39 @@ _$SpecimenImpl _$$SpecimenImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$SpecimenImplToJson(_$SpecimenImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('accessionIdentifier', instance.accessionIdentifier?.toJson());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('subject', instance.subject?.toJson());
-  writeNotNull('receivedTime', instance.receivedTime?.toJson());
-  writeNotNull('_receivedTime', instance.receivedTimeElement?.toJson());
-  writeNotNull('parent', instance.parent?.map((e) => e.toJson()).toList());
-  writeNotNull('request', instance.request?.map((e) => e.toJson()).toList());
-  writeNotNull('combined', instance.combined?.toJson());
-  writeNotNull('_combined', instance.combinedElement?.toJson());
-  writeNotNull('role', instance.role?.map((e) => e.toJson()).toList());
-  writeNotNull('feature', instance.feature?.map((e) => e.toJson()).toList());
-  writeNotNull('collection', instance.collection?.toJson());
-  writeNotNull(
-      'processing', instance.processing?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'container', instance.container?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'condition', instance.condition?.map((e) => e.toJson()).toList());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$SpecimenImplToJson(_$SpecimenImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'accessionIdentifier': instance.accessionIdentifier,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'type': instance.type,
+      'subject': instance.subject,
+      'receivedTime': instance.receivedTime,
+      '_receivedTime': instance.receivedTimeElement,
+      'parent': instance.parent,
+      'request': instance.request,
+      'combined': instance.combined,
+      '_combined': instance.combinedElement,
+      'role': instance.role,
+      'feature': instance.feature,
+      'collection': instance.collection,
+      'processing': instance.processing,
+      'container': instance.container,
+      'condition': instance.condition,
+      'note': instance.note,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -345,25 +329,15 @@ _$SpecimenFeatureImpl _$$SpecimenFeatureImplFromJson(
     );
 
 Map<String, dynamic> _$$SpecimenFeatureImplToJson(
-    _$SpecimenFeatureImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['type'] = instance.type.toJson();
-  writeNotNull('description', instance.description);
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  return val;
-}
+        _$SpecimenFeatureImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'type': instance.type,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+    };
 
 _$SpecimenCollectionImpl _$$SpecimenCollectionImplFromJson(
         Map<String, dynamic> json) =>
@@ -418,37 +392,24 @@ _$SpecimenCollectionImpl _$$SpecimenCollectionImplFromJson(
     );
 
 Map<String, dynamic> _$$SpecimenCollectionImplToJson(
-    _$SpecimenCollectionImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('collector', instance.collector?.toJson());
-  writeNotNull('collectedDateTime', instance.collectedDateTime?.toJson());
-  writeNotNull(
-      '_collectedDateTime', instance.collectedDateTimeElement?.toJson());
-  writeNotNull('collectedPeriod', instance.collectedPeriod?.toJson());
-  writeNotNull('duration', instance.duration?.toJson());
-  writeNotNull('quantity', instance.quantity?.toJson());
-  writeNotNull('method', instance.method?.toJson());
-  writeNotNull('device', instance.device?.toJson());
-  writeNotNull('procedure', instance.procedure?.toJson());
-  writeNotNull('bodySite', instance.bodySite?.toJson());
-  writeNotNull('fastingStatusCodeableConcept',
-      instance.fastingStatusCodeableConcept?.toJson());
-  writeNotNull(
-      'fastingStatusDuration', instance.fastingStatusDuration?.toJson());
-  return val;
-}
+        _$SpecimenCollectionImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'collector': instance.collector,
+      'collectedDateTime': instance.collectedDateTime,
+      '_collectedDateTime': instance.collectedDateTimeElement,
+      'collectedPeriod': instance.collectedPeriod,
+      'duration': instance.duration,
+      'quantity': instance.quantity,
+      'method': instance.method,
+      'device': instance.device,
+      'procedure': instance.procedure,
+      'bodySite': instance.bodySite,
+      'fastingStatusCodeableConcept': instance.fastingStatusCodeableConcept,
+      'fastingStatusDuration': instance.fastingStatusDuration,
+    };
 
 _$SpecimenProcessingImpl _$$SpecimenProcessingImplFromJson(
         Map<String, dynamic> json) =>
@@ -484,29 +445,19 @@ _$SpecimenProcessingImpl _$$SpecimenProcessingImplFromJson(
     );
 
 Map<String, dynamic> _$$SpecimenProcessingImplToJson(
-    _$SpecimenProcessingImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description);
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('method', instance.method?.toJson());
-  writeNotNull('additive', instance.additive?.map((e) => e.toJson()).toList());
-  writeNotNull('timeDateTime', instance.timeDateTime?.toJson());
-  writeNotNull('_timeDateTime', instance.timeDateTimeElement?.toJson());
-  writeNotNull('timePeriod', instance.timePeriod?.toJson());
-  return val;
-}
+        _$SpecimenProcessingImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'method': instance.method,
+      'additive': instance.additive,
+      'timeDateTime': instance.timeDateTime,
+      '_timeDateTime': instance.timeDateTimeElement,
+      'timePeriod': instance.timePeriod,
+    };
 
 _$SpecimenContainerImpl _$$SpecimenContainerImplFromJson(
         Map<String, dynamic> json) =>
@@ -528,22 +479,12 @@ _$SpecimenContainerImpl _$$SpecimenContainerImplFromJson(
     );
 
 Map<String, dynamic> _$$SpecimenContainerImplToJson(
-    _$SpecimenContainerImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['device'] = instance.device.toJson();
-  writeNotNull('location', instance.location?.toJson());
-  writeNotNull('specimenQuantity', instance.specimenQuantity?.toJson());
-  return val;
-}
+        _$SpecimenContainerImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'device': instance.device,
+      'location': instance.location,
+      'specimenQuantity': instance.specimenQuantity,
+    };

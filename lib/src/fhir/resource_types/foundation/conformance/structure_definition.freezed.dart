@@ -338,8 +338,12 @@ mixin _$StructureDefinition {
   StructureDefinitionDifferential? get differential =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this StructureDefinition to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of StructureDefinition
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $StructureDefinitionCopyWith<StructureDefinition> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -432,6 +436,8 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of StructureDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -740,6 +746,8 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
     ) as $Val);
   }
 
+  /// Create a copy of StructureDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -752,6 +760,8 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
     });
   }
 
+  /// Create a copy of StructureDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -764,6 +774,8 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
     });
   }
 
+  /// Create a copy of StructureDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get versionAlgorithmCoding {
@@ -776,6 +788,8 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
     });
   }
 
+  /// Create a copy of StructureDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $StructureDefinitionSnapshotCopyWith<$Res>? get snapshot {
@@ -789,6 +803,8 @@ class _$StructureDefinitionCopyWithImpl<$Res, $Val extends StructureDefinition>
     });
   }
 
+  /// Create a copy of StructureDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $StructureDefinitionDifferentialCopyWith<$Res>? get differential {
@@ -896,6 +912,8 @@ class __$$StructureDefinitionImplCopyWithImpl<$Res>
       $Res Function(_$StructureDefinitionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of StructureDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1912,7 +1930,7 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
             (identical(other.differential, differential) || other.differential == differential));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1978,7 +1996,9 @@ class _$StructureDefinitionImpl extends _StructureDefinition {
         differential
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of StructureDefinition
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$StructureDefinitionImplCopyWith<_$StructureDefinitionImpl> get copyWith =>
@@ -2067,44 +2087,42 @@ abstract class _StructureDefinition extends StructureDefinition {
   factory _StructureDefinition.fromJson(Map<String, dynamic> json) =
       _$StructureDefinitionImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a StructureDefinition resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.StructureDefinition)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -2112,16 +2130,16 @@ abstract class _StructureDefinition extends StructureDefinition {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -2129,9 +2147,9 @@ abstract class _StructureDefinition extends StructureDefinition {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -2145,8 +2163,8 @@ abstract class _StructureDefinition extends StructureDefinition {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [url] An absolute URI that is used to identify this structure definition
   ///  when it is referenced in a specification, model, design or an instance;
@@ -2155,19 +2173,19 @@ abstract class _StructureDefinition extends StructureDefinition {
   ///  structure definition is (or will be) published. This URL can be the target
   ///  of a canonical reference. It SHALL remain the same when the structure
   ///  definition is stored on different servers.
-  FhirUri? get url;
   @override
+  FhirUri? get url;
 
   /// [urlElement] ("_url") Extensions for url
+  @override
   @JsonKey(name: '_url')
   PrimitiveElement? get urlElement;
-  @override
 
   /// [identifier] A formal identifier that is used to identify this structure
   ///  definition when it is represented in other formats, or referenced in a
   ///  specification, model, design or an instance.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [version] The identifier that is used to identify this version of the
   ///  structure definition when it is referenced in a specification, model,
@@ -2178,221 +2196,221 @@ abstract class _StructureDefinition extends StructureDefinition {
   ///  StructureDefinition.versionAlgorithm[x] element to enable comparisons. If
   ///  there is no managed version available, authors can consider using ISO
   ///  date/time syntax (e.g., '2023-01-01').
-  String? get version;
   @override
+  String? get version;
 
   /// [versionElement] ("_version") Extensions for version
+  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
-  @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  String? get versionAlgorithmString;
   @override
+  String? get versionAlgorithmString;
 
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
+  @override
   @JsonKey(name: '_versionAlgorithmString')
   PrimitiveElement? get versionAlgorithmStringElement;
-  @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  Coding? get versionAlgorithmCoding;
   @override
+  Coding? get versionAlgorithmCoding;
 
   /// [name] A natural language name identifying the structure definition. This
   ///  name should be usable as an identifier for the module by machine
   ///  processing applications such as code generation.
-  String? get name;
   @override
+  String? get name;
 
   /// [nameElement] ("_name") Extensions for name
+  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
-  @override
 
   /// [title] A short, descriptive, user-friendly title for the structure
   ///  definition.
-  String? get title;
   @override
+  String? get title;
 
   /// [titleElement] ("_title") Extensions for title
+  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
-  @override
 
   /// [status] The status of this structure definition. Enables tracking the
   ///  life-cycle of the content.
-  PublicationStatus? get status;
   @override
+  PublicationStatus? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [experimental] A Boolean value to indicate that this structure definition
   ///  is authored for testing purposes (or education/evaluation/marketing) and
   ///  is not intended to be used for genuine usage.
-  FhirBoolean? get experimental;
   @override
+  FhirBoolean? get experimental;
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
+  @override
   @JsonKey(name: '_experimental')
   PrimitiveElement? get experimentalElement;
-  @override
 
   /// [date] The date  (and optionally time) when the structure definition was
   ///  last significantly changed. The date must change when the business version
   ///  changes and it must change if the status code changes. In addition, it
   ///  should change when the substantive content of the structure definition
   ///  changes.
-  FhirDateTime? get date;
   @override
+  FhirDateTime? get date;
 
   /// [dateElement] ("_date") Extensions for date
+  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
-  @override
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the structure definition.
-  String? get publisher;
   @override
+  String? get publisher;
 
   /// [publisherElement] ("_publisher") Extensions for publisher
+  @override
   @JsonKey(name: '_publisher')
   PrimitiveElement? get publisherElement;
-  @override
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
-  List<ContactDetail>? get contact;
   @override
+  List<ContactDetail>? get contact;
 
   /// [description] A free text natural language description of the structure
   ///  definition from a consumer's perspective.
-  FhirMarkdown? get description;
   @override
+  FhirMarkdown? get description;
 
   /// [descriptionElement] ("_description") Extensions for description
+  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
-  @override
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
   ///  categories (gender, age, ...) or may be references to specific programs
   ///  (insurance plans, studies, ...) and may be used to assist with indexing
   ///  and searching for appropriate structure definition instances.
-  List<UsageContext>? get useContext;
   @override
+  List<UsageContext>? get useContext;
 
   /// [jurisdiction] A legal or geographic region in which the structure
   ///  definition is intended to be used.
-  List<CodeableConcept>? get jurisdiction;
   @override
+  List<CodeableConcept>? get jurisdiction;
 
   /// [purpose] Explanation of why this structure definition is needed and why it
   ///  has been designed as it has.
-  FhirMarkdown? get purpose;
   @override
+  FhirMarkdown? get purpose;
 
   /// [purposeElement] ("_purpose") Extensions for purpose
+  @override
   @JsonKey(name: '_purpose')
   PrimitiveElement? get purposeElement;
-  @override
 
   /// [copyright] A copyright statement relating to the structure definition
   ///  and/or its contents. Copyright statements are generally legal restrictions
   ///  on the use and publishing of the structure definition.  The short
   ///  copyright declaration (e.g. (c) '2015+ xyz organization' should be sent in
   ///  the copyrightLabel element.
-  FhirMarkdown? get copyright;
   @override
+  FhirMarkdown? get copyright;
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
+  @override
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement;
-  @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
   ///  optionally whether rights are resctricted. (e.g. 'All rights reserved',
   ///  'Some rights reserved').
-  String? get copyrightLabel;
   @override
+  String? get copyrightLabel;
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
+  @override
   @JsonKey(name: '_copyrightLabel')
   PrimitiveElement? get copyrightLabelElement;
-  @override
 
   /// [keyword] (DEPRECATED) A set of key words or terms from external
   ///  terminologies that may be used to assist with indexing and searching of
   ///  templates nby describing the use of this structure definition, or the
   ///  content it describes.
-  List<Coding>? get keyword;
   @override
+  List<Coding>? get keyword;
 
   /// [fhirVersion] The version of the FHIR specification on which this
   ///  StructureDefinition is based - this is the formal version of the
   ///  specification, without the revision number, e.g.
   ///  [publication].[major].[minor], which is 4.6.0. for this version.
-  FhirCode? get fhirVersion;
   @override
+  FhirCode? get fhirVersion;
 
   /// [fhirVersionElement] ("_fhirVersion") Extensions for fhirVersion
+  @override
   @JsonKey(name: '_fhirVersion')
   PrimitiveElement? get fhirVersionElement;
-  @override
 
   /// [mapping] An external specification that the content is mapped to.
-  List<StructureDefinitionMapping>? get mapping;
   @override
+  List<StructureDefinitionMapping>? get mapping;
 
   /// [kind] Defines the kind of structure that this definition is describing.
-  FhirCode? get kind;
   @override
+  FhirCode? get kind;
 
   /// [kindElement] ("_kind") Extensions for kind
+  @override
   @JsonKey(name: '_kind')
   PrimitiveElement? get kindElement;
-  @override
 
   /// [abstract_] ("abstract") Whether structure this definition describes is
   ///  abstract or not  - that is, whether the structure is not intended to be
   ///  instantiated. For Resources and Data types, abstract types will never be
   ///  exchanged  between systems.
+  @override
   @JsonKey(name: 'abstract')
   FhirBoolean? get abstract_;
-  @override
 
   /// [abstractElement] ("_abstract") Extensions for abstract
+  @override
   @JsonKey(name: '_abstract')
   PrimitiveElement? get abstractElement;
-  @override
 
   /// [context] Identifies the types of resource or data type elements to which
   ///  the extension can be applied. For more guidance on using the 'context'
   ///  element, see the [defining extensions
   ///  page](defining-extensions.html#context).
-  List<StructureDefinitionContext>? get context;
   @override
+  List<StructureDefinitionContext>? get context;
 
   /// [contextInvariant] A set of rules as FHIRPath Invariants about when the
   ///  extension can be used (e.g. co-occurrence variants for the extension). All
   ///  the rules must be true.
-  List<String>? get contextInvariant;
   @override
+  List<String>? get contextInvariant;
 
   /// [contextInvariantElement] ("_contextInvariant") Extensions for
   ///  contextInvariant
+  @override
   @JsonKey(name: '_contextInvariant')
   List<PrimitiveElement>? get contextInvariantElement;
-  @override
 
   /// [type] The type this structure describes. If the derivation kind is
   ///  'specialization' then this is the master definition for a type, and there
@@ -2403,38 +2421,42 @@ abstract class _StructureDefinition extends StructureDefinition {
   ///  http://hl7.org/fhir/StructureDefinition e.g. "string" is a reference to
   ///  http://hl7.org/fhir/StructureDefinition/string. Absolute URLs are only
   ///  allowed in logical models, where they are required.
-  FhirUri? get type;
   @override
+  FhirUri? get type;
 
   /// [typeElement] ("_type") Extensions for type
+  @override
   @JsonKey(name: '_type')
   PrimitiveElement? get typeElement;
-  @override
 
   /// [baseDefinition] An absolute URI that is the base structure from which this
   ///  type is derived, either by specialization or constraint.
-  FhirCanonical? get baseDefinition;
   @override
+  FhirCanonical? get baseDefinition;
 
   /// [derivation] How the type relates to the baseDefinition.
-  FhirCode? get derivation;
   @override
+  FhirCode? get derivation;
 
   /// [derivationElement] ("_derivation") Extensions for derivation
+  @override
   @JsonKey(name: '_derivation')
   PrimitiveElement? get derivationElement;
-  @override
 
   /// [snapshot] A snapshot view is expressed in a standalone form that can be
   ///  used and interpreted without considering the base StructureDefinition.
-  StructureDefinitionSnapshot? get snapshot;
   @override
+  StructureDefinitionSnapshot? get snapshot;
 
   /// [differential] A differential view is expressed relative to the base
   ///  StructureDefinition - a statement of differences that it applies.
-  StructureDefinitionDifferential? get differential;
   @override
-  @JsonKey(ignore: true)
+  StructureDefinitionDifferential? get differential;
+
+  /// Create a copy of StructureDefinition
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$StructureDefinitionImplCopyWith<_$StructureDefinitionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2505,8 +2527,12 @@ mixin _$StructureDefinitionMapping {
   @JsonKey(name: '_comment')
   PrimitiveElement? get commentElement => throw _privateConstructorUsedError;
 
+  /// Serializes this StructureDefinitionMapping to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of StructureDefinitionMapping
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $StructureDefinitionMappingCopyWith<StructureDefinitionMapping>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2543,6 +2569,8 @@ class _$StructureDefinitionMappingCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of StructureDefinitionMapping
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2640,6 +2668,8 @@ class __$$StructureDefinitionMappingImplCopyWithImpl<$Res>
       $Res Function(_$StructureDefinitionMappingImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of StructureDefinitionMapping
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2861,7 +2891,7 @@ class _$StructureDefinitionMappingImpl extends _StructureDefinitionMapping {
                 other.commentElement == commentElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2877,7 +2907,9 @@ class _$StructureDefinitionMappingImpl extends _StructureDefinitionMapping {
       comment,
       commentElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of StructureDefinitionMapping
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$StructureDefinitionMappingImplCopyWith<_$StructureDefinitionMappingImpl>
@@ -2911,12 +2943,10 @@ abstract class _StructureDefinitionMapping extends StructureDefinitionMapping {
   factory _StructureDefinitionMapping.fromJson(Map<String, dynamic> json) =
       _$StructureDefinitionMappingImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2924,9 +2954,9 @@ abstract class _StructureDefinitionMapping extends StructureDefinitionMapping {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2940,48 +2970,52 @@ abstract class _StructureDefinitionMapping extends StructureDefinitionMapping {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identity] An Internal id that is used to identify this mapping set when
   ///  specific mappings are made.
-  FhirId? get identity;
   @override
+  FhirId? get identity;
 
   /// [identityElement] ("_identity") Extensions for identity
+  @override
   @JsonKey(name: '_identity')
   PrimitiveElement? get identityElement;
-  @override
 
   /// [uri] An absolute URI that identifies the specification that this mapping
   ///  is expressed to.
-  FhirUri? get uri;
   @override
+  FhirUri? get uri;
 
   /// [uriElement] ("_uri") Extensions for uri
+  @override
   @JsonKey(name: '_uri')
   PrimitiveElement? get uriElement;
-  @override
 
   /// [name] A name for the specification that is being mapped to.
-  String? get name;
   @override
+  String? get name;
 
   /// [nameElement] ("_name") Extensions for name
+  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
-  @override
 
   /// [comment] Comments about this mapping, including version notes, issues,
   ///  scope limitations, and other important notes for usage.
-  String? get comment;
   @override
+  String? get comment;
 
   /// [commentElement] ("_comment") Extensions for comment
+  @override
   @JsonKey(name: '_comment')
   PrimitiveElement? get commentElement;
+
+  /// Create a copy of StructureDefinitionMapping
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$StructureDefinitionMappingImplCopyWith<_$StructureDefinitionMappingImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3037,8 +3071,12 @@ mixin _$StructureDefinitionContext {
   @JsonKey(name: '_expression')
   PrimitiveElement? get expressionElement => throw _privateConstructorUsedError;
 
+  /// Serializes this StructureDefinitionContext to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of StructureDefinitionContext
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $StructureDefinitionContextCopyWith<StructureDefinitionContext>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3071,6 +3109,8 @@ class _$StructureDefinitionContextCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of StructureDefinitionContext
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3144,6 +3184,8 @@ class __$$StructureDefinitionContextImplCopyWithImpl<$Res>
       $Res Function(_$StructureDefinitionContextImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of StructureDefinitionContext
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3316,7 +3358,7 @@ class _$StructureDefinitionContextImpl extends _StructureDefinitionContext {
                 other.expressionElement == expressionElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3328,7 +3370,9 @@ class _$StructureDefinitionContextImpl extends _StructureDefinitionContext {
       expression,
       expressionElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of StructureDefinitionContext
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$StructureDefinitionContextImplCopyWith<_$StructureDefinitionContextImpl>
@@ -3359,12 +3403,10 @@ abstract class _StructureDefinitionContext extends StructureDefinitionContext {
   factory _StructureDefinitionContext.fromJson(Map<String, dynamic> json) =
       _$StructureDefinitionContextImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3372,9 +3414,9 @@ abstract class _StructureDefinitionContext extends StructureDefinitionContext {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3388,29 +3430,33 @@ abstract class _StructureDefinitionContext extends StructureDefinitionContext {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] Defines how to interpret the expression that defines what the
   ///  context of the extension is.
-  FhirCode? get type;
   @override
+  FhirCode? get type;
 
   /// [typeElement] ("_type") Extensions for type
+  @override
   @JsonKey(name: '_type')
   PrimitiveElement? get typeElement;
-  @override
 
   /// [expression] An expression that defines where an extension can be used in
   ///  resources.
-  String? get expression;
   @override
+  String? get expression;
 
   /// [expressionElement] ("_expression") Extensions for expression
+  @override
   @JsonKey(name: '_expression')
   PrimitiveElement? get expressionElement;
+
+  /// Create a copy of StructureDefinitionContext
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$StructureDefinitionContextImplCopyWith<_$StructureDefinitionContextImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3453,8 +3499,12 @@ mixin _$StructureDefinitionSnapshot {
   /// [element] Captures constraints on each element within the resource.
   List<ElementDefinition> get element => throw _privateConstructorUsedError;
 
+  /// Serializes this StructureDefinitionSnapshot to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of StructureDefinitionSnapshot
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $StructureDefinitionSnapshotCopyWith<StructureDefinitionSnapshot>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3485,6 +3535,8 @@ class _$StructureDefinitionSnapshotCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of StructureDefinitionSnapshot
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3540,6 +3592,8 @@ class __$$StructureDefinitionSnapshotImplCopyWithImpl<$Res>
       $Res Function(_$StructureDefinitionSnapshotImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of StructureDefinitionSnapshot
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3680,7 +3734,7 @@ class _$StructureDefinitionSnapshotImpl extends _StructureDefinitionSnapshot {
             const DeepCollectionEquality().equals(other._element, _element));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3689,7 +3743,9 @@ class _$StructureDefinitionSnapshotImpl extends _StructureDefinitionSnapshot {
       const DeepCollectionEquality().hash(_modifierExtension),
       const DeepCollectionEquality().hash(_element));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of StructureDefinitionSnapshot
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$StructureDefinitionSnapshotImplCopyWith<_$StructureDefinitionSnapshotImpl>
@@ -3717,12 +3773,10 @@ abstract class _StructureDefinitionSnapshot
   factory _StructureDefinitionSnapshot.fromJson(Map<String, dynamic> json) =
       _$StructureDefinitionSnapshotImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3730,9 +3784,9 @@ abstract class _StructureDefinitionSnapshot
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3746,13 +3800,17 @@ abstract class _StructureDefinitionSnapshot
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [element] Captures constraints on each element within the resource.
-  List<ElementDefinition> get element;
   @override
-  @JsonKey(ignore: true)
+  List<ElementDefinition> get element;
+
+  /// Create a copy of StructureDefinitionSnapshot
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$StructureDefinitionSnapshotImplCopyWith<_$StructureDefinitionSnapshotImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3795,8 +3853,12 @@ mixin _$StructureDefinitionDifferential {
   /// [element] Captures constraints on each element within the resource.
   List<ElementDefinition> get element => throw _privateConstructorUsedError;
 
+  /// Serializes this StructureDefinitionDifferential to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of StructureDefinitionDifferential
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $StructureDefinitionDifferentialCopyWith<StructureDefinitionDifferential>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3827,6 +3889,8 @@ class _$StructureDefinitionDifferentialCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of StructureDefinitionDifferential
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3882,6 +3946,8 @@ class __$$StructureDefinitionDifferentialImplCopyWithImpl<$Res>
       $Res Function(_$StructureDefinitionDifferentialImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of StructureDefinitionDifferential
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4023,7 +4089,7 @@ class _$StructureDefinitionDifferentialImpl
             const DeepCollectionEquality().equals(other._element, _element));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4032,7 +4098,9 @@ class _$StructureDefinitionDifferentialImpl
       const DeepCollectionEquality().hash(_modifierExtension),
       const DeepCollectionEquality().hash(_element));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of StructureDefinitionDifferential
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$StructureDefinitionDifferentialImplCopyWith<
@@ -4061,12 +4129,10 @@ abstract class _StructureDefinitionDifferential
   factory _StructureDefinitionDifferential.fromJson(Map<String, dynamic> json) =
       _$StructureDefinitionDifferentialImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4074,9 +4140,9 @@ abstract class _StructureDefinitionDifferential
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4090,13 +4156,17 @@ abstract class _StructureDefinitionDifferential
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [element] Captures constraints on each element within the resource.
-  List<ElementDefinition> get element;
   @override
-  @JsonKey(ignore: true)
+  List<ElementDefinition> get element;
+
+  /// Create a copy of StructureDefinitionDifferential
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$StructureDefinitionDifferentialImplCopyWith<
           _$StructureDefinitionDifferentialImpl>
       get copyWith => throw _privateConstructorUsedError;

@@ -48,28 +48,19 @@ _$SignatureImpl _$$SignatureImplFromJson(Map<String, dynamic> json) =>
           : PrimitiveElement.fromJson(json['_data'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$SignatureImplToJson(_$SignatureImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('type', instance.type?.map((e) => e.toJson()).toList());
-  writeNotNull('when', instance.when?.toJson());
-  writeNotNull('_when', instance.whenElement?.toJson());
-  writeNotNull('who', instance.who?.toJson());
-  writeNotNull('onBehalfOf', instance.onBehalfOf?.toJson());
-  writeNotNull('targetFormat', instance.targetFormat?.toJson());
-  writeNotNull('_targetFormat', instance.targetFormatElement?.toJson());
-  writeNotNull('sigFormat', instance.sigFormat?.toJson());
-  writeNotNull('_sigFormat', instance.sigFormatElement?.toJson());
-  writeNotNull('data', instance.data?.toJson());
-  writeNotNull('_data', instance.dataElement?.toJson());
-  return val;
-}
+Map<String, dynamic> _$$SignatureImplToJson(_$SignatureImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'type': instance.type,
+      'when': instance.when,
+      '_when': instance.whenElement,
+      'who': instance.who,
+      'onBehalfOf': instance.onBehalfOf,
+      'targetFormat': instance.targetFormat,
+      '_targetFormat': instance.targetFormatElement,
+      'sigFormat': instance.sigFormat,
+      '_sigFormat': instance.sigFormatElement,
+      'data': instance.data,
+      '_data': instance.dataElement,
+    };

@@ -87,47 +87,33 @@ _$ClinicalUseDefinitionImpl _$$ClinicalUseDefinitionImplFromJson(
     );
 
 Map<String, dynamic> _$$ClinicalUseDefinitionImplToJson(
-    _$ClinicalUseDefinitionImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('_type', instance.typeElement?.toJson());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  writeNotNull('subject', instance.subject?.map((e) => e.toJson()).toList());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('contraindication', instance.contraindication?.toJson());
-  writeNotNull('indication', instance.indication?.toJson());
-  writeNotNull('interaction', instance.interaction?.toJson());
-  writeNotNull(
-      'population', instance.population?.map((e) => e.toJson()).toList());
-  writeNotNull('library', instance.library_?.map((e) => e.toJson()).toList());
-  writeNotNull('undesirableEffect', instance.undesirableEffect?.toJson());
-  writeNotNull('warning', instance.warning?.toJson());
-  return val;
-}
+        _$ClinicalUseDefinitionImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'type': instance.type,
+      '_type': instance.typeElement,
+      'category': instance.category,
+      'subject': instance.subject,
+      'status': instance.status,
+      'contraindication': instance.contraindication,
+      'indication': instance.indication,
+      'interaction': instance.interaction,
+      'population': instance.population,
+      'library': instance.library_,
+      'undesirableEffect': instance.undesirableEffect,
+      'warning': instance.warning,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -329,32 +315,18 @@ _$ClinicalUseDefinitionContraindicationImpl
         );
 
 Map<String, dynamic> _$$ClinicalUseDefinitionContraindicationImplToJson(
-    _$ClinicalUseDefinitionContraindicationImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'diseaseSymptomProcedure', instance.diseaseSymptomProcedure?.toJson());
-  writeNotNull('diseaseStatus', instance.diseaseStatus?.toJson());
-  writeNotNull(
-      'comorbidity', instance.comorbidity?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'indication', instance.indication?.map((e) => e.toJson()).toList());
-  writeNotNull('applicability', instance.applicability?.toJson());
-  writeNotNull(
-      'otherTherapy', instance.otherTherapy?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$ClinicalUseDefinitionContraindicationImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'diseaseSymptomProcedure': instance.diseaseSymptomProcedure,
+      'diseaseStatus': instance.diseaseStatus,
+      'comorbidity': instance.comorbidity,
+      'indication': instance.indication,
+      'applicability': instance.applicability,
+      'otherTherapy': instance.otherTherapy,
+    };
 
 _$ClinicalUseDefinitionOtherTherapyImpl
     _$$ClinicalUseDefinitionOtherTherapyImplFromJson(
@@ -374,24 +346,14 @@ _$ClinicalUseDefinitionOtherTherapyImpl
         );
 
 Map<String, dynamic> _$$ClinicalUseDefinitionOtherTherapyImplToJson(
-    _$ClinicalUseDefinitionOtherTherapyImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['relationshipType'] = instance.relationshipType.toJson();
-  val['treatment'] = instance.treatment.toJson();
-  return val;
-}
+        _$ClinicalUseDefinitionOtherTherapyImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'relationshipType': instance.relationshipType,
+      'treatment': instance.treatment,
+    };
 
 _$ClinicalUseDefinitionIndicationImpl
     _$$ClinicalUseDefinitionIndicationImplFromJson(Map<String, dynamic> json) =>
@@ -441,36 +403,22 @@ _$ClinicalUseDefinitionIndicationImpl
         );
 
 Map<String, dynamic> _$$ClinicalUseDefinitionIndicationImplToJson(
-    _$ClinicalUseDefinitionIndicationImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'diseaseSymptomProcedure', instance.diseaseSymptomProcedure?.toJson());
-  writeNotNull('diseaseStatus', instance.diseaseStatus?.toJson());
-  writeNotNull(
-      'comorbidity', instance.comorbidity?.map((e) => e.toJson()).toList());
-  writeNotNull('intendedEffect', instance.intendedEffect?.toJson());
-  writeNotNull('durationRange', instance.durationRange?.toJson());
-  writeNotNull('durationString', instance.durationString);
-  writeNotNull('_durationString', instance.durationStringElement?.toJson());
-  writeNotNull('undesirableEffect',
-      instance.undesirableEffect?.map((e) => e.toJson()).toList());
-  writeNotNull('applicability', instance.applicability?.toJson());
-  writeNotNull(
-      'otherTherapy', instance.otherTherapy?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$ClinicalUseDefinitionIndicationImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'diseaseSymptomProcedure': instance.diseaseSymptomProcedure,
+      'diseaseStatus': instance.diseaseStatus,
+      'comorbidity': instance.comorbidity,
+      'intendedEffect': instance.intendedEffect,
+      'durationRange': instance.durationRange,
+      'durationString': instance.durationString,
+      '_durationString': instance.durationStringElement,
+      'undesirableEffect': instance.undesirableEffect,
+      'applicability': instance.applicability,
+      'otherTherapy': instance.otherTherapy,
+    };
 
 _$ClinicalUseDefinitionInteractionImpl
     _$$ClinicalUseDefinitionInteractionImplFromJson(
@@ -504,29 +452,17 @@ _$ClinicalUseDefinitionInteractionImpl
         );
 
 Map<String, dynamic> _$$ClinicalUseDefinitionInteractionImplToJson(
-    _$ClinicalUseDefinitionInteractionImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'interactant', instance.interactant?.map((e) => e.toJson()).toList());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('effect', instance.effect?.toJson());
-  writeNotNull('incidence', instance.incidence?.toJson());
-  writeNotNull(
-      'management', instance.management?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$ClinicalUseDefinitionInteractionImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'interactant': instance.interactant,
+      'type': instance.type,
+      'effect': instance.effect,
+      'incidence': instance.incidence,
+      'management': instance.management,
+    };
 
 _$ClinicalUseDefinitionInteractantImpl
     _$$ClinicalUseDefinitionInteractantImplFromJson(
@@ -550,24 +486,14 @@ _$ClinicalUseDefinitionInteractantImpl
         );
 
 Map<String, dynamic> _$$ClinicalUseDefinitionInteractantImplToJson(
-    _$ClinicalUseDefinitionInteractantImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('itemReference', instance.itemReference?.toJson());
-  writeNotNull('itemCodeableConcept', instance.itemCodeableConcept?.toJson());
-  return val;
-}
+        _$ClinicalUseDefinitionInteractantImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'itemReference': instance.itemReference,
+      'itemCodeableConcept': instance.itemCodeableConcept,
+    };
 
 _$ClinicalUseDefinitionUndesirableEffectImpl
     _$$ClinicalUseDefinitionUndesirableEffectImplFromJson(
@@ -595,27 +521,15 @@ _$ClinicalUseDefinitionUndesirableEffectImpl
         );
 
 Map<String, dynamic> _$$ClinicalUseDefinitionUndesirableEffectImplToJson(
-    _$ClinicalUseDefinitionUndesirableEffectImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'symptomConditionEffect', instance.symptomConditionEffect?.toJson());
-  writeNotNull('classification', instance.classification?.toJson());
-  writeNotNull(
-      'frequencyOfOccurrence', instance.frequencyOfOccurrence?.toJson());
-  return val;
-}
+        _$ClinicalUseDefinitionUndesirableEffectImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'symptomConditionEffect': instance.symptomConditionEffect,
+      'classification': instance.classification,
+      'frequencyOfOccurrence': instance.frequencyOfOccurrence,
+    };
 
 _$ClinicalUseDefinitionWarningImpl _$$ClinicalUseDefinitionWarningImplFromJson(
         Map<String, dynamic> json) =>
@@ -640,22 +554,12 @@ _$ClinicalUseDefinitionWarningImpl _$$ClinicalUseDefinitionWarningImplFromJson(
     );
 
 Map<String, dynamic> _$$ClinicalUseDefinitionWarningImplToJson(
-    _$ClinicalUseDefinitionWarningImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('_description', instance.descriptionElement?.toJson());
-  writeNotNull('code', instance.code?.toJson());
-  return val;
-}
+        _$ClinicalUseDefinitionWarningImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'description': instance.description,
+      '_description': instance.descriptionElement,
+      'code': instance.code,
+    };

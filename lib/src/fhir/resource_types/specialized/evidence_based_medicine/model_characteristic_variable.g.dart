@@ -36,28 +36,15 @@ _$ModelCharacteristicVariableImpl _$$ModelCharacteristicVariableImplFromJson(
     );
 
 Map<String, dynamic> _$$ModelCharacteristicVariableImplToJson(
-    _$ModelCharacteristicVariableImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['variableDefinition'] = instance.variableDefinition.toJson();
-  writeNotNull('handling', instance.handling?.toJson());
-  writeNotNull('_handling', instance.handlingElement?.toJson());
-  writeNotNull(
-      'valueCategory', instance.valueCategory?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'valueQuantity', instance.valueQuantity?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'valueRange', instance.valueRange?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$ModelCharacteristicVariableImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'variableDefinition': instance.variableDefinition,
+      'handling': instance.handling,
+      '_handling': instance.handlingElement,
+      'valueCategory': instance.valueCategory,
+      'valueQuantity': instance.valueQuantity,
+      'valueRange': instance.valueRange,
+    };

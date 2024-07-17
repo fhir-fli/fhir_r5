@@ -308,7 +308,7 @@ class GenomicStudy with _$GenomicStudy implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [GenomicStudyAnalysis] A GenomicStudy is a set of analyses performed to

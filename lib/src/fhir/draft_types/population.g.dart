@@ -34,25 +34,14 @@ _$PopulationImpl _$$PopulationImplFromJson(Map<String, dynamic> json) =>
               json['physiologicalCondition'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$PopulationImplToJson(_$PopulationImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('ageRange', instance.ageRange?.toJson());
-  writeNotNull('ageCodeableConcept', instance.ageCodeableConcept?.toJson());
-  writeNotNull('gender', instance.gender?.toJson());
-  writeNotNull('race', instance.race?.toJson());
-  writeNotNull(
-      'physiologicalCondition', instance.physiologicalCondition?.toJson());
-  return val;
-}
+Map<String, dynamic> _$$PopulationImplToJson(_$PopulationImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'ageRange': instance.ageRange,
+      'ageCodeableConcept': instance.ageCodeableConcept,
+      'gender': instance.gender,
+      'race': instance.race,
+      'physiologicalCondition': instance.physiologicalCondition,
+    };

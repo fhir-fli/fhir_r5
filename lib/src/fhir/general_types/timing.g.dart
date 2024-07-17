@@ -28,27 +28,16 @@ _$TimingImpl _$$TimingImplFromJson(Map<String, dynamic> json) => _$TimingImpl(
           : CodeableConcept.fromJson(json['code'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$TimingImplToJson(_$TimingImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('event', instance.event?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      '_event', instance.eventElement?.map((e) => e.toJson()).toList());
-  writeNotNull('repeat', instance.repeat?.toJson());
-  writeNotNull('code', instance.code?.toJson());
-  return val;
-}
+Map<String, dynamic> _$$TimingImplToJson(_$TimingImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'event': instance.event,
+      '_event': instance.eventElement,
+      'repeat': instance.repeat,
+      'code': instance.code,
+    };
 
 _$TimingRepeatImpl _$$TimingRepeatImplFromJson(Map<String, dynamic> json) =>
     _$TimingRepeatImpl(
@@ -159,57 +148,43 @@ _$TimingRepeatImpl _$$TimingRepeatImplFromJson(Map<String, dynamic> json) =>
           : PrimitiveElement.fromJson(json['_offset'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$TimingRepeatImplToJson(_$TimingRepeatImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('boundsDuration', instance.boundsDuration?.toJson());
-  writeNotNull('boundsRange', instance.boundsRange?.toJson());
-  writeNotNull('boundsPeriod', instance.boundsPeriod?.toJson());
-  writeNotNull('count', instance.count?.toJson());
-  writeNotNull('_count', instance.countElement?.toJson());
-  writeNotNull('countMax', instance.countMax?.toJson());
-  writeNotNull('_countMax', instance.countMaxElement?.toJson());
-  writeNotNull('duration', instance.duration?.toJson());
-  writeNotNull('_duration', instance.durationElement?.toJson());
-  writeNotNull('durationMax', instance.durationMax?.toJson());
-  writeNotNull('_durationMax', instance.durationMaxElement?.toJson());
-  writeNotNull('durationUnit', instance.durationUnit?.toJson());
-  writeNotNull('_durationUnit', instance.durationUnitElement?.toJson());
-  writeNotNull('frequency', instance.frequency?.toJson());
-  writeNotNull('_frequency', instance.frequencyElement?.toJson());
-  writeNotNull('frequencyMax', instance.frequencyMax?.toJson());
-  writeNotNull('_frequencyMax', instance.frequencyMaxElement?.toJson());
-  writeNotNull('period', instance.period?.toJson());
-  writeNotNull('_period', instance.periodElement?.toJson());
-  writeNotNull('periodMax', instance.periodMax?.toJson());
-  writeNotNull('_periodMax', instance.periodMaxElement?.toJson());
-  writeNotNull('periodUnit', instance.periodUnit?.toJson());
-  writeNotNull('_periodUnit', instance.periodUnitElement?.toJson());
-  writeNotNull(
-      'dayOfWeek', instance.dayOfWeek?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      '_dayOfWeek', instance.dayOfWeekElement?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'timeOfDay', instance.timeOfDay?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      '_timeOfDay', instance.timeOfDayElement?.map((e) => e.toJson()).toList());
-  writeNotNull('when', instance.when?.map((e) => e.toJson()).toList());
-  writeNotNull('_when', instance.whenElement?.map((e) => e.toJson()).toList());
-  writeNotNull('offset', instance.offset?.toJson());
-  writeNotNull('_offset', instance.offsetElement?.toJson());
-  return val;
-}
+Map<String, dynamic> _$$TimingRepeatImplToJson(_$TimingRepeatImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'boundsDuration': instance.boundsDuration,
+      'boundsRange': instance.boundsRange,
+      'boundsPeriod': instance.boundsPeriod,
+      'count': instance.count,
+      '_count': instance.countElement,
+      'countMax': instance.countMax,
+      '_countMax': instance.countMaxElement,
+      'duration': instance.duration,
+      '_duration': instance.durationElement,
+      'durationMax': instance.durationMax,
+      '_durationMax': instance.durationMaxElement,
+      'durationUnit': instance.durationUnit,
+      '_durationUnit': instance.durationUnitElement,
+      'frequency': instance.frequency,
+      '_frequency': instance.frequencyElement,
+      'frequencyMax': instance.frequencyMax,
+      '_frequencyMax': instance.frequencyMaxElement,
+      'period': instance.period,
+      '_period': instance.periodElement,
+      'periodMax': instance.periodMax,
+      '_periodMax': instance.periodMaxElement,
+      'periodUnit': instance.periodUnit,
+      '_periodUnit': instance.periodUnitElement,
+      'dayOfWeek': instance.dayOfWeek,
+      '_dayOfWeek': instance.dayOfWeekElement,
+      'timeOfDay': instance.timeOfDay,
+      '_timeOfDay': instance.timeOfDayElement,
+      'when': instance.when,
+      '_when': instance.whenElement,
+      'offset': instance.offset,
+      '_offset': instance.offsetElement,
+    };
 
 const _$UnitsOfTimeEnumMap = {
   UnitsOfTime.s: 's',

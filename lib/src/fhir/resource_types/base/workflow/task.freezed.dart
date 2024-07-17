@@ -264,8 +264,12 @@ mixin _$Task {
   /// [output] Outputs produced by the Task.
   List<TaskOutput>? get output => throw _privateConstructorUsedError;
 
+  /// Serializes this Task to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $TaskCopyWith<Task> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -357,6 +361,8 @@ class _$TaskCopyWithImpl<$Res, $Val extends Task>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -625,6 +631,8 @@ class _$TaskCopyWithImpl<$Res, $Val extends Task>
     ) as $Val);
   }
 
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -637,6 +645,8 @@ class _$TaskCopyWithImpl<$Res, $Val extends Task>
     });
   }
 
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -649,6 +659,8 @@ class _$TaskCopyWithImpl<$Res, $Val extends Task>
     });
   }
 
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get groupIdentifier {
@@ -661,6 +673,8 @@ class _$TaskCopyWithImpl<$Res, $Val extends Task>
     });
   }
 
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get statusReason {
@@ -673,6 +687,8 @@ class _$TaskCopyWithImpl<$Res, $Val extends Task>
     });
   }
 
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get businessStatus {
@@ -685,6 +701,8 @@ class _$TaskCopyWithImpl<$Res, $Val extends Task>
     });
   }
 
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -697,6 +715,8 @@ class _$TaskCopyWithImpl<$Res, $Val extends Task>
     });
   }
 
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get focus {
@@ -709,6 +729,8 @@ class _$TaskCopyWithImpl<$Res, $Val extends Task>
     });
   }
 
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get for_ {
@@ -721,6 +743,8 @@ class _$TaskCopyWithImpl<$Res, $Val extends Task>
     });
   }
 
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get encounter {
@@ -733,6 +757,8 @@ class _$TaskCopyWithImpl<$Res, $Val extends Task>
     });
   }
 
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get requestedPeriod {
@@ -745,6 +771,8 @@ class _$TaskCopyWithImpl<$Res, $Val extends Task>
     });
   }
 
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get executionPeriod {
@@ -757,6 +785,8 @@ class _$TaskCopyWithImpl<$Res, $Val extends Task>
     });
   }
 
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get requester {
@@ -769,6 +799,8 @@ class _$TaskCopyWithImpl<$Res, $Val extends Task>
     });
   }
 
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get owner {
@@ -781,6 +813,8 @@ class _$TaskCopyWithImpl<$Res, $Val extends Task>
     });
   }
 
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get location {
@@ -793,6 +827,8 @@ class _$TaskCopyWithImpl<$Res, $Val extends Task>
     });
   }
 
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TaskRestrictionCopyWith<$Res>? get restriction {
@@ -908,6 +944,8 @@ class __$$TaskImplCopyWithImpl<$Res>
   __$$TaskImplCopyWithImpl(_$TaskImpl _value, $Res Function(_$TaskImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1802,7 +1840,7 @@ class _$TaskImpl extends _Task {
             const DeepCollectionEquality().equals(other._output, _output));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1860,7 +1898,9 @@ class _$TaskImpl extends _Task {
         const DeepCollectionEquality().hash(_output)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$TaskImplCopyWith<_$TaskImpl> get copyWith =>
@@ -1937,44 +1977,42 @@ abstract class _Task extends Task {
 
   factory _Task.fromJson(Map<String, dynamic> json) = _$TaskImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a Task resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.Task)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1982,16 +2020,16 @@ abstract class _Task extends Task {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1999,9 +2037,9 @@ abstract class _Task extends Task {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -2015,29 +2053,29 @@ abstract class _Task extends Task {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] The business identifier for this task.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [instantiatesCanonical] The URL pointing to a *FHIR*-defined protocol,
   ///  guideline, orderset or other definition that is adhered to in whole or in
   ///  part by this Task.
-  FhirCanonical? get instantiatesCanonical;
   @override
+  FhirCanonical? get instantiatesCanonical;
 
   /// [instantiatesUri] The URL pointing to an *externally* maintained  protocol,
   ///  guideline, orderset or other definition that is adhered to in whole or in
   ///  part by this Task.
-  FhirUri? get instantiatesUri;
   @override
+  FhirUri? get instantiatesUri;
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
+  @override
   @JsonKey(name: '_instantiatesUri')
   PrimitiveElement? get instantiatesUriElement;
-  @override
 
   /// [basedOn] BasedOn refers to a higher-level authorization that triggered the
   ///  creation of the task.  It references a "request" resource such as a
@@ -2046,8 +2084,8 @@ abstract class _Task extends Task {
   ///  resource is referenced by focus.  For example, based on a CarePlan (=
   ///  basedOn), a task is created to fulfill a ServiceRequest ( = focus ) to
   ///  collect a specimen from a patient.
-  List<Reference>? get basedOn;
   @override
+  List<Reference>? get basedOn;
 
   /// [groupIdentifier] A shared identifier common to multiple independent Task
   ///  and Request instances that were activated/authorized more or less
@@ -2056,177 +2094,181 @@ abstract class _Task extends Task {
   ///  ramifications in terms of reporting of results, billing, etc.  E.g. a
   ///  requisition number shared by a set of lab tests ordered together, or a
   ///  prescription number shared by all meds ordered at one time.
-  Identifier? get groupIdentifier;
   @override
+  Identifier? get groupIdentifier;
 
   /// [partOf] Task that this particular task is part of.
-  List<Reference>? get partOf;
   @override
+  List<Reference>? get partOf;
 
   /// [status] The current status of the task.
-  TaskStatus? get status;
   @override
+  TaskStatus? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [statusReason] An explanation as to why this task is held, failed, was
   ///  refused, etc.
-  CodeableReference? get statusReason;
   @override
+  CodeableReference? get statusReason;
 
   /// [businessStatus] Contains business-specific nuances of the business state.
-  CodeableConcept? get businessStatus;
   @override
+  CodeableConcept? get businessStatus;
 
   /// [intent] Indicates the "level" of actionability associated with the Task,
   ///  i.e. i+R[9]Cs this a proposed task, a planned task, an actionable task,
   ///  etc.
-  TaskIntent? get intent;
   @override
+  TaskIntent? get intent;
 
   /// [intentElement] ("_intent") Extensions for intent
+  @override
   @JsonKey(name: '_intent')
   PrimitiveElement? get intentElement;
-  @override
 
   /// [priority] Indicates how quickly the Task should be addressed with respect
   ///  to other requests.
-  RequestPriority? get priority;
   @override
+  RequestPriority? get priority;
 
   /// [priorityElement] ("_priority") Extensions for priority
+  @override
   @JsonKey(name: '_priority')
   PrimitiveElement? get priorityElement;
-  @override
 
   /// [doNotPerform] If true indicates that the Task is asking for the specified
   ///  action to *not* occur.
-  FhirBoolean? get doNotPerform;
   @override
+  FhirBoolean? get doNotPerform;
 
   /// [doNotPerformElement] ("_doNotPerform") Extensions for doNotPerform
+  @override
   @JsonKey(name: '_doNotPerform')
   PrimitiveElement? get doNotPerformElement;
-  @override
 
   /// [code] A name or code (or both) briefly describing what the task involves.
-  CodeableConcept? get code;
   @override
+  CodeableConcept? get code;
 
   /// [description] A free-text description of what is to be performed.
-  String? get description;
   @override
+  String? get description;
 
   /// [descriptionElement] ("_description") Extensions for description
+  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
-  @override
 
   /// [focus] The request being fulfilled or the resource being manipulated
   ///  (changed, suspended, etc.) by this task.
-  Reference? get focus;
   @override
+  Reference? get focus;
 
   /// [for_] ("for") The entity who benefits from the performance of the service
   ///  specified in the task (e.g., the patient).
+  @override
   @JsonKey(name: 'for')
   Reference? get for_;
-  @override
 
   /// [encounter] The healthcare event  (e.g. a patient and healthcare provider
   ///  interaction) during which this task was created.
-  Reference? get encounter;
   @override
+  Reference? get encounter;
 
   /// [requestedPeriod] Indicates the start and/or end of the period of time when
   ///  completion of the task is desired to take place.
-  Period? get requestedPeriod;
   @override
+  Period? get requestedPeriod;
 
   /// [executionPeriod] Identifies the time action was first taken against the
   ///  task (start) and/or the time final action was taken against the task prior
   ///  to marking it as completed (end).
-  Period? get executionPeriod;
   @override
+  Period? get executionPeriod;
 
   /// [authoredOn] The date and time this task was created.
-  FhirDateTime? get authoredOn;
   @override
+  FhirDateTime? get authoredOn;
 
   /// [authoredOnElement] ("_authoredOn") Extensions for authoredOn
+  @override
   @JsonKey(name: '_authoredOn')
   PrimitiveElement? get authoredOnElement;
-  @override
 
   /// [lastModified] The date and time of last modification to this task.
-  FhirDateTime? get lastModified;
   @override
+  FhirDateTime? get lastModified;
 
   /// [lastModifiedElement] ("_lastModified") Extensions for lastModified
+  @override
   @JsonKey(name: '_lastModified')
   PrimitiveElement? get lastModifiedElement;
-  @override
 
   /// [requester] The creator of the task.
-  Reference? get requester;
   @override
+  Reference? get requester;
 
   /// [requestedPerformer] The kind of participant or specific participant that
   ///  should perform the task.
-  List<CodeableReference>? get requestedPerformer;
   @override
+  List<CodeableReference>? get requestedPerformer;
 
   /// [owner] Party responsible for managing task execution.
-  Reference? get owner;
   @override
+  Reference? get owner;
 
   /// [performer] The entity who performed the requested task.
-  List<TaskPerformer>? get performer;
   @override
+  List<TaskPerformer>? get performer;
 
   /// [location] Principal physical location where this task is performed.
-  Reference? get location;
   @override
+  Reference? get location;
 
   /// [reason] A description, code, or reference indicating why this task needs
   ///  to be performed.
-  List<CodeableReference>? get reason;
   @override
+  List<CodeableReference>? get reason;
 
   /// [insurance] Insurance plans, coverage extensions, pre-authorizations and/or
   ///  pre-determinations that may be relevant to the Task.
-  List<Reference>? get insurance;
   @override
+  List<Reference>? get insurance;
 
   /// [note] Free-text information captured about the task as it progresses.
-  List<Annotation>? get note;
   @override
+  List<Annotation>? get note;
 
   /// [relevantHistory] Links to Provenance records for past versions of this
   ///  Task that identify key state transitions or updates that are likely to be
   ///  relevant to a user looking at the current version of the task.
-  List<Reference>? get relevantHistory;
   @override
+  List<Reference>? get relevantHistory;
 
   /// [restriction] If the Task.focus is a request resource and the task is
   ///  seeking fulfillment (i.e. is asking for the request to be actioned), this
   ///  element identifies any limitations on what parts of the referenced request
   ///  should be actioned.
-  TaskRestriction? get restriction;
   @override
+  TaskRestriction? get restriction;
 
   /// [input] Additional information that may be needed in the execution of the
   ///  task.
-  List<TaskInput>? get input;
   @override
+  List<TaskInput>? get input;
 
   /// [output] Outputs produced by the Task.
-  List<TaskOutput>? get output;
   @override
-  @JsonKey(ignore: true)
+  List<TaskOutput>? get output;
+
+  /// Create a copy of Task
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$TaskImplCopyWith<_$TaskImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2272,8 +2314,12 @@ mixin _$TaskPerformer {
   /// [actor] The actor or entity who performed the task.
   Reference get actor => throw _privateConstructorUsedError;
 
+  /// Serializes this TaskPerformer to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of TaskPerformer
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $TaskPerformerCopyWith<TaskPerformer> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2305,6 +2351,8 @@ class _$TaskPerformerCopyWithImpl<$Res, $Val extends TaskPerformer>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of TaskPerformer
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2338,6 +2386,8 @@ class _$TaskPerformerCopyWithImpl<$Res, $Val extends TaskPerformer>
     ) as $Val);
   }
 
+  /// Create a copy of TaskPerformer
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get function_ {
@@ -2350,6 +2400,8 @@ class _$TaskPerformerCopyWithImpl<$Res, $Val extends TaskPerformer>
     });
   }
 
+  /// Create a copy of TaskPerformer
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get actor {
@@ -2388,6 +2440,8 @@ class __$$TaskPerformerImplCopyWithImpl<$Res>
       _$TaskPerformerImpl _value, $Res Function(_$TaskPerformerImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of TaskPerformer
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2532,7 +2586,7 @@ class _$TaskPerformerImpl extends _TaskPerformer {
             (identical(other.actor, actor) || other.actor == actor));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2542,7 +2596,9 @@ class _$TaskPerformerImpl extends _TaskPerformer {
       function_,
       actor);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of TaskPerformer
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$TaskPerformerImplCopyWith<_$TaskPerformerImpl> get copyWith =>
@@ -2568,12 +2624,10 @@ abstract class _TaskPerformer extends TaskPerformer {
   factory _TaskPerformer.fromJson(Map<String, dynamic> json) =
       _$TaskPerformerImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2581,9 +2635,9 @@ abstract class _TaskPerformer extends TaskPerformer {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2597,18 +2651,22 @@ abstract class _TaskPerformer extends TaskPerformer {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [function_] ("function") A code or description of the performer of the task.
+  @override
   @JsonKey(name: 'function')
   CodeableConcept? get function_;
-  @override
 
   /// [actor] The actor or entity who performed the task.
-  Reference get actor;
   @override
-  @JsonKey(ignore: true)
+  Reference get actor;
+
+  /// Create a copy of TaskPerformer
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$TaskPerformerImplCopyWith<_$TaskPerformerImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2665,8 +2723,12 @@ mixin _$TaskRestriction {
   ///  recipient/target, to identify who is fulfillment is sought for.
   List<Reference>? get recipient => throw _privateConstructorUsedError;
 
+  /// Serializes this TaskRestriction to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of TaskRestriction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $TaskRestrictionCopyWith<TaskRestriction> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2699,6 +2761,8 @@ class _$TaskRestrictionCopyWithImpl<$Res, $Val extends TaskRestriction>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of TaskRestriction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2742,6 +2806,8 @@ class _$TaskRestrictionCopyWithImpl<$Res, $Val extends TaskRestriction>
     ) as $Val);
   }
 
+  /// Create a copy of TaskRestriction
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get period {
@@ -2784,6 +2850,8 @@ class __$$TaskRestrictionImplCopyWithImpl<$Res>
       _$TaskRestrictionImpl _value, $Res Function(_$TaskRestrictionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of TaskRestriction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2967,7 +3035,7 @@ class _$TaskRestrictionImpl extends _TaskRestriction {
                 .equals(other._recipient, _recipient));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2979,7 +3047,9 @@ class _$TaskRestrictionImpl extends _TaskRestriction {
       period,
       const DeepCollectionEquality().hash(_recipient));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of TaskRestriction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$TaskRestrictionImplCopyWith<_$TaskRestrictionImpl> get copyWith =>
@@ -3008,12 +3078,10 @@ abstract class _TaskRestriction extends TaskRestriction {
   factory _TaskRestriction.fromJson(Map<String, dynamic> json) =
       _$TaskRestrictionImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3021,9 +3089,9 @@ abstract class _TaskRestriction extends TaskRestriction {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3037,30 +3105,34 @@ abstract class _TaskRestriction extends TaskRestriction {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [repetitions] Indicates the number of times the requested action should
   ///  occur.
-  FhirPositiveInt? get repetitions;
   @override
+  FhirPositiveInt? get repetitions;
 
   /// [repetitionsElement] ("_repetitions") Extensions for repetitions
+  @override
   @JsonKey(name: '_repetitions')
   PrimitiveElement? get repetitionsElement;
-  @override
 
   /// [period] The time-period for which fulfillment is sought. This must fall
   ///  within the overall time period authorized in the referenced request.  E.g.
   ///  ServiceRequest.occurance[x].
-  Period? get period;
   @override
+  Period? get period;
 
   /// [recipient] For requests that are targeted to more than one potential
   ///  recipient/target, to identify who is fulfillment is sought for.
-  List<Reference>? get recipient;
   @override
-  @JsonKey(ignore: true)
+  List<Reference>? get recipient;
+
+  /// Create a copy of TaskRestriction
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$TaskRestrictionImplCopyWith<_$TaskRestrictionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3368,8 +3440,12 @@ mixin _$TaskInput {
   /// [valueMeta] The value of the input parameter as a basic type.
   FhirMeta? get valueMeta => throw _privateConstructorUsedError;
 
+  /// Serializes this TaskInput to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $TaskInputCopyWith<TaskInput> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3509,6 +3585,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3907,6 +3985,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     ) as $Val);
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get type {
@@ -3915,6 +3995,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AddressCopyWith<$Res>? get valueAddress {
@@ -3927,6 +4009,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get valueAge {
@@ -3939,6 +4023,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AnnotationCopyWith<$Res>? get valueAnnotation {
@@ -3951,6 +4037,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get valueAttachment {
@@ -3963,6 +4051,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get valueCodeableConcept {
@@ -3976,6 +4066,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get valueCodeableReference {
@@ -3989,6 +4081,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get valueCoding {
@@ -4001,6 +4095,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactPointCopyWith<$Res>? get valueContactPoint {
@@ -4013,6 +4109,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CountCopyWith<$Res>? get valueCount {
@@ -4025,6 +4123,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DistanceCopyWith<$Res>? get valueDistance {
@@ -4037,6 +4137,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get valueDuration {
@@ -4049,6 +4151,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $HumanNameCopyWith<$Res>? get valueHumanName {
@@ -4061,6 +4165,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get valueIdentifier {
@@ -4073,6 +4179,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MoneyCopyWith<$Res>? get valueMoney {
@@ -4085,6 +4193,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get valuePeriod {
@@ -4097,6 +4207,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get valueQuantity {
@@ -4109,6 +4221,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get valueRange {
@@ -4121,6 +4235,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get valueRatio {
@@ -4133,6 +4249,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioRangeCopyWith<$Res>? get valueRatioRange {
@@ -4145,6 +4263,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get valueReference {
@@ -4157,6 +4277,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SampledDataCopyWith<$Res>? get valueSampledData {
@@ -4169,6 +4291,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SignatureCopyWith<$Res>? get valueSignature {
@@ -4181,6 +4305,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get valueTiming {
@@ -4193,6 +4319,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactDetailCopyWith<$Res>? get valueContactDetail {
@@ -4205,6 +4333,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DataRequirementCopyWith<$Res>? get valueDataRequirement {
@@ -4218,6 +4348,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirExpressionCopyWith<$Res>? get valueExpression {
@@ -4230,6 +4362,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ParameterDefinitionCopyWith<$Res>? get valueParameterDefinition {
@@ -4243,6 +4377,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RelatedArtifactCopyWith<$Res>? get valueRelatedArtifact {
@@ -4256,6 +4392,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TriggerDefinitionCopyWith<$Res>? get valueTriggerDefinition {
@@ -4269,6 +4407,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $UsageContextCopyWith<$Res>? get valueUsageContext {
@@ -4281,6 +4421,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AvailabilityCopyWith<$Res>? get valueAvailability {
@@ -4293,6 +4435,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ExtendedContactDetailCopyWith<$Res>? get valueExtendedContactDetail {
@@ -4306,6 +4450,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DosageCopyWith<$Res>? get valueDosage {
@@ -4318,6 +4464,8 @@ class _$TaskInputCopyWithImpl<$Res, $Val extends TaskInput>
     });
   }
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get valueMeta {
@@ -4502,6 +4650,8 @@ class __$$TaskInputImplCopyWithImpl<$Res>
       _$TaskInputImpl _value, $Res Function(_$TaskInputImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5502,7 +5652,7 @@ class _$TaskInputImpl extends _TaskInput {
             (identical(other.valueMeta, valueMeta) || other.valueMeta == valueMeta));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -5586,7 +5736,9 @@ class _$TaskInputImpl extends _TaskInput {
         valueMeta
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$TaskInputImplCopyWith<_$TaskInputImpl> get copyWith =>
@@ -5696,12 +5848,10 @@ abstract class _TaskInput extends TaskInput {
   factory _TaskInput.fromJson(Map<String, dynamic> json) =
       _$TaskInputImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5709,9 +5859,9 @@ abstract class _TaskInput extends TaskInput {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5725,334 +5875,338 @@ abstract class _TaskInput extends TaskInput {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] A code or description indicating how the input is intended to be
   ///  used as part of the task execution.
-  CodeableConcept get type;
   @override
+  CodeableConcept get type;
 
   /// [valueBase64Binary] The value of the input parameter as a basic type.
-  FhirBase64Binary? get valueBase64Binary;
   @override
+  FhirBase64Binary? get valueBase64Binary;
 
   /// [valueBase64BinaryElement] ("_valueBase64Binary") Extensions for
   ///  valueBase64Binary
+  @override
   @JsonKey(name: '_valueBase64Binary')
   PrimitiveElement? get valueBase64BinaryElement;
-  @override
 
   /// [valueBoolean] The value of the input parameter as a basic type.
-  FhirBoolean? get valueBoolean;
   @override
+  FhirBoolean? get valueBoolean;
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
+  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
-  @override
 
   /// [valueCanonical] The value of the input parameter as a basic type.
-  FhirCanonical? get valueCanonical;
   @override
+  FhirCanonical? get valueCanonical;
 
   /// [valueCanonicalElement] ("_valueCanonical") Extensions for valueCanonical
+  @override
   @JsonKey(name: '_valueCanonical')
   PrimitiveElement? get valueCanonicalElement;
-  @override
 
   /// [valueCode] The value of the input parameter as a basic type.
-  FhirCode? get valueCode;
   @override
+  FhirCode? get valueCode;
 
   /// [valueCodeElement] ("_valueCode") Extensions for valueCode
+  @override
   @JsonKey(name: '_valueCode')
   PrimitiveElement? get valueCodeElement;
-  @override
 
   /// [valueDate] The value of the input parameter as a basic type.
-  FhirDate? get valueDate;
   @override
+  FhirDate? get valueDate;
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
+  @override
   @JsonKey(name: '_valueDate')
   PrimitiveElement? get valueDateElement;
-  @override
 
   /// [valueDateTime] The value of the input parameter as a basic type.
-  FhirDateTime? get valueDateTime;
   @override
+  FhirDateTime? get valueDateTime;
 
   /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
+  @override
   @JsonKey(name: '_valueDateTime')
   PrimitiveElement? get valueDateTimeElement;
-  @override
 
   /// [valueDecimal] The value of the input parameter as a basic type.
-  FhirDecimal? get valueDecimal;
   @override
+  FhirDecimal? get valueDecimal;
 
   /// [valueDecimalElement] ("_valueDecimal") Extensions for valueDecimal
+  @override
   @JsonKey(name: '_valueDecimal')
   PrimitiveElement? get valueDecimalElement;
-  @override
 
   /// [valueId] The value of the input parameter as a basic type.
-  FhirId? get valueId;
   @override
+  FhirId? get valueId;
 
   /// [valueIdElement] ("_valueId") Extensions for valueId
+  @override
   @JsonKey(name: '_valueId')
   PrimitiveElement? get valueIdElement;
-  @override
 
   /// [valueInstant] The value of the input parameter as a basic type.
-  FhirInstant? get valueInstant;
   @override
+  FhirInstant? get valueInstant;
 
   /// [valueInstantElement] ("_valueInstant") Extensions for valueInstant
+  @override
   @JsonKey(name: '_valueInstant')
   PrimitiveElement? get valueInstantElement;
-  @override
 
   /// [valueInteger] The value of the input parameter as a basic type.
-  FhirInteger? get valueInteger;
   @override
+  FhirInteger? get valueInteger;
 
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
+  @override
   @JsonKey(name: '_valueInteger')
   PrimitiveElement? get valueIntegerElement;
-  @override
 
   /// [valueInteger64] The value of the input parameter as a basic type.
-  FhirInteger64? get valueInteger64;
   @override
+  FhirInteger64? get valueInteger64;
 
   /// [valueInteger64Element] ("_valueInteger64") Extensions for valueInteger64
+  @override
   @JsonKey(name: '_valueInteger64')
   PrimitiveElement? get valueInteger64Element;
-  @override
 
   /// [valueMarkdown] The value of the input parameter as a basic type.
-  FhirMarkdown? get valueMarkdown;
   @override
+  FhirMarkdown? get valueMarkdown;
 
   /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
+  @override
   @JsonKey(name: '_valueMarkdown')
   PrimitiveElement? get valueMarkdownElement;
-  @override
 
   /// [valueOid] The value of the input parameter as a basic type.
-  FhirId? get valueOid;
   @override
+  FhirId? get valueOid;
 
   /// [valueOidElement] ("_valueOid") Extensions for valueOid
+  @override
   @JsonKey(name: '_valueOid')
   PrimitiveElement? get valueOidElement;
-  @override
 
   /// [valuePositiveInt] The value of the input parameter as a basic type.
-  FhirPositiveInt? get valuePositiveInt;
   @override
+  FhirPositiveInt? get valuePositiveInt;
 
   /// [valuePositiveIntElement] ("_valuePositiveInt") Extensions for
   ///  valuePositiveInt
+  @override
   @JsonKey(name: '_valuePositiveInt')
   PrimitiveElement? get valuePositiveIntElement;
-  @override
 
   /// [valueString] The value of the input parameter as a basic type.
-  String? get valueString;
   @override
+  String? get valueString;
 
   /// [valueStringElement] ("_valueString") Extensions for valueString
+  @override
   @JsonKey(name: '_valueString')
   PrimitiveElement? get valueStringElement;
-  @override
 
   /// [valueTime] The value of the input parameter as a basic type.
-  FhirTime? get valueTime;
   @override
+  FhirTime? get valueTime;
 
   /// [valueTimeElement] ("_valueTime") Extensions for valueTime
+  @override
   @JsonKey(name: '_valueTime')
   PrimitiveElement? get valueTimeElement;
-  @override
 
   /// [valueUnsignedInt] The value of the input parameter as a basic type.
-  FhirUnsignedInt? get valueUnsignedInt;
   @override
+  FhirUnsignedInt? get valueUnsignedInt;
 
   /// [valueUnsignedIntElement] ("_valueUnsignedInt") Extensions for
   ///  valueUnsignedInt
+  @override
   @JsonKey(name: '_valueUnsignedInt')
   PrimitiveElement? get valueUnsignedIntElement;
-  @override
 
   /// [valueUri] The value of the input parameter as a basic type.
-  FhirUri? get valueUri;
   @override
+  FhirUri? get valueUri;
 
   /// [valueUriElement] ("_valueUri") Extensions for valueUri
+  @override
   @JsonKey(name: '_valueUri')
   PrimitiveElement? get valueUriElement;
-  @override
 
   /// [valueUrl] The value of the input parameter as a basic type.
-  FhirUrl? get valueUrl;
   @override
+  FhirUrl? get valueUrl;
 
   /// [valueUrlElement] ("_valueUrl") Extensions for valueUrl
+  @override
   @JsonKey(name: '_valueUrl')
   PrimitiveElement? get valueUrlElement;
-  @override
 
   /// [valueUuid] The value of the input parameter as a basic type.
-  FhirId? get valueUuid;
   @override
+  FhirId? get valueUuid;
 
   /// [valueUuidElement] ("_valueUuid") Extensions for valueUuid
+  @override
   @JsonKey(name: '_valueUuid')
   PrimitiveElement? get valueUuidElement;
-  @override
 
   /// [valueAddress] The value of the input parameter as a basic type.
-  Address? get valueAddress;
   @override
+  Address? get valueAddress;
 
   /// [valueAge] The value of the input parameter as a basic type.
-  Age? get valueAge;
   @override
+  Age? get valueAge;
 
   /// [valueAnnotation] The value of the input parameter as a basic type.
-  Annotation? get valueAnnotation;
   @override
+  Annotation? get valueAnnotation;
 
   /// [valueAttachment] The value of the input parameter as a basic type.
-  Attachment? get valueAttachment;
   @override
+  Attachment? get valueAttachment;
 
   /// [valueCodeableConcept] The value of the input parameter as a basic type.
-  CodeableConcept? get valueCodeableConcept;
   @override
+  CodeableConcept? get valueCodeableConcept;
 
   /// [valueCodeableReference] The value of the input parameter as a basic type.
-  CodeableReference? get valueCodeableReference;
   @override
+  CodeableReference? get valueCodeableReference;
 
   /// [valueCoding] The value of the input parameter as a basic type.
-  Coding? get valueCoding;
   @override
+  Coding? get valueCoding;
 
   /// [valueContactPoint] The value of the input parameter as a basic type.
-  ContactPoint? get valueContactPoint;
   @override
+  ContactPoint? get valueContactPoint;
 
   /// [valueCount] The value of the input parameter as a basic type.
-  Count? get valueCount;
   @override
+  Count? get valueCount;
 
   /// [valueDistance] The value of the input parameter as a basic type.
-  Distance? get valueDistance;
   @override
+  Distance? get valueDistance;
 
   /// [valueDuration] The value of the input parameter as a basic type.
-  FhirDuration? get valueDuration;
   @override
+  FhirDuration? get valueDuration;
 
   /// [valueHumanName] The value of the input parameter as a basic type.
-  HumanName? get valueHumanName;
   @override
+  HumanName? get valueHumanName;
 
   /// [valueIdentifier] The value of the input parameter as a basic type.
-  Identifier? get valueIdentifier;
   @override
+  Identifier? get valueIdentifier;
 
   /// [valueMoney] The value of the input parameter as a basic type.
-  Money? get valueMoney;
   @override
+  Money? get valueMoney;
 
   /// [valuePeriod] The value of the input parameter as a basic type.
-  Period? get valuePeriod;
   @override
+  Period? get valuePeriod;
 
   /// [valueQuantity] The value of the input parameter as a basic type.
-  Quantity? get valueQuantity;
   @override
+  Quantity? get valueQuantity;
 
   /// [valueRange] The value of the input parameter as a basic type.
-  Range? get valueRange;
   @override
+  Range? get valueRange;
 
   /// [valueRatio] The value of the input parameter as a basic type.
-  Ratio? get valueRatio;
   @override
+  Ratio? get valueRatio;
 
   /// [valueRatioRange] The value of the input parameter as a basic type.
-  RatioRange? get valueRatioRange;
   @override
+  RatioRange? get valueRatioRange;
 
   /// [valueReference] The value of the input parameter as a basic type.
-  Reference? get valueReference;
   @override
+  Reference? get valueReference;
 
   /// [valueSampledData] The value of the input parameter as a basic type.
-  SampledData? get valueSampledData;
   @override
+  SampledData? get valueSampledData;
 
   /// [valueSignature] The value of the input parameter as a basic type.
-  Signature? get valueSignature;
   @override
+  Signature? get valueSignature;
 
   /// [valueTiming] The value of the input parameter as a basic type.
-  Timing? get valueTiming;
   @override
+  Timing? get valueTiming;
 
   /// [valueContactDetail] The value of the input parameter as a basic type.
-  ContactDetail? get valueContactDetail;
   @override
+  ContactDetail? get valueContactDetail;
 
   /// [valueDataRequirement] The value of the input parameter as a basic type.
-  DataRequirement? get valueDataRequirement;
   @override
+  DataRequirement? get valueDataRequirement;
 
   /// [valueExpression] The value of the input parameter as a basic type.
-  FhirExpression? get valueExpression;
   @override
+  FhirExpression? get valueExpression;
 
   /// [valueParameterDefinition] The value of the input parameter as a basic type.
-  ParameterDefinition? get valueParameterDefinition;
   @override
+  ParameterDefinition? get valueParameterDefinition;
 
   /// [valueRelatedArtifact] The value of the input parameter as a basic type.
-  RelatedArtifact? get valueRelatedArtifact;
   @override
+  RelatedArtifact? get valueRelatedArtifact;
 
   /// [valueTriggerDefinition] The value of the input parameter as a basic type.
-  TriggerDefinition? get valueTriggerDefinition;
   @override
+  TriggerDefinition? get valueTriggerDefinition;
 
   /// [valueUsageContext] The value of the input parameter as a basic type.
-  UsageContext? get valueUsageContext;
   @override
+  UsageContext? get valueUsageContext;
 
   /// [valueAvailability] The value of the input parameter as a basic type.
-  Availability? get valueAvailability;
   @override
+  Availability? get valueAvailability;
 
   /// [valueExtendedContactDetail] The value of the input parameter as a basic
   ///  type.
-  ExtendedContactDetail? get valueExtendedContactDetail;
   @override
+  ExtendedContactDetail? get valueExtendedContactDetail;
 
   /// [valueDosage] The value of the input parameter as a basic type.
-  Dosage? get valueDosage;
   @override
+  Dosage? get valueDosage;
 
   /// [valueMeta] The value of the input parameter as a basic type.
-  FhirMeta? get valueMeta;
   @override
-  @JsonKey(ignore: true)
+  FhirMeta? get valueMeta;
+
+  /// Create a copy of TaskInput
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$TaskInputImplCopyWith<_$TaskInputImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6360,8 +6514,12 @@ mixin _$TaskOutput {
   /// [valueMeta] The value of the Output parameter as a basic type.
   FhirMeta? get valueMeta => throw _privateConstructorUsedError;
 
+  /// Serializes this TaskOutput to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $TaskOutputCopyWith<TaskOutput> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6502,6 +6660,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6900,6 +7060,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     ) as $Val);
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get type {
@@ -6908,6 +7070,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AddressCopyWith<$Res>? get valueAddress {
@@ -6920,6 +7084,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get valueAge {
@@ -6932,6 +7098,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AnnotationCopyWith<$Res>? get valueAnnotation {
@@ -6944,6 +7112,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get valueAttachment {
@@ -6956,6 +7126,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get valueCodeableConcept {
@@ -6969,6 +7141,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get valueCodeableReference {
@@ -6982,6 +7156,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get valueCoding {
@@ -6994,6 +7170,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactPointCopyWith<$Res>? get valueContactPoint {
@@ -7006,6 +7184,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CountCopyWith<$Res>? get valueCount {
@@ -7018,6 +7198,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DistanceCopyWith<$Res>? get valueDistance {
@@ -7030,6 +7212,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get valueDuration {
@@ -7042,6 +7226,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $HumanNameCopyWith<$Res>? get valueHumanName {
@@ -7054,6 +7240,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get valueIdentifier {
@@ -7066,6 +7254,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MoneyCopyWith<$Res>? get valueMoney {
@@ -7078,6 +7268,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get valuePeriod {
@@ -7090,6 +7282,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get valueQuantity {
@@ -7102,6 +7296,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get valueRange {
@@ -7114,6 +7310,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get valueRatio {
@@ -7126,6 +7324,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioRangeCopyWith<$Res>? get valueRatioRange {
@@ -7138,6 +7338,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get valueReference {
@@ -7150,6 +7352,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SampledDataCopyWith<$Res>? get valueSampledData {
@@ -7162,6 +7366,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SignatureCopyWith<$Res>? get valueSignature {
@@ -7174,6 +7380,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get valueTiming {
@@ -7186,6 +7394,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactDetailCopyWith<$Res>? get valueContactDetail {
@@ -7198,6 +7408,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DataRequirementCopyWith<$Res>? get valueDataRequirement {
@@ -7211,6 +7423,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirExpressionCopyWith<$Res>? get valueExpression {
@@ -7223,6 +7437,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ParameterDefinitionCopyWith<$Res>? get valueParameterDefinition {
@@ -7236,6 +7452,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RelatedArtifactCopyWith<$Res>? get valueRelatedArtifact {
@@ -7249,6 +7467,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TriggerDefinitionCopyWith<$Res>? get valueTriggerDefinition {
@@ -7262,6 +7482,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $UsageContextCopyWith<$Res>? get valueUsageContext {
@@ -7274,6 +7496,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AvailabilityCopyWith<$Res>? get valueAvailability {
@@ -7286,6 +7510,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ExtendedContactDetailCopyWith<$Res>? get valueExtendedContactDetail {
@@ -7299,6 +7525,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DosageCopyWith<$Res>? get valueDosage {
@@ -7311,6 +7539,8 @@ class _$TaskOutputCopyWithImpl<$Res, $Val extends TaskOutput>
     });
   }
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get valueMeta {
@@ -7495,6 +7725,8 @@ class __$$TaskOutputImplCopyWithImpl<$Res>
       _$TaskOutputImpl _value, $Res Function(_$TaskOutputImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -8495,7 +8727,7 @@ class _$TaskOutputImpl extends _TaskOutput {
             (identical(other.valueMeta, valueMeta) || other.valueMeta == valueMeta));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -8579,7 +8811,9 @@ class _$TaskOutputImpl extends _TaskOutput {
         valueMeta
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$TaskOutputImplCopyWith<_$TaskOutputImpl> get copyWith =>
@@ -8689,12 +8923,10 @@ abstract class _TaskOutput extends TaskOutput {
   factory _TaskOutput.fromJson(Map<String, dynamic> json) =
       _$TaskOutputImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -8702,9 +8934,9 @@ abstract class _TaskOutput extends TaskOutput {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -8718,334 +8950,338 @@ abstract class _TaskOutput extends TaskOutput {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] The name of the Output parameter.
-  CodeableConcept get type;
   @override
+  CodeableConcept get type;
 
   /// [valueBase64Binary] The value of the Output parameter as a basic type.
-  FhirBase64Binary? get valueBase64Binary;
   @override
+  FhirBase64Binary? get valueBase64Binary;
 
   /// [valueBase64BinaryElement] ("_valueBase64Binary") Extensions for
   ///  valueBase64Binary
+  @override
   @JsonKey(name: '_valueBase64Binary')
   PrimitiveElement? get valueBase64BinaryElement;
-  @override
 
   /// [valueBoolean] The value of the Output parameter as a basic type.
-  FhirBoolean? get valueBoolean;
   @override
+  FhirBoolean? get valueBoolean;
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
+  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
-  @override
 
   /// [valueCanonical] The value of the Output parameter as a basic type.
-  FhirCanonical? get valueCanonical;
   @override
+  FhirCanonical? get valueCanonical;
 
   /// [valueCanonicalElement] ("_valueCanonical") Extensions for valueCanonical
+  @override
   @JsonKey(name: '_valueCanonical')
   PrimitiveElement? get valueCanonicalElement;
-  @override
 
   /// [valueCode] The value of the Output parameter as a basic type.
-  FhirCode? get valueCode;
   @override
+  FhirCode? get valueCode;
 
   /// [valueCodeElement] ("_valueCode") Extensions for valueCode
+  @override
   @JsonKey(name: '_valueCode')
   PrimitiveElement? get valueCodeElement;
-  @override
 
   /// [valueDate] The value of the Output parameter as a basic type.
-  FhirDate? get valueDate;
   @override
+  FhirDate? get valueDate;
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
+  @override
   @JsonKey(name: '_valueDate')
   PrimitiveElement? get valueDateElement;
-  @override
 
   /// [valueDateTime] The value of the Output parameter as a basic type.
-  FhirDateTime? get valueDateTime;
   @override
+  FhirDateTime? get valueDateTime;
 
   /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
+  @override
   @JsonKey(name: '_valueDateTime')
   PrimitiveElement? get valueDateTimeElement;
-  @override
 
   /// [valueDecimal] The value of the Output parameter as a basic type.
-  FhirDecimal? get valueDecimal;
   @override
+  FhirDecimal? get valueDecimal;
 
   /// [valueDecimalElement] ("_valueDecimal") Extensions for valueDecimal
+  @override
   @JsonKey(name: '_valueDecimal')
   PrimitiveElement? get valueDecimalElement;
-  @override
 
   /// [valueId] The value of the Output parameter as a basic type.
-  FhirId? get valueId;
   @override
+  FhirId? get valueId;
 
   /// [valueIdElement] ("_valueId") Extensions for valueId
+  @override
   @JsonKey(name: '_valueId')
   PrimitiveElement? get valueIdElement;
-  @override
 
   /// [valueInstant] The value of the Output parameter as a basic type.
-  FhirInstant? get valueInstant;
   @override
+  FhirInstant? get valueInstant;
 
   /// [valueInstantElement] ("_valueInstant") Extensions for valueInstant
+  @override
   @JsonKey(name: '_valueInstant')
   PrimitiveElement? get valueInstantElement;
-  @override
 
   /// [valueInteger] The value of the Output parameter as a basic type.
-  FhirInteger? get valueInteger;
   @override
+  FhirInteger? get valueInteger;
 
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
+  @override
   @JsonKey(name: '_valueInteger')
   PrimitiveElement? get valueIntegerElement;
-  @override
 
   /// [valueInteger64] The value of the Output parameter as a basic type.
-  FhirInteger64? get valueInteger64;
   @override
+  FhirInteger64? get valueInteger64;
 
   /// [valueInteger64Element] ("_valueInteger64") Extensions for valueInteger64
+  @override
   @JsonKey(name: '_valueInteger64')
   PrimitiveElement? get valueInteger64Element;
-  @override
 
   /// [valueMarkdown] The value of the Output parameter as a basic type.
-  FhirMarkdown? get valueMarkdown;
   @override
+  FhirMarkdown? get valueMarkdown;
 
   /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
+  @override
   @JsonKey(name: '_valueMarkdown')
   PrimitiveElement? get valueMarkdownElement;
-  @override
 
   /// [valueOid] The value of the Output parameter as a basic type.
-  FhirId? get valueOid;
   @override
+  FhirId? get valueOid;
 
   /// [valueOidElement] ("_valueOid") Extensions for valueOid
+  @override
   @JsonKey(name: '_valueOid')
   PrimitiveElement? get valueOidElement;
-  @override
 
   /// [valuePositiveInt] The value of the Output parameter as a basic type.
-  FhirPositiveInt? get valuePositiveInt;
   @override
+  FhirPositiveInt? get valuePositiveInt;
 
   /// [valuePositiveIntElement] ("_valuePositiveInt") Extensions for
   ///  valuePositiveInt
+  @override
   @JsonKey(name: '_valuePositiveInt')
   PrimitiveElement? get valuePositiveIntElement;
-  @override
 
   /// [valueString] The value of the Output parameter as a basic type.
-  String? get valueString;
   @override
+  String? get valueString;
 
   /// [valueStringElement] ("_valueString") Extensions for valueString
+  @override
   @JsonKey(name: '_valueString')
   PrimitiveElement? get valueStringElement;
-  @override
 
   /// [valueTime] The value of the Output parameter as a basic type.
-  FhirTime? get valueTime;
   @override
+  FhirTime? get valueTime;
 
   /// [valueTimeElement] ("_valueTime") Extensions for valueTime
+  @override
   @JsonKey(name: '_valueTime')
   PrimitiveElement? get valueTimeElement;
-  @override
 
   /// [valueUnsignedInt] The value of the Output parameter as a basic type.
-  FhirUnsignedInt? get valueUnsignedInt;
   @override
+  FhirUnsignedInt? get valueUnsignedInt;
 
   /// [valueUnsignedIntElement] ("_valueUnsignedInt") Extensions for
   ///  valueUnsignedInt
+  @override
   @JsonKey(name: '_valueUnsignedInt')
   PrimitiveElement? get valueUnsignedIntElement;
-  @override
 
   /// [valueUri] The value of the Output parameter as a basic type.
-  FhirUri? get valueUri;
   @override
+  FhirUri? get valueUri;
 
   /// [valueUriElement] ("_valueUri") Extensions for valueUri
+  @override
   @JsonKey(name: '_valueUri')
   PrimitiveElement? get valueUriElement;
-  @override
 
   /// [valueUrl] The value of the Output parameter as a basic type.
-  FhirUrl? get valueUrl;
   @override
+  FhirUrl? get valueUrl;
 
   /// [valueUrlElement] ("_valueUrl") Extensions for valueUrl
+  @override
   @JsonKey(name: '_valueUrl')
   PrimitiveElement? get valueUrlElement;
-  @override
 
   /// [valueUuid] The value of the Output parameter as a basic type.
-  FhirId? get valueUuid;
   @override
+  FhirId? get valueUuid;
 
   /// [valueUuidElement] ("_valueUuid") Extensions for valueUuid
+  @override
   @JsonKey(name: '_valueUuid')
   PrimitiveElement? get valueUuidElement;
-  @override
 
   /// [valueAddress] The value of the Output parameter as a basic type.
-  Address? get valueAddress;
   @override
+  Address? get valueAddress;
 
   /// [valueAge] The value of the Output parameter as a basic type.
-  Age? get valueAge;
   @override
+  Age? get valueAge;
 
   /// [valueAnnotation] The value of the Output parameter as a basic type.
-  Annotation? get valueAnnotation;
   @override
+  Annotation? get valueAnnotation;
 
   /// [valueAttachment] The value of the Output parameter as a basic type.
-  Attachment? get valueAttachment;
   @override
+  Attachment? get valueAttachment;
 
   /// [valueCodeableConcept] The value of the Output parameter as a basic type.
-  CodeableConcept? get valueCodeableConcept;
   @override
+  CodeableConcept? get valueCodeableConcept;
 
   /// [valueCodeableReference] The value of the Output parameter as a basic type.
-  CodeableReference? get valueCodeableReference;
   @override
+  CodeableReference? get valueCodeableReference;
 
   /// [valueCoding] The value of the Output parameter as a basic type.
-  Coding? get valueCoding;
   @override
+  Coding? get valueCoding;
 
   /// [valueContactPoint] The value of the Output parameter as a basic type.
-  ContactPoint? get valueContactPoint;
   @override
+  ContactPoint? get valueContactPoint;
 
   /// [valueCount] The value of the Output parameter as a basic type.
-  Count? get valueCount;
   @override
+  Count? get valueCount;
 
   /// [valueDistance] The value of the Output parameter as a basic type.
-  Distance? get valueDistance;
   @override
+  Distance? get valueDistance;
 
   /// [valueDuration] The value of the Output parameter as a basic type.
-  FhirDuration? get valueDuration;
   @override
+  FhirDuration? get valueDuration;
 
   /// [valueHumanName] The value of the Output parameter as a basic type.
-  HumanName? get valueHumanName;
   @override
+  HumanName? get valueHumanName;
 
   /// [valueIdentifier] The value of the Output parameter as a basic type.
-  Identifier? get valueIdentifier;
   @override
+  Identifier? get valueIdentifier;
 
   /// [valueMoney] The value of the Output parameter as a basic type.
-  Money? get valueMoney;
   @override
+  Money? get valueMoney;
 
   /// [valuePeriod] The value of the Output parameter as a basic type.
-  Period? get valuePeriod;
   @override
+  Period? get valuePeriod;
 
   /// [valueQuantity] The value of the Output parameter as a basic type.
-  Quantity? get valueQuantity;
   @override
+  Quantity? get valueQuantity;
 
   /// [valueRange] The value of the Output parameter as a basic type.
-  Range? get valueRange;
   @override
+  Range? get valueRange;
 
   /// [valueRatio] The value of the Output parameter as a basic type.
-  Ratio? get valueRatio;
   @override
+  Ratio? get valueRatio;
 
   /// [valueRatioRange] The value of the Output parameter as a basic type.
-  RatioRange? get valueRatioRange;
   @override
+  RatioRange? get valueRatioRange;
 
   /// [valueReference] The value of the Output parameter as a basic type.
-  Reference? get valueReference;
   @override
+  Reference? get valueReference;
 
   /// [valueSampledData] The value of the Output parameter as a basic type.
-  SampledData? get valueSampledData;
   @override
+  SampledData? get valueSampledData;
 
   /// [valueSignature] The value of the Output parameter as a basic type.
-  Signature? get valueSignature;
   @override
+  Signature? get valueSignature;
 
   /// [valueTiming] The value of the Output parameter as a basic type.
-  Timing? get valueTiming;
   @override
+  Timing? get valueTiming;
 
   /// [valueContactDetail] The value of the Output parameter as a basic type.
-  ContactDetail? get valueContactDetail;
   @override
+  ContactDetail? get valueContactDetail;
 
   /// [valueDataRequirement] The value of the Output parameter as a basic type.
-  DataRequirement? get valueDataRequirement;
   @override
+  DataRequirement? get valueDataRequirement;
 
   /// [valueExpression] The value of the Output parameter as a basic type.
-  FhirExpression? get valueExpression;
   @override
+  FhirExpression? get valueExpression;
 
   /// [valueParameterDefinition] The value of the Output parameter as a basic
   ///  type.
-  ParameterDefinition? get valueParameterDefinition;
   @override
+  ParameterDefinition? get valueParameterDefinition;
 
   /// [valueRelatedArtifact] The value of the Output parameter as a basic type.
-  RelatedArtifact? get valueRelatedArtifact;
   @override
+  RelatedArtifact? get valueRelatedArtifact;
 
   /// [valueTriggerDefinition] The value of the Output parameter as a basic type.
-  TriggerDefinition? get valueTriggerDefinition;
   @override
+  TriggerDefinition? get valueTriggerDefinition;
 
   /// [valueUsageContext] The value of the Output parameter as a basic type.
-  UsageContext? get valueUsageContext;
   @override
+  UsageContext? get valueUsageContext;
 
   /// [valueAvailability] The value of the Output parameter as a basic type.
-  Availability? get valueAvailability;
   @override
+  Availability? get valueAvailability;
 
   /// [valueExtendedContactDetail] The value of the Output parameter as a basic
   ///  type.
-  ExtendedContactDetail? get valueExtendedContactDetail;
   @override
+  ExtendedContactDetail? get valueExtendedContactDetail;
 
   /// [valueDosage] The value of the Output parameter as a basic type.
-  Dosage? get valueDosage;
   @override
+  Dosage? get valueDosage;
 
   /// [valueMeta] The value of the Output parameter as a basic type.
-  FhirMeta? get valueMeta;
   @override
-  @JsonKey(ignore: true)
+  FhirMeta? get valueMeta;
+
+  /// Create a copy of TaskOutput
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$TaskOutputImplCopyWith<_$TaskOutputImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

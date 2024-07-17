@@ -422,8 +422,12 @@ mixin _$FhirExtension {
   @JsonKey(name: 'valueMeta')
   FhirMeta? get valueMeta => throw _privateConstructorUsedError;
 
+  /// Serializes this FhirExtension to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $FhirExtensionCopyWith<FhirExtension> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -567,6 +571,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -960,6 +966,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     ) as $Val);
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AddressCopyWith<$Res>? get valueAddress {
@@ -972,6 +980,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get valueAge {
@@ -984,6 +994,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AnnotationCopyWith<$Res>? get valueAnnotation {
@@ -996,6 +1008,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get valueAttachment {
@@ -1008,6 +1022,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AvailabilityCopyWith<$Res>? get valueAvailability {
@@ -1020,6 +1036,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get valueCodeableConcept {
@@ -1033,6 +1051,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get valueCodeableReference {
@@ -1046,6 +1066,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get valueCoding {
@@ -1058,6 +1080,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactPointCopyWith<$Res>? get valueContactPoint {
@@ -1070,6 +1094,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CountCopyWith<$Res>? get valueCount {
@@ -1082,6 +1108,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DistanceCopyWith<$Res>? get valueDistance {
@@ -1094,6 +1122,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get valueDuration {
@@ -1106,6 +1136,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $HumanNameCopyWith<$Res>? get valueHumanName {
@@ -1118,6 +1150,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get valueIdentifier {
@@ -1130,6 +1164,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MoneyCopyWith<$Res>? get valueMoney {
@@ -1142,6 +1178,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get valuePeriod {
@@ -1154,6 +1192,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get valueQuantity {
@@ -1166,6 +1206,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get valueRange {
@@ -1178,6 +1220,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get valueRatio {
@@ -1190,6 +1234,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get valueReference {
@@ -1202,6 +1248,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SampledDataCopyWith<$Res>? get valueSampledData {
@@ -1214,6 +1262,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SignatureCopyWith<$Res>? get valueSignature {
@@ -1226,6 +1276,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get valueTiming {
@@ -1238,6 +1290,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactDetailCopyWith<$Res>? get valueContactDetail {
@@ -1250,6 +1304,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContributorCopyWith<$Res>? get valueContributor {
@@ -1262,6 +1318,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DataRequirementCopyWith<$Res>? get valueDataRequirement {
@@ -1275,6 +1333,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirExpressionCopyWith<$Res>? get valueExpression {
@@ -1287,6 +1347,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ParameterDefinitionCopyWith<$Res>? get valueParameterDefinition {
@@ -1300,6 +1362,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RelatedArtifactCopyWith<$Res>? get valueRelatedArtifact {
@@ -1313,6 +1377,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TriggerDefinitionCopyWith<$Res>? get valueTriggerDefinition {
@@ -1326,6 +1392,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $UsageContextCopyWith<$Res>? get valueUsageContext {
@@ -1338,6 +1406,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DosageCopyWith<$Res>? get valueDosage {
@@ -1350,6 +1420,8 @@ class _$FhirExtensionCopyWithImpl<$Res, $Val extends FhirExtension>
     });
   }
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get valueMeta {
@@ -1535,6 +1607,8 @@ class __$$FhirExtensionImplCopyWithImpl<$Res>
       _$FhirExtensionImpl _value, $Res Function(_$FhirExtensionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2612,7 +2686,7 @@ class _$FhirExtensionImpl extends _FhirExtension {
             (identical(other.valueMeta, valueMeta) || other.valueMeta == valueMeta));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -2695,7 +2769,9 @@ class _$FhirExtensionImpl extends _FhirExtension {
         valueMeta
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FhirExtensionImplCopyWith<_$FhirExtensionImpl> get copyWith =>
@@ -2815,13 +2891,11 @@ abstract class _FhirExtension extends FhirExtension {
   factory _FhirExtension.fromJson(Map<String, dynamic> json) =
       _$FhirExtensionImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal
   /// references). This may be any string value that does not contain spaces.
+  @override
   @JsonKey(name: 'id')
   String? get id;
-  @override
 
   /// [extension_] May be used to represent additional information that is not
   /// part of the basic definition of the element. To make the use of fhirExtensions
@@ -2829,455 +2903,459 @@ abstract class _FhirExtension extends FhirExtension {
   /// definition and use of fhirExtensions. Though any implementer can define an
   /// fhirExtension, there is a set of requirements that SHALL be met as part of the
   /// definition of the fhirExtension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [url] Source of the definition for the fhirExtension code - a logical name
   /// or a URL.
+  @override
   @JsonKey(name: 'url')
   FhirUri? get url;
-  @override
 
   /// [_url] Extensions for url
+  @override
   @JsonKey(name: '_url')
   PrimitiveElement? get urlElement;
-  @override
 
   /// [valueBase64Binary] Value of fhirExtension - must be one of a constrained
   /// set of the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueBase64Binary')
   FhirBase64Binary? get valueBase64Binary;
-  @override
 
   /// [_valueBase64Binary] Extensions for valueBase64Binary
+  @override
   @JsonKey(name: '_valueBase64Binary')
   PrimitiveElement? get valueBase64BinaryElement;
-  @override
 
   /// [valueBoolean] Value of fhirExtension - must be one of a constrained set of
   /// the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueBoolean')
   FhirBoolean? get valueBoolean;
-  @override
 
   /// [_valueBoolean] Extensions for valueBoolean
+  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
-  @override
 
   /// [valueCanonical] Value of fhirExtension - must be one of a constrained set
   /// of the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueCanonical')
   FhirCanonical? get valueCanonical;
-  @override
 
   /// [_valueCanonical] Extensions for valueCanonical
+  @override
   @JsonKey(name: '_valueCanonical')
   PrimitiveElement? get valueCanonicalElement;
-  @override
 
   /// [valueCode] Value of fhirExtension - must be one of a constrained set of
   /// the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueCode')
   FhirCode? get valueCode;
-  @override
 
   /// [_valueCode] Extensions for valueCode
+  @override
   @JsonKey(name: '_valueCode')
   PrimitiveElement? get valueCodeElement;
-  @override
 
   /// [valueDate] Value of fhirExtension - must be one of a constrained set of
   /// the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueDate')
   FhirDate? get valueDate;
-  @override
 
   /// [_valueDate] Extensions for valueDate
+  @override
   @JsonKey(name: '_valueDate')
   PrimitiveElement? get valueDateElement;
-  @override
 
   /// [valueDateTime] Value of fhirExtension - must be one of a constrained set
   /// of the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueDateTime')
   FhirDateTime? get valueDateTime;
-  @override
 
   /// [_valueDateTime] Extensions for valueDateTime
+  @override
   @JsonKey(name: '_valueDateTime')
   PrimitiveElement? get valueDateTimeElement;
-  @override
 
   /// [valueDecimal] Value of fhirExtension - must be one of a constrained set of
   /// the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueDecimal')
   FhirDecimal? get valueDecimal;
-  @override
 
   /// [_valueDecimal] Extensions for valueDecimal
+  @override
   @JsonKey(name: '_valueDecimal')
   PrimitiveElement? get valueDecimalElement;
-  @override
 
   /// [valueId] Value of fhirExtension - must be one of a constrained set of the
   /// data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueId')
   FhirId? get valueId;
-  @override
 
   /// [_valueId] Extensions for valueId
+  @override
   @JsonKey(name: '_valueId')
   PrimitiveElement? get valueIdElement;
-  @override
 
   /// [valueInstant] Value of fhirExtension - must be one of a constrained set of
   /// the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueInstant')
   FhirInstant? get valueInstant;
-  @override
 
   /// [_valueInstant] Extensions for valueInstant
+  @override
   @JsonKey(name: '_valueInstant')
   PrimitiveElement? get valueInstantElement;
-  @override
 
   /// [valueInteger] Value of fhirExtension - must be one of a constrained set of
   /// the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueInteger')
   FhirInteger? get valueInteger;
-  @override
 
   /// [_valueInteger] Extensions for valueInteger
+  @override
   @JsonKey(name: '_valueInteger')
   PrimitiveElement? get valueIntegerElement;
-  @override
 
   /// [valueMarkdown] Value of extension - must be one of a constrained set of
   ///  the data types (see [Extensibility](extensibility.html) for a list).
-  FhirInteger64? get valueInteger64;
   @override
+  FhirInteger64? get valueInteger64;
 
   /// [valueMarkdownElement] Extensions for valueMarkdown
+  @override
   @JsonKey(name: '_valueInteger64')
   PrimitiveElement? get valueInteger64Element;
-  @override
 
   /// [_valueMarkdown] Extensions for valueMarkdown
+  @override
   @JsonKey(name: 'valueMarkdown')
   FhirMarkdown? get valueMarkdown;
-  @override
 
   /// [_valueMarkdown] Extensions for valueMarkdown
+  @override
   @JsonKey(name: '_valueMarkdown')
   PrimitiveElement? get valueMarkdownElement;
-  @override
 
   /// [valueOid] Value of extension - must be one of a constrained set of the
   ///  data types (see [Extensibility](extensibility.html) for a list).
-  FhirOid? get valueOid;
   @override
+  FhirOid? get valueOid;
 
   /// [valueOidElement] Extensions for valueOid
+  @override
   @JsonKey(name: '_valueOid')
   PrimitiveElement? get valueOidElement;
-  @override
 
   /// [valuePositiveInt] Value of extension - must be one of a constrained set
   ///  of the data types (see [Extensibility](extensibility.html) for a list).        @JsonKey(name: 'valuePositiveInt') FhirPositiveInt? valuePositiveInt,
+  @override
   @JsonKey(name: 'valuePositiveInt')
   FhirPositiveInt? get valuePositiveInt;
-  @override
 
   /// [valuePositiveIntElement] Extensions for valuePositiveInt
+  @override
   @JsonKey(name: '_valuePositiveInt')
   PrimitiveElement? get valuePositiveIntElement;
-  @override
 
   /// [valueString] Value of extension - must be one of a constrained set of
   ///  the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueString')
   String? get valueString;
-  @override
 
   /// [valueStringElement] Extensions for valueString
+  @override
   @JsonKey(name: '_valueString')
   PrimitiveElement? get valueStringElement;
-  @override
 
   /// [valueTime] Value of extension - must be one of a constrained set of the
   ///  data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueTime')
   FhirTime? get valueTime;
-  @override
 
   /// [valueTimeElement] Extensions for valueTime
+  @override
   @JsonKey(name: '_valueTime')
   PrimitiveElement? get valueTimeElement;
-  @override
 
   /// [valueUnsignedInt] Value of extension - must be one of a constrained set
   ///  of the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueUnsignedInt')
   FhirUnsignedInt? get valueUnsignedInt;
-  @override
 
   /// [valueUnsignedIntElement] Extensions for valueUnsignedInt
+  @override
   @JsonKey(name: '_valueUnsignedInt')
   PrimitiveElement? get valueUnsignedIntElement;
-  @override
 
   /// [valueUri] Value of extension - must be one of a constrained set of the
   ///  data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueUri')
   FhirUri? get valueUri;
-  @override
 
   /// [valueUriElement] Extensions for valueUri
+  @override
   @JsonKey(name: '_valueUri')
   PrimitiveElement? get valueUriElement;
-  @override
 
   /// [valueUrl] Value of extension - must be one of a constrained set of the
   ///  data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueUrl')
   FhirUrl? get valueUrl;
-  @override
 
   /// [valueUrlElement] Extensions for valueUrl
+  @override
   @JsonKey(name: '_valueUrl')
   PrimitiveElement? get valueUrlElement;
-  @override
 
   /// [valueUuid] Value of extension - must be one of a constrained set of the
   ///  data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueUuid')
   FhirUuid? get valueUuid;
-  @override
 
   /// [valueUuidElement] Extensions for valueUuid
+  @override
   @JsonKey(name: '_valueUuid')
   PrimitiveElement? get valueUuidElement;
-  @override
 
   /// [valueAddress] Value of extension - must be one of a constrained set of
   ///  the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueAddress')
   Address? get valueAddress;
-  @override
 
   /// [valueAge] Value of extension - must be one of a constrained set of the
   ///  data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueAge')
   Age? get valueAge;
-  @override
 
   /// [valueAnnotation] Value of extension - must be one of a constrained set
   ///  of the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueAnnotation')
   Annotation? get valueAnnotation;
-  @override
 
   /// [valueAttachment] Value of extension - must be one of a constrained set
   ///  of the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueAttachment')
   Attachment? get valueAttachment;
-  @override
 
   /// [valueAvailability] Value of extension - must be one of a constrained
   ///  set
   ///  of the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueAvailability')
   Availability? get valueAvailability;
-  @override
 
   /// [valueCodeableConcept] Value of extension - must be one of a constrained
   /// set of the data types (see [Extensibility](extensibility.html) for a
   ///  list).
+  @override
   @JsonKey(name: 'valueCodeableConcept')
   CodeableConcept? get valueCodeableConcept;
-  @override
 
   /// [valueCodeableReference] A reference to a resource (by instance), or
   /// instead, a reference to a concept defined in a terminology or ontology
   /// (by class)."
+  @override
   @JsonKey(name: 'valueCodeableReference')
   CodeableReference? get valueCodeableReference;
-  @override
 
   /// [valueCoding] Value of extension - must be one of a constrained set of
   ///  the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueCoding')
   Coding? get valueCoding;
-  @override
 
   /// [valueContactPoint] Value of extension - must be one of a constrained
   ///  set
   ///  of the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueContactPoint')
   ContactPoint? get valueContactPoint;
-  @override
 
   /// [valueCount] Value of extension - must be one of a constrained set of
   ///  the
   ///  data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueCount')
   Count? get valueCount;
-  @override
 
   /// [valueDistance] Value of extension - must be one of a constrained set of
   ///  the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueDistance')
   Distance? get valueDistance;
-  @override
 
   /// [valueDuration] Value of extension - must be one of a constrained set of
   ///  the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueDuration')
   FhirDuration? get valueDuration;
-  @override
 
   /// [valueHumanName] Value of extension - must be one of a constrained set
   ///  of
   ///  the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueHumanName')
   HumanName? get valueHumanName;
-  @override
 
   /// [valueIdentifier] Value of extension - must be one of a constrained set
   ///  of the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueIdentifier')
   Identifier? get valueIdentifier;
-  @override
 
   /// [valueMoney] Value of extension - must be one of a constrained set of
   ///  the
   ///  data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueMoney')
   Money? get valueMoney;
-  @override
 
   /// [valuePeriod] Value of extension - must be one of a constrained set of
   ///  the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valuePeriod')
   Period? get valuePeriod;
-  @override
 
   /// [valueQuantity] Value of extension - must be one of a constrained set of
   ///  the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueQuantity')
   Quantity? get valueQuantity;
-  @override
 
   /// [valueRange] Value of extension - must be one of a constrained set of
   ///  the
   ///  data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueRange')
   Range? get valueRange;
-  @override
 
   /// [valueRatio] Value of extension - must be one of a constrained set of
   ///  the
   ///  data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueRatio')
   Ratio? get valueRatio;
-  @override
 
   /// [valueReference] Value of extension - must be one of a constrained set
   ///  of
   ///  the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueReference')
   Reference? get valueReference;
-  @override
 
   /// [valueSampledData] Value of extension - must be one of a constrained set
   ///  of the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueSampledData')
   SampledData? get valueSampledData;
-  @override
 
   /// [valueSignature] Value of extension - must be one of a constrained set
   ///  of
   ///  the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueSignature')
   Signature? get valueSignature;
-  @override
 
   /// [valueTiming] Value of extension - must be one of a constrained set of
   ///  the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueTiming')
   Timing? get valueTiming;
-  @override
 
   /// [valueContactDetail] Value of extension - must be one of a constrained
   /// set of the data types (see [Extensibility](extensibility.html) for a
   ///  list).
+  @override
   @JsonKey(name: 'valueContactDetail')
   ContactDetail? get valueContactDetail;
-  @override
 
   /// [valueContributor] Value of extension - must be one of a constrained set
   ///  of the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueContributor')
   Contributor? get valueContributor;
-  @override
 
   /// [valueDataRequirement] Value of extension - must be one of a constrained
   /// set of the data types (see [Extensibility](extensibility.html) for a
   ///  list).
+  @override
   @JsonKey(name: 'valueDataRequirement')
   DataRequirement? get valueDataRequirement;
-  @override
 
   /// [valueExpression] Value of extension - must be one of a constrained set
   ///  of the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueExpression')
   FhirExpression? get valueExpression;
-  @override
 
   /// [valueParameterDefinition] Value of extension - must be one of a
   /// constrained set of the data types (see
   ///  [Extensibility](extensibility.html)
   ///  for a list).
+  @override
   @JsonKey(name: 'valueParameterDefinition')
   ParameterDefinition? get valueParameterDefinition;
-  @override
 
   /// [valueRelatedArtifact] Value of extension - must be one of a constrained
   /// set of the data types (see [Extensibility](extensibility.html) for a
   ///  list).
+  @override
   @JsonKey(name: 'valueRelatedArtifact')
   RelatedArtifact? get valueRelatedArtifact;
-  @override
 
   /// [valueTriggerDefinition] Value of extension - must be one of a
   /// constrained set of the data types (see
   ///  [Extensibility](extensibility.html)
   ///  for a list).
+  @override
   @JsonKey(name: 'valueTriggerDefinition')
   TriggerDefinition? get valueTriggerDefinition;
-  @override
 
   /// [valueUsageContext] Value of extension - must be one of a constrained
   ///  set
   ///  of the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueUsageContext')
   UsageContext? get valueUsageContext;
-  @override
 
   /// [valueDosage] Value of extension - must be one of a constrained set of
   ///  the data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueDosage')
   Dosage? get valueDosage;
-  @override
 
   /// [valueMeta] Value of extension - must be one of a constrained set of the
   ///  data types (see [Extensibility](extensibility.html) for a list).
+  @override
   @JsonKey(name: 'valueMeta')
   FhirMeta? get valueMeta;
+
+  /// Create a copy of FhirExtension
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FhirExtensionImplCopyWith<_$FhirExtensionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

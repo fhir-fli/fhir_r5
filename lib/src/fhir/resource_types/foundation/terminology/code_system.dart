@@ -639,7 +639,7 @@ class CodeSystem with _$CodeSystem implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [CodeSystemFilter] The CodeSystem resource is used to declare the existence

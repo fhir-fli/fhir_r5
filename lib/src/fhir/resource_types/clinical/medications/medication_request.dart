@@ -537,7 +537,6 @@ class MedicationRequest with _$MedicationRequest implements DomainResource {
     }
   }
 
-
   /// Another convenience method because more and more I'm transmitting FHIR
   /// data as a String and not a Map
   @override
@@ -561,7 +560,9 @@ class MedicationRequest with _$MedicationRequest implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));}
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
+}
+
 /// [MedicationRequestDispenseRequest] An order or request for both supply of
 ///  the medication and the instructions for administration of the medication
 ///  to a patient. The resource is called "MedicationRequest" rather than

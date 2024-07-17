@@ -102,56 +102,41 @@ _$MeasureReportImpl _$$MeasureReportImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$MeasureReportImplToJson(_$MeasureReportImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('_type', instance.typeElement?.toJson());
-  writeNotNull('dataUpdateType', instance.dataUpdateType?.toJson());
-  writeNotNull('_dataUpdateType', instance.dataUpdateTypeElement?.toJson());
-  writeNotNull('measure', instance.measure?.toJson());
-  writeNotNull('subject', instance.subject?.toJson());
-  writeNotNull('date', instance.date?.toJson());
-  writeNotNull('_date', instance.dateElement?.toJson());
-  writeNotNull('reporter', instance.reporter?.toJson());
-  writeNotNull('reportingVendor', instance.reportingVendor?.toJson());
-  writeNotNull('location', instance.location?.toJson());
-  val['period'] = instance.period.toJson();
-  writeNotNull('inputParameters', instance.inputParameters?.toJson());
-  writeNotNull('scoring', instance.scoring?.toJson());
-  writeNotNull('improvementNotation', instance.improvementNotation?.toJson());
-  writeNotNull('group', instance.group?.map((e) => e.toJson()).toList());
-  writeNotNull('supplementalData',
-      instance.supplementalData?.map((e) => e.toJson()).toList());
-  writeNotNull('evaluatedResource',
-      instance.evaluatedResource?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$MeasureReportImplToJson(_$MeasureReportImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'type': instance.type,
+      '_type': instance.typeElement,
+      'dataUpdateType': instance.dataUpdateType,
+      '_dataUpdateType': instance.dataUpdateTypeElement,
+      'measure': instance.measure,
+      'subject': instance.subject,
+      'date': instance.date,
+      '_date': instance.dateElement,
+      'reporter': instance.reporter,
+      'reportingVendor': instance.reportingVendor,
+      'location': instance.location,
+      'period': instance.period,
+      'inputParameters': instance.inputParameters,
+      'scoring': instance.scoring,
+      'improvementNotation': instance.improvementNotation,
+      'group': instance.group,
+      'supplementalData': instance.supplementalData,
+      'evaluatedResource': instance.evaluatedResource,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -372,39 +357,25 @@ _$MeasureReportGroupImpl _$$MeasureReportGroupImplFromJson(
     );
 
 Map<String, dynamic> _$$MeasureReportGroupImplToJson(
-    _$MeasureReportGroupImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('linkId', instance.linkId);
-  writeNotNull('_linkId', instance.linkIdElement?.toJson());
-  writeNotNull('code', instance.code?.toJson());
-  writeNotNull('subject', instance.subject?.toJson());
-  writeNotNull(
-      'population', instance.population?.map((e) => e.toJson()).toList());
-  writeNotNull('measureScoreQuantity', instance.measureScoreQuantity?.toJson());
-  writeNotNull('measureScoreDateTime', instance.measureScoreDateTime?.toJson());
-  writeNotNull(
-      '_measureScoreDateTime', instance.measureScoreDateTimeElement?.toJson());
-  writeNotNull('measureScoreCodeableConcept',
-      instance.measureScoreCodeableConcept?.toJson());
-  writeNotNull('measureScorePeriod', instance.measureScorePeriod?.toJson());
-  writeNotNull('measureScoreRange', instance.measureScoreRange?.toJson());
-  writeNotNull('measureScoreDuration', instance.measureScoreDuration?.toJson());
-  writeNotNull(
-      'stratifier', instance.stratifier?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$MeasureReportGroupImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'linkId': instance.linkId,
+      '_linkId': instance.linkIdElement,
+      'code': instance.code,
+      'subject': instance.subject,
+      'population': instance.population,
+      'measureScoreQuantity': instance.measureScoreQuantity,
+      'measureScoreDateTime': instance.measureScoreDateTime,
+      '_measureScoreDateTime': instance.measureScoreDateTimeElement,
+      'measureScoreCodeableConcept': instance.measureScoreCodeableConcept,
+      'measureScorePeriod': instance.measureScorePeriod,
+      'measureScoreRange': instance.measureScoreRange,
+      'measureScoreDuration': instance.measureScoreDuration,
+      'stratifier': instance.stratifier,
+    };
 
 _$MeasureReportPopulationImpl _$$MeasureReportPopulationImplFromJson(
         Map<String, dynamic> json) =>
@@ -439,31 +410,20 @@ _$MeasureReportPopulationImpl _$$MeasureReportPopulationImplFromJson(
     );
 
 Map<String, dynamic> _$$MeasureReportPopulationImplToJson(
-    _$MeasureReportPopulationImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('linkId', instance.linkId);
-  writeNotNull('_linkId', instance.linkIdElement?.toJson());
-  writeNotNull('code', instance.code?.toJson());
-  writeNotNull('count', instance.count?.toJson());
-  writeNotNull('_count', instance.countElement?.toJson());
-  writeNotNull('subjectResults', instance.subjectResults?.toJson());
-  writeNotNull(
-      'subjectReport', instance.subjectReport?.map((e) => e.toJson()).toList());
-  writeNotNull('subjects', instance.subjects?.toJson());
-  return val;
-}
+        _$MeasureReportPopulationImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'linkId': instance.linkId,
+      '_linkId': instance.linkIdElement,
+      'code': instance.code,
+      'count': instance.count,
+      '_count': instance.countElement,
+      'subjectResults': instance.subjectResults,
+      'subjectReport': instance.subjectReport,
+      'subjects': instance.subjects,
+    };
 
 _$MeasureReportStratifierImpl _$$MeasureReportStratifierImplFromJson(
         Map<String, dynamic> json) =>
@@ -488,26 +448,16 @@ _$MeasureReportStratifierImpl _$$MeasureReportStratifierImplFromJson(
     );
 
 Map<String, dynamic> _$$MeasureReportStratifierImplToJson(
-    _$MeasureReportStratifierImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('linkId', instance.linkId);
-  writeNotNull('_linkId', instance.linkIdElement?.toJson());
-  writeNotNull('code', instance.code?.toJson());
-  writeNotNull('stratum', instance.stratum?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$MeasureReportStratifierImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'linkId': instance.linkId,
+      '_linkId': instance.linkIdElement,
+      'code': instance.code,
+      'stratum': instance.stratum,
+    };
 
 _$MeasureReportStratumImpl _$$MeasureReportStratumImplFromJson(
         Map<String, dynamic> json) =>
@@ -575,41 +525,27 @@ _$MeasureReportStratumImpl _$$MeasureReportStratumImplFromJson(
     );
 
 Map<String, dynamic> _$$MeasureReportStratumImplToJson(
-    _$MeasureReportStratumImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('valueCodeableConcept', instance.valueCodeableConcept?.toJson());
-  writeNotNull('valueBoolean', instance.valueBoolean?.toJson());
-  writeNotNull('_valueBoolean', instance.valueBooleanElement?.toJson());
-  writeNotNull('valueQuantity', instance.valueQuantity?.toJson());
-  writeNotNull('valueRange', instance.valueRange?.toJson());
-  writeNotNull('valueReference', instance.valueReference?.toJson());
-  writeNotNull(
-      'component', instance.component?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'population', instance.population?.map((e) => e.toJson()).toList());
-  writeNotNull('measureScoreQuantity', instance.measureScoreQuantity?.toJson());
-  writeNotNull('measureScoreDateTime', instance.measureScoreDateTime?.toJson());
-  writeNotNull(
-      '_measureScoreDateTime', instance.measureScoreDateTimeElement?.toJson());
-  writeNotNull('measureScoreCodeableConcept',
-      instance.measureScoreCodeableConcept?.toJson());
-  writeNotNull('measureScorePeriod', instance.measureScorePeriod?.toJson());
-  writeNotNull('measureScoreRange', instance.measureScoreRange?.toJson());
-  writeNotNull('measureScoreDuration', instance.measureScoreDuration?.toJson());
-  return val;
-}
+        _$MeasureReportStratumImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'valueCodeableConcept': instance.valueCodeableConcept,
+      'valueBoolean': instance.valueBoolean,
+      '_valueBoolean': instance.valueBooleanElement,
+      'valueQuantity': instance.valueQuantity,
+      'valueRange': instance.valueRange,
+      'valueReference': instance.valueReference,
+      'component': instance.component,
+      'population': instance.population,
+      'measureScoreQuantity': instance.measureScoreQuantity,
+      'measureScoreDateTime': instance.measureScoreDateTime,
+      '_measureScoreDateTime': instance.measureScoreDateTimeElement,
+      'measureScoreCodeableConcept': instance.measureScoreCodeableConcept,
+      'measureScorePeriod': instance.measureScorePeriod,
+      'measureScoreRange': instance.measureScoreRange,
+      'measureScoreDuration': instance.measureScoreDuration,
+    };
 
 _$MeasureReportComponentImpl _$$MeasureReportComponentImplFromJson(
         Map<String, dynamic> json) =>
@@ -649,31 +585,21 @@ _$MeasureReportComponentImpl _$$MeasureReportComponentImplFromJson(
     );
 
 Map<String, dynamic> _$$MeasureReportComponentImplToJson(
-    _$MeasureReportComponentImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('linkId', instance.linkId);
-  writeNotNull('_linkId', instance.linkIdElement?.toJson());
-  val['code'] = instance.code.toJson();
-  writeNotNull('valueCodeableConcept', instance.valueCodeableConcept?.toJson());
-  writeNotNull('valueBoolean', instance.valueBoolean?.toJson());
-  writeNotNull('_valueBoolean', instance.valueBooleanElement?.toJson());
-  writeNotNull('valueQuantity', instance.valueQuantity?.toJson());
-  writeNotNull('valueRange', instance.valueRange?.toJson());
-  writeNotNull('valueReference', instance.valueReference?.toJson());
-  return val;
-}
+        _$MeasureReportComponentImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'linkId': instance.linkId,
+      '_linkId': instance.linkIdElement,
+      'code': instance.code,
+      'valueCodeableConcept': instance.valueCodeableConcept,
+      'valueBoolean': instance.valueBoolean,
+      '_valueBoolean': instance.valueBooleanElement,
+      'valueQuantity': instance.valueQuantity,
+      'valueRange': instance.valueRange,
+      'valueReference': instance.valueReference,
+    };
 
 _$MeasureReportPopulation1Impl _$$MeasureReportPopulation1ImplFromJson(
         Map<String, dynamic> json) =>
@@ -708,28 +634,17 @@ _$MeasureReportPopulation1Impl _$$MeasureReportPopulation1ImplFromJson(
     );
 
 Map<String, dynamic> _$$MeasureReportPopulation1ImplToJson(
-    _$MeasureReportPopulation1Impl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('linkId', instance.linkId);
-  writeNotNull('_linkId', instance.linkIdElement?.toJson());
-  writeNotNull('code', instance.code?.toJson());
-  writeNotNull('count', instance.count?.toJson());
-  writeNotNull('_count', instance.countElement?.toJson());
-  writeNotNull('subjectResults', instance.subjectResults?.toJson());
-  writeNotNull(
-      'subjectReport', instance.subjectReport?.map((e) => e.toJson()).toList());
-  writeNotNull('subjects', instance.subjects?.toJson());
-  return val;
-}
+        _$MeasureReportPopulation1Impl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'linkId': instance.linkId,
+      '_linkId': instance.linkIdElement,
+      'code': instance.code,
+      'count': instance.count,
+      '_count': instance.countElement,
+      'subjectResults': instance.subjectResults,
+      'subjectReport': instance.subjectReport,
+      'subjects': instance.subjects,
+    };

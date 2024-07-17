@@ -69,40 +69,27 @@ _$SubstanceNucleicAcidImpl _$$SubstanceNucleicAcidImplFromJson(
     );
 
 Map<String, dynamic> _$$SubstanceNucleicAcidImplToJson(
-    _$SubstanceNucleicAcidImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('sequenceType', instance.sequenceType?.toJson());
-  writeNotNull('numberOfSubunits', instance.numberOfSubunits?.toJson());
-  writeNotNull('_numberOfSubunits', instance.numberOfSubunitsElement?.toJson());
-  writeNotNull('areaOfHybridisation', instance.areaOfHybridisation);
-  writeNotNull(
-      '_areaOfHybridisation', instance.areaOfHybridisationElement?.toJson());
-  writeNotNull('oligoNucleotideType', instance.oligoNucleotideType?.toJson());
-  writeNotNull('subunit', instance.subunit?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$SubstanceNucleicAcidImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'sequenceType': instance.sequenceType,
+      'numberOfSubunits': instance.numberOfSubunits,
+      '_numberOfSubunits': instance.numberOfSubunitsElement,
+      'areaOfHybridisation': instance.areaOfHybridisation,
+      '_areaOfHybridisation': instance.areaOfHybridisationElement,
+      'oligoNucleotideType': instance.oligoNucleotideType,
+      'subunit': instance.subunit,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -315,33 +302,23 @@ _$SubstanceNucleicAcidSubunitImpl _$$SubstanceNucleicAcidSubunitImplFromJson(
     );
 
 Map<String, dynamic> _$$SubstanceNucleicAcidSubunitImplToJson(
-    _$SubstanceNucleicAcidSubunitImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('subunit', instance.subunit?.toJson());
-  writeNotNull('_subunit', instance.subunitElement?.toJson());
-  writeNotNull('sequence', instance.sequence);
-  writeNotNull('_sequence', instance.sequenceElement?.toJson());
-  writeNotNull('length', instance.length?.toJson());
-  writeNotNull('_length', instance.lengthElement?.toJson());
-  writeNotNull('sequenceAttachment', instance.sequenceAttachment?.toJson());
-  writeNotNull('fivePrime', instance.fivePrime?.toJson());
-  writeNotNull('threePrime', instance.threePrime?.toJson());
-  writeNotNull('linkage', instance.linkage?.map((e) => e.toJson()).toList());
-  writeNotNull('sugar', instance.sugar?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$SubstanceNucleicAcidSubunitImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'subunit': instance.subunit,
+      '_subunit': instance.subunitElement,
+      'sequence': instance.sequence,
+      '_sequence': instance.sequenceElement,
+      'length': instance.length,
+      '_length': instance.lengthElement,
+      'sequenceAttachment': instance.sequenceAttachment,
+      'fivePrime': instance.fivePrime,
+      'threePrime': instance.threePrime,
+      'linkage': instance.linkage,
+      'sugar': instance.sugar,
+    };
 
 _$SubstanceNucleicAcidLinkageImpl _$$SubstanceNucleicAcidLinkageImplFromJson(
         Map<String, dynamic> json) =>
@@ -373,29 +350,19 @@ _$SubstanceNucleicAcidLinkageImpl _$$SubstanceNucleicAcidLinkageImplFromJson(
     );
 
 Map<String, dynamic> _$$SubstanceNucleicAcidLinkageImplToJson(
-    _$SubstanceNucleicAcidLinkageImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('connectivity', instance.connectivity);
-  writeNotNull('_connectivity', instance.connectivityElement?.toJson());
-  writeNotNull('identifier', instance.identifier?.toJson());
-  writeNotNull('name', instance.name);
-  writeNotNull('_name', instance.nameElement?.toJson());
-  writeNotNull('residueSite', instance.residueSite);
-  writeNotNull('_residueSite', instance.residueSiteElement?.toJson());
-  return val;
-}
+        _$SubstanceNucleicAcidLinkageImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'connectivity': instance.connectivity,
+      '_connectivity': instance.connectivityElement,
+      'identifier': instance.identifier,
+      'name': instance.name,
+      '_name': instance.nameElement,
+      'residueSite': instance.residueSite,
+      '_residueSite': instance.residueSiteElement,
+    };
 
 _$SubstanceNucleicAcidSugarImpl _$$SubstanceNucleicAcidSugarImplFromJson(
         Map<String, dynamic> json) =>
@@ -422,24 +389,14 @@ _$SubstanceNucleicAcidSugarImpl _$$SubstanceNucleicAcidSugarImplFromJson(
     );
 
 Map<String, dynamic> _$$SubstanceNucleicAcidSugarImplToJson(
-    _$SubstanceNucleicAcidSugarImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('identifier', instance.identifier?.toJson());
-  writeNotNull('name', instance.name);
-  writeNotNull('_name', instance.nameElement?.toJson());
-  writeNotNull('residueSite', instance.residueSite);
-  writeNotNull('_residueSite', instance.residueSiteElement?.toJson());
-  return val;
-}
+        _$SubstanceNucleicAcidSugarImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'name': instance.name,
+      '_name': instance.nameElement,
+      'residueSite': instance.residueSite,
+      '_residueSite': instance.residueSiteElement,
+    };

@@ -142,8 +142,12 @@ mixin _$CareTeam {
   /// [note] Comments made about the CareTeam.
   List<Annotation>? get note => throw _privateConstructorUsedError;
 
+  /// Serializes this CareTeam to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CareTeam
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CareTeamCopyWith<CareTeam> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -196,6 +200,8 @@ class _$CareTeamCopyWithImpl<$Res, $Val extends CareTeam>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CareTeam
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -324,6 +330,8 @@ class _$CareTeamCopyWithImpl<$Res, $Val extends CareTeam>
     ) as $Val);
   }
 
+  /// Create a copy of CareTeam
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -336,6 +344,8 @@ class _$CareTeamCopyWithImpl<$Res, $Val extends CareTeam>
     });
   }
 
+  /// Create a copy of CareTeam
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -348,6 +358,8 @@ class _$CareTeamCopyWithImpl<$Res, $Val extends CareTeam>
     });
   }
 
+  /// Create a copy of CareTeam
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get subject {
@@ -360,6 +372,8 @@ class _$CareTeamCopyWithImpl<$Res, $Val extends CareTeam>
     });
   }
 
+  /// Create a copy of CareTeam
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get period {
@@ -426,6 +440,8 @@ class __$$CareTeamImplCopyWithImpl<$Res>
       _$CareTeamImpl _value, $Res Function(_$CareTeamImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CareTeam
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -908,7 +924,7 @@ class _$CareTeamImpl extends _CareTeam {
             const DeepCollectionEquality().equals(other._note, _note));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -938,7 +954,9 @@ class _$CareTeamImpl extends _CareTeam {
         const DeepCollectionEquality().hash(_note)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CareTeam
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CareTeamImplCopyWith<_$CareTeamImpl> get copyWith =>
@@ -985,44 +1003,42 @@ abstract class _CareTeam extends CareTeam {
   factory _CareTeam.fromJson(Map<String, dynamic> json) =
       _$CareTeamImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a CareTeam resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.CareTeam)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1030,16 +1046,16 @@ abstract class _CareTeam extends CareTeam {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1047,9 +1063,9 @@ abstract class _CareTeam extends CareTeam {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1063,72 +1079,76 @@ abstract class _CareTeam extends CareTeam {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] Business identifiers assigned to this care team by the
   ///  performer or other systems which remain constant as the resource is
   ///  updated and propagates from server to server.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [status] Indicates the current state of the care team.
-  CareTeamStatus? get status;
   @override
+  CareTeamStatus? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [category] Identifies what kind of team.  This is to support
   ///  differentiation between multiple co-existing teams, such as care plan
   ///  team, episode of care team, longitudinal care team.
-  List<CodeableConcept>? get category;
   @override
+  List<CodeableConcept>? get category;
 
   /// [name] A label for human use intended to distinguish like teams.  E.g. the
   ///  "red" vs. "green" trauma teams.
-  String? get name;
   @override
+  String? get name;
 
   /// [nameElement] ("_name") Extensions for name
+  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
-  @override
 
   /// [subject] Identifies the patient or group whose intended care is handled by
   ///  the team.
-  Reference? get subject;
   @override
+  Reference? get subject;
 
   /// [period] Indicates when the team did (or is intended to) come into effect
   ///  and end.
-  Period? get period;
   @override
+  Period? get period;
 
   /// [participant] Identifies all people and organizations who are expected to
   ///  be involved in the care team.
-  List<CareTeamParticipant>? get participant;
   @override
+  List<CareTeamParticipant>? get participant;
 
   /// [reason] Describes why the care team exists.
-  List<CodeableReference>? get reason;
   @override
+  List<CodeableReference>? get reason;
 
   /// [managingOrganization] The organization responsible for the care team.
-  List<Reference>? get managingOrganization;
   @override
+  List<Reference>? get managingOrganization;
 
   /// [telecom] A central contact detail for the care team (that applies to all
   ///  members).
-  List<ContactPoint>? get telecom;
   @override
+  List<ContactPoint>? get telecom;
 
   /// [note] Comments made about the CareTeam.
-  List<Annotation>? get note;
   @override
-  @JsonKey(ignore: true)
+  List<Annotation>? get note;
+
+  /// Create a copy of CareTeam
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CareTeamImplCopyWith<_$CareTeamImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1187,8 +1207,12 @@ mixin _$CareTeamParticipant {
   ///  team.
   Timing? get coverageTiming => throw _privateConstructorUsedError;
 
+  /// Serializes this CareTeamParticipant to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CareTeamParticipant
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CareTeamParticipantCopyWith<CareTeamParticipant> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1226,6 +1250,8 @@ class _$CareTeamParticipantCopyWithImpl<$Res, $Val extends CareTeamParticipant>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CareTeamParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1274,6 +1300,8 @@ class _$CareTeamParticipantCopyWithImpl<$Res, $Val extends CareTeamParticipant>
     ) as $Val);
   }
 
+  /// Create a copy of CareTeamParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get role {
@@ -1286,6 +1314,8 @@ class _$CareTeamParticipantCopyWithImpl<$Res, $Val extends CareTeamParticipant>
     });
   }
 
+  /// Create a copy of CareTeamParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get member {
@@ -1298,6 +1328,8 @@ class _$CareTeamParticipantCopyWithImpl<$Res, $Val extends CareTeamParticipant>
     });
   }
 
+  /// Create a copy of CareTeamParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get onBehalfOf {
@@ -1310,6 +1342,8 @@ class _$CareTeamParticipantCopyWithImpl<$Res, $Val extends CareTeamParticipant>
     });
   }
 
+  /// Create a copy of CareTeamParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get coveragePeriod {
@@ -1322,6 +1356,8 @@ class _$CareTeamParticipantCopyWithImpl<$Res, $Val extends CareTeamParticipant>
     });
   }
 
+  /// Create a copy of CareTeamParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get coverageTiming {
@@ -1373,6 +1409,8 @@ class __$$CareTeamParticipantImplCopyWithImpl<$Res>
       $Res Function(_$CareTeamParticipantImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CareTeamParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1556,7 +1594,7 @@ class _$CareTeamParticipantImpl extends _CareTeamParticipant {
                 other.coverageTiming == coverageTiming));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1569,7 +1607,9 @@ class _$CareTeamParticipantImpl extends _CareTeamParticipant {
       coveragePeriod,
       coverageTiming);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CareTeamParticipant
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CareTeamParticipantImplCopyWith<_$CareTeamParticipantImpl> get copyWith =>
@@ -1599,12 +1639,10 @@ abstract class _CareTeamParticipant extends CareTeamParticipant {
   factory _CareTeamParticipant.fromJson(Map<String, dynamic> json) =
       _$CareTeamParticipantImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1612,9 +1650,9 @@ abstract class _CareTeamParticipant extends CareTeamParticipant {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1628,34 +1666,38 @@ abstract class _CareTeamParticipant extends CareTeamParticipant {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [role] Indicates specific responsibility of an individual within the care
   ///  team, such as "Primary care physician", "Trained social worker counselor",
   ///  "Caregiver", etc.
-  CodeableConcept? get role;
   @override
+  CodeableConcept? get role;
 
   /// [member] The specific person or organization who is participating/expected
   ///  to participate in the care team.
-  Reference? get member;
   @override
+  Reference? get member;
 
   /// [onBehalfOf] The organization of the practitioner.
-  Reference? get onBehalfOf;
   @override
+  Reference? get onBehalfOf;
 
   /// [coveragePeriod] When the member is generally available within this care
   ///  team.
-  Period? get coveragePeriod;
   @override
+  Period? get coveragePeriod;
 
   /// [coverageTiming] When the member is generally available within this care
   ///  team.
-  Timing? get coverageTiming;
   @override
-  @JsonKey(ignore: true)
+  Timing? get coverageTiming;
+
+  /// Create a copy of CareTeamParticipant
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CareTeamParticipantImplCopyWith<_$CareTeamParticipantImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

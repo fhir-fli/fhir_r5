@@ -113,8 +113,12 @@ mixin _$SampledData {
   @JsonKey(name: '_data')
   PrimitiveElement? get dataElement => throw _privateConstructorUsedError;
 
+  /// Serializes this SampledData to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SampledData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SampledDataCopyWith<SampledData> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -160,6 +164,8 @@ class _$SampledDataCopyWithImpl<$Res, $Val extends SampledData>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SampledData
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -268,6 +274,8 @@ class _$SampledDataCopyWithImpl<$Res, $Val extends SampledData>
     ) as $Val);
   }
 
+  /// Create a copy of SampledData
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res> get origin {
@@ -319,6 +327,8 @@ class __$$SampledDataImplCopyWithImpl<$Res>
       _$SampledDataImpl _value, $Res Function(_$SampledDataImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SampledData
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -630,7 +640,7 @@ class _$SampledDataImpl extends _SampledData {
                 other.dataElement == dataElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -656,7 +666,9 @@ class _$SampledDataImpl extends _SampledData {
         dataElement
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SampledData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SampledDataImplCopyWith<_$SampledDataImpl> get copyWith =>
@@ -699,12 +711,10 @@ abstract class _SampledData extends SampledData {
   factory _SampledData.fromJson(Map<String, dynamic> json) =
       _$SampledDataImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -712,107 +722,111 @@ abstract class _SampledData extends SampledData {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [origin] The base quantity that a measured value of zero represents. In
   ///  addition, this provides the units of the entire measurement series.
-  Quantity get origin;
   @override
+  Quantity get origin;
 
   /// [interval] Amount of intervalUnits between samples, e.g. milliseconds for
   ///  time-based sampling.
-  FhirDecimal? get interval;
   @override
+  FhirDecimal? get interval;
 
   /// [intervalElement] ("_interval") Extensions for interval
+  @override
   @JsonKey(name: '_interval')
   PrimitiveElement? get intervalElement;
-  @override
 
   /// [intervalUnit] The measurement unit in which the sample interval is
   ///  expressed.
-  FhirCode? get intervalUnit;
   @override
+  FhirCode? get intervalUnit;
 
   /// [intervalUnitElement] ("_intervalUnit") Extensions for intervalUnit
+  @override
   @JsonKey(name: '_intervalUnit')
   PrimitiveElement? get intervalUnitElement;
-  @override
 
   /// [factor] A correction factor that is applied to the sampled data points
   ///  before they are added to the origin.
-  FhirDecimal? get factor;
   @override
+  FhirDecimal? get factor;
 
   /// [factorElement] ("_factor") Extensions for factor
+  @override
   @JsonKey(name: '_factor')
   PrimitiveElement? get factorElement;
-  @override
 
   /// [lowerLimit] The lower limit of detection of the measured points. This is
   ///  needed if any of the data points have the value "L" (lower than detection
   ///  limit).
-  FhirDecimal? get lowerLimit;
   @override
+  FhirDecimal? get lowerLimit;
 
   /// [lowerLimitElement] ("_lowerLimit") Extensions for lowerLimit
+  @override
   @JsonKey(name: '_lowerLimit')
   PrimitiveElement? get lowerLimitElement;
-  @override
 
   /// [upperLimit] The upper limit of detection of the measured points. This is
   ///  needed if any of the data points have the value "U" (higher than detection
   ///  limit).
-  FhirDecimal? get upperLimit;
   @override
+  FhirDecimal? get upperLimit;
 
   /// [upperLimitElement] ("_upperLimit") Extensions for upperLimit
+  @override
   @JsonKey(name: '_upperLimit')
   PrimitiveElement? get upperLimitElement;
-  @override
 
   /// [dimensions] The number of sample points at each time point. If this value
   ///  is greater than one, then the dimensions will be interlaced - all the
   ///  sample points for a point in time will be recorded at once.
-  FhirPositiveInt? get dimensions;
   @override
+  FhirPositiveInt? get dimensions;
 
   /// [dimensionsElement] ("_dimensions") Extensions for dimensions
+  @override
   @JsonKey(name: '_dimensions')
   PrimitiveElement? get dimensionsElement;
-  @override
 
   /// [codeMap] Reference to ConceptMap that defines the codes used in the data.
-  FhirCanonical? get codeMap;
   @override
+  FhirCanonical? get codeMap;
 
   /// [offsets] A series of data points which are decimal values separated by a
   ///  single space (character u20).  The units in which the offsets are
   ///  expressed are found in intervalUnit.  The absolute point at which the
   ///  measurements begin SHALL be conveyed outside the scope of this datatype,
   ///  e.g. Observation.effectiveDateTime for a timing offset.
-  String? get offsets;
   @override
+  String? get offsets;
 
   /// [offsetsElement] ("_offsets") Extensions for offsets
+  @override
   @JsonKey(name: '_offsets')
   PrimitiveElement? get offsetsElement;
-  @override
 
   /// [data] A series of data points which are decimal values or codes separated
   ///  by a single space (character u20). The special codes "E" (error), "L"
   ///  (below detection limit) and "U" (above detection limit) are also defined
   ///  for used in place of decimal values.
-  String? get data;
   @override
+  String? get data;
 
   /// [dataElement] ("_data") Extensions for data
+  @override
   @JsonKey(name: '_data')
   PrimitiveElement? get dataElement;
+
+  /// Create a copy of SampledData
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SampledDataImplCopyWith<_$SampledDataImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

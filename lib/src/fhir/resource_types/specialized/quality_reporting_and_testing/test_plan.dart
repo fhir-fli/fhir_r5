@@ -484,7 +484,7 @@ class TestPlan with _$TestPlan implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [TestPlanDependency] A plan for executing testing on an artifact or

@@ -439,7 +439,7 @@ class MedicationAdministration
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [MedicationAdministrationPerformer] Describes the event of a patient

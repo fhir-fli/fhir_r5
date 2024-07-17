@@ -211,97 +211,73 @@ _$ObservationImpl _$$ObservationImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$ObservationImplToJson(_$ObservationImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'instantiatesCanonical', instance.instantiatesCanonical?.toJson());
-  writeNotNull('_instantiatesCanonical',
-      instance.instantiatesCanonicalElement?.toJson());
-  writeNotNull(
-      'instantiatesReference', instance.instantiatesReference?.toJson());
-  writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'triggeredBy', instance.triggeredBy?.map((e) => e.toJson()).toList());
-  writeNotNull('partOf', instance.partOf?.map((e) => e.toJson()).toList());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  val['code'] = instance.code.toJson();
-  writeNotNull('subject', instance.subject?.toJson());
-  writeNotNull('focus', instance.focus?.map((e) => e.toJson()).toList());
-  writeNotNull('encounter', instance.encounter?.toJson());
-  writeNotNull('effectiveDateTime', instance.effectiveDateTime?.toJson());
-  writeNotNull(
-      '_effectiveDateTime', instance.effectiveDateTimeElement?.toJson());
-  writeNotNull('effectivePeriod', instance.effectivePeriod?.toJson());
-  writeNotNull('effectiveTiming', instance.effectiveTiming?.toJson());
-  writeNotNull('effectiveInstant', instance.effectiveInstant?.toJson());
-  writeNotNull('_effectiveInstant', instance.effectiveInstantElement?.toJson());
-  writeNotNull('issued', instance.issued?.toJson());
-  writeNotNull('_issued', instance.issuedElement?.toJson());
-  writeNotNull(
-      'performer', instance.performer?.map((e) => e.toJson()).toList());
-  writeNotNull('valueQuantity', instance.valueQuantity?.toJson());
-  writeNotNull('valueCodeableConcept', instance.valueCodeableConcept?.toJson());
-  writeNotNull('valueString', instance.valueString);
-  writeNotNull('_valueString', instance.valueStringElement?.toJson());
-  writeNotNull('valueBoolean', instance.valueBoolean?.toJson());
-  writeNotNull('_valueBoolean', instance.valueBooleanElement?.toJson());
-  writeNotNull('valueInteger', instance.valueInteger?.toJson());
-  writeNotNull('_valueInteger', instance.valueIntegerElement?.toJson());
-  writeNotNull('valueRange', instance.valueRange?.toJson());
-  writeNotNull('valueRatio', instance.valueRatio?.toJson());
-  writeNotNull('valueSampledData', instance.valueSampledData?.toJson());
-  writeNotNull('valueTime', instance.valueTime?.toJson());
-  writeNotNull('_valueTime', instance.valueTimeElement?.toJson());
-  writeNotNull('valueDateTime', instance.valueDateTime?.toJson());
-  writeNotNull('_valueDateTime', instance.valueDateTimeElement?.toJson());
-  writeNotNull('valuePeriod', instance.valuePeriod?.toJson());
-  writeNotNull('valueAttachment', instance.valueAttachment?.toJson());
-  writeNotNull('valueReference', instance.valueReference?.toJson());
-  writeNotNull('dataAbsentReason', instance.dataAbsentReason?.toJson());
-  writeNotNull('interpretation',
-      instance.interpretation?.map((e) => e.toJson()).toList());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  writeNotNull('bodySite', instance.bodySite?.toJson());
-  writeNotNull('bodyStructure', instance.bodyStructure?.toJson());
-  writeNotNull('method', instance.method?.toJson());
-  writeNotNull('specimen', instance.specimen?.toJson());
-  writeNotNull('device', instance.device?.toJson());
-  writeNotNull('referenceRange',
-      instance.referenceRange?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'hasMember', instance.hasMember?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'derivedFrom', instance.derivedFrom?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'component', instance.component?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$ObservationImplToJson(_$ObservationImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'instantiatesCanonical': instance.instantiatesCanonical,
+      '_instantiatesCanonical': instance.instantiatesCanonicalElement,
+      'instantiatesReference': instance.instantiatesReference,
+      'basedOn': instance.basedOn,
+      'triggeredBy': instance.triggeredBy,
+      'partOf': instance.partOf,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'category': instance.category,
+      'code': instance.code,
+      'subject': instance.subject,
+      'focus': instance.focus,
+      'encounter': instance.encounter,
+      'effectiveDateTime': instance.effectiveDateTime,
+      '_effectiveDateTime': instance.effectiveDateTimeElement,
+      'effectivePeriod': instance.effectivePeriod,
+      'effectiveTiming': instance.effectiveTiming,
+      'effectiveInstant': instance.effectiveInstant,
+      '_effectiveInstant': instance.effectiveInstantElement,
+      'issued': instance.issued,
+      '_issued': instance.issuedElement,
+      'performer': instance.performer,
+      'valueQuantity': instance.valueQuantity,
+      'valueCodeableConcept': instance.valueCodeableConcept,
+      'valueString': instance.valueString,
+      '_valueString': instance.valueStringElement,
+      'valueBoolean': instance.valueBoolean,
+      '_valueBoolean': instance.valueBooleanElement,
+      'valueInteger': instance.valueInteger,
+      '_valueInteger': instance.valueIntegerElement,
+      'valueRange': instance.valueRange,
+      'valueRatio': instance.valueRatio,
+      'valueSampledData': instance.valueSampledData,
+      'valueTime': instance.valueTime,
+      '_valueTime': instance.valueTimeElement,
+      'valueDateTime': instance.valueDateTime,
+      '_valueDateTime': instance.valueDateTimeElement,
+      'valuePeriod': instance.valuePeriod,
+      'valueAttachment': instance.valueAttachment,
+      'valueReference': instance.valueReference,
+      'dataAbsentReason': instance.dataAbsentReason,
+      'interpretation': instance.interpretation,
+      'note': instance.note,
+      'bodySite': instance.bodySite,
+      'bodyStructure': instance.bodyStructure,
+      'method': instance.method,
+      'specimen': instance.specimen,
+      'device': instance.device,
+      'referenceRange': instance.referenceRange,
+      'hasMember': instance.hasMember,
+      'derivedFrom': instance.derivedFrom,
+      'component': instance.component,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -490,27 +466,17 @@ _$ObservationTriggeredByImpl _$$ObservationTriggeredByImplFromJson(
     );
 
 Map<String, dynamic> _$$ObservationTriggeredByImplToJson(
-    _$ObservationTriggeredByImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['observation'] = instance.observation.toJson();
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('_type', instance.typeElement?.toJson());
-  writeNotNull('reason', instance.reason);
-  writeNotNull('_reason', instance.reasonElement?.toJson());
-  return val;
-}
+        _$ObservationTriggeredByImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'observation': instance.observation,
+      'type': instance.type,
+      '_type': instance.typeElement,
+      'reason': instance.reason,
+      '_reason': instance.reasonElement,
+    };
 
 const _$ObservationTriggeredByTypeEnumMap = {
   ObservationTriggeredByType.reflex: 'reflex',
@@ -554,31 +520,20 @@ _$ObservationReferenceRangeImpl _$$ObservationReferenceRangeImplFromJson(
     );
 
 Map<String, dynamic> _$$ObservationReferenceRangeImplToJson(
-    _$ObservationReferenceRangeImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('low', instance.low?.toJson());
-  writeNotNull('high', instance.high?.toJson());
-  writeNotNull('normalValue', instance.normalValue?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull(
-      'appliesTo', instance.appliesTo?.map((e) => e.toJson()).toList());
-  writeNotNull('age', instance.age?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull('_text', instance.textElement?.toJson());
-  return val;
-}
+        _$ObservationReferenceRangeImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'low': instance.low,
+      'high': instance.high,
+      'normalValue': instance.normalValue,
+      'type': instance.type,
+      'appliesTo': instance.appliesTo,
+      'age': instance.age,
+      'text': instance.text,
+      '_text': instance.textElement,
+    };
 
 _$ObservationComponentImpl _$$ObservationComponentImplFromJson(
         Map<String, dynamic> json) =>
@@ -665,43 +620,31 @@ _$ObservationComponentImpl _$$ObservationComponentImplFromJson(
     );
 
 Map<String, dynamic> _$$ObservationComponentImplToJson(
-    _$ObservationComponentImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['code'] = instance.code.toJson();
-  writeNotNull('valueQuantity', instance.valueQuantity?.toJson());
-  writeNotNull('valueCodeableConcept', instance.valueCodeableConcept?.toJson());
-  writeNotNull('valueString', instance.valueString);
-  writeNotNull('_valueString', instance.valueStringElement?.toJson());
-  writeNotNull('valueBoolean', instance.valueBoolean?.toJson());
-  writeNotNull('_valueBoolean', instance.valueBooleanElement?.toJson());
-  writeNotNull('valueInteger', instance.valueInteger?.toJson());
-  writeNotNull('_valueInteger', instance.valueIntegerElement?.toJson());
-  writeNotNull('valueRange', instance.valueRange?.toJson());
-  writeNotNull('valueRatio', instance.valueRatio?.toJson());
-  writeNotNull('valueSampledData', instance.valueSampledData?.toJson());
-  writeNotNull('valueTime', instance.valueTime?.toJson());
-  writeNotNull('_valueTime', instance.valueTimeElement?.toJson());
-  writeNotNull('valueDateTime', instance.valueDateTime?.toJson());
-  writeNotNull('_valueDateTime', instance.valueDateTimeElement?.toJson());
-  writeNotNull('valuePeriod', instance.valuePeriod?.toJson());
-  writeNotNull('valueAttachment', instance.valueAttachment?.toJson());
-  writeNotNull('valueReference', instance.valueReference?.toJson());
-  writeNotNull('dataAbsentReason', instance.dataAbsentReason?.toJson());
-  writeNotNull('interpretation',
-      instance.interpretation?.map((e) => e.toJson()).toList());
-  writeNotNull('referenceRange',
-      instance.referenceRange?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$ObservationComponentImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'code': instance.code,
+      'valueQuantity': instance.valueQuantity,
+      'valueCodeableConcept': instance.valueCodeableConcept,
+      'valueString': instance.valueString,
+      '_valueString': instance.valueStringElement,
+      'valueBoolean': instance.valueBoolean,
+      '_valueBoolean': instance.valueBooleanElement,
+      'valueInteger': instance.valueInteger,
+      '_valueInteger': instance.valueIntegerElement,
+      'valueRange': instance.valueRange,
+      'valueRatio': instance.valueRatio,
+      'valueSampledData': instance.valueSampledData,
+      'valueTime': instance.valueTime,
+      '_valueTime': instance.valueTimeElement,
+      'valueDateTime': instance.valueDateTime,
+      '_valueDateTime': instance.valueDateTimeElement,
+      'valuePeriod': instance.valuePeriod,
+      'valueAttachment': instance.valueAttachment,
+      'valueReference': instance.valueReference,
+      'dataAbsentReason': instance.dataAbsentReason,
+      'interpretation': instance.interpretation,
+      'referenceRange': instance.referenceRange,
+    };

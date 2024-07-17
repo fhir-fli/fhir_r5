@@ -94,8 +94,12 @@ mixin _$Parameters {
   List<ParametersParameter>? get parameter =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this Parameters to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Parameters
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ParametersCopyWith<Parameters> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -135,6 +139,8 @@ class _$ParametersCopyWithImpl<$Res, $Val extends Parameters>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Parameters
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -203,6 +209,8 @@ class _$ParametersCopyWithImpl<$Res, $Val extends Parameters>
     ) as $Val);
   }
 
+  /// Create a copy of Parameters
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -215,6 +223,8 @@ class _$ParametersCopyWithImpl<$Res, $Val extends Parameters>
     });
   }
 
+  /// Create a copy of Parameters
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -265,6 +275,8 @@ class __$$ParametersImplCopyWithImpl<$Res>
       _$ParametersImpl _value, $Res Function(_$ParametersImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Parameters
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -533,7 +545,7 @@ class _$ParametersImpl extends _Parameters {
                 .equals(other._parameter, _parameter));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -550,7 +562,9 @@ class _$ParametersImpl extends _Parameters {
       const DeepCollectionEquality().hash(_modifierExtension),
       const DeepCollectionEquality().hash(_parameter));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Parameters
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParametersImplCopyWith<_$ParametersImpl> get copyWith =>
@@ -585,44 +599,42 @@ abstract class _Parameters extends Parameters {
   factory _Parameters.fromJson(Map<String, dynamic> json) =
       _$ParametersImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a Parameters resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.Parameters)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -630,16 +642,16 @@ abstract class _Parameters extends Parameters {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -647,9 +659,9 @@ abstract class _Parameters extends Parameters {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -663,13 +675,17 @@ abstract class _Parameters extends Parameters {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [parameter] A parameter passed to or received from the operation.
-  List<ParametersParameter>? get parameter;
   @override
-  @JsonKey(ignore: true)
+  List<ParametersParameter>? get parameter;
+
+  /// Create a copy of Parameters
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParametersImplCopyWith<_$ParametersImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -990,8 +1006,12 @@ mixin _$ParametersParameter {
   @JsonKey(name: 'part')
   List<ParametersParameter>? get part_ => throw _privateConstructorUsedError;
 
+  /// Serializes this ParametersParameter to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ParametersParameterCopyWith<ParametersParameter> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1134,6 +1154,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1547,6 +1569,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     ) as $Val);
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AddressCopyWith<$Res>? get valueAddress {
@@ -1559,6 +1583,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get valueAge {
@@ -1571,6 +1597,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AnnotationCopyWith<$Res>? get valueAnnotation {
@@ -1583,6 +1611,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get valueAttachment {
@@ -1595,6 +1625,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get valueCodeableConcept {
@@ -1608,6 +1640,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get valueCodeableReference {
@@ -1621,6 +1655,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get valueCoding {
@@ -1633,6 +1669,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactPointCopyWith<$Res>? get valueContactPoint {
@@ -1645,6 +1683,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CountCopyWith<$Res>? get valueCount {
@@ -1657,6 +1697,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DistanceCopyWith<$Res>? get valueDistance {
@@ -1669,6 +1711,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get valueDuration {
@@ -1681,6 +1725,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $HumanNameCopyWith<$Res>? get valueHumanName {
@@ -1693,6 +1739,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get valueIdentifier {
@@ -1705,6 +1753,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MoneyCopyWith<$Res>? get valueMoney {
@@ -1717,6 +1767,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get valuePeriod {
@@ -1729,6 +1781,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get valueQuantity {
@@ -1741,6 +1795,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get valueRange {
@@ -1753,6 +1809,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get valueRatio {
@@ -1765,6 +1823,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioRangeCopyWith<$Res>? get valueRatioRange {
@@ -1777,6 +1837,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get valueReference {
@@ -1789,6 +1851,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SampledDataCopyWith<$Res>? get valueSampledData {
@@ -1801,6 +1865,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SignatureCopyWith<$Res>? get valueSignature {
@@ -1813,6 +1879,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get valueTiming {
@@ -1825,6 +1893,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactDetailCopyWith<$Res>? get valueContactDetail {
@@ -1837,6 +1907,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DataRequirementCopyWith<$Res>? get valueDataRequirement {
@@ -1850,6 +1922,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirExpressionCopyWith<$Res>? get valueExpression {
@@ -1862,6 +1936,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ParameterDefinitionCopyWith<$Res>? get valueParameterDefinition {
@@ -1875,6 +1951,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RelatedArtifactCopyWith<$Res>? get valueRelatedArtifact {
@@ -1888,6 +1966,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TriggerDefinitionCopyWith<$Res>? get valueTriggerDefinition {
@@ -1901,6 +1981,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $UsageContextCopyWith<$Res>? get valueUsageContext {
@@ -1913,6 +1995,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AvailabilityCopyWith<$Res>? get valueAvailability {
@@ -1925,6 +2009,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ExtendedContactDetailCopyWith<$Res>? get valueExtendedContactDetail {
@@ -1938,6 +2024,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DosageCopyWith<$Res>? get valueDosage {
@@ -1950,6 +2038,8 @@ class _$ParametersParameterCopyWithImpl<$Res, $Val extends ParametersParameter>
     });
   }
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get valueMeta {
@@ -2135,6 +2225,8 @@ class __$$ParametersParameterImplCopyWithImpl<$Res>
       $Res Function(_$ParametersParameterImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3183,7 +3275,7 @@ class _$ParametersParameterImpl extends _ParametersParameter {
             const DeepCollectionEquality().equals(other._part_, _part_));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -3270,7 +3362,9 @@ class _$ParametersParameterImpl extends _ParametersParameter {
         const DeepCollectionEquality().hash(_part_)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParametersParameterImplCopyWith<_$ParametersParameterImpl> get copyWith =>
@@ -3385,12 +3479,10 @@ abstract class _ParametersParameter extends ParametersParameter {
   factory _ParametersParameter.fromJson(Map<String, dynamic> json) =
       _$ParametersParameterImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3398,9 +3490,9 @@ abstract class _ParametersParameter extends ParametersParameter {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3414,350 +3506,354 @@ abstract class _ParametersParameter extends ParametersParameter {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [name] The name of the parameter (reference to the operation definition).
-  String? get name;
   @override
+  String? get name;
 
   /// [nameElement] ("_name") Extensions for name
+  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
-  @override
 
   /// [valueBase64Binary] Conveys the content if the parameter is a data type.
-  FhirBase64Binary? get valueBase64Binary;
   @override
+  FhirBase64Binary? get valueBase64Binary;
 
   /// [valueBase64BinaryElement] ("_valueBase64Binary") Extensions for
   ///  valueBase64Binary
+  @override
   @JsonKey(name: '_valueBase64Binary')
   PrimitiveElement? get valueBase64BinaryElement;
-  @override
 
   /// [valueBoolean] Conveys the content if the parameter is a data type.
-  FhirBoolean? get valueBoolean;
   @override
+  FhirBoolean? get valueBoolean;
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
+  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
-  @override
 
   /// [valueCanonical] Conveys the content if the parameter is a data type.
-  FhirCanonical? get valueCanonical;
   @override
+  FhirCanonical? get valueCanonical;
 
   /// [valueCanonicalElement] ("_valueCanonical") Extensions for valueCanonical
+  @override
   @JsonKey(name: '_valueCanonical')
   PrimitiveElement? get valueCanonicalElement;
-  @override
 
   /// [valueCode] Conveys the content if the parameter is a data type.
-  FhirCode? get valueCode;
   @override
+  FhirCode? get valueCode;
 
   /// [valueCodeElement] ("_valueCode") Extensions for valueCode
+  @override
   @JsonKey(name: '_valueCode')
   PrimitiveElement? get valueCodeElement;
-  @override
 
   /// [valueDate] Conveys the content if the parameter is a data type.
-  FhirDate? get valueDate;
   @override
+  FhirDate? get valueDate;
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
+  @override
   @JsonKey(name: '_valueDate')
   PrimitiveElement? get valueDateElement;
-  @override
 
   /// [valueDateTime] Conveys the content if the parameter is a data type.
-  FhirDateTime? get valueDateTime;
   @override
+  FhirDateTime? get valueDateTime;
 
   /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
+  @override
   @JsonKey(name: '_valueDateTime')
   PrimitiveElement? get valueDateTimeElement;
-  @override
 
   /// [valueDecimal] Conveys the content if the parameter is a data type.
-  FhirDecimal? get valueDecimal;
   @override
+  FhirDecimal? get valueDecimal;
 
   /// [valueDecimalElement] ("_valueDecimal") Extensions for valueDecimal
+  @override
   @JsonKey(name: '_valueDecimal')
   PrimitiveElement? get valueDecimalElement;
-  @override
 
   /// [valueId] Conveys the content if the parameter is a data type.
-  FhirId? get valueId;
   @override
+  FhirId? get valueId;
 
   /// [valueIdElement] ("_valueId") Extensions for valueId
+  @override
   @JsonKey(name: '_valueId')
   PrimitiveElement? get valueIdElement;
-  @override
 
   /// [valueInstant] Conveys the content if the parameter is a data type.
-  FhirInstant? get valueInstant;
   @override
+  FhirInstant? get valueInstant;
 
   /// [valueInstantElement] ("_valueInstant") Extensions for valueInstant
+  @override
   @JsonKey(name: '_valueInstant')
   PrimitiveElement? get valueInstantElement;
-  @override
 
   /// [valueInteger] Conveys the content if the parameter is a data type.
-  FhirInteger? get valueInteger;
   @override
+  FhirInteger? get valueInteger;
 
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
+  @override
   @JsonKey(name: '_valueInteger')
   PrimitiveElement? get valueIntegerElement;
-  @override
 
   /// [valueInteger64] Conveys the content if the parameter is a data type.
-  FhirInteger64? get valueInteger64;
   @override
+  FhirInteger64? get valueInteger64;
 
   /// [valueInteger64Element] ("_valueInteger64") Extensions for valueInteger64
+  @override
   @JsonKey(name: '_valueInteger64')
   PrimitiveElement? get valueInteger64Element;
-  @override
 
   /// [valueMarkdown] Conveys the content if the parameter is a data type.
-  FhirMarkdown? get valueMarkdown;
   @override
+  FhirMarkdown? get valueMarkdown;
 
   /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
+  @override
   @JsonKey(name: '_valueMarkdown')
   PrimitiveElement? get valueMarkdownElement;
-  @override
 
   /// [valueOid] Conveys the content if the parameter is a data type.
-  FhirId? get valueOid;
   @override
+  FhirId? get valueOid;
 
   /// [valueOidElement] ("_valueOid") Extensions for valueOid
+  @override
   @JsonKey(name: '_valueOid')
   PrimitiveElement? get valueOidElement;
-  @override
 
   /// [valuePositiveInt] Conveys the content if the parameter is a data type.
-  FhirPositiveInt? get valuePositiveInt;
   @override
+  FhirPositiveInt? get valuePositiveInt;
 
   /// [valuePositiveIntElement] ("_valuePositiveInt") Extensions for
   ///  valuePositiveInt
+  @override
   @JsonKey(name: '_valuePositiveInt')
   PrimitiveElement? get valuePositiveIntElement;
-  @override
 
   /// [valueString] Conveys the content if the parameter is a data type.
-  String? get valueString;
   @override
+  String? get valueString;
 
   /// [valueStringElement] ("_valueString") Extensions for valueString
+  @override
   @JsonKey(name: '_valueString')
   PrimitiveElement? get valueStringElement;
-  @override
 
   /// [valueTime] Conveys the content if the parameter is a data type.
-  FhirTime? get valueTime;
   @override
+  FhirTime? get valueTime;
 
   /// [valueTimeElement] ("_valueTime") Extensions for valueTime
+  @override
   @JsonKey(name: '_valueTime')
   PrimitiveElement? get valueTimeElement;
-  @override
 
   /// [valueUnsignedInt] Conveys the content if the parameter is a data type.
-  FhirUnsignedInt? get valueUnsignedInt;
   @override
+  FhirUnsignedInt? get valueUnsignedInt;
 
   /// [valueUnsignedIntElement] ("_valueUnsignedInt") Extensions for
   ///  valueUnsignedInt
+  @override
   @JsonKey(name: '_valueUnsignedInt')
   PrimitiveElement? get valueUnsignedIntElement;
-  @override
 
   /// [valueUri] Conveys the content if the parameter is a data type.
-  FhirUri? get valueUri;
   @override
+  FhirUri? get valueUri;
 
   /// [valueUriElement] ("_valueUri") Extensions for valueUri
+  @override
   @JsonKey(name: '_valueUri')
   PrimitiveElement? get valueUriElement;
-  @override
 
   /// [valueUrl] Conveys the content if the parameter is a data type.
-  FhirUrl? get valueUrl;
   @override
+  FhirUrl? get valueUrl;
 
   /// [valueUrlElement] ("_valueUrl") Extensions for valueUrl
+  @override
   @JsonKey(name: '_valueUrl')
   PrimitiveElement? get valueUrlElement;
-  @override
 
   /// [valueUuid] Conveys the content if the parameter is a data type.
-  FhirId? get valueUuid;
   @override
+  FhirId? get valueUuid;
 
   /// [valueUuidElement] ("_valueUuid") Extensions for valueUuid
+  @override
   @JsonKey(name: '_valueUuid')
   PrimitiveElement? get valueUuidElement;
-  @override
 
   /// [valueAddress] Conveys the content if the parameter is a data type.
-  Address? get valueAddress;
   @override
+  Address? get valueAddress;
 
   /// [valueAge] Conveys the content if the parameter is a data type.
-  Age? get valueAge;
   @override
+  Age? get valueAge;
 
   /// [valueAnnotation] Conveys the content if the parameter is a data type.
-  Annotation? get valueAnnotation;
   @override
+  Annotation? get valueAnnotation;
 
   /// [valueAttachment] Conveys the content if the parameter is a data type.
-  Attachment? get valueAttachment;
   @override
+  Attachment? get valueAttachment;
 
   /// [valueCodeableConcept] Conveys the content if the parameter is a data type.
-  CodeableConcept? get valueCodeableConcept;
   @override
+  CodeableConcept? get valueCodeableConcept;
 
   /// [valueCodeableReference] Conveys the content if the parameter is a data
   ///  type.
-  CodeableReference? get valueCodeableReference;
   @override
+  CodeableReference? get valueCodeableReference;
 
   /// [valueCoding] Conveys the content if the parameter is a data type.
-  Coding? get valueCoding;
   @override
+  Coding? get valueCoding;
 
   /// [valueContactPoint] Conveys the content if the parameter is a data type.
-  ContactPoint? get valueContactPoint;
   @override
+  ContactPoint? get valueContactPoint;
 
   /// [valueCount] Conveys the content if the parameter is a data type.
-  Count? get valueCount;
   @override
+  Count? get valueCount;
 
   /// [valueDistance] Conveys the content if the parameter is a data type.
-  Distance? get valueDistance;
   @override
+  Distance? get valueDistance;
 
   /// [valueDuration] Conveys the content if the parameter is a data type.
-  FhirDuration? get valueDuration;
   @override
+  FhirDuration? get valueDuration;
 
   /// [valueHumanName] Conveys the content if the parameter is a data type.
-  HumanName? get valueHumanName;
   @override
+  HumanName? get valueHumanName;
 
   /// [valueIdentifier] Conveys the content if the parameter is a data type.
-  Identifier? get valueIdentifier;
   @override
+  Identifier? get valueIdentifier;
 
   /// [valueMoney] Conveys the content if the parameter is a data type.
-  Money? get valueMoney;
   @override
+  Money? get valueMoney;
 
   /// [valuePeriod] Conveys the content if the parameter is a data type.
-  Period? get valuePeriod;
   @override
+  Period? get valuePeriod;
 
   /// [valueQuantity] Conveys the content if the parameter is a data type.
-  Quantity? get valueQuantity;
   @override
+  Quantity? get valueQuantity;
 
   /// [valueRange] Conveys the content if the parameter is a data type.
-  Range? get valueRange;
   @override
+  Range? get valueRange;
 
   /// [valueRatio] Conveys the content if the parameter is a data type.
-  Ratio? get valueRatio;
   @override
+  Ratio? get valueRatio;
 
   /// [valueRatioRange] Conveys the content if the parameter is a data type.
-  RatioRange? get valueRatioRange;
   @override
+  RatioRange? get valueRatioRange;
 
   /// [valueReference] Conveys the content if the parameter is a data type.
-  Reference? get valueReference;
   @override
+  Reference? get valueReference;
 
   /// [valueSampledData] Conveys the content if the parameter is a data type.
-  SampledData? get valueSampledData;
   @override
+  SampledData? get valueSampledData;
 
   /// [valueSignature] Conveys the content if the parameter is a data type.
-  Signature? get valueSignature;
   @override
+  Signature? get valueSignature;
 
   /// [valueTiming] Conveys the content if the parameter is a data type.
-  Timing? get valueTiming;
   @override
+  Timing? get valueTiming;
 
   /// [valueContactDetail] Conveys the content if the parameter is a data type.
-  ContactDetail? get valueContactDetail;
   @override
+  ContactDetail? get valueContactDetail;
 
   /// [valueDataRequirement] Conveys the content if the parameter is a data type.
-  DataRequirement? get valueDataRequirement;
   @override
+  DataRequirement? get valueDataRequirement;
 
   /// [valueExpression] Conveys the content if the parameter is a data type.
-  FhirExpression? get valueExpression;
   @override
+  FhirExpression? get valueExpression;
 
   /// [valueParameterDefinition] Conveys the content if the parameter is a data
   ///  type.
-  ParameterDefinition? get valueParameterDefinition;
   @override
+  ParameterDefinition? get valueParameterDefinition;
 
   /// [valueRelatedArtifact] Conveys the content if the parameter is a data type.
-  RelatedArtifact? get valueRelatedArtifact;
   @override
+  RelatedArtifact? get valueRelatedArtifact;
 
   /// [valueTriggerDefinition] Conveys the content if the parameter is a data
   ///  type.
-  TriggerDefinition? get valueTriggerDefinition;
   @override
+  TriggerDefinition? get valueTriggerDefinition;
 
   /// [valueUsageContext] Conveys the content if the parameter is a data type.
-  UsageContext? get valueUsageContext;
   @override
+  UsageContext? get valueUsageContext;
 
   /// [valueAvailability] Conveys the content if the parameter is a data type.
-  Availability? get valueAvailability;
   @override
+  Availability? get valueAvailability;
 
   /// [valueExtendedContactDetail] Conveys the content if the parameter is a data
   ///  type.
-  ExtendedContactDetail? get valueExtendedContactDetail;
   @override
+  ExtendedContactDetail? get valueExtendedContactDetail;
 
   /// [valueDosage] Conveys the content if the parameter is a data type.
-  Dosage? get valueDosage;
   @override
+  Dosage? get valueDosage;
 
   /// [valueMeta] Conveys the content if the parameter is a data type.
-  FhirMeta? get valueMeta;
   @override
+  FhirMeta? get valueMeta;
 
   /// [resource] Conveys the content if the parameter is a whole resource.
-  Resource? get resource;
   @override
+  Resource? get resource;
 
   /// [part_] ("part") A named part of a multi-part parameter.
+  @override
   @JsonKey(name: 'part')
   List<ParametersParameter>? get part_;
+
+  /// Create a copy of ParametersParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParametersParameterImplCopyWith<_$ParametersParameterImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

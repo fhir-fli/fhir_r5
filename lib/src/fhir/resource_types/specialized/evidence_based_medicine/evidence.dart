@@ -583,7 +583,7 @@ class Evidence with _$Evidence implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [EvidenceVariableDefinition] The Evidence Resource provides a

@@ -118,60 +118,45 @@ _$InvoiceImpl _$$InvoiceImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$InvoiceImplToJson(_$InvoiceImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('cancelledReason', instance.cancelledReason);
-  writeNotNull('_cancelledReason', instance.cancelledReasonElement?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('subject', instance.subject?.toJson());
-  writeNotNull('recipient', instance.recipient?.toJson());
-  writeNotNull('date', instance.date?.toJson());
-  writeNotNull('_date', instance.dateElement?.toJson());
-  writeNotNull('creation', instance.creation?.toJson());
-  writeNotNull('_creation', instance.creationElement?.toJson());
-  writeNotNull('periodDate', instance.periodDate?.toJson());
-  writeNotNull('_periodDate', instance.periodDateElement?.toJson());
-  writeNotNull('periodPeriod', instance.periodPeriod?.toJson());
-  writeNotNull(
-      'participant', instance.participant?.map((e) => e.toJson()).toList());
-  writeNotNull('issuer', instance.issuer?.toJson());
-  writeNotNull('account', instance.account?.toJson());
-  writeNotNull('lineItem', instance.lineItem?.map((e) => e.toJson()).toList());
-  writeNotNull('totalPriceComponent',
-      instance.totalPriceComponent?.map((e) => e.toJson()).toList());
-  writeNotNull('totalNet', instance.totalNet?.toJson());
-  writeNotNull('totalGross', instance.totalGross?.toJson());
-  writeNotNull('paymentTerms', instance.paymentTerms?.toJson());
-  writeNotNull('_paymentTerms', instance.paymentTermsElement?.toJson());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$$InvoiceImplToJson(_$InvoiceImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'cancelledReason': instance.cancelledReason,
+      '_cancelledReason': instance.cancelledReasonElement,
+      'type': instance.type,
+      'subject': instance.subject,
+      'recipient': instance.recipient,
+      'date': instance.date,
+      '_date': instance.dateElement,
+      'creation': instance.creation,
+      '_creation': instance.creationElement,
+      'periodDate': instance.periodDate,
+      '_periodDate': instance.periodDateElement,
+      'periodPeriod': instance.periodPeriod,
+      'participant': instance.participant,
+      'issuer': instance.issuer,
+      'account': instance.account,
+      'lineItem': instance.lineItem,
+      'totalPriceComponent': instance.totalPriceComponent,
+      'totalNet': instance.totalNet,
+      'totalGross': instance.totalGross,
+      'paymentTerms': instance.paymentTerms,
+      '_paymentTerms': instance.paymentTermsElement,
+      'note': instance.note,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -353,24 +338,14 @@ _$InvoiceParticipantImpl _$$InvoiceParticipantImplFromJson(
     );
 
 Map<String, dynamic> _$$InvoiceParticipantImplToJson(
-    _$InvoiceParticipantImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('role', instance.role?.toJson());
-  val['actor'] = instance.actor.toJson();
-  return val;
-}
+        _$InvoiceParticipantImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'role': instance.role,
+      'actor': instance.actor,
+    };
 
 _$InvoiceLineItemImpl _$$InvoiceLineItemImplFromJson(
         Map<String, dynamic> json) =>
@@ -413,29 +388,17 @@ _$InvoiceLineItemImpl _$$InvoiceLineItemImplFromJson(
     );
 
 Map<String, dynamic> _$$InvoiceLineItemImplToJson(
-    _$InvoiceLineItemImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('sequence', instance.sequence?.toJson());
-  writeNotNull('_sequence', instance.sequenceElement?.toJson());
-  writeNotNull('servicedDate', instance.servicedDate?.toJson());
-  writeNotNull('_servicedDate', instance.servicedDateElement?.toJson());
-  writeNotNull('servicedPeriod', instance.servicedPeriod?.toJson());
-  writeNotNull('chargeItemReference', instance.chargeItemReference?.toJson());
-  writeNotNull('chargeItemCodeableConcept',
-      instance.chargeItemCodeableConcept?.toJson());
-  writeNotNull('priceComponent',
-      instance.priceComponent?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$InvoiceLineItemImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'sequence': instance.sequence,
+      '_sequence': instance.sequenceElement,
+      'servicedDate': instance.servicedDate,
+      '_servicedDate': instance.servicedDateElement,
+      'servicedPeriod': instance.servicedPeriod,
+      'chargeItemReference': instance.chargeItemReference,
+      'chargeItemCodeableConcept': instance.chargeItemCodeableConcept,
+      'priceComponent': instance.priceComponent,
+    };

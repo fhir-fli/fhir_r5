@@ -71,46 +71,30 @@ _$DosageImpl _$$DosageImplFromJson(Map<String, dynamic> json) => _$DosageImpl(
               json['maxDosePerLifetime'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$DosageImplToJson(_$DosageImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('sequence', instance.sequence?.toJson());
-  writeNotNull('_sequence', instance.sequenceElement?.toJson());
-  writeNotNull('text', instance.text);
-  writeNotNull('_text', instance.textElement?.toJson());
-  writeNotNull('additionalInstruction',
-      instance.additionalInstruction?.map((e) => e.toJson()).toList());
-  writeNotNull('patientInstruction', instance.patientInstruction);
-  writeNotNull(
-      '_patientInstruction', instance.patientInstructionElement?.toJson());
-  writeNotNull('timing', instance.timing?.toJson());
-  writeNotNull('asNeeded', instance.asNeeded?.toJson());
-  writeNotNull('_asNeeded', instance.asNeededElement?.toJson());
-  writeNotNull(
-      'asNeededFor', instance.asNeededFor?.map((e) => e.toJson()).toList());
-  writeNotNull('site', instance.site?.toJson());
-  writeNotNull('route', instance.route?.toJson());
-  writeNotNull('method', instance.method?.toJson());
-  writeNotNull(
-      'doseAndRate', instance.doseAndRate?.map((e) => e.toJson()).toList());
-  writeNotNull('maxDosePerPeriod',
-      instance.maxDosePerPeriod?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'maxDosePerAdministration', instance.maxDosePerAdministration?.toJson());
-  writeNotNull('maxDosePerLifetime', instance.maxDosePerLifetime?.toJson());
-  return val;
-}
+Map<String, dynamic> _$$DosageImplToJson(_$DosageImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'sequence': instance.sequence,
+      '_sequence': instance.sequenceElement,
+      'text': instance.text,
+      '_text': instance.textElement,
+      'additionalInstruction': instance.additionalInstruction,
+      'patientInstruction': instance.patientInstruction,
+      '_patientInstruction': instance.patientInstructionElement,
+      'timing': instance.timing,
+      'asNeeded': instance.asNeeded,
+      '_asNeeded': instance.asNeededElement,
+      'asNeededFor': instance.asNeededFor,
+      'site': instance.site,
+      'route': instance.route,
+      'method': instance.method,
+      'doseAndRate': instance.doseAndRate,
+      'maxDosePerPeriod': instance.maxDosePerPeriod,
+      'maxDosePerAdministration': instance.maxDosePerAdministration,
+      'maxDosePerLifetime': instance.maxDosePerLifetime,
+    };
 
 _$DosageDoseAndRateImpl _$$DosageDoseAndRateImplFromJson(
         Map<String, dynamic> json) =>
@@ -143,25 +127,15 @@ _$DosageDoseAndRateImpl _$$DosageDoseAndRateImplFromJson(
     );
 
 Map<String, dynamic> _$$DosageDoseAndRateImplToJson(
-    _$DosageDoseAndRateImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('doseRange', instance.doseRange?.toJson());
-  writeNotNull('doseQuantity', instance.doseQuantity?.toJson());
-  writeNotNull('rateRatio', instance.rateRatio?.toJson());
-  writeNotNull('rateRange', instance.rateRange?.toJson());
-  writeNotNull('rateQuantity', instance.rateQuantity?.toJson());
-  return val;
-}
+        _$DosageDoseAndRateImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'type': instance.type,
+      'doseRange': instance.doseRange,
+      'doseQuantity': instance.doseQuantity,
+      'rateRatio': instance.rateRatio,
+      'rateRange': instance.rateRange,
+      'rateQuantity': instance.rateQuantity,
+    };

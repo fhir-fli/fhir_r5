@@ -78,46 +78,32 @@ _$MolecularSequenceImpl _$$MolecularSequenceImplFromJson(
     );
 
 Map<String, dynamic> _$$MolecularSequenceImplToJson(
-    _$MolecularSequenceImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('_type', instance.typeElement?.toJson());
-  writeNotNull('subject', instance.subject?.toJson());
-  writeNotNull('focus', instance.focus?.map((e) => e.toJson()).toList());
-  writeNotNull('specimen', instance.specimen?.toJson());
-  writeNotNull('device', instance.device?.toJson());
-  writeNotNull('performer', instance.performer?.toJson());
-  writeNotNull('literal', instance.literal);
-  writeNotNull('_literal', instance.literalElement?.toJson());
-  writeNotNull(
-      'formatted', instance.formatted?.map((e) => e.toJson()).toList());
-  writeNotNull('relative', instance.relative?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$MolecularSequenceImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'type': instance.type,
+      '_type': instance.typeElement,
+      'subject': instance.subject,
+      'focus': instance.focus,
+      'specimen': instance.specimen,
+      'device': instance.device,
+      'performer': instance.performer,
+      'literal': instance.literal,
+      '_literal': instance.literalElement,
+      'formatted': instance.formatted,
+      'relative': instance.relative,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -315,28 +301,18 @@ _$MolecularSequenceRelativeImpl _$$MolecularSequenceRelativeImplFromJson(
     );
 
 Map<String, dynamic> _$$MolecularSequenceRelativeImplToJson(
-    _$MolecularSequenceRelativeImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  val['coordinateSystem'] = instance.coordinateSystem.toJson();
-  writeNotNull('ordinalPosition', instance.ordinalPosition?.toJson());
-  writeNotNull('_ordinalPosition', instance.ordinalPositionElement?.toJson());
-  writeNotNull('sequenceRange', instance.sequenceRange?.toJson());
-  writeNotNull('startingSequence', instance.startingSequence?.toJson());
-  writeNotNull('edit', instance.edit?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$MolecularSequenceRelativeImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'coordinateSystem': instance.coordinateSystem,
+      'ordinalPosition': instance.ordinalPosition,
+      '_ordinalPosition': instance.ordinalPositionElement,
+      'sequenceRange': instance.sequenceRange,
+      'startingSequence': instance.startingSequence,
+      'edit': instance.edit,
+    };
 
 _$MolecularSequenceStartingSequenceImpl
     _$$MolecularSequenceStartingSequenceImplFromJson(
@@ -400,37 +376,26 @@ _$MolecularSequenceStartingSequenceImpl
         );
 
 Map<String, dynamic> _$$MolecularSequenceStartingSequenceImplToJson(
-    _$MolecularSequenceStartingSequenceImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('genomeAssembly', instance.genomeAssembly?.toJson());
-  writeNotNull('chromosome', instance.chromosome?.toJson());
-  writeNotNull(
-      'sequenceCodeableConcept', instance.sequenceCodeableConcept?.toJson());
-  writeNotNull('sequenceString', instance.sequenceString);
-  writeNotNull('_sequenceString', instance.sequenceStringElement?.toJson());
-  writeNotNull('sequenceReference', instance.sequenceReference?.toJson());
-  writeNotNull('windowStart', instance.windowStart?.toJson());
-  writeNotNull('_windowStart', instance.windowStartElement?.toJson());
-  writeNotNull('windowEnd', instance.windowEnd?.toJson());
-  writeNotNull('_windowEnd', instance.windowEndElement?.toJson());
-  writeNotNull('orientation', instance.orientation?.toJson());
-  writeNotNull('_orientation', instance.orientationElement?.toJson());
-  writeNotNull('strand', instance.strand?.toJson());
-  writeNotNull('_strand', instance.strandElement?.toJson());
-  return val;
-}
+        _$MolecularSequenceStartingSequenceImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'genomeAssembly': instance.genomeAssembly,
+      'chromosome': instance.chromosome,
+      'sequenceCodeableConcept': instance.sequenceCodeableConcept,
+      'sequenceString': instance.sequenceString,
+      '_sequenceString': instance.sequenceStringElement,
+      'sequenceReference': instance.sequenceReference,
+      'windowStart': instance.windowStart,
+      '_windowStart': instance.windowStartElement,
+      'windowEnd': instance.windowEnd,
+      '_windowEnd': instance.windowEndElement,
+      'orientation': instance.orientation,
+      '_orientation': instance.orientationElement,
+      'strand': instance.strand,
+      '_strand': instance.strandElement,
+    };
 
 _$MolecularSequenceEditImpl _$$MolecularSequenceEditImplFromJson(
         Map<String, dynamic> json) =>
@@ -463,28 +428,17 @@ _$MolecularSequenceEditImpl _$$MolecularSequenceEditImplFromJson(
     );
 
 Map<String, dynamic> _$$MolecularSequenceEditImplToJson(
-    _$MolecularSequenceEditImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('start', instance.start?.toJson());
-  writeNotNull('_start', instance.startElement?.toJson());
-  writeNotNull('end', instance.end?.toJson());
-  writeNotNull('_end', instance.endElement?.toJson());
-  writeNotNull('replacementSequence', instance.replacementSequence);
-  writeNotNull(
-      '_replacementSequence', instance.replacementSequenceElement?.toJson());
-  writeNotNull('replacedSequence', instance.replacedSequence);
-  writeNotNull('_replacedSequence', instance.replacedSequenceElement?.toJson());
-  return val;
-}
+        _$MolecularSequenceEditImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'start': instance.start,
+      '_start': instance.startElement,
+      'end': instance.end,
+      '_end': instance.endElement,
+      'replacementSequence': instance.replacementSequence,
+      '_replacementSequence': instance.replacementSequenceElement,
+      'replacedSequence': instance.replacedSequence,
+      '_replacedSequence': instance.replacedSequenceElement,
+    };

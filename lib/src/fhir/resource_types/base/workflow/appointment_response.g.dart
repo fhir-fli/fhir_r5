@@ -108,55 +108,40 @@ _$AppointmentResponseImpl _$$AppointmentResponseImplFromJson(
     );
 
 Map<String, dynamic> _$$AppointmentResponseImplToJson(
-    _$AppointmentResponseImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  val['appointment'] = instance.appointment.toJson();
-  writeNotNull('proposedNewTime', instance.proposedNewTime?.toJson());
-  writeNotNull('_proposedNewTime', instance.proposedNewTimeElement?.toJson());
-  writeNotNull('start', instance.start?.toJson());
-  writeNotNull('_start', instance.startElement?.toJson());
-  writeNotNull('end', instance.end?.toJson());
-  writeNotNull('_end', instance.endElement?.toJson());
-  writeNotNull('participantType',
-      instance.participantType?.map((e) => e.toJson()).toList());
-  writeNotNull('actor', instance.actor?.toJson());
-  writeNotNull('participantStatus', instance.participantStatus?.toJson());
-  writeNotNull(
-      '_participantStatus', instance.participantStatusElement?.toJson());
-  writeNotNull('comment', instance.comment?.toJson());
-  writeNotNull('_comment', instance.commentElement?.toJson());
-  writeNotNull('recurring', instance.recurring?.toJson());
-  writeNotNull('_recurring', instance.recurringElement?.toJson());
-  writeNotNull('occurrenceDate', instance.occurrenceDate?.toJson());
-  writeNotNull('_occurrenceDate', instance.occurrenceDateElement?.toJson());
-  writeNotNull('recurrenceId', instance.recurrenceId?.toJson());
-  writeNotNull('_recurrenceId', instance.recurrenceIdElement?.toJson());
-  return val;
-}
+        _$AppointmentResponseImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'appointment': instance.appointment,
+      'proposedNewTime': instance.proposedNewTime,
+      '_proposedNewTime': instance.proposedNewTimeElement,
+      'start': instance.start,
+      '_start': instance.startElement,
+      'end': instance.end,
+      '_end': instance.endElement,
+      'participantType': instance.participantType,
+      'actor': instance.actor,
+      'participantStatus': instance.participantStatus,
+      '_participantStatus': instance.participantStatusElement,
+      'comment': instance.comment,
+      '_comment': instance.commentElement,
+      'recurring': instance.recurring,
+      '_recurring': instance.recurringElement,
+      'occurrenceDate': instance.occurrenceDate,
+      '_occurrenceDate': instance.occurrenceDateElement,
+      'recurrenceId': instance.recurrenceId,
+      '_recurrenceId': instance.recurrenceIdElement,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',

@@ -149,73 +149,53 @@ _$MedicationDispenseImpl _$$MedicationDispenseImplFromJson(
     );
 
 Map<String, dynamic> _$$MedicationDispenseImplToJson(
-    _$MedicationDispenseImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
-  writeNotNull('partOf', instance.partOf?.map((e) => e.toJson()).toList());
-  writeNotNull('status', instance.status?.toJson());
-  writeNotNull('_status', instance.statusElement?.toJson());
-  writeNotNull('notPerformedReason', instance.notPerformedReason?.toJson());
-  writeNotNull('statusChanged', instance.statusChanged?.toJson());
-  writeNotNull('_statusChanged', instance.statusChangedElement?.toJson());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  val['medication'] = instance.medication.toJson();
-  val['subject'] = instance.subject.toJson();
-  writeNotNull('encounter', instance.encounter?.toJson());
-  writeNotNull('supportingInformation',
-      instance.supportingInformation?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'performer', instance.performer?.map((e) => e.toJson()).toList());
-  writeNotNull('location', instance.location?.toJson());
-  writeNotNull('authorizingPrescription',
-      instance.authorizingPrescription?.map((e) => e.toJson()).toList());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('quantity', instance.quantity?.toJson());
-  writeNotNull('daysSupply', instance.daysSupply?.toJson());
-  writeNotNull('recorded', instance.recorded?.toJson());
-  writeNotNull('_recorded', instance.recordedElement?.toJson());
-  writeNotNull('whenPrepared', instance.whenPrepared?.toJson());
-  writeNotNull('_whenPrepared', instance.whenPreparedElement?.toJson());
-  writeNotNull('whenHandedOver', instance.whenHandedOver?.toJson());
-  writeNotNull('_whenHandedOver', instance.whenHandedOverElement?.toJson());
-  writeNotNull('destination', instance.destination?.toJson());
-  writeNotNull('receiver', instance.receiver?.map((e) => e.toJson()).toList());
-  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
-  writeNotNull('renderedDosageInstruction',
-      instance.renderedDosageInstruction?.toJson());
-  writeNotNull('_renderedDosageInstruction',
-      instance.renderedDosageInstructionElement?.toJson());
-  writeNotNull('dosageInstruction',
-      instance.dosageInstruction?.map((e) => e.toJson()).toList());
-  writeNotNull('substitution', instance.substitution?.toJson());
-  writeNotNull(
-      'eventHistory', instance.eventHistory?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$MedicationDispenseImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'basedOn': instance.basedOn,
+      'partOf': instance.partOf,
+      'status': instance.status,
+      '_status': instance.statusElement,
+      'notPerformedReason': instance.notPerformedReason,
+      'statusChanged': instance.statusChanged,
+      '_statusChanged': instance.statusChangedElement,
+      'category': instance.category,
+      'medication': instance.medication,
+      'subject': instance.subject,
+      'encounter': instance.encounter,
+      'supportingInformation': instance.supportingInformation,
+      'performer': instance.performer,
+      'location': instance.location,
+      'authorizingPrescription': instance.authorizingPrescription,
+      'type': instance.type,
+      'quantity': instance.quantity,
+      'daysSupply': instance.daysSupply,
+      'recorded': instance.recorded,
+      '_recorded': instance.recordedElement,
+      'whenPrepared': instance.whenPrepared,
+      '_whenPrepared': instance.whenPreparedElement,
+      'whenHandedOver': instance.whenHandedOver,
+      '_whenHandedOver': instance.whenHandedOverElement,
+      'destination': instance.destination,
+      'receiver': instance.receiver,
+      'note': instance.note,
+      'renderedDosageInstruction': instance.renderedDosageInstruction,
+      '_renderedDosageInstruction': instance.renderedDosageInstructionElement,
+      'dosageInstruction': instance.dosageInstruction,
+      'substitution': instance.substitution,
+      'eventHistory': instance.eventHistory,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -397,24 +377,14 @@ _$MedicationDispensePerformerImpl _$$MedicationDispensePerformerImplFromJson(
     );
 
 Map<String, dynamic> _$$MedicationDispensePerformerImplToJson(
-    _$MedicationDispensePerformerImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('function', instance.function_?.toJson());
-  val['actor'] = instance.actor.toJson();
-  return val;
-}
+        _$MedicationDispensePerformerImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'function': instance.function_,
+      'actor': instance.actor,
+    };
 
 _$MedicationDispenseSubstitutionImpl
     _$$MedicationDispenseSubstitutionImplFromJson(Map<String, dynamic> json) =>
@@ -446,24 +416,14 @@ _$MedicationDispenseSubstitutionImpl
         );
 
 Map<String, dynamic> _$$MedicationDispenseSubstitutionImplToJson(
-    _$MedicationDispenseSubstitutionImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('wasSubstituted', instance.wasSubstituted?.toJson());
-  writeNotNull('_wasSubstituted', instance.wasSubstitutedElement?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('reason', instance.reason?.map((e) => e.toJson()).toList());
-  writeNotNull('responsibleParty', instance.responsibleParty?.toJson());
-  return val;
-}
+        _$MedicationDispenseSubstitutionImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'wasSubstituted': instance.wasSubstituted,
+      '_wasSubstituted': instance.wasSubstitutedElement,
+      'type': instance.type,
+      'reason': instance.reason,
+      'responsibleParty': instance.responsibleParty,
+    };

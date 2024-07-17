@@ -165,8 +165,12 @@ mixin _$AuditEvent {
   /// [entity] Specific instances of data or objects that have been accessed.
   List<AuditEventEntity>? get entity => throw _privateConstructorUsedError;
 
+  /// Serializes this AuditEvent to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AuditEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AuditEventCopyWith<AuditEvent> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -231,6 +235,8 @@ class _$AuditEventCopyWithImpl<$Res, $Val extends AuditEvent>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AuditEvent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -389,6 +395,8 @@ class _$AuditEventCopyWithImpl<$Res, $Val extends AuditEvent>
     ) as $Val);
   }
 
+  /// Create a copy of AuditEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -401,6 +409,8 @@ class _$AuditEventCopyWithImpl<$Res, $Val extends AuditEvent>
     });
   }
 
+  /// Create a copy of AuditEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -413,6 +423,8 @@ class _$AuditEventCopyWithImpl<$Res, $Val extends AuditEvent>
     });
   }
 
+  /// Create a copy of AuditEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get code {
@@ -421,6 +433,8 @@ class _$AuditEventCopyWithImpl<$Res, $Val extends AuditEvent>
     });
   }
 
+  /// Create a copy of AuditEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get occurredPeriod {
@@ -433,6 +447,8 @@ class _$AuditEventCopyWithImpl<$Res, $Val extends AuditEvent>
     });
   }
 
+  /// Create a copy of AuditEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AuditEventOutcomeCopyWith<$Res>? get outcome {
@@ -445,6 +461,8 @@ class _$AuditEventCopyWithImpl<$Res, $Val extends AuditEvent>
     });
   }
 
+  /// Create a copy of AuditEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get patient {
@@ -457,6 +475,8 @@ class _$AuditEventCopyWithImpl<$Res, $Val extends AuditEvent>
     });
   }
 
+  /// Create a copy of AuditEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get encounter {
@@ -469,6 +489,8 @@ class _$AuditEventCopyWithImpl<$Res, $Val extends AuditEvent>
     });
   }
 
+  /// Create a copy of AuditEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AuditEventSourceCopyWith<$Res> get source {
@@ -546,6 +568,8 @@ class __$$AuditEventImplCopyWithImpl<$Res>
       _$AuditEventImpl _value, $Res Function(_$AuditEventImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AuditEvent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1079,7 +1103,7 @@ class _$AuditEventImpl extends _AuditEvent {
             const DeepCollectionEquality().equals(other._entity, _entity));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1115,7 +1139,9 @@ class _$AuditEventImpl extends _AuditEvent {
         const DeepCollectionEquality().hash(_entity)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AuditEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AuditEventImplCopyWith<_$AuditEventImpl> get copyWith =>
@@ -1169,44 +1195,42 @@ abstract class _AuditEvent extends AuditEvent {
   factory _AuditEvent.fromJson(Map<String, dynamic> json) =
       _$AuditEventImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a AuditEvent resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.AuditEvent)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1214,16 +1238,16 @@ abstract class _AuditEvent extends AuditEvent {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1231,9 +1255,9 @@ abstract class _AuditEvent extends AuditEvent {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1247,101 +1271,105 @@ abstract class _AuditEvent extends AuditEvent {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [category] Classification of the type of event.
-  List<CodeableConcept>? get category;
   @override
+  List<CodeableConcept>? get category;
 
   /// [code] Describes what happened. The most specific code for the event.
-  CodeableConcept get code;
   @override
+  CodeableConcept get code;
 
   /// [action] Indicator for type of action performed during the event that
   ///  generated the audit.
-  FhirCode? get action;
   @override
+  FhirCode? get action;
 
   /// [actionElement] ("_action") Extensions for action
+  @override
   @JsonKey(name: '_action')
   PrimitiveElement? get actionElement;
-  @override
 
   /// [severity] Indicates and enables segmentation of various severity including
   ///  debugging from critical.
-  FhirCode? get severity;
   @override
+  FhirCode? get severity;
 
   /// [severityElement] ("_severity") Extensions for severity
+  @override
   @JsonKey(name: '_severity')
   PrimitiveElement? get severityElement;
-  @override
 
   /// [occurredPeriod] The time or period during which the activity occurred.
-  Period? get occurredPeriod;
   @override
+  Period? get occurredPeriod;
 
   /// [occurredDateTime] The time or period during which the activity occurred.
-  FhirDateTime? get occurredDateTime;
   @override
+  FhirDateTime? get occurredDateTime;
 
   /// [occurredDateTimeElement] ("_occurredDateTime") Extensions for
   ///  occurredDateTime
+  @override
   @JsonKey(name: '_occurredDateTime')
   PrimitiveElement? get occurredDateTimeElement;
-  @override
 
   /// [recorded] The time when the event was recorded.
-  FhirInstant? get recorded;
   @override
+  FhirInstant? get recorded;
 
   /// [recordedElement] ("_recorded") Extensions for recorded
+  @override
   @JsonKey(name: '_recorded')
   PrimitiveElement? get recordedElement;
-  @override
 
   /// [outcome] Indicates whether the event succeeded or failed. A free text
   ///  descripiton can be given in outcome.text.
-  AuditEventOutcome? get outcome;
   @override
+  AuditEventOutcome? get outcome;
 
   /// [authorization] The authorization (e.g., PurposeOfUse) that was used during
   ///  the event being recorded.
-  List<CodeableConcept>? get authorization;
   @override
+  List<CodeableConcept>? get authorization;
 
   /// [basedOn] Allows tracing of authorizatino for the events and tracking
   ///  whether proposals/recommendations were acted upon.
-  List<Reference>? get basedOn;
   @override
+  List<Reference>? get basedOn;
 
   /// [patient] The patient element is available to enable deterministic tracking
   ///  of activities that involve the patient as the subject of the data used in
   ///  an activity.
-  Reference? get patient;
   @override
+  Reference? get patient;
 
   /// [encounter] This will typically be the encounter the event occurred, but
   ///  some events may be initiated prior to or after the official completion of
   ///  an encounter but still be tied to the context of the encounter (e.g.
   ///  pre-admission lab tests).
-  Reference? get encounter;
   @override
+  Reference? get encounter;
 
   /// [agent] An actor taking an active role in the event or activity that is
   ///  logged.
-  List<AuditEventAgent> get agent;
   @override
+  List<AuditEventAgent> get agent;
 
   /// [source] The actor that is reporting the event.
-  AuditEventSource get source;
   @override
+  AuditEventSource get source;
 
   /// [entity] Specific instances of data or objects that have been accessed.
-  List<AuditEventEntity>? get entity;
   @override
-  @JsonKey(ignore: true)
+  List<AuditEventEntity>? get entity;
+
+  /// Create a copy of AuditEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AuditEventImplCopyWith<_$AuditEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1387,8 +1415,12 @@ mixin _$AuditEventOutcome {
   ///  of the error or a system code that identifies the error.
   List<CodeableConcept>? get detail => throw _privateConstructorUsedError;
 
+  /// Serializes this AuditEventOutcome to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AuditEventOutcome
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AuditEventOutcomeCopyWith<AuditEventOutcome> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1419,6 +1451,8 @@ class _$AuditEventOutcomeCopyWithImpl<$Res, $Val extends AuditEventOutcome>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AuditEventOutcome
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1452,6 +1486,8 @@ class _$AuditEventOutcomeCopyWithImpl<$Res, $Val extends AuditEventOutcome>
     ) as $Val);
   }
 
+  /// Create a copy of AuditEventOutcome
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res> get code {
@@ -1488,6 +1524,8 @@ class __$$AuditEventOutcomeImplCopyWithImpl<$Res>
       $Res Function(_$AuditEventOutcomeImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AuditEventOutcome
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1642,7 +1680,7 @@ class _$AuditEventOutcomeImpl extends _AuditEventOutcome {
             const DeepCollectionEquality().equals(other._detail, _detail));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1652,7 +1690,9 @@ class _$AuditEventOutcomeImpl extends _AuditEventOutcome {
       code,
       const DeepCollectionEquality().hash(_detail));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AuditEventOutcome
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AuditEventOutcomeImplCopyWith<_$AuditEventOutcomeImpl> get copyWith =>
@@ -1679,12 +1719,10 @@ abstract class _AuditEventOutcome extends AuditEventOutcome {
   factory _AuditEventOutcome.fromJson(Map<String, dynamic> json) =
       _$AuditEventOutcomeImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1692,9 +1730,9 @@ abstract class _AuditEventOutcome extends AuditEventOutcome {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1708,18 +1746,22 @@ abstract class _AuditEventOutcome extends AuditEventOutcome {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [code] Indicates whether the event succeeded or failed.
-  Coding get code;
   @override
+  Coding get code;
 
   /// [detail] Additional details about the error. This may be a text description
   ///  of the error or a system code that identifies the error.
-  List<CodeableConcept>? get detail;
   @override
-  @JsonKey(ignore: true)
+  List<CodeableConcept>? get detail;
+
+  /// Create a copy of AuditEventOutcome
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AuditEventOutcomeImplCopyWith<_$AuditEventOutcomeImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1820,8 +1862,12 @@ mixin _$AuditEventAgent {
   List<CodeableConcept>? get authorization =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this AuditEventAgent to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AuditEventAgent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AuditEventAgentCopyWith<AuditEventAgent> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1867,6 +1913,8 @@ class _$AuditEventAgentCopyWithImpl<$Res, $Val extends AuditEventAgent>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AuditEventAgent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1960,6 +2008,8 @@ class _$AuditEventAgentCopyWithImpl<$Res, $Val extends AuditEventAgent>
     ) as $Val);
   }
 
+  /// Create a copy of AuditEventAgent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -1972,6 +2022,8 @@ class _$AuditEventAgentCopyWithImpl<$Res, $Val extends AuditEventAgent>
     });
   }
 
+  /// Create a copy of AuditEventAgent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get who {
@@ -1980,6 +2032,8 @@ class _$AuditEventAgentCopyWithImpl<$Res, $Val extends AuditEventAgent>
     });
   }
 
+  /// Create a copy of AuditEventAgent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get location {
@@ -1992,6 +2046,8 @@ class _$AuditEventAgentCopyWithImpl<$Res, $Val extends AuditEventAgent>
     });
   }
 
+  /// Create a copy of AuditEventAgent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get networkReference {
@@ -2050,6 +2106,8 @@ class __$$AuditEventAgentImplCopyWithImpl<$Res>
       _$AuditEventAgentImpl _value, $Res Function(_$AuditEventAgentImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AuditEventAgent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2396,7 +2454,7 @@ class _$AuditEventAgentImpl extends _AuditEventAgent {
                 .equals(other._authorization, _authorization));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2418,7 +2476,9 @@ class _$AuditEventAgentImpl extends _AuditEventAgent {
       networkStringElement,
       const DeepCollectionEquality().hash(_authorization));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AuditEventAgent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AuditEventAgentImplCopyWith<_$AuditEventAgentImpl> get copyWith =>
@@ -2458,12 +2518,10 @@ abstract class _AuditEventAgent extends AuditEventAgent {
   factory _AuditEventAgent.fromJson(Map<String, dynamic> json) =
       _$AuditEventAgentImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2471,9 +2529,9 @@ abstract class _AuditEventAgent extends AuditEventAgent {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2487,82 +2545,86 @@ abstract class _AuditEventAgent extends AuditEventAgent {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] The Functional Role of the user when performing the event.
-  CodeableConcept? get type;
   @override
+  CodeableConcept? get type;
 
   /// [role] The structural roles of the agent indicating the agent's competency.
   ///  The security role enabling the agent with respect to the activity.
-  List<CodeableConcept>? get role;
   @override
+  List<CodeableConcept>? get role;
 
   /// [who] Reference to who this agent is that was involved in the event.
-  Reference get who;
   @override
+  Reference get who;
 
   /// [requestor] Indicator that the user is or is not the requestor, or
   ///  initiator, for the event being audited.
-  FhirBoolean? get requestor;
   @override
+  FhirBoolean? get requestor;
 
   /// [requestorElement] ("_requestor") Extensions for requestor
+  @override
   @JsonKey(name: '_requestor')
   PrimitiveElement? get requestorElement;
-  @override
 
   /// [location] Where the agent location is known, the agent location when the
   ///  event occurred.
-  Reference? get location;
   @override
+  Reference? get location;
 
   /// [policy] Where the policy(ies) are known that authorized the agent
   ///  participation in the event. Typically, a single activity may have multiple
   ///  applicable policies, such as patient consent, guarantor funding, etc. The
   ///  policy would also indicate the security token used.
-  List<FhirUri>? get policy;
   @override
+  List<FhirUri>? get policy;
 
   /// [policyElement] ("_policy") Extensions for policy
+  @override
   @JsonKey(name: '_policy')
   List<PrimitiveElement>? get policyElement;
-  @override
 
   /// [networkReference] When the event utilizes a network there should be an
   ///  agent describing the local system, and an agent describing remote system,
   ///  with the network interface details.
-  Reference? get networkReference;
   @override
+  Reference? get networkReference;
 
   /// [networkUri] When the event utilizes a network there should be an agent
   ///  describing the local system, and an agent describing remote system, with
   ///  the network interface details.
-  FhirUri? get networkUri;
   @override
+  FhirUri? get networkUri;
 
   /// [networkUriElement] ("_networkUri") Extensions for networkUri
+  @override
   @JsonKey(name: '_networkUri')
   PrimitiveElement? get networkUriElement;
-  @override
 
   /// [networkString] When the event utilizes a network there should be an agent
   ///  describing the local system, and an agent describing remote system, with
   ///  the network interface details.
-  String? get networkString;
   @override
+  String? get networkString;
 
   /// [networkStringElement] ("_networkString") Extensions for networkString
+  @override
   @JsonKey(name: '_networkString')
   PrimitiveElement? get networkStringElement;
-  @override
 
   /// [authorization] The authorization (e.g., PurposeOfUse) that was used during
   ///  the event being recorded.
-  List<CodeableConcept>? get authorization;
   @override
-  @JsonKey(ignore: true)
+  List<CodeableConcept>? get authorization;
+
+  /// Create a copy of AuditEventAgent
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AuditEventAgentImplCopyWith<_$AuditEventAgentImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2612,8 +2674,12 @@ mixin _$AuditEventSource {
   /// [type] Code specifying the type of source where event originated.
   List<CodeableConcept>? get type => throw _privateConstructorUsedError;
 
+  /// Serializes this AuditEventSource to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AuditEventSource
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AuditEventSourceCopyWith<AuditEventSource> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2646,6 +2712,8 @@ class _$AuditEventSourceCopyWithImpl<$Res, $Val extends AuditEventSource>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AuditEventSource
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2684,6 +2752,8 @@ class _$AuditEventSourceCopyWithImpl<$Res, $Val extends AuditEventSource>
     ) as $Val);
   }
 
+  /// Create a copy of AuditEventSource
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get site {
@@ -2696,6 +2766,8 @@ class _$AuditEventSourceCopyWithImpl<$Res, $Val extends AuditEventSource>
     });
   }
 
+  /// Create a copy of AuditEventSource
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get observer {
@@ -2735,6 +2807,8 @@ class __$$AuditEventSourceImplCopyWithImpl<$Res>
       $Res Function(_$AuditEventSourceImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AuditEventSource
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2901,7 +2975,7 @@ class _$AuditEventSourceImpl extends _AuditEventSource {
             const DeepCollectionEquality().equals(other._type, _type));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2912,7 +2986,9 @@ class _$AuditEventSourceImpl extends _AuditEventSource {
       observer,
       const DeepCollectionEquality().hash(_type));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AuditEventSource
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AuditEventSourceImplCopyWith<_$AuditEventSourceImpl> get copyWith =>
@@ -2940,12 +3016,10 @@ abstract class _AuditEventSource extends AuditEventSource {
   factory _AuditEventSource.fromJson(Map<String, dynamic> json) =
       _$AuditEventSourceImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2953,9 +3027,9 @@ abstract class _AuditEventSource extends AuditEventSource {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2969,23 +3043,27 @@ abstract class _AuditEventSource extends AuditEventSource {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [site] Logical source location within the healthcare enterprise network.
   ///  For example, a hospital or other provider location within a multi-entity
   ///  provider group.
-  Reference? get site;
   @override
+  Reference? get site;
 
   /// [observer] Identifier of the source where the event was detected.
-  Reference get observer;
   @override
+  Reference get observer;
 
   /// [type] Code specifying the type of source where event originated.
-  List<CodeableConcept>? get type;
   @override
-  @JsonKey(ignore: true)
+  List<CodeableConcept>? get type;
+
+  /// Create a copy of AuditEventSource
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AuditEventSourceImplCopyWith<_$AuditEventSourceImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3055,8 +3133,12 @@ mixin _$AuditEventEntity {
   ///  indicated as the entity.agent.
   List<AuditEventAgent>? get agent => throw _privateConstructorUsedError;
 
+  /// Serializes this AuditEventEntity to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AuditEventEntity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AuditEventEntityCopyWith<AuditEventEntity> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3093,6 +3175,8 @@ class _$AuditEventEntityCopyWithImpl<$Res, $Val extends AuditEventEntity>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AuditEventEntity
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3151,6 +3235,8 @@ class _$AuditEventEntityCopyWithImpl<$Res, $Val extends AuditEventEntity>
     ) as $Val);
   }
 
+  /// Create a copy of AuditEventEntity
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get what {
@@ -3163,6 +3249,8 @@ class _$AuditEventEntityCopyWithImpl<$Res, $Val extends AuditEventEntity>
     });
   }
 
+  /// Create a copy of AuditEventEntity
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get role {
@@ -3210,6 +3298,8 @@ class __$$AuditEventEntityImplCopyWithImpl<$Res>
       $Res Function(_$AuditEventEntityImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AuditEventEntity
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3454,7 +3544,7 @@ class _$AuditEventEntityImpl extends _AuditEventEntity {
             const DeepCollectionEquality().equals(other._agent, _agent));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3469,7 +3559,9 @@ class _$AuditEventEntityImpl extends _AuditEventEntity {
       const DeepCollectionEquality().hash(_detail),
       const DeepCollectionEquality().hash(_agent));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AuditEventEntity
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AuditEventEntityImplCopyWith<_$AuditEventEntityImpl> get copyWith =>
@@ -3501,12 +3593,10 @@ abstract class _AuditEventEntity extends AuditEventEntity {
   factory _AuditEventEntity.fromJson(Map<String, dynamic> json) =
       _$AuditEventEntityImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3514,9 +3604,9 @@ abstract class _AuditEventEntity extends AuditEventEntity {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3530,36 +3620,36 @@ abstract class _AuditEventEntity extends AuditEventEntity {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [what] Identifies a specific instance of the entity. The reference should
   ///  be version specific. This is allowed to be a Parameters resource.
-  Reference? get what;
   @override
+  Reference? get what;
 
   /// [role] Code representing the role the entity played in the event being
   ///  audited.
-  CodeableConcept? get role;
   @override
+  CodeableConcept? get role;
 
   /// [securityLabel] Security labels for the identified entity.
-  List<CodeableConcept>? get securityLabel;
   @override
+  List<CodeableConcept>? get securityLabel;
 
   /// [query] The query parameters for a query-type entities.
-  FhirBase64Binary? get query;
   @override
+  FhirBase64Binary? get query;
 
   /// [queryElement] ("_query") Extensions for query
+  @override
   @JsonKey(name: '_query')
   PrimitiveElement? get queryElement;
-  @override
 
   /// [detail] Tagged value pairs for conveying additional information about the
   ///  entity.
-  List<AuditEventDetail>? get detail;
   @override
+  List<AuditEventDetail>? get detail;
 
   /// [agent] The entity is attributed to an agent to express the agent's
   ///  responsibility for that entity in the activity. This is most used to
@@ -3567,9 +3657,13 @@ abstract class _AuditEventEntity extends AuditEventEntity {
   ///  example when importing data from a device, the device would be described
   ///  in an entity, and the user importing data from that media would be
   ///  indicated as the entity.agent.
-  List<AuditEventAgent>? get agent;
   @override
-  @JsonKey(ignore: true)
+  List<AuditEventAgent>? get agent;
+
+  /// Create a copy of AuditEventEntity
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AuditEventEntityImplCopyWith<_$AuditEventEntityImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3675,8 +3769,12 @@ mixin _$AuditEventDetail {
   PrimitiveElement? get valueBase64BinaryElement =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this AuditEventDetail to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AuditEventDetail
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AuditEventDetailCopyWith<AuditEventDetail> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3729,6 +3827,8 @@ class _$AuditEventDetailCopyWithImpl<$Res, $Val extends AuditEventDetail>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AuditEventDetail
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3842,6 +3942,8 @@ class _$AuditEventDetailCopyWithImpl<$Res, $Val extends AuditEventDetail>
     ) as $Val);
   }
 
+  /// Create a copy of AuditEventDetail
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get type {
@@ -3850,6 +3952,8 @@ class _$AuditEventDetailCopyWithImpl<$Res, $Val extends AuditEventDetail>
     });
   }
 
+  /// Create a copy of AuditEventDetail
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get valueQuantity {
@@ -3862,6 +3966,8 @@ class _$AuditEventDetailCopyWithImpl<$Res, $Val extends AuditEventDetail>
     });
   }
 
+  /// Create a copy of AuditEventDetail
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get valueCodeableConcept {
@@ -3875,6 +3981,8 @@ class _$AuditEventDetailCopyWithImpl<$Res, $Val extends AuditEventDetail>
     });
   }
 
+  /// Create a copy of AuditEventDetail
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get valueRange {
@@ -3887,6 +3995,8 @@ class _$AuditEventDetailCopyWithImpl<$Res, $Val extends AuditEventDetail>
     });
   }
 
+  /// Create a copy of AuditEventDetail
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get valueRatio {
@@ -3899,6 +4009,8 @@ class _$AuditEventDetailCopyWithImpl<$Res, $Val extends AuditEventDetail>
     });
   }
 
+  /// Create a copy of AuditEventDetail
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get valuePeriod {
@@ -3966,6 +4078,8 @@ class __$$AuditEventDetailImplCopyWithImpl<$Res>
       $Res Function(_$AuditEventDetailImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AuditEventDetail
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4309,7 +4423,7 @@ class _$AuditEventDetailImpl extends _AuditEventDetail {
                 other.valueBase64BinaryElement == valueBase64BinaryElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -4336,7 +4450,9 @@ class _$AuditEventDetailImpl extends _AuditEventDetail {
         valueBase64BinaryElement
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AuditEventDetail
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AuditEventDetailImplCopyWith<_$AuditEventDetailImpl> get copyWith =>
@@ -4384,12 +4500,10 @@ abstract class _AuditEventDetail extends AuditEventDetail {
   factory _AuditEventDetail.fromJson(Map<String, dynamic> json) =
       _$AuditEventDetailImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4397,9 +4511,9 @@ abstract class _AuditEventDetail extends AuditEventDetail {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4413,88 +4527,92 @@ abstract class _AuditEventDetail extends AuditEventDetail {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] The type of extra detail provided in the value.
-  CodeableConcept get type;
   @override
+  CodeableConcept get type;
 
   /// [valueQuantity] The  value of the extra detail.
-  Quantity? get valueQuantity;
   @override
+  Quantity? get valueQuantity;
 
   /// [valueCodeableConcept] The  value of the extra detail.
-  CodeableConcept? get valueCodeableConcept;
   @override
+  CodeableConcept? get valueCodeableConcept;
 
   /// [valueString] The  value of the extra detail.
-  String? get valueString;
   @override
+  String? get valueString;
 
   /// [valueStringElement] ("_valueString") Extensions for valueString
+  @override
   @JsonKey(name: '_valueString')
   PrimitiveElement? get valueStringElement;
-  @override
 
   /// [valueBoolean] The  value of the extra detail.
-  FhirBoolean? get valueBoolean;
   @override
+  FhirBoolean? get valueBoolean;
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
+  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
-  @override
 
   /// [valueInteger] The  value of the extra detail.
-  FhirInteger? get valueInteger;
   @override
+  FhirInteger? get valueInteger;
 
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
+  @override
   @JsonKey(name: '_valueInteger')
   PrimitiveElement? get valueIntegerElement;
-  @override
 
   /// [valueRange] The  value of the extra detail.
-  Range? get valueRange;
   @override
+  Range? get valueRange;
 
   /// [valueRatio] The  value of the extra detail.
-  Ratio? get valueRatio;
   @override
+  Ratio? get valueRatio;
 
   /// [valueTime] The  value of the extra detail.
-  FhirTime? get valueTime;
   @override
+  FhirTime? get valueTime;
 
   /// [valueTimeElement] ("_valueTime") Extensions for valueTime
+  @override
   @JsonKey(name: '_valueTime')
   PrimitiveElement? get valueTimeElement;
-  @override
 
   /// [valueDateTime] The  value of the extra detail.
-  FhirDateTime? get valueDateTime;
   @override
+  FhirDateTime? get valueDateTime;
 
   /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
+  @override
   @JsonKey(name: '_valueDateTime')
   PrimitiveElement? get valueDateTimeElement;
-  @override
 
   /// [valuePeriod] The  value of the extra detail.
-  Period? get valuePeriod;
   @override
+  Period? get valuePeriod;
 
   /// [valueBase64Binary] The  value of the extra detail.
-  FhirBase64Binary? get valueBase64Binary;
   @override
+  FhirBase64Binary? get valueBase64Binary;
 
   /// [valueBase64BinaryElement] ("_valueBase64Binary") Extensions for
   ///  valueBase64Binary
+  @override
   @JsonKey(name: '_valueBase64Binary')
   PrimitiveElement? get valueBase64BinaryElement;
+
+  /// Create a copy of AuditEventDetail
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AuditEventDetailImplCopyWith<_$AuditEventDetailImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

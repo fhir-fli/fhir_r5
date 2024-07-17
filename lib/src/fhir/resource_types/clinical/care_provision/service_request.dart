@@ -551,7 +551,7 @@ class ServiceRequest with _$ServiceRequest implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [ServiceRequestOrderDetail] A record of a request for service such as

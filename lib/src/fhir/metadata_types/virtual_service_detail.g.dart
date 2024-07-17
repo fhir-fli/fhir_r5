@@ -57,33 +57,21 @@ _$VirtualServiceDetailImpl _$$VirtualServiceDetailImplFromJson(
     );
 
 Map<String, dynamic> _$$VirtualServiceDetailImplToJson(
-    _$VirtualServiceDetailImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('channelType', instance.channelType?.toJson());
-  writeNotNull('addressUrl', instance.addressUrl?.toJson());
-  writeNotNull('_addressUrl', instance.addressUrlElement?.toJson());
-  writeNotNull('addressString', instance.addressString);
-  writeNotNull('_addressString', instance.addressStringElement?.toJson());
-  writeNotNull('addressContactPoint', instance.addressContactPoint?.toJson());
-  writeNotNull('addressExtendedContactDetail',
-      instance.addressExtendedContactDetail?.toJson());
-  writeNotNull('additionalInfo',
-      instance.additionalInfo?.map((e) => e.toJson()).toList());
-  writeNotNull('_additionalInfo',
-      instance.additionalInfoElement?.map((e) => e.toJson()).toList());
-  writeNotNull('maxParticipants', instance.maxParticipants?.toJson());
-  writeNotNull('_maxParticipants', instance.maxParticipantsElement?.toJson());
-  writeNotNull('sessionKey', instance.sessionKey);
-  writeNotNull('_sessionKey', instance.sessionKeyElement?.toJson());
-  return val;
-}
+        _$VirtualServiceDetailImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'channelType': instance.channelType,
+      'addressUrl': instance.addressUrl,
+      '_addressUrl': instance.addressUrlElement,
+      'addressString': instance.addressString,
+      '_addressString': instance.addressStringElement,
+      'addressContactPoint': instance.addressContactPoint,
+      'addressExtendedContactDetail': instance.addressExtendedContactDetail,
+      'additionalInfo': instance.additionalInfo,
+      '_additionalInfo': instance.additionalInfoElement,
+      'maxParticipants': instance.maxParticipants,
+      '_maxParticipants': instance.maxParticipantsElement,
+      'sessionKey': instance.sessionKey,
+      '_sessionKey': instance.sessionKeyElement,
+    };

@@ -160,8 +160,12 @@ mixin _$GenomicStudy {
   List<GenomicStudyAnalysis>? get analysis =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this GenomicStudy to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of GenomicStudy
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $GenomicStudyCopyWith<GenomicStudy> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -223,6 +227,8 @@ class _$GenomicStudyCopyWithImpl<$Res, $Val extends GenomicStudy>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GenomicStudy
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -381,6 +387,8 @@ class _$GenomicStudyCopyWithImpl<$Res, $Val extends GenomicStudy>
     ) as $Val);
   }
 
+  /// Create a copy of GenomicStudy
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -393,6 +401,8 @@ class _$GenomicStudyCopyWithImpl<$Res, $Val extends GenomicStudy>
     });
   }
 
+  /// Create a copy of GenomicStudy
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -405,6 +415,8 @@ class _$GenomicStudyCopyWithImpl<$Res, $Val extends GenomicStudy>
     });
   }
 
+  /// Create a copy of GenomicStudy
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get subject {
@@ -413,6 +425,8 @@ class _$GenomicStudyCopyWithImpl<$Res, $Val extends GenomicStudy>
     });
   }
 
+  /// Create a copy of GenomicStudy
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get encounter {
@@ -425,6 +439,8 @@ class _$GenomicStudyCopyWithImpl<$Res, $Val extends GenomicStudy>
     });
   }
 
+  /// Create a copy of GenomicStudy
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get referrer {
@@ -500,6 +516,8 @@ class __$$GenomicStudyImplCopyWithImpl<$Res>
       _$GenomicStudyImpl _value, $Res Function(_$GenomicStudyImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GenomicStudy
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1048,7 +1066,7 @@ class _$GenomicStudyImpl extends _GenomicStudy {
             const DeepCollectionEquality().equals(other._analysis, _analysis));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1084,7 +1102,9 @@ class _$GenomicStudyImpl extends _GenomicStudy {
         const DeepCollectionEquality().hash(_analysis)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of GenomicStudy
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GenomicStudyImplCopyWith<_$GenomicStudyImpl> get copyWith =>
@@ -1138,44 +1158,42 @@ abstract class _GenomicStudy extends GenomicStudy {
   factory _GenomicStudy.fromJson(Map<String, dynamic> json) =
       _$GenomicStudyImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a GenomicStudy resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.GenomicStudy)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1183,16 +1201,16 @@ abstract class _GenomicStudy extends GenomicStudy {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1200,9 +1218,9 @@ abstract class _GenomicStudy extends GenomicStudy {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1216,94 +1234,98 @@ abstract class _GenomicStudy extends GenomicStudy {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] Identifiers for this genomic study.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [status] The status of the genomic study.
-  FhirCode? get status;
   @override
+  FhirCode? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [type] The type of the study, e.g., Familial variant segregation,
   ///  Functional variation detection, or Gene expression profiling.
-  List<CodeableConcept>? get type;
   @override
+  List<CodeableConcept>? get type;
 
   /// [subject] The primary subject of the genomic study.
-  Reference get subject;
   @override
+  Reference get subject;
 
   /// [encounter] The healthcare event with which this genomics study is
   ///  associated.
-  Reference? get encounter;
   @override
+  Reference? get encounter;
 
   /// [startDate] When the genomic study was started.
-  FhirDateTime? get startDate;
   @override
+  FhirDateTime? get startDate;
 
   /// [startDateElement] ("_startDate") Extensions for startDate
+  @override
   @JsonKey(name: '_startDate')
   PrimitiveElement? get startDateElement;
-  @override
 
   /// [basedOn] Event resources that the genomic study is based on.
-  List<Reference>? get basedOn;
   @override
+  List<Reference>? get basedOn;
 
   /// [referrer] Healthcare professional who requested or referred the genomic
   ///  study.
-  Reference? get referrer;
   @override
+  Reference? get referrer;
 
   /// [interpreter] Healthcare professionals who interpreted the genomic study.
-  List<Reference>? get interpreter;
   @override
+  List<Reference>? get interpreter;
 
   /// [reason] Why the genomic study was performed.
-  List<CodeableReference>? get reason;
   @override
+  List<CodeableReference>? get reason;
 
   /// [instantiatesCanonical] The defined protocol that describes the study.
-  FhirCanonical? get instantiatesCanonical;
   @override
+  FhirCanonical? get instantiatesCanonical;
 
   /// [instantiatesUri] The URL pointing to an externally maintained protocol
   ///  that describes the study.
-  FhirUri? get instantiatesUri;
   @override
+  FhirUri? get instantiatesUri;
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
+  @override
   @JsonKey(name: '_instantiatesUri')
   PrimitiveElement? get instantiatesUriElement;
-  @override
 
   /// [note] Comments related to the genomic study.
-  List<Annotation>? get note;
   @override
+  List<Annotation>? get note;
 
   /// [description] Description of the genomic study.
-  FhirMarkdown? get description;
   @override
+  FhirMarkdown? get description;
 
   /// [descriptionElement] ("_description") Extensions for description
+  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
-  @override
 
   /// [analysis] The details about a specific analysis that was performed in this
   ///  GenomicStudy.
-  List<GenomicStudyAnalysis>? get analysis;
   @override
-  @JsonKey(ignore: true)
+  List<GenomicStudyAnalysis>? get analysis;
+
+  /// Create a copy of GenomicStudy
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GenomicStudyImplCopyWith<_$GenomicStudyImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1422,8 +1444,12 @@ mixin _$GenomicStudyAnalysis {
   ///  settings and parameters.
   List<GenomicStudyDevice>? get device => throw _privateConstructorUsedError;
 
+  /// Serializes this GenomicStudyAnalysis to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of GenomicStudyAnalysis
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $GenomicStudyAnalysisCopyWith<GenomicStudyAnalysis> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1476,6 +1502,8 @@ class _$GenomicStudyAnalysisCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GenomicStudyAnalysis
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1604,6 +1632,8 @@ class _$GenomicStudyAnalysisCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of GenomicStudyAnalysis
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get genomeBuild {
@@ -1616,6 +1646,8 @@ class _$GenomicStudyAnalysisCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of GenomicStudyAnalysis
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get protocolPerformed {
@@ -1678,6 +1710,8 @@ class __$$GenomicStudyAnalysisImplCopyWithImpl<$Res>
       $Res Function(_$GenomicStudyAnalysisImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GenomicStudyAnalysis
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2186,7 +2220,7 @@ class _$GenomicStudyAnalysisImpl extends _GenomicStudyAnalysis {
             const DeepCollectionEquality().equals(other._device, _device));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -2216,7 +2250,9 @@ class _$GenomicStudyAnalysisImpl extends _GenomicStudyAnalysis {
         const DeepCollectionEquality().hash(_device)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of GenomicStudyAnalysis
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GenomicStudyAnalysisImplCopyWith<_$GenomicStudyAnalysisImpl>
@@ -2264,12 +2300,10 @@ abstract class _GenomicStudyAnalysis extends GenomicStudyAnalysis {
   factory _GenomicStudyAnalysis.fromJson(Map<String, dynamic> json) =
       _$GenomicStudyAnalysisImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2277,9 +2311,9 @@ abstract class _GenomicStudyAnalysis extends GenomicStudyAnalysis {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2293,107 +2327,111 @@ abstract class _GenomicStudyAnalysis extends GenomicStudyAnalysis {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] Identifiers for the analysis event.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [methodType] Type of the methods used in the analysis, e.g., Fluorescence
   ///  in situ hybridization (FISH), Karyotyping, or Microsatellite instability
   ///  testing (MSI).
-  List<CodeableConcept>? get methodType;
   @override
+  List<CodeableConcept>? get methodType;
 
   /// [changeType] Type of the genomic changes studied in the analysis, e.g.,
   ///  DNA, RNA, or amino acid change.
-  List<CodeableConcept>? get changeType;
   @override
+  List<CodeableConcept>? get changeType;
 
   /// [genomeBuild] The reference genome build that is used in this analysis.
-  CodeableConcept? get genomeBuild;
   @override
+  CodeableConcept? get genomeBuild;
 
   /// [instantiatesCanonical] The defined protocol that describes the analysis.
-  FhirCanonical? get instantiatesCanonical;
   @override
+  FhirCanonical? get instantiatesCanonical;
 
   /// [instantiatesUri] The URL pointing to an externally maintained protocol
   ///  that describes the analysis.
-  FhirUri? get instantiatesUri;
   @override
+  FhirUri? get instantiatesUri;
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
+  @override
   @JsonKey(name: '_instantiatesUri')
   PrimitiveElement? get instantiatesUriElement;
-  @override
 
   /// [title] Name of the analysis event (human friendly).
-  String? get title;
   @override
+  String? get title;
 
   /// [titleElement] ("_title") Extensions for title
+  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
-  @override
 
   /// [focus] The focus of a genomic analysis when it is not the patient of
   ///  record representing something or someone associated with the patient such
   ///  as a spouse, parent, child, or sibling. For example, in trio testing, the
   ///  GenomicStudy.subject would be the child (proband) and the
   ///  GenomicStudy.analysis.focus of a specific analysis would be the parent.
-  List<Reference>? get focus;
   @override
+  List<Reference>? get focus;
 
   /// [specimen] The specimen used in the analysis event.
-  List<Reference>? get specimen;
   @override
+  List<Reference>? get specimen;
 
   /// [date] The date of the analysis event.
-  FhirDateTime? get date;
   @override
+  FhirDateTime? get date;
 
   /// [dateElement] ("_date") Extensions for date
+  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
-  @override
 
   /// [note] Any notes capture with the analysis event.
-  List<Annotation>? get note;
   @override
+  List<Annotation>? get note;
 
   /// [protocolPerformed] The protocol that was performed for the analysis event.
-  Reference? get protocolPerformed;
   @override
+  Reference? get protocolPerformed;
 
   /// [regionsStudied] The genomic regions to be studied in the analysis (BED
   ///  file).
-  List<Reference>? get regionsStudied;
   @override
+  List<Reference>? get regionsStudied;
 
   /// [regionsCalled] Genomic regions actually called in the analysis event (BED
   ///  file).
-  List<Reference>? get regionsCalled;
   @override
+  List<Reference>? get regionsCalled;
 
   /// [input] Inputs for the analysis event.
-  List<GenomicStudyInput>? get input;
   @override
+  List<GenomicStudyInput>? get input;
 
   /// [output] Outputs for the analysis event.
-  List<GenomicStudyOutput>? get output;
   @override
+  List<GenomicStudyOutput>? get output;
 
   /// [performer] Performer for the analysis event.
-  List<GenomicStudyPerformer>? get performer;
   @override
+  List<GenomicStudyPerformer>? get performer;
 
   /// [device] Devices used for the analysis (e.g., instruments, software), with
   ///  settings and parameters.
-  List<GenomicStudyDevice>? get device;
   @override
-  @JsonKey(ignore: true)
+  List<GenomicStudyDevice>? get device;
+
+  /// Create a copy of GenomicStudyAnalysis
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GenomicStudyAnalysisImplCopyWith<_$GenomicStudyAnalysisImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2446,8 +2484,12 @@ mixin _$GenomicStudyInput {
   ///  generated this input file.
   Reference? get generatedByReference => throw _privateConstructorUsedError;
 
+  /// Serializes this GenomicStudyInput to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of GenomicStudyInput
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $GenomicStudyInputCopyWith<GenomicStudyInput> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2483,6 +2525,8 @@ class _$GenomicStudyInputCopyWithImpl<$Res, $Val extends GenomicStudyInput>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GenomicStudyInput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2526,6 +2570,8 @@ class _$GenomicStudyInputCopyWithImpl<$Res, $Val extends GenomicStudyInput>
     ) as $Val);
   }
 
+  /// Create a copy of GenomicStudyInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get file {
@@ -2538,6 +2584,8 @@ class _$GenomicStudyInputCopyWithImpl<$Res, $Val extends GenomicStudyInput>
     });
   }
 
+  /// Create a copy of GenomicStudyInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -2550,6 +2598,8 @@ class _$GenomicStudyInputCopyWithImpl<$Res, $Val extends GenomicStudyInput>
     });
   }
 
+  /// Create a copy of GenomicStudyInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get generatedByIdentifier {
@@ -2562,6 +2612,8 @@ class _$GenomicStudyInputCopyWithImpl<$Res, $Val extends GenomicStudyInput>
     });
   }
 
+  /// Create a copy of GenomicStudyInput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get generatedByReference {
@@ -2610,6 +2662,8 @@ class __$$GenomicStudyInputImplCopyWithImpl<$Res>
       $Res Function(_$GenomicStudyInputImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GenomicStudyInput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2778,7 +2832,7 @@ class _$GenomicStudyInputImpl extends _GenomicStudyInput {
                 other.generatedByReference == generatedByReference));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2790,7 +2844,9 @@ class _$GenomicStudyInputImpl extends _GenomicStudyInput {
       generatedByIdentifier,
       generatedByReference);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of GenomicStudyInput
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GenomicStudyInputImplCopyWith<_$GenomicStudyInputImpl> get copyWith =>
@@ -2819,12 +2875,10 @@ abstract class _GenomicStudyInput extends GenomicStudyInput {
   factory _GenomicStudyInput.fromJson(Map<String, dynamic> json) =
       _$GenomicStudyInputImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2832,9 +2886,9 @@ abstract class _GenomicStudyInput extends GenomicStudyInput {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2848,27 +2902,31 @@ abstract class _GenomicStudyInput extends GenomicStudyInput {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [file] File containing input data.
-  Reference? get file;
   @override
+  Reference? get file;
 
   /// [type] Type of input data, e.g., BAM, CRAM, or FASTA.
-  CodeableConcept? get type;
   @override
+  CodeableConcept? get type;
 
   /// [generatedByIdentifier] The analysis event or other GenomicStudy that
   ///  generated this input file.
-  Identifier? get generatedByIdentifier;
   @override
+  Identifier? get generatedByIdentifier;
 
   /// [generatedByReference] The analysis event or other GenomicStudy that
   ///  generated this input file.
-  Reference? get generatedByReference;
   @override
-  @JsonKey(ignore: true)
+  Reference? get generatedByReference;
+
+  /// Create a copy of GenomicStudyInput
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GenomicStudyInputImplCopyWith<_$GenomicStudyInputImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2913,8 +2971,12 @@ mixin _$GenomicStudyOutput {
   /// [type] Type of output data, e.g., VCF, MAF, or BAM.
   CodeableConcept? get type => throw _privateConstructorUsedError;
 
+  /// Serializes this GenomicStudyOutput to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of GenomicStudyOutput
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $GenomicStudyOutputCopyWith<GenomicStudyOutput> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2946,6 +3008,8 @@ class _$GenomicStudyOutputCopyWithImpl<$Res, $Val extends GenomicStudyOutput>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GenomicStudyOutput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2979,6 +3043,8 @@ class _$GenomicStudyOutputCopyWithImpl<$Res, $Val extends GenomicStudyOutput>
     ) as $Val);
   }
 
+  /// Create a copy of GenomicStudyOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get file {
@@ -2991,6 +3057,8 @@ class _$GenomicStudyOutputCopyWithImpl<$Res, $Val extends GenomicStudyOutput>
     });
   }
 
+  /// Create a copy of GenomicStudyOutput
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -3033,6 +3101,8 @@ class __$$GenomicStudyOutputImplCopyWithImpl<$Res>
       $Res Function(_$GenomicStudyOutputImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GenomicStudyOutput
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3175,7 +3245,7 @@ class _$GenomicStudyOutputImpl extends _GenomicStudyOutput {
             (identical(other.type, type) || other.type == type));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3185,7 +3255,9 @@ class _$GenomicStudyOutputImpl extends _GenomicStudyOutput {
       file,
       type);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of GenomicStudyOutput
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GenomicStudyOutputImplCopyWith<_$GenomicStudyOutputImpl> get copyWith =>
@@ -3212,12 +3284,10 @@ abstract class _GenomicStudyOutput extends GenomicStudyOutput {
   factory _GenomicStudyOutput.fromJson(Map<String, dynamic> json) =
       _$GenomicStudyOutputImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3225,9 +3295,9 @@ abstract class _GenomicStudyOutput extends GenomicStudyOutput {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3241,17 +3311,21 @@ abstract class _GenomicStudyOutput extends GenomicStudyOutput {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [file] File containing output data.
-  Reference? get file;
   @override
+  Reference? get file;
 
   /// [type] Type of output data, e.g., VCF, MAF, or BAM.
-  CodeableConcept? get type;
   @override
-  @JsonKey(ignore: true)
+  CodeableConcept? get type;
+
+  /// Create a copy of GenomicStudyOutput
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GenomicStudyOutputImplCopyWith<_$GenomicStudyOutputImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3298,8 +3372,12 @@ mixin _$GenomicStudyPerformer {
   /// [role] Role of the actor for this analysis.
   CodeableConcept? get role => throw _privateConstructorUsedError;
 
+  /// Serializes this GenomicStudyPerformer to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of GenomicStudyPerformer
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $GenomicStudyPerformerCopyWith<GenomicStudyPerformer> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3332,6 +3410,8 @@ class _$GenomicStudyPerformerCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GenomicStudyPerformer
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3365,6 +3445,8 @@ class _$GenomicStudyPerformerCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of GenomicStudyPerformer
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get actor {
@@ -3377,6 +3459,8 @@ class _$GenomicStudyPerformerCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of GenomicStudyPerformer
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get role {
@@ -3421,6 +3505,8 @@ class __$$GenomicStudyPerformerImplCopyWithImpl<$Res>
       $Res Function(_$GenomicStudyPerformerImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GenomicStudyPerformer
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3564,7 +3650,7 @@ class _$GenomicStudyPerformerImpl extends _GenomicStudyPerformer {
             (identical(other.role, role) || other.role == role));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3574,7 +3660,9 @@ class _$GenomicStudyPerformerImpl extends _GenomicStudyPerformer {
       actor,
       role);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of GenomicStudyPerformer
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GenomicStudyPerformerImplCopyWith<_$GenomicStudyPerformerImpl>
@@ -3601,12 +3689,10 @@ abstract class _GenomicStudyPerformer extends GenomicStudyPerformer {
   factory _GenomicStudyPerformer.fromJson(Map<String, dynamic> json) =
       _$GenomicStudyPerformerImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3614,9 +3700,9 @@ abstract class _GenomicStudyPerformer extends GenomicStudyPerformer {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3630,18 +3716,22 @@ abstract class _GenomicStudyPerformer extends GenomicStudyPerformer {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [actor] The organization, healthcare professional, or others who
   ///  participated in performing this analysis.
-  Reference? get actor;
   @override
+  Reference? get actor;
 
   /// [role] Role of the actor for this analysis.
-  CodeableConcept? get role;
   @override
-  @JsonKey(ignore: true)
+  CodeableConcept? get role;
+
+  /// Create a copy of GenomicStudyPerformer
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GenomicStudyPerformerImplCopyWith<_$GenomicStudyPerformerImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3688,8 +3778,12 @@ mixin _$GenomicStudyDevice {
   @JsonKey(name: 'function')
   CodeableConcept? get function_ => throw _privateConstructorUsedError;
 
+  /// Serializes this GenomicStudyDevice to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of GenomicStudyDevice
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $GenomicStudyDeviceCopyWith<GenomicStudyDevice> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3721,6 +3815,8 @@ class _$GenomicStudyDeviceCopyWithImpl<$Res, $Val extends GenomicStudyDevice>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GenomicStudyDevice
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3754,6 +3850,8 @@ class _$GenomicStudyDeviceCopyWithImpl<$Res, $Val extends GenomicStudyDevice>
     ) as $Val);
   }
 
+  /// Create a copy of GenomicStudyDevice
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get device {
@@ -3766,6 +3864,8 @@ class _$GenomicStudyDeviceCopyWithImpl<$Res, $Val extends GenomicStudyDevice>
     });
   }
 
+  /// Create a copy of GenomicStudyDevice
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get function_ {
@@ -3808,6 +3908,8 @@ class __$$GenomicStudyDeviceImplCopyWithImpl<$Res>
       $Res Function(_$GenomicStudyDeviceImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GenomicStudyDevice
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3953,7 +4055,7 @@ class _$GenomicStudyDeviceImpl extends _GenomicStudyDevice {
                 other.function_ == function_));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3963,7 +4065,9 @@ class _$GenomicStudyDeviceImpl extends _GenomicStudyDevice {
       device,
       function_);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of GenomicStudyDevice
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GenomicStudyDeviceImplCopyWith<_$GenomicStudyDeviceImpl> get copyWith =>
@@ -3991,12 +4095,10 @@ abstract class _GenomicStudyDevice extends GenomicStudyDevice {
   factory _GenomicStudyDevice.fromJson(Map<String, dynamic> json) =
       _$GenomicStudyDeviceImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4004,9 +4106,9 @@ abstract class _GenomicStudyDevice extends GenomicStudyDevice {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4020,19 +4122,23 @@ abstract class _GenomicStudyDevice extends GenomicStudyDevice {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [device] Device used for the analysis.
-  Reference? get device;
   @override
+  Reference? get device;
 
   /// [function_] ("function") Specific function for the device used for the
   ///  analysis.
+  @override
   @JsonKey(name: 'function')
   CodeableConcept? get function_;
+
+  /// Create a copy of GenomicStudyDevice
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GenomicStudyDeviceImplCopyWith<_$GenomicStudyDeviceImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

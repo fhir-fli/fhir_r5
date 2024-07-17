@@ -280,7 +280,6 @@ class DeviceMetric with _$DeviceMetric implements DomainResource {
     }
   }
 
-
   /// Another convenience method because more and more I'm transmitting FHIR
   /// data as a String and not a Map
   @override
@@ -304,7 +303,8 @@ class DeviceMetric with _$DeviceMetric implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));}
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
+}
 
 /// [DeviceMetricCalibration] Describes a measurement, calculation or setting
 ///  capability of a device.
@@ -435,6 +435,4 @@ class DeviceMetricCalibration
 
   @override
   String toYaml() => json2yaml(toJson());
-
-  
 }

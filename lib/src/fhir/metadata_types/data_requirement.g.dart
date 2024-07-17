@@ -58,38 +58,24 @@ _$DataRequirementImpl _$$DataRequirementImplFromJson(
     );
 
 Map<String, dynamic> _$$DataRequirementImplToJson(
-    _$DataRequirementImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull('_type', instance.typeElement?.toJson());
-  writeNotNull('profile', instance.profile?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'subjectCodeableConcept', instance.subjectCodeableConcept?.toJson());
-  writeNotNull('subjectReference', instance.subjectReference?.toJson());
-  writeNotNull('mustSupport', instance.mustSupport);
-  writeNotNull('_mustSupport',
-      instance.mustSupportElement?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'codeFilter', instance.codeFilter?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'dateFilter', instance.dateFilter?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'valueFilter', instance.valueFilter?.map((e) => e.toJson()).toList());
-  writeNotNull('limit', instance.limit?.toJson());
-  writeNotNull('_limit', instance.limitElement?.toJson());
-  writeNotNull('sort', instance.sort?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$DataRequirementImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'type': instance.type,
+      '_type': instance.typeElement,
+      'profile': instance.profile,
+      'subjectCodeableConcept': instance.subjectCodeableConcept,
+      'subjectReference': instance.subjectReference,
+      'mustSupport': instance.mustSupport,
+      '_mustSupport': instance.mustSupportElement,
+      'codeFilter': instance.codeFilter,
+      'dateFilter': instance.dateFilter,
+      'valueFilter': instance.valueFilter,
+      'limit': instance.limit,
+      '_limit': instance.limitElement,
+      'sort': instance.sort,
+    };
 
 _$DataRequirementCodeFilterImpl _$$DataRequirementCodeFilterImplFromJson(
         Map<String, dynamic> json) =>
@@ -119,28 +105,18 @@ _$DataRequirementCodeFilterImpl _$$DataRequirementCodeFilterImplFromJson(
     );
 
 Map<String, dynamic> _$$DataRequirementCodeFilterImplToJson(
-    _$DataRequirementCodeFilterImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('path', instance.path);
-  writeNotNull('_path', instance.pathElement?.toJson());
-  writeNotNull('searchParam', instance.searchParam);
-  writeNotNull('_searchParam', instance.searchParamElement?.toJson());
-  writeNotNull('valueSet', instance.valueSet?.toJson());
-  writeNotNull('code', instance.code?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$DataRequirementCodeFilterImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'path': instance.path,
+      '_path': instance.pathElement,
+      'searchParam': instance.searchParam,
+      '_searchParam': instance.searchParamElement,
+      'valueSet': instance.valueSet,
+      'code': instance.code,
+    };
 
 _$DataRequirementDateFilterImpl _$$DataRequirementDateFilterImplFromJson(
         Map<String, dynamic> json) =>
@@ -178,30 +154,20 @@ _$DataRequirementDateFilterImpl _$$DataRequirementDateFilterImplFromJson(
     );
 
 Map<String, dynamic> _$$DataRequirementDateFilterImplToJson(
-    _$DataRequirementDateFilterImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('path', instance.path);
-  writeNotNull('_path', instance.pathElement?.toJson());
-  writeNotNull('searchParam', instance.searchParam);
-  writeNotNull('_searchParam', instance.searchParamElement?.toJson());
-  writeNotNull('valueDateTime', instance.valueDateTime?.toJson());
-  writeNotNull('_valueDateTime', instance.valueDateTimeElement?.toJson());
-  writeNotNull('valuePeriod', instance.valuePeriod?.toJson());
-  writeNotNull('valueDuration', instance.valueDuration?.toJson());
-  return val;
-}
+        _$DataRequirementDateFilterImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'path': instance.path,
+      '_path': instance.pathElement,
+      'searchParam': instance.searchParam,
+      '_searchParam': instance.searchParamElement,
+      'valueDateTime': instance.valueDateTime,
+      '_valueDateTime': instance.valueDateTimeElement,
+      'valuePeriod': instance.valuePeriod,
+      'valueDuration': instance.valueDuration,
+    };
 
 _$DataRequirementSortImpl _$$DataRequirementSortImplFromJson(
         Map<String, dynamic> json) =>
@@ -226,26 +192,16 @@ _$DataRequirementSortImpl _$$DataRequirementSortImplFromJson(
     );
 
 Map<String, dynamic> _$$DataRequirementSortImplToJson(
-    _$DataRequirementSortImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('path', instance.path);
-  writeNotNull('_path', instance.pathElement?.toJson());
-  writeNotNull('direction', instance.direction?.toJson());
-  writeNotNull('_direction', instance.directionElement?.toJson());
-  return val;
-}
+        _$DataRequirementSortImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'path': instance.path,
+      '_path': instance.pathElement,
+      'direction': instance.direction,
+      '_direction': instance.directionElement,
+    };
 
 const _$DataRequirementSortDirectionEnumMap = {
   DataRequirementSortDirection.ascending: 'ascending',
@@ -295,29 +251,19 @@ _$DataRequirementValueFilterImpl _$$DataRequirementValueFilterImplFromJson(
     );
 
 Map<String, dynamic> _$$DataRequirementValueFilterImplToJson(
-    _$DataRequirementValueFilterImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('path', instance.path);
-  writeNotNull('_path', instance.pathElement?.toJson());
-  writeNotNull('searchParam', instance.searchParam);
-  writeNotNull('_searchParam', instance.searchParamElement?.toJson());
-  writeNotNull('comparator', instance.comparator?.toJson());
-  writeNotNull('_comparator', instance.comparatorElement?.toJson());
-  writeNotNull('valueDateTime', instance.valueDateTime?.toJson());
-  writeNotNull('_valueDateTime', instance.valueDateTimeElement?.toJson());
-  writeNotNull('valuePeriod', instance.valuePeriod?.toJson());
-  writeNotNull('valueDuration', instance.valueDuration?.toJson());
-  return val;
-}
+        _$DataRequirementValueFilterImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'path': instance.path,
+      '_path': instance.pathElement,
+      'searchParam': instance.searchParam,
+      '_searchParam': instance.searchParamElement,
+      'comparator': instance.comparator,
+      '_comparator': instance.comparatorElement,
+      'valueDateTime': instance.valueDateTime,
+      '_valueDateTime': instance.valueDateTimeElement,
+      'valuePeriod': instance.valuePeriod,
+      'valueDuration': instance.valueDuration,
+    };

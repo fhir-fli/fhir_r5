@@ -125,58 +125,44 @@ _$ArtifactAssessmentImpl _$$ArtifactAssessmentImplFromJson(
     );
 
 Map<String, dynamic> _$$ArtifactAssessmentImplToJson(
-    _$ArtifactAssessmentImpl instance) {
-  final val = <String, dynamic>{
-    'resourceType': instance.resourceType.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id?.toJson());
-  writeNotNull('meta', instance.meta?.toJson());
-  writeNotNull('implicitRules', instance.implicitRules?.toJson());
-  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
-  writeNotNull('language', instance.language?.toJson());
-  writeNotNull('_language', instance.languageElement?.toJson());
-  writeNotNull('text', instance.text?.toJson());
-  writeNotNull(
-      'contained', instance.contained?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
-  writeNotNull('title', instance.title);
-  writeNotNull('_title', instance.titleElement?.toJson());
-  writeNotNull('citeAsReference', instance.citeAsReference?.toJson());
-  writeNotNull('citeAsMarkdown', instance.citeAsMarkdown?.toJson());
-  writeNotNull('_citeAsMarkdown', instance.citeAsMarkdownElement?.toJson());
-  writeNotNull('date', instance.date?.toJson());
-  writeNotNull('_date', instance.dateElement?.toJson());
-  writeNotNull('copyright', instance.copyright?.toJson());
-  writeNotNull('_copyright', instance.copyrightElement?.toJson());
-  writeNotNull('approvalDate', instance.approvalDate?.toJson());
-  writeNotNull('_approvalDate', instance.approvalDateElement?.toJson());
-  writeNotNull('lastReviewDate', instance.lastReviewDate?.toJson());
-  writeNotNull('_lastReviewDate', instance.lastReviewDateElement?.toJson());
-  writeNotNull('artifactReference', instance.artifactReference?.toJson());
-  writeNotNull('artifactCanonical', instance.artifactCanonical?.toJson());
-  writeNotNull(
-      '_artifactCanonical', instance.artifactCanonicalElement?.toJson());
-  writeNotNull('artifactUri', instance.artifactUri?.toJson());
-  writeNotNull('_artifactUri', instance.artifactUriElement?.toJson());
-  writeNotNull('content', instance.content?.map((e) => e.toJson()).toList());
-  writeNotNull('workflowStatus', instance.workflowStatus?.toJson());
-  writeNotNull('_workflowStatus', instance.workflowStatusElement?.toJson());
-  writeNotNull('disposition', instance.disposition?.toJson());
-  writeNotNull('_disposition', instance.dispositionElement?.toJson());
-  return val;
-}
+        _$ArtifactAssessmentImpl instance) =>
+    <String, dynamic>{
+      'resourceType': instance.resourceType,
+      'id': instance.id,
+      'meta': instance.meta,
+      'implicitRules': instance.implicitRules,
+      '_implicitRules': instance.implicitRulesElement,
+      'language': instance.language,
+      '_language': instance.languageElement,
+      'text': instance.text,
+      'contained': instance.contained,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'identifier': instance.identifier,
+      'title': instance.title,
+      '_title': instance.titleElement,
+      'citeAsReference': instance.citeAsReference,
+      'citeAsMarkdown': instance.citeAsMarkdown,
+      '_citeAsMarkdown': instance.citeAsMarkdownElement,
+      'date': instance.date,
+      '_date': instance.dateElement,
+      'copyright': instance.copyright,
+      '_copyright': instance.copyrightElement,
+      'approvalDate': instance.approvalDate,
+      '_approvalDate': instance.approvalDateElement,
+      'lastReviewDate': instance.lastReviewDate,
+      '_lastReviewDate': instance.lastReviewDateElement,
+      'artifactReference': instance.artifactReference,
+      'artifactCanonical': instance.artifactCanonical,
+      '_artifactCanonical': instance.artifactCanonicalElement,
+      'artifactUri': instance.artifactUri,
+      '_artifactUri': instance.artifactUriElement,
+      'content': instance.content,
+      'workflowStatus': instance.workflowStatus,
+      '_workflowStatus': instance.workflowStatusElement,
+      'disposition': instance.disposition,
+      '_disposition': instance.dispositionElement,
+    };
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -397,36 +383,23 @@ _$ArtifactAssessmentContentImpl _$$ArtifactAssessmentContentImplFromJson(
     );
 
 Map<String, dynamic> _$$ArtifactAssessmentContentImplToJson(
-    _$ArtifactAssessmentContentImpl instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull(
-      'extension', instance.extension_?.map((e) => e.toJson()).toList());
-  writeNotNull('modifierExtension',
-      instance.modifierExtension?.map((e) => e.toJson()).toList());
-  writeNotNull('informationType', instance.informationType?.toJson());
-  writeNotNull('_informationType', instance.informationTypeElement?.toJson());
-  writeNotNull('summary', instance.summary?.toJson());
-  writeNotNull('_summary', instance.summaryElement?.toJson());
-  writeNotNull('type', instance.type?.toJson());
-  writeNotNull(
-      'classifier', instance.classifier?.map((e) => e.toJson()).toList());
-  writeNotNull('quantity', instance.quantity?.toJson());
-  writeNotNull('author', instance.author?.toJson());
-  writeNotNull('path', instance.path?.map((e) => e.toJson()).toList());
-  writeNotNull('_path', instance.pathElement?.map((e) => e.toJson()).toList());
-  writeNotNull('relatedArtifact',
-      instance.relatedArtifact?.map((e) => e.toJson()).toList());
-  writeNotNull('freeToShare', instance.freeToShare?.toJson());
-  writeNotNull('_freeToShare', instance.freeToShareElement?.toJson());
-  writeNotNull(
-      'component', instance.component?.map((e) => e.toJson()).toList());
-  return val;
-}
+        _$ArtifactAssessmentContentImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'extension': instance.extension_,
+      'modifierExtension': instance.modifierExtension,
+      'informationType': instance.informationType,
+      '_informationType': instance.informationTypeElement,
+      'summary': instance.summary,
+      '_summary': instance.summaryElement,
+      'type': instance.type,
+      'classifier': instance.classifier,
+      'quantity': instance.quantity,
+      'author': instance.author,
+      'path': instance.path,
+      '_path': instance.pathElement,
+      'relatedArtifact': instance.relatedArtifact,
+      'freeToShare': instance.freeToShare,
+      '_freeToShare': instance.freeToShareElement,
+      'component': instance.component,
+    };
