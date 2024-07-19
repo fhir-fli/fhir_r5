@@ -25,12 +25,21 @@ _$PeriodImpl _$$PeriodImplFromJson(Map<String, dynamic> json) => _$PeriodImpl(
           : PrimitiveElement.fromJson(json['_end'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$PeriodImplToJson(_$PeriodImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'start': instance.start,
-      '_start': instance.startElement,
-      'end': instance.end,
-      '_end': instance.endElement,
-    };
+Map<String, dynamic> _$$PeriodImplToJson(_$PeriodImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('start', instance.start?.toJson());
+  writeNotNull('_start', instance.startElement?.toJson());
+  writeNotNull('end', instance.end?.toJson());
+  writeNotNull('_end', instance.endElement?.toJson());
+  return val;
+}

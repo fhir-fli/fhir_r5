@@ -200,77 +200,100 @@ _$SearchParameterImpl _$$SearchParameterImplFromJson(
     );
 
 Map<String, dynamic> _$$SearchParameterImplToJson(
-        _$SearchParameterImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'url': instance.url,
-      '_url': instance.urlElement,
-      'identifier': instance.identifier,
-      'version': instance.version,
-      '_version': instance.versionElement,
-      'versionAlgorithmString': instance.versionAlgorithmString,
-      '_versionAlgorithmString': instance.versionAlgorithmStringElement,
-      'versionAlgorithmCoding': instance.versionAlgorithmCoding,
-      'name': instance.name,
-      '_name': instance.nameElement,
-      'title': instance.title,
-      '_title': instance.titleElement,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'experimental': instance.experimental,
-      '_experimental': instance.experimentalElement,
-      'date': instance.date,
-      '_date': instance.dateElement,
-      'publisher': instance.publisher,
-      '_publisher': instance.publisherElement,
-      'contact': instance.contact,
-      'description': instance.description,
-      '_description': instance.descriptionElement,
-      'useContext': instance.useContext,
-      'jurisdiction': instance.jurisdiction,
-      'purpose': instance.purpose,
-      '_purpose': instance.purposeElement,
-      'copyright': instance.copyright,
-      '_copyright': instance.copyrightElement,
-      'copyrightLabel': instance.copyrightLabel,
-      '_copyrightLabel': instance.copyrightLabelElement,
-      'derivedFrom': instance.derivedFrom,
-      'code': instance.code,
-      '_code': instance.codeElement,
-      'base': instance.base,
-      '_base': instance.baseElement,
-      'type': instance.type,
-      '_type': instance.typeElement,
-      'expression': instance.expression,
-      '_expression': instance.expressionElement,
-      'processingMode': instance.processingMode,
-      '_processingMode': instance.processingModeElement,
-      'constraint': instance.constraint,
-      '_constraint': instance.constraintElement,
-      'target': instance.target,
-      '_target': instance.targetElement,
-      'multipleOr': instance.multipleOr,
-      '_multipleOr': instance.multipleOrElement,
-      'multipleAnd': instance.multipleAnd,
-      '_multipleAnd': instance.multipleAndElement,
-      'comparator': instance.comparator,
-      '_comparator': instance.comparatorElement,
-      'modifier': instance.modifier,
-      '_modifier': instance.modifierElement,
-      'chain': instance.chain,
-      '_chain': instance.chainElement,
-      'component': instance.component,
-    };
+    _$SearchParameterImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('url', instance.url?.toJson());
+  writeNotNull('_url', instance.urlElement?.toJson());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('version', instance.version);
+  writeNotNull('_version', instance.versionElement?.toJson());
+  writeNotNull('versionAlgorithmString', instance.versionAlgorithmString);
+  writeNotNull('_versionAlgorithmString',
+      instance.versionAlgorithmStringElement?.toJson());
+  writeNotNull(
+      'versionAlgorithmCoding', instance.versionAlgorithmCoding?.toJson());
+  writeNotNull('name', instance.name);
+  writeNotNull('_name', instance.nameElement?.toJson());
+  writeNotNull('title', instance.title);
+  writeNotNull('_title', instance.titleElement?.toJson());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('experimental', instance.experimental?.toJson());
+  writeNotNull('_experimental', instance.experimentalElement?.toJson());
+  writeNotNull('date', instance.date?.toJson());
+  writeNotNull('_date', instance.dateElement?.toJson());
+  writeNotNull('publisher', instance.publisher);
+  writeNotNull('_publisher', instance.publisherElement?.toJson());
+  writeNotNull('contact', instance.contact?.map((e) => e.toJson()).toList());
+  writeNotNull('description', instance.description?.toJson());
+  writeNotNull('_description', instance.descriptionElement?.toJson());
+  writeNotNull(
+      'useContext', instance.useContext?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'jurisdiction', instance.jurisdiction?.map((e) => e.toJson()).toList());
+  writeNotNull('purpose', instance.purpose?.toJson());
+  writeNotNull('_purpose', instance.purposeElement?.toJson());
+  writeNotNull('copyright', instance.copyright?.toJson());
+  writeNotNull('_copyright', instance.copyrightElement?.toJson());
+  writeNotNull('copyrightLabel', instance.copyrightLabel);
+  writeNotNull('_copyrightLabel', instance.copyrightLabelElement?.toJson());
+  writeNotNull('derivedFrom', instance.derivedFrom?.toJson());
+  writeNotNull('code', instance.code?.toJson());
+  writeNotNull('_code', instance.codeElement?.toJson());
+  writeNotNull('base', instance.base?.map((e) => e.toJson()).toList());
+  writeNotNull('_base', instance.baseElement?.map((e) => e.toJson()).toList());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('_type', instance.typeElement?.toJson());
+  writeNotNull('expression', instance.expression);
+  writeNotNull('_expression', instance.expressionElement?.toJson());
+  writeNotNull('processingMode', instance.processingMode?.toJson());
+  writeNotNull('_processingMode', instance.processingModeElement?.toJson());
+  writeNotNull('constraint', instance.constraint);
+  writeNotNull('_constraint', instance.constraintElement?.toJson());
+  writeNotNull('target', instance.target?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      '_target', instance.targetElement?.map((e) => e.toJson()).toList());
+  writeNotNull('multipleOr', instance.multipleOr?.toJson());
+  writeNotNull('_multipleOr', instance.multipleOrElement?.toJson());
+  writeNotNull('multipleAnd', instance.multipleAnd?.toJson());
+  writeNotNull('_multipleAnd', instance.multipleAndElement?.toJson());
+  writeNotNull(
+      'comparator', instance.comparator?.map((e) => e.toJson()).toList());
+  writeNotNull('_comparator',
+      instance.comparatorElement?.map((e) => e.toJson()).toList());
+  writeNotNull('modifier', instance.modifier?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      '_modifier', instance.modifierElement?.map((e) => e.toJson()).toList());
+  writeNotNull('chain', instance.chain);
+  writeNotNull(
+      '_chain', instance.chainElement?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'component', instance.component?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -461,12 +484,22 @@ _$SearchParameterComponentImpl _$$SearchParameterComponentImplFromJson(
     );
 
 Map<String, dynamic> _$$SearchParameterComponentImplToJson(
-        _$SearchParameterComponentImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'definition': instance.definition,
-      'expression': instance.expression,
-      '_expression': instance.expressionElement,
-    };
+    _$SearchParameterComponentImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['definition'] = instance.definition.toJson();
+  writeNotNull('expression', instance.expression);
+  writeNotNull('_expression', instance.expressionElement?.toJson());
+  return val;
+}

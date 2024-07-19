@@ -30,15 +30,24 @@ _$ReferenceImpl _$$ReferenceImplFromJson(Map<String, dynamic> json) =>
           : PrimitiveElement.fromJson(json['_display'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$ReferenceImplToJson(_$ReferenceImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'reference': instance.reference,
-      '_reference': instance.referenceElement,
-      'type': instance.type,
-      '_type': instance.typeElement,
-      'identifier': instance.identifier,
-      'display': instance.display,
-      '_display': instance.displayElement,
-    };
+Map<String, dynamic> _$$ReferenceImplToJson(_$ReferenceImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('reference', instance.reference);
+  writeNotNull('_reference', instance.referenceElement?.toJson());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('_type', instance.typeElement?.toJson());
+  writeNotNull('identifier', instance.identifier?.toJson());
+  writeNotNull('display', instance.display);
+  writeNotNull('_display', instance.displayElement?.toJson());
+  return val;
+}

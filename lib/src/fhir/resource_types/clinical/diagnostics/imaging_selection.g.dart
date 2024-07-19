@@ -116,43 +116,59 @@ _$ImagingSelectionImpl _$$ImagingSelectionImplFromJson(
     );
 
 Map<String, dynamic> _$$ImagingSelectionImplToJson(
-        _$ImagingSelectionImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'subject': instance.subject,
-      'issued': instance.issued,
-      '_issued': instance.issuedElement,
-      'performer': instance.performer,
-      'basedOn': instance.basedOn,
-      'category': instance.category,
-      'code': instance.code,
-      'studyUid': instance.studyUid,
-      '_studyUid': instance.studyUidElement,
-      'derivedFrom': instance.derivedFrom,
-      'endpoint': instance.endpoint,
-      'seriesUid': instance.seriesUid,
-      '_seriesUid': instance.seriesUidElement,
-      'seriesNumber': instance.seriesNumber,
-      '_seriesNumber': instance.seriesNumberElement,
-      'frameOfReferenceUid': instance.frameOfReferenceUid,
-      '_frameOfReferenceUid': instance.frameOfReferenceUidElement,
-      'bodySite': instance.bodySite,
-      'focus': instance.focus,
-      'instance': instance.instance,
-    };
+    _$ImagingSelectionImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('subject', instance.subject?.toJson());
+  writeNotNull('issued', instance.issued?.toJson());
+  writeNotNull('_issued', instance.issuedElement?.toJson());
+  writeNotNull(
+      'performer', instance.performer?.map((e) => e.toJson()).toList());
+  writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
+  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
+  val['code'] = instance.code.toJson();
+  writeNotNull('studyUid', instance.studyUid?.toJson());
+  writeNotNull('_studyUid', instance.studyUidElement?.toJson());
+  writeNotNull(
+      'derivedFrom', instance.derivedFrom?.map((e) => e.toJson()).toList());
+  writeNotNull('endpoint', instance.endpoint?.map((e) => e.toJson()).toList());
+  writeNotNull('seriesUid', instance.seriesUid?.toJson());
+  writeNotNull('_seriesUid', instance.seriesUidElement?.toJson());
+  writeNotNull('seriesNumber', instance.seriesNumber?.toJson());
+  writeNotNull('_seriesNumber', instance.seriesNumberElement?.toJson());
+  writeNotNull('frameOfReferenceUid', instance.frameOfReferenceUid?.toJson());
+  writeNotNull(
+      '_frameOfReferenceUid', instance.frameOfReferenceUidElement?.toJson());
+  writeNotNull('bodySite', instance.bodySite?.toJson());
+  writeNotNull('focus', instance.focus?.map((e) => e.toJson()).toList());
+  writeNotNull('instance', instance.instance?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -342,14 +358,24 @@ _$ImagingSelectionPerformerImpl _$$ImagingSelectionPerformerImplFromJson(
     );
 
 Map<String, dynamic> _$$ImagingSelectionPerformerImplToJson(
-        _$ImagingSelectionPerformerImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'function': instance.function_,
-      'actor': instance.actor,
-    };
+    _$ImagingSelectionPerformerImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('function', instance.function_?.toJson());
+  writeNotNull('actor', instance.actor?.toJson());
+  return val;
+}
 
 _$ImagingSelectionInstanceImpl _$$ImagingSelectionInstanceImplFromJson(
         Map<String, dynamic> json) =>
@@ -390,21 +416,34 @@ _$ImagingSelectionInstanceImpl _$$ImagingSelectionInstanceImplFromJson(
     );
 
 Map<String, dynamic> _$$ImagingSelectionInstanceImplToJson(
-        _$ImagingSelectionInstanceImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'uid': instance.uid,
-      '_uid': instance.uidElement,
-      'number': instance.number,
-      '_number': instance.numberElement,
-      'sopClass': instance.sopClass,
-      'subset': instance.subset,
-      '_subset': instance.subsetElement,
-      'imageRegion2D': instance.imageRegion2D,
-      'imageRegion3D': instance.imageRegion3D,
-    };
+    _$ImagingSelectionInstanceImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('uid', instance.uid?.toJson());
+  writeNotNull('_uid', instance.uidElement?.toJson());
+  writeNotNull('number', instance.number?.toJson());
+  writeNotNull('_number', instance.numberElement?.toJson());
+  writeNotNull('sopClass', instance.sopClass?.toJson());
+  writeNotNull('subset', instance.subset);
+  writeNotNull(
+      '_subset', instance.subsetElement?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'imageRegion2D', instance.imageRegion2D?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'imageRegion3D', instance.imageRegion3D?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$ImagingSelectionImageRegion2DImpl
     _$$ImagingSelectionImageRegion2DImplFromJson(Map<String, dynamic> json) =>
@@ -432,16 +471,28 @@ _$ImagingSelectionImageRegion2DImpl
         );
 
 Map<String, dynamic> _$$ImagingSelectionImageRegion2DImplToJson(
-        _$ImagingSelectionImageRegion2DImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'regionType': instance.regionType,
-      '_regionType': instance.regionTypeElement,
-      'coordinate': instance.coordinate,
-      '_coordinate': instance.coordinateElement,
-    };
+    _$ImagingSelectionImageRegion2DImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('regionType', instance.regionType?.toJson());
+  writeNotNull('_regionType', instance.regionTypeElement?.toJson());
+  writeNotNull(
+      'coordinate', instance.coordinate?.map((e) => e.toJson()).toList());
+  writeNotNull('_coordinate',
+      instance.coordinateElement?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$ImagingSelectionImageRegion3DImpl
     _$$ImagingSelectionImageRegion3DImplFromJson(Map<String, dynamic> json) =>
@@ -469,13 +520,25 @@ _$ImagingSelectionImageRegion3DImpl
         );
 
 Map<String, dynamic> _$$ImagingSelectionImageRegion3DImplToJson(
-        _$ImagingSelectionImageRegion3DImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'regionType': instance.regionType,
-      '_regionType': instance.regionTypeElement,
-      'coordinate': instance.coordinate,
-      '_coordinate': instance.coordinateElement,
-    };
+    _$ImagingSelectionImageRegion3DImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('regionType', instance.regionType?.toJson());
+  writeNotNull('_regionType', instance.regionTypeElement?.toJson());
+  writeNotNull(
+      'coordinate', instance.coordinate?.map((e) => e.toJson()).toList());
+  writeNotNull('_coordinate',
+      instance.coordinateElement?.map((e) => e.toJson()).toList());
+  return val;
+}

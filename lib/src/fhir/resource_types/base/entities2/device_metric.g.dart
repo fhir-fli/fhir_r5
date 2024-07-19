@@ -75,32 +75,47 @@ _$DeviceMetricImpl _$$DeviceMetricImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$DeviceMetricImplToJson(_$DeviceMetricImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'type': instance.type,
-      'unit': instance.unit,
-      'device': instance.device,
-      'operationalStatus': instance.operationalStatus,
-      '_operationalStatus': instance.operationalStatusElement,
-      'color': instance.color,
-      '_color': instance.colorElement,
-      'category': instance.category,
-      '_category': instance.categoryElement,
-      'measurementFrequency': instance.measurementFrequency,
-      'calibration': instance.calibration,
-    };
+Map<String, dynamic> _$$DeviceMetricImplToJson(_$DeviceMetricImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  val['type'] = instance.type.toJson();
+  writeNotNull('unit', instance.unit?.toJson());
+  val['device'] = instance.device.toJson();
+  writeNotNull('operationalStatus', instance.operationalStatus?.toJson());
+  writeNotNull(
+      '_operationalStatus', instance.operationalStatusElement?.toJson());
+  writeNotNull('color', instance.color?.toJson());
+  writeNotNull('_color', instance.colorElement?.toJson());
+  writeNotNull('category', instance.category?.toJson());
+  writeNotNull('_category', instance.categoryElement?.toJson());
+  writeNotNull('measurementFrequency', instance.measurementFrequency?.toJson());
+  writeNotNull(
+      'calibration', instance.calibration?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -308,18 +323,28 @@ _$DeviceMetricCalibrationImpl _$$DeviceMetricCalibrationImplFromJson(
     );
 
 Map<String, dynamic> _$$DeviceMetricCalibrationImplToJson(
-        _$DeviceMetricCalibrationImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'type': instance.type,
-      '_type': instance.typeElement,
-      'state': instance.state,
-      '_state': instance.stateElement,
-      'time': instance.time,
-      '_time': instance.timeElement,
-    };
+    _$DeviceMetricCalibrationImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('_type', instance.typeElement?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('_state', instance.stateElement?.toJson());
+  writeNotNull('time', instance.time?.toJson());
+  writeNotNull('_time', instance.timeElement?.toJson());
+  return val;
+}
 
 const _$DeviceMetricCalibrationTypeEnumMap = {
   DeviceMetricCalibrationType.unspecified: 'unspecified',

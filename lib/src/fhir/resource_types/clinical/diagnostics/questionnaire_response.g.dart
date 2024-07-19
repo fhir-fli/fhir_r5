@@ -86,34 +86,47 @@ _$QuestionnaireResponseImpl _$$QuestionnaireResponseImplFromJson(
     );
 
 Map<String, dynamic> _$$QuestionnaireResponseImplToJson(
-        _$QuestionnaireResponseImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'basedOn': instance.basedOn,
-      'partOf': instance.partOf,
-      'questionnaire': instance.questionnaire,
-      '_questionnaire': instance.questionnaireElement,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'subject': instance.subject,
-      'encounter': instance.encounter,
-      'authored': instance.authored,
-      '_authored': instance.authoredElement,
-      'author': instance.author,
-      'source': instance.source,
-      'item': instance.item,
-    };
+    _$QuestionnaireResponseImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
+  writeNotNull('partOf', instance.partOf?.map((e) => e.toJson()).toList());
+  val['questionnaire'] = instance.questionnaire.toJson();
+  writeNotNull('_questionnaire', instance.questionnaireElement?.toJson());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('subject', instance.subject?.toJson());
+  writeNotNull('encounter', instance.encounter?.toJson());
+  writeNotNull('authored', instance.authored?.toJson());
+  writeNotNull('_authored', instance.authoredElement?.toJson());
+  writeNotNull('author', instance.author?.toJson());
+  writeNotNull('source', instance.source?.toJson());
+  writeNotNull('item', instance.item?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -314,20 +327,30 @@ _$QuestionnaireResponseItemImpl _$$QuestionnaireResponseItemImplFromJson(
     );
 
 Map<String, dynamic> _$$QuestionnaireResponseItemImplToJson(
-        _$QuestionnaireResponseItemImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'linkId': instance.linkId,
-      '_linkId': instance.linkIdElement,
-      'definition': instance.definition,
-      '_definition': instance.definitionElement,
-      'text': instance.text,
-      '_text': instance.textElement,
-      'answer': instance.answer,
-      'item': instance.item,
-    };
+    _$QuestionnaireResponseItemImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('linkId', instance.linkId);
+  writeNotNull('_linkId', instance.linkIdElement?.toJson());
+  writeNotNull('definition', instance.definition?.toJson());
+  writeNotNull('_definition', instance.definitionElement?.toJson());
+  writeNotNull('text', instance.text);
+  writeNotNull('_text', instance.textElement?.toJson());
+  writeNotNull('answer', instance.answer?.map((e) => e.toJson()).toList());
+  writeNotNull('item', instance.item?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$QuestionnaireResponseAnswerImpl _$$QuestionnaireResponseAnswerImplFromJson(
         Map<String, dynamic> json) =>
@@ -412,30 +435,40 @@ _$QuestionnaireResponseAnswerImpl _$$QuestionnaireResponseAnswerImplFromJson(
     );
 
 Map<String, dynamic> _$$QuestionnaireResponseAnswerImplToJson(
-        _$QuestionnaireResponseAnswerImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'valueBoolean': instance.valueBoolean,
-      '_valueBoolean': instance.valueBooleanElement,
-      'valueDecimal': instance.valueDecimal,
-      '_valueDecimal': instance.valueDecimalElement,
-      'valueInteger': instance.valueInteger,
-      '_valueInteger': instance.valueIntegerElement,
-      'valueDate': instance.valueDate,
-      '_valueDate': instance.valueDateElement,
-      'valueDateTime': instance.valueDateTime,
-      '_valueDateTime': instance.valueDateTimeElement,
-      'valueTime': instance.valueTime,
-      '_valueTime': instance.valueTimeElement,
-      'valueString': instance.valueString,
-      '_valueString': instance.valueStringElement,
-      'valueUri': instance.valueUri,
-      '_valueUri': instance.valueUriElement,
-      'valueAttachment': instance.valueAttachment,
-      'valueCoding': instance.valueCoding,
-      'valueQuantity': instance.valueQuantity,
-      'valueReference': instance.valueReference,
-      'item': instance.item,
-    };
+    _$QuestionnaireResponseAnswerImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('valueBoolean', instance.valueBoolean?.toJson());
+  writeNotNull('_valueBoolean', instance.valueBooleanElement?.toJson());
+  writeNotNull('valueDecimal', instance.valueDecimal?.toJson());
+  writeNotNull('_valueDecimal', instance.valueDecimalElement?.toJson());
+  writeNotNull('valueInteger', instance.valueInteger?.toJson());
+  writeNotNull('_valueInteger', instance.valueIntegerElement?.toJson());
+  writeNotNull('valueDate', instance.valueDate?.toJson());
+  writeNotNull('_valueDate', instance.valueDateElement?.toJson());
+  writeNotNull('valueDateTime', instance.valueDateTime?.toJson());
+  writeNotNull('_valueDateTime', instance.valueDateTimeElement?.toJson());
+  writeNotNull('valueTime', instance.valueTime?.toJson());
+  writeNotNull('_valueTime', instance.valueTimeElement?.toJson());
+  writeNotNull('valueString', instance.valueString);
+  writeNotNull('_valueString', instance.valueStringElement?.toJson());
+  writeNotNull('valueUri', instance.valueUri?.toJson());
+  writeNotNull('_valueUri', instance.valueUriElement?.toJson());
+  writeNotNull('valueAttachment', instance.valueAttachment?.toJson());
+  writeNotNull('valueCoding', instance.valueCoding?.toJson());
+  writeNotNull('valueQuantity', instance.valueQuantity?.toJson());
+  writeNotNull('valueReference', instance.valueReference?.toJson());
+  writeNotNull('item', instance.item?.map((e) => e.toJson()).toList());
+  return val;
+}

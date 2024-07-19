@@ -56,25 +56,34 @@ _$TriggerDefinitionImpl _$$TriggerDefinitionImplFromJson(
     );
 
 Map<String, dynamic> _$$TriggerDefinitionImplToJson(
-        _$TriggerDefinitionImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'type': instance.type,
-      '_type': instance.typeElement,
-      'name': instance.name,
-      '_name': instance.nameElement,
-      'code': instance.code,
-      'subscriptionTopic': instance.subscriptionTopic,
-      'timingTiming': instance.timingTiming,
-      'timingReference': instance.timingReference,
-      'timingDate': instance.timingDate,
-      '_timingDate': instance.timingDateElement,
-      'timingDateTime': instance.timingDateTime,
-      '_timingDateTime': instance.timingDateTimeElement,
-      'data': instance.data,
-      'condition': instance.condition,
-    };
+    _$TriggerDefinitionImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('_type', instance.typeElement?.toJson());
+  writeNotNull('name', instance.name);
+  writeNotNull('_name', instance.nameElement?.toJson());
+  writeNotNull('code', instance.code?.toJson());
+  writeNotNull('subscriptionTopic', instance.subscriptionTopic?.toJson());
+  writeNotNull('timingTiming', instance.timingTiming?.toJson());
+  writeNotNull('timingReference', instance.timingReference?.toJson());
+  writeNotNull('timingDate', instance.timingDate?.toJson());
+  writeNotNull('_timingDate', instance.timingDateElement?.toJson());
+  writeNotNull('timingDateTime', instance.timingDateTime?.toJson());
+  writeNotNull('_timingDateTime', instance.timingDateTimeElement?.toJson());
+  writeNotNull('data', instance.data?.map((e) => e.toJson()).toList());
+  writeNotNull('condition', instance.condition?.toJson());
+  return val;
+}
 
 const _$TriggerDefinitionTypeEnumMap = {
   TriggerDefinitionType.named_event: 'named-event',

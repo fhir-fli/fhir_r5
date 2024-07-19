@@ -69,29 +69,44 @@ _$DeviceAssociationImpl _$$DeviceAssociationImplFromJson(
     );
 
 Map<String, dynamic> _$$DeviceAssociationImplToJson(
-        _$DeviceAssociationImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'device': instance.device,
-      'category': instance.category,
-      'status': instance.status,
-      'statusReason': instance.statusReason,
-      'subject': instance.subject,
-      'bodyStructure': instance.bodyStructure,
-      'period': instance.period,
-      'operation': instance.operation,
-    };
+    _$DeviceAssociationImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  val['device'] = instance.device.toJson();
+  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
+  val['status'] = instance.status.toJson();
+  writeNotNull(
+      'statusReason', instance.statusReason?.map((e) => e.toJson()).toList());
+  writeNotNull('subject', instance.subject?.toJson());
+  writeNotNull('bodyStructure', instance.bodyStructure?.toJson());
+  writeNotNull('period', instance.period?.toJson());
+  writeNotNull(
+      'operation', instance.operation?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -276,12 +291,22 @@ _$DeviceAssociationOperationImpl _$$DeviceAssociationOperationImplFromJson(
     );
 
 Map<String, dynamic> _$$DeviceAssociationOperationImplToJson(
-        _$DeviceAssociationOperationImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'status': instance.status,
-      'operator': instance.operator_,
-      'period': instance.period,
-    };
+    _$DeviceAssociationOperationImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['status'] = instance.status.toJson();
+  writeNotNull('operator', instance.operator_?.map((e) => e.toJson()).toList());
+  writeNotNull('period', instance.period?.toJson());
+  return val;
+}

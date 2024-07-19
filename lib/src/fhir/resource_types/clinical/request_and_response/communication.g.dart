@@ -124,47 +124,65 @@ _$CommunicationImpl _$$CommunicationImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$CommunicationImplToJson(_$CommunicationImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'instantiatesCanonical': instance.instantiatesCanonical,
-      'instantiatesUri': instance.instantiatesUri,
-      '_instantiatesUri': instance.instantiatesUriElement,
-      'basedOn': instance.basedOn,
-      'partOf': instance.partOf,
-      'inResponseTo': instance.inResponseTo,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'statusReason': instance.statusReason,
-      'category': instance.category,
-      'priority': instance.priority,
-      '_priority': instance.priorityElement,
-      'medium': instance.medium,
-      'subject': instance.subject,
-      'topic': instance.topic,
-      'about': instance.about,
-      'encounter': instance.encounter,
-      'sent': instance.sent,
-      '_sent': instance.sentElement,
-      'received': instance.received,
-      '_received': instance.receivedElement,
-      'recipient': instance.recipient,
-      'sender': instance.sender,
-      'reason': instance.reason,
-      'payload': instance.payload,
-      'note': instance.note,
-    };
+Map<String, dynamic> _$$CommunicationImplToJson(_$CommunicationImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('instantiatesCanonical',
+      instance.instantiatesCanonical?.map((e) => e.toJson()).toList());
+  writeNotNull('instantiatesUri',
+      instance.instantiatesUri?.map((e) => e.toJson()).toList());
+  writeNotNull('_instantiatesUri',
+      instance.instantiatesUriElement?.map((e) => e.toJson()).toList());
+  writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
+  writeNotNull('partOf', instance.partOf?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'inResponseTo', instance.inResponseTo?.map((e) => e.toJson()).toList());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('statusReason', instance.statusReason?.toJson());
+  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
+  writeNotNull('priority', instance.priority?.toJson());
+  writeNotNull('_priority', instance.priorityElement?.toJson());
+  writeNotNull('medium', instance.medium?.map((e) => e.toJson()).toList());
+  writeNotNull('subject', instance.subject?.toJson());
+  writeNotNull('topic', instance.topic?.toJson());
+  writeNotNull('about', instance.about?.map((e) => e.toJson()).toList());
+  writeNotNull('encounter', instance.encounter?.toJson());
+  writeNotNull('sent', instance.sent?.toJson());
+  writeNotNull('_sent', instance.sentElement?.toJson());
+  writeNotNull('received', instance.received?.toJson());
+  writeNotNull('_received', instance.receivedElement?.toJson());
+  writeNotNull(
+      'recipient', instance.recipient?.map((e) => e.toJson()).toList());
+  writeNotNull('sender', instance.sender?.toJson());
+  writeNotNull('reason', instance.reason?.map((e) => e.toJson()).toList());
+  writeNotNull('payload', instance.payload?.map((e) => e.toJson()).toList());
+  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -354,12 +372,23 @@ _$CommunicationPayloadImpl _$$CommunicationPayloadImplFromJson(
     );
 
 Map<String, dynamic> _$$CommunicationPayloadImplToJson(
-        _$CommunicationPayloadImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'contentAttachment': instance.contentAttachment,
-      'contentReference': instance.contentReference,
-      'contentCodeableConcept': instance.contentCodeableConcept,
-    };
+    _$CommunicationPayloadImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('contentAttachment', instance.contentAttachment?.toJson());
+  writeNotNull('contentReference', instance.contentReference?.toJson());
+  writeNotNull(
+      'contentCodeableConcept', instance.contentCodeableConcept?.toJson());
+  return val;
+}

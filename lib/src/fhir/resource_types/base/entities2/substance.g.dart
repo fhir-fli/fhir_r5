@@ -80,33 +80,47 @@ _$SubstanceImpl _$$SubstanceImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$SubstanceImplToJson(_$SubstanceImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'instance': instance.instance,
-      '_instance': instance.instanceElement,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'category': instance.category,
-      'code': instance.code,
-      'description': instance.description,
-      '_description': instance.descriptionElement,
-      'expiry': instance.expiry,
-      '_expiry': instance.expiryElement,
-      'quantity': instance.quantity,
-      'ingredient': instance.ingredient,
-    };
+Map<String, dynamic> _$$SubstanceImplToJson(_$SubstanceImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('instance', instance.instance?.toJson());
+  writeNotNull('_instance', instance.instanceElement?.toJson());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
+  val['code'] = instance.code.toJson();
+  writeNotNull('description', instance.description?.toJson());
+  writeNotNull('_description', instance.descriptionElement?.toJson());
+  writeNotNull('expiry', instance.expiry?.toJson());
+  writeNotNull('_expiry', instance.expiryElement?.toJson());
+  writeNotNull('quantity', instance.quantity?.toJson());
+  writeNotNull(
+      'ingredient', instance.ingredient?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -301,12 +315,23 @@ _$SubstanceIngredientImpl _$$SubstanceIngredientImplFromJson(
     );
 
 Map<String, dynamic> _$$SubstanceIngredientImplToJson(
-        _$SubstanceIngredientImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'quantity': instance.quantity,
-      'substanceCodeableConcept': instance.substanceCodeableConcept,
-      'substanceReference': instance.substanceReference,
-    };
+    _$SubstanceIngredientImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('quantity', instance.quantity?.toJson());
+  writeNotNull(
+      'substanceCodeableConcept', instance.substanceCodeableConcept?.toJson());
+  writeNotNull('substanceReference', instance.substanceReference?.toJson());
+  return val;
+}

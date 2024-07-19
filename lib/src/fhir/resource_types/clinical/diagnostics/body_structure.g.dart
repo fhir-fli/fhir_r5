@@ -74,30 +74,45 @@ _$BodyStructureImpl _$$BodyStructureImplFromJson(Map<String, dynamic> json) =>
       patient: Reference.fromJson(json['patient'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$BodyStructureImplToJson(_$BodyStructureImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'active': instance.active,
-      '_active': instance.activeElement,
-      'morphology': instance.morphology,
-      'includedStructure': instance.includedStructure,
-      'excludedStructure': instance.excludedStructure,
-      'description': instance.description,
-      '_description': instance.descriptionElement,
-      'image': instance.image,
-      'patient': instance.patient,
-    };
+Map<String, dynamic> _$$BodyStructureImplToJson(_$BodyStructureImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('active', instance.active?.toJson());
+  writeNotNull('_active', instance.activeElement?.toJson());
+  writeNotNull('morphology', instance.morphology?.toJson());
+  val['includedStructure'] =
+      instance.includedStructure.map((e) => e.toJson()).toList();
+  writeNotNull('excludedStructure',
+      instance.excludedStructure?.map((e) => e.toJson()).toList());
+  writeNotNull('description', instance.description?.toJson());
+  writeNotNull('_description', instance.descriptionElement?.toJson());
+  writeNotNull('image', instance.image?.map((e) => e.toJson()).toList());
+  val['patient'] = instance.patient.toJson();
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -292,17 +307,30 @@ _$BodyStructureIncludedStructureImpl
         );
 
 Map<String, dynamic> _$$BodyStructureIncludedStructureImplToJson(
-        _$BodyStructureIncludedStructureImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'structure': instance.structure,
-      'laterality': instance.laterality,
-      'bodyLandmarkOrientation': instance.bodyLandmarkOrientation,
-      'spatialReference': instance.spatialReference,
-      'qualifier': instance.qualifier,
-    };
+    _$BodyStructureIncludedStructureImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['structure'] = instance.structure.toJson();
+  writeNotNull('laterality', instance.laterality?.toJson());
+  writeNotNull('bodyLandmarkOrientation',
+      instance.bodyLandmarkOrientation?.map((e) => e.toJson()).toList());
+  writeNotNull('spatialReference',
+      instance.spatialReference?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'qualifier', instance.qualifier?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$BodyStructureBodyLandmarkOrientationImpl
     _$$BodyStructureBodyLandmarkOrientationImplFromJson(
@@ -331,16 +359,30 @@ _$BodyStructureBodyLandmarkOrientationImpl
         );
 
 Map<String, dynamic> _$$BodyStructureBodyLandmarkOrientationImplToJson(
-        _$BodyStructureBodyLandmarkOrientationImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'landmarkDescription': instance.landmarkDescription,
-      'clockFacePosition': instance.clockFacePosition,
-      'distanceFromLandmark': instance.distanceFromLandmark,
-      'surfaceOrientation': instance.surfaceOrientation,
-    };
+    _$BodyStructureBodyLandmarkOrientationImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('landmarkDescription',
+      instance.landmarkDescription?.map((e) => e.toJson()).toList());
+  writeNotNull('clockFacePosition',
+      instance.clockFacePosition?.map((e) => e.toJson()).toList());
+  writeNotNull('distanceFromLandmark',
+      instance.distanceFromLandmark?.map((e) => e.toJson()).toList());
+  writeNotNull('surfaceOrientation',
+      instance.surfaceOrientation?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$BodyStructureDistanceFromLandmarkImpl
     _$$BodyStructureDistanceFromLandmarkImplFromJson(
@@ -363,11 +405,21 @@ _$BodyStructureDistanceFromLandmarkImpl
         );
 
 Map<String, dynamic> _$$BodyStructureDistanceFromLandmarkImplToJson(
-        _$BodyStructureDistanceFromLandmarkImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'device': instance.device,
-      'value': instance.value,
-    };
+    _$BodyStructureDistanceFromLandmarkImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('device', instance.device?.map((e) => e.toJson()).toList());
+  writeNotNull('value', instance.value?.map((e) => e.toJson()).toList());
+  return val;
+}

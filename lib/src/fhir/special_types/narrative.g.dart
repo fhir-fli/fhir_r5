@@ -19,14 +19,23 @@ _$NarrativeImpl _$$NarrativeImplFromJson(Map<String, dynamic> json) =>
       div: FhirMarkdown.fromJson(json['div']),
     );
 
-Map<String, dynamic> _$$NarrativeImplToJson(_$NarrativeImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'div': instance.div,
-    };
+Map<String, dynamic> _$$NarrativeImplToJson(_$NarrativeImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  val['div'] = instance.div.toJson();
+  return val;
+}
 
 const _$NarrativeStatusEnumMap = {
   NarrativeStatus.generated: 'generated',

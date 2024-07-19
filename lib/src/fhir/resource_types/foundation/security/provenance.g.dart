@@ -95,37 +95,52 @@ _$ProvenanceImpl _$$ProvenanceImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$ProvenanceImplToJson(_$ProvenanceImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'target': instance.target,
-      'occurredPeriod': instance.occurredPeriod,
-      'occurredDateTime': instance.occurredDateTime,
-      '_occurredDateTime': instance.occurredDateTimeElement,
-      'recorded': instance.recorded,
-      '_recorded': instance.recordedElement,
-      'policy': instance.policy,
-      '_policy': instance.policyElement,
-      'location': instance.location,
-      'authorization': instance.authorization,
-      'activity': instance.activity,
-      'basedOn': instance.basedOn,
-      'patient': instance.patient,
-      'encounter': instance.encounter,
-      'agent': instance.agent,
-      'entity': instance.entity,
-      'signature': instance.signature,
-    };
+Map<String, dynamic> _$$ProvenanceImplToJson(_$ProvenanceImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['target'] = instance.target.map((e) => e.toJson()).toList();
+  writeNotNull('occurredPeriod', instance.occurredPeriod?.toJson());
+  writeNotNull('occurredDateTime', instance.occurredDateTime?.toJson());
+  writeNotNull('_occurredDateTime', instance.occurredDateTimeElement?.toJson());
+  writeNotNull('recorded', instance.recorded?.toJson());
+  writeNotNull('_recorded', instance.recordedElement?.toJson());
+  writeNotNull('policy', instance.policy?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      '_policy', instance.policyElement?.map((e) => e.toJson()).toList());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull(
+      'authorization', instance.authorization?.map((e) => e.toJson()).toList());
+  writeNotNull('activity', instance.activity?.toJson());
+  writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
+  writeNotNull('patient', instance.patient?.toJson());
+  writeNotNull('encounter', instance.encounter?.toJson());
+  val['agent'] = instance.agent.map((e) => e.toJson()).toList();
+  writeNotNull('entity', instance.entity?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'signature', instance.signature?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -313,16 +328,26 @@ _$ProvenanceAgentImpl _$$ProvenanceAgentImplFromJson(
     );
 
 Map<String, dynamic> _$$ProvenanceAgentImplToJson(
-        _$ProvenanceAgentImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'type': instance.type,
-      'role': instance.role,
-      'who': instance.who,
-      'onBehalfOf': instance.onBehalfOf,
-    };
+    _$ProvenanceAgentImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('role', instance.role?.map((e) => e.toJson()).toList());
+  val['who'] = instance.who.toJson();
+  writeNotNull('onBehalfOf', instance.onBehalfOf?.toJson());
+  return val;
+}
 
 _$ProvenanceEntityImpl _$$ProvenanceEntityImplFromJson(
         Map<String, dynamic> json) =>
@@ -345,13 +370,23 @@ _$ProvenanceEntityImpl _$$ProvenanceEntityImplFromJson(
     );
 
 Map<String, dynamic> _$$ProvenanceEntityImplToJson(
-        _$ProvenanceEntityImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'role': instance.role,
-      '_role': instance.roleElement,
-      'what': instance.what,
-      'agent': instance.agent,
-    };
+    _$ProvenanceEntityImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('role', instance.role?.toJson());
+  writeNotNull('_role', instance.roleElement?.toJson());
+  val['what'] = instance.what.toJson();
+  writeNotNull('agent', instance.agent?.map((e) => e.toJson()).toList());
+  return val;
+}

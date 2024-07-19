@@ -109,40 +109,55 @@ _$BiologicallyDerivedProductDispenseImpl
         );
 
 Map<String, dynamic> _$$BiologicallyDerivedProductDispenseImplToJson(
-        _$BiologicallyDerivedProductDispenseImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'basedOn': instance.basedOn,
-      'partOf': instance.partOf,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'originRelationshipType': instance.originRelationshipType,
-      'product': instance.product,
-      'patient': instance.patient,
-      'matchStatus': instance.matchStatus,
-      'performer': instance.performer,
-      'location': instance.location,
-      'quantity': instance.quantity,
-      'preparedDate': instance.preparedDate,
-      '_preparedDate': instance.preparedDateElement,
-      'whenHandedOver': instance.whenHandedOver,
-      '_whenHandedOver': instance.whenHandedOverElement,
-      'destination': instance.destination,
-      'note': instance.note,
-      'usageInstruction': instance.usageInstruction,
-      '_usageInstruction': instance.usageInstructionElement,
-    };
+    _$BiologicallyDerivedProductDispenseImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
+  writeNotNull('partOf', instance.partOf?.map((e) => e.toJson()).toList());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull(
+      'originRelationshipType', instance.originRelationshipType?.toJson());
+  val['product'] = instance.product.toJson();
+  val['patient'] = instance.patient.toJson();
+  writeNotNull('matchStatus', instance.matchStatus?.toJson());
+  writeNotNull(
+      'performer', instance.performer?.map((e) => e.toJson()).toList());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('quantity', instance.quantity?.toJson());
+  writeNotNull('preparedDate', instance.preparedDate?.toJson());
+  writeNotNull('_preparedDate', instance.preparedDateElement?.toJson());
+  writeNotNull('whenHandedOver', instance.whenHandedOver?.toJson());
+  writeNotNull('_whenHandedOver', instance.whenHandedOverElement?.toJson());
+  writeNotNull('destination', instance.destination?.toJson());
+  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
+  writeNotNull('usageInstruction', instance.usageInstruction);
+  writeNotNull('_usageInstruction', instance.usageInstructionElement?.toJson());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -337,11 +352,21 @@ _$BiologicallyDerivedProductDispensePerformerImpl
         );
 
 Map<String, dynamic> _$$BiologicallyDerivedProductDispensePerformerImplToJson(
-        _$BiologicallyDerivedProductDispensePerformerImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'function': instance.function_,
-      'actor': instance.actor,
-    };
+    _$BiologicallyDerivedProductDispensePerformerImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('function', instance.function_?.toJson());
+  val['actor'] = instance.actor.toJson();
+  return val;
+}

@@ -19,10 +19,19 @@ _$RangeImpl _$$RangeImplFromJson(Map<String, dynamic> json) => _$RangeImpl(
           : Quantity.fromJson(json['high'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$RangeImplToJson(_$RangeImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'low': instance.low,
-      'high': instance.high,
-    };
+Map<String, dynamic> _$$RangeImplToJson(_$RangeImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('low', instance.low?.toJson());
+  writeNotNull('high', instance.high?.toJson());
+  return val;
+}

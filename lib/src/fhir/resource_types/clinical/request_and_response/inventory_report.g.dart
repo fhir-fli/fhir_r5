@@ -87,33 +87,47 @@ _$InventoryReportImpl _$$InventoryReportImplFromJson(
     );
 
 Map<String, dynamic> _$$InventoryReportImplToJson(
-        _$InventoryReportImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'countType': instance.countType,
-      '_countType': instance.countTypeElement,
-      'operationType': instance.operationType,
-      'operationTypeReason': instance.operationTypeReason,
-      'reportedDateTime': instance.reportedDateTime,
-      '_reportedDateTime': instance.reportedDateTimeElement,
-      'reporter': instance.reporter,
-      'reportingPeriod': instance.reportingPeriod,
-      'inventoryListing': instance.inventoryListing,
-      'note': instance.note,
-    };
+    _$InventoryReportImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('countType', instance.countType?.toJson());
+  writeNotNull('_countType', instance.countTypeElement?.toJson());
+  writeNotNull('operationType', instance.operationType?.toJson());
+  writeNotNull('operationTypeReason', instance.operationTypeReason?.toJson());
+  writeNotNull('reportedDateTime', instance.reportedDateTime?.toJson());
+  writeNotNull('_reportedDateTime', instance.reportedDateTimeElement?.toJson());
+  writeNotNull('reporter', instance.reporter?.toJson());
+  writeNotNull('reportingPeriod', instance.reportingPeriod?.toJson());
+  writeNotNull('inventoryListing',
+      instance.inventoryListing?.map((e) => e.toJson()).toList());
+  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -309,17 +323,27 @@ _$InventoryReportInventoryListingImpl
         );
 
 Map<String, dynamic> _$$InventoryReportInventoryListingImplToJson(
-        _$InventoryReportInventoryListingImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'location': instance.location,
-      'itemStatus': instance.itemStatus,
-      'countingDateTime': instance.countingDateTime,
-      '_countingDateTime': instance.countingDateTimeElement,
-      'item': instance.item,
-    };
+    _$InventoryReportInventoryListingImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('itemStatus', instance.itemStatus?.toJson());
+  writeNotNull('countingDateTime', instance.countingDateTime?.toJson());
+  writeNotNull('_countingDateTime', instance.countingDateTimeElement?.toJson());
+  writeNotNull('item', instance.item?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$InventoryReportItemImpl _$$InventoryReportItemImplFromJson(
         Map<String, dynamic> json) =>
@@ -339,12 +363,22 @@ _$InventoryReportItemImpl _$$InventoryReportItemImplFromJson(
     );
 
 Map<String, dynamic> _$$InventoryReportItemImplToJson(
-        _$InventoryReportItemImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'category': instance.category,
-      'quantity': instance.quantity,
-      'item': instance.item,
-    };
+    _$InventoryReportItemImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('category', instance.category?.toJson());
+  val['quantity'] = instance.quantity.toJson();
+  val['item'] = instance.item.toJson();
+  return val;
+}

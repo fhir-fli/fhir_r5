@@ -293,6 +293,7 @@ class FhirDb {
     try {
       final Box<Map<dynamic, dynamic>> box =
           await _getBox(resourceType: resourceType, pw: pw);
+      print('id: ${resource['id']} (${resource['id'].runtimeType})');
       await box.put(resource['id'], resource);
       return await _addType(
           resourceType: resourceType,

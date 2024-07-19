@@ -66,26 +66,35 @@ _$SampledDataImpl _$$SampledDataImplFromJson(Map<String, dynamic> json) =>
           : PrimitiveElement.fromJson(json['_data'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$SampledDataImplToJson(_$SampledDataImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'origin': instance.origin,
-      'interval': instance.interval,
-      '_interval': instance.intervalElement,
-      'intervalUnit': instance.intervalUnit,
-      '_intervalUnit': instance.intervalUnitElement,
-      'factor': instance.factor,
-      '_factor': instance.factorElement,
-      'lowerLimit': instance.lowerLimit,
-      '_lowerLimit': instance.lowerLimitElement,
-      'upperLimit': instance.upperLimit,
-      '_upperLimit': instance.upperLimitElement,
-      'dimensions': instance.dimensions,
-      '_dimensions': instance.dimensionsElement,
-      'codeMap': instance.codeMap,
-      'offsets': instance.offsets,
-      '_offsets': instance.offsetsElement,
-      'data': instance.data,
-      '_data': instance.dataElement,
-    };
+Map<String, dynamic> _$$SampledDataImplToJson(_$SampledDataImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  val['origin'] = instance.origin.toJson();
+  writeNotNull('interval', instance.interval?.toJson());
+  writeNotNull('_interval', instance.intervalElement?.toJson());
+  writeNotNull('intervalUnit', instance.intervalUnit?.toJson());
+  writeNotNull('_intervalUnit', instance.intervalUnitElement?.toJson());
+  writeNotNull('factor', instance.factor?.toJson());
+  writeNotNull('_factor', instance.factorElement?.toJson());
+  writeNotNull('lowerLimit', instance.lowerLimit?.toJson());
+  writeNotNull('_lowerLimit', instance.lowerLimitElement?.toJson());
+  writeNotNull('upperLimit', instance.upperLimit?.toJson());
+  writeNotNull('_upperLimit', instance.upperLimitElement?.toJson());
+  writeNotNull('dimensions', instance.dimensions?.toJson());
+  writeNotNull('_dimensions', instance.dimensionsElement?.toJson());
+  writeNotNull('codeMap', instance.codeMap?.toJson());
+  writeNotNull('offsets', instance.offsets);
+  writeNotNull('_offsets', instance.offsetsElement?.toJson());
+  writeNotNull('data', instance.data);
+  writeNotNull('_data', instance.dataElement?.toJson());
+  return val;
+}

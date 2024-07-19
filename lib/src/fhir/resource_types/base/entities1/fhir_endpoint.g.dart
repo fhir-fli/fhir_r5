@@ -88,37 +88,53 @@ _$FhirEndpointImpl _$$FhirEndpointImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$FhirEndpointImplToJson(_$FhirEndpointImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'connectionType': instance.connectionType,
-      'name': instance.name,
-      '_name': instance.nameElement,
-      'description': instance.description,
-      '_description': instance.descriptionElement,
-      'environmentType': instance.environmentType,
-      'managingOrganization': instance.managingOrganization,
-      'contact': instance.contact,
-      'period': instance.period,
-      'payload': instance.payload,
-      'address': instance.address,
-      '_address': instance.addressElement,
-      'header': instance.header,
-      '_header': instance.headerElement,
-    };
+Map<String, dynamic> _$$FhirEndpointImplToJson(_$FhirEndpointImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  val['connectionType'] =
+      instance.connectionType.map((e) => e.toJson()).toList();
+  writeNotNull('name', instance.name);
+  writeNotNull('_name', instance.nameElement?.toJson());
+  writeNotNull('description', instance.description);
+  writeNotNull('_description', instance.descriptionElement?.toJson());
+  writeNotNull('environmentType',
+      instance.environmentType?.map((e) => e.toJson()).toList());
+  writeNotNull('managingOrganization', instance.managingOrganization?.toJson());
+  writeNotNull('contact', instance.contact?.map((e) => e.toJson()).toList());
+  writeNotNull('period', instance.period?.toJson());
+  writeNotNull('payload', instance.payload?.map((e) => e.toJson()).toList());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('_address', instance.addressElement?.toJson());
+  writeNotNull('header', instance.header);
+  writeNotNull(
+      '_header', instance.headerElement?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -313,15 +329,26 @@ _$EndpointPayloadImpl _$$EndpointPayloadImplFromJson(
     );
 
 Map<String, dynamic> _$$EndpointPayloadImplToJson(
-        _$EndpointPayloadImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'type': instance.type,
-      'mimeType': instance.mimeType,
-      '_mimeType': instance.mimeTypeElement,
-    };
+    _$EndpointPayloadImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('type', instance.type?.map((e) => e.toJson()).toList());
+  writeNotNull('mimeType', instance.mimeType?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      '_mimeType', instance.mimeTypeElement?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$MimeTypeEnumMap = {
   MimeType.audio_aac: 'audio/aac',

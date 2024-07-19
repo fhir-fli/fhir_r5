@@ -100,37 +100,52 @@ _$RegulatedAuthorizationImpl _$$RegulatedAuthorizationImplFromJson(
     );
 
 Map<String, dynamic> _$$RegulatedAuthorizationImplToJson(
-        _$RegulatedAuthorizationImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'subject': instance.subject,
-      'type': instance.type,
-      'description': instance.description,
-      '_description': instance.descriptionElement,
-      'region': instance.region,
-      'status': instance.status,
-      'statusDate': instance.statusDate,
-      '_statusDate': instance.statusDateElement,
-      'validityPeriod': instance.validityPeriod,
-      'indication': instance.indication,
-      'intendedUse': instance.intendedUse,
-      'basis': instance.basis,
-      'holder': instance.holder,
-      'regulator': instance.regulator,
-      'attachedDocument': instance.attachedDocument,
-      'case': instance.case_,
-    };
+    _$RegulatedAuthorizationImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('subject', instance.subject?.map((e) => e.toJson()).toList());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('description', instance.description?.toJson());
+  writeNotNull('_description', instance.descriptionElement?.toJson());
+  writeNotNull('region', instance.region?.map((e) => e.toJson()).toList());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('statusDate', instance.statusDate?.toJson());
+  writeNotNull('_statusDate', instance.statusDateElement?.toJson());
+  writeNotNull('validityPeriod', instance.validityPeriod?.toJson());
+  writeNotNull(
+      'indication', instance.indication?.map((e) => e.toJson()).toList());
+  writeNotNull('intendedUse', instance.intendedUse?.toJson());
+  writeNotNull('basis', instance.basis?.map((e) => e.toJson()).toList());
+  writeNotNull('holder', instance.holder?.toJson());
+  writeNotNull('regulator', instance.regulator?.toJson());
+  writeNotNull('attachedDocument',
+      instance.attachedDocument?.map((e) => e.toJson()).toList());
+  writeNotNull('case', instance.case_?.toJson());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -331,16 +346,27 @@ _$RegulatedAuthorizationCaseImpl _$$RegulatedAuthorizationCaseImplFromJson(
     );
 
 Map<String, dynamic> _$$RegulatedAuthorizationCaseImplToJson(
-        _$RegulatedAuthorizationCaseImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'type': instance.type,
-      'status': instance.status,
-      'datePeriod': instance.datePeriod,
-      'dateDateTime': instance.dateDateTime,
-      '_dateDateTime': instance.dateDateTimeElement,
-      'application': instance.application,
-    };
+    _$RegulatedAuthorizationCaseImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('identifier', instance.identifier?.toJson());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('datePeriod', instance.datePeriod?.toJson());
+  writeNotNull('dateDateTime', instance.dateDateTime?.toJson());
+  writeNotNull('_dateDateTime', instance.dateDateTimeElement?.toJson());
+  writeNotNull(
+      'application', instance.application?.map((e) => e.toJson()).toList());
+  return val;
+}

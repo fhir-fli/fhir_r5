@@ -124,46 +124,65 @@ _$DiagnosticReportImpl _$$DiagnosticReportImplFromJson(
     );
 
 Map<String, dynamic> _$$DiagnosticReportImplToJson(
-        _$DiagnosticReportImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'basedOn': instance.basedOn,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'category': instance.category,
-      'code': instance.code,
-      'subject': instance.subject,
-      'encounter': instance.encounter,
-      'effectiveDateTime': instance.effectiveDateTime,
-      '_effectiveDateTime': instance.effectiveDateTimeElement,
-      'effectivePeriod': instance.effectivePeriod,
-      'issued': instance.issued,
-      '_issued': instance.issuedElement,
-      'performer': instance.performer,
-      'resultsInterpreter': instance.resultsInterpreter,
-      'specimen': instance.specimen,
-      'result': instance.result,
-      'note': instance.note,
-      'study': instance.study,
-      'supportingInfo': instance.supportingInfo,
-      'media': instance.media,
-      'composition': instance.composition,
-      'conclusion': instance.conclusion,
-      '_conclusion': instance.conclusionElement,
-      'conclusionCode': instance.conclusionCode,
-      'presentedForm': instance.presentedForm,
-    };
+    _$DiagnosticReportImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('basedOn', instance.basedOn?.map((e) => e.toJson()).toList());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
+  val['code'] = instance.code.toJson();
+  writeNotNull('subject', instance.subject?.toJson());
+  writeNotNull('encounter', instance.encounter?.toJson());
+  writeNotNull('effectiveDateTime', instance.effectiveDateTime?.toJson());
+  writeNotNull(
+      '_effectiveDateTime', instance.effectiveDateTimeElement?.toJson());
+  writeNotNull('effectivePeriod', instance.effectivePeriod?.toJson());
+  writeNotNull('issued', instance.issued?.toJson());
+  writeNotNull('_issued', instance.issuedElement?.toJson());
+  writeNotNull(
+      'performer', instance.performer?.map((e) => e.toJson()).toList());
+  writeNotNull('resultsInterpreter',
+      instance.resultsInterpreter?.map((e) => e.toJson()).toList());
+  writeNotNull('specimen', instance.specimen?.map((e) => e.toJson()).toList());
+  writeNotNull('result', instance.result?.map((e) => e.toJson()).toList());
+  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
+  writeNotNull('study', instance.study?.map((e) => e.toJson()).toList());
+  writeNotNull('supportingInfo',
+      instance.supportingInfo?.map((e) => e.toJson()).toList());
+  writeNotNull('media', instance.media?.map((e) => e.toJson()).toList());
+  writeNotNull('composition', instance.composition?.toJson());
+  writeNotNull('conclusion', instance.conclusion?.toJson());
+  writeNotNull('_conclusion', instance.conclusionElement?.toJson());
+  writeNotNull('conclusionCode',
+      instance.conclusionCode?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'presentedForm', instance.presentedForm?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -354,14 +373,24 @@ _$DiagnosticReportSupportingInfoImpl
         );
 
 Map<String, dynamic> _$$DiagnosticReportSupportingInfoImplToJson(
-        _$DiagnosticReportSupportingInfoImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'type': instance.type,
-      'reference': instance.reference,
-    };
+    _$DiagnosticReportSupportingInfoImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['type'] = instance.type.toJson();
+  val['reference'] = instance.reference.toJson();
+  return val;
+}
 
 _$DiagnosticReportMediaImpl _$$DiagnosticReportMediaImplFromJson(
         Map<String, dynamic> json) =>
@@ -381,12 +410,22 @@ _$DiagnosticReportMediaImpl _$$DiagnosticReportMediaImplFromJson(
     );
 
 Map<String, dynamic> _$$DiagnosticReportMediaImplToJson(
-        _$DiagnosticReportMediaImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'comment': instance.comment,
-      '_comment': instance.commentElement,
-      'link': instance.link,
-    };
+    _$DiagnosticReportMediaImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('comment', instance.comment);
+  writeNotNull('_comment', instance.commentElement?.toJson());
+  val['link'] = instance.link.toJson();
+  return val;
+}

@@ -93,35 +93,52 @@ _$InventoryItemImpl _$$InventoryItemImplFromJson(Map<String, dynamic> json) =>
               json['productReference'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$InventoryItemImplToJson(_$InventoryItemImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'category': instance.category,
-      'code': instance.code,
-      'name': instance.name,
-      'responsibleOrganization': instance.responsibleOrganization,
-      'description': instance.description,
-      'inventoryStatus': instance.inventoryStatus,
-      'baseUnit': instance.baseUnit,
-      'netContent': instance.netContent,
-      'association': instance.association,
-      'characteristic': instance.characteristic,
-      'instance': instance.instance,
-      'productReference': instance.productReference,
-    };
+Map<String, dynamic> _$$InventoryItemImplToJson(_$InventoryItemImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
+  writeNotNull('code', instance.code?.map((e) => e.toJson()).toList());
+  writeNotNull('name', instance.name?.map((e) => e.toJson()).toList());
+  writeNotNull('responsibleOrganization',
+      instance.responsibleOrganization?.map((e) => e.toJson()).toList());
+  writeNotNull('description', instance.description?.toJson());
+  writeNotNull('inventoryStatus',
+      instance.inventoryStatus?.map((e) => e.toJson()).toList());
+  writeNotNull('baseUnit', instance.baseUnit?.toJson());
+  writeNotNull('netContent', instance.netContent?.toJson());
+  writeNotNull(
+      'association', instance.association?.map((e) => e.toJson()).toList());
+  writeNotNull('characteristic',
+      instance.characteristic?.map((e) => e.toJson()).toList());
+  writeNotNull('instance', instance.instance?.toJson());
+  writeNotNull('productReference', instance.productReference?.toJson());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -310,17 +327,27 @@ _$InventoryItemNameImpl _$$InventoryItemNameImplFromJson(
     );
 
 Map<String, dynamic> _$$InventoryItemNameImplToJson(
-        _$InventoryItemNameImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'nameType': instance.nameType,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'name': instance.name,
-      '_name': instance.nameElement,
-    };
+    _$InventoryItemNameImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['nameType'] = instance.nameType.toJson();
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('name', instance.name);
+  writeNotNull('_name', instance.nameElement?.toJson());
+  return val;
+}
 
 _$InventoryItemResponsibleOrganizationImpl
     _$$InventoryItemResponsibleOrganizationImplFromJson(
@@ -339,14 +366,24 @@ _$InventoryItemResponsibleOrganizationImpl
         );
 
 Map<String, dynamic> _$$InventoryItemResponsibleOrganizationImplToJson(
-        _$InventoryItemResponsibleOrganizationImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'role': instance.role,
-      'organization': instance.organization,
-    };
+    _$InventoryItemResponsibleOrganizationImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['role'] = instance.role.toJson();
+  val['organization'] = instance.organization.toJson();
+  return val;
+}
 
 _$InventoryItemDescriptionImpl _$$InventoryItemDescriptionImplFromJson(
         Map<String, dynamic> json) =>
@@ -372,16 +409,26 @@ _$InventoryItemDescriptionImpl _$$InventoryItemDescriptionImplFromJson(
     );
 
 Map<String, dynamic> _$$InventoryItemDescriptionImplToJson(
-        _$InventoryItemDescriptionImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'description': instance.description,
-      '_description': instance.descriptionElement,
-    };
+    _$InventoryItemDescriptionImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('description', instance.description);
+  writeNotNull('_description', instance.descriptionElement?.toJson());
+  return val;
+}
 
 _$InventoryItemAssociationImpl _$$InventoryItemAssociationImplFromJson(
         Map<String, dynamic> json) =>
@@ -401,15 +448,25 @@ _$InventoryItemAssociationImpl _$$InventoryItemAssociationImplFromJson(
     );
 
 Map<String, dynamic> _$$InventoryItemAssociationImplToJson(
-        _$InventoryItemAssociationImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'associationType': instance.associationType,
-      'relatedItem': instance.relatedItem,
-      'quantity': instance.quantity,
-    };
+    _$InventoryItemAssociationImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['associationType'] = instance.associationType.toJson();
+  val['relatedItem'] = instance.relatedItem.toJson();
+  val['quantity'] = instance.quantity.toJson();
+  return val;
+}
 
 _$InventoryItemCharacteristicImpl _$$InventoryItemCharacteristicImplFromJson(
         Map<String, dynamic> json) =>
@@ -489,32 +546,42 @@ _$InventoryItemCharacteristicImpl _$$InventoryItemCharacteristicImplFromJson(
     );
 
 Map<String, dynamic> _$$InventoryItemCharacteristicImplToJson(
-        _$InventoryItemCharacteristicImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'characteristicType': instance.characteristicType,
-      'valueString': instance.valueString,
-      '_valueString': instance.valueStringElement,
-      'valueInteger': instance.valueInteger,
-      '_valueInteger': instance.valueIntegerElement,
-      'valueDecimal': instance.valueDecimal,
-      '_valueDecimal': instance.valueDecimalElement,
-      'valueBoolean': instance.valueBoolean,
-      '_valueBoolean': instance.valueBooleanElement,
-      'valueUrl': instance.valueUrl,
-      '_valueUrl': instance.valueUrlElement,
-      'valueDateTime': instance.valueDateTime,
-      '_valueDateTime': instance.valueDateTimeElement,
-      'valueQuantity': instance.valueQuantity,
-      'valueRange': instance.valueRange,
-      'valueRatio': instance.valueRatio,
-      'valueAnnotation': instance.valueAnnotation,
-      'valueAddress': instance.valueAddress,
-      'valueDuration': instance.valueDuration,
-      'valueCodeableConcept': instance.valueCodeableConcept,
-    };
+    _$InventoryItemCharacteristicImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['characteristicType'] = instance.characteristicType.toJson();
+  writeNotNull('valueString', instance.valueString);
+  writeNotNull('_valueString', instance.valueStringElement?.toJson());
+  writeNotNull('valueInteger', instance.valueInteger?.toJson());
+  writeNotNull('_valueInteger', instance.valueIntegerElement?.toJson());
+  writeNotNull('valueDecimal', instance.valueDecimal?.toJson());
+  writeNotNull('_valueDecimal', instance.valueDecimalElement?.toJson());
+  writeNotNull('valueBoolean', instance.valueBoolean?.toJson());
+  writeNotNull('_valueBoolean', instance.valueBooleanElement?.toJson());
+  writeNotNull('valueUrl', instance.valueUrl?.toJson());
+  writeNotNull('_valueUrl', instance.valueUrlElement?.toJson());
+  writeNotNull('valueDateTime', instance.valueDateTime?.toJson());
+  writeNotNull('_valueDateTime', instance.valueDateTimeElement?.toJson());
+  writeNotNull('valueQuantity', instance.valueQuantity?.toJson());
+  writeNotNull('valueRange', instance.valueRange?.toJson());
+  writeNotNull('valueRatio', instance.valueRatio?.toJson());
+  writeNotNull('valueAnnotation', instance.valueAnnotation?.toJson());
+  writeNotNull('valueAddress', instance.valueAddress?.toJson());
+  writeNotNull('valueDuration', instance.valueDuration?.toJson());
+  writeNotNull('valueCodeableConcept', instance.valueCodeableConcept?.toJson());
+  return val;
+}
 
 _$InventoryItemInstanceImpl _$$InventoryItemInstanceImplFromJson(
         Map<String, dynamic> json) =>
@@ -549,16 +616,27 @@ _$InventoryItemInstanceImpl _$$InventoryItemInstanceImplFromJson(
     );
 
 Map<String, dynamic> _$$InventoryItemInstanceImplToJson(
-        _$InventoryItemInstanceImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'lotNumber': instance.lotNumber,
-      '_lotNumber': instance.lotNumberElement,
-      'expiry': instance.expiry,
-      '_expiry': instance.expiryElement,
-      'subject': instance.subject,
-      'location': instance.location,
-    };
+    _$InventoryItemInstanceImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('lotNumber', instance.lotNumber);
+  writeNotNull('_lotNumber', instance.lotNumberElement?.toJson());
+  writeNotNull('expiry', instance.expiry?.toJson());
+  writeNotNull('_expiry', instance.expiryElement?.toJson());
+  writeNotNull('subject', instance.subject?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  return val;
+}

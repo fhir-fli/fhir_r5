@@ -23,12 +23,21 @@ _$MoneyImpl _$$MoneyImplFromJson(Map<String, dynamic> json) => _$MoneyImpl(
               json['_currency'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$MoneyImplToJson(_$MoneyImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'value': instance.value,
-      '_value': instance.valueElement,
-      'currency': instance.currency,
-      '_currency': instance.currencyElement,
-    };
+Map<String, dynamic> _$$MoneyImplToJson(_$MoneyImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull('_value', instance.valueElement?.toJson());
+  writeNotNull('currency', instance.currency?.toJson());
+  writeNotNull('_currency', instance.currencyElement?.toJson());
+  return val;
+}

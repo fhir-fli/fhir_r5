@@ -78,32 +78,49 @@ _$ResearchSubjectImpl _$$ResearchSubjectImplFromJson(
     );
 
 Map<String, dynamic> _$$ResearchSubjectImplToJson(
-        _$ResearchSubjectImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'progress': instance.progress,
-      'period': instance.period,
-      'study': instance.study,
-      'subject': instance.subject,
-      'assignedComparisonGroup': instance.assignedComparisonGroup,
-      '_assignedComparisonGroup': instance.assignedComparisonGroupElement,
-      'actualComparisonGroup': instance.actualComparisonGroup,
-      '_actualComparisonGroup': instance.actualComparisonGroupElement,
-      'consent': instance.consent,
-    };
+    _$ResearchSubjectImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('progress', instance.progress?.map((e) => e.toJson()).toList());
+  writeNotNull('period', instance.period?.toJson());
+  val['study'] = instance.study.toJson();
+  val['subject'] = instance.subject.toJson();
+  writeNotNull(
+      'assignedComparisonGroup', instance.assignedComparisonGroup?.toJson());
+  writeNotNull('_assignedComparisonGroup',
+      instance.assignedComparisonGroupElement?.toJson());
+  writeNotNull(
+      'actualComparisonGroup', instance.actualComparisonGroup?.toJson());
+  writeNotNull('_actualComparisonGroup',
+      instance.actualComparisonGroupElement?.toJson());
+  writeNotNull('consent', instance.consent?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -314,17 +331,27 @@ _$ResearchSubjectProgressImpl _$$ResearchSubjectProgressImplFromJson(
     );
 
 Map<String, dynamic> _$$ResearchSubjectProgressImplToJson(
-        _$ResearchSubjectProgressImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'type': instance.type,
-      'subjectState': instance.subjectState,
-      'milestone': instance.milestone,
-      'reason': instance.reason,
-      'startDate': instance.startDate,
-      '_startDate': instance.startDateElement,
-      'endDate': instance.endDate,
-      '_endDate': instance.endDateElement,
-    };
+    _$ResearchSubjectProgressImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('subjectState', instance.subjectState?.toJson());
+  writeNotNull('milestone', instance.milestone?.toJson());
+  writeNotNull('reason', instance.reason?.toJson());
+  writeNotNull('startDate', instance.startDate?.toJson());
+  writeNotNull('_startDate', instance.startDateElement?.toJson());
+  writeNotNull('endDate', instance.endDate?.toJson());
+  writeNotNull('_endDate', instance.endDateElement?.toJson());
+  return val;
+}

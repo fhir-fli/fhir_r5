@@ -28,13 +28,22 @@ _$UsageContextImpl _$$UsageContextImplFromJson(Map<String, dynamic> json) =>
           : Reference.fromJson(json['valueReference'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$UsageContextImplToJson(_$UsageContextImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'code': instance.code,
-      'valueCodeableConcept': instance.valueCodeableConcept,
-      'valueQuantity': instance.valueQuantity,
-      'valueRange': instance.valueRange,
-      'valueReference': instance.valueReference,
-    };
+Map<String, dynamic> _$$UsageContextImplToJson(_$UsageContextImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  val['code'] = instance.code.toJson();
+  writeNotNull('valueCodeableConcept', instance.valueCodeableConcept?.toJson());
+  writeNotNull('valueQuantity', instance.valueQuantity?.toJson());
+  writeNotNull('valueRange', instance.valueRange?.toJson());
+  writeNotNull('valueReference', instance.valueReference?.toJson());
+  return val;
+}

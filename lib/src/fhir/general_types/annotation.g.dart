@@ -32,15 +32,24 @@ _$AnnotationImpl _$$AnnotationImplFromJson(Map<String, dynamic> json) =>
           : PrimitiveElement.fromJson(json['_text'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$AnnotationImplToJson(_$AnnotationImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'authorReference': instance.authorReference,
-      'authorString': instance.authorString,
-      '_authorString': instance.authorStringElement,
-      'time': instance.time,
-      '_time': instance.timeElement,
-      'text': instance.text,
-      '_text': instance.textElement,
-    };
+Map<String, dynamic> _$$AnnotationImplToJson(_$AnnotationImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('authorReference', instance.authorReference?.toJson());
+  writeNotNull('authorString', instance.authorString);
+  writeNotNull('_authorString', instance.authorStringElement?.toJson());
+  writeNotNull('time', instance.time?.toJson());
+  writeNotNull('_time', instance.timeElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull('_text', instance.textElement?.toJson());
+  return val;
+}

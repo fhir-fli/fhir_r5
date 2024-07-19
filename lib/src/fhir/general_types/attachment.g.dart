@@ -87,34 +87,43 @@ _$AttachmentImpl _$$AttachmentImplFromJson(Map<String, dynamic> json) =>
           : PrimitiveElement.fromJson(json['_pages'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$AttachmentImplToJson(_$AttachmentImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'contentType': instance.contentType,
-      '_contentType': instance.contentTypeElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'data': instance.data,
-      '_data': instance.dataElement,
-      'url': instance.url,
-      '_url': instance.urlElement,
-      'size': instance.size,
-      '_size': instance.sizeElement,
-      'hash': instance.hash,
-      '_hash': instance.hashElement,
-      'title': instance.title,
-      '_title': instance.titleElement,
-      'creation': instance.creation,
-      '_creation': instance.creationElement,
-      'height': instance.height,
-      '_height': instance.heightElement,
-      'width': instance.width,
-      '_width': instance.widthElement,
-      'frames': instance.frames,
-      '_frames': instance.framesElement,
-      'duration': instance.duration,
-      '_duration': instance.durationElement,
-      'pages': instance.pages,
-      '_pages': instance.pagesElement,
-    };
+Map<String, dynamic> _$$AttachmentImplToJson(_$AttachmentImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('contentType', instance.contentType?.toJson());
+  writeNotNull('_contentType', instance.contentTypeElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('data', instance.data?.toJson());
+  writeNotNull('_data', instance.dataElement?.toJson());
+  writeNotNull('url', instance.url?.toJson());
+  writeNotNull('_url', instance.urlElement?.toJson());
+  writeNotNull('size', instance.size?.toJson());
+  writeNotNull('_size', instance.sizeElement?.toJson());
+  writeNotNull('hash', instance.hash?.toJson());
+  writeNotNull('_hash', instance.hashElement?.toJson());
+  writeNotNull('title', instance.title);
+  writeNotNull('_title', instance.titleElement?.toJson());
+  writeNotNull('creation', instance.creation?.toJson());
+  writeNotNull('_creation', instance.creationElement?.toJson());
+  writeNotNull('height', instance.height?.toJson());
+  writeNotNull('_height', instance.heightElement?.toJson());
+  writeNotNull('width', instance.width?.toJson());
+  writeNotNull('_width', instance.widthElement?.toJson());
+  writeNotNull('frames', instance.frames?.toJson());
+  writeNotNull('_frames', instance.framesElement?.toJson());
+  writeNotNull('duration', instance.duration?.toJson());
+  writeNotNull('_duration', instance.durationElement?.toJson());
+  writeNotNull('pages', instance.pages?.toJson());
+  writeNotNull('_pages', instance.pagesElement?.toJson());
+  return val;
+}

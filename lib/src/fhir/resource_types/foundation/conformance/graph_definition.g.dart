@@ -139,55 +139,72 @@ _$GraphDefinitionImpl _$$GraphDefinitionImplFromJson(
     );
 
 Map<String, dynamic> _$$GraphDefinitionImplToJson(
-        _$GraphDefinitionImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'url': instance.url,
-      '_url': instance.urlElement,
-      'identifier': instance.identifier,
-      'version': instance.version,
-      '_version': instance.versionElement,
-      'versionAlgorithmString': instance.versionAlgorithmString,
-      '_versionAlgorithmString': instance.versionAlgorithmStringElement,
-      'versionAlgorithmCoding': instance.versionAlgorithmCoding,
-      'name': instance.name,
-      '_name': instance.nameElement,
-      'title': instance.title,
-      '_title': instance.titleElement,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'experimental': instance.experimental,
-      '_experimental': instance.experimentalElement,
-      'date': instance.date,
-      '_date': instance.dateElement,
-      'publisher': instance.publisher,
-      '_publisher': instance.publisherElement,
-      'contact': instance.contact,
-      'description': instance.description,
-      '_description': instance.descriptionElement,
-      'useContext': instance.useContext,
-      'jurisdiction': instance.jurisdiction,
-      'purpose': instance.purpose,
-      '_purpose': instance.purposeElement,
-      'copyright': instance.copyright,
-      '_copyright': instance.copyrightElement,
-      'copyrightLabel': instance.copyrightLabel,
-      '_copyrightLabel': instance.copyrightLabelElement,
-      'start': instance.start,
-      '_start': instance.startElement,
-      'node': instance.node,
-      'link': instance.link,
-    };
+    _$GraphDefinitionImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('url', instance.url?.toJson());
+  writeNotNull('_url', instance.urlElement?.toJson());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('version', instance.version);
+  writeNotNull('_version', instance.versionElement?.toJson());
+  writeNotNull('versionAlgorithmString', instance.versionAlgorithmString);
+  writeNotNull('_versionAlgorithmString',
+      instance.versionAlgorithmStringElement?.toJson());
+  writeNotNull(
+      'versionAlgorithmCoding', instance.versionAlgorithmCoding?.toJson());
+  writeNotNull('name', instance.name);
+  writeNotNull('_name', instance.nameElement?.toJson());
+  writeNotNull('title', instance.title);
+  writeNotNull('_title', instance.titleElement?.toJson());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('experimental', instance.experimental?.toJson());
+  writeNotNull('_experimental', instance.experimentalElement?.toJson());
+  writeNotNull('date', instance.date?.toJson());
+  writeNotNull('_date', instance.dateElement?.toJson());
+  writeNotNull('publisher', instance.publisher);
+  writeNotNull('_publisher', instance.publisherElement?.toJson());
+  writeNotNull('contact', instance.contact?.map((e) => e.toJson()).toList());
+  writeNotNull('description', instance.description?.toJson());
+  writeNotNull('_description', instance.descriptionElement?.toJson());
+  writeNotNull(
+      'useContext', instance.useContext?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'jurisdiction', instance.jurisdiction?.map((e) => e.toJson()).toList());
+  writeNotNull('purpose', instance.purpose?.toJson());
+  writeNotNull('_purpose', instance.purposeElement?.toJson());
+  writeNotNull('copyright', instance.copyright?.toJson());
+  writeNotNull('_copyright', instance.copyrightElement?.toJson());
+  writeNotNull('copyrightLabel', instance.copyrightLabel);
+  writeNotNull('_copyrightLabel', instance.copyrightLabelElement?.toJson());
+  writeNotNull('start', instance.start?.toJson());
+  writeNotNull('_start', instance.startElement?.toJson());
+  writeNotNull('node', instance.node?.map((e) => e.toJson()).toList());
+  writeNotNull('link', instance.link?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -388,19 +405,29 @@ _$GraphDefinitionNodeImpl _$$GraphDefinitionNodeImplFromJson(
     );
 
 Map<String, dynamic> _$$GraphDefinitionNodeImplToJson(
-        _$GraphDefinitionNodeImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'nodeId': instance.nodeId,
-      '_nodeId': instance.nodeIdElement,
-      'description': instance.description,
-      '_description': instance.descriptionElement,
-      'type': instance.type,
-      '_type': instance.typeElement,
-      'profile': instance.profile,
-    };
+    _$GraphDefinitionNodeImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('nodeId', instance.nodeId?.toJson());
+  writeNotNull('_nodeId', instance.nodeIdElement?.toJson());
+  writeNotNull('description', instance.description);
+  writeNotNull('_description', instance.descriptionElement?.toJson());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('_type', instance.typeElement?.toJson());
+  writeNotNull('profile', instance.profile?.toJson());
+  return val;
+}
 
 _$GraphDefinitionLinkImpl _$$GraphDefinitionLinkImplFromJson(
         Map<String, dynamic> json) =>
@@ -457,29 +484,40 @@ _$GraphDefinitionLinkImpl _$$GraphDefinitionLinkImplFromJson(
     );
 
 Map<String, dynamic> _$$GraphDefinitionLinkImplToJson(
-        _$GraphDefinitionLinkImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'description': instance.description,
-      '_description': instance.descriptionElement,
-      'min': instance.min,
-      '_min': instance.minElement,
-      'max': instance.max,
-      '_max': instance.maxElement,
-      'sourceId': instance.sourceId,
-      '_sourceId': instance.sourceIdElement,
-      'path': instance.path,
-      '_path': instance.pathElement,
-      'sliceName': instance.sliceName,
-      '_sliceName': instance.sliceNameElement,
-      'targetId': instance.targetId,
-      '_targetId': instance.targetIdElement,
-      'params': instance.params,
-      '_params': instance.paramsElement,
-      'compartment': instance.compartment,
-    };
+    _$GraphDefinitionLinkImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('description', instance.description);
+  writeNotNull('_description', instance.descriptionElement?.toJson());
+  writeNotNull('min', instance.min?.toJson());
+  writeNotNull('_min', instance.minElement?.toJson());
+  writeNotNull('max', instance.max);
+  writeNotNull('_max', instance.maxElement?.toJson());
+  writeNotNull('sourceId', instance.sourceId?.toJson());
+  writeNotNull('_sourceId', instance.sourceIdElement?.toJson());
+  writeNotNull('path', instance.path);
+  writeNotNull('_path', instance.pathElement?.toJson());
+  writeNotNull('sliceName', instance.sliceName);
+  writeNotNull('_sliceName', instance.sliceNameElement?.toJson());
+  writeNotNull('targetId', instance.targetId?.toJson());
+  writeNotNull('_targetId', instance.targetIdElement?.toJson());
+  writeNotNull('params', instance.params);
+  writeNotNull('_params', instance.paramsElement?.toJson());
+  writeNotNull(
+      'compartment', instance.compartment?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$GraphDefinitionCompartmentImpl _$$GraphDefinitionCompartmentImplFromJson(
         Map<String, dynamic> json) =>
@@ -516,19 +554,29 @@ _$GraphDefinitionCompartmentImpl _$$GraphDefinitionCompartmentImplFromJson(
     );
 
 Map<String, dynamic> _$$GraphDefinitionCompartmentImplToJson(
-        _$GraphDefinitionCompartmentImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'use': instance.use,
-      '_use': instance.useElement,
-      'rule': instance.rule,
-      '_rule': instance.ruleElement,
-      'code': instance.code,
-      '_code': instance.codeElement,
-      'expression': instance.expression,
-      '_expression': instance.expressionElement,
-      'description': instance.description,
-      '_description': instance.descriptionElement,
-    };
+    _$GraphDefinitionCompartmentImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('use', instance.use?.toJson());
+  writeNotNull('_use', instance.useElement?.toJson());
+  writeNotNull('rule', instance.rule?.toJson());
+  writeNotNull('_rule', instance.ruleElement?.toJson());
+  writeNotNull('code', instance.code?.toJson());
+  writeNotNull('_code', instance.codeElement?.toJson());
+  writeNotNull('expression', instance.expression);
+  writeNotNull('_expression', instance.expressionElement?.toJson());
+  writeNotNull('description', instance.description);
+  writeNotNull('_description', instance.descriptionElement?.toJson());
+  return val;
+}

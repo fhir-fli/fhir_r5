@@ -36,21 +36,30 @@ _$QuantityImpl _$$QuantityImplFromJson(Map<String, dynamic> json) =>
           : PrimitiveElement.fromJson(json['_code'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$QuantityImplToJson(_$QuantityImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'value': instance.value,
-      '_value': instance.valueElement,
-      'comparator': instance.comparator,
-      '_comparator': instance.comparatorElement,
-      'unit': instance.unit,
-      '_unit': instance.unitElement,
-      'system': instance.system,
-      '_system': instance.systemElement,
-      'code': instance.code,
-      '_code': instance.codeElement,
-    };
+Map<String, dynamic> _$$QuantityImplToJson(_$QuantityImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull('_value', instance.valueElement?.toJson());
+  writeNotNull('comparator', instance.comparator?.toJson());
+  writeNotNull('_comparator', instance.comparatorElement?.toJson());
+  writeNotNull('unit', instance.unit);
+  writeNotNull('_unit', instance.unitElement?.toJson());
+  writeNotNull('system', instance.system?.toJson());
+  writeNotNull('_system', instance.systemElement?.toJson());
+  writeNotNull('code', instance.code?.toJson());
+  writeNotNull('_code', instance.codeElement?.toJson());
+  return val;
+}
 
 const _$QuantityComparatorEnumMap = {
   QuantityComparator.lt: '<',

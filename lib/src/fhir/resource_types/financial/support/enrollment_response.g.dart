@@ -77,32 +77,45 @@ _$EnrollmentResponseImpl _$$EnrollmentResponseImplFromJson(
     );
 
 Map<String, dynamic> _$$EnrollmentResponseImplToJson(
-        _$EnrollmentResponseImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'request': instance.request,
-      'outcome': instance.outcome,
-      '_outcome': instance.outcomeElement,
-      'disposition': instance.disposition,
-      '_disposition': instance.dispositionElement,
-      'created': instance.created,
-      '_created': instance.createdElement,
-      'organization': instance.organization,
-      'requestProvider': instance.requestProvider,
-    };
+    _$EnrollmentResponseImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('request', instance.request?.toJson());
+  writeNotNull('outcome', instance.outcome?.toJson());
+  writeNotNull('_outcome', instance.outcomeElement?.toJson());
+  writeNotNull('disposition', instance.disposition);
+  writeNotNull('_disposition', instance.dispositionElement?.toJson());
+  writeNotNull('created', instance.created?.toJson());
+  writeNotNull('_created', instance.createdElement?.toJson());
+  writeNotNull('organization', instance.organization?.toJson());
+  writeNotNull('requestProvider', instance.requestProvider?.toJson());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',

@@ -19,10 +19,19 @@ _$RatioImpl _$$RatioImplFromJson(Map<String, dynamic> json) => _$RatioImpl(
           : Quantity.fromJson(json['denominator'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$RatioImplToJson(_$RatioImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'numerator': instance.numerator,
-      'denominator': instance.denominator,
-    };
+Map<String, dynamic> _$$RatioImplToJson(_$RatioImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('numerator', instance.numerator?.toJson());
+  writeNotNull('denominator', instance.denominator?.toJson());
+  return val;
+}

@@ -70,28 +70,42 @@ _$SubstancePolymerImpl _$$SubstancePolymerImplFromJson(
     );
 
 Map<String, dynamic> _$$SubstancePolymerImplToJson(
-        _$SubstancePolymerImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'class': instance.class_,
-      'geometry': instance.geometry,
-      'copolymerConnectivity': instance.copolymerConnectivity,
-      'modification': instance.modification,
-      '_modification': instance.modificationElement,
-      'monomerSet': instance.monomerSet,
-      'repeat': instance.repeat,
-    };
+    _$SubstancePolymerImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('identifier', instance.identifier?.toJson());
+  writeNotNull('class', instance.class_?.toJson());
+  writeNotNull('geometry', instance.geometry?.toJson());
+  writeNotNull('copolymerConnectivity',
+      instance.copolymerConnectivity?.map((e) => e.toJson()).toList());
+  writeNotNull('modification', instance.modification);
+  writeNotNull('_modification', instance.modificationElement?.toJson());
+  writeNotNull(
+      'monomerSet', instance.monomerSet?.map((e) => e.toJson()).toList());
+  writeNotNull('repeat', instance.repeat?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -276,14 +290,25 @@ _$SubstancePolymerMonomerSetImpl _$$SubstancePolymerMonomerSetImplFromJson(
     );
 
 Map<String, dynamic> _$$SubstancePolymerMonomerSetImplToJson(
-        _$SubstancePolymerMonomerSetImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'ratioType': instance.ratioType,
-      'startingMaterial': instance.startingMaterial,
-    };
+    _$SubstancePolymerMonomerSetImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('ratioType', instance.ratioType?.toJson());
+  writeNotNull('startingMaterial',
+      instance.startingMaterial?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$SubstancePolymerStartingMaterialImpl
     _$$SubstancePolymerStartingMaterialImplFromJson(
@@ -316,17 +341,27 @@ _$SubstancePolymerStartingMaterialImpl
         );
 
 Map<String, dynamic> _$$SubstancePolymerStartingMaterialImplToJson(
-        _$SubstancePolymerStartingMaterialImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'code': instance.code,
-      'category': instance.category,
-      'isDefining': instance.isDefining,
-      '_isDefining': instance.isDefiningElement,
-      'amount': instance.amount,
-    };
+    _$SubstancePolymerStartingMaterialImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('code', instance.code?.toJson());
+  writeNotNull('category', instance.category?.toJson());
+  writeNotNull('isDefining', instance.isDefining?.toJson());
+  writeNotNull('_isDefining', instance.isDefiningElement?.toJson());
+  writeNotNull('amount', instance.amount?.toJson());
+  return val;
+}
 
 _$SubstancePolymerRepeatImpl _$$SubstancePolymerRepeatImplFromJson(
         Map<String, dynamic> json) =>
@@ -354,16 +389,28 @@ _$SubstancePolymerRepeatImpl _$$SubstancePolymerRepeatImplFromJson(
     );
 
 Map<String, dynamic> _$$SubstancePolymerRepeatImplToJson(
-        _$SubstancePolymerRepeatImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'averageMolecularFormula': instance.averageMolecularFormula,
-      '_averageMolecularFormula': instance.averageMolecularFormulaElement,
-      'repeatUnitAmountType': instance.repeatUnitAmountType,
-      'repeatUnit': instance.repeatUnit,
-    };
+    _$SubstancePolymerRepeatImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('averageMolecularFormula', instance.averageMolecularFormula);
+  writeNotNull('_averageMolecularFormula',
+      instance.averageMolecularFormulaElement?.toJson());
+  writeNotNull('repeatUnitAmountType', instance.repeatUnitAmountType?.toJson());
+  writeNotNull(
+      'repeatUnit', instance.repeatUnit?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$SubstancePolymerRepeatUnitImpl _$$SubstancePolymerRepeatUnitImplFromJson(
         Map<String, dynamic> json) =>
@@ -400,19 +447,31 @@ _$SubstancePolymerRepeatUnitImpl _$$SubstancePolymerRepeatUnitImplFromJson(
     );
 
 Map<String, dynamic> _$$SubstancePolymerRepeatUnitImplToJson(
-        _$SubstancePolymerRepeatUnitImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'unit': instance.unit,
-      '_unit': instance.unitElement,
-      'orientation': instance.orientation,
-      'amount': instance.amount,
-      '_amount': instance.amountElement,
-      'degreeOfPolymerisation': instance.degreeOfPolymerisation,
-      'structuralRepresentation': instance.structuralRepresentation,
-    };
+    _$SubstancePolymerRepeatUnitImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('unit', instance.unit);
+  writeNotNull('_unit', instance.unitElement?.toJson());
+  writeNotNull('orientation', instance.orientation?.toJson());
+  writeNotNull('amount', instance.amount?.toJson());
+  writeNotNull('_amount', instance.amountElement?.toJson());
+  writeNotNull('degreeOfPolymerisation',
+      instance.degreeOfPolymerisation?.map((e) => e.toJson()).toList());
+  writeNotNull('structuralRepresentation',
+      instance.structuralRepresentation?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$SubstancePolymerDegreeOfPolymerisationImpl
     _$$SubstancePolymerDegreeOfPolymerisationImplFromJson(
@@ -448,19 +507,29 @@ _$SubstancePolymerDegreeOfPolymerisationImpl
         );
 
 Map<String, dynamic> _$$SubstancePolymerDegreeOfPolymerisationImplToJson(
-        _$SubstancePolymerDegreeOfPolymerisationImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'type': instance.type,
-      'average': instance.average,
-      '_average': instance.averageElement,
-      'low': instance.low,
-      '_low': instance.lowElement,
-      'high': instance.high,
-      '_high': instance.highElement,
-    };
+    _$SubstancePolymerDegreeOfPolymerisationImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('average', instance.average?.toJson());
+  writeNotNull('_average', instance.averageElement?.toJson());
+  writeNotNull('low', instance.low?.toJson());
+  writeNotNull('_low', instance.lowElement?.toJson());
+  writeNotNull('high', instance.high?.toJson());
+  writeNotNull('_high', instance.highElement?.toJson());
+  return val;
+}
 
 _$SubstancePolymerStructuralRepresentationImpl
     _$$SubstancePolymerStructuralRepresentationImplFromJson(
@@ -491,14 +560,24 @@ _$SubstancePolymerStructuralRepresentationImpl
         );
 
 Map<String, dynamic> _$$SubstancePolymerStructuralRepresentationImplToJson(
-        _$SubstancePolymerStructuralRepresentationImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'type': instance.type,
-      'representation': instance.representation,
-      '_representation': instance.representationElement,
-      'format': instance.format,
-      'attachment': instance.attachment,
-    };
+    _$SubstancePolymerStructuralRepresentationImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('representation', instance.representation);
+  writeNotNull('_representation', instance.representationElement?.toJson());
+  writeNotNull('format', instance.format?.toJson());
+  writeNotNull('attachment', instance.attachment?.toJson());
+  return val;
+}

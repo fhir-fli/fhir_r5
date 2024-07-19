@@ -110,40 +110,56 @@ _$GuidanceResponseImpl _$$GuidanceResponseImplFromJson(
     );
 
 Map<String, dynamic> _$$GuidanceResponseImplToJson(
-        _$GuidanceResponseImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'requestIdentifier': instance.requestIdentifier,
-      'identifier': instance.identifier,
-      'moduleUri': instance.moduleUri,
-      '_moduleUri': instance.moduleUriElement,
-      'moduleCanonical': instance.moduleCanonical,
-      '_moduleCanonical': instance.moduleCanonicalElement,
-      'moduleCodeableConcept': instance.moduleCodeableConcept,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'subject': instance.subject,
-      'encounter': instance.encounter,
-      'occurrenceDateTime': instance.occurrenceDateTime,
-      '_occurrenceDateTime': instance.occurrenceDateTimeElement,
-      'performer': instance.performer,
-      'reason': instance.reason,
-      'note': instance.note,
-      'evaluationMessage': instance.evaluationMessage,
-      'outputParameters': instance.outputParameters,
-      'result': instance.result,
-      'dataRequirement': instance.dataRequirement,
-    };
+    _$GuidanceResponseImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('requestIdentifier', instance.requestIdentifier?.toJson());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('moduleUri', instance.moduleUri?.toJson());
+  writeNotNull('_moduleUri', instance.moduleUriElement?.toJson());
+  writeNotNull('moduleCanonical', instance.moduleCanonical?.toJson());
+  writeNotNull('_moduleCanonical', instance.moduleCanonicalElement?.toJson());
+  writeNotNull(
+      'moduleCodeableConcept', instance.moduleCodeableConcept?.toJson());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('subject', instance.subject?.toJson());
+  writeNotNull('encounter', instance.encounter?.toJson());
+  writeNotNull('occurrenceDateTime', instance.occurrenceDateTime?.toJson());
+  writeNotNull(
+      '_occurrenceDateTime', instance.occurrenceDateTimeElement?.toJson());
+  writeNotNull('performer', instance.performer?.toJson());
+  writeNotNull('reason', instance.reason?.map((e) => e.toJson()).toList());
+  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
+  writeNotNull('evaluationMessage', instance.evaluationMessage?.toJson());
+  writeNotNull('outputParameters', instance.outputParameters?.toJson());
+  writeNotNull('result', instance.result?.map((e) => e.toJson()).toList());
+  writeNotNull('dataRequirement',
+      instance.dataRequirement?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',

@@ -81,31 +81,47 @@ _$NutritionProductImpl _$$NutritionProductImplFromJson(
     );
 
 Map<String, dynamic> _$$NutritionProductImplToJson(
-        _$NutritionProductImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'code': instance.code,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'category': instance.category,
-      'manufacturer': instance.manufacturer,
-      'nutrient': instance.nutrient,
-      'ingredient': instance.ingredient,
-      'knownAllergen': instance.knownAllergen,
-      'characteristic': instance.characteristic,
-      'instance': instance.instance,
-      'note': instance.note,
-    };
+    _$NutritionProductImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('code', instance.code?.toJson());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'manufacturer', instance.manufacturer?.map((e) => e.toJson()).toList());
+  writeNotNull('nutrient', instance.nutrient?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'ingredient', instance.ingredient?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'knownAllergen', instance.knownAllergen?.map((e) => e.toJson()).toList());
+  writeNotNull('characteristic',
+      instance.characteristic?.map((e) => e.toJson()).toList());
+  writeNotNull('instance', instance.instance?.map((e) => e.toJson()).toList());
+  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -295,14 +311,24 @@ _$NutritionProductNutrientImpl _$$NutritionProductNutrientImplFromJson(
     );
 
 Map<String, dynamic> _$$NutritionProductNutrientImplToJson(
-        _$NutritionProductNutrientImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'item': instance.item,
-      'amount': instance.amount,
-    };
+    _$NutritionProductNutrientImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('item', instance.item?.toJson());
+  writeNotNull('amount', instance.amount?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$NutritionProductIngredientImpl _$$NutritionProductIngredientImplFromJson(
         Map<String, dynamic> json) =>
@@ -321,14 +347,24 @@ _$NutritionProductIngredientImpl _$$NutritionProductIngredientImplFromJson(
     );
 
 Map<String, dynamic> _$$NutritionProductIngredientImplToJson(
-        _$NutritionProductIngredientImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'item': instance.item,
-      'amount': instance.amount,
-    };
+    _$NutritionProductIngredientImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['item'] = instance.item.toJson();
+  writeNotNull('amount', instance.amount?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$NutritionProductCharacteristicImpl
     _$$NutritionProductCharacteristicImplFromJson(Map<String, dynamic> json) =>
@@ -375,22 +411,33 @@ _$NutritionProductCharacteristicImpl
         );
 
 Map<String, dynamic> _$$NutritionProductCharacteristicImplToJson(
-        _$NutritionProductCharacteristicImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'type': instance.type,
-      'valueCodeableConcept': instance.valueCodeableConcept,
-      'valueString': instance.valueString,
-      '_valueString': instance.valueStringElement,
-      'valueQuantity': instance.valueQuantity,
-      'valueBase64Binary': instance.valueBase64Binary,
-      '_valueBase64Binary': instance.valueBase64BinaryElement,
-      'valueAttachment': instance.valueAttachment,
-      'valueBoolean': instance.valueBoolean,
-      '_valueBoolean': instance.valueBooleanElement,
-    };
+    _$NutritionProductCharacteristicImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['type'] = instance.type.toJson();
+  writeNotNull('valueCodeableConcept', instance.valueCodeableConcept?.toJson());
+  writeNotNull('valueString', instance.valueString);
+  writeNotNull('_valueString', instance.valueStringElement?.toJson());
+  writeNotNull('valueQuantity', instance.valueQuantity?.toJson());
+  writeNotNull('valueBase64Binary', instance.valueBase64Binary?.toJson());
+  writeNotNull(
+      '_valueBase64Binary', instance.valueBase64BinaryElement?.toJson());
+  writeNotNull('valueAttachment', instance.valueAttachment?.toJson());
+  writeNotNull('valueBoolean', instance.valueBoolean?.toJson());
+  writeNotNull('_valueBoolean', instance.valueBooleanElement?.toJson());
+  return val;
+}
 
 _$NutritionProductInstanceImpl _$$NutritionProductInstanceImplFromJson(
         Map<String, dynamic> json) =>
@@ -436,20 +483,32 @@ _$NutritionProductInstanceImpl _$$NutritionProductInstanceImplFromJson(
     );
 
 Map<String, dynamic> _$$NutritionProductInstanceImplToJson(
-        _$NutritionProductInstanceImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'quantity': instance.quantity,
-      'identifier': instance.identifier,
-      'name': instance.name,
-      '_name': instance.nameElement,
-      'lotNumber': instance.lotNumber,
-      '_lotNumber': instance.lotNumberElement,
-      'expiry': instance.expiry,
-      '_expiry': instance.expiryElement,
-      'useBy': instance.useBy,
-      '_useBy': instance.useByElement,
-      'biologicalSourceEvent': instance.biologicalSourceEvent,
-    };
+    _$NutritionProductInstanceImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('quantity', instance.quantity?.toJson());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('name', instance.name);
+  writeNotNull('_name', instance.nameElement?.toJson());
+  writeNotNull('lotNumber', instance.lotNumber);
+  writeNotNull('_lotNumber', instance.lotNumberElement?.toJson());
+  writeNotNull('expiry', instance.expiry?.toJson());
+  writeNotNull('_expiry', instance.expiryElement?.toJson());
+  writeNotNull('useBy', instance.useBy?.toJson());
+  writeNotNull('_useBy', instance.useByElement?.toJson());
+  writeNotNull(
+      'biologicalSourceEvent', instance.biologicalSourceEvent?.toJson());
+  return val;
+}

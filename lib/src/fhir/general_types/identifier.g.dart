@@ -35,20 +35,29 @@ _$IdentifierImpl _$$IdentifierImplFromJson(Map<String, dynamic> json) =>
           : Reference.fromJson(json['assigner'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$IdentifierImplToJson(_$IdentifierImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'use': instance.use,
-      '_use': instance.useElement,
-      'type': instance.type,
-      'system': instance.system,
-      '_system': instance.systemElement,
-      'value': instance.value,
-      '_value': instance.valueElement,
-      'period': instance.period,
-      'assigner': instance.assigner,
-    };
+Map<String, dynamic> _$$IdentifierImplToJson(_$IdentifierImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('use', instance.use?.toJson());
+  writeNotNull('_use', instance.useElement?.toJson());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('system', instance.system?.toJson());
+  writeNotNull('_system', instance.systemElement?.toJson());
+  writeNotNull('value', instance.value);
+  writeNotNull('_value', instance.valueElement?.toJson());
+  writeNotNull('period', instance.period?.toJson());
+  writeNotNull('assigner', instance.assigner?.toJson());
+  return val;
+}
 
 const _$IdentifierUseEnumMap = {
   IdentifierUse.usual: 'usual',

@@ -91,37 +91,51 @@ _$FhirGroupImpl _$$FhirGroupImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$FhirGroupImplToJson(_$FhirGroupImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'active': instance.active,
-      '_active': instance.activeElement,
-      'type': instance.type,
-      '_type': instance.typeElement,
-      'membership': instance.membership,
-      '_membership': instance.membershipElement,
-      'code': instance.code,
-      'name': instance.name,
-      '_name': instance.nameElement,
-      'description': instance.description,
-      '_description': instance.descriptionElement,
-      'quantity': instance.quantity,
-      '_quantity': instance.quantityElement,
-      'managingEntity': instance.managingEntity,
-      'characteristic': instance.characteristic,
-      'member': instance.member,
-    };
+Map<String, dynamic> _$$FhirGroupImplToJson(_$FhirGroupImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('active', instance.active?.toJson());
+  writeNotNull('_active', instance.activeElement?.toJson());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('_type', instance.typeElement?.toJson());
+  writeNotNull('membership', instance.membership?.toJson());
+  writeNotNull('_membership', instance.membershipElement?.toJson());
+  writeNotNull('code', instance.code?.toJson());
+  writeNotNull('name', instance.name);
+  writeNotNull('_name', instance.nameElement?.toJson());
+  writeNotNull('description', instance.description?.toJson());
+  writeNotNull('_description', instance.descriptionElement?.toJson());
+  writeNotNull('quantity', instance.quantity?.toJson());
+  writeNotNull('_quantity', instance.quantityElement?.toJson());
+  writeNotNull('managingEntity', instance.managingEntity?.toJson());
+  writeNotNull('characteristic',
+      instance.characteristic?.map((e) => e.toJson()).toList());
+  writeNotNull('member', instance.member?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -347,22 +361,32 @@ _$GroupCharacteristicImpl _$$GroupCharacteristicImplFromJson(
     );
 
 Map<String, dynamic> _$$GroupCharacteristicImplToJson(
-        _$GroupCharacteristicImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'code': instance.code,
-      'valueCodeableConcept': instance.valueCodeableConcept,
-      'valueBoolean': instance.valueBoolean,
-      '_valueBoolean': instance.valueBooleanElement,
-      'valueQuantity': instance.valueQuantity,
-      'valueRange': instance.valueRange,
-      'valueReference': instance.valueReference,
-      'exclude': instance.exclude,
-      '_exclude': instance.excludeElement,
-      'period': instance.period,
-    };
+    _$GroupCharacteristicImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['code'] = instance.code.toJson();
+  writeNotNull('valueCodeableConcept', instance.valueCodeableConcept?.toJson());
+  writeNotNull('valueBoolean', instance.valueBoolean?.toJson());
+  writeNotNull('_valueBoolean', instance.valueBooleanElement?.toJson());
+  writeNotNull('valueQuantity', instance.valueQuantity?.toJson());
+  writeNotNull('valueRange', instance.valueRange?.toJson());
+  writeNotNull('valueReference', instance.valueReference?.toJson());
+  writeNotNull('exclude', instance.exclude?.toJson());
+  writeNotNull('_exclude', instance.excludeElement?.toJson());
+  writeNotNull('period', instance.period?.toJson());
+  return val;
+}
 
 _$GroupMemberImpl _$$GroupMemberImplFromJson(Map<String, dynamic> json) =>
     _$GroupMemberImpl(
@@ -386,13 +410,23 @@ _$GroupMemberImpl _$$GroupMemberImplFromJson(Map<String, dynamic> json) =>
               json['_inactive'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$GroupMemberImplToJson(_$GroupMemberImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'entity': instance.entity,
-      'period': instance.period,
-      'inactive': instance.inactive,
-      '_inactive': instance.inactiveElement,
-    };
+Map<String, dynamic> _$$GroupMemberImplToJson(_$GroupMemberImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['entity'] = instance.entity.toJson();
+  writeNotNull('period', instance.period?.toJson());
+  writeNotNull('inactive', instance.inactive?.toJson());
+  writeNotNull('_inactive', instance.inactiveElement?.toJson());
+  return val;
+}

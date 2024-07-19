@@ -25,16 +25,25 @@ _$ContributorImpl _$$ContributorImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$ContributorImplToJson(_$ContributorImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'type': instance.type,
-      '_type': instance.typeElement,
-      'name': instance.name,
-      '_name': instance.nameElement,
-      'contact': instance.contact,
-    };
+Map<String, dynamic> _$$ContributorImplToJson(_$ContributorImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('_type', instance.typeElement?.toJson());
+  writeNotNull('name', instance.name);
+  writeNotNull('_name', instance.nameElement?.toJson());
+  writeNotNull('contact', instance.contact?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$ContributorTypeEnumMap = {
   ContributorType.author: 'author',

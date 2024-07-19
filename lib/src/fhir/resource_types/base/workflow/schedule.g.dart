@@ -76,32 +76,48 @@ _$ScheduleImpl _$$ScheduleImplFromJson(Map<String, dynamic> json) =>
           : PrimitiveElement.fromJson(json['_comment'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$ScheduleImplToJson(_$ScheduleImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'active': instance.active,
-      '_active': instance.activeElement,
-      'serviceCategory': instance.serviceCategory,
-      'serviceType': instance.serviceType,
-      'specialty': instance.specialty,
-      'name': instance.name,
-      '_name': instance.nameElement,
-      'actor': instance.actor,
-      'planningHorizon': instance.planningHorizon,
-      'comment': instance.comment,
-      '_comment': instance.commentElement,
-    };
+Map<String, dynamic> _$$ScheduleImplToJson(_$ScheduleImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('active', instance.active?.toJson());
+  writeNotNull('_active', instance.activeElement?.toJson());
+  writeNotNull('serviceCategory',
+      instance.serviceCategory?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'serviceType', instance.serviceType?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'specialty', instance.specialty?.map((e) => e.toJson()).toList());
+  writeNotNull('name', instance.name);
+  writeNotNull('_name', instance.nameElement?.toJson());
+  val['actor'] = instance.actor.map((e) => e.toJson()).toList();
+  writeNotNull('planningHorizon', instance.planningHorizon?.toJson());
+  writeNotNull('comment', instance.comment?.toJson());
+  writeNotNull('_comment', instance.commentElement?.toJson());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',

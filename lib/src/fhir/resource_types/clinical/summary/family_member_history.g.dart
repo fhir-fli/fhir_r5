@@ -157,58 +157,77 @@ _$FamilyMemberHistoryImpl _$$FamilyMemberHistoryImplFromJson(
     );
 
 Map<String, dynamic> _$$FamilyMemberHistoryImplToJson(
-        _$FamilyMemberHistoryImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'instantiatesCanonical': instance.instantiatesCanonical,
-      'instantiatesUri': instance.instantiatesUri,
-      '_instantiatesUri': instance.instantiatesUriElement,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'dataAbsentReason': instance.dataAbsentReason,
-      'patient': instance.patient,
-      'date': instance.date,
-      '_date': instance.dateElement,
-      'participant': instance.participant,
-      'name': instance.name,
-      '_name': instance.nameElement,
-      'relationship': instance.relationship,
-      'sex': instance.sex,
-      'bornPeriod': instance.bornPeriod,
-      'bornDate': instance.bornDate,
-      '_bornDate': instance.bornDateElement,
-      'bornString': instance.bornString,
-      '_bornString': instance.bornStringElement,
-      'ageAge': instance.ageAge,
-      'ageRange': instance.ageRange,
-      'ageString': instance.ageString,
-      '_ageString': instance.ageStringElement,
-      'estimatedAge': instance.estimatedAge,
-      '_estimatedAge': instance.estimatedAgeElement,
-      'deceasedBoolean': instance.deceasedBoolean,
-      '_deceasedBoolean': instance.deceasedBooleanElement,
-      'deceasedAge': instance.deceasedAge,
-      'deceasedRange': instance.deceasedRange,
-      'deceasedDate': instance.deceasedDate,
-      '_deceasedDate': instance.deceasedDateElement,
-      'deceasedString': instance.deceasedString,
-      '_deceasedString': instance.deceasedStringElement,
-      'reason': instance.reason,
-      'note': instance.note,
-      'condition': instance.condition,
-      'procedure': instance.procedure,
-    };
+    _$FamilyMemberHistoryImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('instantiatesCanonical',
+      instance.instantiatesCanonical?.map((e) => e.toJson()).toList());
+  writeNotNull('instantiatesUri',
+      instance.instantiatesUri?.map((e) => e.toJson()).toList());
+  writeNotNull('_instantiatesUri',
+      instance.instantiatesUriElement?.map((e) => e.toJson()).toList());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('dataAbsentReason', instance.dataAbsentReason?.toJson());
+  val['patient'] = instance.patient.toJson();
+  writeNotNull('date', instance.date?.toJson());
+  writeNotNull('_date', instance.dateElement?.toJson());
+  writeNotNull(
+      'participant', instance.participant?.map((e) => e.toJson()).toList());
+  writeNotNull('name', instance.name);
+  writeNotNull('_name', instance.nameElement?.toJson());
+  val['relationship'] = instance.relationship.toJson();
+  writeNotNull('sex', instance.sex?.toJson());
+  writeNotNull('bornPeriod', instance.bornPeriod?.toJson());
+  writeNotNull('bornDate', instance.bornDate?.toJson());
+  writeNotNull('_bornDate', instance.bornDateElement?.toJson());
+  writeNotNull('bornString', instance.bornString);
+  writeNotNull('_bornString', instance.bornStringElement?.toJson());
+  writeNotNull('ageAge', instance.ageAge?.toJson());
+  writeNotNull('ageRange', instance.ageRange?.toJson());
+  writeNotNull('ageString', instance.ageString);
+  writeNotNull('_ageString', instance.ageStringElement?.toJson());
+  writeNotNull('estimatedAge', instance.estimatedAge?.toJson());
+  writeNotNull('_estimatedAge', instance.estimatedAgeElement?.toJson());
+  writeNotNull('deceasedBoolean', instance.deceasedBoolean?.toJson());
+  writeNotNull('_deceasedBoolean', instance.deceasedBooleanElement?.toJson());
+  writeNotNull('deceasedAge', instance.deceasedAge?.toJson());
+  writeNotNull('deceasedRange', instance.deceasedRange?.toJson());
+  writeNotNull('deceasedDate', instance.deceasedDate?.toJson());
+  writeNotNull('_deceasedDate', instance.deceasedDateElement?.toJson());
+  writeNotNull('deceasedString', instance.deceasedString);
+  writeNotNull('_deceasedString', instance.deceasedStringElement?.toJson());
+  writeNotNull('reason', instance.reason?.map((e) => e.toJson()).toList());
+  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'condition', instance.condition?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'procedure', instance.procedure?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -391,14 +410,24 @@ _$FamilyMemberHistoryParticipantImpl
         );
 
 Map<String, dynamic> _$$FamilyMemberHistoryParticipantImplToJson(
-        _$FamilyMemberHistoryParticipantImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'function': instance.function_,
-      'actor': instance.actor,
-    };
+    _$FamilyMemberHistoryParticipantImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('function', instance.function_?.toJson());
+  val['actor'] = instance.actor.toJson();
+  return val;
+}
 
 _$FamilyMemberHistoryConditionImpl _$$FamilyMemberHistoryConditionImplFromJson(
         Map<String, dynamic> json) =>
@@ -441,22 +470,33 @@ _$FamilyMemberHistoryConditionImpl _$$FamilyMemberHistoryConditionImplFromJson(
     );
 
 Map<String, dynamic> _$$FamilyMemberHistoryConditionImplToJson(
-        _$FamilyMemberHistoryConditionImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'code': instance.code,
-      'outcome': instance.outcome,
-      'contributedToDeath': instance.contributedToDeath,
-      '_contributedToDeath': instance.contributedToDeathElement,
-      'onsetAge': instance.onsetAge,
-      'onsetRange': instance.onsetRange,
-      'onsetPeriod': instance.onsetPeriod,
-      'onsetString': instance.onsetString,
-      '_onsetString': instance.onsetStringElement,
-      'note': instance.note,
-    };
+    _$FamilyMemberHistoryConditionImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['code'] = instance.code.toJson();
+  writeNotNull('outcome', instance.outcome?.toJson());
+  writeNotNull('contributedToDeath', instance.contributedToDeath?.toJson());
+  writeNotNull(
+      '_contributedToDeath', instance.contributedToDeathElement?.toJson());
+  writeNotNull('onsetAge', instance.onsetAge?.toJson());
+  writeNotNull('onsetRange', instance.onsetRange?.toJson());
+  writeNotNull('onsetPeriod', instance.onsetPeriod?.toJson());
+  writeNotNull('onsetString', instance.onsetString);
+  writeNotNull('_onsetString', instance.onsetStringElement?.toJson());
+  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$FamilyMemberHistoryProcedureImpl _$$FamilyMemberHistoryProcedureImplFromJson(
         Map<String, dynamic> json) =>
@@ -506,21 +546,33 @@ _$FamilyMemberHistoryProcedureImpl _$$FamilyMemberHistoryProcedureImplFromJson(
     );
 
 Map<String, dynamic> _$$FamilyMemberHistoryProcedureImplToJson(
-        _$FamilyMemberHistoryProcedureImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'code': instance.code,
-      'outcome': instance.outcome,
-      'contributedToDeath': instance.contributedToDeath,
-      '_contributedToDeath': instance.contributedToDeathElement,
-      'performedAge': instance.performedAge,
-      'performedRange': instance.performedRange,
-      'performedPeriod': instance.performedPeriod,
-      'performedString': instance.performedString,
-      '_performedString': instance.performedStringElement,
-      'performedDateTime': instance.performedDateTime,
-      '_performedDateTime': instance.performedDateTimeElement,
-      'note': instance.note,
-    };
+    _$FamilyMemberHistoryProcedureImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['code'] = instance.code.toJson();
+  writeNotNull('outcome', instance.outcome?.toJson());
+  writeNotNull('contributedToDeath', instance.contributedToDeath?.toJson());
+  writeNotNull(
+      '_contributedToDeath', instance.contributedToDeathElement?.toJson());
+  writeNotNull('performedAge', instance.performedAge?.toJson());
+  writeNotNull('performedRange', instance.performedRange?.toJson());
+  writeNotNull('performedPeriod', instance.performedPeriod?.toJson());
+  writeNotNull('performedString', instance.performedString);
+  writeNotNull('_performedString', instance.performedStringElement?.toJson());
+  writeNotNull('performedDateTime', instance.performedDateTime?.toJson());
+  writeNotNull(
+      '_performedDateTime', instance.performedDateTimeElement?.toJson());
+  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
+  return val;
+}

@@ -31,14 +31,23 @@ _$MonetaryComponentImpl _$$MonetaryComponentImplFromJson(
     );
 
 Map<String, dynamic> _$$MonetaryComponentImplToJson(
-        _$MonetaryComponentImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'type': instance.type,
-      '_type': instance.typeElement,
-      'code': instance.code,
-      'factor': instance.factor,
-      '_factor': instance.factorElement,
-      'amount': instance.amount,
-    };
+    _$MonetaryComponentImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('_type', instance.typeElement?.toJson());
+  writeNotNull('code', instance.code?.toJson());
+  writeNotNull('factor', instance.factor?.toJson());
+  writeNotNull('_factor', instance.factorElement?.toJson());
+  writeNotNull('amount', instance.amount?.toJson());
+  return val;
+}

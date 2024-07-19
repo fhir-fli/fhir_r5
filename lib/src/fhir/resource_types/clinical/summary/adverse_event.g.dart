@@ -147,52 +147,75 @@ _$AdverseEventImpl _$$AdverseEventImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$AdverseEventImplToJson(_$AdverseEventImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'actuality': instance.actuality,
-      '_actuality': instance.actualityElement,
-      'category': instance.category,
-      'code': instance.code,
-      'subject': instance.subject,
-      'encounter': instance.encounter,
-      'occurrenceDateTime': instance.occurrenceDateTime,
-      '_occurrenceDateTime': instance.occurrenceDateTimeElement,
-      'occurrencePeriod': instance.occurrencePeriod,
-      'occurrenceTiming': instance.occurrenceTiming,
-      'detected': instance.detected,
-      '_detected': instance.detectedElement,
-      'recordedDate': instance.recordedDate,
-      '_recordedDate': instance.recordedDateElement,
-      'resultingEffect': instance.resultingEffect,
-      'location': instance.location,
-      'seriousness': instance.seriousness,
-      'outcome': instance.outcome,
-      'recorder': instance.recorder,
-      'participant': instance.participant,
-      'study': instance.study,
-      'expectedInResearchStudy': instance.expectedInResearchStudy,
-      '_expectedInResearchStudy': instance.expectedInResearchStudyElement,
-      'suspectEntity': instance.suspectEntity,
-      'contributingFactor': instance.contributingFactor,
-      'preventiveAction': instance.preventiveAction,
-      'mitigatingAction': instance.mitigatingAction,
-      'supportingInfo': instance.supportingInfo,
-      'note': instance.note,
-    };
+Map<String, dynamic> _$$AdverseEventImplToJson(_$AdverseEventImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('actuality', instance.actuality?.toJson());
+  writeNotNull('_actuality', instance.actualityElement?.toJson());
+  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
+  writeNotNull('code', instance.code?.toJson());
+  val['subject'] = instance.subject.toJson();
+  writeNotNull('encounter', instance.encounter?.toJson());
+  writeNotNull('occurrenceDateTime', instance.occurrenceDateTime?.toJson());
+  writeNotNull(
+      '_occurrenceDateTime', instance.occurrenceDateTimeElement?.toJson());
+  writeNotNull('occurrencePeriod', instance.occurrencePeriod?.toJson());
+  writeNotNull('occurrenceTiming', instance.occurrenceTiming?.toJson());
+  writeNotNull('detected', instance.detected?.toJson());
+  writeNotNull('_detected', instance.detectedElement?.toJson());
+  writeNotNull('recordedDate', instance.recordedDate?.toJson());
+  writeNotNull('_recordedDate', instance.recordedDateElement?.toJson());
+  writeNotNull('resultingEffect',
+      instance.resultingEffect?.map((e) => e.toJson()).toList());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('seriousness', instance.seriousness?.toJson());
+  writeNotNull('outcome', instance.outcome?.map((e) => e.toJson()).toList());
+  writeNotNull('recorder', instance.recorder?.toJson());
+  writeNotNull(
+      'participant', instance.participant?.map((e) => e.toJson()).toList());
+  writeNotNull('study', instance.study?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'expectedInResearchStudy', instance.expectedInResearchStudy?.toJson());
+  writeNotNull('_expectedInResearchStudy',
+      instance.expectedInResearchStudyElement?.toJson());
+  writeNotNull(
+      'suspectEntity', instance.suspectEntity?.map((e) => e.toJson()).toList());
+  writeNotNull('contributingFactor',
+      instance.contributingFactor?.map((e) => e.toJson()).toList());
+  writeNotNull('preventiveAction',
+      instance.preventiveAction?.map((e) => e.toJson()).toList());
+  writeNotNull('mitigatingAction',
+      instance.mitigatingAction?.map((e) => e.toJson()).toList());
+  writeNotNull('supportingInfo',
+      instance.supportingInfo?.map((e) => e.toJson()).toList());
+  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -374,14 +397,24 @@ _$AdverseEventParticipantImpl _$$AdverseEventParticipantImplFromJson(
     );
 
 Map<String, dynamic> _$$AdverseEventParticipantImplToJson(
-        _$AdverseEventParticipantImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'function': instance.function_,
-      'actor': instance.actor,
-    };
+    _$AdverseEventParticipantImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('function', instance.function_?.toJson());
+  val['actor'] = instance.actor.toJson();
+  return val;
+}
 
 _$AdverseEventSuspectEntityImpl _$$AdverseEventSuspectEntityImplFromJson(
         Map<String, dynamic> json) =>
@@ -408,15 +441,26 @@ _$AdverseEventSuspectEntityImpl _$$AdverseEventSuspectEntityImplFromJson(
     );
 
 Map<String, dynamic> _$$AdverseEventSuspectEntityImplToJson(
-        _$AdverseEventSuspectEntityImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'instanceCodeableConcept': instance.instanceCodeableConcept,
-      'instanceReference': instance.instanceReference,
-      'causality': instance.causality,
-    };
+    _$AdverseEventSuspectEntityImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'instanceCodeableConcept', instance.instanceCodeableConcept?.toJson());
+  writeNotNull('instanceReference', instance.instanceReference?.toJson());
+  writeNotNull('causality', instance.causality?.toJson());
+  return val;
+}
 
 _$AdverseEventCausalityImpl _$$AdverseEventCausalityImplFromJson(
         Map<String, dynamic> json) =>
@@ -442,15 +486,25 @@ _$AdverseEventCausalityImpl _$$AdverseEventCausalityImplFromJson(
     );
 
 Map<String, dynamic> _$$AdverseEventCausalityImplToJson(
-        _$AdverseEventCausalityImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'assessmentMethod': instance.assessmentMethod,
-      'entityRelatedness': instance.entityRelatedness,
-      'author': instance.author,
-    };
+    _$AdverseEventCausalityImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('assessmentMethod', instance.assessmentMethod?.toJson());
+  writeNotNull('entityRelatedness', instance.entityRelatedness?.toJson());
+  writeNotNull('author', instance.author?.toJson());
+  return val;
+}
 
 _$AdverseEventContributingFactorImpl
     _$$AdverseEventContributingFactorImplFromJson(Map<String, dynamic> json) =>
@@ -473,14 +527,24 @@ _$AdverseEventContributingFactorImpl
         );
 
 Map<String, dynamic> _$$AdverseEventContributingFactorImplToJson(
-        _$AdverseEventContributingFactorImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'itemReference': instance.itemReference,
-      'itemCodeableConcept': instance.itemCodeableConcept,
-    };
+    _$AdverseEventContributingFactorImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('itemReference', instance.itemReference?.toJson());
+  writeNotNull('itemCodeableConcept', instance.itemCodeableConcept?.toJson());
+  return val;
+}
 
 _$AdverseEventPreventiveActionImpl _$$AdverseEventPreventiveActionImplFromJson(
         Map<String, dynamic> json) =>
@@ -502,14 +566,24 @@ _$AdverseEventPreventiveActionImpl _$$AdverseEventPreventiveActionImplFromJson(
     );
 
 Map<String, dynamic> _$$AdverseEventPreventiveActionImplToJson(
-        _$AdverseEventPreventiveActionImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'itemReference': instance.itemReference,
-      'itemCodeableConcept': instance.itemCodeableConcept,
-    };
+    _$AdverseEventPreventiveActionImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('itemReference', instance.itemReference?.toJson());
+  writeNotNull('itemCodeableConcept', instance.itemCodeableConcept?.toJson());
+  return val;
+}
 
 _$AdverseEventMitigatingActionImpl _$$AdverseEventMitigatingActionImplFromJson(
         Map<String, dynamic> json) =>
@@ -531,14 +605,24 @@ _$AdverseEventMitigatingActionImpl _$$AdverseEventMitigatingActionImplFromJson(
     );
 
 Map<String, dynamic> _$$AdverseEventMitigatingActionImplToJson(
-        _$AdverseEventMitigatingActionImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'itemReference': instance.itemReference,
-      'itemCodeableConcept': instance.itemCodeableConcept,
-    };
+    _$AdverseEventMitigatingActionImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('itemReference', instance.itemReference?.toJson());
+  writeNotNull('itemCodeableConcept', instance.itemCodeableConcept?.toJson());
+  return val;
+}
 
 _$AdverseEventSupportingInfoImpl _$$AdverseEventSupportingInfoImplFromJson(
         Map<String, dynamic> json) =>
@@ -560,11 +644,21 @@ _$AdverseEventSupportingInfoImpl _$$AdverseEventSupportingInfoImplFromJson(
     );
 
 Map<String, dynamic> _$$AdverseEventSupportingInfoImplToJson(
-        _$AdverseEventSupportingInfoImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'itemReference': instance.itemReference,
-      'itemCodeableConcept': instance.itemCodeableConcept,
-    };
+    _$AdverseEventSupportingInfoImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('itemReference', instance.itemReference?.toJson());
+  writeNotNull('itemCodeableConcept', instance.itemCodeableConcept?.toJson());
+  return val;
+}

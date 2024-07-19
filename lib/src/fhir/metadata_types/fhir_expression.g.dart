@@ -42,18 +42,27 @@ _$FhirExpressionImpl _$$FhirExpressionImplFromJson(Map<String, dynamic> json) =>
     );
 
 Map<String, dynamic> _$$FhirExpressionImplToJson(
-        _$FhirExpressionImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'description': instance.description,
-      '_description': instance.descriptionElement,
-      'name': instance.name,
-      '_name': instance.nameElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'expression': instance.expression,
-      '_expression': instance.expressionElement,
-      'reference': instance.reference,
-      '_reference': instance.referenceElement,
-    };
+    _$FhirExpressionImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('description', instance.description);
+  writeNotNull('_description', instance.descriptionElement?.toJson());
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('_name', instance.nameElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('expression', instance.expression);
+  writeNotNull('_expression', instance.expressionElement?.toJson());
+  writeNotNull('reference', instance.reference?.toJson());
+  writeNotNull('_reference', instance.referenceElement?.toJson());
+  return val;
+}

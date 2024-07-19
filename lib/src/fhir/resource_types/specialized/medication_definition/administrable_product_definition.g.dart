@@ -93,33 +93,50 @@ _$AdministrableProductDefinitionImpl
         );
 
 Map<String, dynamic> _$$AdministrableProductDefinitionImplToJson(
-        _$AdministrableProductDefinitionImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'formOf': instance.formOf,
-      'administrableDoseForm': instance.administrableDoseForm,
-      'unitOfPresentation': instance.unitOfPresentation,
-      'producedFrom': instance.producedFrom,
-      'ingredient': instance.ingredient,
-      'device': instance.device,
-      'description': instance.description,
-      '_description': instance.descriptionElement,
-      'property': instance.property,
-      'routeOfAdministration': instance.routeOfAdministration,
-    };
+    _$AdministrableProductDefinitionImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('formOf', instance.formOf?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'administrableDoseForm', instance.administrableDoseForm?.toJson());
+  writeNotNull('unitOfPresentation', instance.unitOfPresentation?.toJson());
+  writeNotNull(
+      'producedFrom', instance.producedFrom?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'ingredient', instance.ingredient?.map((e) => e.toJson()).toList());
+  writeNotNull('device', instance.device?.toJson());
+  writeNotNull('description', instance.description?.toJson());
+  writeNotNull('_description', instance.descriptionElement?.toJson());
+  writeNotNull('property', instance.property?.map((e) => e.toJson()).toList());
+  val['routeOfAdministration'] =
+      instance.routeOfAdministration.map((e) => e.toJson()).toList();
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -347,24 +364,34 @@ _$AdministrableProductDefinitionPropertyImpl
         );
 
 Map<String, dynamic> _$$AdministrableProductDefinitionPropertyImplToJson(
-        _$AdministrableProductDefinitionPropertyImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'type': instance.type,
-      'valueCodeableConcept': instance.valueCodeableConcept,
-      'valueQuantity': instance.valueQuantity,
-      'valueDate': instance.valueDate,
-      '_valueDate': instance.valueDateElement,
-      'valueBoolean': instance.valueBoolean,
-      '_valueBoolean': instance.valueBooleanElement,
-      'valueMarkdown': instance.valueMarkdown,
-      '_valueMarkdown': instance.valueMarkdownElement,
-      'valueAttachment': instance.valueAttachment,
-      'valueReference': instance.valueReference,
-      'status': instance.status,
-    };
+    _$AdministrableProductDefinitionPropertyImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['type'] = instance.type.toJson();
+  writeNotNull('valueCodeableConcept', instance.valueCodeableConcept?.toJson());
+  writeNotNull('valueQuantity', instance.valueQuantity?.toJson());
+  writeNotNull('valueDate', instance.valueDate?.toJson());
+  writeNotNull('_valueDate', instance.valueDateElement?.toJson());
+  writeNotNull('valueBoolean', instance.valueBoolean?.toJson());
+  writeNotNull('_valueBoolean', instance.valueBooleanElement?.toJson());
+  writeNotNull('valueMarkdown', instance.valueMarkdown?.toJson());
+  writeNotNull('_valueMarkdown', instance.valueMarkdownElement?.toJson());
+  writeNotNull('valueAttachment', instance.valueAttachment?.toJson());
+  writeNotNull('valueReference', instance.valueReference?.toJson());
+  writeNotNull('status', instance.status?.toJson());
+  return val;
+}
 
 _$AdministrableProductDefinitionRouteOfAdministrationImpl
     _$$AdministrableProductDefinitionRouteOfAdministrationImplFromJson(
@@ -403,21 +430,33 @@ _$AdministrableProductDefinitionRouteOfAdministrationImpl
               .toList(),
         );
 
-Map<String,
-    dynamic> _$$AdministrableProductDefinitionRouteOfAdministrationImplToJson(
-        _$AdministrableProductDefinitionRouteOfAdministrationImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'code': instance.code,
-      'firstDose': instance.firstDose,
-      'maxSingleDose': instance.maxSingleDose,
-      'maxDosePerDay': instance.maxDosePerDay,
-      'maxDosePerTreatmentPeriod': instance.maxDosePerTreatmentPeriod,
-      'maxTreatmentPeriod': instance.maxTreatmentPeriod,
-      'targetSpecies': instance.targetSpecies,
-    };
+Map<String, dynamic>
+    _$$AdministrableProductDefinitionRouteOfAdministrationImplToJson(
+        _$AdministrableProductDefinitionRouteOfAdministrationImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['code'] = instance.code.toJson();
+  writeNotNull('firstDose', instance.firstDose?.toJson());
+  writeNotNull('maxSingleDose', instance.maxSingleDose?.toJson());
+  writeNotNull('maxDosePerDay', instance.maxDosePerDay?.toJson());
+  writeNotNull('maxDosePerTreatmentPeriod',
+      instance.maxDosePerTreatmentPeriod?.toJson());
+  writeNotNull('maxTreatmentPeriod', instance.maxTreatmentPeriod?.toJson());
+  writeNotNull(
+      'targetSpecies', instance.targetSpecies?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$AdministrableProductDefinitionTargetSpeciesImpl
     _$$AdministrableProductDefinitionTargetSpeciesImplFromJson(
@@ -439,14 +478,25 @@ _$AdministrableProductDefinitionTargetSpeciesImpl
         );
 
 Map<String, dynamic> _$$AdministrableProductDefinitionTargetSpeciesImplToJson(
-        _$AdministrableProductDefinitionTargetSpeciesImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'code': instance.code,
-      'withdrawalPeriod': instance.withdrawalPeriod,
-    };
+    _$AdministrableProductDefinitionTargetSpeciesImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['code'] = instance.code.toJson();
+  writeNotNull('withdrawalPeriod',
+      instance.withdrawalPeriod?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$AdministrableProductDefinitionWithdrawalPeriodImpl
     _$$AdministrableProductDefinitionWithdrawalPeriodImplFromJson(
@@ -471,13 +521,24 @@ _$AdministrableProductDefinitionWithdrawalPeriodImpl
 
 Map<String, dynamic>
     _$$AdministrableProductDefinitionWithdrawalPeriodImplToJson(
-            _$AdministrableProductDefinitionWithdrawalPeriodImpl instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'extension': instance.extension_,
-          'modifierExtension': instance.modifierExtension,
-          'tissue': instance.tissue,
-          'value': instance.value,
-          'supportingInformation': instance.supportingInformation,
-          '_supportingInformation': instance.supportingInformationElement,
-        };
+        _$AdministrableProductDefinitionWithdrawalPeriodImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['tissue'] = instance.tissue.toJson();
+  val['value'] = instance.value.toJson();
+  writeNotNull('supportingInformation', instance.supportingInformation);
+  writeNotNull('_supportingInformation',
+      instance.supportingInformationElement?.toJson());
+  return val;
+}

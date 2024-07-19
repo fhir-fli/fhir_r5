@@ -105,41 +105,61 @@ _$ConsentImpl _$$ConsentImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$ConsentImplToJson(_$ConsentImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'category': instance.category,
-      'subject': instance.subject,
-      'date': instance.date,
-      '_date': instance.dateElement,
-      'period': instance.period,
-      'grantor': instance.grantor,
-      'grantee': instance.grantee,
-      'manager': instance.manager,
-      'controller': instance.controller,
-      'sourceAttachment': instance.sourceAttachment,
-      'sourceReference': instance.sourceReference,
-      'regulatoryBasis': instance.regulatoryBasis,
-      'policyBasis': instance.policyBasis,
-      'policyText': instance.policyText,
-      'verification': instance.verification,
-      'decision': instance.decision,
-      '_decision': instance.decisionElement,
-      'provision': instance.provision,
-    };
+Map<String, dynamic> _$$ConsentImplToJson(_$ConsentImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
+  writeNotNull('subject', instance.subject?.toJson());
+  writeNotNull('date', instance.date?.toJson());
+  writeNotNull('_date', instance.dateElement?.toJson());
+  writeNotNull('period', instance.period?.toJson());
+  writeNotNull('grantor', instance.grantor?.map((e) => e.toJson()).toList());
+  writeNotNull('grantee', instance.grantee?.map((e) => e.toJson()).toList());
+  writeNotNull('manager', instance.manager?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'controller', instance.controller?.map((e) => e.toJson()).toList());
+  writeNotNull('sourceAttachment',
+      instance.sourceAttachment?.map((e) => e.toJson()).toList());
+  writeNotNull('sourceReference',
+      instance.sourceReference?.map((e) => e.toJson()).toList());
+  writeNotNull('regulatoryBasis',
+      instance.regulatoryBasis?.map((e) => e.toJson()).toList());
+  writeNotNull('policyBasis', instance.policyBasis?.toJson());
+  writeNotNull(
+      'policyText', instance.policyText?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'verification', instance.verification?.map((e) => e.toJson()).toList());
+  writeNotNull('decision', instance.decision?.toJson());
+  writeNotNull('_decision', instance.decisionElement?.toJson());
+  writeNotNull(
+      'provision', instance.provision?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -324,15 +344,25 @@ _$ConsentPolicyBasisImpl _$$ConsentPolicyBasisImplFromJson(
     );
 
 Map<String, dynamic> _$$ConsentPolicyBasisImplToJson(
-        _$ConsentPolicyBasisImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'reference': instance.reference,
-      'url': instance.url,
-      '_url': instance.urlElement,
-    };
+    _$ConsentPolicyBasisImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('reference', instance.reference?.toJson());
+  writeNotNull('url', instance.url?.toJson());
+  writeNotNull('_url', instance.urlElement?.toJson());
+  return val;
+}
 
 _$ConsentVerificationImpl _$$ConsentVerificationImplFromJson(
         Map<String, dynamic> json) =>
@@ -370,19 +400,31 @@ _$ConsentVerificationImpl _$$ConsentVerificationImplFromJson(
     );
 
 Map<String, dynamic> _$$ConsentVerificationImplToJson(
-        _$ConsentVerificationImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'verified': instance.verified,
-      '_verified': instance.verifiedElement,
-      'verificationType': instance.verificationType,
-      'verifiedBy': instance.verifiedBy,
-      'verifiedWith': instance.verifiedWith,
-      'verificationDate': instance.verificationDate,
-      '_verificationDate': instance.verificationDateElement,
-    };
+    _$ConsentVerificationImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('verified', instance.verified?.toJson());
+  writeNotNull('_verified', instance.verifiedElement?.toJson());
+  writeNotNull('verificationType', instance.verificationType?.toJson());
+  writeNotNull('verifiedBy', instance.verifiedBy?.toJson());
+  writeNotNull('verifiedWith', instance.verifiedWith?.toJson());
+  writeNotNull('verificationDate',
+      instance.verificationDate?.map((e) => e.toJson()).toList());
+  writeNotNull('_verificationDate',
+      instance.verificationDateElement?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$ConsentProvisionImpl _$$ConsentProvisionImplFromJson(
         Map<String, dynamic> json) =>
@@ -433,24 +475,38 @@ _$ConsentProvisionImpl _$$ConsentProvisionImplFromJson(
     );
 
 Map<String, dynamic> _$$ConsentProvisionImplToJson(
-        _$ConsentProvisionImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'period': instance.period,
-      'actor': instance.actor,
-      'action': instance.action,
-      'securityLabel': instance.securityLabel,
-      'purpose': instance.purpose,
-      'documentType': instance.documentType,
-      'resourceType': instance.resourceType,
-      'code': instance.code,
-      'dataPeriod': instance.dataPeriod,
-      'data': instance.data,
-      'expression': instance.expression,
-      'provision': instance.provision,
-    };
+    _$ConsentProvisionImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('period', instance.period?.toJson());
+  writeNotNull('actor', instance.actor?.map((e) => e.toJson()).toList());
+  writeNotNull('action', instance.action?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'securityLabel', instance.securityLabel?.map((e) => e.toJson()).toList());
+  writeNotNull('purpose', instance.purpose?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'documentType', instance.documentType?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'resourceType', instance.resourceType?.map((e) => e.toJson()).toList());
+  writeNotNull('code', instance.code?.map((e) => e.toJson()).toList());
+  writeNotNull('dataPeriod', instance.dataPeriod?.toJson());
+  writeNotNull('data', instance.data?.map((e) => e.toJson()).toList());
+  writeNotNull('expression', instance.expression?.toJson());
+  writeNotNull(
+      'provision', instance.provision?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$ConsentActorImpl _$$ConsentActorImplFromJson(Map<String, dynamic> json) =>
     _$ConsentActorImpl(
@@ -469,14 +525,24 @@ _$ConsentActorImpl _$$ConsentActorImplFromJson(Map<String, dynamic> json) =>
           : Reference.fromJson(json['reference'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$ConsentActorImplToJson(_$ConsentActorImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'role': instance.role,
-      'reference': instance.reference,
-    };
+Map<String, dynamic> _$$ConsentActorImplToJson(_$ConsentActorImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('role', instance.role?.toJson());
+  writeNotNull('reference', instance.reference?.toJson());
+  return val;
+}
 
 _$ConsentDataImpl _$$ConsentDataImplFromJson(Map<String, dynamic> json) =>
     _$ConsentDataImpl(
@@ -495,12 +561,22 @@ _$ConsentDataImpl _$$ConsentDataImplFromJson(Map<String, dynamic> json) =>
       reference: Reference.fromJson(json['reference'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$ConsentDataImplToJson(_$ConsentDataImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'meaning': instance.meaning,
-      '_meaning': instance.meaningElement,
-      'reference': instance.reference,
-    };
+Map<String, dynamic> _$$ConsentDataImplToJson(_$ConsentDataImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('meaning', instance.meaning?.toJson());
+  writeNotNull('_meaning', instance.meaningElement?.toJson());
+  val['reference'] = instance.reference.toJson();
+  return val;
+}

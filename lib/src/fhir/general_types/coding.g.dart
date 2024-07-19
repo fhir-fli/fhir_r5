@@ -36,18 +36,27 @@ _$CodingImpl _$$CodingImplFromJson(Map<String, dynamic> json) => _$CodingImpl(
               json['_userSelected'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$CodingImplToJson(_$CodingImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'system': instance.system,
-      '_system': instance.systemElement,
-      'version': instance.version,
-      '_version': instance.versionElement,
-      'code': instance.code,
-      '_code': instance.codeElement,
-      'display': instance.display,
-      '_display': instance.displayElement,
-      'userSelected': instance.userSelected,
-      '_userSelected': instance.userSelectedElement,
-    };
+Map<String, dynamic> _$$CodingImplToJson(_$CodingImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('system', instance.system?.toJson());
+  writeNotNull('_system', instance.systemElement?.toJson());
+  writeNotNull('version', instance.version);
+  writeNotNull('_version', instance.versionElement?.toJson());
+  writeNotNull('code', instance.code?.toJson());
+  writeNotNull('_code', instance.codeElement?.toJson());
+  writeNotNull('display', instance.display);
+  writeNotNull('_display', instance.displayElement?.toJson());
+  writeNotNull('userSelected', instance.userSelected?.toJson());
+  writeNotNull('_userSelected', instance.userSelectedElement?.toJson());
+  return val;
+}

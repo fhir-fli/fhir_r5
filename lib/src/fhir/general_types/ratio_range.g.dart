@@ -23,11 +23,20 @@ _$RatioRangeImpl _$$RatioRangeImplFromJson(Map<String, dynamic> json) =>
           : Quantity.fromJson(json['denominator'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$RatioRangeImplToJson(_$RatioRangeImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'lowNumerator': instance.lowNumerator,
-      'highNumerator': instance.highNumerator,
-      'denominator': instance.denominator,
-    };
+Map<String, dynamic> _$$RatioRangeImplToJson(_$RatioRangeImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('lowNumerator', instance.lowNumerator?.toJson());
+  writeNotNull('highNumerator', instance.highNumerator?.toJson());
+  writeNotNull('denominator', instance.denominator?.toJson());
+  return val;
+}

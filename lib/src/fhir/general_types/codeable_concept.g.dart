@@ -23,11 +23,20 @@ _$CodeableConceptImpl _$$CodeableConceptImplFromJson(
     );
 
 Map<String, dynamic> _$$CodeableConceptImplToJson(
-        _$CodeableConceptImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'coding': instance.coding,
-      'text': instance.text,
-      '_text': instance.textElement,
-    };
+    _$CodeableConceptImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('coding', instance.coding?.map((e) => e.toJson()).toList());
+  writeNotNull('text', instance.text);
+  writeNotNull('_text', instance.textElement?.toJson());
+  return val;
+}

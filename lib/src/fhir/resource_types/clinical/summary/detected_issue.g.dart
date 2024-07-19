@@ -104,40 +104,56 @@ _$DetectedIssueImpl _$$DetectedIssueImplFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$DetectedIssueImplToJson(_$DetectedIssueImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'category': instance.category,
-      'code': instance.code,
-      'severity': instance.severity,
-      '_severity': instance.severityElement,
-      'subject': instance.subject,
-      'encounter': instance.encounter,
-      'identifiedDateTime': instance.identifiedDateTime,
-      '_identifiedDateTime': instance.identifiedDateTimeElement,
-      'identifiedPeriod': instance.identifiedPeriod,
-      'author': instance.author,
-      'implicated': instance.implicated,
-      'evidence': instance.evidence,
-      'detail': instance.detail,
-      '_detail': instance.detailElement,
-      'reference': instance.reference,
-      '_reference': instance.referenceElement,
-      'mitigation': instance.mitigation,
-    };
+Map<String, dynamic> _$$DetectedIssueImplToJson(_$DetectedIssueImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
+  writeNotNull('code', instance.code?.toJson());
+  writeNotNull('severity', instance.severity?.toJson());
+  writeNotNull('_severity', instance.severityElement?.toJson());
+  writeNotNull('subject', instance.subject?.toJson());
+  writeNotNull('encounter', instance.encounter?.toJson());
+  writeNotNull('identifiedDateTime', instance.identifiedDateTime?.toJson());
+  writeNotNull(
+      '_identifiedDateTime', instance.identifiedDateTimeElement?.toJson());
+  writeNotNull('identifiedPeriod', instance.identifiedPeriod?.toJson());
+  writeNotNull('author', instance.author?.toJson());
+  writeNotNull(
+      'implicated', instance.implicated?.map((e) => e.toJson()).toList());
+  writeNotNull('evidence', instance.evidence?.map((e) => e.toJson()).toList());
+  writeNotNull('detail', instance.detail?.toJson());
+  writeNotNull('_detail', instance.detailElement?.toJson());
+  writeNotNull('reference', instance.reference?.toJson());
+  writeNotNull('_reference', instance.referenceElement?.toJson());
+  writeNotNull(
+      'mitigation', instance.mitigation?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -321,14 +337,24 @@ _$DetectedIssueEvidenceImpl _$$DetectedIssueEvidenceImplFromJson(
     );
 
 Map<String, dynamic> _$$DetectedIssueEvidenceImplToJson(
-        _$DetectedIssueEvidenceImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'code': instance.code,
-      'detail': instance.detail,
-    };
+    _$DetectedIssueEvidenceImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('code', instance.code?.map((e) => e.toJson()).toList());
+  writeNotNull('detail', instance.detail?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$DetectedIssueMitigationImpl _$$DetectedIssueMitigationImplFromJson(
         Map<String, dynamic> json) =>
@@ -356,14 +382,24 @@ _$DetectedIssueMitigationImpl _$$DetectedIssueMitigationImplFromJson(
     );
 
 Map<String, dynamic> _$$DetectedIssueMitigationImplToJson(
-        _$DetectedIssueMitigationImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'action': instance.action,
-      'date': instance.date,
-      '_date': instance.dateElement,
-      'author': instance.author,
-      'note': instance.note,
-    };
+    _$DetectedIssueMitigationImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['action'] = instance.action.toJson();
+  writeNotNull('date', instance.date?.toJson());
+  writeNotNull('_date', instance.dateElement?.toJson());
+  writeNotNull('author', instance.author?.toJson());
+  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
+  return val;
+}

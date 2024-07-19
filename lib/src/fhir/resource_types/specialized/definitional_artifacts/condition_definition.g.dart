@@ -229,82 +229,106 @@ _$ConditionDefinitionImpl _$$ConditionDefinitionImplFromJson(
     );
 
 Map<String, dynamic> _$$ConditionDefinitionImplToJson(
-        _$ConditionDefinitionImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'url': instance.url,
-      '_url': instance.urlElement,
-      'identifier': instance.identifier,
-      'version': instance.version,
-      '_version': instance.versionElement,
-      'versionAlgorithmString': instance.versionAlgorithmString,
-      '_versionAlgorithmString': instance.versionAlgorithmStringElement,
-      'versionAlgorithmCoding': instance.versionAlgorithmCoding,
-      'name': instance.name,
-      '_name': instance.nameElement,
-      'title': instance.title,
-      '_title': instance.titleElement,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'experimental': instance.experimental,
-      '_experimental': instance.experimentalElement,
-      'date': instance.date,
-      '_date': instance.dateElement,
-      'publisher': instance.publisher,
-      '_publisher': instance.publisherElement,
-      'contact': instance.contact,
-      'description': instance.description,
-      '_description': instance.descriptionElement,
-      'useContext': instance.useContext,
-      'jurisdiction': instance.jurisdiction,
-      'purpose': instance.purpose,
-      '_purpose': instance.purposeElement,
-      'copyright': instance.copyright,
-      '_copyright': instance.copyrightElement,
-      'copyrightLabel': instance.copyrightLabel,
-      '_copyrightLabel': instance.copyrightLabelElement,
-      'approvalDate': instance.approvalDate,
-      '_approvalDate': instance.approvalDateElement,
-      'lastReviewDate': instance.lastReviewDate,
-      '_lastReviewDate': instance.lastReviewDateElement,
-      'effectivePeriod': instance.effectivePeriod,
-      'topic': instance.topic,
-      'author': instance.author,
-      'editor': instance.editor,
-      'reviewer': instance.reviewer,
-      'endorser': instance.endorser,
-      'relatedArtifact': instance.relatedArtifact,
-      'subtitle': instance.subtitle,
-      '_subtitle': instance.subtitleElement,
-      'code': instance.code,
-      'severity': instance.severity,
-      'bodySite': instance.bodySite,
-      'stage': instance.stage,
-      'hasSeverity': instance.hasSeverity,
-      '_hasSeverity': instance.hasSeverityElement,
-      'hasBodySite': instance.hasBodySite,
-      '_hasBodySite': instance.hasBodySiteElement,
-      'hasStage': instance.hasStage,
-      '_hasStage': instance.hasStageElement,
-      'definition': instance.definition,
-      '_definition': instance.definitionElement,
-      'observation': instance.observation,
-      'medication': instance.medication,
-      'precondition': instance.precondition,
-      'team': instance.team,
-      'questionnaire': instance.questionnaire,
-      'plan': instance.plan,
-    };
+    _$ConditionDefinitionImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('url', instance.url?.toJson());
+  writeNotNull('_url', instance.urlElement?.toJson());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('version', instance.version);
+  writeNotNull('_version', instance.versionElement?.toJson());
+  writeNotNull('versionAlgorithmString', instance.versionAlgorithmString);
+  writeNotNull('_versionAlgorithmString',
+      instance.versionAlgorithmStringElement?.toJson());
+  writeNotNull(
+      'versionAlgorithmCoding', instance.versionAlgorithmCoding?.toJson());
+  writeNotNull('name', instance.name);
+  writeNotNull('_name', instance.nameElement?.toJson());
+  writeNotNull('title', instance.title);
+  writeNotNull('_title', instance.titleElement?.toJson());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('experimental', instance.experimental?.toJson());
+  writeNotNull('_experimental', instance.experimentalElement?.toJson());
+  writeNotNull('date', instance.date?.toJson());
+  writeNotNull('_date', instance.dateElement?.toJson());
+  writeNotNull('publisher', instance.publisher);
+  writeNotNull('_publisher', instance.publisherElement?.toJson());
+  writeNotNull('contact', instance.contact?.map((e) => e.toJson()).toList());
+  writeNotNull('description', instance.description?.toJson());
+  writeNotNull('_description', instance.descriptionElement?.toJson());
+  writeNotNull(
+      'useContext', instance.useContext?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'jurisdiction', instance.jurisdiction?.map((e) => e.toJson()).toList());
+  writeNotNull('purpose', instance.purpose?.toJson());
+  writeNotNull('_purpose', instance.purposeElement?.toJson());
+  writeNotNull('copyright', instance.copyright?.toJson());
+  writeNotNull('_copyright', instance.copyrightElement?.toJson());
+  writeNotNull('copyrightLabel', instance.copyrightLabel);
+  writeNotNull('_copyrightLabel', instance.copyrightLabelElement?.toJson());
+  writeNotNull('approvalDate', instance.approvalDate?.toJson());
+  writeNotNull('_approvalDate', instance.approvalDateElement?.toJson());
+  writeNotNull('lastReviewDate', instance.lastReviewDate?.toJson());
+  writeNotNull('_lastReviewDate', instance.lastReviewDateElement?.toJson());
+  writeNotNull('effectivePeriod', instance.effectivePeriod?.toJson());
+  writeNotNull('topic', instance.topic?.map((e) => e.toJson()).toList());
+  writeNotNull('author', instance.author?.map((e) => e.toJson()).toList());
+  writeNotNull('editor', instance.editor?.map((e) => e.toJson()).toList());
+  writeNotNull('reviewer', instance.reviewer?.map((e) => e.toJson()).toList());
+  writeNotNull('endorser', instance.endorser?.map((e) => e.toJson()).toList());
+  writeNotNull('relatedArtifact',
+      instance.relatedArtifact?.map((e) => e.toJson()).toList());
+  writeNotNull('subtitle', instance.subtitle);
+  writeNotNull('_subtitle', instance.subtitleElement?.toJson());
+  val['code'] = instance.code.toJson();
+  writeNotNull('severity', instance.severity?.toJson());
+  writeNotNull('bodySite', instance.bodySite?.toJson());
+  writeNotNull('stage', instance.stage?.toJson());
+  writeNotNull('hasSeverity', instance.hasSeverity?.toJson());
+  writeNotNull('_hasSeverity', instance.hasSeverityElement?.toJson());
+  writeNotNull('hasBodySite', instance.hasBodySite?.toJson());
+  writeNotNull('_hasBodySite', instance.hasBodySiteElement?.toJson());
+  writeNotNull('hasStage', instance.hasStage?.toJson());
+  writeNotNull('_hasStage', instance.hasStageElement?.toJson());
+  writeNotNull(
+      'definition', instance.definition?.map((e) => e.toJson()).toList());
+  writeNotNull('_definition',
+      instance.definitionElement?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'observation', instance.observation?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'medication', instance.medication?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'precondition', instance.precondition?.map((e) => e.toJson()).toList());
+  writeNotNull('team', instance.team?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'questionnaire', instance.questionnaire?.map((e) => e.toJson()).toList());
+  writeNotNull('plan', instance.plan?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -496,14 +520,24 @@ _$ConditionDefinitionObservationImpl
         );
 
 Map<String, dynamic> _$$ConditionDefinitionObservationImplToJson(
-        _$ConditionDefinitionObservationImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'category': instance.category,
-      'code': instance.code,
-    };
+    _$ConditionDefinitionObservationImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('category', instance.category?.toJson());
+  writeNotNull('code', instance.code?.toJson());
+  return val;
+}
 
 _$ConditionDefinitionMedicationImpl
     _$$ConditionDefinitionMedicationImplFromJson(Map<String, dynamic> json) =>
@@ -525,14 +559,24 @@ _$ConditionDefinitionMedicationImpl
         );
 
 Map<String, dynamic> _$$ConditionDefinitionMedicationImplToJson(
-        _$ConditionDefinitionMedicationImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'category': instance.category,
-      'code': instance.code,
-    };
+    _$ConditionDefinitionMedicationImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('category', instance.category?.toJson());
+  writeNotNull('code', instance.code?.toJson());
+  return val;
+}
 
 _$ConditionDefinitionPreconditionImpl
     _$$ConditionDefinitionPreconditionImplFromJson(Map<String, dynamic> json) =>
@@ -561,17 +605,27 @@ _$ConditionDefinitionPreconditionImpl
         );
 
 Map<String, dynamic> _$$ConditionDefinitionPreconditionImplToJson(
-        _$ConditionDefinitionPreconditionImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'type': instance.type,
-      '_type': instance.typeElement,
-      'code': instance.code,
-      'valueCodeableConcept': instance.valueCodeableConcept,
-      'valueQuantity': instance.valueQuantity,
-    };
+    _$ConditionDefinitionPreconditionImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('_type', instance.typeElement?.toJson());
+  val['code'] = instance.code.toJson();
+  writeNotNull('valueCodeableConcept', instance.valueCodeableConcept?.toJson());
+  writeNotNull('valueQuantity', instance.valueQuantity?.toJson());
+  return val;
+}
 
 _$ConditionDefinitionQuestionnaireImpl
     _$$ConditionDefinitionQuestionnaireImplFromJson(
@@ -596,15 +650,25 @@ _$ConditionDefinitionQuestionnaireImpl
         );
 
 Map<String, dynamic> _$$ConditionDefinitionQuestionnaireImplToJson(
-        _$ConditionDefinitionQuestionnaireImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'purpose': instance.purpose,
-      '_purpose': instance.purposeElement,
-      'reference': instance.reference,
-    };
+    _$ConditionDefinitionQuestionnaireImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('purpose', instance.purpose?.toJson());
+  writeNotNull('_purpose', instance.purposeElement?.toJson());
+  val['reference'] = instance.reference.toJson();
+  return val;
+}
 
 _$ConditionDefinitionPlanImpl _$$ConditionDefinitionPlanImplFromJson(
         Map<String, dynamic> json) =>
@@ -623,11 +687,21 @@ _$ConditionDefinitionPlanImpl _$$ConditionDefinitionPlanImplFromJson(
     );
 
 Map<String, dynamic> _$$ConditionDefinitionPlanImplToJson(
-        _$ConditionDefinitionPlanImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'role': instance.role,
-      'reference': instance.reference,
-    };
+    _$ConditionDefinitionPlanImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('role', instance.role?.toJson());
+  val['reference'] = instance.reference.toJson();
+  return val;
+}

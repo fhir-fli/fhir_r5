@@ -55,30 +55,39 @@ _$AddressImpl _$$AddressImplFromJson(Map<String, dynamic> json) =>
           : Period.fromJson(json['period'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$AddressImplToJson(_$AddressImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'use': instance.use,
-      '_use': instance.useElement,
-      'type': instance.type,
-      '_type': instance.typeElement,
-      'text': instance.text,
-      '_text': instance.textElement,
-      'line': instance.line,
-      '_line': instance.lineElement,
-      'city': instance.city,
-      '_city': instance.cityElement,
-      'district': instance.district,
-      '_district': instance.districtElement,
-      'state': instance.state,
-      '_state': instance.stateElement,
-      'postalCode': instance.postalCode,
-      '_postalCode': instance.postalCodeElement,
-      'country': instance.country,
-      '_country': instance.countryElement,
-      'period': instance.period,
-    };
+Map<String, dynamic> _$$AddressImplToJson(_$AddressImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('use', instance.use?.toJson());
+  writeNotNull('_use', instance.useElement?.toJson());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('_type', instance.typeElement?.toJson());
+  writeNotNull('text', instance.text);
+  writeNotNull('_text', instance.textElement?.toJson());
+  writeNotNull('line', instance.line);
+  writeNotNull('_line', instance.lineElement?.map((e) => e.toJson()).toList());
+  writeNotNull('city', instance.city);
+  writeNotNull('_city', instance.cityElement?.toJson());
+  writeNotNull('district', instance.district);
+  writeNotNull('_district', instance.districtElement?.toJson());
+  writeNotNull('state', instance.state);
+  writeNotNull('_state', instance.stateElement?.toJson());
+  writeNotNull('postalCode', instance.postalCode);
+  writeNotNull('_postalCode', instance.postalCodeElement?.toJson());
+  writeNotNull('country', instance.country);
+  writeNotNull('_country', instance.countryElement?.toJson());
+  writeNotNull('period', instance.period?.toJson());
+  return val;
+}
 
 const _$AddressUseEnumMap = {
   AddressUse.home: 'home',

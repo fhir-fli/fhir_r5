@@ -109,39 +109,55 @@ _$VerificationResultImpl _$$VerificationResultImplFromJson(
     );
 
 Map<String, dynamic> _$$VerificationResultImplToJson(
-        _$VerificationResultImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'target': instance.target,
-      'targetLocation': instance.targetLocation,
-      '_targetLocation': instance.targetLocationElement,
-      'need': instance.need,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'statusDate': instance.statusDate,
-      '_statusDate': instance.statusDateElement,
-      'validationType': instance.validationType,
-      'validationProcess': instance.validationProcess,
-      'frequency': instance.frequency,
-      'lastPerformed': instance.lastPerformed,
-      '_lastPerformed': instance.lastPerformedElement,
-      'nextScheduled': instance.nextScheduled,
-      '_nextScheduled': instance.nextScheduledElement,
-      'failureAction': instance.failureAction,
-      'primarySource': instance.primarySource,
-      'attestation': instance.attestation,
-      'validator': instance.validator,
-    };
+    _$VerificationResultImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('target', instance.target?.map((e) => e.toJson()).toList());
+  writeNotNull('targetLocation', instance.targetLocation);
+  writeNotNull('_targetLocation',
+      instance.targetLocationElement?.map((e) => e.toJson()).toList());
+  writeNotNull('need', instance.need?.toJson());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('statusDate', instance.statusDate?.toJson());
+  writeNotNull('_statusDate', instance.statusDateElement?.toJson());
+  writeNotNull('validationType', instance.validationType?.toJson());
+  writeNotNull('validationProcess',
+      instance.validationProcess?.map((e) => e.toJson()).toList());
+  writeNotNull('frequency', instance.frequency?.toJson());
+  writeNotNull('lastPerformed', instance.lastPerformed?.toJson());
+  writeNotNull('_lastPerformed', instance.lastPerformedElement?.toJson());
+  writeNotNull('nextScheduled', instance.nextScheduled?.toJson());
+  writeNotNull('_nextScheduled', instance.nextScheduledElement?.toJson());
+  writeNotNull('failureAction', instance.failureAction?.toJson());
+  writeNotNull(
+      'primarySource', instance.primarySource?.map((e) => e.toJson()).toList());
+  writeNotNull('attestation', instance.attestation?.toJson());
+  writeNotNull(
+      'validator', instance.validator?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -356,20 +372,32 @@ _$VerificationResultPrimarySourceImpl
         );
 
 Map<String, dynamic> _$$VerificationResultPrimarySourceImplToJson(
-        _$VerificationResultPrimarySourceImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'who': instance.who,
-      'type': instance.type,
-      'communicationMethod': instance.communicationMethod,
-      'validationStatus': instance.validationStatus,
-      'validationDate': instance.validationDate,
-      '_validationDate': instance.validationDateElement,
-      'canPushUpdates': instance.canPushUpdates,
-      'pushTypeAvailable': instance.pushTypeAvailable,
-    };
+    _$VerificationResultPrimarySourceImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('who', instance.who?.toJson());
+  writeNotNull('type', instance.type?.map((e) => e.toJson()).toList());
+  writeNotNull('communicationMethod',
+      instance.communicationMethod?.map((e) => e.toJson()).toList());
+  writeNotNull('validationStatus', instance.validationStatus?.toJson());
+  writeNotNull('validationDate', instance.validationDate?.toJson());
+  writeNotNull('_validationDate', instance.validationDateElement?.toJson());
+  writeNotNull('canPushUpdates', instance.canPushUpdates?.toJson());
+  writeNotNull('pushTypeAvailable',
+      instance.pushTypeAvailable?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 _$VerificationResultAttestationImpl
     _$$VerificationResultAttestationImplFromJson(Map<String, dynamic> json) =>
@@ -422,23 +450,35 @@ _$VerificationResultAttestationImpl
         );
 
 Map<String, dynamic> _$$VerificationResultAttestationImplToJson(
-        _$VerificationResultAttestationImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'who': instance.who,
-      'onBehalfOf': instance.onBehalfOf,
-      'communicationMethod': instance.communicationMethod,
-      'date': instance.date,
-      '_date': instance.dateElement,
-      'sourceIdentityCertificate': instance.sourceIdentityCertificate,
-      '_sourceIdentityCertificate': instance.sourceIdentityCertificateElement,
-      'proxyIdentityCertificate': instance.proxyIdentityCertificate,
-      '_proxyIdentityCertificate': instance.proxyIdentityCertificateElement,
-      'proxySignature': instance.proxySignature,
-      'sourceSignature': instance.sourceSignature,
-    };
+    _$VerificationResultAttestationImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('who', instance.who?.toJson());
+  writeNotNull('onBehalfOf', instance.onBehalfOf?.toJson());
+  writeNotNull('communicationMethod', instance.communicationMethod?.toJson());
+  writeNotNull('date', instance.date?.toJson());
+  writeNotNull('_date', instance.dateElement?.toJson());
+  writeNotNull('sourceIdentityCertificate', instance.sourceIdentityCertificate);
+  writeNotNull('_sourceIdentityCertificate',
+      instance.sourceIdentityCertificateElement?.toJson());
+  writeNotNull('proxyIdentityCertificate', instance.proxyIdentityCertificate);
+  writeNotNull('_proxyIdentityCertificate',
+      instance.proxyIdentityCertificateElement?.toJson());
+  writeNotNull('proxySignature', instance.proxySignature?.toJson());
+  writeNotNull('sourceSignature', instance.sourceSignature?.toJson());
+  return val;
+}
 
 _$VerificationResultValidatorImpl _$$VerificationResultValidatorImplFromJson(
         Map<String, dynamic> json) =>
@@ -464,13 +504,24 @@ _$VerificationResultValidatorImpl _$$VerificationResultValidatorImplFromJson(
     );
 
 Map<String, dynamic> _$$VerificationResultValidatorImplToJson(
-        _$VerificationResultValidatorImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'organization': instance.organization,
-      'identityCertificate': instance.identityCertificate,
-      '_identityCertificate': instance.identityCertificateElement,
-      'attestationSignature': instance.attestationSignature,
-    };
+    _$VerificationResultValidatorImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  val['organization'] = instance.organization.toJson();
+  writeNotNull('identityCertificate', instance.identityCertificate);
+  writeNotNull(
+      '_identityCertificate', instance.identityCertificateElement?.toJson());
+  writeNotNull('attestationSignature', instance.attestationSignature?.toJson());
+  return val;
+}

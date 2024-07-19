@@ -74,31 +74,43 @@ _$BundleImpl _$$BundleImplFromJson(Map<String, dynamic> json) => _$BundleImpl(
           : Resource.fromJson(json['issues'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$BundleImplToJson(_$BundleImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'type': instance.type,
-      '_type': instance.typeElement,
-      'timestamp': instance.timestamp,
-      '_timestamp': instance.timestampElement,
-      'total': instance.total,
-      '_total': instance.totalElement,
-      'link': instance.link,
-      'entry': instance.entry,
-      'signature': instance.signature,
-      'issues': instance.issues,
-    };
+Map<String, dynamic> _$$BundleImplToJson(_$BundleImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('identifier', instance.identifier?.toJson());
+  writeNotNull('type', instance.type?.toJson());
+  writeNotNull('_type', instance.typeElement?.toJson());
+  writeNotNull('timestamp', instance.timestamp?.toJson());
+  writeNotNull('_timestamp', instance.timestampElement?.toJson());
+  writeNotNull('total', instance.total?.toJson());
+  writeNotNull('_total', instance.totalElement?.toJson());
+  writeNotNull('link', instance.link?.map((e) => e.toJson()).toList());
+  writeNotNull('entry', instance.entry?.map((e) => e.toJson()).toList());
+  writeNotNull('signature', instance.signature?.toJson());
+  writeNotNull('issues', instance.issues?.toJson());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -284,16 +296,26 @@ _$BundleLinkImpl _$$BundleLinkImplFromJson(Map<String, dynamic> json) =>
           : PrimitiveElement.fromJson(json['_url'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$BundleLinkImplToJson(_$BundleLinkImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'relation': instance.relation,
-      '_relation': instance.relationElement,
-      'url': instance.url,
-      '_url': instance.urlElement,
-    };
+Map<String, dynamic> _$$BundleLinkImplToJson(_$BundleLinkImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('relation', instance.relation?.toJson());
+  writeNotNull('_relation', instance.relationElement?.toJson());
+  writeNotNull('url', instance.url?.toJson());
+  writeNotNull('_url', instance.urlElement?.toJson());
+  return val;
+}
 
 _$BundleEntryImpl _$$BundleEntryImplFromJson(Map<String, dynamic> json) =>
     _$BundleEntryImpl(
@@ -326,19 +348,29 @@ _$BundleEntryImpl _$$BundleEntryImplFromJson(Map<String, dynamic> json) =>
           : BundleResponse.fromJson(json['response'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$BundleEntryImplToJson(_$BundleEntryImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'link': instance.link,
-      'fullUrl': instance.fullUrl,
-      '_fullUrl': instance.fullUrlElement,
-      'resource': instance.resource,
-      'search': instance.search,
-      'request': instance.request,
-      'response': instance.response,
-    };
+Map<String, dynamic> _$$BundleEntryImplToJson(_$BundleEntryImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('link', instance.link?.map((e) => e.toJson()).toList());
+  writeNotNull('fullUrl', instance.fullUrl?.toJson());
+  writeNotNull('_fullUrl', instance.fullUrlElement?.toJson());
+  writeNotNull('resource', instance.resource?.toJson());
+  writeNotNull('search', instance.search?.toJson());
+  writeNotNull('request', instance.request?.toJson());
+  writeNotNull('response', instance.response?.toJson());
+  return val;
+}
 
 _$BundleSearchImpl _$$BundleSearchImplFromJson(Map<String, dynamic> json) =>
     _$BundleSearchImpl(
@@ -359,16 +391,26 @@ _$BundleSearchImpl _$$BundleSearchImplFromJson(Map<String, dynamic> json) =>
           : PrimitiveElement.fromJson(json['_score'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$BundleSearchImplToJson(_$BundleSearchImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'mode': instance.mode,
-      '_mode': instance.modeElement,
-      'score': instance.score,
-      '_score': instance.scoreElement,
-    };
+Map<String, dynamic> _$$BundleSearchImplToJson(_$BundleSearchImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('mode', instance.mode?.toJson());
+  writeNotNull('_mode', instance.modeElement?.toJson());
+  writeNotNull('score', instance.score?.toJson());
+  writeNotNull('_score', instance.scoreElement?.toJson());
+  return val;
+}
 
 _$BundleRequestImpl _$$BundleRequestImplFromJson(Map<String, dynamic> json) =>
     _$BundleRequestImpl(
@@ -410,24 +452,34 @@ _$BundleRequestImpl _$$BundleRequestImplFromJson(Map<String, dynamic> json) =>
               json['_ifNoneExist'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$BundleRequestImplToJson(_$BundleRequestImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'method': instance.method,
-      '_method': instance.methodElement,
-      'url': instance.url,
-      '_url': instance.urlElement,
-      'ifNoneMatch': instance.ifNoneMatch,
-      '_ifNoneMatch': instance.ifNoneMatchElement,
-      'ifModifiedSince': instance.ifModifiedSince,
-      '_ifModifiedSince': instance.ifModifiedSinceElement,
-      'ifMatch': instance.ifMatch,
-      '_ifMatch': instance.ifMatchElement,
-      'ifNoneExist': instance.ifNoneExist,
-      '_ifNoneExist': instance.ifNoneExistElement,
-    };
+Map<String, dynamic> _$$BundleRequestImplToJson(_$BundleRequestImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('method', instance.method?.toJson());
+  writeNotNull('_method', instance.methodElement?.toJson());
+  writeNotNull('url', instance.url?.toJson());
+  writeNotNull('_url', instance.urlElement?.toJson());
+  writeNotNull('ifNoneMatch', instance.ifNoneMatch);
+  writeNotNull('_ifNoneMatch', instance.ifNoneMatchElement?.toJson());
+  writeNotNull('ifModifiedSince', instance.ifModifiedSince?.toJson());
+  writeNotNull('_ifModifiedSince', instance.ifModifiedSinceElement?.toJson());
+  writeNotNull('ifMatch', instance.ifMatch);
+  writeNotNull('_ifMatch', instance.ifMatchElement?.toJson());
+  writeNotNull('ifNoneExist', instance.ifNoneExist);
+  writeNotNull('_ifNoneExist', instance.ifNoneExistElement?.toJson());
+  return val;
+}
 
 _$BundleResponseImpl _$$BundleResponseImplFromJson(Map<String, dynamic> json) =>
     _$BundleResponseImpl(
@@ -465,18 +517,28 @@ _$BundleResponseImpl _$$BundleResponseImplFromJson(Map<String, dynamic> json) =>
     );
 
 Map<String, dynamic> _$$BundleResponseImplToJson(
-        _$BundleResponseImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'location': instance.location,
-      '_location': instance.locationElement,
-      'etag': instance.etag,
-      '_etag': instance.etagElement,
-      'lastModified': instance.lastModified,
-      '_lastModified': instance.lastModifiedElement,
-      'outcome': instance.outcome,
-    };
+    _$BundleResponseImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('status', instance.status);
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('_location', instance.locationElement?.toJson());
+  writeNotNull('etag', instance.etag);
+  writeNotNull('_etag', instance.etagElement?.toJson());
+  writeNotNull('lastModified', instance.lastModified?.toJson());
+  writeNotNull('_lastModified', instance.lastModifiedElement?.toJson());
+  writeNotNull('outcome', instance.outcome?.toJson());
+  return val;
+}

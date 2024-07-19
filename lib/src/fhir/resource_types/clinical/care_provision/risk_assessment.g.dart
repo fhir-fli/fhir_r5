@@ -101,40 +101,55 @@ _$RiskAssessmentImpl _$$RiskAssessmentImplFromJson(Map<String, dynamic> json) =>
     );
 
 Map<String, dynamic> _$$RiskAssessmentImplToJson(
-        _$RiskAssessmentImpl instance) =>
-    <String, dynamic>{
-      'resourceType': instance.resourceType,
-      'id': instance.id,
-      'meta': instance.meta,
-      'implicitRules': instance.implicitRules,
-      '_implicitRules': instance.implicitRulesElement,
-      'language': instance.language,
-      '_language': instance.languageElement,
-      'text': instance.text,
-      'contained': instance.contained,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'identifier': instance.identifier,
-      'basedOn': instance.basedOn,
-      'parent': instance.parent,
-      'status': instance.status,
-      '_status': instance.statusElement,
-      'method': instance.method,
-      'code': instance.code,
-      'subject': instance.subject,
-      'encounter': instance.encounter,
-      'occurrenceDateTime': instance.occurrenceDateTime,
-      '_occurrenceDateTime': instance.occurrenceDateTimeElement,
-      'occurrencePeriod': instance.occurrencePeriod,
-      'condition': instance.condition,
-      'performer': instance.performer,
-      'reason': instance.reason,
-      'basis': instance.basis,
-      'prediction': instance.prediction,
-      'mitigation': instance.mitigation,
-      '_mitigation': instance.mitigationElement,
-      'note': instance.note,
-    };
+    _$RiskAssessmentImpl instance) {
+  final val = <String, dynamic>{
+    'resourceType': instance.resourceType.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id?.toJson());
+  writeNotNull('meta', instance.meta?.toJson());
+  writeNotNull('implicitRules', instance.implicitRules?.toJson());
+  writeNotNull('_implicitRules', instance.implicitRulesElement?.toJson());
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('_language', instance.languageElement?.toJson());
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull(
+      'contained', instance.contained?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'identifier', instance.identifier?.map((e) => e.toJson()).toList());
+  writeNotNull('basedOn', instance.basedOn?.toJson());
+  writeNotNull('parent', instance.parent?.toJson());
+  writeNotNull('status', instance.status?.toJson());
+  writeNotNull('_status', instance.statusElement?.toJson());
+  writeNotNull('method', instance.method?.toJson());
+  writeNotNull('code', instance.code?.toJson());
+  val['subject'] = instance.subject.toJson();
+  writeNotNull('encounter', instance.encounter?.toJson());
+  writeNotNull('occurrenceDateTime', instance.occurrenceDateTime?.toJson());
+  writeNotNull(
+      '_occurrenceDateTime', instance.occurrenceDateTimeElement?.toJson());
+  writeNotNull('occurrencePeriod', instance.occurrencePeriod?.toJson());
+  writeNotNull('condition', instance.condition?.toJson());
+  writeNotNull('performer', instance.performer?.toJson());
+  writeNotNull('reason', instance.reason?.map((e) => e.toJson()).toList());
+  writeNotNull('basis', instance.basis?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'prediction', instance.prediction?.map((e) => e.toJson()).toList());
+  writeNotNull('mitigation', instance.mitigation);
+  writeNotNull('_mitigation', instance.mitigationElement?.toJson());
+  writeNotNull('note', instance.note?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$R5ResourceTypeEnumMap = {
   R5ResourceType.Account: 'Account',
@@ -347,20 +362,31 @@ _$RiskAssessmentPredictionImpl _$$RiskAssessmentPredictionImplFromJson(
     );
 
 Map<String, dynamic> _$$RiskAssessmentPredictionImplToJson(
-        _$RiskAssessmentPredictionImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'extension': instance.extension_,
-      'modifierExtension': instance.modifierExtension,
-      'outcome': instance.outcome,
-      'probabilityDecimal': instance.probabilityDecimal,
-      '_probabilityDecimal': instance.probabilityDecimalElement,
-      'probabilityRange': instance.probabilityRange,
-      'qualitativeRisk': instance.qualitativeRisk,
-      'relativeRisk': instance.relativeRisk,
-      '_relativeRisk': instance.relativeRiskElement,
-      'whenPeriod': instance.whenPeriod,
-      'whenRange': instance.whenRange,
-      'rationale': instance.rationale,
-      '_rationale': instance.rationaleElement,
-    };
+    _$RiskAssessmentPredictionImpl instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull(
+      'extension', instance.extension_?.map((e) => e.toJson()).toList());
+  writeNotNull('modifierExtension',
+      instance.modifierExtension?.map((e) => e.toJson()).toList());
+  writeNotNull('outcome', instance.outcome?.toJson());
+  writeNotNull('probabilityDecimal', instance.probabilityDecimal?.toJson());
+  writeNotNull(
+      '_probabilityDecimal', instance.probabilityDecimalElement?.toJson());
+  writeNotNull('probabilityRange', instance.probabilityRange?.toJson());
+  writeNotNull('qualitativeRisk', instance.qualitativeRisk?.toJson());
+  writeNotNull('relativeRisk', instance.relativeRisk?.toJson());
+  writeNotNull('_relativeRisk', instance.relativeRiskElement?.toJson());
+  writeNotNull('whenPeriod', instance.whenPeriod?.toJson());
+  writeNotNull('whenRange', instance.whenRange?.toJson());
+  writeNotNull('rationale', instance.rationale);
+  writeNotNull('_rationale', instance.rationaleElement?.toJson());
+  return val;
+}
