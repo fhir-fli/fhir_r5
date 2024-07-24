@@ -174,7 +174,7 @@ class AvailabilityAvailableTime
     List<FhirCode>? daysOfWeek,
 
     /// [daysOfWeekElement] ("_daysOfWeek") Extensions for daysOfWeek
-    @JsonKey(name: '_daysOfWeek') List<Element>? daysOfWeekElement,
+    @JsonKey(name: '_daysOfWeek') List<PrimitiveElement>? daysOfWeekElement,
 
     /// [allDay] Always available? i.e. 24 hour service.
     FhirBoolean? allDay,

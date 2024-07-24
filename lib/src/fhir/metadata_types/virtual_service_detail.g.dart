@@ -40,7 +40,7 @@ _$VirtualServiceDetailImpl _$$VirtualServiceDetailImplFromJson(
           ?.map(FhirUrl.fromJson)
           .toList(),
       additionalInfoElement: (json['_additionalInfo'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       maxParticipants: json['maxParticipants'] == null
           ? null

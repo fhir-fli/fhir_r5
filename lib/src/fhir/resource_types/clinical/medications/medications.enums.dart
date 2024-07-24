@@ -1,4 +1,5 @@
-part of 'medications.dart';
+
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum MedicationdispenseAdminLocation {
   @JsonValue('inpatient')

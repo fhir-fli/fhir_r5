@@ -68,7 +68,8 @@ mixin _$DataRequirement {
 
   /// [mustSupportElement] ("_mustSupport") Extensions for mustSupport
   @JsonKey(name: '_mustSupport')
-  List<Element>? get mustSupportElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get mustSupportElement =>
+      throw _privateConstructorUsedError;
 
   /// [codeFilter] Code filters specify additional constraints on the data,
   ///  specifying the value set of interest for a particular element of the data.
@@ -102,8 +103,12 @@ mixin _$DataRequirement {
   /// [sort] Specifies the order of the results to be returned.
   List<DataRequirementSort>? get sort => throw _privateConstructorUsedError;
 
+  /// Serializes this DataRequirement to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DataRequirement
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DataRequirementCopyWith<DataRequirement> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -123,7 +128,7 @@ abstract class $DataRequirementCopyWith<$Res> {
       CodeableConcept? subjectCodeableConcept,
       Reference? subjectReference,
       List<String>? mustSupport,
-      @JsonKey(name: '_mustSupport') List<Element>? mustSupportElement,
+      @JsonKey(name: '_mustSupport') List<PrimitiveElement>? mustSupportElement,
       List<DataRequirementCodeFilter>? codeFilter,
       List<DataRequirementDateFilter>? dateFilter,
       List<DataRequirementValueFilter>? valueFilter,
@@ -145,6 +150,8 @@ class _$DataRequirementCopyWithImpl<$Res, $Val extends DataRequirement>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DataRequirement
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -200,7 +207,7 @@ class _$DataRequirementCopyWithImpl<$Res, $Val extends DataRequirement>
       mustSupportElement: freezed == mustSupportElement
           ? _value.mustSupportElement
           : mustSupportElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       codeFilter: freezed == codeFilter
           ? _value.codeFilter
           : codeFilter // ignore: cast_nullable_to_non_nullable
@@ -228,6 +235,8 @@ class _$DataRequirementCopyWithImpl<$Res, $Val extends DataRequirement>
     ) as $Val);
   }
 
+  /// Create a copy of DataRequirement
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get subjectCodeableConcept {
@@ -241,6 +250,8 @@ class _$DataRequirementCopyWithImpl<$Res, $Val extends DataRequirement>
     });
   }
 
+  /// Create a copy of DataRequirement
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get subjectReference {
@@ -271,7 +282,7 @@ abstract class _$$DataRequirementImplCopyWith<$Res>
       CodeableConcept? subjectCodeableConcept,
       Reference? subjectReference,
       List<String>? mustSupport,
-      @JsonKey(name: '_mustSupport') List<Element>? mustSupportElement,
+      @JsonKey(name: '_mustSupport') List<PrimitiveElement>? mustSupportElement,
       List<DataRequirementCodeFilter>? codeFilter,
       List<DataRequirementDateFilter>? dateFilter,
       List<DataRequirementValueFilter>? valueFilter,
@@ -293,6 +304,8 @@ class __$$DataRequirementImplCopyWithImpl<$Res>
       _$DataRequirementImpl _value, $Res Function(_$DataRequirementImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DataRequirement
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -348,7 +361,7 @@ class __$$DataRequirementImplCopyWithImpl<$Res>
       mustSupportElement: freezed == mustSupportElement
           ? _value._mustSupportElement
           : mustSupportElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       codeFilter: freezed == codeFilter
           ? _value._codeFilter
           : codeFilter // ignore: cast_nullable_to_non_nullable
@@ -389,7 +402,8 @@ class _$DataRequirementImpl extends _DataRequirement {
       this.subjectCodeableConcept,
       this.subjectReference,
       final List<String>? mustSupport,
-      @JsonKey(name: '_mustSupport') final List<Element>? mustSupportElement,
+      @JsonKey(name: '_mustSupport')
+      final List<PrimitiveElement>? mustSupportElement,
       final List<DataRequirementCodeFilter>? codeFilter,
       final List<DataRequirementDateFilter>? dateFilter,
       final List<DataRequirementValueFilter>? valueFilter,
@@ -504,12 +518,12 @@ class _$DataRequirementImpl extends _DataRequirement {
   }
 
   /// [mustSupportElement] ("_mustSupport") Extensions for mustSupport
-  final List<Element>? _mustSupportElement;
+  final List<PrimitiveElement>? _mustSupportElement;
 
   /// [mustSupportElement] ("_mustSupport") Extensions for mustSupport
   @override
   @JsonKey(name: '_mustSupport')
-  List<Element>? get mustSupportElement {
+  List<PrimitiveElement>? get mustSupportElement {
     final value = _mustSupportElement;
     if (value == null) return null;
     if (_mustSupportElement is EqualUnmodifiableListView)
@@ -635,7 +649,7 @@ class _$DataRequirementImpl extends _DataRequirement {
             const DeepCollectionEquality().equals(other._sort, _sort));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -655,7 +669,9 @@ class _$DataRequirementImpl extends _DataRequirement {
       limitElement,
       const DeepCollectionEquality().hash(_sort));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DataRequirement
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DataRequirementImplCopyWith<_$DataRequirementImpl> get copyWith =>
@@ -680,7 +696,8 @@ abstract class _DataRequirement extends DataRequirement {
       final CodeableConcept? subjectCodeableConcept,
       final Reference? subjectReference,
       final List<String>? mustSupport,
-      @JsonKey(name: '_mustSupport') final List<Element>? mustSupportElement,
+      @JsonKey(name: '_mustSupport')
+      final List<PrimitiveElement>? mustSupportElement,
       final List<DataRequirementCodeFilter>? codeFilter,
       final List<DataRequirementDateFilter>? dateFilter,
       final List<DataRequirementValueFilter>? valueFilter,
@@ -692,12 +709,10 @@ abstract class _DataRequirement extends DataRequirement {
   factory _DataRequirement.fromJson(Map<String, dynamic> json) =
       _$DataRequirementImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -705,35 +720,35 @@ abstract class _DataRequirement extends DataRequirement {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [type] The type of the required data, specified as the type name of a
   ///  resource. For profiles, this value is set to the type of the base resource
   ///  of the profile.
-  FhirCode? get type;
   @override
+  FhirCode? get type;
 
   /// [typeElement] ("_type") Extensions for type
+  @override
   @JsonKey(name: '_type')
   PrimitiveElement? get typeElement;
-  @override
 
   /// [profile] The profile of the required data, specified as the uri of the
   ///  profile definition.
-  List<FhirCanonical>? get profile;
   @override
+  List<FhirCanonical>? get profile;
 
   /// [subjectCodeableConcept] The intended subjects of the data requirement. If
   ///  this element is not provided, a Patient subject is assumed.
-  CodeableConcept? get subjectCodeableConcept;
   @override
+  CodeableConcept? get subjectCodeableConcept;
 
   /// [subjectReference] The intended subjects of the data requirement. If this
   ///  element is not provided, a Patient subject is assumed.
-  Reference? get subjectReference;
   @override
+  Reference? get subjectReference;
 
   /// [mustSupport] Indicates that specific elements of the type are referenced
   ///  by the knowledge module and must be supported by the consumer in order to
@@ -744,49 +759,53 @@ abstract class _DataRequirement extends DataRequirement {
   ///  DataRequirement. The path SHALL consist only of identifiers, constant
   /// indexers, and .resolve() (see the [Simple FHIRPath Profile](fhirpath.html#simple)
   /// for full details).
-  List<String>? get mustSupport;
   @override
+  List<String>? get mustSupport;
 
   /// [mustSupportElement] ("_mustSupport") Extensions for mustSupport
-  @JsonKey(name: '_mustSupport')
-  List<Element>? get mustSupportElement;
   @override
+  @JsonKey(name: '_mustSupport')
+  List<PrimitiveElement>? get mustSupportElement;
 
   /// [codeFilter] Code filters specify additional constraints on the data,
   ///  specifying the value set of interest for a particular element of the data.
   ///  Each code filter defines an additional constraint on the data, i.e. code
   ///  filters are AND'ed, not OR'ed.
-  List<DataRequirementCodeFilter>? get codeFilter;
   @override
+  List<DataRequirementCodeFilter>? get codeFilter;
 
   /// [dateFilter] Date filters specify additional constraints on the data in
   ///  terms of the applicable date range for specific elements. Each date filter
   ///  specifies an additional constraint on the data, i.e. date filters are
   ///  AND'ed, not OR'ed.
-  List<DataRequirementDateFilter>? get dateFilter;
   @override
+  List<DataRequirementDateFilter>? get dateFilter;
 
   /// [valueFilter] Value filters specify additional constraints on the data for
   ///  elements other than code-valued or date-valued. Each value filter
   ///  specifies an additional constraint on the data (i.e. valueFilters are
   ///  AND'ed, not OR'ed).
-  List<DataRequirementValueFilter>? get valueFilter;
   @override
+  List<DataRequirementValueFilter>? get valueFilter;
 
   /// [limit] Specifies a maximum number of results that are required (uses the
   ///  _count search parameter).
-  FhirPositiveInt? get limit;
   @override
+  FhirPositiveInt? get limit;
 
   /// [limitElement] ("_limit") Extensions for limit
+  @override
   @JsonKey(name: '_limit')
   PrimitiveElement? get limitElement;
-  @override
 
   /// [sort] Specifies the order of the results to be returned.
-  List<DataRequirementSort>? get sort;
   @override
-  @JsonKey(ignore: true)
+  List<DataRequirementSort>? get sort;
+
+  /// Create a copy of DataRequirement
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DataRequirementImplCopyWith<_$DataRequirementImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -863,8 +882,12 @@ mixin _$DataRequirementCodeFilter {
   ///  code in the value set or one of the specified codes.
   List<Coding>? get code => throw _privateConstructorUsedError;
 
+  /// Serializes this DataRequirementCodeFilter to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DataRequirementCodeFilter
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DataRequirementCodeFilterCopyWith<DataRequirementCodeFilter> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -898,6 +921,8 @@ class _$DataRequirementCodeFilterCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DataRequirementCodeFilter
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -983,6 +1008,8 @@ class __$$DataRequirementCodeFilterImplCopyWithImpl<$Res>
       $Res Function(_$DataRequirementCodeFilterImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DataRequirementCodeFilter
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1205,7 +1232,7 @@ class _$DataRequirementCodeFilterImpl extends _DataRequirementCodeFilter {
             const DeepCollectionEquality().equals(other._code, _code));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1219,7 +1246,9 @@ class _$DataRequirementCodeFilterImpl extends _DataRequirementCodeFilter {
       valueSet,
       const DeepCollectionEquality().hash(_code));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DataRequirementCodeFilter
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DataRequirementCodeFilterImplCopyWith<_$DataRequirementCodeFilterImpl>
@@ -1250,12 +1279,10 @@ abstract class _DataRequirementCodeFilter extends DataRequirementCodeFilter {
   factory _DataRequirementCodeFilter.fromJson(Map<String, dynamic> json) =
       _$DataRequirementCodeFilterImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1263,9 +1290,9 @@ abstract class _DataRequirementCodeFilter extends DataRequirementCodeFilter {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1279,8 +1306,8 @@ abstract class _DataRequirementCodeFilter extends DataRequirementCodeFilter {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [path] The code-valued attribute of the filter. The specified path SHALL be
   ///  a FHIRPath resolvable on the specified type of the DataRequirement, and
@@ -1290,40 +1317,44 @@ abstract class _DataRequirementCodeFilter extends DataRequirementCodeFilter {
   ///  the [Simple FHIRPath Profile](fhirpath.html#simple) for full details).
   ///  Note that the index must be an integer constant. The path must resolve to
   ///  an element of type code, Coding, or CodeableConcept.
-  String? get path;
   @override
+  String? get path;
 
   /// [pathElement] ("_path") Extensions for path
+  @override
   @JsonKey(name: '_path')
   PrimitiveElement? get pathElement;
-  @override
 
   /// [searchParam] A token parameter that refers to a search parameter defined
   ///  on the specified type of the DataRequirement, and which searches on
   ///  elements of type code, Coding, or CodeableConcept.
-  String? get searchParam;
   @override
+  String? get searchParam;
 
   /// [searchParamElement] ("_searchParam") Extensions for searchParam
+  @override
   @JsonKey(name: '_searchParam')
   PrimitiveElement? get searchParamElement;
-  @override
 
   /// [valueSet] The valueset for the code filter. The valueSet and code elements
   ///  are additive. If valueSet is specified, the filter will return only those
   ///  data items for which the value of the code-valued element specified in the
   ///  path is a member of the specified valueset.
-  FhirCanonical? get valueSet;
   @override
+  FhirCanonical? get valueSet;
 
   /// [code] The codes for the code filter. If values are given, the filter will
   ///  return only those data items for which the code-valued attribute specified
   ///  by the path has a value that is one of the specified codes. If codes are
   ///  specified in addition to a value set, the filter returns items matching a
   ///  code in the value set or one of the specified codes.
-  List<Coding>? get code;
   @override
-  @JsonKey(ignore: true)
+  List<Coding>? get code;
+
+  /// Create a copy of DataRequirementCodeFilter
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DataRequirementCodeFilterImplCopyWith<_$DataRequirementCodeFilterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1416,8 +1447,12 @@ mixin _$DataRequirementDateFilter {
   ///  only those data items that fall within Duration before now.
   FhirDuration? get valueDuration => throw _privateConstructorUsedError;
 
+  /// Serializes this DataRequirementDateFilter to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DataRequirementDateFilter
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DataRequirementDateFilterCopyWith<DataRequirementDateFilter> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1456,6 +1491,8 @@ class _$DataRequirementDateFilterCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DataRequirementDateFilter
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1519,6 +1556,8 @@ class _$DataRequirementDateFilterCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of DataRequirementDateFilter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get valuePeriod {
@@ -1531,6 +1570,8 @@ class _$DataRequirementDateFilterCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of DataRequirementDateFilter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get valueDuration {
@@ -1582,6 +1623,8 @@ class __$$DataRequirementDateFilterImplCopyWithImpl<$Res>
       $Res Function(_$DataRequirementDateFilterImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DataRequirementDateFilter
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1824,7 +1867,7 @@ class _$DataRequirementDateFilterImpl extends _DataRequirementDateFilter {
                 other.valueDuration == valueDuration));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1840,7 +1883,9 @@ class _$DataRequirementDateFilterImpl extends _DataRequirementDateFilter {
       valuePeriod,
       valueDuration);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DataRequirementDateFilter
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DataRequirementDateFilterImplCopyWith<_$DataRequirementDateFilterImpl>
@@ -1874,12 +1919,10 @@ abstract class _DataRequirementDateFilter extends DataRequirementDateFilter {
   factory _DataRequirementDateFilter.fromJson(Map<String, dynamic> json) =
       _$DataRequirementDateFilterImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1887,9 +1930,9 @@ abstract class _DataRequirementDateFilter extends DataRequirementDateFilter {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1903,8 +1946,8 @@ abstract class _DataRequirementDateFilter extends DataRequirementDateFilter {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [path] The date-valued attribute of the filter. The specified path SHALL be
   ///  a FHIRPath resolvable on the specified type of the DataRequirement, and
@@ -1914,24 +1957,24 @@ abstract class _DataRequirementDateFilter extends DataRequirementDateFilter {
   ///  the [Simple FHIRPath Profile](fhirpath.html#simple) for full details).
   ///  Note that the index must be an integer constant. The path must resolve to
   ///  an element of type date, dateTime, Period, Schedule, or Timing.
-  String? get path;
   @override
+  String? get path;
 
   /// [pathElement] ("_path") Extensions for path
+  @override
   @JsonKey(name: '_path')
   PrimitiveElement? get pathElement;
-  @override
 
   /// [searchParam] A date parameter that refers to a search parameter defined on
   ///  the specified type of the DataRequirement, and which searches on elements
   ///  of type date, dateTime, Period, Schedule, or Timing.
-  String? get searchParam;
   @override
+  String? get searchParam;
 
   /// [searchParamElement] ("_searchParam") Extensions for searchParam
+  @override
   @JsonKey(name: '_searchParam')
   PrimitiveElement? get searchParamElement;
-  @override
 
   /// [valueDateTime] The value of the filter. If period is specified, the filter
   ///  will return only those data items that fall within the bounds determined
@@ -1939,13 +1982,13 @@ abstract class _DataRequirementDateFilter extends DataRequirementDateFilter {
   ///  specified, the filter will return only those data items that are equal to
   ///  the specified dateTime. If a Duration is specified, the filter will return
   ///  only those data items that fall within Duration before now.
-  FhirDateTime? get valueDateTime;
   @override
+  FhirDateTime? get valueDateTime;
 
   /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
+  @override
   @JsonKey(name: '_valueDateTime')
   PrimitiveElement? get valueDateTimeElement;
-  @override
 
   /// [valuePeriod] The value of the filter. If period is specified, the filter
   ///  will return only those data items that fall within the bounds determined
@@ -1953,8 +1996,8 @@ abstract class _DataRequirementDateFilter extends DataRequirementDateFilter {
   ///  specified, the filter will return only those data items that are equal to
   ///  the specified dateTime. If a Duration is specified, the filter will return
   ///  only those data items that fall within Duration before now.
-  Period? get valuePeriod;
   @override
+  Period? get valuePeriod;
 
   /// [valueDuration] The value of the filter. If period is specified, the filter
   ///  will return only those data items that fall within the bounds determined
@@ -1962,9 +2005,13 @@ abstract class _DataRequirementDateFilter extends DataRequirementDateFilter {
   ///  specified, the filter will return only those data items that are equal to
   ///  the specified dateTime. If a Duration is specified, the filter will return
   ///  only those data items that fall within Duration before now.
-  FhirDuration? get valueDuration;
   @override
-  @JsonKey(ignore: true)
+  FhirDuration? get valueDuration;
+
+  /// Create a copy of DataRequirementDateFilter
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DataRequirementDateFilterImplCopyWith<_$DataRequirementDateFilterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2022,8 +2069,12 @@ mixin _$DataRequirementSort {
   @JsonKey(name: '_direction')
   PrimitiveElement? get directionElement => throw _privateConstructorUsedError;
 
+  /// Serializes this DataRequirementSort to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DataRequirementSort
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DataRequirementSortCopyWith<DataRequirementSort> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2054,6 +2105,8 @@ class _$DataRequirementSortCopyWithImpl<$Res, $Val extends DataRequirementSort>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DataRequirementSort
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2124,6 +2177,8 @@ class __$$DataRequirementSortImplCopyWithImpl<$Res>
       $Res Function(_$DataRequirementSortImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DataRequirementSort
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2297,7 +2352,7 @@ class _$DataRequirementSortImpl extends _DataRequirementSort {
                 other.directionElement == directionElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2309,7 +2364,9 @@ class _$DataRequirementSortImpl extends _DataRequirementSort {
       direction,
       directionElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DataRequirementSort
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DataRequirementSortImplCopyWith<_$DataRequirementSortImpl> get copyWith =>
@@ -2339,12 +2396,10 @@ abstract class _DataRequirementSort extends DataRequirementSort {
   factory _DataRequirementSort.fromJson(Map<String, dynamic> json) =
       _$DataRequirementSortImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2352,9 +2407,9 @@ abstract class _DataRequirementSort extends DataRequirementSort {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2368,31 +2423,35 @@ abstract class _DataRequirementSort extends DataRequirementSort {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [path] The attribute of the sort. The specified path must be resolvable
   ///  from the type of the required data. The path is allowed to contain
   ///  qualifiers (.) to traverse sub-elements, as well as indexers ([x]) to
   ///  traverse multiple-cardinality sub-elements. Note that the index must be an
   ///  integer constant.
-  String? get path;
   @override
+  String? get path;
 
   /// [pathElement] ("_path") Extensions for path
+  @override
   @JsonKey(name: '_path')
   PrimitiveElement? get pathElement;
-  @override
 
   /// [direction] The direction of the sort, ascending or descending.
-  DataRequirementSortDirection? get direction;
   @override
+  DataRequirementSortDirection? get direction;
 
   /// [directionElement] ("_direction") Extensions for direction
+  @override
   @JsonKey(name: '_direction')
   PrimitiveElement? get directionElement;
+
+  /// Create a copy of DataRequirementSort
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DataRequirementSortImplCopyWith<_$DataRequirementSortImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2479,8 +2538,12 @@ mixin _$DataRequirementValueFilter {
   /// [valueDuration] The value of the filter.
   FhirDuration? get valueDuration => throw _privateConstructorUsedError;
 
+  /// Serializes this DataRequirementValueFilter to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DataRequirementValueFilter
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DataRequirementValueFilterCopyWith<DataRequirementValueFilter>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2522,6 +2585,8 @@ class _$DataRequirementValueFilterCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DataRequirementValueFilter
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2595,6 +2660,8 @@ class _$DataRequirementValueFilterCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of DataRequirementValueFilter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get valuePeriod {
@@ -2607,6 +2674,8 @@ class _$DataRequirementValueFilterCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of DataRequirementValueFilter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get valueDuration {
@@ -2660,6 +2729,8 @@ class __$$DataRequirementValueFilterImplCopyWithImpl<$Res>
       $Res Function(_$DataRequirementValueFilterImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DataRequirementValueFilter
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2915,7 +2986,7 @@ class _$DataRequirementValueFilterImpl extends _DataRequirementValueFilter {
                 other.valueDuration == valueDuration));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2933,7 +3004,9 @@ class _$DataRequirementValueFilterImpl extends _DataRequirementValueFilter {
       valuePeriod,
       valueDuration);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DataRequirementValueFilter
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DataRequirementValueFilterImplCopyWith<_$DataRequirementValueFilterImpl>
@@ -2969,12 +3042,10 @@ abstract class _DataRequirementValueFilter extends DataRequirementValueFilter {
   factory _DataRequirementValueFilter.fromJson(Map<String, dynamic> json) =
       _$DataRequirementValueFilterImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2982,9 +3053,9 @@ abstract class _DataRequirementValueFilter extends DataRequirementValueFilter {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2998,8 +3069,8 @@ abstract class _DataRequirementValueFilter extends DataRequirementValueFilter {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [path] The attribute of the filter. The specified path SHALL be a FHIRPath
   ///  resolvable on the specified type of the DataRequirement, and SHALL consist
@@ -3010,52 +3081,56 @@ abstract class _DataRequirementValueFilter extends DataRequirementValueFilter {
   ///  that the index must be an integer constant. The path must resolve to an
   ///  element of a type that is comparable to the valueFilter.value[x] element
   ///  for the filter.
-  String? get path;
   @override
+  String? get path;
 
   /// [pathElement] ("_path") Extensions for path
+  @override
   @JsonKey(name: '_path')
   PrimitiveElement? get pathElement;
-  @override
 
   /// [searchParam] A search parameter defined on the specified type of the
   ///  DataRequirement, and which searches on elements of a type compatible with
   ///  the type of the valueFilter.value[x] for the filter.
-  String? get searchParam;
   @override
+  String? get searchParam;
 
   /// [searchParamElement] ("_searchParam") Extensions for searchParam
+  @override
   @JsonKey(name: '_searchParam')
   PrimitiveElement? get searchParamElement;
-  @override
 
   /// [comparator] The comparator to be used to determine whether the value is
   ///  matching.
-  FhirCode? get comparator;
   @override
+  FhirCode? get comparator;
 
   /// [comparatorElement] ("_comparator") Extensions for comparator
+  @override
   @JsonKey(name: '_comparator')
   PrimitiveElement? get comparatorElement;
-  @override
 
   /// [valueDateTime] The value of the filter.
-  FhirDateTime? get valueDateTime;
   @override
+  FhirDateTime? get valueDateTime;
 
   /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
+  @override
   @JsonKey(name: '_valueDateTime')
   PrimitiveElement? get valueDateTimeElement;
-  @override
 
   /// [valuePeriod] The value of the filter.
-  Period? get valuePeriod;
   @override
+  Period? get valuePeriod;
 
   /// [valueDuration] The value of the filter.
-  FhirDuration? get valueDuration;
   @override
-  @JsonKey(ignore: true)
+  FhirDuration? get valueDuration;
+
+  /// Create a copy of DataRequirementValueFilter
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DataRequirementValueFilterImplCopyWith<_$DataRequirementValueFilterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

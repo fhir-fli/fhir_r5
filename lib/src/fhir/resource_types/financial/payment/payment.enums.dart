@@ -1,4 +1,5 @@
-part of 'payment.dart';
+
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum PaymentKind {
   @JsonValue('deposit')

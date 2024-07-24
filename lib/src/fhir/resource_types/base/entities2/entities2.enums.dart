@@ -1,4 +1,4 @@
-part of 'entities2.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum SubstanceStatus {
   @JsonValue('active')
@@ -38,7 +38,6 @@ enum SubstanceStatus {
         return 'inactive';
       case SubstanceStatus.enteredinerror:
         return 'entered-in-error';
-
     }
   }
 
@@ -95,7 +94,6 @@ enum ProductCategory {
         return 'cells';
       case ProductCategory.biologicalagent:
         return 'biologicalAgent';
-
     }
   }
 
@@ -155,7 +153,6 @@ enum BiologicallyDerivedProductStatus {
         return 'available';
       case BiologicallyDerivedProductStatus.unavailable:
         return 'unavailable';
-
     }
   }
 
@@ -241,7 +238,6 @@ enum BiologicallyDerivedProductDispenseStatus {
         return 'entered-in-error';
       case BiologicallyDerivedProductDispenseStatus.unknown:
         return 'unknown';
-
     }
   }
 
@@ -310,7 +306,6 @@ enum UdiEntryType {
         return 'electronic-transmission';
       case UdiEntryType.unknown:
         return 'unknown';
-
     }
   }
 
@@ -361,7 +356,6 @@ enum DeviceMetricOperationalStatus {
         return 'standby';
       case DeviceMetricOperationalStatus.enteredinerror:
         return 'entered-in-error';
-
     }
   }
 
@@ -412,7 +406,6 @@ enum DeviceMetricCategory {
         return 'calculation';
       case DeviceMetricCategory.unspecified:
         return 'unspecified';
-
     }
   }
 
@@ -463,7 +456,6 @@ enum DeviceMetricCalibrationType {
         return 'gain';
       case DeviceMetricCalibrationType.twopoint:
         return 'two-point';
-
     }
   }
 
@@ -514,7 +506,6 @@ enum DeviceMetricCalibrationState {
         return 'calibrated';
       case DeviceMetricCalibrationState.unspecified:
         return 'unspecified';
-
     }
   }
 
@@ -559,7 +550,6 @@ enum DeviceStatus {
         return 'inactive';
       case DeviceStatus.enteredinerror:
         return 'entered-in-error';
-
     }
   }
 
@@ -695,7 +685,6 @@ enum NutritionProductStatus {
         return 'inactive';
       case NutritionProductStatus.enteredinerror:
         return 'entered-in-error';
-
     }
   }
 

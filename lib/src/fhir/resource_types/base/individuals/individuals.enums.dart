@@ -1,4 +1,5 @@
-part of 'individuals.dart';
+
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum LinkType {
   @JsonValue('replaced-by')

@@ -55,7 +55,7 @@ _$AvailabilityAvailableTimeImpl _$$AvailabilityAvailableTimeImplFromJson(
           ?.map(FhirCode.fromJson)
           .toList(),
       daysOfWeekElement: (json['_daysOfWeek'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       allDay:
           json['allDay'] == null ? null : FhirBoolean.fromJson(json['allDay']),

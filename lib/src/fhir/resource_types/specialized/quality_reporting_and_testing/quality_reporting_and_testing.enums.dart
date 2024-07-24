@@ -1,4 +1,4 @@
-part of 'quality_reporting_and_testing.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum MeasureDefinitionExample {
   @JsonValue('screening')
@@ -32,7 +32,6 @@ enum MeasureDefinitionExample {
         return 'screening';
       case MeasureDefinitionExample.standardizeddepressionscreeningtool:
         return 'standardized-depression-screening-tool';
-
     }
   }
 
@@ -71,7 +70,6 @@ enum MeasureGroupExample {
         return 'primary-rate';
       case MeasureGroupExample.secondaryrate:
         return 'secondary-rate';
-
     }
   }
 
@@ -116,7 +114,6 @@ enum MeasureStratifierExample {
         return 'gender';
       case MeasureStratifierExample.region:
         return 'region';
-
     }
   }
 
@@ -167,7 +164,6 @@ enum MeasureSupplementalDataExample {
         return 'ethnicity';
       case MeasureSupplementalDataExample.payer:
         return 'payer';
-
     }
   }
 
@@ -212,7 +208,6 @@ enum MeasureReportStatus {
         return 'pending';
       case MeasureReportStatus.error:
         return 'error';
-
     }
   }
 
@@ -263,7 +258,6 @@ enum MeasureReportType {
         return 'summary';
       case MeasureReportType.dataexchange:
         return 'data-exchange';
-
     }
   }
 
@@ -314,7 +308,6 @@ enum MeasurereportStratifierValueExample {
         return 'southwest';
       case MeasurereportStratifierValueExample.southeast:
         return 'southeast';
-
     }
   }
 
@@ -359,7 +352,6 @@ enum TestscriptScopePhaseCodes {
         return 'integration';
       case TestscriptScopePhaseCodes.production:
         return 'production';
-
     }
   }
 
@@ -404,7 +396,6 @@ enum TestscriptScopeConformanceCodes {
         return 'optional';
       case TestscriptScopeConformanceCodes.strict:
         return 'strict';
-
     }
   }
 
@@ -473,7 +464,6 @@ enum HttpOperations {
         return 'put';
       case HttpOperations.head:
         return 'head';
-
     }
   }
 
@@ -512,7 +502,6 @@ enum AssertDirectionCodes {
         return 'response';
       case AssertDirectionCodes.request:
         return 'request';
-
     }
   }
 
@@ -563,7 +552,6 @@ enum AssertManualCompletionCodes {
         return 'skip';
       case AssertManualCompletionCodes.stop:
         return 'stop';
-
     }
   }
 
@@ -662,7 +650,6 @@ enum AssertOperatorCodes {
         return 'eval';
       case AssertOperatorCodes.manualeval:
         return 'manualEval';
-
     }
   }
 
@@ -953,7 +940,6 @@ enum AssertResponseCodeTypes {
         return 'gatewayTimeout';
       case AssertResponseCodeTypes.httpversionnotsupported:
         return 'httpVersionNotSupported';
-
     }
   }
 
@@ -1010,7 +996,6 @@ enum ReportStatusCodes {
         return 'stopped';
       case ReportStatusCodes.enteredinerror:
         return 'entered-in-error';
-
     }
   }
 
@@ -1055,7 +1040,6 @@ enum ReportResultCodes {
         return 'fail';
       case ReportResultCodes.pending:
         return 'pending';
-
     }
   }
 
@@ -1100,7 +1084,6 @@ enum ReportParticipantType {
         return 'client';
       case ReportParticipantType.server:
         return 'server';
-
     }
   }
 
@@ -1157,7 +1140,6 @@ enum ReportActionResultCodes {
         return 'warning';
       case ReportActionResultCodes.error:
         return 'error';
-
     }
   }
 

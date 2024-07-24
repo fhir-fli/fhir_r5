@@ -1,4 +1,4 @@
-part of 'public_health_and_research.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum ResearchStudyPrimPurpType {
   @JsonValue('treatment')

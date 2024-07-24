@@ -1,4 +1,4 @@
-part of 'other.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum BundleType {
   @JsonValue('document')
@@ -80,7 +80,6 @@ enum BundleType {
         return 'collection';
       case BundleType.subscriptionnotification:
         return 'subscription-notification';
-
     }
   }
 
@@ -125,7 +124,6 @@ enum SearchEntryMode {
         return 'include';
       case SearchEntryMode.outcome:
         return 'outcome';
-
     }
   }
 
@@ -188,7 +186,6 @@ enum HttpVerb {
         return 'DELETE';
       case HttpVerb.patch:
         return 'PATCH';
-
     }
   }
 
@@ -233,7 +230,6 @@ enum LinkageType {
         return 'alternate';
       case LinkageType.historical:
         return 'historical';
-
     }
   }
 
@@ -278,7 +274,6 @@ enum ResponseCode {
         return 'transient-error';
       case ResponseCode.fatalerror:
         return 'fatal-error';
-
     }
   }
 
@@ -335,7 +330,6 @@ enum IssueSeverity {
         return 'information';
       case IssueSeverity.success:
         return 'success';
-
     }
   }
 
@@ -398,7 +392,6 @@ enum IssueType {
         return 'informational';
       case IssueType.success:
         return 'success';
-
     }
   }
 
@@ -561,7 +554,6 @@ enum SubscriptionPayloadContent {
         return 'id-only';
       case SubscriptionPayloadContent.fullresource:
         return 'full-resource';
-
     }
   }
 
@@ -618,7 +610,6 @@ enum SubscriptionNotificationType {
         return 'query-status';
       case SubscriptionNotificationType.queryevent:
         return 'query-event';
-
     }
   }
 
@@ -657,7 +648,6 @@ enum SubscriptiontopicCrBehavior {
         return 'test-passes';
       case SubscriptiontopicCrBehavior.testfails:
         return 'test-fails';
-
     }
   }
 

@@ -24,7 +24,7 @@ _$ElementDefinitionImpl _$$ElementDefinitionImplFromJson(
           ?.map((e) => $enumDecode(_$ElementDefinitionRepresentationEnumMap, e))
           .toList(),
       representationElement: (json['_representation'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       sliceName: json['sliceName'] as String?,
       sliceNameElement: json['_sliceName'] == null
@@ -76,7 +76,7 @@ _$ElementDefinitionImpl _$$ElementDefinitionImplFromJson(
       alias:
           (json['alias'] as List<dynamic>?)?.map((e) => e as String).toList(),
       aliasElement: (json['_alias'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       min: json['min'] == null ? null : FhirUnsignedInt.fromJson(json['min']),
       minElement: json['_min'] == null
@@ -1041,7 +1041,7 @@ _$ElementDefinitionImpl _$$ElementDefinitionImplFromJson(
       condition:
           (json['condition'] as List<dynamic>?)?.map(FhirId.fromJson).toList(),
       conditionElement: (json['_condition'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       constraint: (json['constraint'] as List<dynamic>?)
           ?.map((e) =>
@@ -1682,7 +1682,7 @@ _$ElementDefinitionTypeImpl _$$ElementDefinitionTypeImplFromJson(
           ?.map(FhirCanonical.fromJson)
           .toList(),
       profileElement: (json['_profile'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       targetProfile: (json['targetProfile'] as List<dynamic>?)
           ?.map(FhirCanonical.fromJson)
@@ -1690,7 +1690,7 @@ _$ElementDefinitionTypeImpl _$$ElementDefinitionTypeImplFromJson(
       aggregation: $enumDecodeNullable(
           _$ElementDefinitionTypeAggregationEnumMap, json['aggregation']),
       aggregationElement: (json['_aggregation'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       versioning: $enumDecodeNullable(
           _$ElementDefinitionTypeVersioningEnumMap, json['versioning']),

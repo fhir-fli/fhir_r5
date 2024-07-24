@@ -1,5 +1,3 @@
-// ignore_for_file: avoid_print
-
 import 'dart:io';
 
 void main() async {
@@ -35,20 +33,46 @@ Future<void> _processFile(File file) async {
   // Find all matches
   final Iterable<RegExpMatch> matches = classRegExp.allMatches(inputContent);
 
-  // Iterate over matches and save each class to its own file in the same directory
+  final Map<String, StringBuffer> fileContents = {};
+
+  // Iterate over matches and group classes with their subclasses
   for (final RegExpMatch match in matches) {
     final String? classContent = match.group(0);
     final String? className = match.group(2);
 
     if (className != null && classContent != null) {
-      final String fileName = _toSnakeCase(className);
-      final String header = _generateHeader(fileName);
-
-      final File outputFile = File('${file.parent.path}/$fileName.dart');
-      await outputFile.writeAsString(header + classContent);
-      print('Saved $className to ${outputFile.path}');
+      final String fileName = _findFileName(className, fileContents.keys);
+      fileContents.putIfAbsent(fileName, () => StringBuffer());
+      fileContents[fileName]!.write(classContent);
     }
   }
+
+  // Write each group of classes to their respective files
+  for (final MapEntry<String, StringBuffer> entry in fileContents.entries) {
+    final String fileName = entry.key;
+    final String content = entry.value.toString();
+    final String header = _generateHeader(fileName);
+
+    final File outputFile = File('${file.parent.path}/$fileName.dart');
+    await outputFile.writeAsString(header + content);
+    print('Saved to ${outputFile.path}');
+  }
+}
+
+String _findFileName(String className, Iterable<String> existingFileNames) {
+  for (final String fileName in existingFileNames) {
+    if (className.startsWith(_toCamelCase(fileName))) {
+      return fileName;
+    }
+  }
+  return _toSnakeCase(className);
+}
+
+String _toCamelCase(String input) {
+  final RegExp exp = RegExp(r'(_)([a-z])');
+  final String camelCase =
+      input.replaceAllMapped(exp, (Match m) => m.group(2)!.toUpperCase());
+  return camelCase[0].toUpperCase() + camelCase.substring(1);
 }
 
 String _toSnakeCase(String input) {
@@ -69,7 +93,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:yaml/yaml.dart';
 
 // Project imports:
-import '../../../fhir_r5.dart';
+import '../../../../../fhir_r5.dart';
 
 part '$fileName.freezed.dart';
 part '$fileName.g.dart';

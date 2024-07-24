@@ -1,4 +1,5 @@
-part of 'diagnostics.dart';
+
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum ObservationTriggeredByType {
   @JsonValue('reflex')

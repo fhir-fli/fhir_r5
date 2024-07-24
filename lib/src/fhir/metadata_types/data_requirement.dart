@@ -16,7 +16,7 @@ part 'data_requirement.g.dart';
 /// [DataRequirement] Describes a required data item for evaluation in terms of
 ///  the type of data, and optional code or date-based filters of the data.
 @freezed
-class DataRequirement with  _$DataRequirement implements DataType{
+class DataRequirement with _$DataRequirement implements DataType {
   /// [DataRequirement] Describes a required data item for evaluation in terms of
   ///  the type of data, and optional code or date-based filters of the data.
   const DataRequirement._();
@@ -127,7 +127,7 @@ class DataRequirement with  _$DataRequirement implements DataType{
     List<String>? mustSupport,
 
     /// [mustSupportElement] ("_mustSupport") Extensions for mustSupport
-    @JsonKey(name: '_mustSupport') List<Element>? mustSupportElement,
+    @JsonKey(name: '_mustSupport') List<PrimitiveElement>? mustSupportElement,
 
     /// [codeFilter] Code filters specify additional constraints on the data,
     ///  specifying the value set of interest for a particular element of the data.
@@ -188,19 +188,20 @@ class DataRequirement with  _$DataRequirement implements DataType{
     }
   }
 
-    @override
+  @override
   String toJsonString() => jsonEncode(toJson());
 
   @override
   String toYaml() => json2yaml(toJson());
-
 }
 
 /// [DataRequirementCodeFilter] Describes a required data item for evaluation
 ///  in terms of the type of data, and optional code or date-based filters of
 ///  the data.
 @freezed
-class DataRequirementCodeFilter with  _$DataRequirementCodeFilter implements Element{
+class DataRequirementCodeFilter
+    with _$DataRequirementCodeFilter
+    implements Element {
   /// [DataRequirementCodeFilter] Describes a required data item for evaluation
   ///  in terms of the type of data, and optional code or date-based filters of
   ///  the data.
@@ -353,19 +354,20 @@ class DataRequirementCodeFilter with  _$DataRequirementCodeFilter implements Ele
     }
   }
 
-    @override
+  @override
   String toJsonString() => jsonEncode(toJson());
 
   @override
   String toYaml() => json2yaml(toJson());
-
 }
 
 /// [DataRequirementDateFilter] Describes a required data item for evaluation
 ///  in terms of the type of data, and optional code or date-based filters of
 ///  the data.
 @freezed
-class DataRequirementDateFilter with  _$DataRequirementDateFilter implements Element{
+class DataRequirementDateFilter
+    with _$DataRequirementDateFilter
+    implements Element {
   /// [DataRequirementDateFilter] Describes a required data item for evaluation
   ///  in terms of the type of data, and optional code or date-based filters of
   ///  the data.
@@ -544,19 +546,18 @@ class DataRequirementDateFilter with  _$DataRequirementDateFilter implements Ele
     }
   }
 
-    @override
+  @override
   String toJsonString() => jsonEncode(toJson());
 
   @override
   String toYaml() => json2yaml(toJson());
-
 }
 
 /// [DataRequirementSort] Describes a required data item for evaluation in
 ///  terms of the type of data, and optional code or date-based filters of the
 ///  data.
 @freezed
-class DataRequirementSort with  _$DataRequirementSort implements Element{
+class DataRequirementSort with _$DataRequirementSort implements Element {
   /// [DataRequirementSort] Describes a required data item for evaluation in
   ///  terms of the type of data, and optional code or date-based filters of the
   ///  data.
@@ -675,19 +676,20 @@ class DataRequirementSort with  _$DataRequirementSort implements Element{
     }
   }
 
-    @override
+  @override
   String toJsonString() => jsonEncode(toJson());
 
   @override
   String toYaml() => json2yaml(toJson());
-
 }
 
 /// [DataRequirementValueFilter] Describes a required data item for evaluation
 ///  in terms of the type of data, and optional code or date-based filters of
 ///  the data.
 @freezed
-class DataRequirementValueFilter with  _$DataRequirementValueFilter implements Element{
+class DataRequirementValueFilter
+    with _$DataRequirementValueFilter
+    implements Element {
   /// [DataRequirementValueFilter] Describes a required data item for evaluation
   ///  in terms of the type of data, and optional code or date-based filters of
   ///  the data.
@@ -850,10 +852,9 @@ class DataRequirementValueFilter with  _$DataRequirementValueFilter implements E
     }
   }
 
-    @override
+  @override
   String toJsonString() => jsonEncode(toJson());
 
   @override
   String toYaml() => json2yaml(toJson());
-
 }

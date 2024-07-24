@@ -204,7 +204,7 @@ class FhirDb {
     final bool exists = resource.id != null &&
         await this.exists(
           resourceType: resource.resourceType!,
-          id: resource.id!.value!,
+          id: resource.id!.toString(),
           pw: pw,
         );
 
@@ -261,7 +261,7 @@ class FhirDb {
     if (resource.id != null) {
       final Resource? oldResource = await get(
         resourceType: resource.resourceType!,
-        id: resource.id!.value!,
+        id: resource.id!.toString(),
         pw: pw,
       );
       if (oldResource != null) {
@@ -293,6 +293,7 @@ class FhirDb {
     try {
       final Box<Map<dynamic, dynamic>> box =
           await _getBox(resourceType: resourceType, pw: pw);
+      print('id: ${resource['id']} (${resource['id'].runtimeType})');
       await box.put(resource['id'], resource);
       return await _addType(
           resourceType: resourceType,
@@ -435,7 +436,7 @@ class FhirDb {
       Resource resource, String? pw) async {
     final Resource? result = await get(
       resourceType: resource.resourceType!,
-      id: resource.id!.value!,
+      id: resource.id!.toString(),
       pw: pw,
     );
     return result == null ? <Resource>[] : <Resource>[result];
@@ -525,7 +526,7 @@ class FhirDb {
         resource.id != null) {
       return _deleteById(
         resourceType: resource.resourceType!,
-        id: resource.id!.value!,
+        id: resource.id!.toString(),
         pw: pw,
       );
     } else if (resourceType != null && id != null) {

@@ -1,4 +1,5 @@
-part of 'billing.dart';
+
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum InvoiceStatus {
   @JsonValue('draft')

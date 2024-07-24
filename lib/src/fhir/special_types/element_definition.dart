@@ -2493,7 +2493,8 @@ class ElementDefinition with _$ElementDefinition implements BackboneType {
     List<ElementDefinitionRepresentation>? representation,
 
     /// [representationElement] ("_representation") Extensions for representation
-    @JsonKey(name: '_representation') List<Element>? representationElement,
+    @JsonKey(name: '_representation')
+    List<PrimitiveElement>? representationElement,
 
     /// [sliceName] The name of this element definition slice, when slicing is
     ///  working. The name must be a token with no dots or spaces. This is a unique
@@ -2578,7 +2579,7 @@ class ElementDefinition with _$ElementDefinition implements BackboneType {
     List<String>? alias,
 
     /// [aliasElement] ("_alias") Extensions for alias
-    @JsonKey(name: '_alias') List<Element>? aliasElement,
+    @JsonKey(name: '_alias') List<PrimitiveElement>? aliasElement,
 
     /// [min] The minimum number of times this element SHALL appear in the instance.
     FhirUnsignedInt? min,
@@ -5165,7 +5166,7 @@ class ElementDefinition with _$ElementDefinition implements BackboneType {
     List<FhirId>? condition,
 
     /// [conditionElement] ("_condition") Extensions for condition
-    @JsonKey(name: '_condition') List<Element>? conditionElement,
+    @JsonKey(name: '_condition') List<PrimitiveElement>? conditionElement,
 
     /// [constraint] Formal constraints such as co-occurrence and other constraints
     ///  that can be computationally evaluated within the context of the instance.
@@ -5272,7 +5273,9 @@ class ElementDefinition with _$ElementDefinition implements BackboneType {
 /// [ElementDefinitionSlicing] Captures constraints on each element within the
 ///  resource, profile, or extension.
 @freezed
-class ElementDefinitionSlicing with _$ElementDefinitionSlicing implements Element {
+class ElementDefinitionSlicing
+    with _$ElementDefinitionSlicing
+    implements Element {
   /// [ElementDefinitionSlicing] Captures constraints on each element within the
   ///  resource, profile, or extension.
   const ElementDefinitionSlicing._();
@@ -5429,7 +5432,8 @@ class ElementDefinitionSlicing with _$ElementDefinitionSlicing implements Elemen
 ///  within the resource, profile, or extension.
 @freezed
 class ElementDefinitionDiscriminator
-    with _$ElementDefinitionDiscriminator implements Element{
+    with _$ElementDefinitionDiscriminator
+    implements Element {
   /// [ElementDefinitionDiscriminator] Captures constraints on each element
   ///  within the resource, profile, or extension.
   const ElementDefinitionDiscriminator._();
@@ -5556,7 +5560,7 @@ class ElementDefinitionDiscriminator
 /// [ElementDefinitionBase] Captures constraints on each element within the
 ///  resource, profile, or extension.
 @freezed
-class ElementDefinitionBase with  _$ElementDefinitionBase implements Element{
+class ElementDefinitionBase with _$ElementDefinitionBase implements Element {
   /// [ElementDefinitionBase] Captures constraints on each element within the
   ///  resource, profile, or extension.
   const ElementDefinitionBase._();
@@ -5691,7 +5695,7 @@ class ElementDefinitionBase with  _$ElementDefinitionBase implements Element{
 /// [ElementDefinitionType] Captures constraints on each element within the
 ///  resource, profile, or extension.
 @freezed
-class ElementDefinitionType with  _$ElementDefinitionType implements Element {
+class ElementDefinitionType with _$ElementDefinitionType implements Element {
   /// [ElementDefinitionType] Captures constraints on each element within the
   ///  resource, profile, or extension.
   const ElementDefinitionType._();
@@ -5804,7 +5808,7 @@ class ElementDefinitionType with  _$ElementDefinitionType implements Element {
     ///  canonical URL. When an implementation guide is specified, the type SHALL
     ///  conform to at least one profile defined in the implementation guide.
     List<FhirCanonical>? profile,
-    @JsonKey(name: '_profile') List<Element>? profileElement,
+    @JsonKey(name: '_profile') List<PrimitiveElement>? profileElement,
 
     /// [targetProfile] Used when the type is "Reference" or "canonical", and
     ///  identifies a profile structure or implementation Guide that applies to the
@@ -5823,7 +5827,7 @@ class ElementDefinitionType with  _$ElementDefinitionType implements Element {
     ElementDefinitionTypeAggregation? aggregation,
 
     /// [aggregationElement] ("_aggregation") Extensions for aggregation
-    @JsonKey(name: '_aggregation') List<Element>? aggregationElement,
+    @JsonKey(name: '_aggregation') List<PrimitiveElement>? aggregationElement,
 
     /// [versioning] Whether this reference needs to be version specific or version
     ///  independent, or whether either can be used.
@@ -5873,7 +5877,9 @@ class ElementDefinitionType with  _$ElementDefinitionType implements Element {
 /// [ElementDefinitionExample] Captures constraints on each element within the
 ///  resource, profile, or extension.
 @freezed
-class ElementDefinitionExample with _$ElementDefinitionExample implements Element{
+class ElementDefinitionExample
+    with _$ElementDefinitionExample
+    implements Element {
   /// [ElementDefinitionExample] Captures constraints on each element within the
   ///  resource, profile, or extension.
   const ElementDefinitionExample._();
@@ -6469,7 +6475,9 @@ class ElementDefinitionExample with _$ElementDefinitionExample implements Elemen
 /// [ElementDefinitionConstraint] Captures constraints on each element within
 ///  the resource, profile, or extension.
 @freezed
-class ElementDefinitionConstraint with _$ElementDefinitionConstraint implements Element{
+class ElementDefinitionConstraint
+    with _$ElementDefinitionConstraint
+    implements Element {
   /// [ElementDefinitionConstraint] Captures constraints on each element within
   ///  the resource, profile, or extension.
   const ElementDefinitionConstraint._();
@@ -6650,7 +6658,9 @@ class ElementDefinitionConstraint with _$ElementDefinitionConstraint implements 
 /// [ElementDefinitionBinding] Captures constraints on each element within the
 ///  resource, profile, or extension.
 @freezed
-class ElementDefinitionBinding with _$ElementDefinitionBinding implements Element{
+class ElementDefinitionBinding
+    with _$ElementDefinitionBinding
+    implements Element {
   /// [ElementDefinitionBinding] Captures constraints on each element within the
   ///  resource, profile, or extension.
   const ElementDefinitionBinding._();
@@ -6789,7 +6799,9 @@ class ElementDefinitionBinding with _$ElementDefinitionBinding implements Elemen
 /// [ElementDefinitionAdditional] Captures constraints on each element within
 ///  the resource, profile, or extension.
 @freezed
-class ElementDefinitionAdditional with  _$ElementDefinitionAdditional implements Element{
+class ElementDefinitionAdditional
+    with _$ElementDefinitionAdditional
+    implements Element {
   /// [ElementDefinitionAdditional] Captures constraints on each element within
   ///  the resource, profile, or extension.
   const ElementDefinitionAdditional._();
@@ -6951,7 +6963,9 @@ class ElementDefinitionAdditional with  _$ElementDefinitionAdditional implements
 /// [ElementDefinitionMapping] Captures constraints on each element within the
 ///  resource, profile, or extension.
 @freezed
-class ElementDefinitionMapping with _$ElementDefinitionMapping implements Element{
+class ElementDefinitionMapping
+    with _$ElementDefinitionMapping
+    implements Element {
   /// [ElementDefinitionMapping] Captures constraints on each element within the
   ///  resource, profile, or extension.
   const ElementDefinitionMapping._();

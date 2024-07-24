@@ -10,7 +10,7 @@ Future<void> fhirUriTest() async {
       final FhirRequest request = FhirRequest.read(
         base: Uri.parse('http://hapi.fhir.org/baseR5'),
         type: R5ResourceType.Patient,
-        id: '12345',
+        id: FhirId('12345'),
         pretty: false,
       );
       expect(request, FhirRequest.fromJson(request.toJson()));
@@ -26,7 +26,7 @@ Future<void> fhirUriTest() async {
       final FhirRequest request = FhirRequest.read(
         base: Uri.parse('http://hapi.fhir.org/baseR5'),
         type: R5ResourceType.Patient,
-        id: '12345',
+        id: FhirId('12345'),
         pretty: true,
       );
       expect(request, FhirRequest.fromJson(request.toJson()));
@@ -42,7 +42,7 @@ Future<void> fhirUriTest() async {
       final FhirRequest request = FhirRequest.read(
         base: Uri.parse('http://hapi.fhir.org/baseR5'),
         type: R5ResourceType.Patient,
-        id: '12345',
+        id: FhirId('12345'),
         pretty: true,
         summary: Summary.true_,
       );
@@ -59,7 +59,7 @@ Future<void> fhirUriTest() async {
       final FhirRequest request = FhirRequest.read(
         base: Uri.parse('http://hapi.fhir.org/baseR5'),
         type: R5ResourceType.Patient,
-        id: '12345',
+        id: FhirId('12345'),
         pretty: false,
         summary: Summary.count,
       );
@@ -76,7 +76,7 @@ Future<void> fhirUriTest() async {
       final FhirRequest request = FhirRequest.read(
         base: Uri.parse('http://hapi.fhir.org/baseR5'),
         type: R5ResourceType.Patient,
-        id: '1227442',
+        id: FhirId('1227442'),
         pretty: true,
         elements: <String>['name'],
       );
@@ -94,7 +94,7 @@ Future<void> fhirUriTest() async {
       final FhirRequest request = FhirRequest.read(
         base: Uri.parse('http://hapi.fhir.org/baseR5'),
         type: R5ResourceType.Patient,
-        id: '1227442',
+        id: FhirId('1227442'),
         pretty: true,
         elements: <String>['name', 'gender'],
       );
@@ -113,7 +113,7 @@ Future<void> fhirUriTest() async {
       final FhirRequest request = FhirRequest.vRead(
         base: Uri.parse('http://hapi.fhir.org/baseR5'),
         type: R5ResourceType.Patient,
-        id: '12345',
+        id: FhirId('12345'),
         pretty: false,
         vid: FhirId('6789'),
       );
@@ -130,7 +130,7 @@ Future<void> fhirUriTest() async {
       final FhirRequest request = FhirRequest.vRead(
         base: Uri.parse('http://hapi.fhir.org/baseR5'),
         type: R5ResourceType.Patient,
-        id: '12345',
+        id: FhirId('12345'),
         vid: FhirId('6789'),
         pretty: true,
       );
@@ -147,7 +147,7 @@ Future<void> fhirUriTest() async {
       final FhirRequest request = FhirRequest.vRead(
         base: Uri.parse('http://hapi.fhir.org/baseR5'),
         type: R5ResourceType.Patient,
-        id: '12345',
+        id: FhirId('12345'),
         vid: FhirId('6789'),
         pretty: true,
         summary: Summary.true_,
@@ -165,7 +165,7 @@ Future<void> fhirUriTest() async {
       final FhirRequest request = FhirRequest.vRead(
         base: Uri.parse('http://hapi.fhir.org/baseR5'),
         type: R5ResourceType.Patient,
-        id: '12345',
+        id: FhirId('12345'),
         pretty: false,
         vid: FhirId('6789'),
         summary: Summary.count,
@@ -203,7 +203,7 @@ Future<void> fhirUriTest() async {
       final FhirRequest request = FhirRequest.history(
         base: Uri.parse('http://hapi.fhir.org/baseR5'),
         type: R5ResourceType.Observation,
-        id: '12345',
+        id: FhirId('12345'),
         pretty: false,
       );
       expect(request, FhirRequest.fromJson(request.toJson()));
@@ -253,7 +253,7 @@ Future<void> fhirUriTest() async {
       final FhirRequest request = FhirRequest.history(
         base: Uri.parse('http://hapi.fhir.org/baseR5'),
         type: R5ResourceType.Observation,
-        id: '12345',
+        id: FhirId('12345'),
         pretty: false,
         parameters: parameters,
       );
@@ -310,7 +310,7 @@ Future<void> fhirUriTest() async {
       final FhirRequest request = FhirRequest.delete(
         base: Uri.parse('http://hapi.fhir.org/baseR5'),
         type: R5ResourceType.Patient,
-        id: '12345',
+        id: FhirId('12345'),
         pretty: false,
       );
       expect(request, FhirRequest.fromJson(request.toJson()));
@@ -389,7 +389,7 @@ Future<void> fhirUriTest() async {
       final FhirRequest request = FhirRequest.operation(
         base: Uri.parse('http://hapi.fhir.org/baseR5'),
         type: R5ResourceType.Patient,
-        id: '744742',
+        id: FhirId('744742'),
         pretty: false,
         operation: 'everything',
         parameters: parameters,

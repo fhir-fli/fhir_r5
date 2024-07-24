@@ -1,5 +1,3 @@
-part of 'entities1.dart';
-
 // enum OrganizationRole {
 //   @JsonValue('provider')
 //   provider,
@@ -18,6 +16,8 @@ part of 'entities1.dart';
 //   @JsonValue('member')
 //   member,
 // }
+
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum EndpointStatus {
   @JsonValue('active')
@@ -69,7 +69,6 @@ enum EndpointStatus {
         return 'off';
       case EndpointStatus.enteredinerror:
         return 'entered-in-error';
-
     }
   }
 
@@ -126,7 +125,6 @@ enum EndpointEnvironment {
         return 'test';
       case EndpointEnvironment.train:
         return 'train';
-
     }
   }
 
@@ -171,7 +169,6 @@ enum LocationStatus {
         return 'suspended';
       case LocationStatus.inactive:
         return 'inactive';
-
     }
   }
 
@@ -210,7 +207,6 @@ enum LocationMode {
         return 'instance';
       case LocationMode.kind:
         return 'kind';
-
     }
   }
 

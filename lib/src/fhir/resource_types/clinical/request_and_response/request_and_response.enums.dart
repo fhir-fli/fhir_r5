@@ -1,4 +1,4 @@
-part of 'request_and_response.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum DevicedispenseStatus {
   @JsonValue('preparation')
@@ -74,7 +74,6 @@ enum DevicedispenseStatus {
         return 'declined';
       case DevicedispenseStatus.unknown:
         return 'unknown';
-
     }
   }
 
@@ -131,7 +130,6 @@ enum DeviceassociationStatus {
         return 'attached';
       case DeviceassociationStatus.unknown:
         return 'unknown';
-
     }
   }
 
@@ -188,7 +186,6 @@ enum DeviceassociationStatusReason {
         return 'placed';
       case DeviceassociationStatusReason.replaced:
         return 'replaced';
-
     }
   }
 
@@ -245,7 +242,6 @@ enum DeviceassociationOperationstatus {
         return 'defective';
       case DeviceassociationOperationstatus.unknown:
         return 'unknown';
-
     }
   }
 
@@ -314,7 +310,6 @@ enum DeviceusageStatus {
         return 'stopped';
       case DeviceusageStatus.onhold:
         return 'on-hold';
-
     }
   }
 
@@ -359,7 +354,6 @@ enum DeviceusageAdherenceCode {
         return 'never';
       case DeviceusageAdherenceCode.sometimes:
         return 'sometimes';
-
     }
   }
 
@@ -422,7 +416,6 @@ enum DeviceusageAdherenceReason {
         return 'burned';
       case DeviceusageAdherenceReason.forgot:
         return 'forgot';
-
     }
   }
 
@@ -485,7 +478,6 @@ enum GuidanceModuleCode {
         return 'chf-pathway';
       case GuidanceModuleCode.covid19severity:
         return 'covid-19-severity';
-
     }
   }
 
@@ -548,7 +540,6 @@ enum GuidanceResponseStatus {
         return 'failure';
       case GuidanceResponseStatus.enteredinerror:
         return 'entered-in-error';
-
     }
   }
 
@@ -617,7 +608,6 @@ enum SupplyrequestStatus {
         return 'entered-in-error';
       case SupplyrequestStatus.unknown:
         return 'unknown';
-
     }
   }
 
@@ -668,7 +658,6 @@ enum SupplydeliveryStatus {
         return 'abandoned';
       case SupplydeliveryStatus.enteredinerror:
         return 'entered-in-error';
-
     }
   }
 
@@ -713,7 +702,6 @@ enum SupplydeliverySupplyitemtype {
         return 'device';
       case SupplydeliverySupplyitemtype.biologicallyderivedproduct:
         return 'biologicallyderivedproduct';
-
     }
   }
 
@@ -764,7 +752,6 @@ enum InventoryitemStatus {
         return 'entered-in-error';
       case InventoryitemStatus.unknown:
         return 'unknown';
-
     }
   }
 
@@ -815,7 +802,6 @@ enum InventoryitemNametype {
         return 'original-name';
       case InventoryitemNametype.preferred:
         return 'preferred';
-
     }
   }
 
@@ -866,7 +852,6 @@ enum InventoryreportStatus {
         return 'active';
       case InventoryreportStatus.enteredinerror:
         return 'entered-in-error';
-
     }
   }
 
@@ -905,7 +890,6 @@ enum InventoryreportCounttype {
         return 'snapshot';
       case InventoryreportCounttype.difference:
         return 'difference';
-
     }
   }
 

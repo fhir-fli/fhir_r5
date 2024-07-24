@@ -18,7 +18,7 @@ _$TimingImpl _$$TimingImplFromJson(Map<String, dynamic> json) => _$TimingImpl(
           ?.map((e) => FhirDateTime.fromJson(e as String))
           .toList(),
       eventElement: (json['_event'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       repeat: json['repeat'] == null
           ? null
@@ -137,19 +137,19 @@ _$TimingRepeatImpl _$$TimingRepeatImplFromJson(Map<String, dynamic> json) =>
           ?.map((e) => $enumDecode(_$DaysOfWeekEnumMap, e))
           .toList(),
       dayOfWeekElement: (json['_dayOfWeek'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       timeOfDay: (json['timeOfDay'] as List<dynamic>?)
           ?.map(FhirTime.fromJson)
           .toList(),
       timeOfDayElement: (json['_timeOfDay'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       when: (json['when'] as List<dynamic>?)
           ?.map((e) => $enumDecode(_$TimingRepeatWhenEnumMap, e))
           .toList(),
       whenElement: (json['_when'] as List<dynamic>?)
-          ?.map((e) => Element.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => PrimitiveElement.fromJson(e as Map<String, dynamic>))
           .toList(),
       offset: json['offset'] == null
           ? null

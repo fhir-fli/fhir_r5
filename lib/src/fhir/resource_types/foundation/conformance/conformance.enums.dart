@@ -1,4 +1,4 @@
-part of 'conformance.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 enum FhirVersion {
   @JsonValue('0.01')
@@ -158,7 +158,6 @@ enum FhirVersion {
         return '4.6';
       case FhirVersion.v5_0:
         return '5.0';
-
     }
   }
 
@@ -197,7 +196,6 @@ enum RestfulCapabilityMode {
         return 'client';
       case RestfulCapabilityMode.server:
         return 'server';
-
     }
   }
 
@@ -260,7 +258,6 @@ enum RestfulSecurityService {
         return 'Kerberos';
       case RestfulSecurityService.certificates:
         return 'Certificates';
-
     }
   }
 
@@ -305,7 +302,6 @@ enum VersioningPolicy {
         return 'versioned';
       case VersioningPolicy.versionedupdate:
         return 'versioned-update';
-
     }
   }
 
@@ -356,7 +352,6 @@ enum ConditionalReadStatus {
         return 'not-match';
       case ConditionalReadStatus.fullsupport:
         return 'full-support';
-
     }
   }
 
@@ -401,7 +396,6 @@ enum ConditionalDeleteStatus {
         return 'single';
       case ConditionalDeleteStatus.multiple:
         return 'multiple';
-
     }
   }
 
@@ -458,7 +452,6 @@ enum ReferenceHandlingPolicy {
         return 'enforced';
       case ReferenceHandlingPolicy.local:
         return 'local';
-
     }
   }
 
@@ -539,7 +532,6 @@ enum SearchParamType {
         return 'uri';
       case SearchParamType.special:
         return 'special';
-
     }
   }
 
@@ -584,7 +576,6 @@ enum MessageTransport {
         return 'ftp';
       case MessageTransport.mllp:
         return 'mllp';
-
     }
   }
 
@@ -623,7 +614,6 @@ enum EventCapabilityMode {
         return 'sender';
       case EventCapabilityMode.receiver:
         return 'receiver';
-
     }
   }
 
@@ -662,7 +652,6 @@ enum DocumentMode {
         return 'producer';
       case DocumentMode.consumer:
         return 'consumer';
-
     }
   }
 
@@ -713,7 +702,6 @@ enum StructureDefinitionKind {
         return 'resource';
       case StructureDefinitionKind.logical:
         return 'logical';
-
     }
   }
 
@@ -758,7 +746,6 @@ enum ExtensionContextType {
         return 'element';
       case ExtensionContextType.extension:
         return 'extension';
-
     }
   }
 
@@ -797,7 +784,6 @@ enum TypeDerivationRule {
         return 'specialization';
       case TypeDerivationRule.constraint:
         return 'constraint';
-
     }
   }
 
@@ -2900,7 +2886,6 @@ enum SpdxLicense {
         return 'ZPL-2.0';
       case SpdxLicense.zpl21:
         return 'ZPL-2.1';
-
     }
   }
 
@@ -2951,7 +2936,6 @@ enum GuidePageGeneration {
         return 'xml';
       case GuidePageGeneration.generated:
         return 'generated';
-
     }
   }
 
@@ -3038,7 +3022,6 @@ enum GuideParameterCode {
         return 'generate-turtle';
       case GuideParameterCode.htmltemplate:
         return 'html-template';
-
     }
   }
 
@@ -3083,7 +3066,6 @@ enum SearchProcessingmode {
         return 'phonetic';
       case SearchProcessingmode.other:
         return 'other';
-
     }
   }
 
@@ -3128,7 +3110,6 @@ enum MessageSignificanceCategory {
         return 'currency';
       case MessageSignificanceCategory.notification:
         return 'notification';
-
     }
   }
 
@@ -3179,7 +3160,6 @@ enum MessageheaderResponseRequest {
         return 'never';
       case MessageheaderResponseRequest.onsuccess:
         return 'on-success';
-
     }
   }
 
@@ -3218,7 +3198,6 @@ enum OperationKind {
         return 'operation';
       case OperationKind.query:
         return 'query';
-
     }
   }
 
@@ -3257,7 +3236,6 @@ enum OperationParameterUse {
         return 'in';
       case OperationParameterUse.out:
         return 'out';
-
     }
   }
 
@@ -3302,7 +3280,6 @@ enum OperationParameterScope {
         return 'type';
       case OperationParameterScope.system:
         return 'system';
-
     }
   }
 
@@ -3353,7 +3330,6 @@ enum BindingStrength {
         return 'preferred';
       case BindingStrength.example:
         return 'example';
-
     }
   }
 
@@ -3416,7 +3392,6 @@ enum CompartmentType {
         return 'Device';
       case CompartmentType.episodeofcare:
         return 'EpisodeOfCare';
-
     }
   }
 
@@ -3467,7 +3442,6 @@ enum MapModelMode {
         return 'target';
       case MapModelMode.produced:
         return 'produced';
-
     }
   }
 
@@ -3506,7 +3480,6 @@ enum MapGroupTypeMode {
         return 'types';
       case MapGroupTypeMode.typeandtypes:
         return 'type-and-types';
-
     }
   }
 
@@ -3545,7 +3518,6 @@ enum MapInputMode {
         return 'source';
       case MapInputMode.target:
         return 'target';
-
     }
   }
 
@@ -3602,7 +3574,6 @@ enum MapSourceListMode {
         return 'not_last';
       case MapSourceListMode.onlyone:
         return 'only_one';
-
     }
   }
 
@@ -3653,7 +3624,6 @@ enum MapTargetListMode {
         return 'last';
       case MapTargetListMode.single:
         return 'single';
-
     }
   }
 
@@ -3782,7 +3752,6 @@ enum MapTransform {
         return 'id';
       case MapTransform.cp:
         return 'cp';
-
     }
   }
 
@@ -3821,7 +3790,6 @@ enum GraphCompartmentUse {
         return 'where';
       case GraphCompartmentUse.requires:
         return 'requires';
-
     }
   }
 
@@ -3872,7 +3840,6 @@ enum GraphCompartmentRule {
         return 'different';
       case GraphCompartmentRule.custom:
         return 'custom';
-
     }
   }
 

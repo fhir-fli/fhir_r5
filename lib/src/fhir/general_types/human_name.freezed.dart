@@ -62,7 +62,8 @@ mixin _$HumanName {
 
   /// [givenElement] ("_given") Extensions for given
   @JsonKey(name: '_given')
-  List<Element>? get givenElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get givenElement =>
+      throw _privateConstructorUsedError;
 
   /// [prefix] Part of the name that is acquired as a title due to academic,
   ///  legal, employment or nobility status, etc. and that appears at the start
@@ -71,7 +72,8 @@ mixin _$HumanName {
 
   /// [prefixElement] ("_prefix") Extensions for prefix
   @JsonKey(name: '_prefix')
-  List<Element>? get prefixElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get prefixElement =>
+      throw _privateConstructorUsedError;
 
   /// [suffix] Part of the name that is acquired as a title due to academic,
   ///  legal, employment or nobility status, etc. and that appears at the end of
@@ -80,14 +82,19 @@ mixin _$HumanName {
 
   /// [suffixElement] ("_suffix") Extensions for suffix
   @JsonKey(name: '_suffix')
-  List<Element>? get suffixElement => throw _privateConstructorUsedError;
+  List<PrimitiveElement>? get suffixElement =>
+      throw _privateConstructorUsedError;
 
   /// [period] Indicates the period of time when this name was valid for the
   ///  named person.
   Period? get period => throw _privateConstructorUsedError;
 
+  /// Serializes this HumanName to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of HumanName
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $HumanNameCopyWith<HumanName> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -107,11 +114,11 @@ abstract class $HumanNameCopyWith<$Res> {
       String? family,
       @JsonKey(name: '_family') PrimitiveElement? familyElement,
       List<String>? given,
-      @JsonKey(name: '_given') List<Element>? givenElement,
+      @JsonKey(name: '_given') List<PrimitiveElement>? givenElement,
       List<String>? prefix,
-      @JsonKey(name: '_prefix') List<Element>? prefixElement,
+      @JsonKey(name: '_prefix') List<PrimitiveElement>? prefixElement,
       List<String>? suffix,
-      @JsonKey(name: '_suffix') List<Element>? suffixElement,
+      @JsonKey(name: '_suffix') List<PrimitiveElement>? suffixElement,
       Period? period});
 
   $PeriodCopyWith<$Res>? get period;
@@ -127,6 +134,8 @@ class _$HumanNameCopyWithImpl<$Res, $Val extends HumanName>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of HumanName
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -186,7 +195,7 @@ class _$HumanNameCopyWithImpl<$Res, $Val extends HumanName>
       givenElement: freezed == givenElement
           ? _value.givenElement
           : givenElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       prefix: freezed == prefix
           ? _value.prefix
           : prefix // ignore: cast_nullable_to_non_nullable
@@ -194,7 +203,7 @@ class _$HumanNameCopyWithImpl<$Res, $Val extends HumanName>
       prefixElement: freezed == prefixElement
           ? _value.prefixElement
           : prefixElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       suffix: freezed == suffix
           ? _value.suffix
           : suffix // ignore: cast_nullable_to_non_nullable
@@ -202,7 +211,7 @@ class _$HumanNameCopyWithImpl<$Res, $Val extends HumanName>
       suffixElement: freezed == suffixElement
           ? _value.suffixElement
           : suffixElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       period: freezed == period
           ? _value.period
           : period // ignore: cast_nullable_to_non_nullable
@@ -210,6 +219,8 @@ class _$HumanNameCopyWithImpl<$Res, $Val extends HumanName>
     ) as $Val);
   }
 
+  /// Create a copy of HumanName
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get period {
@@ -241,11 +252,11 @@ abstract class _$$HumanNameImplCopyWith<$Res>
       String? family,
       @JsonKey(name: '_family') PrimitiveElement? familyElement,
       List<String>? given,
-      @JsonKey(name: '_given') List<Element>? givenElement,
+      @JsonKey(name: '_given') List<PrimitiveElement>? givenElement,
       List<String>? prefix,
-      @JsonKey(name: '_prefix') List<Element>? prefixElement,
+      @JsonKey(name: '_prefix') List<PrimitiveElement>? prefixElement,
       List<String>? suffix,
-      @JsonKey(name: '_suffix') List<Element>? suffixElement,
+      @JsonKey(name: '_suffix') List<PrimitiveElement>? suffixElement,
       Period? period});
 
   @override
@@ -260,6 +271,8 @@ class __$$HumanNameImplCopyWithImpl<$Res>
       _$HumanNameImpl _value, $Res Function(_$HumanNameImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of HumanName
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -319,7 +332,7 @@ class __$$HumanNameImplCopyWithImpl<$Res>
       givenElement: freezed == givenElement
           ? _value._givenElement
           : givenElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       prefix: freezed == prefix
           ? _value._prefix
           : prefix // ignore: cast_nullable_to_non_nullable
@@ -327,7 +340,7 @@ class __$$HumanNameImplCopyWithImpl<$Res>
       prefixElement: freezed == prefixElement
           ? _value._prefixElement
           : prefixElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       suffix: freezed == suffix
           ? _value._suffix
           : suffix // ignore: cast_nullable_to_non_nullable
@@ -335,7 +348,7 @@ class __$$HumanNameImplCopyWithImpl<$Res>
       suffixElement: freezed == suffixElement
           ? _value._suffixElement
           : suffixElement // ignore: cast_nullable_to_non_nullable
-              as List<Element>?,
+              as List<PrimitiveElement>?,
       period: freezed == period
           ? _value.period
           : period // ignore: cast_nullable_to_non_nullable
@@ -357,11 +370,11 @@ class _$HumanNameImpl extends _HumanName {
       this.family,
       @JsonKey(name: '_family') this.familyElement,
       final List<String>? given,
-      @JsonKey(name: '_given') final List<Element>? givenElement,
+      @JsonKey(name: '_given') final List<PrimitiveElement>? givenElement,
       final List<String>? prefix,
-      @JsonKey(name: '_prefix') final List<Element>? prefixElement,
+      @JsonKey(name: '_prefix') final List<PrimitiveElement>? prefixElement,
       final List<String>? suffix,
-      @JsonKey(name: '_suffix') final List<Element>? suffixElement,
+      @JsonKey(name: '_suffix') final List<PrimitiveElement>? suffixElement,
       this.period})
       : _extension_ = extension_,
         _given = given,
@@ -448,12 +461,12 @@ class _$HumanNameImpl extends _HumanName {
   }
 
   /// [givenElement] ("_given") Extensions for given
-  final List<Element>? _givenElement;
+  final List<PrimitiveElement>? _givenElement;
 
   /// [givenElement] ("_given") Extensions for given
   @override
   @JsonKey(name: '_given')
-  List<Element>? get givenElement {
+  List<PrimitiveElement>? get givenElement {
     final value = _givenElement;
     if (value == null) return null;
     if (_givenElement is EqualUnmodifiableListView) return _givenElement;
@@ -479,12 +492,12 @@ class _$HumanNameImpl extends _HumanName {
   }
 
   /// [prefixElement] ("_prefix") Extensions for prefix
-  final List<Element>? _prefixElement;
+  final List<PrimitiveElement>? _prefixElement;
 
   /// [prefixElement] ("_prefix") Extensions for prefix
   @override
   @JsonKey(name: '_prefix')
-  List<Element>? get prefixElement {
+  List<PrimitiveElement>? get prefixElement {
     final value = _prefixElement;
     if (value == null) return null;
     if (_prefixElement is EqualUnmodifiableListView) return _prefixElement;
@@ -510,12 +523,12 @@ class _$HumanNameImpl extends _HumanName {
   }
 
   /// [suffixElement] ("_suffix") Extensions for suffix
-  final List<Element>? _suffixElement;
+  final List<PrimitiveElement>? _suffixElement;
 
   /// [suffixElement] ("_suffix") Extensions for suffix
   @override
   @JsonKey(name: '_suffix')
-  List<Element>? get suffixElement {
+  List<PrimitiveElement>? get suffixElement {
     final value = _suffixElement;
     if (value == null) return null;
     if (_suffixElement is EqualUnmodifiableListView) return _suffixElement;
@@ -562,7 +575,7 @@ class _$HumanNameImpl extends _HumanName {
             (identical(other.period, period) || other.period == period));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -582,7 +595,9 @@ class _$HumanNameImpl extends _HumanName {
       const DeepCollectionEquality().hash(_suffixElement),
       period);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of HumanName
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$HumanNameImplCopyWith<_$HumanNameImpl> get copyWith =>
@@ -607,23 +622,21 @@ abstract class _HumanName extends HumanName {
       final String? family,
       @JsonKey(name: '_family') final PrimitiveElement? familyElement,
       final List<String>? given,
-      @JsonKey(name: '_given') final List<Element>? givenElement,
+      @JsonKey(name: '_given') final List<PrimitiveElement>? givenElement,
       final List<String>? prefix,
-      @JsonKey(name: '_prefix') final List<Element>? prefixElement,
+      @JsonKey(name: '_prefix') final List<PrimitiveElement>? prefixElement,
       final List<String>? suffix,
-      @JsonKey(name: '_suffix') final List<Element>? suffixElement,
+      @JsonKey(name: '_suffix') final List<PrimitiveElement>? suffixElement,
       final Period? period}) = _$HumanNameImpl;
   const _HumanName._() : super._();
 
   factory _HumanName.fromJson(Map<String, dynamic> json) =
       _$HumanNameImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -631,76 +644,80 @@ abstract class _HumanName extends HumanName {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [use] Identifies the purpose for this name.
-  HumanNameUse? get use;
   @override
+  HumanNameUse? get use;
 
   /// [useElement] ("_use") Extensions for use
+  @override
   @JsonKey(name: '_use')
   PrimitiveElement? get useElement;
-  @override
 
   /// [text] Specifies the entire name as it should be displayed e.g. on an
   ///  application UI. This may be provided instead of or as well as the specific
   ///  parts.
-  String? get text;
   @override
+  String? get text;
 
   /// [textElement] ("_text") Extensions for text
+  @override
   @JsonKey(name: '_text')
   PrimitiveElement? get textElement;
-  @override
 
   /// [family] The part of a name that links to the genealogy. In some cultures
   ///  (e.g. Eritrea) the family name of a son is the first name of his father.
-  String? get family;
   @override
+  String? get family;
 
   /// [familyElement] ("_family") Extensions for family
+  @override
   @JsonKey(name: '_family')
   PrimitiveElement? get familyElement;
-  @override
 
   /// [given] Given name.
-  List<String>? get given;
   @override
+  List<String>? get given;
 
   /// [givenElement] ("_given") Extensions for given
-  @JsonKey(name: '_given')
-  List<Element>? get givenElement;
   @override
+  @JsonKey(name: '_given')
+  List<PrimitiveElement>? get givenElement;
 
   /// [prefix] Part of the name that is acquired as a title due to academic,
   ///  legal, employment or nobility status, etc. and that appears at the start
   ///  of the name.
-  List<String>? get prefix;
   @override
+  List<String>? get prefix;
 
   /// [prefixElement] ("_prefix") Extensions for prefix
-  @JsonKey(name: '_prefix')
-  List<Element>? get prefixElement;
   @override
+  @JsonKey(name: '_prefix')
+  List<PrimitiveElement>? get prefixElement;
 
   /// [suffix] Part of the name that is acquired as a title due to academic,
   ///  legal, employment or nobility status, etc. and that appears at the end of
   ///  the name.
-  List<String>? get suffix;
   @override
+  List<String>? get suffix;
 
   /// [suffixElement] ("_suffix") Extensions for suffix
-  @JsonKey(name: '_suffix')
-  List<Element>? get suffixElement;
   @override
+  @JsonKey(name: '_suffix')
+  List<PrimitiveElement>? get suffixElement;
 
   /// [period] Indicates the period of time when this name was valid for the
   ///  named person.
-  Period? get period;
   @override
-  @JsonKey(ignore: true)
+  Period? get period;
+
+  /// Create a copy of HumanName
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$HumanNameImplCopyWith<_$HumanNameImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

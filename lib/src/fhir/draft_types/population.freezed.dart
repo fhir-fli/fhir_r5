@@ -98,8 +98,12 @@ mixin _$Population {
   CodeableConcept? get physiologicalCondition =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this Population to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Population
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $PopulationCopyWith<Population> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -137,6 +141,8 @@ class _$PopulationCopyWithImpl<$Res, $Val extends Population>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Population
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -185,6 +191,8 @@ class _$PopulationCopyWithImpl<$Res, $Val extends Population>
     ) as $Val);
   }
 
+  /// Create a copy of Population
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get ageRange {
@@ -197,6 +205,8 @@ class _$PopulationCopyWithImpl<$Res, $Val extends Population>
     });
   }
 
+  /// Create a copy of Population
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get ageCodeableConcept {
@@ -209,6 +219,8 @@ class _$PopulationCopyWithImpl<$Res, $Val extends Population>
     });
   }
 
+  /// Create a copy of Population
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get gender {
@@ -221,6 +233,8 @@ class _$PopulationCopyWithImpl<$Res, $Val extends Population>
     });
   }
 
+  /// Create a copy of Population
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get race {
@@ -233,6 +247,8 @@ class _$PopulationCopyWithImpl<$Res, $Val extends Population>
     });
   }
 
+  /// Create a copy of Population
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get physiologicalCondition {
@@ -285,6 +301,8 @@ class __$$PopulationImplCopyWithImpl<$Res>
       _$PopulationImpl _value, $Res Function(_$PopulationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Population
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -522,7 +540,7 @@ class _$PopulationImpl extends _Population {
                 other.physiologicalCondition == physiologicalCondition));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -535,7 +553,9 @@ class _$PopulationImpl extends _Population {
       race,
       physiologicalCondition);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Population
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PopulationImplCopyWith<_$PopulationImpl> get copyWith =>
@@ -564,14 +584,12 @@ abstract class _Population extends Population {
   factory _Population.fromJson(Map<String, dynamic> json) =
       _$PopulationImpl.fromJson;
 
+  /// [id] Unique id for the element within a resource (for internal
+  ///  references). This may be any string value that does not contain spaces.
+  /// [id] Unique id for the element within a resource (for internal
+  ///  references). This may be any string value that does not contain spaces.
   @override
-
-  /// [id] Unique id for the element within a resource (for internal
-  ///  references). This may be any string value that does not contain spaces.
-  /// [id] Unique id for the element within a resource (for internal
-  ///  references). This may be any string value that does not contain spaces.
   String? get id;
-  @override
 
   /// [extension_] ("extension") May be used to represent additional
   ///  information that is not part of the basic definition of the element.
@@ -588,9 +606,9 @@ abstract class _Population extends Population {
   ///  implementer can define an extension, there is a set of requirements
   ///  that
   ///  SHALL be met as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information
   ///  that is not part of the basic definition of the element and that
@@ -620,36 +638,40 @@ abstract class _Population extends Population {
   ///  DomainResource (including cannot change the meaning of
   ///  modifierExtension
   ///  itself).
+  @override
   List<FhirExtension>? get modifierExtension;
-  @override
 
   /// [ageRange] The age of the specific population.
   /// [ageRange] The age of the specific population.
+  @override
   Range? get ageRange;
-  @override
 
   /// [ageCodeableConcept] The age of the specific population.
   /// [ageCodeableConcept] The age of the specific population.
+  @override
   CodeableConcept? get ageCodeableConcept;
-  @override
 
   /// [gender] The gender of the specific population.
   /// [gender] The gender of the specific population.
+  @override
   CodeableConcept? get gender;
-  @override
 
   /// [race] Race of the specific population.
   /// [race] Race of the specific population.
+  @override
   CodeableConcept? get race;
-  @override
 
   /// [physiologicalCondition] The existing physiological conditions of the
   ///  specific population to which this applies.
   /// [physiologicalCondition] The existing physiological conditions of the
   ///  specific population to which this applies.
-  CodeableConcept? get physiologicalCondition;
   @override
-  @JsonKey(ignore: true)
+  CodeableConcept? get physiologicalCondition;
+
+  /// Create a copy of Population
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PopulationImplCopyWith<_$PopulationImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

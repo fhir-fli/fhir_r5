@@ -42,8 +42,12 @@ mixin _$RatioRange {
   /// [denominator] The value of the denominator.
   Quantity? get denominator => throw _privateConstructorUsedError;
 
+  /// Serializes this RatioRange to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of RatioRange
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $RatioRangeCopyWith<RatioRange> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -76,6 +80,8 @@ class _$RatioRangeCopyWithImpl<$Res, $Val extends RatioRange>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of RatioRange
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -109,6 +115,8 @@ class _$RatioRangeCopyWithImpl<$Res, $Val extends RatioRange>
     ) as $Val);
   }
 
+  /// Create a copy of RatioRange
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get lowNumerator {
@@ -121,6 +129,8 @@ class _$RatioRangeCopyWithImpl<$Res, $Val extends RatioRange>
     });
   }
 
+  /// Create a copy of RatioRange
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get highNumerator {
@@ -133,6 +143,8 @@ class _$RatioRangeCopyWithImpl<$Res, $Val extends RatioRange>
     });
   }
 
+  /// Create a copy of RatioRange
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get denominator {
@@ -177,6 +189,8 @@ class __$$RatioRangeImplCopyWithImpl<$Res>
       _$RatioRangeImpl _value, $Res Function(_$RatioRangeImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of RatioRange
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -288,7 +302,7 @@ class _$RatioRangeImpl extends _RatioRange {
                 other.denominator == denominator));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -298,7 +312,9 @@ class _$RatioRangeImpl extends _RatioRange {
       highNumerator,
       denominator);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of RatioRange
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$RatioRangeImplCopyWith<_$RatioRangeImpl> get copyWith =>
@@ -324,12 +340,10 @@ abstract class _RatioRange extends RatioRange {
   factory _RatioRange.fromJson(Map<String, dynamic> json) =
       _$RatioRangeImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -337,22 +351,26 @@ abstract class _RatioRange extends RatioRange {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [lowNumerator] The value of the low limit numerator.
-  Quantity? get lowNumerator;
   @override
+  Quantity? get lowNumerator;
 
   /// [highNumerator] The value of the high limit numerator.
-  Quantity? get highNumerator;
   @override
+  Quantity? get highNumerator;
 
   /// [denominator] The value of the denominator.
-  Quantity? get denominator;
   @override
-  @JsonKey(ignore: true)
+  Quantity? get denominator;
+
+  /// Create a copy of RatioRange
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$RatioRangeImplCopyWith<_$RatioRangeImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
