@@ -33,7 +33,7 @@ Future<void> _processFile(File file) async {
   // Find all matches
   final Iterable<RegExpMatch> matches = classRegExp.allMatches(inputContent);
 
-  final Map<String, StringBuffer> fileContents = {};
+  final Map<String, StringBuffer> fileContents = <String, StringBuffer>{};
 
   // Iterate over matches and group classes with their subclasses
   for (final RegExpMatch match in matches) {
