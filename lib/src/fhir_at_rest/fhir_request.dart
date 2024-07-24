@@ -1831,22 +1831,8 @@ class FhirRequest with _$FhirRequest {
             )
           ]);
         } else if (body['resourceType'] == 'OperationOutcome') {
-          OperationOutcome operationOutcome = OperationOutcome.fromJson(
+          return OperationOutcome.fromJson(
               body['response'] as Map<String, dynamic>);
-          if (body?['status'] != null || body?['message'] != null) {
-            operationOutcome = operationOutcome.copyWith(
-              issue: <OperationOutcomeIssue>[
-                if (operationOutcome.issue.isNotEmpty)
-                  ...operationOutcome.issue,
-                OperationOutcomeIssue(
-                    severity: FhirCode('error'),
-                    code: FhirCode('unknown'),
-                    diagnostics:
-                        'Status: ${body?['status']}\nMessage: ${body?['message']}\n'),
-              ],
-            );
-          }
-          return operationOutcome;
         } else {
           final Resource newResource = Resource.fromJson(
               jsonDecode(result.body) as Map<String, dynamic>);
