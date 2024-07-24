@@ -1,5 +1,5 @@
 import 'package:fhir_r5/fhir_r5.dart';
-import 'package:webauthdemo/create_new_patient.dart';
+import 'create_new_patient.dart';
 
 import 'ids.dart';
 
