@@ -134,12 +134,8 @@ mixin _$MolecularSequence {
   List<MolecularSequenceRelative>? get relative =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this MolecularSequence to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of MolecularSequence
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $MolecularSequenceCopyWith<MolecularSequence> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -194,8 +190,6 @@ class _$MolecularSequenceCopyWithImpl<$Res, $Val extends MolecularSequence>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of MolecularSequence
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -319,8 +313,6 @@ class _$MolecularSequenceCopyWithImpl<$Res, $Val extends MolecularSequence>
     ) as $Val);
   }
 
-  /// Create a copy of MolecularSequence
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -333,8 +325,6 @@ class _$MolecularSequenceCopyWithImpl<$Res, $Val extends MolecularSequence>
     });
   }
 
-  /// Create a copy of MolecularSequence
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -347,8 +337,6 @@ class _$MolecularSequenceCopyWithImpl<$Res, $Val extends MolecularSequence>
     });
   }
 
-  /// Create a copy of MolecularSequence
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get subject {
@@ -361,8 +349,6 @@ class _$MolecularSequenceCopyWithImpl<$Res, $Val extends MolecularSequence>
     });
   }
 
-  /// Create a copy of MolecularSequence
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get specimen {
@@ -375,8 +361,6 @@ class _$MolecularSequenceCopyWithImpl<$Res, $Val extends MolecularSequence>
     });
   }
 
-  /// Create a copy of MolecularSequence
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get device {
@@ -389,8 +373,6 @@ class _$MolecularSequenceCopyWithImpl<$Res, $Val extends MolecularSequence>
     });
   }
 
-  /// Create a copy of MolecularSequence
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get performer {
@@ -460,8 +442,6 @@ class __$$MolecularSequenceImplCopyWithImpl<$Res>
       $Res Function(_$MolecularSequenceImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of MolecularSequence
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -897,7 +877,7 @@ class _$MolecularSequenceImpl extends _MolecularSequence {
             const DeepCollectionEquality().equals(other._relative, _relative));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -926,9 +906,7 @@ class _$MolecularSequenceImpl extends _MolecularSequence {
         const DeepCollectionEquality().hash(_relative)
       ]);
 
-  /// Create a copy of MolecularSequence
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$MolecularSequenceImplCopyWith<_$MolecularSequenceImpl> get copyWith =>
@@ -976,42 +954,44 @@ abstract class _MolecularSequence extends MolecularSequence {
   factory _MolecularSequence.fromJson(Map<String, dynamic> json) =
       _$MolecularSequenceImpl.fromJson;
 
-  /// [resourceType] This is a MolecularSequence resource
   @override
+
+  /// [resourceType] This is a MolecularSequence resource
   @JsonKey(unknownEnumValue: R5ResourceType.MolecularSequence)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1019,16 +999,16 @@ abstract class _MolecularSequence extends MolecularSequence {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1036,9 +1016,9 @@ abstract class _MolecularSequence extends MolecularSequence {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1052,68 +1032,64 @@ abstract class _MolecularSequence extends MolecularSequence {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] A unique identifier for this particular sequence instance.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [type] Amino Acid Sequence/ DNA Sequence / RNA Sequence.
-  @override
   FhirCode? get type;
+  @override
 
   /// [typeElement] ("_type") Extensions for type
-  @override
   @JsonKey(name: '_type')
   PrimitiveElement? get typeElement;
+  @override
 
   /// [subject] Indicates the subject this sequence is associated too.
-  @override
   Reference? get subject;
+  @override
 
   /// [focus] The actual focus of a molecular sequence when it is not the patient
   ///  of record representing something or someone associated with the patient
   ///  such as a spouse, parent, child, or sibling. For example, in trio testing,
   ///  the subject would be the child (proband) and the focus would be the parent.
-  @override
   List<Reference>? get focus;
+  @override
 
   /// [specimen] Specimen used for sequencing.
-  @override
   Reference? get specimen;
+  @override
 
   /// [device] The method for sequencing, for example, chip information.
-  @override
   Reference? get device;
+  @override
 
   /// [performer] The organization or lab that should be responsible for this
   ///  result.
-  @override
   Reference? get performer;
+  @override
 
   /// [literal] Sequence that was observed.
-  @override
   String? get literal;
+  @override
 
   /// [literalElement] ("_literal") Extensions for literal
-  @override
   @JsonKey(name: '_literal')
   PrimitiveElement? get literalElement;
+  @override
 
   /// [formatted] Sequence that was observed as file content. Can be an actual
   ///  file contents, or referenced by a URL to an external system.
-  @override
   List<Attachment>? get formatted;
+  @override
 
   /// [relative] A sequence defined relative to another sequence.
-  @override
   List<MolecularSequenceRelative>? get relative;
-
-  /// Create a copy of MolecularSequence
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$MolecularSequenceImplCopyWith<_$MolecularSequenceImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1180,12 +1156,8 @@ mixin _$MolecularSequenceRelative {
   /// [edit] Changes in sequence from the starting sequence.
   List<MolecularSequenceEdit>? get edit => throw _privateConstructorUsedError;
 
-  /// Serializes this MolecularSequenceRelative to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of MolecularSequenceRelative
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $MolecularSequenceRelativeCopyWith<MolecularSequenceRelative> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1224,8 +1196,6 @@ class _$MolecularSequenceRelativeCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of MolecularSequenceRelative
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1279,8 +1249,6 @@ class _$MolecularSequenceRelativeCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of MolecularSequenceRelative
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get coordinateSystem {
@@ -1289,8 +1257,6 @@ class _$MolecularSequenceRelativeCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MolecularSequenceRelative
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get sequenceRange {
@@ -1303,8 +1269,6 @@ class _$MolecularSequenceRelativeCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MolecularSequenceRelative
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MolecularSequenceStartingSequenceCopyWith<$Res>? get startingSequence {
@@ -1358,8 +1322,6 @@ class __$$MolecularSequenceRelativeImplCopyWithImpl<$Res>
       $Res Function(_$MolecularSequenceRelativeImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of MolecularSequenceRelative
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1568,7 +1530,7 @@ class _$MolecularSequenceRelativeImpl extends _MolecularSequenceRelative {
             const DeepCollectionEquality().equals(other._edit, _edit));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1582,9 +1544,7 @@ class _$MolecularSequenceRelativeImpl extends _MolecularSequenceRelative {
       startingSequence,
       const DeepCollectionEquality().hash(_edit));
 
-  /// Create a copy of MolecularSequenceRelative
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$MolecularSequenceRelativeImplCopyWith<_$MolecularSequenceRelativeImpl>
@@ -1617,10 +1577,12 @@ abstract class _MolecularSequenceRelative extends MolecularSequenceRelative {
   factory _MolecularSequenceRelative.fromJson(Map<String, dynamic> json) =
       _$MolecularSequenceRelativeImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1628,9 +1590,9 @@ abstract class _MolecularSequenceRelative extends MolecularSequenceRelative {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1644,44 +1606,40 @@ abstract class _MolecularSequenceRelative extends MolecularSequenceRelative {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [coordinateSystem] These are different ways of identifying nucleotides or
   ///  amino acids within a sequence. Different databases and file types may use
   ///  different systems. For detail definitions, see https://loinc.org/92822-6/
   ///  for more detail.
-  @override
   CodeableConcept get coordinateSystem;
+  @override
 
   /// [ordinalPosition] Indicates the order in which the sequence should be
   ///  considered when putting multiple 'relative' elements together.
-  @override
   FhirInteger? get ordinalPosition;
+  @override
 
   /// [ordinalPositionElement] ("_ordinalPosition") Extensions for ordinalPosition
-  @override
   @JsonKey(name: '_ordinalPosition')
   PrimitiveElement? get ordinalPositionElement;
+  @override
 
   /// [sequenceRange] Indicates the nucleotide range in the composed sequence
   ///  when multiple 'relative' elements are used together.
-  @override
   Range? get sequenceRange;
+  @override
 
   /// [startingSequence] A sequence that is used as a starting sequence to
   ///  describe variants that are present in a sequence analyzed.
-  @override
   MolecularSequenceStartingSequence? get startingSequence;
+  @override
 
   /// [edit] Changes in sequence from the starting sequence.
-  @override
   List<MolecularSequenceEdit>? get edit;
-
-  /// Create a copy of MolecularSequenceRelative
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$MolecularSequenceRelativeImplCopyWith<_$MolecularSequenceRelativeImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1787,12 +1745,8 @@ mixin _$MolecularSequenceStartingSequence {
   @JsonKey(name: '_strand')
   PrimitiveElement? get strandElement => throw _privateConstructorUsedError;
 
-  /// Serializes this MolecularSequenceStartingSequence to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of MolecularSequenceStartingSequence
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $MolecularSequenceStartingSequenceCopyWith<MolecularSequenceStartingSequence>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1841,8 +1795,6 @@ class _$MolecularSequenceStartingSequenceCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of MolecularSequenceStartingSequence
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1936,8 +1888,6 @@ class _$MolecularSequenceStartingSequenceCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of MolecularSequenceStartingSequence
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get genomeAssembly {
@@ -1950,8 +1900,6 @@ class _$MolecularSequenceStartingSequenceCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MolecularSequenceStartingSequence
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get chromosome {
@@ -1964,8 +1912,6 @@ class _$MolecularSequenceStartingSequenceCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MolecularSequenceStartingSequence
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get sequenceCodeableConcept {
@@ -1979,8 +1925,6 @@ class _$MolecularSequenceStartingSequenceCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MolecularSequenceStartingSequence
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get sequenceReference {
@@ -2042,8 +1986,6 @@ class __$$MolecularSequenceStartingSequenceImplCopyWithImpl<$Res>
       $Res Function(_$MolecularSequenceStartingSequenceImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of MolecularSequenceStartingSequence
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2354,7 +2296,7 @@ class _$MolecularSequenceStartingSequenceImpl
                 other.strandElement == strandElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2376,9 +2318,7 @@ class _$MolecularSequenceStartingSequenceImpl
       strand,
       strandElement);
 
-  /// Create a copy of MolecularSequenceStartingSequence
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$MolecularSequenceStartingSequenceImplCopyWith<
@@ -2423,10 +2363,12 @@ abstract class _MolecularSequenceStartingSequence
           Map<String, dynamic> json) =
       _$MolecularSequenceStartingSequenceImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2434,9 +2376,9 @@ abstract class _MolecularSequenceStartingSequence
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2450,89 +2392,85 @@ abstract class _MolecularSequenceStartingSequence
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [genomeAssembly] The genome assembly used for starting sequence, e.g.
   ///  GRCh38.
-  @override
   CodeableConcept? get genomeAssembly;
+  @override
 
   /// [chromosome] Structural unit composed of a nucleic acid molecule which
   ///  controls its own replication through the interaction of specific proteins
   ///  at one or more origins of replication
   ///  ([SO:0000340](http://www.sequenceontology.org/browser/current_svn/term/SO:0000340)).
   ///
-  @override
   CodeableConcept? get chromosome;
+  @override
 
   /// [sequenceCodeableConcept] The reference sequence that represents the
   ///  starting sequence.
-  @override
   CodeableConcept? get sequenceCodeableConcept;
+  @override
 
   /// [sequenceString] The reference sequence that represents the starting
   ///  sequence.
-  @override
   String? get sequenceString;
+  @override
 
   /// [sequenceStringElement] ("_sequenceString") Extensions for sequenceString
-  @override
   @JsonKey(name: '_sequenceString')
   PrimitiveElement? get sequenceStringElement;
+  @override
 
   /// [sequenceReference] The reference sequence that represents the starting
   ///  sequence.
-  @override
   Reference? get sequenceReference;
+  @override
 
   /// [windowStart] Start position of the window on the starting sequence. This
   ///  value should honor the rules of the coordinateSystem.
-  @override
   FhirInteger? get windowStart;
+  @override
 
   /// [windowStartElement] ("_windowStart") Extensions for windowStart
-  @override
   @JsonKey(name: '_windowStart')
   PrimitiveElement? get windowStartElement;
+  @override
 
   /// [windowEnd] End position of the window on the starting sequence. This value
   ///  should honor the rules of the  coordinateSystem.
-  @override
   FhirInteger? get windowEnd;
+  @override
 
   /// [windowEndElement] ("_windowEnd") Extensions for windowEnd
-  @override
   @JsonKey(name: '_windowEnd')
   PrimitiveElement? get windowEndElement;
+  @override
 
   /// [orientation] A relative reference to a DNA strand based on gene
   ///  orientation. The strand that contains the open reading frame of the gene
   ///  is the "sense" strand, and the opposite complementary strand is the
   ///  "antisense" strand.
-  @override
   FhirCode? get orientation;
+  @override
 
   /// [orientationElement] ("_orientation") Extensions for orientation
-  @override
   @JsonKey(name: '_orientation')
   PrimitiveElement? get orientationElement;
+  @override
 
   /// [strand] An absolute reference to a strand. The Watson strand is the strand
   ///  whose 5'-end is on the short arm of the chromosome, and the Crick strand
   ///  as the one whose 5'-end is on the long arm.
-  @override
   FhirCode? get strand;
+  @override
 
   /// [strandElement] ("_strand") Extensions for strand
-  @override
   @JsonKey(name: '_strand')
   PrimitiveElement? get strandElement;
-
-  /// Create a copy of MolecularSequenceStartingSequence
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$MolecularSequenceStartingSequenceImplCopyWith<
           _$MolecularSequenceStartingSequenceImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2618,12 +2556,8 @@ mixin _$MolecularSequenceEdit {
   PrimitiveElement? get replacedSequenceElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this MolecularSequenceEdit to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of MolecularSequenceEdit
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $MolecularSequenceEditCopyWith<MolecularSequenceEdit> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2661,8 +2595,6 @@ class _$MolecularSequenceEditCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of MolecularSequenceEdit
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2761,8 +2693,6 @@ class __$$MolecularSequenceEditImplCopyWithImpl<$Res>
       $Res Function(_$MolecularSequenceEditImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of MolecularSequenceEdit
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2999,7 +2929,7 @@ class _$MolecularSequenceEditImpl extends _MolecularSequenceEdit {
                 other.replacedSequenceElement == replacedSequenceElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3015,9 +2945,7 @@ class _$MolecularSequenceEditImpl extends _MolecularSequenceEdit {
       replacedSequence,
       replacedSequenceElement);
 
-  /// Create a copy of MolecularSequenceEdit
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$MolecularSequenceEditImplCopyWith<_$MolecularSequenceEditImpl>
@@ -3053,10 +2981,12 @@ abstract class _MolecularSequenceEdit extends MolecularSequenceEdit {
   factory _MolecularSequenceEdit.fromJson(Map<String, dynamic> json) =
       _$MolecularSequenceEditImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3064,9 +2994,9 @@ abstract class _MolecularSequenceEdit extends MolecularSequenceEdit {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3080,64 +3010,60 @@ abstract class _MolecularSequenceEdit extends MolecularSequenceEdit {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [start] Start position of the edit on the starting sequence. If the
   ///  coordinate system is either 0-based or 1-based, then start position is
   ///  inclusive.
-  @override
   FhirInteger? get start;
+  @override
 
   /// [startElement] ("_start") Extensions for start
-  @override
   @JsonKey(name: '_start')
   PrimitiveElement? get startElement;
+  @override
 
   /// [end] End position of the edit on the starting sequence. If the coordinate
   ///  system is 0-based then end is exclusive and does not include the last
   ///  position. If the coordinate system is 1-base, then end is inclusive and
   ///  includes the last position.
-  @override
   FhirInteger? get end;
+  @override
 
   /// [endElement] ("_end") Extensions for end
-  @override
   @JsonKey(name: '_end')
   PrimitiveElement? get endElement;
+  @override
 
   /// [replacementSequence] Allele that was observed. Nucleotide(s)/amino acids
   ///  from start position of sequence to stop position of sequence on the
   ///  positive (+) strand of the observed sequence. When the sequence type is
   ///  DNA, it should be the sequence on the positive (+) strand. This will lay
   ///  in the range between variant.start and variant.end.
-  @override
   String? get replacementSequence;
+  @override
 
   /// [replacementSequenceElement] ("_replacementSequence") Extensions for
   ///  replacementSequence
-  @override
   @JsonKey(name: '_replacementSequence')
   PrimitiveElement? get replacementSequenceElement;
+  @override
 
   /// [replacedSequence] Allele in the starting sequence. Nucleotide(s)/amino
   ///  acids from start position of sequence to stop position of sequence on the
   ///  positive (+) strand of the starting sequence. When the sequence  type is
   ///  DNA, it should be the sequence on the positive (+) strand. This will lay
   ///  in the range between variant.start and variant.end.
-  @override
   String? get replacedSequence;
+  @override
 
   /// [replacedSequenceElement] ("_replacedSequence") Extensions for
   ///  replacedSequence
-  @override
   @JsonKey(name: '_replacedSequence')
   PrimitiveElement? get replacedSequenceElement;
-
-  /// Create a copy of MolecularSequenceEdit
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$MolecularSequenceEditImplCopyWith<_$MolecularSequenceEditImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

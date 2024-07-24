@@ -125,12 +125,8 @@ mixin _$Permission {
   /// [rule] A set of rules.
   List<PermissionRule>? get rule => throw _privateConstructorUsedError;
 
-  /// Serializes this Permission to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Permission
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $PermissionCopyWith<Permission> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -182,8 +178,6 @@ class _$PermissionCopyWithImpl<$Res, $Val extends Permission>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Permission
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -297,8 +291,6 @@ class _$PermissionCopyWithImpl<$Res, $Val extends Permission>
     ) as $Val);
   }
 
-  /// Create a copy of Permission
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -311,8 +303,6 @@ class _$PermissionCopyWithImpl<$Res, $Val extends Permission>
     });
   }
 
-  /// Create a copy of Permission
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -325,8 +315,6 @@ class _$PermissionCopyWithImpl<$Res, $Val extends Permission>
     });
   }
 
-  /// Create a copy of Permission
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get asserter {
@@ -339,8 +327,6 @@ class _$PermissionCopyWithImpl<$Res, $Val extends Permission>
     });
   }
 
-  /// Create a copy of Permission
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get validity {
@@ -353,8 +339,6 @@ class _$PermissionCopyWithImpl<$Res, $Val extends Permission>
     });
   }
 
-  /// Create a copy of Permission
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PermissionJustificationCopyWith<$Res>? get justification {
@@ -421,8 +405,6 @@ class __$$PermissionImplCopyWithImpl<$Res>
       _$PermissionImpl _value, $Res Function(_$PermissionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Permission
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -820,7 +802,7 @@ class _$PermissionImpl extends _Permission {
             const DeepCollectionEquality().equals(other._rule, _rule));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -847,9 +829,7 @@ class _$PermissionImpl extends _Permission {
         const DeepCollectionEquality().hash(_rule)
       ]);
 
-  /// Create a copy of Permission
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$PermissionImplCopyWith<_$PermissionImpl> get copyWith =>
@@ -893,42 +873,44 @@ abstract class _Permission extends Permission {
   factory _Permission.fromJson(Map<String, dynamic> json) =
       _$PermissionImpl.fromJson;
 
-  /// [resourceType] This is a Permission resource
   @override
+
+  /// [resourceType] This is a Permission resource
   @JsonKey(unknownEnumValue: R5ResourceType.Permission)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -936,16 +918,16 @@ abstract class _Permission extends Permission {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -953,9 +935,9 @@ abstract class _Permission extends Permission {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -969,57 +951,53 @@ abstract class _Permission extends Permission {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [status] Status.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [asserter] The person or entity that asserts the permission.
-  @override
   Reference? get asserter;
+  @override
 
   /// [date] The date that permission was asserted.
-  @override
   List<FhirDateTime>? get date;
+  @override
 
   /// [dateElement] ("_date") Extensions for date
-  @override
   @JsonKey(name: '_date')
   List<PrimitiveElement>? get dateElement;
+  @override
 
   /// [validity] The period in which the permission is active.
-  @override
   Period? get validity;
+  @override
 
   /// [justification] The asserted justification for using the data.
-  @override
   PermissionJustification? get justification;
+  @override
 
   /// [combining] Defines a procedure for arriving at an access decision given
   ///  the set of rules.
-  @override
   FhirCode? get combining;
+  @override
 
   /// [combiningElement] ("_combining") Extensions for combining
-  @override
   @JsonKey(name: '_combining')
   PrimitiveElement? get combiningElement;
+  @override
 
   /// [rule] A set of rules.
-  @override
   List<PermissionRule>? get rule;
-
-  /// Create a copy of Permission
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$PermissionImplCopyWith<_$PermissionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1066,12 +1044,8 @@ mixin _$PermissionJustification {
   /// [evidence] Justifing rational.
   List<Reference>? get evidence => throw _privateConstructorUsedError;
 
-  /// Serializes this PermissionJustification to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of PermissionJustification
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $PermissionJustificationCopyWith<PermissionJustification> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1101,8 +1075,6 @@ class _$PermissionJustificationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of PermissionJustification
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1164,8 +1136,6 @@ class __$$PermissionJustificationImplCopyWithImpl<$Res>
       $Res Function(_$PermissionJustificationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of PermissionJustification
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1330,7 +1300,7 @@ class _$PermissionJustificationImpl extends _PermissionJustification {
             const DeepCollectionEquality().equals(other._evidence, _evidence));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1340,9 +1310,7 @@ class _$PermissionJustificationImpl extends _PermissionJustification {
       const DeepCollectionEquality().hash(_basis),
       const DeepCollectionEquality().hash(_evidence));
 
-  /// Create a copy of PermissionJustification
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$PermissionJustificationImplCopyWith<_$PermissionJustificationImpl>
@@ -1369,10 +1337,12 @@ abstract class _PermissionJustification extends PermissionJustification {
   factory _PermissionJustification.fromJson(Map<String, dynamic> json) =
       _$PermissionJustificationImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1380,9 +1350,9 @@ abstract class _PermissionJustification extends PermissionJustification {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1396,22 +1366,18 @@ abstract class _PermissionJustification extends PermissionJustification {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [basis] This would be a codeableconcept, or a coding, which can be
   ///  constrained to , for example, the 6 grounds for processing in GDPR.
-  @override
   List<CodeableConcept>? get basis;
+  @override
 
   /// [evidence] Justifing rational.
-  @override
   List<Reference>? get evidence;
-
-  /// Create a copy of PermissionJustification
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$PermissionJustificationImplCopyWith<_$PermissionJustificationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1468,12 +1434,8 @@ mixin _$PermissionRule {
   /// [limit] What limits apply to the use of the data.
   List<CodeableConcept>? get limit => throw _privateConstructorUsedError;
 
-  /// Serializes this PermissionRule to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of PermissionRule
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $PermissionRuleCopyWith<PermissionRule> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1505,8 +1467,6 @@ class _$PermissionRuleCopyWithImpl<$Res, $Val extends PermissionRule>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of PermissionRule
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1583,8 +1543,6 @@ class __$$PermissionRuleImplCopyWithImpl<$Res>
       _$PermissionRuleImpl _value, $Res Function(_$PermissionRuleImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of PermissionRule
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1796,7 +1754,7 @@ class _$PermissionRuleImpl extends _PermissionRule {
             const DeepCollectionEquality().equals(other._limit, _limit));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1809,9 +1767,7 @@ class _$PermissionRuleImpl extends _PermissionRule {
       const DeepCollectionEquality().hash(_activity),
       const DeepCollectionEquality().hash(_limit));
 
-  /// Create a copy of PermissionRule
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$PermissionRuleImplCopyWith<_$PermissionRuleImpl> get copyWith =>
@@ -1841,10 +1797,12 @@ abstract class _PermissionRule extends PermissionRule {
   factory _PermissionRule.fromJson(Map<String, dynamic> json) =
       _$PermissionRuleImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1852,9 +1810,9 @@ abstract class _PermissionRule extends PermissionRule {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1868,36 +1826,32 @@ abstract class _PermissionRule extends PermissionRule {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] deny | permit.
-  @override
   FhirCode? get type;
+  @override
 
   /// [typeElement] ("_type") Extensions for type
-  @override
   @JsonKey(name: '_type')
   PrimitiveElement? get typeElement;
+  @override
 
   /// [data] A description or definition of which activities are allowed to be
   ///  done on the data.
-  @override
   List<PermissionData>? get data;
+  @override
 
   /// [activity] A description or definition of which activities are allowed to
   ///  be done on the data.
-  @override
   List<PermissionActivity>? get activity;
+  @override
 
   /// [limit] What limits apply to the use of the data.
-  @override
   List<CodeableConcept>? get limit;
-
-  /// Create a copy of PermissionRule
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$PermissionRuleImplCopyWith<_$PermissionRuleImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1950,12 +1904,8 @@ mixin _$PermissionData {
   /// [expression] Used when other data selection elements are insufficient.
   FhirExpression? get expression => throw _privateConstructorUsedError;
 
-  /// Serializes this PermissionData to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of PermissionData
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $PermissionDataCopyWith<PermissionData> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1988,8 +1938,6 @@ class _$PermissionDataCopyWithImpl<$Res, $Val extends PermissionData>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of PermissionData
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2033,8 +1981,6 @@ class _$PermissionDataCopyWithImpl<$Res, $Val extends PermissionData>
     ) as $Val);
   }
 
-  /// Create a copy of PermissionData
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirExpressionCopyWith<$Res>? get expression {
@@ -2077,8 +2023,6 @@ class __$$PermissionDataImplCopyWithImpl<$Res>
       _$PermissionDataImpl _value, $Res Function(_$PermissionDataImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of PermissionData
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2278,7 +2222,7 @@ class _$PermissionDataImpl extends _PermissionData {
                 other.expression == expression));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2290,9 +2234,7 @@ class _$PermissionDataImpl extends _PermissionData {
       const DeepCollectionEquality().hash(_period),
       expression);
 
-  /// Create a copy of PermissionData
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$PermissionDataImplCopyWith<_$PermissionDataImpl> get copyWith =>
@@ -2321,10 +2263,12 @@ abstract class _PermissionData extends PermissionData {
   factory _PermissionData.fromJson(Map<String, dynamic> json) =
       _$PermissionDataImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2332,9 +2276,9 @@ abstract class _PermissionData extends PermissionData {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2348,31 +2292,27 @@ abstract class _PermissionData extends PermissionData {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [resource] Explicit FHIR Resource references.
-  @override
   List<PermissionResource>? get resource;
+  @override
 
   /// [security] The data in scope are those with the given codes present in that
   ///  data .meta.security element.
-  @override
   List<Coding>? get security;
+  @override
 
   /// [period] Clinical or Operational Relevant period of time that bounds the
   ///  data controlled by this rule.
-  @override
   List<Period>? get period;
+  @override
 
   /// [expression] Used when other data selection elements are insufficient.
-  @override
   FhirExpression? get expression;
-
-  /// Create a copy of PermissionData
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$PermissionDataImplCopyWith<_$PermissionDataImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2423,12 +2363,8 @@ mixin _$PermissionResource {
   ///  are covered by this consent.
   Reference get reference => throw _privateConstructorUsedError;
 
-  /// Serializes this PermissionResource to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of PermissionResource
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $PermissionResourceCopyWith<PermissionResource> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2460,8 +2396,6 @@ class _$PermissionResourceCopyWithImpl<$Res, $Val extends PermissionResource>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of PermissionResource
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2500,8 +2434,6 @@ class _$PermissionResourceCopyWithImpl<$Res, $Val extends PermissionResource>
     ) as $Val);
   }
 
-  /// Create a copy of PermissionResource
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get reference {
@@ -2539,8 +2471,6 @@ class __$$PermissionResourceImplCopyWithImpl<$Res>
       $Res Function(_$PermissionResourceImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of PermissionResource
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2699,7 +2629,7 @@ class _$PermissionResourceImpl extends _PermissionResource {
                 other.reference == reference));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2710,9 +2640,7 @@ class _$PermissionResourceImpl extends _PermissionResource {
       meaningElement,
       reference);
 
-  /// Create a copy of PermissionResource
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$PermissionResourceImplCopyWith<_$PermissionResourceImpl> get copyWith =>
@@ -2740,10 +2668,12 @@ abstract class _PermissionResource extends PermissionResource {
   factory _PermissionResource.fromJson(Map<String, dynamic> json) =
       _$PermissionResourceImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2751,9 +2681,9 @@ abstract class _PermissionResource extends PermissionResource {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2767,28 +2697,24 @@ abstract class _PermissionResource extends PermissionResource {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [meaning] How the resource reference is interpreted when testing consent
   ///  restrictions.
-  @override
   FhirCode? get meaning;
+  @override
 
   /// [meaningElement] ("_meaning") Extensions for meaning
-  @override
   @JsonKey(name: '_meaning')
   PrimitiveElement? get meaningElement;
+  @override
 
   /// [reference] A reference to a specific resource that defines which resources
   ///  are covered by this consent.
-  @override
   Reference get reference;
-
-  /// Create a copy of PermissionResource
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$PermissionResourceImplCopyWith<_$PermissionResourceImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2836,12 +2762,8 @@ mixin _$PermissionActivity {
   /// [purpose] The purpose for which the permission is given.
   List<CodeableConcept>? get purpose => throw _privateConstructorUsedError;
 
-  /// Serializes this PermissionActivity to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of PermissionActivity
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $PermissionActivityCopyWith<PermissionActivity> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2871,8 +2793,6 @@ class _$PermissionActivityCopyWithImpl<$Res, $Val extends PermissionActivity>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of PermissionActivity
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2937,8 +2857,6 @@ class __$$PermissionActivityImplCopyWithImpl<$Res>
       $Res Function(_$PermissionActivityImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of PermissionActivity
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3122,7 +3040,7 @@ class _$PermissionActivityImpl extends _PermissionActivity {
             const DeepCollectionEquality().equals(other._purpose, _purpose));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3133,9 +3051,7 @@ class _$PermissionActivityImpl extends _PermissionActivity {
       const DeepCollectionEquality().hash(_action),
       const DeepCollectionEquality().hash(_purpose));
 
-  /// Create a copy of PermissionActivity
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$PermissionActivityImplCopyWith<_$PermissionActivityImpl> get copyWith =>
@@ -3163,10 +3079,12 @@ abstract class _PermissionActivity extends PermissionActivity {
   factory _PermissionActivity.fromJson(Map<String, dynamic> json) =
       _$PermissionActivityImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3174,9 +3092,9 @@ abstract class _PermissionActivity extends PermissionActivity {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3190,25 +3108,21 @@ abstract class _PermissionActivity extends PermissionActivity {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [actor] The actor(s) authorized for the defined activity.
-  @override
   List<Reference>? get actor;
+  @override
 
   /// [action] Actions controlled by this Rule.
-  @override
   List<CodeableConcept>? get action;
+  @override
 
   /// [purpose] The purpose for which the permission is given.
-  @override
   List<CodeableConcept>? get purpose;
-
-  /// Create a copy of PermissionActivity
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$PermissionActivityImplCopyWith<_$PermissionActivityImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -148,12 +148,8 @@ mixin _$SupplyDelivery {
   ///  delivery.
   List<Reference>? get receiver => throw _privateConstructorUsedError;
 
-  /// Serializes this SupplyDelivery to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SupplyDelivery
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SupplyDeliveryCopyWith<SupplyDelivery> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -214,8 +210,6 @@ class _$SupplyDeliveryCopyWithImpl<$Res, $Val extends SupplyDelivery>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SupplyDelivery
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -354,8 +348,6 @@ class _$SupplyDeliveryCopyWithImpl<$Res, $Val extends SupplyDelivery>
     ) as $Val);
   }
 
-  /// Create a copy of SupplyDelivery
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -368,8 +360,6 @@ class _$SupplyDeliveryCopyWithImpl<$Res, $Val extends SupplyDelivery>
     });
   }
 
-  /// Create a copy of SupplyDelivery
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -382,8 +372,6 @@ class _$SupplyDeliveryCopyWithImpl<$Res, $Val extends SupplyDelivery>
     });
   }
 
-  /// Create a copy of SupplyDelivery
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get patient {
@@ -396,8 +384,6 @@ class _$SupplyDeliveryCopyWithImpl<$Res, $Val extends SupplyDelivery>
     });
   }
 
-  /// Create a copy of SupplyDelivery
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -410,8 +396,6 @@ class _$SupplyDeliveryCopyWithImpl<$Res, $Val extends SupplyDelivery>
     });
   }
 
-  /// Create a copy of SupplyDelivery
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get occurrencePeriod {
@@ -424,8 +408,6 @@ class _$SupplyDeliveryCopyWithImpl<$Res, $Val extends SupplyDelivery>
     });
   }
 
-  /// Create a copy of SupplyDelivery
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get occurrenceTiming {
@@ -438,8 +420,6 @@ class _$SupplyDeliveryCopyWithImpl<$Res, $Val extends SupplyDelivery>
     });
   }
 
-  /// Create a copy of SupplyDelivery
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get supplier {
@@ -452,8 +432,6 @@ class _$SupplyDeliveryCopyWithImpl<$Res, $Val extends SupplyDelivery>
     });
   }
 
-  /// Create a copy of SupplyDelivery
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get destination {
@@ -531,8 +509,6 @@ class __$$SupplyDeliveryImplCopyWithImpl<$Res>
       _$SupplyDeliveryImpl _value, $Res Function(_$SupplyDeliveryImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SupplyDelivery
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1019,7 +995,7 @@ class _$SupplyDeliveryImpl extends _SupplyDelivery {
             const DeepCollectionEquality().equals(other._receiver, _receiver));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1051,9 +1027,7 @@ class _$SupplyDeliveryImpl extends _SupplyDelivery {
         const DeepCollectionEquality().hash(_receiver)
       ]);
 
-  /// Create a copy of SupplyDelivery
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SupplyDeliveryImplCopyWith<_$SupplyDeliveryImpl> get copyWith =>
@@ -1104,42 +1078,44 @@ abstract class _SupplyDelivery extends SupplyDelivery {
   factory _SupplyDelivery.fromJson(Map<String, dynamic> json) =
       _$SupplyDeliveryImpl.fromJson;
 
-  /// [resourceType] This is a SupplyDelivery resource
   @override
+
+  /// [resourceType] This is a SupplyDelivery resource
   @JsonKey(unknownEnumValue: R5ResourceType.SupplyDelivery)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1147,16 +1123,16 @@ abstract class _SupplyDelivery extends SupplyDelivery {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1164,9 +1140,9 @@ abstract class _SupplyDelivery extends SupplyDelivery {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1180,84 +1156,80 @@ abstract class _SupplyDelivery extends SupplyDelivery {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] Identifier for the supply delivery event that is used to
   ///  identify it across multiple disparate systems.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [basedOn] A plan, proposal or order that is fulfilled in whole or in part
   ///  by this event.
-  @override
   List<Reference>? get basedOn;
+  @override
 
   /// [partOf] A larger event of which this particular event is a component or
   ///  step.
-  @override
   List<Reference>? get partOf;
+  @override
 
   /// [status] A code specifying the state of the dispense event.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [patient] A link to a resource representing the person whom the delivered
   ///  item is for.
-  @override
   Reference? get patient;
+  @override
 
   /// [type] Indicates the type of supply being provided.  Examples include:
   ///  Medication, Device, Biologically Derived Product.
-  @override
   CodeableConcept? get type;
+  @override
 
   /// [suppliedItem] The item that is being delivered or has been supplied.
-  @override
   List<SupplyDeliverySuppliedItem>? get suppliedItem;
+  @override
 
   /// [occurrenceDateTime] The date or time(s) the activity occurred.
-  @override
   FhirDateTime? get occurrenceDateTime;
+  @override
 
   /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
   ///  occurrenceDateTime
-  @override
   @JsonKey(name: '_occurrenceDateTime')
   PrimitiveElement? get occurrenceDateTimeElement;
+  @override
 
   /// [occurrencePeriod] The date or time(s) the activity occurred.
-  @override
   Period? get occurrencePeriod;
+  @override
 
   /// [occurrenceTiming] The date or time(s) the activity occurred.
-  @override
   Timing? get occurrenceTiming;
+  @override
 
   /// [supplier] The individual or organization responsible for supplying the
   ///  delivery.
-  @override
   Reference? get supplier;
+  @override
 
   /// [destination] Identification of the facility/location where the delivery
   ///  was shipped to.
-  @override
   Reference? get destination;
+  @override
 
   /// [receiver] Identifies the individual or organization that received the
   ///  delivery.
-  @override
   List<Reference>? get receiver;
-
-  /// Create a copy of SupplyDelivery
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SupplyDeliveryImplCopyWith<_$SupplyDeliveryImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1314,12 +1286,8 @@ mixin _$SupplyDeliverySuppliedItem {
   ///  the item from a known list.
   Reference? get itemReference => throw _privateConstructorUsedError;
 
-  /// Serializes this SupplyDeliverySuppliedItem to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SupplyDeliverySuppliedItem
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SupplyDeliverySuppliedItemCopyWith<SupplyDeliverySuppliedItem>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1355,8 +1323,6 @@ class _$SupplyDeliverySuppliedItemCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SupplyDeliverySuppliedItem
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1395,8 +1361,6 @@ class _$SupplyDeliverySuppliedItemCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SupplyDeliverySuppliedItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get quantity {
@@ -1409,8 +1373,6 @@ class _$SupplyDeliverySuppliedItemCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SupplyDeliverySuppliedItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get itemCodeableConcept {
@@ -1423,8 +1385,6 @@ class _$SupplyDeliverySuppliedItemCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SupplyDeliverySuppliedItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get itemReference {
@@ -1473,8 +1433,6 @@ class __$$SupplyDeliverySuppliedItemImplCopyWithImpl<$Res>
       $Res Function(_$SupplyDeliverySuppliedItemImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SupplyDeliverySuppliedItem
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1639,7 +1597,7 @@ class _$SupplyDeliverySuppliedItemImpl extends _SupplyDeliverySuppliedItem {
                 other.itemReference == itemReference));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1650,9 +1608,7 @@ class _$SupplyDeliverySuppliedItemImpl extends _SupplyDeliverySuppliedItem {
       itemCodeableConcept,
       itemReference);
 
-  /// Create a copy of SupplyDeliverySuppliedItem
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SupplyDeliverySuppliedItemImplCopyWith<_$SupplyDeliverySuppliedItemImpl>
@@ -1680,10 +1636,12 @@ abstract class _SupplyDeliverySuppliedItem extends SupplyDeliverySuppliedItem {
   factory _SupplyDeliverySuppliedItem.fromJson(Map<String, dynamic> json) =
       _$SupplyDeliverySuppliedItemImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1691,9 +1649,9 @@ abstract class _SupplyDeliverySuppliedItem extends SupplyDeliverySuppliedItem {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1707,32 +1665,28 @@ abstract class _SupplyDeliverySuppliedItem extends SupplyDeliverySuppliedItem {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [quantity] The amount of the item that has been supplied.  Unit of measure
   ///  may be included.
-  @override
   Quantity? get quantity;
+  @override
 
   /// [itemCodeableConcept] Identifies the medication, substance, device or
   ///  biologically derived product being supplied. This is either a link to a
   ///  resource representing the details of the item or a code that identifies
   ///  the item from a known list.
-  @override
   CodeableConcept? get itemCodeableConcept;
+  @override
 
   /// [itemReference] Identifies the medication, substance, device or
   ///  biologically derived product being supplied. This is either a link to a
   ///  resource representing the details of the item or a code that identifies
   ///  the item from a known list.
-  @override
   Reference? get itemReference;
-
-  /// Create a copy of SupplyDeliverySuppliedItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SupplyDeliverySuppliedItemImplCopyWith<_$SupplyDeliverySuppliedItemImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

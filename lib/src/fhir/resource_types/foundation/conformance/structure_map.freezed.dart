@@ -257,12 +257,8 @@ mixin _$StructureMap {
   ///  of maintenance.
   List<StructureMapGroup> get group => throw _privateConstructorUsedError;
 
-  /// Serializes this StructureMap to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of StructureMap
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $StructureMapCopyWith<StructureMap> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -338,8 +334,6 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of StructureMap
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -578,8 +572,6 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
     ) as $Val);
   }
 
-  /// Create a copy of StructureMap
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -592,8 +584,6 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
     });
   }
 
-  /// Create a copy of StructureMap
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -606,8 +596,6 @@ class _$StructureMapCopyWithImpl<$Res, $Val extends StructureMap>
     });
   }
 
-  /// Create a copy of StructureMap
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get versionAlgorithmCoding {
@@ -695,8 +683,6 @@ class __$$StructureMapImplCopyWithImpl<$Res>
       _$StructureMapImpl _value, $Res Function(_$StructureMapImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of StructureMap
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1501,7 +1487,7 @@ class _$StructureMapImpl extends _StructureMap {
             const DeepCollectionEquality().equals(other._group, _group));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1553,9 +1539,7 @@ class _$StructureMapImpl extends _StructureMap {
         const DeepCollectionEquality().hash(_group)
       ]);
 
-  /// Create a copy of StructureMap
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$StructureMapImplCopyWith<_$StructureMapImpl> get copyWith =>
@@ -1627,42 +1611,44 @@ abstract class _StructureMap extends StructureMap {
   factory _StructureMap.fromJson(Map<String, dynamic> json) =
       _$StructureMapImpl.fromJson;
 
-  /// [resourceType] This is a StructureMap resource
   @override
+
+  /// [resourceType] This is a StructureMap resource
   @JsonKey(unknownEnumValue: R5ResourceType.StructureMap)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1670,16 +1656,16 @@ abstract class _StructureMap extends StructureMap {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1687,9 +1673,9 @@ abstract class _StructureMap extends StructureMap {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1703,8 +1689,8 @@ abstract class _StructureMap extends StructureMap {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [url] An absolute URI that is used to identify this structure map when it
   ///  is referenced in a specification, model, design or an instance; also
@@ -1713,19 +1699,19 @@ abstract class _StructureMap extends StructureMap {
   ///  map is (or will be) published. This URL can be the target of a canonical
   ///  reference. It SHALL remain the same when the structure map is stored on
   ///  different servers.
-  @override
   FhirUri? get url;
+  @override
 
   /// [urlElement] ("_url") Extensions for url
-  @override
   @JsonKey(name: '_url')
   PrimitiveElement? get urlElement;
+  @override
 
   /// [identifier] A formal identifier that is used to identify this structure
   ///  map when it is represented in other formats, or referenced in a
   ///  specification, model, design or an instance.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [version] The identifier that is used to identify this version of the
   ///  structure map when it is referenced in a specification, model, design or
@@ -1734,179 +1720,175 @@ abstract class _StructureMap extends StructureMap {
   ///  timestamp (e.g. yyyymmdd) if a managed version is not available. There is
   ///  also no expectation that versions can be placed in a lexicographical
   ///  sequence.
-  @override
   String? get version;
+  @override
 
   /// [versionElement] ("_version") Extensions for version
-  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
+  @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  @override
   String? get versionAlgorithmString;
+  @override
 
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
-  @override
   @JsonKey(name: '_versionAlgorithmString')
   PrimitiveElement? get versionAlgorithmStringElement;
+  @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  @override
   Coding? get versionAlgorithmCoding;
+  @override
 
   /// [name] A natural language name identifying the structure map. This name
   ///  should be usable as an identifier for the module by machine processing
   ///  applications such as code generation.
-  @override
   String? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [title] A short, descriptive, user-friendly title for the structure map.
-  @override
   String? get title;
+  @override
 
   /// [titleElement] ("_title") Extensions for title
-  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
+  @override
 
   /// [status] The status of this structure map. Enables tracking the life-cycle
   ///  of the content.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [experimental] A Boolean value to indicate that this structure map is
   ///  authored for testing purposes (or education/evaluation/marketing) and is
   ///  not intended to be used for genuine usage.
-  @override
   FhirBoolean? get experimental;
+  @override
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
-  @override
   @JsonKey(name: '_experimental')
   PrimitiveElement? get experimentalElement;
+  @override
 
   /// [date] The date  (and optionally time) when the structure map was last
   ///  significantly changed. The date must change when the business version
   ///  changes and it must change if the status code changes. In addition, it
   ///  should change when the substantive content of the structure map changes.
-  @override
   FhirDateTime? get date;
+  @override
 
   /// [dateElement] ("_date") Extensions for date
-  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
+  @override
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the structure map.
-  @override
   String? get publisher;
+  @override
 
   /// [publisherElement] ("_publisher") Extensions for publisher
-  @override
   @JsonKey(name: '_publisher')
   PrimitiveElement? get publisherElement;
+  @override
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
-  @override
   List<ContactDetail>? get contact;
+  @override
 
   /// [description] A free text natural language description of the structure map
   ///  from a consumer's perspective.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
   ///  categories (gender, age, ...) or may be references to specific programs
   ///  (insurance plans, studies, ...) and may be used to assist with indexing
   ///  and searching for appropriate structure map instances.
-  @override
   List<UsageContext>? get useContext;
+  @override
 
   /// [jurisdiction] A legal or geographic region in which the structure map is
   ///  intended to be used.
-  @override
   List<CodeableConcept>? get jurisdiction;
+  @override
 
   /// [purpose] Explanation of why this structure map is needed and why it has
   ///  been designed as it has.
-  @override
   FhirMarkdown? get purpose;
+  @override
 
   /// [purposeElement] ("_purpose") Extensions for purpose
-  @override
   @JsonKey(name: '_purpose')
   PrimitiveElement? get purposeElement;
+  @override
 
   /// [copyright] A copyright statement relating to the structure map and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
   ///  and publishing of the structure map.
-  @override
   FhirMarkdown? get copyright;
+  @override
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
-  @override
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement;
+  @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
   ///  optionally whether rights are resctricted. (e.g. 'All rights reserved',
   ///  'Some rights reserved').
-  @override
   String? get copyrightLabel;
+  @override
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-  @override
   @JsonKey(name: '_copyrightLabel')
   PrimitiveElement? get copyrightLabelElement;
+  @override
 
   /// [structure] A structure definition used by this map. The structure
   ///  definition may describe instances that are converted, or the instances
   ///  that are produced.
-  @override
   List<StructureMapStructure>? get structure;
+  @override
 
   /// [import_] ("import") Other maps used by this map (canonical URLs).
-  @override
   @JsonKey(name: 'import')
   List<FhirCanonical>? get import_;
+  @override
 
   /// [const_] ("const") Definition of a constant value used in the map rules.
-  @override
   @JsonKey(name: 'const')
   List<StructureMapConst>? get const_;
+  @override
 
   /// [group] Organizes the mapping into managable chunks for human review/ease
   ///  of maintenance.
-  @override
   List<StructureMapGroup> get group;
-
-  /// Create a copy of StructureMap
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$StructureMapImplCopyWith<_$StructureMapImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1972,12 +1954,8 @@ mixin _$StructureMapStructure {
   PrimitiveElement? get documentationElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this StructureMapStructure to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of StructureMapStructure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $StructureMapStructureCopyWith<StructureMapStructure> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2012,8 +1990,6 @@ class _$StructureMapStructureCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of StructureMapStructure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2104,8 +2080,6 @@ class __$$StructureMapStructureImplCopyWithImpl<$Res>
       $Res Function(_$StructureMapStructureImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of StructureMapStructure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2311,7 +2285,7 @@ class _$StructureMapStructureImpl extends _StructureMapStructure {
                 other.documentationElement == documentationElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2326,9 +2300,7 @@ class _$StructureMapStructureImpl extends _StructureMapStructure {
       documentation,
       documentationElement);
 
-  /// Create a copy of StructureMapStructure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$StructureMapStructureImplCopyWith<_$StructureMapStructureImpl>
@@ -2362,10 +2334,12 @@ abstract class _StructureMapStructure extends StructureMapStructure {
   factory _StructureMapStructure.fromJson(Map<String, dynamic> json) =
       _$StructureMapStructureImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2373,9 +2347,9 @@ abstract class _StructureMapStructure extends StructureMapStructure {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2389,45 +2363,41 @@ abstract class _StructureMapStructure extends StructureMapStructure {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [url] The canonical reference to the structure.
-  @override
   FhirCanonical get url;
+  @override
 
   /// [mode] How the referenced structure is used in this mapping.
-  @override
   FhirCode? get mode;
+  @override
 
   /// [modeElement] ("_mode") Extensions for mode
-  @override
   @JsonKey(name: '_mode')
   PrimitiveElement? get modeElement;
+  @override
 
   /// [alias] The name used for this type in the map.
-  @override
   String? get alias;
+  @override
 
   /// [aliasElement] ("_alias") Extensions for alias
-  @override
   @JsonKey(name: '_alias')
   PrimitiveElement? get aliasElement;
+  @override
 
   /// [documentation] Documentation that describes how the structure is used in
   ///  the mapping.
-  @override
   String? get documentation;
+  @override
 
   /// [documentationElement] ("_documentation") Extensions for documentation
-  @override
   @JsonKey(name: '_documentation')
   PrimitiveElement? get documentationElement;
-
-  /// Create a copy of StructureMapStructure
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$StructureMapStructureImplCopyWith<_$StructureMapStructureImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2480,12 +2450,8 @@ mixin _$StructureMapConst {
   @JsonKey(name: '_value')
   PrimitiveElement? get valueElement => throw _privateConstructorUsedError;
 
-  /// Serializes this StructureMapConst to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of StructureMapConst
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $StructureMapConstCopyWith<StructureMapConst> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2516,8 +2482,6 @@ class _$StructureMapConstCopyWithImpl<$Res, $Val extends StructureMapConst>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of StructureMapConst
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2588,8 +2552,6 @@ class __$$StructureMapConstImplCopyWithImpl<$Res>
       $Res Function(_$StructureMapConstImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of StructureMapConst
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2758,7 +2720,7 @@ class _$StructureMapConstImpl extends _StructureMapConst {
                 other.valueElement == valueElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2770,9 +2732,7 @@ class _$StructureMapConstImpl extends _StructureMapConst {
       value,
       valueElement);
 
-  /// Create a copy of StructureMapConst
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$StructureMapConstImplCopyWith<_$StructureMapConstImpl> get copyWith =>
@@ -2802,10 +2762,12 @@ abstract class _StructureMapConst extends StructureMapConst {
   factory _StructureMapConst.fromJson(Map<String, dynamic> json) =
       _$StructureMapConstImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2813,9 +2775,9 @@ abstract class _StructureMapConst extends StructureMapConst {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2829,31 +2791,27 @@ abstract class _StructureMapConst extends StructureMapConst {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [name] Other maps used by this map (canonical URLs).
-  @override
   FhirId? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [value] A FHIRPath expression that is the value of this variable.
-  @override
   String? get value;
+  @override
 
   /// [valueElement] ("_value") Extensions for value
-  @override
   @JsonKey(name: '_value')
   PrimitiveElement? get valueElement;
-
-  /// Create a copy of StructureMapConst
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$StructureMapConstImplCopyWith<_$StructureMapConstImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2931,12 +2889,8 @@ mixin _$StructureMapGroup {
   /// [rule] Transform Rule from source to target.
   List<StructureMapRule>? get rule => throw _privateConstructorUsedError;
 
-  /// Serializes this StructureMapGroup to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of StructureMapGroup
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $StructureMapGroupCopyWith<StructureMapGroup> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2973,8 +2927,6 @@ class _$StructureMapGroupCopyWithImpl<$Res, $Val extends StructureMapGroup>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of StructureMapGroup
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3081,8 +3033,6 @@ class __$$StructureMapGroupImplCopyWithImpl<$Res>
       $Res Function(_$StructureMapGroupImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of StructureMapGroup
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3347,7 +3297,7 @@ class _$StructureMapGroupImpl extends _StructureMapGroup {
             const DeepCollectionEquality().equals(other._rule, _rule));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3365,9 +3315,7 @@ class _$StructureMapGroupImpl extends _StructureMapGroup {
       const DeepCollectionEquality().hash(_input),
       const DeepCollectionEquality().hash(_rule));
 
-  /// Create a copy of StructureMapGroup
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$StructureMapGroupImplCopyWith<_$StructureMapGroupImpl> get copyWith =>
@@ -3403,10 +3351,12 @@ abstract class _StructureMapGroup extends StructureMapGroup {
   factory _StructureMapGroup.fromJson(Map<String, dynamic> json) =
       _$StructureMapGroupImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3414,9 +3364,9 @@ abstract class _StructureMapGroup extends StructureMapGroup {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3430,61 +3380,57 @@ abstract class _StructureMapGroup extends StructureMapGroup {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [name] A unique name for the group for the convenience of human readers.
-  @override
   FhirId? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [extends_] ("extends") Another group that this group adds rules to.
-  @override
   @JsonKey(name: 'extends')
   FhirId? get extends_;
+  @override
 
   /// [extendsElement] ("_extends") Extensions for extends
-  @override
   @JsonKey(name: '_extends')
   PrimitiveElement? get extendsElement;
+  @override
 
   /// [typeMode] If this is the default rule set to apply for the source type or
   ///  this combination of types.
-  @override
   FhirCode? get typeMode;
+  @override
 
   /// [typeModeElement] ("_typeMode") Extensions for typeMode
-  @override
   @JsonKey(name: '_typeMode')
   PrimitiveElement? get typeModeElement;
+  @override
 
   /// [documentation] Additional supporting documentation that explains the
   ///  purpose of the group and the types of mappings within it.
-  @override
   String? get documentation;
+  @override
 
   /// [documentationElement] ("_documentation") Extensions for documentation
-  @override
   @JsonKey(name: '_documentation')
   PrimitiveElement? get documentationElement;
+  @override
 
   /// [input] A name assigned to an instance of data. The instance must be
   ///  provided when the mapping is invoked.
-  @override
   List<StructureMapInput> get input;
+  @override
 
   /// [rule] Transform Rule from source to target.
-  @override
   List<StructureMapRule>? get rule;
-
-  /// Create a copy of StructureMapGroup
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$StructureMapGroupImplCopyWith<_$StructureMapGroupImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3552,12 +3498,8 @@ mixin _$StructureMapInput {
   PrimitiveElement? get documentationElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this StructureMapInput to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of StructureMapInput
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $StructureMapInputCopyWith<StructureMapInput> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3592,8 +3534,6 @@ class _$StructureMapInputCopyWithImpl<$Res, $Val extends StructureMapInput>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of StructureMapInput
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3688,8 +3628,6 @@ class __$$StructureMapInputImplCopyWithImpl<$Res>
       $Res Function(_$StructureMapInputImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of StructureMapInput
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3907,7 +3845,7 @@ class _$StructureMapInputImpl extends _StructureMapInput {
                 other.documentationElement == documentationElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3923,9 +3861,7 @@ class _$StructureMapInputImpl extends _StructureMapInput {
       documentation,
       documentationElement);
 
-  /// Create a copy of StructureMapInput
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$StructureMapInputImplCopyWith<_$StructureMapInputImpl> get copyWith =>
@@ -3959,10 +3895,12 @@ abstract class _StructureMapInput extends StructureMapInput {
   factory _StructureMapInput.fromJson(Map<String, dynamic> json) =
       _$StructureMapInputImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3970,9 +3908,9 @@ abstract class _StructureMapInput extends StructureMapInput {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3986,49 +3924,45 @@ abstract class _StructureMapInput extends StructureMapInput {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [name] Name for this instance of data.
-  @override
   FhirId? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [type] Type for this instance of data.
-  @override
   String? get type;
+  @override
 
   /// [typeElement] ("_type") Extensions for type
-  @override
   @JsonKey(name: '_type')
   PrimitiveElement? get typeElement;
+  @override
 
   /// [mode] Mode for this instance of data.
-  @override
   FhirCode? get mode;
+  @override
 
   /// [modeElement] ("_mode") Extensions for mode
-  @override
   @JsonKey(name: '_mode')
   PrimitiveElement? get modeElement;
+  @override
 
   /// [documentation] Documentation for this instance of data.
-  @override
   String? get documentation;
+  @override
 
   /// [documentationElement] ("_documentation") Extensions for documentation
-  @override
   @JsonKey(name: '_documentation')
   PrimitiveElement? get documentationElement;
-
-  /// Create a copy of StructureMapInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$StructureMapInputImplCopyWith<_$StructureMapInputImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4095,12 +4029,8 @@ mixin _$StructureMapRule {
   PrimitiveElement? get documentationElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this StructureMapRule to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of StructureMapRule
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $StructureMapRuleCopyWith<StructureMapRule> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4135,8 +4065,6 @@ class _$StructureMapRuleCopyWithImpl<$Res, $Val extends StructureMapRule>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of StructureMapRule
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4231,8 +4159,6 @@ class __$$StructureMapRuleImplCopyWithImpl<$Res>
       $Res Function(_$StructureMapRuleImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of StructureMapRule
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4485,7 +4411,7 @@ class _$StructureMapRuleImpl extends _StructureMapRule {
                 other.documentationElement == documentationElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4501,9 +4427,7 @@ class _$StructureMapRuleImpl extends _StructureMapRule {
       documentation,
       documentationElement);
 
-  /// Create a copy of StructureMapRule
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$StructureMapRuleImplCopyWith<_$StructureMapRuleImpl> get copyWith =>
@@ -4537,10 +4461,12 @@ abstract class _StructureMapRule extends StructureMapRule {
   factory _StructureMapRule.fromJson(Map<String, dynamic> json) =
       _$StructureMapRuleImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4548,9 +4474,9 @@ abstract class _StructureMapRule extends StructureMapRule {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4564,47 +4490,43 @@ abstract class _StructureMapRule extends StructureMapRule {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [name] Name of the rule for internal references.
-  @override
   FhirId? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [source] Source inputs to the mapping.
-  @override
   List<StructureMapSource> get source;
+  @override
 
   /// [target] Content to create because of this mapping rule.
-  @override
   List<StructureMapTarget>? get target;
+  @override
 
   /// [rule] Rules contained in this rule.
-  @override
   List<StructureMapRule>? get rule;
+  @override
 
   /// [dependent] Which other rules to apply in the context of this rule.
-  @override
   List<StructureMapDependent>? get dependent;
+  @override
 
   /// [documentation] Documentation for this instance of data.
-  @override
   String? get documentation;
+  @override
 
   /// [documentationElement] ("_documentation") Extensions for documentation
-  @override
   @JsonKey(name: '_documentation')
   PrimitiveElement? get documentationElement;
-
-  /// Create a copy of StructureMapRule
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$StructureMapRuleImplCopyWith<_$StructureMapRuleImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4728,12 +4650,8 @@ mixin _$StructureMapSource {
   @JsonKey(name: '_logMessage')
   PrimitiveElement? get logMessageElement => throw _privateConstructorUsedError;
 
-  /// Serializes this StructureMapSource to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of StructureMapSource
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $StructureMapSourceCopyWith<StructureMapSource> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4782,8 +4700,6 @@ class _$StructureMapSourceCopyWithImpl<$Res, $Val extends StructureMapSource>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of StructureMapSource
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4962,8 +4878,6 @@ class __$$StructureMapSourceImplCopyWithImpl<$Res>
       $Res Function(_$StructureMapSourceImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of StructureMapSource
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5360,7 +5274,7 @@ class _$StructureMapSourceImpl extends _StructureMapSource {
                 other.logMessageElement == logMessageElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -5391,9 +5305,7 @@ class _$StructureMapSourceImpl extends _StructureMapSource {
         logMessageElement
       ]);
 
-  /// Create a copy of StructureMapSource
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$StructureMapSourceImplCopyWith<_$StructureMapSourceImpl> get copyWith =>
@@ -5442,10 +5354,12 @@ abstract class _StructureMapSource extends StructureMapSource {
   factory _StructureMapSource.fromJson(Map<String, dynamic> json) =
       _$StructureMapSourceImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5453,9 +5367,9 @@ abstract class _StructureMapSource extends StructureMapSource {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5469,119 +5383,115 @@ abstract class _StructureMapSource extends StructureMapSource {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [context] Type or variable this rule applies to.
-  @override
   FhirId? get context;
+  @override
 
   /// [contextElement] ("_context") Extensions for context
-  @override
   @JsonKey(name: '_context')
   PrimitiveElement? get contextElement;
+  @override
 
   /// [min] Specified minimum cardinality for the element. This is optional; if
   ///  present, it acts an implicit check on the input content.
-  @override
   FhirInteger? get min;
+  @override
 
   /// [minElement] ("_min") Extensions for min
-  @override
   @JsonKey(name: '_min')
   PrimitiveElement? get minElement;
+  @override
 
   /// [max] Specified maximum cardinality for the element - a number or a "*".
   ///  This is optional; if present, it acts an implicit check on the input
   ///  content (* just serves as documentation; it's the default value).
-  @override
   String? get max;
+  @override
 
   /// [maxElement] ("_max") Extensions for max
-  @override
   @JsonKey(name: '_max')
   PrimitiveElement? get maxElement;
+  @override
 
   /// [type] Specified type for the element. This works as a condition on the
   ///  mapping - use for polymorphic elements.
-  @override
   String? get type;
+  @override
 
   /// [typeElement] ("_type") Extensions for type
-  @override
   @JsonKey(name: '_type')
   PrimitiveElement? get typeElement;
+  @override
 
   /// [defaultValue] A value to use if there is no existing value in the source
   ///  object.
-  @override
   String? get defaultValue;
+  @override
 
   /// [defaultValueElement] ("_defaultValue") Extensions for defaultValue
-  @override
   @JsonKey(name: '_defaultValue')
   PrimitiveElement? get defaultValueElement;
+  @override
 
   /// [element] Optional field for this source.
-  @override
   String? get element;
+  @override
 
   /// [elementElement] ("_element") Extensions for element
-  @override
   @JsonKey(name: '_element')
   PrimitiveElement? get elementElement;
+  @override
 
   /// [listMode] How to handle the list mode for this element.
-  @override
   FhirCode? get listMode;
+  @override
 
   /// [listModeElement] ("_listMode") Extensions for listMode
-  @override
   @JsonKey(name: '_listMode')
   PrimitiveElement? get listModeElement;
+  @override
 
   /// [variable] Named context for field, if a field is specified.
-  @override
   FhirId? get variable;
+  @override
 
   /// [variableElement] ("_variable") Extensions for variable
-  @override
   @JsonKey(name: '_variable')
   PrimitiveElement? get variableElement;
+  @override
 
   /// [condition] FHIRPath expression  - must be true or the rule does not apply.
-  @override
   String? get condition;
+  @override
 
   /// [conditionElement] ("_condition") Extensions for condition
-  @override
   @JsonKey(name: '_condition')
   PrimitiveElement? get conditionElement;
+  @override
 
   /// [check] FHIRPath expression  - must be true or the mapping engine throws an
   ///  error instead of completing.
-  @override
   String? get check;
+  @override
 
   /// [checkElement] ("_check") Extensions for check
-  @override
   @JsonKey(name: '_check')
   PrimitiveElement? get checkElement;
+  @override
 
   /// [logMessage] A FHIRPath expression which specifies a message to put in the
   ///  transform log when content matching the source rule is found.
-  @override
   String? get logMessage;
+  @override
 
   /// [logMessageElement] ("_logMessage") Extensions for logMessage
-  @override
   @JsonKey(name: '_logMessage')
   PrimitiveElement? get logMessageElement;
-
-  /// Create a copy of StructureMapSource
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$StructureMapSourceImplCopyWith<_$StructureMapSourceImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5667,12 +5577,8 @@ mixin _$StructureMapTarget {
   List<StructureMapParameter>? get parameter =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this StructureMapTarget to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of StructureMapTarget
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $StructureMapTargetCopyWith<StructureMapTarget> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5712,8 +5618,6 @@ class _$StructureMapTargetCopyWithImpl<$Res, $Val extends StructureMapTarget>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of StructureMapTarget
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5838,8 +5742,6 @@ class __$$StructureMapTargetImplCopyWithImpl<$Res>
       $Res Function(_$StructureMapTargetImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of StructureMapTarget
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6149,7 +6051,7 @@ class _$StructureMapTargetImpl extends _StructureMapTarget {
                 .equals(other._parameter, _parameter));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -6170,9 +6072,7 @@ class _$StructureMapTargetImpl extends _StructureMapTarget {
       transformElement,
       const DeepCollectionEquality().hash(_parameter));
 
-  /// Create a copy of StructureMapTarget
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$StructureMapTargetImplCopyWith<_$StructureMapTargetImpl> get copyWith =>
@@ -6210,10 +6110,12 @@ abstract class _StructureMapTarget extends StructureMapTarget {
   factory _StructureMapTarget.fromJson(Map<String, dynamic> json) =
       _$StructureMapTargetImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -6221,9 +6123,9 @@ abstract class _StructureMapTarget extends StructureMapTarget {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -6237,71 +6139,67 @@ abstract class _StructureMapTarget extends StructureMapTarget {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [context] Variable this rule applies to.
-  @override
   String? get context;
+  @override
 
   /// [contextElement] ("_context") Extensions for context
-  @override
   @JsonKey(name: '_context')
   PrimitiveElement? get contextElement;
+  @override
 
   /// [element] Field to create in the context.
-  @override
   String? get element;
+  @override
 
   /// [elementElement] ("_element") Extensions for element
-  @override
   @JsonKey(name: '_element')
   PrimitiveElement? get elementElement;
+  @override
 
   /// [variable] Named context for field, if desired, and a field is specified.
-  @override
   FhirId? get variable;
+  @override
 
   /// [variableElement] ("_variable") Extensions for variable
-  @override
   @JsonKey(name: '_variable')
   PrimitiveElement? get variableElement;
+  @override
 
   /// [listMode] If field is a list, how to manage the list.
-  @override
   List<FhirCode>? get listMode;
+  @override
 
   /// [listModeElement] ("_listMode") Extensions for listMode
-  @override
   @JsonKey(name: '_listMode')
   List<PrimitiveElement>? get listModeElement;
+  @override
 
   /// [listRuleId] Internal rule reference for shared list items.
-  @override
   FhirId? get listRuleId;
+  @override
 
   /// [listRuleIdElement] ("_listRuleId") Extensions for listRuleId
-  @override
   @JsonKey(name: '_listRuleId')
   PrimitiveElement? get listRuleIdElement;
+  @override
 
   /// [transform] How the data is copied / created.
-  @override
   FhirCode? get transform;
+  @override
 
   /// [transformElement] ("_transform") Extensions for transform
-  @override
   @JsonKey(name: '_transform')
   PrimitiveElement? get transformElement;
+  @override
 
   /// [parameter] Parameters to the transform.
-  @override
   List<StructureMapParameter>? get parameter;
-
-  /// Create a copy of StructureMapTarget
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$StructureMapTargetImplCopyWith<_$StructureMapTargetImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6402,12 +6300,8 @@ mixin _$StructureMapParameter {
   PrimitiveElement? get valueDateTimeElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this StructureMapParameter to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of StructureMapParameter
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $StructureMapParameterCopyWith<StructureMapParameter> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6451,8 +6345,6 @@ class _$StructureMapParameterCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of StructureMapParameter
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6597,8 +6489,6 @@ class __$$StructureMapParameterImplCopyWithImpl<$Res>
       $Res Function(_$StructureMapParameterImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of StructureMapParameter
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6918,7 +6808,7 @@ class _$StructureMapParameterImpl extends _StructureMapParameter {
                 other.valueDateTimeElement == valueDateTimeElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -6943,9 +6833,7 @@ class _$StructureMapParameterImpl extends _StructureMapParameter {
         valueDateTimeElement
       ]);
 
-  /// Create a copy of StructureMapParameter
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$StructureMapParameterImplCopyWith<_$StructureMapParameterImpl>
@@ -6991,10 +6879,12 @@ abstract class _StructureMapParameter extends StructureMapParameter {
   factory _StructureMapParameter.fromJson(Map<String, dynamic> json) =
       _$StructureMapParameterImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -7002,9 +6892,9 @@ abstract class _StructureMapParameter extends StructureMapParameter {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -7018,85 +6908,81 @@ abstract class _StructureMapParameter extends StructureMapParameter {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [valueId] Parameter value - variable or literal.
-  @override
   FhirId? get valueId;
+  @override
 
   /// [valueIdElement] ("_valueId") Extensions for valueId
-  @override
   @JsonKey(name: '_valueId')
   PrimitiveElement? get valueIdElement;
+  @override
 
   /// [valueString] Parameter value - variable or literal.
-  @override
   String? get valueString;
+  @override
 
   /// [valueStringElement] ("_valueString") Extensions for valueString
-  @override
   @JsonKey(name: '_valueString')
   PrimitiveElement? get valueStringElement;
+  @override
 
   /// [valueBoolean] Parameter value - variable or literal.
-  @override
   FhirBoolean? get valueBoolean;
+  @override
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
+  @override
 
   /// [valueInteger] Parameter value - variable or literal.
-  @override
   FhirInteger? get valueInteger;
+  @override
 
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
-  @override
   @JsonKey(name: '_valueInteger')
   PrimitiveElement? get valueIntegerElement;
+  @override
 
   /// [valueDecimal] Parameter value - variable or literal.
-  @override
   FhirDecimal? get valueDecimal;
+  @override
 
   /// [valueDecimalElement] ("_valueDecimal") Extensions for valueDecimal
-  @override
   @JsonKey(name: '_valueDecimal')
   PrimitiveElement? get valueDecimalElement;
+  @override
 
   /// [valueDate] Parameter value - variable or literal.
-  @override
   FhirDate? get valueDate;
+  @override
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
-  @override
   @JsonKey(name: '_valueDate')
   PrimitiveElement? get valueDateElement;
+  @override
 
   /// [valueTime] Parameter value - variable or literal.
-  @override
   FhirTime? get valueTime;
+  @override
 
   /// [valueTimeElement] ("_valueTime") Extensions for valueTime
-  @override
   @JsonKey(name: '_valueTime')
   PrimitiveElement? get valueTimeElement;
+  @override
 
   /// [valueDateTime] Parameter value - variable or literal.
-  @override
   FhirDateTime? get valueDateTime;
+  @override
 
   /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
-  @override
   @JsonKey(name: '_valueDateTime')
   PrimitiveElement? get valueDateTimeElement;
-
-  /// Create a copy of StructureMapParameter
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$StructureMapParameterImplCopyWith<_$StructureMapParameterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -7147,12 +7033,8 @@ mixin _$StructureMapDependent {
   List<StructureMapParameter> get parameter =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this StructureMapDependent to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of StructureMapDependent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $StructureMapDependentCopyWith<StructureMapDependent> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -7183,8 +7065,6 @@ class _$StructureMapDependentCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of StructureMapDependent
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7251,8 +7131,6 @@ class __$$StructureMapDependentImplCopyWithImpl<$Res>
       $Res Function(_$StructureMapDependentImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of StructureMapDependent
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7417,7 +7295,7 @@ class _$StructureMapDependentImpl extends _StructureMapDependent {
                 .equals(other._parameter, _parameter));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -7428,9 +7306,7 @@ class _$StructureMapDependentImpl extends _StructureMapDependent {
       nameElement,
       const DeepCollectionEquality().hash(_parameter));
 
-  /// Create a copy of StructureMapDependent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$StructureMapDependentImplCopyWith<_$StructureMapDependentImpl>
@@ -7459,10 +7335,12 @@ abstract class _StructureMapDependent extends StructureMapDependent {
   factory _StructureMapDependent.fromJson(Map<String, dynamic> json) =
       _$StructureMapDependentImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -7470,9 +7348,9 @@ abstract class _StructureMapDependent extends StructureMapDependent {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -7486,26 +7364,22 @@ abstract class _StructureMapDependent extends StructureMapDependent {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [name] Name of a rule or group to apply.
-  @override
   FhirId? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [parameter] Parameter to pass to the rule or group.
-  @override
   List<StructureMapParameter> get parameter;
-
-  /// Create a copy of StructureMapDependent
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$StructureMapDependentImplCopyWith<_$StructureMapDependentImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -265,12 +265,8 @@ mixin _$MedicinalProductDefinition {
   List<MedicinalProductDefinitionCharacteristic>? get characteristic =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this MedicinalProductDefinition to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of MedicinalProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $MedicinalProductDefinitionCopyWith<MedicinalProductDefinition>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -351,8 +347,6 @@ class _$MedicinalProductDefinitionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of MedicinalProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -581,8 +575,6 @@ class _$MedicinalProductDefinitionCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of MedicinalProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -595,8 +587,6 @@ class _$MedicinalProductDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MedicinalProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -609,8 +599,6 @@ class _$MedicinalProductDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MedicinalProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -623,8 +611,6 @@ class _$MedicinalProductDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MedicinalProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get domain {
@@ -637,8 +623,6 @@ class _$MedicinalProductDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MedicinalProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get status {
@@ -651,8 +635,6 @@ class _$MedicinalProductDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MedicinalProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get combinedPharmaceuticalDoseForm {
@@ -667,8 +649,6 @@ class _$MedicinalProductDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MedicinalProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get legalStatusOfSupply {
@@ -681,8 +661,6 @@ class _$MedicinalProductDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MedicinalProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get additionalMonitoringIndicator {
@@ -697,8 +675,6 @@ class _$MedicinalProductDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MedicinalProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get pediatricUseIndicator {
@@ -799,8 +775,6 @@ class __$$MedicinalProductDefinitionImplCopyWithImpl<$Res>
       $Res Function(_$MedicinalProductDefinitionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of MedicinalProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1719,7 +1693,7 @@ class _$MedicinalProductDefinitionImpl extends _MedicinalProductDefinition {
             const DeepCollectionEquality().equals(other._characteristic, _characteristic));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1769,9 +1743,7 @@ class _$MedicinalProductDefinitionImpl extends _MedicinalProductDefinition {
         const DeepCollectionEquality().hash(_characteristic)
       ]);
 
-  /// Create a copy of MedicinalProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$MedicinalProductDefinitionImplCopyWith<_$MedicinalProductDefinitionImpl>
@@ -1840,42 +1812,44 @@ abstract class _MedicinalProductDefinition extends MedicinalProductDefinition {
   factory _MedicinalProductDefinition.fromJson(Map<String, dynamic> json) =
       _$MedicinalProductDefinitionImpl.fromJson;
 
-  /// [resourceType] This is a MedicinalProductDefinition resource
   @override
+
+  /// [resourceType] This is a MedicinalProductDefinition resource
   @JsonKey(unknownEnumValue: R5ResourceType.MedicinalProductDefinition)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1883,16 +1857,16 @@ abstract class _MedicinalProductDefinition extends MedicinalProductDefinition {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1900,9 +1874,9 @@ abstract class _MedicinalProductDefinition extends MedicinalProductDefinition {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1916,66 +1890,66 @@ abstract class _MedicinalProductDefinition extends MedicinalProductDefinition {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] Business identifier for this product. Could be an MPID. When
   ///  in development or being regulated, products are typically referenced by
   ///  official identifiers, assigned by a manufacturer or regulator, and unique
   ///  to a product (which, when compared to a product instance being prescribed,
   ///  is actually a product type). See also MedicinalProductDefinition.code.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [type] Regulatory type, e.g. Investigational or Authorized.
-  @override
   CodeableConcept? get type;
+  @override
 
   /// [domain] If this medicine applies to human or veterinary uses.
-  @override
   CodeableConcept? get domain;
+  @override
 
   /// [version] A business identifier relating to a specific version of the
   ///  product, this is commonly used to support revisions to an existing product.
-  @override
   String? get version;
+  @override
 
   /// [versionElement] ("_version") Extensions for version
-  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
+  @override
 
   /// [status] The status within the lifecycle of this product record. A
   ///  high-level status, this is not intended to duplicate details carried
   ///  elsewhere such as legal status, or authorization status.
-  @override
   CodeableConcept? get status;
+  @override
 
   /// [statusDate] The date at which the given status became applicable.
-  @override
   FhirDateTime? get statusDate;
+  @override
 
   /// [statusDateElement] ("_statusDate") Extensions for statusDate
-  @override
   @JsonKey(name: '_statusDate')
   PrimitiveElement? get statusDateElement;
+  @override
 
   /// [description] General description of this product.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [combinedPharmaceuticalDoseForm] The dose form for a single part product,
   ///  or combined form of a multiple part product. This is one concept that
   ///  describes all the components. It does not represent the form with
   ///  components physically mixed, if that might be necessary, for which see
   ///  (AdministrableProductDefinition.administrableDoseForm).
-  @override
   CodeableConcept? get combinedPharmaceuticalDoseForm;
+  @override
 
   /// [route] The path by which the product is taken into or makes contact with
   ///  the body. In some regions this is referred to as the licenced or approved
@@ -1983,67 +1957,67 @@ abstract class _MedicinalProductDefinition extends MedicinalProductDefinition {
   ///  MedicinalProductDefinition.route is the same concept as
   ///  AdministrableProductDefinition.routeOfAdministration.code, and they cannot
   ///  be used together.
-  @override
   List<CodeableConcept>? get route;
+  @override
 
   /// [indication] Description of indication(s) for this product, used when
   ///  structured indications are not required. In cases where structured
   ///  indications are required, they are captured using the
   ///  ClinicalUseDefinition resource. An indication is a medical situation for
   ///  which using the product is appropriate.
-  @override
   FhirMarkdown? get indication;
+  @override
 
   /// [indicationElement] ("_indication") Extensions for indication
-  @override
   @JsonKey(name: '_indication')
   PrimitiveElement? get indicationElement;
+  @override
 
   /// [legalStatusOfSupply] The legal status of supply of the medicinal product
   ///  as classified by the regulator.
-  @override
   CodeableConcept? get legalStatusOfSupply;
+  @override
 
   /// [additionalMonitoringIndicator] Whether the Medicinal Product is subject to
   ///  additional monitoring for regulatory reasons, such as heightened reporting
   ///  requirements.
-  @override
   CodeableConcept? get additionalMonitoringIndicator;
+  @override
 
   /// [specialMeasures] Whether the Medicinal Product is subject to special
   ///  measures for regulatory reasons, such as a requirement to conduct
   ///  post-authorization studies.
-  @override
   List<CodeableConcept>? get specialMeasures;
+  @override
 
   /// [pediatricUseIndicator] If authorised for use in children, or infants,
   ///  neonates etc.
-  @override
   CodeableConcept? get pediatricUseIndicator;
+  @override
 
   /// [classification] Allows the product to be classified by various systems,
   ///  commonly WHO ATC.
-  @override
   List<CodeableConcept>? get classification;
+  @override
 
   /// [marketingStatus] Marketing status of the medicinal product, in contrast to
   ///  marketing authorization. This refers to the product being actually 'on the
   ///  market' as opposed to being allowed to be on the market (which is an
   ///  authorization).
-  @override
   List<MarketingStatus>? get marketingStatus;
+  @override
 
   /// [packagedMedicinalProduct] Package type for the product. See also the
   ///  PackagedProductDefinition resource.
-  @override
   List<CodeableConcept>? get packagedMedicinalProduct;
+  @override
 
   /// [comprisedOf] Types of medicinal manufactured items and/or devices that
   ///  this product consists of, such as tablets, capsule, or syringes. Used as a
   ///  direct link when the item's packaging is not being recorded (see also
   ///  PackagedProductDefinition.package.containedItem.item).
-  @override
   List<Reference>? get comprisedOf;
+  @override
 
   /// [ingredient] The ingredients of this medicinal product - when not detailed
   ///  in other resources. This is only needed if the ingredients are not
@@ -2052,37 +2026,37 @@ abstract class _MedicinalProductDefinition extends MedicinalProductDefinition {
   ///  PackagedProductDefinition or ManufacturedItemDefinition references. In
   ///  cases where those levels of detail are not used, the ingredients may be
   ///  specified directly here as codes.
-  @override
   List<CodeableConcept>? get ingredient;
+  @override
 
   /// [impurity] Any component of the drug product which is not the chemical
   ///  entity defined as the drug substance, or an excipient in the drug product.
   ///  This includes process-related impurities and contaminants, product-related
   ///  impurities including degradation products.
-  @override
   List<CodeableReference>? get impurity;
+  @override
 
   /// [attachedDocument] Additional information or supporting documentation about
   ///  the medicinal product.
-  @override
   List<Reference>? get attachedDocument;
+  @override
 
   /// [masterFile] A master file for the medicinal product (e.g.
   ///  Pharmacovigilance System Master File). Drug master files (DMFs) are
   ///  documents submitted to regulatory agencies to provide confidential
   ///  detailed information about facilities, processes or articles used in the
   ///  manufacturing, processing, packaging and storing of drug products.
-  @override
   List<Reference>? get masterFile;
+  @override
 
   /// [contact] A product specific contact, person (in a role), or an
   ///  organization.
-  @override
   List<MedicinalProductDefinitionContact>? get contact;
+  @override
 
   /// [clinicalTrial] Clinical trials or studies that this product is involved in.
-  @override
   List<Reference>? get clinicalTrial;
+  @override
 
   /// [code] A code that this product is known by, usually within some formal
   ///  terminology, perhaps assigned by a third party (i.e. not the manufacturer
@@ -2090,32 +2064,28 @@ abstract class _MedicinalProductDefinition extends MedicinalProductDefinition {
   ///  identifiers during development and within regulatory process. However when
   ///  they are prescribed they tend to be identified by codes. The same product
   ///  may be have multiple codes, applied to it by multiple organizations.
-  @override
   List<Coding>? get code;
+  @override
 
   /// [name] The product's name, including full name and possibly coded parts.
-  @override
   List<MedicinalProductDefinitionName> get name;
+  @override
 
   /// [crossReference] Reference to another product, e.g. for linking authorised
   ///  to investigational product, or a virtual product.
-  @override
   List<MedicinalProductDefinitionCrossReference>? get crossReference;
+  @override
 
   /// [operation] A manufacturing or administrative process or step associated
   ///  with (or performed on) the medicinal product.
-  @override
   List<MedicinalProductDefinitionOperation>? get operation;
+  @override
 
   /// [characteristic] Allows the key product features to be recorded, such as
   ///  "sugar free", "modified release", "parallel import".
-  @override
   List<MedicinalProductDefinitionCharacteristic>? get characteristic;
-
-  /// Create a copy of MedicinalProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$MedicinalProductDefinitionImplCopyWith<_$MedicinalProductDefinitionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2163,12 +2133,8 @@ mixin _$MedicinalProductDefinitionContact {
   ///  organization.
   Reference get contact => throw _privateConstructorUsedError;
 
-  /// Serializes this MedicinalProductDefinitionContact to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of MedicinalProductDefinitionContact
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $MedicinalProductDefinitionContactCopyWith<MedicinalProductDefinitionContact>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2203,8 +2169,6 @@ class _$MedicinalProductDefinitionContactCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of MedicinalProductDefinitionContact
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2238,8 +2202,6 @@ class _$MedicinalProductDefinitionContactCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of MedicinalProductDefinitionContact
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -2252,8 +2214,6 @@ class _$MedicinalProductDefinitionContactCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MedicinalProductDefinitionContact
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get contact {
@@ -2295,8 +2255,6 @@ class __$$MedicinalProductDefinitionContactImplCopyWithImpl<$Res>
       $Res Function(_$MedicinalProductDefinitionContactImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of MedicinalProductDefinitionContact
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2443,7 +2401,7 @@ class _$MedicinalProductDefinitionContactImpl
             (identical(other.contact, contact) || other.contact == contact));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2453,9 +2411,7 @@ class _$MedicinalProductDefinitionContactImpl
       type,
       contact);
 
-  /// Create a copy of MedicinalProductDefinitionContact
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$MedicinalProductDefinitionContactImplCopyWith<
@@ -2486,10 +2442,12 @@ abstract class _MedicinalProductDefinitionContact
           Map<String, dynamic> json) =
       _$MedicinalProductDefinitionContactImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2497,9 +2455,9 @@ abstract class _MedicinalProductDefinitionContact
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2513,23 +2471,19 @@ abstract class _MedicinalProductDefinitionContact
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] Allows the contact to be classified, for example QPPV,
   ///  Pharmacovigilance Enquiry Information.
-  @override
   CodeableConcept? get type;
+  @override
 
   /// [contact] A product specific contact, person (in a role), or an
   ///  organization.
-  @override
   Reference get contact;
-
-  /// Create a copy of MedicinalProductDefinitionContact
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$MedicinalProductDefinitionContactImplCopyWith<
           _$MedicinalProductDefinitionContactImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2592,12 +2546,8 @@ mixin _$MedicinalProductDefinitionName {
   List<MedicinalProductDefinitionUsage>? get usage =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this MedicinalProductDefinitionName to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of MedicinalProductDefinitionName
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $MedicinalProductDefinitionNameCopyWith<MedicinalProductDefinitionName>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2634,8 +2584,6 @@ class _$MedicinalProductDefinitionNameCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of MedicinalProductDefinitionName
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2684,8 +2632,6 @@ class _$MedicinalProductDefinitionNameCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of MedicinalProductDefinitionName
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -2732,8 +2678,6 @@ class __$$MedicinalProductDefinitionNameImplCopyWithImpl<$Res>
       $Res Function(_$MedicinalProductDefinitionNameImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of MedicinalProductDefinitionName
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2938,7 +2882,7 @@ class _$MedicinalProductDefinitionNameImpl
             const DeepCollectionEquality().equals(other._usage, _usage));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2951,9 +2895,7 @@ class _$MedicinalProductDefinitionNameImpl
       const DeepCollectionEquality().hash(_part_),
       const DeepCollectionEquality().hash(_usage));
 
-  /// Create a copy of MedicinalProductDefinitionName
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$MedicinalProductDefinitionNameImplCopyWith<
@@ -2986,10 +2928,12 @@ abstract class _MedicinalProductDefinitionName
   factory _MedicinalProductDefinitionName.fromJson(Map<String, dynamic> json) =
       _$MedicinalProductDefinitionNameImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2997,9 +2941,9 @@ abstract class _MedicinalProductDefinitionName
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3013,37 +2957,33 @@ abstract class _MedicinalProductDefinitionName
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [productName] The full product name.
-  @override
   String? get productName;
+  @override
 
   /// [productNameElement] ("_productName") Extensions for productName
-  @override
   @JsonKey(name: '_productName')
   PrimitiveElement? get productNameElement;
+  @override
 
   /// [type] Type of product name, such as rINN, BAN, Proprietary,
   ///  Non-Proprietary.
-  @override
   CodeableConcept? get type;
+  @override
 
   /// [part_] ("part") Coding words or phrases of the name.
-  @override
   @JsonKey(name: 'part')
   List<MedicinalProductDefinitionPart>? get part_;
+  @override
 
   /// [usage] Country and jurisdiction where the name applies, and associated
   ///  language.
-  @override
   List<MedicinalProductDefinitionUsage>? get usage;
-
-  /// Create a copy of MedicinalProductDefinitionName
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$MedicinalProductDefinitionNameImplCopyWith<
           _$MedicinalProductDefinitionNameImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3095,12 +3035,8 @@ mixin _$MedicinalProductDefinitionPart {
   /// [type] Identifying type for this part of the name (e.g. strength part).
   CodeableConcept get type => throw _privateConstructorUsedError;
 
-  /// Serializes this MedicinalProductDefinitionPart to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of MedicinalProductDefinitionPart
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $MedicinalProductDefinitionPartCopyWith<MedicinalProductDefinitionPart>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3135,8 +3071,6 @@ class _$MedicinalProductDefinitionPartCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of MedicinalProductDefinitionPart
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3175,8 +3109,6 @@ class _$MedicinalProductDefinitionPartCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of MedicinalProductDefinitionPart
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get type {
@@ -3217,8 +3149,6 @@ class __$$MedicinalProductDefinitionPartImplCopyWithImpl<$Res>
       $Res Function(_$MedicinalProductDefinitionPartImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of MedicinalProductDefinitionPart
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3377,7 +3307,7 @@ class _$MedicinalProductDefinitionPartImpl
             (identical(other.type, type) || other.type == type));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3388,9 +3318,7 @@ class _$MedicinalProductDefinitionPartImpl
       partElement,
       type);
 
-  /// Create a copy of MedicinalProductDefinitionPart
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$MedicinalProductDefinitionPartImplCopyWith<
@@ -3421,10 +3349,12 @@ abstract class _MedicinalProductDefinitionPart
   factory _MedicinalProductDefinitionPart.fromJson(Map<String, dynamic> json) =
       _$MedicinalProductDefinitionPartImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3432,9 +3362,9 @@ abstract class _MedicinalProductDefinitionPart
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3448,27 +3378,23 @@ abstract class _MedicinalProductDefinitionPart
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [part_] ("part") A fragment of a product name.
-  @override
   @JsonKey(name: 'part')
   String? get part_;
+  @override
 
   /// [partElement] ("_part") Extensions for part
-  @override
   @JsonKey(name: '_part')
   PrimitiveElement? get partElement;
+  @override
 
   /// [type] Identifying type for this part of the name (e.g. strength part).
-  @override
   CodeableConcept get type;
-
-  /// Create a copy of MedicinalProductDefinitionPart
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$MedicinalProductDefinitionPartImplCopyWith<
           _$MedicinalProductDefinitionPartImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3520,12 +3446,8 @@ mixin _$MedicinalProductDefinitionUsage {
   /// [language] Language code for this name.
   CodeableConcept get language => throw _privateConstructorUsedError;
 
-  /// Serializes this MedicinalProductDefinitionUsage to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of MedicinalProductDefinitionUsage
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $MedicinalProductDefinitionUsageCopyWith<MedicinalProductDefinitionUsage>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3562,8 +3484,6 @@ class _$MedicinalProductDefinitionUsageCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of MedicinalProductDefinitionUsage
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3602,8 +3522,6 @@ class _$MedicinalProductDefinitionUsageCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of MedicinalProductDefinitionUsage
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get country {
@@ -3612,8 +3530,6 @@ class _$MedicinalProductDefinitionUsageCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MedicinalProductDefinitionUsage
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get jurisdiction {
@@ -3626,8 +3542,6 @@ class _$MedicinalProductDefinitionUsageCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MedicinalProductDefinitionUsage
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get language {
@@ -3672,8 +3586,6 @@ class __$$MedicinalProductDefinitionUsageImplCopyWithImpl<$Res>
       $Res Function(_$MedicinalProductDefinitionUsageImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of MedicinalProductDefinitionUsage
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3833,7 +3745,7 @@ class _$MedicinalProductDefinitionUsageImpl
                 other.language == language));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3844,9 +3756,7 @@ class _$MedicinalProductDefinitionUsageImpl
       jurisdiction,
       language);
 
-  /// Create a copy of MedicinalProductDefinitionUsage
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$MedicinalProductDefinitionUsageImplCopyWith<
@@ -3877,10 +3787,12 @@ abstract class _MedicinalProductDefinitionUsage
   factory _MedicinalProductDefinitionUsage.fromJson(Map<String, dynamic> json) =
       _$MedicinalProductDefinitionUsageImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3888,9 +3800,9 @@ abstract class _MedicinalProductDefinitionUsage
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3904,27 +3816,23 @@ abstract class _MedicinalProductDefinitionUsage
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [country] Country code for where this name applies.
-  @override
   CodeableConcept get country;
+  @override
 
   /// [jurisdiction] Jurisdiction code for where this name applies. A
   ///  jurisdiction may be a sub- or supra-national entity (e.g. a state or a
   ///  geographic region).
-  @override
   CodeableConcept? get jurisdiction;
+  @override
 
   /// [language] Language code for this name.
-  @override
   CodeableConcept get language;
-
-  /// Create a copy of MedicinalProductDefinitionUsage
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$MedicinalProductDefinitionUsageImplCopyWith<
           _$MedicinalProductDefinitionUsageImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3975,12 +3883,8 @@ mixin _$MedicinalProductDefinitionCrossReference {
   ///  parallel import version.
   CodeableConcept? get type => throw _privateConstructorUsedError;
 
-  /// Serializes this MedicinalProductDefinitionCrossReference to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of MedicinalProductDefinitionCrossReference
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $MedicinalProductDefinitionCrossReferenceCopyWith<
           MedicinalProductDefinitionCrossReference>
       get copyWith => throw _privateConstructorUsedError;
@@ -4017,8 +3921,6 @@ class _$MedicinalProductDefinitionCrossReferenceCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of MedicinalProductDefinitionCrossReference
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4052,8 +3954,6 @@ class _$MedicinalProductDefinitionCrossReferenceCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of MedicinalProductDefinitionCrossReference
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res> get product {
@@ -4062,8 +3962,6 @@ class _$MedicinalProductDefinitionCrossReferenceCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MedicinalProductDefinitionCrossReference
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -4109,8 +4007,6 @@ class __$$MedicinalProductDefinitionCrossReferenceImplCopyWithImpl<$Res>
       $Res Function(_$MedicinalProductDefinitionCrossReferenceImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of MedicinalProductDefinitionCrossReference
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4258,7 +4154,7 @@ class _$MedicinalProductDefinitionCrossReferenceImpl
             (identical(other.type, type) || other.type == type));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4268,9 +4164,7 @@ class _$MedicinalProductDefinitionCrossReferenceImpl
       product,
       type);
 
-  /// Create a copy of MedicinalProductDefinitionCrossReference
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$MedicinalProductDefinitionCrossReferenceImplCopyWith<
@@ -4302,10 +4196,12 @@ abstract class _MedicinalProductDefinitionCrossReference
           Map<String, dynamic> json) =
       _$MedicinalProductDefinitionCrossReferenceImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4313,9 +4209,9 @@ abstract class _MedicinalProductDefinitionCrossReference
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4329,24 +4225,20 @@ abstract class _MedicinalProductDefinitionCrossReference
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [product] Reference to another product, e.g. for linking authorised to
   ///  investigational product.
-  @override
   CodeableReference get product;
+  @override
 
   /// [type] The type of relationship, for instance branded to generic, virtual
   ///  to actual product, product to development product (investigational),
   ///  parallel import version.
-  @override
   CodeableConcept? get type;
-
-  /// Create a copy of MedicinalProductDefinitionCrossReference
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$MedicinalProductDefinitionCrossReferenceImplCopyWith<
           _$MedicinalProductDefinitionCrossReferenceImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4405,12 +4297,8 @@ mixin _$MedicinalProductDefinitionOperation {
   CodeableConcept? get confidentialityIndicator =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this MedicinalProductDefinitionOperation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of MedicinalProductDefinitionOperation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $MedicinalProductDefinitionOperationCopyWith<
           MedicinalProductDefinitionOperation>
       get copyWith => throw _privateConstructorUsedError;
@@ -4449,8 +4337,6 @@ class _$MedicinalProductDefinitionOperationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of MedicinalProductDefinitionOperation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4494,8 +4380,6 @@ class _$MedicinalProductDefinitionOperationCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of MedicinalProductDefinitionOperation
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get type {
@@ -4508,8 +4392,6 @@ class _$MedicinalProductDefinitionOperationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MedicinalProductDefinitionOperation
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get effectiveDate {
@@ -4522,8 +4404,6 @@ class _$MedicinalProductDefinitionOperationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MedicinalProductDefinitionOperation
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get confidentialityIndicator {
@@ -4574,8 +4454,6 @@ class __$$MedicinalProductDefinitionOperationImplCopyWithImpl<$Res>
       $Res Function(_$MedicinalProductDefinitionOperationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of MedicinalProductDefinitionOperation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4763,7 +4641,7 @@ class _$MedicinalProductDefinitionOperationImpl
                 other.confidentialityIndicator == confidentialityIndicator));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4775,9 +4653,7 @@ class _$MedicinalProductDefinitionOperationImpl
       const DeepCollectionEquality().hash(_organization),
       confidentialityIndicator);
 
-  /// Create a copy of MedicinalProductDefinitionOperation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$MedicinalProductDefinitionOperationImplCopyWith<
@@ -4810,10 +4686,12 @@ abstract class _MedicinalProductDefinitionOperation
           Map<String, dynamic> json) =
       _$MedicinalProductDefinitionOperationImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4821,9 +4699,9 @@ abstract class _MedicinalProductDefinitionOperation
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4837,34 +4715,30 @@ abstract class _MedicinalProductDefinitionOperation
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] The type of manufacturing operation e.g. manufacturing itself,
   ///  re-packaging. For the authorization of this, a RegulatedAuthorization
   ///  would point to the same plan or activity referenced here.
-  @override
   CodeableReference? get type;
+  @override
 
   /// [effectiveDate] Date range of applicability.
-  @override
   Period? get effectiveDate;
+  @override
 
   /// [organization] The organization or establishment responsible for (or
   ///  associated with) the particular process or step, examples include the
   ///  manufacturer, importer, agent.
-  @override
   List<Reference>? get organization;
+  @override
 
   /// [confidentialityIndicator] Specifies whether this particular business or
   ///  manufacturing process is considered proprietary or confidential.
-  @override
   CodeableConcept? get confidentialityIndicator;
-
-  /// Create a copy of MedicinalProductDefinitionOperation
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$MedicinalProductDefinitionOperationImplCopyWith<
           _$MedicinalProductDefinitionOperationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4950,12 +4824,8 @@ mixin _$MedicinalProductDefinitionCharacteristic {
   /// [valueAttachment] A value for the characteristic.text.
   Attachment? get valueAttachment => throw _privateConstructorUsedError;
 
-  /// Serializes this MedicinalProductDefinitionCharacteristic to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of MedicinalProductDefinitionCharacteristic
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $MedicinalProductDefinitionCharacteristicCopyWith<
           MedicinalProductDefinitionCharacteristic>
       get copyWith => throw _privateConstructorUsedError;
@@ -5004,8 +4874,6 @@ class _$MedicinalProductDefinitionCharacteristicCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of MedicinalProductDefinitionCharacteristic
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5089,8 +4957,6 @@ class _$MedicinalProductDefinitionCharacteristicCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of MedicinalProductDefinitionCharacteristic
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get type {
@@ -5099,8 +4965,6 @@ class _$MedicinalProductDefinitionCharacteristicCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MedicinalProductDefinitionCharacteristic
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get valueCodeableConcept {
@@ -5114,8 +4978,6 @@ class _$MedicinalProductDefinitionCharacteristicCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MedicinalProductDefinitionCharacteristic
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get valueQuantity {
@@ -5128,8 +4990,6 @@ class _$MedicinalProductDefinitionCharacteristicCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of MedicinalProductDefinitionCharacteristic
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get valueAttachment {
@@ -5189,8 +5049,6 @@ class __$$MedicinalProductDefinitionCharacteristicImplCopyWithImpl<$Res>
       $Res Function(_$MedicinalProductDefinitionCharacteristicImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of MedicinalProductDefinitionCharacteristic
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5460,7 +5318,7 @@ class _$MedicinalProductDefinitionCharacteristicImpl
                 other.valueAttachment == valueAttachment));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -5480,9 +5338,7 @@ class _$MedicinalProductDefinitionCharacteristicImpl
       valueBooleanElement,
       valueAttachment);
 
-  /// Create a copy of MedicinalProductDefinitionCharacteristic
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$MedicinalProductDefinitionCharacteristicImplCopyWith<
@@ -5527,10 +5383,12 @@ abstract class _MedicinalProductDefinitionCharacteristic
           Map<String, dynamic> json) =
       _$MedicinalProductDefinitionCharacteristicImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5538,9 +5396,9 @@ abstract class _MedicinalProductDefinitionCharacteristic
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5554,65 +5412,61 @@ abstract class _MedicinalProductDefinitionCharacteristic
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] A code expressing the type of characteristic.
-  @override
   CodeableConcept get type;
+  @override
 
   /// [valueCodeableConcept] A value for the characteristic.text.
-  @override
   CodeableConcept? get valueCodeableConcept;
+  @override
 
   /// [valueMarkdown] A value for the characteristic.text.
-  @override
   FhirMarkdown? get valueMarkdown;
+  @override
 
   /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
-  @override
   @JsonKey(name: '_valueMarkdown')
   PrimitiveElement? get valueMarkdownElement;
+  @override
 
   /// [valueQuantity] A value for the characteristic.text.
-  @override
   Quantity? get valueQuantity;
+  @override
 
   /// [valueInteger] A value for the characteristic.text.
-  @override
   FhirInteger? get valueInteger;
+  @override
 
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
-  @override
   @JsonKey(name: '_valueInteger')
   PrimitiveElement? get valueIntegerElement;
+  @override
 
   /// [valueDate] A value for the characteristic.text.
-  @override
   FhirDate? get valueDate;
+  @override
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
-  @override
   @JsonKey(name: '_valueDate')
   PrimitiveElement? get valueDateElement;
+  @override
 
   /// [valueBoolean] A value for the characteristic.text.
-  @override
   FhirBoolean? get valueBoolean;
+  @override
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
+  @override
 
   /// [valueAttachment] A value for the characteristic.text.
-  @override
   Attachment? get valueAttachment;
-
-  /// Create a copy of MedicinalProductDefinitionCharacteristic
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$MedicinalProductDefinitionCharacteristicImplCopyWith<
           _$MedicinalProductDefinitionCharacteristicImpl>
       get copyWith => throw _privateConstructorUsedError;

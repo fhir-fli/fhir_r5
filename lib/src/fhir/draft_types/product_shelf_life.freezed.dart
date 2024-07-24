@@ -131,12 +131,8 @@ mixin _$ProductShelfLife {
   List<CodeableConcept>? get specialPrecautionsForStorage =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ProductShelfLife to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ProductShelfLife
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ProductShelfLifeCopyWith<ProductShelfLife> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -171,8 +167,6 @@ class _$ProductShelfLifeCopyWithImpl<$Res, $Val extends ProductShelfLife>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ProductShelfLife
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -221,8 +215,6 @@ class _$ProductShelfLifeCopyWithImpl<$Res, $Val extends ProductShelfLife>
     ) as $Val);
   }
 
-  /// Create a copy of ProductShelfLife
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -235,8 +227,6 @@ class _$ProductShelfLifeCopyWithImpl<$Res, $Val extends ProductShelfLife>
     });
   }
 
-  /// Create a copy of ProductShelfLife
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get periodDuration {
@@ -282,8 +272,6 @@ class __$$ProductShelfLifeImplCopyWithImpl<$Res>
       $Res Function(_$ProductShelfLifeImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ProductShelfLife
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -571,7 +559,7 @@ class _$ProductShelfLifeImpl extends _ProductShelfLife {
                 _specialPrecautionsForStorage));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -584,9 +572,7 @@ class _$ProductShelfLifeImpl extends _ProductShelfLife {
       periodStringElement,
       const DeepCollectionEquality().hash(_specialPrecautionsForStorage));
 
-  /// Create a copy of ProductShelfLife
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ProductShelfLifeImplCopyWith<_$ProductShelfLifeImpl> get copyWith =>
@@ -618,12 +604,14 @@ abstract class _ProductShelfLife extends ProductShelfLife {
   factory _ProductShelfLife.fromJson(Map<String, dynamic> json) =
       _$ProductShelfLifeImpl.fromJson;
 
-  /// [id] Unique id for the element within a resource (for internal
-  ///  references). This may be any string value that does not contain spaces.
-  /// [id] Unique id for the element within a resource (for internal
-  ///  references). This may be any string value that does not contain spaces.
   @override
+
+  /// [id] Unique id for the element within a resource (for internal
+  ///  references). This may be any string value that does not contain spaces.
+  /// [id] Unique id for the element within a resource (for internal
+  ///  references). This may be any string value that does not contain spaces.
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional
   ///  information that is not part of the basic definition of the element.
@@ -640,9 +628,9 @@ abstract class _ProductShelfLife extends ProductShelfLife {
   ///  implementer can define an extension, there is a set of requirements
   ///  that
   ///  SHALL be met as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information
   ///  that is not part of the basic definition of the element and that
@@ -672,8 +660,8 @@ abstract class _ProductShelfLife extends ProductShelfLife {
   ///  DomainResource (including cannot change the meaning of
   ///  modifierExtension
   ///  itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] This describes the shelf life, taking into account various
   ///  scenarios such as shelf life of the packaged Medicinal Product itself,
@@ -688,8 +676,8 @@ abstract class _ProductShelfLife extends ProductShelfLife {
   ///  first opening of a bottle, etc. The shelf life type shall be specified
   ///  using an appropriate controlled vocabulary The controlled term and the
   ///  controlled term identifier shall be specified.
-  @override
   CodeableConcept? get type;
+  @override
 
   /// [periodDuration] The shelf life time period can be specified using a
   ///  numerical value for the period of time and its unit of time
@@ -702,8 +690,8 @@ abstract class _ProductShelfLife extends ProductShelfLife {
   ///  and the resulting terminology The symbol and the symbol identifier
   ///  shall
   ///  be used.
-  @override
   FhirDuration? get periodDuration;
+  @override
 
   /// [periodString] The shelf life time period can be specified using a
   ///  numerical value for the period of time and its unit of time
@@ -716,14 +704,14 @@ abstract class _ProductShelfLife extends ProductShelfLife {
   ///  and the resulting terminology The symbol and the symbol identifier
   ///  shall
   ///  be used.
-  @override
   String? get periodString;
+  @override
 
   /// [periodStringElement] ("_periodString") Extensions for periodString
   /// [periodStringElement] ("_periodString") Extensions for periodString
-  @override
   @JsonKey(name: '_periodString')
   PrimitiveElement? get periodStringElement;
+  @override
 
   /// [specialPrecautionsForStorage] Special precautions for storage, if any,
   ///  can be specified using an appropriate controlled vocabulary The
@@ -731,13 +719,9 @@ abstract class _ProductShelfLife extends ProductShelfLife {
   /// [specialPrecautionsForStorage] Special precautions for storage, if any,
   ///  can be specified using an appropriate controlled vocabulary The
   ///  controlled term and the controlled term identifier shall be specified.
-  @override
   List<CodeableConcept>? get specialPrecautionsForStorage;
-
-  /// Create a copy of ProductShelfLife
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ProductShelfLifeImplCopyWith<_$ProductShelfLifeImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

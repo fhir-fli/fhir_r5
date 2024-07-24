@@ -94,12 +94,8 @@ mixin _$VirtualServiceDetail {
   @JsonKey(name: '_sessionKey')
   PrimitiveElement? get sessionKeyElement => throw _privateConstructorUsedError;
 
-  /// Serializes this VirtualServiceDetail to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of VirtualServiceDetail
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $VirtualServiceDetailCopyWith<VirtualServiceDetail> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -145,8 +141,6 @@ class _$VirtualServiceDetailCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of VirtualServiceDetail
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -230,8 +224,6 @@ class _$VirtualServiceDetailCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of VirtualServiceDetail
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get channelType {
@@ -244,8 +236,6 @@ class _$VirtualServiceDetailCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of VirtualServiceDetail
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactPointCopyWith<$Res>? get addressContactPoint {
@@ -258,8 +248,6 @@ class _$VirtualServiceDetailCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of VirtualServiceDetail
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ExtendedContactDetailCopyWith<$Res>? get addressExtendedContactDetail {
@@ -318,8 +306,6 @@ class __$$VirtualServiceDetailImplCopyWithImpl<$Res>
       $Res Function(_$VirtualServiceDetailImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of VirtualServiceDetail
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -593,7 +579,7 @@ class _$VirtualServiceDetailImpl extends _VirtualServiceDetail {
                 other.sessionKeyElement == sessionKeyElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -613,9 +599,7 @@ class _$VirtualServiceDetailImpl extends _VirtualServiceDetail {
       sessionKey,
       sessionKeyElement);
 
-  /// Create a copy of VirtualServiceDetail
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$VirtualServiceDetailImplCopyWith<_$VirtualServiceDetailImpl>
@@ -657,10 +641,12 @@ abstract class _VirtualServiceDetail extends VirtualServiceDetail {
   factory _VirtualServiceDetail.fromJson(Map<String, dynamic> json) =
       _$VirtualServiceDetailImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -668,84 +654,80 @@ abstract class _VirtualServiceDetail extends VirtualServiceDetail {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [channelType] The type of virtual service to connect to (i.e. Teams, Zoom,
   ///  Specific VMR technology, WhatsApp).
-  @override
   Coding? get channelType;
+  @override
 
   /// [addressUrl] What address or number needs to be used for a user to connect
   ///  to the virtual service to join. The channelType informs as to which
   ///  datatype is appropriate to use (requires knowledge of the specific type).
-  @override
   FhirUrl? get addressUrl;
+  @override
 
   /// [addressUrlElement] ("_addressUrl") Extensions for addressUrl
-  @override
   @JsonKey(name: '_addressUrl')
   PrimitiveElement? get addressUrlElement;
+  @override
 
   /// [addressString] What address or number needs to be used for a user to
   ///  connect to the virtual service to join. The channelType informs as to
   ///  which datatype is appropriate to use (requires knowledge of the specific
   ///  type).
-  @override
   String? get addressString;
+  @override
 
   /// [addressStringElement] ("_addressString") Extensions for addressString
-  @override
   @JsonKey(name: '_addressString')
   PrimitiveElement? get addressStringElement;
+  @override
 
   /// [addressContactPoint] What address or number needs to be used for a user to
   ///  connect to the virtual service to join. The channelType informs as to
   ///  which datatype is appropriate to use (requires knowledge of the specific
   ///  type).
-  @override
   ContactPoint? get addressContactPoint;
+  @override
 
   /// [addressExtendedContactDetail] What address or number needs to be used for
   ///  a user to connect to the virtual service to join. The channelType informs
   ///  as to which datatype is appropriate to use (requires knowledge of the
   ///  specific type).
-  @override
   ExtendedContactDetail? get addressExtendedContactDetail;
+  @override
 
   /// [additionalInfo] Address to see alternative connection details.
-  @override
   List<FhirUrl>? get additionalInfo;
+  @override
 
   /// [additionalInfoElement] ("_additionalInfo") Extensions for additionalInfo
-  @override
   @JsonKey(name: '_additionalInfo')
   List<PrimitiveElement>? get additionalInfoElement;
+  @override
 
   /// [maxParticipants] Maximum number of participants supported by the virtual
   ///  service.
-  @override
   FhirPositiveInt? get maxParticipants;
+  @override
 
   /// [maxParticipantsElement] ("_maxParticipants") Extensions for maxParticipants
-  @override
   @JsonKey(name: '_maxParticipants')
   PrimitiveElement? get maxParticipantsElement;
+  @override
 
   /// [sessionKey] Session Key required by the virtual service.
-  @override
   String? get sessionKey;
+  @override
 
   /// [sessionKeyElement] ("_sessionKey") Extensions for sessionKey
-  @override
   @JsonKey(name: '_sessionKey')
   PrimitiveElement? get sessionKeyElement;
-
-  /// Create a copy of VirtualServiceDetail
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$VirtualServiceDetailImplCopyWith<_$VirtualServiceDetailImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

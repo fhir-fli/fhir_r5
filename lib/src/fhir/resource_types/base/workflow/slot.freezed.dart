@@ -155,12 +155,8 @@ mixin _$Slot {
   @JsonKey(name: '_comment')
   PrimitiveElement? get commentElement => throw _privateConstructorUsedError;
 
-  /// Serializes this Slot to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Slot
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SlotCopyWith<Slot> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -214,8 +210,6 @@ class _$SlotCopyWithImpl<$Res, $Val extends Slot>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Slot
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -359,8 +353,6 @@ class _$SlotCopyWithImpl<$Res, $Val extends Slot>
     ) as $Val);
   }
 
-  /// Create a copy of Slot
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -373,8 +365,6 @@ class _$SlotCopyWithImpl<$Res, $Val extends Slot>
     });
   }
 
-  /// Create a copy of Slot
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -387,8 +377,6 @@ class _$SlotCopyWithImpl<$Res, $Val extends Slot>
     });
   }
 
-  /// Create a copy of Slot
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get schedule {
@@ -450,8 +438,6 @@ class __$$SlotImplCopyWithImpl<$Res>
   __$$SlotImplCopyWithImpl(_$SlotImpl _value, $Res Function(_$SlotImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Slot
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -956,7 +942,7 @@ class _$SlotImpl extends _Slot {
                 other.commentElement == commentElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -989,9 +975,7 @@ class _$SlotImpl extends _Slot {
         commentElement
       ]);
 
-  /// Create a copy of Slot
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SlotImplCopyWith<_$SlotImpl> get copyWith =>
@@ -1041,42 +1025,44 @@ abstract class _Slot extends Slot {
 
   factory _Slot.fromJson(Map<String, dynamic> json) = _$SlotImpl.fromJson;
 
-  /// [resourceType] This is a Slot resource
   @override
+
+  /// [resourceType] This is a Slot resource
   @JsonKey(unknownEnumValue: R5ResourceType.Slot)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1084,16 +1070,16 @@ abstract class _Slot extends Slot {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1101,9 +1087,9 @@ abstract class _Slot extends Slot {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1117,91 +1103,87 @@ abstract class _Slot extends Slot {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] External Ids for this item.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [serviceCategory] A broad categorization of the service that is to be
   ///  performed during this appointment.
-  @override
   List<CodeableConcept>? get serviceCategory;
+  @override
 
   /// [serviceType] The type of appointments that can be booked into this slot
   ///  (ideally this would be an identifiable service - which is at a location,
   ///  rather than the location itself). If provided then this overrides the
   ///  value provided on the Schedule resource.
-  @override
   List<CodeableReference>? get serviceType;
+  @override
 
   /// [specialty] The specialty of a practitioner that would be required to
   ///  perform the service requested in this appointment.
-  @override
   List<CodeableConcept>? get specialty;
+  @override
 
   /// [appointmentType] The style of appointment or patient that may be booked in
   ///  the slot (not service type).
-  @override
   List<CodeableConcept>? get appointmentType;
+  @override
 
   /// [schedule] The schedule resource that this slot defines an interval of
   ///  status information.
-  @override
   Reference get schedule;
+  @override
 
   /// [status] busy | free | busy-unavailable | busy-tentative | entered-in-error.
-  @override
   SlotStatus? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [start] Date/Time that the slot is to begin.
-  @override
   FhirInstant? get start;
+  @override
 
   /// [startElement] ("_start") Extensions for start
-  @override
   @JsonKey(name: '_start')
   PrimitiveElement? get startElement;
+  @override
 
   /// [end] Date/Time that the slot is to conclude.
-  @override
   FhirInstant? get end;
+  @override
 
   /// [endElement] ("_end") Extensions for end
-  @override
   @JsonKey(name: '_end')
   PrimitiveElement? get endElement;
+  @override
 
   /// [overbooked] This slot has already been overbooked, appointments are
   ///  unlikely to be accepted for this time.
-  @override
   FhirBoolean? get overbooked;
+  @override
 
   /// [overbookedElement] ("_overbooked") Extensions for overbooked
-  @override
   @JsonKey(name: '_overbooked')
   PrimitiveElement? get overbookedElement;
+  @override
 
   /// [comment] Comments on the slot to describe any extended information. Such
   ///  as custom constraints on the slot.
-  @override
   String? get comment;
+  @override
 
   /// [commentElement] ("_comment") Extensions for comment
-  @override
   @JsonKey(name: '_comment')
   PrimitiveElement? get commentElement;
-
-  /// Create a copy of Slot
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SlotImplCopyWith<_$SlotImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

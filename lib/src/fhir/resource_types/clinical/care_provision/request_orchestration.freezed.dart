@@ -192,12 +192,8 @@ mixin _$RequestOrchestration {
   List<RequestOrchestrationAction>? get action =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this RequestOrchestration to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of RequestOrchestration
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $RequestOrchestrationCopyWith<RequestOrchestration> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -268,8 +264,6 @@ class _$RequestOrchestrationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of RequestOrchestration
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -453,8 +447,6 @@ class _$RequestOrchestrationCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of RequestOrchestration
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -467,8 +459,6 @@ class _$RequestOrchestrationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of RequestOrchestration
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -481,8 +471,6 @@ class _$RequestOrchestrationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of RequestOrchestration
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get groupIdentifier {
@@ -495,8 +483,6 @@ class _$RequestOrchestrationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of RequestOrchestration
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -509,8 +495,6 @@ class _$RequestOrchestrationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of RequestOrchestration
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get subject {
@@ -523,8 +507,6 @@ class _$RequestOrchestrationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of RequestOrchestration
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get encounter {
@@ -537,8 +519,6 @@ class _$RequestOrchestrationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of RequestOrchestration
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get author {
@@ -624,8 +604,6 @@ class __$$RequestOrchestrationImplCopyWithImpl<$Res>
       $Res Function(_$RequestOrchestrationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of RequestOrchestration
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1302,7 +1280,7 @@ class _$RequestOrchestrationImpl extends _RequestOrchestration {
             const DeepCollectionEquality().equals(other._action, _action));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1343,9 +1321,7 @@ class _$RequestOrchestrationImpl extends _RequestOrchestration {
         const DeepCollectionEquality().hash(_action)
       ]);
 
-  /// Create a copy of RequestOrchestration
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$RequestOrchestrationImplCopyWith<_$RequestOrchestrationImpl>
@@ -1408,42 +1384,44 @@ abstract class _RequestOrchestration extends RequestOrchestration {
   factory _RequestOrchestration.fromJson(Map<String, dynamic> json) =
       _$RequestOrchestrationImpl.fromJson;
 
-  /// [resourceType] This is a RequestOrchestration resource
   @override
+
+  /// [resourceType] This is a RequestOrchestration resource
   @JsonKey(unknownEnumValue: R5ResourceType.RequestOrchestration)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1451,16 +1429,16 @@ abstract class _RequestOrchestration extends RequestOrchestration {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1468,9 +1446,9 @@ abstract class _RequestOrchestration extends RequestOrchestration {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1484,46 +1462,46 @@ abstract class _RequestOrchestration extends RequestOrchestration {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] Allows a service to provide a unique, business identifier for
   ///  the request.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [instantiatesCanonical] A canonical URL referencing a FHIR-defined
   ///  protocol, guideline, orderset or other definition that is adhered to in
   ///  whole or in part by this request.
-  @override
   List<FhirCanonical>? get instantiatesCanonical;
+  @override
 
   /// [instantiatesCanonicalElement] ("_instantiatesCanonical") Extensions for
   ///  instantiatesCanonical
-  @override
   @JsonKey(name: '_instantiatesCanonical')
   List<PrimitiveElement>? get instantiatesCanonicalElement;
+  @override
 
   /// [instantiatesUri] A URL referencing an externally defined protocol,
   ///  guideline, orderset or other definition that is adhered to in whole or in
   ///  part by this request.
-  @override
   List<FhirUri>? get instantiatesUri;
+  @override
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
-  @override
   @JsonKey(name: '_instantiatesUri')
   List<PrimitiveElement>? get instantiatesUriElement;
+  @override
 
   /// [basedOn] A plan, proposal or order that is fulfilled in whole or in part
   ///  by this request.
-  @override
   List<Reference>? get basedOn;
+  @override
 
   /// [replaces] Completed or terminated request(s) whose function is taken by
   ///  this new request.
-  @override
   List<Reference>? get replaces;
+  @override
 
   /// [groupIdentifier] A shared identifier common to multiple independent
   ///  Request instances that were activated/authorized more or less
@@ -1532,87 +1510,83 @@ abstract class _RequestOrchestration extends RequestOrchestration {
   ///  ramifications in terms of reporting of results, billing, etc.  E.g. a
   ///  requisition number shared by a set of lab tests ordered together, or a
   ///  prescription number shared by all meds ordered at one time.
-  @override
   Identifier? get groupIdentifier;
+  @override
 
   /// [status] The current state of the request. For request orchestrations, the
   ///  status reflects the status of all the requests in the orchestration.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [intent] Indicates the level of authority/intentionality associated with
   ///  the request and where the request fits into the workflow chain.
-  @override
   FhirCode? get intent;
+  @override
 
   /// [intentElement] ("_intent") Extensions for intent
-  @override
   @JsonKey(name: '_intent')
   PrimitiveElement? get intentElement;
+  @override
 
   /// [priority] Indicates how quickly the request should be addressed with
   ///  respect to other requests.
-  @override
   FhirCode? get priority;
+  @override
 
   /// [priorityElement] ("_priority") Extensions for priority
-  @override
   @JsonKey(name: '_priority')
   PrimitiveElement? get priorityElement;
+  @override
 
   /// [code] A code that identifies what the overall request orchestration is.
-  @override
   CodeableConcept? get code;
+  @override
 
   /// [subject] The subject for which the request orchestration was created.
-  @override
   Reference? get subject;
+  @override
 
   /// [encounter] Describes the context of the request orchestration, if any.
-  @override
   Reference? get encounter;
+  @override
 
   /// [authoredOn] Indicates when the request orchestration was created.
-  @override
   FhirDateTime? get authoredOn;
+  @override
 
   /// [authoredOnElement] ("_authoredOn") Extensions for authoredOn
-  @override
   @JsonKey(name: '_authoredOn')
   PrimitiveElement? get authoredOnElement;
+  @override
 
   /// [author] Provides a reference to the author of the request orchestration.
-  @override
   Reference? get author;
+  @override
 
   /// [reason] Describes the reason for the request orchestration in coded or
   ///  textual form.
-  @override
   List<CodeableReference>? get reason;
+  @override
 
   /// [goal] Goals that are intended to be achieved by following the requests in
   ///  this RequestOrchestration.
-  @override
   List<Reference>? get goal;
+  @override
 
   /// [note] Provides a mechanism to communicate additional information about the
   ///  response.
-  @override
   List<Annotation>? get note;
+  @override
 
   /// [action] The actions, if any, produced by the evaluation of the artifact.
-  @override
   List<RequestOrchestrationAction>? get action;
-
-  /// Create a copy of RequestOrchestration
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$RequestOrchestrationImplCopyWith<_$RequestOrchestrationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1872,12 +1846,8 @@ mixin _$RequestOrchestrationAction {
   List<RequestOrchestrationAction>? get action =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this RequestOrchestrationAction to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of RequestOrchestrationAction
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $RequestOrchestrationActionCopyWith<RequestOrchestrationAction>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1968,8 +1938,6 @@ class _$RequestOrchestrationActionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of RequestOrchestrationAction
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2228,8 +2196,6 @@ class _$RequestOrchestrationActionCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of RequestOrchestrationAction
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get timingAge {
@@ -2242,8 +2208,6 @@ class _$RequestOrchestrationActionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of RequestOrchestrationAction
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get timingPeriod {
@@ -2256,8 +2220,6 @@ class _$RequestOrchestrationActionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of RequestOrchestrationAction
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get timingDuration {
@@ -2270,8 +2232,6 @@ class _$RequestOrchestrationActionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of RequestOrchestrationAction
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get timingRange {
@@ -2284,8 +2244,6 @@ class _$RequestOrchestrationActionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of RequestOrchestrationAction
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get timingTiming {
@@ -2298,8 +2256,6 @@ class _$RequestOrchestrationActionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of RequestOrchestrationAction
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get location {
@@ -2312,8 +2268,6 @@ class _$RequestOrchestrationActionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of RequestOrchestrationAction
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -2326,8 +2280,6 @@ class _$RequestOrchestrationActionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of RequestOrchestrationAction
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get resource {
@@ -2436,8 +2388,6 @@ class __$$RequestOrchestrationActionImplCopyWithImpl<$Res>
       $Res Function(_$RequestOrchestrationActionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of RequestOrchestrationAction
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3285,7 +3235,7 @@ class _$RequestOrchestrationActionImpl extends _RequestOrchestrationAction {
             const DeepCollectionEquality().equals(other._action, _action));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -3341,9 +3291,7 @@ class _$RequestOrchestrationActionImpl extends _RequestOrchestrationAction {
         const DeepCollectionEquality().hash(_action)
       ]);
 
-  /// Create a copy of RequestOrchestrationAction
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$RequestOrchestrationActionImplCopyWith<_$RequestOrchestrationActionImpl>
@@ -3425,10 +3373,12 @@ abstract class _RequestOrchestrationAction extends RequestOrchestrationAction {
   factory _RequestOrchestrationAction.fromJson(Map<String, dynamic> json) =
       _$RequestOrchestrationActionImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3436,9 +3386,9 @@ abstract class _RequestOrchestrationAction extends RequestOrchestrationAction {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3452,262 +3402,258 @@ abstract class _RequestOrchestrationAction extends RequestOrchestrationAction {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [linkId] The linkId of the action from the PlanDefinition that corresponds
   ///  to this action in the RequestOrchestration resource.
-  @override
   String? get linkId;
+  @override
 
   /// [linkIdElement] ("_linkId") Extensions for linkId
-  @override
   @JsonKey(name: '_linkId')
   PrimitiveElement? get linkIdElement;
+  @override
 
   /// [prefix] A user-visible prefix for the action. For example a section or
   ///  item numbering such as 1. or A.
-  @override
   String? get prefix;
+  @override
 
   /// [prefixElement] ("_prefix") Extensions for prefix
-  @override
   @JsonKey(name: '_prefix')
   PrimitiveElement? get prefixElement;
+  @override
 
   /// [title] The title of the action displayed to a user.
-  @override
   String? get title;
+  @override
 
   /// [titleElement] ("_title") Extensions for title
-  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
+  @override
 
   /// [description] A short description of the action used to provide a summary
   ///  to display to the user.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [textEquivalent] A text equivalent of the action to be performed. This
   ///  provides a human-interpretable description of the action when the
   ///  definition is consumed by a system that might not be capable of
   ///  interpreting it dynamically.
-  @override
   FhirMarkdown? get textEquivalent;
+  @override
 
   /// [textEquivalentElement] ("_textEquivalent") Extensions for textEquivalent
-  @override
   @JsonKey(name: '_textEquivalent')
   PrimitiveElement? get textEquivalentElement;
+  @override
 
   /// [priority] Indicates how quickly the action should be addressed with
   ///  respect to other actions.
-  @override
   FhirCode? get priority;
+  @override
 
   /// [priorityElement] ("_priority") Extensions for priority
-  @override
   @JsonKey(name: '_priority')
   PrimitiveElement? get priorityElement;
+  @override
 
   /// [code] A code that provides meaning for the action or action group. For
   ///  example, a section may have a LOINC code for a section of a documentation
   ///  template.
-  @override
   List<CodeableConcept>? get code;
+  @override
 
   /// [documentation] Didactic or other informational resources associated with
   ///  the action that can be provided to the CDS recipient. Information
   ///  resources can include inline text commentary and links to web resources.
-  @override
   List<RelatedArtifact>? get documentation;
+  @override
 
   /// [goal] Goals that are intended to be achieved by following the requests in
   ///  this action.
-  @override
   List<Reference>? get goal;
+  @override
 
   /// [condition] An expression that describes applicability criteria, or
   ///  start/stop conditions for the action.
-  @override
   List<RequestOrchestrationCondition>? get condition;
+  @override
 
   /// [input] Defines input data requirements for the action.
-  @override
   List<RequestOrchestrationInput>? get input;
+  @override
 
   /// [output] Defines the outputs of the action, if any.
-  @override
   List<RequestOrchestrationOutput>? get output;
+  @override
 
   /// [relatedAction] A relationship to another action such as "before" or "30-60
   ///  minutes after start of".
-  @override
   List<RequestOrchestrationRelatedAction>? get relatedAction;
+  @override
 
   /// [timingDateTime] An optional value describing when the action should be
   ///  performed.
-  @override
   FhirDateTime? get timingDateTime;
+  @override
 
   /// [timingDateTimeElement] ("_timingDateTime") Extensions for timingDateTime
-  @override
   @JsonKey(name: '_timingDateTime')
   PrimitiveElement? get timingDateTimeElement;
+  @override
 
   /// [timingAge] An optional value describing when the action should be
   ///  performed.
-  @override
   Age? get timingAge;
+  @override
 
   /// [timingPeriod] An optional value describing when the action should be
   ///  performed.
-  @override
   Period? get timingPeriod;
+  @override
 
   /// [timingDuration] An optional value describing when the action should be
   ///  performed.
-  @override
   FhirDuration? get timingDuration;
+  @override
 
   /// [timingRange] An optional value describing when the action should be
   ///  performed.
-  @override
   Range? get timingRange;
+  @override
 
   /// [timingTiming] An optional value describing when the action should be
   ///  performed.
-  @override
   Timing? get timingTiming;
+  @override
 
   /// [location] Identifies the facility where the action will occur; e.g. home,
   ///  hospital, specific clinic, etc.
-  @override
   CodeableReference? get location;
+  @override
 
   /// [participant] The participant that should perform or be responsible for
   ///  this action.
-  @override
   List<RequestOrchestrationParticipant>? get participant;
+  @override
 
   /// [type] The type of action to perform (create, update, remove).
-  @override
   CodeableConcept? get type;
+  @override
 
   /// [groupingBehavior] Defines the grouping behavior for the action and its
   ///  children.
-  @override
   FhirCode? get groupingBehavior;
+  @override
 
   /// [groupingBehaviorElement] ("_groupingBehavior") Extensions for
   ///  groupingBehavior
-  @override
   @JsonKey(name: '_groupingBehavior')
   PrimitiveElement? get groupingBehaviorElement;
+  @override
 
   /// [selectionBehavior] Defines the selection behavior for the action and its
   ///  children.
-  @override
   FhirCode? get selectionBehavior;
+  @override
 
   /// [selectionBehaviorElement] ("_selectionBehavior") Extensions for
   ///  selectionBehavior
-  @override
   @JsonKey(name: '_selectionBehavior')
   PrimitiveElement? get selectionBehaviorElement;
+  @override
 
   /// [requiredBehavior] Defines expectations around whether an action is
   ///  required.
-  @override
   FhirCode? get requiredBehavior;
+  @override
 
   /// [requiredBehaviorElement] ("_requiredBehavior") Extensions for
   ///  requiredBehavior
-  @override
   @JsonKey(name: '_requiredBehavior')
   PrimitiveElement? get requiredBehaviorElement;
+  @override
 
   /// [precheckBehavior] Defines whether the action should usually be preselected.
-  @override
   FhirCode? get precheckBehavior;
+  @override
 
   /// [precheckBehaviorElement] ("_precheckBehavior") Extensions for
   ///  precheckBehavior
-  @override
   @JsonKey(name: '_precheckBehavior')
   PrimitiveElement? get precheckBehaviorElement;
+  @override
 
   /// [cardinalityBehavior] Defines whether the action can be selected multiple
   ///  times.
-  @override
   FhirCode? get cardinalityBehavior;
+  @override
 
   /// [cardinalityBehaviorElement] ("_cardinalityBehavior") Extensions for
   ///  cardinalityBehavior
-  @override
   @JsonKey(name: '_cardinalityBehavior')
   PrimitiveElement? get cardinalityBehaviorElement;
+  @override
 
   /// [resource] The resource that is the target of the action (e.g.
   ///  CommunicationRequest).
-  @override
   Reference? get resource;
+  @override
 
   /// [definitionCanonical] A reference to an ActivityDefinition that describes
   ///  the action to be taken in detail, a PlanDefinition that describes a series
   ///  of actions to be taken, a Questionnaire that should be filled out, a
   ///  SpecimenDefinition describing a specimen to be collected, or an
   ///  ObservationDefinition that specifies what observation should be captured.
-  @override
   FhirCanonical? get definitionCanonical;
+  @override
 
   /// [definitionCanonicalElement] ("_definitionCanonical") Extensions for
   ///  definitionCanonical
-  @override
   @JsonKey(name: '_definitionCanonical')
   PrimitiveElement? get definitionCanonicalElement;
+  @override
 
   /// [definitionUri] A reference to an ActivityDefinition that describes the
   ///  action to be taken in detail, a PlanDefinition that describes a series of
   ///  actions to be taken, a Questionnaire that should be filled out, a
   ///  SpecimenDefinition describing a specimen to be collected, or an
   ///  ObservationDefinition that specifies what observation should be captured.
-  @override
   FhirUri? get definitionUri;
+  @override
 
   /// [definitionUriElement] ("_definitionUri") Extensions for definitionUri
-  @override
   @JsonKey(name: '_definitionUri')
   PrimitiveElement? get definitionUriElement;
+  @override
 
   /// [transform] A reference to a StructureMap resource that defines a transform
   ///  that can be executed to produce the intent resource using the
   ///  ActivityDefinition instance as the input.
-  @override
   FhirCanonical? get transform;
+  @override
 
   /// [dynamicValue] Customizations that should be applied to the statically
   ///  defined resource. For example, if the dosage of a medication must be
   ///  computed based on the patient's weight, a customization would be used to
   ///  specify an expression that calculated the weight, and the path on the
   ///  resource that would contain the result.
-  @override
   List<RequestOrchestrationDynamicValue>? get dynamicValue;
+  @override
 
   /// [action] Sub actions.
-  @override
   List<RequestOrchestrationAction>? get action;
-
-  /// Create a copy of RequestOrchestrationAction
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$RequestOrchestrationActionImplCopyWith<_$RequestOrchestrationActionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3758,12 +3704,8 @@ mixin _$RequestOrchestrationCondition {
   ///  or not the condition is satisfied.
   FhirExpression? get expression => throw _privateConstructorUsedError;
 
-  /// Serializes this RequestOrchestrationCondition to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of RequestOrchestrationCondition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $RequestOrchestrationConditionCopyWith<RequestOrchestrationCondition>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3798,8 +3740,6 @@ class _$RequestOrchestrationConditionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of RequestOrchestrationCondition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3838,8 +3778,6 @@ class _$RequestOrchestrationConditionCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of RequestOrchestrationCondition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirExpressionCopyWith<$Res>? get expression {
@@ -3884,8 +3822,6 @@ class __$$RequestOrchestrationConditionImplCopyWithImpl<$Res>
       $Res Function(_$RequestOrchestrationConditionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of RequestOrchestrationCondition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4045,7 +3981,7 @@ class _$RequestOrchestrationConditionImpl
                 other.expression == expression));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4056,9 +3992,7 @@ class _$RequestOrchestrationConditionImpl
       kindElement,
       expression);
 
-  /// Create a copy of RequestOrchestrationCondition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$RequestOrchestrationConditionImplCopyWith<
@@ -4088,10 +4022,12 @@ abstract class _RequestOrchestrationCondition
   factory _RequestOrchestrationCondition.fromJson(Map<String, dynamic> json) =
       _$RequestOrchestrationConditionImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4099,9 +4035,9 @@ abstract class _RequestOrchestrationCondition
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4115,27 +4051,23 @@ abstract class _RequestOrchestrationCondition
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [kind] The kind of condition.
-  @override
   FhirCode? get kind;
+  @override
 
   /// [kindElement] ("_kind") Extensions for kind
-  @override
   @JsonKey(name: '_kind')
   PrimitiveElement? get kindElement;
+  @override
 
   /// [expression] An expression that returns true or false, indicating whether
   ///  or not the condition is satisfied.
-  @override
   FhirExpression? get expression;
-
-  /// Create a copy of RequestOrchestrationCondition
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$RequestOrchestrationConditionImplCopyWith<
           _$RequestOrchestrationConditionImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4199,12 +4131,8 @@ mixin _$RequestOrchestrationInput {
   PrimitiveElement? get relatedDataElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this RequestOrchestrationInput to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of RequestOrchestrationInput
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $RequestOrchestrationInputCopyWith<RequestOrchestrationInput> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4239,8 +4167,6 @@ class _$RequestOrchestrationInputCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of RequestOrchestrationInput
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4289,8 +4215,6 @@ class _$RequestOrchestrationInputCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of RequestOrchestrationInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DataRequirementCopyWith<$Res>? get requirement {
@@ -4337,8 +4261,6 @@ class __$$RequestOrchestrationInputImplCopyWithImpl<$Res>
       $Res Function(_$RequestOrchestrationInputImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of RequestOrchestrationInput
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4525,7 +4447,7 @@ class _$RequestOrchestrationInputImpl extends _RequestOrchestrationInput {
                 other.relatedDataElement == relatedDataElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4538,9 +4460,7 @@ class _$RequestOrchestrationInputImpl extends _RequestOrchestrationInput {
       relatedData,
       relatedDataElement);
 
-  /// Create a copy of RequestOrchestrationInput
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$RequestOrchestrationInputImplCopyWith<_$RequestOrchestrationInputImpl>
@@ -4572,10 +4492,12 @@ abstract class _RequestOrchestrationInput extends RequestOrchestrationInput {
   factory _RequestOrchestrationInput.fromJson(Map<String, dynamic> json) =
       _$RequestOrchestrationInputImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4583,9 +4505,9 @@ abstract class _RequestOrchestrationInput extends RequestOrchestrationInput {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4599,40 +4521,36 @@ abstract class _RequestOrchestrationInput extends RequestOrchestrationInput {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [title] A human-readable label for the data requirement used to label data
   ///  flows in BPMN or similar diagrams. Also provides a human readable label
   ///  when rendering the data requirement that conveys its purpose to human
   ///  readers.
-  @override
   String? get title;
+  @override
 
   /// [titleElement] ("_title") Extensions for title
-  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
+  @override
 
   /// [requirement] Defines the data that is to be provided as input to the
   ///  action.
-  @override
   DataRequirement? get requirement;
+  @override
 
   /// [relatedData] Points to an existing input or output element that provides
   ///  data to this input.
-  @override
   FhirId? get relatedData;
+  @override
 
   /// [relatedDataElement] ("_relatedData") Extensions for relatedData
-  @override
   @JsonKey(name: '_relatedData')
   PrimitiveElement? get relatedDataElement;
-
-  /// Create a copy of RequestOrchestrationInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$RequestOrchestrationInputImplCopyWith<_$RequestOrchestrationInputImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4694,12 +4612,8 @@ mixin _$RequestOrchestrationOutput {
   PrimitiveElement? get relatedDataElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this RequestOrchestrationOutput to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of RequestOrchestrationOutput
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $RequestOrchestrationOutputCopyWith<RequestOrchestrationOutput>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4735,8 +4649,6 @@ class _$RequestOrchestrationOutputCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of RequestOrchestrationOutput
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4785,8 +4697,6 @@ class _$RequestOrchestrationOutputCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of RequestOrchestrationOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DataRequirementCopyWith<$Res>? get requirement {
@@ -4833,8 +4743,6 @@ class __$$RequestOrchestrationOutputImplCopyWithImpl<$Res>
       $Res Function(_$RequestOrchestrationOutputImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of RequestOrchestrationOutput
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5021,7 +4929,7 @@ class _$RequestOrchestrationOutputImpl extends _RequestOrchestrationOutput {
                 other.relatedDataElement == relatedDataElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -5034,9 +4942,7 @@ class _$RequestOrchestrationOutputImpl extends _RequestOrchestrationOutput {
       relatedData,
       relatedDataElement);
 
-  /// Create a copy of RequestOrchestrationOutput
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$RequestOrchestrationOutputImplCopyWith<_$RequestOrchestrationOutputImpl>
@@ -5068,10 +4974,12 @@ abstract class _RequestOrchestrationOutput extends RequestOrchestrationOutput {
   factory _RequestOrchestrationOutput.fromJson(Map<String, dynamic> json) =
       _$RequestOrchestrationOutputImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5079,9 +4987,9 @@ abstract class _RequestOrchestrationOutput extends RequestOrchestrationOutput {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5095,39 +5003,35 @@ abstract class _RequestOrchestrationOutput extends RequestOrchestrationOutput {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [title] A human-readable label for the data requirement used to label data
   ///  flows in BPMN or similar diagrams. Also provides a human readable label
   ///  when rendering the data requirement that conveys its purpose to human
   ///  readers.
-  @override
   String? get title;
+  @override
 
   /// [titleElement] ("_title") Extensions for title
-  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
+  @override
 
   /// [requirement] Defines the data that results as output from the action.
-  @override
   DataRequirement? get requirement;
+  @override
 
   /// [relatedData] Points to an existing input or output element that is results
   ///  as output from the action.
-  @override
   String? get relatedData;
+  @override
 
   /// [relatedDataElement] ("_relatedData") Extensions for relatedData
-  @override
   @JsonKey(name: '_relatedData')
   PrimitiveElement? get relatedDataElement;
-
-  /// Create a copy of RequestOrchestrationOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$RequestOrchestrationOutputImplCopyWith<_$RequestOrchestrationOutputImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -5199,12 +5103,8 @@ mixin _$RequestOrchestrationRelatedAction {
   ///  relationship. For example, 30-60 minutes before.
   Range? get offsetRange => throw _privateConstructorUsedError;
 
-  /// Serializes this RequestOrchestrationRelatedAction to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of RequestOrchestrationRelatedAction
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $RequestOrchestrationRelatedActionCopyWith<RequestOrchestrationRelatedAction>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -5246,8 +5146,6 @@ class _$RequestOrchestrationRelatedActionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of RequestOrchestrationRelatedAction
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5311,8 +5209,6 @@ class _$RequestOrchestrationRelatedActionCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of RequestOrchestrationRelatedAction
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get offsetDuration {
@@ -5325,8 +5221,6 @@ class _$RequestOrchestrationRelatedActionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of RequestOrchestrationRelatedAction
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get offsetRange {
@@ -5379,8 +5273,6 @@ class __$$RequestOrchestrationRelatedActionImplCopyWithImpl<$Res>
       $Res Function(_$RequestOrchestrationRelatedActionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of RequestOrchestrationRelatedAction
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5605,7 +5497,7 @@ class _$RequestOrchestrationRelatedActionImpl
                 other.offsetRange == offsetRange));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -5621,9 +5513,7 @@ class _$RequestOrchestrationRelatedActionImpl
       offsetDuration,
       offsetRange);
 
-  /// Create a copy of RequestOrchestrationRelatedAction
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$RequestOrchestrationRelatedActionImplCopyWith<
@@ -5661,10 +5551,12 @@ abstract class _RequestOrchestrationRelatedAction
           Map<String, dynamic> json) =
       _$RequestOrchestrationRelatedActionImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5672,9 +5564,9 @@ abstract class _RequestOrchestrationRelatedAction
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5688,51 +5580,47 @@ abstract class _RequestOrchestrationRelatedAction
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [targetId] The element id of the target related action.
-  @override
   FhirId? get targetId;
+  @override
 
   /// [targetIdElement] ("_targetId") Extensions for targetId
-  @override
   @JsonKey(name: '_targetId')
   PrimitiveElement? get targetIdElement;
+  @override
 
   /// [relationship] The relationship of this action to the related action.
-  @override
   FhirCode? get relationship;
+  @override
 
   /// [relationshipElement] ("_relationship") Extensions for relationship
-  @override
   @JsonKey(name: '_relationship')
   PrimitiveElement? get relationshipElement;
+  @override
 
   /// [endRelationship] The relationship of the end of this action to the related
   ///  action.
-  @override
   FhirCode? get endRelationship;
+  @override
 
   /// [endRelationshipElement] ("_endRelationship") Extensions for endRelationship
-  @override
   @JsonKey(name: '_endRelationship')
   PrimitiveElement? get endRelationshipElement;
+  @override
 
   /// [offsetDuration] A duration or range of durations to apply to the
   ///  relationship. For example, 30-60 minutes before.
-  @override
   FhirDuration? get offsetDuration;
+  @override
 
   /// [offsetRange] A duration or range of durations to apply to the
   ///  relationship. For example, 30-60 minutes before.
-  @override
   Range? get offsetRange;
-
-  /// Create a copy of RequestOrchestrationRelatedAction
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$RequestOrchestrationRelatedActionImplCopyWith<
           _$RequestOrchestrationRelatedActionImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -5806,12 +5694,8 @@ mixin _$RequestOrchestrationParticipant {
   /// [actorReference] A reference to the actual participant.
   Reference? get actorReference => throw _privateConstructorUsedError;
 
-  /// Serializes this RequestOrchestrationParticipant to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of RequestOrchestrationParticipant
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $RequestOrchestrationParticipantCopyWith<RequestOrchestrationParticipant>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -5855,8 +5739,6 @@ class _$RequestOrchestrationParticipantCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of RequestOrchestrationParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5925,8 +5807,6 @@ class _$RequestOrchestrationParticipantCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of RequestOrchestrationParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get typeReference {
@@ -5939,8 +5819,6 @@ class _$RequestOrchestrationParticipantCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of RequestOrchestrationParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get role {
@@ -5953,8 +5831,6 @@ class _$RequestOrchestrationParticipantCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of RequestOrchestrationParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get function_ {
@@ -5967,8 +5843,6 @@ class _$RequestOrchestrationParticipantCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of RequestOrchestrationParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get actorReference {
@@ -6025,8 +5899,6 @@ class __$$RequestOrchestrationParticipantImplCopyWithImpl<$Res>
       $Res Function(_$RequestOrchestrationParticipantImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of RequestOrchestrationParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6260,7 +6132,7 @@ class _$RequestOrchestrationParticipantImpl
                 other.actorReference == actorReference));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -6277,9 +6149,7 @@ class _$RequestOrchestrationParticipantImpl
       actorCanonicalElement,
       actorReference);
 
-  /// Create a copy of RequestOrchestrationParticipant
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$RequestOrchestrationParticipantImplCopyWith<
@@ -6316,10 +6186,12 @@ abstract class _RequestOrchestrationParticipant
   factory _RequestOrchestrationParticipant.fromJson(Map<String, dynamic> json) =
       _$RequestOrchestrationParticipantImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -6327,9 +6199,9 @@ abstract class _RequestOrchestrationParticipant
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -6343,54 +6215,50 @@ abstract class _RequestOrchestrationParticipant
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] The type of participant in the action.
-  @override
   FhirCode? get type;
+  @override
 
   /// [typeElement] ("_type") Extensions for type
-  @override
   @JsonKey(name: '_type')
   PrimitiveElement? get typeElement;
+  @override
 
   /// [typeCanonical] The type of participant in the action.
-  @override
   FhirCanonical? get typeCanonical;
+  @override
 
   /// [typeReference] The type of participant in the action.
-  @override
   Reference? get typeReference;
+  @override
 
   /// [role] The role the participant should play in performing the described
   ///  action.
-  @override
   CodeableConcept? get role;
+  @override
 
   /// [function_] ("function") Indicates how the actor will be involved in the
   ///  action - author, reviewer, witness, etc.
-  @override
   @JsonKey(name: 'function')
   CodeableConcept? get function_;
+  @override
 
   /// [actorCanonical] A reference to the actual participant.
-  @override
   FhirCanonical? get actorCanonical;
+  @override
 
   /// [actorCanonicalElement] ("_actorCanonical") Extensions for actorCanonical
-  @override
   @JsonKey(name: '_actorCanonical')
   PrimitiveElement? get actorCanonicalElement;
+  @override
 
   /// [actorReference] A reference to the actual participant.
-  @override
   Reference? get actorReference;
-
-  /// Create a copy of RequestOrchestrationParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$RequestOrchestrationParticipantImplCopyWith<
           _$RequestOrchestrationParticipantImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -6448,12 +6316,8 @@ mixin _$RequestOrchestrationDynamicValue {
   /// [expression] An expression specifying the value of the customized element.
   FhirExpression? get expression => throw _privateConstructorUsedError;
 
-  /// Serializes this RequestOrchestrationDynamicValue to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of RequestOrchestrationDynamicValue
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $RequestOrchestrationDynamicValueCopyWith<RequestOrchestrationDynamicValue>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -6488,8 +6352,6 @@ class _$RequestOrchestrationDynamicValueCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of RequestOrchestrationDynamicValue
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6528,8 +6390,6 @@ class _$RequestOrchestrationDynamicValueCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of RequestOrchestrationDynamicValue
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirExpressionCopyWith<$Res>? get expression {
@@ -6574,8 +6434,6 @@ class __$$RequestOrchestrationDynamicValueImplCopyWithImpl<$Res>
       $Res Function(_$RequestOrchestrationDynamicValueImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of RequestOrchestrationDynamicValue
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6741,7 +6599,7 @@ class _$RequestOrchestrationDynamicValueImpl
                 other.expression == expression));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -6752,9 +6610,7 @@ class _$RequestOrchestrationDynamicValueImpl
       pathElement,
       expression);
 
-  /// Create a copy of RequestOrchestrationDynamicValue
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$RequestOrchestrationDynamicValueImplCopyWith<
@@ -6786,10 +6642,12 @@ abstract class _RequestOrchestrationDynamicValue
           Map<String, dynamic> json) =
       _$RequestOrchestrationDynamicValueImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -6797,9 +6655,9 @@ abstract class _RequestOrchestrationDynamicValue
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -6813,8 +6671,8 @@ abstract class _RequestOrchestrationDynamicValue
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [path] The path to the element to be customized. This is the path on the
   ///  resource that will hold the result of the calculation defined by the
@@ -6824,22 +6682,18 @@ abstract class _RequestOrchestrationDynamicValue
   ///  path is allowed to contain qualifiers (.) to traverse sub-elements, as
   ///  well as indexers ([x]) to traverse multiple-cardinality sub-elements (see
   ///  the [Simple FHIRPath Profile](fhirpath.html#simple) for full details).
-  @override
   String? get path;
+  @override
 
   /// [pathElement] ("_path") Extensions for path
-  @override
   @JsonKey(name: '_path')
   PrimitiveElement? get pathElement;
+  @override
 
   /// [expression] An expression specifying the value of the customized element.
-  @override
   FhirExpression? get expression;
-
-  /// Create a copy of RequestOrchestrationDynamicValue
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$RequestOrchestrationDynamicValueImplCopyWith<
           _$RequestOrchestrationDynamicValueImpl>
       get copyWith => throw _privateConstructorUsedError;

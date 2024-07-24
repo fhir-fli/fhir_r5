@@ -150,12 +150,8 @@ mixin _$RelatedPerson {
   List<RelatedPersonCommunication>? get communication =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this RelatedPerson to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of RelatedPerson
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $RelatedPersonCopyWith<RelatedPerson> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -214,8 +210,6 @@ class _$RelatedPersonCopyWithImpl<$Res, $Val extends RelatedPerson>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of RelatedPerson
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -354,8 +348,6 @@ class _$RelatedPersonCopyWithImpl<$Res, $Val extends RelatedPerson>
     ) as $Val);
   }
 
-  /// Create a copy of RelatedPerson
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -368,8 +360,6 @@ class _$RelatedPersonCopyWithImpl<$Res, $Val extends RelatedPerson>
     });
   }
 
-  /// Create a copy of RelatedPerson
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -382,8 +372,6 @@ class _$RelatedPersonCopyWithImpl<$Res, $Val extends RelatedPerson>
     });
   }
 
-  /// Create a copy of RelatedPerson
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get patient {
@@ -392,8 +380,6 @@ class _$RelatedPersonCopyWithImpl<$Res, $Val extends RelatedPerson>
     });
   }
 
-  /// Create a copy of RelatedPerson
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get period {
@@ -465,8 +451,6 @@ class __$$RelatedPersonImplCopyWithImpl<$Res>
       _$RelatedPersonImpl _value, $Res Function(_$RelatedPersonImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of RelatedPerson
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -975,7 +959,7 @@ class _$RelatedPersonImpl extends _RelatedPerson {
                 .equals(other._communication, _communication));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1007,9 +991,7 @@ class _$RelatedPersonImpl extends _RelatedPerson {
         const DeepCollectionEquality().hash(_communication)
       ]);
 
-  /// Create a copy of RelatedPerson
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$RelatedPersonImplCopyWith<_$RelatedPersonImpl> get copyWith =>
@@ -1071,40 +1053,41 @@ abstract class _RelatedPerson extends RelatedPerson {
   @override
   @JsonKey(unknownEnumValue: R5ResourceType.RelatedPerson)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
   @override
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1112,16 +1095,16 @@ abstract class _RelatedPerson extends RelatedPerson {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1130,9 +1113,9 @@ abstract class _RelatedPerson extends RelatedPerson {
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
   @override
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1146,84 +1129,80 @@ abstract class _RelatedPerson extends RelatedPerson {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] Identifier for a person within a particular scope.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [active] Whether this related person record is in active use.
-  @override
   FhirBoolean? get active;
+  @override
 
   /// [activeElement] ("_active") Extensions for active
   @override
-  @override
   @JsonKey(name: '_active')
   PrimitiveElement? get activeElement;
+  @override
 
   /// [patient] The patient this person is related to.
-  @override
   Reference get patient;
+  @override
 
   /// [relationship] The nature of the relationship between the related person
   ///  and the patient.
-  @override
   List<CodeableConcept>? get relationship;
+  @override
 
   /// [name] A name associated with the person.
-  @override
   List<HumanName>? get name;
+  @override
 
   /// [telecom] A contact detail for the person, e.g. a telephone number or an
   ///  email address.
-  @override
   List<ContactPoint>? get telecom;
+  @override
 
   /// [gender] Administrative Gender - the gender that the person is considered
   ///  to have for administration and record keeping purposes.
-  @override
   AdministrativeGender? get gender;
+  @override
 
   /// [genderElement] ("_gender") Extensions for gender
   @override
-  @override
   @JsonKey(name: '_gender')
   PrimitiveElement? get genderElement;
+  @override
 
   /// [birthDate] The date on which the related person was born.
-  @override
   FhirDate? get birthDate;
+  @override
 
   /// [birthDateElement] ("_birthDate") Extensions for birthDate
   @override
-  @override
   @JsonKey(name: '_birthDate')
   PrimitiveElement? get birthDateElement;
+  @override
 
   /// [address] Address where the related person can be contacted or visited.
-  @override
   List<Address>? get address;
+  @override
 
   /// [photo] Image of the person.
-  @override
   List<Attachment>? get photo;
+  @override
 
   /// [period] The period of time during which this relationship is or was
   ///  active. If there are no dates defined, then the interval is unknown.
-  @override
   Period? get period;
+  @override
 
   /// [communication] A language which may be used to communicate with the
   ///  related person about the patient's health.
-  @override
   List<RelatedPersonCommunication>? get communication;
-
-  /// Create a copy of RelatedPerson
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$RelatedPersonImplCopyWith<_$RelatedPersonImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1277,12 +1256,8 @@ mixin _$RelatedPersonCommunication {
   @JsonKey(name: '_preferred')
   PrimitiveElement? get preferredElement => throw _privateConstructorUsedError;
 
-  /// Serializes this RelatedPersonCommunication to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of RelatedPersonCommunication
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $RelatedPersonCommunicationCopyWith<RelatedPersonCommunication>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1316,8 +1291,6 @@ class _$RelatedPersonCommunicationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of RelatedPersonCommunication
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1356,8 +1329,6 @@ class _$RelatedPersonCommunicationCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of RelatedPersonCommunication
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get language {
@@ -1398,8 +1369,6 @@ class __$$RelatedPersonCommunicationImplCopyWithImpl<$Res>
       $Res Function(_$RelatedPersonCommunicationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of RelatedPersonCommunication
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1562,7 +1531,7 @@ class _$RelatedPersonCommunicationImpl extends _RelatedPersonCommunication {
                 other.preferredElement == preferredElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1573,9 +1542,7 @@ class _$RelatedPersonCommunicationImpl extends _RelatedPersonCommunication {
       preferred,
       preferredElement);
 
-  /// Create a copy of RelatedPersonCommunication
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$RelatedPersonCommunicationImplCopyWith<_$RelatedPersonCommunicationImpl>
@@ -1605,10 +1572,12 @@ abstract class _RelatedPersonCommunication extends RelatedPersonCommunication {
   factory _RelatedPersonCommunication.fromJson(Map<String, dynamic> json) =
       _$RelatedPersonCommunicationImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1616,9 +1585,9 @@ abstract class _RelatedPersonCommunication extends RelatedPersonCommunication {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1632,30 +1601,26 @@ abstract class _RelatedPersonCommunication extends RelatedPersonCommunication {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [language] The ISO-639-1 alpha 2 code in lower case for the language,
   ///  optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the
   ///  region in upper case; e.g. "en" for English, or "en-US" for American
   ///  English versus "en-AU" for Australian English.
-  @override
   CodeableConcept get language;
+  @override
 
   /// [preferred] Indicates whether or not the related person prefers this
   ///  language (over other languages he or she masters up a certain level).
-  @override
   FhirBoolean? get preferred;
+  @override
 
   /// [preferredElement] ("_preferred") Extensions for preferred
-  @override
   @JsonKey(name: '_preferred')
   PrimitiveElement? get preferredElement;
-
-  /// Create a copy of RelatedPersonCommunication
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$RelatedPersonCommunicationImplCopyWith<_$RelatedPersonCommunicationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

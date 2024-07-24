@@ -272,12 +272,8 @@ mixin _$TestPlan {
   ///  they are made explicit.
   List<TestPlanTestCase>? get testCase => throw _privateConstructorUsedError;
 
-  /// Serializes this TestPlan to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TestPlan
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TestPlanCopyWith<TestPlan> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -356,8 +352,6 @@ class _$TestPlanCopyWithImpl<$Res, $Val extends TestPlan>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TestPlan
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -616,8 +610,6 @@ class _$TestPlanCopyWithImpl<$Res, $Val extends TestPlan>
     ) as $Val);
   }
 
-  /// Create a copy of TestPlan
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -630,8 +622,6 @@ class _$TestPlanCopyWithImpl<$Res, $Val extends TestPlan>
     });
   }
 
-  /// Create a copy of TestPlan
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -644,8 +634,6 @@ class _$TestPlanCopyWithImpl<$Res, $Val extends TestPlan>
     });
   }
 
-  /// Create a copy of TestPlan
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get versionAlgorithmCoding {
@@ -737,8 +725,6 @@ class __$$TestPlanImplCopyWithImpl<$Res>
       _$TestPlanImpl _value, $Res Function(_$TestPlanImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TestPlan
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1595,7 +1581,7 @@ class _$TestPlanImpl extends _TestPlan {
             const DeepCollectionEquality().equals(other._testCase, _testCase));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1651,9 +1637,7 @@ class _$TestPlanImpl extends _TestPlan {
         const DeepCollectionEquality().hash(_testCase)
       ]);
 
-  /// Create a copy of TestPlan
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TestPlanImplCopyWith<_$TestPlanImpl> get copyWith =>
@@ -1730,42 +1714,44 @@ abstract class _TestPlan extends TestPlan {
   factory _TestPlan.fromJson(Map<String, dynamic> json) =
       _$TestPlanImpl.fromJson;
 
-  /// [resourceType] This is a TestPlan resource
   @override
+
+  /// [resourceType] This is a TestPlan resource
   @JsonKey(unknownEnumValue: R5ResourceType.TestPlan)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1773,16 +1759,16 @@ abstract class _TestPlan extends TestPlan {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1790,9 +1776,9 @@ abstract class _TestPlan extends TestPlan {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1806,8 +1792,8 @@ abstract class _TestPlan extends TestPlan {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [url] An absolute URI that is used to identify this test plan when it is
   ///  referenced in a specification, model, design or an instance; also called
@@ -1816,19 +1802,19 @@ abstract class _TestPlan extends TestPlan {
   ///  (or will be) published. This URL can be the target of a canonical
   ///  reference. It SHALL remain the same when the test plan is stored on
   ///  different servers.
-  @override
   FhirUri? get url;
+  @override
 
   /// [urlElement] ("_url") Extensions for url
-  @override
   @JsonKey(name: '_url')
   PrimitiveElement? get urlElement;
+  @override
 
   /// [identifier] A formal identifier that is used to identify this test plan
   ///  when it is represented in other formats, or referenced in a specification,
   ///  model, design or an instance.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [version] The identifier that is used to identify this version of the test
   ///  plan when it is referenced in a specification, model, design or instance.
@@ -1836,198 +1822,194 @@ abstract class _TestPlan extends TestPlan {
   ///  expected to be globally unique. For example, it might be a timestamp (e.g.
   ///  yyyymmdd) if a managed version is not available. There is also no
   ///  expectation that versions can be placed in a lexicographical sequence.
-  @override
   String? get version;
+  @override
 
   /// [versionElement] ("_version") Extensions for version
-  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
+  @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  @override
   String? get versionAlgorithmString;
+  @override
 
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
-  @override
   @JsonKey(name: '_versionAlgorithmString')
   PrimitiveElement? get versionAlgorithmStringElement;
+  @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  @override
   Coding? get versionAlgorithmCoding;
+  @override
 
   /// [name] A natural language name identifying the test plan. This name should
   ///  be usable as an identifier for the module by machine processing
   ///  applications such as code generation.
-  @override
   String? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [title] A short, descriptive, user-friendly title for the test plan.
-  @override
   String? get title;
+  @override
 
   /// [titleElement] ("_title") Extensions for title
-  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
+  @override
 
   /// [status] The status of this test plan. Enables tracking the life-cycle of
   ///  the content.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [experimental] A Boolean value to indicate that this test plan is authored
   ///  for testing purposes (or education/evaluation/marketing) and is not
   ///  intended to be used for genuine usage.
-  @override
   FhirBoolean? get experimental;
+  @override
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
-  @override
   @JsonKey(name: '_experimental')
   PrimitiveElement? get experimentalElement;
+  @override
 
   /// [date] The date (and optionally time) when the test plan was last
   ///  significantly changed. The date must change when the business version
   ///  changes and it must change if the status code changes. In addition, it
   ///  should change when the substantive content of the test plan changes.
-  @override
   FhirDateTime? get date;
+  @override
 
   /// [dateElement] ("_date") Extensions for date
-  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
+  @override
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the test plan.
-  @override
   String? get publisher;
+  @override
 
   /// [publisherElement] ("_publisher") Extensions for publisher
-  @override
   @JsonKey(name: '_publisher')
   PrimitiveElement? get publisherElement;
+  @override
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
-  @override
   List<ContactDetail>? get contact;
+  @override
 
   /// [description] A free text natural language description of the test plan
   ///  from a consumer's perspective.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
   ///  categories (gender, age, ...) or may be references to specific programs
   ///  (insurance plans, studies, ...) and may be used to assist with indexing
   ///  and searching for appropriate test plan instances.
-  @override
   List<UsageContext>? get useContext;
+  @override
 
   /// [jurisdiction] A legal or geographic region in which the test plan is
   ///  intended to be used.
-  @override
   List<CodeableConcept>? get jurisdiction;
+  @override
 
   /// [purpose] Explanation of why this test plan is needed and why it has been
   ///  designed as it has.
-  @override
   FhirMarkdown? get purpose;
+  @override
 
   /// [purposeElement] ("_purpose") Extensions for purpose
-  @override
   @JsonKey(name: '_purpose')
   PrimitiveElement? get purposeElement;
+  @override
 
   /// [copyright] A copyright statement relating to the test plan and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
   ///  and publishing of the test plan. The short copyright declaration (e.g. (c)
   ///  '2015+ xyz organization' should be sent in the copyrightLabel element.
-  @override
   FhirMarkdown? get copyright;
+  @override
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
-  @override
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement;
+  @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
   ///  optionally whether rights are resctricted. (e.g. 'All rights reserved',
   ///  'Some rights reserved').
-  @override
   String? get copyrightLabel;
+  @override
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-  @override
   @JsonKey(name: '_copyrightLabel')
   PrimitiveElement? get copyrightLabelElement;
+  @override
 
   /// [category] The category of the Test Plan - can be acceptance, unit,
   ///  performance, etc.
-  @override
   List<CodeableConcept>? get category;
+  @override
 
   /// [scope] What is being tested with this Test Plan - a conformance resource,
   ///  or narrative criteria, or an external reference...
-  @override
   List<Reference>? get scope;
+  @override
 
   /// [testTools] A description of test tools to be used in the test plan.
-  @override
   FhirMarkdown? get testTools;
+  @override
 
   /// [testToolsElement] ("_testTools") Extensions for testTools
-  @override
   @JsonKey(name: '_testTools')
   PrimitiveElement? get testToolsElement;
+  @override
 
   /// [dependency] The required criteria to execute the test plan - e.g.
   ///  preconditions, previous tests...
-  @override
   List<TestPlanDependency>? get dependency;
+  @override
 
   /// [exitCriteria] The threshold or criteria for the test plan to be considered
   ///  successfully executed - narrative.
-  @override
   FhirMarkdown? get exitCriteria;
+  @override
 
   /// [exitCriteriaElement] ("_exitCriteria") Extensions for exitCriteria
-  @override
   @JsonKey(name: '_exitCriteria')
   PrimitiveElement? get exitCriteriaElement;
+  @override
 
   /// [testCase] The individual test cases that are part of this plan, when they
   ///  they are made explicit.
-  @override
   List<TestPlanTestCase>? get testCase;
-
-  /// Create a copy of TestPlan
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TestPlanImplCopyWith<_$TestPlanImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2079,12 +2061,8 @@ mixin _$TestPlanDependency {
   ///  successfully performed as a dependency for the execution of this test plan.
   Reference? get predecessor => throw _privateConstructorUsedError;
 
-  /// Serializes this TestPlanDependency to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TestPlanDependency
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TestPlanDependencyCopyWith<TestPlanDependency> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2116,8 +2094,6 @@ class _$TestPlanDependencyCopyWithImpl<$Res, $Val extends TestPlanDependency>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TestPlanDependency
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2156,8 +2132,6 @@ class _$TestPlanDependencyCopyWithImpl<$Res, $Val extends TestPlanDependency>
     ) as $Val);
   }
 
-  /// Create a copy of TestPlanDependency
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get predecessor {
@@ -2199,8 +2173,6 @@ class __$$TestPlanDependencyImplCopyWithImpl<$Res>
       $Res Function(_$TestPlanDependencyImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TestPlanDependency
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2360,7 +2332,7 @@ class _$TestPlanDependencyImpl extends _TestPlanDependency {
                 other.predecessor == predecessor));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2371,9 +2343,7 @@ class _$TestPlanDependencyImpl extends _TestPlanDependency {
       descriptionElement,
       predecessor);
 
-  /// Create a copy of TestPlanDependency
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TestPlanDependencyImplCopyWith<_$TestPlanDependencyImpl> get copyWith =>
@@ -2401,10 +2371,12 @@ abstract class _TestPlanDependency extends TestPlanDependency {
   factory _TestPlanDependency.fromJson(Map<String, dynamic> json) =
       _$TestPlanDependencyImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2412,9 +2384,9 @@ abstract class _TestPlanDependency extends TestPlanDependency {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2428,28 +2400,24 @@ abstract class _TestPlanDependency extends TestPlanDependency {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [description] A textual description of the criterium - what is needed for
   ///  the dependency to be considered met.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [predecessor] Predecessor test plans - those that are expected to be
   ///  successfully performed as a dependency for the execution of this test plan.
-  @override
   Reference? get predecessor;
-
-  /// Create a copy of TestPlanDependency
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TestPlanDependencyImplCopyWith<_$TestPlanDependencyImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2515,12 +2483,8 @@ mixin _$TestPlanTestCase {
   ///  execution of the test case.
   List<TestPlanAssertion>? get assertion => throw _privateConstructorUsedError;
 
-  /// Serializes this TestPlanTestCase to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TestPlanTestCase
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TestPlanTestCaseCopyWith<TestPlanTestCase> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2554,8 +2518,6 @@ class _$TestPlanTestCaseCopyWithImpl<$Res, $Val extends TestPlanTestCase>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TestPlanTestCase
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2644,8 +2606,6 @@ class __$$TestPlanTestCaseImplCopyWithImpl<$Res>
       $Res Function(_$TestPlanTestCaseImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TestPlanTestCase
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2905,7 +2865,7 @@ class _$TestPlanTestCaseImpl extends _TestPlanTestCase {
                 .equals(other._assertion, _assertion));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2920,9 +2880,7 @@ class _$TestPlanTestCaseImpl extends _TestPlanTestCase {
       const DeepCollectionEquality().hash(_testData),
       const DeepCollectionEquality().hash(_assertion));
 
-  /// Create a copy of TestPlanTestCase
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TestPlanTestCaseImplCopyWith<_$TestPlanTestCaseImpl> get copyWith =>
@@ -2954,10 +2912,12 @@ abstract class _TestPlanTestCase extends TestPlanTestCase {
   factory _TestPlanTestCase.fromJson(Map<String, dynamic> json) =
       _$TestPlanTestCaseImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2965,9 +2925,9 @@ abstract class _TestPlanTestCase extends TestPlanTestCase {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2981,46 +2941,42 @@ abstract class _TestPlanTestCase extends TestPlanTestCase {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [sequence] Sequence of test case - an ordinal number that indicates the
   ///  order for the present test case in the test plan.
-  @override
   FhirInteger? get sequence;
+  @override
 
   /// [sequenceElement] ("_sequence") Extensions for sequence
-  @override
   @JsonKey(name: '_sequence')
   PrimitiveElement? get sequenceElement;
+  @override
 
   /// [scope] The scope or artifact covered by the case, when the individual test
   ///  case is associated with a testable artifact.
-  @override
   List<Reference>? get scope;
+  @override
 
   /// [dependency] The required criteria to execute the test case - e.g.
   ///  preconditions, previous tests.
-  @override
   List<TestPlanDependency1>? get dependency;
+  @override
 
   /// [testRun] The actual test to be executed.
-  @override
   List<TestPlanTestRun>? get testRun;
+  @override
 
   /// [testData] The test data used in the test case.
-  @override
   List<TestPlanTestData>? get testData;
+  @override
 
   /// [assertion] The test assertions - the expectations of test results from the
   ///  execution of the test case.
-  @override
   List<TestPlanAssertion>? get assertion;
-
-  /// Create a copy of TestPlanTestCase
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TestPlanTestCaseImplCopyWith<_$TestPlanTestCaseImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3070,12 +3026,8 @@ mixin _$TestPlanDependency1 {
   /// [predecessor] Link to predecessor test plans.
   Reference? get predecessor => throw _privateConstructorUsedError;
 
-  /// Serializes this TestPlanDependency1 to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TestPlanDependency1
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TestPlanDependency1CopyWith<TestPlanDependency1> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3107,8 +3059,6 @@ class _$TestPlanDependency1CopyWithImpl<$Res, $Val extends TestPlanDependency1>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TestPlanDependency1
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3147,8 +3097,6 @@ class _$TestPlanDependency1CopyWithImpl<$Res, $Val extends TestPlanDependency1>
     ) as $Val);
   }
 
-  /// Create a copy of TestPlanDependency1
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get predecessor {
@@ -3190,8 +3138,6 @@ class __$$TestPlanDependency1ImplCopyWithImpl<$Res>
       $Res Function(_$TestPlanDependency1Impl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TestPlanDependency1
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3349,7 +3295,7 @@ class _$TestPlanDependency1Impl extends _TestPlanDependency1 {
                 other.predecessor == predecessor));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3360,9 +3306,7 @@ class _$TestPlanDependency1Impl extends _TestPlanDependency1 {
       descriptionElement,
       predecessor);
 
-  /// Create a copy of TestPlanDependency1
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TestPlanDependency1ImplCopyWith<_$TestPlanDependency1Impl> get copyWith =>
@@ -3390,10 +3334,12 @@ abstract class _TestPlanDependency1 extends TestPlanDependency1 {
   factory _TestPlanDependency1.fromJson(Map<String, dynamic> json) =
       _$TestPlanDependency1Impl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3401,9 +3347,9 @@ abstract class _TestPlanDependency1 extends TestPlanDependency1 {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3417,26 +3363,22 @@ abstract class _TestPlanDependency1 extends TestPlanDependency1 {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [description] Description of the criteria.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [predecessor] Link to predecessor test plans.
-  @override
   Reference? get predecessor;
-
-  /// Create a copy of TestPlanDependency1
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TestPlanDependency1ImplCopyWith<_$TestPlanDependency1Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3486,12 +3428,8 @@ mixin _$TestPlanTestRun {
   ///  FHIR TestScript.
   TestPlanScript? get script => throw _privateConstructorUsedError;
 
-  /// Serializes this TestPlanTestRun to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TestPlanTestRun
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TestPlanTestRunCopyWith<TestPlanTestRun> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3523,8 +3461,6 @@ class _$TestPlanTestRunCopyWithImpl<$Res, $Val extends TestPlanTestRun>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TestPlanTestRun
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3563,8 +3499,6 @@ class _$TestPlanTestRunCopyWithImpl<$Res, $Val extends TestPlanTestRun>
     ) as $Val);
   }
 
-  /// Create a copy of TestPlanTestRun
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TestPlanScriptCopyWith<$Res>? get script {
@@ -3606,8 +3540,6 @@ class __$$TestPlanTestRunImplCopyWithImpl<$Res>
       _$TestPlanTestRunImpl _value, $Res Function(_$TestPlanTestRunImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TestPlanTestRun
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3765,7 +3697,7 @@ class _$TestPlanTestRunImpl extends _TestPlanTestRun {
             (identical(other.script, script) || other.script == script));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3776,9 +3708,7 @@ class _$TestPlanTestRunImpl extends _TestPlanTestRun {
       narrativeElement,
       script);
 
-  /// Create a copy of TestPlanTestRun
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TestPlanTestRunImplCopyWith<_$TestPlanTestRunImpl> get copyWith =>
@@ -3806,10 +3736,12 @@ abstract class _TestPlanTestRun extends TestPlanTestRun {
   factory _TestPlanTestRun.fromJson(Map<String, dynamic> json) =
       _$TestPlanTestRunImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3817,9 +3749,9 @@ abstract class _TestPlanTestRun extends TestPlanTestRun {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3833,27 +3765,23 @@ abstract class _TestPlanTestRun extends TestPlanTestRun {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [narrative] The narrative description of the tests.
-  @override
   FhirMarkdown? get narrative;
+  @override
 
   /// [narrativeElement] ("_narrative") Extensions for narrative
-  @override
   @JsonKey(name: '_narrative')
   PrimitiveElement? get narrativeElement;
+  @override
 
   /// [script] The test cases in a structured language e.g. gherkin, Postman, or
   ///  FHIR TestScript.
-  @override
   TestPlanScript? get script;
-
-  /// Create a copy of TestPlanTestRun
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TestPlanTestRunImplCopyWith<_$TestPlanTestRunImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3908,12 +3836,8 @@ mixin _$TestPlanScript {
   ///  TestScripts or externally defined content.
   Reference? get sourceReference => throw _privateConstructorUsedError;
 
-  /// Serializes this TestPlanScript to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TestPlanScript
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TestPlanScriptCopyWith<TestPlanScript> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3947,8 +3871,6 @@ class _$TestPlanScriptCopyWithImpl<$Res, $Val extends TestPlanScript>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TestPlanScript
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3992,8 +3914,6 @@ class _$TestPlanScriptCopyWithImpl<$Res, $Val extends TestPlanScript>
     ) as $Val);
   }
 
-  /// Create a copy of TestPlanScript
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get language {
@@ -4006,8 +3926,6 @@ class _$TestPlanScriptCopyWithImpl<$Res, $Val extends TestPlanScript>
     });
   }
 
-  /// Create a copy of TestPlanScript
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get sourceReference {
@@ -4052,8 +3970,6 @@ class __$$TestPlanScriptImplCopyWithImpl<$Res>
       _$TestPlanScriptImpl _value, $Res Function(_$TestPlanScriptImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TestPlanScript
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4225,7 +4141,7 @@ class _$TestPlanScriptImpl extends _TestPlanScript {
                 other.sourceReference == sourceReference));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4237,9 +4153,7 @@ class _$TestPlanScriptImpl extends _TestPlanScript {
       sourceStringElement,
       sourceReference);
 
-  /// Create a copy of TestPlanScript
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TestPlanScriptImplCopyWith<_$TestPlanScriptImpl> get copyWith =>
@@ -4269,10 +4183,12 @@ abstract class _TestPlanScript extends TestPlanScript {
   factory _TestPlanScript.fromJson(Map<String, dynamic> json) =
       _$TestPlanScriptImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4280,9 +4196,9 @@ abstract class _TestPlanScript extends TestPlanScript {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4296,32 +4212,28 @@ abstract class _TestPlanScript extends TestPlanScript {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [language] The language for the test cases e.g. 'gherkin', 'testscript'.
-  @override
   CodeableConcept? get language;
+  @override
 
   /// [sourceString] The actual content of the cases - references to TestScripts
   ///  or externally defined content.
-  @override
   String? get sourceString;
+  @override
 
   /// [sourceStringElement] ("_sourceString") Extensions for sourceString
-  @override
   @JsonKey(name: '_sourceString')
   PrimitiveElement? get sourceStringElement;
+  @override
 
   /// [sourceReference] The actual content of the cases - references to
   ///  TestScripts or externally defined content.
-  @override
   Reference? get sourceReference;
-
-  /// Create a copy of TestPlanScript
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TestPlanScriptImplCopyWith<_$TestPlanScriptImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4379,12 +4291,8 @@ mixin _$TestPlanTestData {
   ///  structured e.g. synthetic data generation, etc.
   Reference? get sourceReference => throw _privateConstructorUsedError;
 
-  /// Serializes this TestPlanTestData to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TestPlanTestData
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TestPlanTestDataCopyWith<TestPlanTestData> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4420,8 +4328,6 @@ class _$TestPlanTestDataCopyWithImpl<$Res, $Val extends TestPlanTestData>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TestPlanTestData
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4470,8 +4376,6 @@ class _$TestPlanTestDataCopyWithImpl<$Res, $Val extends TestPlanTestData>
     ) as $Val);
   }
 
-  /// Create a copy of TestPlanTestData
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res> get type {
@@ -4480,8 +4384,6 @@ class _$TestPlanTestDataCopyWithImpl<$Res, $Val extends TestPlanTestData>
     });
   }
 
-  /// Create a copy of TestPlanTestData
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get content {
@@ -4494,8 +4396,6 @@ class _$TestPlanTestDataCopyWithImpl<$Res, $Val extends TestPlanTestData>
     });
   }
 
-  /// Create a copy of TestPlanTestData
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get sourceReference {
@@ -4543,8 +4443,6 @@ class __$$TestPlanTestDataImplCopyWithImpl<$Res>
       $Res Function(_$TestPlanTestDataImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TestPlanTestData
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4726,7 +4624,7 @@ class _$TestPlanTestDataImpl extends _TestPlanTestData {
                 other.sourceReference == sourceReference));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4739,9 +4637,7 @@ class _$TestPlanTestDataImpl extends _TestPlanTestData {
       sourceStringElement,
       sourceReference);
 
-  /// Create a copy of TestPlanTestData
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TestPlanTestDataImplCopyWith<_$TestPlanTestDataImpl> get copyWith =>
@@ -4772,10 +4668,12 @@ abstract class _TestPlanTestData extends TestPlanTestData {
   factory _TestPlanTestData.fromJson(Map<String, dynamic> json) =
       _$TestPlanTestDataImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4783,9 +4681,9 @@ abstract class _TestPlanTestData extends TestPlanTestData {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4799,36 +4697,32 @@ abstract class _TestPlanTestData extends TestPlanTestData {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] The type of test data description, e.g. 'synthea'.
-  @override
   Coding get type;
+  @override
 
   /// [content] The actual test resources when they exist.
-  @override
   Reference? get content;
+  @override
 
   /// [sourceString] Pointer to a definition of test resources - narrative or
   ///  structured e.g. synthetic data generation, etc.
-  @override
   String? get sourceString;
+  @override
 
   /// [sourceStringElement] ("_sourceString") Extensions for sourceString
-  @override
   @JsonKey(name: '_sourceString')
   PrimitiveElement? get sourceStringElement;
+  @override
 
   /// [sourceReference] Pointer to a definition of test resources - narrative or
   ///  structured e.g. synthetic data generation, etc.
-  @override
   Reference? get sourceReference;
-
-  /// Create a copy of TestPlanTestData
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TestPlanTestDataImplCopyWith<_$TestPlanTestDataImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4879,12 +4773,8 @@ mixin _$TestPlanAssertion {
   ///  execution.
   List<CodeableReference>? get result => throw _privateConstructorUsedError;
 
-  /// Serializes this TestPlanAssertion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TestPlanAssertion
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TestPlanAssertionCopyWith<TestPlanAssertion> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4914,8 +4804,6 @@ class _$TestPlanAssertionCopyWithImpl<$Res, $Val extends TestPlanAssertion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TestPlanAssertion
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4980,8 +4868,6 @@ class __$$TestPlanAssertionImplCopyWithImpl<$Res>
       $Res Function(_$TestPlanAssertionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TestPlanAssertion
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5171,7 +5057,7 @@ class _$TestPlanAssertionImpl extends _TestPlanAssertion {
             const DeepCollectionEquality().equals(other._result, _result));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -5182,9 +5068,7 @@ class _$TestPlanAssertionImpl extends _TestPlanAssertion {
       const DeepCollectionEquality().hash(_object),
       const DeepCollectionEquality().hash(_result));
 
-  /// Create a copy of TestPlanAssertion
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TestPlanAssertionImplCopyWith<_$TestPlanAssertionImpl> get copyWith =>
@@ -5212,10 +5096,12 @@ abstract class _TestPlanAssertion extends TestPlanAssertion {
   factory _TestPlanAssertion.fromJson(Map<String, dynamic> json) =
       _$TestPlanAssertionImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5223,9 +5109,9 @@ abstract class _TestPlanAssertion extends TestPlanAssertion {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5239,28 +5125,24 @@ abstract class _TestPlanAssertion extends TestPlanAssertion {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] The test assertion type - this can be used to group assertions as
   ///  'required' or 'optional', or can be used for other classification of the
   ///  assertion.
-  @override
   List<CodeableConcept>? get type;
+  @override
 
   /// [object] The focus or object of the assertion i.e. a resource.
-  @override
   List<CodeableReference>? get object;
+  @override
 
   /// [result] The test assertion - the expected outcome from the test case
   ///  execution.
-  @override
   List<CodeableReference>? get result;
-
-  /// Create a copy of TestPlanAssertion
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TestPlanAssertionImplCopyWith<_$TestPlanAssertionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -2930,12 +2930,8 @@ mixin _$ElementDefinition {
   List<ElementDefinitionMapping>? get mapping =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ElementDefinition to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ElementDefinitionCopyWith<ElementDefinition> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3431,8 +3427,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5024,8 +5018,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     ) as $Val);
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ElementDefinitionSlicingCopyWith<$Res>? get slicing {
@@ -5038,8 +5030,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ElementDefinitionBaseCopyWith<$Res>? get base {
@@ -5052,8 +5042,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AddressCopyWith<$Res>? get defaultValueAddress {
@@ -5066,8 +5054,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get defaultValueAge {
@@ -5080,8 +5066,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AnnotationCopyWith<$Res>? get defaultValueAnnotation {
@@ -5094,8 +5078,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get defaultValueAttachment {
@@ -5108,8 +5090,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get defaultValueCodeableConcept {
@@ -5123,8 +5103,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get defaultValueCodeableReference {
@@ -5139,8 +5117,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get defaultValueCoding {
@@ -5153,8 +5129,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactPointCopyWith<$Res>? get defaultValueContactPoint {
@@ -5168,8 +5142,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CountCopyWith<$Res>? get defaultValueCount {
@@ -5182,8 +5154,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DistanceCopyWith<$Res>? get defaultValueDistance {
@@ -5196,8 +5166,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get defaultValueDuration {
@@ -5210,8 +5178,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $HumanNameCopyWith<$Res>? get defaultValueHumanName {
@@ -5224,8 +5190,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get defaultValueIdentifier {
@@ -5238,8 +5202,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MoneyCopyWith<$Res>? get defaultValueMoney {
@@ -5252,8 +5214,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get defaultValuePeriod {
@@ -5266,8 +5226,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get defaultValueQuantity {
@@ -5280,8 +5238,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get defaultValueRange {
@@ -5294,8 +5250,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get defaultValueRatio {
@@ -5308,8 +5262,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioRangeCopyWith<$Res>? get defaultValueRatioRange {
@@ -5322,8 +5274,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get defaultValueReference {
@@ -5336,8 +5286,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SampledDataCopyWith<$Res>? get defaultValueSampledData {
@@ -5350,8 +5298,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SignatureCopyWith<$Res>? get defaultValueSignature {
@@ -5364,8 +5310,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get defaultValueTiming {
@@ -5378,8 +5322,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactDetailCopyWith<$Res>? get defaultValueContactDetail {
@@ -5393,8 +5335,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DataRequirementCopyWith<$Res>? get defaultValueDataRequirement {
@@ -5408,8 +5348,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirExpressionCopyWith<$Res>? get defaultValueExpression {
@@ -5423,8 +5361,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ParameterDefinitionCopyWith<$Res>? get defaultValueParameterDefinition {
@@ -5439,8 +5375,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RelatedArtifactCopyWith<$Res>? get defaultValueRelatedArtifact {
@@ -5454,8 +5388,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TriggerDefinitionCopyWith<$Res>? get defaultValueTriggerDefinition {
@@ -5470,8 +5402,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $UsageContextCopyWith<$Res>? get defaultValueUsageContext {
@@ -5485,8 +5415,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AvailabilityCopyWith<$Res>? get defaultValueAvailability {
@@ -5500,8 +5428,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ExtendedContactDetailCopyWith<$Res>? get defaultValueExtendedContactDetail {
@@ -5516,8 +5442,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DosageCopyWith<$Res>? get defaultValueDosage {
@@ -5530,8 +5454,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get defaultValueMeta {
@@ -5544,8 +5466,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AddressCopyWith<$Res>? get fixedAddress {
@@ -5558,8 +5478,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get fixedAge {
@@ -5572,8 +5490,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AnnotationCopyWith<$Res>? get fixedAnnotation {
@@ -5586,8 +5502,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get fixedAttachment {
@@ -5600,8 +5514,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get fixedCodeableConcept {
@@ -5615,8 +5527,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get fixedCodeableReference {
@@ -5630,8 +5540,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get fixedCoding {
@@ -5644,8 +5552,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactPointCopyWith<$Res>? get fixedContactPoint {
@@ -5658,8 +5564,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CountCopyWith<$Res>? get fixedCount {
@@ -5672,8 +5576,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DistanceCopyWith<$Res>? get fixedDistance {
@@ -5686,8 +5588,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get fixedDuration {
@@ -5700,8 +5600,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $HumanNameCopyWith<$Res>? get fixedHumanName {
@@ -5714,8 +5612,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get fixedIdentifier {
@@ -5728,8 +5624,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MoneyCopyWith<$Res>? get fixedMoney {
@@ -5742,8 +5636,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get fixedPeriod {
@@ -5756,8 +5648,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get fixedQuantity {
@@ -5770,8 +5660,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get fixedRange {
@@ -5784,8 +5672,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get fixedRatio {
@@ -5798,8 +5684,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioRangeCopyWith<$Res>? get fixedRatioRange {
@@ -5812,8 +5696,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get fixedReference {
@@ -5826,8 +5708,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SampledDataCopyWith<$Res>? get fixedSampledData {
@@ -5840,8 +5720,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SignatureCopyWith<$Res>? get fixedSignature {
@@ -5854,8 +5732,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get fixedTiming {
@@ -5868,8 +5744,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactDetailCopyWith<$Res>? get fixedContactDetail {
@@ -5882,8 +5756,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DataRequirementCopyWith<$Res>? get fixedDataRequirement {
@@ -5897,8 +5769,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirExpressionCopyWith<$Res>? get fixedExpression {
@@ -5911,8 +5781,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ParameterDefinitionCopyWith<$Res>? get fixedParameterDefinition {
@@ -5926,8 +5794,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RelatedArtifactCopyWith<$Res>? get fixedRelatedArtifact {
@@ -5941,8 +5807,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TriggerDefinitionCopyWith<$Res>? get fixedTriggerDefinition {
@@ -5956,8 +5820,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $UsageContextCopyWith<$Res>? get fixedUsageContext {
@@ -5970,8 +5832,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AvailabilityCopyWith<$Res>? get fixedAvailability {
@@ -5984,8 +5844,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ExtendedContactDetailCopyWith<$Res>? get fixedExtendedContactDetail {
@@ -5999,8 +5857,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DosageCopyWith<$Res>? get fixedDosage {
@@ -6013,8 +5869,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get fixedMeta {
@@ -6027,8 +5881,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AddressCopyWith<$Res>? get patternAddress {
@@ -6041,8 +5893,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get patternAge {
@@ -6055,8 +5905,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AnnotationCopyWith<$Res>? get patternAnnotation {
@@ -6069,8 +5917,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get patternAttachment {
@@ -6083,8 +5929,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get patternCodeableConcept {
@@ -6098,8 +5942,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get patternCodeableReference {
@@ -6113,8 +5955,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get patternCoding {
@@ -6127,8 +5967,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactPointCopyWith<$Res>? get patternContactPoint {
@@ -6141,8 +5979,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CountCopyWith<$Res>? get patternCount {
@@ -6155,8 +5991,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DistanceCopyWith<$Res>? get patternDistance {
@@ -6169,8 +6003,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get patternDuration {
@@ -6183,8 +6015,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $HumanNameCopyWith<$Res>? get patternHumanName {
@@ -6197,8 +6027,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get patternIdentifier {
@@ -6211,8 +6039,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MoneyCopyWith<$Res>? get patternMoney {
@@ -6225,8 +6051,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get patternPeriod {
@@ -6239,8 +6063,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get patternQuantity {
@@ -6253,8 +6075,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get patternRange {
@@ -6267,8 +6087,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get patternRatio {
@@ -6281,8 +6099,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioRangeCopyWith<$Res>? get patternRatioRange {
@@ -6295,8 +6111,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get patternReference {
@@ -6309,8 +6123,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SampledDataCopyWith<$Res>? get patternSampledData {
@@ -6323,8 +6135,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SignatureCopyWith<$Res>? get patternSignature {
@@ -6337,8 +6147,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get patternTiming {
@@ -6351,8 +6159,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactDetailCopyWith<$Res>? get patternContactDetail {
@@ -6365,8 +6171,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DataRequirementCopyWith<$Res>? get patternDataRequirement {
@@ -6380,8 +6184,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirExpressionCopyWith<$Res>? get patternExpression {
@@ -6394,8 +6196,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ParameterDefinitionCopyWith<$Res>? get patternParameterDefinition {
@@ -6409,8 +6209,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RelatedArtifactCopyWith<$Res>? get patternRelatedArtifact {
@@ -6424,8 +6222,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TriggerDefinitionCopyWith<$Res>? get patternTriggerDefinition {
@@ -6439,8 +6235,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $UsageContextCopyWith<$Res>? get patternUsageContext {
@@ -6453,8 +6247,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AvailabilityCopyWith<$Res>? get patternAvailability {
@@ -6467,8 +6259,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ExtendedContactDetailCopyWith<$Res>? get patternExtendedContactDetail {
@@ -6483,8 +6273,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DosageCopyWith<$Res>? get patternDosage {
@@ -6497,8 +6285,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get patternMeta {
@@ -6511,8 +6297,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get minValueQuantity {
@@ -6525,8 +6309,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get maxValueQuantity {
@@ -6539,8 +6321,6 @@ class _$ElementDefinitionCopyWithImpl<$Res, $Val extends ElementDefinition>
     });
   }
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ElementDefinitionBindingCopyWith<$Res>? get binding {
@@ -7152,8 +6932,6 @@ class __$$ElementDefinitionImplCopyWithImpl<$Res>
       $Res Function(_$ElementDefinitionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -12716,7 +12494,7 @@ class _$ElementDefinitionImpl extends _ElementDefinition {
             const DeepCollectionEquality().equals(other._mapping, _mapping));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -13038,9 +12816,7 @@ class _$ElementDefinitionImpl extends _ElementDefinition {
         const DeepCollectionEquality().hash(_mapping)
       ]);
 
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ElementDefinitionImplCopyWith<_$ElementDefinitionImpl> get copyWith =>
@@ -13448,10 +13224,12 @@ abstract class _ElementDefinition extends ElementDefinition {
   factory _ElementDefinition.fromJson(Map<String, dynamic> json) =
       _$ElementDefinitionImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -13459,9 +13237,9 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -13475,73 +13253,73 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [path] The path identifies the element and is expressed as a "."-separated
   ///  list of ancestor elements, beginning with the name of the resource or
   ///  extension.
-  @override
   String? get path;
+  @override
 
   /// [pathElement] ("_path") Extensions for path
-  @override
   @JsonKey(name: '_path')
   PrimitiveElement? get pathElement;
+  @override
 
   /// [representation] Codes that define how this element is represented in
   ///  instances, when the deviation varies from the normal case. No extensions
   ///  are allowed on elements with a representation of 'xmlAttr', no matter what
   ///  FHIR serialization format is used.
-  @override
   List<ElementDefinitionRepresentation>? get representation;
+  @override
 
   /// [representationElement] ("_representation") Extensions for representation
-  @override
   @JsonKey(name: '_representation')
   List<PrimitiveElement>? get representationElement;
+  @override
 
   /// [sliceName] The name of this element definition slice, when slicing is
   ///  working. The name must be a token with no dots or spaces. This is a unique
   ///  name referring to a specific set of constraints applied to this element,
   ///  used to provide a name to different slices of the same element.
-  @override
   String? get sliceName;
+  @override
 
   /// [sliceNameElement] ("_sliceName") Extensions for sliceName
-  @override
   @JsonKey(name: '_sliceName')
   PrimitiveElement? get sliceNameElement;
+  @override
 
   /// [sliceIsConstraining] If true, indicates that this slice definition is
   ///  constraining a slice definition with the same name in an inherited
   ///  profile. If false, the slice is not overriding any slice in an inherited
   ///  profile. If missing, the slice might or might not be overriding a slice in
   ///  an inherited profile, depending on the sliceName.
-  @override
   FhirBoolean? get sliceIsConstraining;
+  @override
 
   /// [sliceIsConstrainingElement] ("_sliceIsConstraining") Extensions for
   ///  sliceIsConstraining
-  @override
   @JsonKey(name: '_sliceIsConstraining')
   PrimitiveElement? get sliceIsConstrainingElement;
+  @override
 
   /// [label] A single preferred label which is the text to display beside the
   ///  element indicating its meaning or to use to prompt for the element in a
   ///  user display or form.
-  @override
   String? get label;
+  @override
 
   /// [labelElement] ("_label") Extensions for label
-  @override
   @JsonKey(name: '_label')
   PrimitiveElement? get labelElement;
+  @override
 
   /// [code] A code that has the same meaning as the element in a particular
   ///  terminology.
-  @override
   List<Coding>? get code;
+  @override
 
   /// [slicing] Indicates that the element is sliced into a set of alternative
   ///  definitions (i.e. in a structure definition, there are multiple different
@@ -13550,18 +13328,18 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  resource with a choice of types. The set of slices is any elements that
   ///  come after this in the element sequence that have the same path, until a
   ///  shorter path occurs (the shorter path terminates the set).
-  @override
   ElementDefinitionSlicing? get slicing;
+  @override
 
   /// [short] A concise description of what this element means (e.g. for use in
   ///  autogenerated summaries).
-  @override
   String? get short;
+  @override
 
   /// [shortElement] ("_short") Extensions for short
-  @override
   @JsonKey(name: '_short')
   PrimitiveElement? get shortElement;
+  @override
 
   /// [definition] Provides a complete explanation of the meaning of the data
   ///  element for human readability.  For the case of elements derived from
@@ -13569,66 +13347,66 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  with the base definition, but convey the meaning of the element in the
   ///  particular context of use of the resource. (Note: The text you are reading
   ///  is specified in ElementDefinition.definition).
-  @override
   FhirMarkdown? get definition;
+  @override
 
   /// [definitionElement] ("_definition") Extensions for definition
-  @override
   @JsonKey(name: '_definition')
   PrimitiveElement? get definitionElement;
+  @override
 
   /// [comment] Explanatory notes and implementation guidance about the data
   ///  element, including notes about how to use the data properly, exceptions to
   ///  proper use, etc. (Note: The text you are reading is specified in
   ///  ElementDefinition.comment).
-  @override
   FhirMarkdown? get comment;
+  @override
 
   /// [commentElement] ("_comment") Extensions for comment
-  @override
   @JsonKey(name: '_comment')
   PrimitiveElement? get commentElement;
+  @override
 
   /// [requirements] This element is for traceability of why the element was
   ///  created and why the constraints exist as they do. This may be used to
   ///  point to source materials or specifications that drove the structure of
   ///  this element.
-  @override
   FhirMarkdown? get requirements;
+  @override
 
   /// [requirementsElement] ("_requirements") Extensions for requirements
-  @override
   @JsonKey(name: '_requirements')
   PrimitiveElement? get requirementsElement;
+  @override
 
   /// [alias] Identifies additional names by which this element might also be
   ///  known.
-  @override
   List<String>? get alias;
+  @override
 
   /// [aliasElement] ("_alias") Extensions for alias
-  @override
   @JsonKey(name: '_alias')
   List<PrimitiveElement>? get aliasElement;
+  @override
 
   /// [min] The minimum number of times this element SHALL appear in the instance.
-  @override
   FhirUnsignedInt? get min;
+  @override
 
   /// [minElement] ("_min") Extensions for min
-  @override
   @JsonKey(name: '_min')
   PrimitiveElement? get minElement;
+  @override
 
   /// [max] The maximum number of times this element is permitted to appear in
   ///  the instance.
-  @override
   String? get max;
+  @override
 
   /// [maxElement] ("_max") Extensions for max
-  @override
   @JsonKey(name: '_max')
   PrimitiveElement? get maxElement;
+  @override
 
   /// [base] Information about the base definition of the element, provided to
   ///  make it unnecessary for tools to trace the deviation of the element
@@ -13638,1020 +13416,1020 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  information in provided in the element definition may be different to the
   ///  base definition. On the original definition of the element, it will be
   ///  same.
-  @override
   ElementDefinitionBase? get base;
+  @override
 
   /// [contentReference] Identifies an element defined elsewhere in the
   ///  definition whose content rules should be applied to the current element.
   ///  ContentReferences bring across all the rules that are in the
   ///  ElementDefinition for the element, including definitions, cardinality
   ///  constraints, bindings, invariants etc.
-  @override
   FhirUri? get contentReference;
+  @override
 
   /// [contentReferenceElement] ("_contentReference") Extensions for
   ///  contentReference
-  @override
   @JsonKey(name: '_contentReference')
   PrimitiveElement? get contentReferenceElement;
+  @override
 
   /// [type] The data type or resource that the value of this element is
   ///  permitted to be.
-  @override
   List<ElementDefinitionType>? get type;
+  @override
 
   /// [defaultValueBase64Binary] The value that should be used if there is no
   ///  value stated in the instance (e.g. 'if not otherwise specified, the
   ///  abstract is false').
-  @override
   FhirBase64Binary? get defaultValueBase64Binary;
+  @override
 
   /// [defaultValueBase64BinaryElement] ("_defaultValueBase64Binary") Extensions
   ///  for defaultValueBase64Binary
-  @override
   @JsonKey(name: '_defaultValueBase64Binary')
   PrimitiveElement? get defaultValueBase64BinaryElement;
+  @override
 
   /// [defaultValueBoolean] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   FhirBoolean? get defaultValueBoolean;
+  @override
 
   /// [defaultValueBooleanElement] ("_defaultValueBoolean") Extensions for
   ///  defaultValueBoolean
-  @override
   @JsonKey(name: '_defaultValueBoolean')
   PrimitiveElement? get defaultValueBooleanElement;
+  @override
 
   /// [defaultValueCanonical] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   FhirCanonical? get defaultValueCanonical;
+  @override
 
   /// [defaultValueCanonicalElement] ("_defaultValueCanonical") Extensions for
   ///  defaultValueCanonical
-  @override
   @JsonKey(name: '_defaultValueCanonical')
   PrimitiveElement? get defaultValueCanonicalElement;
+  @override
 
   /// [defaultValueCode] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   FhirCode? get defaultValueCode;
+  @override
 
   /// [defaultValueCodeElement] ("_defaultValueCode") Extensions for
   ///  defaultValueCode
-  @override
   @JsonKey(name: '_defaultValueCode')
   PrimitiveElement? get defaultValueCodeElement;
+  @override
 
   /// [defaultValueDate] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   FhirDate? get defaultValueDate;
+  @override
 
   /// [defaultValueDateElement] ("_defaultValueDate") Extensions for
   ///  defaultValueDate
-  @override
   @JsonKey(name: '_defaultValueDate')
   PrimitiveElement? get defaultValueDateElement;
+  @override
 
   /// [defaultValueDateTime] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   FhirDateTime? get defaultValueDateTime;
+  @override
 
   /// [defaultValueDateTimeElement] ("_defaultValueDateTime") Extensions for
   ///  defaultValueDateTime
-  @override
   @JsonKey(name: '_defaultValueDateTime')
   PrimitiveElement? get defaultValueDateTimeElement;
+  @override
 
   /// [defaultValueDecimal] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   FhirDecimal? get defaultValueDecimal;
+  @override
 
   /// [defaultValueDecimalElement] ("_defaultValueDecimal") Extensions for
   ///  defaultValueDecimal
-  @override
   @JsonKey(name: '_defaultValueDecimal')
   PrimitiveElement? get defaultValueDecimalElement;
+  @override
 
   /// [defaultValueId] The value that should be used if there is no value stated
   ///  in the instance (e.g. 'if not otherwise specified, the abstract is false').
-  @override
   FhirId? get defaultValueId;
+  @override
 
   /// [defaultValueIdElement] ("_defaultValueId") Extensions for defaultValueId
-  @override
   @JsonKey(name: '_defaultValueId')
   PrimitiveElement? get defaultValueIdElement;
+  @override
 
   /// [defaultValueInstant] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   FhirInstant? get defaultValueInstant;
+  @override
 
   /// [defaultValueInstantElement] ("_defaultValueInstant") Extensions for
   ///  defaultValueInstant
-  @override
   @JsonKey(name: '_defaultValueInstant')
   PrimitiveElement? get defaultValueInstantElement;
+  @override
 
   /// [defaultValueInteger] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   FhirInteger? get defaultValueInteger;
+  @override
 
   /// [defaultValueIntegerElement] ("_defaultValueInteger") Extensions for
   ///  defaultValueInteger
-  @override
   @JsonKey(name: '_defaultValueInteger')
   PrimitiveElement? get defaultValueIntegerElement;
+  @override
 
   /// [defaultValueInteger64] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   FhirInteger64? get defaultValueInteger64;
+  @override
 
   /// [defaultValueInteger64Element] ("_defaultValueInteger64") Extensions for
   ///  defaultValueInteger64
-  @override
   @JsonKey(name: '_defaultValueInteger64')
   PrimitiveElement? get defaultValueInteger64Element;
+  @override
 
   /// [defaultValueMarkdown] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   FhirMarkdown? get defaultValueMarkdown;
+  @override
 
   /// [defaultValueMarkdownElement] ("_defaultValueMarkdown") Extensions for
   ///  defaultValueMarkdown
-  @override
   @JsonKey(name: '_defaultValueMarkdown')
   PrimitiveElement? get defaultValueMarkdownElement;
+  @override
 
   /// [defaultValueOid] The value that should be used if there is no value stated
   ///  in the instance (e.g. 'if not otherwise specified, the abstract is false').
-  @override
   FhirId? get defaultValueOid;
+  @override
 
   /// [defaultValueOidElement] ("_defaultValueOid") Extensions for defaultValueOid
-  @override
   @JsonKey(name: '_defaultValueOid')
   PrimitiveElement? get defaultValueOidElement;
+  @override
 
   /// [defaultValuePositiveInt] The value that should be used if there is no
   ///  value stated in the instance (e.g. 'if not otherwise specified, the
   ///  abstract is false').
-  @override
   FhirPositiveInt? get defaultValuePositiveInt;
+  @override
 
   /// [defaultValuePositiveIntElement] ("_defaultValuePositiveInt") Extensions
   ///  for defaultValuePositiveInt
-  @override
   @JsonKey(name: '_defaultValuePositiveInt')
   PrimitiveElement? get defaultValuePositiveIntElement;
+  @override
 
   /// [defaultValueString] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   String? get defaultValueString;
+  @override
 
   /// [defaultValueStringElement] ("_defaultValueString") Extensions for
   ///  defaultValueString
-  @override
   @JsonKey(name: '_defaultValueString')
   PrimitiveElement? get defaultValueStringElement;
+  @override
 
   /// [defaultValueTime] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   FhirTime? get defaultValueTime;
+  @override
 
   /// [defaultValueTimeElement] ("_defaultValueTime") Extensions for
   ///  defaultValueTime
-  @override
   @JsonKey(name: '_defaultValueTime')
   PrimitiveElement? get defaultValueTimeElement;
+  @override
 
   /// [defaultValueUnsignedInt] The value that should be used if there is no
   ///  value stated in the instance (e.g. 'if not otherwise specified, the
   ///  abstract is false').
-  @override
   FhirUnsignedInt? get defaultValueUnsignedInt;
+  @override
 
   /// [defaultValueUnsignedIntElement] ("_defaultValueUnsignedInt") Extensions
   ///  for defaultValueUnsignedInt
-  @override
   @JsonKey(name: '_defaultValueUnsignedInt')
   PrimitiveElement? get defaultValueUnsignedIntElement;
+  @override
 
   /// [defaultValueUri] The value that should be used if there is no value stated
   ///  in the instance (e.g. 'if not otherwise specified, the abstract is false').
-  @override
   FhirUri? get defaultValueUri;
+  @override
 
   /// [defaultValueUriElement] ("_defaultValueUri") Extensions for defaultValueUri
-  @override
   @JsonKey(name: '_defaultValueUri')
   PrimitiveElement? get defaultValueUriElement;
+  @override
 
   /// [defaultValueUrl] The value that should be used if there is no value stated
   ///  in the instance (e.g. 'if not otherwise specified, the abstract is false').
-  @override
   FhirUrl? get defaultValueUrl;
+  @override
 
   /// [defaultValueUrlElement] ("_defaultValueUrl") Extensions for defaultValueUrl
-  @override
   @JsonKey(name: '_defaultValueUrl')
   PrimitiveElement? get defaultValueUrlElement;
+  @override
 
   /// [defaultValueUuid] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   FhirId? get defaultValueUuid;
+  @override
 
   /// [defaultValueUuidElement] ("_defaultValueUuid") Extensions for
   ///  defaultValueUuid
-  @override
   @JsonKey(name: '_defaultValueUuid')
   PrimitiveElement? get defaultValueUuidElement;
+  @override
 
   /// [defaultValueAddress] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   Address? get defaultValueAddress;
+  @override
 
   /// [defaultValueAge] The value that should be used if there is no value stated
   ///  in the instance (e.g. 'if not otherwise specified, the abstract is false').
-  @override
   Age? get defaultValueAge;
+  @override
 
   /// [defaultValueAnnotation] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   Annotation? get defaultValueAnnotation;
+  @override
 
   /// [defaultValueAttachment] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   Attachment? get defaultValueAttachment;
+  @override
 
   /// [defaultValueCodeableConcept] The value that should be used if there is no
   ///  value stated in the instance (e.g. 'if not otherwise specified, the
   ///  abstract is false').
-  @override
   CodeableConcept? get defaultValueCodeableConcept;
+  @override
 
   /// [defaultValueCodeableReference] The value that should be used if there is
   ///  no value stated in the instance (e.g. 'if not otherwise specified, the
   ///  abstract is false').
-  @override
   CodeableReference? get defaultValueCodeableReference;
+  @override
 
   /// [defaultValueCoding] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   Coding? get defaultValueCoding;
+  @override
 
   /// [defaultValueContactPoint] The value that should be used if there is no
   ///  value stated in the instance (e.g. 'if not otherwise specified, the
   ///  abstract is false').
-  @override
   ContactPoint? get defaultValueContactPoint;
+  @override
 
   /// [defaultValueCount] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   Count? get defaultValueCount;
+  @override
 
   /// [defaultValueDistance] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   Distance? get defaultValueDistance;
+  @override
 
   /// [defaultValueDuration] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   FhirDuration? get defaultValueDuration;
+  @override
 
   /// [defaultValueHumanName] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   HumanName? get defaultValueHumanName;
+  @override
 
   /// [defaultValueIdentifier] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   Identifier? get defaultValueIdentifier;
+  @override
 
   /// [defaultValueMoney] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   Money? get defaultValueMoney;
+  @override
 
   /// [defaultValuePeriod] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   Period? get defaultValuePeriod;
+  @override
 
   /// [defaultValueQuantity] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   Quantity? get defaultValueQuantity;
+  @override
 
   /// [defaultValueRange] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   Range? get defaultValueRange;
+  @override
 
   /// [defaultValueRatio] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   Ratio? get defaultValueRatio;
+  @override
 
   /// [defaultValueRatioRange] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   RatioRange? get defaultValueRatioRange;
+  @override
 
   /// [defaultValueReference] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   Reference? get defaultValueReference;
+  @override
 
   /// [defaultValueSampledData] The value that should be used if there is no
   ///  value stated in the instance (e.g. 'if not otherwise specified, the
   ///  abstract is false').
-  @override
   SampledData? get defaultValueSampledData;
+  @override
 
   /// [defaultValueSignature] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   Signature? get defaultValueSignature;
+  @override
 
   /// [defaultValueTiming] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   Timing? get defaultValueTiming;
+  @override
 
   /// [defaultValueContactDetail] The value that should be used if there is no
   ///  value stated in the instance (e.g. 'if not otherwise specified, the
   ///  abstract is false').
-  @override
   ContactDetail? get defaultValueContactDetail;
+  @override
 
   /// [defaultValueDataRequirement] The value that should be used if there is no
   ///  value stated in the instance (e.g. 'if not otherwise specified, the
   ///  abstract is false').
-  @override
   DataRequirement? get defaultValueDataRequirement;
+  @override
 
   /// [defaultValueExpression] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   FhirExpression? get defaultValueExpression;
+  @override
 
   /// [defaultValueParameterDefinition] The value that should be used if there is
   ///  no value stated in the instance (e.g. 'if not otherwise specified, the
   ///  abstract is false').
-  @override
   ParameterDefinition? get defaultValueParameterDefinition;
+  @override
 
   /// [defaultValueRelatedArtifact] The value that should be used if there is no
   ///  value stated in the instance (e.g. 'if not otherwise specified, the
   ///  abstract is false').
-  @override
   RelatedArtifact? get defaultValueRelatedArtifact;
+  @override
 
   /// [defaultValueTriggerDefinition] The value that should be used if there is
   ///  no value stated in the instance (e.g. 'if not otherwise specified, the
   ///  abstract is false').
-  @override
   TriggerDefinition? get defaultValueTriggerDefinition;
+  @override
 
   /// [defaultValueUsageContext] The value that should be used if there is no
   ///  value stated in the instance (e.g. 'if not otherwise specified, the
   ///  abstract is false').
-  @override
   UsageContext? get defaultValueUsageContext;
+  @override
 
   /// [defaultValueAvailability] The value that should be used if there is no
   ///  value stated in the instance (e.g. 'if not otherwise specified, the
   ///  abstract is false').
-  @override
   Availability? get defaultValueAvailability;
+  @override
 
   /// [defaultValueExtendedContactDetail] The value that should be used if there
   ///  is no value stated in the instance (e.g. 'if not otherwise specified, the
   ///  abstract is false').
-  @override
   ExtendedContactDetail? get defaultValueExtendedContactDetail;
+  @override
 
   /// [defaultValueDosage] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   Dosage? get defaultValueDosage;
+  @override
 
   /// [defaultValueMeta] The value that should be used if there is no value
   ///  stated in the instance (e.g. 'if not otherwise specified, the abstract is
   ///  false').
-  @override
   FhirMeta? get defaultValueMeta;
+  @override
 
   /// [meaningWhenMissing] The Implicit meaning that is to be understood when
   ///  this element is missing (e.g. 'when this element is missing, the period is
   ///  ongoing').
-  @override
   FhirMarkdown? get meaningWhenMissing;
+  @override
 
   /// [meaningWhenMissingElement] ("_meaningWhenMissing") Extensions for
   ///  meaningWhenMissing
-  @override
   @JsonKey(name: '_meaningWhenMissing')
   PrimitiveElement? get meaningWhenMissingElement;
+  @override
 
   /// [orderMeaning] If present, indicates that the order of the repeating
   ///  element has meaning and describes what that meaning is.  If absent, it
   ///  means that the order of the element has no meaning.
-  @override
   String? get orderMeaning;
+  @override
 
   /// [orderMeaningElement] ("_orderMeaning") Extensions for orderMeaning
-  @override
   @JsonKey(name: '_orderMeaning')
   PrimitiveElement? get orderMeaningElement;
+  @override
 
   /// [fixedBase64Binary] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirBase64Binary? get fixedBase64Binary;
+  @override
 
   /// [fixedBase64BinaryElement] ("_fixedBase64Binary") Extensions for
   ///  fixedBase64Binary
-  @override
   @JsonKey(name: '_fixedBase64Binary')
   PrimitiveElement? get fixedBase64BinaryElement;
+  @override
 
   /// [fixedBoolean] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirBoolean? get fixedBoolean;
+  @override
 
   /// [fixedBooleanElement] ("_fixedBoolean") Extensions for fixedBoolean
-  @override
   @JsonKey(name: '_fixedBoolean')
   PrimitiveElement? get fixedBooleanElement;
+  @override
 
   /// [fixedCanonical] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirCanonical? get fixedCanonical;
+  @override
 
   /// [fixedCanonicalElement] ("_fixedCanonical") Extensions for fixedCanonical
-  @override
   @JsonKey(name: '_fixedCanonical')
   PrimitiveElement? get fixedCanonicalElement;
+  @override
 
   /// [fixedCode] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirCode? get fixedCode;
+  @override
 
   /// [fixedCodeElement] ("_fixedCode") Extensions for fixedCode
-  @override
   @JsonKey(name: '_fixedCode')
   PrimitiveElement? get fixedCodeElement;
+  @override
 
   /// [fixedDate] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirDate? get fixedDate;
+  @override
 
   /// [fixedDateElement] ("_fixedDate") Extensions for fixedDate
-  @override
   @JsonKey(name: '_fixedDate')
   PrimitiveElement? get fixedDateElement;
+  @override
 
   /// [fixedDateTime] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirDateTime? get fixedDateTime;
+  @override
 
   /// [fixedDateTimeElement] ("_fixedDateTime") Extensions for fixedDateTime
-  @override
   @JsonKey(name: '_fixedDateTime')
   PrimitiveElement? get fixedDateTimeElement;
+  @override
 
   /// [fixedDecimal] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirDecimal? get fixedDecimal;
+  @override
 
   /// [fixedDecimalElement] ("_fixedDecimal") Extensions for fixedDecimal
-  @override
   @JsonKey(name: '_fixedDecimal')
   PrimitiveElement? get fixedDecimalElement;
+  @override
 
   /// [fixedId] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirId? get fixedId;
+  @override
 
   /// [fixedIdElement] ("_fixedId") Extensions for fixedId
-  @override
   @JsonKey(name: '_fixedId')
   PrimitiveElement? get fixedIdElement;
+  @override
 
   /// [fixedInstant] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirInstant? get fixedInstant;
+  @override
 
   /// [fixedInstantElement] ("_fixedInstant") Extensions for fixedInstant
-  @override
   @JsonKey(name: '_fixedInstant')
   PrimitiveElement? get fixedInstantElement;
+  @override
 
   /// [fixedInteger] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirInteger? get fixedInteger;
+  @override
 
   /// [fixedIntegerElement] ("_fixedInteger") Extensions for fixedInteger
-  @override
   @JsonKey(name: '_fixedInteger')
   PrimitiveElement? get fixedIntegerElement;
+  @override
 
   /// [fixedInteger64] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirInteger64? get fixedInteger64;
+  @override
 
   /// [fixedInteger64Element] ("_fixedInteger64") Extensions for fixedInteger64
-  @override
   @JsonKey(name: '_fixedInteger64')
   PrimitiveElement? get fixedInteger64Element;
+  @override
 
   /// [fixedMarkdown] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirMarkdown? get fixedMarkdown;
+  @override
 
   /// [fixedMarkdownElement] ("_fixedMarkdown") Extensions for fixedMarkdown
-  @override
   @JsonKey(name: '_fixedMarkdown')
   PrimitiveElement? get fixedMarkdownElement;
+  @override
 
   /// [fixedOid] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirId? get fixedOid;
+  @override
 
   /// [fixedOidElement] ("_fixedOid") Extensions for fixedOid
-  @override
   @JsonKey(name: '_fixedOid')
   PrimitiveElement? get fixedOidElement;
+  @override
 
   /// [fixedPositiveInt] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirPositiveInt? get fixedPositiveInt;
+  @override
 
   /// [fixedPositiveIntElement] ("_fixedPositiveInt") Extensions for
   ///  fixedPositiveInt
-  @override
   @JsonKey(name: '_fixedPositiveInt')
   PrimitiveElement? get fixedPositiveIntElement;
+  @override
 
   /// [fixedString] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   String? get fixedString;
+  @override
 
   /// [fixedStringElement] ("_fixedString") Extensions for fixedString
-  @override
   @JsonKey(name: '_fixedString')
   PrimitiveElement? get fixedStringElement;
+  @override
 
   /// [fixedTime] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirTime? get fixedTime;
+  @override
 
   /// [fixedTimeElement] ("_fixedTime") Extensions for fixedTime
-  @override
   @JsonKey(name: '_fixedTime')
   PrimitiveElement? get fixedTimeElement;
+  @override
 
   /// [fixedUnsignedInt] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirUnsignedInt? get fixedUnsignedInt;
+  @override
 
   /// [fixedUnsignedIntElement] ("_fixedUnsignedInt") Extensions for
   ///  fixedUnsignedInt
-  @override
   @JsonKey(name: '_fixedUnsignedInt')
   PrimitiveElement? get fixedUnsignedIntElement;
+  @override
 
   /// [fixedUri] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirUri? get fixedUri;
+  @override
 
   /// [fixedUriElement] ("_fixedUri") Extensions for fixedUri
-  @override
   @JsonKey(name: '_fixedUri')
   PrimitiveElement? get fixedUriElement;
+  @override
 
   /// [fixedUrl] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirUrl? get fixedUrl;
+  @override
 
   /// [fixedUrlElement] ("_fixedUrl") Extensions for fixedUrl
-  @override
   @JsonKey(name: '_fixedUrl')
   PrimitiveElement? get fixedUrlElement;
+  @override
 
   /// [fixedUuid] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirId? get fixedUuid;
+  @override
 
   /// [fixedUuidElement] ("_fixedUuid") Extensions for fixedUuid
-  @override
   @JsonKey(name: '_fixedUuid')
   PrimitiveElement? get fixedUuidElement;
+  @override
 
   /// [fixedAddress] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Address? get fixedAddress;
+  @override
 
   /// [fixedAge] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Age? get fixedAge;
+  @override
 
   /// [fixedAnnotation] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Annotation? get fixedAnnotation;
+  @override
 
   /// [fixedAttachment] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Attachment? get fixedAttachment;
+  @override
 
   /// [fixedCodeableConcept] Specifies a value that SHALL be exactly the value
   ///  for this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   CodeableConcept? get fixedCodeableConcept;
+  @override
 
   /// [fixedCodeableReference] Specifies a value that SHALL be exactly the value
   ///  for this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   CodeableReference? get fixedCodeableReference;
+  @override
 
   /// [fixedCoding] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Coding? get fixedCoding;
+  @override
 
   /// [fixedContactPoint] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   ContactPoint? get fixedContactPoint;
+  @override
 
   /// [fixedCount] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Count? get fixedCount;
+  @override
 
   /// [fixedDistance] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Distance? get fixedDistance;
+  @override
 
   /// [fixedDuration] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirDuration? get fixedDuration;
+  @override
 
   /// [fixedHumanName] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   HumanName? get fixedHumanName;
+  @override
 
   /// [fixedIdentifier] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Identifier? get fixedIdentifier;
+  @override
 
   /// [fixedMoney] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Money? get fixedMoney;
+  @override
 
   /// [fixedPeriod] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Period? get fixedPeriod;
+  @override
 
   /// [fixedQuantity] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Quantity? get fixedQuantity;
+  @override
 
   /// [fixedRange] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Range? get fixedRange;
+  @override
 
   /// [fixedRatio] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Ratio? get fixedRatio;
+  @override
 
   /// [fixedRatioRange] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   RatioRange? get fixedRatioRange;
+  @override
 
   /// [fixedReference] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Reference? get fixedReference;
+  @override
 
   /// [fixedSampledData] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   SampledData? get fixedSampledData;
+  @override
 
   /// [fixedSignature] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Signature? get fixedSignature;
+  @override
 
   /// [fixedTiming] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Timing? get fixedTiming;
+  @override
 
   /// [fixedContactDetail] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   ContactDetail? get fixedContactDetail;
+  @override
 
   /// [fixedDataRequirement] Specifies a value that SHALL be exactly the value
   ///  for this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   DataRequirement? get fixedDataRequirement;
+  @override
 
   /// [fixedExpression] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirExpression? get fixedExpression;
+  @override
 
   /// [fixedParameterDefinition] Specifies a value that SHALL be exactly the
   ///  value  for this element in the instance, if present. For purposes of
   ///  comparison, non-significant whitespace is ignored, and all values must be
   ///  an exact match (case and accent sensitive). Missing elements/attributes
   ///  must also be missing.
-  @override
   ParameterDefinition? get fixedParameterDefinition;
+  @override
 
   /// [fixedRelatedArtifact] Specifies a value that SHALL be exactly the value
   ///  for this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   RelatedArtifact? get fixedRelatedArtifact;
+  @override
 
   /// [fixedTriggerDefinition] Specifies a value that SHALL be exactly the value
   ///  for this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   TriggerDefinition? get fixedTriggerDefinition;
+  @override
 
   /// [fixedUsageContext] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   UsageContext? get fixedUsageContext;
+  @override
 
   /// [fixedAvailability] Specifies a value that SHALL be exactly the value  for
   ///  this element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Availability? get fixedAvailability;
+  @override
 
   /// [fixedExtendedContactDetail] Specifies a value that SHALL be exactly the
   ///  value  for this element in the instance, if present. For purposes of
   ///  comparison, non-significant whitespace is ignored, and all values must be
   ///  an exact match (case and accent sensitive). Missing elements/attributes
   ///  must also be missing.
-  @override
   ExtendedContactDetail? get fixedExtendedContactDetail;
+  @override
 
   /// [fixedDosage] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   Dosage? get fixedDosage;
+  @override
 
   /// [fixedMeta] Specifies a value that SHALL be exactly the value  for this
   ///  element in the instance, if present. For purposes of comparison,
   ///  non-significant whitespace is ignored, and all values must be an exact
   ///  match (case and accent sensitive). Missing elements/attributes must also
   ///  be missing.
-  @override
   FhirMeta? get fixedMeta;
+  @override
 
   /// [patternBase64Binary] Specifies a value that each occurrence of the element
   ///  in the instance SHALL follow - that is, any value in the pattern must be
@@ -14677,14 +14455,14 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirBase64Binary? get patternBase64Binary;
+  @override
 
   /// [patternBase64BinaryElement] ("_patternBase64Binary") Extensions for
   ///  patternBase64Binary
-  @override
   @JsonKey(name: '_patternBase64Binary')
   PrimitiveElement? get patternBase64BinaryElement;
+  @override
 
   /// [patternBoolean] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -14710,13 +14488,13 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirBoolean? get patternBoolean;
+  @override
 
   /// [patternBooleanElement] ("_patternBoolean") Extensions for patternBoolean
-  @override
   @JsonKey(name: '_patternBoolean')
   PrimitiveElement? get patternBooleanElement;
+  @override
 
   /// [patternCanonical] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -14742,14 +14520,14 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirCanonical? get patternCanonical;
+  @override
 
   /// [patternCanonicalElement] ("_patternCanonical") Extensions for
   ///  patternCanonical
-  @override
   @JsonKey(name: '_patternCanonical')
   PrimitiveElement? get patternCanonicalElement;
+  @override
 
   /// [patternCode] Specifies a value that each occurrence of the element in the
   ///  instance SHALL follow - that is, any value in the pattern must be found in
@@ -14775,13 +14553,13 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirCode? get patternCode;
+  @override
 
   /// [patternCodeElement] ("_patternCode") Extensions for patternCode
-  @override
   @JsonKey(name: '_patternCode')
   PrimitiveElement? get patternCodeElement;
+  @override
 
   /// [patternDate] Specifies a value that each occurrence of the element in the
   ///  instance SHALL follow - that is, any value in the pattern must be found in
@@ -14807,13 +14585,13 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirDate? get patternDate;
+  @override
 
   /// [patternDateElement] ("_patternDate") Extensions for patternDate
-  @override
   @JsonKey(name: '_patternDate')
   PrimitiveElement? get patternDateElement;
+  @override
 
   /// [patternDateTime] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -14839,13 +14617,13 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirDateTime? get patternDateTime;
+  @override
 
   /// [patternDateTimeElement] ("_patternDateTime") Extensions for patternDateTime
-  @override
   @JsonKey(name: '_patternDateTime')
   PrimitiveElement? get patternDateTimeElement;
+  @override
 
   /// [patternDecimal] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -14871,13 +14649,13 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirDecimal? get patternDecimal;
+  @override
 
   /// [patternDecimalElement] ("_patternDecimal") Extensions for patternDecimal
-  @override
   @JsonKey(name: '_patternDecimal')
   PrimitiveElement? get patternDecimalElement;
+  @override
 
   /// [patternId] Specifies a value that each occurrence of the element in the
   ///  instance SHALL follow - that is, any value in the pattern must be found in
@@ -14903,13 +14681,13 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirId? get patternId;
+  @override
 
   /// [patternIdElement] ("_patternId") Extensions for patternId
-  @override
   @JsonKey(name: '_patternId')
   PrimitiveElement? get patternIdElement;
+  @override
 
   /// [patternInstant] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -14935,13 +14713,13 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirInstant? get patternInstant;
+  @override
 
   /// [patternInstantElement] ("_patternInstant") Extensions for patternInstant
-  @override
   @JsonKey(name: '_patternInstant')
   PrimitiveElement? get patternInstantElement;
+  @override
 
   /// [patternInteger] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -14967,13 +14745,13 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirInteger? get patternInteger;
+  @override
 
   /// [patternIntegerElement] ("_patternInteger") Extensions for patternInteger
-  @override
   @JsonKey(name: '_patternInteger')
   PrimitiveElement? get patternIntegerElement;
+  @override
 
   /// [patternInteger64] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -14999,14 +14777,14 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirInteger64? get patternInteger64;
+  @override
 
   /// [patternInteger64Element] ("_patternInteger64") Extensions for
   ///  patternInteger64
-  @override
   @JsonKey(name: '_patternInteger64')
   PrimitiveElement? get patternInteger64Element;
+  @override
 
   /// [patternMarkdown] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -15032,13 +14810,13 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirMarkdown? get patternMarkdown;
+  @override
 
   /// [patternMarkdownElement] ("_patternMarkdown") Extensions for patternMarkdown
-  @override
   @JsonKey(name: '_patternMarkdown')
   PrimitiveElement? get patternMarkdownElement;
+  @override
 
   /// [patternOid] Specifies a value that each occurrence of the element in the
   ///  instance SHALL follow - that is, any value in the pattern must be found in
@@ -15064,13 +14842,13 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirId? get patternOid;
+  @override
 
   /// [patternOidElement] ("_patternOid") Extensions for patternOid
-  @override
   @JsonKey(name: '_patternOid')
   PrimitiveElement? get patternOidElement;
+  @override
 
   /// [patternPositiveInt] Specifies a value that each occurrence of the element
   ///  in the instance SHALL follow - that is, any value in the pattern must be
@@ -15096,14 +14874,14 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirPositiveInt? get patternPositiveInt;
+  @override
 
   /// [patternPositiveIntElement] ("_patternPositiveInt") Extensions for
   ///  patternPositiveInt
-  @override
   @JsonKey(name: '_patternPositiveInt')
   PrimitiveElement? get patternPositiveIntElement;
+  @override
 
   /// [patternString] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -15129,13 +14907,13 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   String? get patternString;
+  @override
 
   /// [patternStringElement] ("_patternString") Extensions for patternString
-  @override
   @JsonKey(name: '_patternString')
   PrimitiveElement? get patternStringElement;
+  @override
 
   /// [patternTime] Specifies a value that each occurrence of the element in the
   ///  instance SHALL follow - that is, any value in the pattern must be found in
@@ -15161,13 +14939,13 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirTime? get patternTime;
+  @override
 
   /// [patternTimeElement] ("_patternTime") Extensions for patternTime
-  @override
   @JsonKey(name: '_patternTime')
   PrimitiveElement? get patternTimeElement;
+  @override
 
   /// [patternUnsignedInt] Specifies a value that each occurrence of the element
   ///  in the instance SHALL follow - that is, any value in the pattern must be
@@ -15193,14 +14971,14 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirUnsignedInt? get patternUnsignedInt;
+  @override
 
   /// [patternUnsignedIntElement] ("_patternUnsignedInt") Extensions for
   ///  patternUnsignedInt
-  @override
   @JsonKey(name: '_patternUnsignedInt')
   PrimitiveElement? get patternUnsignedIntElement;
+  @override
 
   /// [patternUri] Specifies a value that each occurrence of the element in the
   ///  instance SHALL follow - that is, any value in the pattern must be found in
@@ -15226,13 +15004,13 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirUri? get patternUri;
+  @override
 
   /// [patternUriElement] ("_patternUri") Extensions for patternUri
-  @override
   @JsonKey(name: '_patternUri')
   PrimitiveElement? get patternUriElement;
+  @override
 
   /// [patternUrl] Specifies a value that each occurrence of the element in the
   ///  instance SHALL follow - that is, any value in the pattern must be found in
@@ -15258,13 +15036,13 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirUrl? get patternUrl;
+  @override
 
   /// [patternUrlElement] ("_patternUrl") Extensions for patternUrl
-  @override
   @JsonKey(name: '_patternUrl')
   PrimitiveElement? get patternUrlElement;
+  @override
 
   /// [patternUuid] Specifies a value that each occurrence of the element in the
   ///  instance SHALL follow - that is, any value in the pattern must be found in
@@ -15290,13 +15068,13 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirId? get patternUuid;
+  @override
 
   /// [patternUuidElement] ("_patternUuid") Extensions for patternUuid
-  @override
   @JsonKey(name: '_patternUuid')
   PrimitiveElement? get patternUuidElement;
+  @override
 
   /// [patternAddress] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -15322,8 +15100,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Address? get patternAddress;
+  @override
 
   /// [patternAge] Specifies a value that each occurrence of the element in the
   ///  instance SHALL follow - that is, any value in the pattern must be found in
@@ -15349,8 +15127,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Age? get patternAge;
+  @override
 
   /// [patternAnnotation] Specifies a value that each occurrence of the element
   ///  in the instance SHALL follow - that is, any value in the pattern must be
@@ -15376,8 +15154,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Annotation? get patternAnnotation;
+  @override
 
   /// [patternAttachment] Specifies a value that each occurrence of the element
   ///  in the instance SHALL follow - that is, any value in the pattern must be
@@ -15403,8 +15181,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Attachment? get patternAttachment;
+  @override
 
   /// [patternCodeableConcept] Specifies a value that each occurrence of the
   ///  element in the instance SHALL follow - that is, any value in the pattern
@@ -15431,8 +15209,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   CodeableConcept? get patternCodeableConcept;
+  @override
 
   /// [patternCodeableReference] Specifies a value that each occurrence of the
   ///  element in the instance SHALL follow - that is, any value in the pattern
@@ -15459,8 +15237,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   CodeableReference? get patternCodeableReference;
+  @override
 
   /// [patternCoding] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -15486,8 +15264,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Coding? get patternCoding;
+  @override
 
   /// [patternContactPoint] Specifies a value that each occurrence of the element
   ///  in the instance SHALL follow - that is, any value in the pattern must be
@@ -15513,8 +15291,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   ContactPoint? get patternContactPoint;
+  @override
 
   /// [patternCount] Specifies a value that each occurrence of the element in the
   ///  instance SHALL follow - that is, any value in the pattern must be found in
@@ -15540,8 +15318,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Count? get patternCount;
+  @override
 
   /// [patternDistance] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -15567,8 +15345,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Distance? get patternDistance;
+  @override
 
   /// [patternDuration] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -15594,8 +15372,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirDuration? get patternDuration;
+  @override
 
   /// [patternHumanName] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -15621,8 +15399,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   HumanName? get patternHumanName;
+  @override
 
   /// [patternIdentifier] Specifies a value that each occurrence of the element
   ///  in the instance SHALL follow - that is, any value in the pattern must be
@@ -15648,8 +15426,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Identifier? get patternIdentifier;
+  @override
 
   /// [patternMoney] Specifies a value that each occurrence of the element in the
   ///  instance SHALL follow - that is, any value in the pattern must be found in
@@ -15675,8 +15453,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Money? get patternMoney;
+  @override
 
   /// [patternPeriod] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -15702,8 +15480,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Period? get patternPeriod;
+  @override
 
   /// [patternQuantity] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -15729,8 +15507,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Quantity? get patternQuantity;
+  @override
 
   /// [patternRange] Specifies a value that each occurrence of the element in the
   ///  instance SHALL follow - that is, any value in the pattern must be found in
@@ -15756,8 +15534,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Range? get patternRange;
+  @override
 
   /// [patternRatio] Specifies a value that each occurrence of the element in the
   ///  instance SHALL follow - that is, any value in the pattern must be found in
@@ -15783,8 +15561,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Ratio? get patternRatio;
+  @override
 
   /// [patternRatioRange] Specifies a value that each occurrence of the element
   ///  in the instance SHALL follow - that is, any value in the pattern must be
@@ -15810,8 +15588,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   RatioRange? get patternRatioRange;
+  @override
 
   /// [patternReference] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -15837,8 +15615,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Reference? get patternReference;
+  @override
 
   /// [patternSampledData] Specifies a value that each occurrence of the element
   ///  in the instance SHALL follow - that is, any value in the pattern must be
@@ -15864,8 +15642,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   SampledData? get patternSampledData;
+  @override
 
   /// [patternSignature] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -15891,8 +15669,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Signature? get patternSignature;
+  @override
 
   /// [patternTiming] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -15918,8 +15696,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Timing? get patternTiming;
+  @override
 
   /// [patternContactDetail] Specifies a value that each occurrence of the
   ///  element in the instance SHALL follow - that is, any value in the pattern
@@ -15946,8 +15724,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   ContactDetail? get patternContactDetail;
+  @override
 
   /// [patternDataRequirement] Specifies a value that each occurrence of the
   ///  element in the instance SHALL follow - that is, any value in the pattern
@@ -15974,8 +15752,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   DataRequirement? get patternDataRequirement;
+  @override
 
   /// [patternExpression] Specifies a value that each occurrence of the element
   ///  in the instance SHALL follow - that is, any value in the pattern must be
@@ -16001,8 +15779,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirExpression? get patternExpression;
+  @override
 
   /// [patternParameterDefinition] Specifies a value that each occurrence of the
   ///  element in the instance SHALL follow - that is, any value in the pattern
@@ -16029,8 +15807,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   ParameterDefinition? get patternParameterDefinition;
+  @override
 
   /// [patternRelatedArtifact] Specifies a value that each occurrence of the
   ///  element in the instance SHALL follow - that is, any value in the pattern
@@ -16057,8 +15835,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   RelatedArtifact? get patternRelatedArtifact;
+  @override
 
   /// [patternTriggerDefinition] Specifies a value that each occurrence of the
   ///  element in the instance SHALL follow - that is, any value in the pattern
@@ -16085,8 +15863,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   TriggerDefinition? get patternTriggerDefinition;
+  @override
 
   /// [patternUsageContext] Specifies a value that each occurrence of the element
   ///  in the instance SHALL follow - that is, any value in the pattern must be
@@ -16112,8 +15890,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   UsageContext? get patternUsageContext;
+  @override
 
   /// [patternAvailability] Specifies a value that each occurrence of the element
   ///  in the instance SHALL follow - that is, any value in the pattern must be
@@ -16139,8 +15917,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Availability? get patternAvailability;
+  @override
 
   /// [patternExtendedContactDetail] Specifies a value that each occurrence of
   ///  the element in the instance SHALL follow - that is, any value in the
@@ -16167,8 +15945,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   ExtendedContactDetail? get patternExtendedContactDetail;
+  @override
 
   /// [patternDosage] Specifies a value that each occurrence of the element in
   ///  the instance SHALL follow - that is, any value in the pattern must be
@@ -16194,8 +15972,8 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   Dosage? get patternDosage;
+  @override
 
   /// [patternMeta] Specifies a value that each occurrence of the element in the
   ///  instance SHALL follow - that is, any value in the pattern must be found in
@@ -16221,231 +15999,231 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  element or a subset of elements, slicing must be used. See [Examples of
   ///  Patterns](elementdefinition-examples.html#pattern-examples) for examples
   ///  of pattern usage and the effect it will have.
-  @override
   FhirMeta? get patternMeta;
+  @override
 
   /// [example] A sample value for this element demonstrating the type of
   ///  information that would typically be found in the element.
-  @override
   List<ElementDefinitionExample>? get example;
+  @override
 
   /// [minValueDate] The minimum allowed value for the element. The value is
   ///  inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirDate? get minValueDate;
+  @override
 
   /// [minValueDateElement] ("_minValueDate") Extensions for minValueDate
-  @override
   @JsonKey(name: '_minValueDate')
   PrimitiveElement? get minValueDateElement;
+  @override
 
   /// [minValueDateTime] The minimum allowed value for the element. The value is
   ///  inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirDateTime? get minValueDateTime;
+  @override
 
   /// [minValueDateTimeElement] ("_minValueDateTime") Extensions for
   ///  minValueDateTime
-  @override
   @JsonKey(name: '_minValueDateTime')
   PrimitiveElement? get minValueDateTimeElement;
+  @override
 
   /// [minValueInstant] The minimum allowed value for the element. The value is
   ///  inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirInstant? get minValueInstant;
+  @override
 
   /// [minValueInstantElement] ("_minValueInstant") Extensions for minValueInstant
-  @override
   @JsonKey(name: '_minValueInstant')
   PrimitiveElement? get minValueInstantElement;
+  @override
 
   /// [minValueTime] The minimum allowed value for the element. The value is
   ///  inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirTime? get minValueTime;
+  @override
 
   /// [minValueTimeElement] ("_minValueTime") Extensions for minValueTime
-  @override
   @JsonKey(name: '_minValueTime')
   PrimitiveElement? get minValueTimeElement;
+  @override
 
   /// [minValueDecimal] The minimum allowed value for the element. The value is
   ///  inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirDecimal? get minValueDecimal;
+  @override
 
   /// [minValueDecimalElement] ("_minValueDecimal") Extensions for minValueDecimal
-  @override
   @JsonKey(name: '_minValueDecimal')
   PrimitiveElement? get minValueDecimalElement;
+  @override
 
   /// [minValueInteger] The minimum allowed value for the element. The value is
   ///  inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirInteger? get minValueInteger;
+  @override
 
   /// [minValueIntegerElement] ("_minValueInteger") Extensions for minValueInteger
-  @override
   @JsonKey(name: '_minValueInteger')
   PrimitiveElement? get minValueIntegerElement;
+  @override
 
   /// [minValueInteger64] The minimum allowed value for the element. The value is
   ///  inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirInteger64? get minValueInteger64;
+  @override
 
   /// [minValueInteger64Element] ("_minValueInteger64") Extensions for
   ///  minValueInteger64
-  @override
   @JsonKey(name: '_minValueInteger64')
   PrimitiveElement? get minValueInteger64Element;
+  @override
 
   /// [minValuePositiveInt] The minimum allowed value for the element. The value
   ///  is inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirPositiveInt? get minValuePositiveInt;
+  @override
 
   /// [minValuePositiveIntElement] ("_minValuePositiveInt") Extensions for
   ///  minValuePositiveInt
-  @override
   @JsonKey(name: '_minValuePositiveInt')
   PrimitiveElement? get minValuePositiveIntElement;
+  @override
 
   /// [minValueUnsignedInt] The minimum allowed value for the element. The value
   ///  is inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirUnsignedInt? get minValueUnsignedInt;
+  @override
 
   /// [minValueUnsignedIntElement] ("_minValueUnsignedInt") Extensions for
   ///  minValueUnsignedInt
-  @override
   @JsonKey(name: '_minValueUnsignedInt')
   PrimitiveElement? get minValueUnsignedIntElement;
+  @override
 
   /// [minValueQuantity] The minimum allowed value for the element. The value is
   ///  inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   Quantity? get minValueQuantity;
+  @override
 
   /// [maxValueDate] The maximum allowed value for the element. The value is
   ///  inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirDate? get maxValueDate;
+  @override
 
   /// [maxValueDateElement] ("_maxValueDate") Extensions for maxValueDate
-  @override
   @JsonKey(name: '_maxValueDate')
   PrimitiveElement? get maxValueDateElement;
+  @override
 
   /// [maxValueDateTime] The maximum allowed value for the element. The value is
   ///  inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirDateTime? get maxValueDateTime;
+  @override
 
   /// [maxValueDateTimeElement] ("_maxValueDateTime") Extensions for
   ///  maxValueDateTime
-  @override
   @JsonKey(name: '_maxValueDateTime')
   PrimitiveElement? get maxValueDateTimeElement;
+  @override
 
   /// [maxValueInstant] The maximum allowed value for the element. The value is
   ///  inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirInstant? get maxValueInstant;
+  @override
 
   /// [maxValueInstantElement] ("_maxValueInstant") Extensions for maxValueInstant
-  @override
   @JsonKey(name: '_maxValueInstant')
   PrimitiveElement? get maxValueInstantElement;
+  @override
 
   /// [maxValueTime] The maximum allowed value for the element. The value is
   ///  inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirTime? get maxValueTime;
+  @override
 
   /// [maxValueTimeElement] ("_maxValueTime") Extensions for maxValueTime
-  @override
   @JsonKey(name: '_maxValueTime')
   PrimitiveElement? get maxValueTimeElement;
+  @override
 
   /// [maxValueDecimal] The maximum allowed value for the element. The value is
   ///  inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirDecimal? get maxValueDecimal;
+  @override
 
   /// [maxValueDecimalElement] ("_maxValueDecimal") Extensions for maxValueDecimal
-  @override
   @JsonKey(name: '_maxValueDecimal')
   PrimitiveElement? get maxValueDecimalElement;
+  @override
 
   /// [maxValueInteger] The maximum allowed value for the element. The value is
   ///  inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirInteger? get maxValueInteger;
+  @override
 
   /// [maxValueIntegerElement] ("_maxValueInteger") Extensions for maxValueInteger
-  @override
   @JsonKey(name: '_maxValueInteger')
   PrimitiveElement? get maxValueIntegerElement;
+  @override
 
   /// [maxValueInteger64] The maximum allowed value for the element. The value is
   ///  inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirInteger64? get maxValueInteger64;
+  @override
 
   /// [maxValueInteger64Element] ("_maxValueInteger64") Extensions for
   ///  maxValueInteger64
-  @override
   @JsonKey(name: '_maxValueInteger64')
   PrimitiveElement? get maxValueInteger64Element;
+  @override
 
   /// [maxValuePositiveInt] The maximum allowed value for the element. The value
   ///  is inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirPositiveInt? get maxValuePositiveInt;
+  @override
 
   /// [maxValuePositiveIntElement] ("_maxValuePositiveInt") Extensions for
   ///  maxValuePositiveInt
-  @override
   @JsonKey(name: '_maxValuePositiveInt')
   PrimitiveElement? get maxValuePositiveIntElement;
+  @override
 
   /// [maxValueUnsignedInt] The maximum allowed value for the element. The value
   ///  is inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   FhirUnsignedInt? get maxValueUnsignedInt;
+  @override
 
   /// [maxValueUnsignedIntElement] ("_maxValueUnsignedInt") Extensions for
   ///  maxValueUnsignedInt
-  @override
   @JsonKey(name: '_maxValueUnsignedInt')
   PrimitiveElement? get maxValueUnsignedIntElement;
+  @override
 
   /// [maxValueQuantity] The maximum allowed value for the element. The value is
   ///  inclusive. This is allowed for the types date, dateTime, instant, time,
   ///  decimal, integer, and Quantity.
-  @override
   Quantity? get maxValueQuantity;
+  @override
 
   /// [maxLength] Indicates the maximum length in characters that is permitted to
   ///  be present in conformant instances and which is expected to be supported
@@ -16454,43 +16232,43 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  (see
   ///  [[[http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics]]]).
   ///
-  @override
   FhirInteger? get maxLength;
+  @override
 
   /// [maxLengthElement] ("_maxLength") Extensions for maxLength
-  @override
   @JsonKey(name: '_maxLength')
   PrimitiveElement? get maxLengthElement;
+  @override
 
   /// [condition] A reference to an invariant that may make additional statements
   ///  about the cardinality or value in the instance.
-  @override
   List<FhirId>? get condition;
+  @override
 
   /// [conditionElement] ("_condition") Extensions for condition
-  @override
   @JsonKey(name: '_condition')
   List<PrimitiveElement>? get conditionElement;
+  @override
 
   /// [constraint] Formal constraints such as co-occurrence and other constraints
   ///  that can be computationally evaluated within the context of the instance.
-  @override
   List<ElementDefinitionConstraint>? get constraint;
+  @override
 
   /// [mustHaveValue] Specifies for a primitive data type that the value of the
   ///  data type cannot be replaced by an extension.
-  @override
   FhirBoolean? get mustHaveValue;
+  @override
 
   /// [mustHaveValueElement] ("_mustHaveValue") Extensions for mustHaveValue
-  @override
   @JsonKey(name: '_mustHaveValue')
   PrimitiveElement? get mustHaveValueElement;
+  @override
 
   /// [valueAlternatives] Specifies a list of extensions that can appear in place
   ///  of a primitive value.
-  @override
   List<FhirCanonical>? get valueAlternatives;
+  @override
 
   /// [mustSupport] If true, implementations that produce or consume resources
   ///  SHALL provide "support" for the element in some meaningful way. Note that
@@ -16498,13 +16276,13 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  false, the element may be ignored and not supported. If false, whether to
   ///  populate or use the data element in any way is at the discretion of the
   ///  implementation.
-  @override
   FhirBoolean? get mustSupport;
+  @override
 
   /// [mustSupportElement] ("_mustSupport") Extensions for mustSupport
-  @override
   @JsonKey(name: '_mustSupport')
   PrimitiveElement? get mustSupportElement;
+  @override
 
   /// [isModifier] If true, the value of this element affects the interpretation
   ///  of the element or resource that contains it, and the value of the element
@@ -16515,49 +16293,45 @@ abstract class _ElementDefinition extends ElementDefinition {
   ///  their particular system. When used on the root element in an extension
   ///  definition, this indicates whether or not the extension is a modifier
   ///  extension.
-  @override
   FhirBoolean? get isModifier;
+  @override
 
   /// [isModifierElement] ("_isModifier") Extensions for isModifier
-  @override
   @JsonKey(name: '_isModifier')
   PrimitiveElement? get isModifierElement;
+  @override
 
   /// [isModifierReason] Explains how that element affects the interpretation of
   ///  the resource or element that contains it.
-  @override
   String? get isModifierReason;
+  @override
 
   /// [isModifierReasonElement] ("_isModifierReason") Extensions for
   ///  isModifierReason
-  @override
   @JsonKey(name: '_isModifierReason')
   PrimitiveElement? get isModifierReasonElement;
+  @override
 
   /// [isSummary] Whether the element should be included if a client requests a
   ///  search with the parameter _summary=true.
-  @override
   FhirBoolean? get isSummary;
+  @override
 
   /// [isSummaryElement] ("_isSummary") Extensions for isSummary
-  @override
   @JsonKey(name: '_isSummary')
   PrimitiveElement? get isSummaryElement;
+  @override
 
   /// [binding] Binds to a value set if this element is coded (code, Coding,
   ///  CodeableConcept, Quantity), or the data types (string, uri).
-  @override
   ElementDefinitionBinding? get binding;
+  @override
 
   /// [mapping] Identifies a concept from an external specification that roughly
   ///  corresponds to this element.
-  @override
   List<ElementDefinitionMapping>? get mapping;
-
-  /// Create a copy of ElementDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ElementDefinitionImplCopyWith<_$ElementDefinitionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -16635,12 +16409,8 @@ mixin _$ElementDefinitionSlicing {
   @JsonKey(name: '_rules')
   PrimitiveElement? get rulesElement => throw _privateConstructorUsedError;
 
-  /// Serializes this ElementDefinitionSlicing to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ElementDefinitionSlicing
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ElementDefinitionSlicingCopyWith<ElementDefinitionSlicing> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -16675,8 +16445,6 @@ class _$ElementDefinitionSlicingCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ElementDefinitionSlicing
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -16768,8 +16536,6 @@ class __$$ElementDefinitionSlicingImplCopyWithImpl<$Res>
       $Res Function(_$ElementDefinitionSlicingImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ElementDefinitionSlicing
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -17001,7 +16767,7 @@ class _$ElementDefinitionSlicingImpl extends _ElementDefinitionSlicing {
                 other.rulesElement == rulesElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -17016,9 +16782,7 @@ class _$ElementDefinitionSlicingImpl extends _ElementDefinitionSlicing {
       rules,
       rulesElement);
 
-  /// Create a copy of ElementDefinitionSlicing
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ElementDefinitionSlicingImplCopyWith<_$ElementDefinitionSlicingImpl>
@@ -17051,10 +16815,12 @@ abstract class _ElementDefinitionSlicing extends ElementDefinitionSlicing {
   factory _ElementDefinitionSlicing.fromJson(Map<String, dynamic> json) =
       _$ElementDefinitionSlicingImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -17062,9 +16828,9 @@ abstract class _ElementDefinitionSlicing extends ElementDefinitionSlicing {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -17078,8 +16844,8 @@ abstract class _ElementDefinitionSlicing extends ElementDefinitionSlicing {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [discriminator] Designates which child elements are used to discriminate
   ///  between the slices when processing an instance. If one or more
@@ -17087,46 +16853,42 @@ abstract class _ElementDefinitionSlicing extends ElementDefinitionSlicing {
   ///  instance data SHALL completely distinguish which slice the element in the
   ///  resource matches based on the allowed values for those elements in each of
   ///  the slices.
-  @override
   List<ElementDefinitionDiscriminator>? get discriminator;
+  @override
 
   /// [description] A human-readable text description of how the slicing works.
   ///  If there is no discriminator, this is required to be present to provide
   ///  whatever information is possible about how the slices can be
   ///  differentiated.
-  @override
   String? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [ordered] If the matching elements have to occur in the same order as
   ///  defined in the profile.
-  @override
   FhirBoolean? get ordered;
+  @override
 
   /// [orderedElement] ("_ordered") Extensions for ordered
-  @override
   @JsonKey(name: '_ordered')
   PrimitiveElement? get orderedElement;
+  @override
 
   /// [rules] Whether additional slices are allowed or not. When the slices are
   ///  ordered, profile authors can also say that additional slices are only
   ///  allowed at the end.
-  @override
   ElementDefinitionSlicingRules? get rules;
+  @override
 
   /// [rulesElement] ("_rules") Extensions for rules
-  @override
   @JsonKey(name: '_rules')
   PrimitiveElement? get rulesElement;
-
-  /// Create a copy of ElementDefinitionSlicing
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ElementDefinitionSlicingImplCopyWith<_$ElementDefinitionSlicingImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -17184,12 +16946,8 @@ mixin _$ElementDefinitionDiscriminator {
   @JsonKey(name: '_path')
   PrimitiveElement? get pathElement => throw _privateConstructorUsedError;
 
-  /// Serializes this ElementDefinitionDiscriminator to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ElementDefinitionDiscriminator
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ElementDefinitionDiscriminatorCopyWith<ElementDefinitionDiscriminator>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -17223,8 +16981,6 @@ class _$ElementDefinitionDiscriminatorCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ElementDefinitionDiscriminator
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -17298,8 +17054,6 @@ class __$$ElementDefinitionDiscriminatorImplCopyWithImpl<$Res>
       $Res Function(_$ElementDefinitionDiscriminatorImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ElementDefinitionDiscriminator
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -17473,7 +17227,7 @@ class _$ElementDefinitionDiscriminatorImpl
                 other.pathElement == pathElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -17485,9 +17239,7 @@ class _$ElementDefinitionDiscriminatorImpl
       path,
       pathElement);
 
-  /// Create a copy of ElementDefinitionDiscriminator
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ElementDefinitionDiscriminatorImplCopyWith<
@@ -17519,10 +17271,12 @@ abstract class _ElementDefinitionDiscriminator
   factory _ElementDefinitionDiscriminator.fromJson(Map<String, dynamic> json) =
       _$ElementDefinitionDiscriminatorImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -17530,9 +17284,9 @@ abstract class _ElementDefinitionDiscriminator
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -17546,34 +17300,30 @@ abstract class _ElementDefinitionDiscriminator
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] How the element value is interpreted when discrimination is
   ///  evaluated.
-  @override
   ElementDefinitionDiscriminatorType? get type;
+  @override
 
   /// [typeElement] ("_type") Extensions for type
-  @override
   @JsonKey(name: '_type')
   PrimitiveElement? get typeElement;
+  @override
 
   /// [path] A FHIRPath expression, using [the simple subset of
   ///  FHIRPath](fhirpath.html#simple), that is used to identify the element on
   ///  which discrimination is based.
-  @override
   String? get path;
+  @override
 
   /// [pathElement] ("_path") Extensions for path
-  @override
   @JsonKey(name: '_path')
   PrimitiveElement? get pathElement;
-
-  /// Create a copy of ElementDefinitionDiscriminator
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ElementDefinitionDiscriminatorImplCopyWith<
           _$ElementDefinitionDiscriminatorImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -17638,12 +17388,8 @@ mixin _$ElementDefinitionBase {
   @JsonKey(name: '_max')
   PrimitiveElement? get maxElement => throw _privateConstructorUsedError;
 
-  /// Serializes this ElementDefinitionBase to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ElementDefinitionBase
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ElementDefinitionBaseCopyWith<ElementDefinitionBase> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -17677,8 +17423,6 @@ class _$ElementDefinitionBaseCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ElementDefinitionBase
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -17763,8 +17507,6 @@ class __$$ElementDefinitionBaseImplCopyWithImpl<$Res>
       $Res Function(_$ElementDefinitionBaseImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ElementDefinitionBase
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -17960,7 +17702,7 @@ class _$ElementDefinitionBaseImpl extends _ElementDefinitionBase {
                 other.maxElement == maxElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -17974,9 +17716,7 @@ class _$ElementDefinitionBaseImpl extends _ElementDefinitionBase {
       max,
       maxElement);
 
-  /// Create a copy of ElementDefinitionBase
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ElementDefinitionBaseImplCopyWith<_$ElementDefinitionBaseImpl>
@@ -18008,10 +17748,12 @@ abstract class _ElementDefinitionBase extends ElementDefinitionBase {
   factory _ElementDefinitionBase.fromJson(Map<String, dynamic> json) =
       _$ElementDefinitionBaseImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -18019,9 +17761,9 @@ abstract class _ElementDefinitionBase extends ElementDefinitionBase {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -18035,43 +17777,39 @@ abstract class _ElementDefinitionBase extends ElementDefinitionBase {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [path] The Path that identifies the base element - this matches the
   ///  ElementDefinition.path for that element. Across FHIR, there is only one
   ///  base definition of any element - that is, an element definition on a
   ///  [[[StructureDefinition]]] without a StructureDefinition.base.
-  @override
   String? get path;
+  @override
 
   /// [pathElement] ("_path") Extensions for path
-  @override
   @JsonKey(name: '_path')
   PrimitiveElement? get pathElement;
+  @override
 
   /// [min] Minimum cardinality of the base element identified by the path.
-  @override
   FhirUnsignedInt? get min;
+  @override
 
   /// [minElement] ("_min") Extensions for min
-  @override
   @JsonKey(name: '_min')
   PrimitiveElement? get minElement;
+  @override
 
   /// [max] Maximum cardinality of the base element identified by the path.
-  @override
   String? get max;
+  @override
 
   /// [maxElement] ("_max") Extensions for max
-  @override
   @JsonKey(name: '_max')
   PrimitiveElement? get maxElement;
-
-  /// Create a copy of ElementDefinitionBase
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ElementDefinitionBaseImplCopyWith<_$ElementDefinitionBaseImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -18165,12 +17903,8 @@ mixin _$ElementDefinitionType {
   @JsonKey(name: '_versioning')
   PrimitiveElement? get versioningElement => throw _privateConstructorUsedError;
 
-  /// Serializes this ElementDefinitionType to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ElementDefinitionType
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ElementDefinitionTypeCopyWith<ElementDefinitionType> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -18207,8 +17941,6 @@ class _$ElementDefinitionTypeCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ElementDefinitionType
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -18311,8 +18043,6 @@ class __$$ElementDefinitionTypeImplCopyWithImpl<$Res>
       $Res Function(_$ElementDefinitionTypeImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ElementDefinitionType
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -18617,7 +18347,7 @@ class _$ElementDefinitionTypeImpl extends _ElementDefinitionType {
                 other.versioningElement == versioningElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -18634,9 +18364,7 @@ class _$ElementDefinitionTypeImpl extends _ElementDefinitionType {
       versioning,
       versioningElement);
 
-  /// Create a copy of ElementDefinitionType
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ElementDefinitionTypeImplCopyWith<_$ElementDefinitionTypeImpl>
@@ -18672,10 +18400,12 @@ abstract class _ElementDefinitionType extends ElementDefinitionType {
   factory _ElementDefinitionType.fromJson(Map<String, dynamic> json) =
       _$ElementDefinitionTypeImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -18683,9 +18413,9 @@ abstract class _ElementDefinitionType extends ElementDefinitionType {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -18699,21 +18429,21 @@ abstract class _ElementDefinitionType extends ElementDefinitionType {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [code] URL of Data type or Resource that is a(or the) type used for this
   ///  element. References are URLs that are relative to
   ///  http://hl7.org/fhir/StructureDefinition e.g. "string" is a reference to
   ///  http://hl7.org/fhir/StructureDefinition/string. Absolute URLs are only
   ///  allowed in logical models.
-  @override
   FhirUri? get code;
+  @override
 
   /// [codeElement] ("_code") Extensions for code
-  @override
   @JsonKey(name: '_code')
   PrimitiveElement? get codeElement;
+  @override
 
   /// [profile] Identifies a profile structure or implementation Guide that
   ///  applies to the datatype this element refers to. If any profiles are
@@ -18722,11 +18452,11 @@ abstract class _ElementDefinitionType extends ElementDefinitionType {
   ///  reference to another StructureDefinition or Implementation Guide by a
   ///  canonical URL. When an implementation guide is specified, the type SHALL
   ///  conform to at least one profile defined in the implementation guide.
-  @override
   List<FhirCanonical>? get profile;
   @override
   @JsonKey(name: '_profile')
   List<PrimitiveElement>? get profileElement;
+  @override
 
   /// [targetProfile] Used when the type is "Reference" or "canonical", and
   ///  identifies a profile structure or implementation Guide that applies to the
@@ -18737,34 +18467,30 @@ abstract class _ElementDefinitionType extends ElementDefinitionType {
   ///  canonical URL. When an implementation guide is specified, the target
   ///  resource SHALL conform to at least one profile defined in the
   ///  implementation guide.
-  @override
   List<FhirCanonical>? get targetProfile;
+  @override
 
   /// [aggregation] If the type is a reference to another resource, how the
   ///  resource is or can be aggregated - is it a contained resource, or a
   ///  reference, and if the context is a bundle, is it included in the bundle.
-  @override
   ElementDefinitionTypeAggregation? get aggregation;
+  @override
 
   /// [aggregationElement] ("_aggregation") Extensions for aggregation
-  @override
   @JsonKey(name: '_aggregation')
   List<PrimitiveElement>? get aggregationElement;
+  @override
 
   /// [versioning] Whether this reference needs to be version specific or version
   ///  independent, or whether either can be used.
-  @override
   ElementDefinitionTypeVersioning? get versioning;
+  @override
 
   /// [versioningElement] ("_versioning") Extensions for versioning
-  @override
   @JsonKey(name: '_versioning')
   PrimitiveElement? get versioningElement;
-
-  /// Create a copy of ElementDefinitionType
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ElementDefinitionTypeImplCopyWith<_$ElementDefinitionTypeImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -19129,12 +18855,8 @@ mixin _$ElementDefinitionExample {
   ///  types allowed for this element.
   FhirMeta? get valueMeta => throw _privateConstructorUsedError;
 
-  /// Serializes this ElementDefinitionExample to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ElementDefinitionExampleCopyWith<ElementDefinitionExample> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -19276,8 +18998,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -19681,8 +19401,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AddressCopyWith<$Res>? get valueAddress {
@@ -19695,8 +19413,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get valueAge {
@@ -19709,8 +19425,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AnnotationCopyWith<$Res>? get valueAnnotation {
@@ -19723,8 +19437,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get valueAttachment {
@@ -19737,8 +19449,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get valueCodeableConcept {
@@ -19752,8 +19462,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get valueCodeableReference {
@@ -19767,8 +19475,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get valueCoding {
@@ -19781,8 +19487,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactPointCopyWith<$Res>? get valueContactPoint {
@@ -19795,8 +19499,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CountCopyWith<$Res>? get valueCount {
@@ -19809,8 +19511,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DistanceCopyWith<$Res>? get valueDistance {
@@ -19823,8 +19523,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get valueDuration {
@@ -19837,8 +19535,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $HumanNameCopyWith<$Res>? get valueHumanName {
@@ -19851,8 +19547,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get valueIdentifier {
@@ -19865,8 +19559,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MoneyCopyWith<$Res>? get valueMoney {
@@ -19879,8 +19571,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get valuePeriod {
@@ -19893,8 +19583,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get valueQuantity {
@@ -19907,8 +19595,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get valueRange {
@@ -19921,8 +19607,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get valueRatio {
@@ -19935,8 +19619,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioRangeCopyWith<$Res>? get valueRatioRange {
@@ -19949,8 +19631,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get valueReference {
@@ -19963,8 +19643,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SampledDataCopyWith<$Res>? get valueSampledData {
@@ -19977,8 +19655,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SignatureCopyWith<$Res>? get valueSignature {
@@ -19991,8 +19667,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get valueTiming {
@@ -20005,8 +19679,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactDetailCopyWith<$Res>? get valueContactDetail {
@@ -20019,8 +19691,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DataRequirementCopyWith<$Res>? get valueDataRequirement {
@@ -20034,8 +19704,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirExpressionCopyWith<$Res>? get valueExpression {
@@ -20048,8 +19716,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ParameterDefinitionCopyWith<$Res>? get valueParameterDefinition {
@@ -20063,8 +19729,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RelatedArtifactCopyWith<$Res>? get valueRelatedArtifact {
@@ -20078,8 +19742,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TriggerDefinitionCopyWith<$Res>? get valueTriggerDefinition {
@@ -20093,8 +19755,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $UsageContextCopyWith<$Res>? get valueUsageContext {
@@ -20107,8 +19767,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AvailabilityCopyWith<$Res>? get valueAvailability {
@@ -20121,8 +19779,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ExtendedContactDetailCopyWith<$Res>? get valueExtendedContactDetail {
@@ -20136,8 +19792,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DosageCopyWith<$Res>? get valueDosage {
@@ -20150,8 +19804,6 @@ class _$ElementDefinitionExampleCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get valueMeta {
@@ -20338,8 +19990,6 @@ class __$$ElementDefinitionExampleImplCopyWithImpl<$Res>
       $Res Function(_$ElementDefinitionExampleImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -21405,7 +21055,7 @@ class _$ElementDefinitionExampleImpl extends _ElementDefinitionExample {
             (identical(other.valueMeta, valueMeta) || other.valueMeta == valueMeta));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -21490,9 +21140,7 @@ class _$ElementDefinitionExampleImpl extends _ElementDefinitionExample {
         valueMeta
       ]);
 
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ElementDefinitionExampleImplCopyWith<_$ElementDefinitionExampleImpl>
@@ -21604,10 +21252,12 @@ abstract class _ElementDefinitionExample extends ElementDefinitionExample {
   factory _ElementDefinitionExample.fromJson(Map<String, dynamic> json) =
       _$ElementDefinitionExampleImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -21615,9 +21265,9 @@ abstract class _ElementDefinitionExample extends ElementDefinitionExample {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -21631,395 +21281,391 @@ abstract class _ElementDefinitionExample extends ElementDefinitionExample {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [label] Describes the purpose of this example among the set of examples.
-  @override
   String? get label;
+  @override
 
   /// [labelElement] ("_label") Extensions for label
-  @override
   @JsonKey(name: '_label')
   PrimitiveElement? get labelElement;
+  @override
 
   /// [valueBase64Binary] The actual value for the element, which must be one of
   ///  the types allowed for this element.
-  @override
   FhirBase64Binary? get valueBase64Binary;
+  @override
 
   /// [valueBase64BinaryElement] ("_valueBase64Binary") Extensions for
   ///  valueBase64Binary
-  @override
   @JsonKey(name: '_valueBase64Binary')
   PrimitiveElement? get valueBase64BinaryElement;
+  @override
 
   /// [valueBoolean] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   FhirBoolean? get valueBoolean;
+  @override
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
+  @override
 
   /// [valueCanonical] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   FhirCanonical? get valueCanonical;
+  @override
 
   /// [valueCanonicalElement] ("_valueCanonical") Extensions for valueCanonical
-  @override
   @JsonKey(name: '_valueCanonical')
   PrimitiveElement? get valueCanonicalElement;
+  @override
 
   /// [valueCode] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   FhirCode? get valueCode;
+  @override
 
   /// [valueCodeElement] ("_valueCode") Extensions for valueCode
-  @override
   @JsonKey(name: '_valueCode')
   PrimitiveElement? get valueCodeElement;
+  @override
 
   /// [valueDate] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   FhirDate? get valueDate;
+  @override
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
-  @override
   @JsonKey(name: '_valueDate')
   PrimitiveElement? get valueDateElement;
+  @override
 
   /// [valueDateTime] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   FhirDateTime? get valueDateTime;
+  @override
 
   /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
-  @override
   @JsonKey(name: '_valueDateTime')
   PrimitiveElement? get valueDateTimeElement;
+  @override
 
   /// [valueDecimal] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   FhirDecimal? get valueDecimal;
+  @override
 
   /// [valueDecimalElement] ("_valueDecimal") Extensions for valueDecimal
-  @override
   @JsonKey(name: '_valueDecimal')
   PrimitiveElement? get valueDecimalElement;
+  @override
 
   /// [valueId] The actual value for the element, which must be one of the types
   ///  allowed for this element.
-  @override
   FhirId? get valueId;
+  @override
 
   /// [valueIdElement] ("_valueId") Extensions for valueId
-  @override
   @JsonKey(name: '_valueId')
   PrimitiveElement? get valueIdElement;
+  @override
 
   /// [valueInstant] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   FhirInstant? get valueInstant;
+  @override
 
   /// [valueInstantElement] ("_valueInstant") Extensions for valueInstant
-  @override
   @JsonKey(name: '_valueInstant')
   PrimitiveElement? get valueInstantElement;
+  @override
 
   /// [valueInteger] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   FhirInteger? get valueInteger;
+  @override
 
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
-  @override
   @JsonKey(name: '_valueInteger')
   PrimitiveElement? get valueIntegerElement;
+  @override
 
   /// [valueInteger64] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   FhirInteger64? get valueInteger64;
+  @override
 
   /// [valueInteger64Element] ("_valueInteger64") Extensions for valueInteger64
-  @override
   @JsonKey(name: '_valueInteger64')
   PrimitiveElement? get valueInteger64Element;
+  @override
 
   /// [valueMarkdown] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   FhirMarkdown? get valueMarkdown;
+  @override
 
   /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
-  @override
   @JsonKey(name: '_valueMarkdown')
   PrimitiveElement? get valueMarkdownElement;
+  @override
 
   /// [valueOid] The actual value for the element, which must be one of the types
   ///  allowed for this element.
-  @override
   FhirId? get valueOid;
+  @override
 
   /// [valueOidElement] ("_valueOid") Extensions for valueOid
-  @override
   @JsonKey(name: '_valueOid')
   PrimitiveElement? get valueOidElement;
+  @override
 
   /// [valuePositiveInt] The actual value for the element, which must be one of
   ///  the types allowed for this element.
-  @override
   FhirPositiveInt? get valuePositiveInt;
+  @override
 
   /// [valuePositiveIntElement] ("_valuePositiveInt") Extensions for
   ///  valuePositiveInt
-  @override
   @JsonKey(name: '_valuePositiveInt')
   PrimitiveElement? get valuePositiveIntElement;
+  @override
 
   /// [valueString] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   String? get valueString;
+  @override
 
   /// [valueStringElement] ("_valueString") Extensions for valueString
-  @override
   @JsonKey(name: '_valueString')
   PrimitiveElement? get valueStringElement;
+  @override
 
   /// [valueTime] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   FhirTime? get valueTime;
+  @override
 
   /// [valueTimeElement] ("_valueTime") Extensions for valueTime
-  @override
   @JsonKey(name: '_valueTime')
   PrimitiveElement? get valueTimeElement;
+  @override
 
   /// [valueUnsignedInt] The actual value for the element, which must be one of
   ///  the types allowed for this element.
-  @override
   FhirUnsignedInt? get valueUnsignedInt;
+  @override
 
   /// [valueUnsignedIntElement] ("_valueUnsignedInt") Extensions for
   ///  valueUnsignedInt
-  @override
   @JsonKey(name: '_valueUnsignedInt')
   PrimitiveElement? get valueUnsignedIntElement;
+  @override
 
   /// [valueUri] The actual value for the element, which must be one of the types
   ///  allowed for this element.
-  @override
   FhirUri? get valueUri;
+  @override
 
   /// [valueUriElement] ("_valueUri") Extensions for valueUri
-  @override
   @JsonKey(name: '_valueUri')
   PrimitiveElement? get valueUriElement;
+  @override
 
   /// [valueUrl] The actual value for the element, which must be one of the types
   ///  allowed for this element.
-  @override
   FhirUrl? get valueUrl;
+  @override
 
   /// [valueUrlElement] ("_valueUrl") Extensions for valueUrl
-  @override
   @JsonKey(name: '_valueUrl')
   PrimitiveElement? get valueUrlElement;
+  @override
 
   /// [valueUuid] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   FhirId? get valueUuid;
+  @override
 
   /// [valueUuidElement] ("_valueUuid") Extensions for valueUuid
-  @override
   @JsonKey(name: '_valueUuid')
   PrimitiveElement? get valueUuidElement;
+  @override
 
   /// [valueAddress] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   Address? get valueAddress;
+  @override
 
   /// [valueAge] The actual value for the element, which must be one of the types
   ///  allowed for this element.
-  @override
   Age? get valueAge;
+  @override
 
   /// [valueAnnotation] The actual value for the element, which must be one of
   ///  the types allowed for this element.
-  @override
   Annotation? get valueAnnotation;
+  @override
 
   /// [valueAttachment] The actual value for the element, which must be one of
   ///  the types allowed for this element.
-  @override
   Attachment? get valueAttachment;
+  @override
 
   /// [valueCodeableConcept] The actual value for the element, which must be one
   ///  of the types allowed for this element.
-  @override
   CodeableConcept? get valueCodeableConcept;
+  @override
 
   /// [valueCodeableReference] The actual value for the element, which must be
   ///  one of the types allowed for this element.
-  @override
   CodeableReference? get valueCodeableReference;
+  @override
 
   /// [valueCoding] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   Coding? get valueCoding;
+  @override
 
   /// [valueContactPoint] The actual value for the element, which must be one of
   ///  the types allowed for this element.
-  @override
   ContactPoint? get valueContactPoint;
+  @override
 
   /// [valueCount] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   Count? get valueCount;
+  @override
 
   /// [valueDistance] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   Distance? get valueDistance;
+  @override
 
   /// [valueDuration] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   FhirDuration? get valueDuration;
+  @override
 
   /// [valueHumanName] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   HumanName? get valueHumanName;
+  @override
 
   /// [valueIdentifier] The actual value for the element, which must be one of
   ///  the types allowed for this element.
-  @override
   Identifier? get valueIdentifier;
+  @override
 
   /// [valueMoney] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   Money? get valueMoney;
+  @override
 
   /// [valuePeriod] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   Period? get valuePeriod;
+  @override
 
   /// [valueQuantity] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   Quantity? get valueQuantity;
+  @override
 
   /// [valueRange] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   Range? get valueRange;
+  @override
 
   /// [valueRatio] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   Ratio? get valueRatio;
+  @override
 
   /// [valueRatioRange] The actual value for the element, which must be one of
   ///  the types allowed for this element.
-  @override
   RatioRange? get valueRatioRange;
+  @override
 
   /// [valueReference] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   Reference? get valueReference;
+  @override
 
   /// [valueSampledData] The actual value for the element, which must be one of
   ///  the types allowed for this element.
-  @override
   SampledData? get valueSampledData;
+  @override
 
   /// [valueSignature] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   Signature? get valueSignature;
+  @override
 
   /// [valueTiming] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   Timing? get valueTiming;
+  @override
 
   /// [valueContactDetail] The actual value for the element, which must be one of
   ///  the types allowed for this element.
-  @override
   ContactDetail? get valueContactDetail;
+  @override
 
   /// [valueDataRequirement] The actual value for the element, which must be one
   ///  of the types allowed for this element.
-  @override
   DataRequirement? get valueDataRequirement;
+  @override
 
   /// [valueExpression] The actual value for the element, which must be one of
   ///  the types allowed for this element.
-  @override
   FhirExpression? get valueExpression;
+  @override
 
   /// [valueParameterDefinition] The actual value for the element, which must be
   ///  one of the types allowed for this element.
-  @override
   ParameterDefinition? get valueParameterDefinition;
+  @override
 
   /// [valueRelatedArtifact] The actual value for the element, which must be one
   ///  of the types allowed for this element.
-  @override
   RelatedArtifact? get valueRelatedArtifact;
+  @override
 
   /// [valueTriggerDefinition] The actual value for the element, which must be
   ///  one of the types allowed for this element.
-  @override
   TriggerDefinition? get valueTriggerDefinition;
+  @override
 
   /// [valueUsageContext] The actual value for the element, which must be one of
   ///  the types allowed for this element.
-  @override
   UsageContext? get valueUsageContext;
+  @override
 
   /// [valueAvailability] The actual value for the element, which must be one of
   ///  the types allowed for this element.
-  @override
   Availability? get valueAvailability;
+  @override
 
   /// [valueExtendedContactDetail] The actual value for the element, which must
   ///  be one of the types allowed for this element.
-  @override
   ExtendedContactDetail? get valueExtendedContactDetail;
+  @override
 
   /// [valueDosage] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   Dosage? get valueDosage;
+  @override
 
   /// [valueMeta] The actual value for the element, which must be one of the
   ///  types allowed for this element.
-  @override
   FhirMeta? get valueMeta;
-
-  /// Create a copy of ElementDefinitionExample
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ElementDefinitionExampleImplCopyWith<_$ElementDefinitionExampleImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -22114,12 +21760,8 @@ mixin _$ElementDefinitionConstraint {
   ///  traceability purposes.
   FhirCanonical? get source => throw _privateConstructorUsedError;
 
-  /// Serializes this ElementDefinitionConstraint to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ElementDefinitionConstraint
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ElementDefinitionConstraintCopyWith<ElementDefinitionConstraint>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -22162,8 +21804,6 @@ class _$ElementDefinitionConstraintCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ElementDefinitionConstraint
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -22291,8 +21931,6 @@ class __$$ElementDefinitionConstraintImplCopyWithImpl<$Res>
       $Res Function(_$ElementDefinitionConstraintImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ElementDefinitionConstraint
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -22581,7 +22219,7 @@ class _$ElementDefinitionConstraintImpl extends _ElementDefinitionConstraint {
             (identical(other.source, source) || other.source == source));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -22602,9 +22240,7 @@ class _$ElementDefinitionConstraintImpl extends _ElementDefinitionConstraint {
       expressionElement,
       source);
 
-  /// Create a copy of ElementDefinitionConstraint
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ElementDefinitionConstraintImplCopyWith<_$ElementDefinitionConstraintImpl>
@@ -22644,10 +22280,12 @@ abstract class _ElementDefinitionConstraint
   factory _ElementDefinitionConstraint.fromJson(Map<String, dynamic> json) =
       _$ElementDefinitionConstraintImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -22655,9 +22293,9 @@ abstract class _ElementDefinitionConstraint
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -22671,79 +22309,75 @@ abstract class _ElementDefinitionConstraint
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [key] Allows identification of which elements have their cardinalities
   ///  impacted by the constraint.  Will not be referenced for constraints that
   ///  do not affect cardinality.
-  @override
   FhirId? get key;
+  @override
 
   /// [keyElement] ("_key") Extensions for key
-  @override
   @JsonKey(name: '_key')
   PrimitiveElement? get keyElement;
+  @override
 
   /// [requirements] Description of why this constraint is necessary or
   ///  appropriate.
-  @override
   FhirMarkdown? get requirements;
+  @override
 
   /// [requirementsElement] ("_requirements") Extensions for requirements
-  @override
   @JsonKey(name: '_requirements')
   PrimitiveElement? get requirementsElement;
+  @override
 
   /// [severity] Identifies the impact constraint violation has on the
   ///  conformance of the instance.
-  @override
   ElementDefinitionConstraintSeverity? get severity;
+  @override
 
   /// [severityElement] ("_severity") Extensions for severity
-  @override
   @JsonKey(name: '_severity')
   PrimitiveElement? get severityElement;
+  @override
 
   /// [suppress] If true, indicates that the warning or best practice guideline
   ///  should be suppressed.
-  @override
   FhirBoolean? get suppress;
+  @override
 
   /// [suppressElement] ("_suppress") Extensions for suppress
-  @override
   @JsonKey(name: '_suppress')
   PrimitiveElement? get suppressElement;
+  @override
 
   /// [human] Text that can be used to describe the constraint in messages
   ///  identifying that the constraint has been violated.
-  @override
   String? get human;
+  @override
 
   /// [humanElement] ("_human") Extensions for human
-  @override
   @JsonKey(name: '_human')
   PrimitiveElement? get humanElement;
+  @override
 
   /// [expression] A [FHIRPath](fhirpath.html) expression of constraint that can
   ///  be executed to see if this constraint is met.
-  @override
   String? get expression;
+  @override
 
   /// [expressionElement] ("_expression") Extensions for expression
-  @override
   @JsonKey(name: '_expression')
   PrimitiveElement? get expressionElement;
+  @override
 
   /// [source] A reference to the original source of the constraint, for
   ///  traceability purposes.
-  @override
   FhirCanonical? get source;
-
-  /// Create a copy of ElementDefinitionConstraint
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ElementDefinitionConstraintImplCopyWith<_$ElementDefinitionConstraintImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -22811,12 +22445,8 @@ mixin _$ElementDefinitionBinding {
   List<ElementDefinitionAdditional>? get additional =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ElementDefinitionBinding to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ElementDefinitionBinding
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ElementDefinitionBindingCopyWith<ElementDefinitionBinding> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -22850,8 +22480,6 @@ class _$ElementDefinitionBindingCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ElementDefinitionBinding
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -22937,8 +22565,6 @@ class __$$ElementDefinitionBindingImplCopyWithImpl<$Res>
       $Res Function(_$ElementDefinitionBindingImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ElementDefinitionBinding
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -23150,7 +22776,7 @@ class _$ElementDefinitionBindingImpl extends _ElementDefinitionBinding {
                 .equals(other._additional, _additional));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -23164,9 +22790,7 @@ class _$ElementDefinitionBindingImpl extends _ElementDefinitionBinding {
       valueSet,
       const DeepCollectionEquality().hash(_additional));
 
-  /// Create a copy of ElementDefinitionBinding
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ElementDefinitionBindingImplCopyWith<_$ElementDefinitionBindingImpl>
@@ -23198,10 +22822,12 @@ abstract class _ElementDefinitionBinding extends ElementDefinitionBinding {
   factory _ElementDefinitionBinding.fromJson(Map<String, dynamic> json) =
       _$ElementDefinitionBindingImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -23209,9 +22835,9 @@ abstract class _ElementDefinitionBinding extends ElementDefinitionBinding {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -23225,44 +22851,40 @@ abstract class _ElementDefinitionBinding extends ElementDefinitionBinding {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [strength] Indicates the degree of conformance expectations associated with
   ///  this binding - that is, the degree to which the provided value set must be
   ///  adhered to in the instances.
-  @override
   ElementDefinitionBindingStrength? get strength;
+  @override
 
   /// [strengthElement] ("_strength") Extensions for strength
-  @override
   @JsonKey(name: '_strength')
   PrimitiveElement? get strengthElement;
+  @override
 
   /// [description] Describes the intended use of this particular set of codes.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [valueSet] Refers to the value set that identifies the set of codes the
   ///  binding refers to.
-  @override
   FhirCanonical? get valueSet;
+  @override
 
   /// [additional] Additional bindings that help applications implementing this
   ///  element. Additional bindings do not replace the main binding but provide
   ///  more information and/or context.
-  @override
   List<ElementDefinitionAdditional>? get additional;
-
-  /// Create a copy of ElementDefinitionBinding
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ElementDefinitionBindingImplCopyWith<_$ElementDefinitionBindingImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -23343,12 +22965,8 @@ mixin _$ElementDefinitionAdditional {
   @JsonKey(name: '_any')
   PrimitiveElement? get anyElement => throw _privateConstructorUsedError;
 
-  /// Serializes this ElementDefinitionAdditional to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ElementDefinitionAdditional
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ElementDefinitionAdditionalCopyWith<ElementDefinitionAdditional>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -23388,8 +23006,6 @@ class _$ElementDefinitionAdditionalCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ElementDefinitionAdditional
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -23499,8 +23115,6 @@ class __$$ElementDefinitionAdditionalImplCopyWithImpl<$Res>
       $Res Function(_$ElementDefinitionAdditionalImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ElementDefinitionAdditional
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -23763,7 +23377,7 @@ class _$ElementDefinitionAdditionalImpl extends _ElementDefinitionAdditional {
                 other.anyElement == anyElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -23781,9 +23395,7 @@ class _$ElementDefinitionAdditionalImpl extends _ElementDefinitionAdditional {
       any,
       anyElement);
 
-  /// Create a copy of ElementDefinitionAdditional
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ElementDefinitionAdditionalImplCopyWith<_$ElementDefinitionAdditionalImpl>
@@ -23821,10 +23433,12 @@ abstract class _ElementDefinitionAdditional
   factory _ElementDefinitionAdditional.fromJson(Map<String, dynamic> json) =
       _$ElementDefinitionAdditionalImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -23832,9 +23446,9 @@ abstract class _ElementDefinitionAdditional
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -23848,63 +23462,59 @@ abstract class _ElementDefinitionAdditional
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [purpose] The use of this additional binding.
-  @override
   FhirCode? get purpose;
+  @override
 
   /// [purposeElement] ("_purpose") Extensions for purpose
-  @override
   @JsonKey(name: '_purpose')
   PrimitiveElement? get purposeElement;
+  @override
 
   /// [valueSet] The valueSet that is being bound for the purpose.
-  @override
   FhirCanonical get valueSet;
+  @override
 
   /// [documentation] Documentation of the purpose of use of the bindingproviding
   ///  additional information about how it is intended to be used.
-  @override
   FhirMarkdown? get documentation;
+  @override
 
   /// [documentationElement] ("_documentation") Extensions for documentation
-  @override
   @JsonKey(name: '_documentation')
   PrimitiveElement? get documentationElement;
+  @override
 
   /// [shortDoco] Concise documentation - for summary tables.
-  @override
   String? get shortDoco;
+  @override
 
   /// [shortDocoElement] ("_shortDoco") Extensions for shortDoco
-  @override
   @JsonKey(name: '_shortDoco')
   PrimitiveElement? get shortDocoElement;
+  @override
 
   /// [usage] Qualifies the usage of the binding. Typically bindings are
   ///  qualified by jurisdiction, but they may also be qualified by gender,
   ///  workflow status, clinical domain etc. The information to decide whether a
   ///  usege context applies is usually outside the resource, determined by
   ///  context, and this might present challenges for validation tooling.
-  @override
   List<UsageContext>? get usage;
+  @override
 
   /// [any] Whether the binding applies to all repeats, or just to any one of
   ///  them. This is only relevant for elements that can repeat.
-  @override
   FhirBoolean? get any;
+  @override
 
   /// [anyElement] ("_any") Extensions for any
-  @override
   @JsonKey(name: '_any')
   PrimitiveElement? get anyElement;
-
-  /// Create a copy of ElementDefinitionAdditional
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ElementDefinitionAdditionalImplCopyWith<_$ElementDefinitionAdditionalImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -23974,12 +23584,8 @@ mixin _$ElementDefinitionMapping {
   @JsonKey(name: '_comment')
   PrimitiveElement? get commentElement => throw _privateConstructorUsedError;
 
-  /// Serializes this ElementDefinitionMapping to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ElementDefinitionMapping
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ElementDefinitionMappingCopyWith<ElementDefinitionMapping> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -24015,8 +23621,6 @@ class _$ElementDefinitionMappingCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ElementDefinitionMapping
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -24114,8 +23718,6 @@ class __$$ElementDefinitionMappingImplCopyWithImpl<$Res>
       $Res Function(_$ElementDefinitionMappingImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ElementDefinitionMapping
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -24336,7 +23938,7 @@ class _$ElementDefinitionMappingImpl extends _ElementDefinitionMapping {
                 other.commentElement == commentElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -24352,9 +23954,7 @@ class _$ElementDefinitionMappingImpl extends _ElementDefinitionMapping {
       comment,
       commentElement);
 
-  /// Create a copy of ElementDefinitionMapping
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ElementDefinitionMappingImplCopyWith<_$ElementDefinitionMappingImpl>
@@ -24388,10 +23988,12 @@ abstract class _ElementDefinitionMapping extends ElementDefinitionMapping {
   factory _ElementDefinitionMapping.fromJson(Map<String, dynamic> json) =
       _$ElementDefinitionMappingImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -24399,9 +24001,9 @@ abstract class _ElementDefinitionMapping extends ElementDefinitionMapping {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -24415,51 +24017,47 @@ abstract class _ElementDefinitionMapping extends ElementDefinitionMapping {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identity] An internal reference to the definition of a mapping.
-  @override
   FhirId? get identity;
+  @override
 
   /// [identityElement] ("_identity") Extensions for identity
-  @override
   @JsonKey(name: '_identity')
   PrimitiveElement? get identityElement;
+  @override
 
   /// [language] Identifies the computable language in which mapping.map is
   ///  expressed.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [map] Expresses what part of the target specification corresponds to this
   ///  element.
-  @override
   String? get map;
+  @override
 
   /// [mapElement] ("_map") Extensions for map
-  @override
   @JsonKey(name: '_map')
   PrimitiveElement? get mapElement;
+  @override
 
   /// [comment] Comments that provide information about the mapping or its use.
-  @override
   FhirMarkdown? get comment;
+  @override
 
   /// [commentElement] ("_comment") Extensions for comment
-  @override
   @JsonKey(name: '_comment')
   PrimitiveElement? get commentElement;
-
-  /// Create a copy of ElementDefinitionMapping
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ElementDefinitionMappingImplCopyWith<_$ElementDefinitionMappingImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

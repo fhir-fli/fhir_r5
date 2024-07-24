@@ -290,12 +290,8 @@ mixin _$SubscriptionTopic {
   List<SubscriptionTopicNotificationShape>? get notificationShape =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this SubscriptionTopic to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubscriptionTopic
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubscriptionTopicCopyWith<SubscriptionTopic> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -378,8 +374,6 @@ class _$SubscriptionTopicCopyWithImpl<$Res, $Val extends SubscriptionTopic>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubscriptionTopic
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -648,8 +642,6 @@ class _$SubscriptionTopicCopyWithImpl<$Res, $Val extends SubscriptionTopic>
     ) as $Val);
   }
 
-  /// Create a copy of SubscriptionTopic
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -662,8 +654,6 @@ class _$SubscriptionTopicCopyWithImpl<$Res, $Val extends SubscriptionTopic>
     });
   }
 
-  /// Create a copy of SubscriptionTopic
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -676,8 +666,6 @@ class _$SubscriptionTopicCopyWithImpl<$Res, $Val extends SubscriptionTopic>
     });
   }
 
-  /// Create a copy of SubscriptionTopic
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get versionAlgorithmCoding {
@@ -690,8 +678,6 @@ class _$SubscriptionTopicCopyWithImpl<$Res, $Val extends SubscriptionTopic>
     });
   }
 
-  /// Create a copy of SubscriptionTopic
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get effectivePeriod {
@@ -787,8 +773,6 @@ class __$$SubscriptionTopicImplCopyWithImpl<$Res>
       $Res Function(_$SubscriptionTopicImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubscriptionTopic
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1690,7 +1674,7 @@ class _$SubscriptionTopicImpl extends _SubscriptionTopic {
             const DeepCollectionEquality().equals(other._notificationShape, _notificationShape));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1748,9 +1732,7 @@ class _$SubscriptionTopicImpl extends _SubscriptionTopic {
         const DeepCollectionEquality().hash(_notificationShape)
       ]);
 
-  /// Create a copy of SubscriptionTopic
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubscriptionTopicImplCopyWith<_$SubscriptionTopicImpl> get copyWith =>
@@ -1832,42 +1814,44 @@ abstract class _SubscriptionTopic extends SubscriptionTopic {
   factory _SubscriptionTopic.fromJson(Map<String, dynamic> json) =
       _$SubscriptionTopicImpl.fromJson;
 
-  /// [resourceType] This is a SubscriptionTopic resource
   @override
+
+  /// [resourceType] This is a SubscriptionTopic resource
   @JsonKey(unknownEnumValue: R5ResourceType.SubscriptionTopic)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1875,16 +1859,16 @@ abstract class _SubscriptionTopic extends SubscriptionTopic {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1892,9 +1876,9 @@ abstract class _SubscriptionTopic extends SubscriptionTopic {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1908,8 +1892,8 @@ abstract class _SubscriptionTopic extends SubscriptionTopic {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [url] An absolute URI that is used to identify this subscription topic when
   ///  it is referenced in a specification, model, design or an instance; also
@@ -1918,19 +1902,19 @@ abstract class _SubscriptionTopic extends SubscriptionTopic {
   ///  subscription topic is (or will be) published. This URL can be the target
   ///  of a canonical reference. It SHALL remain the same when the subscription
   ///  topic is stored on different servers.
-  @override
   FhirUri? get url;
+  @override
 
   /// [urlElement] ("_url") Extensions for url
-  @override
   @JsonKey(name: '_url')
   PrimitiveElement? get urlElement;
+  @override
 
   /// [identifier] Business identifiers assigned to this subscription topic by
   ///  the performer and/or other systems.  These identifiers remain constant as
   ///  the resource is updated and propagates from server to server.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [version] The identifier that is used to identify this version of the
   ///  subscription topic when it is referenced in a specification, model, design
@@ -1938,214 +1922,210 @@ abstract class _SubscriptionTopic extends SubscriptionTopic {
   ///  not expected to be globally unique. For example, it might be a timestamp
   ///  (e.g. yyyymmdd) if a managed version is not available. There is also no
   ///  expectation that versions are orderable.
-  @override
   String? get version;
+  @override
 
   /// [versionElement] ("_version") Extensions for version
-  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
+  @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  @override
   String? get versionAlgorithmString;
+  @override
 
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
-  @override
   @JsonKey(name: '_versionAlgorithmString')
   PrimitiveElement? get versionAlgorithmStringElement;
+  @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  @override
   Coding? get versionAlgorithmCoding;
+  @override
 
   /// [name] A natural language name identifying the subscription topic This name
   ///  should be usable as an identifier for the module by machine processing
   ///  applications such as code generation.
-  @override
   String? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [title] A short, descriptive, user-friendly title for the subscription
   ///  topic.  For example, "admission".
-  @override
   String? get title;
+  @override
 
   /// [titleElement] ("_title") Extensions for title
-  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
+  @override
 
   /// [status] The current state of the SubscriptionTopic.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [experimental] A flag to indicate that this TopSubscriptionTopicic is
   ///  authored for testing purposes (or education/evaluation/marketing), and is
   ///  not intended to be used for genuine usage.
-  @override
   FhirBoolean? get experimental;
+  @override
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
-  @override
   @JsonKey(name: '_experimental')
   PrimitiveElement? get experimentalElement;
+  @override
 
   /// [date] The date (and optionally time) when the subscription topic was last
   ///  significantly changed. The date must change when the business version
   ///  changes and it must change if the status code changes. In addition, it
   ///  should change when the substantive content of the subscription topic
   ///  changes.
-  @override
   FhirDateTime? get date;
+  @override
 
   /// [dateElement] ("_date") Extensions for date
-  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
+  @override
 
   /// [publisher] Helps establish the "authority/credibility" of the
   ///  SubscriptionTopic.  May also allow for contact.
-  @override
   String? get publisher;
+  @override
 
   /// [publisherElement] ("_publisher") Extensions for publisher
-  @override
   @JsonKey(name: '_publisher')
   PrimitiveElement? get publisherElement;
+  @override
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
-  @override
   List<ContactDetail>? get contact;
+  @override
 
   /// [description] A free text natural language description of the Topic from
   ///  the consumer's perspective.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These terms may be used to assist
   ///  with indexing and searching of code system definitions.
-  @override
   List<UsageContext>? get useContext;
+  @override
 
   /// [jurisdiction] A jurisdiction in which the Topic is intended to be used.
-  @override
   List<CodeableConcept>? get jurisdiction;
+  @override
 
   /// [purpose] Explains why this Topic is needed and why it has been designed as
   ///  it has.
-  @override
   FhirMarkdown? get purpose;
+  @override
 
   /// [purposeElement] ("_purpose") Extensions for purpose
-  @override
   @JsonKey(name: '_purpose')
   PrimitiveElement? get purposeElement;
+  @override
 
   /// [copyright] A copyright statement relating to the SubscriptionTopic and/or
   ///  its contents. Copyright statements are generally legal restrictions on the
   ///  use and publishing of the SubscriptionTopic.
-  @override
   FhirMarkdown? get copyright;
+  @override
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
-  @override
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement;
+  @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
   ///  optionally whether rights are resctricted. (e.g. 'All rights reserved',
   ///  'Some rights reserved').
-  @override
   String? get copyrightLabel;
+  @override
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-  @override
   @JsonKey(name: '_copyrightLabel')
   PrimitiveElement? get copyrightLabelElement;
+  @override
 
   /// [derivedFrom] The canonical URL pointing to another FHIR-defined
   ///  SubscriptionTopic that is adhered to in whole or in part by this
   ///  SubscriptionTopic.
-  @override
   List<FhirCanonical>? get derivedFrom;
+  @override
 
   /// [approvalDate] The date on which the asset content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
   ///  for usage.
-  @override
   FhirDate? get approvalDate;
+  @override
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
-  @override
   @JsonKey(name: '_approvalDate')
   PrimitiveElement? get approvalDateElement;
+  @override
 
   /// [lastReviewDate] The date on which the asset content was last reviewed.
   ///  Review happens periodically after that, but doesn't change the original
   ///  approval date.
-  @override
   FhirDate? get lastReviewDate;
+  @override
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
-  @override
   @JsonKey(name: '_lastReviewDate')
   PrimitiveElement? get lastReviewDateElement;
+  @override
 
   /// [effectivePeriod] The period during which the SubscriptionTopic content was
   ///  or is planned to be effective.
-  @override
   Period? get effectivePeriod;
+  @override
 
   /// [resourceTrigger] A definition of a resource-based event that triggers a
   ///  notification based on the SubscriptionTopic. The criteria may be just a
   ///  human readable description and/or a full FHIR search string or FHIRPath
   ///  expression. Multiple triggers are considered OR joined (e.g., a resource
   ///  update matching ANY of the definitions will trigger a notification).
-  @override
   List<SubscriptionTopicResourceTrigger>? get resourceTrigger;
+  @override
 
   /// [eventTrigger] Event definition which can be used to trigger the
   ///  SubscriptionTopic.
-  @override
   List<SubscriptionTopicEventTrigger>? get eventTrigger;
+  @override
 
   /// [canFilterBy] List of properties by which Subscriptions on the
   ///  SubscriptionTopic can be filtered. May be defined Search Parameters (e.g.,
   ///  Encounter.patient) or parameters defined within this SubscriptionTopic
   ///  context (e.g., hub.event).
-  @override
   List<SubscriptionTopicCanFilterBy>? get canFilterBy;
+  @override
 
   /// [notificationShape] List of properties to describe the shape (e.g.,
   ///  resources) included in notifications from this Subscription Topic.
-  @override
   List<SubscriptionTopicNotificationShape>? get notificationShape;
-
-  /// Create a copy of SubscriptionTopic
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubscriptionTopicImplCopyWith<_$SubscriptionTopicImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2237,12 +2217,8 @@ mixin _$SubscriptionTopicResourceTrigger {
   PrimitiveElement? get fhirPathCriteriaElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this SubscriptionTopicResourceTrigger to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubscriptionTopicResourceTrigger
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubscriptionTopicResourceTriggerCopyWith<SubscriptionTopicResourceTrigger>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2285,8 +2261,6 @@ class _$SubscriptionTopicResourceTriggerCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubscriptionTopicResourceTrigger
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2355,8 +2329,6 @@ class _$SubscriptionTopicResourceTriggerCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubscriptionTopicResourceTrigger
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SubscriptionTopicQueryCriteriaCopyWith<$Res>? get queryCriteria {
@@ -2410,8 +2382,6 @@ class __$$SubscriptionTopicResourceTriggerImplCopyWithImpl<$Res>
       $Res Function(_$SubscriptionTopicResourceTriggerImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubscriptionTopicResourceTrigger
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2691,7 +2661,7 @@ class _$SubscriptionTopicResourceTriggerImpl
                 other.fhirPathCriteriaElement == fhirPathCriteriaElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2708,9 +2678,7 @@ class _$SubscriptionTopicResourceTriggerImpl
       fhirPathCriteria,
       fhirPathCriteriaElement);
 
-  /// Create a copy of SubscriptionTopicResourceTrigger
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubscriptionTopicResourceTriggerImplCopyWith<
@@ -2750,10 +2718,12 @@ abstract class _SubscriptionTopicResourceTrigger
           Map<String, dynamic> json) =
       _$SubscriptionTopicResourceTriggerImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2761,9 +2731,9 @@ abstract class _SubscriptionTopicResourceTrigger
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2777,19 +2747,19 @@ abstract class _SubscriptionTopicResourceTrigger
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [description] The human readable description of this resource trigger for
   ///  the SubscriptionTopic -  for example, "An Encounter enters the
   ///  'in-progress' state".
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [resource] URL of the Resource that is the type used in this resource
   ///  trigger.  Relative URLs are relative to the StructureDefinition root of
@@ -2799,47 +2769,43 @@ abstract class _SubscriptionTopicResourceTrigger
   ///  see <a
   ///  href="elementdefinition-definitions.html#ElementDefinition.type.code">ElementDefinition.type.code</a>.
   ///
-  @override
   FhirUri? get resource;
+  @override
 
   /// [resourceElement] ("_resource") Extensions for resource
-  @override
   @JsonKey(name: '_resource')
   PrimitiveElement? get resourceElement;
+  @override
 
   /// [supportedInteraction] The FHIR RESTful interaction which can be used to
   ///  trigger a notification for the SubscriptionTopic. Multiple values are
   ///  considered OR joined (e.g., CREATE or UPDATE). If not present, all
   ///  supported interactions are assumed.
-  @override
   List<FhirCode>? get supportedInteraction;
+  @override
 
   /// [supportedInteractionElement] ("_supportedInteraction") Extensions for
   ///  supportedInteraction
-  @override
   @JsonKey(name: '_supportedInteraction')
   List<PrimitiveElement>? get supportedInteractionElement;
+  @override
 
   /// [queryCriteria] The FHIR query based rules that the server should use to
   ///  determine when to trigger a notification for this subscription topic.
-  @override
   SubscriptionTopicQueryCriteria? get queryCriteria;
+  @override
 
   /// [fhirPathCriteria] The FHIRPath based rules that the server should use to
   ///  determine when to trigger a notification for this topic.
-  @override
   String? get fhirPathCriteria;
+  @override
 
   /// [fhirPathCriteriaElement] ("_fhirPathCriteria") Extensions for
   ///  fhirPathCriteria
-  @override
   @JsonKey(name: '_fhirPathCriteria')
   PrimitiveElement? get fhirPathCriteriaElement;
-
-  /// Create a copy of SubscriptionTopicResourceTrigger
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubscriptionTopicResourceTriggerImplCopyWith<
           _$SubscriptionTopicResourceTriggerImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2929,12 +2895,8 @@ mixin _$SubscriptionTopicQueryCriteria {
   PrimitiveElement? get requireBothElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this SubscriptionTopicQueryCriteria to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubscriptionTopicQueryCriteria
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubscriptionTopicQueryCriteriaCopyWith<SubscriptionTopicQueryCriteria>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2976,8 +2938,6 @@ class _$SubscriptionTopicQueryCriteriaCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubscriptionTopicQueryCriteria
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3089,8 +3049,6 @@ class __$$SubscriptionTopicQueryCriteriaImplCopyWithImpl<$Res>
       $Res Function(_$SubscriptionTopicQueryCriteriaImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubscriptionTopicQueryCriteria
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3348,7 +3306,7 @@ class _$SubscriptionTopicQueryCriteriaImpl
                 other.requireBothElement == requireBothElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3366,9 +3324,7 @@ class _$SubscriptionTopicQueryCriteriaImpl
       requireBoth,
       requireBothElement);
 
-  /// Create a copy of SubscriptionTopicQueryCriteria
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubscriptionTopicQueryCriteriaImplCopyWith<
@@ -3409,10 +3365,12 @@ abstract class _SubscriptionTopicQueryCriteria
   factory _SubscriptionTopicQueryCriteria.fromJson(Map<String, dynamic> json) =
       _$SubscriptionTopicQueryCriteriaImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3420,9 +3378,9 @@ abstract class _SubscriptionTopicQueryCriteria
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3436,69 +3394,65 @@ abstract class _SubscriptionTopicQueryCriteria
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [previous] The FHIR query based rules are applied to the previous resource
   ///  state (e.g., state before an update).
-  @override
   String? get previous;
+  @override
 
   /// [previousElement] ("_previous") Extensions for previous
-  @override
   @JsonKey(name: '_previous')
   PrimitiveElement? get previousElement;
+  @override
 
   /// [resultForCreate] For `create` interactions, should the `previous` criteria
   ///  count as an automatic pass or an automatic fail. If not present, the
   ///  testing behavior during `create` interactions is unspecified (server
   ///  discretion).
-  @override
   FhirCode? get resultForCreate;
+  @override
 
   /// [resultForCreateElement] ("_resultForCreate") Extensions for resultForCreate
-  @override
   @JsonKey(name: '_resultForCreate')
   PrimitiveElement? get resultForCreateElement;
+  @override
 
   /// [current] The FHIR query based rules are applied to the current resource
   ///  state (e.g., state after an update).
-  @override
   String? get current;
+  @override
 
   /// [currentElement] ("_current") Extensions for current
-  @override
   @JsonKey(name: '_current')
   PrimitiveElement? get currentElement;
+  @override
 
   /// [resultForDelete] For 'delete' interactions, should the 'current' query
   ///  criteria count as an automatic pass or an automatic fail. If not present,
   ///  the testing behavior during `delete` interactions is unspecified (server
   ///  discretion).
-  @override
   FhirCode? get resultForDelete;
+  @override
 
   /// [resultForDeleteElement] ("_resultForDelete") Extensions for resultForDelete
-  @override
   @JsonKey(name: '_resultForDelete')
   PrimitiveElement? get resultForDeleteElement;
+  @override
 
   /// [requireBoth] If set to `true`, both the `current` and `previous` query
   ///  criteria must evaluate `true` to trigger a notification for this topic.
   ///  If set to `false` or not present, a notification for this topic will be
   ///  triggered if either the `current` or `previous` tests evaluate to `true`.
-  @override
   FhirBoolean? get requireBoth;
+  @override
 
   /// [requireBothElement] ("_requireBoth") Extensions for requireBoth
-  @override
   @JsonKey(name: '_requireBoth')
   PrimitiveElement? get requireBothElement;
-
-  /// Create a copy of SubscriptionTopicQueryCriteria
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubscriptionTopicQueryCriteriaImplCopyWith<
           _$SubscriptionTopicQueryCriteriaImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3568,12 +3522,8 @@ mixin _$SubscriptionTopicEventTrigger {
   @JsonKey(name: '_resource')
   PrimitiveElement? get resourceElement => throw _privateConstructorUsedError;
 
-  /// Serializes this SubscriptionTopicEventTrigger to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubscriptionTopicEventTrigger
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubscriptionTopicEventTriggerCopyWith<SubscriptionTopicEventTrigger>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3610,8 +3560,6 @@ class _$SubscriptionTopicEventTriggerCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubscriptionTopicEventTrigger
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3660,8 +3608,6 @@ class _$SubscriptionTopicEventTriggerCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubscriptionTopicEventTrigger
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get event {
@@ -3704,8 +3650,6 @@ class __$$SubscriptionTopicEventTriggerImplCopyWithImpl<$Res>
       $Res Function(_$SubscriptionTopicEventTriggerImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubscriptionTopicEventTrigger
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3900,7 +3844,7 @@ class _$SubscriptionTopicEventTriggerImpl
                 other.resourceElement == resourceElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3913,9 +3857,7 @@ class _$SubscriptionTopicEventTriggerImpl
       resource,
       resourceElement);
 
-  /// Create a copy of SubscriptionTopicEventTrigger
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubscriptionTopicEventTriggerImplCopyWith<
@@ -3949,10 +3891,12 @@ abstract class _SubscriptionTopicEventTrigger
   factory _SubscriptionTopicEventTrigger.fromJson(Map<String, dynamic> json) =
       _$SubscriptionTopicEventTriggerImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3960,9 +3904,9 @@ abstract class _SubscriptionTopicEventTrigger
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3976,25 +3920,25 @@ abstract class _SubscriptionTopicEventTrigger
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [description] The human readable description of an event to trigger a
   ///  notification for the SubscriptionTopic - for example, "Patient Admission,
   ///  as defined in HL7v2 via message ADT^A01". Multiple values are considered
   ///  OR joined (e.g., matching any single event listed).
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [event] A well-defined event which can be used to trigger notifications
   ///  from the SubscriptionTopic.
-  @override
   CodeableConcept get event;
+  @override
 
   /// [resource] URL of the Resource that is the focus type used in this event
   ///  trigger.  Relative URLs are relative to the StructureDefinition root of
@@ -4004,18 +3948,14 @@ abstract class _SubscriptionTopicEventTrigger
   ///  see <a
   ///  href="elementdefinition-definitions.html#ElementDefinition.type.code">ElementDefinition.type.code</a>.
   ///
-  @override
   FhirUri? get resource;
+  @override
 
   /// [resourceElement] ("_resource") Extensions for resource
-  @override
   @JsonKey(name: '_resource')
   PrimitiveElement? get resourceElement;
-
-  /// Create a copy of SubscriptionTopicEventTrigger
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubscriptionTopicEventTriggerImplCopyWith<
           _$SubscriptionTopicEventTriggerImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4114,12 +4054,8 @@ mixin _$SubscriptionTopicCanFilterBy {
   List<PrimitiveElement>? get modifierElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this SubscriptionTopicCanFilterBy to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubscriptionTopicCanFilterBy
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubscriptionTopicCanFilterByCopyWith<SubscriptionTopicCanFilterBy>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4163,8 +4099,6 @@ class _$SubscriptionTopicCanFilterByCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubscriptionTopicCanFilterBy
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4288,8 +4222,6 @@ class __$$SubscriptionTopicCanFilterByImplCopyWithImpl<$Res>
       $Res Function(_$SubscriptionTopicCanFilterByImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubscriptionTopicCanFilterBy
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4615,7 +4547,7 @@ class _$SubscriptionTopicCanFilterByImpl extends _SubscriptionTopicCanFilterBy {
                 .equals(other._modifierElement, _modifierElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4635,9 +4567,7 @@ class _$SubscriptionTopicCanFilterByImpl extends _SubscriptionTopicCanFilterBy {
       const DeepCollectionEquality().hash(_modifier),
       const DeepCollectionEquality().hash(_modifierElement));
 
-  /// Create a copy of SubscriptionTopicCanFilterBy
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubscriptionTopicCanFilterByImplCopyWith<
@@ -4681,10 +4611,12 @@ abstract class _SubscriptionTopicCanFilterBy
   factory _SubscriptionTopicCanFilterBy.fromJson(Map<String, dynamic> json) =
       _$SubscriptionTopicCanFilterByImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4692,9 +4624,9 @@ abstract class _SubscriptionTopicCanFilterBy
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4708,78 +4640,74 @@ abstract class _SubscriptionTopicCanFilterBy
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [description] Description of how this filtering parameter is intended to be
   ///  used.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [resource] URL of the Resource that is the type used in this filter. This
   ///  is the "focus" of the topic (or one of them if there are more than one).
   ///  It will be the same, a generality, or a specificity of
   ///  SubscriptionTopic.resourceTrigger.resource or
   ///  SubscriptionTopic.eventTrigger.resource when they are present.
-  @override
   FhirUri? get resource;
+  @override
 
   /// [resourceElement] ("_resource") Extensions for resource
-  @override
   @JsonKey(name: '_resource')
   PrimitiveElement? get resourceElement;
+  @override
 
   /// [filterParameter] Either the canonical URL to a search parameter (like
   ///  "http://hl7.org/fhir/SearchParameter/encounter-patient") or topic-defined
   ///  parameter (like "hub.event") which is a label for the filter.
-  @override
   String? get filterParameter;
+  @override
 
   /// [filterParameterElement] ("_filterParameter") Extensions for filterParameter
-  @override
   @JsonKey(name: '_filterParameter')
   PrimitiveElement? get filterParameterElement;
+  @override
 
   /// [filterDefinition] Either the canonical URL to a search parameter (like
   ///  "http://hl7.org/fhir/SearchParameter/encounter-patient") or the
   ///  officially-defined URI for a shared filter concept (like
   ///  "http://example.org/concepts/shared-common-event").
-  @override
   FhirUri? get filterDefinition;
+  @override
 
   /// [filterDefinitionElement] ("_filterDefinition") Extensions for
   ///  filterDefinition
-  @override
   @JsonKey(name: '_filterDefinition')
   PrimitiveElement? get filterDefinitionElement;
+  @override
 
   /// [comparator] Comparators allowed for the filter parameter.
-  @override
   List<FhirCode>? get comparator;
+  @override
 
   /// [comparatorElement] ("_comparator") Extensions for comparator
-  @override
   @JsonKey(name: '_comparator')
   List<PrimitiveElement>? get comparatorElement;
+  @override
 
   /// [modifier] Modifiers allowed for the filter parameter.
-  @override
   List<FhirCode>? get modifier;
+  @override
 
   /// [modifierElement] ("_modifier") Extensions for modifier
-  @override
   @JsonKey(name: '_modifier')
   List<PrimitiveElement>? get modifierElement;
-
-  /// Create a copy of SubscriptionTopicCanFilterBy
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubscriptionTopicCanFilterByImplCopyWith<
           _$SubscriptionTopicCanFilterByImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4855,12 +4783,8 @@ mixin _$SubscriptionTopicNotificationShape {
   List<PrimitiveElement>? get revIncludeElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this SubscriptionTopicNotificationShape to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubscriptionTopicNotificationShape
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubscriptionTopicNotificationShapeCopyWith<
           SubscriptionTopicNotificationShape>
       get copyWith => throw _privateConstructorUsedError;
@@ -4897,8 +4821,6 @@ class _$SubscriptionTopicNotificationShapeCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubscriptionTopicNotificationShape
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4984,8 +4906,6 @@ class __$$SubscriptionTopicNotificationShapeImplCopyWithImpl<$Res>
       $Res Function(_$SubscriptionTopicNotificationShapeImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubscriptionTopicNotificationShape
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5243,7 +5163,7 @@ class _$SubscriptionTopicNotificationShapeImpl
                 .equals(other._revIncludeElement, _revIncludeElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -5257,9 +5177,7 @@ class _$SubscriptionTopicNotificationShapeImpl
       const DeepCollectionEquality().hash(_revInclude),
       const DeepCollectionEquality().hash(_revIncludeElement));
 
-  /// Create a copy of SubscriptionTopicNotificationShape
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubscriptionTopicNotificationShapeImplCopyWith<
@@ -5295,10 +5213,12 @@ abstract class _SubscriptionTopicNotificationShape
           Map<String, dynamic> json) =
       _$SubscriptionTopicNotificationShapeImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5306,9 +5226,9 @@ abstract class _SubscriptionTopicNotificationShape
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5322,8 +5242,8 @@ abstract class _SubscriptionTopicNotificationShape
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [resource] URL of the Resource that is the type used in this shape. This is
   ///  the 'focus' resource of the topic (or one of them if there are more than
@@ -5331,43 +5251,39 @@ abstract class _SubscriptionTopicNotificationShape
   ///  a generality, or a specificity of
   ///  SubscriptionTopic.resourceTrigger.resource or
   ///  SubscriptionTopic.eventTrigger.resource when they are present.
-  @override
   FhirUri? get resource;
+  @override
 
   /// [resourceElement] ("_resource") Extensions for resource
-  @override
   @JsonKey(name: '_resource')
   PrimitiveElement? get resourceElement;
+  @override
 
   /// [include] Search-style _include directives, rooted in the resource for this
   ///  shape. Servers SHOULD include resources listed here, if they exist and the
   ///  user is authorized to receive them.  Clients SHOULD be prepared to receive
   ///  these additional resources, but SHALL function properly without them.
-  @override
   List<String>? get include;
+  @override
 
   /// [includeElement] ("_include") Extensions for include
-  @override
   @JsonKey(name: '_include')
   List<PrimitiveElement>? get includeElement;
+  @override
 
   /// [revInclude] Search-style _revinclude directives, rooted in the resource
   ///  for this shape. Servers SHOULD include resources listed here, if they
   ///  exist and the user is authorized to receive them.  Clients SHOULD be
   ///  prepared to receive these additional resources, but SHALL function
   ///  properly without them.
-  @override
   List<String>? get revInclude;
+  @override
 
   /// [revIncludeElement] ("_revInclude") Extensions for revInclude
-  @override
   @JsonKey(name: '_revInclude')
   List<PrimitiveElement>? get revIncludeElement;
-
-  /// Create a copy of SubscriptionTopicNotificationShape
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubscriptionTopicNotificationShapeImplCopyWith<
           _$SubscriptionTopicNotificationShapeImpl>
       get copyWith => throw _privateConstructorUsedError;

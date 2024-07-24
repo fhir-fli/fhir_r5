@@ -234,12 +234,8 @@ mixin _$NutritionOrder {
   ///  subject or other participants.
   List<Annotation>? get note => throw _privateConstructorUsedError;
 
-  /// Serializes this NutritionOrder to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of NutritionOrder
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $NutritionOrderCopyWith<NutritionOrder> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -317,8 +313,6 @@ class _$NutritionOrderCopyWithImpl<$Res, $Val extends NutritionOrder>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of NutritionOrder
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -532,8 +526,6 @@ class _$NutritionOrderCopyWithImpl<$Res, $Val extends NutritionOrder>
     ) as $Val);
   }
 
-  /// Create a copy of NutritionOrder
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -546,8 +538,6 @@ class _$NutritionOrderCopyWithImpl<$Res, $Val extends NutritionOrder>
     });
   }
 
-  /// Create a copy of NutritionOrder
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -560,8 +550,6 @@ class _$NutritionOrderCopyWithImpl<$Res, $Val extends NutritionOrder>
     });
   }
 
-  /// Create a copy of NutritionOrder
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get groupIdentifier {
@@ -574,8 +562,6 @@ class _$NutritionOrderCopyWithImpl<$Res, $Val extends NutritionOrder>
     });
   }
 
-  /// Create a copy of NutritionOrder
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get subject {
@@ -584,8 +570,6 @@ class _$NutritionOrderCopyWithImpl<$Res, $Val extends NutritionOrder>
     });
   }
 
-  /// Create a copy of NutritionOrder
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get encounter {
@@ -598,8 +582,6 @@ class _$NutritionOrderCopyWithImpl<$Res, $Val extends NutritionOrder>
     });
   }
 
-  /// Create a copy of NutritionOrder
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get orderer {
@@ -612,8 +594,6 @@ class _$NutritionOrderCopyWithImpl<$Res, $Val extends NutritionOrder>
     });
   }
 
-  /// Create a copy of NutritionOrder
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NutritionOrderOralDietCopyWith<$Res>? get oralDiet {
@@ -626,8 +606,6 @@ class _$NutritionOrderCopyWithImpl<$Res, $Val extends NutritionOrder>
     });
   }
 
-  /// Create a copy of NutritionOrder
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NutritionOrderEnteralFormulaCopyWith<$Res>? get enteralFormula {
@@ -723,8 +701,6 @@ class __$$NutritionOrderImplCopyWithImpl<$Res>
       _$NutritionOrderImpl _value, $Res Function(_$NutritionOrderImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of NutritionOrder
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1547,7 +1523,7 @@ class _$NutritionOrderImpl extends _NutritionOrder {
             const DeepCollectionEquality().equals(other._note, _note));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1594,9 +1570,7 @@ class _$NutritionOrderImpl extends _NutritionOrder {
         const DeepCollectionEquality().hash(_note)
       ]);
 
-  /// Create a copy of NutritionOrder
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$NutritionOrderImplCopyWith<_$NutritionOrderImpl> get copyWith =>
@@ -1664,42 +1638,44 @@ abstract class _NutritionOrder extends NutritionOrder {
   factory _NutritionOrder.fromJson(Map<String, dynamic> json) =
       _$NutritionOrderImpl.fromJson;
 
-  /// [resourceType] This is a NutritionOrder resource
   @override
+
+  /// [resourceType] This is a NutritionOrder resource
   @JsonKey(unknownEnumValue: R5ResourceType.NutritionOrder)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1707,16 +1683,16 @@ abstract class _NutritionOrder extends NutritionOrder {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1724,9 +1700,9 @@ abstract class _NutritionOrder extends NutritionOrder {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1740,119 +1716,119 @@ abstract class _NutritionOrder extends NutritionOrder {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] Identifiers assigned to this order by the order sender or by
   ///  the order receiver.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [instantiatesCanonical] The URL pointing to a FHIR-defined protocol,
   ///  guideline, orderset or other definition that is adhered to in whole or in
   ///  part by this NutritionOrder.
-  @override
   List<FhirCanonical>? get instantiatesCanonical;
+  @override
 
   /// [instantiatesUri] The URL pointing to an externally maintained protocol,
   ///  guideline, orderset or other definition that is adhered to in whole or in
   ///  part by this NutritionOrder.
-  @override
   List<FhirUri>? get instantiatesUri;
+  @override
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
-  @override
   @JsonKey(name: '_instantiatesUri')
   List<PrimitiveElement>? get instantiatesUriElement;
+  @override
 
   /// [instantiates] The URL pointing to a protocol, guideline, orderset or other
   ///  definition that is adhered to in whole or in part by this NutritionOrder.
-  @override
   List<FhirUri>? get instantiates;
+  @override
 
   /// [instantiatesElement] ("_instantiates") Extensions for instantiates
-  @override
   @JsonKey(name: '_instantiates')
   List<PrimitiveElement>? get instantiatesElement;
+  @override
 
   /// [basedOn] A plan or request that is fulfilled in whole or in part by this
   ///  nutrition order.
-  @override
   List<Reference>? get basedOn;
+  @override
 
   /// [groupIdentifier] A shared identifier common to all nutrition orders that
   ///  were authorized more or less simultaneously by a single author,
   ///  representing the composite or group identifier.
-  @override
   Identifier? get groupIdentifier;
+  @override
 
   /// [status] The workflow status of the nutrition order/request.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [intent] Indicates the level of authority/intentionality associated with
   ///  the NutrionOrder and where the request fits into the workflow chain.
-  @override
   FhirCode? get intent;
+  @override
 
   /// [intentElement] ("_intent") Extensions for intent
-  @override
   @JsonKey(name: '_intent')
   PrimitiveElement? get intentElement;
+  @override
 
   /// [priority] Indicates how quickly the Nutrition Order should be addressed
   ///  with respect to other        requests.
-  @override
   FhirCode? get priority;
+  @override
 
   /// [priorityElement] ("_priority") Extensions for priority
-  @override
   @JsonKey(name: '_priority')
   PrimitiveElement? get priorityElement;
+  @override
 
   /// [subject] The person or set of individuals who needs the nutrition order
   ///  for an oral diet, nutritional supplement and/or enteral or formula feeding.
-  @override
   Reference get subject;
+  @override
 
   /// [encounter] An encounter that provides additional information about the
   ///  healthcare context in which this request is made.
-  @override
   Reference? get encounter;
+  @override
 
   /// [supportingInformation] Information to support fulfilling (i.e. dispensing
   ///  or administering) of the nutrition,        for example, patient height and
   ///  weight).
-  @override
   List<Reference>? get supportingInformation;
+  @override
 
   /// [dateTime] The date and time that this nutrition order was requested.
-  @override
   FhirDateTime? get dateTime;
+  @override
 
   /// [dateTimeElement] ("_dateTime") Extensions for dateTime
-  @override
   @JsonKey(name: '_dateTime')
   PrimitiveElement? get dateTimeElement;
+  @override
 
   /// [orderer] The practitioner that holds legal responsibility for ordering the
   ///  diet, nutritional supplement, or formula feedings.
-  @override
   Reference? get orderer;
+  @override
 
   /// [performer] The specified desired performer of the nutrition order.
-  @override
   List<CodeableReference>? get performer;
+  @override
 
   /// [allergyIntolerance] A link to a record of allergies or intolerances  which
   ///  should be included in the nutrition order.
-  @override
   List<Reference>? get allergyIntolerance;
+  @override
 
   /// [foodPreferenceModifier] This modifier is used to convey order-specific
   ///  modifiers about the type of food that should be given. These can be
@@ -1860,8 +1836,8 @@ abstract class _NutritionOrder extends NutritionOrder {
   ///  Halal, Vegan or Kosher. This modifier applies to the entire nutrition
   ///  order inclusive of the oral diet, nutritional supplements and enteral
   ///  formula feedings.
-  @override
   List<CodeableConcept>? get foodPreferenceModifier;
+  @override
 
   /// [excludeFoodModifier] This modifier is used to convey Order-specific
   ///  modifier about the type of oral food or oral fluids that should not be
@@ -1874,44 +1850,40 @@ abstract class _NutritionOrder extends NutritionOrder {
   ///  diet for any reason.  This modifier applies to the entire nutrition order
   ///  inclusive of the oral diet, nutritional supplements and enteral formula
   ///  feedings.
-  @override
   List<CodeableConcept>? get excludeFoodModifier;
+  @override
 
   /// [outsideFoodAllowed] This modifier is used to convey whether a food item is
   ///  allowed to be brought in by the patient and/or family.  If set to true,
   ///  indicates that the receiving system does not need to supply the food item.
-  @override
   FhirBoolean? get outsideFoodAllowed;
+  @override
 
   /// [outsideFoodAllowedElement] ("_outsideFoodAllowed") Extensions for
   ///  outsideFoodAllowed
-  @override
   @JsonKey(name: '_outsideFoodAllowed')
   PrimitiveElement? get outsideFoodAllowedElement;
+  @override
 
   /// [oralDiet] Diet given orally in contrast to enteral (tube) feeding.
-  @override
   NutritionOrderOralDiet? get oralDiet;
+  @override
 
   /// [supplement] Oral nutritional products given in order to add further
   ///  nutritional value to the patient's diet.
-  @override
   List<NutritionOrderSupplement>? get supplement;
+  @override
 
   /// [enteralFormula] Feeding provided through the gastrointestinal tract via a
   ///  tube, catheter, or stoma that delivers nutrition distal to the oral cavity.
-  @override
   NutritionOrderEnteralFormula? get enteralFormula;
+  @override
 
   /// [note] Comments made about the {{title}} by the requester, performer,
   ///  subject or other participants.
-  @override
   List<Annotation>? get note;
-
-  /// Create a copy of NutritionOrder
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$NutritionOrderImplCopyWith<_$NutritionOrderImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1983,12 +1955,8 @@ mixin _$NutritionOrderOralDiet {
   PrimitiveElement? get instructionElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this NutritionOrderOralDiet to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of NutritionOrderOralDiet
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $NutritionOrderOralDietCopyWith<NutritionOrderOralDiet> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2025,8 +1993,6 @@ class _$NutritionOrderOralDietCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of NutritionOrderOralDiet
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2085,8 +2051,6 @@ class _$NutritionOrderOralDietCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of NutritionOrderOralDiet
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NutritionOrderScheduleCopyWith<$Res>? get schedule {
@@ -2135,8 +2099,6 @@ class __$$NutritionOrderOralDietImplCopyWithImpl<$Res>
       $Res Function(_$NutritionOrderOralDietImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of NutritionOrderOralDiet
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2391,7 +2353,7 @@ class _$NutritionOrderOralDietImpl extends _NutritionOrderOralDiet {
                 other.instructionElement == instructionElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2406,9 +2368,7 @@ class _$NutritionOrderOralDietImpl extends _NutritionOrderOralDiet {
       instruction,
       instructionElement);
 
-  /// Create a copy of NutritionOrderOralDiet
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$NutritionOrderOralDietImplCopyWith<_$NutritionOrderOralDietImpl>
@@ -2442,10 +2402,12 @@ abstract class _NutritionOrderOralDiet extends NutritionOrderOralDiet {
   factory _NutritionOrderOralDiet.fromJson(Map<String, dynamic> json) =
       _$NutritionOrderOralDietImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2453,9 +2415,9 @@ abstract class _NutritionOrderOralDiet extends NutritionOrderOralDiet {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2469,48 +2431,44 @@ abstract class _NutritionOrderOralDiet extends NutritionOrderOralDiet {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] The kind of diet or dietary restriction such as fiber restricted
   ///  diet or diabetic diet.
-  @override
   List<CodeableConcept>? get type;
+  @override
 
   /// [schedule] Schedule information for an oral diet.
-  @override
   NutritionOrderSchedule? get schedule;
+  @override
 
   /// [nutrient] Class that defines the quantity and type of nutrient
   ///  modifications (for example carbohydrate, fiber or sodium) required for the
   ///  oral diet.
-  @override
   List<NutritionOrderNutrient>? get nutrient;
+  @override
 
   /// [texture] Class that describes any texture modifications required for the
   ///  patient to safely consume various types of solid foods.
-  @override
   List<NutritionOrderTexture>? get texture;
+  @override
 
   /// [fluidConsistencyType] The required consistency (e.g. honey-thick,
   ///  nectar-thick, thin, thickened.) of liquids or fluids served to the patient.
-  @override
   List<CodeableConcept>? get fluidConsistencyType;
+  @override
 
   /// [instruction] Free text or additional instructions or information
   ///  pertaining to the oral diet.
-  @override
   String? get instruction;
+  @override
 
   /// [instructionElement] ("_instruction") Extensions for instruction
-  @override
   @JsonKey(name: '_instruction')
   PrimitiveElement? get instructionElement;
-
-  /// Create a copy of NutritionOrderOralDiet
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$NutritionOrderOralDietImplCopyWith<_$NutritionOrderOralDietImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2567,12 +2525,8 @@ mixin _$NutritionOrderSchedule {
   ///  precondition for taking the product.
   CodeableConcept? get asNeededFor => throw _privateConstructorUsedError;
 
-  /// Serializes this NutritionOrderSchedule to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of NutritionOrderSchedule
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $NutritionOrderScheduleCopyWith<NutritionOrderSchedule> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2606,8 +2560,6 @@ class _$NutritionOrderScheduleCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of NutritionOrderSchedule
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2651,8 +2603,6 @@ class _$NutritionOrderScheduleCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of NutritionOrderSchedule
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get asNeededFor {
@@ -2698,8 +2648,6 @@ class __$$NutritionOrderScheduleImplCopyWithImpl<$Res>
       $Res Function(_$NutritionOrderScheduleImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of NutritionOrderSchedule
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2884,7 +2832,7 @@ class _$NutritionOrderScheduleImpl extends _NutritionOrderSchedule {
                 other.asNeededFor == asNeededFor));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2896,9 +2844,7 @@ class _$NutritionOrderScheduleImpl extends _NutritionOrderSchedule {
       asNeededElement,
       asNeededFor);
 
-  /// Create a copy of NutritionOrderSchedule
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$NutritionOrderScheduleImplCopyWith<_$NutritionOrderScheduleImpl>
@@ -2927,10 +2873,12 @@ abstract class _NutritionOrderSchedule extends NutritionOrderSchedule {
   factory _NutritionOrderSchedule.fromJson(Map<String, dynamic> json) =
       _$NutritionOrderScheduleImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2938,9 +2886,9 @@ abstract class _NutritionOrderSchedule extends NutritionOrderSchedule {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2954,34 +2902,30 @@ abstract class _NutritionOrderSchedule extends NutritionOrderSchedule {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [timing] The time period and frequency at which the diet should be given.
   ///  The diet should be given for the combination of all schedules if more than
   ///  one schedule is present.
-  @override
   List<Timing>? get timing;
+  @override
 
   /// [asNeeded] Indicates whether the product is only taken when needed within a
   ///  specific dosing schedule.
-  @override
   FhirBoolean? get asNeeded;
+  @override
 
   /// [asNeededElement] ("_asNeeded") Extensions for asNeeded
-  @override
   @JsonKey(name: '_asNeeded')
   PrimitiveElement? get asNeededElement;
+  @override
 
   /// [asNeededFor] Indicates whether the product is only taken based on a
   ///  precondition for taking the product.
-  @override
   CodeableConcept? get asNeededFor;
-
-  /// Create a copy of NutritionOrderSchedule
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$NutritionOrderScheduleImplCopyWith<_$NutritionOrderScheduleImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3028,12 +2972,8 @@ mixin _$NutritionOrderNutrient {
   /// [amount] The quantity of the specified nutrient to include in diet.
   Quantity? get amount => throw _privateConstructorUsedError;
 
-  /// Serializes this NutritionOrderNutrient to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of NutritionOrderNutrient
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $NutritionOrderNutrientCopyWith<NutritionOrderNutrient> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3066,8 +3006,6 @@ class _$NutritionOrderNutrientCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of NutritionOrderNutrient
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3101,8 +3039,6 @@ class _$NutritionOrderNutrientCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of NutritionOrderNutrient
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get modifier {
@@ -3115,8 +3051,6 @@ class _$NutritionOrderNutrientCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of NutritionOrderNutrient
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get amount {
@@ -3162,8 +3096,6 @@ class __$$NutritionOrderNutrientImplCopyWithImpl<$Res>
       $Res Function(_$NutritionOrderNutrientImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of NutritionOrderNutrient
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3308,7 +3240,7 @@ class _$NutritionOrderNutrientImpl extends _NutritionOrderNutrient {
             (identical(other.amount, amount) || other.amount == amount));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3318,9 +3250,7 @@ class _$NutritionOrderNutrientImpl extends _NutritionOrderNutrient {
       modifier,
       amount);
 
-  /// Create a copy of NutritionOrderNutrient
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$NutritionOrderNutrientImplCopyWith<_$NutritionOrderNutrientImpl>
@@ -3347,10 +3277,12 @@ abstract class _NutritionOrderNutrient extends NutritionOrderNutrient {
   factory _NutritionOrderNutrient.fromJson(Map<String, dynamic> json) =
       _$NutritionOrderNutrientImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3358,9 +3290,9 @@ abstract class _NutritionOrderNutrient extends NutritionOrderNutrient {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3374,22 +3306,18 @@ abstract class _NutritionOrderNutrient extends NutritionOrderNutrient {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [modifier] The nutrient that is being modified such as carbohydrate or
   ///  sodium.
-  @override
   CodeableConcept? get modifier;
+  @override
 
   /// [amount] The quantity of the specified nutrient to include in diet.
-  @override
   Quantity? get amount;
-
-  /// Create a copy of NutritionOrderNutrient
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$NutritionOrderNutrientImplCopyWith<_$NutritionOrderNutrientImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3437,12 +3365,8 @@ mixin _$NutritionOrderTexture {
   ///  modification applies to.  This could be all foods types.
   CodeableConcept? get foodType => throw _privateConstructorUsedError;
 
-  /// Serializes this NutritionOrderTexture to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of NutritionOrderTexture
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $NutritionOrderTextureCopyWith<NutritionOrderTexture> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3475,8 +3399,6 @@ class _$NutritionOrderTextureCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of NutritionOrderTexture
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3510,8 +3432,6 @@ class _$NutritionOrderTextureCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of NutritionOrderTexture
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get modifier {
@@ -3524,8 +3444,6 @@ class _$NutritionOrderTextureCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of NutritionOrderTexture
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get foodType {
@@ -3570,8 +3488,6 @@ class __$$NutritionOrderTextureImplCopyWithImpl<$Res>
       $Res Function(_$NutritionOrderTextureImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of NutritionOrderTexture
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3718,7 +3634,7 @@ class _$NutritionOrderTextureImpl extends _NutritionOrderTexture {
                 other.foodType == foodType));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3728,9 +3644,7 @@ class _$NutritionOrderTextureImpl extends _NutritionOrderTexture {
       modifier,
       foodType);
 
-  /// Create a copy of NutritionOrderTexture
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$NutritionOrderTextureImplCopyWith<_$NutritionOrderTextureImpl>
@@ -3757,10 +3671,12 @@ abstract class _NutritionOrderTexture extends NutritionOrderTexture {
   factory _NutritionOrderTexture.fromJson(Map<String, dynamic> json) =
       _$NutritionOrderTextureImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3768,9 +3684,9 @@ abstract class _NutritionOrderTexture extends NutritionOrderTexture {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3784,23 +3700,19 @@ abstract class _NutritionOrderTexture extends NutritionOrderTexture {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [modifier] Any texture modifications (for solid foods) that should be made,
   ///  e.g. easy to chew, chopped, ground, and pureed.
-  @override
   CodeableConcept? get modifier;
+  @override
 
   /// [foodType] The food type(s) (e.g. meats, all foods)  that the texture
   ///  modification applies to.  This could be all foods types.
-  @override
   CodeableConcept? get foodType;
-
-  /// Create a copy of NutritionOrderTexture
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$NutritionOrderTextureImplCopyWith<_$NutritionOrderTextureImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3868,12 +3780,8 @@ mixin _$NutritionOrderSupplement {
   PrimitiveElement? get instructionElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this NutritionOrderSupplement to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of NutritionOrderSupplement
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $NutritionOrderSupplementCopyWith<NutritionOrderSupplement> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3912,8 +3820,6 @@ class _$NutritionOrderSupplementCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of NutritionOrderSupplement
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3972,8 +3878,6 @@ class _$NutritionOrderSupplementCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of NutritionOrderSupplement
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get type {
@@ -3986,8 +3890,6 @@ class _$NutritionOrderSupplementCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of NutritionOrderSupplement
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NutritionOrderSchedule1CopyWith<$Res>? get schedule {
@@ -4000,8 +3902,6 @@ class _$NutritionOrderSupplementCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of NutritionOrderSupplement
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get quantity {
@@ -4054,8 +3954,6 @@ class __$$NutritionOrderSupplementImplCopyWithImpl<$Res>
       $Res Function(_$NutritionOrderSupplementImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of NutritionOrderSupplement
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4264,7 +4162,7 @@ class _$NutritionOrderSupplementImpl extends _NutritionOrderSupplement {
                 other.instructionElement == instructionElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4279,9 +4177,7 @@ class _$NutritionOrderSupplementImpl extends _NutritionOrderSupplement {
       instruction,
       instructionElement);
 
-  /// Create a copy of NutritionOrderSupplement
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$NutritionOrderSupplementImplCopyWith<_$NutritionOrderSupplementImpl>
@@ -4315,10 +4211,12 @@ abstract class _NutritionOrderSupplement extends NutritionOrderSupplement {
   factory _NutritionOrderSupplement.fromJson(Map<String, dynamic> json) =
       _$NutritionOrderSupplementImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4326,9 +4224,9 @@ abstract class _NutritionOrderSupplement extends NutritionOrderSupplement {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4342,46 +4240,42 @@ abstract class _NutritionOrderSupplement extends NutritionOrderSupplement {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] The kind of nutritional supplement product required such as a high
   ///  protein or pediatric clear liquid supplement.
-  @override
   CodeableReference? get type;
+  @override
 
   /// [productName] The product or brand name of the nutritional supplement such
   ///  as "Acme Protein Shake".
-  @override
   String? get productName;
+  @override
 
   /// [productNameElement] ("_productName") Extensions for productName
-  @override
   @JsonKey(name: '_productName')
   PrimitiveElement? get productNameElement;
+  @override
 
   /// [schedule] Schedule information for a supplement.
-  @override
   NutritionOrderSchedule1? get schedule;
+  @override
 
   /// [quantity] The amount of the nutritional supplement to be given.
-  @override
   Quantity? get quantity;
+  @override
 
   /// [instruction] Free text or additional instructions or information
   ///  pertaining to the oral supplement.
-  @override
   String? get instruction;
+  @override
 
   /// [instructionElement] ("_instruction") Extensions for instruction
-  @override
   @JsonKey(name: '_instruction')
   PrimitiveElement? get instructionElement;
-
-  /// Create a copy of NutritionOrderSupplement
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$NutritionOrderSupplementImplCopyWith<_$NutritionOrderSupplementImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4438,12 +4332,8 @@ mixin _$NutritionOrderSchedule1 {
   ///  precondition for taking the supplement.
   CodeableConcept? get asNeededFor => throw _privateConstructorUsedError;
 
-  /// Serializes this NutritionOrderSchedule1 to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of NutritionOrderSchedule1
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $NutritionOrderSchedule1CopyWith<NutritionOrderSchedule1> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4477,8 +4367,6 @@ class _$NutritionOrderSchedule1CopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of NutritionOrderSchedule1
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4522,8 +4410,6 @@ class _$NutritionOrderSchedule1CopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of NutritionOrderSchedule1
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get asNeededFor {
@@ -4569,8 +4455,6 @@ class __$$NutritionOrderSchedule1ImplCopyWithImpl<$Res>
       $Res Function(_$NutritionOrderSchedule1Impl) _then)
       : super(_value, _then);
 
-  /// Create a copy of NutritionOrderSchedule1
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4755,7 +4639,7 @@ class _$NutritionOrderSchedule1Impl extends _NutritionOrderSchedule1 {
                 other.asNeededFor == asNeededFor));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4767,9 +4651,7 @@ class _$NutritionOrderSchedule1Impl extends _NutritionOrderSchedule1 {
       asNeededElement,
       asNeededFor);
 
-  /// Create a copy of NutritionOrderSchedule1
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$NutritionOrderSchedule1ImplCopyWith<_$NutritionOrderSchedule1Impl>
@@ -4798,10 +4680,12 @@ abstract class _NutritionOrderSchedule1 extends NutritionOrderSchedule1 {
   factory _NutritionOrderSchedule1.fromJson(Map<String, dynamic> json) =
       _$NutritionOrderSchedule1Impl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4809,9 +4693,9 @@ abstract class _NutritionOrderSchedule1 extends NutritionOrderSchedule1 {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4825,34 +4709,30 @@ abstract class _NutritionOrderSchedule1 extends NutritionOrderSchedule1 {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [timing] The time period and frequency at which the supplement should be
   ///  given.  The supplement should be given for the combination of all
   ///  schedules if more than one schedule is present.
-  @override
   List<Timing>? get timing;
+  @override
 
   /// [asNeeded] Indicates whether the supplement is only taken when needed
   ///  within a specific dosing schedule.
-  @override
   FhirBoolean? get asNeeded;
+  @override
 
   /// [asNeededElement] ("_asNeeded") Extensions for asNeeded
-  @override
   @JsonKey(name: '_asNeeded')
   PrimitiveElement? get asNeededElement;
+  @override
 
   /// [asNeededFor] Indicates whether the supplement is only taken based on a
   ///  precondition for taking the supplement.
-  @override
   CodeableConcept? get asNeededFor;
-
-  /// Create a copy of NutritionOrderSchedule1
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$NutritionOrderSchedule1ImplCopyWith<_$NutritionOrderSchedule1Impl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4952,12 +4832,8 @@ mixin _$NutritionOrderEnteralFormula {
   PrimitiveElement? get administrationInstructionElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this NutritionOrderEnteralFormula to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of NutritionOrderEnteralFormula
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $NutritionOrderEnteralFormulaCopyWith<NutritionOrderEnteralFormula>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -5005,8 +4881,6 @@ class _$NutritionOrderEnteralFormulaCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of NutritionOrderEnteralFormula
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5086,8 +4960,6 @@ class _$NutritionOrderEnteralFormulaCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of NutritionOrderEnteralFormula
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get baseFormulaType {
@@ -5100,8 +4972,6 @@ class _$NutritionOrderEnteralFormulaCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of NutritionOrderEnteralFormula
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get caloricDensity {
@@ -5114,8 +4984,6 @@ class _$NutritionOrderEnteralFormulaCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of NutritionOrderEnteralFormula
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get routeOfAdministration {
@@ -5129,8 +4997,6 @@ class _$NutritionOrderEnteralFormulaCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of NutritionOrderEnteralFormula
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get maxVolumeToDeliver {
@@ -5191,8 +5057,6 @@ class __$$NutritionOrderEnteralFormulaImplCopyWithImpl<$Res>
       $Res Function(_$NutritionOrderEnteralFormulaImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of NutritionOrderEnteralFormula
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5509,7 +5373,7 @@ class _$NutritionOrderEnteralFormulaImpl extends _NutritionOrderEnteralFormula {
                     administrationInstructionElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -5528,9 +5392,7 @@ class _$NutritionOrderEnteralFormulaImpl extends _NutritionOrderEnteralFormula {
       administrationInstruction,
       administrationInstructionElement);
 
-  /// Create a copy of NutritionOrderEnteralFormula
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$NutritionOrderEnteralFormulaImplCopyWith<
@@ -5571,10 +5433,12 @@ abstract class _NutritionOrderEnteralFormula
   factory _NutritionOrderEnteralFormula.fromJson(Map<String, dynamic> json) =
       _$NutritionOrderEnteralFormulaImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5582,9 +5446,9 @@ abstract class _NutritionOrderEnteralFormula
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5598,77 +5462,73 @@ abstract class _NutritionOrderEnteralFormula
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [baseFormulaType] The type of enteral or infant formula such as an adult
   ///  standard formula with fiber or a soy-based infant formula.
-  @override
   CodeableReference? get baseFormulaType;
+  @override
 
   /// [baseFormulaProductName] The product or brand name of the enteral or infant
   ///  formula product such as "ACME Adult Standard Formula".
-  @override
   String? get baseFormulaProductName;
+  @override
 
   /// [baseFormulaProductNameElement] ("_baseFormulaProductName") Extensions for
   ///  baseFormulaProductName
-  @override
   @JsonKey(name: '_baseFormulaProductName')
   PrimitiveElement? get baseFormulaProductNameElement;
+  @override
 
   /// [deliveryDevice] The intended type of device that is to be used for the
   ///  administration of the enteral formula.
-  @override
   List<CodeableReference>? get deliveryDevice;
+  @override
 
   /// [additive] Indicates modular components to be provided in addition or mixed
   ///  with the base formula.
-  @override
   List<NutritionOrderAdditive>? get additive;
+  @override
 
   /// [caloricDensity] The amount of energy (calories) that the formula should
   ///  provide per specified volume, typically per mL or fluid oz.  For example,
   ///  an infant may require a formula that provides 24 calories per fluid ounce
   ///  or an adult may require an enteral formula that provides 1.5 calorie/mL.
-  @override
   Quantity? get caloricDensity;
+  @override
 
   /// [routeOfAdministration] The route or physiological path of administration
   ///  into the patient's gastrointestinal  tract for purposes of providing the
   ///  formula feeding, e.g. nasogastric tube.
-  @override
   CodeableConcept? get routeOfAdministration;
+  @override
 
   /// [administration] Formula administration instructions as structured data.
   ///  This repeating structure allows for changing the administration rate or
   ///  volume over time for both bolus and continuous feeding.  An example of
   ///  this would be an instruction to increase the rate of continuous feeding
   ///  every 2 hours.
-  @override
   List<NutritionOrderAdministration>? get administration;
+  @override
 
   /// [maxVolumeToDeliver] The maximum total quantity of formula that may be
   ///  administered to a subject over the period of time, e.g. 1440 mL over 24
   ///  hours.
-  @override
   Quantity? get maxVolumeToDeliver;
+  @override
 
   /// [administrationInstruction] Free text formula administration, feeding
   ///  instructions or additional instructions or information.
-  @override
   FhirMarkdown? get administrationInstruction;
+  @override
 
   /// [administrationInstructionElement] ("_administrationInstruction")
   ///  Extensions for administrationInstruction
-  @override
   @JsonKey(name: '_administrationInstruction')
   PrimitiveElement? get administrationInstructionElement;
-
-  /// Create a copy of NutritionOrderEnteralFormula
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$NutritionOrderEnteralFormulaImplCopyWith<
           _$NutritionOrderEnteralFormulaImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -5727,12 +5587,8 @@ mixin _$NutritionOrderAdditive {
   ///  with the base formula.
   Quantity? get quantity => throw _privateConstructorUsedError;
 
-  /// Serializes this NutritionOrderAdditive to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of NutritionOrderAdditive
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $NutritionOrderAdditiveCopyWith<NutritionOrderAdditive> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5767,8 +5623,6 @@ class _$NutritionOrderAdditiveCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of NutritionOrderAdditive
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5812,8 +5666,6 @@ class _$NutritionOrderAdditiveCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of NutritionOrderAdditive
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get type {
@@ -5826,8 +5678,6 @@ class _$NutritionOrderAdditiveCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of NutritionOrderAdditive
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get quantity {
@@ -5875,8 +5725,6 @@ class __$$NutritionOrderAdditiveImplCopyWithImpl<$Res>
       $Res Function(_$NutritionOrderAdditiveImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of NutritionOrderAdditive
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6049,7 +5897,7 @@ class _$NutritionOrderAdditiveImpl extends _NutritionOrderAdditive {
                 other.quantity == quantity));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -6061,9 +5909,7 @@ class _$NutritionOrderAdditiveImpl extends _NutritionOrderAdditive {
       productNameElement,
       quantity);
 
-  /// Create a copy of NutritionOrderAdditive
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$NutritionOrderAdditiveImplCopyWith<_$NutritionOrderAdditiveImpl>
@@ -6092,10 +5938,12 @@ abstract class _NutritionOrderAdditive extends NutritionOrderAdditive {
   factory _NutritionOrderAdditive.fromJson(Map<String, dynamic> json) =
       _$NutritionOrderAdditiveImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -6103,9 +5951,9 @@ abstract class _NutritionOrderAdditive extends NutritionOrderAdditive {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -6119,34 +5967,30 @@ abstract class _NutritionOrderAdditive extends NutritionOrderAdditive {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] Indicates the type of modular component such as protein,
   ///  carbohydrate, fat or fiber to be provided in addition to or mixed with the
   ///  base formula.
-  @override
   CodeableReference? get type;
+  @override
 
   /// [productName] The product or brand name of the type of modular component to
   ///  be added to the formula.
-  @override
   String? get productName;
+  @override
 
   /// [productNameElement] ("_productName") Extensions for productName
-  @override
   @JsonKey(name: '_productName')
   PrimitiveElement? get productNameElement;
+  @override
 
   /// [quantity] The amount of additive to be given in addition or to be mixed in
   ///  with the base formula.
-  @override
   Quantity? get quantity;
-
-  /// Create a copy of NutritionOrderAdditive
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$NutritionOrderAdditiveImplCopyWith<_$NutritionOrderAdditiveImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -6201,12 +6045,8 @@ mixin _$NutritionOrderAdministration {
   ///  60 mL per hour, according to the specified schedule.
   Ratio? get rateRatio => throw _privateConstructorUsedError;
 
-  /// Serializes this NutritionOrderAdministration to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of NutritionOrderAdministration
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $NutritionOrderAdministrationCopyWith<NutritionOrderAdministration>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -6245,8 +6085,6 @@ class _$NutritionOrderAdministrationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of NutritionOrderAdministration
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6290,8 +6128,6 @@ class _$NutritionOrderAdministrationCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of NutritionOrderAdministration
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NutritionOrderSchedule2CopyWith<$Res>? get schedule {
@@ -6304,8 +6140,6 @@ class _$NutritionOrderAdministrationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of NutritionOrderAdministration
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get quantity {
@@ -6318,8 +6152,6 @@ class _$NutritionOrderAdministrationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of NutritionOrderAdministration
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get rateQuantity {
@@ -6332,8 +6164,6 @@ class _$NutritionOrderAdministrationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of NutritionOrderAdministration
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get rateRatio {
@@ -6385,8 +6215,6 @@ class __$$NutritionOrderAdministrationImplCopyWithImpl<$Res>
       $Res Function(_$NutritionOrderAdministrationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of NutritionOrderAdministration
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6559,7 +6387,7 @@ class _$NutritionOrderAdministrationImpl extends _NutritionOrderAdministration {
                 other.rateRatio == rateRatio));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -6571,9 +6399,7 @@ class _$NutritionOrderAdministrationImpl extends _NutritionOrderAdministration {
       rateQuantity,
       rateRatio);
 
-  /// Create a copy of NutritionOrderAdministration
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$NutritionOrderAdministrationImplCopyWith<
@@ -6604,10 +6430,12 @@ abstract class _NutritionOrderAdministration
   factory _NutritionOrderAdministration.fromJson(Map<String, dynamic> json) =
       _$NutritionOrderAdministrationImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -6615,9 +6443,9 @@ abstract class _NutritionOrderAdministration
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -6631,32 +6459,28 @@ abstract class _NutritionOrderAdministration
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [schedule] Schedule information for an enteral formula.
-  @override
   NutritionOrderSchedule2? get schedule;
+  @override
 
   /// [quantity] The volume of formula to provide to the patient per the
   ///  specified administration schedule.
-  @override
   Quantity? get quantity;
+  @override
 
   /// [rateQuantity] The rate of administration of formula via a feeding pump,
   ///  e.g. 60 mL per hour, according to the specified schedule.
-  @override
   Quantity? get rateQuantity;
+  @override
 
   /// [rateRatio] The rate of administration of formula via a feeding pump, e.g.
   ///  60 mL per hour, according to the specified schedule.
-  @override
   Ratio? get rateRatio;
-
-  /// Create a copy of NutritionOrderAdministration
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$NutritionOrderAdministrationImplCopyWith<
           _$NutritionOrderAdministrationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -6714,12 +6538,8 @@ mixin _$NutritionOrderSchedule2 {
   ///  a precondition for taking the enteral formula.
   CodeableConcept? get asNeededFor => throw _privateConstructorUsedError;
 
-  /// Serializes this NutritionOrderSchedule2 to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of NutritionOrderSchedule2
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $NutritionOrderSchedule2CopyWith<NutritionOrderSchedule2> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6753,8 +6573,6 @@ class _$NutritionOrderSchedule2CopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of NutritionOrderSchedule2
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6798,8 +6616,6 @@ class _$NutritionOrderSchedule2CopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of NutritionOrderSchedule2
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get asNeededFor {
@@ -6845,8 +6661,6 @@ class __$$NutritionOrderSchedule2ImplCopyWithImpl<$Res>
       $Res Function(_$NutritionOrderSchedule2Impl) _then)
       : super(_value, _then);
 
-  /// Create a copy of NutritionOrderSchedule2
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7031,7 +6845,7 @@ class _$NutritionOrderSchedule2Impl extends _NutritionOrderSchedule2 {
                 other.asNeededFor == asNeededFor));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -7043,9 +6857,7 @@ class _$NutritionOrderSchedule2Impl extends _NutritionOrderSchedule2 {
       asNeededElement,
       asNeededFor);
 
-  /// Create a copy of NutritionOrderSchedule2
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$NutritionOrderSchedule2ImplCopyWith<_$NutritionOrderSchedule2Impl>
@@ -7074,10 +6886,12 @@ abstract class _NutritionOrderSchedule2 extends NutritionOrderSchedule2 {
   factory _NutritionOrderSchedule2.fromJson(Map<String, dynamic> json) =
       _$NutritionOrderSchedule2Impl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -7085,9 +6899,9 @@ abstract class _NutritionOrderSchedule2 extends NutritionOrderSchedule2 {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -7101,34 +6915,30 @@ abstract class _NutritionOrderSchedule2 extends NutritionOrderSchedule2 {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [timing] The time period and frequency at which the enteral formula should
   ///  be given.  The enteral formula should be given for the combination of all
   ///  schedules if more than one schedule is present.
-  @override
   List<Timing>? get timing;
+  @override
 
   /// [asNeeded] Indicates whether the enteral formula is only taken when needed
   ///  within a specific dosing schedule.
-  @override
   FhirBoolean? get asNeeded;
+  @override
 
   /// [asNeededElement] ("_asNeeded") Extensions for asNeeded
-  @override
   @JsonKey(name: '_asNeeded')
   PrimitiveElement? get asNeededElement;
+  @override
 
   /// [asNeededFor] Indicates whether the enteral formula is only taken based on
   ///  a precondition for taking the enteral formula.
-  @override
   CodeableConcept? get asNeededFor;
-
-  /// Create a copy of NutritionOrderSchedule2
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$NutritionOrderSchedule2ImplCopyWith<_$NutritionOrderSchedule2Impl>
       get copyWith => throw _privateConstructorUsedError;
 }

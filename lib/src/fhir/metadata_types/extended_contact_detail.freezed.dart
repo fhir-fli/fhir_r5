@@ -55,12 +55,8 @@ mixin _$ExtendedContactDetail {
   /// [period] Period that this contact was valid for usage.
   Period? get period => throw _privateConstructorUsedError;
 
-  /// Serializes this ExtendedContactDetail to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ExtendedContactDetail
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ExtendedContactDetailCopyWith<ExtendedContactDetail> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -98,8 +94,6 @@ class _$ExtendedContactDetailCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ExtendedContactDetail
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -148,8 +142,6 @@ class _$ExtendedContactDetailCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ExtendedContactDetail
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get purpose {
@@ -162,8 +154,6 @@ class _$ExtendedContactDetailCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ExtendedContactDetail
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AddressCopyWith<$Res>? get address {
@@ -176,8 +166,6 @@ class _$ExtendedContactDetailCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ExtendedContactDetail
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get organization {
@@ -190,8 +178,6 @@ class _$ExtendedContactDetailCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ExtendedContactDetail
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get period {
@@ -243,8 +229,6 @@ class __$$ExtendedContactDetailImplCopyWithImpl<$Res>
       $Res Function(_$ExtendedContactDetailImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ExtendedContactDetail
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -411,7 +395,7 @@ class _$ExtendedContactDetailImpl extends _ExtendedContactDetail {
             (identical(other.period, period) || other.period == period));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -424,9 +408,7 @@ class _$ExtendedContactDetailImpl extends _ExtendedContactDetail {
       organization,
       period);
 
-  /// Create a copy of ExtendedContactDetail
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ExtendedContactDetailImplCopyWith<_$ExtendedContactDetailImpl>
@@ -456,10 +438,12 @@ abstract class _ExtendedContactDetail extends ExtendedContactDetail {
   factory _ExtendedContactDetail.fromJson(Map<String, dynamic> json) =
       _$ExtendedContactDetailImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -467,41 +451,37 @@ abstract class _ExtendedContactDetail extends ExtendedContactDetail {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [purpose] The purpose/type of contact.
-  @override
   CodeableConcept? get purpose;
+  @override
 
   /// [name] The name of an individual to contact, some types of contact detail
   ///  are usually blank.
-  @override
   List<HumanName>? get name;
+  @override
 
   /// [telecom] The contact details application for the purpose defined.
-  @override
   List<ContactPoint>? get telecom;
+  @override
 
   /// [address] Address for the contact.
-  @override
   Address? get address;
+  @override
 
   /// [organization] This contact detail is handled/monitored by a specific
   ///  organization. If the name is provided in the contact, then it is referring
   ///  to the named individual within this organization.
-  @override
   Reference? get organization;
+  @override
 
   /// [period] Period that this contact was valid for usage.
-  @override
   Period? get period;
-
-  /// Create a copy of ExtendedContactDetail
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ExtendedContactDetailImplCopyWith<_$ExtendedContactDetailImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

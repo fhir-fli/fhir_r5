@@ -484,12 +484,8 @@ mixin _$ActivityDefinition {
   List<ActivityDefinitionDynamicValue>? get dynamicValue =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ActivityDefinition to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ActivityDefinitionCopyWith<ActivityDefinition> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -625,8 +621,6 @@ class _$ActivityDefinitionCopyWithImpl<$Res, $Val extends ActivityDefinition>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1090,8 +1084,6 @@ class _$ActivityDefinitionCopyWithImpl<$Res, $Val extends ActivityDefinition>
     ) as $Val);
   }
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -1104,8 +1096,6 @@ class _$ActivityDefinitionCopyWithImpl<$Res, $Val extends ActivityDefinition>
     });
   }
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -1118,8 +1108,6 @@ class _$ActivityDefinitionCopyWithImpl<$Res, $Val extends ActivityDefinition>
     });
   }
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get versionAlgorithmCoding {
@@ -1132,8 +1120,6 @@ class _$ActivityDefinitionCopyWithImpl<$Res, $Val extends ActivityDefinition>
     });
   }
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get effectivePeriod {
@@ -1146,8 +1132,6 @@ class _$ActivityDefinitionCopyWithImpl<$Res, $Val extends ActivityDefinition>
     });
   }
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get subjectCodeableConcept {
@@ -1161,8 +1145,6 @@ class _$ActivityDefinitionCopyWithImpl<$Res, $Val extends ActivityDefinition>
     });
   }
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get subjectReference {
@@ -1175,8 +1157,6 @@ class _$ActivityDefinitionCopyWithImpl<$Res, $Val extends ActivityDefinition>
     });
   }
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -1189,8 +1169,6 @@ class _$ActivityDefinitionCopyWithImpl<$Res, $Val extends ActivityDefinition>
     });
   }
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get timingTiming {
@@ -1203,8 +1181,6 @@ class _$ActivityDefinitionCopyWithImpl<$Res, $Val extends ActivityDefinition>
     });
   }
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get timingAge {
@@ -1217,8 +1193,6 @@ class _$ActivityDefinitionCopyWithImpl<$Res, $Val extends ActivityDefinition>
     });
   }
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get timingRange {
@@ -1231,8 +1205,6 @@ class _$ActivityDefinitionCopyWithImpl<$Res, $Val extends ActivityDefinition>
     });
   }
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get timingDuration {
@@ -1245,8 +1217,6 @@ class _$ActivityDefinitionCopyWithImpl<$Res, $Val extends ActivityDefinition>
     });
   }
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get asNeededCodeableConcept {
@@ -1260,8 +1230,6 @@ class _$ActivityDefinitionCopyWithImpl<$Res, $Val extends ActivityDefinition>
     });
   }
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get location {
@@ -1274,8 +1242,6 @@ class _$ActivityDefinitionCopyWithImpl<$Res, $Val extends ActivityDefinition>
     });
   }
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get productReference {
@@ -1288,8 +1254,6 @@ class _$ActivityDefinitionCopyWithImpl<$Res, $Val extends ActivityDefinition>
     });
   }
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get productCodeableConcept {
@@ -1303,8 +1267,6 @@ class _$ActivityDefinitionCopyWithImpl<$Res, $Val extends ActivityDefinition>
     });
   }
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get quantity {
@@ -1465,8 +1427,6 @@ class __$$ActivityDefinitionImplCopyWithImpl<$Res>
       $Res Function(_$ActivityDefinitionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2968,7 +2928,7 @@ class _$ActivityDefinitionImpl extends _ActivityDefinition {
             const DeepCollectionEquality().equals(other._dynamicValue, _dynamicValue));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -3065,9 +3025,7 @@ class _$ActivityDefinitionImpl extends _ActivityDefinition {
         const DeepCollectionEquality().hash(_dynamicValue)
       ]);
 
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ActivityDefinitionImplCopyWith<_$ActivityDefinitionImpl> get copyWith =>
@@ -3191,42 +3149,44 @@ abstract class _ActivityDefinition extends ActivityDefinition {
   factory _ActivityDefinition.fromJson(Map<String, dynamic> json) =
       _$ActivityDefinitionImpl.fromJson;
 
-  /// [resourceType] This is a ActivityDefinition resource
   @override
+
+  /// [resourceType] This is a ActivityDefinition resource
   @JsonKey(unknownEnumValue: R5ResourceType.ActivityDefinition)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -3234,16 +3194,16 @@ abstract class _ActivityDefinition extends ActivityDefinition {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -3251,9 +3211,9 @@ abstract class _ActivityDefinition extends ActivityDefinition {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -3267,8 +3227,8 @@ abstract class _ActivityDefinition extends ActivityDefinition {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [url] An absolute URI that is used to identify this activity definition
   ///  when it is referenced in a specification, model, design or an instance;
@@ -3277,19 +3237,19 @@ abstract class _ActivityDefinition extends ActivityDefinition {
   ///  activity definition is (or will be) published. This URL can be the target
   ///  of a canonical reference. It SHALL remain the same when the activity
   ///  definition is stored on different servers.
-  @override
   FhirUri? get url;
+  @override
 
   /// [urlElement] ("_url") Extensions for url
-  @override
   @JsonKey(name: '_url')
   PrimitiveElement? get urlElement;
+  @override
 
   /// [identifier] A formal identifier that is used to identify this activity
   ///  definition when it is represented in other formats, or referenced in a
   ///  specification, model, design or an instance.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [version] The identifier that is used to identify this version of the
   ///  activity definition when it is referenced in a specification, model,
@@ -3302,223 +3262,223 @@ abstract class _ActivityDefinition extends ActivityDefinition {
   ///  Major.Minor.Revision (e.g. 1.0.0). For more information on versioning
   ///  knowledge assets, refer to the Decision Support Service specification.
   ///  Note that a version is required for non-experimental active assets.
-  @override
   String? get version;
+  @override
 
   /// [versionElement] ("_version") Extensions for version
-  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
+  @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  @override
   String? get versionAlgorithmString;
+  @override
 
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
-  @override
   @JsonKey(name: '_versionAlgorithmString')
   PrimitiveElement? get versionAlgorithmStringElement;
+  @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  @override
   Coding? get versionAlgorithmCoding;
+  @override
 
   /// [name] A natural language name identifying the activity definition. This
   ///  name should be usable as an identifier for the module by machine
   ///  processing applications such as code generation.
-  @override
   String? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [title] A short, descriptive, user-friendly title for the activity
   ///  definition.
-  @override
   String? get title;
+  @override
 
   /// [titleElement] ("_title") Extensions for title
-  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
+  @override
 
   /// [status] The status of this activity definition. Enables tracking the
   ///  life-cycle of the content.
-  @override
   PublicationStatus? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [experimental] A Boolean value to indicate that this activity definition is
   ///  authored for testing purposes (or education/evaluation/marketing) and is
   ///  not intended to be used for genuine usage.
-  @override
   FhirBoolean? get experimental;
+  @override
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
-  @override
   @JsonKey(name: '_experimental')
   PrimitiveElement? get experimentalElement;
+  @override
 
   /// [date] The date  (and optionally time) when the activity definition was
   ///  last significantly changed. The date must change when the business version
   ///  changes and it must change if the status code changes. In addition, it
   ///  should change when the substantive content of the activity definition
   ///  changes.
-  @override
   FhirDateTime? get date;
+  @override
 
   /// [dateElement] ("_date") Extensions for date
-  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
+  @override
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the activity definition.
-  @override
   String? get publisher;
+  @override
 
   /// [publisherElement] ("_publisher") Extensions for publisher
-  @override
   @JsonKey(name: '_publisher')
   PrimitiveElement? get publisherElement;
+  @override
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
-  @override
   List<ContactDetail>? get contact;
+  @override
 
   /// [description] A free text natural language description of the activity
   ///  definition from a consumer's perspective.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
   ///  categories (gender, age, ...) or may be references to specific programs
   ///  (insurance plans, studies, ...) and may be used to assist with indexing
   ///  and searching for appropriate activity definition instances.
-  @override
   List<UsageContext>? get useContext;
+  @override
 
   /// [jurisdiction] A legal or geographic region in which the activity
   ///  definition is intended to be used.
-  @override
   List<CodeableConcept>? get jurisdiction;
+  @override
 
   /// [purpose] Explanation of why this activity definition is needed and why it
   ///  has been designed as it has.
-  @override
   FhirMarkdown? get purpose;
+  @override
 
   /// [purposeElement] ("_purpose") Extensions for purpose
-  @override
   @JsonKey(name: '_purpose')
   PrimitiveElement? get purposeElement;
+  @override
 
   /// [copyright] A copyright statement relating to the activity definition
   ///  and/or its contents. Copyright statements are generally legal restrictions
   ///  on the use and publishing of the activity definition.
-  @override
   FhirMarkdown? get copyright;
+  @override
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
-  @override
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement;
+  @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
   ///  optionally whether rights are resctricted. (e.g. 'All rights reserved',
   ///  'Some rights reserved').
-  @override
   String? get copyrightLabel;
+  @override
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-  @override
   @JsonKey(name: '_copyrightLabel')
   PrimitiveElement? get copyrightLabelElement;
+  @override
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
   ///  for usage.
-  @override
   FhirDate? get approvalDate;
+  @override
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
-  @override
   @JsonKey(name: '_approvalDate')
   PrimitiveElement? get approvalDateElement;
+  @override
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
   ///  original approval date.
-  @override
   FhirDate? get lastReviewDate;
+  @override
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
-  @override
   @JsonKey(name: '_lastReviewDate')
   PrimitiveElement? get lastReviewDateElement;
+  @override
 
   /// [effectivePeriod] The period during which the activity definition content
   ///  was or is planned to be in active use.
-  @override
   Period? get effectivePeriod;
+  @override
 
   /// [topic] Descriptive topics related to the content of the activity. Topics
   ///  provide a high-level categorization of the activity that can be useful for
   ///  filtering and searching.
-  @override
   List<CodeableConcept>? get topic;
+  @override
 
   /// [author] An individiual or organization primarily involved in the creation
   ///  and maintenance of the content.
-  @override
   List<ContactDetail>? get author;
+  @override
 
   /// [editor] An individual or organization primarily responsible for internal
   ///  coherence of the content.
-  @override
   List<ContactDetail>? get editor;
+  @override
 
   /// [reviewer] An individual or organization asserted by the publisher to be
   ///  primarily responsible for review of some aspect of the content.
-  @override
   List<ContactDetail>? get reviewer;
+  @override
 
   /// [endorser] An individual or organization asserted by the publisher to be
   ///  responsible for officially endorsing the content for use in some setting.
-  @override
   List<ContactDetail>? get endorser;
+  @override
 
   /// [relatedArtifact] Related artifacts such as additional documentation,
   ///  justification, or bibliographic references.
-  @override
   List<RelatedArtifact>? get relatedArtifact;
+  @override
 
   /// [subtitle] An explanatory or alternate title for the activity definition
   ///  giving additional information about its content.
-  @override
   String? get subtitle;
+  @override
 
   /// [subtitleElement] ("_subtitle") Extensions for subtitle
-  @override
   @JsonKey(name: '_subtitle')
   PrimitiveElement? get subtitleElement;
+  @override
 
   /// [subjectCodeableConcept] A code, group definition, or canonical reference
   ///  that describes  or identifies the intended subject of the activity being
@@ -3527,8 +3487,8 @@ abstract class _ActivityDefinition extends ActivityDefinition {
   ///  reference a MedicinalProductDefinition, SubstanceDefinition,
   ///  AdministrableProductDefinition, ManufacturedItemDefinition, or
   ///  PackagedProductDefinition resource.
-  @override
   CodeableConcept? get subjectCodeableConcept;
+  @override
 
   /// [subjectReference] A code, group definition, or canonical reference that
   ///  describes  or identifies the intended subject of the activity being
@@ -3537,8 +3497,8 @@ abstract class _ActivityDefinition extends ActivityDefinition {
   ///  reference a MedicinalProductDefinition, SubstanceDefinition,
   ///  AdministrableProductDefinition, ManufacturedItemDefinition, or
   ///  PackagedProductDefinition resource.
-  @override
   Reference? get subjectReference;
+  @override
 
   /// [subjectCanonical] A code, group definition, or canonical reference that
   ///  describes  or identifies the intended subject of the activity being
@@ -3547,189 +3507,185 @@ abstract class _ActivityDefinition extends ActivityDefinition {
   ///  reference a MedicinalProductDefinition, SubstanceDefinition,
   ///  AdministrableProductDefinition, ManufacturedItemDefinition, or
   ///  PackagedProductDefinition resource.
-  @override
   FhirCanonical? get subjectCanonical;
+  @override
 
   /// [subjectCanonicalElement] ("_subjectCanonical") Extensions for
   ///  subjectCanonical
-  @override
   @JsonKey(name: '_subjectCanonical')
   PrimitiveElement? get subjectCanonicalElement;
+  @override
 
   /// [usage] A detailed description of how the activity definition is used from
   ///  a clinical perspective.
-  @override
   FhirMarkdown? get usage;
+  @override
 
   /// [usageElement] ("_usage") Extensions for usage
-  @override
   @JsonKey(name: '_usage')
   PrimitiveElement? get usageElement;
+  @override
 
   /// [library_] ("library") A reference to a Library resource containing any
   ///  formal logic used by the activity definition.
-  @override
   @JsonKey(name: 'library')
   List<FhirCanonical>? get library_;
+  @override
 
   /// [kind] A description of the kind of resource the activity definition is
   ///  representing. For example, a MedicationRequest, a ServiceRequest, or a
   ///  CommunicationRequest.
-  @override
   FhirCode? get kind;
+  @override
 
   /// [kindElement] ("_kind") Extensions for kind
-  @override
   @JsonKey(name: '_kind')
   PrimitiveElement? get kindElement;
+  @override
 
   /// [profile] A profile to which the target of the activity definition is
   ///  expected to conform.
-  @override
   FhirCanonical? get profile;
+  @override
 
   /// [code] Detailed description of the type of activity; e.g. What lab test,
   ///  what procedure, what kind of encounter.
-  @override
   CodeableConcept? get code;
+  @override
 
   /// [intent] Indicates the level of authority/intentionality associated with
   ///  the activity and where the request should fit into the workflow chain.
-  @override
   FhirCode? get intent;
+  @override
 
   /// [intentElement] ("_intent") Extensions for intent
-  @override
   @JsonKey(name: '_intent')
   PrimitiveElement? get intentElement;
+  @override
 
   /// [priority] Indicates how quickly the activity  should be addressed with
   ///  respect to other requests.
-  @override
   FhirCode? get priority;
+  @override
 
   /// [priorityElement] ("_priority") Extensions for priority
-  @override
   @JsonKey(name: '_priority')
   PrimitiveElement? get priorityElement;
+  @override
 
   /// [doNotPerform] Set this to true if the definition is to indicate that a
   ///  particular activity should NOT be performed. If true, this element should
   ///  be interpreted to reinforce a negative coding. For example NPO as a code
   ///  with a doNotPerform of true would still indicate to NOT perform the action.
-  @override
   FhirBoolean? get doNotPerform;
+  @override
 
   /// [doNotPerformElement] ("_doNotPerform") Extensions for doNotPerform
-  @override
   @JsonKey(name: '_doNotPerform')
   PrimitiveElement? get doNotPerformElement;
+  @override
 
   /// [timingTiming] The timing or frequency upon which the described activity is
   ///  to occur.
-  @override
   Timing? get timingTiming;
+  @override
 
   /// [timingAge] The timing or frequency upon which the described activity is to
   ///  occur.
-  @override
   Age? get timingAge;
+  @override
 
   /// [timingRange] The timing or frequency upon which the described activity is
   ///  to occur.
-  @override
   Range? get timingRange;
+  @override
 
   /// [timingDuration] The timing or frequency upon which the described activity
   ///  is to occur.
-  @override
   FhirDuration? get timingDuration;
+  @override
 
   /// [asNeededBoolean] If a CodeableConcept is present, it indicates the
   ///  pre-condition for performing the service.  For example "pain", "on
   ///  flare-up", etc.
-  @override
   FhirBoolean? get asNeededBoolean;
+  @override
 
   /// [asNeededBooleanElement] ("_asNeededBoolean") Extensions for asNeededBoolean
-  @override
   @JsonKey(name: '_asNeededBoolean')
   PrimitiveElement? get asNeededBooleanElement;
+  @override
 
   /// [asNeededCodeableConcept] If a CodeableConcept is present, it indicates the
   ///  pre-condition for performing the service.  For example "pain", "on
   ///  flare-up", etc.
-  @override
   CodeableConcept? get asNeededCodeableConcept;
+  @override
 
   /// [location] Identifies the facility where the activity will occur; e.g.
   ///  home, hospital, specific clinic, etc.
-  @override
   CodeableReference? get location;
+  @override
 
   /// [participant] Indicates who should participate in performing the action
   ///  described.
-  @override
   List<ActivityDefinitionParticipant>? get participant;
+  @override
 
   /// [productReference] Identifies the food, drug or other product being
   ///  consumed or supplied in the activity.
-  @override
   Reference? get productReference;
+  @override
 
   /// [productCodeableConcept] Identifies the food, drug or other product being
   ///  consumed or supplied in the activity.
-  @override
   CodeableConcept? get productCodeableConcept;
+  @override
 
   /// [quantity] Identifies the quantity expected to be consumed at once (per
   ///  dose, per meal, etc.).
-  @override
   Quantity? get quantity;
+  @override
 
   /// [dosage] Provides detailed dosage instructions in the same way that they
   ///  are described for MedicationRequest resources.
-  @override
   List<Dosage>? get dosage;
+  @override
 
   /// [bodySite] Indicates the sites on the subject's body where the procedure
   ///  should be performed (I.e. the target sites).
-  @override
   List<CodeableConcept>? get bodySite;
+  @override
 
   /// [specimenRequirement] Defines specimen requirements for the action to be
   ///  performed, such as required specimens for a lab test.
-  @override
   List<FhirCanonical>? get specimenRequirement;
+  @override
 
   /// [observationRequirement] Defines observation requirements for the action to
   ///  be performed, such as body weight or surface area.
-  @override
   List<FhirCanonical>? get observationRequirement;
+  @override
 
   /// [observationResultRequirement] Defines the observations that are expected
   ///  to be produced by the action.
-  @override
   List<FhirCanonical>? get observationResultRequirement;
+  @override
 
   /// [transform] A reference to a StructureMap resource that defines a transform
   ///  that can be executed to produce the intent resource using the
   ///  ActivityDefinition instance as the input.
-  @override
   FhirCanonical? get transform;
+  @override
 
   /// [dynamicValue] Dynamic values that will be evaluated to produce values for
   ///  elements of the resulting resource. For example, if the dosage of a
   ///  medication must be computed based on the patient's weight, a dynamic value
   ///  would be used to specify an expression that calculated the weight, and the
   ///  path on the request resource that would contain the result.
-  @override
   List<ActivityDefinitionDynamicValue>? get dynamicValue;
-
-  /// Create a copy of ActivityDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ActivityDefinitionImplCopyWith<_$ActivityDefinitionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3791,12 +3747,8 @@ mixin _$ActivityDefinitionParticipant {
   @JsonKey(name: 'function')
   CodeableConcept? get function_ => throw _privateConstructorUsedError;
 
-  /// Serializes this ActivityDefinitionParticipant to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ActivityDefinitionParticipant
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ActivityDefinitionParticipantCopyWith<ActivityDefinitionParticipant>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3836,8 +3788,6 @@ class _$ActivityDefinitionParticipantCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ActivityDefinitionParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3891,8 +3841,6 @@ class _$ActivityDefinitionParticipantCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ActivityDefinitionParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get typeReference {
@@ -3905,8 +3853,6 @@ class _$ActivityDefinitionParticipantCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ActivityDefinitionParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get role {
@@ -3919,8 +3865,6 @@ class _$ActivityDefinitionParticipantCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ActivityDefinitionParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get function_ {
@@ -3972,8 +3916,6 @@ class __$$ActivityDefinitionParticipantImplCopyWithImpl<$Res>
       $Res Function(_$ActivityDefinitionParticipantImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ActivityDefinitionParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4170,7 +4112,7 @@ class _$ActivityDefinitionParticipantImpl
                 other.function_ == function_));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4184,9 +4126,7 @@ class _$ActivityDefinitionParticipantImpl
       role,
       function_);
 
-  /// Create a copy of ActivityDefinitionParticipant
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ActivityDefinitionParticipantImplCopyWith<
@@ -4220,10 +4160,12 @@ abstract class _ActivityDefinitionParticipant
   factory _ActivityDefinitionParticipant.fromJson(Map<String, dynamic> json) =
       _$ActivityDefinitionParticipantImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4231,9 +4173,9 @@ abstract class _ActivityDefinitionParticipant
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4247,41 +4189,37 @@ abstract class _ActivityDefinitionParticipant
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] The type of participant in the action.
-  @override
   FhirCode? get type;
+  @override
 
   /// [typeElement] ("_type") Extensions for type
-  @override
   @JsonKey(name: '_type')
   PrimitiveElement? get typeElement;
+  @override
 
   /// [typeCanonical] The type of participant in the action.
-  @override
   FhirCanonical? get typeCanonical;
+  @override
 
   /// [typeReference] The type of participant in the action.
-  @override
   Reference? get typeReference;
+  @override
 
   /// [role] The role the participant should play in performing the described
   ///  action.
-  @override
   CodeableConcept? get role;
+  @override
 
   /// [function_] ("function") Indicates how the actor will be involved in the
   ///  action - author, reviewer, witness, etc.
-  @override
   @JsonKey(name: 'function')
   CodeableConcept? get function_;
-
-  /// Create a copy of ActivityDefinitionParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ActivityDefinitionParticipantImplCopyWith<
           _$ActivityDefinitionParticipantImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4339,12 +4277,8 @@ mixin _$ActivityDefinitionDynamicValue {
   /// [expression] An expression specifying the value of the customized element.
   FhirExpression get expression => throw _privateConstructorUsedError;
 
-  /// Serializes this ActivityDefinitionDynamicValue to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ActivityDefinitionDynamicValue
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ActivityDefinitionDynamicValueCopyWith<ActivityDefinitionDynamicValue>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4379,8 +4313,6 @@ class _$ActivityDefinitionDynamicValueCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ActivityDefinitionDynamicValue
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4419,8 +4351,6 @@ class _$ActivityDefinitionDynamicValueCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ActivityDefinitionDynamicValue
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirExpressionCopyWith<$Res> get expression {
@@ -4461,8 +4391,6 @@ class __$$ActivityDefinitionDynamicValueImplCopyWithImpl<$Res>
       $Res Function(_$ActivityDefinitionDynamicValueImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ActivityDefinitionDynamicValue
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4628,7 +4556,7 @@ class _$ActivityDefinitionDynamicValueImpl
                 other.expression == expression));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4639,9 +4567,7 @@ class _$ActivityDefinitionDynamicValueImpl
       pathElement,
       expression);
 
-  /// Create a copy of ActivityDefinitionDynamicValue
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ActivityDefinitionDynamicValueImplCopyWith<
@@ -4672,10 +4598,12 @@ abstract class _ActivityDefinitionDynamicValue
   factory _ActivityDefinitionDynamicValue.fromJson(Map<String, dynamic> json) =
       _$ActivityDefinitionDynamicValueImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4683,9 +4611,9 @@ abstract class _ActivityDefinitionDynamicValue
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4699,8 +4627,8 @@ abstract class _ActivityDefinitionDynamicValue
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [path] The path to the element to be customized. This is the path on the
   ///  resource that will hold the result of the calculation defined by the
@@ -4710,22 +4638,18 @@ abstract class _ActivityDefinitionDynamicValue
   ///  path is allowed to contain qualifiers (.) to traverse sub-elements, as
   ///  well as indexers ([x]) to traverse multiple-cardinality sub-elements (see
   ///  the [Simple FHIRPath Profile](fhirpath.html#simple) for full details).
-  @override
   String? get path;
+  @override
 
   /// [pathElement] ("_path") Extensions for path
-  @override
   @JsonKey(name: '_path')
   PrimitiveElement? get pathElement;
+  @override
 
   /// [expression] An expression specifying the value of the customized element.
-  @override
   FhirExpression get expression;
-
-  /// Create a copy of ActivityDefinitionDynamicValue
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ActivityDefinitionDynamicValueImplCopyWith<
           _$ActivityDefinitionDynamicValueImpl>
       get copyWith => throw _privateConstructorUsedError;

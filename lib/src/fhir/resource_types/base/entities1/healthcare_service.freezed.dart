@@ -214,12 +214,8 @@ mixin _$HealthcareService {
   ///  the specific healthcare services defined at this resource.
   List<Reference>? get endpoint => throw _privateConstructorUsedError;
 
-  /// Serializes this HealthcareService to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of HealthcareService
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $HealthcareServiceCopyWith<HealthcareService> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -289,8 +285,6 @@ class _$HealthcareServiceCopyWithImpl<$Res, $Val extends HealthcareService>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of HealthcareService
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -494,8 +488,6 @@ class _$HealthcareServiceCopyWithImpl<$Res, $Val extends HealthcareService>
     ) as $Val);
   }
 
-  /// Create a copy of HealthcareService
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -508,8 +500,6 @@ class _$HealthcareServiceCopyWithImpl<$Res, $Val extends HealthcareService>
     });
   }
 
-  /// Create a copy of HealthcareService
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -522,8 +512,6 @@ class _$HealthcareServiceCopyWithImpl<$Res, $Val extends HealthcareService>
     });
   }
 
-  /// Create a copy of HealthcareService
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get providedBy {
@@ -536,8 +524,6 @@ class _$HealthcareServiceCopyWithImpl<$Res, $Val extends HealthcareService>
     });
   }
 
-  /// Create a copy of HealthcareService
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get photo {
@@ -620,8 +606,6 @@ class __$$HealthcareServiceImplCopyWithImpl<$Res>
       $Res Function(_$HealthcareServiceImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of HealthcareService
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1404,7 +1388,7 @@ class _$HealthcareServiceImpl extends _HealthcareService {
             const DeepCollectionEquality().equals(other._endpoint, _endpoint));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1449,9 +1433,7 @@ class _$HealthcareServiceImpl extends _HealthcareService {
         const DeepCollectionEquality().hash(_endpoint)
       ]);
 
-  /// Create a copy of HealthcareService
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$HealthcareServiceImplCopyWith<_$HealthcareServiceImpl> get copyWith =>
@@ -1516,42 +1498,44 @@ abstract class _HealthcareService extends HealthcareService {
   factory _HealthcareService.fromJson(Map<String, dynamic> json) =
       _$HealthcareServiceImpl.fromJson;
 
-  /// [resourceType] This is a HealthcareService resource
   @override
+
+  /// [resourceType] This is a HealthcareService resource
   @JsonKey(unknownEnumValue: R5ResourceType.HealthcareService)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1559,16 +1543,16 @@ abstract class _HealthcareService extends HealthcareService {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1576,9 +1560,9 @@ abstract class _HealthcareService extends HealthcareService {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1592,157 +1576,153 @@ abstract class _HealthcareService extends HealthcareService {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] External identifiers for this item.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [active] This flag is used to mark the record to not be used. This is not
   ///  used when a center is closed for maintenance, or for holidays, the
   ///  notAvailable period is to be used for this.
-  @override
   FhirBoolean? get active;
+  @override
 
   /// [activeElement] ("_active") Extensions for active
-  @override
   @JsonKey(name: '_active')
   PrimitiveElement? get activeElement;
+  @override
 
   /// [providedBy] The organization that provides this healthcare service.
-  @override
   Reference? get providedBy;
+  @override
 
   /// [offeredIn] When the HealthcareService is representing a specific,
   ///  schedulable service, the availableIn property can refer to a generic
   ///  service.
-  @override
   List<Reference>? get offeredIn;
+  @override
 
   /// [category] Identifies the broad category of service being performed or
   ///  delivered.
-  @override
   List<CodeableConcept>? get category;
+  @override
 
   /// [type] The specific type of service that may be delivered or performed.
-  @override
   List<CodeableConcept>? get type;
+  @override
 
   /// [specialty] Collection of specialties handled by the Healthcare service.
   ///  This is more of a medical term.
-  @override
   List<CodeableConcept>? get specialty;
+  @override
 
   /// [location] The location(s) where this healthcare service may be provided.
-  @override
   List<Reference>? get location;
+  @override
 
   /// [name] Further description of the service as it would be presented to a
   ///  consumer while searching.
-  @override
   String? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [comment] Any additional description of the service and/or any specific
   ///  issues not covered by the other attributes, which can be displayed as
   ///  further detail under the serviceName.
-  @override
   FhirMarkdown? get comment;
+  @override
 
   /// [commentElement] ("_comment") Extensions for comment
-  @override
   @JsonKey(name: '_comment')
   PrimitiveElement? get commentElement;
+  @override
 
   /// [extraDetails] Extra details about the service that can't be placed in the
   ///  other fields.
-  @override
   FhirMarkdown? get extraDetails;
+  @override
 
   /// [extraDetailsElement] ("_extraDetails") Extensions for extraDetails
-  @override
   @JsonKey(name: '_extraDetails')
   PrimitiveElement? get extraDetailsElement;
+  @override
 
   /// [photo] If there is a photo/symbol associated with this HealthcareService,
   ///  it may be included here to facilitate quick identification of the service
   ///  in a list.
-  @override
   Attachment? get photo;
+  @override
 
   /// [contact] The contact details of communication devices available relevant
   ///  to the specific HealthcareService. This can include addresses, phone
   ///  numbers, fax numbers, mobile numbers, email addresses and web sites.
-  @override
   List<ExtendedContactDetail>? get contact;
+  @override
 
   /// [coverageArea] The location(s) that this service is available to (not where
   ///  the service is provided).
-  @override
   List<Reference>? get coverageArea;
+  @override
 
   /// [serviceProvisionCode] The code(s) that detail the conditions under which
   ///  the healthcare service is available/offered.
-  @override
   List<CodeableConcept>? get serviceProvisionCode;
+  @override
 
   /// [eligibility] Does this service have specific eligibility requirements that
   ///  need to be met in order to use the service?
-  @override
   List<HealthcareServiceEligibility>? get eligibility;
+  @override
 
   /// [program] Programs that this service is applicable to.
-  @override
   List<CodeableConcept>? get program;
+  @override
 
   /// [characteristic] Collection of characteristics (attributes).
-  @override
   List<CodeableConcept>? get characteristic;
+  @override
 
   /// [communication] Some services are specifically made available in multiple
   ///  languages, this property permits a directory to declare the languages this
   ///  is offered in. Typically this is only provided where a service operates in
   ///  communities with mixed languages used.
-  @override
   List<CodeableConcept>? get communication;
+  @override
 
   /// [referralMethod] Ways that the service accepts referrals, if this is not
   ///  provided then it is implied that no referral is required.
-  @override
   List<CodeableConcept>? get referralMethod;
+  @override
 
   /// [appointmentRequired] Indicates whether or not a prospective consumer will
   ///  require an appointment for a particular service at a site to be provided
   ///  by the Organization. Indicates if an appointment is required for access to
   ///  this service.
-  @override
   FhirBoolean? get appointmentRequired;
+  @override
 
   /// [appointmentRequiredElement] ("_appointmentRequired") Extensions for
   ///  appointmentRequired
-  @override
   @JsonKey(name: '_appointmentRequired')
   PrimitiveElement? get appointmentRequiredElement;
+  @override
 
   /// [availability] A collection of times that the healthcare service is
   ///  available.
-  @override
   List<Availability>? get availability;
+  @override
 
   /// [endpoint] Technical endpoints providing access to services operated for
   ///  the specific healthcare services defined at this resource.
-  @override
   List<Reference>? get endpoint;
-
-  /// Create a copy of HealthcareService
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$HealthcareServiceImplCopyWith<_$HealthcareServiceImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1792,12 +1772,8 @@ mixin _$HealthcareServiceEligibility {
   @JsonKey(name: '_comment')
   PrimitiveElement? get commentElement => throw _privateConstructorUsedError;
 
-  /// Serializes this HealthcareServiceEligibility to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of HealthcareServiceEligibility
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $HealthcareServiceEligibilityCopyWith<HealthcareServiceEligibility>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1832,8 +1808,6 @@ class _$HealthcareServiceEligibilityCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of HealthcareServiceEligibility
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1872,8 +1846,6 @@ class _$HealthcareServiceEligibilityCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of HealthcareServiceEligibility
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -1918,8 +1890,6 @@ class __$$HealthcareServiceEligibilityImplCopyWithImpl<$Res>
       $Res Function(_$HealthcareServiceEligibilityImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of HealthcareServiceEligibility
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2076,7 +2046,7 @@ class _$HealthcareServiceEligibilityImpl extends _HealthcareServiceEligibility {
                 other.commentElement == commentElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2087,9 +2057,7 @@ class _$HealthcareServiceEligibilityImpl extends _HealthcareServiceEligibility {
       comment,
       commentElement);
 
-  /// Create a copy of HealthcareServiceEligibility
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$HealthcareServiceEligibilityImplCopyWith<
@@ -2120,10 +2088,12 @@ abstract class _HealthcareServiceEligibility
   factory _HealthcareServiceEligibility.fromJson(Map<String, dynamic> json) =
       _$HealthcareServiceEligibilityImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2131,9 +2101,9 @@ abstract class _HealthcareServiceEligibility
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2147,26 +2117,22 @@ abstract class _HealthcareServiceEligibility
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [code] Coded value for the eligibility.
-  @override
   CodeableConcept? get code;
+  @override
 
   /// [comment] Describes the eligibility conditions for the service.
-  @override
   FhirMarkdown? get comment;
+  @override
 
   /// [commentElement] ("_comment") Extensions for comment
-  @override
   @JsonKey(name: '_comment')
   PrimitiveElement? get commentElement;
-
-  /// Create a copy of HealthcareServiceEligibility
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$HealthcareServiceEligibilityImplCopyWith<
           _$HealthcareServiceEligibilityImpl>
       get copyWith => throw _privateConstructorUsedError;

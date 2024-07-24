@@ -154,12 +154,8 @@ mixin _$Ingredient {
   /// [substance] The substance that comprises this ingredient.
   IngredientSubstance get substance => throw _privateConstructorUsedError;
 
-  /// Serializes this Ingredient to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Ingredient
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $IngredientCopyWith<Ingredient> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -216,8 +212,6 @@ class _$IngredientCopyWithImpl<$Res, $Val extends Ingredient>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Ingredient
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -346,8 +340,6 @@ class _$IngredientCopyWithImpl<$Res, $Val extends Ingredient>
     ) as $Val);
   }
 
-  /// Create a copy of Ingredient
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -360,8 +352,6 @@ class _$IngredientCopyWithImpl<$Res, $Val extends Ingredient>
     });
   }
 
-  /// Create a copy of Ingredient
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -374,8 +364,6 @@ class _$IngredientCopyWithImpl<$Res, $Val extends Ingredient>
     });
   }
 
-  /// Create a copy of Ingredient
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get identifier {
@@ -388,8 +376,6 @@ class _$IngredientCopyWithImpl<$Res, $Val extends Ingredient>
     });
   }
 
-  /// Create a copy of Ingredient
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get role {
@@ -398,8 +384,6 @@ class _$IngredientCopyWithImpl<$Res, $Val extends Ingredient>
     });
   }
 
-  /// Create a copy of Ingredient
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get group {
@@ -412,8 +396,6 @@ class _$IngredientCopyWithImpl<$Res, $Val extends Ingredient>
     });
   }
 
-  /// Create a copy of Ingredient
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IngredientSubstanceCopyWith<$Res> get substance {
@@ -481,8 +463,6 @@ class __$$IngredientImplCopyWithImpl<$Res>
       _$IngredientImpl _value, $Res Function(_$IngredientImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Ingredient
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -942,7 +922,7 @@ class _$IngredientImpl extends _Ingredient {
                 other.substance == substance));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -972,9 +952,7 @@ class _$IngredientImpl extends _Ingredient {
         substance
       ]);
 
-  /// Create a copy of Ingredient
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$IngredientImplCopyWith<_$IngredientImpl> get copyWith =>
@@ -1022,42 +1000,44 @@ abstract class _Ingredient extends Ingredient {
   factory _Ingredient.fromJson(Map<String, dynamic> json) =
       _$IngredientImpl.fromJson;
 
-  /// [resourceType] This is a Ingredient resource
   @override
+
+  /// [resourceType] This is a Ingredient resource
   @JsonKey(unknownEnumValue: R5ResourceType.Ingredient)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1065,16 +1045,16 @@ abstract class _Ingredient extends Ingredient {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1082,9 +1062,9 @@ abstract class _Ingredient extends Ingredient {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1098,70 +1078,70 @@ abstract class _Ingredient extends Ingredient {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] The identifier(s) of this Ingredient that are assigned by
   ///  business processes and/or used to refer to it when a direct URL reference
   ///  to the resource itself is not appropriate.
-  @override
   Identifier? get identifier;
+  @override
 
   /// [status] The status of this ingredient. Enables tracking the life-cycle of
   ///  the content.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [for_] ("for") The product which this ingredient is a constituent part of.
-  @override
   @JsonKey(name: 'for')
   List<Reference>? get for_;
+  @override
 
   /// [role] A classification of the ingredient identifying its purpose within
   ///  the product, e.g. active, inactive.
-  @override
   CodeableConcept get role;
+  @override
 
   /// [function_] ("function") A classification of the ingredient identifying its
   ///  precise purpose(s) in the drug product. This extends the Ingredient.role
   ///  to add more detail. Example: antioxidant, alkalizing agent.
-  @override
   @JsonKey(name: 'function')
   List<CodeableConcept>? get function_;
+  @override
 
   /// [group] A classification of the ingredient according to where in the
   ///  physical item it tends to be used, such the outer shell of a tablet, inner
   ///  body or ink.
-  @override
   CodeableConcept? get group;
+  @override
 
   /// [allergenicIndicator] If the ingredient is a known or suspected allergen.
   ///  Note that this is a property of the substance, so if a reference to a
   ///  SubstanceDefinition is used to decribe that (rather than just a code), the
   ///  allergen information should go there, not here.
-  @override
   FhirBoolean? get allergenicIndicator;
+  @override
 
   /// [allergenicIndicatorElement] ("_allergenicIndicator") Extensions for
   ///  allergenicIndicator
-  @override
   @JsonKey(name: '_allergenicIndicator')
   PrimitiveElement? get allergenicIndicatorElement;
+  @override
 
   /// [comment] A place for providing any notes that are relevant to the
   ///  component, e.g. removed during process, adjusted for loss on drying.
-  @override
   FhirMarkdown? get comment;
+  @override
 
   /// [commentElement] ("_comment") Extensions for comment
-  @override
   @JsonKey(name: '_comment')
   PrimitiveElement? get commentElement;
+  @override
 
   /// [manufacturer] The organization(s) that manufacture this ingredient. Can be
   ///  used to indicate:         1) Organizations we are aware of that
@@ -1169,17 +1149,13 @@ abstract class _Ingredient extends Ingredient {
   ///  being used         3) Set of organisations allowed to manufacture this
   ///  ingredient for this product         Users must be clear on the application
   ///  of context relevant to their use case.
-  @override
   List<IngredientManufacturer>? get manufacturer;
+  @override
 
   /// [substance] The substance that comprises this ingredient.
-  @override
   IngredientSubstance get substance;
-
-  /// Create a copy of Ingredient
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$IngredientImplCopyWith<_$IngredientImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1232,12 +1208,8 @@ mixin _$IngredientManufacturer {
   /// [manufacturer] An organization that manufactures this ingredient.
   Reference get manufacturer => throw _privateConstructorUsedError;
 
-  /// Serializes this IngredientManufacturer to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of IngredientManufacturer
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $IngredientManufacturerCopyWith<IngredientManufacturer> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1270,8 +1242,6 @@ class _$IngredientManufacturerCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of IngredientManufacturer
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1310,8 +1280,6 @@ class _$IngredientManufacturerCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of IngredientManufacturer
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get manufacturer {
@@ -1352,8 +1320,6 @@ class __$$IngredientManufacturerImplCopyWithImpl<$Res>
       $Res Function(_$IngredientManufacturerImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of IngredientManufacturer
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1513,7 +1479,7 @@ class _$IngredientManufacturerImpl extends _IngredientManufacturer {
                 other.manufacturer == manufacturer));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1524,9 +1490,7 @@ class _$IngredientManufacturerImpl extends _IngredientManufacturer {
       roleElement,
       manufacturer);
 
-  /// Create a copy of IngredientManufacturer
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$IngredientManufacturerImplCopyWith<_$IngredientManufacturerImpl>
@@ -1554,10 +1518,12 @@ abstract class _IngredientManufacturer extends IngredientManufacturer {
   factory _IngredientManufacturer.fromJson(Map<String, dynamic> json) =
       _$IngredientManufacturerImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1565,9 +1531,9 @@ abstract class _IngredientManufacturer extends IngredientManufacturer {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1581,29 +1547,25 @@ abstract class _IngredientManufacturer extends IngredientManufacturer {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [role] The way in which this manufacturer is associated with the
   ///  ingredient. For example whether it is a possible one (others allowed), or
   ///  an exclusive authorized one for this ingredient. Note that this is not the
   ///  manufacturing process role.
-  @override
   FhirCode? get role;
+  @override
 
   /// [roleElement] ("_role") Extensions for role
-  @override
   @JsonKey(name: '_role')
   PrimitiveElement? get roleElement;
+  @override
 
   /// [manufacturer] An organization that manufactures this ingredient.
-  @override
   Reference get manufacturer;
-
-  /// Create a copy of IngredientManufacturer
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$IngredientManufacturerImplCopyWith<_$IngredientManufacturerImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1652,12 +1614,8 @@ mixin _$IngredientSubstance {
   ///  strength.
   List<IngredientStrength>? get strength => throw _privateConstructorUsedError;
 
-  /// Serializes this IngredientSubstance to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of IngredientSubstance
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $IngredientSubstanceCopyWith<IngredientSubstance> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1688,8 +1646,6 @@ class _$IngredientSubstanceCopyWithImpl<$Res, $Val extends IngredientSubstance>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of IngredientSubstance
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1723,8 +1679,6 @@ class _$IngredientSubstanceCopyWithImpl<$Res, $Val extends IngredientSubstance>
     ) as $Val);
   }
 
-  /// Create a copy of IngredientSubstance
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res> get code {
@@ -1761,8 +1715,6 @@ class __$$IngredientSubstanceImplCopyWithImpl<$Res>
       $Res Function(_$IngredientSubstanceImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of IngredientSubstance
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1923,7 +1875,7 @@ class _$IngredientSubstanceImpl extends _IngredientSubstance {
             const DeepCollectionEquality().equals(other._strength, _strength));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1933,9 +1885,7 @@ class _$IngredientSubstanceImpl extends _IngredientSubstance {
       code,
       const DeepCollectionEquality().hash(_strength));
 
-  /// Create a copy of IngredientSubstance
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$IngredientSubstanceImplCopyWith<_$IngredientSubstanceImpl> get copyWith =>
@@ -1962,10 +1912,12 @@ abstract class _IngredientSubstance extends IngredientSubstance {
   factory _IngredientSubstance.fromJson(Map<String, dynamic> json) =
       _$IngredientSubstanceImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1973,9 +1925,9 @@ abstract class _IngredientSubstance extends IngredientSubstance {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1989,25 +1941,21 @@ abstract class _IngredientSubstance extends IngredientSubstance {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [code] A code or full resource that represents the ingredient's substance.
-  @override
   CodeableReference get code;
+  @override
 
   /// [strength] The quantity of substance in the unit of presentation, or in the
   ///  volume (or mass) of the single pharmaceutical product or manufactured
   ///  item. The allowed repetitions do not represent different strengths, but
   ///  are different representations - mathematically equivalent - of a single
   ///  strength.
-  @override
   List<IngredientStrength>? get strength;
-
-  /// Create a copy of IngredientSubstance
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$IngredientSubstanceImplCopyWith<_$IngredientSubstanceImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2144,12 +2092,8 @@ mixin _$IngredientStrength {
   List<IngredientReferenceStrength>? get referenceStrength =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this IngredientStrength to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of IngredientStrength
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $IngredientStrengthCopyWith<IngredientStrength> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2206,8 +2150,6 @@ class _$IngredientStrengthCopyWithImpl<$Res, $Val extends IngredientStrength>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of IngredientStrength
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2316,8 +2258,6 @@ class _$IngredientStrengthCopyWithImpl<$Res, $Val extends IngredientStrength>
     ) as $Val);
   }
 
-  /// Create a copy of IngredientStrength
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get presentationRatio {
@@ -2330,8 +2270,6 @@ class _$IngredientStrengthCopyWithImpl<$Res, $Val extends IngredientStrength>
     });
   }
 
-  /// Create a copy of IngredientStrength
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioRangeCopyWith<$Res>? get presentationRatioRange {
@@ -2344,8 +2282,6 @@ class _$IngredientStrengthCopyWithImpl<$Res, $Val extends IngredientStrength>
     });
   }
 
-  /// Create a copy of IngredientStrength
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get presentationCodeableConcept {
@@ -2359,8 +2295,6 @@ class _$IngredientStrengthCopyWithImpl<$Res, $Val extends IngredientStrength>
     });
   }
 
-  /// Create a copy of IngredientStrength
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get presentationQuantity {
@@ -2373,8 +2307,6 @@ class _$IngredientStrengthCopyWithImpl<$Res, $Val extends IngredientStrength>
     });
   }
 
-  /// Create a copy of IngredientStrength
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get concentrationRatio {
@@ -2387,8 +2319,6 @@ class _$IngredientStrengthCopyWithImpl<$Res, $Val extends IngredientStrength>
     });
   }
 
-  /// Create a copy of IngredientStrength
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioRangeCopyWith<$Res>? get concentrationRatioRange {
@@ -2401,8 +2331,6 @@ class _$IngredientStrengthCopyWithImpl<$Res, $Val extends IngredientStrength>
     });
   }
 
-  /// Create a copy of IngredientStrength
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get concentrationCodeableConcept {
@@ -2417,8 +2345,6 @@ class _$IngredientStrengthCopyWithImpl<$Res, $Val extends IngredientStrength>
     });
   }
 
-  /// Create a copy of IngredientStrength
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get concentrationQuantity {
@@ -2431,8 +2357,6 @@ class _$IngredientStrengthCopyWithImpl<$Res, $Val extends IngredientStrength>
     });
   }
 
-  /// Create a copy of IngredientStrength
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get basis {
@@ -2507,8 +2431,6 @@ class __$$IngredientStrengthImplCopyWithImpl<$Res>
       $Res Function(_$IngredientStrengthImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of IngredientStrength
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2904,7 +2826,7 @@ class _$IngredientStrengthImpl extends _IngredientStrength {
                 .equals(other._referenceStrength, _referenceStrength));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -2930,9 +2852,7 @@ class _$IngredientStrengthImpl extends _IngredientStrength {
         const DeepCollectionEquality().hash(_referenceStrength)
       ]);
 
-  /// Create a copy of IngredientStrength
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$IngredientStrengthImplCopyWith<_$IngredientStrengthImpl> get copyWith =>
@@ -2978,10 +2898,12 @@ abstract class _IngredientStrength extends IngredientStrength {
   factory _IngredientStrength.fromJson(Map<String, dynamic> json) =
       _$IngredientStrengthImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2989,9 +2911,9 @@ abstract class _IngredientStrength extends IngredientStrength {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3005,8 +2927,8 @@ abstract class _IngredientStrength extends IngredientStrength {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [presentationRatio] The quantity of substance in the unit of presentation,
   ///  or in the volume (or mass) of the single pharmaceutical product or
@@ -3014,8 +2936,8 @@ abstract class _IngredientStrength extends IngredientStrength {
   ///  item occurs in e.g. a strength per tablet size, perhaps 'per 20mg' (the
   ///  size of the tablet). It is not generally normalized as a unitary unit,
   ///  which would be 'per mg').
-  @override
   Ratio? get presentationRatio;
+  @override
 
   /// [presentationRatioRange] The quantity of substance in the unit of
   ///  presentation, or in the volume (or mass) of the single pharmaceutical
@@ -3023,8 +2945,8 @@ abstract class _IngredientStrength extends IngredientStrength {
   ///  that the item occurs in e.g. a strength per tablet size, perhaps 'per
   ///  20mg' (the size of the tablet). It is not generally normalized as a
   ///  unitary unit, which would be 'per mg').
-  @override
   RatioRange? get presentationRatioRange;
+  @override
 
   /// [presentationCodeableConcept] The quantity of substance in the unit of
   ///  presentation, or in the volume (or mass) of the single pharmaceutical
@@ -3032,8 +2954,8 @@ abstract class _IngredientStrength extends IngredientStrength {
   ///  that the item occurs in e.g. a strength per tablet size, perhaps 'per
   ///  20mg' (the size of the tablet). It is not generally normalized as a
   ///  unitary unit, which would be 'per mg').
-  @override
   CodeableConcept? get presentationCodeableConcept;
+  @override
 
   /// [presentationQuantity] The quantity of substance in the unit of
   ///  presentation, or in the volume (or mass) of the single pharmaceutical
@@ -3041,71 +2963,71 @@ abstract class _IngredientStrength extends IngredientStrength {
   ///  that the item occurs in e.g. a strength per tablet size, perhaps 'per
   ///  20mg' (the size of the tablet). It is not generally normalized as a
   ///  unitary unit, which would be 'per mg').
-  @override
   Quantity? get presentationQuantity;
+  @override
 
   /// [textPresentation] A textual represention of either the whole of the
   ///  presentation strength or a part of it - with the rest being in
   ///  Strength.presentation as a ratio.
-  @override
   String? get textPresentation;
+  @override
 
   /// [textPresentationElement] ("_textPresentation") Extensions for
   ///  textPresentation
-  @override
   @JsonKey(name: '_textPresentation')
   PrimitiveElement? get textPresentationElement;
+  @override
 
   /// [concentrationRatio] The strength per unitary volume (or mass).
-  @override
   Ratio? get concentrationRatio;
+  @override
 
   /// [concentrationRatioRange] The strength per unitary volume (or mass).
-  @override
   RatioRange? get concentrationRatioRange;
+  @override
 
   /// [concentrationCodeableConcept] The strength per unitary volume (or mass).
-  @override
   CodeableConcept? get concentrationCodeableConcept;
+  @override
 
   /// [concentrationQuantity] The strength per unitary volume (or mass).
-  @override
   Quantity? get concentrationQuantity;
+  @override
 
   /// [textConcentration] A textual represention of either the whole of the
   ///  concentration strength or a part of it - with the rest being in
   ///  Strength.concentration as a ratio.
-  @override
   String? get textConcentration;
+  @override
 
   /// [textConcentrationElement] ("_textConcentration") Extensions for
   ///  textConcentration
-  @override
   @JsonKey(name: '_textConcentration')
   PrimitiveElement? get textConcentrationElement;
+  @override
 
   /// [basis] A code that indicates if the strength is, for example, based on the
   ///  ingredient substance as stated or on the substance base (when the
   ///  ingredient is a salt).
-  @override
   CodeableConcept? get basis;
+  @override
 
   /// [measurementPoint] For when strength is measured at a particular point or
   ///  distance. There are products where strength is measured at a particular
   ///  point. For example, the strength of the ingredient in some inhalers is
   ///  measured at a particular position relative to the point of aerosolization.
-  @override
   String? get measurementPoint;
+  @override
 
   /// [measurementPointElement] ("_measurementPoint") Extensions for
   ///  measurementPoint
-  @override
   @JsonKey(name: '_measurementPoint')
   PrimitiveElement? get measurementPointElement;
+  @override
 
   /// [country] The country or countries for which the strength range applies.
-  @override
   List<CodeableConcept>? get country;
+  @override
 
   /// [referenceStrength] Strength expressed in terms of a reference substance.
   ///  For when the ingredient strength is additionally expressed as equivalent
@@ -3114,13 +3036,9 @@ abstract class _IngredientStrength extends IngredientStrength {
   ///  composition) of the active moiety of the active substance. There are
   ///  situations when the active substance and active moiety are different,
   ///  therefore both a strength and a reference strength are needed.
-  @override
   List<IngredientReferenceStrength>? get referenceStrength;
-
-  /// Create a copy of IngredientStrength
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$IngredientStrengthImplCopyWith<_$IngredientStrengthImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3185,12 +3103,8 @@ mixin _$IngredientReferenceStrength {
   /// [country] The country or countries for which the strength range applies.
   List<CodeableConcept>? get country => throw _privateConstructorUsedError;
 
-  /// Serializes this IngredientReferenceStrength to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of IngredientReferenceStrength
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $IngredientReferenceStrengthCopyWith<IngredientReferenceStrength>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3233,8 +3147,6 @@ class _$IngredientReferenceStrengthCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of IngredientReferenceStrength
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3293,8 +3205,6 @@ class _$IngredientReferenceStrengthCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of IngredientReferenceStrength
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res> get substance {
@@ -3303,8 +3213,6 @@ class _$IngredientReferenceStrengthCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of IngredientReferenceStrength
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get strengthRatio {
@@ -3317,8 +3225,6 @@ class _$IngredientReferenceStrengthCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of IngredientReferenceStrength
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioRangeCopyWith<$Res>? get strengthRatioRange {
@@ -3331,8 +3237,6 @@ class _$IngredientReferenceStrengthCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of IngredientReferenceStrength
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get strengthQuantity {
@@ -3388,8 +3292,6 @@ class __$$IngredientReferenceStrengthImplCopyWithImpl<$Res>
       $Res Function(_$IngredientReferenceStrengthImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of IngredientReferenceStrength
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3608,7 +3510,7 @@ class _$IngredientReferenceStrengthImpl extends _IngredientReferenceStrength {
             const DeepCollectionEquality().equals(other._country, _country));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3623,9 +3525,7 @@ class _$IngredientReferenceStrengthImpl extends _IngredientReferenceStrength {
       measurementPointElement,
       const DeepCollectionEquality().hash(_country));
 
-  /// Create a copy of IngredientReferenceStrength
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$IngredientReferenceStrengthImplCopyWith<_$IngredientReferenceStrengthImpl>
@@ -3660,10 +3560,12 @@ abstract class _IngredientReferenceStrength
   factory _IngredientReferenceStrength.fromJson(Map<String, dynamic> json) =
       _$IngredientReferenceStrengthImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3671,9 +3573,9 @@ abstract class _IngredientReferenceStrength
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3687,44 +3589,40 @@ abstract class _IngredientReferenceStrength
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [substance] Relevant reference substance.
-  @override
   CodeableReference get substance;
+  @override
 
   /// [strengthRatio] Strength expressed in terms of a reference substance.
-  @override
   Ratio? get strengthRatio;
+  @override
 
   /// [strengthRatioRange] Strength expressed in terms of a reference substance.
-  @override
   RatioRange? get strengthRatioRange;
+  @override
 
   /// [strengthQuantity] Strength expressed in terms of a reference substance.
-  @override
   Quantity? get strengthQuantity;
+  @override
 
   /// [measurementPoint] For when strength is measured at a particular point or
   ///  distance.
-  @override
   String? get measurementPoint;
+  @override
 
   /// [measurementPointElement] ("_measurementPoint") Extensions for
   ///  measurementPoint
-  @override
   @JsonKey(name: '_measurementPoint')
   PrimitiveElement? get measurementPointElement;
+  @override
 
   /// [country] The country or countries for which the strength range applies.
-  @override
   List<CodeableConcept>? get country;
-
-  /// Create a copy of IngredientReferenceStrength
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$IngredientReferenceStrengthImplCopyWith<_$IngredientReferenceStrengthImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

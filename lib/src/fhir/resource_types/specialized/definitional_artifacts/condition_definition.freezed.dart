@@ -368,12 +368,8 @@ mixin _$ConditionDefinition {
   /// [plan] Plan that is appropriate.
   List<ConditionDefinitionPlan>? get plan => throw _privateConstructorUsedError;
 
-  /// Serializes this ConditionDefinition to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ConditionDefinition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ConditionDefinitionCopyWith<ConditionDefinition> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -481,8 +477,6 @@ class _$ConditionDefinitionCopyWithImpl<$Res, $Val extends ConditionDefinition>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ConditionDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -856,8 +850,6 @@ class _$ConditionDefinitionCopyWithImpl<$Res, $Val extends ConditionDefinition>
     ) as $Val);
   }
 
-  /// Create a copy of ConditionDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -870,8 +862,6 @@ class _$ConditionDefinitionCopyWithImpl<$Res, $Val extends ConditionDefinition>
     });
   }
 
-  /// Create a copy of ConditionDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -884,8 +874,6 @@ class _$ConditionDefinitionCopyWithImpl<$Res, $Val extends ConditionDefinition>
     });
   }
 
-  /// Create a copy of ConditionDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get versionAlgorithmCoding {
@@ -898,8 +886,6 @@ class _$ConditionDefinitionCopyWithImpl<$Res, $Val extends ConditionDefinition>
     });
   }
 
-  /// Create a copy of ConditionDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get effectivePeriod {
@@ -912,8 +898,6 @@ class _$ConditionDefinitionCopyWithImpl<$Res, $Val extends ConditionDefinition>
     });
   }
 
-  /// Create a copy of ConditionDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get code {
@@ -922,8 +906,6 @@ class _$ConditionDefinitionCopyWithImpl<$Res, $Val extends ConditionDefinition>
     });
   }
 
-  /// Create a copy of ConditionDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get severity {
@@ -936,8 +918,6 @@ class _$ConditionDefinitionCopyWithImpl<$Res, $Val extends ConditionDefinition>
     });
   }
 
-  /// Create a copy of ConditionDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get bodySite {
@@ -950,8 +930,6 @@ class _$ConditionDefinitionCopyWithImpl<$Res, $Val extends ConditionDefinition>
     });
   }
 
-  /// Create a copy of ConditionDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get stage {
@@ -1076,8 +1054,6 @@ class __$$ConditionDefinitionImplCopyWithImpl<$Res>
       $Res Function(_$ConditionDefinitionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ConditionDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2313,7 +2289,7 @@ class _$ConditionDefinitionImpl extends _ConditionDefinition {
             const DeepCollectionEquality().equals(other._plan, _plan));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -2392,9 +2368,7 @@ class _$ConditionDefinitionImpl extends _ConditionDefinition {
         const DeepCollectionEquality().hash(_plan)
       ]);
 
-  /// Create a copy of ConditionDefinition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ConditionDefinitionImplCopyWith<_$ConditionDefinitionImpl> get copyWith =>
@@ -2497,42 +2471,44 @@ abstract class _ConditionDefinition extends ConditionDefinition {
   factory _ConditionDefinition.fromJson(Map<String, dynamic> json) =
       _$ConditionDefinitionImpl.fromJson;
 
-  /// [resourceType] This is a ConditionDefinition resource
   @override
+
+  /// [resourceType] This is a ConditionDefinition resource
   @JsonKey(unknownEnumValue: R5ResourceType.ConditionDefinition)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -2540,16 +2516,16 @@ abstract class _ConditionDefinition extends ConditionDefinition {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -2557,9 +2533,9 @@ abstract class _ConditionDefinition extends ConditionDefinition {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -2573,8 +2549,8 @@ abstract class _ConditionDefinition extends ConditionDefinition {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [url] An absolute URI that is used to identify this condition definition
   ///  when it is referenced in a specification, model, design or an instance;
@@ -2583,19 +2559,19 @@ abstract class _ConditionDefinition extends ConditionDefinition {
   ///  condition definition is (or will be) published. This URL can be the target
   ///  of a canonical reference. It SHALL remain the same when the condition
   ///  definition is stored on different servers.
-  @override
   FhirUri? get url;
+  @override
 
   /// [urlElement] ("_url") Extensions for url
-  @override
   @JsonKey(name: '_url')
   PrimitiveElement? get urlElement;
+  @override
 
   /// [identifier] A formal identifier that is used to identify this condition
   ///  definition when it is represented in other formats, or referenced in a
   ///  specification, model, design or an instance.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [version] The identifier that is used to identify this version of the
   ///  condition definition when it is referenced in a specification, model,
@@ -2604,308 +2580,304 @@ abstract class _ConditionDefinition extends ConditionDefinition {
   ///  it might be a timestamp (e.g. yyyymmdd) if a managed version is not
   ///  available. There is also no expectation that versions can be placed in a
   ///  lexicographical sequence.
-  @override
   String? get version;
+  @override
 
   /// [versionElement] ("_version") Extensions for version
-  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
+  @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  @override
   String? get versionAlgorithmString;
+  @override
 
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
-  @override
   @JsonKey(name: '_versionAlgorithmString')
   PrimitiveElement? get versionAlgorithmStringElement;
+  @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  @override
   Coding? get versionAlgorithmCoding;
+  @override
 
   /// [name] A natural language name identifying the condition definition. This
   ///  name should be usable as an identifier for the module by machine
   ///  processing applications such as code generation.
-  @override
   String? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [title] A short, descriptive, user-friendly title for the condition
   ///  definition.
-  @override
   String? get title;
+  @override
 
   /// [titleElement] ("_title") Extensions for title
-  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
+  @override
 
   /// [status] The status of this condition definition. Enables tracking the
   ///  life-cycle of the content.
-  @override
   PublicationStatus? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [experimental] A Boolean value to indicate that this condition definition
   ///  is authored for testing purposes (or education/evaluation/marketing) and
   ///  is not intended to be used for genuine usage.
-  @override
   FhirBoolean? get experimental;
+  @override
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
-  @override
   @JsonKey(name: '_experimental')
   PrimitiveElement? get experimentalElement;
+  @override
 
   /// [date] The date  (and optionally time) when the condition definition was
   ///  last significantly changed. The date must change when the business version
   ///  changes and it must change if the status code changes. In addition, it
   ///  should change when the substantive content of the condition definition
   ///  changes.
-  @override
   FhirDateTime? get date;
+  @override
 
   /// [dateElement] ("_date") Extensions for date
-  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
+  @override
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the condition definition.
-  @override
   String? get publisher;
+  @override
 
   /// [publisherElement] ("_publisher") Extensions for publisher
-  @override
   @JsonKey(name: '_publisher')
   PrimitiveElement? get publisherElement;
+  @override
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
-  @override
   List<ContactDetail>? get contact;
+  @override
 
   /// [description] A free text natural language description of the condition
   ///  definition from a consumer's perspective.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
   ///  categories (gender, age, ...) or may be references to specific programs
   ///  (insurance plans, studies, ...) and may be used to assist with indexing
   ///  and searching for appropriate condition definition instances.
-  @override
   List<UsageContext>? get useContext;
+  @override
 
   /// [jurisdiction] A legal or geographic region in which the condition
   ///  definition is intended to be used.
-  @override
   List<CodeableConcept>? get jurisdiction;
+  @override
 
   /// [purpose] Explanation of why this {{title}} is needed and why it has been
   ///  designed as it has.
-  @override
   FhirMarkdown? get purpose;
+  @override
 
   /// [purposeElement] ("_purpose") Extensions for purpose
-  @override
   @JsonKey(name: '_purpose')
   PrimitiveElement? get purposeElement;
+  @override
 
   /// [copyright] A copyright statement relating to the {{title}} and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
   ///  and publishing of the {{title}}.
-  @override
   FhirMarkdown? get copyright;
+  @override
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
-  @override
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement;
+  @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
   ///  optionally whether rights are resctricted. (e.g. 'All rights reserved',
   ///  'Some rights reserved').
-  @override
   String? get copyrightLabel;
+  @override
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-  @override
   @JsonKey(name: '_copyrightLabel')
   PrimitiveElement? get copyrightLabelElement;
+  @override
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
   ///  for usage.
-  @override
   FhirDate? get approvalDate;
+  @override
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
-  @override
   @JsonKey(name: '_approvalDate')
   PrimitiveElement? get approvalDateElement;
+  @override
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
   ///  original approval date.
-  @override
   FhirDate? get lastReviewDate;
+  @override
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
-  @override
   @JsonKey(name: '_lastReviewDate')
   PrimitiveElement? get lastReviewDateElement;
+  @override
 
   /// [effectivePeriod] The period during which the {{title}} content was or is
   ///  planned to be in active use.
-  @override
   Period? get effectivePeriod;
+  @override
 
   /// [topic] Descriptive topics related to the content of the {{title}}. Topics
   ///  provide a high-level categorization as well as keywords for the {{title}}
   ///  that can be useful for filtering and searching.
-  @override
   List<CodeableConcept>? get topic;
+  @override
 
   /// [author] An individiual or organization primarily involved in the creation
   ///  and maintenance of the {{title}}.
-  @override
   List<ContactDetail>? get author;
+  @override
 
   /// [editor] An individual or organization primarily responsible for internal
   ///  coherence of the {{title}}.
-  @override
   List<ContactDetail>? get editor;
+  @override
 
   /// [reviewer] An individual or organization asserted by the publisher to be
   ///  primarily responsible for review of some aspect of the {{title}}.
-  @override
   List<ContactDetail>? get reviewer;
+  @override
 
   /// [endorser] An individual or organization asserted by the publisher to be
   ///  responsible for officially endorsing the {{title}} for use in some setting.
-  @override
   List<ContactDetail>? get endorser;
+  @override
 
   /// [relatedArtifact] Related artifacts such as additional documentation,
   ///  justification, dependencies, bibliographic references, and predecessor and
   ///  successor artifacts.
-  @override
   List<RelatedArtifact>? get relatedArtifact;
+  @override
 
   /// [subtitle] An explanatory or alternate title for the event definition
   ///  giving additional information about its content.
-  @override
   String? get subtitle;
+  @override
 
   /// [subtitleElement] ("_subtitle") Extensions for subtitle
-  @override
   @JsonKey(name: '_subtitle')
   PrimitiveElement? get subtitleElement;
+  @override
 
   /// [code] Identification of the condition, problem or diagnosis.
-  @override
   CodeableConcept get code;
+  @override
 
   /// [severity] A subjective assessment of the severity of the condition as
   ///  evaluated by the clinician.
-  @override
   CodeableConcept? get severity;
+  @override
 
   /// [bodySite] The anatomical location where this condition manifests itself.
-  @override
   CodeableConcept? get bodySite;
+  @override
 
   /// [stage] Clinical stage or grade of a condition. May include formal severity
   ///  assessments.
-  @override
   CodeableConcept? get stage;
+  @override
 
   /// [hasSeverity] Whether Severity is appropriate to collect for this condition.
-  @override
   FhirBoolean? get hasSeverity;
+  @override
 
   /// [hasSeverityElement] ("_hasSeverity") Extensions for hasSeverity
-  @override
   @JsonKey(name: '_hasSeverity')
   PrimitiveElement? get hasSeverityElement;
+  @override
 
   /// [hasBodySite] Whether bodySite is appropriate to collect for this condition.
-  @override
   FhirBoolean? get hasBodySite;
+  @override
 
   /// [hasBodySiteElement] ("_hasBodySite") Extensions for hasBodySite
-  @override
   @JsonKey(name: '_hasBodySite')
   PrimitiveElement? get hasBodySiteElement;
+  @override
 
   /// [hasStage] Whether stage is appropriate to collect for this condition.
-  @override
   FhirBoolean? get hasStage;
+  @override
 
   /// [hasStageElement] ("_hasStage") Extensions for hasStage
-  @override
   @JsonKey(name: '_hasStage')
   PrimitiveElement? get hasStageElement;
+  @override
 
   /// [definition] Formal definitions of the condition. These may be references
   ///  to ontologies, published clinical protocols or research papers.
-  @override
   List<FhirUri>? get definition;
+  @override
 
   /// [definitionElement] ("_definition") Extensions for definition
-  @override
   @JsonKey(name: '_definition')
   List<PrimitiveElement>? get definitionElement;
+  @override
 
   /// [observation] Observations particularly relevant to this condition.
-  @override
   List<ConditionDefinitionObservation>? get observation;
+  @override
 
   /// [medication] Medications particularly relevant for this condition.
-  @override
   List<ConditionDefinitionMedication>? get medication;
+  @override
 
   /// [precondition] An observation that suggests that this condition applies.
-  @override
   List<ConditionDefinitionPrecondition>? get precondition;
+  @override
 
   /// [team] Appropriate team for this condition.
-  @override
   List<Reference>? get team;
+  @override
 
   /// [questionnaire] Questionnaire for this condition.
-  @override
   List<ConditionDefinitionQuestionnaire>? get questionnaire;
+  @override
 
   /// [plan] Plan that is appropriate.
-  @override
   List<ConditionDefinitionPlan>? get plan;
-
-  /// Create a copy of ConditionDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ConditionDefinitionImplCopyWith<_$ConditionDefinitionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2951,12 +2923,8 @@ mixin _$ConditionDefinitionObservation {
   /// [code] Code for relevant Observation.
   CodeableConcept? get code => throw _privateConstructorUsedError;
 
-  /// Serializes this ConditionDefinitionObservation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ConditionDefinitionObservation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ConditionDefinitionObservationCopyWith<ConditionDefinitionObservation>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2991,8 +2959,6 @@ class _$ConditionDefinitionObservationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ConditionDefinitionObservation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3026,8 +2992,6 @@ class _$ConditionDefinitionObservationCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ConditionDefinitionObservation
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get category {
@@ -3040,8 +3004,6 @@ class _$ConditionDefinitionObservationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ConditionDefinitionObservation
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -3087,8 +3049,6 @@ class __$$ConditionDefinitionObservationImplCopyWithImpl<$Res>
       $Res Function(_$ConditionDefinitionObservationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ConditionDefinitionObservation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3234,7 +3194,7 @@ class _$ConditionDefinitionObservationImpl
             (identical(other.code, code) || other.code == code));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3244,9 +3204,7 @@ class _$ConditionDefinitionObservationImpl
       category,
       code);
 
-  /// Create a copy of ConditionDefinitionObservation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ConditionDefinitionObservationImplCopyWith<
@@ -3275,10 +3233,12 @@ abstract class _ConditionDefinitionObservation
   factory _ConditionDefinitionObservation.fromJson(Map<String, dynamic> json) =
       _$ConditionDefinitionObservationImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3286,9 +3246,9 @@ abstract class _ConditionDefinitionObservation
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3302,21 +3262,17 @@ abstract class _ConditionDefinitionObservation
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [category] Category that is relevant.
-  @override
   CodeableConcept? get category;
+  @override
 
   /// [code] Code for relevant Observation.
-  @override
   CodeableConcept? get code;
-
-  /// Create a copy of ConditionDefinitionObservation
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ConditionDefinitionObservationImplCopyWith<
           _$ConditionDefinitionObservationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3363,12 +3319,8 @@ mixin _$ConditionDefinitionMedication {
   /// [code] Code for relevant Medication.
   CodeableConcept? get code => throw _privateConstructorUsedError;
 
-  /// Serializes this ConditionDefinitionMedication to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ConditionDefinitionMedication
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ConditionDefinitionMedicationCopyWith<ConditionDefinitionMedication>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3403,8 +3355,6 @@ class _$ConditionDefinitionMedicationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ConditionDefinitionMedication
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3438,8 +3388,6 @@ class _$ConditionDefinitionMedicationCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ConditionDefinitionMedication
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get category {
@@ -3452,8 +3400,6 @@ class _$ConditionDefinitionMedicationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ConditionDefinitionMedication
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -3499,8 +3445,6 @@ class __$$ConditionDefinitionMedicationImplCopyWithImpl<$Res>
       $Res Function(_$ConditionDefinitionMedicationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ConditionDefinitionMedication
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3646,7 +3590,7 @@ class _$ConditionDefinitionMedicationImpl
             (identical(other.code, code) || other.code == code));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3656,9 +3600,7 @@ class _$ConditionDefinitionMedicationImpl
       category,
       code);
 
-  /// Create a copy of ConditionDefinitionMedication
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ConditionDefinitionMedicationImplCopyWith<
@@ -3687,10 +3629,12 @@ abstract class _ConditionDefinitionMedication
   factory _ConditionDefinitionMedication.fromJson(Map<String, dynamic> json) =
       _$ConditionDefinitionMedicationImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3698,9 +3642,9 @@ abstract class _ConditionDefinitionMedication
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3714,21 +3658,17 @@ abstract class _ConditionDefinitionMedication
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [category] Category that is relevant.
-  @override
   CodeableConcept? get category;
+  @override
 
   /// [code] Code for relevant Medication.
-  @override
   CodeableConcept? get code;
-
-  /// Create a copy of ConditionDefinitionMedication
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ConditionDefinitionMedicationImplCopyWith<
           _$ConditionDefinitionMedicationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3786,12 +3726,8 @@ mixin _$ConditionDefinitionPrecondition {
   /// [valueQuantity] Value of Observation.
   Quantity? get valueQuantity => throw _privateConstructorUsedError;
 
-  /// Serializes this ConditionDefinitionPrecondition to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ConditionDefinitionPrecondition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ConditionDefinitionPreconditionCopyWith<ConditionDefinitionPrecondition>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3830,8 +3766,6 @@ class _$ConditionDefinitionPreconditionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ConditionDefinitionPrecondition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3880,8 +3814,6 @@ class _$ConditionDefinitionPreconditionCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ConditionDefinitionPrecondition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get code {
@@ -3890,8 +3822,6 @@ class _$ConditionDefinitionPreconditionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ConditionDefinitionPrecondition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get valueCodeableConcept {
@@ -3905,8 +3835,6 @@ class _$ConditionDefinitionPreconditionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ConditionDefinitionPrecondition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get valueQuantity {
@@ -3957,8 +3885,6 @@ class __$$ConditionDefinitionPreconditionImplCopyWithImpl<$Res>
       $Res Function(_$ConditionDefinitionPreconditionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ConditionDefinitionPrecondition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4140,7 +4066,7 @@ class _$ConditionDefinitionPreconditionImpl
                 other.valueQuantity == valueQuantity));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4153,9 +4079,7 @@ class _$ConditionDefinitionPreconditionImpl
       valueCodeableConcept,
       valueQuantity);
 
-  /// Create a copy of ConditionDefinitionPrecondition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ConditionDefinitionPreconditionImplCopyWith<
@@ -4187,10 +4111,12 @@ abstract class _ConditionDefinitionPrecondition
   factory _ConditionDefinitionPrecondition.fromJson(Map<String, dynamic> json) =
       _$ConditionDefinitionPreconditionImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4198,9 +4124,9 @@ abstract class _ConditionDefinitionPrecondition
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4214,34 +4140,30 @@ abstract class _ConditionDefinitionPrecondition
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] Kind of pre-condition.
-  @override
   FhirCode? get type;
+  @override
 
   /// [typeElement] ("_type") Extensions for type
-  @override
   @JsonKey(name: '_type')
   PrimitiveElement? get typeElement;
+  @override
 
   /// [code] Code for relevant Observation.
-  @override
   CodeableConcept get code;
+  @override
 
   /// [valueCodeableConcept] Value of Observation.
-  @override
   CodeableConcept? get valueCodeableConcept;
+  @override
 
   /// [valueQuantity] Value of Observation.
-  @override
   Quantity? get valueQuantity;
-
-  /// Create a copy of ConditionDefinitionPrecondition
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ConditionDefinitionPreconditionImplCopyWith<
           _$ConditionDefinitionPreconditionImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4292,12 +4214,8 @@ mixin _$ConditionDefinitionQuestionnaire {
   /// [reference] Specific Questionnaire.
   Reference get reference => throw _privateConstructorUsedError;
 
-  /// Serializes this ConditionDefinitionQuestionnaire to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ConditionDefinitionQuestionnaire
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ConditionDefinitionQuestionnaireCopyWith<ConditionDefinitionQuestionnaire>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4332,8 +4250,6 @@ class _$ConditionDefinitionQuestionnaireCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ConditionDefinitionQuestionnaire
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4372,8 +4288,6 @@ class _$ConditionDefinitionQuestionnaireCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ConditionDefinitionQuestionnaire
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get reference {
@@ -4414,8 +4328,6 @@ class __$$ConditionDefinitionQuestionnaireImplCopyWithImpl<$Res>
       $Res Function(_$ConditionDefinitionQuestionnaireImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ConditionDefinitionQuestionnaire
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4574,7 +4486,7 @@ class _$ConditionDefinitionQuestionnaireImpl
                 other.reference == reference));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4585,9 +4497,7 @@ class _$ConditionDefinitionQuestionnaireImpl
       purposeElement,
       reference);
 
-  /// Create a copy of ConditionDefinitionQuestionnaire
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ConditionDefinitionQuestionnaireImplCopyWith<
@@ -4619,10 +4529,12 @@ abstract class _ConditionDefinitionQuestionnaire
           Map<String, dynamic> json) =
       _$ConditionDefinitionQuestionnaireImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4630,9 +4542,9 @@ abstract class _ConditionDefinitionQuestionnaire
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4646,26 +4558,22 @@ abstract class _ConditionDefinitionQuestionnaire
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [purpose] Use of the questionnaire.
-  @override
   FhirCode? get purpose;
+  @override
 
   /// [purposeElement] ("_purpose") Extensions for purpose
-  @override
   @JsonKey(name: '_purpose')
   PrimitiveElement? get purposeElement;
+  @override
 
   /// [reference] Specific Questionnaire.
-  @override
   Reference get reference;
-
-  /// Create a copy of ConditionDefinitionQuestionnaire
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ConditionDefinitionQuestionnaireImplCopyWith<
           _$ConditionDefinitionQuestionnaireImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4712,12 +4620,8 @@ mixin _$ConditionDefinitionPlan {
   /// [reference] The actual plan.
   Reference get reference => throw _privateConstructorUsedError;
 
-  /// Serializes this ConditionDefinitionPlan to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ConditionDefinitionPlan
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ConditionDefinitionPlanCopyWith<ConditionDefinitionPlan> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4750,8 +4654,6 @@ class _$ConditionDefinitionPlanCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ConditionDefinitionPlan
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4785,8 +4687,6 @@ class _$ConditionDefinitionPlanCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ConditionDefinitionPlan
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get role {
@@ -4799,8 +4699,6 @@ class _$ConditionDefinitionPlanCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ConditionDefinitionPlan
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get reference {
@@ -4842,8 +4740,6 @@ class __$$ConditionDefinitionPlanImplCopyWithImpl<$Res>
       $Res Function(_$ConditionDefinitionPlanImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ConditionDefinitionPlan
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4987,7 +4883,7 @@ class _$ConditionDefinitionPlanImpl extends _ConditionDefinitionPlan {
                 other.reference == reference));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4997,9 +4893,7 @@ class _$ConditionDefinitionPlanImpl extends _ConditionDefinitionPlan {
       role,
       reference);
 
-  /// Create a copy of ConditionDefinitionPlan
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ConditionDefinitionPlanImplCopyWith<_$ConditionDefinitionPlanImpl>
@@ -5026,10 +4920,12 @@ abstract class _ConditionDefinitionPlan extends ConditionDefinitionPlan {
   factory _ConditionDefinitionPlan.fromJson(Map<String, dynamic> json) =
       _$ConditionDefinitionPlanImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5037,9 +4933,9 @@ abstract class _ConditionDefinitionPlan extends ConditionDefinitionPlan {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5053,21 +4949,17 @@ abstract class _ConditionDefinitionPlan extends ConditionDefinitionPlan {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [role] Use for the plan.
-  @override
   CodeableConcept? get role;
+  @override
 
   /// [reference] The actual plan.
-  @override
   Reference get reference;
-
-  /// Create a copy of ConditionDefinitionPlan
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ConditionDefinitionPlanImplCopyWith<_$ConditionDefinitionPlanImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

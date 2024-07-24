@@ -145,12 +145,8 @@ mixin _$ClinicalUseDefinition {
   ClinicalUseDefinitionWarning? get warning =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ClinicalUseDefinition to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ClinicalUseDefinition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ClinicalUseDefinitionCopyWith<ClinicalUseDefinition> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -209,8 +205,6 @@ class _$ClinicalUseDefinitionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ClinicalUseDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -339,8 +333,6 @@ class _$ClinicalUseDefinitionCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ClinicalUseDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -353,8 +345,6 @@ class _$ClinicalUseDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -367,8 +357,6 @@ class _$ClinicalUseDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get status {
@@ -381,8 +369,6 @@ class _$ClinicalUseDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ClinicalUseDefinitionContraindicationCopyWith<$Res>? get contraindication {
@@ -396,8 +382,6 @@ class _$ClinicalUseDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ClinicalUseDefinitionIndicationCopyWith<$Res>? get indication {
@@ -411,8 +395,6 @@ class _$ClinicalUseDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ClinicalUseDefinitionInteractionCopyWith<$Res>? get interaction {
@@ -426,8 +408,6 @@ class _$ClinicalUseDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ClinicalUseDefinitionUndesirableEffectCopyWith<$Res>? get undesirableEffect {
@@ -441,8 +421,6 @@ class _$ClinicalUseDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ClinicalUseDefinitionWarningCopyWith<$Res>? get warning {
@@ -520,8 +498,6 @@ class __$$ClinicalUseDefinitionImplCopyWithImpl<$Res>
       $Res Function(_$ClinicalUseDefinitionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ClinicalUseDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -981,7 +957,7 @@ class _$ClinicalUseDefinitionImpl extends _ClinicalUseDefinition {
             (identical(other.warning, warning) || other.warning == warning));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1011,9 +987,7 @@ class _$ClinicalUseDefinitionImpl extends _ClinicalUseDefinition {
         warning
       ]);
 
-  /// Create a copy of ClinicalUseDefinition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ClinicalUseDefinitionImplCopyWith<_$ClinicalUseDefinitionImpl>
@@ -1062,42 +1036,44 @@ abstract class _ClinicalUseDefinition extends ClinicalUseDefinition {
   factory _ClinicalUseDefinition.fromJson(Map<String, dynamic> json) =
       _$ClinicalUseDefinitionImpl.fromJson;
 
-  /// [resourceType] This is a ClinicalUseDefinition resource
   @override
+
+  /// [resourceType] This is a ClinicalUseDefinition resource
   @JsonKey(unknownEnumValue: R5ResourceType.ClinicalUseDefinition)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1105,16 +1081,16 @@ abstract class _ClinicalUseDefinition extends ClinicalUseDefinition {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1122,9 +1098,9 @@ abstract class _ClinicalUseDefinition extends ClinicalUseDefinition {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1138,75 +1114,71 @@ abstract class _ClinicalUseDefinition extends ClinicalUseDefinition {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] Business identifier for this issue.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [type] indication | contraindication | interaction | undesirable-effect |
   ///  warning.
-  @override
   FhirCode? get type;
+  @override
 
   /// [typeElement] ("_type") Extensions for type
-  @override
   @JsonKey(name: '_type')
   PrimitiveElement? get typeElement;
+  @override
 
   /// [category] A categorisation of the issue, primarily for dividing warnings
   ///  into subject heading areas such as "Pregnancy and Lactation", "Overdose",
   ///  "Effects on Ability to Drive and Use Machines".
-  @override
   List<CodeableConcept>? get category;
+  @override
 
   /// [subject] The medication, product, substance, device, procedure etc. for
   ///  which this is an indication.
-  @override
   List<Reference>? get subject;
+  @override
 
   /// [status] Whether this is a current issue or one that has been retired etc.
-  @override
   CodeableConcept? get status;
+  @override
 
   /// [contraindication] Specifics for when this is a contraindication.
-  @override
   ClinicalUseDefinitionContraindication? get contraindication;
+  @override
 
   /// [indication] Specifics for when this is an indication.
-  @override
   ClinicalUseDefinitionIndication? get indication;
+  @override
 
   /// [interaction] Specifics for when this is an interaction.
-  @override
   ClinicalUseDefinitionInteraction? get interaction;
+  @override
 
   /// [population] The population group to which this applies.
-  @override
   List<Reference>? get population;
+  @override
 
   /// [library_] ("library") Logic used by the clinical use definition.
-  @override
   @JsonKey(name: 'library')
   List<FhirCanonical>? get library_;
+  @override
 
   /// [undesirableEffect] Describe the possible undesirable effects (negative
   ///  outcomes) from the use of the medicinal product as treatment.
-  @override
   ClinicalUseDefinitionUndesirableEffect? get undesirableEffect;
+  @override
 
   /// [warning] A critical piece of information about environmental, health or
   ///  physical risks or hazards that serve as caution to the user. For example
   ///  'Do not operate heavy machinery', 'May cause drowsiness', or 'Get medical
   ///  advice/attention if you feel unwell'.
-  @override
   ClinicalUseDefinitionWarning? get warning;
-
-  /// Create a copy of ClinicalUseDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ClinicalUseDefinitionImplCopyWith<_$ClinicalUseDefinitionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1272,12 +1244,8 @@ mixin _$ClinicalUseDefinitionContraindication {
   List<ClinicalUseDefinitionOtherTherapy>? get otherTherapy =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ClinicalUseDefinitionContraindication to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ClinicalUseDefinitionContraindication
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ClinicalUseDefinitionContraindicationCopyWith<
           ClinicalUseDefinitionContraindication>
       get copyWith => throw _privateConstructorUsedError;
@@ -1318,8 +1286,6 @@ class _$ClinicalUseDefinitionContraindicationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ClinicalUseDefinitionContraindication
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1373,8 +1339,6 @@ class _$ClinicalUseDefinitionContraindicationCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ClinicalUseDefinitionContraindication
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get diseaseSymptomProcedure {
@@ -1388,8 +1352,6 @@ class _$ClinicalUseDefinitionContraindicationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinitionContraindication
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get diseaseStatus {
@@ -1402,8 +1364,6 @@ class _$ClinicalUseDefinitionContraindicationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinitionContraindication
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirExpressionCopyWith<$Res>? get applicability {
@@ -1455,8 +1415,6 @@ class __$$ClinicalUseDefinitionContraindicationImplCopyWithImpl<$Res>
       $Res Function(_$ClinicalUseDefinitionContraindicationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ClinicalUseDefinitionContraindication
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1688,7 +1646,7 @@ class _$ClinicalUseDefinitionContraindicationImpl
                 .equals(other._otherTherapy, _otherTherapy));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1702,9 +1660,7 @@ class _$ClinicalUseDefinitionContraindicationImpl
       applicability,
       const DeepCollectionEquality().hash(_otherTherapy));
 
-  /// Create a copy of ClinicalUseDefinitionContraindication
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ClinicalUseDefinitionContraindicationImplCopyWith<
@@ -1739,10 +1695,12 @@ abstract class _ClinicalUseDefinitionContraindication
           Map<String, dynamic> json) =
       _$ClinicalUseDefinitionContraindicationImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1750,9 +1708,9 @@ abstract class _ClinicalUseDefinitionContraindication
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1766,42 +1724,38 @@ abstract class _ClinicalUseDefinitionContraindication
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [diseaseSymptomProcedure] The situation that is being documented as
   ///  contraindicating against this item.
-  @override
   CodeableReference? get diseaseSymptomProcedure;
+  @override
 
   /// [diseaseStatus] The status of the disease or symptom for the
   ///  contraindication, for example "chronic" or "metastatic".
-  @override
   CodeableReference? get diseaseStatus;
+  @override
 
   /// [comorbidity] A comorbidity (concurrent condition) or coinfection.
-  @override
   List<CodeableReference>? get comorbidity;
+  @override
 
   /// [indication] The indication which this is a contraidication for.
-  @override
   List<Reference>? get indication;
+  @override
 
   /// [applicability] An expression that returns true or false, indicating
   ///  whether the indication is applicable or not, after having applied its
   ///  other elements.
-  @override
   FhirExpression? get applicability;
+  @override
 
   /// [otherTherapy] Information about the use of the medicinal product in
   ///  relation to other therapies described as part of the contraindication.
-  @override
   List<ClinicalUseDefinitionOtherTherapy>? get otherTherapy;
-
-  /// Create a copy of ClinicalUseDefinitionContraindication
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ClinicalUseDefinitionContraindicationImplCopyWith<
           _$ClinicalUseDefinitionContraindicationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1851,12 +1805,8 @@ mixin _$ClinicalUseDefinitionOtherTherapy {
   ///  indication or contraindication.
   CodeableReference get treatment => throw _privateConstructorUsedError;
 
-  /// Serializes this ClinicalUseDefinitionOtherTherapy to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ClinicalUseDefinitionOtherTherapy
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ClinicalUseDefinitionOtherTherapyCopyWith<ClinicalUseDefinitionOtherTherapy>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1891,8 +1841,6 @@ class _$ClinicalUseDefinitionOtherTherapyCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ClinicalUseDefinitionOtherTherapy
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1926,8 +1874,6 @@ class _$ClinicalUseDefinitionOtherTherapyCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ClinicalUseDefinitionOtherTherapy
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get relationshipType {
@@ -1936,8 +1882,6 @@ class _$ClinicalUseDefinitionOtherTherapyCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinitionOtherTherapy
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res> get treatment {
@@ -1979,8 +1923,6 @@ class __$$ClinicalUseDefinitionOtherTherapyImplCopyWithImpl<$Res>
       $Res Function(_$ClinicalUseDefinitionOtherTherapyImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ClinicalUseDefinitionOtherTherapy
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2130,7 +2072,7 @@ class _$ClinicalUseDefinitionOtherTherapyImpl
                 other.treatment == treatment));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2140,9 +2082,7 @@ class _$ClinicalUseDefinitionOtherTherapyImpl
       relationshipType,
       treatment);
 
-  /// Create a copy of ClinicalUseDefinitionOtherTherapy
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ClinicalUseDefinitionOtherTherapyImplCopyWith<
@@ -2173,10 +2113,12 @@ abstract class _ClinicalUseDefinitionOtherTherapy
           Map<String, dynamic> json) =
       _$ClinicalUseDefinitionOtherTherapyImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2184,9 +2126,9 @@ abstract class _ClinicalUseDefinitionOtherTherapy
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2200,24 +2142,20 @@ abstract class _ClinicalUseDefinitionOtherTherapy
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [relationshipType] The type of relationship between the medicinal product
   ///  indication or contraindication and another therapy.
-  @override
   CodeableConcept get relationshipType;
+  @override
 
   /// [treatment] Reference to a specific medication (active substance, medicinal
   ///  product or class of products, biological, food etc.) as part of an
   ///  indication or contraindication.
-  @override
   CodeableReference get treatment;
-
-  /// Create a copy of ClinicalUseDefinitionOtherTherapy
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ClinicalUseDefinitionOtherTherapyImplCopyWith<
           _$ClinicalUseDefinitionOtherTherapyImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2307,12 +2245,8 @@ mixin _$ClinicalUseDefinitionIndication {
   List<ClinicalUseDefinitionOtherTherapy>? get otherTherapy =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ClinicalUseDefinitionIndication to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ClinicalUseDefinitionIndication
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ClinicalUseDefinitionIndicationCopyWith<ClinicalUseDefinitionIndication>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2358,8 +2292,6 @@ class _$ClinicalUseDefinitionIndicationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ClinicalUseDefinitionIndication
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2433,8 +2365,6 @@ class _$ClinicalUseDefinitionIndicationCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ClinicalUseDefinitionIndication
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get diseaseSymptomProcedure {
@@ -2448,8 +2378,6 @@ class _$ClinicalUseDefinitionIndicationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinitionIndication
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get diseaseStatus {
@@ -2462,8 +2390,6 @@ class _$ClinicalUseDefinitionIndicationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinitionIndication
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get intendedEffect {
@@ -2476,8 +2402,6 @@ class _$ClinicalUseDefinitionIndicationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinitionIndication
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get durationRange {
@@ -2490,8 +2414,6 @@ class _$ClinicalUseDefinitionIndicationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinitionIndication
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirExpressionCopyWith<$Res>? get applicability {
@@ -2551,8 +2473,6 @@ class __$$ClinicalUseDefinitionIndicationImplCopyWithImpl<$Res>
       $Res Function(_$ClinicalUseDefinitionIndicationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ClinicalUseDefinitionIndication
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2846,7 +2766,7 @@ class _$ClinicalUseDefinitionIndicationImpl
                 .equals(other._otherTherapy, _otherTherapy));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2864,9 +2784,7 @@ class _$ClinicalUseDefinitionIndicationImpl
       applicability,
       const DeepCollectionEquality().hash(_otherTherapy));
 
-  /// Create a copy of ClinicalUseDefinitionIndication
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ClinicalUseDefinitionIndicationImplCopyWith<
@@ -2905,10 +2823,12 @@ abstract class _ClinicalUseDefinitionIndication
   factory _ClinicalUseDefinitionIndication.fromJson(Map<String, dynamic> json) =
       _$ClinicalUseDefinitionIndicationImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2916,9 +2836,9 @@ abstract class _ClinicalUseDefinitionIndication
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2932,68 +2852,64 @@ abstract class _ClinicalUseDefinitionIndication
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [diseaseSymptomProcedure] The situation that is being documented as an
   ///  indicaton for this item.
-  @override
   CodeableReference? get diseaseSymptomProcedure;
+  @override
 
   /// [diseaseStatus] The status of the disease or symptom for the indication,
   ///  for example "chronic" or "metastatic".
-  @override
   CodeableReference? get diseaseStatus;
+  @override
 
   /// [comorbidity] A comorbidity (concurrent condition) or coinfection as part
   ///  of the indication.
-  @override
   List<CodeableReference>? get comorbidity;
+  @override
 
   /// [intendedEffect] The intended effect, aim or strategy to be achieved.
-  @override
   CodeableReference? get intendedEffect;
+  @override
 
   /// [durationRange] Timing or duration information, that may be associated with
   ///  use with the indicated condition e.g. Adult patients suffering from
   ///  myocardial infarction (from a few days until less than 35 days), ischaemic
   ///  stroke (from 7 days until less than 6 months).
-  @override
   Range? get durationRange;
+  @override
 
   /// [durationString] Timing or duration information, that may be associated
   ///  with use with the indicated condition e.g. Adult patients suffering from
   ///  myocardial infarction (from a few days until less than 35 days), ischaemic
   ///  stroke (from 7 days until less than 6 months).
-  @override
   String? get durationString;
+  @override
 
   /// [durationStringElement] ("_durationString") Extensions for durationString
-  @override
   @JsonKey(name: '_durationString')
   PrimitiveElement? get durationStringElement;
+  @override
 
   /// [undesirableEffect] An unwanted side effect or negative outcome that may
   ///  happen if you use the drug (or other subject of this resource) for this
   ///  indication.
-  @override
   List<Reference>? get undesirableEffect;
+  @override
 
   /// [applicability] An expression that returns true or false, indicating
   ///  whether the indication is applicable or not, after having applied its
   ///  other elements.
-  @override
   FhirExpression? get applicability;
+  @override
 
   /// [otherTherapy] Information about the use of the medicinal product in
   ///  relation to other therapies described as part of the indication.
-  @override
   List<ClinicalUseDefinitionOtherTherapy>? get otherTherapy;
-
-  /// Create a copy of ClinicalUseDefinitionIndication
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ClinicalUseDefinitionIndicationImplCopyWith<
           _$ClinicalUseDefinitionIndicationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3053,12 +2969,8 @@ mixin _$ClinicalUseDefinitionInteraction {
   /// [management] Actions for managing the interaction.
   List<CodeableConcept>? get management => throw _privateConstructorUsedError;
 
-  /// Serializes this ClinicalUseDefinitionInteraction to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ClinicalUseDefinitionInteraction
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ClinicalUseDefinitionInteractionCopyWith<ClinicalUseDefinitionInteraction>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3097,8 +3009,6 @@ class _$ClinicalUseDefinitionInteractionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ClinicalUseDefinitionInteraction
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3147,8 +3057,6 @@ class _$ClinicalUseDefinitionInteractionCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ClinicalUseDefinitionInteraction
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -3161,8 +3069,6 @@ class _$ClinicalUseDefinitionInteractionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinitionInteraction
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get effect {
@@ -3175,8 +3081,6 @@ class _$ClinicalUseDefinitionInteractionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinitionInteraction
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get incidence {
@@ -3227,8 +3131,6 @@ class __$$ClinicalUseDefinitionInteractionImplCopyWithImpl<$Res>
       $Res Function(_$ClinicalUseDefinitionInteractionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ClinicalUseDefinitionInteraction
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3433,7 +3335,7 @@ class _$ClinicalUseDefinitionInteractionImpl
                 .equals(other._management, _management));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3446,9 +3348,7 @@ class _$ClinicalUseDefinitionInteractionImpl
       incidence,
       const DeepCollectionEquality().hash(_management));
 
-  /// Create a copy of ClinicalUseDefinitionInteraction
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ClinicalUseDefinitionInteractionImplCopyWith<
@@ -3482,10 +3382,12 @@ abstract class _ClinicalUseDefinitionInteraction
           Map<String, dynamic> json) =
       _$ClinicalUseDefinitionInteractionImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3493,9 +3395,9 @@ abstract class _ClinicalUseDefinitionInteraction
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3509,36 +3411,32 @@ abstract class _ClinicalUseDefinitionInteraction
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [interactant] The specific medication, product, food, substance etc. or
   ///  laboratory test that interacts.
-  @override
   List<ClinicalUseDefinitionInteractant>? get interactant;
+  @override
 
   /// [type] The type of the interaction e.g. drug-drug interaction, drug-food
   ///  interaction, drug-lab test interaction.
-  @override
   CodeableConcept? get type;
+  @override
 
   /// [effect] The effect of the interaction, for example "reduced gastric
   ///  absorption of primary medication".
-  @override
   CodeableReference? get effect;
+  @override
 
   /// [incidence] The incidence of the interaction, e.g. theoretical, observed.
-  @override
   CodeableConcept? get incidence;
+  @override
 
   /// [management] Actions for managing the interaction.
-  @override
   List<CodeableConcept>? get management;
-
-  /// Create a copy of ClinicalUseDefinitionInteraction
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ClinicalUseDefinitionInteractionImplCopyWith<
           _$ClinicalUseDefinitionInteractionImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3588,12 +3486,8 @@ mixin _$ClinicalUseDefinitionInteractant {
   CodeableConcept? get itemCodeableConcept =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ClinicalUseDefinitionInteractant to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ClinicalUseDefinitionInteractant
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ClinicalUseDefinitionInteractantCopyWith<ClinicalUseDefinitionInteractant>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3628,8 +3522,6 @@ class _$ClinicalUseDefinitionInteractantCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ClinicalUseDefinitionInteractant
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3663,8 +3555,6 @@ class _$ClinicalUseDefinitionInteractantCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ClinicalUseDefinitionInteractant
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get itemReference {
@@ -3677,8 +3567,6 @@ class _$ClinicalUseDefinitionInteractantCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinitionInteractant
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get itemCodeableConcept {
@@ -3724,8 +3612,6 @@ class __$$ClinicalUseDefinitionInteractantImplCopyWithImpl<$Res>
       $Res Function(_$ClinicalUseDefinitionInteractantImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ClinicalUseDefinitionInteractant
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3874,7 +3760,7 @@ class _$ClinicalUseDefinitionInteractantImpl
                 other.itemCodeableConcept == itemCodeableConcept));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3884,9 +3770,7 @@ class _$ClinicalUseDefinitionInteractantImpl
       itemReference,
       itemCodeableConcept);
 
-  /// Create a copy of ClinicalUseDefinitionInteractant
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ClinicalUseDefinitionInteractantImplCopyWith<
@@ -3917,10 +3801,12 @@ abstract class _ClinicalUseDefinitionInteractant
           Map<String, dynamic> json) =
       _$ClinicalUseDefinitionInteractantImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3928,9 +3814,9 @@ abstract class _ClinicalUseDefinitionInteractant
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3944,23 +3830,19 @@ abstract class _ClinicalUseDefinitionInteractant
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [itemReference] The specific medication, product, food, substance etc. or
   ///  laboratory test that interacts.
-  @override
   Reference? get itemReference;
+  @override
 
   /// [itemCodeableConcept] The specific medication, product, food, substance
   ///  etc. or laboratory test that interacts.
-  @override
   CodeableConcept? get itemCodeableConcept;
-
-  /// Create a copy of ClinicalUseDefinitionInteractant
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ClinicalUseDefinitionInteractantImplCopyWith<
           _$ClinicalUseDefinitionInteractantImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4014,12 +3896,8 @@ mixin _$ClinicalUseDefinitionUndesirableEffect {
   CodeableConcept? get frequencyOfOccurrence =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ClinicalUseDefinitionUndesirableEffect to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ClinicalUseDefinitionUndesirableEffect
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ClinicalUseDefinitionUndesirableEffectCopyWith<
           ClinicalUseDefinitionUndesirableEffect>
       get copyWith => throw _privateConstructorUsedError;
@@ -4057,8 +3935,6 @@ class _$ClinicalUseDefinitionUndesirableEffectCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ClinicalUseDefinitionUndesirableEffect
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4097,8 +3973,6 @@ class _$ClinicalUseDefinitionUndesirableEffectCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ClinicalUseDefinitionUndesirableEffect
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get symptomConditionEffect {
@@ -4112,8 +3986,6 @@ class _$ClinicalUseDefinitionUndesirableEffectCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinitionUndesirableEffect
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get classification {
@@ -4126,8 +3998,6 @@ class _$ClinicalUseDefinitionUndesirableEffectCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ClinicalUseDefinitionUndesirableEffect
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get frequencyOfOccurrence {
@@ -4177,8 +4047,6 @@ class __$$ClinicalUseDefinitionUndesirableEffectImplCopyWithImpl<$Res>
       $Res Function(_$ClinicalUseDefinitionUndesirableEffectImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ClinicalUseDefinitionUndesirableEffect
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4338,7 +4206,7 @@ class _$ClinicalUseDefinitionUndesirableEffectImpl
                 other.frequencyOfOccurrence == frequencyOfOccurrence));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4349,9 +4217,7 @@ class _$ClinicalUseDefinitionUndesirableEffectImpl
       classification,
       frequencyOfOccurrence);
 
-  /// Create a copy of ClinicalUseDefinitionUndesirableEffect
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ClinicalUseDefinitionUndesirableEffectImplCopyWith<
@@ -4384,10 +4250,12 @@ abstract class _ClinicalUseDefinitionUndesirableEffect
           Map<String, dynamic> json) =
       _$ClinicalUseDefinitionUndesirableEffectImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4395,9 +4263,9 @@ abstract class _ClinicalUseDefinitionUndesirableEffect
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4411,26 +4279,22 @@ abstract class _ClinicalUseDefinitionUndesirableEffect
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [symptomConditionEffect] The situation in which the undesirable effect may
   ///  manifest.
-  @override
   CodeableReference? get symptomConditionEffect;
+  @override
 
   /// [classification] High level classification of the effect.
-  @override
   CodeableConcept? get classification;
+  @override
 
   /// [frequencyOfOccurrence] How often the effect is seen.
-  @override
   CodeableConcept? get frequencyOfOccurrence;
-
-  /// Create a copy of ClinicalUseDefinitionUndesirableEffect
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ClinicalUseDefinitionUndesirableEffectImplCopyWith<
           _$ClinicalUseDefinitionUndesirableEffectImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4482,12 +4346,8 @@ mixin _$ClinicalUseDefinitionWarning {
   /// [code] A coded or unformatted textual definition of this warning.
   CodeableConcept? get code => throw _privateConstructorUsedError;
 
-  /// Serializes this ClinicalUseDefinitionWarning to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ClinicalUseDefinitionWarning
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ClinicalUseDefinitionWarningCopyWith<ClinicalUseDefinitionWarning>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4522,8 +4382,6 @@ class _$ClinicalUseDefinitionWarningCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ClinicalUseDefinitionWarning
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4562,8 +4420,6 @@ class _$ClinicalUseDefinitionWarningCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ClinicalUseDefinitionWarning
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -4608,8 +4464,6 @@ class __$$ClinicalUseDefinitionWarningImplCopyWithImpl<$Res>
       $Res Function(_$ClinicalUseDefinitionWarningImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ClinicalUseDefinitionWarning
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4767,7 +4621,7 @@ class _$ClinicalUseDefinitionWarningImpl extends _ClinicalUseDefinitionWarning {
             (identical(other.code, code) || other.code == code));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4778,9 +4632,7 @@ class _$ClinicalUseDefinitionWarningImpl extends _ClinicalUseDefinitionWarning {
       descriptionElement,
       code);
 
-  /// Create a copy of ClinicalUseDefinitionWarning
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ClinicalUseDefinitionWarningImplCopyWith<
@@ -4810,10 +4662,12 @@ abstract class _ClinicalUseDefinitionWarning
   factory _ClinicalUseDefinitionWarning.fromJson(Map<String, dynamic> json) =
       _$ClinicalUseDefinitionWarningImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4821,9 +4675,9 @@ abstract class _ClinicalUseDefinitionWarning
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4837,26 +4691,22 @@ abstract class _ClinicalUseDefinitionWarning
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [description] A textual definition of this warning, with formatting.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [code] A coded or unformatted textual definition of this warning.
-  @override
   CodeableConcept? get code;
-
-  /// Create a copy of ClinicalUseDefinitionWarning
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ClinicalUseDefinitionWarningImplCopyWith<
           _$ClinicalUseDefinitionWarningImpl>
       get copyWith => throw _privateConstructorUsedError;

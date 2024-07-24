@@ -141,12 +141,8 @@ mixin _$InventoryReport {
   /// [note] A note associated with the InventoryReport.
   List<Annotation>? get note => throw _privateConstructorUsedError;
 
-  /// Serializes this InventoryReport to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of InventoryReport
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $InventoryReportCopyWith<InventoryReport> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -203,8 +199,6 @@ class _$InventoryReportCopyWithImpl<$Res, $Val extends InventoryReport>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of InventoryReport
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -333,8 +327,6 @@ class _$InventoryReportCopyWithImpl<$Res, $Val extends InventoryReport>
     ) as $Val);
   }
 
-  /// Create a copy of InventoryReport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -347,8 +339,6 @@ class _$InventoryReportCopyWithImpl<$Res, $Val extends InventoryReport>
     });
   }
 
-  /// Create a copy of InventoryReport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -361,8 +351,6 @@ class _$InventoryReportCopyWithImpl<$Res, $Val extends InventoryReport>
     });
   }
 
-  /// Create a copy of InventoryReport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get operationType {
@@ -375,8 +363,6 @@ class _$InventoryReportCopyWithImpl<$Res, $Val extends InventoryReport>
     });
   }
 
-  /// Create a copy of InventoryReport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get operationTypeReason {
@@ -389,8 +375,6 @@ class _$InventoryReportCopyWithImpl<$Res, $Val extends InventoryReport>
     });
   }
 
-  /// Create a copy of InventoryReport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get reporter {
@@ -403,8 +387,6 @@ class _$InventoryReportCopyWithImpl<$Res, $Val extends InventoryReport>
     });
   }
 
-  /// Create a copy of InventoryReport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get reportingPeriod {
@@ -476,8 +458,6 @@ class __$$InventoryReportImplCopyWithImpl<$Res>
       _$InventoryReportImpl _value, $Res Function(_$InventoryReportImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of InventoryReport
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -920,7 +900,7 @@ class _$InventoryReportImpl extends _InventoryReport {
             const DeepCollectionEquality().equals(other._note, _note));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -950,9 +930,7 @@ class _$InventoryReportImpl extends _InventoryReport {
         const DeepCollectionEquality().hash(_note)
       ]);
 
-  /// Create a copy of InventoryReport
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$InventoryReportImplCopyWith<_$InventoryReportImpl> get copyWith =>
@@ -1001,42 +979,44 @@ abstract class _InventoryReport extends InventoryReport {
   factory _InventoryReport.fromJson(Map<String, dynamic> json) =
       _$InventoryReportImpl.fromJson;
 
-  /// [resourceType] This is a InventoryReport resource
   @override
+
+  /// [resourceType] This is a InventoryReport resource
   @JsonKey(unknownEnumValue: R5ResourceType.InventoryReport)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1044,16 +1024,16 @@ abstract class _InventoryReport extends InventoryReport {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1061,9 +1041,9 @@ abstract class _InventoryReport extends InventoryReport {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1077,74 +1057,70 @@ abstract class _InventoryReport extends InventoryReport {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] Business identifier for the InventoryReport.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [status] The status of the inventory check or notification - whether this
   ///  is draft (e.g. the report is still pending some updates) or active.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [countType] Whether the report is about the current inventory count
   ///  (snapshot) or a differential change in inventory (change).
-  @override
   FhirCode? get countType;
+  @override
 
   /// [countTypeElement] ("_countType") Extensions for countType
-  @override
   @JsonKey(name: '_countType')
   PrimitiveElement? get countTypeElement;
+  @override
 
   /// [operationType] What type of operation is being performed - addition or
   ///  subtraction.
-  @override
   CodeableConcept? get operationType;
+  @override
 
   /// [operationTypeReason] The reason for this count - regular count, ad-hoc
   ///  count, new arrivals, etc.
-  @override
   CodeableConcept? get operationTypeReason;
+  @override
 
   /// [reportedDateTime] When the report has been submitted.
-  @override
   FhirDateTime? get reportedDateTime;
+  @override
 
   /// [reportedDateTimeElement] ("_reportedDateTime") Extensions for
   ///  reportedDateTime
-  @override
   @JsonKey(name: '_reportedDateTime')
   PrimitiveElement? get reportedDateTimeElement;
+  @override
 
   /// [reporter] Who submits the report.
-  @override
   Reference? get reporter;
+  @override
 
   /// [reportingPeriod] The period the report refers to.
-  @override
   Period? get reportingPeriod;
+  @override
 
   /// [inventoryListing] An inventory listing section (grouped by any of the
   ///  attributes).
-  @override
   List<InventoryReportInventoryListing>? get inventoryListing;
+  @override
 
   /// [note] A note associated with the InventoryReport.
-  @override
   List<Annotation>? get note;
-
-  /// Create a copy of InventoryReport
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$InventoryReportImplCopyWith<_$InventoryReportImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1202,12 +1178,8 @@ mixin _$InventoryReportInventoryListing {
   /// [item] The item or items in this listing.
   List<InventoryReportItem>? get item => throw _privateConstructorUsedError;
 
-  /// Serializes this InventoryReportInventoryListing to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of InventoryReportInventoryListing
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $InventoryReportInventoryListingCopyWith<InventoryReportInventoryListing>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1246,8 +1218,6 @@ class _$InventoryReportInventoryListingCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of InventoryReportInventoryListing
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1296,8 +1266,6 @@ class _$InventoryReportInventoryListingCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of InventoryReportInventoryListing
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get location {
@@ -1310,8 +1278,6 @@ class _$InventoryReportInventoryListingCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of InventoryReportInventoryListing
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get itemStatus {
@@ -1361,8 +1327,6 @@ class __$$InventoryReportInventoryListingImplCopyWithImpl<$Res>
       $Res Function(_$InventoryReportInventoryListingImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of InventoryReportInventoryListing
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1557,7 +1521,7 @@ class _$InventoryReportInventoryListingImpl
             const DeepCollectionEquality().equals(other._item, _item));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1570,9 +1534,7 @@ class _$InventoryReportInventoryListingImpl
       countingDateTimeElement,
       const DeepCollectionEquality().hash(_item));
 
-  /// Create a copy of InventoryReportInventoryListing
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$InventoryReportInventoryListingImplCopyWith<
@@ -1606,10 +1568,12 @@ abstract class _InventoryReportInventoryListing
   factory _InventoryReportInventoryListing.fromJson(Map<String, dynamic> json) =
       _$InventoryReportInventoryListingImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1617,9 +1581,9 @@ abstract class _InventoryReportInventoryListing
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1633,35 +1597,31 @@ abstract class _InventoryReportInventoryListing
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [location] Location of the inventory items.
-  @override
   Reference? get location;
+  @override
 
   /// [itemStatus] The status of the items.
-  @override
   CodeableConcept? get itemStatus;
+  @override
 
   /// [countingDateTime] The date and time when the items were counted.
-  @override
   FhirDateTime? get countingDateTime;
+  @override
 
   /// [countingDateTimeElement] ("_countingDateTime") Extensions for
   ///  countingDateTime
-  @override
   @JsonKey(name: '_countingDateTime')
   PrimitiveElement? get countingDateTimeElement;
+  @override
 
   /// [item] The item or items in this listing.
-  @override
   List<InventoryReportItem>? get item;
-
-  /// Create a copy of InventoryReportInventoryListing
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$InventoryReportInventoryListingImplCopyWith<
           _$InventoryReportInventoryListingImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1712,12 +1672,8 @@ mixin _$InventoryReportItem {
   /// [item] The code or reference to the item type.
   CodeableReference get item => throw _privateConstructorUsedError;
 
-  /// Serializes this InventoryReportItem to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of InventoryReportItem
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $InventoryReportItemCopyWith<InventoryReportItem> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1751,8 +1707,6 @@ class _$InventoryReportItemCopyWithImpl<$Res, $Val extends InventoryReportItem>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of InventoryReportItem
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1791,8 +1745,6 @@ class _$InventoryReportItemCopyWithImpl<$Res, $Val extends InventoryReportItem>
     ) as $Val);
   }
 
-  /// Create a copy of InventoryReportItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get category {
@@ -1805,8 +1757,6 @@ class _$InventoryReportItemCopyWithImpl<$Res, $Val extends InventoryReportItem>
     });
   }
 
-  /// Create a copy of InventoryReportItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res> get quantity {
@@ -1815,8 +1765,6 @@ class _$InventoryReportItemCopyWithImpl<$Res, $Val extends InventoryReportItem>
     });
   }
 
-  /// Create a copy of InventoryReportItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res> get item {
@@ -1858,8 +1806,6 @@ class __$$InventoryReportItemImplCopyWithImpl<$Res>
       $Res Function(_$InventoryReportItemImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of InventoryReportItem
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2017,7 +1963,7 @@ class _$InventoryReportItemImpl extends _InventoryReportItem {
             (identical(other.item, item) || other.item == item));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2028,9 +1974,7 @@ class _$InventoryReportItemImpl extends _InventoryReportItem {
       quantity,
       item);
 
-  /// Create a copy of InventoryReportItem
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$InventoryReportItemImplCopyWith<_$InventoryReportItemImpl> get copyWith =>
@@ -2058,10 +2002,12 @@ abstract class _InventoryReportItem extends InventoryReportItem {
   factory _InventoryReportItem.fromJson(Map<String, dynamic> json) =
       _$InventoryReportItemImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2069,9 +2015,9 @@ abstract class _InventoryReportItem extends InventoryReportItem {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2085,27 +2031,23 @@ abstract class _InventoryReportItem extends InventoryReportItem {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [category] The inventory category or classification of the items being
   ///  reported. This is meant not for defining the product, but for inventory
   ///  categories e.g. 'pending recount' or 'damaged'.
-  @override
   CodeableConcept? get category;
+  @override
 
   /// [quantity] The quantity of the item or items being reported.
-  @override
   Quantity get quantity;
+  @override
 
   /// [item] The code or reference to the item type.
-  @override
   CodeableReference get item;
-
-  /// Create a copy of InventoryReportItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$InventoryReportItemImplCopyWith<_$InventoryReportItemImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -210,12 +210,8 @@ mixin _$Subscription {
   @JsonKey(name: '_maxCount')
   PrimitiveElement? get maxCountElement => throw _privateConstructorUsedError;
 
-  /// Serializes this Subscription to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Subscription
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubscriptionCopyWith<Subscription> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -284,8 +280,6 @@ class _$SubscriptionCopyWithImpl<$Res, $Val extends Subscription>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Subscription
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -484,8 +478,6 @@ class _$SubscriptionCopyWithImpl<$Res, $Val extends Subscription>
     ) as $Val);
   }
 
-  /// Create a copy of Subscription
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -498,8 +490,6 @@ class _$SubscriptionCopyWithImpl<$Res, $Val extends Subscription>
     });
   }
 
-  /// Create a copy of Subscription
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -512,8 +502,6 @@ class _$SubscriptionCopyWithImpl<$Res, $Val extends Subscription>
     });
   }
 
-  /// Create a copy of Subscription
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get managingEntity {
@@ -526,8 +514,6 @@ class _$SubscriptionCopyWithImpl<$Res, $Val extends Subscription>
     });
   }
 
-  /// Create a copy of Subscription
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res> get channelType {
@@ -605,8 +591,6 @@ class __$$SubscriptionImplCopyWithImpl<$Res>
       _$SubscriptionImpl _value, $Res Function(_$SubscriptionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Subscription
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1250,7 +1234,7 @@ class _$SubscriptionImpl extends _Subscription {
                 other.maxCountElement == maxCountElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1294,9 +1278,7 @@ class _$SubscriptionImpl extends _Subscription {
         maxCountElement
       ]);
 
-  /// Create a copy of Subscription
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubscriptionImplCopyWith<_$SubscriptionImpl> get copyWith =>
@@ -1359,42 +1341,44 @@ abstract class _Subscription extends Subscription {
   factory _Subscription.fromJson(Map<String, dynamic> json) =
       _$SubscriptionImpl.fromJson;
 
-  /// [resourceType] This is a Subscription resource
   @override
+
+  /// [resourceType] This is a Subscription resource
   @JsonKey(unknownEnumValue: R5ResourceType.Subscription)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1402,16 +1386,16 @@ abstract class _Subscription extends Subscription {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1419,9 +1403,9 @@ abstract class _Subscription extends Subscription {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1435,114 +1419,114 @@ abstract class _Subscription extends Subscription {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] A formal identifier that is used to identify this code system
   ///  when it is represented in other formats, or referenced in a specification,
   ///  model, design or an instance.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [name] A natural language name identifying the subscription.
-  @override
   String? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [status] The status of the subscription, which marks the server state for
   ///  managing the subscription.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [topic] The reference to the subscription topic to be notified about.
-  @override
   FhirCanonical get topic;
+  @override
 
   /// [contact] Contact details for a human to contact about the subscription.
   ///  The primary use of this for system administrator troubleshooting.
-  @override
   List<ContactPoint>? get contact;
+  @override
 
   /// [end] The time for the server to turn the subscription off.
-  @override
   FhirInstant? get end;
+  @override
 
   /// [endElement] ("_end") Extensions for end
-  @override
   @JsonKey(name: '_end')
   PrimitiveElement? get endElement;
+  @override
 
   /// [managingEntity] Entity with authorization to make subsequent revisions to
   ///  the Subscription and also determines what data the subscription is
   ///  authorized to disclose.
-  @override
   Reference? get managingEntity;
+  @override
 
   /// [reason] A description of why this subscription is defined.
-  @override
   String? get reason;
+  @override
 
   /// [reasonElement] ("_reason") Extensions for reason
-  @override
   @JsonKey(name: '_reason')
   PrimitiveElement? get reasonElement;
+  @override
 
   /// [filterBy] The filter properties to be applied to narrow the subscription
   ///  topic stream.  When multiple filters are applied, evaluates to true if all
   ///  the conditions applicable to that resource are met; otherwise it returns
   ///  false (i.e., logical AND).
-  @override
   List<SubscriptionFilterBy>? get filterBy;
+  @override
 
   /// [channelType] The type of channel to send notifications on.
-  @override
   Coding get channelType;
+  @override
 
   /// [endpoint] The url that describes the actual end-point to send
   ///  notifications to.
-  @override
   FhirUrl? get endpoint;
+  @override
 
   /// [endpointElement] ("_endpoint") Extensions for endpoint
-  @override
   @JsonKey(name: '_endpoint')
   PrimitiveElement? get endpointElement;
+  @override
 
   /// [parameter] Channel-dependent information to send as part of the
   ///  notification (e.g., HTTP Headers).
-  @override
   List<SubscriptionParameter>? get parameter;
+  @override
 
   /// [heartbeatPeriod] If present, a 'heartbeat' notification (keep-alive) is
   ///  sent via this channel with an interval period equal to this elements
   ///  integer value in seconds.  If not present, a heartbeat notification is not
   ///  sent.
-  @override
   FhirUnsignedInt? get heartbeatPeriod;
+  @override
 
   /// [heartbeatPeriodElement] ("_heartbeatPeriod") Extensions for heartbeatPeriod
-  @override
   @JsonKey(name: '_heartbeatPeriod')
   PrimitiveElement? get heartbeatPeriodElement;
+  @override
 
   /// [timeout] If present, the maximum amount of time a server will allow before
   ///  failing a notification attempt.
-  @override
   FhirUnsignedInt? get timeout;
+  @override
 
   /// [timeoutElement] ("_timeout") Extensions for timeout
-  @override
   @JsonKey(name: '_timeout')
   PrimitiveElement? get timeoutElement;
+  @override
 
   /// [contentType] The MIME type to send the payload in - e.g.,
   ///  `application/fhir+xml` or `application/fhir+json`. Note that:
@@ -1551,40 +1535,36 @@ abstract class _Subscription extends Subscription {
   /// `application/fhir+json; fhirVersion=4.0`.
   /// * additional MIME types can be allowed by channels - e.g., `text/plain` and
   /// `text/html` are defined by the Email channel.
-  @override
   FhirCode? get contentType;
+  @override
 
   /// [contentTypeElement] ("_contentType") Extensions for contentType
-  @override
   @JsonKey(name: '_contentType')
   PrimitiveElement? get contentTypeElement;
+  @override
 
   /// [content] How much of the resource content to deliver in the notification
   ///  payload. The choices are an empty payload, only the resource id, or the
   ///  full resource content.
-  @override
   FhirCode? get content;
+  @override
 
   /// [contentElement] ("_content") Extensions for content
-  @override
   @JsonKey(name: '_content')
   PrimitiveElement? get contentElement;
+  @override
 
   /// [maxCount] If present, the maximum number of events that will be included
   ///  in a notification bundle. Note that this is not a strict limit on the
   ///  number of entries in a bundle, as dependent resources can be included.
-  @override
   FhirPositiveInt? get maxCount;
+  @override
 
   /// [maxCountElement] ("_maxCount") Extensions for maxCount
-  @override
   @JsonKey(name: '_maxCount')
   PrimitiveElement? get maxCountElement;
-
-  /// Create a copy of Subscription
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubscriptionImplCopyWith<_$SubscriptionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1665,12 +1645,8 @@ mixin _$SubscriptionFilterBy {
   @JsonKey(name: '_value')
   PrimitiveElement? get valueElement => throw _privateConstructorUsedError;
 
-  /// Serializes this SubscriptionFilterBy to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubscriptionFilterBy
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubscriptionFilterByCopyWith<SubscriptionFilterBy> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1709,8 +1685,6 @@ class _$SubscriptionFilterByCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubscriptionFilterBy
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1818,8 +1792,6 @@ class __$$SubscriptionFilterByImplCopyWithImpl<$Res>
       $Res Function(_$SubscriptionFilterByImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubscriptionFilterBy
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2069,7 +2041,7 @@ class _$SubscriptionFilterByImpl extends _SubscriptionFilterBy {
                 other.valueElement == valueElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2087,9 +2059,7 @@ class _$SubscriptionFilterByImpl extends _SubscriptionFilterBy {
       value,
       valueElement);
 
-  /// Create a copy of SubscriptionFilterBy
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubscriptionFilterByImplCopyWith<_$SubscriptionFilterByImpl>
@@ -2128,10 +2098,12 @@ abstract class _SubscriptionFilterBy extends SubscriptionFilterBy {
   factory _SubscriptionFilterBy.fromJson(Map<String, dynamic> json) =
       _$SubscriptionFilterByImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2139,9 +2111,9 @@ abstract class _SubscriptionFilterBy extends SubscriptionFilterBy {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2155,63 +2127,59 @@ abstract class _SubscriptionFilterBy extends SubscriptionFilterBy {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [resourceType] A resource listed in the `SubscriptionTopic` this
   ///  `Subscription` references (`SubscriptionTopic.canFilterBy.resource`). This
   ///  element can be used to differentiate filters for topics that include more
   ///  than one resource type.
-  @override
   FhirUri? get resourceType;
+  @override
 
   /// [resourceTypeElement] ("_resourceType") Extensions for resourceType
-  @override
   @JsonKey(name: '_resourceType')
   PrimitiveElement? get resourceTypeElement;
+  @override
 
   /// [filterParameter] The filter as defined in the
   ///  `SubscriptionTopic.canFilterBy.filterParameter` element.
-  @override
   String? get filterParameter;
+  @override
 
   /// [filterParameterElement] ("_filterParameter") Extensions for filterParameter
-  @override
   @JsonKey(name: '_filterParameter')
   PrimitiveElement? get filterParameterElement;
+  @override
 
   /// [comparator] Comparator applied to this filter parameter.
-  @override
   FhirCode? get comparator;
+  @override
 
   /// [comparatorElement] ("_comparator") Extensions for comparator
-  @override
   @JsonKey(name: '_comparator')
   PrimitiveElement? get comparatorElement;
+  @override
 
   /// [modifier] Modifier applied to this filter parameter.
-  @override
   FhirCode? get modifier;
+  @override
 
   /// [modifierElement] ("_modifier") Extensions for modifier
-  @override
   @JsonKey(name: '_modifier')
   PrimitiveElement? get modifierElement;
+  @override
 
   /// [value] The literal value or resource path as is legal in search - for
   ///  example, `Patient/123` or `le1950`.
-  @override
   String? get value;
+  @override
 
   /// [valueElement] ("_value") Extensions for value
-  @override
   @JsonKey(name: '_value')
   PrimitiveElement? get valueElement;
-
-  /// Create a copy of SubscriptionFilterBy
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubscriptionFilterByImplCopyWith<_$SubscriptionFilterByImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2269,12 +2237,8 @@ mixin _$SubscriptionParameter {
   @JsonKey(name: '_value')
   PrimitiveElement? get valueElement => throw _privateConstructorUsedError;
 
-  /// Serializes this SubscriptionParameter to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubscriptionParameter
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubscriptionParameterCopyWith<SubscriptionParameter> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2306,8 +2270,6 @@ class _$SubscriptionParameterCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubscriptionParameter
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2380,8 +2342,6 @@ class __$$SubscriptionParameterImplCopyWithImpl<$Res>
       $Res Function(_$SubscriptionParameterImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubscriptionParameter
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2554,7 +2514,7 @@ class _$SubscriptionParameterImpl extends _SubscriptionParameter {
                 other.valueElement == valueElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2566,9 +2526,7 @@ class _$SubscriptionParameterImpl extends _SubscriptionParameter {
       value,
       valueElement);
 
-  /// Create a copy of SubscriptionParameter
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubscriptionParameterImplCopyWith<_$SubscriptionParameterImpl>
@@ -2598,10 +2556,12 @@ abstract class _SubscriptionParameter extends SubscriptionParameter {
   factory _SubscriptionParameter.fromJson(Map<String, dynamic> json) =
       _$SubscriptionParameterImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2609,9 +2569,9 @@ abstract class _SubscriptionParameter extends SubscriptionParameter {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2625,35 +2585,31 @@ abstract class _SubscriptionParameter extends SubscriptionParameter {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [name] Parameter name for information passed to the channel for
   ///  notifications, for example in the case of a REST hook wanting to pass
   ///  through an authorization header, the name would be Authorization.
-  @override
   String? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [value] Parameter value for information passed to the channel for
   ///  notifications, for example in the case of a REST hook wanting to pass
   ///  through an authorization header, the value would be `Bearer 0193...`.
-  @override
   String? get value;
+  @override
 
   /// [valueElement] ("_value") Extensions for value
-  @override
   @JsonKey(name: '_value')
   PrimitiveElement? get valueElement;
-
-  /// Create a copy of SubscriptionParameter
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubscriptionParameterImplCopyWith<_$SubscriptionParameterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -259,12 +259,8 @@ mixin _$Requirements {
   List<RequirementsStatement>? get statement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this Requirements to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Requirements
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $RequirementsCopyWith<Requirements> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -341,8 +337,6 @@ class _$RequirementsCopyWithImpl<$Res, $Val extends Requirements>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Requirements
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -586,8 +580,6 @@ class _$RequirementsCopyWithImpl<$Res, $Val extends Requirements>
     ) as $Val);
   }
 
-  /// Create a copy of Requirements
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -600,8 +592,6 @@ class _$RequirementsCopyWithImpl<$Res, $Val extends Requirements>
     });
   }
 
-  /// Create a copy of Requirements
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -614,8 +604,6 @@ class _$RequirementsCopyWithImpl<$Res, $Val extends Requirements>
     });
   }
 
-  /// Create a copy of Requirements
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get versionAlgorithmCoding {
@@ -704,8 +692,6 @@ class __$$RequirementsImplCopyWithImpl<$Res>
       _$RequirementsImpl _value, $Res Function(_$RequirementsImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Requirements
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1535,7 +1521,7 @@ class _$RequirementsImpl extends _Requirements {
                 .equals(other._statement, _statement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1588,9 +1574,7 @@ class _$RequirementsImpl extends _Requirements {
         const DeepCollectionEquality().hash(_statement)
       ]);
 
-  /// Create a copy of Requirements
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$RequirementsImplCopyWith<_$RequirementsImpl> get copyWith =>
@@ -1664,42 +1648,44 @@ abstract class _Requirements extends Requirements {
   factory _Requirements.fromJson(Map<String, dynamic> json) =
       _$RequirementsImpl.fromJson;
 
-  /// [resourceType] This is a Requirements resource
   @override
+
+  /// [resourceType] This is a Requirements resource
   @JsonKey(unknownEnumValue: R5ResourceType.Requirements)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1707,16 +1693,16 @@ abstract class _Requirements extends Requirements {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1724,9 +1710,9 @@ abstract class _Requirements extends Requirements {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1740,8 +1726,8 @@ abstract class _Requirements extends Requirements {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [url] An absolute URI that is used to identify this Requirements when it is
   ///  referenced in a specification, model, design or an instance; also called
@@ -1750,19 +1736,19 @@ abstract class _Requirements extends Requirements {
   ///  (or will be) published. This URL can be the target of a canonical
   ///  reference. It SHALL remain the same when the Requirements is stored on
   ///  different servers.
-  @override
   FhirUri? get url;
+  @override
 
   /// [urlElement] ("_url") Extensions for url
-  @override
   @JsonKey(name: '_url')
   PrimitiveElement? get urlElement;
+  @override
 
   /// [identifier] A formal identifier that is used to identify this Requirements
   ///  when it is represented in other formats, or referenced in a specification,
   ///  model, design or an instance.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [version] The identifier that is used to identify this version of the
   ///  Requirements when it is referenced in a specification, model, design or
@@ -1771,181 +1757,177 @@ abstract class _Requirements extends Requirements {
   ///  timestamp (e.g. yyyymmdd) if a managed version is not available. There is
   ///  also no expectation that versions can be placed in a lexicographical
   ///  sequence.
-  @override
   String? get version;
+  @override
 
   /// [versionElement] ("_version") Extensions for version
-  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
+  @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  @override
   String? get versionAlgorithmString;
+  @override
 
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
-  @override
   @JsonKey(name: '_versionAlgorithmString')
   PrimitiveElement? get versionAlgorithmStringElement;
+  @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  @override
   Coding? get versionAlgorithmCoding;
+  @override
 
   /// [name] A natural language name identifying the Requirements. This name
   ///  should be usable as an identifier for the module by machine processing
   ///  applications such as code generation.
-  @override
   String? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [title] A short, descriptive, user-friendly title for the Requirements.
-  @override
   String? get title;
+  @override
 
   /// [titleElement] ("_title") Extensions for title
-  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
+  @override
 
   /// [status] The status of this Requirements. Enables tracking the life-cycle
   ///  of the content.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [experimental] A Boolean value to indicate that this Requirements is
   ///  authored for testing purposes (or education/evaluation/marketing) and is
   ///  not intended to be used for genuine usage.
-  @override
   FhirBoolean? get experimental;
+  @override
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
-  @override
   @JsonKey(name: '_experimental')
   PrimitiveElement? get experimentalElement;
+  @override
 
   /// [date] The date  (and optionally time) when the Requirements was published.
   ///  The date must change when the business version changes and it must change
   ///  if the status code changes. In addition, it should change when the
   ///  substantive content of the Requirements changes.
-  @override
   FhirDateTime? get date;
+  @override
 
   /// [dateElement] ("_date") Extensions for date
-  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
+  @override
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the Requirements.
-  @override
   String? get publisher;
+  @override
 
   /// [publisherElement] ("_publisher") Extensions for publisher
-  @override
   @JsonKey(name: '_publisher')
   PrimitiveElement? get publisherElement;
+  @override
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
-  @override
   List<ContactDetail>? get contact;
+  @override
 
   /// [description] A free text natural language description of the requirements.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
   ///  categories (gender, age, ...) or may be references to specific programs
   ///  (insurance plans, studies, ...) and may be used to assist with indexing
   ///  and searching for appropriate Requirements instances.
-  @override
   List<UsageContext>? get useContext;
+  @override
 
   /// [jurisdiction] A legal or geographic region in which the Requirements is
   ///  intended to be used.
-  @override
   List<CodeableConcept>? get jurisdiction;
+  @override
 
   /// [purpose] Explanation of why this Requirements is needed and why it has
   ///  been designed as it has.
-  @override
   FhirMarkdown? get purpose;
+  @override
 
   /// [purposeElement] ("_purpose") Extensions for purpose
-  @override
   @JsonKey(name: '_purpose')
   PrimitiveElement? get purposeElement;
+  @override
 
   /// [copyright] A copyright statement relating to the Requirements and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
   ///  and publishing of the Requirements.
-  @override
   FhirMarkdown? get copyright;
+  @override
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
-  @override
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement;
+  @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
   ///  optionally whether rights are resctricted. (e.g. 'All rights reserved',
   ///  'Some rights reserved').
-  @override
   String? get copyrightLabel;
+  @override
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-  @override
   @JsonKey(name: '_copyrightLabel')
   PrimitiveElement? get copyrightLabelElement;
+  @override
 
   /// [derivedFrom] Another set of Requirements that this set of Requirements
   ///  builds on and updates.
-  @override
   List<FhirCanonical>? get derivedFrom;
+  @override
 
   /// [reference] A reference to another artifact that created this set of
   ///  requirements. This could be a Profile, etc., or external regulation, or
   ///  business requirements expressed elsewhere.
-  @override
   List<FhirUrl>? get reference;
+  @override
 
   /// [referenceElement] ("_reference") Extensions for reference
-  @override
   @JsonKey(name: '_reference')
   List<PrimitiveElement>? get referenceElement;
+  @override
 
   /// [actor] An actor these requirements are in regard to.
-  @override
   List<FhirCanonical>? get actor;
+  @override
 
   /// [statement] The actual statement of requirement, in markdown format.
-  @override
   List<RequirementsStatement>? get statement;
-
-  /// Create a copy of Requirements
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$RequirementsImplCopyWith<_$RequirementsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2068,12 +2050,8 @@ mixin _$RequirementsStatement {
   ///  assumed that the publisher knows who it is if it matters.
   List<Reference>? get source => throw _privateConstructorUsedError;
 
-  /// Serializes this RequirementsStatement to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of RequirementsStatement
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $RequirementsStatementCopyWith<RequirementsStatement> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2120,8 +2098,6 @@ class _$RequirementsStatementCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of RequirementsStatement
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2284,8 +2260,6 @@ class __$$RequirementsStatementImplCopyWithImpl<$Res>
       $Res Function(_$RequirementsStatementImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of RequirementsStatement
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2732,7 +2706,7 @@ class _$RequirementsStatementImpl extends _RequirementsStatement {
             const DeepCollectionEquality().equals(other._source, _source));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -2760,9 +2734,7 @@ class _$RequirementsStatementImpl extends _RequirementsStatement {
         const DeepCollectionEquality().hash(_source)
       ]);
 
-  /// Create a copy of RequirementsStatement
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$RequirementsStatementImplCopyWith<_$RequirementsStatementImpl>
@@ -2810,10 +2782,12 @@ abstract class _RequirementsStatement extends RequirementsStatement {
   factory _RequirementsStatement.fromJson(Map<String, dynamic> json) =
       _$RequirementsStatementImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2821,9 +2795,9 @@ abstract class _RequirementsStatement extends RequirementsStatement {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2837,109 +2811,105 @@ abstract class _RequirementsStatement extends RequirementsStatement {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [key] Key that identifies this statement (unique within this resource).
-  @override
   FhirId? get key;
+  @override
 
   /// [keyElement] ("_key") Extensions for key
-  @override
   @JsonKey(name: '_key')
   PrimitiveElement? get keyElement;
+  @override
 
   /// [label] A short human usable label for this statement.
-  @override
   String? get label;
+  @override
 
   /// [labelElement] ("_label") Extensions for label
-  @override
   @JsonKey(name: '_label')
   PrimitiveElement? get labelElement;
+  @override
 
   /// [conformance] A short human usable label for this statement.
-  @override
   List<FhirCode>? get conformance;
+  @override
 
   /// [conformanceElement] ("_conformance") Extensions for conformance
-  @override
   @JsonKey(name: '_conformance')
   List<PrimitiveElement>? get conformanceElement;
+  @override
 
   /// [conditionality] This boolean flag is set to true of the text of the
   ///  requirement is conditional on something e.g. it includes lanauage like 'if
   ///  x then y'. This conditionality flag is introduced for purposes of
   ///  filtering and colour highlighting etc.
-  @override
   FhirBoolean? get conditionality;
+  @override
 
   /// [conditionalityElement] ("_conditionality") Extensions for conditionality
-  @override
   @JsonKey(name: '_conditionality')
   PrimitiveElement? get conditionalityElement;
+  @override
 
   /// [requirement] The actual requirement for human consumption.
-  @override
   FhirMarkdown? get requirement;
+  @override
 
   /// [requirementElement] ("_requirement") Extensions for requirement
-  @override
   @JsonKey(name: '_requirement')
   PrimitiveElement? get requirementElement;
+  @override
 
   /// [derivedFrom] Another statement on one of the requirements that this
   ///  requirement clarifies or restricts.
-  @override
   String? get derivedFrom;
+  @override
 
   /// [derivedFromElement] ("_derivedFrom") Extensions for derivedFrom
-  @override
   @JsonKey(name: '_derivedFrom')
   PrimitiveElement? get derivedFromElement;
+  @override
 
   /// [parent] A larger requirement that this requirement helps to refine and
   ///  enable.
-  @override
   String? get parent;
+  @override
 
   /// [parentElement] ("_parent") Extensions for parent
-  @override
   @JsonKey(name: '_parent')
   PrimitiveElement? get parentElement;
+  @override
 
   /// [satisfiedBy] A reference to another artifact that satisfies this
   ///  requirement. This could be a Profile, extension, or an element in one of
   ///  those, or a CapabilityStatement, OperationDefinition, SearchParameter,
   ///  CodeSystem(/code), ValueSet, Libary etc.
-  @override
   List<FhirUrl>? get satisfiedBy;
+  @override
 
   /// [satisfiedByElement] ("_satisfiedBy") Extensions for satisfiedBy
-  @override
   @JsonKey(name: '_satisfiedBy')
   List<PrimitiveElement>? get satisfiedByElement;
+  @override
 
   /// [reference] A reference to another artifact that created this requirement.
   ///  This could be a Profile, etc., or external regulation, or business
   ///  requirements expressed elsewhere.
-  @override
   List<FhirUrl>? get reference;
+  @override
 
   /// [referenceElement] ("_reference") Extensions for reference
-  @override
   @JsonKey(name: '_reference')
   List<PrimitiveElement>? get referenceElement;
+  @override
 
   /// [source] Who asked for this statement to be a requirement. By default, it's
   ///  assumed that the publisher knows who it is if it matters.
-  @override
   List<Reference>? get source;
-
-  /// Create a copy of RequirementsStatement
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$RequirementsStatementImplCopyWith<_$RequirementsStatementImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

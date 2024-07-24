@@ -97,12 +97,8 @@ mixin _$RelatedArtifact {
   PrimitiveElement? get publicationDateElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this RelatedArtifact to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of RelatedArtifact
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $RelatedArtifactCopyWith<RelatedArtifact> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -149,8 +145,6 @@ class _$RelatedArtifactCopyWithImpl<$Res, $Val extends RelatedArtifact>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of RelatedArtifact
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -249,8 +243,6 @@ class _$RelatedArtifactCopyWithImpl<$Res, $Val extends RelatedArtifact>
     ) as $Val);
   }
 
-  /// Create a copy of RelatedArtifact
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get document {
@@ -263,8 +255,6 @@ class _$RelatedArtifactCopyWithImpl<$Res, $Val extends RelatedArtifact>
     });
   }
 
-  /// Create a copy of RelatedArtifact
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get resourceReference {
@@ -322,8 +312,6 @@ class __$$RelatedArtifactImplCopyWithImpl<$Res>
       _$RelatedArtifactImpl _value, $Res Function(_$RelatedArtifactImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of RelatedArtifact
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -613,7 +601,7 @@ class _$RelatedArtifactImpl extends _RelatedArtifact {
                 other.publicationDateElement == publicationDateElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -636,9 +624,7 @@ class _$RelatedArtifactImpl extends _RelatedArtifact {
       publicationDate,
       publicationDateElement);
 
-  /// Create a copy of RelatedArtifact
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$RelatedArtifactImplCopyWith<_$RelatedArtifactImpl> get copyWith =>
@@ -680,10 +666,12 @@ abstract class _RelatedArtifact extends RelatedArtifact {
   factory _RelatedArtifact.fromJson(Map<String, dynamic> json) =
       _$RelatedArtifactImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -691,92 +679,88 @@ abstract class _RelatedArtifact extends RelatedArtifact {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [type] The type of relationship to the related artifact.
-  @override
   RelatedArtifactType? get type;
+  @override
 
   /// [typeElement] ("_type") Extensions for type
-  @override
   @JsonKey(name: '_type')
   PrimitiveElement? get typeElement;
+  @override
 
   /// [classifier] Provides additional classifiers of the related artifact.
-  @override
   List<CodeableConcept>? get classifier;
+  @override
 
   /// [label] A short label that can be used to reference the citation from
   ///  elsewhere in the containing artifact, such as a footnote index.
-  @override
   String? get label;
+  @override
 
   /// [labelElement] ("_label") Extensions for label
-  @override
   @JsonKey(name: '_label')
   PrimitiveElement? get labelElement;
+  @override
 
   /// [display] A brief description of the document or knowledge resource being
   ///  referenced, suitable for display to a consumer.
-  @override
   String? get display;
+  @override
 
   /// [displayElement] ("_display") Extensions for display
-  @override
   @JsonKey(name: '_display')
   PrimitiveElement? get displayElement;
+  @override
 
   /// [citation] A bibliographic citation for the related artifact. This text
   ///  SHOULD be formatted according to an accepted citation format.
-  @override
   FhirMarkdown? get citation;
+  @override
 
   /// [citationElement] ("_citation") Extensions for citation
-  @override
   @JsonKey(name: '_citation')
   PrimitiveElement? get citationElement;
+  @override
 
   /// [document] The document being referenced, represented as an attachment.
   ///  This is exclusive with the resource element.
-  @override
   Attachment? get document;
+  @override
 
   /// [resource] The related artifact, such as a library, value set, profile, or
   ///  other knowledge resource.
-  @override
   FhirCanonical? get resource;
+  @override
 
   /// [resourceReference] The related artifact, if the artifact is not a
   ///  canonical resource, or a resource reference to a canonical resource.
-  @override
   Reference? get resourceReference;
+  @override
 
   /// [publicationStatus] The publication status of the artifact being referred
   ///  to.
-  @override
   FhirCode? get publicationStatus;
+  @override
 
   /// [publicationStatusElement] ("_publicationStatus") Extensions for
   ///  publicationStatus
-  @override
   @JsonKey(name: '_publicationStatus')
   PrimitiveElement? get publicationStatusElement;
+  @override
 
   /// [publicationDate] The date of publication of the artifact being referred to.
-  @override
   FhirDate? get publicationDate;
+  @override
 
   /// [publicationDateElement] ("_publicationDate") Extensions for publicationDate
-  @override
   @JsonKey(name: '_publicationDate')
   PrimitiveElement? get publicationDateElement;
-
-  /// Create a copy of RelatedArtifact
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$RelatedArtifactImplCopyWith<_$RelatedArtifactImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

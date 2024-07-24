@@ -233,12 +233,8 @@ mixin _$Encounter {
   ///  encounter.
   List<EncounterLocation>? get location => throw _privateConstructorUsedError;
 
-  /// Serializes this Encounter to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Encounter
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $EncounterCopyWith<Encounter> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -316,8 +312,6 @@ class _$EncounterCopyWithImpl<$Res, $Val extends Encounter>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Encounter
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -536,8 +530,6 @@ class _$EncounterCopyWithImpl<$Res, $Val extends Encounter>
     ) as $Val);
   }
 
-  /// Create a copy of Encounter
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -550,8 +542,6 @@ class _$EncounterCopyWithImpl<$Res, $Val extends Encounter>
     });
   }
 
-  /// Create a copy of Encounter
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -564,8 +554,6 @@ class _$EncounterCopyWithImpl<$Res, $Val extends Encounter>
     });
   }
 
-  /// Create a copy of Encounter
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get priority {
@@ -578,8 +566,6 @@ class _$EncounterCopyWithImpl<$Res, $Val extends Encounter>
     });
   }
 
-  /// Create a copy of Encounter
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get subject {
@@ -592,8 +578,6 @@ class _$EncounterCopyWithImpl<$Res, $Val extends Encounter>
     });
   }
 
-  /// Create a copy of Encounter
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get subjectStatus {
@@ -606,8 +590,6 @@ class _$EncounterCopyWithImpl<$Res, $Val extends Encounter>
     });
   }
 
-  /// Create a copy of Encounter
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get partOf {
@@ -620,8 +602,6 @@ class _$EncounterCopyWithImpl<$Res, $Val extends Encounter>
     });
   }
 
-  /// Create a copy of Encounter
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get serviceProvider {
@@ -634,8 +614,6 @@ class _$EncounterCopyWithImpl<$Res, $Val extends Encounter>
     });
   }
 
-  /// Create a copy of Encounter
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get actualPeriod {
@@ -648,8 +626,6 @@ class _$EncounterCopyWithImpl<$Res, $Val extends Encounter>
     });
   }
 
-  /// Create a copy of Encounter
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get length {
@@ -662,8 +638,6 @@ class _$EncounterCopyWithImpl<$Res, $Val extends Encounter>
     });
   }
 
-  /// Create a copy of Encounter
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $EncounterAdmissionCopyWith<$Res>? get admission {
@@ -761,8 +735,6 @@ class __$$EncounterImplCopyWithImpl<$Res>
       _$EncounterImpl _value, $Res Function(_$EncounterImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Encounter
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1604,7 +1576,7 @@ class _$EncounterImpl extends _Encounter {
             const DeepCollectionEquality().equals(other._location, _location));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1652,9 +1624,7 @@ class _$EncounterImpl extends _Encounter {
         const DeepCollectionEquality().hash(_location)
       ]);
 
-  /// Create a copy of Encounter
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$EncounterImplCopyWith<_$EncounterImpl> get copyWith =>
@@ -1724,38 +1694,39 @@ abstract class _Encounter extends Encounter {
   @override
   @JsonKey(unknownEnumValue: R5ResourceType.Encounter)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1763,16 +1734,16 @@ abstract class _Encounter extends Encounter {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1780,9 +1751,9 @@ abstract class _Encounter extends Encounter {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1796,55 +1767,55 @@ abstract class _Encounter extends Encounter {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] Identifier(s) by which this encounter is known.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [status] The current state of the encounter (not the state of the patient
   ///  within the encounter - that is subjectState).
-  @override
   EncounterStatus? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [class_] ("class") Concepts representing classification of patient
   ///  encounter such as ambulatory (outpatient), inpatient, emergency, home
   ///  health or others due to local variations.
-  @override
   @JsonKey(name: 'class')
   List<CodeableConcept>? get class_;
+  @override
 
   /// [priority] Indicates the urgency of the encounter.
-  @override
   CodeableConcept? get priority;
+  @override
 
   /// [type] Specific type of encounter (e.g. e-mail consultation, surgical
   ///  day-care, skilled nursing, rehabilitation).
-  @override
   List<CodeableConcept>? get type;
+  @override
 
   /// [serviceType] Broad categorization of the service that is to be provided
   ///  (e.g. cardiology).
-  @override
   List<CodeableReference>? get serviceType;
+  @override
 
   /// [subject] The patient or group related to this encounter. In some use-cases
   ///  the patient MAY not be present, such as a case meeting about a patient
   ///  between several practitioners or a careteam.
-  @override
   Reference? get subject;
+  @override
 
   /// [subjectStatus] The subjectStatus value can be used to track the patient's
   ///  status within the encounter. It details whether the patient has arrived or
   ///  departed, has been triaged or is currently in a waiting status.
-  @override
   CodeableConcept? get subjectStatus;
+  @override
 
   /// [episodeOfCare] Where a specific encounter should be classified as a part
   ///  of a specific episode(s) of care this field should be used. This
@@ -1854,24 +1825,24 @@ abstract class _Encounter extends Encounter {
   ///  encounter as these are typically created after the episode of care and
   ///  grouped on entry rather than editing the episode of care to append another
   ///  encounter to it (the episode of care could span years).
-  @override
   List<Reference>? get episodeOfCare;
+  @override
 
   /// [basedOn] The request this encounter satisfies (e.g. incoming referral or
   ///  procedure request).
-  @override
   List<Reference>? get basedOn;
+  @override
 
   /// [careTeam] The group(s) of individuals, organizations that are allocated to
   ///  participate in this encounter. The participants backbone will record the
   ///  actuals of when these individuals participated during the encounter.
-  @override
   List<Reference>? get careTeam;
+  @override
 
   /// [partOf] Another Encounter of which this encounter is a part of
   ///  (administratively or in time).
-  @override
   Reference? get partOf;
+  @override
 
   /// [serviceProvider] The organization that is primarily responsible for this
   ///  Encounter's services. This MAY be the same as the organization on the
@@ -1879,97 +1850,93 @@ abstract class _Encounter extends Encounter {
   ///  performing the services was from an external organization (which may be
   ///  billed seperately) for an external consultation.  Refer to the colonoscopy
   ///  example on the Encounter examples tab.
-  @override
   Reference? get serviceProvider;
+  @override
 
   /// [participant] The list of people responsible for providing the service.
-  @override
   List<EncounterParticipant>? get participant;
+  @override
 
   /// [appointment] The appointment that scheduled this encounter.
-  @override
   List<Reference>? get appointment;
+  @override
 
   /// [virtualService] Connection details of a virtual service (e.g. conference
   ///  call).
-  @override
   List<VirtualServiceDetail>? get virtualService;
+  @override
 
   /// [actualPeriod] The actual start and end time of the encounter.
-  @override
   Period? get actualPeriod;
+  @override
 
   /// [plannedStartDate] The planned start date/time (or admission date) of the
   ///  encounter.
-  @override
   FhirDateTime? get plannedStartDate;
+  @override
 
   /// [plannedStartDateElement] ("_plannedStartDate") Extensions for
   ///  plannedStartDate
-  @override
   @JsonKey(name: '_plannedStartDate')
   PrimitiveElement? get plannedStartDateElement;
+  @override
 
   /// [plannedEndDate] The planned end date/time (or discharge date) of the
   ///  encounter.
-  @override
   FhirDateTime? get plannedEndDate;
+  @override
 
   /// [plannedEndDateElement] ("_plannedEndDate") Extensions for plannedEndDate
-  @override
   @JsonKey(name: '_plannedEndDate')
   PrimitiveElement? get plannedEndDateElement;
+  @override
 
   /// [length] Actual quantity of time the encounter lasted. This excludes the
   ///  time during leaves of absence. When missing it is the time in between the
   ///  start and end values.
-  @override
   FhirDuration? get length;
+  @override
 
   /// [reason] The list of medical reasons that are expected to be addressed
   ///  during the episode of care.
-  @override
   List<EncounterReason>? get reason;
+  @override
 
   /// [diagnosis] The list of diagnosis relevant to this encounter.
-  @override
   List<EncounterDiagnosis>? get diagnosis;
+  @override
 
   /// [account] The set of accounts that may be used for billing for this
   ///  Encounter.
-  @override
   List<Reference>? get account;
+  @override
 
   /// [dietPreference] Diet preferences reported by the patient.
-  @override
   List<CodeableConcept>? get dietPreference;
+  @override
 
   /// [specialArrangement] Any special requests that have been made for this
   ///  encounter, such as the provision of specific equipment or other things.
-  @override
   List<CodeableConcept>? get specialArrangement;
+  @override
 
   /// [specialCourtesy] Special courtesies that may be provided to the patient
   ///  during the encounter (VIP, board member, professional courtesy).
-  @override
   List<CodeableConcept>? get specialCourtesy;
+  @override
 
   /// [admission] Details about the stay during which a healthcare service is
   ///  provided. This does not describe the event of admitting the patient, but
   ///  rather any information that is relevant from the time of admittance until
   ///  the time of discharge.
-  @override
   EncounterAdmission? get admission;
+  @override
 
   /// [location] List of locations where  the patient has been during this
   ///  encounter.
-  @override
   List<EncounterLocation>? get location;
-
-  /// Create a copy of Encounter
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$EncounterImplCopyWith<_$EncounterImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2022,12 +1989,8 @@ mixin _$EncounterParticipant {
   ///  case meeting between practitioners about a patient - non contact times.
   Reference? get actor => throw _privateConstructorUsedError;
 
-  /// Serializes this EncounterParticipant to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of EncounterParticipant
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $EncounterParticipantCopyWith<EncounterParticipant> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2061,8 +2024,6 @@ class _$EncounterParticipantCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of EncounterParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2101,8 +2062,6 @@ class _$EncounterParticipantCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of EncounterParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get period {
@@ -2115,8 +2074,6 @@ class _$EncounterParticipantCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of EncounterParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get actor {
@@ -2160,8 +2117,6 @@ class __$$EncounterParticipantImplCopyWithImpl<$Res>
       $Res Function(_$EncounterParticipantImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of EncounterParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2330,7 +2285,7 @@ class _$EncounterParticipantImpl extends _EncounterParticipant {
             (identical(other.actor, actor) || other.actor == actor));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2341,9 +2296,7 @@ class _$EncounterParticipantImpl extends _EncounterParticipant {
       period,
       actor);
 
-  /// Create a copy of EncounterParticipant
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$EncounterParticipantImplCopyWith<_$EncounterParticipantImpl>
@@ -2372,10 +2325,12 @@ abstract class _EncounterParticipant extends EncounterParticipant {
   factory _EncounterParticipant.fromJson(Map<String, dynamic> json) =
       _$EncounterParticipantImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2383,9 +2338,9 @@ abstract class _EncounterParticipant extends EncounterParticipant {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2399,30 +2354,26 @@ abstract class _EncounterParticipant extends EncounterParticipant {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] Role of participant in encounter.
-  @override
   List<CodeableConcept>? get type;
+  @override
 
   /// [period] The period of time that the specified participant participated in
   ///  the encounter. These can overlap or be sub-sets of the overall encounter's
   ///  period.
-  @override
   Period? get period;
+  @override
 
   /// [actor] Person involved in the encounter, the patient/group is also
   ///  included here to indicate that the patient was actually participating in
   ///  the encounter. Not including the patient here covers use cases such as a
   ///  case meeting between practitioners about a patient - non contact times.
-  @override
   Reference? get actor;
-
-  /// Create a copy of EncounterParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$EncounterParticipantImplCopyWith<_$EncounterParticipantImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2470,12 +2421,8 @@ mixin _$EncounterReason {
   ///  coded admission diagnosis.
   List<CodeableReference>? get value => throw _privateConstructorUsedError;
 
-  /// Serializes this EncounterReason to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of EncounterReason
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $EncounterReasonCopyWith<EncounterReason> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2504,8 +2451,6 @@ class _$EncounterReasonCopyWithImpl<$Res, $Val extends EncounterReason>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of EncounterReason
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2564,8 +2509,6 @@ class __$$EncounterReasonImplCopyWithImpl<$Res>
       _$EncounterReasonImpl _value, $Res Function(_$EncounterReasonImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of EncounterReason
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2734,7 +2677,7 @@ class _$EncounterReasonImpl extends _EncounterReason {
             const DeepCollectionEquality().equals(other._value, _value));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2744,9 +2687,7 @@ class _$EncounterReasonImpl extends _EncounterReason {
       const DeepCollectionEquality().hash(_use),
       const DeepCollectionEquality().hash(_value));
 
-  /// Create a copy of EncounterReason
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$EncounterReasonImplCopyWith<_$EncounterReasonImpl> get copyWith =>
@@ -2773,10 +2714,12 @@ abstract class _EncounterReason extends EncounterReason {
   factory _EncounterReason.fromJson(Map<String, dynamic> json) =
       _$EncounterReasonImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2784,9 +2727,9 @@ abstract class _EncounterReason extends EncounterReason {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2800,24 +2743,20 @@ abstract class _EncounterReason extends EncounterReason {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [use] What the reason value should be used as e.g. Chief Complaint, Health
   ///  Concern, Health Maintenance (including screening).
-  @override
   List<CodeableConcept>? get use;
+  @override
 
   /// [value] Reason the encounter takes place, expressed as a code or a
   ///  reference to another resource. For admissions, this can be used for a
   ///  coded admission diagnosis.
-  @override
   List<CodeableReference>? get value;
-
-  /// Create a copy of EncounterReason
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$EncounterReasonImplCopyWith<_$EncounterReasonImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2865,12 +2804,8 @@ mixin _$EncounterDiagnosis {
   ///  billing, discharge …).
   List<CodeableConcept>? get use => throw _privateConstructorUsedError;
 
-  /// Serializes this EncounterDiagnosis to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of EncounterDiagnosis
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $EncounterDiagnosisCopyWith<EncounterDiagnosis> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2899,8 +2834,6 @@ class _$EncounterDiagnosisCopyWithImpl<$Res, $Val extends EncounterDiagnosis>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of EncounterDiagnosis
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2959,8 +2892,6 @@ class __$$EncounterDiagnosisImplCopyWithImpl<$Res>
       $Res Function(_$EncounterDiagnosisImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of EncounterDiagnosis
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3130,7 +3061,7 @@ class _$EncounterDiagnosisImpl extends _EncounterDiagnosis {
             const DeepCollectionEquality().equals(other._use, _use));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3140,9 +3071,7 @@ class _$EncounterDiagnosisImpl extends _EncounterDiagnosis {
       const DeepCollectionEquality().hash(_condition),
       const DeepCollectionEquality().hash(_use));
 
-  /// Create a copy of EncounterDiagnosis
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$EncounterDiagnosisImplCopyWith<_$EncounterDiagnosisImpl> get copyWith =>
@@ -3169,10 +3098,12 @@ abstract class _EncounterDiagnosis extends EncounterDiagnosis {
   factory _EncounterDiagnosis.fromJson(Map<String, dynamic> json) =
       _$EncounterDiagnosisImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3180,9 +3111,9 @@ abstract class _EncounterDiagnosis extends EncounterDiagnosis {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3196,24 +3127,20 @@ abstract class _EncounterDiagnosis extends EncounterDiagnosis {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [condition] The coded diagnosis or a reference to a Condition (with other
   ///  resources referenced in the evidence.detail), the use property will
   ///  indicate the purpose of this specific diagnosis.
-  @override
   List<CodeableReference>? get condition;
+  @override
 
   /// [use] Role that this diagnosis has within the encounter (e.g. admission,
   ///  billing, discharge …).
-  @override
   List<CodeableConcept>? get use;
-
-  /// Create a copy of EncounterDiagnosis
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$EncounterDiagnosisImplCopyWith<_$EncounterDiagnosisImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3275,12 +3202,8 @@ mixin _$EncounterAdmission {
   CodeableConcept? get dischargeDisposition =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this EncounterAdmission to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of EncounterAdmission
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $EncounterAdmissionCopyWith<EncounterAdmission> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3320,8 +3243,6 @@ class _$EncounterAdmissionCopyWithImpl<$Res, $Val extends EncounterAdmission>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of EncounterAdmission
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3375,8 +3296,6 @@ class _$EncounterAdmissionCopyWithImpl<$Res, $Val extends EncounterAdmission>
     ) as $Val);
   }
 
-  /// Create a copy of EncounterAdmission
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get preAdmissionIdentifier {
@@ -3389,8 +3308,6 @@ class _$EncounterAdmissionCopyWithImpl<$Res, $Val extends EncounterAdmission>
     });
   }
 
-  /// Create a copy of EncounterAdmission
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get origin {
@@ -3403,8 +3320,6 @@ class _$EncounterAdmissionCopyWithImpl<$Res, $Val extends EncounterAdmission>
     });
   }
 
-  /// Create a copy of EncounterAdmission
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get admitSource {
@@ -3417,8 +3332,6 @@ class _$EncounterAdmissionCopyWithImpl<$Res, $Val extends EncounterAdmission>
     });
   }
 
-  /// Create a copy of EncounterAdmission
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get reAdmission {
@@ -3431,8 +3344,6 @@ class _$EncounterAdmissionCopyWithImpl<$Res, $Val extends EncounterAdmission>
     });
   }
 
-  /// Create a copy of EncounterAdmission
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get destination {
@@ -3445,8 +3356,6 @@ class _$EncounterAdmissionCopyWithImpl<$Res, $Val extends EncounterAdmission>
     });
   }
 
-  /// Create a copy of EncounterAdmission
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get dischargeDisposition {
@@ -3502,8 +3411,6 @@ class __$$EncounterAdmissionImplCopyWithImpl<$Res>
       $Res Function(_$EncounterAdmissionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of EncounterAdmission
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3699,7 +3606,7 @@ class _$EncounterAdmissionImpl extends _EncounterAdmission {
                 other.dischargeDisposition == dischargeDisposition));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3713,9 +3620,7 @@ class _$EncounterAdmissionImpl extends _EncounterAdmission {
       destination,
       dischargeDisposition);
 
-  /// Create a copy of EncounterAdmission
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$EncounterAdmissionImplCopyWith<_$EncounterAdmissionImpl> get copyWith =>
@@ -3746,10 +3651,12 @@ abstract class _EncounterAdmission extends EncounterAdmission {
   factory _EncounterAdmission.fromJson(Map<String, dynamic> json) =
       _$EncounterAdmissionImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3757,9 +3664,9 @@ abstract class _EncounterAdmission extends EncounterAdmission {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3773,41 +3680,37 @@ abstract class _EncounterAdmission extends EncounterAdmission {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [preAdmissionIdentifier] Pre-admission identifier.
-  @override
   Identifier? get preAdmissionIdentifier;
+  @override
 
   /// [origin] The location/organization from which the patient came before
   ///  admission.
-  @override
   Reference? get origin;
+  @override
 
   /// [admitSource] From where patient was admitted (physician referral,
   ///  transfer).
-  @override
   CodeableConcept? get admitSource;
+  @override
 
   /// [reAdmission] Indicates that this encounter is directly related to a prior
   ///  admission, often because the conditions addressed in the prior admission
   ///  were not fully addressed.
-  @override
   CodeableConcept? get reAdmission;
+  @override
 
   /// [destination] Location/organization to which the patient is discharged.
-  @override
   Reference? get destination;
+  @override
 
   /// [dischargeDisposition] Category or kind of location after discharge.
-  @override
   CodeableConcept? get dischargeDisposition;
-
-  /// Create a copy of EncounterAdmission
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$EncounterAdmissionImplCopyWith<_$EncounterAdmissionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3866,12 +3769,8 @@ mixin _$EncounterLocation {
   /// [period] Time period during which the patient was present at the location.
   Period? get period => throw _privateConstructorUsedError;
 
-  /// Serializes this EncounterLocation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of EncounterLocation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $EncounterLocationCopyWith<EncounterLocation> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3907,8 +3806,6 @@ class _$EncounterLocationCopyWithImpl<$Res, $Val extends EncounterLocation>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of EncounterLocation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3957,8 +3854,6 @@ class _$EncounterLocationCopyWithImpl<$Res, $Val extends EncounterLocation>
     ) as $Val);
   }
 
-  /// Create a copy of EncounterLocation
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get location {
@@ -3967,8 +3862,6 @@ class _$EncounterLocationCopyWithImpl<$Res, $Val extends EncounterLocation>
     });
   }
 
-  /// Create a copy of EncounterLocation
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get form {
@@ -3981,8 +3874,6 @@ class _$EncounterLocationCopyWithImpl<$Res, $Val extends EncounterLocation>
     });
   }
 
-  /// Create a copy of EncounterLocation
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get period {
@@ -4030,8 +3921,6 @@ class __$$EncounterLocationImplCopyWithImpl<$Res>
       $Res Function(_$EncounterLocationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of EncounterLocation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4214,7 +4103,7 @@ class _$EncounterLocationImpl extends _EncounterLocation {
             (identical(other.period, period) || other.period == period));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4227,9 +4116,7 @@ class _$EncounterLocationImpl extends _EncounterLocation {
       form,
       period);
 
-  /// Create a copy of EncounterLocation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$EncounterLocationImplCopyWith<_$EncounterLocationImpl> get copyWith =>
@@ -4259,10 +4146,12 @@ abstract class _EncounterLocation extends EncounterLocation {
   factory _EncounterLocation.fromJson(Map<String, dynamic> json) =
       _$EncounterLocationImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4270,9 +4159,9 @@ abstract class _EncounterLocation extends EncounterLocation {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4286,38 +4175,34 @@ abstract class _EncounterLocation extends EncounterLocation {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [location] The location where the encounter takes place.
-  @override
   Reference get location;
+  @override
 
   /// [status] The status of the participants' presence at the specified location
   ///  during the period specified. If the participant is no longer at the
   ///  location, then the period will have an end date/time.
-  @override
   EncounterLocationStatus? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [form] This will be used to specify the required levels
   ///  (bed/ward/room/etc.) desired to be recorded to simplify either messaging
   ///  or query.
-  @override
   CodeableConcept? get form;
+  @override
 
   /// [period] Time period during which the patient was present at the location.
-  @override
   Period? get period;
-
-  /// Create a copy of EncounterLocation
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$EncounterLocationImplCopyWith<_$EncounterLocationImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -308,12 +308,8 @@ mixin _$TerminologyCapabilities {
   TerminologyCapabilitiesClosure? get closure =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this TerminologyCapabilities to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TerminologyCapabilities
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TerminologyCapabilitiesCopyWith<TerminologyCapabilities> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -405,8 +401,6 @@ class _$TerminologyCapabilitiesCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TerminologyCapabilities
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -690,8 +684,6 @@ class _$TerminologyCapabilitiesCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of TerminologyCapabilities
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -704,8 +696,6 @@ class _$TerminologyCapabilitiesCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of TerminologyCapabilities
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -718,8 +708,6 @@ class _$TerminologyCapabilitiesCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of TerminologyCapabilities
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get versionAlgorithmCoding {
@@ -732,8 +720,6 @@ class _$TerminologyCapabilitiesCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of TerminologyCapabilities
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TerminologyCapabilitiesSoftwareCopyWith<$Res>? get software {
@@ -747,8 +733,6 @@ class _$TerminologyCapabilitiesCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of TerminologyCapabilities
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TerminologyCapabilitiesImplementationCopyWith<$Res>? get implementation {
@@ -762,8 +746,6 @@ class _$TerminologyCapabilitiesCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of TerminologyCapabilities
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TerminologyCapabilitiesExpansionCopyWith<$Res>? get expansion {
@@ -777,8 +759,6 @@ class _$TerminologyCapabilitiesCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of TerminologyCapabilities
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TerminologyCapabilitiesValidateCodeCopyWith<$Res>? get validateCode {
@@ -792,8 +772,6 @@ class _$TerminologyCapabilitiesCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of TerminologyCapabilities
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TerminologyCapabilitiesTranslationCopyWith<$Res>? get translation {
@@ -807,8 +785,6 @@ class _$TerminologyCapabilitiesCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of TerminologyCapabilities
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TerminologyCapabilitiesClosureCopyWith<$Res>? get closure {
@@ -921,8 +897,6 @@ class __$$TerminologyCapabilitiesImplCopyWithImpl<$Res>
       $Res Function(_$TerminologyCapabilitiesImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TerminologyCapabilities
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1817,7 +1791,7 @@ class _$TerminologyCapabilitiesImpl extends _TerminologyCapabilities {
             (identical(other.closure, closure) || other.closure == closure));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1878,9 +1852,7 @@ class _$TerminologyCapabilitiesImpl extends _TerminologyCapabilities {
         closure
       ]);
 
-  /// Create a copy of TerminologyCapabilities
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TerminologyCapabilitiesImplCopyWith<_$TerminologyCapabilitiesImpl>
@@ -1963,42 +1935,44 @@ abstract class _TerminologyCapabilities extends TerminologyCapabilities {
   factory _TerminologyCapabilities.fromJson(Map<String, dynamic> json) =
       _$TerminologyCapabilitiesImpl.fromJson;
 
-  /// [resourceType] This is a TerminologyCapabilities resource
   @override
+
+  /// [resourceType] This is a TerminologyCapabilities resource
   @JsonKey(unknownEnumValue: R5ResourceType.TerminologyCapabilities)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -2006,16 +1980,16 @@ abstract class _TerminologyCapabilities extends TerminologyCapabilities {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -2023,9 +1997,9 @@ abstract class _TerminologyCapabilities extends TerminologyCapabilities {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -2039,8 +2013,8 @@ abstract class _TerminologyCapabilities extends TerminologyCapabilities {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [url] An absolute URI that is used to identify this terminology
   ///  capabilities when it is referenced in a specification, model, design or an
@@ -2049,19 +2023,19 @@ abstract class _TerminologyCapabilities extends TerminologyCapabilities {
   ///  of this terminology capabilities is (or will be) published. This URL can
   ///  be the target of a canonical reference. It SHALL remain the same when the
   ///  terminology capabilities is stored on different servers.
-  @override
   FhirUri? get url;
+  @override
 
   /// [urlElement] ("_url") Extensions for url
-  @override
   @JsonKey(name: '_url')
   PrimitiveElement? get urlElement;
+  @override
 
   /// [identifier] A formal identifier that is used to identify this terminology
   ///  capabilities when it is represented in other formats, or referenced in a
   ///  specification, model, design or an instance.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [version] The identifier that is used to identify this version of the
   ///  terminology capabilities when it is referenced in a specification, model,
@@ -2070,232 +2044,228 @@ abstract class _TerminologyCapabilities extends TerminologyCapabilities {
   ///  example, it might be a timestamp (e.g. yyyymmdd) if a managed version is
   ///  not available. There is also no expectation that versions can be placed in
   ///  a lexicographical sequence.
-  @override
   String? get version;
+  @override
 
   /// [versionElement] ("_version") Extensions for version
-  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
+  @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  @override
   String? get versionAlgorithmString;
+  @override
 
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
-  @override
   @JsonKey(name: '_versionAlgorithmString')
   PrimitiveElement? get versionAlgorithmStringElement;
+  @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  @override
   Coding? get versionAlgorithmCoding;
+  @override
 
   /// [name] A natural language name identifying the terminology capabilities.
   ///  This name should be usable as an identifier for the module by machine
   ///  processing applications such as code generation.
-  @override
   String? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [title] A short, descriptive, user-friendly title for the terminology
   ///  capabilities.
-  @override
   String? get title;
+  @override
 
   /// [titleElement] ("_title") Extensions for title
-  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
+  @override
 
   /// [status] The status of this terminology capabilities. Enables tracking the
   ///  life-cycle of the content.
-  @override
   PublicationStatus? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [experimental] A Boolean value to indicate that this terminology
   ///  capabilities is authored for testing purposes (or
   ///  education/evaluation/marketing) and is not intended to be used for genuine
   ///  usage.
-  @override
   FhirBoolean? get experimental;
+  @override
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
-  @override
   @JsonKey(name: '_experimental')
   PrimitiveElement? get experimentalElement;
+  @override
 
   /// [date] The date  (and optionally time) when the terminology capabilities
   ///  was last significantly changed. The date must change when the business
   ///  version changes and it must change if the status code changes. In
   ///  addition, it should change when the substantive content of the terminology
   ///  capabilities changes.
-  @override
   FhirDateTime? get date;
+  @override
 
   /// [dateElement] ("_date") Extensions for date
-  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
+  @override
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the terminology capabilities.
-  @override
   String? get publisher;
+  @override
 
   /// [publisherElement] ("_publisher") Extensions for publisher
-  @override
   @JsonKey(name: '_publisher')
   PrimitiveElement? get publisherElement;
+  @override
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
-  @override
   List<ContactDetail>? get contact;
+  @override
 
   /// [description] A free text natural language description of the terminology
   ///  capabilities from a consumer's perspective. Typically, this is used when
   ///  the capability statement describes a desired rather than an actual
   ///  solution, for example as a formal expression of requirements as part of an
   ///  RFP.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
   ///  categories (gender, age, ...) or may be references to specific programs
   ///  (insurance plans, studies, ...) and may be used to assist with indexing
   ///  and searching for appropriate terminology capabilities instances.
-  @override
   List<UsageContext>? get useContext;
+  @override
 
   /// [jurisdiction] A legal or geographic region in which the terminology
   ///  capabilities is intended to be used.
-  @override
   List<CodeableConcept>? get jurisdiction;
+  @override
 
   /// [purpose] Explanation of why this terminology capabilities is needed and
   ///  why it has been designed as it has.
-  @override
   FhirMarkdown? get purpose;
+  @override
 
   /// [purposeElement] ("_purpose") Extensions for purpose
-  @override
   @JsonKey(name: '_purpose')
   PrimitiveElement? get purposeElement;
+  @override
 
   /// [copyright] A copyright statement relating to the terminology capabilities
   ///  and/or its contents. Copyright statements are generally legal restrictions
   ///  on the use and publishing of the terminology capabilities.
-  @override
   FhirMarkdown? get copyright;
+  @override
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
-  @override
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement;
+  @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
   ///  optionally whether rights are resctricted. (e.g. 'All rights reserved',
   ///  'Some rights reserved').
-  @override
   String? get copyrightLabel;
+  @override
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-  @override
   @JsonKey(name: '_copyrightLabel')
   PrimitiveElement? get copyrightLabelElement;
+  @override
 
   /// [kind] The way that this statement is intended to be used, to describe an
   ///  actual running instance of software, a particular product (kind, not
   ///  instance of software) or a class of implementation (e.g. a desired
   ///  purchase).
-  @override
   FhirCode? get kind;
+  @override
 
   /// [kindElement] ("_kind") Extensions for kind
-  @override
   @JsonKey(name: '_kind')
   PrimitiveElement? get kindElement;
+  @override
 
   /// [software] Software that is covered by this terminology capability
   ///  statement.  It is used when the statement describes the capabilities of a
   ///  particular software version, independent of an installation.
-  @override
   TerminologyCapabilitiesSoftware? get software;
+  @override
 
   /// [implementation] Identifies a specific implementation instance that is
   ///  described by the terminology capability statement - i.e. a particular
   ///  installation, rather than the capabilities of a software program.
-  @override
   TerminologyCapabilitiesImplementation? get implementation;
+  @override
 
   /// [lockedDate] Whether the server supports lockedDate.
-  @override
   FhirBoolean? get lockedDate;
+  @override
 
   /// [lockedDateElement] ("_lockedDate") Extensions for lockedDate
-  @override
   @JsonKey(name: '_lockedDate')
   PrimitiveElement? get lockedDateElement;
+  @override
 
   /// [codeSystem] Identifies a code system that is supported by the server. If
   ///  there is a no code system URL, then this declares the general assumptions
   ///  a client can make about support for any CodeSystem resource.
-  @override
   List<TerminologyCapabilitiesCodeSystem>? get codeSystem;
+  @override
 
   /// [expansion] Information about the
   ///  [ValueSet/$expand](valueset-operation-expand.html) operation.
-  @override
   TerminologyCapabilitiesExpansion? get expansion;
+  @override
 
   /// [codeSearch] The degree to which the server supports the code search
   ///  parameter on ValueSet, if it is supported.
-  @override
   FhirCode? get codeSearch;
+  @override
 
   /// [codeSearchElement] ("_codeSearch") Extensions for codeSearch
-  @override
   @JsonKey(name: '_codeSearch')
   PrimitiveElement? get codeSearchElement;
+  @override
 
   /// [validateCode] Information about the
   ///  [ValueSet/$validate-code](valueset-operation-validate-code.html) operation.
-  @override
   TerminologyCapabilitiesValidateCode? get validateCode;
+  @override
 
   /// [translation] Information about the
   ///  [ConceptMap/$translate](conceptmap-operation-translate.html) operation.
-  @override
   TerminologyCapabilitiesTranslation? get translation;
+  @override
 
   /// [closure] Whether the $closure operation is supported.
-  @override
   TerminologyCapabilitiesClosure? get closure;
-
-  /// Create a copy of TerminologyCapabilities
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TerminologyCapabilitiesImplCopyWith<_$TerminologyCapabilitiesImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2349,12 +2319,8 @@ mixin _$TerminologyCapabilitiesSoftware {
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement => throw _privateConstructorUsedError;
 
-  /// Serializes this TerminologyCapabilitiesSoftware to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TerminologyCapabilitiesSoftware
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TerminologyCapabilitiesSoftwareCopyWith<TerminologyCapabilitiesSoftware>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2388,8 +2354,6 @@ class _$TerminologyCapabilitiesSoftwareCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TerminologyCapabilitiesSoftware
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2463,8 +2427,6 @@ class __$$TerminologyCapabilitiesSoftwareImplCopyWithImpl<$Res>
       $Res Function(_$TerminologyCapabilitiesSoftwareImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TerminologyCapabilitiesSoftware
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2635,7 +2597,7 @@ class _$TerminologyCapabilitiesSoftwareImpl
                 other.versionElement == versionElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2647,9 +2609,7 @@ class _$TerminologyCapabilitiesSoftwareImpl
       version,
       versionElement);
 
-  /// Create a copy of TerminologyCapabilitiesSoftware
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TerminologyCapabilitiesSoftwareImplCopyWith<
@@ -2681,10 +2641,12 @@ abstract class _TerminologyCapabilitiesSoftware
   factory _TerminologyCapabilitiesSoftware.fromJson(Map<String, dynamic> json) =
       _$TerminologyCapabilitiesSoftwareImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2692,9 +2654,9 @@ abstract class _TerminologyCapabilitiesSoftware
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2708,31 +2670,27 @@ abstract class _TerminologyCapabilitiesSoftware
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [name] Name the software is known by.
-  @override
   String? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [version] The version identifier for the software covered by this statement.
-  @override
   String? get version;
+  @override
 
   /// [versionElement] ("_version") Extensions for version
-  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
-
-  /// Create a copy of TerminologyCapabilitiesSoftware
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TerminologyCapabilitiesSoftwareImplCopyWith<
           _$TerminologyCapabilitiesSoftwareImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2789,12 +2747,8 @@ mixin _$TerminologyCapabilitiesImplementation {
   @JsonKey(name: '_url')
   PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
-  /// Serializes this TerminologyCapabilitiesImplementation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TerminologyCapabilitiesImplementation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TerminologyCapabilitiesImplementationCopyWith<
           TerminologyCapabilitiesImplementation>
       get copyWith => throw _privateConstructorUsedError;
@@ -2829,8 +2783,6 @@ class _$TerminologyCapabilitiesImplementationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TerminologyCapabilitiesImplementation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2904,8 +2856,6 @@ class __$$TerminologyCapabilitiesImplementationImplCopyWithImpl<$Res>
       $Res Function(_$TerminologyCapabilitiesImplementationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TerminologyCapabilitiesImplementation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3078,7 +3028,7 @@ class _$TerminologyCapabilitiesImplementationImpl
                 other.urlElement == urlElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3090,9 +3040,7 @@ class _$TerminologyCapabilitiesImplementationImpl
       url,
       urlElement);
 
-  /// Create a copy of TerminologyCapabilitiesImplementation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TerminologyCapabilitiesImplementationImplCopyWith<
@@ -3126,10 +3074,12 @@ abstract class _TerminologyCapabilitiesImplementation
           Map<String, dynamic> json) =
       _$TerminologyCapabilitiesImplementationImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3137,9 +3087,9 @@ abstract class _TerminologyCapabilitiesImplementation
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3153,32 +3103,28 @@ abstract class _TerminologyCapabilitiesImplementation
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [description] Information about the specific installation that this
   ///  terminology capability statement relates to.
-  @override
   String? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [url] An absolute base URL for the implementation.
-  @override
   FhirUrl? get url;
+  @override
 
   /// [urlElement] ("_url") Extensions for url
-  @override
   @JsonKey(name: '_url')
   PrimitiveElement? get urlElement;
-
-  /// Create a copy of TerminologyCapabilitiesImplementation
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TerminologyCapabilitiesImplementationImplCopyWith<
           _$TerminologyCapabilitiesImplementationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3244,12 +3190,8 @@ mixin _$TerminologyCapabilitiesCodeSystem {
   PrimitiveElement? get subsumptionElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this TerminologyCapabilitiesCodeSystem to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TerminologyCapabilitiesCodeSystem
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TerminologyCapabilitiesCodeSystemCopyWith<TerminologyCapabilitiesCodeSystem>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3285,8 +3227,6 @@ class _$TerminologyCapabilitiesCodeSystemCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TerminologyCapabilitiesCodeSystem
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3372,8 +3312,6 @@ class __$$TerminologyCapabilitiesCodeSystemImplCopyWithImpl<$Res>
       $Res Function(_$TerminologyCapabilitiesCodeSystemImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TerminologyCapabilitiesCodeSystem
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3581,7 +3519,7 @@ class _$TerminologyCapabilitiesCodeSystemImpl
                 other.subsumptionElement == subsumptionElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3595,9 +3533,7 @@ class _$TerminologyCapabilitiesCodeSystemImpl
       subsumption,
       subsumptionElement);
 
-  /// Create a copy of TerminologyCapabilitiesCodeSystem
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TerminologyCapabilitiesCodeSystemImplCopyWith<
@@ -3633,10 +3569,12 @@ abstract class _TerminologyCapabilitiesCodeSystem
           Map<String, dynamic> json) =
       _$TerminologyCapabilitiesCodeSystemImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3644,9 +3582,9 @@ abstract class _TerminologyCapabilitiesCodeSystem
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3660,42 +3598,38 @@ abstract class _TerminologyCapabilitiesCodeSystem
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [uri] Canonical identifier for the code system, represented as a URI.
-  @override
   FhirCanonical? get uri;
+  @override
 
   /// [version] For the code system, a list of versions that are supported by the
   ///  server.
-  @override
   List<TerminologyCapabilitiesVersion>? get version;
+  @override
 
   /// [content] The extent of the content of the code system (the concepts and
   ///  codes it defines) are represented in this resource instance.
-  @override
   FhirCode? get content;
+  @override
 
   /// [contentElement] ("_content") Extensions for content
-  @override
   @JsonKey(name: '_content')
   PrimitiveElement? get contentElement;
+  @override
 
   /// [subsumption] True if subsumption is supported for this version of the code
   ///  system.
-  @override
   FhirBoolean? get subsumption;
+  @override
 
   /// [subsumptionElement] ("_subsumption") Extensions for subsumption
-  @override
   @JsonKey(name: '_subsumption')
   PrimitiveElement? get subsumptionElement;
-
-  /// Create a copy of TerminologyCapabilitiesCodeSystem
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TerminologyCapabilitiesCodeSystemImplCopyWith<
           _$TerminologyCapabilitiesCodeSystemImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3780,12 +3714,8 @@ mixin _$TerminologyCapabilitiesVersion {
   List<PrimitiveElement>? get propertyElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this TerminologyCapabilitiesVersion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TerminologyCapabilitiesVersion
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TerminologyCapabilitiesVersionCopyWith<TerminologyCapabilitiesVersion>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3826,8 +3756,6 @@ class _$TerminologyCapabilitiesVersionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TerminologyCapabilitiesVersion
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3943,8 +3871,6 @@ class __$$TerminologyCapabilitiesVersionImplCopyWithImpl<$Res>
       $Res Function(_$TerminologyCapabilitiesVersionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TerminologyCapabilitiesVersion
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4253,7 +4179,7 @@ class _$TerminologyCapabilitiesVersionImpl
                 .equals(other._propertyElement, _propertyElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4272,9 +4198,7 @@ class _$TerminologyCapabilitiesVersionImpl
       const DeepCollectionEquality().hash(_property),
       const DeepCollectionEquality().hash(_propertyElement));
 
-  /// Create a copy of TerminologyCapabilitiesVersion
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TerminologyCapabilitiesVersionImplCopyWith<
@@ -4315,10 +4239,12 @@ abstract class _TerminologyCapabilitiesVersion
   factory _TerminologyCapabilitiesVersion.fromJson(Map<String, dynamic> json) =
       _$TerminologyCapabilitiesVersionImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4326,9 +4252,9 @@ abstract class _TerminologyCapabilitiesVersion
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4342,64 +4268,60 @@ abstract class _TerminologyCapabilitiesVersion
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [code] For version-less code systems, there should be a single version with
   ///  no identifier.
-  @override
   String? get code;
+  @override
 
   /// [codeElement] ("_code") Extensions for code
-  @override
   @JsonKey(name: '_code')
   PrimitiveElement? get codeElement;
+  @override
 
   /// [isDefault] If this is the default version for this code system.
-  @override
   FhirBoolean? get isDefault;
+  @override
 
   /// [isDefaultElement] ("_isDefault") Extensions for isDefault
-  @override
   @JsonKey(name: '_isDefault')
   PrimitiveElement? get isDefaultElement;
+  @override
 
   /// [compositional] If the compositional grammar defined by the code system is
   ///  supported.
-  @override
   FhirBoolean? get compositional;
+  @override
 
   /// [compositionalElement] ("_compositional") Extensions for compositional
-  @override
   @JsonKey(name: '_compositional')
   PrimitiveElement? get compositionalElement;
+  @override
 
   /// [language] Language Displays supported.
-  @override
   List<FhirCode>? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   List<PrimitiveElement>? get languageElement;
+  @override
 
   /// [filter] Filter Properties supported.
-  @override
   List<TerminologyCapabilitiesFilter>? get filter;
+  @override
 
   /// [property] Properties supported for $lookup.
-  @override
   List<FhirCode>? get property;
+  @override
 
   /// [propertyElement] ("_property") Extensions for property
-  @override
   @JsonKey(name: '_property')
   List<PrimitiveElement>? get propertyElement;
-
-  /// Create a copy of TerminologyCapabilitiesVersion
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TerminologyCapabilitiesVersionImplCopyWith<
           _$TerminologyCapabilitiesVersionImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4454,12 +4376,8 @@ mixin _$TerminologyCapabilitiesFilter {
   @JsonKey(name: '_op')
   List<PrimitiveElement>? get opElement => throw _privateConstructorUsedError;
 
-  /// Serializes this TerminologyCapabilitiesFilter to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TerminologyCapabilitiesFilter
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TerminologyCapabilitiesFilterCopyWith<TerminologyCapabilitiesFilter>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4493,8 +4411,6 @@ class _$TerminologyCapabilitiesFilterCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TerminologyCapabilitiesFilter
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4568,8 +4484,6 @@ class __$$TerminologyCapabilitiesFilterImplCopyWithImpl<$Res>
       $Res Function(_$TerminologyCapabilitiesFilterImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TerminologyCapabilitiesFilter
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4760,7 +4674,7 @@ class _$TerminologyCapabilitiesFilterImpl
                 .equals(other._opElement, _opElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4772,9 +4686,7 @@ class _$TerminologyCapabilitiesFilterImpl
       const DeepCollectionEquality().hash(_op),
       const DeepCollectionEquality().hash(_opElement));
 
-  /// Create a copy of TerminologyCapabilitiesFilter
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TerminologyCapabilitiesFilterImplCopyWith<
@@ -4806,10 +4718,12 @@ abstract class _TerminologyCapabilitiesFilter
   factory _TerminologyCapabilitiesFilter.fromJson(Map<String, dynamic> json) =
       _$TerminologyCapabilitiesFilterImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4817,9 +4731,9 @@ abstract class _TerminologyCapabilitiesFilter
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4833,31 +4747,27 @@ abstract class _TerminologyCapabilitiesFilter
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [code] Code of the property supported.
-  @override
   FhirCode? get code;
+  @override
 
   /// [codeElement] ("_code") Extensions for code
-  @override
   @JsonKey(name: '_code')
   PrimitiveElement? get codeElement;
+  @override
 
   /// [op] Operations supported for the property.
-  @override
   List<FhirCode>? get op;
+  @override
 
   /// [opElement] ("_op") Extensions for op
-  @override
   @JsonKey(name: '_op')
   List<PrimitiveElement>? get opElement;
-
-  /// Create a copy of TerminologyCapabilitiesFilter
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TerminologyCapabilitiesFilterImplCopyWith<
           _$TerminologyCapabilitiesFilterImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4931,12 +4841,8 @@ mixin _$TerminologyCapabilitiesExpansion {
   @JsonKey(name: '_textFilter')
   PrimitiveElement? get textFilterElement => throw _privateConstructorUsedError;
 
-  /// Serializes this TerminologyCapabilitiesExpansion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TerminologyCapabilitiesExpansion
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TerminologyCapabilitiesExpansionCopyWith<TerminologyCapabilitiesExpansion>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4975,8 +4881,6 @@ class _$TerminologyCapabilitiesExpansionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TerminologyCapabilitiesExpansion
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5080,8 +4984,6 @@ class __$$TerminologyCapabilitiesExpansionImplCopyWithImpl<$Res>
       $Res Function(_$TerminologyCapabilitiesExpansionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TerminologyCapabilitiesExpansion
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5325,7 +5227,7 @@ class _$TerminologyCapabilitiesExpansionImpl
                 other.textFilterElement == textFilterElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -5342,9 +5244,7 @@ class _$TerminologyCapabilitiesExpansionImpl
       textFilter,
       textFilterElement);
 
-  /// Create a copy of TerminologyCapabilitiesExpansion
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TerminologyCapabilitiesExpansionImplCopyWith<
@@ -5384,10 +5284,12 @@ abstract class _TerminologyCapabilitiesExpansion
           Map<String, dynamic> json) =
       _$TerminologyCapabilitiesExpansionImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5395,9 +5297,9 @@ abstract class _TerminologyCapabilitiesExpansion
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5411,53 +5313,49 @@ abstract class _TerminologyCapabilitiesExpansion
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [hierarchical] Whether the server can return nested value sets.
-  @override
   FhirBoolean? get hierarchical;
+  @override
 
   /// [hierarchicalElement] ("_hierarchical") Extensions for hierarchical
-  @override
   @JsonKey(name: '_hierarchical')
   PrimitiveElement? get hierarchicalElement;
+  @override
 
   /// [paging] Whether the server supports paging on expansion.
-  @override
   FhirBoolean? get paging;
+  @override
 
   /// [pagingElement] ("_paging") Extensions for paging
-  @override
   @JsonKey(name: '_paging')
   PrimitiveElement? get pagingElement;
+  @override
 
   /// [incomplete] True if requests for incomplete expansions are allowed.
-  @override
   FhirBoolean? get incomplete;
+  @override
 
   /// [incompleteElement] ("_incomplete") Extensions for incomplete
-  @override
   @JsonKey(name: '_incomplete')
   PrimitiveElement? get incompleteElement;
+  @override
 
   /// [parameter] Supported expansion parameter.
-  @override
   List<TerminologyCapabilitiesParameter>? get parameter;
+  @override
 
   /// [textFilter] Documentation about text searching works.
-  @override
   FhirMarkdown? get textFilter;
+  @override
 
   /// [textFilterElement] ("_textFilter") Extensions for textFilter
-  @override
   @JsonKey(name: '_textFilter')
   PrimitiveElement? get textFilterElement;
-
-  /// Create a copy of TerminologyCapabilitiesExpansion
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TerminologyCapabilitiesExpansionImplCopyWith<
           _$TerminologyCapabilitiesExpansionImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -5513,12 +5411,8 @@ mixin _$TerminologyCapabilitiesParameter {
   PrimitiveElement? get documentationElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this TerminologyCapabilitiesParameter to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TerminologyCapabilitiesParameter
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TerminologyCapabilitiesParameterCopyWith<TerminologyCapabilitiesParameter>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -5552,8 +5446,6 @@ class _$TerminologyCapabilitiesParameterCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TerminologyCapabilitiesParameter
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5627,8 +5519,6 @@ class __$$TerminologyCapabilitiesParameterImplCopyWithImpl<$Res>
       $Res Function(_$TerminologyCapabilitiesParameterImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TerminologyCapabilitiesParameter
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5800,7 +5690,7 @@ class _$TerminologyCapabilitiesParameterImpl
                 other.documentationElement == documentationElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -5812,9 +5702,7 @@ class _$TerminologyCapabilitiesParameterImpl
       documentation,
       documentationElement);
 
-  /// Create a copy of TerminologyCapabilitiesParameter
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TerminologyCapabilitiesParameterImplCopyWith<
@@ -5848,10 +5736,12 @@ abstract class _TerminologyCapabilitiesParameter
           Map<String, dynamic> json) =
       _$TerminologyCapabilitiesParameterImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5859,9 +5749,9 @@ abstract class _TerminologyCapabilitiesParameter
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5875,31 +5765,27 @@ abstract class _TerminologyCapabilitiesParameter
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [name] Name of the supported expansion parameter.
-  @override
   FhirCode? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [documentation] Description of support for parameter.
-  @override
   String? get documentation;
+  @override
 
   /// [documentationElement] ("_documentation") Extensions for documentation
-  @override
   @JsonKey(name: '_documentation')
   PrimitiveElement? get documentationElement;
-
-  /// Create a copy of TerminologyCapabilitiesParameter
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TerminologyCapabilitiesParameterImplCopyWith<
           _$TerminologyCapabilitiesParameterImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -5948,12 +5834,8 @@ mixin _$TerminologyCapabilitiesValidateCode {
   PrimitiveElement? get translationsElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this TerminologyCapabilitiesValidateCode to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TerminologyCapabilitiesValidateCode
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TerminologyCapabilitiesValidateCodeCopyWith<
           TerminologyCapabilitiesValidateCode>
       get copyWith => throw _privateConstructorUsedError;
@@ -5986,8 +5868,6 @@ class _$TerminologyCapabilitiesValidateCodeCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TerminologyCapabilitiesValidateCode
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6049,8 +5929,6 @@ class __$$TerminologyCapabilitiesValidateCodeImplCopyWithImpl<$Res>
       $Res Function(_$TerminologyCapabilitiesValidateCodeImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TerminologyCapabilitiesValidateCode
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6198,7 +6076,7 @@ class _$TerminologyCapabilitiesValidateCodeImpl
                 other.translationsElement == translationsElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -6208,9 +6086,7 @@ class _$TerminologyCapabilitiesValidateCodeImpl
       translations,
       translationsElement);
 
-  /// Create a copy of TerminologyCapabilitiesValidateCode
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TerminologyCapabilitiesValidateCodeImplCopyWith<
@@ -6242,10 +6118,12 @@ abstract class _TerminologyCapabilitiesValidateCode
           Map<String, dynamic> json) =
       _$TerminologyCapabilitiesValidateCodeImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -6253,9 +6131,9 @@ abstract class _TerminologyCapabilitiesValidateCode
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -6269,22 +6147,18 @@ abstract class _TerminologyCapabilitiesValidateCode
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [translations] Whether translations are validated.
-  @override
   FhirBoolean? get translations;
+  @override
 
   /// [translationsElement] ("_translations") Extensions for translations
-  @override
   @JsonKey(name: '_translations')
   PrimitiveElement? get translationsElement;
-
-  /// Create a copy of TerminologyCapabilitiesValidateCode
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TerminologyCapabilitiesValidateCodeImplCopyWith<
           _$TerminologyCapabilitiesValidateCodeImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -6332,12 +6206,8 @@ mixin _$TerminologyCapabilitiesTranslation {
   @JsonKey(name: '_needsMap')
   PrimitiveElement? get needsMapElement => throw _privateConstructorUsedError;
 
-  /// Serializes this TerminologyCapabilitiesTranslation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TerminologyCapabilitiesTranslation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TerminologyCapabilitiesTranslationCopyWith<
           TerminologyCapabilitiesTranslation>
       get copyWith => throw _privateConstructorUsedError;
@@ -6370,8 +6240,6 @@ class _$TerminologyCapabilitiesTranslationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TerminologyCapabilitiesTranslation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6433,8 +6301,6 @@ class __$$TerminologyCapabilitiesTranslationImplCopyWithImpl<$Res>
       $Res Function(_$TerminologyCapabilitiesTranslationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TerminologyCapabilitiesTranslation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6582,7 +6448,7 @@ class _$TerminologyCapabilitiesTranslationImpl
                 other.needsMapElement == needsMapElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -6592,9 +6458,7 @@ class _$TerminologyCapabilitiesTranslationImpl
       needsMap,
       needsMapElement);
 
-  /// Create a copy of TerminologyCapabilitiesTranslation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TerminologyCapabilitiesTranslationImplCopyWith<
@@ -6626,10 +6490,12 @@ abstract class _TerminologyCapabilitiesTranslation
           Map<String, dynamic> json) =
       _$TerminologyCapabilitiesTranslationImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -6637,9 +6503,9 @@ abstract class _TerminologyCapabilitiesTranslation
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -6653,22 +6519,18 @@ abstract class _TerminologyCapabilitiesTranslation
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [needsMap] Whether the client must identify the map.
-  @override
   FhirBoolean? get needsMap;
+  @override
 
   /// [needsMapElement] ("_needsMap") Extensions for needsMap
-  @override
   @JsonKey(name: '_needsMap')
   PrimitiveElement? get needsMapElement;
-
-  /// Create a copy of TerminologyCapabilitiesTranslation
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TerminologyCapabilitiesTranslationImplCopyWith<
           _$TerminologyCapabilitiesTranslationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -6717,12 +6579,8 @@ mixin _$TerminologyCapabilitiesClosure {
   PrimitiveElement? get translationElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this TerminologyCapabilitiesClosure to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TerminologyCapabilitiesClosure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TerminologyCapabilitiesClosureCopyWith<TerminologyCapabilitiesClosure>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -6754,8 +6612,6 @@ class _$TerminologyCapabilitiesClosureCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TerminologyCapabilitiesClosure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6817,8 +6673,6 @@ class __$$TerminologyCapabilitiesClosureImplCopyWithImpl<$Res>
       $Res Function(_$TerminologyCapabilitiesClosureImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TerminologyCapabilitiesClosure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6966,7 +6820,7 @@ class _$TerminologyCapabilitiesClosureImpl
                 other.translationElement == translationElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -6976,9 +6830,7 @@ class _$TerminologyCapabilitiesClosureImpl
       translation,
       translationElement);
 
-  /// Create a copy of TerminologyCapabilitiesClosure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TerminologyCapabilitiesClosureImplCopyWith<
@@ -7009,10 +6861,12 @@ abstract class _TerminologyCapabilitiesClosure
   factory _TerminologyCapabilitiesClosure.fromJson(Map<String, dynamic> json) =
       _$TerminologyCapabilitiesClosureImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -7020,9 +6874,9 @@ abstract class _TerminologyCapabilitiesClosure
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -7036,22 +6890,18 @@ abstract class _TerminologyCapabilitiesClosure
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [translation] If cross-system closure is supported.
-  @override
   FhirBoolean? get translation;
+  @override
 
   /// [translationElement] ("_translation") Extensions for translation
-  @override
   @JsonKey(name: '_translation')
   PrimitiveElement? get translationElement;
-
-  /// Create a copy of TerminologyCapabilitiesClosure
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TerminologyCapabilitiesClosureImplCopyWith<
           _$TerminologyCapabilitiesClosureImpl>
       get copyWith => throw _privateConstructorUsedError;

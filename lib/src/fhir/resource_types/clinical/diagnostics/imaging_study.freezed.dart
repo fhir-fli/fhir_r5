@@ -195,12 +195,8 @@ mixin _$ImagingStudy {
   /// [series] Each study has one or more series of images or other content.
   List<ImagingStudySeries>? get series => throw _privateConstructorUsedError;
 
-  /// Serializes this ImagingStudy to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ImagingStudy
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ImagingStudyCopyWith<ImagingStudy> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -267,8 +263,6 @@ class _$ImagingStudyCopyWithImpl<$Res, $Val extends ImagingStudy>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ImagingStudy
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -447,8 +441,6 @@ class _$ImagingStudyCopyWithImpl<$Res, $Val extends ImagingStudy>
     ) as $Val);
   }
 
-  /// Create a copy of ImagingStudy
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -461,8 +453,6 @@ class _$ImagingStudyCopyWithImpl<$Res, $Val extends ImagingStudy>
     });
   }
 
-  /// Create a copy of ImagingStudy
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -475,8 +465,6 @@ class _$ImagingStudyCopyWithImpl<$Res, $Val extends ImagingStudy>
     });
   }
 
-  /// Create a copy of ImagingStudy
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get subject {
@@ -485,8 +473,6 @@ class _$ImagingStudyCopyWithImpl<$Res, $Val extends ImagingStudy>
     });
   }
 
-  /// Create a copy of ImagingStudy
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get encounter {
@@ -499,8 +485,6 @@ class _$ImagingStudyCopyWithImpl<$Res, $Val extends ImagingStudy>
     });
   }
 
-  /// Create a copy of ImagingStudy
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get referrer {
@@ -513,8 +497,6 @@ class _$ImagingStudyCopyWithImpl<$Res, $Val extends ImagingStudy>
     });
   }
 
-  /// Create a copy of ImagingStudy
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get location {
@@ -596,8 +578,6 @@ class __$$ImagingStudyImplCopyWithImpl<$Res>
       _$ImagingStudyImpl _value, $Res Function(_$ImagingStudyImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ImagingStudy
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1249,7 +1229,7 @@ class _$ImagingStudyImpl extends _ImagingStudy {
             const DeepCollectionEquality().equals(other._series, _series));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1289,9 +1269,7 @@ class _$ImagingStudyImpl extends _ImagingStudy {
         const DeepCollectionEquality().hash(_series)
       ]);
 
-  /// Create a copy of ImagingStudy
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ImagingStudyImplCopyWith<_$ImagingStudyImpl> get copyWith =>
@@ -1350,42 +1328,44 @@ abstract class _ImagingStudy extends ImagingStudy {
   factory _ImagingStudy.fromJson(Map<String, dynamic> json) =
       _$ImagingStudyImpl.fromJson;
 
-  /// [resourceType] This is a ImagingStudy resource
   @override
+
+  /// [resourceType] This is a ImagingStudy resource
   @JsonKey(unknownEnumValue: R5ResourceType.ImagingStudy)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1393,16 +1373,16 @@ abstract class _ImagingStudy extends ImagingStudy {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1410,9 +1390,9 @@ abstract class _ImagingStudy extends ImagingStudy {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1426,138 +1406,134 @@ abstract class _ImagingStudy extends ImagingStudy {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] Identifiers for the ImagingStudy such as DICOM Study Instance
   ///  UID.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [status] The current state of the ImagingStudy resource. This is not the
   ///  status of any ServiceRequest or Task resources associated with the
   ///  ImagingStudy.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [modality] A list of all the distinct values of series.modality. This may
   ///  include both acquisition and non-acquisition modalities.
-  @override
   List<CodeableConcept>? get modality;
+  @override
 
   /// [subject] The subject, typically a patient, of the imaging study.
-  @override
   Reference get subject;
+  @override
 
   /// [encounter] The healthcare event (e.g. a patient and healthcare provider
   ///  interaction) during which this ImagingStudy is made.
-  @override
   Reference? get encounter;
+  @override
 
   /// [started] Date and time the study started.
-  @override
   FhirDateTime? get started;
+  @override
 
   /// [startedElement] ("_started") Extensions for started
-  @override
   @JsonKey(name: '_started')
   PrimitiveElement? get startedElement;
+  @override
 
   /// [basedOn] A list of the diagnostic requests that resulted in this imaging
   ///  study being performed.
-  @override
   List<Reference>? get basedOn;
+  @override
 
   /// [partOf] A larger event of which this particular ImagingStudy is a
   ///  component or step.  For example,  an ImagingStudy as part of a procedure.
-  @override
   List<Reference>? get partOf;
+  @override
 
   /// [referrer] The requesting/referring physician.
-  @override
   Reference? get referrer;
+  @override
 
   /// [endpoint] The network service providing access (e.g., query, view, or
   ///  retrieval) for the study. See implementation notes for information about
   ///  using DICOM endpoints. A study-level endpoint applies to each series in
   ///  the study, unless overridden by a series-level endpoint with the same
   ///  Endpoint.connectionType.
-  @override
   List<Reference>? get endpoint;
+  @override
 
   /// [numberOfSeries] Number of Series in the Study. This value given may be
   ///  larger than the number of series elements this Resource contains due to
   ///  resource availability, security, or other factors. This element should be
   ///  present if any series elements are present.
-  @override
   FhirUnsignedInt? get numberOfSeries;
+  @override
 
   /// [numberOfSeriesElement] ("_numberOfSeries") Extensions for numberOfSeries
-  @override
   @JsonKey(name: '_numberOfSeries')
   PrimitiveElement? get numberOfSeriesElement;
+  @override
 
   /// [numberOfInstances] Number of SOP Instances in Study. This value given may
   ///  be larger than the number of instance elements this resource contains due
   ///  to resource availability, security, or other factors. This element should
   ///  be present if any instance elements are present.
-  @override
   FhirUnsignedInt? get numberOfInstances;
+  @override
 
   /// [numberOfInstancesElement] ("_numberOfInstances") Extensions for
   ///  numberOfInstances
-  @override
   @JsonKey(name: '_numberOfInstances')
   PrimitiveElement? get numberOfInstancesElement;
+  @override
 
   /// [procedure] This field corresponds to the DICOM Procedure Code Sequence
   ///  (0008,1032). This is different from the FHIR Procedure resource that may
   ///  include the ImagingStudy.
-  @override
   List<CodeableReference>? get procedure;
+  @override
 
   /// [location] The principal physical location where the ImagingStudy was
   ///  performed.
-  @override
   Reference? get location;
+  @override
 
   /// [reason] Description of clinical condition indicating why the ImagingStudy
   ///  was requested, and/or Indicates another resource whose existence justifies
   ///  this Study.
-  @override
   List<CodeableReference>? get reason;
+  @override
 
   /// [note] Per the recommended DICOM mapping, this element is derived from the
   ///  Study Description attribute (0008,1030). Observations or findings about
   ///  the imaging study should be recorded in another resource, e.g.
   ///  Observation, and not in this element.
-  @override
   List<Annotation>? get note;
+  @override
 
   /// [description] The Imaging Manager description of the study.
   ///  Institution-generated description or classification of the Study
   ///  (component) performed.
-  @override
   String? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [series] Each study has one or more series of images or other content.
-  @override
   List<ImagingStudySeries>? get series;
-
-  /// Create a copy of ImagingStudy
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ImagingStudyImplCopyWith<_$ImagingStudyImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1671,12 +1647,8 @@ mixin _$ImagingStudySeries {
   List<ImagingStudyInstance>? get instance =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ImagingStudySeries to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ImagingStudySeries
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ImagingStudySeriesCopyWith<ImagingStudySeries> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1725,8 +1697,6 @@ class _$ImagingStudySeriesCopyWithImpl<$Res, $Val extends ImagingStudySeries>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ImagingStudySeries
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1835,8 +1805,6 @@ class _$ImagingStudySeriesCopyWithImpl<$Res, $Val extends ImagingStudySeries>
     ) as $Val);
   }
 
-  /// Create a copy of ImagingStudySeries
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get modality {
@@ -1845,8 +1813,6 @@ class _$ImagingStudySeriesCopyWithImpl<$Res, $Val extends ImagingStudySeries>
     });
   }
 
-  /// Create a copy of ImagingStudySeries
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get bodySite {
@@ -1859,8 +1825,6 @@ class _$ImagingStudySeriesCopyWithImpl<$Res, $Val extends ImagingStudySeries>
     });
   }
 
-  /// Create a copy of ImagingStudySeries
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get laterality {
@@ -1921,8 +1885,6 @@ class __$$ImagingStudySeriesImplCopyWithImpl<$Res>
       $Res Function(_$ImagingStudySeriesImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ImagingStudySeries
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2307,7 +2269,7 @@ class _$ImagingStudySeriesImpl extends _ImagingStudySeries {
             const DeepCollectionEquality().equals(other._instance, _instance));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -2333,9 +2295,7 @@ class _$ImagingStudySeriesImpl extends _ImagingStudySeries {
         const DeepCollectionEquality().hash(_instance)
       ]);
 
-  /// Create a copy of ImagingStudySeries
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ImagingStudySeriesImplCopyWith<_$ImagingStudySeriesImpl> get copyWith =>
@@ -2378,10 +2338,12 @@ abstract class _ImagingStudySeries extends ImagingStudySeries {
   factory _ImagingStudySeries.fromJson(Map<String, dynamic> json) =
       _$ImagingStudySeriesImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2389,9 +2351,9 @@ abstract class _ImagingStudySeries extends ImagingStudySeries {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2405,101 +2367,97 @@ abstract class _ImagingStudySeries extends ImagingStudySeries {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [uid] The DICOM Series Instance UID for the series.
-  @override
   FhirId? get uid;
+  @override
 
   /// [uidElement] ("_uid") Extensions for uid
-  @override
   @JsonKey(name: '_uid')
   PrimitiveElement? get uidElement;
+  @override
 
   /// [number] The numeric identifier of this series in the study.
-  @override
   FhirUnsignedInt? get number;
+  @override
 
   /// [numberElement] ("_number") Extensions for number
-  @override
   @JsonKey(name: '_number')
   PrimitiveElement? get numberElement;
+  @override
 
   /// [modality] The distinct modality for this series. This may include both
   ///  acquisition and non-acquisition modalities.
-  @override
   CodeableConcept get modality;
+  @override
 
   /// [description] A description of the series.
-  @override
   String? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [numberOfInstances] Number of SOP Instances in the Study. The value given
   ///  may be larger than the number of instance elements this resource contains
   ///  due to resource availability, security, or other factors. This element
   ///  should be present if any instance elements are present.
-  @override
   FhirUnsignedInt? get numberOfInstances;
+  @override
 
   /// [numberOfInstancesElement] ("_numberOfInstances") Extensions for
   ///  numberOfInstances
-  @override
   @JsonKey(name: '_numberOfInstances')
   PrimitiveElement? get numberOfInstancesElement;
+  @override
 
   /// [endpoint] The network service providing access (e.g., query, view, or
   ///  retrieval) for this series. See implementation notes for information about
   ///  using DICOM endpoints. A series-level endpoint, if present, has precedence
   ///  over a study-level endpoint with the same Endpoint.connectionType.
-  @override
   List<Reference>? get endpoint;
+  @override
 
   /// [bodySite] The anatomic structures examined. See DICOM Part 16 Annex L
   ///  (http://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_L.html) for DICOM to SNOMED-CT mappings. The bodySite may indicate the laterality of body part imaged; if so, it shall be consistent with any content of ImagingStudy.series.laterality.
   ///
-  @override
   CodeableReference? get bodySite;
+  @override
 
   /// [laterality] The laterality of the (possibly paired) anatomic structures
   ///  examined. E.g., the left knee, both lungs, or unpaired abdomen. If
   ///  present, shall be consistent with any laterality information indicated in
   ///  ImagingStudy.series.bodySite.
-  @override
   CodeableConcept? get laterality;
+  @override
 
   /// [specimen] The specimen imaged, e.g., for whole slide imaging of a biopsy.
-  @override
   List<Reference>? get specimen;
+  @override
 
   /// [started] The date and time the series was started.
-  @override
   FhirDateTime? get started;
+  @override
 
   /// [startedElement] ("_started") Extensions for started
-  @override
   @JsonKey(name: '_started')
   PrimitiveElement? get startedElement;
+  @override
 
   /// [performer] Indicates who or what performed the series and how they were
   ///  involved.
-  @override
   List<ImagingStudyPerformer>? get performer;
+  @override
 
   /// [instance] A single SOP instance within the series, e.g. an image, or
   ///  presentation state.
-  @override
   List<ImagingStudyInstance>? get instance;
-
-  /// Create a copy of ImagingStudySeries
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ImagingStudySeriesImplCopyWith<_$ImagingStudySeriesImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2547,12 +2505,8 @@ mixin _$ImagingStudyPerformer {
   /// [actor] Indicates who or what performed the series.
   Reference get actor => throw _privateConstructorUsedError;
 
-  /// Serializes this ImagingStudyPerformer to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ImagingStudyPerformer
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ImagingStudyPerformerCopyWith<ImagingStudyPerformer> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2585,8 +2539,6 @@ class _$ImagingStudyPerformerCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ImagingStudyPerformer
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2620,8 +2572,6 @@ class _$ImagingStudyPerformerCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ImagingStudyPerformer
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get function_ {
@@ -2634,8 +2584,6 @@ class _$ImagingStudyPerformerCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ImagingStudyPerformer
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get actor {
@@ -2676,8 +2624,6 @@ class __$$ImagingStudyPerformerImplCopyWithImpl<$Res>
       $Res Function(_$ImagingStudyPerformerImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ImagingStudyPerformer
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2823,7 +2769,7 @@ class _$ImagingStudyPerformerImpl extends _ImagingStudyPerformer {
             (identical(other.actor, actor) || other.actor == actor));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2833,9 +2779,7 @@ class _$ImagingStudyPerformerImpl extends _ImagingStudyPerformer {
       function_,
       actor);
 
-  /// Create a copy of ImagingStudyPerformer
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ImagingStudyPerformerImplCopyWith<_$ImagingStudyPerformerImpl>
@@ -2862,10 +2806,12 @@ abstract class _ImagingStudyPerformer extends ImagingStudyPerformer {
   factory _ImagingStudyPerformer.fromJson(Map<String, dynamic> json) =
       _$ImagingStudyPerformerImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2873,9 +2819,9 @@ abstract class _ImagingStudyPerformer extends ImagingStudyPerformer {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2889,23 +2835,19 @@ abstract class _ImagingStudyPerformer extends ImagingStudyPerformer {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [function_] ("function") Distinguishes the type of involvement of the
   ///  performer in the series.
-  @override
   @JsonKey(name: 'function')
   CodeableConcept? get function_;
+  @override
 
   /// [actor] Indicates who or what performed the series.
-  @override
   Reference get actor;
-
-  /// Create a copy of ImagingStudyPerformer
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ImagingStudyPerformerImplCopyWith<_$ImagingStudyPerformerImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2968,12 +2910,8 @@ mixin _$ImagingStudyInstance {
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement => throw _privateConstructorUsedError;
 
-  /// Serializes this ImagingStudyInstance to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ImagingStudyInstance
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ImagingStudyInstanceCopyWith<ImagingStudyInstance> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3010,8 +2948,6 @@ class _$ImagingStudyInstanceCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ImagingStudyInstance
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3070,8 +3006,6 @@ class _$ImagingStudyInstanceCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ImagingStudyInstance
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res> get sopClass {
@@ -3113,8 +3047,6 @@ class __$$ImagingStudyInstanceImplCopyWithImpl<$Res>
       $Res Function(_$ImagingStudyInstanceImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ImagingStudyInstance
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3319,7 +3251,7 @@ class _$ImagingStudyInstanceImpl extends _ImagingStudyInstance {
                 other.titleElement == titleElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3334,9 +3266,7 @@ class _$ImagingStudyInstanceImpl extends _ImagingStudyInstance {
       title,
       titleElement);
 
-  /// Create a copy of ImagingStudyInstance
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ImagingStudyInstanceImplCopyWith<_$ImagingStudyInstanceImpl>
@@ -3370,10 +3300,12 @@ abstract class _ImagingStudyInstance extends ImagingStudyInstance {
   factory _ImagingStudyInstance.fromJson(Map<String, dynamic> json) =
       _$ImagingStudyInstanceImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3381,9 +3313,9 @@ abstract class _ImagingStudyInstance extends ImagingStudyInstance {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3397,44 +3329,40 @@ abstract class _ImagingStudyInstance extends ImagingStudyInstance {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [uid] The DICOM SOP Instance UID for this image or other DICOM content.
-  @override
   FhirId? get uid;
+  @override
 
   /// [uidElement] ("_uid") Extensions for uid
-  @override
   @JsonKey(name: '_uid')
   PrimitiveElement? get uidElement;
+  @override
 
   /// [sopClass] DICOM instance  type.
-  @override
   Coding get sopClass;
+  @override
 
   /// [number] The number of instance in the series.
-  @override
   FhirUnsignedInt? get number;
+  @override
 
   /// [numberElement] ("_number") Extensions for number
-  @override
   @JsonKey(name: '_number')
   PrimitiveElement? get numberElement;
+  @override
 
   /// [title] The description of the instance.
-  @override
   String? get title;
+  @override
 
   /// [titleElement] ("_title") Extensions for title
-  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
-
-  /// Create a copy of ImagingStudyInstance
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ImagingStudyInstanceImplCopyWith<_$ImagingStudyInstanceImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

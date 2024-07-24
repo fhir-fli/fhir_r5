@@ -108,12 +108,8 @@ mixin _$Linkage {
   ///  the collection of linked items.
   List<LinkageItem> get item => throw _privateConstructorUsedError;
 
-  /// Serializes this Linkage to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Linkage
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $LinkageCopyWith<Linkage> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -155,8 +151,6 @@ class _$LinkageCopyWithImpl<$Res, $Val extends Linkage>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Linkage
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -240,8 +234,6 @@ class _$LinkageCopyWithImpl<$Res, $Val extends Linkage>
     ) as $Val);
   }
 
-  /// Create a copy of Linkage
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -254,8 +246,6 @@ class _$LinkageCopyWithImpl<$Res, $Val extends Linkage>
     });
   }
 
-  /// Create a copy of Linkage
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -268,8 +258,6 @@ class _$LinkageCopyWithImpl<$Res, $Val extends Linkage>
     });
   }
 
-  /// Create a copy of Linkage
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get author {
@@ -324,8 +312,6 @@ class __$$LinkageImplCopyWithImpl<$Res>
       _$LinkageImpl _value, $Res Function(_$LinkageImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Linkage
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -633,7 +619,7 @@ class _$LinkageImpl extends _Linkage {
             const DeepCollectionEquality().equals(other._item, _item));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -653,9 +639,7 @@ class _$LinkageImpl extends _Linkage {
       author,
       const DeepCollectionEquality().hash(_item));
 
-  /// Create a copy of Linkage
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$LinkageImplCopyWith<_$LinkageImpl> get copyWith =>
@@ -692,42 +676,44 @@ abstract class _Linkage extends Linkage {
 
   factory _Linkage.fromJson(Map<String, dynamic> json) = _$LinkageImpl.fromJson;
 
-  /// [resourceType] This is a Linkage resource
   @override
+
+  /// [resourceType] This is a Linkage resource
   @JsonKey(unknownEnumValue: R5ResourceType.Linkage)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -735,16 +721,16 @@ abstract class _Linkage extends Linkage {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -752,9 +738,9 @@ abstract class _Linkage extends Linkage {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -768,35 +754,31 @@ abstract class _Linkage extends Linkage {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [active] Indicates whether the asserted set of linkages are considered to
   ///  be "in effect".
-  @override
   FhirBoolean? get active;
+  @override
 
   /// [activeElement] ("_active") Extensions for active
-  @override
   @JsonKey(name: '_active')
   PrimitiveElement? get activeElement;
+  @override
 
   /// [author] Identifies the user or organization responsible for asserting the
   ///  linkages as well as the user or organization who establishes the context
   ///  in which the nature of each linkage is evaluated.
-  @override
   Reference? get author;
+  @override
 
   /// [item] Identifies which record considered as the reference to the same
   ///  real-world occurrence as well as how the items should be evaluated within
   ///  the collection of linked items.
-  @override
   List<LinkageItem> get item;
-
-  /// Create a copy of Linkage
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$LinkageImplCopyWith<_$LinkageImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -846,12 +828,8 @@ mixin _$LinkageItem {
   /// [resource] The resource instance being linked as part of the group.
   Reference get resource => throw _privateConstructorUsedError;
 
-  /// Serializes this LinkageItem to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of LinkageItem
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $LinkageItemCopyWith<LinkageItem> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -883,8 +861,6 @@ class _$LinkageItemCopyWithImpl<$Res, $Val extends LinkageItem>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of LinkageItem
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -923,8 +899,6 @@ class _$LinkageItemCopyWithImpl<$Res, $Val extends LinkageItem>
     ) as $Val);
   }
 
-  /// Create a copy of LinkageItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get resource {
@@ -962,8 +936,6 @@ class __$$LinkageItemImplCopyWithImpl<$Res>
       _$LinkageItemImpl _value, $Res Function(_$LinkageItemImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of LinkageItem
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1121,7 +1093,7 @@ class _$LinkageItemImpl extends _LinkageItem {
                 other.resource == resource));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1132,9 +1104,7 @@ class _$LinkageItemImpl extends _LinkageItem {
       typeElement,
       resource);
 
-  /// Create a copy of LinkageItem
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$LinkageItemImplCopyWith<_$LinkageItemImpl> get copyWith =>
@@ -1161,10 +1131,12 @@ abstract class _LinkageItem extends LinkageItem {
   factory _LinkageItem.fromJson(Map<String, dynamic> json) =
       _$LinkageItemImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1172,9 +1144,9 @@ abstract class _LinkageItem extends LinkageItem {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1188,27 +1160,23 @@ abstract class _LinkageItem extends LinkageItem {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] Distinguishes which item is "source of truth" (if any) and which
   ///  items are no longer considered to be current representations.
-  @override
   FhirCode? get type;
+  @override
 
   /// [typeElement] ("_type") Extensions for type
-  @override
   @JsonKey(name: '_type')
   PrimitiveElement? get typeElement;
+  @override
 
   /// [resource] The resource instance being linked as part of the group.
-  @override
   Reference get resource;
-
-  /// Create a copy of LinkageItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$LinkageItemImplCopyWith<_$LinkageItemImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

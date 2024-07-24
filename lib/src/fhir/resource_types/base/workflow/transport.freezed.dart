@@ -261,12 +261,8 @@ mixin _$Transport {
   /// [history] The transport event prior to this one.
   Reference? get history => throw _privateConstructorUsedError;
 
-  /// Serializes this Transport to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TransportCopyWith<Transport> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -359,8 +355,6 @@ class _$TransportCopyWithImpl<$Res, $Val extends Transport>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -624,8 +618,6 @@ class _$TransportCopyWithImpl<$Res, $Val extends Transport>
     ) as $Val);
   }
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -638,8 +630,6 @@ class _$TransportCopyWithImpl<$Res, $Val extends Transport>
     });
   }
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -652,8 +642,6 @@ class _$TransportCopyWithImpl<$Res, $Val extends Transport>
     });
   }
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get groupIdentifier {
@@ -666,8 +654,6 @@ class _$TransportCopyWithImpl<$Res, $Val extends Transport>
     });
   }
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get statusReason {
@@ -680,8 +666,6 @@ class _$TransportCopyWithImpl<$Res, $Val extends Transport>
     });
   }
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -694,8 +678,6 @@ class _$TransportCopyWithImpl<$Res, $Val extends Transport>
     });
   }
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get focus {
@@ -708,8 +690,6 @@ class _$TransportCopyWithImpl<$Res, $Val extends Transport>
     });
   }
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get for_ {
@@ -722,8 +702,6 @@ class _$TransportCopyWithImpl<$Res, $Val extends Transport>
     });
   }
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get encounter {
@@ -736,8 +714,6 @@ class _$TransportCopyWithImpl<$Res, $Val extends Transport>
     });
   }
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get requester {
@@ -750,8 +726,6 @@ class _$TransportCopyWithImpl<$Res, $Val extends Transport>
     });
   }
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get owner {
@@ -764,8 +738,6 @@ class _$TransportCopyWithImpl<$Res, $Val extends Transport>
     });
   }
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get location {
@@ -778,8 +750,6 @@ class _$TransportCopyWithImpl<$Res, $Val extends Transport>
     });
   }
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TransportRestrictionCopyWith<$Res>? get restriction {
@@ -792,8 +762,6 @@ class _$TransportCopyWithImpl<$Res, $Val extends Transport>
     });
   }
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get requestedLocation {
@@ -802,8 +770,6 @@ class _$TransportCopyWithImpl<$Res, $Val extends Transport>
     });
   }
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get currentLocation {
@@ -812,8 +778,6 @@ class _$TransportCopyWithImpl<$Res, $Val extends Transport>
     });
   }
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get reason {
@@ -826,8 +790,6 @@ class _$TransportCopyWithImpl<$Res, $Val extends Transport>
     });
   }
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get history {
@@ -946,8 +908,6 @@ class __$$TransportImplCopyWithImpl<$Res>
       _$TransportImpl _value, $Res Function(_$TransportImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1808,7 +1768,7 @@ class _$TransportImpl extends _Transport {
             (identical(other.history, history) || other.history == history));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1865,9 +1825,7 @@ class _$TransportImpl extends _Transport {
         history
       ]);
 
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TransportImplCopyWith<_$TransportImpl> get copyWith =>
@@ -1944,42 +1902,44 @@ abstract class _Transport extends Transport {
   factory _Transport.fromJson(Map<String, dynamic> json) =
       _$TransportImpl.fromJson;
 
-  /// [resourceType] This is a Transport resource
   @override
+
+  /// [resourceType] This is a Transport resource
   @JsonKey(unknownEnumValue: R5ResourceType.Transport)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1987,16 +1947,16 @@ abstract class _Transport extends Transport {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -2004,9 +1964,9 @@ abstract class _Transport extends Transport {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -2020,30 +1980,30 @@ abstract class _Transport extends Transport {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] Identifier for the transport event that is used to identify it
   ///  across multiple disparate systems.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [instantiatesCanonical] The URL pointing to a *FHIR*-defined protocol,
   ///  guideline, orderset or other definition that is adhered to in whole or in
   ///  part by this Transport.
-  @override
   FhirCanonical? get instantiatesCanonical;
+  @override
 
   /// [instantiatesUri] The URL pointing to an *externally* maintained  protocol,
   ///  guideline, orderset or other definition that is adhered to in whole or in
   ///  part by this Transport.
-  @override
   FhirUri? get instantiatesUri;
+  @override
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
-  @override
   @JsonKey(name: '_instantiatesUri')
   PrimitiveElement? get instantiatesUriElement;
+  @override
 
   /// [basedOn] BasedOn refers to a higher-level authorization that triggered the
   ///  creation of the transport.  It references a "request" resource such as a
@@ -2052,8 +2012,8 @@ abstract class _Transport extends Transport {
   ///  by FocusOn.  For example, based on a ServiceRequest (= BasedOn), a
   ///  transport is created to fulfill a procedureRequest ( = FocusOn ) to
   ///  transport a specimen to the lab.
-  @override
   List<Reference>? get basedOn;
+  @override
 
   /// [groupIdentifier] A shared identifier common to multiple independent
   ///  Request instances that were activated/authorized more or less
@@ -2062,176 +2022,172 @@ abstract class _Transport extends Transport {
   ///  ramifications in terms of reporting of results, billing, etc.  E.g. a
   ///  requisition number shared by a set of lab tests ordered together, or a
   ///  prescription number shared by all meds ordered at one time.
-  @override
   Identifier? get groupIdentifier;
+  @override
 
   /// [partOf] A larger event of which this particular event is a component or
   ///  step.
-  @override
   List<Reference>? get partOf;
+  @override
 
   /// [status] A code specifying the state of the transport event.
-  @override
   TransportStatus? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [statusReason] An explanation as to why this transport is held, failed, was
   ///  refused, etc.
-  @override
   CodeableConcept? get statusReason;
+  @override
 
   /// [intent] Indicates the "level" of actionability associated with the
   ///  Transport, i.e. i+R[9]Cs this a proposed transport, a planned transport,
   ///  an actionable transport, etc.
-  @override
   TransportIntent? get intent;
+  @override
 
   /// [intentElement] ("_intent") Extensions for intent
-  @override
   @JsonKey(name: '_intent')
   PrimitiveElement? get intentElement;
+  @override
 
   /// [priority] Indicates how quickly the Transport should be addressed with
   ///  respect to other requests.
-  @override
   RequestPriority? get priority;
+  @override
 
   /// [priorityElement] ("_priority") Extensions for priority
-  @override
   @JsonKey(name: '_priority')
   PrimitiveElement? get priorityElement;
+  @override
 
   /// [code] A name or code (or both) briefly describing what the transport
   ///  involves.
-  @override
   CodeableConcept? get code;
+  @override
 
   /// [description] A free-text description of what is to be performed.
-  @override
   String? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [focus] The request being actioned or the resource being manipulated by
   ///  this transport.
-  @override
   Reference? get focus;
+  @override
 
   /// [for_] ("for") The entity who benefits from the performance of the service
   ///  specified in the transport (e.g., the patient).
-  @override
   @JsonKey(name: 'for')
   Reference? get for_;
+  @override
 
   /// [encounter] The healthcare event  (e.g. a patient and healthcare provider
   ///  interaction) during which this transport was created.
-  @override
   Reference? get encounter;
+  @override
 
   /// [completionTime] Identifies the completion time of the event (the
   ///  occurrence).
-  @override
   FhirDateTime? get completionTime;
+  @override
 
   /// [completionTimeElement] ("_completionTime") Extensions for completionTime
-  @override
   @JsonKey(name: '_completionTime')
   PrimitiveElement? get completionTimeElement;
+  @override
 
   /// [authoredOn] The date and time this transport was created.
-  @override
   FhirDateTime? get authoredOn;
+  @override
 
   /// [authoredOnElement] ("_authoredOn") Extensions for authoredOn
-  @override
   @JsonKey(name: '_authoredOn')
   PrimitiveElement? get authoredOnElement;
+  @override
 
   /// [lastModified] The date and time of last modification to this transport.
-  @override
   FhirDateTime? get lastModified;
+  @override
 
   /// [lastModifiedElement] ("_lastModified") Extensions for lastModified
-  @override
   @JsonKey(name: '_lastModified')
   PrimitiveElement? get lastModifiedElement;
+  @override
 
   /// [requester] The creator of the transport.
-  @override
   Reference? get requester;
+  @override
 
   /// [performerType] The kind of participant that should perform the transport.
-  @override
   List<CodeableConcept>? get performerType;
+  @override
 
   /// [owner] Individual organization or Device currently responsible for
   ///  transport execution.
-  @override
   Reference? get owner;
+  @override
 
   /// [location] Principal physical location where this transport is performed.
-  @override
   Reference? get location;
+  @override
 
   /// [insurance] Insurance plans, coverage extensions, pre-authorizations and/or
   ///  pre-determinations that may be relevant to the Transport.
-  @override
   List<Reference>? get insurance;
+  @override
 
   /// [note] Free-text information captured about the transport as it progresses.
-  @override
   List<Annotation>? get note;
+  @override
 
   /// [relevantHistory] Links to Provenance records for past versions of this
   ///  Transport that identify key state transitions or updates that are likely
   ///  to be relevant to a user looking at the current version of the transport.
-  @override
   List<Reference>? get relevantHistory;
+  @override
 
   /// [restriction] If the Transport.focus is a request resource and the
   ///  transport is seeking fulfillment (i.e. is asking for the request to be
   ///  actioned), this element identifies any limitations on what parts of the
   ///  referenced request should be actioned.
-  @override
   TransportRestriction? get restriction;
+  @override
 
   /// [input] Additional information that may be needed in the execution of the
   ///  transport.
-  @override
   List<TransportInput>? get input;
+  @override
 
   /// [output] Outputs produced by the Transport.
-  @override
   List<TransportOutput>? get output;
+  @override
 
   /// [requestedLocation] The desired or final location for the transport.
-  @override
   Reference get requestedLocation;
+  @override
 
   /// [currentLocation] The current location for the entity to be transported.
-  @override
   Reference get currentLocation;
+  @override
 
   /// [reason] A resource reference indicating why this transport needs to be
   ///  performed.
-  @override
   CodeableReference? get reason;
+  @override
 
   /// [history] The transport event prior to this one.
-  @override
   Reference? get history;
-
-  /// Create a copy of Transport
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TransportImplCopyWith<_$TransportImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2286,12 +2242,8 @@ mixin _$TransportRestriction {
   ///  recipient/target, to identify who is fulfillment is sought for.
   List<Reference>? get recipient => throw _privateConstructorUsedError;
 
-  /// Serializes this TransportRestriction to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TransportRestriction
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TransportRestrictionCopyWith<TransportRestriction> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2325,8 +2277,6 @@ class _$TransportRestrictionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TransportRestriction
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2370,8 +2320,6 @@ class _$TransportRestrictionCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of TransportRestriction
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get period {
@@ -2414,8 +2362,6 @@ class __$$TransportRestrictionImplCopyWithImpl<$Res>
       $Res Function(_$TransportRestrictionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TransportRestriction
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2597,7 +2543,7 @@ class _$TransportRestrictionImpl extends _TransportRestriction {
                 .equals(other._recipient, _recipient));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2609,9 +2555,7 @@ class _$TransportRestrictionImpl extends _TransportRestriction {
       period,
       const DeepCollectionEquality().hash(_recipient));
 
-  /// Create a copy of TransportRestriction
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TransportRestrictionImplCopyWith<_$TransportRestrictionImpl>
@@ -2641,10 +2585,12 @@ abstract class _TransportRestriction extends TransportRestriction {
   factory _TransportRestriction.fromJson(Map<String, dynamic> json) =
       _$TransportRestrictionImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2652,9 +2598,9 @@ abstract class _TransportRestriction extends TransportRestriction {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2668,32 +2614,28 @@ abstract class _TransportRestriction extends TransportRestriction {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [repetitions] Indicates the number of times the requested action should
   ///  occur.
-  @override
   FhirPositiveInt? get repetitions;
+  @override
 
   /// [repetitionsElement] ("_repetitions") Extensions for repetitions
-  @override
   @JsonKey(name: '_repetitions')
   PrimitiveElement? get repetitionsElement;
+  @override
 
   /// [period] Over what time-period is fulfillment sought.
-  @override
   Period? get period;
+  @override
 
   /// [recipient] For requests that are targeted to more than one potential
   ///  recipient/target, to identify who is fulfillment is sought for.
-  @override
   List<Reference>? get recipient;
-
-  /// Create a copy of TransportRestriction
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TransportRestrictionImplCopyWith<_$TransportRestrictionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3001,12 +2943,8 @@ mixin _$TransportInput {
   /// [valueMeta] The value of the input parameter as a basic type.
   FhirMeta? get valueMeta => throw _privateConstructorUsedError;
 
-  /// Serializes this TransportInput to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TransportInputCopyWith<TransportInput> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3147,8 +3085,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3547,8 +3483,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     ) as $Val);
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get type {
@@ -3557,8 +3491,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AddressCopyWith<$Res>? get valueAddress {
@@ -3571,8 +3503,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get valueAge {
@@ -3585,8 +3515,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AnnotationCopyWith<$Res>? get valueAnnotation {
@@ -3599,8 +3527,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get valueAttachment {
@@ -3613,8 +3539,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get valueCodeableConcept {
@@ -3628,8 +3552,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get valueCodeableReference {
@@ -3643,8 +3565,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get valueCoding {
@@ -3657,8 +3577,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactPointCopyWith<$Res>? get valueContactPoint {
@@ -3671,8 +3589,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CountCopyWith<$Res>? get valueCount {
@@ -3685,8 +3601,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DistanceCopyWith<$Res>? get valueDistance {
@@ -3699,8 +3613,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get valueDuration {
@@ -3713,8 +3625,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $HumanNameCopyWith<$Res>? get valueHumanName {
@@ -3727,8 +3637,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get valueIdentifier {
@@ -3741,8 +3649,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MoneyCopyWith<$Res>? get valueMoney {
@@ -3755,8 +3661,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get valuePeriod {
@@ -3769,8 +3673,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get valueQuantity {
@@ -3783,8 +3685,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get valueRange {
@@ -3797,8 +3697,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get valueRatio {
@@ -3811,8 +3709,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioRangeCopyWith<$Res>? get valueRatioRange {
@@ -3825,8 +3721,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get valueReference {
@@ -3839,8 +3733,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SampledDataCopyWith<$Res>? get valueSampledData {
@@ -3853,8 +3745,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SignatureCopyWith<$Res>? get valueSignature {
@@ -3867,8 +3757,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get valueTiming {
@@ -3881,8 +3769,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactDetailCopyWith<$Res>? get valueContactDetail {
@@ -3895,8 +3781,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DataRequirementCopyWith<$Res>? get valueDataRequirement {
@@ -3910,8 +3794,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirExpressionCopyWith<$Res>? get valueExpression {
@@ -3924,8 +3806,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ParameterDefinitionCopyWith<$Res>? get valueParameterDefinition {
@@ -3939,8 +3819,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RelatedArtifactCopyWith<$Res>? get valueRelatedArtifact {
@@ -3954,8 +3832,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TriggerDefinitionCopyWith<$Res>? get valueTriggerDefinition {
@@ -3969,8 +3845,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $UsageContextCopyWith<$Res>? get valueUsageContext {
@@ -3983,8 +3857,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AvailabilityCopyWith<$Res>? get valueAvailability {
@@ -3997,8 +3869,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ExtendedContactDetailCopyWith<$Res>? get valueExtendedContactDetail {
@@ -4012,8 +3882,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DosageCopyWith<$Res>? get valueDosage {
@@ -4026,8 +3894,6 @@ class _$TransportInputCopyWithImpl<$Res, $Val extends TransportInput>
     });
   }
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get valueMeta {
@@ -4212,8 +4078,6 @@ class __$$TransportInputImplCopyWithImpl<$Res>
       _$TransportInputImpl _value, $Res Function(_$TransportInputImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5214,7 +5078,7 @@ class _$TransportInputImpl extends _TransportInput {
             (identical(other.valueMeta, valueMeta) || other.valueMeta == valueMeta));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -5298,9 +5162,7 @@ class _$TransportInputImpl extends _TransportInput {
         valueMeta
       ]);
 
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TransportInputImplCopyWith<_$TransportInputImpl> get copyWith =>
@@ -5411,10 +5273,12 @@ abstract class _TransportInput extends TransportInput {
   factory _TransportInput.fromJson(Map<String, dynamic> json) =
       _$TransportInputImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5422,9 +5286,9 @@ abstract class _TransportInput extends TransportInput {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5438,338 +5302,334 @@ abstract class _TransportInput extends TransportInput {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] A code or description indicating how the input is intended to be
   ///  used as part of the transport execution.
-  @override
   CodeableConcept get type;
+  @override
 
   /// [valueBase64Binary] The value of the input parameter as a basic type.
-  @override
   FhirBase64Binary? get valueBase64Binary;
+  @override
 
   /// [valueBase64BinaryElement] ("_valueBase64Binary") Extensions for
   ///  valueBase64Binary
-  @override
   @JsonKey(name: '_valueBase64Binary')
   PrimitiveElement? get valueBase64BinaryElement;
+  @override
 
   /// [valueBoolean] The value of the input parameter as a basic type.
-  @override
   FhirBoolean? get valueBoolean;
+  @override
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
+  @override
 
   /// [valueCanonical] The value of the input parameter as a basic type.
-  @override
   FhirCanonical? get valueCanonical;
+  @override
 
   /// [valueCanonicalElement] ("_valueCanonical") Extensions for valueCanonical
-  @override
   @JsonKey(name: '_valueCanonical')
   PrimitiveElement? get valueCanonicalElement;
+  @override
 
   /// [valueCode] The value of the input parameter as a basic type.
-  @override
   FhirCode? get valueCode;
+  @override
 
   /// [valueCodeElement] ("_valueCode") Extensions for valueCode
-  @override
   @JsonKey(name: '_valueCode')
   PrimitiveElement? get valueCodeElement;
+  @override
 
   /// [valueDate] The value of the input parameter as a basic type.
-  @override
   FhirDate? get valueDate;
+  @override
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
-  @override
   @JsonKey(name: '_valueDate')
   PrimitiveElement? get valueDateElement;
+  @override
 
   /// [valueDateTime] The value of the input parameter as a basic type.
-  @override
   FhirDateTime? get valueDateTime;
+  @override
 
   /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
-  @override
   @JsonKey(name: '_valueDateTime')
   PrimitiveElement? get valueDateTimeElement;
+  @override
 
   /// [valueDecimal] The value of the input parameter as a basic type.
-  @override
   FhirDecimal? get valueDecimal;
+  @override
 
   /// [valueDecimalElement] ("_valueDecimal") Extensions for valueDecimal
-  @override
   @JsonKey(name: '_valueDecimal')
   PrimitiveElement? get valueDecimalElement;
+  @override
 
   /// [valueId] The value of the input parameter as a basic type.
-  @override
   FhirId? get valueId;
+  @override
 
   /// [valueIdElement] ("_valueId") Extensions for valueId
-  @override
   @JsonKey(name: '_valueId')
   PrimitiveElement? get valueIdElement;
+  @override
 
   /// [valueInstant] The value of the input parameter as a basic type.
-  @override
   FhirInstant? get valueInstant;
+  @override
 
   /// [valueInstantElement] ("_valueInstant") Extensions for valueInstant
-  @override
   @JsonKey(name: '_valueInstant')
   PrimitiveElement? get valueInstantElement;
+  @override
 
   /// [valueInteger] The value of the input parameter as a basic type.
-  @override
   FhirInteger? get valueInteger;
+  @override
 
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
-  @override
   @JsonKey(name: '_valueInteger')
   PrimitiveElement? get valueIntegerElement;
+  @override
 
   /// [valueInteger64] The value of the input parameter as a basic type.
-  @override
   FhirInteger64? get valueInteger64;
+  @override
 
   /// [valueInteger64Element] ("_valueInteger64") Extensions for valueInteger64
-  @override
   @JsonKey(name: '_valueInteger64')
   PrimitiveElement? get valueInteger64Element;
+  @override
 
   /// [valueMarkdown] The value of the input parameter as a basic type.
-  @override
   FhirMarkdown? get valueMarkdown;
+  @override
 
   /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
-  @override
   @JsonKey(name: '_valueMarkdown')
   PrimitiveElement? get valueMarkdownElement;
+  @override
 
   /// [valueOid] The value of the input parameter as a basic type.
-  @override
   FhirId? get valueOid;
+  @override
 
   /// [valueOidElement] ("_valueOid") Extensions for valueOid
-  @override
   @JsonKey(name: '_valueOid')
   PrimitiveElement? get valueOidElement;
+  @override
 
   /// [valuePositiveInt] The value of the input parameter as a basic type.
-  @override
   FhirPositiveInt? get valuePositiveInt;
+  @override
 
   /// [valuePositiveIntElement] ("_valuePositiveInt") Extensions for
   ///  valuePositiveInt
-  @override
   @JsonKey(name: '_valuePositiveInt')
   PrimitiveElement? get valuePositiveIntElement;
+  @override
 
   /// [valueString] The value of the input parameter as a basic type.
-  @override
   String? get valueString;
+  @override
 
   /// [valueStringElement] ("_valueString") Extensions for valueString
-  @override
   @JsonKey(name: '_valueString')
   PrimitiveElement? get valueStringElement;
+  @override
 
   /// [valueTime] The value of the input parameter as a basic type.
-  @override
   FhirTime? get valueTime;
+  @override
 
   /// [valueTimeElement] ("_valueTime") Extensions for valueTime
-  @override
   @JsonKey(name: '_valueTime')
   PrimitiveElement? get valueTimeElement;
+  @override
 
   /// [valueUnsignedInt] The value of the input parameter as a basic type.
-  @override
   FhirUnsignedInt? get valueUnsignedInt;
+  @override
 
   /// [valueUnsignedIntElement] ("_valueUnsignedInt") Extensions for
   ///  valueUnsignedInt
-  @override
   @JsonKey(name: '_valueUnsignedInt')
   PrimitiveElement? get valueUnsignedIntElement;
+  @override
 
   /// [valueUri] The value of the input parameter as a basic type.
-  @override
   FhirUri? get valueUri;
+  @override
 
   /// [valueUriElement] ("_valueUri") Extensions for valueUri
-  @override
   @JsonKey(name: '_valueUri')
   PrimitiveElement? get valueUriElement;
+  @override
 
   /// [valueUrl] The value of the input parameter as a basic type.
-  @override
   FhirUrl? get valueUrl;
+  @override
 
   /// [valueUrlElement] ("_valueUrl") Extensions for valueUrl
-  @override
   @JsonKey(name: '_valueUrl')
   PrimitiveElement? get valueUrlElement;
+  @override
 
   /// [valueUuid] The value of the input parameter as a basic type.
-  @override
   FhirId? get valueUuid;
+  @override
 
   /// [valueUuidElement] ("_valueUuid") Extensions for valueUuid
-  @override
   @JsonKey(name: '_valueUuid')
   PrimitiveElement? get valueUuidElement;
+  @override
 
   /// [valueAddress] The value of the input parameter as a basic type.
-  @override
   Address? get valueAddress;
+  @override
 
   /// [valueAge] The value of the input parameter as a basic type.
-  @override
   Age? get valueAge;
+  @override
 
   /// [valueAnnotation] The value of the input parameter as a basic type.
-  @override
   Annotation? get valueAnnotation;
+  @override
 
   /// [valueAttachment] The value of the input parameter as a basic type.
-  @override
   Attachment? get valueAttachment;
+  @override
 
   /// [valueCodeableConcept] The value of the input parameter as a basic type.
-  @override
   CodeableConcept? get valueCodeableConcept;
+  @override
 
   /// [valueCodeableReference] The value of the input parameter as a basic type.
-  @override
   CodeableReference? get valueCodeableReference;
+  @override
 
   /// [valueCoding] The value of the input parameter as a basic type.
-  @override
   Coding? get valueCoding;
+  @override
 
   /// [valueContactPoint] The value of the input parameter as a basic type.
-  @override
   ContactPoint? get valueContactPoint;
+  @override
 
   /// [valueCount] The value of the input parameter as a basic type.
-  @override
   Count? get valueCount;
+  @override
 
   /// [valueDistance] The value of the input parameter as a basic type.
-  @override
   Distance? get valueDistance;
+  @override
 
   /// [valueDuration] The value of the input parameter as a basic type.
-  @override
   FhirDuration? get valueDuration;
+  @override
 
   /// [valueHumanName] The value of the input parameter as a basic type.
-  @override
   HumanName? get valueHumanName;
+  @override
 
   /// [valueIdentifier] The value of the input parameter as a basic type.
-  @override
   Identifier? get valueIdentifier;
+  @override
 
   /// [valueMoney] The value of the input parameter as a basic type.
-  @override
   Money? get valueMoney;
+  @override
 
   /// [valuePeriod] The value of the input parameter as a basic type.
-  @override
   Period? get valuePeriod;
+  @override
 
   /// [valueQuantity] The value of the input parameter as a basic type.
-  @override
   Quantity? get valueQuantity;
+  @override
 
   /// [valueRange] The value of the input parameter as a basic type.
-  @override
   Range? get valueRange;
+  @override
 
   /// [valueRatio] The value of the input parameter as a basic type.
-  @override
   Ratio? get valueRatio;
+  @override
 
   /// [valueRatioRange] The value of the input parameter as a basic type.
-  @override
   RatioRange? get valueRatioRange;
+  @override
 
   /// [valueReference] The value of the input parameter as a basic type.
-  @override
   Reference? get valueReference;
+  @override
 
   /// [valueSampledData] The value of the input parameter as a basic type.
-  @override
   SampledData? get valueSampledData;
+  @override
 
   /// [valueSignature] The value of the input parameter as a basic type.
-  @override
   Signature? get valueSignature;
+  @override
 
   /// [valueTiming] The value of the input parameter as a basic type.
-  @override
   Timing? get valueTiming;
+  @override
 
   /// [valueContactDetail] The value of the input parameter as a basic type.
-  @override
   ContactDetail? get valueContactDetail;
+  @override
 
   /// [valueDataRequirement] The value of the input parameter as a basic type.
-  @override
   DataRequirement? get valueDataRequirement;
+  @override
 
   /// [valueExpression] The value of the input parameter as a basic type.
-  @override
   FhirExpression? get valueExpression;
+  @override
 
   /// [valueParameterDefinition] The value of the input parameter as a basic type.
-  @override
   ParameterDefinition? get valueParameterDefinition;
+  @override
 
   /// [valueRelatedArtifact] The value of the input parameter as a basic type.
-  @override
   RelatedArtifact? get valueRelatedArtifact;
+  @override
 
   /// [valueTriggerDefinition] The value of the input parameter as a basic type.
-  @override
   TriggerDefinition? get valueTriggerDefinition;
+  @override
 
   /// [valueUsageContext] The value of the input parameter as a basic type.
-  @override
   UsageContext? get valueUsageContext;
+  @override
 
   /// [valueAvailability] The value of the input parameter as a basic type.
-  @override
   Availability? get valueAvailability;
+  @override
 
   /// [valueExtendedContactDetail] The value of the input parameter as a basic
   ///  type.
-  @override
   ExtendedContactDetail? get valueExtendedContactDetail;
+  @override
 
   /// [valueDosage] The value of the input parameter as a basic type.
-  @override
   Dosage? get valueDosage;
+  @override
 
   /// [valueMeta] The value of the input parameter as a basic type.
-  @override
   FhirMeta? get valueMeta;
-
-  /// Create a copy of TransportInput
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TransportInputImplCopyWith<_$TransportInputImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6077,12 +5937,8 @@ mixin _$TransportOutput {
   /// [valueMeta] The value of the Output parameter as a basic type.
   FhirMeta? get valueMeta => throw _privateConstructorUsedError;
 
-  /// Serializes this TransportOutput to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TransportOutputCopyWith<TransportOutput> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6223,8 +6079,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6623,8 +6477,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     ) as $Val);
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get type {
@@ -6633,8 +6485,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AddressCopyWith<$Res>? get valueAddress {
@@ -6647,8 +6497,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get valueAge {
@@ -6661,8 +6509,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AnnotationCopyWith<$Res>? get valueAnnotation {
@@ -6675,8 +6521,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get valueAttachment {
@@ -6689,8 +6533,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get valueCodeableConcept {
@@ -6704,8 +6546,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get valueCodeableReference {
@@ -6719,8 +6559,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get valueCoding {
@@ -6733,8 +6571,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactPointCopyWith<$Res>? get valueContactPoint {
@@ -6747,8 +6583,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CountCopyWith<$Res>? get valueCount {
@@ -6761,8 +6595,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DistanceCopyWith<$Res>? get valueDistance {
@@ -6775,8 +6607,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get valueDuration {
@@ -6789,8 +6619,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $HumanNameCopyWith<$Res>? get valueHumanName {
@@ -6803,8 +6631,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get valueIdentifier {
@@ -6817,8 +6643,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MoneyCopyWith<$Res>? get valueMoney {
@@ -6831,8 +6655,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get valuePeriod {
@@ -6845,8 +6667,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get valueQuantity {
@@ -6859,8 +6679,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get valueRange {
@@ -6873,8 +6691,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get valueRatio {
@@ -6887,8 +6703,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioRangeCopyWith<$Res>? get valueRatioRange {
@@ -6901,8 +6715,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get valueReference {
@@ -6915,8 +6727,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SampledDataCopyWith<$Res>? get valueSampledData {
@@ -6929,8 +6739,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SignatureCopyWith<$Res>? get valueSignature {
@@ -6943,8 +6751,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get valueTiming {
@@ -6957,8 +6763,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ContactDetailCopyWith<$Res>? get valueContactDetail {
@@ -6971,8 +6775,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DataRequirementCopyWith<$Res>? get valueDataRequirement {
@@ -6986,8 +6788,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirExpressionCopyWith<$Res>? get valueExpression {
@@ -7000,8 +6800,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ParameterDefinitionCopyWith<$Res>? get valueParameterDefinition {
@@ -7015,8 +6813,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RelatedArtifactCopyWith<$Res>? get valueRelatedArtifact {
@@ -7030,8 +6826,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TriggerDefinitionCopyWith<$Res>? get valueTriggerDefinition {
@@ -7045,8 +6839,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $UsageContextCopyWith<$Res>? get valueUsageContext {
@@ -7059,8 +6851,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AvailabilityCopyWith<$Res>? get valueAvailability {
@@ -7073,8 +6863,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ExtendedContactDetailCopyWith<$Res>? get valueExtendedContactDetail {
@@ -7088,8 +6876,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DosageCopyWith<$Res>? get valueDosage {
@@ -7102,8 +6888,6 @@ class _$TransportOutputCopyWithImpl<$Res, $Val extends TransportOutput>
     });
   }
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get valueMeta {
@@ -7288,8 +7072,6 @@ class __$$TransportOutputImplCopyWithImpl<$Res>
       _$TransportOutputImpl _value, $Res Function(_$TransportOutputImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -8290,7 +8072,7 @@ class _$TransportOutputImpl extends _TransportOutput {
             (identical(other.valueMeta, valueMeta) || other.valueMeta == valueMeta));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -8374,9 +8156,7 @@ class _$TransportOutputImpl extends _TransportOutput {
         valueMeta
       ]);
 
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TransportOutputImplCopyWith<_$TransportOutputImpl> get copyWith =>
@@ -8487,10 +8267,12 @@ abstract class _TransportOutput extends TransportOutput {
   factory _TransportOutput.fromJson(Map<String, dynamic> json) =
       _$TransportOutputImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -8498,9 +8280,9 @@ abstract class _TransportOutput extends TransportOutput {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -8514,338 +8296,334 @@ abstract class _TransportOutput extends TransportOutput {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] The name of the Output parameter.
-  @override
   CodeableConcept get type;
+  @override
 
   /// [valueBase64Binary] The value of the Output parameter as a basic type.
-  @override
   FhirBase64Binary? get valueBase64Binary;
+  @override
 
   /// [valueBase64BinaryElement] ("_valueBase64Binary") Extensions for
   ///  valueBase64Binary
-  @override
   @JsonKey(name: '_valueBase64Binary')
   PrimitiveElement? get valueBase64BinaryElement;
+  @override
 
   /// [valueBoolean] The value of the Output parameter as a basic type.
-  @override
   FhirBoolean? get valueBoolean;
+  @override
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
+  @override
 
   /// [valueCanonical] The value of the Output parameter as a basic type.
-  @override
   FhirCanonical? get valueCanonical;
+  @override
 
   /// [valueCanonicalElement] ("_valueCanonical") Extensions for valueCanonical
-  @override
   @JsonKey(name: '_valueCanonical')
   PrimitiveElement? get valueCanonicalElement;
+  @override
 
   /// [valueCode] The value of the Output parameter as a basic type.
-  @override
   FhirCode? get valueCode;
+  @override
 
   /// [valueCodeElement] ("_valueCode") Extensions for valueCode
-  @override
   @JsonKey(name: '_valueCode')
   PrimitiveElement? get valueCodeElement;
+  @override
 
   /// [valueDate] The value of the Output parameter as a basic type.
-  @override
   FhirDate? get valueDate;
+  @override
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
-  @override
   @JsonKey(name: '_valueDate')
   PrimitiveElement? get valueDateElement;
+  @override
 
   /// [valueDateTime] The value of the Output parameter as a basic type.
-  @override
   FhirDateTime? get valueDateTime;
+  @override
 
   /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
-  @override
   @JsonKey(name: '_valueDateTime')
   PrimitiveElement? get valueDateTimeElement;
+  @override
 
   /// [valueDecimal] The value of the Output parameter as a basic type.
-  @override
   FhirDecimal? get valueDecimal;
+  @override
 
   /// [valueDecimalElement] ("_valueDecimal") Extensions for valueDecimal
-  @override
   @JsonKey(name: '_valueDecimal')
   PrimitiveElement? get valueDecimalElement;
+  @override
 
   /// [valueId] The value of the Output parameter as a basic type.
-  @override
   FhirId? get valueId;
+  @override
 
   /// [valueIdElement] ("_valueId") Extensions for valueId
-  @override
   @JsonKey(name: '_valueId')
   PrimitiveElement? get valueIdElement;
+  @override
 
   /// [valueInstant] The value of the Output parameter as a basic type.
-  @override
   FhirInstant? get valueInstant;
+  @override
 
   /// [valueInstantElement] ("_valueInstant") Extensions for valueInstant
-  @override
   @JsonKey(name: '_valueInstant')
   PrimitiveElement? get valueInstantElement;
+  @override
 
   /// [valueInteger] The value of the Output parameter as a basic type.
-  @override
   FhirInteger? get valueInteger;
+  @override
 
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
-  @override
   @JsonKey(name: '_valueInteger')
   PrimitiveElement? get valueIntegerElement;
+  @override
 
   /// [valueInteger64] The value of the Output parameter as a basic type.
-  @override
   FhirInteger64? get valueInteger64;
+  @override
 
   /// [valueInteger64Element] ("_valueInteger64") Extensions for valueInteger64
-  @override
   @JsonKey(name: '_valueInteger64')
   PrimitiveElement? get valueInteger64Element;
+  @override
 
   /// [valueMarkdown] The value of the Output parameter as a basic type.
-  @override
   FhirMarkdown? get valueMarkdown;
+  @override
 
   /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
-  @override
   @JsonKey(name: '_valueMarkdown')
   PrimitiveElement? get valueMarkdownElement;
+  @override
 
   /// [valueOid] The value of the Output parameter as a basic type.
-  @override
   FhirId? get valueOid;
+  @override
 
   /// [valueOidElement] ("_valueOid") Extensions for valueOid
-  @override
   @JsonKey(name: '_valueOid')
   PrimitiveElement? get valueOidElement;
+  @override
 
   /// [valuePositiveInt] The value of the Output parameter as a basic type.
-  @override
   FhirPositiveInt? get valuePositiveInt;
+  @override
 
   /// [valuePositiveIntElement] ("_valuePositiveInt") Extensions for
   ///  valuePositiveInt
-  @override
   @JsonKey(name: '_valuePositiveInt')
   PrimitiveElement? get valuePositiveIntElement;
+  @override
 
   /// [valueString] The value of the Output parameter as a basic type.
-  @override
   String? get valueString;
+  @override
 
   /// [valueStringElement] ("_valueString") Extensions for valueString
-  @override
   @JsonKey(name: '_valueString')
   PrimitiveElement? get valueStringElement;
+  @override
 
   /// [valueTime] The value of the Output parameter as a basic type.
-  @override
   FhirTime? get valueTime;
+  @override
 
   /// [valueTimeElement] ("_valueTime") Extensions for valueTime
-  @override
   @JsonKey(name: '_valueTime')
   PrimitiveElement? get valueTimeElement;
+  @override
 
   /// [valueUnsignedInt] The value of the Output parameter as a basic type.
-  @override
   FhirUnsignedInt? get valueUnsignedInt;
+  @override
 
   /// [valueUnsignedIntElement] ("_valueUnsignedInt") Extensions for
   ///  valueUnsignedInt
-  @override
   @JsonKey(name: '_valueUnsignedInt')
   PrimitiveElement? get valueUnsignedIntElement;
+  @override
 
   /// [valueUri] The value of the Output parameter as a basic type.
-  @override
   FhirUri? get valueUri;
+  @override
 
   /// [valueUriElement] ("_valueUri") Extensions for valueUri
-  @override
   @JsonKey(name: '_valueUri')
   PrimitiveElement? get valueUriElement;
+  @override
 
   /// [valueUrl] The value of the Output parameter as a basic type.
-  @override
   FhirUrl? get valueUrl;
+  @override
 
   /// [valueUrlElement] ("_valueUrl") Extensions for valueUrl
-  @override
   @JsonKey(name: '_valueUrl')
   PrimitiveElement? get valueUrlElement;
+  @override
 
   /// [valueUuid] The value of the Output parameter as a basic type.
-  @override
   FhirId? get valueUuid;
+  @override
 
   /// [valueUuidElement] ("_valueUuid") Extensions for valueUuid
-  @override
   @JsonKey(name: '_valueUuid')
   PrimitiveElement? get valueUuidElement;
+  @override
 
   /// [valueAddress] The value of the Output parameter as a basic type.
-  @override
   Address? get valueAddress;
+  @override
 
   /// [valueAge] The value of the Output parameter as a basic type.
-  @override
   Age? get valueAge;
+  @override
 
   /// [valueAnnotation] The value of the Output parameter as a basic type.
-  @override
   Annotation? get valueAnnotation;
+  @override
 
   /// [valueAttachment] The value of the Output parameter as a basic type.
-  @override
   Attachment? get valueAttachment;
+  @override
 
   /// [valueCodeableConcept] The value of the Output parameter as a basic type.
-  @override
   CodeableConcept? get valueCodeableConcept;
+  @override
 
   /// [valueCodeableReference] The value of the Output parameter as a basic type.
-  @override
   CodeableReference? get valueCodeableReference;
+  @override
 
   /// [valueCoding] The value of the Output parameter as a basic type.
-  @override
   Coding? get valueCoding;
+  @override
 
   /// [valueContactPoint] The value of the Output parameter as a basic type.
-  @override
   ContactPoint? get valueContactPoint;
+  @override
 
   /// [valueCount] The value of the Output parameter as a basic type.
-  @override
   Count? get valueCount;
+  @override
 
   /// [valueDistance] The value of the Output parameter as a basic type.
-  @override
   Distance? get valueDistance;
+  @override
 
   /// [valueDuration] The value of the Output parameter as a basic type.
-  @override
   FhirDuration? get valueDuration;
+  @override
 
   /// [valueHumanName] The value of the Output parameter as a basic type.
-  @override
   HumanName? get valueHumanName;
+  @override
 
   /// [valueIdentifier] The value of the Output parameter as a basic type.
-  @override
   Identifier? get valueIdentifier;
+  @override
 
   /// [valueMoney] The value of the Output parameter as a basic type.
-  @override
   Money? get valueMoney;
+  @override
 
   /// [valuePeriod] The value of the Output parameter as a basic type.
-  @override
   Period? get valuePeriod;
+  @override
 
   /// [valueQuantity] The value of the Output parameter as a basic type.
-  @override
   Quantity? get valueQuantity;
+  @override
 
   /// [valueRange] The value of the Output parameter as a basic type.
-  @override
   Range? get valueRange;
+  @override
 
   /// [valueRatio] The value of the Output parameter as a basic type.
-  @override
   Ratio? get valueRatio;
+  @override
 
   /// [valueRatioRange] The value of the Output parameter as a basic type.
-  @override
   RatioRange? get valueRatioRange;
+  @override
 
   /// [valueReference] The value of the Output parameter as a basic type.
-  @override
   Reference? get valueReference;
+  @override
 
   /// [valueSampledData] The value of the Output parameter as a basic type.
-  @override
   SampledData? get valueSampledData;
+  @override
 
   /// [valueSignature] The value of the Output parameter as a basic type.
-  @override
   Signature? get valueSignature;
+  @override
 
   /// [valueTiming] The value of the Output parameter as a basic type.
-  @override
   Timing? get valueTiming;
+  @override
 
   /// [valueContactDetail] The value of the Output parameter as a basic type.
-  @override
   ContactDetail? get valueContactDetail;
+  @override
 
   /// [valueDataRequirement] The value of the Output parameter as a basic type.
-  @override
   DataRequirement? get valueDataRequirement;
+  @override
 
   /// [valueExpression] The value of the Output parameter as a basic type.
-  @override
   FhirExpression? get valueExpression;
+  @override
 
   /// [valueParameterDefinition] The value of the Output parameter as a basic
   ///  type.
-  @override
   ParameterDefinition? get valueParameterDefinition;
+  @override
 
   /// [valueRelatedArtifact] The value of the Output parameter as a basic type.
-  @override
   RelatedArtifact? get valueRelatedArtifact;
+  @override
 
   /// [valueTriggerDefinition] The value of the Output parameter as a basic type.
-  @override
   TriggerDefinition? get valueTriggerDefinition;
+  @override
 
   /// [valueUsageContext] The value of the Output parameter as a basic type.
-  @override
   UsageContext? get valueUsageContext;
+  @override
 
   /// [valueAvailability] The value of the Output parameter as a basic type.
-  @override
   Availability? get valueAvailability;
+  @override
 
   /// [valueExtendedContactDetail] The value of the Output parameter as a basic
   ///  type.
-  @override
   ExtendedContactDetail? get valueExtendedContactDetail;
+  @override
 
   /// [valueDosage] The value of the Output parameter as a basic type.
-  @override
   Dosage? get valueDosage;
+  @override
 
   /// [valueMeta] The value of the Output parameter as a basic type.
-  @override
   FhirMeta? get valueMeta;
-
-  /// Create a copy of TransportOutput
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TransportOutputImplCopyWith<_$TransportOutputImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

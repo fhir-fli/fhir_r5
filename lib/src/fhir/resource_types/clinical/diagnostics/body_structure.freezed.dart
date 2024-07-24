@@ -130,12 +130,8 @@ mixin _$BodyStructure {
   /// [patient] The person to which the body site belongs.
   Reference get patient => throw _privateConstructorUsedError;
 
-  /// Serializes this BodyStructure to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of BodyStructure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $BodyStructureCopyWith<BodyStructure> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -186,8 +182,6 @@ class _$BodyStructureCopyWithImpl<$Res, $Val extends BodyStructure>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of BodyStructure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -301,8 +295,6 @@ class _$BodyStructureCopyWithImpl<$Res, $Val extends BodyStructure>
     ) as $Val);
   }
 
-  /// Create a copy of BodyStructure
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -315,8 +307,6 @@ class _$BodyStructureCopyWithImpl<$Res, $Val extends BodyStructure>
     });
   }
 
-  /// Create a copy of BodyStructure
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -329,8 +319,6 @@ class _$BodyStructureCopyWithImpl<$Res, $Val extends BodyStructure>
     });
   }
 
-  /// Create a copy of BodyStructure
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get morphology {
@@ -343,8 +331,6 @@ class _$BodyStructureCopyWithImpl<$Res, $Val extends BodyStructure>
     });
   }
 
-  /// Create a copy of BodyStructure
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get patient {
@@ -404,8 +390,6 @@ class __$$BodyStructureImplCopyWithImpl<$Res>
       _$BodyStructureImpl _value, $Res Function(_$BodyStructureImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of BodyStructure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -818,7 +802,7 @@ class _$BodyStructureImpl extends _BodyStructure {
             (identical(other.patient, patient) || other.patient == patient));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -845,9 +829,7 @@ class _$BodyStructureImpl extends _BodyStructure {
         patient
       ]);
 
-  /// Create a copy of BodyStructure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$BodyStructureImplCopyWith<_$BodyStructureImpl> get copyWith =>
@@ -891,42 +873,44 @@ abstract class _BodyStructure extends BodyStructure {
   factory _BodyStructure.fromJson(Map<String, dynamic> json) =
       _$BodyStructureImpl.fromJson;
 
-  /// [resourceType] This is a BodyStructure resource
   @override
+
+  /// [resourceType] This is a BodyStructure resource
   @JsonKey(unknownEnumValue: R5ResourceType.BodyStructure)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -934,16 +918,16 @@ abstract class _BodyStructure extends BodyStructure {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -951,9 +935,9 @@ abstract class _BodyStructure extends BodyStructure {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -967,60 +951,56 @@ abstract class _BodyStructure extends BodyStructure {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] Identifier for this instance of the anatomical structure.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [active] Whether this body site is in active use.
-  @override
   FhirBoolean? get active;
+  @override
 
   /// [activeElement] ("_active") Extensions for active
-  @override
   @JsonKey(name: '_active')
   PrimitiveElement? get activeElement;
+  @override
 
   /// [morphology] The kind of structure being represented by the body structure
   ///  at `BodyStructure.location`.  This can define both normal and abnormal
   ///  morphologies.
-  @override
   CodeableConcept? get morphology;
+  @override
 
   /// [includedStructure] The anatomical location(s) or region(s) of the
   ///  specimen, lesion, or body structure.
-  @override
   List<BodyStructureIncludedStructure> get includedStructure;
+  @override
 
   /// [excludedStructure] The anatomical location(s) or region(s) not occupied or
   ///  represented by the specimen, lesion, or body structure.
-  @override
   List<BodyStructureIncludedStructure>? get excludedStructure;
+  @override
 
   /// [description] A summary, characterization or explanation of the body
   ///  structure.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [image] Image or images used to identify a location.
-  @override
   List<Attachment>? get image;
+  @override
 
   /// [patient] The person to which the body site belongs.
-  @override
   Reference get patient;
-
-  /// Create a copy of BodyStructure
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$BodyStructureImplCopyWith<_$BodyStructureImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1077,12 +1057,8 @@ mixin _$BodyStructureIncludedStructure {
   /// [qualifier] Code that represents the included structure qualifier.
   List<CodeableConcept>? get qualifier => throw _privateConstructorUsedError;
 
-  /// Serializes this BodyStructureIncludedStructure to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of BodyStructureIncludedStructure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $BodyStructureIncludedStructureCopyWith<BodyStructureIncludedStructure>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1120,8 +1096,6 @@ class _$BodyStructureIncludedStructureCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of BodyStructureIncludedStructure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1170,8 +1144,6 @@ class _$BodyStructureIncludedStructureCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of BodyStructureIncludedStructure
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get structure {
@@ -1180,8 +1152,6 @@ class _$BodyStructureIncludedStructureCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of BodyStructureIncludedStructure
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get laterality {
@@ -1230,8 +1200,6 @@ class __$$BodyStructureIncludedStructureImplCopyWithImpl<$Res>
       $Res Function(_$BodyStructureIncludedStructureImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of BodyStructureIncludedStructure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1448,7 +1416,7 @@ class _$BodyStructureIncludedStructureImpl
                 .equals(other._qualifier, _qualifier));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1461,9 +1429,7 @@ class _$BodyStructureIncludedStructureImpl
       const DeepCollectionEquality().hash(_spatialReference),
       const DeepCollectionEquality().hash(_qualifier));
 
-  /// Create a copy of BodyStructureIncludedStructure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$BodyStructureIncludedStructureImplCopyWith<
@@ -1496,10 +1462,12 @@ abstract class _BodyStructureIncludedStructure
   factory _BodyStructureIncludedStructure.fromJson(Map<String, dynamic> json) =
       _$BodyStructureIncludedStructureImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1507,9 +1475,9 @@ abstract class _BodyStructureIncludedStructure
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1523,34 +1491,30 @@ abstract class _BodyStructureIncludedStructure
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [structure] Code that represents the included structure.
-  @override
   CodeableConcept get structure;
+  @override
 
   /// [laterality] Code that represents the included structure laterality.
-  @override
   CodeableConcept? get laterality;
+  @override
 
   /// [bodyLandmarkOrientation] Body locations in relation to a specific body
   ///  landmark (tatoo, scar, other body structure).
-  @override
   List<BodyStructureBodyLandmarkOrientation>? get bodyLandmarkOrientation;
+  @override
 
   /// [spatialReference] XY or XYZ-coordinate orientation for structure.
-  @override
   List<Reference>? get spatialReference;
+  @override
 
   /// [qualifier] Code that represents the included structure qualifier.
-  @override
   List<CodeableConcept>? get qualifier;
-
-  /// Create a copy of BodyStructureIncludedStructure
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$BodyStructureIncludedStructureImplCopyWith<
           _$BodyStructureIncludedStructureImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1611,12 +1575,8 @@ mixin _$BodyStructureBodyLandmarkOrientation {
   List<CodeableConcept>? get surfaceOrientation =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this BodyStructureBodyLandmarkOrientation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of BodyStructureBodyLandmarkOrientation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $BodyStructureBodyLandmarkOrientationCopyWith<
           BodyStructureBodyLandmarkOrientation>
       get copyWith => throw _privateConstructorUsedError;
@@ -1651,8 +1611,6 @@ class _$BodyStructureBodyLandmarkOrientationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of BodyStructureBodyLandmarkOrientation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1726,8 +1684,6 @@ class __$$BodyStructureBodyLandmarkOrientationImplCopyWithImpl<$Res>
       $Res Function(_$BodyStructureBodyLandmarkOrientationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of BodyStructureBodyLandmarkOrientation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1950,7 +1906,7 @@ class _$BodyStructureBodyLandmarkOrientationImpl
                 .equals(other._surfaceOrientation, _surfaceOrientation));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1962,9 +1918,7 @@ class _$BodyStructureBodyLandmarkOrientationImpl
       const DeepCollectionEquality().hash(_distanceFromLandmark),
       const DeepCollectionEquality().hash(_surfaceOrientation));
 
-  /// Create a copy of BodyStructureBodyLandmarkOrientation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$BodyStructureBodyLandmarkOrientationImplCopyWith<
@@ -1997,10 +1951,12 @@ abstract class _BodyStructureBodyLandmarkOrientation
           Map<String, dynamic> json) =
       _$BodyStructureBodyLandmarkOrientationImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2008,9 +1964,9 @@ abstract class _BodyStructureBodyLandmarkOrientation
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2024,33 +1980,29 @@ abstract class _BodyStructureBodyLandmarkOrientation
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [landmarkDescription] A description of a landmark on the body used as a
   ///  reference to locate something else.
-  @override
   List<CodeableConcept>? get landmarkDescription;
+  @override
 
   /// [clockFacePosition] An description of the direction away from a landmark
   ///  something is located based on a radial clock dial.
-  @override
   List<CodeableConcept>? get clockFacePosition;
+  @override
 
   /// [distanceFromLandmark] The distance in centimeters a certain observation is
   ///  made from a body landmark.
-  @override
   List<BodyStructureDistanceFromLandmark>? get distanceFromLandmark;
+  @override
 
   /// [surfaceOrientation] The surface area a body location is in relation to a
   ///  landmark.
-  @override
   List<CodeableConcept>? get surfaceOrientation;
-
-  /// Create a copy of BodyStructureBodyLandmarkOrientation
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$BodyStructureBodyLandmarkOrientationImplCopyWith<
           _$BodyStructureBodyLandmarkOrientationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2097,12 +2049,8 @@ mixin _$BodyStructureDistanceFromLandmark {
   /// [value] The measured distance (e.g., in cm) from a body landmark.
   List<Quantity>? get value => throw _privateConstructorUsedError;
 
-  /// Serializes this BodyStructureDistanceFromLandmark to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of BodyStructureDistanceFromLandmark
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $BodyStructureDistanceFromLandmarkCopyWith<BodyStructureDistanceFromLandmark>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2134,8 +2082,6 @@ class _$BodyStructureDistanceFromLandmarkCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of BodyStructureDistanceFromLandmark
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2197,8 +2143,6 @@ class __$$BodyStructureDistanceFromLandmarkImplCopyWithImpl<$Res>
       $Res Function(_$BodyStructureDistanceFromLandmarkImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of BodyStructureDistanceFromLandmark
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2363,7 +2307,7 @@ class _$BodyStructureDistanceFromLandmarkImpl
             const DeepCollectionEquality().equals(other._value, _value));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2373,9 +2317,7 @@ class _$BodyStructureDistanceFromLandmarkImpl
       const DeepCollectionEquality().hash(_device),
       const DeepCollectionEquality().hash(_value));
 
-  /// Create a copy of BodyStructureDistanceFromLandmark
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$BodyStructureDistanceFromLandmarkImplCopyWith<
@@ -2405,10 +2347,12 @@ abstract class _BodyStructureDistanceFromLandmark
           Map<String, dynamic> json) =
       _$BodyStructureDistanceFromLandmarkImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2416,9 +2360,9 @@ abstract class _BodyStructureDistanceFromLandmark
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2432,21 +2376,17 @@ abstract class _BodyStructureDistanceFromLandmark
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [device] An instrument, tool, analyzer, etc. used in the measurement.
-  @override
   List<CodeableReference>? get device;
+  @override
 
   /// [value] The measured distance (e.g., in cm) from a body landmark.
-  @override
   List<Quantity>? get value;
-
-  /// Create a copy of BodyStructureDistanceFromLandmark
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$BodyStructureDistanceFromLandmarkImplCopyWith<
           _$BodyStructureDistanceFromLandmarkImpl>
       get copyWith => throw _privateConstructorUsedError;

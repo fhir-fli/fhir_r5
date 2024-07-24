@@ -199,12 +199,8 @@ mixin _$ClinicalImpression {
   ///  author could also appear.
   List<Annotation>? get note => throw _privateConstructorUsedError;
 
-  /// Serializes this ClinicalImpression to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ClinicalImpression
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ClinicalImpressionCopyWith<ClinicalImpression> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -277,8 +273,6 @@ class _$ClinicalImpressionCopyWithImpl<$Res, $Val extends ClinicalImpression>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ClinicalImpression
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -472,8 +466,6 @@ class _$ClinicalImpressionCopyWithImpl<$Res, $Val extends ClinicalImpression>
     ) as $Val);
   }
 
-  /// Create a copy of ClinicalImpression
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -486,8 +478,6 @@ class _$ClinicalImpressionCopyWithImpl<$Res, $Val extends ClinicalImpression>
     });
   }
 
-  /// Create a copy of ClinicalImpression
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -500,8 +490,6 @@ class _$ClinicalImpressionCopyWithImpl<$Res, $Val extends ClinicalImpression>
     });
   }
 
-  /// Create a copy of ClinicalImpression
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get statusReason {
@@ -514,8 +502,6 @@ class _$ClinicalImpressionCopyWithImpl<$Res, $Val extends ClinicalImpression>
     });
   }
 
-  /// Create a copy of ClinicalImpression
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get subject {
@@ -524,8 +510,6 @@ class _$ClinicalImpressionCopyWithImpl<$Res, $Val extends ClinicalImpression>
     });
   }
 
-  /// Create a copy of ClinicalImpression
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get encounter {
@@ -538,8 +522,6 @@ class _$ClinicalImpressionCopyWithImpl<$Res, $Val extends ClinicalImpression>
     });
   }
 
-  /// Create a copy of ClinicalImpression
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get effectivePeriod {
@@ -552,8 +534,6 @@ class _$ClinicalImpressionCopyWithImpl<$Res, $Val extends ClinicalImpression>
     });
   }
 
-  /// Create a copy of ClinicalImpression
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get performer {
@@ -566,8 +546,6 @@ class _$ClinicalImpressionCopyWithImpl<$Res, $Val extends ClinicalImpression>
     });
   }
 
-  /// Create a copy of ClinicalImpression
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get previous {
@@ -580,8 +558,6 @@ class _$ClinicalImpressionCopyWithImpl<$Res, $Val extends ClinicalImpression>
     });
   }
 
-  /// Create a copy of ClinicalImpression
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get changePattern {
@@ -672,8 +648,6 @@ class __$$ClinicalImpressionImplCopyWithImpl<$Res>
       $Res Function(_$ClinicalImpressionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ClinicalImpression
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1351,7 +1325,7 @@ class _$ClinicalImpressionImpl extends _ClinicalImpression {
             const DeepCollectionEquality().equals(other._note, _note));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1394,9 +1368,7 @@ class _$ClinicalImpressionImpl extends _ClinicalImpression {
         const DeepCollectionEquality().hash(_note)
       ]);
 
-  /// Create a copy of ClinicalImpression
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ClinicalImpressionImplCopyWith<_$ClinicalImpressionImpl> get copyWith =>
@@ -1458,42 +1430,44 @@ abstract class _ClinicalImpression extends ClinicalImpression {
   factory _ClinicalImpression.fromJson(Map<String, dynamic> json) =
       _$ClinicalImpressionImpl.fromJson;
 
-  /// [resourceType] This is a ClinicalImpression resource
   @override
+
+  /// [resourceType] This is a ClinicalImpression resource
   @JsonKey(unknownEnumValue: R5ResourceType.ClinicalImpression)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1501,16 +1475,16 @@ abstract class _ClinicalImpression extends ClinicalImpression {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1518,9 +1492,9 @@ abstract class _ClinicalImpression extends ClinicalImpression {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1534,143 +1508,139 @@ abstract class _ClinicalImpression extends ClinicalImpression {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] Business identifiers assigned to this clinical impression by
   ///  the performer or other systems which remain constant as the resource is
   ///  updated and propagates from server to server.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [status] Identifies the workflow status of the assessment.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [statusReason] Captures the reason for the current state of the
   ///  ClinicalImpression.
-  @override
   CodeableConcept? get statusReason;
+  @override
 
   /// [description] A summary of the context and/or cause of the assessment - why
   ///  / where it was performed, and what patient events/status prompted it.
-  @override
   String? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [subject] The patient or group of individuals assessed as part of this
   ///  record.
-  @override
   Reference get subject;
+  @override
 
   /// [encounter] The Encounter during which this ClinicalImpression was created
   ///  or to which the creation of this record is tightly associated.
-  @override
   Reference? get encounter;
+  @override
 
   /// [effectiveDateTime] The point in time or period over which the subject was
   ///  assessed.
-  @override
   FhirDateTime? get effectiveDateTime;
+  @override
 
   /// [effectiveDateTimeElement] ("_effectiveDateTime") Extensions for
   ///  effectiveDateTime
-  @override
   @JsonKey(name: '_effectiveDateTime')
   PrimitiveElement? get effectiveDateTimeElement;
+  @override
 
   /// [effectivePeriod] The point in time or period over which the subject was
   ///  assessed.
-  @override
   Period? get effectivePeriod;
+  @override
 
   /// [date] Indicates when the documentation of the assessment was complete.
-  @override
   FhirDateTime? get date;
+  @override
 
   /// [dateElement] ("_date") Extensions for date
-  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
+  @override
 
   /// [performer] The clinician performing the assessment.
-  @override
   Reference? get performer;
+  @override
 
   /// [previous] A reference to the last assessment that was conducted on this
   ///  patient. Assessments are often/usually ongoing in nature; a care provider
   ///  (practitioner or team) will make new assessments on an ongoing basis as
   ///  new data arises or the patient's conditions changes.
-  @override
   Reference? get previous;
+  @override
 
   /// [problem] A list of the relevant problems/conditions for a patient.
-  @override
   List<Reference>? get problem;
+  @override
 
   /// [changePattern] Change in the status/pattern of a subject's condition since
   ///  previously assessed, such as worsening, improving, or no change.  It is a
   ///  subjective assessment of the direction of the change.
-  @override
   CodeableConcept? get changePattern;
+  @override
 
   /// [protocol] Reference to a specific published clinical protocol that was
   ///  followed during this assessment, and/or that provides evidence in support
   ///  of the diagnosis.
-  @override
   List<FhirUri>? get protocol;
+  @override
 
   /// [protocolElement] ("_protocol") Extensions for protocol
-  @override
   @JsonKey(name: '_protocol')
   List<PrimitiveElement>? get protocolElement;
+  @override
 
   /// [summary] A text summary of the investigations and the diagnosis.
-  @override
   String? get summary;
+  @override
 
   /// [summaryElement] ("_summary") Extensions for summary
-  @override
   @JsonKey(name: '_summary')
   PrimitiveElement? get summaryElement;
+  @override
 
   /// [finding] Specific findings or diagnoses that were considered likely or
   ///  relevant to ongoing treatment.
-  @override
   List<ClinicalImpressionFinding>? get finding;
+  @override
 
   /// [prognosisCodeableConcept] Estimate of likely outcome.
-  @override
   List<CodeableConcept>? get prognosisCodeableConcept;
+  @override
 
   /// [prognosisReference] RiskAssessment expressing likely outcome.
-  @override
   List<Reference>? get prognosisReference;
+  @override
 
   /// [supportingInfo] Information supporting the clinical impression, which can
   ///  contain investigation results.
-  @override
   List<Reference>? get supportingInfo;
+  @override
 
   /// [note] Commentary about the impression, typically recorded after the
   ///  impression itself was made, though supplemental notes by the original
   ///  author could also appear.
-  @override
   List<Annotation>? get note;
-
-  /// Create a copy of ClinicalImpression
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ClinicalImpressionImplCopyWith<_$ClinicalImpressionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1721,12 +1691,8 @@ mixin _$ClinicalImpressionFinding {
   @JsonKey(name: '_basis')
   PrimitiveElement? get basisElement => throw _privateConstructorUsedError;
 
-  /// Serializes this ClinicalImpressionFinding to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ClinicalImpressionFinding
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ClinicalImpressionFindingCopyWith<ClinicalImpressionFinding> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1759,8 +1725,6 @@ class _$ClinicalImpressionFindingCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ClinicalImpressionFinding
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1799,8 +1763,6 @@ class _$ClinicalImpressionFindingCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ClinicalImpressionFinding
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get item {
@@ -1845,8 +1807,6 @@ class __$$ClinicalImpressionFindingImplCopyWithImpl<$Res>
       $Res Function(_$ClinicalImpressionFindingImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ClinicalImpressionFinding
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2003,7 +1963,7 @@ class _$ClinicalImpressionFindingImpl extends _ClinicalImpressionFinding {
                 other.basisElement == basisElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2014,9 +1974,7 @@ class _$ClinicalImpressionFindingImpl extends _ClinicalImpressionFinding {
       basis,
       basisElement);
 
-  /// Create a copy of ClinicalImpressionFinding
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ClinicalImpressionFindingImplCopyWith<_$ClinicalImpressionFindingImpl>
@@ -2045,10 +2003,12 @@ abstract class _ClinicalImpressionFinding extends ClinicalImpressionFinding {
   factory _ClinicalImpressionFinding.fromJson(Map<String, dynamic> json) =
       _$ClinicalImpressionFindingImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2056,9 +2016,9 @@ abstract class _ClinicalImpressionFinding extends ClinicalImpressionFinding {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2072,27 +2032,23 @@ abstract class _ClinicalImpressionFinding extends ClinicalImpressionFinding {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [item] Specific text, code or reference for finding or diagnosis, which may
   ///  include ruled-out or resolved conditions.
-  @override
   CodeableReference? get item;
+  @override
 
   /// [basis] Which investigations support finding or diagnosis.
-  @override
   String? get basis;
+  @override
 
   /// [basisElement] ("_basis") Extensions for basis
-  @override
   @JsonKey(name: '_basis')
   PrimitiveElement? get basisElement;
-
-  /// Create a copy of ClinicalImpressionFinding
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ClinicalImpressionFindingImplCopyWith<_$ClinicalImpressionFindingImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

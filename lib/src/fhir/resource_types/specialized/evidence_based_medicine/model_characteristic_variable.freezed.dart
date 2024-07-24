@@ -72,12 +72,8 @@ mixin _$ModelCharacteristicVariable {
   ///  variables.
   List<Range>? get valueRange => throw _privateConstructorUsedError;
 
-  /// Serializes this ModelCharacteristicVariable to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ModelCharacteristicVariable
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ModelCharacteristicVariableCopyWith<ModelCharacteristicVariable>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -115,8 +111,6 @@ class _$ModelCharacteristicVariableCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ModelCharacteristicVariable
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -170,8 +164,6 @@ class _$ModelCharacteristicVariableCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ModelCharacteristicVariable
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get variableDefinition {
@@ -215,8 +207,6 @@ class __$$ModelCharacteristicVariableImplCopyWithImpl<$Res>
       $Res Function(_$ModelCharacteristicVariableImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ModelCharacteristicVariable
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -447,7 +437,7 @@ class _$ModelCharacteristicVariableImpl extends _ModelCharacteristicVariable {
                 .equals(other._valueRange, _valueRange));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -461,9 +451,7 @@ class _$ModelCharacteristicVariableImpl extends _ModelCharacteristicVariable {
       const DeepCollectionEquality().hash(_valueQuantity),
       const DeepCollectionEquality().hash(_valueRange));
 
-  /// Create a copy of ModelCharacteristicVariable
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ModelCharacteristicVariableImplCopyWith<_$ModelCharacteristicVariableImpl>
@@ -495,10 +483,12 @@ abstract class _ModelCharacteristicVariable
   factory _ModelCharacteristicVariable.fromJson(Map<String, dynamic> json) =
       _$ModelCharacteristicVariableImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -506,9 +496,9 @@ abstract class _ModelCharacteristicVariable
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -522,41 +512,37 @@ abstract class _ModelCharacteristicVariable
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [variableDefinition] Description of the variable.
-  @override
   Reference get variableDefinition;
+  @override
 
   /// [handling] How the variable is classified for use in adjusted analysis.
-  @override
   FhirCode? get handling;
+  @override
 
   /// [handlingElement] ("_handling") Extensions for handling
-  @override
   @JsonKey(name: '_handling')
   PrimitiveElement? get handlingElement;
+  @override
 
   /// [valueCategory] Description for grouping of ordinal or polychotomous
   ///  variables.
-  @override
   List<CodeableConcept>? get valueCategory;
+  @override
 
   /// [valueQuantity] Discrete value for grouping of ordinal or polychotomous
   ///  variables.
-  @override
   List<Quantity>? get valueQuantity;
+  @override
 
   /// [valueRange] Range of values for grouping of ordinal or polychotomous
   ///  variables.
-  @override
   List<Range>? get valueRange;
-
-  /// Create a copy of ModelCharacteristicVariable
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ModelCharacteristicVariableImplCopyWith<_$ModelCharacteristicVariableImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

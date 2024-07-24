@@ -189,12 +189,8 @@ mixin _$SubstanceDefinition {
   SubstanceDefinitionSourceMaterial? get sourceMaterial =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this SubstanceDefinition to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstanceDefinition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstanceDefinitionCopyWith<SubstanceDefinition> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -267,8 +263,6 @@ class _$SubstanceDefinitionCopyWithImpl<$Res, $Val extends SubstanceDefinition>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstanceDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -462,8 +456,6 @@ class _$SubstanceDefinitionCopyWithImpl<$Res, $Val extends SubstanceDefinition>
     ) as $Val);
   }
 
-  /// Create a copy of SubstanceDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -476,8 +468,6 @@ class _$SubstanceDefinitionCopyWithImpl<$Res, $Val extends SubstanceDefinition>
     });
   }
 
-  /// Create a copy of SubstanceDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -490,8 +480,6 @@ class _$SubstanceDefinitionCopyWithImpl<$Res, $Val extends SubstanceDefinition>
     });
   }
 
-  /// Create a copy of SubstanceDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get status {
@@ -504,8 +492,6 @@ class _$SubstanceDefinitionCopyWithImpl<$Res, $Val extends SubstanceDefinition>
     });
   }
 
-  /// Create a copy of SubstanceDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get domain {
@@ -518,8 +504,6 @@ class _$SubstanceDefinitionCopyWithImpl<$Res, $Val extends SubstanceDefinition>
     });
   }
 
-  /// Create a copy of SubstanceDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get referenceInformation {
@@ -532,8 +516,6 @@ class _$SubstanceDefinitionCopyWithImpl<$Res, $Val extends SubstanceDefinition>
     });
   }
 
-  /// Create a copy of SubstanceDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SubstanceDefinitionStructureCopyWith<$Res>? get structure {
@@ -547,8 +529,6 @@ class _$SubstanceDefinitionCopyWithImpl<$Res, $Val extends SubstanceDefinition>
     });
   }
 
-  /// Create a copy of SubstanceDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get nucleicAcid {
@@ -561,8 +541,6 @@ class _$SubstanceDefinitionCopyWithImpl<$Res, $Val extends SubstanceDefinition>
     });
   }
 
-  /// Create a copy of SubstanceDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get polymer {
@@ -575,8 +553,6 @@ class _$SubstanceDefinitionCopyWithImpl<$Res, $Val extends SubstanceDefinition>
     });
   }
 
-  /// Create a copy of SubstanceDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get protein {
@@ -589,8 +565,6 @@ class _$SubstanceDefinitionCopyWithImpl<$Res, $Val extends SubstanceDefinition>
     });
   }
 
-  /// Create a copy of SubstanceDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SubstanceDefinitionSourceMaterialCopyWith<$Res>? get sourceMaterial {
@@ -683,8 +657,6 @@ class __$$SubstanceDefinitionImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceDefinitionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstanceDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1395,7 +1367,7 @@ class _$SubstanceDefinitionImpl extends _SubstanceDefinition {
                 other.sourceMaterial == sourceMaterial));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1438,9 +1410,7 @@ class _$SubstanceDefinitionImpl extends _SubstanceDefinition {
         sourceMaterial
       ]);
 
-  /// Create a copy of SubstanceDefinition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceDefinitionImplCopyWith<_$SubstanceDefinitionImpl> get copyWith =>
@@ -1502,42 +1472,44 @@ abstract class _SubstanceDefinition extends SubstanceDefinition {
   factory _SubstanceDefinition.fromJson(Map<String, dynamic> json) =
       _$SubstanceDefinitionImpl.fromJson;
 
-  /// [resourceType] This is a SubstanceDefinition resource
   @override
+
+  /// [resourceType] This is a SubstanceDefinition resource
   @JsonKey(unknownEnumValue: R5ResourceType.SubstanceDefinition)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1545,16 +1517,16 @@ abstract class _SubstanceDefinition extends SubstanceDefinition {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1562,9 +1534,9 @@ abstract class _SubstanceDefinition extends SubstanceDefinition {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1578,129 +1550,125 @@ abstract class _SubstanceDefinition extends SubstanceDefinition {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] Identifier by which this substance is known.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [version] A business level version identifier of the substance.
-  @override
   String? get version;
+  @override
 
   /// [versionElement] ("_version") Extensions for version
-  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
+  @override
 
   /// [status] Status of substance within the catalogue e.g. active, retired.
-  @override
   CodeableConcept? get status;
+  @override
 
   /// [classification] A high level categorization, e.g. polymer or nucleic acid,
   ///  or food, chemical, biological, or a lower level such as the general types
   ///  of polymer (linear or branch chain) or type of impurity (process related
   ///  or contaminant).
-  @override
   List<CodeableConcept>? get classification;
+  @override
 
   /// [domain] If the substance applies to human or veterinary use.
-  @override
   CodeableConcept? get domain;
+  @override
 
   /// [grade] The quality standard, established benchmark, to which substance
   ///  complies (e.g. USP/NF, Ph. Eur, JP, BP, Company Standard).
-  @override
   List<CodeableConcept>? get grade;
+  @override
 
   /// [description] Textual description of the substance.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [informationSource] Supporting literature.
-  @override
   List<Reference>? get informationSource;
+  @override
 
   /// [note] Textual comment about the substance's catalogue or registry record.
-  @override
   List<Annotation>? get note;
+  @override
 
   /// [manufacturer] The entity that creates, makes, produces or fabricates the
   ///  substance. This is a set of potential manufacturers but is not necessarily
   ///  comprehensive.
-  @override
   List<Reference>? get manufacturer;
+  @override
 
   /// [supplier] An entity that is the source for the substance. It may be
   ///  different from the manufacturer. Supplier is synonymous to a distributor.
-  @override
   List<Reference>? get supplier;
+  @override
 
   /// [moiety] Moiety, for structural modifications.
-  @override
   List<SubstanceDefinitionMoiety>? get moiety;
+  @override
 
   /// [characterization] General specifications for this substance.
-  @override
   List<SubstanceDefinitionCharacterization>? get characterization;
+  @override
 
   /// [property] General specifications for this substance.
-  @override
   List<SubstanceDefinitionProperty>? get property;
+  @override
 
   /// [referenceInformation] General information detailing this substance.
-  @override
   Reference? get referenceInformation;
+  @override
 
   /// [molecularWeight] The average mass of a molecule of a compound compared to
   ///  1/12 the mass of carbon 12 and calculated as the sum of the atomic weights
   ///  of the constituent atoms.
-  @override
   List<SubstanceDefinitionMolecularWeight>? get molecularWeight;
+  @override
 
   /// [structure] Structural information.
-  @override
   SubstanceDefinitionStructure? get structure;
+  @override
 
   /// [code] Codes associated with the substance.
-  @override
   List<SubstanceDefinitionCode>? get code;
+  @override
 
   /// [name] Names applicable to this substance.
-  @override
   List<SubstanceDefinitionName>? get name;
+  @override
 
   /// [relationship] A link between this substance and another, with details of
   ///  the relationship.
-  @override
   List<SubstanceDefinitionRelationship>? get relationship;
+  @override
 
   /// [nucleicAcid] Data items specific to nucleic acids.
-  @override
   Reference? get nucleicAcid;
+  @override
 
   /// [polymer] Data items specific to polymers.
-  @override
   Reference? get polymer;
+  @override
 
   /// [protein] Data items specific to proteins.
-  @override
   Reference? get protein;
+  @override
 
   /// [sourceMaterial] Material or taxonomic/anatomical source for the substance.
-  @override
   SubstanceDefinitionSourceMaterial? get sourceMaterial;
-
-  /// Create a copy of SubstanceDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstanceDefinitionImplCopyWith<_$SubstanceDefinitionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1786,12 +1754,8 @@ mixin _$SubstanceDefinitionMoiety {
   ///  a mole ratio or weight ratio.
   CodeableConcept? get measurementType => throw _privateConstructorUsedError;
 
-  /// Serializes this SubstanceDefinitionMoiety to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstanceDefinitionMoiety
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstanceDefinitionMoietyCopyWith<SubstanceDefinitionMoiety> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1839,8 +1803,6 @@ class _$SubstanceDefinitionMoietyCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstanceDefinitionMoiety
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1924,8 +1886,6 @@ class _$SubstanceDefinitionMoietyCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubstanceDefinitionMoiety
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get role {
@@ -1938,8 +1898,6 @@ class _$SubstanceDefinitionMoietyCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionMoiety
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get identifier {
@@ -1952,8 +1910,6 @@ class _$SubstanceDefinitionMoietyCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionMoiety
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get stereochemistry {
@@ -1966,8 +1922,6 @@ class _$SubstanceDefinitionMoietyCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionMoiety
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get opticalActivity {
@@ -1980,8 +1934,6 @@ class _$SubstanceDefinitionMoietyCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionMoiety
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get amountQuantity {
@@ -1994,8 +1946,6 @@ class _$SubstanceDefinitionMoietyCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionMoiety
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get measurementType {
@@ -2060,8 +2010,6 @@ class __$$SubstanceDefinitionMoietyImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceDefinitionMoietyImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstanceDefinitionMoiety
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2333,7 +2281,7 @@ class _$SubstanceDefinitionMoietyImpl extends _SubstanceDefinitionMoiety {
                 other.measurementType == measurementType));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2353,9 +2301,7 @@ class _$SubstanceDefinitionMoietyImpl extends _SubstanceDefinitionMoiety {
       amountStringElement,
       measurementType);
 
-  /// Create a copy of SubstanceDefinitionMoiety
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceDefinitionMoietyImplCopyWith<_$SubstanceDefinitionMoietyImpl>
@@ -2395,10 +2341,12 @@ abstract class _SubstanceDefinitionMoiety extends SubstanceDefinitionMoiety {
   factory _SubstanceDefinitionMoiety.fromJson(Map<String, dynamic> json) =
       _$SubstanceDefinitionMoietyImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2406,9 +2354,9 @@ abstract class _SubstanceDefinitionMoiety extends SubstanceDefinitionMoiety {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2422,69 +2370,65 @@ abstract class _SubstanceDefinitionMoiety extends SubstanceDefinitionMoiety {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [role] Role that the moiety is playing.
-  @override
   CodeableConcept? get role;
+  @override
 
   /// [identifier] Identifier by which this moiety substance is known.
-  @override
   Identifier? get identifier;
+  @override
 
   /// [name] Textual name for this moiety substance.
-  @override
   String? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [stereochemistry] Stereochemistry type.
-  @override
   CodeableConcept? get stereochemistry;
+  @override
 
   /// [opticalActivity] Optical activity type.
-  @override
   CodeableConcept? get opticalActivity;
+  @override
 
   /// [molecularFormula] Molecular formula for this moiety of this substance,
   ///  typically using the Hill system.
-  @override
   String? get molecularFormula;
+  @override
 
   /// [molecularFormulaElement] ("_molecularFormula") Extensions for
   ///  molecularFormula
-  @override
   @JsonKey(name: '_molecularFormula')
   PrimitiveElement? get molecularFormulaElement;
+  @override
 
   /// [amountQuantity] Quantitative value for this moiety.
-  @override
   Quantity? get amountQuantity;
+  @override
 
   /// [amountString] Quantitative value for this moiety.
-  @override
   String? get amountString;
+  @override
 
   /// [amountStringElement] ("_amountString") Extensions for amountString
-  @override
   @JsonKey(name: '_amountString')
   PrimitiveElement? get amountStringElement;
+  @override
 
   /// [measurementType] The measurement type of the quantitative value. In
   ///  capturing the actual relative amounts of substances or molecular fragments
   ///  it may be necessary to indicate whether the amount refers to, for example,
   ///  a mole ratio or weight ratio.
-  @override
   CodeableConcept? get measurementType;
-
-  /// Create a copy of SubstanceDefinitionMoiety
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstanceDefinitionMoietyImplCopyWith<_$SubstanceDefinitionMoietyImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2546,12 +2490,8 @@ mixin _$SubstanceDefinitionCharacterization {
   ///  chromatogram or spectrum analysis.
   List<Attachment>? get file => throw _privateConstructorUsedError;
 
-  /// Serializes this SubstanceDefinitionCharacterization to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstanceDefinitionCharacterization
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstanceDefinitionCharacterizationCopyWith<
           SubstanceDefinitionCharacterization>
       get copyWith => throw _privateConstructorUsedError;
@@ -2590,8 +2530,6 @@ class _$SubstanceDefinitionCharacterizationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstanceDefinitionCharacterization
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2640,8 +2578,6 @@ class _$SubstanceDefinitionCharacterizationCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubstanceDefinitionCharacterization
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get technique {
@@ -2654,8 +2590,6 @@ class _$SubstanceDefinitionCharacterizationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionCharacterization
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get form {
@@ -2704,8 +2638,6 @@ class __$$SubstanceDefinitionCharacterizationImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceDefinitionCharacterizationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstanceDefinitionCharacterization
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2904,7 +2836,7 @@ class _$SubstanceDefinitionCharacterizationImpl
             const DeepCollectionEquality().equals(other._file, _file));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2917,9 +2849,7 @@ class _$SubstanceDefinitionCharacterizationImpl
       descriptionElement,
       const DeepCollectionEquality().hash(_file));
 
-  /// Create a copy of SubstanceDefinitionCharacterization
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceDefinitionCharacterizationImplCopyWith<
@@ -2953,10 +2883,12 @@ abstract class _SubstanceDefinitionCharacterization
           Map<String, dynamic> json) =
       _$SubstanceDefinitionCharacterizationImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2964,9 +2896,9 @@ abstract class _SubstanceDefinitionCharacterization
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2980,39 +2912,35 @@ abstract class _SubstanceDefinitionCharacterization
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [technique] The method used to elucidate the characterization of the drug
   ///  substance. Example: HPLC.
-  @override
   CodeableConcept? get technique;
+  @override
 
   /// [form] Describes the nature of the chemical entity and explains, for
   ///  instance, whether this is a base or a salt form.
-  @override
   CodeableConcept? get form;
+  @override
 
   /// [description] The description or justification in support of the
   ///  interpretation of the data file.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [file] The data produced by the analytical instrument or a pictorial
   ///  representation of that data. Examples: a JCAMP, JDX, or ADX file, or a
   ///  chromatogram or spectrum analysis.
-  @override
   List<Attachment>? get file;
-
-  /// Create a copy of SubstanceDefinitionCharacterization
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstanceDefinitionCharacterizationImplCopyWith<
           _$SubstanceDefinitionCharacterizationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3081,12 +3009,8 @@ mixin _$SubstanceDefinitionProperty {
   /// [valueAttachment] A value for the property.
   Attachment? get valueAttachment => throw _privateConstructorUsedError;
 
-  /// Serializes this SubstanceDefinitionProperty to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstanceDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstanceDefinitionPropertyCopyWith<SubstanceDefinitionProperty>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3129,8 +3053,6 @@ class _$SubstanceDefinitionPropertyCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstanceDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3194,8 +3116,6 @@ class _$SubstanceDefinitionPropertyCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubstanceDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get type {
@@ -3204,8 +3124,6 @@ class _$SubstanceDefinitionPropertyCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get valueCodeableConcept {
@@ -3219,8 +3137,6 @@ class _$SubstanceDefinitionPropertyCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get valueQuantity {
@@ -3233,8 +3149,6 @@ class _$SubstanceDefinitionPropertyCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get valueAttachment {
@@ -3290,8 +3204,6 @@ class __$$SubstanceDefinitionPropertyImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceDefinitionPropertyImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstanceDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3510,7 +3422,7 @@ class _$SubstanceDefinitionPropertyImpl extends _SubstanceDefinitionProperty {
                 other.valueAttachment == valueAttachment));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3526,9 +3438,7 @@ class _$SubstanceDefinitionPropertyImpl extends _SubstanceDefinitionProperty {
       valueBooleanElement,
       valueAttachment);
 
-  /// Create a copy of SubstanceDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceDefinitionPropertyImplCopyWith<_$SubstanceDefinitionPropertyImpl>
@@ -3563,10 +3473,12 @@ abstract class _SubstanceDefinitionProperty
   factory _SubstanceDefinitionProperty.fromJson(Map<String, dynamic> json) =
       _$SubstanceDefinitionPropertyImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3574,9 +3486,9 @@ abstract class _SubstanceDefinitionProperty
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3590,47 +3502,43 @@ abstract class _SubstanceDefinitionProperty
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] A code expressing the type of property.
-  @override
   CodeableConcept get type;
+  @override
 
   /// [valueCodeableConcept] A value for the property.
-  @override
   CodeableConcept? get valueCodeableConcept;
+  @override
 
   /// [valueQuantity] A value for the property.
-  @override
   Quantity? get valueQuantity;
+  @override
 
   /// [valueDate] A value for the property.
-  @override
   FhirDate? get valueDate;
+  @override
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
-  @override
   @JsonKey(name: '_valueDate')
   PrimitiveElement? get valueDateElement;
+  @override
 
   /// [valueBoolean] A value for the property.
-  @override
   FhirBoolean? get valueBoolean;
+  @override
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
+  @override
 
   /// [valueAttachment] A value for the property.
-  @override
   Attachment? get valueAttachment;
-
-  /// Create a copy of SubstanceDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstanceDefinitionPropertyImplCopyWith<_$SubstanceDefinitionPropertyImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3683,12 +3591,8 @@ mixin _$SubstanceDefinitionMolecularWeight {
   ///  in this field.
   Quantity get amount => throw _privateConstructorUsedError;
 
-  /// Serializes this SubstanceDefinitionMolecularWeight to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstanceDefinitionMolecularWeight
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstanceDefinitionMolecularWeightCopyWith<
           SubstanceDefinitionMolecularWeight>
       get copyWith => throw _privateConstructorUsedError;
@@ -3726,8 +3630,6 @@ class _$SubstanceDefinitionMolecularWeightCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstanceDefinitionMolecularWeight
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3766,8 +3668,6 @@ class _$SubstanceDefinitionMolecularWeightCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubstanceDefinitionMolecularWeight
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get method {
@@ -3780,8 +3680,6 @@ class _$SubstanceDefinitionMolecularWeightCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionMolecularWeight
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -3794,8 +3692,6 @@ class _$SubstanceDefinitionMolecularWeightCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionMolecularWeight
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res> get amount {
@@ -3840,8 +3736,6 @@ class __$$SubstanceDefinitionMolecularWeightImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceDefinitionMolecularWeightImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstanceDefinitionMolecularWeight
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4001,7 +3895,7 @@ class _$SubstanceDefinitionMolecularWeightImpl
             (identical(other.amount, amount) || other.amount == amount));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4012,9 +3906,7 @@ class _$SubstanceDefinitionMolecularWeightImpl
       type,
       amount);
 
-  /// Create a copy of SubstanceDefinitionMolecularWeight
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceDefinitionMolecularWeightImplCopyWith<
@@ -4046,10 +3938,12 @@ abstract class _SubstanceDefinitionMolecularWeight
           Map<String, dynamic> json) =
       _$SubstanceDefinitionMolecularWeightImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4057,9 +3951,9 @@ abstract class _SubstanceDefinitionMolecularWeight
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4073,29 +3967,25 @@ abstract class _SubstanceDefinitionMolecularWeight
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [method] The method by which the molecular weight was determined.
-  @override
   CodeableConcept? get method;
+  @override
 
   /// [type] Type of molecular weight such as exact, average (also known as.
   ///  number average), weight average.
-  @override
   CodeableConcept? get type;
+  @override
 
   /// [amount] Used to capture quantitative values for a variety of elements. If
   ///  only limits are given, the arithmetic mean would be the average. If only a
   ///  single definite value for a given element is given, it would be captured
   ///  in this field.
-  @override
   Quantity get amount;
-
-  /// Create a copy of SubstanceDefinitionMolecularWeight
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstanceDefinitionMolecularWeightImplCopyWith<
           _$SubstanceDefinitionMolecularWeightImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4179,12 +4069,8 @@ mixin _$SubstanceDefinitionStructure {
   List<SubstanceDefinitionRepresentation>? get representation =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this SubstanceDefinitionStructure to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstanceDefinitionStructure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstanceDefinitionStructureCopyWith<SubstanceDefinitionStructure>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4230,8 +4116,6 @@ class _$SubstanceDefinitionStructureCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstanceDefinitionStructure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4306,8 +4190,6 @@ class _$SubstanceDefinitionStructureCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubstanceDefinitionStructure
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get stereochemistry {
@@ -4320,8 +4202,6 @@ class _$SubstanceDefinitionStructureCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionStructure
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get opticalActivity {
@@ -4334,8 +4214,6 @@ class _$SubstanceDefinitionStructureCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionStructure
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SubstanceDefinitionMolecularWeightCopyWith<$Res>? get molecularWeight {
@@ -4394,8 +4272,6 @@ class __$$SubstanceDefinitionStructureImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceDefinitionStructureImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstanceDefinitionStructure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4683,7 +4559,7 @@ class _$SubstanceDefinitionStructureImpl extends _SubstanceDefinitionStructure {
                 .equals(other._representation, _representation));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4701,9 +4577,7 @@ class _$SubstanceDefinitionStructureImpl extends _SubstanceDefinitionStructure {
       const DeepCollectionEquality().hash(_sourceDocument),
       const DeepCollectionEquality().hash(_representation));
 
-  /// Create a copy of SubstanceDefinitionStructure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceDefinitionStructureImplCopyWith<
@@ -4743,10 +4617,12 @@ abstract class _SubstanceDefinitionStructure
   factory _SubstanceDefinitionStructure.fromJson(Map<String, dynamic> json) =
       _$SubstanceDefinitionStructureImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4754,9 +4630,9 @@ abstract class _SubstanceDefinitionStructure
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4770,62 +4646,58 @@ abstract class _SubstanceDefinitionStructure
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [stereochemistry] Stereochemistry type.
-  @override
   CodeableConcept? get stereochemistry;
+  @override
 
   /// [opticalActivity] Optical activity type.
-  @override
   CodeableConcept? get opticalActivity;
+  @override
 
   /// [molecularFormula] An expression which states the number and type of atoms
   ///  present in a molecule of a substance.
-  @override
   String? get molecularFormula;
+  @override
 
   /// [molecularFormulaElement] ("_molecularFormula") Extensions for
   ///  molecularFormula
-  @override
   @JsonKey(name: '_molecularFormula')
   PrimitiveElement? get molecularFormulaElement;
+  @override
 
   /// [molecularFormulaByMoiety] Specified per moiety according to the Hill
   ///  system, i.e. first C, then H, then alphabetical, each moiety separated by
   ///  a dot.
-  @override
   String? get molecularFormulaByMoiety;
+  @override
 
   /// [molecularFormulaByMoietyElement] ("_molecularFormulaByMoiety") Extensions
   ///  for molecularFormulaByMoiety
-  @override
   @JsonKey(name: '_molecularFormulaByMoiety')
   PrimitiveElement? get molecularFormulaByMoietyElement;
+  @override
 
   /// [molecularWeight] The molecular weight or weight range (for proteins,
   ///  polymers or nucleic acids).
-  @override
   SubstanceDefinitionMolecularWeight? get molecularWeight;
+  @override
 
   /// [technique] The method used to elucidate the structure of the drug
   ///  substance. Examples: X-ray, NMR, Peptide mapping, Ligand binding assay.
-  @override
   List<CodeableConcept>? get technique;
+  @override
 
   /// [sourceDocument] The source of information about the structure.
-  @override
   List<Reference>? get sourceDocument;
+  @override
 
   /// [representation] A depiction of the structure of the substance.
-  @override
   List<SubstanceDefinitionRepresentation>? get representation;
-
-  /// Create a copy of SubstanceDefinitionStructure
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstanceDefinitionStructureImplCopyWith<
           _$SubstanceDefinitionStructureImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -4887,12 +4759,8 @@ mixin _$SubstanceDefinitionRepresentation {
   ///  molecular structure graphic of the substance, a JCAMP or AnIML file.
   Reference? get document => throw _privateConstructorUsedError;
 
-  /// Serializes this SubstanceDefinitionRepresentation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstanceDefinitionRepresentation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstanceDefinitionRepresentationCopyWith<SubstanceDefinitionRepresentation>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4931,8 +4799,6 @@ class _$SubstanceDefinitionRepresentationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstanceDefinitionRepresentation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4981,8 +4847,6 @@ class _$SubstanceDefinitionRepresentationCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubstanceDefinitionRepresentation
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -4995,8 +4859,6 @@ class _$SubstanceDefinitionRepresentationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionRepresentation
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get format {
@@ -5009,8 +4871,6 @@ class _$SubstanceDefinitionRepresentationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionRepresentation
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get document {
@@ -5061,8 +4921,6 @@ class __$$SubstanceDefinitionRepresentationImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceDefinitionRepresentationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstanceDefinitionRepresentation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5248,7 +5106,7 @@ class _$SubstanceDefinitionRepresentationImpl
                 other.document == document));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -5261,9 +5119,7 @@ class _$SubstanceDefinitionRepresentationImpl
       format,
       document);
 
-  /// Create a copy of SubstanceDefinitionRepresentation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceDefinitionRepresentationImplCopyWith<
@@ -5297,10 +5153,12 @@ abstract class _SubstanceDefinitionRepresentation
           Map<String, dynamic> json) =
       _$SubstanceDefinitionRepresentationImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5308,9 +5166,9 @@ abstract class _SubstanceDefinitionRepresentation
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5324,38 +5182,34 @@ abstract class _SubstanceDefinitionRepresentation
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] The kind of structural representation (e.g. full, partial).
-  @override
   CodeableConcept? get type;
+  @override
 
   /// [representation] The structural representation as a text string in a
   ///  standard format.
-  @override
   String? get representation;
+  @override
 
   /// [representationElement] ("_representation") Extensions for representation
-  @override
   @JsonKey(name: '_representation')
   PrimitiveElement? get representationElement;
+  @override
 
   /// [format] The format of the representation e.g. InChI, SMILES, MOLFILE, CDX,
   ///  SDF, PDB, mmCIF. The logical content type rather than the physical file
   ///  format of a document.
-  @override
   CodeableConcept? get format;
+  @override
 
   /// [document] An attached file with the structural representation e.g. a
   ///  molecular structure graphic of the substance, a JCAMP or AnIML file.
-  @override
   Reference? get document;
-
-  /// Create a copy of SubstanceDefinitionRepresentation
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstanceDefinitionRepresentationImplCopyWith<
           _$SubstanceDefinitionRepresentationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -5417,12 +5271,8 @@ mixin _$SubstanceDefinitionCode {
   /// [source] Supporting literature.
   List<Reference>? get source => throw _privateConstructorUsedError;
 
-  /// Serializes this SubstanceDefinitionCode to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstanceDefinitionCode
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstanceDefinitionCodeCopyWith<SubstanceDefinitionCode> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5459,8 +5309,6 @@ class _$SubstanceDefinitionCodeCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstanceDefinitionCode
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5514,8 +5362,6 @@ class _$SubstanceDefinitionCodeCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubstanceDefinitionCode
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -5528,8 +5374,6 @@ class _$SubstanceDefinitionCodeCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionCode
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get status {
@@ -5579,8 +5423,6 @@ class __$$SubstanceDefinitionCodeImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceDefinitionCodeImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstanceDefinitionCode
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5792,7 +5634,7 @@ class _$SubstanceDefinitionCodeImpl extends _SubstanceDefinitionCode {
             const DeepCollectionEquality().equals(other._source, _source));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -5806,9 +5648,7 @@ class _$SubstanceDefinitionCodeImpl extends _SubstanceDefinitionCode {
       const DeepCollectionEquality().hash(_note),
       const DeepCollectionEquality().hash(_source));
 
-  /// Create a copy of SubstanceDefinitionCode
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceDefinitionCodeImplCopyWith<_$SubstanceDefinitionCodeImpl>
@@ -5839,10 +5679,12 @@ abstract class _SubstanceDefinitionCode extends SubstanceDefinitionCode {
   factory _SubstanceDefinitionCode.fromJson(Map<String, dynamic> json) =
       _$SubstanceDefinitionCodeImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5850,9 +5692,9 @@ abstract class _SubstanceDefinitionCode extends SubstanceDefinitionCode {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5866,40 +5708,36 @@ abstract class _SubstanceDefinitionCode extends SubstanceDefinitionCode {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [code] The specific code.
-  @override
   CodeableConcept? get code;
+  @override
 
   /// [status] Status of the code assignment, for example 'provisional',
   ///  'approved'.
-  @override
   CodeableConcept? get status;
+  @override
 
   /// [statusDate] The date at which the code status was changed as part of the
   ///  terminology maintenance.
-  @override
   FhirDateTime? get statusDate;
+  @override
 
   /// [statusDateElement] ("_statusDate") Extensions for statusDate
-  @override
   @JsonKey(name: '_statusDate')
   PrimitiveElement? get statusDateElement;
+  @override
 
   /// [note] Any comment can be provided in this field, if necessary.
-  @override
   List<Annotation>? get note;
+  @override
 
   /// [source] Supporting literature.
-  @override
   List<Reference>? get source;
-
-  /// Create a copy of SubstanceDefinitionCode
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstanceDefinitionCodeImplCopyWith<_$SubstanceDefinitionCodeImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -5985,12 +5823,8 @@ mixin _$SubstanceDefinitionName {
   /// [source] Supporting literature.
   List<Reference>? get source => throw _privateConstructorUsedError;
 
-  /// Serializes this SubstanceDefinitionName to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstanceDefinitionName
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstanceDefinitionNameCopyWith<SubstanceDefinitionName> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6034,8 +5868,6 @@ class _$SubstanceDefinitionNameCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstanceDefinitionName
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6124,8 +5956,6 @@ class _$SubstanceDefinitionNameCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubstanceDefinitionName
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -6138,8 +5968,6 @@ class _$SubstanceDefinitionNameCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionName
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get status {
@@ -6196,8 +6024,6 @@ class __$$SubstanceDefinitionNameImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceDefinitionNameImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstanceDefinitionName
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6542,7 +6368,7 @@ class _$SubstanceDefinitionNameImpl extends _SubstanceDefinitionName {
             const DeepCollectionEquality().equals(other._source, _source));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -6563,9 +6389,7 @@ class _$SubstanceDefinitionNameImpl extends _SubstanceDefinitionName {
       const DeepCollectionEquality().hash(_official),
       const DeepCollectionEquality().hash(_source));
 
-  /// Create a copy of SubstanceDefinitionName
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceDefinitionNameImplCopyWith<_$SubstanceDefinitionNameImpl>
@@ -6603,10 +6427,12 @@ abstract class _SubstanceDefinitionName extends SubstanceDefinitionName {
   factory _SubstanceDefinitionName.fromJson(Map<String, dynamic> json) =
       _$SubstanceDefinitionNameImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -6614,9 +6440,9 @@ abstract class _SubstanceDefinitionName extends SubstanceDefinitionName {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -6630,69 +6456,65 @@ abstract class _SubstanceDefinitionName extends SubstanceDefinitionName {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [name] The actual name.
-  @override
   String? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [type] Name type, for example 'systematic',  'scientific, 'brand'.
-  @override
   CodeableConcept? get type;
+  @override
 
   /// [status] The status of the name, for example 'current', 'proposed'.
-  @override
   CodeableConcept? get status;
+  @override
 
   /// [preferred] If this is the preferred name for this substance.
-  @override
   FhirBoolean? get preferred;
+  @override
 
   /// [preferredElement] ("_preferred") Extensions for preferred
-  @override
   @JsonKey(name: '_preferred')
   PrimitiveElement? get preferredElement;
+  @override
 
   /// [language] Human language that the name is written in.
-  @override
   List<CodeableConcept>? get language;
+  @override
 
   /// [domain] The use context of this name for example if there is a different
   ///  name a drug active ingredient as opposed to a food colour additive.
-  @override
   List<CodeableConcept>? get domain;
+  @override
 
   /// [jurisdiction] The jurisdiction where this name applies.
-  @override
   List<CodeableConcept>? get jurisdiction;
+  @override
 
   /// [synonym] A synonym of this particular name, by which the substance is also
   ///  known.
-  @override
   List<SubstanceDefinitionName>? get synonym;
+  @override
 
   /// [translation] A translation for this name into another human language.
-  @override
   List<SubstanceDefinitionName>? get translation;
+  @override
 
   /// [official] Details of the official nature of this name.
-  @override
   List<SubstanceDefinitionOfficial>? get official;
+  @override
 
   /// [source] Supporting literature.
-  @override
   List<Reference>? get source;
-
-  /// Create a copy of SubstanceDefinitionName
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstanceDefinitionNameImplCopyWith<_$SubstanceDefinitionNameImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -6746,12 +6568,8 @@ mixin _$SubstanceDefinitionOfficial {
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement => throw _privateConstructorUsedError;
 
-  /// Serializes this SubstanceDefinitionOfficial to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstanceDefinitionOfficial
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstanceDefinitionOfficialCopyWith<SubstanceDefinitionOfficial>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -6788,8 +6606,6 @@ class _$SubstanceDefinitionOfficialCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstanceDefinitionOfficial
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6833,8 +6649,6 @@ class _$SubstanceDefinitionOfficialCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubstanceDefinitionOfficial
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get authority {
@@ -6847,8 +6661,6 @@ class _$SubstanceDefinitionOfficialCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionOfficial
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get status {
@@ -6896,8 +6708,6 @@ class __$$SubstanceDefinitionOfficialImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceDefinitionOfficialImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstanceDefinitionOfficial
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7067,7 +6877,7 @@ class _$SubstanceDefinitionOfficialImpl extends _SubstanceDefinitionOfficial {
                 other.dateElement == dateElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -7079,9 +6889,7 @@ class _$SubstanceDefinitionOfficialImpl extends _SubstanceDefinitionOfficial {
       date,
       dateElement);
 
-  /// Create a copy of SubstanceDefinitionOfficial
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceDefinitionOfficialImplCopyWith<_$SubstanceDefinitionOfficialImpl>
@@ -7112,10 +6920,12 @@ abstract class _SubstanceDefinitionOfficial
   factory _SubstanceDefinitionOfficial.fromJson(Map<String, dynamic> json) =
       _$SubstanceDefinitionOfficialImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -7123,9 +6933,9 @@ abstract class _SubstanceDefinitionOfficial
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -7139,31 +6949,27 @@ abstract class _SubstanceDefinitionOfficial
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [authority] Which authority uses this official name.
-  @override
   CodeableConcept? get authority;
+  @override
 
   /// [status] The status of the official name, for example 'draft', 'active',
   ///  'retired'.
-  @override
   CodeableConcept? get status;
+  @override
 
   /// [date] Date of the official name change.
-  @override
   FhirDateTime? get date;
+  @override
 
   /// [dateElement] ("_date") Extensions for date
-  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
-
-  /// Create a copy of SubstanceDefinitionOfficial
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstanceDefinitionOfficialImplCopyWith<_$SubstanceDefinitionOfficialImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -7256,12 +7062,8 @@ mixin _$SubstanceDefinitionRelationship {
   /// [source] Supporting literature.
   List<Reference>? get source => throw _privateConstructorUsedError;
 
-  /// Serializes this SubstanceDefinitionRelationship to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstanceDefinitionRelationship
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstanceDefinitionRelationshipCopyWith<SubstanceDefinitionRelationship>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -7311,8 +7113,6 @@ class _$SubstanceDefinitionRelationshipCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstanceDefinitionRelationship
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7397,8 +7197,6 @@ class _$SubstanceDefinitionRelationshipCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubstanceDefinitionRelationship
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get substanceDefinitionReference {
@@ -7413,8 +7211,6 @@ class _$SubstanceDefinitionRelationshipCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionRelationship
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get substanceDefinitionCodeableConcept {
@@ -7429,8 +7225,6 @@ class _$SubstanceDefinitionRelationshipCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionRelationship
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get type {
@@ -7439,8 +7233,6 @@ class _$SubstanceDefinitionRelationshipCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionRelationship
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get amountQuantity {
@@ -7453,8 +7245,6 @@ class _$SubstanceDefinitionRelationshipCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionRelationship
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get amountRatio {
@@ -7467,8 +7257,6 @@ class _$SubstanceDefinitionRelationshipCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionRelationship
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get ratioHighLimitAmount {
@@ -7481,8 +7269,6 @@ class _$SubstanceDefinitionRelationshipCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionRelationship
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get comparator {
@@ -7548,8 +7334,6 @@ class __$$SubstanceDefinitionRelationshipImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceDefinitionRelationshipImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstanceDefinitionRelationship
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7843,7 +7627,7 @@ class _$SubstanceDefinitionRelationshipImpl
             const DeepCollectionEquality().equals(other._source, _source));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -7863,9 +7647,7 @@ class _$SubstanceDefinitionRelationshipImpl
       comparator,
       const DeepCollectionEquality().hash(_source));
 
-  /// Create a copy of SubstanceDefinitionRelationship
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceDefinitionRelationshipImplCopyWith<
@@ -7905,10 +7687,12 @@ abstract class _SubstanceDefinitionRelationship
   factory _SubstanceDefinitionRelationship.fromJson(Map<String, dynamic> json) =
       _$SubstanceDefinitionRelationshipImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -7916,9 +7700,9 @@ abstract class _SubstanceDefinitionRelationship
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -7932,75 +7716,71 @@ abstract class _SubstanceDefinitionRelationship
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [substanceDefinitionReference] A pointer to another substance, as a
   ///  resource or just a representational code.
-  @override
   Reference? get substanceDefinitionReference;
+  @override
 
   /// [substanceDefinitionCodeableConcept] A pointer to another substance, as a
   ///  resource or just a representational code.
-  @override
   CodeableConcept? get substanceDefinitionCodeableConcept;
+  @override
 
   /// [type] For example "salt to parent", "active moiety", "starting material",
   ///  "polymorph", "impurity of".
-  @override
   CodeableConcept get type;
+  @override
 
   /// [isDefining] For example where an enzyme strongly bonds with a particular
   ///  substance, this is a defining relationship for that enzyme, out of several
   ///  possible substance relationships.
-  @override
   FhirBoolean? get isDefining;
+  @override
 
   /// [isDefiningElement] ("_isDefining") Extensions for isDefining
-  @override
   @JsonKey(name: '_isDefining')
   PrimitiveElement? get isDefiningElement;
+  @override
 
   /// [amountQuantity] A numeric factor for the relationship, for instance to
   ///  express that the salt of a substance has some percentage of the active
   ///  substance in relation to some other.
-  @override
   Quantity? get amountQuantity;
+  @override
 
   /// [amountRatio] A numeric factor for the relationship, for instance to
   ///  express that the salt of a substance has some percentage of the active
   ///  substance in relation to some other.
-  @override
   Ratio? get amountRatio;
+  @override
 
   /// [amountString] A numeric factor for the relationship, for instance to
   ///  express that the salt of a substance has some percentage of the active
   ///  substance in relation to some other.
-  @override
   String? get amountString;
+  @override
 
   /// [amountStringElement] ("_amountString") Extensions for amountString
-  @override
   @JsonKey(name: '_amountString')
   PrimitiveElement? get amountStringElement;
+  @override
 
   /// [ratioHighLimitAmount] For use when the numeric has an uncertain range.
-  @override
   Ratio? get ratioHighLimitAmount;
+  @override
 
   /// [comparator] An operator for the amount, for example "average",
   ///  "approximately", "less than".
-  @override
   CodeableConcept? get comparator;
+  @override
 
   /// [source] Supporting literature.
-  @override
   List<Reference>? get source;
-
-  /// Create a copy of SubstanceDefinitionRelationship
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstanceDefinitionRelationshipImplCopyWith<
           _$SubstanceDefinitionRelationshipImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -8062,12 +7842,8 @@ mixin _$SubstanceDefinitionSourceMaterial {
   List<CodeableConcept>? get countryOfOrigin =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this SubstanceDefinitionSourceMaterial to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstanceDefinitionSourceMaterial
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstanceDefinitionSourceMaterialCopyWith<SubstanceDefinitionSourceMaterial>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -8107,8 +7883,6 @@ class _$SubstanceDefinitionSourceMaterialCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstanceDefinitionSourceMaterial
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -8157,8 +7931,6 @@ class _$SubstanceDefinitionSourceMaterialCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubstanceDefinitionSourceMaterial
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -8171,8 +7943,6 @@ class _$SubstanceDefinitionSourceMaterialCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionSourceMaterial
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get genus {
@@ -8185,8 +7955,6 @@ class _$SubstanceDefinitionSourceMaterialCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionSourceMaterial
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get species {
@@ -8199,8 +7967,6 @@ class _$SubstanceDefinitionSourceMaterialCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstanceDefinitionSourceMaterial
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get part_ {
@@ -8253,8 +8019,6 @@ class __$$SubstanceDefinitionSourceMaterialImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceDefinitionSourceMaterialImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstanceDefinitionSourceMaterial
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -8448,7 +8212,7 @@ class _$SubstanceDefinitionSourceMaterialImpl
                 .equals(other._countryOfOrigin, _countryOfOrigin));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -8461,9 +8225,7 @@ class _$SubstanceDefinitionSourceMaterialImpl
       part_,
       const DeepCollectionEquality().hash(_countryOfOrigin));
 
-  /// Create a copy of SubstanceDefinitionSourceMaterial
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceDefinitionSourceMaterialImplCopyWith<
@@ -8497,10 +8259,12 @@ abstract class _SubstanceDefinitionSourceMaterial
           Map<String, dynamic> json) =
       _$SubstanceDefinitionSourceMaterialImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -8508,9 +8272,9 @@ abstract class _SubstanceDefinitionSourceMaterial
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -8524,38 +8288,34 @@ abstract class _SubstanceDefinitionSourceMaterial
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] A classification that provides the origin of the raw material.
   ///  Example: cat hair would be an Animal source type.
-  @override
   CodeableConcept? get type;
+  @override
 
   /// [genus] The genus of an organism, typically referring to the Latin epithet
   ///  of the genus element of the plant/animal scientific name.
-  @override
   CodeableConcept? get genus;
+  @override
 
   /// [species] The species of an organism, typically referring to the Latin
   ///  epithet of the species of the plant/animal.
-  @override
   CodeableConcept? get species;
+  @override
 
   /// [part_] ("part") An anatomical origin of the source material within an
   ///  organism.
-  @override
   @JsonKey(name: 'part')
   CodeableConcept? get part_;
+  @override
 
   /// [countryOfOrigin] The country or countries where the material is harvested.
-  @override
   List<CodeableConcept>? get countryOfOrigin;
-
-  /// Create a copy of SubstanceDefinitionSourceMaterial
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstanceDefinitionSourceMaterialImplCopyWith<
           _$SubstanceDefinitionSourceMaterialImpl>
       get copyWith => throw _privateConstructorUsedError;

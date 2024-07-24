@@ -316,12 +316,8 @@ mixin _$ValueSet {
   ///  ValueSet.description.
   ValueSetScope? get scope => throw _privateConstructorUsedError;
 
-  /// Serializes this ValueSet to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ValueSet
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ValueSetCopyWith<ValueSet> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -412,8 +408,6 @@ class _$ValueSetCopyWithImpl<$Res, $Val extends ValueSet>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ValueSet
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -712,8 +706,6 @@ class _$ValueSetCopyWithImpl<$Res, $Val extends ValueSet>
     ) as $Val);
   }
 
-  /// Create a copy of ValueSet
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -726,8 +718,6 @@ class _$ValueSetCopyWithImpl<$Res, $Val extends ValueSet>
     });
   }
 
-  /// Create a copy of ValueSet
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -740,8 +730,6 @@ class _$ValueSetCopyWithImpl<$Res, $Val extends ValueSet>
     });
   }
 
-  /// Create a copy of ValueSet
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get versionAlgorithmCoding {
@@ -754,8 +742,6 @@ class _$ValueSetCopyWithImpl<$Res, $Val extends ValueSet>
     });
   }
 
-  /// Create a copy of ValueSet
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get effectivePeriod {
@@ -768,8 +754,6 @@ class _$ValueSetCopyWithImpl<$Res, $Val extends ValueSet>
     });
   }
 
-  /// Create a copy of ValueSet
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ValueSetComposeCopyWith<$Res>? get compose {
@@ -782,8 +766,6 @@ class _$ValueSetCopyWithImpl<$Res, $Val extends ValueSet>
     });
   }
 
-  /// Create a copy of ValueSet
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ValueSetExpansionCopyWith<$Res>? get expansion {
@@ -796,8 +778,6 @@ class _$ValueSetCopyWithImpl<$Res, $Val extends ValueSet>
     });
   }
 
-  /// Create a copy of ValueSet
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ValueSetScopeCopyWith<$Res>? get scope {
@@ -905,8 +885,6 @@ class __$$ValueSetImplCopyWithImpl<$Res>
       _$ValueSetImpl _value, $Res Function(_$ValueSetImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ValueSet
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1894,7 +1872,7 @@ class _$ValueSetImpl extends _ValueSet {
             (identical(other.scope, scope) || other.scope == scope));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1958,9 +1936,7 @@ class _$ValueSetImpl extends _ValueSet {
         scope
       ]);
 
-  /// Create a copy of ValueSet
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ValueSetImplCopyWith<_$ValueSetImpl> get copyWith =>
@@ -2046,42 +2022,44 @@ abstract class _ValueSet extends ValueSet {
   factory _ValueSet.fromJson(Map<String, dynamic> json) =
       _$ValueSetImpl.fromJson;
 
-  /// [resourceType] This is a ValueSet resource
   @override
+
+  /// [resourceType] This is a ValueSet resource
   @JsonKey(unknownEnumValue: R5ResourceType.ValueSet)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -2089,16 +2067,16 @@ abstract class _ValueSet extends ValueSet {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -2106,9 +2084,9 @@ abstract class _ValueSet extends ValueSet {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -2122,8 +2100,8 @@ abstract class _ValueSet extends ValueSet {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [url] An absolute URI that is used to identify this value set when it is
   ///  referenced in a specification, model, design or an instance; also called
@@ -2132,19 +2110,19 @@ abstract class _ValueSet extends ValueSet {
   ///  (or will be) published. This URL can be the target of a canonical
   ///  reference. It SHALL remain the same when the value set is stored on
   ///  different servers.
-  @override
   FhirUri? get url;
+  @override
 
   /// [urlElement] ("_url") Extensions for url
-  @override
   @JsonKey(name: '_url')
   PrimitiveElement? get urlElement;
+  @override
 
   /// [identifier] A formal identifier that is used to identify this value set
   ///  when it is represented in other formats, or referenced in a specification,
   ///  model, design or an instance.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [version] The identifier that is used to identify this version of the value
   ///  set when it is referenced in a specification, model, design or instance.
@@ -2152,249 +2130,245 @@ abstract class _ValueSet extends ValueSet {
   ///  expected to be globally unique. For example, it might be a timestamp (e.g.
   ///  yyyymmdd) if a managed version is not available. There is also no
   ///  expectation that versions can be placed in a lexicographical sequence.
-  @override
   String? get version;
+  @override
 
   /// [versionElement] ("_version") Extensions for version
-  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
+  @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which ValueSet is more current.
-  @override
   String? get versionAlgorithmString;
+  @override
 
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
-  @override
   @JsonKey(name: '_versionAlgorithmString')
   PrimitiveElement? get versionAlgorithmStringElement;
+  @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which ValueSet is more current.
-  @override
   Coding? get versionAlgorithmCoding;
+  @override
 
   /// [name] A natural language name identifying the value set. This name should
   ///  be usable as an identifier for the module by machine processing
   ///  applications such as code generation.
-  @override
   String? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [title] A short, descriptive, user-friendly title for the value set.
-  @override
   String? get title;
+  @override
 
   /// [titleElement] ("_title") Extensions for title
-  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
+  @override
 
   /// [status] The status of this value set. Enables tracking the life-cycle of
   ///  the content. The status of the value set applies to the value set
   ///  definition (ValueSet.compose) and the associated ValueSet metadata.
   ///  Expansions do not have a state.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [experimental] A Boolean value to indicate that this value set is authored
   ///  for testing purposes (or education/evaluation/marketing) and is not
   ///  intended to be used for genuine usage.
-  @override
   FhirBoolean? get experimental;
+  @override
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
-  @override
   @JsonKey(name: '_experimental')
   PrimitiveElement? get experimentalElement;
+  @override
 
   /// [date] The date (and optionally time) when the value set metadata or
   ///  content logical definition (.compose) was created or revised.
-  @override
   FhirDateTime? get date;
+  @override
 
   /// [dateElement] ("_date") Extensions for date
-  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
+  @override
 
   /// [publisher] The name of the organization or individual responsible for the
   ///  release and ongoing maintenance of the value set.
-  @override
   String? get publisher;
+  @override
 
   /// [publisherElement] ("_publisher") Extensions for publisher
-  @override
   @JsonKey(name: '_publisher')
   PrimitiveElement? get publisherElement;
+  @override
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
-  @override
   List<ContactDetail>? get contact;
+  @override
 
   /// [description] A free text natural language description of the value set
   ///  from a consumer's perspective. The textual description specifies the span
   ///  of meanings for concepts to be included within the Value Set Expansion,
   ///  and also may specify the intended use and limitations of the Value Set.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
   ///  categories (gender, age, ...) or may be references to specific programs
   ///  (insurance plans, studies, ...) and may be used to assist with indexing
   ///  and searching for appropriate value set instances.
-  @override
   List<UsageContext>? get useContext;
+  @override
 
   /// [jurisdiction] A legal or geographic region in which the value set is
   ///  intended to be used.
-  @override
   List<CodeableConcept>? get jurisdiction;
+  @override
 
   /// [purpose] Explanation of why this value set is needed and why it has been
   ///  designed as it has.
-  @override
   FhirMarkdown? get purpose;
+  @override
 
   /// [purposeElement] ("_purpose") Extensions for purpose
-  @override
   @JsonKey(name: '_purpose')
   PrimitiveElement? get purposeElement;
+  @override
 
   /// [copyright] A copyright statement relating to the value set and/or its
   ///  contents. Copyright statements are generally legal restrictions on the use
   ///  and publishing of the value set.
-  @override
   FhirMarkdown? get copyright;
+  @override
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
-  @override
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement;
+  @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
   ///  optionally whether rights are resctricted. (e.g. 'All rights reserved',
   ///  'Some rights reserved').
-  @override
   String? get copyrightLabel;
+  @override
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
-  @override
   @JsonKey(name: '_copyrightLabel')
   PrimitiveElement? get copyrightLabelElement;
+  @override
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
   ///  for usage.
-  @override
   FhirDate? get approvalDate;
+  @override
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
-  @override
   @JsonKey(name: '_approvalDate')
   PrimitiveElement? get approvalDateElement;
+  @override
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
   ///  original approval date.
-  @override
   FhirDate? get lastReviewDate;
+  @override
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
-  @override
   @JsonKey(name: '_lastReviewDate')
   PrimitiveElement? get lastReviewDateElement;
+  @override
 
   /// [effectivePeriod] The period during which the ValueSet content was or is
   ///  planned to be in active use.
-  @override
   Period? get effectivePeriod;
+  @override
 
   /// [topic] Descriptions related to the content of the ValueSet. Topics provide
   ///  a high-level categorization as well as keywords for the ValueSet that can
   ///  be useful for filtering and searching.
-  @override
   List<CodeableConcept>? get topic;
+  @override
 
   /// [author] An individiual or organization primarily involved in the creation
   ///  and maintenance of the ValueSet.
-  @override
   List<ContactDetail>? get author;
+  @override
 
   /// [editor] An individual or organization primarily responsible for internal
   ///  coherence of the ValueSet.
-  @override
   List<ContactDetail>? get editor;
+  @override
 
   /// [reviewer] An individual or organization asserted by the publisher to be
   ///  primarily responsible for review of some aspect of the ValueSet.
-  @override
   List<ContactDetail>? get reviewer;
+  @override
 
   /// [endorser] An individual or organization asserted by the publisher to be
   ///  responsible for officially endorsing the ValueSet for use in some setting.
-  @override
   List<ContactDetail>? get endorser;
+  @override
 
   /// [relatedArtifact] Related artifacts such as additional documentation,
   ///  justification, dependencies, bibliographic references, and predecessor and
   ///  successor artifacts.
-  @override
   List<RelatedArtifact>? get relatedArtifact;
+  @override
 
   /// [immutable] If this is set to 'true', then no new versions of the content
   ///  logical definition can be created.  Note: Other metadata might still
   ///  change.
-  @override
   FhirBoolean? get immutable;
+  @override
 
   /// [immutableElement] ("_immutable") Extensions for immutable
-  @override
   @JsonKey(name: '_immutable')
   PrimitiveElement? get immutableElement;
+  @override
 
   /// [compose] A set of criteria that define the contents of the value set by
   ///  including or excluding codes selected from the specified code system(s)
   ///  that the value set draws from. This is also known as the Content Logical
   ///  Definition (CLD).
-  @override
   ValueSetCompose? get compose;
+  @override
 
   /// [expansion] A value set can also be "expanded", where the value set is
   ///  turned into a simple collection of enumerated codes. This element holds
   ///  the expansion, if it has been performed.
-  @override
   ValueSetExpansion? get expansion;
+  @override
 
   /// [scope] Description of the semantic space the Value Set Expansion is
   ///  intended to cover and should further clarify the text in
   ///  ValueSet.description.
-  @override
   ValueSetScope? get scope;
-
-  /// Create a copy of ValueSet
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ValueSetImplCopyWith<_$ValueSetImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2474,12 +2448,8 @@ mixin _$ValueSetCompose {
   List<PrimitiveElement>? get propertyElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ValueSetCompose to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ValueSetCompose
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ValueSetComposeCopyWith<ValueSetCompose> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2514,8 +2484,6 @@ class _$ValueSetComposeCopyWithImpl<$Res, $Val extends ValueSetCompose>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ValueSetCompose
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2610,8 +2578,6 @@ class __$$ValueSetComposeImplCopyWithImpl<$Res>
       _$ValueSetComposeImpl _value, $Res Function(_$ValueSetComposeImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ValueSetCompose
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2885,7 +2851,7 @@ class _$ValueSetComposeImpl extends _ValueSetCompose {
                 .equals(other._propertyElement, _propertyElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2901,9 +2867,7 @@ class _$ValueSetComposeImpl extends _ValueSetCompose {
       const DeepCollectionEquality().hash(_property),
       const DeepCollectionEquality().hash(_propertyElement));
 
-  /// Create a copy of ValueSetCompose
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ValueSetComposeImplCopyWith<_$ValueSetComposeImpl> get copyWith =>
@@ -2937,10 +2901,12 @@ abstract class _ValueSetCompose extends ValueSetCompose {
   factory _ValueSetCompose.fromJson(Map<String, dynamic> json) =
       _$ValueSetComposeImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2948,9 +2914,9 @@ abstract class _ValueSetCompose extends ValueSetCompose {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2964,20 +2930,20 @@ abstract class _ValueSetCompose extends ValueSetCompose {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [lockedDate] The Locked Date is  the effective date that is used to
   ///  determine the version of all referenced Code Systems and Value Set
   ///  Definitions included in the compose that are not already tied to a
   ///  specific version.
-  @override
   FhirDate? get lockedDate;
+  @override
 
   /// [lockedDateElement] ("_lockedDate") Extensions for lockedDate
-  @override
   @JsonKey(name: '_lockedDate')
   PrimitiveElement? get lockedDateElement;
+  @override
 
   /// [inactive] Whether inactive codes - codes that are not approved for current
   ///  use - are in the value set. If inactive = true, inactive codes are to be
@@ -2985,40 +2951,36 @@ abstract class _ValueSetCompose extends ValueSetCompose {
   ///  not be included in the expansion. If absent, the behavior is determined by
   ///  the implementation, or by the applicable $expand parameters (but
   ///  generally, inactive codes would be expected to be included).
-  @override
   FhirBoolean? get inactive;
+  @override
 
   /// [inactiveElement] ("_inactive") Extensions for inactive
-  @override
   @JsonKey(name: '_inactive')
   PrimitiveElement? get inactiveElement;
+  @override
 
   /// [include] Include one or more codes from a code system or other value
   ///  set(s).
-  @override
   List<ValueSetInclude> get include;
+  @override
 
   /// [exclude] Exclude one or more codes from the value set based on code system
   ///  filters and/or other value sets.
-  @override
   List<ValueSetInclude>? get exclude;
+  @override
 
   /// [property] A property to return in the expansion, if the client doesn't ask
   ///  for any particular properties. May be either a code from the code system
   ///  definition (convenient) or a the formal URI that refers to the property.
   ///  The special value '*' means all properties known to the server.
-  @override
   List<String>? get property;
+  @override
 
   /// [propertyElement] ("_property") Extensions for property
-  @override
   @JsonKey(name: '_property')
   List<PrimitiveElement>? get propertyElement;
-
-  /// Create a copy of ValueSetCompose
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ValueSetComposeImplCopyWith<_$ValueSetComposeImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3099,12 +3061,8 @@ mixin _$ValueSetInclude {
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
-  /// Serializes this ValueSetInclude to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ValueSetInclude
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ValueSetIncludeCopyWith<ValueSetInclude> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3140,8 +3098,6 @@ class _$ValueSetIncludeCopyWithImpl<$Res, $Val extends ValueSetInclude>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ValueSetInclude
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3242,8 +3198,6 @@ class __$$ValueSetIncludeImplCopyWithImpl<$Res>
       _$ValueSetIncludeImpl _value, $Res Function(_$ValueSetIncludeImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ValueSetInclude
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3518,7 +3472,7 @@ class _$ValueSetIncludeImpl extends _ValueSetInclude {
                 other.copyrightElement == copyrightElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3535,9 +3489,7 @@ class _$ValueSetIncludeImpl extends _ValueSetInclude {
       copyright,
       copyrightElement);
 
-  /// Create a copy of ValueSetInclude
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ValueSetIncludeImplCopyWith<_$ValueSetIncludeImpl> get copyWith =>
@@ -3572,10 +3524,12 @@ abstract class _ValueSetInclude extends ValueSetInclude {
   factory _ValueSetInclude.fromJson(Map<String, dynamic> json) =
       _$ValueSetIncludeImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3583,9 +3537,9 @@ abstract class _ValueSetInclude extends ValueSetInclude {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3599,64 +3553,60 @@ abstract class _ValueSetInclude extends ValueSetInclude {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [system] An absolute URI which is the code system from which the selected
   ///  codes come from.
-  @override
   FhirUri? get system;
+  @override
 
   /// [systemElement] ("_system") Extensions for system
-  @override
   @JsonKey(name: '_system')
   PrimitiveElement? get systemElement;
+  @override
 
   /// [version] The version of the code system that the codes are selected from,
   ///  or the special version '*' for all versions.
-  @override
   String? get version;
+  @override
 
   /// [versionElement] ("_version") Extensions for version
-  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
+  @override
 
   /// [concept] Specifies a concept to be included or excluded.
-  @override
   List<ValueSetConcept>? get concept;
+  @override
 
   /// [filter] Select concepts by specifying a matching criterion based on the
   ///  properties (including relationships) defined by the system, or on filters
   ///  defined by the system. If multiple filters are specified within the
   ///  include, they SHALL all be true.
-  @override
   List<ValueSetFilter>? get filter;
+  @override
 
   /// [valueSet] Selects the concepts found in this value set (based on its value
   ///  set definition). This is an absolute URI that is a reference to
   ///  ValueSet.url.  If multiple value sets are specified this includes the
   ///  intersection of the contents of all of the referenced value sets.
-  @override
   List<FhirCanonical>? get valueSet;
+  @override
 
   /// [copyright] A copyright statement for the specific code system asserted by
   ///  the containing ValueSet.compose.include element's system value (if the
   ///  associated ValueSet.compose.include.version element is not present); or
   ///  the code system and version combination (if the associated
   ///  ValueSet.compose.include.version element is present).
-  @override
   String? get copyright;
+  @override
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
-  @override
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement;
-
-  /// Create a copy of ValueSetInclude
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ValueSetIncludeImplCopyWith<_$ValueSetIncludeImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3717,12 +3667,8 @@ mixin _$ValueSetConcept {
   List<ValueSetDesignation>? get designation =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ValueSetConcept to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ValueSetConcept
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ValueSetConceptCopyWith<ValueSetConcept> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3754,8 +3700,6 @@ class _$ValueSetConceptCopyWithImpl<$Res, $Val extends ValueSetConcept>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ValueSetConcept
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3832,8 +3776,6 @@ class __$$ValueSetConceptImplCopyWithImpl<$Res>
       _$ValueSetConceptImpl _value, $Res Function(_$ValueSetConceptImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ValueSetConcept
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4030,7 +3972,7 @@ class _$ValueSetConceptImpl extends _ValueSetConcept {
                 .equals(other._designation, _designation));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4043,9 +3985,7 @@ class _$ValueSetConceptImpl extends _ValueSetConcept {
       displayElement,
       const DeepCollectionEquality().hash(_designation));
 
-  /// Create a copy of ValueSetConcept
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ValueSetConceptImplCopyWith<_$ValueSetConceptImpl> get copyWith =>
@@ -4075,10 +4015,12 @@ abstract class _ValueSetConcept extends ValueSetConcept {
   factory _ValueSetConcept.fromJson(Map<String, dynamic> json) =
       _$ValueSetConceptImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4086,9 +4028,9 @@ abstract class _ValueSetConcept extends ValueSetConcept {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4102,39 +4044,35 @@ abstract class _ValueSetConcept extends ValueSetConcept {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [code] Specifies a code for the concept to be included or excluded.
-  @override
   FhirCode? get code;
+  @override
 
   /// [codeElement] ("_code") Extensions for code
-  @override
   @JsonKey(name: '_code')
   PrimitiveElement? get codeElement;
+  @override
 
   /// [display] The text to display to the user for this concept in the context
   ///  of this valueset. If no display is provided, then applications using the
   ///  value set use the display specified for the code by the system.
-  @override
   String? get display;
+  @override
 
   /// [displayElement] ("_display") Extensions for display
-  @override
   @JsonKey(name: '_display')
   PrimitiveElement? get displayElement;
+  @override
 
   /// [designation] Additional representations for this concept when used in this
   ///  value set - other languages, aliases, specialized purposes, used for
   ///  particular purposes, etc.
-  @override
   List<ValueSetDesignation>? get designation;
-
-  /// Create a copy of ValueSetConcept
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ValueSetConceptImplCopyWith<_$ValueSetConceptImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4194,12 +4132,8 @@ mixin _$ValueSetDesignation {
   @JsonKey(name: '_value')
   PrimitiveElement? get valueElement => throw _privateConstructorUsedError;
 
-  /// Serializes this ValueSetDesignation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ValueSetDesignation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ValueSetDesignationCopyWith<ValueSetDesignation> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4234,8 +4168,6 @@ class _$ValueSetDesignationCopyWithImpl<$Res, $Val extends ValueSetDesignation>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ValueSetDesignation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4289,8 +4221,6 @@ class _$ValueSetDesignationCopyWithImpl<$Res, $Val extends ValueSetDesignation>
     ) as $Val);
   }
 
-  /// Create a copy of ValueSetDesignation
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get use {
@@ -4335,8 +4265,6 @@ class __$$ValueSetDesignationImplCopyWithImpl<$Res>
       $Res Function(_$ValueSetDesignationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ValueSetDesignation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4541,7 +4469,7 @@ class _$ValueSetDesignationImpl extends _ValueSetDesignation {
                 other.valueElement == valueElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4555,9 +4483,7 @@ class _$ValueSetDesignationImpl extends _ValueSetDesignation {
       value,
       valueElement);
 
-  /// Create a copy of ValueSetDesignation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ValueSetDesignationImplCopyWith<_$ValueSetDesignationImpl> get copyWith =>
@@ -4589,10 +4515,12 @@ abstract class _ValueSetDesignation extends ValueSetDesignation {
   factory _ValueSetDesignation.fromJson(Map<String, dynamic> json) =
       _$ValueSetDesignationImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4600,9 +4528,9 @@ abstract class _ValueSetDesignation extends ValueSetDesignation {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4616,40 +4544,36 @@ abstract class _ValueSetDesignation extends ValueSetDesignation {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [language] The language this designation is defined for.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [use] A code that represents types of uses of designations.
-  @override
   Coding? get use;
+  @override
 
   /// [additionalUse] Additional codes that detail how this designation would be
   ///  used, if there is more than one use.
-  @override
   List<Coding>? get additionalUse;
+  @override
 
   /// [value] The text value for this designation.
-  @override
   String? get value;
+  @override
 
   /// [valueElement] ("_value") Extensions for value
-  @override
   @JsonKey(name: '_value')
   PrimitiveElement? get valueElement;
-
-  /// Create a copy of ValueSetDesignation
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ValueSetDesignationImplCopyWith<_$ValueSetDesignationImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4715,12 +4639,8 @@ mixin _$ValueSetFilter {
   @JsonKey(name: '_value')
   PrimitiveElement? get valueElement => throw _privateConstructorUsedError;
 
-  /// Serializes this ValueSetFilter to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ValueSetFilter
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ValueSetFilterCopyWith<ValueSetFilter> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4753,8 +4673,6 @@ class _$ValueSetFilterCopyWithImpl<$Res, $Val extends ValueSetFilter>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ValueSetFilter
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4837,8 +4755,6 @@ class __$$ValueSetFilterImplCopyWithImpl<$Res>
       _$ValueSetFilterImpl _value, $Res Function(_$ValueSetFilterImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ValueSetFilter
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5038,7 +4954,7 @@ class _$ValueSetFilterImpl extends _ValueSetFilter {
                 other.valueElement == valueElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -5052,9 +4968,7 @@ class _$ValueSetFilterImpl extends _ValueSetFilter {
       value,
       valueElement);
 
-  /// Create a copy of ValueSetFilter
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ValueSetFilterImplCopyWith<_$ValueSetFilterImpl> get copyWith =>
@@ -5086,10 +5000,12 @@ abstract class _ValueSetFilter extends ValueSetFilter {
   factory _ValueSetFilter.fromJson(Map<String, dynamic> json) =
       _$ValueSetFilterImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5097,9 +5013,9 @@ abstract class _ValueSetFilter extends ValueSetFilter {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5113,27 +5029,27 @@ abstract class _ValueSetFilter extends ValueSetFilter {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [property] A code that identifies a property or a filter defined in the
   ///  code system.
-  @override
   FhirCode? get property;
+  @override
 
   /// [propertyElement] ("_property") Extensions for property
-  @override
   @JsonKey(name: '_property')
   PrimitiveElement? get propertyElement;
+  @override
 
   /// [op] The kind of operation to perform as a part of the filter criteria.
-  @override
   FhirCode? get op;
+  @override
 
   /// [opElement] ("_op") Extensions for op
-  @override
   @JsonKey(name: '_op')
   PrimitiveElement? get opElement;
+  @override
 
   /// [value] The match value may be either a code defined by the system, or a
   ///  string value, which is a regex match on the literal string of the property
@@ -5141,18 +5057,14 @@ abstract class _ValueSetFilter extends ValueSetFilter {
   ///  the system filter value (if the filter represents a filter defined in
   ///  CodeSystem) when the operation is 'regex', or one of the values (true and
   ///  false), when the operation is 'exists'.
-  @override
   String? get value;
+  @override
 
   /// [valueElement] ("_value") Extensions for value
-  @override
   @JsonKey(name: '_value')
   PrimitiveElement? get valueElement;
-
-  /// Create a copy of ValueSetFilter
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ValueSetFilterImplCopyWith<_$ValueSetFilterImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5250,12 +5162,8 @@ mixin _$ValueSetExpansion {
   /// [contains] The codes that are contained in the value set expansion.
   List<ValueSetContains>? get contains => throw _privateConstructorUsedError;
 
-  /// Serializes this ValueSetExpansion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ValueSetExpansion
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ValueSetExpansionCopyWith<ValueSetExpansion> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5295,8 +5203,6 @@ class _$ValueSetExpansionCopyWithImpl<$Res, $Val extends ValueSetExpansion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ValueSetExpansion
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5421,8 +5327,6 @@ class __$$ValueSetExpansionImplCopyWithImpl<$Res>
       $Res Function(_$ValueSetExpansionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ValueSetExpansion
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5748,7 +5652,7 @@ class _$ValueSetExpansionImpl extends _ValueSetExpansion {
             const DeepCollectionEquality().equals(other._contains, _contains));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -5769,9 +5673,7 @@ class _$ValueSetExpansionImpl extends _ValueSetExpansion {
       const DeepCollectionEquality().hash(_property),
       const DeepCollectionEquality().hash(_contains));
 
-  /// Create a copy of ValueSetExpansion
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ValueSetExpansionImplCopyWith<_$ValueSetExpansionImpl> get copyWith =>
@@ -5809,10 +5711,12 @@ abstract class _ValueSetExpansion extends ValueSetExpansion {
   factory _ValueSetExpansion.fromJson(Map<String, dynamic> json) =
       _$ValueSetExpansionImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5820,9 +5724,9 @@ abstract class _ValueSetExpansion extends ValueSetExpansion {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5836,8 +5740,8 @@ abstract class _ValueSetExpansion extends ValueSetExpansion {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] An identifier that uniquely identifies this expansion of the
   ///  valueset, based on a unique combination of the provided parameters, the
@@ -5845,76 +5749,72 @@ abstract class _ValueSetExpansion extends ValueSetExpansion {
   ///  etc. Systems may re-use the same identifier as long as those factors
   ///  remain the same, and the expansion is the same, but are not required to do
   ///  so. This is a business identifier.
-  @override
   FhirUri? get identifier;
+  @override
 
   /// [identifierElement] ("_identifier") Extensions for identifier
-  @override
   @JsonKey(name: '_identifier')
   PrimitiveElement? get identifierElement;
+  @override
 
   /// [next] As per paging Search results, the next URLs are opaque to the
   ///  client, have no dictated structure, and only the server understands them.
-  @override
   FhirUri? get next;
+  @override
 
   /// [nextElement] ("_next") Extensions for next
-  @override
   @JsonKey(name: '_next')
   PrimitiveElement? get nextElement;
+  @override
 
   /// [timestamp] The time at which the expansion was produced by the expanding
   ///  system.
-  @override
   FhirDateTime? get timestamp;
+  @override
 
   /// [timestampElement] ("_timestamp") Extensions for timestamp
-  @override
   @JsonKey(name: '_timestamp')
   PrimitiveElement? get timestampElement;
+  @override
 
   /// [total] The total number of concepts in the expansion. If the number of
   ///  concept nodes in this resource is less than the stated number, then the
   ///  server can return more using the offset parameter.
-  @override
   FhirInteger? get total;
+  @override
 
   /// [totalElement] ("_total") Extensions for total
-  @override
   @JsonKey(name: '_total')
   PrimitiveElement? get totalElement;
+  @override
 
   /// [offset] If paging is being used, the offset at which this resource starts.
   ///   I.e. this resource is a partial view into the expansion. If paging is not
   ///  being used, this element SHALL NOT be present.
-  @override
   FhirInteger? get offset;
+  @override
 
   /// [offsetElement] ("_offset") Extensions for offset
-  @override
   @JsonKey(name: '_offset')
   PrimitiveElement? get offsetElement;
+  @override
 
   /// [parameter] A parameter that controlled the expansion process. These
   ///  parameters may be used by users of expanded value sets to check whether
   ///  the expansion is suitable for a particular purpose, or to pick the correct
   ///  expansion.
-  @override
   List<ValueSetParameter>? get parameter;
+  @override
 
   /// [property] A property defines an additional slot through which additional
   ///  information can be provided about a concept.
-  @override
   List<ValueSetProperty>? get property;
+  @override
 
   /// [contains] The codes that are contained in the value set expansion.
-  @override
   List<ValueSetContains>? get contains;
-
-  /// Create a copy of ValueSetExpansion
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ValueSetExpansionImplCopyWith<_$ValueSetExpansionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6016,12 +5916,8 @@ mixin _$ValueSetParameter {
   PrimitiveElement? get valueDateTimeElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ValueSetParameter to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ValueSetParameter
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ValueSetParameterCopyWith<ValueSetParameter> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6064,8 +5960,6 @@ class _$ValueSetParameterCopyWithImpl<$Res, $Val extends ValueSetParameter>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ValueSetParameter
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6208,8 +6102,6 @@ class __$$ValueSetParameterImplCopyWithImpl<$Res>
       $Res Function(_$ValueSetParameterImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ValueSetParameter
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6531,7 +6423,7 @@ class _$ValueSetParameterImpl extends _ValueSetParameter {
                 other.valueDateTimeElement == valueDateTimeElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -6556,9 +6448,7 @@ class _$ValueSetParameterImpl extends _ValueSetParameter {
         valueDateTimeElement
       ]);
 
-  /// Create a copy of ValueSetParameter
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ValueSetParameterImplCopyWith<_$ValueSetParameterImpl> get copyWith =>
@@ -6603,10 +6493,12 @@ abstract class _ValueSetParameter extends ValueSetParameter {
   factory _ValueSetParameter.fromJson(Map<String, dynamic> json) =
       _$ValueSetParameterImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -6614,9 +6506,9 @@ abstract class _ValueSetParameter extends ValueSetParameter {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -6630,87 +6522,83 @@ abstract class _ValueSetParameter extends ValueSetParameter {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [name] Name of the input parameter to the $expand operation; may be a
   ///  server-assigned name for additional default or other server-supplied
   ///  parameters used to control the expansion process.
-  @override
   String? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [valueString] The value of the parameter.
-  @override
   String? get valueString;
+  @override
 
   /// [valueStringElement] ("_valueString") Extensions for valueString
-  @override
   @JsonKey(name: '_valueString')
   PrimitiveElement? get valueStringElement;
+  @override
 
   /// [valueBoolean] The value of the parameter.
-  @override
   FhirBoolean? get valueBoolean;
+  @override
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
+  @override
 
   /// [valueInteger] The value of the parameter.
-  @override
   FhirInteger? get valueInteger;
+  @override
 
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
-  @override
   @JsonKey(name: '_valueInteger')
   PrimitiveElement? get valueIntegerElement;
+  @override
 
   /// [valueDecimal] The value of the parameter.
-  @override
   FhirDecimal? get valueDecimal;
+  @override
 
   /// [valueDecimalElement] ("_valueDecimal") Extensions for valueDecimal
-  @override
   @JsonKey(name: '_valueDecimal')
   PrimitiveElement? get valueDecimalElement;
+  @override
 
   /// [valueUri] The value of the parameter.
-  @override
   FhirUri? get valueUri;
+  @override
 
   /// [valueUriElement] ("_valueUri") Extensions for valueUri
-  @override
   @JsonKey(name: '_valueUri')
   PrimitiveElement? get valueUriElement;
+  @override
 
   /// [valueCode] The value of the parameter.
-  @override
   FhirCode? get valueCode;
+  @override
 
   /// [valueCodeElement] ("_valueCode") Extensions for valueCode
-  @override
   @JsonKey(name: '_valueCode')
   PrimitiveElement? get valueCodeElement;
+  @override
 
   /// [valueDateTime] The value of the parameter.
-  @override
   FhirDateTime? get valueDateTime;
+  @override
 
   /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
-  @override
   @JsonKey(name: '_valueDateTime')
   PrimitiveElement? get valueDateTimeElement;
-
-  /// Create a copy of ValueSetParameter
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ValueSetParameterImplCopyWith<_$ValueSetParameterImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6766,12 +6654,8 @@ mixin _$ValueSetProperty {
   @JsonKey(name: '_uri')
   PrimitiveElement? get uriElement => throw _privateConstructorUsedError;
 
-  /// Serializes this ValueSetProperty to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ValueSetProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ValueSetPropertyCopyWith<ValueSetProperty> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6802,8 +6686,6 @@ class _$ValueSetPropertyCopyWithImpl<$Res, $Val extends ValueSetProperty>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ValueSetProperty
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6874,8 +6756,6 @@ class __$$ValueSetPropertyImplCopyWithImpl<$Res>
       $Res Function(_$ValueSetPropertyImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ValueSetProperty
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7047,7 +6927,7 @@ class _$ValueSetPropertyImpl extends _ValueSetProperty {
                 other.uriElement == uriElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -7059,9 +6939,7 @@ class _$ValueSetPropertyImpl extends _ValueSetProperty {
       uri,
       uriElement);
 
-  /// Create a copy of ValueSetProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ValueSetPropertyImplCopyWith<_$ValueSetPropertyImpl> get copyWith =>
@@ -7091,10 +6969,12 @@ abstract class _ValueSetProperty extends ValueSetProperty {
   factory _ValueSetProperty.fromJson(Map<String, dynamic> json) =
       _$ValueSetPropertyImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -7102,9 +6982,9 @@ abstract class _ValueSetProperty extends ValueSetProperty {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -7118,34 +6998,30 @@ abstract class _ValueSetProperty extends ValueSetProperty {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [code] A code that is used to identify the property. The code is used in
   ///  ValueSet.expansion.contains.property.code.
-  @override
   FhirCode? get code;
+  @override
 
   /// [codeElement] ("_code") Extensions for code
-  @override
   @JsonKey(name: '_code')
   PrimitiveElement? get codeElement;
+  @override
 
   /// [uri] Reference to the formal meaning of the property. One possible source
   ///  of meaning is the [Concept Properties](codesystem-concept-properties.html)
   ///  code system.
-  @override
   FhirUri? get uri;
+  @override
 
   /// [uriElement] ("_uri") Extensions for uri
-  @override
   @JsonKey(name: '_uri')
   PrimitiveElement? get uriElement;
-
-  /// Create a copy of ValueSetProperty
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ValueSetPropertyImplCopyWith<_$ValueSetPropertyImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -7254,12 +7130,8 @@ mixin _$ValueSetContains {
   ///  hierarchy.
   List<ValueSetContains>? get contains => throw _privateConstructorUsedError;
 
-  /// Serializes this ValueSetContains to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ValueSetContains
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ValueSetContainsCopyWith<ValueSetContains> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -7301,8 +7173,6 @@ class _$ValueSetContainsCopyWithImpl<$Res, $Val extends ValueSetContains>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ValueSetContains
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7439,8 +7309,6 @@ class __$$ValueSetContainsImplCopyWithImpl<$Res>
       $Res Function(_$ValueSetContainsImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ValueSetContains
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7793,7 +7661,7 @@ class _$ValueSetContainsImpl extends _ValueSetContains {
             const DeepCollectionEquality().equals(other._contains, _contains));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -7816,9 +7684,7 @@ class _$ValueSetContainsImpl extends _ValueSetContains {
       const DeepCollectionEquality().hash(_property),
       const DeepCollectionEquality().hash(_contains));
 
-  /// Create a copy of ValueSetContains
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ValueSetContainsImplCopyWith<_$ValueSetContainsImpl> get copyWith =>
@@ -7858,10 +7724,12 @@ abstract class _ValueSetContains extends ValueSetContains {
   factory _ValueSetContains.fromJson(Map<String, dynamic> json) =
       _$ValueSetContainsImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -7869,9 +7737,9 @@ abstract class _ValueSetContains extends ValueSetContains {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -7885,97 +7753,93 @@ abstract class _ValueSetContains extends ValueSetContains {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [system] An absolute URI which is the code system in which the code for
   ///  this item in the expansion is defined.
-  @override
   FhirUri? get system;
+  @override
 
   /// [systemElement] ("_system") Extensions for system
-  @override
   @JsonKey(name: '_system')
   PrimitiveElement? get systemElement;
+  @override
 
   /// [abstract_] ("abstract") If true, this entry is included in the expansion
   ///  for navigational purposes, and the user cannot select the code directly as
   ///  a proper value.
-  @override
   @JsonKey(name: 'abstract')
   FhirBoolean? get abstract_;
+  @override
 
   /// [abstractElement] ("_abstract") Extensions for abstract
-  @override
   @JsonKey(name: '_abstract')
   PrimitiveElement? get abstractElement;
+  @override
 
   /// [inactive] If the concept is inactive in the code system that defines it.
   ///  Inactive codes are those that are no longer to be used, but are maintained
   ///  by the code system for understanding legacy data. It might not be known or
   ///  specified whether a concept is inactive (and it may depend on the context
   ///  of use).
-  @override
   FhirBoolean? get inactive;
+  @override
 
   /// [inactiveElement] ("_inactive") Extensions for inactive
-  @override
   @JsonKey(name: '_inactive')
   PrimitiveElement? get inactiveElement;
+  @override
 
   /// [version] The version of the code system from this code was taken. Note
   ///  that a well-maintained code system does not need the version reported,
   ///  because the meaning of codes is consistent across versions. However this
   ///  cannot consistently be assured, and when the meaning is not guaranteed to
   ///  be consistent, the version SHOULD be exchanged.
-  @override
   String? get version;
+  @override
 
   /// [versionElement] ("_version") Extensions for version
-  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
+  @override
 
   /// [code] The code for this item in the expansion hierarchy. If this code is
   ///  missing the entry in the hierarchy is a place holder (abstract) and does
   ///  not represent a valid code in the value set.
-  @override
   FhirCode? get code;
+  @override
 
   /// [codeElement] ("_code") Extensions for code
-  @override
   @JsonKey(name: '_code')
   PrimitiveElement? get codeElement;
+  @override
 
   /// [display] The recommended display for this item in the expansion.
-  @override
   String? get display;
+  @override
 
   /// [displayElement] ("_display") Extensions for display
-  @override
   @JsonKey(name: '_display')
   PrimitiveElement? get displayElement;
+  @override
 
   /// [designation] Additional representations for this item - other languages,
   ///  aliases, specialized purposes, used for particular purposes, etc. These
   ///  are relevant when the conditions of the expansion do not fix to a single
   ///  correct representation.
-  @override
   List<ValueSetDesignation>? get designation;
+  @override
 
   /// [property] A property value for this concept.
-  @override
   List<ValueSetProperty1>? get property;
+  @override
 
   /// [contains] Other codes and entries contained under this entry in the
   ///  hierarchy.
-  @override
   List<ValueSetContains>? get contains;
-
-  /// Create a copy of ValueSetContains
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ValueSetContainsImplCopyWith<_$ValueSetContainsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -8075,12 +7939,8 @@ mixin _$ValueSetProperty1 {
   List<ValueSetSubProperty>? get subProperty =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ValueSetProperty1 to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ValueSetProperty1
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ValueSetProperty1CopyWith<ValueSetProperty1> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -8125,8 +7985,6 @@ class _$ValueSetProperty1CopyWithImpl<$Res, $Val extends ValueSetProperty1>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ValueSetProperty1
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -8230,8 +8088,6 @@ class _$ValueSetProperty1CopyWithImpl<$Res, $Val extends ValueSetProperty1>
     ) as $Val);
   }
 
-  /// Create a copy of ValueSetProperty1
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get valueCoding {
@@ -8286,8 +8142,6 @@ class __$$ValueSetProperty1ImplCopyWithImpl<$Res>
       $Res Function(_$ValueSetProperty1Impl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ValueSetProperty1
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -8616,7 +8470,7 @@ class _$ValueSetProperty1Impl extends _ValueSetProperty1 {
                 .equals(other._subProperty, _subProperty));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -8641,9 +8495,7 @@ class _$ValueSetProperty1Impl extends _ValueSetProperty1 {
         const DeepCollectionEquality().hash(_subProperty)
       ]);
 
-  /// Create a copy of ValueSetProperty1
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ValueSetProperty1ImplCopyWith<_$ValueSetProperty1Impl> get copyWith =>
@@ -8688,10 +8540,12 @@ abstract class _ValueSetProperty1 extends ValueSetProperty1 {
   factory _ValueSetProperty1.fromJson(Map<String, dynamic> json) =
       _$ValueSetProperty1Impl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -8699,9 +8553,9 @@ abstract class _ValueSetProperty1 extends ValueSetProperty1 {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -8715,84 +8569,80 @@ abstract class _ValueSetProperty1 extends ValueSetProperty1 {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [code] A code that is a reference to ValueSet.expansion.property.code.
-  @override
   FhirCode? get code;
+  @override
 
   /// [codeElement] ("_code") Extensions for code
-  @override
   @JsonKey(name: '_code')
   PrimitiveElement? get codeElement;
+  @override
 
   /// [valueCode] The value of this property.
-  @override
   FhirCode? get valueCode;
+  @override
 
   /// [valueCodeElement] ("_valueCode") Extensions for valueCode
-  @override
   @JsonKey(name: '_valueCode')
   PrimitiveElement? get valueCodeElement;
+  @override
 
   /// [valueCoding] The value of this property.
-  @override
   Coding? get valueCoding;
+  @override
 
   /// [valueString] The value of this property.
-  @override
   String? get valueString;
+  @override
 
   /// [valueStringElement] ("_valueString") Extensions for valueString
-  @override
   @JsonKey(name: '_valueString')
   PrimitiveElement? get valueStringElement;
+  @override
 
   /// [valueInteger] The value of this property.
-  @override
   FhirInteger? get valueInteger;
+  @override
 
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
-  @override
   @JsonKey(name: '_valueInteger')
   PrimitiveElement? get valueIntegerElement;
+  @override
 
   /// [valueBoolean] The value of this property.
-  @override
   FhirBoolean? get valueBoolean;
+  @override
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
+  @override
 
   /// [valueDateTime] The value of this property.
-  @override
   FhirDateTime? get valueDateTime;
+  @override
 
   /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
-  @override
   @JsonKey(name: '_valueDateTime')
   PrimitiveElement? get valueDateTimeElement;
+  @override
 
   /// [valueDecimal] The value of this property.
-  @override
   FhirDecimal? get valueDecimal;
+  @override
 
   /// [valueDecimalElement] ("_valueDecimal") Extensions for valueDecimal
-  @override
   @JsonKey(name: '_valueDecimal')
   PrimitiveElement? get valueDecimalElement;
+  @override
 
   /// [subProperty] A subproperty value for this concept.
-  @override
   List<ValueSetSubProperty>? get subProperty;
-
-  /// Create a copy of ValueSetProperty1
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ValueSetProperty1ImplCopyWith<_$ValueSetProperty1Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -8888,12 +8738,8 @@ mixin _$ValueSetSubProperty {
   PrimitiveElement? get valueDecimalElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ValueSetSubProperty to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ValueSetSubProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ValueSetSubPropertyCopyWith<ValueSetSubProperty> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -8937,8 +8783,6 @@ class _$ValueSetSubPropertyCopyWithImpl<$Res, $Val extends ValueSetSubProperty>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ValueSetSubProperty
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -9037,8 +8881,6 @@ class _$ValueSetSubPropertyCopyWithImpl<$Res, $Val extends ValueSetSubProperty>
     ) as $Val);
   }
 
-  /// Create a copy of ValueSetSubProperty
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get valueCoding {
@@ -9092,8 +8934,6 @@ class __$$ValueSetSubPropertyImplCopyWithImpl<$Res>
       $Res Function(_$ValueSetSubPropertyImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ValueSetSubProperty
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -9400,7 +9240,7 @@ class _$ValueSetSubPropertyImpl extends _ValueSetSubProperty {
                 other.valueDecimalElement == valueDecimalElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -9423,9 +9263,7 @@ class _$ValueSetSubPropertyImpl extends _ValueSetSubProperty {
       valueDecimal,
       valueDecimalElement);
 
-  /// Create a copy of ValueSetSubProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ValueSetSubPropertyImplCopyWith<_$ValueSetSubPropertyImpl> get copyWith =>
@@ -9469,10 +9307,12 @@ abstract class _ValueSetSubProperty extends ValueSetSubProperty {
   factory _ValueSetSubProperty.fromJson(Map<String, dynamic> json) =
       _$ValueSetSubPropertyImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -9480,9 +9320,9 @@ abstract class _ValueSetSubProperty extends ValueSetSubProperty {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -9496,80 +9336,76 @@ abstract class _ValueSetSubProperty extends ValueSetSubProperty {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [code] A code that is a reference to ValueSet.expansion.property.code.
-  @override
   FhirCode? get code;
+  @override
 
   /// [codeElement] ("_code") Extensions for code
-  @override
   @JsonKey(name: '_code')
   PrimitiveElement? get codeElement;
+  @override
 
   /// [valueCode] The value of this subproperty.
-  @override
   FhirCode? get valueCode;
+  @override
 
   /// [valueCodeElement] ("_valueCode") Extensions for valueCode
-  @override
   @JsonKey(name: '_valueCode')
   PrimitiveElement? get valueCodeElement;
+  @override
 
   /// [valueCoding] The value of this subproperty.
-  @override
   Coding? get valueCoding;
+  @override
 
   /// [valueString] The value of this subproperty.
-  @override
   String? get valueString;
+  @override
 
   /// [valueStringElement] ("_valueString") Extensions for valueString
-  @override
   @JsonKey(name: '_valueString')
   PrimitiveElement? get valueStringElement;
+  @override
 
   /// [valueInteger] The value of this subproperty.
-  @override
   FhirInteger? get valueInteger;
+  @override
 
   /// [valueIntegerElement] ("_valueInteger") Extensions for valueInteger
-  @override
   @JsonKey(name: '_valueInteger')
   PrimitiveElement? get valueIntegerElement;
+  @override
 
   /// [valueBoolean] The value of this subproperty.
-  @override
   FhirBoolean? get valueBoolean;
+  @override
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
+  @override
 
   /// [valueDateTime] The value of this subproperty.
-  @override
   FhirDateTime? get valueDateTime;
+  @override
 
   /// [valueDateTimeElement] ("_valueDateTime") Extensions for valueDateTime
-  @override
   @JsonKey(name: '_valueDateTime')
   PrimitiveElement? get valueDateTimeElement;
+  @override
 
   /// [valueDecimal] The value of this subproperty.
-  @override
   FhirDecimal? get valueDecimal;
+  @override
 
   /// [valueDecimalElement] ("_valueDecimal") Extensions for valueDecimal
-  @override
   @JsonKey(name: '_valueDecimal')
   PrimitiveElement? get valueDecimalElement;
-
-  /// Create a copy of ValueSetSubProperty
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ValueSetSubPropertyImplCopyWith<_$ValueSetSubPropertyImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -9628,12 +9464,8 @@ mixin _$ValueSetScope {
   PrimitiveElement? get exclusionCriteriaElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ValueSetScope to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ValueSetScope
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ValueSetScopeCopyWith<ValueSetScope> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -9666,8 +9498,6 @@ class _$ValueSetScopeCopyWithImpl<$Res, $Val extends ValueSetScope>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ValueSetScope
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -9740,8 +9570,6 @@ class __$$ValueSetScopeImplCopyWithImpl<$Res>
       _$ValueSetScopeImpl _value, $Res Function(_$ValueSetScopeImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ValueSetScope
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -9918,7 +9746,7 @@ class _$ValueSetScopeImpl extends _ValueSetScope {
                 other.exclusionCriteriaElement == exclusionCriteriaElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -9930,9 +9758,7 @@ class _$ValueSetScopeImpl extends _ValueSetScope {
       exclusionCriteria,
       exclusionCriteriaElement);
 
-  /// Create a copy of ValueSetScope
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ValueSetScopeImplCopyWith<_$ValueSetScopeImpl> get copyWith =>
@@ -9962,10 +9788,12 @@ abstract class _ValueSetScope extends ValueSetScope {
   factory _ValueSetScope.fromJson(Map<String, dynamic> json) =
       _$ValueSetScopeImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -9973,9 +9801,9 @@ abstract class _ValueSetScope extends ValueSetScope {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -9989,35 +9817,31 @@ abstract class _ValueSetScope extends ValueSetScope {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [inclusionCriteria] Criteria describing which concepts or codes should be
   ///  included and why.
-  @override
   String? get inclusionCriteria;
+  @override
 
   /// [inclusionCriteriaElement] ("_inclusionCriteria") Extensions for
   ///  inclusionCriteria
-  @override
   @JsonKey(name: '_inclusionCriteria')
   PrimitiveElement? get inclusionCriteriaElement;
+  @override
 
   /// [exclusionCriteria] Criteria describing which concepts or codes should be
   ///  excluded and why.
-  @override
   String? get exclusionCriteria;
+  @override
 
   /// [exclusionCriteriaElement] ("_exclusionCriteria") Extensions for
   ///  exclusionCriteria
-  @override
   @JsonKey(name: '_exclusionCriteria')
   PrimitiveElement? get exclusionCriteriaElement;
-
-  /// Create a copy of ValueSetScope
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ValueSetScopeImplCopyWith<_$ValueSetScopeImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -191,12 +191,8 @@ mixin _$PackagedProductDefinition {
   List<PackagedProductDefinitionProperty>? get characteristic =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this PackagedProductDefinition to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of PackagedProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $PackagedProductDefinitionCopyWith<PackagedProductDefinition> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -259,8 +255,6 @@ class _$PackagedProductDefinitionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of PackagedProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -419,8 +413,6 @@ class _$PackagedProductDefinitionCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of PackagedProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -433,8 +425,6 @@ class _$PackagedProductDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of PackagedProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -447,8 +437,6 @@ class _$PackagedProductDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of PackagedProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -461,8 +449,6 @@ class _$PackagedProductDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of PackagedProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get status {
@@ -475,8 +461,6 @@ class _$PackagedProductDefinitionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of PackagedProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PackagedProductDefinitionPackagingCopyWith<$Res>? get packaging {
@@ -556,8 +540,6 @@ class __$$PackagedProductDefinitionImplCopyWithImpl<$Res>
       $Res Function(_$PackagedProductDefinitionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of PackagedProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1174,7 +1156,7 @@ class _$PackagedProductDefinitionImpl extends _PackagedProductDefinition {
                 .equals(other._characteristic, _characteristic));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1210,9 +1192,7 @@ class _$PackagedProductDefinitionImpl extends _PackagedProductDefinition {
         const DeepCollectionEquality().hash(_characteristic)
       ]);
 
-  /// Create a copy of PackagedProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$PackagedProductDefinitionImplCopyWith<_$PackagedProductDefinitionImpl>
@@ -1269,42 +1249,44 @@ abstract class _PackagedProductDefinition extends PackagedProductDefinition {
   factory _PackagedProductDefinition.fromJson(Map<String, dynamic> json) =
       _$PackagedProductDefinitionImpl.fromJson;
 
-  /// [resourceType] This is a PackagedProductDefinition resource
   @override
+
+  /// [resourceType] This is a PackagedProductDefinition resource
   @JsonKey(unknownEnumValue: R5ResourceType.PackagedProductDefinition)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1312,16 +1294,16 @@ abstract class _PackagedProductDefinition extends PackagedProductDefinition {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1329,9 +1311,9 @@ abstract class _PackagedProductDefinition extends PackagedProductDefinition {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1345,50 +1327,50 @@ abstract class _PackagedProductDefinition extends PackagedProductDefinition {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] A unique identifier for this package as whole - not the the
   ///  content of the package. Unique instance identifiers assigned to a package
   ///  by manufacturers, regulators, drug catalogue custodians or other
   ///  organizations.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [name] A name for this package. Typically what it would be listed as in a
   ///  drug formulary or catalogue, inventory etc.
-  @override
   String? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [type] A high level category e.g. medicinal product, raw material,
   ///  shipping/transport container, etc.
-  @override
   CodeableConcept? get type;
+  @override
 
   /// [packageFor] The product this package model relates to, not the contents of
   ///  the package (for which see package.containedItem).
-  @override
   List<Reference>? get packageFor;
+  @override
 
   /// [status] The status within the lifecycle of this item. A high level status,
   ///  this is not intended to duplicate details carried elsewhere such as legal
   ///  status, or authorization or marketing status.
-  @override
   CodeableConcept? get status;
+  @override
 
   /// [statusDate] The date at which the given status became applicable.
-  @override
   FhirDateTime? get statusDate;
+  @override
 
   /// [statusDateElement] ("_statusDate") Extensions for statusDate
-  @override
   @JsonKey(name: '_statusDate')
   PrimitiveElement? get statusDateElement;
+  @override
 
   /// [containedItemQuantity] A total of the complete count of contained items of
   ///  a particular type/form, independent of sub-packaging or organization. This
@@ -1404,66 +1386,62 @@ abstract class _PackagedProductDefinition extends PackagedProductDefinition {
   ///  tubes'). Repeats are not to be used to represent different pack sizes
   ///  (e.g. 20 pack vs. 50 pack) - which would be different instances of this
   ///  resource.
-  @override
   List<Quantity>? get containedItemQuantity;
+  @override
 
   /// [description] Textual description. Note that this is not the name of the
   ///  package or product.
-  @override
   FhirMarkdown? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [legalStatusOfSupply] The legal status of supply of the packaged item as
   ///  classified by the regulator.
-  @override
   List<PackagedProductDefinitionLegalStatusOfSupply>? get legalStatusOfSupply;
+  @override
 
   /// [marketingStatus] Allows specifying that an item is on the market for sale,
   ///  or that it is not available, and the dates and locations associated.
-  @override
   List<MarketingStatus>? get marketingStatus;
+  @override
 
   /// [copackagedIndicator] Identifies if the package contains different items,
   ///  such as when a drug product is supplied with another item e.g. a diluent
   ///  or adjuvant.
-  @override
   FhirBoolean? get copackagedIndicator;
+  @override
 
   /// [copackagedIndicatorElement] ("_copackagedIndicator") Extensions for
   ///  copackagedIndicator
-  @override
   @JsonKey(name: '_copackagedIndicator')
   PrimitiveElement? get copackagedIndicatorElement;
+  @override
 
   /// [manufacturer] Manufacturer of this package type. When there are multiple
   ///  it means these are all possible manufacturers.
-  @override
   List<Reference>? get manufacturer;
+  @override
 
   /// [attachedDocument] Additional information or supporting documentation about
   ///  the packaged product.
-  @override
   List<Reference>? get attachedDocument;
+  @override
 
   /// [packaging] A packaging item, as a container for medically related items,
   ///  possibly with other packaging items within, or a packaging component, such
   ///  as bottle cap (which is not a device or a medication manufactured item).
-  @override
   PackagedProductDefinitionPackaging? get packaging;
+  @override
 
   /// [characteristic] Allows the key features to be recorded, such as "hospital
   ///  pack", "nurse prescribable", "calendar pack".
-  @override
   List<PackagedProductDefinitionProperty>? get characteristic;
-
-  /// Create a copy of PackagedProductDefinition
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$PackagedProductDefinitionImplCopyWith<_$PackagedProductDefinitionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1512,12 +1490,8 @@ mixin _$PackagedProductDefinitionLegalStatusOfSupply {
   ///  specified, this indicates it is unknown in this context.
   CodeableConcept? get jurisdiction => throw _privateConstructorUsedError;
 
-  /// Serializes this PackagedProductDefinitionLegalStatusOfSupply to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of PackagedProductDefinitionLegalStatusOfSupply
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $PackagedProductDefinitionLegalStatusOfSupplyCopyWith<
           PackagedProductDefinitionLegalStatusOfSupply>
       get copyWith => throw _privateConstructorUsedError;
@@ -1554,8 +1528,6 @@ class _$PackagedProductDefinitionLegalStatusOfSupplyCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of PackagedProductDefinitionLegalStatusOfSupply
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1589,8 +1561,6 @@ class _$PackagedProductDefinitionLegalStatusOfSupplyCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of PackagedProductDefinitionLegalStatusOfSupply
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -1603,8 +1573,6 @@ class _$PackagedProductDefinitionLegalStatusOfSupplyCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of PackagedProductDefinitionLegalStatusOfSupply
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get jurisdiction {
@@ -1652,8 +1620,6 @@ class __$$PackagedProductDefinitionLegalStatusOfSupplyImplCopyWithImpl<$Res>
       $Res Function(_$PackagedProductDefinitionLegalStatusOfSupplyImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of PackagedProductDefinitionLegalStatusOfSupply
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1801,7 +1767,7 @@ class _$PackagedProductDefinitionLegalStatusOfSupplyImpl
                 other.jurisdiction == jurisdiction));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1811,9 +1777,7 @@ class _$PackagedProductDefinitionLegalStatusOfSupplyImpl
       code,
       jurisdiction);
 
-  /// Create a copy of PackagedProductDefinitionLegalStatusOfSupply
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$PackagedProductDefinitionLegalStatusOfSupplyImplCopyWith<
@@ -1846,10 +1810,12 @@ abstract class _PackagedProductDefinitionLegalStatusOfSupply
           Map<String, dynamic> json) =
       _$PackagedProductDefinitionLegalStatusOfSupplyImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1857,9 +1823,9 @@ abstract class _PackagedProductDefinitionLegalStatusOfSupply
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1873,23 +1839,19 @@ abstract class _PackagedProductDefinitionLegalStatusOfSupply
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [code] The actual status of supply. Conveys in what situation this package
   ///  type may be supplied for use.
-  @override
   CodeableConcept? get code;
+  @override
 
   /// [jurisdiction] The place where the legal status of supply applies. When not
   ///  specified, this indicates it is unknown in this context.
-  @override
   CodeableConcept? get jurisdiction;
-
-  /// Create a copy of PackagedProductDefinitionLegalStatusOfSupply
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$PackagedProductDefinitionLegalStatusOfSupplyImplCopyWith<
           _$PackagedProductDefinitionLegalStatusOfSupplyImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1991,12 +1953,8 @@ mixin _$PackagedProductDefinitionPackaging {
   List<PackagedProductDefinitionPackaging>? get packaging =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this PackagedProductDefinitionPackaging to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of PackagedProductDefinitionPackaging
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $PackagedProductDefinitionPackagingCopyWith<
           PackagedProductDefinitionPackaging>
       get copyWith => throw _privateConstructorUsedError;
@@ -2042,8 +2000,6 @@ class _$PackagedProductDefinitionPackagingCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of PackagedProductDefinitionPackaging
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2132,8 +2088,6 @@ class _$PackagedProductDefinitionPackagingCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of PackagedProductDefinitionPackaging
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -2188,8 +2142,6 @@ class __$$PackagedProductDefinitionPackagingImplCopyWithImpl<$Res>
       $Res Function(_$PackagedProductDefinitionPackagingImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of PackagedProductDefinitionPackaging
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2571,7 +2523,7 @@ class _$PackagedProductDefinitionPackagingImpl
                 .equals(other._packaging, _packaging));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2592,9 +2544,7 @@ class _$PackagedProductDefinitionPackagingImpl
       const DeepCollectionEquality().hash(_containedItem),
       const DeepCollectionEquality().hash(_packaging));
 
-  /// Create a copy of PackagedProductDefinitionPackaging
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$PackagedProductDefinitionPackagingImplCopyWith<
@@ -2637,10 +2587,12 @@ abstract class _PackagedProductDefinitionPackaging
           Map<String, dynamic> json) =
       _$PackagedProductDefinitionPackagingImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2648,9 +2600,9 @@ abstract class _PackagedProductDefinitionPackaging
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2664,81 +2616,77 @@ abstract class _PackagedProductDefinitionPackaging
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] A business identifier that is specific to this particular part
   ///  of the packaging, often assigned by the manufacturer. Including possibly
   ///  Data Carrier Identifier (a GS1 barcode).
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [type] The physical type of the container of the items.
-  @override
   CodeableConcept? get type;
+  @override
 
   /// [componentPart] Is this a part of the packaging (e.g. a cap or bottle
   ///  stopper), rather than the packaging itself (e.g. a bottle or vial). The
   ///  latter type are designed be a container, but the former are not.
-  @override
   FhirBoolean? get componentPart;
+  @override
 
   /// [componentPartElement] ("_componentPart") Extensions for componentPart
-  @override
   @JsonKey(name: '_componentPart')
   PrimitiveElement? get componentPartElement;
+  @override
 
   /// [quantity] The quantity of packaging items contained at this layer of the
   ///  package. This does not relate to the number of contained items but relates
   ///  solely to the number of packaging items. When looking at the outermost
   ///  layer it is always 1. If there are two boxes within, at the next layer it
   ///  would be 2.
-  @override
   FhirInteger? get quantity;
+  @override
 
   /// [quantityElement] ("_quantity") Extensions for quantity
-  @override
   @JsonKey(name: '_quantity')
   PrimitiveElement? get quantityElement;
+  @override
 
   /// [material] Material type of the package item.
-  @override
   List<CodeableConcept>? get material;
+  @override
 
   /// [alternateMaterial] A possible alternate material for this part of the
   ///  packaging, that is allowed to be used instead of the usual material (e.g.
   ///  different types of plastic for a blister sleeve).
-  @override
   List<CodeableConcept>? get alternateMaterial;
+  @override
 
   /// [shelfLifeStorage] Shelf Life and storage information.
-  @override
   List<ProductShelfLife>? get shelfLifeStorage;
+  @override
 
   /// [manufacturer] Manufacturer of this packaging item. When there are multiple
   ///  values each one is a potential manufacturer of this packaging item.
-  @override
   List<Reference>? get manufacturer;
+  @override
 
   /// [property] General characteristics of this item.
-  @override
   List<PackagedProductDefinitionProperty>? get property;
+  @override
 
   /// [containedItem] The item(s) within the packaging.
-  @override
   List<PackagedProductDefinitionContainedItem>? get containedItem;
+  @override
 
   /// [packaging] Allows containers (and parts of containers) within containers,
   ///  still as a part of a single packaged product. See also
   ///  PackagedProductDefinition.packaging.containedItem.item(PackagedProductDefinition).
   ///
-  @override
   List<PackagedProductDefinitionPackaging>? get packaging;
-
-  /// Create a copy of PackagedProductDefinitionPackaging
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$PackagedProductDefinitionPackagingImplCopyWith<
           _$PackagedProductDefinitionPackagingImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2807,12 +2755,8 @@ mixin _$PackagedProductDefinitionProperty {
   /// [valueAttachment] A value for the characteristic.
   Attachment? get valueAttachment => throw _privateConstructorUsedError;
 
-  /// Serializes this PackagedProductDefinitionProperty to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of PackagedProductDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $PackagedProductDefinitionPropertyCopyWith<PackagedProductDefinitionProperty>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2855,8 +2799,6 @@ class _$PackagedProductDefinitionPropertyCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of PackagedProductDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2920,8 +2862,6 @@ class _$PackagedProductDefinitionPropertyCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of PackagedProductDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get type {
@@ -2930,8 +2870,6 @@ class _$PackagedProductDefinitionPropertyCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of PackagedProductDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get valueCodeableConcept {
@@ -2945,8 +2883,6 @@ class _$PackagedProductDefinitionPropertyCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of PackagedProductDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get valueQuantity {
@@ -2959,8 +2895,6 @@ class _$PackagedProductDefinitionPropertyCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of PackagedProductDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get valueAttachment {
@@ -3016,8 +2950,6 @@ class __$$PackagedProductDefinitionPropertyImplCopyWithImpl<$Res>
       $Res Function(_$PackagedProductDefinitionPropertyImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of PackagedProductDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3237,7 +3169,7 @@ class _$PackagedProductDefinitionPropertyImpl
                 other.valueAttachment == valueAttachment));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3253,9 +3185,7 @@ class _$PackagedProductDefinitionPropertyImpl
       valueBooleanElement,
       valueAttachment);
 
-  /// Create a copy of PackagedProductDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$PackagedProductDefinitionPropertyImplCopyWith<
@@ -3293,10 +3223,12 @@ abstract class _PackagedProductDefinitionProperty
           Map<String, dynamic> json) =
       _$PackagedProductDefinitionPropertyImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3304,9 +3236,9 @@ abstract class _PackagedProductDefinitionProperty
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3320,47 +3252,43 @@ abstract class _PackagedProductDefinitionProperty
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] A code expressing the type of characteristic.
-  @override
   CodeableConcept get type;
+  @override
 
   /// [valueCodeableConcept] A value for the characteristic.
-  @override
   CodeableConcept? get valueCodeableConcept;
+  @override
 
   /// [valueQuantity] A value for the characteristic.
-  @override
   Quantity? get valueQuantity;
+  @override
 
   /// [valueDate] A value for the characteristic.
-  @override
   FhirDate? get valueDate;
+  @override
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
-  @override
   @JsonKey(name: '_valueDate')
   PrimitiveElement? get valueDateElement;
+  @override
 
   /// [valueBoolean] A value for the characteristic.
-  @override
   FhirBoolean? get valueBoolean;
+  @override
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
-  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
+  @override
 
   /// [valueAttachment] A value for the characteristic.
-  @override
   Attachment? get valueAttachment;
-
-  /// Create a copy of PackagedProductDefinitionProperty
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$PackagedProductDefinitionPropertyImplCopyWith<
           _$PackagedProductDefinitionPropertyImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3418,12 +3346,8 @@ mixin _$PackagedProductDefinitionContainedItem {
   ///  long definition).
   Quantity? get amount => throw _privateConstructorUsedError;
 
-  /// Serializes this PackagedProductDefinitionContainedItem to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of PackagedProductDefinitionContainedItem
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $PackagedProductDefinitionContainedItemCopyWith<
           PackagedProductDefinitionContainedItem>
       get copyWith => throw _privateConstructorUsedError;
@@ -3459,8 +3383,6 @@ class _$PackagedProductDefinitionContainedItemCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of PackagedProductDefinitionContainedItem
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3494,8 +3416,6 @@ class _$PackagedProductDefinitionContainedItemCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of PackagedProductDefinitionContainedItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res> get item {
@@ -3504,8 +3424,6 @@ class _$PackagedProductDefinitionContainedItemCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of PackagedProductDefinitionContainedItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get amount {
@@ -3551,8 +3469,6 @@ class __$$PackagedProductDefinitionContainedItemImplCopyWithImpl<$Res>
       $Res Function(_$PackagedProductDefinitionContainedItemImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of PackagedProductDefinitionContainedItem
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3707,7 +3623,7 @@ class _$PackagedProductDefinitionContainedItemImpl
             (identical(other.amount, amount) || other.amount == amount));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3717,9 +3633,7 @@ class _$PackagedProductDefinitionContainedItemImpl
       item,
       amount);
 
-  /// Create a copy of PackagedProductDefinitionContainedItem
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$PackagedProductDefinitionContainedItemImplCopyWith<
@@ -3750,10 +3664,12 @@ abstract class _PackagedProductDefinitionContainedItem
           Map<String, dynamic> json) =
       _$PackagedProductDefinitionContainedItemImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3761,9 +3677,9 @@ abstract class _PackagedProductDefinitionContainedItem
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3777,8 +3693,8 @@ abstract class _PackagedProductDefinitionContainedItem
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [item] The actual item(s) of medication, as manufactured, or a device
   ///  (typically, but not necessarily, a co-packaged one), or other medically
@@ -3788,20 +3704,16 @@ abstract class _PackagedProductDefinitionContainedItem
   ///  package of other entire packages is wanted - such as a wholesale or
   ///  distribution pack (for layers within one package, use
   ///  PackagedProductDefinition.packaging.packaging).
-  @override
   CodeableReference get item;
+  @override
 
   /// [amount] The number of this type of item within this packaging or for
   ///  continuous items such as liquids it is the quantity (for example 25ml).
   ///  See also PackagedProductDefinition.containedItemQuantity (especially the
   ///  long definition).
-  @override
   Quantity? get amount;
-
-  /// Create a copy of PackagedProductDefinitionContainedItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$PackagedProductDefinitionContainedItemImplCopyWith<
           _$PackagedProductDefinitionContainedItemImpl>
       get copyWith => throw _privateConstructorUsedError;

@@ -147,12 +147,8 @@ mixin _$EpisodeOfCare {
   ///  EpisodeOfCare.
   List<Reference>? get account => throw _privateConstructorUsedError;
 
-  /// Serializes this EpisodeOfCare to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of EpisodeOfCare
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $EpisodeOfCareCopyWith<EpisodeOfCare> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -209,8 +205,6 @@ class _$EpisodeOfCareCopyWithImpl<$Res, $Val extends EpisodeOfCare>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of EpisodeOfCare
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -344,8 +338,6 @@ class _$EpisodeOfCareCopyWithImpl<$Res, $Val extends EpisodeOfCare>
     ) as $Val);
   }
 
-  /// Create a copy of EpisodeOfCare
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -358,8 +350,6 @@ class _$EpisodeOfCareCopyWithImpl<$Res, $Val extends EpisodeOfCare>
     });
   }
 
-  /// Create a copy of EpisodeOfCare
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -372,8 +362,6 @@ class _$EpisodeOfCareCopyWithImpl<$Res, $Val extends EpisodeOfCare>
     });
   }
 
-  /// Create a copy of EpisodeOfCare
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get patient {
@@ -382,8 +370,6 @@ class _$EpisodeOfCareCopyWithImpl<$Res, $Val extends EpisodeOfCare>
     });
   }
 
-  /// Create a copy of EpisodeOfCare
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get managingOrganization {
@@ -396,8 +382,6 @@ class _$EpisodeOfCareCopyWithImpl<$Res, $Val extends EpisodeOfCare>
     });
   }
 
-  /// Create a copy of EpisodeOfCare
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get period {
@@ -410,8 +394,6 @@ class _$EpisodeOfCareCopyWithImpl<$Res, $Val extends EpisodeOfCare>
     });
   }
 
-  /// Create a copy of EpisodeOfCare
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get careManager {
@@ -483,8 +465,6 @@ class __$$EpisodeOfCareImplCopyWithImpl<$Res>
       _$EpisodeOfCareImpl _value, $Res Function(_$EpisodeOfCareImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of EpisodeOfCare
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -994,7 +974,7 @@ class _$EpisodeOfCareImpl extends _EpisodeOfCare {
             const DeepCollectionEquality().equals(other._account, _account));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1025,9 +1005,7 @@ class _$EpisodeOfCareImpl extends _EpisodeOfCare {
         const DeepCollectionEquality().hash(_account)
       ]);
 
-  /// Create a copy of EpisodeOfCare
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$EpisodeOfCareImplCopyWith<_$EpisodeOfCareImpl> get copyWith =>
@@ -1078,38 +1056,39 @@ abstract class _EpisodeOfCare extends EpisodeOfCare {
   @override
   @JsonKey(unknownEnumValue: R5ResourceType.EpisodeOfCare)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1117,16 +1096,16 @@ abstract class _EpisodeOfCare extends EpisodeOfCare {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1134,9 +1113,9 @@ abstract class _EpisodeOfCare extends EpisodeOfCare {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1150,83 +1129,79 @@ abstract class _EpisodeOfCare extends EpisodeOfCare {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] The EpisodeOfCare may be known by different identifiers for
   ///  different contexts of use, such as when an external agency is tracking the
   ///  Episode for funding purposes.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [status] planned | waitlist | active | onhold | finished | cancelled.
-  @override
   EpisodeOfCareStatus? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [statusHistory] The history of statuses that the EpisodeOfCare has been
   ///  through (without requiring processing the history of the resource).
-  @override
   List<EpisodeOfCareStatusHistory>? get statusHistory;
+  @override
 
   /// [type] A classification of the type of episode of care; e.g. specialist
   ///  referral, disease management, type of funded care.
-  @override
   List<CodeableConcept>? get type;
+  @override
 
   /// [reason] The list of medical reasons that are expected to be addressed
   ///  during the episode of care.
-  @override
   List<EpisodeOfCareReason>? get reason;
+  @override
 
   /// [diagnosis] The list of medical conditions that were addressed during the
   ///  episode of care.
-  @override
   List<EpisodeOfCareDiagnosis>? get diagnosis;
+  @override
 
   /// [patient] The patient who is the focus of this episode of care.
-  @override
   Reference get patient;
+  @override
 
   /// [managingOrganization] The organization that has assumed the specific
   ///  responsibilities for care coordination, care delivery, or other services
   ///  for the specified duration.
-  @override
   Reference? get managingOrganization;
+  @override
 
   /// [period] The interval during which the managing organization assumes the
   ///  defined responsibility.
-  @override
   Period? get period;
+  @override
 
   /// [referralRequest] Referral Request(s) that are fulfilled by this
   ///  EpisodeOfCare, incoming referrals.
-  @override
   List<Reference>? get referralRequest;
+  @override
 
   /// [careManager] The practitioner that is the care manager/care coordinator
   ///  for this patient.
-  @override
   Reference? get careManager;
+  @override
 
   /// [careTeam] The list of practitioners that may be facilitating this episode
   ///  of care for specific purposes.
-  @override
   List<Reference>? get careTeam;
+  @override
 
   /// [account] The set of accounts that may be used for billing for this
   ///  EpisodeOfCare.
-  @override
   List<Reference>? get account;
-
-  /// Create a copy of EpisodeOfCare
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$EpisodeOfCareImplCopyWith<_$EpisodeOfCareImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1277,12 +1252,8 @@ mixin _$EpisodeOfCareStatusHistory {
   ///  applied.
   Period get period => throw _privateConstructorUsedError;
 
-  /// Serializes this EpisodeOfCareStatusHistory to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of EpisodeOfCareStatusHistory
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $EpisodeOfCareStatusHistoryCopyWith<EpisodeOfCareStatusHistory>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1316,8 +1287,6 @@ class _$EpisodeOfCareStatusHistoryCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of EpisodeOfCareStatusHistory
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1356,8 +1325,6 @@ class _$EpisodeOfCareStatusHistoryCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of EpisodeOfCareStatusHistory
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res> get period {
@@ -1398,8 +1365,6 @@ class __$$EpisodeOfCareStatusHistoryImplCopyWithImpl<$Res>
       $Res Function(_$EpisodeOfCareStatusHistoryImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of EpisodeOfCareStatusHistory
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1557,7 +1522,7 @@ class _$EpisodeOfCareStatusHistoryImpl extends _EpisodeOfCareStatusHistory {
             (identical(other.period, period) || other.period == period));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1568,9 +1533,7 @@ class _$EpisodeOfCareStatusHistoryImpl extends _EpisodeOfCareStatusHistory {
       statusElement,
       period);
 
-  /// Create a copy of EpisodeOfCareStatusHistory
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$EpisodeOfCareStatusHistoryImplCopyWith<_$EpisodeOfCareStatusHistoryImpl>
@@ -1598,10 +1561,12 @@ abstract class _EpisodeOfCareStatusHistory extends EpisodeOfCareStatusHistory {
   factory _EpisodeOfCareStatusHistory.fromJson(Map<String, dynamic> json) =
       _$EpisodeOfCareStatusHistoryImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1609,9 +1574,9 @@ abstract class _EpisodeOfCareStatusHistory extends EpisodeOfCareStatusHistory {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1625,27 +1590,23 @@ abstract class _EpisodeOfCareStatusHistory extends EpisodeOfCareStatusHistory {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [status] planned | waitlist | active | onhold | finished | cancelled.
-  @override
   EpisodeOfCareStatus? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [period] The period during this EpisodeOfCare that the specific status
   ///  applied.
-  @override
   Period get period;
-
-  /// Create a copy of EpisodeOfCareStatusHistory
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$EpisodeOfCareStatusHistoryImplCopyWith<_$EpisodeOfCareStatusHistoryImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1693,12 +1654,8 @@ mixin _$EpisodeOfCareReason {
   ///  resource.
   List<CodeableReference>? get value => throw _privateConstructorUsedError;
 
-  /// Serializes this EpisodeOfCareReason to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of EpisodeOfCareReason
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $EpisodeOfCareReasonCopyWith<EpisodeOfCareReason> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1729,8 +1686,6 @@ class _$EpisodeOfCareReasonCopyWithImpl<$Res, $Val extends EpisodeOfCareReason>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of EpisodeOfCareReason
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1764,8 +1719,6 @@ class _$EpisodeOfCareReasonCopyWithImpl<$Res, $Val extends EpisodeOfCareReason>
     ) as $Val);
   }
 
-  /// Create a copy of EpisodeOfCareReason
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get use {
@@ -1806,8 +1759,6 @@ class __$$EpisodeOfCareReasonImplCopyWithImpl<$Res>
       $Res Function(_$EpisodeOfCareReasonImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of EpisodeOfCareReason
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1965,7 +1916,7 @@ class _$EpisodeOfCareReasonImpl extends _EpisodeOfCareReason {
             const DeepCollectionEquality().equals(other._value, _value));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1975,9 +1926,7 @@ class _$EpisodeOfCareReasonImpl extends _EpisodeOfCareReason {
       use,
       const DeepCollectionEquality().hash(_value));
 
-  /// Create a copy of EpisodeOfCareReason
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$EpisodeOfCareReasonImplCopyWith<_$EpisodeOfCareReasonImpl> get copyWith =>
@@ -2004,10 +1953,12 @@ abstract class _EpisodeOfCareReason extends EpisodeOfCareReason {
   factory _EpisodeOfCareReason.fromJson(Map<String, dynamic> json) =
       _$EpisodeOfCareReasonImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2015,9 +1966,9 @@ abstract class _EpisodeOfCareReason extends EpisodeOfCareReason {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2031,24 +1982,20 @@ abstract class _EpisodeOfCareReason extends EpisodeOfCareReason {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [use] What the reason value should be used as e.g. Chief Complaint, Health
   ///  Concern, Health Maintenance (including screening).
-  @override
   CodeableConcept? get use;
+  @override
 
   /// [value] The medical reason that is expected to be addressed during the
   ///  episode of care, expressed as a text, code or a reference to another
   ///  resource.
-  @override
   List<CodeableReference>? get value;
-
-  /// Create a copy of EpisodeOfCareReason
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$EpisodeOfCareReasonImplCopyWith<_$EpisodeOfCareReasonImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2096,12 +2043,8 @@ mixin _$EpisodeOfCareDiagnosis {
   ///  admission, billing, discharge …).
   CodeableConcept? get use => throw _privateConstructorUsedError;
 
-  /// Serializes this EpisodeOfCareDiagnosis to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of EpisodeOfCareDiagnosis
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $EpisodeOfCareDiagnosisCopyWith<EpisodeOfCareDiagnosis> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2133,8 +2076,6 @@ class _$EpisodeOfCareDiagnosisCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of EpisodeOfCareDiagnosis
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2168,8 +2109,6 @@ class _$EpisodeOfCareDiagnosisCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of EpisodeOfCareDiagnosis
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get use {
@@ -2213,8 +2152,6 @@ class __$$EpisodeOfCareDiagnosisImplCopyWithImpl<$Res>
       $Res Function(_$EpisodeOfCareDiagnosisImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of EpisodeOfCareDiagnosis
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2371,7 +2308,7 @@ class _$EpisodeOfCareDiagnosisImpl extends _EpisodeOfCareDiagnosis {
             (identical(other.use, use) || other.use == use));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2381,9 +2318,7 @@ class _$EpisodeOfCareDiagnosisImpl extends _EpisodeOfCareDiagnosis {
       const DeepCollectionEquality().hash(_condition),
       use);
 
-  /// Create a copy of EpisodeOfCareDiagnosis
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$EpisodeOfCareDiagnosisImplCopyWith<_$EpisodeOfCareDiagnosisImpl>
@@ -2410,10 +2345,12 @@ abstract class _EpisodeOfCareDiagnosis extends EpisodeOfCareDiagnosis {
   factory _EpisodeOfCareDiagnosis.fromJson(Map<String, dynamic> json) =
       _$EpisodeOfCareDiagnosisImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2421,9 +2358,9 @@ abstract class _EpisodeOfCareDiagnosis extends EpisodeOfCareDiagnosis {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2437,23 +2374,19 @@ abstract class _EpisodeOfCareDiagnosis extends EpisodeOfCareDiagnosis {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [condition] The medical condition that was addressed during the episode of
   ///  care, expressed as a text, code or a reference to another resource.
-  @override
   List<CodeableReference>? get condition;
+  @override
 
   /// [use] Role that this diagnosis has within the episode of care (e.g.
   ///  admission, billing, discharge …).
-  @override
   CodeableConcept? get use;
-
-  /// Create a copy of EpisodeOfCareDiagnosis
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$EpisodeOfCareDiagnosisImplCopyWith<_$EpisodeOfCareDiagnosisImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

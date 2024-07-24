@@ -74,12 +74,8 @@ mixin _$Count {
   @JsonKey(name: '_code')
   PrimitiveElement? get codeElement => throw _privateConstructorUsedError;
 
-  /// Serializes this Count to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Count
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $CountCopyWith<Count> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -113,8 +109,6 @@ class _$CountCopyWithImpl<$Res, $Val extends Count>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Count
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -214,8 +208,6 @@ class __$$CountImplCopyWithImpl<$Res>
       _$CountImpl _value, $Res Function(_$CountImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Count
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -418,7 +410,7 @@ class _$CountImpl extends _Count {
                 other.codeElement == codeElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -435,9 +427,7 @@ class _$CountImpl extends _Count {
       code,
       codeElement);
 
-  /// Create a copy of Count
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$CountImplCopyWith<_$CountImpl> get copyWith =>
@@ -470,10 +460,12 @@ abstract class _Count extends Count {
 
   factory _Count.fromJson(Map<String, dynamic> json) = _$CountImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -481,65 +473,61 @@ abstract class _Count extends Count {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [value] The value of the measured amount. The value includes an implicit
   ///  precision in the presentation of the value.
-  @override
   FhirDecimal? get value;
+  @override
 
   /// [valueElement] ("_value") Extensions for value
-  @override
   @JsonKey(name: '_value')
   PrimitiveElement? get valueElement;
+  @override
 
   /// [comparator] How the value should be understood and represented - whether
   ///  the actual value is greater or less than the stated value due to
   ///  measurement issues; e.g. if the comparator is "<" , then the real value is
   ///  < stated value.
-  @override
   CountComparator? get comparator;
+  @override
 
   /// [comparatorElement] ("_comparator") Extensions for comparator
-  @override
   @JsonKey(name: '_comparator')
   PrimitiveElement? get comparatorElement;
+  @override
 
   /// [unit] A human-readable form of the unit.
-  @override
   String? get unit;
+  @override
 
   /// [unitElement] ("_unit") Extensions for unit
-  @override
   @JsonKey(name: '_unit')
   PrimitiveElement? get unitElement;
+  @override
 
   /// [system] The identification of the system that provides the coded form of
   ///  the unit.
-  @override
   FhirUri? get system;
+  @override
 
   /// [systemElement] ("_system") Extensions for system
-  @override
   @JsonKey(name: '_system')
   PrimitiveElement? get systemElement;
+  @override
 
   /// [code] A computer processable form of the unit in some unit representation
   ///  system.
-  @override
   FhirCode? get code;
+  @override
 
   /// [codeElement] ("_code") Extensions for code
-  @override
   @JsonKey(name: '_code')
   PrimitiveElement? get codeElement;
-
-  /// Create a copy of Count
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$CountImplCopyWith<_$CountImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

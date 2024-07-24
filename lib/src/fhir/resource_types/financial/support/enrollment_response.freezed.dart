@@ -133,12 +133,8 @@ mixin _$EnrollmentResponse {
   ///  rendered to the patient.
   Reference? get requestProvider => throw _privateConstructorUsedError;
 
-  /// Serializes this EnrollmentResponse to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of EnrollmentResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $EnrollmentResponseCopyWith<EnrollmentResponse> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -192,8 +188,6 @@ class _$EnrollmentResponseCopyWithImpl<$Res, $Val extends EnrollmentResponse>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of EnrollmentResponse
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -317,8 +311,6 @@ class _$EnrollmentResponseCopyWithImpl<$Res, $Val extends EnrollmentResponse>
     ) as $Val);
   }
 
-  /// Create a copy of EnrollmentResponse
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -331,8 +323,6 @@ class _$EnrollmentResponseCopyWithImpl<$Res, $Val extends EnrollmentResponse>
     });
   }
 
-  /// Create a copy of EnrollmentResponse
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -345,8 +335,6 @@ class _$EnrollmentResponseCopyWithImpl<$Res, $Val extends EnrollmentResponse>
     });
   }
 
-  /// Create a copy of EnrollmentResponse
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get request {
@@ -359,8 +347,6 @@ class _$EnrollmentResponseCopyWithImpl<$Res, $Val extends EnrollmentResponse>
     });
   }
 
-  /// Create a copy of EnrollmentResponse
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get organization {
@@ -373,8 +359,6 @@ class _$EnrollmentResponseCopyWithImpl<$Res, $Val extends EnrollmentResponse>
     });
   }
 
-  /// Create a copy of EnrollmentResponse
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get requestProvider {
@@ -442,8 +426,6 @@ class __$$EnrollmentResponseImplCopyWithImpl<$Res>
       $Res Function(_$EnrollmentResponseImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of EnrollmentResponse
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -846,7 +828,7 @@ class _$EnrollmentResponseImpl extends _EnrollmentResponse {
                 other.requestProvider == requestProvider));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -875,9 +857,7 @@ class _$EnrollmentResponseImpl extends _EnrollmentResponse {
         requestProvider
       ]);
 
-  /// Create a copy of EnrollmentResponse
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$EnrollmentResponseImplCopyWith<_$EnrollmentResponseImpl> get copyWith =>
@@ -924,42 +904,44 @@ abstract class _EnrollmentResponse extends EnrollmentResponse {
   factory _EnrollmentResponse.fromJson(Map<String, dynamic> json) =
       _$EnrollmentResponseImpl.fromJson;
 
-  /// [resourceType] This is a EnrollmentResponse resource
   @override
+
+  /// [resourceType] This is a EnrollmentResponse resource
   @JsonKey(unknownEnumValue: R5ResourceType.EnrollmentResponse)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -967,16 +949,16 @@ abstract class _EnrollmentResponse extends EnrollmentResponse {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -984,9 +966,9 @@ abstract class _EnrollmentResponse extends EnrollmentResponse {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1000,67 +982,63 @@ abstract class _EnrollmentResponse extends EnrollmentResponse {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] The Response business identifier.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [status] The status of the resource instance.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [request] Original request resource reference.
-  @override
   Reference? get request;
+  @override
 
   /// [outcome] Processing status: error, complete.
-  @override
   FhirCode? get outcome;
+  @override
 
   /// [outcomeElement] ("_outcome") Extensions for outcome
-  @override
   @JsonKey(name: '_outcome')
   PrimitiveElement? get outcomeElement;
+  @override
 
   /// [disposition] A description of the status of the adjudication.
-  @override
   String? get disposition;
+  @override
 
   /// [dispositionElement] ("_disposition") Extensions for disposition
-  @override
   @JsonKey(name: '_disposition')
   PrimitiveElement? get dispositionElement;
+  @override
 
   /// [created] The date when the enclosed suite of services were performed or
   ///  completed.
-  @override
   FhirDateTime? get created;
+  @override
 
   /// [createdElement] ("_created") Extensions for created
-  @override
   @JsonKey(name: '_created')
   PrimitiveElement? get createdElement;
+  @override
 
   /// [organization] The Insurer who produced this adjudicated response.
-  @override
   Reference? get organization;
+  @override
 
   /// [requestProvider] The practitioner who is responsible for the services
   ///  rendered to the patient.
-  @override
   Reference? get requestProvider;
-
-  /// Create a copy of EnrollmentResponse
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$EnrollmentResponseImplCopyWith<_$EnrollmentResponseImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

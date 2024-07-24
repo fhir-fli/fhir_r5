@@ -126,12 +126,8 @@ mixin _$SubstancePolymer {
   List<SubstancePolymerRepeat>? get repeat =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this SubstancePolymer to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstancePolymer
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstancePolymerCopyWith<SubstancePolymer> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -181,8 +177,6 @@ class _$SubstancePolymerCopyWithImpl<$Res, $Val extends SubstancePolymer>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstancePolymer
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -286,8 +280,6 @@ class _$SubstancePolymerCopyWithImpl<$Res, $Val extends SubstancePolymer>
     ) as $Val);
   }
 
-  /// Create a copy of SubstancePolymer
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -300,8 +292,6 @@ class _$SubstancePolymerCopyWithImpl<$Res, $Val extends SubstancePolymer>
     });
   }
 
-  /// Create a copy of SubstancePolymer
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -314,8 +304,6 @@ class _$SubstancePolymerCopyWithImpl<$Res, $Val extends SubstancePolymer>
     });
   }
 
-  /// Create a copy of SubstancePolymer
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get identifier {
@@ -328,8 +316,6 @@ class _$SubstancePolymerCopyWithImpl<$Res, $Val extends SubstancePolymer>
     });
   }
 
-  /// Create a copy of SubstancePolymer
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get class_ {
@@ -342,8 +328,6 @@ class _$SubstancePolymerCopyWithImpl<$Res, $Val extends SubstancePolymer>
     });
   }
 
-  /// Create a copy of SubstancePolymer
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get geometry {
@@ -407,8 +391,6 @@ class __$$SubstancePolymerImplCopyWithImpl<$Res>
       $Res Function(_$SubstancePolymerImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstancePolymer
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -790,7 +772,7 @@ class _$SubstancePolymerImpl extends _SubstancePolymer {
             const DeepCollectionEquality().equals(other._repeat, _repeat));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -815,9 +797,7 @@ class _$SubstancePolymerImpl extends _SubstancePolymer {
         const DeepCollectionEquality().hash(_repeat)
       ]);
 
-  /// Create a copy of SubstancePolymer
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstancePolymerImplCopyWith<_$SubstancePolymerImpl> get copyWith =>
@@ -861,42 +841,44 @@ abstract class _SubstancePolymer extends SubstancePolymer {
   factory _SubstancePolymer.fromJson(Map<String, dynamic> json) =
       _$SubstancePolymerImpl.fromJson;
 
-  /// [resourceType] This is a SubstancePolymer resource
   @override
+
+  /// [resourceType] This is a SubstancePolymer resource
   @JsonKey(unknownEnumValue: R5ResourceType.SubstancePolymer)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -904,16 +886,16 @@ abstract class _SubstancePolymer extends SubstancePolymer {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -921,9 +903,9 @@ abstract class _SubstancePolymer extends SubstancePolymer {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -937,53 +919,49 @@ abstract class _SubstancePolymer extends SubstancePolymer {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] A business idenfier for this polymer, but typically this is
   ///  handled by a SubstanceDefinition identifier.
-  @override
   Identifier? get identifier;
+  @override
 
   /// [class_] ("class") Overall type of the polymer.
-  @override
   @JsonKey(name: 'class')
   CodeableConcept? get class_;
+  @override
 
   /// [geometry] Polymer geometry, e.g. linear, branched, cross-linked, network
   ///  or dendritic.
-  @override
   CodeableConcept? get geometry;
+  @override
 
   /// [copolymerConnectivity] Descrtibes the copolymer sequence type (polymer
   ///  connectivity).
-  @override
   List<CodeableConcept>? get copolymerConnectivity;
+  @override
 
   /// [modification] FhirTodo - this is intended to connect to a repeating full
   ///  modification structure, also used by Protein and Nucleic Acid . String is
   ///  just a placeholder.
-  @override
   String? get modification;
+  @override
 
   /// [modificationElement] ("_modification") Extensions for modification
-  @override
   @JsonKey(name: '_modification')
   PrimitiveElement? get modificationElement;
+  @override
 
   /// [monomerSet] FhirTodo.
-  @override
   List<SubstancePolymerMonomerSet>? get monomerSet;
+  @override
 
   /// [repeat] Specifies and quantifies the repeated units and their
   ///  configuration.
-  @override
   List<SubstancePolymerRepeat>? get repeat;
-
-  /// Create a copy of SubstancePolymer
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstancePolymerImplCopyWith<_$SubstancePolymerImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1032,12 +1010,8 @@ mixin _$SubstancePolymerMonomerSet {
   List<SubstancePolymerStartingMaterial>? get startingMaterial =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this SubstancePolymerMonomerSet to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstancePolymerMonomerSet
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstancePolymerMonomerSetCopyWith<SubstancePolymerMonomerSet>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1070,8 +1044,6 @@ class _$SubstancePolymerMonomerSetCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstancePolymerMonomerSet
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1105,8 +1077,6 @@ class _$SubstancePolymerMonomerSetCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubstancePolymerMonomerSet
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get ratioType {
@@ -1150,8 +1120,6 @@ class __$$SubstancePolymerMonomerSetImplCopyWithImpl<$Res>
       $Res Function(_$SubstancePolymerMonomerSetImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstancePolymerMonomerSet
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1311,7 +1279,7 @@ class _$SubstancePolymerMonomerSetImpl extends _SubstancePolymerMonomerSet {
                 .equals(other._startingMaterial, _startingMaterial));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1321,9 +1289,7 @@ class _$SubstancePolymerMonomerSetImpl extends _SubstancePolymerMonomerSet {
       ratioType,
       const DeepCollectionEquality().hash(_startingMaterial));
 
-  /// Create a copy of SubstancePolymerMonomerSet
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstancePolymerMonomerSetImplCopyWith<_$SubstancePolymerMonomerSetImpl>
@@ -1351,10 +1317,12 @@ abstract class _SubstancePolymerMonomerSet extends SubstancePolymerMonomerSet {
   factory _SubstancePolymerMonomerSet.fromJson(Map<String, dynamic> json) =
       _$SubstancePolymerMonomerSetImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1362,9 +1330,9 @@ abstract class _SubstancePolymerMonomerSet extends SubstancePolymerMonomerSet {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1378,23 +1346,19 @@ abstract class _SubstancePolymerMonomerSet extends SubstancePolymerMonomerSet {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [ratioType] Captures the type of ratio to the entire polymer, e.g.
   ///  Monomer/Polymer ratio, SRU/Polymer Ratio.
-  @override
   CodeableConcept? get ratioType;
+  @override
 
   /// [startingMaterial] The starting materials - monomer(s) used in the
   ///  synthesis of the polymer.
-  @override
   List<SubstancePolymerStartingMaterial>? get startingMaterial;
-
-  /// Create a copy of SubstancePolymerMonomerSet
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstancePolymerMonomerSetImplCopyWith<_$SubstancePolymerMonomerSetImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1451,12 +1415,8 @@ mixin _$SubstancePolymerStartingMaterial {
   /// [amount] A percentage.
   Quantity? get amount => throw _privateConstructorUsedError;
 
-  /// Serializes this SubstancePolymerStartingMaterial to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstancePolymerStartingMaterial
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstancePolymerStartingMaterialCopyWith<SubstancePolymerStartingMaterial>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1495,8 +1455,6 @@ class _$SubstancePolymerStartingMaterialCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstancePolymerStartingMaterial
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1545,8 +1503,6 @@ class _$SubstancePolymerStartingMaterialCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubstancePolymerStartingMaterial
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -1559,8 +1515,6 @@ class _$SubstancePolymerStartingMaterialCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstancePolymerStartingMaterial
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get category {
@@ -1573,8 +1527,6 @@ class _$SubstancePolymerStartingMaterialCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstancePolymerStartingMaterial
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get amount {
@@ -1625,8 +1577,6 @@ class __$$SubstancePolymerStartingMaterialImplCopyWithImpl<$Res>
       $Res Function(_$SubstancePolymerStartingMaterialImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstancePolymerStartingMaterial
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1809,7 +1759,7 @@ class _$SubstancePolymerStartingMaterialImpl
             (identical(other.amount, amount) || other.amount == amount));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1822,9 +1772,7 @@ class _$SubstancePolymerStartingMaterialImpl
       isDefiningElement,
       amount);
 
-  /// Create a copy of SubstancePolymerStartingMaterial
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstancePolymerStartingMaterialImplCopyWith<
@@ -1857,10 +1805,12 @@ abstract class _SubstancePolymerStartingMaterial
           Map<String, dynamic> json) =
       _$SubstancePolymerStartingMaterialImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1868,9 +1818,9 @@ abstract class _SubstancePolymerStartingMaterial
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1884,35 +1834,31 @@ abstract class _SubstancePolymerStartingMaterial
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [code] The type of substance for this starting material.
-  @override
   CodeableConcept? get code;
+  @override
 
   /// [category] Substance high level category, e.g. chemical substance.
-  @override
   CodeableConcept? get category;
+  @override
 
   /// [isDefining] Used to specify whether the attribute described is a defining
   ///  element for the unique identification of the polymer.
-  @override
   FhirBoolean? get isDefining;
+  @override
 
   /// [isDefiningElement] ("_isDefining") Extensions for isDefining
-  @override
   @JsonKey(name: '_isDefining')
   PrimitiveElement? get isDefiningElement;
+  @override
 
   /// [amount] A percentage.
-  @override
   Quantity? get amount;
-
-  /// Create a copy of SubstancePolymerStartingMaterial
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstancePolymerStartingMaterialImplCopyWith<
           _$SubstancePolymerStartingMaterialImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1972,12 +1918,8 @@ mixin _$SubstancePolymerRepeat {
   List<SubstancePolymerRepeatUnit>? get repeatUnit =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this SubstancePolymerRepeat to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstancePolymerRepeat
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstancePolymerRepeatCopyWith<SubstancePolymerRepeat> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2012,8 +1954,6 @@ class _$SubstancePolymerRepeatCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstancePolymerRepeat
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2057,8 +1997,6 @@ class _$SubstancePolymerRepeatCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubstancePolymerRepeat
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get repeatUnitAmountType {
@@ -2106,8 +2044,6 @@ class __$$SubstancePolymerRepeatImplCopyWithImpl<$Res>
       $Res Function(_$SubstancePolymerRepeatImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstancePolymerRepeat
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2294,7 +2230,7 @@ class _$SubstancePolymerRepeatImpl extends _SubstancePolymerRepeat {
                 .equals(other._repeatUnit, _repeatUnit));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2306,9 +2242,7 @@ class _$SubstancePolymerRepeatImpl extends _SubstancePolymerRepeat {
       repeatUnitAmountType,
       const DeepCollectionEquality().hash(_repeatUnit));
 
-  /// Create a copy of SubstancePolymerRepeat
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstancePolymerRepeatImplCopyWith<_$SubstancePolymerRepeatImpl>
@@ -2339,10 +2273,12 @@ abstract class _SubstancePolymerRepeat extends SubstancePolymerRepeat {
   factory _SubstancePolymerRepeat.fromJson(Map<String, dynamic> json) =
       _$SubstancePolymerRepeatImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2350,9 +2286,9 @@ abstract class _SubstancePolymerRepeat extends SubstancePolymerRepeat {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2366,33 +2302,29 @@ abstract class _SubstancePolymerRepeat extends SubstancePolymerRepeat {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [averageMolecularFormula] A representation of an (average) molecular
   ///  formula from a polymer.
-  @override
   String? get averageMolecularFormula;
+  @override
 
   /// [averageMolecularFormulaElement] ("_averageMolecularFormula") Extensions
   ///  for averageMolecularFormula
-  @override
   @JsonKey(name: '_averageMolecularFormula')
   PrimitiveElement? get averageMolecularFormulaElement;
+  @override
 
   /// [repeatUnitAmountType] How the quantitative amount of Structural Repeat
   ///  Units is captured (e.g. Exact, Numeric, Average).
-  @override
   CodeableConcept? get repeatUnitAmountType;
+  @override
 
   /// [repeatUnit] An SRU - Structural Repeat Unit.
-  @override
   List<SubstancePolymerRepeatUnit>? get repeatUnit;
-
-  /// Create a copy of SubstancePolymerRepeat
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstancePolymerRepeatImplCopyWith<_$SubstancePolymerRepeatImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2459,12 +2391,8 @@ mixin _$SubstancePolymerRepeatUnit {
   List<SubstancePolymerStructuralRepresentation>?
       get structuralRepresentation => throw _privateConstructorUsedError;
 
-  /// Serializes this SubstancePolymerRepeatUnit to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstancePolymerRepeatUnit
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstancePolymerRepeatUnitCopyWith<SubstancePolymerRepeatUnit>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2503,8 +2431,6 @@ class _$SubstancePolymerRepeatUnitCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstancePolymerRepeatUnit
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2563,8 +2489,6 @@ class _$SubstancePolymerRepeatUnitCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubstancePolymerRepeatUnit
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get orientation {
@@ -2614,8 +2538,6 @@ class __$$SubstancePolymerRepeatUnitImplCopyWithImpl<$Res>
       $Res Function(_$SubstancePolymerRepeatUnitImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstancePolymerRepeatUnit
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2849,7 +2771,7 @@ class _$SubstancePolymerRepeatUnitImpl extends _SubstancePolymerRepeatUnit {
                 other._structuralRepresentation, _structuralRepresentation));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2864,9 +2786,7 @@ class _$SubstancePolymerRepeatUnitImpl extends _SubstancePolymerRepeatUnit {
       const DeepCollectionEquality().hash(_degreeOfPolymerisation),
       const DeepCollectionEquality().hash(_structuralRepresentation));
 
-  /// Create a copy of SubstancePolymerRepeatUnit
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstancePolymerRepeatUnitImplCopyWith<_$SubstancePolymerRepeatUnitImpl>
@@ -2900,10 +2820,12 @@ abstract class _SubstancePolymerRepeatUnit extends SubstancePolymerRepeatUnit {
   factory _SubstancePolymerRepeatUnit.fromJson(Map<String, dynamic> json) =
       _$SubstancePolymerRepeatUnitImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2911,9 +2833,9 @@ abstract class _SubstancePolymerRepeatUnit extends SubstancePolymerRepeatUnit {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2927,45 +2849,41 @@ abstract class _SubstancePolymerRepeatUnit extends SubstancePolymerRepeatUnit {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [unit] Structural repeat units are essential elements for defining polymers.
-  @override
   String? get unit;
+  @override
 
   /// [unitElement] ("_unit") Extensions for unit
-  @override
   @JsonKey(name: '_unit')
   PrimitiveElement? get unitElement;
+  @override
 
   /// [orientation] The orientation of the polymerisation, e.g. head-tail,
   ///  head-head, random.
-  @override
   CodeableConcept? get orientation;
+  @override
 
   /// [amount] Number of repeats of this unit.
-  @override
   FhirInteger? get amount;
+  @override
 
   /// [amountElement] ("_amount") Extensions for amount
-  @override
   @JsonKey(name: '_amount')
   PrimitiveElement? get amountElement;
+  @override
 
   /// [degreeOfPolymerisation] Applies to homopolymer and block co-polymers where
   ///  the degree of polymerisation within a block can be described.
-  @override
   List<SubstancePolymerDegreeOfPolymerisation>? get degreeOfPolymerisation;
+  @override
 
   /// [structuralRepresentation] A graphical structure for this SRU.
-  @override
   List<SubstancePolymerStructuralRepresentation>? get structuralRepresentation;
-
-  /// Create a copy of SubstancePolymerRepeatUnit
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstancePolymerRepeatUnitImplCopyWith<_$SubstancePolymerRepeatUnitImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3031,12 +2949,8 @@ mixin _$SubstancePolymerDegreeOfPolymerisation {
   @JsonKey(name: '_high')
   PrimitiveElement? get highElement => throw _privateConstructorUsedError;
 
-  /// Serializes this SubstancePolymerDegreeOfPolymerisation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstancePolymerDegreeOfPolymerisation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstancePolymerDegreeOfPolymerisationCopyWith<
           SubstancePolymerDegreeOfPolymerisation>
       get copyWith => throw _privateConstructorUsedError;
@@ -3076,8 +2990,6 @@ class _$SubstancePolymerDegreeOfPolymerisationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstancePolymerDegreeOfPolymerisation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3136,8 +3048,6 @@ class _$SubstancePolymerDegreeOfPolymerisationCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubstancePolymerDegreeOfPolymerisation
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -3186,8 +3096,6 @@ class __$$SubstancePolymerDegreeOfPolymerisationImplCopyWithImpl<$Res>
       $Res Function(_$SubstancePolymerDegreeOfPolymerisationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstancePolymerDegreeOfPolymerisation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3394,7 +3302,7 @@ class _$SubstancePolymerDegreeOfPolymerisationImpl
                 other.highElement == highElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3409,9 +3317,7 @@ class _$SubstancePolymerDegreeOfPolymerisationImpl
       high,
       highElement);
 
-  /// Create a copy of SubstancePolymerDegreeOfPolymerisation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstancePolymerDegreeOfPolymerisationImplCopyWith<
@@ -3448,10 +3354,12 @@ abstract class _SubstancePolymerDegreeOfPolymerisation
           Map<String, dynamic> json) =
       _$SubstancePolymerDegreeOfPolymerisationImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3459,9 +3367,9 @@ abstract class _SubstancePolymerDegreeOfPolymerisation
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3475,45 +3383,41 @@ abstract class _SubstancePolymerDegreeOfPolymerisation
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] The type of the degree of polymerisation shall be described, e.g.
   ///  SRU/Polymer Ratio.
-  @override
   CodeableConcept? get type;
+  @override
 
   /// [average] An average amount of polymerisation.
-  @override
   FhirInteger? get average;
+  @override
 
   /// [averageElement] ("_average") Extensions for average
-  @override
   @JsonKey(name: '_average')
   PrimitiveElement? get averageElement;
+  @override
 
   /// [low] A low expected limit of the amount.
-  @override
   FhirInteger? get low;
+  @override
 
   /// [lowElement] ("_low") Extensions for low
-  @override
   @JsonKey(name: '_low')
   PrimitiveElement? get lowElement;
+  @override
 
   /// [high] A high expected limit of the amount.
-  @override
   FhirInteger? get high;
+  @override
 
   /// [highElement] ("_high") Extensions for high
-  @override
   @JsonKey(name: '_high')
   PrimitiveElement? get highElement;
-
-  /// Create a copy of SubstancePolymerDegreeOfPolymerisation
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstancePolymerDegreeOfPolymerisationImplCopyWith<
           _$SubstancePolymerDegreeOfPolymerisationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3574,12 +3478,8 @@ mixin _$SubstancePolymerStructuralRepresentation {
   /// [attachment] An attached file with the structural representation.
   Attachment? get attachment => throw _privateConstructorUsedError;
 
-  /// Serializes this SubstancePolymerStructuralRepresentation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubstancePolymerStructuralRepresentation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubstancePolymerStructuralRepresentationCopyWith<
           SubstancePolymerStructuralRepresentation>
       get copyWith => throw _privateConstructorUsedError;
@@ -3620,8 +3520,6 @@ class _$SubstancePolymerStructuralRepresentationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubstancePolymerStructuralRepresentation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3670,8 +3568,6 @@ class _$SubstancePolymerStructuralRepresentationCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubstancePolymerStructuralRepresentation
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -3684,8 +3580,6 @@ class _$SubstancePolymerStructuralRepresentationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstancePolymerStructuralRepresentation
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get format {
@@ -3698,8 +3592,6 @@ class _$SubstancePolymerStructuralRepresentationCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of SubstancePolymerStructuralRepresentation
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get attachment {
@@ -3750,8 +3642,6 @@ class __$$SubstancePolymerStructuralRepresentationImplCopyWithImpl<$Res>
       $Res Function(_$SubstancePolymerStructuralRepresentationImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubstancePolymerStructuralRepresentation
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3935,7 +3825,7 @@ class _$SubstancePolymerStructuralRepresentationImpl
                 other.attachment == attachment));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3948,9 +3838,7 @@ class _$SubstancePolymerStructuralRepresentationImpl
       format,
       attachment);
 
-  /// Create a copy of SubstancePolymerStructuralRepresentation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstancePolymerStructuralRepresentationImplCopyWith<
@@ -3986,10 +3874,12 @@ abstract class _SubstancePolymerStructuralRepresentation
           Map<String, dynamic> json) =
       _$SubstancePolymerStructuralRepresentationImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3997,9 +3887,9 @@ abstract class _SubstancePolymerStructuralRepresentation
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4013,36 +3903,32 @@ abstract class _SubstancePolymerStructuralRepresentation
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [type] The type of structure (e.g. Full, Partial, Representative).
-  @override
   CodeableConcept? get type;
+  @override
 
   /// [representation] The structural representation as text string in a standard
   ///  format e.g. InChI, SMILES, MOLFILE, CDX, SDF, PDB, mmCIF.
-  @override
   String? get representation;
+  @override
 
   /// [representationElement] ("_representation") Extensions for representation
-  @override
   @JsonKey(name: '_representation')
   PrimitiveElement? get representationElement;
+  @override
 
   /// [format] The format of the representation e.g. InChI, SMILES, MOLFILE, CDX,
   ///  SDF, PDB, mmCIF.
-  @override
   CodeableConcept? get format;
+  @override
 
   /// [attachment] An attached file with the structural representation.
-  @override
   Attachment? get attachment;
-
-  /// Create a copy of SubstancePolymerStructuralRepresentation
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubstancePolymerStructuralRepresentationImplCopyWith<
           _$SubstancePolymerStructuralRepresentationImpl>
       get copyWith => throw _privateConstructorUsedError;

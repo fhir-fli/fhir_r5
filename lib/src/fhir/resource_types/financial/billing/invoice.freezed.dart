@@ -188,12 +188,8 @@ mixin _$Invoice {
   ///  participants.
   List<Annotation>? get note => throw _privateConstructorUsedError;
 
-  /// Serializes this Invoice to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Invoice
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $InvoiceCopyWith<Invoice> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -264,8 +260,6 @@ class _$InvoiceCopyWithImpl<$Res, $Val extends Invoice>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Invoice
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -454,8 +448,6 @@ class _$InvoiceCopyWithImpl<$Res, $Val extends Invoice>
     ) as $Val);
   }
 
-  /// Create a copy of Invoice
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -468,8 +460,6 @@ class _$InvoiceCopyWithImpl<$Res, $Val extends Invoice>
     });
   }
 
-  /// Create a copy of Invoice
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -482,8 +472,6 @@ class _$InvoiceCopyWithImpl<$Res, $Val extends Invoice>
     });
   }
 
-  /// Create a copy of Invoice
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -496,8 +484,6 @@ class _$InvoiceCopyWithImpl<$Res, $Val extends Invoice>
     });
   }
 
-  /// Create a copy of Invoice
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get subject {
@@ -510,8 +496,6 @@ class _$InvoiceCopyWithImpl<$Res, $Val extends Invoice>
     });
   }
 
-  /// Create a copy of Invoice
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get recipient {
@@ -524,8 +508,6 @@ class _$InvoiceCopyWithImpl<$Res, $Val extends Invoice>
     });
   }
 
-  /// Create a copy of Invoice
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get periodPeriod {
@@ -538,8 +520,6 @@ class _$InvoiceCopyWithImpl<$Res, $Val extends Invoice>
     });
   }
 
-  /// Create a copy of Invoice
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get issuer {
@@ -552,8 +532,6 @@ class _$InvoiceCopyWithImpl<$Res, $Val extends Invoice>
     });
   }
 
-  /// Create a copy of Invoice
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get account {
@@ -566,8 +544,6 @@ class _$InvoiceCopyWithImpl<$Res, $Val extends Invoice>
     });
   }
 
-  /// Create a copy of Invoice
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MoneyCopyWith<$Res>? get totalNet {
@@ -580,8 +556,6 @@ class _$InvoiceCopyWithImpl<$Res, $Val extends Invoice>
     });
   }
 
-  /// Create a copy of Invoice
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MoneyCopyWith<$Res>? get totalGross {
@@ -672,8 +646,6 @@ class __$$InvoiceImplCopyWithImpl<$Res>
       _$InvoiceImpl _value, $Res Function(_$InvoiceImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Invoice
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1290,7 +1262,7 @@ class _$InvoiceImpl extends _Invoice {
             const DeepCollectionEquality().equals(other._note, _note));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1332,9 +1304,7 @@ class _$InvoiceImpl extends _Invoice {
         const DeepCollectionEquality().hash(_note)
       ]);
 
-  /// Create a copy of Invoice
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$InvoiceImplCopyWith<_$InvoiceImpl> get copyWith =>
@@ -1394,42 +1364,44 @@ abstract class _Invoice extends Invoice {
 
   factory _Invoice.fromJson(Map<String, dynamic> json) = _$InvoiceImpl.fromJson;
 
-  /// [resourceType] This is a Invoice resource
   @override
+
+  /// [resourceType] This is a Invoice resource
   @JsonKey(unknownEnumValue: R5ResourceType.Invoice)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1437,16 +1409,16 @@ abstract class _Invoice extends Invoice {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1454,9 +1426,9 @@ abstract class _Invoice extends Invoice {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1470,132 +1442,128 @@ abstract class _Invoice extends Invoice {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] Identifier of this Invoice, often used for reference in
   ///  correspondence about this invoice or for tracking of payments.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [status] The current state of the Invoice.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [cancelledReason] In case of Invoice cancellation a reason must be given
   ///  (entered in error, superseded by corrected invoice etc.).
-  @override
   String? get cancelledReason;
+  @override
 
   /// [cancelledReasonElement] ("_cancelledReason") Extensions for cancelledReason
-  @override
   @JsonKey(name: '_cancelledReason')
   PrimitiveElement? get cancelledReasonElement;
+  @override
 
   /// [type] Type of Invoice depending on domain, realm an usage (e.g.
   ///  internal/external, dental, preliminary).
-  @override
   CodeableConcept? get type;
+  @override
 
   /// [subject] The individual or set of individuals receiving the goods and
   ///  services billed in this invoice.
-  @override
   Reference? get subject;
+  @override
 
   /// [recipient] The individual or Organization responsible for balancing of
   ///  this invoice.
-  @override
   Reference? get recipient;
+  @override
 
   /// [date] Depricared by the element below.
-  @override
   FhirDateTime? get date;
+  @override
 
   /// [dateElement] ("_date") Extensions for date
-  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
+  @override
 
   /// [creation] Date/time(s) of when this Invoice was posted.
-  @override
   FhirDateTime? get creation;
+  @override
 
   /// [creationElement] ("_creation") Extensions for creation
-  @override
   @JsonKey(name: '_creation')
   PrimitiveElement? get creationElement;
+  @override
 
   /// [periodDate] Date/time(s) range of services included in this invoice.
-  @override
   FhirDate? get periodDate;
+  @override
 
   /// [periodDateElement] ("_periodDate") Extensions for periodDate
-  @override
   @JsonKey(name: '_periodDate')
   PrimitiveElement? get periodDateElement;
+  @override
 
   /// [periodPeriod] Date/time(s) range of services included in this invoice.
-  @override
   Period? get periodPeriod;
+  @override
 
   /// [participant] Indicates who or what performed or participated in the
   ///  charged service.
-  @override
   List<InvoiceParticipant>? get participant;
+  @override
 
   /// [issuer] The organizationissuing the Invoice.
-  @override
   Reference? get issuer;
+  @override
 
   /// [account] Account which is supposed to be balanced with this Invoice.
-  @override
   Reference? get account;
+  @override
 
   /// [lineItem] Each line item represents one charge for goods and services
   ///  rendered. Details such.ofType(date), code and amount are found in the
   ///  referenced ChargeItem resource.
-  @override
   List<InvoiceLineItem>? get lineItem;
+  @override
 
   /// [totalPriceComponent] The total amount for the Invoice may be calculated as
   ///  the sum of the line items with surcharges/deductions that apply in certain
   ///  conditions.  The priceComponent element can be used to offer transparency
   ///  to the recipient of the Invoice of how the total price was calculated.
-  @override
   List<MonetaryComponent>? get totalPriceComponent;
+  @override
 
   /// [totalNet] Invoice total , taxes excluded.
-  @override
   Money? get totalNet;
+  @override
 
   /// [totalGross] Invoice total, tax included.
-  @override
   Money? get totalGross;
+  @override
 
   /// [paymentTerms] Payment details such as banking details, period of payment,
   ///  deductibles, methods of payment.
-  @override
   FhirMarkdown? get paymentTerms;
+  @override
 
   /// [paymentTermsElement] ("_paymentTerms") Extensions for paymentTerms
-  @override
   @JsonKey(name: '_paymentTerms')
   PrimitiveElement? get paymentTermsElement;
+  @override
 
   /// [note] Comments made about the invoice by the issuer, subject, or other
   ///  participants.
-  @override
   List<Annotation>? get note;
-
-  /// Create a copy of Invoice
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$InvoiceImplCopyWith<_$InvoiceImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1643,12 +1611,8 @@ mixin _$InvoiceParticipant {
   ///  service.
   Reference get actor => throw _privateConstructorUsedError;
 
-  /// Serializes this InvoiceParticipant to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of InvoiceParticipant
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $InvoiceParticipantCopyWith<InvoiceParticipant> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1680,8 +1644,6 @@ class _$InvoiceParticipantCopyWithImpl<$Res, $Val extends InvoiceParticipant>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of InvoiceParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1715,8 +1677,6 @@ class _$InvoiceParticipantCopyWithImpl<$Res, $Val extends InvoiceParticipant>
     ) as $Val);
   }
 
-  /// Create a copy of InvoiceParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get role {
@@ -1729,8 +1689,6 @@ class _$InvoiceParticipantCopyWithImpl<$Res, $Val extends InvoiceParticipant>
     });
   }
 
-  /// Create a copy of InvoiceParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get actor {
@@ -1769,8 +1727,6 @@ class __$$InvoiceParticipantImplCopyWithImpl<$Res>
       $Res Function(_$InvoiceParticipantImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of InvoiceParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1916,7 +1872,7 @@ class _$InvoiceParticipantImpl extends _InvoiceParticipant {
             (identical(other.actor, actor) || other.actor == actor));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1926,9 +1882,7 @@ class _$InvoiceParticipantImpl extends _InvoiceParticipant {
       role,
       actor);
 
-  /// Create a copy of InvoiceParticipant
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$InvoiceParticipantImplCopyWith<_$InvoiceParticipantImpl> get copyWith =>
@@ -1955,10 +1909,12 @@ abstract class _InvoiceParticipant extends InvoiceParticipant {
   factory _InvoiceParticipant.fromJson(Map<String, dynamic> json) =
       _$InvoiceParticipantImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1966,9 +1922,9 @@ abstract class _InvoiceParticipant extends InvoiceParticipant {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1982,24 +1938,20 @@ abstract class _InvoiceParticipant extends InvoiceParticipant {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [role] Describes the type of involvement (e.g. transcriptionist, creator
   ///  etc.). If the invoice has been created automatically, the Participant may
   ///  be a billing engine or another kind of device.
-  @override
   CodeableConcept? get role;
+  @override
 
   /// [actor] The device, practitioner, etc. who performed or participated in the
   ///  service.
-  @override
   Reference get actor;
-
-  /// Create a copy of InvoiceParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$InvoiceParticipantImplCopyWith<_$InvoiceParticipantImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2080,12 +2032,8 @@ mixin _$InvoiceLineItem {
   List<MonetaryComponent>? get priceComponent =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this InvoiceLineItem to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of InvoiceLineItem
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $InvoiceLineItemCopyWith<InvoiceLineItem> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2124,8 +2072,6 @@ class _$InvoiceLineItemCopyWithImpl<$Res, $Val extends InvoiceLineItem>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of InvoiceLineItem
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2189,8 +2135,6 @@ class _$InvoiceLineItemCopyWithImpl<$Res, $Val extends InvoiceLineItem>
     ) as $Val);
   }
 
-  /// Create a copy of InvoiceLineItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get servicedPeriod {
@@ -2203,8 +2147,6 @@ class _$InvoiceLineItemCopyWithImpl<$Res, $Val extends InvoiceLineItem>
     });
   }
 
-  /// Create a copy of InvoiceLineItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get chargeItemReference {
@@ -2217,8 +2159,6 @@ class _$InvoiceLineItemCopyWithImpl<$Res, $Val extends InvoiceLineItem>
     });
   }
 
-  /// Create a copy of InvoiceLineItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get chargeItemCodeableConcept {
@@ -2270,8 +2210,6 @@ class __$$InvoiceLineItemImplCopyWithImpl<$Res>
       _$InvoiceLineItemImpl _value, $Res Function(_$InvoiceLineItemImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of InvoiceLineItem
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2519,7 +2457,7 @@ class _$InvoiceLineItemImpl extends _InvoiceLineItem {
                 .equals(other._priceComponent, _priceComponent));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2535,9 +2473,7 @@ class _$InvoiceLineItemImpl extends _InvoiceLineItem {
       chargeItemCodeableConcept,
       const DeepCollectionEquality().hash(_priceComponent));
 
-  /// Create a copy of InvoiceLineItem
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$InvoiceLineItemImplCopyWith<_$InvoiceLineItemImpl> get copyWith =>
@@ -2571,10 +2507,12 @@ abstract class _InvoiceLineItem extends InvoiceLineItem {
   factory _InvoiceLineItem.fromJson(Map<String, dynamic> json) =
       _$InvoiceLineItemImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2582,9 +2520,9 @@ abstract class _InvoiceLineItem extends InvoiceLineItem {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2598,46 +2536,46 @@ abstract class _InvoiceLineItem extends InvoiceLineItem {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [sequence] Sequence in which the items appear on the invoice.
-  @override
   FhirPositiveInt? get sequence;
+  @override
 
   /// [sequenceElement] ("_sequence") Extensions for sequence
-  @override
   @JsonKey(name: '_sequence')
   PrimitiveElement? get sequenceElement;
+  @override
 
   /// [servicedDate] Date/time(s) range when this service was delivered or
   ///  completed.
-  @override
   FhirDate? get servicedDate;
+  @override
 
   /// [servicedDateElement] ("_servicedDate") Extensions for servicedDate
-  @override
   @JsonKey(name: '_servicedDate')
   PrimitiveElement? get servicedDateElement;
+  @override
 
   /// [servicedPeriod] Date/time(s) range when this service was delivered or
   ///  completed.
-  @override
   Period? get servicedPeriod;
+  @override
 
   /// [chargeItemReference] The ChargeItem contains information such as the
   ///  billing code, date, amount etc. If no further details are required for the
   ///  lineItem, inline billing codes can be added using the CodeableConcept data
   ///  type instead of the Reference.
-  @override
   Reference? get chargeItemReference;
+  @override
 
   /// [chargeItemCodeableConcept] The ChargeItem contains information such as the
   ///  billing code, date, amount etc. If no further details are required for the
   ///  lineItem, inline billing codes can be added using the CodeableConcept data
   ///  type instead of the Reference.
-  @override
   CodeableConcept? get chargeItemCodeableConcept;
+  @override
 
   /// [priceComponent] The price for a ChargeItem may be calculated as a base
   ///  price with surcharges/deductions that apply in certain conditions. A
@@ -2645,13 +2583,9 @@ abstract class _InvoiceLineItem extends InvoiceLineItem {
   ///  conditions that apply to a billing code is currently under development.
   ///  The priceComponent element can be used to offer transparency to the
   ///  recipient of the Invoice as to how the prices have been calculated.
-  @override
   List<MonetaryComponent>? get priceComponent;
-
-  /// Create a copy of InvoiceLineItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$InvoiceLineItemImplCopyWith<_$InvoiceLineItemImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

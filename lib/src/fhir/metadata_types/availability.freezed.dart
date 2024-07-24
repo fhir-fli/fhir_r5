@@ -41,12 +41,8 @@ mixin _$Availability {
   List<AvailabilityNotAvailableTime>? get notAvailableTime =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this Availability to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Availability
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $AvailabilityCopyWith<Availability> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -74,8 +70,6 @@ class _$AvailabilityCopyWithImpl<$Res, $Val extends Availability>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Availability
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -128,8 +122,6 @@ class __$$AvailabilityImplCopyWithImpl<$Res>
       _$AvailabilityImpl _value, $Res Function(_$AvailabilityImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Availability
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -250,7 +242,7 @@ class _$AvailabilityImpl extends _Availability {
                 .equals(other._notAvailableTime, _notAvailableTime));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -259,9 +251,7 @@ class _$AvailabilityImpl extends _Availability {
       const DeepCollectionEquality().hash(_availableTime),
       const DeepCollectionEquality().hash(_notAvailableTime));
 
-  /// Create a copy of Availability
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$AvailabilityImplCopyWith<_$AvailabilityImpl> get copyWith =>
@@ -287,10 +277,12 @@ abstract class _Availability extends Availability {
   factory _Availability.fromJson(Map<String, dynamic> json) =
       _$AvailabilityImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -298,22 +290,18 @@ abstract class _Availability extends Availability {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [availableTime] Times the {item} is available.
-  @override
   List<AvailabilityAvailableTime>? get availableTime;
+  @override
 
   /// [notAvailableTime] Not available during this time due to provided reason.
-  @override
   List<AvailabilityNotAvailableTime>? get notAvailableTime;
-
-  /// Create a copy of Availability
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$AvailabilityImplCopyWith<_$AvailabilityImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -386,12 +374,8 @@ mixin _$AvailabilityAvailableTime {
   PrimitiveElement? get availableEndTimeElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this AvailabilityAvailableTime to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of AvailabilityAvailableTime
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $AvailabilityAvailableTimeCopyWith<AvailabilityAvailableTime> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -429,8 +413,6 @@ class _$AvailabilityAvailableTimeCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of AvailabilityAvailableTime
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -530,8 +512,6 @@ class __$$AvailabilityAvailableTimeImplCopyWithImpl<$Res>
       $Res Function(_$AvailabilityAvailableTimeImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of AvailabilityAvailableTime
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -777,7 +757,7 @@ class _$AvailabilityAvailableTimeImpl extends _AvailabilityAvailableTime {
                 other.availableEndTimeElement == availableEndTimeElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -793,9 +773,7 @@ class _$AvailabilityAvailableTimeImpl extends _AvailabilityAvailableTime {
       availableEndTime,
       availableEndTimeElement);
 
-  /// Create a copy of AvailabilityAvailableTime
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$AvailabilityAvailableTimeImplCopyWith<_$AvailabilityAvailableTimeImpl>
@@ -832,10 +810,12 @@ abstract class _AvailabilityAvailableTime extends AvailabilityAvailableTime {
   factory _AvailabilityAvailableTime.fromJson(Map<String, dynamic> json) =
       _$AvailabilityAvailableTimeImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -843,9 +823,9 @@ abstract class _AvailabilityAvailableTime extends AvailabilityAvailableTime {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -859,51 +839,47 @@ abstract class _AvailabilityAvailableTime extends AvailabilityAvailableTime {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [daysOfWeek] mon | tue | wed | thu | fri | sat | sun.
-  @override
   List<FhirCode>? get daysOfWeek;
+  @override
 
   /// [daysOfWeekElement] ("_daysOfWeek") Extensions for daysOfWeek
-  @override
   @JsonKey(name: '_daysOfWeek')
   List<PrimitiveElement>? get daysOfWeekElement;
+  @override
 
   /// [allDay] Always available? i.e. 24 hour service.
-  @override
   FhirBoolean? get allDay;
+  @override
 
   /// [allDayElement] ("_allDay") Extensions for allDay
-  @override
   @JsonKey(name: '_allDay')
   PrimitiveElement? get allDayElement;
+  @override
 
   /// [availableStartTime] Opening time of day (ignored if allDay = true).
-  @override
   FhirTime? get availableStartTime;
+  @override
 
   /// [availableStartTimeElement] ("_availableStartTime") Extensions for
   ///  availableStartTime
-  @override
   @JsonKey(name: '_availableStartTime')
   PrimitiveElement? get availableStartTimeElement;
+  @override
 
   /// [availableEndTime] Closing time of day (ignored if allDay = true).
-  @override
   FhirTime? get availableEndTime;
+  @override
 
   /// [availableEndTimeElement] ("_availableEndTime") Extensions for
   ///  availableEndTime
-  @override
   @JsonKey(name: '_availableEndTime')
   PrimitiveElement? get availableEndTimeElement;
-
-  /// Create a copy of AvailabilityAvailableTime
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$AvailabilityAvailableTimeImplCopyWith<_$AvailabilityAvailableTimeImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -955,12 +931,8 @@ mixin _$AvailabilityNotAvailableTime {
   /// [during] Service not available during this period.
   Period? get during => throw _privateConstructorUsedError;
 
-  /// Serializes this AvailabilityNotAvailableTime to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of AvailabilityNotAvailableTime
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $AvailabilityNotAvailableTimeCopyWith<AvailabilityNotAvailableTime>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -995,8 +967,6 @@ class _$AvailabilityNotAvailableTimeCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of AvailabilityNotAvailableTime
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1035,8 +1005,6 @@ class _$AvailabilityNotAvailableTimeCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of AvailabilityNotAvailableTime
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get during {
@@ -1081,8 +1049,6 @@ class __$$AvailabilityNotAvailableTimeImplCopyWithImpl<$Res>
       $Res Function(_$AvailabilityNotAvailableTimeImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of AvailabilityNotAvailableTime
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1241,7 +1207,7 @@ class _$AvailabilityNotAvailableTimeImpl extends _AvailabilityNotAvailableTime {
             (identical(other.during, during) || other.during == during));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1252,9 +1218,7 @@ class _$AvailabilityNotAvailableTimeImpl extends _AvailabilityNotAvailableTime {
       descriptionElement,
       during);
 
-  /// Create a copy of AvailabilityNotAvailableTime
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$AvailabilityNotAvailableTimeImplCopyWith<
@@ -1284,10 +1248,12 @@ abstract class _AvailabilityNotAvailableTime
   factory _AvailabilityNotAvailableTime.fromJson(Map<String, dynamic> json) =
       _$AvailabilityNotAvailableTimeImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1295,9 +1261,9 @@ abstract class _AvailabilityNotAvailableTime
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1311,27 +1277,23 @@ abstract class _AvailabilityNotAvailableTime
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [description] Reason presented to the user explaining why time not
   ///  available.
-  @override
   String? get description;
+  @override
 
   /// [descriptionElement] ("_description") Extensions for description
-  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
+  @override
 
   /// [during] Service not available during this period.
-  @override
   Period? get during;
-
-  /// Create a copy of AvailabilityNotAvailableTime
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$AvailabilityNotAvailableTimeImplCopyWith<
           _$AvailabilityNotAvailableTimeImpl>
       get copyWith => throw _privateConstructorUsedError;

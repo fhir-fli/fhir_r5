@@ -255,12 +255,8 @@ mixin _$FamilyMemberHistory {
   List<FamilyMemberHistoryProcedure>? get procedure =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this FamilyMemberHistory to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of FamilyMemberHistory
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $FamilyMemberHistoryCopyWith<FamilyMemberHistory> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -348,8 +344,6 @@ class _$FamilyMemberHistoryCopyWithImpl<$Res, $Val extends FamilyMemberHistory>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of FamilyMemberHistory
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -603,8 +597,6 @@ class _$FamilyMemberHistoryCopyWithImpl<$Res, $Val extends FamilyMemberHistory>
     ) as $Val);
   }
 
-  /// Create a copy of FamilyMemberHistory
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -617,8 +609,6 @@ class _$FamilyMemberHistoryCopyWithImpl<$Res, $Val extends FamilyMemberHistory>
     });
   }
 
-  /// Create a copy of FamilyMemberHistory
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -631,8 +621,6 @@ class _$FamilyMemberHistoryCopyWithImpl<$Res, $Val extends FamilyMemberHistory>
     });
   }
 
-  /// Create a copy of FamilyMemberHistory
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get dataAbsentReason {
@@ -645,8 +633,6 @@ class _$FamilyMemberHistoryCopyWithImpl<$Res, $Val extends FamilyMemberHistory>
     });
   }
 
-  /// Create a copy of FamilyMemberHistory
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get patient {
@@ -655,8 +641,6 @@ class _$FamilyMemberHistoryCopyWithImpl<$Res, $Val extends FamilyMemberHistory>
     });
   }
 
-  /// Create a copy of FamilyMemberHistory
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get relationship {
@@ -665,8 +649,6 @@ class _$FamilyMemberHistoryCopyWithImpl<$Res, $Val extends FamilyMemberHistory>
     });
   }
 
-  /// Create a copy of FamilyMemberHistory
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get sex {
@@ -679,8 +661,6 @@ class _$FamilyMemberHistoryCopyWithImpl<$Res, $Val extends FamilyMemberHistory>
     });
   }
 
-  /// Create a copy of FamilyMemberHistory
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get bornPeriod {
@@ -693,8 +673,6 @@ class _$FamilyMemberHistoryCopyWithImpl<$Res, $Val extends FamilyMemberHistory>
     });
   }
 
-  /// Create a copy of FamilyMemberHistory
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get ageAge {
@@ -707,8 +685,6 @@ class _$FamilyMemberHistoryCopyWithImpl<$Res, $Val extends FamilyMemberHistory>
     });
   }
 
-  /// Create a copy of FamilyMemberHistory
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get ageRange {
@@ -721,8 +697,6 @@ class _$FamilyMemberHistoryCopyWithImpl<$Res, $Val extends FamilyMemberHistory>
     });
   }
 
-  /// Create a copy of FamilyMemberHistory
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get deceasedAge {
@@ -735,8 +709,6 @@ class _$FamilyMemberHistoryCopyWithImpl<$Res, $Val extends FamilyMemberHistory>
     });
   }
 
-  /// Create a copy of FamilyMemberHistory
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get deceasedRange {
@@ -844,8 +816,6 @@ class __$$FamilyMemberHistoryImplCopyWithImpl<$Res>
       $Res Function(_$FamilyMemberHistoryImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of FamilyMemberHistory
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1692,7 +1662,7 @@ class _$FamilyMemberHistoryImpl extends _FamilyMemberHistory {
                 .equals(other._procedure, _procedure));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1747,9 +1717,7 @@ class _$FamilyMemberHistoryImpl extends _FamilyMemberHistory {
         const DeepCollectionEquality().hash(_procedure)
       ]);
 
-  /// Create a copy of FamilyMemberHistory
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$FamilyMemberHistoryImplCopyWith<_$FamilyMemberHistoryImpl> get copyWith =>
@@ -1828,42 +1796,44 @@ abstract class _FamilyMemberHistory extends FamilyMemberHistory {
   factory _FamilyMemberHistory.fromJson(Map<String, dynamic> json) =
       _$FamilyMemberHistoryImpl.fromJson;
 
-  /// [resourceType] This is a FamilyMemberHistory resource
   @override
+
+  /// [resourceType] This is a FamilyMemberHistory resource
   @JsonKey(unknownEnumValue: R5ResourceType.FamilyMemberHistory)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1871,16 +1841,16 @@ abstract class _FamilyMemberHistory extends FamilyMemberHistory {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1888,9 +1858,9 @@ abstract class _FamilyMemberHistory extends FamilyMemberHistory {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1904,207 +1874,203 @@ abstract class _FamilyMemberHistory extends FamilyMemberHistory {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] Business identifiers assigned to this family member history by
   ///  the performer or other systems which remain constant as the resource is
   ///  updated and propagates from server to server.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [instantiatesCanonical] The URL pointing to a FHIR-defined protocol,
   ///  guideline, orderset or other definition that is adhered to in whole or in
   ///  part by this FamilyMemberHistory.
-  @override
   List<FhirCanonical>? get instantiatesCanonical;
+  @override
 
   /// [instantiatesUri] The URL pointing to an externally maintained protocol,
   ///  guideline, orderset or other definition that is adhered to in whole or in
   ///  part by this FamilyMemberHistory.
-  @override
   List<FhirUri>? get instantiatesUri;
+  @override
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
-  @override
   @JsonKey(name: '_instantiatesUri')
   List<PrimitiveElement>? get instantiatesUriElement;
+  @override
 
   /// [status] A code specifying the status of the record of the family history
   ///  of a specific family member.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [dataAbsentReason] Describes why the family member's history is not
   ///  available.
-  @override
   CodeableConcept? get dataAbsentReason;
+  @override
 
   /// [patient] The person who this history concerns.
-  @override
   Reference get patient;
+  @override
 
   /// [date] The date (and possibly time) when the family member history was
   ///  recorded or last updated.
-  @override
   FhirDateTime? get date;
+  @override
 
   /// [dateElement] ("_date") Extensions for date
-  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
+  @override
 
   /// [participant] Indicates who or what participated in the activities related
   ///  to the family member history and how they were involved.
-  @override
   List<FamilyMemberHistoryParticipant>? get participant;
+  @override
 
   /// [name] This will either be a name or a description; e.g. "Aunt Susan", "my
   ///  cousin with the red hair".
-  @override
   String? get name;
+  @override
 
   /// [nameElement] ("_name") Extensions for name
-  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
+  @override
 
   /// [relationship] The type of relationship this person has to the patient
   ///  (father, mother, brother etc.).
-  @override
   CodeableConcept get relationship;
+  @override
 
   /// [sex] The birth sex of the family member.
-  @override
   CodeableConcept? get sex;
+  @override
 
   /// [bornPeriod] The actual or approximate date of birth of the relative.
-  @override
   Period? get bornPeriod;
+  @override
 
   /// [bornDate] The actual or approximate date of birth of the relative.
-  @override
   FhirDate? get bornDate;
+  @override
 
   /// [bornDateElement] ("_bornDate") Extensions for bornDate
-  @override
   @JsonKey(name: '_bornDate')
   PrimitiveElement? get bornDateElement;
+  @override
 
   /// [bornString] The actual or approximate date of birth of the relative.
-  @override
   String? get bornString;
+  @override
 
   /// [bornStringElement] ("_bornString") Extensions for bornString
-  @override
   @JsonKey(name: '_bornString')
   PrimitiveElement? get bornStringElement;
+  @override
 
   /// [ageAge] The age of the relative at the time the family member history is
   ///  recorded.
-  @override
   Age? get ageAge;
+  @override
 
   /// [ageRange] The age of the relative at the time the family member history is
   ///  recorded.
-  @override
   Range? get ageRange;
+  @override
 
   /// [ageString] The age of the relative at the time the family member history
   ///  is recorded.
-  @override
   String? get ageString;
+  @override
 
   /// [ageStringElement] ("_ageString") Extensions for ageString
-  @override
   @JsonKey(name: '_ageString')
   PrimitiveElement? get ageStringElement;
+  @override
 
   /// [estimatedAge] If true, indicates that the age value specified is an
   ///  estimated value.
-  @override
   FhirBoolean? get estimatedAge;
+  @override
 
   /// [estimatedAgeElement] ("_estimatedAge") Extensions for estimatedAge
-  @override
   @JsonKey(name: '_estimatedAge')
   PrimitiveElement? get estimatedAgeElement;
+  @override
 
   /// [deceasedBoolean] Deceased flag or the actual or approximate age of the
   ///  relative at the time of death for the family member history record.
-  @override
   FhirBoolean? get deceasedBoolean;
+  @override
 
   /// [deceasedBooleanElement] ("_deceasedBoolean") Extensions for deceasedBoolean
-  @override
   @JsonKey(name: '_deceasedBoolean')
   PrimitiveElement? get deceasedBooleanElement;
+  @override
 
   /// [deceasedAge] Deceased flag or the actual or approximate age of the
   ///  relative at the time of death for the family member history record.
-  @override
   Age? get deceasedAge;
+  @override
 
   /// [deceasedRange] Deceased flag or the actual or approximate age of the
   ///  relative at the time of death for the family member history record.
-  @override
   Range? get deceasedRange;
+  @override
 
   /// [deceasedDate] Deceased flag or the actual or approximate age of the
   ///  relative at the time of death for the family member history record.
-  @override
   FhirDate? get deceasedDate;
+  @override
 
   /// [deceasedDateElement] ("_deceasedDate") Extensions for deceasedDate
-  @override
   @JsonKey(name: '_deceasedDate')
   PrimitiveElement? get deceasedDateElement;
+  @override
 
   /// [deceasedString] Deceased flag or the actual or approximate age of the
   ///  relative at the time of death for the family member history record.
-  @override
   String? get deceasedString;
+  @override
 
   /// [deceasedStringElement] ("_deceasedString") Extensions for deceasedString
-  @override
   @JsonKey(name: '_deceasedString')
   PrimitiveElement? get deceasedStringElement;
+  @override
 
   /// [reason] Describes why the family member history occurred in coded or
   ///  textual form, or Indicates a Condition, Observation, AllergyIntolerance,
   ///  or QuestionnaireResponse that justifies this family member history event.
-  @override
   List<CodeableReference>? get reason;
+  @override
 
   /// [note] This property allows a non condition-specific note to the made about
   ///  the related person. Ideally, the note would be in the condition property,
   ///  but this is not always possible.
-  @override
   List<Annotation>? get note;
+  @override
 
   /// [condition] The significant Conditions (or condition) that the family
   ///  member had. This is a repeating section to allow a system to represent
   ///  more than one condition per resource, though there is nothing stopping
   ///  multiple resources - one per condition.
-  @override
   List<FamilyMemberHistoryCondition>? get condition;
+  @override
 
   /// [procedure] The significant Procedures (or procedure) that the family
   ///  member had. This is a repeating section to allow a system to represent
   ///  more than one procedure per resource, though there is nothing stopping
   ///  multiple resources - one per procedure.
-  @override
   List<FamilyMemberHistoryProcedure>? get procedure;
-
-  /// Create a copy of FamilyMemberHistory
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$FamilyMemberHistoryImplCopyWith<_$FamilyMemberHistoryImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2153,12 +2119,8 @@ mixin _$FamilyMemberHistoryParticipant {
   ///  family member history.
   Reference get actor => throw _privateConstructorUsedError;
 
-  /// Serializes this FamilyMemberHistoryParticipant to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of FamilyMemberHistoryParticipant
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $FamilyMemberHistoryParticipantCopyWith<FamilyMemberHistoryParticipant>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2193,8 +2155,6 @@ class _$FamilyMemberHistoryParticipantCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of FamilyMemberHistoryParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2228,8 +2188,6 @@ class _$FamilyMemberHistoryParticipantCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of FamilyMemberHistoryParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get function_ {
@@ -2242,8 +2200,6 @@ class _$FamilyMemberHistoryParticipantCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of FamilyMemberHistoryParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get actor {
@@ -2285,8 +2241,6 @@ class __$$FamilyMemberHistoryParticipantImplCopyWithImpl<$Res>
       $Res Function(_$FamilyMemberHistoryParticipantImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of FamilyMemberHistoryParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2435,7 +2389,7 @@ class _$FamilyMemberHistoryParticipantImpl
             (identical(other.actor, actor) || other.actor == actor));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2445,9 +2399,7 @@ class _$FamilyMemberHistoryParticipantImpl
       function_,
       actor);
 
-  /// Create a copy of FamilyMemberHistoryParticipant
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$FamilyMemberHistoryParticipantImplCopyWith<
@@ -2476,10 +2428,12 @@ abstract class _FamilyMemberHistoryParticipant
   factory _FamilyMemberHistoryParticipant.fromJson(Map<String, dynamic> json) =
       _$FamilyMemberHistoryParticipantImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2487,9 +2441,9 @@ abstract class _FamilyMemberHistoryParticipant
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2503,24 +2457,20 @@ abstract class _FamilyMemberHistoryParticipant
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [function_] ("function") Distinguishes the type of involvement of the actor
   ///  in the activities related to the family member history.
-  @override
   @JsonKey(name: 'function')
   CodeableConcept? get function_;
+  @override
 
   /// [actor] Indicates who or what participated in the activities related to the
   ///  family member history.
-  @override
   Reference get actor;
-
-  /// Create a copy of FamilyMemberHistoryParticipant
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$FamilyMemberHistoryParticipantImplCopyWith<
           _$FamilyMemberHistoryParticipantImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2610,12 +2560,8 @@ mixin _$FamilyMemberHistoryCondition {
   ///  condition.
   List<Annotation>? get note => throw _privateConstructorUsedError;
 
-  /// Serializes this FamilyMemberHistoryCondition to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of FamilyMemberHistoryCondition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $FamilyMemberHistoryConditionCopyWith<FamilyMemberHistoryCondition>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2662,8 +2608,6 @@ class _$FamilyMemberHistoryConditionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of FamilyMemberHistoryCondition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2737,8 +2681,6 @@ class _$FamilyMemberHistoryConditionCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of FamilyMemberHistoryCondition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get code {
@@ -2747,8 +2689,6 @@ class _$FamilyMemberHistoryConditionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of FamilyMemberHistoryCondition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get outcome {
@@ -2761,8 +2701,6 @@ class _$FamilyMemberHistoryConditionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of FamilyMemberHistoryCondition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get onsetAge {
@@ -2775,8 +2713,6 @@ class _$FamilyMemberHistoryConditionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of FamilyMemberHistoryCondition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get onsetRange {
@@ -2789,8 +2725,6 @@ class _$FamilyMemberHistoryConditionCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of FamilyMemberHistoryCondition
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get onsetPeriod {
@@ -2851,8 +2785,6 @@ class __$$FamilyMemberHistoryConditionImplCopyWithImpl<$Res>
       $Res Function(_$FamilyMemberHistoryConditionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of FamilyMemberHistoryCondition
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3120,7 +3052,7 @@ class _$FamilyMemberHistoryConditionImpl extends _FamilyMemberHistoryCondition {
             const DeepCollectionEquality().equals(other._note, _note));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3138,9 +3070,7 @@ class _$FamilyMemberHistoryConditionImpl extends _FamilyMemberHistoryCondition {
       onsetStringElement,
       const DeepCollectionEquality().hash(_note));
 
-  /// Create a copy of FamilyMemberHistoryCondition
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$FamilyMemberHistoryConditionImplCopyWith<
@@ -3178,10 +3108,12 @@ abstract class _FamilyMemberHistoryCondition
   factory _FamilyMemberHistoryCondition.fromJson(Map<String, dynamic> json) =
       _$FamilyMemberHistoryConditionImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3189,9 +3121,9 @@ abstract class _FamilyMemberHistoryCondition
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3205,70 +3137,66 @@ abstract class _FamilyMemberHistoryCondition
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [code] The actual condition specified. Could be a coded condition (like MI
   ///  or Diabetes) or a less specific string like 'cancer' depending on how much
   ///  is known about the condition and the capabilities of the creating system.
-  @override
   CodeableConcept get code;
+  @override
 
   /// [outcome] Indicates what happened following the condition.  If the
   ///  condition resulted in death, deceased date is captured on the relation.
-  @override
   CodeableConcept? get outcome;
+  @override
 
   /// [contributedToDeath] This condition contributed to the cause of death of
   ///  the related person. If contributedToDeath is not populated, then it is
   ///  unknown.
-  @override
   FhirBoolean? get contributedToDeath;
+  @override
 
   /// [contributedToDeathElement] ("_contributedToDeath") Extensions for
   ///  contributedToDeath
-  @override
   @JsonKey(name: '_contributedToDeath')
   PrimitiveElement? get contributedToDeathElement;
+  @override
 
   /// [onsetAge] Either the age of onset, range of approximate age or descriptive
   ///  string can be recorded.  For conditions with multiple occurrences, this
   ///  describes the first known occurrence.
-  @override
   Age? get onsetAge;
+  @override
 
   /// [onsetRange] Either the age of onset, range of approximate age or
   ///  descriptive string can be recorded.  For conditions with multiple
   ///  occurrences, this describes the first known occurrence.
-  @override
   Range? get onsetRange;
+  @override
 
   /// [onsetPeriod] Either the age of onset, range of approximate age or
   ///  descriptive string can be recorded.  For conditions with multiple
   ///  occurrences, this describes the first known occurrence.
-  @override
   Period? get onsetPeriod;
+  @override
 
   /// [onsetString] Either the age of onset, range of approximate age or
   ///  descriptive string can be recorded.  For conditions with multiple
   ///  occurrences, this describes the first known occurrence.
-  @override
   String? get onsetString;
+  @override
 
   /// [onsetStringElement] ("_onsetString") Extensions for onsetString
-  @override
   @JsonKey(name: '_onsetString')
   PrimitiveElement? get onsetStringElement;
+  @override
 
   /// [note] An area where general notes can be placed about this specific
   ///  condition.
-  @override
   List<Annotation>? get note;
-
-  /// Create a copy of FamilyMemberHistoryCondition
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$FamilyMemberHistoryConditionImplCopyWith<
           _$FamilyMemberHistoryConditionImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3374,12 +3302,8 @@ mixin _$FamilyMemberHistoryProcedure {
   ///  procedure.
   List<Annotation>? get note => throw _privateConstructorUsedError;
 
-  /// Serializes this FamilyMemberHistoryProcedure to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of FamilyMemberHistoryProcedure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $FamilyMemberHistoryProcedureCopyWith<FamilyMemberHistoryProcedure>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3430,8 +3354,6 @@ class _$FamilyMemberHistoryProcedureCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of FamilyMemberHistoryProcedure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3515,8 +3437,6 @@ class _$FamilyMemberHistoryProcedureCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of FamilyMemberHistoryProcedure
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get code {
@@ -3525,8 +3445,6 @@ class _$FamilyMemberHistoryProcedureCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of FamilyMemberHistoryProcedure
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get outcome {
@@ -3539,8 +3457,6 @@ class _$FamilyMemberHistoryProcedureCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of FamilyMemberHistoryProcedure
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get performedAge {
@@ -3553,8 +3469,6 @@ class _$FamilyMemberHistoryProcedureCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of FamilyMemberHistoryProcedure
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get performedRange {
@@ -3567,8 +3481,6 @@ class _$FamilyMemberHistoryProcedureCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of FamilyMemberHistoryProcedure
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get performedPeriod {
@@ -3633,8 +3545,6 @@ class __$$FamilyMemberHistoryProcedureImplCopyWithImpl<$Res>
       $Res Function(_$FamilyMemberHistoryProcedureImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of FamilyMemberHistoryProcedure
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3936,7 +3846,7 @@ class _$FamilyMemberHistoryProcedureImpl extends _FamilyMemberHistoryProcedure {
             const DeepCollectionEquality().equals(other._note, _note));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3956,9 +3866,7 @@ class _$FamilyMemberHistoryProcedureImpl extends _FamilyMemberHistoryProcedure {
       performedDateTimeElement,
       const DeepCollectionEquality().hash(_note));
 
-  /// Create a copy of FamilyMemberHistoryProcedure
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$FamilyMemberHistoryProcedureImplCopyWith<
@@ -4000,10 +3908,12 @@ abstract class _FamilyMemberHistoryProcedure
   factory _FamilyMemberHistoryProcedure.fromJson(Map<String, dynamic> json) =
       _$FamilyMemberHistoryProcedureImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4011,9 +3921,9 @@ abstract class _FamilyMemberHistoryProcedure
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4027,87 +3937,83 @@ abstract class _FamilyMemberHistoryProcedure
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [code] The actual procedure specified. Could be a coded procedure or a less
   ///  specific string depending on how much is known about the procedure and the
   ///  capabilities of the creating system.
-  @override
   CodeableConcept get code;
+  @override
 
   /// [outcome] Indicates what happened following the procedure. If the procedure
   ///  resulted in death, deceased date is captured on the relation.
-  @override
   CodeableConcept? get outcome;
+  @override
 
   /// [contributedToDeath] This procedure contributed to the cause of death of
   ///  the related person. If contributedToDeath is not populated, then it is
   ///  unknown.
-  @override
   FhirBoolean? get contributedToDeath;
+  @override
 
   /// [contributedToDeathElement] ("_contributedToDeath") Extensions for
   ///  contributedToDeath
-  @override
   @JsonKey(name: '_contributedToDeath')
   PrimitiveElement? get contributedToDeathElement;
+  @override
 
   /// [performedAge] Estimated or actual date, date-time, period, or age when the
   ///  procedure was performed. Allows a period to support complex procedures
   ///  that span more than one date, and also allows for the length of the
   ///  procedure to be captured.
-  @override
   Age? get performedAge;
+  @override
 
   /// [performedRange] Estimated or actual date, date-time, period, or age when
   ///  the procedure was performed. Allows a period to support complex procedures
   ///  that span more than one date, and also allows for the length of the
   ///  procedure to be captured.
-  @override
   Range? get performedRange;
+  @override
 
   /// [performedPeriod] Estimated or actual date, date-time, period, or age when
   ///  the procedure was performed. Allows a period to support complex procedures
   ///  that span more than one date, and also allows for the length of the
   ///  procedure to be captured.
-  @override
   Period? get performedPeriod;
+  @override
 
   /// [performedString] Estimated or actual date, date-time, period, or age when
   ///  the procedure was performed. Allows a period to support complex procedures
   ///  that span more than one date, and also allows for the length of the
   ///  procedure to be captured.
-  @override
   String? get performedString;
+  @override
 
   /// [performedStringElement] ("_performedString") Extensions for performedString
-  @override
   @JsonKey(name: '_performedString')
   PrimitiveElement? get performedStringElement;
+  @override
 
   /// [performedDateTime] Estimated or actual date, date-time, period, or age
   ///  when the procedure was performed. Allows a period to support complex
   ///  procedures that span more than one date, and also allows for the length of
   ///  the procedure to be captured.
-  @override
   FhirDateTime? get performedDateTime;
+  @override
 
   /// [performedDateTimeElement] ("_performedDateTime") Extensions for
   ///  performedDateTime
-  @override
   @JsonKey(name: '_performedDateTime')
   PrimitiveElement? get performedDateTimeElement;
+  @override
 
   /// [note] An area where general notes can be placed about this specific
   ///  procedure.
-  @override
   List<Annotation>? get note;
-
-  /// Create a copy of FamilyMemberHistoryProcedure
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$FamilyMemberHistoryProcedureImplCopyWith<
           _$FamilyMemberHistoryProcedureImpl>
       get copyWith => throw _privateConstructorUsedError;

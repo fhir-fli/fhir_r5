@@ -194,12 +194,8 @@ mixin _$ImagingSelection {
   List<ImagingSelectionInstance>? get instance =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ImagingSelection to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ImagingSelection
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ImagingSelectionCopyWith<ImagingSelection> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -265,8 +261,6 @@ class _$ImagingSelectionCopyWithImpl<$Res, $Val extends ImagingSelection>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ImagingSelection
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -445,8 +439,6 @@ class _$ImagingSelectionCopyWithImpl<$Res, $Val extends ImagingSelection>
     ) as $Val);
   }
 
-  /// Create a copy of ImagingSelection
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -459,8 +451,6 @@ class _$ImagingSelectionCopyWithImpl<$Res, $Val extends ImagingSelection>
     });
   }
 
-  /// Create a copy of ImagingSelection
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -473,8 +463,6 @@ class _$ImagingSelectionCopyWithImpl<$Res, $Val extends ImagingSelection>
     });
   }
 
-  /// Create a copy of ImagingSelection
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get subject {
@@ -487,8 +475,6 @@ class _$ImagingSelectionCopyWithImpl<$Res, $Val extends ImagingSelection>
     });
   }
 
-  /// Create a copy of ImagingSelection
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get code {
@@ -497,8 +483,6 @@ class _$ImagingSelectionCopyWithImpl<$Res, $Val extends ImagingSelection>
     });
   }
 
-  /// Create a copy of ImagingSelection
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get bodySite {
@@ -578,8 +562,6 @@ class __$$ImagingSelectionImplCopyWithImpl<$Res>
       $Res Function(_$ImagingSelectionImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ImagingSelection
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1219,7 +1201,7 @@ class _$ImagingSelectionImpl extends _ImagingSelection {
             const DeepCollectionEquality().equals(other._instance, _instance));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1259,9 +1241,7 @@ class _$ImagingSelectionImpl extends _ImagingSelection {
         const DeepCollectionEquality().hash(_instance)
       ]);
 
-  /// Create a copy of ImagingSelection
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ImagingSelectionImplCopyWith<_$ImagingSelectionImpl> get copyWith =>
@@ -1321,42 +1301,44 @@ abstract class _ImagingSelection extends ImagingSelection {
   factory _ImagingSelection.fromJson(Map<String, dynamic> json) =
       _$ImagingSelectionImpl.fromJson;
 
-  /// [resourceType] This is a ImagingSelection resource
   @override
+
+  /// [resourceType] This is a ImagingSelection resource
   @JsonKey(unknownEnumValue: R5ResourceType.ImagingSelection)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1364,16 +1346,16 @@ abstract class _ImagingSelection extends ImagingSelection {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1381,9 +1363,9 @@ abstract class _ImagingSelection extends ImagingSelection {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1397,113 +1379,113 @@ abstract class _ImagingSelection extends ImagingSelection {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [identifier] A unique identifier assigned to this imaging selection.
-  @override
   List<Identifier>? get identifier;
+  @override
 
   /// [status] The current state of the ImagingSelection resource. This is not
   ///  the status of any ImagingStudy, ServiceRequest, or Task resources
   ///  associated with the ImagingSelection.
-  @override
   ImagingSelectionStatus? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [subject] The patient, or group of patients, location, device,
   ///  organization, procedure or practitioner this imaging selection is about
   ///  and into whose or what record the imaging selection is placed.
-  @override
   Reference? get subject;
+  @override
 
   /// [issued] The date and time this imaging selection was created.
-  @override
   FhirInstant? get issued;
+  @override
 
   /// [issuedElement] ("_issued") Extensions for issued
-  @override
   @JsonKey(name: '_issued')
   PrimitiveElement? get issuedElement;
+  @override
 
   /// [performer] Selector of the instances – human or machine.
-  @override
   List<ImagingSelectionPerformer>? get performer;
+  @override
 
   /// [basedOn] A list of the diagnostic requests that resulted in this imaging
   ///  selection being performed.
-  @override
   List<Reference>? get basedOn;
+  @override
 
   /// [category] Classifies the imaging selection.
-  @override
   List<CodeableConcept>? get category;
+  @override
 
   /// [code] Reason for referencing the selected content.
-  @override
   CodeableConcept get code;
+  @override
 
   /// [studyUid] The Study Instance UID for the DICOM Study from which the images
   ///  were selected.
-  @override
   FhirId? get studyUid;
+  @override
 
   /// [studyUidElement] ("_studyUid") Extensions for studyUid
-  @override
   @JsonKey(name: '_studyUid')
   PrimitiveElement? get studyUidElement;
+  @override
 
   /// [derivedFrom] The imaging study from which the imaging selection is made.
-  @override
   List<Reference>? get derivedFrom;
+  @override
 
   /// [endpoint] The network service providing retrieval access to the selected
   ///  images, frames, etc. See implementation notes for information about using
   ///  DICOM endpoints.
-  @override
   List<Reference>? get endpoint;
+  @override
 
   /// [seriesUid] The Series Instance UID for the DICOM Series from which the
   ///  images were selected.
-  @override
   FhirId? get seriesUid;
+  @override
 
   /// [seriesUidElement] ("_seriesUid") Extensions for seriesUid
-  @override
   @JsonKey(name: '_seriesUid')
   PrimitiveElement? get seriesUidElement;
+  @override
 
   /// [seriesNumber] The Series Number for the DICOM Series from which the images
   ///  were selected.
-  @override
   FhirUnsignedInt? get seriesNumber;
+  @override
 
   /// [seriesNumberElement] ("_seriesNumber") Extensions for seriesNumber
-  @override
   @JsonKey(name: '_seriesNumber')
   PrimitiveElement? get seriesNumberElement;
+  @override
 
   /// [frameOfReferenceUid] The Frame of Reference UID identifying the coordinate
   ///  system that conveys spatial and/or temporal information for the selected
   ///  images or frames.
-  @override
   FhirId? get frameOfReferenceUid;
+  @override
 
   /// [frameOfReferenceUidElement] ("_frameOfReferenceUid") Extensions for
   ///  frameOfReferenceUid
-  @override
   @JsonKey(name: '_frameOfReferenceUid')
   PrimitiveElement? get frameOfReferenceUidElement;
+  @override
 
   /// [bodySite] The anatomic structures examined. See DICOM Part 16 Annex L
   ///  (http://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_L.html) for DICOM to SNOMED-CT mappings.
   ///
-  @override
   CodeableReference? get bodySite;
+  @override
 
   /// [focus] The actual focus of an observation when it is not the patient of
   ///  record representing something or someone associated with the patient such
@@ -1515,18 +1497,14 @@ abstract class _ImagingSelection extends ImagingSelection {
   ///  whether the mother is trained to change her child's tracheostomy tube. In
   ///  this example, the child is the patient of record and the mother is the
   ///  focus.
-  @override
   List<Reference>? get focus;
+  @override
 
   /// [instance] Each imaging selection includes one or more selected DICOM SOP
   ///  instances.
-  @override
   List<ImagingSelectionInstance>? get instance;
-
-  /// Create a copy of ImagingSelection
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ImagingSelectionImplCopyWith<_$ImagingSelectionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1574,12 +1552,8 @@ mixin _$ImagingSelectionPerformer {
   /// [actor] Author – human or machine.
   Reference? get actor => throw _privateConstructorUsedError;
 
-  /// Serializes this ImagingSelectionPerformer to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ImagingSelectionPerformer
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ImagingSelectionPerformerCopyWith<ImagingSelectionPerformer> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1612,8 +1586,6 @@ class _$ImagingSelectionPerformerCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ImagingSelectionPerformer
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1647,8 +1619,6 @@ class _$ImagingSelectionPerformerCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ImagingSelectionPerformer
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get function_ {
@@ -1661,8 +1631,6 @@ class _$ImagingSelectionPerformerCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of ImagingSelectionPerformer
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get actor {
@@ -1708,8 +1676,6 @@ class __$$ImagingSelectionPerformerImplCopyWithImpl<$Res>
       $Res Function(_$ImagingSelectionPerformerImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ImagingSelectionPerformer
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1855,7 +1821,7 @@ class _$ImagingSelectionPerformerImpl extends _ImagingSelectionPerformer {
             (identical(other.actor, actor) || other.actor == actor));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1865,9 +1831,7 @@ class _$ImagingSelectionPerformerImpl extends _ImagingSelectionPerformer {
       function_,
       actor);
 
-  /// Create a copy of ImagingSelectionPerformer
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ImagingSelectionPerformerImplCopyWith<_$ImagingSelectionPerformerImpl>
@@ -1894,10 +1858,12 @@ abstract class _ImagingSelectionPerformer extends ImagingSelectionPerformer {
   factory _ImagingSelectionPerformer.fromJson(Map<String, dynamic> json) =
       _$ImagingSelectionPerformerImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1905,9 +1871,9 @@ abstract class _ImagingSelectionPerformer extends ImagingSelectionPerformer {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1921,23 +1887,19 @@ abstract class _ImagingSelectionPerformer extends ImagingSelectionPerformer {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [function_] ("function") Distinguishes the type of involvement of the
   ///  performer.
-  @override
   @JsonKey(name: 'function')
   CodeableConcept? get function_;
+  @override
 
   /// [actor] Author – human or machine.
-  @override
   Reference? get actor;
-
-  /// Create a copy of ImagingSelectionPerformer
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ImagingSelectionPerformerImplCopyWith<_$ImagingSelectionPerformerImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2021,12 +1983,8 @@ mixin _$ImagingSelectionInstance {
   List<ImagingSelectionImageRegion3D>? get imageRegion3D =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ImagingSelectionInstance to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ImagingSelectionInstance
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ImagingSelectionInstanceCopyWith<ImagingSelectionInstance> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2065,8 +2023,6 @@ class _$ImagingSelectionInstanceCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ImagingSelectionInstance
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2135,8 +2091,6 @@ class _$ImagingSelectionInstanceCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of ImagingSelectionInstance
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get sopClass {
@@ -2187,8 +2141,6 @@ class __$$ImagingSelectionInstanceImplCopyWithImpl<$Res>
       $Res Function(_$ImagingSelectionInstanceImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ImagingSelectionInstance
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2479,7 +2431,7 @@ class _$ImagingSelectionInstanceImpl extends _ImagingSelectionInstance {
                 .equals(other._imageRegion3D, _imageRegion3D));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2496,9 +2448,7 @@ class _$ImagingSelectionInstanceImpl extends _ImagingSelectionInstance {
       const DeepCollectionEquality().hash(_imageRegion2D),
       const DeepCollectionEquality().hash(_imageRegion3D));
 
-  /// Create a copy of ImagingSelectionInstance
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ImagingSelectionInstanceImplCopyWith<_$ImagingSelectionInstanceImpl>
@@ -2533,10 +2483,12 @@ abstract class _ImagingSelectionInstance extends ImagingSelectionInstance {
   factory _ImagingSelectionInstance.fromJson(Map<String, dynamic> json) =
       _$ImagingSelectionInstanceImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2544,9 +2496,9 @@ abstract class _ImagingSelectionInstance extends ImagingSelectionInstance {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2560,30 +2512,30 @@ abstract class _ImagingSelectionInstance extends ImagingSelectionInstance {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [uid] The SOP Instance UID for the selected DICOM instance.
-  @override
   FhirId? get uid;
+  @override
 
   /// [uidElement] ("_uid") Extensions for uid
-  @override
   @JsonKey(name: '_uid')
   PrimitiveElement? get uidElement;
+  @override
 
   /// [number] The Instance Number for the selected DICOM instance.
-  @override
   FhirUnsignedInt? get number;
+  @override
 
   /// [numberElement] ("_number") Extensions for number
-  @override
   @JsonKey(name: '_number')
   PrimitiveElement? get numberElement;
+  @override
 
   /// [sopClass] The SOP Class UID for the selected DICOM instance.
-  @override
   Coding? get sopClass;
+  @override
 
   /// [subset] Selected subset of the SOP Instance. The content and format of the
   ///  subset item is determined by the SOP Class of the selected instance.
@@ -2592,31 +2544,27 @@ abstract class _ImagingSelectionInstance extends ImagingSelectionInstance {
   /// - A list of Content Item Observation UID values selected from a DICOM SR or other structured document SOP Instance.
   /// - A list of segment numbers selected from a segmentation SOP Instance.
   /// - A list of Region of Interest (ROI) numbers selected from a radiotherapy structure set SOP Instance.
-  @override
   List<String>? get subset;
+  @override
 
   /// [subsetElement] ("_subset") Extensions for subset
-  @override
   @JsonKey(name: '_subset')
   List<PrimitiveElement>? get subsetElement;
+  @override
 
   /// [imageRegion2D] Each imaging selection instance or frame list might
   ///  includes an image region, specified by a region type and a set of 2D
   ///  coordinates. If the parent imagingSelection.instance contains a subset
   ///  element of type frame, the image region applies to all frames in the
   ///  subset list.
-  @override
   List<ImagingSelectionImageRegion2D>? get imageRegion2D;
+  @override
 
   /// [imageRegion3D] Each imaging selection might includes a 3D image region,
   ///  specified by a region type and a set of 3D coordinates.
-  @override
   List<ImagingSelectionImageRegion3D>? get imageRegion3D;
-
-  /// Create a copy of ImagingSelectionInstance
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ImagingSelectionInstanceImplCopyWith<_$ImagingSelectionInstanceImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2677,12 +2625,8 @@ mixin _$ImagingSelectionImageRegion2D {
   List<PrimitiveElement>? get coordinateElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ImagingSelectionImageRegion2D to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ImagingSelectionImageRegion2D
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ImagingSelectionImageRegion2DCopyWith<ImagingSelectionImageRegion2D>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2716,8 +2660,6 @@ class _$ImagingSelectionImageRegion2DCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ImagingSelectionImageRegion2D
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2791,8 +2733,6 @@ class __$$ImagingSelectionImageRegion2DImplCopyWithImpl<$Res>
       $Res Function(_$ImagingSelectionImageRegion2DImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ImagingSelectionImageRegion2D
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2999,7 +2939,7 @@ class _$ImagingSelectionImageRegion2DImpl
                 .equals(other._coordinateElement, _coordinateElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3011,9 +2951,7 @@ class _$ImagingSelectionImageRegion2DImpl
       const DeepCollectionEquality().hash(_coordinate),
       const DeepCollectionEquality().hash(_coordinateElement));
 
-  /// Create a copy of ImagingSelectionImageRegion2D
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ImagingSelectionImageRegion2DImplCopyWith<
@@ -3046,10 +2984,12 @@ abstract class _ImagingSelectionImageRegion2D
   factory _ImagingSelectionImageRegion2D.fromJson(Map<String, dynamic> json) =
       _$ImagingSelectionImageRegion2DImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3057,9 +2997,9 @@ abstract class _ImagingSelectionImageRegion2D
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3073,17 +3013,17 @@ abstract class _ImagingSelectionImageRegion2D
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [regionType] Specifies the type of image region.
-  @override
   FhirCode? get regionType;
+  @override
 
   /// [regionTypeElement] ("_regionType") Extensions for regionType
-  @override
   @JsonKey(name: '_regionType')
   PrimitiveElement? get regionTypeElement;
+  @override
 
   /// [coordinate] The coordinates describing the image region. Encoded as a set
   ///  of (column, row) pairs that denote positions in the selected image /
@@ -3092,18 +3032,14 @@ abstract class _ImagingSelectionImageRegion2D
   ///  of the BRHC pixel is the number of columns\rows in the image / frames. The
   ///  values must be within the range 0\0 to the number of columns\rows in the
   ///  image / frames.
-  @override
   List<FhirDecimal>? get coordinate;
+  @override
 
   /// [coordinateElement] ("_coordinate") Extensions for coordinate
-  @override
   @JsonKey(name: '_coordinate')
   List<PrimitiveElement>? get coordinateElement;
-
-  /// Create a copy of ImagingSelectionImageRegion2D
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ImagingSelectionImageRegion2DImplCopyWith<
           _$ImagingSelectionImageRegion2DImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3162,12 +3098,8 @@ mixin _$ImagingSelectionImageRegion3D {
   List<PrimitiveElement>? get coordinateElement =>
       throw _privateConstructorUsedError;
 
-  /// Serializes this ImagingSelectionImageRegion3D to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of ImagingSelectionImageRegion3D
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $ImagingSelectionImageRegion3DCopyWith<ImagingSelectionImageRegion3D>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3201,8 +3133,6 @@ class _$ImagingSelectionImageRegion3DCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of ImagingSelectionImageRegion3D
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3276,8 +3206,6 @@ class __$$ImagingSelectionImageRegion3DImplCopyWithImpl<$Res>
       $Res Function(_$ImagingSelectionImageRegion3DImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of ImagingSelectionImageRegion3D
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3478,7 +3406,7 @@ class _$ImagingSelectionImageRegion3DImpl
                 .equals(other._coordinateElement, _coordinateElement));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3490,9 +3418,7 @@ class _$ImagingSelectionImageRegion3DImpl
       const DeepCollectionEquality().hash(_coordinate),
       const DeepCollectionEquality().hash(_coordinateElement));
 
-  /// Create a copy of ImagingSelectionImageRegion3D
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$ImagingSelectionImageRegion3DImplCopyWith<
@@ -3525,10 +3451,12 @@ abstract class _ImagingSelectionImageRegion3D
   factory _ImagingSelectionImageRegion3D.fromJson(Map<String, dynamic> json) =
       _$ImagingSelectionImageRegion3DImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3536,9 +3464,9 @@ abstract class _ImagingSelectionImageRegion3D
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3552,34 +3480,30 @@ abstract class _ImagingSelectionImageRegion3D
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [regionType] Specifies the type of image region.
-  @override
   FhirCode? get regionType;
+  @override
 
   /// [regionTypeElement] ("_regionType") Extensions for regionType
-  @override
   @JsonKey(name: '_regionType')
   PrimitiveElement? get regionTypeElement;
+  @override
 
   /// [coordinate] The coordinates describing the image region. Encoded as an
   ///  ordered set of (x,y,z) triplets (in mm and may be negative) that define a
   ///  region of interest in the patient-relative Reference Coordinate System
   ///  defined by ImagingSelection.frameOfReferenceUid element.
-  @override
   List<FhirDecimal>? get coordinate;
+  @override
 
   /// [coordinateElement] ("_coordinate") Extensions for coordinate
-  @override
   @JsonKey(name: '_coordinate')
   List<PrimitiveElement>? get coordinateElement;
-
-  /// Create a copy of ImagingSelectionImageRegion3D
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$ImagingSelectionImageRegion3DImplCopyWith<
           _$ImagingSelectionImageRegion3DImpl>
       get copyWith => throw _privateConstructorUsedError;

@@ -136,12 +136,8 @@ mixin _$SubscriptionStatus {
   ///  notification.
   List<CodeableConcept>? get error => throw _privateConstructorUsedError;
 
-  /// Serializes this SubscriptionStatus to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubscriptionStatus
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubscriptionStatusCopyWith<SubscriptionStatus> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -192,8 +188,6 @@ class _$SubscriptionStatusCopyWithImpl<$Res, $Val extends SubscriptionStatus>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubscriptionStatus
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -308,8 +302,6 @@ class _$SubscriptionStatusCopyWithImpl<$Res, $Val extends SubscriptionStatus>
     ) as $Val);
   }
 
-  /// Create a copy of SubscriptionStatus
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -322,8 +314,6 @@ class _$SubscriptionStatusCopyWithImpl<$Res, $Val extends SubscriptionStatus>
     });
   }
 
-  /// Create a copy of SubscriptionStatus
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -336,8 +326,6 @@ class _$SubscriptionStatusCopyWithImpl<$Res, $Val extends SubscriptionStatus>
     });
   }
 
-  /// Create a copy of SubscriptionStatus
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get subscription {
@@ -396,8 +384,6 @@ class __$$SubscriptionStatusImplCopyWithImpl<$Res>
       $Res Function(_$SubscriptionStatusImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubscriptionStatus
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -802,7 +788,7 @@ class _$SubscriptionStatusImpl extends _SubscriptionStatus {
             const DeepCollectionEquality().equals(other._error, _error));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -829,9 +815,7 @@ class _$SubscriptionStatusImpl extends _SubscriptionStatus {
         const DeepCollectionEquality().hash(_error)
       ]);
 
-  /// Create a copy of SubscriptionStatus
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubscriptionStatusImplCopyWith<_$SubscriptionStatusImpl> get copyWith =>
@@ -877,42 +861,44 @@ abstract class _SubscriptionStatus extends SubscriptionStatus {
   factory _SubscriptionStatus.fromJson(Map<String, dynamic> json) =
       _$SubscriptionStatusImpl.fromJson;
 
-  /// [resourceType] This is a SubscriptionStatus resource
   @override
+
+  /// [resourceType] This is a SubscriptionStatus resource
   @JsonKey(unknownEnumValue: R5ResourceType.SubscriptionStatus)
   R5ResourceType get resourceType;
+  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  @override
   FhirId? get id;
+  @override
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  @override
   FhirMeta? get meta;
+  @override
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  @override
   FhirUri? get implicitRules;
+  @override
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
-  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
+  @override
 
   /// [language] The base language in which the resource is written.
-  @override
   FhirCode? get language;
+  @override
 
   /// [languageElement] ("_language") Extensions for language
-  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
+  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -920,16 +906,16 @@ abstract class _SubscriptionStatus extends SubscriptionStatus {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  @override
   Narrative? get text;
+  @override
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  @override
   List<Resource>? get contained;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -937,9 +923,9 @@ abstract class _SubscriptionStatus extends SubscriptionStatus {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -953,66 +939,62 @@ abstract class _SubscriptionStatus extends SubscriptionStatus {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [status] The status of the subscription, which marks the server state for
   ///  managing the subscription.
-  @override
   FhirCode? get status;
+  @override
 
   /// [statusElement] ("_status") Extensions for status
-  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+  @override
 
   /// [type] The type of event being conveyed with this notification.
-  @override
   FhirCode? get type;
+  @override
 
   /// [typeElement] ("_type") Extensions for type
-  @override
   @JsonKey(name: '_type')
   PrimitiveElement? get typeElement;
+  @override
 
   /// [eventsSinceSubscriptionStart] The total number of actual events which have
   ///  been generated since the Subscription was created (inclusive of this
   ///  notification) - regardless of how many have been successfully
   ///  communicated.  This number is NOT incremented for handshake and heartbeat
   ///  notifications.
-  @override
   FhirInteger64? get eventsSinceSubscriptionStart;
+  @override
 
   /// [eventsSinceSubscriptionStartElement] ("_eventsSinceSubscriptionStart")
   ///  Extensions for eventsSinceSubscriptionStart
-  @override
   @JsonKey(name: '_eventsSinceSubscriptionStart')
   PrimitiveElement? get eventsSinceSubscriptionStartElement;
+  @override
 
   /// [notificationEvent] Detailed information about events relevant to this
   ///  subscription notification.
-  @override
   List<SubscriptionStatusNotificationEvent>? get notificationEvent;
+  @override
 
   /// [subscription] The reference to the Subscription which generated this
   ///  notification.
-  @override
   Reference get subscription;
+  @override
 
   /// [topic] The reference to the SubscriptionTopic for the Subscription which
   ///  generated this notification.
-  @override
   FhirCanonical? get topic;
+  @override
 
   /// [error] A record of errors that occurred when the server processed a
   ///  notification.
-  @override
   List<CodeableConcept>? get error;
-
-  /// Create a copy of SubscriptionStatus
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubscriptionStatusImplCopyWith<_$SubscriptionStatusImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1079,12 +1061,8 @@ mixin _$SubscriptionStatusNotificationEvent {
   ///  MAY refer to non-FHIR objects.
   List<Reference>? get additionalContext => throw _privateConstructorUsedError;
 
-  /// Serializes this SubscriptionStatusNotificationEvent to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of SubscriptionStatusNotificationEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SubscriptionStatusNotificationEventCopyWith<
           SubscriptionStatusNotificationEvent>
       get copyWith => throw _privateConstructorUsedError;
@@ -1123,8 +1101,6 @@ class _$SubscriptionStatusNotificationEventCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubscriptionStatusNotificationEvent
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1178,8 +1154,6 @@ class _$SubscriptionStatusNotificationEventCopyWithImpl<$Res,
     ) as $Val);
   }
 
-  /// Create a copy of SubscriptionStatusNotificationEvent
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get focus {
@@ -1227,8 +1201,6 @@ class __$$SubscriptionStatusNotificationEventImplCopyWithImpl<$Res>
       $Res Function(_$SubscriptionStatusNotificationEventImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubscriptionStatusNotificationEvent
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1444,7 +1416,7 @@ class _$SubscriptionStatusNotificationEventImpl
                 .equals(other._additionalContext, _additionalContext));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1458,9 +1430,7 @@ class _$SubscriptionStatusNotificationEventImpl
       focus,
       const DeepCollectionEquality().hash(_additionalContext));
 
-  /// Create a copy of SubscriptionStatusNotificationEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SubscriptionStatusNotificationEventImplCopyWith<
@@ -1495,10 +1465,12 @@ abstract class _SubscriptionStatusNotificationEvent
           Map<String, dynamic> json) =
       _$SubscriptionStatusNotificationEventImpl.fromJson;
 
+  @override
+
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  @override
   String? get id;
+  @override
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1506,9 +1478,9 @@ abstract class _SubscriptionStatusNotificationEvent
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
-  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
+  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1522,45 +1494,41 @@ abstract class _SubscriptionStatusNotificationEvent
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  @override
   List<FhirExtension>? get modifierExtension;
+  @override
 
   /// [eventNumber] Either the sequential number of this event in this
   ///  subscription context or a relative event number for this notification.
-  @override
   FhirInteger64? get eventNumber;
+  @override
 
   /// [eventNumberElement] ("_eventNumber") Extensions for eventNumber
-  @override
   @JsonKey(name: '_eventNumber')
   PrimitiveElement? get eventNumberElement;
+  @override
 
   /// [timestamp] The actual time this event occurred on the server.
-  @override
   FhirInstant? get timestamp;
+  @override
 
   /// [timestampElement] ("_timestamp") Extensions for timestamp
-  @override
   @JsonKey(name: '_timestamp')
   PrimitiveElement? get timestampElement;
+  @override
 
   /// [focus] The focus of this event. While this will usually be a reference to
   ///  the focus resource of the event, it MAY contain a reference to a non-FHIR
   ///  object.
-  @override
   Reference? get focus;
+  @override
 
   /// [additionalContext] Additional context information for this event.
   ///  Generally, this will contain references to additional resources included
   ///  with the event (e.g., the Patient relevant to an Encounter), however it
   ///  MAY refer to non-FHIR objects.
-  @override
   List<Reference>? get additionalContext;
-
-  /// Create a copy of SubscriptionStatusNotificationEvent
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SubscriptionStatusNotificationEventImplCopyWith<
           _$SubscriptionStatusNotificationEventImpl>
       get copyWith => throw _privateConstructorUsedError;
