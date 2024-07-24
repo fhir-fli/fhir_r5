@@ -383,7 +383,7 @@ class Coverage with _$Coverage implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [CoveragePaymentBy] Financial instrument which may be used to reimburse or

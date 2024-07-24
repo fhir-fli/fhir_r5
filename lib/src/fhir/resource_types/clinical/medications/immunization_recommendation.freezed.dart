@@ -112,8 +112,12 @@ mixin _$ImmunizationRecommendation {
   List<ImmunizationRecommendationRecommendation> get recommendation =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this ImmunizationRecommendation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ImmunizationRecommendation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ImmunizationRecommendationCopyWith<ImmunizationRecommendation>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -162,6 +166,8 @@ class _$ImmunizationRecommendationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ImmunizationRecommendation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -255,6 +261,8 @@ class _$ImmunizationRecommendationCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of ImmunizationRecommendation
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -267,6 +275,8 @@ class _$ImmunizationRecommendationCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of ImmunizationRecommendation
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -279,6 +289,8 @@ class _$ImmunizationRecommendationCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of ImmunizationRecommendation
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get patient {
@@ -287,6 +299,8 @@ class _$ImmunizationRecommendationCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of ImmunizationRecommendation
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get authority {
@@ -349,6 +363,8 @@ class __$$ImmunizationRecommendationImplCopyWithImpl<$Res>
       $Res Function(_$ImmunizationRecommendationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ImmunizationRecommendation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -688,7 +704,7 @@ class _$ImmunizationRecommendationImpl extends _ImmunizationRecommendation {
                 .equals(other._recommendation, _recommendation));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -710,7 +726,9 @@ class _$ImmunizationRecommendationImpl extends _ImmunizationRecommendation {
       authority,
       const DeepCollectionEquality().hash(_recommendation));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ImmunizationRecommendation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ImmunizationRecommendationImplCopyWith<_$ImmunizationRecommendationImpl>
@@ -752,44 +770,42 @@ abstract class _ImmunizationRecommendation extends ImmunizationRecommendation {
   factory _ImmunizationRecommendation.fromJson(Map<String, dynamic> json) =
       _$ImmunizationRecommendationImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a ImmunizationRecommendation resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.ImmunizationRecommendation)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -797,16 +813,16 @@ abstract class _ImmunizationRecommendation extends ImmunizationRecommendation {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -814,9 +830,9 @@ abstract class _ImmunizationRecommendation extends ImmunizationRecommendation {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -830,35 +846,39 @@ abstract class _ImmunizationRecommendation extends ImmunizationRecommendation {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] A unique identifier assigned to this particular recommendation
   ///  record.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [patient] The patient the recommendation(s) are for.
-  Reference get patient;
   @override
+  Reference get patient;
 
   /// [date] The date the immunization recommendation(s) were created.
-  FhirDateTime? get date;
   @override
+  FhirDateTime? get date;
 
   /// [dateElement] ("_date") Extensions for date
+  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
-  @override
 
   /// [authority] Indicates the authority who published the protocol (e.g. ACIP).
-  Reference? get authority;
   @override
+  Reference? get authority;
 
   /// [recommendation] Vaccine administration recommendations.
-  List<ImmunizationRecommendationRecommendation> get recommendation;
   @override
-  @JsonKey(ignore: true)
+  List<ImmunizationRecommendationRecommendation> get recommendation;
+
+  /// Create a copy of ImmunizationRecommendation
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ImmunizationRecommendationImplCopyWith<_$ImmunizationRecommendationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -971,8 +991,12 @@ mixin _$ImmunizationRecommendationRecommendation {
   List<Reference>? get supportingPatientInformation =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this ImmunizationRecommendationRecommendation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ImmunizationRecommendationRecommendation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ImmunizationRecommendationRecommendationCopyWith<
           ImmunizationRecommendationRecommendation>
       get copyWith => throw _privateConstructorUsedError;
@@ -1022,6 +1046,8 @@ class _$ImmunizationRecommendationRecommendationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ImmunizationRecommendationRecommendation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1125,6 +1151,8 @@ class _$ImmunizationRecommendationRecommendationCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of ImmunizationRecommendationRecommendation
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get forecastStatus {
@@ -1178,6 +1206,8 @@ class __$$ImmunizationRecommendationRecommendationImplCopyWithImpl<$Res>
       $Res Function(_$ImmunizationRecommendationRecommendationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ImmunizationRecommendationRecommendation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1588,7 +1618,7 @@ class _$ImmunizationRecommendationRecommendationImpl
                 _supportingPatientInformation));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1613,7 +1643,9 @@ class _$ImmunizationRecommendationRecommendationImpl
         const DeepCollectionEquality().hash(_supportingPatientInformation)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ImmunizationRecommendationRecommendation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ImmunizationRecommendationRecommendationImplCopyWith<
@@ -1659,12 +1691,10 @@ abstract class _ImmunizationRecommendationRecommendation
           Map<String, dynamic> json) =
       _$ImmunizationRecommendationRecommendationImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1672,9 +1702,9 @@ abstract class _ImmunizationRecommendationRecommendation
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1688,89 +1718,93 @@ abstract class _ImmunizationRecommendationRecommendation
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [vaccineCode] Vaccine(s) or vaccine group that pertain to the
   ///  recommendation.
-  List<CodeableConcept>? get vaccineCode;
   @override
+  List<CodeableConcept>? get vaccineCode;
 
   /// [targetDisease] The targeted disease for the recommendation.
-  List<CodeableConcept>? get targetDisease;
   @override
+  List<CodeableConcept>? get targetDisease;
 
   /// [contraindicatedVaccineCode] Vaccine(s) which should not be used to fulfill
   ///  the recommendation.
-  List<CodeableConcept>? get contraindicatedVaccineCode;
   @override
+  List<CodeableConcept>? get contraindicatedVaccineCode;
 
   /// [forecastStatus] Indicates the patient status with respect to the path to
   ///  immunity for the target disease.
-  CodeableConcept get forecastStatus;
   @override
+  CodeableConcept get forecastStatus;
 
   /// [forecastReason] The reason for the assigned forecast status.
-  List<CodeableConcept>? get forecastReason;
   @override
+  List<CodeableConcept>? get forecastReason;
 
   /// [dateCriterion] Vaccine date recommendations.  For example, earliest date
   ///  to administer, latest date to administer, etc.
-  List<ImmunizationRecommendationDateCriterion>? get dateCriterion;
   @override
+  List<ImmunizationRecommendationDateCriterion>? get dateCriterion;
 
   /// [description] Contains the description about the protocol under which the
   ///  vaccine was administered.
-  FhirMarkdown? get description;
   @override
+  FhirMarkdown? get description;
 
   /// [descriptionElement] ("_description") Extensions for description
+  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
-  @override
 
   /// [series] One possible path to achieve presumed immunity against a disease -
   ///  within the context of an authority.
-  String? get series;
   @override
+  String? get series;
 
   /// [seriesElement] ("_series") Extensions for series
+  @override
   @JsonKey(name: '_series')
   PrimitiveElement? get seriesElement;
-  @override
 
   /// [doseNumber] Nominal position of the recommended dose in a series as
   ///  determined by the evaluation and forecasting process (e.g. dose 2 is the
   ///  next recommended dose).
-  String? get doseNumber;
   @override
+  String? get doseNumber;
 
   /// [doseNumberElement] ("_doseNumber") Extensions for doseNumber
+  @override
   @JsonKey(name: '_doseNumber')
   PrimitiveElement? get doseNumberElement;
-  @override
 
   /// [seriesDoses] The recommended number of doses to achieve immunity as
   ///  determined by the evaluation and forecasting process.
-  String? get seriesDoses;
   @override
+  String? get seriesDoses;
 
   /// [seriesDosesElement] ("_seriesDoses") Extensions for seriesDoses
+  @override
   @JsonKey(name: '_seriesDoses')
   PrimitiveElement? get seriesDosesElement;
-  @override
 
   /// [supportingImmunization] Immunization event history and/or evaluation that
   ///  supports the status and recommendation.
-  List<Reference>? get supportingImmunization;
   @override
+  List<Reference>? get supportingImmunization;
 
   /// [supportingPatientInformation] Patient Information that supports the status
   ///  and recommendation.  This includes patient observations, adverse reactions
   ///  and allergy/intolerance information.
-  List<Reference>? get supportingPatientInformation;
   @override
-  @JsonKey(ignore: true)
+  List<Reference>? get supportingPatientInformation;
+
+  /// Create a copy of ImmunizationRecommendationRecommendation
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ImmunizationRecommendationRecommendationImplCopyWith<
           _$ImmunizationRecommendationRecommendationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1823,8 +1857,12 @@ mixin _$ImmunizationRecommendationDateCriterion {
   @JsonKey(name: '_value')
   PrimitiveElement? get valueElement => throw _privateConstructorUsedError;
 
+  /// Serializes this ImmunizationRecommendationDateCriterion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ImmunizationRecommendationDateCriterion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ImmunizationRecommendationDateCriterionCopyWith<
           ImmunizationRecommendationDateCriterion>
       get copyWith => throw _privateConstructorUsedError;
@@ -1861,6 +1899,8 @@ class _$ImmunizationRecommendationDateCriterionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ImmunizationRecommendationDateCriterion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1899,6 +1939,8 @@ class _$ImmunizationRecommendationDateCriterionCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of ImmunizationRecommendationDateCriterion
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get code {
@@ -1939,6 +1981,8 @@ class __$$ImmunizationRecommendationDateCriterionImplCopyWithImpl<$Res>
       $Res Function(_$ImmunizationRecommendationDateCriterionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ImmunizationRecommendationDateCriterion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2097,7 +2141,7 @@ class _$ImmunizationRecommendationDateCriterionImpl
                 other.valueElement == valueElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2108,7 +2152,9 @@ class _$ImmunizationRecommendationDateCriterionImpl
       value,
       valueElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ImmunizationRecommendationDateCriterion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ImmunizationRecommendationDateCriterionImplCopyWith<
@@ -2141,12 +2187,10 @@ abstract class _ImmunizationRecommendationDateCriterion
           Map<String, dynamic> json) =
       _$ImmunizationRecommendationDateCriterionImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2154,9 +2198,9 @@ abstract class _ImmunizationRecommendationDateCriterion
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2170,23 +2214,27 @@ abstract class _ImmunizationRecommendationDateCriterion
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [code] Date classification of recommendation.  For example, earliest date
   ///  to give, latest date to give, etc.
-  CodeableConcept get code;
   @override
+  CodeableConcept get code;
 
   /// [value] The date whose meaning is specified by dateCriterion.code.
-  FhirDateTime? get value;
   @override
+  FhirDateTime? get value;
 
   /// [valueElement] ("_value") Extensions for value
+  @override
   @JsonKey(name: '_value')
   PrimitiveElement? get valueElement;
+
+  /// Create a copy of ImmunizationRecommendationDateCriterion
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ImmunizationRecommendationDateCriterionImplCopyWith<
           _$ImmunizationRecommendationDateCriterionImpl>
       get copyWith => throw _privateConstructorUsedError;

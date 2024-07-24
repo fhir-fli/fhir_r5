@@ -110,8 +110,12 @@ mixin _$SubstanceReferenceInformation {
   List<SubstanceReferenceInformationTarget>? get target =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this SubstanceReferenceInformation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SubstanceReferenceInformation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SubstanceReferenceInformationCopyWith<SubstanceReferenceInformation>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -158,6 +162,8 @@ class _$SubstanceReferenceInformationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubstanceReferenceInformation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -246,6 +252,8 @@ class _$SubstanceReferenceInformationCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of SubstanceReferenceInformation
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -258,6 +266,8 @@ class _$SubstanceReferenceInformationCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceReferenceInformation
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -315,6 +325,8 @@ class __$$SubstanceReferenceInformationImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceReferenceInformationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubstanceReferenceInformation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -651,7 +663,7 @@ class _$SubstanceReferenceInformationImpl
             const DeepCollectionEquality().equals(other._target, _target));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -672,7 +684,9 @@ class _$SubstanceReferenceInformationImpl
       const DeepCollectionEquality().hash(_geneElement),
       const DeepCollectionEquality().hash(_target));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SubstanceReferenceInformation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceReferenceInformationImplCopyWith<
@@ -716,44 +730,42 @@ abstract class _SubstanceReferenceInformation
   factory _SubstanceReferenceInformation.fromJson(Map<String, dynamic> json) =
       _$SubstanceReferenceInformationImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a SubstanceReferenceInformation resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.SubstanceReferenceInformation)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -761,16 +773,16 @@ abstract class _SubstanceReferenceInformation
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -778,9 +790,9 @@ abstract class _SubstanceReferenceInformation
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -794,30 +806,34 @@ abstract class _SubstanceReferenceInformation
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [comment] FhirTodo.
-  String? get comment;
   @override
+  String? get comment;
 
   /// [commentElement] ("_comment") Extensions for comment
+  @override
   @JsonKey(name: '_comment')
   PrimitiveElement? get commentElement;
-  @override
 
   /// [gene] FhirTodo.
-  List<SubstanceReferenceInformationGene>? get gene;
   @override
+  List<SubstanceReferenceInformationGene>? get gene;
 
   /// [geneElement] FhirTodo.
-  List<SubstanceReferenceInformationGeneElement>? get geneElement;
   @override
+  List<SubstanceReferenceInformationGeneElement>? get geneElement;
 
   /// [target] FhirTodo.
-  List<SubstanceReferenceInformationTarget>? get target;
   @override
-  @JsonKey(ignore: true)
+  List<SubstanceReferenceInformationTarget>? get target;
+
+  /// Create a copy of SubstanceReferenceInformation
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SubstanceReferenceInformationImplCopyWith<
           _$SubstanceReferenceInformationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -867,8 +883,12 @@ mixin _$SubstanceReferenceInformationGene {
   /// [source] FhirTodo.
   List<Reference>? get source => throw _privateConstructorUsedError;
 
+  /// Serializes this SubstanceReferenceInformationGene to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SubstanceReferenceInformationGene
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SubstanceReferenceInformationGeneCopyWith<SubstanceReferenceInformationGene>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -904,6 +924,8 @@ class _$SubstanceReferenceInformationGeneCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubstanceReferenceInformationGene
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -942,6 +964,8 @@ class _$SubstanceReferenceInformationGeneCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of SubstanceReferenceInformationGene
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get geneSequenceOrigin {
@@ -954,6 +978,8 @@ class _$SubstanceReferenceInformationGeneCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceReferenceInformationGene
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get gene {
@@ -1000,6 +1026,8 @@ class __$$SubstanceReferenceInformationGeneImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceReferenceInformationGeneImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubstanceReferenceInformationGene
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1166,7 +1194,7 @@ class _$SubstanceReferenceInformationGeneImpl
             const DeepCollectionEquality().equals(other._source, _source));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1177,7 +1205,9 @@ class _$SubstanceReferenceInformationGeneImpl
       gene,
       const DeepCollectionEquality().hash(_source));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SubstanceReferenceInformationGene
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceReferenceInformationGeneImplCopyWith<
@@ -1208,12 +1238,10 @@ abstract class _SubstanceReferenceInformationGene
           Map<String, dynamic> json) =
       _$SubstanceReferenceInformationGeneImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1221,9 +1249,9 @@ abstract class _SubstanceReferenceInformationGene
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1237,21 +1265,25 @@ abstract class _SubstanceReferenceInformationGene
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [geneSequenceOrigin] FhirTodo.
-  CodeableConcept? get geneSequenceOrigin;
   @override
+  CodeableConcept? get geneSequenceOrigin;
 
   /// [gene] FhirTodo.
-  CodeableConcept? get gene;
   @override
+  CodeableConcept? get gene;
 
   /// [source] FhirTodo.
-  List<Reference>? get source;
   @override
-  @JsonKey(ignore: true)
+  List<Reference>? get source;
+
+  /// Create a copy of SubstanceReferenceInformationGene
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SubstanceReferenceInformationGeneImplCopyWith<
           _$SubstanceReferenceInformationGeneImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1302,8 +1334,12 @@ mixin _$SubstanceReferenceInformationGeneElement {
   /// [source] FhirTodo.
   List<Reference>? get source => throw _privateConstructorUsedError;
 
+  /// Serializes this SubstanceReferenceInformationGeneElement to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SubstanceReferenceInformationGeneElement
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SubstanceReferenceInformationGeneElementCopyWith<
           SubstanceReferenceInformationGeneElement>
       get copyWith => throw _privateConstructorUsedError;
@@ -1341,6 +1377,8 @@ class _$SubstanceReferenceInformationGeneElementCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubstanceReferenceInformationGeneElement
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1379,6 +1417,8 @@ class _$SubstanceReferenceInformationGeneElementCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of SubstanceReferenceInformationGeneElement
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -1391,6 +1431,8 @@ class _$SubstanceReferenceInformationGeneElementCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceReferenceInformationGeneElement
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get element {
@@ -1437,6 +1479,8 @@ class __$$SubstanceReferenceInformationGeneElementImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceReferenceInformationGeneElementImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubstanceReferenceInformationGeneElement
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1602,7 +1646,7 @@ class _$SubstanceReferenceInformationGeneElementImpl
             const DeepCollectionEquality().equals(other._source, _source));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1613,7 +1657,9 @@ class _$SubstanceReferenceInformationGeneElementImpl
       element,
       const DeepCollectionEquality().hash(_source));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SubstanceReferenceInformationGeneElement
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceReferenceInformationGeneElementImplCopyWith<
@@ -1646,12 +1692,10 @@ abstract class _SubstanceReferenceInformationGeneElement
           Map<String, dynamic> json) =
       _$SubstanceReferenceInformationGeneElementImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1659,9 +1703,9 @@ abstract class _SubstanceReferenceInformationGeneElement
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1675,21 +1719,25 @@ abstract class _SubstanceReferenceInformationGeneElement
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] FhirTodo.
-  CodeableConcept? get type;
   @override
+  CodeableConcept? get type;
 
   /// [element] FhirTodo.
-  Identifier? get element;
   @override
+  Identifier? get element;
 
   /// [source] FhirTodo.
-  List<Reference>? get source;
   @override
-  @JsonKey(ignore: true)
+  List<Reference>? get source;
+
+  /// Create a copy of SubstanceReferenceInformationGeneElement
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SubstanceReferenceInformationGeneElementImplCopyWith<
           _$SubstanceReferenceInformationGeneElementImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1765,8 +1813,12 @@ mixin _$SubstanceReferenceInformationTarget {
   /// [source] FhirTodo.
   List<Reference>? get source => throw _privateConstructorUsedError;
 
+  /// Serializes this SubstanceReferenceInformationTarget to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SubstanceReferenceInformationTarget
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SubstanceReferenceInformationTargetCopyWith<
           SubstanceReferenceInformationTarget>
       get copyWith => throw _privateConstructorUsedError;
@@ -1817,6 +1869,8 @@ class _$SubstanceReferenceInformationTargetCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubstanceReferenceInformationTarget
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1895,6 +1949,8 @@ class _$SubstanceReferenceInformationTargetCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of SubstanceReferenceInformationTarget
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get target {
@@ -1907,6 +1963,8 @@ class _$SubstanceReferenceInformationTargetCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceReferenceInformationTarget
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -1919,6 +1977,8 @@ class _$SubstanceReferenceInformationTargetCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceReferenceInformationTarget
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get interaction {
@@ -1931,6 +1991,8 @@ class _$SubstanceReferenceInformationTargetCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceReferenceInformationTarget
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get organism {
@@ -1943,6 +2005,8 @@ class _$SubstanceReferenceInformationTargetCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceReferenceInformationTarget
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get organismType {
@@ -1955,6 +2019,8 @@ class _$SubstanceReferenceInformationTargetCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceReferenceInformationTarget
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get amountQuantity {
@@ -1967,6 +2033,8 @@ class _$SubstanceReferenceInformationTargetCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceReferenceInformationTarget
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get amountRange {
@@ -1979,6 +2047,8 @@ class _$SubstanceReferenceInformationTargetCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceReferenceInformationTarget
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get amountType {
@@ -2045,6 +2115,8 @@ class __$$SubstanceReferenceInformationTargetImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceReferenceInformationTargetImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubstanceReferenceInformationTarget
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2307,7 +2379,7 @@ class _$SubstanceReferenceInformationTargetImpl
             const DeepCollectionEquality().equals(other._source, _source));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2326,7 +2398,9 @@ class _$SubstanceReferenceInformationTargetImpl
       amountType,
       const DeepCollectionEquality().hash(_source));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SubstanceReferenceInformationTarget
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceReferenceInformationTargetImplCopyWith<
@@ -2367,12 +2441,10 @@ abstract class _SubstanceReferenceInformationTarget
           Map<String, dynamic> json) =
       _$SubstanceReferenceInformationTargetImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2380,9 +2452,9 @@ abstract class _SubstanceReferenceInformationTarget
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2396,54 +2468,58 @@ abstract class _SubstanceReferenceInformationTarget
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [target] FhirTodo.
-  Identifier? get target;
   @override
+  Identifier? get target;
 
   /// [type] FhirTodo.
-  CodeableConcept? get type;
   @override
+  CodeableConcept? get type;
 
   /// [interaction] FhirTodo.
-  CodeableConcept? get interaction;
   @override
+  CodeableConcept? get interaction;
 
   /// [organism] FhirTodo.
-  CodeableConcept? get organism;
   @override
+  CodeableConcept? get organism;
 
   /// [organismType] FhirTodo.
-  CodeableConcept? get organismType;
   @override
+  CodeableConcept? get organismType;
 
   /// [amountQuantity] FhirTodo.
-  Quantity? get amountQuantity;
   @override
+  Quantity? get amountQuantity;
 
   /// [amountRange] FhirTodo.
-  Range? get amountRange;
   @override
+  Range? get amountRange;
 
   /// [amountString] FhirTodo.
-  String? get amountString;
   @override
+  String? get amountString;
 
   /// [amountStringElement] ("_amountString") Extensions for amountString
+  @override
   @JsonKey(name: '_amountString')
   PrimitiveElement? get amountStringElement;
-  @override
 
   /// [amountType] FhirTodo.
-  CodeableConcept? get amountType;
   @override
+  CodeableConcept? get amountType;
 
   /// [source] FhirTodo.
-  List<Reference>? get source;
   @override
-  @JsonKey(ignore: true)
+  List<Reference>? get source;
+
+  /// Create a copy of SubstanceReferenceInformationTarget
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SubstanceReferenceInformationTargetImplCopyWith<
           _$SubstanceReferenceInformationTargetImpl>
       get copyWith => throw _privateConstructorUsedError;

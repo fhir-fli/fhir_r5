@@ -323,7 +323,7 @@ class AuditEvent with _$AuditEvent implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [AuditEventOutcome] A record of an event relevant for purposes such as

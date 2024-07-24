@@ -174,8 +174,12 @@ mixin _$CoverageEligibilityRequest {
   List<CoverageEligibilityRequestItem>? get item =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this CoverageEligibilityRequest to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CoverageEligibilityRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CoverageEligibilityRequestCopyWith<CoverageEligibilityRequest>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -243,6 +247,8 @@ class _$CoverageEligibilityRequestCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CoverageEligibilityRequest
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -406,6 +412,8 @@ class _$CoverageEligibilityRequestCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of CoverageEligibilityRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -418,6 +426,8 @@ class _$CoverageEligibilityRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CoverageEligibilityRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -430,6 +440,8 @@ class _$CoverageEligibilityRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CoverageEligibilityRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get priority {
@@ -442,6 +454,8 @@ class _$CoverageEligibilityRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CoverageEligibilityRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get patient {
@@ -450,6 +464,8 @@ class _$CoverageEligibilityRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CoverageEligibilityRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get servicedPeriod {
@@ -462,6 +478,8 @@ class _$CoverageEligibilityRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CoverageEligibilityRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get enterer {
@@ -474,6 +492,8 @@ class _$CoverageEligibilityRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CoverageEligibilityRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get provider {
@@ -486,6 +506,8 @@ class _$CoverageEligibilityRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CoverageEligibilityRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get insurer {
@@ -494,6 +516,8 @@ class _$CoverageEligibilityRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CoverageEligibilityRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get facility {
@@ -580,6 +604,8 @@ class __$$CoverageEligibilityRequestImplCopyWithImpl<$Res>
       $Res Function(_$CoverageEligibilityRequestImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CoverageEligibilityRequest
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1155,7 +1181,7 @@ class _$CoverageEligibilityRequestImpl extends _CoverageEligibilityRequest {
             const DeepCollectionEquality().equals(other._item, _item));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1192,7 +1218,9 @@ class _$CoverageEligibilityRequestImpl extends _CoverageEligibilityRequest {
         const DeepCollectionEquality().hash(_item)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CoverageEligibilityRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CoverageEligibilityRequestImplCopyWith<_$CoverageEligibilityRequestImpl>
@@ -1249,44 +1277,42 @@ abstract class _CoverageEligibilityRequest extends CoverageEligibilityRequest {
   factory _CoverageEligibilityRequest.fromJson(Map<String, dynamic> json) =
       _$CoverageEligibilityRequestImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a CoverageEligibilityRequest resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.CoverageEligibilityRequest)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1294,16 +1320,16 @@ abstract class _CoverageEligibilityRequest extends CoverageEligibilityRequest {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1311,9 +1337,9 @@ abstract class _CoverageEligibilityRequest extends CoverageEligibilityRequest {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1327,106 +1353,110 @@ abstract class _CoverageEligibilityRequest extends CoverageEligibilityRequest {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] A unique identifier assigned to this coverage eligiblity
   ///  request.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [status] The status of the resource instance.
-  FhirCode? get status;
   @override
+  FhirCode? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [priority] When the requestor expects the processor to complete processing.
-  CodeableConcept? get priority;
   @override
+  CodeableConcept? get priority;
 
   /// [purpose] Code to specify whether requesting: prior authorization
   ///  requirements for some service categories or billing codes; benefits for
   ///  coverages specified or discovered; discovery and return of coverages for
   ///  the patient; and/or validation that the specified coverage is in-force at
   ///  the date/period specified or 'now' if not specified.
-  List<FhirCode>? get purpose;
   @override
+  List<FhirCode>? get purpose;
 
   /// [purposeElement] ("_purpose") Extensions for purpose
+  @override
   @JsonKey(name: '_purpose')
   List<PrimitiveElement>? get purposeElement;
-  @override
 
   /// [patient] The party who is the beneficiary of the supplied coverage and for
   ///  whom eligibility is sought.
-  Reference get patient;
   @override
+  Reference get patient;
 
   /// [event] Information code for an event with a corresponding date or period.
-  List<CoverageEligibilityRequestEvent>? get event;
   @override
+  List<CoverageEligibilityRequestEvent>? get event;
 
   /// [servicedDate] The date or dates when the enclosed suite of services were
   ///  performed or completed.
-  FhirDate? get servicedDate;
   @override
+  FhirDate? get servicedDate;
 
   /// [servicedDateElement] ("_servicedDate") Extensions for servicedDate
+  @override
   @JsonKey(name: '_servicedDate')
   PrimitiveElement? get servicedDateElement;
-  @override
 
   /// [servicedPeriod] The date or dates when the enclosed suite of services were
   ///  performed or completed.
-  Period? get servicedPeriod;
   @override
+  Period? get servicedPeriod;
 
   /// [created] The date when this resource was created.
-  FhirDateTime? get created;
   @override
+  FhirDateTime? get created;
 
   /// [createdElement] ("_created") Extensions for created
+  @override
   @JsonKey(name: '_created')
   PrimitiveElement? get createdElement;
-  @override
 
   /// [enterer] Person who created the request.
-  Reference? get enterer;
   @override
+  Reference? get enterer;
 
   /// [provider] The provider which is responsible for the request.
-  Reference? get provider;
   @override
+  Reference? get provider;
 
   /// [insurer] The Insurer who issued the coverage in question and is the
   ///  recipient of the request.
-  Reference get insurer;
   @override
+  Reference get insurer;
 
   /// [facility] Facility where the services are intended to be provided.
-  Reference? get facility;
   @override
+  Reference? get facility;
 
   /// [supportingInfo] Additional information codes regarding exceptions, special
   ///  considerations, the condition, situation, prior or concurrent issues.
-  List<CoverageEligibilityRequestSupportingInfo>? get supportingInfo;
   @override
+  List<CoverageEligibilityRequestSupportingInfo>? get supportingInfo;
 
   /// [insurance] Financial instruments for reimbursement for the health care
   ///  products and services.
-  List<CoverageEligibilityRequestInsurance>? get insurance;
   @override
+  List<CoverageEligibilityRequestInsurance>? get insurance;
 
   /// [item] Service categories or billable services for which benefit details
   ///  and/or an authorization prior to service delivery may be required by the
   ///  payor.
-  List<CoverageEligibilityRequestItem>? get item;
   @override
-  @JsonKey(ignore: true)
+  List<CoverageEligibilityRequestItem>? get item;
+
+  /// Create a copy of CoverageEligibilityRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CoverageEligibilityRequestImplCopyWith<_$CoverageEligibilityRequestImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1482,8 +1512,12 @@ mixin _$CoverageEligibilityRequestEvent {
   ///  event occurred or is expectd to occur.
   Period? get whenPeriod => throw _privateConstructorUsedError;
 
+  /// Serializes this CoverageEligibilityRequestEvent to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CoverageEligibilityRequestEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CoverageEligibilityRequestEventCopyWith<CoverageEligibilityRequestEvent>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1520,6 +1554,8 @@ class _$CoverageEligibilityRequestEventCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CoverageEligibilityRequestEvent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1563,6 +1599,8 @@ class _$CoverageEligibilityRequestEventCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of CoverageEligibilityRequestEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get type {
@@ -1571,6 +1609,8 @@ class _$CoverageEligibilityRequestEventCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CoverageEligibilityRequestEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get whenPeriod {
@@ -1618,6 +1658,8 @@ class __$$CoverageEligibilityRequestEventImplCopyWithImpl<$Res>
       $Res Function(_$CoverageEligibilityRequestEventImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CoverageEligibilityRequestEvent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1790,7 +1832,7 @@ class _$CoverageEligibilityRequestEventImpl
                 other.whenPeriod == whenPeriod));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1802,7 +1844,9 @@ class _$CoverageEligibilityRequestEventImpl
       whenDateTimeElement,
       whenPeriod);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CoverageEligibilityRequestEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CoverageEligibilityRequestEventImplCopyWith<
@@ -1834,12 +1878,10 @@ abstract class _CoverageEligibilityRequestEvent
   factory _CoverageEligibilityRequestEvent.fromJson(Map<String, dynamic> json) =
       _$CoverageEligibilityRequestEventImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1847,9 +1889,9 @@ abstract class _CoverageEligibilityRequestEvent
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1863,28 +1905,32 @@ abstract class _CoverageEligibilityRequestEvent
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] A coded event such as when a service is expected or a card printed.
-  CodeableConcept get type;
   @override
+  CodeableConcept get type;
 
   /// [whenDateTime] A date or period in the past or future indicating when the
   ///  event occurred or is expectd to occur.
-  FhirDateTime? get whenDateTime;
   @override
+  FhirDateTime? get whenDateTime;
 
   /// [whenDateTimeElement] ("_whenDateTime") Extensions for whenDateTime
+  @override
   @JsonKey(name: '_whenDateTime')
   PrimitiveElement? get whenDateTimeElement;
-  @override
 
   /// [whenPeriod] A date or period in the past or future indicating when the
   ///  event occurred or is expectd to occur.
-  Period? get whenPeriod;
   @override
-  @JsonKey(ignore: true)
+  Period? get whenPeriod;
+
+  /// Create a copy of CoverageEligibilityRequestEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CoverageEligibilityRequestEventImplCopyWith<
           _$CoverageEligibilityRequestEventImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1947,8 +1993,12 @@ mixin _$CoverageEligibilityRequestSupportingInfo {
   PrimitiveElement? get appliesToAllElement =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this CoverageEligibilityRequestSupportingInfo to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CoverageEligibilityRequestSupportingInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CoverageEligibilityRequestSupportingInfoCopyWith<
           CoverageEligibilityRequestSupportingInfo>
       get copyWith => throw _privateConstructorUsedError;
@@ -1987,6 +2037,8 @@ class _$CoverageEligibilityRequestSupportingInfoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CoverageEligibilityRequestSupportingInfo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2035,6 +2087,8 @@ class _$CoverageEligibilityRequestSupportingInfoCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of CoverageEligibilityRequestSupportingInfo
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get information {
@@ -2077,6 +2131,8 @@ class __$$CoverageEligibilityRequestSupportingInfoImplCopyWithImpl<$Res>
       $Res Function(_$CoverageEligibilityRequestSupportingInfoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CoverageEligibilityRequestSupportingInfo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2264,7 +2320,7 @@ class _$CoverageEligibilityRequestSupportingInfoImpl
                 other.appliesToAllElement == appliesToAllElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2277,7 +2333,9 @@ class _$CoverageEligibilityRequestSupportingInfoImpl
       appliesToAll,
       appliesToAllElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CoverageEligibilityRequestSupportingInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CoverageEligibilityRequestSupportingInfoImplCopyWith<
@@ -2313,12 +2371,10 @@ abstract class _CoverageEligibilityRequestSupportingInfo
           Map<String, dynamic> json) =
       _$CoverageEligibilityRequestSupportingInfoImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2326,9 +2382,9 @@ abstract class _CoverageEligibilityRequestSupportingInfo
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2342,34 +2398,38 @@ abstract class _CoverageEligibilityRequestSupportingInfo
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [sequence] A number to uniquely identify supporting information entries.
-  FhirPositiveInt? get sequence;
   @override
+  FhirPositiveInt? get sequence;
 
   /// [sequenceElement] ("_sequence") Extensions for sequence
+  @override
   @JsonKey(name: '_sequence')
   PrimitiveElement? get sequenceElement;
-  @override
 
   /// [information] Additional data or information such as resources, documents,
   ///  images etc. including references to the data or the actual inclusion of
   ///  the data.
-  Reference get information;
   @override
+  Reference get information;
 
   /// [appliesToAll] The supporting materials are applicable for all detail
   ///  items, product/servce categories and specific billing codes.
-  FhirBoolean? get appliesToAll;
   @override
+  FhirBoolean? get appliesToAll;
 
   /// [appliesToAllElement] ("_appliesToAll") Extensions for appliesToAll
+  @override
   @JsonKey(name: '_appliesToAll')
   PrimitiveElement? get appliesToAllElement;
+
+  /// Create a copy of CoverageEligibilityRequestSupportingInfo
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CoverageEligibilityRequestSupportingInfoImplCopyWith<
           _$CoverageEligibilityRequestSupportingInfoImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2434,8 +2494,12 @@ mixin _$CoverageEligibilityRequestInsurance {
   PrimitiveElement? get businessArrangementElement =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this CoverageEligibilityRequestInsurance to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CoverageEligibilityRequestInsurance
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CoverageEligibilityRequestInsuranceCopyWith<
           CoverageEligibilityRequestInsurance>
       get copyWith => throw _privateConstructorUsedError;
@@ -2474,6 +2538,8 @@ class _$CoverageEligibilityRequestInsuranceCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CoverageEligibilityRequestInsurance
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2522,6 +2588,8 @@ class _$CoverageEligibilityRequestInsuranceCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of CoverageEligibilityRequestInsurance
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get coverage {
@@ -2565,6 +2633,8 @@ class __$$CoverageEligibilityRequestInsuranceImplCopyWithImpl<$Res>
       $Res Function(_$CoverageEligibilityRequestInsuranceImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CoverageEligibilityRequestInsurance
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2756,7 +2826,7 @@ class _$CoverageEligibilityRequestInsuranceImpl
                     businessArrangementElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2769,7 +2839,9 @@ class _$CoverageEligibilityRequestInsuranceImpl
       businessArrangement,
       businessArrangementElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CoverageEligibilityRequestInsurance
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CoverageEligibilityRequestInsuranceImplCopyWith<
@@ -2804,12 +2876,10 @@ abstract class _CoverageEligibilityRequestInsurance
           Map<String, dynamic> json) =
       _$CoverageEligibilityRequestInsuranceImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2817,9 +2887,9 @@ abstract class _CoverageEligibilityRequestInsurance
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2833,37 +2903,41 @@ abstract class _CoverageEligibilityRequestInsurance
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [focal] A flag to indicate that this Coverage is to be used for evaluation
   ///  of this request when set to true.
-  FhirBoolean? get focal;
   @override
+  FhirBoolean? get focal;
 
   /// [focalElement] ("_focal") Extensions for focal
+  @override
   @JsonKey(name: '_focal')
   PrimitiveElement? get focalElement;
-  @override
 
   /// [coverage] Reference to the insurance card level information contained in
   ///  the Coverage resource. The coverage issuing insurer will use these details
   ///  to locate the patient's actual coverage within the insurer's information
   ///  system.
-  Reference get coverage;
   @override
+  Reference get coverage;
 
   /// [businessArrangement] A business agreement number established between the
   ///  provider and the insurer for special business processing purposes.
-  String? get businessArrangement;
   @override
+  String? get businessArrangement;
 
   /// [businessArrangementElement] ("_businessArrangement") Extensions for
   ///  businessArrangement
+  @override
   @JsonKey(name: '_businessArrangement')
   PrimitiveElement? get businessArrangementElement;
+
+  /// Create a copy of CoverageEligibilityRequestInsurance
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CoverageEligibilityRequestInsuranceImplCopyWith<
           _$CoverageEligibilityRequestInsuranceImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2948,8 +3022,12 @@ mixin _$CoverageEligibilityRequestItem {
   /// [detail] The plan/proposal/order describing the proposed service in detail.
   List<Reference>? get detail => throw _privateConstructorUsedError;
 
+  /// Serializes this CoverageEligibilityRequestItem to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CoverageEligibilityRequestItem
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CoverageEligibilityRequestItemCopyWith<CoverageEligibilityRequestItem>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2998,6 +3076,8 @@ class _$CoverageEligibilityRequestItemCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CoverageEligibilityRequestItem
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3076,6 +3156,8 @@ class _$CoverageEligibilityRequestItemCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of CoverageEligibilityRequestItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get category {
@@ -3088,6 +3170,8 @@ class _$CoverageEligibilityRequestItemCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CoverageEligibilityRequestItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get productOrService {
@@ -3100,6 +3184,8 @@ class _$CoverageEligibilityRequestItemCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CoverageEligibilityRequestItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get provider {
@@ -3112,6 +3198,8 @@ class _$CoverageEligibilityRequestItemCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CoverageEligibilityRequestItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get quantity {
@@ -3124,6 +3212,8 @@ class _$CoverageEligibilityRequestItemCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CoverageEligibilityRequestItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MoneyCopyWith<$Res>? get unitPrice {
@@ -3136,6 +3226,8 @@ class _$CoverageEligibilityRequestItemCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CoverageEligibilityRequestItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get facility {
@@ -3199,6 +3291,8 @@ class __$$CoverageEligibilityRequestItemImplCopyWithImpl<$Res>
       $Res Function(_$CoverageEligibilityRequestItemImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CoverageEligibilityRequestItem
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3516,7 +3610,7 @@ class _$CoverageEligibilityRequestItemImpl
             const DeepCollectionEquality().equals(other._detail, _detail));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3535,7 +3629,9 @@ class _$CoverageEligibilityRequestItemImpl
       const DeepCollectionEquality().hash(_diagnosis),
       const DeepCollectionEquality().hash(_detail));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CoverageEligibilityRequestItem
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CoverageEligibilityRequestItemImplCopyWith<
@@ -3574,12 +3670,10 @@ abstract class _CoverageEligibilityRequestItem
   factory _CoverageEligibilityRequestItem.fromJson(Map<String, dynamic> json) =
       _$CoverageEligibilityRequestItemImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3587,9 +3681,9 @@ abstract class _CoverageEligibilityRequestItem
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3603,61 +3697,65 @@ abstract class _CoverageEligibilityRequestItem
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [supportingInfoSequence] Exceptions, special conditions and supporting
   ///  information applicable for this service or product line.
-  List<FhirPositiveInt>? get supportingInfoSequence;
   @override
+  List<FhirPositiveInt>? get supportingInfoSequence;
 
   /// [supportingInfoSequenceElement] ("_supportingInfoSequence") Extensions for
   ///  supportingInfoSequence
+  @override
   @JsonKey(name: '_supportingInfoSequence')
   List<PrimitiveElement>? get supportingInfoSequenceElement;
-  @override
 
   /// [category] Code to identify the general type of benefits under which
   ///  products and services are provided.
-  CodeableConcept? get category;
   @override
+  CodeableConcept? get category;
 
   /// [productOrService] This contains the product, service, drug or other
   ///  billing code for the item.
-  CodeableConcept? get productOrService;
   @override
+  CodeableConcept? get productOrService;
 
   /// [modifier] Item typification or modifiers codes to convey additional
   ///  context for the product or service.
-  List<CodeableConcept>? get modifier;
   @override
+  List<CodeableConcept>? get modifier;
 
   /// [provider] The practitioner who is responsible for the product or service
   ///  to be rendered to the patient.
-  Reference? get provider;
   @override
+  Reference? get provider;
 
   /// [quantity] The number of repetitions of a service or product.
-  Quantity? get quantity;
   @override
+  Quantity? get quantity;
 
   /// [unitPrice] The amount charged to the patient by the provider for a single
   ///  unit.
-  Money? get unitPrice;
   @override
+  Money? get unitPrice;
 
   /// [facility] Facility where the services will be provided.
-  Reference? get facility;
   @override
+  Reference? get facility;
 
   /// [diagnosis] Patient diagnosis for which care is sought.
-  List<CoverageEligibilityRequestDiagnosis>? get diagnosis;
   @override
+  List<CoverageEligibilityRequestDiagnosis>? get diagnosis;
 
   /// [detail] The plan/proposal/order describing the proposed service in detail.
-  List<Reference>? get detail;
   @override
-  @JsonKey(ignore: true)
+  List<Reference>? get detail;
+
+  /// Create a copy of CoverageEligibilityRequestItem
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CoverageEligibilityRequestItemImplCopyWith<
           _$CoverageEligibilityRequestItemImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3707,8 +3805,12 @@ mixin _$CoverageEligibilityRequestDiagnosis {
   ///  a reference to an external defined Condition.
   Reference? get diagnosisReference => throw _privateConstructorUsedError;
 
+  /// Serializes this CoverageEligibilityRequestDiagnosis to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CoverageEligibilityRequestDiagnosis
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CoverageEligibilityRequestDiagnosisCopyWith<
           CoverageEligibilityRequestDiagnosis>
       get copyWith => throw _privateConstructorUsedError;
@@ -3744,6 +3846,8 @@ class _$CoverageEligibilityRequestDiagnosisCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CoverageEligibilityRequestDiagnosis
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3777,6 +3881,8 @@ class _$CoverageEligibilityRequestDiagnosisCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of CoverageEligibilityRequestDiagnosis
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get diagnosisCodeableConcept {
@@ -3790,6 +3896,8 @@ class _$CoverageEligibilityRequestDiagnosisCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CoverageEligibilityRequestDiagnosis
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get diagnosisReference {
@@ -3835,6 +3943,8 @@ class __$$CoverageEligibilityRequestDiagnosisImplCopyWithImpl<$Res>
       $Res Function(_$CoverageEligibilityRequestDiagnosisImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CoverageEligibilityRequestDiagnosis
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3984,7 +4094,7 @@ class _$CoverageEligibilityRequestDiagnosisImpl
                 other.diagnosisReference == diagnosisReference));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3994,7 +4104,9 @@ class _$CoverageEligibilityRequestDiagnosisImpl
       diagnosisCodeableConcept,
       diagnosisReference);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CoverageEligibilityRequestDiagnosis
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CoverageEligibilityRequestDiagnosisImplCopyWith<
@@ -4025,12 +4137,10 @@ abstract class _CoverageEligibilityRequestDiagnosis
           Map<String, dynamic> json) =
       _$CoverageEligibilityRequestDiagnosisImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4038,9 +4148,9 @@ abstract class _CoverageEligibilityRequestDiagnosis
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4054,19 +4164,23 @@ abstract class _CoverageEligibilityRequestDiagnosis
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [diagnosisCodeableConcept] The nature of illness or problem in a coded form
   ///  or as a reference to an external defined Condition.
-  CodeableConcept? get diagnosisCodeableConcept;
   @override
+  CodeableConcept? get diagnosisCodeableConcept;
 
   /// [diagnosisReference] The nature of illness or problem in a coded form or as
   ///  a reference to an external defined Condition.
-  Reference? get diagnosisReference;
   @override
-  @JsonKey(ignore: true)
+  Reference? get diagnosisReference;
+
+  /// Create a copy of CoverageEligibilityRequestDiagnosis
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CoverageEligibilityRequestDiagnosisImplCopyWith<
           _$CoverageEligibilityRequestDiagnosisImpl>
       get copyWith => throw _privateConstructorUsedError;

@@ -483,7 +483,7 @@ class Device with _$Device implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [DeviceUdiCarrier] A type of a manufactured item that is used in the

@@ -365,7 +365,7 @@ class PackagedProductDefinition
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [PackagedProductDefinitionLegalStatusOfSupply] A medically related item or

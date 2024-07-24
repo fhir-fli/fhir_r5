@@ -179,8 +179,12 @@ mixin _$Account {
   PrimitiveElement? get calculatedAtElement =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this Account to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Account
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AccountCopyWith<Account> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -243,6 +247,8 @@ class _$AccountCopyWithImpl<$Res, $Val extends Account>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Account
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -411,6 +417,8 @@ class _$AccountCopyWithImpl<$Res, $Val extends Account>
     ) as $Val);
   }
 
+  /// Create a copy of Account
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -423,6 +431,8 @@ class _$AccountCopyWithImpl<$Res, $Val extends Account>
     });
   }
 
+  /// Create a copy of Account
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -435,6 +445,8 @@ class _$AccountCopyWithImpl<$Res, $Val extends Account>
     });
   }
 
+  /// Create a copy of Account
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get billingStatus {
@@ -447,6 +459,8 @@ class _$AccountCopyWithImpl<$Res, $Val extends Account>
     });
   }
 
+  /// Create a copy of Account
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -459,6 +473,8 @@ class _$AccountCopyWithImpl<$Res, $Val extends Account>
     });
   }
 
+  /// Create a copy of Account
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get servicePeriod {
@@ -471,6 +487,8 @@ class _$AccountCopyWithImpl<$Res, $Val extends Account>
     });
   }
 
+  /// Create a copy of Account
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get owner {
@@ -483,6 +501,8 @@ class _$AccountCopyWithImpl<$Res, $Val extends Account>
     });
   }
 
+  /// Create a copy of Account
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get currency {
@@ -562,6 +582,8 @@ class __$$AccountImplCopyWithImpl<$Res>
       _$AccountImpl _value, $Res Function(_$AccountImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Account
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1170,7 +1192,7 @@ class _$AccountImpl extends _Account {
                 other.calculatedAtElement == calculatedAtElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1208,7 +1230,9 @@ class _$AccountImpl extends _Account {
         calculatedAtElement
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Account
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AccountImplCopyWith<_$AccountImpl> get copyWith =>
@@ -1263,44 +1287,42 @@ abstract class _Account extends Account {
 
   factory _Account.fromJson(Map<String, dynamic> json) = _$AccountImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a Account resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.Account)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1308,16 +1330,16 @@ abstract class _Account extends Account {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1325,9 +1347,9 @@ abstract class _Account extends Account {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1341,116 +1363,120 @@ abstract class _Account extends Account {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] Unique identifier used to reference the account.  Might or
   ///  might not be intended for human use (e.g. credit card number).
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [status] Indicates whether the account is presently used/usable or not.
-  FhirCode? get status;
   @override
+  FhirCode? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [billingStatus] The BillingStatus tracks the lifecycle of the account
   ///  through the billing process. It indicates how transactions are treated
   ///  when they are allocated to the account.
-  CodeableConcept? get billingStatus;
   @override
+  CodeableConcept? get billingStatus;
 
   /// [type] Categorizes the account for reporting and searching purposes.
-  CodeableConcept? get type;
   @override
+  CodeableConcept? get type;
 
   /// [name] Name used for the account when displaying it to humans in reports,
   ///  etc.
-  String? get name;
   @override
+  String? get name;
 
   /// [nameElement] ("_name") Extensions for name
+  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
-  @override
 
   /// [subject] Identifies the entity which incurs the expenses. While the
   ///  immediate recipients of services or goods might be entities related to the
   ///  subject, the expenses were ultimately incurred by the subject of the
   ///  Account.
-  List<Reference>? get subject;
   @override
+  List<Reference>? get subject;
 
   /// [servicePeriod] The date range of services associated with this account.
-  Period? get servicePeriod;
   @override
+  Period? get servicePeriod;
 
   /// [coverage] The party(s) that are responsible for covering the payment of
   ///  this account, and what order should they be applied to the account.
-  List<AccountCoverage>? get coverage;
   @override
+  List<AccountCoverage>? get coverage;
 
   /// [owner] Indicates the service area, hospital, department, etc. with
   ///  responsibility for managing the Account.
-  Reference? get owner;
   @override
+  Reference? get owner;
 
   /// [description] Provides additional information about what the account tracks
   ///  and how it is used.
-  FhirMarkdown? get description;
   @override
+  FhirMarkdown? get description;
 
   /// [descriptionElement] ("_description") Extensions for description
+  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
-  @override
 
   /// [guarantor] The parties responsible for balancing the account if other
   ///  payment options fall short.
-  List<AccountGuarantor>? get guarantor;
   @override
+  List<AccountGuarantor>? get guarantor;
 
   /// [diagnosis] When using an account for billing a specific Encounter the set
   ///  of diagnoses that are relevant for billing are stored here on the account
   ///  where they are able to be sequenced appropriately prior to processing to
   ///  produce claim(s).
-  List<AccountDiagnosis>? get diagnosis;
   @override
+  List<AccountDiagnosis>? get diagnosis;
 
   /// [procedure] When using an account for billing a specific Encounter the set
   ///  of procedures that are relevant for billing are stored here on the account
   ///  where they are able to be sequenced appropriately prior to processing to
   ///  produce claim(s).
-  List<AccountProcedure>? get procedure;
   @override
+  List<AccountProcedure>? get procedure;
 
   /// [relatedAccount] Other associated accounts related to this account.
-  List<AccountRelatedAccount>? get relatedAccount;
   @override
+  List<AccountRelatedAccount>? get relatedAccount;
 
   /// [currency] The default currency for the account.
-  CodeableConcept? get currency;
   @override
+  CodeableConcept? get currency;
 
   /// [balance] The calculated account balances - these are calculated and
   ///  processed by the finance system. The balances with a `term` that is not
   ///  current are usually generated/updated by an invoicing or similar process.
-  List<AccountBalance>? get balance;
   @override
+  List<AccountBalance>? get balance;
 
   /// [calculatedAt] Time the balance amount was calculated.
-  FhirInstant? get calculatedAt;
   @override
+  FhirInstant? get calculatedAt;
 
   /// [calculatedAtElement] ("_calculatedAt") Extensions for calculatedAt
+  @override
   @JsonKey(name: '_calculatedAt')
   PrimitiveElement? get calculatedAtElement;
+
+  /// Create a copy of Account
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AccountImplCopyWith<_$AccountImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1502,8 +1528,12 @@ mixin _$AccountCoverage {
   @JsonKey(name: '_priority')
   PrimitiveElement? get priorityElement => throw _privateConstructorUsedError;
 
+  /// Serializes this AccountCoverage to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AccountCoverage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AccountCoverageCopyWith<AccountCoverage> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1535,6 +1565,8 @@ class _$AccountCoverageCopyWithImpl<$Res, $Val extends AccountCoverage>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AccountCoverage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1573,6 +1605,8 @@ class _$AccountCoverageCopyWithImpl<$Res, $Val extends AccountCoverage>
     ) as $Val);
   }
 
+  /// Create a copy of AccountCoverage
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get coverage {
@@ -1610,6 +1644,8 @@ class __$$AccountCoverageImplCopyWithImpl<$Res>
       _$AccountCoverageImpl _value, $Res Function(_$AccountCoverageImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AccountCoverage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1770,7 +1806,7 @@ class _$AccountCoverageImpl extends _AccountCoverage {
                 other.priorityElement == priorityElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1781,7 +1817,9 @@ class _$AccountCoverageImpl extends _AccountCoverage {
       priority,
       priorityElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AccountCoverage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AccountCoverageImplCopyWith<_$AccountCoverageImpl> get copyWith =>
@@ -1810,12 +1848,10 @@ abstract class _AccountCoverage extends AccountCoverage {
   factory _AccountCoverage.fromJson(Map<String, dynamic> json) =
       _$AccountCoverageImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1823,9 +1859,9 @@ abstract class _AccountCoverage extends AccountCoverage {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1839,25 +1875,29 @@ abstract class _AccountCoverage extends AccountCoverage {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [coverage] The party(s) that contribute to payment (or part of) of the
   ///  charges applied to this account (including self-pay).A coverage may only
   ///  be responsible for specific types of charges, and the sequence of the
   ///  coverages in the account could be important when processing billing.
-  Reference get coverage;
   @override
+  Reference get coverage;
 
   /// [priority] The priority of the coverage in the context of this account.
-  FhirPositiveInt? get priority;
   @override
+  FhirPositiveInt? get priority;
 
   /// [priorityElement] ("_priority") Extensions for priority
+  @override
   @JsonKey(name: '_priority')
   PrimitiveElement? get priorityElement;
+
+  /// Create a copy of AccountCoverage
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AccountCoverageImplCopyWith<_$AccountCoverageImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1911,8 +1951,12 @@ mixin _$AccountGuarantor {
   ///  for the account.
   Period? get period => throw _privateConstructorUsedError;
 
+  /// Serializes this AccountGuarantor to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AccountGuarantor
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AccountGuarantorCopyWith<AccountGuarantor> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1946,6 +1990,8 @@ class _$AccountGuarantorCopyWithImpl<$Res, $Val extends AccountGuarantor>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AccountGuarantor
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1989,6 +2035,8 @@ class _$AccountGuarantorCopyWithImpl<$Res, $Val extends AccountGuarantor>
     ) as $Val);
   }
 
+  /// Create a copy of AccountGuarantor
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get party {
@@ -1997,6 +2045,8 @@ class _$AccountGuarantorCopyWithImpl<$Res, $Val extends AccountGuarantor>
     });
   }
 
+  /// Create a copy of AccountGuarantor
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get period {
@@ -2041,6 +2091,8 @@ class __$$AccountGuarantorImplCopyWithImpl<$Res>
       $Res Function(_$AccountGuarantorImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AccountGuarantor
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2209,7 +2261,7 @@ class _$AccountGuarantorImpl extends _AccountGuarantor {
             (identical(other.period, period) || other.period == period));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2221,7 +2273,9 @@ class _$AccountGuarantorImpl extends _AccountGuarantor {
       onHoldElement,
       period);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AccountGuarantor
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AccountGuarantorImplCopyWith<_$AccountGuarantorImpl> get copyWith =>
@@ -2250,12 +2304,10 @@ abstract class _AccountGuarantor extends AccountGuarantor {
   factory _AccountGuarantor.fromJson(Map<String, dynamic> json) =
       _$AccountGuarantorImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2263,9 +2315,9 @@ abstract class _AccountGuarantor extends AccountGuarantor {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2279,28 +2331,32 @@ abstract class _AccountGuarantor extends AccountGuarantor {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [party] The entity who is responsible.
-  Reference get party;
   @override
+  Reference get party;
 
   /// [onHold] A guarantor may be placed on credit hold or otherwise have their
   ///  role temporarily suspended.
-  FhirBoolean? get onHold;
   @override
+  FhirBoolean? get onHold;
 
   /// [onHoldElement] ("_onHold") Extensions for onHold
+  @override
   @JsonKey(name: '_onHold')
   PrimitiveElement? get onHoldElement;
-  @override
 
   /// [period] The timeframe during which the guarantor accepts responsibility
   ///  for the account.
-  Period? get period;
   @override
-  @JsonKey(ignore: true)
+  Period? get period;
+
+  /// Create a copy of AccountGuarantor
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AccountGuarantorImplCopyWith<_$AccountGuarantorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2374,8 +2430,12 @@ mixin _$AccountDiagnosis {
   ///  priced or delivered as a single product. Such as DRGs.
   List<CodeableConcept>? get packageCode => throw _privateConstructorUsedError;
 
+  /// Serializes this AccountDiagnosis to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AccountDiagnosis
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AccountDiagnosisCopyWith<AccountDiagnosis> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2414,6 +2474,8 @@ class _$AccountDiagnosisCopyWithImpl<$Res, $Val extends AccountDiagnosis>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AccountDiagnosis
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2482,6 +2544,8 @@ class _$AccountDiagnosisCopyWithImpl<$Res, $Val extends AccountDiagnosis>
     ) as $Val);
   }
 
+  /// Create a copy of AccountDiagnosis
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res> get condition {
@@ -2526,6 +2590,8 @@ class __$$AccountDiagnosisImplCopyWithImpl<$Res>
       $Res Function(_$AccountDiagnosisImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AccountDiagnosis
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2781,7 +2847,7 @@ class _$AccountDiagnosisImpl extends _AccountDiagnosis {
                 .equals(other._packageCode, _packageCode));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2798,7 +2864,9 @@ class _$AccountDiagnosisImpl extends _AccountDiagnosis {
       onAdmissionElement,
       const DeepCollectionEquality().hash(_packageCode));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AccountDiagnosis
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AccountDiagnosisImplCopyWith<_$AccountDiagnosisImpl> get copyWith =>
@@ -2833,12 +2901,10 @@ abstract class _AccountDiagnosis extends AccountDiagnosis {
   factory _AccountDiagnosis.fromJson(Map<String, dynamic> json) =
       _$AccountDiagnosisImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2846,9 +2912,9 @@ abstract class _AccountDiagnosis extends AccountDiagnosis {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2862,51 +2928,55 @@ abstract class _AccountDiagnosis extends AccountDiagnosis {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [sequence] Ranking of the diagnosis (for each type).
-  FhirPositiveInt? get sequence;
   @override
+  FhirPositiveInt? get sequence;
 
   /// [sequenceElement] ("_sequence") Extensions for sequence
+  @override
   @JsonKey(name: '_sequence')
   PrimitiveElement? get sequenceElement;
-  @override
 
   /// [condition] The diagnosis relevant to the account.
-  CodeableReference get condition;
   @override
+  CodeableReference get condition;
 
   /// [dateOfDiagnosis] Ranking of the diagnosis (for each type).
-  FhirDateTime? get dateOfDiagnosis;
   @override
+  FhirDateTime? get dateOfDiagnosis;
 
   /// [dateOfDiagnosisElement] ("_dateOfDiagnosis") Extensions for dateOfDiagnosis
+  @override
   @JsonKey(name: '_dateOfDiagnosis')
   PrimitiveElement? get dateOfDiagnosisElement;
-  @override
 
   /// [type] Type that this diagnosis has relevant to the account (e.g.
   ///  admission, billing, discharge …).
-  List<CodeableConcept>? get type;
   @override
+  List<CodeableConcept>? get type;
 
   /// [onAdmission] Was the Diagnosis present on Admission in the related
   ///  Encounter.
-  FhirBoolean? get onAdmission;
   @override
+  FhirBoolean? get onAdmission;
 
   /// [onAdmissionElement] ("_onAdmission") Extensions for onAdmission
+  @override
   @JsonKey(name: '_onAdmission')
   PrimitiveElement? get onAdmissionElement;
-  @override
 
   /// [packageCode] The package code can be used to group diagnoses that may be
   ///  priced or delivered as a single product. Such as DRGs.
-  List<CodeableConcept>? get packageCode;
   @override
-  @JsonKey(ignore: true)
+  List<CodeableConcept>? get packageCode;
+
+  /// Create a copy of AccountDiagnosis
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AccountDiagnosisImplCopyWith<_$AccountDiagnosisImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2976,8 +3046,12 @@ mixin _$AccountProcedure {
   ///  the account.
   List<Reference>? get device => throw _privateConstructorUsedError;
 
+  /// Serializes this AccountProcedure to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AccountProcedure
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AccountProcedureCopyWith<AccountProcedure> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3014,6 +3088,8 @@ class _$AccountProcedureCopyWithImpl<$Res, $Val extends AccountProcedure>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AccountProcedure
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3077,6 +3153,8 @@ class _$AccountProcedureCopyWithImpl<$Res, $Val extends AccountProcedure>
     ) as $Val);
   }
 
+  /// Create a copy of AccountProcedure
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res> get code {
@@ -3119,6 +3197,8 @@ class __$$AccountProcedureImplCopyWithImpl<$Res>
       $Res Function(_$AccountProcedureImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AccountProcedure
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3370,7 +3450,7 @@ class _$AccountProcedureImpl extends _AccountProcedure {
             const DeepCollectionEquality().equals(other._device, _device));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3386,7 +3466,9 @@ class _$AccountProcedureImpl extends _AccountProcedure {
       const DeepCollectionEquality().hash(_packageCode),
       const DeepCollectionEquality().hash(_device));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AccountProcedure
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AccountProcedureImplCopyWith<_$AccountProcedureImpl> get copyWith =>
@@ -3420,12 +3502,10 @@ abstract class _AccountProcedure extends AccountProcedure {
   factory _AccountProcedure.fromJson(Map<String, dynamic> json) =
       _$AccountProcedureImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3433,9 +3513,9 @@ abstract class _AccountProcedure extends AccountProcedure {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3449,47 +3529,51 @@ abstract class _AccountProcedure extends AccountProcedure {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [sequence] Ranking of the procedure (for each type).
-  FhirPositiveInt? get sequence;
   @override
+  FhirPositiveInt? get sequence;
 
   /// [sequenceElement] ("_sequence") Extensions for sequence
+  @override
   @JsonKey(name: '_sequence')
   PrimitiveElement? get sequenceElement;
-  @override
 
   /// [code] The procedure relevant to the account.
-  CodeableReference get code;
   @override
+  CodeableReference get code;
 
   /// [dateOfService] Date of the procedure when using a coded procedure. If
   ///  using a reference to a procedure, then the date on the procedure should be
   ///  used.
-  FhirDateTime? get dateOfService;
   @override
+  FhirDateTime? get dateOfService;
 
   /// [dateOfServiceElement] ("_dateOfService") Extensions for dateOfService
+  @override
   @JsonKey(name: '_dateOfService')
   PrimitiveElement? get dateOfServiceElement;
-  @override
 
   /// [type] How this procedure value should be used in charging the account.
-  List<CodeableConcept>? get type;
   @override
+  List<CodeableConcept>? get type;
 
   /// [packageCode] The package code can be used to group procedures that may be
   ///  priced or delivered as a single product. Such as DRGs.
-  List<CodeableConcept>? get packageCode;
   @override
+  List<CodeableConcept>? get packageCode;
 
   /// [device] Any devices that were associated with the procedure relevant to
   ///  the account.
-  List<Reference>? get device;
   @override
-  @JsonKey(ignore: true)
+  List<Reference>? get device;
+
+  /// Create a copy of AccountProcedure
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AccountProcedureImplCopyWith<_$AccountProcedureImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3535,8 +3619,12 @@ mixin _$AccountRelatedAccount {
   /// [account] Reference to an associated Account.
   Reference get account => throw _privateConstructorUsedError;
 
+  /// Serializes this AccountRelatedAccount to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AccountRelatedAccount
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AccountRelatedAccountCopyWith<AccountRelatedAccount> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3569,6 +3657,8 @@ class _$AccountRelatedAccountCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AccountRelatedAccount
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3602,6 +3692,8 @@ class _$AccountRelatedAccountCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AccountRelatedAccount
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get relationship {
@@ -3614,6 +3706,8 @@ class _$AccountRelatedAccountCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AccountRelatedAccount
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get account {
@@ -3654,6 +3748,8 @@ class __$$AccountRelatedAccountImplCopyWithImpl<$Res>
       $Res Function(_$AccountRelatedAccountImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AccountRelatedAccount
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3797,7 +3893,7 @@ class _$AccountRelatedAccountImpl extends _AccountRelatedAccount {
             (identical(other.account, account) || other.account == account));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3807,7 +3903,9 @@ class _$AccountRelatedAccountImpl extends _AccountRelatedAccount {
       relationship,
       account);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AccountRelatedAccount
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AccountRelatedAccountImplCopyWith<_$AccountRelatedAccountImpl>
@@ -3834,12 +3932,10 @@ abstract class _AccountRelatedAccount extends AccountRelatedAccount {
   factory _AccountRelatedAccount.fromJson(Map<String, dynamic> json) =
       _$AccountRelatedAccountImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3847,9 +3943,9 @@ abstract class _AccountRelatedAccount extends AccountRelatedAccount {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3863,17 +3959,21 @@ abstract class _AccountRelatedAccount extends AccountRelatedAccount {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [relationship] Relationship of the associated Account.
-  CodeableConcept? get relationship;
   @override
+  CodeableConcept? get relationship;
 
   /// [account] Reference to an associated Account.
-  Reference get account;
   @override
-  @JsonKey(ignore: true)
+  Reference get account;
+
+  /// Create a copy of AccountRelatedAccount
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AccountRelatedAccountImplCopyWith<_$AccountRelatedAccountImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3932,8 +4032,12 @@ mixin _$AccountBalance {
   ///  term property.
   Money get amount => throw _privateConstructorUsedError;
 
+  /// Serializes this AccountBalance to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AccountBalance
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AccountBalanceCopyWith<AccountBalance> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3969,6 +4073,8 @@ class _$AccountBalanceCopyWithImpl<$Res, $Val extends AccountBalance>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AccountBalance
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4017,6 +4123,8 @@ class _$AccountBalanceCopyWithImpl<$Res, $Val extends AccountBalance>
     ) as $Val);
   }
 
+  /// Create a copy of AccountBalance
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get aggregate {
@@ -4029,6 +4137,8 @@ class _$AccountBalanceCopyWithImpl<$Res, $Val extends AccountBalance>
     });
   }
 
+  /// Create a copy of AccountBalance
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get term {
@@ -4041,6 +4151,8 @@ class _$AccountBalanceCopyWithImpl<$Res, $Val extends AccountBalance>
     });
   }
 
+  /// Create a copy of AccountBalance
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MoneyCopyWith<$Res> get amount {
@@ -4084,6 +4196,8 @@ class __$$AccountBalanceImplCopyWithImpl<$Res>
       _$AccountBalanceImpl _value, $Res Function(_$AccountBalanceImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AccountBalance
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4267,7 +4381,7 @@ class _$AccountBalanceImpl extends _AccountBalance {
             (identical(other.amount, amount) || other.amount == amount));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4280,7 +4394,9 @@ class _$AccountBalanceImpl extends _AccountBalance {
       estimateElement,
       amount);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AccountBalance
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AccountBalanceImplCopyWith<_$AccountBalanceImpl> get copyWith =>
@@ -4310,12 +4426,10 @@ abstract class _AccountBalance extends AccountBalance {
   factory _AccountBalance.fromJson(Map<String, dynamic> json) =
       _$AccountBalanceImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4323,9 +4437,9 @@ abstract class _AccountBalance extends AccountBalance {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4339,34 +4453,38 @@ abstract class _AccountBalance extends AccountBalance {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [aggregate] Who is expected to pay this part of the balance.
-  CodeableConcept? get aggregate;
   @override
+  CodeableConcept? get aggregate;
 
   /// [term] The term of the account balances - The balance value is the amount
   ///  that was outstanding for this age.
-  CodeableConcept? get term;
   @override
+  CodeableConcept? get term;
 
   /// [estimate] The amount is only an estimated value - this is likely common
   ///  for `current` term balances, but not with known terms (that were generated
   ///  by a backend process).
-  FhirBoolean? get estimate;
   @override
+  FhirBoolean? get estimate;
 
   /// [estimateElement] ("_estimate") Extensions for estimate
+  @override
   @JsonKey(name: '_estimate')
   PrimitiveElement? get estimateElement;
-  @override
 
   /// [amount] The actual balance value calculated for the age defined in the
   ///  term property.
-  Money get amount;
   @override
-  @JsonKey(ignore: true)
+  Money get amount;
+
+  /// Create a copy of AccountBalance
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AccountBalanceImplCopyWith<_$AccountBalanceImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

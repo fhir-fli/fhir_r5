@@ -433,7 +433,7 @@ class Condition with _$Condition implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [ConditionParticipant] A clinical condition, problem, diagnosis, or other

@@ -278,7 +278,7 @@ class InventoryReport with _$InventoryReport implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [InventoryReportInventoryListing] A report of inventory or stock items.

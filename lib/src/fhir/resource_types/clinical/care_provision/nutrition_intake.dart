@@ -414,7 +414,7 @@ class NutritionIntake with _$NutritionIntake implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [NutritionIntakeConsumedItem] A record of food or fluid that is being

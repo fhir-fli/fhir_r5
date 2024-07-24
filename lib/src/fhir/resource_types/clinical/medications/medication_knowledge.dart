@@ -644,7 +644,7 @@ class MedicationKnowledge with _$MedicationKnowledge implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [MedicationKnowledgeRelatedMedicationKnowledge] Information about a

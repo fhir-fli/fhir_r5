@@ -350,7 +350,7 @@ class Consent with _$Consent implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [ConsentPolicyBasis] A record of a healthcare consumer’s  choices  or

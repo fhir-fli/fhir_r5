@@ -432,7 +432,6 @@ class Immunization with _$Immunization implements DomainResource {
     }
   }
 
-
   /// Another convenience method because more and more I'm transmitting FHIR
   /// data as a String and not a Map
   @override
@@ -456,7 +455,8 @@ class Immunization with _$Immunization implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));}
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
+}
 
 /// [ImmunizationPerformer] Describes the event of a patient being administered
 ///  a vaccine or a record of an immunization as reported by a patient, a

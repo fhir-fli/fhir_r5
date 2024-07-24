@@ -174,8 +174,12 @@ mixin _$AdministrableProductDefinition {
   List<AdministrableProductDefinitionRouteOfAdministration>
       get routeOfAdministration => throw _privateConstructorUsedError;
 
+  /// Serializes this AdministrableProductDefinition to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AdministrableProductDefinition
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AdministrableProductDefinitionCopyWith<AdministrableProductDefinition>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -234,6 +238,8 @@ class _$AdministrableProductDefinitionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AdministrableProductDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -362,6 +368,8 @@ class _$AdministrableProductDefinitionCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AdministrableProductDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -374,6 +382,8 @@ class _$AdministrableProductDefinitionCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdministrableProductDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -386,6 +396,8 @@ class _$AdministrableProductDefinitionCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdministrableProductDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get administrableDoseForm {
@@ -399,6 +411,8 @@ class _$AdministrableProductDefinitionCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdministrableProductDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get unitOfPresentation {
@@ -411,6 +425,8 @@ class _$AdministrableProductDefinitionCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdministrableProductDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get device {
@@ -483,6 +499,8 @@ class __$$AdministrableProductDefinitionImplCopyWithImpl<$Res>
       $Res Function(_$AdministrableProductDefinitionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AdministrableProductDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1009,7 +1027,7 @@ class _$AdministrableProductDefinitionImpl
                 .equals(other._routeOfAdministration, _routeOfAdministration));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1039,7 +1057,9 @@ class _$AdministrableProductDefinitionImpl
         const DeepCollectionEquality().hash(_routeOfAdministration)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AdministrableProductDefinition
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AdministrableProductDefinitionImplCopyWith<
@@ -1090,44 +1110,42 @@ abstract class _AdministrableProductDefinition
   factory _AdministrableProductDefinition.fromJson(Map<String, dynamic> json) =
       _$AdministrableProductDefinitionImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a AdministrableProductDefinition resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.AdministrableProductDefinition)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1135,16 +1153,16 @@ abstract class _AdministrableProductDefinition
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1152,9 +1170,9 @@ abstract class _AdministrableProductDefinition
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1168,22 +1186,22 @@ abstract class _AdministrableProductDefinition
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] An identifier for the administrable product.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [status] The status of this administrable product. Enables tracking the
   ///  life-cycle of the content.
-  PublicationStatus? get status;
   @override
+  PublicationStatus? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [formOf] References a product from which one or more of the constituent
   ///  parts of that product can be prepared and used as described by this
@@ -1193,8 +1211,8 @@ abstract class _AdministrableProductDefinition
   ///  This is distinct from the 'producedFrom' which refers to the specific
   ///  components of the product that are used in this preparation, rather than
   ///  the product as a whole.
-  List<Reference>? get formOf;
   @override
+  List<Reference>? get formOf;
 
   /// [administrableDoseForm] The dose form of the final product after necessary
   ///  reconstitution or processing. Contrasts to the manufactured dose form (see
@@ -1202,14 +1220,14 @@ abstract class _AdministrableProductDefinition
   ///  solution for injection', the administrable dose form could be 'solution
   ///  for injection' (once mixed with another item having manufactured form
   ///  'solvent for solution for injection').
-  CodeableConcept? get administrableDoseForm;
   @override
+  CodeableConcept? get administrableDoseForm;
 
   /// [unitOfPresentation] The presentation type in which this item is given to a
   ///  patient. e.g. for a spray - 'puff' (as in 'contains 100 mcg per puff'), or
   ///  for a liquid - 'vial' (as in 'contains 5 ml per vial').
-  CodeableConcept? get unitOfPresentation;
   @override
+  CodeableConcept? get unitOfPresentation;
 
   /// [producedFrom] Indicates the specific manufactured items that are part of
   ///  the 'formOf' product that are used in the preparation of this specific
@@ -1219,8 +1237,8 @@ abstract class _AdministrableProductDefinition
   ///  items available in the overall product.  For example, an administrable
   ///  form might involve combining a liquid and a powder available as part of an
   ///  overall product, but not involve applying the also supplied cream.
-  List<Reference>? get producedFrom;
   @override
+  List<Reference>? get producedFrom;
 
   /// [ingredient] The ingredients of this administrable medicinal product. This
   ///  is only needed if the ingredients are not specified either using
@@ -1229,41 +1247,45 @@ abstract class _AdministrableProductDefinition
   ///  items are used to make this, or using by incoming references from the
   ///  Ingredient resource, to state in detail which substances exist within
   ///  this. This element allows a basic coded ingredient to be used.
-  List<CodeableConcept>? get ingredient;
   @override
+  List<CodeableConcept>? get ingredient;
 
   /// [device] A device that is integral to the medicinal product, in effect
   ///  being considered as an "ingredient" of the medicinal product. This is not
   ///  intended for devices that are just co-packaged.
-  Reference? get device;
   @override
+  Reference? get device;
 
   /// [description] A general description of the product, when in its final form,
   ///  suitable for administration e.g. effervescent blue liquid, to be
   ///  swallowed. Intended to be used when the other structured properties of
   ///  this resource are insufficient or cannot be supported. It is not intended
   ///  to duplicate information already carried elswehere.
-  FhirMarkdown? get description;
   @override
+  FhirMarkdown? get description;
 
   /// [descriptionElement] ("_description") Extensions for description
+  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
-  @override
 
   /// [property] Characteristics e.g. a product's onset of action.
-  List<AdministrableProductDefinitionProperty>? get property;
   @override
+  List<AdministrableProductDefinitionProperty>? get property;
 
   /// [routeOfAdministration] The path by which the product is taken into or
   ///  makes contact with the body. In some regions this is referred to as the
   ///  licenced or approved route. RouteOfAdministration cannot be used when the
   ///  'formOf' product already uses MedicinalProductDefinition.route (and vice
   ///  versa).
+  @override
   List<AdministrableProductDefinitionRouteOfAdministration>
       get routeOfAdministration;
+
+  /// Create a copy of AdministrableProductDefinition
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AdministrableProductDefinitionImplCopyWith<
           _$AdministrableProductDefinitionImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1347,8 +1369,12 @@ mixin _$AdministrableProductDefinitionProperty {
   /// [status] The status of characteristic e.g. assigned or pending.
   CodeableConcept? get status => throw _privateConstructorUsedError;
 
+  /// Serializes this AdministrableProductDefinitionProperty to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AdministrableProductDefinitionProperty
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AdministrableProductDefinitionPropertyCopyWith<
           AdministrableProductDefinitionProperty>
       get copyWith => throw _privateConstructorUsedError;
@@ -1398,6 +1424,8 @@ class _$AdministrableProductDefinitionPropertyCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AdministrableProductDefinitionProperty
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1481,6 +1509,8 @@ class _$AdministrableProductDefinitionPropertyCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AdministrableProductDefinitionProperty
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get type {
@@ -1489,6 +1519,8 @@ class _$AdministrableProductDefinitionPropertyCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdministrableProductDefinitionProperty
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get valueCodeableConcept {
@@ -1502,6 +1534,8 @@ class _$AdministrableProductDefinitionPropertyCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdministrableProductDefinitionProperty
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get valueQuantity {
@@ -1514,6 +1548,8 @@ class _$AdministrableProductDefinitionPropertyCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdministrableProductDefinitionProperty
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get valueAttachment {
@@ -1526,6 +1562,8 @@ class _$AdministrableProductDefinitionPropertyCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdministrableProductDefinitionProperty
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get valueReference {
@@ -1538,6 +1576,8 @@ class _$AdministrableProductDefinitionPropertyCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdministrableProductDefinitionProperty
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get status {
@@ -1601,6 +1641,8 @@ class __$$AdministrableProductDefinitionPropertyImplCopyWithImpl<$Res>
       $Res Function(_$AdministrableProductDefinitionPropertyImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AdministrableProductDefinitionProperty
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1868,7 +1910,7 @@ class _$AdministrableProductDefinitionPropertyImpl
             (identical(other.status, status) || other.status == status));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1888,7 +1930,9 @@ class _$AdministrableProductDefinitionPropertyImpl
       valueReference,
       status);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AdministrableProductDefinitionProperty
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AdministrableProductDefinitionPropertyImplCopyWith<
@@ -1932,12 +1976,10 @@ abstract class _AdministrableProductDefinitionProperty
           Map<String, dynamic> json) =
       _$AdministrableProductDefinitionPropertyImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1945,9 +1987,9 @@ abstract class _AdministrableProductDefinitionProperty
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1961,60 +2003,64 @@ abstract class _AdministrableProductDefinitionProperty
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] A code expressing the type of characteristic.
-  CodeableConcept get type;
   @override
+  CodeableConcept get type;
 
   /// [valueCodeableConcept] A value for the characteristic.
-  CodeableConcept? get valueCodeableConcept;
   @override
+  CodeableConcept? get valueCodeableConcept;
 
   /// [valueQuantity] A value for the characteristic.
-  Quantity? get valueQuantity;
   @override
+  Quantity? get valueQuantity;
 
   /// [valueDate] A value for the characteristic.
-  FhirDate? get valueDate;
   @override
+  FhirDate? get valueDate;
 
   /// [valueDateElement] ("_valueDate") Extensions for valueDate
+  @override
   @JsonKey(name: '_valueDate')
   PrimitiveElement? get valueDateElement;
-  @override
 
   /// [valueBoolean] A value for the characteristic.
-  FhirBoolean? get valueBoolean;
   @override
+  FhirBoolean? get valueBoolean;
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
+  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
-  @override
 
   /// [valueMarkdown] A value for the characteristic.
-  FhirMarkdown? get valueMarkdown;
   @override
+  FhirMarkdown? get valueMarkdown;
 
   /// [valueMarkdownElement] ("_valueMarkdown") Extensions for valueMarkdown
+  @override
   @JsonKey(name: '_valueMarkdown')
   PrimitiveElement? get valueMarkdownElement;
-  @override
 
   /// [valueAttachment] A value for the characteristic.
-  Attachment? get valueAttachment;
   @override
+  Attachment? get valueAttachment;
 
   /// [valueReference] A value for the characteristic.
-  Reference? get valueReference;
   @override
+  Reference? get valueReference;
 
   /// [status] The status of characteristic e.g. assigned or pending.
-  CodeableConcept? get status;
   @override
-  @JsonKey(ignore: true)
+  CodeableConcept? get status;
+
+  /// Create a copy of AdministrableProductDefinitionProperty
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AdministrableProductDefinitionPropertyImplCopyWith<
           _$AdministrableProductDefinitionPropertyImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2083,8 +2129,12 @@ mixin _$AdministrableProductDefinitionRouteOfAdministration {
   List<AdministrableProductDefinitionTargetSpecies>? get targetSpecies =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this AdministrableProductDefinitionRouteOfAdministration to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AdministrableProductDefinitionRouteOfAdministration
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AdministrableProductDefinitionRouteOfAdministrationCopyWith<
           AdministrableProductDefinitionRouteOfAdministration>
       get copyWith => throw _privateConstructorUsedError;
@@ -2133,6 +2183,8 @@ class _$AdministrableProductDefinitionRouteOfAdministrationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AdministrableProductDefinitionRouteOfAdministration
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2191,6 +2243,8 @@ class _$AdministrableProductDefinitionRouteOfAdministrationCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AdministrableProductDefinitionRouteOfAdministration
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get code {
@@ -2199,6 +2253,8 @@ class _$AdministrableProductDefinitionRouteOfAdministrationCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdministrableProductDefinitionRouteOfAdministration
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get firstDose {
@@ -2211,6 +2267,8 @@ class _$AdministrableProductDefinitionRouteOfAdministrationCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdministrableProductDefinitionRouteOfAdministration
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get maxSingleDose {
@@ -2223,6 +2281,8 @@ class _$AdministrableProductDefinitionRouteOfAdministrationCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdministrableProductDefinitionRouteOfAdministration
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get maxDosePerDay {
@@ -2235,6 +2295,8 @@ class _$AdministrableProductDefinitionRouteOfAdministrationCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdministrableProductDefinitionRouteOfAdministration
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RatioCopyWith<$Res>? get maxDosePerTreatmentPeriod {
@@ -2247,6 +2309,8 @@ class _$AdministrableProductDefinitionRouteOfAdministrationCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdministrableProductDefinitionRouteOfAdministration
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get maxTreatmentPeriod {
@@ -2314,6 +2378,8 @@ class __$$AdministrableProductDefinitionRouteOfAdministrationImplCopyWithImpl<
           _then)
       : super(_value, _then);
 
+  /// Create a copy of AdministrableProductDefinitionRouteOfAdministration
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2536,7 +2602,7 @@ class _$AdministrableProductDefinitionRouteOfAdministrationImpl
                 .equals(other._targetSpecies, _targetSpecies));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2551,7 +2617,9 @@ class _$AdministrableProductDefinitionRouteOfAdministrationImpl
       maxTreatmentPeriod,
       const DeepCollectionEquality().hash(_targetSpecies));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AdministrableProductDefinitionRouteOfAdministration
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AdministrableProductDefinitionRouteOfAdministrationImplCopyWith<
@@ -2590,12 +2658,10 @@ abstract class _AdministrableProductDefinitionRouteOfAdministration
           Map<String, dynamic> json) =
       _$AdministrableProductDefinitionRouteOfAdministrationImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2603,9 +2669,9 @@ abstract class _AdministrableProductDefinitionRouteOfAdministration
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2619,42 +2685,46 @@ abstract class _AdministrableProductDefinitionRouteOfAdministration
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [code] Coded expression for the route.
-  CodeableConcept get code;
   @override
+  CodeableConcept get code;
 
   /// [firstDose] The first dose (dose quantity) administered can be specified
   ///  for the product, using a numerical value and its unit of measurement.
-  Quantity? get firstDose;
   @override
+  Quantity? get firstDose;
 
   /// [maxSingleDose] The maximum single dose that can be administered, specified
   ///  using a numerical value and its unit of measurement.
-  Quantity? get maxSingleDose;
   @override
+  Quantity? get maxSingleDose;
 
   /// [maxDosePerDay] The maximum dose per day (maximum dose quantity to be
   ///  administered in any one 24-h period) that can be administered.
-  Quantity? get maxDosePerDay;
   @override
+  Quantity? get maxDosePerDay;
 
   /// [maxDosePerTreatmentPeriod] The maximum dose per treatment period that can
   ///  be administered.
-  Ratio? get maxDosePerTreatmentPeriod;
   @override
+  Ratio? get maxDosePerTreatmentPeriod;
 
   /// [maxTreatmentPeriod] The maximum treatment period during which the product
   ///  can be administered.
-  FhirDuration? get maxTreatmentPeriod;
   @override
+  FhirDuration? get maxTreatmentPeriod;
 
   /// [targetSpecies] A species for which this route applies.
-  List<AdministrableProductDefinitionTargetSpecies>? get targetSpecies;
   @override
-  @JsonKey(ignore: true)
+  List<AdministrableProductDefinitionTargetSpecies>? get targetSpecies;
+
+  /// Create a copy of AdministrableProductDefinitionRouteOfAdministration
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AdministrableProductDefinitionRouteOfAdministrationImplCopyWith<
           _$AdministrableProductDefinitionRouteOfAdministrationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2704,8 +2774,12 @@ mixin _$AdministrableProductDefinitionTargetSpecies {
   List<AdministrableProductDefinitionWithdrawalPeriod>? get withdrawalPeriod =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this AdministrableProductDefinitionTargetSpecies to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AdministrableProductDefinitionTargetSpecies
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AdministrableProductDefinitionTargetSpeciesCopyWith<
           AdministrableProductDefinitionTargetSpecies>
       get copyWith => throw _privateConstructorUsedError;
@@ -2741,6 +2815,8 @@ class _$AdministrableProductDefinitionTargetSpeciesCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AdministrableProductDefinitionTargetSpecies
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2774,6 +2850,8 @@ class _$AdministrableProductDefinitionTargetSpeciesCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AdministrableProductDefinitionTargetSpecies
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get code {
@@ -2815,6 +2893,8 @@ class __$$AdministrableProductDefinitionTargetSpeciesImplCopyWithImpl<$Res>
       $Res Function(_$AdministrableProductDefinitionTargetSpeciesImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AdministrableProductDefinitionTargetSpecies
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2974,7 +3054,7 @@ class _$AdministrableProductDefinitionTargetSpeciesImpl
                 .equals(other._withdrawalPeriod, _withdrawalPeriod));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2984,7 +3064,9 @@ class _$AdministrableProductDefinitionTargetSpeciesImpl
       code,
       const DeepCollectionEquality().hash(_withdrawalPeriod));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AdministrableProductDefinitionTargetSpecies
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AdministrableProductDefinitionTargetSpeciesImplCopyWith<
@@ -3018,12 +3100,10 @@ abstract class _AdministrableProductDefinitionTargetSpecies
           Map<String, dynamic> json) =
       _$AdministrableProductDefinitionTargetSpeciesImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3031,9 +3111,9 @@ abstract class _AdministrableProductDefinitionTargetSpecies
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3047,18 +3127,22 @@ abstract class _AdministrableProductDefinitionTargetSpecies
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [code] Coded expression for the species.
-  CodeableConcept get code;
   @override
+  CodeableConcept get code;
 
   /// [withdrawalPeriod] A species specific time during which consumption of
   ///  animal product is not appropriate.
-  List<AdministrableProductDefinitionWithdrawalPeriod>? get withdrawalPeriod;
   @override
-  @JsonKey(ignore: true)
+  List<AdministrableProductDefinitionWithdrawalPeriod>? get withdrawalPeriod;
+
+  /// Create a copy of AdministrableProductDefinitionTargetSpecies
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AdministrableProductDefinitionTargetSpeciesImplCopyWith<
           _$AdministrableProductDefinitionTargetSpeciesImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3116,8 +3200,12 @@ mixin _$AdministrableProductDefinitionWithdrawalPeriod {
   PrimitiveElement? get supportingInformationElement =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this AdministrableProductDefinitionWithdrawalPeriod to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AdministrableProductDefinitionWithdrawalPeriod
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AdministrableProductDefinitionWithdrawalPeriodCopyWith<
           AdministrableProductDefinitionWithdrawalPeriod>
       get copyWith => throw _privateConstructorUsedError;
@@ -3157,6 +3245,8 @@ class _$AdministrableProductDefinitionWithdrawalPeriodCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AdministrableProductDefinitionWithdrawalPeriod
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3200,6 +3290,8 @@ class _$AdministrableProductDefinitionWithdrawalPeriodCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AdministrableProductDefinitionWithdrawalPeriod
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get tissue {
@@ -3208,6 +3300,8 @@ class _$AdministrableProductDefinitionWithdrawalPeriodCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AdministrableProductDefinitionWithdrawalPeriod
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res> get value {
@@ -3255,6 +3349,8 @@ class __$$AdministrableProductDefinitionWithdrawalPeriodImplCopyWithImpl<$Res>
       $Res Function(_$AdministrableProductDefinitionWithdrawalPeriodImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AdministrableProductDefinitionWithdrawalPeriod
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3429,7 +3525,7 @@ class _$AdministrableProductDefinitionWithdrawalPeriodImpl
                     supportingInformationElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3441,7 +3537,9 @@ class _$AdministrableProductDefinitionWithdrawalPeriodImpl
       supportingInformation,
       supportingInformationElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AdministrableProductDefinitionWithdrawalPeriod
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AdministrableProductDefinitionWithdrawalPeriodImplCopyWith<
@@ -3477,12 +3575,10 @@ abstract class _AdministrableProductDefinitionWithdrawalPeriod
           Map<String, dynamic> json) =
       _$AdministrableProductDefinitionWithdrawalPeriodImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3490,9 +3586,9 @@ abstract class _AdministrableProductDefinitionWithdrawalPeriod
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3506,28 +3602,32 @@ abstract class _AdministrableProductDefinitionWithdrawalPeriod
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [tissue] Coded expression for the type of tissue for which the withdrawal
   ///  period applies, e.g. meat, milk.
-  CodeableConcept get tissue;
   @override
+  CodeableConcept get tissue;
 
   /// [value] A value for the time.
-  Quantity get value;
   @override
+  Quantity get value;
 
   /// [supportingInformation] Extra information about the withdrawal period.
-  String? get supportingInformation;
   @override
+  String? get supportingInformation;
 
   /// [supportingInformationElement] ("_supportingInformation") Extensions for
   ///  supportingInformation
+  @override
   @JsonKey(name: '_supportingInformation')
   PrimitiveElement? get supportingInformationElement;
+
+  /// Create a copy of AdministrableProductDefinitionWithdrawalPeriod
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AdministrableProductDefinitionWithdrawalPeriodImplCopyWith<
           _$AdministrableProductDefinitionWithdrawalPeriodImpl>
       get copyWith => throw _privateConstructorUsedError;

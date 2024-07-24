@@ -216,7 +216,6 @@ class ImmunizationRecommendation
     }
   }
 
-
   /// Another convenience method because more and more I'm transmitting FHIR
   /// data as a String and not a Map
   @override
@@ -240,7 +239,8 @@ class ImmunizationRecommendation
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));}
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
+}
 
 /// [ImmunizationRecommendationRecommendation] A patient's point-in-time set of
 ///  recommendations (i.e. forecasting) according to a published schedule with

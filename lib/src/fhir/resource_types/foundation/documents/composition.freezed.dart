@@ -200,8 +200,12 @@ mixin _$Composition {
   /// [section] The root of the sections that make up the composition.
   List<CompositionSection>? get section => throw _privateConstructorUsedError;
 
+  /// Serializes this Composition to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Composition
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CompositionCopyWith<Composition> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -268,6 +272,8 @@ class _$CompositionCopyWithImpl<$Res, $Val extends Composition>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Composition
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -456,6 +462,8 @@ class _$CompositionCopyWithImpl<$Res, $Val extends Composition>
     ) as $Val);
   }
 
+  /// Create a copy of Composition
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -468,6 +476,8 @@ class _$CompositionCopyWithImpl<$Res, $Val extends Composition>
     });
   }
 
+  /// Create a copy of Composition
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -480,6 +490,8 @@ class _$CompositionCopyWithImpl<$Res, $Val extends Composition>
     });
   }
 
+  /// Create a copy of Composition
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get type {
@@ -488,6 +500,8 @@ class _$CompositionCopyWithImpl<$Res, $Val extends Composition>
     });
   }
 
+  /// Create a copy of Composition
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get encounter {
@@ -500,6 +514,8 @@ class _$CompositionCopyWithImpl<$Res, $Val extends Composition>
     });
   }
 
+  /// Create a copy of Composition
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get custodian {
@@ -580,6 +596,8 @@ class __$$CompositionImplCopyWithImpl<$Res>
       _$CompositionImpl _value, $Res Function(_$CompositionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Composition
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1259,7 +1277,7 @@ class _$CompositionImpl extends _Composition {
             const DeepCollectionEquality().equals(other._section, _section));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1301,7 +1319,9 @@ class _$CompositionImpl extends _Composition {
         const DeepCollectionEquality().hash(_section)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Composition
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CompositionImplCopyWith<_$CompositionImpl> get copyWith =>
@@ -1360,44 +1380,42 @@ abstract class _Composition extends Composition {
   factory _Composition.fromJson(Map<String, dynamic> json) =
       _$CompositionImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a Composition resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.Composition)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1405,16 +1423,16 @@ abstract class _Composition extends Composition {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1422,9 +1440,9 @@ abstract class _Composition extends Composition {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1438,8 +1456,8 @@ abstract class _Composition extends Composition {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [url] An absolute URI that is used to identify this Composition when it is
   ///  referenced in a specification, model, design or an instance; also called
@@ -1448,134 +1466,138 @@ abstract class _Composition extends Composition {
   ///  (or will be) published. This URL can be the target of a canonical
   ///  reference. It SHALL remain the same when the Composition is stored on
   ///  different servers.
-  FhirUri? get url;
   @override
+  FhirUri? get url;
 
   /// [urlElement] ("_url") Extensions for url
+  @override
   @JsonKey(name: '_url')
   PrimitiveElement? get urlElement;
-  @override
 
   /// [identifier] A version-independent identifier for the Composition. This
   ///  identifier stays constant as the composition is changed over time.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [version] An explicitly assigned identifer of a variation of the content in
   ///  the Composition.
-  String? get version;
   @override
+  String? get version;
 
   /// [versionElement] ("_version") Extensions for version
+  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
-  @override
 
   /// [status] The workflow/clinical status of this composition. The status is a
   ///  marker for the clinical standing of the document.
-  FhirCode? get status;
   @override
+  FhirCode? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [type] Specifies the particular kind of composition (e.g. History and
   ///  Physical, Discharge Summary, Progress Note). This usually equates to the
   ///  purpose of making the composition.
-  CodeableConcept get type;
   @override
+  CodeableConcept get type;
 
   /// [category] A categorization for the type of the composition - helps for
   ///  indexing and searching. This may be implied by or derived from the code
   ///  specified in the Composition Type.
-  List<CodeableConcept>? get category;
   @override
+  List<CodeableConcept>? get category;
 
   /// [subject] Who or what the composition is about. The composition can be
   ///  about a person, (patient or healthcare practitioner), a device (e.g. a
   ///  machine) or even a group of subjects (such as a document about a herd of
   ///  livestock, or a set of patients that share a common exposure).
-  List<Reference>? get subject;
   @override
+  List<Reference>? get subject;
 
   /// [encounter] Describes the clinical encounter or type of care this
   ///  documentation is associated with.
-  Reference? get encounter;
   @override
+  Reference? get encounter;
 
   /// [date] The composition editing time, when the composition was last
   ///  logically changed by the author.
-  FhirDateTime? get date;
   @override
+  FhirDateTime? get date;
 
   /// [dateElement] ("_date") Extensions for date
+  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
-  @override
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
   ///  categories (gender, age, ...) or may be references to specific programs
   ///  (insurance plans, studies, ...) and may be used to assist with indexing
   ///  and searching for appropriate Composition instances.
-  List<UsageContext>? get useContext;
   @override
+  List<UsageContext>? get useContext;
 
   /// [author] Identifies who is responsible for the information in the
   ///  composition, not necessarily who typed it in.
-  List<Reference> get author;
   @override
+  List<Reference> get author;
 
   /// [name] A natural language name identifying the {{title}}. This name should
   ///  be usable as an identifier for the module by machine processing
   ///  applications such as code generation.
-  String? get name;
   @override
+  String? get name;
 
   /// [nameElement] ("_name") Extensions for name
+  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
-  @override
 
   /// [title] Official human-readable label for the composition.
-  String? get title;
   @override
+  String? get title;
 
   /// [titleElement] ("_title") Extensions for title
+  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
-  @override
 
   /// [note] For any additional notes.
-  List<Annotation>? get note;
   @override
+  List<Annotation>? get note;
 
   /// [attester] A participant who has attested to the accuracy of the
   ///  composition/document.
-  List<CompositionAttester>? get attester;
   @override
+  List<CompositionAttester>? get attester;
 
   /// [custodian] Identifies the organization or group who is responsible for
   ///  ongoing maintenance of and access to the composition/document information.
-  Reference? get custodian;
   @override
+  Reference? get custodian;
 
   /// [relatesTo] Relationships that this composition has with other compositions
   ///  or documents that already exist.
-  List<RelatedArtifact>? get relatesTo;
   @override
+  List<RelatedArtifact>? get relatesTo;
 
   /// [event] The clinical service, such as a colonoscopy or an appendectomy,
   ///  being documented.
-  List<CompositionEvent>? get event;
   @override
+  List<CompositionEvent>? get event;
 
   /// [section] The root of the sections that make up the composition.
-  List<CompositionSection>? get section;
   @override
-  @JsonKey(ignore: true)
+  List<CompositionSection>? get section;
+
+  /// Create a copy of Composition
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CompositionImplCopyWith<_$CompositionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1627,8 +1649,12 @@ mixin _$CompositionAttester {
   /// [party] Who attested the composition in the specified way.
   Reference? get party => throw _privateConstructorUsedError;
 
+  /// Serializes this CompositionAttester to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CompositionAttester
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CompositionAttesterCopyWith<CompositionAttester> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1662,6 +1688,8 @@ class _$CompositionAttesterCopyWithImpl<$Res, $Val extends CompositionAttester>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CompositionAttester
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1705,6 +1733,8 @@ class _$CompositionAttesterCopyWithImpl<$Res, $Val extends CompositionAttester>
     ) as $Val);
   }
 
+  /// Create a copy of CompositionAttester
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get mode {
@@ -1713,6 +1743,8 @@ class _$CompositionAttesterCopyWithImpl<$Res, $Val extends CompositionAttester>
     });
   }
 
+  /// Create a copy of CompositionAttester
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get party {
@@ -1757,6 +1789,8 @@ class __$$CompositionAttesterImplCopyWithImpl<$Res>
       $Res Function(_$CompositionAttesterImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CompositionAttester
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1923,7 +1957,7 @@ class _$CompositionAttesterImpl extends _CompositionAttester {
             (identical(other.party, party) || other.party == party));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1935,7 +1969,9 @@ class _$CompositionAttesterImpl extends _CompositionAttester {
       timeElement,
       party);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CompositionAttester
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CompositionAttesterImplCopyWith<_$CompositionAttesterImpl> get copyWith =>
@@ -1964,12 +2000,10 @@ abstract class _CompositionAttester extends CompositionAttester {
   factory _CompositionAttester.fromJson(Map<String, dynamic> json) =
       _$CompositionAttesterImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1977,9 +2011,9 @@ abstract class _CompositionAttester extends CompositionAttester {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1993,26 +2027,30 @@ abstract class _CompositionAttester extends CompositionAttester {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [mode] The type of attestation the authenticator offers.
-  CodeableConcept get mode;
   @override
+  CodeableConcept get mode;
 
   /// [time] When the composition was attested by the party.
-  FhirDateTime? get time;
   @override
+  FhirDateTime? get time;
 
   /// [timeElement] ("_time") Extensions for time
+  @override
   @JsonKey(name: '_time')
   PrimitiveElement? get timeElement;
-  @override
 
   /// [party] Who attested the composition in the specified way.
-  Reference? get party;
   @override
-  @JsonKey(ignore: true)
+  Reference? get party;
+
+  /// Create a copy of CompositionAttester
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CompositionAttesterImplCopyWith<_$CompositionAttesterImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2064,8 +2102,12 @@ mixin _$CompositionEvent {
   ///  resource.
   List<CodeableReference>? get detail => throw _privateConstructorUsedError;
 
+  /// Serializes this CompositionEvent to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CompositionEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CompositionEventCopyWith<CompositionEvent> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2096,6 +2138,8 @@ class _$CompositionEventCopyWithImpl<$Res, $Val extends CompositionEvent>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CompositionEvent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2129,6 +2173,8 @@ class _$CompositionEventCopyWithImpl<$Res, $Val extends CompositionEvent>
     ) as $Val);
   }
 
+  /// Create a copy of CompositionEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get period {
@@ -2169,6 +2215,8 @@ class __$$CompositionEventImplCopyWithImpl<$Res>
       $Res Function(_$CompositionEventImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CompositionEvent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2333,7 +2381,7 @@ class _$CompositionEventImpl extends _CompositionEvent {
             const DeepCollectionEquality().equals(other._detail, _detail));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2343,7 +2391,9 @@ class _$CompositionEventImpl extends _CompositionEvent {
       period,
       const DeepCollectionEquality().hash(_detail));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CompositionEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CompositionEventImplCopyWith<_$CompositionEventImpl> get copyWith =>
@@ -2370,12 +2420,10 @@ abstract class _CompositionEvent extends CompositionEvent {
   factory _CompositionEvent.fromJson(Map<String, dynamic> json) =
       _$CompositionEventImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2383,9 +2431,9 @@ abstract class _CompositionEvent extends CompositionEvent {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2399,14 +2447,14 @@ abstract class _CompositionEvent extends CompositionEvent {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [period] The period of time covered by the documentation. There is no
   ///  assertion that the documentation is a complete representation for this
   ///  period, only that it documents events during this time.
-  Period? get period;
   @override
+  Period? get period;
 
   /// [detail] Represents the main clinical acts, such as a colonoscopy or an
   ///  appendectomy, being documented. In some cases, the event is inherent in
@@ -2414,9 +2462,13 @@ abstract class _CompositionEvent extends CompositionEvent {
   ///  procedure being documented is necessarily a "History and Physical" act.
   ///  The events may be included as a code or as a reference to an other
   ///  resource.
-  List<CodeableReference>? get detail;
   @override
-  @JsonKey(ignore: true)
+  List<CodeableReference>? get detail;
+
+  /// Create a copy of CompositionEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CompositionEventImplCopyWith<_$CompositionEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2503,8 +2555,12 @@ mixin _$CompositionSection {
   /// [section] A nested sub-section within this section.
   List<CompositionSection>? get section => throw _privateConstructorUsedError;
 
+  /// Serializes this CompositionSection to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CompositionSection
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CompositionSectionCopyWith<CompositionSection> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2547,6 +2603,8 @@ class _$CompositionSectionCopyWithImpl<$Res, $Val extends CompositionSection>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CompositionSection
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2620,6 +2678,8 @@ class _$CompositionSectionCopyWithImpl<$Res, $Val extends CompositionSection>
     ) as $Val);
   }
 
+  /// Create a copy of CompositionSection
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -2632,6 +2692,8 @@ class _$CompositionSectionCopyWithImpl<$Res, $Val extends CompositionSection>
     });
   }
 
+  /// Create a copy of CompositionSection
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get focus {
@@ -2644,6 +2706,8 @@ class _$CompositionSectionCopyWithImpl<$Res, $Val extends CompositionSection>
     });
   }
 
+  /// Create a copy of CompositionSection
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -2656,6 +2720,8 @@ class _$CompositionSectionCopyWithImpl<$Res, $Val extends CompositionSection>
     });
   }
 
+  /// Create a copy of CompositionSection
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get orderedBy {
@@ -2668,6 +2734,8 @@ class _$CompositionSectionCopyWithImpl<$Res, $Val extends CompositionSection>
     });
   }
 
+  /// Create a copy of CompositionSection
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get emptyReason {
@@ -2724,6 +2792,8 @@ class __$$CompositionSectionImplCopyWithImpl<$Res>
       $Res Function(_$CompositionSectionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CompositionSection
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3007,7 +3077,7 @@ class _$CompositionSectionImpl extends _CompositionSection {
             const DeepCollectionEquality().equals(other._section, _section));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3025,7 +3095,9 @@ class _$CompositionSectionImpl extends _CompositionSection {
       emptyReason,
       const DeepCollectionEquality().hash(_section));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CompositionSection
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CompositionSectionImplCopyWith<_$CompositionSectionImpl> get copyWith =>
@@ -3060,12 +3132,10 @@ abstract class _CompositionSection extends CompositionSection {
   factory _CompositionSection.fromJson(Map<String, dynamic> json) =
       _$CompositionSectionImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3073,9 +3143,9 @@ abstract class _CompositionSection extends CompositionSection {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3089,29 +3159,29 @@ abstract class _CompositionSection extends CompositionSection {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [title] The label for this particular section.  This will be part of the
   ///  rendered content for the document, and is often used to build a table of
   ///  contents.
-  String? get title;
   @override
+  String? get title;
 
   /// [titleElement] ("_title") Extensions for title
+  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
-  @override
 
   /// [code] A code identifying the kind of content contained within the section.
   ///  This must be consistent with the section title.
-  CodeableConcept? get code;
   @override
+  CodeableConcept? get code;
 
   /// [author] Identifies who is responsible for the information in this section,
   ///  not necessarily who typed it in.
-  List<Reference>? get author;
   @override
+  List<Reference>? get author;
 
   /// [focus] The actual focus of the section when it is not the subject of the
   ///  composition, but instead represents something or someone associated with
@@ -3121,35 +3191,39 @@ abstract class _CompositionSection extends CompositionSection {
   ///  of the composition. Sections with a focus SHALL only include resources
   ///  where the logical subject (patient, subject, focus, etc.) matches the
   ///  section focus, or the resources have no logical subject (few resources).
-  Reference? get focus;
   @override
+  Reference? get focus;
 
   /// [text] A human-readable narrative that contains the attested content of the
   ///  section, used to represent the content of the resource to a human. The
   ///  narrative need not encode all the structured data, but is required to
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [orderedBy] Specifies the order applied to the items in the section entries.
-  CodeableConcept? get orderedBy;
   @override
+  CodeableConcept? get orderedBy;
 
   /// [entry] A reference to the actual resource from which the narrative in the
   ///  section is derived.
-  List<Reference>? get entry;
   @override
+  List<Reference>? get entry;
 
   /// [emptyReason] If the section is empty, why the list is empty. An empty
   ///  section typically has some text explaining the empty reason.
-  CodeableConcept? get emptyReason;
   @override
+  CodeableConcept? get emptyReason;
 
   /// [section] A nested sub-section within this section.
-  List<CompositionSection>? get section;
   @override
-  @JsonKey(ignore: true)
+  List<CompositionSection>? get section;
+
+  /// Create a copy of CompositionSection
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CompositionSectionImplCopyWith<_$CompositionSectionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

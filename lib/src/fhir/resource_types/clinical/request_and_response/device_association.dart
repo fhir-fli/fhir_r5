@@ -252,7 +252,7 @@ class DeviceAssociation with _$DeviceAssociation implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [DeviceAssociationOperation] A record of association or dissociation of a

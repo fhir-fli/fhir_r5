@@ -547,7 +547,7 @@ class Contract with _$Contract implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [ContractContentDefinition] Legally enforceable, formally recorded

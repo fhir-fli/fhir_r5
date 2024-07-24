@@ -296,8 +296,12 @@ mixin _$Procedure {
   ///  elements or extensions are available.
   List<Reference>? get supportingInfo => throw _privateConstructorUsedError;
 
+  /// Serializes this Procedure to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ProcedureCopyWith<Procedure> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -392,6 +396,8 @@ class _$ProcedureCopyWithImpl<$Res, $Val extends Procedure>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -655,6 +661,8 @@ class _$ProcedureCopyWithImpl<$Res, $Val extends Procedure>
     ) as $Val);
   }
 
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -667,6 +675,8 @@ class _$ProcedureCopyWithImpl<$Res, $Val extends Procedure>
     });
   }
 
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -679,6 +689,8 @@ class _$ProcedureCopyWithImpl<$Res, $Val extends Procedure>
     });
   }
 
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get statusReason {
@@ -691,6 +703,8 @@ class _$ProcedureCopyWithImpl<$Res, $Val extends Procedure>
     });
   }
 
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -703,6 +717,8 @@ class _$ProcedureCopyWithImpl<$Res, $Val extends Procedure>
     });
   }
 
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get subject {
@@ -711,6 +727,8 @@ class _$ProcedureCopyWithImpl<$Res, $Val extends Procedure>
     });
   }
 
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get focus {
@@ -723,6 +741,8 @@ class _$ProcedureCopyWithImpl<$Res, $Val extends Procedure>
     });
   }
 
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get encounter {
@@ -735,6 +755,8 @@ class _$ProcedureCopyWithImpl<$Res, $Val extends Procedure>
     });
   }
 
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get occurrencePeriod {
@@ -747,6 +769,8 @@ class _$ProcedureCopyWithImpl<$Res, $Val extends Procedure>
     });
   }
 
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get occurrenceAge {
@@ -759,6 +783,8 @@ class _$ProcedureCopyWithImpl<$Res, $Val extends Procedure>
     });
   }
 
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get occurrenceRange {
@@ -771,6 +797,8 @@ class _$ProcedureCopyWithImpl<$Res, $Val extends Procedure>
     });
   }
 
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get occurrenceTiming {
@@ -783,6 +811,8 @@ class _$ProcedureCopyWithImpl<$Res, $Val extends Procedure>
     });
   }
 
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get recorder {
@@ -795,6 +825,8 @@ class _$ProcedureCopyWithImpl<$Res, $Val extends Procedure>
     });
   }
 
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get reportedReference {
@@ -807,6 +839,8 @@ class _$ProcedureCopyWithImpl<$Res, $Val extends Procedure>
     });
   }
 
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get location {
@@ -819,6 +853,8 @@ class _$ProcedureCopyWithImpl<$Res, $Val extends Procedure>
     });
   }
 
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get outcome {
@@ -938,6 +974,8 @@ class __$$ProcedureImplCopyWithImpl<$Res>
       _$ProcedureImpl _value, $Res Function(_$ProcedureImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1929,7 +1967,7 @@ class _$ProcedureImpl extends _Procedure {
                 .equals(other._supportingInfo, _supportingInfo));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1986,7 +2024,9 @@ class _$ProcedureImpl extends _Procedure {
         const DeepCollectionEquality().hash(_supportingInfo)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ProcedureImplCopyWith<_$ProcedureImpl> get copyWith =>
@@ -2064,44 +2104,42 @@ abstract class _Procedure extends Procedure {
   factory _Procedure.fromJson(Map<String, dynamic> json) =
       _$ProcedureImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a Procedure resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.Procedure)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -2109,16 +2147,16 @@ abstract class _Procedure extends Procedure {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -2126,9 +2164,9 @@ abstract class _Procedure extends Procedure {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -2142,65 +2180,65 @@ abstract class _Procedure extends Procedure {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] Business identifiers assigned to this procedure by the
   ///  performer or other systems which remain constant as the resource is
   ///  updated and is propagated from server to server.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [instantiatesCanonical] The URL pointing to a FHIR-defined protocol,
   ///  guideline, order set or other definition that is adhered to in whole or in
   ///  part by this Procedure.
-  List<FhirCanonical>? get instantiatesCanonical;
   @override
+  List<FhirCanonical>? get instantiatesCanonical;
 
   /// [instantiatesUri] The URL pointing to an externally maintained protocol,
   ///  guideline, order set or other definition that is adhered to in whole or in
   ///  part by this Procedure.
-  List<FhirUri>? get instantiatesUri;
   @override
+  List<FhirUri>? get instantiatesUri;
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
+  @override
   @JsonKey(name: '_instantiatesUri')
   List<PrimitiveElement>? get instantiatesUriElement;
-  @override
 
   /// [basedOn] A reference to a resource that contains details of the request
   ///  for this procedure.
-  List<Reference>? get basedOn;
   @override
+  List<Reference>? get basedOn;
 
   /// [partOf] A larger event of which this particular procedure is a component
   ///  or step.
-  List<Reference>? get partOf;
   @override
+  List<Reference>? get partOf;
 
   /// [status] A code specifying the state of the procedure. Generally, this will
   ///  be the in-progress or completed state.
-  FhirCode? get status;
   @override
+  FhirCode? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [statusReason] Captures the reason for the current state of the procedure.
-  CodeableConcept? get statusReason;
   @override
+  CodeableConcept? get statusReason;
 
   /// [category] A code that classifies the procedure for searching, sorting and
   ///  display purposes (e.g. "Surgical Procedure").
-  List<CodeableConcept>? get category;
   @override
+  List<CodeableConcept>? get category;
 
   /// [code] The specific procedure that is performed. Use text if the exact
   ///  nature of the procedure cannot be coded (e.g. "Laparoscopic Appendectomy").
-  CodeableConcept? get code;
   @override
+  CodeableConcept? get code;
 
   /// [subject] On whom or on what the procedure was performed. This is usually
   ///  an individual human, but can also be performed on animals, groups of
@@ -2208,8 +2246,8 @@ abstract class _Procedure extends Procedure {
   ///  locations or devices (for safety inspections or regulatory
   ///  authorizations).  If the actual focus of the procedure is different from
   ///  the subject, the focus element specifies the actual focus of the procedure.
-  Reference get subject;
   @override
+  Reference get subject;
 
   /// [focus] Who is the target of the procedure when it is not the subject of
   ///  record only.  If focus is not present, then subject is the focus.  If
@@ -2221,169 +2259,173 @@ abstract class _Procedure extends Procedure {
   ///  with the subject (e.g. patient).  For example, use focus when recording
   ///  the target of the education, training, or counseling is the parent or
   ///  relative of a patient.
-  Reference? get focus;
   @override
+  Reference? get focus;
 
   /// [encounter] The Encounter during which this Procedure was created or
   ///  performed or to which the creation of this record is tightly associated.
-  Reference? get encounter;
   @override
+  Reference? get encounter;
 
   /// [occurrenceDateTime] Estimated or actual date, date-time, period, or age
   ///  when the procedure did occur or is occurring.  Allows a period to support
   ///  complex procedures that span more than one date, and also allows for the
   ///  length of the procedure to be captured.
-  FhirDateTime? get occurrenceDateTime;
   @override
+  FhirDateTime? get occurrenceDateTime;
 
   /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
   ///  occurrenceDateTime
+  @override
   @JsonKey(name: '_occurrenceDateTime')
   PrimitiveElement? get occurrenceDateTimeElement;
-  @override
 
   /// [occurrencePeriod] Estimated or actual date, date-time, period, or age when
   ///  the procedure did occur or is occurring.  Allows a period to support
   ///  complex procedures that span more than one date, and also allows for the
   ///  length of the procedure to be captured.
-  Period? get occurrencePeriod;
   @override
+  Period? get occurrencePeriod;
 
   /// [occurrenceString] Estimated or actual date, date-time, period, or age when
   ///  the procedure did occur or is occurring.  Allows a period to support
   ///  complex procedures that span more than one date, and also allows for the
   ///  length of the procedure to be captured.
-  String? get occurrenceString;
   @override
+  String? get occurrenceString;
 
   /// [occurrenceStringElement] ("_occurrenceString") Extensions for
   ///  occurrenceString
+  @override
   @JsonKey(name: '_occurrenceString')
   PrimitiveElement? get occurrenceStringElement;
-  @override
 
   /// [occurrenceAge] Estimated or actual date, date-time, period, or age when
   ///  the procedure did occur or is occurring.  Allows a period to support
   ///  complex procedures that span more than one date, and also allows for the
   ///  length of the procedure to be captured.
-  Age? get occurrenceAge;
   @override
+  Age? get occurrenceAge;
 
   /// [occurrenceRange] Estimated or actual date, date-time, period, or age when
   ///  the procedure did occur or is occurring.  Allows a period to support
   ///  complex procedures that span more than one date, and also allows for the
   ///  length of the procedure to be captured.
-  Range? get occurrenceRange;
   @override
+  Range? get occurrenceRange;
 
   /// [occurrenceTiming] Estimated or actual date, date-time, period, or age when
   ///  the procedure did occur or is occurring.  Allows a period to support
   ///  complex procedures that span more than one date, and also allows for the
   ///  length of the procedure to be captured.
-  Timing? get occurrenceTiming;
   @override
+  Timing? get occurrenceTiming;
 
   /// [recorded] The date the occurrence of the procedure was first captured in
   ///  the record regardless of Procedure.status (potentially after the
   ///  occurrence of the event).
-  FhirDateTime? get recorded;
   @override
+  FhirDateTime? get recorded;
 
   /// [recordedElement] ("_recorded") Extensions for recorded
+  @override
   @JsonKey(name: '_recorded')
   PrimitiveElement? get recordedElement;
-  @override
 
   /// [recorder] Individual who recorded the record and takes responsibility for
   ///  its content.
-  Reference? get recorder;
   @override
+  Reference? get recorder;
 
   /// [reportedBoolean] Indicates if this record was captured as a secondary
   ///  'reported' record rather than as an original primary source-of-truth
   ///  record.  It may also indicate the source of the report.
-  FhirBoolean? get reportedBoolean;
   @override
+  FhirBoolean? get reportedBoolean;
 
   /// [reportedBooleanElement] ("_reportedBoolean") Extensions for reportedBoolean
+  @override
   @JsonKey(name: '_reportedBoolean')
   PrimitiveElement? get reportedBooleanElement;
-  @override
 
   /// [reportedReference] Indicates if this record was captured as a secondary
   ///  'reported' record rather than as an original primary source-of-truth
   ///  record.  It may also indicate the source of the report.
-  Reference? get reportedReference;
   @override
+  Reference? get reportedReference;
 
   /// [performer] Indicates who or what performed the procedure and how they were
   ///  involved.
-  List<ProcedurePerformer>? get performer;
   @override
+  List<ProcedurePerformer>? get performer;
 
   /// [location] The location where the procedure actually happened.  E.g. a
   ///  newborn at home, a tracheostomy at a restaurant.
-  Reference? get location;
   @override
+  Reference? get location;
 
   /// [reason] The coded reason or reference why the procedure was performed.
   ///  This may be a coded entity of some type, be present as text, or be a
   ///  reference to one of several resources that justify the procedure.
-  List<CodeableReference>? get reason;
   @override
+  List<CodeableReference>? get reason;
 
   /// [bodySite] Detailed and structured anatomical location information.
   ///  Multiple locations are allowed - e.g. multiple punch biopsies of a lesion.
-  List<CodeableConcept>? get bodySite;
   @override
+  List<CodeableConcept>? get bodySite;
 
   /// [outcome] The outcome of the procedure - did it resolve the reasons for the
   ///  procedure being performed?
-  CodeableConcept? get outcome;
   @override
+  CodeableConcept? get outcome;
 
   /// [report] This could be a histology result, pathology report, surgical
   ///  report, etc.
-  List<Reference>? get report;
   @override
+  List<Reference>? get report;
 
   /// [complication] Any complications that occurred during the procedure, or in
   ///  the immediate post-performance period. These are generally tracked
   ///  separately from the notes, which will typically describe the procedure
   ///  itself rather than any 'post procedure' issues.
-  List<CodeableReference>? get complication;
   @override
+  List<CodeableReference>? get complication;
 
   /// [followUp] If the procedure required specific follow up - e.g. removal of
   ///  sutures. The follow up may be represented as a simple note or could
   ///  potentially be more complex, in which case the CarePlan resource can be
   ///  used.
-  List<CodeableConcept>? get followUp;
   @override
+  List<CodeableConcept>? get followUp;
 
   /// [note] Any other notes and comments about the procedure.
-  List<Annotation>? get note;
   @override
+  List<Annotation>? get note;
 
   /// [focalDevice] A device that is implanted, removed or otherwise manipulated
   ///  (calibration, battery replacement, fitting a prosthesis, attaching a
   ///  wound-vac, etc.) as a focal portion of the Procedure.
-  List<ProcedureFocalDevice>? get focalDevice;
   @override
+  List<ProcedureFocalDevice>? get focalDevice;
 
   /// [used] Identifies medications, devices and any other substance used as part
   ///  of the procedure.
-  List<CodeableReference>? get used;
   @override
+  List<CodeableReference>? get used;
 
   /// [supportingInfo] Other resources from the patient record that may be
   ///  relevant to the procedure.  The information from these resources was
   ///  either used to create the instance or is provided to help with its
   ///  interpretation. This extension should not be used if more specific inline
   ///  elements or extensions are available.
-  List<Reference>? get supportingInfo;
   @override
-  @JsonKey(ignore: true)
+  List<Reference>? get supportingInfo;
+
+  /// Create a copy of Procedure
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ProcedureImplCopyWith<_$ProcedureImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2438,8 +2480,12 @@ mixin _$ProcedurePerformer {
   /// [period] Time period during which the performer performed the procedure.
   Period? get period => throw _privateConstructorUsedError;
 
+  /// Serializes this ProcedurePerformer to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ProcedurePerformer
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ProcedurePerformerCopyWith<ProcedurePerformer> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2475,6 +2521,8 @@ class _$ProcedurePerformerCopyWithImpl<$Res, $Val extends ProcedurePerformer>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ProcedurePerformer
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2518,6 +2566,8 @@ class _$ProcedurePerformerCopyWithImpl<$Res, $Val extends ProcedurePerformer>
     ) as $Val);
   }
 
+  /// Create a copy of ProcedurePerformer
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get function_ {
@@ -2530,6 +2580,8 @@ class _$ProcedurePerformerCopyWithImpl<$Res, $Val extends ProcedurePerformer>
     });
   }
 
+  /// Create a copy of ProcedurePerformer
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get actor {
@@ -2538,6 +2590,8 @@ class _$ProcedurePerformerCopyWithImpl<$Res, $Val extends ProcedurePerformer>
     });
   }
 
+  /// Create a copy of ProcedurePerformer
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get onBehalfOf {
@@ -2550,6 +2604,8 @@ class _$ProcedurePerformerCopyWithImpl<$Res, $Val extends ProcedurePerformer>
     });
   }
 
+  /// Create a copy of ProcedurePerformer
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get period {
@@ -2598,6 +2654,8 @@ class __$$ProcedurePerformerImplCopyWithImpl<$Res>
       $Res Function(_$ProcedurePerformerImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ProcedurePerformer
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2768,7 +2826,7 @@ class _$ProcedurePerformerImpl extends _ProcedurePerformer {
             (identical(other.period, period) || other.period == period));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2780,7 +2838,9 @@ class _$ProcedurePerformerImpl extends _ProcedurePerformer {
       onBehalfOf,
       period);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ProcedurePerformer
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ProcedurePerformerImplCopyWith<_$ProcedurePerformerImpl> get copyWith =>
@@ -2809,12 +2869,10 @@ abstract class _ProcedurePerformer extends ProcedurePerformer {
   factory _ProcedurePerformer.fromJson(Map<String, dynamic> json) =
       _$ProcedurePerformerImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2822,9 +2880,9 @@ abstract class _ProcedurePerformer extends ProcedurePerformer {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2838,29 +2896,33 @@ abstract class _ProcedurePerformer extends ProcedurePerformer {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [function_] ("function") Distinguishes the type of involvement of the
   ///  performer in the procedure. For example, surgeon, anaesthetist,
   ///  endoscopist.
+  @override
   @JsonKey(name: 'function')
   CodeableConcept? get function_;
-  @override
 
   /// [actor] Indicates who or what performed the procedure.
-  Reference get actor;
   @override
+  Reference get actor;
 
   /// [onBehalfOf] The Organization the Patient, RelatedPerson, Device, CareTeam,
   ///  and HealthcareService was acting on behalf of.
-  Reference? get onBehalfOf;
   @override
+  Reference? get onBehalfOf;
 
   /// [period] Time period during which the performer performed the procedure.
-  Period? get period;
   @override
-  @JsonKey(ignore: true)
+  Period? get period;
+
+  /// Create a copy of ProcedurePerformer
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ProcedurePerformerImplCopyWith<_$ProcedurePerformerImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2907,8 +2969,12 @@ mixin _$ProcedureFocalDevice {
   ///  procedure.
   Reference get manipulated => throw _privateConstructorUsedError;
 
+  /// Serializes this ProcedureFocalDevice to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ProcedureFocalDevice
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ProcedureFocalDeviceCopyWith<ProcedureFocalDevice> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2941,6 +3007,8 @@ class _$ProcedureFocalDeviceCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ProcedureFocalDevice
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2974,6 +3042,8 @@ class _$ProcedureFocalDeviceCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of ProcedureFocalDevice
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get action {
@@ -2986,6 +3056,8 @@ class _$ProcedureFocalDeviceCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of ProcedureFocalDevice
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get manipulated {
@@ -3024,6 +3096,8 @@ class __$$ProcedureFocalDeviceImplCopyWithImpl<$Res>
       $Res Function(_$ProcedureFocalDeviceImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ProcedureFocalDevice
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3169,7 +3243,7 @@ class _$ProcedureFocalDeviceImpl extends _ProcedureFocalDevice {
                 other.manipulated == manipulated));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3179,7 +3253,9 @@ class _$ProcedureFocalDeviceImpl extends _ProcedureFocalDevice {
       action,
       manipulated);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ProcedureFocalDevice
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ProcedureFocalDeviceImplCopyWith<_$ProcedureFocalDeviceImpl>
@@ -3207,12 +3283,10 @@ abstract class _ProcedureFocalDevice extends ProcedureFocalDevice {
   factory _ProcedureFocalDevice.fromJson(Map<String, dynamic> json) =
       _$ProcedureFocalDeviceImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3220,9 +3294,9 @@ abstract class _ProcedureFocalDevice extends ProcedureFocalDevice {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3236,19 +3310,23 @@ abstract class _ProcedureFocalDevice extends ProcedureFocalDevice {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [action] The kind of change that happened to the device during the
   ///  procedure.
-  CodeableConcept? get action;
   @override
+  CodeableConcept? get action;
 
   /// [manipulated] The device that was manipulated (changed) during the
   ///  procedure.
-  Reference get manipulated;
   @override
-  @JsonKey(ignore: true)
+  Reference get manipulated;
+
+  /// Create a copy of ProcedureFocalDevice
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ProcedureFocalDeviceImplCopyWith<_$ProcedureFocalDeviceImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

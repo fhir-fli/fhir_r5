@@ -456,7 +456,7 @@ class FamilyMemberHistory with _$FamilyMemberHistory implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [FamilyMemberHistoryParticipant] Significant health conditions for a person

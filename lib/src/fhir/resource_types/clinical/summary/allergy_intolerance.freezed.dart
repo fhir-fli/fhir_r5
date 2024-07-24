@@ -213,8 +213,12 @@ mixin _$AllergyIntolerance {
   List<AllergyIntoleranceReaction>? get reaction =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this AllergyIntolerance to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AllergyIntolerance
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AllergyIntoleranceCopyWith<AllergyIntolerance> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -287,6 +291,8 @@ class _$AllergyIntoleranceCopyWithImpl<$Res, $Val extends AllergyIntolerance>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AllergyIntolerance
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -475,6 +481,8 @@ class _$AllergyIntoleranceCopyWithImpl<$Res, $Val extends AllergyIntolerance>
     ) as $Val);
   }
 
+  /// Create a copy of AllergyIntolerance
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -487,6 +495,8 @@ class _$AllergyIntoleranceCopyWithImpl<$Res, $Val extends AllergyIntolerance>
     });
   }
 
+  /// Create a copy of AllergyIntolerance
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -499,6 +509,8 @@ class _$AllergyIntoleranceCopyWithImpl<$Res, $Val extends AllergyIntolerance>
     });
   }
 
+  /// Create a copy of AllergyIntolerance
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get clinicalStatus {
@@ -511,6 +523,8 @@ class _$AllergyIntoleranceCopyWithImpl<$Res, $Val extends AllergyIntolerance>
     });
   }
 
+  /// Create a copy of AllergyIntolerance
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get verificationStatus {
@@ -523,6 +537,8 @@ class _$AllergyIntoleranceCopyWithImpl<$Res, $Val extends AllergyIntolerance>
     });
   }
 
+  /// Create a copy of AllergyIntolerance
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -535,6 +551,8 @@ class _$AllergyIntoleranceCopyWithImpl<$Res, $Val extends AllergyIntolerance>
     });
   }
 
+  /// Create a copy of AllergyIntolerance
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -547,6 +565,8 @@ class _$AllergyIntoleranceCopyWithImpl<$Res, $Val extends AllergyIntolerance>
     });
   }
 
+  /// Create a copy of AllergyIntolerance
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get patient {
@@ -555,6 +575,8 @@ class _$AllergyIntoleranceCopyWithImpl<$Res, $Val extends AllergyIntolerance>
     });
   }
 
+  /// Create a copy of AllergyIntolerance
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get encounter {
@@ -567,6 +589,8 @@ class _$AllergyIntoleranceCopyWithImpl<$Res, $Val extends AllergyIntolerance>
     });
   }
 
+  /// Create a copy of AllergyIntolerance
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AgeCopyWith<$Res>? get onsetAge {
@@ -579,6 +603,8 @@ class _$AllergyIntoleranceCopyWithImpl<$Res, $Val extends AllergyIntolerance>
     });
   }
 
+  /// Create a copy of AllergyIntolerance
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get onsetPeriod {
@@ -591,6 +617,8 @@ class _$AllergyIntoleranceCopyWithImpl<$Res, $Val extends AllergyIntolerance>
     });
   }
 
+  /// Create a copy of AllergyIntolerance
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get onsetRange {
@@ -683,6 +711,8 @@ class __$$AllergyIntoleranceImplCopyWithImpl<$Res>
       $Res Function(_$AllergyIntoleranceImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AllergyIntolerance
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1328,7 +1358,7 @@ class _$AllergyIntoleranceImpl extends _AllergyIntolerance {
             const DeepCollectionEquality().equals(other._reaction, _reaction));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1370,7 +1400,9 @@ class _$AllergyIntoleranceImpl extends _AllergyIntolerance {
         const DeepCollectionEquality().hash(_reaction)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AllergyIntolerance
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AllergyIntoleranceImplCopyWith<_$AllergyIntoleranceImpl> get copyWith =>
@@ -1434,44 +1466,42 @@ abstract class _AllergyIntolerance extends AllergyIntolerance {
   factory _AllergyIntolerance.fromJson(Map<String, dynamic> json) =
       _$AllergyIntoleranceImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a AllergyIntolerance resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.AllergyIntolerance)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1479,16 +1509,16 @@ abstract class _AllergyIntolerance extends AllergyIntolerance {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1496,9 +1526,9 @@ abstract class _AllergyIntolerance extends AllergyIntolerance {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1512,50 +1542,50 @@ abstract class _AllergyIntolerance extends AllergyIntolerance {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] Business identifiers assigned to this AllergyIntolerance by
   ///  the performer or other systems which remain constant as the resource is
   ///  updated and propagates from server to server.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [clinicalStatus] The clinical status of the allergy or intolerance.
-  CodeableConcept? get clinicalStatus;
   @override
+  CodeableConcept? get clinicalStatus;
 
   /// [verificationStatus] Assertion about certainty associated with the
   ///  propensity, or potential risk, of a reaction to the identified substance
   ///  (including pharmaceutical product).  The verification status pertains to
   ///  the allergy or intolerance, itself, not to any specific AllergyIntolerance
   ///  attribute.
-  CodeableConcept? get verificationStatus;
   @override
+  CodeableConcept? get verificationStatus;
 
   /// [type] Identification of the underlying physiological mechanism for the
   ///  reaction risk.
-  CodeableConcept? get type;
   @override
+  CodeableConcept? get type;
 
   /// [category] Category of the identified substance.
-  List<FhirCode>? get category;
   @override
+  List<FhirCode>? get category;
 
   /// [categoryElement] ("_category") Extensions for category
+  @override
   @JsonKey(name: '_category')
   List<PrimitiveElement>? get categoryElement;
-  @override
 
   /// [criticality] Estimate of the potential clinical harm, or seriousness, of
   ///  the reaction to the identified substance.
-  FhirCode? get criticality;
   @override
+  FhirCode? get criticality;
 
   /// [criticalityElement] ("_criticality") Extensions for criticality
+  @override
   @JsonKey(name: '_criticality')
   PrimitiveElement? get criticalityElement;
-  @override
 
   /// [code] Code for an allergy or intolerance statement (either a positive or a
   ///  negated/excluded statement).  This may be a code for a substance or
@@ -1573,88 +1603,92 @@ abstract class _AllergyIntolerance extends AllergyIntolerance {
   ///  AllergyIntolerance.reaction.substance falls within the semantic scope of
   ///  AllergyIntolerance.code, then the receiving system should ignore
   ///  AllergyIntolerance.reaction.substance.
-  CodeableConcept? get code;
   @override
+  CodeableConcept? get code;
 
   /// [patient] The patient who has the allergy or intolerance.
-  Reference get patient;
   @override
+  Reference get patient;
 
   /// [encounter] The encounter when the allergy or intolerance was asserted.
-  Reference? get encounter;
   @override
+  Reference? get encounter;
 
   /// [onsetDateTime] Estimated or actual date,  date-time, or age when allergy
   ///  or intolerance was identified.
-  FhirDateTime? get onsetDateTime;
   @override
+  FhirDateTime? get onsetDateTime;
 
   /// [onsetDateTimeElement] ("_onsetDateTime") Extensions for onsetDateTime
+  @override
   @JsonKey(name: '_onsetDateTime')
   PrimitiveElement? get onsetDateTimeElement;
-  @override
 
   /// [onsetAge] Estimated or actual date,  date-time, or age when allergy or
   ///  intolerance was identified.
-  Age? get onsetAge;
   @override
+  Age? get onsetAge;
 
   /// [onsetPeriod] Estimated or actual date,  date-time, or age when allergy or
   ///  intolerance was identified.
-  Period? get onsetPeriod;
   @override
+  Period? get onsetPeriod;
 
   /// [onsetRange] Estimated or actual date,  date-time, or age when allergy or
   ///  intolerance was identified.
-  Range? get onsetRange;
   @override
+  Range? get onsetRange;
 
   /// [onsetString] Estimated or actual date,  date-time, or age when allergy or
   ///  intolerance was identified.
-  String? get onsetString;
   @override
+  String? get onsetString;
 
   /// [onsetStringElement] ("_onsetString") Extensions for onsetString
+  @override
   @JsonKey(name: '_onsetString')
   PrimitiveElement? get onsetStringElement;
-  @override
 
   /// [recordedDate] The recordedDate represents when this particular
   ///  AllergyIntolerance record was created in the system, which is often a
   ///  system-generated date.
-  FhirDateTime? get recordedDate;
   @override
+  FhirDateTime? get recordedDate;
 
   /// [recordedDateElement] ("_recordedDate") Extensions for recordedDate
+  @override
   @JsonKey(name: '_recordedDate')
   PrimitiveElement? get recordedDateElement;
-  @override
 
   /// [participant] Indicates who or what participated in the activities related
   ///  to the allergy or intolerance and how they were involved.
-  List<AllergyIntoleranceParticipant>? get participant;
   @override
+  List<AllergyIntoleranceParticipant>? get participant;
 
   /// [lastOccurrence] Represents the date and/or time of the last known
   ///  occurrence of a reaction event.
-  FhirDateTime? get lastOccurrence;
   @override
+  FhirDateTime? get lastOccurrence;
 
   /// [lastOccurrenceElement] ("_lastOccurrence") Extensions for lastOccurrence
+  @override
   @JsonKey(name: '_lastOccurrence')
   PrimitiveElement? get lastOccurrenceElement;
-  @override
 
   /// [note] Additional narrative about the propensity for the Adverse Reaction,
   ///  not captured in other fields.
-  List<Annotation>? get note;
   @override
+  List<Annotation>? get note;
 
   /// [reaction] Details about each adverse reaction event linked to exposure to
   ///  the identified substance.
-  List<AllergyIntoleranceReaction>? get reaction;
   @override
-  @JsonKey(ignore: true)
+  List<AllergyIntoleranceReaction>? get reaction;
+
+  /// Create a copy of AllergyIntolerance
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AllergyIntoleranceImplCopyWith<_$AllergyIntoleranceImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1703,8 +1737,12 @@ mixin _$AllergyIntoleranceParticipant {
   ///  allergy or intolerance.
   Reference get actor => throw _privateConstructorUsedError;
 
+  /// Serializes this AllergyIntoleranceParticipant to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AllergyIntoleranceParticipant
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AllergyIntoleranceParticipantCopyWith<AllergyIntoleranceParticipant>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1739,6 +1777,8 @@ class _$AllergyIntoleranceParticipantCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AllergyIntoleranceParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1772,6 +1812,8 @@ class _$AllergyIntoleranceParticipantCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AllergyIntoleranceParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get function_ {
@@ -1784,6 +1826,8 @@ class _$AllergyIntoleranceParticipantCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AllergyIntoleranceParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get actor {
@@ -1825,6 +1869,8 @@ class __$$AllergyIntoleranceParticipantImplCopyWithImpl<$Res>
       $Res Function(_$AllergyIntoleranceParticipantImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AllergyIntoleranceParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1973,7 +2019,7 @@ class _$AllergyIntoleranceParticipantImpl
             (identical(other.actor, actor) || other.actor == actor));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1983,7 +2029,9 @@ class _$AllergyIntoleranceParticipantImpl
       function_,
       actor);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AllergyIntoleranceParticipant
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AllergyIntoleranceParticipantImplCopyWith<
@@ -2012,12 +2060,10 @@ abstract class _AllergyIntoleranceParticipant
   factory _AllergyIntoleranceParticipant.fromJson(Map<String, dynamic> json) =
       _$AllergyIntoleranceParticipantImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2025,9 +2071,9 @@ abstract class _AllergyIntoleranceParticipant
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2041,20 +2087,24 @@ abstract class _AllergyIntoleranceParticipant
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [function_] ("function") Distinguishes the type of involvement of the actor
   ///  in the activities related to the allergy or intolerance.
+  @override
   @JsonKey(name: 'function')
   CodeableConcept? get function_;
-  @override
 
   /// [actor] Indicates who or what participated in the activities related to the
   ///  allergy or intolerance.
-  Reference get actor;
   @override
-  @JsonKey(ignore: true)
+  Reference get actor;
+
+  /// Create a copy of AllergyIntoleranceParticipant
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AllergyIntoleranceParticipantImplCopyWith<
           _$AllergyIntoleranceParticipantImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2145,8 +2195,12 @@ mixin _$AllergyIntoleranceReaction {
   ///  other fields.
   List<Annotation>? get note => throw _privateConstructorUsedError;
 
+  /// Serializes this AllergyIntoleranceReaction to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AllergyIntoleranceReaction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AllergyIntoleranceReactionCopyWith<AllergyIntoleranceReaction>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2188,6 +2242,8 @@ class _$AllergyIntoleranceReactionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AllergyIntoleranceReaction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2261,6 +2317,8 @@ class _$AllergyIntoleranceReactionCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AllergyIntoleranceReaction
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get substance {
@@ -2273,6 +2331,8 @@ class _$AllergyIntoleranceReactionCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AllergyIntoleranceReaction
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get exposureRoute {
@@ -2326,6 +2386,8 @@ class __$$AllergyIntoleranceReactionImplCopyWithImpl<$Res>
       $Res Function(_$AllergyIntoleranceReactionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AllergyIntoleranceReaction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2603,7 +2665,7 @@ class _$AllergyIntoleranceReactionImpl extends _AllergyIntoleranceReaction {
             const DeepCollectionEquality().equals(other._note, _note));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2621,7 +2683,9 @@ class _$AllergyIntoleranceReactionImpl extends _AllergyIntoleranceReaction {
       exposureRoute,
       const DeepCollectionEquality().hash(_note));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AllergyIntoleranceReaction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AllergyIntoleranceReactionImplCopyWith<_$AllergyIntoleranceReactionImpl>
@@ -2656,12 +2720,10 @@ abstract class _AllergyIntoleranceReaction extends AllergyIntoleranceReaction {
   factory _AllergyIntoleranceReaction.fromJson(Map<String, dynamic> json) =
       _$AllergyIntoleranceReactionImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2669,9 +2731,9 @@ abstract class _AllergyIntoleranceReaction extends AllergyIntoleranceReaction {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2685,8 +2747,8 @@ abstract class _AllergyIntoleranceReaction extends AllergyIntoleranceReaction {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [substance] Identification of the specific substance (or pharmaceutical
   ///  product) considered to be responsible for the Adverse Reaction event.
@@ -2699,53 +2761,57 @@ abstract class _AllergyIntoleranceReaction extends AllergyIntoleranceReaction {
   ///  AllergyIntolerance.reaction.substance falls within the semantic scope of
   ///  AllergyIntolerance.code, then the receiving system should ignore
   ///  AllergyIntolerance.reaction.substance.
-  CodeableConcept? get substance;
   @override
+  CodeableConcept? get substance;
 
   /// [manifestation] Clinical symptoms and/or signs that are observed or
   ///  associated with the adverse reaction event.
-  List<CodeableReference> get manifestation;
   @override
+  List<CodeableReference> get manifestation;
 
   /// [description] Text description about the reaction as a whole, including
   ///  details of the manifestation if required.
-  String? get description;
   @override
+  String? get description;
 
   /// [descriptionElement] ("_description") Extensions for description
+  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
-  @override
 
   /// [onset] Record of the date and/or time of the onset of the Reaction.
-  FhirDateTime? get onset;
   @override
+  FhirDateTime? get onset;
 
   /// [onsetElement] ("_onset") Extensions for onset
+  @override
   @JsonKey(name: '_onset')
   PrimitiveElement? get onsetElement;
-  @override
 
   /// [severity] Clinical assessment of the severity of the reaction event as a
   ///  whole, potentially considering multiple different manifestations.
-  FhirCode? get severity;
   @override
+  FhirCode? get severity;
 
   /// [severityElement] ("_severity") Extensions for severity
+  @override
   @JsonKey(name: '_severity')
   PrimitiveElement? get severityElement;
-  @override
 
   /// [exposureRoute] Identification of the route by which the subject was
   ///  exposed to the substance.
-  CodeableConcept? get exposureRoute;
   @override
+  CodeableConcept? get exposureRoute;
 
   /// [note] Additional text about the adverse reaction event not captured in
   ///  other fields.
-  List<Annotation>? get note;
   @override
-  @JsonKey(ignore: true)
+  List<Annotation>? get note;
+
+  /// Create a copy of AllergyIntoleranceReaction
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AllergyIntoleranceReactionImplCopyWith<_$AllergyIntoleranceReactionImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

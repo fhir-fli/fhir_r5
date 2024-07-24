@@ -339,7 +339,7 @@ class CoverageEligibilityRequest
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [CoverageEligibilityRequestEvent] The CoverageEligibilityRequest provides

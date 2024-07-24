@@ -378,7 +378,7 @@ class ImagingSelection with _$ImagingSelection implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [ImagingSelectionPerformer] A selection of DICOM SOP instances and/or

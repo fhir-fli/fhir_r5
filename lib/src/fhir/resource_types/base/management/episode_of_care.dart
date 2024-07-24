@@ -303,7 +303,7 @@ class EpisodeOfCare with _$EpisodeOfCare implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [EpisodeOfCareStatusHistory] An association between a patient and an

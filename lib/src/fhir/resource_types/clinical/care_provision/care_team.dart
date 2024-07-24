@@ -286,7 +286,7 @@ class CareTeam with _$CareTeam implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [CareTeamParticipant] The Care Team includes all the people and

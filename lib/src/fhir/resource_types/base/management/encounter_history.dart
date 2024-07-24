@@ -321,7 +321,7 @@ class EncounterHistory with _$EncounterHistory implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [EncounterHistoryLocation] A record of significant events/milestones key

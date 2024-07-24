@@ -254,8 +254,12 @@ mixin _$DeviceRequest {
   /// [relevantHistory] Key events in the history of the request.
   List<Reference>? get relevantHistory => throw _privateConstructorUsedError;
 
+  /// Serializes this DeviceRequest to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DeviceRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DeviceRequestCopyWith<DeviceRequest> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -342,6 +346,8 @@ class _$DeviceRequestCopyWithImpl<$Res, $Val extends DeviceRequest>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DeviceRequest
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -590,6 +596,8 @@ class _$DeviceRequestCopyWithImpl<$Res, $Val extends DeviceRequest>
     ) as $Val);
   }
 
+  /// Create a copy of DeviceRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -602,6 +610,8 @@ class _$DeviceRequestCopyWithImpl<$Res, $Val extends DeviceRequest>
     });
   }
 
+  /// Create a copy of DeviceRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -614,6 +624,8 @@ class _$DeviceRequestCopyWithImpl<$Res, $Val extends DeviceRequest>
     });
   }
 
+  /// Create a copy of DeviceRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get groupIdentifier {
@@ -626,6 +638,8 @@ class _$DeviceRequestCopyWithImpl<$Res, $Val extends DeviceRequest>
     });
   }
 
+  /// Create a copy of DeviceRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res> get code {
@@ -634,6 +648,8 @@ class _$DeviceRequestCopyWithImpl<$Res, $Val extends DeviceRequest>
     });
   }
 
+  /// Create a copy of DeviceRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get subject {
@@ -642,6 +658,8 @@ class _$DeviceRequestCopyWithImpl<$Res, $Val extends DeviceRequest>
     });
   }
 
+  /// Create a copy of DeviceRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get encounter {
@@ -654,6 +672,8 @@ class _$DeviceRequestCopyWithImpl<$Res, $Val extends DeviceRequest>
     });
   }
 
+  /// Create a copy of DeviceRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get occurrencePeriod {
@@ -666,6 +686,8 @@ class _$DeviceRequestCopyWithImpl<$Res, $Val extends DeviceRequest>
     });
   }
 
+  /// Create a copy of DeviceRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $TimingCopyWith<$Res>? get occurrenceTiming {
@@ -678,6 +700,8 @@ class _$DeviceRequestCopyWithImpl<$Res, $Val extends DeviceRequest>
     });
   }
 
+  /// Create a copy of DeviceRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get requester {
@@ -690,6 +714,8 @@ class _$DeviceRequestCopyWithImpl<$Res, $Val extends DeviceRequest>
     });
   }
 
+  /// Create a copy of DeviceRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get performer {
@@ -702,6 +728,8 @@ class _$DeviceRequestCopyWithImpl<$Res, $Val extends DeviceRequest>
     });
   }
 
+  /// Create a copy of DeviceRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get asNeededFor {
@@ -808,6 +836,8 @@ class __$$DeviceRequestImplCopyWithImpl<$Res>
       _$DeviceRequestImpl _value, $Res Function(_$DeviceRequestImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DeviceRequest
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1676,7 +1706,7 @@ class _$DeviceRequestImpl extends _DeviceRequest {
                 .equals(other._relevantHistory, _relevantHistory));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1730,7 +1760,9 @@ class _$DeviceRequestImpl extends _DeviceRequest {
         const DeepCollectionEquality().hash(_relevantHistory)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DeviceRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DeviceRequestImplCopyWith<_$DeviceRequestImpl> get copyWith =>
@@ -1804,44 +1836,42 @@ abstract class _DeviceRequest extends DeviceRequest {
   factory _DeviceRequest.fromJson(Map<String, dynamic> json) =
       _$DeviceRequestImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a DeviceRequest resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.DeviceRequest)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1849,16 +1879,16 @@ abstract class _DeviceRequest extends DeviceRequest {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1866,9 +1896,9 @@ abstract class _DeviceRequest extends DeviceRequest {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1882,39 +1912,39 @@ abstract class _DeviceRequest extends DeviceRequest {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] Identifiers assigned to this order by the orderer or by the
   ///  receiver.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [instantiatesCanonical] The URL pointing to a FHIR-defined protocol,
   ///  guideline, orderset or other definition that is adhered to in whole or in
   ///  part by this DeviceRequest.
-  List<FhirCanonical>? get instantiatesCanonical;
   @override
+  List<FhirCanonical>? get instantiatesCanonical;
 
   /// [instantiatesUri] The URL pointing to an externally maintained protocol,
   ///  guideline, orderset or other definition that is adhered to in whole or in
   ///  part by this DeviceRequest.
-  List<FhirUri>? get instantiatesUri;
   @override
+  List<FhirUri>? get instantiatesUri;
 
   /// [instantiatesUriElement] ("_instantiatesUri") Extensions for instantiatesUri
+  @override
   @JsonKey(name: '_instantiatesUri')
   List<PrimitiveElement>? get instantiatesUriElement;
-  @override
 
   /// [basedOn] Plan/proposal/order fulfilled by this request.
-  List<Reference>? get basedOn;
   @override
+  List<Reference>? get basedOn;
 
   /// [replaces] The request takes the place of the referenced completed or
   ///  terminated request(s).
-  List<Reference>? get replaces;
   @override
+  List<Reference>? get replaces;
 
   /// [groupIdentifier] A shared identifier common to multiple independent
   ///  Request instances that were activated/authorized more or less
@@ -1923,164 +1953,168 @@ abstract class _DeviceRequest extends DeviceRequest {
   ///  ramifications in terms of reporting of results, billing, etc.  E.g. a
   ///  requisition number shared by a set of lab tests ordered together, or a
   ///  prescription number shared by all meds ordered at one time.
-  Identifier? get groupIdentifier;
   @override
+  Identifier? get groupIdentifier;
 
   /// [status] The status of the request.
-  FhirCode? get status;
   @override
+  FhirCode? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [intent] Whether the request is a proposal, plan, an original order or a
   ///  reflex order.
-  FhirCode? get intent;
   @override
+  FhirCode? get intent;
 
   /// [intentElement] ("_intent") Extensions for intent
+  @override
   @JsonKey(name: '_intent')
   PrimitiveElement? get intentElement;
-  @override
 
   /// [priority] Indicates how quickly the request should be addressed with
   ///  respect to other requests.
-  FhirCode? get priority;
   @override
+  FhirCode? get priority;
 
   /// [priorityElement] ("_priority") Extensions for priority
+  @override
   @JsonKey(name: '_priority')
   PrimitiveElement? get priorityElement;
-  @override
 
   /// [doNotPerform] If true, indicates that the provider is asking for the
   ///  patient to either stop using or to not start using the specified device or
   ///  category of devices. For example, the patient has undergone surgery and
   ///  the provider is indicating that the patient should not wear contact lenses.
-  FhirBoolean? get doNotPerform;
   @override
+  FhirBoolean? get doNotPerform;
 
   /// [doNotPerformElement] ("_doNotPerform") Extensions for doNotPerform
+  @override
   @JsonKey(name: '_doNotPerform')
   PrimitiveElement? get doNotPerformElement;
-  @override
 
   /// [code] The details of the device to be used.
-  CodeableReference get code;
   @override
+  CodeableReference get code;
 
   /// [quantity] The number of devices to be provided.
-  FhirInteger? get quantity;
   @override
+  FhirInteger? get quantity;
 
   /// [quantityElement] ("_quantity") Extensions for quantity
+  @override
   @JsonKey(name: '_quantity')
   PrimitiveElement? get quantityElement;
-  @override
 
   /// [parameter] Specific parameters for the ordered item.  For example, the
   ///  prism value for lenses.
-  List<DeviceRequestParameter>? get parameter;
   @override
+  List<DeviceRequestParameter>? get parameter;
 
   /// [subject] The patient who will use the device.
-  Reference get subject;
   @override
+  Reference get subject;
 
   /// [encounter] An encounter that provides additional context in which this
   ///  request is made.
-  Reference? get encounter;
   @override
+  Reference? get encounter;
 
   /// [occurrenceDateTime] The timing schedule for the use of the device. The
   ///  Schedule data type allows many different expressions, for example. "Every
   ///  8 hours"; "Three times a day"; "1/2 an hour before breakfast for 10 days
   ///  from 23-Dec 2011:"; "15 Oct 2013, 17 Oct 2013 and 1 Nov 2013".
-  FhirDateTime? get occurrenceDateTime;
   @override
+  FhirDateTime? get occurrenceDateTime;
 
   /// [occurrenceDateTimeElement] ("_occurrenceDateTime") Extensions for
   ///  occurrenceDateTime
+  @override
   @JsonKey(name: '_occurrenceDateTime')
   PrimitiveElement? get occurrenceDateTimeElement;
-  @override
 
   /// [occurrencePeriod] The timing schedule for the use of the device. The
   ///  Schedule data type allows many different expressions, for example. "Every
   ///  8 hours"; "Three times a day"; "1/2 an hour before breakfast for 10 days
   ///  from 23-Dec 2011:"; "15 Oct 2013, 17 Oct 2013 and 1 Nov 2013".
-  Period? get occurrencePeriod;
   @override
+  Period? get occurrencePeriod;
 
   /// [occurrenceTiming] The timing schedule for the use of the device. The
   ///  Schedule data type allows many different expressions, for example. "Every
   ///  8 hours"; "Three times a day"; "1/2 an hour before breakfast for 10 days
   ///  from 23-Dec 2011:"; "15 Oct 2013, 17 Oct 2013 and 1 Nov 2013".
-  Timing? get occurrenceTiming;
   @override
+  Timing? get occurrenceTiming;
 
   /// [authoredOn] When the request transitioned to being actionable.
-  FhirDateTime? get authoredOn;
   @override
+  FhirDateTime? get authoredOn;
 
   /// [authoredOnElement] ("_authoredOn") Extensions for authoredOn
+  @override
   @JsonKey(name: '_authoredOn')
   PrimitiveElement? get authoredOnElement;
-  @override
 
   /// [requester] The individual or entity who initiated the request and has
   ///  responsibility for its activation.
-  Reference? get requester;
   @override
+  Reference? get requester;
 
   /// [performer] The desired individual or entity to provide the device to the
   ///  subject of the request (e.g., patient, location).
-  CodeableReference? get performer;
   @override
+  CodeableReference? get performer;
 
   /// [reason] Reason or justification for the use of this device.
-  List<CodeableReference>? get reason;
   @override
+  List<CodeableReference>? get reason;
 
   /// [asNeeded] This status is to indicate whether the request is a PRN or may
   ///  be given as needed.
-  FhirBoolean? get asNeeded;
   @override
+  FhirBoolean? get asNeeded;
 
   /// [asNeededElement] ("_asNeeded") Extensions for asNeeded
+  @override
   @JsonKey(name: '_asNeeded')
   PrimitiveElement? get asNeededElement;
-  @override
 
   /// [asNeededFor] The reason for using the device.
-  CodeableConcept? get asNeededFor;
   @override
+  CodeableConcept? get asNeededFor;
 
   /// [insurance] Insurance plans, coverage extensions, pre-authorizations and/or
   ///  pre-determinations that may be required for delivering the requested
   ///  service.
-  List<Reference>? get insurance;
   @override
+  List<Reference>? get insurance;
 
   /// [supportingInfo] Additional clinical information about the patient that may
   ///  influence the request fulfilment.  For example, this may include where on
   ///  the subject's body the device will be used (i.e. the target site).
-  List<Reference>? get supportingInfo;
   @override
+  List<Reference>? get supportingInfo;
 
   /// [note] Details about this request that were not represented at all or
   ///  sufficiently in one of the attributes provided in a class. These may
   ///  include for example a comment, an instruction, or a note associated with
   ///  the statement.
-  List<Annotation>? get note;
   @override
+  List<Annotation>? get note;
 
   /// [relevantHistory] Key events in the history of the request.
-  List<Reference>? get relevantHistory;
   @override
-  @JsonKey(ignore: true)
+  List<Reference>? get relevantHistory;
+
+  /// Create a copy of DeviceRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DeviceRequestImplCopyWith<_$DeviceRequestImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2141,8 +2175,12 @@ mixin _$DeviceRequestParameter {
   PrimitiveElement? get valueBooleanElement =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this DeviceRequestParameter to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DeviceRequestParameter
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DeviceRequestParameterCopyWith<DeviceRequestParameter> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2181,6 +2219,8 @@ class _$DeviceRequestParameterCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DeviceRequestParameter
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2234,6 +2274,8 @@ class _$DeviceRequestParameterCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of DeviceRequestParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -2246,6 +2288,8 @@ class _$DeviceRequestParameterCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of DeviceRequestParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get valueCodeableConcept {
@@ -2259,6 +2303,8 @@ class _$DeviceRequestParameterCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of DeviceRequestParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get valueQuantity {
@@ -2271,6 +2317,8 @@ class _$DeviceRequestParameterCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of DeviceRequestParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $RangeCopyWith<$Res>? get valueRange {
@@ -2324,6 +2372,8 @@ class __$$DeviceRequestParameterImplCopyWithImpl<$Res>
       $Res Function(_$DeviceRequestParameterImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DeviceRequestParameter
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2516,7 +2566,7 @@ class _$DeviceRequestParameterImpl extends _DeviceRequestParameter {
                 other.valueBooleanElement == valueBooleanElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2530,7 +2580,9 @@ class _$DeviceRequestParameterImpl extends _DeviceRequestParameter {
       valueBoolean,
       valueBooleanElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DeviceRequestParameter
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DeviceRequestParameterImplCopyWith<_$DeviceRequestParameterImpl>
@@ -2563,12 +2615,10 @@ abstract class _DeviceRequestParameter extends DeviceRequestParameter {
   factory _DeviceRequestParameter.fromJson(Map<String, dynamic> json) =
       _$DeviceRequestParameterImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2576,9 +2626,9 @@ abstract class _DeviceRequestParameter extends DeviceRequestParameter {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2592,34 +2642,38 @@ abstract class _DeviceRequestParameter extends DeviceRequestParameter {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [code] A code or string that identifies the device detail being asserted.
-  CodeableConcept? get code;
   @override
+  CodeableConcept? get code;
 
   /// [valueCodeableConcept] The value of the device detail.
-  CodeableConcept? get valueCodeableConcept;
   @override
+  CodeableConcept? get valueCodeableConcept;
 
   /// [valueQuantity] The value of the device detail.
-  Quantity? get valueQuantity;
   @override
+  Quantity? get valueQuantity;
 
   /// [valueRange] The value of the device detail.
-  Range? get valueRange;
   @override
+  Range? get valueRange;
 
   /// [valueBoolean] The value of the device detail.
-  FhirBoolean? get valueBoolean;
   @override
+  FhirBoolean? get valueBoolean;
 
   /// [valueBooleanElement] ("_valueBoolean") Extensions for valueBoolean
+  @override
   @JsonKey(name: '_valueBoolean')
   PrimitiveElement? get valueBooleanElement;
+
+  /// Create a copy of DeviceRequestParameter
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DeviceRequestParameterImplCopyWith<_$DeviceRequestParameterImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

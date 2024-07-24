@@ -343,7 +343,7 @@ class DeviceUsage with _$DeviceUsage implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [DeviceUsageAdherence] A record of a device being used by a patient where

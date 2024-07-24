@@ -143,8 +143,12 @@ mixin _$Schedule {
   @JsonKey(name: '_comment')
   PrimitiveElement? get commentElement => throw _privateConstructorUsedError;
 
+  /// Serializes this Schedule to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Schedule
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ScheduleCopyWith<Schedule> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -195,6 +199,8 @@ class _$ScheduleCopyWithImpl<$Res, $Val extends Schedule>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Schedule
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -318,6 +324,8 @@ class _$ScheduleCopyWithImpl<$Res, $Val extends Schedule>
     ) as $Val);
   }
 
+  /// Create a copy of Schedule
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -330,6 +338,8 @@ class _$ScheduleCopyWithImpl<$Res, $Val extends Schedule>
     });
   }
 
+  /// Create a copy of Schedule
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -342,6 +352,8 @@ class _$ScheduleCopyWithImpl<$Res, $Val extends Schedule>
     });
   }
 
+  /// Create a copy of Schedule
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get planningHorizon {
@@ -405,6 +417,8 @@ class __$$ScheduleImplCopyWithImpl<$Res>
       _$ScheduleImpl _value, $Res Function(_$ScheduleImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Schedule
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -858,7 +872,7 @@ class _$ScheduleImpl extends _Schedule {
                 other.commentElement == commentElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -887,7 +901,9 @@ class _$ScheduleImpl extends _Schedule {
         commentElement
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Schedule
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ScheduleImplCopyWith<_$ScheduleImpl> get copyWith =>
@@ -934,44 +950,42 @@ abstract class _Schedule extends Schedule {
   factory _Schedule.fromJson(Map<String, dynamic> json) =
       _$ScheduleImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a Schedule resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.Schedule)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -979,16 +993,16 @@ abstract class _Schedule extends Schedule {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -996,9 +1010,9 @@ abstract class _Schedule extends Schedule {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1012,72 +1026,76 @@ abstract class _Schedule extends Schedule {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] External Ids for this item.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [active] Whether this schedule record is in active use or should not be
   ///  used (such as was entered in error).
-  FhirBoolean? get active;
   @override
+  FhirBoolean? get active;
 
   /// [activeElement] ("_active") Extensions for active
+  @override
   @JsonKey(name: '_active')
   PrimitiveElement? get activeElement;
-  @override
 
   /// [serviceCategory] A broad categorization of the service that is to be
   ///  performed during this appointment.
-  List<CodeableConcept>? get serviceCategory;
   @override
+  List<CodeableConcept>? get serviceCategory;
 
   /// [serviceType] The specific service that is to be performed during this
   ///  appointment.
-  List<CodeableReference>? get serviceType;
   @override
+  List<CodeableReference>? get serviceType;
 
   /// [specialty] The specialty of a practitioner that would be required to
   ///  perform the service requested in this appointment.
-  List<CodeableConcept>? get specialty;
   @override
+  List<CodeableConcept>? get specialty;
 
   /// [name] Further description of the schedule as it would be presented to a
   ///  consumer while searching.
-  String? get name;
   @override
+  String? get name;
 
   /// [nameElement] ("_name") Extensions for name
+  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
-  @override
 
   /// [actor] Slots that reference this schedule resource provide the
   ///  availability details to these referenced resource(s).
-  List<Reference> get actor;
   @override
+  List<Reference> get actor;
 
   /// [planningHorizon] The period of time that the slots that reference this
   ///  Schedule resource cover (even if none exist). These  cover the amount of
   ///  time that an organization's planning horizon; the interval for which they
   ///  are currently accepting appointments. This does not define a "template"
   ///  for planning outside these dates.
-  Period? get planningHorizon;
   @override
+  Period? get planningHorizon;
 
   /// [comment] Comments on the availability to describe any extended
   ///  information. Such as custom constraints on the slots that may be
   ///  associated.
-  FhirMarkdown? get comment;
   @override
+  FhirMarkdown? get comment;
 
   /// [commentElement] ("_comment") Extensions for comment
+  @override
   @JsonKey(name: '_comment')
   PrimitiveElement? get commentElement;
+
+  /// Create a copy of Schedule
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ScheduleImplCopyWith<_$ScheduleImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

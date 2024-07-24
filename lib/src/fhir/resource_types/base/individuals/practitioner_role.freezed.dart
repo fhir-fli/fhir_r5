@@ -159,8 +159,12 @@ mixin _$PractitionerRole {
   ///  services, or identifying where to send referrals electronically.
   List<Reference>? get endpoint => throw _privateConstructorUsedError;
 
+  /// Serializes this PractitionerRole to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of PractitionerRole
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $PractitionerRoleCopyWith<PractitionerRole> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -220,6 +224,8 @@ class _$PractitionerRoleCopyWithImpl<$Res, $Val extends PractitionerRole>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of PractitionerRole
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -358,6 +364,8 @@ class _$PractitionerRoleCopyWithImpl<$Res, $Val extends PractitionerRole>
     ) as $Val);
   }
 
+  /// Create a copy of PractitionerRole
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -370,6 +378,8 @@ class _$PractitionerRoleCopyWithImpl<$Res, $Val extends PractitionerRole>
     });
   }
 
+  /// Create a copy of PractitionerRole
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -382,6 +392,8 @@ class _$PractitionerRoleCopyWithImpl<$Res, $Val extends PractitionerRole>
     });
   }
 
+  /// Create a copy of PractitionerRole
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get period {
@@ -394,6 +406,8 @@ class _$PractitionerRoleCopyWithImpl<$Res, $Val extends PractitionerRole>
     });
   }
 
+  /// Create a copy of PractitionerRole
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get practitioner {
@@ -406,6 +420,8 @@ class _$PractitionerRoleCopyWithImpl<$Res, $Val extends PractitionerRole>
     });
   }
 
+  /// Create a copy of PractitionerRole
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get organization {
@@ -479,6 +495,8 @@ class __$$PractitionerRoleImplCopyWithImpl<$Res>
       $Res Function(_$PractitionerRoleImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PractitionerRole
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1035,7 +1053,7 @@ class _$PractitionerRoleImpl extends _PractitionerRole {
             const DeepCollectionEquality().equals(other._endpoint, _endpoint));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1067,7 +1085,9 @@ class _$PractitionerRoleImpl extends _PractitionerRole {
         const DeepCollectionEquality().hash(_endpoint)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PractitionerRole
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PractitionerRoleImplCopyWith<_$PractitionerRoleImpl> get copyWith =>
@@ -1127,41 +1147,40 @@ abstract class _PractitionerRole extends PractitionerRole {
   @override
   @JsonKey(unknownEnumValue: R5ResourceType.PractitionerRole)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
   @override
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
   @override
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1169,16 +1188,16 @@ abstract class _PractitionerRole extends PractitionerRole {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1187,9 +1206,9 @@ abstract class _PractitionerRole extends PractitionerRole {
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
   @override
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1203,87 +1222,91 @@ abstract class _PractitionerRole extends PractitionerRole {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] Business Identifiers that are specific to a role/location.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [active]  Whether this practitioner role record is in active use. Some
   ///  systems may use this property to mark non-active practitioners, such as
   ///  those that are not currently employed.
-  FhirBoolean? get active;
   @override
+  FhirBoolean? get active;
 
   /// [activeElement] ("_active") Extensions for active
   @override
+  @override
   @JsonKey(name: '_active')
   PrimitiveElement? get activeElement;
-  @override
 
   /// [period] The period during which the person is authorized to act as a
   ///  practitioner in these role(s) for the organization.
-  Period? get period;
   @override
+  Period? get period;
 
   /// [practitioner] Practitioner that is able to provide the defined services
   ///  for the organization.
-  Reference? get practitioner;
   @override
+  Reference? get practitioner;
 
   /// [organization] The organization where the Practitioner performs the roles
   ///  associated.
-  Reference? get organization;
   @override
+  Reference? get organization;
 
   /// [code] Roles which this practitioner is authorized to perform for the
   ///  organization.
-  List<CodeableConcept>? get code;
   @override
+  List<CodeableConcept>? get code;
 
   /// [specialty] The specialty of a practitioner that describes the functional
   ///  role they are practicing at a given organization or location.
-  List<CodeableConcept>? get specialty;
   @override
+  List<CodeableConcept>? get specialty;
 
   /// [location] The location(s) at which this practitioner provides care.
-  List<Reference>? get location;
   @override
+  List<Reference>? get location;
 
   /// [healthcareService] The list of healthcare services that this worker
   ///  provides for this role's Organization/Location(s).
-  List<Reference>? get healthcareService;
   @override
+  List<Reference>? get healthcareService;
 
   /// [contact] The contact details of communication devices available relevant
   ///  to the specific PractitionerRole. This can include addresses, phone
   ///  numbers, fax numbers, mobile numbers, email addresses and web sites.
-  List<ExtendedContactDetail>? get contact;
   @override
+  List<ExtendedContactDetail>? get contact;
 
   /// [characteristic] Collection of characteristics (attributes).
-  List<CodeableConcept>? get characteristic;
   @override
+  List<CodeableConcept>? get characteristic;
 
   /// [communication] A language the practitioner can use in patient
   ///  communication. The practitioner may know several languages (listed in
   ///  practitioner.communication), however these are the languages that could be
   ///  advertised in a directory for a patient to search.
-  List<CodeableConcept>? get communication;
   @override
+  List<CodeableConcept>? get communication;
 
   /// [availability] A collection of times the practitioner is available or
   ///  performing this role at the location and/or healthcareservice.
-  List<Availability>? get availability;
   @override
+  List<Availability>? get availability;
 
   /// [endpoint]  Technical endpoints providing access to services operated for
   ///  the practitioner with this role. Commonly used for locating scheduling
   ///  services, or identifying where to send referrals electronically.
-  List<Reference>? get endpoint;
   @override
-  @JsonKey(ignore: true)
+  List<Reference>? get endpoint;
+
+  /// Create a copy of PractitionerRole
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PractitionerRoleImplCopyWith<_$PractitionerRoleImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

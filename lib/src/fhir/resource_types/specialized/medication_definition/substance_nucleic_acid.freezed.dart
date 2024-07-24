@@ -130,8 +130,12 @@ mixin _$SubstanceNucleicAcid {
   List<SubstanceNucleicAcidSubunit>? get subunit =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this SubstanceNucleicAcid to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SubstanceNucleicAcid
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SubstanceNucleicAcidCopyWith<SubstanceNucleicAcid> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -182,6 +186,8 @@ class _$SubstanceNucleicAcidCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubstanceNucleicAcid
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -280,6 +286,8 @@ class _$SubstanceNucleicAcidCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of SubstanceNucleicAcid
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -292,6 +300,8 @@ class _$SubstanceNucleicAcidCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceNucleicAcid
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -304,6 +314,8 @@ class _$SubstanceNucleicAcidCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceNucleicAcid
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get sequenceType {
@@ -316,6 +328,8 @@ class _$SubstanceNucleicAcidCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceNucleicAcid
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get oligoNucleotideType {
@@ -378,6 +392,8 @@ class __$$SubstanceNucleicAcidImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceNucleicAcidImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubstanceNucleicAcid
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -737,7 +753,7 @@ class _$SubstanceNucleicAcidImpl extends _SubstanceNucleicAcid {
             const DeepCollectionEquality().equals(other._subunit, _subunit));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -760,7 +776,9 @@ class _$SubstanceNucleicAcidImpl extends _SubstanceNucleicAcid {
       oligoNucleotideType,
       const DeepCollectionEquality().hash(_subunit));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SubstanceNucleicAcid
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceNucleicAcidImplCopyWith<_$SubstanceNucleicAcidImpl>
@@ -806,44 +824,42 @@ abstract class _SubstanceNucleicAcid extends SubstanceNucleicAcid {
   factory _SubstanceNucleicAcid.fromJson(Map<String, dynamic> json) =
       _$SubstanceNucleicAcidImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a SubstanceNucleicAcid resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.SubstanceNucleicAcid)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -851,16 +867,16 @@ abstract class _SubstanceNucleicAcid extends SubstanceNucleicAcid {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -868,9 +884,9 @@ abstract class _SubstanceNucleicAcid extends SubstanceNucleicAcid {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -884,52 +900,56 @@ abstract class _SubstanceNucleicAcid extends SubstanceNucleicAcid {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [sequenceType] The type of the sequence shall be specified based on a
   ///  controlled vocabulary.
-  CodeableConcept? get sequenceType;
   @override
+  CodeableConcept? get sequenceType;
 
   /// [numberOfSubunits] The number of linear sequences of nucleotides linked
   ///  through phosphodiester bonds shall be described. Subunits would be strands
   ///  of nucleic acids that are tightly associated typically through
   ///  Watson-Crick base pairing. NOTE: If not specified in the reference source,
   ///  the assumption is that there is 1 subunit.
-  FhirInteger? get numberOfSubunits;
   @override
+  FhirInteger? get numberOfSubunits;
 
   /// [numberOfSubunitsElement] ("_numberOfSubunits") Extensions for
   ///  numberOfSubunits
+  @override
   @JsonKey(name: '_numberOfSubunits')
   PrimitiveElement? get numberOfSubunitsElement;
-  @override
 
   /// [areaOfHybridisation] The area of hybridisation shall be described if
   ///  applicable for double stranded RNA or DNA. The number associated with the
   ///  subunit followed by the number associated to the residue shall be
   ///  specified in increasing order. The underscore “” shall be used as
   ///  separator as follows: “Subunitnumber Residue”.
-  String? get areaOfHybridisation;
   @override
+  String? get areaOfHybridisation;
 
   /// [areaOfHybridisationElement] ("_areaOfHybridisation") Extensions for
   ///  areaOfHybridisation
+  @override
   @JsonKey(name: '_areaOfHybridisation')
   PrimitiveElement? get areaOfHybridisationElement;
-  @override
 
   /// [oligoNucleotideType] (TBC).
-  CodeableConcept? get oligoNucleotideType;
   @override
+  CodeableConcept? get oligoNucleotideType;
 
   /// [subunit] Subunits are listed in order of decreasing length; sequences of
   ///  the same length will be ordered by molecular weight; subunits that have
   ///  identical sequences will be repeated multiple times.
-  List<SubstanceNucleicAcidSubunit>? get subunit;
   @override
-  @JsonKey(ignore: true)
+  List<SubstanceNucleicAcidSubunit>? get subunit;
+
+  /// Create a copy of SubstanceNucleicAcid
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SubstanceNucleicAcidImplCopyWith<_$SubstanceNucleicAcidImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1018,8 +1038,12 @@ mixin _$SubstanceNucleicAcidSubunit {
   List<SubstanceNucleicAcidSugar>? get sugar =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this SubstanceNucleicAcidSubunit to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SubstanceNucleicAcidSubunit
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SubstanceNucleicAcidSubunitCopyWith<SubstanceNucleicAcidSubunit>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1064,6 +1088,8 @@ class _$SubstanceNucleicAcidSubunitCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubstanceNucleicAcidSubunit
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1142,6 +1168,8 @@ class _$SubstanceNucleicAcidSubunitCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of SubstanceNucleicAcidSubunit
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get sequenceAttachment {
@@ -1154,6 +1182,8 @@ class _$SubstanceNucleicAcidSubunitCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceNucleicAcidSubunit
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get fivePrime {
@@ -1166,6 +1196,8 @@ class _$SubstanceNucleicAcidSubunitCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of SubstanceNucleicAcidSubunit
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get threePrime {
@@ -1222,6 +1254,8 @@ class __$$SubstanceNucleicAcidSubunitImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceNucleicAcidSubunitImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubstanceNucleicAcidSubunit
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1505,7 +1539,7 @@ class _$SubstanceNucleicAcidSubunitImpl extends _SubstanceNucleicAcidSubunit {
             const DeepCollectionEquality().equals(other._sugar, _sugar));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1524,7 +1558,9 @@ class _$SubstanceNucleicAcidSubunitImpl extends _SubstanceNucleicAcidSubunit {
       const DeepCollectionEquality().hash(_linkage),
       const DeepCollectionEquality().hash(_sugar));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SubstanceNucleicAcidSubunit
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceNucleicAcidSubunitImplCopyWith<_$SubstanceNucleicAcidSubunitImpl>
@@ -1562,12 +1598,10 @@ abstract class _SubstanceNucleicAcidSubunit
   factory _SubstanceNucleicAcidSubunit.fromJson(Map<String, dynamic> json) =
       _$SubstanceNucleicAcidSubunitImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1575,9 +1609,9 @@ abstract class _SubstanceNucleicAcidSubunit
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1591,67 +1625,71 @@ abstract class _SubstanceNucleicAcidSubunit
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [subunit] Index of linear sequences of nucleic acids in order of decreasing
   ///  length. Sequences of the same length will be ordered by molecular weight.
   ///  Subunits that have identical sequences will be repeated and have
   ///  sequential subscripts.
-  FhirInteger? get subunit;
   @override
+  FhirInteger? get subunit;
 
   /// [subunitElement] ("_subunit") Extensions for subunit
+  @override
   @JsonKey(name: '_subunit')
   PrimitiveElement? get subunitElement;
-  @override
 
   /// [sequence] Actual nucleotide sequence notation from 5' to 3' end using
   ///  standard single letter codes. In addition to the base sequence, sugar and
   ///  type of phosphate or non-phosphate linkage should also be captured.
-  String? get sequence;
   @override
+  String? get sequence;
 
   /// [sequenceElement] ("_sequence") Extensions for sequence
+  @override
   @JsonKey(name: '_sequence')
   PrimitiveElement? get sequenceElement;
-  @override
 
   /// [length] The length of the sequence shall be captured.
-  FhirInteger? get length;
   @override
+  FhirInteger? get length;
 
   /// [lengthElement] ("_length") Extensions for length
+  @override
   @JsonKey(name: '_length')
   PrimitiveElement? get lengthElement;
-  @override
 
   /// [sequenceAttachment] (TBC).
-  Attachment? get sequenceAttachment;
   @override
+  Attachment? get sequenceAttachment;
 
   /// [fivePrime] The nucleotide present at the 5’ terminal shall be specified
   ///  based on a controlled vocabulary. Since the sequence is represented from
   ///  the 5' to the 3' end, the 5’ prime nucleotide is the letter at the first
   ///  position in the sequence. A separate representation would be redundant.
-  CodeableConcept? get fivePrime;
   @override
+  CodeableConcept? get fivePrime;
 
   /// [threePrime] The nucleotide present at the 3’ terminal shall be specified
   ///  based on a controlled vocabulary. Since the sequence is represented from
   ///  the 5' to the 3' end, the 5’ prime nucleotide is the letter at the last
   ///  position in the sequence. A separate representation would be redundant.
-  CodeableConcept? get threePrime;
   @override
+  CodeableConcept? get threePrime;
 
   /// [linkage] The linkages between sugar residues will also be captured.
-  List<SubstanceNucleicAcidLinkage>? get linkage;
   @override
+  List<SubstanceNucleicAcidLinkage>? get linkage;
 
   /// [sugar] 5.3.6.8.1 Sugar ID (Mandatory).
-  List<SubstanceNucleicAcidSugar>? get sugar;
   @override
-  @JsonKey(ignore: true)
+  List<SubstanceNucleicAcidSugar>? get sugar;
+
+  /// Create a copy of SubstanceNucleicAcidSubunit
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SubstanceNucleicAcidSubunitImplCopyWith<_$SubstanceNucleicAcidSubunitImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1723,8 +1761,12 @@ mixin _$SubstanceNucleicAcidLinkage {
   PrimitiveElement? get residueSiteElement =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this SubstanceNucleicAcidLinkage to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SubstanceNucleicAcidLinkage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SubstanceNucleicAcidLinkageCopyWith<SubstanceNucleicAcidLinkage>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1763,6 +1805,8 @@ class _$SubstanceNucleicAcidLinkageCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubstanceNucleicAcidLinkage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1821,6 +1865,8 @@ class _$SubstanceNucleicAcidLinkageCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of SubstanceNucleicAcidLinkage
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get identifier {
@@ -1869,6 +1915,8 @@ class __$$SubstanceNucleicAcidLinkageImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceNucleicAcidLinkageImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubstanceNucleicAcidLinkage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2082,7 +2130,7 @@ class _$SubstanceNucleicAcidLinkageImpl extends _SubstanceNucleicAcidLinkage {
                 other.residueSiteElement == residueSiteElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2097,7 +2145,9 @@ class _$SubstanceNucleicAcidLinkageImpl extends _SubstanceNucleicAcidLinkage {
       residueSite,
       residueSiteElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SubstanceNucleicAcidLinkage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceNucleicAcidLinkageImplCopyWith<_$SubstanceNucleicAcidLinkageImpl>
@@ -2133,12 +2183,10 @@ abstract class _SubstanceNucleicAcidLinkage
   factory _SubstanceNucleicAcidLinkage.fromJson(Map<String, dynamic> json) =
       _$SubstanceNucleicAcidLinkageImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2146,9 +2194,9 @@ abstract class _SubstanceNucleicAcidLinkage
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2162,8 +2210,8 @@ abstract class _SubstanceNucleicAcidLinkage
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [connectivity] The entity that links the sugar residues together should
   ///  also be captured for nearly all naturally occurring nucleic acid the
@@ -2171,37 +2219,41 @@ abstract class _SubstanceNucleicAcidLinkage
   ///  phosphorothioate linkages are often seen. Linkage connectivity is assumed
   ///  to be 3’-5’. If the linkage is either 3’-3’ or 5’-5’ this should be
   ///  specified.
-  String? get connectivity;
   @override
+  String? get connectivity;
 
   /// [connectivityElement] ("_connectivity") Extensions for connectivity
+  @override
   @JsonKey(name: '_connectivity')
   PrimitiveElement? get connectivityElement;
-  @override
 
   /// [identifier] Each linkage will be registered as a fragment and have an ID.
-  Identifier? get identifier;
   @override
+  Identifier? get identifier;
 
   /// [name] Each linkage will be registered as a fragment and have at least one
   ///  name. A single name shall be assigned to each linkage.
-  String? get name;
   @override
+  String? get name;
 
   /// [nameElement] ("_name") Extensions for name
+  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
-  @override
 
   /// [residueSite] Residues shall be captured as described in 5.3.6.8.3.
-  String? get residueSite;
   @override
+  String? get residueSite;
 
   /// [residueSiteElement] ("_residueSite") Extensions for residueSite
+  @override
   @JsonKey(name: '_residueSite')
   PrimitiveElement? get residueSiteElement;
+
+  /// Create a copy of SubstanceNucleicAcidLinkage
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SubstanceNucleicAcidLinkageImplCopyWith<_$SubstanceNucleicAcidLinkageImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2263,8 +2315,12 @@ mixin _$SubstanceNucleicAcidSugar {
   PrimitiveElement? get residueSiteElement =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this SubstanceNucleicAcidSugar to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SubstanceNucleicAcidSugar
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SubstanceNucleicAcidSugarCopyWith<SubstanceNucleicAcidSugar> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2299,6 +2355,8 @@ class _$SubstanceNucleicAcidSugarCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubstanceNucleicAcidSugar
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2347,6 +2405,8 @@ class _$SubstanceNucleicAcidSugarCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of SubstanceNucleicAcidSugar
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get identifier {
@@ -2393,6 +2453,8 @@ class __$$SubstanceNucleicAcidSugarImplCopyWithImpl<$Res>
       $Res Function(_$SubstanceNucleicAcidSugarImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubstanceNucleicAcidSugar
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2578,7 +2640,7 @@ class _$SubstanceNucleicAcidSugarImpl extends _SubstanceNucleicAcidSugar {
                 other.residueSiteElement == residueSiteElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2591,7 +2653,9 @@ class _$SubstanceNucleicAcidSugarImpl extends _SubstanceNucleicAcidSugar {
       residueSite,
       residueSiteElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SubstanceNucleicAcidSugar
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SubstanceNucleicAcidSugarImplCopyWith<_$SubstanceNucleicAcidSugarImpl>
@@ -2623,12 +2687,10 @@ abstract class _SubstanceNucleicAcidSugar extends SubstanceNucleicAcidSugar {
   factory _SubstanceNucleicAcidSugar.fromJson(Map<String, dynamic> json) =
       _$SubstanceNucleicAcidSugarImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2636,9 +2698,9 @@ abstract class _SubstanceNucleicAcidSugar extends SubstanceNucleicAcidSugar {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2652,35 +2714,39 @@ abstract class _SubstanceNucleicAcidSugar extends SubstanceNucleicAcidSugar {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] The Substance ID of the sugar or sugar-like component that
   ///  make up the nucleotide.
-  Identifier? get identifier;
   @override
+  Identifier? get identifier;
 
   /// [name] The name of the sugar or sugar-like component that make up the
   ///  nucleotide.
-  String? get name;
   @override
+  String? get name;
 
   /// [nameElement] ("_name") Extensions for name
+  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
-  @override
 
   /// [residueSite] The residues that contain a given sugar will be captured. The
   ///  order of given residues will be captured in the 5‘-3‘direction consistent
   ///  with the base sequences listed above.
-  String? get residueSite;
   @override
+  String? get residueSite;
 
   /// [residueSiteElement] ("_residueSite") Extensions for residueSite
+  @override
   @JsonKey(name: '_residueSite')
   PrimitiveElement? get residueSiteElement;
+
+  /// Create a copy of SubstanceNucleicAcidSugar
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SubstanceNucleicAcidSugarImplCopyWith<_$SubstanceNucleicAcidSugarImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

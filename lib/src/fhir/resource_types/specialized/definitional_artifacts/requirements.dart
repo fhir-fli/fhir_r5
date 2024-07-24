@@ -469,7 +469,7 @@ class Requirements with _$Requirements implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [RequirementsStatement] A set of requirements - a list of features or

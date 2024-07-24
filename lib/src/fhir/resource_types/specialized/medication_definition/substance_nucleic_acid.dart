@@ -274,7 +274,7 @@ class SubstanceNucleicAcid
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [SubstanceNucleicAcidSubunit] Nucleic acids are defined by three distinct

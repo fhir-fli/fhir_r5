@@ -387,7 +387,7 @@ class Subscription with _$Subscription implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [SubscriptionFilterBy] The subscription resource describes a particular

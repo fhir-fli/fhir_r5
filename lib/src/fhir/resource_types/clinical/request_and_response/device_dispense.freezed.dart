@@ -187,8 +187,12 @@ mixin _$DeviceDispense {
   ///  as when the dispense was verified.
   List<Reference>? get eventHistory => throw _privateConstructorUsedError;
 
+  /// Serializes this DeviceDispense to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DeviceDispense
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DeviceDispenseCopyWith<DeviceDispense> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -262,6 +266,8 @@ class _$DeviceDispenseCopyWithImpl<$Res, $Val extends DeviceDispense>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DeviceDispense
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -450,6 +456,8 @@ class _$DeviceDispenseCopyWithImpl<$Res, $Val extends DeviceDispense>
     ) as $Val);
   }
 
+  /// Create a copy of DeviceDispense
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -462,6 +470,8 @@ class _$DeviceDispenseCopyWithImpl<$Res, $Val extends DeviceDispense>
     });
   }
 
+  /// Create a copy of DeviceDispense
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -474,6 +484,8 @@ class _$DeviceDispenseCopyWithImpl<$Res, $Val extends DeviceDispense>
     });
   }
 
+  /// Create a copy of DeviceDispense
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res>? get statusReason {
@@ -486,6 +498,8 @@ class _$DeviceDispenseCopyWithImpl<$Res, $Val extends DeviceDispense>
     });
   }
 
+  /// Create a copy of DeviceDispense
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res> get device {
@@ -494,6 +508,8 @@ class _$DeviceDispenseCopyWithImpl<$Res, $Val extends DeviceDispense>
     });
   }
 
+  /// Create a copy of DeviceDispense
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get subject {
@@ -502,6 +518,8 @@ class _$DeviceDispenseCopyWithImpl<$Res, $Val extends DeviceDispense>
     });
   }
 
+  /// Create a copy of DeviceDispense
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get receiver {
@@ -514,6 +532,8 @@ class _$DeviceDispenseCopyWithImpl<$Res, $Val extends DeviceDispense>
     });
   }
 
+  /// Create a copy of DeviceDispense
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get encounter {
@@ -526,6 +546,8 @@ class _$DeviceDispenseCopyWithImpl<$Res, $Val extends DeviceDispense>
     });
   }
 
+  /// Create a copy of DeviceDispense
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get location {
@@ -538,6 +560,8 @@ class _$DeviceDispenseCopyWithImpl<$Res, $Val extends DeviceDispense>
     });
   }
 
+  /// Create a copy of DeviceDispense
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -550,6 +574,8 @@ class _$DeviceDispenseCopyWithImpl<$Res, $Val extends DeviceDispense>
     });
   }
 
+  /// Create a copy of DeviceDispense
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get quantity {
@@ -562,6 +588,8 @@ class _$DeviceDispenseCopyWithImpl<$Res, $Val extends DeviceDispense>
     });
   }
 
+  /// Create a copy of DeviceDispense
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get destination {
@@ -655,6 +683,8 @@ class __$$DeviceDispenseImplCopyWithImpl<$Res>
       _$DeviceDispenseImpl _value, $Res Function(_$DeviceDispenseImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DeviceDispense
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1295,7 +1325,7 @@ class _$DeviceDispenseImpl extends _DeviceDispense {
                 .equals(other._eventHistory, _eventHistory));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1337,7 +1367,9 @@ class _$DeviceDispenseImpl extends _DeviceDispense {
         const DeepCollectionEquality().hash(_eventHistory)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DeviceDispense
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DeviceDispenseImplCopyWith<_$DeviceDispenseImpl> get copyWith =>
@@ -1400,44 +1432,42 @@ abstract class _DeviceDispense extends DeviceDispense {
   factory _DeviceDispense.fromJson(Map<String, dynamic> json) =
       _$DeviceDispenseImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a DeviceDispense resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.DeviceDispense)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1445,16 +1475,16 @@ abstract class _DeviceDispense extends DeviceDispense {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1462,9 +1492,9 @@ abstract class _DeviceDispense extends DeviceDispense {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1478,126 +1508,130 @@ abstract class _DeviceDispense extends DeviceDispense {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] Business identifier for this dispensation.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [basedOn] The order or request that this dispense is fulfilling.
-  List<Reference>? get basedOn;
   @override
+  List<Reference>? get basedOn;
 
   /// [partOf] The bigger event that this dispense is a part of.
-  List<Reference>? get partOf;
   @override
+  List<Reference>? get partOf;
 
   /// [status] A code specifying the state of the set of dispense events.
-  FhirCode? get status;
   @override
+  FhirCode? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [statusReason] Indicates the reason why a dispense was or was not performed.
-  CodeableReference? get statusReason;
   @override
+  CodeableReference? get statusReason;
 
   /// [category] Indicates the type of device dispense.
-  List<CodeableConcept>? get category;
   @override
+  List<CodeableConcept>? get category;
 
   /// [device] Identifies the device being dispensed. This is either a link to a
   ///  resource representing the details of the device or a simple attribute
   ///  carrying a code that identifies the device from a known list of devices.
-  CodeableReference get device;
   @override
+  CodeableReference get device;
 
   /// [subject] A link to a resource representing the person to whom the device
   ///  is intended.
-  Reference get subject;
   @override
+  Reference get subject;
 
   /// [receiver] Identifies the person who picked up the device or the person or
   ///  location where the device was delivered.  This may be a patient or their
   ///  caregiver, but some cases exist where it can be a healthcare professional
   ///  or a location.
-  Reference? get receiver;
   @override
+  Reference? get receiver;
 
   /// [encounter] The encounter that establishes the context for this event.
-  Reference? get encounter;
   @override
+  Reference? get encounter;
 
   /// [supportingInformation] Additional information that supports the device
   ///  being dispensed.
-  List<Reference>? get supportingInformation;
   @override
+  List<Reference>? get supportingInformation;
 
   /// [performer] Indicates who or what performed the event.
-  List<DeviceDispensePerformer>? get performer;
   @override
+  List<DeviceDispensePerformer>? get performer;
 
   /// [location] The principal physical location where the dispense was performed.
-  Reference? get location;
   @override
+  Reference? get location;
 
   /// [type] Indicates the type of dispensing event that is performed.
-  CodeableConcept? get type;
   @override
+  CodeableConcept? get type;
 
   /// [quantity] The number of devices that have been dispensed.
-  Quantity? get quantity;
   @override
+  Quantity? get quantity;
 
   /// [preparedDate] The time when the dispensed product was packaged and
   ///  reviewed.
-  FhirDateTime? get preparedDate;
   @override
+  FhirDateTime? get preparedDate;
 
   /// [preparedDateElement] ("_preparedDate") Extensions for preparedDate
+  @override
   @JsonKey(name: '_preparedDate')
   PrimitiveElement? get preparedDateElement;
-  @override
 
   /// [whenHandedOver] The time the dispensed product was made available to the
   ///  patient or their representative.
-  FhirDateTime? get whenHandedOver;
   @override
+  FhirDateTime? get whenHandedOver;
 
   /// [whenHandedOverElement] ("_whenHandedOver") Extensions for whenHandedOver
+  @override
   @JsonKey(name: '_whenHandedOver')
   PrimitiveElement? get whenHandedOverElement;
-  @override
 
   /// [destination] Identification of the facility/location where the device was
   ///  /should be shipped to, as part of the dispense process.
-  Reference? get destination;
   @override
+  Reference? get destination;
 
   /// [note] Extra information about the dispense that could not be conveyed in
   ///  the other attributes.
-  List<Annotation>? get note;
   @override
+  List<Annotation>? get note;
 
   /// [usageInstruction] The full representation of the instructions.
-  FhirMarkdown? get usageInstruction;
   @override
+  FhirMarkdown? get usageInstruction;
 
   /// [usageInstructionElement] ("_usageInstruction") Extensions for
   ///  usageInstruction
+  @override
   @JsonKey(name: '_usageInstruction')
   PrimitiveElement? get usageInstructionElement;
-  @override
 
   /// [eventHistory] A summary of the events of interest that have occurred, such
   ///  as when the dispense was verified.
-  List<Reference>? get eventHistory;
   @override
-  @JsonKey(ignore: true)
+  List<Reference>? get eventHistory;
+
+  /// Create a copy of DeviceDispense
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DeviceDispenseImplCopyWith<_$DeviceDispenseImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1646,8 +1680,12 @@ mixin _$DeviceDispensePerformer {
   ///  be assumed that the actor is the dispenser of the device.
   Reference get actor => throw _privateConstructorUsedError;
 
+  /// Serializes this DeviceDispensePerformer to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DeviceDispensePerformer
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DeviceDispensePerformerCopyWith<DeviceDispensePerformer> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1680,6 +1718,8 @@ class _$DeviceDispensePerformerCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DeviceDispensePerformer
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1713,6 +1753,8 @@ class _$DeviceDispensePerformerCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of DeviceDispensePerformer
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get function_ {
@@ -1725,6 +1767,8 @@ class _$DeviceDispensePerformerCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of DeviceDispensePerformer
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get actor {
@@ -1766,6 +1810,8 @@ class __$$DeviceDispensePerformerImplCopyWithImpl<$Res>
       $Res Function(_$DeviceDispensePerformerImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DeviceDispensePerformer
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1912,7 +1958,7 @@ class _$DeviceDispensePerformerImpl extends _DeviceDispensePerformer {
             (identical(other.actor, actor) || other.actor == actor));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1922,7 +1968,9 @@ class _$DeviceDispensePerformerImpl extends _DeviceDispensePerformer {
       function_,
       actor);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DeviceDispensePerformer
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DeviceDispensePerformerImplCopyWith<_$DeviceDispensePerformerImpl>
@@ -1949,12 +1997,10 @@ abstract class _DeviceDispensePerformer extends DeviceDispensePerformer {
   factory _DeviceDispensePerformer.fromJson(Map<String, dynamic> json) =
       _$DeviceDispensePerformerImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1962,9 +2008,9 @@ abstract class _DeviceDispensePerformer extends DeviceDispensePerformer {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1978,20 +2024,24 @@ abstract class _DeviceDispensePerformer extends DeviceDispensePerformer {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [function_] ("function") Distinguishes the type of performer in the
   ///  dispense.  For example, date enterer, packager, final checker.
+  @override
   @JsonKey(name: 'function')
   CodeableConcept? get function_;
-  @override
 
   /// [actor] The device, practitioner, etc. who performed the action.  It should
   ///  be assumed that the actor is the dispenser of the device.
-  Reference get actor;
   @override
-  @JsonKey(ignore: true)
+  Reference get actor;
+
+  /// Create a copy of DeviceDispensePerformer
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DeviceDispensePerformerImplCopyWith<_$DeviceDispensePerformerImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

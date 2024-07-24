@@ -432,7 +432,7 @@ class DocumentReference with _$DocumentReference implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [DocumentReferenceAttester] A reference to a document of any kind for any

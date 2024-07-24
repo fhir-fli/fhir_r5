@@ -270,7 +270,7 @@ class MolecularSequence with _$MolecularSequence implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [MolecularSequenceRelative] Representation of a molecular sequence.

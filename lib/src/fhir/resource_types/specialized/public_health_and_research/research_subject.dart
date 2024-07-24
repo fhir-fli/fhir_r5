@@ -281,7 +281,7 @@ class ResearchSubject with _$ResearchSubject implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [ResearchSubjectProgress] A ResearchSubject is a participant or object

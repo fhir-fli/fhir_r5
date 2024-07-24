@@ -171,8 +171,12 @@ mixin _$DetectedIssue {
   List<DetectedIssueMitigation>? get mitigation =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this DetectedIssue to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DetectedIssue
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DetectedIssueCopyWith<DetectedIssue> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -237,6 +241,8 @@ class _$DetectedIssueCopyWithImpl<$Res, $Val extends DetectedIssue>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DetectedIssue
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -400,6 +406,8 @@ class _$DetectedIssueCopyWithImpl<$Res, $Val extends DetectedIssue>
     ) as $Val);
   }
 
+  /// Create a copy of DetectedIssue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -412,6 +420,8 @@ class _$DetectedIssueCopyWithImpl<$Res, $Val extends DetectedIssue>
     });
   }
 
+  /// Create a copy of DetectedIssue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -424,6 +434,8 @@ class _$DetectedIssueCopyWithImpl<$Res, $Val extends DetectedIssue>
     });
   }
 
+  /// Create a copy of DetectedIssue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get code {
@@ -436,6 +448,8 @@ class _$DetectedIssueCopyWithImpl<$Res, $Val extends DetectedIssue>
     });
   }
 
+  /// Create a copy of DetectedIssue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get subject {
@@ -448,6 +462,8 @@ class _$DetectedIssueCopyWithImpl<$Res, $Val extends DetectedIssue>
     });
   }
 
+  /// Create a copy of DetectedIssue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get encounter {
@@ -460,6 +476,8 @@ class _$DetectedIssueCopyWithImpl<$Res, $Val extends DetectedIssue>
     });
   }
 
+  /// Create a copy of DetectedIssue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get identifiedPeriod {
@@ -472,6 +490,8 @@ class _$DetectedIssueCopyWithImpl<$Res, $Val extends DetectedIssue>
     });
   }
 
+  /// Create a copy of DetectedIssue
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get author {
@@ -552,6 +572,8 @@ class __$$DetectedIssueImplCopyWithImpl<$Res>
       _$DetectedIssueImpl _value, $Res Function(_$DetectedIssueImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DetectedIssue
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1105,7 +1127,7 @@ class _$DetectedIssueImpl extends _DetectedIssue {
                 .equals(other._mitigation, _mitigation));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1142,7 +1164,9 @@ class _$DetectedIssueImpl extends _DetectedIssue {
         const DeepCollectionEquality().hash(_mitigation)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DetectedIssue
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DetectedIssueImplCopyWith<_$DetectedIssueImpl> get copyWith =>
@@ -1197,44 +1221,42 @@ abstract class _DetectedIssue extends DetectedIssue {
   factory _DetectedIssue.fromJson(Map<String, dynamic> json) =
       _$DetectedIssueImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a DetectedIssue resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.DetectedIssue)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1242,16 +1264,16 @@ abstract class _DetectedIssue extends DetectedIssue {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1259,9 +1281,9 @@ abstract class _DetectedIssue extends DetectedIssue {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1275,107 +1297,111 @@ abstract class _DetectedIssue extends DetectedIssue {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] Business identifier associated with the detected issue record.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [status] Indicates the status of the detected issue.
-  FhirCode? get status;
   @override
+  FhirCode? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [category] A code that classifies the general type of detected issue.
-  List<CodeableConcept>? get category;
   @override
+  List<CodeableConcept>? get category;
 
   /// [code] Identifies the specific type of issue identified.
-  CodeableConcept? get code;
   @override
+  CodeableConcept? get code;
 
   /// [severity] Indicates the degree of importance associated with the
   ///  identified issue based on the potential impact on the patient.
-  FhirCode? get severity;
   @override
+  FhirCode? get severity;
 
   /// [severityElement] ("_severity") Extensions for severity
+  @override
   @JsonKey(name: '_severity')
   PrimitiveElement? get severityElement;
-  @override
 
   /// [subject] Indicates the subject whose record the detected issue is
   ///  associated with.
-  Reference? get subject;
   @override
+  Reference? get subject;
 
   /// [encounter] The encounter during which this issue was detected.
-  Reference? get encounter;
   @override
+  Reference? get encounter;
 
   /// [identifiedDateTime] The date or period when the detected issue was
   ///  initially identified.
-  FhirDateTime? get identifiedDateTime;
   @override
+  FhirDateTime? get identifiedDateTime;
 
   /// [identifiedDateTimeElement] ("_identifiedDateTime") Extensions for
   ///  identifiedDateTime
+  @override
   @JsonKey(name: '_identifiedDateTime')
   PrimitiveElement? get identifiedDateTimeElement;
-  @override
 
   /// [identifiedPeriod] The date or period when the detected issue was initially
   ///  identified.
-  Period? get identifiedPeriod;
   @override
+  Period? get identifiedPeriod;
 
   /// [author] Individual or device responsible for the issue being raised.  For
   ///  example, a decision support application or a pharmacist conducting a
   ///  medication review.
-  Reference? get author;
   @override
+  Reference? get author;
 
   /// [implicated] Indicates the resource representing the current activity or
   ///  proposed activity that is potentially problematic.
-  List<Reference>? get implicated;
   @override
+  List<Reference>? get implicated;
 
   /// [evidence] Supporting evidence or manifestations that provide the basis for
   ///  identifying the detected issue such as a GuidanceResponse or MeasureReport.
-  List<DetectedIssueEvidence>? get evidence;
   @override
+  List<DetectedIssueEvidence>? get evidence;
 
   /// [detail] A textual explanation of the detected issue.
-  FhirMarkdown? get detail;
   @override
+  FhirMarkdown? get detail;
 
   /// [detailElement] ("_detail") Extensions for detail
+  @override
   @JsonKey(name: '_detail')
   PrimitiveElement? get detailElement;
-  @override
 
   /// [reference] The literature, knowledge-base or similar reference that
   ///  describes the propensity for the detected issue identified.
-  FhirUri? get reference;
   @override
+  FhirUri? get reference;
 
   /// [referenceElement] ("_reference") Extensions for reference
+  @override
   @JsonKey(name: '_reference')
   PrimitiveElement? get referenceElement;
-  @override
 
   /// [mitigation] Indicates an action that has been taken or is committed to
   ///  reduce or eliminate the likelihood of the risk identified by the detected
   ///  issue from manifesting.  Can also reflect an observation of known
   ///  mitigating factors that may reduce/eliminate the need for any action.
-  List<DetectedIssueMitigation>? get mitigation;
   @override
-  @JsonKey(ignore: true)
+  List<DetectedIssueMitigation>? get mitigation;
+
+  /// Create a copy of DetectedIssue
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DetectedIssueImplCopyWith<_$DetectedIssueImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1422,8 +1448,12 @@ mixin _$DetectedIssueEvidence {
   ///  such as a GuidanceResponse or MeasureReport.
   List<Reference>? get detail => throw _privateConstructorUsedError;
 
+  /// Serializes this DetectedIssueEvidence to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DetectedIssueEvidence
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DetectedIssueEvidenceCopyWith<DetectedIssueEvidence> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1453,6 +1483,8 @@ class _$DetectedIssueEvidenceCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DetectedIssueEvidence
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1513,6 +1545,8 @@ class __$$DetectedIssueEvidenceImplCopyWithImpl<$Res>
       $Res Function(_$DetectedIssueEvidenceImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DetectedIssueEvidence
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1677,7 +1711,7 @@ class _$DetectedIssueEvidenceImpl extends _DetectedIssueEvidence {
             const DeepCollectionEquality().equals(other._detail, _detail));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1687,7 +1721,9 @@ class _$DetectedIssueEvidenceImpl extends _DetectedIssueEvidence {
       const DeepCollectionEquality().hash(_code),
       const DeepCollectionEquality().hash(_detail));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DetectedIssueEvidence
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DetectedIssueEvidenceImplCopyWith<_$DetectedIssueEvidenceImpl>
@@ -1714,12 +1750,10 @@ abstract class _DetectedIssueEvidence extends DetectedIssueEvidence {
   factory _DetectedIssueEvidence.fromJson(Map<String, dynamic> json) =
       _$DetectedIssueEvidenceImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -1727,9 +1761,9 @@ abstract class _DetectedIssueEvidence extends DetectedIssueEvidence {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -1743,18 +1777,22 @@ abstract class _DetectedIssueEvidence extends DetectedIssueEvidence {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [code] A manifestation that led to the recording of this detected issue.
-  List<CodeableConcept>? get code;
   @override
+  List<CodeableConcept>? get code;
 
   /// [detail] Links to resources that constitute evidence for the detected issue
   ///  such as a GuidanceResponse or MeasureReport.
-  List<Reference>? get detail;
   @override
-  @JsonKey(ignore: true)
+  List<Reference>? get detail;
+
+  /// Create a copy of DetectedIssueEvidence
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DetectedIssueEvidenceImplCopyWith<_$DetectedIssueEvidenceImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1815,8 +1853,12 @@ mixin _$DetectedIssueMitigation {
   ///  provided.
   List<Annotation>? get note => throw _privateConstructorUsedError;
 
+  /// Serializes this DetectedIssueMitigation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DetectedIssueMitigation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DetectedIssueMitigationCopyWith<DetectedIssueMitigation> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1852,6 +1894,8 @@ class _$DetectedIssueMitigationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DetectedIssueMitigation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1900,6 +1944,8 @@ class _$DetectedIssueMitigationCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of DetectedIssueMitigation
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get action {
@@ -1908,6 +1954,8 @@ class _$DetectedIssueMitigationCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of DetectedIssueMitigation
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get author {
@@ -1956,6 +2004,8 @@ class __$$DetectedIssueMitigationImplCopyWithImpl<$Res>
       $Res Function(_$DetectedIssueMitigationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DetectedIssueMitigation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2151,7 +2201,7 @@ class _$DetectedIssueMitigationImpl extends _DetectedIssueMitigation {
             const DeepCollectionEquality().equals(other._note, _note));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2164,7 +2214,9 @@ class _$DetectedIssueMitigationImpl extends _DetectedIssueMitigation {
       author,
       const DeepCollectionEquality().hash(_note));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DetectedIssueMitigation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DetectedIssueMitigationImplCopyWith<_$DetectedIssueMitigationImpl>
@@ -2194,12 +2246,10 @@ abstract class _DetectedIssueMitigation extends DetectedIssueMitigation {
   factory _DetectedIssueMitigation.fromJson(Map<String, dynamic> json) =
       _$DetectedIssueMitigationImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2207,9 +2257,9 @@ abstract class _DetectedIssueMitigation extends DetectedIssueMitigation {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2223,35 +2273,39 @@ abstract class _DetectedIssueMitigation extends DetectedIssueMitigation {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [action] Describes the action that was taken or the observation that was
   ///  made that reduces/eliminates the risk associated with the identified issue.
-  CodeableConcept get action;
   @override
+  CodeableConcept get action;
 
   /// [date] Indicates when the mitigating action was documented.
-  FhirDateTime? get date;
   @override
+  FhirDateTime? get date;
 
   /// [dateElement] ("_date") Extensions for date
+  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
-  @override
 
   /// [author] Identifies the practitioner who determined the mitigation and
   ///  takes responsibility for the mitigation step occurring.
-  Reference? get author;
   @override
+  Reference? get author;
 
   /// [note] Clinicians may add additional notes or justifications about the
   ///  mitigation action. For example, patient can have this drug because they
   ///  have had it before without any issues. Multiple justifications may be
   ///  provided.
-  List<Annotation>? get note;
   @override
-  @JsonKey(ignore: true)
+  List<Annotation>? get note;
+
+  /// Create a copy of DetectedIssueMitigation
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DetectedIssueMitigationImplCopyWith<_$DetectedIssueMitigationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -306,8 +306,12 @@ mixin _$Citation {
   CitationCitedArtifact? get citedArtifact =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this Citation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Citation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationCopyWith<Citation> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -397,6 +401,8 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Citation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -700,6 +706,8 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
     ) as $Val);
   }
 
+  /// Create a copy of Citation
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -712,6 +720,8 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
     });
   }
 
+  /// Create a copy of Citation
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -724,6 +734,8 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
     });
   }
 
+  /// Create a copy of Citation
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get versionAlgorithmCoding {
@@ -736,6 +748,8 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
     });
   }
 
+  /// Create a copy of Citation
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get effectivePeriod {
@@ -748,6 +762,8 @@ class _$CitationCopyWithImpl<$Res, $Val extends Citation>
     });
   }
 
+  /// Create a copy of Citation
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CitationCitedArtifactCopyWith<$Res>? get citedArtifact {
@@ -852,6 +868,8 @@ class __$$CitationImplCopyWithImpl<$Res>
       _$CitationImpl _value, $Res Function(_$CitationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Citation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1880,7 +1898,7 @@ class _$CitationImpl extends _Citation {
             (identical(other.citedArtifact, citedArtifact) || other.citedArtifact == citedArtifact));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1945,7 +1963,9 @@ class _$CitationImpl extends _Citation {
         citedArtifact
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Citation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationImplCopyWith<_$CitationImpl> get copyWith =>
@@ -2032,44 +2052,42 @@ abstract class _Citation extends Citation {
   factory _Citation.fromJson(Map<String, dynamic> json) =
       _$CitationImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a Citation resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.Citation)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -2077,16 +2095,16 @@ abstract class _Citation extends Citation {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -2094,9 +2112,9 @@ abstract class _Citation extends Citation {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -2110,8 +2128,8 @@ abstract class _Citation extends Citation {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [url] An absolute URI that is used to identify this citation record when it
   ///  is referenced in a specification, model, design or an instance; also
@@ -2120,19 +2138,19 @@ abstract class _Citation extends Citation {
   ///  (or will be) published. This URL can be the target of a canonical
   ///  reference. It SHALL remain the same when the summary is stored on
   ///  different servers.
-  FhirUri? get url;
   @override
+  FhirUri? get url;
 
   /// [urlElement] ("_url") Extensions for url
+  @override
   @JsonKey(name: '_url')
   PrimitiveElement? get urlElement;
-  @override
 
   /// [identifier] A formal identifier that is used to identify this citation
   ///  record when it is represented in other formats, or referenced in a
   ///  specification, model, design or an instance.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [version] The identifier that is used to identify this version of the
   ///  citation record when it is referenced in a specification, model, design or
@@ -2141,232 +2159,236 @@ abstract class _Citation extends Citation {
   ///  timestamp (e.g. yyyymmdd) if a managed version is not available. There is
   ///  also no expectation that versions can be placed in a lexicographical
   ///  sequence.
-  String? get version;
   @override
+  String? get version;
 
   /// [versionElement] ("_version") Extensions for version
+  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
-  @override
 
   /// [versionAlgorithmString] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  String? get versionAlgorithmString;
   @override
+  String? get versionAlgorithmString;
 
   /// [versionAlgorithmStringElement] ("_versionAlgorithmString") Extensions for
   ///  versionAlgorithmString
+  @override
   @JsonKey(name: '_versionAlgorithmString')
   PrimitiveElement? get versionAlgorithmStringElement;
-  @override
 
   /// [versionAlgorithmCoding] Indicates the mechanism used to compare versions
   ///  to determine which is more current.
-  Coding? get versionAlgorithmCoding;
   @override
+  Coding? get versionAlgorithmCoding;
 
   /// [name] A natural language name identifying the citation record. This name
   ///  should be usable as an identifier for the module by machine processing
   ///  applications such as code generation.
-  String? get name;
   @override
+  String? get name;
 
   /// [nameElement] ("_name") Extensions for name
+  @override
   @JsonKey(name: '_name')
   PrimitiveElement? get nameElement;
-  @override
 
   /// [title] A short, descriptive, user-friendly title for the citation record.
-  String? get title;
   @override
+  String? get title;
 
   /// [titleElement] ("_title") Extensions for title
+  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
-  @override
 
   /// [status] The status of this summary. Enables tracking the life-cycle of the
   ///  content.
-  FhirCode? get status;
   @override
+  FhirCode? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [experimental] A Boolean value to indicate that this citation record is
   ///  authored for testing purposes (or education/evaluation/marketing) and is
   ///  not intended to be used for genuine usage.
-  FhirBoolean? get experimental;
   @override
+  FhirBoolean? get experimental;
 
   /// [experimentalElement] ("_experimental") Extensions for experimental
+  @override
   @JsonKey(name: '_experimental')
   PrimitiveElement? get experimentalElement;
-  @override
 
   /// [date] The date (and optionally time) when the citation record was last
   ///  significantly changed. The date must change when the business version
   ///  changes and it must change if the status code changes. In addition, it
   ///  should change when the substantive content of the citation record changes.
-  FhirDateTime? get date;
   @override
+  FhirDateTime? get date;
 
   /// [dateElement] ("_date") Extensions for date
+  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
-  @override
 
   /// [publisher] The name of the organization or individual that published the
   ///  citation record.
-  String? get publisher;
   @override
+  String? get publisher;
 
   /// [publisherElement] ("_publisher") Extensions for publisher
+  @override
   @JsonKey(name: '_publisher')
   PrimitiveElement? get publisherElement;
-  @override
 
   /// [contact] Contact details to assist a user in finding and communicating
   ///  with the publisher.
-  List<ContactDetail>? get contact;
   @override
+  List<ContactDetail>? get contact;
 
   /// [description] A free text natural language description of the citation from
   ///  a consumer's perspective.
-  FhirMarkdown? get description;
   @override
+  FhirMarkdown? get description;
 
   /// [descriptionElement] ("_description") Extensions for description
+  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
-  @override
 
   /// [useContext] The content was developed with a focus and intent of
   ///  supporting the contexts that are listed. These contexts may be general
   ///  categories (gender, age, ...) or may be references to specific programs
   ///  (insurance plans, studies, ...) and may be used to assist with indexing
   ///  and searching for appropriate citation record instances.
-  List<UsageContext>? get useContext;
   @override
+  List<UsageContext>? get useContext;
 
   /// [jurisdiction] A legal or geographic region in which the citation record is
   ///  intended to be used.
-  List<CodeableConcept>? get jurisdiction;
   @override
+  List<CodeableConcept>? get jurisdiction;
 
   /// [purpose] Explanation of why this citation is needed and why it has been
   ///  designed as it has.
-  FhirMarkdown? get purpose;
   @override
+  FhirMarkdown? get purpose;
 
   /// [purposeElement] ("_purpose") Extensions for purpose
+  @override
   @JsonKey(name: '_purpose')
   PrimitiveElement? get purposeElement;
-  @override
 
   /// [copyright] Use and/or publishing restrictions for the citation record, not
   ///  for the cited artifact.
-  FhirMarkdown? get copyright;
   @override
+  FhirMarkdown? get copyright;
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
+  @override
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement;
-  @override
 
   /// [copyrightLabel] A short string (<50 characters), suitable for inclusion in
   ///  a page footer that identifies the copyright holder, effective period, and
   ///  optionally whether rights are resctricted. (e.g. 'All rights reserved',
   ///  'Some rights reserved').
-  String? get copyrightLabel;
   @override
+  String? get copyrightLabel;
 
   /// [copyrightLabelElement] ("_copyrightLabel") Extensions for copyrightLabel
+  @override
   @JsonKey(name: '_copyrightLabel')
   PrimitiveElement? get copyrightLabelElement;
-  @override
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
   ///  for usage.
-  FhirDate? get approvalDate;
   @override
+  FhirDate? get approvalDate;
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
+  @override
   @JsonKey(name: '_approvalDate')
   PrimitiveElement? get approvalDateElement;
-  @override
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
   ///  original approval date.
-  FhirDate? get lastReviewDate;
   @override
+  FhirDate? get lastReviewDate;
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
+  @override
   @JsonKey(name: '_lastReviewDate')
   PrimitiveElement? get lastReviewDateElement;
-  @override
 
   /// [effectivePeriod] The period during which the citation record content was
   ///  or is planned to be in active use.
-  Period? get effectivePeriod;
   @override
+  Period? get effectivePeriod;
 
   /// [topic] Descriptive topics related to the content of the {{title}}. Topics
   ///  provide a high-level categorization as well as keywords for the {{title}}
   ///  that can be useful for filtering and searching.
-  List<CodeableConcept>? get topic;
   @override
+  List<CodeableConcept>? get topic;
 
   /// [author] Who authored or created the citation record.
-  List<ContactDetail>? get author;
   @override
+  List<ContactDetail>? get author;
 
   /// [editor] Who edited or revised the citation record.
-  List<ContactDetail>? get editor;
   @override
+  List<ContactDetail>? get editor;
 
   /// [reviewer] Who reviewed the citation record.
-  List<ContactDetail>? get reviewer;
   @override
+  List<ContactDetail>? get reviewer;
 
   /// [endorser] Who endorsed the citation record.
-  List<ContactDetail>? get endorser;
   @override
+  List<ContactDetail>? get endorser;
 
   /// [relatedArtifact] Artifact related to the citation record.
-  List<RelatedArtifact>? get relatedArtifact;
   @override
+  List<RelatedArtifact>? get relatedArtifact;
 
   /// [summary] A human-readable display of key concepts to represent the
   ///  citation.
-  List<CitationSummary>? get summary;
   @override
+  List<CitationSummary>? get summary;
 
   /// [classification] The assignment to an organizing scheme.
-  List<CitationClassification>? get classification;
   @override
+  List<CitationClassification>? get classification;
 
   /// [note] Used for general notes and annotations not coded elsewhere.
-  List<Annotation>? get note;
   @override
+  List<Annotation>? get note;
 
   /// [currentState] The status of the citation record.
-  List<CodeableConcept>? get currentState;
   @override
+  List<CodeableConcept>? get currentState;
 
   /// [statusDate] The state or status of the citation record paired with an
   ///  effective date or period for that state.
-  List<CitationStatusDate>? get statusDate;
   @override
+  List<CitationStatusDate>? get statusDate;
 
   /// [citedArtifact] The article or artifact being described.
-  CitationCitedArtifact? get citedArtifact;
   @override
-  @JsonKey(ignore: true)
+  CitationCitedArtifact? get citedArtifact;
+
+  /// Create a copy of Citation
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationImplCopyWith<_$CitationImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2415,8 +2437,12 @@ mixin _$CitationSummary {
   @JsonKey(name: '_text')
   PrimitiveElement? get textElement => throw _privateConstructorUsedError;
 
+  /// Serializes this CitationSummary to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationSummary
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationSummaryCopyWith<CitationSummary> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2448,6 +2474,8 @@ class _$CitationSummaryCopyWithImpl<$Res, $Val extends CitationSummary>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationSummary
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2486,6 +2514,8 @@ class _$CitationSummaryCopyWithImpl<$Res, $Val extends CitationSummary>
     ) as $Val);
   }
 
+  /// Create a copy of CitationSummary
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get style {
@@ -2527,6 +2557,8 @@ class __$$CitationSummaryImplCopyWithImpl<$Res>
       _$CitationSummaryImpl _value, $Res Function(_$CitationSummaryImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationSummary
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2682,7 +2714,7 @@ class _$CitationSummaryImpl extends _CitationSummary {
                 other.textElement == textElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2693,7 +2725,9 @@ class _$CitationSummaryImpl extends _CitationSummary {
       text,
       textElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationSummary
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationSummaryImplCopyWith<_$CitationSummaryImpl> get copyWith =>
@@ -2722,12 +2756,10 @@ abstract class _CitationSummary extends CitationSummary {
   factory _CitationSummary.fromJson(Map<String, dynamic> json) =
       _$CitationSummaryImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2735,9 +2767,9 @@ abstract class _CitationSummary extends CitationSummary {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2751,22 +2783,26 @@ abstract class _CitationSummary extends CitationSummary {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [style] Format for display of the citation summary.
-  CodeableConcept? get style;
   @override
+  CodeableConcept? get style;
 
   /// [text] The human-readable display of the citation summary.
-  FhirMarkdown? get text;
   @override
+  FhirMarkdown? get text;
 
   /// [textElement] ("_text") Extensions for text
+  @override
   @JsonKey(name: '_text')
   PrimitiveElement? get textElement;
+
+  /// Create a copy of CitationSummary
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationSummaryImplCopyWith<_$CitationSummaryImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2812,8 +2848,12 @@ mixin _$CitationClassification {
   /// [classifier] The specific classification value.
   List<CodeableConcept>? get classifier => throw _privateConstructorUsedError;
 
+  /// Serializes this CitationClassification to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationClassification
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationClassificationCopyWith<CitationClassification> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2845,6 +2885,8 @@ class _$CitationClassificationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationClassification
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2878,6 +2920,8 @@ class _$CitationClassificationCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of CitationClassification
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -2921,6 +2965,8 @@ class __$$CitationClassificationImplCopyWithImpl<$Res>
       $Res Function(_$CitationClassificationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationClassification
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3074,7 +3120,7 @@ class _$CitationClassificationImpl extends _CitationClassification {
                 .equals(other._classifier, _classifier));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3084,7 +3130,9 @@ class _$CitationClassificationImpl extends _CitationClassification {
       type,
       const DeepCollectionEquality().hash(_classifier));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationClassification
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationClassificationImplCopyWith<_$CitationClassificationImpl>
@@ -3111,12 +3159,10 @@ abstract class _CitationClassification extends CitationClassification {
   factory _CitationClassification.fromJson(Map<String, dynamic> json) =
       _$CitationClassificationImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3124,9 +3170,9 @@ abstract class _CitationClassification extends CitationClassification {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3140,17 +3186,21 @@ abstract class _CitationClassification extends CitationClassification {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] The kind of classifier (e.g. publication type, keyword).
-  CodeableConcept? get type;
   @override
+  CodeableConcept? get type;
 
   /// [classifier] The specific classification value.
-  List<CodeableConcept>? get classifier;
   @override
-  @JsonKey(ignore: true)
+  List<CodeableConcept>? get classifier;
+
+  /// Create a copy of CitationClassification
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationClassificationImplCopyWith<_$CitationClassificationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3204,8 +3254,12 @@ mixin _$CitationStatusDate {
   /// [period] When the status started and/or ended.
   Period get period => throw _privateConstructorUsedError;
 
+  /// Serializes this CitationStatusDate to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationStatusDate
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationStatusDateCopyWith<CitationStatusDate> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3239,6 +3293,8 @@ class _$CitationStatusDateCopyWithImpl<$Res, $Val extends CitationStatusDate>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationStatusDate
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3282,6 +3338,8 @@ class _$CitationStatusDateCopyWithImpl<$Res, $Val extends CitationStatusDate>
     ) as $Val);
   }
 
+  /// Create a copy of CitationStatusDate
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get activity {
@@ -3290,6 +3348,8 @@ class _$CitationStatusDateCopyWithImpl<$Res, $Val extends CitationStatusDate>
     });
   }
 
+  /// Create a copy of CitationStatusDate
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res> get period {
@@ -3330,6 +3390,8 @@ class __$$CitationStatusDateImplCopyWithImpl<$Res>
       $Res Function(_$CitationStatusDateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationStatusDate
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3499,7 +3561,7 @@ class _$CitationStatusDateImpl extends _CitationStatusDate {
             (identical(other.period, period) || other.period == period));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3511,7 +3573,9 @@ class _$CitationStatusDateImpl extends _CitationStatusDate {
       actualElement,
       period);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationStatusDate
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationStatusDateImplCopyWith<_$CitationStatusDateImpl> get copyWith =>
@@ -3540,12 +3604,10 @@ abstract class _CitationStatusDate extends CitationStatusDate {
   factory _CitationStatusDate.fromJson(Map<String, dynamic> json) =
       _$CitationStatusDateImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3553,9 +3615,9 @@ abstract class _CitationStatusDate extends CitationStatusDate {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3569,28 +3631,32 @@ abstract class _CitationStatusDate extends CitationStatusDate {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [activity] The state or status of the citation record (that will be paired
   ///  with the period).
-  CodeableConcept get activity;
   @override
+  CodeableConcept get activity;
 
   /// [actual] Whether the status date is actual (has occurred) or expected
   ///  (estimated or anticipated).
-  FhirBoolean? get actual;
   @override
+  FhirBoolean? get actual;
 
   /// [actualElement] ("_actual") Extensions for actual
+  @override
   @JsonKey(name: '_actual')
   PrimitiveElement? get actualElement;
-  @override
 
   /// [period] When the status started and/or ended.
-  Period get period;
   @override
-  @JsonKey(ignore: true)
+  Period get period;
+
+  /// Create a copy of CitationStatusDate
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationStatusDateImplCopyWith<_$CitationStatusDateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3696,8 +3762,12 @@ mixin _$CitationCitedArtifact {
   /// [note] Any additional information or content for the article or artifact.
   List<Annotation>? get note => throw _privateConstructorUsedError;
 
+  /// Serializes this CitationCitedArtifact to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationCitedArtifact
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationCitedArtifactCopyWith<CitationCitedArtifact> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3745,6 +3815,8 @@ class _$CitationCitedArtifactCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationCitedArtifact
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3848,6 +3920,8 @@ class _$CitationCitedArtifactCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of CitationCitedArtifact
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CitationVersionCopyWith<$Res>? get version {
@@ -3860,6 +3934,8 @@ class _$CitationCitedArtifactCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CitationCitedArtifact
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CitationPartCopyWith<$Res>? get part_ {
@@ -3872,6 +3948,8 @@ class _$CitationCitedArtifactCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CitationCitedArtifact
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CitationContributorshipCopyWith<$Res>? get contributorship {
@@ -3933,6 +4011,8 @@ class __$$CitationCitedArtifactImplCopyWithImpl<$Res>
       $Res Function(_$CitationCitedArtifactImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationCitedArtifact
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4371,7 +4451,7 @@ class _$CitationCitedArtifactImpl extends _CitationCitedArtifact {
             const DeepCollectionEquality().equals(other._note, _note));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -4396,7 +4476,9 @@ class _$CitationCitedArtifactImpl extends _CitationCitedArtifact {
         const DeepCollectionEquality().hash(_note)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationCitedArtifact
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationCitedArtifactImplCopyWith<_$CitationCitedArtifactImpl>
@@ -4438,12 +4520,10 @@ abstract class _CitationCitedArtifact extends CitationCitedArtifact {
   factory _CitationCitedArtifact.fromJson(Map<String, dynamic> json) =
       _$CitationCitedArtifactImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4451,9 +4531,9 @@ abstract class _CitationCitedArtifact extends CitationCitedArtifact {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4467,85 +4547,89 @@ abstract class _CitationCitedArtifact extends CitationCitedArtifact {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] A formal identifier that is used to identify the cited
   ///  artifact when it is represented in other formats, or referenced in a
   ///  specification, model, design or an instance.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [relatedIdentifier] A formal identifier that is used to identify things
   ///  closely related to the cited artifact.
-  List<Identifier>? get relatedIdentifier;
   @override
+  List<Identifier>? get relatedIdentifier;
 
   /// [dateAccessed] When the cited artifact was accessed.
-  FhirDateTime? get dateAccessed;
   @override
+  FhirDateTime? get dateAccessed;
 
   /// [dateAccessedElement] ("_dateAccessed") Extensions for dateAccessed
+  @override
   @JsonKey(name: '_dateAccessed')
   PrimitiveElement? get dateAccessedElement;
-  @override
 
   /// [version] The defined version of the cited artifact.
-  CitationVersion? get version;
   @override
+  CitationVersion? get version;
 
   /// [currentState] The status of the cited artifact.
-  List<CodeableConcept>? get currentState;
   @override
+  List<CodeableConcept>? get currentState;
 
   /// [statusDate] An effective date or period, historical or future, actual or
   ///  expected, for a status of the cited artifact.
-  List<CitationStatusDate1>? get statusDate;
   @override
+  List<CitationStatusDate1>? get statusDate;
 
   /// [title] The title details of the article or artifact.
-  List<CitationTitle>? get title;
   @override
+  List<CitationTitle>? get title;
 
   /// [abstract_] ("abstract") The abstract may be used to convey
   ///  article-contained abstracts, externally-created abstracts, or other
   ///  descriptive summaries.
+  @override
   @JsonKey(name: 'abstract')
   List<CitationAbstract>? get abstract_;
-  @override
 
   /// [part_] ("part") The component of the article or artifact.
+  @override
   @JsonKey(name: 'part')
   CitationPart? get part_;
-  @override
 
   /// [relatesTo] The artifact related to the cited artifact.
-  List<CitationRelatesTo>? get relatesTo;
   @override
+  List<CitationRelatesTo>? get relatesTo;
 
   /// [publicationForm] If multiple, used to represent alternative forms of the
   ///  article that are not separate citations.
-  List<CitationPublicationForm>? get publicationForm;
   @override
+  List<CitationPublicationForm>? get publicationForm;
 
   /// [webLocation] Used for any URL for the article or artifact cited.
-  List<CitationWebLocation>? get webLocation;
   @override
+  List<CitationWebLocation>? get webLocation;
 
   /// [classification] The assignment to an organizing scheme.
-  List<CitationClassification1>? get classification;
   @override
+  List<CitationClassification1>? get classification;
 
   /// [contributorship] This element is used to list authors and other
   ///  contributors, their contact information, specific contributions, and
   ///  summary statements.
-  CitationContributorship? get contributorship;
   @override
+  CitationContributorship? get contributorship;
 
   /// [note] Any additional information or content for the article or artifact.
-  List<Annotation>? get note;
   @override
-  @JsonKey(ignore: true)
+  List<Annotation>? get note;
+
+  /// Create a copy of CitationCitedArtifact
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationCitedArtifactImplCopyWith<_$CitationCitedArtifactImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4594,8 +4678,12 @@ mixin _$CitationVersion {
   /// [baseCitation] Citation for the main version of the cited artifact.
   Reference? get baseCitation => throw _privateConstructorUsedError;
 
+  /// Serializes this CitationVersion to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationVersion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationVersionCopyWith<CitationVersion> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4627,6 +4715,8 @@ class _$CitationVersionCopyWithImpl<$Res, $Val extends CitationVersion>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationVersion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4665,6 +4755,8 @@ class _$CitationVersionCopyWithImpl<$Res, $Val extends CitationVersion>
     ) as $Val);
   }
 
+  /// Create a copy of CitationVersion
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get baseCitation {
@@ -4706,6 +4798,8 @@ class __$$CitationVersionImplCopyWithImpl<$Res>
       _$CitationVersionImpl _value, $Res Function(_$CitationVersionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationVersion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4862,7 +4956,7 @@ class _$CitationVersionImpl extends _CitationVersion {
                 other.baseCitation == baseCitation));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4873,7 +4967,9 @@ class _$CitationVersionImpl extends _CitationVersion {
       valueElement,
       baseCitation);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationVersion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationVersionImplCopyWith<_$CitationVersionImpl> get copyWith =>
@@ -4901,12 +4997,10 @@ abstract class _CitationVersion extends CitationVersion {
   factory _CitationVersion.fromJson(Map<String, dynamic> json) =
       _$CitationVersionImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4914,9 +5008,9 @@ abstract class _CitationVersion extends CitationVersion {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4930,22 +5024,26 @@ abstract class _CitationVersion extends CitationVersion {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [value] The version number or other version identifier.
-  String? get value;
   @override
+  String? get value;
 
   /// [valueElement] ("_value") Extensions for value
+  @override
   @JsonKey(name: '_value')
   PrimitiveElement? get valueElement;
-  @override
 
   /// [baseCitation] Citation for the main version of the cited artifact.
-  Reference? get baseCitation;
   @override
-  @JsonKey(ignore: true)
+  Reference? get baseCitation;
+
+  /// Create a copy of CitationVersion
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationVersionImplCopyWith<_$CitationVersionImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -4997,8 +5095,12 @@ mixin _$CitationStatusDate1 {
   /// [period] When the status started and/or ended.
   Period get period => throw _privateConstructorUsedError;
 
+  /// Serializes this CitationStatusDate1 to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationStatusDate1
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationStatusDate1CopyWith<CitationStatusDate1> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5032,6 +5134,8 @@ class _$CitationStatusDate1CopyWithImpl<$Res, $Val extends CitationStatusDate1>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationStatusDate1
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5075,6 +5179,8 @@ class _$CitationStatusDate1CopyWithImpl<$Res, $Val extends CitationStatusDate1>
     ) as $Val);
   }
 
+  /// Create a copy of CitationStatusDate1
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get activity {
@@ -5083,6 +5189,8 @@ class _$CitationStatusDate1CopyWithImpl<$Res, $Val extends CitationStatusDate1>
     });
   }
 
+  /// Create a copy of CitationStatusDate1
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res> get period {
@@ -5123,6 +5231,8 @@ class __$$CitationStatusDate1ImplCopyWithImpl<$Res>
       $Res Function(_$CitationStatusDate1Impl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationStatusDate1
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5290,7 +5400,7 @@ class _$CitationStatusDate1Impl extends _CitationStatusDate1 {
             (identical(other.period, period) || other.period == period));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -5302,7 +5412,9 @@ class _$CitationStatusDate1Impl extends _CitationStatusDate1 {
       actualElement,
       period);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationStatusDate1
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationStatusDate1ImplCopyWith<_$CitationStatusDate1Impl> get copyWith =>
@@ -5331,12 +5443,10 @@ abstract class _CitationStatusDate1 extends CitationStatusDate1 {
   factory _CitationStatusDate1.fromJson(Map<String, dynamic> json) =
       _$CitationStatusDate1Impl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5344,9 +5454,9 @@ abstract class _CitationStatusDate1 extends CitationStatusDate1 {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5360,26 +5470,30 @@ abstract class _CitationStatusDate1 extends CitationStatusDate1 {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [activity] A definition of the status associated with a date or period.
-  CodeableConcept get activity;
   @override
+  CodeableConcept get activity;
 
   /// [actual] Either occurred or expected.
-  FhirBoolean? get actual;
   @override
+  FhirBoolean? get actual;
 
   /// [actualElement] ("_actual") Extensions for actual
+  @override
   @JsonKey(name: '_actual')
   PrimitiveElement? get actualElement;
-  @override
 
   /// [period] When the status started and/or ended.
-  Period get period;
   @override
-  @JsonKey(ignore: true)
+  Period get period;
+
+  /// Create a copy of CitationStatusDate1
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationStatusDate1ImplCopyWith<_$CitationStatusDate1Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5431,8 +5545,12 @@ mixin _$CitationTitle {
   @JsonKey(name: '_text')
   PrimitiveElement? get textElement => throw _privateConstructorUsedError;
 
+  /// Serializes this CitationTitle to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationTitle
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationTitleCopyWith<CitationTitle> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5465,6 +5583,8 @@ class _$CitationTitleCopyWithImpl<$Res, $Val extends CitationTitle>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationTitle
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5508,6 +5628,8 @@ class _$CitationTitleCopyWithImpl<$Res, $Val extends CitationTitle>
     ) as $Val);
   }
 
+  /// Create a copy of CitationTitle
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get language {
@@ -5550,6 +5672,8 @@ class __$$CitationTitleImplCopyWithImpl<$Res>
       _$CitationTitleImpl _value, $Res Function(_$CitationTitleImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationTitle
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5727,7 +5851,7 @@ class _$CitationTitleImpl extends _CitationTitle {
                 other.textElement == textElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -5739,7 +5863,9 @@ class _$CitationTitleImpl extends _CitationTitle {
       text,
       textElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationTitle
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationTitleImplCopyWith<_$CitationTitleImpl> get copyWith =>
@@ -5768,12 +5894,10 @@ abstract class _CitationTitle extends CitationTitle {
   factory _CitationTitle.fromJson(Map<String, dynamic> json) =
       _$CitationTitleImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5781,9 +5905,9 @@ abstract class _CitationTitle extends CitationTitle {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5797,26 +5921,30 @@ abstract class _CitationTitle extends CitationTitle {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] Used to express the reason for or classification of the title.
-  List<CodeableConcept>? get type;
   @override
+  List<CodeableConcept>? get type;
 
   /// [language] Used to express the specific language of the title.
-  CodeableConcept? get language;
   @override
+  CodeableConcept? get language;
 
   /// [text] The title of the article or artifact.
-  FhirMarkdown? get text;
   @override
+  FhirMarkdown? get text;
 
   /// [textElement] ("_text") Extensions for text
+  @override
   @JsonKey(name: '_text')
   PrimitiveElement? get textElement;
+
+  /// Create a copy of CitationTitle
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationTitleImplCopyWith<_$CitationTitleImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5875,8 +6003,12 @@ mixin _$CitationAbstract {
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
+  /// Serializes this CitationAbstract to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationAbstract
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationAbstractCopyWith<CitationAbstract> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5912,6 +6044,8 @@ class _$CitationAbstractCopyWithImpl<$Res, $Val extends CitationAbstract>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationAbstract
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5965,6 +6099,8 @@ class _$CitationAbstractCopyWithImpl<$Res, $Val extends CitationAbstract>
     ) as $Val);
   }
 
+  /// Create a copy of CitationAbstract
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -5977,6 +6113,8 @@ class _$CitationAbstractCopyWithImpl<$Res, $Val extends CitationAbstract>
     });
   }
 
+  /// Create a copy of CitationAbstract
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get language {
@@ -6023,6 +6161,8 @@ class __$$CitationAbstractImplCopyWithImpl<$Res>
       $Res Function(_$CitationAbstractImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationAbstract
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6215,7 +6355,7 @@ class _$CitationAbstractImpl extends _CitationAbstract {
                 other.copyrightElement == copyrightElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -6229,7 +6369,9 @@ class _$CitationAbstractImpl extends _CitationAbstract {
       copyright,
       copyrightElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationAbstract
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationAbstractImplCopyWith<_$CitationAbstractImpl> get copyWith =>
@@ -6261,12 +6403,10 @@ abstract class _CitationAbstract extends CitationAbstract {
   factory _CitationAbstract.fromJson(Map<String, dynamic> json) =
       _$CitationAbstractImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -6274,9 +6414,9 @@ abstract class _CitationAbstract extends CitationAbstract {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -6290,35 +6430,39 @@ abstract class _CitationAbstract extends CitationAbstract {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] Used to express the reason for or classification of the abstract.
-  CodeableConcept? get type;
   @override
+  CodeableConcept? get type;
 
   /// [language] Used to express the specific language of the abstract.
-  CodeableConcept? get language;
   @override
+  CodeableConcept? get language;
 
   /// [text] Abstract content.
-  FhirMarkdown? get text;
   @override
+  FhirMarkdown? get text;
 
   /// [textElement] ("_text") Extensions for text
+  @override
   @JsonKey(name: '_text')
   PrimitiveElement? get textElement;
-  @override
 
   /// [copyright] Copyright notice for the abstract.
-  FhirMarkdown? get copyright;
   @override
+  FhirMarkdown? get copyright;
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
+  @override
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement;
+
+  /// Create a copy of CitationAbstract
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationAbstractImplCopyWith<_$CitationAbstractImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6370,8 +6514,12 @@ mixin _$CitationPart {
   /// [baseCitation] The citation for the full article or artifact.
   Reference? get baseCitation => throw _privateConstructorUsedError;
 
+  /// Serializes this CitationPart to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationPart
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationPartCopyWith<CitationPart> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6405,6 +6553,8 @@ class _$CitationPartCopyWithImpl<$Res, $Val extends CitationPart>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationPart
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6448,6 +6598,8 @@ class _$CitationPartCopyWithImpl<$Res, $Val extends CitationPart>
     ) as $Val);
   }
 
+  /// Create a copy of CitationPart
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -6460,6 +6612,8 @@ class _$CitationPartCopyWithImpl<$Res, $Val extends CitationPart>
     });
   }
 
+  /// Create a copy of CitationPart
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get baseCitation {
@@ -6504,6 +6658,8 @@ class __$$CitationPartImplCopyWithImpl<$Res>
       _$CitationPartImpl _value, $Res Function(_$CitationPartImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationPart
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6671,7 +6827,7 @@ class _$CitationPartImpl extends _CitationPart {
                 other.baseCitation == baseCitation));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -6683,7 +6839,9 @@ class _$CitationPartImpl extends _CitationPart {
       valueElement,
       baseCitation);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationPart
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationPartImplCopyWith<_$CitationPartImpl> get copyWith =>
@@ -6711,12 +6869,10 @@ abstract class _CitationPart extends CitationPart {
   factory _CitationPart.fromJson(Map<String, dynamic> json) =
       _$CitationPartImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -6724,9 +6880,9 @@ abstract class _CitationPart extends CitationPart {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -6740,26 +6896,30 @@ abstract class _CitationPart extends CitationPart {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] The kind of component.
-  CodeableConcept? get type;
   @override
+  CodeableConcept? get type;
 
   /// [value] The specification of the component.
-  String? get value;
   @override
+  String? get value;
 
   /// [valueElement] ("_value") Extensions for value
+  @override
   @JsonKey(name: '_value')
   PrimitiveElement? get valueElement;
-  @override
 
   /// [baseCitation] The citation for the full article or artifact.
-  Reference? get baseCitation;
   @override
-  @JsonKey(ignore: true)
+  Reference? get baseCitation;
+
+  /// Create a copy of CitationPart
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationPartImplCopyWith<_$CitationPartImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6849,8 +7009,12 @@ mixin _$CitationRelatesTo {
   ///  canonical resource, or a resource reference to a canonical resource.
   Reference? get resourceReference => throw _privateConstructorUsedError;
 
+  /// Serializes this CitationRelatesTo to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationRelatesTo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationRelatesToCopyWith<CitationRelatesTo> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -6893,6 +7057,8 @@ class _$CitationRelatesToCopyWithImpl<$Res, $Val extends CitationRelatesTo>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationRelatesTo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -6981,6 +7147,8 @@ class _$CitationRelatesToCopyWithImpl<$Res, $Val extends CitationRelatesTo>
     ) as $Val);
   }
 
+  /// Create a copy of CitationRelatesTo
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AttachmentCopyWith<$Res>? get document {
@@ -6993,6 +7161,8 @@ class _$CitationRelatesToCopyWithImpl<$Res, $Val extends CitationRelatesTo>
     });
   }
 
+  /// Create a copy of CitationRelatesTo
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get resourceReference {
@@ -7046,6 +7216,8 @@ class __$$CitationRelatesToImplCopyWithImpl<$Res>
       $Res Function(_$CitationRelatesToImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationRelatesTo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7341,7 +7513,7 @@ class _$CitationRelatesToImpl extends _CitationRelatesTo {
                 other.resourceReference == resourceReference));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -7362,7 +7534,9 @@ class _$CitationRelatesToImpl extends _CitationRelatesTo {
       resourceElement,
       resourceReference);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationRelatesTo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationRelatesToImplCopyWith<_$CitationRelatesToImpl> get copyWith =>
@@ -7400,12 +7574,10 @@ abstract class _CitationRelatesTo extends CitationRelatesTo {
   factory _CitationRelatesTo.fromJson(Map<String, dynamic> json) =
       _$CitationRelatesToImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -7413,9 +7585,9 @@ abstract class _CitationRelatesTo extends CitationRelatesTo {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -7429,73 +7601,77 @@ abstract class _CitationRelatesTo extends CitationRelatesTo {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] The type of relationship to the related artifact.
-  FhirCode? get type;
   @override
+  FhirCode? get type;
 
   /// [typeElement] ("_type") Extensions for type
+  @override
   @JsonKey(name: '_type')
   PrimitiveElement? get typeElement;
-  @override
 
   /// [classifier] Provides additional classifiers of the related artifact.
-  List<CodeableConcept>? get classifier;
   @override
+  List<CodeableConcept>? get classifier;
 
   /// [label] A short label that can be used to reference the related artifact
   ///  from elsewhere in the containing artifact, such as a footnote index.
-  String? get label;
   @override
+  String? get label;
 
   /// [labelElement] ("_label") Extensions for label
+  @override
   @JsonKey(name: '_label')
   PrimitiveElement? get labelElement;
-  @override
 
   /// [display] A brief description of the document or knowledge resource being
   ///  referenced, suitable for display to a consumer.
-  String? get display;
   @override
+  String? get display;
 
   /// [displayElement] ("_display") Extensions for display
+  @override
   @JsonKey(name: '_display')
   PrimitiveElement? get displayElement;
-  @override
 
   /// [citation] A bibliographic citation for the related artifact. This text
   ///  SHOULD be formatted according to an accepted citation format.
-  FhirMarkdown? get citation;
   @override
+  FhirMarkdown? get citation;
 
   /// [citationElement] ("_citation") Extensions for citation
+  @override
   @JsonKey(name: '_citation')
   PrimitiveElement? get citationElement;
-  @override
 
   /// [document] The document being referenced, represented as an attachment. Do
   ///  not use this element if using the resource element to provide the
   ///  canonical to the related artifact.
-  Attachment? get document;
   @override
+  Attachment? get document;
 
   /// [resource] The related artifact, such as a library, value set, profile, or
   ///  other knowledge resource.
-  FhirCanonical? get resource;
   @override
+  FhirCanonical? get resource;
 
   /// [resourceElement] ("_resource") Extensions for resource
+  @override
   @JsonKey(name: '_resource')
   PrimitiveElement? get resourceElement;
-  @override
 
   /// [resourceReference] The related artifact, if the artifact is not a
   ///  canonical resource, or a resource reference to a canonical resource.
-  Reference? get resourceReference;
   @override
-  @JsonKey(ignore: true)
+  Reference? get resourceReference;
+
+  /// Create a copy of CitationRelatesTo
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationRelatesToImplCopyWith<_$CitationRelatesToImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -7652,8 +7828,12 @@ mixin _$CitationPublicationForm {
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement => throw _privateConstructorUsedError;
 
+  /// Serializes this CitationPublicationForm to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationPublicationForm
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationPublicationFormCopyWith<CitationPublicationForm> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -7715,6 +7895,8 @@ class _$CitationPublicationFormCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationPublicationForm
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -7873,6 +8055,8 @@ class _$CitationPublicationFormCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of CitationPublicationForm
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CitationPublishedInCopyWith<$Res>? get publishedIn {
@@ -7885,6 +8069,8 @@ class _$CitationPublicationFormCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CitationPublicationForm
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get citedMedium {
@@ -7959,6 +8145,8 @@ class __$$CitationPublicationFormImplCopyWithImpl<$Res>
       $Res Function(_$CitationPublicationFormImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationPublicationForm
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -8446,7 +8634,7 @@ class _$CitationPublicationFormImpl extends _CitationPublicationForm {
                 other.copyrightElement == copyrightElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -8482,7 +8670,9 @@ class _$CitationPublicationFormImpl extends _CitationPublicationForm {
         copyrightElement
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationPublicationForm
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationPublicationFormImplCopyWith<_$CitationPublicationFormImpl>
@@ -8540,12 +8730,10 @@ abstract class _CitationPublicationForm extends CitationPublicationForm {
   factory _CitationPublicationForm.fromJson(Map<String, dynamic> json) =
       _$CitationPublicationFormImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -8553,9 +8741,9 @@ abstract class _CitationPublicationForm extends CitationPublicationForm {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -8569,12 +8757,12 @@ abstract class _CitationPublicationForm extends CitationPublicationForm {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [publishedIn] The collection the cited article or artifact is published in.
-  CitationPublishedIn? get publishedIn;
   @override
+  CitationPublishedIn? get publishedIn;
 
   /// [citedMedium] Describes the form of the medium cited. Common codes are
   ///  "Internet" or "Print". The CitedMedium value set has 6 codes. The codes
@@ -8586,131 +8774,135 @@ abstract class _CitationPublicationForm extends CitationPublicationForm {
   ///  for journals) AND is published separately from the issue (as commonly done
   ///  with early online publication), to represent specific identification of
   ///  the publication form not associated with the issue.
-  CodeableConcept? get citedMedium;
   @override
+  CodeableConcept? get citedMedium;
 
   /// [volume] Volume number of journal or other collection in which the article
   ///  is published.
-  String? get volume;
   @override
+  String? get volume;
 
   /// [volumeElement] ("_volume") Extensions for volume
+  @override
   @JsonKey(name: '_volume')
   PrimitiveElement? get volumeElement;
-  @override
 
   /// [issue] Issue, part or supplement of journal or other collection in which
   ///  the article is published.
-  String? get issue;
   @override
+  String? get issue;
 
   /// [issueElement] ("_issue") Extensions for issue
+  @override
   @JsonKey(name: '_issue')
   PrimitiveElement? get issueElement;
-  @override
 
   /// [articleDate] The date the article was added to the database, or the date
   ///  the article was released.
-  FhirDateTime? get articleDate;
   @override
+  FhirDateTime? get articleDate;
 
   /// [articleDateElement] ("_articleDate") Extensions for articleDate
+  @override
   @JsonKey(name: '_articleDate')
   PrimitiveElement? get articleDateElement;
-  @override
 
   /// [publicationDateText] Text representation of the date on which the issue of
   ///  the cited artifact was published.
-  String? get publicationDateText;
   @override
+  String? get publicationDateText;
 
   /// [publicationDateTextElement] ("_publicationDateText") Extensions for
   ///  publicationDateText
+  @override
   @JsonKey(name: '_publicationDateText')
   PrimitiveElement? get publicationDateTextElement;
-  @override
 
   /// [publicationDateSeason] Spring, Summer, Fall/Autumn, Winter.
-  String? get publicationDateSeason;
   @override
+  String? get publicationDateSeason;
 
   /// [publicationDateSeasonElement] ("_publicationDateSeason") Extensions for
   ///  publicationDateSeason
+  @override
   @JsonKey(name: '_publicationDateSeason')
   PrimitiveElement? get publicationDateSeasonElement;
-  @override
 
   /// [lastRevisionDate] The date the article was last revised or updated in the
   ///  database.
-  FhirDateTime? get lastRevisionDate;
   @override
+  FhirDateTime? get lastRevisionDate;
 
   /// [lastRevisionDateElement] ("_lastRevisionDate") Extensions for
   ///  lastRevisionDate
+  @override
   @JsonKey(name: '_lastRevisionDate')
   PrimitiveElement? get lastRevisionDateElement;
-  @override
 
   /// [language] The language or languages in which this form of the article is
   ///  published.
-  List<CodeableConcept>? get language;
   @override
+  List<CodeableConcept>? get language;
 
   /// [accessionNumber] Entry number or identifier for inclusion in a database.
-  String? get accessionNumber;
   @override
+  String? get accessionNumber;
 
   /// [accessionNumberElement] ("_accessionNumber") Extensions for accessionNumber
+  @override
   @JsonKey(name: '_accessionNumber')
   PrimitiveElement? get accessionNumberElement;
-  @override
 
   /// [pageString] Used for full display of pagination.
-  String? get pageString;
   @override
+  String? get pageString;
 
   /// [pageStringElement] ("_pageString") Extensions for pageString
+  @override
   @JsonKey(name: '_pageString')
   PrimitiveElement? get pageStringElement;
-  @override
 
   /// [firstPage] Used for isolated representation of first page.
-  String? get firstPage;
   @override
+  String? get firstPage;
 
   /// [firstPageElement] ("_firstPage") Extensions for firstPage
+  @override
   @JsonKey(name: '_firstPage')
   PrimitiveElement? get firstPageElement;
-  @override
 
   /// [lastPage] Used for isolated representation of last page.
-  String? get lastPage;
   @override
+  String? get lastPage;
 
   /// [lastPageElement] ("_lastPage") Extensions for lastPage
+  @override
   @JsonKey(name: '_lastPage')
   PrimitiveElement? get lastPageElement;
-  @override
 
   /// [pageCount] Actual or approximate number of pages or screens. Distinct from
   ///  reporting the page numbers.
-  String? get pageCount;
   @override
+  String? get pageCount;
 
   /// [pageCountElement] ("_pageCount") Extensions for pageCount
+  @override
   @JsonKey(name: '_pageCount')
   PrimitiveElement? get pageCountElement;
-  @override
 
   /// [copyright] Copyright notice for the full article or artifact.
-  FhirMarkdown? get copyright;
   @override
+  FhirMarkdown? get copyright;
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
+  @override
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement;
+
+  /// Create a copy of CitationPublicationForm
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationPublicationFormImplCopyWith<_$CitationPublicationFormImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -8775,8 +8967,12 @@ mixin _$CitationPublishedIn {
   PrimitiveElement? get publisherLocationElement =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this CitationPublishedIn to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationPublishedIn
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationPublishedInCopyWith<CitationPublishedIn> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -8814,6 +9010,8 @@ class _$CitationPublishedInCopyWithImpl<$Res, $Val extends CitationPublishedIn>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationPublishedIn
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -8872,6 +9070,8 @@ class _$CitationPublishedInCopyWithImpl<$Res, $Val extends CitationPublishedIn>
     ) as $Val);
   }
 
+  /// Create a copy of CitationPublishedIn
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -8884,6 +9084,8 @@ class _$CitationPublishedInCopyWithImpl<$Res, $Val extends CitationPublishedIn>
     });
   }
 
+  /// Create a copy of CitationPublishedIn
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get publisher {
@@ -8932,6 +9134,8 @@ class __$$CitationPublishedInImplCopyWithImpl<$Res>
       $Res Function(_$CitationPublishedInImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationPublishedIn
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -9150,7 +9354,7 @@ class _$CitationPublishedInImpl extends _CitationPublishedIn {
                 other.publisherLocationElement == publisherLocationElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -9165,7 +9369,9 @@ class _$CitationPublishedInImpl extends _CitationPublishedIn {
       publisherLocation,
       publisherLocationElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationPublishedIn
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationPublishedInImplCopyWith<_$CitationPublishedInImpl> get copyWith =>
@@ -9199,12 +9405,10 @@ abstract class _CitationPublishedIn extends CitationPublishedIn {
   factory _CitationPublishedIn.fromJson(Map<String, dynamic> json) =
       _$CitationPublishedInImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -9212,9 +9416,9 @@ abstract class _CitationPublishedIn extends CitationPublishedIn {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -9228,41 +9432,45 @@ abstract class _CitationPublishedIn extends CitationPublishedIn {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] Kind of container (e.g. Periodical, database, or book).
-  CodeableConcept? get type;
   @override
+  CodeableConcept? get type;
 
   /// [identifier] Journal identifiers include ISSN, ISO Abbreviation and
   ///  NLMuniqueID; Book identifiers include ISBN.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [title] Name of the database or title of the book or journal.
-  String? get title;
   @override
+  String? get title;
 
   /// [titleElement] ("_title") Extensions for title
+  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
-  @override
 
   /// [publisher] Name of or resource describing the publisher.
-  Reference? get publisher;
   @override
+  Reference? get publisher;
 
   /// [publisherLocation] Geographic location of the publisher.
-  String? get publisherLocation;
   @override
+  String? get publisherLocation;
 
   /// [publisherLocationElement] ("_publisherLocation") Extensions for
   ///  publisherLocation
+  @override
   @JsonKey(name: '_publisherLocation')
   PrimitiveElement? get publisherLocationElement;
+
+  /// Create a copy of CitationPublishedIn
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationPublishedInImplCopyWith<_$CitationPublishedInImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -9311,8 +9519,12 @@ mixin _$CitationWebLocation {
   @JsonKey(name: '_url')
   PrimitiveElement? get urlElement => throw _privateConstructorUsedError;
 
+  /// Serializes this CitationWebLocation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationWebLocation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationWebLocationCopyWith<CitationWebLocation> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -9342,6 +9554,8 @@ class _$CitationWebLocationCopyWithImpl<$Res, $Val extends CitationWebLocation>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationWebLocation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -9406,6 +9620,8 @@ class __$$CitationWebLocationImplCopyWithImpl<$Res>
       $Res Function(_$CitationWebLocationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationWebLocation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -9572,7 +9788,7 @@ class _$CitationWebLocationImpl extends _CitationWebLocation {
                 other.urlElement == urlElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -9583,7 +9799,9 @@ class _$CitationWebLocationImpl extends _CitationWebLocation {
       url,
       urlElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationWebLocation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationWebLocationImplCopyWith<_$CitationWebLocationImpl> get copyWith =>
@@ -9612,12 +9830,10 @@ abstract class _CitationWebLocation extends CitationWebLocation {
   factory _CitationWebLocation.fromJson(Map<String, dynamic> json) =
       _$CitationWebLocationImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -9625,9 +9841,9 @@ abstract class _CitationWebLocation extends CitationWebLocation {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -9641,22 +9857,26 @@ abstract class _CitationWebLocation extends CitationWebLocation {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [classifier] A characterization of the object expected at the web location.
-  List<CodeableConcept>? get classifier;
   @override
+  List<CodeableConcept>? get classifier;
 
   /// [url] The specific URL.
-  FhirUri? get url;
   @override
+  FhirUri? get url;
 
   /// [urlElement] ("_url") Extensions for url
+  @override
   @JsonKey(name: '_url')
   PrimitiveElement? get urlElement;
+
+  /// Create a copy of CitationWebLocation
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationWebLocationImplCopyWith<_$CitationWebLocationImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -9705,8 +9925,12 @@ mixin _$CitationClassification1 {
   /// [artifactAssessment] Complex or externally created classification.
   List<Reference>? get artifactAssessment => throw _privateConstructorUsedError;
 
+  /// Serializes this CitationClassification1 to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationClassification1
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationClassification1CopyWith<CitationClassification1> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -9739,6 +9963,8 @@ class _$CitationClassification1CopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationClassification1
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -9777,6 +10003,8 @@ class _$CitationClassification1CopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of CitationClassification1
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -9821,6 +10049,8 @@ class __$$CitationClassification1ImplCopyWithImpl<$Res>
       $Res Function(_$CitationClassification1Impl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationClassification1
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -9997,7 +10227,7 @@ class _$CitationClassification1Impl extends _CitationClassification1 {
                 .equals(other._artifactAssessment, _artifactAssessment));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -10008,7 +10238,9 @@ class _$CitationClassification1Impl extends _CitationClassification1 {
       const DeepCollectionEquality().hash(_classifier),
       const DeepCollectionEquality().hash(_artifactAssessment));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationClassification1
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationClassification1ImplCopyWith<_$CitationClassification1Impl>
@@ -10037,12 +10269,10 @@ abstract class _CitationClassification1 extends CitationClassification1 {
   factory _CitationClassification1.fromJson(Map<String, dynamic> json) =
       _$CitationClassification1Impl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -10050,9 +10280,9 @@ abstract class _CitationClassification1 extends CitationClassification1 {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -10066,21 +10296,25 @@ abstract class _CitationClassification1 extends CitationClassification1 {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] The kind of classifier (e.g. publication type, keyword).
-  CodeableConcept? get type;
   @override
+  CodeableConcept? get type;
 
   /// [classifier] The specific classification value.
-  List<CodeableConcept>? get classifier;
   @override
+  List<CodeableConcept>? get classifier;
 
   /// [artifactAssessment] Complex or externally created classification.
-  List<Reference>? get artifactAssessment;
   @override
-  @JsonKey(ignore: true)
+  List<Reference>? get artifactAssessment;
+
+  /// Create a copy of CitationClassification1
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationClassification1ImplCopyWith<_$CitationClassification1Impl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -10135,8 +10369,12 @@ mixin _$CitationContributorship {
   ///  separate data element for each list member.
   List<CitationSummary1>? get summary => throw _privateConstructorUsedError;
 
+  /// Serializes this CitationContributorship to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationContributorship
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationContributorshipCopyWith<CitationContributorship> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -10168,6 +10406,8 @@ class _$CitationContributorshipCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationContributorship
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -10241,6 +10481,8 @@ class __$$CitationContributorshipImplCopyWithImpl<$Res>
       $Res Function(_$CitationContributorshipImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationContributorship
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -10432,7 +10674,7 @@ class _$CitationContributorshipImpl extends _CitationContributorship {
             const DeepCollectionEquality().equals(other._summary, _summary));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -10444,7 +10686,9 @@ class _$CitationContributorshipImpl extends _CitationContributorship {
       const DeepCollectionEquality().hash(_entry),
       const DeepCollectionEquality().hash(_summary));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationContributorship
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationContributorshipImplCopyWith<_$CitationContributorshipImpl>
@@ -10473,12 +10717,10 @@ abstract class _CitationContributorship extends CitationContributorship {
   factory _CitationContributorship.fromJson(Map<String, dynamic> json) =
       _$CitationContributorshipImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -10486,9 +10728,9 @@ abstract class _CitationContributorship extends CitationContributorship {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -10502,28 +10744,32 @@ abstract class _CitationContributorship extends CitationContributorship {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [complete] Indicates if the list includes all authors and/or contributors.
-  FhirBoolean? get complete;
   @override
+  FhirBoolean? get complete;
 
   /// [completeElement] ("_complete") Extensions for complete
+  @override
   @JsonKey(name: '_complete')
   PrimitiveElement? get completeElement;
-  @override
 
   /// [entry] An individual entity named as a contributor, for example in the
   ///  author list or contributor list.
-  List<CitationEntry>? get entry;
   @override
+  List<CitationEntry>? get entry;
 
   /// [summary] Used to record a display of the author/contributor list without
   ///  separate data element for each list member.
-  List<CitationSummary1>? get summary;
   @override
-  @JsonKey(ignore: true)
+  List<CitationSummary1>? get summary;
+
+  /// Create a copy of CitationContributorship
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationContributorshipImplCopyWith<_$CitationContributorshipImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -10609,8 +10855,12 @@ mixin _$CitationEntry {
   PrimitiveElement? get rankingOrderElement =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this CitationEntry to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationEntry
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationEntryCopyWith<CitationEntry> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -10653,6 +10903,8 @@ class _$CitationEntryCopyWithImpl<$Res, $Val extends CitationEntry>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationEntry
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -10731,6 +10983,8 @@ class _$CitationEntryCopyWithImpl<$Res, $Val extends CitationEntry>
     ) as $Val);
   }
 
+  /// Create a copy of CitationEntry
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get contributor {
@@ -10739,6 +10993,8 @@ class _$CitationEntryCopyWithImpl<$Res, $Val extends CitationEntry>
     });
   }
 
+  /// Create a copy of CitationEntry
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get role {
@@ -10792,6 +11048,8 @@ class __$$CitationEntryImplCopyWithImpl<$Res>
       _$CitationEntryImpl _value, $Res Function(_$CitationEntryImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationEntry
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -11088,7 +11346,7 @@ class _$CitationEntryImpl extends _CitationEntry {
                 other.rankingOrderElement == rankingOrderElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -11107,7 +11365,9 @@ class _$CitationEntryImpl extends _CitationEntry {
       rankingOrder,
       rankingOrderElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationEntry
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationEntryImplCopyWith<_$CitationEntryImpl> get copyWith =>
@@ -11145,12 +11405,10 @@ abstract class _CitationEntry extends CitationEntry {
   factory _CitationEntry.fromJson(Map<String, dynamic> json) =
       _$CitationEntryImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -11158,9 +11416,9 @@ abstract class _CitationEntry extends CitationEntry {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -11174,62 +11432,66 @@ abstract class _CitationEntry extends CitationEntry {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [contributor] The identity of the individual contributor.
-  Reference get contributor;
   @override
+  Reference get contributor;
 
   /// [forenameInitials] For citation styles that use initials.
-  String? get forenameInitials;
   @override
+  String? get forenameInitials;
 
   /// [forenameInitialsElement] ("_forenameInitials") Extensions for
   ///  forenameInitials
+  @override
   @JsonKey(name: '_forenameInitials')
   PrimitiveElement? get forenameInitialsElement;
-  @override
 
   /// [affiliation] Organization affiliated with the contributor.
-  List<Reference>? get affiliation;
   @override
+  List<Reference>? get affiliation;
 
   /// [contributionType] This element identifies the specific nature of an
   ///  individual’s contribution with respect to the cited work.
-  List<CodeableConcept>? get contributionType;
   @override
+  List<CodeableConcept>? get contributionType;
 
   /// [role] The role of the contributor (e.g. author, editor, reviewer, funder).
-  CodeableConcept? get role;
   @override
+  CodeableConcept? get role;
 
   /// [contributionInstance] Contributions with accounting for time or number.
-  List<CitationContributionInstance>? get contributionInstance;
   @override
+  List<CitationContributionInstance>? get contributionInstance;
 
   /// [correspondingContact] Whether the contributor is the corresponding
   ///  contributor for the role.
-  FhirBoolean? get correspondingContact;
   @override
+  FhirBoolean? get correspondingContact;
 
   /// [correspondingContactElement] ("_correspondingContact") Extensions for
   ///  correspondingContact
+  @override
   @JsonKey(name: '_correspondingContact')
   PrimitiveElement? get correspondingContactElement;
-  @override
 
   /// [rankingOrder] Provides a numerical ranking to represent the degree of
   ///  contributorship relative to other contributors, such as 1 for first author
   ///  and 2 for second author.
-  FhirPositiveInt? get rankingOrder;
   @override
+  FhirPositiveInt? get rankingOrder;
 
   /// [rankingOrderElement] ("_rankingOrder") Extensions for rankingOrder
+  @override
   @JsonKey(name: '_rankingOrder')
   PrimitiveElement? get rankingOrderElement;
+
+  /// Create a copy of CitationEntry
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationEntryImplCopyWith<_$CitationEntryImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -11279,8 +11541,12 @@ mixin _$CitationContributionInstance {
   @JsonKey(name: '_time')
   PrimitiveElement? get timeElement => throw _privateConstructorUsedError;
 
+  /// Serializes this CitationContributionInstance to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationContributionInstance
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationContributionInstanceCopyWith<CitationContributionInstance>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -11315,6 +11581,8 @@ class _$CitationContributionInstanceCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationContributionInstance
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -11353,6 +11621,8 @@ class _$CitationContributionInstanceCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of CitationContributionInstance
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get type {
@@ -11393,6 +11663,8 @@ class __$$CitationContributionInstanceImplCopyWithImpl<$Res>
       $Res Function(_$CitationContributionInstanceImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationContributionInstance
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -11549,7 +11821,7 @@ class _$CitationContributionInstanceImpl extends _CitationContributionInstance {
                 other.timeElement == timeElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -11560,7 +11832,9 @@ class _$CitationContributionInstanceImpl extends _CitationContributionInstance {
       time,
       timeElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationContributionInstance
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationContributionInstanceImplCopyWith<
@@ -11591,12 +11865,10 @@ abstract class _CitationContributionInstance
   factory _CitationContributionInstance.fromJson(Map<String, dynamic> json) =
       _$CitationContributionInstanceImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -11604,9 +11876,9 @@ abstract class _CitationContributionInstance
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -11620,22 +11892,26 @@ abstract class _CitationContributionInstance
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] The specific contribution.
-  CodeableConcept get type;
   @override
+  CodeableConcept get type;
 
   /// [time] The time that the contribution was made.
-  FhirDateTime? get time;
   @override
+  FhirDateTime? get time;
 
   /// [timeElement] ("_time") Extensions for time
+  @override
   @JsonKey(name: '_time')
   PrimitiveElement? get timeElement;
+
+  /// Create a copy of CitationContributionInstance
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationContributionInstanceImplCopyWith<
           _$CitationContributionInstanceImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -11694,8 +11970,12 @@ mixin _$CitationSummary1 {
   @JsonKey(name: '_value')
   PrimitiveElement? get valueElement => throw _privateConstructorUsedError;
 
+  /// Serializes this CitationSummary1 to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CitationSummary1
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CitationSummary1CopyWith<CitationSummary1> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -11731,6 +12011,8 @@ class _$CitationSummary1CopyWithImpl<$Res, $Val extends CitationSummary1>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CitationSummary1
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -11779,6 +12061,8 @@ class _$CitationSummary1CopyWithImpl<$Res, $Val extends CitationSummary1>
     ) as $Val);
   }
 
+  /// Create a copy of CitationSummary1
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -11791,6 +12075,8 @@ class _$CitationSummary1CopyWithImpl<$Res, $Val extends CitationSummary1>
     });
   }
 
+  /// Create a copy of CitationSummary1
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get style {
@@ -11803,6 +12089,8 @@ class _$CitationSummary1CopyWithImpl<$Res, $Val extends CitationSummary1>
     });
   }
 
+  /// Create a copy of CitationSummary1
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get source {
@@ -11850,6 +12138,8 @@ class __$$CitationSummary1ImplCopyWithImpl<$Res>
       $Res Function(_$CitationSummary1Impl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CitationSummary1
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -12030,7 +12320,7 @@ class _$CitationSummary1Impl extends _CitationSummary1 {
                 other.valueElement == valueElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -12043,7 +12333,9 @@ class _$CitationSummary1Impl extends _CitationSummary1 {
       value,
       valueElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CitationSummary1
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CitationSummary1ImplCopyWith<_$CitationSummary1Impl> get copyWith =>
@@ -12074,12 +12366,10 @@ abstract class _CitationSummary1 extends CitationSummary1 {
   factory _CitationSummary1.fromJson(Map<String, dynamic> json) =
       _$CitationSummary1Impl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -12087,9 +12377,9 @@ abstract class _CitationSummary1 extends CitationSummary1 {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -12103,33 +12393,37 @@ abstract class _CitationSummary1 extends CitationSummary1 {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] Used most commonly to express an author list or a contributorship
   ///  statement.
-  CodeableConcept? get type;
   @override
+  CodeableConcept? get type;
 
   /// [style] The format for the display string, such as author last name with
   ///  first letter capitalized followed by forename initials.
-  CodeableConcept? get style;
   @override
+  CodeableConcept? get style;
 
   /// [source] Used to code the producer or rule for creating the display string.
-  CodeableConcept? get source;
   @override
+  CodeableConcept? get source;
 
   /// [value] The display string for the author list, contributor list, or
   ///  contributorship statement.
-  FhirMarkdown? get value;
   @override
+  FhirMarkdown? get value;
 
   /// [valueElement] ("_value") Extensions for value
+  @override
   @JsonKey(name: '_value')
   PrimitiveElement? get valueElement;
+
+  /// Create a copy of CitationSummary1
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CitationSummary1ImplCopyWith<_$CitationSummary1Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }

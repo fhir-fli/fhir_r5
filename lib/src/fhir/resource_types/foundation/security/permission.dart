@@ -255,7 +255,7 @@ class Permission with _$Permission implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [PermissionJustification] Permission resource holds access rules for a

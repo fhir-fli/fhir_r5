@@ -78,8 +78,12 @@ mixin _$Coding {
   PrimitiveElement? get userSelectedElement =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this Coding to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Coding
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CodingCopyWith<Coding> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -113,6 +117,8 @@ class _$CodingCopyWithImpl<$Res, $Val extends Coding>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Coding
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -212,6 +218,8 @@ class __$$CodingImplCopyWithImpl<$Res>
       _$CodingImpl _value, $Res Function(_$CodingImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Coding
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -417,7 +425,7 @@ class _$CodingImpl extends _Coding {
                 other.userSelectedElement == userSelectedElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -434,7 +442,9 @@ class _$CodingImpl extends _Coding {
       userSelected,
       userSelectedElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Coding
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CodingImplCopyWith<_$CodingImpl> get copyWith =>
@@ -467,12 +477,10 @@ abstract class _Coding extends Coding {
 
   factory _Coding.fromJson(Map<String, dynamic> json) = _$CodingImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -480,64 +488,68 @@ abstract class _Coding extends Coding {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [system] The identification of the code system that defines the meaning of
   ///  the symbol in the code.
-  FhirUri? get system;
   @override
+  FhirUri? get system;
 
   /// [systemElement] ("_system") Extensions for system
+  @override
   @JsonKey(name: '_system')
   PrimitiveElement? get systemElement;
-  @override
 
   /// [version] The version of the code system which was used when choosing this
   ///  code. Note that a well-maintained code system does not need the version
   ///  reported, because the meaning of codes is consistent across versions.
   ///  However this cannot consistently be assured, and when the meaning is not
   ///  guaranteed to be consistent, the version SHOULD be exchanged.
-  String? get version;
   @override
+  String? get version;
 
   /// [versionElement] ("_version") Extensions for version
+  @override
   @JsonKey(name: '_version')
   PrimitiveElement? get versionElement;
-  @override
 
   /// [code] A symbol in syntax defined by the system. The symbol may be a
   ///  predefined code or an expression in a syntax defined by the coding system
   ///  (e.g. post-coordination).
-  FhirCode? get code;
   @override
+  FhirCode? get code;
 
   /// [codeElement] ("_code") Extensions for code
+  @override
   @JsonKey(name: '_code')
   PrimitiveElement? get codeElement;
-  @override
 
   /// [display] A representation of the meaning of the code in the system,
   ///  following the rules of the system.
-  String? get display;
   @override
+  String? get display;
 
   /// [displayElement] ("_display") Extensions for display
+  @override
   @JsonKey(name: '_display')
   PrimitiveElement? get displayElement;
-  @override
 
   /// [userSelected] Indicates that this coding was chosen by a user directly -
   ///  e.g. off a pick list of available items (codes or displays).
-  FhirBoolean? get userSelected;
   @override
+  FhirBoolean? get userSelected;
 
   /// [userSelectedElement] ("_userSelected") Extensions for userSelected
+  @override
   @JsonKey(name: '_userSelected')
   PrimitiveElement? get userSelectedElement;
+
+  /// Create a copy of Coding
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CodingImplCopyWith<_$CodingImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

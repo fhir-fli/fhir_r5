@@ -290,8 +290,12 @@ mixin _$Appointment {
   List<AppointmentRecurrenceTemplate>? get recurrenceTemplate =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this Appointment to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Appointment
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AppointmentCopyWith<Appointment> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -380,6 +384,8 @@ class _$AppointmentCopyWithImpl<$Res, $Val extends Appointment>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Appointment
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -648,6 +654,8 @@ class _$AppointmentCopyWithImpl<$Res, $Val extends Appointment>
     ) as $Val);
   }
 
+  /// Create a copy of Appointment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -660,6 +668,8 @@ class _$AppointmentCopyWithImpl<$Res, $Val extends Appointment>
     });
   }
 
+  /// Create a copy of Appointment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -672,6 +682,8 @@ class _$AppointmentCopyWithImpl<$Res, $Val extends Appointment>
     });
   }
 
+  /// Create a copy of Appointment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get cancellationReason {
@@ -684,6 +696,8 @@ class _$AppointmentCopyWithImpl<$Res, $Val extends Appointment>
     });
   }
 
+  /// Create a copy of Appointment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get appointmentType {
@@ -696,6 +710,8 @@ class _$AppointmentCopyWithImpl<$Res, $Val extends Appointment>
     });
   }
 
+  /// Create a copy of Appointment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get priority {
@@ -708,6 +724,8 @@ class _$AppointmentCopyWithImpl<$Res, $Val extends Appointment>
     });
   }
 
+  /// Create a copy of Appointment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get previousAppointment {
@@ -720,6 +738,8 @@ class _$AppointmentCopyWithImpl<$Res, $Val extends Appointment>
     });
   }
 
+  /// Create a copy of Appointment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get originatingAppointment {
@@ -732,6 +752,8 @@ class _$AppointmentCopyWithImpl<$Res, $Val extends Appointment>
     });
   }
 
+  /// Create a copy of Appointment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get subject {
@@ -837,6 +859,8 @@ class __$$AppointmentImplCopyWithImpl<$Res>
       _$AppointmentImpl _value, $Res Function(_$AppointmentImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Appointment
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1830,7 +1854,7 @@ class _$AppointmentImpl extends _Appointment {
                 .equals(other._recurrenceTemplate, _recurrenceTemplate));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1888,7 +1912,9 @@ class _$AppointmentImpl extends _Appointment {
         const DeepCollectionEquality().hash(_recurrenceTemplate)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Appointment
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AppointmentImplCopyWith<_$AppointmentImpl> get copyWith =>
@@ -1968,44 +1994,42 @@ abstract class _Appointment extends Appointment {
   factory _Appointment.fromJson(Map<String, dynamic> json) =
       _$AppointmentImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a Appointment resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.Appointment)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -2013,16 +2037,16 @@ abstract class _Appointment extends Appointment {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -2030,9 +2054,9 @@ abstract class _Appointment extends Appointment {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -2046,59 +2070,59 @@ abstract class _Appointment extends Appointment {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] This records identifiers associated with this appointment
   ///  concern that are defined by business processes and/or used to refer to it
   ///  when a direct URL reference to the resource itself is not appropriate
   ///  (e.g. in CDA documents, or in written / printed documentation).
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [status] The overall status of the Appointment. Each of the participants
   ///  has their own participation status which indicates their involvement in
   ///  the process, however this status indicates the shared status.
-  AppointmentStatus? get status;
   @override
+  AppointmentStatus? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [cancellationReason] The coded reason for the appointment being cancelled.
   ///  This is often used in reporting/billing/futher processing to determine if
   ///  further actions are required, or specific fees apply.
-  CodeableConcept? get cancellationReason;
   @override
+  CodeableConcept? get cancellationReason;
 
   /// [class_] ("class") Concepts representing classification of patient
   ///  encounter such as ambulatory (outpatient), inpatient, emergency, home
   ///  health or others due to local variations.
+  @override
   @JsonKey(name: 'class')
   List<CodeableConcept>? get class_;
-  @override
 
   /// [serviceCategory] A broad categorization of the service that is to be
   ///  performed during this appointment.
-  List<CodeableConcept>? get serviceCategory;
   @override
+  List<CodeableConcept>? get serviceCategory;
 
   /// [serviceType] The specific service that is to be performed during this
   ///  appointment.
-  List<CodeableReference>? get serviceType;
   @override
+  List<CodeableReference>? get serviceType;
 
   /// [specialty] The specialty of a practitioner that would be required to
   ///  perform the service requested in this appointment.
-  List<CodeableConcept>? get specialty;
   @override
+  List<CodeableConcept>? get specialty;
 
   /// [appointmentType] The style of appointment or patient that has been booked
   ///  in the slot (not service type).
-  CodeableConcept? get appointmentType;
   @override
+  CodeableConcept? get appointmentType;
 
   /// [reason] The reason that this appointment is being scheduled. This is more
   ///  clinical than administrative. This can be coded, or as specified using
@@ -2106,69 +2130,69 @@ abstract class _Appointment extends Appointment {
   ///  encounter begins it may be used as the admission diagnosis. The indication
   ///  will typically be a Condition (with other resources referenced in the
   ///  evidence.detail), or a Procedure.
-  List<CodeableReference>? get reason;
   @override
+  List<CodeableReference>? get reason;
 
   /// [priority] The priority of the appointment. Can be used to make informed
   ///  decisions if needing to re-prioritize appointments. (The iCal Standard
   ///  specifies 0 as undefined, 1 as highest, 9 as lowest priority).
-  CodeableConcept? get priority;
   @override
+  CodeableConcept? get priority;
 
   /// [description] The brief description of the appointment as would be shown on
   ///  a subject line in a meeting request, or appointment list. Detailed or
   ///  expanded information should be put in the note field.
-  String? get description;
   @override
+  String? get description;
 
   /// [descriptionElement] ("_description") Extensions for description
+  @override
   @JsonKey(name: '_description')
   PrimitiveElement? get descriptionElement;
-  @override
 
   /// [replaces] Appointment replaced by this Appointment in cases where there is
   ///  a cancellation, the details of the cancellation can be found in the
   ///  cancellationReason property (on the referenced resource).
-  List<Reference>? get replaces;
   @override
+  List<Reference>? get replaces;
 
   /// [virtualService] Connection details of a virtual service (e.g. conference
   ///  call).
-  List<VirtualServiceDetail>? get virtualService;
   @override
+  List<VirtualServiceDetail>? get virtualService;
 
   /// [supportingInformation] Additional information to support the appointment
   ///  provided when making the appointment.
-  List<Reference>? get supportingInformation;
   @override
+  List<Reference>? get supportingInformation;
 
   /// [previousAppointment] The previous appointment in a series of related
   ///  appointments.
-  Reference? get previousAppointment;
   @override
+  Reference? get previousAppointment;
 
   /// [originatingAppointment] The originating appointment in a recurring set of
   ///  related appointments.
-  Reference? get originatingAppointment;
   @override
+  Reference? get originatingAppointment;
 
   /// [start] Date/Time that the appointment is to take place.
-  FhirInstant? get start;
   @override
+  FhirInstant? get start;
 
   /// [startElement] ("_start") Extensions for start
+  @override
   @JsonKey(name: '_start')
   PrimitiveElement? get startElement;
-  @override
 
   /// [end] Date/Time that the appointment is to conclude.
-  FhirInstant? get end;
   @override
+  FhirInstant? get end;
 
   /// [endElement] ("_end") Extensions for end
+  @override
   @JsonKey(name: '_end')
   PrimitiveElement? get endElement;
-  @override
 
   /// [minutesDuration] Number of minutes that the appointment is to take. This
   ///  can be less than the duration between the start and end times.  For
@@ -2177,13 +2201,13 @@ abstract class _Appointment extends Appointment {
   ///  if there is, for example, a planned 15 minute break in the middle of a
   ///  long appointment, the duration may be 15 minutes less than the difference
   ///  between the start and end.
-  FhirPositiveInt? get minutesDuration;
   @override
+  FhirPositiveInt? get minutesDuration;
 
   /// [minutesDurationElement] ("_minutesDuration") Extensions for minutesDuration
+  @override
   @JsonKey(name: '_minutesDuration')
   PrimitiveElement? get minutesDurationElement;
-  @override
 
   /// [requestedPeriod] A set of date ranges (potentially including times) that
   ///  the appointment is preferred to be scheduled within. The duration (usually
@@ -2191,93 +2215,97 @@ abstract class _Appointment extends Appointment {
   ///  appointment to fill and populate the start/end times for the actual
   ///  allocated time. However, in other situations the duration may be
   ///  calculated by the scheduling system.
-  List<Period>? get requestedPeriod;
   @override
+  List<Period>? get requestedPeriod;
 
   /// [slot] The slots from the participants' schedules that will be filled by
   ///  the appointment.
-  List<Reference>? get slot;
   @override
+  List<Reference>? get slot;
 
   /// [account] The set of accounts that is expected to be used for billing the
   ///  activities that result from this Appointment.
-  List<Reference>? get account;
   @override
+  List<Reference>? get account;
 
   /// [created] The date that this appointment was initially created. This could
   ///  be different to the meta.lastModified value on the initial entry, as this
   ///  could have been before the resource was created on the FHIR server, and
   ///  should remain unchanged over the lifespan of the appointment.
-  FhirDateTime? get created;
   @override
+  FhirDateTime? get created;
 
   /// [createdElement] ("_created") Extensions for created
+  @override
   @JsonKey(name: '_created')
   PrimitiveElement? get createdElement;
-  @override
 
   /// [cancellationDate] The date/time describing when the appointment was
   ///  cancelled.
-  FhirDateTime? get cancellationDate;
   @override
+  FhirDateTime? get cancellationDate;
 
   /// [cancellationDateElement] ("_cancellationDate") Extensions for
   ///  cancellationDate
+  @override
   @JsonKey(name: '_cancellationDate')
   PrimitiveElement? get cancellationDateElement;
-  @override
 
   /// [note] Additional notes/comments about the appointment.
-  List<Annotation>? get note;
   @override
+  List<Annotation>? get note;
 
   /// [patientInstruction] While Appointment.note contains information for
   ///  internal use, Appointment.patientInstructions is used to capture patient
   ///  facing information about the Appointment (e.g. please bring your referral
   ///  or fast from 8pm night before).
-  List<CodeableReference>? get patientInstruction;
   @override
+  List<CodeableReference>? get patientInstruction;
 
   /// [basedOn] The request this appointment is allocated to assess (e.g.
   ///  incoming referral or procedure request).
-  List<Reference>? get basedOn;
   @override
+  List<Reference>? get basedOn;
 
   /// [subject] The patient or group associated with the appointment, if they are
   ///  to be present (usually) then they should also be included in the
   ///  participant backbone element.
-  Reference? get subject;
   @override
+  Reference? get subject;
 
   /// [participant] List of participants involved in the appointment.
-  List<AppointmentParticipant> get participant;
   @override
+  List<AppointmentParticipant> get participant;
 
   /// [recurrenceId] The sequence number that identifies a specific appointment
   ///  in a recurring pattern.
-  FhirPositiveInt? get recurrenceId;
   @override
+  FhirPositiveInt? get recurrenceId;
 
   /// [recurrenceIdElement] ("_recurrenceId") Extensions for recurrenceId
+  @override
   @JsonKey(name: '_recurrenceId')
   PrimitiveElement? get recurrenceIdElement;
-  @override
 
   /// [occurrenceChanged] This appointment varies from the recurring pattern.
-  FhirBoolean? get occurrenceChanged;
   @override
+  FhirBoolean? get occurrenceChanged;
 
   /// [occurrenceChangedElement] ("_occurrenceChanged") Extensions for
   ///  occurrenceChanged
+  @override
   @JsonKey(name: '_occurrenceChanged')
   PrimitiveElement? get occurrenceChangedElement;
-  @override
 
   /// [recurrenceTemplate] The details of the recurrence pattern or template that
   ///  is used to generate recurring appointments.
-  List<AppointmentRecurrenceTemplate>? get recurrenceTemplate;
   @override
-  @JsonKey(ignore: true)
+  List<AppointmentRecurrenceTemplate>? get recurrenceTemplate;
+
+  /// Create a copy of Appointment
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AppointmentImplCopyWith<_$AppointmentImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2343,8 +2371,12 @@ mixin _$AppointmentParticipant {
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement => throw _privateConstructorUsedError;
 
+  /// Serializes this AppointmentParticipant to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AppointmentParticipant
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AppointmentParticipantCopyWith<AppointmentParticipant> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2382,6 +2414,8 @@ class _$AppointmentParticipantCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AppointmentParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2440,6 +2474,8 @@ class _$AppointmentParticipantCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AppointmentParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get period {
@@ -2452,6 +2488,8 @@ class _$AppointmentParticipantCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AppointmentParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get actor {
@@ -2502,6 +2540,8 @@ class __$$AppointmentParticipantImplCopyWithImpl<$Res>
       $Res Function(_$AppointmentParticipantImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AppointmentParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2717,7 +2757,7 @@ class _$AppointmentParticipantImpl extends _AppointmentParticipant {
                 other.statusElement == statusElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2732,7 +2772,9 @@ class _$AppointmentParticipantImpl extends _AppointmentParticipant {
       status,
       statusElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AppointmentParticipant
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AppointmentParticipantImplCopyWith<_$AppointmentParticipantImpl>
@@ -2765,12 +2807,10 @@ abstract class _AppointmentParticipant extends AppointmentParticipant {
   factory _AppointmentParticipant.fromJson(Map<String, dynamic> json) =
       _$AppointmentParticipantImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2778,9 +2818,9 @@ abstract class _AppointmentParticipant extends AppointmentParticipant {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2794,42 +2834,46 @@ abstract class _AppointmentParticipant extends AppointmentParticipant {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [type] Role of participant in the appointment.
-  List<CodeableConcept>? get type;
   @override
+  List<CodeableConcept>? get type;
 
   /// [period] Participation period of the actor.
-  Period? get period;
   @override
+  Period? get period;
 
   /// [actor] The individual, device, location, or service participating in the
   ///  appointment.
-  Reference? get actor;
   @override
+  Reference? get actor;
 
   /// [required_] ("required") Whether this participant is required to be present
   ///  at the meeting. If false, the participant is optional.
+  @override
   @JsonKey(name: 'required')
   FhirBoolean? get required_;
-  @override
 
   /// [requiredElement] ("_required") Extensions for required
+  @override
   @JsonKey(name: '_required')
   PrimitiveElement? get requiredElement;
-  @override
 
   /// [status] Participation status of the actor.
-  ParticipationStatus? get status;
   @override
+  ParticipationStatus? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
+
+  /// Create a copy of AppointmentParticipant
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AppointmentParticipantImplCopyWith<_$AppointmentParticipantImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2933,8 +2977,12 @@ mixin _$AppointmentRecurrenceTemplate {
   List<PrimitiveElement>? get excludingRecurrenceIdElement =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this AppointmentRecurrenceTemplate to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AppointmentRecurrenceTemplate
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AppointmentRecurrenceTemplateCopyWith<AppointmentRecurrenceTemplate>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2990,6 +3038,8 @@ class _$AppointmentRecurrenceTemplateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AppointmentRecurrenceTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3088,6 +3138,8 @@ class _$AppointmentRecurrenceTemplateCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AppointmentRecurrenceTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get timezone {
@@ -3100,6 +3152,8 @@ class _$AppointmentRecurrenceTemplateCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AppointmentRecurrenceTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res> get recurrenceType {
@@ -3108,6 +3162,8 @@ class _$AppointmentRecurrenceTemplateCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AppointmentRecurrenceTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AppointmentWeeklyTemplateCopyWith<$Res>? get weeklyTemplate {
@@ -3121,6 +3177,8 @@ class _$AppointmentRecurrenceTemplateCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AppointmentRecurrenceTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AppointmentMonthlyTemplateCopyWith<$Res>? get monthlyTemplate {
@@ -3134,6 +3192,8 @@ class _$AppointmentRecurrenceTemplateCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AppointmentRecurrenceTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AppointmentYearlyTemplateCopyWith<$Res>? get yearlyTemplate {
@@ -3204,6 +3264,8 @@ class __$$AppointmentRecurrenceTemplateImplCopyWithImpl<$Res>
       $Res Function(_$AppointmentRecurrenceTemplateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AppointmentRecurrenceTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3589,7 +3651,7 @@ class _$AppointmentRecurrenceTemplateImpl
                 _excludingRecurrenceIdElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3612,7 +3674,9 @@ class _$AppointmentRecurrenceTemplateImpl
       const DeepCollectionEquality().hash(_excludingRecurrenceId),
       const DeepCollectionEquality().hash(_excludingRecurrenceIdElement));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AppointmentRecurrenceTemplate
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AppointmentRecurrenceTemplateImplCopyWith<
@@ -3660,12 +3724,10 @@ abstract class _AppointmentRecurrenceTemplate
   factory _AppointmentRecurrenceTemplate.fromJson(Map<String, dynamic> json) =
       _$AppointmentRecurrenceTemplateImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3673,9 +3735,9 @@ abstract class _AppointmentRecurrenceTemplate
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3689,79 +3751,83 @@ abstract class _AppointmentRecurrenceTemplate
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [timezone] The timezone of the recurring appointment occurrences.
-  CodeableConcept? get timezone;
   @override
+  CodeableConcept? get timezone;
 
   /// [recurrenceType] How often the appointment series should recur.
-  CodeableConcept get recurrenceType;
   @override
+  CodeableConcept get recurrenceType;
 
   /// [lastOccurrenceDate] Recurring appointments will not occur after this date.
-  FhirDate? get lastOccurrenceDate;
   @override
+  FhirDate? get lastOccurrenceDate;
 
   /// [lastOccurrenceDateElement] ("_lastOccurrenceDate") Extensions for
   ///  lastOccurrenceDate
+  @override
   @JsonKey(name: '_lastOccurrenceDate')
   PrimitiveElement? get lastOccurrenceDateElement;
-  @override
 
   /// [occurrenceCount] How many appointments are planned in the recurrence.
-  FhirPositiveInt? get occurrenceCount;
   @override
+  FhirPositiveInt? get occurrenceCount;
 
   /// [occurrenceCountElement] ("_occurrenceCount") Extensions for occurrenceCount
+  @override
   @JsonKey(name: '_occurrenceCount')
   PrimitiveElement? get occurrenceCountElement;
-  @override
 
   /// [occurrenceDate] The list of specific dates that will have appointments
   ///  generated.
-  List<FhirDate>? get occurrenceDate;
   @override
+  List<FhirDate>? get occurrenceDate;
 
   /// [occurrenceDateElement] ("_occurrenceDate") Extensions for occurrenceDate
+  @override
   @JsonKey(name: '_occurrenceDate')
   List<PrimitiveElement>? get occurrenceDateElement;
-  @override
 
   /// [weeklyTemplate] Information about weekly recurring appointments.
-  AppointmentWeeklyTemplate? get weeklyTemplate;
   @override
+  AppointmentWeeklyTemplate? get weeklyTemplate;
 
   /// [monthlyTemplate] Information about monthly recurring appointments.
-  AppointmentMonthlyTemplate? get monthlyTemplate;
   @override
+  AppointmentMonthlyTemplate? get monthlyTemplate;
 
   /// [yearlyTemplate] Information about yearly recurring appointments.
-  AppointmentYearlyTemplate? get yearlyTemplate;
   @override
+  AppointmentYearlyTemplate? get yearlyTemplate;
 
   /// [excludingDate] Any dates, such as holidays, that should be excluded from
   ///  the recurrence.
-  List<FhirDate>? get excludingDate;
   @override
+  List<FhirDate>? get excludingDate;
 
   /// [excludingDateElement] ("_excludingDate") Extensions for excludingDate
+  @override
   @JsonKey(name: '_excludingDate')
   List<PrimitiveElement>? get excludingDateElement;
-  @override
 
   /// [excludingRecurrenceId] Any dates, such as holidays, that should be
   ///  excluded from the recurrence.
-  List<FhirPositiveInt>? get excludingRecurrenceId;
   @override
+  List<FhirPositiveInt>? get excludingRecurrenceId;
 
   /// [excludingRecurrenceIdElement] ("_excludingRecurrenceId") Extensions for
   ///  excludingRecurrenceId
+  @override
   @JsonKey(name: '_excludingRecurrenceId')
   List<PrimitiveElement>? get excludingRecurrenceIdElement;
+
+  /// Create a copy of AppointmentRecurrenceTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AppointmentRecurrenceTemplateImplCopyWith<
           _$AppointmentRecurrenceTemplateImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3863,8 +3929,12 @@ mixin _$AppointmentWeeklyTemplate {
   PrimitiveElement? get weekIntervalElement =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this AppointmentWeeklyTemplate to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AppointmentWeeklyTemplate
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AppointmentWeeklyTemplateCopyWith<AppointmentWeeklyTemplate> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -3908,6 +3978,8 @@ class _$AppointmentWeeklyTemplateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AppointmentWeeklyTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4053,6 +4125,8 @@ class __$$AppointmentWeeklyTemplateImplCopyWithImpl<$Res>
       $Res Function(_$AppointmentWeeklyTemplateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AppointmentWeeklyTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4373,7 +4447,7 @@ class _$AppointmentWeeklyTemplateImpl extends _AppointmentWeeklyTemplate {
                 other.weekIntervalElement == weekIntervalElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -4398,7 +4472,9 @@ class _$AppointmentWeeklyTemplateImpl extends _AppointmentWeeklyTemplate {
         weekIntervalElement
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AppointmentWeeklyTemplate
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AppointmentWeeklyTemplateImplCopyWith<_$AppointmentWeeklyTemplateImpl>
@@ -4441,12 +4517,10 @@ abstract class _AppointmentWeeklyTemplate extends AppointmentWeeklyTemplate {
   factory _AppointmentWeeklyTemplate.fromJson(Map<String, dynamic> json) =
       _$AppointmentWeeklyTemplateImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -4454,9 +4528,9 @@ abstract class _AppointmentWeeklyTemplate extends AppointmentWeeklyTemplate {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -4470,85 +4544,89 @@ abstract class _AppointmentWeeklyTemplate extends AppointmentWeeklyTemplate {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [monday] Indicates that recurring appointments should occur on Mondays.
-  FhirBoolean? get monday;
   @override
+  FhirBoolean? get monday;
 
   /// [mondayElement] ("_monday") Extensions for monday
+  @override
   @JsonKey(name: '_monday')
   PrimitiveElement? get mondayElement;
-  @override
 
   /// [tuesday] Indicates that recurring appointments should occur on Tuesdays.
-  FhirBoolean? get tuesday;
   @override
+  FhirBoolean? get tuesday;
 
   /// [tuesdayElement] ("_tuesday") Extensions for tuesday
+  @override
   @JsonKey(name: '_tuesday')
   PrimitiveElement? get tuesdayElement;
-  @override
 
   /// [wednesday] Indicates that recurring appointments should occur on
   ///  Wednesdays.
-  FhirBoolean? get wednesday;
   @override
+  FhirBoolean? get wednesday;
 
   /// [wednesdayElement] ("_wednesday") Extensions for wednesday
+  @override
   @JsonKey(name: '_wednesday')
   PrimitiveElement? get wednesdayElement;
-  @override
 
   /// [thursday] Indicates that recurring appointments should occur on Thursdays.
-  FhirBoolean? get thursday;
   @override
+  FhirBoolean? get thursday;
 
   /// [thursdayElement] ("_thursday") Extensions for thursday
+  @override
   @JsonKey(name: '_thursday')
   PrimitiveElement? get thursdayElement;
-  @override
 
   /// [friday] Indicates that recurring appointments should occur on Fridays.
-  FhirBoolean? get friday;
   @override
+  FhirBoolean? get friday;
 
   /// [fridayElement] ("_friday") Extensions for friday
+  @override
   @JsonKey(name: '_friday')
   PrimitiveElement? get fridayElement;
-  @override
 
   /// [saturday] Indicates that recurring appointments should occur on Saturdays.
-  FhirBoolean? get saturday;
   @override
+  FhirBoolean? get saturday;
 
   /// [saturdayElement] ("_saturday") Extensions for saturday
+  @override
   @JsonKey(name: '_saturday')
   PrimitiveElement? get saturdayElement;
-  @override
 
   /// [sunday] Indicates that recurring appointments should occur on Sundays.
-  FhirBoolean? get sunday;
   @override
+  FhirBoolean? get sunday;
 
   /// [sundayElement] ("_sunday") Extensions for sunday
+  @override
   @JsonKey(name: '_sunday')
   PrimitiveElement? get sundayElement;
-  @override
 
   /// [weekInterval] The interval defines if the recurrence is every nth week.
   ///  The default is every week, so it is expected that this value will be 2 or
   ///  more. e.g. For recurring every second week this interval would be 2, or
   ///  every third week the interval would be 3.
-  FhirPositiveInt? get weekInterval;
   @override
+  FhirPositiveInt? get weekInterval;
 
   /// [weekIntervalElement] ("_weekInterval") Extensions for weekInterval
+  @override
   @JsonKey(name: '_weekInterval')
   PrimitiveElement? get weekIntervalElement;
+
+  /// Create a copy of AppointmentWeeklyTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AppointmentWeeklyTemplateImplCopyWith<_$AppointmentWeeklyTemplateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4613,8 +4691,12 @@ mixin _$AppointmentMonthlyTemplate {
   PrimitiveElement? get monthIntervalElement =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this AppointmentMonthlyTemplate to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AppointmentMonthlyTemplate
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AppointmentMonthlyTemplateCopyWith<AppointmentMonthlyTemplate>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -4652,6 +4734,8 @@ class _$AppointmentMonthlyTemplateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AppointmentMonthlyTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4705,6 +4789,8 @@ class _$AppointmentMonthlyTemplateCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AppointmentMonthlyTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get nthWeekOfMonth {
@@ -4717,6 +4803,8 @@ class _$AppointmentMonthlyTemplateCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of AppointmentMonthlyTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodingCopyWith<$Res>? get dayOfWeek {
@@ -4766,6 +4854,8 @@ class __$$AppointmentMonthlyTemplateImplCopyWithImpl<$Res>
       $Res Function(_$AppointmentMonthlyTemplateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AppointmentMonthlyTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -4965,7 +5055,7 @@ class _$AppointmentMonthlyTemplateImpl extends _AppointmentMonthlyTemplate {
                 other.monthIntervalElement == monthIntervalElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -4979,7 +5069,9 @@ class _$AppointmentMonthlyTemplateImpl extends _AppointmentMonthlyTemplate {
       monthInterval,
       monthIntervalElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AppointmentMonthlyTemplate
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AppointmentMonthlyTemplateImplCopyWith<_$AppointmentMonthlyTemplateImpl>
@@ -5012,12 +5104,10 @@ abstract class _AppointmentMonthlyTemplate extends AppointmentMonthlyTemplate {
   factory _AppointmentMonthlyTemplate.fromJson(Map<String, dynamic> json) =
       _$AppointmentMonthlyTemplateImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5025,9 +5115,9 @@ abstract class _AppointmentMonthlyTemplate extends AppointmentMonthlyTemplate {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5041,39 +5131,43 @@ abstract class _AppointmentMonthlyTemplate extends AppointmentMonthlyTemplate {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [dayOfMonth] Indicates that appointments in the series of recurring
   ///  appointments should occur on a specific day of the month.
-  FhirPositiveInt? get dayOfMonth;
   @override
+  FhirPositiveInt? get dayOfMonth;
 
   /// [dayOfMonthElement] ("_dayOfMonth") Extensions for dayOfMonth
+  @override
   @JsonKey(name: '_dayOfMonth')
   PrimitiveElement? get dayOfMonthElement;
-  @override
 
   /// [nthWeekOfMonth] Indicates which week within a month the appointments in
   ///  the series of recurring appointments should occur on.
-  Coding? get nthWeekOfMonth;
   @override
+  Coding? get nthWeekOfMonth;
 
   /// [dayOfWeek] Indicates which day of the week the recurring appointments
   ///  should occur each nth week.
-  Coding? get dayOfWeek;
   @override
+  Coding? get dayOfWeek;
 
   /// [monthInterval] Indicates that recurring appointments should occur every
   ///  nth month.
-  FhirPositiveInt? get monthInterval;
   @override
+  FhirPositiveInt? get monthInterval;
 
   /// [monthIntervalElement] ("_monthInterval") Extensions for monthInterval
+  @override
   @JsonKey(name: '_monthInterval')
   PrimitiveElement? get monthIntervalElement;
+
+  /// Create a copy of AppointmentMonthlyTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AppointmentMonthlyTemplateImplCopyWith<_$AppointmentMonthlyTemplateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -5121,8 +5215,12 @@ mixin _$AppointmentYearlyTemplate {
   PrimitiveElement? get yearIntervalElement =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this AppointmentYearlyTemplate to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AppointmentYearlyTemplate
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AppointmentYearlyTemplateCopyWith<AppointmentYearlyTemplate> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -5152,6 +5250,8 @@ class _$AppointmentYearlyTemplateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AppointmentYearlyTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5213,6 +5313,8 @@ class __$$AppointmentYearlyTemplateImplCopyWithImpl<$Res>
       $Res Function(_$AppointmentYearlyTemplateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AppointmentYearlyTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -5358,7 +5460,7 @@ class _$AppointmentYearlyTemplateImpl extends _AppointmentYearlyTemplate {
                 other.yearIntervalElement == yearIntervalElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -5368,7 +5470,9 @@ class _$AppointmentYearlyTemplateImpl extends _AppointmentYearlyTemplate {
       yearInterval,
       yearIntervalElement);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AppointmentYearlyTemplate
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AppointmentYearlyTemplateImplCopyWith<_$AppointmentYearlyTemplateImpl>
@@ -5397,12 +5501,10 @@ abstract class _AppointmentYearlyTemplate extends AppointmentYearlyTemplate {
   factory _AppointmentYearlyTemplate.fromJson(Map<String, dynamic> json) =
       _$AppointmentYearlyTemplateImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -5410,9 +5512,9 @@ abstract class _AppointmentYearlyTemplate extends AppointmentYearlyTemplate {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -5426,18 +5528,22 @@ abstract class _AppointmentYearlyTemplate extends AppointmentYearlyTemplate {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [yearInterval] Appointment recurs every nth year.
-  FhirPositiveInt? get yearInterval;
   @override
+  FhirPositiveInt? get yearInterval;
 
   /// [yearIntervalElement] ("_yearInterval") Extensions for yearInterval
+  @override
   @JsonKey(name: '_yearInterval')
   PrimitiveElement? get yearIntervalElement;
+
+  /// Create a copy of AppointmentYearlyTemplate
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AppointmentYearlyTemplateImplCopyWith<_$AppointmentYearlyTemplateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

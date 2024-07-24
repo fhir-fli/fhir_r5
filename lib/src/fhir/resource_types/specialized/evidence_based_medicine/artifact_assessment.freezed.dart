@@ -200,8 +200,12 @@ mixin _$ArtifactAssessment {
   PrimitiveElement? get dispositionElement =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this ArtifactAssessment to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ArtifactAssessment
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ArtifactAssessmentCopyWith<ArtifactAssessment> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -267,6 +271,8 @@ class _$ArtifactAssessmentCopyWithImpl<$Res, $Val extends ArtifactAssessment>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ArtifactAssessment
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -450,6 +456,8 @@ class _$ArtifactAssessmentCopyWithImpl<$Res, $Val extends ArtifactAssessment>
     ) as $Val);
   }
 
+  /// Create a copy of ArtifactAssessment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -462,6 +470,8 @@ class _$ArtifactAssessmentCopyWithImpl<$Res, $Val extends ArtifactAssessment>
     });
   }
 
+  /// Create a copy of ArtifactAssessment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -474,6 +484,8 @@ class _$ArtifactAssessmentCopyWithImpl<$Res, $Val extends ArtifactAssessment>
     });
   }
 
+  /// Create a copy of ArtifactAssessment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get citeAsReference {
@@ -486,6 +498,8 @@ class _$ArtifactAssessmentCopyWithImpl<$Res, $Val extends ArtifactAssessment>
     });
   }
 
+  /// Create a copy of ArtifactAssessment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get artifactReference {
@@ -564,6 +578,8 @@ class __$$ArtifactAssessmentImplCopyWithImpl<$Res>
       $Res Function(_$ArtifactAssessmentImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ArtifactAssessment
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1148,7 +1164,7 @@ class _$ArtifactAssessmentImpl extends _ArtifactAssessment {
                 other.dispositionElement == dispositionElement));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1189,7 +1205,9 @@ class _$ArtifactAssessmentImpl extends _ArtifactAssessment {
         dispositionElement
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ArtifactAssessment
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ArtifactAssessmentImplCopyWith<_$ArtifactAssessmentImpl> get copyWith =>
@@ -1254,44 +1272,42 @@ abstract class _ArtifactAssessment extends ArtifactAssessment {
   factory _ArtifactAssessment.fromJson(Map<String, dynamic> json) =
       _$ArtifactAssessmentImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a ArtifactAssessment resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.ArtifactAssessment)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -1299,16 +1315,16 @@ abstract class _ArtifactAssessment extends ArtifactAssessment {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -1316,9 +1332,9 @@ abstract class _ArtifactAssessment extends ArtifactAssessment {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -1332,135 +1348,139 @@ abstract class _ArtifactAssessment extends ArtifactAssessment {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] A formal identifier that is used to identify this artifact
   ///  assessment when it is represented in other formats, or referenced in a
   ///  specification, model, design or an instance.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [title] A short title for the assessment for use in displaying and
   ///  selecting.
-  String? get title;
   @override
+  String? get title;
 
   /// [titleElement] ("_title") Extensions for title
+  @override
   @JsonKey(name: '_title')
   PrimitiveElement? get titleElement;
-  @override
 
   /// [citeAsReference] Display of or reference to the bibliographic citation of
   ///  the comment, classifier, or rating.
-  Reference? get citeAsReference;
   @override
+  Reference? get citeAsReference;
 
   /// [citeAsMarkdown] Display of or reference to the bibliographic citation of
   ///  the comment, classifier, or rating.
-  FhirMarkdown? get citeAsMarkdown;
   @override
+  FhirMarkdown? get citeAsMarkdown;
 
   /// [citeAsMarkdownElement] ("_citeAsMarkdown") Extensions for citeAsMarkdown
+  @override
   @JsonKey(name: '_citeAsMarkdown')
   PrimitiveElement? get citeAsMarkdownElement;
-  @override
 
   /// [date] The date  (and optionally time) when the artifact assessment was
   ///  published. The date must change when the disposition changes and it must
   ///  change if the workflow status code changes. In addition, it should change
   ///  when the substantive content of the artifact assessment changes.
-  FhirDateTime? get date;
   @override
+  FhirDateTime? get date;
 
   /// [dateElement] ("_date") Extensions for date
+  @override
   @JsonKey(name: '_date')
   PrimitiveElement? get dateElement;
-  @override
 
   /// [copyright] A copyright statement relating to the artifact assessment
   ///  and/or its contents. Copyright statements are generally legal restrictions
   ///  on the use and publishing of the artifact assessment.
-  FhirMarkdown? get copyright;
   @override
+  FhirMarkdown? get copyright;
 
   /// [copyrightElement] ("_copyright") Extensions for copyright
+  @override
   @JsonKey(name: '_copyright')
   PrimitiveElement? get copyrightElement;
-  @override
 
   /// [approvalDate] The date on which the resource content was approved by the
   ///  publisher. Approval happens once when the content is officially approved
   ///  for usage.
-  FhirDate? get approvalDate;
   @override
+  FhirDate? get approvalDate;
 
   /// [approvalDateElement] ("_approvalDate") Extensions for approvalDate
+  @override
   @JsonKey(name: '_approvalDate')
   PrimitiveElement? get approvalDateElement;
-  @override
 
   /// [lastReviewDate] The date on which the resource content was last reviewed.
   ///  Review happens periodically after approval but does not change the
   ///  original approval date.
-  FhirDate? get lastReviewDate;
   @override
+  FhirDate? get lastReviewDate;
 
   /// [lastReviewDateElement] ("_lastReviewDate") Extensions for lastReviewDate
+  @override
   @JsonKey(name: '_lastReviewDate')
   PrimitiveElement? get lastReviewDateElement;
-  @override
 
   /// [artifactReference] A reference to a resource, canonical resource, or
   ///  non-FHIR resource which the comment or assessment is about.
-  Reference? get artifactReference;
   @override
+  Reference? get artifactReference;
 
   /// [artifactCanonical] A reference to a resource, canonical resource, or
   ///  non-FHIR resource which the comment or assessment is about.
-  FhirCanonical? get artifactCanonical;
   @override
+  FhirCanonical? get artifactCanonical;
 
   /// [artifactCanonicalElement] ("_artifactCanonical") Extensions for
   ///  artifactCanonical
+  @override
   @JsonKey(name: '_artifactCanonical')
   PrimitiveElement? get artifactCanonicalElement;
-  @override
 
   /// [artifactUri] A reference to a resource, canonical resource, or non-FHIR
   ///  resource which the comment or assessment is about.
-  FhirUri? get artifactUri;
   @override
+  FhirUri? get artifactUri;
 
   /// [artifactUriElement] ("_artifactUri") Extensions for artifactUri
+  @override
   @JsonKey(name: '_artifactUri')
   PrimitiveElement? get artifactUriElement;
-  @override
 
   /// [content] A component comment, classifier, or rating of the artifact.
-  List<ArtifactAssessmentContent>? get content;
   @override
+  List<ArtifactAssessmentContent>? get content;
 
   /// [workflowStatus] Indicates the workflow status of the comment or change
   ///  request.
-  FhirCode? get workflowStatus;
   @override
+  FhirCode? get workflowStatus;
 
   /// [workflowStatusElement] ("_workflowStatus") Extensions for workflowStatus
+  @override
   @JsonKey(name: '_workflowStatus')
   PrimitiveElement? get workflowStatusElement;
-  @override
 
   /// [disposition] Indicates the disposition of the responsible party to the
   ///  comment or change request.
-  FhirCode? get disposition;
   @override
+  FhirCode? get disposition;
 
   /// [dispositionElement] ("_disposition") Extensions for disposition
+  @override
   @JsonKey(name: '_disposition')
   PrimitiveElement? get dispositionElement;
+
+  /// Create a copy of ArtifactAssessment
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ArtifactAssessmentImplCopyWith<_$ArtifactAssessmentImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1556,8 +1576,12 @@ mixin _$ArtifactAssessmentContent {
   List<ArtifactAssessmentContent>? get component =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this ArtifactAssessmentContent to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ArtifactAssessmentContent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ArtifactAssessmentContentCopyWith<ArtifactAssessmentContent> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1604,6 +1628,8 @@ class _$ArtifactAssessmentContentCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ArtifactAssessmentContent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1697,6 +1723,8 @@ class _$ArtifactAssessmentContentCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of ArtifactAssessmentContent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get type {
@@ -1709,6 +1737,8 @@ class _$ArtifactAssessmentContentCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of ArtifactAssessmentContent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get quantity {
@@ -1721,6 +1751,8 @@ class _$ArtifactAssessmentContentCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of ArtifactAssessmentContent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get author {
@@ -1781,6 +1813,8 @@ class __$$ArtifactAssessmentContentImplCopyWithImpl<$Res>
       $Res Function(_$ArtifactAssessmentContentImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ArtifactAssessmentContent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2129,7 +2163,7 @@ class _$ArtifactAssessmentContentImpl extends _ArtifactAssessmentContent {
                 .equals(other._component, _component));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2151,7 +2185,9 @@ class _$ArtifactAssessmentContentImpl extends _ArtifactAssessmentContent {
       freeToShareElement,
       const DeepCollectionEquality().hash(_component));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ArtifactAssessmentContent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ArtifactAssessmentContentImplCopyWith<_$ArtifactAssessmentContentImpl>
@@ -2192,12 +2228,10 @@ abstract class _ArtifactAssessmentContent extends ArtifactAssessmentContent {
   factory _ArtifactAssessmentContent.fromJson(Map<String, dynamic> json) =
       _$ArtifactAssessmentContentImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -2205,9 +2239,9 @@ abstract class _ArtifactAssessmentContent extends ArtifactAssessmentContent {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -2221,75 +2255,79 @@ abstract class _ArtifactAssessmentContent extends ArtifactAssessmentContent {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [informationType] The type of information this component of the content
   ///  represents.
-  FhirCode? get informationType;
   @override
+  FhirCode? get informationType;
 
   /// [informationTypeElement] ("_informationType") Extensions for informationType
+  @override
   @JsonKey(name: '_informationType')
   PrimitiveElement? get informationTypeElement;
-  @override
 
   /// [summary] A brief summary of the content of this component.
-  FhirMarkdown? get summary;
   @override
+  FhirMarkdown? get summary;
 
   /// [summaryElement] ("_summary") Extensions for summary
+  @override
   @JsonKey(name: '_summary')
   PrimitiveElement? get summaryElement;
-  @override
 
   /// [type] Indicates what type of content this component represents.
-  CodeableConcept? get type;
   @override
+  CodeableConcept? get type;
 
   /// [classifier] Represents a rating, classifier, or assessment of the artifact.
-  List<CodeableConcept>? get classifier;
   @override
+  List<CodeableConcept>? get classifier;
 
   /// [quantity] A quantitative rating of the artifact.
-  Quantity? get quantity;
   @override
+  Quantity? get quantity;
 
   /// [author] Indicates who or what authored the content.
-  Reference? get author;
   @override
+  Reference? get author;
 
   /// [path] A URI that points to what the comment is about, such as a line of
   ///  text in the CQL, or a specific element in a resource.
-  List<FhirUri>? get path;
   @override
+  List<FhirUri>? get path;
 
   /// [pathElement] ("_path") Extensions for path
+  @override
   @JsonKey(name: '_path')
   List<PrimitiveElement>? get pathElement;
-  @override
 
   /// [relatedArtifact] Additional related artifacts that provide supporting
   ///  documentation, additional evidence, or further information related to the
   ///  content.
-  List<RelatedArtifact>? get relatedArtifact;
   @override
+  List<RelatedArtifact>? get relatedArtifact;
 
   /// [freeToShare] Acceptable to publicly share the comment, classifier or
   ///  rating.
-  FhirBoolean? get freeToShare;
   @override
+  FhirBoolean? get freeToShare;
 
   /// [freeToShareElement] ("_freeToShare") Extensions for freeToShare
+  @override
   @JsonKey(name: '_freeToShare')
   PrimitiveElement? get freeToShareElement;
-  @override
 
   /// [component] If the informationType is container, the components of the
   ///  content.
-  List<ArtifactAssessmentContent>? get component;
   @override
-  @JsonKey(ignore: true)
+  List<ArtifactAssessmentContent>? get component;
+
+  /// Create a copy of ArtifactAssessmentContent
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ArtifactAssessmentContentImplCopyWith<_$ArtifactAssessmentContentImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -379,7 +379,7 @@ class SubstanceSourceMaterial
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [SubstanceSourceMaterialFractionDescription] Source material shall capture

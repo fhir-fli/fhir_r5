@@ -397,7 +397,7 @@ class HealthcareService with _$HealthcareService implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [HealthcareServiceEligibility] The details of a healthcare service

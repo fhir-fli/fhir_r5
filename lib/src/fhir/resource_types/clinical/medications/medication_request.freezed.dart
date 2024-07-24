@@ -299,8 +299,12 @@ mixin _$MedicationRequest {
   ///  the current version of the resource.
   List<Reference>? get eventHistory => throw _privateConstructorUsedError;
 
+  /// Serializes this MedicationRequest to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MedicationRequestCopyWith<MedicationRequest> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -394,6 +398,8 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -663,6 +669,8 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
     ) as $Val);
   }
 
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirMetaCopyWith<$Res>? get meta {
@@ -675,6 +683,8 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
     });
   }
 
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NarrativeCopyWith<$Res>? get text {
@@ -687,6 +697,8 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
     });
   }
 
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get priorPrescription {
@@ -699,6 +711,8 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
     });
   }
 
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $IdentifierCopyWith<$Res>? get groupIdentifier {
@@ -711,6 +725,8 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
     });
   }
 
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get statusReason {
@@ -723,6 +739,8 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
     });
   }
 
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableReferenceCopyWith<$Res> get medication {
@@ -731,6 +749,8 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
     });
   }
 
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res> get subject {
@@ -739,6 +759,8 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
     });
   }
 
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get encounter {
@@ -751,6 +773,8 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
     });
   }
 
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get requester {
@@ -763,6 +787,8 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
     });
   }
 
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get performerType {
@@ -775,6 +801,8 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
     });
   }
 
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get recorder {
@@ -787,6 +815,8 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
     });
   }
 
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get courseOfTherapyType {
@@ -799,6 +829,8 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
     });
   }
 
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get effectiveDosePeriod {
@@ -811,6 +843,8 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
     });
   }
 
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MedicationRequestDispenseRequestCopyWith<$Res>? get dispenseRequest {
@@ -824,6 +858,8 @@ class _$MedicationRequestCopyWithImpl<$Res, $Val extends MedicationRequest>
     });
   }
 
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MedicationRequestSubstitutionCopyWith<$Res>? get substitution {
@@ -942,6 +978,8 @@ class __$$MedicationRequestImplCopyWithImpl<$Res>
       $Res Function(_$MedicationRequestImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1904,7 +1942,7 @@ class _$MedicationRequestImpl extends _MedicationRequest {
                 .equals(other._eventHistory, _eventHistory));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -1962,7 +2000,9 @@ class _$MedicationRequestImpl extends _MedicationRequest {
         const DeepCollectionEquality().hash(_eventHistory)
       ]);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MedicationRequestImplCopyWith<_$MedicationRequestImpl> get copyWith =>
@@ -2041,44 +2081,42 @@ abstract class _MedicationRequest extends MedicationRequest {
   factory _MedicationRequest.fromJson(Map<String, dynamic> json) =
       _$MedicationRequestImpl.fromJson;
 
-  @override
-
   /// [resourceType] This is a MedicationRequest resource
+  @override
   @JsonKey(unknownEnumValue: R5ResourceType.MedicationRequest)
   R5ResourceType get resourceType;
-  @override
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
-  FhirId? get id;
   @override
+  FhirId? get id;
 
   /// [meta] The metadata about the resource. This is content that is maintained
   ///  by the infrastructure. Changes to the content might not always be
   ///  associated with version changes to the resource.
-  FhirMeta? get meta;
   @override
+  FhirMeta? get meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   ///  resource was constructed, and which must be understood when processing the
   ///  content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
-  FhirUri? get implicitRules;
   @override
+  FhirUri? get implicitRules;
 
   /// [implicitRulesElement] ("_implicitRules") Extensions for implicitRules
+  @override
   @JsonKey(name: '_implicitRules')
   PrimitiveElement? get implicitRulesElement;
-  @override
 
   /// [language] The base language in which the resource is written.
-  FhirCode? get language;
   @override
+  FhirCode? get language;
 
   /// [languageElement] ("_language") Extensions for language
+  @override
   @JsonKey(name: '_language')
   PrimitiveElement? get languageElement;
-  @override
 
   /// [text] A human-readable narrative that contains a summary of the resource
   ///  and can be used to represent the content of the resource to a human. The
@@ -2086,16 +2124,16 @@ abstract class _MedicationRequest extends MedicationRequest {
   ///  contain sufficient detail to make it "clinically safe" for a human to just
   ///  read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
-  Narrative? get text;
   @override
+  Narrative? get text;
 
   /// [contained] These resources do not have an independent existence apart from
   ///  the resource that contains them - they cannot be identified independently,
   ///  nor can they have their own independent transaction scope. This is allowed
   ///  to be a Parameters resource if and only if it is referenced by a resource
   ///  that provides context/meaning.
-  List<Resource>? get contained;
   @override
+  List<Resource>? get contained;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the resource. To make the use
@@ -2103,9 +2141,9 @@ abstract class _MedicationRequest extends MedicationRequest {
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the resource and that modifies the
@@ -2119,8 +2157,8 @@ abstract class _MedicationRequest extends MedicationRequest {
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [identifier] Identifiers associated with this medication request that are
   ///  defined by business processes and/or used to refer to it when a direct URL
@@ -2128,18 +2166,18 @@ abstract class _MedicationRequest extends MedicationRequest {
   ///  identifiers assigned to this resource by the performer or other systems
   ///  and remain constant as the resource is updated and propagates from server
   ///  to server.
-  List<Identifier>? get identifier;
   @override
+  List<Identifier>? get identifier;
 
   /// [basedOn] A plan or request that is fulfilled in whole or in part by this
   ///  medication request.
-  List<Reference>? get basedOn;
   @override
+  List<Reference>? get basedOn;
 
   /// [priorPrescription] Reference to an order/prescription that is being
   ///  replaced by this MedicationRequest.
-  Reference? get priorPrescription;
   @override
+  Reference? get priorPrescription;
 
   /// [groupIdentifier] A shared identifier common to multiple independent
   ///  Request instances that were activated/authorized more or less
@@ -2148,58 +2186,58 @@ abstract class _MedicationRequest extends MedicationRequest {
   ///  ramifications in terms of reporting of results, billing, etc.  E.g. a
   ///  requisition number shared by a set of lab tests ordered together, or a
   ///  prescription number shared by all meds ordered at one time.
-  Identifier? get groupIdentifier;
   @override
+  Identifier? get groupIdentifier;
 
   /// [status] A code specifying the current state of the order.  Generally, this
   ///  will be active or completed state.
-  FhirCode? get status;
   @override
+  FhirCode? get status;
 
   /// [statusElement] ("_status") Extensions for status
+  @override
   @JsonKey(name: '_status')
   PrimitiveElement? get statusElement;
-  @override
 
   /// [statusReason] Captures the reason for the current state of the
   ///  MedicationRequest.
-  CodeableConcept? get statusReason;
   @override
+  CodeableConcept? get statusReason;
 
   /// [statusChanged] The date (and perhaps time) when the status was changed.
-  FhirDateTime? get statusChanged;
   @override
+  FhirDateTime? get statusChanged;
 
   /// [statusChangedElement] ("_statusChanged") Extensions for statusChanged
+  @override
   @JsonKey(name: '_statusChanged')
   PrimitiveElement? get statusChangedElement;
-  @override
 
   /// [intent] Whether the request is a proposal, plan, or an original order.
-  FhirCode? get intent;
   @override
+  FhirCode? get intent;
 
   /// [intentElement] ("_intent") Extensions for intent
+  @override
   @JsonKey(name: '_intent')
   PrimitiveElement? get intentElement;
-  @override
 
   /// [category] An arbitrary categorization or grouping of the medication
   ///  request.  It could be used for indicating where meds are intended to be
   ///  administered, eg. in an inpatient setting or in a patient's home, or a
   ///  legal category of the medication.
-  List<CodeableConcept>? get category;
   @override
+  List<CodeableConcept>? get category;
 
   /// [priority] Indicates how quickly the Medication Request should be addressed
   ///  with respect to other requests.
-  FhirCode? get priority;
   @override
+  FhirCode? get priority;
 
   /// [priorityElement] ("_priority") Extensions for priority
+  @override
   @JsonKey(name: '_priority')
   PrimitiveElement? get priorityElement;
-  @override
 
   /// [doNotPerform] If true, indicates that the provider is asking for the
   ///  patient to either stop taking or to not start taking the specified
@@ -2207,74 +2245,74 @@ abstract class _MedicationRequest extends MedicationRequest {
   ///  the provider is changing their medication. They want to create two
   ///  seperate requests: one to stop using the current medication and another to
   ///  start the new medication.
-  FhirBoolean? get doNotPerform;
   @override
+  FhirBoolean? get doNotPerform;
 
   /// [doNotPerformElement] ("_doNotPerform") Extensions for doNotPerform
+  @override
   @JsonKey(name: '_doNotPerform')
   PrimitiveElement? get doNotPerformElement;
-  @override
 
   /// [medication] Identifies the medication being requested. This is a link to a
   ///  resource that represents the medication which may be the details of the
   ///  medication or simply an attribute carrying a code that identifies the
   ///  medication from a known list of medications.
-  CodeableReference get medication;
   @override
+  CodeableReference get medication;
 
   /// [subject] The individual or group for whom the medication has been
   ///  requested.
-  Reference get subject;
   @override
+  Reference get subject;
 
   /// [informationSource] The person or organization who provided the information
   ///  about this request, if the source is someone other than the requestor.
   ///  This is often used when the MedicationRequest is reported by another
   ///  person.
-  List<Reference>? get informationSource;
   @override
+  List<Reference>? get informationSource;
 
   /// [encounter] The Encounter during which this [x] was created or to which the
   ///  creation of this record is tightly associated.
-  Reference? get encounter;
   @override
+  Reference? get encounter;
 
   /// [supportingInformation] Information to support fulfilling (i.e. dispensing
   ///  or administering) of the medication, for example, patient height and
   ///  weight, a MedicationStatement for the patient).
-  List<Reference>? get supportingInformation;
   @override
+  List<Reference>? get supportingInformation;
 
   /// [authoredOn] The date (and perhaps time) when the prescription was
   ///  initially written or authored on.
-  FhirDateTime? get authoredOn;
   @override
+  FhirDateTime? get authoredOn;
 
   /// [authoredOnElement] ("_authoredOn") Extensions for authoredOn
+  @override
   @JsonKey(name: '_authoredOn')
   PrimitiveElement? get authoredOnElement;
-  @override
 
   /// [requester] The individual, organization, or device that initiated the
   ///  request and has responsibility for its activation.
-  Reference? get requester;
   @override
+  Reference? get requester;
 
   /// [reported] Indicates if this record was captured as a secondary 'reported'
   ///  record rather than as an original primary source-of-truth record.  It may
   ///  also indicate the source of the report.
-  FhirBoolean? get reported;
   @override
+  FhirBoolean? get reported;
 
   /// [reportedElement] ("_reported") Extensions for reported
+  @override
   @JsonKey(name: '_reported')
   PrimitiveElement? get reportedElement;
-  @override
 
   /// [performerType] Indicates the type of performer of the administration of
   ///  the medication.
-  CodeableConcept? get performerType;
   @override
+  CodeableConcept? get performerType;
 
   /// [performer] The specified desired performer of the medication treatment
   ///  (e.g. the performer of the medication administration).  For devices, this
@@ -2282,64 +2320,64 @@ abstract class _MedicationRequest extends MedicationRequest {
   ///  medication.  An IV Pump would be an example of a device that is performing
   ///  the administration.  Both the IV Pump and the practitioner that set the
   ///  rate or bolus on the pump can be listed as performers.
-  List<Reference>? get performer;
   @override
+  List<Reference>? get performer;
 
   /// [device] The intended type of device that is to be used for the
   ///  administration of the medication (for example, PCA Pump).
-  List<CodeableReference>? get device;
   @override
+  List<CodeableReference>? get device;
 
   /// [recorder] The person who entered the order on behalf of another individual
   ///  for example in the case of a verbal or a telephone order.
-  Reference? get recorder;
   @override
+  Reference? get recorder;
 
   /// [reason] The reason or the indication for ordering or not ordering the
   ///  medication.
-  List<CodeableReference>? get reason;
   @override
+  List<CodeableReference>? get reason;
 
   /// [courseOfTherapyType] The description of the overall pattern of the
   ///  administration of the medication to the patient.
-  CodeableConcept? get courseOfTherapyType;
   @override
+  CodeableConcept? get courseOfTherapyType;
 
   /// [insurance] Insurance plans, coverage extensions, pre-authorizations and/or
   ///  pre-determinations that may be required for delivering the requested
   ///  service.
-  List<Reference>? get insurance;
   @override
+  List<Reference>? get insurance;
 
   /// [note] Extra information about the prescription that could not be conveyed
   ///  by the other attributes.
-  List<Annotation>? get note;
   @override
+  List<Annotation>? get note;
 
   /// [renderedDosageInstruction] The full representation of the dose of the
   ///  medication included in all dosage instructions.  To be used when multiple
   ///  dosage instructions are included to represent complex dosing such as
   ///  increasing or tapering doses.
-  FhirMarkdown? get renderedDosageInstruction;
   @override
+  FhirMarkdown? get renderedDosageInstruction;
 
   /// [renderedDosageInstructionElement] ("_renderedDosageInstruction")
   ///  Extensions for renderedDosageInstruction
+  @override
   @JsonKey(name: '_renderedDosageInstruction')
   PrimitiveElement? get renderedDosageInstructionElement;
-  @override
 
   /// [effectiveDosePeriod] The period over which the medication is to be taken.
   ///  Where there are multiple dosageInstruction lines (for example, tapering
   ///  doses), this is the earliest date and the latest end date of the
   ///  dosageInstructions.
-  Period? get effectiveDosePeriod;
   @override
+  Period? get effectiveDosePeriod;
 
   /// [dosageInstruction] Specific instructions for how the medication is to be
   ///  used by the patient.
-  List<Dosage>? get dosageInstruction;
   @override
+  List<Dosage>? get dosageInstruction;
 
   /// [dispenseRequest] Indicates the specific details for the dispense or
   ///  medication supply part of a medication request (also known as a Medication
@@ -2347,23 +2385,27 @@ abstract class _MedicationRequest extends MedicationRequest {
   ///  always sent with the order.  There may be in some settings (e.g.
   ///  hospitals) institutional or system support for completing the dispense
   ///  details in the pharmacy department.
-  MedicationRequestDispenseRequest? get dispenseRequest;
   @override
+  MedicationRequestDispenseRequest? get dispenseRequest;
 
   /// [substitution] Indicates whether or not substitution can or should be part
   ///  of the dispense. In some cases, substitution must happen, in other cases
   ///  substitution must not happen. This block explains the prescriber's intent.
   ///  If nothing is specified substitution may be done.
-  MedicationRequestSubstitution? get substitution;
   @override
+  MedicationRequestSubstitution? get substitution;
 
   /// [eventHistory] Links to Provenance records for past versions of this
   ///  resource or fulfilling request or event resources that identify key state
   ///  transitions or updates that are likely to be relevant to a user looking at
   ///  the current version of the resource.
-  List<Reference>? get eventHistory;
   @override
-  @JsonKey(ignore: true)
+  List<Reference>? get eventHistory;
+
+  /// Create a copy of MedicationRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MedicationRequestImplCopyWith<_$MedicationRequestImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -2456,8 +2498,12 @@ mixin _$MedicationRequestDispenseRequest {
   CodeableConcept? get doseAdministrationAid =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this MedicationRequestDispenseRequest to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of MedicationRequestDispenseRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MedicationRequestDispenseRequestCopyWith<MedicationRequestDispenseRequest>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2506,6 +2552,8 @@ class _$MedicationRequestDispenseRequestCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MedicationRequestDispenseRequest
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2579,6 +2627,8 @@ class _$MedicationRequestDispenseRequestCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of MedicationRequestDispenseRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MedicationRequestInitialFillCopyWith<$Res>? get initialFill {
@@ -2592,6 +2642,8 @@ class _$MedicationRequestDispenseRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of MedicationRequestDispenseRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get dispenseInterval {
@@ -2604,6 +2656,8 @@ class _$MedicationRequestDispenseRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of MedicationRequestDispenseRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PeriodCopyWith<$Res>? get validityPeriod {
@@ -2616,6 +2670,8 @@ class _$MedicationRequestDispenseRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of MedicationRequestDispenseRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get quantity {
@@ -2628,6 +2684,8 @@ class _$MedicationRequestDispenseRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of MedicationRequestDispenseRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get expectedSupplyDuration {
@@ -2640,6 +2698,8 @@ class _$MedicationRequestDispenseRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of MedicationRequestDispenseRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReferenceCopyWith<$Res>? get dispenser {
@@ -2652,6 +2712,8 @@ class _$MedicationRequestDispenseRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of MedicationRequestDispenseRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get doseAdministrationAid {
@@ -2717,6 +2779,8 @@ class __$$MedicationRequestDispenseRequestImplCopyWithImpl<$Res>
       $Res Function(_$MedicationRequestDispenseRequestImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MedicationRequestDispenseRequest
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2991,7 +3055,7 @@ class _$MedicationRequestDispenseRequestImpl
                 other.doseAdministrationAid == doseAdministrationAid));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3009,7 +3073,9 @@ class _$MedicationRequestDispenseRequestImpl
       const DeepCollectionEquality().hash(_dispenserInstruction),
       doseAdministrationAid);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MedicationRequestDispenseRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MedicationRequestDispenseRequestImplCopyWith<
@@ -3049,12 +3115,10 @@ abstract class _MedicationRequestDispenseRequest
           Map<String, dynamic> json) =
       _$MedicationRequestDispenseRequestImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3062,9 +3126,9 @@ abstract class _MedicationRequestDispenseRequest
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3078,23 +3142,23 @@ abstract class _MedicationRequestDispenseRequest
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [initialFill] Indicates the quantity or duration for the first dispense of
   ///  the medication.
-  MedicationRequestInitialFill? get initialFill;
   @override
+  MedicationRequestInitialFill? get initialFill;
 
   /// [dispenseInterval] The minimum period of time that must occur between
   ///  dispenses of the medication.
-  FhirDuration? get dispenseInterval;
   @override
+  FhirDuration? get dispenseInterval;
 
   /// [validityPeriod] This indicates the validity period of a prescription
   ///  (stale dating the Prescription).
-  Period? get validityPeriod;
   @override
+  Period? get validityPeriod;
 
   /// [numberOfRepeatsAllowed] An integer indicating the number of times, in
   ///  addition to the original dispense, (aka refills or repeats) that the
@@ -3104,40 +3168,44 @@ abstract class _MedicationRequestDispenseRequest
   ///  dispensed a total of 4 times and the patient can receive a total of 120
   ///  tablets.  A prescriber may explicitly say that zero refills are permitted
   ///  after the initial dispense.
-  FhirUnsignedInt? get numberOfRepeatsAllowed;
   @override
+  FhirUnsignedInt? get numberOfRepeatsAllowed;
 
   /// [numberOfRepeatsAllowedElement] ("_numberOfRepeatsAllowed") Extensions for
   ///  numberOfRepeatsAllowed
+  @override
   @JsonKey(name: '_numberOfRepeatsAllowed')
   PrimitiveElement? get numberOfRepeatsAllowedElement;
-  @override
 
   /// [quantity] The amount that is to be dispensed for one fill.
-  Quantity? get quantity;
   @override
+  Quantity? get quantity;
 
   /// [expectedSupplyDuration] Identifies the period time over which the supplied
   ///  product is expected to be used, or the length of time the dispense is
   ///  expected to last.
-  FhirDuration? get expectedSupplyDuration;
   @override
+  FhirDuration? get expectedSupplyDuration;
 
   /// [dispenser] Indicates the intended performing Organization that will
   ///  dispense the medication as specified by the prescriber.
-  Reference? get dispenser;
   @override
+  Reference? get dispenser;
 
   /// [dispenserInstruction] Provides additional information to the dispenser,
   ///  for example, counselling to be provided to the patient.
-  List<Annotation>? get dispenserInstruction;
   @override
+  List<Annotation>? get dispenserInstruction;
 
   /// [doseAdministrationAid] Provides information about the type of adherence
   ///  packaging to be supplied for the medication dispense.
-  CodeableConcept? get doseAdministrationAid;
   @override
-  @JsonKey(ignore: true)
+  CodeableConcept? get doseAdministrationAid;
+
+  /// Create a copy of MedicationRequestDispenseRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MedicationRequestDispenseRequestImplCopyWith<
           _$MedicationRequestDispenseRequestImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3184,8 +3252,12 @@ mixin _$MedicationRequestInitialFill {
   /// [duration] The length of time that the first dispense is expected to last.
   FhirDuration? get duration => throw _privateConstructorUsedError;
 
+  /// Serializes this MedicationRequestInitialFill to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of MedicationRequestInitialFill
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MedicationRequestInitialFillCopyWith<MedicationRequestInitialFill>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3220,6 +3292,8 @@ class _$MedicationRequestInitialFillCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MedicationRequestInitialFill
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3253,6 +3327,8 @@ class _$MedicationRequestInitialFillCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of MedicationRequestInitialFill
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuantityCopyWith<$Res>? get quantity {
@@ -3265,6 +3341,8 @@ class _$MedicationRequestInitialFillCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of MedicationRequestInitialFill
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FhirDurationCopyWith<$Res>? get duration {
@@ -3310,6 +3388,8 @@ class __$$MedicationRequestInitialFillImplCopyWithImpl<$Res>
       $Res Function(_$MedicationRequestInitialFillImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MedicationRequestInitialFill
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3455,7 +3535,7 @@ class _$MedicationRequestInitialFillImpl extends _MedicationRequestInitialFill {
                 other.duration == duration));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3465,7 +3545,9 @@ class _$MedicationRequestInitialFillImpl extends _MedicationRequestInitialFill {
       quantity,
       duration);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MedicationRequestInitialFill
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MedicationRequestInitialFillImplCopyWith<
@@ -3494,12 +3576,10 @@ abstract class _MedicationRequestInitialFill
   factory _MedicationRequestInitialFill.fromJson(Map<String, dynamic> json) =
       _$MedicationRequestInitialFillImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3507,9 +3587,9 @@ abstract class _MedicationRequestInitialFill
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3523,17 +3603,21 @@ abstract class _MedicationRequestInitialFill
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [quantity] The amount or quantity to provide as part of the first dispense.
-  Quantity? get quantity;
   @override
+  Quantity? get quantity;
 
   /// [duration] The length of time that the first dispense is expected to last.
-  FhirDuration? get duration;
   @override
-  @JsonKey(ignore: true)
+  FhirDuration? get duration;
+
+  /// Create a copy of MedicationRequestInitialFill
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MedicationRequestInitialFillImplCopyWith<
           _$MedicationRequestInitialFillImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -3592,8 +3676,12 @@ mixin _$MedicationRequestSubstitution {
   ///  must or must not be performed.
   CodeableConcept? get reason => throw _privateConstructorUsedError;
 
+  /// Serializes this MedicationRequestSubstitution to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of MedicationRequestSubstitution
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MedicationRequestSubstitutionCopyWith<MedicationRequestSubstitution>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -3630,6 +3718,8 @@ class _$MedicationRequestSubstitutionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MedicationRequestSubstitution
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3673,6 +3763,8 @@ class _$MedicationRequestSubstitutionCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of MedicationRequestSubstitution
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get allowedCodeableConcept {
@@ -3686,6 +3778,8 @@ class _$MedicationRequestSubstitutionCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of MedicationRequestSubstitution
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CodeableConceptCopyWith<$Res>? get reason {
@@ -3733,6 +3827,8 @@ class __$$MedicationRequestSubstitutionImplCopyWithImpl<$Res>
       $Res Function(_$MedicationRequestSubstitutionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MedicationRequestSubstitution
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -3906,7 +4002,7 @@ class _$MedicationRequestSubstitutionImpl
             (identical(other.reason, reason) || other.reason == reason));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -3918,7 +4014,9 @@ class _$MedicationRequestSubstitutionImpl
       allowedCodeableConcept,
       reason);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MedicationRequestSubstitution
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MedicationRequestSubstitutionImplCopyWith<
@@ -3950,12 +4048,10 @@ abstract class _MedicationRequestSubstitution
   factory _MedicationRequestSubstitution.fromJson(Map<String, dynamic> json) =
       _$MedicationRequestSubstitutionImpl.fromJson;
 
-  @override
-
   /// [id] Unique id for the element within a resource (for internal references).
   ///  This may be any string value that does not contain spaces.
-  String? get id;
   @override
+  String? get id;
 
   /// [extension_] ("extension") May be used to represent additional information
   ///  that is not part of the basic definition of the element. To make the use
@@ -3963,9 +4059,9 @@ abstract class _MedicationRequestSubstitution
   ///  applied to the definition and use of extensions. Though any implementer
   ///  can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   @JsonKey(name: 'extension')
   List<FhirExtension>? get extension_;
-  @override
 
   /// [modifierExtension] May be used to represent additional information that is
   ///  not part of the basic definition of the element and that modifies the
@@ -3979,29 +4075,33 @@ abstract class _MedicationRequestSubstitution
   ///  required to check for modifier extensions.Modifier extensions SHALL NOT
   ///  change the meaning of any elements on Resource or DomainResource
   ///  (including cannot change the meaning of modifierExtension itself).
-  List<FhirExtension>? get modifierExtension;
   @override
+  List<FhirExtension>? get modifierExtension;
 
   /// [allowedBoolean] True if the prescriber allows a different drug to be
   ///  dispensed from what was prescribed.
-  FhirBoolean? get allowedBoolean;
   @override
+  FhirBoolean? get allowedBoolean;
 
   /// [allowedBooleanElement] ("_allowedBoolean") Extensions for allowedBoolean
+  @override
   @JsonKey(name: '_allowedBoolean')
   PrimitiveElement? get allowedBooleanElement;
-  @override
 
   /// [allowedCodeableConcept] True if the prescriber allows a different drug to
   ///  be dispensed from what was prescribed.
-  CodeableConcept? get allowedCodeableConcept;
   @override
+  CodeableConcept? get allowedCodeableConcept;
 
   /// [reason] Indicates the reason for the substitution, or why substitution
   ///  must or must not be performed.
-  CodeableConcept? get reason;
   @override
-  @JsonKey(ignore: true)
+  CodeableConcept? get reason;
+
+  /// Create a copy of MedicationRequestSubstitution
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MedicationRequestSubstitutionImplCopyWith<
           _$MedicationRequestSubstitutionImpl>
       get copyWith => throw _privateConstructorUsedError;

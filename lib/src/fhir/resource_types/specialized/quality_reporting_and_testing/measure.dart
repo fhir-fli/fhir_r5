@@ -738,7 +738,7 @@ class Measure with _$Measure implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [MeasureTerm] The Measure resource provides the definition of a quality

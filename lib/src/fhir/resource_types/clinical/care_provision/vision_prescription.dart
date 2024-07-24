@@ -270,7 +270,7 @@ class VisionPrescription with _$VisionPrescription implements DomainResource {
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
 
 /// [VisionPrescriptionLensSpecification] An authorization for the provision of

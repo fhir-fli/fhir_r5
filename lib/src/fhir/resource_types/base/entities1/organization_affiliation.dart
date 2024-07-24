@@ -13,7 +13,6 @@ import '../../../../../fhir_r5.dart';
 part 'organization_affiliation.freezed.dart';
 part 'organization_affiliation.g.dart';
 
-
 /// [OrganizationAffiliation] Defines an affiliation/association/relationship
 ///  between 2 distinct organizations, that is not a part-of
 ///  relationship/sub-division relationship.
@@ -268,7 +267,6 @@ class OrganizationAffiliation
     }
   }
 
-
   /// Another convenience method because more and more I'm transmitting FHIR
   /// data as a String and not a Map
   @override
@@ -292,5 +290,5 @@ class OrganizationAffiliation
 
   @override
   Resource updateVersion({FhirMeta? oldMeta}) =>
-      copyWith(meta: updateFhirMetaVersion(meta));
+      copyWith(meta: updateFhirMetaVersion(oldMeta ?? meta));
 }
