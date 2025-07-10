@@ -64,7 +64,8 @@ enum BiologicallyDerivedProductDispenseCodesEnum {
 
   /// Converts a string to the corresponding enum value.
   static BiologicallyDerivedProductDispenseCodesEnum? fromString(
-      String? value) {
+    String? value,
+  ) {
     if (value == null) {
       return null;
     }
@@ -146,7 +147,9 @@ class BiologicallyDerivedProductDispenseCodes extends FhirCodeEnum {
     final element = elementJson != null ? Element.fromJson(elementJson) : null;
     if (value == null && element != null) {
       return BiologicallyDerivedProductDispenseCodes._(
-          valueString: null, element: element);
+        valueString: null,
+        element: element,
+      );
     } else if (value == null && element == null) {
       throw ArgumentError(
         'BiologicallyDerivedProductDispenseCodes cannot be constructed from JSON.',
@@ -335,7 +338,9 @@ class BiologicallyDerivedProductDispenseCodesCopyWithImpl<T>
     extends $FhirCodeCopyWithImpl<T> {
   /// Constructor for the copyWith implementation.
   BiologicallyDerivedProductDispenseCodesCopyWithImpl(
-      super._value, super._then);
+    super._value,
+    super._then,
+  );
 
   @override
   T call({

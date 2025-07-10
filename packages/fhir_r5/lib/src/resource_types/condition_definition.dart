@@ -152,7 +152,7 @@ class ConditionDefinition extends MetadataResource {
         json,
         'status',
         PublicationStatus.fromJson,
-      )!,
+      ),
       experimental: JsonParser.parsePrimitive<FhirBoolean>(
         json,
         'experimental',

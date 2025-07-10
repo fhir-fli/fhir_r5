@@ -150,7 +150,7 @@ class ValueSet extends MetadataResource {
         json,
         'status',
         PublicationStatus.fromJson,
-      )!,
+      ),
       experimental: JsonParser.parsePrimitive<FhirBoolean>(
         json,
         'experimental',
@@ -384,23 +384,27 @@ class ValueSet extends MetadataResource {
   /// The date on which the resource content was approved by the publisher.
   /// Approval happens once when the content is officially approved for
   /// usage.
+  @override
   final FhirDate? approvalDate;
 
   /// [lastReviewDate]
   /// The date on which the resource content was last reviewed. Review
   /// happens periodically after approval but does not change the original
   /// approval date.
+  @override
   final FhirDate? lastReviewDate;
 
   /// [effectivePeriod]
   /// The period during which the ValueSet content was or is planned to be in
   /// active use.
+  @override
   final Period? effectivePeriod;
 
   /// [relatedArtifact]
   /// Related artifacts such as additional documentation, justification,
   /// dependencies, bibliographic references, and predecessor and successor
   /// artifacts.
+  @override
   final List<RelatedArtifact>? relatedArtifact;
 
   /// [compose]
@@ -4177,8 +4181,8 @@ class ValueSetContains extends BackboneElement {
           )
           .toList(),
       property: (json['property'] as List<dynamic>?)
-          ?.map<ValueSetProperty>(
-            (v) => ValueSetProperty.fromJson(
+          ?.map<ValueSetProperty1>(
+            (v) => ValueSetProperty1.fromJson(
               {...v as Map<String, dynamic>},
             ),
           )
@@ -4281,7 +4285,7 @@ class ValueSetContains extends BackboneElement {
 
   /// [property]
   /// A property value for this concept.
-  final List<ValueSetProperty>? property;
+  final List<ValueSetProperty1>? property;
 
   /// [contains]
   /// Other codes and entries contained under this entry in the hierarchy.

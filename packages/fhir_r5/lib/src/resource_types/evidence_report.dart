@@ -107,7 +107,7 @@ class EvidenceReport extends MetadataResource {
         json,
         'status',
         PublicationStatus.fromJson,
-      )!,
+      ),
       useContext: (json['useContext'] as List<dynamic>?)
           ?.map<UsageContext>(
             (v) => UsageContext.fromJson(
@@ -291,6 +291,7 @@ class EvidenceReport extends MetadataResource {
 
   /// [relatedArtifact]
   /// Link, description or reference to artifact associated with the report.
+  @override
   final List<RelatedArtifact>? relatedArtifact;
 
   /// [subject]

@@ -160,7 +160,9 @@ class ArtifactAssessmentWorkflowStatus extends FhirCodeEnum {
     final element = elementJson != null ? Element.fromJson(elementJson) : null;
     if (value == null && element != null) {
       return ArtifactAssessmentWorkflowStatus._(
-          valueString: null, element: element);
+        valueString: null,
+        element: element,
+      );
     } else if (value == null && element == null) {
       throw ArgumentError(
         'ArtifactAssessmentWorkflowStatus cannot be constructed from JSON.',

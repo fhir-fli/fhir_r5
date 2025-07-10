@@ -781,7 +781,7 @@ abstract class $ValueSetContainsCopyWith<T>
     FhirCode? code,
     FhirString? display,
     List<ValueSetDesignation>? designation,
-    List<ValueSetProperty>? property,
+    List<ValueSetProperty1>? property,
     List<ValueSetContains>? contains,
     bool? disallowExtensions,
   });
@@ -840,7 +840,7 @@ class _$ValueSetContainsCopyWithImpl<T>
             : designation as List<ValueSetDesignation>?,
         property: identical(property, fhirSentinel)
             ? _value.property
-            : property as List<ValueSetProperty>?,
+            : property as List<ValueSetProperty1>?,
         contains: identical(contains, fhirSentinel)
             ? _value.contains
             : contains as List<ValueSetContains>?,

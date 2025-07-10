@@ -154,7 +154,7 @@ class EvidenceVariable extends MetadataResource {
         json,
         'status',
         PublicationStatus.fromJson,
-      )!,
+      ),
       experimental: JsonParser.parsePrimitive<FhirBoolean>(
         json,
         'experimental',
@@ -393,22 +393,26 @@ class EvidenceVariable extends MetadataResource {
   ///
   /// See guidance around (not) making local changes to elements
   /// [here](canonicalresource.html#localization).
+  @override
   final FhirDate? approvalDate;
 
   /// [lastReviewDate]
   /// The date on which the resource content was last reviewed. Review
   /// happens periodically after approval but does not change the original
   /// approval date.
+  @override
   final FhirDate? lastReviewDate;
 
   /// [effectivePeriod]
   /// The period during which the resource content was or is planned to be in
   /// active use.
+  @override
   final Period? effectivePeriod;
 
   /// [relatedArtifact]
   /// Related artifacts such as additional documentation, justification, or
   /// bibliographic references.
+  @override
   final List<RelatedArtifact>? relatedArtifact;
 
   /// [actual]

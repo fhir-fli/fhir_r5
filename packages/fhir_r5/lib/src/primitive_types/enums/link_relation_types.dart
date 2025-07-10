@@ -1169,7 +1169,7 @@ class LinkRelationTypes extends FhirCodeEnum {
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
       valueString:
-          'The document linked to was later converted to the document that contains this link relation. For example, an RFC can have a link to the Internet-Draft that became the RFC; in that case, the link relation would be \"convertedFrom\".',
+          'The document linked to was later converted to the document that contains this link relation. For example, an RFC can have a link to the Internet-Draft that became the RFC; in that case, the link relation would be "convertedFrom".',
     ),
   );
 
@@ -1724,7 +1724,7 @@ class LinkRelationTypes extends FhirCodeEnum {
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
       valueString:
-          'The link target of a link with the \"linkset\" relation type provides a set of links, including links in which the link context of the link participates.',
+          'The link target of a link with the "linkset" relation type provides a set of links, including links in which the link context of the link participates.',
     ),
   );
 
@@ -2124,7 +2124,7 @@ class LinkRelationTypes extends FhirCodeEnum {
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
       valueString:
-          'Refers to the previous resource in an ordered series of resources. Synonym for \"prev\".',
+          'Refers to the previous resource in an ordered series of resources. Synonym for "prev".',
     ),
   );
 
@@ -2206,7 +2206,7 @@ class LinkRelationTypes extends FhirCodeEnum {
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
       valueString:
-          'Identifies the root of RESTCONF API as configured on this HTTP server. The \"restconf\" relation defines the root of the API defined in RFC8040. Subsequent revisions of RESTCONF will use alternate relation values to support protocol versioning.',
+          'Identifies the root of RESTCONF API as configured on this HTTP server. The "restconf" relation defines the root of the API defined in RFC8040. Subsequent revisions of RESTCONF will use alternate relation values to support protocol versioning.',
     ),
   );
 

@@ -39,7 +39,8 @@ enum DeviceDefinitionRegulatoryIdentifierTypeEnum {
 
   /// Converts a string to the corresponding enum value.
   static DeviceDefinitionRegulatoryIdentifierTypeEnum? fromString(
-      String? value) {
+    String? value,
+  ) {
     if (value == null) {
       return null;
     }
@@ -111,7 +112,9 @@ class DeviceDefinitionRegulatoryIdentifierType extends FhirCodeEnum {
     final element = elementJson != null ? Element.fromJson(elementJson) : null;
     if (value == null && element != null) {
       return DeviceDefinitionRegulatoryIdentifierType._(
-          valueString: null, element: element);
+        valueString: null,
+        element: element,
+      );
     } else if (value == null && element == null) {
       throw ArgumentError(
         'DeviceDefinitionRegulatoryIdentifierType cannot be constructed from JSON.',
@@ -220,7 +223,9 @@ class DeviceDefinitionRegulatoryIdentifierTypeCopyWithImpl<T>
     extends $FhirCodeCopyWithImpl<T> {
   /// Constructor for the copyWith implementation.
   DeviceDefinitionRegulatoryIdentifierTypeCopyWithImpl(
-      super._value, super._then);
+    super._value,
+    super._then,
+  );
 
   @override
   T call({

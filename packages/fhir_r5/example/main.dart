@@ -59,13 +59,16 @@ void main() {
       AllergyIntoleranceReaction(
         manifestation: [
           CodeableReference(
-              concept: CodeableConcept(coding: [
-            Coding(
-              system: FhirUri('http://snomed.info/sct'),
-              code: FhirCode('123456'),
-              display: FhirString('Peanut Allergy'),
+            concept: CodeableConcept(
+              coding: [
+                Coding(
+                  system: FhirUri('http://snomed.info/sct'),
+                  code: FhirCode('123456'),
+                  display: FhirString('Peanut Allergy'),
+                ),
+              ],
             ),
-          ])),
+          ),
         ],
       ),
     ],

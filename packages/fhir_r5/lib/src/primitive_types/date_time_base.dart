@@ -684,17 +684,18 @@ abstract class FhirDateTimeBase extends PrimitiveType
     ExtendedDuration o,
   ) =>
       plus<T>(
-          base,
-          ExtendedDuration(
-            years: -o.years,
-            months: -o.months,
-            days: -o.days,
-            hours: -o.hours,
-            minutes: -o.minutes,
-            seconds: -o.seconds,
-            milliseconds: -o.milliseconds,
-            microseconds: -o.microseconds,
-          ));
+        base,
+        ExtendedDuration(
+          years: -o.years,
+          months: -o.months,
+          days: -o.days,
+          hours: -o.hours,
+          minutes: -o.minutes,
+          seconds: -o.seconds,
+          milliseconds: -o.milliseconds,
+          microseconds: -o.microseconds,
+        ),
+      );
 
   /// Helper methods (cleanup, conversions, timezone formatting)
   static String _cleanInput(String input) {

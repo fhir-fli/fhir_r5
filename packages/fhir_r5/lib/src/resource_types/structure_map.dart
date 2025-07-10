@@ -140,7 +140,7 @@ class StructureMap extends CanonicalResource {
         json,
         'status',
         PublicationStatus.fromJson,
-      )!,
+      ),
       experimental: JsonParser.parsePrimitive<FhirBoolean>(
         json,
         'experimental',

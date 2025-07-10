@@ -102,7 +102,9 @@ class QuestionnaireItemDisabledDisplay extends FhirCodeEnum {
     final element = elementJson != null ? Element.fromJson(elementJson) : null;
     if (value == null && element != null) {
       return QuestionnaireItemDisabledDisplay._(
-          valueString: null, element: element);
+        valueString: null,
+        element: element,
+      );
     } else if (value == null && element == null) {
       throw ArgumentError(
         'QuestionnaireItemDisabledDisplay cannot be constructed from JSON.',

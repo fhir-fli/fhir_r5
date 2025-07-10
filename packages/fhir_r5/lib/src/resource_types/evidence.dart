@@ -162,7 +162,7 @@ class Evidence extends MetadataResource {
         json,
         'status',
         PublicationStatus.fromJson,
-      )!,
+      ),
       experimental: JsonParser.parsePrimitive<FhirBoolean>(
         json,
         'experimental',
@@ -389,12 +389,14 @@ class Evidence extends MetadataResource {
   /// The date on which the resource content was approved by the publisher.
   /// Approval happens once when the content is officially approved for
   /// usage.
+  @override
   final FhirDate? approvalDate;
 
   /// [lastReviewDate]
   /// The date on which the resource content was last reviewed. Review
   /// happens periodically after approval but does not change the original
   /// approval date.
+  @override
   final FhirDate? lastReviewDate;
 
   /// [purpose]
@@ -417,6 +419,7 @@ class Evidence extends MetadataResource {
 
   /// [relatedArtifact]
   /// Link or citation to artifact associated with the summary.
+  @override
   final List<RelatedArtifact>? relatedArtifact;
 
   /// [assertion]

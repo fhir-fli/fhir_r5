@@ -122,7 +122,9 @@ class ImagingSelection2DGraphicType extends FhirCodeEnum {
     final element = elementJson != null ? Element.fromJson(elementJson) : null;
     if (value == null && element != null) {
       return ImagingSelection2DGraphicType._(
-          valueString: null, element: element);
+        valueString: null,
+        element: element,
+      );
     } else if (value == null && element == null) {
       throw ArgumentError(
         'ImagingSelection2DGraphicType cannot be constructed from JSON.',

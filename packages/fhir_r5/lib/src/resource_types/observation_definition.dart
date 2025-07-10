@@ -154,7 +154,7 @@ class ObservationDefinition extends MetadataResource {
         json,
         'status',
         PublicationStatus.fromJson,
-      )!,
+      ),
       experimental: JsonParser.parsePrimitive<FhirBoolean>(
         json,
         'experimental',
@@ -423,16 +423,19 @@ class ObservationDefinition extends MetadataResource {
   /// The date on which the asset content was approved by the publisher.
   /// Approval happens once when the content is officially approved for
   /// usage.
+  @override
   final FhirDate? approvalDate;
 
   /// [lastReviewDate]
   /// The date on which the asset content was last reviewed. Review happens
   /// periodically after that, but doesn't change the original approval date.
+  @override
   final FhirDate? lastReviewDate;
 
   /// [effectivePeriod]
   /// The period during which the ObservationDefinition content was or is
   /// planned to be effective.
+  @override
   final Period? effectivePeriod;
 
   /// [derivedFromCanonical]

@@ -196,7 +196,7 @@ class ActivityDefinition extends MetadataResource {
         json,
         'status',
         PublicationStatus.fromJson,
-      )!,
+      ),
       experimental: JsonParser.parsePrimitive<FhirBoolean>(
         json,
         'experimental',
@@ -560,22 +560,26 @@ class ActivityDefinition extends MetadataResource {
   /// The date on which the resource content was approved by the publisher.
   /// Approval happens once when the content is officially approved for
   /// usage.
+  @override
   final FhirDate? approvalDate;
 
   /// [lastReviewDate]
   /// The date on which the resource content was last reviewed. Review
   /// happens periodically after approval but does not change the original
   /// approval date.
+  @override
   final FhirDate? lastReviewDate;
 
   /// [effectivePeriod]
   /// The period during which the activity definition content was or is
   /// planned to be in active use.
+  @override
   final Period? effectivePeriod;
 
   /// [relatedArtifact]
   /// Related artifacts such as additional documentation, justification, or
   /// bibliographic references.
+  @override
   final List<RelatedArtifact>? relatedArtifact;
 
   /// [library_]
