@@ -1270,6 +1270,7 @@ class CompartmentDefinitionBuilder extends CanonicalResourceBuilder {
     List<String>? formatCommentsPre,
     List<String>? formatCommentsPost,
     List<dynamic>? annotations,
+    List<CodeableConceptBuilder>? jurisdiction,
   }) {
     final newObjectPath = objectPath;
     final newResult = CompartmentDefinitionBuilder(

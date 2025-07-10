@@ -137,7 +137,7 @@ abstract class DomainResourceBuilder extends ResourceBuilder {
     FhirStringBuilder? id,
     FhirMetaBuilder? meta,
     FhirUriBuilder? implicitRules,
-    CommonLanguagesBuilder? language,
+    AllLanguagesBuilder? language,
     NarrativeBuilder? text,
     List<ResourceBuilder>? contained,
     List<FhirExtensionBuilder>? extension_,

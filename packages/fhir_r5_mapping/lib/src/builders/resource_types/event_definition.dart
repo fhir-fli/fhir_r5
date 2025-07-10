@@ -478,22 +478,26 @@ class EventDefinitionBuilder extends MetadataResourceBuilder {
   /// The date on which the resource content was approved by the publisher.
   /// Approval happens once when the content is officially approved for
   /// usage.
+  @override
   FhirDateBuilder? approvalDate;
 
   /// [lastReviewDate]
   /// The date on which the resource content was last reviewed. Review
   /// happens periodically after approval but does not change the original
   /// approval date.
+  @override
   FhirDateBuilder? lastReviewDate;
 
   /// [effectivePeriod]
   /// The period during which the event definition content was or is planned
   /// to be in active use.
+  @override
   PeriodBuilder? effectivePeriod;
 
   /// [relatedArtifact]
   /// Related resources such as additional documentation, justification, or
   /// bibliographic references.
+  @override
   List<RelatedArtifactBuilder>? relatedArtifact;
 
   /// [trigger]

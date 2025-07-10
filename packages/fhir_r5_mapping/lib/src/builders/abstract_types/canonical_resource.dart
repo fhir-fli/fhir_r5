@@ -138,7 +138,7 @@ abstract class CanonicalResourceBuilder extends DomainResourceBuilder {
     FhirStringBuilder? id,
     FhirMetaBuilder? meta,
     FhirUriBuilder? implicitRules,
-    CommonLanguagesBuilder? language,
+    AllLanguagesBuilder? language,
     NarrativeBuilder? text,
     List<ResourceBuilder>? contained,
     List<FhirExtensionBuilder>? extension_,

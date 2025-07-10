@@ -7,7 +7,7 @@ enum ExampleScenarioActorTypeBuilderEnum {
   person,
 
   /// system
-  system,
+  system_,
   ;
 
   /// Converts the enum value to a string.
@@ -19,7 +19,7 @@ enum ExampleScenarioActorTypeBuilderEnum {
     switch (this) {
       case ExampleScenarioActorTypeBuilderEnum.person:
         return 'person';
-      case ExampleScenarioActorTypeBuilderEnum.system:
+      case ExampleScenarioActorTypeBuilderEnum.system_:
         return 'system';
     }
   }
@@ -45,7 +45,7 @@ enum ExampleScenarioActorTypeBuilderEnum {
       case 'person':
         return ExampleScenarioActorTypeBuilderEnum.person;
       case 'system':
-        return ExampleScenarioActorTypeBuilderEnum.system;
+        return ExampleScenarioActorTypeBuilderEnum.system_;
     }
     return null;
   }
@@ -146,11 +146,11 @@ class ExampleScenarioActorTypeBuilder extends FhirCodeEnumBuilder {
     ),
   );
 
-  /// system
-  static ExampleScenarioActorTypeBuilder system =
+  /// system_
+  static ExampleScenarioActorTypeBuilder system_ =
       ExampleScenarioActorTypeBuilder._(
     valueString: 'system',
-    valueEnum: ExampleScenarioActorTypeBuilderEnum.system,
+    valueEnum: ExampleScenarioActorTypeBuilderEnum.system_,
     system: FhirUriBuilder._(
       valueString: 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type',
     ),
@@ -170,7 +170,7 @@ class ExampleScenarioActorTypeBuilder extends FhirCodeEnumBuilder {
   /// List of all enum-like values
   static List<ExampleScenarioActorTypeBuilder> values = [
     person,
-    system,
+    system_,
   ];
 
   /// Returns the enum value with an element attached

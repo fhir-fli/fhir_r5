@@ -51,7 +51,7 @@ abstract class ResourceBuilder extends FhirBaseBuilder {
   /// The base language in which the resource is written.
   /// This should be the language of the text value in the content element
   /// when a text value is present.
-  CommonLanguagesBuilder? language;
+  AllLanguagesBuilder? language;
 
   /// Acts like a constructor, returns a [ResourceBuilder], accepts a
   /// [String] as an argument, mostly because I got tired of typing it out
@@ -137,7 +137,7 @@ abstract class ResourceBuilder extends FhirBaseBuilder {
     FhirStringBuilder? id,
     FhirMetaBuilder? meta,
     FhirUriBuilder? implicitRules,
-    CommonLanguagesBuilder? language,
+    AllLanguagesBuilder? language,
     Map<String, dynamic>? userData,
     List<String>? formatCommentsPre,
     List<String>? formatCommentsPost,

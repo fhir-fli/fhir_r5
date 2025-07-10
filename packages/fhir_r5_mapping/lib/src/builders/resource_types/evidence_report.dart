@@ -366,6 +366,7 @@ class EvidenceReportBuilder extends MetadataResourceBuilder {
 
   /// [relatedArtifact]
   /// Link, description or reference to artifact associated with the report.
+  @override
   List<RelatedArtifactBuilder>? relatedArtifact;
 
   /// [subject]
@@ -1331,6 +1332,11 @@ class EvidenceReportBuilder extends MetadataResourceBuilder {
     List<String>? formatCommentsPre,
     List<String>? formatCommentsPost,
     List<dynamic>? annotations,
+    FhirDateTimeBuilder? date,
+    FhirMarkdownBuilder? description,
+    FhirBooleanBuilder? experimental,
+    List<CodeableConceptBuilder>? jurisdiction,
+    FhirStringBuilder? version,
   }) {
     final newObjectPath = objectPath;
     final newResult = EvidenceReportBuilder(

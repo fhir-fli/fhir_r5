@@ -51,10 +51,10 @@ ResourceBuilder updateMeta(
 }) {
   final newMeta = updateFhirMetaVersion(meta ?? resource.meta, versionIdAsTime);
   switch (resource.resourceType) {
-    case R5ResourceType.Account:
-      return (resource as AccountBuilder).copyWith(meta: newMeta);
     case R5ResourceType.ActivityDefinition:
       return (resource as ActivityDefinitionBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.ActorDefinition:
+      return (resource as ActorDefinitionBuilder).copyWith(meta: newMeta);
     case R5ResourceType.AdministrableProductDefinition:
       return (resource as AdministrableProductDefinitionBuilder)
           .copyWith(meta: newMeta);
@@ -66,6 +66,8 @@ ResourceBuilder updateMeta(
       return (resource as AppointmentBuilder).copyWith(meta: newMeta);
     case R5ResourceType.AppointmentResponse:
       return (resource as AppointmentResponseBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.ArtifactAssessment:
+      return (resource as ArtifactAssessmentBuilder).copyWith(meta: newMeta);
     case R5ResourceType.AuditEvent:
       return (resource as AuditEventBuilder).copyWith(meta: newMeta);
     case R5ResourceType.Basic:
@@ -74,6 +76,9 @@ ResourceBuilder updateMeta(
       return (resource as BinaryBuilder).copyWith(meta: newMeta);
     case R5ResourceType.BiologicallyDerivedProduct:
       return (resource as BiologicallyDerivedProductBuilder)
+          .copyWith(meta: newMeta);
+    case R5ResourceType.BiologicallyDerivedProductDispense:
+      return (resource as BiologicallyDerivedProductDispenseBuilder)
           .copyWith(meta: newMeta);
     case R5ResourceType.BodyStructure:
       return (resource as BodyStructureBuilder).copyWith(meta: newMeta);
@@ -85,8 +90,6 @@ ResourceBuilder updateMeta(
       return (resource as CarePlanBuilder).copyWith(meta: newMeta);
     case R5ResourceType.CareTeam:
       return (resource as CareTeamBuilder).copyWith(meta: newMeta);
-    case R5ResourceType.CatalogEntry:
-      return (resource as CatalogEntryBuilder).copyWith(meta: newMeta);
     case R5ResourceType.ChargeItem:
       return (resource as ChargeItemBuilder).copyWith(meta: newMeta);
     case R5ResourceType.ChargeItemDefinition:
@@ -115,6 +118,8 @@ ResourceBuilder updateMeta(
       return (resource as ConceptMapBuilder).copyWith(meta: newMeta);
     case R5ResourceType.Condition:
       return (resource as ConditionBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.ConditionDefinition:
+      return (resource as ConditionDefinitionBuilder).copyWith(meta: newMeta);
     case R5ResourceType.Consent:
       return (resource as ConsentBuilder).copyWith(meta: newMeta);
     case R5ResourceType.Contract:
@@ -131,22 +136,26 @@ ResourceBuilder updateMeta(
       return (resource as DetectedIssueBuilder).copyWith(meta: newMeta);
     case R5ResourceType.Device:
       return (resource as DeviceBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.DeviceAssociation:
+      return (resource as DeviceAssociationBuilder).copyWith(meta: newMeta);
     case R5ResourceType.DeviceDefinition:
       return (resource as DeviceDefinitionBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.DeviceDispense:
+      return (resource as DeviceDispenseBuilder).copyWith(meta: newMeta);
     case R5ResourceType.DeviceMetric:
       return (resource as DeviceMetricBuilder).copyWith(meta: newMeta);
     case R5ResourceType.DeviceRequest:
       return (resource as DeviceRequestBuilder).copyWith(meta: newMeta);
-    case R5ResourceType.DeviceUseStatement:
-      return (resource as DeviceUseStatementBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.DeviceUsage:
+      return (resource as DeviceUsageBuilder).copyWith(meta: newMeta);
     case R5ResourceType.DiagnosticReport:
       return (resource as DiagnosticReportBuilder).copyWith(meta: newMeta);
-    case R5ResourceType.DocumentManifest:
-      return (resource as DocumentManifestBuilder).copyWith(meta: newMeta);
     case R5ResourceType.DocumentReference:
       return (resource as DocumentReferenceBuilder).copyWith(meta: newMeta);
     case R5ResourceType.Encounter:
       return (resource as EncounterBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.EncounterHistory:
+      return (resource as EncounterHistoryBuilder).copyWith(meta: newMeta);
     case R5ResourceType.EnrollmentRequest:
       return (resource as EnrollmentRequestBuilder).copyWith(meta: newMeta);
     case R5ResourceType.EnrollmentResponse:
@@ -175,6 +184,10 @@ ResourceBuilder updateMeta(
       return (resource as FhirListBuilder).copyWith(meta: newMeta);
     case R5ResourceType.Flag:
       return (resource as FlagBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.FormularyItem:
+      return (resource as FormularyItemBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.GenomicStudy:
+      return (resource as GenomicStudyBuilder).copyWith(meta: newMeta);
     case R5ResourceType.Goal:
       return (resource as GoalBuilder).copyWith(meta: newMeta);
     case R5ResourceType.GraphDefinition:
@@ -183,6 +196,8 @@ ResourceBuilder updateMeta(
       return (resource as GuidanceResponseBuilder).copyWith(meta: newMeta);
     case R5ResourceType.HealthcareService:
       return (resource as HealthcareServiceBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.ImagingSelection:
+      return (resource as ImagingSelectionBuilder).copyWith(meta: newMeta);
     case R5ResourceType.ImagingStudy:
       return (resource as ImagingStudyBuilder).copyWith(meta: newMeta);
     case R5ResourceType.Immunization:
@@ -199,6 +214,10 @@ ResourceBuilder updateMeta(
       return (resource as IngredientBuilder).copyWith(meta: newMeta);
     case R5ResourceType.InsurancePlan:
       return (resource as InsurancePlanBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.InventoryItem:
+      return (resource as InventoryItemBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.InventoryReport:
+      return (resource as InventoryReportBuilder).copyWith(meta: newMeta);
     case R5ResourceType.Invoice:
       return (resource as InvoiceBuilder).copyWith(meta: newMeta);
     case R5ResourceType.Library:
@@ -214,8 +233,6 @@ ResourceBuilder updateMeta(
       return (resource as MeasureBuilder).copyWith(meta: newMeta);
     case R5ResourceType.MeasureReport:
       return (resource as MeasureReportBuilder).copyWith(meta: newMeta);
-    case R5ResourceType.Media:
-      return (resource as MediaBuilder).copyWith(meta: newMeta);
     case R5ResourceType.Medication:
       return (resource as MedicationBuilder).copyWith(meta: newMeta);
     case R5ResourceType.MedicationAdministration:
@@ -240,6 +257,8 @@ ResourceBuilder updateMeta(
       return (resource as MolecularSequenceBuilder).copyWith(meta: newMeta);
     case R5ResourceType.NamingSystem:
       return (resource as NamingSystemBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.NutritionIntake:
+      return (resource as NutritionIntakeBuilder).copyWith(meta: newMeta);
     case R5ResourceType.NutritionOrder:
       return (resource as NutritionOrderBuilder).copyWith(meta: newMeta);
     case R5ResourceType.NutritionProduct:
@@ -268,6 +287,8 @@ ResourceBuilder updateMeta(
       return (resource as PaymentNoticeBuilder).copyWith(meta: newMeta);
     case R5ResourceType.PaymentReconciliation:
       return (resource as PaymentReconciliationBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.Permission:
+      return (resource as PermissionBuilder).copyWith(meta: newMeta);
     case R5ResourceType.Person:
       return (resource as PersonBuilder).copyWith(meta: newMeta);
     case R5ResourceType.PlanDefinition:
@@ -289,13 +310,10 @@ ResourceBuilder updateMeta(
           .copyWith(meta: newMeta);
     case R5ResourceType.RelatedPerson:
       return (resource as RelatedPersonBuilder).copyWith(meta: newMeta);
-    case R5ResourceType.RequestGroup:
-      return (resource as RequestGroupBuilder).copyWith(meta: newMeta);
-    case R5ResourceType.ResearchDefinition:
-      return (resource as ResearchDefinitionBuilder).copyWith(meta: newMeta);
-    case R5ResourceType.ResearchElementDefinition:
-      return (resource as ResearchElementDefinitionBuilder)
-          .copyWith(meta: newMeta);
+    case R5ResourceType.RequestOrchestration:
+      return (resource as RequestOrchestrationBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.Requirements:
+      return (resource as RequirementsBuilder).copyWith(meta: newMeta);
     case R5ResourceType.ResearchStudy:
       return (resource as ResearchStudyBuilder).copyWith(meta: newMeta);
     case R5ResourceType.ResearchSubject:
@@ -328,6 +346,18 @@ ResourceBuilder updateMeta(
       return (resource as SubstanceBuilder).copyWith(meta: newMeta);
     case R5ResourceType.SubstanceDefinition:
       return (resource as SubstanceDefinitionBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.SubstanceNucleicAcid:
+      return (resource as SubstanceNucleicAcidBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.SubstancePolymer:
+      return (resource as SubstancePolymerBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.SubstanceProtein:
+      return (resource as SubstanceProteinBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.SubstanceReferenceInformation:
+      return (resource as SubstanceReferenceInformationBuilder)
+          .copyWith(meta: newMeta);
+    case R5ResourceType.SubstanceSourceMaterial:
+      return (resource as SubstanceSourceMaterialBuilder)
+          .copyWith(meta: newMeta);
     case R5ResourceType.SupplyDelivery:
       return (resource as SupplyDeliveryBuilder).copyWith(meta: newMeta);
     case R5ResourceType.SupplyRequest:
@@ -337,15 +367,21 @@ ResourceBuilder updateMeta(
     case R5ResourceType.TerminologyCapabilities:
       return (resource as TerminologyCapabilitiesBuilder)
           .copyWith(meta: newMeta);
+    case R5ResourceType.TestPlan:
+      return (resource as TestPlanBuilder).copyWith(meta: newMeta);
     case R5ResourceType.TestReport:
       return (resource as TestReportBuilder).copyWith(meta: newMeta);
     case R5ResourceType.TestScript:
       return (resource as TestScriptBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.Transport:
+      return (resource as TransportBuilder).copyWith(meta: newMeta);
     case R5ResourceType.ValueSet:
       return (resource as ValueSetBuilder).copyWith(meta: newMeta);
     case R5ResourceType.VerificationResult:
       return (resource as VerificationResultBuilder).copyWith(meta: newMeta);
     case R5ResourceType.VisionPrescription:
       return (resource as VisionPrescriptionBuilder).copyWith(meta: newMeta);
+    case R5ResourceType.Account:
+      return (resource as AccountBuilder).copyWith(meta: newMeta);
   }
 }

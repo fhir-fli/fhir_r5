@@ -483,12 +483,14 @@ class EvidenceBuilder extends MetadataResourceBuilder {
   /// The date on which the resource content was approved by the publisher.
   /// Approval happens once when the content is officially approved for
   /// usage.
+  @override
   FhirDateBuilder? approvalDate;
 
   /// [lastReviewDate]
   /// The date on which the resource content was last reviewed. Review
   /// happens periodically after approval but does not change the original
   /// approval date.
+  @override
   FhirDateBuilder? lastReviewDate;
 
   /// [purpose]
@@ -511,6 +513,7 @@ class EvidenceBuilder extends MetadataResourceBuilder {
 
   /// [relatedArtifact]
   /// Link or citation to artifact associated with the summary.
+  @override
   List<RelatedArtifactBuilder>? relatedArtifact;
 
   /// [assertion]
@@ -1994,6 +1997,7 @@ class EvidenceBuilder extends MetadataResourceBuilder {
     List<String>? formatCommentsPre,
     List<String>? formatCommentsPost,
     List<dynamic>? annotations,
+    List<CodeableConceptBuilder>? jurisdiction,
   }) {
     final newObjectPath = objectPath;
     final newResult = EvidenceBuilder(

@@ -10,7 +10,7 @@ enum OperationParameterScopeBuilderEnum {
   type,
 
   /// system
-  system,
+  system_,
   ;
 
   /// Converts the enum value to a string.
@@ -24,7 +24,7 @@ enum OperationParameterScopeBuilderEnum {
         return 'instance';
       case OperationParameterScopeBuilderEnum.type:
         return 'type';
-      case OperationParameterScopeBuilderEnum.system:
+      case OperationParameterScopeBuilderEnum.system_:
         return 'system';
     }
   }
@@ -52,7 +52,7 @@ enum OperationParameterScopeBuilderEnum {
       case 'type':
         return OperationParameterScopeBuilderEnum.type;
       case 'system':
-        return OperationParameterScopeBuilderEnum.system;
+        return OperationParameterScopeBuilderEnum.system_;
     }
     return null;
   }
@@ -167,11 +167,11 @@ class OperationParameterScopeBuilder extends FhirCodeEnumBuilder {
     ),
   );
 
-  /// system
-  static OperationParameterScopeBuilder system =
+  /// system_
+  static OperationParameterScopeBuilder system_ =
       OperationParameterScopeBuilder._(
     valueString: 'system',
-    valueEnum: OperationParameterScopeBuilderEnum.system,
+    valueEnum: OperationParameterScopeBuilderEnum.system_,
     system: FhirUriBuilder._(
       valueString: 'http://hl7.org/fhir/ValueSet/operation-parameter-scope',
     ),
@@ -192,7 +192,7 @@ class OperationParameterScopeBuilder extends FhirCodeEnumBuilder {
   static List<OperationParameterScopeBuilder> values = [
     instance,
     type,
-    system,
+    system_,
   ];
 
   /// Returns the enum value with an element attached

@@ -355,16 +355,16 @@ class FhirMapEngine {
   ) async {
     final rg = _resolveGroupReference(map, group, dependent.name!.valueString!);
 
-    if (rg.target!.input?.length != dependent.variable?.length) {
+    if (rg.target!.input?.length != dependent.parameter?.length) {
       throw FHIRException(
         message: "Rule '${dependent.name}' has ${rg.target!.input?.length} but "
-            'the invocation has ${dependent.variable?.length} variables',
+            'the invocation has ${dependent.parameter?.length} variables',
       );
     }
     final MappingVariables v = MappingVariables();
     for (int i = 0; i < (rg.target!.input?.length ?? 0); i++) {
       final input = rg.target!.input?[i];
-      final varVal = dependent.variable?[i].valueString;
+      final varVal = dependent.parameter?[i].valueString?.valueString;
       final mode = input?.mode == StructureMapInputModeBuilder.source
           ? MappingVariableMode.INPUT
           : MappingVariableMode.OUTPUT;
@@ -756,8 +756,8 @@ class FhirMapEngine {
       } else {
         await _getChildrenByName(b, src.element?.valueString ?? '', items);
 
-        if (items.isEmpty && src.defaultValueX != null) {
-          items.add(src.defaultValueX!);
+        if (items.isEmpty && src.defaultValue != null) {
+          items.add(src.defaultValue!);
         }
       }
     }
@@ -1823,7 +1823,7 @@ class FhirMapEngine {
           (system == group.source?.toString() &&
               element.code?.valueString == code)) {
         final matchingTarget = element.target?.firstWhereOrNull(
-          (target) => _isValidEquivalence(target.equivalence.toString()),
+          (target) => _isValidEquivalence(target.relationship.toString()),
         );
 
         if (matchingTarget != null) {
@@ -1839,7 +1839,8 @@ class FhirMapEngine {
 
   bool _isValidEquivalence(String? equivalence) {
     return equivalence == null ||
-        ['equal', 'relatedto', 'equivalent', 'wider'].contains(equivalence);
+        ['related-to', 'equivalent', 'source-is-narrower-than-target']
+            .contains(equivalence.toLowerCase());
   }
 
   Future<ConceptMapBuilder?> _findConceptMap(

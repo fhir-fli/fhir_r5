@@ -513,16 +513,19 @@ class ObservationDefinitionBuilder extends MetadataResourceBuilder {
   /// The date on which the asset content was approved by the publisher.
   /// Approval happens once when the content is officially approved for
   /// usage.
+  @override
   FhirDateBuilder? approvalDate;
 
   /// [lastReviewDate]
   /// The date on which the asset content was last reviewed. Review happens
   /// periodically after that, but doesn't change the original approval date.
+  @override
   FhirDateBuilder? lastReviewDate;
 
   /// [effectivePeriod]
   /// The period during which the ObservationDefinition content was or is
   /// planned to be effective.
+  @override
   PeriodBuilder? effectivePeriod;
 
   /// [derivedFromCanonical]

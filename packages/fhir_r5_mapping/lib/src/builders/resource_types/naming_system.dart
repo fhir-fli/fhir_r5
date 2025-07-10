@@ -360,10 +360,10 @@ class NamingSystemBuilder extends MetadataResourceBuilder {
             ),
           )
           .toList(),
-      usage: JsonParser.parsePrimitive<FhirStringBuilder>(
+      usage: JsonParser.parsePrimitive<FhirMarkdownBuilder>(
         json,
         'usage',
-        FhirStringBuilder.fromJson,
+        FhirMarkdownBuilder.fromJson,
         '$objectPath.usage',
       ),
       uniqueId: (json['uniqueId'] as List<dynamic>?)
@@ -488,23 +488,27 @@ class NamingSystemBuilder extends MetadataResourceBuilder {
   /// The date on which the resource content was approved by the publisher.
   /// Approval happens once when the content is officially approved for
   /// usage.
+  @override
   FhirDateBuilder? approvalDate;
 
   /// [lastReviewDate]
   /// The date on which the resource content was last reviewed. Review
   /// happens periodically after approval but does not change the original
   /// approval date.
+  @override
   FhirDateBuilder? lastReviewDate;
 
   /// [effectivePeriod]
   /// The period during which the NamingSystem content was or is planned to
   /// be in active use.
+  @override
   PeriodBuilder? effectivePeriod;
 
   /// [relatedArtifact]
   /// Related artifacts such as additional documentation, justification,
   /// dependencies, bibliographic references, and predecessor and successor
   /// artifacts.
+  @override
   List<RelatedArtifactBuilder>? relatedArtifact;
 
   /// [uniqueId]
@@ -1517,14 +1521,14 @@ class NamingSystemBuilder extends MetadataResourceBuilder {
         }
       case 'usage':
         {
-          if (child is FhirStringBuilder) {
+          if (child is FhirMarkdownBuilder) {
             usage = child;
             return;
           } else if (child is PrimitiveTypeBuilder) {
             // Try to convert from one primitive type to another
             try {
               final stringValue = child.toString();
-              final converted = FhirStringBuilder.tryParse(stringValue);
+              final converted = FhirMarkdownBuilder.tryParse(stringValue);
               if (converted != null) {
                 usage = converted;
                 return;
@@ -1851,7 +1855,7 @@ class NamingSystemBuilder extends MetadataResourceBuilder {
         }
       case 'usage':
         {
-          usage = FhirStringBuilder.empty();
+          usage = FhirMarkdownBuilder.empty();
           return;
         }
       case 'uniqueId':
@@ -1905,7 +1909,7 @@ class NamingSystemBuilder extends MetadataResourceBuilder {
     List<ContactDetailBuilder>? reviewer,
     List<ContactDetailBuilder>? endorser,
     List<RelatedArtifactBuilder>? relatedArtifact,
-    FhirStringBuilder? usage,
+    FhirMarkdownBuilder? usage,
     List<NamingSystemUniqueIdBuilder>? uniqueId,
     FhirStringBuilder? versionAlgorithmString,
     CodingBuilder? versionAlgorithmCoding,

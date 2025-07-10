@@ -934,13 +934,13 @@ class StructureMapParser {
             : targetCode;
         final target = ConceptMapTargetBuilder(
           code: targetCode.toFhirCodeBuilder,
-          equivalence: eq,
+          relationship: eq,
           comment: lexer.getFirstComment()?.toFhirStringBuilder,
         );
         targets.add(target);
       } else {
         final target = ConceptMapTargetBuilder(
-          equivalence: eq,
+          relationship: eq,
           comment: lexer.getFirstComment()?.toFhirStringBuilder,
         );
         targets.add(target);

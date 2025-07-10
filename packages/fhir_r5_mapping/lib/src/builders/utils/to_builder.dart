@@ -357,16 +357,8 @@ extension BuilderFhirBase on FhirBase {
         return DosageDoseAndRateBuilder.fromJson(
           toJson(),
         );
-      case 'population':
-        return PopulationBuilder.fromJson(
-          toJson(),
-        );
       case 'productshelflife':
         return ProductShelfLifeBuilder.fromJson(
-          toJson(),
-        );
-      case 'prodcharacteristic':
-        return ProdCharacteristicBuilder.fromJson(
           toJson(),
         );
       case 'marketingstatus':
@@ -591,14 +583,6 @@ extension BuilderFhirBase on FhirBase {
         return AuditEventAgentBuilder.fromJson(
           toJson(),
         );
-      case 'auditeventnetwork':
-        return AuditEventNetworkBuilder.fromJson(
-          toJson(),
-        );
-      case 'auditevent_network':
-        return AuditEventNetworkBuilder.fromJson(
-          toJson(),
-        );
       case 'auditeventsource':
         return AuditEventSourceBuilder.fromJson(
           toJson(),
@@ -641,30 +625,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'biologicallyderivedproduct_collection':
         return BiologicallyDerivedProductCollectionBuilder.fromJson(
-          toJson(),
-        );
-      case 'biologicallyderivedproductprocessing':
-        return BiologicallyDerivedProductProcessingBuilder.fromJson(
-          toJson(),
-        );
-      case 'biologicallyderivedproduct_processing':
-        return BiologicallyDerivedProductProcessingBuilder.fromJson(
-          toJson(),
-        );
-      case 'biologicallyderivedproductmanipulation':
-        return BiologicallyDerivedProductManipulationBuilder.fromJson(
-          toJson(),
-        );
-      case 'biologicallyderivedproduct_manipulation':
-        return BiologicallyDerivedProductManipulationBuilder.fromJson(
-          toJson(),
-        );
-      case 'biologicallyderivedproductstorage':
-        return BiologicallyDerivedProductStorageBuilder.fromJson(
-          toJson(),
-        );
-      case 'biologicallyderivedproduct_storage':
-        return BiologicallyDerivedProductStorageBuilder.fromJson(
           toJson(),
         );
       case 'bodystructure':
@@ -835,14 +795,6 @@ extension BuilderFhirBase on FhirBase {
         return CarePlanActivityBuilder.fromJson(
           toJson(),
         );
-      case 'careplandetail':
-        return CarePlanDetailBuilder.fromJson(
-          toJson(),
-        );
-      case 'careplan_detail':
-        return CarePlanDetailBuilder.fromJson(
-          toJson(),
-        );
       case 'careteam':
         return CareTeamBuilder.fromJson(
           toJson(),
@@ -853,18 +805,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'careteam_participant':
         return CareTeamParticipantBuilder.fromJson(
-          toJson(),
-        );
-      case 'catalogentry':
-        return CatalogEntryBuilder.fromJson(
-          toJson(),
-        );
-      case 'catalogentryrelatedentry':
-        return CatalogEntryRelatedEntryBuilder.fromJson(
-          toJson(),
-        );
-      case 'catalogentry_relatedentry':
-        return CatalogEntryRelatedEntryBuilder.fromJson(
           toJson(),
         );
       case 'chargeitem':
@@ -897,14 +837,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'chargeitemdefinition_propertygroup':
         return ChargeItemDefinitionPropertyGroupBuilder.fromJson(
-          toJson(),
-        );
-      case 'chargeitemdefinitionpricecomponent':
-        return ChargeItemDefinitionPriceComponentBuilder.fromJson(
-          toJson(),
-        );
-      case 'chargeitemdefinition_pricecomponent':
-        return ChargeItemDefinitionPriceComponentBuilder.fromJson(
           toJson(),
         );
       case 'citation':
@@ -991,14 +923,6 @@ extension BuilderFhirBase on FhirBase {
         return CitationPartBuilder.fromJson(
           toJson(),
         );
-      case 'citationrelatesto1':
-        return CitationRelatesTo1Builder.fromJson(
-          toJson(),
-        );
-      case 'citation_relatesto1':
-        return CitationRelatesTo1Builder.fromJson(
-          toJson(),
-        );
       case 'citationpublicationform':
         return CitationPublicationFormBuilder.fromJson(
           toJson(),
@@ -1013,22 +937,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'citation_publishedin':
         return CitationPublishedInBuilder.fromJson(
-          toJson(),
-        );
-      case 'citationperiodicrelease':
-        return CitationPeriodicReleaseBuilder.fromJson(
-          toJson(),
-        );
-      case 'citation_periodicrelease':
-        return CitationPeriodicReleaseBuilder.fromJson(
-          toJson(),
-        );
-      case 'citationdateofpublication':
-        return CitationDateOfPublicationBuilder.fromJson(
-          toJson(),
-        );
-      case 'citation_dateofpublication':
-        return CitationDateOfPublicationBuilder.fromJson(
           toJson(),
         );
       case 'citationweblocation':
@@ -1047,14 +955,6 @@ extension BuilderFhirBase on FhirBase {
         return CitationClassification1Builder.fromJson(
           toJson(),
         );
-      case 'citationwhoclassified':
-        return CitationWhoClassifiedBuilder.fromJson(
-          toJson(),
-        );
-      case 'citation_whoclassified':
-        return CitationWhoClassifiedBuilder.fromJson(
-          toJson(),
-        );
       case 'citationcontributorship':
         return CitationContributorshipBuilder.fromJson(
           toJson(),
@@ -1069,14 +969,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'citation_entry':
         return CitationEntryBuilder.fromJson(
-          toJson(),
-        );
-      case 'citationaffiliationinfo':
-        return CitationAffiliationInfoBuilder.fromJson(
-          toJson(),
-        );
-      case 'citation_affiliationinfo':
-        return CitationAffiliationInfoBuilder.fromJson(
           toJson(),
         );
       case 'citationcontributioninstance':
@@ -1291,14 +1183,6 @@ extension BuilderFhirBase on FhirBase {
         return ClinicalImpressionBuilder.fromJson(
           toJson(),
         );
-      case 'clinicalimpressioninvestigation':
-        return ClinicalImpressionInvestigationBuilder.fromJson(
-          toJson(),
-        );
-      case 'clinicalimpression_investigation':
-        return ClinicalImpressionInvestigationBuilder.fromJson(
-          toJson(),
-        );
       case 'clinicalimpressionfinding':
         return ClinicalImpressionFindingBuilder.fromJson(
           toJson(),
@@ -1459,14 +1343,6 @@ extension BuilderFhirBase on FhirBase {
         return CompositionAttesterBuilder.fromJson(
           toJson(),
         );
-      case 'compositionrelatesto':
-        return CompositionRelatesToBuilder.fromJson(
-          toJson(),
-        );
-      case 'composition_relatesto':
-        return CompositionRelatesToBuilder.fromJson(
-          toJson(),
-        );
       case 'compositionevent':
         return CompositionEventBuilder.fromJson(
           toJson(),
@@ -1539,24 +1415,8 @@ extension BuilderFhirBase on FhirBase {
         return ConditionStageBuilder.fromJson(
           toJson(),
         );
-      case 'conditionevidence':
-        return ConditionEvidenceBuilder.fromJson(
-          toJson(),
-        );
-      case 'condition_evidence':
-        return ConditionEvidenceBuilder.fromJson(
-          toJson(),
-        );
       case 'consent':
         return ConsentBuilder.fromJson(
-          toJson(),
-        );
-      case 'consentpolicy':
-        return ConsentPolicyBuilder.fromJson(
-          toJson(),
-        );
-      case 'consent_policy':
-        return ConsentPolicyBuilder.fromJson(
           toJson(),
         );
       case 'consentverification':
@@ -1847,22 +1707,6 @@ extension BuilderFhirBase on FhirBase {
         return DeviceUdiCarrierBuilder.fromJson(
           toJson(),
         );
-      case 'devicedevicename':
-        return DeviceDeviceNameBuilder.fromJson(
-          toJson(),
-        );
-      case 'device_devicename':
-        return DeviceDeviceNameBuilder.fromJson(
-          toJson(),
-        );
-      case 'devicespecialization':
-        return DeviceSpecializationBuilder.fromJson(
-          toJson(),
-        );
-      case 'device_specialization':
-        return DeviceSpecializationBuilder.fromJson(
-          toJson(),
-        );
       case 'deviceversion':
         return DeviceVersionBuilder.fromJson(
           toJson(),
@@ -1897,22 +1741,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'devicedefinition_devicename':
         return DeviceDefinitionDeviceNameBuilder.fromJson(
-          toJson(),
-        );
-      case 'devicedefinitionspecialization':
-        return DeviceDefinitionSpecializationBuilder.fromJson(
-          toJson(),
-        );
-      case 'devicedefinition_specialization':
-        return DeviceDefinitionSpecializationBuilder.fromJson(
-          toJson(),
-        );
-      case 'devicedefinitioncapability':
-        return DeviceDefinitionCapabilityBuilder.fromJson(
-          toJson(),
-        );
-      case 'devicedefinition_capability':
-        return DeviceDefinitionCapabilityBuilder.fromJson(
           toJson(),
         );
       case 'devicedefinitionproperty':
@@ -1955,10 +1783,6 @@ extension BuilderFhirBase on FhirBase {
         return DeviceRequestParameterBuilder.fromJson(
           toJson(),
         );
-      case 'deviceusestatement':
-        return DeviceUseStatementBuilder.fromJson(
-          toJson(),
-        );
       case 'diagnosticreport':
         return DiagnosticReportBuilder.fromJson(
           toJson(),
@@ -1969,18 +1793,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'diagnosticreport_media':
         return DiagnosticReportMediaBuilder.fromJson(
-          toJson(),
-        );
-      case 'documentmanifest':
-        return DocumentManifestBuilder.fromJson(
-          toJson(),
-        );
-      case 'documentmanifestrelated':
-        return DocumentManifestRelatedBuilder.fromJson(
-          toJson(),
-        );
-      case 'documentmanifest_related':
-        return DocumentManifestRelatedBuilder.fromJson(
           toJson(),
         );
       case 'documentreference':
@@ -2003,32 +1815,8 @@ extension BuilderFhirBase on FhirBase {
         return DocumentReferenceContentBuilder.fromJson(
           toJson(),
         );
-      case 'documentreferencecontext':
-        return DocumentReferenceContextBuilder.fromJson(
-          toJson(),
-        );
-      case 'documentreference_context':
-        return DocumentReferenceContextBuilder.fromJson(
-          toJson(),
-        );
       case 'encounter':
         return EncounterBuilder.fromJson(
-          toJson(),
-        );
-      case 'encounterstatushistory':
-        return EncounterStatusHistoryBuilder.fromJson(
-          toJson(),
-        );
-      case 'encounter_statushistory':
-        return EncounterStatusHistoryBuilder.fromJson(
-          toJson(),
-        );
-      case 'encounterclasshistory':
-        return EncounterClassHistoryBuilder.fromJson(
-          toJson(),
-        );
-      case 'encounter_classhistory':
-        return EncounterClassHistoryBuilder.fromJson(
           toJson(),
         );
       case 'encounterparticipant':
@@ -2045,14 +1833,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'encounter_diagnosis':
         return EncounterDiagnosisBuilder.fromJson(
-          toJson(),
-        );
-      case 'encounterhospitalization':
-        return EncounterHospitalizationBuilder.fromJson(
-          toJson(),
-        );
-      case 'encounter_hospitalization':
-        return EncounterHospitalizationBuilder.fromJson(
           toJson(),
         );
       case 'encounterlocation':
@@ -2209,14 +1989,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'evidencevariable_characteristic':
         return EvidenceVariableCharacteristicBuilder.fromJson(
-          toJson(),
-        );
-      case 'evidencevariabletimefromstart':
-        return EvidenceVariableTimeFromStartBuilder.fromJson(
-          toJson(),
-        );
-      case 'evidencevariable_timefromstart':
-        return EvidenceVariableTimeFromStartBuilder.fromJson(
           toJson(),
         );
       case 'evidencevariablecategory':
@@ -2499,14 +2271,6 @@ extension BuilderFhirBase on FhirBase {
         return GraphDefinitionLinkBuilder.fromJson(
           toJson(),
         );
-      case 'graphdefinitiontarget':
-        return GraphDefinitionTargetBuilder.fromJson(
-          toJson(),
-        );
-      case 'graphdefinition_target':
-        return GraphDefinitionTargetBuilder.fromJson(
-          toJson(),
-        );
       case 'graphdefinitioncompartment':
         return GraphDefinitionCompartmentBuilder.fromJson(
           toJson(),
@@ -2555,22 +2319,6 @@ extension BuilderFhirBase on FhirBase {
         return HealthcareServiceEligibilityBuilder.fromJson(
           toJson(),
         );
-      case 'healthcareserviceavailabletime':
-        return HealthcareServiceAvailableTimeBuilder.fromJson(
-          toJson(),
-        );
-      case 'healthcareservice_availabletime':
-        return HealthcareServiceAvailableTimeBuilder.fromJson(
-          toJson(),
-        );
-      case 'healthcareservicenotavailable':
-        return HealthcareServiceNotAvailableBuilder.fromJson(
-          toJson(),
-        );
-      case 'healthcareservice_notavailable':
-        return HealthcareServiceNotAvailableBuilder.fromJson(
-          toJson(),
-        );
       case 'imagingstudy':
         return ImagingStudyBuilder.fromJson(
           toJson(),
@@ -2609,14 +2357,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'immunization_performer':
         return ImmunizationPerformerBuilder.fromJson(
-          toJson(),
-        );
-      case 'immunizationeducation':
-        return ImmunizationEducationBuilder.fromJson(
-          toJson(),
-        );
-      case 'immunization_education':
-        return ImmunizationEducationBuilder.fromJson(
           toJson(),
         );
       case 'immunizationreaction':
@@ -2791,14 +2531,6 @@ extension BuilderFhirBase on FhirBase {
         return InsurancePlanBuilder.fromJson(
           toJson(),
         );
-      case 'insuranceplancontact':
-        return InsurancePlanContactBuilder.fromJson(
-          toJson(),
-        );
-      case 'insuranceplan_contact':
-        return InsurancePlanContactBuilder.fromJson(
-          toJson(),
-        );
       case 'insuranceplancoverage':
         return InsurancePlanCoverageBuilder.fromJson(
           toJson(),
@@ -2883,14 +2615,6 @@ extension BuilderFhirBase on FhirBase {
         return InvoiceLineItemBuilder.fromJson(
           toJson(),
         );
-      case 'invoicepricecomponent':
-        return InvoicePriceComponentBuilder.fromJson(
-          toJson(),
-        );
-      case 'invoice_pricecomponent':
-        return InvoicePriceComponentBuilder.fromJson(
-          toJson(),
-        );
       case 'library':
         return LibraryBuilder.fromJson(
           toJson(),
@@ -2933,14 +2657,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'location_position':
         return LocationPositionBuilder.fromJson(
-          toJson(),
-        );
-      case 'locationhoursofoperation':
-        return LocationHoursOfOperationBuilder.fromJson(
-          toJson(),
-        );
-      case 'location_hoursofoperation':
-        return LocationHoursOfOperationBuilder.fromJson(
           toJson(),
         );
       case 'manufactureditemdefinition':
@@ -3051,10 +2767,6 @@ extension BuilderFhirBase on FhirBase {
         return MeasureReportPopulation1Builder.fromJson(
           toJson(),
         );
-      case 'media':
-        return MediaBuilder.fromJson(
-          toJson(),
-        );
       case 'medication':
         return MedicationBuilder.fromJson(
           toJson(),
@@ -3161,28 +2873,12 @@ extension BuilderFhirBase on FhirBase {
         return MedicationKnowledgeMonitoringProgramBuilder.fromJson(
           toJson(),
         );
-      case 'medicationknowledgeadministrationguidelines':
-        return MedicationKnowledgeAdministrationGuidelinesBuilder.fromJson(
-          toJson(),
-        );
-      case 'medicationknowledge_administrationguidelines':
-        return MedicationKnowledgeAdministrationGuidelinesBuilder.fromJson(
-          toJson(),
-        );
       case 'medicationknowledgedosage':
         return MedicationKnowledgeDosageBuilder.fromJson(
           toJson(),
         );
       case 'medicationknowledge_dosage':
         return MedicationKnowledgeDosageBuilder.fromJson(
-          toJson(),
-        );
-      case 'medicationknowledgepatientcharacteristics':
-        return MedicationKnowledgePatientCharacteristicsBuilder.fromJson(
-          toJson(),
-        );
-      case 'medicationknowledge_patientcharacteristics':
-        return MedicationKnowledgePatientCharacteristicsBuilder.fromJson(
           toJson(),
         );
       case 'medicationknowledgemedicineclassification':
@@ -3225,28 +2921,12 @@ extension BuilderFhirBase on FhirBase {
         return MedicationKnowledgeSubstitutionBuilder.fromJson(
           toJson(),
         );
-      case 'medicationknowledgeschedule':
-        return MedicationKnowledgeScheduleBuilder.fromJson(
-          toJson(),
-        );
-      case 'medicationknowledge_schedule':
-        return MedicationKnowledgeScheduleBuilder.fromJson(
-          toJson(),
-        );
       case 'medicationknowledgemaxdispense':
         return MedicationKnowledgeMaxDispenseBuilder.fromJson(
           toJson(),
         );
       case 'medicationknowledge_maxdispense':
         return MedicationKnowledgeMaxDispenseBuilder.fromJson(
-          toJson(),
-        );
-      case 'medicationknowledgekinetics':
-        return MedicationKnowledgeKineticsBuilder.fromJson(
-          toJson(),
-        );
-      case 'medicationknowledge_kinetics':
-        return MedicationKnowledgeKineticsBuilder.fromJson(
           toJson(),
         );
       case 'medicationrequest':
@@ -3299,22 +2979,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'medicinalproductdefinition_name':
         return MedicinalProductDefinitionNameBuilder.fromJson(
-          toJson(),
-        );
-      case 'medicinalproductdefinitionnamepart':
-        return MedicinalProductDefinitionNamePartBuilder.fromJson(
-          toJson(),
-        );
-      case 'medicinalproductdefinition_namepart':
-        return MedicinalProductDefinitionNamePartBuilder.fromJson(
-          toJson(),
-        );
-      case 'medicinalproductdefinitioncountrylanguage':
-        return MedicinalProductDefinitionCountryLanguageBuilder.fromJson(
-          toJson(),
-        );
-      case 'medicinalproductdefinition_countrylanguage':
-        return MedicinalProductDefinitionCountryLanguageBuilder.fromJson(
           toJson(),
         );
       case 'medicinalproductdefinitioncrossreference':
@@ -3391,70 +3055,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'molecularsequence':
         return MolecularSequenceBuilder.fromJson(
-          toJson(),
-        );
-      case 'molecularsequencereferenceseq':
-        return MolecularSequenceReferenceSeqBuilder.fromJson(
-          toJson(),
-        );
-      case 'molecularsequence_referenceseq':
-        return MolecularSequenceReferenceSeqBuilder.fromJson(
-          toJson(),
-        );
-      case 'molecularsequencevariant':
-        return MolecularSequenceVariantBuilder.fromJson(
-          toJson(),
-        );
-      case 'molecularsequence_variant':
-        return MolecularSequenceVariantBuilder.fromJson(
-          toJson(),
-        );
-      case 'molecularsequencequality':
-        return MolecularSequenceQualityBuilder.fromJson(
-          toJson(),
-        );
-      case 'molecularsequence_quality':
-        return MolecularSequenceQualityBuilder.fromJson(
-          toJson(),
-        );
-      case 'molecularsequenceroc':
-        return MolecularSequenceRocBuilder.fromJson(
-          toJson(),
-        );
-      case 'molecularsequence_roc':
-        return MolecularSequenceRocBuilder.fromJson(
-          toJson(),
-        );
-      case 'molecularsequencerepository':
-        return MolecularSequenceRepositoryBuilder.fromJson(
-          toJson(),
-        );
-      case 'molecularsequence_repository':
-        return MolecularSequenceRepositoryBuilder.fromJson(
-          toJson(),
-        );
-      case 'molecularsequencestructurevariant':
-        return MolecularSequenceStructureVariantBuilder.fromJson(
-          toJson(),
-        );
-      case 'molecularsequence_structurevariant':
-        return MolecularSequenceStructureVariantBuilder.fromJson(
-          toJson(),
-        );
-      case 'molecularsequenceouter':
-        return MolecularSequenceOuterBuilder.fromJson(
-          toJson(),
-        );
-      case 'molecularsequence_outer':
-        return MolecularSequenceOuterBuilder.fromJson(
-          toJson(),
-        );
-      case 'molecularsequenceinner':
-        return MolecularSequenceInnerBuilder.fromJson(
-          toJson(),
-        );
-      case 'molecularsequence_inner':
-        return MolecularSequenceInnerBuilder.fromJson(
           toJson(),
         );
       case 'namingsystem':
@@ -3541,14 +3141,6 @@ extension BuilderFhirBase on FhirBase {
         return NutritionProductIngredientBuilder.fromJson(
           toJson(),
         );
-      case 'nutritionproductproductcharacteristic':
-        return NutritionProductProductCharacteristicBuilder.fromJson(
-          toJson(),
-        );
-      case 'nutritionproduct_productcharacteristic':
-        return NutritionProductProductCharacteristicBuilder.fromJson(
-          toJson(),
-        );
       case 'nutritionproductinstance':
         return NutritionProductInstanceBuilder.fromJson(
           toJson(),
@@ -3579,22 +3171,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'observationdefinition':
         return ObservationDefinitionBuilder.fromJson(
-          toJson(),
-        );
-      case 'observationdefinitionquantitativedetails':
-        return ObservationDefinitionQuantitativeDetailsBuilder.fromJson(
-          toJson(),
-        );
-      case 'observationdefinition_quantitativedetails':
-        return ObservationDefinitionQuantitativeDetailsBuilder.fromJson(
-          toJson(),
-        );
-      case 'observationdefinitionqualifiedinterval':
-        return ObservationDefinitionQualifiedIntervalBuilder.fromJson(
-          toJson(),
-        );
-      case 'observationdefinition_qualifiedinterval':
-        return ObservationDefinitionQualifiedIntervalBuilder.fromJson(
           toJson(),
         );
       case 'operationdefinition':
@@ -3649,14 +3225,6 @@ extension BuilderFhirBase on FhirBase {
         return OrganizationBuilder.fromJson(
           toJson(),
         );
-      case 'organizationcontact':
-        return OrganizationContactBuilder.fromJson(
-          toJson(),
-        );
-      case 'organization_contact':
-        return OrganizationContactBuilder.fromJson(
-          toJson(),
-        );
       case 'organizationaffiliation':
         return OrganizationAffiliationBuilder.fromJson(
           toJson(),
@@ -3671,22 +3239,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'packagedproductdefinition_legalstatusofsupply':
         return PackagedProductDefinitionLegalStatusOfSupplyBuilder.fromJson(
-          toJson(),
-        );
-      case 'packagedproductdefinitionpackage':
-        return PackagedProductDefinitionPackageBuilder.fromJson(
-          toJson(),
-        );
-      case 'packagedproductdefinition_package':
-        return PackagedProductDefinitionPackageBuilder.fromJson(
-          toJson(),
-        );
-      case 'packagedproductdefinitionshelflifestorage':
-        return PackagedProductDefinitionShelfLifeStorageBuilder.fromJson(
-          toJson(),
-        );
-      case 'packagedproductdefinition_shelflifestorage':
-        return PackagedProductDefinitionShelfLifeStorageBuilder.fromJson(
           toJson(),
         );
       case 'packagedproductdefinitionproperty':
@@ -3751,14 +3303,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'paymentreconciliation':
         return PaymentReconciliationBuilder.fromJson(
-          toJson(),
-        );
-      case 'paymentreconciliationdetail':
-        return PaymentReconciliationDetailBuilder.fromJson(
-          toJson(),
-        );
-      case 'paymentreconciliation_detail':
-        return PaymentReconciliationDetailBuilder.fromJson(
           toJson(),
         );
       case 'paymentreconciliationprocessnote':
@@ -3855,22 +3399,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'practitionerrole':
         return PractitionerRoleBuilder.fromJson(
-          toJson(),
-        );
-      case 'practitionerroleavailabletime':
-        return PractitionerRoleAvailableTimeBuilder.fromJson(
-          toJson(),
-        );
-      case 'practitionerrole_availabletime':
-        return PractitionerRoleAvailableTimeBuilder.fromJson(
-          toJson(),
-        );
-      case 'practitionerrolenotavailable':
-        return PractitionerRoleNotAvailableBuilder.fromJson(
-          toJson(),
-        );
-      case 'practitionerrole_notavailable':
-        return PractitionerRoleNotAvailableBuilder.fromJson(
           toJson(),
         );
       case 'procedure':
@@ -3993,60 +3521,8 @@ extension BuilderFhirBase on FhirBase {
         return RelatedPersonCommunicationBuilder.fromJson(
           toJson(),
         );
-      case 'requestgroup':
-        return RequestGroupBuilder.fromJson(
-          toJson(),
-        );
-      case 'requestgroupaction':
-        return RequestGroupActionBuilder.fromJson(
-          toJson(),
-        );
-      case 'requestgroup_action':
-        return RequestGroupActionBuilder.fromJson(
-          toJson(),
-        );
-      case 'requestgroupcondition':
-        return RequestGroupConditionBuilder.fromJson(
-          toJson(),
-        );
-      case 'requestgroup_condition':
-        return RequestGroupConditionBuilder.fromJson(
-          toJson(),
-        );
-      case 'requestgrouprelatedaction':
-        return RequestGroupRelatedActionBuilder.fromJson(
-          toJson(),
-        );
-      case 'requestgroup_relatedaction':
-        return RequestGroupRelatedActionBuilder.fromJson(
-          toJson(),
-        );
-      case 'researchdefinition':
-        return ResearchDefinitionBuilder.fromJson(
-          toJson(),
-        );
-      case 'researchelementdefinition':
-        return ResearchElementDefinitionBuilder.fromJson(
-          toJson(),
-        );
-      case 'researchelementdefinitioncharacteristic':
-        return ResearchElementDefinitionCharacteristicBuilder.fromJson(
-          toJson(),
-        );
-      case 'researchelementdefinition_characteristic':
-        return ResearchElementDefinitionCharacteristicBuilder.fromJson(
-          toJson(),
-        );
       case 'researchstudy':
         return ResearchStudyBuilder.fromJson(
-          toJson(),
-        );
-      case 'researchstudyarm':
-        return ResearchStudyArmBuilder.fromJson(
-          toJson(),
-        );
-      case 'researchstudy_arm':
-        return ResearchStudyArmBuilder.fromJson(
           toJson(),
         );
       case 'researchstudyobjective':
@@ -4269,14 +3745,6 @@ extension BuilderFhirBase on FhirBase {
         return SubscriptionBuilder.fromJson(
           toJson(),
         );
-      case 'subscriptionchannel':
-        return SubscriptionChannelBuilder.fromJson(
-          toJson(),
-        );
-      case 'subscription_channel':
-        return SubscriptionChannelBuilder.fromJson(
-          toJson(),
-        );
       case 'subscriptionstatus':
         return SubscriptionStatusBuilder.fromJson(
           toJson(),
@@ -4335,14 +3803,6 @@ extension BuilderFhirBase on FhirBase {
         );
       case 'substance':
         return SubstanceBuilder.fromJson(
-          toJson(),
-        );
-      case 'substanceinstance':
-        return SubstanceInstanceBuilder.fromJson(
-          toJson(),
-        );
-      case 'substance_instance':
-        return SubstanceInstanceBuilder.fromJson(
           toJson(),
         );
       case 'substanceingredient':
