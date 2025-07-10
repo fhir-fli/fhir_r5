@@ -92,7 +92,6 @@ part 'enums/assertion_operator_type.dart';
 part 'enums/assertion_response_types.dart';
 part 'enums/audit_event_action.dart';
 part 'enums/audit_event_agent_network_type.dart';
-part 'enums/audit_event_outcome.dart';
 part 'enums/audit_event_severity.dart';
 part 'enums/binding_strength.dart';
 part 'enums/biologically_derived_product_category.dart';

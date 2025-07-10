@@ -596,12 +596,14 @@ FhirBaseBuilder? fromType(dynamic value, String type) {
       return value is! Map<String, dynamic>
           ? null
           : AdministrableProductDefinitionRouteOfAdministrationBuilder.fromJson(
-              value);
+              value,
+            );
     case 'administrableproductdefinition_routeofadministration':
       return value is! Map<String, dynamic>
           ? null
           : AdministrableProductDefinitionRouteOfAdministrationBuilder.fromJson(
-              value);
+              value,
+            );
     case 'administrableproductdefinitiontargetspecies':
       return value is! Map<String, dynamic>
           ? null
@@ -614,12 +616,14 @@ FhirBaseBuilder? fromType(dynamic value, String type) {
       return value is! Map<String, dynamic>
           ? null
           : AdministrableProductDefinitionWithdrawalPeriodBuilder.fromJson(
-              value);
+              value,
+            );
     case 'administrableproductdefinition_withdrawalperiod':
       return value is! Map<String, dynamic>
           ? null
           : AdministrableProductDefinitionWithdrawalPeriodBuilder.fromJson(
-              value);
+              value,
+            );
     case 'adverseevent':
       return value is! Map<String, dynamic>
           ? null
@@ -3716,12 +3720,14 @@ FhirBaseBuilder? fromType(dynamic value, String type) {
       return value is! Map<String, dynamic>
           ? null
           : MedicationKnowledgeRelatedMedicationKnowledgeBuilder.fromJson(
-              value);
+              value,
+            );
     case 'medicationknowledge_relatedmedicationknowledge':
       return value is! Map<String, dynamic>
           ? null
           : MedicationKnowledgeRelatedMedicationKnowledgeBuilder.fromJson(
-              value);
+              value,
+            );
     case 'medicationknowledgemonograph':
       return value is! Map<String, dynamic>
           ? null

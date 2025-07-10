@@ -496,7 +496,6 @@ class EvidenceVariableBuilder extends MetadataResourceBuilder {
   /// [relatedArtifact]
   /// Related artifacts such as additional documentation, justification, or
   /// bibliographic references.
-  @override
   List<RelatedArtifactBuilder>? relatedArtifact;
 
   /// [actual]
