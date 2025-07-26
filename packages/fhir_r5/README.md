@@ -20,7 +20,7 @@ It's still a work on progress, but I plan on outlining in-depth all of the funct
 
 ```yaml
 dependencies:
-  fhir_r5: ^0.4.2
+  fhir_r5: ^0.4.0
 ```
 
 ## Basic Usage
