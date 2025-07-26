@@ -13,3 +13,4 @@ build/
 
 ./packages/fhir_r5/*ndjson
 *ndjson
+*pubspec.lock
