@@ -19,9 +19,7 @@ environment:
 dependencies:
   collection: ^1.19.0
   crypto: ^3.0.6
-  # fhir_r5: ^0.4.2
-  fhir_r5:
-    path: ../fhir_r5
+  fhir_r5: ^0.4.0
   # fhir_r5_path: ^0.4.3
   fhir_r5_path:
     path: ../fhir_r5_path
