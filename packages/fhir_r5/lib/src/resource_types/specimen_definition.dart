@@ -43,9 +43,9 @@ class SpecimenDefinition extends MetadataResource {
     this.purpose,
     this.copyright,
     this.copyrightLabel,
-    this.approvalDate,
-    this.lastReviewDate,
-    this.effectivePeriod,
+    super.approvalDate,
+    super.lastReviewDate,
+    super.effectivePeriod,
     this.typeCollected,
     this.patientPreparation,
     this.timeAspect,
@@ -378,25 +378,6 @@ class SpecimenDefinition extends MetadataResource {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   final FhirString? copyrightLabel;
-
-  /// [approvalDate]
-  /// The date on which the asset content was approved by the publisher.
-  /// Approval happens once when the content is officially approved for
-  /// usage.
-  @override
-  final FhirDate? approvalDate;
-
-  /// [lastReviewDate]
-  /// The date on which the asset content was last reviewed. Review happens
-  /// periodically after that, but doesn't change the original approval date.
-  @override
-  final FhirDate? lastReviewDate;
-
-  /// [effectivePeriod]
-  /// The period during which the SpecimenDefinition content was or is
-  /// planned to be effective.
-  @override
-  final Period? effectivePeriod;
 
   /// [typeCollected]
   /// The kind of material to be collected.

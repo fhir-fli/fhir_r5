@@ -1758,7 +1758,7 @@ class LinkRelationTypesBuilder extends FhirCodeEnumBuilder {
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
       valueString:
-          "Refers to further information about the link's context, expressed as a LRDD (\"Link-based Resource Descriptor Document\") resource. See for information about processing this relation type in host-meta documents. When used elsewhere, it refers to additional links and other metadata. Multiple instances indicate additional LRDD resources. LRDD resources MUST have an 'application/xrd+xml' representation, and MAY have others.",
+          "Refers to further information about the link's context, expressed as a LRDD ('Link-based Resource Descriptor Document') resource. See for information about processing this relation type in host-meta documents. When used elsewhere, it refers to additional links and other metadata. Multiple instances indicate additional LRDD resources. LRDD resources MUST have an 'application/xrd+xml' representation, and MAY have others.",
     ),
   );
 

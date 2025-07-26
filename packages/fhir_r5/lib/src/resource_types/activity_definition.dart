@@ -46,9 +46,9 @@ class ActivityDefinition extends MetadataResource {
     super.usage,
     this.copyright,
     this.copyrightLabel,
-    this.approvalDate,
-    this.lastReviewDate,
-    this.effectivePeriod,
+    super.approvalDate,
+    super.lastReviewDate,
+    super.effectivePeriod,
     super.topic,
     super.author,
     super.editor,
@@ -555,26 +555,6 @@ class ActivityDefinition extends MetadataResource {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   final FhirString? copyrightLabel;
-
-  /// [approvalDate]
-  /// The date on which the resource content was approved by the publisher.
-  /// Approval happens once when the content is officially approved for
-  /// usage.
-  @override
-  final FhirDate? approvalDate;
-
-  /// [lastReviewDate]
-  /// The date on which the resource content was last reviewed. Review
-  /// happens periodically after approval but does not change the original
-  /// approval date.
-  @override
-  final FhirDate? lastReviewDate;
-
-  /// [effectivePeriod]
-  /// The period during which the activity definition content was or is
-  /// planned to be in active use.
-  @override
-  final Period? effectivePeriod;
 
   /// [relatedArtifact]
   /// Related artifacts such as additional documentation, justification, or

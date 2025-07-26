@@ -37,8 +37,8 @@ class Evidence extends MetadataResource {
     required super.status,
     super.experimental,
     super.date,
-    this.approvalDate,
-    this.lastReviewDate,
+    super.approvalDate,
+    super.lastReviewDate,
     super.publisher,
     super.contact,
     super.author,
@@ -384,20 +384,6 @@ class Evidence extends MetadataResource {
 
   /// Getter for [citeAsMarkdown] as a FhirMarkdown
   FhirMarkdown? get citeAsMarkdown => citeAsX?.isAs<FhirMarkdown>();
-
-  /// [approvalDate]
-  /// The date on which the resource content was approved by the publisher.
-  /// Approval happens once when the content is officially approved for
-  /// usage.
-  @override
-  final FhirDate? approvalDate;
-
-  /// [lastReviewDate]
-  /// The date on which the resource content was last reviewed. Review
-  /// happens periodically after approval but does not change the original
-  /// approval date.
-  @override
-  final FhirDate? lastReviewDate;
 
   /// [purpose]
   /// Explanation of why this Evidence is needed and why it has been designed

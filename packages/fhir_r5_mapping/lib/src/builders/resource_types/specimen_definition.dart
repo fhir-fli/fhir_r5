@@ -51,9 +51,9 @@ class SpecimenDefinitionBuilder extends MetadataResourceBuilder {
     this.purpose,
     this.copyright,
     this.copyrightLabel,
-    this.approvalDate,
-    this.lastReviewDate,
-    this.effectivePeriod,
+    super.approvalDate,
+    super.lastReviewDate,
+    super.effectivePeriod,
     this.typeCollected,
     this.patientPreparation,
     this.timeAspect,
@@ -449,25 +449,6 @@ class SpecimenDefinitionBuilder extends MetadataResourceBuilder {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   FhirStringBuilder? copyrightLabel;
-
-  /// [approvalDate]
-  /// The date on which the asset content was approved by the publisher.
-  /// Approval happens once when the content is officially approved for
-  /// usage.
-  @override
-  FhirDateBuilder? approvalDate;
-
-  /// [lastReviewDate]
-  /// The date on which the asset content was last reviewed. Review happens
-  /// periodically after that, but doesn't change the original approval date.
-  @override
-  FhirDateBuilder? lastReviewDate;
-
-  /// [effectivePeriod]
-  /// The period during which the SpecimenDefinition content was or is
-  /// planned to be effective.
-  @override
-  PeriodBuilder? effectivePeriod;
 
   /// [typeCollected]
   /// The kind of material to be collected.

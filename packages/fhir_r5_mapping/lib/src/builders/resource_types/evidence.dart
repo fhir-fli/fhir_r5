@@ -48,8 +48,8 @@ class EvidenceBuilder extends MetadataResourceBuilder {
     super.status,
     super.experimental,
     super.date,
-    this.approvalDate,
-    this.lastReviewDate,
+    super.approvalDate,
+    super.lastReviewDate,
     super.publisher,
     super.contact,
     super.author,
@@ -478,20 +478,6 @@ class EvidenceBuilder extends MetadataResourceBuilder {
   /// Getter for [citeAsMarkdown] as a FhirMarkdownBuilder
   FhirMarkdownBuilder? get citeAsMarkdown =>
       citeAsX?.isAs<FhirMarkdownBuilder>();
-
-  /// [approvalDate]
-  /// The date on which the resource content was approved by the publisher.
-  /// Approval happens once when the content is officially approved for
-  /// usage.
-  @override
-  FhirDateBuilder? approvalDate;
-
-  /// [lastReviewDate]
-  /// The date on which the resource content was last reviewed. Review
-  /// happens periodically after approval but does not change the original
-  /// approval date.
-  @override
-  FhirDateBuilder? lastReviewDate;
 
   /// [purpose]
   /// Explanation of why this Evidence is needed and why it has been designed

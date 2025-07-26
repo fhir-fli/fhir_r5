@@ -45,8 +45,8 @@ class ChargeItemDefinition extends MetadataResource {
     this.purpose,
     this.copyright,
     this.copyrightLabel,
-    this.approvalDate,
-    this.lastReviewDate,
+    super.approvalDate,
+    super.lastReviewDate,
     this.code,
     this.instance,
     this.applicability,
@@ -362,20 +362,6 @@ class ChargeItemDefinition extends MetadataResource {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   final FhirString? copyrightLabel;
-
-  /// [approvalDate]
-  /// The date on which the resource content was approved by the publisher.
-  /// Approval happens once when the content is officially approved for
-  /// usage.
-  @override
-  final FhirDate? approvalDate;
-
-  /// [lastReviewDate]
-  /// The date on which the resource content was last reviewed. Review
-  /// happens periodically after approval but does not change the original
-  /// approval date.
-  @override
-  final FhirDate? lastReviewDate;
 
   /// [code]
   /// The defined billing details in this resource pertain to the given
