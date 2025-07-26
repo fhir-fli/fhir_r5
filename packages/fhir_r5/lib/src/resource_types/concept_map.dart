@@ -2774,8 +2774,8 @@ class ConceptMapTarget extends BackboneElement {
         FhirString.fromJson,
       ),
       property: (json['property'] as List<dynamic>?)
-          ?.map<ConceptMapProperty>(
-            (v) => ConceptMapProperty.fromJson(
+          ?.map<ConceptMapProperty1>(
+            (v) => ConceptMapProperty1.fromJson(
               {...v as Map<String, dynamic>},
             ),
           )
@@ -2869,7 +2869,7 @@ class ConceptMapTarget extends BackboneElement {
 
   /// [property]
   /// A property value for this source -> target mapping.
-  final List<ConceptMapProperty>? property;
+  final List<ConceptMapProperty1>? property;
 
   /// [dependsOn]
   /// A set of additional dependencies for this mapping to hold. This mapping

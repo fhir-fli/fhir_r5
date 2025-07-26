@@ -4885,8 +4885,8 @@ class ConceptMapTargetBuilder extends BackboneElementBuilder {
         '$objectPath.comment',
       ),
       property: (json['property'] as List<dynamic>?)
-          ?.map<ConceptMapPropertyBuilder>(
-            (v) => ConceptMapPropertyBuilder.fromJson(
+          ?.map<ConceptMapProperty1Builder>(
+            (v) => ConceptMapProperty1Builder.fromJson(
               {
                 ...v as Map<String, dynamic>,
                 'objectPath': '$objectPath.property',
@@ -4989,7 +4989,7 @@ class ConceptMapTargetBuilder extends BackboneElementBuilder {
 
   /// [property]
   /// A property value for this source -> target mapping.
-  List<ConceptMapPropertyBuilder>? property;
+  List<ConceptMapProperty1Builder>? property;
 
   /// [dependsOn]
   /// A set of additional dependencies for this mapping to hold. This mapping
@@ -5309,11 +5309,11 @@ class ConceptMapTargetBuilder extends BackboneElementBuilder {
         }
       case 'property':
         {
-          if (child is List<ConceptMapPropertyBuilder>) {
+          if (child is List<ConceptMapProperty1Builder>) {
             // Replace or create new list
             property = child;
             return;
-          } else if (child is ConceptMapPropertyBuilder) {
+          } else if (child is ConceptMapProperty1Builder) {
             // Add single element to existing list or create new list
             property = [
               ...(property ?? []),
@@ -5439,7 +5439,7 @@ class ConceptMapTargetBuilder extends BackboneElementBuilder {
         }
       case 'property':
         {
-          property = <ConceptMapPropertyBuilder>[];
+          property = <ConceptMapProperty1Builder>[];
           return;
         }
       case 'dependsOn':
@@ -5469,7 +5469,7 @@ class ConceptMapTargetBuilder extends BackboneElementBuilder {
     FhirCanonicalBuilder? valueSet,
     ConceptMapRelationshipBuilder? relationship,
     FhirStringBuilder? comment,
-    List<ConceptMapPropertyBuilder>? property,
+    List<ConceptMapProperty1Builder>? property,
     List<ConceptMapDependsOnBuilder>? dependsOn,
     List<ConceptMapDependsOnBuilder>? product,
     Map<String, dynamic>? userData,

@@ -6564,8 +6564,8 @@ class CitationContributorship extends BackboneElement {
           )
           .toList(),
       summary: (json['summary'] as List<dynamic>?)
-          ?.map<CitationSummary>(
-            (v) => CitationSummary.fromJson(
+          ?.map<CitationSummary1>(
+            (v) => CitationSummary1.fromJson(
               {...v as Map<String, dynamic>},
             ),
           )
@@ -6627,7 +6627,7 @@ class CitationContributorship extends BackboneElement {
   /// [summary]
   /// Used to record a display of the author/contributor list without
   /// separate data element for each list member.
-  final List<CitationSummary>? summary;
+  final List<CitationSummary1>? summary;
   @override
   Map<String, dynamic> toJson() {
     final json = <String, dynamic>{};
@@ -6835,7 +6835,7 @@ class CitationContributorship extends BackboneElement {
     )) {
       return false;
     }
-    if (!listEquals<CitationSummary>(
+    if (!listEquals<CitationSummary1>(
       summary,
       o.summary,
     )) {

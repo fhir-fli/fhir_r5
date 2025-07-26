@@ -38,16 +38,32 @@ class StructureMapParser {
   /// Defines if multiple sources should be rendered on one line
   static const String AUTO_VAR_NAME = 'vvv';
 
+  /// Default group name for anonymous mappings
+  static const String DEF_GROUP_NAME = 'DefaultMappingGroupAnonymousAlias';
+
   /// FhirPathEngine instance for evaluating expressions
   FHIRPathEngine? fpe;
+
+  /// Flag to determine if exceptions should be thrown for checks
+  bool exceptionsForChecks = true;
+
+  /// Debug flag to enable or disable debug output
+  bool debug = false;
 
   /// Renders the StructureMap resource to a string format
   static String render(StructureMap map) {
     final b = StringBuffer()
-      ..write('map "')
+      ..write('/// url = "')
       ..write(map.url)
-      ..write('" = "')
-      ..write(_escapeJson(map.name.toString()))
+      ..write('"\r\n')
+      ..write('/// name = "')
+      ..write(map.name)
+      ..write('"\r\n')
+      ..write('/// title = "')
+      ..write(map.title)
+      ..write('"\r\n')
+      ..write('/// status = "')
+      ..write(map.status.toString())
       ..write('"\r\n\r\n');
     if (map.description?.valueString != null &&
         map.description!.valueString!.isNotEmpty) {
@@ -70,92 +86,79 @@ class StructureMapParser {
     try {
       if (lexer.done()) throw lexer.error('Map Input cannot be empty');
 
-      // Immediately expect and consume the "map" token
-      lexer.token('map');
+      final result = StructureMapBuilder();
 
-      // Create a new StructureMap (similar to new StructureMap() in Java/.NET)
-      final result = StructureMapBuilder()
+      // Handle both old and new format
+      if (lexer.hasToken('map')) {
+        // Old format: map "url" = "name"
+        lexer.token('map');
+        result.url = FhirUriBuilder(lexer.readConstant('url'));
+        lexer.token('=');
+        result
+          ..name = FhirStringBuilder(lexer.readConstant('name'))
+          ..description = FhirMarkdownBuilder(lexer.getAllComments())
+          ..status = PublicationStatusBuilder.draft;
+      }
 
-        // Read the URL and name from constants
-        ..url = FhirUriBuilder(lexer.readConstant('url'));
-      lexer.token('=');
-      result.name = FhirStringBuilder(lexer.readConstant('name'));
-
-      // Get all comments for additional metadata (this will later be used for description, status, etc.)
-      final comments = lexer.getAllComments();
-      if (comments.isNotEmpty) {
-        // Here we mimic the Java/.NET approach:
-        // We iterate over comment lines and process known metadata keys.
-        final lines = comments.split(RegExp(r'\r\n?|\n'));
-        final buffer = <String>[];
-        for (final line in lines) {
-          final index = line.indexOf('=');
-          if (line.startsWith('/ ') && index > 2) {
-            final prop = line.substring(2, index).trim().toLowerCase();
-            final value = line
-                .substring(index + 1)
-                .trim()
-                .replaceAll("'", '')
-                .replaceAll('"', '');
-            switch (prop) {
-              case 'status':
-                result.status =
-                    PublicationStatusBuilder.fromJson({'value': value});
-              case 'title':
-                result.title = FhirStringBuilder(value);
-              case 'name':
-              case 'url':
-                continue;
-              case 'description':
-                result.description =
-                    FhirMarkdownBuilder(value.replaceAll('"', ''));
-              default:
-                final lineText = line.substring(2).trim();
-                if (lineText.isNotEmpty) {
-                  buffer.add(lineText);
-                }
-            }
-          } else {
-            if (line.trim().isNotEmpty) buffer.add(line.trim());
-          }
-        }
-        if (buffer.isNotEmpty && result.description == null) {
-          result.description = FhirMarkdownBuilder(buffer.join(', '));
+      // New format: /// url = "value"
+      while (lexer.hasToken('///')) {
+        lexer.next();
+        final fid = lexer.takeDottedToken();
+        lexer.token('=');
+        switch (fid) {
+          case 'url':
+            result.url = FhirUriBuilder(lexer.readConstant('url'));
+          case 'name':
+            result.name = FhirStringBuilder(lexer.readConstant('name'));
+          case 'title':
+            result.title = FhirStringBuilder(lexer.readConstant('title'));
+          case 'description':
+            result.description =
+                FhirMarkdownBuilder(lexer.readConstant('description'));
+          case 'status':
+            result.status = PublicationStatusBuilder.fromJson(
+              {'value': lexer.readConstant('status')},
+            );
+          default:
+            lexer.readConstant('nothing'); // consume unknown metadata
         }
       }
+
+      // Set defaults if not already set
       if (result.id == null && result.name != null) {
         result.id =
             FhirStringBuilder(result.name!.valueString!.replaceAll(' ', ''));
       }
-      result.status = result.status ?? PublicationStatusBuilder.draft;
+      result.status ??= PublicationStatusBuilder.draft;
       if (result.description == null && result.title != null) {
         result.description = FhirMarkdownBuilder(result.title!.valueString);
       }
 
-      // Parse concept maps and add them to contained resources
+      // Parse concept maps
       while (lexer.hasToken('conceptmap')) {
         result.contained ??= <ResourceBuilder>[];
         result.contained!.add(_parseConceptMap(lexer));
       }
 
-      // Parse 'uses' statements and add them to structures
+      // Parse uses statements
       while (lexer.hasToken('uses')) {
         result.structure ??= <StructureMapStructureBuilder>[];
         result.structure!.add(_parseUses(lexer));
       }
 
-      // Parse 'imports' statements and add them to imports
+      // Parse imports statements
       while (lexer.hasToken('imports')) {
         result.import_ ??= <FhirCanonicalBuilder>[];
         result.import_!.add(_parseImports(lexer));
       }
 
-      // Parse groups and add them to the groups list
+      // Parse groups
       while (!lexer.done()) {
         result.group ??= <StructureMapGroupBuilder>[];
         result.group!.add(_parseGroup(lexer));
       }
 
+      // Add narrative text if provided
       if (text.isNotEmpty) {
         try {
           result.text = NarrativeBuilder(
@@ -175,7 +178,6 @@ class StructureMapParser {
         }
       }
 
-      // Construct the StructureMap with parsed metadata and details
       return result.build();
     } catch (e) {
       throw FhirParserException(
@@ -272,7 +274,7 @@ class StructureMapParser {
     if (newFmt) {
       if (lexer.isConstant()) {
         if (lexer.isStringConstant()) {
-          name = lexer.readConstant('ruleName');
+          name = lexer.readConstant('ruleName').replaceAll('-', '');
         } else {
           name = lexer.take();
         }
@@ -284,7 +286,7 @@ class StructureMapParser {
             name =
                 '$name${sources.first.type!.valueString!.capitalizeFirstLetter()}';
           }
-        } else {
+        } else if (exceptionsForChecks) {
           throw lexer.error('Complex rules must have an explicit name');
         }
       }
@@ -374,8 +376,6 @@ class StructureMapParser {
     final inputs = <StructureMapInputBuilder>[];
     final rules = <StructureMapRuleBuilder>[];
 
-    // Log initial values of variables
-
     // Check for 'for' token to determine type mode
     if (lexer.hasToken('for')) {
       lexer.token('for');
@@ -389,9 +389,8 @@ class StructureMapParser {
         lexer.token('types');
         typeMode = StructureMapGroupTypeModeBuilder.types;
       }
-    } else {
-      typeMode = StructureMapGroupTypeModeBuilder.none;
     }
+    // Don't set typeMode to anything if there's no 'for' token
 
     // Capture and print group name
     final name = lexer.take();
@@ -420,7 +419,6 @@ class StructureMapParser {
 
     // Check if new format with type mode
     if (newFmt) {
-      typeMode = StructureMapGroupTypeModeBuilder.none;
       if (lexer.hasToken('<')) {
         lexer
           ..token('<')
@@ -469,8 +467,8 @@ class StructureMapParser {
     }
 
     // Ensure proper lexer state after group parsing
-
     if (lexer.hasToken('group')) {
+      // Do nothing, the next iteration will handle it
     } else {
       lexer.next(); // Move to the next token if no group follows
     }
@@ -536,7 +534,11 @@ class StructureMapParser {
       lexer.token(')');
     } else if (lexer.hasToken('.')) {
       lexer.token('.');
-      source.element = lexer.take().toFhirCodeBuilder;
+      final s = lexer.take();
+      source.element = (s.startsWith('"') || s.startsWith('`')
+              ? lexer.processConstant(s)
+              : s)
+          .toFhirStringBuilder;
     }
 
     // Additional step to ensure tokens are properly split and checked
@@ -560,7 +562,7 @@ class StructureMapParser {
 
     if (lexer.hasToken('default')) {
       lexer.token('default');
-      source.defaultValueX =
+      source.defaultValue =
           lexer.readConstant('default value').toFhirStringBuilder;
     }
 
@@ -600,9 +602,7 @@ class StructureMapParser {
 
     // 2) If there's a '.' after 'start', that means "start.element"
     if (lexer.hasToken('.')) {
-      target
-        ..context = start.toFhirIdBuilder
-        ..contextType = StructureMapContextTypeBuilder.variable;
+      target.context = start.toFhirStringBuilder;
       start = null;
       lexer.token('.');
       target.element = lexer.take().toFhirStringBuilder;
@@ -613,9 +613,7 @@ class StructureMapParser {
     var isConstant = false;
     if (lexer.hasToken('=')) {
       if (start != null) {
-        target
-          ..context = start.toFhirIdBuilder
-          ..contextType = StructureMapContextTypeBuilder.variable;
+        target.context = start.toFhirStringBuilder;
       }
       lexer.token('=');
       isConstant = lexer.isConstant();
@@ -683,9 +681,7 @@ class StructureMapParser {
 
       // 4c) Otherwise, if name != null, it's a plain "copy" transform
     } else if (name != null) {
-      target
-        ..transform = StructureMapTransformBuilder.copy_
-        ..contextType ??= StructureMapContextTypeBuilder.variable;
+      target.transform = StructureMapTransformBuilder.copy_;
       if (!isConstant) {
         // Possibly "someName.more.dots"
         final buffer = StringBuffer(name);
@@ -731,9 +727,7 @@ class StructureMapParser {
     // 5) If there's an "as someVar" syntax
     if (lexer.hasToken('as')) {
       lexer.take(); // consume the "as"
-      target
-        ..variable = lexer.take().toFhirIdBuilder
-        ..contextType = StructureMapContextTypeBuilder.variable;
+      target.variable = lexer.take().toFhirIdBuilder;
     }
 
     // 6) Check for "first", "last", "share", "collate"
@@ -761,11 +755,12 @@ class StructureMapParser {
   StructureMapDependentBuilder _parseRuleReference(FHIRLexer lexer) {
     // Collect values in local variables
     final name = lexer.take();
-    final variables = <FhirStringBuilder>[];
+    final parameters = <StructureMapParameterBuilder>[];
     lexer.token('(');
     var done = false;
     while (!done) {
-      variables.add(lexer.take().toFhirStringBuilder);
+      // Parse each parameter instead of just taking strings
+      parameters.addAll(_parseParameter(lexer));
       done = !lexer.hasToken(',');
       if (!done) {
         lexer.next();
@@ -776,7 +771,7 @@ class StructureMapParser {
     // Create the StructureMapDependent object at the end
     return StructureMapDependentBuilder(
       name: name.toFhirIdBuilder,
-      variable: variables,
+      parameter: parameters, // Changed from 'variable' to 'parameter'
     );
   }
 
@@ -881,7 +876,7 @@ class StructureMapParser {
       lexer.token('=');
       final v = lexer.take();
       if (v == 'provided') {
-        unmappedModes[n] = ConceptMapGroupUnmappedModeBuilder.provided;
+        unmappedModes[n] = ConceptMapGroupUnmappedModeBuilder.useSourceCode;
       } else {
         throw lexer
             .error('Only unmapped mode PROVIDED is supported at this time');
@@ -895,10 +890,8 @@ class StructureMapParser {
       final sc = lexer.current?.startsWith('"') ?? false
           ? lexer.readConstant('code')
           : lexer.take();
-      final eq = _readEquivalence(lexer);
-      final tgts = (eq != ConceptMapEquivalenceBuilder.unmatched)
-          ? _readPrefix(prefixes, lexer)
-          : null;
+      final eq = _readRelationship(lexer);
+      final tgts = _readPrefix(prefixes, lexer);
 
       // Find or create the appropriate group
       var group = groups.firstWhereOrNull(
@@ -909,13 +902,13 @@ class StructureMapParser {
         if (unmappedModes.containsKey(srcs)) {
           unmapped = ConceptMapUnmappedBuilder(
             mode: unmappedModes[srcs] ??
-                ConceptMapGroupUnmappedModeBuilder.provided,
+                ConceptMapGroupUnmappedModeBuilder.useSourceCode,
           );
         }
 
         group = ConceptMapGroupBuilder(
-          source: srcs.toFhirUriBuilder,
-          target: tgts?.toFhirUriBuilder,
+          source: srcs.toFhirCanonicalBuilder,
+          target: tgts.toFhirCanonicalBuilder,
           element: [],
           unmapped: unmapped,
         );
@@ -926,25 +919,18 @@ class StructureMapParser {
       final code = sc.startsWith('"') ? lexer.processConstant(sc) : sc;
       final targets = <ConceptMapTargetBuilder>[];
 
-      if (eq != ConceptMapEquivalenceBuilder.unmatched) {
-        lexer.token(':');
-        var targetCode = lexer.take();
-        targetCode = targetCode.startsWith('"')
-            ? lexer.processConstant(targetCode)
-            : targetCode;
-        final target = ConceptMapTargetBuilder(
-          code: targetCode.toFhirCodeBuilder,
-          relationship: eq,
-          comment: lexer.getFirstComment()?.toFhirStringBuilder,
-        );
-        targets.add(target);
-      } else {
-        final target = ConceptMapTargetBuilder(
-          relationship: eq,
-          comment: lexer.getFirstComment()?.toFhirStringBuilder,
-        );
-        targets.add(target);
-      }
+      // Replace the entire if/else block with:
+      lexer.token(':');
+      var targetCode = lexer.take();
+      targetCode = targetCode.startsWith('"')
+          ? lexer.processConstant(targetCode)
+          : targetCode;
+      final target = ConceptMapTargetBuilder(
+        code: targetCode.toFhirCodeBuilder,
+        relationship: eq,
+        comment: lexer.getFirstComment()?.toFhirStringBuilder,
+      );
+      targets.add(target);
 
       final element = ConceptMapElementBuilder(
         code: code.toFhirCodeBuilder,
@@ -973,8 +959,11 @@ class StructureMapParser {
 
   // Helper methods matching the .NET code
   static String _escapeJson(String s) {
-    // Implement escaping logic
-    return s;
+    return s
+        .replaceAll('"', r'\"')
+        .replaceAll('\n', r'\n')
+        .replaceAll('\r', r'\r')
+        .replaceAll('\t', r'\t');
   }
 
   String _readPrefix(Map<String, String> prefixes, FHIRLexer lexer) {
@@ -985,31 +974,21 @@ class StructureMapParser {
     return prefixes[prefix]!;
   }
 
-  ConceptMapEquivalenceBuilder _readEquivalence(FHIRLexer lexer) {
+  ConceptMapRelationshipBuilder _readRelationship(FHIRLexer lexer) {
     final token = lexer.take();
     switch (token) {
       case '-':
-        return ConceptMapEquivalenceBuilder.relatedto;
-      case '=':
-        return ConceptMapEquivalenceBuilder.equal;
+        return ConceptMapRelationshipBuilder.relatedTo;
       case '==':
-        return ConceptMapEquivalenceBuilder.equivalent;
+        return ConceptMapRelationshipBuilder.equivalent;
       case '!=':
-        return ConceptMapEquivalenceBuilder.disjoint;
-      case '--':
-        return ConceptMapEquivalenceBuilder.unmatched;
+        return ConceptMapRelationshipBuilder.notRelatedTo;
       case '<=':
-        return ConceptMapEquivalenceBuilder.wider;
-      case '<-':
-        return ConceptMapEquivalenceBuilder.subsumes;
+        return ConceptMapRelationshipBuilder.sourceIsNarrowerThanTarget;
       case '>=':
-        return ConceptMapEquivalenceBuilder.narrower;
-      case '>-':
-        return ConceptMapEquivalenceBuilder.specializes;
-      case '~':
-        return ConceptMapEquivalenceBuilder.inexact;
+        return ConceptMapRelationshipBuilder.sourceIsBroaderThanTarget;
       default:
-        throw lexer.error("Unknown equivalence token '$token'");
+        throw lexer.error("Unknown relationship token '$token'");
     }
   }
 
@@ -1080,7 +1059,7 @@ class StructureMapParser {
         }
         b.write(' ');
         final e = (ce.target?.isNotEmpty ?? false)
-            ? ce.target!.first.equivalence
+            ? ce.target!.first.relationship // Changed from equivalence
             : null;
         b
           ..write(e != null ? _getChar(e) : '??')
@@ -1105,28 +1084,22 @@ class StructureMapParser {
     b.write('}\r\n\r\n');
   }
 
-  static String _getChar(ConceptMapEquivalenceBuilder equivalence) {
-    switch (equivalence.toString()) {
+  static Object _getChar(ConceptMapRelationshipBuilder relationship) {
+    switch (relationship.toString()) {
       case 'relatedto':
+      case 'related-to':
         return '-';
-      case 'equal':
-        return '=';
       case 'equivalent':
         return '==';
-      case 'disjoint':
+      case 'notrelatedto':
+      case 'not-related-to':
         return '!=';
-      case 'unmatched':
-        return '--';
-      case 'wider':
+      case 'sourceisnarrowerthantarget':
+      case 'source-is-narrower-than-target':
         return '<=';
-      case 'subsumes':
-        return '<-';
-      case 'narrower':
+      case 'sourceisbroaderthantarget':
+      case 'source-is-broader-than-target':
         return '>=';
-      case 'specializes':
-        return '>-';
-      case 'inexact':
-        return '~';
       default:
         return '??';
     }
@@ -1276,13 +1249,15 @@ class StructureMapParser {
             ..write(rd.name)
             ..write('(');
           var ifirst = true;
-          for (final rdp in rd.variable ?? <FhirStringBuilder>[]) {
+          // Changed from rd.variable to rd.parameter
+          for (final rdp in rd.parameter ?? <StructureMapParameterBuilder>[]) {
             if (ifirst) {
               ifirst = false;
             } else {
               b.write(', ');
             }
-            b.write(rdp);
+            // Render the parameter instead of just writing it
+            _renderTransformParam(b, rdp);
           }
           b.write(')');
         }
@@ -1333,7 +1308,9 @@ class StructureMapParser {
                 r.target?.first.transform ==
                     StructureMapTransformBuilder.create) &&
             (r.target?.first.parameter?.isEmpty ?? true)) &&
-        (r.dependent?.isEmpty ?? true) &&
+        ((r.dependent?.isEmpty ?? true) ||
+            (r.dependent?.length == 1 &&
+                DEF_GROUP_NAME == r.dependent!.first.name?.valueString)) &&
         (r.rule?.isEmpty ?? true);
   }
 
@@ -1372,10 +1349,10 @@ class StructureMapParser {
         ..write(' ')
         ..write(rs.listMode!.toString());
     }
-    if (rs.defaultValueX != null) {
+    if (rs.defaultValue != null) {
       b
         ..write(' default ')
-        ..write('"${_escapeJson(rs.defaultValueX!.toString())}"');
+        ..write('"${_escapeJson(rs.defaultValue!.toString())}"');
     }
     if (!abbreviate &&
         rs.variable?.valueString != null &&

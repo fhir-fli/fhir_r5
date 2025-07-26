@@ -571,7 +571,7 @@ class _$ConceptMapTargetCopyWithImpl<T>
             : comment as FhirString?,
         property: identical(property, fhirSentinel)
             ? _value.property
-            : property as List<ConceptMapProperty>?,
+            : property as List<ConceptMapProperty1>?,
         dependsOn: identical(dependsOn, fhirSentinel)
             ? _value.dependsOn
             : dependsOn as List<ConceptMapDependsOn>?,
