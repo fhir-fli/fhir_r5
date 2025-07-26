@@ -41,7 +41,7 @@ class EvidenceReportBuilder extends MetadataResourceBuilder {
     FhirMarkdownBuilder? citeAsMarkdown,
     this.type,
     this.note,
-    this.relatedArtifact,
+    super.relatedArtifact,
     this.subject,
     super.publisher,
     super.contact,
@@ -363,11 +363,6 @@ class EvidenceReportBuilder extends MetadataResourceBuilder {
   /// [note]
   /// Used for footnotes and annotations.
   List<AnnotationBuilder>? note;
-
-  /// [relatedArtifact]
-  /// Link, description or reference to artifact associated with the report.
-  @override
-  List<RelatedArtifactBuilder>? relatedArtifact;
 
   /// [subject]
   /// Specifies the subject or focus of the report. Answers "What is this

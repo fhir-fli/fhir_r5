@@ -52,7 +52,7 @@ class EventDefinitionBuilder extends MetadataResourceBuilder {
     super.editor,
     super.reviewer,
     super.endorser,
-    this.relatedArtifact,
+    super.relatedArtifact,
     this.trigger,
   })  : versionAlgorithmX = versionAlgorithmX ??
             versionAlgorithmString ??
@@ -473,12 +473,6 @@ class EventDefinitionBuilder extends MetadataResourceBuilder {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   FhirStringBuilder? copyrightLabel;
-
-  /// [relatedArtifact]
-  /// Related resources such as additional documentation, justification, or
-  /// bibliographic references.
-  @override
-  List<RelatedArtifactBuilder>? relatedArtifact;
 
   /// [trigger]
   /// The trigger element defines when the event occurs. If more than one

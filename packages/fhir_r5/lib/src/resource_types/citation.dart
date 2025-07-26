@@ -54,7 +54,7 @@ class Citation extends MetadataResource {
     this.note,
     this.currentState,
     this.statusDate,
-    this.relatedArtifact,
+    super.relatedArtifact,
     this.citedArtifact,
   })  : versionAlgorithmX = versionAlgorithmX ??
             versionAlgorithmString ??
@@ -409,11 +409,6 @@ class Citation extends MetadataResource {
   /// The state or status of the citation record paired with an effective
   /// date or period for that state.
   final List<CitationStatusDate>? statusDate;
-
-  /// [relatedArtifact]
-  /// Artifact related to the citation record.
-  @override
-  final List<RelatedArtifact>? relatedArtifact;
 
   /// [citedArtifact]
   /// The article or artifact being described.

@@ -51,7 +51,7 @@ class NamingSystem extends MetadataResource {
     super.editor,
     super.reviewer,
     super.endorser,
-    this.relatedArtifact,
+    super.relatedArtifact,
     super.usage,
     required this.uniqueId,
   })  : versionAlgorithmX = versionAlgorithmX ??
@@ -398,13 +398,6 @@ class NamingSystem extends MetadataResource {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   final FhirString? copyrightLabel;
-
-  /// [relatedArtifact]
-  /// Related artifacts such as additional documentation, justification,
-  /// dependencies, bibliographic references, and predecessor and successor
-  /// artifacts.
-  @override
-  final List<RelatedArtifact>? relatedArtifact;
 
   /// [uniqueId]
   /// Indicates how the system may be identified when referenced in

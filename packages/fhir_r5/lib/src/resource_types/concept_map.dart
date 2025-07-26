@@ -48,7 +48,7 @@ class ConceptMap extends MetadataResource {
     super.editor,
     super.reviewer,
     super.endorser,
-    this.relatedArtifact,
+    super.relatedArtifact,
     this.property,
     this.additionalAttribute,
     SourceScopeXConceptMap? sourceScopeX,
@@ -396,13 +396,6 @@ class ConceptMap extends MetadataResource {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   final FhirString? copyrightLabel;
-
-  /// [relatedArtifact]
-  /// Related artifacts such as additional documentation, justification,
-  /// dependencies, bibliographic references, and predecessor and successor
-  /// artifacts.
-  @override
-  final List<RelatedArtifact>? relatedArtifact;
 
   /// [property]
   /// A property defines a slot through which additional information can be

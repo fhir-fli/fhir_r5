@@ -76,7 +76,7 @@ class CitationBuilder extends MetadataResourceBuilder {
     this.note,
     this.currentState,
     this.statusDate,
-    this.relatedArtifact,
+    super.relatedArtifact,
     this.citedArtifact,
   })  : versionAlgorithmX = versionAlgorithmX ??
             versionAlgorithmString ??
@@ -514,11 +514,6 @@ class CitationBuilder extends MetadataResourceBuilder {
   /// The state or status of the citation record paired with an effective
   /// date or period for that state.
   List<CitationStatusDateBuilder>? statusDate;
-
-  /// [relatedArtifact]
-  /// Artifact related to the citation record.
-  @override
-  List<RelatedArtifactBuilder>? relatedArtifact;
 
   /// [citedArtifact]
   /// The article or artifact being described.

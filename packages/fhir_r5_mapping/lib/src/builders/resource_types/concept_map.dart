@@ -60,7 +60,7 @@ class ConceptMapBuilder extends MetadataResourceBuilder {
     super.editor,
     super.reviewer,
     super.endorser,
-    this.relatedArtifact,
+    super.relatedArtifact,
     this.property,
     this.additionalAttribute,
     SourceScopeXConceptMapBuilder? sourceScopeX,
@@ -488,13 +488,6 @@ class ConceptMapBuilder extends MetadataResourceBuilder {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   FhirStringBuilder? copyrightLabel;
-
-  /// [relatedArtifact]
-  /// Related artifacts such as additional documentation, justification,
-  /// dependencies, bibliographic references, and predecessor and successor
-  /// artifacts.
-  @override
-  List<RelatedArtifactBuilder>? relatedArtifact;
 
   /// [property]
   /// A property defines a slot through which additional information can be

@@ -55,7 +55,7 @@ class Library extends MetadataResource {
     super.editor,
     super.reviewer,
     super.endorser,
-    this.relatedArtifact,
+    super.relatedArtifact,
     this.parameter,
     this.dataRequirement,
     this.content,
@@ -427,12 +427,6 @@ class Library extends MetadataResource {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   final FhirString? copyrightLabel;
-
-  /// [relatedArtifact]
-  /// Related artifacts such as additional documentation, justification, or
-  /// bibliographic references.
-  @override
-  final List<RelatedArtifact>? relatedArtifact;
 
   /// [parameter]
   /// The parameter element defines parameters used by the library.

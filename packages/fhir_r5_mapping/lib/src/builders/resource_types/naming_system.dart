@@ -56,7 +56,7 @@ class NamingSystemBuilder extends MetadataResourceBuilder {
     super.editor,
     super.reviewer,
     super.endorser,
-    this.relatedArtifact,
+    super.relatedArtifact,
     super.usage,
     this.uniqueId,
   })  : versionAlgorithmX = versionAlgorithmX ??
@@ -483,13 +483,6 @@ class NamingSystemBuilder extends MetadataResourceBuilder {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   FhirStringBuilder? copyrightLabel;
-
-  /// [relatedArtifact]
-  /// Related artifacts such as additional documentation, justification,
-  /// dependencies, bibliographic references, and predecessor and successor
-  /// artifacts.
-  @override
-  List<RelatedArtifactBuilder>? relatedArtifact;
 
   /// [uniqueId]
   /// Indicates how the system may be identified when referenced in

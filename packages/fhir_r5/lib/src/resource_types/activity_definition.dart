@@ -54,7 +54,7 @@ class ActivityDefinition extends MetadataResource {
     super.editor,
     super.reviewer,
     super.endorser,
-    this.relatedArtifact,
+    super.relatedArtifact,
     this.library_,
     this.kind,
     this.profile,
@@ -555,12 +555,6 @@ class ActivityDefinition extends MetadataResource {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   final FhirString? copyrightLabel;
-
-  /// [relatedArtifact]
-  /// Related artifacts such as additional documentation, justification, or
-  /// bibliographic references.
-  @override
-  final List<RelatedArtifact>? relatedArtifact;
 
   /// [library_]
   /// A reference to a Library resource containing any formal logic used by

@@ -183,7 +183,9 @@ class _$SubstanceReferenceInformationGeneElementCopyWithImpl<T>
   final T Function(SubstanceReferenceInformationGeneElement) _then;
 
   _$SubstanceReferenceInformationGeneElementCopyWithImpl(
-      this._value, this._then);
+    this._value,
+    this._then,
+  );
 
   @override
   T call({

@@ -49,7 +49,7 @@ class Evidence extends MetadataResource {
     this.purpose,
     this.copyright,
     this.copyrightLabel,
-    this.relatedArtifact,
+    super.relatedArtifact,
     super.description,
     this.assertion,
     this.note,
@@ -402,11 +402,6 @@ class Evidence extends MetadataResource {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   final FhirString? copyrightLabel;
-
-  /// [relatedArtifact]
-  /// Link or citation to artifact associated with the summary.
-  @override
-  final List<RelatedArtifact>? relatedArtifact;
 
   /// [assertion]
   /// Declarative description of the Evidence.

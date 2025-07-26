@@ -52,7 +52,7 @@ class EventDefinition extends MetadataResource {
     super.editor,
     super.reviewer,
     super.endorser,
-    this.relatedArtifact,
+    super.relatedArtifact,
     required this.trigger,
   })  : versionAlgorithmX = versionAlgorithmX ??
             versionAlgorithmString ??
@@ -397,12 +397,6 @@ class EventDefinition extends MetadataResource {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   final FhirString? copyrightLabel;
-
-  /// [relatedArtifact]
-  /// Related resources such as additional documentation, justification, or
-  /// bibliographic references.
-  @override
-  final List<RelatedArtifact>? relatedArtifact;
 
   /// [trigger]
   /// The trigger element defines when the event occurs. If more than one

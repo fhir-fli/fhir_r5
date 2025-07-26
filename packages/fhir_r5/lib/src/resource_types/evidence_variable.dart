@@ -47,7 +47,7 @@ class EvidenceVariable extends MetadataResource {
     super.editor,
     super.reviewer,
     super.endorser,
-    this.relatedArtifact,
+    super.relatedArtifact,
     this.actual,
     this.characteristic,
     this.handling,
@@ -385,12 +385,6 @@ class EvidenceVariable extends MetadataResource {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   final FhirString? copyrightLabel;
-
-  /// [relatedArtifact]
-  /// Related artifacts such as additional documentation, justification, or
-  /// bibliographic references.
-  @override
-  final List<RelatedArtifact>? relatedArtifact;
 
   /// [actual]
   /// True if the actual variable measured, false if a conceptual

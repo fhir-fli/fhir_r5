@@ -62,7 +62,7 @@ class MeasureBuilder extends MetadataResourceBuilder {
     super.editor,
     super.reviewer,
     super.endorser,
-    this.relatedArtifact,
+    super.relatedArtifact,
     this.library_,
     this.disclaimer,
     this.scoring,
@@ -612,12 +612,6 @@ class MeasureBuilder extends MetadataResourceBuilder {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   FhirStringBuilder? copyrightLabel;
-
-  /// [relatedArtifact]
-  /// Related artifacts such as additional documentation, justification, or
-  /// bibliographic references.
-  @override
-  List<RelatedArtifactBuilder>? relatedArtifact;
 
   /// [library_]
   /// A reference to a Library resource containing the formal logic used by

@@ -60,7 +60,7 @@ class EvidenceBuilder extends MetadataResourceBuilder {
     this.purpose,
     this.copyright,
     this.copyrightLabel,
-    this.relatedArtifact,
+    super.relatedArtifact,
     super.description,
     this.assertion,
     this.note,
@@ -496,11 +496,6 @@ class EvidenceBuilder extends MetadataResourceBuilder {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   FhirStringBuilder? copyrightLabel;
-
-  /// [relatedArtifact]
-  /// Link or citation to artifact associated with the summary.
-  @override
-  List<RelatedArtifactBuilder>? relatedArtifact;
 
   /// [assertion]
   /// Declarative description of the Evidence.

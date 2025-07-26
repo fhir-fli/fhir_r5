@@ -32,7 +32,7 @@ class EvidenceReport extends MetadataResource {
     FhirMarkdown? citeAsMarkdown,
     this.type,
     this.note,
-    this.relatedArtifact,
+    super.relatedArtifact,
     required this.subject,
     super.publisher,
     super.contact,
@@ -288,11 +288,6 @@ class EvidenceReport extends MetadataResource {
   /// [note]
   /// Used for footnotes and annotations.
   final List<Annotation>? note;
-
-  /// [relatedArtifact]
-  /// Link, description or reference to artifact associated with the report.
-  @override
-  final List<RelatedArtifact>? relatedArtifact;
 
   /// [subject]
   /// Specifies the subject or focus of the report. Answers "What is this

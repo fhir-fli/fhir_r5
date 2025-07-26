@@ -55,7 +55,7 @@ class LibraryBuilder extends MetadataResourceBuilder {
     super.editor,
     super.reviewer,
     super.endorser,
-    this.relatedArtifact,
+    super.relatedArtifact,
     this.parameter,
     this.dataRequirement,
     this.content,
@@ -511,12 +511,6 @@ class LibraryBuilder extends MetadataResourceBuilder {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   FhirStringBuilder? copyrightLabel;
-
-  /// [relatedArtifact]
-  /// Related artifacts such as additional documentation, justification, or
-  /// bibliographic references.
-  @override
-  List<RelatedArtifactBuilder>? relatedArtifact;
 
   /// [parameter]
   /// The parameter element defines parameters used by the library.

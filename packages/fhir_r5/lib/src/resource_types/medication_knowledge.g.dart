@@ -198,7 +198,9 @@ class _$MedicationKnowledgeRelatedMedicationKnowledgeCopyWithImpl<T>
   final T Function(MedicationKnowledgeRelatedMedicationKnowledge) _then;
 
   _$MedicationKnowledgeRelatedMedicationKnowledgeCopyWithImpl(
-      this._value, this._then);
+    this._value,
+    this._then,
+  );
 
   @override
   T call({
@@ -655,7 +657,9 @@ class _$MedicationKnowledgePatientCharacteristicCopyWithImpl<T>
   final T Function(MedicationKnowledgePatientCharacteristic) _then;
 
   _$MedicationKnowledgePatientCharacteristicCopyWithImpl(
-      this._value, this._then);
+    this._value,
+    this._then,
+  );
 
   @override
   T call({
@@ -720,7 +724,9 @@ class _$MedicationKnowledgeMedicineClassificationCopyWithImpl<T>
   final T Function(MedicationKnowledgeMedicineClassification) _then;
 
   _$MedicationKnowledgeMedicineClassificationCopyWithImpl(
-      this._value, this._then);
+    this._value,
+    this._then,
+  );
 
   @override
   T call({
@@ -924,7 +930,9 @@ class _$MedicationKnowledgeEnvironmentalSettingCopyWithImpl<T>
   final T Function(MedicationKnowledgeEnvironmentalSetting) _then;
 
   _$MedicationKnowledgeEnvironmentalSettingCopyWithImpl(
-      this._value, this._then);
+    this._value,
+    this._then,
+  );
 
   @override
   T call({

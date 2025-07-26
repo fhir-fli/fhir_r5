@@ -48,7 +48,7 @@ class CodeSystem extends MetadataResource {
     super.editor,
     super.reviewer,
     super.endorser,
-    this.relatedArtifact,
+    super.relatedArtifact,
     this.caseSensitive,
     this.valueSet,
     this.hierarchyMeaning,
@@ -422,13 +422,6 @@ class CodeSystem extends MetadataResource {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   final FhirString? copyrightLabel;
-
-  /// [relatedArtifact]
-  /// Related artifacts such as additional documentation, justification,
-  /// dependencies, bibliographic references, and predecessor and successor
-  /// artifacts.
-  @override
-  final List<RelatedArtifact>? relatedArtifact;
 
   /// [caseSensitive]
   /// If code comparison is case sensitive when codes within this system are

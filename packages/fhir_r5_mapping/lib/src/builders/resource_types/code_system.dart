@@ -57,7 +57,7 @@ class CodeSystemBuilder extends MetadataResourceBuilder {
     super.editor,
     super.reviewer,
     super.endorser,
-    this.relatedArtifact,
+    super.relatedArtifact,
     this.caseSensitive,
     this.valueSet,
     this.hierarchyMeaning,
@@ -519,13 +519,6 @@ class CodeSystemBuilder extends MetadataResourceBuilder {
   /// optionally whether rights are resctricted. (e.g. 'All rights reserved',
   /// 'Some rights reserved').
   FhirStringBuilder? copyrightLabel;
-
-  /// [relatedArtifact]
-  /// Related artifacts such as additional documentation, justification,
-  /// dependencies, bibliographic references, and predecessor and successor
-  /// artifacts.
-  @override
-  List<RelatedArtifactBuilder>? relatedArtifact;
 
   /// [caseSensitive]
   /// If code comparison is case sensitive when codes within this system are
