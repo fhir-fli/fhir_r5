@@ -177,7 +177,9 @@ class _$BiologicallyDerivedProductDispensePerformerCopyWithImpl<T>
   final T Function(BiologicallyDerivedProductDispensePerformer) _then;
 
   _$BiologicallyDerivedProductDispensePerformerCopyWithImpl(
-      this._value, this._then);
+    this._value,
+    this._then,
+  );
 
   @override
   T call({

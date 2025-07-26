@@ -369,7 +369,9 @@ class _$EvidenceVariableDefinitionByTypeAndValueCopyWithImpl<T>
   final T Function(EvidenceVariableDefinitionByTypeAndValue) _then;
 
   _$EvidenceVariableDefinitionByTypeAndValueCopyWithImpl(
-      this._value, this._then);
+    this._value,
+    this._then,
+  );
 
   @override
   T call({
@@ -446,7 +448,9 @@ class _$EvidenceVariableDefinitionByCombinationCopyWithImpl<T>
   final T Function(EvidenceVariableDefinitionByCombination) _then;
 
   _$EvidenceVariableDefinitionByCombinationCopyWithImpl(
-      this._value, this._then);
+    this._value,
+    this._then,
+  );
 
   @override
   T call({

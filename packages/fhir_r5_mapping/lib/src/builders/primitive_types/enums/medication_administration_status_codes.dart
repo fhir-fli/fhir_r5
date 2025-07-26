@@ -1,4 +1,4 @@
-// ignore_for_file: unused_element_parameter, non_constant_identifier_names
+// ignore_for_file: unused_element_parameter, non_constant_identifier_names, lines_longer_than_80_chars
 part of '../primitive_types.dart';
 
 /// Actual enum for MedicationAdministrationStatusCodes
@@ -164,7 +164,8 @@ class MedicationAdministrationStatusCodesBuilder extends FhirCodeEnumBuilder {
     );
   }
 
-  ///  An actual enum that can be used for MedicationAdministrationStatusCodesBuilder
+  ///  An actual enum that can be used for
+  /// MedicationAdministrationStatusCodesBuilder
   final MedicationAdministrationStatusCodesBuilderEnum? valueEnum;
 
   /// in_progress

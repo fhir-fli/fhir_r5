@@ -1,6 +1,6 @@
 // This file is auto-generated. Do not edit directly.
 
-// ignore_for_file: avoid_returning_this
+// ignore_for_file: avoid_returning_this, lines_longer_than_80_chars
 
 import 'package:fhir_r5/fhir_r5.dart';
 import 'package:fhir_r5_at_rest/fhir_r5_at_rest.dart';

@@ -1,4 +1,4 @@
-// ignore_for_file: unused_element_parameter, non_constant_identifier_names
+// ignore_for_file: unused_element_parameter, non_constant_identifier_names, lines_longer_than_80_chars
 part of '../primitive_types.dart';
 
 /// Actual enum for ImmunizationEvaluationStatusCodes
@@ -167,7 +167,8 @@ class ImmunizationEvaluationStatusCodesBuilder extends FhirCodeEnumBuilder {
     );
   }
 
-  ///  An actual enum that can be used for ImmunizationEvaluationStatusCodesBuilder
+  ///  An actual enum that can be used for
+  /// ImmunizationEvaluationStatusCodesBuilder
   final ImmunizationEvaluationStatusCodesBuilderEnum? valueEnum;
 
   /// in_progress
