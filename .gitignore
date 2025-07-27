@@ -12,5 +12,5 @@ build/
 *pubspec_overrides.yaml
 
 ./packages/fhir_r5/*ndjson
-*ndjson
+# *ndjson
 *pubspec.lock
