@@ -429,8 +429,7 @@ class VersionIndependentResourceTypesAllBuilder extends FhirCodeEnumBuilder {
     );
   }
 
-  ///  An actual enum that can be used for
-  /// VersionIndependentResourceTypesAllBuilder
+  ///  An actual enum that can be used for VersionIndependentResourceTypesAllBuilder
   final VersionIndependentResourceTypesAllBuilderEnum? valueEnum;
 
   /// BodySite

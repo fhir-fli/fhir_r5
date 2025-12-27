@@ -133,7 +133,7 @@ abstract class $GroupCharacteristicCopyWith<T>
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     CodeableConcept? code,
-    CodeableConcept? valueX,
+    ValueXGroupCharacteristic? valueX,
     FhirBoolean? exclude,
     Period? period,
     bool? disallowExtensions,
@@ -172,7 +172,7 @@ class _$GroupCharacteristicCopyWithImpl<T>
             : (code as CodeableConcept?) ?? _value.code,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : (valueX as CodeableConcept?) ?? _value.valueX,
+            : (valueX as ValueXGroupCharacteristic?) ?? _value.valueX,
         exclude: identical(exclude, fhirSentinel)
             ? _value.exclude
             : (exclude as FhirBoolean?) ?? _value.exclude,

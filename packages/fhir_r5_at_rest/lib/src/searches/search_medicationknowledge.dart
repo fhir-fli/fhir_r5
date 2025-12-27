@@ -15,8 +15,9 @@ class SearchMedicationKnowledge extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    parameters['${modifier != null ? '$modifier' : ''}identifier'] =
-        system != null ? '$system|$value' : '$value';
+    parameters['identifier'] = system != null
+        ? (modifier != null ? '$modifier:$system|$value' : '$system|$value')
+        : (modifier != null ? '$modifier:$value' : value.toString());
     return this;
   }
 
@@ -27,8 +28,9 @@ class SearchMedicationKnowledge extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    parameters['${modifier != null ? '$modifier' : ''}status'] =
-        system != null ? '$system|$value' : '$value';
+    parameters['status'] = system != null
+        ? (modifier != null ? '$modifier:$system|$value' : '$system|$value')
+        : (modifier != null ? '$modifier:$value' : value.toString());
     return this;
   }
 
@@ -39,8 +41,9 @@ class SearchMedicationKnowledge extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    parameters['${modifier != null ? '$modifier' : ''}classification'] =
-        system != null ? '$system|$value' : '$value';
+    parameters['classification'] = system != null
+        ? (modifier != null ? '$modifier:$system|$value' : '$system|$value')
+        : (modifier != null ? '$modifier:$value' : value.toString());
     return this;
   }
 
@@ -51,8 +54,9 @@ class SearchMedicationKnowledge extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    parameters['${modifier != null ? '$modifier' : ''}classification_type'] =
-        system != null ? '$system|$value' : '$value';
+    parameters['classification_type'] = system != null
+        ? (modifier != null ? '$modifier:$system|$value' : '$system|$value')
+        : (modifier != null ? '$modifier:$value' : value.toString());
     return this;
   }
 
@@ -63,8 +67,9 @@ class SearchMedicationKnowledge extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    parameters['${modifier != null ? '$modifier' : ''}code'] =
-        system != null ? '$system|$value' : '$value';
+    parameters['code'] = system != null
+        ? (modifier != null ? '$modifier:$system|$value' : '$system|$value')
+        : (modifier != null ? '$modifier:$value' : value.toString());
     return this;
   }
 
@@ -75,8 +80,9 @@ class SearchMedicationKnowledge extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    parameters['${modifier != null ? '$modifier' : ''}doseform'] =
-        system != null ? '$system|$value' : '$value';
+    parameters['doseform'] = system != null
+        ? (modifier != null ? '$modifier:$system|$value' : '$system|$value')
+        : (modifier != null ? '$modifier:$value' : value.toString());
     return this;
   }
 
@@ -87,8 +93,9 @@ class SearchMedicationKnowledge extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    parameters['${modifier != null ? '$modifier' : ''}ingredient_code'] =
-        system != null ? '$system|$value' : '$value';
+    parameters['ingredient_code'] = system != null
+        ? (modifier != null ? '$modifier:$system|$value' : '$system|$value')
+        : (modifier != null ? '$modifier:$value' : value.toString());
     return this;
   }
 
@@ -99,9 +106,9 @@ class SearchMedicationKnowledge extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    parameters[
-            '${modifier != null ? '$modifier' : ''}monitoring_program_name'] =
-        system != null ? '$system|$value' : '$value';
+    parameters['monitoring_program_name'] = system != null
+        ? (modifier != null ? '$modifier:$system|$value' : '$system|$value')
+        : (modifier != null ? '$modifier:$value' : value.toString());
     return this;
   }
 
@@ -112,9 +119,9 @@ class SearchMedicationKnowledge extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    parameters[
-            '${modifier != null ? '$modifier' : ''}monitoring_program_type'] =
-        system != null ? '$system|$value' : '$value';
+    parameters['monitoring_program_type'] = system != null
+        ? (modifier != null ? '$modifier:$system|$value' : '$system|$value')
+        : (modifier != null ? '$modifier:$value' : value.toString());
     return this;
   }
 
@@ -125,8 +132,9 @@ class SearchMedicationKnowledge extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    parameters['${modifier != null ? '$modifier' : ''}monograph_type'] =
-        system != null ? '$system|$value' : '$value';
+    parameters['monograph_type'] = system != null
+        ? (modifier != null ? '$modifier:$system|$value' : '$system|$value')
+        : (modifier != null ? '$modifier:$value' : value.toString());
     return this;
   }
 
@@ -142,8 +150,9 @@ class SearchMedicationKnowledge extends SearchResource {
         !['gt', 'lt', 'ge', 'le', 'ap'].contains(modifier.toString())) {
       throw ArgumentError('Modifier $modifier not allowed for quantity type');
     }
-    parameters['${modifier != null ? '$modifier' : ''}packaging_cost'] =
-        '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}';
+    parameters['packaging_cost'] = (modifier != null
+        ? '$modifier:$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}'
+        : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
     return this;
   }
 
@@ -154,8 +163,9 @@ class SearchMedicationKnowledge extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    parameters['${modifier != null ? '$modifier' : ''}packaging_cost_concept'] =
-        system != null ? '$system|$value' : '$value';
+    parameters['packaging_cost_concept'] = system != null
+        ? (modifier != null ? '$modifier:$system|$value' : '$system|$value')
+        : (modifier != null ? '$modifier:$value' : value.toString());
     return this;
   }
 
@@ -166,8 +176,9 @@ class SearchMedicationKnowledge extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    parameters['${modifier != null ? '$modifier' : ''}product_type'] =
-        system != null ? '$system|$value' : '$value';
+    parameters['product_type'] = system != null
+        ? (modifier != null ? '$modifier:$system|$value' : '$system|$value')
+        : (modifier != null ? '$modifier:$value' : value.toString());
     return this;
   }
 
@@ -178,8 +189,9 @@ class SearchMedicationKnowledge extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    parameters['${modifier != null ? '$modifier' : ''}source_cost'] =
-        system != null ? '$system|$value' : '$value';
+    parameters['source_cost'] = system != null
+        ? (modifier != null ? '$modifier:$system|$value' : '$system|$value')
+        : (modifier != null ? '$modifier:$value' : value.toString());
     return this;
   }
 }

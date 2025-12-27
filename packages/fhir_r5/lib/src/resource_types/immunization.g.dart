@@ -29,7 +29,7 @@ abstract class $ImmunizationCopyWith<T> extends $DomainResourceCopyWith<T> {
     Reference? patient,
     Reference? encounter,
     List<Reference>? supportingInformation,
-    FhirDateTime? occurrenceX,
+    OccurrenceXImmunization? occurrenceX,
     FhirBoolean? primarySource,
     CodeableReference? informationSource,
     Reference? location,
@@ -153,7 +153,7 @@ class _$ImmunizationCopyWithImpl<T> implements $ImmunizationCopyWith<T> {
             : supportingInformation as List<Reference>?,
         occurrenceX: identical(occurrenceX, fhirSentinel)
             ? _value.occurrenceX
-            : (occurrenceX as FhirDateTime?) ?? _value.occurrenceX,
+            : (occurrenceX as OccurrenceXImmunization?) ?? _value.occurrenceX,
         primarySource: identical(primarySource, fhirSentinel)
             ? _value.primarySource
             : primarySource as FhirBoolean?,

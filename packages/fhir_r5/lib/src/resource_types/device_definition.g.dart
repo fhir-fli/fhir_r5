@@ -885,7 +885,7 @@ abstract class $DeviceDefinitionPropertyCopyWith<T>
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     CodeableConcept? type,
-    Quantity? valueX,
+    ValueXDeviceDefinitionProperty? valueX,
     bool? disallowExtensions,
   });
 }
@@ -920,7 +920,7 @@ class _$DeviceDefinitionPropertyCopyWithImpl<T>
             : (type as CodeableConcept?) ?? _value.type,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : (valueX as Quantity?) ?? _value.valueX,
+            : (valueX as ValueXDeviceDefinitionProperty?) ?? _value.valueX,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

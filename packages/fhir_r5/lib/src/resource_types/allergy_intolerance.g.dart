@@ -27,7 +27,7 @@ abstract class $AllergyIntoleranceCopyWith<T>
     CodeableConcept? code,
     Reference? patient,
     Reference? encounter,
-    FhirDateTime? onsetX,
+    OnsetXAllergyIntolerance? onsetX,
     FhirDateTime? recordedDate,
     List<AllergyIntoleranceParticipant>? participant,
     FhirDateTime? lastOccurrence,
@@ -120,7 +120,7 @@ class _$AllergyIntoleranceCopyWithImpl<T>
             : encounter as Reference?,
         onsetX: identical(onsetX, fhirSentinel)
             ? _value.onsetX
-            : onsetX as FhirDateTime?,
+            : onsetX as OnsetXAllergyIntolerance?,
         recordedDate: identical(recordedDate, fhirSentinel)
             ? _value.recordedDate
             : recordedDate as FhirDateTime?,

@@ -20,10 +20,10 @@ abstract class $EvidenceCopyWith<T> extends $MetadataResourceCopyWith<T> {
     FhirUri? url,
     List<Identifier>? identifier,
     FhirString? version,
-    FhirString? versionAlgorithmX,
+    VersionAlgorithmXEvidence? versionAlgorithmX,
     FhirString? name,
     FhirString? title,
-    Reference? citeAsX,
+    CiteAsXEvidence? citeAsX,
     PublicationStatus? status,
     FhirBoolean? experimental,
     FhirDateTime? date,
@@ -132,14 +132,14 @@ class _$EvidenceCopyWithImpl<T> implements $EvidenceCopyWith<T> {
             : version as FhirString?,
         versionAlgorithmX: identical(versionAlgorithmX, fhirSentinel)
             ? _value.versionAlgorithmX
-            : versionAlgorithmX as FhirString?,
+            : versionAlgorithmX as VersionAlgorithmXEvidence?,
         name: identical(name, fhirSentinel) ? _value.name : name as FhirString?,
         title: identical(title, fhirSentinel)
             ? _value.title
             : title as FhirString?,
         citeAsX: identical(citeAsX, fhirSentinel)
             ? _value.citeAsX
-            : citeAsX as Reference?,
+            : citeAsX as CiteAsXEvidence?,
         status: identical(status, fhirSentinel)
             ? _value.status
             : (status as PublicationStatus?) ?? _value.status,

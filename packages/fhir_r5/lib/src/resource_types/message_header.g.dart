@@ -17,7 +17,7 @@ abstract class $MessageHeaderCopyWith<T> extends $DomainResourceCopyWith<T> {
     List<Resource>? contained,
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
-    Coding? eventX,
+    EventXMessageHeader? eventX,
     List<MessageHeaderDestination>? destination,
     Reference? sender,
     Reference? author,
@@ -81,7 +81,7 @@ class _$MessageHeaderCopyWithImpl<T> implements $MessageHeaderCopyWith<T> {
             : modifierExtension as List<FhirExtension>?,
         eventX: identical(eventX, fhirSentinel)
             ? _value.eventX
-            : (eventX as Coding?) ?? _value.eventX,
+            : (eventX as EventXMessageHeader?) ?? _value.eventX,
         destination: identical(destination, fhirSentinel)
             ? _value.destination
             : destination as List<MessageHeaderDestination>?,
@@ -129,7 +129,7 @@ abstract class $MessageHeaderDestinationCopyWith<T>
     FhirString? id,
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
-    FhirUrl? endpointX,
+    EndpointXMessageHeaderDestination? endpointX,
     FhirString? name,
     Reference? target,
     Reference? receiver,
@@ -166,7 +166,7 @@ class _$MessageHeaderDestinationCopyWithImpl<T>
             : modifierExtension as List<FhirExtension>?,
         endpointX: identical(endpointX, fhirSentinel)
             ? _value.endpointX
-            : endpointX as FhirUrl?,
+            : endpointX as EndpointXMessageHeaderDestination?,
         name: identical(name, fhirSentinel) ? _value.name : name as FhirString?,
         target: identical(target, fhirSentinel)
             ? _value.target
@@ -198,7 +198,7 @@ abstract class $MessageHeaderSourceCopyWith<T>
     FhirString? id,
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
-    FhirUrl? endpointX,
+    EndpointXMessageHeaderSource? endpointX,
     FhirString? name,
     FhirString? software,
     FhirString? version,
@@ -237,7 +237,7 @@ class _$MessageHeaderSourceCopyWithImpl<T>
             : modifierExtension as List<FhirExtension>?,
         endpointX: identical(endpointX, fhirSentinel)
             ? _value.endpointX
-            : endpointX as FhirUrl?,
+            : endpointX as EndpointXMessageHeaderSource?,
         name: identical(name, fhirSentinel) ? _value.name : name as FhirString?,
         software: identical(software, fhirSentinel)
             ? _value.software

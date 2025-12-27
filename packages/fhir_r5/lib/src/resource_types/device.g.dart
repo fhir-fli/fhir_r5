@@ -509,7 +509,7 @@ abstract class $DevicePropertyCopyWith<T> extends $BackboneElementCopyWith<T> {
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     CodeableConcept? type,
-    Quantity? valueX,
+    ValueXDeviceProperty? valueX,
     bool? disallowExtensions,
   });
 }
@@ -543,7 +543,7 @@ class _$DevicePropertyCopyWithImpl<T> implements $DevicePropertyCopyWith<T> {
             : (type as CodeableConcept?) ?? _value.type,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : (valueX as Quantity?) ?? _value.valueX,
+            : (valueX as ValueXDeviceProperty?) ?? _value.valueX,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

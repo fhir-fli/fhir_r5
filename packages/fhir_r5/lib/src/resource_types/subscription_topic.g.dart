@@ -21,7 +21,7 @@ abstract class $SubscriptionTopicCopyWith<T>
     FhirUri? url,
     List<Identifier>? identifier,
     FhirString? version,
-    FhirString? versionAlgorithmX,
+    VersionAlgorithmXSubscriptionTopic? versionAlgorithmX,
     FhirString? name,
     FhirString? title,
     List<FhirCanonical>? derivedFrom,
@@ -122,7 +122,7 @@ class _$SubscriptionTopicCopyWithImpl<T>
             : version as FhirString?,
         versionAlgorithmX: identical(versionAlgorithmX, fhirSentinel)
             ? _value.versionAlgorithmX
-            : versionAlgorithmX as FhirString?,
+            : versionAlgorithmX as VersionAlgorithmXSubscriptionTopic?,
         name: identical(name, fhirSentinel) ? _value.name : name as FhirString?,
         title: identical(title, fhirSentinel)
             ? _value.title

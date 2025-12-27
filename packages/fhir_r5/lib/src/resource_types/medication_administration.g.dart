@@ -28,7 +28,7 @@ abstract class $MedicationAdministrationCopyWith<T>
     Reference? subject,
     Reference? encounter,
     List<Reference>? supportingInformation,
-    FhirDateTime? occurenceX,
+    OccurenceXMedicationAdministration? occurenceX,
     FhirDateTime? recorded,
     FhirBoolean? isSubPotent,
     List<CodeableConcept>? subPotentReason,
@@ -135,7 +135,8 @@ class _$MedicationAdministrationCopyWithImpl<T>
             : supportingInformation as List<Reference>?,
         occurenceX: identical(occurenceX, fhirSentinel)
             ? _value.occurenceX
-            : (occurenceX as FhirDateTime?) ?? _value.occurenceX,
+            : (occurenceX as OccurenceXMedicationAdministration?) ??
+                _value.occurenceX,
         recorded: identical(recorded, fhirSentinel)
             ? _value.recorded
             : recorded as FhirDateTime?,
@@ -254,7 +255,7 @@ abstract class $MedicationAdministrationDosageCopyWith<T>
     CodeableConcept? route,
     CodeableConcept? method,
     Quantity? dose,
-    Ratio? rateX,
+    RateXMedicationAdministrationDosage? rateX,
     bool? disallowExtensions,
   });
 }
@@ -299,7 +300,9 @@ class _$MedicationAdministrationDosageCopyWithImpl<T>
             ? _value.method
             : method as CodeableConcept?,
         dose: identical(dose, fhirSentinel) ? _value.dose : dose as Quantity?,
-        rateX: identical(rateX, fhirSentinel) ? _value.rateX : rateX as Ratio?,
+        rateX: identical(rateX, fhirSentinel)
+            ? _value.rateX
+            : rateX as RateXMedicationAdministrationDosage?,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

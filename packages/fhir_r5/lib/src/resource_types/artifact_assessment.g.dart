@@ -20,12 +20,12 @@ abstract class $ArtifactAssessmentCopyWith<T>
     List<FhirExtension>? modifierExtension,
     List<Identifier>? identifier,
     FhirString? title,
-    Reference? citeAsX,
+    CiteAsXArtifactAssessment? citeAsX,
     FhirDateTime? date,
     FhirMarkdown? copyright,
     FhirDate? approvalDate,
     FhirDate? lastReviewDate,
-    Reference? artifactX,
+    ArtifactXArtifactAssessment? artifactX,
     List<ArtifactAssessmentContent>? content,
     ArtifactAssessmentWorkflowStatus? workflowStatus,
     ArtifactAssessmentDisposition? disposition,
@@ -91,7 +91,7 @@ class _$ArtifactAssessmentCopyWithImpl<T>
             : title as FhirString?,
         citeAsX: identical(citeAsX, fhirSentinel)
             ? _value.citeAsX
-            : citeAsX as Reference?,
+            : citeAsX as CiteAsXArtifactAssessment?,
         date:
             identical(date, fhirSentinel) ? _value.date : date as FhirDateTime?,
         copyright: identical(copyright, fhirSentinel)
@@ -105,7 +105,7 @@ class _$ArtifactAssessmentCopyWithImpl<T>
             : lastReviewDate as FhirDate?,
         artifactX: identical(artifactX, fhirSentinel)
             ? _value.artifactX
-            : (artifactX as Reference?) ?? _value.artifactX,
+            : (artifactX as ArtifactXArtifactAssessment?) ?? _value.artifactX,
         content: identical(content, fhirSentinel)
             ? _value.content
             : content as List<ArtifactAssessmentContent>?,

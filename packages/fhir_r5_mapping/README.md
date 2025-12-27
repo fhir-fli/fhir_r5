@@ -1,6 +1,6 @@
 # fhir_r5_mapping
 
-# FHIR-FLI Mapping (R4)
+# FHIR-FLI Mapping (R5)
 
 A comprehensive implementation of the FHIR Mapping Language for Dart, enabling transformations between different FHIR resources and structures.
 
@@ -144,5 +144,5 @@ MIT
 ## Related Packages
 
 - [fhir](https://pub.dev/packages/fhir): Core FHIR package for Dart
-- [fhir_r5](https://pub.dev/packages/fhir_r5): R4 FHIR resources and models
+- [fhir_r5](https://pub.dev/packages/fhir_r5): R5 FHIR resources and models
 - [fhir_path](https://pub.dev/packages/fhir_path): FHIRPath implementation for Dart

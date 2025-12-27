@@ -20,7 +20,7 @@ abstract class $ValueSetCopyWith<T> extends $MetadataResourceCopyWith<T> {
     FhirUri? url,
     List<Identifier>? identifier,
     FhirString? version,
-    FhirString? versionAlgorithmX,
+    VersionAlgorithmXValueSet? versionAlgorithmX,
     FhirString? name,
     FhirString? title,
     PublicationStatus? status,
@@ -128,7 +128,7 @@ class _$ValueSetCopyWithImpl<T> implements $ValueSetCopyWith<T> {
             : version as FhirString?,
         versionAlgorithmX: identical(versionAlgorithmX, fhirSentinel)
             ? _value.versionAlgorithmX
-            : versionAlgorithmX as FhirString?,
+            : versionAlgorithmX as VersionAlgorithmXValueSet?,
         name: identical(name, fhirSentinel) ? _value.name : name as FhirString?,
         title: identical(title, fhirSentinel)
             ? _value.title
@@ -657,7 +657,7 @@ abstract class $ValueSetParameterCopyWith<T>
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     FhirString? name,
-    FhirString? valueX,
+    ValueXValueSetParameter? valueX,
     bool? disallowExtensions,
   });
 }
@@ -692,7 +692,7 @@ class _$ValueSetParameterCopyWithImpl<T>
             : (name as FhirString?) ?? _value.name,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : valueX as FhirString?,
+            : valueX as ValueXValueSetParameter?,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,
@@ -868,7 +868,7 @@ abstract class $ValueSetProperty1CopyWith<T>
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     FhirCode? code,
-    FhirCode? valueX,
+    ValueXValueSetProperty? valueX,
     List<ValueSetSubProperty>? subProperty,
     bool? disallowExtensions,
   });
@@ -905,7 +905,7 @@ class _$ValueSetProperty1CopyWithImpl<T>
             : (code as FhirCode?) ?? _value.code,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : (valueX as FhirCode?) ?? _value.valueX,
+            : (valueX as ValueXValueSetProperty?) ?? _value.valueX,
         subProperty: identical(subProperty, fhirSentinel)
             ? _value.subProperty
             : subProperty as List<ValueSetSubProperty>?,
@@ -933,7 +933,7 @@ abstract class $ValueSetSubPropertyCopyWith<T>
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     FhirCode? code,
-    FhirCode? valueX,
+    ValueXValueSetSubProperty? valueX,
     bool? disallowExtensions,
   });
 }
@@ -968,7 +968,7 @@ class _$ValueSetSubPropertyCopyWithImpl<T>
             : (code as FhirCode?) ?? _value.code,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : (valueX as FhirCode?) ?? _value.valueX,
+            : (valueX as ValueXValueSetSubProperty?) ?? _value.valueX,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

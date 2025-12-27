@@ -21,7 +21,7 @@ abstract class $EvidenceVariableCopyWith<T>
     FhirUri? url,
     List<Identifier>? identifier,
     FhirString? version,
-    FhirString? versionAlgorithmX,
+    VersionAlgorithmXEvidenceVariable? versionAlgorithmX,
     FhirString? name,
     FhirString? title,
     FhirString? shortTitle,
@@ -132,7 +132,7 @@ class _$EvidenceVariableCopyWithImpl<T>
             : version as FhirString?,
         versionAlgorithmX: identical(versionAlgorithmX, fhirSentinel)
             ? _value.versionAlgorithmX
-            : versionAlgorithmX as FhirString?,
+            : versionAlgorithmX as VersionAlgorithmXEvidenceVariable?,
         name: identical(name, fhirSentinel) ? _value.name : name as FhirString?,
         title: identical(title, fhirSentinel)
             ? _value.title
@@ -239,8 +239,8 @@ abstract class $EvidenceVariableCharacteristicCopyWith<T>
     FhirId? definitionId,
     EvidenceVariableDefinitionByTypeAndValue? definitionByTypeAndValue,
     EvidenceVariableDefinitionByCombination? definitionByCombination,
-    Quantity? instancesX,
-    Quantity? durationX,
+    InstancesXEvidenceVariableCharacteristic? instancesX,
+    DurationXEvidenceVariableCharacteristic? durationX,
     List<EvidenceVariableTimeFromEvent>? timeFromEvent,
     bool? disallowExtensions,
   });
@@ -322,10 +322,10 @@ class _$EvidenceVariableCharacteristicCopyWithImpl<T>
                     as EvidenceVariableDefinitionByCombination?,
         instancesX: identical(instancesX, fhirSentinel)
             ? _value.instancesX
-            : instancesX as Quantity?,
+            : instancesX as InstancesXEvidenceVariableCharacteristic?,
         durationX: identical(durationX, fhirSentinel)
             ? _value.durationX
-            : durationX as Quantity?,
+            : durationX as DurationXEvidenceVariableCharacteristic?,
         timeFromEvent: identical(timeFromEvent, fhirSentinel)
             ? _value.timeFromEvent
             : timeFromEvent as List<EvidenceVariableTimeFromEvent>?,
@@ -357,7 +357,7 @@ abstract class $EvidenceVariableDefinitionByTypeAndValueCopyWith<T>
     CodeableConcept? type,
     List<CodeableConcept>? method,
     Reference? device,
-    CodeableConcept? valueX,
+    ValueXEvidenceVariableDefinitionByTypeAndValue? valueX,
     CodeableConcept? offset,
     bool? disallowExtensions,
   });
@@ -369,9 +369,7 @@ class _$EvidenceVariableDefinitionByTypeAndValueCopyWithImpl<T>
   final T Function(EvidenceVariableDefinitionByTypeAndValue) _then;
 
   _$EvidenceVariableDefinitionByTypeAndValueCopyWithImpl(
-    this._value,
-    this._then,
-  );
+      this._value, this._then);
 
   @override
   T call({
@@ -405,7 +403,8 @@ class _$EvidenceVariableDefinitionByTypeAndValueCopyWithImpl<T>
             : device as Reference?,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : (valueX as CodeableConcept?) ?? _value.valueX,
+            : (valueX as ValueXEvidenceVariableDefinitionByTypeAndValue?) ??
+                _value.valueX,
         offset: identical(offset, fhirSentinel)
             ? _value.offset
             : offset as CodeableConcept?,
@@ -448,9 +447,7 @@ class _$EvidenceVariableDefinitionByCombinationCopyWithImpl<T>
   final T Function(EvidenceVariableDefinitionByCombination) _then;
 
   _$EvidenceVariableDefinitionByCombinationCopyWithImpl(
-    this._value,
-    this._then,
-  );
+      this._value, this._then);
 
   @override
   T call({
@@ -509,7 +506,7 @@ abstract class $EvidenceVariableTimeFromEventCopyWith<T>
     List<FhirExtension>? modifierExtension,
     FhirMarkdown? description,
     List<Annotation>? note,
-    CodeableConcept? eventX,
+    EventXEvidenceVariableTimeFromEvent? eventX,
     Quantity? quantity,
     Range? range,
     bool? disallowExtensions,
@@ -552,7 +549,7 @@ class _$EvidenceVariableTimeFromEventCopyWithImpl<T>
             : note as List<Annotation>?,
         eventX: identical(eventX, fhirSentinel)
             ? _value.eventX
-            : eventX as CodeableConcept?,
+            : eventX as EventXEvidenceVariableTimeFromEvent?,
         quantity: identical(quantity, fhirSentinel)
             ? _value.quantity
             : quantity as Quantity?,
@@ -583,7 +580,7 @@ abstract class $EvidenceVariableCategoryCopyWith<T>
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     FhirString? name,
-    CodeableConcept? valueX,
+    ValueXEvidenceVariableCategory? valueX,
     bool? disallowExtensions,
   });
 }
@@ -616,7 +613,7 @@ class _$EvidenceVariableCategoryCopyWithImpl<T>
         name: identical(name, fhirSentinel) ? _value.name : name as FhirString?,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : valueX as CodeableConcept?,
+            : valueX as ValueXEvidenceVariableCategory?,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

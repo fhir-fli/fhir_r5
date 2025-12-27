@@ -21,7 +21,7 @@ abstract class $ExampleScenarioCopyWith<T>
     FhirUri? url,
     List<Identifier>? identifier,
     FhirString? version,
-    FhirString? versionAlgorithmX,
+    VersionAlgorithmXExampleScenario? versionAlgorithmX,
     FhirString? name,
     FhirString? title,
     PublicationStatus? status,
@@ -109,7 +109,7 @@ class _$ExampleScenarioCopyWithImpl<T> implements $ExampleScenarioCopyWith<T> {
             : version as FhirString?,
         versionAlgorithmX: identical(versionAlgorithmX, fhirSentinel)
             ? _value.versionAlgorithmX
-            : versionAlgorithmX as FhirString?,
+            : versionAlgorithmX as VersionAlgorithmXExampleScenario?,
         name: identical(name, fhirSentinel) ? _value.name : name as FhirString?,
         title: identical(title, fhirSentinel)
             ? _value.title
@@ -248,7 +248,7 @@ abstract class $ExampleScenarioInstanceCopyWith<T>
     FhirString? key,
     Coding? structureType,
     FhirString? structureVersion,
-    FhirCanonical? structureProfileX,
+    StructureProfileXExampleScenarioInstance? structureProfileX,
     FhirString? title,
     FhirMarkdown? description,
     Reference? content,
@@ -301,7 +301,7 @@ class _$ExampleScenarioInstanceCopyWithImpl<T>
             : structureVersion as FhirString?,
         structureProfileX: identical(structureProfileX, fhirSentinel)
             ? _value.structureProfileX
-            : structureProfileX as FhirCanonical?,
+            : structureProfileX as StructureProfileXExampleScenarioInstance?,
         title: identical(title, fhirSentinel)
             ? _value.title
             : (title as FhirString?) ?? _value.title,

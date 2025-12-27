@@ -26,7 +26,7 @@ abstract class $SupplyRequestCopyWith<T> extends $DomainResourceCopyWith<T> {
     CodeableReference? item,
     Quantity? quantity,
     List<SupplyRequestParameter>? parameter,
-    FhirDateTime? occurrenceX,
+    OccurrenceXSupplyRequest? occurrenceX,
     FhirDateTime? authoredOn,
     Reference? requester,
     List<Reference>? supplier,
@@ -120,7 +120,7 @@ class _$SupplyRequestCopyWithImpl<T> implements $SupplyRequestCopyWith<T> {
             : parameter as List<SupplyRequestParameter>?,
         occurrenceX: identical(occurrenceX, fhirSentinel)
             ? _value.occurrenceX
-            : occurrenceX as FhirDateTime?,
+            : occurrenceX as OccurrenceXSupplyRequest?,
         authoredOn: identical(authoredOn, fhirSentinel)
             ? _value.authoredOn
             : authoredOn as FhirDateTime?,
@@ -160,7 +160,7 @@ abstract class $SupplyRequestParameterCopyWith<T>
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     CodeableConcept? code,
-    CodeableConcept? valueX,
+    ValueXSupplyRequestParameter? valueX,
     bool? disallowExtensions,
   });
 }
@@ -195,7 +195,7 @@ class _$SupplyRequestParameterCopyWithImpl<T>
             : code as CodeableConcept?,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : valueX as CodeableConcept?,
+            : valueX as ValueXSupplyRequestParameter?,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

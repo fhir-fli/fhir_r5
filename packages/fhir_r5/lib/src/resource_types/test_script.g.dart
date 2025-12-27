@@ -20,7 +20,7 @@ abstract class $TestScriptCopyWith<T> extends $CanonicalResourceCopyWith<T> {
     FhirUri? url,
     List<Identifier>? identifier,
     FhirString? version,
-    FhirString? versionAlgorithmX,
+    VersionAlgorithmXTestScript? versionAlgorithmX,
     FhirString? name,
     FhirString? title,
     PublicationStatus? status,
@@ -122,7 +122,7 @@ class _$TestScriptCopyWithImpl<T> implements $TestScriptCopyWith<T> {
             : version as FhirString?,
         versionAlgorithmX: identical(versionAlgorithmX, fhirSentinel)
             ? _value.versionAlgorithmX
-            : versionAlgorithmX as FhirString?,
+            : versionAlgorithmX as VersionAlgorithmXTestScript?,
         name: identical(name, fhirSentinel)
             ? _value.name
             : (name as FhirString?) ?? _value.name,
@@ -1233,7 +1233,7 @@ abstract class $TestScriptRequirementCopyWith<T>
     FhirString? id,
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
-    FhirUri? linkX,
+    LinkXTestScriptRequirement? linkX,
     bool? disallowExtensions,
   });
 }
@@ -1262,8 +1262,9 @@ class _$TestScriptRequirementCopyWithImpl<T>
         modifierExtension: identical(modifierExtension, fhirSentinel)
             ? _value.modifierExtension
             : modifierExtension as List<FhirExtension>?,
-        linkX:
-            identical(linkX, fhirSentinel) ? _value.linkX : linkX as FhirUri?,
+        linkX: identical(linkX, fhirSentinel)
+            ? _value.linkX
+            : linkX as LinkXTestScriptRequirement?,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

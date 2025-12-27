@@ -27,9 +27,9 @@ abstract class $NutritionIntakeCopyWith<T> extends $DomainResourceCopyWith<T> {
     CodeableConcept? code,
     Reference? subject,
     Reference? encounter,
-    FhirDateTime? occurrenceX,
+    OccurrenceXNutritionIntake? occurrenceX,
     FhirDateTime? recorded,
-    FhirBoolean? reportedX,
+    ReportedXNutritionIntake? reportedX,
     List<NutritionIntakeConsumedItem>? consumedItem,
     List<NutritionIntakeIngredientLabel>? ingredientLabel,
     List<NutritionIntakePerformer>? performer,
@@ -131,13 +131,13 @@ class _$NutritionIntakeCopyWithImpl<T> implements $NutritionIntakeCopyWith<T> {
             : encounter as Reference?,
         occurrenceX: identical(occurrenceX, fhirSentinel)
             ? _value.occurrenceX
-            : occurrenceX as FhirDateTime?,
+            : occurrenceX as OccurrenceXNutritionIntake?,
         recorded: identical(recorded, fhirSentinel)
             ? _value.recorded
             : recorded as FhirDateTime?,
         reportedX: identical(reportedX, fhirSentinel)
             ? _value.reportedX
-            : reportedX as FhirBoolean?,
+            : reportedX as ReportedXNutritionIntake?,
         consumedItem: identical(consumedItem, fhirSentinel)
             ? _value.consumedItem
             : (consumedItem as List<NutritionIntakeConsumedItem>?) ??

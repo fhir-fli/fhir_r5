@@ -18,7 +18,7 @@ abstract class $ObservationCopyWith<T> extends $DomainResourceCopyWith<T> {
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     List<Identifier>? identifier,
-    FhirCanonical? instantiatesX,
+    InstantiatesXObservation? instantiatesX,
     List<Reference>? basedOn,
     List<ObservationTriggeredBy>? triggeredBy,
     List<Reference>? partOf,
@@ -28,10 +28,10 @@ abstract class $ObservationCopyWith<T> extends $DomainResourceCopyWith<T> {
     Reference? subject,
     List<Reference>? focus,
     Reference? encounter,
-    FhirDateTime? effectiveX,
+    EffectiveXObservation? effectiveX,
     FhirInstant? issued,
     List<Reference>? performer,
-    Quantity? valueX,
+    ValueXObservation? valueX,
     CodeableConcept? dataAbsentReason,
     List<CodeableConcept>? interpretation,
     List<Annotation>? note,
@@ -118,7 +118,7 @@ class _$ObservationCopyWithImpl<T> implements $ObservationCopyWith<T> {
             : identifier as List<Identifier>?,
         instantiatesX: identical(instantiatesX, fhirSentinel)
             ? _value.instantiatesX
-            : instantiatesX as FhirCanonical?,
+            : instantiatesX as InstantiatesXObservation?,
         basedOn: identical(basedOn, fhirSentinel)
             ? _value.basedOn
             : basedOn as List<Reference>?,
@@ -148,7 +148,7 @@ class _$ObservationCopyWithImpl<T> implements $ObservationCopyWith<T> {
             : encounter as Reference?,
         effectiveX: identical(effectiveX, fhirSentinel)
             ? _value.effectiveX
-            : effectiveX as FhirDateTime?,
+            : effectiveX as EffectiveXObservation?,
         issued: identical(issued, fhirSentinel)
             ? _value.issued
             : issued as FhirInstant?,
@@ -157,7 +157,7 @@ class _$ObservationCopyWithImpl<T> implements $ObservationCopyWith<T> {
             : performer as List<Reference>?,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : valueX as Quantity?,
+            : valueX as ValueXObservation?,
         dataAbsentReason: identical(dataAbsentReason, fhirSentinel)
             ? _value.dataAbsentReason
             : dataAbsentReason as CodeableConcept?,
@@ -359,7 +359,7 @@ abstract class $ObservationComponentCopyWith<T>
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     CodeableConcept? code,
-    Quantity? valueX,
+    ValueXObservationComponent? valueX,
     CodeableConcept? dataAbsentReason,
     List<CodeableConcept>? interpretation,
     List<ObservationReferenceRange>? referenceRange,
@@ -400,7 +400,7 @@ class _$ObservationComponentCopyWithImpl<T>
             : (code as CodeableConcept?) ?? _value.code,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : valueX as Quantity?,
+            : valueX as ValueXObservationComponent?,
         dataAbsentReason: identical(dataAbsentReason, fhirSentinel)
             ? _value.dataAbsentReason
             : dataAbsentReason as CodeableConcept?,

@@ -30,12 +30,12 @@ abstract class $ServiceRequestCopyWith<T> extends $DomainResourceCopyWith<T> {
     FhirBoolean? doNotPerform,
     CodeableReference? code,
     List<ServiceRequestOrderDetail>? orderDetail,
-    Quantity? quantityX,
+    QuantityXServiceRequest? quantityX,
     Reference? subject,
     List<Reference>? focus,
     Reference? encounter,
-    FhirDateTime? occurrenceX,
-    FhirBoolean? asNeededX,
+    OccurrenceXServiceRequest? occurrenceX,
+    AsNeededXServiceRequest? asNeededX,
     FhirDateTime? authoredOn,
     Reference? requester,
     CodeableConcept? performerType,
@@ -166,7 +166,7 @@ class _$ServiceRequestCopyWithImpl<T> implements $ServiceRequestCopyWith<T> {
             : orderDetail as List<ServiceRequestOrderDetail>?,
         quantityX: identical(quantityX, fhirSentinel)
             ? _value.quantityX
-            : quantityX as Quantity?,
+            : quantityX as QuantityXServiceRequest?,
         subject: identical(subject, fhirSentinel)
             ? _value.subject
             : (subject as Reference?) ?? _value.subject,
@@ -178,10 +178,10 @@ class _$ServiceRequestCopyWithImpl<T> implements $ServiceRequestCopyWith<T> {
             : encounter as Reference?,
         occurrenceX: identical(occurrenceX, fhirSentinel)
             ? _value.occurrenceX
-            : occurrenceX as FhirDateTime?,
+            : occurrenceX as OccurrenceXServiceRequest?,
         asNeededX: identical(asNeededX, fhirSentinel)
             ? _value.asNeededX
-            : asNeededX as FhirBoolean?,
+            : asNeededX as AsNeededXServiceRequest?,
         authoredOn: identical(authoredOn, fhirSentinel)
             ? _value.authoredOn
             : authoredOn as FhirDateTime?,
@@ -306,7 +306,7 @@ abstract class $ServiceRequestParameterCopyWith<T>
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     CodeableConcept? code,
-    Quantity? valueX,
+    ValueXServiceRequestParameter? valueX,
     bool? disallowExtensions,
   });
 }
@@ -341,7 +341,7 @@ class _$ServiceRequestParameterCopyWithImpl<T>
             : (code as CodeableConcept?) ?? _value.code,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : (valueX as Quantity?) ?? _value.valueX,
+            : (valueX as ValueXServiceRequestParameter?) ?? _value.valueX,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,
@@ -365,7 +365,7 @@ abstract class $ServiceRequestPatientInstructionCopyWith<T>
     FhirString? id,
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
-    FhirMarkdown? instructionX,
+    InstructionXServiceRequestPatientInstruction? instructionX,
     bool? disallowExtensions,
   });
 }
@@ -396,7 +396,7 @@ class _$ServiceRequestPatientInstructionCopyWithImpl<T>
             : modifierExtension as List<FhirExtension>?,
         instructionX: identical(instructionX, fhirSentinel)
             ? _value.instructionX
-            : instructionX as FhirMarkdown?,
+            : instructionX as InstructionXServiceRequestPatientInstruction?,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

@@ -236,16 +236,6 @@ FhirBaseBuilder? emptyFromType(String type) {
       return AccountGuarantorBuilder.empty();
     case 'account_guarantor':
       return AccountGuarantorBuilder.empty();
-    case 'activitydefinition':
-      return ActivityDefinitionBuilder.empty();
-    case 'activitydefinitionparticipant':
-      return ActivityDefinitionParticipantBuilder.empty();
-    case 'activitydefinition_participant':
-      return ActivityDefinitionParticipantBuilder.empty();
-    case 'activitydefinitiondynamicvalue':
-      return ActivityDefinitionDynamicValueBuilder.empty();
-    case 'activitydefinition_dynamicvalue':
-      return ActivityDefinitionDynamicValueBuilder.empty();
     case 'administrableproductdefinition':
       return AdministrableProductDefinitionBuilder.empty();
     case 'administrableproductdefinitionproperty':

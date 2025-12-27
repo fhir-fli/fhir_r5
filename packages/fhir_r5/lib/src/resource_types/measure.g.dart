@@ -20,13 +20,13 @@ abstract class $MeasureCopyWith<T> extends $MetadataResourceCopyWith<T> {
     FhirUri? url,
     List<Identifier>? identifier,
     FhirString? version,
-    FhirString? versionAlgorithmX,
+    VersionAlgorithmXMeasure? versionAlgorithmX,
     FhirString? name,
     FhirString? title,
     FhirString? subtitle,
     PublicationStatus? status,
     FhirBoolean? experimental,
-    CodeableConcept? subjectX,
+    SubjectXMeasure? subjectX,
     FHIRTypes? basis,
     FhirDateTime? date,
     FhirString? publisher,
@@ -158,7 +158,7 @@ class _$MeasureCopyWithImpl<T> implements $MeasureCopyWith<T> {
             : version as FhirString?,
         versionAlgorithmX: identical(versionAlgorithmX, fhirSentinel)
             ? _value.versionAlgorithmX
-            : versionAlgorithmX as FhirString?,
+            : versionAlgorithmX as VersionAlgorithmXMeasure?,
         name: identical(name, fhirSentinel) ? _value.name : name as FhirString?,
         title: identical(title, fhirSentinel)
             ? _value.title
@@ -174,7 +174,7 @@ class _$MeasureCopyWithImpl<T> implements $MeasureCopyWith<T> {
             : experimental as FhirBoolean?,
         subjectX: identical(subjectX, fhirSentinel)
             ? _value.subjectX
-            : subjectX as CodeableConcept?,
+            : subjectX as SubjectXMeasure?,
         basis:
             identical(basis, fhirSentinel) ? _value.basis : basis as FHIRTypes?,
         date:
@@ -359,7 +359,7 @@ abstract class $MeasureGroupCopyWith<T> extends $BackboneElementCopyWith<T> {
     CodeableConcept? code,
     FhirMarkdown? description,
     List<CodeableConcept>? type,
-    CodeableConcept? subjectX,
+    SubjectXMeasureGroup? subjectX,
     FHIRTypes? basis,
     CodeableConcept? scoring,
     CodeableConcept? scoringUnit,
@@ -421,7 +421,7 @@ class _$MeasureGroupCopyWithImpl<T> implements $MeasureGroupCopyWith<T> {
             : type as List<CodeableConcept>?,
         subjectX: identical(subjectX, fhirSentinel)
             ? _value.subjectX
-            : subjectX as CodeableConcept?,
+            : subjectX as SubjectXMeasureGroup?,
         basis:
             identical(basis, fhirSentinel) ? _value.basis : basis as FHIRTypes?,
         scoring: identical(scoring, fhirSentinel)

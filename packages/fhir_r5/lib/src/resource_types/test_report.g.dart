@@ -450,7 +450,7 @@ abstract class $TestReportRequirementCopyWith<T>
     FhirString? id,
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
-    FhirUri? linkX,
+    LinkXTestReportRequirement? linkX,
     bool? disallowExtensions,
   });
 }
@@ -479,8 +479,9 @@ class _$TestReportRequirementCopyWithImpl<T>
         modifierExtension: identical(modifierExtension, fhirSentinel)
             ? _value.modifierExtension
             : modifierExtension as List<FhirExtension>?,
-        linkX:
-            identical(linkX, fhirSentinel) ? _value.linkX : linkX as FhirUri?,
+        linkX: identical(linkX, fhirSentinel)
+            ? _value.linkX
+            : linkX as LinkXTestReportRequirement?,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

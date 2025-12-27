@@ -21,7 +21,7 @@ abstract class $ChargeItemDefinitionCopyWith<T>
     FhirUri? url,
     List<Identifier>? identifier,
     FhirString? version,
-    FhirString? versionAlgorithmX,
+    VersionAlgorithmXChargeItemDefinition? versionAlgorithmX,
     FhirString? name,
     FhirString? title,
     List<FhirUri>? derivedFromUri,
@@ -122,7 +122,7 @@ class _$ChargeItemDefinitionCopyWithImpl<T>
             : version as FhirString?,
         versionAlgorithmX: identical(versionAlgorithmX, fhirSentinel)
             ? _value.versionAlgorithmX
-            : versionAlgorithmX as FhirString?,
+            : versionAlgorithmX as VersionAlgorithmXChargeItemDefinition?,
         name: identical(name, fhirSentinel) ? _value.name : name as FhirString?,
         title: identical(title, fhirSentinel)
             ? _value.title

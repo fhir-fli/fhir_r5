@@ -132,9 +132,7 @@ class _$ImmunizationRecommendationRecommendationCopyWithImpl<T>
   final T Function(ImmunizationRecommendationRecommendation) _then;
 
   _$ImmunizationRecommendationRecommendationCopyWithImpl(
-    this._value,
-    this._then,
-  );
+      this._value, this._then);
 
   @override
   T call({
@@ -240,9 +238,7 @@ class _$ImmunizationRecommendationDateCriterionCopyWithImpl<T>
   final T Function(ImmunizationRecommendationDateCriterion) _then;
 
   _$ImmunizationRecommendationDateCriterionCopyWithImpl(
-    this._value,
-    this._then,
-  );
+      this._value, this._then);
 
   @override
   T call({

@@ -125,7 +125,7 @@ abstract class $SubstanceIngredientCopyWith<T>
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     Ratio? quantity,
-    CodeableConcept? substanceX,
+    SubstanceXSubstanceIngredient? substanceX,
     bool? disallowExtensions,
   });
 }
@@ -160,7 +160,8 @@ class _$SubstanceIngredientCopyWithImpl<T>
             : quantity as Ratio?,
         substanceX: identical(substanceX, fhirSentinel)
             ? _value.substanceX
-            : (substanceX as CodeableConcept?) ?? _value.substanceX,
+            : (substanceX as SubstanceXSubstanceIngredient?) ??
+                _value.substanceX,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

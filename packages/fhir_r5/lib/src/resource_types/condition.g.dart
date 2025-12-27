@@ -26,8 +26,8 @@ abstract class $ConditionCopyWith<T> extends $DomainResourceCopyWith<T> {
     List<CodeableConcept>? bodySite,
     Reference? subject,
     Reference? encounter,
-    FhirDateTime? onsetX,
-    FhirDateTime? abatementX,
+    OnsetXCondition? onsetX,
+    AbatementXCondition? abatementX,
     FhirDateTime? recordedDate,
     List<ConditionParticipant>? participant,
     List<ConditionStage>? stage,
@@ -120,10 +120,10 @@ class _$ConditionCopyWithImpl<T> implements $ConditionCopyWith<T> {
             : encounter as Reference?,
         onsetX: identical(onsetX, fhirSentinel)
             ? _value.onsetX
-            : onsetX as FhirDateTime?,
+            : onsetX as OnsetXCondition?,
         abatementX: identical(abatementX, fhirSentinel)
             ? _value.abatementX
-            : abatementX as FhirDateTime?,
+            : abatementX as AbatementXCondition?,
         recordedDate: identical(recordedDate, fhirSentinel)
             ? _value.recordedDate
             : recordedDate as FhirDateTime?,

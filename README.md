@@ -1,7 +1,7 @@
-# Fhir R4
+# Fhir R5
 
 ## fhir_r5
-R4b Version of the FHIR Specification
+R5b Version of the FHIR Specification
 
 ### Big Update, Breaking changes for 0.3.0-1
 

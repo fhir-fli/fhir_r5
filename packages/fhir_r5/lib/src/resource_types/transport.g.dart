@@ -299,7 +299,7 @@ abstract class $TransportInputCopyWith<T> extends $BackboneElementCopyWith<T> {
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     CodeableConcept? type,
-    FhirBase64Binary? valueX,
+    ValueXTransportInput? valueX,
     bool? disallowExtensions,
   });
 }
@@ -333,7 +333,7 @@ class _$TransportInputCopyWithImpl<T> implements $TransportInputCopyWith<T> {
             : (type as CodeableConcept?) ?? _value.type,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : (valueX as FhirBase64Binary?) ?? _value.valueX,
+            : (valueX as ValueXTransportInput?) ?? _value.valueX,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,
@@ -357,7 +357,7 @@ abstract class $TransportOutputCopyWith<T> extends $BackboneElementCopyWith<T> {
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     CodeableConcept? type,
-    FhirBase64Binary? valueX,
+    ValueXTransportOutput? valueX,
     bool? disallowExtensions,
   });
 }
@@ -391,7 +391,7 @@ class _$TransportOutputCopyWithImpl<T> implements $TransportOutputCopyWith<T> {
             : (type as CodeableConcept?) ?? _value.type,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : (valueX as FhirBase64Binary?) ?? _value.valueX,
+            : (valueX as ValueXTransportOutput?) ?? _value.valueX,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

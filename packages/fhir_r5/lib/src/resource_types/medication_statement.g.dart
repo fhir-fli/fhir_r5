@@ -25,7 +25,7 @@ abstract class $MedicationStatementCopyWith<T>
     CodeableReference? medication,
     Reference? subject,
     Reference? encounter,
-    FhirDateTime? effectiveX,
+    EffectiveXMedicationStatement? effectiveX,
     FhirDateTime? dateAsserted,
     List<Reference>? informationSource,
     List<Reference>? derivedFrom,
@@ -118,7 +118,7 @@ class _$MedicationStatementCopyWithImpl<T>
             : encounter as Reference?,
         effectiveX: identical(effectiveX, fhirSentinel)
             ? _value.effectiveX
-            : effectiveX as FhirDateTime?,
+            : effectiveX as EffectiveXMedicationStatement?,
         dateAsserted: identical(dateAsserted, fhirSentinel)
             ? _value.dateAsserted
             : dateAsserted as FhirDateTime?,

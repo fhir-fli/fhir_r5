@@ -2,7 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/fhir_r5_bulk.svg)](https://pub.dev/packages/fhir_r5_bulk)
 
-A Dart package for FHIR R4a Bulk Data operations, supporting NDJSON conversion, compression, and the standard FHIR bulk import/export operations.
+A Dart package for FHIR R5a Bulk Data operations, supporting NDJSON conversion, compression, and the standard FHIR bulk import/export operations.
 
 FHIR® is the registered trademark of HL7 and is used with the permission of HL7. Use of the FHIR trademark does not constitute endorsement of this product by HL7.
 

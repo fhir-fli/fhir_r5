@@ -381,7 +381,7 @@ abstract class $DocumentReferenceProfileCopyWith<T>
     FhirString? id,
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
-    Coding? valueX,
+    ValueXDocumentReferenceProfile? valueX,
     bool? disallowExtensions,
   });
 }
@@ -412,7 +412,7 @@ class _$DocumentReferenceProfileCopyWithImpl<T>
             : modifierExtension as List<FhirExtension>?,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : (valueX as Coding?) ?? _value.valueX,
+            : (valueX as ValueXDocumentReferenceProfile?) ?? _value.valueX,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

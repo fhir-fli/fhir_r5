@@ -6,36 +6,6 @@ import 'package:test/test.dart';
 import 'ndjson/ndjson.dart';
 
 void main() {
-  // Helper function to normalize JSON for comparison
-  Map<String, dynamic> normalizeJson(Map<String, dynamic> json) {
-    // This ensures consistent JSON representation
-    return jsonDecode(jsonEncode(json)) as Map<String, dynamic>;
-  }
-
-  // Helper function to compare NDJSON content
-  void compareNdjson(String actual, String expected) {
-    final actualLines = actual.trim().split('\n');
-    final expectedLines = expected.trim().split('\n');
-
-    expect(
-      actualLines.length,
-      expectedLines.length,
-      reason: 'Number of resources should match',
-    );
-
-    for (var i = 0; i < actualLines.length; i++) {
-      final actualJson = jsonDecode(actualLines[i]) as Map<String, dynamic>;
-      final expectedJson = jsonDecode(expectedLines[i]) as Map<String, dynamic>;
-
-      // Compare the parsed JSON objects, not the strings
-      expect(
-        normalizeJson(actualJson),
-        normalizeJson(expectedJson),
-        reason: 'Resource at line ${i + 1} should match',
-      );
-    }
-  }
-
   group('FhirBulk unit tests', () {
     test('toNdJson and fromNdJson should round-trip a list of Resources', () {
       final resources = <Resource>[
@@ -56,7 +26,7 @@ void main() {
       ];
 
       final ndjson = FhirBulk.toNdJson(resources);
-      expect(ndjson.split('\n').length, 2);
+      expect(ndjson.split('\n').length, 2); // 2 lines
 
       final decoded = FhirBulk.fromNdJson(ndjson);
       expect(decoded.length, 2);
@@ -89,10 +59,8 @@ void main() {
       for (final resource in resources) {
         buffer.writeln(jsonEncode(resource.toJson()));
       }
-      final actualNdjson = buffer.toString().trim();
-
-      // Compare using the helper function
-      compareNdjson(actualNdjson, account);
+      final stringList = buffer.toString().trim();
+      expect(stringList, account);
     });
 
     test('From MedicationRequest ndjson file', () async {
@@ -103,52 +71,46 @@ void main() {
       for (final resource in resources) {
         buffer.writeln(jsonEncode(resource.toJson()));
       }
-      final actualNdjson = buffer.toString().trim();
-
-      // Compare using the helper function
-      compareNdjson(actualNdjson, medicationRequest);
+      final stringList = buffer.toString().trim();
+      expect(stringList, medicationRequest);
     });
   });
 
   group('FHIR Bulk From Compressed File/s:', () {
     test('From Accounts zip file', () async {
       final resources = await FhirBulk.fromCompressedFile(
-        './test/ndjson/Account.ndjson.zip',
+        './test/ndjson/account.zip',
       );
       final buffer = StringBuffer();
       for (final resource in resources) {
         buffer.writeln(jsonEncode(resource.toJson()));
       }
-      final actualNdjson = buffer.toString().trim();
-
-      compareNdjson(actualNdjson, account);
+      final stringList = buffer.toString().trim();
+      expect(stringList, account);
     });
 
     test('From MedicationRequest zip file', () async {
       final resources = await FhirBulk.fromCompressedFile(
-        './test/ndjson/MedicationRequest.ndjson.zip',
+        './test/ndjson/medicationRequest.zip',
       );
       final buffer = StringBuffer();
       for (final resource in resources) {
         buffer.writeln(jsonEncode(resource.toJson()));
       }
-      final actualNdjson = buffer.toString().trim();
-
-      compareNdjson(actualNdjson, medicationRequest);
+      final stringList = buffer.toString().trim();
+      expect(stringList, medicationRequest);
     });
 
     test('From Accounts & MedicationRequest zip file', () async {
       final resources = await FhirBulk.fromCompressedFile(
-        './test/ndjson/AccountMedicationRequest.zip',
+        './test/ndjson/accountMedRequest.zip',
       );
       final buffer = StringBuffer();
       for (final resource in resources) {
         buffer.writeln(jsonEncode(resource.toJson()));
       }
-      final actualNdjson = buffer.toString().trim();
-
-      // Use the correct constant name
-      compareNdjson(actualNdjson, accountMedicationRequest);
+      final stringList = buffer.toString().trim();
+      expect(stringList, accountMedRequest);
     });
 
     test('From Account gzip file', () async {
@@ -159,9 +121,8 @@ void main() {
       for (final resource in resources) {
         buffer.writeln(jsonEncode(resource.toJson()));
       }
-      final actualNdjson = buffer.toString().trim();
-
-      compareNdjson(actualNdjson, account);
+      final stringList = buffer.toString().trim();
+      expect(stringList, account);
     });
 
     test('From MedicationRequest gzip file', () async {
@@ -172,34 +133,30 @@ void main() {
       for (final resource in resources) {
         buffer.writeln(jsonEncode(resource.toJson()));
       }
-      final actualNdjson = buffer.toString().trim();
-
-      compareNdjson(actualNdjson, medicationRequest);
+      final stringList = buffer.toString().trim();
+      expect(stringList, medicationRequest);
     });
 
     test('From MedicationRequest tar-gzip file', () async {
       final resources = await FhirBulk.fromCompressedFile(
-        './test/ndjson/MedicationRequest.ndjson.tar.gz',
+        './test/ndjson/tarGzip.tar.gz',
       );
       final buffer = StringBuffer();
       for (final resource in resources) {
         buffer.writeln(jsonEncode(resource.toJson()));
       }
-      final actualNdjson = buffer.toString().trim();
-
-      // This should just be medicationRequest, not medRequestAccount
-      compareNdjson(actualNdjson, medicationRequest);
+      final stringList = buffer.toString().trim();
+      expect(stringList, medRequestAccount);
     });
   });
 
   group('Creating Bulk FHIR String', () {
-    test('To Account ndjson', () {
+    test('To Accounts ndjson', () async {
       final resources = FhirBulk.fromNdJson(account);
       final resourceList = <Resource>[];
       resources.forEach(resourceList.add);
       final bulkString = FhirBulk.toNdJson(resourceList);
-
-      compareNdjson(bulkString, account);
+      expect(bulkString, account);
     });
 
     test('To MedicationRequest ndjson', () {
@@ -207,8 +164,7 @@ void main() {
       final resourceList = <Resource>[];
       resources.forEach(resourceList.add);
       final bulkString = FhirBulk.toNdJson(resourceList);
-
-      compareNdjson(bulkString, medicationRequest);
+      expect(bulkString, medicationRequest);
     });
   });
 }

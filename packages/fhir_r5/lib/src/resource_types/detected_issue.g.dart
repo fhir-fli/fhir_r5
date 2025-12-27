@@ -24,7 +24,7 @@ abstract class $DetectedIssueCopyWith<T> extends $DomainResourceCopyWith<T> {
     DetectedIssueSeverity? severity,
     Reference? subject,
     Reference? encounter,
-    FhirDateTime? identifiedX,
+    IdentifiedXDetectedIssue? identifiedX,
     Reference? author,
     List<Reference>? implicated,
     List<DetectedIssueEvidence>? evidence,
@@ -110,7 +110,7 @@ class _$DetectedIssueCopyWithImpl<T> implements $DetectedIssueCopyWith<T> {
             : encounter as Reference?,
         identifiedX: identical(identifiedX, fhirSentinel)
             ? _value.identifiedX
-            : identifiedX as FhirDateTime?,
+            : identifiedX as IdentifiedXDetectedIssue?,
         author: identical(author, fhirSentinel)
             ? _value.author
             : author as Reference?,

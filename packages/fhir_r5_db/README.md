@@ -2,7 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/fhir_r5_db.svg)](https://pub.dev/packages/fhir_r5_db)
 
-A lightweight, encrypted local database for FHIR R4 resources using Hive.
+A lightweight, encrypted local database for FHIR R5 resources using Hive.
 
 FHIR® is the registered trademark of HL7 and is used with the permission of HL7. Use of the FHIR trademark does not constitute endorsement of this product by HL7.
 

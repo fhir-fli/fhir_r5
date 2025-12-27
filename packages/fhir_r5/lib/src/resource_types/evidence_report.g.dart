@@ -22,7 +22,7 @@ abstract class $EvidenceReportCopyWith<T> extends $MetadataResourceCopyWith<T> {
     List<UsageContext>? useContext,
     List<Identifier>? identifier,
     List<Identifier>? relatedIdentifier,
-    Reference? citeAsX,
+    CiteAsXEvidenceReport? citeAsX,
     CodeableConcept? type,
     List<Annotation>? note,
     List<RelatedArtifact>? relatedArtifact,
@@ -120,7 +120,7 @@ class _$EvidenceReportCopyWithImpl<T> implements $EvidenceReportCopyWith<T> {
             : relatedIdentifier as List<Identifier>?,
         citeAsX: identical(citeAsX, fhirSentinel)
             ? _value.citeAsX
-            : citeAsX as Reference?,
+            : citeAsX as CiteAsXEvidenceReport?,
         type: identical(type, fhirSentinel)
             ? _value.type
             : type as CodeableConcept?,
@@ -238,7 +238,7 @@ abstract class $EvidenceReportCharacteristicCopyWith<T>
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     CodeableConcept? code,
-    Reference? valueX,
+    ValueXEvidenceReportCharacteristic? valueX,
     FhirBoolean? exclude,
     Period? period,
     bool? disallowExtensions,
@@ -277,7 +277,7 @@ class _$EvidenceReportCharacteristicCopyWithImpl<T>
             : (code as CodeableConcept?) ?? _value.code,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : (valueX as Reference?) ?? _value.valueX,
+            : (valueX as ValueXEvidenceReportCharacteristic?) ?? _value.valueX,
         exclude: identical(exclude, fhirSentinel)
             ? _value.exclude
             : exclude as FhirBoolean?,

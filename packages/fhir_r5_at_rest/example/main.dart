@@ -8,7 +8,7 @@ void main() {
   group('FhirRequest - READ:', () {
     test('get patient', () {
       final request = FhirReadRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         id: '12345',
         headers: {'test': 'headers'},
@@ -16,7 +16,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient/12345?_format=json',
+        'http://hapi.fhir.org/baseR5/Patient/12345?_format=json',
       );
 
       expect(
@@ -33,7 +33,7 @@ void main() {
 
     test('get patient with pretty', () {
       final request = FhirReadRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         id: '12345',
         parameters: RestfulParameters().requestPretty(),
@@ -42,7 +42,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient/12345?_pretty=true&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient/12345?_pretty=true&_format=json',
       );
 
       expect(
@@ -59,7 +59,7 @@ void main() {
 
     test('get patient with pretty and summary true', () {
       final request = FhirReadRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         id: '12345',
         parameters:
@@ -69,7 +69,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient/12345?_pretty=true&_summary=true&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient/12345?_pretty=true&_summary=true&_format=json',
       );
 
       expect(
@@ -86,7 +86,7 @@ void main() {
 
     test('get patient with summary count', () {
       final request = FhirReadRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         id: '12345',
         parameters: RestfulParameters().requestSummary(Summary.count),
@@ -95,7 +95,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient/12345?_summary=count&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient/12345?_summary=count&_format=json',
       );
 
       expect(
@@ -112,7 +112,7 @@ void main() {
 
     test('get patient with pretty, only want to return name', () {
       final request = FhirReadRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         id: '1227442',
         parameters:
@@ -122,7 +122,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient/1227442?_pretty=true&_elements=name&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient/1227442?_pretty=true&_elements=name&_format=json',
       );
 
       expect(
@@ -139,7 +139,7 @@ void main() {
 
     test('get patient with pretty, only want to return name and gender', () {
       final request = FhirReadRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         id: '1227442',
         parameters:
@@ -149,7 +149,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient/1227442?_pretty=true&_elements=name,gender&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient/1227442?_pretty=true&_elements=name,gender&_format=json',
       );
 
       expect(
@@ -168,7 +168,7 @@ void main() {
   group('FhirRequest - VREAD:', () {
     test('get patient version', () {
       final request = FhirVReadRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         id: '12345',
         vid: '6789',
@@ -177,7 +177,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient/12345/_history/6789?_format=json',
+        'http://hapi.fhir.org/baseR5/Patient/12345/_history/6789?_format=json',
       );
 
       expect(
@@ -194,7 +194,7 @@ void main() {
 
     test('get patient version with pretty', () {
       final request = FhirVReadRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         id: '12345',
         vid: '6789',
@@ -204,7 +204,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient/12345/_history/6789?_pretty=true&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient/12345/_history/6789?_pretty=true&_format=json',
       );
 
       expect(
@@ -221,7 +221,7 @@ void main() {
 
     test('get patient version with pretty and summary true', () {
       final request = FhirVReadRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         id: '12345',
         vid: '6789',
@@ -232,7 +232,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient/12345/_history/6789?_pretty=true&_summary=true&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient/12345/_history/6789?_pretty=true&_summary=true&_format=json',
       );
 
       expect(
@@ -249,7 +249,7 @@ void main() {
 
     test('get patient version with summary count', () {
       final request = FhirVReadRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         id: '12345',
         vid: '6789',
@@ -259,7 +259,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient/12345/_history/6789?_summary=count&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient/12345/_history/6789?_summary=count&_format=json',
       );
 
       expect(
@@ -291,14 +291,14 @@ void main() {
       );
 
       final request = FhirTransactionRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         bundle: bundle.toJson(),
         headers: {'test': 'headers'},
       );
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4?_format=json',
+        'http://hapi.fhir.org/baseR5?_format=json',
       );
 
       expect(
@@ -317,7 +317,7 @@ void main() {
   group('FhirRequest - HISTORY:', () {
     test('observation history by type and id', () {
       final request = FhirHistoryRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Observation',
         id: '12345',
         headers: {'test': 'headers'},
@@ -325,7 +325,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Observation/12345/_history?_format=json',
+        'http://hapi.fhir.org/baseR5/Observation/12345/_history?_format=json',
       );
 
       expect(
@@ -342,7 +342,7 @@ void main() {
 
     test('observation history by type', () {
       final request = FhirHistoryRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Observation',
         id: '12345',
         headers: {'test': 'headers'},
@@ -350,7 +350,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Observation/12345/_history?_format=json',
+        'http://hapi.fhir.org/baseR5/Observation/12345/_history?_format=json',
       );
 
       expect(
@@ -367,13 +367,13 @@ void main() {
 
     test('history for all resources', () {
       final request = FhirHistoryAllRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         headers: {'test': 'headers'},
       );
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/_history?_format=json',
+        'http://hapi.fhir.org/baseR5/_history?_format=json',
       );
 
       expect(
@@ -390,7 +390,7 @@ void main() {
 
     test('history with parameters', () {
       final request = FhirHistoryRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Observation',
         id: '12345',
         parameters: RestfulParameters()
@@ -401,7 +401,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Observation/12345/_history?_count=10&_since=2020-10-08T16:58:07.241117Z&_format=json',
+        'http://hapi.fhir.org/baseR5/Observation/12345/_history?_count=10&_since=2020-10-08T16:58:07.241117Z&_format=json',
       );
 
       expect(
@@ -418,7 +418,7 @@ void main() {
 
     test('history for everything with parameters', () {
       final request = FhirHistoryAllRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         parameters: RestfulParameters()
           ..add('_list', 'List/12345')
           ..add('_count', '10')
@@ -428,7 +428,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/_history?_list=List/12345&_count=10&_since=2020-10-08&_format=json',
+        'http://hapi.fhir.org/baseR5/_history?_list=List/12345&_count=10&_since=2020-10-08&_format=json',
       );
 
       expect(
@@ -447,7 +447,7 @@ void main() {
   group('FhirRequest - UPDATE:', () {
     test('update patient by id', () {
       final request = FhirUpdateRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         id: '12345',
         resource: {
@@ -465,7 +465,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient/12345?_format=json',
+        'http://hapi.fhir.org/baseR5/Patient/12345?_format=json',
       );
 
       expect(
@@ -486,7 +486,7 @@ void main() {
 
     test('update patient with parameters', () {
       final request = FhirUpdateRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         id: '12345',
         resource: {
@@ -505,7 +505,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient/12345?_summary=true&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient/12345?_summary=true&_format=json',
       );
 
       expect(
@@ -534,7 +534,7 @@ void main() {
         );
 
       final request = FhirPatchRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         id: '12345',
         patchBody: patchBody,
@@ -543,7 +543,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient/12345?_format=json',
+        'http://hapi.fhir.org/baseR5/Patient/12345?_format=json',
       );
 
       expect(
@@ -570,7 +570,7 @@ void main() {
         );
 
       final request = FhirPatchRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         id: '12345',
         patchBody: patchBody,
@@ -580,7 +580,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient/12345?_elements=name&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient/12345?_elements=name&_format=json',
       );
 
       expect(
@@ -602,7 +602,7 @@ void main() {
   group('FhirRequest - DELETE:', () {
     test('delete patient', () {
       final request = FhirDeleteRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         id: '12345',
         headers: {'test': 'headers'},
@@ -610,7 +610,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient/12345?_format=json',
+        'http://hapi.fhir.org/baseR5/Patient/12345?_format=json',
       );
 
       expect(
@@ -627,7 +627,7 @@ void main() {
 
     test('delete patient with parameters', () {
       final request = FhirDeleteRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         id: '12345',
         parameters: RestfulParameters().add('_cascade', 'true'),
@@ -636,7 +636,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient/12345?_cascade=true&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient/12345?_cascade=true&_format=json',
       );
 
       expect(
@@ -667,7 +667,7 @@ void main() {
       };
 
       final request = FhirCreateRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         resource: patient,
         headers: {'test': 'headers'},
@@ -675,7 +675,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient?_format=json',
+        'http://hapi.fhir.org/baseR5/Patient?_format=json',
       );
 
       expect(
@@ -708,7 +708,7 @@ void main() {
       };
 
       final request = FhirCreateRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         resource: patient,
         parameters: RestfulParameters().requestPretty(),
@@ -717,7 +717,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient?_pretty=true&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient?_pretty=true&_format=json',
       );
 
       expect(
@@ -740,13 +740,13 @@ void main() {
   group('FhirRequest - CAPABILITIES:', () {
     test('capabilities without parameters', () {
       final request = FhirCapabilitiesRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         headers: {'test': 'headers'},
       );
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/metadata?_format=json',
+        'http://hapi.fhir.org/baseR5/metadata?_format=json',
       );
 
       expect(
@@ -763,7 +763,7 @@ void main() {
 
     test('capabilities with mode normative', () {
       final request = FhirCapabilitiesRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         mode: Mode.normative,
         parameters: RestfulParameters().requestPretty(),
         headers: {'test': 'headers'},
@@ -771,7 +771,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/metadata?_pretty=true&mode=normative&_format=json',
+        'http://hapi.fhir.org/baseR5/metadata?_pretty=true&mode=normative&_format=json',
       );
 
       expect(
@@ -790,7 +790,7 @@ void main() {
   group('FhirRequest - OPERATION:', () {
     test(r'$everything operation', () {
       final request = FhirOperationRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         operation: 'everything',
         parameters: RestfulParameters()
             .add('start', '2020-01-01')
@@ -800,7 +800,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        r'http://hapi.fhir.org/baseR4/$everything?start=2020-01-01&end=2020-08-01&_format=json',
+        r'http://hapi.fhir.org/baseR5/$everything?start=2020-01-01&end=2020-08-01&_format=json',
       );
 
       expect(
@@ -817,7 +817,7 @@ void main() {
 
     test(r'$everything operation for Patient 744742', () {
       final request = FhirOperationRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         operation: 'everything',
         id: '744742',
         resourceType: 'Patient',
@@ -829,7 +829,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        r'http://hapi.fhir.org/baseR4/Patient/744742/$everything?start=2020-01-01&end=2020-08-01&_format=json',
+        r'http://hapi.fhir.org/baseR5/Patient/744742/$everything?start=2020-01-01&end=2020-08-01&_format=json',
       );
 
       expect(
@@ -849,7 +849,7 @@ void main() {
     test('search for patient by id', () {
       final searchParams = SearchPatient().id(FhirString('12345'));
       final request = FhirSearchRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         search: searchParams,
         headers: {'test': 'headers'},
@@ -857,7 +857,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient?_id=12345&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient?_id=12345&_format=json',
       );
 
       expect(
@@ -878,7 +878,7 @@ void main() {
         modifier: SearchModifier.eq,
       );
       final request = FhirSearchRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         search: searchParams,
         headers: {'test': 'headers'},
@@ -886,7 +886,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient?eqaddress=123%20Main%20St&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient?eqaddress=123%20Main%20St&_format=json',
       );
 
       expect(
@@ -912,7 +912,7 @@ void main() {
             modifier: SearchModifier.le,
           );
       final request = FhirSearchRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         search: searchParams,
         headers: {'test': 'headers'},
@@ -920,7 +920,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient?gebirthdate=2010-01-01&lebirthdate=2011-12-31&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient?gebirthdate=2010-01-01&lebirthdate=2011-12-31&_format=json',
       );
 
       expect(
@@ -941,7 +941,7 @@ void main() {
           .given(FhirString('John'))
           .gender(FhirString('male'));
       final request = FhirSearchRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         search: searchParams,
         headers: {'test': 'headers'},
@@ -949,7 +949,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient?family=Smith&given=John&gender=male&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient?family=Smith&given=John&gender=male&_format=json',
       );
 
       expect(
@@ -997,14 +997,14 @@ void main() {
       };
 
       final request = FhirBatchRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         bundle: bundle,
         headers: {'test': 'headers'},
       );
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4?_format=json',
+        'http://hapi.fhir.org/baseR5?_format=json',
       );
 
       expect(
@@ -1034,7 +1034,7 @@ void main() {
 
       try {
         FhirBatchRequest(
-          base: Uri.parse('http://hapi.fhir.org/baseR4'),
+          base: Uri.parse('http://hapi.fhir.org/baseR5'),
           bundle: invalidBundle,
           headers: {'test': 'headers'},
         ).buildBody();
@@ -1065,7 +1065,7 @@ void main() {
       };
 
       final request = FhirBatchRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         bundle: bundle,
         parameters: RestfulParameters().add('_summary', 'true'),
         headers: {'test': 'headers'},
@@ -1073,7 +1073,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4?_summary=true&_format=json',
+        'http://hapi.fhir.org/baseR5?_summary=true&_format=json',
       );
 
       expect(
@@ -1091,7 +1091,7 @@ void main() {
   group('FhirRequest - SEARCH:', () {
     test('search patient by id', () {
       final request = FhirSearchRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         search: SearchResource()
           ..parameters.addAll({
@@ -1102,7 +1102,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient?_id=12345&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient?_id=12345&_format=json',
       );
 
       expect(
@@ -1119,7 +1119,7 @@ void main() {
 
     test('search patient by name and gender', () {
       final request = FhirSearchRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         search: SearchResource()
           ..parameters.addAll({
@@ -1131,7 +1131,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient?name=John&gender=male&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient?name=John&gender=male&_format=json',
       );
 
       expect(
@@ -1148,7 +1148,7 @@ void main() {
 
     test('search patient using POST with a complex query', () {
       final request = FhirSearchRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         search: SearchResource()
           ..parameters.addAll({
@@ -1161,7 +1161,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient/_search?_format=json',
+        'http://hapi.fhir.org/baseR5/Patient/_search?_format=json',
       );
 
       expect(
@@ -1181,7 +1181,7 @@ void main() {
 
     test('search patient with missing gender', () {
       final request = FhirSearchRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         search: SearchResource()
           ..parameters.addAll({
@@ -1192,7 +1192,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4/Patient?gender:missing=true&_format=json',
+        'http://hapi.fhir.org/baseR5/Patient?gender:missing=true&_format=json',
       );
 
       expect(
@@ -1209,7 +1209,7 @@ void main() {
 
     test('search all resources for a specific type', () {
       final request = FhirSearchRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'All',
         search: SearchResource()
           ..parameters.addAll({
@@ -1221,7 +1221,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4?_type=Patient&name=John&_format=json',
+        'http://hapi.fhir.org/baseR5?_type=Patient&name=John&_format=json',
       );
 
       expect(
@@ -1264,14 +1264,14 @@ void main() {
       };
 
       final request = FhirTransactionRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         bundle: bundle,
         headers: {'test': 'headers'},
       );
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4?_format=json',
+        'http://hapi.fhir.org/baseR5?_format=json',
       );
 
       expect(
@@ -1297,7 +1297,7 @@ void main() {
       };
 
       final request = FhirTransactionRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         bundle: invalidBundle,
         headers: {'test': 'headers'},
       );
@@ -1337,7 +1337,7 @@ void main() {
       };
 
       final request = FhirTransactionRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         bundle: bundleWithMissingFields,
         headers: {'test': 'headers'},
       );
@@ -1386,14 +1386,14 @@ void main() {
       };
 
       final request = FhirBatchRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         bundle: bundle,
         headers: {'test': 'headers'},
       );
 
       expect(
         request.buildUri().toString(),
-        'http://hapi.fhir.org/baseR4?_format=json',
+        'http://hapi.fhir.org/baseR5?_format=json',
       );
 
       expect(
@@ -1426,7 +1426,7 @@ void main() {
       };
 
       final request = FhirBatchRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         bundle: invalidBundle,
         headers: {'test': 'headers'},
       );
@@ -1456,7 +1456,7 @@ void main() {
       };
 
       final request = FhirBatchRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         bundle: bundleWithMissingFields,
         headers: {'test': 'headers'},
       );
@@ -1481,7 +1481,7 @@ void main() {
       };
 
       final request = FhirBatchRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         bundle: emptyBundle,
         headers: {'test': 'headers'},
       );
@@ -1502,14 +1502,14 @@ void main() {
   group('FhirRequest - OPERATION:', () {
     test('operation without parameters', () {
       final request = FhirOperationRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         operation: 'everything',
         headers: {'test': 'headers'},
       );
 
       expect(
         request.buildUri().toString(),
-        r'http://hapi.fhir.org/baseR4/$everything?_format=json',
+        r'http://hapi.fhir.org/baseR5/$everything?_format=json',
       );
 
       expect(
@@ -1526,7 +1526,7 @@ void main() {
 
     test('operation for a specific resource type', () {
       final request = FhirOperationRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         operation: 'everything',
         headers: {'test': 'headers'},
@@ -1534,7 +1534,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        r'http://hapi.fhir.org/baseR4/Patient/$everything?_format=json',
+        r'http://hapi.fhir.org/baseR5/Patient/$everything?_format=json',
       );
 
       expect(
@@ -1551,7 +1551,7 @@ void main() {
 
     test('operation for a specific resource instance', () {
       final request = FhirOperationRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         resourceType: 'Patient',
         id: '12345',
         operation: 'everything',
@@ -1560,7 +1560,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        r'http://hapi.fhir.org/baseR4/Patient/12345/$everything?_format=json',
+        r'http://hapi.fhir.org/baseR5/Patient/12345/$everything?_format=json',
       );
 
       expect(
@@ -1577,7 +1577,7 @@ void main() {
 
     test('operation with parameters (GET)', () {
       final request = FhirOperationRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         operation: 'everything',
         parameters: RestfulParameters()
           ..add('start', '2020-01-01')
@@ -1587,7 +1587,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        r'http://hapi.fhir.org/baseR4/$everything?start=2020-01-01&end=2020-08-01&_format=json',
+        r'http://hapi.fhir.org/baseR5/$everything?start=2020-01-01&end=2020-08-01&_format=json',
       );
 
       expect(
@@ -1604,7 +1604,7 @@ void main() {
 
     test('operation with parameters (POST)', () {
       final request = FhirOperationRequest(
-        base: Uri.parse('http://hapi.fhir.org/baseR4'),
+        base: Uri.parse('http://hapi.fhir.org/baseR5'),
         operation: 'everything',
         usePost: true,
         parameters: RestfulParameters()
@@ -1615,7 +1615,7 @@ void main() {
 
       expect(
         request.buildUri().toString(),
-        r'http://hapi.fhir.org/baseR4/$everything?start=2020-01-01&end=2020-08-01&_format=json',
+        r'http://hapi.fhir.org/baseR5/$everything?start=2020-01-01&end=2020-08-01&_format=json',
       );
 
       expect(

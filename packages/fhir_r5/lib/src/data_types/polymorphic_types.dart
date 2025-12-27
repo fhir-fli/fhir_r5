@@ -1,5 +1,3 @@
-// ignore_for_file: flutter_style_todos
-
 import 'package:fhir_r5/fhir_r5.dart';
 
 /// Polymorphic types for FHIR data types.

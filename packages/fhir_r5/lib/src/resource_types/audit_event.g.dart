@@ -21,7 +21,7 @@ abstract class $AuditEventCopyWith<T> extends $DomainResourceCopyWith<T> {
     CodeableConcept? code,
     AuditEventAction? action,
     AuditEventSeverity? severity,
-    Period? occurredX,
+    OccurredXAuditEvent? occurredX,
     FhirInstant? recorded,
     AuditEventOutcome? outcome,
     List<CodeableConcept>? authorization,
@@ -101,7 +101,7 @@ class _$AuditEventCopyWithImpl<T> implements $AuditEventCopyWith<T> {
             : severity as AuditEventSeverity?,
         occurredX: identical(occurredX, fhirSentinel)
             ? _value.occurredX
-            : occurredX as Period?,
+            : occurredX as OccurredXAuditEvent?,
         recorded: identical(recorded, fhirSentinel)
             ? _value.recorded
             : (recorded as FhirInstant?) ?? _value.recorded,
@@ -214,7 +214,7 @@ abstract class $AuditEventAgentCopyWith<T> extends $BackboneElementCopyWith<T> {
     FhirBoolean? requestor,
     Reference? location,
     List<FhirUri>? policy,
-    Reference? networkX,
+    NetworkXAuditEventAgent? networkX,
     List<CodeableConcept>? authorization,
     bool? disallowExtensions,
   });
@@ -270,7 +270,7 @@ class _$AuditEventAgentCopyWithImpl<T> implements $AuditEventAgentCopyWith<T> {
             : policy as List<FhirUri>?,
         networkX: identical(networkX, fhirSentinel)
             ? _value.networkX
-            : networkX as Reference?,
+            : networkX as NetworkXAuditEventAgent?,
         authorization: identical(authorization, fhirSentinel)
             ? _value.authorization
             : authorization as List<CodeableConcept>?,
@@ -439,7 +439,7 @@ abstract class $AuditEventDetailCopyWith<T>
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     CodeableConcept? type,
-    Quantity? valueX,
+    ValueXAuditEventDetail? valueX,
     bool? disallowExtensions,
   });
 }
@@ -474,7 +474,7 @@ class _$AuditEventDetailCopyWithImpl<T>
             : (type as CodeableConcept?) ?? _value.type,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : (valueX as Quantity?) ?? _value.valueX,
+            : (valueX as ValueXAuditEventDetail?) ?? _value.valueX,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

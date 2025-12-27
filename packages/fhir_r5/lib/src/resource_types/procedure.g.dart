@@ -29,10 +29,10 @@ abstract class $ProcedureCopyWith<T> extends $DomainResourceCopyWith<T> {
     Reference? subject,
     Reference? focus,
     Reference? encounter,
-    FhirDateTime? occurrenceX,
+    OccurrenceXProcedure? occurrenceX,
     FhirDateTime? recorded,
     Reference? recorder,
-    FhirBoolean? reportedX,
+    ReportedXProcedure? reportedX,
     List<ProcedurePerformer>? performer,
     Reference? location,
     List<CodeableReference>? reason,
@@ -152,7 +152,7 @@ class _$ProcedureCopyWithImpl<T> implements $ProcedureCopyWith<T> {
             : encounter as Reference?,
         occurrenceX: identical(occurrenceX, fhirSentinel)
             ? _value.occurrenceX
-            : occurrenceX as FhirDateTime?,
+            : occurrenceX as OccurrenceXProcedure?,
         recorded: identical(recorded, fhirSentinel)
             ? _value.recorded
             : recorded as FhirDateTime?,
@@ -161,7 +161,7 @@ class _$ProcedureCopyWithImpl<T> implements $ProcedureCopyWith<T> {
             : recorder as Reference?,
         reportedX: identical(reportedX, fhirSentinel)
             ? _value.reportedX
-            : reportedX as FhirBoolean?,
+            : reportedX as ReportedXProcedure?,
         performer: identical(performer, fhirSentinel)
             ? _value.performer
             : performer as List<ProcedurePerformer>?,

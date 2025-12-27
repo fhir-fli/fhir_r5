@@ -20,7 +20,7 @@ abstract class $CitationCopyWith<T> extends $MetadataResourceCopyWith<T> {
     FhirUri? url,
     List<Identifier>? identifier,
     FhirString? version,
-    FhirString? versionAlgorithmX,
+    VersionAlgorithmXCitation? versionAlgorithmX,
     FhirString? name,
     FhirString? title,
     PublicationStatus? status,
@@ -130,7 +130,7 @@ class _$CitationCopyWithImpl<T> implements $CitationCopyWith<T> {
             : version as FhirString?,
         versionAlgorithmX: identical(versionAlgorithmX, fhirSentinel)
             ? _value.versionAlgorithmX
-            : versionAlgorithmX as FhirString?,
+            : versionAlgorithmX as VersionAlgorithmXCitation?,
         name: identical(name, fhirSentinel) ? _value.name : name as FhirString?,
         title: identical(title, fhirSentinel)
             ? _value.title
@@ -1270,7 +1270,7 @@ abstract class $CitationContributorshipCopyWith<T>
     List<FhirExtension>? modifierExtension,
     FhirBoolean? complete,
     List<CitationEntry>? entry,
-    List<CitationSummary1>? summary,
+    List<CitationSummary>? summary,
     bool? disallowExtensions,
   });
 }
@@ -1309,7 +1309,7 @@ class _$CitationContributorshipCopyWithImpl<T>
             : entry as List<CitationEntry>?,
         summary: identical(summary, fhirSentinel)
             ? _value.summary
-            : summary as List<CitationSummary1>?,
+            : summary as List<CitationSummary>?,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

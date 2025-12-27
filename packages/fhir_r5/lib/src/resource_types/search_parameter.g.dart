@@ -21,7 +21,7 @@ abstract class $SearchParameterCopyWith<T>
     FhirUri? url,
     List<Identifier>? identifier,
     FhirString? version,
-    FhirString? versionAlgorithmX,
+    VersionAlgorithmXSearchParameter? versionAlgorithmX,
     FhirString? name,
     FhirString? title,
     FhirCanonical? derivedFrom,
@@ -133,7 +133,7 @@ class _$SearchParameterCopyWithImpl<T> implements $SearchParameterCopyWith<T> {
             : version as FhirString?,
         versionAlgorithmX: identical(versionAlgorithmX, fhirSentinel)
             ? _value.versionAlgorithmX
-            : versionAlgorithmX as FhirString?,
+            : versionAlgorithmX as VersionAlgorithmXSearchParameter?,
         name: identical(name, fhirSentinel)
             ? _value.name
             : (name as FhirString?) ?? _value.name,

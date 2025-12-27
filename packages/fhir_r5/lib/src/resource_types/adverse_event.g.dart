@@ -24,7 +24,7 @@ abstract class $AdverseEventCopyWith<T> extends $DomainResourceCopyWith<T> {
     CodeableConcept? code,
     Reference? subject,
     Reference? encounter,
-    FhirDateTime? occurrenceX,
+    OccurrenceXAdverseEvent? occurrenceX,
     FhirDateTime? detected,
     FhirDateTime? recordedDate,
     List<Reference>? resultingEffect,
@@ -130,7 +130,7 @@ class _$AdverseEventCopyWithImpl<T> implements $AdverseEventCopyWith<T> {
             : encounter as Reference?,
         occurrenceX: identical(occurrenceX, fhirSentinel)
             ? _value.occurrenceX
-            : occurrenceX as FhirDateTime?,
+            : occurrenceX as OccurrenceXAdverseEvent?,
         detected: identical(detected, fhirSentinel)
             ? _value.detected
             : detected as FhirDateTime?,
@@ -260,7 +260,7 @@ abstract class $AdverseEventSuspectEntityCopyWith<T>
     FhirString? id,
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
-    CodeableConcept? instanceX,
+    InstanceXAdverseEventSuspectEntity? instanceX,
     AdverseEventCausality? causality,
     bool? disallowExtensions,
   });
@@ -293,7 +293,8 @@ class _$AdverseEventSuspectEntityCopyWithImpl<T>
             : modifierExtension as List<FhirExtension>?,
         instanceX: identical(instanceX, fhirSentinel)
             ? _value.instanceX
-            : (instanceX as CodeableConcept?) ?? _value.instanceX,
+            : (instanceX as InstanceXAdverseEventSuspectEntity?) ??
+                _value.instanceX,
         causality: identical(causality, fhirSentinel)
             ? _value.causality
             : causality as AdverseEventCausality?,
@@ -386,7 +387,7 @@ abstract class $AdverseEventContributingFactorCopyWith<T>
     FhirString? id,
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
-    Reference? itemX,
+    ItemXAdverseEventContributingFactor? itemX,
     bool? disallowExtensions,
   });
 }
@@ -417,7 +418,7 @@ class _$AdverseEventContributingFactorCopyWithImpl<T>
             : modifierExtension as List<FhirExtension>?,
         itemX: identical(itemX, fhirSentinel)
             ? _value.itemX
-            : (itemX as Reference?) ?? _value.itemX,
+            : (itemX as ItemXAdverseEventContributingFactor?) ?? _value.itemX,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,
@@ -443,7 +444,7 @@ abstract class $AdverseEventPreventiveActionCopyWith<T>
     FhirString? id,
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
-    Reference? itemX,
+    ItemXAdverseEventPreventiveAction? itemX,
     bool? disallowExtensions,
   });
 }
@@ -474,7 +475,7 @@ class _$AdverseEventPreventiveActionCopyWithImpl<T>
             : modifierExtension as List<FhirExtension>?,
         itemX: identical(itemX, fhirSentinel)
             ? _value.itemX
-            : (itemX as Reference?) ?? _value.itemX,
+            : (itemX as ItemXAdverseEventPreventiveAction?) ?? _value.itemX,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,
@@ -500,7 +501,7 @@ abstract class $AdverseEventMitigatingActionCopyWith<T>
     FhirString? id,
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
-    Reference? itemX,
+    ItemXAdverseEventMitigatingAction? itemX,
     bool? disallowExtensions,
   });
 }
@@ -531,7 +532,7 @@ class _$AdverseEventMitigatingActionCopyWithImpl<T>
             : modifierExtension as List<FhirExtension>?,
         itemX: identical(itemX, fhirSentinel)
             ? _value.itemX
-            : (itemX as Reference?) ?? _value.itemX,
+            : (itemX as ItemXAdverseEventMitigatingAction?) ?? _value.itemX,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,
@@ -557,7 +558,7 @@ abstract class $AdverseEventSupportingInfoCopyWith<T>
     FhirString? id,
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
-    Reference? itemX,
+    ItemXAdverseEventSupportingInfo? itemX,
     bool? disallowExtensions,
   });
 }
@@ -588,7 +589,7 @@ class _$AdverseEventSupportingInfoCopyWithImpl<T>
             : modifierExtension as List<FhirExtension>?,
         itemX: identical(itemX, fhirSentinel)
             ? _value.itemX
-            : (itemX as Reference?) ?? _value.itemX,
+            : (itemX as ItemXAdverseEventSupportingInfo?) ?? _value.itemX,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

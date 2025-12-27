@@ -20,7 +20,7 @@ abstract class $TestPlanCopyWith<T> extends $CanonicalResourceCopyWith<T> {
     FhirUri? url,
     List<Identifier>? identifier,
     FhirString? version,
-    FhirString? versionAlgorithmX,
+    VersionAlgorithmXTestPlan? versionAlgorithmX,
     FhirString? name,
     FhirString? title,
     PublicationStatus? status,
@@ -114,7 +114,7 @@ class _$TestPlanCopyWithImpl<T> implements $TestPlanCopyWith<T> {
             : version as FhirString?,
         versionAlgorithmX: identical(versionAlgorithmX, fhirSentinel)
             ? _value.versionAlgorithmX
-            : versionAlgorithmX as FhirString?,
+            : versionAlgorithmX as VersionAlgorithmXTestPlan?,
         name: identical(name, fhirSentinel) ? _value.name : name as FhirString?,
         title: identical(title, fhirSentinel)
             ? _value.title
@@ -446,7 +446,7 @@ abstract class $TestPlanScriptCopyWith<T> extends $BackboneElementCopyWith<T> {
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     CodeableConcept? language,
-    FhirString? sourceX,
+    SourceXTestPlanScript? sourceX,
     bool? disallowExtensions,
   });
 }
@@ -480,7 +480,7 @@ class _$TestPlanScriptCopyWithImpl<T> implements $TestPlanScriptCopyWith<T> {
             : language as CodeableConcept?,
         sourceX: identical(sourceX, fhirSentinel)
             ? _value.sourceX
-            : sourceX as FhirString?,
+            : sourceX as SourceXTestPlanScript?,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,
@@ -506,7 +506,7 @@ abstract class $TestPlanTestDataCopyWith<T>
     List<FhirExtension>? modifierExtension,
     Coding? type,
     Reference? content,
-    FhirString? sourceX,
+    SourceXTestPlanTestData? sourceX,
     bool? disallowExtensions,
   });
 }
@@ -545,7 +545,7 @@ class _$TestPlanTestDataCopyWithImpl<T>
             : content as Reference?,
         sourceX: identical(sourceX, fhirSentinel)
             ? _value.sourceX
-            : sourceX as FhirString?,
+            : sourceX as SourceXTestPlanTestData?,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

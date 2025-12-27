@@ -4581,7 +4581,7 @@ class ValueSetContains extends BackboneElement {
     )) {
       return false;
     }
-    if (!listEquals<ValueSetProperty>(
+    if (!listEquals<ValueSetProperty1>(
       property,
       o.property,
     )) {

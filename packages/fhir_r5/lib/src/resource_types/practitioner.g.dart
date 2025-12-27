@@ -23,7 +23,7 @@ abstract class $PractitionerCopyWith<T> extends $DomainResourceCopyWith<T> {
     List<ContactPoint>? telecom,
     AdministrativeGender? gender,
     FhirDate? birthDate,
-    FhirBoolean? deceasedX,
+    DeceasedXPractitioner? deceasedX,
     List<Address>? address,
     List<Attachment>? photo,
     List<PractitionerQualification>? qualification,
@@ -101,7 +101,7 @@ class _$PractitionerCopyWithImpl<T> implements $PractitionerCopyWith<T> {
             : birthDate as FhirDate?,
         deceasedX: identical(deceasedX, fhirSentinel)
             ? _value.deceasedX
-            : deceasedX as FhirBoolean?,
+            : deceasedX as DeceasedXPractitioner?,
         address: identical(address, fhirSentinel)
             ? _value.address
             : address as List<Address>?,

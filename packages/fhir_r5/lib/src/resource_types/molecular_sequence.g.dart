@@ -208,7 +208,7 @@ abstract class $MolecularSequenceStartingSequenceCopyWith<T>
     List<FhirExtension>? modifierExtension,
     CodeableConcept? genomeAssembly,
     CodeableConcept? chromosome,
-    CodeableConcept? sequenceX,
+    SequenceXMolecularSequenceStartingSequence? sequenceX,
     FhirInteger? windowStart,
     FhirInteger? windowEnd,
     OrientationType? orientation,
@@ -255,7 +255,7 @@ class _$MolecularSequenceStartingSequenceCopyWithImpl<T>
             : chromosome as CodeableConcept?,
         sequenceX: identical(sequenceX, fhirSentinel)
             ? _value.sequenceX
-            : sequenceX as CodeableConcept?,
+            : sequenceX as SequenceXMolecularSequenceStartingSequence?,
         windowStart: identical(windowStart, fhirSentinel)
             ? _value.windowStart
             : windowStart as FhirInteger?,

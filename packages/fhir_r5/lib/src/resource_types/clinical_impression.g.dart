@@ -24,7 +24,7 @@ abstract class $ClinicalImpressionCopyWith<T>
     FhirString? description,
     Reference? subject,
     Reference? encounter,
-    FhirDateTime? effectiveX,
+    EffectiveXClinicalImpression? effectiveX,
     FhirDateTime? date,
     Reference? performer,
     Reference? previous,
@@ -119,7 +119,7 @@ class _$ClinicalImpressionCopyWithImpl<T>
             : encounter as Reference?,
         effectiveX: identical(effectiveX, fhirSentinel)
             ? _value.effectiveX
-            : effectiveX as FhirDateTime?,
+            : effectiveX as EffectiveXClinicalImpression?,
         date:
             identical(date, fhirSentinel) ? _value.date : date as FhirDateTime?,
         performer: identical(performer, fhirSentinel)

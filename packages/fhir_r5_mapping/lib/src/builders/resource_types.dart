@@ -126,7 +126,6 @@ export 'resource_types/request_orchestration.dart';
 export 'resource_types/requirements.dart';
 export 'resource_types/research_study.dart';
 export 'resource_types/research_subject.dart';
-export 'resource_types/resource_types.dart';
 export 'resource_types/risk_assessment.dart';
 export 'resource_types/schedule.dart';
 export 'resource_types/search_parameter.dart';

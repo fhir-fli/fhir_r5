@@ -254,7 +254,7 @@ abstract class $NutritionProductCharacteristicCopyWith<T>
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     CodeableConcept? type,
-    CodeableConcept? valueX,
+    ValueXNutritionProductCharacteristic? valueX,
     bool? disallowExtensions,
   });
 }
@@ -289,7 +289,8 @@ class _$NutritionProductCharacteristicCopyWithImpl<T>
             : (type as CodeableConcept?) ?? _value.type,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : (valueX as CodeableConcept?) ?? _value.valueX,
+            : (valueX as ValueXNutritionProductCharacteristic?) ??
+                _value.valueX,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

@@ -167,7 +167,7 @@ abstract class $MeasureReportGroupCopyWith<T>
     CodeableConcept? code,
     Reference? subject,
     List<MeasureReportPopulation>? population,
-    Quantity? measureScoreX,
+    MeasureScoreXMeasureReportGroup? measureScoreX,
     List<MeasureReportStratifier>? stratifier,
     bool? disallowExtensions,
   });
@@ -216,7 +216,7 @@ class _$MeasureReportGroupCopyWithImpl<T>
             : population as List<MeasureReportPopulation>?,
         measureScoreX: identical(measureScoreX, fhirSentinel)
             ? _value.measureScoreX
-            : measureScoreX as Quantity?,
+            : measureScoreX as MeasureScoreXMeasureReportGroup?,
         stratifier: identical(stratifier, fhirSentinel)
             ? _value.stratifier
             : stratifier as List<MeasureReportStratifier>?,
@@ -388,10 +388,10 @@ abstract class $MeasureReportStratumCopyWith<T>
     FhirString? id,
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
-    CodeableConcept? valueX,
+    ValueXMeasureReportStratum? valueX,
     List<MeasureReportComponent>? component,
     List<MeasureReportPopulation>? population,
-    Quantity? measureScoreX,
+    MeasureScoreXMeasureReportStratum? measureScoreX,
     bool? disallowExtensions,
   });
 }
@@ -425,7 +425,7 @@ class _$MeasureReportStratumCopyWithImpl<T>
             : modifierExtension as List<FhirExtension>?,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : valueX as CodeableConcept?,
+            : valueX as ValueXMeasureReportStratum?,
         component: identical(component, fhirSentinel)
             ? _value.component
             : component as List<MeasureReportComponent>?,
@@ -434,7 +434,7 @@ class _$MeasureReportStratumCopyWithImpl<T>
             : population as List<MeasureReportPopulation>?,
         measureScoreX: identical(measureScoreX, fhirSentinel)
             ? _value.measureScoreX
-            : measureScoreX as Quantity?,
+            : measureScoreX as MeasureScoreXMeasureReportStratum?,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,
@@ -460,7 +460,7 @@ abstract class $MeasureReportComponentCopyWith<T>
     List<FhirExtension>? modifierExtension,
     FhirString? linkId,
     CodeableConcept? code,
-    CodeableConcept? valueX,
+    ValueXMeasureReportComponent? valueX,
     bool? disallowExtensions,
   });
 }
@@ -499,7 +499,7 @@ class _$MeasureReportComponentCopyWithImpl<T>
             : (code as CodeableConcept?) ?? _value.code,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : (valueX as CodeableConcept?) ?? _value.valueX,
+            : (valueX as ValueXMeasureReportComponent?) ?? _value.valueX,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

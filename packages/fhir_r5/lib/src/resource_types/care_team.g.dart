@@ -133,7 +133,7 @@ abstract class $CareTeamParticipantCopyWith<T>
     CodeableConcept? role,
     Reference? member,
     Reference? onBehalfOf,
-    Period? coverageX,
+    CoverageXCareTeamParticipant? coverageX,
     bool? disallowExtensions,
   });
 }
@@ -176,7 +176,7 @@ class _$CareTeamParticipantCopyWithImpl<T>
             : onBehalfOf as Reference?,
         coverageX: identical(coverageX, fhirSentinel)
             ? _value.coverageX
-            : coverageX as Period?,
+            : coverageX as CoverageXCareTeamParticipant?,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,

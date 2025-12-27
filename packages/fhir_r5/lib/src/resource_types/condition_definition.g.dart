@@ -21,7 +21,7 @@ abstract class $ConditionDefinitionCopyWith<T>
     FhirUri? url,
     List<Identifier>? identifier,
     FhirString? version,
-    FhirString? versionAlgorithmX,
+    VersionAlgorithmXConditionDefinition? versionAlgorithmX,
     FhirString? name,
     FhirString? title,
     FhirString? subtitle,
@@ -128,7 +128,7 @@ class _$ConditionDefinitionCopyWithImpl<T>
             : version as FhirString?,
         versionAlgorithmX: identical(versionAlgorithmX, fhirSentinel)
             ? _value.versionAlgorithmX
-            : versionAlgorithmX as FhirString?,
+            : versionAlgorithmX as VersionAlgorithmXConditionDefinition?,
         name: identical(name, fhirSentinel) ? _value.name : name as FhirString?,
         title: identical(title, fhirSentinel)
             ? _value.title
@@ -347,7 +347,7 @@ abstract class $ConditionDefinitionPreconditionCopyWith<T>
     List<FhirExtension>? modifierExtension,
     ConditionPreconditionType? type,
     CodeableConcept? code,
-    CodeableConcept? valueX,
+    ValueXConditionDefinitionPrecondition? valueX,
     bool? disallowExtensions,
   });
 }
@@ -386,7 +386,7 @@ class _$ConditionDefinitionPreconditionCopyWithImpl<T>
             : (code as CodeableConcept?) ?? _value.code,
         valueX: identical(valueX, fhirSentinel)
             ? _value.valueX
-            : valueX as CodeableConcept?,
+            : valueX as ValueXConditionDefinitionPrecondition?,
         disallowExtensions: identical(disallowExtensions, fhirSentinel)
             ? _value.disallowExtensions
             : disallowExtensions as bool?,
