@@ -1,8 +1,6 @@
 import 'package:fhir_r5/fhir_r5.dart';
 import 'package:test/test.dart';
 
-// ignore_for_file: always_specify_types
-
 void dateTest() {
   group('FhirDate', () {
     final offset =
@@ -130,6 +128,7 @@ void dateTest() {
     });
   });
 }
+
 void main() {
   dateTest();
 }

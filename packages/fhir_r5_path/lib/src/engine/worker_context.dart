@@ -1,4 +1,4 @@
-// ignore_for_file: public_member_api_docs, avoid_print
+// ignore_for_file: public_member_api_docs
 
 import 'package:fhir_r5/fhir_r5.dart';
 import 'package:fhir_r5_path/fhir_r5_path.dart';
@@ -117,7 +117,6 @@ class WorkerContext {
         .entries
         .map(
           (entry) =>
-              // ignore: avoid_dynamic_calls
               '[${entry.key}]: (${entry.value.runtimeType}) ${entry.value}',
         )
         .join(', ');

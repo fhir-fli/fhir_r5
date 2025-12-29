@@ -1,6 +1,3 @@
-// ignore_for_file: avoid_positional_boolean_parameters, avoid_returning_this
-// ignore_for_file: avoid_print
-
 import 'package:fhir_r5/fhir_r5.dart';
 import 'package:fhir_r5_path/fhir_r5_path.dart';
 
