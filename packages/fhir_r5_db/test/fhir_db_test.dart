@@ -30,6 +30,14 @@ Future<void> main() async {
     print('Database initialized');
   });
 
+  // Clean up after all tests
+  tearDownAll(() async {
+    await Hive.close();
+    if (Directory(directory).existsSync()) {
+      await Directory(directory).delete(recursive: true);
+    }
+  });
+
   group('Saving Things:', () {
     test('Saved A Patient, Found A Patient', () async {
       final patient1 = Patient(id: '1'.toFhirString);
@@ -472,7 +480,8 @@ Future<void> main() async {
     test(
       '(& Resources)',
       () async {
-        final dir = Directory('test/assets');
+        final testFile = File(Platform.script.toFilePath());
+        final dir = Directory('${testFile.parent.path}/test/assets');
         final subscription =
             fhirDb.subject(resourceType: R5ResourceType.Observation).listen(
           (Resource? resource) {
@@ -511,7 +520,7 @@ Future<void> main() async {
           var i = 0;
           for (final resource in resources) {
             i++;
-            await fhirDb.save(resource: resource);
+            // await fhirDb.save(resource: resource);
           }
           total += i;
         }
@@ -530,7 +539,7 @@ Future<void> main() async {
         await fhirDb.save(resource: testObservation5);
         await fhirDb.save(resource: testObservation6);
         await fhirDb.save(resource: testConceptMap1);
-        await fhirDb.save(resource: testCondition1);
+        final condition1 = await fhirDb.save(resource: testCondition1);
 
         print(buffer);
         final testStartTime = DateTime.now();

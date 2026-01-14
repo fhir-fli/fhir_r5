@@ -41,6 +41,7 @@ final testCondition1 = Condition.fromJson({
   },
   "subject": {"reference": "Patient/1cf9e585-806c-513b-80af-4ca565a28231"},
   "encounter": {"reference": "Encounter/a604549e-5294-536d-b3c0-41f1652cd5af"},
+  "clinicalStatus": {"system": "url", "value": "http://hl7.org/fhir"},
 });
 final testConceptMap1 = ConceptMap.fromJson({
   "resourceType": "ConceptMap",
@@ -77,43 +78,71 @@ final testConceptMap1 = ConceptMap.fromJson({
         {
           "code": "entered-in-error",
           "target": [
-            {"code": "error", "equivalence": "equivalent"},
+            {
+              "code": "error",
+              "equivalence": "equivalent",
+              "relationship": "related-to"
+            },
           ],
         },
         {
           "code": "planned",
           "target": [
-            {"code": "planned", "equivalence": "equivalent"},
+            {
+              "code": "planned",
+              "equivalence": "equivalent",
+              "relationship": "related-to"
+            },
           ],
         },
         {
           "code": "waitlist",
           "target": [
-            {"code": "draft", "equivalence": "equivalent"},
+            {
+              "code": "draft",
+              "equivalence": "equivalent",
+              "relationship": "related-to"
+            },
           ],
         },
         {
           "code": "active",
           "target": [
-            {"code": "active", "equivalence": "equivalent"},
+            {
+              "code": "active",
+              "equivalence": "equivalent",
+              "relationship": "related-to"
+            },
           ],
         },
         {
           "code": "onhold",
           "target": [
-            {"code": "suspended", "equivalence": "equivalent"},
+            {
+              "code": "suspended",
+              "equivalence": "equivalent",
+              "relationship": "related-to"
+            },
           ],
         },
         {
           "code": "finished",
           "target": [
-            {"code": "complete", "equivalence": "equivalent"},
+            {
+              "code": "complete",
+              "equivalence": "equivalent",
+              "relationship": "related-to"
+            },
           ],
         },
         {
           "code": "cancelled",
           "target": [
-            {"code": "abandoned", "equivalence": "equivalent"},
+            {
+              "code": "abandoned",
+              "equivalence": "equivalent",
+              "relationship": "related-to"
+            },
           ],
         }
       ],
