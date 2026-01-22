@@ -20,6 +20,14 @@ final testCondition1 = Condition.fromJson({
       "value": "25103777-2-A4102",
     }
   ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active",
+      }
+    ],
+  },
   "category": [
     {
       "coding": [
@@ -41,7 +49,6 @@ final testCondition1 = Condition.fromJson({
   },
   "subject": {"reference": "Patient/1cf9e585-806c-513b-80af-4ca565a28231"},
   "encounter": {"reference": "Encounter/a604549e-5294-536d-b3c0-41f1652cd5af"},
-  "clinicalStatus": {"system": "url", "value": "http://hl7.org/fhir"},
 });
 final testConceptMap1 = ConceptMap.fromJson({
   "resourceType": "ConceptMap",

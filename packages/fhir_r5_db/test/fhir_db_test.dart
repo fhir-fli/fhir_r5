@@ -480,8 +480,10 @@ Future<void> main() async {
     test(
       '(& Resources)',
       () async {
-        final testFile = File(Platform.script.toFilePath());
-        final dir = Directory('${testFile.parent.path}/test/assets');
+        // Use current working directory to find assets
+        // When run from package directory: ./test/assets
+        // When script runs: already in package directory, so same path
+        final dir = Directory('test/assets');
         final subscription =
             fhirDb.subject(resourceType: R5ResourceType.Observation).listen(
           (Resource? resource) {
@@ -520,7 +522,7 @@ Future<void> main() async {
           var i = 0;
           for (final resource in resources) {
             i++;
-            // await fhirDb.save(resource: resource);
+            await fhirDb.save(resource: resource);
           }
           total += i;
         }
@@ -530,28 +532,69 @@ Future<void> main() async {
           ..writeln('Total Resources: $total\n')
           ..writeln('Total time: ${duration.inSeconds} seconds');
 
-        await fhirDb.save(resource: testPatient1);
-        await fhirDb.save(resource: testPatient2);
-        await fhirDb.save(resource: testObservation1);
-        await fhirDb.save(resource: testObservation2);
-        await fhirDb.save(resource: testObservation3);
-        await fhirDb.save(resource: testObservation4);
-        await fhirDb.save(resource: testObservation5);
-        await fhirDb.save(resource: testObservation6);
-        await fhirDb.save(resource: testConceptMap1);
-        final condition1 = await fhirDb.save(resource: testCondition1);
+        print('Saving test resources...');
+        final saved1 = await fhirDb.save(resource: testPatient1);
+        print('Saved testPatient1 with id: ${saved1.id}');
+
+        final saved2 = await fhirDb.save(resource: testPatient2);
+        print('Saved testPatient2 with id: ${saved2.id}');
+
+        final saved3 = await fhirDb.save(resource: testObservation1);
+        print('Saved testObservation1 with id: ${saved3.id}');
+
+        final saved4 = await fhirDb.save(resource: testObservation2);
+        print('Saved testObservation2 with id: ${saved4.id}');
+
+        final saved5 = await fhirDb.save(resource: testObservation3);
+        print('Saved testObservation3 with id: ${saved5.id}');
+
+        final saved6 = await fhirDb.save(resource: testObservation4);
+        print('Saved testObservation4 with id: ${saved6.id}');
+
+        final saved7 = await fhirDb.save(resource: testObservation5);
+        print('Saved testObservation5 with id: ${saved7.id}');
+
+        final saved8 = await fhirDb.save(resource: testObservation6);
+        print('Saved testObservation6 with id: ${saved8.id}');
+
+        final saved9 = await fhirDb.save(resource: testConceptMap1);
+        print('Saved testConceptMap1 with id: ${saved9.id}');
+
+        final saved10 = await fhirDb.save(resource: testCondition1);
+        print('Saved testCondition1 with id: ${saved10.id}');
+        print('testCondition1 resource type: ${saved10.resourceType}');
 
         print(buffer);
         final testStartTime = DateTime.now();
+
+        print('Testing testPatient1...');
         expect(true, await compareTwoResources(testPatient1, fhirDb, null));
+
+        print('Testing testPatient2...');
         expect(true, await compareTwoResources(testPatient2, fhirDb, null));
+
+        print('Testing testObservation1...');
         expect(true, await compareTwoResources(testObservation1, fhirDb, null));
+
+        print('Testing testObservation2...');
         expect(true, await compareTwoResources(testObservation2, fhirDb, null));
+
+        print('Testing testObservation3...');
         expect(true, await compareTwoResources(testObservation3, fhirDb, null));
+
+        print('Testing testObservation4...');
         expect(true, await compareTwoResources(testObservation4, fhirDb, null));
+
+        print('Testing testObservation5...');
         expect(true, await compareTwoResources(testObservation5, fhirDb, null));
+
+        print('Testing testObservation6...');
         expect(true, await compareTwoResources(testObservation6, fhirDb, null));
+
+        print('Testing testConceptMap1...');
         expect(true, await compareTwoResources(testConceptMap1, fhirDb, null));
+
+        print('Testing testCondition1...');
         expect(true, await compareTwoResources(testCondition1, fhirDb, null));
         final testEndTime = DateTime.now();
         print(
@@ -578,14 +621,47 @@ Future<bool> compareTwoResources(
     resourceType: originalResource.resourceType,
     id: originalResource.id!.valueString!,
   );
+
+  if (dbResource == null) {
+    print('ERROR: Resource not found in database!');
+    print(
+        '  Looking for: ${originalResource.resourceType} with id ${originalResource.id}');
+    return false;
+  }
+
   final resource1Json = originalResource.toJson();
-  final resource2json = dbResource?.toJson();
+  final resource2json = dbResource.toJson();
   resource1Json.remove('meta');
-  resource2json?.remove('meta');
+  resource2json.remove('meta');
+
   if (!(const DeepCollectionEquality()).equals(resource1Json, resource2json)) {
+    print('ERROR: Resources do not match!');
+    print('  Resource type: ${originalResource.resourceType}');
+    print('  Resource id: ${originalResource.id}');
+    print('  Original keys: ${resource1Json.keys.toList()..sort()}');
+    print('  Database keys: ${resource2json.keys.toList()..sort()}');
+
+    // Find differences
+    for (final key in resource1Json.keys) {
+      if (!resource2json.containsKey(key)) {
+        print('  Missing in DB: $key');
+      } else if (resource1Json[key] != resource2json[key]) {
+        print('  Different value for $key:');
+        print('    Original: ${resource1Json[key]}');
+        print('    Database: ${resource2json[key]}');
+      }
+    }
+    for (final key in resource2json.keys) {
+      if (!resource1Json.containsKey(key)) {
+        print('  Extra in DB: $key = ${resource2json[key]}');
+      }
+    }
+
     return false;
   }
   if (!(const DeepCollectionEquality()).equals(resource2json, resource1Json)) {
+    print(
+        'ERROR: Reverse comparison failed (should not happen if forward passed)');
     return false;
   }
   return true;
