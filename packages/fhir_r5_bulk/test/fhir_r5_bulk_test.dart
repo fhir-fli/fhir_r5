@@ -79,7 +79,7 @@ void main() {
   group('FHIR Bulk From Compressed File/s:', () {
     test('From Accounts zip file', () async {
       final resources = await FhirBulk.fromCompressedFile(
-        './test/ndjson/account.zip',
+        './test/ndjson/Account.ndjson.zip',
       );
       final buffer = StringBuffer();
       for (final resource in resources) {
@@ -91,7 +91,7 @@ void main() {
 
     test('From MedicationRequest zip file', () async {
       final resources = await FhirBulk.fromCompressedFile(
-        './test/ndjson/medicationRequest.zip',
+        './test/ndjson/MedicationRequest.ndjson.zip',
       );
       final buffer = StringBuffer();
       for (final resource in resources) {
@@ -103,7 +103,7 @@ void main() {
 
     test('From Accounts & MedicationRequest zip file', () async {
       final resources = await FhirBulk.fromCompressedFile(
-        './test/ndjson/accountMedRequest.zip',
+        './test/ndjson/AccountMedRequest.zip',
       );
       final buffer = StringBuffer();
       for (final resource in resources) {
@@ -139,7 +139,7 @@ void main() {
 
     test('From MedicationRequest tar-gzip file', () async {
       final resources = await FhirBulk.fromCompressedFile(
-        './test/ndjson/tarGzip.tar.gz',
+        './test/ndjson/AccountMedRequest.tar.gz',
       );
       final buffer = StringBuffer();
       for (final resource in resources) {

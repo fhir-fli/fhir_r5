@@ -11,8 +11,8 @@ echo ""
 
 PACKAGES=(
   # "packages/fhir_r5"
-  "packages/fhir_r5_at_rest"
-  "packages/fhir_r5_db"
+  # "packages/fhir_r5_at_rest"
+  # "packages/fhir_r5_db"
   # "packages/fhir_r5_mapping"
   # "packages/fhir_r5_path"
   "packages/fhir_r5_bulk"
