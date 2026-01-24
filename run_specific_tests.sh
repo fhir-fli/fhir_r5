@@ -15,8 +15,8 @@ PACKAGES=(
   # "packages/fhir_r5_db"
   # "packages/fhir_r5_bulk"
   # "packages/fhir_r5_path"
-  "packages/fhir_r5_mapping"
-  # "packages/fhir_r5_validation"
+  # "packages/fhir_r5_mapping"
+  "packages/fhir_r5_validation"
 )
 
 RESULTS_FILE="test_results_$(date +%Y%m%d_%H%M%S).txt"
