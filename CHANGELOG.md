@@ -1,5 +1,15 @@
 # fhir_r5
 
+## [0.4.4]
+
+* **fhir_r5**: Fixed getChildrenByName null checks for polymorphic fields
+* **fhir_r5_at_rest**: Updated dependencies
+* **fhir_r5_path**: Updated dependencies
+* **fhir_r5_mapping**: Updated dependencies
+* **fhir_r5_db**: Updated dependencies
+* **fhir_r5_bulk**: Updated dependencies
+* **fhir_r5_validation**: Updated dependencies
+
 ## [0.3.0-1]
 
 * Lots and Lots of changes.

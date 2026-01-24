@@ -1,5 +1,9 @@
 # fhir_r5
 
+## [0.4.4]
+
+* Fixed getChildrenByName null checks for polymorphic fields
+
 ## [0.4.3]
 
 * Fixed issue about DateTimes not setting isUtc when timezone +00:00

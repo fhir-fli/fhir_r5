@@ -1,8 +1,12 @@
 # fhir_r5_validation
 
+## [0.4.1]
+
+* Updated dependencies
+
 ## [0.4.0]
 
-* First time publishing this. 
+* First time publishing this.
 * Performs basic validation for FHIR resources
 
 ## [0.3.0]
