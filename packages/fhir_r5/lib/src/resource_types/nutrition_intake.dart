@@ -685,9 +685,13 @@ class NutritionIntake extends DomainResource {
           fields.add(encounter!);
         }
       case 'occurrence':
-        fields.add(occurrenceX!);
+        if (occurrenceX != null) {
+          fields.add(occurrenceX!);
+        }
       case 'occurrenceX':
-        fields.add(occurrenceX!);
+        if (occurrenceX != null) {
+          fields.add(occurrenceX!);
+        }
       case 'occurrenceDateTime':
         if (occurrenceX is FhirDateTime) {
           fields.add(occurrenceX!);
@@ -701,9 +705,13 @@ class NutritionIntake extends DomainResource {
           fields.add(recorded!);
         }
       case 'reported':
-        fields.add(reportedX!);
+        if (reportedX != null) {
+          fields.add(reportedX!);
+        }
       case 'reportedX':
-        fields.add(reportedX!);
+        if (reportedX != null) {
+          fields.add(reportedX!);
+        }
       case 'reportedBoolean':
         if (reportedX is FhirBoolean) {
           fields.add(reportedX!);

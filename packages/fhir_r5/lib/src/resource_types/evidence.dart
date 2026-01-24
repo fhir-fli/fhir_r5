@@ -763,9 +763,13 @@ class Evidence extends MetadataResource {
           fields.add(version!);
         }
       case 'versionAlgorithm':
-        fields.add(versionAlgorithmX!);
+        if (versionAlgorithmX != null) {
+          fields.add(versionAlgorithmX!);
+        }
       case 'versionAlgorithmX':
-        fields.add(versionAlgorithmX!);
+        if (versionAlgorithmX != null) {
+          fields.add(versionAlgorithmX!);
+        }
       case 'versionAlgorithmString':
         if (versionAlgorithmX is FhirString) {
           fields.add(versionAlgorithmX!);
@@ -783,9 +787,13 @@ class Evidence extends MetadataResource {
           fields.add(title!);
         }
       case 'citeAs':
-        fields.add(citeAsX!);
+        if (citeAsX != null) {
+          fields.add(citeAsX!);
+        }
       case 'citeAsX':
-        fields.add(citeAsX!);
+        if (citeAsX != null) {
+          fields.add(citeAsX!);
+        }
       case 'citeAsReference':
         if (citeAsX is Reference) {
           fields.add(citeAsX!);

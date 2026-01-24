@@ -581,9 +581,13 @@ class Goal extends DomainResource {
       case 'subject':
         fields.add(subject);
       case 'start':
-        fields.add(startX!);
+        if (startX != null) {
+          fields.add(startX!);
+        }
       case 'startX':
-        fields.add(startX!);
+        if (startX != null) {
+          fields.add(startX!);
+        }
       case 'startDate':
         if (startX is FhirDate) {
           fields.add(startX!);
@@ -1118,9 +1122,13 @@ class GoalTarget extends BackboneElement {
           fields.add(measure!);
         }
       case 'detail':
-        fields.add(detailX!);
+        if (detailX != null) {
+          fields.add(detailX!);
+        }
       case 'detailX':
-        fields.add(detailX!);
+        if (detailX != null) {
+          fields.add(detailX!);
+        }
       case 'detailQuantity':
         if (detailX is Quantity) {
           fields.add(detailX!);
@@ -1150,9 +1158,13 @@ class GoalTarget extends BackboneElement {
           fields.add(detailX!);
         }
       case 'due':
-        fields.add(dueX!);
+        if (dueX != null) {
+          fields.add(dueX!);
+        }
       case 'dueX':
-        fields.add(dueX!);
+        if (dueX != null) {
+          fields.add(dueX!);
+        }
       case 'dueDate':
         if (dueX is FhirDate) {
           fields.add(dueX!);

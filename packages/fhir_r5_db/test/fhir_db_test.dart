@@ -625,7 +625,8 @@ Future<bool> compareTwoResources(
   if (dbResource == null) {
     print('ERROR: Resource not found in database!');
     print(
-        '  Looking for: ${originalResource.resourceType} with id ${originalResource.id}');
+      '  Looking for: ${originalResource.resourceType} with id ${originalResource.id}',
+    );
     return false;
   }
 
@@ -661,7 +662,8 @@ Future<bool> compareTwoResources(
   }
   if (!(const DeepCollectionEquality()).equals(resource2json, resource1Json)) {
     print(
-        'ERROR: Reverse comparison failed (should not happen if forward passed)');
+      'ERROR: Reverse comparison failed (should not happen if forward passed)',
+    );
     return false;
   }
   return true;

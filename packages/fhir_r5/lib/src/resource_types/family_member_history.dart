@@ -708,9 +708,13 @@ class FamilyMemberHistory extends DomainResource {
           fields.add(sex!);
         }
       case 'born':
-        fields.add(bornX!);
+        if (bornX != null) {
+          fields.add(bornX!);
+        }
       case 'bornX':
-        fields.add(bornX!);
+        if (bornX != null) {
+          fields.add(bornX!);
+        }
       case 'bornPeriod':
         if (bornX is Period) {
           fields.add(bornX!);
@@ -724,9 +728,13 @@ class FamilyMemberHistory extends DomainResource {
           fields.add(bornX!);
         }
       case 'age':
-        fields.add(ageX!);
+        if (ageX != null) {
+          fields.add(ageX!);
+        }
       case 'ageX':
-        fields.add(ageX!);
+        if (ageX != null) {
+          fields.add(ageX!);
+        }
       case 'ageAge':
         if (ageX is Age) {
           fields.add(ageX!);
@@ -744,9 +752,13 @@ class FamilyMemberHistory extends DomainResource {
           fields.add(estimatedAge!);
         }
       case 'deceased':
-        fields.add(deceasedX!);
+        if (deceasedX != null) {
+          fields.add(deceasedX!);
+        }
       case 'deceasedX':
-        fields.add(deceasedX!);
+        if (deceasedX != null) {
+          fields.add(deceasedX!);
+        }
       case 'deceasedBoolean':
         if (deceasedX is FhirBoolean) {
           fields.add(deceasedX!);
@@ -1609,9 +1621,13 @@ class FamilyMemberHistoryCondition extends BackboneElement {
           fields.add(contributedToDeath!);
         }
       case 'onset':
-        fields.add(onsetX!);
+        if (onsetX != null) {
+          fields.add(onsetX!);
+        }
       case 'onsetX':
-        fields.add(onsetX!);
+        if (onsetX != null) {
+          fields.add(onsetX!);
+        }
       case 'onsetAge':
         if (onsetX is Age) {
           fields.add(onsetX!);
@@ -2051,9 +2067,13 @@ class FamilyMemberHistoryProcedure extends BackboneElement {
           fields.add(contributedToDeath!);
         }
       case 'performed':
-        fields.add(performedX!);
+        if (performedX != null) {
+          fields.add(performedX!);
+        }
       case 'performedX':
-        fields.add(performedX!);
+        if (performedX != null) {
+          fields.add(performedX!);
+        }
       case 'performedAge':
         if (performedX is Age) {
           fields.add(performedX!);

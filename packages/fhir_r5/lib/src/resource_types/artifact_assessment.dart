@@ -497,9 +497,13 @@ class ArtifactAssessment extends DomainResource {
           fields.add(title!);
         }
       case 'citeAs':
-        fields.add(citeAsX!);
+        if (citeAsX != null) {
+          fields.add(citeAsX!);
+        }
       case 'citeAsX':
-        fields.add(citeAsX!);
+        if (citeAsX != null) {
+          fields.add(citeAsX!);
+        }
       case 'citeAsReference':
         if (citeAsX is Reference) {
           fields.add(citeAsX!);

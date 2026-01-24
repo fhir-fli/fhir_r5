@@ -725,9 +725,13 @@ class EvidenceVariable extends MetadataResource {
           fields.add(version!);
         }
       case 'versionAlgorithm':
-        fields.add(versionAlgorithmX!);
+        if (versionAlgorithmX != null) {
+          fields.add(versionAlgorithmX!);
+        }
       case 'versionAlgorithmX':
-        fields.add(versionAlgorithmX!);
+        if (versionAlgorithmX != null) {
+          fields.add(versionAlgorithmX!);
+        }
       case 'versionAlgorithmString':
         if (versionAlgorithmX is FhirString) {
           fields.add(versionAlgorithmX!);
@@ -1602,9 +1606,13 @@ class EvidenceVariableCharacteristic extends BackboneElement {
           fields.add(definitionByCombination!);
         }
       case 'instances':
-        fields.add(instancesX!);
+        if (instancesX != null) {
+          fields.add(instancesX!);
+        }
       case 'instancesX':
-        fields.add(instancesX!);
+        if (instancesX != null) {
+          fields.add(instancesX!);
+        }
       case 'instancesQuantity':
         if (instancesX is Quantity) {
           fields.add(instancesX!);
@@ -1614,9 +1622,13 @@ class EvidenceVariableCharacteristic extends BackboneElement {
           fields.add(instancesX!);
         }
       case 'duration':
-        fields.add(durationX!);
+        if (durationX != null) {
+          fields.add(durationX!);
+        }
       case 'durationX':
-        fields.add(durationX!);
+        if (durationX != null) {
+          fields.add(durationX!);
+        }
       case 'durationQuantity':
         if (durationX is Quantity) {
           fields.add(durationX!);
@@ -2847,9 +2859,13 @@ class EvidenceVariableTimeFromEvent extends BackboneElement {
           fields.addAll(note!);
         }
       case 'event':
-        fields.add(eventX!);
+        if (eventX != null) {
+          fields.add(eventX!);
+        }
       case 'eventX':
-        fields.add(eventX!);
+        if (eventX != null) {
+          fields.add(eventX!);
+        }
       case 'eventCodeableConcept':
         if (eventX is CodeableConcept) {
           fields.add(eventX!);
@@ -3213,9 +3229,13 @@ class EvidenceVariableCategory extends BackboneElement {
           fields.add(name!);
         }
       case 'value':
-        fields.add(valueX!);
+        if (valueX != null) {
+          fields.add(valueX!);
+        }
       case 'valueX':
-        fields.add(valueX!);
+        if (valueX != null) {
+          fields.add(valueX!);
+        }
       case 'valueCodeableConcept':
         if (valueX is CodeableConcept) {
           fields.add(valueX!);

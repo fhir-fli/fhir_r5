@@ -920,9 +920,13 @@ class MessageHeaderDestination extends BackboneElement {
           fields.addAll(modifierExtension!);
         }
       case 'endpoint':
-        fields.add(endpointX!);
+        if (endpointX != null) {
+          fields.add(endpointX!);
+        }
       case 'endpointX':
-        fields.add(endpointX!);
+        if (endpointX != null) {
+          fields.add(endpointX!);
+        }
       case 'endpointUrl':
         if (endpointX is FhirUrl) {
           fields.add(endpointX!);
@@ -1313,9 +1317,13 @@ class MessageHeaderSource extends BackboneElement {
           fields.addAll(modifierExtension!);
         }
       case 'endpoint':
-        fields.add(endpointX!);
+        if (endpointX != null) {
+          fields.add(endpointX!);
+        }
       case 'endpointX':
-        fields.add(endpointX!);
+        if (endpointX != null) {
+          fields.add(endpointX!);
+        }
       case 'endpointUrl':
         if (endpointX is FhirUrl) {
           fields.add(endpointX!);

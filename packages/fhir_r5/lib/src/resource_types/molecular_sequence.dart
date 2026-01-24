@@ -1354,9 +1354,13 @@ class MolecularSequenceStartingSequence extends BackboneElement {
           fields.add(chromosome!);
         }
       case 'sequence':
-        fields.add(sequenceX!);
+        if (sequenceX != null) {
+          fields.add(sequenceX!);
+        }
       case 'sequenceX':
-        fields.add(sequenceX!);
+        if (sequenceX != null) {
+          fields.add(sequenceX!);
+        }
       case 'sequenceCodeableConcept':
         if (sequenceX is CodeableConcept) {
           fields.add(sequenceX!);

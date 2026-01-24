@@ -710,9 +710,13 @@ class TestScript extends CanonicalResource {
           fields.add(version!);
         }
       case 'versionAlgorithm':
-        fields.add(versionAlgorithmX!);
+        if (versionAlgorithmX != null) {
+          fields.add(versionAlgorithmX!);
+        }
       case 'versionAlgorithmX':
-        fields.add(versionAlgorithmX!);
+        if (versionAlgorithmX != null) {
+          fields.add(versionAlgorithmX!);
+        }
       case 'versionAlgorithmString':
         if (versionAlgorithmX is FhirString) {
           fields.add(versionAlgorithmX!);
@@ -6585,9 +6589,13 @@ class TestScriptRequirement extends BackboneElement {
           fields.addAll(modifierExtension!);
         }
       case 'link':
-        fields.add(linkX!);
+        if (linkX != null) {
+          fields.add(linkX!);
+        }
       case 'linkX':
-        fields.add(linkX!);
+        if (linkX != null) {
+          fields.add(linkX!);
+        }
       case 'linkUri':
         if (linkX is FhirUri) {
           fields.add(linkX!);

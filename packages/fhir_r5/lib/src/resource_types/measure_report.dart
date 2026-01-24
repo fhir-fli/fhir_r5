@@ -1181,9 +1181,13 @@ class MeasureReportGroup extends BackboneElement {
           fields.addAll(population!);
         }
       case 'measureScore':
-        fields.add(measureScoreX!);
+        if (measureScoreX != null) {
+          fields.add(measureScoreX!);
+        }
       case 'measureScoreX':
-        fields.add(measureScoreX!);
+        if (measureScoreX != null) {
+          fields.add(measureScoreX!);
+        }
       case 'measureScoreQuantity':
         if (measureScoreX is Quantity) {
           fields.add(measureScoreX!);
@@ -2394,9 +2398,13 @@ class MeasureReportStratum extends BackboneElement {
           fields.addAll(modifierExtension!);
         }
       case 'value':
-        fields.add(valueX!);
+        if (valueX != null) {
+          fields.add(valueX!);
+        }
       case 'valueX':
-        fields.add(valueX!);
+        if (valueX != null) {
+          fields.add(valueX!);
+        }
       case 'valueCodeableConcept':
         if (valueX is CodeableConcept) {
           fields.add(valueX!);
@@ -2426,9 +2434,13 @@ class MeasureReportStratum extends BackboneElement {
           fields.addAll(population!);
         }
       case 'measureScore':
-        fields.add(measureScoreX!);
+        if (measureScoreX != null) {
+          fields.add(measureScoreX!);
+        }
       case 'measureScoreX':
-        fields.add(measureScoreX!);
+        if (measureScoreX != null) {
+          fields.add(measureScoreX!);
+        }
       case 'measureScoreQuantity':
         if (measureScoreX is Quantity) {
           fields.add(measureScoreX!);

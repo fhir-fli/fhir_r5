@@ -642,9 +642,13 @@ class TestPlan extends CanonicalResource {
           fields.add(version!);
         }
       case 'versionAlgorithm':
-        fields.add(versionAlgorithmX!);
+        if (versionAlgorithmX != null) {
+          fields.add(versionAlgorithmX!);
+        }
       case 'versionAlgorithmX':
-        fields.add(versionAlgorithmX!);
+        if (versionAlgorithmX != null) {
+          fields.add(versionAlgorithmX!);
+        }
       case 'versionAlgorithmString':
         if (versionAlgorithmX is FhirString) {
           fields.add(versionAlgorithmX!);
@@ -2533,9 +2537,13 @@ class TestPlanScript extends BackboneElement {
           fields.add(language!);
         }
       case 'source':
-        fields.add(sourceX!);
+        if (sourceX != null) {
+          fields.add(sourceX!);
+        }
       case 'sourceX':
-        fields.add(sourceX!);
+        if (sourceX != null) {
+          fields.add(sourceX!);
+        }
       case 'sourceString':
         if (sourceX is FhirString) {
           fields.add(sourceX!);
@@ -2877,9 +2885,13 @@ class TestPlanTestData extends BackboneElement {
           fields.add(content!);
         }
       case 'source':
-        fields.add(sourceX!);
+        if (sourceX != null) {
+          fields.add(sourceX!);
+        }
       case 'sourceX':
-        fields.add(sourceX!);
+        if (sourceX != null) {
+          fields.add(sourceX!);
+        }
       case 'sourceString':
         if (sourceX is FhirString) {
           fields.add(sourceX!);

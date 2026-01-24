@@ -88,7 +88,7 @@ final testConceptMap1 = ConceptMap.fromJson({
             {
               "code": "error",
               "equivalence": "equivalent",
-              "relationship": "related-to"
+              "relationship": "related-to",
             },
           ],
         },
@@ -98,7 +98,7 @@ final testConceptMap1 = ConceptMap.fromJson({
             {
               "code": "planned",
               "equivalence": "equivalent",
-              "relationship": "related-to"
+              "relationship": "related-to",
             },
           ],
         },
@@ -108,7 +108,7 @@ final testConceptMap1 = ConceptMap.fromJson({
             {
               "code": "draft",
               "equivalence": "equivalent",
-              "relationship": "related-to"
+              "relationship": "related-to",
             },
           ],
         },
@@ -118,7 +118,7 @@ final testConceptMap1 = ConceptMap.fromJson({
             {
               "code": "active",
               "equivalence": "equivalent",
-              "relationship": "related-to"
+              "relationship": "related-to",
             },
           ],
         },
@@ -128,7 +128,7 @@ final testConceptMap1 = ConceptMap.fromJson({
             {
               "code": "suspended",
               "equivalence": "equivalent",
-              "relationship": "related-to"
+              "relationship": "related-to",
             },
           ],
         },
@@ -138,7 +138,7 @@ final testConceptMap1 = ConceptMap.fromJson({
             {
               "code": "complete",
               "equivalence": "equivalent",
-              "relationship": "related-to"
+              "relationship": "related-to",
             },
           ],
         },
@@ -148,7 +148,7 @@ final testConceptMap1 = ConceptMap.fromJson({
             {
               "code": "abandoned",
               "equivalence": "equivalent",
-              "relationship": "related-to"
+              "relationship": "related-to",
             },
           ],
         }
