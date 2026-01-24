@@ -81,7 +81,7 @@ class StructureMapParser {
 
   /// Main entry point for parsing a StructureMap from Map file
   StructureMap parse(String text, String srcName) {
-    final lexer = FHIRLexer(source: text, name: srcName);
+    final lexer = FHIRLexer(source: text, name: srcName, metadataFormat: true);
 
     try {
       if (lexer.done()) throw lexer.error('Map Input cannot be empty');
@@ -94,13 +94,12 @@ class StructureMapParser {
         lexer.token('map');
         result.url = FhirUriBuilder(lexer.readConstant('url'));
         lexer.token('=');
-        result
-          ..name = FhirStringBuilder(lexer.readConstant('name'))
-          ..description = FhirMarkdownBuilder(lexer.getAllComments())
-          ..status = PublicationStatusBuilder.draft;
+        result.name = FhirStringBuilder(lexer.readConstant('name'));
+        result.status = PublicationStatusBuilder.draft;
       }
 
-      // New format: /// url = "value"
+      // New format metadata: /// url = "value"
+      // Must be processed BEFORE consuming comments
       while (lexer.hasToken('///')) {
         lexer.next();
         final fid = lexer.takeDottedToken();
