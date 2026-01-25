@@ -1,11 +1,8 @@
 # fhir_r5
 
-## [0.4.4]
+## [0.4.1]
 
 * Fixed getChildrenByName null checks for polymorphic fields
-
-## [0.4.3]
-
 * Fixed issue about DateTimes not setting isUtc when timezone +00:00
 * Fixed issue about DateTime equalsDeep with different timezones [Issue 26](https://github.com/fhir-fli/fhir_r5/issues/26)
 * Added more flexible fromJson to primitives. NOTE, the OUTPUT is still what is required by FHIR to make it compliant with servers. Refernce [PR 22](https://github.com/fhir-fli/fhir_r5/pull/22) by [bartekwk2](https://github.com/bartekwk2)
@@ -17,13 +14,7 @@
 * Fixed construction of String for FhirDateTimeBase where year is less than 4 digits
 * Fixed plus and subtract for FhirTime
 * Fixed deepEquals in Primitives
-
-## [0.4.2]
-
 * Fixed bug not allowing DateTime to be passed to FhirDate
-
-## [0.4.1]
-
 * added back getChildrenByType to PrimitiveType
 
 ## [0.4.0]
