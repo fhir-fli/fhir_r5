@@ -19,9 +19,9 @@ environment:
 dependencies:
   collection: ^1.19.1
   crypto: ^3.0.7
-  # fhir_r5: ^0.4.3
-  fhir_r5:
-    path: ../fhir_r5
+  fhir_r5: ^0.4.1
+  # fhir_r5:
+  #   path: ../fhir_r5
   hive_ce: ^2.19.1
   rxdart: ^0.28.0
 
