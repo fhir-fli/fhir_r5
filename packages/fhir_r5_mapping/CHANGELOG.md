@@ -1,13 +1,5 @@
 # fhir_r5_mapping
 
-## [0.4.2]
-
-* Updated dependencies
-
-## [0.4.1]
-
-* Dependencies updated
-
 ## [0.4.0]
 
 * First time publishing this. 
