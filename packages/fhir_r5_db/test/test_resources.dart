@@ -75,8 +75,8 @@ final testConceptMap1 = ConceptMap.fromJson({
     }
   ],
   "description": "Canonical Mapping for \"The status of the episode of care.\"",
-  "sourceCanonical": "http://hl7.org/fhir/ValueSet/episode-of-care-status",
-  "targetCanonical": "http://hl7.org/fhir/ValueSet/resource-status",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/episode-of-care-status",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/resource-status",
   "group": [
     {
       "source": "http://hl7.org/fhir/episode-of-care-status",
@@ -85,71 +85,43 @@ final testConceptMap1 = ConceptMap.fromJson({
         {
           "code": "entered-in-error",
           "target": [
-            {
-              "code": "error",
-              "equivalence": "equivalent",
-              "relationship": "related-to",
-            },
+            {"code": "error", "relationship": "equivalent"},
           ],
         },
         {
           "code": "planned",
           "target": [
-            {
-              "code": "planned",
-              "equivalence": "equivalent",
-              "relationship": "related-to",
-            },
+            {"code": "planned", "relationship": "equivalent"},
           ],
         },
         {
           "code": "waitlist",
           "target": [
-            {
-              "code": "draft",
-              "equivalence": "equivalent",
-              "relationship": "related-to",
-            },
+            {"code": "draft", "relationship": "equivalent"},
           ],
         },
         {
           "code": "active",
           "target": [
-            {
-              "code": "active",
-              "equivalence": "equivalent",
-              "relationship": "related-to",
-            },
+            {"code": "active", "relationship": "equivalent"},
           ],
         },
         {
           "code": "onhold",
           "target": [
-            {
-              "code": "suspended",
-              "equivalence": "equivalent",
-              "relationship": "related-to",
-            },
+            {"code": "suspended", "relationship": "equivalent"},
           ],
         },
         {
           "code": "finished",
           "target": [
-            {
-              "code": "complete",
-              "equivalence": "equivalent",
-              "relationship": "related-to",
-            },
+            {"code": "complete", "relationship": "equivalent"},
           ],
         },
         {
           "code": "cancelled",
           "target": [
-            {
-              "code": "abandoned",
-              "equivalence": "equivalent",
-              "relationship": "related-to",
-            },
+            {"code": "abandoned", "relationship": "equivalent"},
           ],
         }
       ],
