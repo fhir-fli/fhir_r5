@@ -12,6 +12,10 @@ dependency_overrides:
     path: packages/fhir_r5_at_rest
   fhir_r5_path:
     path: packages/fhir_r5_path
+  fhir_r5_auth:
+    path: packages/fhir_r5_auth
+  fhir_r5_cql:
+    path: packages/fhir_r5_cql
 
 dev_dependencies:
   melos: ^7.3.0
