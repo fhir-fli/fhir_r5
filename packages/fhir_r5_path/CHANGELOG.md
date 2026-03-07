@@ -1,5 +1,10 @@
 # fhir_r5_path
 
+## [0.5.0]
+
+* Unified versioning across all fhir_r5 packages
+* Updated dependencies
+
 ## [0.4.0]
 
 * Updated dependencies

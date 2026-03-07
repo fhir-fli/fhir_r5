@@ -1,6 +1,6 @@
 name: fhir_r5_auth
 description: Secure authentication and authorization package for FHIR R5 applications implementing SMART on FHIR
-version: 0.4.0
+version: 0.5.0
 homepage: https://www.fhirfli.dev/
 repository: https://github.com/fhirfli/fhir_r5_auth
 issue_tracker: https://github.com/fhirfli/fhir_r5_auth/issues
@@ -24,7 +24,9 @@ dependencies:
   http: ^1.6.0
 
   # FHIR
-  fhir_r5: ^0.4.1
+  # fhir_r5: ^0.5.0
+  fhir_r5:
+    path: ../fhir_r5
 
   # Security & Storage
   flutter_secure_storage: ^10.0.0

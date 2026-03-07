@@ -1,5 +1,12 @@
 # fhir_r5_db
 
+## [0.5.0]
+
+* Unified versioning across all fhir_r5 packages
+* Updated dependencies
+* Migrated from Hive to SQLite/Drift
+* Added SQLCipher encryption support via sqlite3mc
+
 ## [0.4.1]
 
 * Updated dependencies
