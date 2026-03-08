@@ -22,8 +22,8 @@ import 'package:fhir_r5_cql/fhir_r5_cql.dart';
 ///
 /// Signature:
 ///
-/// as<T>(argument Any) T
-/// cast as<T>(argument Any) T
+/// `as<T>`(argument Any) T
+/// cast `as<T>`(argument Any) T
 /// Description:
 ///
 /// The as operator allows the result of an expression to be cast as a given

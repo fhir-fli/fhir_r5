@@ -12,7 +12,7 @@ import 'package:fhir_r5_cql/fhir_r5_cql.dart';
 /// is null, the operation is performed as though t
 /// Signature:
 ///
-/// except(left Interval<T>, right Interval<T>) Interval<T>
+/// except(left `Interval<T>`, right `Interval<T>`) `Interval<T>`
 /// Description:
 ///
 /// The except operator for intervals returns the set difference of two
@@ -31,7 +31,7 @@ import 'package:fhir_r5_cql/fhir_r5_cql.dart';
 ///
 /// Signature:
 ///
-/// except(left List<T>, right List<T>) List<T>
+/// except(left `List<T>`, right `List<T>`) `List<T>`
 /// Description:
 ///
 /// The except operator returns the set difference of two lists. More precisely,

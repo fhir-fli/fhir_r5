@@ -11,7 +11,7 @@ import 'package:fhir_r5_cql/fhir_r5_cql.dart';
 /// value using a constant offset such as UTC.
 /// Signature:
 ///
-/// maximum<T>() T
+/// `maximum<T>`() T
 /// Description:
 ///
 /// The maximum operator returns the maximum representable value for the given

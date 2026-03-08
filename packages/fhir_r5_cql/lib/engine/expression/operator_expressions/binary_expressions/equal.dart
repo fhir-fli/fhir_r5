@@ -10,7 +10,7 @@ import 'package:fhir_r5_cql/fhir_r5_cql.dart';
 /// If either argument is null, the result is null.
 ///
 /// Signature:
-/// =<T>(left T, right T) Boolean
+/// =`<T>`(left T, right T) Boolean
 /// Description:
 /// The equal (=) operator returns true if the arguments are equal; false if
 /// the arguments are known unequal, and null otherwise. Equality semantics are

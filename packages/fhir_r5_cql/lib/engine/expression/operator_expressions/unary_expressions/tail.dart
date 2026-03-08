@@ -6,7 +6,7 @@ import 'package:fhir_r5_cql/fhir_r5_cql.dart';
 /// If the source list is null, the result is null.
 ///
 /// Signature:
-///   Tail(argument List<T>) List<T>
+///   Tail(argument `List<T>`) `List<T>`
 ///
 /// Description:
 ///   The Tail operator returns the elements in the list starting at index 1

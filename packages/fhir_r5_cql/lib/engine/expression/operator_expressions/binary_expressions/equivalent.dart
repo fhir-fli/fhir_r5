@@ -12,7 +12,7 @@ import 'package:fhir_r5_cql/fhir_r5_cql.dart';
 /// If either argument is null, the result is null.
 /// Signature:
 ///
-/// ~<T>(left T, right T) Boolean
+/// ~`<T>`(left T, right T) Boolean
 /// Description:
 ///
 /// The equivalent (~) operator returns true if the arguments are equivalent in

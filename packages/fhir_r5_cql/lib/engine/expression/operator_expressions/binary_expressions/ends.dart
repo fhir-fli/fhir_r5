@@ -9,7 +9,7 @@ import 'package:fhir_r5_cql/fhir_r5_cql.dart';
 /// If either argument is null, the result is null.
 /// Signature:
 ///
-/// ends _precision_ (left Interval<T>, right Interval<T>) Boolean
+/// ends _precision_ (left `Interval<T>`, right `Interval<T>`) Boolean
 /// Description:
 ///
 /// The ends operator returns true if the first interval ends the second. More

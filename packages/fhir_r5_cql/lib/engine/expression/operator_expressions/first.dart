@@ -6,7 +6,7 @@ import 'package:fhir_r5_cql/fhir_r5_cql.dart';
 /// If the argument is null, the result is null.
 /// Signature:
 ///
-/// First(argument List<T>) T
+/// First(argument `List<T>`) T
 /// Description:
 ///
 /// The First operator returns the first element in a list. The operator is

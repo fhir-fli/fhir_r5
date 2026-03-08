@@ -4,7 +4,7 @@ import 'package:fhir_r5_cql/fhir_r5_cql.dart';
 /// If the argument is null, the result is null.
 /// Signature:
 ///
-/// flatten(argument List<List<T>>) List<T>
+/// flatten(argument List<`List<T>`>) `List<T>`
 /// Description:
 ///
 /// The flatten operator flattens a list of lists into a single list.
