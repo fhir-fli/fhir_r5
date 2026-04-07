@@ -94,8 +94,9 @@ class StructureMapParser {
         lexer.token('map');
         result.url = FhirUriBuilder(lexer.readConstant('url'));
         lexer.token('=');
-        result.name = FhirStringBuilder(lexer.readConstant('name'));
-        result.status = PublicationStatusBuilder.draft;
+        result
+          ..name = FhirStringBuilder(lexer.readConstant('name'))
+          ..status = PublicationStatusBuilder.draft;
       }
 
       // New format metadata: /// url = "value"
