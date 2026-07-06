@@ -1,3 +1,4 @@
+// ignore_for_file: deprecated_member_use_from_same_package
 import 'package:fhir_r5_path/fhir_r5_path.dart';
 import 'package:test/test.dart';
 
