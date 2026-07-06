@@ -15,7 +15,9 @@ void main() {
       expect(mr.toCqlSystemType(r5.FhirInteger(7)), isA<CqlInteger>());
       expect(mr.toCqlSystemType(r5.FhirString('hi')), isA<CqlString>());
       expect(
-          mr.toCqlSystemType(r5.FhirDecimal(1.5)), isA<CqlDecimal>());
+        mr.toCqlSystemType(r5.FhirDecimal(1.5)),
+        isA<CqlDecimal>(),
+      );
     });
 
     test('FHIR Coding → CQL Code', () {
@@ -40,7 +42,7 @@ void main() {
   group('R5ModelResolver.is_', () {
     test('recognizes FHIR + System types', () {
       expect(mr.is_(r5.FhirBoolean(true), 'boolean'), isTrue);
-      expect(mr.is_(r5.Coding(), 'Coding'), isTrue);
+      expect(mr.is_(const r5.Coding(), 'Coding'), isTrue);
       expect(mr.is_(CqlInteger(1), 'Integer'), isTrue);
       expect(mr.is_(r5.FhirBoolean(true), 'Coding'), isFalse);
     });
