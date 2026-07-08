@@ -77,7 +77,8 @@ class SearchIngredient extends SearchResource {
       throw ArgumentError('Modifier $modifier not allowed for quantity type');
     }
     final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}'
+        ? '$modifier$value|${system?.toString() ?? ''}'
+            '|${unit?.toString() ?? ''}'
         : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
     addParameterValue('strength_concentration_quantity', paramValue);
     return this;
@@ -96,7 +97,8 @@ class SearchIngredient extends SearchResource {
       throw ArgumentError('Modifier $modifier not allowed for quantity type');
     }
     final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}'
+        ? '$modifier$value|${system?.toString() ?? ''}'
+            '|${unit?.toString() ?? ''}'
         : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
     addParameterValue('strength_presentation_quantity', paramValue);
     return this;

@@ -41,6 +41,12 @@ class QuantitySearchParameters extends Table {
 
 /// Extension on [fhir.FhirBase] to extract quantity search parameters.
 extension QuantitySearchParametersExtension on fhir.FhirBase {
+  /// Builds the quantity search-index rows for this element.
+  ///
+  /// Extracts the quantity value together with its unit and system from this
+  /// element and returns the Drift companion rows that index them under the
+  /// given [resourceType]/[id] and [searchPath], so the resource can be located
+  /// by `quantity`-type FHIR search parameters.
   List<QuantitySearchParametersCompanion> toQuantitySearchParameter(
     String resourceType,
     String id,

@@ -142,9 +142,10 @@ void main() {
         final decoded = jsonDecode(jsonString) as List<dynamic>;
 
         expect(decoded, hasLength(1));
-        expect(decoded.first['op'], 'replace');
-        expect(decoded.first['path'], '/birthDate');
-        expect(decoded.first['value'], '1990-01-01');
+        final op = decoded.first as Map<String, dynamic>;
+        expect(op['op'], 'replace');
+        expect(op['path'], '/birthDate');
+        expect(op['value'], '1990-01-01');
       });
 
       test('empty operations produces empty JSON array', () {

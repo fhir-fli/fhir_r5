@@ -89,7 +89,8 @@ class SearchInvoice extends SearchResource {
       throw ArgumentError('Modifier $modifier not allowed for quantity type');
     }
     final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}'
+        ? '$modifier$value|${system?.toString() ?? ''}'
+            '|${unit?.toString() ?? ''}'
         : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
     addParameterValue('totalgross', paramValue);
     return this;
@@ -108,7 +109,8 @@ class SearchInvoice extends SearchResource {
       throw ArgumentError('Modifier $modifier not allowed for quantity type');
     }
     final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}'
+        ? '$modifier$value|${system?.toString() ?? ''}'
+            '|${unit?.toString() ?? ''}'
         : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
     addParameterValue('totalnet', paramValue);
     return this;

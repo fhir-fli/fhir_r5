@@ -1,5 +1,7 @@
 // ignore_for_file: public_member_api_docs
 
+import 'dart:async';
+
 import 'package:fhir_node/fhir_node.dart';
 import 'package:fhir_r5/fhir_r5.dart';
 import 'package:fhir_r5_path/fhir_r5_path.dart';
@@ -831,14 +833,16 @@ class WorkerContext implements IWorkerContext {
   }
 
   // Utility methods for loading resources
-  void loadStructureDefinition(StructureDefinition sd) {
+  Future<void> loadStructureDefinition(StructureDefinition sd) async {
     if (sd.name.valueString != null && sd.url?.valueString != null) {
-      resourceCache.saveCanonicalResource(sd);
+      await resourceCache.saveCanonicalResource(sd);
     }
   }
 
-  void loadStructureDefinitions(List<StructureDefinition> sds) {
-    sds.forEach(loadStructureDefinition);
+  Future<void> loadStructureDefinitions(List<StructureDefinition> sds) async {
+    for (final sd in sds) {
+      await loadStructureDefinition(sd);
+    }
   }
 
   Future<void> loadResource(CanonicalResource resource) async {
@@ -1162,7 +1166,7 @@ class WorkerContext implements IWorkerContext {
         }
       }
       cache = true;
-      addDependentResources(pin, vs);
+      unawaited(addDependentResources(pin, vs));
     }
 
     if (cache) {

@@ -176,7 +176,8 @@ class SearchResearchStudy extends SearchResource {
       throw ArgumentError('Modifier $modifier not allowed for number type');
     }
     final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}'
+        ? '$modifier$value|${system?.toString() ?? ''}'
+            '|${unit?.toString() ?? ''}'
         : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
     addParameterValue('recruitment_actual', paramValue);
     return this;
@@ -195,7 +196,8 @@ class SearchResearchStudy extends SearchResource {
       throw ArgumentError('Modifier $modifier not allowed for number type');
     }
     final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}'
+        ? '$modifier$value|${system?.toString() ?? ''}'
+            '|${unit?.toString() ?? ''}'
         : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
     addParameterValue('recruitment_target', paramValue);
     return this;

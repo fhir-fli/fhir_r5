@@ -35,6 +35,12 @@ class CompositeSearchParameters extends Table {
 
 /// Extension on [fhir.FhirBase] to extract composite search parameters.
 extension CompositeSearchParametersExtension on fhir.FhirBase {
+  /// Builds the composite search-index rows for this element.
+  ///
+  /// Returns the Drift companion rows that record this value under the given
+  /// [resourceType]/[id] and [searchPath] so the resource can be located by
+  /// `composite`-type FHIR search parameters (which combine several component
+  /// values into a single query).
   List<CompositeSearchParametersCompanion> toCompositeSearchParameter(
     String resourceType,
     String id,

@@ -49,7 +49,8 @@ class SearchCondition extends SearchResource {
       throw ArgumentError('Modifier $modifier not allowed for quantity type');
     }
     final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}'
+        ? '$modifier$value|${system?.toString() ?? ''}'
+            '|${unit?.toString() ?? ''}'
         : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
     addParameterValue('abatement_age', paramValue);
     return this;
@@ -151,7 +152,8 @@ class SearchCondition extends SearchResource {
       throw ArgumentError('Modifier $modifier not allowed for quantity type');
     }
     final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}'
+        ? '$modifier$value|${system?.toString() ?? ''}'
+            '|${unit?.toString() ?? ''}'
         : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
     addParameterValue('onset_age', paramValue);
     return this;

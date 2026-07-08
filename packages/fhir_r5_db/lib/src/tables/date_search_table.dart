@@ -34,6 +34,12 @@ class DateSearchParameters extends Table {
 
 /// Extension on [fhir.FhirBase] to extract date search parameters.
 extension DateSearchParametersExtension on fhir.FhirBase {
+  /// Builds the date search-index rows for this element.
+  ///
+  /// Extracts the date/time value(s) from this element and returns the Drift
+  /// companion rows that index them under the given [resourceType]/[id] and
+  /// [searchPath], so the resource can be located by `date`-type FHIR search
+  /// parameters.
   List<DateSearchParametersCompanion> toDateSearchParameter(
     String resourceType,
     String id,

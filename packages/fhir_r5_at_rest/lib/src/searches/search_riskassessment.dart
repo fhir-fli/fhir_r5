@@ -61,7 +61,8 @@ class SearchRiskAssessment extends SearchResource {
       throw ArgumentError('Modifier $modifier not allowed for number type');
     }
     final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}'
+        ? '$modifier$value|${system?.toString() ?? ''}'
+            '|${unit?.toString() ?? ''}'
         : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
     addParameterValue('probability', paramValue);
     return this;
