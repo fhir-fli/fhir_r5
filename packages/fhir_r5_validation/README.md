@@ -6,9 +6,9 @@ A comprehensive validation library for FHIR R5 resources. This package validates
 
 ```yaml
 dependencies:
-  fhir_r5_validation: ^0.4.0
-  fhir_r5: ^0.4.3
-  fhir_r5_path: ^0.4.4
+  fhir_r5_validation: ^0.6.0
+  fhir_r5: ^0.6.0
+  fhir_r5_path: ^0.6.0
 ```
 
 ## Features
@@ -182,10 +182,10 @@ The package includes specialized validation for QuestionnaireResponse resources:
 ```dart
 import 'package:fhir_r5_validation/fhir_r5_validation.dart';
 
-// Validate a QuestionnaireResponse against its Questionnaire
+// Validate a QuestionnaireResponse against its referenced Questionnaire.
+// The Questionnaire is resolved through the provided ResourceCache.
 final results = await validateQuestionnaireResponse(
   questionnaireResponse: questionnaireResponse,
-  questionnaire: questionnaire,
   resourceCache: resourceCache,
 );
 ```
@@ -199,7 +199,7 @@ try {
   final results = await validator.validateFhirResource(
     structureToValidate: patient,
   );
-
+  
   if (results.hasErrors) {
     // Process errors
     for (final error in results.results.where((r) => r.severity == Severity.error)) {
@@ -223,7 +223,7 @@ try {
 The validation package integrates seamlessly with other FHIR-FLI packages:
 
 - **fhir_r5**: Uses FHIR resource models
-- **fhir_r5_path**: Uses FHIRPath for invariant validation
+- **fhir_r5_path**: Uses the model-independent FHIRPath engine to evaluate invariants (constraints)
 - **fhir_r5_db**: Can validate resources before saving to the database
 - **fhir_r5_at_rest**: Can validate resources before sending to a FHIR server
 
