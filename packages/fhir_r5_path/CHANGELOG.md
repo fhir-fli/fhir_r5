@@ -1,5 +1,12 @@
 # fhir_r5_path
 
+## [0.6.0]
+
+- Rebuilt as a thin FHIR R5 binding over the model-independent [fhirpath](https://pub.dev/packages/fhirpath) engine (fhirpath ^0.6.0): version-specific model resolution lives here, the engine logic in fhirpath
+- Full ported FHIRPath conformance suite green
+- walkFhirPath/parseFhirPath/executeFhirPath remain available but deprecated — use FHIRPathEngine.create(...).parse()/evaluate()
+- README and example rewritten around the FHIRPathEngine API; analyzer clean
+
 ## [0.5.1]
 
 - Improved documentation and README files
