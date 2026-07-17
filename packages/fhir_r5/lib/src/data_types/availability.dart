@@ -271,25 +271,25 @@ class Availability extends DataType
     }
     if (identical(this, o)) return true;
     if (runtimeType != o.runtimeType) return false;
-    if (!equalsDeepWithNull(
+    if (!FhirBase.equalsDeepWithNull(
       id,
       o.id,
     )) {
       return false;
     }
-    if (!listEquals<FhirExtension>(
+    if (!FhirBase.listEquals<FhirExtension>(
       extension_,
       o.extension_,
     )) {
       return false;
     }
-    if (!listEquals<AvailabilityAvailableTime>(
+    if (!FhirBase.listEquals<AvailabilityAvailableTime>(
       availableTime,
       o.availableTime,
     )) {
       return false;
     }
-    if (!listEquals<AvailabilityNotAvailableTime>(
+    if (!FhirBase.listEquals<AvailabilityNotAvailableTime>(
       notAvailableTime,
       o.notAvailableTime,
     )) {
@@ -589,37 +589,37 @@ class AvailabilityAvailableTime extends Element {
     }
     if (identical(this, o)) return true;
     if (runtimeType != o.runtimeType) return false;
-    if (!equalsDeepWithNull(
+    if (!FhirBase.equalsDeepWithNull(
       id,
       o.id,
     )) {
       return false;
     }
-    if (!listEquals<FhirExtension>(
+    if (!FhirBase.listEquals<FhirExtension>(
       extension_,
       o.extension_,
     )) {
       return false;
     }
-    if (!listEquals<DaysOfWeek>(
+    if (!FhirBase.listEquals<DaysOfWeek>(
       daysOfWeek,
       o.daysOfWeek,
     )) {
       return false;
     }
-    if (!equalsDeepWithNull(
+    if (!FhirBase.equalsDeepWithNull(
       allDay,
       o.allDay,
     )) {
       return false;
     }
-    if (!equalsDeepWithNull(
+    if (!FhirBase.equalsDeepWithNull(
       availableStartTime,
       o.availableStartTime,
     )) {
       return false;
     }
-    if (!equalsDeepWithNull(
+    if (!FhirBase.equalsDeepWithNull(
       availableEndTime,
       o.availableEndTime,
     )) {
@@ -882,25 +882,25 @@ class AvailabilityNotAvailableTime extends Element {
     }
     if (identical(this, o)) return true;
     if (runtimeType != o.runtimeType) return false;
-    if (!equalsDeepWithNull(
+    if (!FhirBase.equalsDeepWithNull(
       id,
       o.id,
     )) {
       return false;
     }
-    if (!listEquals<FhirExtension>(
+    if (!FhirBase.listEquals<FhirExtension>(
       extension_,
       o.extension_,
     )) {
       return false;
     }
-    if (!equalsDeepWithNull(
+    if (!FhirBase.equalsDeepWithNull(
       description,
       o.description,
     )) {
       return false;
     }
-    if (!equalsDeepWithNull(
+    if (!FhirBase.equalsDeepWithNull(
       during,
       o.during,
     )) {
