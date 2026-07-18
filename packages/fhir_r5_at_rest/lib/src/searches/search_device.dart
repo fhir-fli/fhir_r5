@@ -18,7 +18,7 @@ class SearchDevice extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('biological_source_event', paramValue);
+    addParameterValue('biological-source-event', paramValue);
     return this;
   }
 
@@ -47,7 +47,7 @@ class SearchDevice extends SearchResource {
     }
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('device_name', paramValue);
+    addParameterValue('device-name', paramValue);
     return this;
   }
 
@@ -59,7 +59,7 @@ class SearchDevice extends SearchResource {
   }) {
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('expiration_date', paramValue);
+    addParameterValue('expiration-date', paramValue);
     return this;
   }
 
@@ -88,7 +88,7 @@ class SearchDevice extends SearchResource {
     }
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('lot_number', paramValue);
+    addParameterValue('lot-number', paramValue);
     return this;
   }
 
@@ -100,7 +100,7 @@ class SearchDevice extends SearchResource {
   }) {
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('manufacture_date', paramValue);
+    addParameterValue('manufacture-date', paramValue);
     return this;
   }
 
@@ -145,7 +145,7 @@ class SearchDevice extends SearchResource {
     }
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('serial_number', paramValue);
+    addParameterValue('serial-number', paramValue);
     return this;
   }
 
@@ -202,7 +202,7 @@ class SearchDevice extends SearchResource {
     }
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('udi_carrier', paramValue);
+    addParameterValue('udi-carrier', paramValue);
     return this;
   }
 
@@ -217,7 +217,7 @@ class SearchDevice extends SearchResource {
     }
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('udi_di', paramValue);
+    addParameterValue('udi-di', paramValue);
     return this;
   }
 

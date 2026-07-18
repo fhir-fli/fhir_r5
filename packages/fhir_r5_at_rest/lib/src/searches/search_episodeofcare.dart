@@ -58,7 +58,7 @@ class SearchEpisodeOfCare extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('diagnosis_code', paramValue);
+    addParameterValue('diagnosis-code', paramValue);
     return this;
   }
 
@@ -72,7 +72,7 @@ class SearchEpisodeOfCare extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('reason_code', paramValue);
+    addParameterValue('reason-code', paramValue);
     return this;
   }
 

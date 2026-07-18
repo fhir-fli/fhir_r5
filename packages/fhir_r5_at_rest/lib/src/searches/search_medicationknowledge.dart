@@ -60,7 +60,7 @@ class SearchMedicationKnowledge extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('classification_type', paramValue);
+    addParameterValue('classification-type', paramValue);
     return this;
   }
 
@@ -102,7 +102,7 @@ class SearchMedicationKnowledge extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('ingredient_code', paramValue);
+    addParameterValue('ingredient-code', paramValue);
     return this;
   }
 
@@ -116,7 +116,7 @@ class SearchMedicationKnowledge extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('monitoring_program_name', paramValue);
+    addParameterValue('monitoring-program-name', paramValue);
     return this;
   }
 
@@ -130,7 +130,7 @@ class SearchMedicationKnowledge extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('monitoring_program_type', paramValue);
+    addParameterValue('monitoring-program-type', paramValue);
     return this;
   }
 
@@ -144,7 +144,7 @@ class SearchMedicationKnowledge extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('monograph_type', paramValue);
+    addParameterValue('monograph-type', paramValue);
     return this;
   }
 
@@ -160,11 +160,12 @@ class SearchMedicationKnowledge extends SearchResource {
         !['gt', 'lt', 'ge', 'le', 'ap'].contains(modifier.toString())) {
       throw ArgumentError('Modifier $modifier not allowed for quantity type');
     }
-    final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}'
-            '|${unit?.toString() ?? ''}'
-        : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
-    addParameterValue('packaging_cost', paramValue);
+    final paramValue = modifier != null
+        ? '$modifier$value|${system?.toString() ?? ''}|'
+            '${unit?.toString() ?? ''}'
+        : '$value|${system?.toString() ?? ''}|'
+            '${unit?.toString() ?? ''}';
+    addParameterValue('packaging-cost', paramValue);
     return this;
   }
 
@@ -178,7 +179,7 @@ class SearchMedicationKnowledge extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('packaging_cost_concept', paramValue);
+    addParameterValue('packaging-cost-concept', paramValue);
     return this;
   }
 
@@ -192,7 +193,7 @@ class SearchMedicationKnowledge extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('product_type', paramValue);
+    addParameterValue('product-type', paramValue);
     return this;
   }
 
@@ -206,7 +207,7 @@ class SearchMedicationKnowledge extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('source_cost', paramValue);
+    addParameterValue('source-cost', paramValue);
     return this;
   }
 }

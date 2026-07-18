@@ -72,7 +72,7 @@ class SearchObservation extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('combo_code', paramValue);
+    addParameterValue('combo-code', paramValue);
     return this;
   }
 
@@ -86,7 +86,7 @@ class SearchObservation extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('combo_data_absent_reason', paramValue);
+    addParameterValue('combo-data-absent-reason', paramValue);
     return this;
   }
 
@@ -100,7 +100,7 @@ class SearchObservation extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('combo_value_concept', paramValue);
+    addParameterValue('combo-value-concept', paramValue);
     return this;
   }
 
@@ -116,11 +116,12 @@ class SearchObservation extends SearchResource {
         !['gt', 'lt', 'ge', 'le', 'ap'].contains(modifier.toString())) {
       throw ArgumentError('Modifier $modifier not allowed for quantity type');
     }
-    final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}'
-            '|${unit?.toString() ?? ''}'
-        : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
-    addParameterValue('combo_value_quantity', paramValue);
+    final paramValue = modifier != null
+        ? '$modifier$value|${system?.toString() ?? ''}|'
+            '${unit?.toString() ?? ''}'
+        : '$value|${system?.toString() ?? ''}|'
+            '${unit?.toString() ?? ''}';
+    addParameterValue('combo-value-quantity', paramValue);
     return this;
   }
 
@@ -134,7 +135,7 @@ class SearchObservation extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('component_code', paramValue);
+    addParameterValue('component-code', paramValue);
     return this;
   }
 
@@ -148,7 +149,7 @@ class SearchObservation extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('component_data_absent_reason', paramValue);
+    addParameterValue('component-data-absent-reason', paramValue);
     return this;
   }
 
@@ -160,7 +161,7 @@ class SearchObservation extends SearchResource {
   }) {
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('component_value_canonical', paramValue);
+    addParameterValue('component-value-canonical', paramValue);
     return this;
   }
 
@@ -174,7 +175,7 @@ class SearchObservation extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('component_value_concept', paramValue);
+    addParameterValue('component-value-concept', paramValue);
     return this;
   }
 
@@ -190,11 +191,12 @@ class SearchObservation extends SearchResource {
         !['gt', 'lt', 'ge', 'le', 'ap'].contains(modifier.toString())) {
       throw ArgumentError('Modifier $modifier not allowed for quantity type');
     }
-    final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}'
-            '|${unit?.toString() ?? ''}'
-        : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
-    addParameterValue('component_value_quantity', paramValue);
+    final paramValue = modifier != null
+        ? '$modifier$value|${system?.toString() ?? ''}|'
+            '${unit?.toString() ?? ''}'
+        : '$value|${system?.toString() ?? ''}|'
+            '${unit?.toString() ?? ''}';
+    addParameterValue('component-value-quantity', paramValue);
     return this;
   }
 
@@ -208,7 +210,7 @@ class SearchObservation extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('data_absent_reason', paramValue);
+    addParameterValue('data-absent-reason', paramValue);
     return this;
   }
 
@@ -248,7 +250,7 @@ class SearchObservation extends SearchResource {
   }) {
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('value_canonical', paramValue);
+    addParameterValue('value-canonical', paramValue);
     return this;
   }
 
@@ -262,7 +264,7 @@ class SearchObservation extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('value_concept', paramValue);
+    addParameterValue('value-concept', paramValue);
     return this;
   }
 
@@ -274,7 +276,7 @@ class SearchObservation extends SearchResource {
   }) {
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('value_date', paramValue);
+    addParameterValue('value-date', paramValue);
     return this;
   }
 
@@ -289,7 +291,7 @@ class SearchObservation extends SearchResource {
     }
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('value_markdown', paramValue);
+    addParameterValue('value-markdown', paramValue);
     return this;
   }
 
@@ -305,11 +307,12 @@ class SearchObservation extends SearchResource {
         !['gt', 'lt', 'ge', 'le', 'ap'].contains(modifier.toString())) {
       throw ArgumentError('Modifier $modifier not allowed for quantity type');
     }
-    final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}'
-            '|${unit?.toString() ?? ''}'
-        : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
-    addParameterValue('value_quantity', paramValue);
+    final paramValue = modifier != null
+        ? '$modifier$value|${system?.toString() ?? ''}|'
+            '${unit?.toString() ?? ''}'
+        : '$value|${system?.toString() ?? ''}|'
+            '${unit?.toString() ?? ''}';
+    addParameterValue('value-quantity', paramValue);
     return this;
   }
 }

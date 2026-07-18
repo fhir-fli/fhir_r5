@@ -61,7 +61,7 @@ class SearchMessageHeader extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('response_id', paramValue);
+    addParameterValue('response-id', paramValue);
     return this;
   }
 

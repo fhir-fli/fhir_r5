@@ -72,7 +72,7 @@ class SearchComposition extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('event_code', paramValue);
+    addParameterValue('event-code', paramValue);
     return this;
   }
 

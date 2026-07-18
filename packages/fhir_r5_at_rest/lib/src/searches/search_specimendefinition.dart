@@ -101,7 +101,7 @@ class SearchSpecimenDefinition extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('is_derived', paramValue);
+    addParameterValue('is-derived', paramValue);
     return this;
   }
 
@@ -129,7 +129,7 @@ class SearchSpecimenDefinition extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('type_tested', paramValue);
+    addParameterValue('type-tested', paramValue);
     return this;
   }
 }

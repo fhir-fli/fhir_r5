@@ -32,7 +32,7 @@ class SearchImagingStudy extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('body_site', paramValue);
+    addParameterValue('body-site', paramValue);
     return this;
   }
 
@@ -46,7 +46,7 @@ class SearchImagingStudy extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('dicom_class', paramValue);
+    addParameterValue('dicom-class', paramValue);
     return this;
   }
 

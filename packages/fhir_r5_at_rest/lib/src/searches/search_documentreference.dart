@@ -127,7 +127,7 @@ class SearchDocumentReference extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('doc_status', paramValue);
+    addParameterValue('doc-status', paramValue);
     return this;
   }
 
@@ -141,7 +141,7 @@ class SearchDocumentReference extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('event_code', paramValue);
+    addParameterValue('event-code', paramValue);
     return this;
   }
 
@@ -169,7 +169,7 @@ class SearchDocumentReference extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('format_code', paramValue);
+    addParameterValue('format-code', paramValue);
     return this;
   }
 
@@ -181,7 +181,7 @@ class SearchDocumentReference extends SearchResource {
   }) {
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('format_uri', paramValue);
+    addParameterValue('format-uri', paramValue);
     return this;
   }
 
@@ -262,7 +262,7 @@ class SearchDocumentReference extends SearchResource {
     final paramValue = system != null
         ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
         : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('security_label', paramValue);
+    addParameterValue('security-label', paramValue);
     return this;
   }
 

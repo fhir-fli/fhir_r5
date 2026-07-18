@@ -19,7 +19,7 @@ class SearchDeviceDefinition extends SearchResource {
     }
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('device_name', paramValue);
+    addParameterValue('device-name', paramValue);
     return this;
   }
 
