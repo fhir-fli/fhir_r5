@@ -13,11 +13,8 @@ class SearchCarePlan extends SearchResource {
   SearchCarePlan identifier(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('identifier', paramValue);
     return this;
   }
@@ -39,24 +36,16 @@ class SearchCarePlan extends SearchResource {
   SearchCarePlan category(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('category', paramValue);
     return this;
   }
 
   /// a uri search for [instantiatesUri] in the resource
   /// [CarePlan]
-  SearchCarePlan instantiatesUri(
-    FhirUri value, {
-    SearchModifier? modifier,
-  }) {
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('instantiates-uri', paramValue);
+  SearchCarePlan instantiatesUri(FhirUri value) {
+    addParameterValue('instantiates-uri', value.toString());
     return this;
   }
 
@@ -65,11 +54,8 @@ class SearchCarePlan extends SearchResource {
   SearchCarePlan intent(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('intent', paramValue);
     return this;
   }
@@ -79,11 +65,8 @@ class SearchCarePlan extends SearchResource {
   SearchCarePlan status(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('status', paramValue);
     return this;
   }

@@ -13,11 +13,8 @@ class SearchObservation extends SearchResource {
   SearchObservation identifier(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('identifier', paramValue);
     return this;
   }
@@ -27,11 +24,8 @@ class SearchObservation extends SearchResource {
   SearchObservation code(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('code', paramValue);
     return this;
   }
@@ -53,11 +47,8 @@ class SearchObservation extends SearchResource {
   SearchObservation category(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('category', paramValue);
     return this;
   }
@@ -67,11 +58,8 @@ class SearchObservation extends SearchResource {
   SearchObservation comboCode(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('combo-code', paramValue);
     return this;
   }
@@ -81,11 +69,8 @@ class SearchObservation extends SearchResource {
   SearchObservation comboDataAbsentReason(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('combo-data-absent-reason', paramValue);
     return this;
   }
@@ -95,11 +80,8 @@ class SearchObservation extends SearchResource {
   SearchObservation comboValueConcept(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('combo-value-concept', paramValue);
     return this;
   }
@@ -112,10 +94,6 @@ class SearchObservation extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    if (modifier != null &&
-        !['gt', 'lt', 'ge', 'le', 'ap'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for quantity type');
-    }
     final paramValue = modifier != null
         ? '$modifier$value|${system?.toString() ?? ''}|'
             '${unit?.toString() ?? ''}'
@@ -130,11 +108,8 @@ class SearchObservation extends SearchResource {
   SearchObservation componentCode(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('component-code', paramValue);
     return this;
   }
@@ -144,24 +119,16 @@ class SearchObservation extends SearchResource {
   SearchObservation componentDataAbsentReason(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('component-data-absent-reason', paramValue);
     return this;
   }
 
   /// a uri search for [componentValueCanonical] in the resource
   /// [Observation]
-  SearchObservation componentValueCanonical(
-    FhirUri value, {
-    SearchModifier? modifier,
-  }) {
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('component-value-canonical', paramValue);
+  SearchObservation componentValueCanonical(FhirUri value) {
+    addParameterValue('component-value-canonical', value.toString());
     return this;
   }
 
@@ -170,11 +137,8 @@ class SearchObservation extends SearchResource {
   SearchObservation componentValueConcept(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('component-value-concept', paramValue);
     return this;
   }
@@ -187,10 +151,6 @@ class SearchObservation extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    if (modifier != null &&
-        !['gt', 'lt', 'ge', 'le', 'ap'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for quantity type');
-    }
     final paramValue = modifier != null
         ? '$modifier$value|${system?.toString() ?? ''}|'
             '${unit?.toString() ?? ''}'
@@ -205,11 +165,8 @@ class SearchObservation extends SearchResource {
   SearchObservation dataAbsentReason(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('data-absent-reason', paramValue);
     return this;
   }
@@ -219,11 +176,8 @@ class SearchObservation extends SearchResource {
   SearchObservation method(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('method', paramValue);
     return this;
   }
@@ -233,24 +187,16 @@ class SearchObservation extends SearchResource {
   SearchObservation status(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('status', paramValue);
     return this;
   }
 
   /// a uri search for [valueCanonical] in the resource
   /// [Observation]
-  SearchObservation valueCanonical(
-    FhirUri value, {
-    SearchModifier? modifier,
-  }) {
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('value-canonical', paramValue);
+  SearchObservation valueCanonical(FhirUri value) {
+    addParameterValue('value-canonical', value.toString());
     return this;
   }
 
@@ -259,11 +205,8 @@ class SearchObservation extends SearchResource {
   SearchObservation valueConcept(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('value-concept', paramValue);
     return this;
   }
@@ -282,16 +225,8 @@ class SearchObservation extends SearchResource {
 
   /// a string search for [valueMarkdown] in the resource
   /// [Observation]
-  SearchObservation valueMarkdown(
-    FhirString value, {
-    SearchModifier? modifier,
-  }) {
-    if (modifier != null && !['eq', 'ne'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for string type');
-    }
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('value-markdown', paramValue);
+  SearchObservation valueMarkdown(FhirString value) {
+    addParameterValue('value-markdown', value.toString());
     return this;
   }
 
@@ -303,10 +238,6 @@ class SearchObservation extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    if (modifier != null &&
-        !['gt', 'lt', 'ge', 'le', 'ap'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for quantity type');
-    }
     final paramValue = modifier != null
         ? '$modifier$value|${system?.toString() ?? ''}|'
             '${unit?.toString() ?? ''}'

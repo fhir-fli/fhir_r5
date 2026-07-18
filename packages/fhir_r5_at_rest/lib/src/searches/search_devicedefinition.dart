@@ -10,16 +10,8 @@ import 'package:fhir_r5_at_rest/fhir_r5_at_rest.dart';
 class SearchDeviceDefinition extends SearchResource {
   /// a string search for [deviceName] in the resource
   /// [DeviceDefinition]
-  SearchDeviceDefinition deviceName(
-    FhirString value, {
-    SearchModifier? modifier,
-  }) {
-    if (modifier != null && !['eq', 'ne'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for string type');
-    }
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('device-name', paramValue);
+  SearchDeviceDefinition deviceName(FhirString value) {
+    addParameterValue('device-name', value.toString());
     return this;
   }
 
@@ -28,11 +20,8 @@ class SearchDeviceDefinition extends SearchResource {
   SearchDeviceDefinition identifier(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('identifier', paramValue);
     return this;
   }
@@ -42,11 +31,8 @@ class SearchDeviceDefinition extends SearchResource {
   SearchDeviceDefinition specification(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('specification', paramValue);
     return this;
   }
@@ -56,11 +42,8 @@ class SearchDeviceDefinition extends SearchResource {
   SearchDeviceDefinition type(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('type', paramValue);
     return this;
   }

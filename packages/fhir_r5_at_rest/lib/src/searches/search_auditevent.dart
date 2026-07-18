@@ -13,11 +13,8 @@ class SearchAuditEvent extends SearchResource {
   SearchAuditEvent code(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('code', paramValue);
     return this;
   }
@@ -39,11 +36,8 @@ class SearchAuditEvent extends SearchResource {
   SearchAuditEvent action(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('action', paramValue);
     return this;
   }
@@ -53,11 +47,8 @@ class SearchAuditEvent extends SearchResource {
   SearchAuditEvent agentRole(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('agent-role', paramValue);
     return this;
   }
@@ -67,11 +58,8 @@ class SearchAuditEvent extends SearchResource {
   SearchAuditEvent category(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('category', paramValue);
     return this;
   }
@@ -81,11 +69,8 @@ class SearchAuditEvent extends SearchResource {
   SearchAuditEvent entityRole(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('entity-role', paramValue);
     return this;
   }
@@ -95,24 +80,16 @@ class SearchAuditEvent extends SearchResource {
   SearchAuditEvent outcome(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('outcome', paramValue);
     return this;
   }
 
   /// a uri search for [policy] in the resource
   /// [AuditEvent]
-  SearchAuditEvent policy(
-    FhirUri value, {
-    SearchModifier? modifier,
-  }) {
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('policy', paramValue);
+  SearchAuditEvent policy(FhirUri value) {
+    addParameterValue('policy', value.toString());
     return this;
   }
 
@@ -121,11 +98,8 @@ class SearchAuditEvent extends SearchResource {
   SearchAuditEvent purpose(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('purpose', paramValue);
     return this;
   }
