@@ -19,6 +19,14 @@ class SearchCondition extends SearchResource {
     return this;
   }
 
+  /// a reference search for [patient] in the resource
+  /// [Condition]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCondition patient(FhirString value) {
+    addParameterValue('patient', value.toString());
+    return this;
+  }
+
   /// a token search for [code] in the resource
   /// [Condition]
   SearchCondition code(
@@ -27,6 +35,14 @@ class SearchCondition extends SearchResource {
   }) {
     final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('code', paramValue);
+    return this;
+  }
+
+  /// a reference search for [encounter] in the resource
+  /// [Condition]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCondition encounter(FhirString value) {
+    addParameterValue('encounter', value.toString());
     return this;
   }
 
@@ -110,6 +126,14 @@ class SearchCondition extends SearchResource {
     return this;
   }
 
+  /// a reference search for [evidenceDetail] in the resource
+  /// [Condition]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCondition evidenceDetail(FhirString value) {
+    addParameterValue('evidence-detail', value.toString());
+    return this;
+  }
+
   /// a quantity search for [onsetAge] in the resource
   /// [Condition]
   SearchCondition onsetAge(
@@ -143,6 +167,14 @@ class SearchCondition extends SearchResource {
   /// [Condition]
   SearchCondition onsetInfo(FhirString value) {
     addParameterValue('onset-info', value.toString());
+    return this;
+  }
+
+  /// a reference search for [participantActor] in the resource
+  /// [Condition]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCondition participantActor(FhirString value) {
+    addParameterValue('participant-actor', value.toString());
     return this;
   }
 
@@ -188,6 +220,14 @@ class SearchCondition extends SearchResource {
   }) {
     final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('stage', paramValue);
+    return this;
+  }
+
+  /// a reference search for [subject] in the resource
+  /// [Condition]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCondition subject(FhirString value) {
+    addParameterValue('subject', value.toString());
     return this;
   }
 

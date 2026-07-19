@@ -19,6 +19,14 @@ class SearchClinicalImpression extends SearchResource {
     return this;
   }
 
+  /// a reference search for [patient] in the resource
+  /// [ClinicalImpression]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchClinicalImpression patient(FhirString value) {
+    addParameterValue('patient', value.toString());
+    return this;
+  }
+
   /// a date search for [date] in the resource
   /// [ClinicalImpression]
   SearchClinicalImpression date(
@@ -28,6 +36,14 @@ class SearchClinicalImpression extends SearchResource {
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
     addParameterValue('date', paramValue);
+    return this;
+  }
+
+  /// a reference search for [encounter] in the resource
+  /// [ClinicalImpression]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchClinicalImpression encounter(FhirString value) {
+    addParameterValue('encounter', value.toString());
     return this;
   }
 
@@ -42,6 +58,38 @@ class SearchClinicalImpression extends SearchResource {
     return this;
   }
 
+  /// a reference search for [findingRef] in the resource
+  /// [ClinicalImpression]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchClinicalImpression findingRef(FhirString value) {
+    addParameterValue('finding-ref', value.toString());
+    return this;
+  }
+
+  /// a reference search for [performer] in the resource
+  /// [ClinicalImpression]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchClinicalImpression performer(FhirString value) {
+    addParameterValue('performer', value.toString());
+    return this;
+  }
+
+  /// a reference search for [previous] in the resource
+  /// [ClinicalImpression]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchClinicalImpression previous(FhirString value) {
+    addParameterValue('previous', value.toString());
+    return this;
+  }
+
+  /// a reference search for [problem] in the resource
+  /// [ClinicalImpression]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchClinicalImpression problem(FhirString value) {
+    addParameterValue('problem', value.toString());
+    return this;
+  }
+
   /// a token search for [status] in the resource
   /// [ClinicalImpression]
   SearchClinicalImpression status(
@@ -50,6 +98,22 @@ class SearchClinicalImpression extends SearchResource {
   }) {
     final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('status', paramValue);
+    return this;
+  }
+
+  /// a reference search for [subject] in the resource
+  /// [ClinicalImpression]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchClinicalImpression subject(FhirString value) {
+    addParameterValue('subject', value.toString());
+    return this;
+  }
+
+  /// a reference search for [supportingInfo] in the resource
+  /// [ClinicalImpression]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchClinicalImpression supportingInfo(FhirString value) {
+    addParameterValue('supporting-info', value.toString());
     return this;
   }
 }

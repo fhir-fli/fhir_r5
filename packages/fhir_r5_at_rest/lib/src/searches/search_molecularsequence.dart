@@ -19,6 +19,14 @@ class SearchMolecularSequence extends SearchResource {
     return this;
   }
 
+  /// a reference search for [patient] in the resource
+  /// [MolecularSequence]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMolecularSequence patient(FhirString value) {
+    addParameterValue('patient', value.toString());
+    return this;
+  }
+
   /// a token search for [type] in the resource
   /// [MolecularSequence]
   SearchMolecularSequence type(
@@ -27,6 +35,22 @@ class SearchMolecularSequence extends SearchResource {
   }) {
     final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('type', paramValue);
+    return this;
+  }
+
+  /// a reference search for [focus] in the resource
+  /// [MolecularSequence]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMolecularSequence focus(FhirString value) {
+    addParameterValue('focus', value.toString());
+    return this;
+  }
+
+  /// a reference search for [subject] in the resource
+  /// [MolecularSequence]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMolecularSequence subject(FhirString value) {
+    addParameterValue('subject', value.toString());
     return this;
   }
 }

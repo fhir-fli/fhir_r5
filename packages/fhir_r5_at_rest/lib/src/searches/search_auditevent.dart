@@ -8,6 +8,14 @@ import 'package:fhir_r5_at_rest/fhir_r5_at_rest.dart';
 /// A class to build query parameters for RESTful requests for
 /// the [AuditEvent] resource.
 class SearchAuditEvent extends SearchResource {
+  /// a reference search for [patient] in the resource
+  /// [AuditEvent]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchAuditEvent patient(FhirString value) {
+    addParameterValue('patient', value.toString());
+    return this;
+  }
+
   /// a token search for [code] in the resource
   /// [AuditEvent]
   SearchAuditEvent code(
@@ -42,6 +50,14 @@ class SearchAuditEvent extends SearchResource {
     return this;
   }
 
+  /// a reference search for [agent] in the resource
+  /// [AuditEvent]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchAuditEvent agent(FhirString value) {
+    addParameterValue('agent', value.toString());
+    return this;
+  }
+
   /// a token search for [agentRole] in the resource
   /// [AuditEvent]
   SearchAuditEvent agentRole(
@@ -53,6 +69,14 @@ class SearchAuditEvent extends SearchResource {
     return this;
   }
 
+  /// a reference search for [basedOn] in the resource
+  /// [AuditEvent]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchAuditEvent basedOn(FhirString value) {
+    addParameterValue('based-on', value.toString());
+    return this;
+  }
+
   /// a token search for [category] in the resource
   /// [AuditEvent]
   SearchAuditEvent category(
@@ -61,6 +85,22 @@ class SearchAuditEvent extends SearchResource {
   }) {
     final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('category', paramValue);
+    return this;
+  }
+
+  /// a reference search for [encounter] in the resource
+  /// [AuditEvent]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchAuditEvent encounter(FhirString value) {
+    addParameterValue('encounter', value.toString());
+    return this;
+  }
+
+  /// a reference search for [entity] in the resource
+  /// [AuditEvent]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchAuditEvent entity(FhirString value) {
+    addParameterValue('entity', value.toString());
     return this;
   }
 
@@ -101,6 +141,14 @@ class SearchAuditEvent extends SearchResource {
   }) {
     final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('purpose', paramValue);
+    return this;
+  }
+
+  /// a reference search for [source] in the resource
+  /// [AuditEvent]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchAuditEvent source(FhirString value) {
+    addParameterValue('source', value.toString());
     return this;
   }
 }

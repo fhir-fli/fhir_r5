@@ -19,6 +19,30 @@ class SearchCommunication extends SearchResource {
     return this;
   }
 
+  /// a reference search for [patient] in the resource
+  /// [Communication]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCommunication patient(FhirString value) {
+    addParameterValue('patient', value.toString());
+    return this;
+  }
+
+  /// a reference search for [encounter] in the resource
+  /// [Communication]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCommunication encounter(FhirString value) {
+    addParameterValue('encounter', value.toString());
+    return this;
+  }
+
+  /// a reference search for [basedOn] in the resource
+  /// [Communication]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCommunication basedOn(FhirString value) {
+    addParameterValue('based-on', value.toString());
+    return this;
+  }
+
   /// a token search for [category] in the resource
   /// [Communication]
   SearchCommunication category(
@@ -27,6 +51,14 @@ class SearchCommunication extends SearchResource {
   }) {
     final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('category', paramValue);
+    return this;
+  }
+
+  /// a reference search for [instantiatesCanonical] in the resource
+  /// [Communication]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCommunication instantiatesCanonical(FhirString value) {
+    addParameterValue('instantiates-canonical', value.toString());
     return this;
   }
 
@@ -48,6 +80,14 @@ class SearchCommunication extends SearchResource {
     return this;
   }
 
+  /// a reference search for [partOf] in the resource
+  /// [Communication]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCommunication partOf(FhirString value) {
+    addParameterValue('part-of', value.toString());
+    return this;
+  }
+
   /// a date search for [received] in the resource
   /// [Communication]
   SearchCommunication received(
@@ -57,6 +97,22 @@ class SearchCommunication extends SearchResource {
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
     addParameterValue('received', paramValue);
+    return this;
+  }
+
+  /// a reference search for [recipient] in the resource
+  /// [Communication]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCommunication recipient(FhirString value) {
+    addParameterValue('recipient', value.toString());
+    return this;
+  }
+
+  /// a reference search for [sender] in the resource
+  /// [Communication]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCommunication sender(FhirString value) {
+    addParameterValue('sender', value.toString());
     return this;
   }
 
@@ -80,6 +136,14 @@ class SearchCommunication extends SearchResource {
   }) {
     final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('status', paramValue);
+    return this;
+  }
+
+  /// a reference search for [subject] in the resource
+  /// [Communication]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCommunication subject(FhirString value) {
+    addParameterValue('subject', value.toString());
     return this;
   }
 

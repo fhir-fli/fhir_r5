@@ -19,6 +19,14 @@ class SearchFamilyMemberHistory extends SearchResource {
     return this;
   }
 
+  /// a reference search for [patient] in the resource
+  /// [FamilyMemberHistory]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchFamilyMemberHistory patient(FhirString value) {
+    addParameterValue('patient', value.toString());
+    return this;
+  }
+
   /// a token search for [code] in the resource
   /// [FamilyMemberHistory]
   SearchFamilyMemberHistory code(
@@ -39,6 +47,14 @@ class SearchFamilyMemberHistory extends SearchResource {
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
     addParameterValue('date', paramValue);
+    return this;
+  }
+
+  /// a reference search for [instantiatesCanonical] in the resource
+  /// [FamilyMemberHistory]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchFamilyMemberHistory instantiatesCanonical(FhirString value) {
+    addParameterValue('instantiates-canonical', value.toString());
     return this;
   }
 

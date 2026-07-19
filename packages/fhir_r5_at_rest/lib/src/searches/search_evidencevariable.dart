@@ -8,6 +8,14 @@ import 'package:fhir_r5_at_rest/fhir_r5_at_rest.dart';
 /// A class to build query parameters for RESTful requests for
 /// the [EvidenceVariable] resource.
 class SearchEvidenceVariable extends SearchResource {
+  /// a reference search for [composedOf] in the resource
+  /// [EvidenceVariable]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEvidenceVariable composedOf(FhirString value) {
+    addParameterValue('composed-of', value.toString());
+    return this;
+  }
+
   /// a token search for [context] in the resource
   /// [EvidenceVariable]
   SearchEvidenceVariable context(
@@ -59,6 +67,22 @@ class SearchEvidenceVariable extends SearchResource {
     return this;
   }
 
+  /// a reference search for [dependsOn] in the resource
+  /// [EvidenceVariable]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEvidenceVariable dependsOn(FhirString value) {
+    addParameterValue('depends-on', value.toString());
+    return this;
+  }
+
+  /// a reference search for [derivedFrom] in the resource
+  /// [EvidenceVariable]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEvidenceVariable derivedFrom(FhirString value) {
+    addParameterValue('derived-from', value.toString());
+    return this;
+  }
+
   /// a string search for [description] in the resource
   /// [EvidenceVariable]
   SearchEvidenceVariable description(FhirString value) {
@@ -84,6 +108,14 @@ class SearchEvidenceVariable extends SearchResource {
     return this;
   }
 
+  /// a reference search for [predecessor] in the resource
+  /// [EvidenceVariable]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEvidenceVariable predecessor(FhirString value) {
+    addParameterValue('predecessor', value.toString());
+    return this;
+  }
+
   /// a string search for [publisher] in the resource
   /// [EvidenceVariable]
   SearchEvidenceVariable publisher(FhirString value) {
@@ -99,6 +131,14 @@ class SearchEvidenceVariable extends SearchResource {
   }) {
     final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('status', paramValue);
+    return this;
+  }
+
+  /// a reference search for [successor] in the resource
+  /// [EvidenceVariable]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEvidenceVariable successor(FhirString value) {
+    addParameterValue('successor', value.toString());
     return this;
   }
 

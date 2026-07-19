@@ -26,6 +26,22 @@ class SearchDeviceDefinition extends SearchResource {
     return this;
   }
 
+  /// a reference search for [manufacturer] in the resource
+  /// [DeviceDefinition]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchDeviceDefinition manufacturer(FhirString value) {
+    addParameterValue('manufacturer', value.toString());
+    return this;
+  }
+
+  /// a reference search for [organization] in the resource
+  /// [DeviceDefinition]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchDeviceDefinition organization(FhirString value) {
+    addParameterValue('organization', value.toString());
+    return this;
+  }
+
   /// a token search for [specification] in the resource
   /// [DeviceDefinition]
   SearchDeviceDefinition specification(

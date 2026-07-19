@@ -138,6 +138,14 @@ class SearchTestScript extends SearchResource {
     return this;
   }
 
+  /// a reference search for [scopeArtifact] in the resource
+  /// [TestScript]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchTestScript scopeArtifact(FhirString value) {
+    addParameterValue('scope-artifact', value.toString());
+    return this;
+  }
+
   /// a string search for [testscriptCapability] in the resource
   /// [TestScript]
   SearchTestScript testscriptCapability(FhirString value) {

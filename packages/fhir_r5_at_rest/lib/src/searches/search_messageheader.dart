@@ -8,6 +8,14 @@ import 'package:fhir_r5_at_rest/fhir_r5_at_rest.dart';
 /// A class to build query parameters for RESTful requests for
 /// the [MessageHeader] resource.
 class SearchMessageHeader extends SearchResource {
+  /// a reference search for [author] in the resource
+  /// [MessageHeader]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMessageHeader author(FhirString value) {
+    addParameterValue('author', value.toString());
+    return this;
+  }
+
   /// a token search for [code] in the resource
   /// [MessageHeader]
   SearchMessageHeader code(
@@ -37,6 +45,22 @@ class SearchMessageHeader extends SearchResource {
     return this;
   }
 
+  /// a reference search for [focus] in the resource
+  /// [MessageHeader]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMessageHeader focus(FhirString value) {
+    addParameterValue('focus', value.toString());
+    return this;
+  }
+
+  /// a reference search for [receiver] in the resource
+  /// [MessageHeader]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMessageHeader receiver(FhirString value) {
+    addParameterValue('receiver', value.toString());
+    return this;
+  }
+
   /// a token search for [responseId] in the resource
   /// [MessageHeader]
   SearchMessageHeader responseId(
@@ -48,10 +72,34 @@ class SearchMessageHeader extends SearchResource {
     return this;
   }
 
+  /// a reference search for [responsible] in the resource
+  /// [MessageHeader]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMessageHeader responsible(FhirString value) {
+    addParameterValue('responsible', value.toString());
+    return this;
+  }
+
+  /// a reference search for [sender] in the resource
+  /// [MessageHeader]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMessageHeader sender(FhirString value) {
+    addParameterValue('sender', value.toString());
+    return this;
+  }
+
   /// a string search for [source] in the resource
   /// [MessageHeader]
   SearchMessageHeader source(FhirString value) {
     addParameterValue('source', value.toString());
+    return this;
+  }
+
+  /// a reference search for [target] in the resource
+  /// [MessageHeader]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMessageHeader target(FhirString value) {
+    addParameterValue('target', value.toString());
     return this;
   }
 }

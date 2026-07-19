@@ -36,4 +36,12 @@ class SearchTestPlan extends SearchResource {
     addParameterValue('url', value.toString());
     return this;
   }
+
+  /// a reference search for [scope] in the resource
+  /// [TestPlan]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchTestPlan scope(FhirString value) {
+    addParameterValue('scope', value.toString());
+    return this;
+  }
 }

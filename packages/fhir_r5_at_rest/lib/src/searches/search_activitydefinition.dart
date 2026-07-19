@@ -8,6 +8,14 @@ import 'package:fhir_r5_at_rest/fhir_r5_at_rest.dart';
 /// A class to build query parameters for RESTful requests for
 /// the [ActivityDefinition] resource.
 class SearchActivityDefinition extends SearchResource {
+  /// a reference search for [composedOf] in the resource
+  /// [ActivityDefinition]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchActivityDefinition composedOf(FhirString value) {
+    addParameterValue('composed-of', value.toString());
+    return this;
+  }
+
   /// a token search for [context] in the resource
   /// [ActivityDefinition]
   SearchActivityDefinition context(
@@ -56,6 +64,22 @@ class SearchActivityDefinition extends SearchResource {
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
     addParameterValue('date', paramValue);
+    return this;
+  }
+
+  /// a reference search for [dependsOn] in the resource
+  /// [ActivityDefinition]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchActivityDefinition dependsOn(FhirString value) {
+    addParameterValue('depends-on', value.toString());
+    return this;
+  }
+
+  /// a reference search for [derivedFrom] in the resource
+  /// [ActivityDefinition]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchActivityDefinition derivedFrom(FhirString value) {
+    addParameterValue('derived-from', value.toString());
     return this;
   }
 
@@ -118,6 +142,14 @@ class SearchActivityDefinition extends SearchResource {
     return this;
   }
 
+  /// a reference search for [predecessor] in the resource
+  /// [ActivityDefinition]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchActivityDefinition predecessor(FhirString value) {
+    addParameterValue('predecessor', value.toString());
+    return this;
+  }
+
   /// a string search for [publisher] in the resource
   /// [ActivityDefinition]
   SearchActivityDefinition publisher(FhirString value) {
@@ -133,6 +165,14 @@ class SearchActivityDefinition extends SearchResource {
   }) {
     final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('status', paramValue);
+    return this;
+  }
+
+  /// a reference search for [successor] in the resource
+  /// [ActivityDefinition]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchActivityDefinition successor(FhirString value) {
+    addParameterValue('successor', value.toString());
     return this;
   }
 
