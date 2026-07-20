@@ -1,5 +1,12 @@
 # fhir_r5_path
 
+## [0.7.0]
+
+- BREAKING: `ClientLogger.logFile` (dart:io `File?`) -> `logFilePath` (`String?`), part of making the package web/WASM-compatible
+- Web/WASM compatible: dart:io usage (client logger, terminology cache) now behind conditional imports; `universal_io` dependency removed
+- Docs: environment-variable keys carry no `%` prefix
+- fhir_r5 ^0.7.0
+
 ## [0.6.0]
 
 - Rebuilt as a thin FHIR R5 binding over the model-independent [fhir_path](https://pub.dev/packages/fhir_path) engine (fhir_path ^0.13.0): version-specific model resolution lives here, the engine logic in fhirpath

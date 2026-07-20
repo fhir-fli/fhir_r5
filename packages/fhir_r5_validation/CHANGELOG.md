@@ -1,5 +1,11 @@
 # fhir_r5_validation
 
+## [0.7.0]
+
+- Family release train: cores and companions released in lockstep at 0.7.0
+- Web/WASM compatible transitively (fhir_r5_path 0.7.0 removed the last dart:io in the dependency chain)
+- fhir_r5 ^0.7.0, fhir_r5_path ^0.7.0
+
 ## [0.6.0]
 
 - Family lockstep 0.6.0

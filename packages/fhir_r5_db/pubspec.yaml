@@ -1,6 +1,6 @@
 name: fhir_r5_db
 description: FHIR R5 database with SQLite/Drift backend, search parameter indexing, and optional encryption.
-version: 0.6.0
+version: 0.7.0
 homepage: https://www.fhirfli.dev/
 repository: https://github.com/fhir-fli/fhir_r5
 issue_tracker: https://github.com/fhir-fli/fhir_r5/issues
@@ -28,7 +28,7 @@ dependencies:
   collection: ^1.19.1
   crypto: ^3.0.7
   drift: ^2.33.0
-  fhir_r5: ^0.6.0
+  fhir_r5: ^0.7.0
   sqlite3: ^3.1.5
 
 dev_dependencies:
