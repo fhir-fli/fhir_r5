@@ -13,12 +13,17 @@ class SearchMedicationRequest extends SearchResource {
   SearchMedicationRequest identifier(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('identifier', paramValue);
+    return this;
+  }
+
+  /// a reference search for [patient] in the resource
+  /// [MedicationRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMedicationRequest patient(FhirString value) {
+    addParameterValue('patient', value.toString());
     return this;
   }
 
@@ -27,12 +32,25 @@ class SearchMedicationRequest extends SearchResource {
   SearchMedicationRequest code(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('code', paramValue);
+    return this;
+  }
+
+  /// a reference search for [encounter] in the resource
+  /// [MedicationRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMedicationRequest encounter(FhirString value) {
+    addParameterValue('encounter', value.toString());
+    return this;
+  }
+
+  /// a reference search for [medication] in the resource
+  /// [MedicationRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMedicationRequest medication(FhirString value) {
+    addParameterValue('medication', value.toString());
     return this;
   }
 
@@ -41,11 +59,8 @@ class SearchMedicationRequest extends SearchResource {
   SearchMedicationRequest status(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('status', paramValue);
     return this;
   }
@@ -67,11 +82,8 @@ class SearchMedicationRequest extends SearchResource {
   SearchMedicationRequest category(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('category', paramValue);
     return this;
   }
@@ -84,7 +96,7 @@ class SearchMedicationRequest extends SearchResource {
   }) {
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('combo_date', paramValue);
+    addParameterValue('combo-date', paramValue);
     return this;
   }
 
@@ -93,12 +105,25 @@ class SearchMedicationRequest extends SearchResource {
   SearchMedicationRequest groupIdentifier(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('group_identifier', paramValue);
+    final paramValue = system != null ? '$system|$value' : value.toString();
+    addParameterValue('group-identifier', paramValue);
+    return this;
+  }
+
+  /// a reference search for [intendedDispenser] in the resource
+  /// [MedicationRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMedicationRequest intendedDispenser(FhirString value) {
+    addParameterValue('intended-dispenser', value.toString());
+    return this;
+  }
+
+  /// a reference search for [intendedPerformer] in the resource
+  /// [MedicationRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMedicationRequest intendedPerformer(FhirString value) {
+    addParameterValue('intended-performer', value.toString());
     return this;
   }
 
@@ -107,12 +132,9 @@ class SearchMedicationRequest extends SearchResource {
   SearchMedicationRequest intendedPerformertype(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('intended_performertype', paramValue);
+    final paramValue = system != null ? '$system|$value' : value.toString();
+    addParameterValue('intended-performertype', paramValue);
     return this;
   }
 
@@ -121,11 +143,8 @@ class SearchMedicationRequest extends SearchResource {
   SearchMedicationRequest intent(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('intent', paramValue);
     return this;
   }
@@ -135,12 +154,25 @@ class SearchMedicationRequest extends SearchResource {
   SearchMedicationRequest priority(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('priority', paramValue);
+    return this;
+  }
+
+  /// a reference search for [requester] in the resource
+  /// [MedicationRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMedicationRequest requester(FhirString value) {
+    addParameterValue('requester', value.toString());
+    return this;
+  }
+
+  /// a reference search for [subject] in the resource
+  /// [MedicationRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMedicationRequest subject(FhirString value) {
+    addParameterValue('subject', value.toString());
     return this;
   }
 }

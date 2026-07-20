@@ -13,12 +13,17 @@ class SearchBasic extends SearchResource {
   SearchBasic identifier(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('identifier', paramValue);
+    return this;
+  }
+
+  /// a reference search for [patient] in the resource
+  /// [Basic]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchBasic patient(FhirString value) {
+    addParameterValue('patient', value.toString());
     return this;
   }
 
@@ -27,12 +32,17 @@ class SearchBasic extends SearchResource {
   SearchBasic code(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('code', paramValue);
+    return this;
+  }
+
+  /// a reference search for [author] in the resource
+  /// [Basic]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchBasic author(FhirString value) {
+    addParameterValue('author', value.toString());
     return this;
   }
 
@@ -45,6 +55,14 @@ class SearchBasic extends SearchResource {
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
     addParameterValue('created', paramValue);
+    return this;
+  }
+
+  /// a reference search for [subject] in the resource
+  /// [Basic]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchBasic subject(FhirString value) {
+    addParameterValue('subject', value.toString());
     return this;
   }
 }

@@ -13,12 +13,33 @@ class SearchBiologicallyDerivedProductDispense extends SearchResource {
   SearchBiologicallyDerivedProductDispense identifier(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('identifier', paramValue);
+    return this;
+  }
+
+  /// a reference search for [patient] in the resource
+  /// [BiologicallyDerivedProductDispense]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchBiologicallyDerivedProductDispense patient(FhirString value) {
+    addParameterValue('patient', value.toString());
+    return this;
+  }
+
+  /// a reference search for [performer] in the resource
+  /// [BiologicallyDerivedProductDispense]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchBiologicallyDerivedProductDispense performer(FhirString value) {
+    addParameterValue('performer', value.toString());
+    return this;
+  }
+
+  /// a reference search for [product] in the resource
+  /// [BiologicallyDerivedProductDispense]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchBiologicallyDerivedProductDispense product(FhirString value) {
+    addParameterValue('product', value.toString());
     return this;
   }
 
@@ -27,11 +48,8 @@ class SearchBiologicallyDerivedProductDispense extends SearchResource {
   SearchBiologicallyDerivedProductDispense status(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('status', paramValue);
     return this;
   }

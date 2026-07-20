@@ -1,5 +1,11 @@
 # fhir_r5_cql
 
+## [0.7.0]
+
+- Family release train: cores and companions released in lockstep at 0.7.0
+- Web/WASM compatible transitively (fhir_r5_path 0.7.0 removed the last dart:io in the dependency chain)
+- fhir_r5 ^0.7.0, fhir_r5_path ^0.7.0
+
 ## [0.6.0]
 
 - Rebuilt as a thin FHIR R5 binding over the model-independent [cql](https://pub.dev/packages/cql) engine: this package now provides the R5ModelResolver and R5TerminologyProvider implementations (and re-exports package:cql); the translator and engine themselves live in cql

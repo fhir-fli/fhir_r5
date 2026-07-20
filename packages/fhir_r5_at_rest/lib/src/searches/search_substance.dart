@@ -13,11 +13,8 @@ class SearchSubstance extends SearchResource {
   SearchSubstance category(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('category', paramValue);
     return this;
   }
@@ -27,12 +24,17 @@ class SearchSubstance extends SearchResource {
   SearchSubstance code(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('code', paramValue);
+    return this;
+  }
+
+  /// a reference search for [codeReference] in the resource
+  /// [Substance]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchSubstance codeReference(FhirString value) {
+    addParameterValue('code-reference', value.toString());
     return this;
   }
 
@@ -53,11 +55,8 @@ class SearchSubstance extends SearchResource {
   SearchSubstance identifier(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('identifier', paramValue);
     return this;
   }
@@ -70,14 +69,11 @@ class SearchSubstance extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    if (modifier != null &&
-        !['gt', 'lt', 'ge', 'le', 'ap'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for quantity type');
-    }
-    final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}'
-            '|${unit?.toString() ?? ''}'
-        : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
+    final numberPart = modifier != null ? '$modifier$value' : value.toString();
+    final paramValue = (system == null && unit == null)
+        ? numberPart
+        : '$numberPart|${system?.toString() ?? ''}|'
+            '${unit?.toString() ?? ''}';
     addParameterValue('quantity', paramValue);
     return this;
   }
@@ -87,12 +83,17 @@ class SearchSubstance extends SearchResource {
   SearchSubstance status(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('status', paramValue);
+    return this;
+  }
+
+  /// a reference search for [substanceReference] in the resource
+  /// [Substance]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchSubstance substanceReference(FhirString value) {
+    addParameterValue('substance-reference', value.toString());
     return this;
   }
 }

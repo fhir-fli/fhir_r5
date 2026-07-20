@@ -13,12 +13,17 @@ class SearchMolecularSequence extends SearchResource {
   SearchMolecularSequence identifier(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('identifier', paramValue);
+    return this;
+  }
+
+  /// a reference search for [patient] in the resource
+  /// [MolecularSequence]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMolecularSequence patient(FhirString value) {
+    addParameterValue('patient', value.toString());
     return this;
   }
 
@@ -27,12 +32,25 @@ class SearchMolecularSequence extends SearchResource {
   SearchMolecularSequence type(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('type', paramValue);
+    return this;
+  }
+
+  /// a reference search for [focus] in the resource
+  /// [MolecularSequence]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMolecularSequence focus(FhirString value) {
+    addParameterValue('focus', value.toString());
+    return this;
+  }
+
+  /// a reference search for [subject] in the resource
+  /// [MolecularSequence]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchMolecularSequence subject(FhirString value) {
+    addParameterValue('subject', value.toString());
     return this;
   }
 }

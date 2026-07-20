@@ -13,12 +13,25 @@ class SearchServiceRequest extends SearchResource {
   SearchServiceRequest identifier(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('identifier', paramValue);
+    return this;
+  }
+
+  /// a reference search for [patient] in the resource
+  /// [ServiceRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchServiceRequest patient(FhirString value) {
+    addParameterValue('patient', value.toString());
+    return this;
+  }
+
+  /// a reference search for [encounter] in the resource
+  /// [ServiceRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchServiceRequest encounter(FhirString value) {
+    addParameterValue('encounter', value.toString());
     return this;
   }
 
@@ -34,17 +47,30 @@ class SearchServiceRequest extends SearchResource {
     return this;
   }
 
+  /// a reference search for [basedOn] in the resource
+  /// [ServiceRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchServiceRequest basedOn(FhirString value) {
+    addParameterValue('based-on', value.toString());
+    return this;
+  }
+
   /// a token search for [bodySite] in the resource
   /// [ServiceRequest]
   SearchServiceRequest bodySite(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('body_site', paramValue);
+    final paramValue = system != null ? '$system|$value' : value.toString();
+    addParameterValue('body-site', paramValue);
+    return this;
+  }
+
+  /// a reference search for [bodyStructure] in the resource
+  /// [ServiceRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchServiceRequest bodyStructure(FhirString value) {
+    addParameterValue('body-structure', value.toString());
     return this;
   }
 
@@ -53,11 +79,8 @@ class SearchServiceRequest extends SearchResource {
   SearchServiceRequest category(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('category', paramValue);
     return this;
   }
@@ -67,24 +90,32 @@ class SearchServiceRequest extends SearchResource {
   SearchServiceRequest codeConcept(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('code_concept', paramValue);
+    final paramValue = system != null ? '$system|$value' : value.toString();
+    addParameterValue('code-concept', paramValue);
+    return this;
+  }
+
+  /// a reference search for [codeReference] in the resource
+  /// [ServiceRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchServiceRequest codeReference(FhirString value) {
+    addParameterValue('code-reference', value.toString());
+    return this;
+  }
+
+  /// a reference search for [instantiatesCanonical] in the resource
+  /// [ServiceRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchServiceRequest instantiatesCanonical(FhirString value) {
+    addParameterValue('instantiates-canonical', value.toString());
     return this;
   }
 
   /// a uri search for [instantiatesUri] in the resource
   /// [ServiceRequest]
-  SearchServiceRequest instantiatesUri(
-    FhirUri value, {
-    SearchModifier? modifier,
-  }) {
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('instantiates_uri', paramValue);
+  SearchServiceRequest instantiatesUri(FhirUri value) {
+    addParameterValue('instantiates-uri', value.toString());
     return this;
   }
 
@@ -93,11 +124,8 @@ class SearchServiceRequest extends SearchResource {
   SearchServiceRequest intent(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('intent', paramValue);
     return this;
   }
@@ -114,17 +142,22 @@ class SearchServiceRequest extends SearchResource {
     return this;
   }
 
+  /// a reference search for [performer] in the resource
+  /// [ServiceRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchServiceRequest performer(FhirString value) {
+    addParameterValue('performer', value.toString());
+    return this;
+  }
+
   /// a token search for [performerType] in the resource
   /// [ServiceRequest]
   SearchServiceRequest performerType(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('performer_type', paramValue);
+    final paramValue = system != null ? '$system|$value' : value.toString();
+    addParameterValue('performer-type', paramValue);
     return this;
   }
 
@@ -133,12 +166,25 @@ class SearchServiceRequest extends SearchResource {
   SearchServiceRequest priority(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('priority', paramValue);
+    return this;
+  }
+
+  /// a reference search for [replaces] in the resource
+  /// [ServiceRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchServiceRequest replaces(FhirString value) {
+    addParameterValue('replaces', value.toString());
+    return this;
+  }
+
+  /// a reference search for [requester] in the resource
+  /// [ServiceRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchServiceRequest requester(FhirString value) {
+    addParameterValue('requester', value.toString());
     return this;
   }
 
@@ -147,12 +193,17 @@ class SearchServiceRequest extends SearchResource {
   SearchServiceRequest requisition(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('requisition', paramValue);
+    return this;
+  }
+
+  /// a reference search for [specimen] in the resource
+  /// [ServiceRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchServiceRequest specimen(FhirString value) {
+    addParameterValue('specimen', value.toString());
     return this;
   }
 
@@ -161,12 +212,17 @@ class SearchServiceRequest extends SearchResource {
   SearchServiceRequest status(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('status', paramValue);
+    return this;
+  }
+
+  /// a reference search for [subject] in the resource
+  /// [ServiceRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchServiceRequest subject(FhirString value) {
+    addParameterValue('subject', value.toString());
     return this;
   }
 }

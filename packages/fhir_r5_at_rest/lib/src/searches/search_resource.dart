@@ -13,12 +13,17 @@ class SearchResource extends RestfulParameters {
   SearchResource id(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('_id', paramValue);
+    return this;
+  }
+
+  /// a reference search for [in_] in the resource
+  /// [Resource]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchResource in_(FhirString value) {
+    addParameterValue('_in', value.toString());
     return this;
   }
 
@@ -27,11 +32,8 @@ class SearchResource extends RestfulParameters {
   SearchResource language(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('_language', paramValue);
     return this;
   }
@@ -48,29 +50,29 @@ class SearchResource extends RestfulParameters {
     return this;
   }
 
+  /// a reference search for [profile] in the resource
+  /// [Resource]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchResource profile(FhirString value) {
+    addParameterValue('_profile', value.toString());
+    return this;
+  }
+
   /// a token search for [security] in the resource
   /// [Resource]
   SearchResource security(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('_security', paramValue);
     return this;
   }
 
   /// a uri search for [resourceSource] in the resource
   /// [Resource]
-  SearchResource resourceSource(
-    FhirUri value, {
-    SearchModifier? modifier,
-  }) {
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('_source', paramValue);
+  SearchResource resourceSource(FhirUri value) {
+    addParameterValue('_source', value.toString());
     return this;
   }
 
@@ -79,27 +81,16 @@ class SearchResource extends RestfulParameters {
   SearchResource tag(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('_tag', paramValue);
     return this;
   }
 
   /// a string search for [text] in the resource
   /// [Resource]
-  SearchResource text(
-    FhirString value, {
-    SearchModifier? modifier,
-  }) {
-    if (modifier != null && !['eq', 'ne'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for string type');
-    }
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('_text', paramValue);
+  SearchResource text(FhirString value) {
+    addParameterValue('_text', value.toString());
     return this;
   }
 }

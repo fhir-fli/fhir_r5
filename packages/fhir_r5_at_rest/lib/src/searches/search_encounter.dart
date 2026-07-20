@@ -13,12 +13,17 @@ class SearchEncounter extends SearchResource {
   SearchEncounter identifier(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('identifier', paramValue);
+    return this;
+  }
+
+  /// a reference search for [patient] in the resource
+  /// [Encounter]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEncounter patient(FhirString value) {
+    addParameterValue('patient', value.toString());
     return this;
   }
 
@@ -27,11 +32,8 @@ class SearchEncounter extends SearchResource {
   SearchEncounter type(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('type', paramValue);
     return this;
   }
@@ -48,16 +50,45 @@ class SearchEncounter extends SearchResource {
     return this;
   }
 
+  /// a reference search for [account] in the resource
+  /// [Encounter]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEncounter account(FhirString value) {
+    addParameterValue('account', value.toString());
+    return this;
+  }
+
+  /// a reference search for [appointment] in the resource
+  /// [Encounter]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEncounter appointment(FhirString value) {
+    addParameterValue('appointment', value.toString());
+    return this;
+  }
+
+  /// a reference search for [basedOn] in the resource
+  /// [Encounter]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEncounter basedOn(FhirString value) {
+    addParameterValue('based-on', value.toString());
+    return this;
+  }
+
+  /// a reference search for [careteam] in the resource
+  /// [Encounter]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEncounter careteam(FhirString value) {
+    addParameterValue('careteam', value.toString());
+    return this;
+  }
+
   /// a token search for [class_] in the resource
   /// [Encounter]
   SearchEncounter class_(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('class', paramValue);
     return this;
   }
@@ -70,7 +101,7 @@ class SearchEncounter extends SearchResource {
   }) {
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('date_start', paramValue);
+    addParameterValue('date-start', paramValue);
     return this;
   }
 
@@ -79,12 +110,17 @@ class SearchEncounter extends SearchResource {
   SearchEncounter diagnosisCode(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('diagnosis_code', paramValue);
+    final paramValue = system != null ? '$system|$value' : value.toString();
+    addParameterValue('diagnosis-code', paramValue);
+    return this;
+  }
+
+  /// a reference search for [diagnosisReference] in the resource
+  /// [Encounter]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEncounter diagnosisReference(FhirString value) {
+    addParameterValue('diagnosis-reference', value.toString());
     return this;
   }
 
@@ -96,7 +132,15 @@ class SearchEncounter extends SearchResource {
   }) {
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('end_date', paramValue);
+    addParameterValue('end-date', paramValue);
+    return this;
+  }
+
+  /// a reference search for [episodeOfCare] in the resource
+  /// [Encounter]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEncounter episodeOfCare(FhirString value) {
+    addParameterValue('episode-of-care', value.toString());
     return this;
   }
 
@@ -108,15 +152,36 @@ class SearchEncounter extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    if (modifier != null &&
-        !['gt', 'lt', 'ge', 'le', 'ap'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for quantity type');
-    }
-    final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}'
-            '|${unit?.toString() ?? ''}'
-        : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
+    final numberPart = modifier != null ? '$modifier$value' : value.toString();
+    final paramValue = (system == null && unit == null)
+        ? numberPart
+        : '$numberPart|${system?.toString() ?? ''}|'
+            '${unit?.toString() ?? ''}';
     addParameterValue('length', paramValue);
+    return this;
+  }
+
+  /// a reference search for [location] in the resource
+  /// [Encounter]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEncounter location(FhirString value) {
+    addParameterValue('location', value.toString());
+    return this;
+  }
+
+  /// a reference search for [partOf] in the resource
+  /// [Encounter]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEncounter partOf(FhirString value) {
+    addParameterValue('part-of', value.toString());
+    return this;
+  }
+
+  /// a reference search for [participant] in the resource
+  /// [Encounter]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEncounter participant(FhirString value) {
+    addParameterValue('participant', value.toString());
     return this;
   }
 
@@ -125,12 +190,17 @@ class SearchEncounter extends SearchResource {
   SearchEncounter participantType(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('participant_type', paramValue);
+    final paramValue = system != null ? '$system|$value' : value.toString();
+    addParameterValue('participant-type', paramValue);
+    return this;
+  }
+
+  /// a reference search for [practitioner] in the resource
+  /// [Encounter]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEncounter practitioner(FhirString value) {
+    addParameterValue('practitioner', value.toString());
     return this;
   }
 
@@ -139,12 +209,25 @@ class SearchEncounter extends SearchResource {
   SearchEncounter reasonCode(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('reason_code', paramValue);
+    final paramValue = system != null ? '$system|$value' : value.toString();
+    addParameterValue('reason-code', paramValue);
+    return this;
+  }
+
+  /// a reference search for [reasonReference] in the resource
+  /// [Encounter]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEncounter reasonReference(FhirString value) {
+    addParameterValue('reason-reference', value.toString());
+    return this;
+  }
+
+  /// a reference search for [serviceProvider] in the resource
+  /// [Encounter]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEncounter serviceProvider(FhirString value) {
+    addParameterValue('service-provider', value.toString());
     return this;
   }
 
@@ -153,12 +236,9 @@ class SearchEncounter extends SearchResource {
   SearchEncounter specialArrangement(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('special_arrangement', paramValue);
+    final paramValue = system != null ? '$system|$value' : value.toString();
+    addParameterValue('special-arrangement', paramValue);
     return this;
   }
 
@@ -167,12 +247,17 @@ class SearchEncounter extends SearchResource {
   SearchEncounter status(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('status', paramValue);
+    return this;
+  }
+
+  /// a reference search for [subject] in the resource
+  /// [Encounter]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchEncounter subject(FhirString value) {
+    addParameterValue('subject', value.toString());
     return this;
   }
 
@@ -181,12 +266,9 @@ class SearchEncounter extends SearchResource {
   SearchEncounter subjectStatus(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('subject_status', paramValue);
+    final paramValue = system != null ? '$system|$value' : value.toString();
+    addParameterValue('subject-status', paramValue);
     return this;
   }
 }

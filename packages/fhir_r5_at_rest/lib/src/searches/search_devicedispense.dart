@@ -13,11 +13,8 @@ class SearchDeviceDispense extends SearchResource {
   SearchDeviceDispense code(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('code', paramValue);
     return this;
   }
@@ -27,12 +24,17 @@ class SearchDeviceDispense extends SearchResource {
   SearchDeviceDispense identifier(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('identifier', paramValue);
+    return this;
+  }
+
+  /// a reference search for [patient] in the resource
+  /// [DeviceDispense]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchDeviceDispense patient(FhirString value) {
+    addParameterValue('patient', value.toString());
     return this;
   }
 
@@ -41,12 +43,17 @@ class SearchDeviceDispense extends SearchResource {
   SearchDeviceDispense status(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('status', paramValue);
+    return this;
+  }
+
+  /// a reference search for [subject] in the resource
+  /// [DeviceDispense]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchDeviceDispense subject(FhirString value) {
+    addParameterValue('subject', value.toString());
     return this;
   }
 }

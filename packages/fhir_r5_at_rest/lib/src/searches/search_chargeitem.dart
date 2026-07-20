@@ -13,12 +13,17 @@ class SearchChargeItem extends SearchResource {
   SearchChargeItem identifier(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('identifier', paramValue);
+    return this;
+  }
+
+  /// a reference search for [patient] in the resource
+  /// [ChargeItem]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchChargeItem patient(FhirString value) {
+    addParameterValue('patient', value.toString());
     return this;
   }
 
@@ -27,12 +32,25 @@ class SearchChargeItem extends SearchResource {
   SearchChargeItem code(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('code', paramValue);
+    return this;
+  }
+
+  /// a reference search for [encounter] in the resource
+  /// [ChargeItem]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchChargeItem encounter(FhirString value) {
+    addParameterValue('encounter', value.toString());
+    return this;
+  }
+
+  /// a reference search for [account] in the resource
+  /// [ChargeItem]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchChargeItem account(FhirString value) {
+    addParameterValue('account', value.toString());
     return this;
   }
 
@@ -44,7 +62,15 @@ class SearchChargeItem extends SearchResource {
   }) {
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('entered_date', paramValue);
+    addParameterValue('entered-date', paramValue);
+    return this;
+  }
+
+  /// a reference search for [enterer] in the resource
+  /// [ChargeItem]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchChargeItem enterer(FhirString value) {
+    addParameterValue('enterer', value.toString());
     return this;
   }
 
@@ -52,19 +78,10 @@ class SearchChargeItem extends SearchResource {
   /// [ChargeItem]
   SearchChargeItem factorOverride(
     FhirDecimal value, {
-    FhirString? unit,
-    FhirUri? system,
     SearchModifier? modifier,
   }) {
-    if (modifier != null &&
-        !['gt', 'lt', 'ge', 'le', 'ap'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for number type');
-    }
-    final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}'
-            '|${unit?.toString() ?? ''}'
-        : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
-    addParameterValue('factor_override', paramValue);
+    final paramValue = modifier != null ? '$modifier$value' : value.toString();
+    addParameterValue('factor-override', paramValue);
     return this;
   }
 
@@ -80,17 +97,30 @@ class SearchChargeItem extends SearchResource {
     return this;
   }
 
+  /// a reference search for [performerActor] in the resource
+  /// [ChargeItem]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchChargeItem performerActor(FhirString value) {
+    addParameterValue('performer-actor', value.toString());
+    return this;
+  }
+
   /// a token search for [performerFunction] in the resource
   /// [ChargeItem]
   SearchChargeItem performerFunction(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('performer_function', paramValue);
+    final paramValue = system != null ? '$system|$value' : value.toString();
+    addParameterValue('performer-function', paramValue);
+    return this;
+  }
+
+  /// a reference search for [performingOrganization] in the resource
+  /// [ChargeItem]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchChargeItem performingOrganization(FhirString value) {
+    addParameterValue('performing-organization', value.toString());
     return this;
   }
 
@@ -102,15 +132,12 @@ class SearchChargeItem extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    if (modifier != null &&
-        !['gt', 'lt', 'ge', 'le', 'ap'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for quantity type');
-    }
-    final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}'
-            '|${unit?.toString() ?? ''}'
-        : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
-    addParameterValue('price_override', paramValue);
+    final numberPart = modifier != null ? '$modifier$value' : value.toString();
+    final paramValue = (system == null && unit == null)
+        ? numberPart
+        : '$numberPart|${system?.toString() ?? ''}|'
+            '${unit?.toString() ?? ''}';
+    addParameterValue('price-override', paramValue);
     return this;
   }
 
@@ -122,15 +149,28 @@ class SearchChargeItem extends SearchResource {
     FhirUri? system,
     SearchModifier? modifier,
   }) {
-    if (modifier != null &&
-        !['gt', 'lt', 'ge', 'le', 'ap'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for quantity type');
-    }
-    final paramValue = (modifier != null
-        ? '$modifier$value|${system?.toString() ?? ''}'
-            '|${unit?.toString() ?? ''}'
-        : '$value|${system?.toString() ?? ''}|${unit?.toString() ?? ''}');
+    final numberPart = modifier != null ? '$modifier$value' : value.toString();
+    final paramValue = (system == null && unit == null)
+        ? numberPart
+        : '$numberPart|${system?.toString() ?? ''}|'
+            '${unit?.toString() ?? ''}';
     addParameterValue('quantity', paramValue);
+    return this;
+  }
+
+  /// a reference search for [requestingOrganization] in the resource
+  /// [ChargeItem]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchChargeItem requestingOrganization(FhirString value) {
+    addParameterValue('requesting-organization', value.toString());
+    return this;
+  }
+
+  /// a reference search for [service] in the resource
+  /// [ChargeItem]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchChargeItem service(FhirString value) {
+    addParameterValue('service', value.toString());
     return this;
   }
 
@@ -139,12 +179,17 @@ class SearchChargeItem extends SearchResource {
   SearchChargeItem status(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('status', paramValue);
+    return this;
+  }
+
+  /// a reference search for [subject] in the resource
+  /// [ChargeItem]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchChargeItem subject(FhirString value) {
+    addParameterValue('subject', value.toString());
     return this;
   }
 }

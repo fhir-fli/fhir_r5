@@ -13,12 +13,25 @@ class SearchCommunicationRequest extends SearchResource {
   SearchCommunicationRequest identifier(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('identifier', paramValue);
+    return this;
+  }
+
+  /// a reference search for [patient] in the resource
+  /// [CommunicationRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCommunicationRequest patient(FhirString value) {
+    addParameterValue('patient', value.toString());
+    return this;
+  }
+
+  /// a reference search for [encounter] in the resource
+  /// [CommunicationRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCommunicationRequest encounter(FhirString value) {
+    addParameterValue('encounter', value.toString());
     return this;
   }
 
@@ -34,16 +47,21 @@ class SearchCommunicationRequest extends SearchResource {
     return this;
   }
 
+  /// a reference search for [basedOn] in the resource
+  /// [CommunicationRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCommunicationRequest basedOn(FhirString value) {
+    addParameterValue('based-on', value.toString());
+    return this;
+  }
+
   /// a token search for [category] in the resource
   /// [CommunicationRequest]
   SearchCommunicationRequest category(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('category', paramValue);
     return this;
   }
@@ -53,12 +71,17 @@ class SearchCommunicationRequest extends SearchResource {
   SearchCommunicationRequest groupIdentifier(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('group_identifier', paramValue);
+    final paramValue = system != null ? '$system|$value' : value.toString();
+    addParameterValue('group-identifier', paramValue);
+    return this;
+  }
+
+  /// a reference search for [informationProvider] in the resource
+  /// [CommunicationRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCommunicationRequest informationProvider(FhirString value) {
+    addParameterValue('information-provider', value.toString());
     return this;
   }
 
@@ -67,11 +90,8 @@ class SearchCommunicationRequest extends SearchResource {
   SearchCommunicationRequest medium(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('medium', paramValue);
     return this;
   }
@@ -93,12 +113,33 @@ class SearchCommunicationRequest extends SearchResource {
   SearchCommunicationRequest priority(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('priority', paramValue);
+    return this;
+  }
+
+  /// a reference search for [recipient] in the resource
+  /// [CommunicationRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCommunicationRequest recipient(FhirString value) {
+    addParameterValue('recipient', value.toString());
+    return this;
+  }
+
+  /// a reference search for [replaces] in the resource
+  /// [CommunicationRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCommunicationRequest replaces(FhirString value) {
+    addParameterValue('replaces', value.toString());
+    return this;
+  }
+
+  /// a reference search for [requester] in the resource
+  /// [CommunicationRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCommunicationRequest requester(FhirString value) {
+    addParameterValue('requester', value.toString());
     return this;
   }
 
@@ -107,12 +148,17 @@ class SearchCommunicationRequest extends SearchResource {
   SearchCommunicationRequest status(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('status', paramValue);
+    return this;
+  }
+
+  /// a reference search for [subject] in the resource
+  /// [CommunicationRequest]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchCommunicationRequest subject(FhirString value) {
+    addParameterValue('subject', value.toString());
     return this;
   }
 }

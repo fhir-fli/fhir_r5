@@ -13,12 +13,9 @@ class SearchDevice extends SearchResource {
   SearchDevice biologicalSourceEvent(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('biological_source_event', paramValue);
+    final paramValue = system != null ? '$system|$value' : value.toString();
+    addParameterValue('biological-source-event', paramValue);
     return this;
   }
 
@@ -27,27 +24,24 @@ class SearchDevice extends SearchResource {
   SearchDevice code(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('code', paramValue);
+    return this;
+  }
+
+  /// a reference search for [definition] in the resource
+  /// [Device]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchDevice definition(FhirString value) {
+    addParameterValue('definition', value.toString());
     return this;
   }
 
   /// a string search for [deviceName] in the resource
   /// [Device]
-  SearchDevice deviceName(
-    FhirString value, {
-    SearchModifier? modifier,
-  }) {
-    if (modifier != null && !['eq', 'ne'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for string type');
-    }
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('device_name', paramValue);
+  SearchDevice deviceName(FhirString value) {
+    addParameterValue('device-name', value.toString());
     return this;
   }
 
@@ -59,7 +53,7 @@ class SearchDevice extends SearchResource {
   }) {
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('expiration_date', paramValue);
+    addParameterValue('expiration-date', paramValue);
     return this;
   }
 
@@ -68,27 +62,24 @@ class SearchDevice extends SearchResource {
   SearchDevice identifier(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('identifier', paramValue);
+    return this;
+  }
+
+  /// a reference search for [location] in the resource
+  /// [Device]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchDevice location(FhirString value) {
+    addParameterValue('location', value.toString());
     return this;
   }
 
   /// a string search for [lotNumber] in the resource
   /// [Device]
-  SearchDevice lotNumber(
-    FhirString value, {
-    SearchModifier? modifier,
-  }) {
-    if (modifier != null && !['eq', 'ne'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for string type');
-    }
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('lot_number', paramValue);
+  SearchDevice lotNumber(FhirString value) {
+    addParameterValue('lot-number', value.toString());
     return this;
   }
 
@@ -100,52 +91,44 @@ class SearchDevice extends SearchResource {
   }) {
     final paramValue =
         (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('manufacture_date', paramValue);
+    addParameterValue('manufacture-date', paramValue);
     return this;
   }
 
   /// a string search for [manufacturer] in the resource
   /// [Device]
-  SearchDevice manufacturer(
-    FhirString value, {
-    SearchModifier? modifier,
-  }) {
-    if (modifier != null && !['eq', 'ne'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for string type');
-    }
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('manufacturer', paramValue);
+  SearchDevice manufacturer(FhirString value) {
+    addParameterValue('manufacturer', value.toString());
     return this;
   }
 
   /// a string search for [model] in the resource
   /// [Device]
-  SearchDevice model(
-    FhirString value, {
-    SearchModifier? modifier,
-  }) {
-    if (modifier != null && !['eq', 'ne'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for string type');
-    }
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('model', paramValue);
+  SearchDevice model(FhirString value) {
+    addParameterValue('model', value.toString());
+    return this;
+  }
+
+  /// a reference search for [organization] in the resource
+  /// [Device]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchDevice organization(FhirString value) {
+    addParameterValue('organization', value.toString());
+    return this;
+  }
+
+  /// a reference search for [parent] in the resource
+  /// [Device]
+  /// (accepts an id, a `Type/id` relative reference, or a URL)
+  SearchDevice parent(FhirString value) {
+    addParameterValue('parent', value.toString());
     return this;
   }
 
   /// a string search for [serialNumber] in the resource
   /// [Device]
-  SearchDevice serialNumber(
-    FhirString value, {
-    SearchModifier? modifier,
-  }) {
-    if (modifier != null && !['eq', 'ne'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for string type');
-    }
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('serial_number', paramValue);
+  SearchDevice serialNumber(FhirString value) {
+    addParameterValue('serial-number', value.toString());
     return this;
   }
 
@@ -154,11 +137,8 @@ class SearchDevice extends SearchResource {
   SearchDevice specification(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('specification', paramValue);
     return this;
   }
@@ -168,11 +148,8 @@ class SearchDevice extends SearchResource {
   SearchDevice status(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('status', paramValue);
     return this;
   }
@@ -182,69 +159,37 @@ class SearchDevice extends SearchResource {
   SearchDevice type(
     FhirString value, {
     FhirUri? system,
-    SearchModifier? modifier,
   }) {
-    final paramValue = system != null
-        ? (modifier != null ? '$modifier$system|$value' : '$system|$value')
-        : (modifier != null ? '$modifier$value' : value.toString());
+    final paramValue = system != null ? '$system|$value' : value.toString();
     addParameterValue('type', paramValue);
     return this;
   }
 
   /// a string search for [udiCarrier] in the resource
   /// [Device]
-  SearchDevice udiCarrier(
-    FhirString value, {
-    SearchModifier? modifier,
-  }) {
-    if (modifier != null && !['eq', 'ne'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for string type');
-    }
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('udi_carrier', paramValue);
+  SearchDevice udiCarrier(FhirString value) {
+    addParameterValue('udi-carrier', value.toString());
     return this;
   }
 
   /// a string search for [udiDi] in the resource
   /// [Device]
-  SearchDevice udiDi(
-    FhirString value, {
-    SearchModifier? modifier,
-  }) {
-    if (modifier != null && !['eq', 'ne'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for string type');
-    }
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('udi_di', paramValue);
+  SearchDevice udiDi(FhirString value) {
+    addParameterValue('udi-di', value.toString());
     return this;
   }
 
   /// a uri search for [url] in the resource
   /// [Device]
-  SearchDevice url(
-    FhirUri value, {
-    SearchModifier? modifier,
-  }) {
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('url', paramValue);
+  SearchDevice url(FhirUri value) {
+    addParameterValue('url', value.toString());
     return this;
   }
 
   /// a string search for [version] in the resource
   /// [Device]
-  SearchDevice version(
-    FhirString value, {
-    SearchModifier? modifier,
-  }) {
-    if (modifier != null && !['eq', 'ne'].contains(modifier.toString())) {
-      throw ArgumentError('Modifier $modifier not allowed for string type');
-    }
-    final paramValue =
-        (modifier != null ? '$modifier$value' : value.toString());
-    addParameterValue('version', paramValue);
+  SearchDevice version(FhirString value) {
+    addParameterValue('version', value.toString());
     return this;
   }
 }
