@@ -1,5 +1,10 @@
 # fhir_r5_mapping
 
+## [0.8.0]
+
+- Carries the `memberOf` behavior change from fhir_r5_path ^0.8.0 — an invariant or expression using `memberOf` against a value set that cannot be resolved now throws rather than silently answering no. See the fhir_r5_path 0.8.0 entry
+- fhir_r5 ^0.8.0
+
 ## [0.7.0]
 
 - BREAKING: `MedicationrequestStatusBuilder` -> `MedicationRequestStatusBuilder` and `MessageheaderResponseRequestBuilder` -> `MessageHeaderResponseRequestBuilder` (with their `...BuilderEnum` companions), matching the core enum rename (GH fhir_r4#34). Old names remain as deprecated typedef aliases
