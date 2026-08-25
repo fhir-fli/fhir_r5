@@ -5,7 +5,7 @@ import 'package:fhir_r5/fhir_r5.dart';
 import 'package:fhir_r5_path/fhir_r5_path.dart';
 import 'package:test/test.dart';
 
-import 'test_data.dart';
+import 'test_questionnaire_data.dart';
 
 Future<void> testQuestionnaire() async {
   group('Questionnaire Logic', () {
