@@ -1,5 +1,9 @@
 # fhir_r5_cds_hooks
 
+## [0.12.0]
+
+- No code changes; version aligned with the fhir_r4 0.12.0 family release
+
 ## [0.9.0]
 
 - No code changes; version aligned with the fhir_r5 0.9.0 family release
