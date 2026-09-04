@@ -1681,6 +1681,40 @@ SearchParameterLists updateSearchParameters(fhir.Resource resource) {
         );
         i++;
       }
+      // Appointment.start (date)
+      i = 0;
+      for (final entry in resource.start?.makeIterable<fhir.FhirInstant>() ??
+          <fhir.FhirInstant>[]) {
+        searchParameterLists.dateParams.addAll(
+          entry.toDateSearchParameter(
+            resourceType,
+            id,
+            lastUpdated,
+            'Appointment.start',
+            i,
+            searchName: 'date',
+          ),
+        );
+        i++;
+      }
+      // Appointment.requestedPeriod.start (date)
+      i = 0;
+      for (final entry in resource.requestedPeriod
+              ?.map<fhir.FhirDateTime?>((e) => e?.start)
+              ?.makeIterable<fhir.FhirDateTime>() ??
+          <fhir.FhirDateTime>[]) {
+        searchParameterLists.dateParams.addAll(
+          entry.toDateSearchParameter(
+            resourceType,
+            id,
+            lastUpdated,
+            'Appointment.requestedPeriod.start',
+            i,
+            searchName: 'date',
+          ),
+        );
+        i++;
+      }
       // Appointment.participant.actor (reference)
       i = 0;
       for (final entry in resource.participant
@@ -1865,6 +1899,23 @@ SearchParameterLists updateSearchParameters(fhir.Resource resource) {
             'Appointment.reason.reference',
             i,
             searchName: 'reason-reference',
+          ),
+        );
+        i++;
+      }
+      // Appointment.requestedPeriod (date)
+      i = 0;
+      for (final entry
+          in resource.requestedPeriod?.makeIterable<fhir.Period>() ??
+              <fhir.Period>[]) {
+        searchParameterLists.dateParams.addAll(
+          entry.toDateSearchParameter(
+            resourceType,
+            id,
+            lastUpdated,
+            'Appointment.requestedPeriod',
+            i,
+            searchName: 'requested-period',
           ),
         );
         i++;
@@ -23753,6 +23804,23 @@ SearchParameterLists updateSearchParameters(fhir.Resource resource) {
         );
         i++;
       }
+      // Observation.value.ofType(CodeableConcept).text (string)
+      i = 0;
+      for (final entry in resource.valueCodeableConcept?.text
+              ?.makeIterable<fhir.FhirString>() ??
+          <fhir.FhirString>[]) {
+        searchParameterLists.stringParams.addAll(
+          entry.toStringSearchParameter(
+            resourceType,
+            id,
+            lastUpdated,
+            'Observation.value.ofType(CodeableConcept).text',
+            i,
+            searchName: 'value-markdown',
+          ),
+        );
+        i++;
+      }
       // Observation.value.ofType(Quantity) (quantity)
       i = 0;
       for (final entry
@@ -35353,6 +35421,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'composed-of': [
       "ActivityDefinition.relatedArtifact.where(type='composed-of').resource"
     ],
+    'context': ['ActivityDefinition.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'ActivityDefinition.useContext.value.ofType(Quantity)',
+      'ActivityDefinition.useContext.value.ofType(Range)'
+    ],
     'context-type': ['ActivityDefinition.useContext.code'],
     'context-type-quantity': ['ActivityDefinition.useContext'],
     'context-type-value': ['ActivityDefinition.useContext'],
@@ -35384,6 +35457,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'version': ['ActivityDefinition.version'],
   },
   'ActorDefinition': {
+    'context': ['ActorDefinition.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'ActorDefinition.useContext.value.ofType(Quantity)',
+      'ActorDefinition.useContext.value.ofType(Range)'
+    ],
     'context-type': ['ActorDefinition.useContext.code'],
     'context-type-quantity': ['ActorDefinition.useContext'],
     'context-type-value': ['ActorDefinition.useContext'],
@@ -35429,6 +35507,7 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'status': ['AdverseEvent.status'],
     'study': ['AdverseEvent.study'],
     'subject': ['AdverseEvent.subject'],
+    'substance': ['AdverseEvent.suspectEntity.instance.ofType(Reference)'],
   },
   'AllergyIntolerance': {
     'category': ['AllergyIntolerance.category'],
@@ -35456,6 +35535,7 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'actor': ['Appointment.participant.actor'],
     'appointment-type': ['Appointment.appointmentType'],
     'based-on': ['Appointment.basedOn'],
+    'date': ['Appointment.requestedPeriod.start', 'Appointment.start'],
     'group': [
       'Appointment.participant.actor.where(resolve() is Group)',
       'Appointment.subject.where(resolve() is Group)'
@@ -35472,6 +35552,7 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     ],
     'reason-code': ['Appointment.reason.concept'],
     'reason-reference': ['Appointment.reason.reference'],
+    'requested-period': ['Appointment.requestedPeriod'],
     'service-category': ['Appointment.serviceCategory'],
     'service-type': ['Appointment.serviceType.concept'],
     'service-type-reference': ['Appointment.serviceType.reference'],
@@ -35549,13 +35630,18 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'patient': ['BodyStructure.patient'],
   },
   'Bundle': {
-    'composition': ['Bundle.entry[0].resource as Composition'],
+    'composition': ['Bundle.entry[0].resource.ofType(Composition)'],
     'identifier': ['Bundle.identifier'],
-    'message': ['Bundle.entry[0].resource as MessageHeader'],
+    'message': ['Bundle.entry[0].resource.ofType(MessageHeader)'],
     'timestamp': ['Bundle.timestamp'],
     'type': ['Bundle.type'],
   },
   'CapabilityStatement': {
+    'context': ['CapabilityStatement.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'CapabilityStatement.useContext.value.ofType(Quantity)',
+      'CapabilityStatement.useContext.value.ofType(Range)'
+    ],
     'context-type': ['CapabilityStatement.useContext.code'],
     'context-type-quantity': ['CapabilityStatement.useContext'],
     'context-type-value': ['CapabilityStatement.useContext'],
@@ -35636,6 +35722,13 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'subject': ['ChargeItem.subject'],
   },
   'ChargeItemDefinition': {
+    'context': [
+      'ChargeItemDefinition.useContext.value.ofType(CodeableConcept)'
+    ],
+    'context-quantity': [
+      'ChargeItemDefinition.useContext.value.ofType(Quantity)',
+      'ChargeItemDefinition.useContext.value.ofType(Range)'
+    ],
     'context-type': ['ChargeItemDefinition.useContext.code'],
     'context-type-quantity': ['ChargeItemDefinition.useContext'],
     'context-type-value': ['ChargeItemDefinition.useContext'],
@@ -35652,6 +35745,13 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
   },
   'Citation': {
     'classification': ['Citation.classification'],
+    'classification-type': ['Citation.classification.type'],
+    'classifier': ['Citation.classification.classifier'],
+    'context': ['Citation.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'Citation.useContext.value.ofType(Quantity)',
+      'Citation.useContext.value.ofType(Range)'
+    ],
     'context-type': ['Citation.useContext.code'],
     'context-type-quantity': ['Citation.useContext'],
     'context-type-value': ['Citation.useContext'],
@@ -35744,6 +35844,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
   'CodeSystem': {
     'code': ['CodeSystem.concept.code'],
     'content-mode': ['CodeSystem.content'],
+    'context': ['CodeSystem.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'CodeSystem.useContext.value.ofType(Quantity)',
+      'CodeSystem.useContext.value.ofType(Range)'
+    ],
     'context-type': ['CodeSystem.useContext.code'],
     'context-type-quantity': ['CodeSystem.useContext'],
     'context-type-value': ['CodeSystem.useContext'],
@@ -35810,6 +35915,13 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
   },
   'CompartmentDefinition': {
     'code': ['CompartmentDefinition.code'],
+    'context': [
+      'CompartmentDefinition.useContext.value.ofType(CodeableConcept)'
+    ],
+    'context-quantity': [
+      'CompartmentDefinition.useContext.value.ofType(Quantity)',
+      'CompartmentDefinition.useContext.value.ofType(Range)'
+    ],
     'context-type': ['CompartmentDefinition.useContext.code'],
     'context-type-quantity': ['CompartmentDefinition.useContext'],
     'context-type-value': ['CompartmentDefinition.useContext'],
@@ -35849,6 +35961,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'version': ['Composition.version'],
   },
   'ConceptMap': {
+    'context': ['ConceptMap.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'ConceptMap.useContext.value.ofType(Quantity)',
+      'ConceptMap.useContext.value.ofType(Range)'
+    ],
     'context-type': ['ConceptMap.useContext.code'],
     'context-type-quantity': ['ConceptMap.useContext'],
     'context-type-value': ['ConceptMap.useContext'],
@@ -35869,9 +35986,13 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'publisher': ['ConceptMap.publisher'],
     'source-code': ['ConceptMap.group.element.code'],
     'source-group-system': ['ConceptMap.group.source'],
+    'source-scope': ['ConceptMap.sourceScope.ofType(canonical)'],
+    'source-scope-uri': ['ConceptMap.sourceScope.ofType(uri)'],
     'status': ['ConceptMap.status'],
     'target-code': ['ConceptMap.group.element.target.code'],
     'target-group-system': ['ConceptMap.group.target'],
+    'target-scope': ['ConceptMap.targetScope.ofType(canonical)'],
+    'target-scope-uri': ['ConceptMap.targetScope.ofType(uri)'],
     'title': ['ConceptMap.title'],
     'topic': ['ConceptMap.topic'],
     'url': ['ConceptMap.url'],
@@ -35914,6 +36035,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'verification-status': ['Condition.verificationStatus'],
   },
   'ConditionDefinition': {
+    'context': ['ConditionDefinition.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'ConditionDefinition.useContext.value.ofType(Quantity)',
+      'ConditionDefinition.useContext.value.ofType(Range)'
+    ],
     'context-type': ['ConditionDefinition.useContext.code'],
     'context-type-quantity': ['ConditionDefinition.useContext'],
     'context-type-value': ['ConditionDefinition.useContext'],
@@ -36080,6 +36206,10 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'code': ['DeviceRequest.code.concept'],
     'device': ['DeviceRequest.code.reference'],
     'encounter': ['DeviceRequest.encounter'],
+    'event-date': [
+      'DeviceRequest.occurrence.ofType(Period)',
+      'DeviceRequest.occurrence.ofType(dateTime)'
+    ],
     'group-identifier': ['DeviceRequest.groupIdentifier'],
     'identifier': ['DeviceRequest.identifier'],
     'instantiates-canonical': ['DeviceRequest.instantiatesCanonical'],
@@ -36139,6 +36269,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'event-code': ['DocumentReference.event.concept'],
     'event-reference': ['DocumentReference.event.reference'],
     'facility': ['DocumentReference.facilityType'],
+    'format-canonical': [
+      'DocumentReference.content.profile.value.ofType(canonical)'
+    ],
+    'format-code': ['DocumentReference.content.profile.value.ofType(Coding)'],
+    'format-uri': ['DocumentReference.content.profile.value.ofType(uri)'],
     'identifier': ['DocumentReference.identifier'],
     'language': ['DocumentReference.content.attachment.language'],
     'location': ['DocumentReference.content.attachment.url'],
@@ -36225,6 +36360,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'composed-of': [
       "EventDefinition.relatedArtifact.where(type='composed-of').resource"
     ],
+    'context': ['EventDefinition.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'EventDefinition.useContext.value.ofType(Quantity)',
+      'EventDefinition.useContext.value.ofType(Range)'
+    ],
     'context-type': ['EventDefinition.useContext.code'],
     'context-type-quantity': ['EventDefinition.useContext'],
     'context-type-value': ['EventDefinition.useContext'],
@@ -36254,6 +36394,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'version': ['EventDefinition.version'],
   },
   'Evidence': {
+    'context': ['Evidence.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'Evidence.useContext.value.ofType(Quantity)',
+      'Evidence.useContext.value.ofType(Range)'
+    ],
     'context-type': ['Evidence.useContext.code'],
     'context-type-quantity': ['Evidence.useContext'],
     'context-type-value': ['Evidence.useContext'],
@@ -36267,6 +36412,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'version': ['Evidence.version'],
   },
   'EvidenceReport': {
+    'context': ['EvidenceReport.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'EvidenceReport.useContext.value.ofType(Quantity)',
+      'EvidenceReport.useContext.value.ofType(Range)'
+    ],
     'context-type': ['EvidenceReport.useContext.code'],
     'context-type-quantity': ['EvidenceReport.useContext'],
     'context-type-value': ['EvidenceReport.useContext'],
@@ -36278,6 +36428,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
   'EvidenceVariable': {
     'composed-of': [
       "EvidenceVariable.relatedArtifact.where(type='composed-of').resource"
+    ],
+    'context': ['EvidenceVariable.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'EvidenceVariable.useContext.value.ofType(Quantity)',
+      'EvidenceVariable.useContext.value.ofType(Range)'
     ],
     'context-type': ['EvidenceVariable.useContext.code'],
     'context-type-quantity': ['EvidenceVariable.useContext'],
@@ -36305,6 +36460,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'version': ['EvidenceVariable.version'],
   },
   'ExampleScenario': {
+    'context': ['ExampleScenario.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'ExampleScenario.useContext.value.ofType(Quantity)',
+      'ExampleScenario.useContext.value.ofType(Range)'
+    ],
     'context-type': ['ExampleScenario.useContext.code'],
     'context-type-quantity': ['ExampleScenario.useContext'],
     'context-type-value': ['ExampleScenario.useContext'],
@@ -36376,10 +36536,17 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'identifier': ['Goal.identifier'],
     'lifecycle-status': ['Goal.lifecycleStatus'],
     'patient': ['Goal.subject.where(resolve() is Patient)'],
+    'start-date': ['Goal.start.ofType(date)'],
     'subject': ['Goal.subject'],
+    'target-date': ['Goal.target.due.ofType(date)'],
     'target-measure': ['Goal.target.measure'],
   },
   'GraphDefinition': {
+    'context': ['GraphDefinition.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'GraphDefinition.useContext.value.ofType(Quantity)',
+      'GraphDefinition.useContext.value.ofType(Range)'
+    ],
     'context-type': ['GraphDefinition.useContext.code'],
     'context-type-quantity': ['GraphDefinition.useContext'],
     'context-type-value': ['GraphDefinition.useContext'],
@@ -36450,6 +36617,7 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'subject': ['ImagingStudy.subject'],
   },
   'Immunization': {
+    'date': ['Immunization.occurrence.ofType(dateTime)'],
     'identifier': ['Immunization.identifier'],
     'location': ['Immunization.location'],
     'lot-number': ['Immunization.lotNumber'],
@@ -36492,6 +36660,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'vaccine-type': ['ImmunizationRecommendation.recommendation.vaccineCode'],
   },
   'ImplementationGuide': {
+    'context': ['ImplementationGuide.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'ImplementationGuide.useContext.value.ofType(Quantity)',
+      'ImplementationGuide.useContext.value.ofType(Range)'
+    ],
     'context-type': ['ImplementationGuide.useContext.code'],
     'context-type-quantity': ['ImplementationGuide.useContext'],
     'context-type-value': ['ImplementationGuide.useContext'],
@@ -36581,6 +36754,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
       "Library.relatedArtifact.where(type='composed-of').resource"
     ],
     'content-type': ['Library.content.contentType'],
+    'context': ['Library.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'Library.useContext.value.ofType(Quantity)',
+      'Library.useContext.value.ofType(Range)'
+    ],
     'context-type': ['Library.useContext.code'],
     'context-type-quantity': ['Library.useContext'],
     'context-type-value': ['Library.useContext'],
@@ -36642,6 +36820,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
   'Measure': {
     'composed-of': [
       "Measure.relatedArtifact.where(type='composed-of').resource"
+    ],
+    'context': ['Measure.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'Measure.useContext.value.ofType(Quantity)',
+      'Measure.useContext.value.ofType(Range)'
     ],
     'context-type': ['Measure.useContext.code'],
     'context-type-quantity': ['Measure.useContext'],
@@ -36760,7 +36943,10 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'authoredon': ['MedicationRequest.authoredOn'],
     'category': ['MedicationRequest.category'],
     'code': ['MedicationRequest.medication.concept'],
-    'combo-date': ['MedicationRequest.dosageInstruction.timing.event'],
+    'combo-date': [
+      'MedicationRequest.dosageInstruction.timing.event',
+      'MedicationRequest.dosageInstruction.timing.repeat.bounds.ofType(Period)'
+    ],
     'encounter': ['MedicationRequest.encounter'],
     'group-identifier': ['MedicationRequest.groupIdentifier'],
     'identifier': ['MedicationRequest.identifier'],
@@ -36810,6 +36996,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
   },
   'MessageDefinition': {
     'category': ['MessageDefinition.category'],
+    'context': ['MessageDefinition.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'MessageDefinition.useContext.value.ofType(Quantity)',
+      'MessageDefinition.useContext.value.ofType(Range)'
+    ],
     'context-type': ['MessageDefinition.useContext.code'],
     'context-type-quantity': ['MessageDefinition.useContext'],
     'context-type-value': ['MessageDefinition.useContext'],
@@ -36852,6 +37043,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
   },
   'NamingSystem': {
     'contact': ['NamingSystem.contact.name'],
+    'context': ['NamingSystem.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'NamingSystem.useContext.value.ofType(Quantity)',
+      'NamingSystem.useContext.value.ofType(Range)'
+    ],
     'context-type': ['NamingSystem.useContext.code'],
     'context-type-quantity': ['NamingSystem.useContext'],
     'context-type-value': ['NamingSystem.useContext'],
@@ -36890,6 +37086,7 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'identifier': ['NutritionIntake.identifier'],
     'nutrition': ['NutritionIntake.consumedItem.nutritionProduct.concept'],
     'patient': ['NutritionIntake.subject.where(resolve() is Patient)'],
+    'source': ['NutritionIntake.reported.ofType(Reference)'],
     'status': ['NutritionIntake.status'],
     'subject': ['NutritionIntake.subject'],
   },
@@ -37001,6 +37198,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
   'OperationDefinition': {
     'base': ['OperationDefinition.base'],
     'code': ['OperationDefinition.code'],
+    'context': ['OperationDefinition.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'OperationDefinition.useContext.value.ofType(Quantity)',
+      'OperationDefinition.useContext.value.ofType(Range)'
+    ],
     'context-type': ['OperationDefinition.useContext.code'],
     'context-type-quantity': ['OperationDefinition.useContext'],
     'context-type-value': ['OperationDefinition.useContext'],
@@ -37093,6 +37295,7 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'address-state': ['Patient.address.state'],
     'address-use': ['Patient.address.use'],
     'birthdate': ['Patient.birthDate'],
+    'death-date': ['Patient.deceased.ofType(dateTime)'],
     'deceased': ['Patient.deceased.exists() and Patient.deceased != false'],
     'email': ["Patient.telecom.where(system='email')"],
     'family': ['Patient.name.family'],
@@ -37140,6 +37343,7 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'address-state': ['Person.address.state'],
     'address-use': ['Person.address.use'],
     'birthdate': ['Person.birthDate'],
+    'death-date': ['Person.deceased.ofType(dateTime)'],
     'deceased': ['Person.deceased.exists() and Person.deceased != false'],
     'email': ["Person.telecom.where(system='email')"],
     'family': ['Person.name.family'],
@@ -37159,6 +37363,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
   'PlanDefinition': {
     'composed-of': [
       "PlanDefinition.relatedArtifact.where(type='composed-of').resource"
+    ],
+    'context': ['PlanDefinition.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'PlanDefinition.useContext.value.ofType(Quantity)',
+      'PlanDefinition.useContext.value.ofType(Range)'
     ],
     'context-type': ['PlanDefinition.useContext.code'],
     'context-type-quantity': ['PlanDefinition.useContext'],
@@ -37203,6 +37412,7 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'address-state': ['Practitioner.address.state'],
     'address-use': ['Practitioner.address.use'],
     'communication': ['Practitioner.communication.language'],
+    'death-date': ['Practitioner.deceased.ofType(dateTime)'],
     'deceased': [
       'Practitioner.deceased.exists() and Practitioner.deceased != false'
     ],
@@ -37273,9 +37483,15 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'recorded': ['Provenance.recorded'],
     'signature-type': ['Provenance.signature.type'],
     'target': ['Provenance.target'],
+    'when': ['Provenance.occurred.ofType(dateTime)'],
   },
   'Questionnaire': {
     'combo-code': ['Questionnaire.code', 'Questionnaire.item.code'],
+    'context': ['Questionnaire.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'Questionnaire.useContext.value.ofType(Quantity)',
+      'Questionnaire.useContext.value.ofType(Range)'
+    ],
     'context-type': ['Questionnaire.useContext.code'],
     'context-type-quantity': ['Questionnaire.useContext'],
     'context-type-value': ['Questionnaire.useContext'],
@@ -37363,6 +37579,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
   },
   'Requirements': {
     'actor': ['Requirements.actor'],
+    'context': ['Requirements.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'Requirements.useContext.value.ofType(Quantity)',
+      'Requirements.useContext.value.ofType(Range)'
+    ],
     'context-type': ['Requirements.useContext.code'],
     'context-type-quantity': ['Requirements.useContext'],
     'context-type-value': ['Requirements.useContext'],
@@ -37416,6 +37637,7 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
   },
   'RiskAssessment': {
     'condition': ['RiskAssessment.condition'],
+    'date': ['RiskAssessment.occurrence.ofType(dateTime)'],
     'encounter': ['RiskAssessment.encounter'],
     'identifier': ['RiskAssessment.identifier'],
     'method': ['RiskAssessment.method'],
@@ -37440,6 +37662,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'base': ['SearchParameter.base'],
     'code': ['SearchParameter.code'],
     'component': ['SearchParameter.component.definition'],
+    'context': ['SearchParameter.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'SearchParameter.useContext.value.ofType(Quantity)',
+      'SearchParameter.useContext.value.ofType(Range)'
+    ],
     'context-type': ['SearchParameter.useContext.code'],
     'context-type-quantity': ['SearchParameter.useContext'],
     'context-type-value': ['SearchParameter.useContext'],
@@ -37533,6 +37760,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
       'StructureDefinition.differential.element.base.path',
       'StructureDefinition.snapshot.element.base.path'
     ],
+    'context': ['StructureDefinition.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'StructureDefinition.useContext.value.ofType(Quantity)',
+      'StructureDefinition.useContext.value.ofType(Range)'
+    ],
     'context-type': ['StructureDefinition.useContext.code'],
     'context-type-quantity': ['StructureDefinition.useContext'],
     'context-type-value': ['StructureDefinition.useContext'],
@@ -37561,6 +37793,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'version': ['StructureDefinition.version'],
   },
   'StructureMap': {
+    'context': ['StructureMap.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'StructureMap.useContext.value.ofType(Quantity)',
+      'StructureMap.useContext.value.ofType(Range)'
+    ],
     'context-type': ['StructureMap.useContext.code'],
     'context-type-quantity': ['StructureMap.useContext'],
     'context-type-value': ['StructureMap.useContext'],
@@ -37611,12 +37848,16 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
   },
   'Substance': {
     'category': ['Substance.category'],
-    'code': ['Substance.code.concept'],
+    'code': [
+      'Substance.code.concept',
+      'Substance.ingredient.substance.ofType(CodeableConcept)'
+    ],
     'code-reference': ['Substance.code.reference'],
     'expiry': ['Substance.expiry'],
     'identifier': ['Substance.identifier'],
     'quantity': ['Substance.quantity'],
     'status': ['Substance.status'],
+    'substance-reference': ['Substance.ingredient.substance.ofType(Reference)'],
   },
   'SubstanceDefinition': {
     'classification': ['SubstanceDefinition.classification'],
@@ -37667,6 +37908,13 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'subject': ['Task.for'],
   },
   'TerminologyCapabilities': {
+    'context': [
+      'TerminologyCapabilities.useContext.value.ofType(CodeableConcept)'
+    ],
+    'context-quantity': [
+      'TerminologyCapabilities.useContext.value.ofType(Quantity)',
+      'TerminologyCapabilities.useContext.value.ofType(Range)'
+    ],
     'context-type': ['TerminologyCapabilities.useContext.code'],
     'context-type-quantity': ['TerminologyCapabilities.useContext'],
     'context-type-value': ['TerminologyCapabilities.useContext'],
@@ -37697,6 +37945,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'testscript': ['TestReport.testScript'],
   },
   'TestScript': {
+    'context': ['TestScript.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'TestScript.useContext.value.ofType(Quantity)',
+      'TestScript.useContext.value.ofType(Range)'
+    ],
     'context-type': ['TestScript.useContext.code'],
     'context-type-quantity': ['TestScript.useContext'],
     'context-type-value': ['TestScript.useContext'],
@@ -37723,6 +37976,11 @@ const Map<String, Map<String, List<String>>> searchParamMap = {
     'code': [
       'ValueSet.compose.include.concept.code',
       'ValueSet.expansion.contains.code'
+    ],
+    'context': ['ValueSet.useContext.value.ofType(CodeableConcept)'],
+    'context-quantity': [
+      'ValueSet.useContext.value.ofType(Quantity)',
+      'ValueSet.useContext.value.ofType(Range)'
     ],
     'context-type': ['ValueSet.useContext.code'],
     'context-type-quantity': ['ValueSet.useContext'],
