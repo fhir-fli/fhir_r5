@@ -151,6 +151,42 @@ class InvalidSearchValue implements Exception {
   String toString() => 'InvalidSearchValue: $message';
 }
 
+/// Thrown when a reference searched by bare logical id matches resources of
+/// more than one type.
+///
+/// R5 3.1.1.4.12: "Some references may point to more than one type of
+/// resource; e.g. subject: Reference(Patient|Group|Device|..). In these
+/// cases, multiple resources may have the same logical identifier. Servers
+/// SHOULD reject a search where the logical id refers to more than one
+/// matching resource across different types." The client says which with
+/// `[type]/[id]` or `[parameter]:[type]=[id]`.
+class AmbiguousReference implements Exception {
+  /// Creates the failure for [value] on [parameter], naming the [types].
+  const AmbiguousReference({
+    required this.parameter,
+    required this.value,
+    required this.types,
+  });
+
+  /// The search parameter as the client wrote it.
+  final String parameter;
+
+  /// The bare id searched for.
+  final String value;
+
+  /// The resource types that id refers to here.
+  final List<String> types;
+
+  /// A message naming the ambiguity and the way out.
+  String get message =>
+      'The id "$value" on "$parameter" refers to resources of more than one '
+      'type (${types.join(", ")}). Give the type: '
+      '$parameter=${types.first}/$value or $parameter:${types.first}=$value.';
+
+  @override
+  String toString() => 'AmbiguousReference: $message';
+}
+
 /// The modifiers R5 allows, per search parameter type.
 ///
 /// This is NOT generated, and it cannot be: R5 core populates
@@ -162,7 +198,7 @@ const modifiersByType = <String, Set<String>>{
   // `text-advanced` over R4, gives `contains` to uri, and gives reference
   // `not-in` and `text`.
   'string': {'missing', 'exact', 'contains', 'text'},
-  'token': {'missing', 'text', 'not', 'in', 'not-in', 'of-type'},
+  'token': {'missing', 'text', 'not', 'in', 'not-in', 'of-type', 'below'},
   // A reference also takes ":[ResourceType]", which is not a fixed word and is
   // checked separately.
   'reference': {'missing', 'identifier', 'type'},
@@ -189,14 +225,14 @@ const modifiersByType = <String, Set<String>>{
 /// additions. Before this every one was listed as allowed and answered as
 /// a plain match — a narrower answer than asked for, silently.
 const unsupportedModifiersByType = <String, Set<String>>{
-  'token': {'above', 'below', 'text-advanced', 'code-text'},
+  'token': {'above', 'text-advanced', 'code-text'},
   'reference': {
     'above',
     'below',
     'not-in',
     'text',
     'text-advanced',
-    'code-text'
+    'code-text',
   },
   'uri': {'contains'},
 };
@@ -206,7 +242,11 @@ SearchParameterDefinition? searchParameterFor(
   String resourceType,
   String code,
 ) =>
-    searchParameterTypes[resourceType]?[code] ??
+    // A contained resource's rows are filed under `#Type` (search
+    // §3.1.1.5.5); its parameters are the type's own.
+    searchParameterTypes[resourceType.startsWith('#')
+        ? resourceType.substring(1)
+        : resourceType]?[code] ??
     // `_id`, `_lastUpdated`, `_tag`, `_profile`, `_security`, `_source` and
     // the rest of R4B 3.1.1.4.1 are published against Resource and
     // DomainResource, not against each type.
