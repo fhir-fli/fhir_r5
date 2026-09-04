@@ -1,6 +1,7 @@
 import 'package:drift/drift.dart';
 import 'package:fhir_r5/fhir_r5.dart' as fhir;
-import 'package:fhir_r5_db/fhir_r5_db.dart' show TokenSearchParametersCompanion;
+import 'package:fhir_r5_db/fhir_r5_db.dart'
+    show TokenSearchParametersCompanion, normalizeSearchString;
 
 /// Token Search Parameter Table
 class TokenSearchParameters extends Table {
@@ -28,7 +29,10 @@ class TokenSearchParameters extends Table {
   /// The value (code or identifier)
   TextColumn get tokenValue => text()();
 
-  /// Optional display value for human-readable searches
+  /// The text associated with the code — CodeableConcept.text,
+  /// Coding.display or Identifier.type.text — stored NORMALIZED (folded
+  /// like the string index), because `:text` "functions as a normal string
+  /// search" (§3.1.1.4.10): case- and accent-insensitive, starts-with.
   TextColumn get tokenDisplay => text().nullable()();
 
   @override
@@ -77,7 +81,7 @@ extension TokenSearchParametersExtension on fhir.FhirBase {
                   : const Value.absent(),
               tokenValue: Value(enumCode.valueString!),
               tokenDisplay: enumCode.display?.valueString != null
-                  ? Value(enumCode.display!.valueString)
+                  ? Value(normalizeSearchString(enumCode.display!.valueString!))
                   : const Value.absent(),
             ),
           );
@@ -118,7 +122,7 @@ extension TokenSearchParametersExtension on fhir.FhirBase {
               tokenValue: Value(coding.code!.valueString!),
               tokenDisplay: coding.display?.valueString == null
                   ? const Value.absent()
-                  : Value(coding.display!.valueString),
+                  : Value(normalizeSearchString(coding.display!.valueString!)),
             ),
           );
         }
@@ -146,7 +150,9 @@ extension TokenSearchParametersExtension on fhir.FhirBase {
                   tokenValue: Value(coding.code!.valueString!),
                   tokenDisplay: coding.display?.valueString == null
                       ? const Value.absent()
-                      : Value(coding.display!.valueString),
+                      : Value(
+                          normalizeSearchString(coding.display!.valueString!),
+                        ),
                 ),
               );
             }
@@ -172,7 +178,9 @@ extension TokenSearchParametersExtension on fhir.FhirBase {
                 paramIndex == null ? textIndex : paramIndex * 100 + textIndex,
               ),
               tokenValue: const Value(''),
-              tokenDisplay: Value(codeableConcept.text!.valueString),
+              tokenDisplay: Value(
+                normalizeSearchString(codeableConcept.text!.valueString!),
+              ),
             ),
           );
         }
@@ -195,7 +203,13 @@ extension TokenSearchParametersExtension on fhir.FhirBase {
                   : Value(identifier.system!.valueString),
               tokenValue: Value(identifier.value!.valueString!),
               // R5 3.1.1.4.10: `:text` searches "Identifier.type.text".
-              tokenDisplay: Value(identifier.type?.text?.valueString),
+              tokenDisplay: identifier.type?.text?.valueString == null
+                  ? const Value.absent()
+                  : Value(
+                      normalizeSearchString(
+                        identifier.type!.text!.valueString!,
+                      ),
+                    ),
             ),
           );
         }
