@@ -14,9 +14,6 @@ class TokenSearchParameters extends Table {
   /// When the resource was last updated
   IntColumn get lastUpdated => integer()();
 
-  /// FHIRPath expression identifying the source field
-  TextColumn get searchPath => text()();
-
   /// HTTP search parameter name (e.g., 'monitoring-program-name')
   TextColumn get searchName => text().withDefault(const Constant(''))();
 
@@ -35,15 +32,16 @@ class TokenSearchParameters extends Table {
   /// search" (§3.1.1.4.10): case- and accent-insensitive, starts-with.
   TextColumn get tokenDisplay => text().nullable()();
 
-  @override
-
-  /// searchName is part of the key: one FHIR path can back more than one
-  /// search parameter — Observation.code serves both `code` and
-  /// `combo-code` — and without it the second one collides with the first
-  /// on insert, so only one of them could ever be indexed.
-  @override
-  Set<Column> get primaryKey =>
-      {resourceType, id, searchPath, searchName, paramIndex};
+  /// No declared key: a rowid table. The key used to be
+  /// `(resource_type, id, search_path, search_name, param_index)`, which
+  /// stored the FHIRPath of every row in a second copy inside a unique
+  /// index that no search read (measured 2026-09-06 on 929k MIMIC
+  /// resources: 1.16 GB of key indexes across the nine tables, REVIEW
+  /// §4.4-4.5). What a search reads is the covering indexes and what a
+  /// re-index deletes by is the owner index, both in
+  /// `FhirDb.createValueIndexes`. Two rows that only differed in their path
+  /// (Observation.code and Observation.component.code under `combo-code`)
+  /// are simply two rows.
 }
 
 /// Extension on [fhir.FhirBase] to extract token search parameters.
@@ -72,7 +70,6 @@ extension TokenSearchParametersExtension on fhir.FhirBase {
               resourceType: Value(resourceType),
               id: Value(id),
               lastUpdated: Value(lastUpdated),
-              searchPath: Value(searchPath),
               searchName: Value(searchName),
               paramIndex:
                   paramIndex == null ? const Value.absent() : Value(paramIndex),
@@ -95,7 +92,6 @@ extension TokenSearchParametersExtension on fhir.FhirBase {
               resourceType: Value(resourceType),
               id: Value(id),
               lastUpdated: Value(lastUpdated),
-              searchPath: Value(searchPath),
               searchName: Value(searchName),
               paramIndex:
                   paramIndex == null ? const Value.absent() : Value(paramIndex),
@@ -112,7 +108,6 @@ extension TokenSearchParametersExtension on fhir.FhirBase {
               resourceType: Value(resourceType),
               id: Value(id),
               lastUpdated: Value(lastUpdated),
-              searchPath: Value(searchPath),
               searchName: Value(searchName),
               paramIndex:
                   paramIndex == null ? const Value.absent() : Value(paramIndex),
@@ -140,7 +135,6 @@ extension TokenSearchParametersExtension on fhir.FhirBase {
                   resourceType: Value(resourceType),
                   id: Value(id),
                   lastUpdated: Value(lastUpdated),
-                  searchPath: Value(searchPath),
                   searchName: Value(searchName),
                   paramIndex:
                       Value(paramIndex == null ? i : paramIndex * 100 + i),
@@ -172,7 +166,6 @@ extension TokenSearchParametersExtension on fhir.FhirBase {
               resourceType: Value(resourceType),
               id: Value(id),
               lastUpdated: Value(lastUpdated),
-              searchPath: Value(searchPath),
               searchName: Value(searchName),
               paramIndex: Value(
                 paramIndex == null ? textIndex : paramIndex * 100 + textIndex,
@@ -194,7 +187,6 @@ extension TokenSearchParametersExtension on fhir.FhirBase {
               resourceType: Value(resourceType),
               id: Value(id),
               lastUpdated: Value(lastUpdated),
-              searchPath: Value(searchPath),
               searchName: Value(searchName),
               paramIndex:
                   paramIndex == null ? const Value.absent() : Value(paramIndex),
@@ -222,7 +214,6 @@ extension TokenSearchParametersExtension on fhir.FhirBase {
               resourceType: Value(resourceType),
               id: Value(id),
               lastUpdated: Value(lastUpdated),
-              searchPath: Value(searchPath),
               searchName: Value(searchName),
               paramIndex:
                   paramIndex == null ? const Value.absent() : Value(paramIndex),
@@ -239,7 +230,6 @@ extension TokenSearchParametersExtension on fhir.FhirBase {
               resourceType: Value(resourceType),
               id: Value(id),
               lastUpdated: Value(lastUpdated),
-              searchPath: Value(searchPath),
               searchName: Value(searchName),
               paramIndex:
                   paramIndex == null ? const Value.absent() : Value(paramIndex),
@@ -265,7 +255,6 @@ extension TokenSearchParametersExtension on fhir.FhirBase {
               resourceType: Value(resourceType),
               id: Value(id),
               lastUpdated: Value(lastUpdated),
-              searchPath: Value(searchPath),
               searchName: Value(searchName),
               paramIndex:
                   paramIndex == null ? const Value.absent() : Value(paramIndex),
@@ -282,7 +271,6 @@ extension TokenSearchParametersExtension on fhir.FhirBase {
               resourceType: Value(resourceType),
               id: Value(id),
               lastUpdated: Value(lastUpdated),
-              searchPath: Value(searchPath),
               searchName: Value(searchName),
               paramIndex:
                   paramIndex == null ? const Value.absent() : Value(paramIndex),
