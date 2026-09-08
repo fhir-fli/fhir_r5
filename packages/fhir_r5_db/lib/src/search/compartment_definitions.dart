@@ -28,7 +28,12 @@ const Map<String, Map<String, List<String>>> compartmentDefinitions = {
     'DeviceRequest': ['performer', 'requester', 'subject'],
     'DiagnosticReport': ['subject'],
     'DocumentReference': ['author', 'subject'],
-    'ExplanationOfBenefit': ['detail-udi', 'item-udi', 'procedure-udi', 'subdetail-udi'],
+    'ExplanationOfBenefit': [
+      'detail-udi',
+      'item-udi',
+      'procedure-udi',
+      'subdetail-udi'
+    ],
     'Flag': ['author'],
     'Group': ['member'],
     'Invoice': ['participant'],
@@ -89,12 +94,22 @@ const Map<String, Map<String, List<String>>> compartmentDefinitions = {
     'ClaimResponse': ['patient'],
     'ClinicalImpression': ['subject'],
     'Communication': ['recipient', 'sender', 'subject'],
-    'CommunicationRequest': ['information-provider', 'recipient', 'requester', 'subject'],
+    'CommunicationRequest': [
+      'information-provider',
+      'recipient',
+      'requester',
+      'subject'
+    ],
     'Composition': ['attester', 'author', 'subject'],
     'Condition': ['participant-actor', 'patient'],
     'Consent': ['subject'],
     'Contract': ['patient'],
-    'Coverage': ['beneficiary', 'paymentby-party', 'policy-holder', 'subscriber'],
+    'Coverage': [
+      'beneficiary',
+      'paymentby-party',
+      'policy-holder',
+      'subscriber'
+    ],
     'CoverageEligibilityRequest': ['patient'],
     'CoverageEligibilityResponse': ['patient'],
     'DetectedIssue': ['patient'],
