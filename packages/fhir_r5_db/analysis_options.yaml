@@ -9,3 +9,10 @@ analyzer:
     # R5 SearchParameter definitions, so lint fixes belong in the generator,
     # not here. Hand-written sources in this package are all lint-clean.
     - lib/src/search/search_parameters.dart
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+    - macos/**
+    - linux/**

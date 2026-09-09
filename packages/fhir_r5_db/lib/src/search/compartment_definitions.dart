@@ -1,4 +1,3 @@
-// ignore_for_file: lines_longer_than_80_chars
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // Generated from profiles-resources.json by
 // fhir_generator/lib/src/generate_compartment_definitions.dart
@@ -32,7 +31,7 @@ const Map<String, Map<String, List<String>>> compartmentDefinitions = {
       'detail-udi',
       'item-udi',
       'procedure-udi',
-      'subdetail-udi'
+      'subdetail-udi',
     ],
     'Flag': ['author'],
     'Group': ['member'],
@@ -98,7 +97,7 @@ const Map<String, Map<String, List<String>>> compartmentDefinitions = {
       'information-provider',
       'recipient',
       'requester',
-      'subject'
+      'subject',
     ],
     'Composition': ['attester', 'author', 'subject'],
     'Condition': ['participant-actor', 'patient'],
@@ -108,7 +107,7 @@ const Map<String, Map<String, List<String>>> compartmentDefinitions = {
       'beneficiary',
       'paymentby-party',
       'policy-holder',
-      'subscriber'
+      'subscriber',
     ],
     'CoverageEligibilityRequest': ['patient'],
     'CoverageEligibilityResponse': ['patient'],
