@@ -114,8 +114,7 @@ void main() {
         'name': 'Oncology team',
         'extension': [
           {
-            'url':
-                'http://hl7.org/fhir/StructureDefinition/careteam-alias',
+            'url': 'http://hl7.org/fhir/StructureDefinition/careteam-alias',
             'valueString': 'Blue team',
           },
         ],
@@ -152,8 +151,8 @@ void main() {
   });
 
   test(
-      'QuestionnaireResponse item-subject: item.where(extension('
-      "'...isSubject').exists()).answer.value.ofType(Reference)", () async {
+      'QuestionnaireResponse item-subject: item.where(extension(...isSubject)'
+      ' .exists()).answer.value.ofType(Reference)', () async {
     Map<String, dynamic> qr(String id, {required bool flagged}) => {
           'resourceType': 'QuestionnaireResponse',
           'id': id,
@@ -178,12 +177,12 @@ void main() {
             },
           ],
         };
-    await db.fhirDao.saveResource(fhir.QuestionnaireResponse.fromJson(
-      qr('flagged', flagged: true),
-    ));
-    await db.fhirDao.saveResource(fhir.QuestionnaireResponse.fromJson(
-      qr('plain', flagged: false),
-    ));
+    await db.fhirDao.saveResource(
+      fhir.QuestionnaireResponse.fromJson(qr('flagged', flagged: true)),
+    );
+    await db.fhirDao.saveResource(
+      fhir.QuestionnaireResponse.fromJson(qr('plain', flagged: false)),
+    );
     expect(
       await ids(fhir.R5ResourceType.QuestionnaireResponse, {
         'item-subject': ['Patient/p1'],

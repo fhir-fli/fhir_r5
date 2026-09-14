@@ -8,6 +8,8 @@ import 'package:fhir_r5_db/src/search/compartment_definitions.dart'
     as generated;
 import 'package:fhir_r5_db/src/search/search_parameter_types.dart';
 import 'package:fhir_r5_db/src/search/search_parameters.dart';
+import 'package:fhir_r5_path/fhir_r5_path.dart'
+    show FHIRPathEngine, IEvaluationContext, WorkerContext;
 
 /// FHIR R5B for the store: how `fhir_r5` resources are parsed, written and
 /// stamped, and this version's generated search and compartment data.
@@ -122,6 +124,15 @@ class R5Model extends core.FhirModel<Resource, R5ResourceType> {
       'uri': {'contains'},
     },
   );
+
+  /// The R5 engine, for uploaded SearchParameters: the binding's
+  /// [WorkerContext] answers the type questions (`is Patient`, `ofType`)
+  /// from the generated type hierarchy; [hostServices] is the store's.
+  @override
+  Future<FHIRPathEngine> createFhirPathEngine(
+    IEvaluationContext hostServices,
+  ) =>
+      FHIRPathEngine.create(WorkerContext(), hostServices);
 }
 
 /// The one model instance the binding's database uses.
