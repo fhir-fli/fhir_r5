@@ -1,3 +1,4 @@
+// ignore_for_file: unused_element_parameter, non_constant_identifier_names
 part of '../primitive_types.dart';
 
 /// Actual enum for SystemRestfulInteraction
@@ -196,12 +197,13 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     final valueEnum = SystemRestfulInteractionBuilderEnum.fromString(
       valueString,
     );
+    final known = _known(valueEnum);
     return SystemRestfulInteractionBuilder._(
       valueString: valueString,
       valueEnum: valueEnum,
-      system: system,
-      version: version,
-      display: display,
+      system: system ?? known?.system,
+      version: version ?? known?.version,
+      display: display ?? known?.display,
       element: element,
       id: id,
       extension_: extension_,
@@ -234,10 +236,26 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
         'SystemRestfulInteractionBuilder cannot be constructed from JSON.',
       );
     }
+    final known = _known(SystemRestfulInteractionBuilderEnum.fromString(value));
     return SystemRestfulInteractionBuilder._(
       valueString: value,
+      valueEnum: known?.valueEnum,
+      system: known?.system,
+      version: known?.version,
+      display: known?.display,
       element: element,
     );
+  }
+
+  /// The constant for [valueEnum], with its system, version and
+  /// display; null for a code the value set does not define.
+  static SystemRestfulInteractionBuilder? _known(
+      SystemRestfulInteractionBuilderEnum? valueEnum) {
+    if (valueEnum == null) return null;
+    for (final v in values) {
+      if (v.valueEnum == valueEnum) return v;
+    }
+    return null;
   }
 
   ///  An actual enum that can be used for SystemRestfulInteractionBuilder
@@ -249,7 +267,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'read',
     valueEnum: SystemRestfulInteractionBuilderEnum.read,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -263,7 +281,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'vread',
     valueEnum: SystemRestfulInteractionBuilderEnum.vread,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -277,7 +295,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'update',
     valueEnum: SystemRestfulInteractionBuilderEnum.update,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -291,7 +309,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'patch',
     valueEnum: SystemRestfulInteractionBuilderEnum.patch,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -305,7 +323,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'delete',
     valueEnum: SystemRestfulInteractionBuilderEnum.delete,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -319,7 +337,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'history',
     valueEnum: SystemRestfulInteractionBuilderEnum.history,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -333,7 +351,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'history-instance',
     valueEnum: SystemRestfulInteractionBuilderEnum.historyInstance,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -347,7 +365,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'history-type',
     valueEnum: SystemRestfulInteractionBuilderEnum.historyType,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -361,7 +379,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'history-system',
     valueEnum: SystemRestfulInteractionBuilderEnum.historySystem,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -375,7 +393,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'create',
     valueEnum: SystemRestfulInteractionBuilderEnum.create,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -389,7 +407,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'search',
     valueEnum: SystemRestfulInteractionBuilderEnum.search,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -403,7 +421,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'search-type',
     valueEnum: SystemRestfulInteractionBuilderEnum.searchType,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -417,7 +435,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'search-system',
     valueEnum: SystemRestfulInteractionBuilderEnum.searchSystem,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -431,7 +449,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'search-compartment',
     valueEnum: SystemRestfulInteractionBuilderEnum.searchCompartment,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -445,7 +463,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'capabilities',
     valueEnum: SystemRestfulInteractionBuilderEnum.capabilities,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -459,7 +477,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'transaction',
     valueEnum: SystemRestfulInteractionBuilderEnum.transaction,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -473,7 +491,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'batch',
     valueEnum: SystemRestfulInteractionBuilderEnum.batch,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -487,7 +505,7 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
     valueString: 'operation',
     valueEnum: SystemRestfulInteractionBuilderEnum.operation,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/system-restful-interaction',
+      valueString: 'http://hl7.org/fhir/restful-interaction',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -530,6 +548,10 @@ class SystemRestfulInteractionBuilder extends FhirCodeEnumBuilder {
   ) {
     return SystemRestfulInteractionBuilder._(
       valueString: valueString,
+      valueEnum: valueEnum,
+      system: system,
+      version: version,
+      display: display,
       element: newElement,
     );
   }

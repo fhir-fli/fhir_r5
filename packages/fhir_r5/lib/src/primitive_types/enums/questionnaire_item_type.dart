@@ -175,12 +175,13 @@ class QuestionnaireItemType extends FhirCodeEnum {
     final valueString =
         rawValue != null ? FhirCode._validateCode(rawValue) : null;
     final valueEnum = QuestionnaireItemTypeEnum.fromString(valueString);
+    final known = _known(valueEnum);
     return QuestionnaireItemType._(
       valueString: valueString,
       valueEnum: valueEnum,
-      system: system,
-      version: version,
-      display: display,
+      system: system ?? known?.system,
+      version: version ?? known?.version,
+      display: display ?? known?.display,
       element: element,
       id: id,
       extension_: extension_,
@@ -204,11 +205,25 @@ class QuestionnaireItemType extends FhirCodeEnum {
         'QuestionnaireItemType cannot be constructed from JSON.',
       );
     }
+    final known = _known(valueEnum);
     return QuestionnaireItemType._(
       valueString: value,
       valueEnum: valueEnum,
+      system: known?.system,
+      version: known?.version,
+      display: known?.display,
       element: element,
     );
+  }
+
+  /// The constant for [valueEnum], with its system, version and
+  /// display; null for a code the value set does not define.
+  static QuestionnaireItemType? _known(QuestionnaireItemTypeEnum? valueEnum) {
+    if (valueEnum == null) return null;
+    for (final v in values) {
+      if (v.valueEnum == valueEnum) return v;
+    }
+    return null;
   }
 
   /// An actual enum that can be used for QuestionnaireItemType
@@ -219,7 +234,7 @@ class QuestionnaireItemType extends FhirCodeEnum {
     valueString: 'group',
     valueEnum: QuestionnaireItemTypeEnum.group,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/item-type',
+      valueString: 'http://hl7.org/fhir/item-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -232,7 +247,7 @@ class QuestionnaireItemType extends FhirCodeEnum {
     valueString: 'display',
     valueEnum: QuestionnaireItemTypeEnum.display_,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/item-type',
+      valueString: 'http://hl7.org/fhir/item-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -245,7 +260,7 @@ class QuestionnaireItemType extends FhirCodeEnum {
     valueString: 'question',
     valueEnum: QuestionnaireItemTypeEnum.question,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/item-type',
+      valueString: 'http://hl7.org/fhir/item-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -258,7 +273,7 @@ class QuestionnaireItemType extends FhirCodeEnum {
     valueString: 'boolean',
     valueEnum: QuestionnaireItemTypeEnum.boolean,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/item-type',
+      valueString: 'http://hl7.org/fhir/item-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -271,7 +286,7 @@ class QuestionnaireItemType extends FhirCodeEnum {
     valueString: 'decimal',
     valueEnum: QuestionnaireItemTypeEnum.decimal,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/item-type',
+      valueString: 'http://hl7.org/fhir/item-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -284,7 +299,7 @@ class QuestionnaireItemType extends FhirCodeEnum {
     valueString: 'integer',
     valueEnum: QuestionnaireItemTypeEnum.integer,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/item-type',
+      valueString: 'http://hl7.org/fhir/item-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -297,7 +312,7 @@ class QuestionnaireItemType extends FhirCodeEnum {
     valueString: 'date',
     valueEnum: QuestionnaireItemTypeEnum.date,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/item-type',
+      valueString: 'http://hl7.org/fhir/item-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -310,7 +325,7 @@ class QuestionnaireItemType extends FhirCodeEnum {
     valueString: 'dateTime',
     valueEnum: QuestionnaireItemTypeEnum.dateTime,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/item-type',
+      valueString: 'http://hl7.org/fhir/item-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -323,7 +338,7 @@ class QuestionnaireItemType extends FhirCodeEnum {
     valueString: 'time',
     valueEnum: QuestionnaireItemTypeEnum.time,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/item-type',
+      valueString: 'http://hl7.org/fhir/item-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -336,7 +351,7 @@ class QuestionnaireItemType extends FhirCodeEnum {
     valueString: 'string',
     valueEnum: QuestionnaireItemTypeEnum.string,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/item-type',
+      valueString: 'http://hl7.org/fhir/item-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -349,7 +364,7 @@ class QuestionnaireItemType extends FhirCodeEnum {
     valueString: 'text',
     valueEnum: QuestionnaireItemTypeEnum.text,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/item-type',
+      valueString: 'http://hl7.org/fhir/item-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -362,7 +377,7 @@ class QuestionnaireItemType extends FhirCodeEnum {
     valueString: 'url',
     valueEnum: QuestionnaireItemTypeEnum.url,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/item-type',
+      valueString: 'http://hl7.org/fhir/item-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -375,7 +390,7 @@ class QuestionnaireItemType extends FhirCodeEnum {
     valueString: 'coding',
     valueEnum: QuestionnaireItemTypeEnum.coding,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/item-type',
+      valueString: 'http://hl7.org/fhir/item-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -388,7 +403,7 @@ class QuestionnaireItemType extends FhirCodeEnum {
     valueString: 'attachment',
     valueEnum: QuestionnaireItemTypeEnum.attachment,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/item-type',
+      valueString: 'http://hl7.org/fhir/item-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -401,7 +416,7 @@ class QuestionnaireItemType extends FhirCodeEnum {
     valueString: 'reference',
     valueEnum: QuestionnaireItemTypeEnum.reference,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/item-type',
+      valueString: 'http://hl7.org/fhir/item-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -414,7 +429,7 @@ class QuestionnaireItemType extends FhirCodeEnum {
     valueString: 'quantity',
     valueEnum: QuestionnaireItemTypeEnum.quantity,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/item-type',
+      valueString: 'http://hl7.org/fhir/item-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -446,6 +461,10 @@ class QuestionnaireItemType extends FhirCodeEnum {
   QuestionnaireItemType withElement(Element? newElement) {
     return QuestionnaireItemType._(
       valueString: valueString,
+      valueEnum: valueEnum,
+      system: system,
+      version: version,
+      display: display,
       element: newElement,
     );
   }

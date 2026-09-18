@@ -1,3 +1,4 @@
+// ignore_for_file: unused_element_parameter, non_constant_identifier_names
 part of '../primitive_types.dart';
 
 /// Actual enum for RelatedArtifactTypeExpanded
@@ -336,12 +337,13 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     final valueEnum = RelatedArtifactTypeExpandedBuilderEnum.fromString(
       valueString,
     );
+    final known = _known(valueEnum);
     return RelatedArtifactTypeExpandedBuilder._(
       valueString: valueString,
       valueEnum: valueEnum,
-      system: system,
-      version: version,
-      display: display,
+      system: system ?? known?.system,
+      version: version ?? known?.version,
+      display: display ?? known?.display,
       element: element,
       id: id,
       extension_: extension_,
@@ -374,10 +376,27 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
         'RelatedArtifactTypeExpandedBuilder cannot be constructed from JSON.',
       );
     }
+    final known =
+        _known(RelatedArtifactTypeExpandedBuilderEnum.fromString(value));
     return RelatedArtifactTypeExpandedBuilder._(
       valueString: value,
+      valueEnum: known?.valueEnum,
+      system: known?.system,
+      version: known?.version,
+      display: known?.display,
       element: element,
     );
+  }
+
+  /// The constant for [valueEnum], with its system, version and
+  /// display; null for a code the value set does not define.
+  static RelatedArtifactTypeExpandedBuilder? _known(
+      RelatedArtifactTypeExpandedBuilderEnum? valueEnum) {
+    if (valueEnum == null) return null;
+    for (final v in values) {
+      if (v.valueEnum == valueEnum) return v;
+    }
+    return null;
   }
 
   ///  An actual enum that can be used for RelatedArtifactTypeExpandedBuilder
@@ -389,7 +408,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'documentation',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.documentation,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -403,7 +422,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'justification',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.justification,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -417,7 +436,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'citation',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.citation,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -431,7 +450,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'predecessor',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.predecessor,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -445,7 +464,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'successor',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.successor,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -459,7 +478,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'derived-from',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.derivedFrom,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -473,7 +492,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'depends-on',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.dependsOn,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -487,7 +506,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'composed-of',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.composedOf,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -501,7 +520,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'part-of',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.partOf,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -515,7 +534,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'amends',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.amends,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -529,7 +548,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'amended-with',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.amendedWith,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -543,7 +562,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'appends',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.appends,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -557,7 +576,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'appended-with',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.appendedWith,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -571,7 +590,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'cites',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.cites,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -585,7 +604,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'cited-by',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.citedBy,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -599,7 +618,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'comments-on',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.commentsOn,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -613,7 +632,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'comment-in',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.commentIn,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -627,7 +646,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'contains',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.contains_,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -641,7 +660,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'contained-in',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.containedIn,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -655,7 +674,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'corrects',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.corrects,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -669,7 +688,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'correction-in',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.correctionIn,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -683,7 +702,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'replaces',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.replaces,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -697,7 +716,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'replaced-with',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.replacedWith,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -711,7 +730,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'retracts',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.retracts,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -725,7 +744,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'retracted-by',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.retractedBy,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -739,7 +758,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'signs',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.signs,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -753,7 +772,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'similar-to',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.similarTo,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -767,7 +786,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'supports',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.supports,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -781,7 +800,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'supported-with',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.supportedWith,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -795,7 +814,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'transforms',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.transforms,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -809,7 +828,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'transformed-into',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.transformedInto,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -823,7 +842,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'transformed-with',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.transformedWith,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -837,7 +856,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'documents',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.documents,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -851,7 +870,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'specification-of',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.specificationOf,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -865,7 +884,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'created-with',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.createdWith,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -879,7 +898,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'cite-as',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.citeAs,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -893,7 +912,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'reprint',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.reprint,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type-expanded',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -907,7 +926,7 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
     valueString: 'reprint-of',
     valueEnum: RelatedArtifactTypeExpandedBuilderEnum.reprintOf,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/related-artifact-type-all',
+      valueString: 'http://hl7.org/fhir/related-artifact-type-expanded',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -970,6 +989,10 @@ class RelatedArtifactTypeExpandedBuilder extends FhirCodeEnumBuilder {
   ) {
     return RelatedArtifactTypeExpandedBuilder._(
       valueString: valueString,
+      valueEnum: valueEnum,
+      system: system,
+      version: version,
+      display: display,
       element: newElement,
     );
   }
