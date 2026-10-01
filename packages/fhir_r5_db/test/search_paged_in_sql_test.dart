@@ -3,23 +3,23 @@ import 'package:fhir_r5/fhir_r5.dart';
 import 'package:fhir_r5_db/fhir_r5_db.dart' hide Resource;
 import 'package:test/test.dart';
 
-/// Searches made only of plain token parameters are paged in SQL: one select
-/// with `ORDER BY id LIMIT`, and each further parameter nested as
-/// `id IN (SELECT …)`. These pin that the SQL path gives the same answer the
-/// general path gives, page by page, and intersects rather than unions.
+/// Every search is paged in SQL: one select with `ORDER BY id LIMIT`, and
+/// each further parameter nested as `id IN (SELECT …)` or `EXISTS`. These
+/// pin that a paged search gives the same answer an unpaged one gives,
+/// page by page, and intersects rather than unions. A Dart set path sat
+/// beside the SQL one until 2026-10-01 (fhir_db ST4); the "agrees" cases
+/// below were written against it and still hold between a paged and an
+/// unpaged run.
 Future<void> main() async {
   late FhirDb db;
   late FhirDao dao;
 
-  /// Runs the search, and asserts which path ran: SQL, with or without a
-  /// count, unless [general] says this shape is meant to fall back. A right
-  /// answer proves nothing about the path on its own.
+  /// Runs the search and returns the ids in page order.
   Future<List<String>> ids(
     Map<String, List<String>> params, {
     int? count,
     int? offset,
     List<String>? sort,
-    bool general = false,
   }) async {
     final found = await dao.search(
       resourceType: R5ResourceType.Observation,
@@ -27,11 +27,6 @@ Future<void> main() async {
       count: count,
       offset: offset,
       sort: sort,
-    );
-    expect(
-      dao.lastSearchPagedInSql,
-      !general,
-      reason: 'path for $params count=$count sort=$sort',
     );
     return found.map((r) => r.id!.valueString!).toList();
   }
@@ -210,7 +205,7 @@ Future<void> main() async {
     // status=final is 15 rows and code=B is 10, so code is the outer here
     // even though status came first — and it sits on an ALIAS of the same
     // table the nested status condition uses. Both orders must agree with
-    // the general path and with each other.
+    // an unpaged run and with each other.
     final statusFirst = await ids(
       {
         'status': ['final'],
@@ -291,7 +286,7 @@ Future<void> main() async {
       ),
       ['o00', 'o02', 'o04'],
     );
-    // Agrees with the general path (no count, so no SQL paging).
+    // Agrees with an unpaged run (no count, so no SQL paging).
     expect(
       await ids({
         'code': ['A', 'B'],
@@ -428,7 +423,7 @@ Future<void> main() async {
       ),
       ['o00', 'o01'],
     );
-    // The general path agrees.
+    // An unpaged run agrees.
     expect(
       await ids({
         '_tag': ['urgent'],
@@ -679,7 +674,7 @@ Future<void> main() async {
       ),
       ['o20', 'o21', 'o22'],
     );
-    // Agrees with the general path.
+    // Agrees with an unpaged run.
     expect(
       await ids({
         'performer:missing': ['true'],
@@ -893,9 +888,8 @@ Future<void> main() async {
     }
     Future<List<String>> vs(
       String key,
-      String value, {
-      bool general = false,
-    }) async {
+      String value,
+    ) async {
       final found = await dao.search(
         resourceType: R5ResourceType.ValueSet,
         searchParameters: {
@@ -903,7 +897,6 @@ Future<void> main() async {
         },
         count: 10,
       );
-      expect(dao.lastSearchPagedInSql, !general, reason: '$key=$value');
       return found.map((r) => r.id!.valueString!).toList();
     }
 
@@ -1017,7 +1010,7 @@ Future<void> main() async {
   });
 
   test('an absolute or canonical URL reference matches as written', () async {
-    // R4B 3.1.1.4.12 `[parameter]=[url]`. Before this the general path added
+    // R4B 3.1.1.4.12 `[parameter]=[url]`. Before this an unpaged run added
     // NO condition for a URL value, so it returned every resource with a
     // subject, and the SQL path compared the URL to the id part.
     await dao.saveResource(
@@ -1096,7 +1089,6 @@ Future<void> main() async {
         },
         count: 5,
       );
-      expect(dao.lastSearchPagedInSql, isTrue, reason: '$key=$value');
       return found.map((r) => r.id!.valueString!).toList();
     }
 
@@ -1448,7 +1440,6 @@ Future<void> main() async {
       ],
       count: 5,
     );
-    expect(dao.lastSearchPagedInSql, isTrue);
     expect(found.map((r) => r.id!.valueString), ['p2']);
   });
 
@@ -1497,7 +1488,6 @@ Future<void> main() async {
         searchParameters: params,
         count: 5,
       );
-      expect(dao.lastSearchPagedInSql, isTrue, reason: '$params');
       return found.map((r) => r.id!.valueString!).toList();
     }
 
@@ -1573,7 +1563,6 @@ Future<void> main() async {
         },
         count: 5,
       );
-      expect(dao.lastSearchPagedInSql, isTrue, reason: '$key=$value');
       return found.map((r) => r.id!.valueString!).toList();
     }
 
@@ -2018,7 +2007,7 @@ Future<void> main() async {
       ),
       isEmpty,
     );
-    // The general path agrees.
+    // An unpaged run agrees.
     expect(
       await ids({
         'subject.family': ['Jones'],
@@ -2070,7 +2059,6 @@ Future<void> main() async {
         hasParameters: has,
         count: count,
       );
-      expect(dao.lastSearchPagedInSql, isTrue, reason: '$params');
       return found.map((r) => r.id!.valueString!).toList();
     }
 
@@ -2095,7 +2083,7 @@ Future<void> main() async {
       ['p1'],
     );
     // The reference parameter matters: no Observation points at a patient
-    // through `performer`, so this is empty. (The general path ignored the
+    // through `performer`, so this is empty. (An unpaged run ignored the
     // reference parameter and would have answered p1 and p2.)
     expect(
       await patients(
@@ -2118,13 +2106,13 @@ Future<void> main() async {
       ],
       count: 5,
     );
-    expect(dao.lastSearchPagedInSql, isTrue);
     expect(orgs.map((r) => r.id!.valueString), ['orgB']);
   });
 
-  test('the SQL path and the general path agree', () async {
-    // A comma forces the general path; the same set without one takes the
-    // SQL path. Both must give the same rows in the same order.
+  test('a comma-separated OR agrees with the same set written plainly',
+      () async {
+    // `final,final` and `final` are the same set and must give the same
+    // rows in the same order (a comma once forced the Dart set path).
     final general = await ids(
       {
         'status': ['final,final'],
