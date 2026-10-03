@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:collection/collection.dart' show DeepCollectionEquality;
-import 'package:fhir_r5/fhir_r5.dart' show QuestionnaireResponse;
+import 'package:fhir_r5/fhir_r5.dart' show QuestionnaireResponse, Resource;
 import 'package:fhir_r5_mapping/fhir_r5_mapping.dart';
 import 'package:fhir_r5_path/fhir_r5_path.dart';
 import 'package:test/test.dart';
@@ -634,7 +634,7 @@ Future<void> main() async {
 
   group('Step 14', () {
     test('Step 14', () async {
-      final step14ResourceCache = OnlineResourceCache();
+      final step14ResourceCache = OnlineResourceCache(parse: Resource.fromJson);
       final result = await fhirMappingEngine(
         QuestionnaireResponse.fromJson(source14).toBuilder,
         structureMapStep14,

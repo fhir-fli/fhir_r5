@@ -1,3 +1,4 @@
+import 'package:fhir_node/fhir_node.dart';
 import 'package:fhir_r5/fhir_r5.dart';
 import 'package:fhir_r5_path/fhir_r5_path.dart';
 import 'package:fhir_r5_validation/fhir_r5_validation.dart';
@@ -958,7 +959,7 @@ class _HumanNameResourceCache extends CanonicalResourceCache {
   final Map<String, StructureDefinition> _shortNameCache = {};
 
   @override
-  Future<StructureDefinition?> getStructureDefinition(String url) async {
+  Future<FhirNode?> getStructureDefinition(String url) async {
     final cached = _shortNameCache[url];
     if (cached != null) return cached;
     return super.getStructureDefinition(url);
