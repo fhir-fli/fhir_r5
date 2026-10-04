@@ -2,6 +2,8 @@
 
 A comprehensive validation library for FHIR R5 resources. This package validates FHIR resources against their StructureDefinitions, ensuring compliance with the FHIR specification.
 
+Since 0.13.0 the validator lives in [`fhir_validation`](https://pub.dev/packages/fhir_validation), which serves every FHIR version; this package re-exports it with the R5 model (`r5Validation`) filled in.
+
 ## Installation
 
 ```yaml

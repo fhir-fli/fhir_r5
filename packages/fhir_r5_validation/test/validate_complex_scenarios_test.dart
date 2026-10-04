@@ -1,6 +1,5 @@
 import 'package:fhir_node/fhir_node.dart';
 import 'package:fhir_r5/fhir_r5.dart';
-import 'package:fhir_r5_path/fhir_r5_path.dart';
 import 'package:fhir_r5_validation/fhir_r5_validation.dart';
 import 'package:test/test.dart';
 
@@ -8,7 +7,7 @@ void main() {
   late FhirValidationEngine validator;
 
   setUp(() {
-    validator = FhirValidationEngine();
+    validator = const FhirValidationEngine();
   });
 
   group('Complete resource validation - Patient', () {
