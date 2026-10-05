@@ -104,12 +104,13 @@ class PriceComponentType extends FhirCodeEnum {
     final valueString =
         rawValue != null ? FhirCode._validateCode(rawValue) : null;
     final valueEnum = PriceComponentTypeEnum.fromString(valueString);
+    final known = _known(valueEnum);
     return PriceComponentType._(
       valueString: valueString,
       valueEnum: valueEnum,
-      system: system,
-      version: version,
-      display: display,
+      system: system ?? known?.system,
+      version: version ?? known?.version,
+      display: display ?? known?.display,
       element: element,
       id: id,
       extension_: extension_,
@@ -133,11 +134,25 @@ class PriceComponentType extends FhirCodeEnum {
         'PriceComponentType cannot be constructed from JSON.',
       );
     }
+    final known = _known(valueEnum);
     return PriceComponentType._(
       valueString: value,
       valueEnum: valueEnum,
+      system: known?.system,
+      version: known?.version,
+      display: known?.display,
       element: element,
     );
+  }
+
+  /// The constant for [valueEnum], with its system, version and
+  /// display; null for a code the value set does not define.
+  static PriceComponentType? _known(PriceComponentTypeEnum? valueEnum) {
+    if (valueEnum == null) return null;
+    for (final v in values) {
+      if (v.valueEnum == valueEnum) return v;
+    }
+    return null;
   }
 
   /// An actual enum that can be used for PriceComponentType
@@ -148,7 +163,7 @@ class PriceComponentType extends FhirCodeEnum {
     valueString: 'base',
     valueEnum: PriceComponentTypeEnum.base,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/price-component-type',
+      valueString: 'http://hl7.org/fhir/price-component-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -161,7 +176,7 @@ class PriceComponentType extends FhirCodeEnum {
     valueString: 'surcharge',
     valueEnum: PriceComponentTypeEnum.surcharge,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/price-component-type',
+      valueString: 'http://hl7.org/fhir/price-component-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -174,7 +189,7 @@ class PriceComponentType extends FhirCodeEnum {
     valueString: 'deduction',
     valueEnum: PriceComponentTypeEnum.deduction,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/price-component-type',
+      valueString: 'http://hl7.org/fhir/price-component-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -187,7 +202,7 @@ class PriceComponentType extends FhirCodeEnum {
     valueString: 'discount',
     valueEnum: PriceComponentTypeEnum.discount,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/price-component-type',
+      valueString: 'http://hl7.org/fhir/price-component-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -200,7 +215,7 @@ class PriceComponentType extends FhirCodeEnum {
     valueString: 'tax',
     valueEnum: PriceComponentTypeEnum.tax,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/price-component-type',
+      valueString: 'http://hl7.org/fhir/price-component-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -213,7 +228,7 @@ class PriceComponentType extends FhirCodeEnum {
     valueString: 'informational',
     valueEnum: PriceComponentTypeEnum.informational,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/price-component-type',
+      valueString: 'http://hl7.org/fhir/price-component-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -235,6 +250,10 @@ class PriceComponentType extends FhirCodeEnum {
   PriceComponentType withElement(Element? newElement) {
     return PriceComponentType._(
       valueString: valueString,
+      valueEnum: valueEnum,
+      system: system,
+      version: version,
+      display: display,
       element: newElement,
     );
   }

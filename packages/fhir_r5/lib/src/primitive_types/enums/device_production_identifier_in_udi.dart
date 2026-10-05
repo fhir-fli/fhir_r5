@@ -105,12 +105,13 @@ class DeviceProductionIdentifierInUDI extends FhirCodeEnum {
         rawValue != null ? FhirCode._validateCode(rawValue) : null;
     final valueEnum =
         DeviceProductionIdentifierInUDIEnum.fromString(valueString);
+    final known = _known(valueEnum);
     return DeviceProductionIdentifierInUDI._(
       valueString: valueString,
       valueEnum: valueEnum,
-      system: system,
-      version: version,
-      display: display,
+      system: system ?? known?.system,
+      version: version ?? known?.version,
+      display: display ?? known?.display,
       element: element,
       id: id,
       extension_: extension_,
@@ -129,19 +130,32 @@ class DeviceProductionIdentifierInUDI extends FhirCodeEnum {
     final element = elementJson != null ? Element.fromJson(elementJson) : null;
     if (value == null && element != null) {
       return DeviceProductionIdentifierInUDI._(
-        valueString: null,
-        element: element,
-      );
+          valueString: null, element: element);
     } else if (value == null && element == null) {
       throw ArgumentError(
         'DeviceProductionIdentifierInUDI cannot be constructed from JSON.',
       );
     }
+    final known = _known(valueEnum);
     return DeviceProductionIdentifierInUDI._(
       valueString: value,
       valueEnum: valueEnum,
+      system: known?.system,
+      version: known?.version,
+      display: known?.display,
       element: element,
     );
+  }
+
+  /// The constant for [valueEnum], with its system, version and
+  /// display; null for a code the value set does not define.
+  static DeviceProductionIdentifierInUDI? _known(
+      DeviceProductionIdentifierInUDIEnum? valueEnum) {
+    if (valueEnum == null) return null;
+    for (final v in values) {
+      if (v.valueEnum == valueEnum) return v;
+    }
+    return null;
   }
 
   /// An actual enum that can be used for DeviceProductionIdentifierInUDI
@@ -153,7 +167,7 @@ class DeviceProductionIdentifierInUDI extends FhirCodeEnum {
     valueString: 'lot-number',
     valueEnum: DeviceProductionIdentifierInUDIEnum.lotNumber,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/device-productidentifierinudi',
+      valueString: 'http://hl7.org/fhir/device-productidentifierinudi',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -167,7 +181,7 @@ class DeviceProductionIdentifierInUDI extends FhirCodeEnum {
     valueString: 'manufactured-date',
     valueEnum: DeviceProductionIdentifierInUDIEnum.manufacturedDate,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/device-productidentifierinudi',
+      valueString: 'http://hl7.org/fhir/device-productidentifierinudi',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -181,7 +195,7 @@ class DeviceProductionIdentifierInUDI extends FhirCodeEnum {
     valueString: 'serial-number',
     valueEnum: DeviceProductionIdentifierInUDIEnum.serialNumber,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/device-productidentifierinudi',
+      valueString: 'http://hl7.org/fhir/device-productidentifierinudi',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -195,7 +209,7 @@ class DeviceProductionIdentifierInUDI extends FhirCodeEnum {
     valueString: 'expiration-date',
     valueEnum: DeviceProductionIdentifierInUDIEnum.expirationDate,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/device-productidentifierinudi',
+      valueString: 'http://hl7.org/fhir/device-productidentifierinudi',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -209,7 +223,7 @@ class DeviceProductionIdentifierInUDI extends FhirCodeEnum {
     valueString: 'biological-source',
     valueEnum: DeviceProductionIdentifierInUDIEnum.biologicalSource,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/device-productidentifierinudi',
+      valueString: 'http://hl7.org/fhir/device-productidentifierinudi',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -223,7 +237,7 @@ class DeviceProductionIdentifierInUDI extends FhirCodeEnum {
     valueString: 'software-version',
     valueEnum: DeviceProductionIdentifierInUDIEnum.softwareVersion,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/device-productidentifierinudi',
+      valueString: 'http://hl7.org/fhir/device-productidentifierinudi',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -245,6 +259,10 @@ class DeviceProductionIdentifierInUDI extends FhirCodeEnum {
   DeviceProductionIdentifierInUDI withElement(Element? newElement) {
     return DeviceProductionIdentifierInUDI._(
       valueString: valueString,
+      valueEnum: valueEnum,
+      system: system,
+      version: version,
+      display: display,
       element: newElement,
     );
   }

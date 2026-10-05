@@ -104,12 +104,13 @@ class TransportStatus extends FhirCodeEnum {
     final valueString =
         rawValue != null ? FhirCode._validateCode(rawValue) : null;
     final valueEnum = TransportStatusEnum.fromString(valueString);
+    final known = _known(valueEnum);
     return TransportStatus._(
       valueString: valueString,
       valueEnum: valueEnum,
-      system: system,
-      version: version,
-      display: display,
+      system: system ?? known?.system,
+      version: version ?? known?.version,
+      display: display ?? known?.display,
       element: element,
       id: id,
       extension_: extension_,
@@ -133,11 +134,25 @@ class TransportStatus extends FhirCodeEnum {
         'TransportStatus cannot be constructed from JSON.',
       );
     }
+    final known = _known(valueEnum);
     return TransportStatus._(
       valueString: value,
       valueEnum: valueEnum,
+      system: known?.system,
+      version: known?.version,
+      display: known?.display,
       element: element,
     );
+  }
+
+  /// The constant for [valueEnum], with its system, version and
+  /// display; null for a code the value set does not define.
+  static TransportStatus? _known(TransportStatusEnum? valueEnum) {
+    if (valueEnum == null) return null;
+    for (final v in values) {
+      if (v.valueEnum == valueEnum) return v;
+    }
+    return null;
   }
 
   /// An actual enum that can be used for TransportStatus
@@ -148,7 +163,7 @@ class TransportStatus extends FhirCodeEnum {
     valueString: 'in-progress',
     valueEnum: TransportStatusEnum.inProgress,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-status',
+      valueString: 'http://hl7.org/fhir/transport-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -161,7 +176,7 @@ class TransportStatus extends FhirCodeEnum {
     valueString: 'completed',
     valueEnum: TransportStatusEnum.completed,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-status',
+      valueString: 'http://hl7.org/fhir/transport-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -174,7 +189,7 @@ class TransportStatus extends FhirCodeEnum {
     valueString: 'abandoned',
     valueEnum: TransportStatusEnum.abandoned,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-status',
+      valueString: 'http://hl7.org/fhir/transport-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -187,7 +202,7 @@ class TransportStatus extends FhirCodeEnum {
     valueString: 'cancelled',
     valueEnum: TransportStatusEnum.cancelled,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-status',
+      valueString: 'http://hl7.org/fhir/transport-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -200,7 +215,7 @@ class TransportStatus extends FhirCodeEnum {
     valueString: 'planned',
     valueEnum: TransportStatusEnum.planned,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-status',
+      valueString: 'http://hl7.org/fhir/transport-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -213,7 +228,7 @@ class TransportStatus extends FhirCodeEnum {
     valueString: 'entered-in-error',
     valueEnum: TransportStatusEnum.enteredInError,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-status',
+      valueString: 'http://hl7.org/fhir/transport-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -235,6 +250,10 @@ class TransportStatus extends FhirCodeEnum {
   TransportStatus withElement(Element? newElement) {
     return TransportStatus._(
       valueString: valueString,
+      valueEnum: valueEnum,
+      system: system,
+      version: version,
+      display: display,
       element: newElement,
     );
   }

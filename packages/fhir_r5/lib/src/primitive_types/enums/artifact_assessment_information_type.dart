@@ -106,12 +106,13 @@ class ArtifactAssessmentInformationType extends FhirCodeEnum {
         rawValue != null ? FhirCode._validateCode(rawValue) : null;
     final valueEnum =
         ArtifactAssessmentInformationTypeEnum.fromString(valueString);
+    final known = _known(valueEnum);
     return ArtifactAssessmentInformationType._(
       valueString: valueString,
       valueEnum: valueEnum,
-      system: system,
-      version: version,
-      display: display,
+      system: system ?? known?.system,
+      version: version ?? known?.version,
+      display: display ?? known?.display,
       element: element,
       id: id,
       extension_: extension_,
@@ -130,19 +131,32 @@ class ArtifactAssessmentInformationType extends FhirCodeEnum {
     final element = elementJson != null ? Element.fromJson(elementJson) : null;
     if (value == null && element != null) {
       return ArtifactAssessmentInformationType._(
-        valueString: null,
-        element: element,
-      );
+          valueString: null, element: element);
     } else if (value == null && element == null) {
       throw ArgumentError(
         'ArtifactAssessmentInformationType cannot be constructed from JSON.',
       );
     }
+    final known = _known(valueEnum);
     return ArtifactAssessmentInformationType._(
       valueString: value,
       valueEnum: valueEnum,
+      system: known?.system,
+      version: known?.version,
+      display: known?.display,
       element: element,
     );
+  }
+
+  /// The constant for [valueEnum], with its system, version and
+  /// display; null for a code the value set does not define.
+  static ArtifactAssessmentInformationType? _known(
+      ArtifactAssessmentInformationTypeEnum? valueEnum) {
+    if (valueEnum == null) return null;
+    for (final v in values) {
+      if (v.valueEnum == valueEnum) return v;
+    }
+    return null;
   }
 
   /// An actual enum that can be used for ArtifactAssessmentInformationType
@@ -154,8 +168,7 @@ class ArtifactAssessmentInformationType extends FhirCodeEnum {
     valueString: 'comment',
     valueEnum: ArtifactAssessmentInformationTypeEnum.comment,
     system: FhirUri._(
-      valueString:
-          'http://hl7.org/fhir/ValueSet/artifactassessment-information-type',
+      valueString: 'http://hl7.org/fhir/artifactassessment-information-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -169,8 +182,7 @@ class ArtifactAssessmentInformationType extends FhirCodeEnum {
     valueString: 'classifier',
     valueEnum: ArtifactAssessmentInformationTypeEnum.classifier,
     system: FhirUri._(
-      valueString:
-          'http://hl7.org/fhir/ValueSet/artifactassessment-information-type',
+      valueString: 'http://hl7.org/fhir/artifactassessment-information-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -184,8 +196,7 @@ class ArtifactAssessmentInformationType extends FhirCodeEnum {
     valueString: 'rating',
     valueEnum: ArtifactAssessmentInformationTypeEnum.rating,
     system: FhirUri._(
-      valueString:
-          'http://hl7.org/fhir/ValueSet/artifactassessment-information-type',
+      valueString: 'http://hl7.org/fhir/artifactassessment-information-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -199,8 +210,7 @@ class ArtifactAssessmentInformationType extends FhirCodeEnum {
     valueString: 'container',
     valueEnum: ArtifactAssessmentInformationTypeEnum.container,
     system: FhirUri._(
-      valueString:
-          'http://hl7.org/fhir/ValueSet/artifactassessment-information-type',
+      valueString: 'http://hl7.org/fhir/artifactassessment-information-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -214,8 +224,7 @@ class ArtifactAssessmentInformationType extends FhirCodeEnum {
     valueString: 'response',
     valueEnum: ArtifactAssessmentInformationTypeEnum.response,
     system: FhirUri._(
-      valueString:
-          'http://hl7.org/fhir/ValueSet/artifactassessment-information-type',
+      valueString: 'http://hl7.org/fhir/artifactassessment-information-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -229,8 +238,7 @@ class ArtifactAssessmentInformationType extends FhirCodeEnum {
     valueString: 'change-request',
     valueEnum: ArtifactAssessmentInformationTypeEnum.changeRequest,
     system: FhirUri._(
-      valueString:
-          'http://hl7.org/fhir/ValueSet/artifactassessment-information-type',
+      valueString: 'http://hl7.org/fhir/artifactassessment-information-type',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -252,6 +260,10 @@ class ArtifactAssessmentInformationType extends FhirCodeEnum {
   ArtifactAssessmentInformationType withElement(Element? newElement) {
     return ArtifactAssessmentInformationType._(
       valueString: valueString,
+      valueEnum: valueEnum,
+      system: system,
+      version: version,
+      display: display,
       element: newElement,
     );
   }

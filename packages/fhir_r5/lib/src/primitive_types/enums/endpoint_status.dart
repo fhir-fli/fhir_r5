@@ -97,12 +97,13 @@ class EndpointStatus extends FhirCodeEnum {
     final valueString =
         rawValue != null ? FhirCode._validateCode(rawValue) : null;
     final valueEnum = EndpointStatusEnum.fromString(valueString);
+    final known = _known(valueEnum);
     return EndpointStatus._(
       valueString: valueString,
       valueEnum: valueEnum,
-      system: system,
-      version: version,
-      display: display,
+      system: system ?? known?.system,
+      version: version ?? known?.version,
+      display: display ?? known?.display,
       element: element,
       id: id,
       extension_: extension_,
@@ -126,11 +127,25 @@ class EndpointStatus extends FhirCodeEnum {
         'EndpointStatus cannot be constructed from JSON.',
       );
     }
+    final known = _known(valueEnum);
     return EndpointStatus._(
       valueString: value,
       valueEnum: valueEnum,
+      system: known?.system,
+      version: known?.version,
+      display: known?.display,
       element: element,
     );
+  }
+
+  /// The constant for [valueEnum], with its system, version and
+  /// display; null for a code the value set does not define.
+  static EndpointStatus? _known(EndpointStatusEnum? valueEnum) {
+    if (valueEnum == null) return null;
+    for (final v in values) {
+      if (v.valueEnum == valueEnum) return v;
+    }
+    return null;
   }
 
   /// An actual enum that can be used for EndpointStatus
@@ -141,7 +156,7 @@ class EndpointStatus extends FhirCodeEnum {
     valueString: 'active',
     valueEnum: EndpointStatusEnum.active,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/endpoint-status',
+      valueString: 'http://hl7.org/fhir/endpoint-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -154,7 +169,7 @@ class EndpointStatus extends FhirCodeEnum {
     valueString: 'suspended',
     valueEnum: EndpointStatusEnum.suspended,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/endpoint-status',
+      valueString: 'http://hl7.org/fhir/endpoint-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -167,7 +182,7 @@ class EndpointStatus extends FhirCodeEnum {
     valueString: 'error',
     valueEnum: EndpointStatusEnum.error,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/endpoint-status',
+      valueString: 'http://hl7.org/fhir/endpoint-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -180,7 +195,7 @@ class EndpointStatus extends FhirCodeEnum {
     valueString: 'off',
     valueEnum: EndpointStatusEnum.off,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/endpoint-status',
+      valueString: 'http://hl7.org/fhir/endpoint-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -193,7 +208,7 @@ class EndpointStatus extends FhirCodeEnum {
     valueString: 'entered-in-error',
     valueEnum: EndpointStatusEnum.enteredInError,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/endpoint-status',
+      valueString: 'http://hl7.org/fhir/endpoint-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -214,6 +229,10 @@ class EndpointStatus extends FhirCodeEnum {
   EndpointStatus withElement(Element? newElement) {
     return EndpointStatus._(
       valueString: valueString,
+      valueEnum: valueEnum,
+      system: system,
+      version: version,
+      display: display,
       element: newElement,
     );
   }

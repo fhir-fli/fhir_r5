@@ -6,7 +6,6 @@
 
 import 'package:fhir_r5/fhir_r5.dart';
 import 'package:fhir_r5_mapping/fhir_r5_mapping.dart';
-import 'package:fhir_r5_path/fhir_r5_path.dart';
 
 Future<void> main() async {
   final parser = await StructureMapParser.create();
@@ -26,7 +25,7 @@ Future<void> main() async {
 
   // If you want to pass in resources locally, but also fetch some online
   // It will search everytime you pass it a new url
-  final onlineResourceCache = OnlineResourceCache();
+  final onlineResourceCache = OnlineResourceCache(parse: Resource.fromJson);
 
   final onlineEngine = await FhirMapEngine.create(onlineResourceCache);
 

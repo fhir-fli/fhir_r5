@@ -1,3 +1,4 @@
+// ignore_for_file: unused_element_parameter, non_constant_identifier_names
 part of '../primitive_types.dart';
 
 /// Actual enum for TransportIntent
@@ -140,12 +141,13 @@ class TransportIntentBuilder extends FhirCodeEnumBuilder {
     final valueEnum = TransportIntentBuilderEnum.fromString(
       valueString,
     );
+    final known = _known(valueEnum);
     return TransportIntentBuilder._(
       valueString: valueString,
       valueEnum: valueEnum,
-      system: system,
-      version: version,
-      display: display,
+      system: system ?? known?.system,
+      version: version ?? known?.version,
+      display: display ?? known?.display,
       element: element,
       id: id,
       extension_: extension_,
@@ -178,10 +180,25 @@ class TransportIntentBuilder extends FhirCodeEnumBuilder {
         'TransportIntentBuilder cannot be constructed from JSON.',
       );
     }
+    final known = _known(TransportIntentBuilderEnum.fromString(value));
     return TransportIntentBuilder._(
       valueString: value,
+      valueEnum: known?.valueEnum,
+      system: known?.system,
+      version: known?.version,
+      display: known?.display,
       element: element,
     );
+  }
+
+  /// The constant for [valueEnum], with its system, version and
+  /// display; null for a code the value set does not define.
+  static TransportIntentBuilder? _known(TransportIntentBuilderEnum? valueEnum) {
+    if (valueEnum == null) return null;
+    for (final v in values) {
+      if (v.valueEnum == valueEnum) return v;
+    }
+    return null;
   }
 
   ///  An actual enum that can be used for TransportIntentBuilder
@@ -192,7 +209,7 @@ class TransportIntentBuilder extends FhirCodeEnumBuilder {
     valueString: 'unknown',
     valueEnum: TransportIntentBuilderEnum.unknown,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/transport-intent',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -205,7 +222,7 @@ class TransportIntentBuilder extends FhirCodeEnumBuilder {
     valueString: 'proposal',
     valueEnum: TransportIntentBuilderEnum.proposal,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -218,7 +235,7 @@ class TransportIntentBuilder extends FhirCodeEnumBuilder {
     valueString: 'plan',
     valueEnum: TransportIntentBuilderEnum.plan,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -231,7 +248,7 @@ class TransportIntentBuilder extends FhirCodeEnumBuilder {
     valueString: 'directive',
     valueEnum: TransportIntentBuilderEnum.directive,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -244,7 +261,7 @@ class TransportIntentBuilder extends FhirCodeEnumBuilder {
     valueString: 'order',
     valueEnum: TransportIntentBuilderEnum.order,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -257,7 +274,7 @@ class TransportIntentBuilder extends FhirCodeEnumBuilder {
     valueString: 'original-order',
     valueEnum: TransportIntentBuilderEnum.originalOrder,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -270,7 +287,7 @@ class TransportIntentBuilder extends FhirCodeEnumBuilder {
     valueString: 'reflex-order',
     valueEnum: TransportIntentBuilderEnum.reflexOrder,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -283,7 +300,7 @@ class TransportIntentBuilder extends FhirCodeEnumBuilder {
     valueString: 'filler-order',
     valueEnum: TransportIntentBuilderEnum.fillerOrder,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -296,7 +313,7 @@ class TransportIntentBuilder extends FhirCodeEnumBuilder {
     valueString: 'instance-order',
     valueEnum: TransportIntentBuilderEnum.instanceOrder,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -309,7 +326,7 @@ class TransportIntentBuilder extends FhirCodeEnumBuilder {
     valueString: 'option',
     valueEnum: TransportIntentBuilderEnum.option,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -343,6 +360,10 @@ class TransportIntentBuilder extends FhirCodeEnumBuilder {
   ) {
     return TransportIntentBuilder._(
       valueString: valueString,
+      valueEnum: valueEnum,
+      system: system,
+      version: version,
+      display: display,
       element: newElement,
     );
   }

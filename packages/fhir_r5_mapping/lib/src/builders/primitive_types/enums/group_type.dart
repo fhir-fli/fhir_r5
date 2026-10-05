@@ -1,3 +1,4 @@
+// ignore_for_file: unused_element_parameter, non_constant_identifier_names
 part of '../primitive_types.dart';
 
 /// Actual enum for GroupType
@@ -140,12 +141,13 @@ class GroupTypeBuilder extends FhirCodeEnumBuilder {
     final valueEnum = GroupTypeBuilderEnum.fromString(
       valueString,
     );
+    final known = _known(valueEnum);
     return GroupTypeBuilder._(
       valueString: valueString,
       valueEnum: valueEnum,
-      system: system,
-      version: version,
-      display: display,
+      system: system ?? known?.system,
+      version: version ?? known?.version,
+      display: display ?? known?.display,
       element: element,
       id: id,
       extension_: extension_,
@@ -177,10 +179,25 @@ class GroupTypeBuilder extends FhirCodeEnumBuilder {
         'GroupTypeBuilder cannot be constructed from JSON.',
       );
     }
+    final known = _known(GroupTypeBuilderEnum.fromString(value));
     return GroupTypeBuilder._(
       valueString: value,
+      valueEnum: known?.valueEnum,
+      system: known?.system,
+      version: known?.version,
+      display: known?.display,
       element: element,
     );
+  }
+
+  /// The constant for [valueEnum], with its system, version and
+  /// display; null for a code the value set does not define.
+  static GroupTypeBuilder? _known(GroupTypeBuilderEnum? valueEnum) {
+    if (valueEnum == null) return null;
+    for (final v in values) {
+      if (v.valueEnum == valueEnum) return v;
+    }
+    return null;
   }
 
   ///  An actual enum that can be used for GroupTypeBuilder
@@ -191,7 +208,7 @@ class GroupTypeBuilder extends FhirCodeEnumBuilder {
     valueString: 'person',
     valueEnum: GroupTypeBuilderEnum.person,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/group-type',
+      valueString: 'http://hl7.org/fhir/group-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -204,7 +221,7 @@ class GroupTypeBuilder extends FhirCodeEnumBuilder {
     valueString: 'animal',
     valueEnum: GroupTypeBuilderEnum.animal,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/group-type',
+      valueString: 'http://hl7.org/fhir/group-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -217,7 +234,7 @@ class GroupTypeBuilder extends FhirCodeEnumBuilder {
     valueString: 'practitioner',
     valueEnum: GroupTypeBuilderEnum.practitioner,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/group-type',
+      valueString: 'http://hl7.org/fhir/group-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -230,7 +247,7 @@ class GroupTypeBuilder extends FhirCodeEnumBuilder {
     valueString: 'device',
     valueEnum: GroupTypeBuilderEnum.device,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/group-type',
+      valueString: 'http://hl7.org/fhir/group-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -243,7 +260,7 @@ class GroupTypeBuilder extends FhirCodeEnumBuilder {
     valueString: 'careteam',
     valueEnum: GroupTypeBuilderEnum.careteam,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/group-type',
+      valueString: 'http://hl7.org/fhir/group-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -256,7 +273,7 @@ class GroupTypeBuilder extends FhirCodeEnumBuilder {
     valueString: 'healthcareservice',
     valueEnum: GroupTypeBuilderEnum.healthcareservice,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/group-type',
+      valueString: 'http://hl7.org/fhir/group-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -269,7 +286,7 @@ class GroupTypeBuilder extends FhirCodeEnumBuilder {
     valueString: 'location',
     valueEnum: GroupTypeBuilderEnum.location,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/group-type',
+      valueString: 'http://hl7.org/fhir/group-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -282,7 +299,7 @@ class GroupTypeBuilder extends FhirCodeEnumBuilder {
     valueString: 'organization',
     valueEnum: GroupTypeBuilderEnum.organization,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/group-type',
+      valueString: 'http://hl7.org/fhir/group-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -295,7 +312,7 @@ class GroupTypeBuilder extends FhirCodeEnumBuilder {
     valueString: 'relatedperson',
     valueEnum: GroupTypeBuilderEnum.relatedperson,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/group-type',
+      valueString: 'http://hl7.org/fhir/group-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -308,7 +325,7 @@ class GroupTypeBuilder extends FhirCodeEnumBuilder {
     valueString: 'specimen',
     valueEnum: GroupTypeBuilderEnum.specimen,
     system: FhirUriBuilder._(
-      valueString: 'http://hl7.org/fhir/ValueSet/group-type',
+      valueString: 'http://hl7.org/fhir/group-type',
     ),
     version: FhirStringBuilder._(valueString: '5.0.0'),
     display: FhirStringBuilder._(
@@ -342,6 +359,10 @@ class GroupTypeBuilder extends FhirCodeEnumBuilder {
   ) {
     return GroupTypeBuilder._(
       valueString: valueString,
+      valueEnum: valueEnum,
+      system: system,
+      version: version,
+      display: display,
       element: newElement,
     );
   }

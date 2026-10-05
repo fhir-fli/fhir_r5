@@ -63,8 +63,7 @@ enum BiologicallyDerivedProductDispenseCodesEnum {
 
   /// Converts a string to the corresponding enum value.
   static BiologicallyDerivedProductDispenseCodesEnum? fromString(
-    String? value,
-  ) {
+      String? value) {
     if (value == null) {
       return null;
     }
@@ -121,12 +120,13 @@ class BiologicallyDerivedProductDispenseCodes extends FhirCodeEnum {
         rawValue != null ? FhirCode._validateCode(rawValue) : null;
     final valueEnum =
         BiologicallyDerivedProductDispenseCodesEnum.fromString(valueString);
+    final known = _known(valueEnum);
     return BiologicallyDerivedProductDispenseCodes._(
       valueString: valueString,
       valueEnum: valueEnum,
-      system: system,
-      version: version,
-      display: display,
+      system: system ?? known?.system,
+      version: version ?? known?.version,
+      display: display ?? known?.display,
       element: element,
       id: id,
       extension_: extension_,
@@ -146,19 +146,32 @@ class BiologicallyDerivedProductDispenseCodes extends FhirCodeEnum {
     final element = elementJson != null ? Element.fromJson(elementJson) : null;
     if (value == null && element != null) {
       return BiologicallyDerivedProductDispenseCodes._(
-        valueString: null,
-        element: element,
-      );
+          valueString: null, element: element);
     } else if (value == null && element == null) {
       throw ArgumentError(
         'BiologicallyDerivedProductDispenseCodes cannot be constructed from JSON.',
       );
     }
+    final known = _known(valueEnum);
     return BiologicallyDerivedProductDispenseCodes._(
       valueString: value,
       valueEnum: valueEnum,
+      system: known?.system,
+      version: known?.version,
+      display: known?.display,
       element: element,
     );
+  }
+
+  /// The constant for [valueEnum], with its system, version and
+  /// display; null for a code the value set does not define.
+  static BiologicallyDerivedProductDispenseCodes? _known(
+      BiologicallyDerivedProductDispenseCodesEnum? valueEnum) {
+    if (valueEnum == null) return null;
+    for (final v in values) {
+      if (v.valueEnum == valueEnum) return v;
+    }
+    return null;
   }
 
   /// An actual enum that can be used for BiologicallyDerivedProductDispenseCodes
@@ -171,7 +184,7 @@ class BiologicallyDerivedProductDispenseCodes extends FhirCodeEnum {
     valueEnum: BiologicallyDerivedProductDispenseCodesEnum.preparation,
     system: FhirUri._(
       valueString:
-          'http://hl7.org/fhir/ValueSet/biologicallyderivedproductdispense-status',
+          'http://hl7.org/fhir/biologicallyderivedproductdispense-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -186,7 +199,7 @@ class BiologicallyDerivedProductDispenseCodes extends FhirCodeEnum {
     valueEnum: BiologicallyDerivedProductDispenseCodesEnum.inProgress,
     system: FhirUri._(
       valueString:
-          'http://hl7.org/fhir/ValueSet/biologicallyderivedproductdispense-status',
+          'http://hl7.org/fhir/biologicallyderivedproductdispense-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -201,7 +214,7 @@ class BiologicallyDerivedProductDispenseCodes extends FhirCodeEnum {
     valueEnum: BiologicallyDerivedProductDispenseCodesEnum.allocated,
     system: FhirUri._(
       valueString:
-          'http://hl7.org/fhir/ValueSet/biologicallyderivedproductdispense-status',
+          'http://hl7.org/fhir/biologicallyderivedproductdispense-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -216,7 +229,7 @@ class BiologicallyDerivedProductDispenseCodes extends FhirCodeEnum {
     valueEnum: BiologicallyDerivedProductDispenseCodesEnum.issued,
     system: FhirUri._(
       valueString:
-          'http://hl7.org/fhir/ValueSet/biologicallyderivedproductdispense-status',
+          'http://hl7.org/fhir/biologicallyderivedproductdispense-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -231,7 +244,7 @@ class BiologicallyDerivedProductDispenseCodes extends FhirCodeEnum {
     valueEnum: BiologicallyDerivedProductDispenseCodesEnum.unfulfilled,
     system: FhirUri._(
       valueString:
-          'http://hl7.org/fhir/ValueSet/biologicallyderivedproductdispense-status',
+          'http://hl7.org/fhir/biologicallyderivedproductdispense-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -246,7 +259,7 @@ class BiologicallyDerivedProductDispenseCodes extends FhirCodeEnum {
     valueEnum: BiologicallyDerivedProductDispenseCodesEnum.returned,
     system: FhirUri._(
       valueString:
-          'http://hl7.org/fhir/ValueSet/biologicallyderivedproductdispense-status',
+          'http://hl7.org/fhir/biologicallyderivedproductdispense-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -261,7 +274,7 @@ class BiologicallyDerivedProductDispenseCodes extends FhirCodeEnum {
     valueEnum: BiologicallyDerivedProductDispenseCodesEnum.enteredInError,
     system: FhirUri._(
       valueString:
-          'http://hl7.org/fhir/ValueSet/biologicallyderivedproductdispense-status',
+          'http://hl7.org/fhir/biologicallyderivedproductdispense-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -276,7 +289,7 @@ class BiologicallyDerivedProductDispenseCodes extends FhirCodeEnum {
     valueEnum: BiologicallyDerivedProductDispenseCodesEnum.unknown,
     system: FhirUri._(
       valueString:
-          'http://hl7.org/fhir/ValueSet/biologicallyderivedproductdispense-status',
+          'http://hl7.org/fhir/biologicallyderivedproductdispense-status',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -300,6 +313,10 @@ class BiologicallyDerivedProductDispenseCodes extends FhirCodeEnum {
   BiologicallyDerivedProductDispenseCodes withElement(Element? newElement) {
     return BiologicallyDerivedProductDispenseCodes._(
       valueString: valueString,
+      valueEnum: valueEnum,
+      system: system,
+      version: version,
+      display: display,
       element: newElement,
     );
   }
@@ -337,9 +354,7 @@ class BiologicallyDerivedProductDispenseCodesCopyWithImpl<T>
     extends $FhirCodeCopyWithImpl<T> {
   /// Constructor for the copyWith implementation.
   BiologicallyDerivedProductDispenseCodesCopyWithImpl(
-    super._value,
-    super._then,
-  );
+      super._value, super._then);
 
   @override
   T call({

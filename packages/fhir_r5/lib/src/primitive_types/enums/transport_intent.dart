@@ -132,12 +132,13 @@ class TransportIntent extends FhirCodeEnum {
     final valueString =
         rawValue != null ? FhirCode._validateCode(rawValue) : null;
     final valueEnum = TransportIntentEnum.fromString(valueString);
+    final known = _known(valueEnum);
     return TransportIntent._(
       valueString: valueString,
       valueEnum: valueEnum,
-      system: system,
-      version: version,
-      display: display,
+      system: system ?? known?.system,
+      version: version ?? known?.version,
+      display: display ?? known?.display,
       element: element,
       id: id,
       extension_: extension_,
@@ -161,11 +162,25 @@ class TransportIntent extends FhirCodeEnum {
         'TransportIntent cannot be constructed from JSON.',
       );
     }
+    final known = _known(valueEnum);
     return TransportIntent._(
       valueString: value,
       valueEnum: valueEnum,
+      system: known?.system,
+      version: known?.version,
+      display: known?.display,
       element: element,
     );
+  }
+
+  /// The constant for [valueEnum], with its system, version and
+  /// display; null for a code the value set does not define.
+  static TransportIntent? _known(TransportIntentEnum? valueEnum) {
+    if (valueEnum == null) return null;
+    for (final v in values) {
+      if (v.valueEnum == valueEnum) return v;
+    }
+    return null;
   }
 
   /// An actual enum that can be used for TransportIntent
@@ -176,7 +191,7 @@ class TransportIntent extends FhirCodeEnum {
     valueString: 'unknown',
     valueEnum: TransportIntentEnum.unknown,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/transport-intent',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -189,7 +204,7 @@ class TransportIntent extends FhirCodeEnum {
     valueString: 'proposal',
     valueEnum: TransportIntentEnum.proposal,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -202,7 +217,7 @@ class TransportIntent extends FhirCodeEnum {
     valueString: 'plan',
     valueEnum: TransportIntentEnum.plan,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -215,7 +230,7 @@ class TransportIntent extends FhirCodeEnum {
     valueString: 'directive',
     valueEnum: TransportIntentEnum.directive,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -228,7 +243,7 @@ class TransportIntent extends FhirCodeEnum {
     valueString: 'order',
     valueEnum: TransportIntentEnum.order,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -241,7 +256,7 @@ class TransportIntent extends FhirCodeEnum {
     valueString: 'original-order',
     valueEnum: TransportIntentEnum.originalOrder,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -254,7 +269,7 @@ class TransportIntent extends FhirCodeEnum {
     valueString: 'reflex-order',
     valueEnum: TransportIntentEnum.reflexOrder,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -267,7 +282,7 @@ class TransportIntent extends FhirCodeEnum {
     valueString: 'filler-order',
     valueEnum: TransportIntentEnum.fillerOrder,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -280,7 +295,7 @@ class TransportIntent extends FhirCodeEnum {
     valueString: 'instance-order',
     valueEnum: TransportIntentEnum.instanceOrder,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -293,7 +308,7 @@ class TransportIntent extends FhirCodeEnum {
     valueString: 'option',
     valueEnum: TransportIntentEnum.option,
     system: FhirUri._(
-      valueString: 'http://hl7.org/fhir/ValueSet/transport-intent',
+      valueString: 'http://hl7.org/fhir/request-intent',
     ),
     version: FhirString._(valueString: '5.0.0'),
     display: FhirString._(
@@ -319,6 +334,10 @@ class TransportIntent extends FhirCodeEnum {
   TransportIntent withElement(Element? newElement) {
     return TransportIntent._(
       valueString: valueString,
+      valueEnum: valueEnum,
+      system: system,
+      version: version,
+      display: display,
       element: newElement,
     );
   }
