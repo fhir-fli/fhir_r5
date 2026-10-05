@@ -1,6 +1,6 @@
 # fhir_r5_db
 
-## [Unreleased]
+## [0.13.0]
 
 - `R5Model` gives `fromJson(Map)` / `toJson(Resource)` through fhir_node's
   `ResourceModel`; the store's text pair is `fromJsonText` / `toJsonText`
