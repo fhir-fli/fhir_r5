@@ -1,6 +1,6 @@
 name: fhir_r5_db
 description: FHIR R5 database on SQLite/Drift, the fhir_db store bound to fhir_r5, with search parameter indexing, history, compartments and optional encryption.
-version: 0.14.1
+version: 0.14.2
 homepage: https://www.fhirfli.dev/
 repository: https://github.com/fhir-fli/fhir_r5
 issue_tracker: https://github.com/fhir-fli/fhir_r5/issues
