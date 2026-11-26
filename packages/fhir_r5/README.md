@@ -22,10 +22,11 @@ It's still a work on progress, but I plan on outlining in-depth all of the funct
 
 ## Installation
 
-```yaml
-dependencies:
-  fhir_r5: ^0.6.1
+```sh
+dart pub add fhir_r5
 ```
+
+In a Flutter app, use `flutter pub add`.
 
 ## Basic Usage
 
